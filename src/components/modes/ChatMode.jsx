@@ -1,18 +1,51 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import ModeHeader from '../shared/ModeHeader.jsx';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
+
+const STORAGE_KEY = 'chat_practice_sessions';
+
+function loadSessions() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+  } catch {
+    return [];
+  }
+}
+
+function saveSessions(sessions) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
+}
+
+function makeSession(langCode) {
+  return {
+    id: Date.now().toString(),
+    langCode,
+    title: 'New Chat',
+    createdAt: Date.now(),
+    displayMessages: [],
+    messages: [],
+  };
+}
+
+function titleFromMessages(displayMessages) {
+  const first = displayMessages.find(m => m.sender === 'user');
+  if (!first) return 'New Chat';
+  return first.text.slice(0, 40) + (first.text.length > 40 ? '…' : '');
+}
 
 export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
 
-  const [messages, setMessages] = useState([]);
-  const [displayMessages, setDisplayMessages] = useState([]);
+  const [sessions, setSessions] = useState(() => loadSessions());
+  const [activeId, setActiveId] = useState(null);
   const [userInput, setUserInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [llmConnected, setLlmConnected] = useState(null);
   const [error, setError] = useState(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   const chatEndRef = useRef(null);
   const inputRef = useRef(null);
+  const sendRef = useRef(null);
+  const rootRef = useRef(null);
 
   const systemPrompt = `You are a friendly ${langName} language tutor having a conversation with a student.
 - Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary.
@@ -22,52 +55,62 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 - Encourage the user to practice by asking follow-up questions in ${langName}.
 - If the user writes in English, respond in ${langName} with an English translation, and encourage them to try in ${langName}.`;
 
-  // Initialize messages with system prompt
+  const activeSession = sessions.find(s => s.id === activeId) || null;
+
+  // Start a new session when entering, or resume latest
   useEffect(() => {
-    setMessages([{ role: 'system', content: systemPrompt }]);
-  }, [langCode]);
+    const existing = loadSessions();
+    if (existing.length > 0) {
+      setActiveId(existing[0].id);
+    } else {
+      startNewChat();
+    }
+  }, []);
+
+  // Persist sessions whenever they change
+  useEffect(() => {
+    saveSessions(sessions);
+  }, [sessions]);
 
   // Auto-scroll
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [displayMessages, isLoading]);
+  }, [activeSession?.displayMessages, isLoading]);
 
   // Check LM Studio connection on mount
   useEffect(() => {
-    const checkConnection = async () => {
-      try {
-        const res = await fetch('/llm/models');
-        setLlmConnected(res.ok);
-      } catch {
-        setLlmConnected(false);
+    fetch('/llm/models')
+      .then(res => setLlmConnected(res.ok))
+      .catch(() => setLlmConnected(false));
+  }, []);
+
+  function startNewChat() {
+    const session = makeSession(langCode);
+    setSessions(prev => [session, ...prev]);
+    setActiveId(session.id);
+    setUserInput('');
+    setError(null);
+  }
+
+  function deleteSession(id) {
+    setSessions(prev => {
+      const next = prev.filter(s => s.id !== id);
+      if (id === activeId) {
+        if (next.length > 0) setActiveId(next[0].id);
+        else {
+          const fresh = makeSession(langCode);
+          setSessions([fresh]);
+          setActiveId(fresh.id);
+          return [fresh];
+        }
       }
-    };
-    checkConnection();
-  }, []);
+      return next;
+    });
+  }
 
-  // Use a ref so the STT callback can call the latest version of handleSend
-  const sendRef = useRef(null);
-
-  // STT callback — auto-send when transcription completes
-  const handleTranscript = useCallback((text) => {
-    setUserInput(text);
-    // Use a short timeout to let state update, then send
-    setTimeout(() => {
-      if (sendRef.current) sendRef.current(text);
-    }, 0);
-  }, []);
-
-  const { isListening, isTranscribing, error: sttError, startListening, stopListening } = useWhisperSTT({
-    onTranscript: handleTranscript,
-  });
-
-  const toggleMic = () => {
-    if (isListening) {
-      stopListening();
-    } else {
-      startListening(langCode);
-    }
-  };
+  function updateActive(updater) {
+    setSessions(prev => prev.map(s => s.id === activeId ? updater(s) : s));
+  }
 
   const sendToLLM = async (messageHistory) => {
     const res = await fetch('/llm/chat/completions', {
@@ -80,44 +123,51 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         max_tokens: 300,
       }),
     });
-
-    if (!res.ok) {
-      throw new Error(`LLM request failed (${res.status})`);
-    }
-
+    if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
     const data = await res.json();
     return data.choices[0].message.content;
   };
 
   const handleSend = async (directText) => {
     const text = (directText || userInput).trim();
-    if (!text || isLoading) return;
+    if (!text || isLoading || !activeSession) return;
 
     setError(null);
     const userMsg = { role: 'user', content: text };
+    const userDisplay = { sender: 'user', text };
 
-    // Keep system + last 20 messages to avoid context overflow
-    const recentMessages = messages.length > 21
-      ? [messages[0], ...messages.slice(-20)]
-      : messages;
-    const newMessages = [...recentMessages, userMsg];
+    // Build LLM message history: system prompt + session history + new message
+    const history = activeSession.messages.length > 0
+      ? activeSession.messages
+      : [{ role: 'system', content: systemPrompt }];
 
-    setMessages(prev => [...prev, userMsg]);
-    setDisplayMessages(prev => [...prev, { sender: 'user', text }]);
+    const trimmed = history.length > 21
+      ? [history[0], ...history.slice(-20)]
+      : history;
+    const newMessages = [...trimmed, userMsg];
+
+    updateActive(s => ({
+      ...s,
+      messages: [...s.messages, userMsg],
+      displayMessages: [...s.displayMessages, userDisplay],
+      title: s.displayMessages.length === 0 ? titleFromMessages([userDisplay]) : s.title,
+    }));
+
     setUserInput('');
     setIsLoading(true);
 
     try {
       const reply = await sendToLLM(newMessages);
       const assistantMsg = { role: 'assistant', content: reply };
+      const assistantDisplay = { sender: 'bot', text: reply };
 
-      setMessages(prev => [...prev, assistantMsg]);
-      setDisplayMessages(prev => [...prev, { sender: 'bot', text: reply }]);
+      updateActive(s => ({
+        ...s,
+        messages: [...s.messages, assistantMsg],
+        displayMessages: [...s.displayMessages, assistantDisplay],
+      }));
 
-      if (ttsEnabled && onSpeak) {
-        onSpeak(reply, 0.8, ttsVolume);
-      }
-
+      if (ttsEnabled && onSpeak) onSpeak(reply, 0.8, ttsVolume);
       if (onAddXP) onAddXP(5);
     } catch (err) {
       console.error('[Chat] LLM error:', err);
@@ -131,103 +181,166 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
   sendRef.current = handleSend;
 
+  const handleTranscript = useCallback((text) => {
+    setUserInput(text);
+    setTimeout(() => { if (sendRef.current) sendRef.current(text); }, 0);
+  }, []);
+
+  const { isListening, isTranscribing, error: sttError, startListening, stopListening } = useWhisperSTT({
+    onTranscript: handleTranscript,
+  });
+
+  const toggleMic = (lang) => {
+    if (isListening) stopListening();
+    else startListening(lang);
+  };
+
   const replayTTS = (text) => {
-    if (ttsEnabled && onSpeak) {
-      onSpeak(text, 0.8, ttsVolume);
-    }
+    if (ttsEnabled && onSpeak) onSpeak(text, 0.8, ttsVolume);
+  };
+
+  const displayMessages = activeSession?.displayMessages || [];
+
+  const snapIntoView = () => {
+    rootRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
-    <div style={styles.container}>
-      <ModeHeader title="Chat Practice" subtitle={`Free conversation with AI tutor (${langName})`} icon="🤖" onExit={onExit} />
-
-      {llmConnected === false && (
-        <div style={styles.warningBanner}>
-          ⚠️ LM Studio not detected at localhost:1234. Please start LM Studio and load a model.
+    <div ref={rootRef} style={styles.root}>
+      {/* Sidebar */}
+      <div style={{ ...styles.sidebar, ...(sidebarOpen ? {} : styles.sidebarClosed) }}>
+        <div style={styles.sidebarHeader}>
+          <button style={styles.newChatBtn} onClick={startNewChat}>+ New Chat</button>
+          <button style={styles.collapseBtn} onClick={() => setSidebarOpen(false)} title="Close sidebar">✕</button>
         </div>
-      )}
 
-      {(error || sttError) && (
-        <div style={styles.errorBanner}>
-          {error || sttError}
-        </div>
-      )}
-
-      <div style={styles.chatArea}>
-        {displayMessages.length === 0 && !isLoading && (
-          <div style={styles.emptyState}>
-            Start a conversation! Type or speak in {langName} or English.
-          </div>
-        )}
-
-        {displayMessages.map((msg, i) => (
-          <div key={i} style={{
-            ...styles.chatBubble,
-            ...(msg.sender === 'user' ? styles.playerBubble : styles.botBubble),
-          }}>
-            <div style={styles.bubbleName}>{msg.sender === 'user' ? 'You' : 'Tutor'}</div>
-            <div style={styles.bubbleText}>{msg.text}</div>
-            {msg.sender === 'bot' && ttsEnabled && (
-              <button style={styles.speakBtn} onClick={() => replayTTS(msg.text)} title="Listen again">
-                🔊
-              </button>
-            )}
-          </div>
-        ))}
-
-        {isLoading && (
-          <div style={{ ...styles.chatBubble, ...styles.botBubble }}>
-            <div style={styles.bubbleName}>Tutor</div>
-            <div style={styles.typingIndicator}>
-              <span style={styles.dot}>●</span>
-              <span style={{ ...styles.dot, animationDelay: '0.2s' }}>●</span>
-              <span style={{ ...styles.dot, animationDelay: '0.4s' }}>●</span>
+        <div style={styles.sessionList}>
+          {sessions.length === 0 && (
+            <div style={styles.noSessions}>No chats yet</div>
+          )}
+          {sessions.map(s => (
+            <div
+              key={s.id}
+              style={{ ...styles.sessionItem, ...(s.id === activeId ? styles.sessionItemActive : {}) }}
+              onClick={() => { setActiveId(s.id); setError(null); }}
+            >
+              <div style={styles.sessionTitle}>{s.title}</div>
+              <div style={styles.sessionMeta}>
+                {s.langCode === 'ru' ? '🇷🇺' : '🇺🇦'} · {s.displayMessages.length} msg{s.displayMessages.length !== 1 ? 's' : ''}
+              </div>
+              <button
+                style={styles.deleteBtn}
+                onClick={e => { e.stopPropagation(); deleteSession(s.id); }}
+                title="Delete chat"
+              >🗑</button>
             </div>
+          ))}
+        </div>
+
+        <button style={styles.exitBtn} onClick={onExit}>← Back to Menu</button>
+      </div>
+
+      {/* Main area */}
+      <div style={styles.main}>
+        {/* Top bar */}
+        <div style={styles.topBar}>
+          {!sidebarOpen && (
+            <button style={styles.openSidebarBtn} onClick={() => setSidebarOpen(true)} title="Open sidebar">☰</button>
+          )}
+          <div style={styles.topBarTitle}>
+            🤖 Chat Practice
+            <span style={styles.topBarSub}>{langName}</span>
+          </div>
+          <button style={styles.newChatBtnTop} onClick={startNewChat} title="New chat">＋ New</button>
+        </div>
+
+        {/* Banners */}
+        {llmConnected === false && (
+          <div style={styles.warningBanner}>
+            ⚠️ LM Studio not detected at localhost:1234. Please start LM Studio and load a model.
           </div>
         )}
-
-        <div ref={chatEndRef} />
-      </div>
-
-      <div style={styles.inputSection}>
-        {isTranscribing && (
-          <div style={styles.transcribingBar}>Transcribing...</div>
+        {(error || sttError) && (
+          <div style={styles.errorBanner}>{error || sttError}</div>
         )}
-        <div style={styles.inputRow}>
-          <input
-            ref={inputRef}
-            style={styles.input}
-            value={userInput}
-            onChange={e => setUserInput(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && handleSend()}
-            placeholder={`Type in ${langName} or English...`}
-            disabled={isLoading}
-            autoFocus
-          />
-          <button
-            style={{
-              ...styles.micBtn,
-              ...(isListening ? styles.micBtnActive : {}),
-              ...(isTranscribing ? styles.micBtnTranscribing : {}),
-            }}
-            onClick={toggleMic}
-            disabled={isTranscribing}
-            title={isListening ? 'Stop recording' : 'Speak your message'}
-          >
-            🎤
-          </button>
-          <button
-            style={{
-              ...styles.sendBtn,
-              ...(!userInput.trim() || isLoading ? styles.sendBtnDisabled : {}),
-            }}
-            onClick={handleSend}
-            disabled={isLoading || !userInput.trim()}
-          >
-            Send
-          </button>
+
+        {/* Messages */}
+        <div style={styles.chatArea}>
+          {displayMessages.length === 0 && !isLoading && (
+            <div style={styles.emptyState}>
+              <div style={styles.emptyIcon}>🤖</div>
+              <div>Start a conversation!</div>
+              <div style={styles.emptyHint}>Type or use the mic buttons to speak in {langName} or English.</div>
+            </div>
+          )}
+
+          {displayMessages.map((msg, i) => (
+            <div key={i} style={styles.messageRow}>
+              <div style={msg.sender === 'user' ? styles.userAvatar : styles.botAvatar}>
+                {msg.sender === 'user' ? '👤' : '🤖'}
+              </div>
+              <div style={{ ...styles.chatBubble, ...(msg.sender === 'user' ? styles.playerBubble : styles.botBubble) }}>
+                <div style={styles.bubbleText}>{msg.text}</div>
+                {msg.sender === 'bot' && ttsEnabled && (
+                  <button style={styles.speakBtn} onClick={() => replayTTS(msg.text)} title="Listen again">🔊</button>
+                )}
+              </div>
+            </div>
+          ))}
+
+          {isLoading && (
+            <div style={styles.messageRow}>
+              <div style={styles.botAvatar}>🤖</div>
+              <div style={{ ...styles.chatBubble, ...styles.botBubble }}>
+                <div style={styles.typingIndicator}>
+                  <span style={styles.dot}>●</span>
+                  <span style={{ ...styles.dot, animationDelay: '0.2s' }}>●</span>
+                  <span style={{ ...styles.dot, animationDelay: '0.4s' }}>●</span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div ref={chatEndRef} />
+        </div>
+
+        {/* Input */}
+        <div style={styles.inputSection}>
+          {isTranscribing && <div style={styles.transcribingBar}>Transcribing...</div>}
+          <div style={styles.inputRow}>
+            <input
+              ref={inputRef}
+              style={styles.input}
+              value={userInput}
+              onChange={e => setUserInput(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && !e.shiftKey && handleSend()}
+              placeholder={`Type in ${langName} or English...`}
+              disabled={isLoading}
+              autoFocus
+            />
+            <button
+              style={{ ...styles.micBtn, ...(isListening ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
+              onClick={() => toggleMic('en')}
+              disabled={isTranscribing}
+              title="Speak in English"
+            >🎤 EN</button>
+            <button
+              style={{ ...styles.micBtn, ...(isListening ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
+              onClick={() => toggleMic(langCode)}
+              disabled={isTranscribing}
+              title={`Speak in ${langName}`}
+            >🎤 {langCode === 'ru' ? 'RU' : 'UA'}</button>
+            <button
+              style={{ ...styles.sendBtn, ...(!userInput.trim() || isLoading ? styles.sendBtnDisabled : {}) }}
+              onClick={() => handleSend()}
+              disabled={isLoading || !userInput.trim()}
+            >Send</button>
+          </div>
         </div>
       </div>
+
+      {/* Snap-to-view floating button */}
+      <button style={styles.snapBtn} onClick={snapIntoView} title="Snap chat into view">⌖</button>
 
       <style>{`
         @keyframes dotPulse {
@@ -235,8 +348,8 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           40% { opacity: 1; }
         }
         @keyframes micPulse {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(255, 80, 80, 0.4); }
-          50% { box-shadow: 0 0 0 8px rgba(255, 80, 80, 0); }
+          0%, 100% { box-shadow: 0 0 0 0 rgba(255,80,80,0.4); }
+          50% { box-shadow: 0 0 0 8px rgba(255,80,80,0); }
         }
       `}</style>
     </div>
@@ -244,105 +357,272 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 }
 
 const styles = {
-  container: {
-    minHeight: '100vh',
+  root: {
+    display: 'flex',
+    height: '100vh',
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
-    padding: '2rem',
     fontFamily: 'system-ui, -apple-system, sans-serif',
+    overflow: 'hidden',
+  },
+
+  // Sidebar
+  sidebar: {
+    width: '260px',
+    flexShrink: 0,
+    background: 'rgba(0,0,0,0.35)',
+    borderRight: '1px solid rgba(255,255,255,0.08)',
     display: 'flex',
     flexDirection: 'column',
+    padding: '1rem 0.75rem',
+    gap: '0.5rem',
+    transition: 'width 0.2s, padding 0.2s',
+    overflow: 'hidden',
+  },
+  sidebarClosed: {
+    width: 0,
+    padding: 0,
+  },
+  sidebarHeader: {
+    display: 'flex',
+    gap: '0.5rem',
+    alignItems: 'center',
+  },
+  newChatBtn: {
+    flex: 1,
+    background: 'rgba(255,215,0,0.15)',
+    border: '1px solid rgba(255,215,0,0.3)',
+    borderRadius: '8px',
+    color: '#ffd700',
+    padding: '0.5rem 0.75rem',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+    whiteSpace: 'nowrap',
+  },
+  collapseBtn: {
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    borderRadius: '8px',
+    color: 'rgba(255,255,255,0.5)',
+    padding: '0.5rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontFamily: 'inherit',
+  },
+  sessionList: {
+    flex: 1,
+    overflowY: 'auto',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.25rem',
+  },
+  noSessions: {
+    color: 'rgba(255,255,255,0.3)',
+    fontSize: '0.85rem',
+    textAlign: 'center',
+    marginTop: '1rem',
+  },
+  sessionItem: {
+    padding: '0.6rem 0.75rem',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    background: 'rgba(255,255,255,0.04)',
+    border: '1px solid transparent',
+    position: 'relative',
+    transition: 'background 0.15s',
+  },
+  sessionItemActive: {
+    background: 'rgba(255,215,0,0.1)',
+    border: '1px solid rgba(255,215,0,0.25)',
+  },
+  sessionTitle: {
+    fontSize: '0.88rem',
+    fontWeight: '500',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    paddingRight: '1.5rem',
+  },
+  sessionMeta: {
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.4)',
+    marginTop: '0.15rem',
+  },
+  deleteBtn: {
+    position: 'absolute',
+    top: '50%',
+    right: '0.5rem',
+    transform: 'translateY(-50%)',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    opacity: 0.4,
+    padding: '2px',
+    color: '#fff',
+  },
+  exitBtn: {
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    borderRadius: '8px',
+    color: 'rgba(255,255,255,0.6)',
+    padding: '0.6rem 0.75rem',
+    cursor: 'pointer',
+    fontSize: '0.88rem',
+    fontFamily: 'inherit',
+    textAlign: 'left',
+  },
+
+  // Main
+  main: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden',
+  },
+  topBar: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    padding: '0.75rem 1.5rem',
+    borderBottom: '1px solid rgba(255,255,255,0.08)',
+    background: 'rgba(0,0,0,0.15)',
+    flexShrink: 0,
+  },
+  openSidebarBtn: {
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    borderRadius: '8px',
+    color: '#fff',
+    padding: '0.4rem 0.6rem',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    fontFamily: 'inherit',
+  },
+  topBarTitle: {
+    flex: 1,
+    fontWeight: '700',
+    fontSize: '1.1rem',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+  },
+  topBarSub: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.5)',
+    fontWeight: '400',
+  },
+  newChatBtnTop: {
+    background: 'rgba(255,215,0,0.15)',
+    border: '1px solid rgba(255,215,0,0.3)',
+    borderRadius: '8px',
+    color: '#ffd700',
+    padding: '0.4rem 0.8rem',
+    cursor: 'pointer',
+    fontSize: '0.88rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
   },
   warningBanner: {
-    background: 'rgba(255, 160, 0, 0.15)',
-    border: '1px solid rgba(255, 160, 0, 0.4)',
-    borderRadius: '10px',
-    padding: '0.75rem 1rem',
-    marginBottom: '1rem',
-    maxWidth: '700px',
-    margin: '0 auto 1rem',
-    textAlign: 'center',
-    fontSize: '0.9rem',
+    background: 'rgba(255,160,0,0.12)',
+    border: '1px solid rgba(255,160,0,0.3)',
+    padding: '0.6rem 1.5rem',
+    fontSize: '0.88rem',
     color: '#ffb74d',
+    flexShrink: 0,
   },
   errorBanner: {
-    background: 'rgba(255, 80, 80, 0.15)',
-    border: '1px solid rgba(255, 80, 80, 0.4)',
-    borderRadius: '10px',
-    padding: '0.75rem 1rem',
-    marginBottom: '1rem',
-    maxWidth: '700px',
-    margin: '0 auto 1rem',
-    textAlign: 'center',
-    fontSize: '0.9rem',
+    background: 'rgba(255,80,80,0.12)',
+    border: '1px solid rgba(255,80,80,0.3)',
+    padding: '0.6rem 1.5rem',
+    fontSize: '0.88rem',
     color: '#f87171',
+    flexShrink: 0,
   },
   chatArea: {
-    maxWidth: '700px',
-    width: '100%',
-    margin: '0 auto',
+    flex: 1,
+    overflowY: 'auto',
+    padding: '1.5rem',
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.75rem',
-    marginBottom: '1.5rem',
-    flex: 1,
-    minHeight: '300px',
-    maxHeight: '60vh',
-    overflowY: 'auto',
-    padding: '1rem',
-    background: 'rgba(0,0,0,0.2)',
-    borderRadius: '16px',
+    gap: '1rem',
   },
   emptyState: {
-    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+    gap: '0.5rem',
     color: 'rgba(255,255,255,0.4)',
-    padding: '3rem 1rem',
     fontSize: '1.1rem',
+    paddingTop: '4rem',
+  },
+  emptyIcon: {
+    fontSize: '3rem',
+    marginBottom: '0.5rem',
+  },
+  emptyHint: {
+    fontSize: '0.9rem',
+    color: 'rgba(255,255,255,0.3)',
+  },
+  messageRow: {
+    display: 'flex',
+    gap: '0.75rem',
+    alignItems: 'flex-start',
+    maxWidth: '780px',
+    width: '100%',
+    alignSelf: 'center',
+  },
+  userAvatar: {
+    fontSize: '1.2rem',
+    flexShrink: 0,
+    order: 2,
+  },
+  botAvatar: {
+    fontSize: '1.2rem',
+    flexShrink: 0,
   },
   chatBubble: {
-    maxWidth: '80%',
     padding: '0.75rem 1rem',
     borderRadius: '12px',
     fontSize: '1rem',
     position: 'relative',
+    lineHeight: '1.6',
   },
   playerBubble: {
-    background: 'rgba(255,215,0,0.15)',
-    border: '1px solid rgba(255,215,0,0.3)',
-    alignSelf: 'flex-end',
+    background: 'rgba(255,215,0,0.12)',
+    border: '1px solid rgba(255,215,0,0.25)',
+    marginLeft: 'auto',
+    order: 1,
+    maxWidth: '75%',
   },
   botBubble: {
-    background: 'rgba(77,171,247,0.2)',
-    border: '1px solid rgba(77,171,247,0.3)',
-    alignSelf: 'flex-start',
-  },
-  bubbleName: {
-    fontSize: '0.75rem',
-    color: 'rgba(255,255,255,0.5)',
-    marginBottom: '0.25rem',
-    textTransform: 'uppercase',
-    letterSpacing: '0.5px',
+    background: 'rgba(255,255,255,0.06)',
+    border: '1px solid rgba(255,255,255,0.1)',
+    maxWidth: '75%',
   },
   bubbleText: {
-    fontWeight: '500',
+    fontWeight: '400',
     whiteSpace: 'pre-wrap',
-    lineHeight: '1.5',
   },
   speakBtn: {
-    position: 'absolute',
-    top: '0.5rem',
-    right: '0.5rem',
+    display: 'inline-block',
+    marginTop: '0.4rem',
     background: 'none',
     border: 'none',
     cursor: 'pointer',
-    fontSize: '0.9rem',
+    fontSize: '0.85rem',
     opacity: 0.5,
-    padding: '2px',
+    padding: '0',
+    color: '#fff',
   },
   typingIndicator: {
     display: 'flex',
     gap: '4px',
-    padding: '0.25rem 0',
+    padding: '0.1rem 0',
   },
   dot: {
     animation: 'dotPulse 1.4s infinite ease-in-out',
@@ -350,39 +630,46 @@ const styles = {
     fontSize: '0.8rem',
   },
   inputSection: {
-    maxWidth: '700px',
-    width: '100%',
-    margin: '0 auto',
+    padding: '1rem 1.5rem',
+    borderTop: '1px solid rgba(255,255,255,0.08)',
+    background: 'rgba(0,0,0,0.15)',
+    flexShrink: 0,
   },
   transcribingBar: {
     textAlign: 'center',
     color: '#ffd700',
-    fontSize: '0.85rem',
+    fontSize: '0.82rem',
     marginBottom: '0.5rem',
     fontStyle: 'italic',
   },
   inputRow: {
     display: 'flex',
     gap: '0.5rem',
+    maxWidth: '780px',
+    margin: '0 auto',
   },
   input: {
     flex: 1,
     padding: '0.75rem 1rem',
     borderRadius: '10px',
-    border: '2px solid rgba(255,255,255,0.2)',
-    background: 'rgba(0,0,0,0.3)',
+    border: '1px solid rgba(255,255,255,0.15)',
+    background: 'rgba(255,255,255,0.07)',
     color: '#fff',
     fontSize: '1rem',
     fontFamily: 'inherit',
     outline: 'none',
   },
   micBtn: {
-    background: 'rgba(255,255,255,0.1)',
-    border: '2px solid rgba(255,255,255,0.2)',
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.15)',
     borderRadius: '10px',
-    padding: '0 0.75rem',
+    padding: '0.4rem 0.6rem',
     cursor: 'pointer',
-    fontSize: '1.2rem',
+    fontSize: '0.82rem',
+    color: '#fff',
+    fontWeight: '600',
+    whiteSpace: 'nowrap',
+    fontFamily: 'inherit',
     transition: 'all 0.2s',
   },
   micBtnActive: {
@@ -391,23 +678,42 @@ const styles = {
     animation: 'micPulse 1.5s infinite',
   },
   micBtnTranscribing: {
-    opacity: 0.5,
+    opacity: 0.4,
     cursor: 'wait',
   },
   sendBtn: {
     background: 'linear-gradient(135deg, #ffd700, #e6c200)',
     border: 'none',
     color: '#1a1a2e',
-    padding: '0.75rem 1.5rem',
+    padding: '0.75rem 1.25rem',
     borderRadius: '10px',
-    fontSize: '1rem',
+    fontSize: '0.95rem',
     fontWeight: '700',
     cursor: 'pointer',
     fontFamily: 'inherit',
     transition: 'all 0.2s',
   },
   sendBtnDisabled: {
-    opacity: 0.5,
+    opacity: 0.45,
     cursor: 'not-allowed',
+  },
+  snapBtn: {
+    position: 'fixed',
+    bottom: '1.5rem',
+    right: '1.5rem',
+    width: '2.5rem',
+    height: '2.5rem',
+    borderRadius: '50%',
+    background: 'rgba(255,215,0,0.15)',
+    border: '1px solid rgba(255,215,0,0.35)',
+    color: '#ffd700',
+    fontSize: '1.2rem',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 999,
+    transition: 'background 0.2s',
+    fontFamily: 'inherit',
   },
 };

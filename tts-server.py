@@ -96,19 +96,23 @@ if not stt_available:
     else:
         print("       Install with: pip install faster-whisper")
 
-def whisper_transcribe(audio_path):
+def whisper_transcribe(audio_path, lang=None):
     """Transcribe audio using whichever Whisper backend is available.
-    Language is auto-detected so both English and Ukrainian/Russian are
-    transcribed as-is (not translated)."""
+    If lang is provided, it hints Whisper to expect that language.
+    task='transcribe' ensures it writes what was said (no translation)."""
+    kwargs = {'task': 'transcribe'}
+    if lang:
+        kwargs['language'] = lang
+
     if stt_backend == 'mlx':
         result = mlx_whisper.transcribe(
             audio_path,
             path_or_hf_repo=MLX_MODEL,
-            task="transcribe",
+            **kwargs,
         )
         return result.get('text', '').strip()
     elif stt_backend == 'faster-whisper':
-        segments, _ = stt_model_obj.transcribe(audio_path, task="transcribe")
+        segments, _ = stt_model_obj.transcribe(audio_path, **kwargs)
         return ' '.join(seg.text for seg in segments).strip()
     return ''
 
@@ -122,6 +126,7 @@ def transcribe_audio():
             return jsonify({'error': 'No audio file provided'}), 400
 
         audio_file = request.files['audio']
+        lang = request.args.get('lang', None)
 
         # Save to temp file
         suffix = '.webm' if 'webm' in (audio_file.content_type or '') else '.wav'
@@ -130,8 +135,8 @@ def transcribe_audio():
             tmp_path = tmp.name
 
         try:
-            print(f"[STT] Transcribing (auto-detect language, backend: {stt_backend})...")
-            text = whisper_transcribe(tmp_path)
+            print(f"[STT] Transcribing (lang={'auto' if not lang else lang}, backend: {stt_backend})...")
+            text = whisper_transcribe(tmp_path, lang=lang)
             print(f"[STT] Result: {text[:80]}{'...' if len(text) > 80 else ''}")
             return jsonify({'text': text})
         finally:
