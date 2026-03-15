@@ -2,9 +2,12 @@ import React, { useState, useCallback } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
 
 export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const [phase, setPhase] = useState('playing'); // playing, complete
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const [words, setWords] = useState(() => {
     const all = getAllVocabularyWords(langCode);
     const shuffled = [...all].sort(() => Math.random() - 0.5);
@@ -217,7 +220,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
 
             {!feedback.correct && (
               <div style={styles.correctAnswer}>
-                Correct answer: <strong>{currentWord.uk}</strong>
+                Correct answer: <strong><ClickableText text={currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></strong>
                 {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
               </div>
             )}
@@ -229,6 +232,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
         <span>Score: {score}/{currentIdx + (submitted ? 1 : 0)}</span>
         <span>XP: +{xpEarned}</span>
       </div>
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
     </div>
   );
 }

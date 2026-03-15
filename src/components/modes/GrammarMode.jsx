@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
 
 export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
@@ -16,8 +18,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   const [xpEarned, setXpEarned] = useState(0);
   const [completedSections, setCompletedSections] = useState([]);
 
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
+
   // Chat state
-  const [chatOpen, setChatOpen] = useState(false);
   const [chatMessages, setChatMessages] = useState([]);
   const [chatInput, setChatInput] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
@@ -30,8 +33,8 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   }, [chatMessages, chatLoading]);
 
   useEffect(() => {
-    if (chatOpen) chatInputRef.current?.focus();
-  }, [chatOpen]);
+    chatInputRef.current?.focus();
+  }, []);
 
   const currentSection = selectedLesson?.sections[sectionIdx];
   const currentExercise = currentSection?.exercises[exerciseIdx];
@@ -123,7 +126,6 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     setCompletedSections([]);
     setChatMessages([]);
     chatHistoryRef.current = [];
-    setChatOpen(false);
   };
 
   const startExercises = () => {
@@ -189,12 +191,11 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     if (selectedLesson) startLesson(selectedLesson);
   };
 
-  // Chat panel (rendered alongside lesson/exercise)
+  // Chat panel (always visible alongside lesson/exercise)
   const ChatPanel = (
     <div style={styles.chatPanel}>
       <div style={styles.chatPanelHeader}>
-        <span style={styles.chatPanelTitle}>Ask a Question</span>
-        <button style={styles.chatCloseBtn} onClick={() => setChatOpen(false)} title="Close">✕</button>
+        <span style={styles.chatPanelTitle}>💬 Ask a Question</span>
       </div>
       <div ref={chatEndRef} style={styles.chatMessages}>
         {chatMessages.length === 0 && (
@@ -202,7 +203,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
         )}
         {chatMessages.map((msg, i) => (
           <div key={i} style={{ ...styles.chatBubble, ...(msg.sender === 'user' ? styles.chatBubbleUser : styles.chatBubbleBot) }}>
-            {msg.text}
+            {msg.sender === 'bot'
+              ? <ClickableText text={msg.text} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+              : msg.text}
           </div>
         ))}
         {chatLoading && (
@@ -225,13 +228,6 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
         <button style={styles.chatSendBtn} onClick={sendChatMessage} disabled={chatLoading}>→</button>
       </div>
     </div>
-  );
-
-  // Floating "Have a question?" button
-  const QuestionBtn = (
-    <button style={styles.questionBtn} onClick={() => setChatOpen(o => !o)}>
-      💬 Have a question?
-    </button>
   );
 
   // Lesson Picker
@@ -278,8 +274,8 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           icon={selectedLesson.icon}
           onExit={() => setPhase('picker')}
         />
-        <div style={{ ...styles.contentRow, justifyContent: chatOpen ? 'flex-start' : 'center' }}>
-          <div style={{ ...styles.sectionCard, flex: chatOpen ? '1 1 0' : 'none', maxWidth: chatOpen ? 'none' : '700px' }}>
+        <div style={styles.contentRow}>
+          <div style={styles.sectionCard}>
             <h3 style={styles.sectionTitle}>{currentSection.title}</h3>
             <p style={styles.explanation}>{currentSection.explanation}</p>
 
@@ -290,12 +286,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                 return (
                   <div key={i} style={styles.exampleRow}>
                     <div style={styles.exampleUk}>
-                      {nativeText.split(ex.highlight).map((part, j, arr) => (
-                        <span key={j}>
-                          {part}
-                          {j < arr.length - 1 && <span style={styles.highlight}>{ex.highlight}</span>}
-                        </span>
-                      ))}
+                      <ClickableText text={nativeText} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
                       {ttsEnabled && (
                         <button style={styles.miniSpeak} onClick={() => onSpeak(nativeText, 0.8, ttsVolume)}>🔊</button>
                       )}
@@ -310,9 +301,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               Practice Exercises →
             </button>
           </div>
-          {chatOpen && ChatPanel}
+          {ChatPanel}
         </div>
-        {!chatOpen && QuestionBtn}
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
       </div>
     );
   }
@@ -327,8 +318,8 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           icon={selectedLesson.icon}
           onExit={() => setPhase('lesson')}
         />
-        <div style={{ ...styles.contentRow, justifyContent: chatOpen ? 'flex-start' : 'center' }}>
-          <div style={{ ...styles.exerciseCard, flex: chatOpen ? '1 1 0' : 'none', maxWidth: chatOpen ? 'none' : '600px' }}>
+        <div style={styles.contentRow}>
+          <div style={styles.exerciseCard}>
             <p style={styles.exercisePrompt}>{currentExercise.prompt}</p>
 
             {currentExercise.type === 'fill-blank' && (
@@ -393,9 +384,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               </div>
             )}
           </div>
-          {chatOpen && ChatPanel}
+          {ChatPanel}
         </div>
-        {!chatOpen && QuestionBtn}
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
       </div>
     );
   }

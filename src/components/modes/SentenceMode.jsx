@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
 
-export default function SentenceMode({ sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const [phase, setPhase] = useState('playing');
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const [sentences, setSentences] = useState(() => {
     const shuffled = [...sentenceData].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 10);
@@ -196,7 +199,9 @@ export default function SentenceMode({ sentenceData, onSpeak, ttsEnabled, ttsVol
             </div>
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
-                Correct: <strong style={{ color: '#ffd700' }}>{currentSentence.uk}</strong>
+                Correct: <strong style={{ color: '#ffd700' }}>
+                  <ClickableText text={currentSentence.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                </strong>
               </div>
             )}
           </div>
@@ -207,6 +212,7 @@ export default function SentenceMode({ sentenceData, onSpeak, ttsEnabled, ttsVol
         <span>Score: {score}/{currentIdx + (feedback ? 1 : 0)}</span>
         <span>XP: +{xpEarned}</span>
       </div>
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
     </div>
   );
 }

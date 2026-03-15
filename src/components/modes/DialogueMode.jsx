@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
 
 export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const [selectedDialogue, setSelectedDialogue] = useState(null);
   const [exchangeIdx, setExchangeIdx] = useState(0);
   const [chatHistory, setChatHistory] = useState([]);
@@ -218,7 +221,11 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
             {msg.speaker !== 'system' && (
               <div style={styles.bubbleName}>{msg.name}</div>
             )}
-            <div style={styles.bubbleText}>{msg.text}</div>
+            <div style={styles.bubbleText}>
+              {msg.speaker !== 'player'
+                ? <ClickableText text={msg.text} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                : msg.text}
+            </div>
             {msg.translation && (
               <div style={styles.bubbleTranslation}>{msg.translation}</div>
             )}
@@ -258,6 +265,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
           </div>
         </div>
       )}
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
     </div>
   );
 }

@@ -2,9 +2,12 @@ import React, { useState, useCallback } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
 
 export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const [phase, setPhase] = useState('playing');
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en
   const [words, setWords] = useState(() => generateWords('en-uk'));
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -188,7 +191,9 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         <p style={styles.promptLabel}>
           Translate to {direction === 'en-uk' ? langName : 'English'}:
         </p>
-        <div style={styles.prompt}>{prompt}</div>
+        <div style={styles.prompt}>
+          <ClickableText text={prompt ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+        </div>
 
         {hintText && (
           <div style={styles.hintBox}>
@@ -246,7 +251,9 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
             </div>
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
-                Correct answer: <strong style={{ color: '#ffd700' }}>{answer}</strong>
+                Correct answer: <strong style={{ color: '#ffd700' }}>
+                  <ClickableText text={answer ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                </strong>
               </div>
             )}
           </div>
@@ -257,6 +264,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         <span>Score: {score}/{currentIdx + (submitted ? 1 : 0)}</span>
         <span>XP: +{xpEarned}</span>
       </div>
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
     </div>
   );
 }
