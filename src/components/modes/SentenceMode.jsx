@@ -3,10 +3,14 @@ import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('playing');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a sentence-building exercise — arranging word tiles into correct ${langName} sentences. Answer questions about grammar, vocabulary, or word order concisely. Keep responses under 150 words.` });
   const [sentences, setSentences] = useState(() => {
     const shuffled = [...sentenceData].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 10);
@@ -213,6 +217,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
         <span>XP: +{xpEarned}</span>
       </div>
       <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+      <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const [phase, setPhase] = useState('playing');
@@ -23,6 +25,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
 
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.` });
   const dirLabel = direction === 'en-uk' ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
 
   function generateWords(dir) {
@@ -265,6 +268,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         <span>XP: +{xpEarned}</span>
       </div>
       <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+      <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
     </div>
   );
 }
