@@ -34,9 +34,25 @@
       "Bash(echo:*)",
       "Bash(powershell:*)",
       "Bash(git remote set-url:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(cd:*)",
+      "Bash(do grep -o '\"\"uk\"\"' \"$f\")",
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(cmd /c:*)",
+      "Bash(git -C \"/c/Users/michael/Desktop/ukrainian typing game\" ls-files:*)",
+      "Bash(bash --version)",
+      "Bash(~/.bashrc:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "godot"
+  ]
 }

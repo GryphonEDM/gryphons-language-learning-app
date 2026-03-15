@@ -2,245 +2,4125 @@
   "setId": "comprehensive-ext10",
   "totalWords": 244,
   "words": [
-    {"uk": "ящірка", "ru": "ящерица", "en": "lizard", "phoneticUk": "yashchirka", "phoneticRu": "yashcheritsa", "category": "animals-extra"},
-    {"uk": "саламандра", "ru": "саламандра", "en": "salamander", "phoneticUk": "salamandra", "phoneticRu": "salamandra", "category": "animals-extra"},
-    {"uk": "тритон", "ru": "тритон", "en": "newt", "phoneticUk": "tryton", "phoneticRu": "triton", "category": "animals-extra"},
-    {"uk": "кажан", "ru": "летучая мышь", "en": "bat (animal)", "phoneticUk": "kazhan", "phoneticRu": "letuchaya mysh", "category": "animals-extra"},
-    {"uk": "ласка", "ru": "ласка", "en": "weasel", "phoneticUk": "laska", "phoneticRu": "laska", "category": "animals-extra"},
-    {"uk": "видра", "ru": "выдра", "en": "otter", "phoneticUk": "vydra", "phoneticRu": "vydra", "category": "animals-extra"},
-    {"uk": "тхір", "ru": "хорёк", "en": "polecat/ferret", "phoneticUk": "tkhir", "phoneticRu": "khoryok", "category": "animals-extra"},
-    {"uk": "борсук", "ru": "барсук", "en": "badger", "phoneticUk": "borsuk", "phoneticRu": "barsuk", "category": "animals-extra"},
-    {"uk": "ведмідь", "ru": "медведь", "en": "bear", "phoneticUk": "vedmid", "phoneticRu": "medved", "category": "animals-extra"},
-    {"uk": "панда", "ru": "панда", "en": "panda", "phoneticUk": "panda", "phoneticRu": "panda", "category": "animals-extra"},
-    {"uk": "леопард", "ru": "леопард", "en": "leopard", "phoneticUk": "leopard", "phoneticRu": "leopard", "category": "animals-extra"},
-    {"uk": "гепард", "ru": "гепард", "en": "cheetah", "phoneticUk": "hepard", "phoneticRu": "gepard", "category": "animals-extra"},
-    {"uk": "тигр", "ru": "тигр", "en": "tiger", "phoneticUk": "tyhr", "phoneticRu": "tigr", "category": "animals-extra"},
-    {"uk": "лев", "ru": "лев", "en": "lion", "phoneticUk": "lev", "phoneticRu": "lev", "category": "animals-extra"},
-    {"uk": "рись", "ru": "рысь", "en": "lynx", "phoneticUk": "rys", "phoneticRu": "rys", "category": "animals-extra"},
-    {"uk": "слон", "ru": "слон", "en": "elephant", "phoneticUk": "slon", "phoneticRu": "slon", "category": "animals-extra"},
-    {"uk": "буйвол", "ru": "буйвол", "en": "buffalo", "phoneticUk": "buyvol", "phoneticRu": "buyvol", "category": "animals-extra"},
-    {"uk": "антилопа", "ru": "антилопа", "en": "antelope", "phoneticUk": "antylopa", "phoneticRu": "antilopa", "category": "animals-extra"},
-    {"uk": "газель", "ru": "газель", "en": "gazelle", "phoneticUk": "hazel", "phoneticRu": "gazel", "category": "animals-extra"},
-    {"uk": "лама", "ru": "лама", "en": "llama", "phoneticUk": "lama", "phoneticRu": "lama", "category": "animals-extra"},
-    {"uk": "альпака", "ru": "альпака", "en": "alpaca", "phoneticUk": "alpaka", "phoneticRu": "alpaka", "category": "animals-extra"},
-    {"uk": "фретка", "ru": "хорёк", "en": "ferret", "phoneticUk": "fretka", "phoneticRu": "khoryok", "category": "animals-extra"},
-    {"uk": "шиншила", "ru": "шиншилла", "en": "chinchilla", "phoneticUk": "shynshyla", "phoneticRu": "shinshilla", "category": "animals-extra"},
-    {"uk": "єнот", "ru": "енот", "en": "raccoon", "phoneticUk": "yenot", "phoneticRu": "yenot", "category": "animals-extra"},
-    {"uk": "скунс", "ru": "скунс", "en": "skunk", "phoneticUk": "skunks", "phoneticRu": "skunks", "category": "animals-extra"},
-    {"uk": "опосум", "ru": "опоссум", "en": "opossum", "phoneticUk": "oposum", "phoneticRu": "opossum", "category": "animals-extra"},
-    {"uk": "намет", "ru": "палатка", "en": "tent", "phoneticUk": "namet", "phoneticRu": "palatka", "category": "outdoor"},
-    {"uk": "спальний мішок", "ru": "спальный мешок", "en": "sleeping bag", "phoneticUk": "spalnyi mishok", "phoneticRu": "spalnyy meshok", "category": "outdoor"},
-    {"uk": "багаття", "ru": "костёр", "en": "campfire/bonfire", "phoneticUk": "bahattya", "phoneticRu": "kostyor", "category": "outdoor"},
-    {"uk": "факел", "ru": "факел", "en": "torch", "phoneticUk": "fakel", "phoneticRu": "fakel", "category": "outdoor"},
-    {"uk": "ліхтарик", "ru": "фонарик", "en": "flashlight", "phoneticUk": "likhtaryk", "phoneticRu": "fonarik", "category": "outdoor"},
-    {"uk": "компас", "ru": "компас", "en": "compass", "phoneticUk": "kompas", "phoneticRu": "kompas", "category": "outdoor"},
-    {"uk": "карта", "ru": "карта", "en": "map", "phoneticUk": "karta", "phoneticRu": "karta", "category": "outdoor"},
-    {"uk": "бінокль", "ru": "бинокль", "en": "binoculars", "phoneticUk": "binokl", "phoneticRu": "binokl", "category": "outdoor"},
-    {"uk": "рюкзак (туристичний)", "ru": "рюкзак (туристический)", "en": "backpack (hiking)", "phoneticUk": "ryukzak", "phoneticRu": "ryukzak", "category": "outdoor"},
-    {"uk": "термос", "ru": "термос", "en": "thermos", "phoneticUk": "termos", "phoneticRu": "termos", "category": "outdoor"},
-    {"uk": "гамачок", "ru": "гамачок", "en": "small hammock", "phoneticUk": "hamachok", "phoneticRu": "gamachok", "category": "outdoor"},
-    {"uk": "канат", "ru": "канат", "en": "rope", "phoneticUk": "kanat", "phoneticRu": "kanat", "category": "outdoor"},
-    {"uk": "вузол", "ru": "узел", "en": "knot", "phoneticUk": "vuzol", "phoneticRu": "uzel", "category": "outdoor"},
-    {"uk": "палатка", "ru": "палатка", "en": "tent (camping)", "phoneticUk": "palatka", "phoneticRu": "palatka", "category": "outdoor"},
-    {"uk": "столовий прибор", "ru": "столовый прибор", "en": "cutlery", "phoneticUk": "stolovyi prybor", "phoneticRu": "stolovyy pribor", "category": "outdoor"},
-    {"uk": "консерва", "ru": "консервы", "en": "canned food", "phoneticUk": "konserva", "phoneticRu": "konservy", "category": "outdoor"},
-    {"uk": "сірник", "ru": "спичка", "en": "match (fire)", "phoneticUk": "sirnyk", "phoneticRu": "spichka", "category": "outdoor"},
-    {"uk": "бензопила", "ru": "бензопила", "en": "chainsaw", "phoneticUk": "benzopyla", "phoneticRu": "benzopila", "category": "tools-extra"},
-    {"uk": "дриль", "ru": "дрель", "en": "drill", "phoneticUk": "dryl", "phoneticRu": "drel", "category": "tools-extra"},
-    {"uk": "шуруповерт", "ru": "шуруповёрт", "en": "screwdriver (power)", "phoneticUk": "shurupovert", "phoneticRu": "shurupovert", "category": "tools-extra"},
-    {"uk": "плоскогубці", "ru": "плоскогубцы", "en": "pliers", "phoneticUk": "ploskohubci", "phoneticRu": "ploskogubcy", "category": "tools-extra"},
-    {"uk": "розвідний ключ", "ru": "разводной ключ", "en": "wrench (adjustable)", "phoneticUk": "rozvidnyi klyuch", "phoneticRu": "razvodnoy klyuch", "category": "tools-extra"},
-    {"uk": "викрутка", "ru": "отвёртка", "en": "screwdriver", "phoneticUk": "vykrutka", "phoneticRu": "otvyortka", "category": "tools-extra"},
-    {"uk": "гвинт", "ru": "винт", "en": "screw", "phoneticUk": "hvynt", "phoneticRu": "vint", "category": "tools-extra"},
-    {"uk": "цвях", "ru": "гвоздь", "en": "nail (hardware)", "phoneticUk": "tsvyakh", "phoneticRu": "gvozd", "category": "tools-extra"},
-    {"uk": "болт", "ru": "болт", "en": "bolt", "phoneticUk": "bolt", "phoneticRu": "bolt", "category": "tools-extra"},
-    {"uk": "гайка", "ru": "гайка", "en": "nut (hardware)", "phoneticUk": "hayka", "phoneticRu": "gayka", "category": "tools-extra"},
-    {"uk": "шайба", "ru": "шайба", "en": "washer (hardware)", "phoneticUk": "shayba", "phoneticRu": "shayba", "category": "tools-extra"},
-    {"uk": "дюбель", "ru": "дюбель", "en": "dowel/anchor", "phoneticUk": "dyubel", "phoneticRu": "dyubel", "category": "tools-extra"},
-    {"uk": "рулетка", "ru": "рулетка", "en": "tape measure", "phoneticUk": "ruletka", "phoneticRu": "ruletka", "category": "tools-extra"},
-    {"uk": "рівень", "ru": "уровень", "en": "level (tool)", "phoneticUk": "riven", "phoneticRu": "uroven", "category": "tools-extra"},
-    {"uk": "зубило", "ru": "зубило", "en": "chisel", "phoneticUk": "zubylo", "phoneticRu": "zubilo", "category": "tools-extra"},
-    {"uk": "напилок", "ru": "напильник", "en": "file (tool)", "phoneticUk": "napylok", "phoneticRu": "napilnik", "category": "tools-extra"},
-    {"uk": "наждачний папір", "ru": "наждачная бумага", "en": "sandpaper", "phoneticUk": "nazhdachnyi papir", "phoneticRu": "nazhdachnaya bumaga", "category": "tools-extra"},
-    {"uk": "штукатурка", "ru": "штукатурка", "en": "plaster/stucco", "phoneticUk": "shtukaturka", "phoneticRu": "shtukaturka", "category": "tools-extra"},
-    {"uk": "фарба", "ru": "краска", "en": "paint", "phoneticUk": "farba", "phoneticRu": "kraska", "category": "tools-extra"},
-    {"uk": "валик", "ru": "валик", "en": "paint roller", "phoneticUk": "valyk", "phoneticRu": "valik", "category": "tools-extra"},
-    {"uk": "пензель", "ru": "кисть", "en": "paintbrush", "phoneticUk": "penzel", "phoneticRu": "kist", "category": "tools-extra"},
-    {"uk": "ринок", "ru": "рынок", "en": "market", "phoneticUk": "rynok", "phoneticRu": "rynok", "category": "places"},
-    {"uk": "базар", "ru": "базар", "en": "bazaar", "phoneticUk": "bazar", "phoneticRu": "bazar", "category": "places"},
-    {"uk": "супермаркет", "ru": "супермаркет", "en": "supermarket", "phoneticUk": "supermarket", "phoneticRu": "supermarket", "category": "places"},
-    {"uk": "пекарня", "ru": "пекарня", "en": "bakery", "phoneticUk": "pekarnya", "phoneticRu": "pekarnya", "category": "places"},
-    {"uk": "м'ясна крамниця", "ru": "мясная лавка", "en": "butcher shop", "phoneticUk": "myasna kramnytsia", "phoneticRu": "myasnaya lavka", "category": "places"},
-    {"uk": "аптека (місце)", "ru": "аптека", "en": "pharmacy (place)", "phoneticUk": "apteka", "phoneticRu": "apteka", "category": "places"},
-    {"uk": "лікарня", "ru": "больница", "en": "hospital", "phoneticUk": "likarnya", "phoneticRu": "bolnitsa", "category": "places"},
-    {"uk": "поліклініка", "ru": "поликлиника", "en": "clinic/polyclinic", "phoneticUk": "poliklinika", "phoneticRu": "poliklinika", "category": "places"},
-    {"uk": "пошта", "ru": "почта", "en": "post office", "phoneticUk": "poshta", "phoneticRu": "pochta", "category": "places"},
-    {"uk": "банк (місце)", "ru": "банк", "en": "bank (place)", "phoneticUk": "bank", "phoneticRu": "bank", "category": "places"},
-    {"uk": "вокзал", "ru": "вокзал", "en": "train station", "phoneticUk": "vokzal", "phoneticRu": "vokzal", "category": "places"},
-    {"uk": "автовокзал", "ru": "автовокзал", "en": "bus station", "phoneticUk": "avtovokzal", "phoneticRu": "avtovokzal", "category": "places"},
-    {"uk": "аеропорт", "ru": "аэропорт", "en": "airport", "phoneticUk": "aeroport", "phoneticRu": "aeroport", "category": "places"},
-    {"uk": "готель", "ru": "гостиница", "en": "hotel", "phoneticUk": "hotel", "phoneticRu": "gostinitsa", "category": "places"},
-    {"uk": "хостел", "ru": "хостел", "en": "hostel", "phoneticUk": "khostel", "phoneticRu": "khostel", "category": "places"},
-    {"uk": "ресторан", "ru": "ресторан", "en": "restaurant", "phoneticUk": "restoran", "phoneticRu": "restoran", "category": "places"},
-    {"uk": "кафе", "ru": "кафе", "en": "cafe", "phoneticUk": "kafe", "phoneticRu": "kafe", "category": "places"},
-    {"uk": "бар", "ru": "бар", "en": "bar/pub", "phoneticUk": "bar", "phoneticRu": "bar", "category": "places"},
-    {"uk": "кінотеатр", "ru": "кинотеатр", "en": "cinema/movie theater", "phoneticUk": "kinoteatr", "phoneticRu": "kinoteatr", "category": "places"},
-    {"uk": "музей", "ru": "музей", "en": "museum", "phoneticUk": "muzey", "phoneticRu": "muzey", "category": "places"},
-    {"uk": "зоопарк", "ru": "зоопарк", "en": "zoo", "phoneticUk": "zoopark", "phoneticRu": "zoopark", "category": "places"},
-    {"uk": "парк розваг", "ru": "парк развлечений", "en": "amusement park", "phoneticUk": "park rozvah", "phoneticRu": "park razvlecheniy", "category": "places"},
-    {"uk": "спортзал", "ru": "спортзал", "en": "gym", "phoneticUk": "sportzal", "phoneticRu": "sportzal", "category": "places"},
-    {"uk": "басейн", "ru": "бассейн", "en": "swimming pool", "phoneticUk": "baseyn", "phoneticRu": "basseyn", "category": "places"},
-    {"uk": "пляж", "ru": "пляж", "en": "beach", "phoneticUk": "plyazh", "phoneticRu": "plyazh", "category": "places"},
-    {"uk": "кладовище", "ru": "кладбище", "en": "cemetery", "phoneticUk": "kladovyshche", "phoneticRu": "kladbishche", "category": "places"},
-    {"uk": "собор", "ru": "собор", "en": "cathedral", "phoneticUk": "sobor", "phoneticRu": "sobor", "category": "places"},
-    {"uk": "монастир", "ru": "монастырь", "en": "monastery", "phoneticUk": "monastyr", "phoneticRu": "monastyr", "category": "places"},
-    {"uk": "мечеть", "ru": "мечеть", "en": "mosque", "phoneticUk": "mechet", "phoneticRu": "mechet", "category": "places"},
-    {"uk": "синагога", "ru": "синагога", "en": "synagogue", "phoneticUk": "synaho ha", "phoneticRu": "sinagoga", "category": "places"},
-    {"uk": "посольство", "ru": "посольство", "en": "embassy", "phoneticUk": "posolstvo", "phoneticRu": "posolstvo", "category": "places"},
-    {"uk": "консульство", "ru": "консульство", "en": "consulate", "phoneticUk": "konsulstvo", "phoneticRu": "konsulstvo", "category": "places"},
-    {"uk": "мерія", "ru": "мэрия", "en": "city hall", "phoneticUk": "meriya", "phoneticRu": "meriya", "category": "places"},
-    {"uk": "суд (місце)", "ru": "суд", "en": "courthouse", "phoneticUk": "sud", "phoneticRu": "sud", "category": "places"},
-    {"uk": "в'язниця", "ru": "тюрьма", "en": "prison (place)", "phoneticUk": "vyaznytsia", "phoneticRu": "tyurma", "category": "places"},
-    {"uk": "дитячий садок", "ru": "детский сад", "en": "kindergarten", "phoneticUk": "dytyachyi sadok", "phoneticRu": "detskiy sad", "category": "places"},
-    {"uk": "ясла", "ru": "ясли", "en": "nursery/daycare", "phoneticUk": "yasla", "phoneticRu": "yasli", "category": "places"},
-    {"uk": "університет", "ru": "университет", "en": "university", "phoneticUk": "universytet", "phoneticRu": "universitet", "category": "places"},
-    {"uk": "гуртожиток", "ru": "общежитие", "en": "dormitory", "phoneticUk": "hurtozhytok", "phoneticRu": "obshchezhitiye", "category": "places"},
-    {"uk": "стоянка", "ru": "стоянка", "en": "parking lot", "phoneticUk": "stoyanka", "phoneticRu": "stoyanka", "category": "places"},
-    {"uk": "автомийка", "ru": "автомойка", "en": "car wash", "phoneticUk": "avtomyyka", "phoneticRu": "avtomoyka", "category": "places"},
-    {"uk": "заправка", "ru": "заправка", "en": "gas station", "phoneticUk": "zapravka", "phoneticRu": "zapravka", "category": "places"},
-    {"uk": "підземний перехід", "ru": "подземный переход", "en": "underpass/subway", "phoneticUk": "pidzemnyi perekhid", "phoneticRu": "podzemnyy perekhod", "category": "places"},
-    {"uk": "пішохідний перехід", "ru": "пешеходный переход", "en": "crosswalk", "phoneticUk": "pishikhidnyi perekhid", "phoneticRu": "peshekhodnyy perekhod", "category": "places"},
-    {"uk": "тротуар", "ru": "тротуар", "en": "sidewalk", "phoneticUk": "trotuar", "phoneticRu": "trotuar", "category": "places"},
-    {"uk": "бульвар", "ru": "бульвар", "en": "boulevard", "phoneticUk": "bulvar", "phoneticRu": "bulvar", "category": "places"},
-    {"uk": "провулок", "ru": "переулок", "en": "alley/lane", "phoneticUk": "provulok", "phoneticRu": "pereulok", "category": "places"},
-    {"uk": "площа", "ru": "площадь", "en": "square/plaza", "phoneticUk": "ploshcha", "phoneticRu": "ploshchad", "category": "places"},
-    {"uk": "набережна", "ru": "набережная", "en": "embankment/waterfront", "phoneticUk": "naberezhna", "phoneticRu": "naberezhnaya", "category": "places"},
-    {"uk": "ніяково", "ru": "неловко", "en": "awkward/embarrassing", "phoneticUk": "niyakovo", "phoneticRu": "nelovko", "category": "expressions"},
-    {"uk": "нудьга", "ru": "скука", "en": "boredom", "phoneticUk": "nudha", "phoneticRu": "skuka", "category": "expressions"},
-    {"uk": "натхнення", "ru": "вдохновение", "en": "inspiration", "phoneticUk": "natkhnennya", "phoneticRu": "vdokhnoveniye", "category": "expressions"},
-    {"uk": "спогад", "ru": "воспоминание", "en": "memory/recollection", "phoneticUk": "spohad", "phoneticRu": "vospominaniye", "category": "expressions"},
-    {"uk": "передчуття", "ru": "предчувствие", "en": "premonition/hunch", "phoneticUk": "peredchuttya", "phoneticRu": "predchuvstviye", "category": "expressions"},
-    {"uk": "совість", "ru": "совесть", "en": "conscience", "phoneticUk": "sovist", "phoneticRu": "sovest", "category": "expressions"},
-    {"uk": "жаль", "ru": "жалость", "en": "pity/regret", "phoneticUk": "zhal", "phoneticRu": "zhalost", "category": "expressions"},
-    {"uk": "спокуса", "ru": "искушение", "en": "temptation", "phoneticUk": "spokusa", "phoneticRu": "iskusheniye", "category": "expressions"},
-    {"uk": "випробування", "ru": "испытание", "en": "trial/test", "phoneticUk": "vyprobuvannya", "phoneticRu": "ispytaniye", "category": "expressions"},
-    {"uk": "наслідок", "ru": "последствие", "en": "consequence", "phoneticUk": "naslidok", "phoneticRu": "posledstviye", "category": "expressions"},
-    {"uk": "причина", "ru": "причина", "en": "cause/reason", "phoneticUk": "prychyna", "phoneticRu": "prichina", "category": "expressions"},
-    {"uk": "мета", "ru": "цель", "en": "goal/purpose", "phoneticUk": "meta", "phoneticRu": "tsel", "category": "expressions"},
-    {"uk": "засіб", "ru": "средство", "en": "means/tool", "phoneticUk": "zasib", "phoneticRu": "sredstvo", "category": "expressions"},
-    {"uk": "спосіб", "ru": "способ", "en": "method/way", "phoneticUk": "sposib", "phoneticRu": "sposob", "category": "expressions"},
-    {"uk": "результат", "ru": "результат", "en": "result/outcome", "phoneticUk": "rezultat", "phoneticRu": "rezultat", "category": "expressions"},
-    {"uk": "досвід", "ru": "опыт", "en": "experience", "phoneticUk": "dosvid", "phoneticRu": "opyt", "category": "expressions"},
-    {"uk": "приклад", "ru": "пример", "en": "example", "phoneticUk": "pryklad", "phoneticRu": "primer", "category": "expressions"},
-    {"uk": "помилка", "ru": "ошибка", "en": "mistake/error", "phoneticUk": "pomylka", "phoneticRu": "oshibka", "category": "expressions"},
-    {"uk": "успіх", "ru": "успех", "en": "success", "phoneticUk": "uspikh", "phoneticRu": "uspekh", "category": "expressions"},
-    {"uk": "невдача", "ru": "неудача", "en": "failure", "phoneticUk": "nevdacha", "phoneticRu": "neudacha", "category": "expressions"},
-    {"uk": "ризик", "ru": "риск", "en": "risk", "phoneticUk": "ryzyk", "phoneticRu": "risk", "category": "expressions"},
-    {"uk": "шанс", "ru": "шанс", "en": "chance", "phoneticUk": "shans", "phoneticRu": "shans", "category": "expressions"},
-    {"uk": "можливість", "ru": "возможность", "en": "opportunity/possibility", "phoneticUk": "mozhlyvist", "phoneticRu": "vozmozhnost", "category": "expressions"},
-    {"uk": "перешкода", "ru": "препятствие", "en": "obstacle", "phoneticUk": "pereshkoda", "phoneticRu": "prepyatstviye", "category": "expressions"},
-    {"uk": "виклик", "ru": "вызов", "en": "challenge", "phoneticUk": "vyklyk", "phoneticRu": "vyzov", "category": "expressions"},
-    {"uk": "користь", "ru": "польза", "en": "benefit", "phoneticUk": "koryst", "phoneticRu": "polza", "category": "expressions"},
-    {"uk": "шкода", "ru": "вред", "en": "damage/harm", "phoneticUk": "shkoda", "phoneticRu": "vred", "category": "expressions"},
-    {"uk": "вигода", "ru": "выгода", "en": "advantage", "phoneticUk": "vyhoda", "phoneticRu": "vygoda", "category": "expressions"},
-    {"uk": "недолік", "ru": "недостаток", "en": "disadvantage/flaw", "phoneticUk": "nedolik", "phoneticRu": "nedostatok", "category": "expressions"},
-    {"uk": "умова", "ru": "условие", "en": "condition/term", "phoneticUk": "umova", "phoneticRu": "usloviye", "category": "expressions"},
-    {"uk": "вимога", "ru": "требование", "en": "requirement", "phoneticUk": "vymoha", "phoneticRu": "trebovaniye", "category": "expressions"},
-    {"uk": "пропозиція", "ru": "предложение", "en": "proposal/offer", "phoneticUk": "propozitsiya", "phoneticRu": "predlozheniye", "category": "expressions"},
-    {"uk": "згода", "ru": "согласие", "en": "agreement/consent", "phoneticUk": "zhoda", "phoneticRu": "soglasiye", "category": "expressions"},
-    {"uk": "відмова", "ru": "отказ", "en": "refusal/rejection", "phoneticUk": "vidmova", "phoneticRu": "otkaz", "category": "expressions"},
-    {"uk": "скарга", "ru": "жалоба", "en": "complaint", "phoneticUk": "skarha", "phoneticRu": "zhaloba", "category": "expressions"},
-    {"uk": "побажання", "ru": "пожелание", "en": "wish/desire", "phoneticUk": "pobazhannya", "phoneticRu": "pozhelaniye", "category": "expressions"},
-    {"uk": "обіцянка", "ru": "обещание", "en": "promise", "phoneticUk": "obitsyanka", "phoneticRu": "obeshchaniye", "category": "expressions"},
-    {"uk": "вдячність", "ru": "благодарность", "en": "thankfulness", "phoneticUk": "vdyachnist", "phoneticRu": "blagodarnost", "category": "expressions"},
-    {"uk": "впевненість", "ru": "уверенность", "en": "confidence/certainty", "phoneticUk": "vpevnenist", "phoneticRu": "uverennost", "category": "expressions"},
-    {"uk": "сумнів", "ru": "сомнение", "en": "doubt", "phoneticUk": "sumniv", "phoneticRu": "somneniye", "category": "expressions"},
-    {"uk": "підтримка", "ru": "поддержка", "en": "support", "phoneticUk": "pidtrymka", "phoneticRu": "podderzhka", "category": "expressions"},
-    {"uk": "опір", "ru": "сопротивление", "en": "resistance", "phoneticUk": "opir", "phoneticRu": "soprotivleniye", "category": "expressions"},
-    {"uk": "здогад", "ru": "догадка", "en": "guess/conjecture", "phoneticUk": "zdohad", "phoneticRu": "dogadka", "category": "expressions"},
-    {"uk": "факт", "ru": "факт", "en": "fact", "phoneticUk": "fakt", "phoneticRu": "fakt", "category": "expressions"},
-    {"uk": "думка", "ru": "мнение", "en": "opinion/thought", "phoneticUk": "dumka", "phoneticRu": "mneniye", "category": "expressions"},
-    {"uk": "ідея", "ru": "идея", "en": "idea", "phoneticUk": "ideya", "phoneticRu": "ideya", "category": "expressions"},
-    {"uk": "пояснення", "ru": "объяснение", "en": "explanation", "phoneticUk": "poyasnennya", "phoneticRu": "obyasneniye", "category": "expressions"},
-    {"uk": "висновок", "ru": "вывод", "en": "conclusion", "phoneticUk": "vysnovok", "phoneticRu": "vyvod", "category": "expressions"},
-    {"uk": "доказ (аргумент)", "ru": "доказательство", "en": "proof/argument", "phoneticUk": "dokaz", "phoneticRu": "dokazatelstvo", "category": "expressions"},
-    {"uk": "запитання", "ru": "вопрос", "en": "question", "phoneticUk": "zapytannya", "phoneticRu": "vopros", "category": "expressions"},
-    {"uk": "відповідь", "ru": "ответ", "en": "answer/reply", "phoneticUk": "vidpovid", "phoneticRu": "otvet", "category": "expressions"},
-    {"uk": "правило", "ru": "правило", "en": "rule", "phoneticUk": "pravylo", "phoneticRu": "pravilo", "category": "expressions"},
-    {"uk": "виняток", "ru": "исключение", "en": "exception", "phoneticUk": "vynyatok", "phoneticRu": "isklyucheniye", "category": "expressions"},
-    {"uk": "закон", "ru": "закон", "en": "law", "phoneticUk": "zakon", "phoneticRu": "zakon", "category": "expressions"},
-    {"uk": "свідчення", "ru": "свидетельство", "en": "evidence/testimony", "phoneticUk": "svidchennya", "phoneticRu": "svidetelstvo", "category": "expressions"},
-    {"uk": "істина (правда)", "ru": "истина", "en": "truth", "phoneticUk": "istyna", "phoneticRu": "istina", "category": "expressions"},
-    {"uk": "брехня", "ru": "ложь", "en": "lie/falsehood", "phoneticUk": "brekhnya", "phoneticRu": "lozh", "category": "expressions"},
-    {"uk": "таємниця (секрет)", "ru": "тайна", "en": "secret", "phoneticUk": "tayemnytsya", "phoneticRu": "tayna", "category": "expressions"},
-    {"uk": "чутка", "ru": "слух", "en": "rumor", "phoneticUk": "chutka", "phoneticRu": "slukh", "category": "expressions"},
-    {"uk": "плітка", "ru": "сплетня", "en": "gossip", "phoneticUk": "plitka", "phoneticRu": "spletnya", "category": "expressions"},
-    {"uk": "жарт", "ru": "шутка", "en": "joke", "phoneticUk": "zhart", "phoneticRu": "shutka", "category": "expressions"},
-    {"uk": "загадка", "ru": "загадка", "en": "riddle/mystery", "phoneticUk": "zahadka", "phoneticRu": "zagadka", "category": "expressions"},
-    {"uk": "казкар", "ru": "сказочник", "en": "storyteller", "phoneticUk": "kazkar", "phoneticRu": "skazochnik", "category": "expressions"},
-    {"uk": "оповідач", "ru": "рассказчик", "en": "narrator", "phoneticUk": "opovidach", "phoneticRu": "rasskazchik", "category": "expressions"},
-    {"uk": "герой", "ru": "герой", "en": "hero", "phoneticUk": "heroy", "phoneticRu": "geroy", "category": "expressions"},
-    {"uk": "лиходій", "ru": "злодей", "en": "villain", "phoneticUk": "lykhodiy", "phoneticRu": "zlodey", "category": "expressions"},
-    {"uk": "свідок (очевидець)", "ru": "очевидец", "en": "eyewitness", "phoneticUk": "svidok", "phoneticRu": "ochevidets", "category": "expressions"},
-    {"uk": "натовп", "ru": "толпа", "en": "crowd", "phoneticUk": "natovp", "phoneticRu": "tolpa", "category": "expressions"},
-    {"uk": "черга (людей)", "ru": "очередь", "en": "queue/line (of people)", "phoneticUk": "cherha", "phoneticRu": "ochered", "category": "expressions"},
-    {"uk": "сусід", "ru": "сосед", "en": "neighbor", "phoneticUk": "susid", "phoneticRu": "sosed", "category": "expressions"},
-    {"uk": "знайомий", "ru": "знакомый", "en": "acquaintance", "phoneticUk": "znayomyi", "phoneticRu": "znakomyy", "category": "expressions"},
-    {"uk": "незнайомець", "ru": "незнакомец", "en": "stranger", "phoneticUk": "neznayomets", "phoneticRu": "neznakomets", "category": "expressions"},
-    {"uk": "однокласник", "ru": "одноклассник", "en": "classmate", "phoneticUk": "odnoklasnik", "phoneticRu": "odnoklassnik", "category": "expressions"},
-    {"uk": "одногрупник", "ru": "одногруппник", "en": "groupmate/fellow student", "phoneticUk": "odnohrupnyk", "phoneticRu": "odnogruppnik", "category": "expressions"},
-    {"uk": "партнер", "ru": "партнёр", "en": "partner", "phoneticUk": "partner", "phoneticRu": "partnyur", "category": "expressions"},
-    {"uk": "побратим", "ru": "побратим", "en": "brother-in-arms", "phoneticUk": "pobratym", "phoneticRu": "pobratim", "category": "expressions"},
-    {"uk": "товариш", "ru": "товарищ", "en": "comrade/companion", "phoneticUk": "tovarysh", "phoneticRu": "tovarishch", "category": "expressions"},
-    {"uk": "гора", "ru": "гора", "en": "mountain", "phoneticUk": "hora", "phoneticRu": "gora", "category": "nature-geography"},
-    {"uk": "річка", "ru": "река", "en": "river", "phoneticUk": "richka", "phoneticRu": "reka", "category": "nature-geography"},
-    {"uk": "ліс", "ru": "лес", "en": "forest", "phoneticUk": "lis", "phoneticRu": "les", "category": "nature-geography"},
-    {"uk": "озеро", "ru": "озеро", "en": "lake", "phoneticUk": "ozero", "phoneticRu": "ozero", "category": "nature-geography"},
-    {"uk": "море", "ru": "море", "en": "sea", "phoneticUk": "more", "phoneticRu": "more", "category": "nature-geography"},
-    {"uk": "океан", "ru": "океан", "en": "ocean", "phoneticUk": "okean", "phoneticRu": "okean", "category": "nature-geography"},
-    {"uk": "острів", "ru": "остров", "en": "island", "phoneticUk": "ostriv", "phoneticRu": "ostrov", "category": "nature-geography"},
-    {"uk": "пустеля", "ru": "пустыня", "en": "desert", "phoneticUk": "pustelya", "phoneticRu": "pustynya", "category": "nature-geography"},
-    {"uk": "рівнина", "ru": "равнина", "en": "plain", "phoneticUk": "rivnyna", "phoneticRu": "ravnina", "category": "nature-geography"},
-    {"uk": "долина", "ru": "долина", "en": "valley", "phoneticUk": "dolyna", "phoneticRu": "dolina", "category": "nature-geography"},
-    {"uk": "вулкан", "ru": "вулкан", "en": "volcano", "phoneticUk": "vulkan", "phoneticRu": "vulkan", "category": "nature-geography"},
-    {"uk": "водоспад", "ru": "водопад", "en": "waterfall", "phoneticUk": "vodospad", "phoneticRu": "vodopad", "category": "nature-geography"},
-    {"uk": "льодовик", "ru": "ледник", "en": "glacier", "phoneticUk": "lodovyk", "phoneticRu": "lednik", "category": "nature-geography"},
-    {"uk": "болото", "ru": "болото", "en": "swamp", "phoneticUk": "boloto", "phoneticRu": "boloto", "category": "nature-geography"},
-    {"uk": "печера", "ru": "пещера", "en": "cave", "phoneticUk": "pechera", "phoneticRu": "peshchera", "category": "nature-geography"},
-    {"uk": "півострів", "ru": "полуостров", "en": "peninsula", "phoneticUk": "pivostriv", "phoneticRu": "poluostrov", "category": "nature-geography"},
-    {"uk": "континент", "ru": "континент", "en": "continent", "phoneticUk": "kontynent", "phoneticRu": "kontinent", "category": "nature-geography"},
-    {"uk": "екватор", "ru": "экватор", "en": "equator", "phoneticUk": "ekvator", "phoneticRu": "ekvator", "category": "nature-geography"},
-    {"uk": "клімат", "ru": "климат", "en": "climate", "phoneticUk": "klimat", "phoneticRu": "klimat", "category": "nature-geography"},
-    {"uk": "землетрус", "ru": "землетрясение", "en": "earthquake", "phoneticUk": "zemletrus", "phoneticRu": "zemletryaseniye", "category": "nature-geography"},
-    {"uk": "повінь", "ru": "наводнение", "en": "flood", "phoneticUk": "povin", "phoneticRu": "navodneniye", "category": "nature-geography"},
-    {"uk": "посуха", "ru": "засуха", "en": "drought", "phoneticUk": "posukha", "phoneticRu": "zasukha", "category": "nature-geography"},
-    {"uk": "ураган", "ru": "ураган", "en": "hurricane", "phoneticUk": "urahan", "phoneticRu": "uragan", "category": "nature-geography"},
-    {"uk": "тайга", "ru": "тайга", "en": "taiga", "phoneticUk": "tayha", "phoneticRu": "tayga", "category": "nature-geography"},
-    {"uk": "степ", "ru": "степь", "en": "steppe", "phoneticUk": "step", "phoneticRu": "step", "category": "nature-geography"},
-    {"uk": "тундра", "ru": "тундра", "en": "tundra", "phoneticUk": "tundra", "phoneticRu": "tundra", "category": "nature-geography"},
-    {"uk": "берег", "ru": "берег", "en": "shore/coast", "phoneticUk": "bereh", "phoneticRu": "bereg", "category": "nature-geography"},
-    {"uk": "затока", "ru": "залив", "en": "bay/gulf", "phoneticUk": "zatoka", "phoneticRu": "zaliv", "category": "nature-geography"},
-    {"uk": "протока", "ru": "пролив", "en": "strait", "phoneticUk": "protoka", "phoneticRu": "proliv", "category": "nature-geography"},
-    {"uk": "хребет", "ru": "хребет", "en": "mountain range", "phoneticUk": "khrebet", "phoneticRu": "khrebet", "category": "nature-geography"},
-    {"uk": "дерево", "ru": "дерево", "en": "tree", "phoneticUk": "derevo", "phoneticRu": "derevo", "category": "nature-geography"},
-    {"uk": "квітка", "ru": "цветок", "en": "flower", "phoneticUk": "kvitka", "phoneticRu": "tsvetok", "category": "nature-geography"},
-    {"uk": "трава", "ru": "трава", "en": "grass", "phoneticUk": "trava", "phoneticRu": "trava", "category": "nature-geography"},
-    {"uk": "кущ", "ru": "кустарник", "en": "bush/shrub", "phoneticUk": "kushch", "phoneticRu": "kustarnik", "category": "nature-geography"},
-    {"uk": "ґрунт", "ru": "почва", "en": "soil", "phoneticUk": "grunt", "phoneticRu": "pochva", "category": "nature-geography"},
-    {"uk": "камінь", "ru": "камень", "en": "stone/rock", "phoneticUk": "kamin", "phoneticRu": "kamen", "category": "nature-geography"},
-    {"uk": "пісок", "ru": "песок", "en": "sand", "phoneticUk": "pisok", "phoneticRu": "pesok", "category": "nature-geography"},
-    {"uk": "глина", "ru": "глина", "en": "clay", "phoneticUk": "hlyna", "phoneticRu": "glina", "category": "nature-geography"},
-    {"uk": "тварина", "ru": "животное", "en": "animal", "phoneticUk": "tvaryna", "phoneticRu": "zhivotnoye", "category": "nature-geography"},
-    {"uk": "птах", "ru": "птица", "en": "bird", "phoneticUk": "ptakh", "phoneticRu": "ptitsa", "category": "nature-geography"},
-    {"uk": "риба", "ru": "рыба", "en": "fish", "phoneticUk": "ryba", "phoneticRu": "ryba", "category": "nature-geography"},
-    {"uk": "комаха", "ru": "насекомое", "en": "insect", "phoneticUk": "komakha", "phoneticRu": "nasekomoye", "category": "nature-geography"},
-    {"uk": "рослина", "ru": "растение", "en": "plant", "phoneticUk": "roslyna", "phoneticRu": "rasteniye", "category": "nature-geography"},
-    {"uk": "заповідник", "ru": "заповедник", "en": "nature reserve", "phoneticUk": "zapovidnyk", "phoneticRu": "zapovednik", "category": "nature-geography"},
-    {"uk": "полярне коло", "ru": "полярный круг", "en": "polar circle", "phoneticUk": "polyarne kolo", "phoneticRu": "polyarnyy krug", "category": "nature-geography"},
-    {"uk": "широта", "ru": "широта", "en": "latitude", "phoneticUk": "shyrota", "phoneticRu": "shirota", "category": "nature-geography"},
-    {"uk": "довгота", "ru": "долгота", "en": "longitude", "phoneticUk": "dovhota", "phoneticRu": "dolgota", "category": "nature-geography"},
-    {"uk": "горизонт", "ru": "горизонт", "en": "horizon", "phoneticUk": "horyzont", "phoneticRu": "gorizont", "category": "nature-geography"},
-    {"uk": "схід сонця", "ru": "восход", "en": "sunrise", "phoneticUk": "skhid sontsya", "phoneticRu": "voskhod", "category": "nature-geography"},
-    {"uk": "захід сонця", "ru": "закат", "en": "sunset", "phoneticUk": "zakhid sontsya", "phoneticRu": "zakat", "category": "nature-geography"}
+    {
+      "uk": "ящірка",
+      "ru": "ящерица",
+      "en": "lizard",
+      "phoneticUk": "yashchirka",
+      "phoneticRu": "yashcheritsa",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Ящірка гріється на сонячному камені."
+        ],
+        "ru": [
+          "Ящерица греется на солнечном камне."
+        ],
+        "en": [
+          "The lizard warms itself on a sun-heated rock."
+        ]
+      }
+    },
+    {
+      "uk": "саламандра",
+      "ru": "саламандра",
+      "en": "salamander",
+      "phoneticUk": "salamandra",
+      "phoneticRu": "salamandra",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Саламандра живе біля води."
+        ],
+        "ru": [
+          "Саламандра живёт у воды."
+        ],
+        "en": [
+          "The salamander lives near water."
+        ]
+      }
+    },
+    {
+      "uk": "тритон",
+      "ru": "тритон",
+      "en": "newt",
+      "phoneticUk": "tryton",
+      "phoneticRu": "triton",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Тритон — невелика земноводна тварина."
+        ],
+        "ru": [
+          "Тритон — небольшое земноводное животное."
+        ],
+        "en": [
+          "A newt is a small amphibian."
+        ]
+      }
+    },
+    {
+      "uk": "кажан",
+      "ru": "летучая мышь",
+      "en": "bat (animal)",
+      "phoneticUk": "kazhan",
+      "phoneticRu": "letuchaya mysh",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Кажан виходить на полювання вночі."
+        ],
+        "ru": [
+          "Летучая мышь выходит на охоту ночью."
+        ],
+        "en": [
+          "The bat goes out to hunt at night."
+        ]
+      }
+    },
+    {
+      "uk": "ласка",
+      "ru": "ласка",
+      "en": "weasel",
+      "phoneticUk": "laska",
+      "phoneticRu": "laska",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Ласка — маленький хижак."
+        ],
+        "ru": [
+          "Ласка — маленький хищник."
+        ],
+        "en": [
+          "A weasel is a small predator."
+        ]
+      }
+    },
+    {
+      "uk": "видра",
+      "ru": "выдра",
+      "en": "otter",
+      "phoneticUk": "vydra",
+      "phoneticRu": "vydra",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Видра живе біля річки."
+        ],
+        "ru": [
+          "Выдра живёт у реки."
+        ],
+        "en": [
+          "The otter lives by the river."
+        ]
+      }
+    },
+    {
+      "uk": "тхір",
+      "ru": "хорёк",
+      "en": "polecat/ferret",
+      "phoneticUk": "tkhir",
+      "phoneticRu": "khoryok",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Тхір видає неприємний запах."
+        ],
+        "ru": [
+          "Хорёк издаёт неприятный запах."
+        ],
+        "en": [
+          "The polecat gives off an unpleasant smell."
+        ]
+      }
+    },
+    {
+      "uk": "борсук",
+      "ru": "барсук",
+      "en": "badger",
+      "phoneticUk": "borsuk",
+      "phoneticRu": "barsuk",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Борсук риє нору в землі."
+        ],
+        "ru": [
+          "Барсук роет нору в земле."
+        ],
+        "en": [
+          "The badger digs a burrow in the ground."
+        ]
+      }
+    },
+    {
+      "uk": "ведмідь",
+      "ru": "медведь",
+      "en": "bear",
+      "phoneticUk": "vedmid",
+      "phoneticRu": "medved",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Ведмідь ловить рибу в річці."
+        ],
+        "ru": [
+          "Медведь ловит рыбу в реке."
+        ],
+        "en": [
+          "The bear catches fish in the river."
+        ]
+      }
+    },
+    {
+      "uk": "панда",
+      "ru": "панда",
+      "en": "panda",
+      "phoneticUk": "panda",
+      "phoneticRu": "panda",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Панда їсть бамбук."
+        ],
+        "ru": [
+          "Панда ест бамбук."
+        ],
+        "en": [
+          "The panda eats bamboo."
+        ]
+      }
+    },
+    {
+      "uk": "леопард",
+      "ru": "леопард",
+      "en": "leopard",
+      "phoneticUk": "leopard",
+      "phoneticRu": "leopard",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Леопард має плямисте хутро."
+        ],
+        "ru": [
+          "Леопард имеет пятнистую шкуру."
+        ],
+        "en": [
+          "The leopard has spotted fur."
+        ]
+      }
+    },
+    {
+      "uk": "гепард",
+      "ru": "гепард",
+      "en": "cheetah",
+      "phoneticUk": "hepard",
+      "phoneticRu": "gepard",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Гепард — найшвидша тварина."
+        ],
+        "ru": [
+          "Гепард — самое быстрое животное."
+        ],
+        "en": [
+          "The cheetah is the fastest animal."
+        ]
+      }
+    },
+    {
+      "uk": "тигр",
+      "ru": "тигр",
+      "en": "tiger",
+      "phoneticUk": "tyhr",
+      "phoneticRu": "tigr",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Тигр — найбільша кішка світу."
+        ],
+        "ru": [
+          "Тигр — крупнейшая кошка мира."
+        ],
+        "en": [
+          "The tiger is the world's largest cat."
+        ]
+      }
+    },
+    {
+      "uk": "лев",
+      "ru": "лев",
+      "en": "lion",
+      "phoneticUk": "lev",
+      "phoneticRu": "lev",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Лев охороняє свою територію."
+        ],
+        "ru": [
+          "Лев охраняет свою территорию."
+        ],
+        "en": [
+          "The lion guards its territory."
+        ]
+      }
+    },
+    {
+      "uk": "рись",
+      "ru": "рысь",
+      "en": "lynx",
+      "phoneticUk": "rys",
+      "phoneticRu": "rys",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Рись живе в лісах."
+        ],
+        "ru": [
+          "Рысь живёт в лесах."
+        ],
+        "en": [
+          "The lynx lives in forests."
+        ]
+      }
+    },
+    {
+      "uk": "слон",
+      "ru": "слон",
+      "en": "elephant",
+      "phoneticUk": "slon",
+      "phoneticRu": "slon",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Слон має добру пам'ять."
+        ],
+        "ru": [
+          "Слон имеет хорошую память."
+        ],
+        "en": [
+          "Elephants have a good memory."
+        ]
+      }
+    },
+    {
+      "uk": "буйвол",
+      "ru": "буйвол",
+      "en": "buffalo",
+      "phoneticUk": "buyvol",
+      "phoneticRu": "buyvol",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Буйвол дуже сильний і небезпечний."
+        ],
+        "ru": [
+          "Буйвол очень сильный и опасный."
+        ],
+        "en": [
+          "The buffalo is very strong and dangerous."
+        ]
+      }
+    },
+    {
+      "uk": "антилопа",
+      "ru": "антилопа",
+      "en": "antelope",
+      "phoneticUk": "antylopa",
+      "phoneticRu": "antilopa",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Антилопа тікає від лева."
+        ],
+        "ru": [
+          "Антилопа убегает от льва."
+        ],
+        "en": [
+          "The antelope flees from the lion."
+        ]
+      }
+    },
+    {
+      "uk": "газель",
+      "ru": "газель",
+      "en": "gazelle",
+      "phoneticUk": "hazel",
+      "phoneticRu": "gazel",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Газель дуже граціозна."
+        ],
+        "ru": [
+          "Газель очень грациозна."
+        ],
+        "en": [
+          "The gazelle is very graceful."
+        ]
+      }
+    },
+    {
+      "uk": "лама",
+      "ru": "лама",
+      "en": "llama",
+      "phoneticUk": "lama",
+      "phoneticRu": "lama",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Лама живе в Андах."
+        ],
+        "ru": [
+          "Лама живёт в Андах."
+        ],
+        "en": [
+          "The llama lives in the Andes."
+        ]
+      }
+    },
+    {
+      "uk": "альпака",
+      "ru": "альпака",
+      "en": "alpaca",
+      "phoneticUk": "alpaka",
+      "phoneticRu": "alpaka",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Альпака дає м'яку вовну."
+        ],
+        "ru": [
+          "Альпака даёт мягкую шерсть."
+        ],
+        "en": [
+          "The alpaca produces soft wool."
+        ]
+      }
+    },
+    {
+      "uk": "фретка",
+      "ru": "хорёк",
+      "en": "ferret",
+      "phoneticUk": "fretka",
+      "phoneticRu": "khoryok",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Фретка — домашня тварина."
+        ],
+        "ru": [
+          "Хорёк — домашнее животное."
+        ],
+        "en": [
+          "A ferret is a pet."
+        ]
+      }
+    },
+    {
+      "uk": "шиншила",
+      "ru": "шиншилла",
+      "en": "chinchilla",
+      "phoneticUk": "shynshyla",
+      "phoneticRu": "shinshilla",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Шиншила має дуже м'яке хутро."
+        ],
+        "ru": [
+          "Шиншилла имеет очень мягкий мех."
+        ],
+        "en": [
+          "The chinchilla has very soft fur."
+        ]
+      }
+    },
+    {
+      "uk": "єнот",
+      "ru": "енот",
+      "en": "raccoon",
+      "phoneticUk": "yenot",
+      "phoneticRu": "yenot",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Єнот миє їжу перед їдою."
+        ],
+        "ru": [
+          "Енот моет еду перед едой."
+        ],
+        "en": [
+          "The raccoon washes its food before eating."
+        ]
+      }
+    },
+    {
+      "uk": "скунс",
+      "ru": "скунс",
+      "en": "skunk",
+      "phoneticUk": "skunks",
+      "phoneticRu": "skunks",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Скунс захищається неприємним запахом."
+        ],
+        "ru": [
+          "Скунс защищается неприятным запахом."
+        ],
+        "en": [
+          "The skunk defends itself with an unpleasant smell."
+        ]
+      }
+    },
+    {
+      "uk": "опосум",
+      "ru": "опоссум",
+      "en": "opossum",
+      "phoneticUk": "oposum",
+      "phoneticRu": "opossum",
+      "category": "animals-extra",
+      "examples": {
+        "uk": [
+          "Опосум прикидається мертвим."
+        ],
+        "ru": [
+          "Опоссум притворяется мёртвым."
+        ],
+        "en": [
+          "The opossum plays dead."
+        ]
+      }
+    },
+    {
+      "uk": "намет",
+      "ru": "палатка",
+      "en": "tent",
+      "phoneticUk": "namet",
+      "phoneticRu": "palatka",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Вони поставили намет у лісі."
+        ],
+        "ru": [
+          "Они поставили палатку в лесу."
+        ],
+        "en": [
+          "They set up a tent in the forest."
+        ]
+      }
+    },
+    {
+      "uk": "спальний мішок",
+      "ru": "спальный мешок",
+      "en": "sleeping bag",
+      "phoneticUk": "spalnyi mishok",
+      "phoneticRu": "spalnyy meshok",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Спальний мішок зігріє вночі."
+        ],
+        "ru": [
+          "Спальный мешок согреет ночью."
+        ],
+        "en": [
+          "A sleeping bag will keep you warm at night."
+        ]
+      }
+    },
+    {
+      "uk": "багаття",
+      "ru": "костёр",
+      "en": "campfire/bonfire",
+      "phoneticUk": "bahattya",
+      "phoneticRu": "kostyor",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Вони розпалили багаття."
+        ],
+        "ru": [
+          "Они разожгли костёр."
+        ],
+        "en": [
+          "They lit a campfire."
+        ]
+      }
+    },
+    {
+      "uk": "факел",
+      "ru": "факел",
+      "en": "torch",
+      "phoneticUk": "fakel",
+      "phoneticRu": "fakel",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він освітлює шлях факелом."
+        ],
+        "ru": [
+          "Он освещает путь факелом."
+        ],
+        "en": [
+          "He lights the way with a torch."
+        ]
+      }
+    },
+    {
+      "uk": "ліхтарик",
+      "ru": "фонарик",
+      "en": "flashlight",
+      "phoneticUk": "likhtaryk",
+      "phoneticRu": "fonarik",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Візьми ліхтарик у похід."
+        ],
+        "ru": [
+          "Возьми фонарик в поход."
+        ],
+        "en": [
+          "Take a flashlight on the hike."
+        ]
+      }
+    },
+    {
+      "uk": "компас",
+      "ru": "компас",
+      "en": "compass",
+      "phoneticUk": "kompas",
+      "phoneticRu": "kompas",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Компас вказує на північ."
+        ],
+        "ru": [
+          "Компас указывает на север."
+        ],
+        "en": [
+          "A compass points north."
+        ]
+      }
+    },
+    {
+      "uk": "карта",
+      "ru": "карта",
+      "en": "map",
+      "phoneticUk": "karta",
+      "phoneticRu": "karta",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він читає карту місцевості."
+        ],
+        "ru": [
+          "Он читает карту местности."
+        ],
+        "en": [
+          "He reads the terrain map."
+        ]
+      }
+    },
+    {
+      "uk": "бінокль",
+      "ru": "бинокль",
+      "en": "binoculars",
+      "phoneticUk": "binokl",
+      "phoneticRu": "binokl",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він спостерігає птахів біноклем."
+        ],
+        "ru": [
+          "Он наблюдает птиц биноклем."
+        ],
+        "en": [
+          "He watches birds with binoculars."
+        ]
+      }
+    },
+    {
+      "uk": "рюкзак (туристичний)",
+      "ru": "рюкзак (туристический)",
+      "en": "backpack (hiking)",
+      "phoneticUk": "ryukzak",
+      "phoneticRu": "ryukzak",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Рюкзак (туристичний) важкий."
+        ],
+        "ru": [
+          "Туристический рюкзак тяжёлый."
+        ],
+        "en": [
+          "The hiking backpack is heavy."
+        ]
+      }
+    },
+    {
+      "uk": "термос",
+      "ru": "термос",
+      "en": "thermos",
+      "phoneticUk": "termos",
+      "phoneticRu": "termos",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він наповнив термос гарячим чаєм."
+        ],
+        "ru": [
+          "Он наполнил термос горячим чаем."
+        ],
+        "en": [
+          "He filled the thermos with hot tea."
+        ]
+      }
+    },
+    {
+      "uk": "гамачок",
+      "ru": "гамачок",
+      "en": "small hammock",
+      "phoneticUk": "hamachok",
+      "phoneticRu": "gamachok",
+      "category": "outdoor"
+    },
+    {
+      "uk": "канат",
+      "ru": "канат",
+      "en": "rope",
+      "phoneticUk": "kanat",
+      "phoneticRu": "kanat",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Вони спускаються по канату."
+        ],
+        "ru": [
+          "Они спускаются по канату."
+        ],
+        "en": [
+          "They climb down the rope."
+        ]
+      }
+    },
+    {
+      "uk": "вузол",
+      "ru": "узел",
+      "en": "knot",
+      "phoneticUk": "vuzol",
+      "phoneticRu": "uzel",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він зав'язав міцний вузол."
+        ],
+        "ru": [
+          "Он завязал крепкий узел."
+        ],
+        "en": [
+          "He tied a tight knot."
+        ]
+      }
+    },
+    {
+      "uk": "палатка",
+      "ru": "палатка",
+      "en": "tent (camping)",
+      "phoneticUk": "palatka",
+      "phoneticRu": "palatka",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Палатка розрахована на два місця."
+        ],
+        "ru": [
+          "Палатка рассчитана на два места."
+        ],
+        "en": [
+          "The tent fits two people."
+        ]
+      }
+    },
+    {
+      "uk": "столовий прибор",
+      "ru": "столовый прибор",
+      "en": "cutlery",
+      "phoneticUk": "stolovyi prybor",
+      "phoneticRu": "stolovyy pribor",
+      "category": "outdoor"
+    },
+    {
+      "uk": "консерва",
+      "ru": "консервы",
+      "en": "canned food",
+      "phoneticUk": "konserva",
+      "phoneticRu": "konservy",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "У поході беруть консерви."
+        ],
+        "ru": [
+          "В поход берут консервы."
+        ],
+        "en": [
+          "People bring canned food on hikes."
+        ]
+      }
+    },
+    {
+      "uk": "сірник",
+      "ru": "спичка",
+      "en": "match (fire)",
+      "phoneticUk": "sirnyk",
+      "phoneticRu": "spichka",
+      "category": "outdoor",
+      "examples": {
+        "uk": [
+          "Він запалив вогонь сірником."
+        ],
+        "ru": [
+          "Он разжёг огонь спичкой."
+        ],
+        "en": [
+          "He lit the fire with a match."
+        ]
+      }
+    },
+    {
+      "uk": "бензопила",
+      "ru": "бензопила",
+      "en": "chainsaw",
+      "phoneticUk": "benzopyla",
+      "phoneticRu": "benzopila",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "дриль",
+      "ru": "дрель",
+      "en": "drill",
+      "phoneticUk": "dryl",
+      "phoneticRu": "drel",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "шуруповерт",
+      "ru": "шуруповёрт",
+      "en": "screwdriver (power)",
+      "phoneticUk": "shurupovert",
+      "phoneticRu": "shurupovert",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Шуруповерт закручує шурупи швидко."
+        ],
+        "ru": [
+          "Шуруповёрт закручивает шурупы быстро."
+        ],
+        "en": [
+          "A power screwdriver drives screws quickly."
+        ]
+      }
+    },
+    {
+      "uk": "плоскогубці",
+      "ru": "плоскогубцы",
+      "en": "pliers",
+      "phoneticUk": "ploskohubci",
+      "phoneticRu": "ploskogubcy",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "розвідний ключ",
+      "ru": "разводной ключ",
+      "en": "wrench (adjustable)",
+      "phoneticUk": "rozvidnyi klyuch",
+      "phoneticRu": "razvodnoy klyuch",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Розвідний ключ підходить для різних гайок."
+        ],
+        "ru": [
+          "Разводной ключ подходит для разных гаек."
+        ],
+        "en": [
+          "An adjustable wrench works on different nuts."
+        ]
+      }
+    },
+    {
+      "uk": "викрутка",
+      "ru": "отвёртка",
+      "en": "screwdriver",
+      "phoneticUk": "vykrutka",
+      "phoneticRu": "otvyortka",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "гвинт",
+      "ru": "винт",
+      "en": "screw",
+      "phoneticUk": "hvynt",
+      "phoneticRu": "vint",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "цвях",
+      "ru": "гвоздь",
+      "en": "nail (hardware)",
+      "phoneticUk": "tsvyakh",
+      "phoneticRu": "gvozd",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "болт",
+      "ru": "болт",
+      "en": "bolt",
+      "phoneticUk": "bolt",
+      "phoneticRu": "bolt",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Болт тримає конструкцію."
+        ],
+        "ru": [
+          "Болт держит конструкцию."
+        ],
+        "en": [
+          "The bolt holds the structure together."
+        ]
+      }
+    },
+    {
+      "uk": "гайка",
+      "ru": "гайка",
+      "en": "nut (hardware)",
+      "phoneticUk": "hayka",
+      "phoneticRu": "gayka",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Затягни гайку щільно."
+        ],
+        "ru": [
+          "Затяни гайку плотно."
+        ],
+        "en": [
+          "Tighten the nut firmly."
+        ]
+      }
+    },
+    {
+      "uk": "шайба",
+      "ru": "шайба",
+      "en": "washer (hardware)",
+      "phoneticUk": "shayba",
+      "phoneticRu": "shayba",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Шайба запобігає відкручуванню."
+        ],
+        "ru": [
+          "Шайба предотвращает откручивание."
+        ],
+        "en": [
+          "A washer prevents loosening."
+        ]
+      }
+    },
+    {
+      "uk": "дюбель",
+      "ru": "дюбель",
+      "en": "dowel/anchor",
+      "phoneticUk": "dyubel",
+      "phoneticRu": "dyubel",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Він вставляє дюбель у стіну."
+        ],
+        "ru": [
+          "Он вставляет дюбель в стену."
+        ],
+        "en": [
+          "He inserts a wall anchor into the wall."
+        ]
+      }
+    },
+    {
+      "uk": "рулетка",
+      "ru": "рулетка",
+      "en": "tape measure",
+      "phoneticUk": "ruletka",
+      "phoneticRu": "ruletka",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "рівень",
+      "ru": "уровень",
+      "en": "level (tool)",
+      "phoneticUk": "riven",
+      "phoneticRu": "uroven",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "зубило",
+      "ru": "зубило",
+      "en": "chisel",
+      "phoneticUk": "zubylo",
+      "phoneticRu": "zubilo",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Він відколює камінь зубилом."
+        ],
+        "ru": [
+          "Он откалывает камень зубилом."
+        ],
+        "en": [
+          "He chips the stone with a chisel."
+        ]
+      }
+    },
+    {
+      "uk": "напилок",
+      "ru": "напильник",
+      "en": "file (tool)",
+      "phoneticUk": "napylok",
+      "phoneticRu": "napilnik",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Він шліфує метал напилком."
+        ],
+        "ru": [
+          "Он шлифует металл напильником."
+        ],
+        "en": [
+          "He smooths the metal with a file."
+        ]
+      }
+    },
+    {
+      "uk": "наждачний папір",
+      "ru": "наждачная бумага",
+      "en": "sandpaper",
+      "phoneticUk": "nazhdachnyi papir",
+      "phoneticRu": "nazhdachnaya bumaga",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Наждачний папір згладжує поверхню."
+        ],
+        "ru": [
+          "Наждачная бумага сглаживает поверхность."
+        ],
+        "en": [
+          "Sandpaper smooths the surface."
+        ]
+      }
+    },
+    {
+      "uk": "штукатурка",
+      "ru": "штукатурка",
+      "en": "plaster/stucco",
+      "phoneticUk": "shtukaturka",
+      "phoneticRu": "shtukaturka",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Стіну покривають штукатуркою."
+        ],
+        "ru": [
+          "Стену покрывают штукатуркой."
+        ],
+        "en": [
+          "They are covering the wall with plaster."
+        ]
+      }
+    },
+    {
+      "uk": "фарба",
+      "ru": "краска",
+      "en": "paint",
+      "phoneticUk": "farba",
+      "phoneticRu": "kraska",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "валик",
+      "ru": "валик",
+      "en": "paint roller",
+      "phoneticUk": "valyk",
+      "phoneticRu": "valik",
+      "category": "tools-extra",
+      "examples": {
+        "uk": [
+          "Він фарбує стіну валиком."
+        ],
+        "ru": [
+          "Он красит стену валиком."
+        ],
+        "en": [
+          "He is painting the wall with a roller."
+        ]
+      }
+    },
+    {
+      "uk": "пензель",
+      "ru": "кисть",
+      "en": "paintbrush",
+      "phoneticUk": "penzel",
+      "phoneticRu": "kist",
+      "category": "tools-extra"
+    },
+    {
+      "uk": "ринок",
+      "ru": "рынок",
+      "en": "market",
+      "phoneticUk": "rynok",
+      "phoneticRu": "rynok",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "На ринку завжди є свіжі овочі."
+        ],
+        "ru": [
+          "На рынке всегда есть свежие овощи."
+        ],
+        "en": [
+          "There are always fresh vegetables at the market."
+        ]
+      }
+    },
+    {
+      "uk": "базар",
+      "ru": "базар",
+      "en": "bazaar",
+      "phoneticUk": "bazar",
+      "phoneticRu": "bazar",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Базар заповнений людьми."
+        ],
+        "ru": [
+          "Базар заполнен людьми."
+        ],
+        "en": [
+          "The bazaar is packed with people."
+        ]
+      }
+    },
+    {
+      "uk": "супермаркет",
+      "ru": "супермаркет",
+      "en": "supermarket",
+      "phoneticUk": "supermarket",
+      "phoneticRu": "supermarket",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Вони купують продукти в супермаркеті."
+        ],
+        "ru": [
+          "Они покупают продукты в супермаркете."
+        ],
+        "en": [
+          "They buy groceries at the supermarket."
+        ]
+      }
+    },
+    {
+      "uk": "пекарня",
+      "ru": "пекарня",
+      "en": "bakery",
+      "phoneticUk": "pekarnya",
+      "phoneticRu": "pekarnya",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "У пекарні пахне свіжим хлібом."
+        ],
+        "ru": [
+          "В пекарне пахнет свежим хлебом."
+        ],
+        "en": [
+          "The bakery smells of fresh bread."
+        ]
+      }
+    },
+    {
+      "uk": "м'ясна крамниця",
+      "ru": "мясная лавка",
+      "en": "butcher shop",
+      "phoneticUk": "myasna kramnytsia",
+      "phoneticRu": "myasnaya lavka",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Він купує м'ясо в м'ясній крамниці."
+        ],
+        "ru": [
+          "Он покупает мясо в мясной лавке."
+        ],
+        "en": [
+          "He buys meat at the butcher shop."
+        ]
+      }
+    },
+    {
+      "uk": "аптека (місце)",
+      "ru": "аптека",
+      "en": "pharmacy (place)",
+      "phoneticUk": "apteka",
+      "phoneticRu": "apteka",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Аптека (місце) відкрита цілодобово."
+        ],
+        "ru": [
+          "Аптека открыта круглосуточно."
+        ],
+        "en": [
+          "The pharmacy is open around the clock."
+        ]
+      }
+    },
+    {
+      "uk": "лікарня",
+      "ru": "больница",
+      "en": "hospital",
+      "phoneticUk": "likarnya",
+      "phoneticRu": "bolnitsa",
+      "category": "places"
+    },
+    {
+      "uk": "поліклініка",
+      "ru": "поликлиника",
+      "en": "clinic/polyclinic",
+      "phoneticUk": "poliklinika",
+      "phoneticRu": "poliklinika",
+      "category": "places"
+    },
+    {
+      "uk": "пошта",
+      "ru": "почта",
+      "en": "post office",
+      "phoneticUk": "poshta",
+      "phoneticRu": "pochta",
+      "category": "places"
+    },
+    {
+      "uk": "банк (місце)",
+      "ru": "банк",
+      "en": "bank (place)",
+      "phoneticUk": "bank",
+      "phoneticRu": "bank",
+      "category": "places"
+    },
+    {
+      "uk": "вокзал",
+      "ru": "вокзал",
+      "en": "train station",
+      "phoneticUk": "vokzal",
+      "phoneticRu": "vokzal",
+      "category": "places"
+    },
+    {
+      "uk": "автовокзал",
+      "ru": "автовокзал",
+      "en": "bus station",
+      "phoneticUk": "avtovokzal",
+      "phoneticRu": "avtovokzal",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Автобус відправляється з автовокзалу."
+        ],
+        "ru": [
+          "Автобус отправляется с автовокзала."
+        ],
+        "en": [
+          "The bus departs from the bus station."
+        ]
+      }
+    },
+    {
+      "uk": "аеропорт",
+      "ru": "аэропорт",
+      "en": "airport",
+      "phoneticUk": "aeroport",
+      "phoneticRu": "aeroport",
+      "category": "places"
+    },
+    {
+      "uk": "готель",
+      "ru": "гостиница",
+      "en": "hotel",
+      "phoneticUk": "hotel",
+      "phoneticRu": "gostinitsa",
+      "category": "places"
+    },
+    {
+      "uk": "хостел",
+      "ru": "хостел",
+      "en": "hostel",
+      "phoneticUk": "khostel",
+      "phoneticRu": "khostel",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Він зупинився в дешевому хостелі."
+        ],
+        "ru": [
+          "Он остановился в дешёвом хостеле."
+        ],
+        "en": [
+          "He stayed at a cheap hostel."
+        ]
+      }
+    },
+    {
+      "uk": "ресторан",
+      "ru": "ресторан",
+      "en": "restaurant",
+      "phoneticUk": "restoran",
+      "phoneticRu": "restoran",
+      "category": "places"
+    },
+    {
+      "uk": "кафе",
+      "ru": "кафе",
+      "en": "cafe",
+      "phoneticUk": "kafe",
+      "phoneticRu": "kafe",
+      "category": "places"
+    },
+    {
+      "uk": "бар",
+      "ru": "бар",
+      "en": "bar/pub",
+      "phoneticUk": "bar",
+      "phoneticRu": "bar",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Вони зустрілися у барі після роботи."
+        ],
+        "ru": [
+          "Они встретились в баре после работы."
+        ],
+        "en": [
+          "They met at the bar after work."
+        ]
+      }
+    },
+    {
+      "uk": "кінотеатр",
+      "ru": "кинотеатр",
+      "en": "cinema/movie theater",
+      "phoneticUk": "kinoteatr",
+      "phoneticRu": "kinoteatr",
+      "category": "places"
+    },
+    {
+      "uk": "музей",
+      "ru": "музей",
+      "en": "museum",
+      "phoneticUk": "muzey",
+      "phoneticRu": "muzey",
+      "category": "places"
+    },
+    {
+      "uk": "зоопарк",
+      "ru": "зоопарк",
+      "en": "zoo",
+      "phoneticUk": "zoopark",
+      "phoneticRu": "zoopark",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Діти радіють у зоопарку."
+        ],
+        "ru": [
+          "Дети радуются в зоопарке."
+        ],
+        "en": [
+          "The children are having a great time at the zoo."
+        ]
+      }
+    },
+    {
+      "uk": "парк розваг",
+      "ru": "парк развлечений",
+      "en": "amusement park",
+      "phoneticUk": "park rozvah",
+      "phoneticRu": "park razvlecheniy",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Парк розваг відкритий влітку."
+        ],
+        "ru": [
+          "Парк развлечений открыт летом."
+        ],
+        "en": [
+          "The amusement park is open in summer."
+        ]
+      }
+    },
+    {
+      "uk": "спортзал",
+      "ru": "спортзал",
+      "en": "gym",
+      "phoneticUk": "sportzal",
+      "phoneticRu": "sportzal",
+      "category": "places"
+    },
+    {
+      "uk": "басейн",
+      "ru": "бассейн",
+      "en": "swimming pool",
+      "phoneticUk": "baseyn",
+      "phoneticRu": "basseyn",
+      "category": "places"
+    },
+    {
+      "uk": "пляж",
+      "ru": "пляж",
+      "en": "beach",
+      "phoneticUk": "plyazh",
+      "phoneticRu": "plyazh",
+      "category": "places"
+    },
+    {
+      "uk": "кладовище",
+      "ru": "кладбище",
+      "en": "cemetery",
+      "phoneticUk": "kladovyshche",
+      "phoneticRu": "kladbishche",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Вони прийшли на кладовище."
+        ],
+        "ru": [
+          "Они пришли на кладбище."
+        ],
+        "en": [
+          "They came to the cemetery."
+        ]
+      }
+    },
+    {
+      "uk": "собор",
+      "ru": "собор",
+      "en": "cathedral",
+      "phoneticUk": "sobor",
+      "phoneticRu": "sobor",
+      "category": "places"
+    },
+    {
+      "uk": "монастир",
+      "ru": "монастырь",
+      "en": "monastery",
+      "phoneticUk": "monastyr",
+      "phoneticRu": "monastyr",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Монастир стоїть на горі."
+        ],
+        "ru": [
+          "Монастырь стоит на горе."
+        ],
+        "en": [
+          "The monastery stands on a hill."
+        ]
+      }
+    },
+    {
+      "uk": "мечеть",
+      "ru": "мечеть",
+      "en": "mosque",
+      "phoneticUk": "mechet",
+      "phoneticRu": "mechet",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Мечеть прикрашена мозаїкою."
+        ],
+        "ru": [
+          "Мечеть украшена мозаикой."
+        ],
+        "en": [
+          "The mosque is decorated with mosaic."
+        ]
+      }
+    },
+    {
+      "uk": "синагога",
+      "ru": "синагога",
+      "en": "synagogue",
+      "phoneticUk": "synaho ha",
+      "phoneticRu": "sinagoga",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Синагога знаходиться в центрі міста."
+        ],
+        "ru": [
+          "Синагога находится в центре города."
+        ],
+        "en": [
+          "The synagogue is in the city center."
+        ]
+      }
+    },
+    {
+      "uk": "посольство",
+      "ru": "посольство",
+      "en": "embassy",
+      "phoneticUk": "posolstvo",
+      "phoneticRu": "posolstvo",
+      "category": "places"
+    },
+    {
+      "uk": "консульство",
+      "ru": "консульство",
+      "en": "consulate",
+      "phoneticUk": "konsulstvo",
+      "phoneticRu": "konsulstvo",
+      "category": "places"
+    },
+    {
+      "uk": "мерія",
+      "ru": "мэрия",
+      "en": "city hall",
+      "phoneticUk": "meriya",
+      "phoneticRu": "meriya",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Мерія розглядає заяву."
+        ],
+        "ru": [
+          "Мэрия рассматривает заявление."
+        ],
+        "en": [
+          "City hall is reviewing the application."
+        ]
+      }
+    },
+    {
+      "uk": "суд (місце)",
+      "ru": "суд",
+      "en": "courthouse",
+      "phoneticUk": "sud",
+      "phoneticRu": "sud",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Засідання суду (місце) відкрите."
+        ],
+        "ru": [
+          "Заседание суда открыто."
+        ],
+        "en": [
+          "The court hearing is open to the public."
+        ]
+      }
+    },
+    {
+      "uk": "в'язниця",
+      "ru": "тюрьма",
+      "en": "prison (place)",
+      "phoneticUk": "vyaznytsia",
+      "phoneticRu": "tyurma",
+      "category": "places"
+    },
+    {
+      "uk": "дитячий садок",
+      "ru": "детский сад",
+      "en": "kindergarten",
+      "phoneticUk": "dytyachyi sadok",
+      "phoneticRu": "detskiy sad",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Дитина йде до дитячого садка."
+        ],
+        "ru": [
+          "Ребёнок идёт в детский сад."
+        ],
+        "en": [
+          "The child is going to kindergarten."
+        ]
+      }
+    },
+    {
+      "uk": "ясла",
+      "ru": "ясли",
+      "en": "nursery/daycare",
+      "phoneticUk": "yasla",
+      "phoneticRu": "yasli",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Дитину привели до ясел."
+        ],
+        "ru": [
+          "Ребёнка привели в ясли."
+        ],
+        "en": [
+          "The child was brought to the nursery."
+        ]
+      }
+    },
+    {
+      "uk": "університет",
+      "ru": "университет",
+      "en": "university",
+      "phoneticUk": "universytet",
+      "phoneticRu": "universitet",
+      "category": "places"
+    },
+    {
+      "uk": "гуртожиток",
+      "ru": "общежитие",
+      "en": "dormitory",
+      "phoneticUk": "hurtozhytok",
+      "phoneticRu": "obshchezhitiye",
+      "category": "places"
+    },
+    {
+      "uk": "стоянка",
+      "ru": "стоянка",
+      "en": "parking lot",
+      "phoneticUk": "stoyanka",
+      "phoneticRu": "stoyanka",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Машина стоїть на стоянці."
+        ],
+        "ru": [
+          "Машина стоит на стоянке."
+        ],
+        "en": [
+          "The car is in the parking lot."
+        ]
+      }
+    },
+    {
+      "uk": "автомийка",
+      "ru": "автомойка",
+      "en": "car wash",
+      "phoneticUk": "avtomyyka",
+      "phoneticRu": "avtomoyka",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Він миє машину на автомийці."
+        ],
+        "ru": [
+          "Он моет машину на автомойке."
+        ],
+        "en": [
+          "He is washing his car at the car wash."
+        ]
+      }
+    },
+    {
+      "uk": "заправка",
+      "ru": "заправка",
+      "en": "gas station",
+      "phoneticUk": "zapravka",
+      "phoneticRu": "zapravka",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Він заїхав на заправку."
+        ],
+        "ru": [
+          "Он заехал на заправку."
+        ],
+        "en": [
+          "He stopped at the gas station."
+        ]
+      }
+    },
+    {
+      "uk": "підземний перехід",
+      "ru": "подземный переход",
+      "en": "underpass/subway",
+      "phoneticUk": "pidzemnyi perekhid",
+      "phoneticRu": "podzemnyy perekhod",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Переходьте вулицю через підземний перехід."
+        ],
+        "ru": [
+          "Переходите улицу через подземный переход."
+        ],
+        "en": [
+          "Cross the street using the underpass."
+        ]
+      }
+    },
+    {
+      "uk": "пішохідний перехід",
+      "ru": "пешеходный переход",
+      "en": "crosswalk",
+      "phoneticUk": "pishikhidnyi perekhid",
+      "phoneticRu": "peshekhodnyy perekhod",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Пішохідний перехід на зеленому сигналі."
+        ],
+        "ru": [
+          "Пешеходный переход на зелёный сигнал."
+        ],
+        "en": [
+          "Use the crosswalk when the light is green."
+        ]
+      }
+    },
+    {
+      "uk": "тротуар",
+      "ru": "тротуар",
+      "en": "sidewalk",
+      "phoneticUk": "trotuar",
+      "phoneticRu": "trotuar",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Йди тротуаром, а не дорогою."
+        ],
+        "ru": [
+          "Иди тротуаром, а не дорогой."
+        ],
+        "en": [
+          "Walk on the sidewalk, not the road."
+        ]
+      }
+    },
+    {
+      "uk": "бульвар",
+      "ru": "бульвар",
+      "en": "boulevard",
+      "phoneticUk": "bulvar",
+      "phoneticRu": "bulvar",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Вони гуляють по бульвару."
+        ],
+        "ru": [
+          "Они гуляют по бульвару."
+        ],
+        "en": [
+          "They are strolling along the boulevard."
+        ]
+      }
+    },
+    {
+      "uk": "провулок",
+      "ru": "переулок",
+      "en": "alley/lane",
+      "phoneticUk": "provulok",
+      "phoneticRu": "pereulok",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Провулок дуже вузький."
+        ],
+        "ru": [
+          "Переулок очень узкий."
+        ],
+        "en": [
+          "The alley is very narrow."
+        ]
+      }
+    },
+    {
+      "uk": "площа",
+      "ru": "площадь",
+      "en": "square/plaza",
+      "phoneticUk": "ploshcha",
+      "phoneticRu": "ploshchad",
+      "category": "places"
+    },
+    {
+      "uk": "набережна",
+      "ru": "набережная",
+      "en": "embankment/waterfront",
+      "phoneticUk": "naberezhna",
+      "phoneticRu": "naberezhnaya",
+      "category": "places",
+      "examples": {
+        "uk": [
+          "Вони гуляють по набережній."
+        ],
+        "ru": [
+          "Они гуляют по набережной."
+        ],
+        "en": [
+          "They are walking along the waterfront."
+        ]
+      }
+    },
+    {
+      "uk": "ніяково",
+      "ru": "неловко",
+      "en": "awkward/embarrassing",
+      "phoneticUk": "niyakovo",
+      "phoneticRu": "nelovko",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Йому ніяково перед гостями."
+        ],
+        "ru": [
+          "Ему неловко перед гостями."
+        ],
+        "en": [
+          "He feels awkward in front of the guests."
+        ]
+      }
+    },
+    {
+      "uk": "нудьга",
+      "ru": "скука",
+      "en": "boredom",
+      "phoneticUk": "nudha",
+      "phoneticRu": "skuka",
+      "category": "expressions"
+    },
+    {
+      "uk": "натхнення",
+      "ru": "вдохновение",
+      "en": "inspiration",
+      "phoneticUk": "natkhnennya",
+      "phoneticRu": "vdokhnoveniye",
+      "category": "expressions"
+    },
+    {
+      "uk": "спогад",
+      "ru": "воспоминание",
+      "en": "memory/recollection",
+      "phoneticUk": "spohad",
+      "phoneticRu": "vospominaniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Цей спогад завжди викликає посмішку."
+        ],
+        "ru": [
+          "Это воспоминание всегда вызывает улыбку."
+        ],
+        "en": [
+          "That memory always brings a smile."
+        ]
+      }
+    },
+    {
+      "uk": "передчуття",
+      "ru": "предчувствие",
+      "en": "premonition/hunch",
+      "phoneticUk": "peredchuttya",
+      "phoneticRu": "predchuvstviye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Передчуття невдачі не покидало його."
+        ],
+        "ru": [
+          "Предчувствие неудачи не покидало его."
+        ],
+        "en": [
+          "He couldn't shake the premonition of failure."
+        ]
+      }
+    },
+    {
+      "uk": "совість",
+      "ru": "совесть",
+      "en": "conscience",
+      "phoneticUk": "sovist",
+      "phoneticRu": "sovest",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Совість не дає йому спокою."
+        ],
+        "ru": [
+          "Совесть не даёт ему покоя."
+        ],
+        "en": [
+          "His conscience won't give him any peace."
+        ]
+      }
+    },
+    {
+      "uk": "жаль",
+      "ru": "жалость",
+      "en": "pity/regret",
+      "phoneticUk": "zhal",
+      "phoneticRu": "zhalost",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Жаль, що він не прийшов."
+        ],
+        "ru": [
+          "Жалость, что он не пришёл."
+        ],
+        "en": [
+          "It's a pity he didn't come."
+        ]
+      }
+    },
+    {
+      "uk": "спокуса",
+      "ru": "искушение",
+      "en": "temptation",
+      "phoneticUk": "spokusa",
+      "phoneticRu": "iskusheniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Спокуса з'їсти ще один шматок."
+        ],
+        "ru": [
+          "Искушение съесть ещё один кусок."
+        ],
+        "en": [
+          "The temptation to eat another piece."
+        ]
+      }
+    },
+    {
+      "uk": "випробування",
+      "ru": "испытание",
+      "en": "trial/test",
+      "phoneticUk": "vyprobuvannya",
+      "phoneticRu": "ispytaniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Кожне випробування робить нас сильнішими."
+        ],
+        "ru": [
+          "Каждое испытание делает нас сильнее."
+        ],
+        "en": [
+          "Every trial makes us stronger."
+        ]
+      }
+    },
+    {
+      "uk": "наслідок",
+      "ru": "последствие",
+      "en": "consequence",
+      "phoneticUk": "naslidok",
+      "phoneticRu": "posledstviye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Наслідок помилки може бути серйозним."
+        ],
+        "ru": [
+          "Последствие ошибки может быть серьёзным."
+        ],
+        "en": [
+          "The consequence of a mistake can be serious."
+        ]
+      }
+    },
+    {
+      "uk": "причина",
+      "ru": "причина",
+      "en": "cause/reason",
+      "phoneticUk": "prychyna",
+      "phoneticRu": "prichina",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Яка причина твого запізнення?"
+        ],
+        "ru": [
+          "Какова причина твоего опоздания?"
+        ],
+        "en": [
+          "What is the reason for your being late?"
+        ]
+      }
+    },
+    {
+      "uk": "мета",
+      "ru": "цель",
+      "en": "goal/purpose",
+      "phoneticUk": "meta",
+      "phoneticRu": "tsel",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він досяг своєї мети."
+        ],
+        "ru": [
+          "Он достиг своей цели."
+        ],
+        "en": [
+          "He reached his goal."
+        ]
+      }
+    },
+    {
+      "uk": "засіб",
+      "ru": "средство",
+      "en": "means/tool",
+      "phoneticUk": "zasib",
+      "phoneticRu": "sredstvo",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Цей засіб допомагає від кашлю."
+        ],
+        "ru": [
+          "Это средство помогает от кашля."
+        ],
+        "en": [
+          "This remedy helps with a cough."
+        ]
+      }
+    },
+    {
+      "uk": "спосіб",
+      "ru": "способ",
+      "en": "method/way",
+      "phoneticUk": "sposib",
+      "phoneticRu": "sposob",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Є кращий спосіб вирішити проблему."
+        ],
+        "ru": [
+          "Есть лучший способ решить проблему."
+        ],
+        "en": [
+          "There is a better way to solve the problem."
+        ]
+      }
+    },
+    {
+      "uk": "результат",
+      "ru": "результат",
+      "en": "result/outcome",
+      "phoneticUk": "rezultat",
+      "phoneticRu": "rezultat",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Результат перевершив очікування."
+        ],
+        "ru": [
+          "Результат превзошёл ожидания."
+        ],
+        "en": [
+          "The result exceeded expectations."
+        ]
+      }
+    },
+    {
+      "uk": "досвід",
+      "ru": "опыт",
+      "en": "experience",
+      "phoneticUk": "dosvid",
+      "phoneticRu": "opyt",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Досвід — найкращий учитель."
+        ],
+        "ru": [
+          "Опыт — лучший учитель."
+        ],
+        "en": [
+          "Experience is the best teacher."
+        ]
+      }
+    },
+    {
+      "uk": "приклад",
+      "ru": "пример",
+      "en": "example",
+      "phoneticUk": "pryklad",
+      "phoneticRu": "primer",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Наведи приклад."
+        ],
+        "ru": [
+          "Приведи пример."
+        ],
+        "en": [
+          "Give an example."
+        ]
+      }
+    },
+    {
+      "uk": "помилка",
+      "ru": "ошибка",
+      "en": "mistake/error",
+      "phoneticUk": "pomylka",
+      "phoneticRu": "oshibka",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він визнав свою помилку."
+        ],
+        "ru": [
+          "Он признал свою ошибку."
+        ],
+        "en": [
+          "He admitted his mistake."
+        ]
+      }
+    },
+    {
+      "uk": "успіх",
+      "ru": "успех",
+      "en": "success",
+      "phoneticUk": "uspikh",
+      "phoneticRu": "uspekh",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Успіх прийшов завдяки праці."
+        ],
+        "ru": [
+          "Успех пришёл благодаря труду."
+        ],
+        "en": [
+          "Success came through hard work."
+        ]
+      }
+    },
+    {
+      "uk": "невдача",
+      "ru": "неудача",
+      "en": "failure",
+      "phoneticUk": "nevdacha",
+      "phoneticRu": "neudacha",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Невдача — це урок, не вирок."
+        ],
+        "ru": [
+          "Неудача — это урок, не приговор."
+        ],
+        "en": [
+          "Failure is a lesson, not a verdict."
+        ]
+      }
+    },
+    {
+      "uk": "ризик",
+      "ru": "риск",
+      "en": "risk",
+      "phoneticUk": "ryzyk",
+      "phoneticRu": "risk",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Ризик виправданий."
+        ],
+        "ru": [
+          "Риск оправдан."
+        ],
+        "en": [
+          "The risk is justified."
+        ]
+      }
+    },
+    {
+      "uk": "шанс",
+      "ru": "шанс",
+      "en": "chance",
+      "phoneticUk": "shans",
+      "phoneticRu": "shans",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це твій останній шанс."
+        ],
+        "ru": [
+          "Это твой последний шанс."
+        ],
+        "en": [
+          "This is your last chance."
+        ]
+      }
+    },
+    {
+      "uk": "можливість",
+      "ru": "возможность",
+      "en": "opportunity/possibility",
+      "phoneticUk": "mozhlyvist",
+      "phoneticRu": "vozmozhnost",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він скористався можливістю."
+        ],
+        "ru": [
+          "Он воспользовался возможностью."
+        ],
+        "en": [
+          "He took advantage of the opportunity."
+        ]
+      }
+    },
+    {
+      "uk": "перешкода",
+      "ru": "препятствие",
+      "en": "obstacle",
+      "phoneticUk": "pereshkoda",
+      "phoneticRu": "prepyatstviye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Перешкода не зупинила його."
+        ],
+        "ru": [
+          "Препятствие не остановило его."
+        ],
+        "en": [
+          "The obstacle didn't stop him."
+        ]
+      }
+    },
+    {
+      "uk": "виклик",
+      "ru": "вызов",
+      "en": "challenge",
+      "phoneticUk": "vyklyk",
+      "phoneticRu": "vyzov",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це серйозний виклик для команди."
+        ],
+        "ru": [
+          "Это серьёзный вызов для команды."
+        ],
+        "en": [
+          "This is a serious challenge for the team."
+        ]
+      }
+    },
+    {
+      "uk": "користь",
+      "ru": "польза",
+      "en": "benefit",
+      "phoneticUk": "koryst",
+      "phoneticRu": "polza",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Від цього є користь."
+        ],
+        "ru": [
+          "От этого есть польза."
+        ],
+        "en": [
+          "There is a benefit to this."
+        ]
+      }
+    },
+    {
+      "uk": "шкода",
+      "ru": "вред",
+      "en": "damage/harm",
+      "phoneticUk": "shkoda",
+      "phoneticRu": "vred",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Куріння завдає шкоди здоров'ю."
+        ],
+        "ru": [
+          "Курение наносит вред здоровью."
+        ],
+        "en": [
+          "Smoking harms your health."
+        ]
+      }
+    },
+    {
+      "uk": "вигода",
+      "ru": "выгода",
+      "en": "advantage",
+      "phoneticUk": "vyhoda",
+      "phoneticRu": "vygoda",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Яка вигода від цього?"
+        ],
+        "ru": [
+          "Какова выгода от этого?"
+        ],
+        "en": [
+          "What advantage does this bring?"
+        ]
+      }
+    },
+    {
+      "uk": "недолік",
+      "ru": "недостаток",
+      "en": "disadvantage/flaw",
+      "phoneticUk": "nedolik",
+      "phoneticRu": "nedostatok",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "У кожного плану є недолік."
+        ],
+        "ru": [
+          "У каждого плана есть недостаток."
+        ],
+        "en": [
+          "Every plan has a flaw."
+        ]
+      }
+    },
+    {
+      "uk": "умова",
+      "ru": "условие",
+      "en": "condition/term",
+      "phoneticUk": "umova",
+      "phoneticRu": "usloviye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Прийми умови договору."
+        ],
+        "ru": [
+          "Прими условия договора."
+        ],
+        "en": [
+          "Accept the terms of the contract."
+        ]
+      }
+    },
+    {
+      "uk": "вимога",
+      "ru": "требование",
+      "en": "requirement",
+      "phoneticUk": "vymoha",
+      "phoneticRu": "trebovaniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Вимога до кандидата — досвід."
+        ],
+        "ru": [
+          "Требование к кандидату — опыт."
+        ],
+        "en": [
+          "The requirement for the candidate is experience."
+        ]
+      }
+    },
+    {
+      "uk": "пропозиція",
+      "ru": "предложение",
+      "en": "proposal/offer",
+      "phoneticUk": "propozitsiya",
+      "phoneticRu": "predlozheniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він прийняв пропозицію."
+        ],
+        "ru": [
+          "Он принял предложение."
+        ],
+        "en": [
+          "He accepted the offer."
+        ]
+      }
+    },
+    {
+      "uk": "згода",
+      "ru": "согласие",
+      "en": "agreement/consent",
+      "phoneticUk": "zhoda",
+      "phoneticRu": "soglasiye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Вона дала згоду."
+        ],
+        "ru": [
+          "Она дала согласие."
+        ],
+        "en": [
+          "She gave her consent."
+        ]
+      }
+    },
+    {
+      "uk": "відмова",
+      "ru": "отказ",
+      "en": "refusal/rejection",
+      "phoneticUk": "vidmova",
+      "phoneticRu": "otkaz",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Відмова його здивувала."
+        ],
+        "ru": [
+          "Отказ его удивил."
+        ],
+        "en": [
+          "The refusal surprised him."
+        ]
+      }
+    },
+    {
+      "uk": "скарга",
+      "ru": "жалоба",
+      "en": "complaint",
+      "phoneticUk": "skarha",
+      "phoneticRu": "zhaloba",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він подав скаргу."
+        ],
+        "ru": [
+          "Он подал жалобу."
+        ],
+        "en": [
+          "He filed a complaint."
+        ]
+      }
+    },
+    {
+      "uk": "побажання",
+      "ru": "пожелание",
+      "en": "wish/desire",
+      "phoneticUk": "pobazhannya",
+      "phoneticRu": "pozhelaniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Яке ваше побажання?"
+        ],
+        "ru": [
+          "Каково ваше пожелание?"
+        ],
+        "en": [
+          "What is your wish?"
+        ]
+      }
+    },
+    {
+      "uk": "обіцянка",
+      "ru": "обещание",
+      "en": "promise",
+      "phoneticUk": "obitsyanka",
+      "phoneticRu": "obeshchaniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він виконав обіцянку."
+        ],
+        "ru": [
+          "Он выполнил обещание."
+        ],
+        "en": [
+          "He kept his promise."
+        ]
+      }
+    },
+    {
+      "uk": "вдячність",
+      "ru": "благодарность",
+      "en": "thankfulness",
+      "phoneticUk": "vdyachnist",
+      "phoneticRu": "blagodarnost",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Вона висловила вдячність."
+        ],
+        "ru": [
+          "Она выразила благодарность."
+        ],
+        "en": [
+          "She expressed her gratitude."
+        ]
+      }
+    },
+    {
+      "uk": "впевненість",
+      "ru": "уверенность",
+      "en": "confidence/certainty",
+      "phoneticUk": "vpevnenist",
+      "phoneticRu": "uverennost",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він говорить із впевненістю."
+        ],
+        "ru": [
+          "Он говорит с уверенностью."
+        ],
+        "en": [
+          "He speaks with confidence."
+        ]
+      }
+    },
+    {
+      "uk": "сумнів",
+      "ru": "сомнение",
+      "en": "doubt",
+      "phoneticUk": "sumniv",
+      "phoneticRu": "somneniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "У нього є сумніви."
+        ],
+        "ru": [
+          "У него есть сомнения."
+        ],
+        "en": [
+          "He has doubts."
+        ]
+      }
+    },
+    {
+      "uk": "підтримка",
+      "ru": "поддержка",
+      "en": "support",
+      "phoneticUk": "pidtrymka",
+      "phoneticRu": "podderzhka",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він отримав підтримку друзів."
+        ],
+        "ru": [
+          "Он получил поддержку друзей."
+        ],
+        "en": [
+          "He received support from his friends."
+        ]
+      }
+    },
+    {
+      "uk": "опір",
+      "ru": "сопротивление",
+      "en": "resistance",
+      "phoneticUk": "opir",
+      "phoneticRu": "soprotivleniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Вони чинять опір."
+        ],
+        "ru": [
+          "Они оказывают сопротивление."
+        ],
+        "en": [
+          "They are putting up resistance."
+        ]
+      }
+    },
+    {
+      "uk": "здогад",
+      "ru": "догадка",
+      "en": "guess/conjecture",
+      "phoneticUk": "zdohad",
+      "phoneticRu": "dogadka",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це лише здогад."
+        ],
+        "ru": [
+          "Это лишь догадка."
+        ],
+        "en": [
+          "That's just a guess."
+        ]
+      }
+    },
+    {
+      "uk": "факт",
+      "ru": "факт",
+      "en": "fact",
+      "phoneticUk": "fakt",
+      "phoneticRu": "fakt",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це доведений факт."
+        ],
+        "ru": [
+          "Это доказанный факт."
+        ],
+        "en": [
+          "That is a proven fact."
+        ]
+      }
+    },
+    {
+      "uk": "думка",
+      "ru": "мнение",
+      "en": "opinion/thought",
+      "phoneticUk": "dumka",
+      "phoneticRu": "mneniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Яка твоя думка?"
+        ],
+        "ru": [
+          "Какое твоё мнение?"
+        ],
+        "en": [
+          "What is your opinion?"
+        ]
+      }
+    },
+    {
+      "uk": "ідея",
+      "ru": "идея",
+      "en": "idea",
+      "phoneticUk": "ideya",
+      "phoneticRu": "ideya",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це блискуча ідея!"
+        ],
+        "ru": [
+          "Это блестящая идея!"
+        ],
+        "en": [
+          "That's a brilliant idea!"
+        ]
+      }
+    },
+    {
+      "uk": "пояснення",
+      "ru": "объяснение",
+      "en": "explanation",
+      "phoneticUk": "poyasnennya",
+      "phoneticRu": "obyasneniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він дав пояснення."
+        ],
+        "ru": [
+          "Он дал объяснение."
+        ],
+        "en": [
+          "He gave an explanation."
+        ]
+      }
+    },
+    {
+      "uk": "висновок",
+      "ru": "вывод",
+      "en": "conclusion",
+      "phoneticUk": "vysnovok",
+      "phoneticRu": "vyvod",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Який висновок можна зробити?"
+        ],
+        "ru": [
+          "Какой вывод можно сделать?"
+        ],
+        "en": [
+          "What conclusion can be drawn?"
+        ]
+      }
+    },
+    {
+      "uk": "доказ (аргумент)",
+      "ru": "доказательство",
+      "en": "proof/argument",
+      "phoneticUk": "dokaz",
+      "phoneticRu": "dokazatelstvo",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він навів переконливий доказ (аргумент)."
+        ],
+        "ru": [
+          "Он привёл убедительное доказательство."
+        ],
+        "en": [
+          "He presented a compelling argument."
+        ]
+      }
+    },
+    {
+      "uk": "запитання",
+      "ru": "вопрос",
+      "en": "question",
+      "phoneticUk": "zapytannya",
+      "phoneticRu": "vopros",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "У мене є запитання."
+        ],
+        "ru": [
+          "У меня есть вопрос."
+        ],
+        "en": [
+          "I have a question."
+        ]
+      }
+    },
+    {
+      "uk": "відповідь",
+      "ru": "ответ",
+      "en": "answer/reply",
+      "phoneticUk": "vidpovid",
+      "phoneticRu": "otvet",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він дав чітку відповідь."
+        ],
+        "ru": [
+          "Он дал чёткий ответ."
+        ],
+        "en": [
+          "He gave a clear answer."
+        ]
+      }
+    },
+    {
+      "uk": "правило",
+      "ru": "правило",
+      "en": "rule",
+      "phoneticUk": "pravylo",
+      "phoneticRu": "pravilo",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Дотримуйся правил."
+        ],
+        "ru": [
+          "Соблюдай правила."
+        ],
+        "en": [
+          "Follow the rules."
+        ]
+      }
+    },
+    {
+      "uk": "виняток",
+      "ru": "исключение",
+      "en": "exception",
+      "phoneticUk": "vynyatok",
+      "phoneticRu": "isklyucheniye",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це виняток із правила."
+        ],
+        "ru": [
+          "Это исключение из правила."
+        ],
+        "en": [
+          "This is an exception to the rule."
+        ]
+      }
+    },
+    {
+      "uk": "закон",
+      "ru": "закон",
+      "en": "law",
+      "phoneticUk": "zakon",
+      "phoneticRu": "zakon",
+      "category": "expressions"
+    },
+    {
+      "uk": "свідчення",
+      "ru": "свидетельство",
+      "en": "evidence/testimony",
+      "phoneticUk": "svidchennya",
+      "phoneticRu": "svidetelstvo",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Свідчення очевидця важливе."
+        ],
+        "ru": [
+          "Свидетельство очевидца важно."
+        ],
+        "en": [
+          "The eyewitness testimony is important."
+        ]
+      }
+    },
+    {
+      "uk": "істина (правда)",
+      "ru": "истина",
+      "en": "truth",
+      "phoneticUk": "istyna",
+      "phoneticRu": "istina",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він завжди каже істину (правду)."
+        ],
+        "ru": [
+          "Он всегда говорит истину."
+        ],
+        "en": [
+          "He always tells the truth."
+        ]
+      }
+    },
+    {
+      "uk": "брехня",
+      "ru": "ложь",
+      "en": "lie/falsehood",
+      "phoneticUk": "brekhnya",
+      "phoneticRu": "lozh",
+      "category": "expressions"
+    },
+    {
+      "uk": "таємниця (секрет)",
+      "ru": "тайна",
+      "en": "secret",
+      "phoneticUk": "tayemnytsya",
+      "phoneticRu": "tayna",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це їхня спільна таємниця (секрет)."
+        ],
+        "ru": [
+          "Это их общая тайна."
+        ],
+        "en": [
+          "It's their shared secret."
+        ]
+      }
+    },
+    {
+      "uk": "чутка",
+      "ru": "слух",
+      "en": "rumor",
+      "phoneticUk": "chutka",
+      "phoneticRu": "slukh",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Це лише чутка."
+        ],
+        "ru": [
+          "Это лишь слух."
+        ],
+        "en": [
+          "It's just a rumor."
+        ]
+      }
+    },
+    {
+      "uk": "плітка",
+      "ru": "сплетня",
+      "en": "gossip",
+      "phoneticUk": "plitka",
+      "phoneticRu": "spletnya",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Не розповсюджуй плітки."
+        ],
+        "ru": [
+          "Не распространяй сплетни."
+        ],
+        "en": [
+          "Don't spread gossip."
+        ]
+      }
+    },
+    {
+      "uk": "жарт",
+      "ru": "шутка",
+      "en": "joke",
+      "phoneticUk": "zhart",
+      "phoneticRu": "shutka",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він розказав смішний жарт."
+        ],
+        "ru": [
+          "Он рассказал смешную шутку."
+        ],
+        "en": [
+          "He told a funny joke."
+        ]
+      }
+    },
+    {
+      "uk": "загадка",
+      "ru": "загадка",
+      "en": "riddle/mystery",
+      "phoneticUk": "zahadka",
+      "phoneticRu": "zagadka",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Загадку важко відгадати."
+        ],
+        "ru": [
+          "Загадку трудно разгадать."
+        ],
+        "en": [
+          "The riddle is hard to solve."
+        ]
+      }
+    },
+    {
+      "uk": "казкар",
+      "ru": "сказочник",
+      "en": "storyteller",
+      "phoneticUk": "kazkar",
+      "phoneticRu": "skazochnik",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Казкар захоплює дітей."
+        ],
+        "ru": [
+          "Сказочник завораживает детей."
+        ],
+        "en": [
+          "The storyteller captivates the children."
+        ]
+      }
+    },
+    {
+      "uk": "оповідач",
+      "ru": "рассказчик",
+      "en": "narrator",
+      "phoneticUk": "opovidach",
+      "phoneticRu": "rasskazchik",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Оповідач веде розповідь."
+        ],
+        "ru": [
+          "Рассказчик ведёт повествование."
+        ],
+        "en": [
+          "The narrator guides the story."
+        ]
+      }
+    },
+    {
+      "uk": "герой",
+      "ru": "герой",
+      "en": "hero",
+      "phoneticUk": "heroy",
+      "phoneticRu": "geroy",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Герой рятує місто."
+        ],
+        "ru": [
+          "Герой спасает город."
+        ],
+        "en": [
+          "The hero saves the city."
+        ]
+      }
+    },
+    {
+      "uk": "лиходій",
+      "ru": "злодей",
+      "en": "villain",
+      "phoneticUk": "lykhodiy",
+      "phoneticRu": "zlodey",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Лиходій програє герою."
+        ],
+        "ru": [
+          "Злодей проигрывает герою."
+        ],
+        "en": [
+          "The villain loses to the hero."
+        ]
+      }
+    },
+    {
+      "uk": "свідок (очевидець)",
+      "ru": "очевидец",
+      "en": "eyewitness",
+      "phoneticUk": "svidok",
+      "phoneticRu": "ochevidets",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Свідок (очевидець) бачив усе."
+        ],
+        "ru": [
+          "Очевидец видел всё."
+        ],
+        "en": [
+          "The eyewitness saw everything."
+        ]
+      }
+    },
+    {
+      "uk": "натовп",
+      "ru": "толпа",
+      "en": "crowd",
+      "phoneticUk": "natovp",
+      "phoneticRu": "tolpa",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Натовп зібрався на площі."
+        ],
+        "ru": [
+          "Толпа собралась на площади."
+        ],
+        "en": [
+          "A crowd gathered in the square."
+        ]
+      }
+    },
+    {
+      "uk": "черга (людей)",
+      "ru": "очередь",
+      "en": "queue/line (of people)",
+      "phoneticUk": "cherha",
+      "phoneticRu": "ochered",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він стоїть у черзі (людей)."
+        ],
+        "ru": [
+          "Он стоит в очереди."
+        ],
+        "en": [
+          "He is standing in line."
+        ]
+      }
+    },
+    {
+      "uk": "сусід",
+      "ru": "сосед",
+      "en": "neighbor",
+      "phoneticUk": "susid",
+      "phoneticRu": "sosed",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Сусід допоміг із переїздом."
+        ],
+        "ru": [
+          "Сосед помог с переездом."
+        ],
+        "en": [
+          "The neighbor helped with the move."
+        ]
+      }
+    },
+    {
+      "uk": "знайомий",
+      "ru": "знакомый",
+      "en": "acquaintance",
+      "phoneticUk": "znayomyi",
+      "phoneticRu": "znakomyy",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він — мій давній знайомий."
+        ],
+        "ru": [
+          "Он — мой давний знакомый."
+        ],
+        "en": [
+          "He is an old acquaintance of mine."
+        ]
+      }
+    },
+    {
+      "uk": "незнайомець",
+      "ru": "незнакомец",
+      "en": "stranger",
+      "phoneticUk": "neznayomets",
+      "phoneticRu": "neznakomets",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Незнайомець спитав дорогу."
+        ],
+        "ru": [
+          "Незнакомец спросил дорогу."
+        ],
+        "en": [
+          "A stranger asked for directions."
+        ]
+      }
+    },
+    {
+      "uk": "однокласник",
+      "ru": "одноклассник",
+      "en": "classmate",
+      "phoneticUk": "odnoklasnik",
+      "phoneticRu": "odnoklassnik",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Він зустрів однокласника."
+        ],
+        "ru": [
+          "Он встретил одноклассника."
+        ],
+        "en": [
+          "He ran into a classmate."
+        ]
+      }
+    },
+    {
+      "uk": "одногрупник",
+      "ru": "одногруппник",
+      "en": "groupmate/fellow student",
+      "phoneticUk": "odnohrupnyk",
+      "phoneticRu": "odnogruppnik",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Одногрупник допоміг із завданням."
+        ],
+        "ru": [
+          "Одногруппник помог с заданием."
+        ],
+        "en": [
+          "A fellow student helped with the assignment."
+        ]
+      }
+    },
+    {
+      "uk": "партнер",
+      "ru": "партнёр",
+      "en": "partner",
+      "phoneticUk": "partner",
+      "phoneticRu": "partnyur",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Бізнес-партнер надійний."
+        ],
+        "ru": [
+          "Бизнес-партнёр надёжный."
+        ],
+        "en": [
+          "The business partner is reliable."
+        ]
+      }
+    },
+    {
+      "uk": "побратим",
+      "ru": "побратим",
+      "en": "brother-in-arms",
+      "phoneticUk": "pobratym",
+      "phoneticRu": "pobratim",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Побратим завжди поруч."
+        ],
+        "ru": [
+          "Побратим всегда рядом."
+        ],
+        "en": [
+          "A brother-in-arms is always by your side."
+        ]
+      }
+    },
+    {
+      "uk": "товариш",
+      "ru": "товарищ",
+      "en": "comrade/companion",
+      "phoneticUk": "tovarysh",
+      "phoneticRu": "tovarishch",
+      "category": "expressions",
+      "examples": {
+        "uk": [
+          "Товариш підтримав у скрутну хвилину."
+        ],
+        "ru": [
+          "Товарищ поддержал в трудную минуту."
+        ],
+        "en": [
+          "My comrade supported me in a difficult moment."
+        ]
+      }
+    },
+    {
+      "uk": "гора",
+      "ru": "гора",
+      "en": "mountain",
+      "phoneticUk": "hora",
+      "phoneticRu": "gora",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Гора покрита снігом увесь рік."
+        ],
+        "ru": [
+          "Гора покрыта снегом весь год."
+        ],
+        "en": [
+          "The mountain is covered in snow all year."
+        ]
+      }
+    },
+    {
+      "uk": "річка",
+      "ru": "река",
+      "en": "river",
+      "phoneticUk": "richka",
+      "phoneticRu": "reka",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Річка розливається навесні."
+        ],
+        "ru": [
+          "Река разливается весной."
+        ],
+        "en": [
+          "The river floods in spring."
+        ]
+      }
+    },
+    {
+      "uk": "ліс",
+      "ru": "лес",
+      "en": "forest",
+      "phoneticUk": "lis",
+      "phoneticRu": "les",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Ліс наповнений звуками птахів."
+        ],
+        "ru": [
+          "Лес наполнен звуками птиц."
+        ],
+        "en": [
+          "The forest is filled with the sounds of birds."
+        ]
+      }
+    },
+    {
+      "uk": "озеро",
+      "ru": "озеро",
+      "en": "lake",
+      "phoneticUk": "ozero",
+      "phoneticRu": "ozero",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Озеро відображає хмари."
+        ],
+        "ru": [
+          "Озеро отражает облака."
+        ],
+        "en": [
+          "The lake reflects the clouds."
+        ]
+      }
+    },
+    {
+      "uk": "море",
+      "ru": "море",
+      "en": "sea",
+      "phoneticUk": "more",
+      "phoneticRu": "more",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Море хвилюється під час шторму."
+        ],
+        "ru": [
+          "Море волнуется во время шторма."
+        ],
+        "en": [
+          "The sea is rough during a storm."
+        ]
+      }
+    },
+    {
+      "uk": "океан",
+      "ru": "океан",
+      "en": "ocean",
+      "phoneticUk": "okean",
+      "phoneticRu": "okean",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Океан займає більшу частину Землі."
+        ],
+        "ru": [
+          "Океан занимает большую часть Земли."
+        ],
+        "en": [
+          "The ocean covers most of the Earth."
+        ]
+      }
+    },
+    {
+      "uk": "острів",
+      "ru": "остров",
+      "en": "island",
+      "phoneticUk": "ostriv",
+      "phoneticRu": "ostrov",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Острів оточений морем."
+        ],
+        "ru": [
+          "Остров окружён морем."
+        ],
+        "en": [
+          "The island is surrounded by the sea."
+        ]
+      }
+    },
+    {
+      "uk": "пустеля",
+      "ru": "пустыня",
+      "en": "desert",
+      "phoneticUk": "pustelya",
+      "phoneticRu": "pustynya",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "У пустелі дуже спекотно."
+        ],
+        "ru": [
+          "В пустыне очень жарко."
+        ],
+        "en": [
+          "It is very hot in the desert."
+        ]
+      }
+    },
+    {
+      "uk": "рівнина",
+      "ru": "равнина",
+      "en": "plain",
+      "phoneticUk": "rivnyna",
+      "phoneticRu": "ravnina",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Рівнина тягнеться до горизонту."
+        ],
+        "ru": [
+          "Равнина тянется до горизонта."
+        ],
+        "en": [
+          "The plain stretches to the horizon."
+        ]
+      }
+    },
+    {
+      "uk": "долина",
+      "ru": "долина",
+      "en": "valley",
+      "phoneticUk": "dolyna",
+      "phoneticRu": "dolina",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Долина між горами мальовнича."
+        ],
+        "ru": [
+          "Долина между горами живописна."
+        ],
+        "en": [
+          "The valley between the mountains is picturesque."
+        ]
+      }
+    },
+    {
+      "uk": "вулкан",
+      "ru": "вулкан",
+      "en": "volcano",
+      "phoneticUk": "vulkan",
+      "phoneticRu": "vulkan",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Вулкан виверг лаву."
+        ],
+        "ru": [
+          "Вулкан выбросил лаву."
+        ],
+        "en": [
+          "The volcano erupted lava."
+        ]
+      }
+    },
+    {
+      "uk": "водоспад",
+      "ru": "водопад",
+      "en": "waterfall",
+      "phoneticUk": "vodospad",
+      "phoneticRu": "vodopad",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Водоспад гучно шумить."
+        ],
+        "ru": [
+          "Водопад громко шумит."
+        ],
+        "en": [
+          "The waterfall roars loudly."
+        ]
+      }
+    },
+    {
+      "uk": "льодовик",
+      "ru": "ледник",
+      "en": "glacier",
+      "phoneticUk": "lodovyk",
+      "phoneticRu": "lednik",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Льодовик тане через потепління."
+        ],
+        "ru": [
+          "Ледник тает из-за потепления."
+        ],
+        "en": [
+          "The glacier is melting due to warming."
+        ]
+      }
+    },
+    {
+      "uk": "болото",
+      "ru": "болото",
+      "en": "swamp",
+      "phoneticUk": "boloto",
+      "phoneticRu": "boloto",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Болото небезпечне для мандрівників."
+        ],
+        "ru": [
+          "Болото опасно для путников."
+        ],
+        "en": [
+          "The swamp is dangerous for travelers."
+        ]
+      }
+    },
+    {
+      "uk": "печера",
+      "ru": "пещера",
+      "en": "cave",
+      "phoneticUk": "pechera",
+      "phoneticRu": "peshchera",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "У печері темно і волого."
+        ],
+        "ru": [
+          "В пещере темно и влажно."
+        ],
+        "en": [
+          "The cave is dark and damp."
+        ]
+      }
+    },
+    {
+      "uk": "півострів",
+      "ru": "полуостров",
+      "en": "peninsula",
+      "phoneticUk": "pivostriv",
+      "phoneticRu": "poluostrov",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Кримський півострів оточений морем з трьох сторін."
+        ],
+        "ru": [
+          "Крымский полуостров окружён морем с трёх сторон."
+        ],
+        "en": [
+          "The Crimean Peninsula is surrounded by the sea on three sides."
+        ]
+      }
+    },
+    {
+      "uk": "континент",
+      "ru": "континент",
+      "en": "continent",
+      "phoneticUk": "kontynent",
+      "phoneticRu": "kontinent",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Африка — другий за розміром континент."
+        ],
+        "ru": [
+          "Африка — второй по размеру континент."
+        ],
+        "en": [
+          "Africa is the second largest continent."
+        ]
+      }
+    },
+    {
+      "uk": "екватор",
+      "ru": "экватор",
+      "en": "equator",
+      "phoneticUk": "ekvator",
+      "phoneticRu": "ekvator",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "На екваторі завжди жарко."
+        ],
+        "ru": [
+          "На экваторе всегда жарко."
+        ],
+        "en": [
+          "It is always hot at the equator."
+        ]
+      }
+    },
+    {
+      "uk": "клімат",
+      "ru": "климат",
+      "en": "climate",
+      "phoneticUk": "klimat",
+      "phoneticRu": "klimat",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Клімат змінюється через діяльність людини."
+        ],
+        "ru": [
+          "Климат меняется из-за деятельности человека."
+        ],
+        "en": [
+          "The climate is changing due to human activity."
+        ]
+      }
+    },
+    {
+      "uk": "землетрус",
+      "ru": "землетрясение",
+      "en": "earthquake",
+      "phoneticUk": "zemletrus",
+      "phoneticRu": "zemletryaseniye",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Землетрус зруйнував місто."
+        ],
+        "ru": [
+          "Землетрясение разрушило город."
+        ],
+        "en": [
+          "The earthquake destroyed the city."
+        ]
+      }
+    },
+    {
+      "uk": "повінь",
+      "ru": "наводнение",
+      "en": "flood",
+      "phoneticUk": "povin",
+      "phoneticRu": "navodneniye",
+      "category": "nature-geography"
+    },
+    {
+      "uk": "посуха",
+      "ru": "засуха",
+      "en": "drought",
+      "phoneticUk": "posukha",
+      "phoneticRu": "zasukha",
+      "category": "nature-geography"
+    },
+    {
+      "uk": "ураган",
+      "ru": "ураган",
+      "en": "hurricane",
+      "phoneticUk": "urahan",
+      "phoneticRu": "uragan",
+      "category": "nature-geography"
+    },
+    {
+      "uk": "тайга",
+      "ru": "тайга",
+      "en": "taiga",
+      "phoneticUk": "tayha",
+      "phoneticRu": "tayga",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Тайга займає величезні простори Сибіру."
+        ],
+        "ru": [
+          "Тайга занимает огромные просторы Сибири."
+        ],
+        "en": [
+          "The taiga covers vast stretches of Siberia."
+        ]
+      }
+    },
+    {
+      "uk": "степ",
+      "ru": "степь",
+      "en": "steppe",
+      "phoneticUk": "step",
+      "phoneticRu": "step",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Степ вкритий квітами навесні."
+        ],
+        "ru": [
+          "Степь покрыта цветами весной."
+        ],
+        "en": [
+          "The steppe is covered in flowers in spring."
+        ]
+      }
+    },
+    {
+      "uk": "тундра",
+      "ru": "тундра",
+      "en": "tundra",
+      "phoneticUk": "tundra",
+      "phoneticRu": "tundra",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Тундра — суворий холодний регіон."
+        ],
+        "ru": [
+          "Тундра — суровый холодный регион."
+        ],
+        "en": [
+          "The tundra is a harsh, cold region."
+        ]
+      }
+    },
+    {
+      "uk": "берег",
+      "ru": "берег",
+      "en": "shore/coast",
+      "phoneticUk": "bereh",
+      "phoneticRu": "bereg",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Вони відпочивають на березі моря."
+        ],
+        "ru": [
+          "Они отдыхают на берегу моря."
+        ],
+        "en": [
+          "They are relaxing on the seashore."
+        ]
+      }
+    },
+    {
+      "uk": "затока",
+      "ru": "залив",
+      "en": "bay/gulf",
+      "phoneticUk": "zatoka",
+      "phoneticRu": "zaliv",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Кораблі заходять у затоку."
+        ],
+        "ru": [
+          "Корабли заходят в залив."
+        ],
+        "en": [
+          "Ships sail into the bay."
+        ]
+      }
+    },
+    {
+      "uk": "протока",
+      "ru": "пролив",
+      "en": "strait",
+      "phoneticUk": "protoka",
+      "phoneticRu": "proliv",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Протока з'єднує два моря."
+        ],
+        "ru": [
+          "Пролив соединяет два моря."
+        ],
+        "en": [
+          "The strait connects two seas."
+        ]
+      }
+    },
+    {
+      "uk": "хребет",
+      "ru": "хребет",
+      "en": "mountain range",
+      "phoneticUk": "khrebet",
+      "phoneticRu": "khrebet",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Карпатський хребет мальовничий."
+        ],
+        "ru": [
+          "Карпатский хребет живописный."
+        ],
+        "en": [
+          "The Carpathian mountain range is scenic."
+        ]
+      }
+    },
+    {
+      "uk": "дерево",
+      "ru": "дерево",
+      "en": "tree",
+      "phoneticUk": "derevo",
+      "phoneticRu": "derevo",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Старе дерево росте у дворі."
+        ],
+        "ru": [
+          "Старое дерево растёт во дворе."
+        ],
+        "en": [
+          "An old tree grows in the yard."
+        ]
+      }
+    },
+    {
+      "uk": "квітка",
+      "ru": "цветок",
+      "en": "flower",
+      "phoneticUk": "kvitka",
+      "phoneticRu": "tsvetok",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Польова квітка пахне ніжно."
+        ],
+        "ru": [
+          "Полевой цветок пахнет нежно."
+        ],
+        "en": [
+          "The wildflower has a delicate scent."
+        ]
+      }
+    },
+    {
+      "uk": "трава",
+      "ru": "трава",
+      "en": "grass",
+      "phoneticUk": "trava",
+      "phoneticRu": "trava",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Свіжа трава після дощу зеленіє."
+        ],
+        "ru": [
+          "Свежая трава после дождя зеленеет."
+        ],
+        "en": [
+          "The fresh grass turns green after the rain."
+        ]
+      }
+    },
+    {
+      "uk": "кущ",
+      "ru": "кустарник",
+      "en": "bush/shrub",
+      "phoneticUk": "kushch",
+      "phoneticRu": "kustarnik",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Кущ розцвів навесні."
+        ],
+        "ru": [
+          "Куст расцвёл весной."
+        ],
+        "en": [
+          "The bush bloomed in spring."
+        ]
+      }
+    },
+    {
+      "uk": "ґрунт",
+      "ru": "почва",
+      "en": "soil",
+      "phoneticUk": "grunt",
+      "phoneticRu": "pochva",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Ґрунт тут родючий."
+        ],
+        "ru": [
+          "Почва здесь плодородная."
+        ],
+        "en": [
+          "The soil here is fertile."
+        ]
+      }
+    },
+    {
+      "uk": "камінь",
+      "ru": "камень",
+      "en": "stone/rock",
+      "phoneticUk": "kamin",
+      "phoneticRu": "kamen",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Він сидить на великому камені."
+        ],
+        "ru": [
+          "Он сидит на большом камне."
+        ],
+        "en": [
+          "He is sitting on a large rock."
+        ]
+      }
+    },
+    {
+      "uk": "пісок",
+      "ru": "песок",
+      "en": "sand",
+      "phoneticUk": "pisok",
+      "phoneticRu": "pesok",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Пісок гарячий на пляжі."
+        ],
+        "ru": [
+          "Песок горячий на пляже."
+        ],
+        "en": [
+          "The sand is hot on the beach."
+        ]
+      }
+    },
+    {
+      "uk": "глина",
+      "ru": "глина",
+      "en": "clay",
+      "phoneticUk": "hlyna",
+      "phoneticRu": "glina",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Глина м'яка у руках."
+        ],
+        "ru": [
+          "Глина мягкая в руках."
+        ],
+        "en": [
+          "Clay is soft in your hands."
+        ]
+      }
+    },
+    {
+      "uk": "тварина",
+      "ru": "животное",
+      "en": "animal",
+      "phoneticUk": "tvaryna",
+      "phoneticRu": "zhivotnoye",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Ця тварина занесена до Червоної книги."
+        ],
+        "ru": [
+          "Это животное занесено в Красную книгу."
+        ],
+        "en": [
+          "This animal is listed in the Red Book."
+        ]
+      }
+    },
+    {
+      "uk": "птах",
+      "ru": "птица",
+      "en": "bird",
+      "phoneticUk": "ptakh",
+      "phoneticRu": "ptitsa",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Птах відлітає на південь восени."
+        ],
+        "ru": [
+          "Птица улетает на юг осенью."
+        ],
+        "en": [
+          "The bird flies south in autumn."
+        ]
+      }
+    },
+    {
+      "uk": "риба",
+      "ru": "рыба",
+      "en": "fish",
+      "phoneticUk": "ryba",
+      "phoneticRu": "ryba",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Риба водиться в чистих річках."
+        ],
+        "ru": [
+          "Рыба водится в чистых реках."
+        ],
+        "en": [
+          "Fish are found in clean rivers."
+        ]
+      }
+    },
+    {
+      "uk": "комаха",
+      "ru": "насекомое",
+      "en": "insect",
+      "phoneticUk": "komakha",
+      "phoneticRu": "nasekomoye",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Комаха сидить на квітці."
+        ],
+        "ru": [
+          "Насекомое сидит на цветке."
+        ],
+        "en": [
+          "An insect is sitting on the flower."
+        ]
+      }
+    },
+    {
+      "uk": "рослина",
+      "ru": "растение",
+      "en": "plant",
+      "phoneticUk": "roslyna",
+      "phoneticRu": "rasteniye",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Ця рослина любить сонце."
+        ],
+        "ru": [
+          "Это растение любит солнце."
+        ],
+        "en": [
+          "This plant loves sunlight."
+        ]
+      }
+    },
+    {
+      "uk": "заповідник",
+      "ru": "заповедник",
+      "en": "nature reserve",
+      "phoneticUk": "zapovidnyk",
+      "phoneticRu": "zapovednik",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "У заповіднику охороняють рідкісні тварини."
+        ],
+        "ru": [
+          "В заповеднике охраняют редких животных."
+        ],
+        "en": [
+          "Rare animals are protected in the nature reserve."
+        ]
+      }
+    },
+    {
+      "uk": "полярне коло",
+      "ru": "полярный круг",
+      "en": "polar circle",
+      "phoneticUk": "polyarne kolo",
+      "phoneticRu": "polyarnyy krug",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "За полярним колом сонце не заходить."
+        ],
+        "ru": [
+          "За полярным кругом солнце не заходит."
+        ],
+        "en": [
+          "Beyond the polar circle, the sun never sets."
+        ]
+      }
+    },
+    {
+      "uk": "широта",
+      "ru": "широта",
+      "en": "latitude",
+      "phoneticUk": "shyrota",
+      "phoneticRu": "shirota",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Широта визначає клімат регіону."
+        ],
+        "ru": [
+          "Широта определяет климат региона."
+        ],
+        "en": [
+          "Latitude determines a region's climate."
+        ]
+      }
+    },
+    {
+      "uk": "довгота",
+      "ru": "долгота",
+      "en": "longitude",
+      "phoneticUk": "dovhota",
+      "phoneticRu": "dolgota",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Довгота вимірюється в градусах."
+        ],
+        "ru": [
+          "Долгота измеряется в градусах."
+        ],
+        "en": [
+          "Longitude is measured in degrees."
+        ]
+      }
+    },
+    {
+      "uk": "горизонт",
+      "ru": "горизонт",
+      "en": "horizon",
+      "phoneticUk": "horyzont",
+      "phoneticRu": "gorizont",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Сонце зникає за горизонтом."
+        ],
+        "ru": [
+          "Солнце скрывается за горизонтом."
+        ],
+        "en": [
+          "The sun disappears below the horizon."
+        ]
+      }
+    },
+    {
+      "uk": "схід сонця",
+      "ru": "восход",
+      "en": "sunrise",
+      "phoneticUk": "skhid sontsya",
+      "phoneticRu": "voskhod",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Схід сонця вражає красою."
+        ],
+        "ru": [
+          "Восход солнца поражает красотой."
+        ],
+        "en": [
+          "The sunrise is breathtakingly beautiful."
+        ]
+      }
+    },
+    {
+      "uk": "захід сонця",
+      "ru": "закат",
+      "en": "sunset",
+      "phoneticUk": "zakhid sontsya",
+      "phoneticRu": "zakat",
+      "category": "nature-geography",
+      "examples": {
+        "uk": [
+          "Захід сонця фарбує небо в помаранчевий."
+        ],
+        "ru": [
+          "Закат красит небо в оранжевый."
+        ],
+        "en": [
+          "The sunset paints the sky orange."
+        ]
+      }
+    }
   ]
 }

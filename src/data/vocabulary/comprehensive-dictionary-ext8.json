@@ -1,320 +1,6008 @@
 {
   "words": [
-    {"uk": "парусник", "ru": "парусник", "en": "sailboat", "phoneticUk": "parusnyk", "phoneticRu": "parusnik", "category": "transport"},
-    {"uk": "катер", "ru": "катер", "en": "motorboat", "phoneticUk": "kater", "phoneticRu": "kater", "category": "transport"},
-    {"uk": "яхта", "ru": "яхта", "en": "yacht", "phoneticUk": "yakhta", "phoneticRu": "yakhta", "category": "transport"},
-    {"uk": "пором", "ru": "паром", "en": "ferry", "phoneticUk": "porom", "phoneticRu": "parom", "category": "transport"},
-    {"uk": "баржа", "ru": "баржа", "en": "barge", "phoneticUk": "barzha", "phoneticRu": "barzha", "category": "transport"},
-    {"uk": "каное", "ru": "каноэ", "en": "canoe", "phoneticUk": "kanoe", "phoneticRu": "kanoe", "category": "transport"},
-    {"uk": "каяк", "ru": "каяк", "en": "kayak", "phoneticUk": "kayak", "phoneticRu": "kayak", "category": "transport"},
-    {"uk": "весло", "ru": "весло", "en": "oar/paddle", "phoneticUk": "veslo", "phoneticRu": "veslo", "category": "transport"},
-    {"uk": "рятувальний жилет", "ru": "спасательный жилет", "en": "life jacket", "phoneticUk": "ryatuvalny zhylet", "phoneticRu": "spasatel'nyy zhilet", "category": "transport"},
-    {"uk": "гелікоптер", "ru": "вертолёт", "en": "helicopter", "phoneticUk": "helikopter", "phoneticRu": "vertolyot", "category": "transport"},
-    {"uk": "планер", "ru": "планер", "en": "glider", "phoneticUk": "planer", "phoneticRu": "planer", "category": "transport"},
-    {"uk": "парашут", "ru": "парашют", "en": "parachute", "phoneticUk": "parashut", "phoneticRu": "parashyut", "category": "transport"},
-    {"uk": "повітряна куля", "ru": "воздушный шар", "en": "hot air balloon", "phoneticUk": "povitryana kulya", "phoneticRu": "vozdushnyy shar", "category": "transport"},
-    {"uk": "дирижабль", "ru": "дирижабль", "en": "airship/blimp", "phoneticUk": "dyryzhabl", "phoneticRu": "dirizhabl'", "category": "transport"},
-    {"uk": "трамвай", "ru": "трамвай", "en": "tram/streetcar", "phoneticUk": "tramvay", "phoneticRu": "tramvay", "category": "transport"},
-    {"uk": "тролейбус", "ru": "троллейбус", "en": "trolleybus", "phoneticUk": "troleybus", "phoneticRu": "trolleybus", "category": "transport"},
-    {"uk": "метро", "ru": "метро", "en": "subway/metro", "phoneticUk": "metro", "phoneticRu": "metro", "category": "transport"},
-    {"uk": "електричка", "ru": "электричка", "en": "commuter train", "phoneticUk": "elektrychka", "phoneticRu": "elektrichka", "category": "transport"},
-    {"uk": "вагон", "ru": "вагон", "en": "rail car/wagon", "phoneticUk": "vahon", "phoneticRu": "vagon", "category": "transport"},
-    {"uk": "локомотив", "ru": "локомотив", "en": "locomotive", "phoneticUk": "lokomotyv", "phoneticRu": "lokomotiv", "category": "transport"},
-    {"uk": "платформа", "ru": "платформа", "en": "platform (train)", "phoneticUk": "platforma", "phoneticRu": "platforma", "category": "transport"},
-    {"uk": "квиток", "ru": "билет", "en": "ticket", "phoneticUk": "kvytok", "phoneticRu": "bilet", "category": "transport"},
-    {"uk": "пасажир", "ru": "пассажир", "en": "passenger", "phoneticUk": "pasazhyr", "phoneticRu": "passazhir", "category": "transport"},
-    {"uk": "пілот", "ru": "пилот", "en": "pilot", "phoneticUk": "pilot", "phoneticRu": "pilot", "category": "transport"},
-    {"uk": "стюардеса", "ru": "стюардесса", "en": "flight attendant", "phoneticUk": "styuardesa", "phoneticRu": "styuardessa", "category": "transport"},
-    {"uk": "посадковий талон", "ru": "посадочный талон", "en": "boarding pass", "phoneticUk": "posadkovyi talon", "phoneticRu": "posadochnyy talon", "category": "transport"},
-    {"uk": "злітна смуга", "ru": "взлётная полоса", "en": "runway", "phoneticUk": "zlitna smuga", "phoneticRu": "vzlyotnaya polosa", "category": "transport"},
-    {"uk": "турбулентність", "ru": "турбулентность", "en": "turbulence", "phoneticUk": "turbulentnist", "phoneticRu": "turbulentnost'", "category": "transport"},
-    {"uk": "гальмівний шлях", "ru": "тормозной путь", "en": "braking distance", "phoneticUk": "halmivnyi shlyakh", "phoneticRu": "tormoznoy put'", "category": "transport"},
-    {"uk": "перон", "ru": "перрон", "en": "platform (station)", "phoneticUk": "peron", "phoneticRu": "perron", "category": "transport"},
-    {"uk": "мурашник", "ru": "муравейник", "en": "anthill", "phoneticUk": "murashnyk", "phoneticRu": "muraveynik", "category": "nature"},
-    {"uk": "павутина", "ru": "паутина", "en": "spider web", "phoneticUk": "pavutyna", "phoneticRu": "pautina", "category": "nature"},
-    {"uk": "вулик", "ru": "улей", "en": "beehive", "phoneticUk": "vulyk", "phoneticRu": "uley", "category": "nature"},
-    {"uk": "нора", "ru": "нора", "en": "burrow/den", "phoneticUk": "nora", "phoneticRu": "nora", "category": "nature"},
-    {"uk": "гніздо", "ru": "гнездо", "en": "nest", "phoneticUk": "hnizdo", "phoneticRu": "gnezdo", "category": "nature"},
-    {"uk": "лігво", "ru": "логово", "en": "lair", "phoneticUk": "lihvo", "phoneticRu": "logovo", "category": "nature"},
-    {"uk": "берлога", "ru": "берлога", "en": "bear den", "phoneticUk": "berloha", "phoneticRu": "berloga", "category": "nature"},
-    {"uk": "рогоз", "ru": "рогоз", "en": "cattail/reed", "phoneticUk": "rohoz", "phoneticRu": "rogoz", "category": "nature"},
-    {"uk": "мох", "ru": "мох", "en": "moss", "phoneticUk": "mokh", "phoneticRu": "mokh", "category": "nature"},
-    {"uk": "лишайник", "ru": "лишайник", "en": "lichen", "phoneticUk": "lyshainyk", "phoneticRu": "lishaynik", "category": "nature"},
-    {"uk": "папороть", "ru": "папоротник", "en": "fern", "phoneticUk": "paporot", "phoneticRu": "paporotnik", "category": "nature"},
-    {"uk": "лоза", "ru": "лоза", "en": "vine", "phoneticUk": "loza", "phoneticRu": "loza", "category": "nature"},
-    {"uk": "плющ", "ru": "плющ", "en": "ivy", "phoneticUk": "plyushch", "phoneticRu": "plyushch", "category": "nature"},
-    {"uk": "кактус", "ru": "кактус", "en": "cactus", "phoneticUk": "kaktus", "phoneticRu": "kaktus", "category": "nature"},
-    {"uk": "бамбук", "ru": "бамбук", "en": "bamboo", "phoneticUk": "bambuk", "phoneticRu": "bambuk", "category": "nature"},
-    {"uk": "пальма", "ru": "пальма", "en": "palm tree", "phoneticUk": "palma", "phoneticRu": "pal'ma", "category": "nature"},
-    {"uk": "верба", "ru": "ива", "en": "willow", "phoneticUk": "verba", "phoneticRu": "iva", "category": "nature"},
-    {"uk": "каштан", "ru": "каштан", "en": "chestnut tree", "phoneticUk": "kashtan", "phoneticRu": "kashtan", "category": "nature"},
-    {"uk": "клен", "ru": "клён", "en": "maple", "phoneticUk": "klen", "phoneticRu": "klyon", "category": "nature"},
-    {"uk": "ясен", "ru": "ясень", "en": "ash tree", "phoneticUk": "yasen", "phoneticRu": "yasen'", "category": "nature"},
-    {"uk": "бук", "ru": "бук", "en": "beech tree", "phoneticUk": "buk", "phoneticRu": "buk", "category": "nature"},
-    {"uk": "в'яз", "ru": "вяз", "en": "elm tree", "phoneticUk": "vyaz", "phoneticRu": "vyaz", "category": "nature"},
-    {"uk": "кедр", "ru": "кедр", "en": "cedar", "phoneticUk": "kedr", "phoneticRu": "kedr", "category": "nature"},
-    {"uk": "кипарис", "ru": "кипарис", "en": "cypress", "phoneticUk": "kyparys", "phoneticRu": "kiparis", "category": "nature"},
-    {"uk": "жолудь", "ru": "жёлудь", "en": "acorn", "phoneticUk": "zholud", "phoneticRu": "zholud'", "category": "nature"},
-    {"uk": "шишка", "ru": "шишка", "en": "pinecone", "phoneticUk": "shyshka", "phoneticRu": "shishka", "category": "nature"},
-    {"uk": "троянда", "ru": "роза", "en": "rose", "phoneticUk": "troyanda", "phoneticRu": "roza", "category": "flowers"},
-    {"uk": "тюльпан", "ru": "тюльпан", "en": "tulip", "phoneticUk": "tyulpan", "phoneticRu": "tyul'pan", "category": "flowers"},
-    {"uk": "соняшник (квітка)", "ru": "подсолнух (цветок)", "en": "sunflower (flower)", "phoneticUk": "sonyashnyk", "phoneticRu": "podsolnukh", "category": "flowers"},
-    {"uk": "ромашка", "ru": "ромашка", "en": "daisy/chamomile", "phoneticUk": "romashka", "phoneticRu": "romashka", "category": "flowers"},
-    {"uk": "лілія", "ru": "лилия", "en": "lily", "phoneticUk": "liliya", "phoneticRu": "liliya", "category": "flowers"},
-    {"uk": "орхідея", "ru": "орхидея", "en": "orchid", "phoneticUk": "orkhideya", "phoneticRu": "orkhideya", "category": "flowers"},
-    {"uk": "гвоздика", "ru": "гвоздика", "en": "carnation", "phoneticUk": "hvozdyka", "phoneticRu": "gvozdika", "category": "flowers"},
-    {"uk": "фіалка", "ru": "фиалка", "en": "violet", "phoneticUk": "fialka", "phoneticRu": "fialka", "category": "flowers"},
-    {"uk": "конвалія", "ru": "ландыш", "en": "lily of the valley", "phoneticUk": "konvaliya", "phoneticRu": "landysh", "category": "flowers"},
-    {"uk": "нарцис", "ru": "нарцисс", "en": "daffodil/narcissus", "phoneticUk": "nartsys", "phoneticRu": "nartsiss", "category": "flowers"},
-    {"uk": "жасмин", "ru": "жасмин", "en": "jasmine", "phoneticUk": "zhasmyn", "phoneticRu": "zhasmin", "category": "flowers"},
-    {"uk": "лаванда", "ru": "лаванда", "en": "lavender", "phoneticUk": "lavanda", "phoneticRu": "lavanda", "category": "flowers"},
-    {"uk": "півонія", "ru": "пион", "en": "peony", "phoneticUk": "pivoniya", "phoneticRu": "pion", "category": "flowers"},
-    {"uk": "хризантема", "ru": "хризантема", "en": "chrysanthemum", "phoneticUk": "khryzantema", "phoneticRu": "khrizantema", "category": "flowers"},
-    {"uk": "бузок", "ru": "сирень", "en": "lilac", "phoneticUk": "buzok", "phoneticRu": "siren'", "category": "flowers"},
-    {"uk": "волонтер", "ru": "волонтёр", "en": "volunteer", "phoneticUk": "volonter", "phoneticRu": "volontyor", "category": "society"},
-    {"uk": "благодійність", "ru": "благотворительность", "en": "charity", "phoneticUk": "blahodiynist", "phoneticRu": "blagotvoritel'nost'", "category": "society"},
-    {"uk": "громада", "ru": "община", "en": "community", "phoneticUk": "hromada", "phoneticRu": "obshchina", "category": "society"},
-    {"uk": "суспільство", "ru": "общество", "en": "society", "phoneticUk": "suspilstvo", "phoneticRu": "obshchestvo", "category": "society"},
-    {"uk": "громадянин", "ru": "гражданин", "en": "citizen", "phoneticUk": "hromadyanyn", "phoneticRu": "grazhdanin", "category": "society"},
-    {"uk": "мешканець", "ru": "житель", "en": "resident/inhabitant", "phoneticUk": "meshkanets", "phoneticRu": "zhitel'", "category": "society"},
-    {"uk": "населення", "ru": "население", "en": "population", "phoneticUk": "naselennya", "phoneticRu": "naseleniye", "category": "society"},
-    {"uk": "переписна", "ru": "перепись", "en": "census", "phoneticUk": "perepysna", "phoneticRu": "perepis'", "category": "society"},
-    {"uk": "імміграція", "ru": "иммиграция", "en": "immigration", "phoneticUk": "immihratsia", "phoneticRu": "immigratsiya", "category": "society"},
-    {"uk": "еміграція", "ru": "эмиграция", "en": "emigration", "phoneticUk": "emihratsia", "phoneticRu": "emigratsiya", "category": "society"},
-    {"uk": "біженець", "ru": "беженец", "en": "refugee", "phoneticUk": "bizhenets", "phoneticRu": "bezhenets", "category": "society"},
-    {"uk": "притулок", "ru": "убежище", "en": "asylum/shelter", "phoneticUk": "prytulok", "phoneticRu": "ubezhishche", "category": "society"},
-    {"uk": "паспорт", "ru": "паспорт", "en": "passport", "phoneticUk": "pasport", "phoneticRu": "pasport", "category": "society"},
-    {"uk": "віза", "ru": "виза", "en": "visa", "phoneticUk": "viza", "phoneticRu": "viza", "category": "society"},
-    {"uk": "громадянство", "ru": "гражданство", "en": "citizenship", "phoneticUk": "hromadyanstvo", "phoneticRu": "grazhdanstvo", "category": "society"},
-    {"uk": "посвідчення", "ru": "удостоверение", "en": "ID card/identification", "phoneticUk": "posvidchennya", "phoneticRu": "udostovereniye", "category": "society"},
-    {"uk": "свідоцтво", "ru": "свидетельство", "en": "certificate", "phoneticUk": "svidotstvo", "phoneticRu": "svidetel'stvo", "category": "society"},
-    {"uk": "ліцензія", "ru": "лицензия", "en": "license", "phoneticUk": "litsenziya", "phoneticRu": "litsenziya", "category": "society"},
-    {"uk": "дозвіл", "ru": "разрешение", "en": "permit/permission", "phoneticUk": "dozvil", "phoneticRu": "razresheniye", "category": "society"},
-    {"uk": "петиція", "ru": "петиция", "en": "petition", "phoneticUk": "petytsiya", "phoneticRu": "petitsiya", "category": "society"},
-    {"uk": "мітинг", "ru": "митинг", "en": "rally/protest", "phoneticUk": "mitynh", "phoneticRu": "miting", "category": "society"},
-    {"uk": "демонстрація", "ru": "демонстрация", "en": "demonstration/march", "phoneticUk": "demonstratsiya", "phoneticRu": "demonstratsiya", "category": "society"},
-    {"uk": "страйк", "ru": "забастовка", "en": "strike", "phoneticUk": "strayk", "phoneticRu": "zabastovka", "category": "society"},
-    {"uk": "профспілка", "ru": "профсоюз", "en": "trade union", "phoneticUk": "profspilka", "phoneticRu": "profsoyuz", "category": "society"},
-    {"uk": "обов'язок", "ru": "обязанность", "en": "duty/obligation", "phoneticUk": "obovyazok", "phoneticRu": "obyazannost'", "category": "society"},
-    {"uk": "право", "ru": "право", "en": "right (legal)", "phoneticUk": "pravo", "phoneticRu": "pravo", "category": "society"},
-    {"uk": "відповідальність", "ru": "ответственность", "en": "responsibility", "phoneticUk": "vidpovidalnist", "phoneticRu": "otvetstvennost'", "category": "society"},
-    {"uk": "чесний", "ru": "честный", "en": "honest", "phoneticUk": "chesnyi", "phoneticRu": "chestnyy", "category": "adjectives"},
-    {"uk": "брехливий", "ru": "лживый", "en": "dishonest/lying", "phoneticUk": "brekhyvyi", "phoneticRu": "lzhivyy", "category": "adjectives"},
-    {"uk": "щедрий", "ru": "щедрый", "en": "generous", "phoneticUk": "shchedryi", "phoneticRu": "shchedryy", "category": "adjectives"},
-    {"uk": "скупий", "ru": "скупой", "en": "stingy/greedy", "phoneticUk": "skupyi", "phoneticRu": "skupoy", "category": "adjectives"},
-    {"uk": "ввічливий", "ru": "вежливый", "en": "polite", "phoneticUk": "vvichlyvyi", "phoneticRu": "vezhlivyy", "category": "adjectives"},
-    {"uk": "грубий", "ru": "грубый", "en": "rude/rough", "phoneticUk": "hrubyi", "phoneticRu": "grubyy", "category": "adjectives"},
-    {"uk": "терплячий", "ru": "терпеливый", "en": "patient", "phoneticUk": "terplyachyi", "phoneticRu": "terpelivyy", "category": "adjectives"},
-    {"uk": "нетерплячий", "ru": "нетерпеливый", "en": "impatient", "phoneticUk": "neterplyachyi", "phoneticRu": "neterpelivyy", "category": "adjectives"},
-    {"uk": "скромний", "ru": "скромный", "en": "modest/humble", "phoneticUk": "skromnyi", "phoneticRu": "skromnyy", "category": "adjectives"},
-    {"uk": "зарозумілий", "ru": "высокомерный", "en": "arrogant", "phoneticUk": "zarozumilyi", "phoneticRu": "vysokomernyy", "category": "adjectives"},
-    {"uk": "відважний", "ru": "храбрый", "en": "brave/courageous", "phoneticUk": "vidvazhnyi", "phoneticRu": "khrabryy", "category": "adjectives"},
-    {"uk": "боягузливий", "ru": "трусливый", "en": "cowardly", "phoneticUk": "boyahuzlyvyi", "phoneticRu": "truslivyy", "category": "adjectives"},
-    {"uk": "наполегливий", "ru": "настойчивый", "en": "persistent/determined", "phoneticUk": "napolehlyvyi", "phoneticRu": "nastoychivyy", "category": "adjectives"},
-    {"uk": "лінивий", "ru": "ленивый", "en": "lazy", "phoneticUk": "linyvyi", "phoneticRu": "lenivyy", "category": "adjectives"},
-    {"uk": "працьовитий", "ru": "трудолюбивый", "en": "hardworking", "phoneticUk": "pratsovytyi", "phoneticRu": "trudolyubivyy", "category": "adjectives"},
-    {"uk": "надійний", "ru": "надёжный", "en": "reliable", "phoneticUk": "nadiynyi", "phoneticRu": "nadyozhnyy", "category": "adjectives"},
-    {"uk": "відданий", "ru": "преданный", "en": "devoted/loyal", "phoneticUk": "viddanyi", "phoneticRu": "predannyy", "category": "adjectives"},
-    {"uk": "підступний", "ru": "коварный", "en": "treacherous/cunning", "phoneticUk": "pidstupnyi", "phoneticRu": "kovarnyy", "category": "adjectives"},
-    {"uk": "мудрий", "ru": "мудрый", "en": "wise", "phoneticUk": "mudryi", "phoneticRu": "mudryy", "category": "adjectives"},
-    {"uk": "дурний", "ru": "глупый", "en": "foolish/silly", "phoneticUk": "durnyi", "phoneticRu": "glupyy", "category": "adjectives"},
-    {"uk": "допитливий", "ru": "любопытный", "en": "curious/inquisitive", "phoneticUk": "dopytlyvyi", "phoneticRu": "lyubopytnyy", "category": "adjectives"},
-    {"uk": "байдужий", "ru": "равнодушный", "en": "indifferent/apathetic", "phoneticUk": "bayduzhyi", "phoneticRu": "ravnodushnyy", "category": "adjectives"},
-    {"uk": "вразливий", "ru": "уязвимый", "en": "vulnerable/sensitive", "phoneticUk": "vrazlyvyi", "phoneticRu": "uyazvimyy", "category": "adjectives"},
-    {"uk": "стійкий", "ru": "устойчивый", "en": "resilient/stable", "phoneticUk": "stiykyi", "phoneticRu": "ustoychivyy", "category": "adjectives"},
-    {"uk": "гнучкий", "ru": "гибкий", "en": "flexible", "phoneticUk": "hnuchkyi", "phoneticRu": "gibkiy", "category": "adjectives"},
-    {"uk": "жорсткий", "ru": "жёсткий", "en": "rigid/stiff", "phoneticUk": "zhorstkyi", "phoneticRu": "zhyostkiy", "category": "adjectives"},
-    {"uk": "гладкий", "ru": "гладкий", "en": "smooth", "phoneticUk": "hladkyi", "phoneticRu": "gladkiy", "category": "adjectives"},
-    {"uk": "шорсткий", "ru": "шершавый", "en": "rough/coarse", "phoneticUk": "shorstkyi", "phoneticRu": "shershavyy", "category": "adjectives"},
-    {"uk": "пухкий", "ru": "пушистый", "en": "fluffy/soft", "phoneticUk": "pukhkyi", "phoneticRu": "pushistyy", "category": "adjectives"},
-    {"uk": "крихкий", "ru": "хрупкий", "en": "fragile/brittle", "phoneticUk": "krykhkyi", "phoneticRu": "khrupkiy", "category": "adjectives"},
-    {"uk": "міцний", "ru": "крепкий", "en": "strong/sturdy", "phoneticUk": "mitsnyi", "phoneticRu": "krepkiy", "category": "adjectives"},
-    {"uk": "слизький", "ru": "скользкий", "en": "slippery", "phoneticUk": "slyz'kyi", "phoneticRu": "skol'zkiy", "category": "adjectives"},
-    {"uk": "липкий", "ru": "липкий", "en": "sticky", "phoneticUk": "lypkyi", "phoneticRu": "lipkiy", "category": "adjectives"},
-    {"uk": "порожній", "ru": "пустой", "en": "empty", "phoneticUk": "porozhniy", "phoneticRu": "pustoy", "category": "adjectives"},
-    {"uk": "повний", "ru": "полный", "en": "full", "phoneticUk": "povnyi", "phoneticRu": "polnyy", "category": "adjectives"},
-    {"uk": "вузький", "ru": "узкий", "en": "narrow", "phoneticUk": "vuz'kyi", "phoneticRu": "uzkiy", "category": "adjectives"},
-    {"uk": "широкий", "ru": "широкий", "en": "wide/broad", "phoneticUk": "shyrokyi", "phoneticRu": "shirokiy", "category": "adjectives"},
-    {"uk": "глибокий", "ru": "глубокий", "en": "deep", "phoneticUk": "hlybokyi", "phoneticRu": "glubokiy", "category": "adjectives"},
-    {"uk": "мілкий", "ru": "мелкий", "en": "shallow", "phoneticUk": "milkyi", "phoneticRu": "melkiy", "category": "adjectives"},
-    {"uk": "товстий", "ru": "толстый", "en": "thick/fat", "phoneticUk": "tovstyi", "phoneticRu": "tolstyy", "category": "adjectives"},
-    {"uk": "тонкий", "ru": "тонкий", "en": "thin", "phoneticUk": "tonkyi", "phoneticRu": "tonkiy", "category": "adjectives"},
-    {"uk": "гострий", "ru": "острый", "en": "sharp", "phoneticUk": "hostryi", "phoneticRu": "ostryy", "category": "adjectives"},
-    {"uk": "тупий (предмет)", "ru": "тупой", "en": "blunt/dull", "phoneticUk": "tupyi", "phoneticRu": "tupoy", "category": "adjectives"},
-    {"uk": "прозорий", "ru": "прозрачный", "en": "transparent", "phoneticUk": "prozoryi", "phoneticRu": "prozrachnyy", "category": "adjectives"},
-    {"uk": "мутний", "ru": "мутный", "en": "murky/cloudy", "phoneticUk": "mutnyi", "phoneticRu": "mutnyy", "category": "adjectives"},
-    {"uk": "блискучий", "ru": "блестящий", "en": "shiny/sparkling", "phoneticUk": "blyskuchyi", "phoneticRu": "blestyashchiy", "category": "adjectives"},
-    {"uk": "тьмяний", "ru": "тусклый", "en": "dim/dull", "phoneticUk": "t'myanii", "phoneticRu": "tusklyy", "category": "adjectives"},
-    {"uk": "терміновий", "ru": "срочный", "en": "urgent", "phoneticUk": "terminovyi", "phoneticRu": "srochnyy", "category": "adjectives"},
-    {"uk": "необхідний", "ru": "необходимый", "en": "necessary/essential", "phoneticUk": "neobkhidnyi", "phoneticRu": "neobkhodimyy", "category": "adjectives"},
-    {"uk": "зайвий", "ru": "лишний", "en": "unnecessary/extra", "phoneticUk": "zayvyi", "phoneticRu": "lishniy", "category": "adjectives"},
-    {"uk": "корисний", "ru": "полезный", "en": "useful/helpful", "phoneticUk": "korysnyi", "phoneticRu": "poleznyy", "category": "adjectives"},
-    {"uk": "шкідливий", "ru": "вредный", "en": "harmful", "phoneticUk": "shkidlyvyi", "phoneticRu": "vrednyy", "category": "adjectives"},
-    {"uk": "безпечний", "ru": "безопасный", "en": "safe", "phoneticUk": "bezpechnyi", "phoneticRu": "bezopasnyy", "category": "adjectives"},
-    {"uk": "небезпечний", "ru": "опасный", "en": "dangerous", "phoneticUk": "nebezpechnyi", "phoneticRu": "opasnyy", "category": "adjectives"},
-    {"uk": "зручний", "ru": "удобный", "en": "comfortable/convenient", "phoneticUk": "zruchnyi", "phoneticRu": "udobnyy", "category": "adjectives"},
-    {"uk": "незручний", "ru": "неудобный", "en": "uncomfortable/inconvenient", "phoneticUk": "nezruchnyi", "phoneticRu": "neudobnyy", "category": "adjectives"},
-    {"uk": "складний", "ru": "сложный", "en": "complicated/complex", "phoneticUk": "skladnyi", "phoneticRu": "slozhnyy", "category": "adjectives"},
-    {"uk": "простий", "ru": "простой", "en": "simple", "phoneticUk": "prostyi", "phoneticRu": "prostoy", "category": "adjectives"},
-    {"uk": "сучасний", "ru": "современный", "en": "modern/contemporary", "phoneticUk": "suchasnyi", "phoneticRu": "sovremennyy", "category": "adjectives"},
-    {"uk": "старовинний", "ru": "старинный", "en": "ancient/antique", "phoneticUk": "starovynnyi", "phoneticRu": "starinnyy", "category": "adjectives"},
-    {"uk": "тимчасовий", "ru": "временный", "en": "temporary", "phoneticUk": "tymchasovyi", "phoneticRu": "vremennyy", "category": "adjectives"},
-    {"uk": "постійний", "ru": "постоянный", "en": "permanent/constant", "phoneticUk": "postiynyi", "phoneticRu": "postoyannyy", "category": "adjectives"},
-    {"uk": "прихований", "ru": "скрытый", "en": "hidden/concealed", "phoneticUk": "prykhovany", "phoneticRu": "skrytyy", "category": "adjectives"},
-    {"uk": "очевидний", "ru": "очевидный", "en": "obvious/evident", "phoneticUk": "ochevydnyi", "phoneticRu": "ochevidnyy", "category": "adjectives"},
-    {"uk": "таємний", "ru": "тайный", "en": "secret", "phoneticUk": "tayemnyi", "phoneticRu": "taynyy", "category": "adjectives"},
-    {"uk": "публічний", "ru": "публичный", "en": "public", "phoneticUk": "publichnyi", "phoneticRu": "publichnyy", "category": "adjectives"},
-    {"uk": "приватний", "ru": "частный", "en": "private", "phoneticUk": "pryvatnyi", "phoneticRu": "chastnyy", "category": "adjectives"},
-    {"uk": "офіційний", "ru": "официальный", "en": "official", "phoneticUk": "ofitsiynyi", "phoneticRu": "ofitsial'nyy", "category": "adjectives"},
-    {"uk": "неформальний", "ru": "неформальный", "en": "informal", "phoneticUk": "neformalny", "phoneticRu": "neformal'nyy", "category": "adjectives"},
-    {"uk": "популярний", "ru": "популярный", "en": "popular", "phoneticUk": "populyarnyi", "phoneticRu": "populyarnyy", "category": "adjectives"},
-    {"uk": "рідкісний", "ru": "редкий", "en": "rare", "phoneticUk": "ridkisnyi", "phoneticRu": "redkiy", "category": "adjectives"},
-    {"uk": "звичайний", "ru": "обычный", "en": "ordinary/common", "phoneticUk": "zvychainyi", "phoneticRu": "obychnyy", "category": "adjectives"},
-    {"uk": "незвичайний", "ru": "необычный", "en": "unusual/extraordinary", "phoneticUk": "nezvychainyi", "phoneticRu": "neobychnyy", "category": "adjectives"},
-    {"uk": "відпочивати", "ru": "отдыхать", "en": "to rest/relax", "phoneticUk": "vidpochyvaty", "phoneticRu": "otdykhat'", "category": "verbs-daily"},
-    {"uk": "прокидатися", "ru": "просыпаться", "en": "to wake up", "phoneticUk": "prokydatysya", "phoneticRu": "prosypat'sya", "category": "verbs-daily"},
-    {"uk": "засинати", "ru": "засыпать", "en": "to fall asleep", "phoneticUk": "zasynaty", "phoneticRu": "zasypat'", "category": "verbs-daily"},
-    {"uk": "снити", "ru": "сниться", "en": "to dream", "phoneticUk": "snyty", "phoneticRu": "snit'sya", "category": "verbs-daily"},
-    {"uk": "хропіти", "ru": "храпеть", "en": "to snore", "phoneticUk": "khropity", "phoneticRu": "khrapet'", "category": "verbs-daily"},
-    {"uk": "вдягатися", "ru": "одеваться", "en": "to get dressed", "phoneticUk": "vdyahatysya", "phoneticRu": "odevat'sya", "category": "verbs-daily"},
-    {"uk": "роздягатися (щоденне)", "ru": "раздеваться", "en": "to get undressed", "phoneticUk": "rozdyahatysya", "phoneticRu": "razdevat'sya", "category": "verbs-daily"},
-    {"uk": "вмиватися", "ru": "умываться", "en": "to wash one's face", "phoneticUk": "vmyvatysya", "phoneticRu": "umyvat'sya", "category": "verbs-daily"},
-    {"uk": "чистити зуби", "ru": "чистить зубы", "en": "to brush teeth", "phoneticUk": "chystyty zuby", "phoneticRu": "chistit' zuby", "category": "verbs-daily"},
-    {"uk": "голитися", "ru": "бриться", "en": "to shave", "phoneticUk": "holytysya", "phoneticRu": "brit'sya", "category": "verbs-daily"},
-    {"uk": "розчісуватися", "ru": "расчёсываться", "en": "to comb one's hair", "phoneticUk": "rozchisuvatysya", "phoneticRu": "raschyosyvat'sya", "category": "verbs-daily"},
-    {"uk": "снідати", "ru": "завтракать", "en": "to have breakfast", "phoneticUk": "snidaty", "phoneticRu": "zavtrakat'", "category": "verbs-daily"},
-    {"uk": "обідати", "ru": "обедать", "en": "to have lunch", "phoneticUk": "obidaty", "phoneticRu": "obedat'", "category": "verbs-daily"},
-    {"uk": "вечеряти", "ru": "ужинать", "en": "to have dinner", "phoneticUk": "vecheryaty", "phoneticRu": "uzhinat'", "category": "verbs-daily"},
-    {"uk": "перекусити", "ru": "перекусить", "en": "to have a snack", "phoneticUk": "perekusyty", "phoneticRu": "perekusit'", "category": "verbs-daily"},
-    {"uk": "прибирати", "ru": "убирать", "en": "to clean up/tidy", "phoneticUk": "prybyraty", "phoneticRu": "ubirat'", "category": "verbs-daily"},
-    {"uk": "мити посуд", "ru": "мыть посуду", "en": "to wash dishes", "phoneticUk": "myty posud", "phoneticRu": "myt' posudu", "category": "verbs-daily"},
-    {"uk": "прати", "ru": "стирать", "en": "to do laundry", "phoneticUk": "praty", "phoneticRu": "stirat'", "category": "verbs-daily"},
-    {"uk": "прасувати", "ru": "гладить", "en": "to iron clothes", "phoneticUk": "prasuvaty", "phoneticRu": "gladit'", "category": "verbs-daily"},
-    {"uk": "підмітати", "ru": "подметать", "en": "to sweep", "phoneticUk": "pidmitaty", "phoneticRu": "podmetat'", "category": "verbs-daily"},
-    {"uk": "витирати пил", "ru": "вытирать пыль", "en": "to dust", "phoneticUk": "vytyraty pyl", "phoneticRu": "vytirat' pyl'", "category": "verbs-daily"},
-    {"uk": "поливати", "ru": "поливать", "en": "to water (plants)", "phoneticUk": "polyvaty", "phoneticRu": "polivat'", "category": "verbs-daily"},
-    {"uk": "годувати", "ru": "кормить", "en": "to feed", "phoneticUk": "hoduvaty", "phoneticRu": "kormit'", "category": "verbs-daily"},
-    {"uk": "вигулювати", "ru": "выгуливать", "en": "to walk (a dog)", "phoneticUk": "vyhulyuvaty", "phoneticRu": "vygulivat'", "category": "verbs-daily"},
-    {"uk": "паркуватися", "ru": "парковаться", "en": "to park", "phoneticUk": "parkuvatysya", "phoneticRu": "parkovat'sya", "category": "verbs-daily"},
-    {"uk": "заправлятися", "ru": "заправляться", "en": "to refuel", "phoneticUk": "zapravlyatysya", "phoneticRu": "zapravlyat'sya", "category": "verbs-daily"},
-    {"uk": "щасливий", "ru": "счастливый", "en": "happy", "phoneticUk": "shchaslyvyi", "phoneticRu": "schastlivyy", "category": "common-adj"},
-    {"uk": "сумний", "ru": "грустный", "en": "sad", "phoneticUk": "sumnyi", "phoneticRu": "grustnyy", "category": "common-adj"},
-    {"uk": "злий", "ru": "злой", "en": "angry/evil", "phoneticUk": "zlyi", "phoneticRu": "zloy", "category": "common-adj"},
-    {"uk": "веселий", "ru": "весёлый", "en": "cheerful/merry", "phoneticUk": "veselyi", "phoneticRu": "vesyolyy", "category": "common-adj"},
-    {"uk": "серйозний", "ru": "серьёзный", "en": "serious", "phoneticUk": "seryoznyi", "phoneticRu": "ser'yoznyy", "category": "common-adj"},
-    {"uk": "спокійний", "ru": "спокойный", "en": "calm/peaceful", "phoneticUk": "spokiynyi", "phoneticRu": "spokoynyy", "category": "common-adj"},
-    {"uk": "нервовий", "ru": "нервный", "en": "nervous", "phoneticUk": "nervovyi", "phoneticRu": "nervnyy", "category": "common-adj"},
-    {"uk": "втомлений", "ru": "уставший", "en": "tired", "phoneticUk": "vtomlenyi", "phoneticRu": "ustavshiy", "category": "common-adj"},
-    {"uk": "бадьорий", "ru": "бодрый", "en": "energetic/perky", "phoneticUk": "badory", "phoneticRu": "bodryy", "category": "common-adj"},
-    {"uk": "голодний", "ru": "голодный", "en": "hungry", "phoneticUk": "holodnyi", "phoneticRu": "golodnyy", "category": "common-adj"},
-    {"uk": "ситий", "ru": "сытый", "en": "full (not hungry)", "phoneticUk": "sytyi", "phoneticRu": "sytyy", "category": "common-adj"},
-    {"uk": "спраглий", "ru": "жаждущий", "en": "thirsty", "phoneticUk": "sprahlyi", "phoneticRu": "zhazhduschiy", "category": "common-adj"},
-    {"uk": "хворий", "ru": "больной", "en": "sick/ill", "phoneticUk": "khvoryi", "phoneticRu": "bol'noy", "category": "common-adj"},
-    {"uk": "здоровий", "ru": "здоровый", "en": "healthy", "phoneticUk": "zdorovyi", "phoneticRu": "zdorovyy", "category": "common-adj"},
-    {"uk": "зайнятий", "ru": "занятый", "en": "busy/occupied", "phoneticUk": "zainyatyi", "phoneticRu": "zanyatyy", "category": "common-adj"},
-    {"uk": "вільний", "ru": "свободный", "en": "free (available)", "phoneticUk": "vilnyi", "phoneticRu": "svobodnyy", "category": "common-adj"},
-    {"uk": "готовий", "ru": "готовый", "en": "ready", "phoneticUk": "hotovyi", "phoneticRu": "gotovyy", "category": "common-adj"},
-    {"uk": "зацікавлений", "ru": "заинтересованный", "en": "interested", "phoneticUk": "zatsikavlenyi", "phoneticRu": "zainteresovannyy", "category": "common-adj"},
-    {"uk": "розгублений", "ru": "растерянный", "en": "confused/puzzled", "phoneticUk": "rozhublenyi", "phoneticRu": "rasteryannyy", "category": "common-adj"},
-    {"uk": "впевнений", "ru": "уверенный", "en": "confident/sure", "phoneticUk": "vpevnenyi", "phoneticRu": "uverennyy", "category": "common-adj"},
-    {"uk": "здивований", "ru": "удивлённый", "en": "surprised", "phoneticUk": "zdyvovanyi", "phoneticRu": "udivlyonnyy", "category": "common-adj"},
-    {"uk": "розчарований", "ru": "разочарованный", "en": "disappointed", "phoneticUk": "rozcharovanyi", "phoneticRu": "razocharovannyy", "category": "common-adj"},
-    {"uk": "задоволений", "ru": "довольный", "en": "pleased/satisfied", "phoneticUk": "zadovolenyi", "phoneticRu": "dovol'nyy", "category": "common-adj"},
-    {"uk": "стурбований", "ru": "обеспокоенный", "en": "worried/concerned", "phoneticUk": "sturbovanyi", "phoneticRu": "obespokoennyy", "category": "common-adj"},
-    {"uk": "наляканий", "ru": "испуганный", "en": "scared/frightened", "phoneticUk": "nalyakanyi", "phoneticRu": "ispugannyy", "category": "common-adj"},
-    {"uk": "схвильований", "ru": "взволнованный", "en": "excited/agitated", "phoneticUk": "skhvylovany", "phoneticRu": "vzvolnovannyy", "category": "common-adj"},
-    {"uk": "знехтувати", "ru": "пренебречь", "en": "to neglect/disregard", "phoneticUk": "znekhtuvaty", "phoneticRu": "prenebrech'", "category": "verbs-misc"},
-    {"uk": "цінувати", "ru": "ценить", "en": "to appreciate/value", "phoneticUk": "tsinuvaty", "phoneticRu": "tsenit'", "category": "verbs-misc"},
-    {"uk": "турбуватися", "ru": "беспокоиться", "en": "to worry/care", "phoneticUk": "turbuvatysya", "phoneticRu": "bespokoit'sya", "category": "verbs-misc"},
-    {"uk": "хвилюватися", "ru": "волноваться", "en": "to be anxious/worry", "phoneticUk": "khvylyuvatysya", "phoneticRu": "volnovat'sya", "category": "verbs-misc"},
-    {"uk": "радіти", "ru": "радоваться", "en": "to rejoice/be glad", "phoneticUk": "radity", "phoneticRu": "radovat'sya", "category": "verbs-misc"},
-    {"uk": "засмучуватися", "ru": "огорчаться", "en": "to be upset/saddened", "phoneticUk": "zasmuchuvatysya", "phoneticRu": "ogorchat'sya", "category": "verbs-misc"},
-    {"uk": "соромитися", "ru": "стыдиться", "en": "to be ashamed/shy", "phoneticUk": "soromytysya", "phoneticRu": "stydit'sya", "category": "verbs-misc"},
-    {"uk": "гордитися", "ru": "гордиться", "en": "to be proud", "phoneticUk": "hordytysya", "phoneticRu": "gordit'sya", "category": "verbs-misc"},
-    {"uk": "заздрити", "ru": "завидовать", "en": "to envy", "phoneticUk": "zazdryty", "phoneticRu": "zavidovat'", "category": "verbs-misc"},
-    {"uk": "мріяти", "ru": "мечтать", "en": "to daydream/wish", "phoneticUk": "mriyaty", "phoneticRu": "mechtat'", "category": "verbs-misc"},
-    {"uk": "сподіватися", "ru": "надеяться", "en": "to hope/expect", "phoneticUk": "spodivatysya", "phoneticRu": "nadeyat'sya", "category": "verbs-misc"},
-    {"uk": "боятися", "ru": "бояться", "en": "to be afraid", "phoneticUk": "boyatysya", "phoneticRu": "boyat'sya", "category": "verbs-misc"},
-    {"uk": "ризикувати", "ru": "рисковать", "en": "to risk", "phoneticUk": "ryzykuvaty", "phoneticRu": "riskovat'", "category": "verbs-misc"},
-    {"uk": "намагатися", "ru": "пытаться", "en": "to try/attempt", "phoneticUk": "namahatysya", "phoneticRu": "pytat'sya", "category": "verbs-misc"},
-    {"uk": "вдаватися", "ru": "удаваться", "en": "to succeed/manage", "phoneticUk": "vdavatysya", "phoneticRu": "udavat'sya", "category": "verbs-misc"},
-    {"uk": "провалитися", "ru": "провалиться", "en": "to fail", "phoneticUk": "provalytysya", "phoneticRu": "provalit'sya", "category": "verbs-misc"},
-    {"uk": "виправляти", "ru": "исправлять", "en": "to correct/fix", "phoneticUk": "vypravlyaty", "phoneticRu": "ispravlyat'", "category": "verbs-misc"},
-    {"uk": "помилятися", "ru": "ошибаться", "en": "to make a mistake", "phoneticUk": "pomylyatysya", "phoneticRu": "oshibat'sya", "category": "verbs-misc"},
-    {"uk": "перевіряти", "ru": "проверять", "en": "to check/verify", "phoneticUk": "pereviryaty", "phoneticRu": "proveryat'", "category": "verbs-misc"},
-    {"uk": "підтверджувати", "ru": "подтверждать", "en": "to confirm", "phoneticUk": "pidtverdzhuvaty", "phoneticRu": "podtverzhdat'", "category": "verbs-misc"},
-    {"uk": "скасовувати", "ru": "отменять", "en": "to cancel", "phoneticUk": "skasovuvaty", "phoneticRu": "otmenyat'", "category": "verbs-misc"},
-    {"uk": "переносити", "ru": "переносить", "en": "to reschedule/postpone", "phoneticUk": "perenosyty", "phoneticRu": "perenosit'", "category": "verbs-misc"},
-    {"uk": "планувати", "ru": "планировать", "en": "to plan", "phoneticUk": "planuvaty", "phoneticRu": "planirovat'", "category": "verbs-misc"},
-    {"uk": "організовувати", "ru": "организовывать", "en": "to organize", "phoneticUk": "orhanizovuvaty", "phoneticRu": "organizovyvat'", "category": "verbs-misc"},
-    {"uk": "керувати", "ru": "управлять", "en": "to manage/lead", "phoneticUk": "keruvaty", "phoneticRu": "upravlyat'", "category": "verbs-misc"},
-    {"uk": "контролювати", "ru": "контролировать", "en": "to control/monitor", "phoneticUk": "kontrolyuvaty", "phoneticRu": "kontrolirovat'", "category": "verbs-misc"},
-    {"uk": "створювати", "ru": "создавать", "en": "to create/build", "phoneticUk": "stvoryuvaty", "phoneticRu": "sozdavat'", "category": "verbs-misc"},
-    {"uk": "руйнувати", "ru": "разрушать", "en": "to destroy", "phoneticUk": "ruynuvaty", "phoneticRu": "razrushat'", "category": "verbs-misc"},
-    {"uk": "ремонтувати", "ru": "ремонтировать", "en": "to repair/fix", "phoneticUk": "remontuvaty", "phoneticRu": "remontirovat'", "category": "verbs-misc"},
-    {"uk": "встановлювати", "ru": "устанавливать", "en": "to install/establish", "phoneticUk": "vstanovlyuvaty", "phoneticRu": "ustanavlivat'", "category": "verbs-misc"},
-    {"uk": "видаляти", "ru": "удалять", "en": "to remove/delete", "phoneticUk": "vydalyaty", "phoneticRu": "udalyat'", "category": "verbs-misc"},
-    {"uk": "замінювати", "ru": "заменять", "en": "to replace", "phoneticUk": "zaminyuvaty", "phoneticRu": "zamenyat'", "category": "verbs-misc"},
-    {"uk": "вимірювати", "ru": "измерять", "en": "to measure", "phoneticUk": "vymiryuvaty", "phoneticRu": "izmeryat'", "category": "verbs-misc"},
-    {"uk": "рахувати", "ru": "считать", "en": "to count", "phoneticUk": "rakhuvaty", "phoneticRu": "schitat'", "category": "verbs-misc"},
-    {"uk": "обчислювати", "ru": "вычислять", "en": "to calculate", "phoneticUk": "obchyslyuvaty", "phoneticRu": "vychislyat'", "category": "verbs-misc"},
-    {"uk": "друкувати", "ru": "печатать", "en": "to print/type", "phoneticUk": "drukuvaty", "phoneticRu": "pechatat'", "category": "verbs-misc"},
-    {"uk": "копіювати", "ru": "копировать", "en": "to copy", "phoneticUk": "kopiyuvaty", "phoneticRu": "kopirovat'", "category": "verbs-misc"},
-    {"uk": "вставляти", "ru": "вставлять", "en": "to paste/insert", "phoneticUk": "vstavlyaty", "phoneticRu": "vstavlyat'", "category": "verbs-misc"},
-    {"uk": "фотографувати", "ru": "фотографировать", "en": "to photograph", "phoneticUk": "fotohrafuvaty", "phoneticRu": "fotografirovat'", "category": "verbs-misc"},
-    {"uk": "малювати", "ru": "рисовать", "en": "to draw/paint", "phoneticUk": "malyuvaty", "phoneticRu": "risovat'", "category": "verbs-misc"},
-    {"uk": "співати", "ru": "петь", "en": "to sing", "phoneticUk": "spivaty", "phoneticRu": "pet'", "category": "verbs-misc"},
-    {"uk": "грати", "ru": "играть", "en": "to play", "phoneticUk": "hraty", "phoneticRu": "igrat'", "category": "verbs-misc"},
-    {"uk": "танцювати", "ru": "танцевать", "en": "to dance", "phoneticUk": "tantsyuvaty", "phoneticRu": "tantsevat'", "category": "verbs-misc"},
-    {"uk": "футбол", "ru": "футбол", "en": "football/soccer", "phoneticUk": "futbol", "phoneticRu": "futbol", "category": "sports-hobbies"},
-    {"uk": "плавання", "ru": "плавание", "en": "swimming", "phoneticUk": "plavannya", "phoneticRu": "plavaniye", "category": "sports-hobbies"},
-    {"uk": "музика", "ru": "музыка", "en": "music", "phoneticUk": "muzyka", "phoneticRu": "muzyka", "category": "sports-hobbies"},
-    {"uk": "баскетбол", "ru": "баскетбол", "en": "basketball", "phoneticUk": "basketbol", "phoneticRu": "basketbol", "category": "sports-hobbies"},
-    {"uk": "теніс", "ru": "теннис", "en": "tennis", "phoneticUk": "tenis", "phoneticRu": "tennis", "category": "sports-hobbies"},
-    {"uk": "хокей", "ru": "хоккей", "en": "hockey", "phoneticUk": "khokei", "phoneticRu": "khokkei", "category": "sports-hobbies"},
-    {"uk": "біг", "ru": "бег", "en": "running", "phoneticUk": "bih", "phoneticRu": "beg", "category": "sports-hobbies"},
-    {"uk": "велосипед", "ru": "велосипед", "en": "bicycle", "phoneticUk": "velosyped", "phoneticRu": "velosiped", "category": "sports-hobbies"},
-    {"uk": "лижі", "ru": "лыжи", "en": "skis/skiing", "phoneticUk": "lyzhi", "phoneticRu": "lyzhi", "category": "sports-hobbies"},
-    {"uk": "ковзани", "ru": "коньки", "en": "ice skates", "phoneticUk": "kovzany", "phoneticRu": "kon'ki", "category": "sports-hobbies"},
-    {"uk": "тренування", "ru": "тренировка", "en": "training/workout", "phoneticUk": "trenuvannya", "phoneticRu": "trenirovka", "category": "sports-hobbies"},
-    {"uk": "тренер", "ru": "тренер", "en": "coach/trainer", "phoneticUk": "trener", "phoneticRu": "trener", "category": "sports-hobbies"},
-    {"uk": "стадіон", "ru": "стадион", "en": "stadium", "phoneticUk": "stadion", "phoneticRu": "stadion", "category": "sports-hobbies"},
-    {"uk": "команда", "ru": "команда", "en": "team", "phoneticUk": "komanda", "phoneticRu": "komanda", "category": "sports-hobbies"},
-    {"uk": "чемпіон", "ru": "чемпион", "en": "champion", "phoneticUk": "chempion", "phoneticRu": "chempion", "category": "sports-hobbies"},
-    {"uk": "змагання", "ru": "соревнование", "en": "competition", "phoneticUk": "zmahannya", "phoneticRu": "sorevnovaniye", "category": "sports-hobbies"},
-    {"uk": "перемога", "ru": "победа", "en": "victory", "phoneticUk": "peremoha", "phoneticRu": "pobeda", "category": "sports-hobbies"},
-    {"uk": "поразка", "ru": "поражение", "en": "defeat", "phoneticUk": "porazka", "phoneticRu": "porazheniye", "category": "sports-hobbies"},
-    {"uk": "м'яч", "ru": "мяч", "en": "ball", "phoneticUk": "myach", "phoneticRu": "myach", "category": "sports-hobbies"},
-    {"uk": "ворота", "ru": "ворота", "en": "goal (sports)", "phoneticUk": "vorota", "phoneticRu": "vorota", "category": "sports-hobbies"},
-    {"uk": "гол", "ru": "гол", "en": "goal (score)", "phoneticUk": "hol", "phoneticRu": "gol", "category": "sports-hobbies"},
-    {"uk": "суддя", "ru": "судья", "en": "referee", "phoneticUk": "suddya", "phoneticRu": "sud'ya", "category": "sports-hobbies"},
-    {"uk": "вболівальник", "ru": "болельщик", "en": "fan/supporter", "phoneticUk": "vbolivalny", "phoneticRu": "bolel'shchik", "category": "sports-hobbies"},
-    {"uk": "гітара", "ru": "гитара", "en": "guitar", "phoneticUk": "hitara", "phoneticRu": "gitara", "category": "sports-hobbies"},
-    {"uk": "піаніно", "ru": "пианино", "en": "piano", "phoneticUk": "pianino", "phoneticRu": "pianino", "category": "sports-hobbies"},
-    {"uk": "барабан", "ru": "барабан", "en": "drum", "phoneticUk": "baraban", "phoneticRu": "baraban", "category": "sports-hobbies"},
-    {"uk": "скрипка", "ru": "скрипка", "en": "violin", "phoneticUk": "skrypka", "phoneticRu": "skripka", "category": "sports-hobbies"},
-    {"uk": "малювання", "ru": "рисование", "en": "drawing/painting", "phoneticUk": "malyuvannya", "phoneticRu": "risovaniye", "category": "sports-hobbies"},
-    {"uk": "фотографія", "ru": "фотография", "en": "photography", "phoneticUk": "fotohrafiya", "phoneticRu": "fotografiya", "category": "sports-hobbies"},
-    {"uk": "шахи", "ru": "шахматы", "en": "chess", "phoneticUk": "shakhy", "phoneticRu": "shakhmaty", "category": "sports-hobbies"},
-    {"uk": "рибалка", "ru": "рыбалка", "en": "fishing", "phoneticUk": "rybalka", "phoneticRu": "rybalka", "category": "sports-hobbies"},
-    {"uk": "полювання", "ru": "охота", "en": "hunting", "phoneticUk": "polyuvannya", "phoneticRu": "okhota", "category": "sports-hobbies"},
-    {"uk": "садівництво", "ru": "садоводство", "en": "gardening", "phoneticUk": "sadivnytstvo", "phoneticRu": "sadovodstvo", "category": "sports-hobbies"},
-    {"uk": "в'язання", "ru": "вязание", "en": "knitting", "phoneticUk": "vyazannya", "phoneticRu": "vyazaniye", "category": "sports-hobbies"},
-    {"uk": "кулінарія", "ru": "кулинария", "en": "cooking (hobby)", "phoneticUk": "kulinariya", "phoneticRu": "kulinariya", "category": "sports-hobbies"},
-    {"uk": "подорож", "ru": "путешествие", "en": "traveling", "phoneticUk": "podorozh", "phoneticRu": "puteshestviye", "category": "sports-hobbies"},
-    {"uk": "кемпінг", "ru": "кемпинг", "en": "camping", "phoneticUk": "kempinh", "phoneticRu": "kemping", "category": "sports-hobbies"},
-    {"uk": "альпінізм", "ru": "альпинизм", "en": "mountaineering", "phoneticUk": "alpinizm", "phoneticRu": "alpinizm", "category": "sports-hobbies"},
-    {"uk": "йога", "ru": "йога", "en": "yoga", "phoneticUk": "yoha", "phoneticRu": "yoga", "category": "sports-hobbies"},
-    {"uk": "бокс", "ru": "бокс", "en": "boxing", "phoneticUk": "boks", "phoneticRu": "boks", "category": "sports-hobbies"},
-    {"uk": "боротьба", "ru": "борьба", "en": "wrestling", "phoneticUk": "borotba", "phoneticRu": "bor'ba", "category": "sports-hobbies"},
-    {"uk": "гімнастика", "ru": "гимнастика", "en": "gymnastics", "phoneticUk": "himnastyka", "phoneticRu": "gimnastika", "category": "sports-hobbies"},
-    {"uk": "волейбол", "ru": "волейбол", "en": "volleyball", "phoneticUk": "voleybol", "phoneticRu": "voleybol", "category": "sports-hobbies"},
-    {"uk": "гольф", "ru": "гольф", "en": "golf", "phoneticUk": "holf", "phoneticRu": "gol'f", "category": "sports-hobbies"},
-    {"uk": "медаль", "ru": "медаль", "en": "medal", "phoneticUk": "medal", "phoneticRu": "medal'", "category": "sports-hobbies"},
-    {"uk": "олімпіада", "ru": "олимпиада", "en": "Olympics", "phoneticUk": "olimpiada", "phoneticRu": "olimpiada", "category": "sports-hobbies"},
-    {"uk": "матч", "ru": "матч", "en": "match (sports)", "phoneticUk": "match", "phoneticRu": "match", "category": "sports-hobbies"},
-    {"uk": "рахунок", "ru": "счёт", "en": "score", "phoneticUk": "rakhunok", "phoneticRu": "shchyot", "category": "sports-hobbies"},
-    {"uk": "розминка", "ru": "разминка", "en": "warm-up", "phoneticUk": "rozmynka", "phoneticRu": "razminka", "category": "sports-hobbies"},
-    {"uk": "марафон", "ru": "марафон", "en": "marathon", "phoneticUk": "marafon", "phoneticRu": "marafon", "category": "sports-hobbies"}
+    {
+      "uk": "парусник",
+      "ru": "парусник",
+      "en": "sailboat",
+      "phoneticUk": "parusnyk",
+      "phoneticRu": "parusnik",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Парусник повільно пливе по морю."
+        ],
+        "ru": [
+          "Парусник плывёт по синему морю."
+        ],
+        "en": [
+          "The sailboat glides slowly across the sea."
+        ]
+      }
+    },
+    {
+      "uk": "катер",
+      "ru": "катер",
+      "en": "motorboat",
+      "phoneticUk": "kater",
+      "phoneticRu": "kater",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Катер швидко перетнув озеро."
+        ],
+        "ru": [
+          "Катер мчится по реке."
+        ],
+        "en": [
+          "The motorboat quickly crossed the lake."
+        ]
+      }
+    },
+    {
+      "uk": "яхта",
+      "ru": "яхта",
+      "en": "yacht",
+      "phoneticUk": "yakhta",
+      "phoneticRu": "yakhta",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Яхта стоїть у порту."
+        ],
+        "ru": [
+          "Яхта стоит в порту."
+        ],
+        "en": [
+          "The yacht is docked in the harbor."
+        ]
+      }
+    },
+    {
+      "uk": "пором",
+      "ru": "паром",
+      "en": "ferry",
+      "phoneticUk": "porom",
+      "phoneticRu": "parom",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Пором перевозить людей через річку."
+        ],
+        "ru": [
+          "Паром перевозит людей через реку."
+        ],
+        "en": [
+          "The ferry carries people across the river."
+        ]
+      }
+    },
+    {
+      "uk": "баржа",
+      "ru": "баржа",
+      "en": "barge",
+      "phoneticUk": "barzha",
+      "phoneticRu": "barzha",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Баржа везе вантаж по річці."
+        ],
+        "ru": [
+          "Баржа везёт груз по реке."
+        ],
+        "en": [
+          "The barge hauls cargo along the river."
+        ]
+      }
+    },
+    {
+      "uk": "каное",
+      "ru": "каноэ",
+      "en": "canoe",
+      "phoneticUk": "kanoe",
+      "phoneticRu": "kanoe",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Ми пливли на каное по річці."
+        ],
+        "ru": [
+          "Мы плыли на каноэ по реке."
+        ],
+        "en": [
+          "We paddled down the river in a canoe."
+        ]
+      }
+    },
+    {
+      "uk": "каяк",
+      "ru": "каяк",
+      "en": "kayak",
+      "phoneticUk": "kayak",
+      "phoneticRu": "kayak",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Він гребе на каяку дуже швидко."
+        ],
+        "ru": [
+          "Он гребёт на каяке очень быстро."
+        ],
+        "en": [
+          "He paddles his kayak very fast."
+        ]
+      }
+    },
+    {
+      "uk": "весло",
+      "ru": "весло",
+      "en": "oar/paddle",
+      "phoneticUk": "veslo",
+      "phoneticRu": "veslo",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Весло впало у воду."
+        ],
+        "ru": [
+          "Весло упало в воду."
+        ],
+        "en": [
+          "The oar fell into the water."
+        ]
+      }
+    },
+    {
+      "uk": "рятувальний жилет",
+      "ru": "спасательный жилет",
+      "en": "life jacket",
+      "phoneticUk": "ryatuvalny zhylet",
+      "phoneticRu": "spasatel'nyy zhilet",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Одягни рятувальний жилет перед поїздкою на човні."
+        ],
+        "ru": [
+          "Надень спасательный жилет перед поездкой на лодке."
+        ],
+        "en": [
+          "Put on a life jacket before going out on the boat."
+        ]
+      }
+    },
+    {
+      "uk": "гелікоптер",
+      "ru": "вертолёт",
+      "en": "helicopter",
+      "phoneticUk": "helikopter",
+      "phoneticRu": "vertolyot",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Гелікоптер летить над містом."
+        ],
+        "ru": [
+          "Вертолёт летит над городом."
+        ],
+        "en": [
+          "The helicopter is flying over the city."
+        ]
+      }
+    },
+    {
+      "uk": "планер",
+      "ru": "планер",
+      "en": "glider",
+      "phoneticUk": "planer",
+      "phoneticRu": "planer",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Планер безшумно летить у небі."
+        ],
+        "ru": [
+          "Планер бесшумно летит в небе."
+        ],
+        "en": [
+          "The glider flies silently through the sky."
+        ]
+      }
+    },
+    {
+      "uk": "парашут",
+      "ru": "парашют",
+      "en": "parachute",
+      "phoneticUk": "parashut",
+      "phoneticRu": "parashyut",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Парашут розкрився вчасно."
+        ],
+        "ru": [
+          "Парашют раскрылся вовремя."
+        ],
+        "en": [
+          "The parachute opened in time."
+        ]
+      }
+    },
+    {
+      "uk": "повітряна куля",
+      "ru": "воздушный шар",
+      "en": "hot air balloon",
+      "phoneticUk": "povitryana kulya",
+      "phoneticRu": "vozdushnyy shar",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Повітряна куля піднялась у небо."
+        ],
+        "ru": [
+          "Воздушный шар поднялся в небо."
+        ],
+        "en": [
+          "The hot air balloon rose into the sky."
+        ]
+      }
+    },
+    {
+      "uk": "дирижабль",
+      "ru": "дирижабль",
+      "en": "airship/blimp",
+      "phoneticUk": "dyryzhabl",
+      "phoneticRu": "dirizhabl'",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Дирижабль повільно летить над полем."
+        ],
+        "ru": [
+          "Дирижабль медленно летит над полем."
+        ],
+        "en": [
+          "The airship slowly drifts over the field."
+        ]
+      }
+    },
+    {
+      "uk": "трамвай",
+      "ru": "трамвай",
+      "en": "tram/streetcar",
+      "phoneticUk": "tramvay",
+      "phoneticRu": "tramvay",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Трамвай зупинився на перехресті."
+        ],
+        "ru": [
+          "Трамвай остановился на перекрёстке."
+        ],
+        "en": [
+          "The tram stopped at the intersection."
+        ]
+      }
+    },
+    {
+      "uk": "тролейбус",
+      "ru": "троллейбус",
+      "en": "trolleybus",
+      "phoneticUk": "troleybus",
+      "phoneticRu": "trolleybus",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Тролейбус іде по головній вулиці."
+        ],
+        "ru": [
+          "Троллейбус едет по главной улице."
+        ],
+        "en": [
+          "The trolleybus runs along the main street."
+        ]
+      }
+    },
+    {
+      "uk": "метро",
+      "ru": "метро",
+      "en": "subway/metro",
+      "phoneticUk": "metro",
+      "phoneticRu": "metro",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Метро працює до пізньої ночі."
+        ],
+        "ru": [
+          "Метро работает до позднего вечера."
+        ],
+        "en": [
+          "The subway runs until late at night."
+        ]
+      }
+    },
+    {
+      "uk": "електричка",
+      "ru": "электричка",
+      "en": "commuter train",
+      "phoneticUk": "elektrychka",
+      "phoneticRu": "elektrichka",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Електричка прибула на станцію вчасно."
+        ],
+        "ru": [
+          "Электричка прибыла на станцию вовремя."
+        ],
+        "en": [
+          "The commuter train arrived at the station on time."
+        ]
+      }
+    },
+    {
+      "uk": "вагон",
+      "ru": "вагон",
+      "en": "rail car/wagon",
+      "phoneticUk": "vahon",
+      "phoneticRu": "vagon",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Ми сіли у перший вагон поїзда."
+        ],
+        "ru": [
+          "Мы сели в первый вагон поезда."
+        ],
+        "en": [
+          "We got on the first car of the train."
+        ]
+      }
+    },
+    {
+      "uk": "локомотив",
+      "ru": "локомотив",
+      "en": "locomotive",
+      "phoneticUk": "lokomotyv",
+      "phoneticRu": "lokomotiv",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Локомотив тягне довгий потяг."
+        ],
+        "ru": [
+          "Локомотив тянет длинный состав."
+        ],
+        "en": [
+          "The locomotive pulls a long train."
+        ]
+      }
+    },
+    {
+      "uk": "платформа",
+      "ru": "платформа",
+      "en": "platform (train)",
+      "phoneticUk": "platforma",
+      "phoneticRu": "platforma",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Люди чекають на поїзд на платформі."
+        ],
+        "ru": [
+          "Люди ждут поезд на платформе."
+        ],
+        "en": [
+          "People are waiting for the train on the platform."
+        ]
+      }
+    },
+    {
+      "uk": "квиток",
+      "ru": "билет",
+      "en": "ticket",
+      "phoneticUk": "kvytok",
+      "phoneticRu": "bilet",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Я купив квиток на потяг."
+        ],
+        "ru": [
+          "Я купил билет на поезд."
+        ],
+        "en": [
+          "I bought a train ticket."
+        ]
+      }
+    },
+    {
+      "uk": "пасажир",
+      "ru": "пассажир",
+      "en": "passenger",
+      "phoneticUk": "pasazhyr",
+      "phoneticRu": "passazhir",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Пасажир забув сумку в автобусі."
+        ],
+        "ru": [
+          "Пассажир забыл сумку в автобусе."
+        ],
+        "en": [
+          "The passenger left their bag on the bus."
+        ]
+      }
+    },
+    {
+      "uk": "пілот",
+      "ru": "пилот",
+      "en": "pilot",
+      "phoneticUk": "pilot",
+      "phoneticRu": "pilot",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Пілот повідомив про погоду."
+        ],
+        "ru": [
+          "Пилот сообщил о погоде."
+        ],
+        "en": [
+          "The pilot gave an update on the weather."
+        ]
+      }
+    },
+    {
+      "uk": "стюардеса",
+      "ru": "стюардесса",
+      "en": "flight attendant",
+      "phoneticUk": "styuardesa",
+      "phoneticRu": "styuardessa",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Стюардеса принесла воду пасажирам."
+        ],
+        "ru": [
+          "Стюардесса принесла воду пассажирам."
+        ],
+        "en": [
+          "The flight attendant brought water to the passengers."
+        ]
+      }
+    },
+    {
+      "uk": "посадковий талон",
+      "ru": "посадочный талон",
+      "en": "boarding pass",
+      "phoneticUk": "posadkovyi talon",
+      "phoneticRu": "posadochnyy talon",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Покажіть посадковий талон на вході."
+        ],
+        "ru": [
+          "Покажите посадочный талон на входе."
+        ],
+        "en": [
+          "Please show your boarding pass at the entrance."
+        ]
+      }
+    },
+    {
+      "uk": "злітна смуга",
+      "ru": "взлётная полоса",
+      "en": "runway",
+      "phoneticUk": "zlitna smuga",
+      "phoneticRu": "vzlyotnaya polosa",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Літак розігнався по злітній смузі."
+        ],
+        "ru": [
+          "Самолёт разогнался по взлётной полосе."
+        ],
+        "en": [
+          "The plane accelerated down the runway."
+        ]
+      }
+    },
+    {
+      "uk": "турбулентність",
+      "ru": "турбулентность",
+      "en": "turbulence",
+      "phoneticUk": "turbulentnist",
+      "phoneticRu": "turbulentnost'",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Під час польоту була сильна турбулентність."
+        ],
+        "ru": [
+          "Во время полёта была сильная турбулентность."
+        ],
+        "en": [
+          "There was heavy turbulence during the flight."
+        ]
+      }
+    },
+    {
+      "uk": "гальмівний шлях",
+      "ru": "тормозной путь",
+      "en": "braking distance",
+      "phoneticUk": "halmivnyi shlyakh",
+      "phoneticRu": "tormoznoy put'",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Гальмівний шлях збільшується на мокрій дорозі."
+        ],
+        "ru": [
+          "Тормозной путь увеличивается на мокрой дороге."
+        ],
+        "en": [
+          "Braking distance increases on a wet road."
+        ]
+      }
+    },
+    {
+      "uk": "перон",
+      "ru": "перрон",
+      "en": "platform (station)",
+      "phoneticUk": "peron",
+      "phoneticRu": "perron",
+      "category": "transport",
+      "examples": {
+        "uk": [
+          "Поїзд прибув на перон номер два."
+        ],
+        "ru": [
+          "Поезд прибыл на перрон номер два."
+        ],
+        "en": [
+          "The train arrived at platform number two."
+        ]
+      }
+    },
+    {
+      "uk": "мурашник",
+      "ru": "муравейник",
+      "en": "anthill",
+      "phoneticUk": "murashnyk",
+      "phoneticRu": "muraveynik",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Діти знайшли великий мурашник у лісі."
+        ],
+        "ru": [
+          "Дети нашли большой муравейник в лесу."
+        ],
+        "en": [
+          "The children found a large anthill in the forest."
+        ]
+      }
+    },
+    {
+      "uk": "павутина",
+      "ru": "паутина",
+      "en": "spider web",
+      "phoneticUk": "pavutyna",
+      "phoneticRu": "pautina",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Павутина блищить на сонці."
+        ],
+        "ru": [
+          "Паутина блестит на солнце."
+        ],
+        "en": [
+          "The spider web glistens in the sunlight."
+        ]
+      }
+    },
+    {
+      "uk": "вулик",
+      "ru": "улей",
+      "en": "beehive",
+      "phoneticUk": "vulyk",
+      "phoneticRu": "uley",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Бджоли живуть у вулику."
+        ],
+        "ru": [
+          "Пчёлы живут в улье."
+        ],
+        "en": [
+          "Bees live in a beehive."
+        ]
+      }
+    },
+    {
+      "uk": "нора",
+      "ru": "нора",
+      "en": "burrow/den",
+      "phoneticUk": "nora",
+      "phoneticRu": "nora",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Лисиця сховалась у норі."
+        ],
+        "ru": [
+          "Лиса спряталась в норе."
+        ],
+        "en": [
+          "The fox hid in its burrow."
+        ]
+      }
+    },
+    {
+      "uk": "гніздо",
+      "ru": "гнездо",
+      "en": "nest",
+      "phoneticUk": "hnizdo",
+      "phoneticRu": "gnezdo",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Пташка звила гніздо на дереві."
+        ],
+        "ru": [
+          "Птица свила гнездо на дереве."
+        ],
+        "en": [
+          "The bird built a nest in a tree."
+        ]
+      }
+    },
+    {
+      "uk": "лігво",
+      "ru": "логово",
+      "en": "lair",
+      "phoneticUk": "lihvo",
+      "phoneticRu": "logovo",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Вовки повернулись до свого лігва."
+        ],
+        "ru": [
+          "Волки вернулись в своё логово."
+        ],
+        "en": [
+          "The wolves returned to their lair."
+        ]
+      }
+    },
+    {
+      "uk": "берлога",
+      "ru": "берлога",
+      "en": "bear den",
+      "phoneticUk": "berloha",
+      "phoneticRu": "berloga",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Ведмідь спить у берлозі взимку."
+        ],
+        "ru": [
+          "Медведь спит в берлоге зимой."
+        ],
+        "en": [
+          "The bear sleeps in its den during winter."
+        ]
+      }
+    },
+    {
+      "uk": "рогоз",
+      "ru": "рогоз",
+      "en": "cattail/reed",
+      "phoneticUk": "rohoz",
+      "phoneticRu": "rogoz",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Рогоз росте біля берега озера."
+        ],
+        "ru": [
+          "Рогоз растёт у берега озера."
+        ],
+        "en": [
+          "Cattails grow along the shore of the lake."
+        ]
+      }
+    },
+    {
+      "uk": "мох",
+      "ru": "мох",
+      "en": "moss",
+      "phoneticUk": "mokh",
+      "phoneticRu": "mokh",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Мох вкриває старе каміння."
+        ],
+        "ru": [
+          "Мох покрывает старые камни."
+        ],
+        "en": [
+          "Moss covers the old stones."
+        ]
+      }
+    },
+    {
+      "uk": "лишайник",
+      "ru": "лишайник",
+      "en": "lichen",
+      "phoneticUk": "lyshainyk",
+      "phoneticRu": "lishaynik",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Лишайник росте на корі дерева."
+        ],
+        "ru": [
+          "Лишайник растёт на коре дерева."
+        ],
+        "en": [
+          "Lichen grows on the bark of the tree."
+        ]
+      }
+    },
+    {
+      "uk": "папороть",
+      "ru": "папоротник",
+      "en": "fern",
+      "phoneticUk": "paporot",
+      "phoneticRu": "paporotnik",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Папороть росте у тіні лісу."
+        ],
+        "ru": [
+          "Папоротник растёт в тени леса."
+        ],
+        "en": [
+          "Ferns grow in the shade of the forest."
+        ]
+      }
+    },
+    {
+      "uk": "лоза",
+      "ru": "лоза",
+      "en": "vine",
+      "phoneticUk": "loza",
+      "phoneticRu": "loza",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Лоза обвиває старий паркан."
+        ],
+        "ru": [
+          "Лоза обвивает старый забор."
+        ],
+        "en": [
+          "The vine wraps around the old fence."
+        ]
+      }
+    },
+    {
+      "uk": "плющ",
+      "ru": "плющ",
+      "en": "ivy",
+      "phoneticUk": "plyushch",
+      "phoneticRu": "plyushch",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Плющ покриває стіну будинку."
+        ],
+        "ru": [
+          "Плющ покрывает стену дома."
+        ],
+        "en": [
+          "Ivy covers the wall of the house."
+        ]
+      }
+    },
+    {
+      "uk": "кактус",
+      "ru": "кактус",
+      "en": "cactus",
+      "phoneticUk": "kaktus",
+      "phoneticRu": "kaktus",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Кактус росте у пустелі."
+        ],
+        "ru": [
+          "Кактус растёт в пустыне."
+        ],
+        "en": [
+          "A cactus grows in the desert."
+        ]
+      }
+    },
+    {
+      "uk": "бамбук",
+      "ru": "бамбук",
+      "en": "bamboo",
+      "phoneticUk": "bambuk",
+      "phoneticRu": "bambuk",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Бамбук росте дуже швидко."
+        ],
+        "ru": [
+          "Бамбук растёт очень быстро."
+        ],
+        "en": [
+          "Bamboo grows very quickly."
+        ]
+      }
+    },
+    {
+      "uk": "пальма",
+      "ru": "пальма",
+      "en": "palm tree",
+      "phoneticUk": "palma",
+      "phoneticRu": "pal'ma",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Пальма росте на березі моря."
+        ],
+        "ru": [
+          "Пальма растёт на берегу моря."
+        ],
+        "en": [
+          "A palm tree grows on the seashore."
+        ]
+      }
+    },
+    {
+      "uk": "верба",
+      "ru": "ива",
+      "en": "willow",
+      "phoneticUk": "verba",
+      "phoneticRu": "iva",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Верба схилилась над річкою."
+        ],
+        "ru": [
+          "Ива склонилась над рекой."
+        ],
+        "en": [
+          "The willow bends over the river."
+        ]
+      }
+    },
+    {
+      "uk": "каштан",
+      "ru": "каштан",
+      "en": "chestnut tree",
+      "phoneticUk": "kashtan",
+      "phoneticRu": "kashtan",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Каштан цвіте навесні."
+        ],
+        "ru": [
+          "Каштан цветёт весной."
+        ],
+        "en": [
+          "The chestnut tree blossoms in spring."
+        ]
+      }
+    },
+    {
+      "uk": "клен",
+      "ru": "клён",
+      "en": "maple",
+      "phoneticUk": "klen",
+      "phoneticRu": "klyon",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Листя клена червоніє восени."
+        ],
+        "ru": [
+          "Листья клёна краснеют осенью."
+        ],
+        "en": [
+          "Maple leaves turn red in autumn."
+        ]
+      }
+    },
+    {
+      "uk": "ясен",
+      "ru": "ясень",
+      "en": "ash tree",
+      "phoneticUk": "yasen",
+      "phoneticRu": "yasen'",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Ясен росте біля школи."
+        ],
+        "ru": [
+          "Ясень растёт рядом со школой."
+        ],
+        "en": [
+          "An ash tree grows near the school."
+        ]
+      }
+    },
+    {
+      "uk": "бук",
+      "ru": "бук",
+      "en": "beech tree",
+      "phoneticUk": "buk",
+      "phoneticRu": "buk",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Бук — красиве листяне дерево."
+        ],
+        "ru": [
+          "Бук — красивое лиственное дерево."
+        ],
+        "en": [
+          "The beech is a beautiful deciduous tree."
+        ]
+      }
+    },
+    {
+      "uk": "в'яз",
+      "ru": "вяз",
+      "en": "elm tree",
+      "phoneticUk": "vyaz",
+      "phoneticRu": "vyaz",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "В'яз росте вздовж алеї парку."
+        ],
+        "ru": [
+          "Вяз растёт вдоль аллеи парка."
+        ],
+        "en": [
+          "Elm trees grow along the park path."
+        ]
+      }
+    },
+    {
+      "uk": "кедр",
+      "ru": "кедр",
+      "en": "cedar",
+      "phoneticUk": "kedr",
+      "phoneticRu": "kedr",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Кедр росте у горах."
+        ],
+        "ru": [
+          "Кедр растёт в горах."
+        ],
+        "en": [
+          "Cedar trees grow in the mountains."
+        ]
+      }
+    },
+    {
+      "uk": "кипарис",
+      "ru": "кипарис",
+      "en": "cypress",
+      "phoneticUk": "kyparys",
+      "phoneticRu": "kiparis",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Кипарис стоїть біля старої церкви."
+        ],
+        "ru": [
+          "Кипарис стоит рядом со старой церковью."
+        ],
+        "en": [
+          "A cypress tree stands beside the old church."
+        ]
+      }
+    },
+    {
+      "uk": "жолудь",
+      "ru": "жёлудь",
+      "en": "acorn",
+      "phoneticUk": "zholud",
+      "phoneticRu": "zholud'",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Білка знайшла жолудь під дубом."
+        ],
+        "ru": [
+          "Белка нашла жёлудь под дубом."
+        ],
+        "en": [
+          "The squirrel found an acorn under the oak tree."
+        ]
+      }
+    },
+    {
+      "uk": "шишка",
+      "ru": "шишка",
+      "en": "pinecone",
+      "phoneticUk": "shyshka",
+      "phoneticRu": "shishka",
+      "category": "nature",
+      "examples": {
+        "uk": [
+          "Шишка впала з ялини."
+        ],
+        "ru": [
+          "Шишка упала с ели."
+        ],
+        "en": [
+          "A pinecone fell from the spruce tree."
+        ]
+      }
+    },
+    {
+      "uk": "троянда",
+      "ru": "роза",
+      "en": "rose",
+      "phoneticUk": "troyanda",
+      "phoneticRu": "roza",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Троянда красиво цвіте влітку."
+        ],
+        "ru": [
+          "Роза красиво цветёт летом."
+        ],
+        "en": [
+          "The rose blooms beautifully in summer."
+        ]
+      }
+    },
+    {
+      "uk": "тюльпан",
+      "ru": "тюльпан",
+      "en": "tulip",
+      "phoneticUk": "tyulpan",
+      "phoneticRu": "tyul'pan",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Тюльпан розцвів ранньою весною."
+        ],
+        "ru": [
+          "Тюльпан расцвёл ранней весной."
+        ],
+        "en": [
+          "The tulip bloomed in early spring."
+        ]
+      }
+    },
+    {
+      "uk": "соняшник (квітка)",
+      "ru": "подсолнух (цветок)",
+      "en": "sunflower (flower)",
+      "phoneticUk": "sonyashnyk",
+      "phoneticRu": "podsolnukh",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Соняшник повертається до сонця."
+        ],
+        "ru": [
+          "Подсолнух поворачивается к солнцу."
+        ],
+        "en": [
+          "The sunflower turns toward the sun."
+        ]
+      }
+    },
+    {
+      "uk": "ромашка",
+      "ru": "ромашка",
+      "en": "daisy/chamomile",
+      "phoneticUk": "romashka",
+      "phoneticRu": "romashka",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Ромашка росте на лузі."
+        ],
+        "ru": [
+          "Ромашка растёт на лугу."
+        ],
+        "en": [
+          "The daisy grows in the meadow."
+        ]
+      }
+    },
+    {
+      "uk": "лілія",
+      "ru": "лилия",
+      "en": "lily",
+      "phoneticUk": "liliya",
+      "phoneticRu": "liliya",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Лілія пахне дуже ніжно."
+        ],
+        "ru": [
+          "Лилия пахнет очень нежно."
+        ],
+        "en": [
+          "The lily smells very delicate."
+        ]
+      }
+    },
+    {
+      "uk": "орхідея",
+      "ru": "орхидея",
+      "en": "orchid",
+      "phoneticUk": "orkhideya",
+      "phoneticRu": "orkhideya",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Орхідея стоїть на підвіконні."
+        ],
+        "ru": [
+          "Орхидея стоит на подоконнике."
+        ],
+        "en": [
+          "The orchid sits on the windowsill."
+        ]
+      }
+    },
+    {
+      "uk": "гвоздика",
+      "ru": "гвоздика",
+      "en": "carnation",
+      "phoneticUk": "hvozdyka",
+      "phoneticRu": "gvozdika",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Гвоздика — символ пам'яті."
+        ],
+        "ru": [
+          "Гвоздика — символ памяти."
+        ],
+        "en": [
+          "The carnation is a symbol of remembrance."
+        ]
+      }
+    },
+    {
+      "uk": "фіалка",
+      "ru": "фиалка",
+      "en": "violet",
+      "phoneticUk": "fialka",
+      "phoneticRu": "fialka",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Фіалка росте у тіні."
+        ],
+        "ru": [
+          "Фиалка растёт в тени."
+        ],
+        "en": [
+          "The violet grows in the shade."
+        ]
+      }
+    },
+    {
+      "uk": "конвалія",
+      "ru": "ландыш",
+      "en": "lily of the valley",
+      "phoneticUk": "konvaliya",
+      "phoneticRu": "landysh",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Конвалія цвіте навесні у лісі."
+        ],
+        "ru": [
+          "Ландыш цветёт весной в лесу."
+        ],
+        "en": [
+          "Lily of the valley blooms in spring in the forest."
+        ]
+      }
+    },
+    {
+      "uk": "нарцис",
+      "ru": "нарцисс",
+      "en": "daffodil/narcissus",
+      "phoneticUk": "nartsys",
+      "phoneticRu": "nartsiss",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Нарцис розцвів першим навесні."
+        ],
+        "ru": [
+          "Нарцисс расцвёл первым весной."
+        ],
+        "en": [
+          "The daffodil was the first to bloom in spring."
+        ]
+      }
+    },
+    {
+      "uk": "жасмин",
+      "ru": "жасмин",
+      "en": "jasmine",
+      "phoneticUk": "zhasmyn",
+      "phoneticRu": "zhasmin",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Жасмин приємно пахне ввечері."
+        ],
+        "ru": [
+          "Жасмин приятно пахнет вечером."
+        ],
+        "en": [
+          "Jasmine smells lovely in the evening."
+        ]
+      }
+    },
+    {
+      "uk": "лаванда",
+      "ru": "лаванда",
+      "en": "lavender",
+      "phoneticUk": "lavanda",
+      "phoneticRu": "lavanda",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Лаванда росте на півдні Франції."
+        ],
+        "ru": [
+          "Лаванда растёт на юге Франции."
+        ],
+        "en": [
+          "Lavender grows in the south of France."
+        ]
+      }
+    },
+    {
+      "uk": "півонія",
+      "ru": "пион",
+      "en": "peony",
+      "phoneticUk": "pivoniya",
+      "phoneticRu": "pion",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Півонія має великі рожеві квіти."
+        ],
+        "ru": [
+          "Пион имеет большие розовые цветы."
+        ],
+        "en": [
+          "The peony has large pink flowers."
+        ]
+      }
+    },
+    {
+      "uk": "хризантема",
+      "ru": "хризантема",
+      "en": "chrysanthemum",
+      "phoneticUk": "khryzantema",
+      "phoneticRu": "khrizantema",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Хризантема цвіте восени."
+        ],
+        "ru": [
+          "Хризантема цветёт осенью."
+        ],
+        "en": [
+          "The chrysanthemum blooms in autumn."
+        ]
+      }
+    },
+    {
+      "uk": "бузок",
+      "ru": "сирень",
+      "en": "lilac",
+      "phoneticUk": "buzok",
+      "phoneticRu": "siren'",
+      "category": "flowers",
+      "examples": {
+        "uk": [
+          "Бузок пахне дуже гарно навесні."
+        ],
+        "ru": [
+          "Сирень очень приятно пахнет весной."
+        ],
+        "en": [
+          "Lilac smells wonderful in spring."
+        ]
+      }
+    },
+    {
+      "uk": "волонтер",
+      "ru": "волонтёр",
+      "en": "volunteer",
+      "phoneticUk": "volonter",
+      "phoneticRu": "volontyor",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Волонтер допоміг людям після повені."
+        ],
+        "ru": [
+          "Волонтёр помог людям после наводнения."
+        ],
+        "en": [
+          "The volunteer helped people after the flood."
+        ]
+      }
+    },
+    {
+      "uk": "благодійність",
+      "ru": "благотворительность",
+      "en": "charity",
+      "phoneticUk": "blahodiynist",
+      "phoneticRu": "blagotvoritel'nost'",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Благодійність допомагає тим, хто в біді."
+        ],
+        "ru": [
+          "Благотворительность помогает тем, кто в беде."
+        ],
+        "en": [
+          "Charity helps those who are in need."
+        ]
+      }
+    },
+    {
+      "uk": "громада",
+      "ru": "община",
+      "en": "community",
+      "phoneticUk": "hromada",
+      "phoneticRu": "obshchina",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Наша громада побудувала новий парк."
+        ],
+        "ru": [
+          "Наша община построила новый парк."
+        ],
+        "en": [
+          "Our community built a new park."
+        ]
+      }
+    },
+    {
+      "uk": "суспільство",
+      "ru": "общество",
+      "en": "society",
+      "phoneticUk": "suspilstvo",
+      "phoneticRu": "obshchestvo",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Суспільство повинно піклуватись про людей."
+        ],
+        "ru": [
+          "Общество должно заботиться о людях."
+        ],
+        "en": [
+          "Society must take care of people."
+        ]
+      }
+    },
+    {
+      "uk": "громадянин",
+      "ru": "гражданин",
+      "en": "citizen",
+      "phoneticUk": "hromadyanyn",
+      "phoneticRu": "grazhdanin",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Кожен громадянин має свої права."
+        ],
+        "ru": [
+          "Каждый гражданин имеет свои права."
+        ],
+        "en": [
+          "Every citizen has their own rights."
+        ]
+      }
+    },
+    {
+      "uk": "мешканець",
+      "ru": "житель",
+      "en": "resident/inhabitant",
+      "phoneticUk": "meshkanets",
+      "phoneticRu": "zhitel'",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Мешканець міста звернувся до мера."
+        ],
+        "ru": [
+          "Житель города обратился к мэру."
+        ],
+        "en": [
+          "A city resident reached out to the mayor."
+        ]
+      }
+    },
+    {
+      "uk": "населення",
+      "ru": "население",
+      "en": "population",
+      "phoneticUk": "naselennya",
+      "phoneticRu": "naseleniye",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Населення міста зростає щороку."
+        ],
+        "ru": [
+          "Население города растёт каждый год."
+        ],
+        "en": [
+          "The city's population grows every year."
+        ]
+      }
+    },
+    {
+      "uk": "переписна",
+      "ru": "перепись",
+      "en": "census",
+      "phoneticUk": "perepysna",
+      "phoneticRu": "perepis'",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Переписна проводиться раз на десять років."
+        ],
+        "ru": [
+          "Перепись проводится раз в десять лет."
+        ],
+        "en": [
+          "The census is conducted once every ten years."
+        ]
+      }
+    },
+    {
+      "uk": "імміграція",
+      "ru": "иммиграция",
+      "en": "immigration",
+      "phoneticUk": "immihratsia",
+      "phoneticRu": "immigratsiya",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Імміграція впливає на культуру країни."
+        ],
+        "ru": [
+          "Иммиграция влияет на культуру страны."
+        ],
+        "en": [
+          "Immigration affects a country's culture."
+        ]
+      }
+    },
+    {
+      "uk": "еміграція",
+      "ru": "эмиграция",
+      "en": "emigration",
+      "phoneticUk": "emihratsia",
+      "phoneticRu": "emigratsiya",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Еміграція зросла під час кризи."
+        ],
+        "ru": [
+          "Эмиграция выросла во время кризиса."
+        ],
+        "en": [
+          "Emigration increased during the crisis."
+        ]
+      }
+    },
+    {
+      "uk": "біженець",
+      "ru": "беженец",
+      "en": "refugee",
+      "phoneticUk": "bizhenets",
+      "phoneticRu": "bezhenets",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Біженець отримав допомогу від уряду."
+        ],
+        "ru": [
+          "Беженец получил помощь от правительства."
+        ],
+        "en": [
+          "The refugee received assistance from the government."
+        ]
+      }
+    },
+    {
+      "uk": "притулок",
+      "ru": "убежище",
+      "en": "asylum/shelter",
+      "phoneticUk": "prytulok",
+      "phoneticRu": "ubezhishche",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Вони знайшли притулок у сусідній країні."
+        ],
+        "ru": [
+          "Они нашли убежище в соседней стране."
+        ],
+        "en": [
+          "They found asylum in a neighboring country."
+        ]
+      }
+    },
+    {
+      "uk": "паспорт",
+      "ru": "паспорт",
+      "en": "passport",
+      "phoneticUk": "pasport",
+      "phoneticRu": "pasport",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Паспорт потрібен для перетину кордону."
+        ],
+        "ru": [
+          "Паспорт нужен для пересечения границы."
+        ],
+        "en": [
+          "A passport is required to cross the border."
+        ]
+      }
+    },
+    {
+      "uk": "віза",
+      "ru": "виза",
+      "en": "visa",
+      "phoneticUk": "viza",
+      "phoneticRu": "viza",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Він отримав візу до Канади."
+        ],
+        "ru": [
+          "Он получил визу в Канаду."
+        ],
+        "en": [
+          "He got a visa to Canada."
+        ]
+      }
+    },
+    {
+      "uk": "громадянство",
+      "ru": "гражданство",
+      "en": "citizenship",
+      "phoneticUk": "hromadyanstvo",
+      "phoneticRu": "grazhdanstvo",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Вона отримала громадянство через рік."
+        ],
+        "ru": [
+          "Она получила гражданство через год."
+        ],
+        "en": [
+          "She received citizenship after a year."
+        ]
+      }
+    },
+    {
+      "uk": "посвідчення",
+      "ru": "удостоверение",
+      "en": "ID card/identification",
+      "phoneticUk": "posvidchennya",
+      "phoneticRu": "udostovereniye",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Покажіть ваше посвідчення, будь ласка."
+        ],
+        "ru": [
+          "Покажите ваше удостоверение, пожалуйста."
+        ],
+        "en": [
+          "Please show your ID."
+        ]
+      }
+    },
+    {
+      "uk": "свідоцтво",
+      "ru": "свидетельство",
+      "en": "certificate",
+      "phoneticUk": "svidotstvo",
+      "phoneticRu": "svidetel'stvo",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Свідоцтво про народження є важливим документом."
+        ],
+        "ru": [
+          "Свидетельство о рождении — важный документ."
+        ],
+        "en": [
+          "A birth certificate is an important document."
+        ]
+      }
+    },
+    {
+      "uk": "ліцензія",
+      "ru": "лицензия",
+      "en": "license",
+      "phoneticUk": "litsenziya",
+      "phoneticRu": "litsenziya",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Водій показав свою ліцензію поліцейському."
+        ],
+        "ru": [
+          "Водитель показал свою лицензию полицейскому."
+        ],
+        "en": [
+          "The driver showed his license to the police officer."
+        ]
+      }
+    },
+    {
+      "uk": "дозвіл",
+      "ru": "разрешение",
+      "en": "permit/permission",
+      "phoneticUk": "dozvil",
+      "phoneticRu": "razresheniye",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Він отримав дозвіл на будівництво."
+        ],
+        "ru": [
+          "Он получил разрешение на строительство."
+        ],
+        "en": [
+          "He got a building permit."
+        ]
+      }
+    },
+    {
+      "uk": "петиція",
+      "ru": "петиция",
+      "en": "petition",
+      "phoneticUk": "petytsiya",
+      "phoneticRu": "petitsiya",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Мешканці підписали петицію проти забудови."
+        ],
+        "ru": [
+          "Жители подписали петицию против застройки."
+        ],
+        "en": [
+          "Residents signed a petition against the development."
+        ]
+      }
+    },
+    {
+      "uk": "мітинг",
+      "ru": "митинг",
+      "en": "rally/protest",
+      "phoneticUk": "mitynh",
+      "phoneticRu": "miting",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Мітинг зібрав тисячі людей у центрі."
+        ],
+        "ru": [
+          "Митинг собрал тысячи людей в центре."
+        ],
+        "en": [
+          "The rally drew thousands of people to the city center."
+        ]
+      }
+    },
+    {
+      "uk": "демонстрація",
+      "ru": "демонстрация",
+      "en": "demonstration/march",
+      "phoneticUk": "demonstratsiya",
+      "phoneticRu": "demonstratsiya",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Демонстрація пройшла мирно вулицями міста."
+        ],
+        "ru": [
+          "Демонстрация прошла мирно по улицам города."
+        ],
+        "en": [
+          "The demonstration marched peacefully through the city streets."
+        ]
+      }
+    },
+    {
+      "uk": "страйк",
+      "ru": "забастовка",
+      "en": "strike",
+      "phoneticUk": "strayk",
+      "phoneticRu": "zabastovka",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Страйк тривав кілька днів."
+        ],
+        "ru": [
+          "Забастовка длилась несколько дней."
+        ],
+        "en": [
+          "The strike lasted several days."
+        ]
+      }
+    },
+    {
+      "uk": "профспілка",
+      "ru": "профсоюз",
+      "en": "trade union",
+      "phoneticUk": "profspilka",
+      "phoneticRu": "profsoyuz",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Профспілка захищає права працівників."
+        ],
+        "ru": [
+          "Профсоюз защищает права работников."
+        ],
+        "en": [
+          "The trade union protects workers' rights."
+        ]
+      }
+    },
+    {
+      "uk": "обов'язок",
+      "ru": "обязанность",
+      "en": "duty/obligation",
+      "phoneticUk": "obovyazok",
+      "phoneticRu": "obyazannost'",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Кожен має свій обов'язок перед суспільством."
+        ],
+        "ru": [
+          "У каждого есть своя обязанность перед обществом."
+        ],
+        "en": [
+          "Everyone has a duty to society."
+        ]
+      }
+    },
+    {
+      "uk": "право",
+      "ru": "право",
+      "en": "right (legal)",
+      "phoneticUk": "pravo",
+      "phoneticRu": "pravo",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Кожна людина має право на освіту."
+        ],
+        "ru": [
+          "Каждый человек имеет право на образование."
+        ],
+        "en": [
+          "Every person has the right to education."
+        ]
+      }
+    },
+    {
+      "uk": "відповідальність",
+      "ru": "ответственность",
+      "en": "responsibility",
+      "phoneticUk": "vidpovidalnist",
+      "phoneticRu": "otvetstvennost'",
+      "category": "society",
+      "examples": {
+        "uk": [
+          "Відповідальність за дітей лежить на батьках."
+        ],
+        "ru": [
+          "Ответственность за детей лежит на родителях."
+        ],
+        "en": [
+          "The responsibility for children lies with the parents."
+        ]
+      }
+    },
+    {
+      "uk": "чесний",
+      "ru": "честный",
+      "en": "honest",
+      "phoneticUk": "chesnyi",
+      "phoneticRu": "chestnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Він завжди чесний із друзями."
+        ],
+        "ru": [
+          "Он всегда честный с друзьями."
+        ],
+        "en": [
+          "He is always honest with his friends."
+        ]
+      }
+    },
+    {
+      "uk": "брехливий",
+      "ru": "лживый",
+      "en": "dishonest/lying",
+      "phoneticUk": "brekhyvyi",
+      "phoneticRu": "lzhivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Ніхто не довіряє брехливій людині."
+        ],
+        "ru": [
+          "Никто не доверяет лживому человеку."
+        ],
+        "en": [
+          "Nobody trusts a dishonest person."
+        ]
+      }
+    },
+    {
+      "uk": "щедрий",
+      "ru": "щедрый",
+      "en": "generous",
+      "phoneticUk": "shchedryi",
+      "phoneticRu": "shchedryy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Щедрий сусід поділився їжею з нами."
+        ],
+        "ru": [
+          "Щедрый сосед поделился едой с нами."
+        ],
+        "en": [
+          "The generous neighbor shared food with us."
+        ]
+      }
+    },
+    {
+      "uk": "скупий",
+      "ru": "скупой",
+      "en": "stingy/greedy",
+      "phoneticUk": "skupyi",
+      "phoneticRu": "skupoy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Скупий чоловік не хотів ділитись."
+        ],
+        "ru": [
+          "Скупой человек не хотел делиться."
+        ],
+        "en": [
+          "The stingy man didn't want to share."
+        ]
+      }
+    },
+    {
+      "uk": "ввічливий",
+      "ru": "вежливый",
+      "en": "polite",
+      "phoneticUk": "vvichlyvyi",
+      "phoneticRu": "vezhlivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Ввічливий хлопець поступився місцем."
+        ],
+        "ru": [
+          "Вежливый мальчик уступил место."
+        ],
+        "en": [
+          "The polite boy gave up his seat."
+        ]
+      }
+    },
+    {
+      "uk": "грубий",
+      "ru": "грубый",
+      "en": "rude/rough",
+      "phoneticUk": "hrubyi",
+      "phoneticRu": "grubyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Грубий коментар образив усіх."
+        ],
+        "ru": [
+          "Грубый комментарий обидел всех."
+        ],
+        "en": [
+          "The rude comment offended everyone."
+        ]
+      }
+    },
+    {
+      "uk": "терплячий",
+      "ru": "терпеливый",
+      "en": "patient",
+      "phoneticUk": "terplyachyi",
+      "phoneticRu": "terpelivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Терплячий вчитель пояснив ще раз."
+        ],
+        "ru": [
+          "Терпеливый учитель объяснил ещё раз."
+        ],
+        "en": [
+          "The patient teacher explained it again."
+        ]
+      }
+    },
+    {
+      "uk": "нетерплячий",
+      "ru": "нетерпеливый",
+      "en": "impatient",
+      "phoneticUk": "neterplyachyi",
+      "phoneticRu": "neterpelivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Нетерплячий водій сигналив увесь час."
+        ],
+        "ru": [
+          "Нетерпеливый водитель сигналил всё время."
+        ],
+        "en": [
+          "The impatient driver was honking the whole time."
+        ]
+      }
+    },
+    {
+      "uk": "скромний",
+      "ru": "скромный",
+      "en": "modest/humble",
+      "phoneticUk": "skromnyi",
+      "phoneticRu": "skromnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Скромний хлопець не хвалився перемогою."
+        ],
+        "ru": [
+          "Скромный парень не хвалился победой."
+        ],
+        "en": [
+          "The modest boy didn't brag about his win."
+        ]
+      }
+    },
+    {
+      "uk": "зарозумілий",
+      "ru": "высокомерный",
+      "en": "arrogant",
+      "phoneticUk": "zarozumilyi",
+      "phoneticRu": "vysokomernyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Зарозумілий колега ні з ким не вітався."
+        ],
+        "ru": [
+          "Высокомерный коллега ни с кем не здоровался."
+        ],
+        "en": [
+          "The arrogant colleague never greeted anyone."
+        ]
+      }
+    },
+    {
+      "uk": "відважний",
+      "ru": "храбрый",
+      "en": "brave/courageous",
+      "phoneticUk": "vidvazhnyi",
+      "phoneticRu": "khrabryy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Відважний солдат врятував товариша."
+        ],
+        "ru": [
+          "Храбрый солдат спас товарища."
+        ],
+        "en": [
+          "The brave soldier saved his comrade."
+        ]
+      }
+    },
+    {
+      "uk": "боягузливий",
+      "ru": "трусливый",
+      "en": "cowardly",
+      "phoneticUk": "boyahuzlyvyi",
+      "phoneticRu": "truslivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Боягузливий хлопець злякався гучного звуку."
+        ],
+        "ru": [
+          "Трусливый мальчик испугался громкого звука."
+        ],
+        "en": [
+          "The cowardly boy was frightened by a loud noise."
+        ]
+      }
+    },
+    {
+      "uk": "наполегливий",
+      "ru": "настойчивый",
+      "en": "persistent/determined",
+      "phoneticUk": "napolehlyvyi",
+      "phoneticRu": "nastoychivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Наполегливий студент досяг своєї мети."
+        ],
+        "ru": [
+          "Настойчивый студент достиг своей цели."
+        ],
+        "en": [
+          "The determined student achieved his goal."
+        ]
+      }
+    },
+    {
+      "uk": "лінивий",
+      "ru": "ленивый",
+      "en": "lazy",
+      "phoneticUk": "linyvyi",
+      "phoneticRu": "lenivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Лінивий учень не зробив домашнє завдання."
+        ],
+        "ru": [
+          "Ленивый ученик не сделал домашнее задание."
+        ],
+        "en": [
+          "The lazy student didn't do the homework."
+        ]
+      }
+    },
+    {
+      "uk": "працьовитий",
+      "ru": "трудолюбивый",
+      "en": "hardworking",
+      "phoneticUk": "pratsovytyi",
+      "phoneticRu": "trudolyubivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Працьовитий фермер рано встає щодня."
+        ],
+        "ru": [
+          "Трудолюбивый фермер рано встаёт каждый день."
+        ],
+        "en": [
+          "The hardworking farmer gets up early every day."
+        ]
+      }
+    },
+    {
+      "uk": "надійний",
+      "ru": "надёжный",
+      "en": "reliable",
+      "phoneticUk": "nadiynyi",
+      "phoneticRu": "nadyozhnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Надійний друг завжди допоможе."
+        ],
+        "ru": [
+          "Надёжный друг всегда поможет."
+        ],
+        "en": [
+          "A reliable friend will always help."
+        ]
+      }
+    },
+    {
+      "uk": "відданий",
+      "ru": "преданный",
+      "en": "devoted/loyal",
+      "phoneticUk": "viddanyi",
+      "phoneticRu": "predannyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Відданий пес чекав господаря щодня."
+        ],
+        "ru": [
+          "Преданный пёс ждал хозяина каждый день."
+        ],
+        "en": [
+          "The loyal dog waited for its owner every day."
+        ]
+      }
+    },
+    {
+      "uk": "підступний",
+      "ru": "коварный",
+      "en": "treacherous/cunning",
+      "phoneticUk": "pidstupnyi",
+      "phoneticRu": "kovarnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Підступний план ворога був розкритий."
+        ],
+        "ru": [
+          "Коварный план врага был раскрыт."
+        ],
+        "en": [
+          "The enemy's treacherous plan was uncovered."
+        ]
+      }
+    },
+    {
+      "uk": "мудрий",
+      "ru": "мудрый",
+      "en": "wise",
+      "phoneticUk": "mudryi",
+      "phoneticRu": "mudryy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Мудрий дідусь дав гарну пораду."
+        ],
+        "ru": [
+          "Мудрый дедушка дал хороший совет."
+        ],
+        "en": [
+          "The wise grandfather gave good advice."
+        ]
+      }
+    },
+    {
+      "uk": "дурний",
+      "ru": "глупый",
+      "en": "foolish/silly",
+      "phoneticUk": "durnyi",
+      "phoneticRu": "glupyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Це була дурна помилка."
+        ],
+        "ru": [
+          "Это была глупая ошибка."
+        ],
+        "en": [
+          "That was a foolish mistake."
+        ]
+      }
+    },
+    {
+      "uk": "допитливий",
+      "ru": "любопытный",
+      "en": "curious/inquisitive",
+      "phoneticUk": "dopytlyvyi",
+      "phoneticRu": "lyubopytnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Допитлива дитина ставила багато запитань."
+        ],
+        "ru": [
+          "Любопытный ребёнок задавал много вопросов."
+        ],
+        "en": [
+          "The curious child asked many questions."
+        ]
+      }
+    },
+    {
+      "uk": "байдужий",
+      "ru": "равнодушный",
+      "en": "indifferent/apathetic",
+      "phoneticUk": "bayduzhyi",
+      "phoneticRu": "ravnodushnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Байдужий перехожий не звернув уваги."
+        ],
+        "ru": [
+          "Равнодушный прохожий не обратил внимания."
+        ],
+        "en": [
+          "The indifferent passerby paid no attention."
+        ]
+      }
+    },
+    {
+      "uk": "вразливий",
+      "ru": "уязвимый",
+      "en": "vulnerable/sensitive",
+      "phoneticUk": "vrazlyvyi",
+      "phoneticRu": "uyazvimyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Вразлива дитина легко засмучується."
+        ],
+        "ru": [
+          "Уязвимый ребёнок легко расстраивается."
+        ],
+        "en": [
+          "A sensitive child gets upset easily."
+        ]
+      }
+    },
+    {
+      "uk": "стійкий",
+      "ru": "устойчивый",
+      "en": "resilient/stable",
+      "phoneticUk": "stiykyi",
+      "phoneticRu": "ustoychivyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Стійкий характер допомагає в складних ситуаціях."
+        ],
+        "ru": [
+          "Устойчивый характер помогает в сложных ситуациях."
+        ],
+        "en": [
+          "A resilient character helps in difficult situations."
+        ]
+      }
+    },
+    {
+      "uk": "гнучкий",
+      "ru": "гибкий",
+      "en": "flexible",
+      "phoneticUk": "hnuchkyi",
+      "phoneticRu": "gibkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Гнучкий графік зручний для батьків."
+        ],
+        "ru": [
+          "Гибкий график удобен для родителей."
+        ],
+        "en": [
+          "A flexible schedule is convenient for parents."
+        ]
+      }
+    },
+    {
+      "uk": "жорсткий",
+      "ru": "жёсткий",
+      "en": "rigid/stiff",
+      "phoneticUk": "zhorstkyi",
+      "phoneticRu": "zhyostkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Жорсткий матрац не дав спати."
+        ],
+        "ru": [
+          "Жёсткий матрас не дал поспать."
+        ],
+        "en": [
+          "The stiff mattress made it impossible to sleep."
+        ]
+      }
+    },
+    {
+      "uk": "гладкий",
+      "ru": "гладкий",
+      "en": "smooth",
+      "phoneticUk": "hladkyi",
+      "phoneticRu": "gladkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Гладкий камінь лежав біля річки."
+        ],
+        "ru": [
+          "Гладкий камень лежал у реки."
+        ],
+        "en": [
+          "A smooth stone lay by the river."
+        ]
+      }
+    },
+    {
+      "uk": "шорсткий",
+      "ru": "шершавый",
+      "en": "rough/coarse",
+      "phoneticUk": "shorstkyi",
+      "phoneticRu": "shershavyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Шорсткий матеріал дряпав шкіру."
+        ],
+        "ru": [
+          "Шершавый материал царапал кожу."
+        ],
+        "en": [
+          "The rough material scratched the skin."
+        ]
+      }
+    },
+    {
+      "uk": "пухкий",
+      "ru": "пушистый",
+      "en": "fluffy/soft",
+      "phoneticUk": "pukhkyi",
+      "phoneticRu": "pushistyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Пухкий кіт спав на дивані."
+        ],
+        "ru": [
+          "Пушистый кот спал на диване."
+        ],
+        "en": [
+          "The fluffy cat slept on the couch."
+        ]
+      }
+    },
+    {
+      "uk": "крихкий",
+      "ru": "хрупкий",
+      "en": "fragile/brittle",
+      "phoneticUk": "krykhkyi",
+      "phoneticRu": "khrupkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Крихкий посуд треба зберігати обережно."
+        ],
+        "ru": [
+          "Хрупкую посуду нужно хранить осторожно."
+        ],
+        "en": [
+          "Fragile dishes must be stored carefully."
+        ]
+      }
+    },
+    {
+      "uk": "міцний",
+      "ru": "крепкий",
+      "en": "strong/sturdy",
+      "phoneticUk": "mitsnyi",
+      "phoneticRu": "krepkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Міцний мотузок витримав велику вагу."
+        ],
+        "ru": [
+          "Крепкая верёвка выдержала большой вес."
+        ],
+        "en": [
+          "The sturdy rope held a great weight."
+        ]
+      }
+    },
+    {
+      "uk": "слизький",
+      "ru": "скользкий",
+      "en": "slippery",
+      "phoneticUk": "slyz'kyi",
+      "phoneticRu": "skol'zkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Слизький лід небезпечний для пішоходів."
+        ],
+        "ru": [
+          "Скользкий лёд опасен для пешеходов."
+        ],
+        "en": [
+          "Slippery ice is dangerous for pedestrians."
+        ]
+      }
+    },
+    {
+      "uk": "липкий",
+      "ru": "липкий",
+      "en": "sticky",
+      "phoneticUk": "lypkyi",
+      "phoneticRu": "lipkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Липкий мед прилип до пальців."
+        ],
+        "ru": [
+          "Липкий мёд прилип к пальцам."
+        ],
+        "en": [
+          "The sticky honey clung to my fingers."
+        ]
+      }
+    },
+    {
+      "uk": "порожній",
+      "ru": "пустой",
+      "en": "empty",
+      "phoneticUk": "porozhniy",
+      "phoneticRu": "pustoy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Порожній стакан стоїть на столі."
+        ],
+        "ru": [
+          "Пустой стакан стоит на столе."
+        ],
+        "en": [
+          "An empty glass is sitting on the table."
+        ]
+      }
+    },
+    {
+      "uk": "повний",
+      "ru": "полный",
+      "en": "full",
+      "phoneticUk": "povnyi",
+      "phoneticRu": "polnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Повний рюкзак було важко нести."
+        ],
+        "ru": [
+          "Полный рюкзак было тяжело нести."
+        ],
+        "en": [
+          "The full backpack was heavy to carry."
+        ]
+      }
+    },
+    {
+      "uk": "вузький",
+      "ru": "узкий",
+      "en": "narrow",
+      "phoneticUk": "vuz'kyi",
+      "phoneticRu": "uzkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Вузький коридор ускладнював рух."
+        ],
+        "ru": [
+          "Узкий коридор затруднял движение."
+        ],
+        "en": [
+          "The narrow hallway made it hard to get through."
+        ]
+      }
+    },
+    {
+      "uk": "широкий",
+      "ru": "широкий",
+      "en": "wide/broad",
+      "phoneticUk": "shyrokyi",
+      "phoneticRu": "shirokiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Широкий проспект веде до центру."
+        ],
+        "ru": [
+          "Широкий проспект ведёт в центр."
+        ],
+        "en": [
+          "The wide boulevard leads to the city center."
+        ]
+      }
+    },
+    {
+      "uk": "глибокий",
+      "ru": "глубокий",
+      "en": "deep",
+      "phoneticUk": "hlybokyi",
+      "phoneticRu": "glubokiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Глибокий колодязь є у старому дворі."
+        ],
+        "ru": [
+          "Глубокий колодец есть во старом дворе."
+        ],
+        "en": [
+          "There is a deep well in the old courtyard."
+        ]
+      }
+    },
+    {
+      "uk": "мілкий",
+      "ru": "мелкий",
+      "en": "shallow",
+      "phoneticUk": "milkyi",
+      "phoneticRu": "melkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Мілкий струмок легко перейти вбрід."
+        ],
+        "ru": [
+          "Мелкий ручей легко перейти вброд."
+        ],
+        "en": [
+          "The shallow stream is easy to wade across."
+        ]
+      }
+    },
+    {
+      "uk": "товстий",
+      "ru": "толстый",
+      "en": "thick/fat",
+      "phoneticUk": "tovstyi",
+      "phoneticRu": "tolstyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Товстий светр зігріває у мороз."
+        ],
+        "ru": [
+          "Толстый свитер согревает в мороз."
+        ],
+        "en": [
+          "A thick sweater keeps you warm in the cold."
+        ]
+      }
+    },
+    {
+      "uk": "тонкий",
+      "ru": "тонкий",
+      "en": "thin",
+      "phoneticUk": "tonkyi",
+      "phoneticRu": "tonkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Тонкий лід на річці дуже небезпечний."
+        ],
+        "ru": [
+          "Тонкий лёд на реке очень опасен."
+        ],
+        "en": [
+          "The thin ice on the river is very dangerous."
+        ]
+      }
+    },
+    {
+      "uk": "гострий",
+      "ru": "острый",
+      "en": "sharp",
+      "phoneticUk": "hostryi",
+      "phoneticRu": "ostryy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Гострий ніж ріже хліб легко."
+        ],
+        "ru": [
+          "Острый нож режет хлеб легко."
+        ],
+        "en": [
+          "A sharp knife cuts bread easily."
+        ]
+      }
+    },
+    {
+      "uk": "тупий (предмет)",
+      "ru": "тупой",
+      "en": "blunt/dull",
+      "phoneticUk": "tupyi",
+      "phoneticRu": "tupoy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Тупий олівець важко писати."
+        ],
+        "ru": [
+          "Тупой карандаш плохо пишет."
+        ],
+        "en": [
+          "It's hard to write with a dull pencil."
+        ]
+      }
+    },
+    {
+      "uk": "прозорий",
+      "ru": "прозрачный",
+      "en": "transparent",
+      "phoneticUk": "prozoryi",
+      "phoneticRu": "prozrachnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Прозорий пакет дозволяє бачити вміст."
+        ],
+        "ru": [
+          "Прозрачный пакет позволяет видеть содержимое."
+        ],
+        "en": [
+          "A transparent bag lets you see what's inside."
+        ]
+      }
+    },
+    {
+      "uk": "мутний",
+      "ru": "мутный",
+      "en": "murky/cloudy",
+      "phoneticUk": "mutnyi",
+      "phoneticRu": "mutnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Мутна вода у ставку після дощу."
+        ],
+        "ru": [
+          "Мутная вода в пруду после дождя."
+        ],
+        "en": [
+          "The water in the pond is murky after the rain."
+        ]
+      }
+    },
+    {
+      "uk": "блискучий",
+      "ru": "блестящий",
+      "en": "shiny/sparkling",
+      "phoneticUk": "blyskuchyi",
+      "phoneticRu": "blestyashchiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Блискучий браслет привернув увагу."
+        ],
+        "ru": [
+          "Блестящий браслет привлёк внимание."
+        ],
+        "en": [
+          "The shiny bracelet caught everyone's attention."
+        ]
+      }
+    },
+    {
+      "uk": "тьмяний",
+      "ru": "тусклый",
+      "en": "dim/dull",
+      "phoneticUk": "t'myanii",
+      "phoneticRu": "tusklyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Тьмяне світло не давало читати."
+        ],
+        "ru": [
+          "Тусклый свет не давал читать."
+        ],
+        "en": [
+          "The dim light made it impossible to read."
+        ]
+      }
+    },
+    {
+      "uk": "терміновий",
+      "ru": "срочный",
+      "en": "urgent",
+      "phoneticUk": "terminovyi",
+      "phoneticRu": "srochnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Терміновий лист треба надіслати сьогодні."
+        ],
+        "ru": [
+          "Срочное письмо нужно отправить сегодня."
+        ],
+        "en": [
+          "The urgent letter needs to be sent today."
+        ]
+      }
+    },
+    {
+      "uk": "необхідний",
+      "ru": "необходимый",
+      "en": "necessary/essential",
+      "phoneticUk": "neobkhidnyi",
+      "phoneticRu": "neobkhodimyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Необхідний документ був відсутній."
+        ],
+        "ru": [
+          "Необходимый документ отсутствовал."
+        ],
+        "en": [
+          "The necessary document was missing."
+        ]
+      }
+    },
+    {
+      "uk": "зайвий",
+      "ru": "лишний",
+      "en": "unnecessary/extra",
+      "phoneticUk": "zayvyi",
+      "phoneticRu": "lishniy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Зайва річ займала місце у шафі."
+        ],
+        "ru": [
+          "Лишняя вещь занимала место в шкафу."
+        ],
+        "en": [
+          "The unnecessary item was taking up space in the wardrobe."
+        ]
+      }
+    },
+    {
+      "uk": "корисний",
+      "ru": "полезный",
+      "en": "useful/helpful",
+      "phoneticUk": "korysnyi",
+      "phoneticRu": "poleznyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Корисна порада допомогла вирішити проблему."
+        ],
+        "ru": [
+          "Полезный совет помог решить проблему."
+        ],
+        "en": [
+          "A helpful piece of advice solved the problem."
+        ]
+      }
+    },
+    {
+      "uk": "шкідливий",
+      "ru": "вредный",
+      "en": "harmful",
+      "phoneticUk": "shkidlyvyi",
+      "phoneticRu": "vrednyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Шкідливий вплив куріння відомий усім."
+        ],
+        "ru": [
+          "Вредное влияние курения известно всем."
+        ],
+        "en": [
+          "The harmful effects of smoking are known to everyone."
+        ]
+      }
+    },
+    {
+      "uk": "безпечний",
+      "ru": "безопасный",
+      "en": "safe",
+      "phoneticUk": "bezpechnyi",
+      "phoneticRu": "bezopasnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Цей район вважається безпечним."
+        ],
+        "ru": [
+          "Этот район считается безопасным."
+        ],
+        "en": [
+          "This neighborhood is considered safe."
+        ]
+      }
+    },
+    {
+      "uk": "небезпечний",
+      "ru": "опасный",
+      "en": "dangerous",
+      "phoneticUk": "nebezpechnyi",
+      "phoneticRu": "opasnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Небезпечна дорога закрита для руху."
+        ],
+        "ru": [
+          "Опасная дорога закрыта для движения."
+        ],
+        "en": [
+          "The dangerous road is closed to traffic."
+        ]
+      }
+    },
+    {
+      "uk": "зручний",
+      "ru": "удобный",
+      "en": "comfortable/convenient",
+      "phoneticUk": "zruchnyi",
+      "phoneticRu": "udobnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Зручне крісло стоїть біля вікна."
+        ],
+        "ru": [
+          "Удобное кресло стоит у окна."
+        ],
+        "en": [
+          "A comfortable armchair sits by the window."
+        ]
+      }
+    },
+    {
+      "uk": "незручний",
+      "ru": "неудобный",
+      "en": "uncomfortable/inconvenient",
+      "phoneticUk": "nezruchnyi",
+      "phoneticRu": "neudobnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Незручний стілець боліло сидіти."
+        ],
+        "ru": [
+          "На неудобном стуле было больно сидеть."
+        ],
+        "en": [
+          "The uncomfortable chair was painful to sit on."
+        ]
+      }
+    },
+    {
+      "uk": "складний",
+      "ru": "сложный",
+      "en": "complicated/complex",
+      "phoneticUk": "skladnyi",
+      "phoneticRu": "slozhnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Складний тест здали не всі студенти."
+        ],
+        "ru": [
+          "Сложный тест сдали не все студенты."
+        ],
+        "en": [
+          "Not all students passed the difficult test."
+        ]
+      }
+    },
+    {
+      "uk": "простий",
+      "ru": "простой",
+      "en": "simple",
+      "phoneticUk": "prostyi",
+      "phoneticRu": "prostoy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Простий рецепт підходить для початківців."
+        ],
+        "ru": [
+          "Простой рецепт подходит для начинающих."
+        ],
+        "en": [
+          "The simple recipe is perfect for beginners."
+        ]
+      }
+    },
+    {
+      "uk": "сучасний",
+      "ru": "современный",
+      "en": "modern/contemporary",
+      "phoneticUk": "suchasnyi",
+      "phoneticRu": "sovremennyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Сучасний телефон має багато функцій."
+        ],
+        "ru": [
+          "Современный телефон имеет много функций."
+        ],
+        "en": [
+          "A modern phone has many features."
+        ]
+      }
+    },
+    {
+      "uk": "старовинний",
+      "ru": "старинный",
+      "en": "ancient/antique",
+      "phoneticUk": "starovynnyi",
+      "phoneticRu": "starinnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Старовинний замок приваблює туристів."
+        ],
+        "ru": [
+          "Старинный замок привлекает туристов."
+        ],
+        "en": [
+          "The ancient castle attracts tourists."
+        ]
+      }
+    },
+    {
+      "uk": "тимчасовий",
+      "ru": "временный",
+      "en": "temporary",
+      "phoneticUk": "tymchasovyi",
+      "phoneticRu": "vremennyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Тимчасовий притулок дали біженцям."
+        ],
+        "ru": [
+          "Временное жильё дали беженцам."
+        ],
+        "en": [
+          "Temporary shelter was provided for the refugees."
+        ]
+      }
+    },
+    {
+      "uk": "постійний",
+      "ru": "постоянный",
+      "en": "permanent/constant",
+      "phoneticUk": "postiynyi",
+      "phoneticRu": "postoyannyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Він шукає постійну роботу."
+        ],
+        "ru": [
+          "Он ищет постоянную работу."
+        ],
+        "en": [
+          "He is looking for a permanent job."
+        ]
+      }
+    },
+    {
+      "uk": "прихований",
+      "ru": "скрытый",
+      "en": "hidden/concealed",
+      "phoneticUk": "prykhovany",
+      "phoneticRu": "skrytyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Прихований ключ лежав під килимом."
+        ],
+        "ru": [
+          "Скрытый ключ лежал под ковриком."
+        ],
+        "en": [
+          "The hidden key was under the rug."
+        ]
+      }
+    },
+    {
+      "uk": "очевидний",
+      "ru": "очевидный",
+      "en": "obvious/evident",
+      "phoneticUk": "ochevydnyi",
+      "phoneticRu": "ochevidnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Очевидна помилка одразу впадала в очі."
+        ],
+        "ru": [
+          "Очевидная ошибка сразу бросалась в глаза."
+        ],
+        "en": [
+          "The obvious mistake was immediately noticeable."
+        ]
+      }
+    },
+    {
+      "uk": "таємний",
+      "ru": "тайный",
+      "en": "secret",
+      "phoneticUk": "tayemnyi",
+      "phoneticRu": "taynyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Таємний прохід вів до підвалу."
+        ],
+        "ru": [
+          "Тайный проход вёл в подвал."
+        ],
+        "en": [
+          "The secret passage led to the basement."
+        ]
+      }
+    },
+    {
+      "uk": "публічний",
+      "ru": "публичный",
+      "en": "public",
+      "phoneticUk": "publichnyi",
+      "phoneticRu": "publichnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Публічний виступ вимагає підготовки."
+        ],
+        "ru": [
+          "Публичное выступление требует подготовки."
+        ],
+        "en": [
+          "A public speech requires preparation."
+        ]
+      }
+    },
+    {
+      "uk": "приватний",
+      "ru": "частный",
+      "en": "private",
+      "phoneticUk": "pryvatnyi",
+      "phoneticRu": "chastnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Це приватна власність, вхід заборонено."
+        ],
+        "ru": [
+          "Это частная собственность, вход запрещён."
+        ],
+        "en": [
+          "This is private property — no entry."
+        ]
+      }
+    },
+    {
+      "uk": "офіційний",
+      "ru": "официальный",
+      "en": "official",
+      "phoneticUk": "ofitsiynyi",
+      "phoneticRu": "ofitsial'nyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Офіційний документ має печатку."
+        ],
+        "ru": [
+          "Официальный документ имеет печать."
+        ],
+        "en": [
+          "An official document has a stamp."
+        ]
+      }
+    },
+    {
+      "uk": "неформальний",
+      "ru": "неформальный",
+      "en": "informal",
+      "phoneticUk": "neformalny",
+      "phoneticRu": "neformal'nyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Неформальний одяг дозволений на вечірці."
+        ],
+        "ru": [
+          "Неформальная одежда разрешена на вечеринке."
+        ],
+        "en": [
+          "Informal clothing is allowed at the party."
+        ]
+      }
+    },
+    {
+      "uk": "популярний",
+      "ru": "популярный",
+      "en": "popular",
+      "phoneticUk": "populyarnyi",
+      "phoneticRu": "populyarnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Популярний фільм зібрав багато глядачів."
+        ],
+        "ru": [
+          "Популярный фильм собрал много зрителей."
+        ],
+        "en": [
+          "The popular film drew a large audience."
+        ]
+      }
+    },
+    {
+      "uk": "рідкісний",
+      "ru": "редкий",
+      "en": "rare",
+      "phoneticUk": "ridkisnyi",
+      "phoneticRu": "redkiy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Рідкісна квітка росте лише в горах."
+        ],
+        "ru": [
+          "Редкий цветок растёт только в горах."
+        ],
+        "en": [
+          "This rare flower grows only in the mountains."
+        ]
+      }
+    },
+    {
+      "uk": "звичайний",
+      "ru": "обычный",
+      "en": "ordinary/common",
+      "phoneticUk": "zvychainyi",
+      "phoneticRu": "obychnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Це звичайний робочий день."
+        ],
+        "ru": [
+          "Это обычный рабочий день."
+        ],
+        "en": [
+          "It's just an ordinary workday."
+        ]
+      }
+    },
+    {
+      "uk": "незвичайний",
+      "ru": "необычный",
+      "en": "unusual/extraordinary",
+      "phoneticUk": "nezvychainyi",
+      "phoneticRu": "neobychnyy",
+      "category": "adjectives",
+      "examples": {
+        "uk": [
+          "Незвичайний смак здивував усіх гостей."
+        ],
+        "ru": [
+          "Необычный вкус удивил всех гостей."
+        ],
+        "en": [
+          "The unusual taste surprised all the guests."
+        ]
+      }
+    },
+    {
+      "uk": "відпочивати",
+      "ru": "отдыхать",
+      "en": "to rest/relax",
+      "phoneticUk": "vidpochyvaty",
+      "phoneticRu": "otdykhat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Я люблю відпочивати на природі."
+        ],
+        "ru": [
+          "Мне нравится отдыхать на природе."
+        ],
+        "en": [
+          "I love relaxing in nature."
+        ]
+      }
+    },
+    {
+      "uk": "прокидатися",
+      "ru": "просыпаться",
+      "en": "to wake up",
+      "phoneticUk": "prokydatysya",
+      "phoneticRu": "prosypat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Я прокидатися рано щодня."
+        ],
+        "ru": [
+          "Я люблю просыпаться рано утром."
+        ],
+        "en": [
+          "I wake up early every day."
+        ]
+      }
+    },
+    {
+      "uk": "засинати",
+      "ru": "засыпать",
+      "en": "to fall asleep",
+      "phoneticUk": "zasynaty",
+      "phoneticRu": "zasypat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Дитина починає засинати після казки."
+        ],
+        "ru": [
+          "Малыш начинает засыпать после сказки."
+        ],
+        "en": [
+          "The child starts to fall asleep after a bedtime story."
+        ]
+      }
+    },
+    {
+      "uk": "снити",
+      "ru": "сниться",
+      "en": "to dream",
+      "phoneticUk": "snyty",
+      "phoneticRu": "snit'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Мені снити дивні сни вночі."
+        ],
+        "ru": [
+          "Мне начало сниться что-то странное."
+        ],
+        "en": [
+          "I have strange dreams at night."
+        ]
+      }
+    },
+    {
+      "uk": "хропіти",
+      "ru": "храпеть",
+      "en": "to snore",
+      "phoneticUk": "khropity",
+      "phoneticRu": "khrapet'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Тато починає хропіти вночі."
+        ],
+        "ru": [
+          "Папа начинает храпеть ночью."
+        ],
+        "en": [
+          "Dad starts to snore at night."
+        ]
+      }
+    },
+    {
+      "uk": "вдягатися",
+      "ru": "одеваться",
+      "en": "to get dressed",
+      "phoneticUk": "vdyahatysya",
+      "phoneticRu": "odevat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Він швидко вдягатися вранці."
+        ],
+        "ru": [
+          "Он быстро одеваться не умеет."
+        ],
+        "en": [
+          "He gets dressed quickly in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "роздягатися (щоденне)",
+      "ru": "раздеваться",
+      "en": "to get undressed",
+      "phoneticUk": "rozdyahatysya",
+      "phoneticRu": "razdevat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Вона роздягатися після роботи вдома."
+        ],
+        "ru": [
+          "Она любит раздеваться сразу после работы."
+        ],
+        "en": [
+          "She gets undressed as soon as she gets home from work."
+        ]
+      }
+    },
+    {
+      "uk": "вмиватися",
+      "ru": "умываться",
+      "en": "to wash one's face",
+      "phoneticUk": "vmyvatysya",
+      "phoneticRu": "umyvat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Я вмиватися холодною водою щоранку."
+        ],
+        "ru": [
+          "Я умываться холодной водой каждое утро."
+        ],
+        "en": [
+          "I wash my face with cold water every morning."
+        ]
+      }
+    },
+    {
+      "uk": "чистити зуби",
+      "ru": "чистить зубы",
+      "en": "to brush teeth",
+      "phoneticUk": "chystyty zuby",
+      "phoneticRu": "chistit' zuby",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Треба чистити зуби двічі на день."
+        ],
+        "ru": [
+          "Нужно чистить зубы два раза в день."
+        ],
+        "en": [
+          "You should brush your teeth twice a day."
+        ]
+      }
+    },
+    {
+      "uk": "голитися",
+      "ru": "бриться",
+      "en": "to shave",
+      "phoneticUk": "holytysya",
+      "phoneticRu": "brit'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Він голитися кожного ранку."
+        ],
+        "ru": [
+          "Он бриться каждое утро."
+        ],
+        "en": [
+          "He shaves every morning."
+        ]
+      }
+    },
+    {
+      "uk": "розчісуватися",
+      "ru": "расчёсываться",
+      "en": "to comb one's hair",
+      "phoneticUk": "rozchisuvatysya",
+      "phoneticRu": "raschyosyvat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Вона любить розчісуватися перед дзеркалом."
+        ],
+        "ru": [
+          "Она любит расчёсываться перед зеркалом."
+        ],
+        "en": [
+          "She likes to comb her hair in front of the mirror."
+        ]
+      }
+    },
+    {
+      "uk": "снідати",
+      "ru": "завтракать",
+      "en": "to have breakfast",
+      "phoneticUk": "snidaty",
+      "phoneticRu": "zavtrakat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Ми снідати разом щоранку."
+        ],
+        "ru": [
+          "Мы завтракать вместе каждое утро."
+        ],
+        "en": [
+          "We have breakfast together every morning."
+        ]
+      }
+    },
+    {
+      "uk": "обідати",
+      "ru": "обедать",
+      "en": "to have lunch",
+      "phoneticUk": "obidaty",
+      "phoneticRu": "obedat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Я обідати в кафе з колегами."
+        ],
+        "ru": [
+          "Я обедать в кафе с коллегами."
+        ],
+        "en": [
+          "I have lunch at a cafe with colleagues."
+        ]
+      }
+    },
+    {
+      "uk": "вечеряти",
+      "ru": "ужинать",
+      "en": "to have dinner",
+      "phoneticUk": "vecheryaty",
+      "phoneticRu": "uzhinat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Родина вечеряти разом увечері."
+        ],
+        "ru": [
+          "Семья ужинать вместе вечером."
+        ],
+        "en": [
+          "The family has dinner together in the evening."
+        ]
+      }
+    },
+    {
+      "uk": "перекусити",
+      "ru": "перекусить",
+      "en": "to have a snack",
+      "phoneticUk": "perekusyty",
+      "phoneticRu": "perekusit'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Давай перекусити перед прогулянкою."
+        ],
+        "ru": [
+          "Давай перекусить перед прогулкой."
+        ],
+        "en": [
+          "Let's grab a snack before the walk."
+        ]
+      }
+    },
+    {
+      "uk": "прибирати",
+      "ru": "убирать",
+      "en": "to clean up/tidy",
+      "phoneticUk": "prybyraty",
+      "phoneticRu": "ubirat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Потрібно прибирати кімнату щотижня."
+        ],
+        "ru": [
+          "Нужно убирать комнату каждую неделю."
+        ],
+        "en": [
+          "You need to tidy the room every week."
+        ]
+      }
+    },
+    {
+      "uk": "мити посуд",
+      "ru": "мыть посуду",
+      "en": "to wash dishes",
+      "phoneticUk": "myty posud",
+      "phoneticRu": "myt' posudu",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Він мити посуд після вечері."
+        ],
+        "ru": [
+          "Он любит мыть посуду после ужина."
+        ],
+        "en": [
+          "He washes the dishes after dinner."
+        ]
+      }
+    },
+    {
+      "uk": "прати",
+      "ru": "стирать",
+      "en": "to do laundry",
+      "phoneticUk": "praty",
+      "phoneticRu": "stirat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Мама прати одяг у суботу."
+        ],
+        "ru": [
+          "Мама стирать одежду по субботам."
+        ],
+        "en": [
+          "Mom does the laundry on Saturdays."
+        ]
+      }
+    },
+    {
+      "uk": "прасувати",
+      "ru": "гладить",
+      "en": "to iron clothes",
+      "phoneticUk": "prasuvaty",
+      "phoneticRu": "gladit'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Треба прасувати сорочку перед роботою."
+        ],
+        "ru": [
+          "Нужно гладить рубашку перед работой."
+        ],
+        "en": [
+          "You need to iron your shirt before work."
+        ]
+      }
+    },
+    {
+      "uk": "підмітати",
+      "ru": "подметать",
+      "en": "to sweep",
+      "phoneticUk": "pidmitaty",
+      "phoneticRu": "podmetat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Він підмітати підлогу щоранку."
+        ],
+        "ru": [
+          "Он подметать пол каждое утро."
+        ],
+        "en": [
+          "He sweeps the floor every morning."
+        ]
+      }
+    },
+    {
+      "uk": "витирати пил",
+      "ru": "вытирать пыль",
+      "en": "to dust",
+      "phoneticUk": "vytyraty pyl",
+      "phoneticRu": "vytirat' pyl'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Треба витирати пил на полицях."
+        ],
+        "ru": [
+          "Нужно вытирать пыль на полках."
+        ],
+        "en": [
+          "You need to dust the shelves."
+        ]
+      }
+    },
+    {
+      "uk": "поливати",
+      "ru": "поливать",
+      "en": "to water (plants)",
+      "phoneticUk": "polyvaty",
+      "phoneticRu": "polivat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Вона поливати квіти щодня."
+        ],
+        "ru": [
+          "Она поливать цветы каждый день."
+        ],
+        "en": [
+          "She waters the flowers every day."
+        ]
+      }
+    },
+    {
+      "uk": "годувати",
+      "ru": "кормить",
+      "en": "to feed",
+      "phoneticUk": "hoduvaty",
+      "phoneticRu": "kormit'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Діти годувати кішку вранці."
+        ],
+        "ru": [
+          "Дети кормить кошку утром."
+        ],
+        "en": [
+          "The kids feed the cat in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "вигулювати",
+      "ru": "выгуливать",
+      "en": "to walk (a dog)",
+      "phoneticUk": "vyhulyuvaty",
+      "phoneticRu": "vygulivat'",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Він вигулювати собаку двічі на день."
+        ],
+        "ru": [
+          "Он выгуливать собаку дважды в день."
+        ],
+        "en": [
+          "He walks the dog twice a day."
+        ]
+      }
+    },
+    {
+      "uk": "паркуватися",
+      "ru": "парковаться",
+      "en": "to park",
+      "phoneticUk": "parkuvatysya",
+      "phoneticRu": "parkovat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Тут важко паркуватися у центрі."
+        ],
+        "ru": [
+          "Здесь трудно парковаться в центре."
+        ],
+        "en": [
+          "It's hard to park in the city center."
+        ]
+      }
+    },
+    {
+      "uk": "заправлятися",
+      "ru": "заправляться",
+      "en": "to refuel",
+      "phoneticUk": "zapravlyatysya",
+      "phoneticRu": "zapravlyat'sya",
+      "category": "verbs-daily",
+      "examples": {
+        "uk": [
+          "Треба заправлятися на цій станції."
+        ],
+        "ru": [
+          "Нужно заправляться на этой станции."
+        ],
+        "en": [
+          "We need to refuel at this station."
+        ]
+      }
+    },
+    {
+      "uk": "щасливий",
+      "ru": "счастливый",
+      "en": "happy",
+      "phoneticUk": "shchaslyvyi",
+      "phoneticRu": "schastlivyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він виглядає дуже щасливий сьогодні."
+        ],
+        "ru": [
+          "Он выглядит очень счастливый сегодня."
+        ],
+        "en": [
+          "He looks very happy today."
+        ]
+      }
+    },
+    {
+      "uk": "сумний",
+      "ru": "грустный",
+      "en": "sad",
+      "phoneticUk": "sumnyi",
+      "phoneticRu": "grustnyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вона виглядає сумний після новин."
+        ],
+        "ru": [
+          "Она выглядит грустный после новостей."
+        ],
+        "en": [
+          "She looks sad after hearing the news."
+        ]
+      }
+    },
+    {
+      "uk": "злий",
+      "ru": "злой",
+      "en": "angry/evil",
+      "phoneticUk": "zlyi",
+      "phoneticRu": "zloy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Чому ти такий злий сьогодні?"
+        ],
+        "ru": [
+          "Почему ты такой злой сегодня?"
+        ],
+        "en": [
+          "Why are you so angry today?"
+        ]
+      }
+    },
+    {
+      "uk": "веселий",
+      "ru": "весёлый",
+      "en": "cheerful/merry",
+      "phoneticUk": "veselyi",
+      "phoneticRu": "vesyolyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він завжди такий веселий на вечірках."
+        ],
+        "ru": [
+          "Он всегда такой весёлый на вечеринках."
+        ],
+        "en": [
+          "He is always so cheerful at parties."
+        ]
+      }
+    },
+    {
+      "uk": "серйозний",
+      "ru": "серьёзный",
+      "en": "serious",
+      "phoneticUk": "seryoznyi",
+      "phoneticRu": "ser'yoznyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вчитель виглядає дуже серйозний сьогодні."
+        ],
+        "ru": [
+          "Учитель выглядит очень серьёзный сегодня."
+        ],
+        "en": [
+          "The teacher looks very serious today."
+        ]
+      }
+    },
+    {
+      "uk": "спокійний",
+      "ru": "спокойный",
+      "en": "calm/peaceful",
+      "phoneticUk": "spokiynyi",
+      "phoneticRu": "spokoynyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він завжди такий спокійний у стресі."
+        ],
+        "ru": [
+          "Он всегда такой спокойный в стрессе."
+        ],
+        "en": [
+          "He is always so calm under stress."
+        ]
+      }
+    },
+    {
+      "uk": "нервовий",
+      "ru": "нервный",
+      "en": "nervous",
+      "phoneticUk": "nervovyi",
+      "phoneticRu": "nervnyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вона була нервовий перед іспитом."
+        ],
+        "ru": [
+          "Она была нервный перед экзаменом."
+        ],
+        "en": [
+          "She was nervous before the exam."
+        ]
+      }
+    },
+    {
+      "uk": "втомлений",
+      "ru": "уставший",
+      "en": "tired",
+      "phoneticUk": "vtomlenyi",
+      "phoneticRu": "ustavshiy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Я дуже втомлений після роботи."
+        ],
+        "ru": [
+          "Я очень уставший после работы."
+        ],
+        "en": [
+          "I'm very tired after work."
+        ]
+      }
+    },
+    {
+      "uk": "бадьорий",
+      "ru": "бодрый",
+      "en": "energetic/perky",
+      "phoneticUk": "badory",
+      "phoneticRu": "bodryy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він виглядає бадьорий після кави."
+        ],
+        "ru": [
+          "Он выглядит бодрый после кофе."
+        ],
+        "en": [
+          "He looks energetic after his coffee."
+        ]
+      }
+    },
+    {
+      "uk": "голодний",
+      "ru": "голодный",
+      "en": "hungry",
+      "phoneticUk": "holodnyi",
+      "phoneticRu": "golodnyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Я дуже голодний після тренування."
+        ],
+        "ru": [
+          "Я очень голодный после тренировки."
+        ],
+        "en": [
+          "I'm really hungry after the workout."
+        ]
+      }
+    },
+    {
+      "uk": "ситий",
+      "ru": "сытый",
+      "en": "full (not hungry)",
+      "phoneticUk": "sytyi",
+      "phoneticRu": "sytyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Я вже ситий після обіду."
+        ],
+        "ru": [
+          "Я уже сытый после обеда."
+        ],
+        "en": [
+          "I'm already full after lunch."
+        ]
+      }
+    },
+    {
+      "uk": "спраглий",
+      "ru": "жаждущий",
+      "en": "thirsty",
+      "phoneticUk": "sprahlyi",
+      "phoneticRu": "zhazhduschiy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він відчуває себе спраглий після бігу."
+        ],
+        "ru": [
+          "Он чувствует себя жаждущий после бега."
+        ],
+        "en": [
+          "He feels thirsty after running."
+        ]
+      }
+    },
+    {
+      "uk": "хворий",
+      "ru": "больной",
+      "en": "sick/ill",
+      "phoneticUk": "khvoryi",
+      "phoneticRu": "bol'noy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Дитина хворий і лежить у ліжку."
+        ],
+        "ru": [
+          "Ребёнок больной и лежит в кровати."
+        ],
+        "en": [
+          "The child is sick and lying in bed."
+        ]
+      }
+    },
+    {
+      "uk": "здоровий",
+      "ru": "здоровый",
+      "en": "healthy",
+      "phoneticUk": "zdorovyi",
+      "phoneticRu": "zdorovyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він виглядає здоровий і бадьорий."
+        ],
+        "ru": [
+          "Он выглядит здоровый и бодрый."
+        ],
+        "en": [
+          "He looks healthy and full of energy."
+        ]
+      }
+    },
+    {
+      "uk": "зайнятий",
+      "ru": "занятый",
+      "en": "busy/occupied",
+      "phoneticUk": "zainyatyi",
+      "phoneticRu": "zanyatyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він зайнятий зараз на роботі."
+        ],
+        "ru": [
+          "Он занятый сейчас на работе."
+        ],
+        "en": [
+          "He is busy at work right now."
+        ]
+      }
+    },
+    {
+      "uk": "вільний",
+      "ru": "свободный",
+      "en": "free (available)",
+      "phoneticUk": "vilnyi",
+      "phoneticRu": "svobodnyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Ти вільний сьогодні ввечері?"
+        ],
+        "ru": [
+          "Ты свободный сегодня вечером?"
+        ],
+        "en": [
+          "Are you free this evening?"
+        ]
+      }
+    },
+    {
+      "uk": "готовий",
+      "ru": "готовый",
+      "en": "ready",
+      "phoneticUk": "hotovyi",
+      "phoneticRu": "gotovyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він готовий до важливої зустрічі."
+        ],
+        "ru": [
+          "Он готовый к важной встрече."
+        ],
+        "en": [
+          "He is ready for the important meeting."
+        ]
+      }
+    },
+    {
+      "uk": "зацікавлений",
+      "ru": "заинтересованный",
+      "en": "interested",
+      "phoneticUk": "zatsikavlenyi",
+      "phoneticRu": "zainteresovannyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вона зацікавлений новим проектом."
+        ],
+        "ru": [
+          "Она заинтересованный новым проектом."
+        ],
+        "en": [
+          "She is interested in the new project."
+        ]
+      }
+    },
+    {
+      "uk": "розгублений",
+      "ru": "растерянный",
+      "en": "confused/puzzled",
+      "phoneticUk": "rozhublenyi",
+      "phoneticRu": "rasteryannyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він виглядає розгублений після пояснення."
+        ],
+        "ru": [
+          "Он выглядит растерянный после объяснения."
+        ],
+        "en": [
+          "He looks confused after the explanation."
+        ]
+      }
+    },
+    {
+      "uk": "впевнений",
+      "ru": "уверенный",
+      "en": "confident/sure",
+      "phoneticUk": "vpevnenyi",
+      "phoneticRu": "uverennyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вона впевнений у своїх силах."
+        ],
+        "ru": [
+          "Она уверенный в своих силах."
+        ],
+        "en": [
+          "She is confident in her own abilities."
+        ]
+      }
+    },
+    {
+      "uk": "здивований",
+      "ru": "удивлённый",
+      "en": "surprised",
+      "phoneticUk": "zdyvovanyi",
+      "phoneticRu": "udivlyonnyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він здивований несподіваним подарунком."
+        ],
+        "ru": [
+          "Он удивлённый неожиданным подарком."
+        ],
+        "en": [
+          "He is surprised by the unexpected gift."
+        ]
+      }
+    },
+    {
+      "uk": "розчарований",
+      "ru": "разочарованный",
+      "en": "disappointed",
+      "phoneticUk": "rozcharovanyi",
+      "phoneticRu": "razocharovannyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Вона розчарований результатами іспиту."
+        ],
+        "ru": [
+          "Она разочарованный результатами экзамена."
+        ],
+        "en": [
+          "She is disappointed with the exam results."
+        ]
+      }
+    },
+    {
+      "uk": "задоволений",
+      "ru": "довольный",
+      "en": "pleased/satisfied",
+      "phoneticUk": "zadovolenyi",
+      "phoneticRu": "dovol'nyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він задоволений своєю роботою."
+        ],
+        "ru": [
+          "Он довольный своей работой."
+        ],
+        "en": [
+          "He is pleased with his work."
+        ]
+      }
+    },
+    {
+      "uk": "стурбований",
+      "ru": "обеспокоенный",
+      "en": "worried/concerned",
+      "phoneticUk": "sturbovanyi",
+      "phoneticRu": "obespokoennyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Мама стурбований здоров'ям дитини."
+        ],
+        "ru": [
+          "Мама обеспокоенный здоровьем ребёнка."
+        ],
+        "en": [
+          "Mom is worried about the child's health."
+        ]
+      }
+    },
+    {
+      "uk": "наляканий",
+      "ru": "испуганный",
+      "en": "scared/frightened",
+      "phoneticUk": "nalyakanyi",
+      "phoneticRu": "ispugannyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Дитина наляканий гучним звуком."
+        ],
+        "ru": [
+          "Ребёнок испуганный громким звуком."
+        ],
+        "en": [
+          "The child is frightened by the loud noise."
+        ]
+      }
+    },
+    {
+      "uk": "схвильований",
+      "ru": "взволнованный",
+      "en": "excited/agitated",
+      "phoneticUk": "skhvylovany",
+      "phoneticRu": "vzvolnovannyy",
+      "category": "common-adj",
+      "examples": {
+        "uk": [
+          "Він схвильований перед великим виступом."
+        ],
+        "ru": [
+          "Он взволнованный перед большим выступлением."
+        ],
+        "en": [
+          "He is excited before the big performance."
+        ]
+      }
+    },
+    {
+      "uk": "знехтувати",
+      "ru": "пренебречь",
+      "en": "to neglect/disregard",
+      "phoneticUk": "znekhtuvaty",
+      "phoneticRu": "prenebrech'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не можна знехтувати порадою лікаря."
+        ],
+        "ru": [
+          "Нельзя пренебречь советом врача."
+        ],
+        "en": [
+          "You must not disregard a doctor's advice."
+        ]
+      }
+    },
+    {
+      "uk": "цінувати",
+      "ru": "ценить",
+      "en": "to appreciate/value",
+      "phoneticUk": "tsinuvaty",
+      "phoneticRu": "tsenit'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба цінувати кожну мить щастя."
+        ],
+        "ru": [
+          "Нужно ценить каждый момент счастья."
+        ],
+        "en": [
+          "You should appreciate every moment of happiness."
+        ]
+      }
+    },
+    {
+      "uk": "турбуватися",
+      "ru": "беспокоиться",
+      "en": "to worry/care",
+      "phoneticUk": "turbuvatysya",
+      "phoneticRu": "bespokoit'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона турбуватися про здоров'я батьків."
+        ],
+        "ru": [
+          "Она беспокоиться о здоровье родителей."
+        ],
+        "en": [
+          "She worries about her parents' health."
+        ]
+      }
+    },
+    {
+      "uk": "хвилюватися",
+      "ru": "волноваться",
+      "en": "to be anxious/worry",
+      "phoneticUk": "khvylyuvatysya",
+      "phoneticRu": "volnovat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не треба хвилюватися через дрібниці."
+        ],
+        "ru": [
+          "Не нужно волноваться из-за мелочей."
+        ],
+        "en": [
+          "There's no need to worry about little things."
+        ]
+      }
+    },
+    {
+      "uk": "радіти",
+      "ru": "радоваться",
+      "en": "to rejoice/be glad",
+      "phoneticUk": "radity",
+      "phoneticRu": "radovat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Діти радіти новим іграшкам."
+        ],
+        "ru": [
+          "Дети радоваться новым игрушкам."
+        ],
+        "en": [
+          "The children are glad about the new toys."
+        ]
+      }
+    },
+    {
+      "uk": "засмучуватися",
+      "ru": "огорчаться",
+      "en": "to be upset/saddened",
+      "phoneticUk": "zasmuchuvatysya",
+      "phoneticRu": "ogorchat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не варто засмучуватися через невдачу."
+        ],
+        "ru": [
+          "Не стоит огорчаться из-за неудачи."
+        ],
+        "en": [
+          "There's no point in getting upset over a failure."
+        ]
+      }
+    },
+    {
+      "uk": "соромитися",
+      "ru": "стыдиться",
+      "en": "to be ashamed/shy",
+      "phoneticUk": "soromytysya",
+      "phoneticRu": "stydit'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він соромитися говорити перед класом."
+        ],
+        "ru": [
+          "Он стыдиться говорить перед классом."
+        ],
+        "en": [
+          "He is shy about speaking in front of the class."
+        ]
+      }
+    },
+    {
+      "uk": "гордитися",
+      "ru": "гордиться",
+      "en": "to be proud",
+      "phoneticUk": "hordytysya",
+      "phoneticRu": "gordit'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Батьки гордитися успіхами доньки."
+        ],
+        "ru": [
+          "Родители гордиться успехами дочери."
+        ],
+        "en": [
+          "The parents are proud of their daughter's achievements."
+        ]
+      }
+    },
+    {
+      "uk": "заздрити",
+      "ru": "завидовать",
+      "en": "to envy",
+      "phoneticUk": "zazdryty",
+      "phoneticRu": "zavidovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не треба заздрити чужому успіху."
+        ],
+        "ru": [
+          "Не нужно завидовать чужому успеху."
+        ],
+        "en": [
+          "There's no need to envy other people's success."
+        ]
+      }
+    },
+    {
+      "uk": "мріяти",
+      "ru": "мечтать",
+      "en": "to daydream/wish",
+      "phoneticUk": "mriyaty",
+      "phoneticRu": "mechtat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона мріяти про подорож до Парижа."
+        ],
+        "ru": [
+          "Она мечтать о путешествии в Париж."
+        ],
+        "en": [
+          "She dreams of traveling to Paris."
+        ]
+      }
+    },
+    {
+      "uk": "сподіватися",
+      "ru": "надеяться",
+      "en": "to hope/expect",
+      "phoneticUk": "spodivatysya",
+      "phoneticRu": "nadeyat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Я сподіватися на гарну погоду завтра."
+        ],
+        "ru": [
+          "Я надеяться на хорошую погоду завтра."
+        ],
+        "en": [
+          "I'm hoping for good weather tomorrow."
+        ]
+      }
+    },
+    {
+      "uk": "боятися",
+      "ru": "бояться",
+      "en": "to be afraid",
+      "phoneticUk": "boyatysya",
+      "phoneticRu": "boyat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Дитина боятися темряви вночі."
+        ],
+        "ru": [
+          "Ребёнок бояться темноты ночью."
+        ],
+        "en": [
+          "The child is afraid of the dark at night."
+        ]
+      }
+    },
+    {
+      "uk": "ризикувати",
+      "ru": "рисковать",
+      "en": "to risk",
+      "phoneticUk": "ryzykuvaty",
+      "phoneticRu": "riskovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не варто ризикувати без потреби."
+        ],
+        "ru": [
+          "Не стоит рисковать без необходимости."
+        ],
+        "en": [
+          "There's no point in taking unnecessary risks."
+        ]
+      }
+    },
+    {
+      "uk": "намагатися",
+      "ru": "пытаться",
+      "en": "to try/attempt",
+      "phoneticUk": "namahatysya",
+      "phoneticRu": "pytat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона намагатися вивчити нову мову."
+        ],
+        "ru": [
+          "Она пытаться выучить новый язык."
+        ],
+        "en": [
+          "She is trying to learn a new language."
+        ]
+      }
+    },
+    {
+      "uk": "вдаватися",
+      "ru": "удаваться",
+      "en": "to succeed/manage",
+      "phoneticUk": "vdavatysya",
+      "phoneticRu": "udavat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Йому вдаватися вирішити складне завдання."
+        ],
+        "ru": [
+          "Ему удаваться решить сложную задачу."
+        ],
+        "en": [
+          "He manages to solve the difficult task."
+        ]
+      }
+    },
+    {
+      "uk": "провалитися",
+      "ru": "провалиться",
+      "en": "to fail",
+      "phoneticUk": "provalytysya",
+      "phoneticRu": "provalit'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він боявся провалитися на іспиті."
+        ],
+        "ru": [
+          "Он боялся провалиться на экзамене."
+        ],
+        "en": [
+          "He was afraid of failing the exam."
+        ]
+      }
+    },
+    {
+      "uk": "виправляти",
+      "ru": "исправлять",
+      "en": "to correct/fix",
+      "phoneticUk": "vypravlyaty",
+      "phoneticRu": "ispravlyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вчитель виправляти помилки в зошитах."
+        ],
+        "ru": [
+          "Учитель исправлять ошибки в тетрадях."
+        ],
+        "en": [
+          "The teacher corrects mistakes in the notebooks."
+        ]
+      }
+    },
+    {
+      "uk": "помилятися",
+      "ru": "ошибаться",
+      "en": "to make a mistake",
+      "phoneticUk": "pomylyatysya",
+      "phoneticRu": "oshibat'sya",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Всі можуть помилятися інколи."
+        ],
+        "ru": [
+          "Все могут ошибаться иногда."
+        ],
+        "en": [
+          "Everyone can make mistakes sometimes."
+        ]
+      }
+    },
+    {
+      "uk": "перевіряти",
+      "ru": "проверять",
+      "en": "to check/verify",
+      "phoneticUk": "pereviryaty",
+      "phoneticRu": "proveryat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба перевіряти роботу перед здачею."
+        ],
+        "ru": [
+          "Нужно проверять работу перед сдачей."
+        ],
+        "en": [
+          "You should check your work before submitting it."
+        ]
+      }
+    },
+    {
+      "uk": "підтверджувати",
+      "ru": "подтверждать",
+      "en": "to confirm",
+      "phoneticUk": "pidtverdzhuvaty",
+      "phoneticRu": "podtverzhdat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він підтверджувати замовлення електронною поштою."
+        ],
+        "ru": [
+          "Он подтверждать заказ по электронной почте."
+        ],
+        "en": [
+          "He confirms the order by email."
+        ]
+      }
+    },
+    {
+      "uk": "скасовувати",
+      "ru": "отменять",
+      "en": "to cancel",
+      "phoneticUk": "skasovuvaty",
+      "phoneticRu": "otmenyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона скасовувати зустріч через хворобу."
+        ],
+        "ru": [
+          "Она отменять встречу из-за болезни."
+        ],
+        "en": [
+          "She cancels the meeting because of illness."
+        ]
+      }
+    },
+    {
+      "uk": "переносити",
+      "ru": "переносить",
+      "en": "to reschedule/postpone",
+      "phoneticUk": "perenosyty",
+      "phoneticRu": "perenosit'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба переносити зустріч на наступний тиждень."
+        ],
+        "ru": [
+          "Нужно переносить встречу на следующую неделю."
+        ],
+        "en": [
+          "The meeting needs to be rescheduled to next week."
+        ]
+      }
+    },
+    {
+      "uk": "планувати",
+      "ru": "планировать",
+      "en": "to plan",
+      "phoneticUk": "planuvaty",
+      "phoneticRu": "planirovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Ми планувати відпустку на літо."
+        ],
+        "ru": [
+          "Мы планировать отпуск на лето."
+        ],
+        "en": [
+          "We are planning a vacation for the summer."
+        ]
+      }
+    },
+    {
+      "uk": "організовувати",
+      "ru": "организовывать",
+      "en": "to organize",
+      "phoneticUk": "orhanizovuvaty",
+      "phoneticRu": "organizovyvat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона організовувати свято для команди."
+        ],
+        "ru": [
+          "Она организовывать праздник для команды."
+        ],
+        "en": [
+          "She is organizing a celebration for the team."
+        ]
+      }
+    },
+    {
+      "uk": "керувати",
+      "ru": "управлять",
+      "en": "to manage/lead",
+      "phoneticUk": "keruvaty",
+      "phoneticRu": "upravlyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він керувати великою компанією успішно."
+        ],
+        "ru": [
+          "Он управлять большой компанией успешно."
+        ],
+        "en": [
+          "He successfully manages a large company."
+        ]
+      }
+    },
+    {
+      "uk": "контролювати",
+      "ru": "контролировать",
+      "en": "to control/monitor",
+      "phoneticUk": "kontrolyuvaty",
+      "phoneticRu": "kontrolirovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Менеджер контролювати якість продукції."
+        ],
+        "ru": [
+          "Менеджер контролировать качество продукции."
+        ],
+        "en": [
+          "The manager monitors the quality of the products."
+        ]
+      }
+    },
+    {
+      "uk": "створювати",
+      "ru": "создавать",
+      "en": "to create/build",
+      "phoneticUk": "stvoryuvaty",
+      "phoneticRu": "sozdavat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Художник створювати нові картини щодня."
+        ],
+        "ru": [
+          "Художник создавать новые картины каждый день."
+        ],
+        "en": [
+          "The artist creates new paintings every day."
+        ]
+      }
+    },
+    {
+      "uk": "руйнувати",
+      "ru": "разрушать",
+      "en": "to destroy",
+      "phoneticUk": "ruynuvaty",
+      "phoneticRu": "razrushat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Не можна руйнувати природу навколо нас."
+        ],
+        "ru": [
+          "Нельзя разрушать природу вокруг нас."
+        ],
+        "en": [
+          "You must not destroy the nature around us."
+        ]
+      }
+    },
+    {
+      "uk": "ремонтувати",
+      "ru": "ремонтировать",
+      "en": "to repair/fix",
+      "phoneticUk": "remontuvaty",
+      "phoneticRu": "remontirovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він ремонтувати старий автомобіль у гаражі."
+        ],
+        "ru": [
+          "Он ремонтировать старый автомобиль в гараже."
+        ],
+        "en": [
+          "He is repairing an old car in the garage."
+        ]
+      }
+    },
+    {
+      "uk": "встановлювати",
+      "ru": "устанавливать",
+      "en": "to install/establish",
+      "phoneticUk": "vstanovlyuvaty",
+      "phoneticRu": "ustanavlivat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба встановлювати нову програму на комп'ютер."
+        ],
+        "ru": [
+          "Нужно устанавливать новую программу на компьютер."
+        ],
+        "en": [
+          "You need to install the new program on the computer."
+        ]
+      }
+    },
+    {
+      "uk": "видаляти",
+      "ru": "удалять",
+      "en": "to remove/delete",
+      "phoneticUk": "vydalyaty",
+      "phoneticRu": "udalyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він видаляти непотрібні файли з диска."
+        ],
+        "ru": [
+          "Он удалять ненужные файлы с диска."
+        ],
+        "en": [
+          "He deletes unnecessary files from the drive."
+        ]
+      }
+    },
+    {
+      "uk": "замінювати",
+      "ru": "заменять",
+      "en": "to replace",
+      "phoneticUk": "zaminyuvaty",
+      "phoneticRu": "zamenyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба замінювати батарейки в пульті."
+        ],
+        "ru": [
+          "Нужно заменять батарейки в пульте."
+        ],
+        "en": [
+          "You need to replace the batteries in the remote."
+        ]
+      }
+    },
+    {
+      "uk": "вимірювати",
+      "ru": "измерять",
+      "en": "to measure",
+      "phoneticUk": "vymiryuvaty",
+      "phoneticRu": "izmeryat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він вимірювати температуру в кімнаті."
+        ],
+        "ru": [
+          "Он измерять температуру в комнате."
+        ],
+        "en": [
+          "He measures the temperature in the room."
+        ]
+      }
+    },
+    {
+      "uk": "рахувати",
+      "ru": "считать",
+      "en": "to count",
+      "phoneticUk": "rakhuvaty",
+      "phoneticRu": "schitat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Дитина вчиться рахувати до десяти."
+        ],
+        "ru": [
+          "Ребёнок учится считать до десяти."
+        ],
+        "en": [
+          "The child is learning to count to ten."
+        ]
+      }
+    },
+    {
+      "uk": "обчислювати",
+      "ru": "вычислять",
+      "en": "to calculate",
+      "phoneticUk": "obchyslyuvaty",
+      "phoneticRu": "vychislyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Потрібно обчислювати вартість покупок точно."
+        ],
+        "ru": [
+          "Нужно вычислять стоимость покупок точно."
+        ],
+        "en": [
+          "You need to calculate the cost of purchases accurately."
+        ]
+      }
+    },
+    {
+      "uk": "друкувати",
+      "ru": "печатать",
+      "en": "to print/type",
+      "phoneticUk": "drukuvaty",
+      "phoneticRu": "pechatat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він друкувати документи на принтері."
+        ],
+        "ru": [
+          "Он печатать документы на принтере."
+        ],
+        "en": [
+          "He prints documents on the printer."
+        ]
+      }
+    },
+    {
+      "uk": "копіювати",
+      "ru": "копировать",
+      "en": "to copy",
+      "phoneticUk": "kopiyuvaty",
+      "phoneticRu": "kopirovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Треба копіювати файли перед видаленням."
+        ],
+        "ru": [
+          "Нужно копировать файлы перед удалением."
+        ],
+        "en": [
+          "You should copy files before deleting them."
+        ]
+      }
+    },
+    {
+      "uk": "вставляти",
+      "ru": "вставлять",
+      "en": "to paste/insert",
+      "phoneticUk": "vstavlyaty",
+      "phoneticRu": "vstavlyat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Він вставляти текст у новий документ."
+        ],
+        "ru": [
+          "Он вставлять текст в новый документ."
+        ],
+        "en": [
+          "He pastes the text into a new document."
+        ]
+      }
+    },
+    {
+      "uk": "фотографувати",
+      "ru": "фотографировать",
+      "en": "to photograph",
+      "phoneticUk": "fotohrafuvaty",
+      "phoneticRu": "fotografirovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона любить фотографувати природу навколо."
+        ],
+        "ru": [
+          "Она любит фотографировать природу вокруг."
+        ],
+        "en": [
+          "She loves photographing the nature around her."
+        ]
+      }
+    },
+    {
+      "uk": "малювати",
+      "ru": "рисовать",
+      "en": "to draw/paint",
+      "phoneticUk": "malyuvaty",
+      "phoneticRu": "risovat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Дитина малювати картину олівцями вдома."
+        ],
+        "ru": [
+          "Ребёнок рисовать картину карандашами дома."
+        ],
+        "en": [
+          "The child is drawing a picture with pencils at home."
+        ]
+      }
+    },
+    {
+      "uk": "співати",
+      "ru": "петь",
+      "en": "to sing",
+      "phoneticUk": "spivaty",
+      "phoneticRu": "pet'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона любить співати народні пісні."
+        ],
+        "ru": [
+          "Она любит петь народные песни."
+        ],
+        "en": [
+          "She loves singing folk songs."
+        ]
+      }
+    },
+    {
+      "uk": "грати",
+      "ru": "играть",
+      "en": "to play",
+      "phoneticUk": "hraty",
+      "phoneticRu": "igrat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Діти грати у футбол на подвір'ї."
+        ],
+        "ru": [
+          "Дети играть в футбол во дворе."
+        ],
+        "en": [
+          "The children play football in the yard."
+        ]
+      }
+    },
+    {
+      "uk": "танцювати",
+      "ru": "танцевать",
+      "en": "to dance",
+      "phoneticUk": "tantsyuvaty",
+      "phoneticRu": "tantsevat'",
+      "category": "verbs-misc",
+      "examples": {
+        "uk": [
+          "Вона вміє чудово танцювати вальс."
+        ],
+        "ru": [
+          "Она умеет прекрасно танцевать вальс."
+        ],
+        "en": [
+          "She can dance the waltz beautifully."
+        ]
+      }
+    },
+    {
+      "uk": "футбол",
+      "ru": "футбол",
+      "en": "football/soccer",
+      "phoneticUk": "futbol",
+      "phoneticRu": "futbol",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає у футбол щовихідних."
+        ],
+        "ru": [
+          "Он играет в футбол каждые выходные."
+        ],
+        "en": [
+          "He plays football every weekend."
+        ]
+      }
+    },
+    {
+      "uk": "плавання",
+      "ru": "плавание",
+      "en": "swimming",
+      "phoneticUk": "plavannya",
+      "phoneticRu": "plavaniye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Плавання корисне для здоров'я людини."
+        ],
+        "ru": [
+          "Плавание полезно для здоровья человека."
+        ],
+        "en": [
+          "Swimming is good for a person's health."
+        ]
+      }
+    },
+    {
+      "uk": "музика",
+      "ru": "музыка",
+      "en": "music",
+      "phoneticUk": "muzyka",
+      "phoneticRu": "muzyka",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Вона слухає музику щодня з ранку."
+        ],
+        "ru": [
+          "Она слушает музыку каждый день с утра."
+        ],
+        "en": [
+          "She listens to music every morning."
+        ]
+      }
+    },
+    {
+      "uk": "баскетбол",
+      "ru": "баскетбол",
+      "en": "basketball",
+      "phoneticUk": "basketbol",
+      "phoneticRu": "basketbol",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Команда грає у баскетбол на змаганнях."
+        ],
+        "ru": [
+          "Команда играет в баскетбол на соревнованиях."
+        ],
+        "en": [
+          "The team plays basketball in competitions."
+        ]
+      }
+    },
+    {
+      "uk": "теніс",
+      "ru": "теннис",
+      "en": "tennis",
+      "phoneticUk": "tenis",
+      "phoneticRu": "tennis",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає у теніс двічі на тиждень."
+        ],
+        "ru": [
+          "Он играет в теннис два раза в неделю."
+        ],
+        "en": [
+          "He plays tennis twice a week."
+        ]
+      }
+    },
+    {
+      "uk": "хокей",
+      "ru": "хоккей",
+      "en": "hockey",
+      "phoneticUk": "khokei",
+      "phoneticRu": "khokkei",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Хлопці дивляться хокей по телевізору."
+        ],
+        "ru": [
+          "Ребята смотрят хоккей по телевизору."
+        ],
+        "en": [
+          "The guys watch hockey on TV."
+        ]
+      }
+    },
+    {
+      "uk": "біг",
+      "ru": "бег",
+      "en": "running",
+      "phoneticUk": "bih",
+      "phoneticRu": "beg",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Біг допомагає підтримувати гарну форму."
+        ],
+        "ru": [
+          "Бег помогает поддерживать хорошую форму."
+        ],
+        "en": [
+          "Running helps you stay in good shape."
+        ]
+      }
+    },
+    {
+      "uk": "велосипед",
+      "ru": "велосипед",
+      "en": "bicycle",
+      "phoneticUk": "velosyped",
+      "phoneticRu": "velosiped",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він їде на велосипед парком щоранку."
+        ],
+        "ru": [
+          "Он едет на велосипед по парку каждое утро."
+        ],
+        "en": [
+          "He rides his bicycle through the park every morning."
+        ]
+      }
+    },
+    {
+      "uk": "лижі",
+      "ru": "лыжи",
+      "en": "skis/skiing",
+      "phoneticUk": "lyzhi",
+      "phoneticRu": "lyzhi",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Взимку він катається на лижі в горах."
+        ],
+        "ru": [
+          "Зимой он катается на лыжи в горах."
+        ],
+        "en": [
+          "In winter he goes skiing in the mountains."
+        ]
+      }
+    },
+    {
+      "uk": "ковзани",
+      "ru": "коньки",
+      "en": "ice skates",
+      "phoneticUk": "kovzany",
+      "phoneticRu": "kon'ki",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Діти кататись на ковзани на ковзанці."
+        ],
+        "ru": [
+          "Дети кататься на коньки на катке."
+        ],
+        "en": [
+          "The children skate on ice skates at the rink."
+        ]
+      }
+    },
+    {
+      "uk": "тренування",
+      "ru": "тренировка",
+      "en": "training/workout",
+      "phoneticUk": "trenuvannya",
+      "phoneticRu": "trenirovka",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Тренування починається о сьомій ранку."
+        ],
+        "ru": [
+          "Тренировка начинается в семь утра."
+        ],
+        "en": [
+          "Training starts at seven in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "тренер",
+      "ru": "тренер",
+      "en": "coach/trainer",
+      "phoneticUk": "trener",
+      "phoneticRu": "trener",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Тренер допомагає команді вдосконалюватись."
+        ],
+        "ru": [
+          "Тренер помогает команде совершенствоваться."
+        ],
+        "en": [
+          "The coach helps the team improve."
+        ]
+      }
+    },
+    {
+      "uk": "стадіон",
+      "ru": "стадион",
+      "en": "stadium",
+      "phoneticUk": "stadion",
+      "phoneticRu": "stadion",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Вболівальники зібрались на стадіон на матч."
+        ],
+        "ru": [
+          "Болельщики собрались на стадион на матч."
+        ],
+        "en": [
+          "The fans gathered at the stadium for the match."
+        ]
+      }
+    },
+    {
+      "uk": "команда",
+      "ru": "команда",
+      "en": "team",
+      "phoneticUk": "komanda",
+      "phoneticRu": "komanda",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Наша команда виграла важливий матч."
+        ],
+        "ru": [
+          "Наша команда выиграла важный матч."
+        ],
+        "en": [
+          "Our team won an important match."
+        ]
+      }
+    },
+    {
+      "uk": "чемпіон",
+      "ru": "чемпион",
+      "en": "champion",
+      "phoneticUk": "chempion",
+      "phoneticRu": "chempion",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він став чемпіон з плавання цього року."
+        ],
+        "ru": [
+          "Он стал чемпион по плаванию в этом году."
+        ],
+        "en": [
+          "He became the swimming champion this year."
+        ]
+      }
+    },
+    {
+      "uk": "змагання",
+      "ru": "соревнование",
+      "en": "competition",
+      "phoneticUk": "zmahannya",
+      "phoneticRu": "sorevnovaniye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Завтра відбудеться змагання між командами."
+        ],
+        "ru": [
+          "Завтра состоится соревнование между командами."
+        ],
+        "en": [
+          "Tomorrow there will be a competition between the teams."
+        ]
+      }
+    },
+    {
+      "uk": "перемога",
+      "ru": "победа",
+      "en": "victory",
+      "phoneticUk": "peremoha",
+      "phoneticRu": "pobeda",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Перемога у фіналі принесла їм радість."
+        ],
+        "ru": [
+          "Победа в финале принесла им радость."
+        ],
+        "en": [
+          "Victory in the final brought them great joy."
+        ]
+      }
+    },
+    {
+      "uk": "поразка",
+      "ru": "поражение",
+      "en": "defeat",
+      "phoneticUk": "porazka",
+      "phoneticRu": "porazheniye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Поразка у матчі засмутила всю команду."
+        ],
+        "ru": [
+          "Поражение в матче расстроило всю команду."
+        ],
+        "en": [
+          "The defeat in the match upset the whole team."
+        ]
+      }
+    },
+    {
+      "uk": "м'яч",
+      "ru": "мяч",
+      "en": "ball",
+      "phoneticUk": "myach",
+      "phoneticRu": "myach",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він вдарив м'яч прямо у ворота."
+        ],
+        "ru": [
+          "Он ударил мяч прямо в ворота."
+        ],
+        "en": [
+          "He kicked the ball straight into the goal."
+        ]
+      }
+    },
+    {
+      "uk": "ворота",
+      "ru": "ворота",
+      "en": "goal (sports)",
+      "phoneticUk": "vorota",
+      "phoneticRu": "vorota",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "М'яч влучив прямо у ворота суперника."
+        ],
+        "ru": [
+          "Мяч попал прямо в ворота соперника."
+        ],
+        "en": [
+          "The ball went straight into the opponent's goal."
+        ]
+      }
+    },
+    {
+      "uk": "гол",
+      "ru": "гол",
+      "en": "goal (score)",
+      "phoneticUk": "hol",
+      "phoneticRu": "gol",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він забив гол на останній хвилині."
+        ],
+        "ru": [
+          "Он забил гол на последней минуте."
+        ],
+        "en": [
+          "He scored a goal in the last minute."
+        ]
+      }
+    },
+    {
+      "uk": "суддя",
+      "ru": "судья",
+      "en": "referee",
+      "phoneticUk": "suddya",
+      "phoneticRu": "sud'ya",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Суддя зупинив гру через порушення правил."
+        ],
+        "ru": [
+          "Судья остановил игру из-за нарушения правил."
+        ],
+        "en": [
+          "The referee stopped the game due to a rule violation."
+        ]
+      }
+    },
+    {
+      "uk": "вболівальник",
+      "ru": "болельщик",
+      "en": "fan/supporter",
+      "phoneticUk": "vbolivalny",
+      "phoneticRu": "bolel'shchik",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Кожен вболівальник кричав на стадіоні."
+        ],
+        "ru": [
+          "Каждый болельщик кричал на стадионе."
+        ],
+        "en": [
+          "Every fan was shouting at the stadium."
+        ]
+      }
+    },
+    {
+      "uk": "гітара",
+      "ru": "гитара",
+      "en": "guitar",
+      "phoneticUk": "hitara",
+      "phoneticRu": "gitara",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає на гітара кожного вечора."
+        ],
+        "ru": [
+          "Он играет на гитара каждый вечер."
+        ],
+        "en": [
+          "He plays guitar every evening."
+        ]
+      }
+    },
+    {
+      "uk": "піаніно",
+      "ru": "пианино",
+      "en": "piano",
+      "phoneticUk": "pianino",
+      "phoneticRu": "pianino",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Вона навчається грати на піаніно."
+        ],
+        "ru": [
+          "Она учится играть на пианино."
+        ],
+        "en": [
+          "She is learning to play the piano."
+        ]
+      }
+    },
+    {
+      "uk": "барабан",
+      "ru": "барабан",
+      "en": "drum",
+      "phoneticUk": "baraban",
+      "phoneticRu": "baraban",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає на барабан у рок-гурті."
+        ],
+        "ru": [
+          "Он играет на барабан в рок-группе."
+        ],
+        "en": [
+          "He plays drums in a rock band."
+        ]
+      }
+    },
+    {
+      "uk": "скрипка",
+      "ru": "скрипка",
+      "en": "violin",
+      "phoneticUk": "skrypka",
+      "phoneticRu": "skripka",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Дівчинка грає на скрипка у школі."
+        ],
+        "ru": [
+          "Девочка играет на скрипка в школе."
+        ],
+        "en": [
+          "The girl plays violin at school."
+        ]
+      }
+    },
+    {
+      "uk": "малювання",
+      "ru": "рисование",
+      "en": "drawing/painting",
+      "phoneticUk": "malyuvannya",
+      "phoneticRu": "risovaniye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Малювання — це її улюблене хобі."
+        ],
+        "ru": [
+          "Рисование — это её любимое хобби."
+        ],
+        "en": [
+          "Drawing is her favorite hobby."
+        ]
+      }
+    },
+    {
+      "uk": "фотографія",
+      "ru": "фотография",
+      "en": "photography",
+      "phoneticUk": "fotohrafiya",
+      "phoneticRu": "fotografiya",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Фотографія дозволяє зберегти красиві моменти."
+        ],
+        "ru": [
+          "Фотография позволяет сохранить красивые моменты."
+        ],
+        "en": [
+          "Photography lets you preserve beautiful moments."
+        ]
+      }
+    },
+    {
+      "uk": "шахи",
+      "ru": "шахматы",
+      "en": "chess",
+      "phoneticUk": "shakhy",
+      "phoneticRu": "shakhmaty",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає у шахи з дідусем щовечора."
+        ],
+        "ru": [
+          "Он играет в шахматы с дедушкой каждый вечер."
+        ],
+        "en": [
+          "He plays chess with his grandfather every evening."
+        ]
+      }
+    },
+    {
+      "uk": "рибалка",
+      "ru": "рыбалка",
+      "en": "fishing",
+      "phoneticUk": "rybalka",
+      "phoneticRu": "rybalka",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Рибалка — чудовий спосіб відпочити."
+        ],
+        "ru": [
+          "Рыбалка — отличный способ отдохнуть."
+        ],
+        "en": [
+          "Fishing is a wonderful way to relax."
+        ]
+      }
+    },
+    {
+      "uk": "полювання",
+      "ru": "охота",
+      "en": "hunting",
+      "phoneticUk": "polyuvannya",
+      "phoneticRu": "okhota",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Полювання популярне серед сільських чоловіків."
+        ],
+        "ru": [
+          "Охота популярна среди сельских мужчин."
+        ],
+        "en": [
+          "Hunting is popular among men in rural areas."
+        ]
+      }
+    },
+    {
+      "uk": "садівництво",
+      "ru": "садоводство",
+      "en": "gardening",
+      "phoneticUk": "sadivnytstvo",
+      "phoneticRu": "sadovodstvo",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Садівництво приносить їй велике задоволення."
+        ],
+        "ru": [
+          "Садоводство приносит ей большое удовольствие."
+        ],
+        "en": [
+          "Gardening brings her a lot of joy."
+        ]
+      }
+    },
+    {
+      "uk": "в'язання",
+      "ru": "вязание",
+      "en": "knitting",
+      "phoneticUk": "vyazannya",
+      "phoneticRu": "vyazaniye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Бабуся займається в'язання у вільний час."
+        ],
+        "ru": [
+          "Бабушка занимается вязание в свободное время."
+        ],
+        "en": [
+          "Grandma does knitting in her free time."
+        ]
+      }
+    },
+    {
+      "uk": "кулінарія",
+      "ru": "кулинария",
+      "en": "cooking (hobby)",
+      "phoneticUk": "kulinariya",
+      "phoneticRu": "kulinariya",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Кулінарія стала її справжньою пристрастю."
+        ],
+        "ru": [
+          "Кулинария стала её настоящей страстью."
+        ],
+        "en": [
+          "Cooking became her true passion."
+        ]
+      }
+    },
+    {
+      "uk": "подорож",
+      "ru": "путешествие",
+      "en": "traveling",
+      "phoneticUk": "podorozh",
+      "phoneticRu": "puteshestviye",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Подорож до Карпат була незабутньою."
+        ],
+        "ru": [
+          "Путешествие в Карпаты было незабываемым."
+        ],
+        "en": [
+          "The trip to the Carpathians was unforgettable."
+        ]
+      }
+    },
+    {
+      "uk": "кемпінг",
+      "ru": "кемпинг",
+      "en": "camping",
+      "phoneticUk": "kempinh",
+      "phoneticRu": "kemping",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Кемпінг у лісі — чудова ідея влітку."
+        ],
+        "ru": [
+          "Кемпинг в лесу — отличная идея летом."
+        ],
+        "en": [
+          "Camping in the forest is a great idea in summer."
+        ]
+      }
+    },
+    {
+      "uk": "альпінізм",
+      "ru": "альпинизм",
+      "en": "mountaineering",
+      "phoneticUk": "alpinizm",
+      "phoneticRu": "alpinizm",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Альпінізм вимагає сили та витривалості."
+        ],
+        "ru": [
+          "Альпинизм требует силы и выносливости."
+        ],
+        "en": [
+          "Mountaineering requires strength and endurance."
+        ]
+      }
+    },
+    {
+      "uk": "йога",
+      "ru": "йога",
+      "en": "yoga",
+      "phoneticUk": "yoha",
+      "phoneticRu": "yoga",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Вона займається йога вранці щодня."
+        ],
+        "ru": [
+          "Она занимается йога утром каждый день."
+        ],
+        "en": [
+          "She does yoga every morning."
+        ]
+      }
+    },
+    {
+      "uk": "бокс",
+      "ru": "бокс",
+      "en": "boxing",
+      "phoneticUk": "boks",
+      "phoneticRu": "boks",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він займається бокс три рази на тиждень."
+        ],
+        "ru": [
+          "Он занимается бокс три раза в неделю."
+        ],
+        "en": [
+          "He does boxing three times a week."
+        ]
+      }
+    },
+    {
+      "uk": "боротьба",
+      "ru": "борьба",
+      "en": "wrestling",
+      "phoneticUk": "borotba",
+      "phoneticRu": "bor'ba",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Боротьба потребує сили та швидкості."
+        ],
+        "ru": [
+          "Борьба требует силы и быстроты."
+        ],
+        "en": [
+          "Wrestling requires strength and speed."
+        ]
+      }
+    },
+    {
+      "uk": "гімнастика",
+      "ru": "гимнастика",
+      "en": "gymnastics",
+      "phoneticUk": "himnastyka",
+      "phoneticRu": "gimnastika",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Гімнастика розвиває гнучкість і координацію."
+        ],
+        "ru": [
+          "Гимнастика развивает гибкость и координацию."
+        ],
+        "en": [
+          "Gymnastics builds flexibility and coordination."
+        ]
+      }
+    },
+    {
+      "uk": "волейбол",
+      "ru": "волейбол",
+      "en": "volleyball",
+      "phoneticUk": "voleybol",
+      "phoneticRu": "voleybol",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Команда грає у волейбол на пляжі."
+        ],
+        "ru": [
+          "Команда играет в волейбол на пляже."
+        ],
+        "en": [
+          "The team is playing volleyball on the beach."
+        ]
+      }
+    },
+    {
+      "uk": "гольф",
+      "ru": "гольф",
+      "en": "golf",
+      "phoneticUk": "holf",
+      "phoneticRu": "gol'f",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він грає у гольф з партнерами по бізнесу."
+        ],
+        "ru": [
+          "Он играет в гольф с деловыми партнёрами."
+        ],
+        "en": [
+          "He plays golf with his business partners."
+        ]
+      }
+    },
+    {
+      "uk": "медаль",
+      "ru": "медаль",
+      "en": "medal",
+      "phoneticUk": "medal",
+      "phoneticRu": "medal'",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Спортсмен отримав медаль за першe місце."
+        ],
+        "ru": [
+          "Спортсмен получил медаль за первое место."
+        ],
+        "en": [
+          "The athlete received a medal for first place."
+        ]
+      }
+    },
+    {
+      "uk": "олімпіада",
+      "ru": "олимпиада",
+      "en": "Olympics",
+      "phoneticUk": "olimpiada",
+      "phoneticRu": "olimpiada",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Олімпіада збирає спортсменів з усього світу."
+        ],
+        "ru": [
+          "Олимпиада собирает спортсменов со всего мира."
+        ],
+        "en": [
+          "The Olympics brings together athletes from all over the world."
+        ]
+      }
+    },
+    {
+      "uk": "матч",
+      "ru": "матч",
+      "en": "match (sports)",
+      "phoneticUk": "match",
+      "phoneticRu": "match",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Матч між командами тривав дві години."
+        ],
+        "ru": [
+          "Матч между командами длился два часа."
+        ],
+        "en": [
+          "The match between the teams lasted two hours."
+        ]
+      }
+    },
+    {
+      "uk": "рахунок",
+      "ru": "счёт",
+      "en": "score",
+      "phoneticUk": "rakhunok",
+      "phoneticRu": "shchyot",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Рахунок у грі був два до одного."
+        ],
+        "ru": [
+          "Счёт в игре был два к одному."
+        ],
+        "en": [
+          "The score in the game was two to one."
+        ]
+      }
+    },
+    {
+      "uk": "розминка",
+      "ru": "разминка",
+      "en": "warm-up",
+      "phoneticUk": "rozmynka",
+      "phoneticRu": "razminka",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Розминка перед грою дуже важлива для спортсменів."
+        ],
+        "ru": [
+          "Разминка перед игрой очень важна для спортсменов."
+        ],
+        "en": [
+          "A warm-up before the game is very important for athletes."
+        ]
+      }
+    },
+    {
+      "uk": "марафон",
+      "ru": "марафон",
+      "en": "marathon",
+      "phoneticUk": "marafon",
+      "phoneticRu": "marafon",
+      "category": "sports-hobbies",
+      "examples": {
+        "uk": [
+          "Він пробіг марафон за чотири години."
+        ],
+        "ru": [
+          "Он пробежал марафон за четыре часа."
+        ],
+        "en": [
+          "He ran the marathon in four hours."
+        ]
+      }
+    }
   ]
 }

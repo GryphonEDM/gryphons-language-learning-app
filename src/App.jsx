@@ -130,7 +130,7 @@ function buildCategoryFlashcardSets() {
       nameUk: group.nameUk,
       icon: group.icon,
       difficulty: group.difficulty,
-      words: words.map(w => ({ uk: w.uk, en: w.en, phonetic: w.phonetic || '', examples: [] })),
+      words: words.map(w => ({ uk: w.uk, en: w.en, phonetic: w.phonetic || '', examples: w.examples || [], examplesEn: w.examplesEn || [] })),
       totalWords: words.length,
       xpPerWord: 10
     });
@@ -170,7 +170,7 @@ function buildCategoryFlashcardSetsForLang(langCode) {
       nameUk: group[nameField] || group.nameUk,
       icon: group.icon,
       difficulty: group.difficulty,
-      words: words.map(w => ({ uk: w.uk, en: w.en, phonetic: w.phonetic || '', examples: [] })),
+      words: words.map(w => ({ uk: w.uk, en: w.en, phonetic: w.phonetic || '', examples: w.examples || [], examplesEn: w.examplesEn || [] })),
       totalWords: words.length,
       xpPerWord: 10
     });
@@ -258,7 +258,9 @@ export default function UkrainianTypingGame() {
       uk: currentLanguage === 'ru' ? (w.ru || w.uk) : w.uk,
       phonetic: currentLanguage === 'ru' ? (w.phoneticRu || w.phonetic || '') : (w.phoneticUk || w.phonetic || ''),
       examples: Array.isArray(w.examples) ? w.examples :
-        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : (w.examples.uk || [])) : [])
+        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : (w.examples.uk || [])) : []),
+      examplesEn: Array.isArray(w.examples) ? [] :
+        (w.examples ? (w.examples.en || []) : [])
     }))
   });
   const CURRENT_VOCAB_THEMES = VOCABULARY_THEMES.map(normalizeVocabSet);
@@ -1069,7 +1071,8 @@ export default function UkrainianTypingGame() {
                         uk: w.uk,
                         en: w.en,
                         phonetic: w.phonetic || '',
-                        examples: []
+                        examples: w.examples || [],
+                        examplesEn: w.examplesEn || []
                       })),
                       totalWords: shuffled.length,
                       xpPerWord: 10
@@ -1152,7 +1155,7 @@ export default function UkrainianTypingGame() {
                           uk: w.uk,
                           en: w.en,
                           phonetic: w.phonetic || '',
-                          examples: []
+                          examples: w.examples || []
                         })),
                         totalWords: customFlashcards.length,
                         xpPerWord: 15

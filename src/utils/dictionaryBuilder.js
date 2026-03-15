@@ -104,12 +104,18 @@ export function getAllVocabularyWords(langCode = 'uk') {
         const targetWord = word[targetField];
         if (targetWord && !seen.has(targetWord.toLowerCase())) {
           seen.add(targetWord.toLowerCase());
+          const examples = word.examples
+            ? (Array.isArray(word.examples) ? word.examples : (word.examples[targetField] || []))
+            : [];
+          const examplesEn = word.examples && !Array.isArray(word.examples) ? (word.examples.en || []) : [];
           words.push({
             [targetField]: targetWord,
             uk: targetWord, // backward compat: always expose as .uk too
             en: word.en,
             phonetic: word[phoneticField] || '',
-            source: word.category || 'dictionary'
+            source: word.category || 'dictionary',
+            examples,
+            examplesEn
           });
         }
       });

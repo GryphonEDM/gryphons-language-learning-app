@@ -1,285 +1,5343 @@
 {
   "words": [
-    {"uk": "бабуся", "ru": "бабушка", "en": "grandmother", "phoneticUk": "babusya", "phoneticRu": "babushka", "category": "family"},
-    {"uk": "дідусь", "ru": "дедушка", "en": "grandfather", "phoneticUk": "didus", "phoneticRu": "dedushka", "category": "family"},
-    {"uk": "онук", "ru": "внук", "en": "grandson", "phoneticUk": "onuk", "phoneticRu": "vnuk", "category": "family"},
-    {"uk": "онука", "ru": "внучка", "en": "granddaughter", "phoneticUk": "onuka", "phoneticRu": "vnuchka", "category": "family"},
-    {"uk": "племінник", "ru": "племянник", "en": "nephew", "phoneticUk": "pleminnyk", "phoneticRu": "plemyannik", "category": "family"},
-    {"uk": "племінниця", "ru": "племянница", "en": "niece", "phoneticUk": "pleminnytsya", "phoneticRu": "plemyannitsa", "category": "family"},
-    {"uk": "зять", "ru": "зять", "en": "son-in-law", "phoneticUk": "zyat", "phoneticRu": "zyat", "category": "family"},
-    {"uk": "невістка", "ru": "невестка", "en": "daughter-in-law", "phoneticUk": "nevistka", "phoneticRu": "nevestka", "category": "family"},
-    {"uk": "свекруха", "ru": "свекровь", "en": "mother-in-law (husband's)", "phoneticUk": "svekrukha", "phoneticRu": "svekrov", "category": "family"},
-    {"uk": "теща", "ru": "тёща", "en": "mother-in-law (wife's)", "phoneticUk": "teshcha", "phoneticRu": "tyoshcha", "category": "family"},
-    {"uk": "тесть", "ru": "тесть", "en": "father-in-law (wife's)", "phoneticUk": "test", "phoneticRu": "test", "category": "family"},
-    {"uk": "свекор", "ru": "свёкор", "en": "father-in-law (husband's)", "phoneticUk": "svekor", "phoneticRu": "svyokor", "category": "family"},
-    {"uk": "хрещений батько", "ru": "крёстный отец", "en": "godfather", "phoneticUk": "khreshchenyi batko", "phoneticRu": "kryostnyi otets", "category": "family"},
-    {"uk": "хрещена мати", "ru": "крёстная мать", "en": "godmother", "phoneticUk": "khreshchena maty", "phoneticRu": "kryostnaya mat", "category": "family"},
-    {"uk": "близнюки", "ru": "близнецы", "en": "twins", "phoneticUk": "blyznyuky", "phoneticRu": "bliznetsy", "category": "family"},
-    {"uk": "сирота", "ru": "сирота", "en": "orphan", "phoneticUk": "syrota", "phoneticRu": "sirota", "category": "family"},
-    {"uk": "вдова", "ru": "вдова", "en": "widow", "phoneticUk": "vdova", "phoneticRu": "vdova", "category": "family"},
-    {"uk": "вдівець", "ru": "вдовец", "en": "widower", "phoneticUk": "vdivets", "phoneticRu": "vdovets", "category": "family"},
-    {"uk": "наречений", "ru": "жених", "en": "fiancé/groom", "phoneticUk": "narechenyi", "phoneticRu": "zhenikh", "category": "family"},
-    {"uk": "наречена", "ru": "невеста", "en": "fiancée/bride", "phoneticUk": "narechena", "phoneticRu": "nevesta", "category": "family"},
-    {"uk": "колиска", "ru": "колыбель", "en": "cradle", "phoneticUk": "kolyska", "phoneticRu": "kolybel", "category": "family"},
-    {"uk": "підгузок", "ru": "подгузник", "en": "diaper", "phoneticUk": "pidhuzok", "phoneticRu": "podguznik", "category": "family"},
-    {"uk": "соска", "ru": "соска", "en": "pacifier", "phoneticUk": "soska", "phoneticRu": "soska", "category": "family"},
-    {"uk": "козеня", "ru": "козлёнок", "en": "kid (baby goat)", "phoneticUk": "kozenya", "phoneticRu": "kozlyonok", "category": "animals"},
-    {"uk": "ягня", "ru": "ягнёнок", "en": "lamb", "phoneticUk": "yahnya", "phoneticRu": "yagnyonok", "category": "animals"},
-    {"uk": "теля", "ru": "телёнок", "en": "calf", "phoneticUk": "telya", "phoneticRu": "telyonok", "category": "animals"},
-    {"uk": "лоша", "ru": "жеребёнок", "en": "foal", "phoneticUk": "losha", "phoneticRu": "zherebyonok", "category": "animals"},
-    {"uk": "цуценя", "ru": "щенок", "en": "puppy", "phoneticUk": "tsutsenya", "phoneticRu": "shchenok", "category": "animals"},
-    {"uk": "кошеня", "ru": "котёнок", "en": "kitten", "phoneticUk": "koshenya", "phoneticRu": "kotyonok", "category": "animals"},
-    {"uk": "лисиця", "ru": "лисица", "en": "fox", "phoneticUk": "lysytsya", "phoneticRu": "lisitsa", "category": "animals"},
-    {"uk": "вовк", "ru": "волк", "en": "wolf", "phoneticUk": "vovk", "phoneticRu": "volk", "category": "animals"},
-    {"uk": "олень", "ru": "олень", "en": "deer", "phoneticUk": "olen", "phoneticRu": "olen", "category": "animals"},
-    {"uk": "лось", "ru": "лось", "en": "moose/elk", "phoneticUk": "los", "phoneticRu": "los", "category": "animals"},
-    {"uk": "зебра", "ru": "зебра", "en": "zebra", "phoneticUk": "zebra", "phoneticRu": "zebra", "category": "animals"},
-    {"uk": "жирафа", "ru": "жираф", "en": "giraffe", "phoneticUk": "zhyrafa", "phoneticRu": "zhiraf", "category": "animals"},
-    {"uk": "носоріг", "ru": "носорог", "en": "rhinoceros", "phoneticUk": "nosorih", "phoneticRu": "nosorog", "category": "animals"},
-    {"uk": "бегемот", "ru": "бегемот", "en": "hippopotamus", "phoneticUk": "behemot", "phoneticRu": "begemot", "category": "animals"},
-    {"uk": "горила", "ru": "горилла", "en": "gorilla", "phoneticUk": "horyla", "phoneticRu": "gorilla", "category": "animals"},
-    {"uk": "шимпанзе", "ru": "шимпанзе", "en": "chimpanzee", "phoneticUk": "shympanze", "phoneticRu": "shimpanze", "category": "animals"},
-    {"uk": "мавпа", "ru": "обезьяна", "en": "monkey/ape", "phoneticUk": "mavpa", "phoneticRu": "obezyana", "category": "animals"},
-    {"uk": "верблюд", "ru": "верблюд", "en": "camel", "phoneticUk": "verblyud", "phoneticRu": "verblyud", "category": "animals"},
-    {"uk": "кенгуру", "ru": "кенгуру", "en": "kangaroo", "phoneticUk": "kenhuru", "phoneticRu": "kenguru", "category": "animals"},
-    {"uk": "бобер", "ru": "бобёр", "en": "beaver", "phoneticUk": "bober", "phoneticRu": "bobyor", "category": "animals"},
-    {"uk": "їжак", "ru": "ёжик", "en": "hedgehog", "phoneticUk": "yizhak", "phoneticRu": "yozhik", "category": "animals"},
-    {"uk": "білка", "ru": "белка", "en": "squirrel", "phoneticUk": "bilka", "phoneticRu": "belka", "category": "animals"},
-    {"uk": "хом'як", "ru": "хомяк", "en": "hamster", "phoneticUk": "khomyak", "phoneticRu": "khomyak", "category": "animals"},
-    {"uk": "морська свинка", "ru": "морская свинка", "en": "guinea pig", "phoneticUk": "morska svynka", "phoneticRu": "morskaya svinka", "category": "animals"},
-    {"uk": "хамелеон", "ru": "хамелеон", "en": "chameleon", "phoneticUk": "khameleon", "phoneticRu": "khameleon", "category": "animals"},
-    {"uk": "ігуана", "ru": "игуана", "en": "iguana", "phoneticUk": "ihuana", "phoneticRu": "iguana", "category": "animals"},
-    {"uk": "черепаха", "ru": "черепаха", "en": "turtle/tortoise", "phoneticUk": "cherepakha", "phoneticRu": "cherepakha", "category": "animals"},
-    {"uk": "крокодил", "ru": "крокодил", "en": "crocodile", "phoneticUk": "krokodyl", "phoneticRu": "krokodil", "category": "animals"},
-    {"uk": "пітон", "ru": "питон", "en": "python", "phoneticUk": "piton", "phoneticRu": "piton", "category": "animals"},
-    {"uk": "жаба", "ru": "лягушка", "en": "frog", "phoneticUk": "zhaba", "phoneticRu": "lyagushka", "category": "animals"},
-    {"uk": "равлик", "ru": "улитка", "en": "snail", "phoneticUk": "ravlyk", "phoneticRu": "ulitka", "category": "animals"},
-    {"uk": "черв'як", "ru": "червяк", "en": "worm", "phoneticUk": "chervyak", "phoneticRu": "chervyak", "category": "animals"},
-    {"uk": "піца", "ru": "пицца", "en": "pizza", "phoneticUk": "pitsa", "phoneticRu": "pitstsa", "category": "food-extra"},
-    {"uk": "гамбургер", "ru": "гамбургер", "en": "hamburger", "phoneticUk": "hamburher", "phoneticRu": "gamburger", "category": "food-extra"},
-    {"uk": "сендвіч", "ru": "сэндвич", "en": "sandwich", "phoneticUk": "sendvich", "phoneticRu": "sendvich", "category": "food-extra"},
-    {"uk": "хот-дог", "ru": "хот-дог", "en": "hot dog", "phoneticUk": "khot-doh", "phoneticRu": "khot-dog", "category": "food-extra"},
-    {"uk": "картопля фрі", "ru": "картофель фри", "en": "french fries", "phoneticUk": "kartoplya fri", "phoneticRu": "kartofel fri", "category": "food-extra"},
-    {"uk": "чіпси", "ru": "чипсы", "en": "chips/crisps", "phoneticUk": "chipsy", "phoneticRu": "chipsy", "category": "food-extra"},
-    {"uk": "попкорн", "ru": "попкорн", "en": "popcorn", "phoneticUk": "popkorn", "phoneticRu": "popkorn", "category": "food-extra"},
-    {"uk": "кекс", "ru": "кекс", "en": "muffin/cupcake", "phoneticUk": "keks", "phoneticRu": "keks", "category": "food-extra"},
-    {"uk": "торт", "ru": "торт", "en": "cake (layered)", "phoneticUk": "tort", "phoneticRu": "tort", "category": "food-extra"},
-    {"uk": "пиріг", "ru": "пирог", "en": "pie", "phoneticUk": "pyrih", "phoneticRu": "pirog", "category": "food-extra"},
-    {"uk": "пиріжок", "ru": "пирожок", "en": "small pie/pastry", "phoneticUk": "pyrizhok", "phoneticRu": "pirozhok", "category": "food-extra"},
-    {"uk": "вареники", "ru": "вареники", "en": "dumplings (Ukrainian)", "phoneticUk": "varenyky", "phoneticRu": "vareniki", "category": "food-extra"},
-    {"uk": "пельмені", "ru": "пельмени", "en": "dumplings (meat)", "phoneticUk": "pelmeni", "phoneticRu": "pelmeni", "category": "food-extra"},
-    {"uk": "голубці", "ru": "голубцы", "en": "cabbage rolls", "phoneticUk": "holubtsi", "phoneticRu": "golubtsy", "category": "food-extra"},
-    {"uk": "деруни", "ru": "драники", "en": "potato pancakes", "phoneticUk": "deruny", "phoneticRu": "draniki", "category": "food-extra"},
-    {"uk": "борщ", "ru": "борщ", "en": "borscht", "phoneticUk": "borshch", "phoneticRu": "borshch", "category": "food-extra"},
-    {"uk": "солянка", "ru": "солянка", "en": "thick savory soup", "phoneticUk": "solyanka", "phoneticRu": "solyanka", "category": "food-extra"},
-    {"uk": "окрошка", "ru": "окрошка", "en": "cold vegetable soup", "phoneticUk": "okroshka", "phoneticRu": "okroshka", "category": "food-extra"},
-    {"uk": "сало", "ru": "сало", "en": "lard/fatback", "phoneticUk": "salo", "phoneticRu": "salo", "category": "food-extra"},
-    {"uk": "кисляк", "ru": "простокваша", "en": "sour milk", "phoneticUk": "kyslyak", "phoneticRu": "prostokvasha", "category": "food-extra"},
-    {"uk": "узвар", "ru": "узвар", "en": "dried fruit compote", "phoneticUk": "uzvar", "phoneticRu": "uzvar", "category": "food-extra"},
-    {"uk": "медовик", "ru": "медовик", "en": "honey cake", "phoneticUk": "medovyk", "phoneticRu": "medovik", "category": "food-extra"},
-    {"uk": "пампушка", "ru": "пампушка", "en": "garlic bread/donut", "phoneticUk": "pampushka", "phoneticRu": "pampushka", "category": "food-extra"},
-    {"uk": "кутя", "ru": "кутья", "en": "Christmas wheat berry pudding", "phoneticUk": "kutya", "phoneticRu": "kutya", "category": "food-extra"},
-    {"uk": "пантоміма", "ru": "пантомима", "en": "pantomime", "phoneticUk": "pantomima", "phoneticRu": "pantomima", "category": "entertainment"},
-    {"uk": "цирк", "ru": "цирк", "en": "circus", "phoneticUk": "tsyrk", "phoneticRu": "tsirk", "category": "entertainment"},
-    {"uk": "клоун", "ru": "клоун", "en": "clown", "phoneticUk": "kloun", "phoneticRu": "kloun", "category": "entertainment"},
-    {"uk": "акробат", "ru": "акробат", "en": "acrobat", "phoneticUk": "akrobat", "phoneticRu": "akrobat", "category": "entertainment"},
-    {"uk": "фокусник", "ru": "фокусник", "en": "magician", "phoneticUk": "fokusnyk", "phoneticRu": "fokusnik", "category": "entertainment"},
-    {"uk": "казка", "ru": "сказка", "en": "fairy tale", "phoneticUk": "kazka", "phoneticRu": "skazka", "category": "entertainment"},
-    {"uk": "легенда", "ru": "легенда", "en": "legend", "phoneticUk": "lehenda", "phoneticRu": "legenda", "category": "entertainment"},
-    {"uk": "міф", "ru": "миф", "en": "myth", "phoneticUk": "mif", "phoneticRu": "mif", "category": "entertainment"},
-    {"uk": "пригода", "ru": "приключение", "en": "adventure", "phoneticUk": "pryhoda", "phoneticRu": "priklyucheniye", "category": "entertainment"},
-    {"uk": "роман", "ru": "роман", "en": "novel/romance", "phoneticUk": "roman", "phoneticRu": "roman", "category": "entertainment"},
-    {"uk": "поезія", "ru": "поэзия", "en": "poetry", "phoneticUk": "poeziya", "phoneticRu": "poeziya", "category": "entertainment"},
-    {"uk": "вірш", "ru": "стихотворение", "en": "poem", "phoneticUk": "virsh", "phoneticRu": "stikhotvoreniye", "category": "entertainment"},
-    {"uk": "рима", "ru": "рифма", "en": "rhyme", "phoneticUk": "ryma", "phoneticRu": "rifma", "category": "entertainment"},
-    {"uk": "оповідання", "ru": "рассказ", "en": "short story", "phoneticUk": "opovidannya", "phoneticRu": "rasskaz", "category": "entertainment"},
-    {"uk": "мультфільм", "ru": "мультфильм", "en": "cartoon/animation", "phoneticUk": "multfilm", "phoneticRu": "multfilm", "category": "entertainment"},
-    {"uk": "серіал", "ru": "сериал", "en": "TV series", "phoneticUk": "serial", "phoneticRu": "serial", "category": "entertainment"},
-    {"uk": "документальний фільм", "ru": "документальный фильм", "en": "documentary", "phoneticUk": "dokumentalnyi film", "phoneticRu": "dokumentalnyi film", "category": "entertainment"},
-    {"uk": "комедія", "ru": "комедия", "en": "comedy", "phoneticUk": "komediya", "phoneticRu": "komediya", "category": "entertainment"},
-    {"uk": "трагедія", "ru": "трагедия", "en": "tragedy", "phoneticUk": "trahediya", "phoneticRu": "tragediya", "category": "entertainment"},
-    {"uk": "детектив", "ru": "детектив", "en": "detective story", "phoneticUk": "detektyv", "phoneticRu": "detektiv", "category": "entertainment"},
-    {"uk": "жах", "ru": "ужас", "en": "horror", "phoneticUk": "zhakh", "phoneticRu": "uzhas", "category": "entertainment"},
-    {"uk": "фантастика", "ru": "фантастика", "en": "science fiction", "phoneticUk": "fantastyka", "phoneticRu": "fantastika", "category": "entertainment"},
-    {"uk": "бойовик", "ru": "боевик", "en": "action movie", "phoneticUk": "boyovyk", "phoneticRu": "boyevik", "category": "entertainment"},
-    {"uk": "субтитри", "ru": "субтитры", "en": "subtitles", "phoneticUk": "subtytry", "phoneticRu": "subtitry", "category": "entertainment"},
-    {"uk": "дубляж", "ru": "дубляж", "en": "dubbing", "phoneticUk": "dublyazh", "phoneticRu": "dublyazh", "category": "entertainment"},
-    {"uk": "нагорода", "ru": "награда", "en": "award/reward", "phoneticUk": "nahoroda", "phoneticRu": "nagrada", "category": "entertainment"},
-    {"uk": "пластир", "ru": "пластырь", "en": "bandaid/plaster", "phoneticUk": "plastyr", "phoneticRu": "plastyr", "category": "medical-extra"},
-    {"uk": "крапельниця", "ru": "капельница", "en": "IV drip", "phoneticUk": "krapelnytsya", "phoneticRu": "kapelnitsa", "category": "medical-extra"},
-    {"uk": "таблетка", "ru": "таблетка", "en": "tablet/pill", "phoneticUk": "tabletka", "phoneticRu": "tabletka", "category": "medical-extra"},
-    {"uk": "мазь", "ru": "мазь", "en": "ointment", "phoneticUk": "maz", "phoneticRu": "maz", "category": "medical-extra"},
-    {"uk": "сироп", "ru": "сироп", "en": "syrup (medicine)", "phoneticUk": "syrop", "phoneticRu": "sirop", "category": "medical-extra"},
-    {"uk": "вітаміни", "ru": "витамины", "en": "vitamins", "phoneticUk": "vitaminy", "phoneticRu": "vitaminy", "category": "medical-extra"},
-    {"uk": "знеболюючий", "ru": "обезболивающее", "en": "painkiller", "phoneticUk": "znebolyuyuchyi", "phoneticRu": "obezbolivayushcheye", "category": "medical-extra"},
-    {"uk": "протизапальний", "ru": "противовоспалительное", "en": "anti-inflammatory", "phoneticUk": "protyzapalnyi", "phoneticRu": "protivovaspalitelnoye", "category": "medical-extra"},
-    {"uk": "кардіолог", "ru": "кардиолог", "en": "cardiologist", "phoneticUk": "kardioloh", "phoneticRu": "kardiolog", "category": "medical-extra"},
-    {"uk": "невролог", "ru": "невролог", "en": "neurologist", "phoneticUk": "nevroloh", "phoneticRu": "nevrolog", "category": "medical-extra"},
-    {"uk": "дерматолог", "ru": "дерматолог", "en": "dermatologist", "phoneticUk": "dermatoloh", "phoneticRu": "dermatolog", "category": "medical-extra"},
-    {"uk": "офтальмолог", "ru": "офтальмолог", "en": "ophthalmologist", "phoneticUk": "oftalmoloh", "phoneticRu": "oftalmolog", "category": "medical-extra"},
-    {"uk": "стоматолог", "ru": "стоматолог", "en": "dentist", "phoneticUk": "stomatoloh", "phoneticRu": "stomatolog", "category": "medical-extra"},
-    {"uk": "хірург", "ru": "хирург", "en": "surgeon", "phoneticUk": "khirurh", "phoneticRu": "khirurg", "category": "medical-extra"},
-    {"uk": "педіатр", "ru": "педиатр", "en": "pediatrician", "phoneticUk": "pediatr", "phoneticRu": "pediatr", "category": "medical-extra"},
-    {"uk": "психіатр", "ru": "психиатр", "en": "psychiatrist", "phoneticUk": "psykhiatr", "phoneticRu": "psikhiatr", "category": "medical-extra"},
-    {"uk": "акушерка", "ru": "акушерка", "en": "midwife", "phoneticUk": "akusherka", "phoneticRu": "akusherka", "category": "medical-extra"},
-    {"uk": "медсестра", "ru": "медсестра", "en": "nurse", "phoneticUk": "medsestra", "phoneticRu": "medsestra", "category": "medical-extra"},
-    {"uk": "пацієнт", "ru": "пациент", "en": "patient", "phoneticUk": "patsiyent", "phoneticRu": "patsiyent", "category": "medical-extra"},
-    {"uk": "діагностика", "ru": "диагностика", "en": "diagnostics", "phoneticUk": "diahnostyka", "phoneticRu": "diagnostika", "category": "medical-extra"},
-    {"uk": "цифровий", "ru": "цифровой", "en": "digital", "phoneticUk": "tsyfrovyi", "phoneticRu": "tsifrovoy", "category": "tech-extra"},
-    {"uk": "аналоговий", "ru": "аналоговый", "en": "analog", "phoneticUk": "analohovyi", "phoneticRu": "analogovyi", "category": "tech-extra"},
-    {"uk": "штучний інтелект", "ru": "искусственный интеллект", "en": "artificial intelligence", "phoneticUk": "shtuchnyi intelekt", "phoneticRu": "iskusstvennyi intellekt", "category": "tech-extra"},
-    {"uk": "машинне навчання", "ru": "машинное обучение", "en": "machine learning", "phoneticUk": "mashynne navchannya", "phoneticRu": "mashinnoye obucheniye", "category": "tech-extra"},
-    {"uk": "робот", "ru": "робот", "en": "robot", "phoneticUk": "robot", "phoneticRu": "robot", "category": "tech-extra"},
-    {"uk": "дрон", "ru": "дрон", "en": "drone", "phoneticUk": "dron", "phoneticRu": "dron", "category": "tech-extra"},
-    {"uk": "віртуальна реальність", "ru": "виртуальная реальность", "en": "virtual reality", "phoneticUk": "virtualna realnist", "phoneticRu": "virtualnaya realnost", "category": "tech-extra"},
-    {"uk": "доповнена реальність", "ru": "дополненная реальность", "en": "augmented reality", "phoneticUk": "dopovnena realnist", "phoneticRu": "dopolnennaya realnost", "category": "tech-extra"},
-    {"uk": "блокчейн", "ru": "блокчейн", "en": "blockchain", "phoneticUk": "blokcheyn", "phoneticRu": "blokcheyn", "category": "tech-extra"},
-    {"uk": "криптовалюта", "ru": "криптовалюта", "en": "cryptocurrency", "phoneticUk": "kryptovalyuta", "phoneticRu": "kriptovalyuta", "category": "tech-extra"},
-    {"uk": "додаток", "ru": "приложение", "en": "app/application", "phoneticUk": "dodatok", "phoneticRu": "prilozheniye", "category": "tech-extra"},
-    {"uk": "оновлення", "ru": "обновление", "en": "update", "phoneticUk": "onovlennya", "phoneticRu": "obnovleniye", "category": "tech-extra"},
-    {"uk": "інтерфейс", "ru": "интерфейс", "en": "interface", "phoneticUk": "interfeys", "phoneticRu": "interfeys", "category": "tech-extra"},
-    {"uk": "сенсор", "ru": "сенсор", "en": "sensor", "phoneticUk": "sensor", "phoneticRu": "sensor", "category": "tech-extra"},
-    {"uk": "процесор", "ru": "процессор", "en": "processor/CPU", "phoneticUk": "protsesor", "phoneticRu": "protsessor", "category": "tech-extra"},
-    {"uk": "оперативна пам'ять", "ru": "оперативная память", "en": "RAM", "phoneticUk": "operatyvna pamyat", "phoneticRu": "operativnaya pamyat", "category": "tech-extra"},
-    {"uk": "жорсткий диск", "ru": "жёсткий диск", "en": "hard drive", "phoneticUk": "zhorstkyi dysk", "phoneticRu": "zhyostkiy disk", "category": "tech-extra"},
-    {"uk": "флешка", "ru": "флешка", "en": "flash drive", "phoneticUk": "fleshka", "phoneticRu": "fleshka", "category": "tech-extra"},
-    {"uk": "навушники", "ru": "наушники", "en": "headphones", "phoneticUk": "navushnyky", "phoneticRu": "naushniki", "category": "tech-extra"},
-    {"uk": "колонка", "ru": "колонка", "en": "speaker", "phoneticUk": "kolonka", "phoneticRu": "kolonka", "category": "tech-extra"},
-    {"uk": "вебкамера", "ru": "веб-камера", "en": "webcam", "phoneticUk": "vebkamera", "phoneticRu": "veb-kamera", "category": "tech-extra"},
-    {"uk": "оптоволокно", "ru": "оптоволокно", "en": "fiber optics", "phoneticUk": "optovolokno", "phoneticRu": "optovolokno", "category": "tech-extra"},
-    {"uk": "бездротовий", "ru": "беспроводной", "en": "wireless", "phoneticUk": "bezdrotovyi", "phoneticRu": "besprovodney", "category": "tech-extra"},
-    {"uk": "хмарні обчислення", "ru": "облачные вычисления", "en": "cloud computing", "phoneticUk": "khmarni obchyslennya", "phoneticRu": "oblachnyye vychisleniya", "category": "tech-extra"},
-    {"uk": "кібербезпека", "ru": "кибербезопасность", "en": "cybersecurity", "phoneticUk": "kiberbezpeka", "phoneticRu": "kiberbezopasnost", "category": "tech-extra"},
-    {"uk": "шифрування", "ru": "шифрование", "en": "encryption", "phoneticUk": "shyfruvannya", "phoneticRu": "shifrovaniye", "category": "tech-extra"},
-    {"uk": "археолог", "ru": "археолог", "en": "archaeologist", "phoneticUk": "arkheoloh", "phoneticRu": "arkheolog", "category": "professions"},
-    {"uk": "астроном", "ru": "астроном", "en": "astronomer", "phoneticUk": "astronom", "phoneticRu": "astronom", "category": "professions"},
-    {"uk": "ботанік", "ru": "ботаник", "en": "botanist", "phoneticUk": "botanik", "phoneticRu": "botanik", "category": "professions"},
-    {"uk": "зоолог", "ru": "зоолог", "en": "zoologist", "phoneticUk": "zooloh", "phoneticRu": "zoolog", "category": "professions"},
-    {"uk": "геолог", "ru": "геолог", "en": "geologist", "phoneticUk": "heoloh", "phoneticRu": "geolog", "category": "professions"},
-    {"uk": "метеоролог", "ru": "метеоролог", "en": "meteorologist", "phoneticUk": "meteoroloh", "phoneticRu": "meteorolog", "category": "professions"},
-    {"uk": "фармацевт", "ru": "фармацевт", "en": "pharmacist", "phoneticUk": "farmatsevt", "phoneticRu": "farmatsevt", "category": "professions"},
-    {"uk": "ветеринар", "ru": "ветеринар", "en": "veterinarian", "phoneticUk": "veterynar", "phoneticRu": "veterinar", "category": "professions"},
-    {"uk": "перекладач", "ru": "переводчик", "en": "translator/interpreter", "phoneticUk": "perekladach", "phoneticRu": "perevodchik", "category": "professions"},
-    {"uk": "журналіст", "ru": "журналист", "en": "journalist", "phoneticUk": "zhurnalist", "phoneticRu": "zhurnalist", "category": "professions"},
-    {"uk": "редактор", "ru": "редактор", "en": "editor", "phoneticUk": "redaktor", "phoneticRu": "redaktor", "category": "professions"},
-    {"uk": "фотограф", "ru": "фотограф", "en": "photographer", "phoneticUk": "fotohraf", "phoneticRu": "fotograf", "category": "professions"},
-    {"uk": "дизайнер", "ru": "дизайнер", "en": "designer", "phoneticUk": "dyzayner", "phoneticRu": "dizayner", "category": "professions"},
-    {"uk": "програміст", "ru": "программист", "en": "programmer", "phoneticUk": "prohramist", "phoneticRu": "programmist", "category": "professions"},
-    {"uk": "інженер", "ru": "инженер", "en": "engineer", "phoneticUk": "inzhener", "phoneticRu": "inzhener", "category": "professions"},
-    {"uk": "електрик", "ru": "электрик", "en": "electrician", "phoneticUk": "elektryk", "phoneticRu": "elektrik", "category": "professions"},
-    {"uk": "сантехнік", "ru": "сантехник", "en": "plumber", "phoneticUk": "santekh nik", "phoneticRu": "santekhnik", "category": "professions"},
-    {"uk": "столяр", "ru": "столяр", "en": "carpenter", "phoneticUk": "stolyar", "phoneticRu": "stolyar", "category": "professions"},
-    {"uk": "маляр", "ru": "маляр", "en": "painter (walls)", "phoneticUk": "malyar", "phoneticRu": "malyar", "category": "professions"},
-    {"uk": "кухар", "ru": "повар", "en": "cook/chef", "phoneticUk": "kukhar", "phoneticRu": "povar", "category": "professions"},
-    {"uk": "пекар", "ru": "пекарь", "en": "baker", "phoneticUk": "pekar", "phoneticRu": "pekar", "category": "professions"},
-    {"uk": "м'ясник", "ru": "мясник", "en": "butcher", "phoneticUk": "myasnyk", "phoneticRu": "myasnik", "category": "professions"},
-    {"uk": "перукар", "ru": "парикмахер", "en": "hairdresser", "phoneticUk": "perukar", "phoneticRu": "parikmakher", "category": "professions"},
-    {"uk": "кравець", "ru": "портной", "en": "tailor", "phoneticUk": "kravets", "phoneticRu": "portnoy", "category": "professions"},
-    {"uk": "пожежник", "ru": "пожарный", "en": "firefighter", "phoneticUk": "pozhezhnik", "phoneticRu": "pozharnyi", "category": "professions"},
-    {"uk": "рятувальник", "ru": "спасатель", "en": "rescuer/lifeguard", "phoneticUk": "ryatuvalnik", "phoneticRu": "spasatel", "category": "professions"},
-    {"uk": "водолаз", "ru": "водолаз", "en": "diver", "phoneticUk": "vodolaz", "phoneticRu": "vodolaz", "category": "professions"},
-    {"uk": "шахтар", "ru": "шахтёр", "en": "miner", "phoneticUk": "shakhtar", "phoneticRu": "shakhtyor", "category": "professions"},
-    {"uk": "фермер", "ru": "фермер", "en": "farmer", "phoneticUk": "fermer", "phoneticRu": "fermer", "category": "professions"},
-    {"uk": "бібліотекар", "ru": "библиотекарь", "en": "librarian", "phoneticUk": "bibliotekar", "phoneticRu": "bibliotekar", "category": "professions"},
-    {"uk": "поштар", "ru": "почтальон", "en": "mailman/postman", "phoneticUk": "poshtar", "phoneticRu": "pochtalon", "category": "professions"},
-    {"uk": "ювелір", "ru": "ювелир", "en": "jeweler", "phoneticUk": "yuvelir", "phoneticRu": "yuvelir", "category": "professions"},
-    {"uk": "годинникар", "ru": "часовщик", "en": "watchmaker", "phoneticUk": "hodynnkar", "phoneticRu": "chasovshchik", "category": "professions"},
-    {"uk": "садівник", "ru": "садовник", "en": "gardener", "phoneticUk": "sadivnyk", "phoneticRu": "sadovnik", "category": "professions"},
-    {"uk": "офіціант", "ru": "официант", "en": "waiter", "phoneticUk": "ofitsiant", "phoneticRu": "ofitsiant", "category": "professions"},
-    {"uk": "бармен", "ru": "бармен", "en": "bartender", "phoneticUk": "barmen", "phoneticRu": "barmen", "category": "professions"},
-    {"uk": "прибиральниця", "ru": "уборщица", "en": "cleaner/janitor", "phoneticUk": "prybyralnytsia", "phoneticRu": "uborshchitsa", "category": "professions"},
-    {"uk": "охоронець", "ru": "охранник", "en": "security guard", "phoneticUk": "okhoronets", "phoneticRu": "okhrannik", "category": "professions"},
-    {"uk": "водій", "ru": "водитель", "en": "driver", "phoneticUk": "vodiy", "phoneticRu": "voditel", "category": "professions"},
-    {"uk": "механік", "ru": "механик", "en": "mechanic", "phoneticUk": "mekhanik", "phoneticRu": "mekhanik", "category": "professions"},
-    {"uk": "зварювальник", "ru": "сварщик", "en": "welder", "phoneticUk": "zvaryuvalnik", "phoneticRu": "svarshchik", "category": "professions"},
-    {"uk": "риболовля", "ru": "рыбалка", "en": "fishing", "phoneticUk": "rybolovlya", "phoneticRu": "rybalka", "category": "hobbies"},
-    {"uk": "полювання", "ru": "охота", "en": "hunting", "phoneticUk": "polyuvannya", "phoneticRu": "okhota", "category": "hobbies"},
-    {"uk": "садівництво", "ru": "садоводство", "en": "gardening (hobby)", "phoneticUk": "sadivnytstvo", "phoneticRu": "sadovodstvo", "category": "hobbies"},
-    {"uk": "кулінарія", "ru": "кулинария", "en": "cooking (hobby)", "phoneticUk": "kulinariya", "phoneticRu": "kulinariya", "category": "hobbies"},
-    {"uk": "фотографування", "ru": "фотографирование", "en": "photography (hobby)", "phoneticUk": "fotohrafuvannya", "phoneticRu": "fotografirovaniye", "category": "hobbies"},
-    {"uk": "колекціонування", "ru": "коллекционирование", "en": "collecting", "phoneticUk": "kolektsionuvannya", "phoneticRu": "kollektsionirovaniye", "category": "hobbies"},
-    {"uk": "читання", "ru": "чтение", "en": "reading (hobby)", "phoneticUk": "chytannya", "phoneticRu": "chteniye", "category": "hobbies"},
-    {"uk": "письменництво", "ru": "писательство", "en": "writing (hobby)", "phoneticUk": "pysmennytstvo", "phoneticRu": "pisatelstvo", "category": "hobbies"},
-    {"uk": "туризм", "ru": "туризм", "en": "tourism/hiking", "phoneticUk": "turyzm", "phoneticRu": "turizm", "category": "hobbies"},
-    {"uk": "кемпінг", "ru": "кемпинг", "en": "camping", "phoneticUk": "kempinh", "phoneticRu": "kemping", "category": "hobbies"},
-    {"uk": "скелелазіння", "ru": "скалолазание", "en": "rock climbing", "phoneticUk": "skelelazynnya", "phoneticRu": "skalolazaniye", "category": "hobbies"},
-    {"uk": "серфінг", "ru": "сёрфинг", "en": "surfing", "phoneticUk": "serfinh", "phoneticRu": "syorfing", "category": "hobbies"},
-    {"uk": "дайвінг", "ru": "дайвинг", "en": "diving (scuba)", "phoneticUk": "dayvinh", "phoneticRu": "dayving", "category": "hobbies"},
-    {"uk": "лижі", "ru": "лыжи", "en": "skiing", "phoneticUk": "lyzhi", "phoneticRu": "lyzhi", "category": "hobbies"},
-    {"uk": "ковзани", "ru": "коньки", "en": "ice skating", "phoneticUk": "kovzany", "phoneticRu": "konki", "category": "hobbies"},
-    {"uk": "сноуборд", "ru": "сноуборд", "en": "snowboarding", "phoneticUk": "snoubord", "phoneticRu": "snoubord", "category": "hobbies"},
-    {"uk": "йога", "ru": "йога", "en": "yoga", "phoneticUk": "yoha", "phoneticRu": "yoga", "category": "hobbies"},
-    {"uk": "медитація", "ru": "медитация", "en": "meditation", "phoneticUk": "medytatsiya", "phoneticRu": "meditatsiya", "category": "hobbies"},
-    {"uk": "шахматний клуб", "ru": "шахматный клуб", "en": "chess club", "phoneticUk": "shakhmatnyi klub", "phoneticRu": "shakhmatnyi klub", "category": "hobbies"},
-    {"uk": "рукоділля", "ru": "рукоделие", "en": "handicraft", "phoneticUk": "rukodillya", "phoneticRu": "rukodeliye", "category": "hobbies"},
-    {"uk": "моделювання", "ru": "моделирование", "en": "modeling (hobby)", "phoneticUk": "modelyuvannya", "phoneticRu": "modelirovaniye", "category": "hobbies"},
-    {"uk": "каліграфія", "ru": "каллиграфия", "en": "calligraphy", "phoneticUk": "kalihrafiya", "phoneticRu": "kalligrafiya", "category": "hobbies"},
-    {"uk": "орігамі", "ru": "оригами", "en": "origami", "phoneticUk": "orihami", "phoneticRu": "origami", "category": "hobbies"},
-    {"uk": "ас", "ru": "туз", "en": "ace", "phoneticUk": "as", "phoneticRu": "tuz", "category": "card-games"},
-    {"uk": "козир", "ru": "козырь", "en": "trump card", "phoneticUk": "kozyr", "phoneticRu": "kozyr", "category": "card-games"},
-    {"uk": "колода", "ru": "колода", "en": "deck of cards", "phoneticUk": "koloda", "phoneticRu": "koloda", "category": "card-games"},
-    {"uk": "тасувати", "ru": "тасовать", "en": "to shuffle (cards)", "phoneticUk": "tasuvaty", "phoneticRu": "tasovat", "category": "card-games"},
-    {"uk": "роздавати", "ru": "раздавать", "en": "to deal (cards)", "phoneticUk": "rozdavaty", "phoneticRu": "razdavat", "category": "card-games"},
-    {"uk": "ставка", "ru": "ставка", "en": "bet/wager", "phoneticUk": "stavka", "phoneticRu": "stavka", "category": "card-games"},
-    {"uk": "виграш", "ru": "выигрыш", "en": "winnings/prize", "phoneticUk": "vyhrash", "phoneticRu": "vyigrysh", "category": "card-games"},
-    {"uk": "програш", "ru": "проигрыш", "en": "loss (game)", "phoneticUk": "prohrash", "phoneticRu": "proigrysh", "category": "card-games"},
-    {"uk": "нічия", "ru": "ничья", "en": "draw/tie", "phoneticUk": "nichiya", "phoneticRu": "nichya", "category": "card-games"},
-    {"uk": "суперник", "ru": "соперник", "en": "opponent/rival", "phoneticUk": "supernyk", "phoneticRu": "sopernik", "category": "card-games"},
-    {"uk": "стратегія", "ru": "стратегия", "en": "strategy", "phoneticUk": "stratehiya", "phoneticRu": "strategiya", "category": "card-games"},
-    {"uk": "тактика", "ru": "тактика", "en": "tactic", "phoneticUk": "taktyka", "phoneticRu": "taktika", "category": "card-games"},
-    {"uk": "рахунок", "ru": "счёт", "en": "score", "phoneticUk": "rakhunok", "phoneticRu": "shchyot", "category": "card-games"},
-    {"uk": "раунд", "ru": "раунд", "en": "round", "phoneticUk": "raund", "phoneticRu": "raund", "category": "card-games"},
-    {"uk": "фінал", "ru": "финал", "en": "final", "phoneticUk": "final", "phoneticRu": "final", "category": "card-games"},
-    {"uk": "переможець", "ru": "победитель", "en": "winner", "phoneticUk": "peremozhets", "phoneticRu": "pobeditel", "category": "card-games"},
-    {"uk": "програвший", "ru": "проигравший", "en": "loser", "phoneticUk": "prohravshyi", "phoneticRu": "proigravshiy", "category": "card-games"},
-    {"uk": "офіс", "ru": "офис", "en": "office", "phoneticUk": "ofis", "phoneticRu": "ofis", "category": "business"},
-    {"uk": "зарплата", "ru": "зарплата", "en": "salary", "phoneticUk": "zarplata", "phoneticRu": "zarplata", "category": "business"},
-    {"uk": "директор", "ru": "директор", "en": "director", "phoneticUk": "dyrektor", "phoneticRu": "direktor", "category": "business"},
-    {"uk": "компанія", "ru": "компания", "en": "company", "phoneticUk": "kompaniya", "phoneticRu": "kompaniya", "category": "business"},
-    {"uk": "співробітник", "ru": "сотрудник", "en": "employee", "phoneticUk": "spivrobitnik", "phoneticRu": "sotrudnik", "category": "business"},
-    {"uk": "начальник", "ru": "начальник", "en": "boss/supervisor", "phoneticUk": "nachalnyk", "phoneticRu": "nachalnik", "category": "business"},
-    {"uk": "контракт", "ru": "контракт", "en": "contract", "phoneticUk": "kontrakt", "phoneticRu": "kontrakt", "category": "business"},
-    {"uk": "нарада", "ru": "совещание", "en": "meeting", "phoneticUk": "narada", "phoneticRu": "soveshchaniye", "category": "business"},
-    {"uk": "проєкт", "ru": "проект", "en": "project", "phoneticUk": "proyekt", "phoneticRu": "proyekt", "category": "business"},
-    {"uk": "бюджет", "ru": "бюджет", "en": "budget", "phoneticUk": "byudzhet", "phoneticRu": "byudzhet", "category": "business"},
-    {"uk": "прибуток", "ru": "прибыль", "en": "profit", "phoneticUk": "prybutok", "phoneticRu": "pribyl", "category": "business"},
-    {"uk": "збиток", "ru": "убыток", "en": "loss (financial)", "phoneticUk": "zbytok", "phoneticRu": "ubytok", "category": "business"},
-    {"uk": "клієнт", "ru": "клиент", "en": "client", "phoneticUk": "kliyent", "phoneticRu": "kliyent", "category": "business"},
-    {"uk": "партнер", "ru": "партнёр", "en": "partner (business)", "phoneticUk": "partner", "phoneticRu": "partnyur", "category": "business"},
-    {"uk": "інвестиція", "ru": "инвестиция", "en": "investment", "phoneticUk": "investytsiya", "phoneticRu": "investitsiya", "category": "business"},
-    {"uk": "підприємець", "ru": "предприниматель", "en": "entrepreneur", "phoneticUk": "pidpryyemets", "phoneticRu": "predprinimatel", "category": "business"},
-    {"uk": "бізнес", "ru": "бизнес", "en": "business", "phoneticUk": "biznes", "phoneticRu": "biznes", "category": "business"},
-    {"uk": "маркетинг", "ru": "маркетинг", "en": "marketing", "phoneticUk": "marketynh", "phoneticRu": "marketing", "category": "business"},
-    {"uk": "реклама", "ru": "реклама", "en": "advertising", "phoneticUk": "reklama", "phoneticRu": "reklama", "category": "business"},
-    {"uk": "співбесіда", "ru": "собеседование", "en": "job interview", "phoneticUk": "spivbesida", "phoneticRu": "sobesedovaniye", "category": "business"},
-    {"uk": "резюме", "ru": "резюме", "en": "resume/CV", "phoneticUk": "rezyume", "phoneticRu": "rezyume", "category": "business"},
-    {"uk": "посада", "ru": "должность", "en": "position/title", "phoneticUk": "posada", "phoneticRu": "dolzhnost", "category": "business"},
-    {"uk": "підвищення", "ru": "повышение", "en": "promotion", "phoneticUk": "pidvyshchennya", "phoneticRu": "povysheniye", "category": "business"},
-    {"uk": "звільнення", "ru": "увольнение", "en": "dismissal/firing", "phoneticUk": "zvilnennya", "phoneticRu": "uvolneniye", "category": "business"},
-    {"uk": "відпустка", "ru": "отпуск", "en": "vacation/leave", "phoneticUk": "vidpustka", "phoneticRu": "otpusk", "category": "business"},
-    {"uk": "відрядження", "ru": "командировка", "en": "business trip", "phoneticUk": "vidryadzhennya", "phoneticRu": "komandirovka", "category": "business"},
-    {"uk": "переговори", "ru": "переговоры", "en": "negotiations", "phoneticUk": "perehovory", "phoneticRu": "peregovory", "category": "business"},
-    {"uk": "угода", "ru": "сделка", "en": "deal/transaction", "phoneticUk": "uhoda", "phoneticRu": "sdelka", "category": "business"},
-    {"uk": "склад", "ru": "склад", "en": "warehouse", "phoneticUk": "sklad", "phoneticRu": "sklad", "category": "business"},
-    {"uk": "постачальник", "ru": "поставщик", "en": "supplier", "phoneticUk": "postachalnyk", "phoneticRu": "postavshchik", "category": "business"},
-    {"uk": "бухгалтер", "ru": "бухгалтер", "en": "accountant", "phoneticUk": "bukhhalter", "phoneticRu": "bukhgalter", "category": "business"},
-    {"uk": "податок", "ru": "налог", "en": "tax", "phoneticUk": "podatok", "phoneticRu": "nalog", "category": "business"},
-    {"uk": "рахунок-фактура", "ru": "счёт-фактура", "en": "invoice", "phoneticUk": "rakhunok-faktura", "phoneticRu": "shchyot-faktura", "category": "business"},
-    {"uk": "звіт", "ru": "отчёт", "en": "report", "phoneticUk": "zvit", "phoneticRu": "otchyot", "category": "business"},
-    {"uk": "презентація", "ru": "презентация", "en": "presentation", "phoneticUk": "prezentatsiya", "phoneticRu": "prezentatsiya", "category": "business"},
-    {"uk": "конкурент", "ru": "конкурент", "en": "competitor", "phoneticUk": "konkurent", "phoneticRu": "konkurent", "category": "business"},
-    {"uk": "менеджер", "ru": "менеджер", "en": "manager", "phoneticUk": "menedzher", "phoneticRu": "menedzher", "category": "business"},
-    {"uk": "секретар", "ru": "секретарь", "en": "secretary", "phoneticUk": "sekretar", "phoneticRu": "sekretar", "category": "business"},
-    {"uk": "стажер", "ru": "стажёр", "en": "intern/trainee", "phoneticUk": "stazher", "phoneticRu": "stazhyor", "category": "business"},
-    {"uk": "підприємство", "ru": "предприятие", "en": "enterprise", "phoneticUk": "pidpryyemstvo", "phoneticRu": "predpriyatiye", "category": "business"},
-    {"uk": "виробництво", "ru": "производство", "en": "production/manufacturing", "phoneticUk": "vyrobnytstvo", "phoneticRu": "proizvodstvo", "category": "business"},
-    {"uk": "якість", "ru": "качество", "en": "quality", "phoneticUk": "yakist", "phoneticRu": "kachestvo", "category": "business"},
-    {"uk": "дохід", "ru": "доход", "en": "income/revenue", "phoneticUk": "dokhid", "phoneticRu": "dokhod", "category": "business"},
-    {"uk": "витрата", "ru": "расход", "en": "expense", "phoneticUk": "vytrata", "phoneticRu": "raskhod", "category": "business"},
-    {"uk": "кредит", "ru": "кредит", "en": "loan/credit", "phoneticUk": "kredyt", "phoneticRu": "kredit", "category": "business"},
-    {"uk": "страхування", "ru": "страхование", "en": "insurance", "phoneticUk": "strakhuvannya", "phoneticRu": "strakhovaniye", "category": "business"},
-    {"uk": "графік", "ru": "график", "en": "schedule/graph", "phoneticUk": "hrafik", "phoneticRu": "grafik", "category": "business"},
-    {"uk": "дедлайн", "ru": "дедлайн", "en": "deadline", "phoneticUk": "dedlayn", "phoneticRu": "dedlayn", "category": "business"},
-    {"uk": "аутсорсинг", "ru": "аутсорсинг", "en": "outsourcing", "phoneticUk": "autsorsynh", "phoneticRu": "autsorsing", "category": "business"}
+    {
+      "uk": "бабуся",
+      "ru": "бабушка",
+      "en": "grandmother",
+      "phoneticUk": "babusya",
+      "phoneticRu": "babushka",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Моя бабуся пече смачні пироги."
+        ],
+        "ru": [
+          "Моя бабушка живёт в деревне."
+        ],
+        "en": [
+          "My grandmother bakes delicious pies."
+        ]
+      }
+    },
+    {
+      "uk": "дідусь",
+      "ru": "дедушка",
+      "en": "grandfather",
+      "phoneticUk": "didus",
+      "phoneticRu": "dedushka",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Дідусь читає газету щоранку."
+        ],
+        "ru": [
+          "Дедушка рассказывает интересные истории."
+        ],
+        "en": [
+          "Grandfather reads the newspaper every morning."
+        ]
+      }
+    },
+    {
+      "uk": "онук",
+      "ru": "внук",
+      "en": "grandson",
+      "phoneticUk": "onuk",
+      "phoneticRu": "vnuk",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Онук допомагає дідусеві в саду."
+        ],
+        "ru": [
+          "Внук приехал на каникулы."
+        ],
+        "en": [
+          "The grandson helps his grandfather in the garden."
+        ]
+      }
+    },
+    {
+      "uk": "онука",
+      "ru": "внучка",
+      "en": "granddaughter",
+      "phoneticUk": "onuka",
+      "phoneticRu": "vnuchka",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Онука малює красиві картини."
+        ],
+        "ru": [
+          "Внучка часто звонит бабушке."
+        ],
+        "en": [
+          "The granddaughter paints beautiful pictures."
+        ]
+      }
+    },
+    {
+      "uk": "племінник",
+      "ru": "племянник",
+      "en": "nephew",
+      "phoneticUk": "pleminnyk",
+      "phoneticRu": "plemyannik",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Мій племінник навчається в школі."
+        ],
+        "ru": [
+          "Мой племянник очень умный мальчик."
+        ],
+        "en": [
+          "My nephew goes to school."
+        ]
+      }
+    },
+    {
+      "uk": "племінниця",
+      "ru": "племянница",
+      "en": "niece",
+      "phoneticUk": "pleminnytsya",
+      "phoneticRu": "plemyannitsa",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Племінниця приїхала до нас у гості."
+        ],
+        "ru": [
+          "Племянница любит танцевать."
+        ],
+        "en": [
+          "Our niece came to visit us."
+        ]
+      }
+    },
+    {
+      "uk": "зять",
+      "ru": "зять",
+      "en": "son-in-law",
+      "phoneticUk": "zyat",
+      "phoneticRu": "zyat",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Зять допомагає тещі з ремонтом."
+        ],
+        "ru": [
+          "Зять работает инженером."
+        ],
+        "en": [
+          "The son-in-law is helping his mother-in-law with renovations."
+        ]
+      }
+    },
+    {
+      "uk": "невістка",
+      "ru": "невестка",
+      "en": "daughter-in-law",
+      "phoneticUk": "nevistka",
+      "phoneticRu": "nevestka",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Невістка приготувала смачний борщ."
+        ],
+        "ru": [
+          "Невестка подружилась со свекровью."
+        ],
+        "en": [
+          "The daughter-in-law made a delicious borscht."
+        ]
+      }
+    },
+    {
+      "uk": "свекруха",
+      "ru": "свекровь",
+      "en": "mother-in-law (husband's)",
+      "phoneticUk": "svekrukha",
+      "phoneticRu": "svekrov",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Свекруха навчила мене рецепту вареників."
+        ],
+        "ru": [
+          "Свекровь живёт в соседнем городе."
+        ],
+        "en": [
+          "My mother-in-law taught me the recipe for varenyky."
+        ]
+      }
+    },
+    {
+      "uk": "теща",
+      "ru": "тёща",
+      "en": "mother-in-law (wife's)",
+      "phoneticUk": "teshcha",
+      "phoneticRu": "tyoshcha",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Теща подарувала нам рушники."
+        ],
+        "ru": [
+          "Тёща приготовила вкусный ужин."
+        ],
+        "en": [
+          "My mother-in-law gave us embroidered towels as a gift."
+        ]
+      }
+    },
+    {
+      "uk": "тесть",
+      "ru": "тесть",
+      "en": "father-in-law (wife's)",
+      "phoneticUk": "test",
+      "phoneticRu": "test",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Тесть любить рибалити у вихідні."
+        ],
+        "ru": [
+          "Тесть помог нам переехать."
+        ],
+        "en": [
+          "My father-in-law loves to go fishing on weekends."
+        ]
+      }
+    },
+    {
+      "uk": "свекор",
+      "ru": "свёкор",
+      "en": "father-in-law (husband's)",
+      "phoneticUk": "svekor",
+      "phoneticRu": "svyokor",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Свекор працює на заводі."
+        ],
+        "ru": [
+          "Свёкор встретил нас на вокзале."
+        ],
+        "en": [
+          "My father-in-law works at a factory."
+        ]
+      }
+    },
+    {
+      "uk": "хрещений батько",
+      "ru": "крёстный отец",
+      "en": "godfather",
+      "phoneticUk": "khreshchenyi batko",
+      "phoneticRu": "kryostnyi otets",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Мій хрещений батько живе в іншому місті."
+        ],
+        "ru": [
+          "Мой крёстный отец подарил мне книгу."
+        ],
+        "en": [
+          "My godfather lives in another city."
+        ]
+      }
+    },
+    {
+      "uk": "хрещена мати",
+      "ru": "крёстная мать",
+      "en": "godmother",
+      "phoneticUk": "khreshchena maty",
+      "phoneticRu": "kryostnaya mat",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Хрещена мати прийшла на мій день народження."
+        ],
+        "ru": [
+          "Крёстная мать всегда заботится обо мне."
+        ],
+        "en": [
+          "My godmother came to my birthday."
+        ]
+      }
+    },
+    {
+      "uk": "близнюки",
+      "ru": "близнецы",
+      "en": "twins",
+      "phoneticUk": "blyznyuky",
+      "phoneticRu": "bliznetsy",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Близнюки виглядають однаково."
+        ],
+        "ru": [
+          "Близнецы ходят в один класс."
+        ],
+        "en": [
+          "The twins look exactly alike."
+        ]
+      }
+    },
+    {
+      "uk": "сирота",
+      "ru": "сирота",
+      "en": "orphan",
+      "phoneticUk": "syrota",
+      "phoneticRu": "sirota",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Сирота знайшов нову родину."
+        ],
+        "ru": [
+          "Сирота воспитывался в доброй семье."
+        ],
+        "en": [
+          "The orphan found a new family."
+        ]
+      }
+    },
+    {
+      "uk": "вдова",
+      "ru": "вдова",
+      "en": "widow",
+      "phoneticUk": "vdova",
+      "phoneticRu": "vdova",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Вдова живе з дітьми у своєму домі."
+        ],
+        "ru": [
+          "Вдова воспитала троих детей одна."
+        ],
+        "en": [
+          "The widow lives with her children in her own home."
+        ]
+      }
+    },
+    {
+      "uk": "вдівець",
+      "ru": "вдовец",
+      "en": "widower",
+      "phoneticUk": "vdivets",
+      "phoneticRu": "vdovets",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Вдівець виховує сина сам."
+        ],
+        "ru": [
+          "Вдовец живёт с младшей дочерью."
+        ],
+        "en": [
+          "The widower is raising his son on his own."
+        ]
+      }
+    },
+    {
+      "uk": "наречений",
+      "ru": "жених",
+      "en": "fiancé/groom",
+      "phoneticUk": "narechenyi",
+      "phoneticRu": "zhenikh",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Наречений подарував їй каблучку."
+        ],
+        "ru": [
+          "Жених нервничал перед свадьбой."
+        ],
+        "en": [
+          "The groom gave her a ring."
+        ]
+      }
+    },
+    {
+      "uk": "наречена",
+      "ru": "невеста",
+      "en": "fiancée/bride",
+      "phoneticUk": "narechena",
+      "phoneticRu": "nevesta",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Наречена виглядала дуже красиво."
+        ],
+        "ru": [
+          "Невеста была одета в белое платье."
+        ],
+        "en": [
+          "The bride looked absolutely beautiful."
+        ]
+      }
+    },
+    {
+      "uk": "колиска",
+      "ru": "колыбель",
+      "en": "cradle",
+      "phoneticUk": "kolyska",
+      "phoneticRu": "kolybel",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Мама гойдає колиску тихо."
+        ],
+        "ru": [
+          "Колыбель стояла у окна."
+        ],
+        "en": [
+          "Mom gently rocks the cradle."
+        ]
+      }
+    },
+    {
+      "uk": "підгузок",
+      "ru": "подгузник",
+      "en": "diaper",
+      "phoneticUk": "pidhuzok",
+      "phoneticRu": "podguznik",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Треба купити підгузок для малюка."
+        ],
+        "ru": [
+          "Подгузник нужно менять регулярно."
+        ],
+        "en": [
+          "We need to buy diapers for the baby."
+        ]
+      }
+    },
+    {
+      "uk": "соска",
+      "ru": "соска",
+      "en": "pacifier",
+      "phoneticUk": "soska",
+      "phoneticRu": "soska",
+      "category": "family",
+      "examples": {
+        "uk": [
+          "Малюк загубив свою соску."
+        ],
+        "ru": [
+          "Соска помогает ребёнку успокоиться."
+        ],
+        "en": [
+          "The baby lost his pacifier."
+        ]
+      }
+    },
+    {
+      "uk": "козеня",
+      "ru": "козлёнок",
+      "en": "kid (baby goat)",
+      "phoneticUk": "kozenya",
+      "phoneticRu": "kozlyonok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Козеня стрибає на лузі."
+        ],
+        "ru": [
+          "Козлёнок бегал за мамой."
+        ],
+        "en": [
+          "The baby goat is jumping in the meadow."
+        ]
+      }
+    },
+    {
+      "uk": "ягня",
+      "ru": "ягнёнок",
+      "en": "lamb",
+      "phoneticUk": "yahnya",
+      "phoneticRu": "yagnyonok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Маленьке ягня їсть траву."
+        ],
+        "ru": [
+          "Ягнёнок держался рядом с овцой."
+        ],
+        "en": [
+          "The little lamb is eating grass."
+        ]
+      }
+    },
+    {
+      "uk": "теля",
+      "ru": "телёнок",
+      "en": "calf",
+      "phoneticUk": "telya",
+      "phoneticRu": "telyonok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Теля стоїть біля корови."
+        ],
+        "ru": [
+          "Телёнок пил молоко."
+        ],
+        "en": [
+          "The calf is standing next to the cow."
+        ]
+      }
+    },
+    {
+      "uk": "лоша",
+      "ru": "жеребёнок",
+      "en": "foal",
+      "phoneticUk": "losha",
+      "phoneticRu": "zherebyonok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Лоша бігає по полю."
+        ],
+        "ru": [
+          "Жеребёнок родился этой весной."
+        ],
+        "en": [
+          "The foal is running across the field."
+        ]
+      }
+    },
+    {
+      "uk": "цуценя",
+      "ru": "щенок",
+      "en": "puppy",
+      "phoneticUk": "tsutsenya",
+      "phoneticRu": "shchenok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Цуценя грається з м'ячиком."
+        ],
+        "ru": [
+          "Щенок лизнул меня в нос."
+        ],
+        "en": [
+          "The puppy is playing with a ball."
+        ]
+      }
+    },
+    {
+      "uk": "кошеня",
+      "ru": "котёнок",
+      "en": "kitten",
+      "phoneticUk": "koshenya",
+      "phoneticRu": "kotyonok",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Кошеня спить на дивані."
+        ],
+        "ru": [
+          "Котёнок играл с клубком."
+        ],
+        "en": [
+          "The kitten is sleeping on the couch."
+        ]
+      }
+    },
+    {
+      "uk": "лисиця",
+      "ru": "лисица",
+      "en": "fox",
+      "phoneticUk": "lysytsya",
+      "phoneticRu": "lisitsa",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Лисиця хитра і спритна."
+        ],
+        "ru": [
+          "Лисица пробежала через поле."
+        ],
+        "en": [
+          "The fox is clever and agile."
+        ]
+      }
+    },
+    {
+      "uk": "вовк",
+      "ru": "волк",
+      "en": "wolf",
+      "phoneticUk": "vovk",
+      "phoneticRu": "volk",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Вовк виє вночі в лісі."
+        ],
+        "ru": [
+          "Волк живёт в густом лесу."
+        ],
+        "en": [
+          "The wolf howls at night in the forest."
+        ]
+      }
+    },
+    {
+      "uk": "олень",
+      "ru": "олень",
+      "en": "deer",
+      "phoneticUk": "olen",
+      "phoneticRu": "olen",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Олень має гарні роги."
+        ],
+        "ru": [
+          "Олень пил воду из реки."
+        ],
+        "en": [
+          "The deer has beautiful antlers."
+        ]
+      }
+    },
+    {
+      "uk": "лось",
+      "ru": "лось",
+      "en": "moose/elk",
+      "phoneticUk": "los",
+      "phoneticRu": "los",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Лось перейшов дорогу вранці."
+        ],
+        "ru": [
+          "Лось вышел на опушку леса."
+        ],
+        "en": [
+          "The moose crossed the road in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "зебра",
+      "ru": "зебра",
+      "en": "zebra",
+      "phoneticUk": "zebra",
+      "phoneticRu": "zebra",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Зебра має чорно-білі смуги."
+        ],
+        "ru": [
+          "Зебра паслась в саванне."
+        ],
+        "en": [
+          "The zebra has black and white stripes."
+        ]
+      }
+    },
+    {
+      "uk": "жирафа",
+      "ru": "жираф",
+      "en": "giraffe",
+      "phoneticUk": "zhyrafa",
+      "phoneticRu": "zhiraf",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Жирафа їсть листя з дерев."
+        ],
+        "ru": [
+          "Жираф — самое высокое животное."
+        ],
+        "en": [
+          "The giraffe eats leaves from the trees."
+        ]
+      }
+    },
+    {
+      "uk": "носоріг",
+      "ru": "носорог",
+      "en": "rhinoceros",
+      "phoneticUk": "nosorih",
+      "phoneticRu": "nosorog",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Носоріг має великий ріг на носі."
+        ],
+        "ru": [
+          "Носорог отдыхал у водоёма."
+        ],
+        "en": [
+          "The rhinoceros has a large horn on its nose."
+        ]
+      }
+    },
+    {
+      "uk": "бегемот",
+      "ru": "бегемот",
+      "en": "hippopotamus",
+      "phoneticUk": "behemot",
+      "phoneticRu": "begemot",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Бегемот купається в річці."
+        ],
+        "ru": [
+          "Бегемот открыл огромную пасть."
+        ],
+        "en": [
+          "The hippopotamus bathes in the river."
+        ]
+      }
+    },
+    {
+      "uk": "горила",
+      "ru": "горилла",
+      "en": "gorilla",
+      "phoneticUk": "horyla",
+      "phoneticRu": "gorilla",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Горила сильніша за людину."
+        ],
+        "ru": [
+          "Горилла сидела и смотрела на нас."
+        ],
+        "en": [
+          "A gorilla is stronger than a human."
+        ]
+      }
+    },
+    {
+      "uk": "шимпанзе",
+      "ru": "шимпанзе",
+      "en": "chimpanzee",
+      "phoneticUk": "shympanze",
+      "phoneticRu": "shimpanze",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Шимпанзе вміє використовувати знаряддя."
+        ],
+        "ru": [
+          "Шимпанзе очень умное животное."
+        ],
+        "en": [
+          "Chimpanzees can use tools."
+        ]
+      }
+    },
+    {
+      "uk": "мавпа",
+      "ru": "обезьяна",
+      "en": "monkey/ape",
+      "phoneticUk": "mavpa",
+      "phoneticRu": "obezyana",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Мавпа стрибає по гілках дерева."
+        ],
+        "ru": [
+          "Обезьяна схватила банан."
+        ],
+        "en": [
+          "The monkey swings through the branches of a tree."
+        ]
+      }
+    },
+    {
+      "uk": "верблюд",
+      "ru": "верблюд",
+      "en": "camel",
+      "phoneticUk": "verblyud",
+      "phoneticRu": "verblyud",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Верблюд може довго йти без води."
+        ],
+        "ru": [
+          "Верблюд идёт по пустыне."
+        ],
+        "en": [
+          "A camel can go a long time without water."
+        ]
+      }
+    },
+    {
+      "uk": "кенгуру",
+      "ru": "кенгуру",
+      "en": "kangaroo",
+      "phoneticUk": "kenhuru",
+      "phoneticRu": "kenguru",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Кенгуру носить малюка в сумці."
+        ],
+        "ru": [
+          "Кенгуру прыгает очень далеко."
+        ],
+        "en": [
+          "The kangaroo carries its baby in its pouch."
+        ]
+      }
+    },
+    {
+      "uk": "бобер",
+      "ru": "бобёр",
+      "en": "beaver",
+      "phoneticUk": "bober",
+      "phoneticRu": "bobyor",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Бобер будує греблю на річці."
+        ],
+        "ru": [
+          "Бобёр грыз дерево у берега."
+        ],
+        "en": [
+          "The beaver builds a dam on the river."
+        ]
+      }
+    },
+    {
+      "uk": "їжак",
+      "ru": "ёжик",
+      "en": "hedgehog",
+      "phoneticUk": "yizhak",
+      "phoneticRu": "yozhik",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Їжак згорнувся в клубок."
+        ],
+        "ru": [
+          "Ёжик нашёл яблоко в лесу."
+        ],
+        "en": [
+          "The hedgehog curled up into a ball."
+        ]
+      }
+    },
+    {
+      "uk": "білка",
+      "ru": "белка",
+      "en": "squirrel",
+      "phoneticUk": "bilka",
+      "phoneticRu": "belka",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Білка збирає горіхи на зиму."
+        ],
+        "ru": [
+          "Белка прыгала с ветки на ветку."
+        ],
+        "en": [
+          "The squirrel gathers nuts for winter."
+        ]
+      }
+    },
+    {
+      "uk": "хом'як",
+      "ru": "хомяк",
+      "en": "hamster",
+      "phoneticUk": "khomyak",
+      "phoneticRu": "khomyak",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Хом'як набив щоки їжею."
+        ],
+        "ru": [
+          "Хомяк бегал в колесе весь вечер."
+        ],
+        "en": [
+          "The hamster stuffed its cheeks with food."
+        ]
+      }
+    },
+    {
+      "uk": "морська свинка",
+      "ru": "морская свинка",
+      "en": "guinea pig",
+      "phoneticUk": "morska svynka",
+      "phoneticRu": "morskaya svinka",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Морська свинка дуже м'яка і тепла."
+        ],
+        "ru": [
+          "Морская свинка пищала в клетке."
+        ],
+        "en": [
+          "The guinea pig is very soft and warm."
+        ]
+      }
+    },
+    {
+      "uk": "хамелеон",
+      "ru": "хамелеон",
+      "en": "chameleon",
+      "phoneticUk": "khameleon",
+      "phoneticRu": "khameleon",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Хамелеон змінює колір тіла."
+        ],
+        "ru": [
+          "Хамелеон сидел на ветке неподвижно."
+        ],
+        "en": [
+          "The chameleon changes the color of its body."
+        ]
+      }
+    },
+    {
+      "uk": "ігуана",
+      "ru": "игуана",
+      "en": "iguana",
+      "phoneticUk": "ihuana",
+      "phoneticRu": "iguana",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Ігуана гріється на сонці."
+        ],
+        "ru": [
+          "Игуана медленно ползла по камню."
+        ],
+        "en": [
+          "The iguana is warming itself in the sun."
+        ]
+      }
+    },
+    {
+      "uk": "черепаха",
+      "ru": "черепаха",
+      "en": "turtle/tortoise",
+      "phoneticUk": "cherepakha",
+      "phoneticRu": "cherepakha",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Черепаха повільно повзе по траві."
+        ],
+        "ru": [
+          "Черепаха спрятала голову в панцирь."
+        ],
+        "en": [
+          "The tortoise slowly crawls through the grass."
+        ]
+      }
+    },
+    {
+      "uk": "крокодил",
+      "ru": "крокодил",
+      "en": "crocodile",
+      "phoneticUk": "krokodyl",
+      "phoneticRu": "krokodil",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Крокодил лежить на березі річки."
+        ],
+        "ru": [
+          "Крокодил открыл пасть на солнце."
+        ],
+        "en": [
+          "The crocodile is lying on the riverbank."
+        ]
+      }
+    },
+    {
+      "uk": "пітон",
+      "ru": "питон",
+      "en": "python",
+      "phoneticUk": "piton",
+      "phoneticRu": "piton",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Пітон — дуже велика змія."
+        ],
+        "ru": [
+          "Питон обвился вокруг ветки."
+        ],
+        "en": [
+          "A python is a very large snake."
+        ]
+      }
+    },
+    {
+      "uk": "жаба",
+      "ru": "лягушка",
+      "en": "frog",
+      "phoneticUk": "zhaba",
+      "phoneticRu": "lyagushka",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Жаба стрибнула у ставок."
+        ],
+        "ru": [
+          "Лягушка квакала всю ночь."
+        ],
+        "en": [
+          "The frog jumped into the pond."
+        ]
+      }
+    },
+    {
+      "uk": "равлик",
+      "ru": "улитка",
+      "en": "snail",
+      "phoneticUk": "ravlyk",
+      "phoneticRu": "ulitka",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Равлик повільно лізе по листку."
+        ],
+        "ru": [
+          "Улитка оставила след на стекле."
+        ],
+        "en": [
+          "The snail slowly crawls along a leaf."
+        ]
+      }
+    },
+    {
+      "uk": "черв'як",
+      "ru": "червяк",
+      "en": "worm",
+      "phoneticUk": "chervyak",
+      "phoneticRu": "chervyak",
+      "category": "animals",
+      "examples": {
+        "uk": [
+          "Черв'як виліз після дощу на землю."
+        ],
+        "ru": [
+          "Червяк уполз под камень."
+        ],
+        "en": [
+          "The worm came out onto the ground after the rain."
+        ]
+      }
+    },
+    {
+      "uk": "піца",
+      "ru": "пицца",
+      "en": "pizza",
+      "phoneticUk": "pitsa",
+      "phoneticRu": "pitstsa",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Ми замовили піцу з грибами."
+        ],
+        "ru": [
+          "Пицца была горячей и вкусной."
+        ],
+        "en": [
+          "We ordered a pizza with mushrooms."
+        ]
+      }
+    },
+    {
+      "uk": "гамбургер",
+      "ru": "гамбургер",
+      "en": "hamburger",
+      "phoneticUk": "hamburher",
+      "phoneticRu": "gamburger",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Він з'їв гамбургер на обід."
+        ],
+        "ru": [
+          "Гамбургер оказался очень сытным."
+        ],
+        "en": [
+          "He ate a hamburger for lunch."
+        ]
+      }
+    },
+    {
+      "uk": "сендвіч",
+      "ru": "сэндвич",
+      "en": "sandwich",
+      "phoneticUk": "sendvich",
+      "phoneticRu": "sendvich",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Вона взяла сендвіч на роботу."
+        ],
+        "ru": [
+          "Сэндвич с сыром — мой любимый завтрак."
+        ],
+        "en": [
+          "She took a sandwich to work."
+        ]
+      }
+    },
+    {
+      "uk": "хот-дог",
+      "ru": "хот-дог",
+      "en": "hot dog",
+      "phoneticUk": "khot-doh",
+      "phoneticRu": "khot-dog",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Я купив хот-дог на стадіоні."
+        ],
+        "ru": [
+          "Хот-дог продавали прямо на улице."
+        ],
+        "en": [
+          "I bought a hot dog at the stadium."
+        ]
+      }
+    },
+    {
+      "uk": "картопля фрі",
+      "ru": "картофель фри",
+      "en": "french fries",
+      "phoneticUk": "kartoplya fri",
+      "phoneticRu": "kartofel fri",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Картопля фрі добре смакує з соусом."
+        ],
+        "ru": [
+          "Картофель фри хрустел и был горячим."
+        ],
+        "en": [
+          "French fries taste great with sauce."
+        ]
+      }
+    },
+    {
+      "uk": "чіпси",
+      "ru": "чипсы",
+      "en": "chips/crisps",
+      "phoneticUk": "chipsy",
+      "phoneticRu": "chipsy",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Діти їдять чіпси під час фільму."
+        ],
+        "ru": [
+          "Чипсы быстро закончились на вечеринке."
+        ],
+        "en": [
+          "The kids are eating chips during the movie."
+        ]
+      }
+    },
+    {
+      "uk": "попкорн",
+      "ru": "попкорн",
+      "en": "popcorn",
+      "phoneticUk": "popkorn",
+      "phoneticRu": "popkorn",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Ми їмо попкорн у кінотеатрі."
+        ],
+        "ru": [
+          "Попкорн хрустит очень громко."
+        ],
+        "en": [
+          "We eat popcorn at the movie theater."
+        ]
+      }
+    },
+    {
+      "uk": "кекс",
+      "ru": "кекс",
+      "en": "muffin/cupcake",
+      "phoneticUk": "keks",
+      "phoneticRu": "keks",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Мама спекла шоколадний кекс."
+        ],
+        "ru": [
+          "Кекс с изюмом был очень мягким."
+        ],
+        "en": [
+          "Mom baked a chocolate muffin."
+        ]
+      }
+    },
+    {
+      "uk": "торт",
+      "ru": "торт",
+      "en": "cake (layered)",
+      "phoneticUk": "tort",
+      "phoneticRu": "tort",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "На день народження приготували торт."
+        ],
+        "ru": [
+          "Торт украсили свечами и ягодами."
+        ],
+        "en": [
+          "They made a cake for the birthday."
+        ]
+      }
+    },
+    {
+      "uk": "пиріг",
+      "ru": "пирог",
+      "en": "pie",
+      "phoneticUk": "pyrih",
+      "phoneticRu": "pirog",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Бабуся спекла пиріг з яблуками."
+        ],
+        "ru": [
+          "Пирог с капустой был ещё горячим."
+        ],
+        "en": [
+          "Grandma baked an apple pie."
+        ]
+      }
+    },
+    {
+      "uk": "пиріжок",
+      "ru": "пирожок",
+      "en": "small pie/pastry",
+      "phoneticUk": "pyrizhok",
+      "phoneticRu": "pirozhok",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Я купив пиріжок на ринку."
+        ],
+        "ru": [
+          "Пирожок с картошкой стоил недорого."
+        ],
+        "en": [
+          "I bought a pastry at the market."
+        ]
+      }
+    },
+    {
+      "uk": "вареники",
+      "ru": "вареники",
+      "en": "dumplings (Ukrainian)",
+      "phoneticUk": "varenyky",
+      "phoneticRu": "vareniki",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Вареники з вишнями — моя улюблена страва."
+        ],
+        "ru": [
+          "Вареники со сметаной — традиционное блюдо."
+        ],
+        "en": [
+          "Cherry dumplings are my favorite dish."
+        ]
+      }
+    },
+    {
+      "uk": "пельмені",
+      "ru": "пельмени",
+      "en": "dumplings (meat)",
+      "phoneticUk": "pelmeni",
+      "phoneticRu": "pelmeni",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "На вечерю зварили пельмені."
+        ],
+        "ru": [
+          "Пельмени варили в подсоленной воде."
+        ],
+        "en": [
+          "They cooked dumplings for dinner."
+        ]
+      }
+    },
+    {
+      "uk": "голубці",
+      "ru": "голубцы",
+      "en": "cabbage rolls",
+      "phoneticUk": "holubtsi",
+      "phoneticRu": "golubtsy",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Мама готує голубці щонеділі."
+        ],
+        "ru": [
+          "Голубцы тушились в томатном соусе."
+        ],
+        "en": [
+          "Mom makes cabbage rolls every Sunday."
+        ]
+      }
+    },
+    {
+      "uk": "деруни",
+      "ru": "драники",
+      "en": "potato pancakes",
+      "phoneticUk": "deruny",
+      "phoneticRu": "draniki",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Деруни зі сметаною дуже смачні."
+        ],
+        "ru": [
+          "Драники хрустели и пахли картошкой."
+        ],
+        "en": [
+          "Potato pancakes with sour cream are delicious."
+        ]
+      }
+    },
+    {
+      "uk": "борщ",
+      "ru": "борщ",
+      "en": "borscht",
+      "phoneticUk": "borshch",
+      "phoneticRu": "borshch",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Борщ зі сметаною — традиційна страва."
+        ],
+        "ru": [
+          "Борщ варили с говядиной и свёклой."
+        ],
+        "en": [
+          "Borscht with sour cream is a traditional dish."
+        ]
+      }
+    },
+    {
+      "uk": "солянка",
+      "ru": "солянка",
+      "en": "thick savory soup",
+      "phoneticUk": "solyanka",
+      "phoneticRu": "solyanka",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Солянка — гострий і ситний суп."
+        ],
+        "ru": [
+          "Солянка с оливками очень вкусная."
+        ],
+        "en": [
+          "Solyanka is a spicy and hearty soup."
+        ]
+      }
+    },
+    {
+      "uk": "окрошка",
+      "ru": "окрошка",
+      "en": "cold vegetable soup",
+      "phoneticUk": "okroshka",
+      "phoneticRu": "okroshka",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Окрошка освіжає в спеку."
+        ],
+        "ru": [
+          "Окрошка на квасе — летний суп."
+        ],
+        "en": [
+          "Okroshka is refreshing in the heat."
+        ]
+      }
+    },
+    {
+      "uk": "сало",
+      "ru": "сало",
+      "en": "lard/fatback",
+      "phoneticUk": "salo",
+      "phoneticRu": "salo",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Сало з часником — класична закуска."
+        ],
+        "ru": [
+          "Сало нарезали тонкими ломтиками."
+        ],
+        "en": [
+          "Salo with garlic is a classic appetizer."
+        ]
+      }
+    },
+    {
+      "uk": "кисляк",
+      "ru": "простокваша",
+      "en": "sour milk",
+      "phoneticUk": "kyslyak",
+      "phoneticRu": "prostokvasha",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Кисляк корисний для шлунку."
+        ],
+        "ru": [
+          "Простокваша стояла в холодильнике."
+        ],
+        "en": [
+          "Sour milk is good for the stomach."
+        ]
+      }
+    },
+    {
+      "uk": "узвар",
+      "ru": "узвар",
+      "en": "dried fruit compote",
+      "phoneticUk": "uzvar",
+      "phoneticRu": "uzvar",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "На Різдво варять узвар із сухофруктів."
+        ],
+        "ru": [
+          "Узвар пили тёплым в праздники."
+        ],
+        "en": [
+          "At Christmas, they make uzvar from dried fruit."
+        ]
+      }
+    },
+    {
+      "uk": "медовик",
+      "ru": "медовик",
+      "en": "honey cake",
+      "phoneticUk": "medovyk",
+      "phoneticRu": "medovik",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Медовик просочений кремом дуже ніжний."
+        ],
+        "ru": [
+          "Медовик — любимый торт в нашей семье."
+        ],
+        "en": [
+          "Honey cake soaked in cream is very tender."
+        ]
+      }
+    },
+    {
+      "uk": "пампушка",
+      "ru": "пампушка",
+      "en": "garlic bread/donut",
+      "phoneticUk": "pampushka",
+      "phoneticRu": "pampushka",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "Пампушка з часником подається до борщу."
+        ],
+        "ru": [
+          "Пампушка была мягкой и ароматной."
+        ],
+        "en": [
+          "Garlic pampushka is served with borscht."
+        ]
+      }
+    },
+    {
+      "uk": "кутя",
+      "ru": "кутья",
+      "en": "Christmas wheat berry pudding",
+      "phoneticUk": "kutya",
+      "phoneticRu": "kutya",
+      "category": "food-extra",
+      "examples": {
+        "uk": [
+          "На Святвечір подають кутю з маком."
+        ],
+        "ru": [
+          "Кутья готовится из пшеницы и мёда."
+        ],
+        "en": [
+          "On Christmas Eve, kutya with poppy seeds is served."
+        ]
+      }
+    },
+    {
+      "uk": "пантоміма",
+      "ru": "пантомима",
+      "en": "pantomime",
+      "phoneticUk": "pantomima",
+      "phoneticRu": "pantomima",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Актор виступав у пантомімі без слів."
+        ],
+        "ru": [
+          "Пантомима — это искусство жестов."
+        ],
+        "en": [
+          "The actor performed in a pantomime without words."
+        ]
+      }
+    },
+    {
+      "uk": "цирк",
+      "ru": "цирк",
+      "en": "circus",
+      "phoneticUk": "tsyrk",
+      "phoneticRu": "tsirk",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Діти пішли до цирку у вихідний."
+        ],
+        "ru": [
+          "В цирке выступали акробаты и клоуны."
+        ],
+        "en": [
+          "The children went to the circus on the weekend."
+        ]
+      }
+    },
+    {
+      "uk": "клоун",
+      "ru": "клоун",
+      "en": "clown",
+      "phoneticUk": "kloun",
+      "phoneticRu": "kloun",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Клоун смішить дітей у цирку."
+        ],
+        "ru": [
+          "Клоун надел огромный красный нос."
+        ],
+        "en": [
+          "The clown makes the children laugh at the circus."
+        ]
+      }
+    },
+    {
+      "uk": "акробат",
+      "ru": "акробат",
+      "en": "acrobat",
+      "phoneticUk": "akrobat",
+      "phoneticRu": "akrobat",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Акробат виконав складний трюк."
+        ],
+        "ru": [
+          "Акробат летел под куполом цирка."
+        ],
+        "en": [
+          "The acrobat performed a difficult trick."
+        ]
+      }
+    },
+    {
+      "uk": "фокусник",
+      "ru": "фокусник",
+      "en": "magician",
+      "phoneticUk": "fokusnyk",
+      "phoneticRu": "fokusnik",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Фокусник витягнув кролика з капелюха."
+        ],
+        "ru": [
+          "Фокусник удивил всех своим трюком."
+        ],
+        "en": [
+          "The magician pulled a rabbit out of a hat."
+        ]
+      }
+    },
+    {
+      "uk": "казка",
+      "ru": "сказка",
+      "en": "fairy tale",
+      "phoneticUk": "kazka",
+      "phoneticRu": "skazka",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Мама читає казку перед сном."
+        ],
+        "ru": [
+          "Сказка о Золушке — моя любимая."
+        ],
+        "en": [
+          "Mom reads a fairy tale before bed."
+        ]
+      }
+    },
+    {
+      "uk": "легенда",
+      "ru": "легенда",
+      "en": "legend",
+      "phoneticUk": "lehenda",
+      "phoneticRu": "legenda",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Ця легенда передається з покоління в покоління."
+        ],
+        "ru": [
+          "Легенда о рыцаре жила в народе."
+        ],
+        "en": [
+          "This legend has been passed down from generation to generation."
+        ]
+      }
+    },
+    {
+      "uk": "міф",
+      "ru": "миф",
+      "en": "myth",
+      "phoneticUk": "mif",
+      "phoneticRu": "mif",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Давньогрецький міф розповідає про богів."
+        ],
+        "ru": [
+          "Миф о Прометее известен всему миру."
+        ],
+        "en": [
+          "An ancient Greek myth tells of the gods."
+        ]
+      }
+    },
+    {
+      "uk": "пригода",
+      "ru": "приключение",
+      "en": "adventure",
+      "phoneticUk": "pryhoda",
+      "phoneticRu": "priklyucheniye",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Він описав свою пригоду в горах."
+        ],
+        "ru": [
+          "Приключение в джунглях изменило его жизнь."
+        ],
+        "en": [
+          "He described his adventure in the mountains."
+        ]
+      }
+    },
+    {
+      "uk": "роман",
+      "ru": "роман",
+      "en": "novel/romance",
+      "phoneticUk": "roman",
+      "phoneticRu": "roman",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Вона читає цікавий роман вечорами."
+        ],
+        "ru": [
+          "Роман Толстого изучают в школе."
+        ],
+        "en": [
+          "She reads an interesting novel in the evenings."
+        ]
+      }
+    },
+    {
+      "uk": "поезія",
+      "ru": "поэзия",
+      "en": "poetry",
+      "phoneticUk": "poeziya",
+      "phoneticRu": "poeziya",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Поезія Шевченка відома всьому світу."
+        ],
+        "ru": [
+          "Поэзия Пушкина полна музыкальности."
+        ],
+        "en": [
+          "Shevchenko's poetry is known throughout the world."
+        ]
+      }
+    },
+    {
+      "uk": "вірш",
+      "ru": "стихотворение",
+      "en": "poem",
+      "phoneticUk": "virsh",
+      "phoneticRu": "stikhotvoreniye",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Учень вивчив вірш напам'ять."
+        ],
+        "ru": [
+          "Стихотворение тронуло всех до слёз."
+        ],
+        "en": [
+          "The student learned the poem by heart."
+        ]
+      }
+    },
+    {
+      "uk": "рима",
+      "ru": "рифма",
+      "en": "rhyme",
+      "phoneticUk": "ryma",
+      "phoneticRu": "rifma",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "У цьому вірші гарна рима."
+        ],
+        "ru": [
+          "Рифма делает стихи красивее."
+        ],
+        "en": [
+          "This poem has a nice rhyme."
+        ]
+      }
+    },
+    {
+      "uk": "оповідання",
+      "ru": "рассказ",
+      "en": "short story",
+      "phoneticUk": "opovidannya",
+      "phoneticRu": "rasskaz",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Він написав коротке оповідання про дружбу."
+        ],
+        "ru": [
+          "Рассказ Чехова очень короткий и глубокий."
+        ],
+        "en": [
+          "He wrote a short story about friendship."
+        ]
+      }
+    },
+    {
+      "uk": "мультфільм",
+      "ru": "мультфильм",
+      "en": "cartoon/animation",
+      "phoneticUk": "multfilm",
+      "phoneticRu": "multfilm",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Діти дивляться мультфільм після школи."
+        ],
+        "ru": [
+          "Мультфильм про Простоквашино — классика."
+        ],
+        "en": [
+          "The kids watch a cartoon after school."
+        ]
+      }
+    },
+    {
+      "uk": "серіал",
+      "ru": "сериал",
+      "en": "TV series",
+      "phoneticUk": "serial",
+      "phoneticRu": "serial",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Вона дивиться серіал щовечора."
+        ],
+        "ru": [
+          "Сериал закончился неожиданно."
+        ],
+        "en": [
+          "She watches a TV series every evening."
+        ]
+      }
+    },
+    {
+      "uk": "документальний фільм",
+      "ru": "документальный фильм",
+      "en": "documentary",
+      "phoneticUk": "dokumentalnyi film",
+      "phoneticRu": "dokumentalnyi film",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Документальний фільм про природу дуже цікавий."
+        ],
+        "ru": [
+          "Документальный фильм снимали три года."
+        ],
+        "en": [
+          "The nature documentary is very interesting."
+        ]
+      }
+    },
+    {
+      "uk": "комедія",
+      "ru": "комедия",
+      "en": "comedy",
+      "phoneticUk": "komediya",
+      "phoneticRu": "komediya",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Ця комедія змусила нас сміятися."
+        ],
+        "ru": [
+          "Комедия собрала полный зал зрителей."
+        ],
+        "en": [
+          "This comedy had us laughing."
+        ]
+      }
+    },
+    {
+      "uk": "трагедія",
+      "ru": "трагедия",
+      "en": "tragedy",
+      "phoneticUk": "trahediya",
+      "phoneticRu": "tragediya",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Трагедія Шекспіра вивчається у школі."
+        ],
+        "ru": [
+          "Трагедия завершилась гибелью главного героя."
+        ],
+        "en": [
+          "Shakespeare's tragedy is studied in school."
+        ]
+      }
+    },
+    {
+      "uk": "детектив",
+      "ru": "детектив",
+      "en": "detective story",
+      "phoneticUk": "detektyv",
+      "phoneticRu": "detektiv",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Вона любить читати детектив перед сном."
+        ],
+        "ru": [
+          "Детектив раскрыл преступление за три дня."
+        ],
+        "en": [
+          "She likes to read a detective story before bed."
+        ]
+      }
+    },
+    {
+      "uk": "жах",
+      "ru": "ужас",
+      "en": "horror",
+      "phoneticUk": "zhakh",
+      "phoneticRu": "uzhas",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Він не любить фільми жаху."
+        ],
+        "ru": [
+          "Ужас охватил всех, когда погас свет."
+        ],
+        "en": [
+          "He doesn't like horror movies."
+        ]
+      }
+    },
+    {
+      "uk": "фантастика",
+      "ru": "фантастика",
+      "en": "science fiction",
+      "phoneticUk": "fantastyka",
+      "phoneticRu": "fantastika",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Фантастика розповідає про майбутнє."
+        ],
+        "ru": [
+          "Фантастика часто предсказывает будущее."
+        ],
+        "en": [
+          "Science fiction tells stories about the future."
+        ]
+      }
+    },
+    {
+      "uk": "бойовик",
+      "ru": "боевик",
+      "en": "action movie",
+      "phoneticUk": "boyovyk",
+      "phoneticRu": "boyevik",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Бойовик мав багато сцен погоні."
+        ],
+        "ru": [
+          "Боевик шёл два часа без остановки."
+        ],
+        "en": [
+          "The action movie had a lot of chase scenes."
+        ]
+      }
+    },
+    {
+      "uk": "субтитри",
+      "ru": "субтитры",
+      "en": "subtitles",
+      "phoneticUk": "subtytry",
+      "phoneticRu": "subtitry",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Фільм мав субтитри українською мовою."
+        ],
+        "ru": [
+          "Субтитры помогли понять иностранный фильм."
+        ],
+        "en": [
+          "The film had subtitles in Ukrainian."
+        ]
+      }
+    },
+    {
+      "uk": "дубляж",
+      "ru": "дубляж",
+      "en": "dubbing",
+      "phoneticUk": "dublyazh",
+      "phoneticRu": "dublyazh",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Дубляж цього фільму дуже якісний."
+        ],
+        "ru": [
+          "Дубляж был сделан профессиональными актёрами."
+        ],
+        "en": [
+          "The dubbing on this film is very good."
+        ]
+      }
+    },
+    {
+      "uk": "нагорода",
+      "ru": "награда",
+      "en": "award/reward",
+      "phoneticUk": "nahoroda",
+      "phoneticRu": "nagrada",
+      "category": "entertainment",
+      "examples": {
+        "uk": [
+          "Актриса отримала нагороду за найкращу роль."
+        ],
+        "ru": [
+          "Награда нашла героя через много лет."
+        ],
+        "en": [
+          "The actress received an award for best role."
+        ]
+      }
+    },
+    {
+      "uk": "пластир",
+      "ru": "пластырь",
+      "en": "bandaid/plaster",
+      "phoneticUk": "plastyr",
+      "phoneticRu": "plastyr",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Вона приклеїла пластир на порізаний палець."
+        ],
+        "ru": [
+          "Пластырь помог остановить небольшое кровотечение."
+        ],
+        "en": [
+          "She put a bandage on her cut finger."
+        ]
+      }
+    },
+    {
+      "uk": "крапельниця",
+      "ru": "капельница",
+      "en": "IV drip",
+      "phoneticUk": "krapelnytsya",
+      "phoneticRu": "kapelnitsa",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Хворому поставили крапельницю в лікарні."
+        ],
+        "ru": [
+          "Капельница капала медленно и равномерно."
+        ],
+        "en": [
+          "The patient was put on an IV drip in the hospital."
+        ]
+      }
+    },
+    {
+      "uk": "таблетка",
+      "ru": "таблетка",
+      "en": "tablet/pill",
+      "phoneticUk": "tabletka",
+      "phoneticRu": "tabletka",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Лікар виписав таблетку від болю."
+        ],
+        "ru": [
+          "Таблетку нужно запивать водой."
+        ],
+        "en": [
+          "The doctor prescribed a pill for the pain."
+        ]
+      }
+    },
+    {
+      "uk": "мазь",
+      "ru": "мазь",
+      "en": "ointment",
+      "phoneticUk": "maz",
+      "phoneticRu": "maz",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Він намазав мазь на ушиблене місце."
+        ],
+        "ru": [
+          "Мазь помогла снять воспаление."
+        ],
+        "en": [
+          "He applied ointment to the bruised area."
+        ]
+      }
+    },
+    {
+      "uk": "сироп",
+      "ru": "сироп",
+      "en": "syrup (medicine)",
+      "phoneticUk": "syrop",
+      "phoneticRu": "sirop",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Дитині дали сироп від кашлю."
+        ],
+        "ru": [
+          "Сироп от кашля был сладким."
+        ],
+        "en": [
+          "The child was given cough syrup."
+        ]
+      }
+    },
+    {
+      "uk": "вітаміни",
+      "ru": "витамины",
+      "en": "vitamins",
+      "phoneticUk": "vitaminy",
+      "phoneticRu": "vitaminy",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Лікар призначив вітаміни на зиму."
+        ],
+        "ru": [
+          "Витамины помогают укрепить иммунитет."
+        ],
+        "en": [
+          "The doctor prescribed vitamins for the winter."
+        ]
+      }
+    },
+    {
+      "uk": "знеболюючий",
+      "ru": "обезболивающее",
+      "en": "painkiller",
+      "phoneticUk": "znebolyuyuchyi",
+      "phoneticRu": "obezbolivayushcheye",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Лікар дав знеболюючий після операції."
+        ],
+        "ru": [
+          "Обезболивающее подействовало через полчаса."
+        ],
+        "en": [
+          "The doctor gave a painkiller after the surgery."
+        ]
+      }
+    },
+    {
+      "uk": "протизапальний",
+      "ru": "противовоспалительное",
+      "en": "anti-inflammatory",
+      "phoneticUk": "protyzapalnyi",
+      "phoneticRu": "protivovaspalitelnoye",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Лікар прописав протизапальний засіб."
+        ],
+        "ru": [
+          "Противовоспалительное помогло снять отёк."
+        ],
+        "en": [
+          "The doctor prescribed an anti-inflammatory."
+        ]
+      }
+    },
+    {
+      "uk": "кардіолог",
+      "ru": "кардиолог",
+      "en": "cardiologist",
+      "phoneticUk": "kardioloh",
+      "phoneticRu": "kardiolog",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Кардіолог перевірив роботу серця."
+        ],
+        "ru": [
+          "Кардиолог назначил ЭКГ и анализы."
+        ],
+        "en": [
+          "The cardiologist checked how the heart was functioning."
+        ]
+      }
+    },
+    {
+      "uk": "невролог",
+      "ru": "невролог",
+      "en": "neurologist",
+      "phoneticUk": "nevroloh",
+      "phoneticRu": "nevrolog",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Невролог оглянув пацієнта після травми."
+        ],
+        "ru": [
+          "Невролог выписал направление на МРТ."
+        ],
+        "en": [
+          "The neurologist examined the patient after the injury."
+        ]
+      }
+    },
+    {
+      "uk": "дерматолог",
+      "ru": "дерматолог",
+      "en": "dermatologist",
+      "phoneticUk": "dermatoloh",
+      "phoneticRu": "dermatolog",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Дерматолог оглянув шкіру та призначив мазь."
+        ],
+        "ru": [
+          "Дерматолог осмотрел высыпания на коже."
+        ],
+        "en": [
+          "The dermatologist examined the skin and prescribed an ointment."
+        ]
+      }
+    },
+    {
+      "uk": "офтальмолог",
+      "ru": "офтальмолог",
+      "en": "ophthalmologist",
+      "phoneticUk": "oftalmoloh",
+      "phoneticRu": "oftalmolog",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Офтальмолог перевірив зір і виписав окуляри."
+        ],
+        "ru": [
+          "Офтальмолог проверил зрение на обоих глазах."
+        ],
+        "en": [
+          "The ophthalmologist checked the vision and prescribed glasses."
+        ]
+      }
+    },
+    {
+      "uk": "стоматолог",
+      "ru": "стоматолог",
+      "en": "dentist",
+      "phoneticUk": "stomatoloh",
+      "phoneticRu": "stomatolog",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Стоматолог вилікував хворий зуб."
+        ],
+        "ru": [
+          "Стоматолог сделал пломбу за час."
+        ],
+        "en": [
+          "The dentist treated the bad tooth."
+        ]
+      }
+    },
+    {
+      "uk": "хірург",
+      "ru": "хирург",
+      "en": "surgeon",
+      "phoneticUk": "khirurh",
+      "phoneticRu": "khirurg",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Хірург провів складну операцію."
+        ],
+        "ru": [
+          "Хирург оперировал пять часов подряд."
+        ],
+        "en": [
+          "The surgeon performed a difficult operation."
+        ]
+      }
+    },
+    {
+      "uk": "педіатр",
+      "ru": "педиатр",
+      "en": "pediatrician",
+      "phoneticUk": "pediatr",
+      "phoneticRu": "pediatr",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Педіатр оглянув дитину і виписав ліки."
+        ],
+        "ru": [
+          "Педиатр осмотрел ребёнка и успокоил маму."
+        ],
+        "en": [
+          "The pediatrician examined the child and prescribed medicine."
+        ]
+      }
+    },
+    {
+      "uk": "психіатр",
+      "ru": "психиатр",
+      "en": "psychiatrist",
+      "phoneticUk": "psykhiatr",
+      "phoneticRu": "psikhiatr",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Психіатр допоміг пацієнту впоратися з тривогою."
+        ],
+        "ru": [
+          "Психиатр назначил курс лечения."
+        ],
+        "en": [
+          "The psychiatrist helped the patient cope with anxiety."
+        ]
+      }
+    },
+    {
+      "uk": "акушерка",
+      "ru": "акушерка",
+      "en": "midwife",
+      "phoneticUk": "akusherka",
+      "phoneticRu": "akusherka",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Акушерка була поряд під час пологів."
+        ],
+        "ru": [
+          "Акушерка помогла при рождении ребёнка."
+        ],
+        "en": [
+          "The midwife was there throughout the birth."
+        ]
+      }
+    },
+    {
+      "uk": "медсестра",
+      "ru": "медсестра",
+      "en": "nurse",
+      "phoneticUk": "medsestra",
+      "phoneticRu": "medsestra",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Медсестра зробила укол швидко і вміло."
+        ],
+        "ru": [
+          "Медсестра измерила давление пациенту."
+        ],
+        "en": [
+          "The nurse gave the injection quickly and skillfully."
+        ]
+      }
+    },
+    {
+      "uk": "пацієнт",
+      "ru": "пациент",
+      "en": "patient",
+      "phoneticUk": "patsiyent",
+      "phoneticRu": "patsiyent",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Пацієнт чекав на прийом до лікаря."
+        ],
+        "ru": [
+          "Пациент выписался из больницы вчера."
+        ],
+        "en": [
+          "The patient was waiting for an appointment with the doctor."
+        ]
+      }
+    },
+    {
+      "uk": "діагностика",
+      "ru": "диагностика",
+      "en": "diagnostics",
+      "phoneticUk": "diahnostyka",
+      "phoneticRu": "diagnostika",
+      "category": "medical-extra",
+      "examples": {
+        "uk": [
+          "Діагностика показала проблему з серцем."
+        ],
+        "ru": [
+          "Диагностика заняла несколько часов."
+        ],
+        "en": [
+          "The diagnostics revealed a problem with the heart."
+        ]
+      }
+    },
+    {
+      "uk": "цифровий",
+      "ru": "цифровой",
+      "en": "digital",
+      "phoneticUk": "tsyfrovyi",
+      "phoneticRu": "tsifrovoy",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Цифровий підпис захищає документ."
+        ],
+        "ru": [
+          "Цифровой формат удобнее бумажного."
+        ],
+        "en": [
+          "A digital signature protects the document."
+        ]
+      }
+    },
+    {
+      "uk": "аналоговий",
+      "ru": "аналоговый",
+      "en": "analog",
+      "phoneticUk": "analohovyi",
+      "phoneticRu": "analogovyi",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Аналоговий сигнал слабший за цифровий."
+        ],
+        "ru": [
+          "Аналоговый телефон уже устарел."
+        ],
+        "en": [
+          "An analog signal is weaker than a digital one."
+        ]
+      }
+    },
+    {
+      "uk": "штучний інтелект",
+      "ru": "искусственный интеллект",
+      "en": "artificial intelligence",
+      "phoneticUk": "shtuchnyi intelekt",
+      "phoneticRu": "iskusstvennyi intellekt",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Штучний інтелект допомагає лікарям ставити діагнози."
+        ],
+        "ru": [
+          "Искусственный интеллект меняет современный мир."
+        ],
+        "en": [
+          "Artificial intelligence helps doctors make diagnoses."
+        ]
+      }
+    },
+    {
+      "uk": "машинне навчання",
+      "ru": "машинное обучение",
+      "en": "machine learning",
+      "phoneticUk": "mashynne navchannya",
+      "phoneticRu": "mashinnoye obucheniye",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Машинне навчання використовують у розпізнаванні обличь."
+        ],
+        "ru": [
+          "Машинное обучение применяют в медицине."
+        ],
+        "en": [
+          "Machine learning is used in facial recognition."
+        ]
+      }
+    },
+    {
+      "uk": "робот",
+      "ru": "робот",
+      "en": "robot",
+      "phoneticUk": "robot",
+      "phoneticRu": "robot",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Робот збирає деталі на заводі."
+        ],
+        "ru": [
+          "Робот выполнял опасную работу вместо человека."
+        ],
+        "en": [
+          "The robot assembles parts at the factory."
+        ]
+      }
+    },
+    {
+      "uk": "дрон",
+      "ru": "дрон",
+      "en": "drone",
+      "phoneticUk": "dron",
+      "phoneticRu": "dron",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Дрон зробив знімки з висоти."
+        ],
+        "ru": [
+          "Дрон доставил посылку за полчаса."
+        ],
+        "en": [
+          "The drone took aerial photos."
+        ]
+      }
+    },
+    {
+      "uk": "віртуальна реальність",
+      "ru": "виртуальная реальность",
+      "en": "virtual reality",
+      "phoneticUk": "virtualna realnist",
+      "phoneticRu": "virtualnaya realnost",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Віртуальна реальність використовується у навчанні."
+        ],
+        "ru": [
+          "Виртуальная реальность погружает в другой мир."
+        ],
+        "en": [
+          "Virtual reality is used in education."
+        ]
+      }
+    },
+    {
+      "uk": "доповнена реальність",
+      "ru": "дополненная реальность",
+      "en": "augmented reality",
+      "phoneticUk": "dopovnena realnist",
+      "phoneticRu": "dopolnennaya realnost",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Доповнена реальність накладає зображення на реальний світ."
+        ],
+        "ru": [
+          "Дополненная реальность помогает при ремонте."
+        ],
+        "en": [
+          "Augmented reality overlays images onto the real world."
+        ]
+      }
+    },
+    {
+      "uk": "блокчейн",
+      "ru": "блокчейн",
+      "en": "blockchain",
+      "phoneticUk": "blokcheyn",
+      "phoneticRu": "blokcheyn",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Блокчейн забезпечує безпеку транзакцій."
+        ],
+        "ru": [
+          "Блокчейн нельзя подделать или изменить."
+        ],
+        "en": [
+          "Blockchain ensures the security of transactions."
+        ]
+      }
+    },
+    {
+      "uk": "криптовалюта",
+      "ru": "криптовалюта",
+      "en": "cryptocurrency",
+      "phoneticUk": "kryptovalyuta",
+      "phoneticRu": "kriptovalyuta",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Криптовалюта стала популярною у всьому світі."
+        ],
+        "ru": [
+          "Криптовалюта хранится в цифровом кошельке."
+        ],
+        "en": [
+          "Cryptocurrency has become popular all over the world."
+        ]
+      }
+    },
+    {
+      "uk": "додаток",
+      "ru": "приложение",
+      "en": "app/application",
+      "phoneticUk": "dodatok",
+      "phoneticRu": "prilozheniye",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Я завантажив новий додаток на телефон."
+        ],
+        "ru": [
+          "Приложение для карт работает без интернета."
+        ],
+        "en": [
+          "I downloaded a new app on my phone."
+        ]
+      }
+    },
+    {
+      "uk": "оновлення",
+      "ru": "обновление",
+      "en": "update",
+      "phoneticUk": "onovlennya",
+      "phoneticRu": "obnovleniye",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Система потребує термінового оновлення."
+        ],
+        "ru": [
+          "Обновление устранило несколько ошибок."
+        ],
+        "en": [
+          "The system needs an urgent update."
+        ]
+      }
+    },
+    {
+      "uk": "інтерфейс",
+      "ru": "интерфейс",
+      "en": "interface",
+      "phoneticUk": "interfeys",
+      "phoneticRu": "interfeys",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Інтерфейс програми простий і зручний."
+        ],
+        "ru": [
+          "Интерфейс приложения стал более удобным."
+        ],
+        "en": [
+          "The program's interface is simple and easy to use."
+        ]
+      }
+    },
+    {
+      "uk": "сенсор",
+      "ru": "сенсор",
+      "en": "sensor",
+      "phoneticUk": "sensor",
+      "phoneticRu": "sensor",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Сенсор виявив рух у темряві."
+        ],
+        "ru": [
+          "Сенсор температуры вышел из строя."
+        ],
+        "en": [
+          "The sensor detected movement in the dark."
+        ]
+      }
+    },
+    {
+      "uk": "процесор",
+      "ru": "процессор",
+      "en": "processor/CPU",
+      "phoneticUk": "protsesor",
+      "phoneticRu": "protsessor",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Новий процесор працює набагато швидше."
+        ],
+        "ru": [
+          "Процессор перегрелся во время игры."
+        ],
+        "en": [
+          "The new processor runs much faster."
+        ]
+      }
+    },
+    {
+      "uk": "оперативна пам'ять",
+      "ru": "оперативная память",
+      "en": "RAM",
+      "phoneticUk": "operatyvna pamyat",
+      "phoneticRu": "operativnaya pamyat",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Оперативна пам'ять комп'ютера збільшена до 16 ГБ."
+        ],
+        "ru": [
+          "Оперативная память влияет на скорость работы."
+        ],
+        "en": [
+          "The computer's RAM has been upgraded to 16 GB."
+        ]
+      }
+    },
+    {
+      "uk": "жорсткий диск",
+      "ru": "жёсткий диск",
+      "en": "hard drive",
+      "phoneticUk": "zhorstkyi dysk",
+      "phoneticRu": "zhyostkiy disk",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Жорсткий диск зберігає всі файли."
+        ],
+        "ru": [
+          "Жёсткий диск заполнен почти полностью."
+        ],
+        "en": [
+          "The hard drive stores all the files."
+        ]
+      }
+    },
+    {
+      "uk": "флешка",
+      "ru": "флешка",
+      "en": "flash drive",
+      "phoneticUk": "fleshka",
+      "phoneticRu": "fleshka",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Він зберіг документи на флешку."
+        ],
+        "ru": [
+          "Флешка на 64 гигабайта стоит недорого."
+        ],
+        "en": [
+          "He saved the documents to a flash drive."
+        ]
+      }
+    },
+    {
+      "uk": "навушники",
+      "ru": "наушники",
+      "en": "headphones",
+      "phoneticUk": "navushnyky",
+      "phoneticRu": "naushniki",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Вона слухає музику в навушниках."
+        ],
+        "ru": [
+          "Наушники с шумоподавлением очень удобны."
+        ],
+        "en": [
+          "She listens to music with headphones."
+        ]
+      }
+    },
+    {
+      "uk": "колонка",
+      "ru": "колонка",
+      "en": "speaker",
+      "phoneticUk": "kolonka",
+      "phoneticRu": "kolonka",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Ми слухали музику через колонку на вулиці."
+        ],
+        "ru": [
+          "Колонка подключается по Bluetooth."
+        ],
+        "en": [
+          "We listened to music through a speaker outside."
+        ]
+      }
+    },
+    {
+      "uk": "вебкамера",
+      "ru": "веб-камера",
+      "en": "webcam",
+      "phoneticUk": "vebkamera",
+      "phoneticRu": "veb-kamera",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Вебкамера потрібна для відеодзвінків."
+        ],
+        "ru": [
+          "Веб-камера снимает в высоком разрешении."
+        ],
+        "en": [
+          "A webcam is needed for video calls."
+        ]
+      }
+    },
+    {
+      "uk": "оптоволокно",
+      "ru": "оптоволокно",
+      "en": "fiber optics",
+      "phoneticUk": "optovolokno",
+      "phoneticRu": "optovolokno",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Оптоволокно забезпечує швидкий інтернет."
+        ],
+        "ru": [
+          "Оптоволокно передаёт данные со скоростью света."
+        ],
+        "en": [
+          "Fiber optics provides fast internet."
+        ]
+      }
+    },
+    {
+      "uk": "бездротовий",
+      "ru": "беспроводной",
+      "en": "wireless",
+      "phoneticUk": "bezdrotovyi",
+      "phoneticRu": "besprovodney",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Бездротовий зв'язок зручніший за кабельний."
+        ],
+        "ru": [
+          "Беспроводной интернет есть в каждом кафе."
+        ],
+        "en": [
+          "Wireless connection is more convenient than a wired one."
+        ]
+      }
+    },
+    {
+      "uk": "хмарні обчислення",
+      "ru": "облачные вычисления",
+      "en": "cloud computing",
+      "phoneticUk": "khmarni obchyslennya",
+      "phoneticRu": "oblachnyye vychisleniya",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Хмарні обчислення дозволяють зберігати дані онлайн."
+        ],
+        "ru": [
+          "Облачные вычисления экономят место на диске."
+        ],
+        "en": [
+          "Cloud computing lets you store data online."
+        ]
+      }
+    },
+    {
+      "uk": "кібербезпека",
+      "ru": "кибербезопасность",
+      "en": "cybersecurity",
+      "phoneticUk": "kiberbezpeka",
+      "phoneticRu": "kiberbezopasnost",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Кібербезпека стала пріоритетом для компаній."
+        ],
+        "ru": [
+          "Кибербезопасность защищает данные пользователей."
+        ],
+        "en": [
+          "Cybersecurity has become a top priority for companies."
+        ]
+      }
+    },
+    {
+      "uk": "шифрування",
+      "ru": "шифрование",
+      "en": "encryption",
+      "phoneticUk": "shyfruvannya",
+      "phoneticRu": "shifrovaniye",
+      "category": "tech-extra",
+      "examples": {
+        "uk": [
+          "Шифрування захищає особисті дані в мережі."
+        ],
+        "ru": [
+          "Шифрование данных обязательно для банков."
+        ],
+        "en": [
+          "Encryption protects personal data online."
+        ]
+      }
+    },
+    {
+      "uk": "археолог",
+      "ru": "археолог",
+      "en": "archaeologist",
+      "phoneticUk": "arkheoloh",
+      "phoneticRu": "arkheolog",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Археолог знайшов давню монету."
+        ],
+        "ru": [
+          "Археолог раскопал древний город."
+        ],
+        "en": [
+          "The archaeologist found an ancient coin."
+        ]
+      }
+    },
+    {
+      "uk": "астроном",
+      "ru": "астроном",
+      "en": "astronomer",
+      "phoneticUk": "astronom",
+      "phoneticRu": "astronom",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Астроном спостерігав за зірками всю ніч."
+        ],
+        "ru": [
+          "Астроном открыл новую звезду в телескоп."
+        ],
+        "en": [
+          "The astronomer watched the stars all night."
+        ]
+      }
+    },
+    {
+      "uk": "ботанік",
+      "ru": "ботаник",
+      "en": "botanist",
+      "phoneticUk": "botanik",
+      "phoneticRu": "botanik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Ботанік вивчає рідкісні рослини лісу."
+        ],
+        "ru": [
+          "Ботаник описал неизвестный вид цветка."
+        ],
+        "en": [
+          "The botanist studies rare plants of the forest."
+        ]
+      }
+    },
+    {
+      "uk": "зоолог",
+      "ru": "зоолог",
+      "en": "zoologist",
+      "phoneticUk": "zooloh",
+      "phoneticRu": "zoolog",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Зоолог досліджував поведінку вовків."
+        ],
+        "ru": [
+          "Зоолог изучал жизнь диких животных."
+        ],
+        "en": [
+          "The zoologist studied the behavior of wolves."
+        ]
+      }
+    },
+    {
+      "uk": "геолог",
+      "ru": "геолог",
+      "en": "geologist",
+      "phoneticUk": "heoloh",
+      "phoneticRu": "geolog",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Геолог дослідив склад гірських порід."
+        ],
+        "ru": [
+          "Геолог нашёл залежи угля в горах."
+        ],
+        "en": [
+          "The geologist examined the composition of the rock layers."
+        ]
+      }
+    },
+    {
+      "uk": "метеоролог",
+      "ru": "метеоролог",
+      "en": "meteorologist",
+      "phoneticUk": "meteoroloh",
+      "phoneticRu": "meteorolog",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Метеоролог передбачив сильну бурю."
+        ],
+        "ru": [
+          "Метеоролог предупредил о надвигающемся шторме."
+        ],
+        "en": [
+          "The meteorologist predicted a severe storm."
+        ]
+      }
+    },
+    {
+      "uk": "фармацевт",
+      "ru": "фармацевт",
+      "en": "pharmacist",
+      "phoneticUk": "farmatsevt",
+      "phoneticRu": "farmatsevt",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Фармацевт порадив кращі ліки від застуди."
+        ],
+        "ru": [
+          "Фармацевт объяснил, как принимать таблетки."
+        ],
+        "en": [
+          "The pharmacist recommended the best medicine for a cold."
+        ]
+      }
+    },
+    {
+      "uk": "ветеринар",
+      "ru": "ветеринар",
+      "en": "veterinarian",
+      "phoneticUk": "veterynar",
+      "phoneticRu": "veterinar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Ветеринар оглянув хворого кота."
+        ],
+        "ru": [
+          "Ветеринар сделал прививку собаке."
+        ],
+        "en": [
+          "The vet examined the sick cat."
+        ]
+      }
+    },
+    {
+      "uk": "перекладач",
+      "ru": "переводчик",
+      "en": "translator/interpreter",
+      "phoneticUk": "perekladach",
+      "phoneticRu": "perevodchik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Перекладач допоміг на переговорах."
+        ],
+        "ru": [
+          "Переводчик работал с пяти языков."
+        ],
+        "en": [
+          "The interpreter helped during the negotiations."
+        ]
+      }
+    },
+    {
+      "uk": "журналіст",
+      "ru": "журналист",
+      "en": "journalist",
+      "phoneticUk": "zhurnalist",
+      "phoneticRu": "zhurnalist",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Журналіст написав статтю про нову реформу."
+        ],
+        "ru": [
+          "Журналист взял интервью у президента."
+        ],
+        "en": [
+          "The journalist wrote an article about the new reform."
+        ]
+      }
+    },
+    {
+      "uk": "редактор",
+      "ru": "редактор",
+      "en": "editor",
+      "phoneticUk": "redaktor",
+      "phoneticRu": "redaktor",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Редактор перевірив текст перед публікацією."
+        ],
+        "ru": [
+          "Редактор исправил ошибки в статье."
+        ],
+        "en": [
+          "The editor reviewed the text before publication."
+        ]
+      }
+    },
+    {
+      "uk": "фотограф",
+      "ru": "фотограф",
+      "en": "photographer",
+      "phoneticUk": "fotohraf",
+      "phoneticRu": "fotograf",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Фотограф зробив чудові знімки на весіллі."
+        ],
+        "ru": [
+          "Фотограф снимал закат на берегу моря."
+        ],
+        "en": [
+          "The photographer took wonderful shots at the wedding."
+        ]
+      }
+    },
+    {
+      "uk": "дизайнер",
+      "ru": "дизайнер",
+      "en": "designer",
+      "phoneticUk": "dyzayner",
+      "phoneticRu": "dizayner",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Дизайнер розробив новий логотип компанії."
+        ],
+        "ru": [
+          "Дизайнер создал красивый интерьер квартиры."
+        ],
+        "en": [
+          "The designer created a new logo for the company."
+        ]
+      }
+    },
+    {
+      "uk": "програміст",
+      "ru": "программист",
+      "en": "programmer",
+      "phoneticUk": "prohramist",
+      "phoneticRu": "programmist",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Програміст написав код за один день."
+        ],
+        "ru": [
+          "Программист исправил ошибку в приложении."
+        ],
+        "en": [
+          "The programmer wrote the code in a single day."
+        ]
+      }
+    },
+    {
+      "uk": "інженер",
+      "ru": "инженер",
+      "en": "engineer",
+      "phoneticUk": "inzhener",
+      "phoneticRu": "inzhener",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Інженер розробив план нового мосту."
+        ],
+        "ru": [
+          "Инженер проверил все чертежи конструкции."
+        ],
+        "en": [
+          "The engineer designed a plan for the new bridge."
+        ]
+      }
+    },
+    {
+      "uk": "електрик",
+      "ru": "электрик",
+      "en": "electrician",
+      "phoneticUk": "elektryk",
+      "phoneticRu": "elektrik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Електрик полагодив проводку у квартирі."
+        ],
+        "ru": [
+          "Электрик заменил старую розетку."
+        ],
+        "en": [
+          "The electrician fixed the wiring in the apartment."
+        ]
+      }
+    },
+    {
+      "uk": "сантехнік",
+      "ru": "сантехник",
+      "en": "plumber",
+      "phoneticUk": "santekh nik",
+      "phoneticRu": "santekhnik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Сантехнік полагодив кран на кухні."
+        ],
+        "ru": [
+          "Сантехник починил трубу в ванной."
+        ],
+        "en": [
+          "The plumber fixed the faucet in the kitchen."
+        ]
+      }
+    },
+    {
+      "uk": "столяр",
+      "ru": "столяр",
+      "en": "carpenter",
+      "phoneticUk": "stolyar",
+      "phoneticRu": "stolyar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Столяр зробив красивий стіл з дерева."
+        ],
+        "ru": [
+          "Столяр изготовил мебель на заказ."
+        ],
+        "en": [
+          "The carpenter made a beautiful wooden table."
+        ]
+      }
+    },
+    {
+      "uk": "маляр",
+      "ru": "маляр",
+      "en": "painter (walls)",
+      "phoneticUk": "malyar",
+      "phoneticRu": "malyar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Маляр пофарбував стіни у білий колір."
+        ],
+        "ru": [
+          "Маляр покрасил потолок за один день."
+        ],
+        "en": [
+          "The painter painted the walls white."
+        ]
+      }
+    },
+    {
+      "uk": "кухар",
+      "ru": "повар",
+      "en": "cook/chef",
+      "phoneticUk": "kukhar",
+      "phoneticRu": "povar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Кухар приготував смачну вечерю для гостей."
+        ],
+        "ru": [
+          "Повар приготовил суп из свежих овощей."
+        ],
+        "en": [
+          "The chef prepared a delicious dinner for the guests."
+        ]
+      }
+    },
+    {
+      "uk": "пекар",
+      "ru": "пекарь",
+      "en": "baker",
+      "phoneticUk": "pekar",
+      "phoneticRu": "pekar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Пекар дістав хліб з печі вранці."
+        ],
+        "ru": [
+          "Пекарь испёк свежий хлеб к утру."
+        ],
+        "en": [
+          "The baker took the bread out of the oven in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "м'ясник",
+      "ru": "мясник",
+      "en": "butcher",
+      "phoneticUk": "myasnyk",
+      "phoneticRu": "myasnik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "М'ясник порізав свіже м'ясо для клієнта."
+        ],
+        "ru": [
+          "Мясник нарезал стейк нужной толщины."
+        ],
+        "en": [
+          "The butcher cut fresh meat for the customer."
+        ]
+      }
+    },
+    {
+      "uk": "перукар",
+      "ru": "парикмахер",
+      "en": "hairdresser",
+      "phoneticUk": "perukar",
+      "phoneticRu": "parikmakher",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Перукар підстриг мені волосся красиво."
+        ],
+        "ru": [
+          "Парикмахер сделал модную стрижку."
+        ],
+        "en": [
+          "The hairdresser gave me a nice haircut."
+        ]
+      }
+    },
+    {
+      "uk": "кравець",
+      "ru": "портной",
+      "en": "tailor",
+      "phoneticUk": "kravets",
+      "phoneticRu": "portnoy",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Кравець пошив сукню на замовлення."
+        ],
+        "ru": [
+          "Портной ушил костюм точно по фигуре."
+        ],
+        "en": [
+          "The tailor sewed a dress to order."
+        ]
+      }
+    },
+    {
+      "uk": "пожежник",
+      "ru": "пожарный",
+      "en": "firefighter",
+      "phoneticUk": "pozhezhnik",
+      "phoneticRu": "pozharnyi",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Пожежник загасив вогонь за кілька хвилин."
+        ],
+        "ru": [
+          "Пожарный вынес ребёнка из горящего дома."
+        ],
+        "en": [
+          "The firefighter put out the fire in a few minutes."
+        ]
+      }
+    },
+    {
+      "uk": "рятувальник",
+      "ru": "спасатель",
+      "en": "rescuer/lifeguard",
+      "phoneticUk": "ryatuvalnik",
+      "phoneticRu": "spasatel",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Рятувальник витягнув дитину з води."
+        ],
+        "ru": [
+          "Спасатель добрался до пострадавших за час."
+        ],
+        "en": [
+          "The lifeguard pulled the child out of the water."
+        ]
+      }
+    },
+    {
+      "uk": "водолаз",
+      "ru": "водолаз",
+      "en": "diver",
+      "phoneticUk": "vodolaz",
+      "phoneticRu": "vodolaz",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Водолаз обстежив дно річки."
+        ],
+        "ru": [
+          "Водолаз нашёл затонувший корабль."
+        ],
+        "en": [
+          "The diver inspected the riverbed."
+        ]
+      }
+    },
+    {
+      "uk": "шахтар",
+      "ru": "шахтёр",
+      "en": "miner",
+      "phoneticUk": "shakhtar",
+      "phoneticRu": "shakhtyor",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Шахтар працює глибоко під землею."
+        ],
+        "ru": [
+          "Шахтёр добывал уголь несколько лет."
+        ],
+        "en": [
+          "The miner works deep underground."
+        ]
+      }
+    },
+    {
+      "uk": "фермер",
+      "ru": "фермер",
+      "en": "farmer",
+      "phoneticUk": "fermer",
+      "phoneticRu": "fermer",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Фермер вирощує пшеницю і соняшник."
+        ],
+        "ru": [
+          "Фермер собрал богатый урожай осенью."
+        ],
+        "en": [
+          "The farmer grows wheat and sunflowers."
+        ]
+      }
+    },
+    {
+      "uk": "бібліотекар",
+      "ru": "библиотекарь",
+      "en": "librarian",
+      "phoneticUk": "bibliotekar",
+      "phoneticRu": "bibliotekar",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Бібліотекар допоміг знайти потрібну книгу."
+        ],
+        "ru": [
+          "Библиотекарь порекомендовал хорошую книгу."
+        ],
+        "en": [
+          "The librarian helped find the right book."
+        ]
+      }
+    },
+    {
+      "uk": "поштар",
+      "ru": "почтальон",
+      "en": "mailman/postman",
+      "phoneticUk": "poshtar",
+      "phoneticRu": "pochtalon",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Поштар приніс листа вранці."
+        ],
+        "ru": [
+          "Почтальон принёс посылку вовремя."
+        ],
+        "en": [
+          "The postman brought a letter in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "ювелір",
+      "ru": "ювелир",
+      "en": "jeweler",
+      "phoneticUk": "yuvelir",
+      "phoneticRu": "yuvelir",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Ювелір виготовив каблучку з золота."
+        ],
+        "ru": [
+          "Ювелир оценил кольцо с бриллиантом."
+        ],
+        "en": [
+          "The jeweler made a ring out of gold."
+        ]
+      }
+    },
+    {
+      "uk": "годинникар",
+      "ru": "часовщик",
+      "en": "watchmaker",
+      "phoneticUk": "hodynnkar",
+      "phoneticRu": "chasovshchik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Годинникар полагодив старий годинник."
+        ],
+        "ru": [
+          "Часовщик заменил батарейку в часах."
+        ],
+        "en": [
+          "The watchmaker repaired the old clock."
+        ]
+      }
+    },
+    {
+      "uk": "садівник",
+      "ru": "садовник",
+      "en": "gardener",
+      "phoneticUk": "sadivnyk",
+      "phoneticRu": "sadovnik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Садівник обрізав дерева навесні."
+        ],
+        "ru": [
+          "Садовник посадил новые розы в парке."
+        ],
+        "en": [
+          "The gardener pruned the trees in spring."
+        ]
+      }
+    },
+    {
+      "uk": "офіціант",
+      "ru": "официант",
+      "en": "waiter",
+      "phoneticUk": "ofitsiant",
+      "phoneticRu": "ofitsiant",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Офіціант приніс меню і прийняв замовлення."
+        ],
+        "ru": [
+          "Официант подал блюда быстро и аккуратно."
+        ],
+        "en": [
+          "The waiter brought the menu and took the order."
+        ]
+      }
+    },
+    {
+      "uk": "бармен",
+      "ru": "бармен",
+      "en": "bartender",
+      "phoneticUk": "barmen",
+      "phoneticRu": "barmen",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Бармен приготував коктейль за хвилину."
+        ],
+        "ru": [
+          "Бармен протирал бокалы за стойкой."
+        ],
+        "en": [
+          "The bartender made a cocktail in a minute."
+        ]
+      }
+    },
+    {
+      "uk": "прибиральниця",
+      "ru": "уборщица",
+      "en": "cleaner/janitor",
+      "phoneticUk": "prybyralnytsia",
+      "phoneticRu": "uborshchitsa",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Прибиральниця вимила підлогу в офісі."
+        ],
+        "ru": [
+          "Уборщица мыла полы до блеска."
+        ],
+        "en": [
+          "The cleaner mopped the floor in the office."
+        ]
+      }
+    },
+    {
+      "uk": "охоронець",
+      "ru": "охранник",
+      "en": "security guard",
+      "phoneticUk": "okhoronets",
+      "phoneticRu": "okhrannik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Охоронець перевірив документи на вході."
+        ],
+        "ru": [
+          "Охранник дежурил у входа всю ночь."
+        ],
+        "en": [
+          "The security guard checked documents at the entrance."
+        ]
+      }
+    },
+    {
+      "uk": "водій",
+      "ru": "водитель",
+      "en": "driver",
+      "phoneticUk": "vodiy",
+      "phoneticRu": "voditel",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Водій зупинив автобус на зупинці."
+        ],
+        "ru": [
+          "Водитель довёз нас до аэропорта."
+        ],
+        "en": [
+          "The driver stopped the bus at the stop."
+        ]
+      }
+    },
+    {
+      "uk": "механік",
+      "ru": "механик",
+      "en": "mechanic",
+      "phoneticUk": "mekhanik",
+      "phoneticRu": "mekhanik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Механік полагодив двигун автомобіля."
+        ],
+        "ru": [
+          "Механик заменил тормозные колодки."
+        ],
+        "en": [
+          "The mechanic fixed the car's engine."
+        ]
+      }
+    },
+    {
+      "uk": "зварювальник",
+      "ru": "сварщик",
+      "en": "welder",
+      "phoneticUk": "zvaryuvalnik",
+      "phoneticRu": "svarshchik",
+      "category": "professions",
+      "examples": {
+        "uk": [
+          "Зварювальник з'єднав металеві труби."
+        ],
+        "ru": [
+          "Сварщик работал в защитной маске."
+        ],
+        "en": [
+          "The welder joined the metal pipes together."
+        ]
+      }
+    },
+    {
+      "uk": "риболовля",
+      "ru": "рыбалка",
+      "en": "fishing",
+      "phoneticUk": "rybolovlya",
+      "phoneticRu": "rybalka",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Риболовля заспокоює після важкого тижня."
+        ],
+        "ru": [
+          "Рыбалка на рассвете — моё любимое занятие."
+        ],
+        "en": [
+          "Fishing is relaxing after a tough week."
+        ]
+      }
+    },
+    {
+      "uk": "полювання",
+      "ru": "охота",
+      "en": "hunting",
+      "phoneticUk": "polyuvannya",
+      "phoneticRu": "okhota",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Полювання восени популярне серед чоловіків."
+        ],
+        "ru": [
+          "Охота требует терпения и умения."
+        ],
+        "en": [
+          "Hunting in autumn is popular among men."
+        ]
+      }
+    },
+    {
+      "uk": "садівництво",
+      "ru": "садоводство",
+      "en": "gardening (hobby)",
+      "phoneticUk": "sadivnytstvo",
+      "phoneticRu": "sadovodstvo",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Садівництво приносить мені задоволення."
+        ],
+        "ru": [
+          "Садоводство — популярное хобби на пенсии."
+        ],
+        "en": [
+          "Gardening brings me joy."
+        ]
+      }
+    },
+    {
+      "uk": "кулінарія",
+      "ru": "кулинария",
+      "en": "cooking (hobby)",
+      "phoneticUk": "kulinariya",
+      "phoneticRu": "kulinariya",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Кулінарія стала її справжнім захопленням."
+        ],
+        "ru": [
+          "Кулинария требует практики и творчества."
+        ],
+        "en": [
+          "Cooking became her true passion."
+        ]
+      }
+    },
+    {
+      "uk": "фотографування",
+      "ru": "фотографирование",
+      "en": "photography (hobby)",
+      "phoneticUk": "fotohrafuvannya",
+      "phoneticRu": "fotografirovaniye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Фотографування природи розвиває художній смак."
+        ],
+        "ru": [
+          "Фотографирование животных требует терпения."
+        ],
+        "en": [
+          "Photographing nature develops an artistic eye."
+        ]
+      }
+    },
+    {
+      "uk": "колекціонування",
+      "ru": "коллекционирование",
+      "en": "collecting",
+      "phoneticUk": "kolektsionuvannya",
+      "phoneticRu": "kollektsionirovaniye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Колекціонування марок захоплює його з дитинства."
+        ],
+        "ru": [
+          "Коллекционирование монет — серьёзное увлечение."
+        ],
+        "en": [
+          "He has been into stamp collecting since childhood."
+        ]
+      }
+    },
+    {
+      "uk": "читання",
+      "ru": "чтение",
+      "en": "reading (hobby)",
+      "phoneticUk": "chytannya",
+      "phoneticRu": "chteniye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Читання книжок розвиває уяву."
+        ],
+        "ru": [
+          "Чтение перед сном помогает расслабиться."
+        ],
+        "en": [
+          "Reading books develops the imagination."
+        ]
+      }
+    },
+    {
+      "uk": "письменництво",
+      "ru": "писательство",
+      "en": "writing (hobby)",
+      "phoneticUk": "pysmennytstvo",
+      "phoneticRu": "pisatelstvo",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Письменництво вимагає часу та натхнення."
+        ],
+        "ru": [
+          "Писательство стало делом всей его жизни."
+        ],
+        "en": [
+          "Writing takes time and inspiration."
+        ]
+      }
+    },
+    {
+      "uk": "туризм",
+      "ru": "туризм",
+      "en": "tourism/hiking",
+      "phoneticUk": "turyzm",
+      "phoneticRu": "turizm",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Туризм допомагає пізнати нові місця."
+        ],
+        "ru": [
+          "Туризм в горах требует хорошей подготовки."
+        ],
+        "en": [
+          "Tourism helps you discover new places."
+        ]
+      }
+    },
+    {
+      "uk": "кемпінг",
+      "ru": "кемпинг",
+      "en": "camping",
+      "phoneticUk": "kempinh",
+      "phoneticRu": "kemping",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Кемпінг біля озера — чудовий відпочинок."
+        ],
+        "ru": [
+          "Кемпинг с друзьями — отличное приключение."
+        ],
+        "en": [
+          "Camping by the lake is a wonderful way to relax."
+        ]
+      }
+    },
+    {
+      "uk": "скелелазіння",
+      "ru": "скалолазание",
+      "en": "rock climbing",
+      "phoneticUk": "skelelazynnya",
+      "phoneticRu": "skalolazaniye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Скелелазіння вимагає сили і сміливості."
+        ],
+        "ru": [
+          "Скалолазание развивает силу и выносливость."
+        ],
+        "en": [
+          "Rock climbing requires strength and courage."
+        ]
+      }
+    },
+    {
+      "uk": "серфінг",
+      "ru": "сёрфинг",
+      "en": "surfing",
+      "phoneticUk": "serfinh",
+      "phoneticRu": "syorfing",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Серфінг популярний на теплих курортах."
+        ],
+        "ru": [
+          "Сёрфинг — захватывающий водный спорт."
+        ],
+        "en": [
+          "Surfing is popular at warm resorts."
+        ]
+      }
+    },
+    {
+      "uk": "дайвінг",
+      "ru": "дайвинг",
+      "en": "diving (scuba)",
+      "phoneticUk": "dayvinh",
+      "phoneticRu": "dayving",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Дайвінг відкриває підводний світ."
+        ],
+        "ru": [
+          "Дайвинг позволяет увидеть морских животных."
+        ],
+        "en": [
+          "Scuba diving opens up the underwater world."
+        ]
+      }
+    },
+    {
+      "uk": "лижі",
+      "ru": "лыжи",
+      "en": "skiing",
+      "phoneticUk": "lyzhi",
+      "phoneticRu": "lyzhi",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Лижі чудово підходять для зимового відпочинку."
+        ],
+        "ru": [
+          "Лыжи стоят у входа после прогулки."
+        ],
+        "en": [
+          "Skiing is great for a winter vacation."
+        ]
+      }
+    },
+    {
+      "uk": "ковзани",
+      "ru": "коньки",
+      "en": "ice skating",
+      "phoneticUk": "kovzany",
+      "phoneticRu": "konki",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Ковзани вона одягла вперше в десять років."
+        ],
+        "ru": [
+          "Коньки нужно хорошо заточить перед катанием."
+        ],
+        "en": [
+          "She put on ice skates for the first time at age ten."
+        ]
+      }
+    },
+    {
+      "uk": "сноуборд",
+      "ru": "сноуборд",
+      "en": "snowboarding",
+      "phoneticUk": "snoubord",
+      "phoneticRu": "snoubord",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Сноуборд — захоплюючий зимовий спорт."
+        ],
+        "ru": [
+          "Сноуборд мчался вниз по склону."
+        ],
+        "en": [
+          "Snowboarding is an exciting winter sport."
+        ]
+      }
+    },
+    {
+      "uk": "йога",
+      "ru": "йога",
+      "en": "yoga",
+      "phoneticUk": "yoha",
+      "phoneticRu": "yoga",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Йога допомагає розслабитися після роботи."
+        ],
+        "ru": [
+          "Йога улучшает гибкость и спокойствие."
+        ],
+        "en": [
+          "Yoga helps you unwind after work."
+        ]
+      }
+    },
+    {
+      "uk": "медитація",
+      "ru": "медитация",
+      "en": "meditation",
+      "phoneticUk": "medytatsiya",
+      "phoneticRu": "meditatsiya",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Медитація допомагає зменшити стрес."
+        ],
+        "ru": [
+          "Медитация по утрам улучшает настроение."
+        ],
+        "en": [
+          "Meditation helps reduce stress."
+        ]
+      }
+    },
+    {
+      "uk": "шахматний клуб",
+      "ru": "шахматный клуб",
+      "en": "chess club",
+      "phoneticUk": "shakhmatnyi klub",
+      "phoneticRu": "shakhmatnyi klub",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Шахматний клуб зустрічається щосереди."
+        ],
+        "ru": [
+          "Шахматный клуб принял новых участников."
+        ],
+        "en": [
+          "The chess club meets every Wednesday."
+        ]
+      }
+    },
+    {
+      "uk": "рукоділля",
+      "ru": "рукоделие",
+      "en": "handicraft",
+      "phoneticUk": "rukodillya",
+      "phoneticRu": "rukodeliye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Рукоділля — це приємне і корисне хобі."
+        ],
+        "ru": [
+          "Рукоделие помогает создавать уникальные вещи."
+        ],
+        "en": [
+          "Handicraft is a pleasant and rewarding hobby."
+        ]
+      }
+    },
+    {
+      "uk": "моделювання",
+      "ru": "моделирование",
+      "en": "modeling (hobby)",
+      "phoneticUk": "modelyuvannya",
+      "phoneticRu": "modelirovaniye",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Моделювання літаків захоплює його з дитинства."
+        ],
+        "ru": [
+          "Моделирование кораблей требует точности."
+        ],
+        "en": [
+          "He has been into building model planes since childhood."
+        ]
+      }
+    },
+    {
+      "uk": "каліграфія",
+      "ru": "каллиграфия",
+      "en": "calligraphy",
+      "phoneticUk": "kalihrafiya",
+      "phoneticRu": "kalligrafiya",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Каліграфія розвиває терпіння і увагу."
+        ],
+        "ru": [
+          "Каллиграфия — древнее искусство красивого письма."
+        ],
+        "en": [
+          "Calligraphy develops patience and focus."
+        ]
+      }
+    },
+    {
+      "uk": "орігамі",
+      "ru": "оригами",
+      "en": "origami",
+      "phoneticUk": "orihami",
+      "phoneticRu": "origami",
+      "category": "hobbies",
+      "examples": {
+        "uk": [
+          "Орігамі — японське мистецтво складання паперу."
+        ],
+        "ru": [
+          "Оригами учит терпению и аккуратности."
+        ],
+        "en": [
+          "Origami is the Japanese art of paper folding."
+        ]
+      }
+    },
+    {
+      "uk": "ас",
+      "ru": "туз",
+      "en": "ace",
+      "phoneticUk": "as",
+      "phoneticRu": "tuz",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Він витягнув аса і виграв партію."
+        ],
+        "ru": [
+          "Туз бьёт все карты в этой игре."
+        ],
+        "en": [
+          "He drew the ace and won the game."
+        ]
+      }
+    },
+    {
+      "uk": "козир",
+      "ru": "козырь",
+      "en": "trump card",
+      "phoneticUk": "kozyr",
+      "phoneticRu": "kozyr",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Козир допомагає виграти важку партію."
+        ],
+        "ru": [
+          "Козырь лежал у него в рукаве."
+        ],
+        "en": [
+          "A trump card can help you win a tough game."
+        ]
+      }
+    },
+    {
+      "uk": "колода",
+      "ru": "колода",
+      "en": "deck of cards",
+      "phoneticUk": "koloda",
+      "phoneticRu": "koloda",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Він перемішав колоду перед грою."
+        ],
+        "ru": [
+          "Колода карт была новой и скользкой."
+        ],
+        "en": [
+          "He shuffled the deck before the game."
+        ]
+      }
+    },
+    {
+      "uk": "тасувати",
+      "ru": "тасовать",
+      "en": "to shuffle (cards)",
+      "phoneticUk": "tasuvaty",
+      "phoneticRu": "tasovat",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Він умів добре тасувати карти."
+        ],
+        "ru": [
+          "Нужно тасовать карты перед каждой игрой."
+        ],
+        "en": [
+          "He knew how to shuffle cards well."
+        ]
+      }
+    },
+    {
+      "uk": "роздавати",
+      "ru": "раздавать",
+      "en": "to deal (cards)",
+      "phoneticUk": "rozdavaty",
+      "phoneticRu": "razdavat",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Вона почала роздавати карти всім гравцям."
+        ],
+        "ru": [
+          "Нужно раздавать по пять карт каждому."
+        ],
+        "en": [
+          "She started dealing cards to all the players."
+        ]
+      }
+    },
+    {
+      "uk": "ставка",
+      "ru": "ставка",
+      "en": "bet/wager",
+      "phoneticUk": "stavka",
+      "phoneticRu": "stavka",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Він зробив велику ставку і ризикнув."
+        ],
+        "ru": [
+          "Ставка была слишком высокой для него."
+        ],
+        "en": [
+          "He placed a big bet and took the risk."
+        ]
+      }
+    },
+    {
+      "uk": "виграш",
+      "ru": "выигрыш",
+      "en": "winnings/prize",
+      "phoneticUk": "vyhrash",
+      "phoneticRu": "vyigrysh",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Виграш склав тисячу гривень."
+        ],
+        "ru": [
+          "Выигрыш достался самому терпеливому игроку."
+        ],
+        "en": [
+          "The winnings came to a thousand hryvnias."
+        ]
+      }
+    },
+    {
+      "uk": "програш",
+      "ru": "проигрыш",
+      "en": "loss (game)",
+      "phoneticUk": "prohrash",
+      "phoneticRu": "proigrysh",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Програш засмутив усю команду."
+        ],
+        "ru": [
+          "Проигрыш научил его играть лучше."
+        ],
+        "en": [
+          "The loss upset the whole team."
+        ]
+      }
+    },
+    {
+      "uk": "нічия",
+      "ru": "ничья",
+      "en": "draw/tie",
+      "phoneticUk": "nichiya",
+      "phoneticRu": "nichya",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Матч закінчився нічиєю один до одного."
+        ],
+        "ru": [
+          "Ничья устроила обе команды."
+        ],
+        "en": [
+          "The match ended in a one-to-one draw."
+        ]
+      }
+    },
+    {
+      "uk": "суперник",
+      "ru": "соперник",
+      "en": "opponent/rival",
+      "phoneticUk": "supernyk",
+      "phoneticRu": "sopernik",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Суперник виявився сильнішим за очікування."
+        ],
+        "ru": [
+          "Соперник сыграл лучше в этот раз."
+        ],
+        "en": [
+          "The opponent turned out to be stronger than expected."
+        ]
+      }
+    },
+    {
+      "uk": "стратегія",
+      "ru": "стратегия",
+      "en": "strategy",
+      "phoneticUk": "stratehiya",
+      "phoneticRu": "strategiya",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Хороша стратегія допомогла виграти турнір."
+        ],
+        "ru": [
+          "Стратегия команды сработала в финале."
+        ],
+        "en": [
+          "A good strategy helped them win the tournament."
+        ]
+      }
+    },
+    {
+      "uk": "тактика",
+      "ru": "тактика",
+      "en": "tactic",
+      "phoneticUk": "taktyka",
+      "phoneticRu": "taktika",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Тактика захисту виявилася дуже ефективною."
+        ],
+        "ru": [
+          "Тактика нападения изменилась в перерыве."
+        ],
+        "en": [
+          "The defensive tactic proved very effective."
+        ]
+      }
+    },
+    {
+      "uk": "рахунок",
+      "ru": "счёт",
+      "en": "score",
+      "phoneticUk": "rakhunok",
+      "phoneticRu": "shchyot",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Рахунок матчу був два до нуля."
+        ],
+        "ru": [
+          "Счёт изменился в последнюю минуту."
+        ],
+        "en": [
+          "The match score was two to zero."
+        ]
+      }
+    },
+    {
+      "uk": "раунд",
+      "ru": "раунд",
+      "en": "round",
+      "phoneticUk": "raund",
+      "phoneticRu": "raund",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Перший раунд виграв досвідченіший гравець."
+        ],
+        "ru": [
+          "Раунд закончился победой боксёра."
+        ],
+        "en": [
+          "The more experienced player won the first round."
+        ]
+      }
+    },
+    {
+      "uk": "фінал",
+      "ru": "финал",
+      "en": "final",
+      "phoneticUk": "final",
+      "phoneticRu": "final",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Фінал чемпіонату відбудеться у суботу."
+        ],
+        "ru": [
+          "Финал турнира собрал полный стадион."
+        ],
+        "en": [
+          "The championship final will take place on Saturday."
+        ]
+      }
+    },
+    {
+      "uk": "переможець",
+      "ru": "победитель",
+      "en": "winner",
+      "phoneticUk": "peremozhets",
+      "phoneticRu": "pobeditel",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Переможець отримав золоту медаль."
+        ],
+        "ru": [
+          "Победитель поднялся на пьедестал первым."
+        ],
+        "en": [
+          "The winner received a gold medal."
+        ]
+      }
+    },
+    {
+      "uk": "програвший",
+      "ru": "проигравший",
+      "en": "loser",
+      "phoneticUk": "prohravshyi",
+      "phoneticRu": "proigravshiy",
+      "category": "card-games",
+      "examples": {
+        "uk": [
+          "Програвший потиснув руку переможцю."
+        ],
+        "ru": [
+          "Проигравший принял поражение с достоинством."
+        ],
+        "en": [
+          "The loser shook the winner's hand."
+        ]
+      }
+    },
+    {
+      "uk": "офіс",
+      "ru": "офис",
+      "en": "office",
+      "phoneticUk": "ofis",
+      "phoneticRu": "ofis",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він працює в офісі з дев'ятої ранку."
+        ],
+        "ru": [
+          "Офис находится в центре города."
+        ],
+        "en": [
+          "He works in the office from nine in the morning."
+        ]
+      }
+    },
+    {
+      "uk": "зарплата",
+      "ru": "зарплата",
+      "en": "salary",
+      "phoneticUk": "zarplata",
+      "phoneticRu": "zarplata",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він отримав зарплату в кінці місяця."
+        ],
+        "ru": [
+          "Зарплата поступила на карту вовремя."
+        ],
+        "en": [
+          "He received his salary at the end of the month."
+        ]
+      }
+    },
+    {
+      "uk": "директор",
+      "ru": "директор",
+      "en": "director",
+      "phoneticUk": "dyrektor",
+      "phoneticRu": "direktor",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Директор підписав важливий документ."
+        ],
+        "ru": [
+          "Директор провёл собрание сотрудников."
+        ],
+        "en": [
+          "The director signed an important document."
+        ]
+      }
+    },
+    {
+      "uk": "компанія",
+      "ru": "компания",
+      "en": "company",
+      "phoneticUk": "kompaniya",
+      "phoneticRu": "kompaniya",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Компанія відкрила новий офіс у Києві."
+        ],
+        "ru": [
+          "Компания работает на рынке десять лет."
+        ],
+        "en": [
+          "The company opened a new office in Kyiv."
+        ]
+      }
+    },
+    {
+      "uk": "співробітник",
+      "ru": "сотрудник",
+      "en": "employee",
+      "phoneticUk": "spivrobitnik",
+      "phoneticRu": "sotrudnik",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Кожен співробітник отримав премію."
+        ],
+        "ru": [
+          "Сотрудник выполнил задание раньше срока."
+        ],
+        "en": [
+          "Every employee received a bonus."
+        ]
+      }
+    },
+    {
+      "uk": "начальник",
+      "ru": "начальник",
+      "en": "boss/supervisor",
+      "phoneticUk": "nachalnyk",
+      "phoneticRu": "nachalnik",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Начальник схвалив новий проєкт."
+        ],
+        "ru": [
+          "Начальник объяснил задачу на совещании."
+        ],
+        "en": [
+          "The boss approved the new project."
+        ]
+      }
+    },
+    {
+      "uk": "контракт",
+      "ru": "контракт",
+      "en": "contract",
+      "phoneticUk": "kontrakt",
+      "phoneticRu": "kontrakt",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Вони підписали контракт на два роки."
+        ],
+        "ru": [
+          "Контракт вступил в силу с января."
+        ],
+        "en": [
+          "They signed a two-year contract."
+        ]
+      }
+    },
+    {
+      "uk": "нарада",
+      "ru": "совещание",
+      "en": "meeting",
+      "phoneticUk": "narada",
+      "phoneticRu": "soveshchaniye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Нарада тривала дві години."
+        ],
+        "ru": [
+          "Совещание началось ровно в девять."
+        ],
+        "en": [
+          "The meeting lasted two hours."
+        ]
+      }
+    },
+    {
+      "uk": "проєкт",
+      "ru": "проект",
+      "en": "project",
+      "phoneticUk": "proyekt",
+      "phoneticRu": "proyekt",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Проєкт завершили вчасно і без помилок."
+        ],
+        "ru": [
+          "Проект получил финансирование от инвесторов."
+        ],
+        "en": [
+          "The project was completed on time and without errors."
+        ]
+      }
+    },
+    {
+      "uk": "бюджет",
+      "ru": "бюджет",
+      "en": "budget",
+      "phoneticUk": "byudzhet",
+      "phoneticRu": "byudzhet",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Бюджет проєкту збільшили вдвічі."
+        ],
+        "ru": [
+          "Бюджет компании вырос в этом году."
+        ],
+        "en": [
+          "The project budget was doubled."
+        ]
+      }
+    },
+    {
+      "uk": "прибуток",
+      "ru": "прибыль",
+      "en": "profit",
+      "phoneticUk": "prybutok",
+      "phoneticRu": "pribyl",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Прибуток компанії зріс на двадцять відсотків."
+        ],
+        "ru": [
+          "Прибыль за квартал превысила ожидания."
+        ],
+        "en": [
+          "The company's profit grew by twenty percent."
+        ]
+      }
+    },
+    {
+      "uk": "збиток",
+      "ru": "убыток",
+      "en": "loss (financial)",
+      "phoneticUk": "zbytok",
+      "phoneticRu": "ubytok",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Компанія зазнала великого збитку після кризи."
+        ],
+        "ru": [
+          "Убыток составил миллион рублей."
+        ],
+        "en": [
+          "The company suffered a major loss after the crisis."
+        ]
+      }
+    },
+    {
+      "uk": "клієнт",
+      "ru": "клиент",
+      "en": "client",
+      "phoneticUk": "kliyent",
+      "phoneticRu": "kliyent",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Клієнт задоволений якістю послуги."
+        ],
+        "ru": [
+          "Клиент оставил положительный отзыв."
+        ],
+        "en": [
+          "The client is satisfied with the quality of the service."
+        ]
+      }
+    },
+    {
+      "uk": "партнер",
+      "ru": "партнёр",
+      "en": "partner (business)",
+      "phoneticUk": "partner",
+      "phoneticRu": "partnyur",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Наш партнер з Польщі приїхав на переговори."
+        ],
+        "ru": [
+          "Партнёр подписал соглашение о сотрудничестве."
+        ],
+        "en": [
+          "Our partner from Poland came for negotiations."
+        ]
+      }
+    },
+    {
+      "uk": "інвестиція",
+      "ru": "инвестиция",
+      "en": "investment",
+      "phoneticUk": "investytsiya",
+      "phoneticRu": "investitsiya",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Інвестиція в нерухомість виявилась вигідною."
+        ],
+        "ru": [
+          "Инвестиция окупилась за три года."
+        ],
+        "en": [
+          "The investment in real estate turned out to be profitable."
+        ]
+      }
+    },
+    {
+      "uk": "підприємець",
+      "ru": "предприниматель",
+      "en": "entrepreneur",
+      "phoneticUk": "pidpryyemets",
+      "phoneticRu": "predprinimatel",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Підприємець відкрив три магазини за рік."
+        ],
+        "ru": [
+          "Предприниматель основал компанию в гараже."
+        ],
+        "en": [
+          "The entrepreneur opened three stores in one year."
+        ]
+      }
+    },
+    {
+      "uk": "бізнес",
+      "ru": "бизнес",
+      "en": "business",
+      "phoneticUk": "biznes",
+      "phoneticRu": "biznes",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він розпочав власний бізнес у тридцять років."
+        ],
+        "ru": [
+          "Бизнес стал успешным через два года."
+        ],
+        "en": [
+          "He started his own business at thirty."
+        ]
+      }
+    },
+    {
+      "uk": "маркетинг",
+      "ru": "маркетинг",
+      "en": "marketing",
+      "phoneticUk": "marketynh",
+      "phoneticRu": "marketing",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Маркетинг допомагає залучати нових клієнтів."
+        ],
+        "ru": [
+          "Маркетинг компании направлен на молодёжь."
+        ],
+        "en": [
+          "Marketing helps attract new clients."
+        ]
+      }
+    },
+    {
+      "uk": "реклама",
+      "ru": "реклама",
+      "en": "advertising",
+      "phoneticUk": "reklama",
+      "phoneticRu": "reklama",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Реклама збільшила продажі вдвічі."
+        ],
+        "ru": [
+          "Реклама по телевизору охватила миллионы людей."
+        ],
+        "en": [
+          "The advertising doubled sales."
+        ]
+      }
+    },
+    {
+      "uk": "співбесіда",
+      "ru": "собеседование",
+      "en": "job interview",
+      "phoneticUk": "spivbesida",
+      "phoneticRu": "sobesedovaniye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Співбесіда пройшла успішно і мене взяли."
+        ],
+        "ru": [
+          "Собеседование длилось около часа."
+        ],
+        "en": [
+          "The interview went well and I got the job."
+        ]
+      }
+    },
+    {
+      "uk": "резюме",
+      "ru": "резюме",
+      "en": "resume/CV",
+      "phoneticUk": "rezyume",
+      "phoneticRu": "rezyume",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він надіслав резюме до десяти компаній."
+        ],
+        "ru": [
+          "Резюме нужно составить грамотно и кратко."
+        ],
+        "en": [
+          "He sent his resume to ten companies."
+        ]
+      }
+    },
+    {
+      "uk": "посада",
+      "ru": "должность",
+      "en": "position/title",
+      "phoneticUk": "posada",
+      "phoneticRu": "dolzhnost",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Вона отримала нову посаду в компанії."
+        ],
+        "ru": [
+          "Должность требует опыта и ответственности."
+        ],
+        "en": [
+          "She got a new position at the company."
+        ]
+      }
+    },
+    {
+      "uk": "підвищення",
+      "ru": "повышение",
+      "en": "promotion",
+      "phoneticUk": "pidvyshchennya",
+      "phoneticRu": "povysheniye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він заслужив підвищення після важкого проєкту."
+        ],
+        "ru": [
+          "Повышение по службе обрадовало всю семью."
+        ],
+        "en": [
+          "He earned a promotion after the tough project."
+        ]
+      }
+    },
+    {
+      "uk": "звільнення",
+      "ru": "увольнение",
+      "en": "dismissal/firing",
+      "phoneticUk": "zvilnennya",
+      "phoneticRu": "uvolneniye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Звільнення стало несподіванкою для нього."
+        ],
+        "ru": [
+          "Увольнение оформили по всем правилам."
+        ],
+        "en": [
+          "The dismissal came as a surprise to him."
+        ]
+      }
+    },
+    {
+      "uk": "відпустка",
+      "ru": "отпуск",
+      "en": "vacation/leave",
+      "phoneticUk": "vidpustka",
+      "phoneticRu": "otpusk",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Він пішов у відпустку на два тижні."
+        ],
+        "ru": [
+          "Отпуск провели на море в августе."
+        ],
+        "en": [
+          "He went on vacation for two weeks."
+        ]
+      }
+    },
+    {
+      "uk": "відрядження",
+      "ru": "командировка",
+      "en": "business trip",
+      "phoneticUk": "vidryadzhennya",
+      "phoneticRu": "komandirovka",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Вона поїхала у відрядження до Берліна."
+        ],
+        "ru": [
+          "Командировка продолжалась целую неделю."
+        ],
+        "en": [
+          "She went on a business trip to Berlin."
+        ]
+      }
+    },
+    {
+      "uk": "переговори",
+      "ru": "переговоры",
+      "en": "negotiations",
+      "phoneticUk": "perehovory",
+      "phoneticRu": "peregovory",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Переговори тривали кілька годин."
+        ],
+        "ru": [
+          "Переговоры завершились подписанием договора."
+        ],
+        "en": [
+          "The negotiations lasted several hours."
+        ]
+      }
+    },
+    {
+      "uk": "угода",
+      "ru": "сделка",
+      "en": "deal/transaction",
+      "phoneticUk": "uhoda",
+      "phoneticRu": "sdelka",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Угоду підписали обидві сторони."
+        ],
+        "ru": [
+          "Сделка была выгодной для всех сторон."
+        ],
+        "en": [
+          "Both parties signed the deal."
+        ]
+      }
+    },
+    {
+      "uk": "склад",
+      "ru": "склад",
+      "en": "warehouse",
+      "phoneticUk": "sklad",
+      "phoneticRu": "sklad",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Товар зберігається на складі за містом."
+        ],
+        "ru": [
+          "Склад заполнен до отказа перед праздниками."
+        ],
+        "en": [
+          "The goods are stored in a warehouse outside the city."
+        ]
+      }
+    },
+    {
+      "uk": "постачальник",
+      "ru": "поставщик",
+      "en": "supplier",
+      "phoneticUk": "postachalnyk",
+      "phoneticRu": "postavshchik",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Постачальник доставив товар вчасно."
+        ],
+        "ru": [
+          "Поставщик предложил выгодные условия."
+        ],
+        "en": [
+          "The supplier delivered the goods on time."
+        ]
+      }
+    },
+    {
+      "uk": "бухгалтер",
+      "ru": "бухгалтер",
+      "en": "accountant",
+      "phoneticUk": "bukhhalter",
+      "phoneticRu": "bukhgalter",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Бухгалтер підготував річний звіт."
+        ],
+        "ru": [
+          "Бухгалтер проверил все финансовые документы."
+        ],
+        "en": [
+          "The accountant prepared the annual report."
+        ]
+      }
+    },
+    {
+      "uk": "податок",
+      "ru": "налог",
+      "en": "tax",
+      "phoneticUk": "podatok",
+      "phoneticRu": "nalog",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Податок потрібно сплатити до кінця місяця."
+        ],
+        "ru": [
+          "Налог на прибыль снизили в этом году."
+        ],
+        "en": [
+          "The tax must be paid by the end of the month."
+        ]
+      }
+    },
+    {
+      "uk": "рахунок-фактура",
+      "ru": "счёт-фактура",
+      "en": "invoice",
+      "phoneticUk": "rakhunok-faktura",
+      "phoneticRu": "shchyot-faktura",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Рахунок-фактура виставлений клієнту вчора."
+        ],
+        "ru": [
+          "Счёт-фактура подтверждает факт поставки товара."
+        ],
+        "en": [
+          "The invoice was issued to the client yesterday."
+        ]
+      }
+    },
+    {
+      "uk": "звіт",
+      "ru": "отчёт",
+      "en": "report",
+      "phoneticUk": "zvit",
+      "phoneticRu": "otchyot",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Менеджер підготував звіт за квартал."
+        ],
+        "ru": [
+          "Отчёт был сдан в срок без ошибок."
+        ],
+        "en": [
+          "The manager prepared a quarterly report."
+        ]
+      }
+    },
+    {
+      "uk": "презентація",
+      "ru": "презентация",
+      "en": "presentation",
+      "phoneticUk": "prezentatsiya",
+      "phoneticRu": "prezentatsiya",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Презентація нового продукту пройшла успішно."
+        ],
+        "ru": [
+          "Презентация заняла тридцать минут."
+        ],
+        "en": [
+          "The presentation of the new product went successfully."
+        ]
+      }
+    },
+    {
+      "uk": "конкурент",
+      "ru": "конкурент",
+      "en": "competitor",
+      "phoneticUk": "konkurent",
+      "phoneticRu": "konkurent",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Конкурент знизив ціни на товари."
+        ],
+        "ru": [
+          "Конкурент вышел на рынок раньше нас."
+        ],
+        "en": [
+          "The competitor lowered prices on their products."
+        ]
+      }
+    },
+    {
+      "uk": "менеджер",
+      "ru": "менеджер",
+      "en": "manager",
+      "phoneticUk": "menedzher",
+      "phoneticRu": "menedzher",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Менеджер координує роботу всього відділу."
+        ],
+        "ru": [
+          "Менеджер провёл переговоры с клиентом."
+        ],
+        "en": [
+          "The manager coordinates the work of the entire department."
+        ]
+      }
+    },
+    {
+      "uk": "секретар",
+      "ru": "секретарь",
+      "en": "secretary",
+      "phoneticUk": "sekretar",
+      "phoneticRu": "sekretar",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Секретар записала всіх на прийом."
+        ],
+        "ru": [
+          "Секретарь распечатал документы для встречи."
+        ],
+        "en": [
+          "The secretary booked appointments for everyone."
+        ]
+      }
+    },
+    {
+      "uk": "стажер",
+      "ru": "стажёр",
+      "en": "intern/trainee",
+      "phoneticUk": "stazher",
+      "phoneticRu": "stazhyor",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Стажер вчиться у досвідченого колеги."
+        ],
+        "ru": [
+          "Стажёр справился с заданием за день."
+        ],
+        "en": [
+          "The intern is learning from an experienced colleague."
+        ]
+      }
+    },
+    {
+      "uk": "підприємство",
+      "ru": "предприятие",
+      "en": "enterprise",
+      "phoneticUk": "pidpryyemstvo",
+      "phoneticRu": "predpriyatiye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Підприємство виробляє меблі на замовлення."
+        ],
+        "ru": [
+          "Предприятие работает круглосуточно."
+        ],
+        "en": [
+          "The enterprise makes custom furniture."
+        ]
+      }
+    },
+    {
+      "uk": "виробництво",
+      "ru": "производство",
+      "en": "production/manufacturing",
+      "phoneticUk": "vyrobnytstvo",
+      "phoneticRu": "proizvodstvo",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Виробництво зросло на тридцять відсотків."
+        ],
+        "ru": [
+          "Производство остановили на техническое обслуживание."
+        ],
+        "en": [
+          "Production increased by thirty percent."
+        ]
+      }
+    },
+    {
+      "uk": "якість",
+      "ru": "качество",
+      "en": "quality",
+      "phoneticUk": "yakist",
+      "phoneticRu": "kachestvo",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Якість продукції покращилася після перевірки."
+        ],
+        "ru": [
+          "Качество товара соответствует стандартам."
+        ],
+        "en": [
+          "The quality of the products improved after the inspection."
+        ]
+      }
+    },
+    {
+      "uk": "дохід",
+      "ru": "доход",
+      "en": "income/revenue",
+      "phoneticUk": "dokhid",
+      "phoneticRu": "dokhod",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Дохід від туризму зріс цього року."
+        ],
+        "ru": [
+          "Доход семьи увеличился после смены работы."
+        ],
+        "en": [
+          "Revenue from tourism grew this year."
+        ]
+      }
+    },
+    {
+      "uk": "витрата",
+      "ru": "расход",
+      "en": "expense",
+      "phoneticUk": "vytrata",
+      "phoneticRu": "raskhod",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Витрата на оренду офісу дуже велика."
+        ],
+        "ru": [
+          "Расход топлива превысил плановый показатель."
+        ],
+        "en": [
+          "The expense of renting the office is very high."
+        ]
+      }
+    },
+    {
+      "uk": "кредит",
+      "ru": "кредит",
+      "en": "loan/credit",
+      "phoneticUk": "kredyt",
+      "phoneticRu": "kredit",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Вони взяли кредит на купівлю квартири."
+        ],
+        "ru": [
+          "Кредит нужно выплачивать каждый месяц."
+        ],
+        "en": [
+          "They took out a loan to buy an apartment."
+        ]
+      }
+    },
+    {
+      "uk": "страхування",
+      "ru": "страхование",
+      "en": "insurance",
+      "phoneticUk": "strakhuvannya",
+      "phoneticRu": "strakhovaniye",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Страхування автомобіля обов'язкове за законом."
+        ],
+        "ru": [
+          "Страхование жизни даёт чувство безопасности."
+        ],
+        "en": [
+          "Car insurance is required by law."
+        ]
+      }
+    },
+    {
+      "uk": "графік",
+      "ru": "график",
+      "en": "schedule/graph",
+      "phoneticUk": "hrafik",
+      "phoneticRu": "grafik",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Графік роботи змінився з нового місяця."
+        ],
+        "ru": [
+          "График показал рост продаж за год."
+        ],
+        "en": [
+          "The work schedule changed starting next month."
+        ]
+      }
+    },
+    {
+      "uk": "дедлайн",
+      "ru": "дедлайн",
+      "en": "deadline",
+      "phoneticUk": "dedlayn",
+      "phoneticRu": "dedlayn",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Дедлайн по проєкту — п'ятниця о шостій."
+        ],
+        "ru": [
+          "Дедлайн приближался, а работа не была готова."
+        ],
+        "en": [
+          "The project deadline is Friday at six."
+        ]
+      }
+    },
+    {
+      "uk": "аутсорсинг",
+      "ru": "аутсорсинг",
+      "en": "outsourcing",
+      "phoneticUk": "autsorsynh",
+      "phoneticRu": "autsorsing",
+      "category": "business",
+      "examples": {
+        "uk": [
+          "Компанія передала бухгалтерію на аутсорсинг."
+        ],
+        "ru": [
+          "Аутсорсинг позволил сократить расходы компании."
+        ],
+        "en": [
+          "The company outsourced its accounting department."
+        ]
+      }
+    }
   ]
 }
