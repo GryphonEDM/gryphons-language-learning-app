@@ -45,6 +45,8 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [error, setError] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
+  const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
+  const ttsSpeakingRef = useRef(false);
   const chatAreaRef = useRef(null);
   const inputRef = useRef(null);
   const sendRef = useRef(null);
@@ -145,6 +147,11 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     if (!text || isLoading || !activeSession) return;
 
     setError(null);
+    // Cancel any ongoing TTS
+    ttsSpeakingRef.current = false;
+    setTtsHighlight(null);
+    // bot will land at displayMessages.length + 1 (user at +0, bot at +1)
+    const botMsgIdx = (activeSession?.displayMessages?.length ?? 0) + 1;
     const userMsg = { role: 'user', content: text };
     const userDisplay = { sender: 'user', text };
 
@@ -227,7 +234,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         messages: [...s.messages, assistantMsg],
       }));
 
-      if (ttsEnabled && onSpeak) onSpeak(reply, 0.8, ttsVolume);
+      speakWithHighlight(reply, botMsgIdx);
       if (onAddXP) onAddXP(5);
     } catch (err) {
       console.error('[Chat] LLM error:', err);
@@ -255,9 +262,23 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     else startListening(lang);
   };
 
-  const replayTTS = (text) => {
-    if (ttsEnabled && onSpeak) onSpeak(text, 0.8, ttsVolume);
-  };
+  const speakWithHighlight = useCallback(async (text, msgIdx) => {
+    if (!ttsEnabled || !onSpeak) return;
+    ttsSpeakingRef.current = true;
+    setTtsHighlight(null);
+    const sentences = text.split(/(?<=[.!?])\s+/);
+    let wordOffset = 0;
+    for (const sentence of sentences) {
+      if (!ttsSpeakingRef.current) break;
+      const words = sentence.split(/\s+/).filter(Boolean);
+      setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
+      try { await onSpeak(sentence, 0.8, ttsVolume); } catch {}
+      wordOffset += words.length;
+      if (!ttsSpeakingRef.current) break;
+    }
+    setTtsHighlight(null);
+    ttsSpeakingRef.current = false;
+  }, [ttsEnabled, onSpeak, ttsVolume]);
 
   const displayMessages = activeSession?.displayMessages || [];
 
@@ -341,20 +362,30 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               </div>
               <div style={{ ...styles.chatBubble, ...(msg.sender === 'user' ? styles.playerBubble : styles.botBubble) }}>
                 <div style={styles.bubbleText}>
-                  {msg.text.split(/(\s+)/).map((token, j) => {
-                    if (/^\s+$/.test(token)) return token;
-                    const isSelected = selectedWord && selectedWord.word === token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').toLowerCase();
-                    return (
-                      <span
-                        key={j}
-                        onClick={(e) => handleWordClick(e, token)}
-                        style={{ ...styles.clickableWord, ...(isSelected ? styles.clickableWordActive : {}) }}
-                      >{token}</span>
-                    );
-                  })}
+                  {(() => {
+                    let wordCount = 0;
+                    return msg.text.split(/(\s+)/).map((token, j) => {
+                      if (/^\s+$/.test(token)) return token;
+                      const myWordIdx = wordCount++;
+                      const isSelected = selectedWord && selectedWord.word === token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').toLowerCase();
+                      const isHighlighted = ttsHighlight?.msgIdx === i &&
+                        myWordIdx >= ttsHighlight.wordStart && myWordIdx < ttsHighlight.wordEnd;
+                      return (
+                        <span
+                          key={j}
+                          onClick={(e) => handleWordClick(e, token)}
+                          style={{
+                            ...styles.clickableWord,
+                            ...(isSelected ? styles.clickableWordActive : {}),
+                            ...(isHighlighted ? styles.clickableWordTts : {}),
+                          }}
+                        >{token}</span>
+                      );
+                    });
+                  })()}
                 </div>
                 {msg.sender === 'bot' && ttsEnabled && (
-                  <button style={styles.speakBtn} onClick={() => replayTTS(msg.text)} title="Listen again">🔊</button>
+                  <button style={styles.speakBtn} onClick={() => speakWithHighlight(msg.text, i)} title="Listen again">🔊</button>
                 )}
               </div>
             </div>
@@ -803,6 +834,10 @@ const styles = {
   clickableWordActive: {
     background: 'rgba(255,215,0,0.3)',
     borderBottom: '2px solid #ffd700',
+  },
+  clickableWordTts: {
+    background: 'rgba(77,171,247,0.3)',
+    color: '#4dabf7',
   },
   wordToolbarBackdrop: {
     position: 'fixed',

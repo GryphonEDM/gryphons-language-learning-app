@@ -11,7 +11,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('playing'); // playing, complete
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [words, setWords] = useState(() => {
     const all = getAllVocabularyWords(langCode);
     const shuffled = [...all].sort(() => Math.random() - 0.5);

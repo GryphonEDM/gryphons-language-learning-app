@@ -10,7 +10,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('playing');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a sentence-building exercise — arranging word tiles into correct ${langName} sentences. Answer questions about grammar, vocabulary, or word order concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a sentence-building exercise — arranging word tiles into correct ${langName} sentences. Answer questions about grammar, vocabulary, or word order concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [sentences, setSentences] = useState(() => {
     const shuffled = [...sentenceData].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 10);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import LessonChat from '../shared/LessonChat.jsx';
@@ -6,7 +6,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a reading comprehension exercise with a ${langName} text. Answer questions about vocabulary, grammar, or comprehension concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a reading comprehension exercise with a ${langName} text. Answer questions about vocabulary, grammar, or comprehension concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [phase, setPhase] = useState('picker'); // picker, reading, questions, complete
   const [selectedPassage, setSelectedPassage] = useState(null);
   const [questionIdx, setQuestionIdx] = useState(0);
@@ -16,6 +16,9 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
   const [xpEarned, setXpEarned] = useState(0);
   const [hoveredWord, setHoveredWord] = useState(null);
   const [clickedWord, setClickedWord] = useState(null);
+  const [isReading, setIsReading] = useState(false);
+  const [highlightRange, setHighlightRange] = useState({ start: -1, end: -1 });
+  const stopReadingRef = useRef(false);
 
   const startPassage = (passage) => {
     setSelectedPassage(passage);
@@ -42,11 +45,29 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
     }
   };
 
-  const handleReadAloud = () => {
-    if (ttsEnabled && onSpeak && selectedPassage) {
-      onSpeak(selectedPassage.text, 0.7, ttsVolume);
+  const handleReadAloud = useCallback(async () => {
+    if (!ttsEnabled || !onSpeak || !selectedPassage) return;
+    if (isReading) {
+      stopReadingRef.current = true;
+      setIsReading(false);
+      setHighlightRange({ start: -1, end: -1 });
+      return;
     }
-  };
+    stopReadingRef.current = false;
+    setIsReading(true);
+    const sentences = selectedPassage.text.split(/(?<=[.!?])\s+/);
+    let wordOffset = 0;
+    for (const sentence of sentences) {
+      if (stopReadingRef.current) break;
+      const words = sentence.split(/\s+/).filter(Boolean);
+      setHighlightRange({ start: wordOffset, end: wordOffset + words.length });
+      try { await onSpeak(sentence, 0.7, ttsVolume); } catch {}
+      wordOffset += words.length;
+      if (stopReadingRef.current) break;
+    }
+    setIsReading(false);
+    setHighlightRange({ start: -1, end: -1 });
+  }, [ttsEnabled, onSpeak, ttsVolume, selectedPassage, isReading]);
 
   const handleAnswerSelect = (idx) => {
     if (feedback) return;
@@ -156,40 +177,46 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           <div style={styles.main}>
         <div style={styles.readingCard}>
           {ttsEnabled && (
-            <button style={styles.readAloudBtn} onClick={handleReadAloud}>
-              🔊 Read Aloud
+            <button
+              style={{ ...styles.readAloudBtn, ...(isReading ? styles.readAloudBtnStop : {}) }}
+              onClick={handleReadAloud}
+            >
+              {isReading ? '⏹ Stop' : '🔊 Read Aloud'}
             </button>
           )}
 
           <div style={styles.textArea}>
-            {words.map((word, i) => {
-              const clean = word.trim().toLowerCase().replace(/[.,!?;:"""()]/g, '');
-              const hasGlossary = glossary[clean];
-              const isActive = hoveredWord === clean || clickedWord === clean;
-
-              if (!word.trim()) {
-                return <span key={i}>{word}</span>;
-              }
-
-              return (
-                <span
-                  key={i}
-                  style={{
-                    ...styles.word,
-                    ...(hasGlossary ? styles.glossaryWord : {}),
-                    ...(isActive ? styles.activeWord : {})
-                  }}
-                  onMouseEnter={() => hasGlossary && setHoveredWord(clean)}
-                  onMouseLeave={() => setHoveredWord(null)}
-                  onClick={() => hasGlossary && handleWordInteraction(word, clean)}
-                >
-                  {word}
-                  {isActive && hasGlossary && (
-                    <span style={styles.tooltip}>{glossary[clean]}</span>
-                  )}
-                </span>
-              );
-            })}
+            {(() => {
+              let wordCount = 0;
+              return words.map((word, i) => {
+                if (!word.trim()) return <span key={i}>{word}</span>;
+                const myWordIdx = wordCount++;
+                const clean = word.trim().toLowerCase().replace(/[.,!?;:"""()]/g, '');
+                const hasGlossary = glossary[clean];
+                const isActive = hoveredWord === clean || clickedWord === clean;
+                const isTtsHighlighted = highlightRange.start >= 0 &&
+                  myWordIdx >= highlightRange.start && myWordIdx < highlightRange.end;
+                return (
+                  <span
+                    key={i}
+                    style={{
+                      ...styles.word,
+                      ...(hasGlossary ? styles.glossaryWord : {}),
+                      ...(isActive ? styles.activeWord : {}),
+                      ...(isTtsHighlighted ? styles.ttsHighlighted : {}),
+                    }}
+                    onMouseEnter={() => hasGlossary && setHoveredWord(clean)}
+                    onMouseLeave={() => setHoveredWord(null)}
+                    onClick={() => hasGlossary && handleWordInteraction(word, clean)}
+                  >
+                    {word}
+                    {isActive && hasGlossary && (
+                      <span style={styles.tooltip}>{glossary[clean]}</span>
+                    )}
+                  </span>
+                );
+              });
+            })()}
           </div>
 
           <p style={styles.glossaryHint}>
@@ -332,6 +359,14 @@ const styles = {
     fontFamily: 'inherit',
     marginBottom: '1.5rem',
     display: 'block'
+  },
+  readAloudBtnStop: {
+    background: 'linear-gradient(135deg, #e74c3c, #c0392b)',
+  },
+  ttsHighlighted: {
+    background: 'rgba(77,171,247,0.2)',
+    color: '#4dabf7',
+    borderRadius: '3px',
   },
   textArea: {
     fontSize: '1.2rem',

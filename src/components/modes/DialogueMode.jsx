@@ -10,7 +10,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing a dialogue conversation exercise in ${langName}. Answer questions about phrases, vocabulary, grammar, or pronunciation concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing a dialogue conversation exercise in ${langName}. Answer questions about phrases, vocabulary, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [selectedDialogue, setSelectedDialogue] = useState(null);
   const [exchangeIdx, setExchangeIdx] = useState(0);
   const [chatHistory, setChatHistory] = useState([]);

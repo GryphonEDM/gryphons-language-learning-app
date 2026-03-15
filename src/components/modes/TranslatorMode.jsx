@@ -6,7 +6,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en

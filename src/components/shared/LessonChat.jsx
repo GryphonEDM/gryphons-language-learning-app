@@ -1,12 +1,11 @@
 import React from 'react';
-import { ClickableText } from './WordToolbar.jsx';
 
 /**
  * Always-visible inline chat panel for learning modes.
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight }) {
   return (
     <div style={styles.panel}>
       <div style={styles.header}>
@@ -19,9 +18,44 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
         )}
         {messages.map((msg, i) => (
           <div key={i} style={{ ...styles.bubble, ...(msg.sender === 'user' ? styles.userBubble : styles.botBubble) }}>
-            {msg.sender === 'bot' && onWordClick
-              ? <ClickableText text={msg.text} onWordClick={onWordClick} activeWord={activeWord} />
+            {msg.sender === 'bot'
+              ? (() => {
+                  let wordCount = 0;
+                  return msg.text.split(/(\s+)/).map((token, j) => {
+                    if (/^\s+$/.test(token)) return token;
+                    const myWordIdx = wordCount++;
+                    const isHighlighted = ttsHighlight?.msgIdx === i &&
+                      myWordIdx >= ttsHighlight.wordStart && myWordIdx < ttsHighlight.wordEnd;
+                    const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').toLowerCase();
+                    const isActive = onWordClick && activeWord === cleaned;
+                    return (
+                      <span
+                        key={j}
+                        onClick={onWordClick ? (e) => onWordClick(e, token) : undefined}
+                        style={{
+                          cursor: onWordClick ? 'pointer' : 'default',
+                          borderRadius: '3px',
+                          padding: '0 1px',
+                          background: isHighlighted
+                            ? 'rgba(77,171,247,0.3)'
+                            : isActive
+                            ? 'rgba(255,215,0,0.25)'
+                            : 'transparent',
+                          color: isHighlighted ? '#4dabf7' : 'inherit',
+                          transition: 'background 0.15s',
+                        }}
+                      >{token}</span>
+                    );
+                  });
+                })()
               : msg.text}
+            {msg.sender === 'bot' && speakWithHighlight && (
+              <button
+                style={styles.speakBtn}
+                onClick={() => speakWithHighlight(msg.text, i)}
+                title="Listen"
+              >🔊</button>
+            )}
           </div>
         ))}
         {loading && (
@@ -112,6 +146,17 @@ const styles = {
     border: '1px solid rgba(255,255,255,0.1)',
     alignSelf: 'flex-start',
     color: 'rgba(255,255,255,0.9)',
+  },
+  speakBtn: {
+    display: 'block',
+    marginTop: '0.3rem',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    opacity: 0.45,
+    padding: 0,
+    color: '#fff',
   },
   inputRow: {
     display: 'flex',

@@ -1,20 +1,43 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 
-export function useLessonChat({ langName, systemPrompt }) {
+export function useLessonChat({ langName, systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
   const historyRef = useRef([]);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
+  const ttsSpeakingRef = useRef(false);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [messages, loading]);
 
+  const speakWithHighlight = useCallback(async (text, msgIdx) => {
+    if (!ttsEnabled || !onSpeak) return;
+    ttsSpeakingRef.current = true;
+    const sentences = text.split(/(?<=[.!?])\s+/);
+    let wordOffset = 0;
+    for (const sentence of sentences) {
+      if (!ttsSpeakingRef.current) break;
+      const words = sentence.split(/\s+/).filter(Boolean);
+      setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
+      try { await onSpeak(sentence, 0.8, ttsVolume); } catch {}
+      wordOffset += words.length;
+      if (!ttsSpeakingRef.current) break;
+    }
+    setTtsHighlight(null);
+    ttsSpeakingRef.current = false;
+  }, [ttsEnabled, onSpeak, ttsVolume]);
+
   const send = async () => {
     const text = input.trim();
     if (!text || loading) return;
+
+    // Cancel any ongoing TTS
+    ttsSpeakingRef.current = false;
+    setTtsHighlight(null);
 
     const userMsg = { role: 'user', content: text };
     historyRef.current = [...historyRef.current, userMsg];
@@ -24,6 +47,8 @@ export function useLessonChat({ langName, systemPrompt }) {
       ...historyRef.current,
     ];
 
+    // user will be at messages.length, bot at messages.length + 1
+    const botMsgIdx = messages.length + 1;
     setMessages(prev => [...prev, { sender: 'user', text }]);
     setInput('');
     setLoading(true);
@@ -69,6 +94,7 @@ export function useLessonChat({ langName, systemPrompt }) {
       }
 
       historyRef.current = [...historyRef.current, { role: 'assistant', content: reply }];
+      speakWithHighlight(reply, botMsgIdx);
     } catch (err) {
       console.error('[LessonChat] error:', err);
       setMessages(prev => [...prev, { sender: 'bot', text: 'Sorry, could not reach the AI. Make sure LM Studio is running.' }]);
@@ -77,10 +103,12 @@ export function useLessonChat({ langName, systemPrompt }) {
   };
 
   const reset = () => {
+    ttsSpeakingRef.current = false;
+    setTtsHighlight(null);
     setMessages([]);
     setInput('');
     historyRef.current = [];
   };
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight };
 }

@@ -10,12 +10,12 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   const dict = buildDictionary(langCode);
 
   const [phase, setPhase] = useState('picker'); // picker, reading
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.` });
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [selectedStory, setSelectedStory] = useState(null);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, index }
   const [showEnglish, setShowEnglish] = useState(false);
   const [isReading, setIsReading] = useState(false);
-  const [highlightIndex, setHighlightIndex] = useState(-1);
+  const [highlightRange, setHighlightRange] = useState({ start: -1, end: -1 });
   const stopRef = useRef(false);
   const readingRef = useRef(false);
 
@@ -68,7 +68,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
         textToSpeak = sentenceWords.slice(wordsToSkip).join(' ');
       }
 
-      setHighlightIndex(Math.max(wordOffset, fromIndex));
+      setHighlightRange({ start: Math.max(wordOffset, fromIndex), end: sentenceEnd });
 
       try {
         await onSpeak(textToSpeak, 0.85, ttsVolume);
@@ -83,13 +83,13 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
 
     setIsReading(false);
     readingRef.current = false;
-    setHighlightIndex(-1);
+    setHighlightRange({ start: -1, end: -1 });
   }, [ttsEnabled, onSpeak, ttsVolume]);
 
   const handleStop = useCallback(() => {
     stopRef.current = true;
     setIsReading(false);
-    setHighlightIndex(-1);
+    setHighlightRange({ start: -1, end: -1 });
   }, []);
 
   // Handle single click on a word
@@ -232,13 +232,12 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
               return <span key={i}>{token}</span>;
             }
 
-            const isHighlighted = highlightIndex >= 0 && (() => {
-              // Count which real word index this token is
+            const isHighlighted = highlightRange.start >= 0 && (() => {
               let count = 0;
               for (let j = 0; j < i; j++) {
                 if (!/^\s+$/.test(tokens[j])) count++;
               }
-              return count >= highlightIndex;
+              return count >= highlightRange.start && count < highlightRange.end;
             })();
 
             const isSelected = selectedWord && selectedWord.index === i;
