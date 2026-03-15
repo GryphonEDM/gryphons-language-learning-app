@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo ========================================
-echo   Ukrainian & Russian Typing Game
+echo   Ukrainian ^& Russian Typing Game
 echo ========================================
 echo.
 
@@ -26,7 +26,7 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-echo [1/4] Checking Node.js dependencies...
+echo [1/6] Checking Node.js dependencies...
 if not exist "node_modules" (
     echo Installing Node.js dependencies...
     call npm install
@@ -41,42 +41,71 @@ if not exist "node_modules" (
 )
 echo.
 
-echo [2/4] Checking Python TTS dependencies...
-python -c "import ukrainian_tts" >nul 2>nul
-if %ERRORLEVEL% neq 0 (
-    echo Installing Python TTS library...
-    cd tts-repo
-    pip install -e . >nul 2>nul
-    cd ..
-
-    python -c "import ukrainian_tts" >nul 2>nul
+echo [2/6] Setting up Python virtual environment...
+if not exist ".venv" (
+    echo Creating virtual environment...
+    python -m venv .venv
     if %ERRORLEVEL% neq 0 (
-        echo [WARNING] Ukrainian TTS library not fully installed.
-        echo Attempting to install dependencies...
-        pip install flask flask-cors torch espnet typeguard
+        echo [ERROR] Failed to create virtual environment
+        pause
+        exit /b 1
     )
+    echo Virtual environment created.
 ) else (
-    echo Python TTS library already installed.
+    echo Virtual environment already exists.
 )
 
-:: Check Flask
+:: Activate the venv
+call .venv\Scripts\activate.bat
+echo Virtual environment activated.
+echo.
+
+echo [3/6] Checking Python TTS dependencies...
 python -c "import flask" >nul 2>nul
 if %ERRORLEVEL% neq 0 (
     echo Installing Flask...
     pip install flask flask-cors
 )
+
+python -c "import ukrainian_tts" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing Python TTS library and dependencies...
+    pip install sentencepiece
+    pip install torch torchaudio espnet
+    cd tts-repo
+    pip install -e .
+    cd ..
+
+    python -c "import ukrainian_tts" >nul 2>nul
+    if %ERRORLEVEL% neq 0 (
+        echo [WARNING] Ukrainian TTS library not fully installed.
+        echo You may need to install missing dependencies manually.
+    )
+) else (
+    echo Python TTS library already installed.
+)
 echo.
 
-echo [3/4] Starting Python TTS Server...
+echo [4/6] Checking Whisper STT dependencies...
+python -c "from faster_whisper import WhisperModel" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing faster-whisper...
+    pip install faster-whisper
+) else (
+    echo faster-whisper already installed.
+)
+echo.
+
+echo [5/6] Starting Python TTS + STT Server...
 echo Starting on http://localhost:3002
-start "Ukrainian TTS Server" cmd /k "python tts-server.py"
+start "TTS + STT Server" cmd /k "call .venv\Scripts\activate.bat && python tts-server.py"
 
 :: Wait for TTS server to start
-echo Waiting for TTS server to initialize...
+echo Waiting for TTS/STT server to initialize...
 timeout /t 3 /nobreak >nul
 echo.
 
-echo [4/4] Starting Vite Development Server...
+echo [6/6] Starting Vite Development Server...
 echo Starting on http://localhost:5173
 start "Vite Dev Server" cmd /k "npm run dev"
 
@@ -90,11 +119,15 @@ echo ========================================
 echo   Application Started Successfully!
 echo ========================================
 echo.
-echo   Web App:     http://localhost:5173
-echo   TTS Server:  http://localhost:3002
+echo   Web App:      http://localhost:5173
+echo   TTS/STT:      http://localhost:3002
+echo   LM Studio:    http://localhost:1234 (start separately)
+echo.
+echo   For Chat Practice, start LM Studio
+echo   with a model loaded on port 1234.
 echo.
 echo   Two command windows have been opened:
-echo   - Ukrainian TTS Server
+echo   - TTS + STT Server
 echo   - Vite Dev Server
 echo.
 echo   Close those windows to stop the servers.

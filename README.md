@@ -20,6 +20,8 @@ Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises,
 - **Translation Practice** - Translate words between English and your target language
 - **Listening Practice** - Hear words and type what you hear
 - **Translator** - Look up words and phrases
+- **Chat Practice** - Free conversation with a local AI tutor via LM Studio
+- **Speech-to-Text** - Speak your messages using Whisper (fully offline, auto-detects language)
 - **Text-to-Speech** - Three separate TTS engines for English, Ukrainian, and Russian
 - **Achievement System** - 20 achievements to unlock
 - **Progress Tracking** - XP, streaks, and stats saved per language
@@ -83,7 +85,9 @@ After the initial download, TTS works fully offline. You should see:
 [OK] Ukrainian TTS loaded successfully!
 [OK] Ukrainian TTS model loaded!
 [OK] Russian TTS model loaded! (speaker: aidar)
-[SPEAKER] TTS Server (Ukrainian + Russian)
+[OK] Whisper STT ready (MLX backend, model: mlx-community/whisper-small-mlx)
+[SPEAKER] TTS + STT Server (Ukrainian + Russian)
+   STT:      enabled
    Starting on http://localhost:3002
 ```
 
@@ -124,6 +128,31 @@ Uses the [ukrainian-tts](https://github.com/robinhad/ukrainian-tts) library by r
 
 Uses [Silero Models v5](https://github.com/snakers4/silero-models) for Russian speech synthesis. The model (~65 MB) is downloaded automatically on first run from `https://models.silero.ai` and saved to `tts-model-ru/v5_ru.pt`. The server uses the "aidar" voice at 48kHz sample rate.
 
+### 4. (Optional) Enable Chat Practice with a local AI tutor
+
+Chat Practice lets you have free-form conversations with an AI language tutor. It requires [LM Studio](https://lmstudio.ai/) running locally to serve an LLM.
+
+#### Install LM Studio
+
+1. Download and install [LM Studio](https://lmstudio.ai/) for your platform (Windows, macOS, or Linux)
+2. Open LM Studio and download a model:
+   - **Recommended:** `Qwen 3.5 35B` — excellent multilingual support for Ukrainian and Russian (requires ~24GB RAM)
+   - **Lighter alternative:** `Qwen 3.5 9B` — still good quality, runs on most machines (~8GB RAM)
+   - Search for "Qwen 3.5" in the LM Studio model search, pick a GGUF quantization that fits your hardware
+3. Load the model in LM Studio
+4. Go to the **Developer** tab (or **Local Server**) and click **Start Server** — it runs on `http://localhost:1234` by default
+
+That's it. The app automatically connects to LM Studio when you open Chat Practice. If LM Studio isn't running, the rest of the app works normally — you just won't have the chat feature.
+
+#### Speech-to-Text (Whisper)
+
+The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects whether you're speaking English, Ukrainian, or Russian and transcribes it accurately. The start scripts install the correct Whisper backend automatically:
+
+- **macOS (Apple Silicon):** Uses [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) — optimized for M-series chips, very fast (~500ms)
+- **Windows / Linux / Intel Mac:** Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CPU-based, works everywhere
+
+The Whisper model (~500MB) downloads automatically on first use. After that, speech-to-text works fully offline.
+
 ## How to play
 
 1. **Set up your keyboard** - Add Ukrainian or Russian as an input language in your OS settings (click the Keyboard Setup Guide in the app for instructions)
@@ -141,7 +170,7 @@ Uses [Silero Models v5](https://github.com/snakers4/silero-models) for Russian s
 │   ├── data/ru/            # Russian language data
 │   └── utils/              # Helpers (dictionary builder, sound effects)
 ├── tts-repo/               # Ukrainian TTS library (from robinhad/ukrainian-tts)
-├── tts-server.py           # Local TTS server - Ukrainian (ESPnet) + Russian (Silero) on port 3002
+├── tts-server.py           # Local TTS + STT server - TTS (ESPnet + Silero) + STT (Whisper) on port 3002
 ├── tts-model/              # Ukrainian TTS model files (auto-downloaded, gitignored)
 ├── tts-model-ru/           # Russian TTS model files (auto-downloaded, gitignored)
 ├── tts-cache/              # Cached Ukrainian TTS audio (gitignored)
@@ -181,6 +210,16 @@ cd tts-repo && pip install -e . && cd ..
 - The ESPnet model downloads from GitHub releases of [robinhad/ukrainian-tts](https://github.com/robinhad/ukrainian-tts/releases)
 - Check your internet connection and try running `python tts-server.py` again
 
+**Chat Practice says "LM Studio not detected"?**
+- Make sure LM Studio is running and a model is loaded
+- Check that the local server is started in LM Studio (Developer tab → Start Server)
+- The server should be on `http://localhost:1234` (the default)
+
+**Speech-to-text not working?**
+- Make sure your browser has microphone permissions for the site
+- The Whisper model downloads on first use (~500MB) — check the server console for download progress
+- If using HTTPS, make sure your certs are set up (see below)
+
 **Want HTTPS? (optional, needed for Web Speech API on some networks)**
 ```bash
 mkdir .cert
@@ -196,4 +235,6 @@ The dev server will automatically use HTTPS when these cert files exist, and fal
 
 - Ukrainian TTS model by [robinhad](https://github.com/robinhad/ukrainian-tts)
 - Russian TTS model by [Silero](https://github.com/snakers4/silero-models)
+- Speech-to-text by [OpenAI Whisper](https://github.com/openai/whisper) via [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) / [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
+- LLM chat powered by [LM Studio](https://lmstudio.ai/)
 - Built with React + Vite

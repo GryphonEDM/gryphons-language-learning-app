@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
 import hashlib
 import os
 import sys
+import tempfile
 import torch
 
 # Resolve all paths relative to this script's directory
@@ -54,6 +55,93 @@ tts_ru.to(torch.device('cpu'))
 RU_SPEAKER = 'aidar'
 RU_SAMPLE_RATE = 48000
 print(f"[OK] Russian TTS model loaded! (speaker: {RU_SPEAKER})")
+
+# === Whisper STT ===
+# Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
+import platform
+
+stt_backend = None
+stt_available = False
+stt_model_obj = None
+
+MLX_MODEL = "mlx-community/whisper-small-mlx"
+FASTER_WHISPER_MODEL = "small"
+
+if platform.system() == 'Darwin' and platform.machine() == 'arm64':
+    # macOS Apple Silicon — use MLX Whisper for best performance
+    try:
+        import mlx_whisper
+        stt_backend = 'mlx'
+        stt_available = True
+        print(f"[OK] Whisper STT ready (MLX backend, model: {MLX_MODEL})")
+    except ImportError:
+        print("[WARN] mlx-whisper not installed — trying faster-whisper...")
+
+if not stt_available:
+    # Windows, Linux, or Intel Mac — use faster-whisper (CPU)
+    try:
+        from faster_whisper import WhisperModel
+        print(f"Loading Whisper STT model (faster-whisper, model: {FASTER_WHISPER_MODEL})...")
+        stt_model_obj = WhisperModel(FASTER_WHISPER_MODEL, device="cpu", compute_type="int8")
+        stt_backend = 'faster-whisper'
+        stt_available = True
+        print(f"[OK] Whisper STT ready (faster-whisper backend, model: {FASTER_WHISPER_MODEL})")
+    except ImportError:
+        pass
+
+if not stt_available:
+    print("[WARN] No Whisper STT backend installed — STT endpoint disabled")
+    if platform.system() == 'Darwin' and platform.machine() == 'arm64':
+        print("       Install with: pip install mlx-whisper")
+    else:
+        print("       Install with: pip install faster-whisper")
+
+def whisper_transcribe(audio_path):
+    """Transcribe audio using whichever Whisper backend is available.
+    Language is auto-detected so both English and Ukrainian/Russian are
+    transcribed as-is (not translated)."""
+    if stt_backend == 'mlx':
+        result = mlx_whisper.transcribe(
+            audio_path,
+            path_or_hf_repo=MLX_MODEL,
+            task="transcribe",
+        )
+        return result.get('text', '').strip()
+    elif stt_backend == 'faster-whisper':
+        segments, _ = stt_model_obj.transcribe(audio_path, task="transcribe")
+        return ' '.join(seg.text for seg in segments).strip()
+    return ''
+
+@app.route('/stt', methods=['POST'])
+def transcribe_audio():
+    if not stt_available:
+        return jsonify({'error': 'No Whisper STT backend installed'}), 503
+
+    try:
+        if 'audio' not in request.files:
+            return jsonify({'error': 'No audio file provided'}), 400
+
+        audio_file = request.files['audio']
+
+        # Save to temp file
+        suffix = '.webm' if 'webm' in (audio_file.content_type or '') else '.wav'
+        with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
+            audio_file.save(tmp)
+            tmp_path = tmp.name
+
+        try:
+            print(f"[STT] Transcribing (auto-detect language, backend: {stt_backend})...")
+            text = whisper_transcribe(tmp_path)
+            print(f"[STT] Result: {text[:80]}{'...' if len(text) > 80 else ''}")
+            return jsonify({'text': text})
+        finally:
+            os.unlink(tmp_path)
+
+    except Exception as e:
+        print(f"[STT] Error: {repr(e)}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/tts', methods=['POST'])
 def generate_tts():
@@ -107,8 +195,9 @@ def generate_russian_tts(text):
     return send_file(cache_path, mimetype='audio/wav')
 
 if __name__ == '__main__':
-    print("\n[SPEAKER] TTS Server (Ukrainian + Russian)")
+    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian)")
     print(f"   UK Cache: {CACHE_DIR}")
     print(f"   RU Cache: {RU_CACHE_DIR}")
+    print(f"   STT:      {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)

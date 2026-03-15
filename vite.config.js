@@ -23,6 +23,15 @@ export default defineConfig({
       '/tts': {
         target: 'http://localhost:3002',
         changeOrigin: true
+      },
+      '/stt': {
+        target: 'http://localhost:3002',
+        changeOrigin: true
+      },
+      '/llm': {
+        target: 'http://localhost:1234/v1',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/llm/, '')
       }
     }
   }

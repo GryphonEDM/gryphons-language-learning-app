@@ -17,6 +17,7 @@ import SentenceMode from './components/modes/SentenceMode.jsx';
 import DialogueMode from './components/modes/DialogueMode.jsx';
 import ReadingMode from './components/modes/ReadingMode.jsx';
 import StoryMode from './components/modes/StoryMode.jsx';
+import ChatMode from './components/modes/ChatMode.jsx';
 
 // Import story data
 import veryBeginnerStories from './data/stories/very-beginner.json';
@@ -1267,6 +1268,13 @@ export default function UkrainianTypingGame() {
                     <p>Read along with stories, click words to learn</p>
                   </div>
                 </div>
+                <div className="mode-card" onClick={() => setGameMode('chat')}>
+                  <div className="mode-icon">🤖</div>
+                  <div className="mode-info">
+                    <h3>Chat Practice</h3>
+                    <p>Free conversation with AI tutor</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1636,6 +1644,15 @@ export default function UkrainianTypingGame() {
           <StoryMode
             langCode={currentLanguage}
             stories={ALL_STORIES}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+          />
+        ) : gameMode === 'chat' ? (
+          <ChatMode
+            langCode={currentLanguage}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
