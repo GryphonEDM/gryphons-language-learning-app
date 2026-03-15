@@ -39,7 +39,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
 
   // Auto-play TTS for translations
   useEffect(() => {
-    if (outputText && ttsEnabled && !isLoading && outputIsUkrainian) {
+    if (outputText && ttsEnabled && !isLoading) {
       const timer = setTimeout(() => handleSpeak(outputText), 200);
       return () => clearTimeout(timer);
     }
