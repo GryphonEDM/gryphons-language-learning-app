@@ -1,21 +1,16 @@
 import { useState, useRef, useEffect } from 'react';
 
 export function useLessonChat({ langName, systemPrompt }) {
-  const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const historyRef = useRef([]); // { role, content }[] — LLM format
+  const historyRef = useRef([]);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [messages, loading]);
-
-  useEffect(() => {
-    if (open) inputRef.current?.focus();
-  }, [open]);
 
   const send = async () => {
     const text = input.trim();
@@ -87,5 +82,5 @@ export function useLessonChat({ langName, systemPrompt }) {
     historyRef.current = [];
   };
 
-  return { open, setOpen, messages, input, setInput, loading, send, reset, scrollRef, inputRef };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef };
 }

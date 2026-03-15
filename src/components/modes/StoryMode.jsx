@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
@@ -8,6 +10,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   const dict = buildDictionary(langCode);
 
   const [phase, setPhase] = useState('picker'); // picker, reading
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.` });
   const [selectedStory, setSelectedStory] = useState(null);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, index }
   const [showEnglish, setShowEnglish] = useState(false);
@@ -218,6 +221,8 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
         </button>
       </div>
 
+      <div style={styles.contentRow}>
+        <div style={styles.main}>
       {/* Story text with clickable words */}
       <div style={styles.storyContainer}>
         <div style={styles.storyText}>
@@ -282,8 +287,11 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
         </div>
       )}
 
-      <div style={styles.tipBar}>
-        💡 Click a word to hear it & see its meaning. Double-click to read from that word onward.
+          <div style={styles.tipBar}>
+            💡 Click a word to hear it & see its meaning. Double-click to read from that word onward.
+          </div>
+        </div>
+        <LessonChat {...chat} />
       </div>
     </div>
   );
@@ -295,8 +303,10 @@ const styles = {
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
     padding: '2rem',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    fontFamily: 'system-ui, -apple-system, sans-serif',
   },
+  contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
+  main: { flex: 1, minWidth: 0 },
   levelList: {
     maxWidth: '800px',
     margin: '0 auto'

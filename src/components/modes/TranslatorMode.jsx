@@ -1,8 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
+  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.` });
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en
@@ -108,6 +112,8 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         <span style={styles.langLabel}>{toLabel}</span>
       </div>
 
+      <div style={styles.contentRow}>
+        <div style={styles.main}>
       <div style={styles.translatorBody}>
         <div style={styles.panel}>
           <label style={styles.panelLabel}>{fromLabel}</label>
@@ -157,9 +163,12 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         </div>
       </div>
 
-      <div style={styles.stats}>
-        <span style={styles.statItem}>Lookups: {lookupCount}</span>
-        <span style={styles.statItem}>TTS Used: {speakCount}</span>
+          <div style={styles.stats}>
+            <span style={styles.statItem}>Lookups: {lookupCount}</span>
+            <span style={styles.statItem}>TTS Used: {speakCount}</span>
+          </div>
+        </div>
+        <LessonChat {...chat} />
       </div>
     </div>
   );
@@ -171,8 +180,10 @@ const styles = {
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
     padding: '2rem',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    fontFamily: 'system-ui, -apple-system, sans-serif',
   },
+  contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
+  main: { flex: 1, minWidth: 0 },
   directionToggle: {
     display: 'flex',
     alignItems: 'center',

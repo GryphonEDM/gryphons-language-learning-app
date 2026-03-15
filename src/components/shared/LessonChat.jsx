@@ -2,60 +2,48 @@ import React from 'react';
 import { ClickableText } from './WordToolbar.jsx';
 
 /**
- * Fixed right-side chat panel for learning modes.
+ * Always-visible inline chat panel for learning modes.
+ * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ open, setOpen, messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord }) {
   return (
-    <>
-      {/* Toggle button — only shown when closed */}
-      {!open && (
-        <button style={styles.toggleBtn} onClick={() => setOpen(true)}>
-          💬 Have a question?
-        </button>
-      )}
+    <div style={styles.panel}>
+      <div style={styles.header}>
+        <span style={styles.title}>💬 Ask a Question</span>
+      </div>
 
-      {/* Side panel */}
-      {open && (
-        <div style={styles.panel}>
-          <div style={styles.header}>
-            <span style={styles.title}>💬 Ask a Question</span>
-            <button style={styles.closeBtn} onClick={() => setOpen(false)} title="Close">✕</button>
+      <div ref={scrollRef} style={styles.messages}>
+        {messages.length === 0 && (
+          <div style={styles.empty}>Ask me anything about this exercise!</div>
+        )}
+        {messages.map((msg, i) => (
+          <div key={i} style={{ ...styles.bubble, ...(msg.sender === 'user' ? styles.userBubble : styles.botBubble) }}>
+            {msg.sender === 'bot' && onWordClick
+              ? <ClickableText text={msg.text} onWordClick={onWordClick} activeWord={activeWord} />
+              : msg.text}
           </div>
+        ))}
+        {loading && (
+          <div style={{ ...styles.bubble, ...styles.botBubble }}>
+            <span style={styles.dot}>●</span>
+            <span style={{ ...styles.dot, animationDelay: '0.2s' }}>●</span>
+            <span style={{ ...styles.dot, animationDelay: '0.4s' }}>●</span>
+          </div>
+        )}
+      </div>
 
-          <div ref={scrollRef} style={styles.messages}>
-            {messages.length === 0 && (
-              <div style={styles.empty}>Ask me anything about this exercise!</div>
-            )}
-            {messages.map((msg, i) => (
-              <div key={i} style={{ ...styles.bubble, ...(msg.sender === 'user' ? styles.userBubble : styles.botBubble) }}>
-                {msg.sender === 'bot' && onWordClick
-                  ? <ClickableText text={msg.text} onWordClick={onWordClick} activeWord={activeWord} />
-                  : msg.text}
-              </div>
-            ))}
-            {loading && (
-              <div style={{ ...styles.bubble, ...styles.botBubble }}>
-                <span style={styles.dot}>●</span>
-                <span style={{ ...styles.dot, animationDelay: '0.2s' }}>●</span>
-                <span style={{ ...styles.dot, animationDelay: '0.4s' }}>●</span>
-              </div>
-            )}
-          </div>
-
-          <div style={styles.inputRow}>
-            <input
-              ref={inputRef}
-              style={styles.input}
-              value={input}
-              onChange={e => setInput(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && send()}
-              placeholder="Ask a question..."
-            />
-            <button style={styles.sendBtn} onClick={send} disabled={loading}>→</button>
-          </div>
-        </div>
-      )}
+      <div style={styles.inputRow}>
+        <input
+          ref={inputRef}
+          style={styles.input}
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={e => e.key === 'Enter' && send()}
+          placeholder="Ask a question..."
+        />
+        <button style={styles.sendBtn} onClick={send} disabled={loading}>→</button>
+      </div>
 
       <style>{`
         @keyframes lessonDotPulse {
@@ -63,44 +51,25 @@ export default function LessonChat({ open, setOpen, messages, input, setInput, l
           40% { opacity: 1; }
         }
       `}</style>
-    </>
+    </div>
   );
 }
 
 const styles = {
-  toggleBtn: {
-    position: 'fixed',
-    bottom: '2rem',
-    right: '2rem',
-    background: 'linear-gradient(135deg, #4dabf7, #339af0)',
-    border: 'none',
-    borderRadius: '999px',
-    color: '#fff',
-    fontWeight: '700',
-    fontSize: '0.95rem',
-    padding: '0.75rem 1.25rem',
-    cursor: 'pointer',
-    fontFamily: 'inherit',
-    boxShadow: '0 4px 20px rgba(77,171,247,0.4)',
-    zIndex: 200,
-  },
   panel: {
-    position: 'fixed',
-    top: '4rem',
-    right: 0,
-    bottom: 0,
-    width: '340px',
-    background: '#0f172a',
-    borderLeft: '1px solid rgba(255,215,0,0.2)',
+    width: '320px',
+    flexShrink: 0,
+    background: 'rgba(0,0,0,0.4)',
+    border: '1px solid rgba(255,215,0,0.25)',
+    borderRadius: '20px',
     display: 'flex',
     flexDirection: 'column',
-    zIndex: 200,
-    boxShadow: '-4px 0 24px rgba(0,0,0,0.4)',
+    height: '70vh',
+    minHeight: '400px',
+    position: 'sticky',
+    top: '1rem',
   },
   header: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     padding: '1rem 1.25rem',
     borderBottom: '1px solid rgba(255,255,255,0.1)',
     flexShrink: 0,
@@ -109,15 +78,6 @@ const styles = {
     fontWeight: '700',
     fontSize: '1rem',
     color: '#ffd700',
-  },
-  closeBtn: {
-    background: 'none',
-    border: 'none',
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: '1rem',
-    cursor: 'pointer',
-    padding: '0.2rem 0.4rem',
-    borderRadius: '6px',
   },
   messages: {
     flex: 1,

@@ -179,6 +179,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         onExit={onExit}
       />
 
+      <div style={styles.contentRow}>
+        <div style={styles.main}>
       <div style={styles.controls}>
         <button style={styles.dirBtn} onClick={handleDirectionChange}>
           {dirLabel} (tap to switch)
@@ -263,12 +265,14 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         )}
       </div>
 
-      <div style={styles.scoreBar}>
-        <span>Score: {score}/{currentIdx + (submitted ? 1 : 0)}</span>
-        <span>XP: +{xpEarned}</span>
+          <div style={styles.scoreBar}>
+            <span>Score: {score}/{currentIdx + (submitted ? 1 : 0)}</span>
+            <span>XP: +{xpEarned}</span>
+          </div>
+        </div>
+        <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
       </div>
       <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
-      <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
     </div>
   );
 }
@@ -279,8 +283,10 @@ const styles = {
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
     padding: '2rem',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    fontFamily: 'system-ui, -apple-system, sans-serif',
   },
+  contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
+  main: { flex: 1, minWidth: 0 },
   controls: {
     display: 'flex',
     justifyContent: 'center',

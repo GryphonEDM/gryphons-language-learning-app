@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a reading comprehension exercise with a ${langName} text. Answer questions about vocabulary, grammar, or comprehension concisely. Keep responses under 150 words.` });
   const [phase, setPhase] = useState('picker'); // picker, reading, questions, complete
   const [selectedPassage, setSelectedPassage] = useState(null);
   const [questionIdx, setQuestionIdx] = useState(0);
@@ -149,6 +152,8 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           onExit={() => setPhase('picker')}
         />
 
+        <div style={styles.contentRow}>
+          <div style={styles.main}>
         <div style={styles.readingCard}>
           {ttsEnabled && (
             <button style={styles.readAloudBtn} onClick={handleReadAloud}>
@@ -195,6 +200,9 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
             Answer Questions →
           </button>
         </div>
+          </div>
+          <LessonChat {...chat} />
+        </div>
       </div>
     );
   }
@@ -212,6 +220,8 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           onExit={() => setPhase('reading')}
         />
 
+        <div style={styles.contentRow}>
+          <div style={styles.main}>
         <div style={styles.questionCard}>
           <p style={styles.questionText}>{question.question}</p>
 
@@ -257,9 +267,12 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           )}
         </div>
 
-        <div style={styles.scoreBar}>
-          <span>Score: {score}/{questionIdx + (feedback ? 1 : 0)}</span>
-          <span>XP: +{xpEarned}</span>
+          <div style={styles.scoreBar}>
+            <span>Score: {score}/{questionIdx + (feedback ? 1 : 0)}</span>
+            <span>XP: +{xpEarned}</span>
+          </div>
+          </div>
+          <LessonChat {...chat} />
         </div>
       </div>
     );
@@ -274,8 +287,10 @@ const styles = {
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
     padding: '2rem',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    fontFamily: 'system-ui, -apple-system, sans-serif',
   },
+  contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
+  main: { flex: 1, minWidth: 0 },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
