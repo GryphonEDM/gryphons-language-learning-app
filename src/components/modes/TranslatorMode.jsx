@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import { translatePhraseWithLLM } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 
@@ -10,6 +11,8 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en
+  const [translationMode, setTranslationMode] = useState('llm'); // 'llm' or 'dict'
+  const [isLoading, setIsLoading] = useState(false);
   const [lookupCount, setLookupCount] = useState(0);
   const [speakCount, setSpeakCount] = useState(0);
   const [suggestions, setSuggestions] = useState([]);
@@ -27,14 +30,14 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
 
     debounceRef.current = setTimeout(() => {
       translateInput(inputText.trim());
-    }, 300);
+    }, translationMode === 'llm' ? 600 : 300);
 
     return () => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
     };
-  }, [inputText, direction]);
+  }, [inputText, direction, translationMode]);
 
-  const translateInput = (text) => {
+  const translateWithDict = (text) => {
     const source = direction === 'en-uk' ? dict.enToUk : dict.ukToEn;
     const lower = text.toLowerCase();
 
@@ -44,7 +47,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
       setSuggestions([]);
       setLookupCount(prev => prev + 1);
       if (onAddXP && lookupCount === 0) onAddXP(5);
-      return;
+      return true;
     }
 
     // Word-by-word translation
@@ -56,10 +59,10 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
       setOutputText(result);
       setSuggestions([]);
       setLookupCount(prev => prev + 1);
-      return;
+      return true;
     }
 
-    // Prefix fuzzy suggestions - only suggest words that start with what the user typed
+    // Prefix fuzzy suggestions
     const matches = Object.keys(source).filter(key =>
       key.startsWith(lower)
     ).slice(0, 5);
@@ -70,6 +73,29 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
     } else {
       setOutputText('');
       setSuggestions([]);
+    }
+    return false;
+  };
+
+  const translateInput = async (text) => {
+    if (translationMode === 'llm') {
+      setIsLoading(true);
+      setOutputText('');
+      setSuggestions([]);
+      const fromLang = direction === 'en-uk' ? 'English' : langName;
+      const toLang = direction === 'en-uk' ? langName : 'English';
+      const result = await translatePhraseWithLLM(text, fromLang, toLang);
+      setIsLoading(false);
+      if (result) {
+        setOutputText(result);
+        setLookupCount(prev => prev + 1);
+        if (onAddXP && lookupCount === 0) onAddXP(5);
+      } else {
+        // LLM failed — fall back to dictionary
+        translateWithDict(text);
+      }
+    } else {
+      translateWithDict(text);
     }
   };
 
@@ -112,6 +138,17 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         <span style={styles.langLabel}>{toLabel}</span>
       </div>
 
+      <div style={styles.modeToggle}>
+        <button
+          style={{ ...styles.modeBtn, ...(translationMode === 'llm' ? styles.modeBtnActive : {}) }}
+          onClick={() => setTranslationMode('llm')}
+        >✨ AI</button>
+        <button
+          style={{ ...styles.modeBtn, ...(translationMode === 'dict' ? styles.modeBtnActive : {}) }}
+          onClick={() => setTranslationMode('dict')}
+        >📚 Dictionary</button>
+      </div>
+
       <div style={styles.contentRow}>
         <div style={styles.main}>
       <div style={styles.translatorBody}>
@@ -141,7 +178,9 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
             )}
           </div>
           <div style={styles.outputArea}>
-            {outputText ? (
+            {isLoading ? (
+              <span style={styles.loading}>Translating...</span>
+            ) : outputText ? (
               <span style={styles.outputText}>{outputText}</span>
             ) : suggestions.length > 0 ? (
               <div style={styles.suggestionsArea}>
@@ -155,7 +194,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
                 ))}
               </div>
             ) : inputText.trim() ? (
-              <span style={styles.notFound}>Word not in dictionary</span>
+              <span style={styles.notFound}>{translationMode === 'llm' ? 'Could not translate' : 'Word not in dictionary'}</span>
             ) : (
               <span style={styles.placeholder}>Translation will appear here...</span>
             )}
@@ -316,6 +355,35 @@ const styles = {
   },
   sugVal: {
     color: '#4dabf7'
+  },
+  modeToggle: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    marginBottom: '1.5rem',
+  },
+  modeBtn: {
+    background: 'rgba(255,255,255,0.05)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    color: 'rgba(255,255,255,0.6)',
+    padding: '0.4rem 1.2rem',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: '500',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
+  },
+  modeBtnActive: {
+    background: 'rgba(255,215,0,0.15)',
+    border: '1px solid #ffd700',
+    color: '#ffd700',
+    fontWeight: '700',
+  },
+  loading: {
+    color: 'rgba(255,255,255,0.5)',
+    fontStyle: 'italic',
+    animation: 'pulse 1s infinite',
   },
   stats: {
     display: 'flex',

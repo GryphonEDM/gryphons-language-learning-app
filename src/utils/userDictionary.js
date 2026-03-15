@@ -24,6 +24,26 @@ export function lookupUserDict(word) {
   return null;
 }
 
+/** Call the LLM to translate a full phrase or sentence. */
+export async function translatePhraseWithLLM(text, fromLangName, toLangName) {
+  try {
+    const messages = [
+      { role: 'system', content: `You are a translator. Translate from ${fromLangName} to ${toLangName}. Respond with ONLY the translation — no explanation, no notes, no alternatives, just the translated text.` },
+      { role: 'user', content: text }
+    ];
+    const res = await fetch('/llm/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'local-model', messages, temperature: 0.1, max_tokens: 200, stream: false }),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content?.trim() || null;
+  } catch {
+    return null;
+  }
+}
+
 /** Call the LLM to translate a single word with optional context sentence. */
 export async function translateWithLLM(word, langName, contextSentence = '') {
   try {
