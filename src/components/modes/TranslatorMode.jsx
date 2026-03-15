@@ -37,6 +37,14 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
     };
   }, [inputText, direction, translationMode]);
 
+  // Auto-play TTS for translations
+  useEffect(() => {
+    if (outputText && ttsEnabled && !isLoading && outputIsUkrainian) {
+      const timer = setTimeout(() => handleSpeak(outputText), 200);
+      return () => clearTimeout(timer);
+    }
+  }, [outputText, ttsEnabled]);
+
   const translateWithDict = (text) => {
     const source = direction === 'en-uk' ? dict.enToUk : dict.ukToEn;
     const lower = text.toLowerCase();
