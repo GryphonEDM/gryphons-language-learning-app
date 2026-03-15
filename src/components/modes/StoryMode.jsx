@@ -128,12 +128,34 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
     }, 100);
   }, [readAloud, handleStop]);
 
+  // Flatten all stories into a linear array for navigation
+  const flatStories = stories.flatMap(group => group.stories);
+  const currentStoryIndex = selectedStory ? flatStories.findIndex(s => s.id === selectedStory.id) : -1;
+
   const handleSelectStory = (story) => {
     setSelectedStory(story);
     setSelectedWord(null);
     setShowEnglish(false);
     setPhase('reading');
     if (onAddXP) onAddXP(5);
+  };
+
+  const handlePreviousStory = () => {
+    if (currentStoryIndex > 0) {
+      handleStop();
+      setSelectedWord(null);
+      setShowEnglish(false);
+      handleSelectStory(flatStories[currentStoryIndex - 1]);
+    }
+  };
+
+  const handleNextStory = () => {
+    if (currentStoryIndex < flatStories.length - 1) {
+      handleStop();
+      setSelectedWord(null);
+      setShowEnglish(false);
+      handleSelectStory(flatStories[currentStoryIndex + 1]);
+    }
   };
 
   // PICKER PHASE
@@ -217,6 +239,26 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
           onClick={() => setShowEnglish(!showEnglish)}
         >
           {showEnglish ? '🇬🇧 Hide English' : '🇬🇧 Show English'}
+        </button>
+        <button
+          style={{
+            ...styles.controlBtn,
+            ...(currentStoryIndex <= 0 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
+          }}
+          onClick={handlePreviousStory}
+          disabled={currentStoryIndex <= 0}
+        >
+          ← Previous
+        </button>
+        <button
+          style={{
+            ...styles.controlBtn,
+            ...(currentStoryIndex >= flatStories.length - 1 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
+          }}
+          onClick={handleNextStory}
+          disabled={currentStoryIndex >= flatStories.length - 1}
+        >
+          Next →
         </button>
         <button
           style={styles.controlBtn}
