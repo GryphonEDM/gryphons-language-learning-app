@@ -5,11 +5,14 @@ import React from 'react';
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
   return (
     <div style={styles.panel}>
       <div style={styles.header}>
         <span style={styles.title}>💬 Ask a Question</span>
+        {stopTts && (
+          <button style={styles.headerStopBtn} onClick={stopTts} title="Stop TTS">⏹</button>
+        )}
       </div>
 
       <div ref={scrollRef} style={styles.messages}>
@@ -50,11 +53,18 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
                 })()
               : msg.text}
             {msg.sender === 'bot' && speakWithHighlight && (
-              <button
-                style={styles.speakBtn}
-                onClick={() => speakWithHighlight(msg.text, i)}
-                title="Listen"
-              >🔊</button>
+              <>
+                <button
+                  style={styles.speakBtn}
+                  onClick={() => speakWithHighlight(msg.text, i)}
+                  title="Listen"
+                >🔊</button>
+                <button
+                  style={styles.stopBtn}
+                  onClick={stopTts}
+                  title="Stop"
+                >⏹</button>
+              </>
             )}
           </div>
         ))}
@@ -154,6 +164,19 @@ const styles = {
     padding: '1rem 1.25rem',
     borderBottom: '1px solid rgba(255,255,255,0.1)',
     flexShrink: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  headerStopBtn: {
+    background: 'rgba(255,80,80,0.15)',
+    border: '1px solid rgba(255,80,80,0.35)',
+    borderRadius: '8px',
+    color: '#f87171',
+    padding: '0.25rem 0.6rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontFamily: 'inherit',
   },
   title: {
     fontWeight: '700',
@@ -195,7 +218,7 @@ const styles = {
     color: 'rgba(255,255,255,0.9)',
   },
   speakBtn: {
-    display: 'block',
+    display: 'inline-block',
     marginTop: '0.3rem',
     background: 'none',
     border: 'none',
@@ -204,6 +227,17 @@ const styles = {
     opacity: 0.45,
     padding: 0,
     color: '#fff',
+    marginRight: '0.3rem',
+  },
+  stopBtn: {
+    display: 'inline-block',
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    opacity: 0.45,
+    padding: 0,
+    color: '#ff6b6b',
   },
   wordPanel: {
     margin: '0 0.5rem 0.5rem',

@@ -155,5 +155,9 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     historyRef.current = [];
   };
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
+  const stopTts = useCallback(() => {
+    ttsSpeakingRef.current = false;
+  }, []);
+
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
 }

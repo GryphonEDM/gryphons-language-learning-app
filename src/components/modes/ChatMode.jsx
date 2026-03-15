@@ -48,7 +48,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
   const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const ttsSpeakingRef = useRef(false);
+  const abortRef = useRef(null);
   const chatAreaRef = useRef(null);
   const inputRef = useRef(null);
   const sendRef = useRef(null);
@@ -160,17 +162,18 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setSessions(prev => prev.map(s => s.id === activeId ? updater(s) : s));
   }
 
-  const handleSend = async (directText) => {
+  const handleSend = async (directText, fromSTT = false) => {
     const text = (directText || userInput).trim();
     if (!text || isLoading || !activeSession) return;
 
     setError(null);
-    // Cancel any ongoing TTS
-    ttsSpeakingRef.current = false;
-    setTtsHighlight(null);
+    stopAll();
     // bot will land at displayMessages.length + 1 (user at +0, bot at +1)
     const botMsgIdx = (activeSession?.displayMessages?.length ?? 0) + 1;
-    const userMsg = { role: 'user', content: text };
+    const llmContent = fromSTT
+      ? `[Note: this message was captured via speech-to-text. Evaluate the intent, STT might have captured them incorrectly or their pronunciation might be off.]\n${text}`
+      : text;
+    const userMsg = { role: 'user', content: llmContent };
     const userDisplay = { sender: 'user', text };
 
     // Build LLM message history: system prompt + session history + new message
@@ -194,6 +197,8 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setIsLoading(true);
 
     try {
+      const abort = new AbortController();
+      abortRef.current = abort;
       const res = await fetch('/llm/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -204,8 +209,10 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           max_tokens: 300,
           stream: true,
         }),
+        signal: abort.signal,
       });
       if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
+      abortRef.current = null;
 
       // Add an empty bot message to start streaming into
       updateActive(s => ({
@@ -255,6 +262,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       speakWithHighlight(reply, botMsgIdx);
       if (onAddXP) onAddXP(5);
     } catch (err) {
+      if (err.name === 'AbortError') return; // user stopped intentionally
       console.error('[Chat] LLM error:', err);
       setError('Could not reach LM Studio. Make sure it is running with a model loaded.');
       setLlmConnected(false);
@@ -268,7 +276,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
   const handleTranscript = useCallback((text) => {
     setUserInput(text);
-    setTimeout(() => { if (sendRef.current) sendRef.current(text); }, 0);
+    setTimeout(() => { if (sendRef.current) sendRef.current(text, true); }, 0);
   }, []);
 
   const { isListening, isTranscribing, error: sttError, startListening, stopListening } = useWhisperSTT({
@@ -280,9 +288,18 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     else startListening(lang);
   };
 
+  const stopAll = useCallback(() => {
+    ttsSpeakingRef.current = false;
+    setTtsHighlight(null);
+    setIsSpeaking(false);
+    if (abortRef.current) { abortRef.current.abort(); abortRef.current = null; }
+    setIsLoading(false);
+  }, []);
+
   const speakWithHighlight = useCallback(async (text, msgIdx) => {
     if (!ttsEnabled || !onSpeak) return;
     ttsSpeakingRef.current = true;
+    setIsSpeaking(true);
     setTtsHighlight(null);
     const sentences = text.split(/(?<=[.!?])\s+/);
     let wordOffset = 0;
@@ -296,6 +313,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     }
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
+    setIsSpeaking(false);
   }, [ttsEnabled, onSpeak, ttsVolume]);
 
   const displayMessages = activeSession?.displayMessages || [];
@@ -450,6 +468,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               disabled={isTranscribing}
               title={`Speak in ${langName}`}
             >🎤 {langCode === 'ru' ? 'RU' : 'UA'}</button>
+            {(isLoading || isSpeaking) && (
+              <button style={styles.stopBtn} onClick={stopAll} title="Stop">⏹ Stop</button>
+            )}
             <button
               style={{ ...styles.sendBtn, ...(!userInput.trim() || isLoading ? styles.sendBtnDisabled : {}) }}
               onClick={() => handleSend()}
@@ -872,6 +893,18 @@ const styles = {
   sendBtnDisabled: {
     opacity: 0.45,
     cursor: 'not-allowed',
+  },
+  stopBtn: {
+    background: 'rgba(255,80,80,0.15)',
+    border: '1px solid rgba(255,80,80,0.4)',
+    borderRadius: '10px',
+    color: '#f87171',
+    padding: '0.75rem 1rem',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+    whiteSpace: 'nowrap',
   },
   clickableWord: {
     cursor: 'pointer',
