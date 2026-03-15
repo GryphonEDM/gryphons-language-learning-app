@@ -172,16 +172,26 @@ export default function FlashcardMode({
     return null;
   }, [dict, userDict]);
 
-  const getAutoFillEnglish = useCallback((tokenKey) => {
-    if (!tokenKey) return '';
-    const [exIdxStr, tokenIdxStr] = tokenKey.split('-');
-    const enSentence = currentWord.examplesEn && currentWord.examplesEn[parseInt(exIdxStr)];
-    if (!enSentence) return '';
-    const enTokens = enSentence.split(/(\s+)/);
-    const enToken = enTokens[parseInt(tokenIdxStr)];
-    if (!enToken || /^\s+$/.test(enToken)) return '';
-    return enToken.replace(/[.,!?;:"""()—–\-…']/g, '').trim();
-  }, [currentWord]);
+  const translateWithLLM = useCallback(async (word, contextSentence) => {
+    try {
+      const messages = [
+        { role: 'system', content: `You are a ${langName}-to-English translator. Respond with ONLY the English translation of the given word (1-4 words max, no explanation, no punctuation, no quotes).` },
+        { role: 'user', content: contextSentence
+          ? `Translate the ${langName} word "${word}" as used in this sentence: "${contextSentence}"`
+          : `Translate the ${langName} word: "${word}"` }
+      ];
+      const res = await fetch('/llm/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: 'local-model', messages, temperature: 0.1, max_tokens: 15, stream: false }),
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return data.choices?.[0]?.message?.content?.trim() || null;
+    } catch {
+      return null;
+    }
+  }, [langName]);
 
   const saveToUserDict = useCallback((uk, en) => {
     if (!uk || !en) return;
@@ -374,8 +384,12 @@ export default function FlashcardMode({
                   style={styles.addWordBtn}
                   onClick={(e) => {
                     e.stopPropagation();
-                    const autoEn = getAutoFillEnglish(selectedExampleWord.index);
-                    setAddWordForm({ uk: selectedExampleWord.word, en: autoEn });
+                    const exIdx = parseInt((selectedExampleWord.index || '0').split('-')[0]);
+                    const contextSentence = currentWord.examples?.[exIdx] || '';
+                    setAddWordForm({ uk: selectedExampleWord.word, en: '', translating: true });
+                    translateWithLLM(selectedExampleWord.word, contextSentence).then(translation => {
+                      setAddWordForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
+                    });
                   }}
                 >
                   + Add to dictionary
@@ -399,21 +413,20 @@ export default function FlashcardMode({
           <div style={styles.addWordRow}>
             <div style={styles.addWordField}>
               <label style={styles.addWordLabel}>Ukrainian</label>
-              <input
-                style={styles.addWordInput}
-                value={addWordForm.uk}
-                readOnly
-              />
+              <input style={styles.addWordInput} value={addWordForm.uk} readOnly />
             </div>
             <div style={styles.addWordArrow}>→</div>
             <div style={styles.addWordField}>
-              <label style={styles.addWordLabel}>English meaning</label>
+              <label style={styles.addWordLabel}>
+                English meaning {addWordForm.translating && <span style={styles.translatingLabel}>translating…</span>}
+              </label>
               <input
-                style={styles.addWordInput}
+                style={{ ...styles.addWordInput, ...(addWordForm.translating ? { opacity: 0.5 } : {}) }}
                 value={addWordForm.en}
                 onChange={e => setAddWordForm(prev => ({ ...prev, en: e.target.value }))}
-                placeholder="Enter translation..."
-                autoFocus
+                placeholder={addWordForm.translating ? 'Getting translation…' : 'Enter translation...'}
+                autoFocus={!addWordForm.translating}
+                disabled={addWordForm.translating}
                 onKeyDown={e => {
                   if (e.key === 'Enter') saveToUserDict(addWordForm.uk, addWordForm.en);
                   if (e.key === 'Escape') setAddWordForm(null);
@@ -426,7 +439,7 @@ export default function FlashcardMode({
             <button
               style={styles.addWordSave}
               onClick={() => saveToUserDict(addWordForm.uk, addWordForm.en)}
-              disabled={!addWordForm.en.trim()}
+              disabled={addWordForm.translating || !addWordForm.en.trim()}
             >
               Save
             </button>
@@ -723,6 +736,10 @@ const styles = {
   addWordLabel: {
     fontSize: '0.75rem',
     color: 'rgba(255,255,255,0.5)'
+  },
+  translatingLabel: {
+    color: '#4dabf7',
+    fontStyle: 'italic',
   },
   addWordInput: {
     background: 'rgba(255,255,255,0.08)',

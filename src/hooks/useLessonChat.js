@@ -5,10 +5,19 @@ export function useLessonChat({ langName, systemPrompt, onSpeak, ttsEnabled, tts
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
+  const [activeWord, setActiveWord] = useState(null);
   const historyRef = useRef([]);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
   const ttsSpeakingRef = useRef(false);
+
+  // Word click handler — speaks the word and highlights it in the chat
+  const onWordClick = useCallback((e, token) => {
+    const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
+    if (!cleaned) return;
+    setActiveWord(cleaned.toLowerCase());
+    if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
+  }, [ttsEnabled, onSpeak, ttsVolume]);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
@@ -110,5 +119,5 @@ export function useLessonChat({ langName, systemPrompt, onSpeak, ttsEnabled, tts
     historyRef.current = [];
   };
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, onWordClick, activeWord };
 }
