@@ -45,7 +45,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [error, setError] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
-  const chatEndRef = useRef(null);
+  const chatAreaRef = useRef(null);
   const inputRef = useRef(null);
   const sendRef = useRef(null);
   const rootRef = useRef(null);
@@ -101,7 +101,8 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
   // Auto-scroll
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const el = chatAreaRef.current;
+    if (el) el.scrollTop = el.scrollHeight;
   }, [activeSession?.displayMessages, isLoading]);
 
   // Check LM Studio connection on mount
@@ -139,22 +140,6 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setSessions(prev => prev.map(s => s.id === activeId ? updater(s) : s));
   }
 
-  const sendToLLM = async (messageHistory) => {
-    const res = await fetch('/llm/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'local-model',
-        messages: messageHistory,
-        temperature: 0.7,
-        max_tokens: 300,
-      }),
-    });
-    if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
-    const data = await res.json();
-    return data.choices[0].message.content;
-  };
-
   const handleSend = async (directText) => {
     const text = (directText || userInput).trim();
     if (!text || isLoading || !activeSession) return;
@@ -184,14 +169,62 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setIsLoading(true);
 
     try {
-      const reply = await sendToLLM(newMessages);
-      const assistantMsg = { role: 'assistant', content: reply };
-      const assistantDisplay = { sender: 'bot', text: reply };
+      const res = await fetch('/llm/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'local-model',
+          messages: newMessages,
+          temperature: 0.7,
+          max_tokens: 300,
+          stream: true,
+        }),
+      });
+      if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
 
+      // Add an empty bot message to start streaming into
+      updateActive(s => ({
+        ...s,
+        displayMessages: [...s.displayMessages, { sender: 'bot', text: '' }],
+      }));
+      setIsLoading(false);
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let reply = '';
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop(); // keep incomplete line in buffer
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') break;
+          try {
+            const chunk = JSON.parse(data);
+            const delta = chunk.choices?.[0]?.delta?.content;
+            if (delta) {
+              reply += delta;
+              updateActive(s => {
+                const msgs = [...s.displayMessages];
+                msgs[msgs.length - 1] = { sender: 'bot', text: reply };
+                return { ...s, displayMessages: msgs };
+              });
+            }
+          } catch {
+            // ignore malformed chunks
+          }
+        }
+      }
+
+      const assistantMsg = { role: 'assistant', content: reply };
       updateActive(s => ({
         ...s,
         messages: [...s.messages, assistantMsg],
-        displayMessages: [...s.displayMessages, assistantDisplay],
       }));
 
       if (ttsEnabled && onSpeak) onSpeak(reply, 0.8, ttsVolume);
@@ -292,7 +325,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         )}
 
         {/* Messages */}
-        <div style={styles.chatArea}>
+        <div ref={chatAreaRef} style={styles.chatArea}>
           {displayMessages.length === 0 && !isLoading && (
             <div style={styles.emptyState}>
               <div style={styles.emptyIcon}>🤖</div>
@@ -340,7 +373,6 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             </div>
           )}
 
-          <div ref={chatEndRef} />
         </div>
 
         {/* Input */}
