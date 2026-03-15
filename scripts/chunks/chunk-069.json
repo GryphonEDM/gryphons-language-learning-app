@@ -1,0 +1,642 @@
+[
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "читати",
+    "exIndex": 0,
+    "ukSentence": "Він читає книгу.",
+    "ruSentence": "Он читает книгу.",
+    "enWordMeaning": "to read"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "писати",
+    "exIndex": 0,
+    "ukSentence": "Я пишу листа другу.",
+    "ruSentence": "Я пишу письмо другу.",
+    "enWordMeaning": "to write"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вчити",
+    "exIndex": 0,
+    "ukSentence": "Вона вчить дітей математики.",
+    "ruSentence": "Она учит детей математике.",
+    "enWordMeaning": "to teach/to learn"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вчитися",
+    "exIndex": 0,
+    "ukSentence": "Він вчиться в університеті.",
+    "ruSentence": "Он учится в университете.",
+    "enWordMeaning": "to study"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "працювати",
+    "exIndex": 0,
+    "ukSentence": "Мій тато працює в офісі.",
+    "ruSentence": "Мой папа работает в офисе.",
+    "enWordMeaning": "to work"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "жити",
+    "exIndex": 0,
+    "ukSentence": "Вони живуть у Львові.",
+    "ruSentence": "Они живут во Львове.",
+    "enWordMeaning": "to live"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "любити",
+    "exIndex": 0,
+    "ukSentence": "Я люблю шоколад.",
+    "ruSentence": "Я люблю шоколад.",
+    "enWordMeaning": "to love"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "подобатися",
+    "exIndex": 0,
+    "ukSentence": "Мені подобається ця пісня.",
+    "ruSentence": "Мне нравится эта песня.",
+    "enWordMeaning": "to like/to please"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "давати",
+    "exIndex": 0,
+    "ukSentence": "Він дає їй квіти.",
+    "ruSentence": "Он даёт ей цветы.",
+    "enWordMeaning": "to give"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "брати",
+    "exIndex": 0,
+    "ukSentence": "Вона бере парасольку.",
+    "ruSentence": "Она берёт зонт.",
+    "enWordMeaning": "to take"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "купувати",
+    "exIndex": 0,
+    "ukSentence": "Я купую хліб щодня.",
+    "ruSentence": "Я покупаю хлеб каждый день.",
+    "enWordMeaning": "to buy"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "продавати",
+    "exIndex": 0,
+    "ukSentence": "Він продає машину.",
+    "ruSentence": "Он продаёт машину.",
+    "enWordMeaning": "to sell"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "платити",
+    "exIndex": 0,
+    "ukSentence": "Ти платиш карткою?",
+    "ruSentence": "Ты платишь картой?",
+    "enWordMeaning": "to pay"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "відкривати",
+    "exIndex": 0,
+    "ukSentence": "Вона відкриває двері.",
+    "ruSentence": "Она открывает дверь.",
+    "enWordMeaning": "to open"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "закривати",
+    "exIndex": 0,
+    "ukSentence": "Закривай вікно, холодно!",
+    "ruSentence": "Закрывай окно, холодно!",
+    "enWordMeaning": "to close"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "починати",
+    "exIndex": 0,
+    "ukSentence": "Урок починається о дев'ятій.",
+    "ruSentence": "Урок начинается в девять.",
+    "enWordMeaning": "to begin/to start"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "закінчувати",
+    "exIndex": 0,
+    "ukSentence": "Я закінчую роботу о шостій.",
+    "ruSentence": "Я заканчиваю работу в шесть.",
+    "enWordMeaning": "to finish/to end"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "допомагати",
+    "exIndex": 0,
+    "ukSentence": "Він завжди допомагає друзям.",
+    "ruSentence": "Он всегда помогает друзьям.",
+    "enWordMeaning": "to help"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "питати",
+    "exIndex": 0,
+    "ukSentence": "Вона питає, де магазин.",
+    "ruSentence": "Она спрашивает, где магазин.",
+    "enWordMeaning": "to ask"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "відповідати",
+    "exIndex": 0,
+    "ukSentence": "Він не відповідає на дзвінки.",
+    "ruSentence": "Он не отвечает на звонки.",
+    "enWordMeaning": "to answer"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "розуміти",
+    "exIndex": 0,
+    "ukSentence": "Ти розумієш це питання?",
+    "ruSentence": "Ты понимаешь этот вопрос?",
+    "enWordMeaning": "to understand"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "пам'ятати",
+    "exIndex": 0,
+    "ukSentence": "Я пам'ятаю твій день народження.",
+    "ruSentence": "Я помню твой день рождения.",
+    "enWordMeaning": "to remember"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "забувати",
+    "exIndex": 0,
+    "ukSentence": "Він часто забуває ключі.",
+    "ruSentence": "Он часто забывает ключи.",
+    "enWordMeaning": "to forget"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "чекати",
+    "exIndex": 0,
+    "ukSentence": "Ми чекаємо на автобус.",
+    "ruSentence": "Мы ждём автобус.",
+    "enWordMeaning": "to wait"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "шукати",
+    "exIndex": 0,
+    "ukSentence": "Вона шукає свій телефон.",
+    "ruSentence": "Она ищет свой телефон.",
+    "enWordMeaning": "to search/to look for"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "знаходити",
+    "exIndex": 0,
+    "ukSentence": "Він завжди знаходить вихід.",
+    "ruSentence": "Он всегда находит выход.",
+    "enWordMeaning": "to find"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "грати",
+    "exIndex": 0,
+    "ukSentence": "Діти грають у парку.",
+    "ruSentence": "Дети играют в парке.",
+    "enWordMeaning": "to play"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "співати",
+    "exIndex": 0,
+    "ukSentence": "Вона співає дуже гарно.",
+    "ruSentence": "Она поёт очень красиво.",
+    "enWordMeaning": "to sing"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "танцювати",
+    "exIndex": 0,
+    "ukSentence": "Вони танцюють на вечірці.",
+    "ruSentence": "Они танцуют на вечеринке.",
+    "enWordMeaning": "to dance"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "малювати",
+    "exIndex": 0,
+    "ukSentence": "Дівчинка малює квіти.",
+    "ruSentence": "Девочка рисует цветы.",
+    "enWordMeaning": "to draw/to paint"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "готувати",
+    "exIndex": 0,
+    "ukSentence": "Мама готує вечерю.",
+    "ruSentence": "Мама готовит ужин.",
+    "enWordMeaning": "to cook/to prepare"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мити",
+    "exIndex": 0,
+    "ukSentence": "Він миє посуд після вечері.",
+    "ruSentence": "Он моет посуду после ужина.",
+    "enWordMeaning": "to wash"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "прибирати",
+    "exIndex": 0,
+    "ukSentence": "Вона прибирає кімнату.",
+    "ruSentence": "Она убирает комнату.",
+    "enWordMeaning": "to clean/to tidy up"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "спати",
+    "exIndex": 0,
+    "ukSentence": "Дитина спить.",
+    "ruSentence": "Ребёнок спит.",
+    "enWordMeaning": "to sleep"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "прокидатися",
+    "exIndex": 0,
+    "ukSentence": "Я прокидаюся о сьомій ранку.",
+    "ruSentence": "Я просыпаюсь в семь утра.",
+    "enWordMeaning": "to wake up"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "одягатися",
+    "exIndex": 0,
+    "ukSentence": "Він одягається швидко.",
+    "ruSentence": "Он одевается быстро.",
+    "enWordMeaning": "to get dressed"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "купатися",
+    "exIndex": 0,
+    "ukSentence": "Діти купаються в річці.",
+    "ruSentence": "Дети купаются в реке.",
+    "enWordMeaning": "to bathe"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "летіти",
+    "exIndex": 0,
+    "ukSentence": "Літак летить на північ.",
+    "ruSentence": "Самолёт летит на север.",
+    "enWordMeaning": "to fly"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "плавати",
+    "exIndex": 0,
+    "ukSentence": "Він плаває в озері.",
+    "ruSentence": "Он плавает в озере.",
+    "enWordMeaning": "to swim"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "падати",
+    "exIndex": 0,
+    "ukSentence": "Листя падає з дерев.",
+    "ruSentence": "Листья падают с деревьев.",
+    "enWordMeaning": "to fall"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "кидати",
+    "exIndex": 0,
+    "ukSentence": "Він кидає м'яч.",
+    "ruSentence": "Он бросает мяч.",
+    "enWordMeaning": "to throw"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ловити",
+    "exIndex": 0,
+    "ukSentence": "Кіт ловить мишу.",
+    "ruSentence": "Кот ловит мышь.",
+    "enWordMeaning": "to catch"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "носити",
+    "exIndex": 0,
+    "ukSentence": "Вона носить червоне пальто.",
+    "ruSentence": "Она носит красное пальто.",
+    "enWordMeaning": "to carry/to wear"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "класти",
+    "exIndex": 0,
+    "ukSentence": "Постав книгу на полицю.",
+    "ruSentence": "Поставь книгу на полку.",
+    "enWordMeaning": "to put/to place"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "різати",
+    "exIndex": 0,
+    "ukSentence": "Він ріже хліб.",
+    "ruSentence": "Он режет хлеб.",
+    "enWordMeaning": "to cut"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "будувати",
+    "exIndex": 0,
+    "ukSentence": "Вони будують новий будинок.",
+    "ruSentence": "Они строят новый дом.",
+    "enWordMeaning": "to build"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ламати",
+    "exIndex": 0,
+    "ukSentence": "Не ламай іграшки!",
+    "ruSentence": "Не ломай игрушки!",
+    "enWordMeaning": "to break"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "змінювати",
+    "exIndex": 0,
+    "ukSentence": "Він змінює роботу.",
+    "ruSentence": "Он меняет работу.",
+    "enWordMeaning": "to change"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вибирати",
+    "exIndex": 0,
+    "ukSentence": "Вона вибирає сукню.",
+    "ruSentence": "Она выбирает платье.",
+    "enWordMeaning": "to choose"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вирішувати",
+    "exIndex": 0,
+    "ukSentence": "Ми вирішуємо цю проблему.",
+    "ruSentence": "Мы решаем эту проблему.",
+    "enWordMeaning": "to decide/to solve"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "намагатися",
+    "exIndex": 0,
+    "ukSentence": "Він намагається вивчити мову.",
+    "ruSentence": "Он пытается выучить язык.",
+    "enWordMeaning": "to try"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сміятися",
+    "exIndex": 0,
+    "ukSentence": "Вони голосно сміються.",
+    "ruSentence": "Они громко смеются.",
+    "enWordMeaning": "to laugh"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "плакати",
+    "exIndex": 0,
+    "ukSentence": "Дитина плаче.",
+    "ruSentence": "Ребёнок плачет.",
+    "enWordMeaning": "to cry"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "боятися",
+    "exIndex": 0,
+    "ukSentence": "Вона боїться темряви.",
+    "ruSentence": "Она боится темноты.",
+    "enWordMeaning": "to fear/to be afraid"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сподіватися",
+    "exIndex": 0,
+    "ukSentence": "Я сподіваюся на краще.",
+    "ruSentence": "Я надеюсь на лучшее.",
+    "enWordMeaning": "to hope"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вірити",
+    "exIndex": 0,
+    "ukSentence": "Він вірить у перемогу.",
+    "ruSentence": "Он верит в победу.",
+    "enWordMeaning": "to believe"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "звати",
+    "exIndex": 0,
+    "ukSentence": "Як тебе звати?",
+    "ruSentence": "Как тебя зовут?",
+    "enWordMeaning": "to call/to name"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "народитися",
+    "exIndex": 0,
+    "ukSentence": "Він народився у Києві.",
+    "ruSentence": "Он родился в Киеве.",
+    "enWordMeaning": "to be born"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "померти",
+    "exIndex": 0,
+    "ukSentence": "Герой помер за свою країну.",
+    "ruSentence": "Герой умер за свою страну.",
+    "enWordMeaning": "to die"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "рости",
+    "exIndex": 0,
+    "ukSentence": "Дерево росте повільно.",
+    "ruSentence": "Дерево растёт медленно.",
+    "enWordMeaning": "to grow"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "показувати",
+    "exIndex": 0,
+    "ukSentence": "Вона показує мені фото.",
+    "ruSentence": "Она показывает мне фото.",
+    "enWordMeaning": "to show"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ховати",
+    "exIndex": 0,
+    "ukSentence": "Він ховає подарунок.",
+    "ruSentence": "Он прячет подарок.",
+    "enWordMeaning": "to hide"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "посилати",
+    "exIndex": 0,
+    "ukSentence": "Я посилаю пакет поштою.",
+    "ruSentence": "Я посылаю пакет почтой.",
+    "enWordMeaning": "to send"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "отримувати",
+    "exIndex": 0,
+    "ukSentence": "Вона отримує листи від друзів.",
+    "ruSentence": "Она получает письма от друзей.",
+    "enWordMeaning": "to receive/to get"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "повертатися",
+    "exIndex": 0,
+    "ukSentence": "Він повертається додому пізно.",
+    "ruSentence": "Он возвращается домой поздно.",
+    "enWordMeaning": "to return"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "залишатися",
+    "exIndex": 0,
+    "ukSentence": "Вона залишається вдома.",
+    "ruSentence": "Она остаётся дома.",
+    "enWordMeaning": "to stay/to remain"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "зупинятися",
+    "exIndex": 0,
+    "ukSentence": "Автобус зупиняється тут.",
+    "ruSentence": "Автобус останавливается здесь.",
+    "enWordMeaning": "to stop"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "рухатися",
+    "exIndex": 0,
+    "ukSentence": "Поїзд рухається повільно.",
+    "ruSentence": "Поезд движется медленно.",
+    "enWordMeaning": "to move"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "торкатися",
+    "exIndex": 0,
+    "ukSentence": "Не торкайся цього!",
+    "ruSentence": "Не трогай это!",
+    "enWordMeaning": "to touch"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "тримати",
+    "exIndex": 0,
+    "ukSentence": "Вона тримає дитину за руку.",
+    "ruSentence": "Она держит ребёнка за руку.",
+    "enWordMeaning": "to hold"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "тягнути",
+    "exIndex": 0,
+    "ukSentence": "Він тягне важку валізу.",
+    "ruSentence": "Он тянет тяжёлый чемодан.",
+    "enWordMeaning": "to pull"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "штовхати",
+    "exIndex": 0,
+    "ukSentence": "Не штовхай мене!",
+    "ruSentence": "Не толкай меня!",
+    "enWordMeaning": "to push"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "нести",
+    "exIndex": 0,
+    "ukSentence": "Він несе сумки з магазину.",
+    "ruSentence": "Он несёт сумки из магазина.",
+    "enWordMeaning": "to carry"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "підніматися",
+    "exIndex": 0,
+    "ukSentence": "Ми піднімаємося на гору.",
+    "ruSentence": "Мы поднимаемся на гору.",
+    "enWordMeaning": "to climb/to go up"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "спускатися",
+    "exIndex": 0,
+    "ukSentence": "Вона спускається сходами.",
+    "ruSentence": "Она спускается по лестнице.",
+    "enWordMeaning": "to go down/to descend"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "входити",
+    "exIndex": 0,
+    "ukSentence": "Він входить до кімнати.",
+    "ruSentence": "Он входит в комнату.",
+    "enWordMeaning": "to enter"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "виходити",
+    "exIndex": 0,
+    "ukSentence": "Вона виходить з офісу о п'ятій.",
+    "ruSentence": "Она выходит из офиса в пять.",
+    "enWordMeaning": "to exit/to go out"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сісти",
+    "exIndex": 0,
+    "ukSentence": "Сядь, будь ласка.",
+    "ruSentence": "Сядь, пожалуйста.",
+    "enWordMeaning": "to sit down"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "встати",
+    "exIndex": 0,
+    "ukSentence": "Встань і йди!",
+    "ruSentence": "Встань и иди!",
+    "enWordMeaning": "to stand up/to get up"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "подорожувати",
+    "exIndex": 0,
+    "ukSentence": "Ми любимо подорожувати.",
+    "ruSentence": "Мы любим путешествовать.",
+    "enWordMeaning": "to travel"
+  }
+]

@@ -1,0 +1,642 @@
+[
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "оазис",
+    "exIndex": 0,
+    "ukSentence": "Мандрівники знайшли оазис у пустелі.",
+    "ruSentence": "Путники нашли оазис в пустыне.",
+    "enWordMeaning": "oasis"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "рослина",
+    "exIndex": 0,
+    "ukSentence": "Ця рослина росте у воді.",
+    "ruSentence": "Это растение растёт в воде.",
+    "enWordMeaning": "plant"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "бур'ян",
+    "exIndex": 0,
+    "ukSentence": "Бур'ян заріс увесь город.",
+    "ruSentence": "Сорняк заглушил весь огород.",
+    "enWordMeaning": "weed"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "мак",
+    "exIndex": 0,
+    "ukSentence": "Червоний мак цвіте на полі.",
+    "ruSentence": "Красный мак цветёт на поле.",
+    "enWordMeaning": "poppy"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "соняшник",
+    "exIndex": 0,
+    "ukSentence": "Соняшник завжди дивиться на сонце.",
+    "ruSentence": "Подсолнух всегда смотрит на солнце.",
+    "enWordMeaning": "sunflower"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "троянда",
+    "exIndex": 0,
+    "ukSentence": "Він подарував їй червону троянду.",
+    "ruSentence": "Он подарил ей красную розу.",
+    "enWordMeaning": "rose"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "тюльпан",
+    "exIndex": 0,
+    "ukSentence": "Тюльпан розцвів навесні в саду.",
+    "ruSentence": "Тюльпан расцвёл весной в саду.",
+    "enWordMeaning": "tulip"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "ромашка",
+    "exIndex": 0,
+    "ukSentence": "Дівчинка плете вінок із ромашок.",
+    "ruSentence": "Девочка плетёт венок из ромашек.",
+    "enWordMeaning": "daisy/chamomile"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "фіалка",
+    "exIndex": 0,
+    "ukSentence": "Фіалка росте у мами на підвіконні.",
+    "ruSentence": "Фиалка растёт у мамы на подоконнике.",
+    "enWordMeaning": "violet"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "лілія",
+    "exIndex": 0,
+    "ukSentence": "Біла лілія гарно пахне.",
+    "ruSentence": "Белая лилия красиво пахнет.",
+    "enWordMeaning": "lily"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "конвалія",
+    "exIndex": 0,
+    "ukSentence": "Конвалія цвіте в травні у лісі.",
+    "ruSentence": "Ландыш цветёт в мае в лесу.",
+    "enWordMeaning": "lily of the valley"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "бузок",
+    "exIndex": 0,
+    "ukSentence": "Бузок пахне дуже приємно навесні.",
+    "ruSentence": "Сирень пахнет очень приятно весной.",
+    "enWordMeaning": "lilac"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "каштан",
+    "exIndex": 0,
+    "ukSentence": "Каштан цвіте білими свічками навесні.",
+    "ruSentence": "Каштан цветёт белыми свечками весной.",
+    "enWordMeaning": "chestnut"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "дуб",
+    "exIndex": 0,
+    "ukSentence": "Старий дуб росте посеред поля.",
+    "ruSentence": "Старый дуб растёт посреди поля.",
+    "enWordMeaning": "oak"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "береза",
+    "exIndex": 0,
+    "ukSentence": "Береза росте біля нашого будинку.",
+    "ruSentence": "Берёза растёт рядом с нашим домом.",
+    "enWordMeaning": "birch"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "сосна",
+    "exIndex": 0,
+    "ukSentence": "Сосна росте прямо і високо.",
+    "ruSentence": "Сосна растёт прямо и высоко.",
+    "enWordMeaning": "pine"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "ялина",
+    "exIndex": 0,
+    "ukSentence": "Ялина взимку залишається зеленою.",
+    "ruSentence": "Ель зимой остаётся зелёной.",
+    "enWordMeaning": "spruce/fir"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "верба",
+    "exIndex": 0,
+    "ukSentence": "Верба схиляється над річкою.",
+    "ruSentence": "Ива склоняется над рекой.",
+    "enWordMeaning": "willow"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "тополя",
+    "exIndex": 0,
+    "ukSentence": "Висока тополя росте вздовж дороги.",
+    "ruSentence": "Высокий тополь растёт вдоль дороги.",
+    "enWordMeaning": "poplar"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "клен",
+    "exIndex": 0,
+    "ukSentence": "Клен восени стає жовтим і червоним.",
+    "ruSentence": "Клён осенью становится жёлтым и красным.",
+    "enWordMeaning": "maple"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "горобина",
+    "exIndex": 0,
+    "ukSentence": "Горобина має червоні ягоди восени.",
+    "ruSentence": "Рябина осенью покрыта красными ягодами.",
+    "enWordMeaning": "rowan/mountain ash"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "яблуня",
+    "exIndex": 0,
+    "ukSentence": "Яблуня в саду вже цвіте.",
+    "ruSentence": "Яблоня в саду уже цветёт.",
+    "enWordMeaning": "apple tree"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "вишня",
+    "exIndex": 0,
+    "ukSentence": "Вишня дає смачні ягоди влітку.",
+    "ruSentence": "Вишня даёт вкусные ягоды летом.",
+    "enWordMeaning": "cherry tree"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "калина",
+    "exIndex": 0,
+    "ukSentence": "Калина — символ України.",
+    "ruSentence": "Калина — символ Украины.",
+    "enWordMeaning": "guelder rose/viburnum"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "барвінок",
+    "exIndex": 0,
+    "ukSentence": "Барвінок стелиться по землі навесні.",
+    "ruSentence": "Барвинок стелется по земле весной.",
+    "enWordMeaning": "periwinkle"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "чорнозем",
+    "exIndex": 0,
+    "ukSentence": "Чорнозем на Україні дуже родючий.",
+    "ruSentence": "Чернозём на Украине очень плодородный.",
+    "enWordMeaning": "black soil/chernozem"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "степ",
+    "exIndex": 0,
+    "ukSentence": "Широкий степ вкритий травою і квітами.",
+    "ruSentence": "Широкая степь покрыта травой и цветами.",
+    "enWordMeaning": "steppe"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "комп'ютер",
+    "exIndex": 0,
+    "ukSentence": "Я працюю на комп'ютері щодня.",
+    "ruSentence": "Я работаю на компьютере каждый день.",
+    "enWordMeaning": "computer"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "інтернет",
+    "exIndex": 0,
+    "ukSentence": "У нас вдома є швидкий інтернет.",
+    "ruSentence": "У нас дома есть быстрый интернет.",
+    "enWordMeaning": "internet"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "програма",
+    "exIndex": 0,
+    "ukSentence": "Ця програма дуже корисна.",
+    "ruSentence": "Эта программа очень полезная.",
+    "enWordMeaning": "program/software"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "файл",
+    "exIndex": 0,
+    "ukSentence": "Я зберіг файл на столі.",
+    "ruSentence": "Я сохранил файл на рабочем столе.",
+    "enWordMeaning": "file"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "пароль",
+    "exIndex": 0,
+    "ukSentence": "Не забудь свій пароль.",
+    "ruSentence": "Не забудь свой пароль.",
+    "enWordMeaning": "password"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "екран",
+    "exIndex": 0,
+    "ukSentence": "Екран мого телефону розбився.",
+    "ruSentence": "Экран моего телефона разбился.",
+    "enWordMeaning": "screen"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "клавіатура",
+    "exIndex": 0,
+    "ukSentence": "Моя клавіатура дуже зручна.",
+    "ruSentence": "Моя клавиатура очень удобная.",
+    "enWordMeaning": "keyboard"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "мишка",
+    "exIndex": 0,
+    "ukSentence": "Мишка не працює без батарейок.",
+    "ruSentence": "Мышка не работает без батареек.",
+    "enWordMeaning": "mouse (computer)"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "принтер",
+    "exIndex": 0,
+    "ukSentence": "Принтер надрукував документ.",
+    "ruSentence": "Принтер напечатал документ.",
+    "enWordMeaning": "printer"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "мережа",
+    "exIndex": 0,
+    "ukSentence": "Комп'ютер підключений до мережі.",
+    "ruSentence": "Компьютер подключён к сети.",
+    "enWordMeaning": "network"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "сайт",
+    "exIndex": 0,
+    "ukSentence": "Цей сайт дуже зручний.",
+    "ruSentence": "Этот сайт очень удобный.",
+    "enWordMeaning": "website"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "додаток",
+    "exIndex": 0,
+    "ukSentence": "Я завантажив новий додаток.",
+    "ruSentence": "Я скачал новое приложение.",
+    "enWordMeaning": "application/app"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "база даних",
+    "exIndex": 0,
+    "ukSentence": "База даних зберігає всі записи.",
+    "ruSentence": "База данных хранит все записи.",
+    "enWordMeaning": "database"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "сервер",
+    "exIndex": 0,
+    "ukSentence": "Сервер зараз не працює.",
+    "ruSentence": "Сервер сейчас не работает.",
+    "enWordMeaning": "server"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "хмара",
+    "exIndex": 0,
+    "ukSentence": "Я зберігаю фото у хмарі.",
+    "ruSentence": "Я храню фото в облаке.",
+    "enWordMeaning": "cloud (computing)"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "браузер",
+    "exIndex": 0,
+    "ukSentence": "Відкрий браузер і знайди відповідь.",
+    "ruSentence": "Открой браузер и найди ответ.",
+    "enWordMeaning": "browser"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "посилання",
+    "exIndex": 0,
+    "ukSentence": "Надішли мені посилання на сайт.",
+    "ruSentence": "Пришли мне ссылку на сайт.",
+    "enWordMeaning": "link"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "завантаження",
+    "exIndex": 0,
+    "ukSentence": "Завантаження файлу займе хвилину.",
+    "ruSentence": "Загрузка файла займёт минуту.",
+    "enWordMeaning": "download/upload"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "оновлення",
+    "exIndex": 0,
+    "ukSentence": "Потрібно встановити оновлення системи.",
+    "ruSentence": "Нужно установить обновление системы.",
+    "enWordMeaning": "update"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "операційна система",
+    "exIndex": 0,
+    "ukSentence": "Яка у тебе операційна система?",
+    "ruSentence": "Какая у тебя операционная система?",
+    "enWordMeaning": "operating system"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "процесор",
+    "exIndex": 0,
+    "ukSentence": "Цей процесор дуже потужний.",
+    "ruSentence": "Этот процессор очень мощный.",
+    "enWordMeaning": "processor/CPU"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "пам'ять",
+    "exIndex": 0,
+    "ukSentence": "На телефоні закінчилась пам'ять.",
+    "ruSentence": "На телефоне закончилась память.",
+    "enWordMeaning": "memory/RAM"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "жорсткий диск",
+    "exIndex": 0,
+    "ukSentence": "Жорсткий диск зберігає багато даних.",
+    "ruSentence": "Жёсткий диск хранит много данных.",
+    "enWordMeaning": "hard drive"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "флешка",
+    "exIndex": 0,
+    "ukSentence": "Скопіюй файли на флешку.",
+    "ruSentence": "Скопируй файлы на флешку.",
+    "enWordMeaning": "USB flash drive"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "навушники",
+    "exIndex": 0,
+    "ukSentence": "Я слухаю музику в навушниках.",
+    "ruSentence": "Я слушаю музыку в наушниках.",
+    "enWordMeaning": "headphones"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "мікрофон",
+    "exIndex": 0,
+    "ukSentence": "Мікрофон не вловлює мій голос.",
+    "ruSentence": "Микрофон не улавливает мой голос.",
+    "enWordMeaning": "microphone"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "камера",
+    "exIndex": 0,
+    "ukSentence": "Камера на цьому телефоні чудова.",
+    "ruSentence": "Камера на этом телефоне отличная.",
+    "enWordMeaning": "camera"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "планшет",
+    "exIndex": 0,
+    "ukSentence": "Дитина грає на планшеті.",
+    "ruSentence": "Ребёнок играет на планшете.",
+    "enWordMeaning": "tablet"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "смартфон",
+    "exIndex": 0,
+    "ukSentence": "Мій смартфон дуже швидкий.",
+    "ruSentence": "Мой смартфон очень быстрый.",
+    "enWordMeaning": "smartphone"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "зарядка",
+    "exIndex": 0,
+    "ukSentence": "Телефон потребує зарядки.",
+    "ruSentence": "Телефон нуждается в зарядке.",
+    "enWordMeaning": "charger/charging"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "провід",
+    "exIndex": 0,
+    "ukSentence": "Де мій провід від навушників?",
+    "ruSentence": "Где мой провод от наушников?",
+    "enWordMeaning": "wire/cable"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "робот",
+    "exIndex": 0,
+    "ukSentence": "Робот виконує складні завдання.",
+    "ruSentence": "Робот выполняет сложные задания.",
+    "enWordMeaning": "robot"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "штучний інтелект",
+    "exIndex": 0,
+    "ukSentence": "Штучний інтелект змінює наш світ.",
+    "ruSentence": "Искусственный интеллект меняет наш мир.",
+    "enWordMeaning": "artificial intelligence"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "алгоритм",
+    "exIndex": 0,
+    "ukSentence": "Цей алгоритм вирішує задачу швидко.",
+    "ruSentence": "Этот алгоритм решает задачу быстро.",
+    "enWordMeaning": "algorithm"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "код",
+    "exIndex": 0,
+    "ukSentence": "Він пише код щодня.",
+    "ruSentence": "Он пишет код каждый день.",
+    "enWordMeaning": "code"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "вірус",
+    "exIndex": 0,
+    "ukSentence": "Вірус пошкодив мої файли.",
+    "ruSentence": "Вирус повредил мои файлы.",
+    "enWordMeaning": "virus"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "антивірус",
+    "exIndex": 0,
+    "ukSentence": "Антивірус знайшов загрозу на комп'ютері.",
+    "ruSentence": "Антивирус нашёл угрозу на компьютере.",
+    "enWordMeaning": "antivirus"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "резервна копія",
+    "exIndex": 0,
+    "ukSentence": "Зроби резервну копію даних.",
+    "ruSentence": "Сделай резервную копию данных.",
+    "enWordMeaning": "backup"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "електронна пошта",
+    "exIndex": 0,
+    "ukSentence": "Надішли мені листа на електронну пошту.",
+    "ruSentence": "Пришли мне письмо на электронную почту.",
+    "enWordMeaning": "email"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "пошуковик",
+    "exIndex": 0,
+    "ukSentence": "Введи запит у пошуковик.",
+    "ruSentence": "Введи запрос в поисковик.",
+    "enWordMeaning": "search engine"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "поїзд",
+    "exIndex": 0,
+    "ukSentence": "Поїзд прибуває о дев'ятій годині.",
+    "ruSentence": "Поезд прибывает в девять часов.",
+    "enWordMeaning": "train"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "автобус",
+    "exIndex": 0,
+    "ukSentence": "Автобус їде до центру міста.",
+    "ruSentence": "Автобус едет в центр города.",
+    "enWordMeaning": "bus"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "трамвай",
+    "exIndex": 0,
+    "ukSentence": "Трамвай зупинився на перехресті.",
+    "ruSentence": "Трамвай остановился на перекрёстке.",
+    "enWordMeaning": "tram/streetcar"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "метро",
+    "exIndex": 0,
+    "ukSentence": "Я їду на роботу метро.",
+    "ruSentence": "Я еду на работу на метро.",
+    "enWordMeaning": "metro/subway"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "велосипед",
+    "exIndex": 0,
+    "ukSentence": "Він їде на велосипеді парком.",
+    "ruSentence": "Он едет на велосипеде по парку.",
+    "enWordMeaning": "bicycle"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "мотоцикл",
+    "exIndex": 0,
+    "ukSentence": "Мотоцикл їхав дуже швидко.",
+    "ruSentence": "Мотоцикл ехал очень быстро.",
+    "enWordMeaning": "motorcycle"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "вантажівка",
+    "exIndex": 0,
+    "ukSentence": "Вантажівка везе товар до магазину.",
+    "ruSentence": "Грузовик везёт товар в магазин.",
+    "enWordMeaning": "truck"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "корабель",
+    "exIndex": 0,
+    "ukSentence": "Корабель відплив від берега.",
+    "ruSentence": "Корабль отплыл от берега.",
+    "enWordMeaning": "ship"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "яхта",
+    "exIndex": 0,
+    "ukSentence": "Яхта пливе по морю.",
+    "ruSentence": "Яхта плывёт по морю.",
+    "enWordMeaning": "yacht"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "човен",
+    "exIndex": 0,
+    "ukSentence": "Ми пливемо на човні по річці.",
+    "ruSentence": "Мы плывём на лодке по реке.",
+    "enWordMeaning": "boat"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "вертоліт",
+    "exIndex": 0,
+    "ukSentence": "Вертоліт летить над містом.",
+    "ruSentence": "Вертолёт летит над городом.",
+    "enWordMeaning": "helicopter"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "літак",
+    "exIndex": 0,
+    "ukSentence": "Літак летить до Варшави.",
+    "ruSentence": "Самолёт летит в Варшаву.",
+    "enWordMeaning": "airplane"
+  },
+  {
+    "file": "comprehensive-dictionary-ext4.json",
+    "ukWord": "таксі",
+    "exIndex": 0,
+    "ukSentence": "Я викликав таксі через додаток.",
+    "ruSentence": "Я вызвал такси через приложение.",
+    "enWordMeaning": "taxi"
+  }
+]

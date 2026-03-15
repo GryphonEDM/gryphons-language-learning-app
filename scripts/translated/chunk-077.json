@@ -1,0 +1,722 @@
+[
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "так",
+    "exIndex": 0,
+    "ukSentence": "Так, я розумію.",
+    "ruSentence": "Да, я понимаю.",
+    "enWordMeaning": "yes/so",
+    "enSentence": "Yes, I understand."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ні",
+    "exIndex": 0,
+    "ukSentence": "Ні, дякую.",
+    "ruSentence": "Нет, спасибо.",
+    "enWordMeaning": "no",
+    "enSentence": "No, thank you."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "не",
+    "exIndex": 0,
+    "ukSentence": "Я не знаю.",
+    "ruSentence": "Я не знаю.",
+    "enWordMeaning": "not",
+    "enSentence": "I don't know."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "дуже",
+    "exIndex": 0,
+    "ukSentence": "Я дуже втомився.",
+    "ruSentence": "Я очень устал.",
+    "enWordMeaning": "very/very much",
+    "enSentence": "I'm very tired."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "трохи",
+    "exIndex": 0,
+    "ukSentence": "Мені трохи сумно.",
+    "ruSentence": "Мне немного грустно.",
+    "enWordMeaning": "a little/a bit",
+    "enSentence": "I'm a little sad."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "багато",
+    "exIndex": 0,
+    "ukSentence": "У нас багато роботи.",
+    "ruSentence": "У нас много работы.",
+    "enWordMeaning": "much/many/a lot",
+    "enSentence": "We have a lot of work."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мало",
+    "exIndex": 0,
+    "ukSentence": "Часу мало.",
+    "ruSentence": "Времени мало.",
+    "enWordMeaning": "little/few",
+    "enSentence": "There's little time."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "досить",
+    "exIndex": 0,
+    "ukSentence": "Цього досить.",
+    "ruSentence": "Этого достаточно.",
+    "enWordMeaning": "enough/quite",
+    "enSentence": "That's enough."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "дерево",
+    "exIndex": 0,
+    "ukSentence": "Дерево росте біля будинку.",
+    "ruSentence": "Дерево растёт у дома.",
+    "enWordMeaning": "tree",
+    "enSentence": "A tree is growing near the house."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "квітка",
+    "exIndex": 0,
+    "ukSentence": "Він подарував їй квітку.",
+    "ruSentence": "Он подарил ей цветок.",
+    "enWordMeaning": "flower",
+    "enSentence": "He gave her a flower."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "трава",
+    "exIndex": 0,
+    "ukSentence": "Трава зелена навесні.",
+    "ruSentence": "Трава зелёная весной.",
+    "enWordMeaning": "grass",
+    "enSentence": "The grass is green in spring."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "лист",
+    "exIndex": 0,
+    "ukSentence": "Лист впав із дерева.",
+    "ruSentence": "Лист упал с дерева.",
+    "enWordMeaning": "leaf",
+    "enSentence": "A leaf fell from the tree."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "гілка",
+    "exIndex": 0,
+    "ukSentence": "Гілка зламалась від вітру.",
+    "ruSentence": "Ветка сломалась от ветра.",
+    "enWordMeaning": "branch",
+    "enSentence": "The branch broke in the wind."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "корінь",
+    "exIndex": 0,
+    "ukSentence": "Корінь дерева глибокий.",
+    "ruSentence": "Корень дерева глубокий.",
+    "enWordMeaning": "root",
+    "enSentence": "The tree's roots are deep."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "насіння",
+    "exIndex": 0,
+    "ukSentence": "Насіння соняшника смачне.",
+    "ruSentence": "Семена подсолнуха вкусные.",
+    "enWordMeaning": "seed",
+    "enSentence": "Sunflower seeds are tasty."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "камінь",
+    "exIndex": 0,
+    "ukSentence": "Він кинув камінь у воду.",
+    "ruSentence": "Он бросил камень в воду.",
+    "enWordMeaning": "stone/rock",
+    "enSentence": "He threw a stone into the water."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "пісок",
+    "exIndex": 0,
+    "ukSentence": "Діти грають на піску.",
+    "ruSentence": "Дети играют на песке.",
+    "enWordMeaning": "sand",
+    "enSentence": "The children are playing in the sand."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вогонь",
+    "exIndex": 0,
+    "ukSentence": "Вогонь гріє нас.",
+    "ruSentence": "Огонь греет нас.",
+    "enWordMeaning": "fire",
+    "enSentence": "The fire keeps us warm."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "повітря",
+    "exIndex": 0,
+    "ukSentence": "Свіже повітря корисне.",
+    "ruSentence": "Свежий воздух полезен.",
+    "enWordMeaning": "air",
+    "enSentence": "Fresh air is good for you."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "вітер",
+    "exIndex": 0,
+    "ukSentence": "Вітер дує сильно.",
+    "ruSentence": "Ветер дует сильно.",
+    "enWordMeaning": "wind",
+    "enSentence": "The wind is blowing hard."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "хмара",
+    "exIndex": 0,
+    "ukSentence": "Чорна хмара на небі.",
+    "ruSentence": "Чёрное облако на небе.",
+    "enWordMeaning": "cloud",
+    "enSentence": "There's a dark cloud in the sky."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "дощ",
+    "exIndex": 0,
+    "ukSentence": "Іде дощ.",
+    "ruSentence": "Идёт дождь.",
+    "enWordMeaning": "rain",
+    "enSentence": "It's raining."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сніг",
+    "exIndex": 0,
+    "ukSentence": "Перший сніг випав.",
+    "ruSentence": "Первый снег выпал.",
+    "enWordMeaning": "snow",
+    "enSentence": "The first snow has fallen."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "лід",
+    "exIndex": 0,
+    "ukSentence": "Лід слизький, обережно!",
+    "ruSentence": "Лёд скользкий, осторожно!",
+    "enWordMeaning": "ice",
+    "enSentence": "The ice is slippery, be careful!"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сонце",
+    "exIndex": 0,
+    "ukSentence": "Сонце світить яскраво.",
+    "ruSentence": "Солнце светит ярко.",
+    "enWordMeaning": "sun",
+    "enSentence": "The sun is shining brightly."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "місяць",
+    "exIndex": 0,
+    "ukSentence": "Через місяць він повернеться.",
+    "ruSentence": "Через месяц он вернётся.",
+    "enWordMeaning": "moon",
+    "enSentence": "He'll be back in a month."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "зірка",
+    "exIndex": 0,
+    "ukSentence": "Зірка сяє на небі.",
+    "ruSentence": "Звезда сияет на небе.",
+    "enWordMeaning": "star",
+    "enSentence": "A star is shining in the sky."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "туман",
+    "exIndex": 0,
+    "ukSentence": "Туман вкрив місто.",
+    "ruSentence": "Туман накрыл город.",
+    "enWordMeaning": "fog",
+    "enSentence": "Fog covered the city."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "грім",
+    "exIndex": 0,
+    "ukSentence": "Грім гримить.",
+    "ruSentence": "Гром гремит.",
+    "enWordMeaning": "thunder",
+    "enSentence": "Thunder is rumbling."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "блискавка",
+    "exIndex": 0,
+    "ukSentence": "Блискавка вдарила в дерево.",
+    "ruSentence": "Молния ударила в дерево.",
+    "enWordMeaning": "lightning",
+    "enSentence": "Lightning struck a tree."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "веселка",
+    "exIndex": 0,
+    "ukSentence": "Після дощу з'явилась веселка.",
+    "ruSentence": "После дождя появилась радуга.",
+    "enWordMeaning": "rainbow",
+    "enSentence": "A rainbow appeared after the rain."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "автобус",
+    "exIndex": 0,
+    "ukSentence": "Автобус іде кожні п'ять хвилин.",
+    "ruSentence": "Автобус идёт каждые пять минут.",
+    "enWordMeaning": "bus",
+    "enSentence": "The bus comes every five minutes."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "потяг",
+    "exIndex": 0,
+    "ukSentence": "Потяг вже на станції.",
+    "ruSentence": "Поезд уже на станции.",
+    "enWordMeaning": "train",
+    "enSentence": "The train is already at the station."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "літак",
+    "exIndex": 0,
+    "ukSentence": "Літак вилетів вчасно.",
+    "ruSentence": "Самолёт вылетел вовремя.",
+    "enWordMeaning": "airplane",
+    "enSentence": "The plane took off on time."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "корабель",
+    "exIndex": 0,
+    "ukSentence": "Корабель пливе в море.",
+    "ruSentence": "Корабль плывёт в море.",
+    "enWordMeaning": "ship",
+    "enSentence": "The ship is sailing out to sea."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "таксі",
+    "exIndex": 0,
+    "ukSentence": "Замовимо таксі?",
+    "ruSentence": "Закажем такси?",
+    "enWordMeaning": "taxi",
+    "enSentence": "Shall we order a taxi?"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "метро",
+    "exIndex": 0,
+    "ukSentence": "В Києві є метро.",
+    "ruSentence": "В Киеве есть метро.",
+    "enWordMeaning": "metro/subway",
+    "enSentence": "Kyiv has a subway."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "трамвай",
+    "exIndex": 0,
+    "ukSentence": "Трамвай зупинився на зупинці.",
+    "ruSentence": "Трамвай остановился на остановке.",
+    "enWordMeaning": "tram",
+    "enSentence": "The tram stopped at the stop."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мотоцикл",
+    "exIndex": 0,
+    "ukSentence": "Він їздить на мотоциклі.",
+    "ruSentence": "Он ездит на мотоцикле.",
+    "enWordMeaning": "motorcycle",
+    "enSentence": "He rides a motorcycle."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "квиток",
+    "exIndex": 0,
+    "ukSentence": "Купи квиток на потяг.",
+    "ruSentence": "Купи билет на поезд.",
+    "enWordMeaning": "ticket",
+    "enSentence": "Buy a train ticket."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "паспорт",
+    "exIndex": 0,
+    "ukSentence": "Де мій паспорт?",
+    "ruSentence": "Где мой паспорт?",
+    "enWordMeaning": "passport",
+    "enSentence": "Where is my passport?"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "віза",
+    "exIndex": 0,
+    "ukSentence": "Їй потрібна віза для подорожі.",
+    "ruSentence": "Ей нужна виза для путешествия.",
+    "enWordMeaning": "visa",
+    "enSentence": "She needs a visa to travel."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "гроші",
+    "exIndex": 0,
+    "ukSentence": "Йому не вистачає грошей.",
+    "ruSentence": "Ему не хватает денег.",
+    "enWordMeaning": "money",
+    "enSentence": "He doesn't have enough money."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ціна",
+    "exIndex": 0,
+    "ukSentence": "Яка ціна цього товару?",
+    "ruSentence": "Какая цена этого товара?",
+    "enWordMeaning": "price",
+    "enSentence": "What's the price of this item?"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "робота",
+    "exIndex": 0,
+    "ukSentence": "Він шукає нову роботу.",
+    "ruSentence": "Он ищет новую работу.",
+    "enWordMeaning": "work/job",
+    "enSentence": "He's looking for a new job."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "відпустка",
+    "exIndex": 0,
+    "ukSentence": "Ми їдемо у відпустку.",
+    "ruSentence": "Мы едем в отпуск.",
+    "enWordMeaning": "vacation/holiday",
+    "enSentence": "We're going on vacation."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "здоров'я",
+    "exIndex": 0,
+    "ukSentence": "Здоров'я — це найважливіше.",
+    "ruSentence": "Здоровье — это самое важное.",
+    "enWordMeaning": "health",
+    "enSentence": "Health is the most important thing."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "хвороба",
+    "exIndex": 0,
+    "ukSentence": "Ця хвороба дуже небезпечна.",
+    "ruSentence": "Эта болезнь очень опасная.",
+    "enWordMeaning": "illness/disease",
+    "enSentence": "This disease is very dangerous."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "біль",
+    "exIndex": 0,
+    "ukSentence": "Він відчуває сильний біль.",
+    "ruSentence": "Он чувствует сильную боль.",
+    "enWordMeaning": "pain",
+    "enSentence": "He's in severe pain."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ліки",
+    "exIndex": 0,
+    "ukSentence": "Прийми ліки вчасно.",
+    "ruSentence": "Прими лекарство вовремя.",
+    "enWordMeaning": "medicine",
+    "enSentence": "Take your medicine on time."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "життя",
+    "exIndex": 0,
+    "ukSentence": "Він цінує кожен день свого життя.",
+    "ruSentence": "Он ценит каждый день своей жизни.",
+    "enWordMeaning": "life",
+    "enSentence": "He treasures every day of his life."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "смерть",
+    "exIndex": 0,
+    "ukSentence": "Смерть героя не забута.",
+    "ruSentence": "Смерть героя не забыта.",
+    "enWordMeaning": "death",
+    "enSentence": "The hero's death has not been forgotten."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "любов",
+    "exIndex": 0,
+    "ukSentence": "Любов — найсильніше почуття.",
+    "ruSentence": "Любовь — самое сильное чувство.",
+    "enWordMeaning": "love",
+    "enSentence": "Love is the strongest feeling."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "щастя",
+    "exIndex": 0,
+    "ukSentence": "Щастя не купиш за гроші.",
+    "ruSentence": "Счастье не купишь за деньги.",
+    "enWordMeaning": "happiness",
+    "enSentence": "You can't buy happiness with money."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "сум",
+    "exIndex": 0,
+    "ukSentence": "У її очах сум.",
+    "ruSentence": "В её глазах грусть.",
+    "enWordMeaning": "sadness/sorrow",
+    "enSentence": "There is sadness in her eyes."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "страх",
+    "exIndex": 0,
+    "ukSentence": "Страх не дає йому говорити.",
+    "ruSentence": "Страх не позволяет ему говорить.",
+    "enWordMeaning": "fear",
+    "enSentence": "Fear keeps him from speaking."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "гнів",
+    "exIndex": 0,
+    "ukSentence": "Він ледве стримував гнів.",
+    "ruSentence": "Он едва сдерживал гнев.",
+    "enWordMeaning": "anger",
+    "enSentence": "He could barely hold back his anger."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "радість",
+    "exIndex": 0,
+    "ukSentence": "Радість переповнює серце.",
+    "ruSentence": "Радость переполняет сердце.",
+    "enWordMeaning": "joy",
+    "enSentence": "Joy fills the heart to overflowing."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "надія",
+    "exIndex": 0,
+    "ukSentence": "Надія вмирає останньою.",
+    "ruSentence": "Надежда умирает последней.",
+    "enWordMeaning": "hope",
+    "enSentence": "Hope is the last thing to die."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мрія",
+    "exIndex": 0,
+    "ukSentence": "Її мрія — подорожувати світом.",
+    "ruSentence": "Её мечта — путешествовать по миру.",
+    "enWordMeaning": "dream",
+    "enSentence": "Her dream is to travel the world."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "правда",
+    "exIndex": 0,
+    "ukSentence": "Він завжди каже правду.",
+    "ruSentence": "Он всегда говорит правду.",
+    "enWordMeaning": "truth",
+    "enSentence": "He always tells the truth."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "брехня",
+    "exIndex": 0,
+    "ukSentence": "Брехня завжди виходить назовні.",
+    "ruSentence": "Ложь всегда выходит наружу.",
+    "enWordMeaning": "lie/falsehood",
+    "enSentence": "A lie always comes to light."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "свобода",
+    "exIndex": 0,
+    "ukSentence": "Свобода — найвища цінність.",
+    "ruSentence": "Свобода — высшая ценность.",
+    "enWordMeaning": "freedom",
+    "enSentence": "Freedom is the highest value."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мир",
+    "exIndex": 0,
+    "ukSentence": "Ми прагнемо миру.",
+    "ruSentence": "Мы стремимся к миру.",
+    "enWordMeaning": "peace",
+    "enSentence": "We strive for peace."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "війна",
+    "exIndex": 0,
+    "ukSentence": "Війна приносить страждання.",
+    "ruSentence": "Война приносит страдания.",
+    "enWordMeaning": "war",
+    "enSentence": "War brings suffering."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "перемога",
+    "exIndex": 0,
+    "ukSentence": "Перемога буде за нами.",
+    "ruSentence": "Победа будет за нами.",
+    "enWordMeaning": "victory",
+    "enSentence": "Victory will be ours."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "допомога",
+    "exIndex": 0,
+    "ukSentence": "Йому потрібна допомога.",
+    "ruSentence": "Ему нужна помощь.",
+    "enWordMeaning": "help",
+    "enSentence": "He needs help."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "проблема",
+    "exIndex": 0,
+    "ukSentence": "Ця проблема складна.",
+    "ruSentence": "Эта проблема сложная.",
+    "enWordMeaning": "problem",
+    "enSentence": "This problem is complicated."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "відповідь",
+    "exIndex": 0,
+    "ukSentence": "Я знаю відповідь.",
+    "ruSentence": "Я знаю ответ.",
+    "enWordMeaning": "answer",
+    "enSentence": "I know the answer."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "питання",
+    "exIndex": 0,
+    "ukSentence": "У мене є питання.",
+    "ruSentence": "У меня есть вопрос.",
+    "enWordMeaning": "question",
+    "enSentence": "I have a question."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "ідея",
+    "exIndex": 0,
+    "ukSentence": "Це чудова ідея!",
+    "ruSentence": "Это замечательная идея!",
+    "enWordMeaning": "idea",
+    "enSentence": "That's a wonderful idea!"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "думка",
+    "exIndex": 0,
+    "ukSentence": "Ця думка давно мене займає.",
+    "ruSentence": "Эта мысль давно меня занимает.",
+    "enWordMeaning": "thought/opinion",
+    "enSentence": "This thought has been on my mind for a long time."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "рішення",
+    "exIndex": 0,
+    "ukSentence": "Він прийняв рішення.",
+    "ruSentence": "Он принял решение.",
+    "enWordMeaning": "decision/solution",
+    "enSentence": "He made a decision."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "план",
+    "exIndex": 0,
+    "ukSentence": "У неї є план.",
+    "ruSentence": "У неё есть план.",
+    "enWordMeaning": "plan",
+    "enSentence": "She has a plan."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "мета",
+    "exIndex": 0,
+    "ukSentence": "Він досяг своєї мети.",
+    "ruSentence": "Он достиг своей цели.",
+    "enWordMeaning": "goal/aim",
+    "enSentence": "He achieved his goal."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "причина",
+    "exIndex": 0,
+    "ukSentence": "Яка причина запізнення?",
+    "ruSentence": "Какая причина опоздания?",
+    "enWordMeaning": "reason/cause",
+    "enSentence": "What's the reason for being late?"
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "результат",
+    "exIndex": 0,
+    "ukSentence": "Результат мене задовольнив.",
+    "ruSentence": "Результат меня удовлетворил.",
+    "enWordMeaning": "result",
+    "enSentence": "I was satisfied with the result."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "успіх",
+    "exIndex": 0,
+    "ukSentence": "Успіх вимагає праці.",
+    "ruSentence": "Успех требует труда.",
+    "enWordMeaning": "success",
+    "enSentence": "Success requires hard work."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "помилка",
+    "exIndex": 0,
+    "ukSentence": "Він зробив помилку.",
+    "ruSentence": "Он сделал ошибку.",
+    "enWordMeaning": "mistake/error",
+    "enSentence": "He made a mistake."
+  },
+  {
+    "file": "comprehensive-dictionary.json",
+    "ukWord": "досвід",
+    "exIndex": 0,
+    "ukSentence": "Досвід — найкращий вчитель.",
+    "ruSentence": "Опыт — лучший учитель.",
+    "enWordMeaning": "experience",
+    "enSentence": "Experience is the best teacher."
+  }
+]
