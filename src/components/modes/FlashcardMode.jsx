@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 /**
  * Flashcard Mode Component
@@ -19,6 +21,7 @@ export default function FlashcardMode({
 }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
+  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing vocabulary with flashcards. Answer questions about vocabulary, pronunciation, grammar, or usage concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [masteredWords, setMasteredWords] = useState([]);
@@ -245,6 +248,9 @@ export default function FlashcardMode({
         </div>
       </div>
 
+      <div style={styles.contentRow}>
+      <div style={styles.main}>
+
       {/* Flashcard */}
       <div
         style={styles.cardContainer}
@@ -433,6 +439,9 @@ export default function FlashcardMode({
           💡 Click the card to flip it
         </div>
       )}
+      </div>
+      <LessonChat {...chat} />
+      </div>{/* end contentRow */}
     </div>
   );
 }
@@ -445,6 +454,15 @@ const styles = {
     color: '#fff',
     padding: '2rem',
     fontFamily: 'system-ui, -apple-system, sans-serif'
+  },
+  contentRow: {
+    display: 'flex',
+    gap: '1.5rem',
+    alignItems: 'flex-start',
+  },
+  main: {
+    flex: 1,
+    minWidth: 0,
   },
   header: {
     display: 'flex',
