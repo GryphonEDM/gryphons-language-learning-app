@@ -195,7 +195,7 @@ export const stopSpeaking = () => {
   }
 };
 
-const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
+export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
   if (ttsCancelled) return;
   if (currentAudio) {
     currentAudio.pause();

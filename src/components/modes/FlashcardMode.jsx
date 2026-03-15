@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import { speakUkrainian } from '../../App.jsx';
 
 /**
  * Flashcard Mode Component
@@ -59,16 +60,11 @@ export default function FlashcardMode({
     }
   }, [vocabularySet]);
 
-  // Speak English word using browser's built-in speech synthesis
+  // Speak English word using Silero en_70 voice
   const speakEnglish = useCallback((text) => {
     if (!ttsEnabled) return;
-    window.speechSynthesis.cancel();
     const cleanText = text.split('/')[0].trim();
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    utterance.volume = ttsVolume || 0.8;
-    window.speechSynthesis.speak(utterance);
+    speakUkrainian(cleanText, 0.9, ttsVolume, 'en');
   }, [ttsEnabled, ttsVolume]);
 
   // Auto-speak English word when a new card appears (English side shown)
