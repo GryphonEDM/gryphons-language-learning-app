@@ -21,7 +21,7 @@ Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises,
 - **Listening Practice** - Hear words and type what you hear
 - **Translator** - Look up words and phrases
 - **Chat Practice** - Free conversation with a local AI tutor via LM Studio
-- **Speech-to-Text** - Speak your messages using Whisper (fully offline, auto-detects language)
+- **Speech-to-Text** - Speak your messages using Whisper (fully offline)
 - **Text-to-Speech** - Three separate TTS engines for English, Ukrainian, and Russian
 - **Achievement System** - 20 achievements to unlock
 - **Progress Tracking** - XP, streaks, and stats saved per language
