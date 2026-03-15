@@ -131,7 +131,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   const outputIsUkrainian = direction === 'en-uk';
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Translator"
         subtitle="Look up words and phrases"
@@ -156,7 +156,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         >📚 Dictionary</button>
       </div>
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
       <div style={styles.translatorBody}>
         <div style={styles.panel}>

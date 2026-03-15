@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
+import { stopSpeaking } from '../../App.jsx';
 
 const STORAGE_KEY = 'chat_practice_sessions';
 
@@ -44,7 +45,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [isLoading, setIsLoading] = useState(false);
   const [llmConnected, setLlmConnected] = useState(null);
   const [error, setError] = useState(null);
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth > 768);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
   const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
@@ -206,20 +207,17 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           model: 'local-model',
           messages: newMessages,
           temperature: 0.7,
-          max_tokens: 300,
           stream: true,
         }),
         signal: abort.signal,
       });
       if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
-      abortRef.current = null;
 
       // Add an empty bot message to start streaming into
       updateActive(s => ({
         ...s,
         displayMessages: [...s.displayMessages, { sender: 'bot', text: '' }],
       }));
-      setIsLoading(false);
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -227,6 +225,10 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       let buffer = '';
 
       while (true) {
+        if (abort.signal.aborted) {
+          reader.cancel();
+          break;
+        }
         const { done, value } = await reader.read();
         if (done) break;
         buffer += decoder.decode(value, { stream: true });
@@ -253,14 +255,19 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         }
       }
 
-      const assistantMsg = { role: 'assistant', content: reply };
-      updateActive(s => ({
-        ...s,
-        messages: [...s.messages, assistantMsg],
-      }));
+      // Save partial or complete reply to conversation history
+      if (reply) {
+        const assistantMsg = { role: 'assistant', content: reply };
+        updateActive(s => ({
+          ...s,
+          messages: [...s.messages, assistantMsg],
+        }));
+      }
 
-      speakWithHighlight(reply, botMsgIdx);
-      if (onAddXP) onAddXP(5);
+      if (!abort.signal.aborted) {
+        speakWithHighlight(reply, botMsgIdx);
+        if (onAddXP) onAddXP(5);
+      }
     } catch (err) {
       if (err.name === 'AbortError') return; // user stopped intentionally
       console.error('[Chat] LLM error:', err);
@@ -290,6 +297,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
   const stopAll = useCallback(() => {
     ttsSpeakingRef.current = false;
+    stopSpeaking();
     setTtsHighlight(null);
     setIsSpeaking(false);
     if (abortRef.current) { abortRef.current.abort(); abortRef.current = null; }
@@ -323,9 +331,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   };
 
   return (
-    <div ref={rootRef} style={styles.root}>
+    <div ref={rootRef} className="chat-root" style={styles.root}>
       {/* Sidebar */}
-      <div style={{ ...styles.sidebar, ...(sidebarOpen ? {} : styles.sidebarClosed) }}>
+      <div className={`chat-sidebar ${sidebarOpen ? '' : 'chat-sidebar-closed'}`} style={{ ...styles.sidebar, ...(sidebarOpen ? {} : styles.sidebarClosed) }}>
         <div style={styles.sidebarHeader}>
           <button style={styles.newChatBtn} onClick={startNewChat}>+ New Chat</button>
           <button style={styles.collapseBtn} onClick={() => setSidebarOpen(false)} title="Close sidebar">✕</button>
@@ -360,7 +368,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       {/* Main area */}
       <div style={styles.main}>
         {/* Top bar */}
-        <div style={styles.topBar}>
+        <div className="chat-topbar" style={styles.topBar}>
           {!sidebarOpen && (
             <button style={styles.openSidebarBtn} onClick={() => setSidebarOpen(true)} title="Open sidebar">☰</button>
           )}
@@ -382,7 +390,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         )}
 
         {/* Messages */}
-        <div ref={chatAreaRef} style={styles.chatArea}>
+        <div ref={chatAreaRef} className="chat-area" style={styles.chatArea}>
           {displayMessages.length === 0 && !isLoading && (
             <div style={styles.emptyState}>
               <div style={styles.emptyIcon}>🤖</div>
@@ -443,9 +451,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         </div>
 
         {/* Input */}
-        <div style={styles.inputSection}>
+        <div className="chat-input-section" style={styles.inputSection}>
           {isTranscribing && <div style={styles.transcribingBar}>Transcribing...</div>}
-          <div style={styles.inputRow}>
+          <div className="chat-input-row" style={styles.inputRow}>
             <input
               ref={inputRef}
               style={styles.input}

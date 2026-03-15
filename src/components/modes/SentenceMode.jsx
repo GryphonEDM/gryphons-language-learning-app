@@ -128,7 +128,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
   if (phase === 'complete') {
     const accuracy = sentences.length > 0 ? Math.round((score / sentences.length) * 100) : 0;
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{ title: 'Sentence Building Complete!', score, total: sentences.length, xpEarned, accuracy }}
           onRetry={handleRetry}
@@ -141,7 +141,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
   const progress = ((currentIdx + 1) / sentences.length) * 100;
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Build Sentences"
         subtitle={`Sentence ${currentIdx + 1} of ${sentences.length}`}
@@ -149,7 +149,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
         onExit={onExit}
       />
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
           <div style={styles.progressBar}>
             <div style={{...styles.progressFill, width: `${progress}%`}} />

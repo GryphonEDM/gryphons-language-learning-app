@@ -124,7 +124,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
   // Picker
   if (phase === 'picker') {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader title="Reading Practice" subtitle={`Read and comprehend ${langName} texts`} icon="📖" onExit={onExit} />
         <div style={styles.grid}>
           {passages.map(p => (
@@ -149,7 +149,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
     const accuracy = selectedPassage.questions.length > 0
       ? Math.round((score / selectedPassage.questions.length) * 100) : 0;
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{ title: 'Reading Complete!', score, total: selectedPassage.questions.length, xpEarned, accuracy }}
           onRetry={handleRetry}
@@ -165,7 +165,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
     const glossary = selectedPassage.wordGlossary || {};
 
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader
           title={selectedPassage.titleEn}
           subtitle={selectedPassage.title}
@@ -173,7 +173,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           onExit={() => setPhase('picker')}
         />
 
-        <div style={styles.contentRow}>
+        <div className="content-row" style={styles.contentRow}>
           <div style={styles.main}>
         <div style={styles.readingCard}>
           {ttsEnabled && (
@@ -239,7 +239,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
     const question = selectedPassage.questions[questionIdx];
 
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader
           title={selectedPassage.titleEn}
           subtitle={`Question ${questionIdx + 1} of ${selectedPassage.questions.length}`}
@@ -247,7 +247,7 @@ export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEna
           onExit={() => setPhase('reading')}
         />
 
-        <div style={styles.contentRow}>
+        <div className="content-row" style={styles.contentRow}>
           <div style={styles.main}>
         <div style={styles.questionCard}>
           <p style={styles.questionText}>{question.question}</p>

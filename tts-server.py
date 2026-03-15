@@ -145,8 +145,10 @@ def transcribe_audio():
         audio_file = request.files['audio']
         lang = request.args.get('lang', None)
 
-        # Save to temp file
-        suffix = '.webm' if 'webm' in (audio_file.content_type or '') else '.wav'
+        # Save to temp file — Safari sends mp4, Chrome sends webm
+        content_type = audio_file.content_type or ''
+        filename = audio_file.filename or ''
+        suffix = '.mp4' if ('mp4' in content_type or filename.endswith('.mp4')) else '.webm' if ('webm' in content_type or filename.endswith('.webm')) else '.wav'
         with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
             audio_file.save(tmp)
             tmp_path = tmp.name

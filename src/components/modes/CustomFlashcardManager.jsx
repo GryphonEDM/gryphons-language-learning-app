@@ -56,7 +56,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
   };
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <div style={styles.headerRow}>
         <h3 style={styles.heading}>My Custom Words ({customWords.length})</h3>
         {!showForm && (

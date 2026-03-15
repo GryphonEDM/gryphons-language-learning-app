@@ -69,7 +69,6 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           model: 'local-model',
           messages: newMessages,
           temperature: 0.7,
-          max_tokens: 300,
           stream: true,
         }),
       });
@@ -233,7 +232,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   // Lesson Picker
   if (phase === 'picker') {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader title="Grammar Lessons" subtitle={`Learn ${langName} grammar`} icon="📐" onExit={onExit} />
         <div style={styles.grid}>
           {grammarLessons.map(lesson => (
@@ -254,7 +253,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   // Completion
   if (phase === 'complete') {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{ title: `${selectedLesson.nameEn} Complete!`, score, total: totalExercises, xpEarned, accuracy: totalExercises > 0 ? Math.round((score / totalExercises) * 100) : 0 }}
           onRetry={handleRetry}
@@ -267,14 +266,14 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   // Lesson explanation view
   if (phase === 'lesson' && currentSection) {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader
           title={selectedLesson.nameEn}
           subtitle={`Section ${sectionIdx + 1} of ${selectedLesson.sections.length}`}
           icon={selectedLesson.icon}
           onExit={() => setPhase('picker')}
         />
-        <div style={styles.contentRow}>
+        <div className="content-row" style={styles.contentRow}>
           <div style={styles.sectionCard}>
             <h3 style={styles.sectionTitle}>{currentSection.title}</h3>
             <p style={styles.explanation}>{currentSection.explanation}</p>
@@ -311,14 +310,14 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   // Exercise view
   if (phase === 'exercise' && currentExercise) {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader
           title={currentSection.title}
           subtitle={`Exercise ${exerciseIdx + 1} of ${currentSection.exercises.length}`}
           icon={selectedLesson.icon}
           onExit={() => setPhase('lesson')}
         />
-        <div style={styles.contentRow}>
+        <div className="content-row" style={styles.contentRow}>
           <div style={styles.exerciseCard}>
             <p style={styles.exercisePrompt}>{currentExercise.prompt}</p>
 

@@ -120,7 +120,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   if (phase === 'complete') {
     const accuracy = words.length > 0 ? Math.round((score / words.length) * 100) : 0;
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{
             title: 'Listening Session Complete!',
@@ -140,7 +140,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   const diffColors = { correct: '#4ade80', wrong: '#f87171', missing: '#fbbf24', extra: '#f87171' };
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Listening Practice"
         subtitle={`Word ${currentIdx + 1} of ${words.length}`}
@@ -148,7 +148,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
         onExit={onExit}
       />
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
           <div style={styles.progressBar}>
             <div style={{...styles.progressFill, width: `${progress}%`}} />

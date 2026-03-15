@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { buildDictionary } from '../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../utils/userDictionary.js';
+import { stopSpeaking } from '../App.jsx';
 
 export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
   const dict = buildDictionary(langCode);
@@ -105,7 +106,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
       const res = await fetch('/llm/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'local-model', messages: payload, temperature: 0.7, max_tokens: 300, stream: true }),
+        body: JSON.stringify({ model: 'local-model', messages: payload, temperature: 0.7, stream: true }),
       });
       if (!res.ok) throw new Error(`LLM error ${res.status}`);
 
@@ -160,6 +161,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
 
   const stopTts = useCallback(() => {
     ttsSpeakingRef.current = false;
+    stopSpeaking();
     setIsSpeaking(false);
     setTtsHighlight(null);
   }, []);

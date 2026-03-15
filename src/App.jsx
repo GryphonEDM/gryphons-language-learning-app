@@ -183,8 +183,20 @@ function buildCategoryFlashcardSetsForLang(langCode) {
 
 // Text-to-Speech for Ukrainian using local Hugging Face server
 let currentAudio = null;
+let ttsCancelled = false;
+
+/** Stop any currently playing TTS audio immediately. */
+export const stopSpeaking = () => {
+  ttsCancelled = true;
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio = null;
+  }
+};
 
 const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
+  if (ttsCancelled) return;
   if (currentAudio) {
     currentAudio.pause();
     currentAudio = null;
@@ -198,12 +210,14 @@ const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
       body: JSON.stringify({ text, lang })
     });
 
+    if (ttsCancelled) return;
     if (!response.ok) {
       console.log('[TTS] Server error:', response.statusText);
       return;
     }
 
     const audioBlob = await response.blob();
+    if (ttsCancelled) return;
     const audioUrl = URL.createObjectURL(audioBlob);
     const audio = new Audio(audioUrl);
     audio.playbackRate = rate;
@@ -212,6 +226,11 @@ const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
 
     return new Promise((resolve) => {
       audio.onended = () => {
+        URL.revokeObjectURL(audioUrl);
+        resolve();
+      };
+      audio.onerror = () => resolve();
+      audio.onpause = () => {
         URL.revokeObjectURL(audioUrl);
         resolve();
       };
@@ -249,13 +268,14 @@ function splitByScript(text) {
   return chunks;
 }
 
-/** Speak mixed-language text: Cyrillic via local model, Latin via browser TTS. */
+/** Speak mixed-language text: Cyrillic via local model, Latin via English Silero. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
   const chunks = splitByScript(text);
   if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'cyrillic')) {
     return speakUkrainian(text, rate, volume, lang);
   }
   for (const chunk of chunks) {
+    if (ttsCancelled) break;
     if (chunk.type === 'cyrillic') {
       await speakUkrainian(chunk.text, rate, volume, lang);
     } else {
@@ -273,6 +293,7 @@ export default function UkrainianTypingGame() {
 
   // TTS wrapper that passes current language, handles mixed Cyrillic/Latin text
   const speak = useCallback((text, rate = 0.8, volume = 0.8) => {
+    ttsCancelled = false;
     return speakMixed(text, rate, volume, currentLanguage);
   }, [currentLanguage]);
 

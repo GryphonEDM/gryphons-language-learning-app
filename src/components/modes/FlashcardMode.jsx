@@ -218,7 +218,7 @@ export default function FlashcardMode({
   }
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       {/* Header */}
       <div style={styles.header}>
         <button style={styles.backButton} onClick={onExit}>
@@ -258,7 +258,7 @@ export default function FlashcardMode({
         </div>
       </div>
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
       <div style={styles.main}>
 
       {/* Flashcard */}

@@ -151,7 +151,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
   if (phase === 'complete') {
     const accuracy = words.length > 0 ? Math.round((score / words.length) * 100) : 0;
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{
             title: 'Translation Practice Complete!',
@@ -171,7 +171,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
   const hintText = getHint();
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Translation Practice"
         subtitle={`Question ${currentIdx + 1} of ${words.length}`}
@@ -179,7 +179,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         onExit={onExit}
       />
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
       <div style={styles.controls}>
         <button style={styles.dirBtn} onClick={handleDirectionChange}>

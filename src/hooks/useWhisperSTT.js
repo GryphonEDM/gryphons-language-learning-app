@@ -14,7 +14,12 @@ export default function useWhisperSTT({ onTranscript }) {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
 
-      const mediaRecorder = new MediaRecorder(stream);
+      // Safari uses mp4, Chrome/Firefox use webm
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm'
+        : MediaRecorder.isTypeSupported('audio/mp4') ? 'audio/mp4' : '';
+      const mediaRecorder = mimeType
+        ? new MediaRecorder(stream, { mimeType })
+        : new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       chunksRef.current = [];
 
@@ -42,7 +47,8 @@ export default function useWhisperSTT({ onTranscript }) {
 
         try {
           const formData = new FormData();
-          formData.append('audio', blob, 'recording.webm');
+          const ext = mediaRecorder.mimeType.includes('mp4') ? 'mp4' : 'webm';
+          formData.append('audio', blob, `recording.${ext}`);
 
           const res = await fetch(`/stt?lang=${lang}`, {
             method: 'POST',

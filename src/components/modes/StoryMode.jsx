@@ -139,7 +139,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   // PICKER PHASE
   if (phase === 'picker') {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader
           title="Story Time"
           subtitle={`Read along in ${langName}`}
@@ -181,7 +181,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   const tokens = getWords(storyText);
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title={selectedStory.title}
         subtitle="Click a word to hear it and see its meaning"
@@ -226,7 +226,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
         </button>
       </div>
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
       {/* Story text with clickable words */}
       <div style={styles.storyContainer}>

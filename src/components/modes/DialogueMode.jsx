@@ -164,7 +164,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
   // Picker
   if (phase === 'picker') {
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <ModeHeader title="Dialogue Practice" subtitle="Practice real conversations" icon="💬" onExit={onExit} />
         <div style={styles.grid}>
           {dialogues.map(d => (
@@ -186,7 +186,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
   if (phase === 'complete') {
     const accuracy = totalPlayerTurns > 0 ? Math.round((score / totalPlayerTurns) * 100) : 0;
     return (
-      <div style={styles.container}>
+      <div className="mode-container" style={styles.container}>
         <CompletionScreen
           stats={{ title: `${selectedDialogue.nameEn} Complete!`, score, total: totalPlayerTurns, xpEarned, accuracy }}
           onRetry={handleRetry}
@@ -201,7 +201,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
   const isPlayerTurn = currentExchange?.speaker === 'player';
 
   return (
-    <div style={styles.container}>
+    <div className="mode-container" style={styles.container}>
       <ModeHeader
         title={selectedDialogue.nameEn}
         subtitle={selectedDialogue.nameUk}
@@ -209,7 +209,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
         onExit={() => setPhase('picker')}
       />
 
-      <div style={styles.contentRow}>
+      <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
       <div style={styles.contextBox}>
         <p style={styles.contextText}>{selectedDialogue.context}</p>

@@ -7,7 +7,7 @@ import React from 'react';
  */
 export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
   return (
-    <div style={styles.panel}>
+    <div className="lesson-chat-panel" style={styles.panel}>
       <div style={styles.header}>
         <span style={styles.title}>💬 Ask a Question</span>
         {isSpeaking && stopTts && (
