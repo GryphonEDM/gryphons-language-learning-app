@@ -207,10 +207,9 @@ const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
     const audioUrl = URL.createObjectURL(audioBlob);
     const audio = new Audio(audioUrl);
     audio.playbackRate = rate;
-    audio.volume = volume; // Set volume level
+    audio.volume = volume;
     currentAudio = audio;
 
-    // Return a promise that resolves when audio finishes playing
     return new Promise((resolve) => {
       audio.onended = () => {
         URL.revokeObjectURL(audioUrl);
@@ -220,11 +219,48 @@ const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
         console.log(`[TTS] Playing: "${text}"`);
       }).catch(err => {
         console.log('[TTS] Play error:', err.message);
-        resolve(); // Resolve even on error so the game doesn't hang
+        resolve();
       });
     });
   } catch (err) {
     console.log('[TTS] Error:', err.message);
+  }
+};
+
+/** Split text into alternating cyrillic/latin chunks for mixed TTS. */
+function splitByScript(text) {
+  const tokens = text.split(/(\s+)/);
+  const chunks = [];
+  let current = null;
+  for (const token of tokens) {
+    const isCyrillic = /[а-яёіїєґА-ЯЁІЇЄҐ]/.test(token);
+    const isLatin = /[a-zA-Z]/.test(token);
+    const type = isCyrillic ? 'cyrillic' : isLatin ? 'latin' : null;
+    if (type === null) {
+      if (current) current.text += token;
+    } else if (current && current.type === type) {
+      current.text += token;
+    } else {
+      if (current && current.text.trim()) chunks.push(current);
+      current = { type, text: token };
+    }
+  }
+  if (current && current.text.trim()) chunks.push(current);
+  return chunks;
+}
+
+/** Speak mixed-language text: Cyrillic via local model, Latin via browser TTS. */
+const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
+  const chunks = splitByScript(text);
+  if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'cyrillic')) {
+    return speakUkrainian(text, rate, volume, lang);
+  }
+  for (const chunk of chunks) {
+    if (chunk.type === 'cyrillic') {
+      await speakUkrainian(chunk.text, rate, volume, lang);
+    } else {
+      await speakUkrainian(chunk.text, rate, volume, 'en');
+    }
   }
 };
 
@@ -235,9 +271,9 @@ export default function UkrainianTypingGame() {
   });
   const langData = getLanguageData(currentLanguage);
 
-  // TTS wrapper that passes current language
+  // TTS wrapper that passes current language, handles mixed Cyrillic/Latin text
   const speak = useCallback((text, rate = 0.8, volume = 0.8) => {
-    return speakUkrainian(text, rate, volume, currentLanguage);
+    return speakMixed(text, rate, volume, currentLanguage);
   }, [currentLanguage]);
 
   // Derived data based on current language

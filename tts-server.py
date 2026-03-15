@@ -56,6 +56,23 @@ RU_SPEAKER = 'aidar'
 RU_SAMPLE_RATE = 48000
 print(f"[OK] Russian TTS model loaded! (speaker: {RU_SPEAKER})")
 
+# === English TTS (Silero v3) ===
+EN_CACHE_DIR = os.path.join(SCRIPT_DIR, "tts-cache-en")
+EN_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-en", "v3_en.pt")
+os.makedirs(EN_CACHE_DIR, exist_ok=True)
+os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-en"), exist_ok=True)
+
+print("Loading English TTS model (Silero v3)...")
+if not os.path.isfile(EN_MODEL_PATH):
+    print("  Downloading Silero v3 English model (~100MB)...")
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/en/v3_en.pt', EN_MODEL_PATH)
+
+tts_en = torch.package.PackageImporter(EN_MODEL_PATH).load_pickle("tts_models", "model")
+tts_en.to(torch.device('cpu'))
+EN_SPEAKER = 'en_70'
+EN_SAMPLE_RATE = 48000
+print(f"[OK] English TTS model loaded! (speaker: {EN_SPEAKER})")
+
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
 import platform
@@ -161,6 +178,8 @@ def generate_tts():
         # Route to the correct TTS engine
         if lang == 'ru':
             return generate_russian_tts(text)
+        elif lang == 'en':
+            return generate_english_tts(text)
         else:
             return generate_ukrainian_tts(text)
 
@@ -183,6 +202,20 @@ def generate_ukrainian_tts(text):
         _, output_text = tts_uk.tts(text, Voices.Oleksa.value, Stress.Dictionary.value, file)
 
     print(f"[TTS-UK] Generated successfully")
+    return send_file(cache_path, mimetype='audio/wav')
+
+def generate_english_tts(text):
+    cache_key = hashlib.md5(f"en_{text}".encode()).hexdigest()
+    cache_path = os.path.join(EN_CACHE_DIR, f"{cache_key}.wav")
+
+    if os.path.exists(cache_path):
+        print(f"[TTS-EN] Cache hit: {len(text)} chars")
+        return send_file(cache_path, mimetype='audio/wav')
+
+    print(f"[TTS-EN] Generating: {len(text)} chars")
+    tts_en.save_wav(text=text, speaker=EN_SPEAKER, sample_rate=EN_SAMPLE_RATE, audio_path=cache_path)
+
+    print(f"[TTS-EN] Generated successfully")
     return send_file(cache_path, mimetype='audio/wav')
 
 def generate_russian_tts(text):
