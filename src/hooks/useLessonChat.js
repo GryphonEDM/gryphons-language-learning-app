@@ -8,6 +8,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
   const [chatSelectedWord, setChatSelectedWord] = useState(null); // { word, translation }
   const [chatAddForm, setChatAddForm] = useState(null); // null | { en, translating }
@@ -62,6 +63,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const speakWithHighlight = useCallback(async (text, msgIdx) => {
     if (!ttsEnabled || !onSpeak) return;
     ttsSpeakingRef.current = true;
+    setIsSpeaking(true);
     const sentences = text.split(/(?<=[.!?])\s+/);
     let wordOffset = 0;
     for (const sentence of sentences) {
@@ -74,6 +76,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     }
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
+    setIsSpeaking(false);
   }, [ttsEnabled, onSpeak, ttsVolume]);
 
   const send = async () => {
@@ -157,7 +160,9 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
 
   const stopTts = useCallback(() => {
     ttsSpeakingRef.current = false;
+    setIsSpeaking(false);
+    setTtsHighlight(null);
   }, []);
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
 }

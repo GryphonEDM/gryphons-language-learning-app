@@ -5,12 +5,12 @@ import React from 'react';
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
   return (
     <div style={styles.panel}>
       <div style={styles.header}>
         <span style={styles.title}>💬 Ask a Question</span>
-        {stopTts && (
+        {isSpeaking && stopTts && (
           <button style={styles.headerStopBtn} onClick={stopTts} title="Stop TTS">⏹</button>
         )}
       </div>
@@ -59,11 +59,9 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
                   onClick={() => speakWithHighlight(msg.text, i)}
                   title="Listen"
                 >🔊</button>
-                <button
-                  style={styles.stopBtn}
-                  onClick={stopTts}
-                  title="Stop"
-                >⏹</button>
+                {isSpeaking && ttsHighlight?.msgIdx === i && (
+                  <button style={styles.stopBtn} onClick={stopTts} title="Stop">⏹</button>
+                )}
               </>
             )}
           </div>
