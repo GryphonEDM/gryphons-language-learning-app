@@ -40,8 +40,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   // Auto-play TTS for translations
   useEffect(() => {
     if (outputText && ttsEnabled && !isLoading) {
-      const outputIsEnglish = direction === 'uk-en';
-      const timer = setTimeout(() => handleSpeak(outputText, outputIsEnglish), 200);
+      const timer = setTimeout(() => handleSpeak(outputText), 200);
       return () => clearTimeout(timer);
     }
   }, [outputText, ttsEnabled]);
@@ -108,21 +107,10 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
     }
   };
 
-  const handleSpeak = (text, isEnglish = false) => {
-    if (!ttsEnabled || !text) return;
-    if (isEnglish) {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const utter = new SpeechSynthesisUtterance(text);
-        utter.lang = 'en-US';
-        utter.rate = 0.9;
-        window.speechSynthesis.speak(utter);
-        setSpeakCount(prev => prev + 1);
-      }
-    } else if (onSpeak) {
-      onSpeak(text, 0.8, ttsVolume);
-      setSpeakCount(prev => prev + 1);
-    }
+  const handleSpeak = (text) => {
+    if (!ttsEnabled || !text || !onSpeak) return;
+    onSpeak(text, 0.8, ttsVolume);
+    setSpeakCount(prev => prev + 1);
   };
 
   const toggleDirection = () => {
@@ -186,7 +174,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
           <div style={styles.panelHeader}>
             <label style={styles.panelLabel}>{toLabel}</label>
             {outputText && ttsEnabled && (
-              <button style={styles.speakBtn} onClick={() => handleSpeak(outputText, !outputIsUkrainian)}>
+              <button style={styles.speakBtn} onClick={() => handleSpeak(outputText)}>
                 🔊 Speak
               </button>
             )}
