@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
 
 const STORAGE_KEY = 'chat_practice_sessions';
 
@@ -45,6 +46,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [error, setError] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
+  const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
   const ttsSpeakingRef = useRef(false);
   const chatAreaRef = useRef(null);
@@ -55,9 +57,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
     if (!cleaned) return null;
-    // Exact match
+    const userHit = lookupUserDict(cleaned);
+    if (userHit) return userHit;
     if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
-    // Try prefix matching for inflected forms
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
       const prefix = cleaned.slice(0, i);
       if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
@@ -74,7 +76,23 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
   }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
 
-  const dismissWord = useCallback(() => setSelectedWord(null), []);
+  const dismissWord = useCallback(() => { setSelectedWord(null); setWordAddForm(null); }, []);
+
+  // Reset add form when selected word changes
+  useEffect(() => { setWordAddForm(null); }, [selectedWord?.word]);
+
+  const handleAddToDict = useCallback(() => {
+    setWordAddForm({ en: '', translating: true });
+    translateWithLLM(selectedWord.word, langName).then(translation => {
+      setWordAddForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
+    });
+  }, [selectedWord, langName]);
+
+  const handleSaveToDict = useCallback(() => {
+    if (!wordAddForm?.en.trim() || !selectedWord) return;
+    saveToUserDict(selectedWord.word, wordAddForm.en);
+    dismissWord();
+  }, [wordAddForm, selectedWord, dismissWord]);
 
   const systemPrompt = `You are a friendly ${langName} language tutor having a conversation with a student.
 - Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary.
@@ -447,20 +465,50 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           style={{
             ...styles.wordToolbar,
             top: selectedWord.rect.bottom + 8,
-            left: Math.max(10, Math.min(selectedWord.rect.left, window.innerWidth - 280)),
+            left: Math.max(10, Math.min(selectedWord.rect.left, window.innerWidth - 300)),
           }}
         >
           <button style={styles.wordToolbarClose} onClick={dismissWord}>✕</button>
           <div style={styles.wordToolbarWord}>{selectedWord.word}</div>
-          <div style={styles.wordToolbarTranslation}>
-            {selectedWord.translation || 'No translation found'}
-          </div>
-          <div style={styles.wordToolbarActions}>
-            <button
-              style={styles.wordToolbarBtn}
-              onClick={() => { if (ttsEnabled && onSpeak) onSpeak(selectedWord.word, 0.7, ttsVolume); }}
-            >🔊 Listen</button>
-          </div>
+          {!wordAddForm ? (
+            <>
+              <div style={styles.wordToolbarTranslation}>
+                {selectedWord.translation || <span style={{ color: 'rgba(255,255,255,0.4)' }}>No translation found</span>}
+              </div>
+              <div style={styles.wordToolbarActions}>
+                <button style={styles.wordToolbarBtn} onClick={() => { if (ttsEnabled && onSpeak) onSpeak(selectedWord.word, 0.7, ttsVolume); }}>
+                  🔊 Listen
+                </button>
+                {!selectedWord.translation && (
+                  <button style={{ ...styles.wordToolbarBtn, ...styles.wordToolbarAddBtn }} onClick={handleAddToDict}>
+                    + Add to dictionary
+                  </button>
+                )}
+              </div>
+            </>
+          ) : (
+            <div style={styles.wordToolbarAddForm}>
+              <div style={styles.wordToolbarAddLabel}>
+                English meaning
+                {wordAddForm.translating && <span style={styles.wordToolbarTranslatingHint}> translating…</span>}
+              </div>
+              <input
+                style={{ ...styles.wordToolbarInput, ...(wordAddForm.translating ? { opacity: 0.5 } : {}) }}
+                value={wordAddForm.en}
+                onChange={e => setWordAddForm(prev => ({ ...prev, en: e.target.value }))}
+                placeholder={wordAddForm.translating ? 'Getting translation…' : 'Enter translation...'}
+                disabled={wordAddForm.translating}
+                autoFocus={!wordAddForm.translating}
+                onKeyDown={e => { if (e.key === 'Enter') handleSaveToDict(); if (e.key === 'Escape') setWordAddForm(null); }}
+              />
+              <div style={styles.wordToolbarAddActions}>
+                <button style={styles.wordToolbarCancelBtn} onClick={() => setWordAddForm(null)}>Cancel</button>
+                <button style={styles.wordToolbarSaveBtn} onClick={handleSaveToDict} disabled={wordAddForm.translating || !wordAddForm.en.trim()}>
+                  Save
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
@@ -884,6 +932,7 @@ const styles = {
   wordToolbarActions: {
     display: 'flex',
     gap: '0.4rem',
+    flexWrap: 'wrap',
   },
   wordToolbarBtn: {
     background: 'rgba(255,255,255,0.08)',
@@ -893,6 +942,62 @@ const styles = {
     padding: '0.35rem 0.65rem',
     cursor: 'pointer',
     fontSize: '0.82rem',
+    fontFamily: 'inherit',
+  },
+  wordToolbarAddBtn: {
+    background: 'rgba(255,215,0,0.12)',
+    border: '1px solid rgba(255,215,0,0.3)',
+    color: '#ffd700',
+  },
+  wordToolbarAddForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.4rem',
+  },
+  wordToolbarAddLabel: {
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.5)',
+  },
+  wordToolbarTranslatingHint: {
+    color: '#4dabf7',
+    fontStyle: 'italic',
+  },
+  wordToolbarInput: {
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    borderRadius: '7px',
+    color: '#fff',
+    padding: '0.4rem 0.6rem',
+    fontSize: '0.9rem',
+    fontFamily: 'inherit',
+    outline: 'none',
+    width: '100%',
+    boxSizing: 'border-box',
+  },
+  wordToolbarAddActions: {
+    display: 'flex',
+    gap: '0.4rem',
+    justifyContent: 'flex-end',
+  },
+  wordToolbarCancelBtn: {
+    background: 'rgba(255,255,255,0.06)',
+    border: 'none',
+    borderRadius: '7px',
+    color: 'rgba(255,255,255,0.5)',
+    padding: '0.3rem 0.6rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontFamily: 'inherit',
+  },
+  wordToolbarSaveBtn: {
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    borderRadius: '7px',
+    color: '#1a1a2e',
+    padding: '0.3rem 0.7rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontWeight: '700',
     fontFamily: 'inherit',
   },
   snapBtn: {

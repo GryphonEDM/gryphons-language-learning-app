@@ -5,7 +5,7 @@ import React from 'react';
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, speakWithHighlight, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
   return (
     <div style={styles.panel}>
       <div style={styles.header}>
@@ -66,6 +66,53 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
           </div>
         )}
       </div>
+
+      {/* Word info panel — shown when a word is clicked in chat */}
+      {chatSelectedWord && (
+        <div style={styles.wordPanel}>
+          <div style={styles.wordPanelTop}>
+            <span style={styles.wordPanelWord}>{chatSelectedWord.word}</span>
+            <button style={styles.wordPanelClose} onClick={dismissChatWord}>✕</button>
+          </div>
+          {chatSelectedWord.translation ? (
+            <div style={styles.wordPanelTranslation}>= "{chatSelectedWord.translation}"</div>
+          ) : !chatAddForm ? (
+            <>
+              <div style={styles.wordPanelNoResult}>No translation found</div>
+              {handleChatAddToDict && (
+                <button style={styles.wordPanelAddBtn} onClick={handleChatAddToDict}>+ Add to dictionary</button>
+              )}
+            </>
+          ) : (
+            <div style={styles.addForm}>
+              <div style={styles.addLabel}>
+                English meaning
+                {chatAddForm.translating && <span style={styles.translatingHint}> translating…</span>}
+              </div>
+              <input
+                style={{ ...styles.addInput, ...(chatAddForm.translating ? { opacity: 0.5 } : {}) }}
+                value={chatAddForm.en}
+                onChange={e => setChatAddForm(prev => ({ ...prev, en: e.target.value }))}
+                placeholder={chatAddForm.translating ? 'Getting translation…' : 'Enter translation...'}
+                disabled={chatAddForm.translating}
+                autoFocus={!chatAddForm.translating}
+                onKeyDown={e => {
+                  if (e.key === 'Enter') handleChatSaveToDict(chatAddForm.en);
+                  if (e.key === 'Escape') setChatAddForm(null);
+                }}
+              />
+              <div style={styles.addActions}>
+                <button style={styles.cancelBtn} onClick={() => setChatAddForm(null)}>Cancel</button>
+                <button
+                  style={styles.saveBtn}
+                  disabled={chatAddForm.translating || !chatAddForm.en.trim()}
+                  onClick={() => handleChatSaveToDict(chatAddForm.en)}
+                >Save</button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
       <div style={styles.inputRow}>
         <input
@@ -157,6 +204,106 @@ const styles = {
     opacity: 0.45,
     padding: 0,
     color: '#fff',
+  },
+  wordPanel: {
+    margin: '0 0.5rem 0.5rem',
+    background: 'rgba(77,171,247,0.1)',
+    border: '1px solid rgba(77,171,247,0.25)',
+    borderRadius: '10px',
+    padding: '0.6rem 0.8rem',
+    flexShrink: 0,
+  },
+  wordPanelTop: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '0.2rem',
+  },
+  wordPanelWord: {
+    fontWeight: '700',
+    color: '#ffd700',
+    fontSize: '1rem',
+  },
+  wordPanelClose: {
+    background: 'none',
+    border: 'none',
+    color: 'rgba(255,255,255,0.4)',
+    cursor: 'pointer',
+    fontSize: '0.75rem',
+    padding: '2px',
+  },
+  wordPanelTranslation: {
+    fontSize: '0.88rem',
+    color: '#4dabf7',
+    fontStyle: 'italic',
+  },
+  wordPanelNoResult: {
+    fontSize: '0.82rem',
+    color: 'rgba(255,255,255,0.4)',
+    fontStyle: 'italic',
+    marginBottom: '0.3rem',
+  },
+  wordPanelAddBtn: {
+    background: 'rgba(255,215,0,0.12)',
+    border: '1px solid rgba(255,215,0,0.3)',
+    color: '#ffd700',
+    padding: '0.25rem 0.6rem',
+    borderRadius: '15px',
+    cursor: 'pointer',
+    fontSize: '0.78rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+  },
+  addForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.3rem',
+  },
+  addLabel: {
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.5)',
+  },
+  translatingHint: {
+    color: '#4dabf7',
+    fontStyle: 'italic',
+  },
+  addInput: {
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    borderRadius: '6px',
+    color: '#fff',
+    padding: '0.35rem 0.5rem',
+    fontSize: '0.85rem',
+    fontFamily: 'inherit',
+    outline: 'none',
+    width: '100%',
+    boxSizing: 'border-box',
+  },
+  addActions: {
+    display: 'flex',
+    gap: '0.3rem',
+    justifyContent: 'flex-end',
+  },
+  cancelBtn: {
+    background: 'rgba(255,255,255,0.06)',
+    border: 'none',
+    borderRadius: '6px',
+    color: 'rgba(255,255,255,0.5)',
+    padding: '0.25rem 0.5rem',
+    cursor: 'pointer',
+    fontSize: '0.78rem',
+    fontFamily: 'inherit',
+  },
+  saveBtn: {
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    borderRadius: '6px',
+    color: '#1a1a2e',
+    padding: '0.25rem 0.6rem',
+    cursor: 'pointer',
+    fontSize: '0.78rem',
+    fontWeight: '700',
+    fontFamily: 'inherit',
   },
   inputRow: {
     display: 'flex',

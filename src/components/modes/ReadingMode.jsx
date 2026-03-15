@@ -6,7 +6,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function ReadingMode({ langCode = 'uk', passages, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a reading comprehension exercise with a ${langName} text. Answer questions about vocabulary, grammar, or comprehension concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a reading comprehension exercise with a ${langName} text. Answer questions about vocabulary, grammar, or comprehension concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [phase, setPhase] = useState('picker'); // picker, reading, questions, complete
   const [selectedPassage, setSelectedPassage] = useState(null);
   const [questionIdx, setQuestionIdx] = useState(0);

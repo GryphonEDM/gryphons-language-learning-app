@@ -303,7 +303,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           </div>
           {ChatPanel}
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
       </div>
     );
   }
@@ -386,7 +386,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           </div>
           {ChatPanel}
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
       </div>
     );
   }

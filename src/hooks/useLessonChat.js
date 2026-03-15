@@ -1,23 +1,59 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
+import { buildDictionary } from '../utils/dictionaryBuilder.js';
+import { lookupUserDict, saveToUserDict, translateWithLLM } from '../utils/userDictionary.js';
 
-export function useLessonChat({ langName, systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
+export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
+  const dict = buildDictionary(langCode);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
   const [activeWord, setActiveWord] = useState(null);
+  const [chatSelectedWord, setChatSelectedWord] = useState(null); // { word, translation }
+  const [chatAddForm, setChatAddForm] = useState(null); // null | { en, translating }
   const historyRef = useRef([]);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
   const ttsSpeakingRef = useRef(false);
 
-  // Word click handler — speaks the word and highlights it in the chat
+  const lookupWord = useCallback((word) => {
+    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
+    if (!cleaned) return null;
+    const userHit = lookupUserDict(cleaned);
+    if (userHit) return userHit;
+    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
+    for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
+      if (dict.ukToEn[cleaned.slice(0, i)]) return dict.ukToEn[cleaned.slice(0, i)];
+    }
+    return null;
+  }, [dict]);
+
+  // Word click handler — speaks the word, looks it up, shows panel
   const onWordClick = useCallback((e, token) => {
     const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
-    setActiveWord(cleaned.toLowerCase());
+    const lower = cleaned.toLowerCase();
+    setActiveWord(lower);
+    setChatSelectedWord({ word: cleaned, translation: lookupWord(cleaned) });
+    setChatAddForm(null);
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
-  }, [ttsEnabled, onSpeak, ttsVolume]);
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
+
+  const dismissChatWord = useCallback(() => { setChatSelectedWord(null); setChatAddForm(null); setActiveWord(null); }, []);
+
+  const handleChatAddToDict = useCallback(() => {
+    if (!chatSelectedWord) return;
+    setChatAddForm({ en: '', translating: true });
+    translateWithLLM(chatSelectedWord.word, langName).then(t =>
+      setChatAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
+    );
+  }, [chatSelectedWord, langName]);
+
+  const handleChatSaveToDict = useCallback((en) => {
+    if (!chatSelectedWord || !en.trim()) return;
+    saveToUserDict(chatSelectedWord.word, en);
+    dismissChatWord();
+  }, [chatSelectedWord, dismissChatWord]);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
@@ -119,5 +155,5 @@ export function useLessonChat({ langName, systemPrompt, onSpeak, ttsEnabled, tts
     historyRef.current = [];
   };
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, onWordClick, activeWord };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, speakWithHighlight, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
 }

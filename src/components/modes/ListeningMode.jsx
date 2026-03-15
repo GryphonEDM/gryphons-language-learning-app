@@ -11,7 +11,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('playing'); // playing, complete
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [words, setWords] = useState(() => {
     const all = getAllVocabularyWords(langCode);
     const shuffled = [...all].sort(() => Math.random() - 0.5);
@@ -241,7 +241,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
         </div>
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
     </div>
   );
 }

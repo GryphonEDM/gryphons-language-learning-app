@@ -1,6 +1,7 @@
-import React, { useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 
@@ -10,9 +11,10 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   const dict = buildDictionary(langCode);
 
   const [phase, setPhase] = useState('picker'); // picker, reading
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [selectedStory, setSelectedStory] = useState(null);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, index }
+  const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
   const [showEnglish, setShowEnglish] = useState(false);
   const [isReading, setIsReading] = useState(false);
   const [highlightRange, setHighlightRange] = useState({ start: -1, end: -1 });
@@ -23,15 +25,18 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""()—–\-…]/g, '');
     if (!cleaned) return null;
-    const translation = dict.ukToEn[cleaned];
-    if (translation) return translation;
-    // Try without trailing soft signs or common suffixes
+    const userHit = lookupUserDict(cleaned);
+    if (userHit) return userHit;
+    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
       const prefix = cleaned.slice(0, i);
       if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
     }
     return null;
   }, [dict]);
+
+  // Reset add form when selected word changes
+  useEffect(() => { setWordAddForm(null); }, [selectedWord?.word]);
 
   // Split story text into words (preserving punctuation attached to words)
   const getWords = useCallback((text) => {
@@ -266,8 +271,46 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
           <div style={styles.wordPanelWord}>{selectedWord.word}</div>
           {selectedWord.translation ? (
             <div style={styles.wordPanelTranslation}>= "{selectedWord.translation}"</div>
+          ) : !wordAddForm ? (
+            <>
+              <div style={styles.wordPanelNoResult}>No translation found</div>
+              <button
+                style={styles.addWordBtn}
+                onClick={() => {
+                  setWordAddForm({ en: '', translating: true });
+                  translateWithLLM(selectedWord.word, langName).then(t =>
+                    setWordAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
+                  );
+                }}
+              >+ Add to dictionary</button>
+            </>
           ) : (
-            <div style={styles.wordPanelNoResult}>No translation found</div>
+            <div style={styles.addWordForm}>
+              <div style={styles.addWordLabel}>
+                English meaning
+                {wordAddForm.translating && <span style={styles.translatingHint}> translating…</span>}
+              </div>
+              <input
+                style={{ ...styles.addWordInput, ...(wordAddForm.translating ? { opacity: 0.5 } : {}) }}
+                value={wordAddForm.en}
+                onChange={e => setWordAddForm(prev => ({ ...prev, en: e.target.value }))}
+                placeholder={wordAddForm.translating ? 'Getting translation…' : 'Enter translation...'}
+                disabled={wordAddForm.translating}
+                autoFocus={!wordAddForm.translating}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' && wordAddForm.en.trim()) { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }
+                  if (e.key === 'Escape') setWordAddForm(null);
+                }}
+              />
+              <div style={styles.addWordActions}>
+                <button style={styles.addWordCancel} onClick={() => setWordAddForm(null)}>Cancel</button>
+                <button
+                  style={styles.addWordSave}
+                  disabled={wordAddForm.translating || !wordAddForm.en.trim()}
+                  onClick={() => { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }}
+                >Save</button>
+              </div>
+            </div>
           )}
           <button
             style={styles.wordPanelSpeak}
@@ -448,6 +491,65 @@ const styles = {
     fontSize: '1rem',
     color: 'rgba(255,255,255,0.4)',
     fontStyle: 'italic'
+  },
+  addWordBtn: {
+    background: 'rgba(255,215,0,0.12)',
+    border: '1px solid rgba(255,215,0,0.3)',
+    color: '#ffd700',
+    padding: '0.3rem 0.8rem',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+  },
+  addWordForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.35rem',
+  },
+  addWordLabel: {
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.5)',
+  },
+  translatingHint: {
+    color: '#4dabf7',
+    fontStyle: 'italic',
+  },
+  addWordInput: {
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    borderRadius: '7px',
+    color: '#fff',
+    padding: '0.4rem 0.6rem',
+    fontSize: '0.9rem',
+    fontFamily: 'inherit',
+    outline: 'none',
+  },
+  addWordActions: {
+    display: 'flex',
+    gap: '0.4rem',
+  },
+  addWordCancel: {
+    background: 'rgba(255,255,255,0.06)',
+    border: 'none',
+    borderRadius: '7px',
+    color: 'rgba(255,255,255,0.5)',
+    padding: '0.3rem 0.6rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontFamily: 'inherit',
+  },
+  addWordSave: {
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    borderRadius: '7px',
+    color: '#1a1a2e',
+    padding: '0.3rem 0.7rem',
+    cursor: 'pointer',
+    fontSize: '0.8rem',
+    fontWeight: '700',
+    fontFamily: 'inherit',
   },
   wordPanelSpeak: {
     background: 'linear-gradient(135deg, #4dabf7, #339af0)',

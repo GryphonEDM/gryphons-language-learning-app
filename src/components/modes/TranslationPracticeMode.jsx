@@ -25,7 +25,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
 
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
-  const chat = useLessonChat({ langName, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const dirLabel = direction === 'en-uk' ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
 
   function generateWords(dir) {
@@ -272,7 +272,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', onSpeak, ttsE
         </div>
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
     </div>
   );
 }
