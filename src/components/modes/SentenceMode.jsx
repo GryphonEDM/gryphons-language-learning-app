@@ -62,7 +62,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
       setScore(prev => prev + 1);
       setConsecutiveCorrect(prev => prev + 1);
       if (ttsEnabled && onSpeak) {
-        onSpeak(currentSentence.uk, 0.8, ttsVolume);
+        onSpeak(currentSentence[langCode], 0.8, ttsVolume);
       }
     } else {
       setConsecutiveCorrect(0);
@@ -207,7 +207,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
                 Correct: <strong style={{ color: '#ffd700' }}>
-                  <ClickableText text={currentSentence.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                  <ClickableText text={currentSentence[langCode]} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
                 </strong>
               </div>
             )}
