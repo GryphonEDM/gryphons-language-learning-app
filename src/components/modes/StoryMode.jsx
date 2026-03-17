@@ -98,13 +98,16 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
   }, []);
 
   // Handle single click on a word
-  const handleWordClick = useCallback((word, wordIndex) => {
+  const handleWordClick = useCallback((word, wordIndex, contextText = '') => {
     if (isReading) return;
     const cleaned = word.replace(/[.,!?;:"""()—–\-…]/g, '').trim();
     if (!cleaned) return;
 
     const translation = lookupWord(cleaned);
-    setSelectedWord({ word: cleaned, translation, index: wordIndex });
+    // Extract the sentence containing this word from the full text
+    const sentences = contextText.split(/(?<=[.!?])\s+/);
+    const contextSentence = sentences.find(s => s.includes(word)) || contextText;
+    setSelectedWord({ word: cleaned, translation, index: wordIndex, contextSentence });
 
     if (ttsEnabled && onSpeak) {
       onSpeak(cleaned, 0.8, ttsVolume);
@@ -297,7 +300,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
                   ...(isSelected ? styles.wordSelected : {}),
                   ...(isHighlighted && isReading ? styles.wordHighlighted : {})
                 }}
-                onClick={() => handleWordClick(token, i)}
+                onClick={() => handleWordClick(token, i, storyText)}
                 onDoubleClick={() => handleWordDoubleClick(token, i, storyText)}
               >
                 {token}
@@ -320,7 +323,7 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
                 style={styles.addWordBtn}
                 onClick={() => {
                   setWordAddForm({ en: '', translating: true });
-                  translateWithLLM(selectedWord.word, langName).then(t =>
+                  translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(t =>
                     setWordAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
                   );
                 }}

@@ -34,7 +34,7 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
                     return (
                       <span
                         key={j}
-                        onClick={onWordClick ? (e) => onWordClick(e, token) : undefined}
+                        onClick={onWordClick ? (e) => onWordClick(e, token, msg.text) : undefined}
                         style={{
                           cursor: onWordClick ? 'pointer' : 'default',
                           borderRadius: '3px',

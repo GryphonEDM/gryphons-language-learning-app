@@ -21,12 +21,12 @@ export function useWordClick({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume }
     return null;
   }, [dict]);
 
-  const handleWordClick = useCallback((e, word) => {
+  const handleWordClick = useCallback((e, word, contextSentence = '') => {
     const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
     const translation = lookupWord(cleaned);
     const rect = e.target.getBoundingClientRect();
-    setSelectedWord({ word: cleaned, translation, rect });
+    setSelectedWord({ word: cleaned, translation, rect, contextSentence });
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
   }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
 

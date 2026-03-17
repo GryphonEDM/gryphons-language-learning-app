@@ -70,12 +70,12 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     return null;
   }, [dict]);
 
-  const handleWordClick = useCallback((e, word) => {
+  const handleWordClick = useCallback((e, word, contextSentence = '') => {
     const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
     const translation = lookupWord(cleaned);
     const rect = e.target.getBoundingClientRect();
-    setSelectedWord({ word: cleaned, translation, rect });
+    setSelectedWord({ word: cleaned, translation, rect, contextSentence });
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
   }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
 
@@ -86,7 +86,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
   const handleAddToDict = useCallback(() => {
     setWordAddForm({ en: '', translating: true });
-    translateWithLLM(selectedWord.word, langName).then(translation => {
+    translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(translation => {
       setWordAddForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
     });
   }, [selectedWord, langName]);
@@ -417,7 +417,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
                       return (
                         <span
                           key={j}
-                          onClick={(e) => handleWordClick(e, token)}
+                          onClick={(e) => handleWordClick(e, token, msg.text)}
                           style={{
                             ...styles.clickableWord,
                             ...(isSelected ? styles.clickableWordActive : {}),

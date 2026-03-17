@@ -31,12 +31,12 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   }, [dict]);
 
   // Word click handler — speaks the word, looks it up, shows panel
-  const onWordClick = useCallback((e, token) => {
+  const onWordClick = useCallback((e, token, contextSentence = '') => {
     const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
     const lower = cleaned.toLowerCase();
     setActiveWord(lower);
-    setChatSelectedWord({ word: cleaned, translation: lookupWord(cleaned) });
+    setChatSelectedWord({ word: cleaned, translation: lookupWord(cleaned), contextSentence });
     setChatAddForm(null);
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
   }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
@@ -46,7 +46,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const handleChatAddToDict = useCallback(() => {
     if (!chatSelectedWord) return;
     setChatAddForm({ en: '', translating: true });
-    translateWithLLM(chatSelectedWord.word, langName).then(t =>
+    translateWithLLM(chatSelectedWord.word, langName, chatSelectedWord.contextSentence || '').then(t =>
       setChatAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
     );
   }, [chatSelectedWord, langName]);

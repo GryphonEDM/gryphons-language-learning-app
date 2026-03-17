@@ -18,7 +18,7 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
 
   const handleAddClick = () => {
     setAddForm({ en: '', translating: true });
-    translateWithLLM(selectedWord.word, langName).then(translation => {
+    translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(translation => {
       setAddForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
     });
   };
@@ -97,7 +97,7 @@ export function ClickableText({ text = '', onWordClick, activeWord = null, style
         return (
           <span
             key={i}
-            onClick={(e) => onWordClick(e, token)}
+            onClick={(e) => onWordClick(e, token, text)}
             style={{
               cursor: 'pointer',
               borderRadius: '3px',
