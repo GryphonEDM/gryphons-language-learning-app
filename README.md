@@ -4,27 +4,46 @@ A free, open-source web app originally made for learning to type on my Ukrainian
 
 Please report any errors in translation, or pronunciation of alphabet, I cannot address mispronounced words but can work on the alphabet stuff. Project is almost entirely vibe coded in spare time. Any issues may take awhile or never be fixed. 
 
-Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises, reading practice, dialogue practice, a translator, and text-to-speech pronunciation.
+Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises, reading practice, dialogue practice, pronunciation coaching, AI story generation, a translator, and text-to-speech pronunciation.
 
 ## Features
 
-- **Ukrainian + Russian** - Full support for both languages with one-click switching
-- **Typing Lessons** - Progressive lessons from individual letters to full words
-- **Alphabet Speed Challenge** - Type the entire alphabet as fast as you can
-- **Keyboard Explorer** - Click any key to hear its sound and learn its position
-- **4000+ Word Vocabulary** - Flashcards across 20+ themed categories
-- **Grammar Lessons** - Cases, verbs, pronouns, adjectives, word order
-- **Sentence Building** - Arrange words into correct sentences
-- **Dialogue Practice** - Practice real conversations (restaurant, directions, shopping, greetings)
-- **Reading Practice** - Read passages and answer comprehension questions
-- **Translation Practice** - Translate words between English and your target language
-- **Listening Practice** - Hear words and type what you hear
-- **Translator** - Look up words and phrases
-- **Chat Practice** - Free conversation with a local AI tutor via LM Studio
-- **Speech-to-Text** - Speak your messages using Whisper (fully offline)
+### Core
+- **Ukrainian + Russian** - Full support for both languages with one-click switching and separate progress tracking
 - **Text-to-Speech** - Three separate TTS engines for English, Ukrainian, and Russian
-- **Achievement System** - 20 achievements to unlock
-- **Progress Tracking** - XP, streaks, and stats saved per language
+- **Speech-to-Text** - Speak using Whisper (fully offline, auto-detects language)
+- **AI Tutor** - Local LLM integration via LM Studio for chat, translations, pronunciation tips, and story generation
+
+### Typing
+- **Typing Lessons** - 10 progressive levels from individual letters to full words, unlocked by earning XP
+- **Alphabet Speed Challenge** - Type the entire alphabet as fast as you can with best-time tracking
+- **Keyboard Explorer** - Click any key to hear its sound, see its position, and learn finger placement
+- **Virtual Keyboard** - Color-coded finger guide with home row highlighting
+
+### Vocabulary & Flashcards
+- **4000+ Word Vocabulary** - Flashcards across 20+ themed categories
+- **CEFR Difficulty Filtering** - Filter vocabulary by level (A1, A2, B1, B2)
+- **Custom Flashcards** - Create and manage your own "My Words" flashcard sets
+- **Word Click Definitions** - Click any word in chat, stories, or lessons to see its translation and hear pronunciation
+- **Spaced Repetition Tracking** - Mastery levels tracked per word (times correct/wrong)
+
+### Language Practice
+- **Grammar Lessons** - A1 through B2 tiers with 8 exercise types (multiple choice, fill-in-the-blank, matching, reordering, and more)
+- **Sentence Building** - Arrange word tiles into correct sentences with multiple valid orderings accepted
+- **Dialogue Practice** - Practice real conversations (restaurant, directions, shopping, greetings) with NPC auto-speak via TTS
+- **Reading Practice** - Read passages and answer comprehension questions at multiple difficulty levels
+- **AI Story Generation** - Generate custom stories by topic and difficulty (A1-B2) with optional comprehension questions
+- **Translation Practice** - Translate words between English and your target language with synonym support
+- **Listening Practice** - Hear words spoken via TTS and type what you hear, with adjustable playback speed
+- **Pronunciation Practice** - Speak words, phrases, or sentences and get scored on accuracy with LLM-powered coaching tips
+- **Chat Practice** - Free conversation with a local AI tutor, with persistent chat sessions, word-click definitions, and microphone input
+- **Translator** - Look up words and phrases with TTS playback and microphone input
+
+### Gamification
+- **Achievement System** - 60+ achievements to unlock across typing, vocabulary, grammar, reading, and more
+- **XP & Leveling** - 10 player levels with XP thresholds that unlock new lesson content
+- **Streak Tracking** - Current and best streak records for letters and words
+- **Stats Page** - Detailed progress dashboard with typing stats, vocabulary mastery, mode activity, and achievement progress
 
 ## Quick Start
 
@@ -165,10 +184,12 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 ```
 ├── src/                    # React application source
 │   ├── App.jsx             # Main app component
-│   ├── components/modes/   # Game mode components (flashcards, grammar, etc.)
+│   ├── components/modes/   # Game mode components (flashcards, grammar, chat, speech, etc.)
+│   ├── components/         # Shared components (ModeHeader, WordToolbar, StatsPage, etc.)
+│   ├── hooks/              # Custom hooks (TTS, STT, word click, speech practice, lesson chat)
 │   ├── data/               # Ukrainian language data (lessons, vocabulary, grammar)
 │   ├── data/ru/            # Russian language data
-│   └── utils/              # Helpers (dictionary builder, sound effects)
+│   └── utils/              # Helpers (dictionary builder, user dictionary, sound effects)
 ├── tts-repo/               # Ukrainian TTS library (from robinhad/ukrainian-tts)
 ├── tts-server.py           # Local TTS + STT server - TTS (ESPnet + Silero) + STT (Whisper) on port 3002
 ├── tts-model/              # Ukrainian TTS model files (auto-downloaded, gitignored)
