@@ -21,7 +21,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     gap: '1rem',
-    marginBottom: '2rem'
+    marginBottom: '0.75rem'
   },
   backButton: {
     background: 'rgba(255,255,255,0.1)',

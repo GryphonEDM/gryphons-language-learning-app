@@ -238,8 +238,8 @@ const fullStyles = {
   ...sharedStyles,
   container: { },
   recordBtn: {
-    width: '80px',
-    height: '80px',
+    width: '64px',
+    height: '64px',
     borderRadius: '50%',
     border: '3px solid rgba(255,215,0,0.4)',
     background: 'linear-gradient(135deg, rgba(255,215,0,0.15) 0%, rgba(255,215,0,0.05) 100%)',
@@ -249,7 +249,7 @@ const fullStyles = {
     justifyContent: 'center',
     color: '#fff',
   },
-  recordIcon: { fontSize: '2rem' },
+  recordIcon: { fontSize: '1.7rem' },
   recordLabel: {
     color: 'rgba(255,255,255,0.6)',
     fontSize: '0.9rem',

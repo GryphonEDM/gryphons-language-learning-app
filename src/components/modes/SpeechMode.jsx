@@ -425,22 +425,45 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
 
   // --- Playing Phase ---
   const progress = ((currentIdx + 1) / items.length) * 100;
+  const diffLabel = difficulty === 'words' ? 'Word' : difficulty === 'phrases' ? 'Phrase' : 'Sentence';
 
   return (
-    <div className="mode-container" style={styles.container}>
+    <div className="mode-container" style={styles.playContainer}>
       <ModeHeader
         title="Speech Practice"
-        subtitle={`${difficulty === 'words' ? 'Word' : difficulty === 'phrases' ? 'Phrase' : 'Sentence'} ${currentIdx + 1} of ${items.length}${selectedCategory ? ` · ${selectedCategory.nameEn}` : ''}`}
+        subtitle={`${diffLabel} ${currentIdx + 1} of ${items.length}${selectedCategory ? ` · ${selectedCategory.nameEn}` : ''}`}
         icon="🎙️"
         onExit={onExit}
       />
 
-      <div className="content-row" style={styles.contentRow}>
-        <div style={styles.main}>
-          <div style={styles.progressBar}>
-            <div style={{ ...styles.progressFill, width: `${progress}%` }} />
+      <div className="content-row" style={styles.playContentRow}>
+        {/* Left stats card */}
+        <div style={styles.statsCard}>
+          <div style={styles.statsProgress}>
+            <div style={styles.statsProgressBar}>
+              <div style={{ ...styles.statsProgressFill, width: `${progress}%` }} />
+            </div>
+            <div style={styles.statsProgressLabel}>{currentIdx + 1} of {items.length}</div>
           </div>
 
+          <div style={styles.statsDivider} />
+
+          <div style={styles.statItem}>
+            <div style={styles.statLabel}>Score</div>
+            <div style={styles.statValue}>{score}/{currentIdx + (speech.feedback ? 1 : 0)}</div>
+          </div>
+          <div style={styles.statItem}>
+            <div style={styles.statLabel}>Streak</div>
+            <div style={styles.statValue}>{streak}</div>
+          </div>
+          <div style={styles.statItem}>
+            <div style={styles.statLabel}>XP</div>
+            <div style={styles.statValue}>+{xpEarned}</div>
+          </div>
+        </div>
+
+        {/* Center practice area */}
+        <div style={styles.main}>
           <div style={styles.card}>
             {/* Target display */}
             <div style={styles.targetText}>
@@ -486,13 +509,8 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
               onSpeakTips={(text) => speakUkrainian(text, 0.8, ttsVolume, 'en')}
             />
           </div>
-
-          <div style={styles.scoreBar}>
-            <span>Score: {score}/{currentIdx + (speech.feedback ? 1 : 0)}</span>
-            <span>Streak: {streak}</span>
-            <span>XP: +{xpEarned}</span>
-          </div>
         </div>
+
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
       </div>
       <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
@@ -510,8 +528,20 @@ const styles = {
     padding: '2rem',
     fontFamily: 'system-ui, -apple-system, sans-serif',
   },
+  playContainer: {
+    height: '100vh',
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    color: '#fff',
+    padding: '1rem 1.5rem',
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden',
+    boxSizing: 'border-box',
+  },
+  playContentRow: { display: 'flex', gap: '1rem', alignItems: 'stretch', flex: 1, minHeight: 0 },
   contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
-  main: { flex: 1, minWidth: 0 },
+  main: { flex: 1, minWidth: 0, overflowY: 'auto' },
 
   // Picker - section title
   pickerSectionTitle: {
@@ -635,7 +665,59 @@ const styles = {
     margin: '2rem auto 0',
   },
 
-  // Progress
+  // Stats card (left sidebar in playing phase)
+  statsCard: {
+    width: '150px',
+    flexShrink: 0,
+    background: 'rgba(0,0,0,0.35)',
+    border: '1px solid rgba(255,215,0,0.2)',
+    borderRadius: '16px',
+    padding: '1rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.75rem',
+  },
+  statsProgress: {
+    textAlign: 'center',
+  },
+  statsProgressBar: {
+    width: '100%',
+    height: '6px',
+    background: 'rgba(255,255,255,0.1)',
+    borderRadius: '3px',
+    overflow: 'hidden',
+    marginBottom: '0.4rem',
+  },
+  statsProgressFill: {
+    height: '100%',
+    background: 'linear-gradient(90deg, #ffd700, #ffed4e)',
+    transition: 'width 0.3s ease',
+  },
+  statsProgressLabel: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.6)',
+  },
+  statsDivider: {
+    height: '1px',
+    background: 'rgba(255,255,255,0.1)',
+  },
+  statItem: {
+    textAlign: 'center',
+  },
+  statLabel: {
+    fontSize: '0.7rem',
+    color: 'rgba(255,255,255,0.5)',
+    textTransform: 'uppercase',
+    letterSpacing: '0.5px',
+    marginBottom: '0.15rem',
+  },
+  statValue: {
+    fontSize: '1.2rem',
+    fontWeight: '700',
+    color: '#ffd700',
+  },
+
+  // Progress (used in picker phases)
   progressBar: {
     width: '100%',
     height: '8px',
@@ -652,30 +734,28 @@ const styles = {
 
   // Card
   card: {
-    maxWidth: '600px',
-    margin: '0 auto',
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '20px',
-    padding: '2rem',
+    padding: '1.25rem 1.5rem',
     textAlign: 'center',
     border: '1px solid rgba(255,215,0,0.2)',
   },
   targetText: {
-    fontSize: '2rem',
+    fontSize: '1.6rem',
     fontWeight: '700',
-    marginBottom: '0.5rem',
-    lineHeight: 1.4,
+    marginBottom: '0.3rem',
+    lineHeight: 1.3,
   },
   phonetic: {
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     color: 'rgba(255,255,255,0.5)',
     fontStyle: 'italic',
-    marginBottom: '0.25rem',
+    marginBottom: '0.2rem',
   },
   english: {
-    fontSize: '1rem',
+    fontSize: '0.95rem',
     color: '#4dabf7',
-    marginBottom: '1.25rem',
+    marginBottom: '0.75rem',
   },
 
   // TTS
@@ -683,16 +763,16 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: '1rem',
-    marginBottom: '1rem',
+    gap: '0.75rem',
+    marginBottom: '0.75rem',
   },
   playBtn: {
     background: 'linear-gradient(135deg, #4dabf7, #339af0)',
     border: 'none',
     color: '#fff',
-    padding: '0.7rem 1.8rem',
-    borderRadius: '14px',
-    fontSize: '1.1rem',
+    padding: '0.5rem 1.4rem',
+    borderRadius: '12px',
+    fontSize: '1rem',
     fontWeight: '700',
     cursor: 'pointer',
     fontFamily: 'inherit',
@@ -723,23 +803,7 @@ const styles = {
   divider: {
     height: '1px',
     background: 'rgba(255,255,255,0.1)',
-    margin: '1rem 0 1.5rem',
-  },
-
-  // Score bar
-  scoreBar: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '2rem',
-    marginTop: '1.5rem',
-    padding: '0.75rem',
-    background: 'rgba(0,0,0,0.2)',
-    borderRadius: '10px',
-    maxWidth: '600px',
-    margin: '1.5rem auto 0',
-    fontSize: '1rem',
-    color: '#ffd700',
-    fontWeight: '600',
+    margin: '0.75rem 0 1rem',
   },
 
   // Extra stats on complete
