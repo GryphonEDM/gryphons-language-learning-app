@@ -1741,6 +1741,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'translation' ? (
           <TranslationPracticeMode
             langCode={currentLanguage}
+            vocabularySets={DICTIONARY_FLASHCARD_SETS}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
