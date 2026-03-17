@@ -13,3 +13,11 @@ __pycache__
 tts-model/
 tts-model-ru/
 tts-model-en/
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# macOS
+.DS_Store

@@ -282,7 +282,7 @@ const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
 
 function AuthScreen({ onAuth }) {
   const [mode, setMode] = useState('login'); // 'login' | 'register'
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -296,11 +296,11 @@ function AuthScreen({ onAuth }) {
       const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim(), password }),
+        body: JSON.stringify({ username: username.trim(), password }),
       });
       const data = await res.json();
       if (!res.ok) { setError(data.error || 'Something went wrong'); return; }
-      await onAuth(data.token, data.email);
+      await onAuth(data.token, data.username);
     } catch {
       setError('Cannot reach server. Make sure tts-server.py is running.');
     } finally {
@@ -320,8 +320,8 @@ function AuthScreen({ onAuth }) {
         </div>
         <form onSubmit={submit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           <input
-            type="email" required placeholder="Email" value={email}
-            onChange={e => setEmail(e.target.value)} autoComplete="email"
+            type="text" required placeholder="Username" value={username}
+            onChange={e => setUsername(e.target.value)} autoComplete="username"
             style={{ padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid #444', background: '#1a1a2e', color: '#fff', fontSize: '1rem', fontFamily: 'inherit' }}
           />
           <input
@@ -350,7 +350,7 @@ function AuthScreen({ onAuth }) {
 export default function UkrainianTypingGame() {
   // Auth state
   const [authState, setAuthState] = useState('checking'); // 'checking' | 'login' | 'authed'
-  const [authEmail, setAuthEmail] = useState('');
+  const [authUsername, setAuthUsername] = useState('');
 
   // Language state
   const [currentLanguage, setCurrentLanguage] = useState(() => {
@@ -556,7 +556,7 @@ export default function UkrainianTypingGame() {
       }
       const lang = localStorage.getItem('typingGameLanguage') || 'uk';
       setCurrentLanguage(lang);
-      setAuthEmail(localStorage.getItem('authEmail') || '');
+      setAuthEmail(localStorage.getItem('authUsername') || '');
       setAuthState('authed');
       loadProgress(lang);
     });
@@ -1154,13 +1154,13 @@ export default function UkrainianTypingGame() {
   const nextLevelXp = xpForPlayerLevel(currentPlayerLevel);
 
   // Auth: handle login/register before showing app
-  const handleAuthSuccess = useCallback(async (token, email) => {
+  const handleAuthSuccess = useCallback(async (token, username) => {
     setAuthToken(token);
-    localStorage.setItem('authEmail', email);
+    localStorage.setItem('authUsername', username);
     await initFromServer(token);
     const lang = localStorage.getItem('typingGameLanguage') || 'uk';
     setCurrentLanguage(lang);
-    setAuthEmail(email);
+    setAuthUsername(username);
     setAuthState('authed');
     loadProgress(lang);
   }, [loadProgress]);
@@ -1170,8 +1170,8 @@ export default function UkrainianTypingGame() {
   const handleLogout = useCallback(() => {
     setShowAccountMenu(false);
     clearAuthToken();
-    localStorage.removeItem('authEmail');
-    setAuthEmail('');
+    localStorage.removeItem('authUsername');
+    setAuthUsername('');
     setAuthState('login');
   }, []);
 
@@ -1252,10 +1252,10 @@ export default function UkrainianTypingGame() {
             <button
               className="header-action-btn"
               onClick={() => setShowAccountMenu(v => !v)}
-              title={`Logged in as ${authEmail}`}
+              title={`Logged in as ${authUsername}`}
               style={{ opacity: 0.8, fontSize: '0.8rem' }}
             >
-              👤 {authEmail ? authEmail.split('@')[0] : 'Account'}
+              👤 {authUsername || 'Account'}
             </button>
             {showAccountMenu && (
               <div
@@ -1263,7 +1263,7 @@ export default function UkrainianTypingGame() {
                 onMouseLeave={() => setShowAccountMenu(false)}
               >
                 <div style={{ color: '#aaa', fontSize: '0.75rem', marginBottom: '0.5rem' }}>Signed in as</div>
-                <div style={{ color: '#fff', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.75rem', wordBreak: 'break-all' }}>{authEmail}</div>
+                <div style={{ color: '#fff', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.75rem', wordBreak: 'break-all' }}>{authUsername}</div>
                 <button
                   onClick={handleLogout}
                   style={{ width: '100%', padding: '0.5rem', borderRadius: '8px', border: '1px solid #555', background: 'transparent', color: '#ff6b6b', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.85rem' }}

@@ -57,7 +57,7 @@ if DB_ENABLED:
         conn.execute('''
             CREATE TABLE IF NOT EXISTS users (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                email TEXT UNIQUE NOT NULL,
+                username TEXT UNIQUE NOT NULL,
                 password_hash TEXT NOT NULL,
                 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             )
@@ -81,38 +81,40 @@ if DB_ENABLED:
     @app.route('/api/auth/register', methods=['POST'])
     def register():
         data = request.get_json() or {}
-        email = data.get('email', '').strip().lower()
+        username = data.get('username', '').strip().lower()
         password = data.get('password', '')
-        if not email or not password:
-            return jsonify({'error': 'Email and password required'}), 400
+        if not username or not password:
+            return jsonify({'error': 'Username and password required'}), 400
+        if len(username) < 2:
+            return jsonify({'error': 'Username must be at least 2 characters'}), 400
         if len(password) < 6:
             return jsonify({'error': 'Password must be at least 6 characters'}), 400
         password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         try:
             conn = get_db()
-            conn.execute('INSERT INTO users (email, password_hash) VALUES (?, ?)', (email, password_hash))
+            conn.execute('INSERT INTO users (username, password_hash) VALUES (?, ?)', (username, password_hash))
             conn.commit()
-            user = conn.execute('SELECT id FROM users WHERE email = ?', (email,)).fetchone()
+            user = conn.execute('SELECT id FROM users WHERE username = ?', (username,)).fetchone()
             conn.close()
-            token = create_access_token(identity={'id': user['id'], 'email': email})
-            return jsonify({'token': token, 'email': email})
+            token = create_access_token(identity={'id': user['id'], 'username': username})
+            return jsonify({'token': token, 'username': username})
         except sqlite3.IntegrityError:
-            return jsonify({'error': 'Email already registered'}), 409
+            return jsonify({'error': 'Username already taken'}), 409
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
     @app.route('/api/auth/login', methods=['POST'])
     def login():
         data = request.get_json() or {}
-        email = data.get('email', '').strip().lower()
+        username = data.get('username', '').strip().lower()
         password = data.get('password', '')
         conn = get_db()
-        user = conn.execute('SELECT id, password_hash FROM users WHERE email = ?', (email,)).fetchone()
+        user = conn.execute('SELECT id, password_hash FROM users WHERE username = ?', (username,)).fetchone()
         conn.close()
         if not user or not bcrypt.checkpw(password.encode(), user['password_hash'].encode()):
-            return jsonify({'error': 'Invalid email or password'}), 401
-        token = create_access_token(identity={'id': user['id'], 'email': email})
-        return jsonify({'token': token, 'email': email})
+            return jsonify({'error': 'Invalid username or password'}), 401
+        token = create_access_token(identity={'id': user['id'], 'username': username})
+        return jsonify({'token': token, 'username': username})
 
     @app.route('/api/data', methods=['GET'])
     @jwt_required()
