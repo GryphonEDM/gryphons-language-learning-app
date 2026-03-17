@@ -10,12 +10,15 @@
     {
       "sectionId": "vowels",
       "title": "Russian Vowels",
-      "explanation": "Russian has 10 vowel letters: а, е, ё, и, о, у, ы, э, ю, я. Some vowels (е, ё, ю, я) are \"iotated\" — they can represent two sounds (й + vowel) at the beginning of a word or after a vowel/soft sign.",
-      "tip": "а=ah, о=oh, у=oo, э=eh, и=ee, ы=between i and u (no English equivalent)",
+      "explanation": "Russian has 10 vowel letters: а, е, ё, и, о, у, ы, э, ю, я. Six are \"plain\" vowels (а, о, у, э, и, ы) with one sound each. Four are \"iotated\" vowels (е, ё, ю, я) — they represent TWO sounds (й + vowel) at the start of a word, after another vowel, or after ь/ъ. For example, я = й+а (ya), ё = й+о (yo). After a consonant, iotated vowels soften it instead: мя sounds like 'mya', not 'mйа'.",
+      "tip": "Iotated vowels: е=ye, ё=yo, ю=yu, я=ya. Plain vowels: а=ah, о=oh, у=oo, э=eh, и=ee, ы=no English equivalent",
       "examples": [
         { "ru": "Мама", "en": "Mom", "highlight": "а" },
         { "ru": "Молоко", "en": "Milk", "highlight": "о" },
-        { "ru": "Рыба", "en": "Fish", "highlight": "ы" }
+        { "ru": "Рыба", "en": "Fish", "highlight": "ы" },
+        { "ru": "Яблоко", "en": "Apple (я = й+а at word start)", "highlight": "Я" },
+        { "ru": "Ёлка", "en": "Christmas tree (ё = й+о at word start)", "highlight": "Ё" },
+        { "ru": "Мясо", "en": "Meat (я after consonant softens м)", "highlight": "я" }
       ],
       "exercises": [
         { "type": "multiple-choice", "prompt": "Which letter sounds like 'ee' in English?", "options": ["и", "ы", "э"], "correctIndex": 0, "explanation": "The letter 'и' sounds like 'ee' in English. 'ы' is a unique Russian sound with no direct English equivalent." },

@@ -10,12 +10,15 @@
     {
       "sectionId": "vowels",
       "title": "Ukrainian Vowels",
-      "explanation": "Ukrainian has 10 vowels: а, е, є, и, і, ї, о, у, ю, я. Some vowels (є, ї, ю, я) are \"iotated\" — they can represent two sounds (й + vowel).",
-      "tip": "а=ah, е=eh, и=ih (between i and e), і=ee, о=oh, у=oo",
+      "explanation": "Ukrainian has 10 vowels: а, е, є, и, і, ї, о, у, ю, я. Six are \"plain\" vowels (а, е, и, і, о, у) with one sound each. Four are \"iotated\" vowels (є, ї, ю, я) — they represent TWO sounds (й + vowel) at the start of a word, after another vowel, or after an apostrophe. For example, я = й+а (ya), ї = й+і (yi). After a consonant, iotated vowels soften it instead: мя sounds like 'mya', not 'mйа'.",
+      "tip": "Iotated vowels: є=ye, ї=yi, ю=yu, я=ya. Plain vowels: а=ah, е=eh, и=ih, і=ee, о=oh, у=oo",
       "examples": [
         { "uk": "Мама", "en": "Mom", "highlight": "а" },
         { "uk": "Місто", "en": "City", "highlight": "і" },
-        { "uk": "Україна", "en": "Ukraine", "highlight": "ї" }
+        { "uk": "Україна", "en": "Ukraine (ї = й+і after vowel)", "highlight": "ї" },
+        { "uk": "Яблуко", "en": "Apple (я = й+а at word start)", "highlight": "Я" },
+        { "uk": "Юнак", "en": "Young man (ю = й+у at word start)", "highlight": "Ю" },
+        { "uk": "М'ясо", "en": "Meat (я after apostrophe = й+а)", "highlight": "я" }
       ],
       "exercises": [
         { "type": "multiple-choice", "prompt": "Which letter sounds like 'ee' in English?", "options": ["і", "и", "е"], "correctIndex": 0, "explanation": "The letter 'і' sounds like 'ee' in English. 'и' is between 'i' and 'e'." },
