@@ -2,7 +2,6 @@
 from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
 import os
-import sys
 import re
 import tempfile
 import torch
@@ -20,21 +19,8 @@ except ImportError:
 
 # Resolve all paths relative to this script's directory
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-TTS_MODEL_DIR = os.path.join(SCRIPT_DIR, "tts-model")
 RU_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-ru", "v5_ru.pt")
-
-# Add the TTS repo to path
-sys.path.insert(0, os.path.join(SCRIPT_DIR, 'tts-repo'))
-
-try:
-    from ukrainian_tts.tts import TTS, Voices, Stress
-    print("[OK] Ukrainian TTS loaded successfully!")
-except Exception as e:
-    print(f"[ERROR] Failed to load Ukrainian TTS: {e}")
-    print("\nTrying to install missing dependencies...")
-    import subprocess
-    subprocess.run([sys.executable, "-m", "pip", "install", "flask", "flask-cors"])
-    sys.exit(1)
+DE_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-de", "v3_de.pt")
 
 app = Flask(__name__)
 CORS(app)
@@ -146,13 +132,18 @@ if DB_ENABLED:
         return jsonify({'ok': True})
 
 
-# === Ukrainian TTS (ESPnet) ===
-print("Loading Ukrainian TTS model (Oleksa voice)...")
-os.makedirs(TTS_MODEL_DIR, exist_ok=True)
-os.chdir(TTS_MODEL_DIR)
-tts_uk = TTS(cache_folder=".", device="cpu")
-os.chdir(SCRIPT_DIR)
-print("[OK] Ukrainian TTS model loaded!")
+# === Ukrainian TTS (Silero v5 CIS) ===
+UK_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-uk-silero", "v5_cis_base.pt")
+UK_SPEAKER = 'ukr_igor'
+UK_SAMPLE_RATE = 48000
+
+os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-uk-silero"), exist_ok=True)
+if not os.path.isfile(UK_MODEL_PATH):
+    print("  Downloading Silero v5 CIS Ukrainian model (~91MB)...")
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/ru/v5_cis_base.pt', UK_MODEL_PATH)
+tts_uk = torch.package.PackageImporter(UK_MODEL_PATH).load_pickle("tts_models", "model")
+tts_uk.to(torch.device('cpu'))
+print(f"[OK] Ukrainian TTS loaded! (speaker: {UK_SPEAKER})")
 
 # === Russian TTS (Silero v5) ===
 print("Loading Russian TTS model (Silero v5)...")
@@ -182,6 +173,20 @@ tts_en.to(torch.device('cpu'))
 EN_SPEAKER = 'en_70'
 EN_SAMPLE_RATE = 48000
 print(f"[OK] English TTS model loaded! (speaker: {EN_SPEAKER})")
+
+# === German TTS (Silero v3) ===
+os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-de"), exist_ok=True)
+
+print("Loading German TTS model (Silero v3)...")
+if not os.path.isfile(DE_MODEL_PATH):
+    print("  Downloading Silero v3 German model (~100MB)...")
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/de/v3_de.pt', DE_MODEL_PATH)
+
+tts_de = torch.package.PackageImporter(DE_MODEL_PATH).load_pickle("tts_models", "model")
+tts_de.to(torch.device('cpu'))
+DE_SPEAKER = 'bernd_ungerer'
+DE_SAMPLE_RATE = 48000
+print(f"[OK] German TTS model loaded! (speaker: {DE_SPEAKER})")
 
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
@@ -226,6 +231,7 @@ if not stt_available:
 WHISPER_INITIAL_PROMPTS = {
     'ru': 'Говорю по-русски. Пишу кириллицей.',
     'uk': 'Говорю українською. Пишу кирилицею.',
+    'de': 'Ich spreche Deutsch.',
 }
 
 def whisper_transcribe(audio_path, lang=None):
@@ -303,11 +309,24 @@ UK_LETTER_PHONETICS = {
     'ь': 'мʼякий знак', 'ю': 'ю', 'я': 'я',
 }
 
+DE_LETTER_PHONETICS = {
+    'a': 'ah', 'b': 'be', 'c': 'tse', 'd': 'de', 'e': 'eh', 'f': 'ef',
+    'g': 'ge', 'h': 'ha', 'i': 'ih', 'j': 'yot', 'k': 'ka', 'l': 'el',
+    'm': 'em', 'n': 'en', 'o': 'oh', 'p': 'pe', 'q': 'ku', 'r': 'er',
+    's': 'es', 't': 'te', 'u': 'uh', 'v': 'fau', 'w': 've', 'x': 'iks',
+    'y': 'ypsilon', 'z': 'tset', 'ä': 'ae', 'ö': 'oe', 'ü': 'ue', 'ß': 'es-tset',
+}
+
 def expand_single_letter(text, lang):
-    """If text is a single Cyrillic letter, expand to its spoken name for TTS."""
+    """If text is a single letter, expand to its spoken name for TTS."""
     stripped = text.strip()
     if len(stripped) == 1:
-        lookup = RU_LETTER_PHONETICS if lang == 'ru' else UK_LETTER_PHONETICS
+        if lang == 'ru':
+            lookup = RU_LETTER_PHONETICS
+        elif lang == 'de':
+            lookup = DE_LETTER_PHONETICS
+        else:
+            lookup = UK_LETTER_PHONETICS
         return lookup.get(stripped.lower(), text)
     return text
 
@@ -323,9 +342,10 @@ def generate_tts():
 
         text = expand_single_letter(text, lang)
 
-        # Route to the correct TTS engine
         if lang == 'ru':
             return generate_russian_tts(text)
+        elif lang == 'de':
+            return generate_german_tts(text)
         elif lang == 'en':
             return generate_english_tts(text)
         else:
@@ -338,10 +358,11 @@ def generate_tts():
         return {'error': str(e)}, 500
 
 def generate_ukrainian_tts(text):
-    print(f"[TTS-UK] Generating: {len(text)} chars")
+    text = numbers_to_words(text, lang='uk')
+    print(f"[TTS-UK] Generating ({UK_SPEAKER}): {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
-        _, output_text = tts_uk.tts(text, Voices.Oleksa.value, Stress.Dictionary.value, tmp)
+    tts_uk.save_wav(text=text, speaker=UK_SPEAKER, sample_rate=UK_SAMPLE_RATE, audio_path=tmp_path)
     try:
         print(f"[TTS-UK] Generated successfully")
         return send_file(tmp_path, mimetype='audio/wav')
@@ -371,6 +392,7 @@ RU_NUMBERS = {
 def numbers_to_words(text, lang='en'):
     """Convert numbers in text to words so Silero TTS can pronounce them."""
     lookup = RU_NUMBERS if lang == 'ru' else EN_NUMBERS
+    # For German, num2words handles it natively with lang='de'
     try:
         from num2words import num2words as n2w
         def replace_num(match):
@@ -415,8 +437,23 @@ def generate_russian_tts(text):
         except OSError:
             pass
 
+def generate_german_tts(text):
+    text = numbers_to_words(text, lang='de')
+    print(f"[TTS-DE] Generating ({DE_SPEAKER}): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    tts_de.save_wav(text=text, speaker=DE_SPEAKER, sample_rate=DE_SAMPLE_RATE, audio_path=tmp_path)
+    try:
+        print(f"[TTS-DE] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
 if __name__ == '__main__':
-    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian + English)")
+    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian + English + German)")
     print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)

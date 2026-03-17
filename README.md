@@ -1,18 +1,19 @@
-# Ukrainian & Russian Typing Game
+# Ukrainian, Russian & German Typing Game
 
-A free, open-source web app originally made for learning to type on my Ukrainian keyboard but I have expanded this to also include TTS, as well as language lessons, and added Russian language. 
+A free, open-source web app originally made for learning to type on my Ukrainian keyboard, expanded over time to include TTS, language lessons, Russian, and German.
 
-Please report any errors in translation, or pronunciation of alphabet, I cannot address mispronounced words but can work on the alphabet stuff. Project is almost entirely vibe coded in spare time. Any issues may take awhile or never be fixed. 
+Please report any errors in translation or pronunciation of the alphabet. Project is almost entirely vibe coded in spare time. Any issues may take a while or never be fixed.
 
 Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises, reading practice, dialogue practice, pronunciation coaching, AI story generation, a translator, and text-to-speech pronunciation.
 
 ## Features
 
 ### Core
-- **Ukrainian + Russian** - Full support for both languages with one-click switching and separate progress tracking
-- **Text-to-Speech** - Three separate TTS engines for English, Ukrainian, and Russian
+- **Ukrainian + Russian + German** - Full support for all three languages with one-click switching and separate progress tracking
+- **Text-to-Speech** - All languages use server-side Silero TTS models (Ukrainian, Russian, English, German)
 - **Speech-to-Text** - Speak using Whisper (fully offline, auto-detects language)
 - **AI Tutor** - Local LLM integration via LM Studio for chat, translations, pronunciation tips, and story generation
+- **Account System** - Create an account for cross-device progress sync (stored in local SQLite database)
 
 ### Typing
 - **Typing Lessons** - 10 progressive levels from individual letters to full words, unlocked by earning XP
@@ -52,7 +53,7 @@ Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises,
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) v16+
-- [Python](https://www.python.org/downloads/) 3.8+ (needed for Ukrainian and Russian TTS)
+- [Python](https://www.python.org/downloads/) 3.8+ (needed for TTS and STT)
 
 ### 1. Clone and install
 
@@ -68,25 +69,29 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser. The app is fully functional without the TTS server - you just won't hear Ukrainian/Russian pronunciation. English TTS works out of the box (see below).
+Open http://localhost:5173 in your browser. The app is fully functional without the TTS server — you just won't hear pronunciation.
 
-### 3. (Optional) Enable Ukrainian & Russian text-to-speech
+### 3. (Optional) Enable text-to-speech and speech-to-text
 
-The TTS server runs both Ukrainian and Russian speech synthesis on a single Flask server (port 3002). English TTS is handled separately by the browser and requires no setup.
+All TTS runs through a single Flask server (`tts-server.py`) on port 3002, using Silero models for all four languages.
 
 #### Install Python dependencies
 
 ```bash
-# Install the Ukrainian TTS library
-cd tts-repo
-pip install -e .
-cd ..
+python -m venv .venv
+source .venv/bin/activate        # macOS/Linux
+# .venv\Scripts\activate.bat     # Windows
 
-# Install server and model dependencies
 pip install flask flask-cors torch
-```
 
-> **Note:** `torch` (PyTorch) is required by both the Ukrainian and Russian TTS models. If you run into issues with `espnet` (used by Ukrainian TTS), install it explicitly: `pip install espnet`
+# Optional but recommended:
+pip install flask-jwt-extended bcrypt   # account system
+pip install num2words                   # better number pronunciation
+
+# Whisper STT — pick one:
+pip install mlx-whisper          # macOS Apple Silicon (fast)
+pip install faster-whisper       # Windows / Linux / Intel Mac
+```
 
 #### Start the TTS server
 
@@ -95,18 +100,23 @@ python tts-server.py
 ```
 
 On first run, models are downloaded automatically:
-- **Ukrainian model** (~425 MB) - ESPnet model from [robinhad/ukrainian-tts](https://github.com/robinhad/ukrainian-tts) releases, saved to `tts-model/`
-- **Russian model** (~65 MB) - Silero v5 model from [silero-models](https://github.com/snakers4/silero-models), saved to `tts-model-ru/`
 
-After the initial download, TTS works fully offline. You should see:
+| Language | Model | Size | Location |
+|---|---|---|---|
+| Ukrainian | Silero v5 CIS (`ukr_igor`) | ~91 MB | `tts-model-uk-silero/` |
+| Russian | Silero v5 (`aidar`) | ~65 MB | `tts-model-ru/` |
+| English | Silero v3 (`en_70`) | ~100 MB | `tts-model-en/` |
+| German | Silero v3 (`bernd_ungerer`) | ~54 MB | `tts-model-de/` |
+
+After the initial download (~310 MB total), TTS works fully offline. You should see:
 
 ```
-[OK] Ukrainian TTS loaded successfully!
-[OK] Ukrainian TTS model loaded!
+[OK] Ukrainian TTS loaded! (speaker: ukr_igor)
 [OK] Russian TTS model loaded! (speaker: aidar)
+[OK] English TTS model loaded! (speaker: en_70)
+[OK] German TTS model loaded! (speaker: bernd_ungerer)
 [OK] Whisper STT ready (MLX backend, model: mlx-community/whisper-small-mlx)
-[SPEAKER] TTS + STT Server (Ukrainian + Russian)
-   STT:      enabled
+[SPEAKER] TTS + STT Server (Ukrainian + Russian + English + German)
    Starting on http://localhost:3002
 ```
 
@@ -123,29 +133,17 @@ chmod +x start.sh
 
 ## Text-to-Speech Details
 
-This app uses three different TTS engines, one for each language:
+All four languages use Silero models served from `tts-server.py`. There is no browser-side TTS — everything goes through the server.
 
-| | English | Ukrainian | Russian |
-|---|---|---|---|
-| **Technology** | Browser Web Speech API | ESPnet (robinhad/ukrainian-tts) | Silero v5 |
-| **Server required?** | No (runs in browser) | Yes (`tts-server.py`) | Yes (`tts-server.py`) |
-| **Model download** | None | ~425 MB (auto on first run) | ~65 MB (auto on first run) |
-| **Model location** | N/A | `tts-model/` | `tts-model-ru/` |
-| **Voice** | OS default | Oleksa (male) | Aidar (male) |
-| **Works offline?** | Yes | Yes (after first download) | Yes (after first download) |
-| **Cache** | None | `tts-cache/` | `tts-cache-ru/` |
+| | Ukrainian | Russian | English | German |
+|---|---|---|---|---|
+| **Model** | Silero v5 CIS | Silero v5 | Silero v3 | Silero v3 |
+| **Speaker** | ukr_igor | aidar | en_70 | bernd_ungerer |
+| **Model file** | `tts-model-uk-silero/v5_cis_base.pt` | `tts-model-ru/v5_ru.pt` | `tts-model-en/v3_en.pt` | `tts-model-de/v3_de.pt` |
+| **Download size** | ~91 MB | ~65 MB | ~100 MB | ~54 MB |
+| **Works offline?** | Yes (after first download) | Yes | Yes | Yes |
 
-### English TTS
-
-English pronunciation (used in flashcard mode for English translations) uses the browser's built-in [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis). No setup required - it works automatically in any modern browser using your OS's installed voices.
-
-### Ukrainian TTS
-
-Uses the [ukrainian-tts](https://github.com/robinhad/ukrainian-tts) library by robinhad, which is an ESPnet-based model. The library source is included in the `tts-repo/` directory. The model files (~425 MB) are downloaded from GitHub releases on first run and cached in `tts-model/`. Five voices are available (Oleksa, Tetiana, Dmytro, Mykyta, Lada) - the server uses Oleksa by default.
-
-### Russian TTS
-
-Uses [Silero Models v5](https://github.com/snakers4/silero-models) for Russian speech synthesis. The model (~65 MB) is downloaded automatically on first run from `https://models.silero.ai` and saved to `tts-model-ru/v5_ru.pt`. The server uses the "aidar" voice at 48kHz sample rate.
+Mixed-script text (e.g. a Ukrainian sentence containing an English word) is split by script and each chunk is routed to the appropriate model automatically.
 
 ### 4. (Optional) Enable Chat Practice with a local AI tutor
 
@@ -155,17 +153,17 @@ Chat Practice lets you have free-form conversations with an AI language tutor. I
 
 1. Download and install [LM Studio](https://lmstudio.ai/) for your platform (Windows, macOS, or Linux)
 2. Open LM Studio and download a model:
-   - **Recommended:** `Qwen 3.5 35B` — excellent multilingual support for Ukrainian and Russian (requires ~24GB RAM)
+   - **Recommended:** `Qwen 3.5 35B` — excellent multilingual support for Ukrainian, Russian, and German (requires ~24GB RAM)
    - **Lighter alternative:** `Qwen 3.5 9B` — still good quality, runs on most machines (~8GB RAM)
    - Search for "Qwen 3.5" in the LM Studio model search, pick a GGUF quantization that fits your hardware
 3. Load the model in LM Studio
 4. Go to the **Developer** tab (or **Local Server**) and click **Start Server** — it runs on `http://localhost:1234` by default
 
-That's it. The app automatically connects to LM Studio when you open Chat Practice. If LM Studio isn't running, the rest of the app works normally — you just won't have the chat feature.
+That's it. The app automatically connects to LM Studio when you open Chat Practice. If LM Studio isn't running, the rest of the app works normally.
 
 #### Speech-to-Text (Whisper)
 
-The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects whether you're speaking English, Ukrainian, or Russian and transcribes it accurately. The start scripts install the correct Whisper backend automatically:
+The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects whether you're speaking English, Ukrainian, Russian, or German and transcribes it accurately.
 
 - **macOS (Apple Silicon):** Uses [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) — optimized for M-series chips, very fast (~500ms)
 - **Windows / Linux / Intel Mac:** Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CPU-based, works everywhere
@@ -174,7 +172,7 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 
 ## How to play
 
-1. **Set up your keyboard** - Add Ukrainian or Russian as an input language in your OS settings (click the Keyboard Setup Guide in the app for instructions)
+1. **Set up your keyboard** - Add Ukrainian, Russian, or German as an input language in your OS settings (click the Keyboard Setup Guide in the app for instructions)
 2. **Switch your keyboard** - Use `Win+Space` (Windows), `Ctrl+Space` (Mac), or `Super+Space` (Linux) to switch to the target language
 3. **Start typing** - Pick a lesson and type the letters/words shown. The virtual keyboard highlights which key to press
 4. **Explore other modes** - Try flashcards, grammar lessons, reading practice, and more from the main menu
@@ -187,15 +185,16 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 │   ├── components/modes/   # Game mode components (flashcards, grammar, chat, speech, etc.)
 │   ├── components/         # Shared components (ModeHeader, WordToolbar, StatsPage, etc.)
 │   ├── hooks/              # Custom hooks (TTS, STT, word click, speech practice, lesson chat)
-│   ├── data/               # Ukrainian language data (lessons, vocabulary, grammar)
+│   ├── data/               # Ukrainian language data (lessons, vocabulary, grammar, dialogues)
 │   ├── data/ru/            # Russian language data
+│   ├── data/de/            # German language data
 │   └── utils/              # Helpers (dictionary builder, user dictionary, sound effects)
-├── tts-repo/               # Ukrainian TTS library (from robinhad/ukrainian-tts)
-├── tts-server.py           # Local TTS + STT server - TTS (ESPnet + Silero) + STT (Whisper) on port 3002
-├── tts-model/              # Ukrainian TTS model files (auto-downloaded, gitignored)
+├── tts-server.py           # Local TTS + STT server — Silero (4 languages) + Whisper on port 3002
+├── tts-model-uk-silero/    # Ukrainian TTS model files (auto-downloaded, gitignored)
 ├── tts-model-ru/           # Russian TTS model files (auto-downloaded, gitignored)
-├── tts-cache/              # Cached Ukrainian TTS audio (gitignored)
-├── tts-cache-ru/           # Cached Russian TTS audio (gitignored)
+├── tts-model-en/           # English TTS model files (auto-downloaded, gitignored)
+├── tts-model-de/           # German TTS model files (auto-downloaded, gitignored)
+├── users.db                # SQLite database for accounts (auto-created, gitignored)
 ├── start.bat               # Windows startup script
 ├── start.sh                # Mac/Linux startup script
 ├── index.html              # Vite entry point
@@ -205,31 +204,24 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 
 ## Troubleshooting
 
-**App works but no Ukrainian/Russian sound?**
+**App works but no sound?**
 - Make sure TTS is enabled in Settings (bottom of main menu)
-- Check that the TTS server is running (`python tts-server.py`)
-- The server should show `[OK] Ukrainian TTS model loaded!` and `[OK] Russian TTS model loaded!` when ready
+- Check that the TTS server is running: `python tts-server.py`
+- The server should show `[OK] ... TTS loaded!` for each language on startup
 - Check the browser console for errors on the `/tts` endpoint
-
-**No English sound on flashcards?**
-- English TTS uses the browser's Web Speech API - make sure your browser supports it
-- Check that your OS has English voice packs installed
 
 **Python dependency issues?**
 ```bash
-pip install torch
-pip install espnet
-pip install flask flask-cors
-cd tts-repo && pip install -e . && cd ..
+pip install flask flask-cors torch
+pip install flask-jwt-extended bcrypt   # for account system
+pip install num2words                   # for number pronunciation
 ```
 
-**Russian model won't download?**
-- The Silero model downloads from `https://models.silero.ai/models/tts/ru/v5_ru.pt`
-- You can download it manually and place it at `tts-model-ru/v5_ru.pt`
-
-**Ukrainian model won't download?**
-- The ESPnet model downloads from GitHub releases of [robinhad/ukrainian-tts](https://github.com/robinhad/ukrainian-tts/releases)
-- Check your internet connection and try running `python tts-server.py` again
+**A TTS model won't download?**
+- Ukrainian: download manually from `https://models.silero.ai/models/tts/ru/v5_cis_base.pt` → place at `tts-model-uk-silero/v5_cis_base.pt`
+- Russian: `https://models.silero.ai/models/tts/ru/v5_ru.pt` → `tts-model-ru/v5_ru.pt`
+- English: `https://models.silero.ai/models/tts/en/v3_en.pt` → `tts-model-en/v3_en.pt`
+- German: `https://models.silero.ai/models/tts/de/v3_de.pt` → `tts-model-de/v3_de.pt`
 
 **Chat Practice says "LM Studio not detected"?**
 - Make sure LM Studio is running and a model is loaded
@@ -254,8 +246,7 @@ The dev server will automatically use HTTPS when these cert files exist, and fal
 
 ## Credits
 
-- Ukrainian TTS model by [robinhad](https://github.com/robinhad/ukrainian-tts)
-- Russian TTS model by [Silero](https://github.com/snakers4/silero-models)
+- TTS powered by [Silero Models](https://github.com/snakers4/silero-models)
 - Speech-to-text by [OpenAI Whisper](https://github.com/openai/whisper) via [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) / [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 - LLM chat powered by [LM Studio](https://lmstudio.ai/)
 - Built with React + Vite

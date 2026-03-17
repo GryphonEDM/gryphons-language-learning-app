@@ -1,6 +1,6 @@
 # Easy Setup Guide (No Tech Experience Needed)
 
-This guide will walk you through every step to get the Ukrainian & Russian Typing Game running on your computer. Each step has screenshots-style descriptions so you know exactly what to click.
+This guide will walk you through every step to get the Ukrainian, Russian & German Typing Game running on your computer. Each step has screenshot-style descriptions so you know exactly what to click.
 
 ---
 
@@ -23,7 +23,7 @@ That's it for Node.js!
 
 ### Step 2: Install Python
 
-Python is needed for the pronunciation feature (hearing words spoken out loud). The game still works without it, but you won't hear Ukrainian or Russian pronunciation.
+Python is needed for the pronunciation feature (hearing words spoken out loud). The game still works without it, but you won't hear pronunciation.
 
 1. Go to **https://www.python.org/downloads/**
 2. Click the big yellow button that says **"Download Python 3.x.x"**
@@ -106,11 +106,10 @@ This usually means you forgot to check **"Add Python to PATH"** in Step 2. To fi
 6. **Restart your computer**
 7. Try running `start.bat` again
 
-### The game loads but I can't hear Ukrainian/Russian pronunciation
+### The game loads but I can't hear pronunciation
 
-- This is usually fine on first run! The pronunciation models are large files (~500 MB total) that download automatically the first time. Check the black command window for download progress.
+- This is normal on the very first run! The pronunciation models (~310 MB total, spread across 4 languages) download automatically. Check the black command window for download progress.
 - If it still doesn't work after downloading, close everything and run `start.bat` again.
-- Note: English pronunciation works without any extra setup.
 
 ### The page says "This site can't be reached" in my browser
 
@@ -133,13 +132,13 @@ Some antivirus programs get nervous about new programs. The game is safe and ope
 
 ## Setting Up Your Keyboard for Typing
 
-Once the game is running, you'll need to add a Ukrainian or Russian keyboard to your computer so you can type in those languages. The game has a built-in **Keyboard Setup Guide** - look for it on the main screen.
+Once the game is running, you'll need to add a Ukrainian, Russian, or German keyboard to your computer so you can type in those languages. The game has a built-in **Keyboard Setup Guide** - look for it on the main screen.
 
 The quick version for Windows:
 1. Open **Settings** (press Windows key + I)
 2. Go to **Time & Language** > **Language & Region**
 3. Click **"Add a language"**
-4. Search for **"Ukrainian"** or **"Russian"** and add it
+4. Search for **"Ukrainian"**, **"Russian"**, or **"German"** and add it
 5. Now you can switch between keyboards by pressing **Win + Space**
 
 ---

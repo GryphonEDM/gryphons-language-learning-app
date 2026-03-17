@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo ========================================
-echo   Ukrainian ^& Russian Typing Game
+echo   Ukrainian, Russian ^& German Typing Game
 echo ========================================
 echo.
 
@@ -65,24 +65,32 @@ python -c "import flask" >nul 2>nul
 if %ERRORLEVEL% neq 0 (
     echo Installing Flask...
     pip install flask flask-cors
+) else (
+    echo Flask already installed.
 )
 
-python -c "import ukrainian_tts" >nul 2>nul
+python -c "import torch" >nul 2>nul
 if %ERRORLEVEL% neq 0 (
-    echo Installing Python TTS library and dependencies...
-    pip install sentencepiece
-    pip install torch torchaudio espnet
-    cd tts-repo
-    pip install -e .
-    cd ..
-
-    python -c "import ukrainian_tts" >nul 2>nul
-    if %ERRORLEVEL% neq 0 (
-        echo [WARNING] Ukrainian TTS library not fully installed.
-        echo You may need to install missing dependencies manually.
-    )
+    echo Installing PyTorch (required for all TTS models)...
+    pip install torch
 ) else (
-    echo Python TTS library already installed.
+    echo PyTorch already installed.
+)
+
+python -c "import flask_jwt_extended" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing auth dependencies...
+    pip install flask-jwt-extended bcrypt
+) else (
+    echo Auth dependencies already installed.
+)
+
+python -c "import num2words" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing num2words...
+    pip install num2words
+) else (
+    echo num2words already installed.
 )
 echo.
 

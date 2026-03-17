@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "========================================"
-echo "  Ukrainian & Russian Typing Game"
+echo "  Ukrainian, Russian & German Typing Game"
 echo "========================================"
 echo ""
 
@@ -55,25 +55,29 @@ echo "[3/6] Checking Python TTS dependencies..."
 if ! python3 -c "import flask" &> /dev/null; then
     echo "Installing Flask..."
     pip install flask flask-cors
+else
+    echo "Flask already installed."
 fi
 
-if ! python3 -c "import ukrainian_tts" &> /dev/null; then
-    echo "Installing Python TTS library and dependencies..."
-    # Install sentencepiece first (espnet needs it, build can be picky)
-    pip install sentencepiece
-    # Install espnet and its dependencies
-    pip install torch torchaudio espnet
-    # Install the Ukrainian TTS library
-    cd tts-repo
-    pip install -e .
-    cd ..
-
-    if ! python3 -c "import ukrainian_tts" &> /dev/null; then
-        echo "[WARNING] Ukrainian TTS library not fully installed."
-        echo "You may need to install missing dependencies manually."
-    fi
+if ! python3 -c "import torch" &> /dev/null; then
+    echo "Installing PyTorch (required for all TTS models)..."
+    pip install torch
 else
-    echo "Python TTS library already installed."
+    echo "PyTorch already installed."
+fi
+
+if ! python3 -c "import flask_jwt_extended" &> /dev/null; then
+    echo "Installing auth dependencies..."
+    pip install flask-jwt-extended bcrypt
+else
+    echo "Auth dependencies already installed."
+fi
+
+if ! python3 -c "import num2words" &> /dev/null; then
+    echo "Installing num2words..."
+    pip install num2words
+else
+    echo "num2words already installed."
 fi
 echo ""
 
