@@ -1,0 +1,95 @@
+{
+  "lessonId": "comparatives",
+  "nameEn": "Comparatives & Superlatives",
+  "nameRu": "Степени сравнения",
+  "icon": "📊",
+  "tier": "B1",
+  "prerequisites": ["adjectives-gender"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "comparative",
+      "title": "Comparative Forms",
+      "tip": "Simple comparative: add -ее/-ей to the stem (красивее). Short forms: -е with consonant change (выше, дороже). Irregular: лучше, хуже, больше, меньше.",
+      "explanation": "To form the comparative, add -ее/-ей to the stem: красивый → красивее, интересный → интереснее. For short comparatives, add -е with consonant alternation: высокий → выше (к→ш), дорогой → дороже (г→ж). Some are irregular: хороший → лучше, плохой → хуже, большой → больше, маленький → меньше.",
+      "examples": [
+        { "ru": "Эта книга интереснее.", "en": "This book is more interesting.", "highlight": "интереснее" },
+        { "ru": "Он сильнее меня.", "en": "He is stronger than me.", "highlight": "сильнее" },
+        { "ru": "Сегодня погода лучше.", "en": "Today the weather is better.", "highlight": "лучше" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the comparative form of 'большой' (big)?", "options": ["больше", "большее", "большей"], "correctIndex": 0, "explanation": "'Большой' has the irregular comparative 'больше'." },
+        { "type": "fill-blank", "prompt": "Эта задача ___ той. (сложный — difficult, comparative)", "acceptedAnswers": ["сложнее"], "hint": "Add -ее to the stem", "explanation": "Сложный → сложнее." },
+        { "type": "transformation", "prompt": "Form the comparative:", "baseWord": "красивый (beautiful)", "context": "Эта картина ___.", "acceptedAnswers": ["красивее"], "hint": "Add -ее to the stem", "explanation": "Красивый → красивее." },
+        { "type": "multiple-choice", "prompt": "What is the comparative of 'хороший' (good)?", "options": ["лучше", "хорошее", "добрее"], "correctIndex": 0, "explanation": "'Хороший' has the irregular comparative 'лучше' (better)." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Он плохее меня в математике.", "correctedText": "Он хуже меня в математике.", "acceptedAnswers": ["хуже"], "explanation": "'Плохой' has the irregular comparative 'хуже' (worse), not 'плохее'." },
+        { "type": "fill-blank", "prompt": "Мой брат ___ меня. (высокий — tall, comparative)", "acceptedAnswers": ["выше"], "hint": "Высокий has a short comparative with consonant change", "explanation": "Высокий → выше (к drops, с→ш). Short comparative form." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "хороший", "right": "лучше" },
+          { "left": "плохой", "right": "хуже" },
+          { "left": "большой", "right": "больше" },
+          { "left": "маленький", "right": "меньше" }
+        ], "explanation": "These are the four most common irregular comparatives in Russian." },
+        { "type": "multiple-choice", "prompt": "Эта улица ___ той. (широкий — wide)", "options": ["шире", "широчее", "широкее"], "correctIndex": 0, "explanation": "Широкий → шире. Short comparative form with consonant change." },
+        { "type": "fill-blank", "prompt": "Сегодня ___ чем вчера. (тёплый — warm, comparative)", "acceptedAnswers": ["теплее"], "hint": "Add -ее to the stem", "explanation": "Тёплый → теплее (ё→е in comparative)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Эта комната больше той.", "acceptedAnswers": ["Эта комната больше той.", "Эта комната больше той"], "explanation": "'Больше' is the comparative of 'большой'. 'Той' means 'than that one' (genitive of та)." }
+      ]
+    },
+    {
+      "sectionId": "superlative",
+      "title": "Superlative Forms",
+      "tip": "Superlative: самый + adjective (самый большой) or наи- prefix + comparative (наибольший). Both forms are correct.",
+      "explanation": "To form the superlative, use 'самый' + adjective in the appropriate form: самый большой (biggest), самая красивая (most beautiful). Alternatively, use the prefix наи- with comparative forms: наибольший, наилучший. 'Самый' agrees in gender, number, and case with the noun.",
+      "examples": [
+        { "ru": "Это самый лучший фильм.", "en": "This is the best movie.", "highlight": "самый лучший" },
+        { "ru": "Она самая умная в классе.", "en": "She is the smartest in class.", "highlight": "самая умная" },
+        { "ru": "Это наиболее важный вопрос.", "en": "This is the most important question.", "highlight": "наиболее важный" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the superlative of 'хороший' (good)?", "options": ["самый лучший", "самый хороший", "лучший"], "correctIndex": 0, "explanation": "Хороший → лучше (comparative) → самый лучший (superlative). 'Лучший' alone can also mean 'best'." },
+        { "type": "fill-blank", "prompt": "Это ___ здание в городе. (высокий — tall, superlative neut.)", "acceptedAnswers": ["самое высокое"], "hint": "самое + neuter adjective", "explanation": "Самое высокое — neuter form to agree with 'здание'." },
+        { "type": "transformation", "prompt": "Form the superlative:", "baseWord": "интересный (interesting)", "context": "Это ___ книга.", "acceptedAnswers": ["самая интересная"], "hint": "самая + feminine adjective", "explanation": "Самая интересная — feminine superlative to agree with 'книга'." },
+        { "type": "multiple-choice", "prompt": "Это ___ день в моей жизни. (плохой — bad, superlative)", "options": ["самый плохой", "самый хужий", "хуже"], "correctIndex": 0, "explanation": "Самый плохой (worst). Also acceptable: худший день." },
+        { "type": "fill-blank", "prompt": "Она ___ студентка в университете. (умный — smart, superlative fem.)", "acceptedAnswers": ["самая умная"], "hint": "самая + feminine adjective", "explanation": "Самая умная — feminine superlative." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Это самый большой парк в город.", "correctedText": "Это самый большой парк в городе.", "acceptedAnswers": ["городе"], "explanation": "After 'в' (location), the noun must be in the prepositional case: город → городе." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "хороший (good)", "right": "самый лучший (best)" },
+          { "left": "плохой (bad)", "right": "самый плохой (worst)" },
+          { "left": "большой (big)", "right": "самый большой (biggest)" },
+          { "left": "маленький (small)", "right": "самый маленький (smallest)" }
+        ], "explanation": "Superlatives are formed with самый + adjective. For irregular ones, самый + comparative form is also used." },
+        { "type": "multiple-choice", "prompt": "Which is a valid alternative superlative for 'самый важный'?", "options": ["наиболее важный", "важнее всех", "более важный"], "correctIndex": 0, "explanation": "'Наиболее + adjective' is the formal/bookish superlative, equivalent to 'самый + adjective'." },
+        { "type": "fill-blank", "prompt": "Это ___ город в России. (старый — old, superlative masc.)", "acceptedAnswers": ["самый старый"], "hint": "самый + masculine adjective", "explanation": "Самый старый — masculine superlative." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "This is the most beautiful city.", "words": ["Это", "самый", "красивый", "город"], "correctOrder": ["Это", "самый", "красивый", "город"], "distractors": ["красивее", "самая"], "explanation": "'Город' is masculine, so the superlative must be 'самый красивый' (masculine form)." }
+      ]
+    },
+    {
+      "sectionId": "comparisons",
+      "title": "Comparisons in Sentences",
+      "tip": "Use 'чем' or genitive for 'than': Он старше меня / Он старше, чем я. Use 'такой же...как' for 'as...as'.",
+      "explanation": "Use 'чем' or genitive case for 'than': Он старше, чем я / Он старше меня. Use 'такой же...как' for 'as...as': Он такой же высокий, как я. Use 'менее' for 'less': менее важный (less important). Use 'более' for the analytical comparative: более интересный.",
+      "examples": [
+        { "ru": "Он умнее, чем я.", "en": "He is smarter than me.", "highlight": "чем" },
+        { "ru": "Она такая же высокая, как её мама.", "en": "She is as tall as her mom.", "highlight": "такая же...как" },
+        { "ru": "Это менее сложная задача.", "en": "This is a less difficult task.", "highlight": "менее сложная" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Мой дом больше ___ твоего. (than — using genitive)", "options": ["(no word needed)", "чем", "как"], "correctIndex": 0, "explanation": "With the genitive, no conjunction is needed: 'больше твоего' = bigger than yours." },
+        { "type": "fill-blank", "prompt": "Она такая же умная, ___ её сестра. (as)", "acceptedAnswers": ["как"], "hint": "такой же...как means 'as...as'", "explanation": "'Такой же/такая же/такое же...как' expresses equality: 'as...as'." },
+        { "type": "transformation", "prompt": "Rewrite using 'чем':", "baseWord": "Он старше меня.", "context": "Он старше, ___ я.", "acceptedAnswers": ["чем"], "hint": "'чем' is an alternative to the genitive for comparisons", "explanation": "'Чем' + nominative is an alternative to the genitive for expressing 'than'." },
+        { "type": "multiple-choice", "prompt": "Эта книга ___ интересная, чем та. (less)", "options": ["менее", "меньше", "мало"], "correctIndex": 0, "explanation": "'Менее' (less) is used before adjectives to form the opposite of a comparative." },
+        { "type": "fill-blank", "prompt": "Лето ___ зимы. (warm — comparative)", "acceptedAnswers": ["теплее"], "hint": "Тёплый → comparative", "explanation": "Тёплый → теплее. With genitive: теплее зимы (warmer than winter)." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Он такой же высокий чем я.", "correctedText": "Он такой же высокий, как я.", "acceptedAnswers": ["как"], "explanation": "With 'такой же' (as...as), you must use 'как', not 'чем'. 'Чем' is only for comparatives." },
+        { "type": "multiple-choice", "prompt": "Which sentence means 'Spring is warmer than winter'?", "options": ["Весна теплее зимы.", "Весна такая же тёплая, как зима.", "Весна менее тёплая, чем зима."], "correctIndex": 0, "explanation": "'Теплее зимы' = warmer than winter. Option 2 means 'as warm as' and option 3 means 'less warm than'." },
+        { "type": "fill-blank", "prompt": "Эта задача не ___ сложная, ___ та. (as...as)", "acceptedAnswers": ["такая...как", "такая, как"], "hint": "такой же/такая же...как", "explanation": "Negative comparison: не такая сложная, как та = not as difficult as that one." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "больше + genitive", "right": "bigger than" },
+          { "left": "такой же...как", "right": "as...as" },
+          { "left": "менее", "right": "less" },
+          { "left": "чем + nominative", "right": "than" }
+        ], "explanation": "Genitive and 'чем' + nominative both mean 'than'. 'Такой же...как' = 'as...as'. 'Менее' = 'less'." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "My brother is taller than me.", "words": ["Мой", "брат", "выше", "меня"], "correctOrder": ["Мой", "брат", "выше", "меня"], "distractors": ["чем", "как"], "explanation": "'Выше меня' uses the genitive for 'than'. 'Чем я' would also be correct." }
+      ]
+    }
+  ]
+}

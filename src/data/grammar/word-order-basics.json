@@ -1,0 +1,85 @@
+{
+  "lessonId": "word-order-basics",
+  "nameEn": "Word Order & Questions",
+  "nameUk": "Порядок слів і питання",
+  "icon": "📋",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "basic-order",
+      "title": "Basic Word Order (SVO)",
+      "explanation": "Ukrainian generally follows Subject-Verb-Object (SVO) order, similar to English. However, Ukrainian word order is more flexible because cases show the grammatical role of each word.",
+      "tip": "Default order: Subject → Verb → Object (just like English)",
+      "examples": [
+        { "uk": "Мама готує обід.", "en": "Mom prepares lunch. (S-V-O)", "highlight": "Мама готує обід" },
+        { "uk": "Дівчинка читає книгу.", "en": "The girl reads a book.", "highlight": "Дівчинка читає книгу" },
+        { "uk": "Ми любимо Україну.", "en": "We love Ukraine.", "highlight": "Ми любимо Україну" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the standard word order in Ukrainian?", "options": ["Subject-Verb-Object", "Object-Verb-Subject", "Verb-Subject-Object"], "correctIndex": 0, "explanation": "Like English, Ukrainian uses SVO as the default word order." },
+        { "type": "fill-blank", "prompt": "___ п'є чай. (cat - кіт, basic SVO)", "acceptedAnswers": ["Кіт", "кіт"], "hint": "Subject comes first in basic SVO" },
+        { "type": "sentence-order", "prompt": "Put the words in the correct SVO order:", "words": ["читає", "Тато", "газету"], "correctOrder": ["Тато", "читає", "газету"], "translation": "Dad reads a newspaper." },
+        { "type": "multiple-choice", "prompt": "In 'Мама готує обід', what is the subject?", "options": ["Мама", "готує", "обід"], "correctIndex": 0, "explanation": "'Мама' (Mom) is the subject — the one performing the action." },
+        { "type": "sentence-order", "prompt": "Put the words in the correct SVO order:", "words": ["молоко", "Дитина", "п'є"], "correctOrder": ["Дитина", "п'є", "молоко"], "translation": "The child drinks milk." },
+        { "type": "fill-blank", "prompt": "Хлопець ___ м'яч. (kicks - б'є, basic SVO)", "acceptedAnswers": ["б'є"], "hint": "The verb goes in the middle" },
+        { "type": "multiple-choice", "prompt": "In SVO order, where does the verb go?", "options": ["In the middle", "At the beginning", "At the end"], "correctIndex": 0, "explanation": "In SVO order: Subject first, then Verb, then Object." },
+        { "type": "sentence-order", "prompt": "Put the words in the correct SVO order:", "words": ["пише", "лист", "Сестра"], "correctOrder": ["Сестра", "пише", "лист"], "translation": "Sister writes a letter." },
+        { "type": "fill-blank", "prompt": "Брат їсть ___. (apple - яблуко)", "acceptedAnswers": ["яблуко"], "hint": "The object comes last in SVO" },
+        { "type": "multiple-choice", "prompt": "Which sentence follows SVO order?", "options": ["Студент вивчає українську.", "Українську вивчає студент.", "Вивчає студент українську."], "correctIndex": 0, "explanation": "'Студент (S) вивчає (V) українську (O)' follows standard SVO order." }
+      ]
+    },
+    {
+      "sectionId": "flexible-order",
+      "title": "Flexible Word Order",
+      "explanation": "Because Ukrainian uses cases to mark grammatical roles, you can rearrange words for emphasis. Moving something to the beginning or end of a sentence gives it emphasis. 'Книгу я читав' emphasizes 'the book'.",
+      "tip": "Move a word to the front to emphasize it",
+      "examples": [
+        { "uk": "Книгу я читав учора.", "en": "THE BOOK I read yesterday. (emphasis on book)", "highlight": "Книгу" },
+        { "uk": "Учора ми були в парку.", "en": "YESTERDAY we were in the park.", "highlight": "Учора" },
+        { "uk": "Гарний цей день!", "en": "Beautiful is this day! (poetic)", "highlight": "Гарний" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Why can Ukrainian change word order freely?", "options": ["Cases show grammatical roles", "Verbs don't conjugate", "All words look the same"], "correctIndex": 0, "explanation": "Case endings tell you who is the subject, object, etc., regardless of position." },
+        { "type": "multiple-choice", "prompt": "In 'Каву я люблю!', what is emphasized?", "options": ["Coffee (каву)", "I (я)", "Love (люблю)"], "correctIndex": 0, "explanation": "Moving 'каву' to the front emphasizes coffee — 'COFFEE is what I love!'" },
+        { "type": "multiple-choice", "prompt": "'Книгу я читав учора.' — What is emphasized?", "options": ["The book (книгу)", "I (я)", "Yesterday (учора)"], "correctIndex": 0, "explanation": "'Книгу' is moved to the front for emphasis — 'THE BOOK I read yesterday.'" },
+        { "type": "fill-blank", "prompt": "To emphasize 'yesterday', start with: ___ ми були в парку.", "acceptedAnswers": ["Учора", "учора"], "hint": "The Ukrainian word for 'yesterday'" },
+        { "type": "multiple-choice", "prompt": "Which sentence emphasizes 'music' (музику)?", "options": ["Музику я слухаю.", "Я слухаю музику.", "Я музику слухаю."], "correctIndex": 0, "explanation": "Moving 'музику' to the very front gives it the strongest emphasis." },
+        { "type": "sentence-order", "prompt": "Rearrange to emphasize 'cake' (торт): я, їм, торт", "words": ["я", "їм", "торт"], "correctOrder": ["торт", "я", "їм"], "translation": "THE CAKE I eat! (emphasis on cake)" },
+        { "type": "multiple-choice", "prompt": "In standard SVO 'Я читаю книгу', the emphasis is:", "options": ["Neutral — no special emphasis", "On 'I'", "On 'book'"], "correctIndex": 0, "explanation": "Standard SVO order has neutral emphasis." },
+        { "type": "fill-blank", "prompt": "Rewrite to emphasize tea: 'Я п'ю чай' → ___ я п'ю.", "acceptedAnswers": ["Чай", "чай"], "hint": "Move the object to the front" },
+        { "type": "multiple-choice", "prompt": "Does changing word order change the basic meaning?", "options": ["No — only the emphasis changes", "Yes — it becomes a question", "Yes — the meaning reverses"], "correctIndex": 0, "explanation": "Cases preserve the grammatical roles, so meaning stays the same — only emphasis shifts." },
+        { "type": "multiple-choice", "prompt": "'Гарний цей день!' — This order sounds:", "options": ["Poetic or emotional", "Like a question", "Incorrect"], "correctIndex": 0, "explanation": "Putting the adjective first creates a poetic or exclamatory feeling." }
+      ]
+    },
+    {
+      "sectionId": "questions",
+      "title": "Question Word Order",
+      "explanation": "Yes/no questions in Ukrainian can use the same word order as statements, just with rising intonation. The particle 'чи' can optionally start a yes/no question. Question words (хто, що, де, коли, як, чому) typically come first.",
+      "tip": "Yes/no questions = same order + rising voice. Use чи for clarity.",
+      "examples": [
+        { "uk": "Ти говориш українською?", "en": "Do you speak Ukrainian? (intonation)", "highlight": "Ти говориш" },
+        { "uk": "Чи ви розумієте?", "en": "Do you understand? (with чи)", "highlight": "Чи" },
+        { "uk": "Де ти живеш?", "en": "Where do you live?", "highlight": "Де" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which particle optionally starts a yes/no question?", "options": ["Чи", "Де", "Як"], "correctIndex": 0, "explanation": "'Чи' is the optional question particle for yes/no questions." },
+        { "type": "fill-blank", "prompt": "___ ти працюєш? (Where)", "acceptedAnswers": ["Де", "де"], "hint": "Question word for 'where'" },
+        { "type": "multiple-choice", "prompt": "How do you form a yes/no question in Ukrainian?", "options": ["Use rising intonation or add 'чи'", "Always invert subject and verb", "Add '-ка' to the verb"], "correctIndex": 0, "explanation": "Yes/no questions use rising intonation, optionally preceded by 'чи'." },
+        { "type": "fill-blank", "prompt": "___ це коштує? (How much — скільки)", "acceptedAnswers": ["Скільки", "скільки"], "hint": "Question word for 'how much'" },
+        { "type": "matching", "prompt": "Match each question word to its meaning:", "pairs": [
+          { "left": "хто", "right": "who" },
+          { "left": "що", "right": "what" },
+          { "left": "де", "right": "where" },
+          { "left": "коли", "right": "when" }
+        ] },
+        { "type": "multiple-choice", "prompt": "Which is a correct yes/no question?", "options": ["Ти любиш каву?", "Любиш ти каву?", "Каву ти?"], "correctIndex": 0, "explanation": "Simply use statement order with rising intonation for a yes/no question." },
+        { "type": "fill-blank", "prompt": "___ ти живеш? (Where)", "acceptedAnswers": ["Де", "де"], "hint": "Starts with Д" },
+        { "type": "sentence-order", "prompt": "Form a question: ви, Чи, розумієте", "words": ["ви", "Чи", "розумієте"], "correctOrder": ["Чи", "ви", "розумієте"], "translation": "Do you understand?" },
+        { "type": "multiple-choice", "prompt": "Where do question words (хто, що, де) go in a sentence?", "options": ["At the beginning", "At the end", "After the verb"], "correctIndex": 0, "explanation": "Question words typically come first in Ukrainian questions." },
+        { "type": "fill-blank", "prompt": "___ тебе звати? (What — як)", "acceptedAnswers": ["Як", "як"], "hint": "Question word for 'how' / 'what (is your name)'" }
+      ]
+    }
+  ]
+}

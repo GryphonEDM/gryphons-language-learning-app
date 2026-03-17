@@ -47,6 +47,11 @@ export const ACHIEVEMENTS = [
   { id: 'grammar_first', name: 'Grammar Student', nameUk: 'Учень граматики', nameRu: 'Ученик грамматики', desc: 'Complete your first grammar exercise', icon: '📐', xp: 50 },
   { id: 'grammar_cases', name: 'Case Expert', nameUk: 'Експерт відмінків', nameRu: 'Эксперт падежей', desc: 'Complete the Cases grammar lesson', icon: '📏', xp: 200 },
   { id: 'grammar_all', name: 'Grammar Master', nameUk: 'Майстер граматики', nameRu: 'Мастер грамматики', desc: 'Complete all grammar lessons', icon: '🎓', xp: 500 },
+  { id: 'grammar_a1_complete', name: 'Foundation Builder', nameUk: 'Будівник основ', nameRu: 'Строитель основ', desc: 'Complete all A1 grammar lessons', icon: '🧱', xp: 300 },
+  { id: 'grammar_a2_complete', name: 'Building Blocks', nameUk: 'Будівельні блоки', nameRu: 'Строительные блоки', desc: 'Complete all A2 grammar lessons', icon: '🏗️', xp: 400 },
+  { id: 'grammar_perfect_section', name: 'Perfect Section', nameUk: 'Ідеальний розділ', nameRu: 'Идеальный раздел', desc: 'Get 100% on a grammar section', icon: '💎', xp: 150 },
+  { id: 'grammar_streak_10', name: 'Grammar Streak', nameUk: 'Граматична серія', nameRu: 'Грамматическая серия', desc: 'Get 10 correct grammar answers in a row', icon: '🔥', xp: 200 },
+  { id: 'grammar_all_types', name: 'Exercise Explorer', nameUk: 'Дослідник вправ', nameRu: 'Исследователь упражнений', desc: 'Complete all 8 grammar exercise types', icon: '🗺️', xp: 150 },
   // P6 - Sentence Construction
   { id: 'sentence_first', name: 'Sentence Builder', nameUk: 'Будівник речень', nameRu: 'Строитель предложений', desc: 'Build your first sentence', icon: '🧱', xp: 50 },
   { id: 'sentence_10', name: 'Sentence Pro', nameUk: 'Професіонал речень', nameRu: 'Профессионал предложений', desc: 'Build 10 correct sentences', icon: '🏗️', xp: 150 },

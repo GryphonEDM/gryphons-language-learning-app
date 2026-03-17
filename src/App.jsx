@@ -27,11 +27,7 @@ import earlyIntermediateStories from './data/stories/early-intermediate.json';
 const ALL_STORIES = [veryBeginnerStories, beginnerStories, earlyIntermediateStories];
 
 // Import grammar data
-import casesData from './data/grammar/cases.json';
-import verbsData from './data/grammar/verbs.json';
-import pronounsData from './data/grammar/pronouns.json';
-import adjectivesData from './data/grammar/adjectives.json';
-import wordOrderData from './data/grammar/wordOrder.json';
+import { GRAMMAR_LESSONS_UK } from './data/grammar/index.js';
 
 // Import sentence data
 import sentenceData from './data/sentences.json';
@@ -48,11 +44,7 @@ import intermediateReading from './data/reading/intermediate.json';
 import advancedReading from './data/reading/advanced.json';
 
 // Import Russian grammar data
-import ruCasesData from './data/ru/grammar/cases.json';
-import ruVerbsData from './data/ru/grammar/verbs.json';
-import ruPronounsData from './data/ru/grammar/pronouns.json';
-import ruAdjectivesData from './data/ru/grammar/adjectives.json';
-import ruWordOrderData from './data/ru/grammar/wordOrder.json';
+import { GRAMMAR_LESSONS_RU } from './data/ru/grammar/index.js';
 
 // Import Russian sentence data
 import ruSentenceData from './data/ru/sentences.json';
@@ -141,7 +133,7 @@ function buildCategoryFlashcardSets() {
 
 const DICTIONARY_FLASHCARD_SETS = buildCategoryFlashcardSets();
 
-const GRAMMAR_LESSONS = [casesData, verbsData, pronounsData, adjectivesData, wordOrderData];
+const GRAMMAR_LESSONS = GRAMMAR_LESSONS_UK;
 const DIALOGUES = [restaurantDialogue, directionsDialogue, shoppingDialogue, greetingDialogue];
 const ALL_READING_PASSAGES = [
   ...beginnerReading.passages,
@@ -149,7 +141,7 @@ const ALL_READING_PASSAGES = [
   ...advancedReading.passages
 ];
 
-const RU_GRAMMAR_LESSONS = [ruCasesData, ruVerbsData, ruPronounsData, ruAdjectivesData, ruWordOrderData];
+const RU_GRAMMAR_LESSONS = GRAMMAR_LESSONS_RU;
 const RU_DIALOGUES = [ruRestaurantDialogue, ruDirectionsDialogue, ruShoppingDialogue, ruGreetingDialogue];
 const RU_ALL_READING_PASSAGES = [
   ...ruBeginnerReading.passages,

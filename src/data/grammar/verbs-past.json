@@ -1,0 +1,105 @@
+{
+  "lessonId": "verbs-past",
+  "nameEn": "Past Tense",
+  "nameUk": "Минулий час",
+  "icon": "⏪",
+  "tier": "A2",
+  "prerequisites": ["verbs-present"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "formation",
+      "title": "Past Tense Formation",
+      "explanation": "Unlike many European languages, Ukrainian past tense is based on gender, not person. Remove the -ти from the infinitive and add: masculine -в (after vowel) or -ів (after consonant), feminine -ла, neuter -ло, plural -ли. Я/ти/він читав, я/ти/вона читала.",
+      "examples": [
+        { "uk": "Він читав книгу.", "en": "He was reading a book.", "highlight": "читав" },
+        { "uk": "Вона працювала вчора.", "en": "She worked yesterday.", "highlight": "працювала" },
+        { "uk": "Воно світило яскраво.", "en": "It shone brightly.", "highlight": "світило" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Вона ___ лист. (писати – to write)", "options": ["писала", "писав", "писало"], "correctIndex": 0, "explanation": "Вона (she) requires the feminine past tense form: писати → писала (-ла)." },
+        { "type": "fill-blank", "prompt": "Він ___ каву. (пити – to drink)", "acceptedAnswers": ["пив"], "hint": "Masculine: drop -ти, add -в", "explanation": "Пити → пив. The stem ends in a vowel, so we add -в for masculine." },
+        { "type": "fill-blank", "prompt": "Ми ___ разом. (працювати – to work)", "acceptedAnswers": ["працювали"], "hint": "Plural always ends in -ли", "explanation": "Ми (we) is plural, so працювати → працювали (-ли)." },
+        { "type": "transformation", "prompt": "Form the feminine past tense:", "baseWord": "говорити", "context": "Вона ___ по телефону.", "acceptedAnswers": ["говорила"], "hint": "Drop -ти, add -ла", "explanation": "Говорити → говорила. For feminine subjects, the past tense ends in -ла." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Вона читав газету.", "errorWord": "читав", "acceptedAnswers": ["читала"], "explanation": "Вона is feminine, so the verb must be читала, not читав (masculine)." },
+        { "type": "matching", "prompt": "Match the subject to the correct past tense form of 'робити' (to do):", "pairs": [
+          { "left": "він", "right": "робив" },
+          { "left": "вона", "right": "робила" },
+          { "left": "воно", "right": "робило" },
+          { "left": "вони", "right": "робили" },
+          { "left": "ми", "right": "робили" }
+        ], "explanation": "Past tense depends on gender/number: він -в, вона -ла, воно -ло, вони/ми -ли." },
+        { "type": "multiple-choice", "prompt": "Сонце ___ яскраво. (сяяти – to shine)", "options": ["сяяло", "сяяв", "сяяла"], "correctIndex": 0, "explanation": "Сонце (sun) is neuter, so the past tense is сяяло (-ло)." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She sang a song yesterday.", "words": ["Вона", "вчора", "співала", "пісню"], "distractors": ["співав"], "validOrders": [["Вона", "вчора", "співала", "пісню"], ["Вона", "співала", "пісню", "вчора"]], "explanation": "Вона requires the feminine form співала. Word order in Ukrainian is flexible." },
+        { "type": "table-fill", "prompt": "Complete the past tense forms of 'жити' (to live):", "headers": ["Subject", "Past Tense"], "rows": [
+          { "label": "він", "answer": "жив", "prefilled": false },
+          { "label": "вона", "answer": "жила", "prefilled": false },
+          { "label": "воно", "answer": "жило", "prefilled": false },
+          { "label": "вони", "answer": "жили", "prefilled": false }
+        ], "explanation": "Жити → жив (m), жила (f), жило (n), жили (pl). The stem is жи-, then add the gender ending." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Діти гуляли в парку.", "acceptedAnswers": ["Діти гуляли в парку.", "Діти гуляли в парку"], "explanation": "Діти (children) is plural, so the past tense is гуляли (-ли)." }
+      ]
+    },
+    {
+      "sectionId": "irregular",
+      "title": "Common Irregular Past Forms",
+      "explanation": "Some common Ukrainian verbs have irregular past tense forms. The stem may change, letters may be dropped, or consonant alternations may occur. Key irregular verbs: їсти → їв/їла, пити → пив/пила, іти → ішов/ішла, могти → міг/могла, нести → ніс/несла.",
+      "examples": [
+        { "uk": "Він ішов додому.", "en": "He was walking home.", "highlight": "ішов" },
+        { "uk": "Вона їла суп.", "en": "She was eating soup.", "highlight": "їла" },
+        { "uk": "Він міг допомогти.", "en": "He could help.", "highlight": "міг" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Він ___ на роботу. (іти – to go on foot)", "options": ["ішов", "ідив", "йшов"], "correctIndex": 0, "explanation": "Іти has an irregular masculine past: ішов. Not *ідив." },
+        { "type": "fill-blank", "prompt": "Вона ___ сніданок. (їсти – to eat)", "acceptedAnswers": ["їла"], "hint": "Irregular: їсти → їв/їла", "explanation": "Їсти → їла for feminine. The masculine form is їв." },
+        { "type": "fill-blank", "prompt": "Він ___ важку валізу. (нести – to carry)", "acceptedAnswers": ["ніс"], "hint": "Irregular: stem changes to ніс-", "explanation": "Нести → ніс (masculine). The stem vowel changes. Feminine: несла." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Вона ішов по вулиці.", "errorWord": "ішов", "acceptedAnswers": ["ішла"], "explanation": "Вона is feminine, so іти → ішла, not ішов (masculine)." },
+        { "type": "multiple-choice", "prompt": "Вони ___ воду. (пити – to drink)", "options": ["пили", "пив", "пила"], "correctIndex": 0, "explanation": "Вони (they) is plural, so пити → пили." },
+        { "type": "transformation", "prompt": "Form the past tense:", "baseWord": "могти", "context": "Вона не ___ прийти.", "acceptedAnswers": ["могла"], "hint": "Irregular: могти → міг/могла", "explanation": "Могти → могла for feminine. The masculine form is міг (with vowel change)." },
+        { "type": "matching", "prompt": "Match the verb to its masculine past form:", "pairs": [
+          { "left": "їсти (to eat)", "right": "їв" },
+          { "left": "іти (to go)", "right": "ішов" },
+          { "left": "нести (to carry)", "right": "ніс" },
+          { "left": "могти (to be able)", "right": "міг" },
+          { "left": "вести (to lead)", "right": "вів" }
+        ], "explanation": "These verbs have stem changes in the masculine past: їсти→їв, іти→ішов, нести→ніс, могти→міг, вести→вів." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She could not come.", "words": ["Вона", "не", "могла", "прийти"], "distractors": ["міг"], "validOrders": [["Вона", "не", "могла", "прийти"]], "explanation": "Feminine subject вона requires могла (not міг). Не goes before the verb." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він ніс квіти додому.", "acceptedAnswers": ["Він ніс квіти додому.", "Він ніс квіти додому"], "explanation": "Нести → ніс in the masculine past. Квіти means flowers." },
+        { "type": "table-fill", "prompt": "Complete the irregular past tense forms:", "headers": ["Infinitive", "Він (m.)", "Вона (f.)"], "rows": [
+          { "label": "іти", "answer": "ішов / ішла", "prefilled": false },
+          { "label": "їсти", "answer": "їв / їла", "prefilled": false },
+          { "label": "нести", "answer": "ніс / несла", "prefilled": false },
+          { "label": "могти", "answer": "міг / могла", "prefilled": false }
+        ], "explanation": "Irregular past forms: іти→ішов/ішла, їсти→їв/їла, нести→ніс/несла, могти→міг/могла." }
+      ]
+    },
+    {
+      "sectionId": "context",
+      "title": "Past Tense in Context",
+      "explanation": "In real sentences, you must identify the gender of the subject to choose the correct past tense form. Remember: proper names have gender too (Марія = feminine, Петро = masculine). Plural subjects always use -ли regardless of gender.",
+      "examples": [
+        { "uk": "Марія готувала вечерю.", "en": "Maria was cooking dinner.", "highlight": "готувала" },
+        { "uk": "Петро і Марія говорили.", "en": "Petro and Maria were talking.", "highlight": "говорили" },
+        { "uk": "Дитя спало спокійно.", "en": "The child slept peacefully.", "highlight": "спало" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Андрій ___ в університеті. (вчитися – to study)", "options": ["вчився", "вчилася", "вчилися"], "correctIndex": 0, "explanation": "Андрій is masculine, so вчитися → вчився. Reflexive verbs add -ся after the past ending." },
+        { "type": "fill-blank", "prompt": "Олена ___ нову сукню. (купити – to buy)", "acceptedAnswers": ["купила"], "hint": "Олена is a female name.", "explanation": "Олена is feminine, so купити → купила (-ла)." },
+        { "type": "fill-blank", "prompt": "Батьки ___ на концерт. (піти – to go)", "acceptedAnswers": ["пішли"], "hint": "Батьки (parents) is plural.", "explanation": "Батьки is plural, so піти → пішли. Note the irregular stem пішл-." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Оксана приготував смачний обід.", "errorWord": "приготував", "acceptedAnswers": ["приготувала"], "explanation": "Оксана is a female name, so the verb must be feminine: приготувала." },
+        { "type": "multiple-choice", "prompt": "Моє серце ___ швидко. (битися – to beat)", "options": ["билося", "бився", "билася"], "correctIndex": 0, "explanation": "Серце (heart) is neuter, so билося (-лося for neuter reflexive)." },
+        { "type": "transformation", "prompt": "Put the verb in the correct past tense form:", "baseWord": "подорожувати", "context": "Ми ___ влітку.", "acceptedAnswers": ["подорожували"], "hint": "Ми = plural → -ли", "explanation": "Ми is plural, so подорожувати → подорожували (-ли)." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "The children played in the yard.", "words": ["Діти", "гралися", "у", "дворі"], "distractors": ["грався"], "validOrders": [["Діти", "гралися", "у", "дворі"]], "explanation": "Діти (children) is plural, requiring гралися (not грався, which is masculine singular)." },
+        { "type": "matching", "prompt": "Match each subject to the correct form of 'бути' (to be) in past tense:", "pairs": [
+          { "left": "Тарас", "right": "був" },
+          { "left": "Оксана", "right": "була" },
+          { "left": "село", "right": "було" },
+          { "left": "друзі", "right": "були" },
+          { "left": "дівчинка", "right": "була" }
+        ], "explanation": "Бути past: був (m), була (f), було (n), були (pl). Тарас=m, Оксана/дівчинка=f, село=n, друзі=pl." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Вона довго чекала на автобус.", "acceptedAnswers": ["Вона довго чекала на автобус.", "Вона довго чекала на автобус"], "explanation": "Вона is feminine, so чекати → чекала. Довго means 'for a long time'." },
+        { "type": "multiple-choice", "prompt": "Це місто ___ дуже красивим. (бути – to be)", "options": ["було", "був", "була"], "correctIndex": 0, "explanation": "Місто is neuter, so бути → було in the past tense." }
+      ]
+    }
+  ]
+}

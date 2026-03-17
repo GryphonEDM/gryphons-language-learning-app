@@ -1,50 +1,397 @@
 {
-  "lessonId": "verbs",
-  "nameEn": "Verb Conjugation",
-  "nameUk": "Дієвідмінювання",
+  "lessonId": "verbs-present",
+  "nameEn": "Present Tense Verbs",
+  "nameUk": "Теперішній час дієслів",
   "icon": "🔄",
+  "tier": "A1",
+  "prerequisites": ["alphabet"],
+  "estimatedMinutes": 20,
   "sections": [
     {
-      "sectionId": "present",
-      "title": "Present Tense",
-      "explanation": "Ukrainian verbs change their endings based on the subject. There are two main conjugation groups. First conjugation uses endings -у/-ю, -еш, -е, -емо, -ете, -уть. Second conjugation uses -у/-ю, -иш, -ить, -имо, -ите, -ять.",
+      "sectionId": "first-conj",
+      "title": "First Conjugation (-е-)",
+      "explanation": "First conjugation verbs have -е- in their endings: -у/-ю, -еш, -е, -емо, -ете, -уть/-ють. Most verbs ending in -ати, -увати belong here. Example: читати (to read): читаю, читаєш, читає, читаємо, читаєте, читають.",
+      "tip": "First conjugation = -е- endings: -еш, -е, -емо, -ете",
       "examples": [
         { "uk": "Я читаю книгу.", "en": "I read a book.", "highlight": "читаю" },
-        { "uk": "Ти говориш добре.", "en": "You speak well.", "highlight": "говориш" },
-        { "uk": "Вони працюють.", "en": "They work.", "highlight": "працюють" }
+        { "uk": "Ти працюєш добре.", "en": "You work well.", "highlight": "працюєш" },
+        { "uk": "Ми знаємо відповідь.", "en": "We know the answer.", "highlight": "знаємо" },
+        { "uk": "Вони співають пісню.", "en": "They sing a song.", "highlight": "співають" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Conjugate 'читати' (to read) for 'ми' (we):", "options": ["читаємо", "читають", "читаєш"], "correctIndex": 0, "explanation": "'Ми читаємо' — first conjugation, -ємо ending for 'we'." },
-        { "type": "fill-blank", "prompt": "Він ___ каву. (пити - to drink)", "acceptedAnswers": ["п'є"], "hint": "Irregular verb: п'ю, п'єш, п'є..." },
-        { "type": "multiple-choice", "prompt": "Conjugate 'говорити' (to speak) for 'вони' (they):", "options": ["говорять", "говоримо", "говорить"], "correctIndex": 0, "explanation": "Second conjugation verbs use -ять for 'they'." }
+        {
+          "type": "table-fill",
+          "prompt": "Fill in the conjugation table for 'читати' (to read):",
+          "table": {
+            "infinitive": "читати",
+            "rows": [
+              { "pronoun": "я", "answer": "читаю" },
+              { "pronoun": "ти", "answer": "читаєш" },
+              { "pronoun": "він/вона/воно", "answer": "читає" },
+              { "pronoun": "ми", "answer": "читаємо" },
+              { "pronoun": "ви", "answer": "читаєте" },
+              { "pronoun": "вони", "answer": "читають" }
+            ]
+          },
+          "explanation": "'Читати' is first conjugation: the endings use -є- (читаєш, читає, читаємо, читаєте) and -ють (читають)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 'працювати' (to work) for 'ми' (we):",
+          "options": ["працюємо", "працюють", "працюєш"],
+          "correctIndex": 0,
+          "explanation": "'Ми' takes the -ємо ending in first conjugation: працюємо."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ти ___ українською? (розмовляти — to speak/converse)",
+          "acceptedAnswers": ["розмовляєш"],
+          "hint": "-ати verb, 'ти' form: -єш",
+          "explanation": "'Розмовляти' is first conjugation. For 'ти': розмовляєш."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Change the subject from 'я' to 'вони': 'Я малюю картину.'",
+          "acceptedAnswers": ["Вони малюють картину.", "Вони малюють картину"],
+          "explanation": "'Малювати' first conjugation: я малюю → вони малюють (-ють ending)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which ending does 'він' take with first conjugation verbs?",
+          "options": ["-е/-є", "-ить", "-уть", "-емо"],
+          "correctIndex": 0,
+          "explanation": "In first conjugation, третя особа однини (він/вона/воно) takes -е or -є."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона ___ обід. (готувати — to cook/prepare)",
+          "acceptedAnswers": ["готує"],
+          "hint": "-увати verb, 'вона' form",
+          "explanation": "'Готувати' is first conjugation: вона готує."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun with the correct form of 'знати' (to know):",
+          "pairs": [
+            { "left": "я", "right": "знаю" },
+            { "left": "ти", "right": "знаєш" },
+            { "left": "він", "right": "знає" },
+            { "left": "вони", "right": "знають" }
+          ],
+          "explanation": "'Знати' is first conjugation: знаю, знаєш, знає, знаємо, знаєте, знають."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Ми читають книгу.'",
+          "incorrectText": "Ми читають книгу.",
+          "correctedText": "Ми читаємо книгу.",
+          "acceptedAnswers": ["Ми читаємо книгу.", "Ми читаємо книгу"],
+          "explanation": "'Ми' requires -ємо (not -ють, which is for 'вони'): ми читаємо."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["добре", "Ти", "співаєш"],
+          "correctOrder": ["Ти", "співаєш", "добре"],
+          "explanation": "'Ти співаєш добре.' — You sing well. 'Співати' first conjugation, ти → співаєш."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Вони працюють разом.",
+          "acceptedAnswers": ["Вони працюють разом.", "Вони працюють разом"],
+          "explanation": "'Працювати' first conjugation: вони працюють. 'Разом' means together."
+        }
       ]
     },
     {
-      "sectionId": "past",
-      "title": "Past Tense",
-      "explanation": "The past tense in Ukrainian depends on the gender (not person!) of the subject. Masculine: -в/-ів, Feminine: -ла, Neuter: -ло, Plural: -ли.",
+      "sectionId": "second-conj",
+      "title": "Second Conjugation (-и-)",
+      "explanation": "Second conjugation verbs have -и- in their endings: -у/-ю, -иш, -ить, -имо, -ите, -ять/-ать. Verbs ending in -ити often belong here. Example: говорити (to speak): говорю, говориш, говорить, говоримо, говорите, говорять.",
+      "tip": "Second conjugation = -и- endings: -иш, -ить, -имо, -ите",
       "examples": [
-        { "uk": "Він читав.", "en": "He read/was reading.", "highlight": "читав" },
-        { "uk": "Вона читала.", "en": "She read/was reading.", "highlight": "читала" },
-        { "uk": "Вони читали.", "en": "They read/were reading.", "highlight": "читали" }
+        { "uk": "Я говорю правду.", "en": "I speak the truth.", "highlight": "говорю" },
+        { "uk": "Ти робиш домашнє завдання.", "en": "You do homework.", "highlight": "робиш" },
+        { "uk": "Ми вчимо нові слова.", "en": "We learn new words.", "highlight": "вчимо" },
+        { "uk": "Вони бачать море.", "en": "They see the sea.", "highlight": "бачать" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "'Вона ___ листа.' (писати - to write)", "options": ["писала", "писав", "писали"], "correctIndex": 0, "explanation": "Feminine subject uses -ла ending." },
-        { "type": "fill-blank", "prompt": "Ми ___ в парку. (гуляти - to walk)", "acceptedAnswers": ["гуляли"], "hint": "Plural uses -ли ending" }
+        {
+          "type": "table-fill",
+          "prompt": "Fill in the conjugation table for 'говорити' (to speak):",
+          "table": {
+            "infinitive": "говорити",
+            "rows": [
+              { "pronoun": "я", "answer": "говорю" },
+              { "pronoun": "ти", "answer": "говориш" },
+              { "pronoun": "він/вона/воно", "answer": "говорить" },
+              { "pronoun": "ми", "answer": "говоримо" },
+              { "pronoun": "ви", "answer": "говорите" },
+              { "pronoun": "вони", "answer": "говорять" }
+            ]
+          },
+          "explanation": "'Говорити' is second conjugation: -иш, -ить, -имо, -ите, -ять."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 'робити' (to do) for 'вони' (they):",
+          "options": ["роблять", "робимо", "робить"],
+          "correctIndex": 0,
+          "explanation": "Second conjugation 'вони' form: роблять (note the consonant change: б→бл)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ти ___ українською? (говорити — to speak)",
+          "acceptedAnswers": ["говориш"],
+          "hint": "Second conjugation, 'ти' form: -иш",
+          "explanation": "'Говорити' second conjugation: ти говориш."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Change the subject from 'я' to 'ви': 'Я бачу море.'",
+          "acceptedAnswers": ["Ви бачите море.", "Ви бачите море"],
+          "explanation": "'Бачити' second conjugation: я бачу → ви бачите (-ите ending)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb is second conjugation?",
+          "options": ["любити (to love)", "читати (to read)", "працювати (to work)", "співати (to sing)"],
+          "correctIndex": 0,
+          "explanation": "'Любити' ends in -ити, which is the hallmark of second conjugation. The others end in -ати/-увати (first conjugation)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона ___ музику. (любити — to love)",
+          "acceptedAnswers": ["любить"],
+          "hint": "Second conjugation, 'вона' form: -ить",
+          "explanation": "'Любити' second conjugation: вона любить."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun with the correct form of 'вчити' (to learn/teach):",
+          "pairs": [
+            { "left": "я", "right": "вчу" },
+            { "left": "ти", "right": "вчиш" },
+            { "left": "ми", "right": "вчимо" },
+            { "left": "вони", "right": "вчать" }
+          ],
+          "explanation": "'Вчити' is second conjugation: вчу, вчиш, вчить, вчимо, вчите, вчать."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Ми говорять добре.'",
+          "incorrectText": "Ми говорять добре.",
+          "correctedText": "Ми говоримо добре.",
+          "acceptedAnswers": ["Ми говоримо добре.", "Ми говоримо добре"],
+          "explanation": "'Ми' requires -имо (not -ять which is for 'вони'): ми говоримо."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["нові", "Ви", "вчите", "слова"],
+          "correctOrder": ["Ви", "вчите", "нові", "слова"],
+          "explanation": "'Ви вчите нові слова.' — You learn new words. 'Вчити' second conjugation, ви → вчите."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Діти люблять морозиво.",
+          "acceptedAnswers": ["Діти люблять морозиво.", "Діти люблять морозиво"],
+          "explanation": "'Любити' second conjugation: діти (they) → люблять. Note: б→бл consonant change."
+        }
       ]
     },
     {
-      "sectionId": "future",
-      "title": "Future Tense",
-      "explanation": "Ukrainian has two ways to form the future. Imperfective verbs use 'буду/будеш/буде...' + infinitive. Perfective verbs conjugate directly with present-tense endings.",
+      "sectionId": "irregular",
+      "title": "Common Irregular Verbs",
+      "explanation": "Some important verbs are irregular. бути (to be) has no present form in standard speech. їсти (to eat): їм, їси, їсть, їмо, їсте, їдять. пити (to drink): п'ю, п'єш, п'є, п'ємо, п'єте, п'ють.",
+      "tip": "Memorize these — їсти, пити, давати, and бути are used constantly",
       "examples": [
-        { "uk": "Я буду читати.", "en": "I will read/be reading.", "highlight": "буду читати" },
-        { "uk": "Вона прочитає.", "en": "She will read (and finish).", "highlight": "прочитає" },
-        { "uk": "Ми будемо вчитися.", "en": "We will study.", "highlight": "будемо вчитися" }
+        { "uk": "Я їм сніданок.", "en": "I eat breakfast.", "highlight": "їм" },
+        { "uk": "Ти п'єш чай.", "en": "You drink tea.", "highlight": "п'єш" },
+        { "uk": "Вони дають подарунки.", "en": "They give gifts.", "highlight": "дають" },
+        { "uk": "Я є студент.", "en": "I am a student.", "highlight": "є" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "'Ти ___ завтра працювати.' (future of працювати - to work)", "options": ["будеш", "буду", "будемо"], "correctIndex": 0, "explanation": "'Ти будеш' is 'you will' for imperfective future." },
-        { "type": "fill-blank", "prompt": "Вони ___ вечеряти. (to have dinner, future)", "acceptedAnswers": ["будуть"], "hint": "'They will' uses 'будуть' + infinitive" }
+        {
+          "type": "table-fill",
+          "prompt": "Fill in the conjugation table for 'їсти' (to eat):",
+          "table": {
+            "infinitive": "їсти",
+            "rows": [
+              { "pronoun": "я", "answer": "їм" },
+              { "pronoun": "ти", "answer": "їси" },
+              { "pronoun": "він/вона/воно", "answer": "їсть" },
+              { "pronoun": "ми", "answer": "їмо" },
+              { "pronoun": "ви", "answer": "їсте" },
+              { "pronoun": "вони", "answer": "їдять" }
+            ]
+          },
+          "explanation": "'Їсти' is irregular. Note the changes: їм, їси, їсть, їмо, їсте, їдять."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ти ___ каву? (пити — to drink)",
+          "acceptedAnswers": ["п'єш"],
+          "hint": "Irregular: п'ю, п'єш, п'є...",
+          "explanation": "'Пити' is irregular: ти п'єш."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the 'вони' form of 'їсти' (to eat)?",
+          "options": ["їдять", "їсть", "їмо", "їсте"],
+          "correctIndex": 0,
+          "explanation": "'Їсти' irregular: вони їдять (note the д appears)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми ___ воду. (пити — to drink)",
+          "acceptedAnswers": ["п'ємо"],
+          "hint": "Irregular: п'ю, п'єш, п'є, п'ємо...",
+          "explanation": "'Пити' irregular: ми п'ємо."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In modern Ukrainian, the verb 'бути' (to be) in present tense is usually:",
+          "options": [
+            "Omitted entirely or replaced by 'є'",
+            "Conjugated like regular verbs",
+            "Used only in past tense"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Бути' has no distinct present conjugation in everyday speech. 'Є' is used for emphasis or in formal/written contexts."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Change the subject from 'я' to 'він': 'Я їм яблуко.'",
+          "acceptedAnswers": ["Він їсть яблуко.", "Він їсть яблуко"],
+          "explanation": "'Їсти' irregular: я їм → він їсть."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun with the correct form of 'пити' (to drink):",
+          "pairs": [
+            { "left": "я", "right": "п'ю" },
+            { "left": "ти", "right": "п'єш" },
+            { "left": "вона", "right": "п'є" },
+            { "left": "вони", "right": "п'ють" }
+          ],
+          "explanation": "'Пити' irregular: п'ю, п'єш, п'є, п'ємо, п'єте, п'ють."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Вони їсть вечерю.'",
+          "incorrectText": "Вони їсть вечерю.",
+          "correctedText": "Вони їдять вечерю.",
+          "acceptedAnswers": ["Вони їдять вечерю.", "Вони їдять вечерю"],
+          "explanation": "'Їсть' is the він/вона form. For 'вони' use 'їдять'."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["сніданок", "їмо", "Ми", "разом"],
+          "correctOrder": ["Ми", "їмо", "сніданок", "разом"],
+          "explanation": "'Ми їмо сніданок разом.' — We eat breakfast together. 'Їсти' irregular: ми їмо."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Він п'є гарячий чай.",
+          "acceptedAnswers": ["Він п'є гарячий чай.", "Він п'є гарячий чай"],
+          "explanation": "'Пити' irregular: він п'є. 'Гарячий чай' = hot tea."
+        }
+      ]
+    },
+    {
+      "sectionId": "verbs-practice",
+      "title": "Verbs in Context",
+      "explanation": "Practice using present tense verbs in real sentences. Choose the correct conjugation based on the subject.",
+      "tip": "Match the verb ending to the subject: я→-ю, ти→-еш/-иш, він→-е/-ить",
+      "examples": [
+        { "uk": "Я вчу українську мову.", "en": "I study the Ukrainian language.", "highlight": "вчу" },
+        { "uk": "Ти добре говориш.", "en": "You speak well.", "highlight": "говориш" },
+        { "uk": "Вони завжди допомагають.", "en": "They always help.", "highlight": "допомагають" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Мій брат ___ у школі. (працювати — to work)",
+          "acceptedAnswers": ["працює"],
+          "hint": "First conjugation, він form: -є",
+          "explanation": "'Працювати' first conjugation: він працює."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct verb form: 'Діти ___ у парку.' (гратися — to play)",
+          "options": ["граються", "грається", "граюся"],
+          "correctIndex": 0,
+          "explanation": "'Діти' (children) = вони. 'Гратися' first conjugation: вони граються."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Я говорить по-українськи.'",
+          "incorrectText": "Я говорить по-українськи.",
+          "correctedText": "Я говорю по-українськи.",
+          "acceptedAnswers": ["Я говорю по-українськи.", "Я говорю по-українськи"],
+          "explanation": "'Говорить' is for він/вона. For 'я' use 'говорю'."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["щодня", "Ми", "українську", "вчимо"],
+          "correctOrder": ["Ми", "вчимо", "українську", "щодня"],
+          "explanation": "'Ми вчимо українську щодня.' — We learn Ukrainian every day."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Rewrite for 'ви': 'Я читаю газету.'",
+          "acceptedAnswers": ["Ви читаєте газету.", "Ви читаєте газету"],
+          "explanation": "'Читати' first conjugation: я читаю → ви читаєте."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона ___ каву з молоком. (пити — to drink)",
+          "acceptedAnswers": ["п'є"],
+          "hint": "Irregular verb, 'вона' form",
+          "explanation": "'Пити' irregular: вона п'є."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each sentence with the correct verb form:",
+          "pairs": [
+            { "left": "Я ___ книгу. (читати)", "right": "читаю" },
+            { "left": "Ти ___ пісню. (співати)", "right": "співаєш" },
+            { "left": "Він ___ урок. (вчити)", "right": "вчить" },
+            { "left": "Ми ___ разом. (працювати)", "right": "працюємо" }
+          ],
+          "explanation": "First conj.: читаю, співаєш, працюємо. Second conj.: вчить."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Ти любиш музику.",
+            "Ти любить музику.",
+            "Ти люблять музику."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Любити' second conjugation: ти любиш. '-ить' is for він/вона, '-ять' is for вони."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Ми завжди снідаємо разом.",
+          "acceptedAnswers": ["Ми завжди снідаємо разом.", "Ми завжди снідаємо разом"],
+          "explanation": "'Снідати' (to have breakfast) first conjugation: ми снідаємо. 'Завжди' = always."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Вони п'єш воду.'",
+          "incorrectText": "Вони п'єш воду.",
+          "correctedText": "Вони п'ють воду.",
+          "acceptedAnswers": ["Вони п'ють воду.", "Вони п'ють воду"],
+          "explanation": "'П'єш' is for 'ти'. For 'вони' the correct form is 'п'ють'."
+        }
       ]
     }
   ]

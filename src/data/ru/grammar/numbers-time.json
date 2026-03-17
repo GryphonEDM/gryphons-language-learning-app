@@ -1,0 +1,128 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers, Dates & Time",
+  "nameRu": "Числа, даты и время",
+  "icon": "🔢",
+  "tier": "B2",
+  "prerequisites": ["cases-genitive"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "cardinal-numbers",
+      "title": "Cardinal Numbers",
+      "tip": "один/одна/одно agrees in gender. два/две has masculine/neuter and feminine forms. Numbers 5-20 take genitive plural.",
+      "explanation": "Russian cardinal numbers: один/одна/одно (1), два/две (2), три (3), четыре (4), пять (5), шесть (6), семь (7), восемь (8), девять (9), десять (10). Teens: одиннадцать (11)...девятнадцать (19). Tens: двадцать (20), тридцать (30), сорок (40), пятьдесят (50), шестьдесят (60), семьдесят (70), восемьдесят (80), девяносто (90), сто (100). 'Один/одна/одно' agrees in gender; 'два/две' has masculine/neuter and feminine forms.",
+      "examples": [
+        { "ru": "один мальчик, одна девочка, одно окно", "en": "one boy, one girl, one window", "highlight": "один/одна/одно" },
+        { "ru": "два брата, две сестры", "en": "two brothers, two sisters", "highlight": "два/две" },
+        { "ru": "двадцать пять", "en": "twenty-five", "highlight": "двадцать пять" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you say 'one book' (книга is feminine)?", "options": ["одна книга", "один книга", "одно книга"], "correctIndex": 0, "explanation": "'Книга' is feminine, so use 'одна': одна книга." },
+        { "type": "fill-blank", "prompt": "___ сестры пришли в гости. (two sisters — fem.)", "acceptedAnswers": ["Две"], "hint": "Feminine form of два", "explanation": "'Две' is the feminine form of 'два'. Сестра is feminine, so: две сестры." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "11", "right": "одиннадцать" },
+          { "left": "15", "right": "пятнадцать" },
+          { "left": "20", "right": "двадцать" },
+          { "left": "40", "right": "сорок" }
+        ], "explanation": "Teens add -надцать to the base number. 'Сорок' (40) is irregular — not formed from четыре." },
+        { "type": "fill-blank", "prompt": "В классе ___ учеников. (30)", "acceptedAnswers": ["тридцать"], "hint": "три + дцать", "explanation": "Тридцать (30). Tens from 50-80 use -десят: пятьдесят, шестьдесят..." },
+        { "type": "multiple-choice", "prompt": "How do you say 57?", "options": ["пятьдесят семь", "пятидесят семь", "пять десять семь"], "correctIndex": 0, "explanation": "57 = пятьдесят (50) + семь (7) = пятьдесят семь." },
+        { "type": "transformation", "prompt": "Write the number in words:", "baseWord": "93", "context": "Бабушке ___ года.", "acceptedAnswers": ["девяносто три"], "hint": "90 + 3", "explanation": "93 = девяносто (90) + три (3)." },
+        { "type": "fill-blank", "prompt": "У меня ___ рублей. (100)", "acceptedAnswers": ["сто"], "hint": "A round number", "explanation": "Сто = 100. 'Сто рублей' uses genitive plural after numbers 5+." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "У неё два сестры.", "correctedText": "У неё две сестры.", "acceptedAnswers": ["две"], "explanation": "'Сестра' is feminine, so use 'две' (not masculine 'два'): две сестры." },
+        { "type": "multiple-choice", "prompt": "How do you say 'one window' (окно is neuter)?", "options": ["одно окно", "один окно", "одна окно"], "correctIndex": 0, "explanation": "'Окно' is neuter, so use 'одно': одно окно." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Двадцать три студента изучают русский.", "acceptedAnswers": ["Двадцать три студента изучают русский.", "Двадцать три студента изучают русский"], "explanation": "23 = двадцать три. After 2-4 (and compounds ending in 2-4), nouns take genitive singular: студента." }
+      ]
+    },
+    {
+      "sectionId": "numbers-cases",
+      "title": "Numbers with Cases",
+      "tip": "1 + nominative singular (один студент). 2-4 + genitive singular (два студента). 5-20 + genitive plural (пять студентов). Compound numbers follow the last digit.",
+      "explanation": "Numbers govern different noun cases: 1 + nominative singular (один студент). 2-4 + genitive singular (два студента, три книги). 5-20 + genitive plural (пять студентов, десять книг). For compound numbers, the last digit determines the case: 21 студент, 22 студента, 25 студентов.",
+      "examples": [
+        { "ru": "один студент", "en": "one student (nom. sing.)", "highlight": "студент" },
+        { "ru": "три студента", "en": "three students (gen. sing.)", "highlight": "студента" },
+        { "ru": "пять студентов", "en": "five students (gen. pl.)", "highlight": "студентов" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Два ___. (книга — book)", "options": ["книги", "книг", "книга"], "correctIndex": 0, "explanation": "After 2-4, nouns take genitive singular: две книги." },
+        { "type": "fill-blank", "prompt": "Пять ___. (студент — student, gen. pl.)", "acceptedAnswers": ["студентов"], "hint": "After 5+, genitive plural", "explanation": "After 5-20, nouns take genitive plural: пять студентов." },
+        { "type": "multiple-choice", "prompt": "Двадцать один ___. (год — year)", "options": ["год", "года", "лет"], "correctIndex": 0, "explanation": "Compound numbers ending in 1 take nominative singular: двадцать один год." },
+        { "type": "transformation", "prompt": "Complete with the correct noun form:", "baseWord": "месяц (month)", "context": "Три ___.", "acceptedAnswers": ["месяца"], "hint": "2-4 + genitive singular", "explanation": "After 2-4: три месяца (genitive singular)." },
+        { "type": "fill-blank", "prompt": "Тринадцать ___. (день — day, gen. pl.)", "acceptedAnswers": ["дней"], "hint": "After 13 (5-20 range), genitive plural", "explanation": "Тринадцать дней. Numbers 5-20 require genitive plural. Genitive plural of 'день' is 'дней'." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "У меня есть четыре книг.", "correctedText": "У меня есть четыре книги.", "acceptedAnswers": ["книги"], "explanation": "After 2-4, use genitive singular: четыре книги (not genitive plural 'книг')." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "1 + noun", "right": "nominative singular" },
+          { "left": "2-4 + noun", "right": "genitive singular" },
+          { "left": "5-20 + noun", "right": "genitive plural" },
+          { "left": "21 + noun", "right": "nominative singular" }
+        ], "explanation": "The case of the noun depends on the last digit: 1=nom.sg., 2-4=gen.sg., 5-20=gen.pl." },
+        { "type": "fill-blank", "prompt": "Двадцать два ___. (студент — student)", "acceptedAnswers": ["студента"], "hint": "Ends in 2 → genitive singular", "explanation": "22 ends in 2, so: двадцать два студента (genitive singular)." },
+        { "type": "multiple-choice", "prompt": "Сто ___. (рубль — ruble)", "options": ["рублей", "рубля", "рубль"], "correctIndex": 0, "explanation": "100 is in the 5+ range, so genitive plural: сто рублей." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I have five brothers.", "words": ["У", "меня", "пять", "братьев"], "correctOrder": ["У", "меня", "пять", "братьев"], "distractors": ["братья", "брат"], "explanation": "After пять (5), genitive plural is required: братьев. Not 'братья' (nom. pl.) or 'брат' (nom. sg.)." }
+      ]
+    },
+    {
+      "sectionId": "telling-time",
+      "title": "Telling Time",
+      "tip": "Который час? (What time is it?) Full hours: один час, два часа, пять часов. Half past: половина + genitive ordinal. Quarter: четверть + genitive ordinal.",
+      "explanation": "To ask the time: Который час? (What time is it?) Hours: час (1:00), два часа (2:00), три часа (3:00), пять часов (5:00). Minutes: пять минут (5 min.), десять минут (10 min.). Half past: половина второго (1:30, 'half of the second hour'). Quarter: четверть второго (1:15). Minutes past: пять минут второго (1:05).",
+      "examples": [
+        { "ru": "Который час? — Три часа.", "en": "What time is it? — It's 3 o'clock.", "highlight": "Три часа" },
+        { "ru": "Пять минут четвёртого.", "en": "It's 3:05 (five minutes of the fourth hour).", "highlight": "Пять минут" },
+        { "ru": "Половина второго.", "en": "It's 1:30 (half of the second hour).", "highlight": "Половина второго" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you say 'It's 2 o'clock'?", "options": ["Два часа.", "Второй час.", "Две часа."], "correctIndex": 0, "explanation": "Hours use cardinal numbers + час/часа/часов: два часа." },
+        { "type": "fill-blank", "prompt": "Который час? — ___ часов. (5:00)", "acceptedAnswers": ["Пять"], "hint": "Cardinal number + часов (for 5-20)", "explanation": "5:00 = пять часов. After 5-20: часов (genitive plural)." },
+        { "type": "multiple-choice", "prompt": "How do you say 1:30?", "options": ["Половина второго.", "Половина первого.", "Полтора часа."], "correctIndex": 0, "explanation": "1:30 = 'половина второго' (half of the second hour). Russian counts into the next hour." },
+        { "type": "transformation", "prompt": "Express in Russian:", "baseWord": "2:30", "context": "Сейчас ___.", "acceptedAnswers": ["половина третьего"], "hint": "Half of the third hour", "explanation": "2:30 = половина третьего (half of the third hour)." },
+        { "type": "fill-blank", "prompt": "Встретимся в ___ часов. (at 6 o'clock)", "acceptedAnswers": ["шесть"], "hint": "Cardinal number for scheduling", "explanation": "'В шесть часов' = at 6 o'clock. Cardinal number + часов." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Половина первый.", "correctedText": "Половина первого.", "acceptedAnswers": ["первого"], "explanation": "'Половина' requires the genitive: половина первого (12:30), not nominative 'первый'." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "1:00", "right": "час" },
+          { "left": "3:30", "right": "половина четвёртого" },
+          { "left": "6:15", "right": "четверть седьмого" },
+          { "left": "12:00", "right": "двенадцать часов" }
+        ], "explanation": "Full hours use cardinals + час/часа/часов. :30 = 'половина' + genitive ordinal. :15 = 'четверть' + genitive ordinal." },
+        { "type": "fill-blank", "prompt": "Четверть ___. (4:15 — genitive of пятый)", "acceptedAnswers": ["пятого"], "hint": "Quarter of the fifth hour", "explanation": "4:15 = четверть пятого (quarter of the fifth hour, genitive)." },
+        { "type": "multiple-choice", "prompt": "How do you say 'at what time?'", "options": ["Во сколько?", "Который час?", "Какое время?"], "correctIndex": 0, "explanation": "'Во сколько?' = At what time? 'Который час?' = What time is it (now)?" },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Встретимся в половине восьмого.", "acceptedAnswers": ["Встретимся в половине восьмого.", "Встретимся в половине восьмого"], "explanation": "'В половине восьмого' = at 7:30 (at the half of the eighth). 'Встретимся' = we'll meet." }
+      ]
+    },
+    {
+      "sectionId": "days-months-dates",
+      "title": "Days, Months, Dates",
+      "tip": "Days: понедельник, вторник, среда, четверг, пятница, суббота, воскресенье. Dates: ordinal number (neuter genitive) + month in genitive: первого января.",
+      "explanation": "Days of the week: понедельник (Monday), вторник (Tuesday), среда (Wednesday), четверг (Thursday), пятница (Friday), суббота (Saturday), воскресенье (Sunday). Months: январь (January), февраль (February), март (March), апрель (April), май (May), июнь (June), июль (July), август (August), сентябрь (September), октябрь (October), ноябрь (November), декабрь (December). Dates use neuter genitive ordinal + genitive month: первого января (January 1st).",
+      "examples": [
+        { "ru": "Сегодня понедельник.", "en": "Today is Monday.", "highlight": "понедельник" },
+        { "ru": "Мой день рождения пятого мая.", "en": "My birthday is May 5th.", "highlight": "пятого мая" },
+        { "ru": "В среду я пойду к врачу.", "en": "On Wednesday I'll go to the doctor.", "highlight": "среду" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which is 'Wednesday' in Russian?", "options": ["среда", "четверг", "пятница"], "correctIndex": 0, "explanation": "Среда = Wednesday. It comes from 'середина' (middle) — the middle of the work week." },
+        { "type": "fill-blank", "prompt": "Новый год — первого ___. (January, genitive)", "acceptedAnswers": ["января"], "hint": "Genitive of январь", "explanation": "Dates use genitive for the month: первого января (January 1st). Январь → января." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "понедельник", "right": "Monday" },
+          { "left": "среда", "right": "Wednesday" },
+          { "left": "пятница", "right": "Friday" },
+          { "left": "воскресенье", "right": "Sunday" }
+        ], "explanation": "Days of the week in Russian. Note: 'воскресенье' (Sunday) is related to 'воскресение' (resurrection)." },
+        { "type": "transformation", "prompt": "Express this date in Russian:", "baseWord": "March 8", "context": "Праздник — ___.", "acceptedAnswers": ["восьмого марта"], "hint": "Ordinal genitive + month genitive", "explanation": "March 8 = восьмого марта. Ordinal genitive neuter + month in genitive." },
+        { "type": "fill-blank", "prompt": "В ___ я всегда отдыхаю. (on Saturday — accusative)", "acceptedAnswers": ["субботу"], "hint": "Feminine day → accusative -у", "explanation": "'В субботу' = on Saturday. Days with feminine ending take accusative: суббота → субботу." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Мой день рождения десятое декабрь.", "correctedText": "Мой день рождения десятого декабря.", "acceptedAnswers": ["десятого декабря"], "explanation": "Dates use genitive: десятого (ordinal gen.) декабря (month gen.). Not nominative forms." },
+        { "type": "multiple-choice", "prompt": "How do you say 'on Thursday'?", "options": ["в четверг", "в четверге", "на четверг"], "correctIndex": 0, "explanation": "'В четверг' = on Thursday. Masculine days use 'в' + accusative (same as nominative for these nouns)." },
+        { "type": "fill-blank", "prompt": "Лето начинается первого ___. (June, genitive)", "acceptedAnswers": ["июня"], "hint": "Genitive of июнь", "explanation": "Июнь → июня (genitive). Summer starts on June 1st: первого июня." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "январь", "right": "January" },
+          { "left": "апрель", "right": "April" },
+          { "left": "август", "right": "August" },
+          { "left": "ноябрь", "right": "November" }
+        ], "explanation": "Russian months. Most end in -ь (soft sign) except март, август." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "My birthday is on September 15th.", "words": ["Мой", "день", "рождения", "пятнадцатого", "сентября"], "correctOrder": ["Мой", "день", "рождения", "пятнадцатого", "сентября"], "distractors": ["пятнадцать", "сентябрь"], "explanation": "Dates require ordinal genitive (пятнадцатого) + month genitive (сентября). Not cardinal numbers or nominative forms." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "lessonId": "complex-sentences",
+  "nameEn": "Complex Sentences",
+  "nameUk": "Складні речення",
+  "icon": "🔗",
+  "tier": "B2",
+  "prerequisites": ["verbs-mood"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "conjunctions",
+      "title": "Conjunctions",
+      "explanation": "Ukrainian conjunctions connect clauses: і/та (and), але (but), або (or), тому що (because), щоб (in order to), якщо (if), коли (when), хоча (although). 'Та' is a synonym for 'і' but sounds more literary. 'Щоб' requires the past tense form after it.",
+      "examples": [
+        { "uk": "Я вчуся, тому що хочу знати українську.", "en": "I study because I want to know Ukrainian.", "highlight": "тому що" },
+        { "uk": "Він прийшов, щоб допомогти.", "en": "He came in order to help.", "highlight": "щоб" },
+        { "uk": "Хоча було холодно, ми пішли гуляти.", "en": "Although it was cold, we went for a walk.", "highlight": "Хоча" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я прийшов, ___ допомогти тобі. (in order to)", "options": ["щоб", "тому що", "якщо"], "correctIndex": 0, "explanation": "'Щоб' means 'in order to' and introduces a purpose clause." },
+        { "type": "fill-blank", "prompt": "Він не прийшов, ___ був хворий. (because)", "acceptedAnswers": ["тому що", "бо"], "hint": "Reason/cause conjunction", "explanation": "'Тому що' and 'бо' both mean 'because'. 'Бо' is more colloquial." },
+        { "type": "multiple-choice", "prompt": "___ ти хочеш, я допоможу. (If)", "options": ["Якщо", "Щоб", "Коли"], "correctIndex": 0, "explanation": "'Якщо' means 'if' for real conditions (not hypothetical 'якби')." },
+        { "type": "transformation", "prompt": "Connect the sentences with 'хоча' (although):", "baseWord": "Він втомився. Він продовжив працювати.", "context": "___ він втомився, він продовжив працювати.", "acceptedAnswers": ["Хоча"], "hint": "'Although' at the beginning", "explanation": "'Хоча він втомився' = although he was tired. 'Хоча' introduces a concessive clause." },
+        { "type": "fill-blank", "prompt": "Я не знаю, ___ він прийде. (whether/if)", "acceptedAnswers": ["чи"], "hint": "Introduces indirect yes/no questions", "explanation": "'Чи' introduces indirect questions meaning 'whether/if'." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Він читає щоб вивчити мову.", "errorWord": "читає", "acceptedAnswers": ["читає,"], "explanation": "A comma is needed before 'щоб': 'Він читає, щоб вивчити мову.' Ukrainian requires a comma before subordinating conjunctions." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "тому що / бо", "right": "because" },
+          { "left": "щоб", "right": "in order to" },
+          { "left": "хоча", "right": "although" },
+          { "left": "якщо", "right": "if" }
+        ], "explanation": "These four subordinating conjunctions are essential for complex sentences." },
+        { "type": "multiple-choice", "prompt": "Ти можеш ___ залишитися, ___ піти. (either...or)", "options": ["або...або", "і...і", "ні...ні"], "correctIndex": 0, "explanation": "'Або...або' means 'either...or'. 'І...і' = 'both...and'. 'Ні...ні' = 'neither...nor'." },
+        { "type": "fill-blank", "prompt": "___ я прийшов додому, мама вже готувала вечерю. (When)", "acceptedAnswers": ["Коли"], "hint": "Time conjunction", "explanation": "'Коли' means 'when' and introduces a time clause." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I'm learning Ukrainian because I love this language.", "words": ["Я", "вчу", "українську", "тому", "що", "люблю", "цю", "мову"], "distractors": ["щоб", "бо"], "validOrders": [["Я", "вчу", "українську", "тому", "що", "люблю", "цю", "мову"]], "explanation": "'Тому що' (because) connects the two clauses. Note: 'тому що' is two words." }
+      ]
+    },
+    {
+      "sectionId": "relative-clauses",
+      "title": "Relative Clauses",
+      "explanation": "Relative clauses describe a noun using який/яка/яке/які (which/that), що (that), де (where), куди (where to). 'Який' agrees in gender and number with the noun it modifies. 'Що' is invariable and more colloquial.",
+      "examples": [
+        { "uk": "Книга, яку я читаю, дуже цікава.", "en": "The book that I'm reading is very interesting.", "highlight": "яку" },
+        { "uk": "Місто, де я живу, дуже гарне.", "en": "The city where I live is very beautiful.", "highlight": "де" },
+        { "uk": "Людина, що прийшла, — мій друг.", "en": "The person who came is my friend.", "highlight": "що" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Хлопець, ___ стоїть там, — мій брат. (who/that, masc. nom.)", "options": ["який", "яка", "яке"], "correctIndex": 0, "explanation": "'Який' agrees with 'хлопець' (masculine nominative). It means 'who/that'." },
+        { "type": "fill-blank", "prompt": "Дівчина, ___ я бачив, була дуже гарна. (whom, fem. acc.)", "acceptedAnswers": ["яку"], "hint": "Feminine accusative of який", "explanation": "'Яку' is the feminine accusative form of 'який', agreeing with 'дівчина'." },
+        { "type": "transformation", "prompt": "Combine using a relative clause:", "baseWord": "Я купив книгу. Книга дуже цікава.", "context": "Книга, ___ я купив, дуже цікава.", "acceptedAnswers": ["яку"], "hint": "Feminine accusative (книгу → яку)", "explanation": "'Книга' is feminine; as the object of 'купив', the relative pronoun is accusative: яку." },
+        { "type": "multiple-choice", "prompt": "Місто, ___ ми їдемо, дуже далеко. (where to)", "options": ["куди", "де", "яке"], "correctIndex": 0, "explanation": "'Куди' means 'where to' (direction). 'Де' means 'where' (location)." },
+        { "type": "fill-blank", "prompt": "Друг, з ___ я розмовляв, живе в Києві. (whom, masc. inst.)", "acceptedAnswers": ["яким"], "hint": "Masculine instrumental of який", "explanation": "'З яким' = with whom. Instrumental masculine: який → яким." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Жінка, який прийшла, — моя мама.", "errorWord": "який", "acceptedAnswers": ["яка"], "explanation": "'Жінка' is feminine, so the relative pronoun must be 'яка' (not masculine 'який')." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "який (masc. nom.)", "right": "who/which (masculine subject)" },
+          { "left": "яку (fem. acc.)", "right": "whom/which (feminine object)" },
+          { "left": "де", "right": "where (location)" },
+          { "left": "куди", "right": "where (direction)" }
+        ], "explanation": "'Який' declines for gender, number, and case. 'Де' and 'куди' are invariable." },
+        { "type": "fill-blank", "prompt": "Діти, ___ граються у дворі, дуже голосні. (who, plural nom.)", "acceptedAnswers": ["які"], "hint": "Plural nominative of який", "explanation": "'Які' is the plural nominative, agreeing with 'діти' (children)." },
+        { "type": "multiple-choice", "prompt": "Ресторан, ___ ми їли, був дуже дорогий. (where)", "options": ["де", "куди", "який"], "correctIndex": 0, "explanation": "'Де' means 'where' (location). We ate at that restaurant (location, not direction)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Людина, яка допомогла мені, була дуже добра.", "acceptedAnswers": ["Людина, яка допомогла мені, була дуже добра.", "Людина, яка допомогла мені, була дуже добра"], "explanation": "'Яка' agrees with 'людина' (feminine). The relative clause 'яка допомогла мені' means 'who helped me'." }
+      ]
+    },
+    {
+      "sectionId": "indirect-speech",
+      "title": "Indirect Speech",
+      "explanation": "To convert direct speech to indirect speech, use 'що' (that) after verbs of speaking/thinking. Він сказав: «Я прийду» → Він сказав, що прийде. Pronouns and tenses may shift. For questions, use 'чи' (whether) or question words.",
+      "examples": [
+        { "uk": "Він сказав, що прийде завтра.", "en": "He said that he would come tomorrow.", "highlight": "що прийде" },
+        { "uk": "Вона запитала, чи я голодний.", "en": "She asked whether I was hungry.", "highlight": "чи" },
+        { "uk": "Вони сказали, що живуть у Львові.", "en": "They said they live in Lviv.", "highlight": "що живуть" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Він сказав: «Я прийду». → Він сказав, ___ прийде.", "options": ["що він", "чи він", "якщо він"], "correctIndex": 0, "explanation": "Declarative indirect speech uses 'що' (that): Він сказав, що він прийде." },
+        { "type": "fill-blank", "prompt": "Вона запитала, ___ я хочу їсти. (whether)", "acceptedAnswers": ["чи"], "hint": "For yes/no questions in indirect speech", "explanation": "'Чи' converts a yes/no question into indirect speech: 'Ти хочеш їсти?' → 'чи я хочу їсти'." },
+        { "type": "transformation", "prompt": "Convert to indirect speech:", "baseWord": "Мама сказала: «Іди додому!»", "context": "Мама сказала, ___ я йшов додому.", "acceptedAnswers": ["щоб"], "hint": "Commands become щоб + past tense", "explanation": "Imperatives in indirect speech use 'щоб' + past tense: Іди! → щоб я йшов." },
+        { "type": "multiple-choice", "prompt": "Він запитав: «Де ти живеш?» → Він запитав, ___ я живу.", "options": ["де", "чи", "що"], "correctIndex": 0, "explanation": "Wh-questions keep the question word: 'де' (where) stays in indirect speech." },
+        { "type": "fill-blank", "prompt": "Вчитель сказав, ___ ми повинні вчитися більше. (that)", "acceptedAnswers": ["що"], "hint": "Declarative indirect speech", "explanation": "'Що' introduces the reported statement after verbs of saying/thinking." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Він сказав що він прийде.", "errorWord": "сказав що", "acceptedAnswers": ["сказав, що"], "explanation": "A comma is required before 'що' in indirect speech: 'Він сказав, що він прийде.'" },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "Він сказав: «Я голодний.»", "right": "Він сказав, що він голодний." },
+          { "left": "Вона запитала: «Ти прийдеш?»", "right": "Вона запитала, чи я прийду." },
+          { "left": "Мама сказала: «Їж!»", "right": "Мама сказала, щоб я їв." },
+          { "left": "Він запитав: «Де парк?»", "right": "Він запитав, де парк." }
+        ], "explanation": "Statements → що. Yes/no questions → чи. Commands → щоб + past. Wh-questions keep the question word." },
+        { "type": "fill-blank", "prompt": "Друг сказав, ___ він переїхав у нове місто. (that)", "acceptedAnswers": ["що"], "hint": "Reported statement", "explanation": "'Що' introduces the indirect statement: He said that he moved to a new city." },
+        { "type": "multiple-choice", "prompt": "Лікар порадив, ___ я більше відпочивав. (that I rest more — command)", "options": ["щоб", "що", "чи"], "correctIndex": 0, "explanation": "Advice/commands in indirect speech use 'щоб' + past tense: щоб я відпочивав." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She said that she will come tomorrow.", "words": ["Вона", "сказала", "що", "прийде", "завтра"], "distractors": ["чи", "щоб"], "validOrders": [["Вона", "сказала", "що", "прийде", "завтра"]], "explanation": "Reported statement: сказала + що + future action. No comma needed in this word arrangement exercise." }
+      ]
+    },
+    {
+      "sectionId": "complex-practice",
+      "title": "Complex Sentence Practice",
+      "explanation": "Now let's combine conjunctions, relative clauses, and indirect speech in longer, real-world sentences. Focus on correct punctuation (commas before subordinating conjunctions) and proper agreement.",
+      "examples": [
+        { "uk": "Я думаю, що книга, яку ти мені дав, дуже цікава.", "en": "I think the book you gave me is very interesting.", "highlight": "що...яку" },
+        { "uk": "Хоча він втомився, він продовжив працювати, тому що хотів закінчити.", "en": "Although he was tired, he kept working because he wanted to finish.", "highlight": "Хоча...тому що" },
+        { "uk": "Якщо підеш у магазин, купи хліб, який я люблю.", "en": "If you go to the store, buy the bread that I like.", "highlight": "Якщо...який" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я хочу поїхати в місто, ___ живе мій друг. (where)", "options": ["де", "куди", "яке"], "correctIndex": 0, "explanation": "'Де' = where (location). My friend lives there (location, not direction)." },
+        { "type": "fill-blank", "prompt": "___ було холодно, ми пішли на прогулянку, ___ хотіли подихати свіжим повітрям. (Although...because)", "acceptedAnswers": ["Хоча...тому що", "Хоча...бо"], "hint": "Concession + reason", "explanation": "'Хоча' (although) + 'тому що/бо' (because) combine two subordinate clauses." },
+        { "type": "transformation", "prompt": "Combine into one complex sentence:", "baseWord": "Я купив книгу. Мій друг порадив цю книгу. Книга дуже цікава.", "context": "Книга, ___ мій друг порадив, дуже цікава.", "acceptedAnswers": ["яку"], "hint": "Feminine accusative relative pronoun", "explanation": "'Яку' refers to 'книга' (feminine) as the object of 'порадив' (recommended)." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Він сказав що хоча він втомився але прийде.", "errorWord": "але", "acceptedAnswers": ["він"], "explanation": "With 'хоча' (although), you don't need 'але' (but). Correct: Він сказав, що, хоча він втомився, прийде." },
+        { "type": "multiple-choice", "prompt": "Я не знаю, ___ він прийде, ___ ні. (whether...or)", "options": ["чи...чи", "або...або", "що...що"], "correctIndex": 0, "explanation": "'Чи...чи' = whether...or (in indirect questions)." },
+        { "type": "fill-blank", "prompt": "Вчитель, ___ нас навчає, сказав, ___ завтра буде контрольна. (who...that)", "acceptedAnswers": ["який...що", "яка...що"], "hint": "Relative clause + indirect speech", "explanation": "'Який/яка' introduces the relative clause about the teacher. 'Що' introduces indirect speech." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "Хоча він хворий, він працює.", "right": "Although he's sick, he works." },
+          { "left": "Якщо підеш дощ, візьми парасольку.", "right": "If it rains, take an umbrella." },
+          { "left": "Він вчиться, щоб здати іспит.", "right": "He studies in order to pass the exam." },
+          { "left": "Я знаю людину, яка тут працює.", "right": "I know the person who works here." }
+        ], "explanation": "Each sentence combines a main clause with a subordinate clause using different conjunctions." },
+        { "type": "fill-blank", "prompt": "Я прийду, ___ закінчу роботу. (when/as soon as)", "acceptedAnswers": ["коли"], "hint": "Time conjunction", "explanation": "'Коли' (when) introduces a time clause: I'll come when I finish work." },
+        { "type": "multiple-choice", "prompt": "Which sentence is punctuated correctly?", "options": ["Я думаю, що він правий, хоча інші не згодні.", "Я думаю що він правий хоча інші не згодні.", "Я думаю, що він правий хоча інші не згодні."], "correctIndex": 0, "explanation": "Commas are required before each subordinating conjunction: перед 'що' and перед 'хоча'." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Якщо ти хочеш, щоб я прийшов, скажи мені.", "acceptedAnswers": ["Якщо ти хочеш, щоб я прийшов, скажи мені.", "Якщо ти хочеш, щоб я прийшов, скажи мені"], "explanation": "This sentence combines 'якщо' (if) with 'щоб' (so that) + past tense, and an imperative 'скажи' (tell)." }
+      ]
+    }
+  ]
+}

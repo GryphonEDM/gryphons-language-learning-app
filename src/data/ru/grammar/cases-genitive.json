@@ -1,0 +1,139 @@
+{
+  "lessonId": "cases-genitive",
+  "nameEn": "Genitive Case",
+  "nameRu": "Родительный падеж",
+  "icon": "📏",
+  "tier": "A2",
+  "prerequisites": ["cases-nom-acc"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "possession",
+      "title": "Genitive for Possession",
+      "explanation": "The genitive case answers 'whose?' (чей? чья? чьё?). It shows that something belongs to someone or something. Masculine nouns ending in a consonant add -а or -у. Feminine nouns change -а to -ы/-и. Neuter nouns change -о to -а, -е to -я.",
+      "tip": "Masc: add -а | Fem: -а→-ы/-и | Neuter: -о→-а",
+      "examples": [
+        { "ru": "Это книга мамы.", "en": "This is mom's book.", "highlight": "мамы" },
+        { "ru": "Машина папы.", "en": "Dad's car.", "highlight": "папы" },
+        { "ru": "Центр города.", "en": "The center of the city.", "highlight": "города" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Чья это сумка? (сестра)", "options": ["сестры", "сестру", "сестрой"], "correctIndex": 0, "explanation": "Feminine nouns ending in -а change to -ы in the genitive: сестра → сестры." },
+        { "type": "fill-blank", "prompt": "Это телефон ___. (брат)", "acceptedAnswers": ["брата"], "hint": "Masculine nouns add -а in the genitive.", "explanation": "Брат → брата. Masculine nouns ending in a consonant add -а in the genitive case." },
+        { "type": "transformation", "prompt": "Put the word in the genitive case: 'Это дом ___.' (мама)", "acceptedAnswers": ["мамы"], "hint": "-а → -ы", "explanation": "Мама → мамы. Feminine nouns ending in -а change to -ы in the genitive." },
+        { "type": "matching", "prompt": "Match the nominative form to its genitive:", "pairs": [
+          { "left": "папа", "right": "папы" },
+          { "left": "мама", "right": "мамы" },
+          { "left": "город", "right": "города" },
+          { "left": "школа", "right": "школы" },
+          { "left": "друг", "right": "друга" }
+        ], "explanation": "Masculine: add -а; feminine -а → -ы; город → города." },
+        { "type": "fill-blank", "prompt": "Это комната ___. (девочка)", "acceptedAnswers": ["девочки"], "hint": "Feminine nouns: -а → -и after к.", "explanation": "Девочка → девочки. After г, к, х, the feminine genitive ending is -и (not -ы)." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Это машина папу.'", "incorrectText": "Это машина папу.", "correctedText": "Это машина папы.", "acceptedAnswers": ["Это машина папы.", "Это машина папы"], "explanation": "The genitive of папа is папы, not папу. Папу is the accusative form." },
+        { "type": "multiple-choice", "prompt": "Это окно ___. (здание — building, n.)", "options": ["здания", "здание", "зданию"], "correctIndex": 0, "explanation": "Здание → здания. Neuter nouns ending in -е change to -я in the genitive." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Это ручка учителя.", "acceptedAnswers": ["Это ручка учителя.", "Это ручка учителя"], "explanation": "Учитель → учителя. Masculine nouns ending in -ь change to -я in the genitive." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "This is the teacher's book.", "words": ["Это", "книга", "учителя"], "correctOrder": ["Это", "книга", "учителя"], "explanation": "The possessor in the genitive (учителя) follows the noun it modifies (книга)." },
+        { "type": "table-fill", "prompt": "Complete the genitive forms:", "headers": ["Nominative", "Genitive"], "rows": [
+          { "label": "подруга", "answer": "подруги", "prefilled": false },
+          { "label": "отец", "answer": "отца", "prefilled": false },
+          { "label": "море", "answer": "моря", "prefilled": false },
+          { "label": "сосед", "answer": "соседа", "prefilled": false },
+          { "label": "книга", "answer": "книги", "prefilled": false }
+        ], "explanation": "Подруга → подруги (-а → -и after г); отец → отца (fleeting vowel); море → моря (-е → -я); сосед → соседа (add -а); книга → книги (-а → -и after г)." }
+      ]
+    },
+    {
+      "sectionId": "absence",
+      "title": "Genitive for Absence (нет + genitive)",
+      "explanation": "The genitive case is used with нет (there is no / there isn't) to express absence. The noun that is absent goes into the genitive case. Нет + genitive = 'there is no...'. Also used with 'у меня нет' (I don't have).",
+      "tip": "нет + genitive = 'there is no...'",
+      "examples": [
+        { "ru": "Нет воды.", "en": "There is no water.", "highlight": "воды" },
+        { "ru": "Нет времени.", "en": "There is no time.", "highlight": "времени" },
+        { "ru": "Здесь нет магазина.", "en": "There is no store here.", "highlight": "магазина" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Нет ___. (молоко — milk)", "options": ["молока", "молоко", "молоку"], "correctIndex": 0, "explanation": "Neuter nouns: -о → -а in the genitive. Молоко → молока." },
+        { "type": "fill-blank", "prompt": "У меня нет ___. (время — time)", "acceptedAnswers": ["времени"], "hint": "Nouns on -мя have genitive in -мени.", "explanation": "Время → времени. Nouns ending in -мя have special declension: -мени in the genitive." },
+        { "type": "fill-blank", "prompt": "Здесь нет ___. (вода — water)", "acceptedAnswers": ["воды"], "hint": "Feminine: -а → -ы", "explanation": "Вода → воды. Feminine nouns ending in -а change to -ы in the genitive." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Нет хлеб на столе.'", "incorrectText": "Нет хлеб на столе.", "correctedText": "Нет хлеба на столе.", "acceptedAnswers": ["Нет хлеба на столе.", "Нет хлеба на столе"], "explanation": "After нет, the noun must be in the genitive case: хлеб → хлеба." },
+        { "type": "multiple-choice", "prompt": "В классе нет ___. (учительница — female teacher)", "options": ["учительницы", "учительница", "учительницу"], "correctIndex": 0, "explanation": "Учительница → учительницы. Feminine nouns ending in -а change to -ы in the genitive." },
+        { "type": "transformation", "prompt": "Transform using нет: 'У нас нет ___.' (сахар — sugar)", "acceptedAnswers": ["сахара"], "hint": "Masculine, add -а", "explanation": "Сахар → сахара. Masculine nouns add -а in the genitive." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "There are no students here.", "words": ["Здесь", "нет", "студентов"], "correctOrder": ["Здесь", "нет", "студентов"], "explanation": "Нет requires the genitive case: студенты → студентов (genitive plural)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "У меня нет денег.", "acceptedAnswers": ["У меня нет денег.", "У меня нет денег"], "explanation": "Деньги → денег (genitive plural). Нет always takes the genitive." },
+        { "type": "matching", "prompt": "Match each noun to its genitive form used with нет:", "pairs": [
+          { "left": "соль", "right": "соли" },
+          { "left": "хлеб", "right": "хлеба" },
+          { "left": "кофе", "right": "кофе" },
+          { "left": "чай", "right": "чая" },
+          { "left": "мясо", "right": "мяса" }
+        ], "explanation": "Соль → соли (fem -ь → -и); хлеб → хлеба (masc +а); кофе is indeclinable; чай → чая (masc +я after й); мясо → мяса (-о → -а)." },
+        { "type": "multiple-choice", "prompt": "Сегодня нет ___. (солнце — sun)", "options": ["солнца", "солнце", "солнцу"], "correctIndex": 0, "explanation": "Солнце → солнца. Neuter nouns ending in -це change to -ца in the genitive." }
+      ]
+    },
+    {
+      "sectionId": "prepositions-gen",
+      "title": "Genitive After Prepositions",
+      "explanation": "Several important prepositions require the genitive case: от (from), до (to/until), без (without), из (from/out of), для (for), после (after), около (near), у (at/by/possession).",
+      "tip": "от, до, без, из, для, после, около, у → all need genitive!",
+      "examples": [
+        { "ru": "От Москвы до Петербурга.", "en": "From Moscow to Petersburg.", "highlight": "Москвы" },
+        { "ru": "Без сахара.", "en": "Without sugar.", "highlight": "сахара" },
+        { "ru": "Для мамы.", "en": "For mom.", "highlight": "мамы" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я иду до ___. (школа — school)", "options": ["школы", "школа", "школу"], "correctIndex": 0, "explanation": "До + genitive: школа → школы." },
+        { "type": "fill-blank", "prompt": "Кофе без ___. (молоко — milk)", "acceptedAnswers": ["молока"], "hint": "Без + genitive; neuter -о → -а", "explanation": "Без requires the genitive case: молоко → молока." },
+        { "type": "fill-blank", "prompt": "Он приехал от ___. (бабушка — grandmother)", "acceptedAnswers": ["бабушки"], "hint": "От + genitive; feminine -а → -и after к", "explanation": "От requires genitive: бабушка → бабушки. After к, the feminine genitive ending is -и." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Я купил подарок для мама.'", "incorrectText": "Я купил подарок для мама.", "correctedText": "Я купил подарок для мамы.", "acceptedAnswers": ["Я купил подарок для мамы.", "Я купил подарок для мамы"], "explanation": "Для requires the genitive case: мама → мамы." },
+        { "type": "matching", "prompt": "Match each preposition phrase to its correct form:", "pairs": [
+          { "left": "от (друг)", "right": "от друга" },
+          { "left": "до (город)", "right": "до города" },
+          { "left": "без (соль)", "right": "без соли" },
+          { "left": "для (сестра)", "right": "для сестры" },
+          { "left": "после (урок)", "right": "после урока" }
+        ], "explanation": "Each preposition requires the genitive: друг → друга, город → города, соль → соли, сестра → сестры, урок → урока." },
+        { "type": "transformation", "prompt": "Put the noun in the correct case after the preposition: 'Он пришёл после ___.' (работа)", "acceptedAnswers": ["работы"], "hint": "После + genitive; feminine -а → -ы", "explanation": "После requires genitive: работа → работы." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I came from the store.", "words": ["Я", "пришёл", "из", "магазина"], "correctOrder": ["Я", "пришёл", "из", "магазина"], "explanation": "Из (from) requires the genitive case: магазин → магазина." },
+        { "type": "multiple-choice", "prompt": "Мы живём около ___. (парк — park)", "options": ["парка", "парк", "парку"], "correctIndex": 0, "explanation": "Около + genitive: парк → парка." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Он идёт до врача.", "acceptedAnswers": ["Он идёт до врача.", "Он идёт до врача"], "explanation": "До + genitive: врач → врача. Masculine animate nouns add -а." },
+        { "type": "fill-blank", "prompt": "Я вышел из ___. (дом — house)", "acceptedAnswers": ["дома"], "hint": "Из + genitive; дом → дома.", "explanation": "Дом → дома in the genitive. Из requires the genitive case." }
+      ]
+    },
+    {
+      "sectionId": "numbers",
+      "title": "Genitive with Numbers",
+      "explanation": "Numbers affect the case of the noun: 1 = nominative singular; 2, 3, 4 = genitive singular; 5-20 and compound numbers ending in 5-9, 0 = genitive plural. This is one of the trickiest parts of Russian grammar.",
+      "tip": "1 = nom. sg. | 2-4 = gen. sg. | 5+ = gen. pl.",
+      "examples": [
+        { "ru": "Одна книга.", "en": "One book. (nominative)", "highlight": "книга" },
+        { "ru": "Две книги.", "en": "Two books. (genitive singular)", "highlight": "книги" },
+        { "ru": "Пять книг.", "en": "Five books. (genitive plural)", "highlight": "книг" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Три ___. (студент — student)", "options": ["студента", "студент", "студентов"], "correctIndex": 0, "explanation": "After 2, 3, 4 we use the genitive singular: три студента." },
+        { "type": "fill-blank", "prompt": "Два ___. (час — hour)", "acceptedAnswers": ["часа"], "hint": "2, 3, 4 + genitive singular", "explanation": "After два, три, четыре, the noun takes the genitive singular form: час → часа." },
+        { "type": "multiple-choice", "prompt": "Шесть ___. (день — day)", "options": ["дней", "дня", "день"], "correctIndex": 0, "explanation": "After 5 and above, the noun takes the genitive plural: день → дней." },
+        { "type": "fill-blank", "prompt": "Пять ___. (минута — minute)", "acceptedAnswers": ["минут"], "hint": "5+ takes genitive plural; feminine nouns drop the ending.", "explanation": "Минута → минут (genitive plural). Feminine nouns ending in -а drop the -а." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'У меня есть три собака.'", "incorrectText": "У меня есть три собака.", "correctedText": "У меня есть три собаки.", "acceptedAnswers": ["У меня есть три собаки.", "У меня есть три собаки"], "explanation": "After три, the noun takes the genitive singular: собака → собаки." },
+        { "type": "transformation", "prompt": "Use the correct form after the number: 'Я ждал семь ___.' (месяц — month)", "acceptedAnswers": ["месяцев"], "hint": "7 requires genitive plural: -ев", "explanation": "Месяц → месяцев (genitive plural). After 5+, masculine nouns often take -ов/-ев." },
+        { "type": "matching", "prompt": "Match each number phrase to the correct noun form:", "pairs": [
+          { "left": "один (день)", "right": "один день" },
+          { "left": "два (дня)", "right": "два дня" },
+          { "left": "пять (дней)", "right": "пять дней" },
+          { "left": "четыре (книги)", "right": "четыре книги" },
+          { "left": "десять (книг)", "right": "десять книг" }
+        ], "explanation": "1 = nominative; 2-4 = genitive singular; 5+ = genitive plural." },
+        { "type": "multiple-choice", "prompt": "Двадцать один ___. (рубль — ruble)", "options": ["рубль", "рублей", "рубля"], "correctIndex": 0, "explanation": "Compound numbers ending in 1 (двадцать один) use the nominative singular: рубль." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I bought five apples.", "words": ["Я", "купил", "пять", "яблок"], "correctOrder": ["Я", "купил", "пять", "яблок"], "explanation": "Пять requires the genitive plural: яблоко → яблок." },
+        { "type": "table-fill", "prompt": "Complete the noun form for each number:", "headers": ["Number + Noun", "Correct Form"], "rows": [
+          { "label": "2 + год (year)", "answer": "два года", "prefilled": false },
+          { "label": "5 + год (year)", "answer": "пять лет", "prefilled": false },
+          { "label": "3 + яблоко (apple)", "answer": "три яблока", "prefilled": false },
+          { "label": "10 + яблоко (apple)", "answer": "десять яблок", "prefilled": false },
+          { "label": "4 + рубль (ruble)", "answer": "четыре рубля", "prefilled": false }
+        ], "explanation": "Год: 2-4 → года, 5+ → лет (irregular). Яблоко: 2-4 → яблока (gen. sg.), 5+ → яблок (gen. pl.). Рубль: 2-4 → рубля (gen. sg.)." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "lessonId": "pronouns-possessive",
+  "nameEn": "Possessive & Demonstrative Pronouns",
+  "nameRu": "Притяжательные и указательные местоимения",
+  "icon": "👆",
+  "tier": "A2",
+  "prerequisites": ["pronouns-personal", "nouns-basics"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "possessive",
+      "title": "Possessive Pronouns",
+      "explanation": "Possessive pronouns show ownership and agree with the noun they modify in gender, number, and case. Мой/моя/моё/мои (my), твой/твоя/твоё/твои (your sg.), наш/наша/наше/наши (our), ваш/ваша/ваше/ваши (your pl./formal). Third person forms его (his/its), её (her), их (their) — these do NOT change.",
+      "tip": "мой/моя/моё agree with the NOUN, not the owner. его/её/их never change!",
+      "examples": [
+        { "ru": "Мой брат студент.", "en": "My brother is a student.", "highlight": "Мой" },
+        { "ru": "Это её книга.", "en": "This is her book.", "highlight": "её" },
+        { "ru": "Наше место красивое.", "en": "Our place is beautiful.", "highlight": "Наше" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "___ сестра работает в больнице. (my)", "options": ["Моя", "Мой", "Моё"], "correctIndex": 0, "explanation": "Сестра is feminine, so we use the feminine possessive: моя." },
+        { "type": "fill-blank", "prompt": "___ телефон звонит. (your, informal singular)", "acceptedAnswers": ["Твой", "твой"], "hint": "Телефон is masculine → masculine possessive", "explanation": "Телефон is masculine, so the possessive is твой (your, singular informal)." },
+        { "type": "fill-blank", "prompt": "Это ___ дом. (our)", "acceptedAnswers": ["наш"], "hint": "Дом is masculine.", "explanation": "Дом is masculine, so we use наш (our, masculine form)." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Это мой комната.'", "incorrectText": "Это мой комната.", "correctedText": "Это моя комната.", "acceptedAnswers": ["Это моя комната.", "Это моя комната"], "explanation": "Комната (room) is feminine, so the possessive must be моя, not мой (masculine)." },
+        { "type": "multiple-choice", "prompt": "Где ___ очки? (your, formal/plural)", "options": ["ваши", "ваш", "ваша"], "correctIndex": 0, "explanation": "Очки (glasses) is plural, so we use the plural form ваши." },
+        { "type": "matching", "prompt": "Match each noun with the correct form of 'мой' (my):", "pairs": [
+          { "left": "друг (m.)", "right": "мой" },
+          { "left": "подруга (f.)", "right": "моя" },
+          { "left": "окно (n.)", "right": "моё" },
+          { "left": "родители (pl.)", "right": "мои" }
+        ], "explanation": "Мой changes to match gender/number: мой (m), моя (f), моё (n), мои (pl)." },
+        { "type": "transformation", "prompt": "Choose the correct possessive: '___ школа лучшая.' (our)", "acceptedAnswers": ["Наша", "наша"], "hint": "Школа is feminine.", "explanation": "Школа is feminine, so наш → наша." },
+        { "type": "multiple-choice", "prompt": "Это ___ решение. (his)", "options": ["его", "ему", "их"], "correctIndex": 0, "explanation": "Его (his) never changes form regardless of the noun's gender or number." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Their children go to school.", "words": ["Их", "дети", "ходят", "в", "школу"], "correctOrder": ["Их", "дети", "ходят", "в", "школу"], "explanation": "Их (their) never changes form. Дети is plural but их stays the same." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Моя мама работает в больнице.", "acceptedAnswers": ["Моя мама работает в больнице.", "Моя мама работает в больнице"], "explanation": "Мама is feminine, so we use моя (my, feminine form)." }
+      ]
+    },
+    {
+      "sectionId": "demonstrative",
+      "title": "Demonstrative Pronouns",
+      "explanation": "Demonstrative pronouns point to specific items. 'This/these': этот (m), эта (f), это (n), эти (pl). 'That/those': тот (m), та (f), то (n), те (pl). They agree with the noun in gender and number.",
+      "tip": "этот/эта/это/эти = this/these | тот/та/то/те = that/those",
+      "examples": [
+        { "ru": "Этот дом новый.", "en": "This house is new.", "highlight": "Этот" },
+        { "ru": "Та девушка моя сестра.", "en": "That girl is my sister.", "highlight": "Та" },
+        { "ru": "Эти яблоки вкусные.", "en": "These apples are tasty.", "highlight": "Эти" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "___ книга очень интересная. (this)", "options": ["Эта", "Этот", "Это"], "correctIndex": 0, "explanation": "Книга is feminine, so we use эта (this, feminine)." },
+        { "type": "fill-blank", "prompt": "___ мальчик мой друг. (that)", "acceptedAnswers": ["Тот", "тот"], "hint": "Мальчик is masculine → masculine demonstrative", "explanation": "Мальчик is masculine, so we use тот (that, masculine)." },
+        { "type": "fill-blank", "prompt": "___ задание сложное. (this)", "acceptedAnswers": ["Это", "это"], "hint": "Задание is neuter.", "explanation": "Задание (task) is neuter, so we use это (this, neuter)." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Этот улица длинная.'", "incorrectText": "Этот улица длинная.", "correctedText": "Эта улица длинная.", "acceptedAnswers": ["Эта улица длинная.", "Эта улица длинная"], "explanation": "Улица (street) is feminine, so it should be эта, not этот (masculine)." },
+        { "type": "multiple-choice", "prompt": "___ цветы для тебя. (these)", "options": ["Эти", "Этот", "Эта"], "correctIndex": 0, "explanation": "Цветы (flowers) is plural, so we use эти (these, plural)." },
+        { "type": "matching", "prompt": "Match each noun with the correct form of 'тот' (that):", "pairs": [
+          { "left": "мужчина (m.)", "right": "тот" },
+          { "left": "женщина (f.)", "right": "та" },
+          { "left": "дерево (n.)", "right": "то" },
+          { "left": "люди (pl.)", "right": "те" }
+        ], "explanation": "Тот changes by gender/number: тот (m), та (f), то (n), те (pl)." },
+        { "type": "transformation", "prompt": "Choose the correct demonstrative: '___ девочки из нашего класса.' (these)", "acceptedAnswers": ["Эти", "эти"], "hint": "Девочки is plural.", "explanation": "Девочки (girls) is plural, so этот → эти." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "That house is very old.", "words": ["Тот", "дом", "очень", "старый"], "correctOrder": ["Тот", "дом", "очень", "старый"], "explanation": "Дом is masculine, so we use тот (not та, which is feminine)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Эти упражнения очень полезные.", "acceptedAnswers": ["Эти упражнения очень полезные.", "Эти упражнения очень полезные"], "explanation": "Упражнения (exercises) is plural, requiring the plural demonstrative эти." },
+        { "type": "table-fill", "prompt": "Complete the demonstrative pronouns:", "headers": ["Gender/Number", "This", "That"], "rows": [
+          { "label": "Masculine", "answer": "этот / тот", "prefilled": false },
+          { "label": "Feminine", "answer": "эта / та", "prefilled": false },
+          { "label": "Neuter", "answer": "это / то", "prefilled": false },
+          { "label": "Plural", "answer": "эти / те", "prefilled": false }
+        ], "explanation": "This: этот/эта/это/эти. That: тот/та/то/те. They follow the same gender/number agreement pattern." }
+      ]
+    },
+    {
+      "sectionId": "practice",
+      "title": "Pronouns in Practice",
+      "explanation": "In real speech and writing, possessive and demonstrative pronouns combine naturally. You might say 'Эта моя книга' (this is my book) or 'Тот его друг' (that friend of his). Practice using them together in context.",
+      "tip": "Both demonstrative and possessive must agree with the noun's gender/number",
+      "examples": [
+        { "ru": "Эта моя любимая песня.", "en": "This is my favorite song.", "highlight": "Эта моя" },
+        { "ru": "Те ваши друзья пришли.", "en": "Those friends of yours came.", "highlight": "Те ваши" },
+        { "ru": "Его этот проект важный.", "en": "This project of his is important.", "highlight": "Его этот" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "___ ___ кот очень умный. (this, my) — кот is masculine", "options": ["Этот мой", "Эта моя", "Это моё"], "correctIndex": 0, "explanation": "Кот is masculine, so both the demonstrative and possessive are masculine: этот мой." },
+        { "type": "fill-blank", "prompt": "___ сумка принадлежит ей. (that, feminine)", "acceptedAnswers": ["Та", "та"], "hint": "Сумка is feminine.", "explanation": "Сумка (bag) is feminine, so we use та (that, feminine)." },
+        { "type": "fill-blank", "prompt": "Я знаю ___ вашу подругу. (this/that, feminine accusative)", "acceptedAnswers": ["эту", "ту"], "hint": "In accusative: эта → эту, та → ту", "explanation": "In the accusative case (after знаю), the feminine demonstratives become эту (this) or ту (that)." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Тот моя любимая книга.'", "incorrectText": "Тот моя любимая книга.", "correctedText": "Та моя любимая книга.", "acceptedAnswers": ["Та моя любимая книга.", "Та моя любимая книга"], "explanation": "Книга is feminine, so the demonstrative must be та (feminine), not тот (masculine)." },
+        { "type": "multiple-choice", "prompt": "___ задание наше. (this, neuter)", "options": ["Это", "Этот", "Эта"], "correctIndex": 0, "explanation": "Задание is neuter, so we use это (this, neuter)." },
+        { "type": "transformation", "prompt": "Fill in the correct pronoun forms: 'Где ___ новые ботинки?' (your, informal)", "acceptedAnswers": ["твои"], "hint": "Ботинки (shoes) is plural.", "explanation": "Ботинки is plural, so твой → твои." },
+        { "type": "matching", "prompt": "Match the sentence to the correct pronoun:", "pairs": [
+          { "left": "___ мой телефон. (this)", "right": "Это" },
+          { "left": "___ наша учительница. (that, f.)", "right": "Та" },
+          { "left": "___ его дети. (these, pl.)", "right": "Эти" },
+          { "left": "Где ___ ключи? (my, pl.)", "right": "мои" }
+        ], "explanation": "Это мой телефон (neuter 'это' used as 'this is'); Та наша учительница (fem.); Эти его дети (pl.); мои ключи (pl.)." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "These your books are on the table.", "words": ["Эти", "твои", "книги", "на", "столе"], "correctOrder": ["Эти", "твои", "книги", "на", "столе"], "explanation": "Книги is plural: эти (these, pl.) + твои (your, pl.)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Наш новый сосед очень приветливый.", "acceptedAnswers": ["Наш новый сосед очень приветливый.", "Наш новый сосед очень приветливый"], "explanation": "Сосед (neighbor) is masculine, so the possessive is наш (our, masculine)." },
+        { "type": "multiple-choice", "prompt": "Я не знаю ___ людей. (those, genitive plural)", "options": ["тех", "те", "тот"], "correctIndex": 0, "explanation": "In the genitive plural (after не знаю + plural), те → тех." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "lessonId": "prepositions",
+  "nameEn": "Prepositions",
+  "nameRu": "Предлоги",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["cases-nom-acc"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "location",
+      "title": "Location Prepositions",
+      "explanation": "Location prepositions answer 'where?' (где?). Key ones: в (in), на (on/at), под (under), над (above), около (near), между (between). В and на are used with the prepositional case for location. Под, над, между use the instrumental case.",
+      "tip": "в/на + prepositional = location | под/над/между + instrumental",
+      "examples": [
+        { "ru": "Книга на столе.", "en": "The book is on the table.", "highlight": "на столе" },
+        { "ru": "Он в комнате.", "en": "He is in the room.", "highlight": "в комнате" },
+        { "ru": "Кот под кроватью.", "en": "The cat is under the bed.", "highlight": "под кроватью" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Дети играют ___ дворе. (in the)", "options": ["во", "на", "под"], "correctIndex": 0, "explanation": "Во дворе — 'in the yard'. We use в/во for enclosed or defined spaces. Во is used before дв-." },
+        { "type": "fill-blank", "prompt": "Лампа стоит ___ столе. (on)", "acceptedAnswers": ["на"], "hint": "On a surface = на", "explanation": "На столе — 'on the table'. На indicates location on a surface." },
+        { "type": "fill-blank", "prompt": "Собака сидит ___ деревом. (under)", "acceptedAnswers": ["под"], "hint": "Under = под + instrumental", "explanation": "Под деревом — 'under the tree'. Под takes the instrumental case." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Картина висит на стена.'", "incorrectText": "Картина висит на стена.", "correctedText": "Картина висит на стене.", "acceptedAnswers": ["Картина висит на стене.", "Картина висит на стене"], "explanation": "На + location requires the prepositional case: стена → стене." },
+        { "type": "multiple-choice", "prompt": "Аптека ___ нашего дома. (near)", "options": ["около", "над", "между"], "correctIndex": 0, "explanation": "Около means 'near' and takes the genitive case: около нашего дома." },
+        { "type": "matching", "prompt": "Match the preposition to its meaning:", "pairs": [
+          { "left": "в", "right": "in" },
+          { "left": "на", "right": "on/at" },
+          { "left": "под", "right": "under" },
+          { "left": "над", "right": "above" },
+          { "left": "около", "right": "near" }
+        ], "explanation": "These are the five core location prepositions in Russian." },
+        { "type": "transformation", "prompt": "Complete with the correct preposition: 'Банк находится ___ почтой и аптекой.'", "acceptedAnswers": ["между"], "hint": "Between = между + instrumental", "explanation": "Между почтой и аптекой — 'between the post office and the pharmacy'. Между takes the instrumental." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "The bird is above the tree.", "words": ["Птица", "над", "деревом"], "correctOrder": ["Птица", "над", "деревом"], "explanation": "Над деревом — 'above the tree'. Над takes the instrumental case." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Кафе находится около парка.", "acceptedAnswers": ["Кафе находится около парка.", "Кафе находится около парка"], "explanation": "Около парка — 'near the park'. Около takes the genitive: парк → парка." },
+        { "type": "multiple-choice", "prompt": "Мы живём ___ России. (in)", "options": ["в", "на", "до"], "correctIndex": 0, "explanation": "В России — 'in Russia'. В + prepositional for location inside a country." }
+      ]
+    },
+    {
+      "sectionId": "direction",
+      "title": "Direction Prepositions",
+      "explanation": "Direction prepositions answer 'where to?' (куда?) or 'where from?' (откуда?). Key ones: до (to, as far as) + genitive, от (from, away from) + genitive, из (from, out of) + genitive, через (through, across) + accusative, в (into) + accusative, на (onto) + accusative.",
+      "tip": "в/на + accusative = direction INTO | из/от + genitive = FROM",
+      "examples": [
+        { "ru": "Я иду в школу.", "en": "I am going to school.", "highlight": "в школу" },
+        { "ru": "Он вышел из дома.", "en": "He went out of the house.", "highlight": "из дома" },
+        { "ru": "Мы идём через парк.", "en": "We are going through the park.", "highlight": "через парк" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я еду ___ Москвы. (to, as far as)", "options": ["до", "от", "из"], "correctIndex": 0, "explanation": "До Москвы — 'to/as far as Moscow'. До (to/until) takes the genitive case." },
+        { "type": "fill-blank", "prompt": "Поезд едет ___ Петербурга. (from)", "acceptedAnswers": ["из", "от"], "hint": "From a place = из or от + genitive", "explanation": "Из/от Петербурга — 'from Petersburg'. Из emphasizes 'out of', от emphasizes 'away from'." },
+        { "type": "fill-blank", "prompt": "Мы перешли ___ дорогу. (across)", "acceptedAnswers": ["через"], "hint": "Across/through = через + accusative", "explanation": "Через дорогу — 'across the road'. Через takes the accusative case." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Я иду в магазин.'", "incorrectText": "Я иду в магазин.", "correctedText": "Я иду в магазин.", "acceptedAnswers": ["Я иду в магазин.", "Я иду в магазин"], "explanation": "This sentence is actually correct! В + accusative for direction: в магазин (to the store)." },
+        { "type": "multiple-choice", "prompt": "Дети выбежали ___ школы. (out of)", "options": ["из", "до", "через"], "correctIndex": 0, "explanation": "Из школы — 'out of school'. Из means 'from/out of' and takes the genitive." },
+        { "type": "matching", "prompt": "Match each preposition to its direction meaning:", "pairs": [
+          { "left": "до", "right": "to, as far as" },
+          { "left": "от", "right": "from, away from" },
+          { "left": "из", "right": "from, out of" },
+          { "left": "через", "right": "through, across" },
+          { "left": "в (+ acc.)", "right": "into" }
+        ], "explanation": "Direction prepositions: до/от/из take the genitive; через takes the accusative; в with direction takes the accusative." },
+        { "type": "transformation", "prompt": "Complete the sentence: 'Она пошла ___ ___.' (to the hospital — больница)", "acceptedAnswers": ["в больницу"], "hint": "To the hospital: в + accusative", "explanation": "В больницу — 'to the hospital'. Больница → больницу in the accusative." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I came from work.", "words": ["Я", "пришёл", "с", "работы"], "correctOrder": ["Я", "пришёл", "с", "работы"], "explanation": "С работы — 'from work'. С + genitive for origin (paired with на for locations using на)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Он едет от бабушки к дедушке.", "acceptedAnswers": ["Он едет от бабушки к дедушке.", "Он едет от бабушки к дедушке"], "explanation": "От бабушки (from grandma, genitive) к дедушке (to grandpa, dative)." },
+        { "type": "multiple-choice", "prompt": "Она зашла ___ магазин. (into)", "options": ["в", "от", "из"], "correctIndex": 0, "explanation": "В магазин — 'into the store'. В + accusative for entering (direction)." }
+      ]
+    },
+    {
+      "sectionId": "other-common",
+      "title": "Other Common Prepositions",
+      "explanation": "Additional high-frequency prepositions: с (with) + instrumental, без (without) + genitive, для (for) + genitive, о/об (about) + prepositional, за (behind/for) + accusative or instrumental, перед (before/in front of) + instrumental.",
+      "tip": "с + instr. = with | без + gen. = without | о + prep. = about",
+      "examples": [
+        { "ru": "Кофе с молоком.", "en": "Coffee with milk.", "highlight": "с молоком" },
+        { "ru": "Чай без сахара.", "en": "Tea without sugar.", "highlight": "без сахара" },
+        { "ru": "Расскажи о себе.", "en": "Tell about yourself.", "highlight": "о себе" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я пью чай ___ сахаром. (with)", "options": ["с", "без", "для"], "correctIndex": 0, "explanation": "С сахаром — 'with sugar'. С + instrumental means 'with'." },
+        { "type": "fill-blank", "prompt": "Он живёт ___ родителей. (without)", "acceptedAnswers": ["без"], "hint": "Without = без + genitive", "explanation": "Без родителей — 'without parents'. Без takes the genitive case." },
+        { "type": "fill-blank", "prompt": "Это подарок ___ тебя. (for)", "acceptedAnswers": ["для"], "hint": "For (purpose/recipient) = для + genitive", "explanation": "Для тебя — 'for you'. Для takes the genitive case." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Мы говорили о она.'", "incorrectText": "Мы говорили о она.", "correctedText": "Мы говорили о ней.", "acceptedAnswers": ["Мы говорили о ней.", "Мы говорили о ней"], "explanation": "After a preposition, она becomes ней: о ней — 'about her'. Third-person pronouns gain н- after prepositions." },
+        { "type": "multiple-choice", "prompt": "Спасибо ___ помощь! (for — thanking)", "options": ["за", "для", "о"], "correctIndex": 0, "explanation": "Спасибо за помощь — 'thank you for the help'. За + accusative is used with благодарить/спасибо." },
+        { "type": "matching", "prompt": "Match the preposition to the case it requires:", "pairs": [
+          { "left": "с (with)", "right": "instrumental" },
+          { "left": "без (without)", "right": "genitive" },
+          { "left": "для (for)", "right": "genitive" },
+          { "left": "о (about)", "right": "prepositional" },
+          { "left": "перед (in front of)", "right": "instrumental" }
+        ], "explanation": "Each preposition governs a specific case: с/перед + instrumental; без/для + genitive; о + prepositional." },
+        { "type": "transformation", "prompt": "Complete with the correct preposition: 'Кот спрятался ___ диваном.'", "acceptedAnswers": ["за"], "hint": "Behind = за + instrumental (location)", "explanation": "За диваном — 'behind the sofa'. За + instrumental for location behind something." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I am reading a book about Russia.", "words": ["Я", "читаю", "книгу", "о", "России"], "correctOrder": ["Я", "читаю", "книгу", "о", "России"], "explanation": "О России — 'about Russia'. О takes the prepositional case." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Она стоит перед зеркалом.", "acceptedAnswers": ["Она стоит перед зеркалом.", "Она стоит перед зеркалом"], "explanation": "Перед зеркалом — 'in front of the mirror'. Перед takes the instrumental." },
+        { "type": "multiple-choice", "prompt": "Хлеб ___ маслом — это вкусно. (with)", "options": ["с", "без", "о"], "correctIndex": 0, "explanation": "С маслом — 'with butter'. С + instrumental for accompaniment." }
+      ]
+    },
+    {
+      "sectionId": "prepositions-cases",
+      "title": "Prepositions + Cases",
+      "explanation": "The most challenging aspect of Russian prepositions is knowing which case follows each one. Some prepositions change meaning depending on the case: в + accusative = direction (into), в + prepositional = location (in). На + accusative = direction (onto), на + prepositional = location (on). За + accusative = for/during, за + instrumental = behind.",
+      "tip": "Same preposition, different case = different meaning!",
+      "examples": [
+        { "ru": "Я иду в магазин. (direction → accusative)", "en": "I am going to the store.", "highlight": "в магазин" },
+        { "ru": "Я в магазине. (location → prepositional)", "en": "I am in the store.", "highlight": "в магазине" },
+        { "ru": "За столом сидит бабушка. (behind → instrumental)", "en": "Grandma is sitting at the table.", "highlight": "За столом" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Он идёт в ___. (school — direction)", "options": ["школу", "школе", "школы"], "correctIndex": 0, "explanation": "В + direction → accusative: школа → школу. He is going TO school." },
+        { "type": "fill-blank", "prompt": "Он ___ школе. (in — location)", "acceptedAnswers": ["в"], "hint": "Location = в + prepositional", "explanation": "В школе — 'in school'. Location uses в + prepositional case." },
+        { "type": "fill-blank", "prompt": "Кошка прыгнула на ___. (table — direction onto)", "acceptedAnswers": ["стол"], "hint": "На + direction → accusative; стол is masculine inanimate", "explanation": "На стол — 'onto the table'. Direction: на + accusative. Стол stays the same (inanimate masculine = nominative)." },
+        { "type": "error-correction", "prompt": "Find and fix the error: 'Книга лежит на стол.'", "incorrectText": "Книга лежит на стол.", "correctedText": "Книга лежит на столе.", "acceptedAnswers": ["Книга лежит на столе.", "Книга лежит на столе"], "explanation": "Location (lying on) requires prepositional: на столе, not на стол (which would mean direction)." },
+        { "type": "multiple-choice", "prompt": "Мы поехали ___ море. (to the sea — direction)", "options": ["на", "в", "около"], "correctIndex": 0, "explanation": "На море — 'to the sea'. With bodies of water and open spaces, Russian uses на for direction." },
+        { "type": "matching", "prompt": "Match the preposition + case to the correct meaning:", "pairs": [
+          { "left": "в + accusative", "right": "into (direction)" },
+          { "left": "в + prepositional", "right": "in (location)" },
+          { "left": "на + accusative", "right": "onto (direction)" },
+          { "left": "на + prepositional", "right": "on (location)" },
+          { "left": "за + instrumental", "right": "behind (location)" }
+        ], "explanation": "The same preposition can have different meanings depending on which case follows it." },
+        { "type": "transformation", "prompt": "Choose the correct case after the preposition: 'Мы гуляем в ___.' (парк — location)", "acceptedAnswers": ["парке"], "hint": "Location → prepositional case", "explanation": "В парке — 'in the park'. Location requires the prepositional: парк → парке." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She put the cup on the table.", "words": ["Она", "поставила", "чашку", "на", "стол"], "correctOrder": ["Она", "поставила", "чашку", "на", "стол"], "explanation": "Putting something onto → direction → на + accusative: на стол (not на столе, which is location)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Дети бегают во дворе.", "acceptedAnswers": ["Дети бегают во дворе.", "Дети бегают во дворе"], "explanation": "Во дворе — 'in the yard'. Location → в/во + prepositional." },
+        { "type": "table-fill", "prompt": "Complete the table — choose the correct form after the preposition:", "headers": ["Preposition + Noun", "Location (где?)", "Direction (куда?)"], "rows": [
+          { "label": "в + город", "answer": "в городе / в город", "prefilled": false },
+          { "label": "на + улица", "answer": "на улице / на улицу", "prefilled": false },
+          { "label": "в + лес", "answer": "в лесу / в лес", "prefilled": false },
+          { "label": "на + площадь", "answer": "на площади / на площадь", "prefilled": false }
+        ], "explanation": "Location = prepositional case (городе, улице, лесу, площади). Direction = accusative case (город, улицу, лес, площадь)." }
+      ]
+    }
+  ]
+}

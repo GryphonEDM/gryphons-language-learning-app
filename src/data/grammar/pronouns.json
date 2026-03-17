@@ -1,50 +1,286 @@
 {
-  "lessonId": "pronouns",
-  "nameEn": "Pronouns",
-  "nameUk": "Займенники",
+  "lessonId": "pronouns-personal",
+  "nameEn": "Personal Pronouns",
+  "nameUk": "Особові займенники",
   "icon": "👤",
+  "tier": "A1",
+  "prerequisites": ["alphabet"],
+  "estimatedMinutes": 15,
   "sections": [
     {
-      "sectionId": "personal",
-      "title": "Personal Pronouns",
-      "explanation": "Ukrainian personal pronouns: я (I), ти (you informal), він (he), вона (she), воно (it), ми (we), ви (you formal/plural), вони (they). They change form in different cases.",
+      "sectionId": "subject",
+      "title": "Subject Pronouns (Nominative)",
+      "explanation": "Ukrainian personal pronouns in the nominative case are used as subjects: я (I), ти (you, informal), він (he), вона (she), воно (it), ми (we), ви (you, formal/plural), вони (they). 'Ви' with a capital letter is also used as a polite form for one person.",
+      "tip": "я=I, ти=you(informal), він=he, вона=she, воно=it, ми=we, ви=you(formal/plural), вони=they",
       "examples": [
         { "uk": "Я люблю каву.", "en": "I love coffee.", "highlight": "Я" },
         { "uk": "Він працює тут.", "en": "He works here.", "highlight": "Він" },
-        { "uk": "Ви розумієте?", "en": "Do you understand?", "highlight": "Ви" }
+        { "uk": "Ви розумієте?", "en": "Do you understand?", "highlight": "Ви" },
+        { "uk": "Вони вивчають українську.", "en": "They study Ukrainian.", "highlight": "Вони" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What pronoun means 'she'?", "options": ["вона", "він", "воно"], "correctIndex": 0, "explanation": "'Вона' means 'she'. 'Він' = he, 'воно' = it." },
-        { "type": "fill-blank", "prompt": "___ вивчаємо українську. (We)", "acceptedAnswers": ["Ми", "ми"], "hint": "First person plural" },
-        { "type": "multiple-choice", "prompt": "Which is the formal 'you'?", "options": ["Ви", "Ти", "Вони"], "correctIndex": 0, "explanation": "'Ви' is formal/plural. 'Ти' is informal singular." }
+        {
+          "type": "matching",
+          "prompt": "Match each Ukrainian pronoun with its English translation:",
+          "pairs": [
+            { "left": "я", "right": "I" },
+            { "left": "ти", "right": "you (informal)" },
+            { "left": "він", "right": "he" },
+            { "left": "вона", "right": "she" }
+          ],
+          "explanation": "я=I, ти=you (informal singular), він=he, вона=she."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What pronoun means 'she'?",
+          "options": ["вона", "він", "воно"],
+          "correctIndex": 0,
+          "explanation": "'Вона' means 'she'. 'Він' = he, 'воно' = it."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ вивчаємо українську. (We)",
+          "acceptedAnswers": ["Ми", "ми"],
+          "hint": "First person plural",
+          "explanation": "'Ми' means 'we' and is the subject pronoun for first person plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the formal/polite 'you'?",
+          "options": ["Ви", "Ти", "Вони"],
+          "correctIndex": 0,
+          "explanation": "'Ви' is formal/plural. 'Ти' is informal singular."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the pronoun you hear:",
+          "audio": "Вони йдуть додому.",
+          "acceptedAnswers": ["Вони", "вони"],
+          "explanation": "'Вони' means 'they'. 'Йдуть додому' = are going home."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ грає на гітарі. (He)",
+          "acceptedAnswers": ["Він", "він"],
+          "hint": "Third person singular, masculine",
+          "explanation": "'Він' means 'he' — used for masculine subjects."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the remaining pronouns with their translations:",
+          "pairs": [
+            { "left": "воно", "right": "it" },
+            { "left": "ми", "right": "we" },
+            { "left": "ви", "right": "you (formal/plural)" },
+            { "left": "вони", "right": "they" }
+          ],
+          "explanation": "воно=it, ми=we, ви=you (formal/plural), вони=they."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Він читаємо книгу.'",
+          "incorrectText": "Він читаємо книгу.",
+          "correctedText": "Він читає книгу.",
+          "acceptedAnswers": ["Він читає книгу.", "Він читає книгу"],
+          "explanation": "'Він' (he) requires third person singular verb form 'читає', not 'читаємо' (which goes with 'ми')."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["працюємо", "разом", "Ми"],
+          "correctOrder": ["Ми", "працюємо", "разом"],
+          "explanation": "'Ми працюємо разом.' — We work together. The pronoun 'ми' is the subject."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun would you use for a table (стіл)?",
+          "options": ["він", "вона", "воно"],
+          "correctIndex": 0,
+          "explanation": "'Стіл' (table) is masculine in Ukrainian, so you use 'він' to refer to it."
+        }
       ]
     },
     {
-      "sectionId": "possessive",
-      "title": "Possessive Pronouns",
-      "explanation": "Possessive pronouns: мій/моя/моє (my), твій/твоя/твоє (your), його (his/its), її (her), наш/наша/наше (our), ваш/ваша/ваше (your), їхній/їхня/їхнє (their). They agree in gender with the noun they modify.",
+      "sectionId": "object",
+      "title": "Object Pronouns (Accusative/Dative)",
+      "explanation": "When pronouns are objects (not subjects), they change form. Accusative (direct object): мене, тебе, його, її, нас, вас, їх. Dative (indirect object — to/for whom): мені, тобі, йому, їй, нам, вам, їм.",
+      "tip": "Acc: мене, тебе, його, її | Dat: мені, тобі, йому, їй",
       "examples": [
-        { "uk": "Це мій дім.", "en": "This is my house.", "highlight": "мій" },
-        { "uk": "Де твоя книга?", "en": "Where is your book?", "highlight": "твоя" },
-        { "uk": "Це наше місто.", "en": "This is our city.", "highlight": "наше" }
+        { "uk": "Він бачить мене.", "en": "He sees me.", "highlight": "мене" },
+        { "uk": "Я дав їй квіти.", "en": "I gave her flowers.", "highlight": "їй" },
+        { "uk": "Вони знають нас.", "en": "They know us.", "highlight": "нас" },
+        { "uk": "Скажи мені.", "en": "Tell me.", "highlight": "мені" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "'Це ___ кіт.' (my, masculine)", "options": ["мій", "моя", "моє"], "correctIndex": 0, "explanation": "'Мій' is used with masculine nouns. 'Кіт' is masculine." },
-        { "type": "fill-blank", "prompt": "Де ___ сумка? (your, informal, feminine)", "acceptedAnswers": ["твоя"], "hint": "Feminine form of 'your' (informal)" }
+        {
+          "type": "matching",
+          "prompt": "Match subject pronouns with their accusative (direct object) forms:",
+          "pairs": [
+            { "left": "я →", "right": "мене" },
+            { "left": "ти →", "right": "тебе" },
+            { "left": "він →", "right": "його" },
+            { "left": "вона →", "right": "її" }
+          ],
+          "explanation": "Accusative forms: я→мене, ти→тебе, він→його, вона→її."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона бачить ___. (me)",
+          "acceptedAnswers": ["мене"],
+          "hint": "Accusative of 'я'",
+          "explanation": "The accusative form of 'я' (I) is 'мене' (me)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the dative form of 'ти' (you)?",
+          "options": ["тобі", "тебе", "ти"],
+          "correctIndex": 0,
+          "explanation": "'Тобі' is the dative (to you). 'Тебе' is accusative (you as direct object)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Дай ___ книгу. (to him)",
+          "acceptedAnswers": ["йому"],
+          "hint": "Dative of 'він'",
+          "explanation": "The dative form of 'він' (he) is 'йому' (to him)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Replace the noun with a pronoun: 'Я бачу Оксану.' → 'Я бачу ___.'",
+          "acceptedAnswers": ["її", "Я бачу її."],
+          "explanation": "Оксана (she) → її (her, accusative). 'Я бачу її.' = I see her."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Мама дала ___ подарунок.' (to us)",
+          "options": ["нам", "нас", "ми"],
+          "correctIndex": 0,
+          "explanation": "'Нам' is the dative form of 'ми' (we) — to/for us. 'Нас' is accusative."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Він знає я.'",
+          "incorrectText": "Він знає я.",
+          "correctedText": "Він знає мене.",
+          "acceptedAnswers": ["Він знає мене.", "Він знає мене"],
+          "explanation": "'Я' is nominative (subject form). As a direct object, use 'мене'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match subject pronouns with their dative (indirect object) forms:",
+          "pairs": [
+            { "left": "ми →", "right": "нам" },
+            { "left": "ви →", "right": "вам" },
+            { "left": "вони →", "right": "їм" },
+            { "left": "вона →", "right": "їй" }
+          ],
+          "explanation": "Dative: ми→нам, ви→вам, вони→їм, вона→їй."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["мені", "Розкажи", "про", "це"],
+          "correctOrder": ["Розкажи", "мені", "про", "це"],
+          "explanation": "'Розкажи мені про це.' — Tell me about it. 'Мені' = to me (dative)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Вони запросили нас на вечерю.",
+          "acceptedAnswers": ["Вони запросили нас на вечерю.", "Вони запросили нас на вечерю"],
+          "explanation": "'Нас' is the accusative of 'ми' (we → us). 'Запросили' = invited."
+        }
       ]
     },
     {
-      "sectionId": "demonstrative",
-      "title": "Demonstrative Pronouns",
-      "explanation": "Demonstrative pronouns: цей/ця/це (this), той/та/те (that). They agree in gender and number with the noun. Plural: ці (these), ті (those).",
+      "sectionId": "pronouns-practice",
+      "title": "Pronouns in Practice",
+      "explanation": "Practice using personal pronouns — both subject and object forms — in complete sentences. Pay attention to whether the pronoun is the doer (nominative) or the receiver (accusative/dative).",
+      "tip": "Subject = nominative (я, він...), direct object = accusative (мене, його...), indirect object = dative (мені, йому...)",
       "examples": [
-        { "uk": "Цей хлопець розумний.", "en": "This boy is smart.", "highlight": "Цей" },
-        { "uk": "Та дівчина гарна.", "en": "That girl is beautiful.", "highlight": "Та" },
-        { "uk": "Ці книги нові.", "en": "These books are new.", "highlight": "Ці" }
+        { "uk": "Я знаю його, а він знає мене.", "en": "I know him, and he knows me.", "highlight": "Я...його...він...мене" },
+        { "uk": "Вона дала мені книгу.", "en": "She gave me a book.", "highlight": "Вона...мені" }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "'___ будинок великий.' (This, masculine)", "options": ["Цей", "Ця", "Це"], "correctIndex": 0, "explanation": "'Цей' is used with masculine nouns." },
-        { "type": "fill-blank", "prompt": "___ книги цікаві. (These)", "acceptedAnswers": ["Ці", "ці"], "hint": "Plural form of 'this'" }
+        {
+          "type": "fill-blank",
+          "prompt": "___ подзвонив ___. (He called me.)",
+          "acceptedAnswers": ["Він подзвонив мені.", "Він подзвонив мені"],
+          "hint": "He = він, me (dative) = мені",
+          "explanation": "'Він' (he, nominative subject) подзвонив 'мені' (me, dative — called to me)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence for 'She sees them.':",
+          "options": [
+            "Вона бачить їх.",
+            "Вона бачить вони.",
+            "Її бачить вони."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Вона' (she, nominative) бачить 'їх' (them, accusative). 'Вони' is nominative only."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Ми допомагаємо вони.'",
+          "incorrectText": "Ми допомагаємо вони.",
+          "correctedText": "Ми допомагаємо їм.",
+          "acceptedAnswers": ["Ми допомагаємо їм.", "Ми допомагаємо їм"],
+          "explanation": "'Вони' is nominative. As an indirect object (to them), use dative 'їм'."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["чекає", "на", "Вона", "тебе"],
+          "correctOrder": ["Вона", "чекає", "на", "тебе"],
+          "explanation": "'Вона чекає на тебе.' — She is waiting for you. 'Тебе' = accusative of 'ти'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Replace nouns with pronouns: 'Марія дала Олегу подарунок.' → '___ дала ___ подарунок.'",
+          "acceptedAnswers": ["Вона дала йому подарунок.", "Вона дала йому подарунок"],
+          "explanation": "Марія → вона (she), Олегу (dative) → йому (to him)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Скажи ___, будь ласка. (to her)",
+          "acceptedAnswers": ["їй"],
+          "hint": "Dative of 'вона'",
+          "explanation": "'Їй' is the dative form of 'вона' — to/for her."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each sentence with the correct pronoun form:",
+          "pairs": [
+            { "left": "___ працюю. (I)", "right": "Я" },
+            { "left": "Він бачить ___. (us)", "right": "нас" },
+            { "left": "Дай ___ воду. (to me)", "right": "мені" },
+            { "left": "___ граються. (They)", "right": "Вони" }
+          ],
+          "explanation": "Subject (nominative): я, вони. Direct object (accusative): нас. Indirect object (dative): мені."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Я хочу запитати ___.' (him)",
+          "options": ["його", "він", "йому"],
+          "correctIndex": 0,
+          "explanation": "'Запитати' (to ask) takes a direct object → accusative: його (him)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type the sentence:",
+          "audio": "Вони чекають на нас біля школи.",
+          "acceptedAnswers": ["Вони чекають на нас біля школи.", "Вони чекають на нас біля школи"],
+          "explanation": "'Вони' (they, nominative) are waiting for 'нас' (us, accusative). 'Біля школи' = near school."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Тобі бачив мене.'",
+          "incorrectText": "Тобі бачив мене.",
+          "correctedText": "Ти бачив мене.",
+          "acceptedAnswers": ["Ти бачив мене.", "Ти бачив мене"],
+          "explanation": "'Тобі' is dative. The subject must be nominative: 'Ти' (you)."
+        }
       ]
     }
   ]

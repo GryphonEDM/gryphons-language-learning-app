@@ -1,0 +1,139 @@
+{
+  "lessonId": "verbs-future-aspect",
+  "nameEn": "Future Tense & Aspect",
+  "nameRu": "Будущее время и вид",
+  "icon": "⏩",
+  "tier": "B1",
+  "prerequisites": ["verbs-past"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "imperfective-future",
+      "title": "Imperfective Future",
+      "tip": "The imperfective future is formed with буду/будешь/будет/будем/будете/будут + infinitive of an imperfective verb.",
+      "explanation": "The imperfective future expresses ongoing, repeated, or habitual future actions. It is formed with буду/будешь/будет/будем/будете/будут + the infinitive of an imperfective verb. This is similar to English 'will be doing' or 'will do (regularly)'.",
+      "examples": [
+        { "ru": "Я буду читать эту книгу.", "en": "I will be reading this book.", "highlight": "буду читать" },
+        { "ru": "Она будет работать завтра.", "en": "She will work tomorrow.", "highlight": "будет работать" },
+        { "ru": "Мы будем учиться вместе.", "en": "We will study together.", "highlight": "будем учиться" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Ты ___ готовить ужин? (will you, singular)", "options": ["будешь", "буду", "будет"], "correctIndex": 0, "explanation": "Ты → будешь. The conjugation: буду, будешь, будет, будем, будете, будут." },
+        { "type": "fill-blank", "prompt": "Они ___ смотреть фильм вечером. (they will)", "acceptedAnswers": ["будут"], "hint": "Они → ?", "explanation": "Они → будут. Third person plural of быть in the future." },
+        { "type": "fill-blank", "prompt": "Мы ___ путешествовать летом. (we will)", "acceptedAnswers": ["будем"], "hint": "Мы → ?", "explanation": "Мы → будем. First person plural of быть in the future." },
+        { "type": "transformation", "prompt": "Form the imperfective future:", "baseWord": "писать", "context": "Она ___ ___ письмо.", "acceptedAnswers": ["будет писать"], "hint": "Она + будет + infinitive", "explanation": "Imperfective future: будет + писать. The action is ongoing or in progress." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я будешь читать книгу.", "correctedText": "Я буду читать книгу.", "acceptedAnswers": ["буду"], "explanation": "Я requires буду (first person), not будешь (second person: ты)." },
+        { "type": "matching", "prompt": "Match the subject to the correct form of 'быть':", "pairs": [
+          { "left": "я", "right": "буду" },
+          { "left": "ты", "right": "будешь" },
+          { "left": "он/она", "right": "будет" },
+          { "left": "мы", "right": "будем" },
+          { "left": "они", "right": "будут" }
+        ], "explanation": "Future of быть: буду, будешь, будет, будем, будете, будут." },
+        { "type": "multiple-choice", "prompt": "Which sentence is imperfective future? (ongoing action)", "options": ["Он будет работать.", "Он поработает.", "Он работал."], "correctIndex": 0, "explanation": "Будет + infinitive = imperfective future (ongoing). Поработает = perfective future. Работал = past." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "We will be watching TV in the evening.", "words": ["Мы", "будем", "смотреть", "телевизор", "вечером"], "correctOrder": ["Мы", "будем", "смотреть", "телевизор", "вечером"], "distractors": ["посмотрим"], "explanation": "Imperfective future: будем + смотреть. The action is ongoing (watching TV as a process)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Завтра я буду учить русский язык.", "acceptedAnswers": ["Завтра я буду учить русский язык.", "Завтра я буду учить русский язык"], "explanation": "Буду учить — imperfective future. The studying will be an ongoing process." },
+        { "type": "table-fill", "prompt": "Complete the imperfective future of 'работать' (to work):", "headers": ["Subject", "Future Form"], "rows": [
+          { "label": "я", "answer": "буду работать", "prefilled": false },
+          { "label": "ты", "answer": "будешь работать", "prefilled": false },
+          { "label": "он/она", "answer": "будет работать", "prefilled": false },
+          { "label": "мы", "answer": "будем работать", "prefilled": false },
+          { "label": "они", "answer": "будут работать", "prefilled": false }
+        ], "explanation": "Imperfective future = form of быть + infinitive: буду/будешь/будет/будем/будете/будут + работать." }
+      ]
+    },
+    {
+      "sectionId": "perfective-future",
+      "title": "Perfective Future",
+      "tip": "Perfective verbs conjugate like present tense verbs but have future meaning. Never use буду with perfective verbs!",
+      "explanation": "Perfective verbs express completed, one-time future actions. They conjugate like present tense verbs but have future meaning. You cannot use буду with perfective verbs! Instead, add present-tense endings directly to the perfective stem: прочитать → прочитаю, прочитаешь, прочитает, прочитаем, прочитаете, прочитают.",
+      "examples": [
+        { "ru": "Я прочитаю эту книгу.", "en": "I will read (finish reading) this book.", "highlight": "прочитаю" },
+        { "ru": "Она напишет письмо.", "en": "She will write a letter (and finish it).", "highlight": "напишет" },
+        { "ru": "Мы сделаем это завтра.", "en": "We will do this tomorrow.", "highlight": "сделаем" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я ___ домашнее задание. (сделать – to do/complete)", "options": ["сделаю", "буду сделать", "сделал"], "correctIndex": 0, "explanation": "Perfective verbs take present-tense endings for future meaning: сделать → сделаю. Never use буду + perfective!" },
+        { "type": "fill-blank", "prompt": "Ты ___ это письмо? (написать – to write/finish writing)", "acceptedAnswers": ["напишешь"], "hint": "Perfective, ты form: -ешь ending", "explanation": "Написать → напишешь (ты). Perfective conjugates with present endings but means future." },
+        { "type": "fill-blank", "prompt": "Они ___ эту задачу. (решить – to solve)", "acceptedAnswers": ["решат"], "hint": "Perfective, они: -ат ending (2nd conj.)", "explanation": "Решить → решат (они). Second conjugation perfective verb." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я буду прочитать книгу.", "correctedText": "Я прочитаю книгу.", "acceptedAnswers": ["прочитаю"], "explanation": "Never use буду with perfective verbs! Correct: Я прочитаю книгу. (perfective future)" },
+        { "type": "multiple-choice", "prompt": "Мы ___ всё до вечера. (сделать – to complete)", "options": ["сделаем", "будем сделать", "делаем"], "correctIndex": 0, "explanation": "Сделать (perfective) → сделаем (мы). Present-tense endings give future meaning for perfective verbs." },
+        { "type": "matching", "prompt": "Match each perfective verb to its 'я' future form:", "pairs": [
+          { "left": "прочитать (to read through)", "right": "прочитаю" },
+          { "left": "написать (to write)", "right": "напишу" },
+          { "left": "сделать (to do)", "right": "сделаю" },
+          { "left": "сказать (to say)", "right": "скажу" },
+          { "left": "купить (to buy)", "right": "куплю" }
+        ], "explanation": "Perfective 'я' forms: прочитаю, напишу (с→ш), сделаю, скажу (з→ж), куплю (п→пл)." },
+        { "type": "transformation", "prompt": "Conjugate the perfective verb:", "baseWord": "выучить", "context": "Она ___ этот урок.", "acceptedAnswers": ["выучит"], "hint": "Она form: -ит ending", "explanation": "Выучить → выучит (она). Second conjugation perfective: -ит for third person singular." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I will buy a gift for mom.", "words": ["Я", "куплю", "подарок", "для", "мамы"], "correctOrder": ["Я", "куплю", "подарок", "для", "мамы"], "distractors": ["буду"], "explanation": "Купить (perfective) → куплю. No буду needed for perfective future!" },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Он прочитает эту статью до утра.", "acceptedAnswers": ["Он прочитает эту статью до утра.", "Он прочитает эту статью до утра"], "explanation": "Прочитать → прочитает (он). Perfective future — he will finish reading the article by morning." },
+        { "type": "multiple-choice", "prompt": "Вы ___ нам? (помочь – to help, perfective)", "options": ["поможете", "будете помочь", "помогаете"], "correctIndex": 0, "explanation": "Помочь (perfective) → поможете (вы). г→ж in conjugation. No буду!" }
+      ]
+    },
+    {
+      "sectionId": "aspect-pairs",
+      "title": "Aspect Pairs",
+      "tip": "Most Russian verbs come in imperfective/perfective pairs. The perfective is usually formed by adding a prefix: читать → прочитать, писать → написать.",
+      "explanation": "Most Russian verbs come in pairs: imperfective (ongoing/repeated) and perfective (completed/one-time). Common ways to form perfective from imperfective: add a prefix (читать → прочитать, писать → написать, делать → сделать). Some pairs have different stems entirely (говорить → сказать, брать → взять). Learning aspect pairs is essential for fluency.",
+      "examples": [
+        { "ru": "читать → прочитать", "en": "to read → to read through (finish)", "highlight": "про-" },
+        { "ru": "писать → написать", "en": "to write → to write (complete)", "highlight": "на-" },
+        { "ru": "говорить → сказать", "en": "to speak → to say (once)", "highlight": "сказать" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the perfective pair of 'делать' (to do)?", "options": ["сделать", "проделать", "наделать"], "correctIndex": 0, "explanation": "Делать → сделать. The prefix с- makes it perfective (to complete/finish doing)." },
+        { "type": "fill-blank", "prompt": "Imperfective 'учить' (to learn) → perfective '___'", "acceptedAnswers": ["выучить"], "hint": "Prefix вы- + учить", "explanation": "Учить → выучить. The prefix вы- adds the meaning of completing the learning." },
+        { "type": "fill-blank", "prompt": "Imperfective 'есть' (to eat) → perfective '___'", "acceptedAnswers": ["съесть"], "hint": "Prefix с- + есть", "explanation": "Есть → съесть. To eat up/finish eating." },
+        { "type": "matching", "prompt": "Match the imperfective verb to its perfective pair:", "pairs": [
+          { "left": "читать (to read)", "right": "прочитать" },
+          { "left": "писать (to write)", "right": "написать" },
+          { "left": "делать (to do)", "right": "сделать" },
+          { "left": "говорить (to speak)", "right": "сказать" },
+          { "left": "брать (to take)", "right": "взять" }
+        ], "explanation": "Most pairs use prefixes (про-, на-, с-). Some are completely different words: говорить/сказать, брать/взять." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я буду сделать домашнюю работу.", "correctedText": "Я сделаю домашнюю работу.", "acceptedAnswers": ["сделаю"], "explanation": "Сделать is perfective — use сделаю (not буду + perfective). Correct: Я сделаю домашнюю работу." },
+        { "type": "multiple-choice", "prompt": "Which is the imperfective verb?", "options": ["покупать", "купить", "куплю"], "correctIndex": 0, "explanation": "Покупать (imperfective, ongoing) vs купить (perfective, completed). Куплю is a conjugated perfective form." },
+        { "type": "transformation", "prompt": "Give the perfective form:", "baseWord": "готовить", "context": "Imperfective 'готовить' (to cook) → perfective '___'", "acceptedAnswers": ["приготовить"], "hint": "Prefix при-", "explanation": "Готовить → приготовить. The prefix при- makes it perfective (to finish cooking)." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She will write and send the letter.", "words": ["Она", "напишет", "и", "отправит", "письмо"], "correctOrder": ["Она", "напишет", "и", "отправит", "письмо"], "distractors": ["будет"], "explanation": "Both напишет and отправит are perfective — completed sequential actions. No будет needed." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Он читает книгу, а потом прочитает её.", "acceptedAnswers": ["Он читает книгу, а потом прочитает её.", "Он читает книгу а потом прочитает её.", "Он читает книгу, а потом прочитает её"], "explanation": "Читает (imperfective present = is reading) vs прочитает (perfective future = will finish reading)." },
+        { "type": "table-fill", "prompt": "Complete the aspect pairs:", "headers": ["Imperfective", "Perfective"], "rows": [
+          { "label": "смотреть (to watch)", "answer": "посмотреть", "prefilled": false },
+          { "label": "пить (to drink)", "answer": "выпить", "prefilled": false },
+          { "label": "учить (to study)", "answer": "выучить", "prefilled": false },
+          { "label": "говорить (to say)", "answer": "сказать", "prefilled": false },
+          { "label": "давать (to give)", "answer": "дать", "prefilled": false }
+        ], "explanation": "Смотреть→посмотреть (по-); пить→выпить (вы-); учить→выучить (вы-); говорить→сказать (different stem); давать→дать (shorter stem)." }
+      ]
+    },
+    {
+      "sectionId": "choosing-aspect",
+      "title": "Choosing the Right Aspect",
+      "tip": "Use imperfective for ongoing/repeated actions (буду читать каждый день). Use perfective for one-time completed actions (прочитаю книгу).",
+      "explanation": "Use imperfective for: ongoing processes (Я буду читать), repeated/habitual actions (Она будет каждый день ходить), focus on the activity itself. Use perfective for: one-time completed actions (Я прочитаю книгу), results (Он сделает это), sequential actions (Приду и расскажу). Key signal words: всегда/часто/каждый день → imperfective; один раз/уже/наконец → perfective.",
+      "examples": [
+        { "ru": "Я буду читать каждый вечер. (habitual)", "en": "I will read every evening.", "highlight": "буду читать" },
+        { "ru": "Я прочитаю эту книгу за неделю. (completed)", "en": "I will finish this book in a week.", "highlight": "прочитаю" },
+        { "ru": "Он зайдёт и скажет. (sequential)", "en": "He will come in and say.", "highlight": "зайдёт и скажет" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я ___ эту книгу каждый день. (read — daily habit)", "options": ["буду читать", "прочитаю", "читаю"], "correctIndex": 0, "explanation": "Каждый день (every day) signals a repeated action → imperfective future: буду читать." },
+        { "type": "fill-blank", "prompt": "Он ___ тебе завтра. (позвонить – to call, one time)", "acceptedAnswers": ["позвонит"], "hint": "One-time action → perfective", "explanation": "One-time action → perfective future: позвонить → позвонит." },
+        { "type": "multiple-choice", "prompt": "Мы ___ каждое утро. (run — regular habit)", "options": ["будем бегать", "побежим", "бегаем"], "correctIndex": 0, "explanation": "Каждое утро (every morning) = repeated → imperfective future: будем бегать." },
+        { "type": "fill-blank", "prompt": "Она ___ этот торт к празднику. (испечь – to bake, complete)", "acceptedAnswers": ["испечёт"], "hint": "Completed result → perfective", "explanation": "Испечь → испечёт (perfective future). The cake will be finished baking — result matters." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я прочитаю книги каждый день.", "correctedText": "Я буду читать книги каждый день.", "acceptedAnswers": ["буду читать"], "explanation": "Каждый день (every day) requires the imperfective aspect: буду читать, not прочитаю (one-time completion)." },
+        { "type": "matching", "prompt": "Match each context to the correct aspect:", "pairs": [
+          { "left": "Finish the project (result)", "right": "perfective (закончу)" },
+          { "left": "Work every day (habit)", "right": "imperfective (буду работать)" },
+          { "left": "Write one letter (one-time)", "right": "perfective (напишу)" },
+          { "left": "Study all evening (process)", "right": "imperfective (буду учить)" },
+          { "left": "Come and tell (sequence)", "right": "perfective (приду и скажу)" }
+        ], "explanation": "Perfective = result, one-time, sequence. Imperfective = habit, process, ongoing." },
+        { "type": "transformation", "prompt": "Choose the correct aspect:", "baseWord": "писать / написать", "context": "Он ___ письма каждую неделю.", "acceptedAnswers": ["будет писать"], "hint": "Каждую неделю = every week → repeated", "explanation": "Repeated action (every week) → imperfective: будет писать." },
+        { "type": "multiple-choice", "prompt": "Я приду домой и ___. (отдохнуть – to rest, one-time)", "options": ["отдохну", "буду отдыхать", "отдыхаю"], "correctIndex": 0, "explanation": "Sequential one-time actions use perfective: приду и отдохну." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Tomorrow I will be studying Russian all day.", "words": ["Завтра", "я", "буду", "учить", "русский", "целый", "день"], "correctOrder": ["Завтра", "я", "буду", "учить", "русский", "целый", "день"], "distractors": ["выучу"], "explanation": "Целый день (all day) = ongoing process → imperfective: буду учить." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Я сделаю это и пойдём гулять.", "acceptedAnswers": ["Я сделаю это и пойдём гулять.", "Я сделаю это и пойдём гулять"], "explanation": "Сделаю (perfective — I'll finish this) и пойдём (perfective — we'll go). Sequential completed actions both use perfective." }
+      ]
+    }
+  ]
+}

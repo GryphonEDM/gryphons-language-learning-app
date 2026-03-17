@@ -1,0 +1,130 @@
+{
+  "lessonId": "adjectives-cases",
+  "nameEn": "Adjective Declension",
+  "nameRu": "Склонение прилагательных",
+  "icon": "🎯",
+  "tier": "B1",
+  "prerequisites": ["adjectives-gender", "cases-dat-inst"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "acc-gen",
+      "title": "Accusative & Genitive Adjectives",
+      "tip": "In accusative: feminine -ая → -ую. In genitive: masculine/neuter -ого/-его, feminine -ой/-ей. Remember: -ого is pronounced as -ово!",
+      "explanation": "In the accusative case, feminine adjectives change -ая to -ую (большая → большую). Masculine/neuter inanimate adjectives stay the same as nominative. For animate masculine, accusative = genitive. In the genitive, masculine and neuter adjectives take -ого/-его (большого, синего), and feminine adjectives take -ой/-ей (большой, синей).",
+      "examples": [
+        { "ru": "Я вижу большую машину.", "en": "I see a big car. (acc. fem.)", "highlight": "большую" },
+        { "ru": "Это дом старого друга.", "en": "This is an old friend's house. (gen. masc.)", "highlight": "старого" },
+        { "ru": "Без холодной воды.", "en": "Without cold water. (gen. fem.)", "highlight": "холодной" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я читаю ___ книгу. (интересный — interesting, acc. fem.)", "options": ["интересную", "интересный", "интересной"], "correctIndex": 0, "explanation": "Accusative feminine adjectives end in -ую: интересная → интересную." },
+        { "type": "fill-blank", "prompt": "Она купила ___ платье. (новый — new, acc. neut.)", "acceptedAnswers": ["новое"], "hint": "Neuter accusative inanimate = nominative", "explanation": "Neuter inanimate accusative is the same as nominative: новое." },
+        { "type": "transformation", "prompt": "Put the adjective into the accusative feminine form:", "baseWord": "красивая (beautiful)", "context": "Он рисует ___ картину.", "acceptedAnswers": ["красивую"], "hint": "Change -ая to -ую", "explanation": "Feminine accusative: красивая → красивую." },
+        { "type": "multiple-choice", "prompt": "Это комната ___ сестры. (старший — older, gen. fem.)", "options": ["старшей", "старшая", "старшую"], "correctIndex": 0, "explanation": "Genitive feminine adjectives end in -ей (after soft stem): старшая → старшей." },
+        { "type": "fill-blank", "prompt": "Около ___ дерева растёт цветок. (высокий — tall, gen. neut.)", "acceptedAnswers": ["высокого"], "hint": "Genitive masculine/neuter: -ого", "explanation": "Genitive for masculine and neuter adjectives is -ого: высокий → высокого." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я не вижу большой дома.", "correctedText": "Я не вижу большого дома.", "acceptedAnswers": ["большого"], "explanation": "'Дом' is masculine, so the genitive adjective must be 'большого' (not 'большой', which is feminine genitive)." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "новая → accusative", "right": "новую" },
+          { "left": "новый → genitive", "right": "нового" },
+          { "left": "новая → genitive", "right": "новой" },
+          { "left": "новое → genitive", "right": "нового" }
+        ], "explanation": "Acc. fem: -ая→-ую. Gen. masc/neut: -ого. Gen. fem: -ой." },
+        { "type": "multiple-choice", "prompt": "Я купил ___ телефон. (новый — new, acc. masc. inanimate)", "options": ["новый", "нового", "новую"], "correctIndex": 0, "explanation": "Inanimate masculine nouns keep the nominative adjective form in the accusative: новый." },
+        { "type": "fill-blank", "prompt": "Без ___ друга трудно. (настоящий — true, gen. masc.)", "acceptedAnswers": ["настоящего"], "hint": "Soft adjectives: -ий → genitive -его", "explanation": "Soft-stem adjectives form the genitive as -его: настоящий → настоящего." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I see a beautiful girl.", "words": ["Я", "вижу", "красивую", "девушку"], "correctOrder": ["Я", "вижу", "красивую", "девушку"], "distractors": ["красивая"], "explanation": "The accusative feminine form 'красивую' must agree with 'девушку'. 'Красивая' is nominative and incorrect here." }
+      ]
+    },
+    {
+      "sectionId": "dat-inst",
+      "title": "Dative & Instrumental Adjectives",
+      "tip": "Dative: masculine/neuter -ому/-ему, feminine -ой/-ей. Instrumental: masculine/neuter -ым/-им, feminine -ой/-ей.",
+      "explanation": "In the dative case, masculine/neuter adjectives take -ому/-ему (большому, синему), and feminine adjectives take -ой/-ей (большой, синей). In the instrumental, masculine/neuter take -ым/-им (большим, синим), and feminine takes -ой/-ей (большой, синей).",
+      "examples": [
+        { "ru": "Я дал подарок доброму другу.", "en": "I gave a gift to a good friend. (dat. masc.)", "highlight": "доброму" },
+        { "ru": "Помоги старой бабушке.", "en": "Help the old grandmother. (dat. fem.)", "highlight": "старой" },
+        { "ru": "Я пишу красной ручкой.", "en": "I write with a red pen. (inst. fem.)", "highlight": "красной" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я звоню ___ другу. (старый — old, dat. masc.)", "options": ["старому", "старый", "старым"], "correctIndex": 0, "explanation": "Dative masculine: старый → старому (ending -ому)." },
+        { "type": "fill-blank", "prompt": "Он помог ___ женщине. (молодой — young, dat. fem.)", "acceptedAnswers": ["молодой"], "hint": "Dative feminine: -ой", "explanation": "Dative feminine adjectives end in -ой: молодая → молодой." },
+        { "type": "transformation", "prompt": "Put the adjective into the dative masculine form:", "baseWord": "умный (smart)", "context": "Я подарил книгу ___ студенту.", "acceptedAnswers": ["умному"], "hint": "Dative masculine: -ому", "explanation": "Dative masculine: умный → умному." },
+        { "type": "multiple-choice", "prompt": "Я еду ___ автобусом. (большой — big, inst. masc.)", "options": ["большим", "большому", "большого"], "correctIndex": 0, "explanation": "Instrumental masculine/neuter adjectives end in -ым/-им: большой → большим." },
+        { "type": "fill-blank", "prompt": "Она рисует ___ краской. (синий — blue, inst. fem.)", "acceptedAnswers": ["синей"], "hint": "Instrumental feminine: -ей (soft stem)", "explanation": "Instrumental feminine for soft-stem adjectives: синяя → синей." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я разговариваю с новой другом.", "correctedText": "Я разговариваю с новым другом.", "acceptedAnswers": ["новым"], "explanation": "'Друг' is masculine, so instrumental must be 'новым' (not 'новой', which is feminine)." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "большой → dative masc.", "right": "большому" },
+          { "left": "большая → dative fem.", "right": "большой" },
+          { "left": "большой → inst. masc.", "right": "большим" },
+          { "left": "большая → inst. fem.", "right": "большой" }
+        ], "explanation": "Dat. masc/neut: -ому/-ему. Dat. fem: -ой/-ей. Inst. masc/neut: -ым/-им. Inst. fem: -ой/-ей." },
+        { "type": "fill-blank", "prompt": "Я пишу ___ карандашом. (острый — sharp, inst. masc.)", "acceptedAnswers": ["острым"], "hint": "Instrumental masculine: -ым", "explanation": "Instrumental masculine: острый → острым." },
+        { "type": "multiple-choice", "prompt": "Я рад ___ новости. (хороший — good, dat. fem.)", "options": ["хорошей", "хорошую", "хорошего"], "correctIndex": 0, "explanation": "Dative feminine: хорошая → хорошей." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I'm talking with a good friend.", "words": ["Я", "разговариваю", "с", "хорошим", "другом"], "correctOrder": ["Я", "разговариваю", "с", "хорошим", "другом"], "distractors": ["хорошему"], "explanation": "Instrumental requires 'хорошим' (not dative 'хорошему')." }
+      ]
+    },
+    {
+      "sectionId": "prepositional",
+      "title": "Prepositional Adjectives",
+      "tip": "In the prepositional case (after в, на, о), masculine/neuter adjectives take -ом/-ем, feminine adjectives take -ой/-ей.",
+      "explanation": "In the prepositional case (used after в/на, о, при), masculine and neuter adjectives take -ом/-ем (в большом городе, о синем море), and feminine adjectives take -ой/-ей (в большой комнате, о синей птице).",
+      "examples": [
+        { "ru": "Я живу в большом городе.", "en": "I live in a big city. (prep. masc.)", "highlight": "большом" },
+        { "ru": "На высокой горе растёт дерево.", "en": "A tree grows on a high mountain. (prep. fem.)", "highlight": "высокой" },
+        { "ru": "В старом доме холодно.", "en": "It's cold in the old house. (prep. masc.)", "highlight": "старом" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я работаю в ___ офисе. (новый — new, prep. masc.)", "options": ["новом", "новый", "новым"], "correctIndex": 0, "explanation": "Prepositional masculine: новый → новом." },
+        { "type": "fill-blank", "prompt": "Она сидит на ___ скамейке. (деревянный — wooden, prep. fem.)", "acceptedAnswers": ["деревянной"], "hint": "Prepositional feminine: -ой", "explanation": "Prepositional feminine: деревянная → деревянной." },
+        { "type": "transformation", "prompt": "Put the adjective into the prepositional masculine form:", "baseWord": "тихий (quiet)", "context": "Мы живём в ___ районе.", "acceptedAnswers": ["тихом"], "hint": "Prepositional masculine: -ом", "explanation": "Prepositional masculine: тихий → тихом." },
+        { "type": "multiple-choice", "prompt": "В ___ комнате тепло. (уютный — cozy, prep. fem.)", "options": ["уютной", "уютная", "уютную"], "correctIndex": 0, "explanation": "Prepositional feminine: уютная → уютной." },
+        { "type": "fill-blank", "prompt": "На ___ столе стоит ваза. (круглый — round, prep. masc.)", "acceptedAnswers": ["круглом"], "hint": "Prepositional masculine: -ом", "explanation": "Prepositional masculine: круглый → круглом." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "В синем платье она красивая.", "correctedText": "В синем платье она красивая.", "acceptedAnswers": ["синем"], "explanation": "'Платье' is neuter, and 'синем' is the correct prepositional neuter form. This sentence is correct!" },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "старый дом → prepositional", "right": "в старом доме" },
+          { "left": "большая комната → prepositional", "right": "в большой комнате" },
+          { "left": "чистое озеро → prepositional", "right": "на чистом озере" },
+          { "left": "красивая улица → prepositional", "right": "на красивой улице" }
+        ], "explanation": "Prep. masc/neut: -ом/-ем. Prep. fem: -ой/-ей. The nouns also change in the prepositional." },
+        { "type": "fill-blank", "prompt": "В ___ море плавают рыбы. (глубокий — deep, prep. neut.)", "acceptedAnswers": ["глубоком"], "hint": "Prepositional neuter is the same as masculine: -ом", "explanation": "Prepositional neuter: глубокое → глубоком (same ending as masculine)." },
+        { "type": "multiple-choice", "prompt": "При ___ свете трудно читать. (тусклый — dim, prep. masc.)", "options": ["тусклом", "тусклой", "тусклое"], "correctIndex": 0, "explanation": "Prepositional masculine: тусклый → тусклом." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "В большом городе много людей.", "acceptedAnswers": ["В большом городе много людей.", "В большом городе много людей"], "explanation": "'Большом' is the prepositional form of 'большой', used because 'город' follows the preposition 'в'." }
+      ]
+    },
+    {
+      "sectionId": "all-cases",
+      "title": "Adjectives Across All Cases",
+      "tip": "Hard adjectives: Nom -ый/-ая/-ое, Acc fem -ую, Gen -ого/-ой, Dat -ому/-ой, Inst -ым/-ой, Prep -ом/-ой.",
+      "explanation": "Now let's practice adjective declension across all cases. Remember: Nom: -ый/-ая/-ое, Acc fem: -ую, Gen: -ого/-ой, Dat: -ому/-ой, Inst: -ым/-ой, Prep: -ом/-ой.",
+      "examples": [
+        { "ru": "Новый студент пришёл.", "en": "A new student came. (nom.)", "highlight": "Новый" },
+        { "ru": "Я знаю нового студента.", "en": "I know the new student. (acc. animate masc.)", "highlight": "нового" },
+        { "ru": "Я дал книгу новому студенту.", "en": "I gave a book to the new student. (dat.)", "highlight": "новому" }
+      ],
+      "exercises": [
+        { "type": "table-fill", "prompt": "Complete the table:", "headers": ["Case", "большой (masc.)"], "rows": [
+          { "label": "Nominative", "answer": "большой", "prefilled": true },
+          { "label": "Genitive", "answer": "большого", "prefilled": false },
+          { "label": "Dative", "answer": "большому", "prefilled": false },
+          { "label": "Accusative (inanimate)", "answer": "большой", "prefilled": false },
+          { "label": "Instrumental", "answer": "большим", "prefilled": false },
+          { "label": "Prepositional", "answer": "большом", "prefilled": false }
+        ], "explanation": "Masculine adjective declension: Nom -ой, Gen -ого, Dat -ому, Acc (inanim.) = Nom, Inst -им, Prep -ом." },
+        { "type": "multiple-choice", "prompt": "Я познакомился с ___ девушкой. (умный — smart, inst. fem.)", "options": ["умной", "умной", "умную"], "correctIndex": 0, "explanation": "Instrumental feminine: умная → умной." },
+        { "type": "fill-blank", "prompt": "Мы говорили о ___ фильме. (интересный — interesting, prep. masc.)", "acceptedAnswers": ["интересном"], "hint": "Prepositional masculine: -ом", "explanation": "Prepositional masculine: интересный → интересном." },
+        { "type": "transformation", "prompt": "Put 'красивый' (beautiful) into the genitive feminine form:", "baseWord": "красивая", "context": "Без ___ погоды пикник не получится.", "acceptedAnswers": ["красивой", "хорошей"], "hint": "Genitive feminine: -ой", "explanation": "Genitive feminine: красивая → красивой." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я живу в красивую квартире.", "correctedText": "Я живу в красивой квартире.", "acceptedAnswers": ["красивой"], "explanation": "After 'в' + prepositional, the feminine adjective must be 'красивой' (not accusative 'красивую')." },
+        { "type": "multiple-choice", "prompt": "Я вижу ___ мальчика. (молодой — young, acc. masc. animate)", "options": ["молодого", "молодой", "молодому"], "correctIndex": 0, "explanation": "Animate masculine accusative = genitive: молодой → молодого." },
+        { "type": "fill-blank", "prompt": "___ учителю подарили цветы. (любимый — favorite, dat. masc.)", "acceptedAnswers": ["Любимому", "любимому"], "hint": "Dative masculine: -ому", "explanation": "Dative masculine: любимый → любимому." },
+        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
+          { "left": "Я вижу (красивая девушка)", "right": "красивую девушку" },
+          { "left": "Нет (горячая вода)", "right": "горячей воды" },
+          { "left": "Я иду с (хороший друг)", "right": "хорошим другом" },
+          { "left": "В (новая школа)", "right": "новой школе" }
+        ], "explanation": "Acc. fem: -ую. Gen. fem: -ей (soft). Inst. masc: -им. Prep. fem: -ой." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I gave flowers to a beautiful woman.", "words": ["Я", "подарил", "цветы", "красивой", "женщине"], "correctOrder": ["Я", "подарил", "цветы", "красивой", "женщине"], "distractors": ["красивую"], "explanation": "Dative feminine requires 'красивой' (not accusative 'красивую')." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Без хорошего друга трудно жить.", "acceptedAnswers": ["Без хорошего друга трудно жить.", "Без хорошего друга трудно жить"], "explanation": "'Хорошего' is genitive masculine because 'без' requires the genitive case." }
+      ]
+    }
+  ]
+}

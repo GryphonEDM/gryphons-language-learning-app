@@ -1,181 +1,191 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
+import ExerciseRenderer from './grammar/ExerciseRenderer.jsx';
+import { createAudioContext, playSound } from '../../utils/soundEffects.js';
+import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from '../../utils/encouragement.js';
+
+const TIER_INFO = {
+  A1: { name: 'A1 Foundation', color: '#4ade80' },
+  A2: { name: 'A2 Building Blocks', color: '#4dabf7' },
+  B1: { name: 'B1 Intermediate', color: '#c084fc' },
+  B2: { name: 'B2 Advanced', color: '#f97316' },
+};
 
 export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const [phase, setPhase] = useState('picker'); // picker, lesson, exercise, complete
+
+  // Phases: picker, lesson, exercise, section-complete, complete, review
+  const [phase, setPhase] = useState('picker');
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [sectionIdx, setSectionIdx] = useState(0);
-  const [exerciseIdx, setExerciseIdx] = useState(0);
-  const [userAnswer, setUserAnswer] = useState('');
-  const [selectedOption, setSelectedOption] = useState(-1);
+
+  // Exercise queue system (supports wrong-answer re-queuing)
+  const [exerciseQueue, setExerciseQueue] = useState([]);
+  const [queueIdx, setQueueIdx] = useState(0);
+
   const [feedback, setFeedback] = useState(null);
   const [score, setScore] = useState(0);
   const [totalExercises, setTotalExercises] = useState(0);
   const [xpEarned, setXpEarned] = useState(0);
-  const [completedSections, setCompletedSections] = useState([]);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [sectionScore, setSectionScore] = useState(0);
+  const [sectionTotal, setSectionTotal] = useState(0);
+  const [encouragement, setEncouragement] = useState('');
+  const [completedLessons, setCompletedLessons] = useState(() => {
+    try {
+      const key = `grammar_completed_${langCode}`;
+      return JSON.parse(localStorage.getItem(key)) || {};
+    } catch { return {}; }
+  });
+
+  // Audio context for sound effects
+  const audioCtxRef = useRef(null);
+  const getAudioCtx = () => {
+    if (!audioCtxRef.current) audioCtxRef.current = createAudioContext();
+    return audioCtxRef.current;
+  };
+
+  const encouragements = langCode === 'ru' ? ENCOURAGEMENTS_RU : ENCOURAGEMENTS;
+  const mistakeMessages = langCode === 'ru' ? MISTAKE_MESSAGES_RU : MISTAKE_MESSAGES;
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
 
-  // Chat state
-  const [chatMessages, setChatMessages] = useState([]);
-  const [chatInput, setChatInput] = useState('');
-  const [chatLoading, setChatLoading] = useState(false);
-  const chatHistoryRef = useRef([]); // LLM-format history { role, content }
-  const chatEndRef = useRef(null);
-  const chatInputRef = useRef(null);
+  const buildSystemPrompt = useCallback(() => {
+    const lessonName = selectedLesson?.nameEn ?? 'grammar';
+    const section = selectedLesson?.sections[sectionIdx];
+    const sectionName = section?.title ?? '';
+    return `You are a helpful ${langName} grammar tutor. The student is currently studying "${lessonName}"${sectionName ? ` — specifically the section "${sectionName}"` : ''}. Answer their questions clearly and concisely. Use examples in ${langName} with English translations. Keep responses focused and under 150 words unless a longer explanation is truly needed.`;
+  }, [selectedLesson, sectionIdx, langName]);
 
-  useEffect(() => {
-    if (chatEndRef.current) chatEndRef.current.scrollTop = chatEndRef.current.scrollHeight;
-  }, [chatMessages, chatLoading]);
-
-  useEffect(() => {
-    chatInputRef.current?.focus();
-  }, []);
+  const chat = useLessonChat({
+    langName,
+    langCode,
+    systemPrompt: buildSystemPrompt(),
+    onSpeak,
+    ttsEnabled,
+    ttsVolume,
+  });
 
   const currentSection = selectedLesson?.sections[sectionIdx];
-  const currentExercise = currentSection?.exercises[exerciseIdx];
+  const currentExercise = exerciseQueue[queueIdx] || null;
 
-  const buildSystemPrompt = () => {
-    const lessonName = selectedLesson?.nameEn ?? 'grammar';
-    const sectionName = currentSection?.title ?? '';
-    return `You are a helpful ${langName} grammar tutor. The student is currently studying "${lessonName}"${sectionName ? ` — specifically the section "${sectionName}"` : ''}. Answer their questions clearly and concisely. Use examples in ${langName} with English translations. Keep responses focused and under 150 words unless a longer explanation is truly needed.`;
+  // Save completed lessons to localStorage
+  useEffect(() => {
+    const key = `grammar_completed_${langCode}`;
+    localStorage.setItem(key, JSON.stringify(completedLessons));
+  }, [completedLessons, langCode]);
+
+  // Check if lesson prerequisites are met
+  const isLessonUnlocked = (lesson) => {
+    if (!lesson.prerequisites || lesson.prerequisites.length === 0) return true;
+    return lesson.prerequisites.every(prereq => completedLessons[prereq]);
   };
 
-  const sendChatMessage = async () => {
-    const text = chatInput.trim();
-    if (!text || chatLoading) return;
-
-    const userLLMMsg = { role: 'user', content: text };
-    chatHistoryRef.current = [...chatHistoryRef.current, userLLMMsg];
-
-    const newMessages = [
-      { role: 'system', content: buildSystemPrompt() },
-      ...chatHistoryRef.current,
-    ];
-
-    setChatMessages(prev => [...prev, { sender: 'user', text }]);
-    setChatInput('');
-    setChatLoading(true);
-
-    try {
-      const res = await fetch('/llm/chat/completions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'local-model',
-          messages: newMessages,
-          temperature: 0.7,
-          stream: true,
-        }),
-      });
-      if (!res.ok) throw new Error(`LLM error ${res.status}`);
-
-      setChatMessages(prev => [...prev, { sender: 'bot', text: '' }]);
-      setChatLoading(false);
-
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let reply = '';
-      let buffer = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split('\n');
-        buffer = lines.pop();
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          const data = line.slice(6).trim();
-          if (data === '[DONE]') break;
-          try {
-            const chunk = JSON.parse(data);
-            const delta = chunk.choices?.[0]?.delta?.content;
-            if (delta) {
-              reply += delta;
-              setChatMessages(prev => {
-                const msgs = [...prev];
-                msgs[msgs.length - 1] = { sender: 'bot', text: reply };
-                return msgs;
-              });
-            }
-          } catch { /* ignore */ }
-        }
-      }
-
-      chatHistoryRef.current = [...chatHistoryRef.current, { role: 'assistant', content: reply }];
-    } catch (err) {
-      console.error('[GrammarChat] error:', err);
-      setChatMessages(prev => [...prev, { sender: 'bot', text: 'Sorry, I could not reach the AI. Make sure LM Studio is running.' }]);
-      setChatLoading(false);
-    }
-  };
+  // Group lessons by tier
+  const lessonsByTier = {};
+  grammarLessons.forEach(lesson => {
+    const tier = lesson.tier || 'A1';
+    if (!lessonsByTier[tier]) lessonsByTier[tier] = [];
+    lessonsByTier[tier].push(lesson);
+  });
 
   const startLesson = (lesson) => {
+    if (!isLessonUnlocked(lesson)) return;
     setSelectedLesson(lesson);
     setSectionIdx(0);
     setPhase('lesson');
     setScore(0);
     setTotalExercises(0);
     setXpEarned(0);
-    setCompletedSections([]);
-    setChatMessages([]);
-    chatHistoryRef.current = [];
+    setStreak(0);
+    setBestStreak(0);
+    setSectionScore(0);
+    setSectionTotal(0);
+    setFeedback(null);
+    chat.reset();
   };
 
   const startExercises = () => {
-    setExerciseIdx(0);
-    setUserAnswer('');
-    setSelectedOption(-1);
+    const exercises = [...(currentSection?.exercises || [])];
+    setExerciseQueue(exercises);
+    setQueueIdx(0);
     setFeedback(null);
+    setSectionScore(0);
+    setSectionTotal(0);
     setPhase('exercise');
   };
 
-  const handleSubmitExercise = () => {
-    if (!currentExercise || feedback) return;
+  const handleAnswer = (isCorrect) => {
+    if (feedback) return;
 
-    let isCorrect = false;
+    const basePoints = isCorrect ? 15 : 3;
+    let bonusPoints = 0;
 
-    if (currentExercise.type === 'fill-blank') {
-      isCorrect = currentExercise.acceptedAnswers
-        .map(a => a.toLowerCase())
-        .includes(userAnswer.trim().toLowerCase());
-    } else if (currentExercise.type === 'multiple-choice') {
-      isCorrect = selectedOption === currentExercise.correctIndex;
+    const newStreak = isCorrect ? streak + 1 : 0;
+    setStreak(newStreak);
+    if (newStreak > bestStreak) setBestStreak(newStreak);
+
+    // Streak bonuses
+    if (isCorrect && [3, 5, 7, 10, 15, 20].includes(newStreak)) {
+      bonusPoints = newStreak >= 10 ? 25 : newStreak >= 7 ? 15 : newStreak >= 5 ? 10 : 5;
+      playSound('achievement', getAudioCtx());
+    } else {
+      playSound(isCorrect ? 'correct' : 'wrong', getAudioCtx());
     }
 
-    const points = isCorrect ? 15 : 3;
-    setFeedback({ correct: isCorrect, explanation: currentExercise.explanation || '' });
+    const points = basePoints + bonusPoints;
+    const ex = currentExercise;
+    setFeedback({
+      correct: isCorrect,
+      explanation: ex?.explanation || '',
+      bonusPoints,
+    });
     setTotalExercises(prev => prev + 1);
+    setSectionTotal(prev => prev + 1);
 
     if (isCorrect) {
       setScore(prev => prev + 1);
+      setSectionScore(prev => prev + 1);
+      setEncouragement(encouragements[Math.floor(Math.random() * encouragements.length)]);
+    } else {
+      setEncouragement(mistakeMessages[Math.floor(Math.random() * mistakeMessages.length)]);
+      // Re-queue wrong answers: insert 3 positions later
+      setExerciseQueue(prev => {
+        const copy = [...prev];
+        const insertAt = Math.min(queueIdx + 3, copy.length);
+        copy.splice(insertAt, 0, ex);
+        return copy;
+      });
     }
 
     setXpEarned(prev => prev + points);
     if (onAddXP) onAddXP(points);
   };
 
-  const handleNextExercise = () => {
+  const handleNext = () => {
     setFeedback(null);
-    setUserAnswer('');
-    setSelectedOption(-1);
+    setEncouragement('');
 
-    if (exerciseIdx < currentSection.exercises.length - 1) {
-      setExerciseIdx(prev => prev + 1);
+    if (queueIdx < exerciseQueue.length - 1) {
+      setQueueIdx(prev => prev + 1);
     } else {
-      const newCompleted = [...completedSections, currentSection.sectionId];
-      setCompletedSections(newCompleted);
-
+      // Section done — show section-complete or lesson-complete
       if (sectionIdx < selectedLesson.sections.length - 1) {
-        setSectionIdx(prev => prev + 1);
-        setPhase('lesson');
+        playSound('complete', getAudioCtx());
+        setPhase('section-complete');
       } else {
+        // Lesson complete
+        playSound('achievement', getAudioCtx());
         setPhase('complete');
+
+        setCompletedLessons(prev => ({ ...prev, [selectedLesson.lessonId]: true }));
+
         if (onComplete) {
           onComplete({ mode: 'grammar', lessonId: selectedLesson.lessonId, score, totalExercises, xpEarned });
         }
@@ -186,84 +196,138 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     }
   };
 
+  const handleNextSection = () => {
+    setSectionIdx(prev => prev + 1);
+    setPhase('lesson');
+  };
+
   const handleRetry = () => {
     if (selectedLesson) startLesson(selectedLesson);
   };
 
-  // Chat panel (always visible alongside lesson/exercise)
-  const ChatPanel = (
-    <div style={styles.chatPanel}>
-      <div style={styles.chatPanelHeader}>
-        <span style={styles.chatPanelTitle}>💬 Ask a Question</span>
-      </div>
-      <div ref={chatEndRef} style={styles.chatMessages}>
-        {chatMessages.length === 0 && (
-          <div style={styles.chatEmpty}>Ask me anything about this lesson!</div>
-        )}
-        {chatMessages.map((msg, i) => (
-          <div key={i} style={{ ...styles.chatBubble, ...(msg.sender === 'user' ? styles.chatBubbleUser : styles.chatBubbleBot) }}>
-            {msg.sender === 'bot'
-              ? <ClickableText text={msg.text} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
-              : msg.text}
-          </div>
-        ))}
-        {chatLoading && (
-          <div style={{ ...styles.chatBubble, ...styles.chatBubbleBot }}>
-            <span style={styles.typingDot}>●</span>
-            <span style={{ ...styles.typingDot, animationDelay: '0.2s' }}>●</span>
-            <span style={{ ...styles.typingDot, animationDelay: '0.4s' }}>●</span>
-          </div>
-        )}
-      </div>
-      <div style={styles.chatInputRow}>
-        <input
-          ref={chatInputRef}
-          style={styles.chatInput}
-          value={chatInput}
-          onChange={e => setChatInput(e.target.value)}
-          onKeyDown={e => e.key === 'Enter' && sendChatMessage()}
-          placeholder="Ask a question..."
-        />
-        <button style={styles.chatSendBtn} onClick={sendChatMessage} disabled={chatLoading}>→</button>
-      </div>
-    </div>
-  );
-
-  // Lesson Picker
+  // ─── Picker ─────────────────────────────────────────────────────
   if (phase === 'picker') {
+    const tiers = Object.keys(TIER_INFO);
     return (
       <div className="mode-container" style={styles.container}>
-        <ModeHeader title="Grammar Lessons" subtitle={`Learn ${langName} grammar`} icon="📐" onExit={onExit} />
-        <div style={styles.grid}>
-          {grammarLessons.map(lesson => (
-            <div key={lesson.lessonId} style={styles.lessonCard} onClick={() => startLesson(lesson)}>
-              <div style={styles.lessonIcon}>{lesson.icon}</div>
-              <div style={styles.lessonInfo}>
-                <h3 style={styles.lessonTitle}>{lesson.nameEn}</h3>
-                <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : lesson.nameUk}</p>
-                <p style={styles.lessonMeta}>{lesson.sections.length} sections</p>
+        <ModeHeader title="Grammar Lessons" subtitle={`Learn ${langName} grammar step by step`} icon="📐" onExit={onExit} />
+        {tiers.map(tier => {
+          const lessons = lessonsByTier[tier];
+          if (!lessons || lessons.length === 0) return null;
+          const info = TIER_INFO[tier];
+          return (
+            <div key={tier} style={styles.tierGroup}>
+              <div style={styles.tierHeader}>
+                <span style={{ ...styles.tierBadge, background: info.color }}>{tier}</span>
+                <span style={styles.tierName}>{info.name}</span>
+              </div>
+              <div style={styles.grid}>
+                {lessons.map(lesson => {
+                  const unlocked = isLessonUnlocked(lesson);
+                  const completed = completedLessons[lesson.lessonId];
+                  return (
+                    <div
+                      key={lesson.lessonId}
+                      style={{
+                        ...styles.lessonCard,
+                        ...(unlocked ? {} : styles.lessonCardLocked),
+                        ...(completed ? styles.lessonCardCompleted : {}),
+                      }}
+                      onClick={() => unlocked && startLesson(lesson)}
+                    >
+                      <div style={styles.lessonIcon}>
+                        {!unlocked ? '🔒' : completed ? '✅' : lesson.icon}
+                      </div>
+                      <div style={styles.lessonInfo}>
+                        <h3 style={{ ...styles.lessonTitle, ...(unlocked ? {} : { color: 'rgba(255,255,255,0.3)' }) }}>
+                          {lesson.nameEn}
+                        </h3>
+                        <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : lesson.nameUk}</p>
+                        <p style={styles.lessonMeta}>
+                          {lesson.sections.length} sections
+                          {lesson.estimatedMinutes ? ` · ~${lesson.estimatedMinutes} min` : ''}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          ))}
+          );
+        })}
+      </div>
+    );
+  }
+
+  // ─── Completion ─────────────────────────────────────────────────
+  if (phase === 'complete') {
+    return (
+      <div className="mode-container" style={styles.container}>
+        <CompletionScreen
+          stats={{
+            title: `${selectedLesson.nameEn} Complete!`,
+            score,
+            total: totalExercises,
+            xpEarned,
+            accuracy: totalExercises > 0 ? Math.round((score / totalExercises) * 100) : 0,
+          }}
+          onRetry={handleRetry}
+          onExit={onExit}
+        />
+        {bestStreak >= 3 && (
+          <div style={styles.streakSummary}>
+            🔥 Best streak: {bestStreak} in a row!
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ─── Section Complete Mini-Celebration ───────────────────────────
+  if (phase === 'section-complete') {
+    const accuracy = sectionTotal > 0 ? Math.round((sectionScore / sectionTotal) * 100) : 0;
+    const nextSection = selectedLesson?.sections[sectionIdx + 1];
+    return (
+      <div className="mode-container" style={styles.container}>
+        <div style={styles.sectionCompleteCard}>
+          <div style={styles.sectionCompleteIcon}>
+            {accuracy === 100 ? '🌟' : accuracy >= 80 ? '🎉' : '👍'}
+          </div>
+          <h2 style={styles.sectionCompleteTitle}>Section Complete!</h2>
+          <p style={styles.sectionCompleteSub}>{currentSection?.title}</p>
+          <div style={styles.sectionStats}>
+            <div style={styles.miniStat}>
+              <span style={styles.miniStatValue}>{sectionScore}/{sectionTotal}</span>
+              <span style={styles.miniStatLabel}>Correct</span>
+            </div>
+            <div style={styles.miniStat}>
+              <span style={styles.miniStatValue}>{accuracy}%</span>
+              <span style={styles.miniStatLabel}>Accuracy</span>
+            </div>
+            {streak >= 3 && (
+              <div style={styles.miniStat}>
+                <span style={styles.miniStatValue}>🔥 {streak}</span>
+                <span style={styles.miniStatLabel}>Streak</span>
+              </div>
+            )}
+          </div>
+          <p style={styles.encourageMsg}>
+            {encouragements[Math.floor(Math.random() * encouragements.length)]}
+          </p>
+          {nextSection && (
+            <p style={styles.nextSectionPreview}>
+              Next: {nextSection.title}
+            </p>
+          )}
+          <button style={styles.practiceBtn} onClick={handleNextSection}>
+            Continue →
+          </button>
         </div>
       </div>
     );
   }
 
-  // Completion
-  if (phase === 'complete') {
-    return (
-      <div className="mode-container" style={styles.container}>
-        <CompletionScreen
-          stats={{ title: `${selectedLesson.nameEn} Complete!`, score, total: totalExercises, xpEarned, accuracy: totalExercises > 0 ? Math.round((score / totalExercises) * 100) : 0 }}
-          onRetry={handleRetry}
-          onExit={onExit}
-        />
-      </div>
-    );
-  }
-
-  // Lesson explanation view
+  // ─── Lesson Explanation View ────────────────────────────────────
   if (phase === 'lesson' && currentSection) {
     return (
       <div className="mode-container" style={styles.container}>
@@ -273,10 +337,27 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           icon={selectedLesson.icon}
           onExit={() => setPhase('picker')}
         />
+        {/* Progress bar for sections */}
+        <div style={styles.sectionProgress}>
+          {selectedLesson.sections.map((_, i) => (
+            <div key={i} style={{
+              ...styles.sectionDot,
+              background: i < sectionIdx ? '#4ade80' : i === sectionIdx ? '#ffd700' : 'rgba(255,255,255,0.15)',
+            }} />
+          ))}
+        </div>
         <div className="content-row" style={styles.contentRow}>
           <div style={styles.sectionCard}>
             <h3 style={styles.sectionTitle}>{currentSection.title}</h3>
             <p style={styles.explanation}>{currentSection.explanation}</p>
+
+            {/* Tip card */}
+            {currentSection.tip && (
+              <div style={styles.tipCard}>
+                <span style={styles.tipIcon}>💡</span>
+                <span>{currentSection.tip}</span>
+              </div>
+            )}
 
             <div style={styles.examples}>
               <h4 style={styles.examplesTitle}>Examples:</h4>
@@ -300,90 +381,88 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               Practice Exercises →
             </button>
           </div>
-          {ChatPanel}
+          <LessonChat {...chat} />
         </div>
         <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
       </div>
     );
   }
 
-  // Exercise view
+  // ─── Exercise View ──────────────────────────────────────────────
   if (phase === 'exercise' && currentExercise) {
     return (
       <div className="mode-container" style={styles.container}>
         <ModeHeader
-          title={currentSection.title}
-          subtitle={`Exercise ${exerciseIdx + 1} of ${currentSection.exercises.length}`}
-          icon={selectedLesson.icon}
+          title={currentSection?.title || ''}
+          subtitle={`Exercise ${queueIdx + 1} of ${exerciseQueue.length}`}
+          icon={selectedLesson?.icon || '📐'}
           onExit={() => setPhase('lesson')}
         />
+
+        {/* Progress bar + streak */}
+        <div style={styles.exerciseHeader}>
+          <div style={styles.progressBarOuter}>
+            <div style={{ ...styles.progressBarInner, width: `${((queueIdx + 1) / exerciseQueue.length) * 100}%` }} />
+          </div>
+          {streak >= 3 && (
+            <div style={styles.streakBadge}>
+              🔥 {streak}
+            </div>
+          )}
+        </div>
+
         <div className="content-row" style={styles.contentRow}>
           <div style={styles.exerciseCard}>
-            <p style={styles.exercisePrompt}>{currentExercise.prompt}</p>
-
-            {currentExercise.type === 'fill-blank' && (
-              <div style={styles.fillBlank}>
-                <input
-                  style={styles.input}
-                  value={userAnswer}
-                  onChange={e => setUserAnswer(e.target.value)}
-                  onKeyDown={e => {
-                    if (e.key === 'Enter') {
-                      if (feedback) handleNextExercise();
-                      else handleSubmitExercise();
-                    }
-                  }}
-                  placeholder="Type your answer..."
-                  disabled={!!feedback}
-                  autoFocus
-                />
-                {currentExercise.hint && !feedback && (
-                  <p style={styles.hint}>Hint: {currentExercise.hint}</p>
-                )}
+            {/* Tip reminder during exercises */}
+            {currentSection?.tip && (
+              <div style={styles.tipCardSmall}>
+                <span style={styles.tipIcon}>💡</span>
+                <span>{currentSection.tip}</span>
               </div>
             )}
 
-            {currentExercise.type === 'multiple-choice' && (
-              <div style={styles.options}>
-                {currentExercise.options.map((opt, i) => (
-                  <button
-                    key={i}
-                    style={{
-                      ...styles.optionBtn,
-                      ...(selectedOption === i ? styles.optionSelected : {}),
-                      ...(feedback && i === currentExercise.correctIndex ? styles.optionCorrect : {}),
-                      ...(feedback && selectedOption === i && i !== currentExercise.correctIndex ? styles.optionWrong : {})
-                    }}
-                    onClick={() => !feedback && setSelectedOption(i)}
-                    disabled={!!feedback}
-                  >
-                    {opt}
-                  </button>
-                ))}
-              </div>
-            )}
+            <p style={styles.exercisePrompt}>
+              {currentExercise.prompt}
+              {ttsEnabled && currentExercise.prompt && currentExercise.type !== 'listen-type' && (
+                <button style={styles.miniSpeak} onClick={() => {
+                  // Extract Cyrillic text from prompt for TTS
+                  const cyrillicMatch = currentExercise.prompt.match(/[а-яА-ЯіІїЇєЄґҐёЁ][а-яА-ЯіІїЇєЄґҐёЁ\s.,!?''"-]*/);
+                  if (cyrillicMatch) onSpeak(cyrillicMatch[0].trim(), 0.8, ttsVolume);
+                }}>🔊</button>
+              )}
+            </p>
 
-            {!feedback && (
-              <button style={styles.checkBtn} onClick={handleSubmitExercise}>
-                Check Answer
-              </button>
-            )}
+            <ExerciseRenderer
+              exercise={currentExercise}
+              onAnswer={handleAnswer}
+              onSpeak={onSpeak}
+              ttsEnabled={ttsEnabled}
+              ttsVolume={ttsVolume}
+              feedback={feedback}
+              langCode={langCode}
+            />
 
             {feedback && (
               <div style={{ ...styles.feedbackBox, borderColor: feedback.correct ? '#4ade80' : '#f87171' }}>
-                <div style={{ color: feedback.correct ? '#4ade80' : '#f87171', fontWeight: '700', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
-                  {feedback.correct ? 'Correct!' : 'Not quite...'}
+                <div style={{ color: feedback.correct ? '#4ade80' : '#f87171', fontWeight: '700', fontSize: '1.1rem', marginBottom: '0.3rem' }}>
+                  {feedback.correct ? '✓ Correct!' : '✗ Not quite...'}
+                  {feedback.bonusPoints > 0 && (
+                    <span style={styles.bonusXP}> +{feedback.bonusPoints} streak bonus!</span>
+                  )}
                 </div>
-                {feedback.explanation && (
-                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem' }}>{feedback.explanation}</p>
+                {encouragement && (
+                  <p style={styles.encourageText}>{encouragement}</p>
                 )}
-                <button style={styles.nextBtn} onClick={handleNextExercise}>
+                {feedback.explanation && (
+                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem', marginTop: '0.25rem' }}>{feedback.explanation}</p>
+                )}
+                <button style={styles.nextBtn} onClick={handleNext}>
                   Continue →
                 </button>
               </div>
             )}
           </div>
-          {ChatPanel}
+          <LessonChat {...chat} />
         </div>
         <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
       </div>
@@ -407,29 +486,72 @@ const styles = {
     gap: '1.5rem',
     alignItems: 'flex-start',
   },
+  // Tier grouping
+  tierGroup: {
+    maxWidth: '900px',
+    margin: '0 auto 2rem',
+  },
+  tierHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    marginBottom: '1rem',
+  },
+  tierBadge: {
+    padding: '0.2rem 0.6rem',
+    borderRadius: '6px',
+    fontWeight: '800',
+    fontSize: '0.8rem',
+    color: '#1a1a2e',
+  },
+  tierName: {
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: 'rgba(255,255,255,0.7)',
+  },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-    gap: '1.5rem',
-    maxWidth: '900px',
-    margin: '0 auto'
+    gap: '1rem',
   },
   lessonCard: {
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '16px',
-    padding: '1.5rem',
+    padding: '1.25rem',
     display: 'flex',
     gap: '1rem',
     alignItems: 'center',
     cursor: 'pointer',
     border: '2px solid rgba(255,215,0,0.2)',
-    transition: 'all 0.3s'
+    transition: 'all 0.3s',
   },
-  lessonIcon: { fontSize: '2.5rem' },
+  lessonCardLocked: {
+    opacity: 0.45,
+    cursor: 'not-allowed',
+    border: '2px solid rgba(255,255,255,0.08)',
+  },
+  lessonCardCompleted: {
+    border: '2px solid rgba(74,222,128,0.3)',
+  },
+  lessonIcon: { fontSize: '2.2rem' },
   lessonInfo: { flex: 1 },
-  lessonTitle: { margin: 0, color: '#ffd700', fontSize: '1.2rem' },
-  lessonTitleUk: { margin: '0.25rem 0', color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem' },
-  lessonMeta: { margin: 0, color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem' },
+  lessonTitle: { margin: 0, color: '#ffd700', fontSize: '1.1rem' },
+  lessonTitleUk: { margin: '0.2rem 0', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem' },
+  lessonMeta: { margin: 0, color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem' },
+  // Section progress dots
+  sectionProgress: {
+    display: 'flex',
+    gap: '0.4rem',
+    justifyContent: 'center',
+    marginBottom: '1.5rem',
+  },
+  sectionDot: {
+    width: '10px',
+    height: '10px',
+    borderRadius: '50%',
+    transition: 'background 0.3s',
+  },
+  // Section card
   sectionCard: {
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '20px',
@@ -439,23 +561,51 @@ const styles = {
   },
   sectionTitle: { color: '#ffd700', fontSize: '1.4rem', marginBottom: '1rem' },
   explanation: { fontSize: '1.05rem', lineHeight: 1.6, color: 'rgba(255,255,255,0.9)', marginBottom: '1.5rem' },
+  // Tip card
+  tipCard: {
+    background: 'rgba(255,215,0,0.08)',
+    border: '1px solid rgba(255,215,0,0.25)',
+    borderRadius: '12px',
+    padding: '0.75rem 1rem',
+    marginBottom: '1.5rem',
+    display: 'flex',
+    gap: '0.5rem',
+    alignItems: 'flex-start',
+    fontSize: '0.95rem',
+    color: 'rgba(255,255,255,0.85)',
+    lineHeight: 1.5,
+  },
+  tipCardSmall: {
+    background: 'rgba(255,215,0,0.06)',
+    border: '1px solid rgba(255,215,0,0.15)',
+    borderRadius: '10px',
+    padding: '0.5rem 0.75rem',
+    marginBottom: '1rem',
+    display: 'flex',
+    gap: '0.4rem',
+    alignItems: 'center',
+    fontSize: '0.85rem',
+    color: 'rgba(255,255,255,0.6)',
+  },
+  tipIcon: { flexShrink: 0 },
+  // Examples
   examples: { marginBottom: '1.5rem' },
   examplesTitle: { color: '#4dabf7', marginBottom: '0.75rem' },
   exampleRow: {
     background: 'rgba(255,255,255,0.05)',
     borderRadius: '10px',
     padding: '0.75rem 1rem',
-    marginBottom: '0.5rem'
+    marginBottom: '0.5rem',
   },
   exampleUk: { fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' },
   exampleEn: { fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' },
-  highlight: { color: '#ffd700', fontWeight: '700' },
   miniSpeak: {
     background: 'none',
     border: 'none',
     cursor: 'pointer',
     fontSize: '1rem',
-    padding: '0.2rem'
+    padding: '0.2rem',
+    flexShrink: 0,
   },
   practiceBtn: {
     width: '100%',
@@ -467,8 +617,41 @@ const styles = {
     fontSize: '1.1rem',
     fontWeight: '700',
     cursor: 'pointer',
-    fontFamily: 'inherit'
+    fontFamily: 'inherit',
   },
+  // Exercise header
+  exerciseHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+    marginBottom: '1rem',
+    maxWidth: '900px',
+    margin: '0 auto 1rem',
+  },
+  progressBarOuter: {
+    flex: 1,
+    height: '6px',
+    background: 'rgba(255,255,255,0.1)',
+    borderRadius: '3px',
+    overflow: 'hidden',
+  },
+  progressBarInner: {
+    height: '100%',
+    background: 'linear-gradient(90deg, #ffd700, #4ade80)',
+    borderRadius: '3px',
+    transition: 'width 0.3s',
+  },
+  streakBadge: {
+    background: 'rgba(255,100,0,0.15)',
+    border: '1px solid rgba(255,100,0,0.3)',
+    borderRadius: '20px',
+    padding: '0.25rem 0.75rem',
+    fontSize: '0.9rem',
+    fontWeight: '700',
+    color: '#ff6b35',
+    whiteSpace: 'nowrap',
+  },
+  // Exercise card
   exerciseCard: {
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '20px',
@@ -476,55 +659,24 @@ const styles = {
     border: '1px solid rgba(255,215,0,0.2)',
     width: '100%',
   },
-  exercisePrompt: { fontSize: '1.2rem', marginBottom: '1.5rem', lineHeight: 1.4 },
-  fillBlank: { marginBottom: '1rem' },
-  input: {
-    width: '100%',
-    padding: '0.75rem 1rem',
-    borderRadius: '10px',
-    border: '2px solid rgba(255,255,255,0.2)',
-    background: 'rgba(0,0,0,0.3)',
-    color: '#fff',
-    fontSize: '1.1rem',
-    fontFamily: 'inherit',
-    outline: 'none',
-    boxSizing: 'border-box'
-  },
-  hint: { color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', marginTop: '0.5rem', fontStyle: 'italic' },
-  options: { display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' },
-  optionBtn: {
-    background: 'rgba(255,255,255,0.05)',
-    border: '2px solid rgba(255,255,255,0.2)',
-    color: '#fff',
-    padding: '0.75rem 1rem',
-    borderRadius: '10px',
-    cursor: 'pointer',
-    fontSize: '1.05rem',
-    fontFamily: 'inherit',
-    textAlign: 'left',
-    transition: 'all 0.2s'
-  },
-  optionSelected: { borderColor: '#ffd700', background: 'rgba(255,215,0,0.1)' },
-  optionCorrect: { borderColor: '#4ade80', background: 'rgba(74,222,128,0.15)' },
-  optionWrong: { borderColor: '#f87171', background: 'rgba(248,113,113,0.15)' },
-  checkBtn: {
-    width: '100%',
-    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
-    border: 'none',
-    color: '#1a1a2e',
-    padding: '0.75rem',
-    borderRadius: '10px',
-    fontSize: '1rem',
-    fontWeight: '700',
-    cursor: 'pointer',
-    fontFamily: 'inherit'
-  },
+  exercisePrompt: { fontSize: '1.2rem', marginBottom: '1.5rem', lineHeight: 1.4, display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' },
   feedbackBox: {
     background: 'rgba(0,0,0,0.2)',
     borderRadius: '12px',
     padding: '1rem',
     borderLeft: '4px solid',
-    marginTop: '1rem'
+    marginTop: '1rem',
+  },
+  bonusXP: {
+    color: '#ffd700',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+  },
+  encourageText: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: '0.9rem',
+    fontStyle: 'italic',
+    margin: '0.25rem 0',
   },
   nextBtn: {
     background: 'linear-gradient(135deg, #51cf66, #37b24d)',
@@ -536,126 +688,58 @@ const styles = {
     fontWeight: '700',
     cursor: 'pointer',
     fontFamily: 'inherit',
-    marginTop: '0.75rem'
+    marginTop: '0.75rem',
   },
-  // Chat panel
-  chatPanel: {
-    width: '340px',
-    flexShrink: 0,
-    background: 'rgba(0,0,0,0.4)',
+  // Section complete
+  sectionCompleteCard: {
+    maxWidth: '500px',
+    margin: '3rem auto',
+    background: 'rgba(0,0,0,0.3)',
+    borderRadius: '24px',
+    padding: '2.5rem',
     border: '1px solid rgba(255,215,0,0.25)',
-    borderRadius: '20px',
-    display: 'flex',
-    flexDirection: 'column',
-    height: '70vh',
-    minHeight: '400px',
-  },
-  chatPanelHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '1rem 1.25rem',
-    borderBottom: '1px solid rgba(255,255,255,0.1)',
-    flexShrink: 0,
-  },
-  chatPanelTitle: {
-    fontWeight: '700',
-    fontSize: '1rem',
-    color: '#ffd700',
-  },
-  chatCloseBtn: {
-    background: 'none',
-    border: 'none',
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: '1rem',
-    cursor: 'pointer',
-    padding: '0.2rem 0.4rem',
-    borderRadius: '6px',
-    lineHeight: 1,
-  },
-  chatMessages: {
-    flex: 1,
-    overflowY: 'auto',
-    padding: '1rem',
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.6rem',
-  },
-  chatEmpty: {
-    color: 'rgba(255,255,255,0.3)',
-    fontSize: '0.9rem',
     textAlign: 'center',
-    marginTop: '1rem',
   },
-  chatBubble: {
-    padding: '0.6rem 0.9rem',
-    borderRadius: '12px',
-    fontSize: '0.9rem',
-    lineHeight: 1.5,
-    maxWidth: '90%',
-    wordBreak: 'break-word',
-  },
-  chatBubbleUser: {
-    background: 'rgba(255,215,0,0.15)',
-    border: '1px solid rgba(255,215,0,0.3)',
-    alignSelf: 'flex-end',
-    color: '#fff',
-  },
-  chatBubbleBot: {
-    background: 'rgba(255,255,255,0.06)',
-    border: '1px solid rgba(255,255,255,0.1)',
-    alignSelf: 'flex-start',
-    color: 'rgba(255,255,255,0.9)',
-  },
-  chatInputRow: {
+  sectionCompleteIcon: { fontSize: '3rem', marginBottom: '0.5rem' },
+  sectionCompleteTitle: { color: '#ffd700', fontSize: '1.5rem', margin: '0 0 0.25rem' },
+  sectionCompleteSub: { color: 'rgba(255,255,255,0.6)', fontSize: '1rem', margin: '0 0 1.5rem' },
+  sectionStats: {
     display: 'flex',
-    gap: '0.5rem',
-    padding: '0.75rem',
-    borderTop: '1px solid rgba(255,255,255,0.1)',
-    flexShrink: 0,
+    justifyContent: 'center',
+    gap: '2rem',
+    marginBottom: '1.5rem',
   },
-  chatInput: {
-    flex: 1,
-    background: 'rgba(255,255,255,0.07)',
-    border: '1px solid rgba(255,255,255,0.15)',
-    borderRadius: '10px',
+  miniStat: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  miniStatValue: {
+    fontSize: '1.4rem',
+    fontWeight: '700',
     color: '#fff',
-    padding: '0.5rem 0.75rem',
+  },
+  miniStatLabel: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.5)',
+    marginTop: '0.2rem',
+  },
+  encourageMsg: {
+    color: '#4ade80',
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    margin: '0 0 1rem',
+  },
+  nextSectionPreview: {
+    color: 'rgba(255,255,255,0.5)',
     fontSize: '0.9rem',
-    fontFamily: 'inherit',
-    outline: 'none',
+    margin: '0 0 1.5rem',
   },
-  chatSendBtn: {
-    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
-    border: 'none',
-    borderRadius: '10px',
-    color: '#1a1a2e',
-    fontWeight: '700',
-    fontSize: '1rem',
-    padding: '0.5rem 0.9rem',
-    cursor: 'pointer',
-  },
-  typingDot: {
-    display: 'inline-block',
-    animation: 'pulse 1.2s infinite',
-    marginRight: '2px',
-    fontSize: '0.7rem',
-  },
-  // Floating button
-  questionBtn: {
-    position: 'fixed',
-    bottom: '2rem',
-    right: '2rem',
-    background: 'linear-gradient(135deg, #4dabf7, #339af0)',
-    border: 'none',
-    borderRadius: '999px',
-    color: '#fff',
-    fontWeight: '700',
-    fontSize: '0.95rem',
-    padding: '0.75rem 1.25rem',
-    cursor: 'pointer',
-    fontFamily: 'inherit',
-    boxShadow: '0 4px 20px rgba(77,171,247,0.4)',
-    zIndex: 100,
+  streakSummary: {
+    textAlign: 'center',
+    color: '#ff6b35',
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    marginTop: '1rem',
   },
 };

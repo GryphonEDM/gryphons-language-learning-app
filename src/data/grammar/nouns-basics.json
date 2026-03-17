@@ -1,0 +1,123 @@
+{
+  "lessonId": "nouns-basics",
+  "nameEn": "Nouns: Gender & Plurals",
+  "nameUk": "Іменники: рід і множина",
+  "icon": "📦",
+  "tier": "A1",
+  "prerequisites": ["alphabet"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "masculine",
+      "title": "Masculine Nouns",
+      "explanation": "Most Ukrainian masculine nouns end in a consonant: кіт (cat), дім (house), стіл (table), хліб (bread). Some end in -о or -ь: батько (father), день (day).",
+      "tip": "Ends in a consonant? Probably masculine!",
+      "examples": [
+        { "uk": "Кіт", "en": "Cat (masculine)", "highlight": "Кіт" },
+        { "uk": "Стіл", "en": "Table (masculine)", "highlight": "Стіл" },
+        { "uk": "Батько", "en": "Father (masculine)", "highlight": "Батько" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What gender is 'кіт' (cat)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Кіт' ends in a consonant, so it is masculine." },
+        { "type": "multiple-choice", "prompt": "What gender is 'дім' (house)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Дім' ends in a consonant, making it masculine." },
+        { "type": "fill-blank", "prompt": "The gender of 'стіл' (table) is ___", "acceptedAnswers": ["masculine", "чоловічий", "Masculine"], "hint": "It ends in a consonant" },
+        { "type": "multiple-choice", "prompt": "Which noun is masculine?", "options": ["хліб (bread)", "книга (book)", "місто (city)"], "correctIndex": 0, "explanation": "'Хліб' ends in a consonant — masculine. 'Книга' (-а) is feminine, 'місто' (-о) is neuter." },
+        { "type": "matching", "prompt": "Match each masculine noun to its meaning:", "pairs": [
+          { "left": "кіт", "right": "cat" },
+          { "left": "дім", "right": "house" },
+          { "left": "стіл", "right": "table" },
+          { "left": "хліб", "right": "bread" }
+        ] },
+        { "type": "multiple-choice", "prompt": "'Батько' (father) ends in -о. Is it masculine?", "options": ["Yes — it's an exception", "No — it's neuter", "No — it's feminine"], "correctIndex": 0, "explanation": "'Батько' is masculine despite ending in -о. It refers to a male person." },
+        { "type": "fill-blank", "prompt": "The gender of 'день' (day) is ___", "acceptedAnswers": ["masculine", "чоловічий", "Masculine"], "hint": "It ends in -ь but is still masculine" },
+        { "type": "multiple-choice", "prompt": "Most masculine nouns end in:", "options": ["A consonant", "-а or -я", "-о or -е"], "correctIndex": 0, "explanation": "The typical masculine ending is a consonant." },
+        { "type": "multiple-choice", "prompt": "What gender is 'брат' (brother)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Брат' ends in a consonant — masculine." },
+        { "type": "fill-blank", "prompt": "'Друг' means 'friend'. Its gender is ___", "acceptedAnswers": ["masculine", "чоловічий", "Masculine"], "hint": "Ends in a consonant" }
+      ]
+    },
+    {
+      "sectionId": "feminine",
+      "title": "Feminine Nouns",
+      "explanation": "Most feminine nouns end in -а or -я: мама (mom), книга (book), земля (earth). Some end in a soft sign -ь: ніч (night), любов (love).",
+      "tip": "Ends in -а or -я? Usually feminine!",
+      "examples": [
+        { "uk": "Книга", "en": "Book (feminine)", "highlight": "Книга" },
+        { "uk": "Мама", "en": "Mom (feminine)", "highlight": "Мама" },
+        { "uk": "Земля", "en": "Earth (feminine)", "highlight": "Земля" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What gender is 'книга' (book)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Книга' ends in -а, so it is feminine." },
+        { "type": "multiple-choice", "prompt": "What gender is 'земля' (earth)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Земля' ends in -я, making it feminine." },
+        { "type": "fill-blank", "prompt": "The gender of 'мама' (mom) is ___", "acceptedAnswers": ["feminine", "жіночий", "Feminine"], "hint": "Ends in -а" },
+        { "type": "multiple-choice", "prompt": "Which noun is feminine?", "options": ["вода (water)", "хліб (bread)", "село (village)"], "correctIndex": 0, "explanation": "'Вода' ends in -а — feminine." },
+        { "type": "matching", "prompt": "Match each feminine noun to its meaning:", "pairs": [
+          { "left": "книга", "right": "book" },
+          { "left": "мама", "right": "mom" },
+          { "left": "вода", "right": "water" },
+          { "left": "земля", "right": "earth" }
+        ] },
+        { "type": "multiple-choice", "prompt": "'Ніч' (night) ends in a consonant. Is it feminine?", "options": ["Yes — some feminine nouns end in -ь", "No — it's masculine", "No — it's neuter"], "correctIndex": 0, "explanation": "'Ніч' is feminine. Some feminine nouns end in a soft consonant." },
+        { "type": "fill-blank", "prompt": "The gender of 'любов' (love) is ___", "acceptedAnswers": ["feminine", "жіночий", "Feminine"], "hint": "An exception — ends in a consonant but is feminine" },
+        { "type": "multiple-choice", "prompt": "Most feminine nouns end in:", "options": ["-а or -я", "A consonant", "-о or -е"], "correctIndex": 0, "explanation": "The typical feminine endings are -а and -я." },
+        { "type": "multiple-choice", "prompt": "What gender is 'школа' (school)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Школа' ends in -а — feminine." },
+        { "type": "fill-blank", "prompt": "'Сестра' means 'sister'. Its gender is ___", "acceptedAnswers": ["feminine", "жіночий", "Feminine"], "hint": "Ends in -а" }
+      ]
+    },
+    {
+      "sectionId": "neuter",
+      "title": "Neuter Nouns",
+      "explanation": "Neuter nouns typically end in -о or -е: місто (city), село (village), море (sea), серце (heart).",
+      "tip": "Ends in -о or -е? Likely neuter!",
+      "examples": [
+        { "uk": "Місто", "en": "City (neuter)", "highlight": "Місто" },
+        { "uk": "Море", "en": "Sea (neuter)", "highlight": "Море" },
+        { "uk": "Село", "en": "Village (neuter)", "highlight": "Село" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What gender is 'місто' (city)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Місто' ends in -о, so it is neuter." },
+        { "type": "multiple-choice", "prompt": "What gender is 'море' (sea)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Море' ends in -е, making it neuter." },
+        { "type": "fill-blank", "prompt": "The gender of 'село' (village) is ___", "acceptedAnswers": ["neuter", "середній", "Neuter"], "hint": "Ends in -о" },
+        { "type": "multiple-choice", "prompt": "Which noun is neuter?", "options": ["вікно (window)", "брат (brother)", "сестра (sister)"], "correctIndex": 0, "explanation": "'Вікно' ends in -о — neuter." },
+        { "type": "matching", "prompt": "Match each neuter noun to its meaning:", "pairs": [
+          { "left": "місто", "right": "city" },
+          { "left": "море", "right": "sea" },
+          { "left": "село", "right": "village" },
+          { "left": "серце", "right": "heart" }
+        ] },
+        { "type": "multiple-choice", "prompt": "How can you tell 'молоко' (milk) is neuter?", "options": ["It ends in -о", "It ends in a consonant", "It ends in -а"], "correctIndex": 0, "explanation": "Nouns ending in -о are typically neuter." },
+        { "type": "fill-blank", "prompt": "The gender of 'серце' (heart) is ___", "acceptedAnswers": ["neuter", "середній", "Neuter"], "hint": "Ends in -е" },
+        { "type": "multiple-choice", "prompt": "Most neuter nouns end in:", "options": ["-о or -е", "-а or -я", "A consonant"], "correctIndex": 0, "explanation": "The typical neuter endings are -о and -е." },
+        { "type": "multiple-choice", "prompt": "What gender is 'яблуко' (apple)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Яблуко' ends in -о — neuter." },
+        { "type": "fill-blank", "prompt": "'Небо' means 'sky'. Its gender is ___", "acceptedAnswers": ["neuter", "середній", "Neuter"], "hint": "Ends in -о" }
+      ]
+    },
+    {
+      "sectionId": "plurals",
+      "title": "Forming Plurals",
+      "explanation": "Common plural endings: masculine consonant nouns add -и/-і (кіт→коти, стіл→столи). Feminine -а→-и (книга→книги). Neuter -о→-а (місто→міста), -е→-я (море→моря).",
+      "tip": "Masc: add -и/-і | Fem: -а→-и | Neuter: -о→-а, -е→-я",
+      "examples": [
+        { "uk": "Коти", "en": "Cats", "highlight": "Коти" },
+        { "uk": "Книги", "en": "Books", "highlight": "Книги" },
+        { "uk": "Міста", "en": "Cities", "highlight": "Міста" }
+      ],
+      "exercises": [
+        { "type": "fill-blank", "prompt": "Make plural: кіт → ___", "acceptedAnswers": ["коти", "Коти"], "hint": "Masculine: add -и" },
+        { "type": "fill-blank", "prompt": "Make plural: книга → ___", "acceptedAnswers": ["книги", "Книги"], "hint": "Feminine: -а becomes -и" },
+        { "type": "fill-blank", "prompt": "Make plural: місто → ___", "acceptedAnswers": ["міста", "Міста"], "hint": "Neuter: -о becomes -а" },
+        { "type": "multiple-choice", "prompt": "What is the plural of 'стіл' (table)?", "options": ["столи", "стіла", "стілі"], "correctIndex": 0, "explanation": "Masculine nouns add -и/-і: стіл → столи." },
+        { "type": "matching", "prompt": "Match each noun to its plural:", "pairs": [
+          { "left": "кіт", "right": "коти" },
+          { "left": "книга", "right": "книги" },
+          { "left": "місто", "right": "міста" },
+          { "left": "море", "right": "моря" }
+        ] },
+        { "type": "fill-blank", "prompt": "Make plural: море → ___", "acceptedAnswers": ["моря", "Моря"], "hint": "Neuter: -е becomes -я" },
+        { "type": "multiple-choice", "prompt": "What is the plural of 'школа' (school)?", "options": ["школи", "школа", "школе"], "correctIndex": 0, "explanation": "Feminine: -а → -и, so школа → школи." },
+        { "type": "fill-blank", "prompt": "Make plural: дім → ___", "acceptedAnswers": ["доми", "Доми"], "hint": "Masculine: add -и" },
+        { "type": "multiple-choice", "prompt": "What is the plural of 'село' (village)?", "options": ["села", "селі", "село"], "correctIndex": 0, "explanation": "Neuter: -о → -а, so село → села." },
+        { "type": "fill-blank", "prompt": "Make plural: земля → ___", "acceptedAnswers": ["землі", "Землі"], "hint": "Feminine: -я becomes -і" }
+      ]
+    }
+  ]
+}

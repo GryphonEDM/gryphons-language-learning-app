@@ -1,0 +1,135 @@
+{
+  "lessonId": "cases-dat-inst",
+  "nameEn": "Dative & Instrumental",
+  "nameUk": "Давальний і орудний",
+  "icon": "🔧",
+  "tier": "B1",
+  "prerequisites": ["cases-genitive"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "dative-case",
+      "title": "Dative Case",
+      "explanation": "The dative case answers 'to whom?' (кому?) and 'to what?' (чому?). It marks the indirect object — the recipient of an action. Masculine nouns take -у or -ові/-еві, feminine nouns ending in -а take -і, neuter nouns take -у. The endings -ові/-еві are preferred for animate masculine nouns.",
+      "examples": [
+        { "uk": "Я дав книгу братові.", "en": "I gave a book to my brother.", "highlight": "братові" },
+        { "uk": "Скажи мамі.", "en": "Tell mom.", "highlight": "мамі" },
+        { "uk": "Я допоміг другу.", "en": "I helped a friend.", "highlight": "другу" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я написав листа ___. (сестра – sister)", "options": ["сестрі", "сестру", "сестра"], "correctIndex": 0, "explanation": "Feminine nouns ending in -а take -і in the dative: сестра → сестрі." },
+        { "type": "fill-blank", "prompt": "Він подарував квіти ___. (дівчина – girl)", "acceptedAnswers": ["дівчині"], "hint": "Feminine -а → -і in dative", "explanation": "Дівчина → дівчині. Feminine nouns ending in -а change to -і in the dative." },
+        { "type": "fill-blank", "prompt": "Дай ___ води. (кіт – cat)", "acceptedAnswers": ["коту", "котові"], "hint": "Masculine: -у or -ові", "explanation": "Кіт → коту or котові. Masculine animate nouns can take either -у or -ові in the dative." },
+        { "type": "transformation", "prompt": "Put the noun in the dative case:", "baseWord": "вчитель", "context": "Учні подарували квіти ___.", "acceptedAnswers": ["вчителю", "вчителеві"], "hint": "Masculine: -ю or -еві (after soft consonant)", "explanation": "Вчитель → вчителю or вчителеві. The -ь becomes -ю, or we add -еві." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я розповів другу історію бабуся.", "errorWord": "бабуся", "acceptedAnswers": ["бабусі"], "explanation": "Розповів... бабусі — 'told grandma'. Бабуся → бабусі (dative, feminine -я → -і)." },
+        { "type": "multiple-choice", "prompt": "Мені потрібно зателефонувати ___. (лікар – doctor)", "options": ["лікарю", "лікар", "лікаря"], "correctIndex": 0, "explanation": "Зателефонувати + dative: лікар → лікарю (-ю after soft р)." },
+        { "type": "matching", "prompt": "Match the nominative to the dative form:", "pairs": [
+          { "left": "мама", "right": "мамі" },
+          { "left": "тато", "right": "татові / тату" },
+          { "left": "друг", "right": "другу / другові" },
+          { "left": "дитина", "right": "дитині" },
+          { "left": "студент", "right": "студенту / студентові" }
+        ], "explanation": "Feminine -а → -і; masculine animate: -у or -ові; дитина (child, f.) → дитині." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Give this letter to the teacher.", "words": ["Дай", "цього", "листа", "вчителю"], "distractors": ["вчитель"], "validOrders": [["Дай", "цього", "листа", "вчителю"]], "explanation": "Дай + accusative (листа) + dative (вчителю) — give the letter to the teacher." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Я допомагаю бабусі готувати.", "acceptedAnswers": ["Я допомагаю бабусі готувати.", "Я допомагаю бабусі готувати"], "explanation": "Допомагати (to help) takes the dative: бабуся → бабусі." },
+        { "type": "table-fill", "prompt": "Complete the dative forms:", "headers": ["Nominative", "Dative"], "rows": [
+          { "label": "батько", "answer": "батькові / батьку", "prefilled": false },
+          { "label": "подруга", "answer": "подрузі", "prefilled": false },
+          { "label": "хлопець", "answer": "хлопцю / хлопцеві", "prefilled": false },
+          { "label": "вчителька", "answer": "вчительці", "prefilled": false },
+          { "label": "дідусь", "answer": "дідусю / дідусеві", "prefilled": false }
+        ], "explanation": "Батько → батькові/батьку; подруга → подрузі (г→з before і); хлопець → хлопцю/хлопцеві; вчителька → вчительці (к→ц before і); дідусь → дідусю/дідусеві." }
+      ]
+    },
+    {
+      "sectionId": "dative-practice",
+      "title": "Dative in Practice",
+      "explanation": "The dative case is used with verbs of giving (давати, дарувати), telling (казати, розповідати), helping (допомагати), and also in impersonal constructions like мені холодно (I am cold), йому цікаво (he finds it interesting). Personal pronouns in dative: мені, тобі, йому, їй, нам, вам, їм.",
+      "examples": [
+        { "uk": "Мені подобається ця пісня.", "en": "I like this song.", "highlight": "Мені" },
+        { "uk": "Тобі потрібна допомога?", "en": "Do you need help?", "highlight": "Тобі" },
+        { "uk": "Їй було весело.", "en": "She was having fun.", "highlight": "Їй" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "___ подобається ця книга. (I)", "options": ["Мені", "Я", "Мене"], "correctIndex": 0, "explanation": "Подобатися takes the dative: я → мені. Literally 'to me is pleasing this book'." },
+        { "type": "fill-blank", "prompt": "___ треба йти. (he)", "acceptedAnswers": ["Йому"], "hint": "Dative of він = йому", "explanation": "Йому треба йти — 'He needs to go'. Він → йому in the dative." },
+        { "type": "fill-blank", "prompt": "Ми подарували ___ годинник. (he, dative)", "acceptedAnswers": ["йому"], "hint": "Дative of він", "explanation": "Подарувати (to give as a gift) takes the dative: він → йому." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я холодно.", "errorWord": "Я", "acceptedAnswers": ["Мені"], "explanation": "Impersonal constructions use the dative: Мені холодно (I am cold), not Я холодно." },
+        { "type": "multiple-choice", "prompt": "___ потрібно більше часу. (we)", "options": ["Нам", "Ми", "Нас"], "correctIndex": 0, "explanation": "Потрібно takes the dative: ми → нам." },
+        { "type": "matching", "prompt": "Match the personal pronoun to its dative form:", "pairs": [
+          { "left": "я", "right": "мені" },
+          { "left": "ти", "right": "тобі" },
+          { "left": "він", "right": "йому" },
+          { "left": "вона", "right": "їй" },
+          { "left": "вони", "right": "їм" }
+        ], "explanation": "Dative personal pronouns: я→мені, ти→тобі, він→йому, вона→їй, ми→нам, ви→вам, вони→їм." },
+        { "type": "transformation", "prompt": "Rewrite with the dative pronoun:", "baseWord": "вона", "context": "___ подобається танцювати.", "acceptedAnswers": ["Їй"], "hint": "Dative of вона = їй", "explanation": "Вона → їй in the dative. Подобається + dative = likes." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Tell me the truth.", "words": ["Скажи", "мені", "правду"], "distractors": ["я"], "validOrders": [["Скажи", "мені", "правду"]], "explanation": "Сказати (to tell) takes the dative: я → мені. Правду is accusative (direct object)." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Нам потрібно купити хліб.", "acceptedAnswers": ["Нам потрібно купити хліб.", "Нам потрібно купити хліб"], "explanation": "Нам потрібно — 'we need to'. Потрібно takes the dative: ми → нам." },
+        { "type": "multiple-choice", "prompt": "Я допомагаю ___. (вони – they)", "options": ["їм", "їх", "вони"], "correctIndex": 0, "explanation": "Допомагати (to help) takes the dative: вони → їм." }
+      ]
+    },
+    {
+      "sectionId": "instrumental-case",
+      "title": "Instrumental Case",
+      "explanation": "The instrumental case answers 'with what?' (чим?) and 'with whom?' (з ким?). It indicates the instrument or means of an action, and accompaniment. Masculine/neuter nouns take -ом/-ем, feminine nouns ending in -а take -ою/-ею. After prepositions з (with), між (between), над (above), під (under), за (behind), перед (in front of).",
+      "examples": [
+        { "uk": "Я пишу ручкою.", "en": "I write with a pen.", "highlight": "ручкою" },
+        { "uk": "Він їде автобусом.", "en": "He travels by bus.", "highlight": "автобусом" },
+        { "uk": "Ріжу хліб ножем.", "en": "I cut bread with a knife.", "highlight": "ножем" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я їм суп ___. (ложка – spoon)", "options": ["ложкою", "ложки", "ложку"], "correctIndex": 0, "explanation": "Feminine -а → -ою in the instrumental: ложка → ложкою (with a spoon)." },
+        { "type": "fill-blank", "prompt": "Він малює ___. (олівець – pencil)", "acceptedAnswers": ["олівцем"], "hint": "Masculine: -ем after soft consonant/ц", "explanation": "Олівець → олівцем. Masculine nouns ending in -ець take -ем in the instrumental." },
+        { "type": "fill-blank", "prompt": "Ми їдемо ___. (потяг – train)", "acceptedAnswers": ["потягом"], "hint": "Masculine: -ом", "explanation": "Потяг → потягом. Masculine nouns take -ом in the instrumental (by train)." },
+        { "type": "transformation", "prompt": "Put the noun in the instrumental case:", "baseWord": "вода", "context": "Він облився ___.", "acceptedAnswers": ["водою"], "hint": "Feminine -а → -ою", "explanation": "Вода → водою. Feminine nouns ending in -а take -ою in the instrumental." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я пишу олівець.", "errorWord": "олівець", "acceptedAnswers": ["олівцем"], "explanation": "Writing WITH a pencil requires the instrumental case: олівець → олівцем." },
+        { "type": "multiple-choice", "prompt": "Вона їсть торт ___. (виделка – fork)", "options": ["виделкою", "виделка", "виделки"], "correctIndex": 0, "explanation": "Feminine -а → -ою: виделка → виделкою (with a fork)." },
+        { "type": "matching", "prompt": "Match the nominative to the instrumental form:", "pairs": [
+          { "left": "ніж (knife)", "right": "ножем" },
+          { "left": "рука (hand)", "right": "рукою" },
+          { "left": "молоток (hammer)", "right": "молотком" },
+          { "left": "голка (needle)", "right": "голкою" },
+          { "left": "ключ (key)", "right": "ключем" }
+        ], "explanation": "Masculine: ніж→ножем, молоток→молотком, ключ→ключем. Feminine: рука→рукою, голка→голкою." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She opened the door with a key.", "words": ["Вона", "відкрила", "двері", "ключем"], "distractors": ["ключ"], "validOrders": [["Вона", "відкрила", "двері", "ключем"]], "explanation": "Ключем (with a key) is instrumental. The instrument used for the action." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він їде на роботу машиною.", "acceptedAnswers": ["Він їде на роботу машиною.", "Він їде на роботу машиною"], "explanation": "Машиною — 'by car' (instrumental). Машина → машиною." },
+        { "type": "table-fill", "prompt": "Complete the instrumental forms:", "headers": ["Nominative", "Instrumental"], "rows": [
+          { "label": "сіль (f.)", "answer": "сіллю", "prefilled": false },
+          { "label": "ніч (f.)", "answer": "ніччю", "prefilled": false },
+          { "label": "олія (f.)", "answer": "олією", "prefilled": false },
+          { "label": "цукор (m.)", "answer": "цукром", "prefilled": false },
+          { "label": "масло (n.)", "answer": "маслом", "prefilled": false }
+        ], "explanation": "Feminine -ь → -лю (сіллю, with doubling); ніч → ніччю; олія → олією; masculine цукор → цукром; neuter масло → маслом." }
+      ]
+    },
+    {
+      "sectionId": "instrumental-practice",
+      "title": "Instrumental in Practice",
+      "explanation": "The instrumental case is used in several common patterns: 1) з + instrumental = 'with' (accompaniment): з другом, з сестрою; 2) profession/identity: Він є вчителем (He is a teacher); 3) seasons: влітку, взимку (adverbs), but весною, осінню (instrumental); 4) after verbs like цікавитися (to be interested in), займатися (to be engaged in).",
+      "examples": [
+        { "uk": "Вона гуляє з подругою.", "en": "She walks with a friend.", "highlight": "з подругою" },
+        { "uk": "Він працює вчителем.", "en": "He works as a teacher.", "highlight": "вчителем" },
+        { "uk": "Я цікавлюся музикою.", "en": "I am interested in music.", "highlight": "музикою" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Я іду в кіно з ___. (друг – friend)", "options": ["другом", "друга", "другу"], "correctIndex": 0, "explanation": "З + instrumental: друг → другом (with a friend)." },
+        { "type": "fill-blank", "prompt": "Вона працює ___. (лікар – doctor)", "acceptedAnswers": ["лікарем", "лікаркою"], "hint": "Profession = instrumental case", "explanation": "Працювати + instrumental for profession: лікар → лікарем." },
+        { "type": "fill-blank", "prompt": "Він п'є каву з ___. (молоко – milk)", "acceptedAnswers": ["молоком"], "hint": "З + instrumental; neuter -о → -ом", "explanation": "З молоком — 'with milk'. Молоко → молоком in the instrumental." },
+        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я цікавлюся історія.", "errorWord": "історія", "acceptedAnswers": ["історією"], "explanation": "Цікавитися takes the instrumental: історія → історією." },
+        { "type": "multiple-choice", "prompt": "Він став ___. (інженер – engineer)", "options": ["інженером", "інженера", "інженеру"], "correctIndex": 0, "explanation": "Стати (to become) + instrumental: інженер → інженером." },
+        { "type": "matching", "prompt": "Match the pronoun to its instrumental form (after з):", "pairs": [
+          { "left": "я", "right": "зі мною" },
+          { "left": "ти", "right": "з тобою" },
+          { "left": "він", "right": "з ним" },
+          { "left": "вона", "right": "з нею" },
+          { "left": "вони", "right": "з ними" }
+        ], "explanation": "Instrumental pronouns: зі мною, з тобою, з ним, з нею, з нами, з вами, з ними." },
+        { "type": "transformation", "prompt": "Put the noun in the instrumental after з:", "baseWord": "сестра", "context": "Я живу з ___.", "acceptedAnswers": ["сестрою"], "hint": "Feminine -а → -ою", "explanation": "З сестрою — 'with my sister'. Сестра → сестрою in the instrumental." },
+        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She is interested in art.", "words": ["Вона", "цікавиться", "мистецтвом"], "distractors": ["мистецтво"], "validOrders": [["Вона", "цікавиться", "мистецтвом"]], "explanation": "Цікавитися + instrumental: мистецтво → мистецтвом." },
+        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Ми розмовляємо з сусідами.", "acceptedAnswers": ["Ми розмовляємо з сусідами.", "Ми розмовляємо з сусідами"], "explanation": "З сусідами — 'with neighbors'. Сусіди → сусідами (instrumental plural)." },
+        { "type": "multiple-choice", "prompt": "Чим ти займаєшся? — Я займаюся ___. (спорт – sport)", "options": ["спортом", "спорту", "спорт"], "correctIndex": 0, "explanation": "Займатися (to be engaged in) takes the instrumental: спорт → спортом." }
+      ]
+    }
+  ]
+}

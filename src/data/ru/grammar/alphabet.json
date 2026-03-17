@@ -1,0 +1,95 @@
+{
+  "lessonId": "alphabet",
+  "nameEn": "Alphabet & Sounds",
+  "nameRu": "Алфавит и звуки",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "vowels",
+      "title": "Russian Vowels",
+      "explanation": "Russian has 10 vowel letters: а, е, ё, и, о, у, ы, э, ю, я. Some vowels (е, ё, ю, я) are \"iotated\" — they can represent two sounds (й + vowel) at the beginning of a word or after a vowel/soft sign.",
+      "tip": "а=ah, о=oh, у=oo, э=eh, и=ee, ы=between i and u (no English equivalent)",
+      "examples": [
+        { "ru": "Мама", "en": "Mom", "highlight": "а" },
+        { "ru": "Молоко", "en": "Milk", "highlight": "о" },
+        { "ru": "Рыба", "en": "Fish", "highlight": "ы" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which letter sounds like 'ee' in English?", "options": ["и", "ы", "э"], "correctIndex": 0, "explanation": "The letter 'и' sounds like 'ee' in English. 'ы' is a unique Russian sound with no direct English equivalent." },
+        { "type": "multiple-choice", "prompt": "How many vowel letters does Russian have?", "options": ["10", "6", "12"], "correctIndex": 0, "explanation": "Russian has 10 vowel letters: а, е, ё, и, о, у, ы, э, ю, я." },
+        { "type": "fill-blank", "prompt": "The vowel in 'дом' (house) is ___", "acceptedAnswers": ["о"], "hint": "It sounds like 'oh'", "explanation": "The vowel 'о' in 'дом' sounds like 'oh' when stressed." },
+        { "type": "multiple-choice", "prompt": "Which vowel is unique to Russian (not found in Ukrainian)?", "options": ["ы", "і", "є"], "correctIndex": 0, "explanation": "'ы' is a uniquely Russian vowel. Ukrainian uses 'и' instead." },
+        { "type": "matching", "prompt": "Match each vowel to its approximate English sound:", "pairs": [
+          { "left": "а", "right": "ah" },
+          { "left": "и", "right": "ee" },
+          { "left": "о", "right": "oh" },
+          { "left": "у", "right": "oo" }
+        ], "explanation": "These are the basic vowel sounds: а=ah, и=ee, о=oh, у=oo." },
+        { "type": "multiple-choice", "prompt": "Which letter represents TWO sounds (й+а)?", "options": ["я", "а", "ы"], "correctIndex": 0, "explanation": "'я' is an iotated vowel that can represent й+а at the beginning of a word or after a vowel." },
+        { "type": "fill-blank", "prompt": "The letter 'ё' always carries ___", "acceptedAnswers": ["stress", "ударение", "Stress"], "hint": "This letter is always in the stressed syllable", "explanation": "The letter 'ё' is always stressed. It sounds like 'yo'." },
+        { "type": "multiple-choice", "prompt": "'ы' in Russian sounds closest to:", "options": ["A sound between 'i' and 'u' — no English equivalent", "English 'ee' in 'see'", "English 'a' in 'cat'"], "correctIndex": 0, "explanation": "Russian 'ы' has no direct English equivalent. It is produced with the tongue pulled back." },
+        { "type": "fill-blank", "prompt": "The first vowel in 'этот' (this) is ___", "acceptedAnswers": ["э"], "hint": "Sounds like 'eh'", "explanation": "The letter 'э' sounds like 'eh' and appears at the beginning of some words." },
+        { "type": "multiple-choice", "prompt": "Which pair are iotated vowels?", "options": ["е, ё, ю, я", "а, о, у, э", "ы, и, э, о"], "correctIndex": 0, "explanation": "The iotated vowels are е, ё, ю, я — each can represent two sounds (й + vowel)." }
+      ]
+    },
+    {
+      "sectionId": "consonants",
+      "title": "Consonants & Signs",
+      "explanation": "Russian has 21 consonant letters plus two signs: the soft sign (ь) softens the preceding consonant, and the hard sign (ъ) separates a prefix from an iotated vowel. Key consonants: г (hard g), х (kh), ц (ts), ч (ch), ш (sh), щ (shch), ж (zh).",
+      "tip": "г=g (hard), х=kh, ц=ts, ч=ch, ш=sh, щ=shch, ж=zh",
+      "examples": [
+        { "ru": "Город", "en": "City", "highlight": "Г" },
+        { "ru": "День", "en": "Day", "highlight": "нь" },
+        { "ru": "Щука", "en": "Pike (fish)", "highlight": "Щ" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What sound does 'г' make in Russian?", "options": ["g (as in 'go')", "h (as in 'hello')", "k (as in 'kit')"], "correctIndex": 0, "explanation": "Russian 'г' is a hard 'g' sound, unlike Ukrainian 'г' which sounds like 'h'." },
+        { "type": "multiple-choice", "prompt": "What does the soft sign (ь) do?", "options": ["Softens the consonant before it", "Makes a vowel sound", "Hardens the consonant before it"], "correctIndex": 0, "explanation": "The soft sign 'ь' softens (palatalizes) the consonant before it." },
+        { "type": "fill-blank", "prompt": "The hard sign in Russian is ___", "acceptedAnswers": ["ъ"], "hint": "It separates a prefix from an iotated vowel", "explanation": "The hard sign 'ъ' separates a consonant prefix from an iotated vowel, e.g., объект." },
+        { "type": "multiple-choice", "prompt": "What does 'щ' sound like?", "options": ["shch (long soft sh)", "sh", "ch"], "correctIndex": 0, "explanation": "'щ' represents a long soft 'sh' sound, often transcribed as 'shch'." },
+        { "type": "matching", "prompt": "Match each consonant to its sound:", "pairs": [
+          { "left": "ц", "right": "ts" },
+          { "left": "ч", "right": "ch" },
+          { "left": "ш", "right": "sh" },
+          { "left": "ж", "right": "zh" }
+        ], "explanation": "ц=ts, ч=ch, ш=sh (hard), ж=zh (voiced sh)." },
+        { "type": "multiple-choice", "prompt": "In 'день' (day), what does ь do?", "options": ["Softens the н", "Makes a vowel sound", "Is silent"], "correctIndex": 0, "explanation": "The soft sign ь softens the preceding consonant н, making it 'нь'." },
+        { "type": "fill-blank", "prompt": "The word 'объект' contains the letter ___", "acceptedAnswers": ["ъ"], "hint": "The sign that separates prefix from vowel", "explanation": "The hard sign 'ъ' appears between the prefix 'об-' and the iotated vowel 'е'." },
+        { "type": "multiple-choice", "prompt": "How is 'х' pronounced?", "options": ["Like 'ch' in Scottish 'loch'", "Like 'h' in 'hello'", "Like 'k' in 'kit'"], "correctIndex": 0, "explanation": "'х' is a voiceless velar fricative, like 'ch' in Scottish 'loch' or German 'Bach'." },
+        { "type": "fill-blank", "prompt": "'Ночь' means 'night'. The last consonant sound is ___", "acceptedAnswers": ["ч"], "hint": "Like 'ch' in English", "explanation": "The last consonant is 'ч' (the ь only softens it). It sounds like 'ch'." },
+        { "type": "multiple-choice", "prompt": "How many letters are in the Russian alphabet?", "options": ["33", "32", "36"], "correctIndex": 0, "explanation": "The Russian alphabet has 33 letters: 21 consonants, 10 vowels, and 2 signs (ъ and ь)." }
+      ]
+    },
+    {
+      "sectionId": "reading-words",
+      "title": "Reading Russian Words",
+      "explanation": "Russian spelling is mostly phonetic, but stress affects vowel sounds. Unstressed 'о' sounds like 'а' (аканье). Stress can fall on any syllable and must be memorized. The letter 'ё' is always stressed.",
+      "tip": "Unstressed 'о' sounds like 'а' — this is called 'аканье'!",
+      "examples": [
+        { "ru": "Кот", "en": "Cat", "highlight": "Кот" },
+        { "ru": "Здание", "en": "Building", "highlight": "Здание" },
+        { "ru": "Привет", "en": "Hello", "highlight": "Привет" }
+      ],
+      "exercises": [
+        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Привет", "acceptedAnswers": ["Привет", "привет"], "explanation": "'Привет' means 'Hello' (informal)." },
+        { "type": "multiple-choice", "prompt": "'Кот' means:", "options": ["Cat (male)", "Dog", "Fish"], "correctIndex": 0, "explanation": "'Кот' means 'male cat' in Russian. 'Кошка' is a female cat." },
+        { "type": "fill-blank", "prompt": "How do you write 'hello' (informal) in Russian? При___", "acceptedAnswers": ["вет"], "hint": "Sounds like 'vyet'", "explanation": "'Привет' is the informal Russian greeting." },
+        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Спасибо", "acceptedAnswers": ["Спасибо", "спасибо"], "explanation": "'Спасибо' means 'Thank you'." },
+        { "type": "multiple-choice", "prompt": "How many syllables in 'молоко'?", "options": ["3 (мо-ло-ко)", "2 (моло-ко)", "4 (мо-ло-к-о)"], "correctIndex": 0, "explanation": "'Молоко' has three syllables: мо-ло-ко. The stress is on the last syllable." },
+        { "type": "matching", "prompt": "Match each Russian word to its English meaning:", "pairs": [
+          { "left": "Да", "right": "Yes" },
+          { "left": "Нет", "right": "No" },
+          { "left": "Привет", "right": "Hello" },
+          { "left": "Спасибо", "right": "Thank you" }
+        ], "explanation": "Да=Yes, Нет=No, Привет=Hello, Спасибо=Thank you." },
+        { "type": "fill-blank", "prompt": "Russian for 'yes' is ___", "acceptedAnswers": ["да", "Да"], "hint": "Two letters, starts with д", "explanation": "'Да' means 'yes' in Russian." },
+        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Да", "acceptedAnswers": ["Да", "да"], "explanation": "'Да' means 'Yes'." },
+        { "type": "multiple-choice", "prompt": "'Спасибо' means:", "options": ["Thank you", "Goodbye", "Please"], "correctIndex": 0, "explanation": "'Спасибо' is the Russian word for 'Thank you'." },
+        { "type": "fill-blank", "prompt": "Russian for 'no' is ___", "acceptedAnswers": ["нет", "Нет"], "hint": "Three letters", "explanation": "'Нет' means 'no' in Russian." }
+      ]
+    }
+  ]
+}
