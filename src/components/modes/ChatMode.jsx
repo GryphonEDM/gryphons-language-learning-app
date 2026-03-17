@@ -360,7 +360,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       {/* Sidebar */}
       <div className={`chat-sidebar ${sidebarOpen ? '' : 'chat-sidebar-closed'}`} style={{ ...styles.sidebar, ...(sidebarOpen ? {} : styles.sidebarClosed) }}>
         <div style={styles.sidebarHeader}>
-          <button style={styles.newChatBtn} onClick={startNewChat}>+ New Chat</button>
+          <button style={styles.newChatBtn} onClick={onExit}>← Back to Menu</button>
           <button style={styles.collapseBtn} onClick={() => setSidebarOpen(false)} title="Close sidebar">✕</button>
         </div>
 
@@ -387,7 +387,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           ))}
         </div>
 
-        <button style={styles.exitBtn} onClick={onExit}>← Back to Menu</button>
+        <button style={styles.exitBtn} onClick={startNewChat}>+ New Chat</button>
       </div>
 
       {/* Main area */}
