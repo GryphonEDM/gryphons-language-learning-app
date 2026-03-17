@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { storageGet, storageSet, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
+import { storageGet, storageSet, storageFlush, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -507,9 +507,6 @@ export default function UkrainianTypingGame() {
     modeProgress, vocabularyMastery, masteredWordsList, customFlashcards
   }), [xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount, bestStreak, achievements, typedVowels, showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume, modeProgress, vocabularyMastery, masteredWordsList, customFlashcards]);
 
-  // Keep a ref to current save data + key so beforeunload/visibilitychange can access it
-  const saveDataRef = useRef(null);
-  const saveKeyRef = useRef(null);
   const mainRef = useRef(null);
 
   // Stop TTS and scroll when changing modes
@@ -568,35 +565,22 @@ export default function UkrainianTypingGame() {
     }
     try {
       const data = buildSaveData();
-      // Update refs so beforeunload/visibilitychange always have latest state
-      saveDataRef.current = data;
-      saveKeyRef.current = langData.storageKey;
       storageSet(langData.storageKey, JSON.stringify(data));
-      console.log(`[Save] Saved ${currentLanguage} progress - XP:`, xp, 'Letters:', totalLettersTyped);
+      console.log(`[Save] Queued ${currentLanguage} progress - XP:`, xp, 'Letters:', totalLettersTyped);
     } catch (e) {
-      console.log('[Save] Could not save progress:', e);
+      console.log('[Save] Could not queue progress:', e);
     }
   }, [isReadyToSave, buildSaveData, langData.storageKey]);
 
-  // Save progress on page close/hide to prevent data loss
+  // Flush any pending debounced saves on page close/hide
   useEffect(() => {
-    const flushSave = () => {
-      if (saveDataRef.current && saveKeyRef.current) {
-        try {
-          storageSet(saveKeyRef.current, JSON.stringify(saveDataRef.current));
-          console.log('[Save] Flushed progress on page hide/unload');
-        } catch (e) {
-          // Best-effort
-        }
-      }
-    };
     const onVisibilityChange = () => {
-      if (document.visibilityState === 'hidden') flushSave();
+      if (document.visibilityState === 'hidden') storageFlush();
     };
-    window.addEventListener('beforeunload', flushSave);
+    window.addEventListener('beforeunload', storageFlush);
     document.addEventListener('visibilitychange', onVisibilityChange);
     return () => {
-      window.removeEventListener('beforeunload', flushSave);
+      window.removeEventListener('beforeunload', storageFlush);
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
   }, []);
