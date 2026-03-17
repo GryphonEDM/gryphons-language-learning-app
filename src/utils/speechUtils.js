@@ -1,11 +1,24 @@
 /** Pure utility functions for speech evaluation */
 
+// Map Latin lookalikes to their Cyrillic equivalents (lowercase only)
+const LATIN_TO_CYRILLIC = {
+  'a': 'а', 'e': 'е', 'o': 'о', 'p': 'р', 'c': 'с', 'x': 'х',
+  'y': 'у', 'k': 'к', 'h': 'н', 'b': 'в', 't': 'т', 'i': 'і',
+};
+
+function latinToCyrillic(text) {
+  return text.replace(/[a-z]/g, ch => LATIN_TO_CYRILLIC[ch] || ch);
+}
+
 export function normalize(text) {
-  return text
-    .toLowerCase()
-    .replace(/[.,!?;:"""''()—–\-…«»\[\]ʼ']/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return latinToCyrillic(
+    text
+      .normalize('NFC')
+      .toLowerCase()
+      .replace(/[.,!?;:"""''()—–\-…«»\[\]ʼ']/g, '')
+      .replace(/\s+/g, ' ')
+      .trim()
+  );
 }
 
 export function levenshtein(a, b) {
