@@ -150,6 +150,13 @@ export default function FlashcardMode({
     }
   }, [showSpeechPractice, currentWord, speech]);
 
+  // Scroll to show full results when speech feedback arrives
+  useEffect(() => {
+    if (speech.feedback && speechPracticeRef.current) {
+      setTimeout(() => speechPracticeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 100);
+    }
+  }, [speech.feedback]);
+
   const moveToNext = () => {
     setIsFlipped(false);
     setSelectedExampleWord(null);
