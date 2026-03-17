@@ -3,6 +3,7 @@ from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
 import os
 import sys
+import re
 import tempfile
 import torch
 
@@ -197,8 +198,43 @@ def generate_ukrainian_tts(text):
         except OSError:
             pass
 
+EN_NUMBERS = {
+    '0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four',
+    '5': 'five', '6': 'six', '7': 'seven', '8': 'eight', '9': 'nine',
+    '10': 'ten', '11': 'eleven', '12': 'twelve', '13': 'thirteen',
+    '14': 'fourteen', '15': 'fifteen', '16': 'sixteen', '17': 'seventeen',
+    '18': 'eighteen', '19': 'nineteen', '20': 'twenty', '30': 'thirty',
+    '33': 'thirty three', '100': 'one hundred', '1000': 'one thousand',
+}
+RU_NUMBERS = {
+    '0': 'ноль', '1': 'один', '2': 'два', '3': 'три', '4': 'четыре',
+    '5': 'пять', '6': 'шесть', '7': 'семь', '8': 'восемь', '9': 'девять',
+    '10': 'десять', '11': 'одиннадцать', '12': 'двенадцать', '13': 'тринадцать',
+    '14': 'четырнадцать', '15': 'пятнадцать', '16': 'шестнадцать', '17': 'семнадцать',
+    '18': 'восемнадцать', '19': 'девятнадцать', '20': 'двадцать', '30': 'тридцать',
+    '33': 'тридцать три', '100': 'сто', '1000': 'тысяча',
+}
+
+def numbers_to_words(text, lang='en'):
+    """Convert numbers in text to words so Silero TTS can pronounce them."""
+    lookup = RU_NUMBERS if lang == 'ru' else EN_NUMBERS
+    try:
+        from num2words import num2words as n2w
+        def replace_num(match):
+            s = match.group()
+            if s in lookup:
+                return lookup[s]
+            try:
+                return n2w(s, lang=lang)
+            except Exception:
+                return s
+        return re.sub(r'\d+', replace_num, text)
+    except ImportError:
+        return re.sub(r'\d+', lambda m: lookup.get(m.group(), m.group()), text)
+
 def generate_english_tts(text):
-    print(f"[TTS-EN] Generating: {len(text)} chars")
+    text = numbers_to_words(text, lang='en')
+    print(f"[TTS-EN] Generating: {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
     tts_en.save_wav(text=text, speaker=EN_SPEAKER, sample_rate=EN_SAMPLE_RATE, audio_path=tmp_path)
@@ -212,7 +248,8 @@ def generate_english_tts(text):
             pass
 
 def generate_russian_tts(text):
-    print(f"[TTS-RU] Generating: {len(text)} chars")
+    text = numbers_to_words(text, lang='ru')
+    print(f"[TTS-RU] Generating: {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
     tts_ru.save_wav(text=text, speaker=RU_SPEAKER, sample_rate=RU_SAMPLE_RATE, audio_path=tmp_path)
