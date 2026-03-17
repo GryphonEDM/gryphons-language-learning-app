@@ -348,7 +348,14 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
         </div>
         <div className="content-row" style={styles.contentRow}>
           <div style={styles.sectionCard}>
-            <h3 style={styles.sectionTitle}>{currentSection.title}</h3>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+              <h3 style={{ ...styles.sectionTitle, marginBottom: 0 }}>{currentSection.title}</h3>
+              {ttsEnabled && (
+                <button style={styles.readAloudBtn} onClick={() => onSpeak(currentSection.explanation, 0.8, ttsVolume)}>
+                  🔊 Read
+                </button>
+              )}
+            </div>
             <p style={styles.explanation}>{currentSection.explanation}</p>
 
             {/* Tip card */}
@@ -605,6 +612,16 @@ const styles = {
     cursor: 'pointer',
     fontSize: '1rem',
     padding: '0.2rem',
+    flexShrink: 0,
+  },
+  readAloudBtn: {
+    background: 'rgba(255,255,255,0.1)',
+    border: '1px solid rgba(255,255,255,0.2)',
+    cursor: 'pointer',
+    fontSize: '0.85rem',
+    padding: '0.3rem 0.7rem',
+    borderRadius: '8px',
+    color: '#ffd700',
     flexShrink: 0,
   },
   practiceBtn: {
