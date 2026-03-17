@@ -325,6 +325,7 @@ export default function UkrainianTypingGame() {
   // Game state
   const [gameMode, setGameMode] = useState('menu');
   const prevModeRef = useRef(null);
+  const prevVocabSetRef = useRef(null);
   const [exploreSelectedKey, setExploreSelectedKey] = useState(null);
   const [selectedVocabSet, setSelectedVocabSet] = useState(null);
   const [customFlashcards, setCustomFlashcards] = useState([]);
@@ -444,9 +445,16 @@ export default function UkrainianTypingGame() {
     } else if (prevModeRef.current) {
       // Scroll to the mode card we just exited, centered on screen
       requestAnimationFrame(() => {
-        // Map modes that share the same menu section
-        const mode = prevModeRef.current === 'words' ? 'letters' : prevModeRef.current;
-        const card = document.querySelector(`[data-mode="${mode}"]`);
+        let card;
+        if (prevModeRef.current === 'flashcards' && prevVocabSetRef.current) {
+          // Scroll to the specific vocab card that was selected
+          card = document.querySelector(`[data-vocab-set="${prevVocabSetRef.current}"]`);
+        }
+        if (!card) {
+          // Map modes that share the same menu section
+          const mode = prevModeRef.current === 'words' ? 'letters' : prevModeRef.current;
+          card = document.querySelector(`[data-mode="${mode}"]`);
+        }
         if (card) {
           card.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
@@ -1237,6 +1245,7 @@ export default function UkrainianTypingGame() {
               <div className="vocab-themes-grid">
                 <div
                   className="vocab-theme-card"
+                  data-vocab-set="random"
                   style={{ border: '2px solid #ffd700' }}
                   onClick={() => {
                     const allWords = getAllVocabularyWords(currentLanguage);
@@ -1262,6 +1271,7 @@ export default function UkrainianTypingGame() {
                       totalWords: shuffled.length,
                       xpPerWord: 10
                     });
+                    prevVocabSetRef.current = 'random';
                     setGameMode('flashcards');
                   }}
                 >
@@ -1284,8 +1294,10 @@ export default function UkrainianTypingGame() {
                   <div
                     key={set.setId}
                     className="vocab-theme-card"
+                    data-vocab-set={set.setId}
                     onClick={() => {
                       setSelectedVocabSet(set);
+                      prevVocabSetRef.current = set.setId;
                       setGameMode('flashcards');
                     }}
                   >
@@ -1309,8 +1321,10 @@ export default function UkrainianTypingGame() {
                   <div
                     key={theme.setId}
                     className="vocab-theme-card"
+                    data-vocab-set={theme.setId}
                     onClick={() => {
                       setSelectedVocabSet(theme);
+                      prevVocabSetRef.current = theme.setId;
                       setGameMode('flashcards');
                     }}
                   >
@@ -1329,6 +1343,7 @@ export default function UkrainianTypingGame() {
                 {customFlashcards.length > 0 && (
                   <div
                     className="vocab-theme-card custom-words-card"
+                    data-vocab-set="custom"
                     onClick={() => {
                       setSelectedVocabSet({
                         setId: 'custom',
@@ -1345,6 +1360,7 @@ export default function UkrainianTypingGame() {
                         totalWords: customFlashcards.length,
                         xpPerWord: 15
                       });
+                      prevVocabSetRef.current = 'custom';
                       setGameMode('flashcards');
                     }}
                   >
@@ -1362,9 +1378,11 @@ export default function UkrainianTypingGame() {
                 {/* Adult 18+ vocabulary */}
                 <div
                   className="vocab-theme-card"
+                  data-vocab-set={CURRENT_ADULT_VOCAB.setId || 'adult'}
                   style={{ border: '2px solid #e74c3c', opacity: 0.9 }}
                   onClick={() => {
                     setSelectedVocabSet(CURRENT_ADULT_VOCAB);
+                    prevVocabSetRef.current = CURRENT_ADULT_VOCAB.setId || 'adult';
                     setGameMode('flashcards');
                   }}
                 >
