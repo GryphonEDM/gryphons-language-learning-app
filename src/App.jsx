@@ -4,7 +4,6 @@ import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
 import { TRANSLATIONS } from './data/translations.js';
 import { getAllVocabularyWords } from './utils/dictionaryBuilder.js';
-import { cefrMatches } from './utils/speechUtils.js';
 import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from './utils/encouragement.js';
 import { getLanguageData, LANGUAGES } from './data/languageConfig.js';
 import { createAudioContext, playSound } from './utils/soundEffects.js';
@@ -1271,17 +1270,7 @@ export default function UkrainianTypingGame() {
                   style={{ border: '2px solid ' + ({ A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[randomDifficulty]) }}
                   onClick={() => {
                     const allWords = getAllVocabularyWords(currentLanguage);
-                    // Build category -> difficulty lookup from CATEGORY_GROUPS
-                    const catDiffMap = {};
-                    for (const group of Object.values(CATEGORY_GROUPS)) {
-                      for (const cat of group.categories) {
-                        catDiffMap[cat] = group.difficulty;
-                      }
-                    }
-                    const filtered = allWords.filter(w => {
-                      const diff = catDiffMap[w.source];
-                      return diff && cefrMatches(diff, randomDifficulty);
-                    });
+                    const filtered = allWords.filter(w => w.difficulty === randomDifficulty);
                     // Fisher-Yates shuffle
                     const shuffled = [...filtered];
                     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -1337,16 +1326,7 @@ export default function UkrainianTypingGame() {
                     </div>
                     <div className="theme-meta">
                       <span className="theme-difficulty" style={{ color: { A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[randomDifficulty] }}>{randomDifficulty}</span>
-                      <span className="theme-word-count">{(() => {
-                        const allWords = getAllVocabularyWords(currentLanguage);
-                        const catDiffMap = {};
-                        for (const group of Object.values(CATEGORY_GROUPS)) {
-                          for (const cat of group.categories) {
-                            catDiffMap[cat] = group.difficulty;
-                          }
-                        }
-                        return allWords.filter(w => { const d = catDiffMap[w.source]; return d && cefrMatches(d, randomDifficulty); }).length;
-                      })()} words</span>
+                      <span className="theme-word-count">{getAllVocabularyWords(currentLanguage).filter(w => w.difficulty === randomDifficulty).length} words</span>
                     </div>
                     <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', margin: '4px 0 0' }}>
                       {currentLanguage === 'ru' ? 'Практикуйте слова вашего уровня' : 'Практикуйте слова вашого рівня'}
