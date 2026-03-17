@@ -651,7 +651,7 @@ export default function UkrainianTypingGame() {
     if (gameMode === 'explore') {
       const pressedKey = e.key.toLowerCase();
       for (const row of CURRENT_KEYBOARD) {
-        const keyData = row.find(k => k.qwerty === pressedKey);
+        const keyData = row.find(k => k.qwerty === pressedKey || k[letterField] === pressedKey);
         if (keyData) {
           setExploreSelectedKey(keyData);
           if (ttsEnabled) {
