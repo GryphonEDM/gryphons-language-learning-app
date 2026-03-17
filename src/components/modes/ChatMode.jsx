@@ -58,7 +58,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const rootRef = useRef(null);
 
   const lookupWord = useCallback((word) => {
-    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
+    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '');
     if (!cleaned) return null;
     const userHit = lookupUserDict(cleaned);
     if (userHit) return userHit;
@@ -73,7 +73,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const wordPendingRef = useRef(null);
 
   const handleWordClick = useCallback((e, word, contextSentence = '') => {
-    const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
+    const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').trim();
     if (!cleaned) return;
     const translation = lookupWord(cleaned);
     const rect = e.target.getBoundingClientRect();
