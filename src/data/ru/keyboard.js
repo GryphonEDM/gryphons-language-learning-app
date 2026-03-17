@@ -13,6 +13,7 @@ export const RUSSIAN_KEYBOARD = [
     { ru: 'з', qwerty: 'p', sound: 'z', russianPhonetic: 'зэ', finger: 'pinky-r' },
     { ru: 'х', qwerty: '[', sound: 'kh', russianPhonetic: 'ха', finger: 'pinky-r' },
     { ru: 'ъ', qwerty: ']', sound: '(hard sign)', russianPhonetic: 'твёрдый знак', finger: 'pinky-r' },
+    { ru: 'ё', qwerty: '`', sound: 'yo', russianPhonetic: 'ё', finger: 'pinky-r' },
   ],
   [
     { ru: 'ф', qwerty: 'a', sound: 'f', russianPhonetic: 'эф', finger: 'pinky-l' },
@@ -55,7 +56,6 @@ RUSSIAN_KEYBOARD.forEach(row => {
 
 RU_TO_QWERTY[' '] = ' ';
 RU_TO_QWERTY["'"] = "'";
-RU_TO_QWERTY['ё'] = '`';
 
 // Helper function to clean phonetic sounds for TTS
 export const cleanSoundForTTS = (sound) => {
