@@ -84,10 +84,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   }, [completedLessons, langCode]);
 
   // Check if lesson prerequisites are met
-  const isLessonUnlocked = (lesson) => {
-    if (!lesson.prerequisites || lesson.prerequisites.length === 0) return true;
-    return lesson.prerequisites.every(prereq => completedLessons[prereq]);
-  };
+  const isLessonUnlocked = () => true;
 
   // Group lessons by tier
   const lessonsByTier = {};

@@ -533,14 +533,8 @@ export default function UkrainianTypingGame() {
   
   // Get unlocked levels based on XP
   const getUnlockedLevels = useCallback(() => {
-    const unlocked = [1];
-    Object.entries(CURRENT_LESSONS).forEach(([num, lesson]) => {
-      if (xp >= lesson.requiredXp) {
-        unlocked.push(parseInt(num));
-      }
-    });
-    return [...new Set(unlocked)];
-  }, [xp, CURRENT_LESSONS]);
+    return Object.keys(CURRENT_LESSONS).map(num => parseInt(num));
+  }, [CURRENT_LESSONS]);
   
   const unlockedLevels = getUnlockedLevels();
   
