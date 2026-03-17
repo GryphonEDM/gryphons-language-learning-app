@@ -4,6 +4,7 @@ import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
 import { TRANSLATIONS } from './data/translations.js';
 import { getAllVocabularyWords } from './utils/dictionaryBuilder.js';
+import { cefrMatches } from './utils/speechUtils.js';
 import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from './utils/encouragement.js';
 import { getLanguageData, LANGUAGES } from './data/languageConfig.js';
 import { createAudioContext, playSound } from './utils/soundEffects.js';
@@ -329,6 +330,7 @@ export default function UkrainianTypingGame() {
   const prevVocabSetRef = useRef(null);
   const [exploreSelectedKey, setExploreSelectedKey] = useState(null);
   const [selectedVocabSet, setSelectedVocabSet] = useState(null);
+  const [randomDifficulty, setRandomDifficulty] = useState('A1');
   const [customFlashcards, setCustomFlashcards] = useState([]);
   const audioContextRef = useRef(null);
   const [currentLevel, setCurrentLevel] = useState(1);
@@ -1261,6 +1263,94 @@ export default function UkrainianTypingGame() {
                       <span className="theme-difficulty" style={{ color: '#ffd700' }}>Mixed</span>
                       <span className="theme-word-count">{getAllVocabularyWords(currentLanguage).length} words</span>
                     </div>
+                  </div>
+                </div>
+                <div
+                  className="vocab-theme-card"
+                  data-vocab-set="random-difficulty"
+                  style={{ border: '2px solid ' + ({ A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[randomDifficulty]) }}
+                  onClick={() => {
+                    const allWords = getAllVocabularyWords(currentLanguage);
+                    // Build category -> difficulty lookup from CATEGORY_GROUPS
+                    const catDiffMap = {};
+                    for (const group of Object.values(CATEGORY_GROUPS)) {
+                      for (const cat of group.categories) {
+                        catDiffMap[cat] = group.difficulty;
+                      }
+                    }
+                    const filtered = allWords.filter(w => {
+                      const diff = catDiffMap[w.source];
+                      return diff && cefrMatches(diff, randomDifficulty);
+                    });
+                    // Fisher-Yates shuffle
+                    const shuffled = [...filtered];
+                    for (let i = shuffled.length - 1; i > 0; i--) {
+                      const j = Math.floor(Math.random() * (i + 1));
+                      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                    }
+                    setSelectedVocabSet({
+                      setId: 'random-difficulty',
+                      nameEn: `Random (${randomDifficulty})`,
+                      nameUk: currentLanguage === 'ru' ? `Случайные (${randomDifficulty})` : `Випадкові (${randomDifficulty})`,
+                      difficulty: randomDifficulty,
+                      icon: '🎯',
+                      words: shuffled.map(w => ({
+                        uk: w.uk,
+                        en: w.en,
+                        phonetic: w.phonetic || '',
+                        examples: w.examples || [],
+                        examplesEn: w.examplesEn || []
+                      })),
+                      totalWords: shuffled.length,
+                      xpPerWord: 10
+                    });
+                    prevVocabSetRef.current = 'random-difficulty';
+                    setGameMode('flashcards');
+                  }}
+                >
+                  <div className="theme-icon">🎯</div>
+                  <div className="theme-info">
+                    <h3>Random by Level</h3>
+                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'По уровню сложности' : 'За рівнем складності'}</p>
+                    <div style={{ margin: '8px 0 4px', display: 'flex', gap: '4px' }} onClick={e => e.stopPropagation()}>
+                      {['A1', 'A2', 'B1', 'B2'].map(level => (
+                        <button
+                          key={level}
+                          onClick={(e) => { e.stopPropagation(); setRandomDifficulty(level); }}
+                          style={{
+                            flex: 1,
+                            padding: '4px 0',
+                            border: 'none',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            fontSize: '0.8rem',
+                            fontWeight: randomDifficulty === level ? 'bold' : 'normal',
+                            background: randomDifficulty === level
+                              ? { A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[level]
+                              : 'rgba(255,255,255,0.1)',
+                            color: randomDifficulty === level && (level === 'A2') ? '#000' : '#fff',
+                          }}
+                        >
+                          {level}
+                        </button>
+                      ))}
+                    </div>
+                    <div className="theme-meta">
+                      <span className="theme-difficulty" style={{ color: { A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[randomDifficulty] }}>{randomDifficulty}</span>
+                      <span className="theme-word-count">{(() => {
+                        const allWords = getAllVocabularyWords(currentLanguage);
+                        const catDiffMap = {};
+                        for (const group of Object.values(CATEGORY_GROUPS)) {
+                          for (const cat of group.categories) {
+                            catDiffMap[cat] = group.difficulty;
+                          }
+                        }
+                        return allWords.filter(w => { const d = catDiffMap[w.source]; return d && cefrMatches(d, randomDifficulty); }).length;
+                      })()} words</span>
+                    </div>
+                    <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', margin: '4px 0 0' }}>
+                      {currentLanguage === 'ru' ? 'Практикуйте слова вашего уровня' : 'Практикуйте слова вашого рівня'}
+                    </p>
                   </div>
                 </div>
               </div>
