@@ -439,8 +439,9 @@ export default function UkrainianTypingGame() {
   const saveKeyRef = useRef(null);
   const mainRef = useRef(null);
 
-  // Scroll to content when entering a module, scroll to last mode card when returning to menu
+  // Stop TTS and scroll when changing modes
   useEffect(() => {
+    stopSpeaking();
     if (gameMode !== 'menu') {
       prevModeRef.current = gameMode;
       mainRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
