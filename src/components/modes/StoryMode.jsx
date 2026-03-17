@@ -1,25 +1,87 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
+import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 
-export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
+const RANDOM_TOPICS = {
+  A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
+  A2: ['a trip to the market', 'my best friend', 'a rainy day', 'learning to cook', 'the weekend', 'a birthday party', 'my hobby', 'at the zoo', 'a new pet', 'the seasons'],
+  B1: ['a mysterious package', 'the old bookshop', 'a train journey', 'moving to a new city', 'an unexpected visitor', 'a lost key', 'the first day of work', 'a recipe from grandma', 'a winter adventure', 'the street musician'],
+  B2: ['a misunderstanding at work', 'the philosophy of travel', 'a cultural tradition', 'an ethical dilemma', 'the impact of technology', 'a childhood memory', 'an unexpected friendship', 'the meaning of home'],
+};
+
+const DIFFICULTY_GUIDANCE = {
+  A1: 'Use only present tense, very simple sentences of 3-6 words, basic vocabulary (family, food, animals, colors, daily routines).',
+  A2: 'Use present tense mostly with some past tense, simple sentences of 5-8 words, everyday vocabulary.',
+  B1: 'Use past, present, and future tenses, compound sentences allowed, broader vocabulary including emotions and opinions.',
+  B2: 'Use varied tenses and moods, complex sentence structures, nuanced vocabulary, idiomatic expressions where appropriate.',
+};
+
+const SpinKeyframes = () => (
+  <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
+);
+
+function loadAiStories() {
+  try {
+    return JSON.parse(localStorage.getItem('aiStories') || '[]');
+  } catch { return []; }
+}
+
+function saveAiStory(story) {
+  const existing = loadAiStories();
+  existing.unshift(story);
+  localStorage.setItem('aiStories', JSON.stringify(existing));
+}
+
+function deleteAiStory(id) {
+  const existing = loadAiStories().filter(s => s.id !== id);
+  localStorage.setItem('aiStories', JSON.stringify(existing));
+}
+
+export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langField = langCode === 'ru' ? 'ru' : 'uk';
   const dict = buildDictionary(langCode);
 
-  const [phase, setPhase] = useState('picker'); // picker, reading
+  const [aiStories, setAiStories] = useState(() => loadAiStories());
+
+  const [phase, setPhase] = useState('picker'); // picker, generate, reading, questions, complete
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
-  const [selectedStory, setSelectedStory] = useState(null);
-  const [selectedWord, setSelectedWord] = useState(null); // { word, translation, index }
-  const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
+
+  // Selected item (unified format)
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  // Reading state
+  const [selectedWord, setSelectedWord] = useState(null);
+  const [wordAddForm, setWordAddForm] = useState(null);
   const [showEnglish, setShowEnglish] = useState(false);
   const [isReading, setIsReading] = useState(false);
   const [highlightRange, setHighlightRange] = useState({ start: -1, end: -1 });
   const stopRef = useRef(false);
   const readingRef = useRef(false);
+
+  // Questions state
+  const [questionIdx, setQuestionIdx] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(-1);
+  const [feedback, setFeedback] = useState(null);
+  const [score, setScore] = useState(0);
+  const [xpEarned, setXpEarned] = useState(0);
+
+  // AI generation state
+  const [aiDifficulty, setAiDifficulty] = useState('A1');
+  const [aiTopic, setAiTopic] = useState('');
+  const [aiIncludeQuestions, setAiIncludeQuestions] = useState(false);
+  const [aiGenerating, setAiGenerating] = useState(false);
+  const [aiError, setAiError] = useState(null);
+
+  // Flatten stories for prev/next navigation
+  const flatStories = stories.flatMap(group => group.stories);
+  const currentStoryIndex = selectedItem && selectedItem.source === 'builtin' && !selectedItem.questions
+    ? flatStories.findIndex(s => s.id === selectedItem.id)
+    : -1;
 
   // Look up a word in the dictionary
   const lookupWord = useCallback((word) => {
@@ -35,29 +97,25 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
     return null;
   }, [dict]);
 
-  // Reset add form when selected word changes
   useEffect(() => { setWordAddForm(null); }, [selectedWord?.word]);
 
-  // Split story text into words (preserving punctuation attached to words)
   const getWords = useCallback((text) => {
     if (!text) return [];
     return text.split(/(\s+)/).filter(Boolean);
   }, []);
 
-  // Speak a sequence of words from startIdx to end
+  // TTS read-aloud
   const readAloud = useCallback(async (text, fromIndex = 0) => {
     if (!ttsEnabled || !onSpeak) return;
     stopRef.current = false;
     readingRef.current = true;
     setIsReading(true);
 
-    // Split into sentences for more natural reading
     const sentences = text.split(/(?<=[.!?])\s+/);
     let wordOffset = 0;
 
     for (const sentence of sentences) {
       if (stopRef.current) break;
-
       const sentenceWords = sentence.split(/\s+/);
       const sentenceEnd = wordOffset + sentenceWords.length;
 
@@ -66,7 +124,6 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
         continue;
       }
 
-      // If we're starting mid-sentence, only read from the start word
       let textToSpeak = sentence;
       if (wordOffset < fromIndex) {
         const wordsToSkip = fromIndex - wordOffset;
@@ -77,12 +134,9 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
 
       try {
         await onSpeak(textToSpeak, 0.85, ttsVolume);
-      } catch (e) {
-        // TTS error, continue
-      }
+      } catch (e) {}
 
       wordOffset = sentenceEnd;
-
       if (stopRef.current) break;
     }
 
@@ -97,14 +151,12 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
     setHighlightRange({ start: -1, end: -1 });
   }, []);
 
-  // Handle single click on a word
   const handleWordClick = useCallback((word, wordIndex, contextText = '') => {
     if (isReading) return;
     const cleaned = word.replace(/[.,!?;:"""()—–\-…]/g, '').trim();
     if (!cleaned) return;
 
     const translation = lookupWord(cleaned);
-    // Extract the sentence containing this word from the full text
     const sentences = contextText.split(/(?<=[.!?])\s+/);
     const contextSentence = sentences.find(s => s.includes(word)) || contextText;
     setSelectedWord({ word: cleaned, translation, index: wordIndex, contextSentence });
@@ -114,11 +166,9 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
     }
   }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, isReading]);
 
-  // Handle double click - read from this word to end
   const handleWordDoubleClick = useCallback((word, wordIndex, fullText) => {
     handleStop();
     setTimeout(() => {
-      // Count actual word index (excluding whitespace tokens)
       const allTokens = fullText.split(/(\s+)/).filter(Boolean);
       let realWordIdx = 0;
       for (let i = 0; i < allTokens.length; i++) {
@@ -131,37 +181,181 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
     }, 100);
   }, [readAloud, handleStop]);
 
-  // Flatten all stories into a linear array for navigation
-  const flatStories = stories.flatMap(group => group.stories);
-  const currentStoryIndex = selectedStory ? flatStories.findIndex(s => s.id === selectedStory.id) : -1;
-
-  const handleSelectStory = (story) => {
-    setSelectedStory(story);
+  // Select a story/passage to read
+  const handleSelectItem = (item) => {
+    setSelectedItem(item);
     setSelectedWord(null);
     setShowEnglish(false);
+    setQuestionIdx(0);
+    setSelectedAnswer(-1);
+    setFeedback(null);
+    setScore(0);
+    setXpEarned(0);
     setPhase('reading');
     if (onAddXP) onAddXP(5);
   };
 
+  // Navigate between built-in stories (no questions only)
   const handlePreviousStory = () => {
     if (currentStoryIndex > 0) {
       handleStop();
-      setSelectedWord(null);
-      setShowEnglish(false);
-      handleSelectStory(flatStories[currentStoryIndex - 1]);
+      const prev = flatStories[currentStoryIndex - 1];
+      handleSelectItem({
+        id: prev.id, title: prev.title, titleEn: prev.title,
+        text: prev[langField], en: prev.en, difficulty: null,
+        questions: null, wordGlossary: null, source: 'builtin'
+      });
     }
   };
 
   const handleNextStory = () => {
     if (currentStoryIndex < flatStories.length - 1) {
       handleStop();
-      setSelectedWord(null);
-      setShowEnglish(false);
-      handleSelectStory(flatStories[currentStoryIndex + 1]);
+      const next = flatStories[currentStoryIndex + 1];
+      handleSelectItem({
+        id: next.id, title: next.title, titleEn: next.title,
+        text: next[langField], en: next.en, difficulty: null,
+        questions: null, wordGlossary: null, source: 'builtin'
+      });
     }
   };
 
+  // Questions logic
+  const handleAnswerSelect = (idx) => {
+    if (feedback) return;
+    setSelectedAnswer(idx);
+  };
+
+  const handleCheckAnswer = () => {
+    if (selectedAnswer < 0 || feedback) return;
+    const question = selectedItem.questions[questionIdx];
+    const isCorrect = selectedAnswer === question.correctIndex;
+    const points = isCorrect ? 25 : 5;
+    setFeedback({ correct: isCorrect, explanation: question.explanation });
+    if (isCorrect) setScore(prev => prev + 1);
+    setXpEarned(prev => prev + points);
+    if (onAddXP) onAddXP(points);
+  };
+
+  const handleNextQuestion = () => {
+    if (questionIdx < selectedItem.questions.length - 1) {
+      setQuestionIdx(prev => prev + 1);
+      setSelectedAnswer(-1);
+      setFeedback(null);
+    } else {
+      setPhase('complete');
+      if (onComplete) {
+        onComplete({ mode: 'reading', itemId: selectedItem.id, score, total: selectedItem.questions.length, xpEarned });
+      }
+      if (onTrackProgress) {
+        onTrackProgress('reading', { itemId: selectedItem.id, completed: true, score });
+      }
+    }
+  };
+
+  // AI story generation
+  const generateStory = async () => {
+    setAiGenerating(true);
+    setAiError(null);
+
+    const topic = aiTopic.trim() || 'daily life';
+    const questionsInstruction = aiIncludeQuestions
+      ? `\nAlso include exactly 3 comprehension questions. Add a "questions" field as an array where each question has: "question" (the question text in English), "options" (array of exactly 4 answer options in English), "correctIndex" (0-based index of correct answer), "explanation" (brief explanation in English).`
+      : '';
+
+    const prompt = `Write a short story for a language learner at ${aiDifficulty} level.
+Topic: ${topic}
+
+${DIFFICULTY_GUIDANCE[aiDifficulty]}
+
+The story should be 6-10 sentences long. Provide the story in Ukrainian, Russian, AND English.
+
+Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact format:
+{
+  "titleEn": "Story title in English",
+  "uk": "The full story in Ukrainian...",
+  "ru": "The full story in Russian...",
+  "en": "Full English translation of the story..."${aiIncludeQuestions ? ',\n  "questions": [...]' : ''}
+}${questionsInstruction}`;
+
+    try {
+      const res = await fetch('/llm/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'local-model',
+          messages: [
+            { role: 'system', content: 'You are a Ukrainian and Russian language learning content creator. Always respond with valid JSON only.' },
+            { role: 'user', content: prompt }
+          ],
+          temperature: 0.7,
+          stream: false,
+          max_tokens: 2000
+        })
+      });
+
+      if (!res.ok) throw new Error('LLM request failed');
+
+      const data = await res.json();
+      let content = data.choices?.[0]?.message?.content || '';
+
+      // Strip markdown fences if present
+      content = content.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+
+      // Try to extract JSON object
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) throw new Error('No JSON found in response');
+
+      const story = JSON.parse(jsonMatch[0]);
+
+      if (!story.uk && !story.ru) throw new Error('Missing required fields');
+
+      const aiStory = {
+        id: 'ai-' + Date.now(),
+        titleEn: story.titleEn || 'AI Story',
+        uk: story.uk || '',
+        ru: story.ru || '',
+        en: story.en || null,
+        difficulty: aiDifficulty,
+        questions: story.questions && Array.isArray(story.questions) ? story.questions : null,
+        source: 'ai',
+        createdAt: Date.now(),
+      };
+
+      // Save to localStorage
+      saveAiStory(aiStory);
+      setAiStories(prev => [aiStory, ...prev]);
+
+      const item = {
+        id: aiStory.id,
+        title: aiStory.titleEn,
+        titleEn: aiStory.titleEn,
+        text: aiStory[langField],
+        en: aiStory.en,
+        difficulty: aiStory.difficulty,
+        questions: aiStory.questions,
+        wordGlossary: null,
+        source: 'ai'
+      };
+
+      setAiGenerating(false);
+      handleSelectItem(item);
+    } catch (err) {
+      setAiGenerating(false);
+      setAiError(err.message === 'Failed to fetch'
+        ? 'Could not connect to LM Studio. Make sure it is running at localhost:1234.'
+        : 'Failed to generate story. Please try again.');
+    }
+  };
+
+  const pickRandomTopic = () => {
+    const topics = RANDOM_TOPICS[aiDifficulty] || RANDOM_TOPICS.A1;
+    setAiTopic(topics[Math.floor(Math.random() * topics.length)]);
+  };
+
+  // ====================
   // PICKER PHASE
+  // ====================
   if (phase === 'picker') {
     return (
       <div className="mode-container" style={styles.container}>
@@ -172,46 +366,323 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
           onExit={onExit}
         />
         <div style={styles.levelList}>
+          {/* AI Generate Card */}
+          <div style={styles.aiCard} onClick={() => setPhase('generate')}>
+            <div style={styles.aiCardIcon}>&#10024;</div>
+            <div>
+              <div style={styles.aiCardTitle}>AI Story Generator</div>
+              <div style={styles.aiCardDesc}>Generate a custom story on any topic at your level</div>
+            </div>
+          </div>
+
+          {/* Saved AI Stories */}
+          {aiStories.length > 0 && (
+            <div style={styles.listSection}>
+              <h2 style={styles.sectionHeading}>Your AI Stories</h2>
+              {aiStories.map((s) => (
+                <div
+                  key={s.id}
+                  style={styles.listRow}
+                  onClick={() => handleSelectItem({
+                    id: s.id, title: s.titleEn, titleEn: s.titleEn,
+                    text: s[langField], en: s.en, difficulty: s.difficulty,
+                    questions: s.questions, wordGlossary: null, source: 'ai'
+                  })}
+                >
+                  <span style={styles.listTitle}>{s.titleEn}</span>
+                  <span style={styles.listMeta}>
+                    <span style={styles.difficultyBadge}>{s.difficulty}</span>
+                    {s.questions && <span style={styles.questionCountBadge}>{s.questions.length}Q</span>}
+                  </span>
+                  <button
+                    style={styles.deleteBtn}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      deleteAiStory(s.id);
+                      setAiStories(prev => prev.filter(x => x.id !== s.id));
+                    }}
+                  >x</button>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Stories Section */}
           {stories.map((levelGroup) => (
-            <div key={levelGroup.level} style={styles.levelSection}>
+            <div key={levelGroup.level} style={styles.listSection}>
               <h3 style={styles.levelTitle}>
                 {levelGroup.level}
                 <span style={styles.levelNative}>
                   {' '}/ {langCode === 'ru' ? levelGroup.levelRu : levelGroup.levelUk}
                 </span>
               </h3>
-              <div style={styles.storyGrid}>
-                {levelGroup.stories.map((story) => (
-                  <div
-                    key={story.id}
-                    style={styles.storyCard}
-                    onClick={() => handleSelectStory(story)}
-                  >
-                    <div style={styles.storyTitle}>{story.title}</div>
-                    <div style={styles.storyPreview}>
-                      {story[langField].slice(0, 80)}...
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {levelGroup.stories.map((story) => (
+                <div
+                  key={story.id}
+                  style={styles.listRow}
+                  onClick={() => handleSelectItem({
+                    id: story.id, title: story.title, titleEn: story.title,
+                    text: story[langField], en: story.en, difficulty: null,
+                    questions: null, wordGlossary: null, source: 'builtin'
+                  })}
+                >
+                  <span style={styles.listTitle}>{story.title}</span>
+                  <span style={styles.listPreview}>{story[langField].slice(0, 60)}...</span>
+                </div>
+              ))}
             </div>
           ))}
+
+          {/* Reading Practice Section */}
+          {passages.length > 0 && (
+            <div style={styles.listSection}>
+              <h2 style={styles.sectionHeading}>Reading Practice</h2>
+              {passages.map((p) => (
+                <div
+                  key={p.passageId}
+                  style={styles.listRow}
+                  onClick={() => handleSelectItem({
+                    id: p.passageId, title: p.title, titleEn: p.titleEn,
+                    text: p.text, en: null, difficulty: p.difficulty,
+                    questions: p.questions || null,
+                    wordGlossary: p.wordGlossary || null,
+                    source: 'builtin'
+                  })}
+                >
+                  <span style={styles.listTitle}>{p.titleEn}</span>
+                  <span style={styles.listMeta}>
+                    <span style={styles.difficultyBadge}>{p.difficulty}</span>
+                    <span style={styles.questionCountBadge}>{p.questions.length}Q</span>
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     );
   }
 
+  // ====================
+  // AI GENERATE PHASE
+  // ====================
+  if (phase === 'generate') {
+    return (
+      <div className="mode-container" style={styles.container}>
+        <ModeHeader
+          title="AI Story Generator"
+          subtitle={`Generate a custom ${langName} story`}
+          icon="&#10024;"
+          onExit={() => setPhase('picker')}
+        />
+        <div style={styles.generateForm}>
+          {/* Difficulty */}
+          <div style={styles.formGroup}>
+            <label style={styles.formLabel}>Difficulty Level</label>
+            <div style={styles.difficultyGroup}>
+              {['A1', 'A2', 'B1', 'B2'].map(d => (
+                <button
+                  key={d}
+                  style={{
+                    ...styles.difficultyBtn,
+                    ...(aiDifficulty === d ? styles.difficultyBtnActive : {})
+                  }}
+                  onClick={() => setAiDifficulty(d)}
+                  disabled={aiGenerating}
+                >
+                  {d}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Topic */}
+          <div style={styles.formGroup}>
+            <label style={styles.formLabel}>Topic</label>
+            <div style={styles.topicRow}>
+              <input
+                style={styles.topicInput}
+                value={aiTopic}
+                onChange={e => setAiTopic(e.target.value)}
+                placeholder="e.g., a trip to the beach"
+                disabled={aiGenerating}
+                onKeyDown={e => { if (e.key === 'Enter' && !aiGenerating) generateStory(); }}
+              />
+              <button
+                style={styles.randomBtn}
+                onClick={pickRandomTopic}
+                disabled={aiGenerating}
+              >
+                Random
+              </button>
+            </div>
+          </div>
+
+          {/* Include Questions Toggle */}
+          <div style={styles.formGroup}>
+            <label style={styles.toggleRow} onClick={() => !aiGenerating && setAiIncludeQuestions(!aiIncludeQuestions)}>
+              <span style={{
+                ...styles.toggleBox,
+                ...(aiIncludeQuestions ? styles.toggleBoxActive : {})
+              }}>
+                {aiIncludeQuestions ? '✓' : ''}
+              </span>
+              <span style={styles.formLabel}>Include comprehension questions</span>
+            </label>
+          </div>
+
+          {/* Generate Button */}
+          <button
+            style={{
+              ...styles.generateBtn,
+              ...(aiGenerating ? styles.generateBtnDisabled : {})
+            }}
+            onClick={generateStory}
+            disabled={aiGenerating}
+          >
+            {aiGenerating ? 'Generating...' : 'Generate Story'}
+          </button>
+
+          {/* Loading indicator */}
+          {aiGenerating && (
+            <div style={styles.loadingContainer}>
+              <SpinKeyframes />
+              <div style={styles.loadingSpinner} />
+              <div style={styles.loadingText}>Writing your story...</div>
+            </div>
+          )}
+
+          {/* Error */}
+          {aiError && (
+            <div style={styles.errorBox}>
+              <div style={styles.errorText}>{aiError}</div>
+              <button style={styles.retryBtn} onClick={generateStory}>Try Again</button>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ====================
+  // COMPLETE PHASE
+  // ====================
+  if (phase === 'complete') {
+    const total = selectedItem?.questions?.length || 0;
+    const accuracy = total > 0 ? Math.round((score / total) * 100) : 0;
+    return (
+      <div className="mode-container" style={styles.container}>
+        <CompletionScreen
+          stats={{ title: 'Reading Complete!', score, total, xpEarned, accuracy }}
+          onRetry={() => {
+            setQuestionIdx(0);
+            setSelectedAnswer(-1);
+            setFeedback(null);
+            setScore(0);
+            setXpEarned(0);
+            setPhase('reading');
+          }}
+          onExit={() => {
+            setSelectedItem(null);
+            setPhase('picker');
+          }}
+        />
+      </div>
+    );
+  }
+
+  // ====================
+  // QUESTIONS PHASE
+  // ====================
+  if (phase === 'questions' && selectedItem?.questions?.length > 0) {
+    const question = selectedItem.questions[questionIdx];
+
+    return (
+      <div className="mode-container" style={styles.container}>
+        <ModeHeader
+          title={selectedItem.titleEn || selectedItem.title}
+          subtitle={`Question ${questionIdx + 1} of ${selectedItem.questions.length}`}
+          icon="📖"
+          onExit={() => setPhase('reading')}
+        />
+
+        <div className="content-row" style={styles.contentRow}>
+          <div style={styles.main}>
+            <div style={styles.questionCard}>
+              <p style={styles.questionText}>{question.question}</p>
+
+              <div style={styles.options}>
+                {question.options.map((opt, i) => (
+                  <button
+                    key={i}
+                    style={{
+                      ...styles.optionBtn,
+                      ...(selectedAnswer === i ? styles.optionSelected : {}),
+                      ...(feedback && i === question.correctIndex ? styles.optionCorrect : {}),
+                      ...(feedback && selectedAnswer === i && i !== question.correctIndex ? styles.optionWrong : {})
+                    }}
+                    onClick={() => handleAnswerSelect(i)}
+                    disabled={!!feedback}
+                  >
+                    {opt}
+                  </button>
+                ))}
+              </div>
+
+              {!feedback && (
+                <button style={styles.checkBtn} onClick={handleCheckAnswer} disabled={selectedAnswer < 0}>
+                  Check Answer
+                </button>
+              )}
+
+              {feedback && (
+                <div style={{
+                  ...styles.feedbackBox,
+                  borderColor: feedback.correct ? '#4ade80' : '#f87171'
+                }}>
+                  <div style={{ color: feedback.correct ? '#4ade80' : '#f87171', fontWeight: '700', fontSize: '1.2rem', marginBottom: '0.5rem' }}>
+                    {feedback.correct ? 'Correct!' : 'Not quite...'}
+                  </div>
+                  {feedback.explanation && (
+                    <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem', margin: 0 }}>{feedback.explanation}</p>
+                  )}
+                  <button style={styles.nextBtn} onClick={handleNextQuestion}>
+                    {questionIdx < selectedItem.questions.length - 1 ? 'Next Question' : 'See Results'}
+                  </button>
+                </div>
+              )}
+            </div>
+
+            <div style={styles.scoreBar}>
+              <span>Score: {score}/{questionIdx + (feedback ? 1 : 0)}</span>
+              <span>XP: +{xpEarned}</span>
+            </div>
+          </div>
+          <LessonChat {...chat} />
+        </div>
+      </div>
+    );
+  }
+
+  // ====================
   // READING PHASE
-  const storyText = selectedStory[langField];
+  // ====================
+  if (!selectedItem) return null;
+
+  const storyText = selectedItem.text;
   const tokens = getWords(storyText);
+  const glossary = selectedItem.wordGlossary || {};
+  const hasQuestions = selectedItem.questions && selectedItem.questions.length > 0;
+  const isAi = selectedItem.source === 'ai';
+  const isBuiltinStory = selectedItem.source === 'builtin' && !hasQuestions;
 
   return (
     <div className="mode-container" style={styles.container}>
       <ModeHeader
-        title={selectedStory.title}
+        title={selectedItem.titleEn || selectedItem.title}
         subtitle="Click a word to hear it and see its meaning"
         icon="📖"
-        onExit={() => { handleStop(); setPhase('picker'); setSelectedWord(null); }}
+        onExit={() => { handleStop(); setPhase('picker'); setSelectedWord(null); setSelectedItem(null); }}
       />
 
       {/* Controls */}
@@ -224,158 +695,185 @@ export default function StoryMode({ langCode = 'uk', stories, onSpeak, ttsEnable
           onClick={() => readAloud(storyText, 0)}
           disabled={isReading}
         >
-          🔊 Read Aloud
+          Read Aloud
         </button>
         {isReading && (
           <button
             style={{ ...styles.controlBtn, ...styles.controlBtnStop }}
             onClick={handleStop}
           >
-            ⏹ Stop
+            Stop
+          </button>
+        )}
+        {selectedItem.en && (
+          <button
+            style={{
+              ...styles.controlBtn,
+              ...(showEnglish ? styles.controlBtnActive : styles.controlBtnSecondary)
+            }}
+            onClick={() => setShowEnglish(!showEnglish)}
+          >
+            {showEnglish ? 'Hide English' : 'Show English'}
+          </button>
+        )}
+        {isBuiltinStory && (
+          <>
+            <button
+              style={{
+                ...styles.controlBtn,
+                ...(currentStoryIndex <= 0 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
+              }}
+              onClick={handlePreviousStory}
+              disabled={currentStoryIndex <= 0}
+            >
+              Previous
+            </button>
+            <button
+              style={{
+                ...styles.controlBtn,
+                ...(currentStoryIndex >= flatStories.length - 1 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
+              }}
+              onClick={handleNextStory}
+              disabled={currentStoryIndex >= flatStories.length - 1}
+            >
+              Next
+            </button>
+          </>
+        )}
+        {isAi && (
+          <button
+            style={{ ...styles.controlBtn, ...styles.controlBtnAi }}
+            onClick={() => { handleStop(); setPhase('generate'); setSelectedWord(null); }}
+          >
+            New AI Story
           </button>
         )}
         <button
-          style={{
-            ...styles.controlBtn,
-            ...(showEnglish ? styles.controlBtnActive : styles.controlBtnSecondary)
-          }}
-          onClick={() => setShowEnglish(!showEnglish)}
+          style={{ ...styles.controlBtn, ...styles.controlBtnSecondary }}
+          onClick={() => { handleStop(); setPhase('picker'); setSelectedWord(null); setSelectedItem(null); }}
         >
-          {showEnglish ? '🇬🇧 Hide English' : '🇬🇧 Show English'}
-        </button>
-        <button
-          style={{
-            ...styles.controlBtn,
-            ...(currentStoryIndex <= 0 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
-          }}
-          onClick={handlePreviousStory}
-          disabled={currentStoryIndex <= 0}
-        >
-          ← Previous
-        </button>
-        <button
-          style={{
-            ...styles.controlBtn,
-            ...(currentStoryIndex >= flatStories.length - 1 ? styles.controlBtnDisabled : styles.controlBtnSecondary)
-          }}
-          onClick={handleNextStory}
-          disabled={currentStoryIndex >= flatStories.length - 1}
-        >
-          Next →
-        </button>
-        <button
-          style={styles.controlBtn}
-          onClick={() => { handleStop(); setPhase('picker'); setSelectedWord(null); }}
-        >
-          ← Stories
+          All Stories
         </button>
       </div>
 
       <div className="content-row" style={styles.contentRow}>
         <div style={styles.main}>
-      {/* Story text with clickable words */}
-      <div style={styles.storyContainer}>
-        <div style={styles.storyText}>
-          {tokens.map((token, i) => {
-            const isWhitespace = /^\s+$/.test(token);
-            if (isWhitespace) {
-              return <span key={i}>{token}</span>;
-            }
+          {/* Story text with clickable words */}
+          <div style={styles.storyContainer}>
+            <div style={styles.storyText}>
+              {tokens.map((token, i) => {
+                const isWhitespace = /^\s+$/.test(token);
+                if (isWhitespace) {
+                  return <span key={i}>{token}</span>;
+                }
 
-            const isHighlighted = highlightRange.start >= 0 && (() => {
-              let count = 0;
-              for (let j = 0; j < i; j++) {
-                if (!/^\s+$/.test(tokens[j])) count++;
-              }
-              return count >= highlightRange.start && count < highlightRange.end;
-            })();
+                const cleaned = token.toLowerCase().replace(/[.,!?;:"""()—–\-…]/g, '');
+                const hasGlossary = glossary[cleaned];
 
-            const isSelected = selectedWord && selectedWord.index === i;
+                const isHighlighted = highlightRange.start >= 0 && (() => {
+                  let count = 0;
+                  for (let j = 0; j < i; j++) {
+                    if (!/^\s+$/.test(tokens[j])) count++;
+                  }
+                  return count >= highlightRange.start && count < highlightRange.end;
+                })();
 
-            return (
-              <span
-                key={i}
-                style={{
-                  ...styles.word,
-                  ...(isSelected ? styles.wordSelected : {}),
-                  ...(isHighlighted && isReading ? styles.wordHighlighted : {})
-                }}
-                onClick={() => handleWordClick(token, i, storyText)}
-                onDoubleClick={() => handleWordDoubleClick(token, i, storyText)}
-              >
-                {token}
-              </span>
-            );
-          })}
-        </div>
-      </div>
+                const isSelected = selectedWord && selectedWord.index === i;
 
-      {/* Word info panel */}
-      {selectedWord && (
-        <div style={styles.wordPanel}>
-          <div style={styles.wordPanelWord}>{selectedWord.word}</div>
-          {selectedWord.translation ? (
-            <div style={styles.wordPanelTranslation}>= "{selectedWord.translation}"</div>
-          ) : !wordAddForm ? (
-            <>
-              <div style={styles.wordPanelNoResult}>No translation found</div>
+                return (
+                  <span
+                    key={i}
+                    style={{
+                      ...styles.word,
+                      ...(hasGlossary ? styles.glossaryWord : {}),
+                      ...(isSelected ? styles.wordSelected : {}),
+                      ...(isHighlighted && isReading ? styles.wordHighlighted : {})
+                    }}
+                    onClick={() => handleWordClick(token, i, storyText)}
+                    onDoubleClick={() => handleWordDoubleClick(token, i, storyText)}
+                  >
+                    {token}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Word info panel */}
+          {selectedWord && (
+            <div style={styles.wordPanel}>
+              <div style={styles.wordPanelWord}>{selectedWord.word}</div>
+              {selectedWord.translation ? (
+                <div style={styles.wordPanelTranslation}>= "{selectedWord.translation}"</div>
+              ) : !wordAddForm ? (
+                <>
+                  <div style={styles.wordPanelNoResult}>No translation found</div>
+                  <button
+                    style={styles.addWordBtn}
+                    onClick={() => {
+                      setWordAddForm({ en: '', translating: true });
+                      translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(t =>
+                        setWordAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
+                      );
+                    }}
+                  >+ Add to dictionary</button>
+                </>
+              ) : (
+                <div style={styles.addWordForm}>
+                  <div style={styles.addWordLabel}>
+                    English meaning
+                    {wordAddForm.translating && <span style={styles.translatingHint}> translating...</span>}
+                  </div>
+                  <input
+                    style={{ ...styles.addWordInput, ...(wordAddForm.translating ? { opacity: 0.5 } : {}) }}
+                    value={wordAddForm.en}
+                    onChange={e => setWordAddForm(prev => ({ ...prev, en: e.target.value }))}
+                    placeholder={wordAddForm.translating ? 'Getting translation...' : 'Enter translation...'}
+                    disabled={wordAddForm.translating}
+                    autoFocus={!wordAddForm.translating}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter' && wordAddForm.en.trim()) { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }
+                      if (e.key === 'Escape') setWordAddForm(null);
+                    }}
+                  />
+                  <div style={styles.addWordActions}>
+                    <button style={styles.addWordCancel} onClick={() => setWordAddForm(null)}>Cancel</button>
+                    <button
+                      style={styles.addWordSave}
+                      disabled={wordAddForm.translating || !wordAddForm.en.trim()}
+                      onClick={() => { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }}
+                    >Save</button>
+                  </div>
+                </div>
+              )}
               <button
-                style={styles.addWordBtn}
-                onClick={() => {
-                  setWordAddForm({ en: '', translating: true });
-                  translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(t =>
-                    setWordAddForm(prev => prev ? { ...prev, en: t || '', translating: false } : null)
-                  );
-                }}
-              >+ Add to dictionary</button>
-            </>
-          ) : (
-            <div style={styles.addWordForm}>
-              <div style={styles.addWordLabel}>
-                English meaning
-                {wordAddForm.translating && <span style={styles.translatingHint}> translating…</span>}
-              </div>
-              <input
-                style={{ ...styles.addWordInput, ...(wordAddForm.translating ? { opacity: 0.5 } : {}) }}
-                value={wordAddForm.en}
-                onChange={e => setWordAddForm(prev => ({ ...prev, en: e.target.value }))}
-                placeholder={wordAddForm.translating ? 'Getting translation…' : 'Enter translation...'}
-                disabled={wordAddForm.translating}
-                autoFocus={!wordAddForm.translating}
-                onKeyDown={e => {
-                  if (e.key === 'Enter' && wordAddForm.en.trim()) { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }
-                  if (e.key === 'Escape') setWordAddForm(null);
-                }}
-              />
-              <div style={styles.addWordActions}>
-                <button style={styles.addWordCancel} onClick={() => setWordAddForm(null)}>Cancel</button>
-                <button
-                  style={styles.addWordSave}
-                  disabled={wordAddForm.translating || !wordAddForm.en.trim()}
-                  onClick={() => { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }}
-                >Save</button>
-              </div>
+                style={styles.wordPanelSpeak}
+                onClick={() => ttsEnabled && onSpeak && onSpeak(selectedWord.word, 0.7, ttsVolume)}
+              >
+                Hear again
+              </button>
             </div>
           )}
-          <button
-            style={styles.wordPanelSpeak}
-            onClick={() => ttsEnabled && onSpeak && onSpeak(selectedWord.word, 0.7, ttsVolume)}
-          >
-            🔊 Hear again
-          </button>
-        </div>
-      )}
 
-      {/* English translation */}
-      {showEnglish && (
-        <div style={styles.englishSection}>
-          <div style={styles.englishLabel}>English Translation</div>
-          <div style={styles.englishText}>{selectedStory.en}</div>
-        </div>
-      )}
+          {/* English translation */}
+          {showEnglish && selectedItem.en && (
+            <div style={styles.englishSection}>
+              <div style={styles.englishLabel}>English Translation</div>
+              <div style={styles.englishText}>{selectedItem.en}</div>
+            </div>
+          )}
+
+          {/* Answer Questions button */}
+          {hasQuestions && (
+            <div style={styles.questionsButtonContainer}>
+              <button style={styles.questionsBtn} onClick={() => setPhase('questions')}>
+                Answer Questions ({selectedItem.questions.length})
+              </button>
+            </div>
+          )}
 
           <div style={styles.tipBar}>
-            💡 Click a word to hear it & see its meaning. Double-click to read from that word onward.
+            Click a word to hear it & see its meaning. Double-click to read from that word onward.
           </div>
         </div>
         <LessonChat {...chat} />
@@ -394,49 +892,265 @@ const styles = {
   },
   contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
   main: { flex: 1, minWidth: 0 },
-  levelList: {
-    maxWidth: '800px',
-    margin: '0 auto'
-  },
-  levelSection: {
-    marginBottom: '2rem'
-  },
-  levelTitle: {
-    fontSize: '1.4rem',
-    color: '#ffd700',
-    marginBottom: '1rem',
-    borderBottom: '1px solid rgba(255,215,0,0.3)',
-    paddingBottom: '0.5rem'
-  },
-  levelNative: {
+
+  // Picker - list view
+  levelList: { maxWidth: '800px', margin: '0 auto' },
+  listSection: { marginBottom: '1.5rem' },
+  sectionHeading: {
     fontSize: '1rem',
     color: 'rgba(255,255,255,0.5)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    marginTop: '1.5rem',
+    marginBottom: '0.5rem',
+  },
+  levelTitle: {
+    fontSize: '1.1rem',
+    color: '#ffd700',
+    marginBottom: '0.5rem',
+    borderBottom: '1px solid rgba(255,215,0,0.2)',
+    paddingBottom: '0.4rem'
+  },
+  levelNative: {
+    fontSize: '0.85rem',
+    color: 'rgba(255,255,255,0.4)',
     fontWeight: '400'
   },
-  storyGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
-    gap: '1rem'
-  },
-  storyCard: {
-    background: 'rgba(0,0,0,0.3)',
-    border: '1px solid rgba(255,215,0,0.2)',
-    borderRadius: '12px',
-    padding: '1.25rem',
+  listRow: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    padding: '0.6rem 0.75rem',
+    borderBottom: '1px solid rgba(255,255,255,0.06)',
     cursor: 'pointer',
-    transition: 'all 0.2s'
+    transition: 'background 0.15s',
+    borderRadius: '6px',
   },
-  storyTitle: {
+  listTitle: {
+    fontSize: '0.95rem',
+    fontWeight: '600',
+    color: '#ffd700',
+    flex: 1,
+    minWidth: 0,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  },
+  listPreview: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.35)',
+    flex: '0 1 auto',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    maxWidth: '300px',
+  },
+  listMeta: {
+    display: 'flex',
+    gap: '0.5rem',
+    flexShrink: 0,
+  },
+  difficultyBadge: {
+    color: '#4dabf7',
+    fontWeight: '600',
+    fontSize: '0.75rem',
+  },
+  questionCountBadge: {
+    color: 'rgba(255,255,255,0.35)',
+    fontSize: '0.75rem',
+  },
+  deleteBtn: {
+    background: 'none',
+    border: 'none',
+    color: 'rgba(255,255,255,0.25)',
+    cursor: 'pointer',
+    fontSize: '0.85rem',
+    padding: '0.2rem 0.5rem',
+    borderRadius: '4px',
+    fontFamily: 'inherit',
+    flexShrink: 0,
+  },
+
+  // AI Card
+  aiCard: {
+    background: 'linear-gradient(135deg, rgba(139,92,246,0.2), rgba(77,171,247,0.2))',
+    border: '2px solid rgba(139,92,246,0.4)',
+    borderRadius: '16px',
+    padding: '1.5rem',
+    cursor: 'pointer',
+    transition: 'all 0.2s',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1.25rem',
+    marginBottom: '1rem',
+  },
+  aiCardIcon: {
+    fontSize: '2.5rem',
+  },
+  aiCardTitle: {
+    fontSize: '1.2rem',
+    fontWeight: '700',
+    color: '#c4b5fd',
+    marginBottom: '0.25rem',
+  },
+  aiCardDesc: {
+    fontSize: '0.9rem',
+    color: 'rgba(255,255,255,0.6)',
+  },
+
+  // Generate form
+  generateForm: {
+    maxWidth: '500px',
+    margin: '0 auto',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.5rem',
+  },
+  formGroup: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.5rem',
+  },
+  formLabel: {
+    fontSize: '0.95rem',
+    fontWeight: '600',
+    color: 'rgba(255,255,255,0.8)',
+    cursor: 'default',
+  },
+  difficultyGroup: {
+    display: 'flex',
+    gap: '0.5rem',
+  },
+  difficultyBtn: {
+    flex: 1,
+    padding: '0.7rem',
+    border: '2px solid rgba(255,255,255,0.15)',
+    borderRadius: '10px',
+    background: 'rgba(255,255,255,0.05)',
+    color: '#fff',
+    fontSize: '1rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
+  },
+  difficultyBtnActive: {
+    borderColor: '#c4b5fd',
+    background: 'rgba(139,92,246,0.25)',
+    color: '#c4b5fd',
+  },
+  topicRow: {
+    display: 'flex',
+    gap: '0.5rem',
+  },
+  topicInput: {
+    flex: 1,
+    padding: '0.7rem 1rem',
+    borderRadius: '10px',
+    border: '2px solid rgba(255,255,255,0.15)',
+    background: 'rgba(255,255,255,0.05)',
+    color: '#fff',
+    fontSize: '1rem',
+    fontFamily: 'inherit',
+    outline: 'none',
+  },
+  randomBtn: {
+    padding: '0.7rem 1.25rem',
+    borderRadius: '10px',
+    border: '2px solid rgba(139,92,246,0.3)',
+    background: 'rgba(139,92,246,0.15)',
+    color: '#c4b5fd',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    whiteSpace: 'nowrap',
+  },
+  toggleRow: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    cursor: 'pointer',
+  },
+  toggleBox: {
+    width: '24px',
+    height: '24px',
+    borderRadius: '6px',
+    border: '2px solid rgba(255,255,255,0.2)',
+    background: 'rgba(255,255,255,0.05)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '0.85rem',
+    color: '#c4b5fd',
+    fontWeight: '700',
+    flexShrink: 0,
+  },
+  toggleBoxActive: {
+    borderColor: '#c4b5fd',
+    background: 'rgba(139,92,246,0.3)',
+  },
+  generateBtn: {
+    padding: '1rem',
+    borderRadius: '12px',
+    border: 'none',
+    background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
+    color: '#fff',
     fontSize: '1.1rem',
     fontWeight: '700',
-    color: '#ffd700',
-    marginBottom: '0.5rem'
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
   },
-  storyPreview: {
-    fontSize: '0.85rem',
+  generateBtnDisabled: {
+    opacity: 0.5,
+    cursor: 'not-allowed',
+  },
+  loadingContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '1rem',
+    padding: '2rem',
+  },
+  loadingSpinner: {
+    width: '40px',
+    height: '40px',
+    border: '3px solid rgba(139,92,246,0.2)',
+    borderTop: '3px solid #c4b5fd',
+    borderRadius: '50%',
+    animation: 'spin 1s linear infinite',
+  },
+  loadingText: {
     color: 'rgba(255,255,255,0.6)',
-    lineHeight: '1.4'
+    fontSize: '1rem',
   },
+  errorBox: {
+    background: 'rgba(248,113,113,0.1)',
+    border: '1px solid rgba(248,113,113,0.3)',
+    borderRadius: '10px',
+    padding: '1rem',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+    flexWrap: 'wrap',
+  },
+  errorText: {
+    color: '#f87171',
+    flex: 1,
+  },
+  retryBtn: {
+    padding: '0.5rem 1rem',
+    borderRadius: '8px',
+    border: '1px solid rgba(248,113,113,0.3)',
+    background: 'rgba(248,113,113,0.15)',
+    color: '#f87171',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    fontWeight: '600',
+  },
+
+  // Controls
   controls: {
     display: 'flex',
     flexWrap: 'wrap',
@@ -480,6 +1194,13 @@ const styles = {
     color: 'rgba(255,255,255,0.3)',
     cursor: 'not-allowed'
   },
+  controlBtnAi: {
+    background: 'linear-gradient(135deg, rgba(139,92,246,0.4), rgba(109,40,217,0.4))',
+    border: '1px solid rgba(139,92,246,0.5)',
+    color: '#c4b5fd',
+  },
+
+  // Story container
   storyContainer: {
     maxWidth: '800px',
     margin: '0 auto',
@@ -501,6 +1222,9 @@ const styles = {
     transition: 'all 0.15s',
     position: 'relative'
   },
+  glossaryWord: {
+    borderBottom: '2px dotted rgba(255,215,0,0.4)',
+  },
   wordSelected: {
     background: 'rgba(255,215,0,0.25)',
     color: '#ffd700',
@@ -510,6 +1234,8 @@ const styles = {
     background: 'rgba(77,171,247,0.15)',
     color: '#4dabf7'
   },
+
+  // Word panel
   wordPanel: {
     maxWidth: '800px',
     margin: '0 auto 1.5rem',
@@ -608,6 +1334,8 @@ const styles = {
     fontFamily: 'inherit',
     marginLeft: 'auto'
   },
+
+  // English section
   englishSection: {
     maxWidth: '800px',
     margin: '0 auto 1.5rem',
@@ -628,6 +1356,108 @@ const styles = {
     lineHeight: '1.8',
     color: 'rgba(255,255,255,0.8)'
   },
+
+  // Questions button in reading phase
+  questionsButtonContainer: {
+    maxWidth: '800px',
+    margin: '0 auto 1.5rem',
+  },
+  questionsBtn: {
+    width: '100%',
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    color: '#1a1a2e',
+    padding: '1rem',
+    borderRadius: '12px',
+    fontSize: '1.1rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: 'inherit'
+  },
+
+  // Questions phase
+  questionCard: {
+    maxWidth: '650px',
+    margin: '0 auto',
+    background: 'rgba(0,0,0,0.3)',
+    borderRadius: '20px',
+    padding: '2rem',
+    border: '1px solid rgba(255,215,0,0.2)'
+  },
+  questionText: {
+    fontSize: '1.2rem',
+    marginBottom: '1.5rem',
+    lineHeight: 1.4,
+    marginTop: 0,
+  },
+  options: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.75rem',
+    marginBottom: '1rem'
+  },
+  optionBtn: {
+    background: 'rgba(255,255,255,0.05)',
+    border: '2px solid rgba(255,255,255,0.2)',
+    color: '#fff',
+    padding: '0.75rem 1rem',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    fontFamily: 'inherit',
+    textAlign: 'left',
+    transition: 'all 0.2s'
+  },
+  optionSelected: { borderColor: '#ffd700', background: 'rgba(255,215,0,0.1)' },
+  optionCorrect: { borderColor: '#4ade80', background: 'rgba(74,222,128,0.15)' },
+  optionWrong: { borderColor: '#f87171', background: 'rgba(248,113,113,0.15)' },
+  checkBtn: {
+    width: '100%',
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    color: '#1a1a2e',
+    padding: '0.75rem',
+    borderRadius: '10px',
+    fontSize: '1rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: 'inherit'
+  },
+  feedbackBox: {
+    background: 'rgba(0,0,0,0.2)',
+    borderRadius: '12px',
+    padding: '1rem',
+    borderLeft: '4px solid',
+    marginTop: '1rem'
+  },
+  nextBtn: {
+    background: 'linear-gradient(135deg, #51cf66, #37b24d)',
+    border: 'none',
+    color: '#fff',
+    padding: '0.6rem 1.5rem',
+    borderRadius: '10px',
+    fontSize: '0.95rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    marginTop: '0.75rem'
+  },
+  scoreBar: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '2rem',
+    marginTop: '1.5rem',
+    padding: '0.75rem',
+    background: 'rgba(0,0,0,0.2)',
+    borderRadius: '10px',
+    maxWidth: '650px',
+    margin: '1.5rem auto 0',
+    fontSize: '1rem',
+    color: '#ffd700',
+    fontWeight: '600'
+  },
+
+  // Tip bar
   tipBar: {
     maxWidth: '800px',
     margin: '0 auto',

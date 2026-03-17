@@ -15,7 +15,7 @@ import TranslationPracticeMode from './components/modes/TranslationPracticeMode.
 import GrammarMode from './components/modes/GrammarMode.jsx';
 import SentenceMode from './components/modes/SentenceMode.jsx';
 import DialogueMode from './components/modes/DialogueMode.jsx';
-import ReadingMode from './components/modes/ReadingMode.jsx';
+// ReadingMode merged into StoryMode
 import StoryMode from './components/modes/StoryMode.jsx';
 import ChatMode from './components/modes/ChatMode.jsx';
 
@@ -1159,18 +1159,11 @@ export default function UkrainianTypingGame() {
                     <p>Practice real conversations</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('reading')}>
-                  <div className="mode-icon">📖</div>
-                  <div className="mode-info">
-                    <h3>Reading Practice</h3>
-                    <p>Read texts and answer questions</p>
-                  </div>
-                </div>
                 <div className="mode-card" onClick={() => setGameMode('stories')}>
                   <div className="mode-icon">📚</div>
                   <div className="mode-info">
                     <h3>Story Time</h3>
-                    <p>Read along with stories, click words to learn</p>
+                    <p>Stories, reading practice & AI-generated content</p>
                   </div>
                 </div>
                 <div className="mode-card" onClick={() => setGameMode('chat')}>
@@ -1710,34 +1703,25 @@ export default function UkrainianTypingGame() {
               }));
             }}
           />
-        ) : gameMode === 'reading' ? (
-          <ReadingMode
+        ) : gameMode === 'stories' ? (
+          <StoryMode
             langCode={currentLanguage}
+            stories={ALL_STORIES}
             passages={CURRENT_READING}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
             onExit={() => setGameMode('menu')}
-            onComplete={(stats) => {
-              console.log('[Reading] Complete:', stats);
-            }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
+            onComplete={(stats) => {
+              console.log('[Stories] Complete:', stats);
+            }}
             onTrackProgress={(mode, data) => {
               setModeProgress(prev => ({
                 ...prev,
                 [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
               }));
             }}
-          />
-        ) : gameMode === 'stories' ? (
-          <StoryMode
-            langCode={currentLanguage}
-            stories={ALL_STORIES}
-            onSpeak={speak}
-            ttsEnabled={ttsEnabled}
-            ttsVolume={ttsVolume}
-            onExit={() => setGameMode('menu')}
-            onAddXP={(amount) => setXp(prev => prev + amount)}
           />
         ) : gameMode === 'chat' ? (
           <ChatMode
