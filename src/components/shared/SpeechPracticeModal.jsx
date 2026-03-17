@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import useSpeechPractice from '../../hooks/useSpeechPractice.js';
 import SpeechPracticeWidget from './SpeechPracticeWidget.jsx';
+import { stopSpeaking } from '../../App.jsx';
 
 /**
  * Modal overlay for practicing pronunciation of a single word.
@@ -8,13 +9,26 @@ import SpeechPracticeWidget from './SpeechPracticeWidget.jsx';
  */
 export default function SpeechPracticeModal({ word, langCode, langName, onClose, onSpeak }) {
   const speech = useSpeechPractice({ langCode, langName });
+  const [tipsSpeaking, setTipsSpeaking] = useState(false);
+
+  const handleSpeakTips = useCallback(async (text) => {
+    if (!onSpeak) return;
+    setTipsSpeaking(true);
+    try { await onSpeak(text, 1, undefined); } catch {}
+    setTipsSpeaking(false);
+  }, [onSpeak]);
+
+  const handleStopTips = useCallback(() => {
+    stopSpeaking();
+    setTipsSpeaking(false);
+  }, []);
 
   useEffect(() => {
     speech.setTarget(word);
   }, [word, speech.setTarget]);
 
   useEffect(() => {
-    return () => { speech.reset(); };
+    return () => { speech.reset(); stopSpeaking(); };
   }, []);
 
   return (
@@ -24,11 +38,18 @@ export default function SpeechPracticeModal({ word, langCode, langName, onClose,
         <button style={styles.close} onClick={onClose}>✕</button>
         <div style={styles.header}>Practice saying:</div>
         <div style={styles.word}>{word}</div>
+        {onSpeak && (
+          <button style={styles.hearBtn} onClick={() => onSpeak(word, 0.7, undefined)}>
+            🔊 Hear it
+          </button>
+        )}
         <SpeechPracticeWidget
           speech={speech}
           target={word}
           compact
-          onSpeakTips={onSpeak ? (text) => onSpeak(text, 1, undefined) : undefined}
+          onSpeakTips={onSpeak ? handleSpeakTips : undefined}
+          tipsSpeaking={tipsSpeaking}
+          onStopTips={handleStopTips}
         />
       </div>
     </>
@@ -81,6 +102,19 @@ const styles = {
     fontWeight: '700',
     color: '#ffd700',
     textAlign: 'center',
-    marginBottom: '1.25rem',
+    marginBottom: '0.75rem',
+  },
+  hearBtn: {
+    display: 'block',
+    margin: '0 auto 1.25rem',
+    background: 'rgba(77,171,247,0.12)',
+    border: '1px solid rgba(77,171,247,0.3)',
+    color: '#4dabf7',
+    padding: '0.4rem 1.2rem',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
   },
 };
