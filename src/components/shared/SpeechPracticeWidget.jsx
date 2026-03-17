@@ -14,7 +14,7 @@ import React from 'react';
  * @param {Function} [props.onNext] - next callback
  * @param {string} [props.nextLabel] - label for next button
  */
-export default function SpeechPracticeWidget({ speech, target, compact = false, showRetryNext = false, onRetry, onNext, nextLabel = 'Next', onSpeakTips }) {
+export default function SpeechPracticeWidget({ speech, target, compact = false, showRetryNext = false, onRetry, onNext, nextLabel = 'Next', onSpeakTips, tipsSpeaking, onStopTips }) {
   const s = compact ? compactStyles : fullStyles;
   const diffColors = { correct: '#4ade80', wrong: '#f87171', missing: '#fbbf24', extra: '#f87171' };
   const matchColors = { correct: '#4ade80', close: '#fbbf24', miss: '#f87171' };
@@ -98,13 +98,22 @@ export default function SpeechPracticeWidget({ speech, target, compact = false, 
             <div style={s.tipsBox}>
               <div style={s.tipsHeader}>
                 💡 Pronunciation Coach
-                {onSpeakTips && (
+                {onSpeakTips && !tipsSpeaking && (
                   <button
                     style={s.speakTipsBtn}
                     onClick={() => onSpeakTips(speech.llmFeedback)}
                     title="Listen to tips"
                   >
                     🔊
+                  </button>
+                )}
+                {tipsSpeaking && onStopTips && (
+                  <button
+                    style={s.stopTipsBtn}
+                    onClick={onStopTips}
+                    title="Stop"
+                  >
+                    ⏹
                   </button>
                 )}
               </div>
@@ -218,6 +227,17 @@ const sharedStyles = {
     fontSize: '1rem',
     padding: '0.1rem 0.3rem',
     borderRadius: '6px',
+    opacity: 0.7,
+    transition: 'opacity 0.2s',
+  },
+  stopTipsBtn: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    padding: '0.1rem 0.3rem',
+    borderRadius: '6px',
+    color: '#ff6b6b',
     opacity: 0.7,
     transition: 'opacity 0.2s',
   },

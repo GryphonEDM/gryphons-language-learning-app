@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
-import { speakUkrainian } from '../../App.jsx';
+import { speakUkrainian, stopSpeaking } from '../../App.jsx';
 import useSpeechPractice from '../../hooks/useSpeechPractice.js';
 import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
 
@@ -40,6 +40,7 @@ export default function FlashcardMode({
 
   // Speech practice integration
   const [showSpeechPractice, setShowSpeechPractice] = useState(false);
+  const [tipsSpeaking, setTipsSpeaking] = useState(false);
   const speech = useSpeechPractice({ langCode, langName });
   const speechPracticeRef = useRef(null);
 
@@ -508,7 +509,9 @@ export default function FlashcardMode({
             speech={speech}
             target={currentWord.uk}
             compact={true}
-            onSpeakTips={(text) => speakUkrainian(text, 0.8, 0.8, 'en')}
+            onSpeakTips={(text) => { setTipsSpeaking(true); speakUkrainian(text, 0.8, 0.8, 'en').then(() => setTipsSpeaking(false)); }}
+            tipsSpeaking={tipsSpeaking}
+            onStopTips={() => { stopSpeaking(); setTipsSpeaking(false); }}
           />
         </div>
       )}
