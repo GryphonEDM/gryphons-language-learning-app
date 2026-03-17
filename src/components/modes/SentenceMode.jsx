@@ -8,15 +8,13 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const [phase, setPhase] = useState('playing');
+  const [phase, setPhase] = useState('pick-difficulty'); // pick-difficulty, playing, complete
+  const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a sentence-building exercise — arranging word tiles into correct ${langName} sentences. Answer questions about grammar, vocabulary, or word order concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
-  const [sentences, setSentences] = useState(() => {
-    const shuffled = [...sentenceData].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 10);
-  });
+  const [sentences, setSentences] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [availableTiles, setAvailableTiles] = useState(() => initTiles(0));
+  const [availableTiles, setAvailableTiles] = useState([]);
   const [placedTiles, setPlacedTiles] = useState([]);
   const [feedback, setFeedback] = useState(null);
   const [score, setScore] = useState(0);
@@ -24,12 +22,38 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
   const [mistakeCount, setMistakeCount] = useState(0);
   const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
 
-  function initTiles(idx) {
-    const sentence = sentences[idx];
+  function initTilesFromSentence(sentence) {
     if (!sentence) return [];
     const allWords = [...sentence.words, ...sentence.distractors];
     return allWords.sort(() => Math.random() - 0.5).map((word, i) => ({ id: `${i}-${word}`, word }));
   }
+
+  // Compute available difficulty levels and counts from sentenceData
+  const difficultyLevels = React.useMemo(() => {
+    const counts = {};
+    sentenceData.forEach(s => {
+      const d = s.difficulty || 'Unknown';
+      counts[d] = (counts[d] || 0) + 1;
+    });
+    return Object.entries(counts).sort(([a], [b]) => a.localeCompare(b));
+  }, [sentenceData]);
+
+  const startExercise = React.useCallback((diff) => {
+    setSelectedDifficulty(diff);
+    const filtered = diff ? sentenceData.filter(s => s.difficulty === diff) : sentenceData;
+    const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+    const selected = shuffled.slice(0, 10);
+    setSentences(selected);
+    setCurrentIdx(0);
+    setAvailableTiles(initTilesFromSentence(selected[0]));
+    setPlacedTiles([]);
+    setFeedback(null);
+    setScore(0);
+    setXpEarned(0);
+    setMistakeCount(0);
+    setConsecutiveCorrect(0);
+    setPhase('playing');
+  }, [sentenceData]);
 
   const currentSentence = sentences[currentIdx];
 
@@ -84,9 +108,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     if (currentIdx < sentences.length - 1) {
       const nextIdx = currentIdx + 1;
       setCurrentIdx(nextIdx);
-      const nextSentence = sentences[nextIdx];
-      const allWords = [...nextSentence.words, ...nextSentence.distractors];
-      setAvailableTiles(allWords.sort(() => Math.random() - 0.5).map((word, i) => ({ id: `${i}-${word}`, word })));
+      setAvailableTiles(initTilesFromSentence(sentences[nextIdx]));
       setPlacedTiles([]);
       setFeedback(null);
     } else {
@@ -105,26 +127,45 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
 
   const handleClear = () => {
     if (feedback) return;
-    const allWords = [...currentSentence.words, ...currentSentence.distractors];
-    setAvailableTiles(allWords.sort(() => Math.random() - 0.5).map((word, i) => ({ id: `${i}-${word}`, word })));
+    setAvailableTiles(initTilesFromSentence(currentSentence));
     setPlacedTiles([]);
   };
 
   const handleRetry = () => {
-    const shuffled = [...sentenceData].sort(() => Math.random() - 0.5);
-    const newSentences = shuffled.slice(0, 10);
-    setSentences(newSentences);
-    setCurrentIdx(0);
-    const allWords = [...newSentences[0].words, ...newSentences[0].distractors];
-    setAvailableTiles(allWords.sort(() => Math.random() - 0.5).map((word, i) => ({ id: `${i}-${word}`, word })));
-    setPlacedTiles([]);
-    setFeedback(null);
-    setScore(0);
-    setXpEarned(0);
-    setMistakeCount(0);
-    setConsecutiveCorrect(0);
-    setPhase('playing');
+    startExercise(selectedDifficulty);
   };
+
+  // --- Difficulty Picker Phase ---
+  if (phase === 'pick-difficulty') {
+    return (
+      <div className="mode-container" style={styles.container}>
+        <ModeHeader title="Build Sentences" subtitle="Arrange words to build sentences" icon="🧱" onExit={onExit} />
+        <div style={styles.pickerSectionTitle}>Choose difficulty level</div>
+        <div style={styles.cefrGrid}>
+          <div
+            style={{ ...styles.cefrCard, border: '2px solid #ffd700' }}
+            onClick={() => startExercise(null)}
+          >
+            <div style={styles.cefrLevel}>All Levels</div>
+            <div style={styles.cefrDesc}>{sentenceData.length} sentences</div>
+          </div>
+          {difficultyLevels.map(([level, count]) => (
+            <div
+              key={level}
+              style={styles.cefrCard}
+              onClick={() => startExercise(level)}
+            >
+              <div style={styles.cefrLevel}>{level}</div>
+              <div style={styles.cefrDesc}>
+                {level === 'A1' ? 'Beginner' : level === 'A2' ? 'Elementary' : level === 'B1' ? 'Intermediate' : level === 'B2' ? 'Upper Intermediate' : level}
+                {' · '}{count} sentences
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   if (phase === 'complete') {
     const accuracy = sentences.length > 0 ? Math.round((score / sentences.length) * 100) : 0;
@@ -145,7 +186,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Build Sentences"
-        subtitle={`Sentence ${currentIdx + 1} of ${sentences.length}`}
+        subtitle={`Sentence ${currentIdx + 1} of ${sentences.length}${selectedDifficulty ? ` · ${selectedDifficulty}` : ''}`}
         icon="🧱"
         onExit={onExit}
       />
@@ -236,8 +277,23 @@ const styles = {
     fontFamily: 'system-ui, -apple-system, sans-serif',
   },
   contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
-  main: { flex: 1, minWidth: 0,
+  main: { flex: 1, minWidth: 0 },
+
+  // Picker styles
+  pickerSectionTitle: {
+    textAlign: 'center', fontSize: '1.3rem', fontWeight: '600', color: '#ffd700',
+    marginTop: '1.5rem', marginBottom: '1.5rem',
   },
+  cefrGrid: {
+    display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1rem',
+  },
+  cefrCard: {
+    background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.15)',
+    borderRadius: '16px', padding: '1.5rem 2rem', textAlign: 'center',
+    cursor: 'pointer', transition: 'all 0.2s', minWidth: '140px',
+  },
+  cefrLevel: { fontSize: '1.4rem', fontWeight: '700', color: '#ffd700', marginBottom: '0.3rem' },
+  cefrDesc: { fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' },
   progressBar: {
     width: '100%',
     height: '8px',

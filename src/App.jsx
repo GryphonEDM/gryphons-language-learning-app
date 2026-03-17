@@ -1618,6 +1618,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'listening' ? (
           <ListeningMode
             langCode={currentLanguage}
+            vocabularySets={DICTIONARY_FLASHCARD_SETS}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}

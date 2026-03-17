@@ -6,17 +6,19 @@ import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import { cefrMatches } from '../../utils/speechUtils.js';
 
-export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
+
+export default function ListeningMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const [phase, setPhase] = useState('playing'); // playing, complete
+  const [phase, setPhase] = useState('picker'); // picker, playing, complete
+  const [pickerStep, setPickerStep] = useState('category'); // category, cefr
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [cefrFilter, setCefrFilter] = useState('all');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
-  const [words, setWords] = useState(() => {
-    const all = getAllVocabularyWords(langCode);
-    const shuffled = [...all].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, 10);
-  });
+  const [words, setWords] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userInput, setUserInput] = useState('');
   const [feedback, setFeedback] = useState(null); // { correct, diff }
@@ -25,6 +27,81 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   const [playbackRate, setPlaybackRate] = useState(1);
   const [usedSlowSpeed, setUsedSlowSpeed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const getFilteredWords = useCallback((cat, cefr) => {
+    if (cat) {
+      // Specific category selected — use its words
+      return (cat.words || []).map(w => ({
+        uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+        source: w.source || cat.setId,
+        examples: w.examples || [], examplesEn: w.examplesEn || [],
+      }));
+    }
+    // All words mode
+    if (cefr && cefr !== 'all' && vocabularySets.length > 0) {
+      const filtered = [];
+      const seen = new Set();
+      vocabularySets.forEach(set => {
+        if (!cefrMatches(set.difficulty || '', cefr)) return;
+        (set.words || []).forEach(w => {
+          const key = (w.uk || '').toLowerCase();
+          if (key && !seen.has(key)) {
+            seen.add(key);
+            filtered.push({
+              uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+              source: w.source || set.setId,
+              examples: w.examples || [], examplesEn: w.examplesEn || [],
+            });
+          }
+        });
+      });
+      if (filtered.length >= 5) return filtered;
+    }
+    return getAllVocabularyWords(langCode);
+  }, [langCode, vocabularySets]);
+
+  const startExercise = useCallback((cat, cefr) => {
+    const all = getFilteredWords(cat, cefr);
+    const shuffled = [...all].sort(() => Math.random() - 0.5);
+    setWords(shuffled.slice(0, 10));
+    setCurrentIdx(0);
+    setUserInput('');
+    setFeedback(null);
+    setScore(0);
+    setXpEarned(0);
+    setSubmitted(false);
+    setPhase('playing');
+  }, [getFilteredWords]);
+
+  const handleSelectCategory = useCallback((cat) => {
+    setSelectedCategory(cat);
+    const diff = cat ? cat.difficulty : 'Mixed';
+    const hasMixedLevels = !diff || diff === 'Mixed' || diff.includes('-');
+    if (hasMixedLevels) {
+      setCefrFilter('all');
+      setPickerStep('cefr');
+    } else {
+      setCefrFilter('all');
+      startExercise(cat, 'all');
+    }
+  }, [startExercise]);
+
+  const handleSelectAllWords = useCallback(() => {
+    setSelectedCategory(null);
+    setCefrFilter('all');
+    setPickerStep('cefr');
+  }, []);
+
+  const handleSelectCefr = useCallback((level) => {
+    setCefrFilter(level);
+    startExercise(selectedCategory, level);
+  }, [selectedCategory, startExercise]);
+
+  const handleBackToPicker = useCallback(() => {
+    if (pickerStep === 'cefr') {
+      setPickerStep('category');
+    }
+  }, [pickerStep]);
 
   const currentWord = words[currentIdx];
 
@@ -105,17 +182,82 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
   };
 
   const handleRetry = () => {
-    const all = getAllVocabularyWords(langCode);
-    const shuffled = [...all].sort(() => Math.random() - 0.5);
-    setWords(shuffled.slice(0, 10));
-    setCurrentIdx(0);
-    setUserInput('');
-    setFeedback(null);
-    setScore(0);
-    setXpEarned(0);
-    setSubmitted(false);
-    setPhase('playing');
+    startExercise(selectedCategory, cefrFilter);
   };
+
+  // --- Picker Phase ---
+  if (phase === 'picker') {
+    return (
+      <div className="mode-container" style={styles.container}>
+        <ModeHeader title="Listening Practice" subtitle="Listen and type what you hear" icon="👂" onExit={onExit} />
+
+        {pickerStep === 'category' && (
+          <>
+            <div style={styles.pickerSectionTitle}>Choose a word category</div>
+            <div style={styles.categoryGrid}>
+              <div
+                style={{ ...styles.categoryCard, border: '2px solid #ffd700' }}
+                onClick={handleSelectAllWords}
+              >
+                <div style={styles.categoryIcon}>🎲</div>
+                <div style={styles.categoryName}>All Words</div>
+                <div style={styles.categoryMeta}>Random from all categories</div>
+              </div>
+
+              {vocabularySets.map(set => (
+                <div
+                  key={set.setId}
+                  style={styles.categoryCard}
+                  onClick={() => handleSelectCategory(set)}
+                >
+                  <div style={styles.categoryIcon}>{set.icon}</div>
+                  <div style={styles.categoryName}>{set.nameEn}</div>
+                  <div style={styles.categoryMeta}>
+                    <span style={styles.categoryDifficulty}>{set.difficulty}</span>
+                    {' · '}
+                    <span>{set.totalWords || set.words?.length || 0} words</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {pickerStep === 'cefr' && (
+          <>
+            <button style={styles.backStepBtn} onClick={handleBackToPicker}>
+              ← Back to categories
+            </button>
+            <div style={styles.pickerSectionTitle}>
+              Filter by difficulty level
+              {selectedCategory && <span style={styles.pickerCategoryBadge}>{selectedCategory.icon} {selectedCategory.nameEn}</span>}
+            </div>
+            <div style={styles.cefrGrid}>
+              <div
+                style={{ ...styles.cefrCard, ...(cefrFilter === 'all' ? styles.cefrCardActive : {}) }}
+                onClick={() => handleSelectCefr('all')}
+              >
+                <div style={styles.cefrLevel}>All Levels</div>
+                <div style={styles.cefrDesc}>Include all difficulty levels</div>
+              </div>
+              {CEFR_LEVELS.map(level => (
+                <div
+                  key={level}
+                  style={{ ...styles.cefrCard, ...(cefrFilter === level ? styles.cefrCardActive : {}) }}
+                  onClick={() => handleSelectCefr(level)}
+                >
+                  <div style={styles.cefrLevel}>{level}</div>
+                  <div style={styles.cefrDesc}>
+                    {level === 'A1' ? 'Beginner' : level === 'A2' ? 'Elementary' : level === 'B1' ? 'Intermediate' : 'Upper Intermediate'}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
 
   if (phase === 'complete') {
     const accuracy = words.length > 0 ? Math.round((score / words.length) * 100) : 0;
@@ -143,7 +285,7 @@ export default function ListeningMode({ langCode = 'uk', onSpeak, ttsEnabled, tt
     <div className="mode-container" style={styles.container}>
       <ModeHeader
         title="Listening Practice"
-        subtitle={`Word ${currentIdx + 1} of ${words.length}`}
+        subtitle={`Word ${currentIdx + 1} of ${words.length}${selectedCategory ? ` · ${selectedCategory.nameEn}` : ''}`}
         icon="👂"
         onExit={onExit}
       />
@@ -256,6 +398,46 @@ const styles = {
   },
   contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
   main: { flex: 1, minWidth: 0 },
+
+  // Picker styles
+  pickerSectionTitle: {
+    textAlign: 'center', fontSize: '1.3rem', fontWeight: '600', color: '#ffd700',
+    marginTop: '1.5rem', marginBottom: '1.5rem',
+    display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap',
+  },
+  pickerCategoryBadge: {
+    fontSize: '0.9rem', background: 'rgba(255,215,0,0.15)', border: '1px solid rgba(255,215,0,0.3)',
+    padding: '0.25rem 0.75rem', borderRadius: '20px', color: '#ffd700', fontWeight: '500',
+  },
+  backStepBtn: {
+    background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)',
+    color: 'rgba(255,255,255,0.7)', padding: '0.5rem 1rem', borderRadius: '10px',
+    cursor: 'pointer', fontSize: '0.9rem', fontFamily: 'inherit', marginTop: '0.5rem',
+  },
+  categoryGrid: {
+    display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
+    gap: '1rem', maxWidth: '900px', margin: '0 auto',
+  },
+  categoryCard: {
+    background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,215,0,0.15)',
+    borderRadius: '16px', padding: '1.25rem 1rem', textAlign: 'center',
+    cursor: 'pointer', transition: 'all 0.2s',
+  },
+  categoryIcon: { fontSize: '2rem', marginBottom: '0.5rem' },
+  categoryName: { fontSize: '1rem', fontWeight: '600', marginBottom: '0.3rem' },
+  categoryMeta: { fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' },
+  categoryDifficulty: { color: '#4dabf7', fontWeight: '600' },
+  cefrGrid: {
+    display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1rem',
+  },
+  cefrCard: {
+    background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,255,255,0.15)',
+    borderRadius: '16px', padding: '1.5rem 2rem', textAlign: 'center',
+    cursor: 'pointer', transition: 'all 0.2s', minWidth: '140px',
+  },
+  cefrCardActive: { border: '2px solid #ffd700', background: 'rgba(255,215,0,0.1)' },
+  cefrLevel: { fontSize: '1.4rem', fontWeight: '700', color: '#ffd700', marginBottom: '0.3rem' },
+  cefrDesc: { fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)' },
   progressBar: {
     width: '100%',
     height: '8px',
