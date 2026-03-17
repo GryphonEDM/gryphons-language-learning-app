@@ -19,6 +19,7 @@ import DialogueMode from './components/modes/DialogueMode.jsx';
 import StoryMode from './components/modes/StoryMode.jsx';
 import ChatMode from './components/modes/ChatMode.jsx';
 import SpeechMode from './components/modes/SpeechMode.jsx';
+import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
 import veryBeginnerStories from './data/stories/very-beginner.json';
@@ -1111,6 +1112,9 @@ export default function UkrainianTypingGame() {
             <span className="stat-icon">🏆</span>
             <span className="stat-value">{bestStreak}</span>
           </div>
+          <button className="header-action-btn" onClick={() => setGameMode('stats')} title="Stats">
+            📊
+          </button>
         </div>
       </header>
 
@@ -1118,24 +1122,6 @@ export default function UkrainianTypingGame() {
       <main className="game-main" ref={mainRef}>
         {gameMode === 'menu' ? (
           <div className="menu-screen">
-            <div className="menu-hero">
-              <div className="quick-stats">
-                <div className="quick-stat">
-                  <span className="qs-value">{totalLettersTyped}</span>
-                  <span className="qs-label">Letters Typed</span>
-                </div>
-                <div className="quick-stat">
-                  <span className="qs-value">{totalWordsCompleted}</span>
-                  <span className="qs-label">Words Completed</span>
-                </div>
-                <div className="quick-stat">
-                  <span className="qs-value">{bestStreak}</span>
-                  <span className="qs-label">Best Streak</span>
-                </div>
-              </div>
-              
-            </div>
-
             {/* Learning Modes */}
             <div className="new-modes-section">
               <h2>🎯 Learning Modes</h2>
@@ -1585,6 +1571,20 @@ export default function UkrainianTypingGame() {
               </ul>
             </div>
           </div>
+        ) : gameMode === 'stats' ? (
+          <StatsPage
+            xp={xp}
+            level={currentPlayerLevel}
+            totalLettersTyped={totalLettersTyped}
+            totalWordsCompleted={totalWordsCompleted}
+            bestStreak={bestStreak}
+            perfectWordsCount={perfectWordsCount}
+            achievements={achievements}
+            modeProgress={modeProgress}
+            vocabularyMastery={vocabularyMastery}
+            langData={langData}
+            onClose={() => setGameMode('menu')}
+          />
         ) : gameMode === 'flashcards' ? (
           <FlashcardMode
             langCode={currentLanguage}
