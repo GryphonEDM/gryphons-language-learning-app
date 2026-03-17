@@ -115,7 +115,9 @@ Your job:
   const retry = useCallback(() => {
     setFeedback(null);
     setLlmFeedback(null);
-  }, []);
+    // Auto-start recording after clearing
+    setTimeout(() => toggleRecord(), 100);
+  }, [toggleRecord]);
 
   const reset = useCallback(() => {
     setFeedback(null);
