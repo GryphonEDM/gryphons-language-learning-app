@@ -2009,6 +2009,11 @@ export default function UkrainianTypingGame() {
           z-index: 5;
         }
 
+        .game-main:has(.chat-root) {
+          padding: 0;
+          height: calc(100vh - 60px);
+        }
+
         /* Menu screen */
         .menu-screen {
           max-width: 1200px;

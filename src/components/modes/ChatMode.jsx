@@ -564,7 +564,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 const styles = {
   root: {
     display: 'flex',
-    height: '100vh',
+    height: '100%',
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
     fontFamily: 'system-ui, -apple-system, sans-serif',
