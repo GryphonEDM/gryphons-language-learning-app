@@ -177,13 +177,22 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
       // Section done — show section-complete or lesson-complete
       if (sectionIdx < selectedLesson.sections.length - 1) {
         playSound('complete', getAudioCtx());
+        // Track section completion
+        setCompletedLessons(prev => {
+          const sections = prev[selectedLesson.lessonId]?.sections || [];
+          if (!sections.includes(sectionIdx)) sections.push(sectionIdx);
+          return { ...prev, [selectedLesson.lessonId]: { ...prev[selectedLesson.lessonId], sections } };
+        });
         setPhase('section-complete');
       } else {
         // Lesson complete
         playSound('achievement', getAudioCtx());
         setPhase('complete');
 
-        setCompletedLessons(prev => ({ ...prev, [selectedLesson.lessonId]: true }));
+        setCompletedLessons(prev => {
+          const allSections = selectedLesson.sections.map((_, i) => i);
+          return { ...prev, [selectedLesson.lessonId]: { done: true, sections: allSections } };
+        });
 
         if (onComplete) {
           onComplete({ mode: 'grammar', lessonId: selectedLesson.lessonId, score, totalExercises, xpEarned });
@@ -223,7 +232,10 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               <div style={styles.grid}>
                 {lessons.map(lesson => {
                   const unlocked = isLessonUnlocked(lesson);
-                  const completed = completedLessons[lesson.lessonId];
+                  const progress = completedLessons[lesson.lessonId];
+                  const completed = progress?.done || (progress === true);
+                  const sectionsCompleted = progress?.sections?.length || (completed ? lesson.sections.length : 0);
+                  const hasProgress = sectionsCompleted > 0 && !completed;
                   return (
                     <div
                       key={lesson.lessonId}
@@ -231,11 +243,14 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                         ...styles.lessonCard,
                         ...(unlocked ? {} : styles.lessonCardLocked),
                         ...(completed ? styles.lessonCardCompleted : {}),
+                        ...(hasProgress ? styles.lessonCardInProgress : {}),
+                        position: 'relative',
                       }}
                       onClick={() => unlocked && startLesson(lesson)}
                     >
+                      {completed && <div style={styles.completedBadge}>✓</div>}
                       <div style={styles.lessonIcon}>
-                        {!unlocked ? '🔒' : completed ? '✅' : lesson.icon}
+                        {!unlocked ? '🔒' : lesson.icon}
                       </div>
                       <div style={styles.lessonInfo}>
                         <h3 style={{ ...styles.lessonTitle, ...(unlocked ? {} : { color: 'rgba(255,255,255,0.3)' }) }}>
@@ -243,7 +258,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                         </h3>
                         <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : lesson.nameUk}</p>
                         <p style={styles.lessonMeta}>
-                          {lesson.sections.length} sections
+                          {sectionsCompleted > 0 ? `${sectionsCompleted}/${lesson.sections.length} sections` : `${lesson.sections.length} sections`}
                           {lesson.estimatedMinutes ? ` · ~${lesson.estimatedMinutes} min` : ''}
                         </p>
                       </div>
@@ -271,7 +286,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             accuracy: totalExercises > 0 ? Math.round((score / totalExercises) * 100) : 0,
           }}
           onRetry={handleRetry}
-          onExit={onExit}
+          onExit={() => setPhase('picker')}
         />
         {bestStreak >= 3 && (
           <div style={styles.streakSummary}>
@@ -545,7 +560,27 @@ const styles = {
     border: '2px solid rgba(255,255,255,0.08)',
   },
   lessonCardCompleted: {
-    border: '2px solid rgba(74,222,128,0.3)',
+    border: '2px solid #4ade80',
+    background: 'rgba(74,222,128,0.08)',
+  },
+  lessonCardInProgress: {
+    border: '2px solid rgba(250,204,21,0.5)',
+  },
+  completedBadge: {
+    position: 'absolute',
+    top: '-6px',
+    right: '-6px',
+    background: '#4ade80',
+    color: '#000',
+    width: '24px',
+    height: '24px',
+    borderRadius: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '0.85rem',
+    fontWeight: '900',
+    boxShadow: '0 2px 6px rgba(74,222,128,0.4)',
   },
   lessonIcon: { fontSize: '2.2rem' },
   lessonInfo: { flex: 1 },
