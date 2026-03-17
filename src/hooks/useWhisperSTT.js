@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 
 export default function useWhisperSTT({ onTranscript }) {
   const [isListening, setIsListening] = useState(false);
@@ -157,6 +157,20 @@ export default function useWhisperSTT({ onTranscript }) {
     if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
       mediaRecorderRef.current.stop();
     }
+  }, [cleanupSilenceDetection]);
+
+  // Release mic on unmount so macOS doesn't keep the orange indicator
+  useEffect(() => {
+    return () => {
+      cleanupSilenceDetection();
+      if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+        mediaRecorderRef.current.stop();
+      }
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach(t => t.stop());
+        streamRef.current = null;
+      }
+    };
   }, [cleanupSilenceDetection]);
 
   return { isListening, isTranscribing, error, startListening, stopListening };
