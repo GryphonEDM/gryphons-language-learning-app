@@ -3,6 +3,8 @@ import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { speakUkrainian } from '../../App.jsx';
+import useSpeechPractice from '../../hooks/useSpeechPractice.js';
+import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
 
 /**
  * Flashcard Mode Component
@@ -36,6 +38,10 @@ export default function FlashcardMode({
   });
   const dict = buildDictionary(langCode);
 
+  // Speech practice integration
+  const [showSpeechPractice, setShowSpeechPractice] = useState(false);
+  const speech = useSpeechPractice({ langCode, langName });
+
   const currentWord = vocabularySet.words[currentIndex];
   const totalWords = vocabularySet.words.length;
   const progress = ((currentIndex + 1) / totalWords) * 100;
@@ -59,6 +65,12 @@ export default function FlashcardMode({
       setReviewQueue(vocabularySet.words.map((_, idx) => idx));
     }
   }, [vocabularySet]);
+
+  // Reset speech practice when card changes
+  useEffect(() => {
+    setShowSpeechPractice(false);
+    speech.reset();
+  }, [currentIndex]);
 
   // Speak English word using Silero en_70 voice
   const speakEnglish = useCallback((text) => {
@@ -121,10 +133,26 @@ export default function FlashcardMode({
     moveToNext();
   };
 
+  const handleToggleSpeechPractice = useCallback((e) => {
+    e.stopPropagation();
+    const newShow = !showSpeechPractice;
+    setShowSpeechPractice(newShow);
+    if (newShow && currentWord) {
+      speech.setTarget(currentWord.uk);
+      speech.retry();
+      // Auto-start recording
+      setTimeout(() => speech.toggleRecord(), 100);
+    } else {
+      speech.reset();
+    }
+  }, [showSpeechPractice, currentWord, speech]);
+
   const moveToNext = () => {
     setIsFlipped(false);
     setSelectedExampleWord(null);
     setAddWordForm(null);
+    setShowSpeechPractice(false);
+    speech.reset();
     setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
 
     if (currentIndex < totalWords - 1) {
@@ -228,33 +256,40 @@ export default function FlashcardMode({
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <div style={styles.progressContainer}>
-        <div style={styles.progressBar}>
-          <div style={{...styles.progressFill, width: `${progress}%`}}></div>
-        </div>
-        <div style={styles.progressText}>
-          {currentIndex + 1} / {totalWords} words
-        </div>
-      </div>
-
-      {/* Session Stats */}
-      <div style={styles.stats}>
-        <div style={styles.statItem}>
-          <span style={styles.statLabel}>Studied:</span>
-          <span style={styles.statValue}>{sessionStats.studied}</span>
-        </div>
-        <div style={styles.statItem}>
-          <span style={styles.statLabel}>Mastered:</span>
-          <span style={styles.statValue}>{sessionStats.mastered}</span>
-        </div>
-        <div style={styles.statItem}>
-          <span style={styles.statLabel}>Review Queue:</span>
-          <span style={styles.statValue}>{reviewQueue.length}</span>
-        </div>
-      </div>
-
       <div className="content-row" style={styles.contentRow}>
+      {/* Left Sidebar - Progress & Stats */}
+      <div style={styles.sidebar}>
+        <div style={styles.sidebarCard}>
+          <div style={styles.sidebarTitle}>Progress</div>
+          <div style={styles.progressContainer}>
+            <div style={styles.progressBar}>
+              <div style={{...styles.progressFill, width: `${progress}%`}}></div>
+            </div>
+            <div style={styles.progressText}>
+              {currentIndex + 1} / {totalWords} words
+            </div>
+          </div>
+
+          <div style={styles.sidebarDivider} />
+
+          <div style={styles.sidebarStats}>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>Studied</span>
+              <span style={styles.statValue}>{sessionStats.studied}</span>
+            </div>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>Mastered</span>
+              <span style={styles.statValue}>{sessionStats.mastered}</span>
+            </div>
+            <div style={styles.statItem}>
+              <span style={styles.statLabel}>Review Queue</span>
+              <span style={styles.statValue}>{reviewQueue.length}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
       <div style={styles.main}>
 
       {/* Flashcard */}
@@ -306,17 +341,35 @@ export default function FlashcardMode({
             🔊 Hear it again
           </button>
           <button
+            style={{...styles.button, ...(showSpeechPractice ? styles.speakButtonActive : styles.speakButton)}}
+            onClick={handleToggleSpeechPractice}
+          >
+            🎤 Speak
+          </button>
+          <button
             style={{...styles.button, ...styles.reviewButton}}
             onClick={(e) => { e.stopPropagation(); handleReviewAgain(); }}
           >
-            📝 Review Again
+            📝 Next Word
           </button>
           <button
             style={{...styles.button, ...styles.knowButton}}
             onClick={(e) => { e.stopPropagation(); handleKnowIt(); }}
           >
-            ✓ Know it!
+            ✓ Mastered it!
           </button>
+        </div>
+      )}
+
+      {/* Inline Speech Practice */}
+      {isFlipped && showSpeechPractice && (
+        <div style={styles.speechPracticeContainer} onClick={e => e.stopPropagation()}>
+          <div style={styles.speechPracticeHeader}>🎙️ Practice saying: <strong>{currentWord.uk}</strong></div>
+          <SpeechPracticeWidget
+            speech={speech}
+            target={currentWord.uk}
+            compact={true}
+          />
         </div>
       )}
 
@@ -469,6 +522,36 @@ const styles = {
     gap: '1.5rem',
     alignItems: 'flex-start',
   },
+  sidebar: {
+    width: '240px',
+    flexShrink: 0,
+  },
+  sidebarCard: {
+    background: 'rgba(0,0,0,0.3)',
+    borderRadius: '16px',
+    padding: '1.25rem',
+    border: '1px solid rgba(255,215,0,0.12)',
+    position: 'sticky',
+    top: '2rem',
+  },
+  sidebarTitle: {
+    fontSize: '0.8rem',
+    textTransform: 'uppercase',
+    letterSpacing: '1.5px',
+    color: 'rgba(255,255,255,0.5)',
+    marginBottom: '1rem',
+    fontWeight: '600',
+  },
+  sidebarDivider: {
+    height: '1px',
+    background: 'rgba(255,255,255,0.08)',
+    margin: '1rem 0',
+  },
+  sidebarStats: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.75rem',
+  },
   main: {
     flex: 1,
     minWidth: 0,
@@ -503,13 +586,13 @@ const styles = {
     fontSize: '0.9rem'
   },
   progressContainer: {
-    marginBottom: '1.5rem'
+    marginBottom: '0'
   },
   progressBar: {
     width: '100%',
-    height: '10px',
+    height: '8px',
     background: 'rgba(255,255,255,0.1)',
-    borderRadius: '5px',
+    borderRadius: '4px',
     overflow: 'hidden',
     marginBottom: '0.5rem'
   },
@@ -520,31 +603,20 @@ const styles = {
   },
   progressText: {
     textAlign: 'center',
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: '0.9rem'
-  },
-  stats: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '2rem',
-    marginBottom: '2rem',
-    padding: '1rem',
-    background: 'rgba(0,0,0,0.2)',
-    borderRadius: '10px'
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: '0.85rem'
   },
   statItem: {
     display: 'flex',
-    flexDirection: 'column',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    gap: '0.25rem'
   },
   statLabel: {
     fontSize: '0.8rem',
-    color: 'rgba(255,255,255,0.6)',
-    textTransform: 'uppercase'
+    color: 'rgba(255,255,255,0.5)',
   },
   statValue: {
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
     fontWeight: 'bold',
     color: '#ffd700'
   },
@@ -819,6 +891,29 @@ const styles = {
   knowButton: {
     background: 'linear-gradient(135deg, #51cf66, #37b24d)',
     color: '#fff'
+  },
+  speakButton: {
+    background: 'linear-gradient(135deg, #845ef7, #7048e8)',
+    color: '#fff'
+  },
+  speakButtonActive: {
+    background: 'linear-gradient(135deg, #e64980, #d6336c)',
+    color: '#fff',
+    boxShadow: '0 4px 16px rgba(230,73,128,0.4)',
+  },
+  speechPracticeContainer: {
+    maxWidth: '600px',
+    margin: '1rem auto 1.5rem',
+    background: 'rgba(0,0,0,0.3)',
+    borderRadius: '16px',
+    padding: '1.25rem 1.5rem',
+    border: '1px solid rgba(132,94,247,0.3)',
+  },
+  speechPracticeHeader: {
+    fontSize: '0.95rem',
+    color: 'rgba(255,255,255,0.7)',
+    marginBottom: '0.75rem',
+    textAlign: 'center',
   },
   flipHint: {
     textAlign: 'center',

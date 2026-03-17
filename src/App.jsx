@@ -1743,6 +1743,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'speech' ? (
           <SpeechMode
             langCode={currentLanguage}
+            vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
