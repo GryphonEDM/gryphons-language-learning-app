@@ -26,7 +26,14 @@ function makeSession(langCode) {
     createdAt: Date.now(),
     displayMessages: [],
     messages: [],
+    tokenUsage: 0,
   };
+}
+
+function formatTokens(n) {
+  if (n >= 10000) return Math.round(n / 1000) + 'k';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return String(n);
 }
 
 function titleFromMessages(displayMessages) {
@@ -73,6 +80,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     const existing = loadSessions();
     if (existing.length > 0) {
       setActiveId(existing[0].id);
+      setTokenUsage(existing[0].tokenUsage || 0);
     } else {
       startNewChat();
     }
@@ -100,7 +108,6 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       .then(res => res.ok ? res.json() : null)
       .then(data => {
         if (!data?.models) return;
-        // Find a loaded model and get its context length
         for (const m of data.models) {
           const loaded = m.loaded_instances?.[0];
           if (loaded?.config?.context_length) {
@@ -113,7 +120,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           }
         }
       })
-      .catch(() => {}); // LM Studio native API not available, bar just won't show
+      .catch(() => {});
   }, []);
 
   function startNewChat() {
@@ -157,6 +164,11 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 
     setError(null);
     stopAll();
+    // Capture session ID so stream updates target the correct session even if user switches
+    const sendSessionId = activeId;
+    const updateSession = (updater) => {
+      setSessions(prev => prev.map(s => s.id === sendSessionId ? updater(s) : s));
+    };
     // bot will land at displayMessages.length + 1 (user at +0, bot at +1)
     const botMsgIdx = (activeSession?.displayMessages?.length ?? 0) + 1;
     const llmContent = fromSTT
@@ -175,7 +187,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       : history;
     const newMessages = [...trimmed, userMsg];
 
-    updateActive(s => ({
+    updateSession(s => ({
       ...s,
       messages: [...s.messages, userMsg],
       displayMessages: [...s.displayMessages, userDisplay],
@@ -203,7 +215,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       if (!res.ok) throw new Error(`LLM request failed (${res.status})`);
 
       // Add an empty bot message to start streaming into
-      updateActive(s => ({
+      updateSession(s => ({
         ...s,
         displayMessages: [...s.displayMessages, { sender: 'bot', text: '' }],
       }));
@@ -231,12 +243,14 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             const chunk = JSON.parse(data);
             // Capture token usage from final chunk
             if (chunk.usage) {
-              setTokenUsage(chunk.usage.total_tokens || 0);
+              const total = chunk.usage.total_tokens || 0;
+              setTokenUsage(total);
+              updateSession(s => ({ ...s, tokenUsage: total }));
             }
             const delta = chunk.choices?.[0]?.delta?.content;
             if (delta) {
               reply += delta;
-              updateActive(s => {
+              updateSession(s => {
                 const msgs = [...s.displayMessages];
                 msgs[msgs.length - 1] = { sender: 'bot', text: reply };
                 return { ...s, displayMessages: msgs };
@@ -251,7 +265,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       // Save partial or complete reply to conversation history
       if (reply) {
         const assistantMsg = { role: 'assistant', content: reply };
-        updateActive(s => ({
+        updateSession(s => ({
           ...s,
           messages: [...s.messages, assistantMsg],
         }));
@@ -355,7 +369,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             <div
               key={s.id}
               style={{ ...styles.sessionItem, ...(s.id === activeId ? styles.sessionItemActive : {}) }}
-              onClick={() => { setActiveId(s.id); setError(null); setTokenUsage(0); }}
+              onClick={() => { setActiveId(s.id); setError(null); setTokenUsage(s.tokenUsage || 0); }}
             >
               <div style={styles.sessionTitle}>{s.title}</div>
               <div style={styles.sessionMeta}>
@@ -385,18 +399,18 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             <span style={styles.topBarSub}>{langName}</span>
           </div>
           <button style={styles.newChatBtnTop} onClick={startNewChat} title="New chat">＋ New</button>
-          {contextLimit && tokenUsage > 0 && (
+          {contextLimit && (
             <div style={styles.contextBar}>
               <div style={styles.contextBarTrack}>
                 <div style={{
                   ...styles.contextBarFill,
-                  width: `${Math.min(100, (tokenUsage / contextLimit) * 100)}%`,
+                  width: `${Math.min(100, Math.max(tokenUsage > 0 ? 1 : 0, (tokenUsage / contextLimit) * 100))}%`,
                   background: tokenUsage / contextLimit > 0.9 ? '#f87171'
                     : tokenUsage / contextLimit > 0.7 ? '#fbbf24' : '#4ade80',
                 }} />
               </div>
               <span style={styles.contextBarLabel}>
-                {Math.round((tokenUsage / contextLimit) * 100)}%
+                {formatTokens(tokenUsage)} / {formatTokens(contextLimit)}
               </span>
             </div>
           )}
