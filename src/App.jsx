@@ -324,6 +324,7 @@ export default function UkrainianTypingGame() {
 
   // Game state
   const [gameMode, setGameMode] = useState('menu');
+  const prevModeRef = useRef(null);
   const [exploreSelectedKey, setExploreSelectedKey] = useState(null);
   const [selectedVocabSet, setSelectedVocabSet] = useState(null);
   const [customFlashcards, setCustomFlashcards] = useState([]);
@@ -432,12 +433,21 @@ export default function UkrainianTypingGame() {
   const saveKeyRef = useRef(null);
   const mainRef = useRef(null);
 
-  // Scroll to content when entering a module, scroll to top when returning to menu
+  // Scroll to content when entering a module, scroll to last mode card when returning to menu
   useEffect(() => {
     if (gameMode !== 'menu') {
+      prevModeRef.current = gameMode;
       mainRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (prevModeRef.current) {
+      // Scroll to the mode card we just exited, centered on screen
+      requestAnimationFrame(() => {
+        // Map modes that share the same menu section
+        const mode = prevModeRef.current === 'words' ? 'letters' : prevModeRef.current;
+        const card = document.querySelector(`[data-mode="${mode}"]`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
     }
   }, [gameMode]);
 
@@ -1114,7 +1124,7 @@ export default function UkrainianTypingGame() {
               </div>
               
               <div className="menu-actions">
-                <button className="explore-button" onClick={() => setGameMode('explore')}>
+                <button className="explore-button" data-mode="explore" onClick={() => setGameMode('explore')}>
                   🔍 Explore Keyboard
                 </button>
                 <button className="setup-button" onClick={() => setShowKeyboardSetup(true)}>
@@ -1128,63 +1138,63 @@ export default function UkrainianTypingGame() {
               <h2>🎯 Learning Modes</h2>
               <p className="section-subtitle">Practice {langData.name} in different ways</p>
               <div className="modes-grid">
-                <div className="mode-card" onClick={() => setGameMode('translator')}>
+                <div className="mode-card" data-mode="translator" onClick={() => setGameMode('translator')}>
                   <div className="mode-icon">📖</div>
                   <div className="mode-info">
                     <h3>Translator</h3>
                     <p>Look up words and phrases</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('listening')}>
+                <div className="mode-card" data-mode="listening" onClick={() => setGameMode('listening')}>
                   <div className="mode-icon">👂</div>
                   <div className="mode-info">
                     <h3>Listening Practice</h3>
                     <p>Hear words and type what you hear</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('translation')}>
+                <div className="mode-card" data-mode="translation" onClick={() => setGameMode('translation')}>
                   <div className="mode-icon">🔄</div>
                   <div className="mode-info">
                     <h3>Translation Practice</h3>
                     <p>Translate words between languages</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('grammar')}>
+                <div className="mode-card" data-mode="grammar" onClick={() => setGameMode('grammar')}>
                   <div className="mode-icon">📐</div>
                   <div className="mode-info">
                     <h3>Grammar Lessons</h3>
                     <p>Cases, verbs, pronouns, and more</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('sentences')}>
+                <div className="mode-card" data-mode="sentences" onClick={() => setGameMode('sentences')}>
                   <div className="mode-icon">🧱</div>
                   <div className="mode-info">
                     <h3>Build Sentences</h3>
                     <p>Arrange words into sentences</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('dialogue')}>
+                <div className="mode-card" data-mode="dialogue" onClick={() => setGameMode('dialogue')}>
                   <div className="mode-icon">💬</div>
                   <div className="mode-info">
                     <h3>Dialogue Practice</h3>
                     <p>Practice real conversations</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('stories')}>
+                <div className="mode-card" data-mode="stories" onClick={() => setGameMode('stories')}>
                   <div className="mode-icon">📚</div>
                   <div className="mode-info">
                     <h3>Story Time</h3>
                     <p>Stories, reading practice & AI-generated content</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('chat')}>
+                <div className="mode-card" data-mode="chat" onClick={() => setGameMode('chat')}>
                   <div className="mode-icon">🤖</div>
                   <div className="mode-info">
                     <h3>Chat Practice</h3>
                     <p>Free conversation with AI tutor</p>
                   </div>
                 </div>
-                <div className="mode-card" onClick={() => setGameMode('speech')}>
+                <div className="mode-card" data-mode="speech" onClick={() => setGameMode('speech')}>
                   <div className="mode-icon">🎙️</div>
                   <div className="mode-info">
                     <h3>Speech Practice</h3>
@@ -1195,7 +1205,7 @@ export default function UkrainianTypingGame() {
             </div>
 
             {/* Alphabet Speed Run Challenge */}
-            <div className="alphabet-challenge-section">
+            <div className="alphabet-challenge-section" data-mode="alphabet">
               <h2>⚡ Mini-Game Challenge</h2>
               <div className="alphabet-challenge-card">
                 <div className="challenge-info">
@@ -1216,7 +1226,7 @@ export default function UkrainianTypingGame() {
             </div>
 
             {/* Vocabulary Flashcards Section */}
-            <div className="vocabulary-section">
+            <div className="vocabulary-section" data-mode="flashcards">
               <h2>📚 Vocabulary Flashcards</h2>
               <p className="section-subtitle">Master 4000+ {langData.name} words across {CURRENT_DICT_SETS.length + CURRENT_VOCAB_THEMES.length} themed categories</p>
 
@@ -1378,7 +1388,7 @@ export default function UkrainianTypingGame() {
               />
             </div>
 
-            <div className="level-grid">
+            <div className="level-grid" data-mode="letters">
               {Object.keys(CURRENT_LESSONS).map(level => (
                 <LevelCard
                   key={level}
