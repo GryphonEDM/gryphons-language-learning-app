@@ -150,12 +150,18 @@ export default function FlashcardMode({
     }
   }, [showSpeechPractice, currentWord, speech]);
 
-  // Scroll to show full results when speech feedback arrives
+  // Scroll to show full results when speech feedback or pronunciation tips arrive
   useEffect(() => {
     if (speech.feedback && speechPracticeRef.current) {
       setTimeout(() => speechPracticeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 100);
     }
   }, [speech.feedback]);
+
+  useEffect(() => {
+    if (speech.llmFeedback && speechPracticeRef.current) {
+      setTimeout(() => speechPracticeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 100);
+    }
+  }, [speech.llmFeedback]);
 
   const moveToNext = () => {
     setIsFlipped(false);
