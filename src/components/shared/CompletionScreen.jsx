@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CompletionScreen({ stats, onRetry, onExit }) {
+export default function CompletionScreen({ stats, onRetry, onExit, exitLabel = 'Back to Menu' }) {
   const { score = 0, total = 0, xpEarned = 0, accuracy = 0, title = 'Session Complete!' } = stats;
 
   return (
@@ -29,7 +29,7 @@ export default function CompletionScreen({ stats, onRetry, onExit }) {
             Try Again
           </button>
           <button style={styles.exitButton} onClick={onExit}>
-            Back to Menu
+            {exitLabel}
           </button>
         </div>
       </div>

@@ -272,7 +272,8 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
             accuracy
           }}
           onRetry={handleRetry}
-          onExit={onExit}
+          onExit={() => setPhase('picker')}
+          exitLabel="Back to List"
         />
       </div>
     );
@@ -287,7 +288,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
         title="Listening Practice"
         subtitle={`Word ${currentIdx + 1} of ${words.length}${selectedCategory ? ` · ${selectedCategory.nameEn}` : ''}`}
         icon="👂"
-        onExit={onExit}
+        onExit={() => setPhase('picker')}
       />
 
       <div className="content-row" style={styles.contentRow}>

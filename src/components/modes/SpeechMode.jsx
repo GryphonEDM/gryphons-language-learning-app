@@ -404,7 +404,8 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
         <CompletionScreen
           stats={{ title: 'Speech Practice Complete!', score, total: items.length, xpEarned, accuracy }}
           onRetry={handleSessionRetry}
-          onExit={onExit}
+          onExit={() => setPhase('picker')}
+          exitLabel="Back to List"
         />
         <div style={styles.extraStats}>
           <div style={styles.extraStat}>
@@ -434,7 +435,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
         title="Speech Practice"
         subtitle={`${diffLabel} ${currentIdx + 1} of ${items.length}${selectedCategory ? ` · ${selectedCategory.nameEn}` : ''}`}
         icon="🎙️"
-        onExit={onExit}
+        onExit={() => setPhase('picker')}
       />
 
       <div className="content-row" style={styles.playContentRow}>

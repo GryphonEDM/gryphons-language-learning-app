@@ -547,7 +547,8 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         <CompletionScreen
           stats={{ title: 'Sentence Building Complete!', score, total: sentences.length, xpEarned, accuracy }}
           onRetry={handleRetry}
-          onExit={onExit}
+          onExit={() => setPhase('pick-difficulty')}
+          exitLabel="Back to List"
         />
       </div>
     );
@@ -561,7 +562,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         title="Build Sentences"
         subtitle={`Sentence ${currentIdx + 1} of ${sentences.length}${selectedDifficulty ? ` · ${selectedDifficulty}` : ''}${isAiSession ? ' · AI' : ''}`}
         icon="🧱"
-        onExit={onExit}
+        onExit={() => setPhase('pick-difficulty')}
       />
 
       <div className="content-row" style={styles.contentRow}>
