@@ -18,6 +18,7 @@ import DialogueMode from './components/modes/DialogueMode.jsx';
 // ReadingMode merged into StoryMode
 import StoryMode from './components/modes/StoryMode.jsx';
 import ChatMode from './components/modes/ChatMode.jsx';
+import SpeechMode from './components/modes/SpeechMode.jsx';
 
 // Import story data
 import veryBeginnerStories from './data/stories/very-beginner.json';
@@ -1173,6 +1174,13 @@ export default function UkrainianTypingGame() {
                     <p>Free conversation with AI tutor</p>
                   </div>
                 </div>
+                <div className="mode-card" onClick={() => setGameMode('speech')}>
+                  <div className="mode-icon">🎙️</div>
+                  <div className="mode-info">
+                    <h3>Speech Practice</h3>
+                    <p>Practice pronunciation with voice recognition</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -1731,6 +1739,25 @@ export default function UkrainianTypingGame() {
             ttsVolume={ttsVolume}
             onExit={() => setGameMode('menu')}
             onAddXP={(amount) => setXp(prev => prev + amount)}
+          />
+        ) : gameMode === 'speech' ? (
+          <SpeechMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[Speech] Session complete:', stats);
+              setGameMode('menu');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={(mode, data) => {
+              setModeProgress(prev => ({
+                ...prev,
+                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
+              }));
+            }}
           />
         ) : (
           <div className="practice-screen">
