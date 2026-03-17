@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import { translatePhraseWithLLM } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import useWhisperSTT from '../../hooks/useWhisperSTT.js';
 
 export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
@@ -18,6 +19,23 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   const [suggestions, setSuggestions] = useState([]);
   const debounceRef = useRef(null);
   const dict = buildDictionary(langCode);
+
+  const handleTranscript = useCallback((text) => {
+    setInputText(text);
+  }, []);
+
+  const { isListening, isTranscribing, error: sttError, startListening, stopListening } = useWhisperSTT({
+    onTranscript: handleTranscript,
+  });
+
+  const toggleMic = () => {
+    if (isListening) {
+      stopListening();
+    } else {
+      const lang = direction === 'en-uk' ? 'en' : langCode;
+      startListening(lang);
+    }
+  };
 
   useEffect(() => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -139,6 +157,8 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         onExit={onExit}
       />
 
+      <div className="content-row" style={styles.contentRow}>
+        <div style={styles.main}>
       <div style={styles.directionToggle}>
         <span style={styles.langLabel}>{fromLabel}</span>
         <button style={styles.swapBtn} onClick={toggleDirection}>⇄</button>
@@ -156,8 +176,6 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         >📚 Dictionary</button>
       </div>
 
-      <div className="content-row" style={styles.contentRow}>
-        <div style={styles.main}>
       <div style={styles.translatorBody}>
         <div style={styles.panel}>
           <label style={styles.panelLabel}>{fromLabel}</label>
@@ -168,6 +186,21 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
             placeholder={`Type ${fromLabel.toLowerCase()} word or phrase...`}
             rows={4}
           />
+          <div style={styles.micRow}>
+            <button
+              style={{
+                ...styles.micBtn,
+                ...(isListening ? styles.micBtnActive : {}),
+                ...(isTranscribing ? styles.micBtnTranscribing : {})
+              }}
+              onClick={toggleMic}
+              disabled={isTranscribing}
+              title={isListening ? 'Stop recording' : `Speak in ${direction === 'en-uk' ? 'English' : langName}`}
+            >
+              {isTranscribing ? '...' : '🎤'} {direction === 'en-uk' ? 'EN' : (langCode === 'ru' ? 'RU' : 'UA')}
+            </button>
+            {sttError && <span style={styles.sttError}>{sttError}</span>}
+          </div>
         </div>
 
         <div style={styles.panel}>
@@ -401,5 +434,36 @@ const styles = {
   statItem: {
     fontSize: '0.9rem',
     color: 'rgba(255,255,255,0.7)'
-  }
+  },
+  micRow: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    marginTop: '0.75rem',
+  },
+  micBtn: {
+    background: 'linear-gradient(135deg, #4dabf7, #339af0)',
+    border: 'none',
+    color: '#fff',
+    padding: '0.5rem 1.2rem',
+    borderRadius: '24px',
+    cursor: 'pointer',
+    fontSize: '0.95rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
+    whiteSpace: 'nowrap',
+  },
+  micBtnActive: {
+    background: 'linear-gradient(135deg, #f87171, #ef4444)',
+    animation: 'micPulse 1.5s infinite',
+  },
+  micBtnTranscribing: {
+    opacity: 0.5,
+    cursor: 'wait',
+  },
+  sttError: {
+    fontSize: '0.8rem',
+    color: '#f87171',
+  },
 };
