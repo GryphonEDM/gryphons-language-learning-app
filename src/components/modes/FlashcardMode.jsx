@@ -508,6 +508,7 @@ export default function FlashcardMode({
             speech={speech}
             target={currentWord.uk}
             compact={true}
+            onSpeakTips={(text) => speakUkrainian(text, 0.8, 0.8, 'en')}
           />
         </div>
       )}

@@ -14,7 +14,7 @@ import React from 'react';
  * @param {Function} [props.onNext] - next callback
  * @param {string} [props.nextLabel] - label for next button
  */
-export default function SpeechPracticeWidget({ speech, target, compact = false, showRetryNext = false, onRetry, onNext, nextLabel = 'Next' }) {
+export default function SpeechPracticeWidget({ speech, target, compact = false, showRetryNext = false, onRetry, onNext, nextLabel = 'Next', onSpeakTips }) {
   const s = compact ? compactStyles : fullStyles;
   const diffColors = { correct: '#4ade80', wrong: '#f87171', missing: '#fbbf24', extra: '#f87171' };
   const matchColors = { correct: '#4ade80', close: '#fbbf24', miss: '#f87171' };
@@ -96,7 +96,18 @@ export default function SpeechPracticeWidget({ speech, target, compact = false, 
           )}
           {speech.llmFeedback && (
             <div style={s.tipsBox}>
-              <div style={s.tipsHeader}>💡 Pronunciation Coach</div>
+              <div style={s.tipsHeader}>
+                💡 Pronunciation Coach
+                {onSpeakTips && (
+                  <button
+                    style={s.speakTipsBtn}
+                    onClick={() => onSpeakTips(speech.llmFeedback)}
+                    title="Listen to tips"
+                  >
+                    🔊
+                  </button>
+                )}
+              </div>
               <div style={s.tipsText}>{speech.llmFeedback}</div>
             </div>
           )}
@@ -196,6 +207,19 @@ const sharedStyles = {
     color: '#ffd700',
     marginBottom: '0.5rem',
     fontSize: '0.95rem',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+  },
+  speakTipsBtn: {
+    background: 'none',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '1rem',
+    padding: '0.1rem 0.3rem',
+    borderRadius: '6px',
+    opacity: 0.7,
+    transition: 'opacity 0.2s',
   },
   tipsText: {
     color: 'rgba(255,255,255,0.85)',

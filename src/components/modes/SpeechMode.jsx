@@ -8,6 +8,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import useSpeechPractice from '../../hooks/useSpeechPractice.js';
 import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
+import { speakUkrainian } from '../../App.jsx';
 import { cefrMatches } from '../../utils/speechUtils.js';
 
 // --- Helpers ---
@@ -482,6 +483,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
               onRetry={handleRetry}
               onNext={handleNext}
               nextLabel={currentIdx < items.length - 1 ? 'Next →' : 'Finish'}
+              onSpeakTips={(text) => speakUkrainian(text, 0.8, ttsVolume, 'en')}
             />
           </div>
 
