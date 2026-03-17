@@ -9,7 +9,7 @@ export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, t
   const pendingRef = useRef(null);
 
   const lookupWord = useCallback((word) => {
-    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
+    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '');
     if (!cleaned) return null;
     // Check user dictionary first
     const userTranslation = lookupUserDict(cleaned);
@@ -24,7 +24,7 @@ export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, t
   }, [dict]);
 
   const handleWordClick = useCallback((e, word, contextSentence = '') => {
-    const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
+    const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').trim();
     if (!cleaned) return;
     const translation = lookupWord(cleaned);
     const rect = e.target.getBoundingClientRect();

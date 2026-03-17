@@ -3,8 +3,10 @@ import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
+import { stopSpeaking } from '../../App.jsx';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import SpeechPracticeModal from '../shared/SpeechPracticeModal.jsx';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -57,6 +59,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
   // Reading state
   const [selectedWord, setSelectedWord] = useState(null);
   const [wordAddForm, setWordAddForm] = useState(null);
+  const [showPractice, setShowPractice] = useState(null);
   const [showEnglish, setShowEnglish] = useState(false);
   const [isReading, setIsReading] = useState(false);
   const [highlightRange, setHighlightRange] = useState({ start: -1, end: -1 });
@@ -114,7 +117,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
     readingRef.current = true;
     setIsReading(true);
 
-    const sentences = text.split(/(?<=[.!?])\s+/);
+    const sentences = text.split(/(?<=[.!?;,])\s+/);
     let wordOffset = 0;
 
     for (const sentence of sentences) {
@@ -150,6 +153,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
 
   const handleStop = useCallback(() => {
     stopRef.current = true;
+    stopSpeaking();
     setIsReading(false);
     setHighlightRange({ start: -1, end: -1 });
   }, []);
@@ -734,7 +738,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
               <span>XP: +{xpEarned}</span>
             </div>
           </div>
-          <LessonChat {...chat} />
+          <LessonChat {...chat} onSpeak={onSpeak} />
         </div>
       </div>
     );
@@ -922,12 +926,20 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
                   </div>
                 </div>
               )}
-              <button
-                style={styles.wordPanelSpeak}
-                onClick={() => ttsEnabled && onSpeak && onSpeak(selectedWord.word, 0.7, ttsVolume)}
-              >
-                Hear again
-              </button>
+              <div style={styles.wordPanelActions}>
+                <button
+                  style={styles.wordPanelSpeak}
+                  onClick={() => ttsEnabled && onSpeak && onSpeak(selectedWord.word, 0.7, ttsVolume)}
+                >
+                  🔊 Hear again
+                </button>
+                <button
+                  style={styles.wordPanelPractice}
+                  onClick={() => setShowPractice(selectedWord.word)}
+                >
+                  🎤 Practice
+                </button>
+              </div>
             </div>
           )}
 
@@ -952,8 +964,17 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
             Click a word to hear it & see its meaning. Double-click to read from that word onward.
           </div>
         </div>
-        <LessonChat {...chat} />
+        <LessonChat {...chat} onSpeak={onSpeak} />
       </div>
+      {showPractice && (
+        <SpeechPracticeModal
+          word={showPractice}
+          langCode={langCode}
+          langName={langName}
+          onClose={() => setShowPractice(null)}
+          onSpeak={onSpeak}
+        />
+      )}
     </div>
   );
 }
@@ -1422,6 +1443,11 @@ const styles = {
     fontWeight: '700',
     fontFamily: 'inherit',
   },
+  wordPanelActions: {
+    display: 'flex',
+    gap: '0.5rem',
+    marginTop: '0.5rem',
+  },
   wordPanelSpeak: {
     background: 'linear-gradient(135deg, #4dabf7, #339af0)',
     border: 'none',
@@ -1432,7 +1458,17 @@ const styles = {
     fontSize: '0.85rem',
     fontWeight: '600',
     fontFamily: 'inherit',
-    marginLeft: 'auto'
+  },
+  wordPanelPractice: {
+    background: 'rgba(77,171,247,0.12)',
+    border: '1px solid rgba(77,171,247,0.3)',
+    color: '#4dabf7',
+    padding: '0.4rem 1rem',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    fontSize: '0.85rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
   },
 
   // English section

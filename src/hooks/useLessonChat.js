@@ -103,13 +103,14 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     if (!ttsEnabled || !onSpeak) return;
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
-    const sentences = text.split(/(?<=[.!?])\s+/);
+    // Split on sentence boundaries and commas/semicolons for more responsive stopping
+    const chunks = text.split(/(?<=[.!?;,])\s+/);
     let wordOffset = 0;
-    for (const sentence of sentences) {
+    for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;
-      const words = sentence.split(/\s+/).filter(Boolean);
+      const words = chunk.split(/\s+/).filter(Boolean);
       setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
-      try { await onSpeak(sentence, 0.8, ttsVolume); } catch {}
+      try { await onSpeak(chunk, 0.8, ttsVolume); } catch {}
       wordOffset += words.length;
       if (!ttsSpeakingRef.current) break;
     }
@@ -201,9 +202,9 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
 
   const stopTts = useCallback(() => {
     ttsSpeakingRef.current = false;
-    stopSpeaking();
     setIsSpeaking(false);
     setTtsHighlight(null);
+    stopSpeaking();
   }, []);
 
   return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode };

@@ -5,9 +5,12 @@ import { translatePhraseWithLLM } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
+import { useWordClick } from '../../hooks/useWordClick.js';
+import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 
 export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
@@ -216,7 +219,9 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
             {isLoading ? (
               <span style={styles.loading}>Translating...</span>
             ) : outputText ? (
-              <span style={styles.outputText}>{outputText}</span>
+              <span style={styles.outputText}>
+                <ClickableText text={outputText} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+              </span>
             ) : suggestions.length > 0 ? (
               <div style={styles.suggestionsArea}>
                 <span style={styles.suggestLabel}>Did you mean:</span>
@@ -242,8 +247,9 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
             <span style={styles.statItem}>TTS Used: {speakCount}</span>
           </div>
         </div>
-        <LessonChat {...chat} />
+        <LessonChat {...chat} onSpeak={onSpeak} />
       </div>
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
     </div>
   );
 }

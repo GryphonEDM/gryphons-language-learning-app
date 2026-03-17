@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
+import SpeechPracticeModal from './SpeechPracticeModal.jsx';
 
 /**
  * Popup toolbar shown when a word is clicked.
  * Handles add-to-dictionary via LLM translation internally.
  */
-export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsVolume, langName = 'Ukrainian' }) {
+export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsVolume, langName = 'Ukrainian', langCode = 'uk' }) {
   const [addForm, setAddForm] = useState(null); // null | { en: string, translating: boolean }
+  const [showPractice, setShowPractice] = useState(false);
 
-  // Reset form whenever a new word is selected
-  useEffect(() => { setAddForm(null); }, [selectedWord?.word]);
+  // Reset form and practice modal whenever a new word is selected
+  useEffect(() => { setAddForm(null); setShowPractice(false); }, [selectedWord?.word]);
 
   if (!selectedWord) return null;
 
@@ -45,6 +47,9 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
               <button style={styles.btn} onClick={() => { if (ttsEnabled && onSpeak) onSpeak(selectedWord.word, 0.7, ttsVolume); }}>
                 🔊 Listen
               </button>
+              <button style={{ ...styles.btn, ...styles.practiceBtn }} onClick={() => setShowPractice(true)}>
+                🎤 Practice
+              </button>
               {!selectedWord.translation && (
                 <button style={{ ...styles.btn, ...styles.addBtn }} onClick={handleAddClick}>
                   + Add to dictionary
@@ -79,6 +84,15 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
           </div>
         )}
       </div>
+      {showPractice && (
+        <SpeechPracticeModal
+          word={selectedWord.word}
+          langCode={langCode}
+          langName={langName}
+          onClose={() => setShowPractice(false)}
+          onSpeak={onSpeak}
+        />
+      )}
     </>
   );
 }
@@ -92,7 +106,7 @@ export function ClickableText({ text = '', onWordClick, activeWord = null, style
     <span style={style}>
       {tokens.map((token, i) => {
         if (/^\s+$/.test(token)) return token;
-        const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').toLowerCase();
+        const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').toLowerCase();
         const isActive = activeWord && activeWord === cleaned;
         return (
           <span
@@ -173,6 +187,11 @@ const styles = {
     cursor: 'pointer',
     fontSize: '0.82rem',
     fontFamily: 'inherit',
+  },
+  practiceBtn: {
+    background: 'rgba(77,171,247,0.12)',
+    border: '1px solid rgba(77,171,247,0.3)',
+    color: '#4dabf7',
   },
   addBtn: {
     background: 'rgba(255,215,0,0.12)',

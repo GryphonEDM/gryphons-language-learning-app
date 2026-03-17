@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
-import { buildDictionary } from '../../utils/dictionaryBuilder.js';
-import { lookupUserDict, saveToUserDict, translateWithLLM } from '../../utils/userDictionary.js';
 import { stopSpeaking } from '../../App.jsx';
+import { useWordClick } from '../../hooks/useWordClick.js';
+import { WordToolbar } from '../shared/WordToolbar.jsx';
 
 const STORAGE_KEY = 'chat_practice_sessions';
 
@@ -37,7 +37,8 @@ function titleFromMessages(displayMessages) {
 
 export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const dict = buildDictionary(langCode);
+
+  const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
 
   const [sessions, setSessions] = useState(() => loadSessions());
   const [activeId, setActiveId] = useState(null);
@@ -46,8 +47,6 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [llmConnected, setLlmConnected] = useState(null);
   const [error, setError] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth > 768);
-  const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
-  const [wordAddForm, setWordAddForm] = useState(null); // null | { en, translating }
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
   const [isSpeaking, setIsSpeaking] = useState(false);
   const ttsSpeakingRef = useRef(false);
@@ -56,65 +55,6 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const inputRef = useRef(null);
   const sendRef = useRef(null);
   const rootRef = useRef(null);
-
-  const lookupWord = useCallback((word) => {
-    const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '');
-    if (!cleaned) return null;
-    const userHit = lookupUserDict(cleaned);
-    if (userHit) return userHit;
-    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
-    for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
-      const prefix = cleaned.slice(0, i);
-      if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
-    }
-    return null;
-  }, [dict]);
-
-  const wordPendingRef = useRef(null);
-
-  const handleWordClick = useCallback((e, word, contextSentence = '') => {
-    const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').trim();
-    if (!cleaned) return;
-    const translation = lookupWord(cleaned);
-    const rect = e.target.getBoundingClientRect();
-    setSelectedWord({ word: cleaned, translation, rect, contextSentence });
-    setWordAddForm(null);
-    if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
-
-    // Auto-translate with LLM and save to dictionary if no translation found
-    if (!translation) {
-      const requestId = Date.now();
-      wordPendingRef.current = requestId;
-      translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
-        if (llmTranslation && wordPendingRef.current === requestId) {
-          saveToUserDict(cleaned, llmTranslation);
-          setSelectedWord(prev =>
-            prev && prev.word === cleaned
-              ? { ...prev, translation: llmTranslation }
-              : prev
-          );
-        }
-      });
-    }
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, langName]);
-
-  const dismissWord = useCallback(() => { setSelectedWord(null); setWordAddForm(null); }, []);
-
-  // Reset add form when selected word changes
-  useEffect(() => { setWordAddForm(null); }, [selectedWord?.word]);
-
-  const handleAddToDict = useCallback(() => {
-    setWordAddForm({ en: '', translating: true });
-    translateWithLLM(selectedWord.word, langName, selectedWord.contextSentence || '').then(translation => {
-      setWordAddForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
-    });
-  }, [selectedWord, langName]);
-
-  const handleSaveToDict = useCallback(() => {
-    if (!wordAddForm?.en.trim() || !selectedWord) return;
-    saveToUserDict(selectedWord.word, wordAddForm.en);
-    dismissWord();
-  }, [wordAddForm, selectedWord, dismissWord]);
 
   const systemPrompt = `You are a friendly ${langName} language tutor having a conversation with a student.
 - Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary.
@@ -334,13 +274,13 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     setTtsHighlight(null);
-    const sentences = text.split(/(?<=[.!?])\s+/);
+    const chunks = text.split(/(?<=[.!?;,])\s+/);
     let wordOffset = 0;
-    for (const sentence of sentences) {
+    for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;
-      const words = sentence.split(/\s+/).filter(Boolean);
+      const words = chunk.split(/\s+/).filter(Boolean);
       setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
-      try { await onSpeak(sentence, 0.8, ttsVolume); } catch {}
+      try { await onSpeak(chunk, 0.8, ttsVolume); } catch {}
       wordOffset += words.length;
       if (!ttsSpeakingRef.current) break;
     }
@@ -513,61 +453,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         </div>
       </div>
 
-      {/* Word toolbar popup */}
-      {selectedWord && (
-        <div
-          style={{
-            ...styles.wordToolbar,
-            top: selectedWord.rect.bottom + 8,
-            left: Math.max(10, Math.min(selectedWord.rect.left, window.innerWidth - 300)),
-          }}
-        >
-          <button style={styles.wordToolbarClose} onClick={dismissWord}>✕</button>
-          <div style={styles.wordToolbarWord}>{selectedWord.word}</div>
-          {!wordAddForm ? (
-            <>
-              <div style={styles.wordToolbarTranslation}>
-                {selectedWord.translation || <span style={{ color: 'rgba(255,255,255,0.4)' }}>No translation found</span>}
-              </div>
-              <div style={styles.wordToolbarActions}>
-                <button style={styles.wordToolbarBtn} onClick={() => { if (ttsEnabled && onSpeak) onSpeak(selectedWord.word, 0.7, ttsVolume); }}>
-                  🔊 Listen
-                </button>
-                {!selectedWord.translation && (
-                  <button style={{ ...styles.wordToolbarBtn, ...styles.wordToolbarAddBtn }} onClick={handleAddToDict}>
-                    + Add to dictionary
-                  </button>
-                )}
-              </div>
-            </>
-          ) : (
-            <div style={styles.wordToolbarAddForm}>
-              <div style={styles.wordToolbarAddLabel}>
-                English meaning
-                {wordAddForm.translating && <span style={styles.wordToolbarTranslatingHint}> translating…</span>}
-              </div>
-              <input
-                style={{ ...styles.wordToolbarInput, ...(wordAddForm.translating ? { opacity: 0.5 } : {}) }}
-                value={wordAddForm.en}
-                onChange={e => setWordAddForm(prev => ({ ...prev, en: e.target.value }))}
-                placeholder={wordAddForm.translating ? 'Getting translation…' : 'Enter translation...'}
-                disabled={wordAddForm.translating}
-                autoFocus={!wordAddForm.translating}
-                onKeyDown={e => { if (e.key === 'Enter') handleSaveToDict(); if (e.key === 'Escape') setWordAddForm(null); }}
-              />
-              <div style={styles.wordToolbarAddActions}>
-                <button style={styles.wordToolbarCancelBtn} onClick={() => setWordAddForm(null)}>Cancel</button>
-                <button style={styles.wordToolbarSaveBtn} onClick={handleSaveToDict} disabled={wordAddForm.translating || !wordAddForm.en.trim()}>
-                  Save
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Click-outside to dismiss word toolbar */}
-      {selectedWord && <div style={styles.wordToolbarBackdrop} onClick={dismissWord} />}
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
 
       {/* Snap-to-view floating button */}
       <button style={styles.snapBtn} onClick={snapIntoView} title="Snap chat into view">⌖</button>
@@ -952,119 +838,6 @@ const styles = {
   clickableWordTts: {
     background: 'rgba(77,171,247,0.3)',
     color: '#4dabf7',
-  },
-  wordToolbarBackdrop: {
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: 1000,
-  },
-  wordToolbar: {
-    position: 'fixed',
-    zIndex: 1001,
-    background: '#1e293b',
-    border: '1px solid rgba(255,215,0,0.3)',
-    borderRadius: '12px',
-    padding: '0.75rem 1rem',
-    minWidth: '200px',
-    maxWidth: '280px',
-    boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
-  },
-  wordToolbarClose: {
-    position: 'absolute',
-    top: '0.4rem',
-    right: '0.5rem',
-    background: 'none',
-    border: 'none',
-    color: 'rgba(255,255,255,0.4)',
-    cursor: 'pointer',
-    fontSize: '0.8rem',
-    padding: '2px',
-  },
-  wordToolbarWord: {
-    fontSize: '1.2rem',
-    fontWeight: '700',
-    color: '#ffd700',
-    marginBottom: '0.3rem',
-  },
-  wordToolbarTranslation: {
-    fontSize: '0.95rem',
-    color: 'rgba(255,255,255,0.75)',
-    fontStyle: 'italic',
-    marginBottom: '0.5rem',
-  },
-  wordToolbarActions: {
-    display: 'flex',
-    gap: '0.4rem',
-    flexWrap: 'wrap',
-  },
-  wordToolbarBtn: {
-    background: 'rgba(255,255,255,0.08)',
-    border: '1px solid rgba(255,255,255,0.15)',
-    borderRadius: '8px',
-    color: '#fff',
-    padding: '0.35rem 0.65rem',
-    cursor: 'pointer',
-    fontSize: '0.82rem',
-    fontFamily: 'inherit',
-  },
-  wordToolbarAddBtn: {
-    background: 'rgba(255,215,0,0.12)',
-    border: '1px solid rgba(255,215,0,0.3)',
-    color: '#ffd700',
-  },
-  wordToolbarAddForm: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.4rem',
-  },
-  wordToolbarAddLabel: {
-    fontSize: '0.75rem',
-    color: 'rgba(255,255,255,0.5)',
-  },
-  wordToolbarTranslatingHint: {
-    color: '#4dabf7',
-    fontStyle: 'italic',
-  },
-  wordToolbarInput: {
-    background: 'rgba(255,255,255,0.08)',
-    border: '1px solid rgba(255,255,255,0.2)',
-    borderRadius: '7px',
-    color: '#fff',
-    padding: '0.4rem 0.6rem',
-    fontSize: '0.9rem',
-    fontFamily: 'inherit',
-    outline: 'none',
-    width: '100%',
-    boxSizing: 'border-box',
-  },
-  wordToolbarAddActions: {
-    display: 'flex',
-    gap: '0.4rem',
-    justifyContent: 'flex-end',
-  },
-  wordToolbarCancelBtn: {
-    background: 'rgba(255,255,255,0.06)',
-    border: 'none',
-    borderRadius: '7px',
-    color: 'rgba(255,255,255,0.5)',
-    padding: '0.3rem 0.6rem',
-    cursor: 'pointer',
-    fontSize: '0.8rem',
-    fontFamily: 'inherit',
-  },
-  wordToolbarSaveBtn: {
-    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
-    border: 'none',
-    borderRadius: '7px',
-    color: '#1a1a2e',
-    padding: '0.3rem 0.7rem',
-    cursor: 'pointer',
-    fontSize: '0.8rem',
-    fontWeight: '700',
-    fontFamily: 'inherit',
   },
   snapBtn: {
     position: 'fixed',

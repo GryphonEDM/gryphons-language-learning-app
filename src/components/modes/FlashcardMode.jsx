@@ -523,7 +523,7 @@ export default function FlashcardMode({
         </div>
       )}
       </div>
-      <LessonChat {...chat} />
+      <LessonChat {...chat} onSpeak={onSpeak} />
       </div>{/* end contentRow */}
     </div>
   );

@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SpeechPracticeModal from './SpeechPracticeModal.jsx';
 
 /**
  * Always-visible inline chat panel for learning modes.
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode, onSpeak }) {
   const targetLabel = langCode === 'ru' ? 'RU' : langCode === 'uk' ? 'UA' : 'EN';
+  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const [showPractice, setShowPractice] = useState(null); // null or word string
   return (
     <div className="lesson-chat-panel" style={styles.panel}>
       <div style={styles.header}>
@@ -84,13 +87,19 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
             <button style={styles.wordPanelClose} onClick={dismissChatWord}>✕</button>
           </div>
           {chatSelectedWord.translation ? (
-            <div style={styles.wordPanelTranslation}>= "{chatSelectedWord.translation}"</div>
+            <>
+              <div style={styles.wordPanelTranslation}>= "{chatSelectedWord.translation}"</div>
+              <button style={styles.wordPanelPracticeBtn} onClick={() => setShowPractice(chatSelectedWord.word)}>🎤 Practice</button>
+            </>
           ) : !chatAddForm ? (
             <>
               <div style={styles.wordPanelNoResult}>No translation found</div>
-              {handleChatAddToDict && (
-                <button style={styles.wordPanelAddBtn} onClick={handleChatAddToDict}>+ Add to dictionary</button>
-              )}
+              <div style={styles.wordPanelActions}>
+                {handleChatAddToDict && (
+                  <button style={styles.wordPanelAddBtn} onClick={handleChatAddToDict}>+ Add to dictionary</button>
+                )}
+                <button style={styles.wordPanelPracticeBtn} onClick={() => setShowPractice(chatSelectedWord.word)}>🎤 Practice</button>
+              </div>
             </>
           ) : (
             <div style={styles.addForm}>
@@ -155,6 +164,16 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
           <button style={styles.sendBtn} onClick={send} disabled={loading}>→</button>
         </div>
       </div>
+
+      {showPractice && (
+        <SpeechPracticeModal
+          word={showPractice}
+          langCode={langCode}
+          langName={langName}
+          onClose={() => setShowPractice(null)}
+          onSpeak={onSpeak}
+        />
+      )}
 
       <style>{`
         @keyframes lessonDotPulse {
@@ -297,6 +316,12 @@ const styles = {
     fontStyle: 'italic',
     marginBottom: '0.3rem',
   },
+  wordPanelActions: {
+    display: 'flex',
+    gap: '0.3rem',
+    flexWrap: 'wrap',
+    marginTop: '0.2rem',
+  },
   wordPanelAddBtn: {
     background: 'rgba(255,215,0,0.12)',
     border: '1px solid rgba(255,215,0,0.3)',
@@ -307,6 +332,18 @@ const styles = {
     fontSize: '0.78rem',
     fontWeight: '600',
     fontFamily: 'inherit',
+  },
+  wordPanelPracticeBtn: {
+    background: 'rgba(77,171,247,0.12)',
+    border: '1px solid rgba(77,171,247,0.3)',
+    color: '#4dabf7',
+    padding: '0.25rem 0.6rem',
+    borderRadius: '15px',
+    cursor: 'pointer',
+    fontSize: '0.78rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+    marginTop: '0.3rem',
   },
   addForm: {
     display: 'flex',

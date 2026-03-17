@@ -410,9 +410,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               Practice Exercises →
             </button>
           </div>
-          <LessonChat {...chat} />
+          <LessonChat {...chat} onSpeak={onSpeak} />
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
       </div>
     );
   }
@@ -491,9 +491,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
               </div>
             )}
           </div>
-          <LessonChat {...chat} />
+          <LessonChat {...chat} onSpeak={onSpeak} />
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
       </div>
     );
   }

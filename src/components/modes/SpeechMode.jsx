@@ -515,9 +515,9 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
           </div>
         </div>
 
-        <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+        <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
     </div>
   );
 }
