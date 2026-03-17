@@ -201,7 +201,7 @@ export default function FlashcardMode({
 
   const handlePronounce = () => {
     if (ttsEnabled && onSpeak) {
-      onSpeak(currentWord.uk, 0.8, ttsVolume);
+      onSpeak(currentWord[langCode] || currentWord.uk, 0.8, ttsVolume);
     }
   };
 
@@ -209,12 +209,12 @@ export default function FlashcardMode({
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""()—–\-…'ʼ]/g, '');
     if (!cleaned) return null;
     if (userDict[cleaned]) return userDict[cleaned];
-    const translation = dict.ukToEn[cleaned];
+    const translation = dict.targetToEn[cleaned];
     if (translation) return translation;
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
       const prefix = cleaned.slice(0, i);
       if (userDict[prefix]) return userDict[prefix];
-      if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
+      if (dict.targetToEn[prefix]) return dict.targetToEn[prefix];
     }
     return null;
   }, [dict, userDict]);

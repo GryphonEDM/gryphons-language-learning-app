@@ -44,9 +44,9 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     if (!cleaned) return null;
     const userHit = lookupUserDict(cleaned);
     if (userHit) return userHit;
-    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
+    if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
-      if (dict.ukToEn[cleaned.slice(0, i)]) return dict.ukToEn[cleaned.slice(0, i)];
+      if (dict.targetToEn[cleaned.slice(0, i)]) return dict.targetToEn[cleaned.slice(0, i)];
     }
     return null;
   }, [dict]);

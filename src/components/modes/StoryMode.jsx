@@ -96,10 +96,10 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
     if (!cleaned) return null;
     const userHit = lookupUserDict(cleaned);
     if (userHit) return userHit;
-    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
+    if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
       const prefix = cleaned.slice(0, i);
-      if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
+      if (dict.targetToEn[prefix]) return dict.targetToEn[prefix];
     }
     return null;
   }, [dict]);

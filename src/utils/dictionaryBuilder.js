@@ -135,8 +135,12 @@ export function buildDictionary(langCode = 'uk') {
     });
   }
 
-  // Use generic key names
-  const result = { ukToEn: targetToEn, enToUk: enToTarget };
+  const result = {
+    targetToEn,   // generic: target language → English
+    enToTarget,   // generic: English → target language
+    ukToEn: targetToEn,  // backward compat alias
+    enToUk: enToTarget,  // backward compat alias
+  };
   if (!cache[langCode]) cache[langCode] = {};
   cache[langCode].dictionary = result;
   return result;

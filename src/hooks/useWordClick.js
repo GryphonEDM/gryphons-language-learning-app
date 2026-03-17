@@ -3,7 +3,7 @@ import { buildDictionary } from '../utils/dictionaryBuilder.js';
 import { lookupUserDict, translateWithLLM, saveToUserDict } from '../utils/userDictionary.js';
 
 export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, ttsVolume }) {
-  const resolvedLangName = langName || (langCode === 'ru' ? 'Russian' : 'Ukrainian');
+  const resolvedLangName = langName || (langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian');
   const dict = buildDictionary(langCode);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
   const pendingRef = useRef(null);
@@ -15,10 +15,10 @@ export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, t
     const userTranslation = lookupUserDict(cleaned);
     if (userTranslation) return userTranslation;
     // Fall back to built-in dictionary
-    if (dict.ukToEn[cleaned]) return dict.ukToEn[cleaned];
+    if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
       const prefix = cleaned.slice(0, i);
-      if (dict.ukToEn[prefix]) return dict.ukToEn[prefix];
+      if (dict.targetToEn[prefix]) return dict.targetToEn[prefix];
     }
     return null;
   }, [dict]);

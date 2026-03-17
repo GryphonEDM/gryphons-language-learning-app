@@ -14,7 +14,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
-  const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en
+  const [direction, setDirection] = useState(`en-${langCode}`); // en-XX or XX-en
   const [translationMode, setTranslationMode] = useState('llm'); // 'llm' or 'dict'
   const [isLoading, setIsLoading] = useState(false);
   const [lookupCount, setLookupCount] = useState(0);
@@ -35,7 +35,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
     if (isListening) {
       stopListening();
     } else {
-      const lang = direction === 'en-uk' ? 'en' : langCode;
+      const lang = direction === `en-${langCode}` ? 'en' : langCode;
       startListening(lang);
     }
   };
@@ -67,7 +67,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   }, [outputText, ttsEnabled]);
 
   const translateWithDict = (text) => {
-    const source = direction === 'en-uk' ? dict.enToUk : dict.ukToEn;
+    const source = direction === `en-${langCode}` ? dict.enToTarget : dict.targetToEn;
     const lower = text.toLowerCase();
 
     // Exact match
@@ -111,8 +111,8 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
       setIsLoading(true);
       setOutputText('');
       setSuggestions([]);
-      const fromLang = direction === 'en-uk' ? 'English' : langName;
-      const toLang = direction === 'en-uk' ? langName : 'English';
+      const fromLang = direction === `en-${langCode}` ? 'English' : langName;
+      const toLang = direction === `en-${langCode}` ? langName : 'English';
       const result = await translatePhraseWithLLM(text, fromLang, toLang);
       setIsLoading(false);
       if (result) {
@@ -135,7 +135,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   };
 
   const toggleDirection = () => {
-    const newDir = direction === 'en-uk' ? 'uk-en' : 'en-uk';
+    const newDir = direction === `en-${langCode}` ? `${langCode}-en` : `en-${langCode}`;
     setDirection(newDir);
     setInputText(outputText || '');
     setOutputText('');
@@ -147,9 +147,9 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
   };
 
   const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
-  const fromLabel = direction === 'en-uk' ? 'English' : langNative;
-  const toLabel = direction === 'en-uk' ? langNative : 'English';
-  const outputIsUkrainian = direction === 'en-uk';
+  const fromLabel = direction === `en-${langCode}` ? 'English' : langNative;
+  const toLabel = direction === `en-${langCode}` ? langNative : 'English';
+  const outputIsTargetLang = direction === `en-${langCode}`;
 
   return (
     <div className="mode-container" style={styles.container}>
@@ -198,9 +198,9 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
               }}
               onClick={toggleMic}
               disabled={isTranscribing}
-              title={isListening ? 'Stop recording' : `Speak in ${direction === 'en-uk' ? 'English' : langName}`}
+              title={isListening ? 'Stop recording' : `Speak in ${outputIsTargetLang ? 'English' : langName}`}
             >
-              {isTranscribing ? '...' : '🎤'} {direction === 'en-uk' ? 'EN' : (langCode === 'ru' ? 'RU' : langCode === 'de' ? 'DE' : 'UA')}
+              {isTranscribing ? '...' : '🎤'} {outputIsTargetLang ? 'EN' : langCode.toUpperCase()}
             </button>
             {sttError && <span style={styles.sttError}>{sttError}</span>}
           </div>

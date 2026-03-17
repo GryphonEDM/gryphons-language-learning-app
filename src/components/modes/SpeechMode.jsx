@@ -203,10 +203,11 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
         vocabularySets.forEach(set => {
           if (!cefrMatches(set.difficulty || '', cefrFilter)) return;
           (set.words || []).forEach(w => {
-            const key = (w.uk || '').toLowerCase();
+            const key = (w[langCode] || w.uk || '').toLowerCase();
             if (key && !seen.has(key)) {
               seen.add(key);
               words.push({
+                [langCode]: w[langCode] || w.uk,
                 uk: w.uk,
                 en: w.en,
                 phonetic: w.phonetic || '',
@@ -224,6 +225,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
     }
     // Specific category selected
     return (selectedCategory.words || []).map(w => ({
+      [langCode]: w[langCode] || w.uk,
       uk: w.uk,
       en: w.en,
       phonetic: w.phonetic || '',

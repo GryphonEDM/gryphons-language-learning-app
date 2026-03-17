@@ -16,7 +16,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cefrFilter, setCefrFilter] = useState('all');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const [direction, setDirection] = useState('en-uk'); // en-uk or uk-en
+  const [direction, setDirection] = useState(`en-${langCode}`); // en-XX or XX-en
   const [words, setWords] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userInput, setUserInput] = useState('');
@@ -32,7 +32,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
   const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
-  const dirLabel = direction === 'en-uk' ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
+  const dirLabel = direction === `en-${langCode}` ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
 
   const getFilteredWords = useCallback((cat, cefr) => {
     if (cat) {
@@ -112,8 +112,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   }, [pickerStep]);
 
   const currentWord = words[currentIdx];
-  const prompt = direction === 'en-uk' ? currentWord?.en : currentWord?.uk;
-  const answer = direction === 'en-uk' ? currentWord?.uk : currentWord?.en;
+  const prompt = direction === `en-${langCode}` ? currentWord?.en : currentWord?.[langCode];
+  const answer = direction === `en-${langCode}` ? currentWord?.[langCode] : currentWord?.en;
 
   const getAcceptedAnswers = () => {
     if (!answer) return [];
@@ -151,7 +151,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
     if (isCorrect) {
       setScore(prev => prev + 1);
       setStreak(prev => prev + 1);
-      if (ttsEnabled && onSpeak && direction === 'en-uk') {
+      if (ttsEnabled && onSpeak && direction === `en-${langCode}`) {
         onSpeak(answer, 0.8, ttsVolume);
       }
     } else {
@@ -163,7 +163,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
 
     if (onTrackProgress) {
       onTrackProgress('translation', {
-        word: currentWord.uk,
+        word: currentWord[langCode] || currentWord.uk,
         correct: isCorrect,
         direction
       });
@@ -198,7 +198,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   };
 
   const handleDirectionChange = () => {
-    const newDir = direction === 'en-uk' ? 'uk-en' : 'en-uk';
+    const newDir = direction === `en-${langCode}` ? `${langCode}-en` : `en-${langCode}`;
     setDirection(newDir);
     const all = getFilteredWords(selectedCategory, cefrFilter);
     const shuffled = [...all].sort(() => Math.random() - 0.5);
@@ -335,7 +335,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
 
       <div style={styles.card}>
         <p style={styles.promptLabel}>
-          Translate to {direction === 'en-uk' ? langName : 'English'}:
+          Translate to {direction === `en-${langCode}` ? langName : 'English'}:
         </p>
         <div style={styles.prompt}>
           <ClickableText text={prompt ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />

@@ -107,7 +107,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
   const handlePlay = useCallback(() => {
     if (ttsEnabled && onSpeak && currentWord) {
-      onSpeak(currentWord.uk, playbackRate, ttsVolume);
+      onSpeak(currentWord[langCode] || currentWord.uk, playbackRate, ttsVolume);
     }
   }, [ttsEnabled, onSpeak, currentWord, playbackRate, ttsVolume]);
 
@@ -139,8 +139,9 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
   const handleSubmit = () => {
     if (!userInput.trim() || submitted) return;
 
-    const isCorrect = userInput.trim().toLowerCase() === currentWord.uk.toLowerCase();
-    const diff = computeDiff(currentWord.uk, userInput.trim());
+    const targetWord = currentWord[langCode] || currentWord.uk;
+    const isCorrect = userInput.trim().toLowerCase() === targetWord.toLowerCase();
+    const diff = computeDiff(targetWord, userInput.trim());
     const pointsEarned = isCorrect ? 20 : 5;
 
     setFeedback({ correct: isCorrect, diff });
@@ -155,7 +156,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
     if (onTrackProgress) {
       onTrackProgress('listening', {
-        word: currentWord.uk,
+        word: currentWord[langCode] || currentWord.uk,
         correct: isCorrect
       });
     }
