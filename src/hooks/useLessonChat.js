@@ -55,6 +55,13 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const onWordClick = useCallback((e, token, contextSentence = '') => {
     const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
+    // Stop any ongoing TTS before speaking single word
+    if (ttsSpeakingRef.current) {
+      ttsSpeakingRef.current = false;
+      stopSpeaking();
+      setTtsHighlight(null);
+      setIsSpeaking(false);
+    }
     const lower = cleaned.toLowerCase();
     const translation = lookupWord(cleaned);
     setActiveWord(lower);
@@ -99,8 +106,12 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [messages, loading]);
 
-  const speakWithHighlight = useCallback(async (text, msgIdx) => {
+  const speakWithHighlight = useCallback(async (text, msgIdx, startFromWordIdx = 0) => {
     if (!ttsEnabled || !onSpeak) return;
+    // Stop any ongoing TTS first
+    ttsSpeakingRef.current = false;
+    stopSpeaking();
+    await new Promise(r => setTimeout(r, 50));
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     // Split on sentence boundaries and commas/semicolons for more responsive stopping
@@ -109,9 +120,18 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;
       const words = chunk.split(/\s+/).filter(Boolean);
-      setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
-      try { await onSpeak(chunk, 0.8, ttsVolume); } catch {}
-      wordOffset += words.length;
+      const chunkEnd = wordOffset + words.length;
+      if (chunkEnd <= startFromWordIdx) { wordOffset = chunkEnd; continue; }
+      let speakText = chunk;
+      let highlightStart = wordOffset;
+      if (wordOffset < startFromWordIdx) {
+        const skipWords = startFromWordIdx - wordOffset;
+        speakText = words.slice(skipWords).join(' ');
+        highlightStart = startFromWordIdx;
+      }
+      setTtsHighlight({ msgIdx, wordStart: highlightStart, wordEnd: chunkEnd });
+      try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+      wordOffset = chunkEnd;
       if (!ttsSpeakingRef.current) break;
     }
     setTtsHighlight(null);

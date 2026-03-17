@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import SpeechPracticeModal from './SpeechPracticeModal.jsx';
 
 /**
@@ -10,6 +10,7 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
   const targetLabel = langCode === 'ru' ? 'RU' : langCode === 'uk' ? 'UA' : 'EN';
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [showPractice, setShowPractice] = useState(null); // null or word string
+  const clickTimerRef = useRef(null);
   return (
     <div className="lesson-chat-panel" style={styles.panel}>
       <div style={styles.header}>
@@ -38,7 +39,20 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
                     return (
                       <span
                         key={j}
-                        onClick={onWordClick ? (e) => onWordClick(e, token, msg.text) : undefined}
+                        onClick={onWordClick ? (e) => {
+                          const ev = { target: e.target, clientX: e.clientX, clientY: e.clientY, preventDefault: () => {} };
+                          clearTimeout(clickTimerRef.current);
+                          clickTimerRef.current = setTimeout(() => {
+                            if (isSpeaking && stopTts) { stopTts(); }
+                            onWordClick(ev, token, msg.text);
+                          }, 250);
+                        } : undefined}
+                        onDoubleClick={speakWithHighlight ? (e) => {
+                          e.preventDefault();
+                          clearTimeout(clickTimerRef.current);
+                          window.getSelection()?.removeAllRanges();
+                          speakWithHighlight(msg.text, i, myWordIdx);
+                        } : undefined}
                         style={{
                           cursor: onWordClick ? 'pointer' : 'default',
                           borderRadius: '3px',

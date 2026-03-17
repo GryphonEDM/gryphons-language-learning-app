@@ -58,12 +58,17 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [contextLimit, setContextLimit] = useState(null); // max context tokens from model
   const [tokenUsage, setTokenUsage] = useState(0); // total_tokens from last response
+  const [availableModels, setAvailableModels] = useState([]);
+  const [activeModel, setActiveModel] = useState(null); // { key, display_name, params_string }
+  const [showModelPicker, setShowModelPicker] = useState(false);
+  const [msgStats, setMsgStats] = useState({});
   const ttsSpeakingRef = useRef(false);
   const abortRef = useRef(null);
   const chatAreaRef = useRef(null);
   const inputRef = useRef(null);
   const sendRef = useRef(null);
   const rootRef = useRef(null);
+  const clickTimerRef = useRef(null);
 
   const systemPrompt = `You are a friendly ${langName} language tutor having a conversation with a student.
 - Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary.
@@ -103,25 +108,39 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       .then(res => setLlmConnected(res.ok))
       .catch(() => setLlmConnected(false));
 
-    // Fetch context length from LM Studio native API
+    // Fetch models and context length from LM Studio native API
     fetch('/lmstudio/models')
       .then(res => res.ok ? res.json() : null)
       .then(data => {
         if (!data?.models) return;
-        for (const m of data.models) {
-          const loaded = m.loaded_instances?.[0];
-          if (loaded?.config?.context_length) {
-            setContextLimit(loaded.config.context_length);
-            return;
-          }
-          if (m.max_context_length) {
-            setContextLimit(m.max_context_length);
-            return;
-          }
+        const llms = data.models
+          .filter(m => m.type === 'llm')
+          .map(m => ({
+            key: m.key,
+            display_name: m.display_name,
+            params_string: m.params_string,
+            loaded: m.loaded_instances?.length > 0,
+            context_length: m.loaded_instances?.[0]?.config?.context_length || m.max_context_length,
+          }));
+        setAvailableModels(llms);
+        const active = llms.find(m => m.loaded);
+        if (active) {
+          setActiveModel(active);
+          if (active.context_length) setContextLimit(active.context_length);
         }
       })
       .catch(() => {});
   }, []);
+
+  const handleSelectModel = (model) => {
+    setShowModelPicker(false);
+    if (model.key === activeModel?.key || !model.loaded) return;
+    setActiveModel(model);
+    if (model.context_length) setContextLimit(model.context_length);
+    setError(null);
+    // Re-check connection since model changed
+    fetch('/llm/models').then(res => setLlmConnected(res.ok)).catch(() => {});
+  };
 
   function startNewChat() {
     const session = makeSession(langCode);
@@ -200,11 +219,13 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     try {
       const abort = new AbortController();
       abortRef.current = abort;
+      const requestStart = Date.now();
+      let firstTokenTime = null;
       const res = await fetch('/llm/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: 'local-model',
+          model: activeModel?.key || 'local-model',
           messages: newMessages,
           temperature: 0.7,
           stream: true,
@@ -224,6 +245,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
       const decoder = new TextDecoder();
       let reply = '';
       let buffer = '';
+      let usageData = null;
 
       while (true) {
         if (abort.signal.aborted) {
@@ -243,12 +265,13 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             const chunk = JSON.parse(data);
             // Capture token usage from final chunk
             if (chunk.usage) {
-              const total = chunk.usage.total_tokens || 0;
-              setTokenUsage(total);
-              updateSession(s => ({ ...s, tokenUsage: total }));
+              usageData = chunk.usage;
+              setTokenUsage(chunk.usage.total_tokens || 0);
+              updateSession(s => ({ ...s, tokenUsage: chunk.usage.total_tokens || 0 }));
             }
             const delta = chunk.choices?.[0]?.delta?.content;
             if (delta) {
+              if (!firstTokenTime) firstTokenTime = Date.now();
               reply += delta;
               updateSession(s => {
                 const msgs = [...s.displayMessages];
@@ -260,6 +283,21 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             // ignore malformed chunks
           }
         }
+      }
+
+      // Save per-message stats
+      if (usageData && firstTokenTime) {
+        const elapsed = (Date.now() - firstTokenTime) / 1000;
+        const completionTokens = usageData.completion_tokens || 0;
+        setMsgStats(prev => ({
+          ...prev,
+          [botMsgIdx]: {
+            prompt: usageData.prompt_tokens || 0,
+            completion: completionTokens,
+            ttft: ((firstTokenTime - requestStart) / 1000).toFixed(1),
+            tokPerSec: elapsed > 0 ? (completionTokens / elapsed).toFixed(1) : '—',
+          },
+        }));
       }
 
       // Save partial or complete reply to conversation history
@@ -326,8 +364,12 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     };
   }, []);
 
-  const speakWithHighlight = useCallback(async (text, msgIdx) => {
+  const speakWithHighlight = useCallback(async (text, msgIdx, startFromWordIdx = 0) => {
     if (!ttsEnabled || !onSpeak) return;
+    // Stop any ongoing TTS first
+    ttsSpeakingRef.current = false;
+    stopSpeaking();
+    await new Promise(r => setTimeout(r, 50));
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     setTtsHighlight(null);
@@ -336,9 +378,19 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;
       const words = chunk.split(/\s+/).filter(Boolean);
-      setTtsHighlight({ msgIdx, wordStart: wordOffset, wordEnd: wordOffset + words.length });
-      try { await onSpeak(chunk, 0.8, ttsVolume); } catch {}
-      wordOffset += words.length;
+      const chunkEnd = wordOffset + words.length;
+      if (chunkEnd <= startFromWordIdx) { wordOffset = chunkEnd; continue; }
+      // If starting mid-chunk, slice the words and rejoin
+      let speakText = chunk;
+      let highlightStart = wordOffset;
+      if (wordOffset < startFromWordIdx) {
+        const skipWords = startFromWordIdx - wordOffset;
+        speakText = words.slice(skipWords).join(' ');
+        highlightStart = startFromWordIdx;
+      }
+      setTtsHighlight({ msgIdx, wordStart: highlightStart, wordEnd: chunkEnd });
+      try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+      wordOffset = chunkEnd;
       if (!ttsSpeakingRef.current) break;
     }
     setTtsHighlight(null);
@@ -395,26 +447,45 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             <button style={styles.openSidebarBtn} onClick={() => setSidebarOpen(true)} title="Open sidebar">☰</button>
           )}
           <div style={styles.topBarTitle}>
-            🤖 Chat Practice
+            <span>🤖</span>
+            {activeModel ? (
+              <span style={styles.modelName} onClick={() => setShowModelPicker(p => !p)}>
+                {activeModel.display_name.length > 12 ? activeModel.display_name.slice(0, 12) + '…' : activeModel.display_name}
+                <span style={styles.modelParams}>{activeModel.params_string}</span>
+                <span style={styles.modelChevron}>{showModelPicker ? '▲' : '▼'}</span>
+              </span>
+            ) : (
+              <span>Chat Practice</span>
+            )}
             <span style={styles.topBarSub}>{langName}</span>
           </div>
           <button style={styles.newChatBtnTop} onClick={startNewChat} title="New chat">＋ New</button>
-          {contextLimit && (
-            <div style={styles.contextBar}>
-              <div style={styles.contextBarTrack}>
-                <div style={{
-                  ...styles.contextBarFill,
-                  width: `${Math.min(100, Math.max(tokenUsage > 0 ? 1 : 0, (tokenUsage / contextLimit) * 100))}%`,
-                  background: tokenUsage / contextLimit > 0.9 ? '#f87171'
-                    : tokenUsage / contextLimit > 0.7 ? '#fbbf24' : '#4ade80',
-                }} />
-              </div>
-              <span style={styles.contextBarLabel}>
-                {formatTokens(tokenUsage)} / {formatTokens(contextLimit)}
-              </span>
-            </div>
-          )}
         </div>
+
+        {/* Model picker dropdown */}
+        {showModelPicker && (
+          <>
+            <div style={styles.pickerBackdrop} onClick={() => setShowModelPicker(false)} />
+            <div style={styles.pickerDropdown}>
+              {availableModels.filter(m => m.loaded).map(m => (
+                <button
+                  key={m.key}
+                  style={{
+                    ...styles.pickerItem,
+                    ...(m.key === activeModel?.key ? styles.pickerItemActive : {}),
+                  }}
+                  onClick={() => handleSelectModel(m)}
+                >
+                  <span style={styles.pickerName}>{m.display_name}</span>
+                  <span style={styles.pickerParams}>{m.params_string}</span>
+                </button>
+              ))}
+              {availableModels.filter(m => m.loaded).length === 0 && (
+                <div style={styles.pickerEmpty}>No models loaded</div>
+              )}
+            </div>
+          </>
+        )}
 
         {/* Banners */}
         {llmConnected === false && (
@@ -459,7 +530,21 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
                       return (
                         <span
                           key={j}
-                          onClick={(e) => handleWordClick(e, token, msg.text)}
+                          onClick={(e) => {
+                            const ev = { target: e.target, clientX: e.clientX, clientY: e.clientY, preventDefault: () => {} };
+                            ev.target = e.target;
+                            clearTimeout(clickTimerRef.current);
+                            clickTimerRef.current = setTimeout(() => {
+                              if (ttsSpeakingRef.current) { stopAll(); }
+                              handleWordClick(ev, token, msg.text);
+                            }, 250);
+                          }}
+                          onDoubleClick={(e) => {
+                            e.preventDefault();
+                            clearTimeout(clickTimerRef.current);
+                            window.getSelection()?.removeAllRanges();
+                            speakWithHighlight(msg.text, i, myWordIdx);
+                          }}
                           style={{
                             ...styles.clickableWord,
                             ...(isSelected ? styles.clickableWordActive : {}),
@@ -472,6 +557,13 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
                 </div>
                 {msg.sender === 'bot' && ttsEnabled && (
                   <button style={styles.speakBtn} onClick={() => speakWithHighlight(msg.text, i)} title="Listen again">🔊</button>
+                )}
+                {msg.sender === 'bot' && msgStats[i] && (
+                  <div style={styles.msgStats}>
+                    {msgStats[i].prompt + msgStats[i].completion} tok
+                    {' · '}{msgStats[i].ttft}s ttft
+                    {' · '}{msgStats[i].tokPerSec} tok/s
+                  </div>
                 )}
               </div>
             </div>
@@ -495,6 +587,21 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         {/* Input */}
         <div className="chat-input-section" style={styles.inputSection}>
           {isTranscribing && <div style={styles.transcribingBar}>Transcribing...</div>}
+          {contextLimit && (
+            <div style={styles.contextBar}>
+              <div style={styles.contextBarTrack}>
+                <div style={{
+                  ...styles.contextBarFill,
+                  width: `${Math.min(100, Math.max(tokenUsage > 0 ? 1 : 0, (tokenUsage / contextLimit) * 100))}%`,
+                  background: tokenUsage / contextLimit > 0.9 ? '#f87171'
+                    : tokenUsage / contextLimit > 0.7 ? '#fbbf24' : '#4ade80',
+                }} />
+              </div>
+              <span style={styles.contextBarLabel}>
+                {formatTokens(tokenUsage)} / {formatTokens(contextLimit)}
+              </span>
+            </div>
+          )}
           <div className="chat-input-row" style={styles.inputRow}>
             <input
               ref={inputRef}
@@ -707,6 +814,99 @@ const styles = {
     color: 'rgba(255,255,255,0.5)',
     fontWeight: '400',
   },
+  modelName: {
+    cursor: 'pointer',
+    color: '#ffd700',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.35rem',
+    padding: '0.15rem 0.5rem',
+    borderRadius: '8px',
+    background: 'rgba(255,215,0,0.08)',
+    transition: 'background 0.15s',
+  },
+  modelParams: {
+    fontSize: '0.7rem',
+    color: 'rgba(255,215,0,0.5)',
+    fontWeight: '400',
+  },
+  modelChevron: {
+    fontSize: '0.55rem',
+    color: 'rgba(255,255,255,0.35)',
+  },
+  modelLoadingBadge: {
+    fontSize: '0.7rem',
+    color: '#4dabf7',
+    fontStyle: 'italic',
+    fontWeight: '400',
+  },
+  pickerBackdrop: {
+    position: 'fixed',
+    top: 0, left: 0, right: 0, bottom: 0,
+    zIndex: 300,
+  },
+  pickerDropdown: {
+    position: 'absolute',
+    top: '3.2rem',
+    left: '3.5rem',
+    zIndex: 301,
+    background: '#1e293b',
+    border: '1px solid rgba(255,215,0,0.25)',
+    borderRadius: '12px',
+    padding: '0.4rem',
+    minWidth: '280px',
+    boxShadow: '0 12px 40px rgba(0,0,0,0.5)',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.2rem',
+  },
+  pickerItem: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.55rem 0.75rem',
+    borderRadius: '8px',
+    border: 'none',
+    background: 'transparent',
+    color: '#fff',
+    cursor: 'pointer',
+    fontSize: '0.88rem',
+    fontFamily: 'inherit',
+    textAlign: 'left',
+    transition: 'background 0.15s',
+    width: '100%',
+  },
+  pickerItemActive: {
+    background: 'rgba(255,215,0,0.1)',
+    border: '1px solid rgba(255,215,0,0.2)',
+  },
+  pickerDot: {
+    width: '8px',
+    height: '8px',
+    borderRadius: '50%',
+    flexShrink: 0,
+  },
+  pickerName: {
+    flex: 1,
+    fontWeight: '500',
+  },
+  pickerParams: {
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.4)',
+  },
+  pickerEmpty: {
+    padding: '0.75rem',
+    color: 'rgba(255,255,255,0.4)',
+    fontSize: '0.85rem',
+    textAlign: 'center',
+  },
+  msgStats: {
+    fontSize: '0.7rem',
+    color: 'rgba(255,255,255,0.3)',
+    marginTop: '0.3rem',
+    fontFamily: 'monospace',
+    letterSpacing: '0.3px',
+  },
   newChatBtnTop: {
     background: 'rgba(255,215,0,0.15)',
     border: '1px solid rgba(255,215,0,0.3)',
@@ -721,12 +921,13 @@ const styles = {
   contextBar: {
     display: 'flex',
     alignItems: 'center',
-    gap: '0.4rem',
-    marginLeft: 'auto',
+    gap: '0.5rem',
+    maxWidth: '780px',
+    margin: '0 auto 0.4rem',
   },
   contextBarTrack: {
-    width: '80px',
-    height: '6px',
+    flex: 1,
+    height: '4px',
     background: 'rgba(255,255,255,0.1)',
     borderRadius: '3px',
     overflow: 'hidden',
