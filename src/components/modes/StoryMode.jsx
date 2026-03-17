@@ -151,6 +151,8 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
     setHighlightRange({ start: -1, end: -1 });
   }, []);
 
+  const wordPendingRef = useRef(null);
+
   const handleWordClick = useCallback((word, wordIndex, contextText = '') => {
     if (isReading) return;
     const cleaned = word.replace(/[.,!?;:"""()—–\-…]/g, '').trim();
@@ -160,11 +162,28 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
     const sentences = contextText.split(/(?<=[.!?])\s+/);
     const contextSentence = sentences.find(s => s.includes(word)) || contextText;
     setSelectedWord({ word: cleaned, translation, index: wordIndex, contextSentence });
+    setWordAddForm(null);
 
     if (ttsEnabled && onSpeak) {
       onSpeak(cleaned, 0.8, ttsVolume);
     }
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, isReading]);
+
+    // Auto-translate with LLM and save to dictionary if no translation found
+    if (!translation) {
+      const requestId = Date.now();
+      wordPendingRef.current = requestId;
+      translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
+        if (llmTranslation && wordPendingRef.current === requestId) {
+          saveToUserDict(cleaned, llmTranslation);
+          setSelectedWord(prev =>
+            prev && prev.word === cleaned
+              ? { ...prev, translation: llmTranslation }
+              : prev
+          );
+        }
+      });
+    }
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, isReading, langName]);
 
   const handleWordDoubleClick = useCallback((word, wordIndex, fullText) => {
     handleStop();

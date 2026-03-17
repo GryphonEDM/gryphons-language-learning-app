@@ -70,14 +70,33 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     return null;
   }, [dict]);
 
+  const wordPendingRef = useRef(null);
+
   const handleWordClick = useCallback((e, word, contextSentence = '') => {
     const cleaned = word.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
     const translation = lookupWord(cleaned);
     const rect = e.target.getBoundingClientRect();
     setSelectedWord({ word: cleaned, translation, rect, contextSentence });
+    setWordAddForm(null);
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
+
+    // Auto-translate with LLM and save to dictionary if no translation found
+    if (!translation) {
+      const requestId = Date.now();
+      wordPendingRef.current = requestId;
+      translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
+        if (llmTranslation && wordPendingRef.current === requestId) {
+          saveToUserDict(cleaned, llmTranslation);
+          setSelectedWord(prev =>
+            prev && prev.word === cleaned
+              ? { ...prev, translation: llmTranslation }
+              : prev
+          );
+        }
+      });
+    }
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, langName]);
 
   const dismissWord = useCallback(() => { setSelectedWord(null); setWordAddForm(null); }, []);
 

@@ -17,6 +17,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
   const ttsSpeakingRef = useRef(false);
+  const chatPendingRef = useRef(null);
 
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
@@ -35,11 +36,28 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').trim();
     if (!cleaned) return;
     const lower = cleaned.toLowerCase();
+    const translation = lookupWord(cleaned);
     setActiveWord(lower);
-    setChatSelectedWord({ word: cleaned, translation: lookupWord(cleaned), contextSentence });
+    setChatSelectedWord({ word: cleaned, translation, contextSentence });
     setChatAddForm(null);
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
+
+    // Auto-translate with LLM and save to dictionary if no translation found
+    if (!translation) {
+      const requestId = Date.now();
+      chatPendingRef.current = requestId;
+      translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
+        if (llmTranslation && chatPendingRef.current === requestId) {
+          saveToUserDict(cleaned, llmTranslation);
+          setChatSelectedWord(prev =>
+            prev && prev.word === cleaned
+              ? { ...prev, translation: llmTranslation }
+              : prev
+          );
+        }
+      });
+    }
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, langName]);
 
   const dismissChatWord = useCallback(() => { setChatSelectedWord(null); setChatAddForm(null); setActiveWord(null); }, []);
 

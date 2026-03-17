@@ -1,10 +1,12 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { buildDictionary } from '../utils/dictionaryBuilder.js';
-import { lookupUserDict } from '../utils/userDictionary.js';
+import { lookupUserDict, translateWithLLM, saveToUserDict } from '../utils/userDictionary.js';
 
-export function useWordClick({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume }) {
+export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, ttsVolume }) {
+  const resolvedLangName = langName || (langCode === 'ru' ? 'Russian' : 'Ukrainian');
   const dict = buildDictionary(langCode);
   const [selectedWord, setSelectedWord] = useState(null); // { word, translation, rect }
+  const pendingRef = useRef(null);
 
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
@@ -28,9 +30,25 @@ export function useWordClick({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume }
     const rect = e.target.getBoundingClientRect();
     setSelectedWord({ word: cleaned, translation, rect, contextSentence });
     if (ttsEnabled && onSpeak) onSpeak(cleaned, 0.8, ttsVolume);
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
 
-  const dismissWord = useCallback(() => setSelectedWord(null), []);
+    // Auto-translate with LLM and save to dictionary if no translation found
+    if (!translation) {
+      const requestId = Date.now();
+      pendingRef.current = requestId;
+      translateWithLLM(cleaned, resolvedLangName, contextSentence).then(llmTranslation => {
+        if (llmTranslation && pendingRef.current === requestId) {
+          saveToUserDict(cleaned, llmTranslation);
+          setSelectedWord(prev =>
+            prev && prev.word === cleaned
+              ? { ...prev, translation: llmTranslation }
+              : prev
+          );
+        }
+      });
+    }
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, resolvedLangName]);
+
+  const dismissWord = useCallback(() => { pendingRef.current = null; setSelectedWord(null); }, []);
 
   return { selectedWord, handleWordClick, dismissWord };
 }
