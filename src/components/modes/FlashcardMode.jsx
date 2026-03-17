@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
@@ -41,6 +41,7 @@ export default function FlashcardMode({
   // Speech practice integration
   const [showSpeechPractice, setShowSpeechPractice] = useState(false);
   const speech = useSpeechPractice({ langCode, langName });
+  const speechPracticeRef = useRef(null);
 
   const currentWord = vocabularySet.words[currentIndex];
   const totalWords = vocabularySet.words.length;
@@ -142,6 +143,8 @@ export default function FlashcardMode({
       speech.retry();
       // Auto-start recording
       setTimeout(() => speech.toggleRecord(), 100);
+      // Scroll to speech practice widget
+      setTimeout(() => speechPracticeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 150);
     } else {
       speech.reset();
     }
@@ -486,7 +489,7 @@ export default function FlashcardMode({
 
       {/* Inline Speech Practice */}
       {isFlipped && showSpeechPractice && (
-        <div style={styles.speechPracticeContainer} onClick={e => e.stopPropagation()}>
+        <div ref={speechPracticeRef} style={styles.speechPracticeContainer} onClick={e => e.stopPropagation()}>
           <div style={styles.speechPracticeHeader}>🎙️ Practice saying: <strong>{currentWord.uk}</strong></div>
           <SpeechPracticeWidget
             speech={speech}
@@ -515,16 +518,19 @@ const styles = {
     minHeight: '100vh',
     background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
     color: '#fff',
-    padding: '2rem',
-    fontFamily: 'system-ui, -apple-system, sans-serif'
+    padding: '1rem 0.75rem',
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    width: '100vw',
+    marginLeft: 'calc(-50vw + 50%)',
+    boxSizing: 'border-box'
   },
   contentRow: {
     display: 'flex',
-    gap: '1.5rem',
+    gap: '0.75rem',
     alignItems: 'flex-start',
   },
   sidebar: {
-    width: '240px',
+    width: '380px',
     flexShrink: 0,
     position: 'sticky',
     top: '2rem',
