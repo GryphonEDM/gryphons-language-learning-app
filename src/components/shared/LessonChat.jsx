@@ -168,7 +168,7 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
 
 const styles = {
   panel: {
-    width: '320px',
+    width: '360px',
     flexShrink: 0,
     background: 'rgba(0,0,0,0.4)',
     border: '1px solid rgba(255,215,0,0.25)',
