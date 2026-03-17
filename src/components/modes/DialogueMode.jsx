@@ -41,7 +41,7 @@ function deleteAiDialogue(id) {
   localStorage.setItem('aiDialogues', JSON.stringify(existing));
 }
 
-export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const nameField = langCode === 'ru' ? 'nameRu' : 'nameUk';
   const [phase, setPhase] = useState('picker'); // picker, generate, playing, complete
@@ -618,7 +618,7 @@ IMPORTANT RULES:
         </div>
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
     </div>
   );
 }

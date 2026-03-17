@@ -35,7 +35,7 @@ function titleFromMessages(displayMessages) {
   return first.text.slice(0, 40) + (first.text.length > 40 ? '…' : '');
 }
 
-export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
+export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
@@ -64,7 +64,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 - If the user makes a grammar or spelling mistake, gently correct it.
 - Adjust your complexity to match the user's level.
 - Encourage the user to practice by asking follow-up questions in ${langName}.
-- If the user writes in English, respond in ${langName} with an English translation, and encourage them to try in ${langName}.`;
+- If the user writes in English, respond in ${langName} with an English translation, and encourage them to try in ${langName}.${masteredWordsList.length > 0 ? `\n- The student has marked these words as mastered: ${masteredWordsList.slice(0, 100).map(m => m.word).join(', ')}${masteredWordsList.length > 100 ? ` (and ${masteredWordsList.length - 100} more)` : ''}. Use these words naturally and introduce related vocabulary just beyond their level.` : ''}`;
 
   const activeSession = sessions.find(s => s.id === activeId) || null;
 
@@ -516,7 +516,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
         </div>
       </div>
 
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
 
       {/* Snap-to-view floating button */}
       <button style={styles.snapBtn} onClick={snapIntoView} title="Snap chat into view">⌖</button>

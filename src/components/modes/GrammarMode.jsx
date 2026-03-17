@@ -17,7 +17,7 @@ const TIER_INFO = {
   B2: { name: 'B2 Advanced', color: '#f97316' },
 };
 
-export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
 
   // Phases: picker, lesson, exercise, section-complete, complete, review
@@ -412,7 +412,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           </div>
           <LessonChat {...chat} onSpeak={onSpeak} />
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
       </div>
     );
   }
@@ -493,7 +493,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
           </div>
           <LessonChat {...chat} onSpeak={onSpeak} />
         </div>
-        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+        <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
       </div>
     );
   }

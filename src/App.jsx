@@ -18,6 +18,7 @@ import DialogueMode from './components/modes/DialogueMode.jsx';
 // ReadingMode merged into StoryMode
 import StoryMode from './components/modes/StoryMode.jsx';
 import ChatMode from './components/modes/ChatMode.jsx';
+import MasteredWordsManager from './components/modes/MasteredWordsManager.jsx';
 import SpeechMode from './components/modes/SpeechMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
@@ -347,6 +348,7 @@ export default function UkrainianTypingGame() {
   const [typedVowels, setTypedVowels] = useState([]);
   const [modeProgress, setModeProgress] = useState({});
   const [vocabularyMastery, setVocabularyMastery] = useState({});
+  const [masteredWordsList, setMasteredWordsList] = useState([]);
   
   // Settings (persisted)
   const [showTranslations, setShowTranslations] = useState(true);
@@ -407,6 +409,7 @@ export default function UkrainianTypingGame() {
         setTtsVolume(data.ttsVolume !== undefined ? data.ttsVolume : 0.8);
         setModeProgress(data.modeProgress || {});
         setVocabularyMastery(data.vocabularyMastery || {});
+        setMasteredWordsList(data.masteredWordsList || []);
         setCustomFlashcards(data.customFlashcards || []);
         console.log(`[Save] Restored ${langCode} XP:`, data.xp, 'Letters:', data.totalLettersTyped);
       } else {
@@ -414,7 +417,7 @@ export default function UkrainianTypingGame() {
         setXp(0); setTotalLettersTyped(0); setTotalWordsCompleted(0);
         setPerfectWordsCount(0); setBestStreak(0); setAchievements([]);
         setTypedVowels([]); setModeProgress({}); setVocabularyMastery({});
-        setCustomFlashcards([]);
+        setMasteredWordsList([]); setCustomFlashcards([]);
       }
     } catch (e) {
       console.log('[Save] Could not load saved progress:', e);
@@ -431,8 +434,8 @@ export default function UkrainianTypingGame() {
     xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount,
     bestStreak, achievements, typedVowels,
     showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume,
-    modeProgress, vocabularyMastery, customFlashcards
-  }), [xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount, bestStreak, achievements, typedVowels, showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume, modeProgress, vocabularyMastery, customFlashcards]);
+    modeProgress, vocabularyMastery, masteredWordsList, customFlashcards
+  }), [xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount, bestStreak, achievements, typedVowels, showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume, modeProgress, vocabularyMastery, masteredWordsList, customFlashcards]);
 
   // Keep a ref to current save data + key so beforeunload/visibilitychange can access it
   const saveDataRef = useRef(null);
@@ -509,6 +512,14 @@ export default function UkrainianTypingGame() {
       window.removeEventListener('beforeunload', flushSave);
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
+  }, []);
+
+  // Mastered words handlers
+  const handleMarkMastered = useCallback((word) => {
+    setMasteredWordsList(prev => prev.some(m => m.word === word) ? prev : [...prev, { word, timestamp: new Date().toISOString() }]);
+  }, []);
+  const handleUnmarkMastered = useCallback((word) => {
+    setMasteredWordsList(prev => prev.filter(m => m.word !== word));
   }, []);
 
   // Language switching handler
@@ -1328,6 +1339,68 @@ export default function UkrainianTypingGame() {
                     </p>
                   </div>
                 </div>
+                {masteredWordsList.length > 0 && (
+                <div
+                  className="vocab-theme-card"
+                  data-vocab-set="mastered-review"
+                  style={{ border: '2px solid #4caf50' }}
+                  onClick={() => {
+                    const allWords = getAllVocabularyWords(currentLanguage);
+                    const masteredSet = new Set(masteredWordsList.map(m => m.word));
+                    const matched = allWords.filter(w => masteredSet.has(w.uk));
+                    // Fisher-Yates shuffle
+                    const shuffled = [...matched];
+                    for (let i = shuffled.length - 1; i > 0; i--) {
+                      const j = Math.floor(Math.random() * (i + 1));
+                      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                    }
+                    if (shuffled.length === 0) return;
+                    setSelectedVocabSet({
+                      setId: 'mastered-review',
+                      nameEn: 'Mastered Words',
+                      nameUk: currentLanguage === 'ru' ? 'Освоенные слова' : 'Освоєні слова',
+                      difficulty: 'Mixed',
+                      icon: '⭐',
+                      words: shuffled.map(w => ({
+                        uk: w.uk,
+                        en: w.en,
+                        phonetic: w.phonetic || '',
+                        examples: w.examples || [],
+                        examplesEn: w.examplesEn || []
+                      })),
+                      totalWords: shuffled.length,
+                      xpPerWord: 5
+                    });
+                    prevVocabSetRef.current = 'mastered-review';
+                    setGameMode('flashcards');
+                  }}
+                >
+                  <div className="theme-icon">⭐</div>
+                  <div className="theme-info">
+                    <h3>Mastered Words</h3>
+                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'Освоенные слова' : 'Освоєні слова'}</p>
+                    <div className="theme-meta">
+                      <span className="theme-difficulty" style={{ color: '#4caf50' }}>Review</span>
+                      <span className="theme-word-count">{masteredWordsList.length} words</span>
+                    </div>
+                  </div>
+                </div>
+                )}
+                <div
+                  className="vocab-theme-card"
+                  data-vocab-set="manage-mastered"
+                  style={{ border: '2px solid rgba(76,175,80,0.4)', background: 'rgba(76,175,80,0.06)' }}
+                  onClick={() => setGameMode('mastered-words')}
+                >
+                  <div className="theme-icon">📋</div>
+                  <div className="theme-info">
+                    <h3>{masteredWordsList.length > 0 ? 'Manage List' : 'Mastered Words'}</h3>
+                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'Управление списком' : 'Керування списком'}</p>
+                    <div className="theme-meta">
+                      <span className="theme-word-count">{masteredWordsList.length > 0 ? `${masteredWordsList.length} words — add or remove` : 'Mark words you know'}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Dictionary category sets - the main bulk of 4000+ words */}
@@ -1657,6 +1730,8 @@ export default function UkrainianTypingGame() {
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
             onSpeak={speak}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => {
               setGameMode('menu');
               setSelectedVocabSet(null);
@@ -1712,6 +1787,8 @@ export default function UkrainianTypingGame() {
             ttsVolume={ttsVolume}
             onExit={() => setGameMode('menu')}
             onAddXP={(amount) => setXp(prev => prev + amount)}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
           />
         ) : gameMode === 'listening' ? (
           <ListeningMode
@@ -1720,6 +1797,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Listening] Session complete:', stats);
@@ -1740,6 +1819,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Translation] Session complete:', stats);
@@ -1760,6 +1841,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Grammar] Lesson complete:', stats);
@@ -1779,6 +1862,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Sentences] Session complete:', stats);
@@ -1799,6 +1884,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Dialogue] Complete:', stats);
@@ -1819,6 +1906,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onComplete={(stats) => {
@@ -1839,6 +1928,8 @@ export default function UkrainianTypingGame() {
             ttsVolume={ttsVolume}
             onExit={() => setGameMode('menu')}
             onAddXP={(amount) => setXp(prev => prev + amount)}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
           />
         ) : gameMode === 'speech' ? (
           <SpeechMode
@@ -1847,6 +1938,8 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Speech] Session complete:', stats);
@@ -1859,6 +1952,17 @@ export default function UkrainianTypingGame() {
                 [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
               }));
             }}
+          />
+        ) : gameMode === 'mastered-words' ? (
+          <MasteredWordsManager
+            langCode={currentLanguage}
+            masteredWordsList={masteredWordsList}
+            onMarkMastered={handleMarkMastered}
+            onUnmarkMastered={handleUnmarkMastered}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
           />
         ) : (
           <div className="practice-screen">

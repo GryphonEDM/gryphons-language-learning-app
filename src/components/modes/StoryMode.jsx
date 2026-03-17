@@ -43,7 +43,7 @@ function deleteAiStory(id) {
   localStorage.setItem('aiStories', JSON.stringify(existing));
 }
 
-export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress }) {
+export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langField = langCode === 'ru' ? 'ru' : 'uk';
   const dict = buildDictionary(langCode);
@@ -939,6 +939,18 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
                 >
                   🎤 Practice
                 </button>
+                {onMarkMastered && (() => {
+                  const isMastered = masteredWordsList.some(m => m.word === selectedWord.word);
+                  return (
+                    <button
+                      style={{ ...styles.wordPanelSpeak, background: isMastered ? 'rgba(76,175,80,0.25)' : 'rgba(76,175,80,0.12)', color: isMastered ? '#81c784' : '#4caf50', opacity: isMastered ? 0.7 : 1 }}
+                      onClick={() => { if (!isMastered) onMarkMastered(selectedWord.word); }}
+                      disabled={isMastered}
+                    >
+                      {isMastered ? '⭐ Mastered' : '⭐ Mark mastered'}
+                    </button>
+                  );
+                })()}
               </div>
             </div>
           )}

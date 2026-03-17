@@ -20,7 +20,9 @@ export default function FlashcardMode({
   onComplete,
   onExit,
   onAddXP,
-  onTrackProgress
+  onTrackProgress,
+  onMarkMastered,
+  masteredWordsList = []
 }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
@@ -104,6 +106,9 @@ export default function FlashcardMode({
     if (!masteredWords.includes(currentIndex)) {
       setMasteredWords([...masteredWords, currentIndex]);
       setSessionStats(prev => ({ ...prev, mastered: prev.mastered + 1 }));
+
+      // Persist to mastered words list
+      if (onMarkMastered) onMarkMastered(currentWord.uk);
 
       // Award XP
       if (onAddXP) {
@@ -376,12 +381,26 @@ export default function FlashcardMode({
                   )}
                 </>
               )}
-              <button
-                style={styles.wordPanelSpeak}
-                onClick={(e) => { e.stopPropagation(); ttsEnabled && onSpeak && onSpeak(selectedExampleWord.word, 0.7, ttsVolume); }}
-              >
-                🔊 Hear again
-              </button>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
+                <button
+                  style={styles.wordPanelSpeak}
+                  onClick={(e) => { e.stopPropagation(); ttsEnabled && onSpeak && onSpeak(selectedExampleWord.word, 0.7, ttsVolume); }}
+                >
+                  🔊 Hear again
+                </button>
+                {onMarkMastered && (() => {
+                  const isMastered = masteredWordsList.some(m => m.word === selectedExampleWord.word);
+                  return (
+                    <button
+                      style={{ ...styles.wordPanelSpeak, background: isMastered ? 'rgba(76,175,80,0.25)' : 'rgba(76,175,80,0.12)', color: isMastered ? '#81c784' : '#4caf50', opacity: isMastered ? 0.7 : 1 }}
+                      onClick={(e) => { e.stopPropagation(); if (!isMastered) onMarkMastered(selectedExampleWord.word); }}
+                      disabled={isMastered}
+                    >
+                      {isMastered ? '⭐ Mastered' : '⭐ Mark mastered'}
+                    </button>
+                  );
+                })()}
+              </div>
             </div>
           )}
 

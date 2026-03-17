@@ -89,7 +89,7 @@ const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
 // --- Component ---
 
-export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
 
   // Phase
@@ -517,7 +517,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
 
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
     </div>
   );
 }

@@ -41,7 +41,7 @@ function deleteAiSentenceSet(id) {
   localStorage.setItem('aiSentenceSets', JSON.stringify(existing));
 }
 
-export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress }) {
+export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const [phase, setPhase] = useState('pick-difficulty'); // pick-difficulty, generate, playing, complete
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
@@ -648,7 +648,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         </div>
         <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
     </div>
   );
 }

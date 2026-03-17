@@ -8,7 +8,7 @@ import useWhisperSTT from '../../hooks/useWhisperSTT.js';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 
-export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP }) {
+export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [] }) {
   const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
@@ -249,7 +249,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
         </div>
         <LessonChat {...chat} onSpeak={onSpeak} />
       </div>
-      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} />
+      <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
     </div>
   );
 }

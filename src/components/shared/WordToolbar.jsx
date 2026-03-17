@@ -6,7 +6,7 @@ import SpeechPracticeModal from './SpeechPracticeModal.jsx';
  * Popup toolbar shown when a word is clicked.
  * Handles add-to-dictionary via LLM translation internally.
  */
-export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsVolume, langName = 'Ukrainian', langCode = 'uk' }) {
+export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsVolume, langName = 'Ukrainian', langCode = 'uk', onMarkMastered, isMastered }) {
   const [addForm, setAddForm] = useState(null); // null | { en: string, translating: boolean }
   const [showPractice, setShowPractice] = useState(false);
 
@@ -53,6 +53,15 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
               {!selectedWord.translation && (
                 <button style={{ ...styles.btn, ...styles.addBtn }} onClick={handleAddClick}>
                   + Add to dictionary
+                </button>
+              )}
+              {onMarkMastered && (
+                <button
+                  style={{ ...styles.btn, ...(isMastered ? styles.masteredActiveBtn : styles.masteredBtn) }}
+                  onClick={() => { if (!isMastered) onMarkMastered(selectedWord.word); }}
+                  disabled={isMastered}
+                >
+                  {isMastered ? '⭐ Mastered' : '⭐ Mark mastered'}
                 </button>
               )}
             </div>
@@ -197,6 +206,18 @@ const styles = {
     background: 'rgba(255,215,0,0.12)',
     border: '1px solid rgba(255,215,0,0.3)',
     color: '#ffd700',
+  },
+  masteredBtn: {
+    background: 'rgba(76,175,80,0.12)',
+    border: '1px solid rgba(76,175,80,0.3)',
+    color: '#4caf50',
+  },
+  masteredActiveBtn: {
+    background: 'rgba(76,175,80,0.25)',
+    border: '1px solid rgba(76,175,80,0.5)',
+    color: '#81c784',
+    opacity: 0.7,
+    cursor: 'default',
   },
   addForm: {
     display: 'flex',
