@@ -7,6 +7,7 @@ import { stopSpeaking } from '../../App.jsx';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import SpeechPracticeModal from '../shared/SpeechPracticeModal.jsx';
+import { storageSet } from '../../utils/storage.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -35,12 +36,12 @@ function loadAiStories() {
 function saveAiStory(story) {
   const existing = loadAiStories();
   existing.unshift(story);
-  localStorage.setItem('aiStories', JSON.stringify(existing));
+  storageSet('aiStories', JSON.stringify(existing));
 }
 
 function deleteAiStory(id) {
   const existing = loadAiStories().filter(s => s.id !== id);
-  localStorage.setItem('aiStories', JSON.stringify(existing));
+  storageSet('aiStories', JSON.stringify(existing));
 }
 
 export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {

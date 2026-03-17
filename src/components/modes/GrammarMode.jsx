@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { storageSet } from '../../utils/storage.js';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
@@ -77,10 +78,10 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   const currentSection = selectedLesson?.sections[sectionIdx];
   const currentExercise = exerciseQueue[queueIdx] || null;
 
-  // Save completed lessons to localStorage
+  // Save completed lessons to localStorage + server
   useEffect(() => {
     const key = `grammar_completed_${langCode}`;
-    localStorage.setItem(key, JSON.stringify(completedLessons));
+    storageSet(key, JSON.stringify(completedLessons));
   }, [completedLessons, langCode]);
 
   // Check if lesson prerequisites are met

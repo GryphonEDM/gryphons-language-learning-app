@@ -1,3 +1,5 @@
+import { storageSet } from './storage.js';
+
 const KEY = 'userDictionary';
 
 export function getUserDict() {
@@ -8,7 +10,7 @@ export function getUserDict() {
 export function saveToUserDict(uk, en) {
   const dict = getUserDict();
   dict[uk.toLowerCase()] = en.trim();
-  localStorage.setItem(KEY, JSON.stringify(dict));
+  storageSet(KEY, JSON.stringify(dict));
 }
 
 /** Look up a word in the user dictionary, trying exact then prefix match. */

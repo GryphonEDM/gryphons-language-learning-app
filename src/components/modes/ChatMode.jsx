@@ -4,6 +4,8 @@ import { stopSpeaking } from '../../App.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import { WordToolbar } from '../shared/WordToolbar.jsx';
 
+import { storageSet } from '../../utils/storage.js';
+
 const STORAGE_KEY = 'chat_practice_sessions';
 
 function loadSessions() {
@@ -15,7 +17,7 @@ function loadSessions() {
 }
 
 function saveSessions(sessions) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
+  storageSet(STORAGE_KEY, JSON.stringify(sessions));
 }
 
 function makeSession(langCode) {

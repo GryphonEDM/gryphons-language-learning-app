@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { storageSet, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -279,7 +280,78 @@ const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
   }
 };
 
+function AuthScreen({ onAuth }) {
+  const [mode, setMode] = useState('login'); // 'login' | 'register'
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const submit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
+    try {
+      const endpoint = mode === 'login' ? '/api/auth/login' : '/api/auth/register';
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email.trim(), password }),
+      });
+      const data = await res.json();
+      if (!res.ok) { setError(data.error || 'Something went wrong'); return; }
+      await onAuth(data.token, data.email);
+    } catch {
+      setError('Cannot reach server. Make sure tts-server.py is running.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div style={{ minHeight: '100vh', background: '#0f0f23', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
+      <div style={{ background: 'linear-gradient(145deg, #2a2a4c, #1a1a2e)', border: '2px solid #ffd700', borderRadius: '20px', padding: '2.5rem', width: '100%', maxWidth: '380px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+          <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🇺🇦</div>
+          <h1 style={{ color: '#ffd700', margin: 0, fontSize: '1.6rem' }}>Language Trainer</h1>
+          <p style={{ color: '#aaa', marginTop: '0.5rem', fontSize: '0.9rem' }}>
+            {mode === 'login' ? 'Sign in to sync your progress' : 'Create an account to get started'}
+          </p>
+        </div>
+        <form onSubmit={submit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <input
+            type="email" required placeholder="Email" value={email}
+            onChange={e => setEmail(e.target.value)} autoComplete="email"
+            style={{ padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid #444', background: '#1a1a2e', color: '#fff', fontSize: '1rem', fontFamily: 'inherit' }}
+          />
+          <input
+            type="password" required placeholder="Password (min 6 chars)" value={password}
+            onChange={e => setPassword(e.target.value)} autoComplete={mode === 'login' ? 'current-password' : 'new-password'}
+            style={{ padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid #444', background: '#1a1a2e', color: '#fff', fontSize: '1rem', fontFamily: 'inherit' }}
+          />
+          {error && <div style={{ color: '#ff6b6b', fontSize: '0.9rem', textAlign: 'center' }}>{error}</div>}
+          <button type="submit" disabled={loading}
+            style={{ padding: '0.9rem', borderRadius: '10px', border: 'none', background: 'linear-gradient(135deg, #ffd700, #e6c200)', color: '#1a1a2e', fontWeight: 700, fontSize: '1rem', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit', opacity: loading ? 0.7 : 1 }}>
+            {loading ? 'Please wait...' : mode === 'login' ? 'Sign In' : 'Create Account'}
+          </button>
+        </form>
+        <p style={{ textAlign: 'center', marginTop: '1.5rem', color: '#aaa', fontSize: '0.9rem' }}>
+          {mode === 'login' ? "Don't have an account? " : 'Already have an account? '}
+          <button onClick={() => { setMode(mode === 'login' ? 'register' : 'login'); setError(''); }}
+            style={{ background: 'none', border: 'none', color: '#ffd700', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.9rem', fontWeight: 600 }}>
+            {mode === 'login' ? 'Register' : 'Sign In'}
+          </button>
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function UkrainianTypingGame() {
+  // Auth state
+  const [authState, setAuthState] = useState('checking'); // 'checking' | 'login' | 'authed'
+  const [authEmail, setAuthEmail] = useState('');
+
   // Language state
   const [currentLanguage, setCurrentLanguage] = useState(() => {
     try { return localStorage.getItem('typingGameLanguage') || 'uk'; } catch { return 'uk'; }
@@ -468,9 +540,26 @@ export default function UkrainianTypingGame() {
     }
   }, [gameMode]);
 
-  // Load on mount
+  // Auth check + load on mount
   useEffect(() => {
-    loadProgress(currentLanguage);
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+      setAuthState('login');
+      return;
+    }
+    setAuthToken(token);
+    initFromServer(token).then(valid => {
+      if (!valid) {
+        clearAuthToken();
+        setAuthState('login');
+        return;
+      }
+      const lang = localStorage.getItem('typingGameLanguage') || 'uk';
+      setCurrentLanguage(lang);
+      setAuthEmail(localStorage.getItem('authEmail') || '');
+      setAuthState('authed');
+      loadProgress(lang);
+    });
   }, []);
 
   // Save progress when it changes (only after initial load)
@@ -484,7 +573,7 @@ export default function UkrainianTypingGame() {
       // Update refs so beforeunload/visibilitychange always have latest state
       saveDataRef.current = data;
       saveKeyRef.current = langData.storageKey;
-      localStorage.setItem(langData.storageKey, JSON.stringify(data));
+      storageSet(langData.storageKey, JSON.stringify(data));
       console.log(`[Save] Saved ${currentLanguage} progress - XP:`, xp, 'Letters:', totalLettersTyped);
     } catch (e) {
       console.log('[Save] Could not save progress:', e);
@@ -496,7 +585,7 @@ export default function UkrainianTypingGame() {
     const flushSave = () => {
       if (saveDataRef.current && saveKeyRef.current) {
         try {
-          localStorage.setItem(saveKeyRef.current, JSON.stringify(saveDataRef.current));
+          storageSet(saveKeyRef.current, JSON.stringify(saveDataRef.current));
           console.log('[Save] Flushed progress on page hide/unload');
         } catch (e) {
           // Best-effort
@@ -528,13 +617,13 @@ export default function UkrainianTypingGame() {
     // Explicitly save current language's progress before switching
     try {
       const data = buildSaveData();
-      localStorage.setItem(langData.storageKey, JSON.stringify(data));
+      storageSet(langData.storageKey, JSON.stringify(data));
       console.log(`[Save] Saved ${currentLanguage} progress before language switch - XP:`, data.xp);
     } catch (e) {
       console.log('[Save] Could not save before language switch:', e);
     }
     setCurrentLanguage(newLang);
-    localStorage.setItem('typingGameLanguage', newLang);
+    storageSet('typingGameLanguage', newLang);
     setGameMode('menu');
     setStreak(0);
     setExploreSelectedKey(null);
@@ -1064,6 +1153,40 @@ export default function UkrainianTypingGame() {
   const currentLevelXp = xpForPlayerLevel(currentPlayerLevel - 1);
   const nextLevelXp = xpForPlayerLevel(currentPlayerLevel);
 
+  // Auth: handle login/register before showing app
+  const handleAuthSuccess = useCallback(async (token, email) => {
+    setAuthToken(token);
+    localStorage.setItem('authEmail', email);
+    await initFromServer(token);
+    const lang = localStorage.getItem('typingGameLanguage') || 'uk';
+    setCurrentLanguage(lang);
+    setAuthEmail(email);
+    setAuthState('authed');
+    loadProgress(lang);
+  }, [loadProgress]);
+
+  const [showAccountMenu, setShowAccountMenu] = useState(false);
+
+  const handleLogout = useCallback(() => {
+    setShowAccountMenu(false);
+    clearAuthToken();
+    localStorage.removeItem('authEmail');
+    setAuthEmail('');
+    setAuthState('login');
+  }, []);
+
+  if (authState === 'checking') {
+    return (
+      <div style={{ minHeight: '100vh', background: '#0f0f23', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#ffd700', fontSize: '1.5rem' }}>Loading...</div>
+      </div>
+    );
+  }
+
+  if (authState === 'login') {
+    return <AuthScreen onAuth={handleAuthSuccess} />;
+  }
+
   return (
     <div className="game-container">
       {/* Green flash on alphabet loop completion */}
@@ -1101,6 +1224,9 @@ export default function UkrainianTypingGame() {
           <button className="header-action-btn" onClick={() => setShowKeyboardSetup(true)}>
             ⌨️ Keyboard Setup
           </button>
+          <button className="header-action-btn" onClick={() => setGameMode('mastered-words')}>
+            ⭐ Mastered Words
+          </button>
         </div>
         <div className="header-right">
           <div className="stat">
@@ -1122,6 +1248,31 @@ export default function UkrainianTypingGame() {
           <button className="header-action-btn" onClick={() => setGameMode('stats')} title="Stats">
             📊
           </button>
+          <div style={{ position: 'relative' }}>
+            <button
+              className="header-action-btn"
+              onClick={() => setShowAccountMenu(v => !v)}
+              title={`Logged in as ${authEmail}`}
+              style={{ opacity: 0.8, fontSize: '0.8rem' }}
+            >
+              👤 {authEmail ? authEmail.split('@')[0] : 'Account'}
+            </button>
+            {showAccountMenu && (
+              <div
+                style={{ position: 'absolute', right: 0, top: '110%', background: '#1a1a2e', border: '1px solid #444', borderRadius: '10px', padding: '0.75rem 1rem', minWidth: '200px', zIndex: 300, boxShadow: '0 8px 24px rgba(0,0,0,0.5)' }}
+                onMouseLeave={() => setShowAccountMenu(false)}
+              >
+                <div style={{ color: '#aaa', fontSize: '0.75rem', marginBottom: '0.5rem' }}>Signed in as</div>
+                <div style={{ color: '#fff', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.75rem', wordBreak: 'break-all' }}>{authEmail}</div>
+                <button
+                  onClick={handleLogout}
+                  style={{ width: '100%', padding: '0.5rem', borderRadius: '8px', border: '1px solid #555', background: 'transparent', color: '#ff6b6b', cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.85rem' }}
+                >
+                  Sign out
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </header>
 
@@ -1386,21 +1537,6 @@ export default function UkrainianTypingGame() {
                   </div>
                 </div>
                 )}
-                <div
-                  className="vocab-theme-card"
-                  data-vocab-set="manage-mastered"
-                  style={{ border: '2px solid rgba(76,175,80,0.4)', background: 'rgba(76,175,80,0.06)' }}
-                  onClick={() => setGameMode('mastered-words')}
-                >
-                  <div className="theme-icon">📋</div>
-                  <div className="theme-info">
-                    <h3>{masteredWordsList.length > 0 ? 'Manage List' : 'Mastered Words'}</h3>
-                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'Управление списком' : 'Керування списком'}</p>
-                    <div className="theme-meta">
-                      <span className="theme-word-count">{masteredWordsList.length > 0 ? `${masteredWordsList.length} words — add or remove` : 'Mark words you know'}</span>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               {/* Dictionary category sets - the main bulk of 4000+ words */}

@@ -6,6 +6,17 @@ import sys
 import re
 import tempfile
 import torch
+import sqlite3
+import datetime
+
+try:
+    from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
+    import bcrypt
+    DB_ENABLED = True
+except ImportError:
+    DB_ENABLED = False
+    print("[WARN] flask-jwt-extended or bcrypt not installed — auth/db endpoints disabled")
+    print("       Install with: pip install flask-jwt-extended bcrypt")
 
 # Resolve all paths relative to this script's directory
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -27,6 +38,110 @@ except Exception as e:
 
 app = Flask(__name__)
 CORS(app)
+
+# === Database & Auth ===
+DB_PATH = os.path.join(SCRIPT_DIR, 'users.db')
+
+if DB_ENABLED:
+    app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', 'typing-game-secret-change-me-in-prod')
+    app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=30)
+    jwt = JWTManager(app)
+
+    def get_db():
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        return conn
+
+    def init_db():
+        conn = get_db()
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT UNIQUE NOT NULL,
+                password_hash TEXT NOT NULL,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS user_data (
+                user_id INTEGER NOT NULL,
+                key TEXT NOT NULL,
+                value TEXT NOT NULL,
+                updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, key),
+                FOREIGN KEY (user_id) REFERENCES users(id)
+            )
+        ''')
+        conn.commit()
+        conn.close()
+        print('[DB] Database ready!')
+
+    init_db()
+
+    @app.route('/api/auth/register', methods=['POST'])
+    def register():
+        data = request.get_json() or {}
+        email = data.get('email', '').strip().lower()
+        password = data.get('password', '')
+        if not email or not password:
+            return jsonify({'error': 'Email and password required'}), 400
+        if len(password) < 6:
+            return jsonify({'error': 'Password must be at least 6 characters'}), 400
+        password_hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
+        try:
+            conn = get_db()
+            conn.execute('INSERT INTO users (email, password_hash) VALUES (?, ?)', (email, password_hash))
+            conn.commit()
+            user = conn.execute('SELECT id FROM users WHERE email = ?', (email,)).fetchone()
+            conn.close()
+            token = create_access_token(identity={'id': user['id'], 'email': email})
+            return jsonify({'token': token, 'email': email})
+        except sqlite3.IntegrityError:
+            return jsonify({'error': 'Email already registered'}), 409
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
+    @app.route('/api/auth/login', methods=['POST'])
+    def login():
+        data = request.get_json() or {}
+        email = data.get('email', '').strip().lower()
+        password = data.get('password', '')
+        conn = get_db()
+        user = conn.execute('SELECT id, password_hash FROM users WHERE email = ?', (email,)).fetchone()
+        conn.close()
+        if not user or not bcrypt.checkpw(password.encode(), user['password_hash'].encode()):
+            return jsonify({'error': 'Invalid email or password'}), 401
+        token = create_access_token(identity={'id': user['id'], 'email': email})
+        return jsonify({'token': token, 'email': email})
+
+    @app.route('/api/data', methods=['GET'])
+    @jwt_required()
+    def get_all_data():
+        identity = get_jwt_identity()
+        user_id = identity['id']
+        conn = get_db()
+        rows = conn.execute('SELECT key, value FROM user_data WHERE user_id = ?', (user_id,)).fetchall()
+        conn.close()
+        return jsonify({row['key']: row['value'] for row in rows})
+
+    @app.route('/api/data/<path:key>', methods=['PUT'])
+    @jwt_required()
+    def set_data(key):
+        identity = get_jwt_identity()
+        user_id = identity['id']
+        data = request.get_json() or {}
+        value = data.get('value')
+        if value is None:
+            return jsonify({'error': 'value required'}), 400
+        conn = get_db()
+        conn.execute('''
+            INSERT INTO user_data (user_id, key, value, updated_at)
+            VALUES (?, ?, ?, CURRENT_TIMESTAMP)
+            ON CONFLICT(user_id, key) DO UPDATE SET value = excluded.value, updated_at = CURRENT_TIMESTAMP
+        ''', (user_id, key, value))
+        conn.commit()
+        conn.close()
+        return jsonify({'ok': True})
 
 
 # === Ukrainian TTS (ESPnet) ===
@@ -106,13 +221,21 @@ if not stt_available:
     else:
         print("       Install with: pip install faster-whisper")
 
+WHISPER_INITIAL_PROMPTS = {
+    'ru': 'Говорю по-русски. Пишу кириллицей.',
+    'uk': 'Говорю українською. Пишу кирилицею.',
+}
+
 def whisper_transcribe(audio_path, lang=None):
     """Transcribe audio using whichever Whisper backend is available.
     If lang is provided, it hints Whisper to expect that language.
-    task='transcribe' ensures it writes what was said (no translation)."""
+    task='transcribe' ensures it writes what was said (no translation).
+    initial_prompt forces Cyrillic output for RU/UK to prevent English hallucination."""
     kwargs = {'task': 'transcribe'}
     if lang:
         kwargs['language'] = lang
+        if lang in WHISPER_INITIAL_PROMPTS:
+            kwargs['initial_prompt'] = WHISPER_INITIAL_PROMPTS[lang]
 
     if stt_backend == 'mlx':
         result = mlx_whisper.transcribe(

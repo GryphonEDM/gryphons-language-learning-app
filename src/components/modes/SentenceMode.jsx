@@ -5,6 +5,7 @@ import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import { storageSet } from '../../utils/storage.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -33,12 +34,12 @@ function loadAiSentenceSets() {
 function saveAiSentenceSet(set) {
   const existing = loadAiSentenceSets();
   existing.unshift(set);
-  localStorage.setItem('aiSentenceSets', JSON.stringify(existing));
+  storageSet('aiSentenceSets', JSON.stringify(existing));
 }
 
 function deleteAiSentenceSet(id) {
   const existing = loadAiSentenceSets().filter(s => s.id !== id);
-  localStorage.setItem('aiSentenceSets', JSON.stringify(existing));
+  storageSet('aiSentenceSets', JSON.stringify(existing));
 }
 
 export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
