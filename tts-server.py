@@ -160,6 +160,32 @@ def transcribe_audio():
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
 
+# Single-letter phonetic expansions so Silero can pronounce them
+RU_LETTER_PHONETICS = {
+    'а': 'а', 'б': 'бэ', 'в': 'вэ', 'г': 'гэ', 'д': 'дэ', 'е': 'е',
+    'ё': 'йо', 'ж': 'жэ', 'з': 'зэ', 'и': 'и', 'й': 'й краткое',
+    'к': 'ка', 'л': 'эль', 'м': 'эм', 'н': 'эн', 'о': 'о', 'п': 'пэ',
+    'р': 'эр', 'с': 'эс', 'т': 'тэ', 'у': 'у', 'ф': 'эф', 'х': 'ха',
+    'ц': 'цэ', 'ч': 'чэ', 'ш': 'ша', 'щ': 'ща', 'ъ': 'твёрдый знак',
+    'ы': 'ы', 'ь': 'мягкий знак', 'э': 'э', 'ю': 'ю', 'я': 'я',
+}
+UK_LETTER_PHONETICS = {
+    'а': 'а', 'б': 'бе', 'в': 'ве', 'г': 'ге', 'ґ': 'ґе', 'д': 'де',
+    'е': 'е', 'є': 'є', 'ж': 'же', 'з': 'зе', 'и': 'и', 'і': 'і',
+    'ї': 'ї', 'й': 'йот', 'к': 'ка', 'л': 'ел', 'м': 'ем', 'н': 'ен',
+    'о': 'о', 'п': 'пе', 'р': 'ер', 'с': 'ес', 'т': 'те', 'у': 'у',
+    'ф': 'еф', 'х': 'ха', 'ц': 'це', 'ч': 'че', 'ш': 'ша', 'щ': 'ща',
+    'ь': 'мʼякий знак', 'ю': 'ю', 'я': 'я',
+}
+
+def expand_single_letter(text, lang):
+    """If text is a single Cyrillic letter, expand to its spoken name for TTS."""
+    stripped = text.strip()
+    if len(stripped) == 1:
+        lookup = RU_LETTER_PHONETICS if lang == 'ru' else UK_LETTER_PHONETICS
+        return lookup.get(stripped.lower(), text)
+    return text
+
 @app.route('/tts', methods=['POST'])
 def generate_tts():
     try:
@@ -169,6 +195,8 @@ def generate_tts():
 
         if not text:
             return {'error': 'Missing text parameter'}, 400
+
+        text = expand_single_letter(text, lang)
 
         # Route to the correct TTS engine
         if lang == 'ru':

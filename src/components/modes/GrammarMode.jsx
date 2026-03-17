@@ -366,13 +366,13 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                 </button>
               )}
             </div>
-            <p style={styles.explanation}>{currentSection.explanation}</p>
+            <p style={styles.explanation}><ClickableText text={currentSection.explanation} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></p>
 
             {/* Tip card */}
             {currentSection.tip && (
               <div style={styles.tipCard}>
                 <span style={styles.tipIcon}>💡</span>
-                <span>{currentSection.tip}</span>
+                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></span>
               </div>
             )}
 
@@ -434,12 +434,12 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             {currentSection?.tip && (
               <div style={styles.tipCardSmall}>
                 <span style={styles.tipIcon}>💡</span>
-                <span>{currentSection.tip}</span>
+                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></span>
               </div>
             )}
 
             <p style={styles.exercisePrompt}>
-              {currentExercise.prompt}
+              <ClickableText text={currentExercise.prompt} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
               {ttsEnabled && currentExercise.prompt && currentExercise.type !== 'listen-type' && (
                 <button style={styles.miniSpeak} onClick={() => {
                   // Extract Cyrillic text from prompt for TTS
