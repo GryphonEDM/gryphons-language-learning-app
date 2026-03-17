@@ -6,6 +6,7 @@ import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import ExerciseRenderer from './grammar/ExerciseRenderer.jsx';
+import { stopSpeaking } from '../../App.jsx';
 import { createAudioContext, playSound } from '../../utils/soundEffects.js';
 import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from '../../utils/encouragement.js';
 
@@ -21,6 +22,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
 
   // Phases: picker, lesson, exercise, section-complete, complete, review
   const [phase, setPhase] = useState('picker');
+  const [isReading, setIsReading] = useState(false);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [sectionIdx, setSectionIdx] = useState(0);
 
@@ -351,8 +353,16 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
               <h3 style={{ ...styles.sectionTitle, marginBottom: 0 }}>{currentSection.title}</h3>
               {ttsEnabled && (
-                <button style={styles.readAloudBtn} onClick={() => onSpeak(currentSection.explanation, 0.8, ttsVolume)}>
-                  🔊 Read
+                <button style={styles.readAloudBtn} onClick={() => {
+                  if (isReading) {
+                    stopSpeaking();
+                    setIsReading(false);
+                  } else {
+                    setIsReading(true);
+                    onSpeak(currentSection.explanation, 0.8, ttsVolume).finally(() => setIsReading(false));
+                  }
+                }}>
+                  {isReading ? '⏹ Stop' : '🔊 Read'}
                 </button>
               )}
             </div>
