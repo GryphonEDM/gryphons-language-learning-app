@@ -1086,20 +1086,23 @@ export default function UkrainianTypingGame() {
               </button>
             ))}
           </div>
-        </div>
-        <div className="header-center">
-          <div className="stat-group">
-            <div className="stat">
-              <span className="stat-icon">⭐</span>
-              <span className="stat-value">Lvl {currentPlayerLevel}</span>
-            </div>
-            <div className="xp-bar">
-              <div className="xp-fill" style={{ width: `${((xp - currentLevelXp) / (nextLevelXp - currentLevelXp)) * 100}%` }} />
-              <span className="xp-text">{xp} XP</span>
-            </div>
-          </div>
+          <div className="header-divider" />
+          <button className="header-action-btn" data-mode="explore" onClick={() => setGameMode('explore')}>
+            🔍 Explore Keyboard
+          </button>
+          <button className="header-action-btn" onClick={() => setShowKeyboardSetup(true)}>
+            ⌨️ Keyboard Setup
+          </button>
         </div>
         <div className="header-right">
+          <div className="stat">
+            <span className="stat-icon">⭐</span>
+            <span className="stat-value">Lvl {currentPlayerLevel}</span>
+          </div>
+          <div className="xp-bar">
+            <div className="xp-fill" style={{ width: `${((xp - currentLevelXp) / (nextLevelXp - currentLevelXp)) * 100}%` }} />
+            <span className="xp-text">{xp} XP</span>
+          </div>
           <div className="stat">
             <span className="stat-icon">🔥</span>
             <span className="stat-value">{streak}</span>
@@ -1116,9 +1119,6 @@ export default function UkrainianTypingGame() {
         {gameMode === 'menu' ? (
           <div className="menu-screen">
             <div className="menu-hero">
-              <h1>Learn {langData.name} Typing</h1>
-              <p>Master the {langData.name} keyboard one letter at a time!</p>
-              
               <div className="quick-stats">
                 <div className="quick-stat">
                   <span className="qs-value">{totalLettersTyped}</span>
@@ -1134,14 +1134,6 @@ export default function UkrainianTypingGame() {
                 </div>
               </div>
               
-              <div className="menu-actions">
-                <button className="explore-button" data-mode="explore" onClick={() => setGameMode('explore')}>
-                  🔍 Explore Keyboard
-                </button>
-                <button className="setup-button" onClick={() => setShowKeyboardSetup(true)}>
-                  ⌨️ Keyboard Setup Guide
-                </button>
-              </div>
             </div>
 
             {/* Learning Modes */}
@@ -1156,13 +1148,6 @@ export default function UkrainianTypingGame() {
                     <p>Look up words and phrases</p>
                   </div>
                 </div>
-                <div className="mode-card" data-mode="listening" onClick={() => setGameMode('listening')}>
-                  <div className="mode-icon">👂</div>
-                  <div className="mode-info">
-                    <h3>Listening Practice</h3>
-                    <p>Hear words and type what you hear</p>
-                  </div>
-                </div>
                 <div className="mode-card" data-mode="translation" onClick={() => setGameMode('translation')}>
                   <div className="mode-icon">🔄</div>
                   <div className="mode-info">
@@ -1170,18 +1155,25 @@ export default function UkrainianTypingGame() {
                     <p>Translate words between languages</p>
                   </div>
                 </div>
-                <div className="mode-card" data-mode="grammar" onClick={() => setGameMode('grammar')}>
-                  <div className="mode-icon">📐</div>
+                <div className="mode-card" data-mode="chat" onClick={() => setGameMode('chat')}>
+                  <div className="mode-icon">🤖</div>
                   <div className="mode-info">
-                    <h3>Grammar Lessons</h3>
-                    <p>Cases, verbs, pronouns, and more</p>
+                    <h3>Chat Practice</h3>
+                    <p>Free conversation with AI tutor</p>
                   </div>
                 </div>
-                <div className="mode-card" data-mode="sentences" onClick={() => setGameMode('sentences')}>
-                  <div className="mode-icon">🧱</div>
+                <div className="mode-card" data-mode="listening" onClick={() => setGameMode('listening')}>
+                  <div className="mode-icon">👂</div>
                   <div className="mode-info">
-                    <h3>Build Sentences</h3>
-                    <p>Arrange words into sentences</p>
+                    <h3>Listening Practice</h3>
+                    <p>Hear words and type what you hear</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="speech" onClick={() => setGameMode('speech')}>
+                  <div className="mode-icon">🎙️</div>
+                  <div className="mode-info">
+                    <h3>Speech Practice</h3>
+                    <p>Practice pronunciation with voice recognition</p>
                   </div>
                 </div>
                 <div className="mode-card" data-mode="dialogue" onClick={() => setGameMode('dialogue')}>
@@ -1198,18 +1190,18 @@ export default function UkrainianTypingGame() {
                     <p>Stories, reading practice & AI-generated content</p>
                   </div>
                 </div>
-                <div className="mode-card" data-mode="chat" onClick={() => setGameMode('chat')}>
-                  <div className="mode-icon">🤖</div>
+                <div className="mode-card" data-mode="grammar" onClick={() => setGameMode('grammar')}>
+                  <div className="mode-icon">📐</div>
                   <div className="mode-info">
-                    <h3>Chat Practice</h3>
-                    <p>Free conversation with AI tutor</p>
+                    <h3>Grammar Lessons</h3>
+                    <p>Cases, verbs, pronouns, and more</p>
                   </div>
                 </div>
-                <div className="mode-card" data-mode="speech" onClick={() => setGameMode('speech')}>
-                  <div className="mode-icon">🎙️</div>
+                <div className="mode-card" data-mode="sentences" onClick={() => setGameMode('sentences')}>
+                  <div className="mode-icon">🧱</div>
                   <div className="mode-info">
-                    <h3>Speech Practice</h3>
-                    <p>Practice pronunciation with voice recognition</p>
+                    <h3>Build Sentences</h3>
+                    <p>Arrange words into sentences</p>
                   </div>
                 </div>
               </div>
@@ -1975,42 +1967,47 @@ export default function UkrainianTypingGame() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 1rem 2rem;
-          background: rgba(0,0,0,0.3);
-          border-bottom: 3px solid #ffd700;
+          padding: 0.6rem 1.5rem;
+          background: rgba(0,0,0,0.35);
+          border-bottom: 2px solid rgba(255,215,0,0.3);
           position: relative;
           z-index: 10;
+        }
+
+        .header-left {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
         }
 
         .logo {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.5rem;
         }
 
         .logo-icon {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         .logo-text {
           font-family: 'Press Start 2P', cursive;
-          font-size: 1rem;
+          font-size: 0.8rem;
           color: #ffd700;
-          text-shadow: 2px 2px 0 #0057b7;
+          text-shadow: 1px 1px 0 #0057b7;
         }
 
         .language-switcher {
           display: flex;
-          gap: 0.25rem;
-          margin-left: 0.75rem;
+          gap: 0.2rem;
         }
 
         .lang-btn {
-          background: rgba(255,255,255,0.1);
+          background: rgba(255,255,255,0.08);
           border: 2px solid transparent;
-          border-radius: 8px;
-          font-size: 1.3rem;
-          padding: 0.25rem 0.4rem;
+          border-radius: 6px;
+          font-size: 1.1rem;
+          padding: 0.15rem 0.3rem;
           cursor: pointer;
           transition: all 0.2s;
           line-height: 1;
@@ -2024,47 +2021,69 @@ export default function UkrainianTypingGame() {
         .lang-btn.active {
           border-color: #ffd700;
           background: rgba(255,215,0,0.2);
-          box-shadow: 0 0 8px rgba(255,215,0,0.4);
+          box-shadow: 0 0 6px rgba(255,215,0,0.3);
         }
 
-        .header-center {
-          flex: 1;
-          display: flex;
-          justify-content: center;
+        .header-divider {
+          width: 1px;
+          height: 1.4rem;
+          background: rgba(255,255,255,0.15);
+          margin: 0 0.25rem;
         }
 
-        .stat-group {
+        .header-action-btn {
+          background: rgba(255,255,255,0.06);
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 8px;
+          color: rgba(255,255,255,0.7);
+          padding: 0.3rem 0.6rem;
+          cursor: pointer;
+          font-size: 0.78rem;
+          font-family: inherit;
+          font-weight: 500;
+          white-space: nowrap;
+          transition: all 0.2s;
+        }
+
+        .header-action-btn:hover {
+          background: rgba(255,215,0,0.12);
+          border-color: rgba(255,215,0,0.35);
+          color: #ffd700;
+        }
+
+        .header-right {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          gap: 0.5rem;
         }
 
         .stat {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
-          background: rgba(255,255,255,0.1);
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
+          gap: 0.35rem;
+          background: rgba(255,255,255,0.08);
+          padding: 0.3rem 0.7rem;
+          border-radius: 16px;
+          font-size: 0.85rem;
         }
 
         .stat-icon {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         .stat-value {
           font-weight: 700;
-          font-size: 1.1rem;
+          font-size: 0.9rem;
         }
 
         .xp-bar {
-          width: 150px;
-          height: 24px;
+          width: 120px;
+          height: 20px;
           background: rgba(0,0,0,0.4);
-          border-radius: 12px;
+          border-radius: 10px;
           overflow: hidden;
           position: relative;
-          border: 2px solid #ffd700;
+          border: 1.5px solid rgba(255,215,0,0.5);
         }
 
         .xp-fill {
@@ -2078,14 +2097,9 @@ export default function UkrainianTypingGame() {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 0.75rem;
+          font-size: 0.65rem;
           font-weight: 700;
-          text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        }
-
-        .header-right {
-          display: flex;
-          gap: 1rem;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
         }
 
         /* Main content */
@@ -2635,45 +2649,6 @@ export default function UkrainianTypingGame() {
           opacity: 0.7;
         }
         
-        .menu-actions {
-          margin-top: 1.5rem;
-          gap: 1rem;
-        }
-        
-        .explore-button {
-          background: linear-gradient(135deg, rgba(0,87,183,0.3), rgba(0,87,183,0.2));
-          border: 2px solid rgba(0,87,183,0.5);
-          color: #fff;
-          padding: 0.75rem 1.5rem;
-          border-radius: 12px;
-          cursor: pointer;
-          font-size: 1rem;
-          font-family: inherit;
-          transition: all 0.3s;
-        }
-        
-        .explore-button:hover {
-          background: rgba(0,87,183,0.4);
-          border-color: #4dabf7;
-          transform: translateY(-2px);
-        }
-        
-        .setup-button {
-          background: rgba(255,255,255,0.1);
-          border: 2px solid rgba(255,255,255,0.3);
-          color: #fff;
-          padding: 0.75rem 1.5rem;
-          border-radius: 12px;
-          cursor: pointer;
-          font-size: 1rem;
-          font-family: inherit;
-          transition: all 0.3s;
-        }
-        
-        .setup-button:hover {
-          background: rgba(255,255,255,0.2);
-          border-color: #ffd700;
-        }
         
         /* Explore Screen */
         .explore-screen {
