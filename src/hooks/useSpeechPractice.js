@@ -26,8 +26,10 @@ export default function useSpeechPractice({ langCode, langName, onResult }) {
   const onTranscript = useCallback((text) => {
     const target = targetRef.current;
     if (!target) return;
-    const sim = similarity(target, text);
-    const diff = computeDiff(target, text);
+    // For single-word targets, strip spaces from transcript (Whisper may insert them)
+    const compareText = !target.includes(' ') ? text.replace(/\s+/g, '') : text;
+    const sim = similarity(target, compareText);
+    const diff = computeDiff(target, compareText);
     const match = sim >= 90 ? 'correct' : sim >= 70 ? 'close' : 'miss';
     const result = { match, transcript: text, similarity: sim, diff };
     setFeedback(result);
