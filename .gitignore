@@ -3,11 +3,13 @@ dist
 .claude
 .cert
 .venv
-tts-cache
+tts-cache/
+tts-cache-en/
+tts-cache-ru/
 *.egg-info
 __pycache__
 
 # TTS model files (large, download separately)
 tts-model/
 tts-model-ru/
-tts-cache-ru/
+tts-model-en/

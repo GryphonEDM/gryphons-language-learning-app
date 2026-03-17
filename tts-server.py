@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
-import hashlib
 import os
 import sys
 import tempfile
@@ -10,8 +9,6 @@ import torch
 # Resolve all paths relative to this script's directory
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 TTS_MODEL_DIR = os.path.join(SCRIPT_DIR, "tts-model")
-CACHE_DIR = os.path.join(SCRIPT_DIR, "tts-cache")
-RU_CACHE_DIR = os.path.join(SCRIPT_DIR, "tts-cache-ru")
 RU_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-ru", "v5_ru.pt")
 
 # Add the TTS repo to path
@@ -30,9 +27,6 @@ except Exception as e:
 app = Flask(__name__)
 CORS(app)
 
-# Cache directories
-os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(RU_CACHE_DIR, exist_ok=True)
 
 # === Ukrainian TTS (ESPnet) ===
 print("Loading Ukrainian TTS model (Oleksa voice)...")
@@ -57,9 +51,7 @@ RU_SAMPLE_RATE = 48000
 print(f"[OK] Russian TTS model loaded! (speaker: {RU_SPEAKER})")
 
 # === English TTS (Silero v3) ===
-EN_CACHE_DIR = os.path.join(SCRIPT_DIR, "tts-cache-en")
 EN_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-en", "v3_en.pt")
-os.makedirs(EN_CACHE_DIR, exist_ok=True)
 os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-en"), exist_ok=True)
 
 print("Loading English TTS model (Silero v3)...")
@@ -192,52 +184,49 @@ def generate_tts():
         return {'error': str(e)}, 500
 
 def generate_ukrainian_tts(text):
-    cache_key = hashlib.md5(f"uk_{text}".encode()).hexdigest()
-    cache_path = os.path.join(CACHE_DIR, f"{cache_key}.wav")
-
-    if os.path.exists(cache_path):
-        print(f"[TTS-UK] Cache hit: {len(text)} chars")
-        return send_file(cache_path, mimetype='audio/wav')
-
     print(f"[TTS-UK] Generating: {len(text)} chars")
-    with open(cache_path, mode="wb") as file:
-        _, output_text = tts_uk.tts(text, Voices.Oleksa.value, Stress.Dictionary.value, file)
-
-    print(f"[TTS-UK] Generated successfully")
-    return send_file(cache_path, mimetype='audio/wav')
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+        _, output_text = tts_uk.tts(text, Voices.Oleksa.value, Stress.Dictionary.value, tmp)
+    try:
+        print(f"[TTS-UK] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
 
 def generate_english_tts(text):
-    cache_key = hashlib.md5(f"en_{text}".encode()).hexdigest()
-    cache_path = os.path.join(EN_CACHE_DIR, f"{cache_key}.wav")
-
-    if os.path.exists(cache_path):
-        print(f"[TTS-EN] Cache hit: {len(text)} chars")
-        return send_file(cache_path, mimetype='audio/wav')
-
     print(f"[TTS-EN] Generating: {len(text)} chars")
-    tts_en.save_wav(text=text, speaker=EN_SPEAKER, sample_rate=EN_SAMPLE_RATE, audio_path=cache_path)
-
-    print(f"[TTS-EN] Generated successfully")
-    return send_file(cache_path, mimetype='audio/wav')
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    tts_en.save_wav(text=text, speaker=EN_SPEAKER, sample_rate=EN_SAMPLE_RATE, audio_path=tmp_path)
+    try:
+        print(f"[TTS-EN] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
 
 def generate_russian_tts(text):
-    cache_key = hashlib.md5(f"ru_{text}".encode()).hexdigest()
-    cache_path = os.path.join(RU_CACHE_DIR, f"{cache_key}.wav")
-
-    if os.path.exists(cache_path):
-        print(f"[TTS-RU] Cache hit: {len(text)} chars")
-        return send_file(cache_path, mimetype='audio/wav')
-
     print(f"[TTS-RU] Generating: {len(text)} chars")
-    tts_ru.save_wav(text=text, speaker=RU_SPEAKER, sample_rate=RU_SAMPLE_RATE, audio_path=cache_path)
-
-    print(f"[TTS-RU] Generated successfully")
-    return send_file(cache_path, mimetype='audio/wav')
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    tts_ru.save_wav(text=text, speaker=RU_SPEAKER, sample_rate=RU_SAMPLE_RATE, audio_path=tmp_path)
+    try:
+        print(f"[TTS-RU] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
 
 if __name__ == '__main__':
-    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian)")
-    print(f"   UK Cache: {CACHE_DIR}")
-    print(f"   RU Cache: {RU_CACHE_DIR}")
-    print(f"   STT:      {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
+    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian + English)")
+    print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)
