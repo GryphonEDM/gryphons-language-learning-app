@@ -386,6 +386,7 @@ export default function UkrainianTypingGame() {
 
   // Load saved progress for current language
   const loadProgress = useCallback((langCode) => {
+    hasLoadedRef.current = false;
     const lang = getLanguageData(langCode);
     try {
       const saved = localStorage.getItem(lang.storageKey);
@@ -418,15 +419,28 @@ export default function UkrainianTypingGame() {
     } catch (e) {
       console.log('[Save] Could not load saved progress:', e);
     }
+    // Set synchronously after all setState calls — the save effect runs on the
+    // NEXT render when React has committed the loaded values, so it will see
+    // hasLoadedRef=true AND the correct loaded state together.
+    hasLoadedRef.current = true;
+    console.log('[Save] Ready to save');
   }, []);
+
+  // Helper to build save data from current state
+  const buildSaveData = useCallback(() => ({
+    xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount,
+    bestStreak, achievements, typedVowels,
+    showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume,
+    modeProgress, vocabularyMastery, customFlashcards
+  }), [xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount, bestStreak, achievements, typedVowels, showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume, modeProgress, vocabularyMastery, customFlashcards]);
+
+  // Keep a ref to current save data + key so beforeunload/visibilitychange can access it
+  const saveDataRef = useRef(null);
+  const saveKeyRef = useRef(null);
 
   // Load on mount
   useEffect(() => {
     loadProgress(currentLanguage);
-    setTimeout(() => {
-      hasLoadedRef.current = true;
-      console.log('[Save] Ready to save');
-    }, 100);
   }, []);
 
   // Save progress when it changes (only after initial load)
@@ -436,34 +450,60 @@ export default function UkrainianTypingGame() {
       return;
     }
     try {
-      const data = {
-        xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount,
-        bestStreak, achievements, typedVowels,
-        showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume,
-        modeProgress, vocabularyMastery, customFlashcards
-      };
+      const data = buildSaveData();
+      // Update refs so beforeunload/visibilitychange always have latest state
+      saveDataRef.current = data;
+      saveKeyRef.current = langData.storageKey;
       localStorage.setItem(langData.storageKey, JSON.stringify(data));
       console.log(`[Save] Saved ${currentLanguage} progress - XP:`, xp, 'Letters:', totalLettersTyped);
     } catch (e) {
       console.log('[Save] Could not save progress:', e);
     }
-  }, [xp, totalLettersTyped, totalWordsCompleted, perfectWordsCount, bestStreak, achievements, typedVowels, showTranslations, showPronunciation, soundEnabled, ttsEnabled, ttsVolume, modeProgress, vocabularyMastery, customFlashcards, langData.storageKey]);
+  }, [buildSaveData, langData.storageKey]);
+
+  // Save progress on page close/hide to prevent data loss
+  useEffect(() => {
+    const flushSave = () => {
+      if (saveDataRef.current && saveKeyRef.current) {
+        try {
+          localStorage.setItem(saveKeyRef.current, JSON.stringify(saveDataRef.current));
+          console.log('[Save] Flushed progress on page hide/unload');
+        } catch (e) {
+          // Best-effort
+        }
+      }
+    };
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') flushSave();
+    };
+    window.addEventListener('beforeunload', flushSave);
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    return () => {
+      window.removeEventListener('beforeunload', flushSave);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+    };
+  }, []);
 
   // Language switching handler
   const switchLanguage = useCallback((newLang) => {
     if (newLang === currentLanguage) return;
-    // Save current progress first (already saved via effect)
-    hasLoadedRef.current = false;
+    // Explicitly save current language's progress before switching
+    try {
+      const data = buildSaveData();
+      localStorage.setItem(langData.storageKey, JSON.stringify(data));
+      console.log(`[Save] Saved ${currentLanguage} progress before language switch - XP:`, data.xp);
+    } catch (e) {
+      console.log('[Save] Could not save before language switch:', e);
+    }
     setCurrentLanguage(newLang);
     localStorage.setItem('typingGameLanguage', newLang);
     setGameMode('menu');
     setStreak(0);
     setExploreSelectedKey(null);
     setSelectedVocabSet(null);
-    // Load new language progress
+    // Load new language progress (also sets hasLoadedRef)
     loadProgress(newLang);
-    setTimeout(() => { hasLoadedRef.current = true; }, 100);
-  }, [currentLanguage, loadProgress]);
+  }, [currentLanguage, loadProgress, buildSaveData, langData.storageKey]);
   
   // Get unlocked levels based on XP
   const getUnlockedLevels = useCallback(() => {
