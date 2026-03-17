@@ -430,6 +430,16 @@ export default function UkrainianTypingGame() {
   // Keep a ref to current save data + key so beforeunload/visibilitychange can access it
   const saveDataRef = useRef(null);
   const saveKeyRef = useRef(null);
+  const mainRef = useRef(null);
+
+  // Scroll to content when entering a module, scroll to top when returning to menu
+  useEffect(() => {
+    if (gameMode !== 'menu') {
+      mainRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [gameMode]);
 
   // Load on mount
   useEffect(() => {
@@ -1081,7 +1091,7 @@ export default function UkrainianTypingGame() {
       </header>
 
       {/* Main content */}
-      <main className="game-main">
+      <main className="game-main" ref={mainRef}>
         {gameMode === 'menu' ? (
           <div className="menu-screen">
             <div className="menu-hero">
