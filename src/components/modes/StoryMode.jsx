@@ -7,7 +7,7 @@ import { stopSpeaking } from '../../App.jsx';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import SpeechPracticeModal from '../shared/SpeechPracticeModal.jsx';
-import { storageSet } from '../../utils/storage.js';
+import { storageGet, storageSet } from '../../utils/storage.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -29,7 +29,7 @@ const SpinKeyframes = () => (
 
 function loadAiStories() {
   try {
-    return JSON.parse(localStorage.getItem('aiStories') || '[]');
+    return JSON.parse(storageGet('aiStories') || '[]');
   } catch { return []; }
 }
 

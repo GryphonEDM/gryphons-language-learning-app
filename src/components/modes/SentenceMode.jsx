@@ -5,7 +5,7 @@ import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
-import { storageSet } from '../../utils/storage.js';
+import { storageGet, storageSet } from '../../utils/storage.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -27,7 +27,7 @@ const SpinKeyframes = () => (
 
 function loadAiSentenceSets() {
   try {
-    return JSON.parse(localStorage.getItem('aiSentenceSets') || '[]');
+    return JSON.parse(storageGet('aiSentenceSets') || '[]');
   } catch { return []; }
 }
 

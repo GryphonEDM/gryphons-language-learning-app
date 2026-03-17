@@ -5,7 +5,7 @@ import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
-import { storageSet } from '../../utils/storage.js';
+import { storageGet, storageSet } from '../../utils/storage.js';
 
 const RANDOM_DIALOGUE_TOPICS = {
   A1: ['greeting a neighbor', 'ordering coffee', 'buying fruit at the market', 'asking for directions', 'at the bus stop', 'meeting a classmate', 'at the pharmacy', 'checking into a hotel', 'ordering food at a cafe', 'introducing your family'],
@@ -27,7 +27,7 @@ const SpinKeyframes = () => (
 
 function loadAiDialogues() {
   try {
-    return JSON.parse(localStorage.getItem('aiDialogues') || '[]');
+    return JSON.parse(storageGet('aiDialogues') || '[]');
   } catch { return []; }
 }
 

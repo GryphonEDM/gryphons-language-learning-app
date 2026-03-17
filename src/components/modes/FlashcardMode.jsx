@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { storageGet, storageSet } from '../../utils/storage.js';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
@@ -35,7 +36,7 @@ export default function FlashcardMode({
   const [selectedExampleWord, setSelectedExampleWord] = useState(null);
   const [addWordForm, setAddWordForm] = useState(null); // null or { uk, en }
   const [userDict, setUserDict] = useState(() => {
-    try { return JSON.parse(localStorage.getItem('userDictionary') || '{}'); }
+    try { return JSON.parse(storageGet('userDictionary') || '{}'); }
     catch { return {}; }
   });
   const dict = buildDictionary(langCode);
@@ -244,7 +245,7 @@ export default function FlashcardMode({
     const key = uk.toLowerCase();
     const newDict = { ...userDict, [key]: en };
     setUserDict(newDict);
-    localStorage.setItem('userDictionary', JSON.stringify(newDict));
+    storageSet('userDictionary', JSON.stringify(newDict));
     setSelectedExampleWord(prev => prev ? { ...prev, translation: en } : prev);
     setAddWordForm(null);
   }, [userDict]);

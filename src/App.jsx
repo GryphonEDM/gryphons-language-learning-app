@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { storageSet, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
+import { storageGet, storageSet, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -352,10 +352,8 @@ export default function UkrainianTypingGame() {
   const [authState, setAuthState] = useState('checking'); // 'checking' | 'login' | 'authed'
   const [authUsername, setAuthUsername] = useState('');
 
-  // Language state
-  const [currentLanguage, setCurrentLanguage] = useState(() => {
-    try { return localStorage.getItem('typingGameLanguage') || 'uk'; } catch { return 'uk'; }
-  });
+  // Language state — default 'uk' until initFromServer populates the cache
+  const [currentLanguage, setCurrentLanguage] = useState('uk');
   const langData = getLanguageData(currentLanguage);
 
   // TTS wrapper that passes current language, handles mixed Cyrillic/Latin text
@@ -463,7 +461,7 @@ export default function UkrainianTypingGame() {
     setIsReadyToSave(false);
     const lang = getLanguageData(langCode);
     try {
-      const saved = localStorage.getItem(lang.storageKey);
+      const saved = storageGet(lang.storageKey);
       console.log(`[Save] Loading ${langCode} progress:`, saved ? 'found' : 'none');
       if (saved) {
         const data = JSON.parse(saved);
@@ -554,9 +552,9 @@ export default function UkrainianTypingGame() {
         setAuthState('login');
         return;
       }
-      const lang = localStorage.getItem('typingGameLanguage') || 'uk';
+      const lang = storageGet('typingGameLanguage') || 'uk';
       setCurrentLanguage(lang);
-      setAuthEmail(localStorage.getItem('authUsername') || '');
+      setAuthUsername(localStorage.getItem('authUsername') || '');
       setAuthState('authed');
       loadProgress(lang);
     });
@@ -1158,7 +1156,7 @@ export default function UkrainianTypingGame() {
     setAuthToken(token);
     localStorage.setItem('authUsername', username);
     await initFromServer(token);
-    const lang = localStorage.getItem('typingGameLanguage') || 'uk';
+    const lang = storageGet('typingGameLanguage') || 'uk';
     setCurrentLanguage(lang);
     setAuthUsername(username);
     setAuthState('authed');

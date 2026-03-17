@@ -1,10 +1,10 @@
 /**
- * storage.js — localStorage + server sync abstraction.
+ * storage.js — server-first storage with in-memory cache.
  *
- * localStorage remains the synchronous read/write cache.
- * Every write also fires an async PUT to the server (fire-and-forget).
- * On login, initFromServer() loads all server data into localStorage
- * (or uploads existing localStorage data if the account is new).
+ * On login, initFromServer() fetches ALL data from the server and
+ * populates the in-memory _cache. All reads use the cache (synchronous).
+ * All writes go to the server AND update the cache. localStorage is
+ * never used for app data — only authToken and authUsername live there.
  */
 
 const ALL_KEYS = [
@@ -20,6 +20,9 @@ const ALL_KEYS = [
   'grammar_completed_ru',
 ];
 
+// In-memory cache — populated from server at login
+const _cache = {};
+
 let _authToken = localStorage.getItem('authToken');
 
 export function setAuthToken(token) {
@@ -30,36 +33,36 @@ export function setAuthToken(token) {
 export function clearAuthToken() {
   _authToken = null;
   localStorage.removeItem('authToken');
+  Object.keys(_cache).forEach(k => delete _cache[k]);
 }
 
 export function getAuthToken() {
   return _authToken;
 }
 
-function syncToServer(key, value) {
+/** Read from in-memory cache (populated from server at login). */
+export function storageGet(key) {
+  return _cache[key] ?? null;
+}
+
+/** Write to server and update cache. Never touches localStorage. */
+export function storageSet(key, value) {
+  _cache[key] = value;
   if (!_authToken) return;
   fetch(`/api/data/${encodeURIComponent(key)}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${_authToken}`,
+      Authorization: `Bearer ${_authToken}`,
     },
     body: JSON.stringify({ value }),
   }).catch(() => {});
 }
 
-/** Write to localStorage and sync to server. Drop-in replacement for localStorage.setItem. */
-export function storageSet(key, value) {
-  localStorage.setItem(key, value);
-  syncToServer(key, value);
-}
-
 /**
- * Called once after login/register.
- * - If server has data: loads it into localStorage (server wins).
- * - If server is empty (new account): awaits upload of existing localStorage data so
- *   other devices see it immediately on their next login.
- * Returns false if the token is invalid (401), true otherwise.
+ * Fetch all data from server into the in-memory cache.
+ * For new accounts: migrate existing localStorage data to server (awaited).
+ * Returns false if token is invalid (401).
  */
 export async function initFromServer(token) {
   const t = token || _authToken;
@@ -69,18 +72,18 @@ export async function initFromServer(token) {
       headers: { Authorization: `Bearer ${t}` },
     });
     if (res.status === 401) return false;
-    if (!res.ok) return true; // server error — assume token is fine, app uses localStorage
+    if (!res.ok) return true;
 
     const serverData = await res.json();
     const serverKeys = Object.keys(serverData);
 
     if (serverKeys.length === 0) {
-      // New account — upload existing localStorage data to server synchronously
-      // (must await so other devices see it on their very next login)
+      // New account — migrate existing localStorage data to server synchronously
       const uploads = [];
       for (const key of ALL_KEYS) {
         const val = localStorage.getItem(key);
         if (val !== null) {
+          _cache[key] = val;
           uploads.push(
             fetch(`/api/data/${encodeURIComponent(key)}`, {
               method: 'PUT',
@@ -95,14 +98,13 @@ export async function initFromServer(token) {
       }
       await Promise.all(uploads);
     } else {
-      // Existing account — server wins, load into localStorage
+      // Populate cache from server — server is the source of truth
       for (const [key, value] of Object.entries(serverData)) {
-        localStorage.setItem(key, value);
+        _cache[key] = value;
       }
     }
     return true;
   } catch {
-    // Network error — assume token is fine, app works from localStorage
     return true;
   }
 }

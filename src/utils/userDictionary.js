@@ -1,9 +1,9 @@
-import { storageSet } from './storage.js';
+import { storageGet, storageSet } from './storage.js';
 
 const KEY = 'userDictionary';
 
 export function getUserDict() {
-  try { return JSON.parse(localStorage.getItem(KEY) || '{}'); }
+  try { return JSON.parse(storageGet(KEY) || '{}'); }
   catch { return {}; }
 }
 

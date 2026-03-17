@@ -4,13 +4,13 @@ import { stopSpeaking } from '../../App.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import { WordToolbar } from '../shared/WordToolbar.jsx';
 
-import { storageSet } from '../../utils/storage.js';
+import { storageGet, storageSet } from '../../utils/storage.js';
 
 const STORAGE_KEY = 'chat_practice_sessions';
 
 function loadSessions() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    return JSON.parse(storageGet(STORAGE_KEY) || '[]');
   } catch {
     return [];
   }

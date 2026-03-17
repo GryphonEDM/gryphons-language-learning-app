@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { storageSet } from '../../utils/storage.js';
+import { storageGet, storageSet } from '../../utils/storage.js';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
@@ -43,7 +43,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   const [completedLessons, setCompletedLessons] = useState(() => {
     try {
       const key = `grammar_completed_${langCode}`;
-      return JSON.parse(localStorage.getItem(key)) || {};
+      return JSON.parse(storageGet(key)) || {};
     } catch { return {}; }
   });
 
