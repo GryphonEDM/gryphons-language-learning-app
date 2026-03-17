@@ -359,6 +359,7 @@ IMPORTANT RULES:
         characters: dialogue.characters || { npc: { name: langCode === 'ru' ? 'Собеседник' : 'Співрозмовник' }, player: { name: playerName } },
         exchanges: dialogue.exchanges,
         difficulty: aiDifficulty,
+        langCode,
         source: 'ai',
         createdAt: Date.now(),
       };
@@ -392,11 +393,11 @@ IMPORTANT RULES:
             </div>
           </div>
 
-          {/* Saved AI Dialogues */}
-          {aiDialogues.length > 0 && (
+          {/* Saved AI Dialogues (filtered by current language) */}
+          {aiDialogues.filter(d => !d.langCode || d.langCode === langCode).length > 0 && (
             <div style={styles.listSection}>
               <h2 style={styles.sectionHeading}>Your AI Dialogues</h2>
-              {aiDialogues.map((d) => (
+              {aiDialogues.filter(d => !d.langCode || d.langCode === langCode).map((d) => (
                 <div
                   key={d.id}
                   style={styles.listRow}
