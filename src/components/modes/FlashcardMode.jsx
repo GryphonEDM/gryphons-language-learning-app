@@ -287,6 +287,129 @@ export default function FlashcardMode({
             </div>
           </div>
         </div>
+
+      {/* Interactive Example Sentence */}
+      {isFlipped && currentWord.examples && currentWord.examples.length > 0 && (
+        <div style={{...styles.sidebarCard, marginTop: '1rem'}}>
+          <div style={styles.exampleHeader}>
+            <div style={{...styles.sidebarTitle, marginBottom: 0}}>Use in a sentence</div>
+            <button
+              style={styles.exampleReadBtn}
+              onClick={(e) => { e.stopPropagation(); if (ttsEnabled && onSpeak) onSpeak(currentWord.examples.join('. '), 0.85, ttsVolume); }}
+            >
+              🔊 Read
+            </button>
+          </div>
+          {currentWord.examples.map((ex, exIdx) => {
+            const tokens = ex.split(/(\s+)/);
+            const enTranslation = currentWord.examplesEn && currentWord.examplesEn[exIdx];
+            return (
+              <div key={exIdx} style={styles.exampleBlock}>
+                <div style={styles.exampleSentence}>
+                  {tokens.map((token, i) => {
+                    const isWhitespace = /^\s+$/.test(token);
+                    if (isWhitespace) return <span key={`${exIdx}-${i}`}>{token}</span>;
+                    const tokenKey = `${exIdx}-${i}`;
+                    const isSelected = selectedExampleWord && selectedExampleWord.index === tokenKey;
+                    return (
+                      <span
+                        key={tokenKey}
+                        style={{
+                          ...styles.exampleWord,
+                          ...(isSelected ? styles.exampleWordSelected : {})
+                        }}
+                        onClick={(e) => { e.stopPropagation(); handleExampleWordClick(token, tokenKey); }}
+                      >
+                        {token}
+                      </span>
+                    );
+                  })}
+                </div>
+                {enTranslation && (
+                  <div style={styles.exampleTranslation}>{enTranslation}</div>
+                )}
+              </div>
+            );
+          })}
+
+          {/* Word Info Panel */}
+          {selectedExampleWord && (
+            <div style={styles.wordPanel}>
+              <div style={styles.wordPanelWord}>{selectedExampleWord.word}</div>
+              {selectedExampleWord.translation ? (
+                <div style={styles.wordPanelTranslation}>= "{selectedExampleWord.translation}"</div>
+              ) : (
+                <>
+                  <div style={styles.wordPanelNoResult}>No translation found</div>
+                  {!addWordForm && (
+                    <button
+                      style={styles.addWordBtn}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const exIdx = parseInt((selectedExampleWord.index || '0').split('-')[0]);
+                        const contextSentence = currentWord.examples?.[exIdx] || '';
+                        setAddWordForm({ uk: selectedExampleWord.word, en: '', translating: true });
+                        translateWithLLM(selectedExampleWord.word, contextSentence).then(translation => {
+                          setAddWordForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
+                        });
+                      }}
+                    >
+                      + Add to dictionary
+                    </button>
+                  )}
+                </>
+              )}
+              <button
+                style={styles.wordPanelSpeak}
+                onClick={(e) => { e.stopPropagation(); ttsEnabled && onSpeak && onSpeak(selectedExampleWord.word, 0.7, ttsVolume); }}
+              >
+                🔊 Hear again
+              </button>
+            </div>
+          )}
+
+          {/* Add Word Form */}
+          {addWordForm && (
+            <div style={styles.addWordForm} onClick={e => e.stopPropagation()}>
+              <div style={styles.addWordTitle}>Add to dictionary</div>
+              <div style={{...styles.addWordRow, flexDirection: 'column'}}>
+                <div style={styles.addWordField}>
+                  <label style={styles.addWordLabel}>Ukrainian</label>
+                  <input style={styles.addWordInput} value={addWordForm.uk} readOnly />
+                </div>
+                <div style={{...styles.addWordArrow, textAlign: 'center'}}>↓</div>
+                <div style={styles.addWordField}>
+                  <label style={styles.addWordLabel}>
+                    English meaning {addWordForm.translating && <span style={styles.translatingLabel}>translating…</span>}
+                  </label>
+                  <input
+                    style={{ ...styles.addWordInput, ...(addWordForm.translating ? { opacity: 0.5 } : {}) }}
+                    value={addWordForm.en}
+                    onChange={e => setAddWordForm(prev => ({ ...prev, en: e.target.value }))}
+                    placeholder={addWordForm.translating ? 'Getting translation…' : 'Enter translation...'}
+                    autoFocus={!addWordForm.translating}
+                    disabled={addWordForm.translating}
+                    onKeyDown={e => {
+                      if (e.key === 'Enter') saveToUserDict(addWordForm.uk, addWordForm.en);
+                      if (e.key === 'Escape') setAddWordForm(null);
+                    }}
+                  />
+                </div>
+              </div>
+              <div style={styles.addWordActions}>
+                <button style={styles.addWordCancel} onClick={() => setAddWordForm(null)}>Cancel</button>
+                <button
+                  style={styles.addWordSave}
+                  onClick={() => saveToUserDict(addWordForm.uk, addWordForm.en)}
+                  disabled={addWordForm.translating || !addWordForm.en.trim()}
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
       </div>
 
       {/* Main Content */}
@@ -373,128 +496,6 @@ export default function FlashcardMode({
         </div>
       )}
 
-      {/* Interactive Example Sentence */}
-      {isFlipped && currentWord.examples && currentWord.examples.length > 0 && (
-        <div style={styles.exampleSection}>
-          <div style={styles.exampleHeader}>
-            <div style={styles.exampleLabel}>💬 Use in a sentence</div>
-            <button
-              style={styles.exampleReadBtn}
-              onClick={(e) => { e.stopPropagation(); if (ttsEnabled && onSpeak) onSpeak(currentWord.examples.join('. '), 0.85, ttsVolume); }}
-            >
-              🔊 Read
-            </button>
-          </div>
-          {currentWord.examples.map((ex, exIdx) => {
-            const tokens = ex.split(/(\s+)/);
-            const enTranslation = currentWord.examplesEn && currentWord.examplesEn[exIdx];
-            return (
-              <div key={exIdx} style={styles.exampleBlock}>
-                <div style={styles.exampleSentence}>
-                  {tokens.map((token, i) => {
-                    const isWhitespace = /^\s+$/.test(token);
-                    if (isWhitespace) return <span key={`${exIdx}-${i}`}>{token}</span>;
-                    const tokenKey = `${exIdx}-${i}`;
-                    const isSelected = selectedExampleWord && selectedExampleWord.index === tokenKey;
-                    return (
-                      <span
-                        key={tokenKey}
-                        style={{
-                          ...styles.exampleWord,
-                          ...(isSelected ? styles.exampleWordSelected : {})
-                        }}
-                        onClick={(e) => { e.stopPropagation(); handleExampleWordClick(token, tokenKey); }}
-                      >
-                        {token}
-                      </span>
-                    );
-                  })}
-                </div>
-                {enTranslation && (
-                  <div style={styles.exampleTranslation}>{enTranslation}</div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Word Info Panel */}
-      {isFlipped && selectedExampleWord && (
-        <div style={styles.wordPanel}>
-          <div style={styles.wordPanelWord}>{selectedExampleWord.word}</div>
-          {selectedExampleWord.translation ? (
-            <div style={styles.wordPanelTranslation}>= "{selectedExampleWord.translation}"</div>
-          ) : (
-            <>
-              <div style={styles.wordPanelNoResult}>No translation found</div>
-              {!addWordForm && (
-                <button
-                  style={styles.addWordBtn}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    const exIdx = parseInt((selectedExampleWord.index || '0').split('-')[0]);
-                    const contextSentence = currentWord.examples?.[exIdx] || '';
-                    setAddWordForm({ uk: selectedExampleWord.word, en: '', translating: true });
-                    translateWithLLM(selectedExampleWord.word, contextSentence).then(translation => {
-                      setAddWordForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
-                    });
-                  }}
-                >
-                  + Add to dictionary
-                </button>
-              )}
-            </>
-          )}
-          <button
-            style={styles.wordPanelSpeak}
-            onClick={(e) => { e.stopPropagation(); ttsEnabled && onSpeak && onSpeak(selectedExampleWord.word, 0.7, ttsVolume); }}
-          >
-            🔊 Hear again
-          </button>
-        </div>
-      )}
-
-      {/* Add Word Form */}
-      {isFlipped && addWordForm && (
-        <div style={styles.addWordForm} onClick={e => e.stopPropagation()}>
-          <div style={styles.addWordTitle}>Add to dictionary</div>
-          <div style={styles.addWordRow}>
-            <div style={styles.addWordField}>
-              <label style={styles.addWordLabel}>Ukrainian</label>
-              <input style={styles.addWordInput} value={addWordForm.uk} readOnly />
-            </div>
-            <div style={styles.addWordArrow}>→</div>
-            <div style={styles.addWordField}>
-              <label style={styles.addWordLabel}>
-                English meaning {addWordForm.translating && <span style={styles.translatingLabel}>translating…</span>}
-              </label>
-              <input
-                style={{ ...styles.addWordInput, ...(addWordForm.translating ? { opacity: 0.5 } : {}) }}
-                value={addWordForm.en}
-                onChange={e => setAddWordForm(prev => ({ ...prev, en: e.target.value }))}
-                placeholder={addWordForm.translating ? 'Getting translation…' : 'Enter translation...'}
-                autoFocus={!addWordForm.translating}
-                disabled={addWordForm.translating}
-                onKeyDown={e => {
-                  if (e.key === 'Enter') saveToUserDict(addWordForm.uk, addWordForm.en);
-                  if (e.key === 'Escape') setAddWordForm(null);
-                }}
-              />
-            </div>
-          </div>
-          <div style={styles.addWordActions}>
-            <button style={styles.addWordCancel} onClick={() => setAddWordForm(null)}>Cancel</button>
-            <button
-              style={styles.addWordSave}
-              onClick={() => saveToUserDict(addWordForm.uk, addWordForm.en)}
-              disabled={addWordForm.translating || !addWordForm.en.trim()}
-            >
-              Save
-            </button>
-          </div>
-        </div>
-      )}
 
       {!isFlipped && (
         <div style={styles.flipHint}>
@@ -525,14 +526,15 @@ const styles = {
   sidebar: {
     width: '240px',
     flexShrink: 0,
+    position: 'sticky',
+    top: '2rem',
+    alignSelf: 'flex-start',
   },
   sidebarCard: {
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '16px',
     padding: '1.25rem',
     border: '1px solid rgba(255,215,0,0.12)',
-    position: 'sticky',
-    top: '2rem',
   },
   sidebarTitle: {
     fontSize: '0.8rem',
@@ -679,8 +681,6 @@ const styles = {
     marginTop: '2rem'
   },
   exampleSection: {
-    maxWidth: '600px',
-    margin: '0 auto 1.5rem',
     background: 'rgba(0,0,0,0.3)',
     borderRadius: '16px',
     padding: '1.25rem 1.5rem',
@@ -714,8 +714,8 @@ const styles = {
     marginBottom: '0.75rem'
   },
   exampleSentence: {
-    fontSize: '1.3rem',
-    lineHeight: '2.2',
+    fontSize: '1rem',
+    lineHeight: '1.8',
     letterSpacing: '0.02em',
     marginBottom: '0.15rem'
   },
