@@ -176,7 +176,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
 
     if (currentIdx < items.length - 1) {
       setCurrentIdx(p => p + 1);
-      speech.retry();
+      speech.reset();
       setAttempts(0);
     } else {
       setPhase('complete');
