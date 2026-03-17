@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import { buildDictionary } from '../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../utils/userDictionary.js';
 import { stopSpeaking } from '../App.jsx';
+import useWhisperSTT from './useWhisperSTT.js';
 
 export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
   const dict = buildDictionary(langCode);
@@ -18,6 +19,25 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const inputRef = useRef(null);
   const ttsSpeakingRef = useRef(false);
   const chatPendingRef = useRef(null);
+
+  // Speech-to-text for mic input — set input and auto-send
+  const sendRef = useRef(null);
+  const handleMicTranscript = useCallback((text) => {
+    setInput(text);
+    // Auto-send after a short delay to let state update
+    setTimeout(() => { if (sendRef.current) sendRef.current(text); }, 50);
+  }, []);
+  const stt = useWhisperSTT({ onTranscript: handleMicTranscript });
+  const [micLang, setMicLang] = useState(null);
+  const toggleMic = useCallback((lang) => {
+    if (stt.isListening) {
+      stt.stopListening();
+      setMicLang(null);
+    } else {
+      setMicLang(lang);
+      stt.startListening(lang);
+    }
+  }, [stt]);
 
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
@@ -98,8 +118,8 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     setIsSpeaking(false);
   }, [ttsEnabled, onSpeak, ttsVolume]);
 
-  const send = async () => {
-    const text = input.trim();
+  const send = async (directText) => {
+    const text = (directText || input).trim();
     if (!text || loading) return;
 
     // Cancel any ongoing TTS
@@ -169,6 +189,8 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     }
   };
 
+  sendRef.current = send;
+
   const reset = () => {
     ttsSpeakingRef.current = false;
     setTtsHighlight(null);
@@ -184,5 +206,5 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     setTtsHighlight(null);
   }, []);
 
-  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict };
+  return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode };
 }

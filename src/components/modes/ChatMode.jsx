@@ -309,9 +309,15 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     onTranscript: handleTranscript,
   });
 
+  const [micLang, setMicLang] = useState(null);
   const toggleMic = (lang) => {
-    if (isListening) stopListening();
-    else startListening(lang);
+    if (isListening) {
+      stopListening();
+      setMicLang(null);
+    } else {
+      setMicLang(lang);
+      startListening(lang);
+    }
   };
 
   const stopAll = useCallback(() => {
@@ -484,15 +490,15 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               autoFocus
             />
             <button
-              style={{ ...styles.micBtn, ...(isListening ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
+              style={{ ...styles.micBtn, ...(isListening && micLang === 'en' ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
               onClick={() => toggleMic('en')}
-              disabled={isTranscribing}
+              disabled={isTranscribing || (isListening && micLang !== 'en')}
               title="Speak in English"
             >🎤 EN</button>
             <button
-              style={{ ...styles.micBtn, ...(isListening ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
+              style={{ ...styles.micBtn, ...(isListening && micLang === langCode ? styles.micBtnActive : {}), ...(isTranscribing ? styles.micBtnTranscribing : {}) }}
               onClick={() => toggleMic(langCode)}
-              disabled={isTranscribing}
+              disabled={isTranscribing || (isListening && micLang !== langCode)}
               title={`Speak in ${langName}`}
             >🎤 {langCode === 'ru' ? 'RU' : 'UA'}</button>
             {(isLoading || isSpeaking) && (

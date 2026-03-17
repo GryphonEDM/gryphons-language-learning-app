@@ -5,7 +5,8 @@ import React from 'react';
  * Place alongside main content in a flex row.
  * Pass the result of useLessonChat() as props.
  */
-export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict }) {
+export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode }) {
+  const targetLabel = langCode === 'ru' ? 'RU' : langCode === 'uk' ? 'UA' : 'EN';
   return (
     <div className="lesson-chat-panel" style={styles.panel}>
       <div style={styles.header}>
@@ -122,7 +123,10 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
         </div>
       )}
 
-      <div style={styles.inputRow}>
+      {stt?.isTranscribing && (
+        <div style={styles.transcribingBar}>Transcribing...</div>
+      )}
+      <div style={styles.inputArea}>
         <input
           ref={inputRef}
           style={styles.input}
@@ -131,7 +135,25 @@ export default function LessonChat({ messages, input, setInput, loading, send, s
           onKeyDown={e => e.key === 'Enter' && send()}
           placeholder="Ask a question..."
         />
-        <button style={styles.sendBtn} onClick={send} disabled={loading}>→</button>
+        <div style={styles.inputButtons}>
+          {toggleMic && (
+            <>
+              <button
+                style={{ ...styles.micBtn, ...(stt?.isListening && micLang === 'en' ? styles.micBtnActive : {}), ...(stt?.isTranscribing ? styles.micBtnTranscribing : {}) }}
+                onClick={() => toggleMic('en')}
+                disabled={stt?.isTranscribing || (stt?.isListening && micLang !== 'en')}
+                title="Speak in English"
+              >🎤 EN</button>
+              <button
+                style={{ ...styles.micBtn, ...(stt?.isListening && micLang === langCode ? styles.micBtnActive : {}), ...(stt?.isTranscribing ? styles.micBtnTranscribing : {}) }}
+                onClick={() => toggleMic(langCode)}
+                disabled={stt?.isTranscribing || (stt?.isListening && micLang !== langCode)}
+                title={`Speak in ${targetLabel}`}
+              >🎤 {targetLabel}</button>
+            </>
+          )}
+          <button style={styles.sendBtn} onClick={send} disabled={loading}>→</button>
+        </div>
       </div>
 
       <style>{`
@@ -337,15 +359,16 @@ const styles = {
     fontWeight: '700',
     fontFamily: 'inherit',
   },
-  inputRow: {
+  inputArea: {
     display: 'flex',
-    gap: '0.5rem',
-    padding: '0.75rem',
+    flexDirection: 'column',
+    gap: '0.4rem',
+    padding: '0.6rem 0.75rem',
     borderTop: '1px solid rgba(255,255,255,0.1)',
     flexShrink: 0,
   },
   input: {
-    flex: 1,
+    width: '100%',
     background: 'rgba(255,255,255,0.07)',
     border: '1px solid rgba(255,255,255,0.15)',
     borderRadius: '10px',
@@ -354,6 +377,42 @@ const styles = {
     fontSize: '0.9rem',
     fontFamily: 'inherit',
     outline: 'none',
+    boxSizing: 'border-box',
+  },
+  inputButtons: {
+    display: 'flex',
+    gap: '0.35rem',
+    justifyContent: 'flex-end',
+  },
+  micBtn: {
+    background: 'rgba(255,255,255,0.08)',
+    border: '1px solid rgba(255,255,255,0.15)',
+    borderRadius: '8px',
+    padding: '0.35rem 0.5rem',
+    cursor: 'pointer',
+    fontSize: '0.75rem',
+    color: '#fff',
+    fontWeight: '600',
+    whiteSpace: 'nowrap',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
+    flexShrink: 0,
+  },
+  micBtnActive: {
+    background: 'rgba(255,80,80,0.3)',
+    borderColor: '#f87171',
+    animation: 'lessonDotPulse 1.5s infinite',
+  },
+  micBtnTranscribing: {
+    opacity: 0.4,
+    cursor: 'wait',
+  },
+  transcribingBar: {
+    textAlign: 'center',
+    fontSize: '0.75rem',
+    color: 'rgba(255,255,255,0.5)',
+    padding: '0.2rem 0.75rem',
+    fontStyle: 'italic',
   },
   sendBtn: {
     background: 'linear-gradient(135deg, #ffd700, #e6c200)',
@@ -364,6 +423,7 @@ const styles = {
     fontSize: '1rem',
     padding: '0.5rem 0.9rem',
     cursor: 'pointer',
+    flexShrink: 0,
   },
   dot: {
     display: 'inline-block',
