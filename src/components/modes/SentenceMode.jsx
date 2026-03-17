@@ -37,6 +37,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     if (feedback) return;
     setAvailableTiles(prev => prev.filter(t => t.id !== tile.id));
     setPlacedTiles(prev => [...prev, tile]);
+    if (ttsEnabled) onSpeak(tile.word, 0.8, ttsVolume);
   };
 
   const handlePlacedClick = (tile) => {
