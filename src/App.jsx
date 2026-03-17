@@ -376,11 +376,14 @@ export default function UkrainianTypingGame() {
 
   // Refs
   const inputRef = useRef(null);
-  const hasLoadedRef = useRef(false);
+  const [isReadyToSave, setIsReadyToSave] = useState(false);
 
   // Load saved progress for current language
   const loadProgress = useCallback((langCode) => {
-    hasLoadedRef.current = false;
+    // Disable saving — this is a state update so React batches it with the
+    // loaded values below, meaning the save effect will see isReadyToSave=false
+    // on the SAME render where the loaded values appear.
+    setIsReadyToSave(false);
     const lang = getLanguageData(langCode);
     try {
       const saved = localStorage.getItem(lang.storageKey);
@@ -413,10 +416,10 @@ export default function UkrainianTypingGame() {
     } catch (e) {
       console.log('[Save] Could not load saved progress:', e);
     }
-    // Set synchronously after all setState calls — the save effect runs on the
-    // NEXT render when React has committed the loaded values, so it will see
-    // hasLoadedRef=true AND the correct loaded state together.
-    hasLoadedRef.current = true;
+    // Re-enable saving — batched with all the setState calls above, so the
+    // save effect won't see isReadyToSave=true until the NEXT render when
+    // all loaded values have been committed.
+    setIsReadyToSave(true);
     console.log('[Save] Ready to save');
   }, []);
 
@@ -458,7 +461,7 @@ export default function UkrainianTypingGame() {
 
   // Save progress when it changes (only after initial load)
   useEffect(() => {
-    if (!hasLoadedRef.current) {
+    if (!isReadyToSave) {
       console.log('[Save] Skipping save - not loaded yet');
       return;
     }
@@ -472,7 +475,7 @@ export default function UkrainianTypingGame() {
     } catch (e) {
       console.log('[Save] Could not save progress:', e);
     }
-  }, [buildSaveData, langData.storageKey]);
+  }, [isReadyToSave, buildSaveData, langData.storageKey]);
 
   // Save progress on page close/hide to prevent data loss
   useEffect(() => {
@@ -514,7 +517,7 @@ export default function UkrainianTypingGame() {
     setStreak(0);
     setExploreSelectedKey(null);
     setSelectedVocabSet(null);
-    // Load new language progress (also sets hasLoadedRef)
+    // Load new language progress (also sets isReadyToSave)
     loadProgress(newLang);
   }, [currentLanguage, loadProgress, buildSaveData, langData.storageKey]);
   
