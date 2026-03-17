@@ -671,6 +671,9 @@ const styles = {
   statsCard: {
     width: '150px',
     flexShrink: 0,
+    alignSelf: 'flex-start',
+    position: 'sticky',
+    top: '2rem',
     background: 'rgba(0,0,0,0.35)',
     border: '1px solid rgba(255,215,0,0.2)',
     borderRadius: '16px',
