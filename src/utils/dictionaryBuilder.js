@@ -22,6 +22,7 @@ import comprehensiveDictExt11 from '../data/vocabulary/comprehensive-dictionary-
 import comprehensiveDictExt12 from '../data/vocabulary/comprehensive-dictionary-ext12.json';
 
 import { RU_TRANSLATIONS } from '../data/ru/translations.js';
+import { DE_TRANSLATIONS } from '../data/de/translations.js';
 
 const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData];
 const COMPREHENSIVE = [comprehensiveDict, comprehensiveDictExt, comprehensiveDictExt2, comprehensiveDictExt3, comprehensiveDictExt4, comprehensiveDictExt5, comprehensiveDictExt6, comprehensiveDictExt7, comprehensiveDictExt8, comprehensiveDictExt9, comprehensiveDictExt10, comprehensiveDictExt11, comprehensiveDictExt12];
@@ -77,12 +78,12 @@ export const CATEGORY_DIFFICULTY = {
   'translations': 'A2',
 };
 
-const cache = { uk: { dictionary: null, vocabulary: null }, ru: { dictionary: null, vocabulary: null } };
+const cache = { uk: { dictionary: null, vocabulary: null }, ru: { dictionary: null, vocabulary: null }, de: { dictionary: null, vocabulary: null } };
 
 function getDataForLang(langCode) {
-  const targetField = langCode === 'ru' ? 'ru' : 'uk';
-  const phoneticField = langCode === 'ru' ? 'phoneticRu' : 'phoneticUk';
-  const translations = langCode === 'ru' ? RU_TRANSLATIONS : TRANSLATIONS;
+  const targetField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : 'uk';
+  const phoneticField = langCode === 'ru' ? 'phoneticRu' : langCode === 'de' ? 'phoneticDe' : 'phoneticUk';
+  const translations = langCode === 'ru' ? RU_TRANSLATIONS : langCode === 'de' ? DE_TRANSLATIONS : TRANSLATIONS;
   return { targetField, phoneticField, themeData: THEME_DATA, comprehensiveData: COMPREHENSIVE, translations };
 }
 

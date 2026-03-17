@@ -1,0 +1,274 @@
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink coffee.",
+      "de": "Ich trinke Kaffee.",
+      "words": ["Ich", "trinke", "Kaffee"],
+      "distractors": ["esse", "Tee", "du"],
+      "validOrders": [["Ich", "trinke", "Kaffee"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "This is my house.",
+      "de": "Das ist mein Haus.",
+      "words": ["Das", "ist", "mein", "Haus"],
+      "distractors": ["dein", "ein", "Wohnung"],
+      "validOrders": [["Das", "ist", "mein", "Haus"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "She reads a book.",
+      "de": "Sie liest ein Buch.",
+      "words": ["Sie", "liest", "ein", "Buch"],
+      "distractors": ["er", "schreibt", "das", "Heft"],
+      "validOrders": [["Sie", "liest", "ein", "Buch"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "We live in Berlin.",
+      "de": "Wir wohnen in Berlin.",
+      "words": ["Wir", "wohnen", "in", "Berlin"],
+      "distractors": ["Sie", "arbeiten", "Hamburg"],
+      "validOrders": [["Wir", "wohnen", "in", "Berlin"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "The child plays in the park.",
+      "de": "Das Kind spielt im Park.",
+      "words": ["Das", "Kind", "spielt", "im", "Park"],
+      "distractors": ["ein", "läuft", "der", "Garten"],
+      "validOrders": [["Das", "Kind", "spielt", "im", "Park"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "He works every day.",
+      "de": "Er arbeitet jeden Tag.",
+      "words": ["Er", "arbeitet", "jeden", "Tag"],
+      "distractors": ["sie", "schläft", "diesen", "Abend"],
+      "validOrders": [["Er", "arbeitet", "jeden", "Tag"], ["Jeden", "Tag", "arbeitet", "er"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "The cat drinks milk.",
+      "de": "Die Katze trinkt Milch.",
+      "words": ["Die", "Katze", "trinkt", "Milch"],
+      "distractors": ["Der", "Hund", "isst", "Wasser"],
+      "validOrders": [["Die", "Katze", "trinkt", "Milch"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s8",
+      "en": "I love music.",
+      "de": "Ich liebe Musik.",
+      "words": ["Ich", "liebe", "Musik"],
+      "distractors": ["hasse", "Sport", "du"],
+      "validOrders": [["Ich", "liebe", "Musik"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s9",
+      "en": "The man buys bread.",
+      "de": "Der Mann kauft Brot.",
+      "words": ["Der", "Mann", "kauft", "Brot"],
+      "distractors": ["Die", "Frau", "verkauft", "Butter"],
+      "validOrders": [["Der", "Mann", "kauft", "Brot"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s10",
+      "en": "You speak German well.",
+      "de": "Du sprichst gut Deutsch.",
+      "words": ["Du", "sprichst", "gut", "Deutsch"],
+      "distractors": ["ich", "lernst", "schlecht", "Englisch"],
+      "validOrders": [["Du", "sprichst", "gut", "Deutsch"], ["Gut", "sprichst", "du", "Deutsch"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s11",
+      "en": "Today I am going shopping.",
+      "de": "Heute gehe ich einkaufen.",
+      "words": ["Heute", "gehe", "ich", "einkaufen"],
+      "distractors": ["Morgen", "komme", "du", "spazieren"],
+      "validOrders": [["Heute", "gehe", "ich", "einkaufen"], ["Ich", "gehe", "heute", "einkaufen"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s12",
+      "en": "Tomorrow my friend is coming.",
+      "de": "Morgen kommt mein Freund.",
+      "words": ["Morgen", "kommt", "mein", "Freund"],
+      "distractors": ["Heute", "geht", "dein", "Bruder"],
+      "validOrders": [["Morgen", "kommt", "mein", "Freund"], ["Mein", "Freund", "kommt", "morgen"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s13",
+      "en": "In the evening we eat together.",
+      "de": "Abends essen wir zusammen.",
+      "words": ["Abends", "essen", "wir", "zusammen"],
+      "distractors": ["Morgens", "trinken", "sie", "alleine"],
+      "validOrders": [["Abends", "essen", "wir", "zusammen"], ["Wir", "essen", "abends", "zusammen"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s14",
+      "en": "On Sundays my family stays home.",
+      "de": "Sonntags bleibt meine Familie zu Hause.",
+      "words": ["Sonntags", "bleibt", "meine", "Familie", "zu", "Hause"],
+      "distractors": ["Samstags", "geht", "deine", "Mutter", "nach"],
+      "validOrders": [["Sonntags", "bleibt", "meine", "Familie", "zu", "Hause"], ["Meine", "Familie", "bleibt", "sonntags", "zu", "Hause"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s15",
+      "en": "Now I understand the lesson.",
+      "de": "Jetzt verstehe ich die Lektion.",
+      "words": ["Jetzt", "verstehe", "ich", "die", "Lektion"],
+      "distractors": ["Dann", "lerne", "du", "eine", "Aufgabe"],
+      "validOrders": [["Jetzt", "verstehe", "ich", "die", "Lektion"], ["Ich", "verstehe", "jetzt", "die", "Lektion"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s16",
+      "en": "Where do you come from?",
+      "de": "Woher kommst du?",
+      "words": ["Woher", "kommst", "du"],
+      "distractors": ["Wohin", "gehst", "er", "fährst"],
+      "validOrders": [["Woher", "kommst", "du"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s17",
+      "en": "What are you doing today?",
+      "de": "Was machst du heute?",
+      "words": ["Was", "machst", "du", "heute"],
+      "distractors": ["Wer", "tust", "sie", "morgen"],
+      "validOrders": [["Was", "machst", "du", "heute"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s18",
+      "en": "How much does that cost?",
+      "de": "Wie viel kostet das?",
+      "words": ["Wie", "viel", "kostet", "das"],
+      "distractors": ["Wie", "viele", "zahlt", "es"],
+      "validOrders": [["Wie", "viel", "kostet", "das"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s19",
+      "en": "When does the train arrive?",
+      "de": "Wann kommt der Zug an?",
+      "words": ["Wann", "kommt", "der", "Zug", "an"],
+      "distractors": ["Wie", "fährt", "die", "Bahn", "ab"],
+      "validOrders": [["Wann", "kommt", "der", "Zug", "an"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s20",
+      "en": "Where is the train station?",
+      "de": "Wo ist der Bahnhof?",
+      "words": ["Wo", "ist", "der", "Bahnhof"],
+      "distractors": ["Wann", "liegt", "die", "Haltestelle"],
+      "validOrders": [["Wo", "ist", "der", "Bahnhof"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s21",
+      "en": "Who is that woman?",
+      "de": "Wer ist diese Frau?",
+      "words": ["Wer", "ist", "diese", "Frau"],
+      "distractors": ["Was", "heißt", "der", "Mann"],
+      "validOrders": [["Wer", "ist", "diese", "Frau"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s22",
+      "en": "Why are you learning German?",
+      "de": "Warum lernst du Deutsch?",
+      "words": ["Warum", "lernst", "du", "Deutsch"],
+      "distractors": ["Wofür", "studierst", "er", "Französisch"],
+      "validOrders": [["Warum", "lernst", "du", "Deutsch"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s23",
+      "en": "How do you get to the city center?",
+      "de": "Wie komme ich in die Innenstadt?",
+      "words": ["Wie", "komme", "ich", "in", "die", "Innenstadt"],
+      "distractors": ["Wohin", "fahre", "wir", "aus", "der", "Stadt"],
+      "validOrders": [["Wie", "komme", "ich", "in", "die", "Innenstadt"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s24",
+      "en": "I do not understand that.",
+      "de": "Ich verstehe das nicht.",
+      "words": ["Ich", "verstehe", "das", "nicht"],
+      "distractors": ["kein", "du", "weißt", "nie"],
+      "validOrders": [["Ich", "verstehe", "das", "nicht"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s25",
+      "en": "He has no money.",
+      "de": "Er hat kein Geld.",
+      "words": ["Er", "hat", "kein", "Geld"],
+      "distractors": ["Sie", "braucht", "keine", "Zeit"],
+      "validOrders": [["Er", "hat", "kein", "Geld"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s26",
+      "en": "She is not coming today.",
+      "de": "Sie kommt heute nicht.",
+      "words": ["Sie", "kommt", "heute", "nicht"],
+      "distractors": ["kein", "er", "geht", "morgen"],
+      "validOrders": [["Sie", "kommt", "heute", "nicht"], ["Heute", "kommt", "sie", "nicht"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s27",
+      "en": "We have no time.",
+      "de": "Wir haben keine Zeit.",
+      "words": ["Wir", "haben", "keine", "Zeit"],
+      "distractors": ["Ihr", "habt", "kein", "Geld"],
+      "validOrders": [["Wir", "haben", "keine", "Zeit"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s28",
+      "en": "The coffee is not hot.",
+      "de": "Der Kaffee ist nicht heiß.",
+      "words": ["Der", "Kaffee", "ist", "nicht", "heiß"],
+      "distractors": ["kein", "Das", "Tee", "kalt", "warm"],
+      "validOrders": [["Der", "Kaffee", "ist", "nicht", "heiß"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s29",
+      "en": "I have no car.",
+      "de": "Ich habe kein Auto.",
+      "words": ["Ich", "habe", "kein", "Auto"],
+      "distractors": ["du", "hatte", "keine", "Fahrrad"],
+      "validOrders": [["Ich", "habe", "kein", "Auto"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s30",
+      "en": "He does not speak English.",
+      "de": "Er spricht kein Englisch.",
+      "words": ["Er", "spricht", "kein", "Englisch"],
+      "distractors": ["nicht", "Sie", "lernt", "Deutsch"],
+      "validOrders": [["Er", "spricht", "kein", "Englisch"]],
+      "difficulty": "A2"
+    }
+  ]
+}

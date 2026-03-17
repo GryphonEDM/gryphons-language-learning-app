@@ -43,8 +43,8 @@ function deleteAiDialogue(id) {
 }
 
 export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const nameField = langCode === 'ru' ? 'nameRu' : 'nameUk';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const nameField = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
   const [phase, setPhase] = useState('picker'); // picker, generate, playing, complete
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing a dialogue conversation exercise in ${langName}. Answer questions about phrases, vocabulary, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
@@ -238,9 +238,9 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
     setAiProgressPct(0);
 
     const topic = aiTopic.trim() || 'a casual everyday conversation';
-    const playerName = langCode === 'ru' ? 'Вы' : 'Ви';
-    const langLabel = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-    const nameFieldLabel = langCode === 'ru' ? 'nameRu' : 'nameUk';
+    const playerName = langCode === 'ru' ? 'Вы' : langCode === 'de' ? 'Sie' : 'Ви';
+    const langLabel = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+    const nameFieldLabel = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
 
     const prompt = `Create a dialogue practice exercise for a language learner at ${aiDifficulty} level.
 Scenario: ${topic}
@@ -357,7 +357,7 @@ IMPORTANT RULES:
         [nameField]: dialogue[nameField] || '',
         icon: dialogue.icon || '💬',
         context: dialogue.context || '',
-        characters: dialogue.characters || { npc: { name: langCode === 'ru' ? 'Собеседник' : 'Співрозмовник' }, player: { name: playerName } },
+        characters: dialogue.characters || { npc: { name: langCode === 'ru' ? 'Собеседник' : langCode === 'de' ? 'Gesprächspartner' : 'Співрозмовник' }, player: { name: playerName } },
         exchanges: dialogue.exchanges,
         difficulty: aiDifficulty,
         langCode,

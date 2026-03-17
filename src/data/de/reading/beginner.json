@@ -1,0 +1,198 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Mein Tag",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "Ich heiße Anna und ich wohne in München. Jeden Morgen stehe ich um sieben Uhr auf. Zuerst gehe ich ins Badezimmer und dusche mich. Dann frühstücke ich in der Küche. Ich esse Toast mit Butter und trinke eine Tasse Kaffee. Um halb acht verlasse ich das Haus und fahre mit dem Bus zur Arbeit. Ich arbeite in einem Büro in der Stadtmitte. Mittags esse ich mit meinen Kollegen in der Kantine. Nachmittags arbeite ich weiter bis um fünf Uhr. Dann fahre ich nach Hause. Am Abend koche ich das Abendessen und schaue ein bisschen fern. Um zehn Uhr gehe ich ins Bett. Ich schlafe gut, weil der Tag lang war.",
+      "wordGlossary": {
+        "wohne": "live / reside",
+        "jeden Morgen": "every morning",
+        "stehe auf": "get up (aufstehen)",
+        "zuerst": "first / firstly",
+        "dusche mich": "shower myself",
+        "frühstücke": "have breakfast (frühstücken)",
+        "Butter": "butter",
+        "Tasse": "cup",
+        "verlasse": "leave (verlassen)",
+        "Stadtmitte": "city center",
+        "Kollegen": "colleagues",
+        "Kantine": "cafeteria / canteen",
+        "Nachmittags": "in the afternoon",
+        "weiter": "further / continue",
+        "schaue fern": "watch TV (fernsehen)",
+        "Abendessen": "dinner / evening meal",
+        "schlafe": "sleep (schlafen)",
+        "weil": "because",
+        "lang": "long"
+      },
+      "questions": [
+        {
+          "question": "What time does Anna get up in the morning?",
+          "options": ["Six o'clock", "Seven o'clock", "Half past seven", "Eight o'clock"],
+          "correctIndex": 1,
+          "explanation": "The text states 'stehe ich um sieben Uhr auf' — Anna gets up at seven o'clock."
+        },
+        {
+          "question": "How does Anna get to work?",
+          "options": ["She walks", "She drives a car", "She takes the bus", "She rides a bike"],
+          "correctIndex": 2,
+          "explanation": "The text says 'fahre mit dem Bus zur Arbeit' — she travels to work by bus."
+        },
+        {
+          "question": "What does Anna do in the evening?",
+          "options": ["She goes for a walk", "She reads a book", "She cooks dinner and watches TV", "She visits friends"],
+          "correctIndex": 2,
+          "explanation": "The text states 'koche ich das Abendessen und schaue ein bisschen fern' — she cooks dinner and watches a little TV."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Meine Familie",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "Meine Familie ist nicht sehr groß. Wir sind vier Personen: mein Vater, meine Mutter, meine Schwester und ich. Mein Vater heißt Thomas. Er ist fünfundvierzig Jahre alt und arbeitet als Arzt in einem Krankenhaus. Meine Mutter heißt Maria. Sie ist dreiundvierzig Jahre alt und ist Lehrerin an einer Grundschule. Meine Schwester heißt Lisa. Sie ist sechzehn Jahre alt und geht noch zur Schule. Ich heiße Max und ich bin achtzehn Jahre alt. Ich studiere jetzt an der Universität in Hamburg. Wir wohnen in einem Haus in einem kleinen Dorf bei Frankfurt. Am Wochenende essen wir immer zusammen zu Mittag. Das ist meine Lieblingszeit mit der Familie.",
+      "wordGlossary": {
+        "Familie": "family",
+        "Personen": "people / persons",
+        "Vater": "father",
+        "Mutter": "mother",
+        "Schwester": "sister",
+        "Jahre alt": "years old",
+        "arbeitet als": "works as",
+        "Arzt": "doctor (male)",
+        "Krankenhaus": "hospital",
+        "Lehrerin": "teacher (female)",
+        "Grundschule": "primary school / elementary school",
+        "geht zur Schule": "goes to school",
+        "studiere": "study (at university)",
+        "Universität": "university",
+        "Dorf": "village",
+        "Wochenende": "weekend",
+        "zusammen": "together",
+        "zu Mittag": "at midday / for lunch",
+        "Lieblingszeit": "favorite time"
+      },
+      "questions": [
+        {
+          "question": "What is Max's father's profession?",
+          "options": ["Teacher", "Engineer", "Doctor", "Lawyer"],
+          "correctIndex": 2,
+          "explanation": "The text says Thomas 'arbeitet als Arzt in einem Krankenhaus' — he works as a doctor in a hospital."
+        },
+        {
+          "question": "Where does Max study?",
+          "options": ["In Frankfurt", "In Munich", "In Berlin", "In Hamburg"],
+          "correctIndex": 3,
+          "explanation": "The text states 'Ich studiere jetzt an der Universität in Hamburg' — Max studies at the university in Hamburg."
+        },
+        {
+          "question": "When does the family always eat lunch together?",
+          "options": ["Every evening", "On weekdays", "On weekends", "On Sundays only"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Am Wochenende essen wir immer zusammen zu Mittag' — they always eat lunch together on the weekend."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Mein Zimmer",
+      "titleEn": "My Room",
+      "difficulty": "A1",
+      "text": "Mein Zimmer ist nicht groß, aber ich mag es sehr. Es gibt ein Bett, einen Schreibtisch, einen Stuhl und einen Kleiderschrank. Das Bett steht an der Wand neben dem Fenster. Auf dem Schreibtisch liegt mein Laptop. Ich mache dort meine Hausaufgaben. An der Wand hängen viele Poster von meinen Lieblingsmusikern. Neben dem Schreibtisch steht ein Bücherregal mit vielen Büchern. Ich lese sehr gern. Mein Zimmer hat eine blaue Wand und einen braunen Boden. Die Vorhänge sind weiß. Ich räume mein Zimmer jede Woche auf, aber manchmal ist es ein bisschen unordentlich. Mein Zimmer ist mein Lieblingsplatz im Haus.",
+      "wordGlossary": {
+        "Zimmer": "room",
+        "mag": "like (mögen)",
+        "Bett": "bed",
+        "Schreibtisch": "desk",
+        "Stuhl": "chair",
+        "Kleiderschrank": "wardrobe",
+        "steht": "stands / is located",
+        "Wand": "wall",
+        "Fenster": "window",
+        "liegt": "lies / is located",
+        "Hausaufgaben": "homework",
+        "hängen": "hang",
+        "Poster": "posters",
+        "Bücherregal": "bookshelf",
+        "Vorhänge": "curtains",
+        "Boden": "floor",
+        "räume auf": "tidy up (aufräumen)",
+        "manchmal": "sometimes",
+        "unordentlich": "messy / untidy",
+        "Lieblingsplatz": "favorite place"
+      },
+      "questions": [
+        {
+          "question": "Where does the bed stand in the room?",
+          "options": ["In the middle of the room", "Against the wall next to the window", "Near the door", "Next to the wardrobe"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Das Bett steht an der Wand neben dem Fenster' — the bed stands against the wall next to the window."
+        },
+        {
+          "question": "What color is one of the walls?",
+          "options": ["White", "Green", "Blue", "Yellow"],
+          "correctIndex": 2,
+          "explanation": "The text states 'Mein Zimmer hat eine blaue Wand' — the room has a blue wall."
+        },
+        {
+          "question": "How often does the narrator tidy up their room?",
+          "options": ["Every day", "Every week", "Every month", "Never"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Ich räume mein Zimmer jede Woche auf' — they tidy up their room every week."
+        }
+      ]
+    },
+    {
+      "passageId": "p4",
+      "title": "Das Wetter",
+      "titleEn": "The Weather",
+      "difficulty": "A1",
+      "text": "Deutschland hat vier Jahreszeiten: Frühling, Sommer, Herbst und Winter. Im Frühling ist es oft warm und es regnet manchmal. Die Blumen blühen und die Bäume werden wieder grün. Im Sommer ist es heiß und sonnig. Viele Leute gehen in den Park oder ans Meer. Im Herbst wird es kühler und es weht oft ein starker Wind. Die Blätter der Bäume werden gelb, orange und rot. Im Winter ist es kalt und es schneit manchmal. Die Temperaturen fallen oft unter null Grad. Heute ist es bewölkt und es regnet ein bisschen. Ich trage einen Mantel und einen Schal. Morgen soll es besser werden. Welche Jahreszeit magst du am liebsten?",
+      "wordGlossary": {
+        "Jahreszeiten": "seasons",
+        "Frühling": "spring",
+        "Sommer": "summer",
+        "Herbst": "autumn / fall",
+        "Winter": "winter",
+        "regnet": "rains (regnen)",
+        "Blumen": "flowers",
+        "blühen": "bloom",
+        "Bäume": "trees",
+        "heiß": "hot",
+        "sonnig": "sunny",
+        "kühler": "cooler",
+        "weht": "blows (wehen — of wind)",
+        "Blätter": "leaves",
+        "schneit": "snows (schneien)",
+        "Temperaturen": "temperatures",
+        "null Grad": "zero degrees",
+        "bewölkt": "cloudy",
+        "Mantel": "coat",
+        "Schal": "scarf"
+      },
+      "questions": [
+        {
+          "question": "What happens to the trees in spring?",
+          "options": ["They lose their leaves", "They turn yellow and red", "They become green again", "They are covered in snow"],
+          "correctIndex": 2,
+          "explanation": "The text says 'die Bäume werden wieder grün' — the trees become green again in spring."
+        },
+        {
+          "question": "What is the weather like today in the passage?",
+          "options": ["Hot and sunny", "Cloudy and raining a little", "Snowing heavily", "Windy and cold"],
+          "correctIndex": 1,
+          "explanation": "The text states 'Heute ist es bewölkt und es regnet ein bisschen' — today it is cloudy and raining a little."
+        },
+        {
+          "question": "What does the narrator wear because of the weather?",
+          "options": ["A hat and gloves", "A coat and a scarf", "A raincoat and boots", "A sweater"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Ich trage einen Mantel und einen Schal' — the narrator wears a coat and a scarf."
+        }
+      ]
+    }
+  ]
+}

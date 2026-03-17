@@ -1,0 +1,158 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Das Bildungssystem",
+      "titleEn": "The Education System",
+      "difficulty": "B1",
+      "text": "Das deutsche Bildungssystem unterscheidet sich erheblich von dem vieler anderer Länder. Nach der Grundschule, die vier Jahre dauert, wechseln Kinder je nach ihren Leistungen und Empfehlungen der Lehrer auf verschiedene weiterführende Schulen. Das Gymnasium ist die anspruchsvollste Schulform und führt nach neun Jahren zum Abitur, dem Schulabschluss, der zum Studium an einer Universität berechtigt. Die Realschule und die Hauptschule bereiten Schüler eher auf eine Berufsausbildung vor. Das duale Ausbildungssystem, bei dem Jugendliche gleichzeitig in einem Betrieb arbeiten und die Berufsschule besuchen, gilt international als Vorbild. Es ermöglicht jungen Menschen, praktische Erfahrungen zu sammeln und gleichzeitig theoretisches Wissen zu erwerben. In den letzten Jahren gibt es jedoch zunehmend Kritik am deutschen Schulsystem. Viele Experten bemängeln, dass die frühe Selektion nach der Grundschule soziale Ungleichheiten verstärkt und Kindern aus einkommensschwachen Familien weniger Chancen bietet. Bildungspolitiker diskutieren daher über Reformen, um das System gerechter und durchlässiger zu gestalten.",
+      "wordGlossary": {
+        "Bildungssystem": "education system",
+        "unterscheidet sich": "differs (sich unterscheiden)",
+        "erheblich": "considerably / significantly",
+        "Grundschule": "primary school",
+        "wechseln": "switch / transfer",
+        "Leistungen": "achievements / performance",
+        "Empfehlungen": "recommendations",
+        "weiterführende Schulen": "secondary schools",
+        "Gymnasium": "grammar school (university-track)",
+        "anspruchsvollste": "most demanding",
+        "Abitur": "university entrance qualification",
+        "berechtigt": "entitles / qualifies",
+        "Berufsausbildung": "vocational training",
+        "duale Ausbildungssystem": "dual vocational training system",
+        "Betrieb": "company / workplace",
+        "Berufsschule": "vocational school",
+        "Vorbild": "model / example to follow",
+        "Selektion": "selection / tracking",
+        "Ungleichheiten": "inequalities",
+        "einkommensschwachen": "low-income",
+        "durchlässiger": "more permeable / flexible",
+        "gestalten": "to shape / design"
+      },
+      "questions": [
+        {
+          "question": "How long does primary school last in Germany?",
+          "options": ["Three years", "Four years", "Five years", "Six years"],
+          "correctIndex": 1,
+          "explanation": "The text states 'die Grundschule, die vier Jahre dauert' — primary school lasts four years."
+        },
+        {
+          "question": "What makes Germany's dual vocational training system internationally notable?",
+          "options": ["It is entirely free for all students", "Students learn only theory at school", "It combines practical workplace training with theoretical school learning", "It lasts only one year"],
+          "correctIndex": 2,
+          "explanation": "The text explains the dual system allows young people 'praktische Erfahrungen zu sammeln und gleichzeitig theoretisches Wissen zu erwerben' — to gain practical experience while acquiring theoretical knowledge simultaneously."
+        },
+        {
+          "question": "What is a key criticism of the German school system mentioned in the passage?",
+          "options": ["There are too many school holidays", "The Abitur exam is too easy", "Early selection after primary school increases social inequality", "University education is too expensive"],
+          "correctIndex": 2,
+          "explanation": "The text states critics argue 'die frühe Selektion nach der Grundschule soziale Ungleichheiten verstärkt und Kindern aus einkommensschwachen Familien weniger Chancen bietet' — early selection reinforces social inequalities and offers fewer chances to children from low-income families."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Umweltschutz in Deutschland",
+      "titleEn": "Environmental Protection in Germany",
+      "difficulty": "B2",
+      "text": "Deutschland gilt weltweit als Vorreiter im Bereich Umweltschutz und erneuerbarer Energien. Die sogenannte Energiewende — der Übergang von fossilen Brennstoffen hin zu erneuerbaren Energiequellen wie Wind, Sonne und Wasser — ist eines der ambitioniertesten Klimaschutzprojekte der Welt. Bereits heute deckt Deutschland einen erheblichen Teil seines Strombedarfs durch erneuerbare Energien. Wind- und Solaranlagen sind in der deutschen Landschaft allgegenwärtig geworden. Das Pfandsystem für Flaschen und Dosen ist ein weiteres Beispiel für den deutschen Umwelteifer. Verbraucher zahlen beim Kauf eine Pfandgebühr und erhalten sie zurück, wenn sie die leeren Behälter zurückbringen. Dies führt zu einer sehr hohen Recyclingquote. Auch die Mülltrennung ist in Deutschland streng geregelt: Papier, Glas, Biomüll und Plastik werden in unterschiedliche Tonnen geworfen. Dennoch steht Deutschland vor großen Herausforderungen. Der Ausstieg aus der Kohleverstromung sowie die Umstellung des Verkehrssektors auf emissionsarme Antriebe erfordern enorme Investitionen und politischen Willen. Umweltorganisationen wie Greenpeace und der BUND drängen die Regierung, ihre Klimaziele konsequenter umzusetzen.",
+      "wordGlossary": {
+        "Vorreiter": "pioneer / frontrunner",
+        "erneuerbarer Energien": "renewable energies",
+        "Energiewende": "energy transition",
+        "Übergang": "transition",
+        "fossilen Brennstoffen": "fossil fuels",
+        "Energiequellen": "energy sources",
+        "ambitioniertesten": "most ambitious",
+        "Strombedarf": "electricity demand",
+        "Solaranlagen": "solar installations",
+        "allgegenwärtig": "omnipresent / everywhere",
+        "Pfandsystem": "deposit return system",
+        "Pfandgebühr": "deposit fee",
+        "Behälter": "containers",
+        "Recyclingquote": "recycling rate",
+        "Mülltrennung": "waste separation",
+        "Tonnen": "bins / containers",
+        "Herausforderungen": "challenges",
+        "Kohleverstromung": "coal-fired electricity generation",
+        "emissionsarme Antriebe": "low-emission drivetrains",
+        "Investitionen": "investments",
+        "konsequenter": "more consistently",
+        "umzusetzen": "to implement"
+      },
+      "questions": [
+        {
+          "question": "What is the 'Energiewende'?",
+          "options": ["A new type of wind turbine", "Germany's transition from fossil fuels to renewable energy sources", "A government recycling program", "An energy-saving campaign for households"],
+          "correctIndex": 1,
+          "explanation": "The text defines Energiewende as 'der Übergang von fossilen Brennstoffen hin zu erneuerbaren Energiequellen wie Wind, Sonne und Wasser' — the transition from fossil fuels to renewable energy sources such as wind, sun, and water."
+        },
+        {
+          "question": "How does Germany's Pfandsystem (deposit return system) work?",
+          "options": ["Companies pay a fine for producing plastic", "Consumers pay a deposit when buying and get it back when returning empty containers", "The government collects bottles from households for free", "Supermarkets receive a tax break for recycling"],
+          "correctIndex": 1,
+          "explanation": "The text explains 'Verbraucher zahlen beim Kauf eine Pfandgebühr und erhalten sie zurück, wenn sie die leeren Behälter zurückbringen' — consumers pay a deposit fee when purchasing and get it back when returning the empty containers."
+        },
+        {
+          "question": "What major challenges does Germany still face regarding the environment?",
+          "options": ["Lack of public interest and awareness", "Phasing out coal power and shifting transport to low-emission drives", "Too many nuclear power plants still operating", "Insufficient wind and solar resources"],
+          "correctIndex": 1,
+          "explanation": "The text mentions 'Der Ausstieg aus der Kohleverstromung sowie die Umstellung des Verkehrssektors auf emissionsarme Antriebe' — phasing out coal electricity generation and converting the transport sector to low-emission drivetrains — as major challenges."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Geschichte Berlins",
+      "titleEn": "History of Berlin",
+      "difficulty": "B2",
+      "text": "Berlin hat eine der bewegtesten Geschichten aller europäischen Hauptstädte. Im Zweiten Weltkrieg wurde die Stadt durch Bombenangriffe stark zerstört. Nach dem Krieg wurde Deutschland in vier Besatzungszonen aufgeteilt, und Berlin selbst — obwohl tief im Osten gelegen — wurde ebenfalls geteilt. Im August 1961 ließ die DDR-Regierung die Berliner Mauer errichten, um die Flucht von DDR-Bürgern in den Westen zu stoppen. Über achtundzwanzig Jahre lang teilte die Mauer nicht nur die Stadt, sondern auch Familien und Freunde. Sie wurde zum Symbol des Kalten Krieges und der deutschen Teilung. Am 9. November 1989 fiel die Mauer auf friedliche Weise, nachdem Tausende von DDR-Bürgern auf die Straßen gegangen waren und Reisefreiheit gefordert hatten. Die Wiedervereinigung Deutschlands folgte am 3. Oktober 1990. Seitdem hat sich Berlin in eine moderne, weltoffene Metropole verwandelt. Reste der Mauer, wie die East Side Gallery — ein über einen Kilometer langes Freiluftmuseum mit bemalten Mauerabschnitten — erinnern heute an dieses dunkle Kapitel der deutschen Geschichte. Berlin ist heute eine pulsierende Kulturmetropole, die Vergangenheit und Gegenwart auf einzigartige Weise miteinander verbindet.",
+      "wordGlossary": {
+        "bewegtesten": "most turbulent / eventful",
+        "Bombenangriffe": "bombing raids",
+        "zerstört": "destroyed",
+        "Besatzungszonen": "occupation zones",
+        "aufgeteilt": "divided / split up",
+        "DDR": "East Germany (German Democratic Republic)",
+        "Berliner Mauer": "Berlin Wall",
+        "errichten": "to erect / construct",
+        "Flucht": "escape / flight",
+        "Teilung": "division",
+        "Kalten Krieges": "Cold War",
+        "friedliche Weise": "peaceful manner",
+        "Tausende": "thousands",
+        "Reisefreiheit": "freedom of travel",
+        "gefordert hatten": "had demanded",
+        "Wiedervereinigung": "reunification",
+        "verwandelt": "transformed",
+        "East Side Gallery": "East Side Gallery (open-air gallery on the Wall)",
+        "Freiluftmuseum": "open-air museum",
+        "Mauerabschnitten": "sections of the Wall",
+        "pulsierende": "pulsating / vibrant",
+        "einzigartige": "unique",
+        "verbindet": "connects / links"
+      },
+      "questions": [
+        {
+          "question": "Why did the East German government build the Berlin Wall in 1961?",
+          "options": ["To protect East Berlin from West German attacks", "To stop East German citizens from fleeing to the West", "To mark the official border between two countries", "To improve security after World War II"],
+          "correctIndex": 1,
+          "explanation": "The text states the wall was built 'um die Flucht von DDR-Bürgern in den Westen zu stoppen' — to stop the escape of East German citizens to the West."
+        },
+        {
+          "question": "How long did the Berlin Wall divide the city?",
+          "options": ["About ten years", "About eighteen years", "Over twenty-eight years", "Over forty years"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Über achtundzwanzig Jahre lang teilte die Mauer nicht nur die Stadt' — for over twenty-eight years the wall divided not only the city."
+        },
+        {
+          "question": "What is the East Side Gallery?",
+          "options": ["A modern art museum inside a former government building", "A section of the Berlin Wall turned into an open-air gallery with painted murals", "A shopping street in former East Berlin", "A memorial park near the Brandenburg Gate"],
+          "correctIndex": 1,
+          "explanation": "The text describes the East Side Gallery as 'ein über einen Kilometer langes Freiluftmuseum mit bemalten Mauerabschnitten' — an open-air museum over a kilometer long with painted sections of the Wall."
+        }
+      ]
+    }
+  ]
+}

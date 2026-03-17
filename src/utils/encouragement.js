@@ -38,6 +38,26 @@ export const MISTAKE_MESSAGES_RU = [
   "No worries! Не волнуйся!"
 ];
 
+// Fun encouraging messages - German
+export const ENCOURAGEMENTS_DE = [
+  "Ausgezeichnet! (Excellent!)",
+  "Sehr gut! (Very good!)",
+  "Wunderbar! (Wonderful!)",
+  "Fantastisch! (Fantastic!)",
+  "Weiter so! (Keep it up!)",
+  "Bravo! (Bravo!)",
+  "Unglaublich! (Incredible!)",
+  "Super! (Super!)"
+];
+
+export const MISTAKE_MESSAGES_DE = [
+  "Try again! Versuch es nochmal!",
+  "Almost! Fast!",
+  "Keep going! Weitermachen!",
+  "You've got this! Du schaffst das!",
+  "No worries! Kein Problem!"
+];
+
 // Get a random encouragement message
 export const getRandomEncouragement = () => {
   return ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)];

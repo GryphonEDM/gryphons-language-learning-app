@@ -1,0 +1,200 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Ein Tag in Berlin",
+      "titleEn": "A Day in Berlin",
+      "difficulty": "A2",
+      "text": "Berlin ist eine der aufregendsten Städte Europas. Letzten Sommer habe ich dort drei Tage verbracht. Am ersten Morgen bin ich früh aufgestanden und zum Brandenburger Tor gelaufen. Dort waren schon viele Touristen mit ihren Kameras. Danach habe ich das Reichstagsgebäude besucht. Man kann kostenlos auf die Glaskuppel steigen und hat von dort einen wunderschönen Blick über die Stadt. Zum Mittagessen bin ich in ein kleines Café in der Nähe gegangen und habe eine Currywurst mit Pommes gegessen — ein typisch Berliner Gericht. Am Nachmittag habe ich eine Bootsfahrt auf der Spree gemacht. Vom Boot aus konnte ich viele berühmte Sehenswürdigkeiten sehen. Am Abend bin ich durch den Prater in Prenzlauer Berg spaziert und habe ein Bier in einem Biergarten getrunken. Berlin hat mir sehr gut gefallen, weil die Stadt so lebendig und vielfältig ist.",
+      "wordGlossary": {
+        "aufregendsten": "most exciting",
+        "verbracht": "spent (time)",
+        "Brandenburger Tor": "Brandenburg Gate",
+        "Kameras": "cameras",
+        "Reichstagsgebäude": "Reichstag building",
+        "kostenlos": "free of charge",
+        "Glaskuppel": "glass dome",
+        "steigen": "climb / ascend",
+        "wunderschönen Blick": "beautiful view",
+        "Currywurst": "currywurst (sliced sausage with curry ketchup)",
+        "Pommes": "French fries",
+        "Gericht": "dish / meal",
+        "Bootsfahrt": "boat trip",
+        "Spree": "the Spree river",
+        "berühmte": "famous",
+        "Sehenswürdigkeiten": "sights / attractions",
+        "Biergarten": "beer garden",
+        "lebendig": "lively / vibrant",
+        "vielfältig": "diverse / varied"
+      },
+      "questions": [
+        {
+          "question": "What can visitors do at the Reichstag building for free?",
+          "options": ["Take a boat trip", "Climb the glass dome", "Eat a traditional meal", "Watch a film about Berlin"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Man kann kostenlos auf die Glaskuppel steigen' — you can climb the glass dome for free."
+        },
+        {
+          "question": "What did the narrator eat for lunch?",
+          "options": ["A pretzel and soup", "Schnitzel with potatoes", "Currywurst with fries", "A cheese sandwich"],
+          "correctIndex": 2,
+          "explanation": "The text states the narrator ate 'eine Currywurst mit Pommes — ein typisch Berliner Gericht' — currywurst with fries, a typical Berlin dish."
+        },
+        {
+          "question": "Why did the narrator particularly enjoy Berlin?",
+          "options": ["Because it was cheap", "Because it was small and quiet", "Because the city is lively and diverse", "Because of the beautiful beaches"],
+          "correctIndex": 2,
+          "explanation": "The text explains 'weil die Stadt so lebendig und vielfältig ist' — because the city is so lively and diverse."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Auf dem Markt",
+      "titleEn": "At the Market",
+      "difficulty": "A2",
+      "text": "Jeden Samstag gehe ich auf den Wochenmarkt in unserer Stadt. Der Markt öffnet um acht Uhr morgens und schließt um zwei Uhr nachmittags. Es gibt viele verschiedene Stände mit frischem Obst und Gemüse, Käse, Brot, Fleisch und Blumen. Ich kaufe immer zuerst das Gemüse bei Herrn Müller. Er hat immer frische Tomaten, Paprika, Zucchini und Salat. Heute kosten die Tomaten zwei Euro pro Kilogramm. Das finde ich günstig. Dann gehe ich zum Brotstand. Die Bäckerin heißt Frau Weber und ihr Brot ist das beste auf dem ganzen Markt. Ich kaufe ein Roggenbrot und zwei Brötchen. Manchmal probiere ich auch neue Sorten. Zum Schluss kaufe ich noch ein Stück Käse und ein paar frische Äpfel. Mit meiner vollen Einkaufstasche gehe ich glücklich nach Hause. Auf dem Markt kaufen ist viel besser als im Supermarkt, weil die Produkte frischer und die Verkäufer freundlicher sind.",
+      "wordGlossary": {
+        "Wochenmarkt": "weekly market",
+        "schließt": "closes (schließen)",
+        "Stände": "stalls / stands",
+        "Obst": "fruit",
+        "Gemüse": "vegetables",
+        "Käse": "cheese",
+        "Fleisch": "meat",
+        "Paprika": "bell pepper",
+        "Zucchini": "zucchini / courgette",
+        "pro Kilogramm": "per kilogram",
+        "günstig": "affordable / good value",
+        "Brotstand": "bread stall",
+        "Bäckerin": "baker (female)",
+        "Roggenbrot": "rye bread",
+        "Brötchen": "bread rolls",
+        "Sorten": "varieties / types",
+        "Einkaufstasche": "shopping bag",
+        "Produkte": "products",
+        "Verkäufer": "sellers / vendors"
+      },
+      "questions": [
+        {
+          "question": "What time does the market close?",
+          "options": ["Twelve o'clock", "One o'clock", "Two o'clock", "Three o'clock"],
+          "correctIndex": 2,
+          "explanation": "The text says the market 'schließt um zwei Uhr nachmittags' — it closes at two o'clock in the afternoon."
+        },
+        {
+          "question": "What bread does the narrator buy at the bread stall?",
+          "options": ["A white loaf and a baguette", "A rye bread and two rolls", "Three rolls and a pretzel", "A sourdough and some crackers"],
+          "correctIndex": 1,
+          "explanation": "The text states 'Ich kaufe ein Roggenbrot und zwei Brötchen' — a rye bread and two rolls."
+        },
+        {
+          "question": "Why does the narrator prefer shopping at the market over the supermarket?",
+          "options": ["Because it is cheaper", "Because it is closer to home", "Because the products are fresher and the vendors friendlier", "Because it is open on Sundays"],
+          "correctIndex": 2,
+          "explanation": "The text explains 'weil die Produkte frischer und die Verkäufer freundlicher sind' — because the products are fresher and the sellers are friendlier."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Deutsche Feste",
+      "titleEn": "German Festivals",
+      "difficulty": "B1",
+      "text": "Deutschland ist bekannt für seine vielen Feste und Traditionen. Das bekannteste Fest ist sicherlich das Oktoberfest in München. Es findet jedes Jahr Ende September und Anfang Oktober statt und dauert etwa zwei Wochen. Millionen von Besuchern aus der ganzen Welt kommen, um Bier zu trinken, traditionelle bayerische Musik zu hören und Spezialitäten wie Brezeln und Hendl zu genießen. Alle tragen bunte Trachten: Männer in Lederhosen und Frauen in Dirndlkleidern. Ein weiteres wichtiges Fest ist der Weihnachtsmarkt. In fast jeder deutschen Stadt gibt es im Dezember einen Weihnachtsmarkt. Der bekannteste ist vielleicht der Nürnberger Christkindlesmarkt. Man kann dort Glühwein trinken, Lebkuchen kaufen und Weihnachtsdekorationen bestaunen. Die stimmungsvolle Atmosphäre mit Lichtern und Musik macht den Weihnachtsmarkt zu einem unvergesslichen Erlebnis für Einheimische und Touristen gleichermaßen.",
+      "wordGlossary": {
+        "bekannt": "known / famous",
+        "Feste": "festivals / celebrations",
+        "Oktoberfest": "Oktoberfest (Munich beer festival)",
+        "findet statt": "takes place (stattfinden)",
+        "dauert": "lasts (dauern)",
+        "Besuchern": "visitors",
+        "bayerische": "Bavarian",
+        "Spezialitäten": "specialties",
+        "Brezeln": "pretzels",
+        "Hendl": "roast chicken (Bavarian dialect)",
+        "genießen": "to enjoy",
+        "Trachten": "traditional folk costumes",
+        "Lederhosen": "leather shorts (traditional)",
+        "Dirndlkleidern": "dirndl dresses (traditional)",
+        "Weihnachtsmarkt": "Christmas market",
+        "Glühwein": "mulled wine",
+        "Lebkuchen": "gingerbread",
+        "bestaunen": "to marvel at / admire",
+        "stimmungsvolle": "atmospheric / evocative",
+        "unvergesslichen Erlebnis": "unforgettable experience",
+        "Einheimische": "locals",
+        "gleichermaßen": "equally / alike"
+      },
+      "questions": [
+        {
+          "question": "When does the Oktoberfest take place?",
+          "options": ["In July and August", "In August and September", "At the end of September and beginning of October", "Throughout October and November"],
+          "correctIndex": 2,
+          "explanation": "The text says the Oktoberfest 'findet jedes Jahr Ende September und Anfang Oktober statt' — it takes place every year at the end of September and beginning of October."
+        },
+        {
+          "question": "What do men traditionally wear at the Oktoberfest?",
+          "options": ["Suits and ties", "Lederhosen", "Dirndl dresses", "Bavarian hats"],
+          "correctIndex": 1,
+          "explanation": "The text states 'Männer in Lederhosen' — men wear lederhosen (leather shorts)."
+        },
+        {
+          "question": "Which Christmas market is mentioned as one of the most famous?",
+          "options": ["The Berlin Christmas market", "The Hamburg Christmas market", "The Munich Christmas market", "The Nuremberg Christkindlesmarkt"],
+          "correctIndex": 3,
+          "explanation": "The text says 'Der bekannteste ist vielleicht der Nürnberger Christkindlesmarkt' — the most famous is perhaps the Nuremberg Christkindlesmarkt."
+        }
+      ]
+    },
+    {
+      "passageId": "p4",
+      "title": "Mit dem Zug fahren",
+      "titleEn": "Traveling by Train",
+      "difficulty": "B1",
+      "text": "Die Deutsche Bahn, oft einfach DB genannt, ist das nationale Eisenbahnunternehmen Deutschlands. Mit dem Zug kann man bequem und umweltfreundlich durch ganz Deutschland reisen. Am Bahnhof kann man Fahrkarten am Schalter kaufen oder an einem der vielen Automaten. Es gibt auch eine praktische App, mit der man Tickets direkt aufs Handy laden kann. Die Züge der Deutschen Bahn sind in verschiedene Klassen eingeteilt: die erste und die zweite Klasse. In der ersten Klasse hat man mehr Platz und es ist ruhiger. Für längere Strecken empfehle ich den ICE, den Intercity-Express. Er fährt sehr schnell — manchmal über dreihundert Kilometer pro Stunde. Leider ist die Bahn manchmal unpünktlich, was viele Reisende ärgert. Bei Verspätungen kann man unter bestimmten Bedingungen eine Entschädigung beantragen. Trotzdem ist der Zug eine der beliebtesten Reisemöglichkeiten in Deutschland, besonders für umweltbewusste Reisende.",
+      "wordGlossary": {
+        "Eisenbahnunternehmen": "railway company",
+        "bequem": "comfortably / conveniently",
+        "umweltfreundlich": "environmentally friendly",
+        "Bahnhof": "train station",
+        "Fahrkarten": "tickets",
+        "Schalter": "counter / ticket window",
+        "Automaten": "machines / ticket machines",
+        "Klassen": "classes",
+        "eingeteilt": "divided / categorized",
+        "Strecken": "routes / distances",
+        "empfehle": "recommend (empfehlen)",
+        "ICE": "Intercity-Express (high-speed train)",
+        "Kilometer pro Stunde": "kilometers per hour",
+        "unpünktlich": "not on time / late",
+        "Reisende": "travelers",
+        "ärgert": "annoys / frustrates",
+        "Verspätungen": "delays",
+        "Entschädigung": "compensation",
+        "beantragen": "to apply for / request",
+        "umweltbewusste": "environmentally conscious"
+      },
+      "questions": [
+        {
+          "question": "How can you buy a Deutsche Bahn ticket without going to a counter?",
+          "options": ["Only by phone", "At a ticket machine or via the app", "Only online via a website", "Through a travel agency only"],
+          "correctIndex": 1,
+          "explanation": "The text mentions buying tickets 'an einem der vielen Automaten' (at one of the ticket machines) or using 'eine praktische App' (a practical app)."
+        },
+        {
+          "question": "What is the ICE?",
+          "options": ["A regional slow train", "A night train service", "A high-speed intercity express train", "A tourist sightseeing train"],
+          "correctIndex": 2,
+          "explanation": "The text describes the ICE as 'den Intercity-Express' which 'fährt sehr schnell — manchmal über dreihundert Kilometer pro Stunde' — a very fast train, sometimes over 300 km/h."
+        },
+        {
+          "question": "What can travelers do if the train is delayed?",
+          "options": ["Get a free return ticket", "Apply for compensation under certain conditions", "Travel first class for free", "Receive a full refund automatically"],
+          "correctIndex": 1,
+          "explanation": "The text states 'Bei Verspätungen kann man unter bestimmten Bedingungen eine Entschädigung beantragen' — with delays, one can apply for compensation under certain conditions."
+        }
+      ]
+    }
+  ]
+}

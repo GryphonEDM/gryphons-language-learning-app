@@ -3,306 +3,382 @@
   "nameEn": "House & Home",
   "nameUk": "Дім та Житло",
   "nameRu": "Дом",
+  "nameDe": "Haus",
   "difficulty": "A2",
   "icon": "🏠",
   "words": [
     {
       "uk": "будинок",
       "ru": "дом",
+      "de": "Haus",
       "en": "house/building",
       "phoneticUk": "budynok",
       "phoneticRu": "dom",
+      "phoneticDe": "hows",
       "examples": {
         "uk": ["Ми живемо у великому будинку за містом.", "Наш будинок стоїть біля тихої річки."],
         "ru": ["мы живём в большом доме за городом", "наш дом стоит на берегу тихой реки"],
+        "de": ["Wir wohnen in einem großen Haus außerhalb der Stadt.", "Unser Haus steht an einem ruhigen Fluss."],
         "en": ["We live in a big house outside the city.", "Our house stands by a quiet river."]
       }
     },
     {
       "uk": "квартира",
       "ru": "квартира",
+      "de": "Wohnung",
       "en": "apartment",
       "phoneticUk": "kvartyra",
       "phoneticRu": "kvartira",
+      "phoneticDe": "voh-noong",
       "examples": {
         "uk": ["Ми переїхали в нову квартиру.", "Наша квартира знаходиться на п'ятому поверсі."],
         "ru": ["мы переехали в новую квартиру", "квартира находится на пятом этаже"],
+        "de": ["Wir sind in eine neue Wohnung umgezogen.", "Unsere Wohnung befindet sich im fünften Stock."],
         "en": ["We moved into a new apartment.", "Our apartment is on the fifth floor."]
       }
     },
     {
       "uk": "кімната",
       "ru": "комната",
+      "de": "Zimmer",
       "en": "room",
       "phoneticUk": "kimnata",
       "phoneticRu": "komnata",
+      "phoneticDe": "tsim-er",
       "examples": {
         "uk": ["У квартирі є три просторі кімнати.", "Моя кімната світла і затишна."],
         "ru": ["в квартире три просторные комнаты", "комната светлая и очень просторная"],
+        "de": ["Die Wohnung hat drei geräumige Zimmer.", "Mein Zimmer ist hell und gemütlich."],
         "en": ["The apartment has three spacious rooms.", "My room is bright and cozy."]
       }
     },
     {
       "uk": "кухня",
       "ru": "кухня",
+      "de": "Küche",
       "en": "kitchen",
       "phoneticUk": "kukhnya",
       "phoneticRu": "kukhnya",
+      "phoneticDe": "kew-khuh",
       "examples": {
         "uk": ["Мама готує вечерю на кухні.", "На кухні стоїть нова сучасна техніка."],
         "ru": ["мама готовит ужин на кухне", "кухня оборудована новой современной техникой"],
+        "de": ["Mama kocht das Abendessen in der Küche.", "In der Küche stehen neue moderne Geräte."],
         "en": ["Mom is cooking dinner in the kitchen.", "There is new modern appliances in the kitchen."]
       }
     },
     {
       "uk": "ванна",
       "ru": "ванная",
+      "de": "Badezimmer",
       "en": "bathroom/bathtub",
       "phoneticUk": "vanna",
       "phoneticRu": "vannaya",
+      "phoneticDe": "bah-duh-tsim-er",
       "examples": {
         "uk": ["Ванна кімната знаходиться поруч зі спальнею.", "У ванній є душ і велике дзеркало."],
         "ru": ["ванная находится рядом со спальней", "в ванной есть душевая кабина и зеркало"],
+        "de": ["Das Badezimmer befindet sich neben dem Schlafzimmer.", "Im Badezimmer gibt es eine Dusche und einen großen Spiegel."],
         "en": ["The bathroom is next to the bedroom.", "The bathroom has a shower and a large mirror."]
       }
     },
     {
       "uk": "спальня",
       "ru": "спальня",
+      "de": "Schlafzimmer",
       "en": "bedroom",
       "phoneticUk": "spalnya",
       "phoneticRu": "spal'nya",
+      "phoneticDe": "shlahf-tsim-er",
       "examples": {
         "uk": ["Вікна спальні виходять на тихий сад.", "У спальні стоїть велике зручне ліжко."],
         "ru": ["спальня выходит окнами на тихий сад", "в спальне стоит большая удобная кровать"],
+        "de": ["Die Fenster des Schlafzimmers gehen auf einen ruhigen Garten.", "Im Schlafzimmer steht ein großes, bequemes Bett."],
         "en": ["The bedroom windows face a quiet garden.", "There is a large comfortable bed in the bedroom."]
       }
     },
     {
       "uk": "вітальня",
       "ru": "гостиная",
+      "de": "Wohnzimmer",
       "en": "living room",
       "phoneticUk": "vitalnya",
       "phoneticRu": "gostinaya",
+      "phoneticDe": "vohn-tsim-er",
       "examples": {
         "uk": ["Уся родина збирається ввечері у вітальні.", "У вітальні стоїть великий м'який диван."],
         "ru": ["вся семья собирается вечером в гостиной", "в гостиной стоит большой мягкий диван"],
+        "de": ["Die ganze Familie versammelt sich abends im Wohnzimmer.", "Im Wohnzimmer steht ein großes, weiches Sofa."],
         "en": ["The whole family gathers in the living room in the evening.", "There is a large soft sofa in the living room."]
       }
     },
     {
       "uk": "вікно",
       "ru": "окно",
+      "de": "Fenster",
       "en": "window",
       "phoneticUk": "vikno",
       "phoneticRu": "okno",
+      "phoneticDe": "fen-ster",
       "examples": {
         "uk": ["Відкрий вікно, тут дуже спекотно!", "З вікна відкривається гарний вид на місто."],
         "ru": ["открой окно, здесь очень жарко", "из окна открывается красивый вид на горы"],
+        "de": ["Öffne das Fenster, hier ist es sehr heiß!", "Vom Fenster aus hat man einen schönen Blick auf die Stadt."],
         "en": ["Open the window, it's very hot in here!", "There is a beautiful view of the city from the window."]
       }
     },
     {
       "uk": "двері",
       "ru": "дверь",
+      "de": "Tür",
       "en": "door",
       "phoneticUk": "dveri",
       "phoneticRu": "dver'",
+      "phoneticDe": "tewr",
       "examples": {
         "uk": ["Закрий вхідні двері на ключ.", "Хтось голосно стукає у двері."],
         "ru": ["закрой входную дверь на замок", "кто-то громко стучит в дверь"],
+        "de": ["Schließ die Eingangstür mit dem Schlüssel ab.", "Jemand klopft laut an die Tür."],
         "en": ["Lock the front door with a key.", "Someone is knocking loudly at the door."]
       }
     },
     {
       "uk": "стіна",
       "ru": "стена",
+      "de": "Wand",
       "en": "wall",
       "phoneticUk": "stina",
       "phoneticRu": "stena",
+      "phoneticDe": "vant",
       "examples": {
         "uk": ["На стіні висить гарна картина.", "Стіни пофарбовані в приємний білий колір."],
         "ru": ["на стене висит красивая картина", "стены покрашены в приятный белый цвет"],
+        "de": ["An der Wand hängt ein schönes Bild.", "Die Wände sind in einem angenehmen Weiß gestrichen."],
         "en": ["A beautiful painting hangs on the wall.", "The walls are painted a pleasant white color."]
       }
     },
     {
       "uk": "підлога",
       "ru": "пол",
+      "de": "Boden",
       "en": "floor",
       "phoneticUk": "pidloha",
       "phoneticRu": "pol",
+      "phoneticDe": "boh-den",
       "examples": {
         "uk": ["Дерев'яна підлога приємно скрипить під ногами.", "Дитина грає з іграшками на підлозі."],
         "ru": ["деревянный пол приятно скрипит под ногами", "ребёнок играет с кубиками на полу"],
+        "de": ["Der Holzboden knarrt angenehm unter den Füßen.", "Das Kind spielt mit Spielzeug auf dem Boden."],
         "en": ["The wooden floor creaks pleasantly underfoot.", "The child is playing with toys on the floor."]
       }
     },
     {
       "uk": "стеля",
       "ru": "потолок",
+      "de": "Decke",
       "en": "ceiling",
       "phoneticUk": "stelya",
       "phoneticRu": "potolok",
+      "phoneticDe": "dek-uh",
       "examples": {
         "uk": ["Стеля в цій кімнаті дуже висока.", "На стелі висить гарна люстра."],
         "ru": ["потолок в этой комнате очень высокий", "на потолке висит хрустальная люстра"],
+        "de": ["Die Decke in diesem Zimmer ist sehr hoch.", "An der Decke hängt ein schöner Kronleuchter."],
         "en": ["The ceiling in this room is very high.", "A beautiful chandelier hangs from the ceiling."]
       }
     },
     {
       "uk": "дах",
       "ru": "крыша",
+      "de": "Dach",
       "en": "roof",
       "phoneticUk": "dakh",
       "phoneticRu": "krysha",
+      "phoneticDe": "dakh",
       "examples": {
         "uk": ["Дах будинку вкритий червоною черепицею.", "Білий сніг лежить на даху."],
         "ru": ["крыша дома покрыта красной черепицей", "белый снег лежит на крыше сарая"],
+        "de": ["Das Dach des Hauses ist mit roten Ziegeln gedeckt.", "Weißer Schnee liegt auf dem Dach."],
         "en": ["The roof of the house is covered with red tiles.", "White snow lies on the roof."]
       }
     },
     {
       "uk": "сходи",
       "ru": "лестница",
+      "de": "Treppe",
       "en": "stairs",
       "phoneticUk": "skhody",
       "phoneticRu": "lestnitsa",
+      "phoneticDe": "trep-uh",
       "examples": {
         "uk": ["Ми піднялися сходами на третій поверх.", "Дерев'яні сходи ведуть на горище."],
         "ru": ["мы поднялись по лестнице на третий этаж", "деревянная лестница ведёт на чердак дома"],
+        "de": ["Wir sind die Treppe in den dritten Stock hinaufgegangen.", "Die hölzerne Treppe führt auf den Dachboden."],
         "en": ["We went up the stairs to the third floor.", "The wooden stairs lead up to the attic."]
       }
     },
     {
       "uk": "балкон",
       "ru": "балкон",
+      "de": "Balkon",
       "en": "balcony",
       "phoneticUk": "balkon",
       "phoneticRu": "balkon",
+      "phoneticDe": "bal-kon",
       "examples": {
         "uk": ["На балконі ростуть яскраві квіти.", "Ми п'ємо ранковий чай на балконі."],
         "ru": ["яркие цветы растут на балконе", "мы пьём утренний чай на балконе"],
+        "de": ["Auf dem Balkon wachsen bunte Blumen.", "Wir trinken unseren Morgentee auf dem Balkon."],
         "en": ["Bright flowers grow on the balcony.", "We drink our morning tea on the balcony."]
       }
     },
     {
       "uk": "меблі",
       "ru": "мебель",
+      "de": "Möbel",
       "en": "furniture",
       "phoneticUk": "mebli",
       "phoneticRu": "mebel'",
+      "phoneticDe": "moh-bel",
       "examples": {
         "uk": ["Ми купили нові меблі для вітальні.", "Старі меблі стоять на дачі у бабусі."],
         "ru": ["мы купили новую мебель для гостиной", "старая мебель стоит на даче у бабушки"],
+        "de": ["Wir haben neue Möbel für das Wohnzimmer gekauft.", "Die alten Möbel stehen im Ferienhaus der Oma."],
         "en": ["We bought new furniture for the living room.", "The old furniture is at grandma's country house."]
       }
     },
     {
       "uk": "стіл",
       "ru": "стол",
+      "de": "Tisch",
       "en": "table",
       "phoneticUk": "stil",
       "phoneticRu": "stol",
+      "phoneticDe": "tish",
       "examples": {
         "uk": ["Книга лежить на письмовому столі.", "Ми сіли за великий обідній стіл."],
         "ru": ["книга лежит на письменном столе", "мы сели за большой обеденный стол"],
+        "de": ["Das Buch liegt auf dem Schreibtisch.", "Wir setzten uns an den großen Esstisch."],
         "en": ["The book is lying on the writing desk.", "We sat down at the big dining table."]
       }
     },
     {
       "uk": "стілець",
       "ru": "стул",
+      "de": "Stuhl",
       "en": "chair",
       "phoneticUk": "stilets",
       "phoneticRu": "stul",
+      "phoneticDe": "shtool",
       "examples": {
         "uk": ["Сядь на стілець і відпочинь трохи.", "Дерев'яний стілець стоїть біля вікна."],
         "ru": ["садись на стул и отдохни немного", "деревянный стул стоит у окна в кухне"],
+        "de": ["Setz dich auf den Stuhl und ruh dich ein bisschen aus.", "Ein hölzerner Stuhl steht am Fenster."],
         "en": ["Sit down on the chair and rest a little.", "A wooden chair stands by the window."]
       }
     },
     {
       "uk": "ліжко",
       "ru": "кровать",
+      "de": "Bett",
       "en": "bed",
       "phoneticUk": "lizhko",
       "phoneticRu": "krovat'",
+      "phoneticDe": "bet",
       "examples": {
         "uk": ["Дитина міцно спить у своєму ліжку.", "М'яке ліжко стоїть біля стіни в спальні."],
         "ru": ["ребёнок крепко спит в своей кровати", "мягкая кровать стоит у стены в спальне"],
+        "de": ["Das Kind schläft fest in seinem Bett.", "Das weiche Bett steht an der Wand im Schlafzimmer."],
         "en": ["The child is fast asleep in their bed.", "The soft bed stands against the wall in the bedroom."]
       }
     },
     {
       "uk": "шафа",
       "ru": "шкаф",
+      "de": "Schrank",
       "en": "wardrobe/closet",
       "phoneticUk": "shafa",
       "phoneticRu": "shkaf",
+      "phoneticDe": "shrank",
       "examples": {
         "uk": ["Весь одяг акуратно висить у шафі.", "Книжкова шафа стоїть у кабінеті біля стіни."],
         "ru": ["вся одежда аккуратно висит в шкафу", "книжный шкаф стоит в кабинете у стены"],
+        "de": ["Die ganze Kleidung hängt ordentlich im Schrank.", "Der Bücherschrank steht im Arbeitszimmer an der Wand."],
         "en": ["All the clothes hang neatly in the wardrobe.", "The bookcase stands in the study by the wall."]
       }
     },
     {
       "uk": "холодильник",
       "ru": "холодильник",
+      "de": "Kühlschrank",
       "en": "refrigerator",
       "phoneticUk": "kholodylnyk",
       "phoneticRu": "kholodil'nik",
+      "phoneticDe": "kewl-shrank",
       "examples": {
         "uk": ["Постав молоко в холодильник.", "Холодильник стоїть на кухні біля стіни."],
         "ru": ["поставь молоко в холодильник", "холодильник стоит на кухне у стены"],
+        "de": ["Stell die Milch in den Kühlschrank.", "Der Kühlschrank steht in der Küche an der Wand."],
         "en": ["Put the milk in the refrigerator.", "The refrigerator stands in the kitchen by the wall."]
       }
     },
     {
       "uk": "плита",
       "ru": "плита",
+      "de": "Herd",
       "en": "stove",
       "phoneticUk": "plyta",
       "phoneticRu": "plita",
+      "phoneticDe": "hairt",
       "examples": {
         "uk": ["Суп вариться на плиті вже півгодини.", "Газова плита стоїть поруч із раковиною."],
         "ru": ["суп варится на плите уже полчаса", "газовая плита стоит рядом с раковиной"],
+        "de": ["Die Suppe kocht schon seit einer halben Stunde auf dem Herd.", "Der Gasherd steht neben dem Spülbecken."],
         "en": ["The soup has been cooking on the stove for half an hour.", "The gas stove stands next to the sink."]
       }
     },
     {
       "uk": "телевізор",
       "ru": "телевизор",
+      "de": "Fernseher",
       "en": "television/TV",
       "phoneticUk": "televizor",
       "phoneticRu": "televizor",
+      "phoneticDe": "fern-zay-er",
       "examples": {
         "uk": ["Ми дивимося телевізор кожного вечора.", "Великий телевізор висить на стіні у вітальні."],
         "ru": ["мы смотрим телевизор каждый вечер", "большой телевизор висит на стене"],
+        "de": ["Wir schauen jeden Abend fern.", "Der große Fernseher hängt an der Wand im Wohnzimmer."],
         "en": ["We watch TV every evening.", "The big TV hangs on the wall in the living room."]
       }
     },
     {
       "uk": "диван",
       "ru": "диван",
+      "de": "Sofa",
       "en": "sofa/couch",
       "phoneticUk": "dyvan",
       "phoneticRu": "divan",
+      "phoneticDe": "zoh-fa",
       "examples": {
         "uk": ["Кіт спить на м'якому дивані весь день.", "Ми сидимо на дивані і дивимося цікавий фільм."],
         "ru": ["кот спит на мягком диване весь день", "мы сидим на диване и смотрим интересный фильм"],
+        "de": ["Die Katze schläft den ganzen Tag auf dem weichen Sofa.", "Wir sitzen auf dem Sofa und schauen einen interessanten Film."],
         "en": ["The cat sleeps on the soft sofa all day.", "We are sitting on the sofa watching an interesting film."]
       }
     },
     {
       "uk": "килим",
       "ru": "ковёр",
+      "de": "Teppich",
       "en": "carpet/rug",
       "phoneticUk": "kylym",
       "phoneticRu": "kovyor",
+      "phoneticDe": "tep-ikh",
       "examples": {
         "uk": ["М'який килим лежить на підлозі у вітальні.", "Пухнастий килим приємний на дотик."],
         "ru": ["мягкий ковёр лежит на полу в гостиной", "пушистый ковёр приятен на ощупь"],
+        "de": ["Ein weicher Teppich liegt auf dem Boden im Wohnzimmer.", "Der flauschige Teppich ist angenehm unter den Füßen."],
         "en": ["A soft carpet lies on the floor in the living room.", "The fluffy rug feels pleasant underfoot."]
       }
     }

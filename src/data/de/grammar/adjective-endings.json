@@ -1,0 +1,85 @@
+{
+  "lessonId": "adjective-endings",
+  "nameEn": "Adjective Endings",
+  "nameDe": "Adjektivendungen",
+  "icon": "✏️",
+  "tier": "A2",
+  "prerequisites": ["cases-nominative-accusative", "articles"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "predicative",
+      "title": "Predicative Adjectives — No Ending",
+      "explanation": "Adjectives can be used in two ways in German. A predicative adjective follows a linking verb (sein, werden, bleiben) and describes the subject. Predicative adjectives have NO endings — they stay in their base (dictionary) form. Structure: Subject + linking verb + adjective. Examples: 'Das Haus ist groß.' (The house is big.) 'Die Suppe ist heiß.' (The soup is hot.) 'Der Mann ist müde.' (The man is tired.) 'Das Kind bleibt ruhig.' (The child remains calm.) Notice that 'groß', 'heiß', 'müde', and 'ruhig' all stay unchanged regardless of the noun's gender.",
+      "tip": "Predicative (after ist/sind/bleibt/wird): NO ending. Das Haus ist groß. Die Frau ist groß. Der Mann ist groß. All just 'groß'!",
+      "examples": [
+        { "de": "Das Haus ist groß.", "en": "The house is big. (neuter — no ending)", "highlight": "groß" },
+        { "de": "Die Suppe ist heiß.", "en": "The soup is hot. (feminine — no ending)", "highlight": "heiß" },
+        { "de": "Der Mann ist müde.", "en": "The man is tired. (masculine — no ending)", "highlight": "müde" },
+        { "de": "Die Kinder sind laut.", "en": "The children are loud. (plural — no ending)", "highlight": "laut" },
+        { "de": "Das Wetter bleibt schön.", "en": "The weather stays beautiful.", "highlight": "schön" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What ending does a predicative adjective take in German?", "options": ["No ending (base form)", "-e", "-en"], "correctIndex": 0, "explanation": "Predicative adjectives (after sein, werden, bleiben) take NO ending. 'Das Haus ist groß' — 'groß' has no added ending." },
+        { "type": "multiple-choice", "prompt": "Which sentence uses a predicative adjective correctly?", "options": ["Die Katze ist klein.", "Die kleinen Katze ist hier.", "Die kleine ist Katze."], "correctIndex": 0, "explanation": "'Die Katze ist klein.' — 'klein' follows 'ist' and has no ending. This is a predicative adjective." },
+        { "type": "fill-blank", "prompt": "Der Kaffee ist ___. (The coffee is hot.) — use 'heiß', no ending", "acceptedAnswers": ["heiß"], "hint": "Predicative adjectives take no ending", "explanation": "'Der Kaffee ist heiß.' After 'ist', the adjective stays in its base form: heiß (not 'heißer' or 'heißes')." },
+        { "type": "multiple-choice", "prompt": "How do you say 'The children are tired' (predicative)?", "options": ["Die Kinder sind müde.", "Die Kinder sind müden.", "Die Kinder sind müdes."], "correctIndex": 0, "explanation": "Predicative adjective after 'sind': no ending. 'Die Kinder sind müde.' (not 'müden' or 'müdes')." },
+        { "type": "multiple-choice", "prompt": "All of these nouns have different genders. Which adjective form is correct after 'ist'?", "options": ["Same form for all — no ending", "Different form for each gender", "Add -e for feminine"], "correctIndex": 0, "explanation": "Predicative adjectives are invariable: 'Der Mann ist groß. Die Frau ist groß. Das Kind ist groß.' All use 'groß' with no ending." }
+      ]
+    },
+    {
+      "sectionId": "attributive-definite",
+      "title": "Attributive Adjectives with Definite Articles",
+      "explanation": "When an adjective comes BEFORE a noun (attributive), it must take an ending that matches the noun's gender, number, and case. With a definite article (der/die/das), the endings are called 'weak endings' because the article already shows most of the gender information. Weak endings: -e or -en. Nominative: der alte Mann (-e), die alte Frau (-e), das alte Kind (-e), die alten Kinder (-en). Accusative: den alten Mann (-en), die alte Frau (-e), das alte Kind (-e). A simple pattern: Nominative singular = -e everywhere. Accusative singular = -en for masculine, -e for feminine and neuter. All plurals = -en.",
+      "tip": "With der/die/das: singular nominative and acc. fem./neut. = -e; everything else = -en. The -en ending is the 'safe' default.",
+      "examples": [
+        { "de": "der alte Mann", "en": "the old man (masc. nom. → -e)", "highlight": "alte" },
+        { "de": "die alte Frau", "en": "the old woman (fem. nom. → -e)", "highlight": "alte" },
+        { "de": "das alte Haus", "en": "the old house (neut. nom. → -e)", "highlight": "alte" },
+        { "de": "die alten Kinder", "en": "the old children (plural → -en)", "highlight": "alten" },
+        { "de": "Ich sehe den alten Mann.", "en": "I see the old man. (masc. acc. → -en)", "highlight": "alten" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What ending does 'groß' take in 'der große Mann' (nom.)?", "options": ["-e (der große Mann)", "-en (der großen Mann)", "-es (der großes Mann)"], "correctIndex": 0, "explanation": "With definite article, masculine nominative: adjective takes -e. 'der große Mann' (the big man)." },
+        { "type": "multiple-choice", "prompt": "What ending in 'die alte Frau' (nom.)?", "options": ["-e (die alte Frau)", "-en (die alten Frau)", "-es (die altes Frau)"], "correctIndex": 0, "explanation": "With definite article, feminine nominative: adjective takes -e. 'die alte Frau' (the old woman)." },
+        { "type": "fill-blank", "prompt": "die alt___ Kinder (the old children, plural)", "acceptedAnswers": ["en", "-en", "die alten Kinder"], "hint": "Plural adjectives with definite article always take -en", "explanation": "Plural adjectives with definite article always take -en: 'die alten Kinder'." },
+        { "type": "multiple-choice", "prompt": "What is the accusative of 'der alte Mann'?", "options": ["den alten Mann", "den alte Mann", "des alten Mannes"], "correctIndex": 0, "explanation": "Masculine accusative with definite article: adjective takes -en. 'Ich sehe den alten Mann.' (I see the old man.)" },
+        { "type": "matching", "prompt": "Match each noun phrase to the correct adjective ending (with definite article, nominative):", "pairs": [
+          { "left": "der ___ Tisch (masc.)", "right": "-e (der alte Tisch)" },
+          { "left": "die ___ Lampe (fem.)", "right": "-e (die alte Lampe)" },
+          { "left": "das ___ Haus (neut.)", "right": "-e (das alte Haus)" },
+          { "left": "die ___ Häuser (pl.)", "right": "-en (die alten Häuser)" }
+        ], "explanation": "With definite article, nominative singular: always -e. Plural: always -en." },
+        { "type": "multiple-choice", "prompt": "Complete: 'Ich lese das ___ Buch.' (I read the interesting book.) — neut. acc.", "options": ["interessante", "interessanten", "interessantes"], "correctIndex": 0, "explanation": "Neuter accusative with definite article: -e. 'Ich lese das interessante Buch.' (Neuter acc. with 'das' → -e.)" },
+        { "type": "fill-blank", "prompt": "Er kauft den neu___ Wagen. (He buys the new car.) — masc. acc.", "acceptedAnswers": ["en", "-en"], "hint": "Masculine accusative with definite article", "explanation": "Masculine accusative with definite article (den): adjective takes -en. 'den neuen Wagen'." }
+      ]
+    },
+    {
+      "sectionId": "attributive-indefinite",
+      "title": "Attributive Adjectives with Indefinite Articles",
+      "explanation": "When the noun phrase has an indefinite article (ein/eine/kein/keine), the adjective must carry more gender information because 'ein' alone doesn't distinguish masculine from neuter (both use 'ein'). These are called 'mixed endings'. The key endings to know: Masculine nominative: -er (ein alter Mann — the -er shows masculine). Feminine nominative: -e (eine alte Frau). Neuter nominative: -es (ein altes Haus — the -es shows neuter). Accusative: masculine gets -en (einen alten Mann), feminine stays -e (eine alte Frau), neuter stays -es (ein altes Haus). Plural with kein: -en (keine alten Häuser).",
+      "tip": "With ein/eine: the adjective must show gender! Masc. nom.= -er, neut. nom.= -es, fem. nom. = -e. Masc. acc. = -en.",
+      "examples": [
+        { "de": "ein alter Mann", "en": "an old man (masc. nom. → -er)", "highlight": "alter" },
+        { "de": "eine alte Frau", "en": "an old woman (fem. nom. → -e)", "highlight": "alte" },
+        { "de": "ein altes Haus", "en": "an old house (neut. nom. → -es)", "highlight": "altes" },
+        { "de": "Ich sehe einen alten Mann.", "en": "I see an old man. (masc. acc. → -en)", "highlight": "alten" },
+        { "de": "keine alten Häuser", "en": "no old houses (plural → -en)", "highlight": "alten" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What ending does the adjective take in 'ein ___ Mann' (old man, nom.)?", "options": ["-er (ein alter Mann — shows masculine)", "-e (ein alte Mann)", "-es (ein altes Mann)"], "correctIndex": 0, "explanation": "With 'ein', the adjective must show masculine by taking -er: 'ein alter Mann'. (der alte Mann with def. article uses -e)." },
+        { "type": "multiple-choice", "prompt": "What is the correct phrase for 'a beautiful house' (neuter, nom.)?", "options": ["ein schönes Haus", "ein schöne Haus", "ein schöner Haus"], "correctIndex": 0, "explanation": "Neuter nominative with 'ein': adjective takes -es (to show neuter gender): 'ein schönes Haus'." },
+        { "type": "fill-blank", "prompt": "eine jung___ Frau (a young woman, fem. nom.)", "acceptedAnswers": ["e", "-e"], "hint": "Feminine with indefinite article — same as with definite article", "explanation": "Feminine with 'eine': adjective takes -e: 'eine junge Frau'. (Feminine nom. is -e with both definite and indefinite articles.)" },
+        { "type": "multiple-choice", "prompt": "Complete: 'Ich kaufe einen ___ Wagen.' (I buy a new car — masc. acc.)", "options": ["neuen", "neuer", "neues"], "correctIndex": 0, "explanation": "Masculine accusative with indefinite article: adjective takes -en: 'einen neuen Wagen'." },
+        { "type": "matching", "prompt": "Match each noun phrase to the correct adjective ending (with ein/eine, nominative):", "pairs": [
+          { "left": "ein ___ Hund (masc. nom.)", "right": "-er (ein großer Hund)" },
+          { "left": "eine ___ Katze (fem. nom.)", "right": "-e (eine große Katze)" },
+          { "left": "ein ___ Kind (neut. nom.)", "right": "-es (ein großes Kind)" },
+          { "left": "einen ___ Mann (masc. acc.)", "right": "-en (einen großen Mann)" }
+        ], "explanation": "With ein/eine: masc. nom. -er, fem. nom. -e, neut. nom. -es, masc. acc. -en." },
+        { "type": "multiple-choice", "prompt": "Which sentence is correct? 'She has a nice cat.' (Katze = fem.)", "options": ["Sie hat eine nette Katze.", "Sie hat ein nettes Katze.", "Sie hat einen netten Katze."], "correctIndex": 0, "explanation": "'Katze' is feminine. Accusative feminine with 'eine': adjective takes -e. 'eine nette Katze' (not -es or -en)." },
+        { "type": "fill-blank", "prompt": "Das ist ein gut___ Idee. — Idee is feminine", "acceptedAnswers": ["e", "-e"], "hint": "Feminine with eine — adjective ending", "explanation": "'Idee' is feminine (die Idee). With 'eine', feminine nominative adjective takes -e: 'eine gute Idee'. (Das ist eine gute Idee.)" }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "nameEn": "Animals",
   "nameUk": "Тварини",
   "nameRu": "Животные",
+  "nameDe": "Tiere",
   "difficulty": "A1",
   "icon": "🐾",
   "totalWords": 26,
@@ -11,312 +12,390 @@
     {
       "uk": "кіт",
       "ru": "кошка",
+      "de": "Katze",
       "en": "cat",
       "phoneticUk": "kit",
       "phoneticRu": "koshka",
+      "phoneticDe": "kat-tsuh",
       "examples": {
         "uk": ["Рудий кіт спить на дивані весь день.", "Чорний кіт перебіг через дорогу."],
         "ru": ["кошка спит на диване весь день", "чёрная кошка перебежала дорогу"],
+        "de": ["Die rote Katze schläft den ganzen Tag auf dem Sofa.", "Eine schwarze Katze lief über die Straße."],
         "en": ["The ginger cat sleeps on the sofa all day.", "A black cat ran across the road."]
       }
     },
     {
       "uk": "собака",
       "ru": "собака",
+      "de": "Hund",
       "en": "dog",
       "phoneticUk": "sobaka",
       "phoneticRu": "sobaka",
+      "phoneticDe": "hoont",
       "examples": {
         "uk": ["Великий собака чекає господаря біля дверей.", "Наш собака гавкає на перехожих."],
         "ru": ["собака лает на прохожих за забором", "верная собака ждёт хозяина у двери"],
+        "de": ["Der große Hund wartet an der Tür auf seinen Besitzer.", "Unser Hund bellt die Passanten an."],
         "en": ["The big dog waits for its owner at the door.", "Our dog barks at passers-by."]
       }
     },
     {
       "uk": "птах",
       "ru": "птица",
+      "de": "Vogel",
       "en": "bird",
       "phoneticUk": "ptakh",
       "phoneticRu": "ptitsa",
+      "phoneticDe": "foh-gel",
       "examples": {
         "uk": ["Маленький птах співає на гілці щоранку.", "Цей птах летить на південь взимку."],
         "ru": ["птица поёт на ветке каждое утро", "маленькая птица летит на юг зимой"],
+        "de": ["Ein kleiner Vogel singt jeden Morgen auf dem Ast.", "Dieser Vogel fliegt im Winter in den Süden."],
         "en": ["A little bird sings on the branch every morning.", "This bird flies south in winter."]
       }
     },
     {
       "uk": "риба",
       "ru": "рыба",
+      "de": "Fisch",
       "en": "fish",
       "phoneticUk": "ryba",
       "phoneticRu": "ryba",
+      "phoneticDe": "fish",
       "examples": {
         "uk": ["Золота риба живе в акваріумі.", "Риба плаває в чистому озері."],
         "ru": ["рыба плавает в чистом озере", "золотая рыба живёт в аквариуме"],
+        "de": ["Der Goldfisch lebt in einem Aquarium.", "Fische schwimmen in dem sauberen See."],
         "en": ["The goldfish lives in an aquarium.", "Fish swim in the clean lake."]
       }
     },
     {
       "uk": "кінь",
       "ru": "лошадь",
+      "de": "Pferd",
       "en": "horse",
       "phoneticUk": "kin",
       "phoneticRu": "loshad'",
+      "phoneticDe": "pfairt",
       "examples": {
         "uk": ["Білий кінь біжить по зеленому полю.", "Кінь стоїть біля паркану."],
         "ru": ["лошадь скачет по зелёному полю", "белая лошадь стоит у забора"],
+        "de": ["Ein weißes Pferd läuft über das grüne Feld.", "Das Pferd steht am Zaun."],
         "en": ["A white horse runs across the green field.", "The horse stands by the fence."]
       }
     },
     {
       "uk": "корова",
       "ru": "корова",
+      "de": "Kuh",
       "en": "cow",
       "phoneticUk": "korova",
       "phoneticRu": "korova",
+      "phoneticDe": "koo",
       "examples": {
         "uk": ["Корова дає молоко кожного дня.", "Корова пасеться на лузі біля річки."],
         "ru": ["корова даёт молоко каждый день", "корова пасётся на лугу у реки"],
+        "de": ["Die Kuh gibt jeden Tag Milch.", "Die Kuh grast auf der Wiese am Fluss."],
         "en": ["The cow gives milk every day.", "The cow grazes in the meadow by the river."]
       }
     },
     {
       "uk": "свиня",
       "ru": "свинья",
+      "de": "Schwein",
       "en": "pig",
       "phoneticUk": "svynya",
       "phoneticRu": "svin'ya",
+      "phoneticDe": "shvine",
       "examples": {
         "uk": ["Рожева свиня живе на фермі.", "Маленька свиня їсть кукурудзу з корита."],
         "ru": ["свинья живёт на ферме", "маленькая свинья ест кукурузу из корыта"],
+        "de": ["Ein rosafarbenes Schwein lebt auf dem Bauernhof.", "Das kleine Schwein frisst Mais aus dem Trog."],
         "en": ["A pink pig lives on the farm.", "The little pig eats corn from a trough."]
       }
     },
     {
       "uk": "вівця",
       "ru": "овца",
+      "de": "Schaf",
       "en": "sheep",
       "phoneticUk": "vivtsya",
       "phoneticRu": "ovtsa",
+      "phoneticDe": "shahf",
       "examples": {
         "uk": ["Біла вівця пасеться на зеленому лузі.", "Стадо овець іде по дорозі."],
         "ru": ["овца пасётся на зелёном лугу", "белая овца стоит рядом со стадом"],
+        "de": ["Ein weißes Schaf grast auf der grünen Wiese.", "Eine Herde Schafe geht die Straße entlang."],
         "en": ["A white sheep grazes on the green meadow.", "A flock of sheep walks down the road."]
       }
     },
     {
       "uk": "курка",
       "ru": "курица",
+      "de": "Huhn",
       "en": "chicken",
       "phoneticUk": "kurka",
       "phoneticRu": "kuritsa",
+      "phoneticDe": "hoon",
       "examples": {
         "uk": ["Курка несе яйця кожного ранку.", "Курка гуляє з курчатами у дворі."],
         "ru": ["курица несёт яйца каждое утро", "курица гуляет с цыплятами во дворе"],
+        "de": ["Das Huhn legt jeden Morgen Eier.", "Das Huhn spaziert mit seinen Küken auf dem Hof."],
         "en": ["The chicken lays eggs every morning.", "The hen walks with her chicks in the yard."]
       }
     },
     {
       "uk": "качка",
       "ru": "утка",
+      "de": "Ente",
       "en": "duck",
       "phoneticUk": "kachka",
       "phoneticRu": "utka",
+      "phoneticDe": "en-tuh",
       "examples": {
         "uk": ["Качка плаває у ставку з каченятами.", "Дика качка летить на південь восени."],
         "ru": ["утка плавает в пруду с утятами", "дикая утка летит на юг осенью"],
+        "de": ["Eine Ente schwimmt mit ihren Küken im Teich.", "Die Wildente fliegt im Herbst in den Süden."],
         "en": ["A duck swims in the pond with her ducklings.", "The wild duck flies south in autumn."]
       }
     },
     {
       "uk": "миша",
       "ru": "мышь",
+      "de": "Maus",
       "en": "mouse",
       "phoneticUk": "mysha",
       "phoneticRu": "mysh'",
+      "phoneticDe": "mows",
       "examples": {
         "uk": ["Маленька миша ховається в нірці.", "Сіра миша біжить по підлозі."],
         "ru": ["маленькая мышь прячется в норке", "серая мышь бежит по полу"],
+        "de": ["Eine kleine Maus versteckt sich in ihrem Loch.", "Die graue Maus läuft über den Boden."],
         "en": ["A little mouse hides in its hole.", "The grey mouse runs across the floor."]
       }
     },
     {
       "uk": "ведмідь",
       "ru": "медведь",
+      "de": "Bär",
       "en": "bear",
       "phoneticUk": "vedmid",
       "phoneticRu": "medved'",
+      "phoneticDe": "bair",
       "examples": {
         "uk": ["Бурий ведмідь живе в густому лісі.", "Ведмідь ловить рибу в гірській річці."],
         "ru": ["медведь ловит рыбу в горной реке", "бурый медведь живёт в густом лесу"],
+        "de": ["Ein Braunbär lebt im dichten Wald.", "Der Bär fängt Fische im Gebirgsfluss."],
         "en": ["A brown bear lives in the dense forest.", "The bear catches fish in the mountain river."]
       }
     },
     {
       "uk": "вовк",
       "ru": "волк",
+      "de": "Wolf",
       "en": "wolf",
       "phoneticUk": "vovk",
       "phoneticRu": "volk",
+      "phoneticDe": "volf",
       "examples": {
         "uk": ["Сірий вовк виє на повний місяць.", "Вовк біжить по зимовому лісу."],
         "ru": ["волк воет на полную луну", "серый волк бежит по зимнему лесу"],
+        "de": ["Ein grauer Wolf heult den Vollmond an.", "Der Wolf läuft durch den Winterwald."],
         "en": ["A grey wolf howls at the full moon.", "The wolf runs through the winter forest."]
       }
     },
     {
       "uk": "лисиця",
       "ru": "лиса",
+      "de": "Fuchs",
       "en": "fox",
       "phoneticUk": "lysytsya",
       "phoneticRu": "lisa",
+      "phoneticDe": "fooks",
       "examples": {
         "uk": ["Руда лисиця ховається у своїй нірці.", "Хитра лисиця біжить по засніженому полю."],
         "ru": ["хитрая лиса прячется в своей норе", "рыжая лиса бежит по заснеженному полю"],
+        "de": ["Der rote Fuchs versteckt sich in seinem Bau.", "Der schlaue Fuchs läuft über das verschneite Feld."],
         "en": ["The red fox hides in its den.", "The cunning fox runs across the snowy field."]
       }
     },
     {
       "uk": "заєць",
       "ru": "заяц",
+      "de": "Hase",
       "en": "hare",
       "phoneticUk": "zayets",
       "phoneticRu": "zayats",
+      "phoneticDe": "hah-zuh",
       "examples": {
         "uk": ["Білий заєць стрибає по свіжому снігу.", "Заєць ховається в кущах від лисиці."],
         "ru": ["заяц прыгает по свежему снегу", "белый заяц прячется в кустах от лисы"],
+        "de": ["Ein weißer Hase hüpft über den frischen Schnee.", "Der Hase versteckt sich im Gebüsch vor dem Fuchs."],
         "en": ["A white hare hops across the fresh snow.", "The hare hides in the bushes from the fox."]
       }
     },
     {
       "uk": "білка",
       "ru": "белка",
+      "de": "Eichhörnchen",
       "en": "squirrel",
       "phoneticUk": "bilka",
       "phoneticRu": "belka",
+      "phoneticDe": "ike-horn-khen",
       "examples": {
         "uk": ["Руда білка збирає горіхи в парку.", "Білка стрибає з гілки на гілку."],
         "ru": ["рыжая белка собирает орехи в парке", "белка прыгает с ветки на ветку"],
+        "de": ["Ein rotes Eichhörnchen sammelt Nüsse im Park.", "Das Eichhörnchen springt von Ast zu Ast."],
         "en": ["A red squirrel collects nuts in the park.", "The squirrel jumps from branch to branch."]
       }
     },
     {
       "uk": "їжак",
       "ru": "ёж",
+      "de": "Igel",
       "en": "hedgehog",
       "phoneticUk": "yizhak",
       "phoneticRu": "yozh",
+      "phoneticDe": "ee-gel",
       "examples": {
         "uk": ["Колючий їжак ховається в осінньому листі.", "Маленький їжак несе яблуко на спині."],
         "ru": ["колючий ёж прячется в осенних листьях", "маленький ёж несёт яблоко на спине"],
+        "de": ["Ein stacheliger Igel versteckt sich im Herbstlaub.", "Der kleine Igel trägt einen Apfel auf dem Rücken."],
         "en": ["A prickly hedgehog hides in the autumn leaves.", "The little hedgehog carries an apple on its back."]
       }
     },
     {
       "uk": "змія",
       "ru": "змея",
+      "de": "Schlange",
       "en": "snake",
       "phoneticUk": "zmiya",
       "phoneticRu": "zmeya",
+      "phoneticDe": "shlang-uh",
       "examples": {
         "uk": ["Зелена змія повзе по високій траві.", "Отруйна змія небезпечна для людини."],
         "ru": ["змея ползёт по высокой траве", "ядовитая змея опасна для человека"],
+        "de": ["Eine grüne Schlange kriecht durch das hohe Gras.", "Eine giftige Schlange ist für Menschen gefährlich."],
         "en": ["A green snake crawls through the tall grass.", "A poisonous snake is dangerous for people."]
       }
     },
     {
       "uk": "жаба",
       "ru": "лягушка",
+      "de": "Frosch",
       "en": "frog",
       "phoneticUk": "zhaba",
       "phoneticRu": "lyagushka",
+      "phoneticDe": "frosh",
       "examples": {
         "uk": ["Зелена жаба сидить на листі латаття.", "Жаба голосно квакає біля ставка."],
         "ru": ["зелёная лягушка сидит на листе кувшинки", "лягушка громко квакает у пруда"],
+        "de": ["Ein grüner Frosch sitzt auf einem Seerosenblatt.", "Der Frosch quakt laut am Teich."],
         "en": ["A green frog sits on a lily pad.", "The frog croaks loudly by the pond."]
       }
     },
     {
       "uk": "метелик",
       "ru": "бабочка",
+      "de": "Schmetterling",
       "en": "butterfly",
       "phoneticUk": "metelyk",
       "phoneticRu": "babochka",
+      "phoneticDe": "shmet-er-ling",
       "examples": {
         "uk": ["Барвистий метелик сів на квітку.", "Яскравий метелик літає над полем."],
         "ru": ["красивая бабочка села на цветок", "яркая бабочка летает над полем"],
+        "de": ["Ein bunter Schmetterling hat sich auf eine Blume gesetzt.", "Ein heller Schmetterling fliegt über das Feld."],
         "en": ["A colourful butterfly landed on a flower.", "A bright butterfly flies over the field."]
       }
     },
     {
       "uk": "олень",
       "ru": "олень",
+      "de": "Hirsch",
       "en": "deer",
       "phoneticUk": "olen",
       "phoneticRu": "olen'",
+      "phoneticDe": "hirsh",
       "examples": {
         "uk": ["Олень стоїть на лісовій галявині.", "Північний олень живе в холодній тундрі."],
         "ru": ["олень стоит на лесной поляне", "северный олень живёт в холодной тундре"],
+        "de": ["Ein Hirsch steht auf der Waldlichtung.", "Das Rentier lebt in der kalten Tundra."],
         "en": ["A deer stands in the forest clearing.", "The reindeer lives in the cold tundra."]
       }
     },
     {
       "uk": "слон",
       "ru": "слон",
+      "de": "Elefant",
       "en": "elephant",
       "phoneticUk": "slon",
       "phoneticRu": "slon",
+      "phoneticDe": "el-eh-fant",
       "examples": {
         "uk": ["Слон п'є воду з широкої річки.", "Африканський слон — найбільша наземна тварина."],
         "ru": ["слон пьёт воду из широкой реки", "африканский слон — самое крупное сухопутное животное"],
+        "de": ["Der Elefant trinkt Wasser aus dem breiten Fluss.", "Der afrikanische Elefant ist das größte Landtier."],
         "en": ["The elephant drinks water from the wide river.", "The African elephant is the largest land animal."]
       }
     },
     {
       "uk": "лев",
       "ru": "лев",
+      "de": "Löwe",
       "en": "lion",
       "phoneticUk": "lev",
       "phoneticRu": "lev",
+      "phoneticDe": "loh-vuh",
       "examples": {
         "uk": ["Лев відпочиває в тіні великого дерева.", "Лев — цар звірів у савані."],
         "ru": ["лев — царь зверей в саванне", "лев отдыхает в тени большого дерева"],
+        "de": ["Der Löwe ruht im Schatten eines großen Baumes.", "Der Löwe ist der König der Tiere in der Savanne."],
         "en": ["The lion rests in the shade of a big tree.", "The lion is the king of animals in the savannah."]
       }
     },
     {
       "uk": "тигр",
       "ru": "тигр",
+      "de": "Tiger",
       "en": "tiger",
       "phoneticUk": "tyhr",
       "phoneticRu": "tigr",
+      "phoneticDe": "tee-ger",
       "examples": {
         "uk": ["Смугастий тигр полює в густих джунглях.", "Тигр бігає дуже швидко."],
         "ru": ["тигр охотится в густых джунглях", "полосатый тигр бежит очень быстро"],
+        "de": ["Ein gestreifter Tiger jagt im dichten Dschungel.", "Der Tiger läuft sehr schnell."],
         "en": ["A striped tiger hunts in the dense jungle.", "The tiger runs very fast."]
       }
     },
     {
       "uk": "мавпа",
       "ru": "обезьяна",
+      "de": "Affe",
       "en": "monkey",
       "phoneticUk": "mavpa",
       "phoneticRu": "obez'yana",
+      "phoneticDe": "af-fuh",
       "examples": {
         "uk": ["Весела мавпа їсть стиглий банан.", "Мавпа спритно стрибає по деревах."],
         "ru": ["обезьяна ест спелый банан", "обезьяна ловко прыгает по деревьям"],
+        "de": ["Ein fröhlicher Affe isst eine reife Banane.", "Der Affe schwingt sich geschickt durch die Bäume."],
         "en": ["A cheerful monkey eats a ripe banana.", "The monkey nimbly swings through the trees."]
       }
     },
     {
       "uk": "черепаха",
       "ru": "черепаха",
+      "de": "Schildkröte",
       "en": "turtle",
       "phoneticUk": "cherepakha",
       "phoneticRu": "cherepakha",
+      "phoneticDe": "shilt-kroh-tuh",
       "examples": {
         "uk": ["Черепаха ходить дуже повільно.", "Морська черепаха плаває в теплому океані."],
         "ru": ["черепаха ходит очень медленно", "морская черепаха плавает в тёплом океане"],
+        "de": ["Die Schildkröte bewegt sich sehr langsam.", "Die Meeresschildkröte schwimmt im warmen Ozean."],
         "en": ["The turtle walks very slowly.", "The sea turtle swims in the warm ocean."]
       }
     }

@@ -1,0 +1,132 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping",
+  "nameDe": "Einkaufen",
+  "icon": "🛍️",
+  "context": "You are shopping at a market in Germany looking for clothes.",
+  "characters": {
+    "npc": { "name": "Verkäufer" },
+    "player": { "name": "Kunde" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Guten Tag! Kann ich Ihnen helfen?",
+      "translation": "Good day! Can I help you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes, you are looking for a t-shirt",
+      "acceptedResponses": [
+        "Ja, ich suche ein T-Shirt",
+        "Ja bitte, ich suche ein T-Shirt",
+        "Ich suche ein T-Shirt",
+        "Ja, ich suche ein T-Shirt, bitte"
+      ],
+      "keyWords": ["suche", "T-Shirt"],
+      "hint": "Ja, ich suche ein T-Shirt."
+    },
+    {
+      "speaker": "npc",
+      "text": "Welche Farbe möchten Sie? Wir haben blau, rot und weiß.",
+      "translation": "What color would you like? We have blue, red, and white."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you would like a blue one",
+      "acceptedResponses": [
+        "Ich möchte ein blaues",
+        "Blau bitte",
+        "Ein blaues, bitte",
+        "Ich nehme das blaue"
+      ],
+      "keyWords": ["blau"],
+      "hint": "Ein blaues, bitte."
+    },
+    {
+      "speaker": "npc",
+      "text": "Welche Größe haben Sie?",
+      "translation": "What size are you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you are size medium",
+      "acceptedResponses": [
+        "Ich habe Größe M",
+        "Größe M bitte",
+        "Medium",
+        "Ich trage Größe M"
+      ],
+      "keyWords": ["Größe", "M"],
+      "hint": "Ich habe Größe M."
+    },
+    {
+      "speaker": "npc",
+      "text": "Hier, bitte. Möchten Sie es anprobieren?",
+      "translation": "Here you go. Would you like to try it on?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes please, where is the fitting room?",
+      "acceptedResponses": [
+        "Ja bitte. Wo ist die Umkleidekabine?",
+        "Ja, wo ist die Umkleidekabine?",
+        "Gerne. Wo ist die Umkleidekabine?",
+        "Ja! Wo kann ich es anprobieren?"
+      ],
+      "keyWords": ["Umkleidekabine", "Wo"],
+      "hint": "Ja bitte. Wo ist die Umkleidekabine?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Die Umkleidekabine ist dort drüben, auf der rechten Seite.",
+      "translation": "The fitting room is over there, on the right side."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say the t-shirt fits well and ask how much it costs",
+      "acceptedResponses": [
+        "Es passt gut. Was kostet es?",
+        "Es passt. Wie viel kostet es?",
+        "Es passt gut! Was kostet das T-Shirt?",
+        "Gut, es passt. Wie viel kostet es?"
+      ],
+      "keyWords": ["passt", "kostet"],
+      "hint": "Es passt gut. Was kostet es?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Das T-Shirt kostet fünfzehn Euro.",
+      "translation": "The t-shirt costs fifteen euros."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say it is a bit expensive. Ask if there is a discount.",
+      "acceptedResponses": [
+        "Das ist etwas teuer. Gibt es einen Rabatt?",
+        "Es ist etwas teuer. Haben Sie einen Rabatt?",
+        "Das ist teuer. Gibt es Rabatt?",
+        "Ein bisschen teuer. Gibt es einen Rabatt?"
+      ],
+      "keyWords": ["teuer", "Rabatt"],
+      "hint": "Das ist etwas teuer. Gibt es einen Rabatt?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Heute haben wir zehn Prozent Rabatt! Das macht dreizehn Euro fünfzig.",
+      "translation": "Today we have ten percent off! That comes to thirteen euros fifty."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say okay, you will take it. You want to pay by card.",
+      "acceptedResponses": [
+        "Gut, ich nehme es. Kann ich mit Karte zahlen?",
+        "Okay, ich nehme es. Mit Karte bitte.",
+        "Ich nehme es. Kann ich mit Karte bezahlen?",
+        "Gut! Mit Karte bitte."
+      ],
+      "keyWords": ["nehme", "Karte"],
+      "hint": "Gut, ich nehme es. Kann ich mit Karte zahlen?"
+    }
+  ]
+}

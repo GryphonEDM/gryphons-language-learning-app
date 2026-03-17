@@ -3,6 +3,7 @@
   "nameEn": "Travel & Transportation",
   "nameUk": "Подорожі та Транспорт",
   "nameRu": "Путешествия",
+  "nameDe": "Reisen",
   "difficulty": "A2",
   "icon": "✈️",
   "totalWords": 36,
@@ -11,432 +12,540 @@
     {
       "uk": "аеропорт",
       "ru": "аэропорт",
+      "de": "Flughafen",
       "en": "airport",
       "phoneticUk": "aeroport",
       "phoneticRu": "aeroport",
+      "phoneticDe": "floo-hah-fen",
       "examples": {
         "uk": ["Ми приїхали до аеропорту за дві години до вильоту.", "Аеропорт знаходиться далеко від центру міста."],
         "ru": ["мы приехали в аэропорт за два часа до вылета", "аэропорт находится далеко от центра города"],
+        "de": ["Wir sind zwei Stunden vor dem Abflug am Flughafen angekommen.", "Der Flughafen liegt weit vom Stadtzentrum entfernt."],
         "en": ["We arrived at the airport two hours before departure.", "The airport is far from the city center."]
       }
     },
     {
       "uk": "вокзал",
       "ru": "вокзал",
+      "de": "Bahnhof",
       "en": "train station",
       "phoneticUk": "vokzal",
       "phoneticRu": "vokzal",
+      "phoneticDe": "bahn-hohf",
       "examples": {
         "uk": ["Поїзд відправляється з вокзалу о сьомій ранку.", "Зустрінемося на вокзалі біля головного входу."],
         "ru": ["поезд отправляется с вокзала в семь утра", "мы встретимся на вокзале у главного входа"],
+        "de": ["Der Zug fährt um sieben Uhr morgens vom Bahnhof ab.", "Treffen wir uns am Bahnhof beim Haupteingang."],
         "en": ["The train departs from the station at seven in the morning.", "Let's meet at the station near the main entrance."]
       }
     },
     {
       "uk": "автобус",
       "ru": "автобус",
+      "de": "Bus",
       "en": "bus",
       "phoneticUk": "avtobus",
       "phoneticRu": "avtobus",
+      "phoneticDe": "boos",
       "examples": {
         "uk": ["Автобус зупиняється на кожній зупинці.", "Туристичний автобус їде центром міста."],
         "ru": ["автобус останавливается на каждой остановке", "туристический автобус едет по центру города"],
+        "de": ["Der Bus hält an jeder Haltestelle.", "Der Touristenbus fährt durch das Stadtzentrum."],
         "en": ["The bus stops at every stop.", "The tourist bus drives through the city center."]
       }
     },
     {
       "uk": "поїзд",
       "ru": "поезд",
+      "de": "Zug",
       "en": "train",
       "phoneticUk": "poyizd",
       "phoneticRu": "poyezd",
+      "phoneticDe": "tsook",
       "examples": {
         "uk": ["Поїзд прибуває на станцію точно за розкладом.", "Ми їдемо поїздом до Львова."],
         "ru": ["поезд прибывает на станцию точно по расписанию", "мы едем на поезде в Санкт-Петербург"],
+        "de": ["Der Zug kommt pünktlich am Bahnhof an.", "Wir fahren mit dem Zug nach München."],
         "en": ["The train arrives at the station exactly on schedule.", "We are traveling to Lviv by train."]
       }
     },
     {
       "uk": "літак",
       "ru": "самолёт",
+      "de": "Flugzeug",
       "en": "airplane",
       "phoneticUk": "litak",
       "phoneticRu": "samolyot",
+      "phoneticDe": "floo-tsoyg",
       "examples": {
         "uk": ["Літак летить високо над хмарами.", "Наш літак вилітає о десятій годині ранку."],
         "ru": ["самолёт летит высоко над облаками", "наш самолёт вылетает в десять часов утра"],
+        "de": ["Das Flugzeug fliegt hoch über den Wolken.", "Unser Flugzeug startet um zehn Uhr morgens."],
         "en": ["The airplane flies high above the clouds.", "Our plane departs at ten o'clock in the morning."]
       }
     },
     {
       "uk": "таксі",
       "ru": "такси",
+      "de": "Taxi",
       "en": "taxi",
       "phoneticUk": "taksi",
       "phoneticRu": "taksi",
+      "phoneticDe": "tak-si",
       "examples": {
         "uk": ["Я викликав таксі до аеропорту через додаток.", "Таксі приїде за п'ять хвилин."],
         "ru": ["я вызвал такси до аэропорта через приложение", "такси приедет через пять минут"],
+        "de": ["Ich habe per App ein Taxi zum Flughafen bestellt.", "Das Taxi kommt in fünf Minuten."],
         "en": ["I ordered a taxi to the airport through an app.", "The taxi will arrive in five minutes."]
       }
     },
     {
       "uk": "готель",
       "ru": "гостиница",
+      "de": "Hotel",
       "en": "hotel",
       "phoneticUk": "hotel",
       "phoneticRu": "gostinitsa",
+      "phoneticDe": "hoh-tel",
       "examples": {
         "uk": ["Ми забронювали номер у готелі заздалегідь.", "Готель розташований у самому центрі міста."],
         "ru": ["мы забронировали номер в гостинице заранее", "гостиница расположена в самом центре города"],
+        "de": ["Wir haben das Hotelzimmer im Voraus gebucht.", "Das Hotel liegt direkt im Stadtzentrum."],
         "en": ["We booked a room at the hotel in advance.", "The hotel is located right in the city center."]
       }
     },
     {
       "uk": "квиток",
       "ru": "билет",
+      "de": "Ticket",
       "en": "ticket",
       "phoneticUk": "kvytok",
       "phoneticRu": "bilet",
+      "phoneticDe": "tik-et",
       "examples": {
         "uk": ["Я купив квиток на літак через інтернет.", "Зворотний квиток на поїзд коштує недорого."],
         "ru": ["я купил билет на самолёт через интернет", "обратный билет на поезд стоит недорого"],
+        "de": ["Ich habe das Flugticket online gekauft.", "Das Rückfahrticket für den Zug ist nicht teuer."],
         "en": ["I bought a plane ticket online.", "The return train ticket is not expensive."]
       }
     },
     {
       "uk": "паспорт",
       "ru": "паспорт",
+      "de": "Reisepass",
       "en": "passport",
       "phoneticUk": "pasport",
       "phoneticRu": "pasport",
+      "phoneticDe": "ry-zuh-pas",
       "examples": {
         "uk": ["Не забудь взяти паспорт перед поїздкою.", "Покажіть ваш паспорт на контролі."],
         "ru": ["не забудь взять паспорт перед поездкой", "покажите ваш паспорт на контроле"],
+        "de": ["Vergiss nicht, vor der Reise deinen Reisepass mitzunehmen.", "Zeigen Sie bitte Ihren Reisepass an der Kontrolle."],
         "en": ["Don't forget to take your passport before the trip.", "Please show your passport at the checkpoint."]
       }
     },
     {
       "uk": "валіза",
       "ru": "чемодан",
+      "de": "Koffer",
       "en": "suitcase",
       "phoneticUk": "valiza",
       "phoneticRu": "chemodan",
+      "phoneticDe": "kof-er",
       "examples": {
         "uk": ["Важка валіза стоїть біля вхідних дверей.", "Я зібрав валізу напередодні поїздки."],
         "ru": ["тяжёлый чемодан стоит у входной двери", "я собрал чемодан накануне поездки"],
+        "de": ["Der schwere Koffer steht vor der Haustür.", "Ich habe den Koffer am Abend vor der Reise gepackt."],
         "en": ["The heavy suitcase is standing by the front door.", "I packed my suitcase the night before the trip."]
       }
     },
     {
       "uk": "карта",
       "ru": "карта",
+      "de": "Karte",
       "en": "map",
       "phoneticUk": "karta",
       "phoneticRu": "karta",
+      "phoneticDe": "kar-tuh",
       "examples": {
         "uk": ["Подивись маршрут на карті міста.", "У мене є докладна карта цього району."],
         "ru": ["посмотри маршрут на карте города", "у меня есть подробная карта этого района"],
+        "de": ["Schau dir die Route auf der Stadtkarte an.", "Ich habe eine detaillierte Karte dieser Gegend."],
         "en": ["Look up the route on the city map.", "I have a detailed map of this area."]
       }
     },
     {
       "uk": "турист",
       "ru": "турист",
+      "de": "Tourist",
       "en": "tourist",
       "phoneticUk": "turyst",
       "phoneticRu": "turist",
+      "phoneticDe": "too-rist",
       "examples": {
         "uk": ["Турист фотографує старовинний собор.", "Кожен турист хоче побачити цю площу."],
         "ru": ["турист фотографирует старинный собор", "каждый турист хочет увидеть эту площадь"],
+        "de": ["Der Tourist fotografiert die alte Kathedrale.", "Jeder Tourist möchte diesen Platz sehen."],
         "en": ["The tourist is photographing the old cathedral.", "Every tourist wants to see this square."]
       }
     },
     {
       "uk": "подорож",
       "ru": "путешествие",
+      "de": "Reise",
       "en": "journey/trip",
       "phoneticUk": "podorozh",
       "phoneticRu": "puteshestviye",
+      "phoneticDe": "ry-zuh",
       "examples": {
         "uk": ["Подорож Європою тривала два тижні.", "Ми плануємо цікаву подорож на літо."],
         "ru": ["путешествие по Европе длилось две недели", "мы планируем увлекательное путешествие на лето"],
+        "de": ["Die Reise durch Europa dauerte zwei Wochen.", "Wir planen für den Sommer eine interessante Reise."],
         "en": ["The trip across Europe lasted two weeks.", "We are planning an exciting journey for the summer."]
       }
     },
     {
       "uk": "екскурсія",
       "ru": "экскурсия",
+      "de": "Ausflug",
       "en": "excursion/tour",
       "phoneticUk": "ekskursiya",
       "phoneticRu": "ekskursiya",
+      "phoneticDe": "ows-floo-k",
       "examples": {
         "uk": ["Екскурсія старим містом триває три години.", "Ми записалися на екскурсію до історичного музею."],
         "ru": ["экскурсия по старому городу длится три часа", "мы записались на экскурсию в исторический музей"],
+        "de": ["Der Ausflug durch die Altstadt dauert drei Stunden.", "Wir haben uns für einen Ausflug ins historische Museum angemeldet."],
         "en": ["The tour of the old city lasts three hours.", "We signed up for a tour of the history museum."]
       }
     },
     {
       "uk": "музей",
       "ru": "музей",
+      "de": "Museum",
       "en": "museum",
       "phoneticUk": "muzey",
       "phoneticRu": "muzey",
+      "phoneticDe": "moo-zay-oom",
       "examples": {
         "uk": ["Ми відвідали відомий історичний музей.", "Музей відкритий для відвідувачів щодня."],
         "ru": ["мы посетили знаменитый исторический музей", "музей открыт для посетителей каждый день"],
+        "de": ["Wir haben das bekannte historische Museum besucht.", "Das Museum ist jeden Tag für Besucher geöffnet."],
         "en": ["We visited the famous history museum.", "The museum is open to visitors every day."]
       }
     },
     {
       "uk": "пам'ятник",
       "ru": "памятник",
+      "de": "Denkmal",
       "en": "monument",
       "phoneticUk": "pamyatnyk",
       "phoneticRu": "pamyatnik",
+      "phoneticDe": "denk-mahl",
       "examples": {
         "uk": ["Пам'ятник стоїть у центрі площі.", "Ми сфотографувалися біля пам'ятника."],
         "ru": ["памятник стоит в центре площади", "мы сфотографировались у памятника"],
+        "de": ["Das Denkmal steht in der Mitte des Platzes.", "Wir haben uns beim Denkmal fotografiert."],
         "en": ["The monument stands in the center of the square.", "We took a photo by the monument."]
       }
     },
     {
       "uk": "ресторан",
       "ru": "ресторан",
+      "de": "Restaurant",
       "en": "restaurant",
       "phoneticUk": "restoran",
       "phoneticRu": "restoran",
+      "phoneticDe": "res-toh-rant",
       "examples": {
         "uk": ["Ресторан знаходиться на головній вулиці міста.", "Ми вечеряли в затишному ресторані біля моря."],
         "ru": ["ресторан находится на главной улице города", "мы ужинали в уютном ресторане у моря"],
+        "de": ["Das Restaurant liegt an der Hauptstraße der Stadt.", "Wir haben in einem gemütlichen Restaurant am Meer zu Abend gegessen."],
         "en": ["The restaurant is on the main street of the city.", "We had dinner at a cozy restaurant by the sea."]
       }
     },
     {
       "uk": "кафе",
       "ru": "кафе",
+      "de": "Café",
       "en": "cafe",
       "phoneticUk": "kafe",
       "phoneticRu": "kafe",
+      "phoneticDe": "ka-fay",
       "examples": {
         "uk": ["Ми зайшли в кафе випити каву з тістечком.", "Затишне кафе розташоване на тихій вулиці."],
         "ru": ["мы зашли в кафе выпить кофе с пирожным", "уютное кафе расположено на тихой улице"],
+        "de": ["Wir sind ins Café gegangen, um Kaffee und Kuchen zu trinken.", "Das gemütliche Café liegt in einer ruhigen Straße."],
         "en": ["We stopped at a cafe to have coffee and a pastry.", "The cozy cafe is on a quiet street."]
       }
     },
     {
       "uk": "магазин",
       "ru": "магазин",
+      "de": "Geschäft",
       "en": "store/shop",
       "phoneticUk": "mahazyn",
       "phoneticRu": "magazin",
+      "phoneticDe": "geh-sheft",
       "examples": {
         "uk": ["Магазин сувенірів працює до десятої вечора.", "Я зайшов у магазин, щоб купити подарунки."],
         "ru": ["магазин сувениров работает до десяти вечера", "я зашёл в магазин купить подарки"],
+        "de": ["Das Souvenirgeschäft ist bis zehn Uhr abends geöffnet.", "Ich bin in das Geschäft gegangen, um Geschenke zu kaufen."],
         "en": ["The souvenir shop is open until ten in the evening.", "I went into the store to buy some gifts."]
       }
     },
     {
       "uk": "вулиця",
       "ru": "улица",
+      "de": "Straße",
       "en": "street",
       "phoneticUk": "vulitsya",
       "phoneticRu": "ulitsa",
+      "phoneticDe": "shtrah-suh",
       "examples": {
         "uk": ["Ми гуляємо старовинною вулицею міста.", "Вулиця прикрашена святковими вогнями."],
         "ru": ["мы гуляем по старинной улице города", "улица украшена праздничными огнями"],
+        "de": ["Wir spazieren die alte Straße der Stadt entlang.", "Die Straße ist mit festlichen Lichtern geschmückt."],
         "en": ["We are walking along the old street of the city.", "The street is decorated with festive lights."]
       }
     },
     {
       "uk": "міст",
       "ru": "мост",
+      "de": "Brücke",
       "en": "bridge",
       "phoneticUk": "mist",
       "phoneticRu": "most",
+      "phoneticDe": "brew-kuh",
       "examples": {
         "uk": ["Старий міст перекинутий через широку річку.", "Ми перейшли міст на інший берег."],
         "ru": ["старый мост перекинут через широкую реку", "мы перешли мост на другую сторону"],
+        "de": ["Die alte Brücke überspannt einen breiten Fluss.", "Wir sind über die Brücke zur anderen Seite gegangen."],
         "en": ["The old bridge spans a wide river.", "We crossed the bridge to the other side."]
       }
     },
     {
       "uk": "парк",
       "ru": "парк",
+      "de": "Park",
       "en": "park",
       "phoneticUk": "park",
       "phoneticRu": "park",
+      "phoneticDe": "park",
       "examples": {
         "uk": ["Ми гуляли у красивому міському парку.", "Парк прикрашений квітами та фонтанами."],
         "ru": ["мы гуляли в красивом городском парке", "парк украшен цветами и фонтанами"],
+        "de": ["Wir sind in einem schönen Stadtpark spazieren gegangen.", "Der Park ist mit Blumen und Brunnen geschmückt."],
         "en": ["We walked in a beautiful city park.", "The park is decorated with flowers and fountains."]
       }
     },
     {
       "uk": "площа",
       "ru": "площадь",
+      "de": "Platz",
       "en": "square",
       "phoneticUk": "ploshcha",
       "phoneticRu": "ploshchad'",
+      "phoneticDe": "plats",
       "examples": {
         "uk": ["Площа прикрашена гарним фонтаном у центрі.", "Ми зустрілися на головній площі міста."],
         "ru": ["площадь украшена красивым фонтаном в центре", "мы встретились на главной площади города"],
+        "de": ["Der Platz ist in der Mitte mit einem schönen Brunnen geschmückt.", "Wir haben uns auf dem Hauptplatz der Stadt getroffen."],
         "en": ["The square is decorated with a beautiful fountain in the center.", "We met at the main square of the city."]
       }
     },
     {
       "uk": "церква",
       "ru": "церковь",
+      "de": "Kirche",
       "en": "church",
       "phoneticUk": "tserkva",
       "phoneticRu": "tserkov'",
+      "phoneticDe": "kir-khuh",
       "examples": {
         "uk": ["Стародавня церква стоїть на вершині пагорба.", "Ми оглянули гарну церкву в центрі міста."],
         "ru": ["старинная церковь стоит на вершине холма", "мы осмотрели красивую церковь в центре"],
+        "de": ["Die alte Kirche steht auf dem Hügel.", "Wir haben die schöne Kirche im Stadtzentrum besichtigt."],
         "en": ["The ancient church stands on top of a hill.", "We looked around the beautiful church in the city center."]
       }
     },
     {
       "uk": "замок",
       "ru": "замок",
+      "de": "Schloss",
       "en": "castle",
       "phoneticUk": "zamok",
       "phoneticRu": "zamok",
+      "phoneticDe": "shlos",
       "examples": {
         "uk": ["Середньовічний замок височіє над містом.", "Ми відвідали старовинний замок з екскурсією."],
         "ru": ["средневековый замок возвышается над городом", "мы посетили старинный замок с экскурсией"],
+        "de": ["Das mittelalterliche Schloss ragt über die Stadt hinaus.", "Wir haben das alte Schloss mit einer Führung besucht."],
         "en": ["The medieval castle towers over the city.", "We visited the ancient castle on a guided tour."]
       }
     },
     {
       "uk": "віза",
       "ru": "виза",
+      "de": "Visum",
       "en": "visa",
       "phoneticUk": "viza",
       "phoneticRu": "viza",
+      "phoneticDe": "vee-zoom",
       "examples": {
         "uk": ["Для поїздки в цю країну потрібна віза.", "Я отримав візу в посольстві за тиждень."],
         "ru": ["для поездки в эту страну нужна виза", "я получил визу в посольстве за неделю"],
+        "de": ["Für die Einreise in dieses Land braucht man ein Visum.", "Ich habe das Visum innerhalb einer Woche bei der Botschaft erhalten."],
         "en": ["You need a visa to travel to this country.", "I received my visa from the embassy within a week."]
       }
     },
     {
       "uk": "кордон",
       "ru": "граница",
+      "de": "Grenze",
       "en": "border",
       "phoneticUk": "kordon",
       "phoneticRu": "granitsa",
+      "phoneticDe": "gren-tsuh",
       "examples": {
         "uk": ["Ми перетнули кордон рано вранці.", "На кордоні ретельно перевіряють документи."],
         "ru": ["мы пересекли границу рано утром", "на границе тщательно проверяют документы"],
+        "de": ["Wir haben früh morgens die Grenze überquert.", "An der Grenze werden die Dokumente sorgfältig kontrolliert."],
         "en": ["We crossed the border early in the morning.", "Documents are carefully checked at the border."]
       }
     },
     {
       "uk": "пляж",
       "ru": "пляж",
+      "de": "Strand",
       "en": "beach",
       "phoneticUk": "plyazh",
       "phoneticRu": "plyazh",
+      "phoneticDe": "shtrant",
       "examples": {
         "uk": ["Ми засмагаємо на піщаному пляжі.", "Пляж тягнеться вздовж узбережжя на кілометри."],
         "ru": ["мы загораем на песчаном пляже", "пляж тянется вдоль побережья на километры"],
+        "de": ["Wir sonnen uns am Sandstrand.", "Der Strand zieht sich kilometerlang entlang der Küste."],
         "en": ["We are sunbathing on the sandy beach.", "The beach stretches along the coast for kilometers."]
       }
     },
     {
       "uk": "визначна пам'ятка",
       "ru": "достопримечательность",
+      "de": "Sehenswürdigkeit",
       "en": "landmark",
       "phoneticUk": "vyznachna pamyatka",
       "phoneticRu": "dostoprimechatel'nost'",
+      "phoneticDe": "zay-ens-vew-rdikh-kite",
       "examples": {
         "uk": ["Золоті ворота — головна визначна пам'ятка Києва.", "Ми оглянули всі визначні пам'ятки за два дні."],
         "ru": ["Кремль — главная достопримечательность Москвы", "мы осмотрели все достопримечательности за два дня"],
+        "de": ["Das Brandenburger Tor ist die wichtigste Sehenswürdigkeit Berlins.", "Wir haben alle Sehenswürdigkeiten in zwei Tagen besichtigt."],
         "en": ["The Golden Gate is the main landmark of Kyiv.", "We saw all the landmarks in two days."]
       }
     },
     {
       "uk": "туристичний",
       "ru": "туристический",
+      "de": "touristisch",
       "en": "tourist (adj.)",
       "phoneticUk": "turystychnyy",
       "phoneticRu": "turisticheskiy",
+      "phoneticDe": "too-ris-tish",
       "examples": {
         "uk": ["Туристичний маршрут проходить через старий парк.", "Ми купили туристичну карту в кіоску."],
         "ru": ["туристический маршрут проходит через старый парк", "мы купили туристическую карту в киоске"],
+        "de": ["Die touristische Route führt durch den alten Park.", "Wir haben am Kiosk eine touristische Karte gekauft."],
         "en": ["The tourist route passes through the old park.", "We bought a tourist map at the kiosk."]
       }
     },
     {
       "uk": "напрямок",
       "ru": "направление",
+      "de": "Richtung",
       "en": "direction",
       "phoneticUk": "napryamok",
       "phoneticRu": "napravleniye",
+      "phoneticDe": "rikh-toong",
       "examples": {
         "uk": ["Ми йдемо у правильному напрямку до вокзалу.", "Оберіть напрямок руху на перехресті."],
         "ru": ["мы идём в правильном направлении к вокзалу", "выберите направление движения на перекрёстке"],
+        "de": ["Wir gehen in die richtige Richtung zum Bahnhof.", "Wählen Sie an der Kreuzung die Richtung aus."],
         "en": ["We are heading in the right direction toward the station.", "Choose the direction of travel at the intersection."]
       }
     },
     {
       "uk": "розклад",
       "ru": "расписание",
+      "de": "Fahrplan",
       "en": "schedule",
       "phoneticUk": "rozklad",
       "phoneticRu": "raspisaniye",
+      "phoneticDe": "fahr-plan",
       "examples": {
         "uk": ["Розклад поїздів висить на стіні вокзалу.", "Перевір розклад автобусів на завтра."],
         "ru": ["расписание поездов висит на стене вокзала", "проверь расписание автобусов на завтра"],
+        "de": ["Der Fahrplan der Züge hängt an der Wand des Bahnhofs.", "Schau dir den Busfahrplan für morgen an."],
         "en": ["The train schedule is posted on the station wall.", "Check the bus schedule for tomorrow."]
       }
     },
     {
       "uk": "бронювання",
       "ru": "бронирование",
+      "de": "Reservierung",
       "en": "reservation",
       "phoneticUk": "bronyuvannya",
       "phoneticRu": "bronirovaniye",
+      "phoneticDe": "reh-zer-vee-roong",
       "examples": {
         "uk": ["Бронювання готелю підтверджено електронною поштою.", "Зробіть бронювання заздалегідь на свята."],
         "ru": ["бронирование гостиницы подтверждено по электронной почте", "сделайте бронирование заранее на праздники"],
+        "de": ["Die Hotelreservierung wurde per E-Mail bestätigt.", "Machen Sie die Reservierung für die Feiertage im Voraus."],
         "en": ["The hotel reservation has been confirmed by email.", "Make your reservation in advance for the holidays."]
       }
     },
     {
       "uk": "виліт",
       "ru": "вылет",
+      "de": "Abflug",
       "en": "departure (flight)",
       "phoneticUk": "vylit",
       "phoneticRu": "vylet",
+      "phoneticDe": "ap-floo-k",
       "examples": {
         "uk": ["Виліт затримується на годину через негоду.", "Час вильоту — дев'ята година ранку."],
         "ru": ["вылет задерживается на час из-за непогоды", "время вылета — девять часов утра"],
+        "de": ["Der Abflug verzögert sich wegen schlechten Wetters um eine Stunde.", "Die Abflugzeit ist neun Uhr morgens."],
         "en": ["The departure is delayed by one hour due to bad weather.", "The departure time is nine o'clock in the morning."]
       }
     },
     {
       "uk": "приліт",
       "ru": "прилёт",
+      "de": "Ankunft",
       "en": "arrival (flight)",
       "phoneticUk": "prylit",
       "phoneticRu": "prilyot",
+      "phoneticDe": "an-koonft",
       "examples": {
         "uk": ["Зал прильоту знаходиться на першому поверсі терміналу.", "Очікуваний час прильоту — опівніч."],
         "ru": ["зал прилёта находится на первом этаже терминала", "ожидаемое время прилёта — полночь"],
+        "de": ["Die Ankunftshalle befindet sich im Erdgeschoss des Terminals.", "Die voraussichtliche Ankunftszeit ist Mitternacht."],
         "en": ["The arrivals hall is on the first floor of the terminal.", "The expected arrival time is midnight."]
       }
     },
     {
       "uk": "пересадка",
       "ru": "пересадка",
+      "de": "Umstieg",
       "en": "transfer",
       "phoneticUk": "peresadka",
       "phoneticRu": "peresadka",
+      "phoneticDe": "oom-shtee-k",
       "examples": {
         "uk": ["Пересадка в Стамбулі триває дві години.", "Прямий рейс без пересадок коштує дорожче."],
         "ru": ["пересадка в Стамбуле длится два часа", "прямой рейс без пересадок стоит дороже"],
+        "de": ["Der Umstieg in Istanbul dauert zwei Stunden.", "Ein Direktflug ohne Umstieg kostet mehr."],
         "en": ["The layover in Istanbul lasts two hours.", "A direct flight with no transfers costs more."]
       }
     }

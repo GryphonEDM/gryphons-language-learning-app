@@ -1,0 +1,259 @@
+{
+  "lessonId": "complex-sentences",
+  "nameEn": "Complex Sentences",
+  "nameDe": "Komplexe Sätze",
+  "icon": "🏛️",
+  "tier": "B2",
+  "prerequisites": ["subordinate-clauses", "relative-pronouns", "dative-case"],
+  "estimatedMinutes": 30,
+  "sections": [
+    {
+      "sectionId": "relative-clauses",
+      "title": "Relative Clauses",
+      "explanation": "Relative clauses provide additional information about a noun (the antecedent). They are introduced by a relative pronoun that agrees in GENDER and NUMBER with the antecedent, but takes the CASE required by its role in the relative clause. The relative pronouns are: Masc: der/den/dem/dessen, Fem: die/der/der/deren, Neut: das/das/dem/dessen, Plural: die/die/denen/deren. The verb in the relative clause goes to the END. The clause is set off by commas. Examples: 'Das Buch, das ich lese, ist spannend.' (The book that I'm reading is exciting.) — 'das' is neuter (Buch is neuter) and accusative (it's the object of 'lese'). 'Der Mann, der dort steht, ist mein Onkel.' — 'der' is masculine nominative (he's the subject of 'steht').",
+      "tip": "Two steps for relative pronouns: (1) Match the gender/number of the antecedent. (2) Choose the case based on the role in the relative clause (subject = nominative, object = accusative, etc.). The relative pronoun looks like the definite article, except: dative plural = 'denen' (not 'den'), and genitive adds '-en/-s' (dessen/deren).",
+      "examples": [
+        { "de": "Das Buch, das ich lese, ist sehr interessant.", "en": "The book that I'm reading is very interesting. (neut, acc)", "highlight": "das ich lese" },
+        { "de": "Der Mann, der dort sitzt, ist mein Lehrer.", "en": "The man who is sitting there is my teacher. (masc, nom)", "highlight": "der dort sitzt" },
+        { "de": "Die Frau, der ich helfe, ist sehr nett.", "en": "The woman I'm helping is very nice. (fem, dat — helfen takes dative)", "highlight": "der ich helfe" },
+        { "de": "Die Kinder, mit denen wir spielen, sind unsere Nachbarn.", "en": "The children we are playing with are our neighbors. (plural, dat)", "highlight": "mit denen wir spielen" },
+        { "de": "Das ist der Schauspieler, dessen Film ich gesehen habe.", "en": "That is the actor whose film I saw. (masc, genitive)", "highlight": "dessen Film" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Das Buch, ___ ich kaufen möchte, ist leider ausverkauft. (The book I want to buy is unfortunately sold out.)",
+          "options": ["der", "die", "das", "dem"],
+          "correctIndex": 2,
+          "explanation": "'Buch' is neuter (das Buch). In the relative clause, the book is the accusative object of 'kaufen'. Neuter accusative relative pronoun = 'das'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Frau, ___ dort wohnt, ist meine Ärztin. (The woman who lives there is my doctor.)",
+          "acceptedAnswers": ["die"],
+          "hint": "'Frau' is feminine. In the relative clause, 'she' is the subject (nominative). Feminine nominative relative pronoun = ?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Der Student, ___ ich das Buch gegeben habe, ist sehr fleißig.",
+          "options": ["den", "dem", "der", "dessen"],
+          "correctIndex": 1,
+          "explanation": "'Student' is masculine. In the relative clause, the student is the indirect object of 'gegeben habe' (I gave him the book) = dative. Masculine dative relative pronoun = 'dem'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Hotel, in ___ wir gewohnt haben, war wunderschön.",
+          "acceptedAnswers": ["dem"],
+          "hint": "'Hotel' is neuter. After 'in' (location = dative), neuter dative relative pronoun = ?"
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each relative pronoun to its gender and case:",
+          "pairs": [
+            { "left": "der (relative pronoun)", "right": "masculine nominative OR feminine dative/genitive" },
+            { "left": "das (relative pronoun)", "right": "neuter nominative or accusative" },
+            { "left": "denen (relative pronoun)", "right": "plural dative" },
+            { "left": "dessen (relative pronoun)", "right": "masculine or neuter genitive" }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Kinder, ___ wir geholfen haben, waren sehr dankbar. (The children we helped were very grateful.)",
+          "acceptedAnswers": ["denen"],
+          "hint": "'Kinder' is plural. 'helfen' takes dative. Plural dative relative pronoun = ?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the verb go in a relative clause?",
+          "options": ["Position 1", "Position 2", "At the end of the clause", "Directly after the relative pronoun"],
+          "correctIndex": 2,
+          "explanation": "Relative clauses are subordinate clauses, so the verb goes to the end of the clause: 'Das Buch, das ich lese...' (lese at end)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Kollege, ___ Auto kaputt ist, kommt heute zu spät. (The colleague whose car is broken will be late today.)",
+          "acceptedAnswers": ["dessen"],
+          "hint": "Genitive relative pronoun — masculine/neuter genitive. 'Das Auto gehört dem Kollegen' → possessive relationship."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence has the correct relative clause structure?",
+          "options": [
+            "Das ist das Café, das ich mag sehr.",
+            "Das ist das Café, das ich sehr mag.",
+            "Das ist das Café, das sehr ich mag.",
+            "Das ist das Café, sehr das ich mag."
+          ],
+          "correctIndex": 1,
+          "explanation": "'das ich sehr mag' — verb 'mag' at the end, adverb 'sehr' before the verb. All elements of the relative clause come before the final verb."
+        }
+      ]
+    },
+    {
+      "sectionId": "extended-noun-modifiers",
+      "title": "Extended Noun Modifiers (Erweitertes Attribut)",
+      "explanation": "German allows a long attributive modifier to be placed before a noun, often replacing a relative clause. This is common in written/formal German. Structure: article + [participial phrase or adjective phrase] + noun. The participial phrase can include adverbs and prepositional phrases: 'der gestern angekommene Zug' (the train that arrived yesterday) — compare with the relative clause: 'der Zug, der gestern angekommen ist'. The past participle or present participle is placed just before the noun and takes adjective endings. Present participle (Partizip I) = infinitive + d: singen → singend, fahren → fahrend. These modify like adjectives: 'die singende Frau' (the singing woman), 'das schlafende Kind' (the sleeping child).",
+      "tip": "Extended noun modifiers are most common in newspapers, academic texts, and formal writing. Recognizing them is essential for reading advanced German. To decode them: find the noun, then look back to the article at the beginning — everything between is the modifier. Participial phrases use Partizip I (present, ongoing: fahrend) or Partizip II (past/completed: gebaut).",
+      "examples": [
+        { "de": "der gestern angekommene Zug", "en": "the train that arrived yesterday (= der Zug, der gestern angekommen ist)", "highlight": "gestern angekommene" },
+        { "de": "das schlafende Kind", "en": "the sleeping child (Partizip I: schlafen → schlafend → schlafende)", "highlight": "schlafende" },
+        { "de": "ein in Deutschland hergestelltes Auto", "en": "a car manufactured in Germany (Partizip II)", "highlight": "in Deutschland hergestelltes" },
+        { "de": "die von der Regierung beschlossenen Maßnahmen", "en": "the measures decided by the government", "highlight": "von der Regierung beschlossenen" },
+        { "de": "ein auf dem Markt erhältliches Produkt", "en": "a product available on the market", "highlight": "auf dem Markt erhältliches" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Partizip I (present participle) of 'schlafen'?",
+          "options": ["geschlafen", "schlafend", "schlafende", "schläft"],
+          "correctIndex": 1,
+          "explanation": "Partizip I = infinitive + -d: 'schlafen' → 'schlafend'. When used as an adjective (attributively), it takes endings: 'schlafendes Kind'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Convert to extended noun modifier: 'das Kind, das singt' → 'das ___ Kind'",
+          "acceptedAnswers": ["singende"],
+          "hint": "Partizip I of 'singen' = singend. Add adjective ending for neuter nominative (das Kind): -e."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Decode the extended modifier: 'Der im letzten Jahr veröffentlichte Roman...'",
+          "options": [
+            "The novel that was published a long time ago...",
+            "The novel that will be published next year...",
+            "The novel that was published last year...",
+            "The novel published by the author last year..."
+          ],
+          "correctIndex": 2,
+          "explanation": "'im letzten Jahr veröffentlichte' = published last year. 'veröffentlicht' is the Partizip II of 'veröffentlichen', used as an extended modifier before 'Roman'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Convert to a relative clause: 'das in Berlin gebaute Haus' → 'das Haus, ___ in Berlin gebaut ___'",
+          "acceptedAnswers": ["das ... wurde", "das ... worden ist"],
+          "hint": "Relative clause using passive: 'das Haus, das in Berlin gebaut wurde'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which extended noun modifier is formed correctly? (spannend, das Buch — neuter)",
+          "options": [
+            "das spannender Buch",
+            "das spannende Buch",
+            "das spannendes Buch",
+            "das gespannt Buch"
+          ],
+          "correctIndex": 1,
+          "explanation": "'das spannende Buch' — after a definite article (das), neuter nominative adjective ending = -e. 'spannend' is Partizip I of 'spannen', used as adjective meaning 'exciting'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "What is the Partizip I of 'wachsen' (to grow)?",
+          "acceptedAnswers": ["wachsend"],
+          "hint": "Partizip I = infinitive + -d."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each extended modifier to the relative clause it replaces:",
+          "pairs": [
+            { "left": "das laufende Programm", "right": "das Programm, das läuft" },
+            { "left": "der gebrachte Kaffee", "right": "der Kaffee, der gebracht wurde" },
+            { "left": "die wartenden Gäste", "right": "die Gäste, die warten" },
+            { "left": "ein gelöstes Problem", "right": "ein Problem, das gelöst wurde" }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "infinitive-with-zu",
+      "title": "Infinitive Constructions with zu",
+      "explanation": "German frequently uses 'zu + infinitive' constructions instead of full subordinate clauses. The infinitive with 'zu' is used: (1) After many verbs: versuchen (to try), anfangen (to begin), aufhören (to stop), vergessen (to forget), vorhaben (to plan), etc. Example: 'Ich versuche, Deutsch zu lernen.' (2) After adjectives: Es ist wichtig, pünktlich zu sein. (3) As a subject or object clause replacing 'dass': 'Deutsch zu lernen ist schwer' = 'Es ist schwer, Deutsch zu lernen.' With separable verbs, 'zu' is inserted between prefix and verb: 'aufhören' → 'aufzuhören', 'einladen' → 'einzuladen'. Crucially: 'zu + infinitive' implies the SAME subject as the main clause — if the subject differs, use 'dass' instead.",
+      "tip": "The 'zu' goes directly before the infinitive (or between prefix and stem for separable verbs): 'zu lernen', 'aufzuhören', 'anzufangen'. No comma if the zu-infinitive phrase is short; a comma is used if the zu-phrase is extended or comes first. Same subject rule: 'Ich versuche, zu kommen' (I try to come — same subject) but 'Ich bitte ihn, dass er kommt' (I ask him to come — different subject).",
+      "examples": [
+        { "de": "Ich versuche, Deutsch zu lernen.", "en": "I'm trying to learn German.", "highlight": "zu lernen" },
+        { "de": "Er hat vergessen, die Tür abzuschließen.", "en": "He forgot to lock the door. (separable: ab+zu+schließen)", "highlight": "abzuschließen" },
+        { "de": "Es ist interessant, andere Kulturen kennenzulernen.", "en": "It's interesting to get to know other cultures.", "highlight": "kennenzulernen" },
+        { "de": "Sie haben vor, nächsten Sommer nach Japan zu reisen.", "en": "They plan to travel to Japan next summer.", "highlight": "zu reisen" },
+        { "de": "Ich hoffe, bald wieder gesund zu sein.", "en": "I hope to be healthy again soon.", "highlight": "gesund zu sein" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich versuche, mehr Sport ___ machen.",
+          "options": ["zu", "zu machen", "machen zu", "gemacht zu"],
+          "correctIndex": 1,
+          "explanation": "'zu + infinitive' — 'zu machen' goes at the end of the infinitive phrase. 'Ich versuche, mehr Sport zu machen.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er hat vergessen, seine Hausaufgaben ___ (machen).",
+          "acceptedAnswers": ["zu machen"],
+          "hint": "'zu + infinitive' after 'vergessen'. The infinitive goes to the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does 'zu' go with a separable verb like 'aufhören'?",
+          "options": [
+            "Before the prefix: 'zu aufhören'",
+            "Between prefix and stem: 'aufzuhören'",
+            "After the infinitive: 'aufhören zu'",
+            "It's not used with separable verbs."
+          ],
+          "correctIndex": 1,
+          "explanation": "With separable verbs, 'zu' is inserted between the prefix and the verb stem: auf+zu+hören = 'aufzuhören'. This stays as one word."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Es ist wichtig, regelmäßig ___ (schlafen) — zu-infinitive construction.",
+          "acceptedAnswers": ["zu schlafen"],
+          "hint": "'zu + infinitive' after an adjective construction with 'Es ist + adj.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'zu + infinitive'?",
+          "options": [
+            "Ich fange an, Gitarre lernen.",
+            "Ich fange an, Gitarre zu lernen.",
+            "Ich fange zu an, Gitarre lernen.",
+            "Ich fange an Gitarre zu lernen."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ich fange an, Gitarre zu lernen' — 'anfangen' takes 'zu + infinitive'. Comma before the extended infinitive phrase, 'zu' before the infinitive at the end."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie hat aufgehört, Fleisch ___ (essen). (She has stopped eating meat.)",
+          "acceptedAnswers": ["zu essen"],
+          "hint": "'aufhören' + 'zu + infinitive'. 'essen' is a regular infinitive here."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which construction should replace the 'zu-infinitive' because the subjects differ?",
+          "options": [
+            "Ich bitte ihn, früher zu kommen.",
+            "Ich bitte ihn zu kommen früher.",
+            "Ich bitte ihn, dass er früher kommt.",
+            "Both A and C are correct."
+          ],
+          "correctIndex": 3,
+          "explanation": "Both are correct! When the subject of the dependent action is expressed by an accusative object ('ihn'), 'zu + infinitive' is possible AND standard: 'Ich bitte ihn, früher zu kommen' OR 'Ich bitte ihn, dass er früher kommt'. The zu-infinitive option is actually more common here."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie plant, im Sommer ___ (verreisen — separable: ver+reisen is NOT separable; use: 'wegfahren').",
+          "acceptedAnswers": ["wegzufahren", "zu verreisen", "zu reisen"],
+          "hint": "For separable verb 'wegfahren': weg+zu+fahren = 'wegzufahren'. For 'verreisen' (inseparable): 'zu verreisen'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each verb to its correct 'zu + infinitive' form:",
+          "pairs": [
+            { "left": "anfangen (to begin)", "right": "anzufangen" },
+            { "left": "aufhören (to stop)", "right": "aufzuhören" },
+            { "left": "einladen (to invite)", "right": "einzuladen" },
+            { "left": "vorstellen (to introduce)", "right": "vorzustellen" }
+          ]
+        }
+      ]
+    }
+  ]
+}

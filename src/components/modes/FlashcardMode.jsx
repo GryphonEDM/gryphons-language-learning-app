@@ -25,8 +25,8 @@ export default function FlashcardMode({
   onMarkMastered,
   masteredWordsList = []
 }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing vocabulary with flashcards. Answer questions about vocabulary, pronunciation, grammar, or usage concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);

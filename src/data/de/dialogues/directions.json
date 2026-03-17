@@ -1,0 +1,132 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameDe": "Nach dem Weg fragen",
+  "icon": "🗺️",
+  "context": "You are lost in a German city and need to find the train station (Bahnhof).",
+  "characters": {
+    "npc": { "name": "Passant" },
+    "player": { "name": "Tourist" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Hallo! Sie sehen etwas verloren aus. Kann ich helfen?",
+      "translation": "Hello! You look a little lost. Can I help?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes please, you are looking for the train station",
+      "acceptedResponses": [
+        "Ja bitte! Ich suche den Bahnhof",
+        "Ja, ich suche den Bahnhof",
+        "Bitte, wo ist der Bahnhof?",
+        "Ja danke. Wo ist der Bahnhof?"
+      ],
+      "keyWords": ["Bahnhof", "suche"],
+      "hint": "Ja bitte! Ich suche den Bahnhof."
+    },
+    {
+      "speaker": "npc",
+      "text": "Der Bahnhof? Kein Problem. Gehen Sie hier geradeaus.",
+      "translation": "The train station? No problem. Go straight ahead here."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm: straight ahead?",
+      "acceptedResponses": [
+        "Geradeaus?",
+        "Geradeaus, okay",
+        "Ah, geradeaus. Verstanden",
+        "Geradeaus, ja?"
+      ],
+      "keyWords": ["Geradeaus"],
+      "hint": "Geradeaus?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ja, geradeaus bis zur Ampel. Dann biegen Sie links ab.",
+      "translation": "Yes, straight ahead to the traffic lights. Then turn left."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Repeat back: straight ahead to the traffic light, then left",
+      "acceptedResponses": [
+        "Geradeaus bis zur Ampel, dann links",
+        "Bis zur Ampel und dann links",
+        "Okay, geradeaus und dann links",
+        "Geradeaus und links abbiegen"
+      ],
+      "keyWords": ["Ampel", "links"],
+      "hint": "Geradeaus bis zur Ampel, dann links."
+    },
+    {
+      "speaker": "npc",
+      "text": "Genau! Dann gehen Sie die Straße entlang. Nach etwa zweihundert Metern sehen Sie den Bahnhof rechts.",
+      "translation": "Exactly! Then walk along the street. After about two hundred meters you will see the station on the right."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how many minutes it takes on foot",
+      "acceptedResponses": [
+        "Wie viele Minuten zu Fuß?",
+        "Wie lange dauert es zu Fuß?",
+        "Wie weit ist es zu Fuß?",
+        "Wie lange brauche ich zu Fuß?"
+      ],
+      "keyWords": ["Minuten", "Fuß"],
+      "hint": "Wie viele Minuten zu Fuß?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ungefähr zehn Minuten. Es ist nicht weit.",
+      "translation": "About ten minutes. It is not far."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say okay, you understand. Ask if there is a bus.",
+      "acceptedResponses": [
+        "Okay, ich verstehe. Gibt es auch einen Bus?",
+        "Verstanden. Gibt es einen Bus?",
+        "Gut, danke. Fährt hier ein Bus?",
+        "Ich verstehe. Gibt es einen Bus?"
+      ],
+      "keyWords": ["verstehe", "Bus"],
+      "hint": "Okay, ich verstehe. Gibt es auch einen Bus?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ja, die Linie vier hält gleich hier um die Ecke. Aber zu Fuß ist es schneller.",
+      "translation": "Yes, line four stops just around the corner here. But on foot it is faster."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you will walk then. Thank him very much.",
+      "acceptedResponses": [
+        "Dann gehe ich zu Fuß. Vielen Dank!",
+        "Gut, ich gehe zu Fuß. Danke schön!",
+        "Ich gehe zu Fuß. Vielen Dank!",
+        "Okay, zu Fuß dann. Danke schön!"
+      ],
+      "keyWords": ["Fuß", "Dank"],
+      "hint": "Dann gehe ich zu Fuß. Vielen Dank!"
+    },
+    {
+      "speaker": "npc",
+      "text": "Gern geschehen! Gute Reise!",
+      "translation": "You are welcome! Have a good trip!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say thank you and goodbye",
+      "acceptedResponses": [
+        "Danke! Auf Wiedersehen!",
+        "Vielen Dank! Tschüss!",
+        "Danke schön! Auf Wiedersehen!",
+        "Tschüss und danke!"
+      ],
+      "keyWords": ["Danke", "Wiedersehen"],
+      "hint": "Danke! Auf Wiedersehen!"
+    }
+  ]
+}

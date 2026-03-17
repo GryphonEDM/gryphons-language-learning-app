@@ -45,8 +45,8 @@ function deleteAiStory(id) {
 }
 
 export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const langField = langCode === 'ru' ? 'ru' : 'uk';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : 'uk';
   const dict = buildDictionary(langCode);
 
   const [aiStories, setAiStories] = useState(() => loadAiStories());
@@ -490,7 +490,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
               <h3 style={styles.levelTitle}>
                 {levelGroup.level}
                 <span style={styles.levelNative}>
-                  {' '}/ {langCode === 'ru' ? levelGroup.levelRu : levelGroup.levelUk}
+                  {' '}/ {langCode === 'ru' ? levelGroup.levelRu : langCode === 'de' ? levelGroup.levelDe : levelGroup.levelUk}
                 </span>
               </h3>
               {levelGroup.stories.map((story) => (

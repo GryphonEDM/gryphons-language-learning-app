@@ -2,90 +2,104 @@
   "level": "Very Beginner",
   "levelRu": "Самый начальный",
   "levelUk": "Найпочатковіший",
+  "levelDe": "Sehr Anfänger",
+  "nameDe": "Sehr Anfänger",
   "stories": [
     {
       "id": "vb-1",
       "title": "The Cat",
       "en": "My cat is small. Her name is Luna. Luna is black. She likes milk. She sleeps on my bed. I love Luna.",
       "ru": "Моя кошка маленькая. Её зовут Луна. Луна чёрная. Она любит молоко. Она спит на моей кровати. Я люблю Луну.",
-      "uk": "Моя кішка маленька. Її звати Луна. Луна чорна. Вона любить молоко. Вона спить на моєму ліжку. Я люблю Луну."
+      "uk": "Моя кішка маленька. Її звати Луна. Луна чорна. Вона любить молоко. Вона спить на моєму ліжку. Я люблю Луну.",
+      "de": "Meine Katze ist klein. Ihr Name ist Luna. Luna ist schwarz. Sie mag Milch. Sie schläft auf meinem Bett. Ich liebe Luna."
     },
     {
       "id": "vb-2",
       "title": "My Family",
       "en": "This is my family. My dad is kind. My mom is beautiful. My brother is small. I love my family. We are happy.",
       "ru": "Это моя семья. Мой папа добрый. Моя мама красивая. Мой брат маленький. Я люблю мою семью. Мы счастливы.",
-      "uk": "Це моя сім'я. Мій тато добрий. Моя мама красива. Мій брат маленький. Я люблю мою сім'ю. Ми щасливі."
+      "uk": "Це моя сім'я. Мій тато добрий. Моя мама красива. Мій брат маленький. Я люблю мою сім'ю. Ми щасливі.",
+      "de": "Das ist meine Familie. Mein Papa ist nett. Meine Mama ist schön. Mein Bruder ist klein. Ich liebe meine Familie. Wir sind glücklich."
     },
     {
       "id": "vb-3",
       "title": "The Dog",
       "en": "This is my dog. His name is Rex. Rex is big. He is brown. Rex likes to play. I play with Rex every day.",
       "ru": "Это моя собака. Его зовут Рекс. Рекс большой. Он коричневый. Рекс любит играть. Я играю с Рексом каждый день.",
-      "uk": "Це мій собака. Його звати Рекс. Рекс великий. Він коричневий. Рекс любить грати. Я граю з Рексом щодня."
+      "uk": "Це мій собака. Його звати Рекс. Рекс великий. Він коричневий. Рекс любить грати. Я граю з Рексом щодня.",
+      "de": "Das ist mein Hund. Sein Name ist Rex. Rex ist groß. Er ist braun. Rex spielt gern. Ich spiele jeden Tag mit Rex."
     },
     {
       "id": "vb-4",
       "title": "My Room",
       "en": "This is my room. My room is small. I have a bed. I have a table. I have books on the table. My room is clean.",
       "ru": "Это моя комната. Моя комната маленькая. У меня есть кровать. У меня есть стол. У меня есть книги на столе. Моя комната чистая.",
-      "uk": "Це моя кімната. Моя кімната маленька. У мене є ліжко. У мене є стіл. У мене є книги на столі. Моя кімната чиста."
+      "uk": "Це моя кімната. Моя кімната маленька. У мене є ліжко. У мене є стіл. У мене є книги на столі. Моя кімната чиста.",
+      "de": "Das ist mein Zimmer. Mein Zimmer ist klein. Ich habe ein Bett. Ich habe einen Tisch. Ich habe Bücher auf dem Tisch. Mein Zimmer ist sauber."
     },
     {
       "id": "vb-5",
       "title": "Breakfast",
       "en": "I wake up. It is morning. I am hungry. I eat bread. I eat eggs. I drink tea. Breakfast is good.",
       "ru": "Я просыпаюсь. Утро. Я голодный/голодная. Я ем хлеб. Я ем яйца. Я пью чай. Завтрак хороший.",
-      "uk": "Я прокидаюся. Ранок. Я голодний/голодна. Я їм хліб. Я їм яйця. Я п'ю чай. Сніданок гарний."
+      "uk": "Я прокидаюся. Ранок. Я голодний/голодна. Я їм хліб. Я їм яйця. Я п'ю чай. Сніданок гарний.",
+      "de": "Ich wache auf. Es ist Morgen. Ich bin hungrig. Ich esse Brot. Ich esse Eier. Ich trinke Tee. Das Frühstück ist gut."
     },
     {
       "id": "vb-6",
       "title": "The Apple",
       "en": "I have an apple. The apple is red. The apple is sweet. I like apples. Apples are healthy. I eat my apple.",
       "ru": "У меня есть яблоко. Яблоко красное. Яблоко сладкое. Я люблю яблоки. Яблоки полезные. Я ем моё яблоко.",
-      "uk": "У мене є яблуко. Яблуко червоне. Яблуко солодке. Я люблю яблука. Яблука корисні. Я їм моє яблуко."
+      "uk": "У мене є яблуко. Яблуко червоне. Яблуко солодке. Я люблю яблука. Яблука корисні. Я їм моє яблуко.",
+      "de": "Ich habe einen Apfel. Der Apfel ist rot. Der Apfel ist süß. Ich mag Äpfel. Äpfel sind gesund. Ich esse meinen Apfel."
     },
     {
       "id": "vb-7",
       "title": "Weather",
       "en": "Today is sunny. The sky is blue. It is warm. I am happy. I like good weather. I go to the park.",
       "ru": "Сегодня солнечно. Небо голубое. Тепло. Я счастлив/счастлива. Я люблю хорошую погоду. Я иду в парк.",
-      "uk": "Сьогодні сонячно. Небо блакитне. Тепло. Я щасливий/щаслива. Я люблю гарну погоду. Я йду в парк."
+      "uk": "Сьогодні сонячно. Небо блакитне. Тепло. Я щасливий/щаслива. Я люблю гарну погоду. Я йду в парк.",
+      "de": "Heute ist es sonnig. Der Himmel ist blau. Es ist warm. Ich bin glücklich. Ich mag gutes Wetter. Ich gehe in den Park."
     },
     {
       "id": "vb-8",
       "title": "My Friend",
       "en": "I have a friend. Her name is Anna. Anna is nice. She is my classmate. We play together. I like Anna.",
       "ru": "У меня есть подруга. Её зовут Анна. Анна милая. Она моя одноклассница. Мы играем вместе. Я люблю Анну.",
-      "uk": "У мене є подруга. Її звати Анна. Анна мила. Вона моя однокласниця. Ми граємо разом. Я люблю Анну."
+      "uk": "У мене є подруга. Її звати Анна. Анна мила. Вона моя однокласниця. Ми граємо разом. Я люблю Анну.",
+      "de": "Ich habe eine Freundin. Ihr Name ist Anna. Anna ist nett. Sie ist meine Mitschülerin. Wir spielen zusammen. Ich mag Anna."
     },
     {
       "id": "vb-9",
       "title": "Colors",
       "en": "I see colors. The grass is green. The sun is yellow. The water is blue. The flower is red. Colors are beautiful.",
       "ru": "Я вижу цвета. Трава зелёная. Солнце жёлтое. Вода голубая. Цветок красный. Цвета красивые.",
-      "uk": "Я бачу кольори. Трава зелена. Сонце жовте. Вода блакитна. Квітка червона. Кольори гарні."
+      "uk": "Я бачу кольори. Трава зелена. Сонце жовте. Вода блакитна. Квітка червона. Кольори гарні.",
+      "de": "Ich sehe Farben. Das Gras ist grün. Die Sonne ist gelb. Das Wasser ist blau. Die Blume ist rot. Farben sind schön."
     },
     {
       "id": "vb-10",
       "title": "The Book",
       "en": "I have a book. The book is new. The book is interesting. I read every day. I like to read. Reading is fun.",
       "ru": "У меня есть книга. Книга новая. Книга интересная. Я читаю каждый день. Я люблю читать. Чтение - это весело.",
-      "uk": "У мене є книга. Книга нова. Книга цікава. Я читаю щодня. Я люблю читати. Читання - це весело."
+      "uk": "У мене є книга. Книга нова. Книга цікава. Я читаю щодня. Я люблю читати. Читання - це весело.",
+      "de": "Ich habe ein Buch. Das Buch ist neu. Das Buch ist interessant. Ich lese jeden Tag. Ich lese gern. Lesen macht Spaß."
     },
     {
       "id": "vb-11",
       "title": "The Alphabet",
       "en": "This is the Ukrainian alphabet. А — orange. Б — banana. В — water. Г — mountain. Ґ — porch. Д — day. Е — screen. Є — raccoon. Ж — woman. З — star. И — to hiccup. І — toy. Ї — hedgehog. Й — yogurt. К — book. Л — forest. М — city. Н — sky. О — autumn. П — bird. Р — river. С — sun. Т — dad. У — student. Ф — photo. Х — bread. Ц — sugar. Ч — time. Ш — school. Щ — happiness. Ь — soft sign. Ю — young. Я — apple. The Ukrainian alphabet has 33 letters.",
       "ru": "Это украинский алфавит. А — апельсин. Б — банан. В — вода. Г — гора. Ґ — ґанок (крыльцо). Д — день. Е — екран (экран). Є — єнот (енот). Ж — жінка (женщина). З — зірка (звезда). И — икати (икать). І — іграшка (игрушка). Ї — їжак (ёж). Й — йогурт. К — книга. Л — ліс (лес). М — місто (город). Н — небо. О — осінь (осень). П — птах (птица). Р — ріка (река). С — сонце (солнце). Т — тато (папа). У — учень (ученик). Ф — фото. Х — хліб (хлеб). Ц — цукор (сахар). Ч — час (время). Ш — школа. Щ — щастя (счастье). Ь — м'який знак (мягкий знак). Ю — юний (юный). Я — яблуко (яблоко). В украинском алфавите 33 буквы.",
-      "uk": "Це українська абетка. А — апельсин. Б — банан. В — вода. Г — гора. Ґ — ґанок. Д — день. Е — екран. Є — єнот. Ж — жінка. З — зірка. И — икати. І — іграшка. Ї — їжак. Й — йогурт. К — книга. Л — ліс. М — місто. Н — небо. О — осінь. П — птах. Р — ріка. С — сонце. Т — тато. У — учень. Ф — фото. Х — хліб. Ц — цукор. Ч — час. Ш — школа. Щ — щастя. Ь — м'який знак. Ю — юний. Я — яблуко. В українській мові 33 букви."
+      "uk": "Це українська абетка. А — апельсин. Б — банан. В — вода. Г — гора. Ґ — ґанок. Д — день. Е — екран. Є — єнот. Ж — жінка. З — зірка. И — икати. І — іграшка. Ї — їжак. Й — йогурт. К — книга. Л — ліс. М — місто. Н — небо. О — осінь. П — птах. Р — ріка. С — сонце. Т — тато. У — учень. Ф — фото. Х — хліб. Ц — цукор. Ч — час. Ш — школа. Щ — щастя. Ь — м'який знак. Ю — юний. Я — яблуко. В українській мові 33 букви.",
+      "de": "Das ist das ukrainische Alphabet. А — Orange. Б — Banane. В — Wasser. Г — Berg. Ґ — Veranda. Д — Tag. Е — Bildschirm. Є — Waschbär. Ж — Frau. З — Stern. И — schlucken. І — Spielzeug. Ї — Igel. Й — Joghurt. К — Buch. Л — Wald. М — Stadt. Н — Himmel. О — Herbst. П — Vogel. Р — Fluss. С — Sonne. Т — Papa. У — Student. Ф — Foto. Х — Brot. Ц — Zucker. Ч — Zeit. Ш — Schule. Щ — Glück. Ь — weicher Laut. Ю — jung. Я — Apfel. Das ukrainische Alphabet hat 33 Buchstaben."
     },
     {
       "id": "vb-12",
       "title": "Numbers",
       "en": "These are Ukrainian numbers. 0 — zero. 1 — one. 2 — two. 3 — three. 4 — four. 5 — five. 6 — six. 7 — seven. 8 — eight. 9 — nine. 10 — ten. 20 — twenty. 30 — thirty. 40 — forty. 50 — fifty. 60 — sixty. 70 — seventy. 80 — eighty. 90 — ninety. 100 — one hundred. 150 — one hundred fifty. 200 — two hundred. 250 — two hundred fifty. 300 — three hundred. 350 — three hundred fifty. 400 — four hundred. 450 — four hundred fifty. 500 — five hundred. 550 — five hundred fifty. 600 — six hundred. 650 — six hundred fifty. 700 — seven hundred. 750 — seven hundred fifty. 800 — eight hundred. 850 — eight hundred fifty. 900 — nine hundred. 950 — nine hundred fifty. 1,000 — one thousand. 1,500 — one thousand five hundred. 2,000 — two thousand. 10,000 — ten thousand. 100,000 — one hundred thousand. 1,000,000 — one million. 1,000,000,000 — one billion.",
       "ru": "Это украинские числа. 0 — нуль. 1 — один. 2 — два. 3 — три. 4 — чотири (четыре). 5 — п'ять (пять). 6 — шість (шесть). 7 — сім (семь). 8 — вісім (восемь). 9 — дев'ять (девять). 10 — десять. 20 — двадцять (двадцать). 30 — тридцять (тридцать). 40 — сорок. 50 — п'ятдесят (пятьдесят). 60 — шістдесят (шестьдесят). 70 — сімдесят (семьдесят). 80 — вісімдесят (восемьдесят). 90 — дев'яносто (девяносто). 100 — сто. 150 — сто п'ятдесят (сто пятьдесят). 200 — двісті (двести). 250 — двісті п'ятдесят (двести пятьдесят). 300 — триста. 350 — триста п'ятдесят (триста пятьдесят). 400 — чотириста (четыреста). 450 — чотириста п'ятдесят (четыреста пятьдесят). 500 — п'ятсот (пятьсот). 550 — п'ятсот п'ятдесят (пятьсот пятьдесят). 600 — шістсот (шестьсот). 650 — шістсот п'ятдесят (шестьсот пятьдесят). 700 — сімсот (семьсот). 750 — сімсот п'ятдесят (семьсот пятьдесят). 800 — вісімсот (восемьсот). 850 — вісімсот п'ятдесят (восемьсот пятьдесят). 900 — дев'ятсот (девятьсот). 950 — дев'ятсот п'ятдесят (девятьсот пятьдесят). 1000 — тисяча (тысяча). 1500 — тисяча п'ятсот (тысяча пятьсот). 2000 — дві тисячі (две тысячи). 10 000 — десять тисяч (десять тысяч). 100 000 — сто тисяч (сто тысяч). 1 000 000 — один мільйон (один миллион). 1 000 000 000 — один мільярд (один миллиард).",
-      "uk": "Це українські числа. 0 — нуль. 1 — один. 2 — два. 3 — три. 4 — чотири. 5 — п'ять. 6 — шість. 7 — сім. 8 — вісім. 9 — дев'ять. 10 — десять. 20 — двадцять. 30 — тридцять. 40 — сорок. 50 — п'ятдесят. 60 — шістдесят. 70 — сімдесят. 80 — вісімдесят. 90 — дев'яносто. 100 — сто. 150 — сто п'ятдесят. 200 — двісті. 250 — двісті п'ятдесят. 300 — триста. 350 — триста п'ятдесят. 400 — чотириста. 450 — чотириста п'ятдесят. 500 — п'ятсот. 550 — п'ятсот п'ятдесят. 600 — шістсот. 650 — шістсот п'ятдесят. 700 — сімсот. 750 — сімсот п'ятдесят. 800 — вісімсот. 850 — вісімсот п'ятдесят. 900 — дев'ятсот. 950 — дев'ятсот п'ятдесят. 1000 — тисяча. 1500 — тисяча п'ятсот. 2000 — дві тисячі. 10 000 — десять тисяч. 100 000 — сто тисяч. 1 000 000 — один мільйон. 1 000 000 000 — один мільярд."
+      "uk": "Це українські числа. 0 — нуль. 1 — один. 2 — два. 3 — три. 4 — чотири. 5 — п'ять. 6 — шість. 7 — сім. 8 — вісім. 9 — дев'ять. 10 — десять. 20 — двадцять. 30 — тридцять. 40 — сорок. 50 — п'ятдесят. 60 — шістдесят. 70 — сімдесят. 80 — вісімдесят. 90 — дев'яносто. 100 — сто. 150 — сто п'ятдесят. 200 — двісті. 250 — двісті п'ятдесят. 300 — триста. 350 — триста п'ятдесят. 400 — чотириста. 450 — чотириста п'ятдесят. 500 — п'ятсот. 550 — п'ятсот п'ятдесят. 600 — шістсот. 650 — шістсот п'ятдесят. 700 — сімсот. 750 — сімсот п'ятдесят. 800 — вісімсот. 850 — вісімсот п'ятдесят. 900 — дев'ятсот. 950 — дев'ятсот п'ятдесят. 1000 — тисяча. 1500 — тисяча п'ятсот. 2000 — дві тисячі. 10 000 — десять тисяч. 100 000 — сто тисяч. 1 000 000 — один мільйон. 1 000 000 000 — один мільярд.",
+      "de": "Das sind ukrainische Zahlen. 0 — null. 1 — eins. 2 — zwei. 3 — drei. 4 — vier. 5 — fünf. 6 — sechs. 7 — sieben. 8 — acht. 9 — neun. 10 — zehn. 20 — zwanzig. 30 — dreißig. 40 — vierzig. 50 — fünfzig. 60 — sechzig. 70 — siebzig. 80 — achtzig. 90 — neunzig. 100 — hundert. 150 — hundertfünfzig. 200 — zweihundert. 250 — zweihundertfünfzig. 300 — dreihundert. 350 — dreihundertfünfzig. 400 — vierhundert. 450 — vierhundertfünfzig. 500 — fünfhundert. 550 — fünfhundertfünfzig. 600 — sechshundert. 650 — sechshundertfünfzig. 700 — siebenhundert. 750 — siebenhundertfünfzig. 800 — achthundert. 850 — achthundertfünfzig. 900 — neunhundert. 950 — neunhundertfünfzig. 1.000 — tausend. 1.500 — tausendfünfhundert. 2.000 — zweitausend. 10.000 — zehntausend. 100.000 — hunderttausend. 1.000.000 — eine Million. 1.000.000.000 — eine Milliarde."
     }
   ]
 }

@@ -3,6 +3,7 @@
   "nameEn": "Family",
   "nameUk": "Сім'я",
   "nameRu": "Семья",
+  "nameDe": "Familie",
   "difficulty": "A1",
   "icon": "👨‍👩‍👧‍👦",
   "totalWords": 17,
@@ -11,204 +12,255 @@
     {
       "uk": "сім'я",
       "ru": "семья",
+      "de": "Familie",
       "en": "family",
       "phoneticUk": "simya",
       "phoneticRu": "sem'ya",
+      "phoneticDe": "fa-mee-lee-uh",
       "examples": {
         "uk": ["Наша сім'я дуже дружна.", "У нас велика і весела сім'я."],
         "ru": ["наша семья очень дружная и крепкая", "большая семья собралась за праздничным столом"],
+        "de": ["Unsere Familie ist sehr eng zusammen.", "Wir haben eine große und fröhliche Familie."],
         "en": ["Our family is very close.", "We have a big and cheerful family."]
       }
     },
     {
       "uk": "мати",
       "ru": "мать",
+      "de": "Mutter",
       "en": "mother",
       "phoneticUk": "maty",
       "phoneticRu": "mat'",
+      "phoneticDe": "moo-ter",
       "examples": {
         "uk": ["Моя мати готує смачний обід.", "Мати дуже любить своїх дітей."],
         "ru": ["мать любит своих детей больше всего", "моя мать готовит вкусный обед"],
+        "de": ["Meine Mutter kocht ein leckeres Mittagessen.", "Eine Mutter liebt ihre Kinder sehr."],
         "en": ["My mother cooks a delicious lunch.", "A mother loves her children very much."]
       }
     },
     {
       "uk": "батько",
       "ru": "отец",
+      "de": "Vater",
       "en": "father",
       "phoneticUk": "batko",
       "phoneticRu": "otets",
+      "phoneticDe": "fah-ter",
       "examples": {
         "uk": ["Мій батько працює щодня.", "Батько читає книгу ввечері."],
         "ru": ["отец работает в офисе каждый день", "мой отец читает газету по утрам"],
+        "de": ["Mein Vater arbeitet jeden Tag.", "Der Vater liest abends ein Buch."],
         "en": ["My father works every day.", "Father reads a book in the evening."]
       }
     },
     {
       "uk": "син",
       "ru": "сын",
+      "de": "Sohn",
       "en": "son",
       "phoneticUk": "syn",
       "phoneticRu": "syn",
+      "phoneticDe": "zohn",
       "examples": {
         "uk": ["Мій син ходить до першого класу.", "Наш старший син допомагає батькові."],
         "ru": ["сын помогает отцу в гараже", "наш сын ходит в первый класс"],
+        "de": ["Mein Sohn geht in die erste Klasse.", "Unser älterer Sohn hilft dem Vater."],
         "en": ["My son is in first grade.", "Our older son helps his father."]
       }
     },
     {
       "uk": "донька",
       "ru": "дочь",
+      "de": "Tochter",
       "en": "daughter",
       "phoneticUk": "donka",
       "phoneticRu": "doch'",
+      "phoneticDe": "tokh-ter",
       "examples": {
         "uk": ["Моя донька схожа на маму.", "Наша донька вчиться в університеті."],
         "ru": ["дочь похожа на свою мать", "наша дочь учится в университете"],
+        "de": ["Meine Tochter sieht ihrer Mutter ähnlich.", "Unsere Tochter studiert an der Universität."],
         "en": ["My daughter looks like her mom.", "Our daughter studies at university."]
       }
     },
     {
       "uk": "брат",
       "ru": "брат",
+      "de": "Bruder",
       "en": "brother",
       "phoneticUk": "brat",
       "phoneticRu": "brat",
+      "phoneticDe": "broo-der",
       "examples": {
         "uk": ["Мій брат завжди мені допомагає.", "Старший брат навчається в школі."],
         "ru": ["мой брат учится в старшей школе", "старший брат всегда помогает мне"],
+        "de": ["Mein Bruder hilft mir immer.", "Mein älterer Bruder geht zur Schule."],
         "en": ["My brother always helps me.", "My older brother studies at school."]
       }
     },
     {
       "uk": "сестра",
       "ru": "сестра",
+      "de": "Schwester",
       "en": "sister",
       "phoneticUk": "sestra",
       "phoneticRu": "sestra",
+      "phoneticDe": "shves-ter",
       "examples": {
         "uk": ["Моя сестра грає на піаніно.", "Молодша сестра малює гарні картини."],
         "ru": ["моя сестра играет на пианино", "младшая сестра рисует красивые картины"],
+        "de": ["Meine Schwester spielt Klavier.", "Meine jüngere Schwester malt schöne Bilder."],
         "en": ["My sister plays the piano.", "My younger sister draws beautiful pictures."]
       }
     },
     {
       "uk": "дідусь",
       "ru": "дедушка",
+      "de": "Großvater",
       "en": "grandfather",
       "phoneticUk": "didus",
       "phoneticRu": "dedushka",
+      "phoneticDe": "grohs-fah-ter",
       "examples": {
         "uk": ["Мій дідусь любить ходити на рибалку.", "Дідусь сидить у своєму улюбленому кріслі."],
         "ru": ["дедушка сидит в любимом кресле", "мой дедушка любит ходить на рыбалку"],
+        "de": ["Mein Großvater geht gern angeln.", "Großvater sitzt in seinem Lieblingssessel."],
         "en": ["My grandfather loves to go fishing.", "Grandfather sits in his favourite armchair."]
       }
     },
     {
       "uk": "бабуся",
       "ru": "бабушка",
+      "de": "Großmutter",
       "en": "grandmother",
       "phoneticUk": "babusya",
       "phoneticRu": "babushka",
+      "phoneticDe": "grohs-moo-ter",
       "examples": {
         "uk": ["Бабуся пече смачні пиріжки.", "Моя бабуся розповідає казки онукам."],
         "ru": ["бабушка печёт вкусные пирожки", "моя бабушка рассказывает сказки внукам"],
+        "de": ["Großmutter backt leckere Kuchen.", "Meine Großmutter erzählt den Enkeln Märchen."],
         "en": ["Grandmother bakes delicious pastries.", "My grandmother tells fairy tales to the grandchildren."]
       }
     },
     {
       "uk": "дядько",
       "ru": "дядя",
+      "de": "Onkel",
       "en": "uncle",
       "phoneticUk": "dyadko",
       "phoneticRu": "dyadya",
+      "phoneticDe": "on-kel",
       "examples": {
         "uk": ["Мій дядько приїхав до нас у гості.", "Дядько живе в іншому місті."],
         "ru": ["дядя приехал в гости из другого города", "мой дядя живёт в Москве уже десять лет"],
+        "de": ["Mein Onkel ist uns besuchen gekommen.", "Onkel wohnt in einer anderen Stadt."],
         "en": ["My uncle came to visit us.", "Uncle lives in another city."]
       }
     },
     {
       "uk": "тітка",
       "ru": "тётя",
+      "de": "Tante",
       "en": "aunt",
       "phoneticUk": "titka",
       "phoneticRu": "tyotya",
+      "phoneticDe": "tan-tuh",
       "examples": {
         "uk": ["Моя тітка подарувала мені цікаву книгу.", "Тітка працює вчителькою в школі."],
         "ru": ["тётя подарила мне интересную книгу", "моя тётя работает учителем в школе"],
+        "de": ["Meine Tante hat mir ein interessantes Buch geschenkt.", "Tante arbeitet als Lehrerin in der Schule."],
         "en": ["My aunt gave me an interesting book.", "Aunt works as a teacher at school."]
       }
     },
     {
       "uk": "чоловік",
       "ru": "муж",
+      "de": "Ehemann",
       "en": "husband",
       "phoneticUk": "cholovik",
       "phoneticRu": "muzh",
+      "phoneticDe": "eh-eh-man",
       "examples": {
         "uk": ["Мій чоловік працює лікарем.", "Чоловік подарував дружині квіти."],
         "ru": ["муж дарит цветы жене на праздник", "мой муж работает врачом в больнице"],
+        "de": ["Mein Ehemann arbeitet als Arzt.", "Der Ehemann hat seiner Frau Blumen geschenkt."],
         "en": ["My husband works as a doctor.", "The husband gave his wife flowers."]
       }
     },
     {
       "uk": "дружина",
       "ru": "жена",
+      "de": "Ehefrau",
       "en": "wife",
       "phoneticUk": "druzhyna",
       "phoneticRu": "zhena",
+      "phoneticDe": "eh-eh-frow",
       "examples": {
         "uk": ["Моя дружина готує вечерю для всіх.", "Його дружина викладає математику в школі."],
         "ru": ["жена готовит ужин для всей семьи", "его жена преподаёт математику в школе"],
+        "de": ["Meine Ehefrau kocht das Abendessen für alle.", "Seine Ehefrau unterrichtet Mathematik in der Schule."],
         "en": ["My wife cooks dinner for everyone.", "His wife teaches maths at school."]
       }
     },
     {
       "uk": "онук",
       "ru": "внук",
+      "de": "Enkel",
       "en": "grandson",
       "phoneticUk": "onuk",
       "phoneticRu": "vnuk",
+      "phoneticDe": "en-kel",
       "examples": {
         "uk": ["Мій онук ходить до дитячого садка.", "Онук допомагає дідусеві в городі."],
         "ru": ["мой внук ходит в детский сад", "внук помогает дедушке в огороде"],
+        "de": ["Mein Enkel geht in den Kindergarten.", "Der Enkel hilft dem Großvater im Garten."],
         "en": ["My grandson goes to kindergarten.", "The grandson helps his grandfather in the garden."]
       }
     },
     {
       "uk": "онука",
       "ru": "внучка",
+      "de": "Enkelin",
       "en": "granddaughter",
       "phoneticUk": "onuka",
       "phoneticRu": "vnuchka",
+      "phoneticDe": "en-kel-in",
       "examples": {
         "uk": ["Моя онука навідує бабусю щонеділі.", "Онука любить малювати квіти."],
         "ru": ["внучка навещает бабушку каждое воскресенье", "моя внучка любит рисовать цветы"],
+        "de": ["Meine Enkelin besucht die Großmutter jeden Sonntag.", "Die Enkelin malt gern Blumen."],
         "en": ["My granddaughter visits her grandmother every Sunday.", "The granddaughter loves to draw flowers."]
       }
     },
     {
       "uk": "дитина",
       "ru": "ребёнок",
+      "de": "Kind",
       "en": "child",
       "phoneticUk": "dytyna",
       "phoneticRu": "rebyonok",
+      "phoneticDe": "kint",
       "examples": {
         "uk": ["Маленька дитина грається у дворі.", "Дитина спить у своєму ліжечку."],
         "ru": ["ребёнок играет с мячом во дворе", "маленький ребёнок спит в кроватке"],
+        "de": ["Das kleine Kind spielt auf dem Hof.", "Das Kind schläft in seinem Bettchen."],
         "en": ["The little child plays in the yard.", "The child is sleeping in their cot."]
       }
     },
     {
       "uk": "батьки",
       "ru": "родители",
+      "de": "Eltern",
       "en": "parents",
       "phoneticUk": "batky",
       "phoneticRu": "roditeli",
+      "phoneticDe": "el-tern",
       "examples": {
         "uk": ["Мої батьки піклуються про нас.", "Батьки живуть у тихому селі."],
         "ru": ["родители заботятся о своих детях", "мои родители живут в тихой деревне"],
+        "de": ["Meine Eltern kümmern sich um uns.", "Die Eltern wohnen in einem ruhigen Dorf."],
         "en": ["My parents take care of us.", "The parents live in a quiet village."]
       }
     }

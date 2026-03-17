@@ -1,0 +1,91 @@
+{
+  "lessonId": "negation",
+  "nameEn": "Negation",
+  "nameDe": "Verneinung",
+  "icon": "🚫",
+  "tier": "A2",
+  "prerequisites": ["articles", "verbs-present"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "nicht",
+      "title": "Nicht — Negating Verbs and Adjectives",
+      "explanation": "German uses 'nicht' to negate verbs, adjectives, adverbs, and specific noun phrases with a definite article. 'Nicht' is not a simple one-to-one replacement for English 'not' — its position matters. General rule: 'nicht' comes at the end of the clause (or before a predicate adjective/adverb, or before an infinitive at the end). Before a predicate adjective: 'Das Wetter ist nicht schön.' (The weather is not nice.) Before a specific noun phrase with a definite article: 'Ich kenne den Mann nicht.' (I don't know the man.) Before an infinitive: 'Er kann nicht kommen.' (He can't come.)",
+      "tip": "Place 'nicht' at the end, or just before whatever is being negated (adjective, infinitive, prepositional phrase). When in doubt: nicht at the end.",
+      "examples": [
+        { "de": "Ich verstehe das nicht.", "en": "I don't understand that.", "highlight": "nicht" },
+        { "de": "Sie kommt heute nicht.", "en": "She is not coming today.", "highlight": "nicht" },
+        { "de": "Das ist nicht richtig.", "en": "That is not correct.", "highlight": "nicht" },
+        { "de": "Er spricht nicht schnell.", "en": "He doesn't speak quickly.", "highlight": "nicht" },
+        { "de": "Ich gehe heute nicht einkaufen.", "en": "I am not going shopping today.", "highlight": "nicht" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Where does 'nicht' go to negate a simple statement like 'Ich verstehe das'?", "options": ["At the end: 'Ich verstehe das nicht.'", "Before the verb: 'Ich nicht verstehe das.'", "After the subject: 'Ich nicht verstehe das.'"], "correctIndex": 0, "explanation": "For a simple verb negation, 'nicht' goes at the end: 'Ich verstehe das nicht.' (I don't understand that.)" },
+        { "type": "multiple-choice", "prompt": "How do you negate 'Das ist schön' (That is beautiful)?", "options": ["Das ist nicht schön.", "Das nicht ist schön.", "Das ist schön nicht."], "correctIndex": 0, "explanation": "When negating a predicate adjective, 'nicht' comes directly before it: 'Das ist nicht schön.' (That is not beautiful.)" },
+        { "type": "fill-blank", "prompt": "Er kommt morgen ___. (He is not coming tomorrow.)", "acceptedAnswers": ["nicht"], "hint": "The German word for 'not'", "explanation": "'Nicht' at the end negates the whole verb phrase. 'Er kommt morgen nicht.'" },
+        { "type": "multiple-choice", "prompt": "Negate: 'Sie wohnt in Berlin.' (She lives in Berlin.)", "options": ["Sie wohnt nicht in Berlin.", "Sie nicht wohnt in Berlin.", "Nicht sie wohnt in Berlin."], "correctIndex": 0, "explanation": "When negating a prepositional phrase or specific detail, 'nicht' comes before it: 'Sie wohnt nicht in Berlin.'" },
+        { "type": "matching", "prompt": "Match each sentence to its correct negation:", "pairs": [
+          { "left": "Das ist gut.", "right": "Das ist nicht gut." },
+          { "left": "Er kommt.", "right": "Er kommt nicht." },
+          { "left": "Sie versteht das.", "right": "Sie versteht das nicht." },
+          { "left": "Ich spreche Englisch.", "right": "Ich spreche nicht Englisch." }
+        ], "explanation": "Nicht placement: before adjective (nicht gut), at clause end (kommt nicht, versteht das nicht), before the specific element being negated." },
+        { "type": "multiple-choice", "prompt": "Where does 'nicht' go with modal verbs: 'Er kann kommen' → He can't come?", "options": ["Before the infinitive: 'Er kann nicht kommen.'", "At the very end: 'Er kann kommen nicht.'", "After the subject: 'Er nicht kann kommen.'"], "correctIndex": 0, "explanation": "With modal + infinitive, 'nicht' comes just before the infinitive at the end: 'Er kann nicht kommen.'" },
+        { "type": "fill-blank", "prompt": "Das Essen schmeckt ___ gut. (The food does not taste good.)", "acceptedAnswers": ["nicht"], "hint": "Before the adjective 'gut'", "explanation": "'Nicht' before a predicate adjective: 'Das Essen schmeckt nicht gut.' (The food doesn't taste good.)" },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly says 'I am not sleeping'?", "options": ["Ich schlafe nicht.", "Ich nicht schlafe.", "Nicht ich schlafe."], "correctIndex": 0, "explanation": "Simple verb negation: 'nicht' at the end. 'Ich schlafe nicht.' Note: German present tense covers both 'I sleep' and 'I am sleeping'." }
+      ]
+    },
+    {
+      "sectionId": "kein",
+      "title": "Kein/Keine — Negating Nouns",
+      "explanation": "Use 'kein' (not 'nicht') to negate nouns that would normally take the indefinite article (ein/eine) or no article at all. 'kein' declines exactly like 'ein': kein (masc. nom.), keine (fem. nom.), kein (neut. nom.), keine (plural). Examples: 'Ich habe ein Auto.' → 'Ich habe kein Auto.' (I have no car.) 'Sie trinkt Kaffee.' → 'Sie trinkt keinen Kaffee.' (She drinks no coffee.) 'Wir haben Zeit.' → 'Wir haben keine Zeit.' (We have no time.) Remember: 'nicht' negates verbs/adjectives; 'kein' negates nouns with indefinite/no article.",
+      "tip": "kein = 'not a' or 'no'. Use it instead of 'nicht ein'. kein follows the same endings as ein: keine (fem./pl.), keinen (masc. acc.).",
+      "examples": [
+        { "de": "Er hat kein Geld.", "en": "He has no money. (das Geld → kein)", "highlight": "kein" },
+        { "de": "Wir haben keine Zeit.", "en": "We have no time. (die Zeit → keine)", "highlight": "keine" },
+        { "de": "Ich trinke keinen Kaffee.", "en": "I drink no coffee. (masc. acc. → keinen)", "highlight": "keinen" },
+        { "de": "Sie hat keine Geschwister.", "en": "She has no siblings. (plural → keine)", "highlight": "keine" },
+        { "de": "Ich habe kein Auto.", "en": "I have no car. (das Auto → kein)", "highlight": "kein" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "When do you use 'kein' instead of 'nicht'?", "options": ["To negate nouns that would use 'ein/eine' or no article", "To negate verbs", "To negate adjectives"], "correctIndex": 0, "explanation": "'kein' negates nouns that normally take an indefinite article (ein/eine) or no article at all. 'nicht' negates verbs and adjectives." },
+        { "type": "multiple-choice", "prompt": "How do you negate 'Ich habe ein Auto' (I have a car)?", "options": ["Ich habe kein Auto.", "Ich habe nicht ein Auto.", "Ich nicht habe ein Auto."], "correctIndex": 0, "explanation": "Replace 'ein' with 'kein': Ich habe kein Auto. (I have no car / I don't have a car.)" },
+        { "type": "fill-blank", "prompt": "Wir haben ___ Zeit. (We have no time.) — Zeit is feminine", "acceptedAnswers": ["keine"], "hint": "Feminine form of kein", "explanation": "'Zeit' is feminine (die Zeit) → keine. Wir haben keine Zeit." },
+        { "type": "multiple-choice", "prompt": "What is the correct form for 'I drink no coffee'? (Kaffee = der, accusative)", "options": ["Ich trinke keinen Kaffee.", "Ich trinke kein Kaffee.", "Ich trinke keine Kaffee."], "correctIndex": 0, "explanation": "'Kaffee' is masculine (der Kaffee). As accusative object: kein→keinen. Ich trinke keinen Kaffee." },
+        { "type": "matching", "prompt": "Match each noun phrase to its correct kein-form:", "pairs": [
+          { "left": "ein Hund (masc. nom.)", "right": "kein Hund" },
+          { "left": "eine Frau (fem. nom.)", "right": "keine Frau" },
+          { "left": "ein Kind (neut. nom.)", "right": "kein Kind" },
+          { "left": "Kinder (pl., no article)", "right": "keine Kinder" }
+        ], "explanation": "kein (masc./neut.), keine (fem./pl.) in nominative. kein follows ein-endings exactly." },
+        { "type": "multiple-choice", "prompt": "Negate: 'Er hat Geschwister.' (He has siblings.)", "options": ["Er hat keine Geschwister.", "Er hat nicht Geschwister.", "Er hat Geschwister nicht."], "correctIndex": 0, "explanation": "'Geschwister' (siblings) is a plural noun with no article → use 'keine': Er hat keine Geschwister." },
+        { "type": "fill-blank", "prompt": "Ich habe ___ Hunger. (I am not hungry.) — Hunger is masc., no article", "acceptedAnswers": ["keinen"], "hint": "Masculine accusative form of kein", "explanation": "'Hunger' is masculine (der Hunger) and used without an article. As accusative: kein→keinen. Ich habe keinen Hunger." },
+        { "type": "multiple-choice", "prompt": "Which sentence is correct for 'She doesn't speak German'?", "options": ["Sie spricht kein Deutsch.", "Sie spricht nicht Deutsch.", "Both are correct, but kein is preferred here"], "correctIndex": 2, "explanation": "Both 'Sie spricht kein Deutsch' (Deutsch as a noun, no article) and 'Sie spricht nicht Deutsch' (negating the verb phrase) are used. 'Kein Deutsch sprechen' is the more common idiomatic form." }
+      ]
+    },
+    {
+      "sectionId": "nicht-vs-kein",
+      "title": "Nicht vs. Kein — Deciding Which to Use",
+      "explanation": "The choice between 'nicht' and 'kein' depends on what is being negated. Use 'kein/keine' when negating a noun phrase with an indefinite article (ein→kein) or a noun used without an article (bare noun → kein). Use 'nicht' for everything else: negating a verb action, an adjective, an adverb, or a noun phrase with a DEFINITE article (der/die/das). Example: 'Ich lese nicht.' (I don't read — verb negation.) 'Ich lese das Buch nicht.' (I'm not reading the book — definite article noun + nicht.) 'Ich habe kein Buch.' (I have no book — indefinite article → kein.)",
+      "tip": "Quick test: Can you replace what you're negating with 'a/an something'? → kein. Otherwise → nicht.",
+      "examples": [
+        { "de": "Ich bin nicht müde.", "en": "I am not tired. (adjective → nicht)", "highlight": "nicht" },
+        { "de": "Ich habe kein Geld.", "en": "I have no money. (bare noun → kein)", "highlight": "kein" },
+        { "de": "Ich kenne den Lehrer nicht.", "en": "I don't know the teacher. (definite noun → nicht)", "highlight": "nicht" },
+        { "de": "Sie hat keine Idee.", "en": "She has no idea. (indef. article → kein)", "highlight": "keine" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which is correct: 'I am not tired'?", "options": ["Ich bin nicht müde.", "Ich bin kein müde.", "Ich bin keine müde."], "correctIndex": 0, "explanation": "'müde' is an adjective → use 'nicht'. Kein/keine are only for nouns." },
+        { "type": "multiple-choice", "prompt": "Which is correct: 'I have no dog'? (Hund = masc.)", "options": ["Ich habe keinen Hund.", "Ich habe nicht einen Hund.", "Ich habe nicht Hund."], "correctIndex": 0, "explanation": "Negating 'ein Hund' → replace 'ein' with 'kein': keinen Hund (accusative masculine)." },
+        { "type": "multiple-choice", "prompt": "Negate: 'Ich kenne die Frau.' (I know the woman.) — definite article", "options": ["Ich kenne die Frau nicht.", "Ich kenne keine Frau.", "Ich nicht kenne die Frau."], "correctIndex": 0, "explanation": "When the noun has a DEFINITE article (die Frau), use 'nicht' at the end: 'Ich kenne die Frau nicht.'" },
+        { "type": "matching", "prompt": "Choose nicht or kein for each sentence:", "pairs": [
+          { "left": "Er ist ___ glücklich. (not happy)", "right": "nicht" },
+          { "left": "Ich habe ___ Auto. (no car)", "right": "kein" },
+          { "left": "Wir haben ___ Zeit. (no time, fem.)", "right": "keine" },
+          { "left": "Sie versteht das ___. (doesn't understand it)", "right": "nicht" }
+        ], "explanation": "nicht: adjective (nicht glücklich), definite-article noun or verb (nicht + verb/adjective). kein/keine: noun without or with indef. article." },
+        { "type": "multiple-choice", "prompt": "Complete: 'Das ist ___ Problem.' (That is not a problem.) — Problem is neuter", "options": ["kein Problem", "nicht Problem", "keine Problem"], "correctIndex": 0, "explanation": "Negating 'ein Problem' (a problem) → use 'kein': Das ist kein Problem. Neuter noun → kein (not keine)." }
+      ]
+    }
+  ]
+}

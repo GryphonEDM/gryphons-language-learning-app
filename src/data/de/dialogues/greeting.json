@@ -1,0 +1,134 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameDe": "Jemanden kennenlernen",
+  "icon": "👋",
+  "context": "You are at a language exchange meetup in Berlin and meet a German speaker named Lukas.",
+  "characters": {
+    "npc": { "name": "Lukas" },
+    "player": { "name": "Sie" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Hallo! Ich bin Lukas. Wie heißt du?",
+      "translation": "Hello! I am Lukas. What is your name?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and say your name (say 'Hello, I am...')",
+      "acceptedResponses": [
+        "Hallo, ich bin",
+        "Hallo! Ich bin",
+        "Hi, ich bin",
+        "Hi! Ich bin"
+      ],
+      "keyWords": ["Hallo", "ich", "bin"],
+      "hint": "Hallo, ich bin..."
+    },
+    {
+      "speaker": "npc",
+      "text": "Schön, dich kennenzulernen! Woher kommst du?",
+      "translation": "Nice to meet you! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say where you are from (say 'I am from...')",
+      "acceptedResponses": [
+        "Ich komme aus",
+        "Ich bin aus",
+        "Ich komme aus Amerika",
+        "Ich komme aus England",
+        "Ich komme aus Australien",
+        "Ich bin aus Amerika"
+      ],
+      "keyWords": ["komme", "aus"],
+      "hint": "Ich komme aus..."
+    },
+    {
+      "speaker": "npc",
+      "text": "Interessant! Und warum lernst du Deutsch?",
+      "translation": "Interesting! And why are you learning German?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you are learning German because it is interesting",
+      "acceptedResponses": [
+        "Weil es interessant ist",
+        "Deutsch ist interessant",
+        "Ich finde Deutsch interessant",
+        "Es ist interessant"
+      ],
+      "keyWords": ["interessant"],
+      "hint": "Weil es interessant ist."
+    },
+    {
+      "speaker": "npc",
+      "text": "Das stimmt! Lernst du schon lange Deutsch?",
+      "translation": "That is true! Have you been learning German for long?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you have been learning German for three months",
+      "acceptedResponses": [
+        "Ich lerne seit drei Monaten Deutsch",
+        "Seit drei Monaten",
+        "Drei Monate",
+        "Ich lerne Deutsch seit drei Monaten"
+      ],
+      "keyWords": ["drei", "Monaten"],
+      "hint": "Ich lerne seit drei Monaten Deutsch."
+    },
+    {
+      "speaker": "npc",
+      "text": "Wow, dein Deutsch ist schon gut! Wo wohnst du in Berlin?",
+      "translation": "Wow, your German is already good! Where do you live in Berlin?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you live in the city center (Mitte)",
+      "acceptedResponses": [
+        "Ich wohne in Mitte",
+        "In Mitte",
+        "Ich wohne im Zentrum",
+        "Im Zentrum"
+      ],
+      "keyWords": ["wohne", "Mitte"],
+      "hint": "Ich wohne in Mitte."
+    },
+    {
+      "speaker": "npc",
+      "text": "Cool! Darf ich deine Nummer haben? Wir können zusammen üben.",
+      "translation": "Cool! May I have your number? We can practice together."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes, of course!",
+      "acceptedResponses": [
+        "Ja, natürlich!",
+        "Ja natürlich",
+        "Natürlich!",
+        "Ja, klar!"
+      ],
+      "keyWords": ["Ja", "natürlich"],
+      "hint": "Ja, natürlich!"
+    },
+    {
+      "speaker": "npc",
+      "text": "Super! Bis bald, schönen Abend noch!",
+      "translation": "Great! See you soon, have a nice evening!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say goodbye and wish him a nice evening too",
+      "acceptedResponses": [
+        "Tschüss, dir auch!",
+        "Auf Wiedersehen, dir auch!",
+        "Tschüss! Schönen Abend!",
+        "Dir auch, tschüss!"
+      ],
+      "keyWords": ["Tschüss", "auch"],
+      "hint": "Tschüss, dir auch!"
+    }
+  ]
+}

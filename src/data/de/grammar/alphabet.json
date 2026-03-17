@@ -1,0 +1,99 @@
+{
+  "lessonId": "alphabet",
+  "nameEn": "The German Alphabet",
+  "nameDe": "Das deutsche Alphabet",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "basics",
+      "title": "Letters and Pronunciation",
+      "explanation": "German uses the same 26 letters as English, plus four special characters: ä, ö, ü (called Umlauts), and ß (Eszett). Most consonants are pronounced similarly to English, but several key letters differ: 'w' sounds like English 'v', 'v' sounds like English 'f', 'j' sounds like English 'y', and 'z' sounds like 'ts'. The letter 'r' is typically pronounced in the throat (like gargling softly). Knowing these differences is essential from day one.",
+      "tip": "Remember the four sound swaps: W=v, V=f, J=y, Z=ts. Say 'Volkswagen' correctly: Folk-svah-gen!",
+      "examples": [
+        { "de": "Wasser", "en": "Water — 'w' sounds like English 'v'", "highlight": "W" },
+        { "de": "Vater", "en": "Father — 'v' sounds like English 'f'", "highlight": "V" },
+        { "de": "Jahr", "en": "Year — 'j' sounds like English 'y'", "highlight": "J" },
+        { "de": "Zeit", "en": "Time — 'z' sounds like 'ts'", "highlight": "Z" },
+        { "de": "Rot", "en": "Red — 'r' is guttural (throat sound)", "highlight": "R" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How is the letter 'w' pronounced in German?", "options": ["Like English 'v' (as in 'vine')", "Like English 'w' (as in 'wine')", "Like English 'f' (as in 'fine')"], "correctIndex": 0, "explanation": "German 'w' sounds like English 'v'. So 'Wasser' (water) sounds like 'Vasser'." },
+        { "type": "multiple-choice", "prompt": "How is the letter 'v' pronounced in German?", "options": ["Like English 'f' (as in 'father')", "Like English 'v' (as in 'vine')", "Like English 'b'"], "correctIndex": 0, "explanation": "German 'v' usually sounds like English 'f'. So 'Vater' (father) sounds like 'Fater'." },
+        { "type": "multiple-choice", "prompt": "How is 'j' pronounced in German?", "options": ["Like English 'y' (as in 'yes')", "Like English 'j' (as in 'jump')", "Like English 'zh'"], "correctIndex": 0, "explanation": "German 'j' sounds like English 'y'. So 'ja' (yes) sounds like 'ya'." },
+        { "type": "fill-blank", "prompt": "The letter 'z' in German sounds like ___", "acceptedAnswers": ["ts", "ts sound"], "hint": "Like the end of 'pizza'", "explanation": "'z' in German always sounds like 'ts'. So 'Zeit' (time) sounds like 'Tsait'." },
+        { "type": "multiple-choice", "prompt": "How would you pronounce 'Zug' (train)?", "options": ["Tsoog", "Zug (English z)", "Sug"], "correctIndex": 0, "explanation": "'z' = 'ts', and 'u' sounds like 'oo'. So 'Zug' sounds like 'Tsoog'." },
+        { "type": "matching", "prompt": "Match each German letter to its English sound:", "pairs": [
+          { "left": "w", "right": "v (vine)" },
+          { "left": "v", "right": "f (fine)" },
+          { "left": "j", "right": "y (yes)" },
+          { "left": "z", "right": "ts (pizza)" }
+        ], "explanation": "These four sound swaps are among the most important in German: w=v, v=f, j=y, z=ts." },
+        { "type": "multiple-choice", "prompt": "Which word correctly shows how 'Wagen' (car) sounds?", "options": ["Vahgen", "Wahgen", "Fagen"], "correctIndex": 0, "explanation": "German 'w' = English 'v', and 'a' sounds like 'ah'. So 'Wagen' = 'Vahgen'." },
+        { "type": "fill-blank", "prompt": "The German word 'ja' (yes) sounds like English ___", "acceptedAnswers": ["ya", "yah"], "hint": "Think of the English exclamation 'ya!'", "explanation": "German 'j' = English 'y', so 'ja' sounds like 'ya'." },
+        { "type": "multiple-choice", "prompt": "How many extra letters does German have compared to English?", "options": ["4 (ä, ö, ü, ß)", "3 (ä, ö, ü)", "2 (ü, ß)"], "correctIndex": 0, "explanation": "German adds ä, ö, ü (Umlauts) and ß (Eszett) to the standard 26-letter alphabet." }
+      ]
+    },
+    {
+      "sectionId": "umlauts-eszett",
+      "title": "Umlauts and ß",
+      "explanation": "The three Umlauts (ä, ö, ü) are modified vowels. 'ä' sounds like the 'e' in 'bed'. 'ö' has no English equivalent — round your lips as if to say 'o' but say 'e'. 'ü' also has no English equivalent — round your lips as if to say 'u' but say 'i'. The 'ß' (Eszett or sharp S) sounds like a long 's' and appears after long vowels or diphthongs (e.g., Straße = street, heiß = hot). If you cannot type ß, write 'ss' instead (Strasse, heiss).",
+      "tip": "ä = 'eh', ö = say 'e' with rounded lips, ü = say 'ee' with rounded lips. ß always sounds like 'ss'.",
+      "examples": [
+        { "de": "Käse", "en": "Cheese — ä sounds like 'e' in 'bed'", "highlight": "ä" },
+        { "de": "schön", "en": "Beautiful — ö has rounded lips", "highlight": "ö" },
+        { "de": "grün", "en": "Green — ü has rounded lips", "highlight": "ü" },
+        { "de": "Straße", "en": "Street — ß sounds like double-s", "highlight": "ß" },
+        { "de": "heiß", "en": "Hot — ß after a diphthong (ei)", "highlight": "ß" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What sound does 'ä' make?", "options": ["Like 'e' in 'bed'", "Like 'a' in 'father'", "Like 'ay' in 'day'"], "correctIndex": 0, "explanation": "'ä' sounds like the 'e' in 'bed'. For example: Käse (cheese) = Kay-zeh." },
+        { "type": "multiple-choice", "prompt": "The 'ß' character always sounds like:", "options": ["A double 's' (long s)", "Like English 'z'", "Like 'sh'"], "correctIndex": 0, "explanation": "'ß' always sounds like a sharp, long 's'. It is never voiced like 'z'." },
+        { "type": "fill-blank", "prompt": "If you cannot type ß, you can write ___ instead", "acceptedAnswers": ["ss", "SS"], "hint": "Two of the same letter", "explanation": "When ß is unavailable (e.g., on a non-German keyboard), substitute 'ss'. Straße → Strasse." },
+        { "type": "multiple-choice", "prompt": "Which word has the correct spelling for 'street' in German?", "options": ["Straße", "Strase", "Strasze"], "correctIndex": 0, "explanation": "The correct spelling is 'Straße' with the ß character (or 'Strasse' when ß is unavailable)." },
+        { "type": "matching", "prompt": "Match each Umlaut to its approximate sound:", "pairs": [
+          { "left": "ä", "right": "e in 'bed'" },
+          { "left": "ö", "right": "e + rounded lips" },
+          { "left": "ü", "right": "i + rounded lips" },
+          { "left": "ß", "right": "double-s" }
+        ], "explanation": "ä='eh', ö=rounded 'e', ü=rounded 'i', ß='ss'. Practice by exaggerating the lip rounding for ö and ü." },
+        { "type": "multiple-choice", "prompt": "The word 'grün' (green) contains which special character?", "options": ["ü", "ö", "ä"], "correctIndex": 0, "explanation": "'grün' contains 'ü', the rounded 'i' sound. It sounds like 'gryoon' with rounded lips." },
+        { "type": "fill-blank", "prompt": "The German word for 'beautiful' is sch_n", "acceptedAnswers": ["ö", "schön"], "hint": "An Umlaut that needs rounded lips", "explanation": "'schön' uses 'ö'. Round your lips as if to say 'o', then try to say 'e'." },
+        { "type": "multiple-choice", "prompt": "In which situation is 'ß' used instead of 'ss'?", "options": ["After a long vowel or diphthong", "At the start of a word", "After a short vowel"], "correctIndex": 0, "explanation": "'ß' follows long vowels (straße, groß) or diphthongs (heiß, weiß). 'ss' follows short vowels (Wasser, essen)." }
+      ]
+    },
+    {
+      "sectionId": "digraphs",
+      "title": "Key Letter Combinations",
+      "explanation": "German has several important letter combinations (digraphs) with consistent pronunciations. 'ch' has two sounds: after a, o, u, au it sounds like a guttural 'kh' (Bach); elsewhere it sounds like a soft 'h' (ich, nicht). 'sch' always sounds like English 'sh'. 'ei' sounds like English 'eye' (long i). 'ie' sounds like English 'ee'. 'sp' and 'st' at the start of a word or syllable sound like 'shp' and 'sht' respectively.",
+      "tip": "ei = eye, ie = ee. Remember: 'I before E' sounds like 'E', 'E before I' sounds like 'I' — the opposite of English!",
+      "examples": [
+        { "de": "Bach", "en": "Bach (composer) — guttural 'ch' after 'a'", "highlight": "ch" },
+        { "de": "ich", "en": "I — soft 'ch' (like a whispered 'h')", "highlight": "ch" },
+        { "de": "schön", "en": "Beautiful — 'sch' = English 'sh'", "highlight": "sch" },
+        { "de": "Eis", "en": "Ice — 'ei' sounds like English 'eye'", "highlight": "ei" },
+        { "de": "sie", "en": "She/they — 'ie' sounds like 'ee'", "highlight": "ie" },
+        { "de": "sprechen", "en": "To speak — 'sp' at start = 'shp'", "highlight": "sp" },
+        { "de": "Stadt", "en": "City — 'st' at start = 'sht'", "highlight": "St" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How does 'ei' sound in German?", "options": ["Like English 'eye' (long i)", "Like English 'ee'", "Like English 'ay'"], "correctIndex": 0, "explanation": "'ei' sounds like the English long 'i' or 'eye'. Examples: Eis (ice), mein (my), nein (no)." },
+        { "type": "multiple-choice", "prompt": "How does 'ie' sound in German?", "options": ["Like English 'ee'", "Like English 'eye'", "Like English 'ih'"], "correctIndex": 0, "explanation": "'ie' sounds like English 'ee'. Examples: sie (she/they), viel (much), liebe (love)." },
+        { "type": "fill-blank", "prompt": "'sch' in German sounds like English ___", "acceptedAnswers": ["sh", "sh sound"], "hint": "The sound at the start of 'shower'", "explanation": "'sch' always sounds like English 'sh'. So 'schön' starts with 'sh'." },
+        { "type": "matching", "prompt": "Match each digraph to its English sound:", "pairs": [
+          { "left": "ei", "right": "eye (long i)" },
+          { "left": "ie", "right": "ee (long e)" },
+          { "left": "sch", "right": "sh (shower)" },
+          { "left": "sp (word start)", "right": "shp (splash)" }
+        ], "explanation": "These are core German digraph rules: ei=eye, ie=ee, sch=sh, sp/st at word start = shp/sht." },
+        { "type": "multiple-choice", "prompt": "How is 'Sprache' (language) pronounced at the start?", "options": ["Shprache (shp- sound)", "Sprache (English sp)", "Zprache"], "correctIndex": 0, "explanation": "'sp' at the start of a German word sounds like 'shp'. So 'Sprache' starts with 'shp'." },
+        { "type": "multiple-choice", "prompt": "The word 'nicht' (not) contains 'ch'. How is it pronounced here?", "options": ["Soft 'h' sound (after i)", "Guttural 'kh' sound (like Bach)", "Silent"], "correctIndex": 0, "explanation": "After 'i', 'e', 'ä', 'ö', 'ü', the 'ch' is a soft palatal sound — like a gentle, breathy 'h'. This differs from the guttural 'ch' after 'a', 'o', 'u'." },
+        { "type": "fill-blank", "prompt": "The word for 'no' in German is n_in", "acceptedAnswers": ["ei", "nein"], "hint": "Uses the 'eye' sound digraph", "explanation": "'nein' (no) uses 'ei', which sounds like English 'eye'. It's pronounced like 'nine'." },
+        { "type": "multiple-choice", "prompt": "Which word rhymes with English 'fee'?", "options": ["sie (she/they)", "Eis (ice)", "auch (also)"], "correctIndex": 0, "explanation": "'sie' uses 'ie', which sounds like English 'ee'. So 'sie' rhymes with English 'fee' or 'see'." },
+        { "type": "multiple-choice", "prompt": "How is 'Stadt' (city) pronounced?", "options": ["Shtat (sht- sound)", "Stat (English st)", "Ztat"], "correctIndex": 0, "explanation": "'st' at the start of a German word sounds like 'sht'. So 'Stadt' sounds like 'Shtat'." }
+      ]
+    }
+  ]
+}

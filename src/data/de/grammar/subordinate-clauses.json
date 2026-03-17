@@ -1,0 +1,245 @@
+{
+  "lessonId": "subordinate-clauses",
+  "nameEn": "Subordinate Clauses",
+  "nameDe": "Nebensätze",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": ["sentence-structure", "verbs-present"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "weil-because",
+      "title": "weil — Causal Clauses",
+      "explanation": "The conjunction 'weil' (because) introduces a subordinate clause in which the conjugated verb moves to the END of the clause. This is called verb-final word order (Verbendstellung). The main clause is separated from the weil-clause by a comma. Example: 'Ich bleibe zu Hause, weil ich krank bin.' (I'm staying home because I'm sick.) If the weil-clause comes first, the main clause follows with inverted word order (verb before subject): 'Weil ich krank bin, bleibe ich zu Hause.' Note: In informal spoken German, 'weil' is sometimes (incorrectly) used with main-clause word order — avoid this in writing.",
+      "tip": "'Weil' = verb goes to the end. Always. Even if there are multiple verbs: the conjugated verb is last. Compare with 'denn' (also 'because') which does NOT change word order — but 'denn' can only follow the main clause, while 'weil' clauses can go before or after.",
+      "examples": [
+        { "de": "Ich lerne Deutsch, weil es interessant ist.", "en": "I'm learning German because it's interesting.", "highlight": "weil es interessant ist" },
+        { "de": "Er geht früh schlafen, weil er müde ist.", "en": "He goes to bed early because he is tired.", "highlight": "weil er müde ist" },
+        { "de": "Weil es regnet, bleibe ich zu Hause.", "en": "Because it's raining, I'm staying home.", "highlight": "Weil es regnet" },
+        { "de": "Sie isst kein Fleisch, weil sie Vegetarierin ist.", "en": "She doesn't eat meat because she's a vegetarian.", "highlight": "weil sie Vegetarierin ist" },
+        { "de": "Ich kann nicht kommen, weil ich arbeiten muss.", "en": "I can't come because I have to work. (modal at end)", "highlight": "weil ich arbeiten muss" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the verb go in a 'weil' clause?",
+          "options": ["Position 1", "Position 2", "To the end of the clause", "Directly after 'weil'"],
+          "correctIndex": 2,
+          "explanation": "In all German subordinate clauses, including 'weil' clauses, the conjugated verb moves to the very end of the clause."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich bin müde, weil ich lange ___ habe. (I'm tired because I worked long hours.) [arbeiten]",
+          "acceptedAnswers": ["gearbeitet"],
+          "hint": "Verb goes to the end of the weil-clause. Here it's perfect tense: haben + Partizip II (at the very end)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is CORRECT?",
+          "options": [
+            "Ich esse nicht, weil ich habe keinen Hunger.",
+            "Ich esse nicht, weil ich keinen Hunger habe.",
+            "Ich esse nicht, weil habe ich keinen Hunger.",
+            "Ich esse nicht, denn ich keinen Hunger habe."
+          ],
+          "correctIndex": 1,
+          "explanation": "'weil' sends the verb to the end: 'weil ich keinen Hunger habe'. Option A has the verb in wrong position. Option C inverts subject/verb after weil. Option D uses 'denn' but with weil word order."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ er krank ist, geht er nicht zur Arbeit.",
+          "acceptedAnswers": ["Weil", "Da"],
+          "hint": "The weil-clause comes first. The verb 'ist' is already at the end of the clause."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "With a modal verb in a weil-clause, which is correct?",
+          "options": [
+            "...weil ich muss arbeiten.",
+            "...weil ich arbeiten muss.",
+            "...weil muss ich arbeiten.",
+            "...weil ich muss arbeiten gehen."
+          ],
+          "correctIndex": 1,
+          "explanation": "In a subordinate clause with a modal, the infinitive comes before the modal: 'weil ich arbeiten muss'. The modal is the conjugated verb and goes last."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie lacht, weil der Film sehr lustig ___. (She laughs because the film is very funny.)",
+          "acceptedAnswers": ["ist"],
+          "hint": "Conjugated verb goes to the end of the weil-clause."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the word order in the main clause when a weil-clause comes first? 'Weil es heiß ist, ___.'",
+          "options": [
+            "ich trinke viel Wasser.",
+            "trinke ich viel Wasser.",
+            "viel Wasser trinke ich.",
+            "ich viel Wasser trinke."
+          ],
+          "correctIndex": 1,
+          "explanation": "When a subordinate clause precedes the main clause, the main clause uses inverted word order: verb before subject. 'Weil es heiß ist, trinke ich viel Wasser.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er kauft das Auto nicht, weil es zu teuer ___.",
+          "acceptedAnswers": ["ist"],
+          "hint": "Verb goes to the end. 'sein' conjugated for 'es' is...?"
+        }
+      ]
+    },
+    {
+      "sectionId": "dass-that",
+      "title": "dass — Complement Clauses",
+      "explanation": "'dass' (that) introduces a complement clause — it often follows verbs of saying, thinking, believing, knowing, hoping, feeling: sagen (to say), denken (to think), glauben (to believe), wissen (to know), hoffen (to hope), fühlen (to feel), finden (to find/think). Like all subordinate clauses, the verb goes to the END. Example: 'Ich glaube, dass er kommt.' (I believe that he is coming.) Note: in English, 'that' can often be omitted, but 'dass' in German generally cannot be omitted — however, you can restructure without 'dass' by using an infinitive construction with 'zu' (covered separately).",
+      "tip": "After 'dass', verb goes to the end — just like 'weil'. Common dass-verbs to know: Ich glaube, dass... / Ich weiß, dass... / Ich hoffe, dass... / Er sagt, dass... / Ich finde, dass... The comma before 'dass' is always required in German.",
+      "examples": [
+        { "de": "Ich glaube, dass er kommt.", "en": "I believe that he is coming.", "highlight": "dass er kommt" },
+        { "de": "Sie sagt, dass sie müde ist.", "en": "She says that she is tired.", "highlight": "dass sie müde ist" },
+        { "de": "Ich weiß, dass Deutsch schwer ist.", "en": "I know that German is difficult.", "highlight": "dass Deutsch schwer ist" },
+        { "de": "Er hofft, dass es morgen nicht regnet.", "en": "He hopes that it won't rain tomorrow.", "highlight": "dass es morgen nicht regnet" },
+        { "de": "Wir finden, dass diese Stadt sehr schön ist.", "en": "We find that this city is very beautiful.", "highlight": "dass diese Stadt sehr schön ist" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich denke, ___ du Recht hast. (I think that you are right.)",
+          "options": ["weil", "ob", "dass", "wenn"],
+          "correctIndex": 2,
+          "explanation": "'dass' introduces a complement clause after 'denken' (to think). 'ob' would mean 'whether', 'weil' means 'because'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er weiß, dass sie jeden Tag Deutsch ___. (He knows that she studies German every day.) [lernen]",
+          "acceptedAnswers": ["lernt"],
+          "hint": "Verb goes to the end of the 'dass'-clause. Conjugate 'lernen' for 'sie' (she)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is INCORRECT?",
+          "options": [
+            "Ich hoffe, dass es morgen schön ist.",
+            "Sie glaubt, dass er kommt.",
+            "Wir wissen, dass du hast Recht.",
+            "Er sagt, dass er keine Zeit hat."
+          ],
+          "correctIndex": 2,
+          "explanation": "'dass du hast Recht' is wrong — in a dass-clause, the verb must go to the END: 'dass du Recht hast'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich finde, dass dieser Film sehr ___ ist. (I find that this film is very boring.) [langweilig]",
+          "acceptedAnswers": ["langweilig"],
+          "hint": "The adjective (predicate) comes before 'ist' at the end of the dass-clause."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "After which verb would you most naturally use a 'dass' clause?",
+          "options": ["gehen", "schlafen", "hoffen", "kaufen"],
+          "correctIndex": 2,
+          "explanation": "'hoffen' (to hope) is a mental/communicative verb that typically takes a 'dass' complement: 'Ich hoffe, dass...'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie sagt, dass sie morgen nicht ___ kann. (She says that she can't come tomorrow.) [kommen]",
+          "acceptedAnswers": ["kommen"],
+          "hint": "With a modal in the dass-clause: infinitive before modal, modal at the very end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Es ist wichtig, dass man ___ übt. (It is important that one practices daily.)",
+          "options": [
+            "täglich übt (verb at end — correct)",
+            "übt täglich (verb before adverb — wrong)",
+            "täglich üben (infinitive used — wrong)",
+            "übe täglich (subjunctive — unneeded here)"
+          ],
+          "correctIndex": 0,
+          "explanation": "In the dass-clause, the conjugated verb goes to the end: 'dass man täglich übt'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich bin froh, dass du ___ bist. (I'm glad that you are here.)",
+          "acceptedAnswers": ["hier", "da"],
+          "hint": "The verb 'bist' is already at the end — what word meaning 'here' completes the sentence?"
+        }
+      ]
+    },
+    {
+      "sectionId": "wenn-ob",
+      "title": "wenn and ob — Conditional and Indirect Questions",
+      "explanation": "'wenn' has two meanings: (1) 'when' for repeated/habitual events or future events: 'Wenn es regnet, bleibe ich zu Hause' (When it rains, I stay home). (2) 'if' for conditionals: 'Wenn ich Zeit hätte, würde ich kommen' (If I had time, I would come). 'ob' means 'whether/if' and introduces indirect yes/no questions: 'Ich weiß nicht, ob er kommt' (I don't know if/whether he's coming). Note: 'ob' is for indirect questions only — for direct yes/no questions, no 'ob' is used. Both 'wenn' and 'ob' follow the same rule: verb goes to the end.",
+      "tip": "Use 'wenn' for 'when' (habitual/future) and 'if' (conditional). Use 'ob' to turn a yes/no question into an indirect question: 'Kommt er?' → 'Ich frage mich, ob er kommt.' For indirect W-questions (who, what, where, why...), use the question word directly: 'Ich weiß nicht, warum er kommt.'",
+      "examples": [
+        { "de": "Wenn es regnet, nehme ich einen Schirm.", "en": "When it rains, I take an umbrella.", "highlight": "Wenn es regnet" },
+        { "de": "Ich komme, wenn ich fertig bin.", "en": "I'll come when I'm done.", "highlight": "wenn ich fertig bin" },
+        { "de": "Ich weiß nicht, ob er heute kommt.", "en": "I don't know if/whether he's coming today.", "highlight": "ob er heute kommt" },
+        { "de": "Sie fragt, ob wir mitkommen wollen.", "en": "She asks whether we want to come along.", "highlight": "ob wir mitkommen wollen" },
+        { "de": "Wenn du Hunger hast, machen wir etwas zu essen.", "en": "If you're hungry, we'll make something to eat.", "highlight": "Wenn du Hunger hast" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich frage mich, ___ er glücklich ist. (I wonder if/whether he is happy.)",
+          "options": ["weil", "wenn", "ob", "dass"],
+          "correctIndex": 2,
+          "explanation": "'ob' introduces indirect yes/no questions and means 'whether/if'. 'Ich frage mich, ob er glücklich ist.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ du Zeit hast, können wir uns treffen. (If you have time, we can meet up.)",
+          "acceptedAnswers": ["Wenn"],
+          "hint": "Conditional 'if' introducing a subordinate clause with verb at the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Turn the question 'Kommt Maria morgen?' into an indirect question:",
+          "options": [
+            "Ich weiß nicht, ob kommt Maria morgen.",
+            "Ich weiß nicht, ob Maria morgen kommt.",
+            "Ich weiß nicht, dass Maria morgen kommt.",
+            "Ich weiß nicht, wenn Maria morgen kommt."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ich weiß nicht, ob Maria morgen kommt.' — 'ob' introduces the indirect yes/no question, verb goes to the end."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ ich jung war, spielte ich viel Fußball. (When I was young, I played a lot of soccer.)",
+          "acceptedAnswers": ["Als", "Wenn"],
+          "hint": "'Als' is used for single past events; 'wenn' for repeated past or future events. Both are accepted here."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Er fragt, ob wir das Restaurant ___. (He asks whether we know the restaurant.) [kennen]",
+          "options": ["kennen", "wissen", "kennt", "weiß"],
+          "correctIndex": 0,
+          "explanation": "In the ob-clause, verb goes to the end: 'ob wir das Restaurant kennen'. The subject is 'wir', so 'kennen' (1st/3rd plural) is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich weiß nicht, ___ sie morgen Zeit hat. (I don't know if she has time tomorrow.)",
+          "acceptedAnswers": ["ob"],
+          "hint": "Indirect yes/no question — use this conjunction."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each conjunction to its function:",
+          "pairs": [
+            { "left": "weil", "right": "because (reason)" },
+            { "left": "dass", "right": "that (complement clause)" },
+            { "left": "wenn", "right": "when / if (condition or habitual)" },
+            { "left": "ob", "right": "whether / if (indirect yes/no question)" }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wenn das Wetter schön ___, gehen wir in den Park.",
+          "acceptedAnswers": ["ist"],
+          "hint": "Verb goes to the end of the 'wenn'-clause. 'sein' conjugated for 'das Wetter' (es-form)."
+        }
+      ]
+    }
+  ]
+}

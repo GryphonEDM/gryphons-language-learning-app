@@ -1,0 +1,245 @@
+{
+  "lessonId": "separable-verbs",
+  "nameEn": "Separable Verbs",
+  "nameDe": "Trennbare Verben",
+  "icon": "✂️",
+  "tier": "B1",
+  "prerequisites": ["verbs-present", "sentence-structure"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "common-prefixes",
+      "title": "Common Separable Prefixes",
+      "explanation": "Separable verbs are verbs with a detachable prefix that adds or shifts meaning. Common separable prefixes include: auf- (up/open), an- (on/start), aus- (out/off), ab- (off/away), ein- (in/into), mit- (along/with), vor- (ahead/before), zu- (to/closed). Examples: aufmachen (to open), anrufen (to call), ausgehen (to go out), abfahren (to depart), einladen (to invite), mitkommen (to come along), vorstellen (to introduce), zumachen (to close). Learning the prefix meanings helps predict the overall meaning of new separable verbs.",
+      "tip": "Separable prefixes are always stressed when spoken: AUFmachen, ANrufen. If you hear the stress on the first syllable and it's a prefix, the verb is likely separable. Inseparable prefixes (be-, ge-, er-, ver-, zer-, ent-, emp-, miss-) are unstressed.",
+      "examples": [
+        { "de": "aufmachen — to open", "en": "auf- (up) + machen (to make/do) = to open", "highlight": "auf-" },
+        { "de": "anrufen — to call (phone)", "en": "an- (on) + rufen (to call/shout) = to phone", "highlight": "an-" },
+        { "de": "ausgehen — to go out", "en": "aus- (out) + gehen (to go) = to go out", "highlight": "aus-" },
+        { "de": "einladen — to invite", "en": "ein- (in) + laden (to load) = to invite", "highlight": "ein-" },
+        { "de": "mitkommen — to come along", "en": "mit- (with) + kommen (to come) = to come along", "highlight": "mit-" }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each separable verb to its English meaning:",
+          "pairs": [
+            { "left": "aufmachen", "right": "to open" },
+            { "left": "abfahren", "right": "to depart / leave" },
+            { "left": "einladen", "right": "to invite" },
+            { "left": "vorstellen", "right": "to introduce / imagine" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which prefix means 'out' or 'off' (as in 'to go out' or 'to turn off')?",
+          "options": ["auf-", "an-", "aus-", "ab-"],
+          "correctIndex": 2,
+          "explanation": "'aus-' means 'out' or 'off'. 'ausgehen' = to go out, 'ausmachen' = to turn off."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The verb meaning 'to come along' uses the prefix ___.",
+          "acceptedAnswers": ["mit-", "mit"],
+          "hint": "Which prefix means 'with' or 'along'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'zumachen' most likely mean based on the prefix 'zu-'?",
+          "options": ["to open", "to close", "to go toward", "to increase"],
+          "correctIndex": 1,
+          "explanation": "'zu-' as a separable prefix often means 'closed' or 'shut'. 'zumachen' = to close/shut (contrast with 'aufmachen' = to open)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___stehen means 'to get up' (rising from sleep or a seat). What is the prefix?",
+          "acceptedAnswers": ["auf-", "auf"],
+          "hint": "'auf-' often implies an upward movement."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a separable verb?",
+          "options": ["besuchen", "verstehen", "anfangen", "erklären"],
+          "correctIndex": 2,
+          "explanation": "'anfangen' (to begin) uses the separable prefix 'an-'. 'besuchen', 'verstehen', 'erklären' all use inseparable prefixes (be-, ver-, er-) which are never separated."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The prefix ___ means 'to come along' in 'mitkommen' and suggests participation.",
+          "acceptedAnswers": ["mit-", "mit"],
+          "hint": "It's the same as the preposition meaning 'with'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair of opposites uses separable prefixes correctly?",
+          "options": [
+            "aufmachen / verstehen",
+            "aufmachen / zumachen",
+            "eingehen / besuchen",
+            "anrufen / erkläre"
+          ],
+          "correctIndex": 1,
+          "explanation": "'aufmachen' (to open) and 'zumachen' (to close) are opposites using separable prefixes 'auf-' and 'zu-'."
+        }
+      ]
+    },
+    {
+      "sectionId": "word-order-split",
+      "title": "Word Order: Splitting the Verb",
+      "explanation": "In a main clause with a conjugated separable verb, the verb splits: the conjugated part goes to position 2, and the prefix goes to the END of the clause. Example: 'aufmachen' → 'Ich mache das Fenster auf.' The prefix 'auf' is separated and sent to the end. This is the verbal bracket (Satzklammer). In subordinate clauses (after weil, dass, wenn, etc.), the verb reunites at the end: '...weil ich das Fenster aufmache.' With modal verbs, the separable infinitive stays together at the end: 'Ich will das Fenster aufmachen.'",
+      "tip": "Main clause = split! Prefix goes to the end. Subordinate clause = together! The whole verb stays at the end. With modal verbs in the main clause = together at the end (as one infinitive).",
+      "examples": [
+        { "de": "Ich rufe dich morgen an.", "en": "I'll call you tomorrow. (anrufen splits: rufe...an)", "highlight": "rufe ... an" },
+        { "de": "Der Zug fährt um 8 Uhr ab.", "en": "The train departs at 8 o'clock. (abfahren splits)", "highlight": "fährt ... ab" },
+        { "de": "Sie lädt ihre Freunde ein.", "en": "She invites her friends. (einladen splits)", "highlight": "lädt ... ein" },
+        { "de": "Ich weiß, dass sie ihre Freunde einlädt.", "en": "I know that she invites her friends. (subord. clause: verb rejoins)", "highlight": "einlädt" },
+        { "de": "Er will früh aufstehen.", "en": "He wants to get up early. (modal + separable infinitive stays together)", "highlight": "aufstehen" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly splits the separable verb 'anrufen'?",
+          "options": [
+            "Ich anrufe dich später.",
+            "Ich rufe dich später an.",
+            "Ich rufe an dich später.",
+            "Rufe ich dich an später."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ich rufe dich später an' — the conjugated 'rufe' is in position 2, and the prefix 'an' goes to the end."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Unterricht ___ um 9 Uhr ___ (anfangen). (The lesson begins at 9 o'clock.)",
+          "acceptedAnswers": ["fängt ... an"],
+          "hint": "Conjugate 'anfangen' in third person singular and split it."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to a separable verb in a subordinate clause?",
+          "options": [
+            "It splits as usual.",
+            "The prefix goes to the beginning of the clause.",
+            "The verb reunites and goes to the end of the clause.",
+            "The prefix is dropped."
+          ],
+          "correctIndex": 2,
+          "explanation": "In subordinate clauses, separable verbs reunite and move to the end: '...weil er früh aufsteht'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er kommt nicht, weil er nicht ___ kann. (He's not coming because he can't come along.)",
+          "acceptedAnswers": ["mitkommen"],
+          "hint": "In the subordinate clause with a modal, the separable infinitive stays together at the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich ___ das Licht ___. (I turn off the light.) — ausmachen",
+          "options": [
+            "ausmache ... X",
+            "mache ... aus",
+            "X ... ausmache",
+            "aus ... mache"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ich mache das Licht aus.' — 'mache' (conjugated) in position 2, 'aus' (prefix) at the end."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie ___ ihre Kollegen zur Party ___. (She invites her colleagues to the party.) [einladen]",
+          "acceptedAnswers": ["lädt ... ein"],
+          "hint": "Conjugate 'einladen' — note the vowel change: a→ä in du/er/sie/es. Then split."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Wann ___ der Zug ___? (When does the train depart?) — abfahren",
+          "options": [
+            "abfährt ... X",
+            "fährt ... ab",
+            "fährt ab ... X",
+            "X ... abfährt"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Wann fährt der Zug ab?' — In questions, the verb moves to position 1, and the prefix still goes to the end."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich weiß, dass er mich heute ___ . (I know that he is calling me today.) [anrufen]",
+          "acceptedAnswers": ["anruft"],
+          "hint": "Subordinate clause after 'dass' — verb goes to end and stays together."
+        }
+      ]
+    },
+    {
+      "sectionId": "infinitive-past-participle",
+      "title": "Infinitive and Past Participle Forms",
+      "explanation": "Separable verbs have distinctive forms in the infinitive and past participle. Infinitive: the prefix reattaches to the infinitive form as one word: aufmachen, anrufen, ausgehen. Past participle (Partizip II): the -ge- of the past participle is inserted BETWEEN the prefix and the verb stem: auf + ge + macht = aufgemacht, an + ge + rufen = angerufen, aus + ge + gangen = ausgegangen. This is different from inseparable verbs, which do NOT add -ge-. Strong (irregular) verbs keep their stem changes in the past participle as usual.",
+      "tip": "For separable verbs, the -ge- goes between prefix and stem: auf|ge|macht, an|ge|rufen. For inseparable verbs (be-, ge-, ver-, etc.), no -ge- is added: besucht, verstanden. A quick test: is the prefix stressed? If yes → separable → add -ge- between prefix and stem.",
+      "examples": [
+        { "de": "aufmachen → aufgemacht", "en": "to open → opened (ge- inserted: auf+ge+macht)", "highlight": "aufge-" },
+        { "de": "anrufen → angerufen", "en": "to call → called (strong verb, stem change + ge-)", "highlight": "ange-" },
+        { "de": "ausgehen → ausgegangen", "en": "to go out → gone out (irregular: gegangen)", "highlight": "ausge-" },
+        { "de": "einladen → eingeladen", "en": "to invite → invited (strong verb: geladen)", "highlight": "einge-" },
+        { "de": "zumachen → zugemacht", "en": "to close → closed", "highlight": "zuge-" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past participle of 'aufmachen'?",
+          "options": ["gemacht auf", "aufmacht", "aufgemacht", "geaufmacht"],
+          "correctIndex": 2,
+          "explanation": "Separable verb past participle: prefix + ge + stem. auf + ge + macht = 'aufgemacht'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "anrufen → ___",
+          "acceptedAnswers": ["angerufen"],
+          "hint": "Separable prefix + ge + strong verb past participle stem (rufen → gerufen)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which past participle is formed INCORRECTLY?",
+          "options": ["ausgegangen", "eingekauft", "geaufgemacht", "abgefahren"],
+          "correctIndex": 2,
+          "explanation": "'geaufgemacht' is wrong. The -ge- goes BETWEEN prefix and stem: 'aufgemacht' (prefix 'auf' + ge + 'macht'). You never put 'ge-' before the prefix."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "ausgehen → ___",
+          "acceptedAnswers": ["ausgegangen"],
+          "hint": "'gehen' has an irregular past participle (gegangen). Insert prefix 'aus' before it."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich habe das Fenster ___. (I have opened the window.) — aufmachen",
+          "options": ["aufgemacht", "gemacht auf", "aufmacht", "geöffnet auf"],
+          "correctIndex": 0,
+          "explanation": "'aufgemacht' is the correct past participle of 'aufmachen'. Used with 'haben': 'Ich habe das Fenster aufgemacht.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "einladen → ___",
+          "acceptedAnswers": ["eingeladen"],
+          "hint": "'laden' is a strong verb (lud, geladen). Add prefix 'ein' and insert -ge-."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each infinitive to its correct past participle:",
+          "pairs": [
+            { "left": "aufstehen", "right": "aufgestanden" },
+            { "left": "anrufen", "right": "angerufen" },
+            { "left": "mitkommen", "right": "mitgekommen" },
+            { "left": "abfahren", "right": "abgefahren" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Er hat seine Freunde ___. (He has invited his friends.) — einladen",
+          "options": ["eingeladen", "eingelad", "geeinladen", "einlädt"],
+          "correctIndex": 0,
+          "explanation": "'eingeladen' is the past participle of 'einladen' (ein + ge + laden). Used with 'haben': 'Er hat seine Freunde eingeladen.'"
+        }
+      ]
+    }
+  ]
+}

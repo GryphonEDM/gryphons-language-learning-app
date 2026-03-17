@@ -43,7 +43,7 @@ function deleteAiSentenceSet(id) {
 }
 
 export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
   const [phase, setPhase] = useState('pick-difficulty'); // pick-difficulty, generate, playing, complete
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
@@ -219,6 +219,8 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     const topic = aiTopic.trim() || 'daily life';
     const langInstructions = langCode === 'ru'
       ? 'Provide each sentence in Russian AND English. Use "ru" for the Russian text and "en" for English.'
+      : langCode === 'de'
+      ? 'Provide each sentence in German AND English. Use "de" for the German text and "en" for English.'
       : 'Provide each sentence in Ukrainian AND English. Use "uk" for the Ukrainian text and "en" for English.';
 
     const prompt = `Generate exactly ${aiCount} sentence-building exercises for a ${langName} language learner at ${aiDifficulty} level.
@@ -321,6 +323,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         [langCode]: s[langCode],
         uk: s.uk || (langCode === 'uk' ? s[langCode] : ''),
         ru: s.ru || (langCode === 'ru' ? s[langCode] : ''),
+        de: s.de || (langCode === 'de' ? s[langCode] : ''),
         words: s.words,
         distractors: s.distractors || [],
         validOrders: s.validOrders || [s.words],

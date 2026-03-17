@@ -1,0 +1,235 @@
+{
+  "lessonId": "comparative-superlative",
+  "nameEn": "Comparative and Superlative",
+  "nameDe": "Komparativ und Superlativ",
+  "icon": "📊",
+  "tier": "B1",
+  "prerequisites": ["adjective-endings"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "regular-comparatives",
+      "title": "Regular Comparatives",
+      "explanation": "To form the comparative in German, add -er to the adjective: schnell → schneller (fast → faster), klein → kleiner (small → smaller), billig → billiger (cheap → cheaper). This is similar to English -er comparatives. When used predicatively (after sein, werden, etc.), no additional ending is needed: 'Er ist schneller.' When used attributively (before a noun), the comparative adjective also takes the normal adjective endings: 'ein schnelleres Auto' (a faster car). To make comparisons, use 'als' (than): 'Er ist größer als ich.' To say 'as ... as', use 'so ... wie': 'Er ist so groß wie ich.'",
+      "tip": "German comparatives are straightforward — always add -er. Unlike English, there's no 'more + adjective' construction for most adjectives (no 'mehr interessant'). Just add -er: 'interessanter'. Use 'als' for 'than' and 'so...wie' for 'as...as'.",
+      "examples": [
+        { "de": "Das Fahrrad ist billiger als das Auto.", "en": "The bicycle is cheaper than the car.", "highlight": "billiger als" },
+        { "de": "Sie ist schneller als ihr Bruder.", "en": "She is faster than her brother.", "highlight": "schneller als" },
+        { "de": "Das neue Haus ist größer.", "en": "The new house is bigger.", "highlight": "größer" },
+        { "de": "Deutsch ist interessanter als ich dachte.", "en": "German is more interesting than I thought.", "highlight": "interessanter als" },
+        { "de": "Er ist so alt wie mein Vater.", "en": "He is as old as my father.", "highlight": "so alt wie" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative of 'schnell' (fast)?",
+          "options": ["mehr schnell", "schneller", "schnellst", "am schnellen"],
+          "correctIndex": 1,
+          "explanation": "Add -er to form the comparative: 'schnell' → 'schneller'. There is no 'mehr + adjective' for regular German comparatives."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Buch ist ___ als der Film. (The book is more interesting than the film.)",
+          "acceptedAnswers": ["interessanter"],
+          "hint": "Add -er to 'interessant'. No 'mehr' needed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Mein Auto ist ___ als deins. (My car is newer than yours.)",
+          "options": ["neuer", "mehr neu", "am neuen", "neuest"],
+          "correctIndex": 0,
+          "explanation": "'neu' → 'neuer' (newer). Simple -er suffix."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er arbeitet ___ als seine Kollegen. (He works harder than his colleagues.)",
+          "acceptedAnswers": ["härter"],
+          "hint": "'hart' → add -er. This is a regular comparative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'as ... as'?",
+          "options": [
+            "Sie ist als groß wie er.",
+            "Sie ist so groß als er.",
+            "Sie ist so groß wie er.",
+            "Sie ist mehr groß wie er."
+          ],
+          "correctIndex": 2,
+          "explanation": "'so ... wie' means 'as ... as' in German. 'als' is for 'than' (with comparatives). So 'Sie ist so groß wie er' is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das neue Restaurant ist ___ und ___ als das alte. (cheaper and better)",
+          "acceptedAnswers": ["billiger und besser", "billiger ... besser"],
+          "hint": "Two comparatives coordinated with 'und'. 'billig' → billiger; 'gut' → besser (irregular)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the phrase 'ein schnelleres Auto', why does 'schneller' have an extra -es?",
+          "options": [
+            "Because it's a comparative, comparatives always add -es.",
+            "Because it's used attributively before a neuter noun and takes an adjective ending.",
+            "Because 'Auto' is plural.",
+            "It's a mistake — it should be 'schneller Auto'."
+          ],
+          "correctIndex": 1,
+          "explanation": "When the comparative is used attributively (before a noun), it still needs adjective endings. 'Auto' is neuter, indefinite → strong ending -es. So 'ein schnelleres Auto' is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Heute ist es ___ als gestern. (Today it is warmer than yesterday.)",
+          "acceptedAnswers": ["wärmer"],
+          "hint": "'warm' → 'wärmer'. This adds an umlaut too — covered in the next section!"
+        }
+      ]
+    },
+    {
+      "sectionId": "umlaut-comparatives",
+      "title": "Comparatives with Umlaut",
+      "explanation": "Many common one-syllable adjectives add an umlaut (Umlaut) in the comparative and superlative. These must be memorized as they are not predictable: alt → älter (old → older), jung → jünger (young → younger), warm → wärmer (warm → warmer), kalt → kälter (cold → colder), lang → länger (long → longer), kurz → kürzer (short → shorter), groß → größer (big → bigger), stark → stärker (strong → stronger), schwach → schwächer (weak → weaker), arm → ärmer (poor → poorer), krank → kränker (sick → sicker), klug → klüger (smart → smarter). Not all short adjectives umlaut: 'rund' → 'runder' (no umlaut), 'schlank' → 'schlanker' (no umlaut).",
+      "tip": "The most common umlaut comparatives are the ones you'll use most: alt/älter, jung/jünger, groß/größer, warm/wärmer, kalt/kälter, lang/länger, kurz/kürzer, klug/klüger. Make flashcards for these! If unsure whether a short adjective umlauts, check — not all do.",
+      "examples": [
+        { "de": "Mein Großvater ist älter als meine Großmutter.", "en": "My grandfather is older than my grandmother.", "highlight": "älter" },
+        { "de": "Im Sommer ist es wärmer als im Winter.", "en": "In summer it is warmer than in winter.", "highlight": "wärmer" },
+        { "de": "Der neue Film ist länger als der alte.", "en": "The new film is longer than the old one.", "highlight": "länger" },
+        { "de": "Kinder sind jünger als ihre Eltern.", "en": "Children are younger than their parents.", "highlight": "jünger" },
+        { "de": "Sie ist klüger als ich dachte.", "en": "She is smarter than I thought.", "highlight": "klüger" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative of 'alt' (old)?",
+          "options": ["alter", "älter", "altes", "mehr alt"],
+          "correctIndex": 1,
+          "explanation": "'alt' → 'älter' — the vowel 'a' gains an umlaut to become 'ä' in the comparative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Im Winter ist es ___ als im Herbst. (In winter it is colder than in autumn.)",
+          "acceptedAnswers": ["kälter"],
+          "hint": "'kalt' adds an umlaut in the comparative."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each adjective to its comparative form:",
+          "pairs": [
+            { "left": "jung", "right": "jünger" },
+            { "left": "groß", "right": "größer" },
+            { "left": "kurz", "right": "kürzer" },
+            { "left": "stark", "right": "stärker" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Mein Bruder ist ___ als ich. (My brother is stronger than me.)",
+          "options": ["starker", "stärker", "stärke", "mehr stark"],
+          "correctIndex": 1,
+          "explanation": "'stark' → 'stärker' (umlaut on 'a'). The comparative adds -er and umlauts the vowel."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Der Sommer ist ___ als der Frühling. (Summer is warmer than spring.)",
+          "acceptedAnswers": ["wärmer"],
+          "hint": "'warm' → add -er and umlaut."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these comparatives is IRREGULAR (not just -er with optional umlaut)?",
+          "options": ["älter", "größer", "besser", "kälter"],
+          "correctIndex": 2,
+          "explanation": "'besser' is the comparative of 'gut' (good → better) — this is completely irregular, not just an umlaut. 'gut' does not become 'guter'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Meine neue Tasche ist ___ als die alte. (My new bag is shorter/smaller — use 'kurz')",
+          "acceptedAnswers": ["kürzer"],
+          "hint": "'kurz' → add -er and umlaut the 'u'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Sie ist ___ als ihre Schwester. (She is smarter than her sister.) — 'klug'",
+          "options": ["kluger", "klüger", "mehr klug", "klugst"],
+          "correctIndex": 1,
+          "explanation": "'klug' → 'klüger' (umlaut on 'u'). This follows the pattern of common one-syllable adjectives."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlatives",
+      "title": "Superlatives",
+      "explanation": "German has two superlative forms. PREDICATE superlative (used after sein/werden): 'am + adjective + -sten'. Examples: schnell → am schnellsten, groß → am größten, alt → am ältesten. If the stem ends in -t, -d, -s, -ß, -z, or -sch, add -esten instead of -sten: alt → am ältesten, kalt → am kältesten. ATTRIBUTIVE superlative (before a noun): use der/die/das + adjective + -ste (with normal adjective endings): der schnellste Läufer, die größte Stadt, das älteste Gebäude. Irregular superlatives: gut → am besten/der beste, viel → am meisten/die meisten, gern → am liebsten.",
+      "tip": "Predicate: am + stem + (-e)sten. Attributive: der/die/das + stem + (-e)st + adjective ending. Add -e- before -sten when the stem ends in t, d, s, ß, z: alt → am ältESTen (not 'am ältsten'). Key irregulars: gut/besser/am besten, viel/mehr/am meisten, gern/lieber/am liebsten.",
+      "examples": [
+        { "de": "Er ist am schnellsten.", "en": "He is the fastest. (predicate superlative)", "highlight": "am schnellsten" },
+        { "de": "Sie ist die klügste Studentin.", "en": "She is the smartest student. (attributive superlative)", "highlight": "die klügste" },
+        { "de": "Das ist das größte Gebäude der Stadt.", "en": "That is the tallest building in the city.", "highlight": "das größte" },
+        { "de": "Wer ist am ältesten?", "en": "Who is the oldest? (stem ends in -t, so -esten)", "highlight": "am ältesten" },
+        { "de": "Das schmeckt am besten!", "en": "That tastes the best! (irregular: gut → am besten)", "highlight": "am besten" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the predicate superlative of 'schnell'?",
+          "options": ["am schnellste", "am schnellsten", "der schnellste", "schnellst"],
+          "correctIndex": 1,
+          "explanation": "Predicate superlative: 'am' + adjective + '-sten'. 'schnell' → 'am schnellsten'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er läuft ___. (He runs the fastest.) [schnell]",
+          "acceptedAnswers": ["am schnellsten"],
+          "hint": "Predicate superlative — use 'am ... -sten'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct attributive superlative? 'She is the most intelligent student.'",
+          "options": [
+            "Sie ist am intelligentsten Studentin.",
+            "Sie ist die intelligenteste Studentin.",
+            "Sie ist die intelligentste Studentin.",
+            "Sie ist die intelligenten Studentin."
+          ],
+          "correctIndex": 2,
+          "explanation": "Attributive superlative: die + stem + '-st' + adjective ending. 'intelligent' → 'die intelligentste Studentin'. Note: -e- is not needed here as the stem doesn't end in t/d/s etc."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das ist ___ Haus in der Straße. (That is the oldest house on the street.) [alt, neuter]",
+          "acceptedAnswers": ["das älteste"],
+          "hint": "Attributive superlative, neuter noun: das + adj + -ste (+ -e- because stem ends in -t)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each irregular superlative to its base adjective:",
+          "pairs": [
+            { "left": "am besten", "right": "gut (good)" },
+            { "left": "am meisten", "right": "viel (much/many)" },
+            { "left": "am liebsten", "right": "gern (gladly)" },
+            { "left": "am höchsten", "right": "hoch (high)" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Dieser Film ist am ___. (This film is the best.)",
+          "options": ["gutsten", "gutest", "besten", "gütigsten"],
+          "correctIndex": 2,
+          "explanation": "'gut' is completely irregular: comparative 'besser', superlative 'am besten'. 'gutsten' does not exist."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie singt ___. (She sings the best / most beautifully.) [gut]",
+          "acceptedAnswers": ["am besten"],
+          "hint": "Irregular predicate superlative of 'gut'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which superlative correctly handles the -t stem? (alt = old)",
+          "options": ["am altsten", "am ältsten", "am ältesten", "am ältste"],
+          "correctIndex": 2,
+          "explanation": "When the adjective stem ends in -t (or -d, -s, -ß, -z), add -esten not -sten. 'alt' → 'am ältesten'."
+        }
+      ]
+    }
+  ]
+}

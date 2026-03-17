@@ -1,0 +1,232 @@
+{
+  "lessonId": "genitive-case",
+  "nameEn": "The Genitive Case",
+  "nameDe": "Der Genitiv",
+  "icon": "🔑",
+  "tier": "B2",
+  "prerequisites": ["dative-case", "accusative-case"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "genitive-articles",
+      "title": "Genitive Articles and Noun Endings",
+      "explanation": "The genitive case expresses possession or association, equivalent to English 'of' or the possessive apostrophe-s. Article changes in genitive: masculine → des (+ -s/-es on noun), feminine → der (noun unchanged), neuter → des (+ -s/-es on noun), plural → der (noun unchanged). Example: 'das Buch des Mannes' (the man's book), 'das Haus der Frau' (the woman's house), 'das Spielzeug des Kindes' (the child's toy). Masculine and neuter nouns add -s if they end in -e, -en, -er, -el, or have two or more syllables; they add -es if they are monosyllabic (des Mannes, des Kindes). Proper names simply add -s without apostrophe: Marias Buch (Maria's book), Deutschlands Hauptstadt (Germany's capital).",
+      "tip": "Remember: Masculine and Neuter get 'des' + -s/-es on the noun. Feminine and Plural just get 'der' (no change to noun). A helpful phrase: 'des Vaters, der Mutter, des Kindes, der Eltern' — one of each gender. Proper names: just add -s (Annas Tasche).",
+      "examples": [
+        { "de": "das Auto meines Vaters", "en": "my father's car (masc: meines + -s)", "highlight": "meines Vaters" },
+        { "de": "die Tasche meiner Mutter", "en": "my mother's bag (fem: meiner, no change)", "highlight": "meiner Mutter" },
+        { "de": "der Name des Landes", "en": "the name of the country (neut: des + -es)", "highlight": "des Landes" },
+        { "de": "die Rechte der Kinder", "en": "the rights of the children (plural: der)", "highlight": "der Kinder" },
+        { "de": "Annas Buch liegt auf dem Tisch.", "en": "Anna's book is on the table. (proper name + -s)", "highlight": "Annas" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct genitive article for a masculine noun?",
+          "options": ["der", "die", "des", "dem"],
+          "correctIndex": 2,
+          "explanation": "Masculine nouns use 'des' in the genitive. The noun also typically adds -s or -es."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "das Haus ___ Frau (the woman's house — feminine genitive)",
+          "acceptedAnswers": ["der"],
+          "hint": "Feminine genitive article — the noun 'Frau' doesn't change."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each gender/number to its genitive definite article:",
+          "pairs": [
+            { "left": "masculine (der Mann)", "right": "des Mannes" },
+            { "left": "feminine (die Frau)", "right": "der Frau" },
+            { "left": "neuter (das Kind)", "right": "des Kindes" },
+            { "left": "plural (die Männer)", "right": "der Männer" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Das ist das Auto ___ Bruders. (That is my brother's car — masc.)",
+          "options": ["mein", "meinen", "meines", "meiner"],
+          "correctIndex": 2,
+          "explanation": "'Bruder' is masculine. Genitive masculine possessive: 'meines'. The noun also adds -s: 'des/meines Bruders'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "der Titel ___ Buches (the title of the book — neuter)",
+          "acceptedAnswers": ["des"],
+          "hint": "Neuter genitive article — same as masculine: 'des'. Noun adds -es."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which noun ending is CORRECT in the genitive? 'Das ist der Hund ___.'",
+          "options": ["des Nachbars", "des Nachbares", "des Nachbarn", "der Nachbar"],
+          "correctIndex": 0,
+          "explanation": "'Nachbar' (neighbor, masculine) adds -s in the genitive: 'des Nachbars'. Short nouns that end in a consonant can take either -s or -es, but -s is more common for longer words."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Deutschlands Hauptstadt ist Berlin.",
+          "acceptedAnswers": ["Deutschlands"],
+          "hint": "This sentence is already complete — proper names take -s directly (no article). Rephrase: 'Germany's capital is Berlin.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'das Ende des Films', what case is 'des Films' in?",
+          "options": ["Nominative", "Accusative", "Dative", "Genitive"],
+          "correctIndex": 3,
+          "explanation": "'des Films' = the film's ending / the end of the film. 'des' + noun + -s = genitive masculine/neuter."
+        }
+      ]
+    },
+    {
+      "sectionId": "genitive-prepositions",
+      "title": "Genitive Prepositions",
+      "explanation": "Several common prepositions always require the genitive case: wegen (because of / due to), trotz (despite / in spite of), während (during), statt / anstatt (instead of), innerhalb (inside / within), außerhalb (outside of), oberhalb (above), unterhalb (below), diesseits (on this side of), jenseits (on the other side of). Examples: 'wegen des Wetters' (because of the weather), 'trotz des Regens' (despite the rain), 'während der Ferien' (during the holidays). In informal spoken German, 'wegen' and 'trotz' are increasingly used with dative — but use genitive in formal writing.",
+      "tip": "The four most important genitive prepositions to master: wegen, trotz, während, statt. Remember them as a group. In formal/written German always use genitive with these. A useful mnemonic: 'Wegen trotzigem Wetter während statt' — all four, all genitive.",
+      "examples": [
+        { "de": "Wegen des Sturms fällt der Unterricht aus.", "en": "The lesson is cancelled because of the storm.", "highlight": "wegen des Sturms" },
+        { "de": "Trotz des Regens spielen die Kinder draußen.", "en": "Despite the rain, the children play outside.", "highlight": "trotz des Regens" },
+        { "de": "Während der Prüfung darf man nicht sprechen.", "en": "During the exam, one may not speak.", "highlight": "während der Prüfung" },
+        { "de": "Statt eines Kuchens backt sie Plätzchen.", "en": "Instead of a cake, she bakes cookies.", "highlight": "statt eines Kuchens" },
+        { "de": "Er arbeitet außerhalb der Stadt.", "en": "He works outside the city.", "highlight": "außerhalb der Stadt" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition takes the genitive case?",
+          "options": ["mit", "für", "trotz", "nach"],
+          "correctIndex": 2,
+          "explanation": "'trotz' (despite) takes the genitive case. 'mit' and 'nach' take dative; 'für' takes accusative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ der Kälte geht er jeden Tag joggen. (Despite the cold, he goes jogging every day.)",
+          "acceptedAnswers": ["trotz"],
+          "hint": "'despite' — a genitive preposition."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ der Ferien bleibt die Schule geschlossen. (During the holidays, the school stays closed.)",
+          "options": ["Wegen", "Trotz", "Während", "Statt"],
+          "correctIndex": 2,
+          "explanation": "'während' means 'during' and takes genitive. 'der Ferien' = genitive plural (feminine nouns in genitive plural use 'der')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wegen ___ Wetters haben wir den Ausflug abgesagt. (Because of the weather — neuter gen.)",
+          "acceptedAnswers": ["des"],
+          "hint": "'Wetter' is neuter. Genitive neuter article = 'des'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each genitive preposition to its meaning:",
+          "pairs": [
+            { "left": "wegen", "right": "because of / due to" },
+            { "left": "trotz", "right": "despite / in spite of" },
+            { "left": "während", "right": "during" },
+            { "left": "statt / anstatt", "right": "instead of" }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Statt ___ Busses nehme ich das Fahrrad. (Instead of the bus, I take the bike — masc.)",
+          "acceptedAnswers": ["des"],
+          "hint": "'Bus' is masculine. Genitive masculine article = 'des'. (Noun adds -ses: des Busses)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Er kommt ___ des Lärms nicht schlafen. (He can't sleep because of the noise.)",
+          "options": ["trotz", "wegen", "während", "statt"],
+          "correctIndex": 1,
+          "explanation": "'wegen' = because of / due to. 'des Lärms' = genitive masculine (Lärm is masculine)."
+        }
+      ]
+    },
+    {
+      "sectionId": "genitive-vs-von",
+      "title": "Genitive in Writing vs. von + Dative in Speech",
+      "explanation": "In formal written German, the genitive is the standard way to express possession and relationships: 'das Haus des Lehrers' (the teacher's house). However, in everyday spoken German, the genitive is increasingly replaced by 'von + dative': 'das Haus von dem Lehrer' / 'das Haus vom Lehrer'. This is especially common with proper names and indefinite references. Both are correct, but their register differs: genitive = formal/written; von + dative = informal/spoken. Important: always use genitive in writing and formal contexts. Learn to recognize both, but produce the genitive actively.",
+      "tip": "Written/formal German → use genitive. Spoken/informal German → 'von + dative' is common and accepted. In exams and formal texts, genitive is preferred. Note that 'von dem' contracts to 'vom' in speech.",
+      "examples": [
+        { "de": "das Auto des Direktors (formal)", "en": "the director's car (genitive — written)", "highlight": "des Direktors" },
+        { "de": "das Auto vom Direktor (spoken)", "en": "the director's car (von + dative — spoken)", "highlight": "vom Direktor" },
+        { "de": "die Meinung der Mehrheit (formal)", "en": "the opinion of the majority (genitive)", "highlight": "der Mehrheit" },
+        { "de": "die Meinung von der Mehrheit (informal)", "en": "the majority's opinion (von + dative)", "highlight": "von der Mehrheit" },
+        { "de": "die Ergebnisse der Studie", "en": "the results of the study (genitive — always preferred in academic writing)", "highlight": "der Studie" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is more appropriate for formal written German?",
+          "options": [
+            "Das ist das Buch von meinem Bruder.",
+            "Das ist das Buch meines Bruders.",
+            "Das ist das Buch von meinen Bruder.",
+            "Das ist das Buch von meinem Bruders."
+          ],
+          "correctIndex": 1,
+          "explanation": "'meines Bruders' uses the genitive case — preferred in formal writing. 'Das Buch von meinem Bruder' is the spoken/informal equivalent."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Convert to genitive: 'das Fahrrad von dem Kind' → 'das Fahrrad ___ Kindes'",
+          "acceptedAnswers": ["des"],
+          "hint": "Neuter genitive article = 'des'. The noun also adds -es."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In which context would you use 'von + dative' instead of genitive?",
+          "options": [
+            "A formal academic paper",
+            "A business letter",
+            "Casual conversation with friends",
+            "A legal document"
+          ],
+          "correctIndex": 2,
+          "explanation": "'von + dative' is characteristic of informal spoken German. In formal writing (academic papers, business letters, legal documents), use the genitive."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Convert to spoken form: 'das Ende des Films' → 'das Ende ___ Film'",
+          "acceptedAnswers": ["vom", "von dem"],
+          "hint": "Replace genitive 'des' with 'von + dative'. 'von dem' contracts to 'vom'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Der Titel ___ Romans hat mich neugierig gemacht. (The title of the novel made me curious.)",
+          "options": ["von dem", "des", "der", "dem"],
+          "correctIndex": 1,
+          "explanation": "'Roman' (novel) is masculine. Genitive masculine = 'des'. 'des Romans' (novel is monosyllabic base + -s). This is formal writing context."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Qualität ___ Produktes ist sehr hoch. (The quality of the product is very high.)",
+          "acceptedAnswers": ["des"],
+          "hint": "'Produkt' is neuter. Formal genitive: 'des Produktes' (or 'des Produkts')."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each genitive phrase to its informal spoken equivalent:",
+          "pairs": [
+            { "left": "das Haus des Mannes", "right": "das Haus vom Mann" },
+            { "left": "die Idee der Studentin", "right": "die Idee von der Studentin" },
+            { "left": "der Hund meines Vaters", "right": "der Hund von meinem Vater" },
+            { "left": "das Auto der Familie", "right": "das Auto von der Familie" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which statement about the genitive is TRUE?",
+          "options": [
+            "The genitive is no longer used in modern German.",
+            "The genitive is only used with proper names.",
+            "The genitive is preferred in formal writing; von + dative is common in speech.",
+            "The genitive only applies to masculine nouns."
+          ],
+          "correctIndex": 2,
+          "explanation": "The genitive is alive in formal/written German and is required in academic, business, and literary contexts. In casual speech, von + dative is common but the genitive is not extinct."
+        }
+      ]
+    }
+  ]
+}

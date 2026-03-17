@@ -25,7 +25,7 @@ function buildItems(langCode, difficulty, vocabularyWords = null, cefrFilter = n
     }
   }
 
-  const targetField = 'uk';
+  const targetField = langCode; // matches the word field name ('uk', 'ru', or 'de') — all also have .uk as alias
 
   if (difficulty === 'words') {
     const singles = all.filter(w => w[targetField] && !w[targetField].includes(' '));
@@ -90,7 +90,7 @@ const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 // --- Component ---
 
 export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
 
   // Phase
   const [phase, setPhase] = useState('picker'); // picker, playing, complete

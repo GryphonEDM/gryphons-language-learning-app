@@ -1,0 +1,248 @@
+{
+  "lessonId": "dative-case",
+  "nameEn": "The Dative Case",
+  "nameDe": "Der Dativ",
+  "icon": "🎁",
+  "tier": "B1",
+  "prerequisites": ["accusative-case", "nominative-case"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "dative-indirect-object",
+      "title": "Dative as the Indirect Object",
+      "explanation": "The dative case marks the INDIRECT OBJECT — the person or thing that receives the direct object. In the sentence 'Ich gebe dem Mann das Buch' (I give the man the book), 'dem Mann' is the indirect object (dative) because he receives the book, and 'das Buch' is the direct object (accusative). Common verbs that take a dative indirect object include: geben (to give), zeigen (to show), schicken (to send), erklären (to explain), helfen (to help), danken (to thank), antworten (to answer), gehören (to belong to), glauben (to believe).",
+      "tip": "Ask 'to whom?' or 'for whom?' to find the dative (indirect) object. Ask 'what?' or 'whom?' to find the accusative (direct) object. Some verbs like 'helfen' and 'danken' ONLY take dative, with no accusative object at all.",
+      "examples": [
+        { "de": "Ich gebe dir das Buch.", "en": "I give you the book. (dir = dative 'you')", "highlight": "dir" },
+        { "de": "Sie schickt ihrer Mutter eine E-Mail.", "en": "She sends her mother an email.", "highlight": "ihrer Mutter" },
+        { "de": "Er erklärt dem Kind die Aufgabe.", "en": "He explains the task to the child.", "highlight": "dem Kind" },
+        { "de": "Ich helfe meinem Bruder.", "en": "I help my brother. (helfen always takes dative)", "highlight": "meinem Bruder" },
+        { "de": "Das Buch gehört der Lehrerin.", "en": "The book belongs to the teacher.", "highlight": "der Lehrerin" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'Ich zeige meiner Schwester das Foto', which word is in the dative case?",
+          "options": ["Ich", "meiner Schwester", "das Foto", "zeige"],
+          "correctIndex": 1,
+          "explanation": "'meiner Schwester' is the indirect object (to whom I show the photo), so it is in dative. 'das Foto' is the direct object (accusative)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich danke ___ Lehrerin. (I thank the teacher — 'danken' takes only dative)",
+          "acceptedAnswers": ["der", "meiner", "dieser", "einer"],
+          "hint": "'Lehrerin' is feminine — what is the dative feminine article?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb requires a dative object (not accusative)?",
+          "options": ["sehen", "kaufen", "helfen", "lesen"],
+          "correctIndex": 2,
+          "explanation": "'helfen' (to help) always takes a dative object: 'Ich helfe dir' (not 'dich'). The others take accusative objects."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er gibt ___ Kind ein Spielzeug. (He gives the child a toy.)",
+          "acceptedAnswers": ["dem"],
+          "hint": "'Kind' is neuter. In dative, neuter articles become 'dem'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Sie schreibt ___ einen Brief. (She writes him a letter.)",
+          "options": ["er", "ihn", "ihm", "sein"],
+          "correctIndex": 2,
+          "explanation": "'ihm' is the dative form of 'er' (he/him). 'ihn' is accusative. She writes a letter TO him = dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Auto gehört ___ Nachbarn. (The car belongs to the neighbor — masc.)",
+          "acceptedAnswers": ["dem", "meinem", "unserem", "seinem"],
+          "hint": "'Nachbar' is masculine. In dative, masculine articles become 'dem'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Identify the indirect object: 'Wir kaufen unserer Tochter ein Fahrrad.'",
+          "options": ["Wir", "unserer Tochter", "ein Fahrrad", "kaufen"],
+          "correctIndex": 1,
+          "explanation": "'unserer Tochter' answers 'for whom?' — she receives the bicycle. This is the indirect object in dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Kannst du ___ bitte helfen? (Can you please help me?)",
+          "acceptedAnswers": ["mir"],
+          "hint": "'help me' — 'helfen' takes dative. The dative of 'ich' is...?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is grammatically correct?",
+          "options": [
+            "Ich glaube ihn nicht.",
+            "Ich glaube ihm nicht.",
+            "Ich glaube sein nicht.",
+            "Ich glaube den Mann nicht."
+          ],
+          "correctIndex": 1,
+          "explanation": "'glauben' (to believe a person) takes dative. 'ihm' is correct. Note: 'Ich glaube, dass...' takes a clause, but when believing a person directly, dative is used."
+        }
+      ]
+    },
+    {
+      "sectionId": "dative-articles",
+      "title": "Dative Article Changes",
+      "explanation": "In the dative case, article endings change for all genders. Definite articles: der Mann → dem Mann (masc), die Frau → der Frau (fem), das Kind → dem Kind (neut), die Kinder → den Kindern (plural, noun adds -n if it doesn't already end in -n). Indefinite articles: ein Mann → einem Mann, eine Frau → einer Frau, ein Kind → einem Kind. Possessive adjectives follow the same pattern as indefinite articles: mein → meinem (masc/neut), meine → meiner (fem), meine → meinen (plural).",
+      "tip": "A quick summary: Masc and Neuter both get 'dem' (definite) or '-em' (indefinite). Feminine gets 'der' (definite) or '-er' (indefinite). Plural gets 'den' + noun gets an extra -n (definite) or '-en' (indefinite).",
+      "examples": [
+        { "de": "Ich helfe dem alten Mann.", "en": "I help the old man. (masc → dem)", "highlight": "dem" },
+        { "de": "Ich helfe der jungen Frau.", "en": "I help the young woman. (fem → der)", "highlight": "der" },
+        { "de": "Ich helfe dem kleinen Kind.", "en": "I help the small child. (neut → dem)", "highlight": "dem" },
+        { "de": "Ich helfe den Kindern.", "en": "I help the children. (plural → den + -n)", "highlight": "den Kindern" },
+        { "de": "Er gibt seinem Freund das Geld.", "en": "He gives his friend the money. (masc possessive → -em)", "highlight": "seinem" }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each nominative form to its dative equivalent:",
+          "pairs": [
+            { "left": "der Mann (masc)", "right": "dem Mann" },
+            { "left": "die Frau (fem)", "right": "der Frau" },
+            { "left": "das Kind (neut)", "right": "dem Kind" },
+            { "left": "die Männer (plural)", "right": "den Männern" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich kaufe ___ Mutter Blumen. (I buy my mother flowers.)",
+          "options": ["meine", "meiner", "meinem", "meinen"],
+          "correctIndex": 1,
+          "explanation": "'Mutter' is feminine. In dative, feminine possessive adjectives take the ending '-er': 'meiner Mutter'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er zeigt ___ Freunden die Stadt. (He shows his friends the city — plural)",
+          "acceptedAnswers": ["seinen", "den", "unseren"],
+          "hint": "Plural dative — the article or possessive adjective takes '-en' ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Was ist richtig? (What is correct?) — She gives her sister a gift.",
+          "options": [
+            "Sie gibt ihrer Schwester ein Geschenk.",
+            "Sie gibt ihre Schwester ein Geschenk.",
+            "Sie gibt ihrem Schwester ein Geschenk.",
+            "Sie gibt ihren Schwester ein Geschenk."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Schwester' is feminine. The dative feminine possessive form is 'ihrer'. So 'ihrer Schwester' is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich schreibe ___ Lehrer eine E-Mail. (I write my teacher an email — masc.)",
+          "acceptedAnswers": ["dem", "meinem", "einem", "unserem"],
+          "hint": "Masculine dative article or possessive ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In dative plural, what happens to nouns?",
+          "options": [
+            "They add -e",
+            "They add -n (if not already ending in -n or -s)",
+            "They add -er",
+            "They don't change"
+          ],
+          "correctIndex": 1,
+          "explanation": "In dative plural, nouns add -n to their plural form if they don't already end in -n or -s. E.g., 'die Kinder' → 'den Kindern', 'die Frauen' → 'den Frauen' (no change, already ends in -n)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir danken ___ Eltern. (We thank our parents — plural)",
+          "acceptedAnswers": ["unseren", "den", "meinen", "euren", "ihren"],
+          "hint": "Dative plural — possessive or definite article takes '-en' ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct dative article: Das Geschenk gehört ___ kleinen Mädchen.",
+          "options": ["der", "die", "dem", "den"],
+          "correctIndex": 2,
+          "explanation": "'Mädchen' is neuter (das Mädchen). In dative, neuter uses 'dem'. So 'dem kleinen Mädchen' is correct."
+        }
+      ]
+    },
+    {
+      "sectionId": "dative-pronouns",
+      "title": "Dative Pronouns",
+      "explanation": "Personal pronouns also change form in the dative case. The full paradigm: ich → mir (me), du → dir (you), er → ihm (him), sie → ihr (her), es → ihm (it), wir → uns (us), ihr → euch (you all), sie/Sie → ihnen/Ihnen (them/You formal). These replace dative nouns in sentences: 'Ich gebe dem Mann das Buch' becomes 'Ich gebe ihm das Buch'. Note that 'uns' and 'euch' are the same in accusative and dative.",
+      "tip": "Notice the pattern: mir/dir rhyme (1st and 2nd person singular). ihm/ihr/ihm follow gender. uns/euch are the same as accusative. Ihnen (formal Sie) is always capitalized.",
+      "examples": [
+        { "de": "Er gibt mir das Buch.", "en": "He gives me the book. (mir = dative of ich)", "highlight": "mir" },
+        { "de": "Ich helfe dir.", "en": "I help you. (dir = dative of du)", "highlight": "dir" },
+        { "de": "Sie schreibt ihm eine Nachricht.", "en": "She writes him a message. (ihm = dative of er)", "highlight": "ihm" },
+        { "de": "Wir kaufen ihr Blumen.", "en": "We buy her flowers. (ihr = dative of sie)", "highlight": "ihr" },
+        { "de": "Der Lehrer erklärt uns die Grammatik.", "en": "The teacher explains the grammar to us. (uns = dative of wir)", "highlight": "uns" }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each nominative pronoun to its dative form:",
+          "pairs": [
+            { "left": "ich", "right": "mir" },
+            { "left": "du", "right": "dir" },
+            { "left": "er", "right": "ihm" },
+            { "left": "sie (she)", "right": "ihr" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Kannst du ___ helfen? (Can you help me?)",
+          "options": ["mich", "mir", "ich", "mein"],
+          "correctIndex": 1,
+          "explanation": "'helfen' takes dative. The dative of 'ich' is 'mir'. 'mich' is accusative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das schmeckt ___ sehr gut! (That tastes really good to me!)",
+          "acceptedAnswers": ["mir"],
+          "hint": "The dative of 'ich' — many taste/feeling verbs take dative of the experiencer."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich zeige ___ die Fotos. (I show you [plural/informal] the photos.)",
+          "options": ["ihr", "Ihnen", "euch", "uns"],
+          "correctIndex": 2,
+          "explanation": "'euch' is the dative of 'ihr' (you plural informal). 'Ihnen' is formal. 'ihr' is dative of 'sie' (she)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er schickt ___ eine E-Mail. (He sends her an email.)",
+          "acceptedAnswers": ["ihr"],
+          "hint": "Dative of 'sie' (she) — notice this is the same as the dative feminine article, but here it's a pronoun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Wie geht es ___? (How are you? — formal singular)",
+          "options": ["ihr", "dich", "euch", "Ihnen"],
+          "correctIndex": 3,
+          "explanation": "'Wie geht es Ihnen?' is the formal way to ask 'How are you?' 'Ihnen' is the dative of formal 'Sie'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Lehrerin erklärt ___ die Regel. (The teacher explains the rule to us.)",
+          "acceptedAnswers": ["uns"],
+          "hint": "Dative of 'wir' — same form as accusative for this pronoun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Das Fahrrad gehört ___. (The bicycle belongs to him.)",
+          "options": ["er", "ihn", "ihm", "sein"],
+          "correctIndex": 2,
+          "explanation": "'gehören' takes dative. 'ihm' is the dative of 'er'. 'ihn' is accusative, 'er' is nominative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich vertraue ___ vollkommen. (I trust you completely — singular informal)",
+          "acceptedAnswers": ["dir"],
+          "hint": "'vertrauen' takes dative. The dative of 'du' is...?"
+        }
+      ]
+    }
+  ]
+}

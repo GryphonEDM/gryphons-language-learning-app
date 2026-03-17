@@ -9,7 +9,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import ExerciseRenderer from './grammar/ExerciseRenderer.jsx';
 import { stopSpeaking } from '../../App.jsx';
 import { createAudioContext, playSound } from '../../utils/soundEffects.js';
-import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from '../../utils/encouragement.js';
+import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE } from '../../utils/encouragement.js';
 
 const TIER_INFO = {
   A1: { name: 'A1 Foundation', color: '#4ade80' },
@@ -19,7 +19,7 @@ const TIER_INFO = {
 };
 
 export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
 
   // Phases: picker, lesson, exercise, section-complete, complete, review
   const [phase, setPhase] = useState('picker');
@@ -54,8 +54,8 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     return audioCtxRef.current;
   };
 
-  const encouragements = langCode === 'ru' ? ENCOURAGEMENTS_RU : ENCOURAGEMENTS;
-  const mistakeMessages = langCode === 'ru' ? MISTAKE_MESSAGES_RU : MISTAKE_MESSAGES;
+  const encouragements = langCode === 'ru' ? ENCOURAGEMENTS_RU : langCode === 'de' ? ENCOURAGEMENTS_DE : ENCOURAGEMENTS;
+  const mistakeMessages = langCode === 'ru' ? MISTAKE_MESSAGES_RU : langCode === 'de' ? MISTAKE_MESSAGES_DE : MISTAKE_MESSAGES;
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
 
@@ -257,7 +257,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                         <h3 style={{ ...styles.lessonTitle, ...(unlocked ? {} : { color: 'rgba(255,255,255,0.3)' }) }}>
                           {lesson.nameEn}
                         </h3>
-                        <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : lesson.nameUk}</p>
+                        <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : langCode === 'de' ? lesson.nameDe : lesson.nameUk}</p>
                         <p style={styles.lessonMeta}>
                           {sectionsCompleted > 0 ? `${sectionsCompleted}/${lesson.sections.length} sections` : `${lesson.sections.length} sections`}
                           {lesson.estimatedMinutes ? ` · ~${lesson.estimatedMinutes} min` : ''}
@@ -392,7 +392,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             <div style={styles.examples}>
               <h4 style={styles.examplesTitle}>Examples:</h4>
               {currentSection.examples.map((ex, i) => {
-                const nativeText = ex.uk ?? ex.ru ?? '';
+                const nativeText = ex.de ?? ex.uk ?? ex.ru ?? '';
                 return (
                   <div key={i} style={styles.exampleRow}>
                     <div style={styles.exampleUk}>

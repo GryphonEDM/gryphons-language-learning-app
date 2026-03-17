@@ -9,7 +9,7 @@ import { useWordClick } from '../../hooks/useWordClick.js';
 import { WordToolbar, ClickableText } from '../shared/WordToolbar.jsx';
 
 export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is using a dictionary/translator tool to look up ${langName} words and phrases. Answer questions about meanings, usage, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [inputText, setInputText] = useState('');
@@ -146,7 +146,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
     setInputText(key);
   };
 
-  const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
+  const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
   const fromLabel = direction === 'en-uk' ? 'English' : langNative;
   const toLabel = direction === 'en-uk' ? langNative : 'English';
   const outputIsUkrainian = direction === 'en-uk';
@@ -200,7 +200,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
               disabled={isTranscribing}
               title={isListening ? 'Stop recording' : `Speak in ${direction === 'en-uk' ? 'English' : langName}`}
             >
-              {isTranscribing ? '...' : '🎤'} {direction === 'en-uk' ? 'EN' : (langCode === 'ru' ? 'RU' : 'UA')}
+              {isTranscribing ? '...' : '🎤'} {direction === 'en-uk' ? 'EN' : (langCode === 'ru' ? 'RU' : langCode === 'de' ? 'DE' : 'UA')}
             </button>
             {sttError && <span style={styles.sttError}>{sttError}</span>}
           </div>

@@ -3,6 +3,7 @@
   "nameEn": "Body Parts",
   "nameUk": "Частини тіла",
   "nameRu": "Части тела",
+  "nameDe": "Körper",
   "difficulty": "A1",
   "icon": "🧍",
   "totalWords": 17,
@@ -11,204 +12,255 @@
     {
       "uk": "голова",
       "ru": "голова",
+      "de": "Kopf",
       "en": "head",
       "phoneticUk": "holova",
       "phoneticRu": "golova",
+      "phoneticDe": "kopf",
       "examples": {
         "uk": ["Сьогодні у мене дуже болить голова.", "Він похитав головою і сказав «ні»."],
         "ru": ["у меня сильно болит голова сегодня", "он покачал головой в знак несогласия"],
+        "de": ["Heute habe ich starke Kopfschmerzen.", "Er schüttelte den Kopf und sagte \"nein\"."],
         "en": ["I have a really bad headache today.", "He shook his head and said \"no\"."]
       }
     },
     {
       "uk": "рука",
       "ru": "рука",
+      "de": "Hand",
       "en": "hand/arm",
       "phoneticUk": "ruka",
       "phoneticRu": "ruka",
+      "phoneticDe": "hant",
       "examples": {
         "uk": ["Дай мені руку, я допоможу тобі встати.", "Він зламав руку під час тренування."],
         "ru": ["подай мне руку и помоги встать", "он сломал руку на тренировке"],
+        "de": ["Gib mir deine Hand, ich helfe dir aufzustehen.", "Er hat sich beim Training den Arm gebrochen."],
         "en": ["Give me your hand, I'll help you up.", "He broke his arm during practice."]
       }
     },
     {
       "uk": "нога",
       "ru": "нога",
+      "de": "Bein",
       "en": "leg/foot",
       "phoneticUk": "noha",
       "phoneticRu": "noga",
+      "phoneticDe": "bine",
       "examples": {
         "uk": ["У нього болить нога після пробіжки.", "Вона поставила ногу на першу сходинку."],
         "ru": ["у него болит нога после пробежки", "она поставила ногу на первую ступеньку"],
+        "de": ["Sein Bein schmerzt nach dem Laufen.", "Sie stellte den Fuß auf die erste Stufe."],
         "en": ["His leg hurts after the run.", "She put her foot on the first step."]
       }
     },
     {
       "uk": "око",
       "ru": "глаз",
+      "de": "Auge",
       "en": "eye",
       "phoneticUk": "oko",
       "phoneticRu": "glaz",
+      "phoneticDe": "ow-guh",
       "examples": {
         "uk": ["У неї дуже гарні блакитні очі.", "Заплющ очі й загадай бажання."],
         "ru": ["у неё красивые голубые глаза", "закрой глаза и загадай желание"],
+        "de": ["Sie hat sehr schöne blaue Augen.", "Schließ die Augen und wünsch dir etwas."],
         "en": ["She has very beautiful blue eyes.", "Close your eyes and make a wish."]
       }
     },
     {
       "uk": "вухо",
       "ru": "ухо",
+      "de": "Ohr",
       "en": "ear",
       "phoneticUk": "vukho",
       "phoneticRu": "ukho",
+      "phoneticDe": "ohr",
       "examples": {
         "uk": ["Він притулив вухо до зачинених дверей.", "У собаки довгі м'які вуха."],
         "ru": ["он приложил ухо к закрытой двери", "у собаки длинные висячие уши"],
+        "de": ["Er legte das Ohr an die geschlossene Tür.", "Der Hund hat lange, weiche Ohren."],
         "en": ["He pressed his ear against the closed door.", "The dog has long, soft ears."]
       }
     },
     {
       "uk": "ніс",
       "ru": "нос",
+      "de": "Nase",
       "en": "nose",
       "phoneticUk": "nis",
       "phoneticRu": "nos",
+      "phoneticDe": "nah-zuh",
       "examples": {
         "uk": ["У клоуна смішний червоний ніс.", "На вулиці мороз щипає ніс і щоки."],
         "ru": ["у клоуна смешной красный нос", "на улице мороз щиплет нос и щёки"],
+        "de": ["Der Clown hat eine lustige rote Nase.", "Draußen zwickt der Frost die Nase und Wangen."],
         "en": ["The clown has a funny red nose.", "Outside, the frost nips your nose and cheeks."]
       }
     },
     {
       "uk": "рот",
       "ru": "рот",
+      "de": "Mund",
       "en": "mouth",
       "phoneticUk": "rot",
       "phoneticRu": "rot",
+      "phoneticDe": "moont",
       "examples": {
         "uk": ["Відкрий широко рот у лікаря.", "Дитина від подиву закрила рот рукою."],
         "ru": ["открой рот пошире у врача", "ребёнок закрыл рот рукой от удивления"],
+        "de": ["Öffne beim Arzt weit den Mund.", "Das Kind bedeckte vor Staunen den Mund mit der Hand."],
         "en": ["Open your mouth wide at the doctor's.", "The child covered her mouth in surprise."]
       }
     },
     {
       "uk": "зуб",
       "ru": "зуб",
+      "de": "Zahn",
       "en": "tooth",
       "phoneticUk": "zub",
       "phoneticRu": "zub",
+      "phoneticDe": "tsahn",
       "examples": {
         "uk": ["У мене болить зуб, треба йти до лікаря.", "Дитина втратила свій перший молочний зуб."],
         "ru": ["у меня болит зуб, нужно идти к врачу", "ребёнок потерял свой первый молочный зуб"],
+        "de": ["Mir tut ein Zahn weh, ich muss zum Zahnarzt.", "Das Kind hat seinen ersten Milchzahn verloren."],
         "en": ["I have a toothache, I need to see a dentist.", "The child lost her first baby tooth."]
       }
     },
     {
       "uk": "язик",
       "ru": "язык",
+      "de": "Zunge",
       "en": "tongue",
       "phoneticUk": "yazyk",
       "phoneticRu": "yazyk",
+      "phoneticDe": "tsoong-uh",
       "examples": {
         "uk": ["Покажи язик лікарю, будь ласка.", "Він прикусив язика під час їжі."],
         "ru": ["покажи язык врачу", "он прикусил язык во время еды"],
+        "de": ["Zeig dem Arzt bitte deine Zunge.", "Er hat sich beim Essen auf die Zunge gebissen."],
         "en": ["Show the doctor your tongue, please.", "He bit his tongue while eating."]
       }
     },
     {
       "uk": "шия",
       "ru": "шея",
+      "de": "Hals",
       "en": "neck",
       "phoneticUk": "shyya",
       "phoneticRu": "sheya",
+      "phoneticDe": "hals",
       "examples": {
         "uk": ["У жирафа дуже довга шия.", "У мене болить шия після сну."],
         "ru": ["у жирафа очень длинная шея", "у меня болит шея после сна"],
+        "de": ["Eine Giraffe hat einen sehr langen Hals.", "Mein Hals tut nach dem Schlafen weh."],
         "en": ["A giraffe has a very long neck.", "My neck hurts after sleeping."]
       }
     },
     {
       "uk": "плече",
       "ru": "плечо",
+      "de": "Schulter",
       "en": "shoulder",
       "phoneticUk": "pleche",
       "phoneticRu": "plecho",
+      "phoneticDe": "shool-ter",
       "examples": {
         "uk": ["Він поклав руку на плече друга.", "У спортсмена широкі міцні плечі."],
         "ru": ["он положил руку на плечо друга", "у спортсмена широкие крепкие плечи"],
+        "de": ["Er legte die Hand auf die Schulter seines Freundes.", "Der Sportler hat breite, kräftige Schultern."],
         "en": ["He placed his hand on his friend's shoulder.", "The athlete has broad, strong shoulders."]
       }
     },
     {
       "uk": "спина",
       "ru": "спина",
+      "de": "Rücken",
       "en": "back",
       "phoneticUk": "spyna",
       "phoneticRu": "spina",
+      "phoneticDe": "rew-ken",
       "examples": {
         "uk": ["У мене болить спина від довгого сидіння.", "Тримай спину рівно за столом."],
         "ru": ["у меня болит спина от долгого сидения", "держи спину прямо за столом"],
+        "de": ["Mein Rücken schmerzt vom langen Sitzen.", "Halte den Rücken gerade am Tisch."],
         "en": ["My back hurts from sitting too long.", "Keep your back straight at the table."]
       }
     },
     {
       "uk": "живіт",
       "ru": "живот",
+      "de": "Bauch",
       "en": "belly/stomach",
       "phoneticUk": "zhyvit",
       "phoneticRu": "zhivot",
+      "phoneticDe": "bowkh",
       "examples": {
         "uk": ["У мене болить живіт після обіду.", "Дитина лежить на животі й малює."],
         "ru": ["у меня болит живот после обеда", "ребёнок лежит на животе и рисует"],
+        "de": ["Mein Bauch tut nach dem Mittagessen weh.", "Das Kind liegt auf dem Bauch und malt."],
         "en": ["My stomach hurts after lunch.", "The child is lying on her belly and drawing."]
       }
     },
     {
       "uk": "серце",
       "ru": "сердце",
+      "de": "Herz",
       "en": "heart",
       "phoneticUk": "sertse",
       "phoneticRu": "serdtse",
+      "phoneticDe": "herts",
       "examples": {
         "uk": ["Серце б'ється швидко від хвилювання.", "У неї дуже добре й щире серце."],
         "ru": ["сердце бьётся быстро от волнения", "у неё очень доброе и отзывчивое сердце"],
+        "de": ["Das Herz schlägt vor Aufregung schnell.", "Sie hat ein sehr gutes und ehrliches Herz."],
         "en": ["The heart beats fast from excitement.", "She has a very kind and warm heart."]
       }
     },
     {
       "uk": "палець",
       "ru": "палец",
+      "de": "Finger",
       "en": "finger/toe",
       "phoneticUk": "palets",
       "phoneticRu": "palets",
+      "phoneticDe": "fing-er",
       "examples": {
         "uk": ["Вона випадково порізала палець ножем.", "На кожній руці по п'ять пальців."],
         "ru": ["она случайно порезала палец ножом", "на каждой руке по пять пальцев"],
+        "de": ["Sie hat sich versehentlich mit einem Messer in den Finger geschnitten.", "An jeder Hand hat man fünf Finger."],
         "en": ["She accidentally cut her finger with a knife.", "Each hand has five fingers."]
       }
     },
     {
       "uk": "коліно",
       "ru": "колено",
+      "de": "Knie",
       "en": "knee",
       "phoneticUk": "kolino",
       "phoneticRu": "koleno",
+      "phoneticDe": "k-nee",
       "examples": {
         "uk": ["Він упав і сильно вдарив коліно.", "Вода в річці була по коліно."],
         "ru": ["он упал и сильно ушиб колено", "вода в реке была по колено"],
+        "de": ["Er ist gefallen und hat sich das Knie stark gestoßen.", "Das Wasser im Fluss reichte bis zum Knie."],
         "en": ["He fell and badly hurt his knee.", "The water in the river was knee-deep."]
       }
     },
     {
       "uk": "волосся",
       "ru": "волосы",
+      "de": "Haar",
       "en": "hair",
       "phoneticUk": "volossya",
       "phoneticRu": "volosy",
+      "phoneticDe": "hahr",
       "examples": {
         "uk": ["У неї довге світле волосся.", "Вона розчісує волосся щоранку перед дзеркалом."],
         "ru": ["у неё длинные светлые волосы", "он расчёсывает волосы каждое утро перед зеркалом"],
+        "de": ["Sie hat langes, helles Haar.", "Sie kämmt ihr Haar jeden Morgen vor dem Spiegel."],
         "en": ["She has long, light-colored hair.", "She combs her hair every morning in front of the mirror."]
       }
     }

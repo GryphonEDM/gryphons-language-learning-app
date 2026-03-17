@@ -29,8 +29,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const [sessionUsedHints, setSessionUsedHints] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
-  const langNative = langCode === 'ru' ? 'Русский' : 'Українська';
+  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const dirLabel = direction === 'en-uk' ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
 

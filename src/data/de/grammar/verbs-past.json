@@ -1,0 +1,85 @@
+{
+  "lessonId": "verbs-past",
+  "nameEn": "Past Tense (Perfekt)",
+  "nameDe": "Das Perfekt",
+  "icon": "⏮️",
+  "tier": "A2",
+  "prerequisites": ["verbs-present", "cases-nominative-accusative"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "perfekt-intro",
+      "title": "The Perfekt Tense",
+      "explanation": "In spoken German and everyday writing, the main past tense is the Perfekt (present perfect). It is formed with an auxiliary verb (haben or sein) + the past participle (Partizip II). The auxiliary verb takes position 2 in the sentence, and the past participle goes to the END of the clause. Structure: Subject + haben/sein (conjugated) + ... + Partizip II. Example: 'Ich habe Kaffee getrunken.' (I drank / have drunk coffee.) 'Wir sind nach Berlin gefahren.' (We drove / have driven to Berlin.)",
+      "tip": "Perfekt formula: auxiliary (haben or sein) in position 2 + Partizip II at the END. The participle always goes last!",
+      "examples": [
+        { "de": "Ich habe Kaffee getrunken.", "en": "I drank coffee.", "highlight": "getrunken" },
+        { "de": "Wir haben ein Buch gelesen.", "en": "We read a book.", "highlight": "gelesen" },
+        { "de": "Sie ist nach Berlin gefahren.", "en": "She drove to Berlin.", "highlight": "gefahren" },
+        { "de": "Er hat gearbeitet.", "en": "He worked.", "highlight": "gearbeitet" },
+        { "de": "Wir sind gestern gegangen.", "en": "We went yesterday.", "highlight": "gegangen" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Where does the past participle (Partizip II) go in a Perfekt sentence?", "options": ["At the end of the clause", "In position 2", "After the subject"], "correctIndex": 0, "explanation": "In the Perfekt, the auxiliary (haben/sein) takes position 2, and the past participle goes to the end: 'Ich habe Kaffee getrunken.' — 'getrunken' is at the end." },
+        { "type": "multiple-choice", "prompt": "Which auxiliary verbs are used to form the Perfekt?", "options": ["haben or sein", "werden or sein", "haben or werden"], "correctIndex": 0, "explanation": "The Perfekt is formed with 'haben' (to have) or 'sein' (to be) + past participle. Most verbs use 'haben'; verbs of motion and state change typically use 'sein'." },
+        { "type": "fill-blank", "prompt": "Ich ___ heute viel gelernt. (I learned a lot today.) — auxiliary for lernen", "acceptedAnswers": ["habe"], "hint": "Most action verbs use 'haben'", "explanation": "'lernen' uses 'haben': Ich habe heute viel gelernt. (I learned a lot today.)" },
+        { "type": "multiple-choice", "prompt": "What is the correct Perfekt of 'Ich trinke Kaffee'?", "options": ["Ich habe Kaffee getrunken.", "Ich bin Kaffee getrunken.", "Ich habe Kaffee trinken."], "correctIndex": 0, "explanation": "'trinken' uses 'haben' (it's a transitive verb). The participle is 'getrunken'. Auxiliary in position 2, participle at end." }
+      ]
+    },
+    {
+      "sectionId": "partizip-ii",
+      "title": "Forming the Past Participle",
+      "explanation": "The Partizip II is formed differently for regular (weak) and irregular (strong) verbs. Regular verbs: ge- + stem + -(e)t. Example: machen → gemacht, spielen → gespielt, arbeiten → gearbeitet. Irregular verbs: ge- + changed stem + -en. These must be memorized. Examples: trinken → getrunken, fahren → gefahren, schreiben → geschrieben, gehen → gegangen, sprechen → gesprochen. Verbs with inseparable prefixes (be-, er-, ver-, ge-, ent-, zer-) do NOT add 'ge-': besuchen → besucht (not 'gebesucht'). Verbs ending in -ieren also do not add 'ge-': studieren → studiert.",
+      "tip": "Regular pattern: ge- + stem + -t (gemacht, gelernt). Irregular: ge- + new stem + -en (getrunken, gefahren). No 'ge-' for verbs with be-/ver-/er- etc.",
+      "examples": [
+        { "de": "machen → gemacht", "en": "to make → made (regular: ge-+stem+-t)", "highlight": "ge" },
+        { "de": "spielen → gespielt", "en": "to play → played (regular)", "highlight": "gespielt" },
+        { "de": "trinken → getrunken", "en": "to drink → drunk (irregular)", "highlight": "getrunken" },
+        { "de": "gehen → gegangen", "en": "to go → gone (irregular, strong change)", "highlight": "gegangen" },
+        { "de": "besuchen → besucht", "en": "to visit → visited (no 'ge-' — inseparable prefix 'be-')", "highlight": "besucht" },
+        { "de": "studieren → studiert", "en": "to study → studied (no 'ge-' — -ieren verb)", "highlight": "studiert" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the Partizip II of 'machen' (to make)?", "options": ["gemacht", "gemachen", "macht"], "correctIndex": 0, "explanation": "Regular verb: ge- + mach- + t = gemacht. Er hat das gemacht = He did that." },
+        { "type": "multiple-choice", "prompt": "What is the Partizip II of 'spielen' (to play)?", "options": ["gespielt", "gespelen", "spielte"], "correctIndex": 0, "explanation": "Regular verb: ge- + spiel- + t = gespielt. Wir haben Fußball gespielt = We played football." },
+        { "type": "fill-blank", "prompt": "trinken → ge___ (irregular participle)", "acceptedAnswers": ["getrunken", "trunken"], "hint": "Vowel changes: i→u, add -en at end", "explanation": "'trinken' is irregular: getrunken. The vowel changes (i→u) and -en is added: ge + trunk + en." },
+        { "type": "multiple-choice", "prompt": "Why doesn't 'besuchen' form 'gebesucht'?", "options": ["'Be-' is an inseparable prefix, so no 'ge-' is added", "It is an -ieren verb", "It is irregular"], "correctIndex": 0, "explanation": "Verbs with inseparable prefixes (be-, ge-, er-, ver-, ent-, zer-) do not add 'ge-' in the past participle: besuchen → besucht." },
+        { "type": "matching", "prompt": "Match each infinitive to its Partizip II:", "pairs": [
+          { "left": "machen (to make)", "right": "gemacht" },
+          { "left": "trinken (to drink)", "right": "getrunken" },
+          { "left": "fahren (to drive)", "right": "gefahren" },
+          { "left": "studieren (to study)", "right": "studiert" }
+        ], "explanation": "machen→gemacht (reg.), trinken→getrunken (irr.), fahren→gefahren (irr.), studieren→studiert (no ge-)." },
+        { "type": "fill-blank", "prompt": "gehen → ___ (irregular Partizip II)", "acceptedAnswers": ["gegangen"], "hint": "Completely irregular — the stem changes entirely", "explanation": "'gehen' is irregular: gegangen. Er ist gegangen = He went/has gone." },
+        { "type": "multiple-choice", "prompt": "What is the Partizip II of 'arbeiten' (to work)?", "options": ["gearbeitet", "gearbeit", "gearbeiten"], "correctIndex": 0, "explanation": "Stems ending in -t add -et for pronunciation: ge + arbeit + et = gearbeitet." }
+      ]
+    },
+    {
+      "sectionId": "haben-vs-sein",
+      "title": "Haben or Sein?",
+      "explanation": "Most verbs use 'haben' as the auxiliary in Perfekt. However, some verbs use 'sein'. The rules for using 'sein': (1) Verbs of motion that imply a change of place: gehen (gegangen), fahren (gefahren), kommen (gekommen), fliegen (geflogen). (2) Verbs of state change: aufwachen (aufgewacht — to wake up), einschlafen (eingeschlafen — to fall asleep), sterben (gestorben — to die), werden (geworden — to become). (3) The verbs 'sein' (to be) and 'bleiben' (to stay/remain). Common 'sein' verbs: sein, bleiben, gehen, kommen, fahren, fliegen, laufen, passieren, aufwachen, einschlafen.",
+      "tip": "Use 'sein' with: motion verbs (go, come, drive, fly) and state-change verbs (wake up, fall asleep, become). Everything else uses 'haben'.",
+      "examples": [
+        { "de": "Ich bin nach Hause gegangen.", "en": "I went home. (gehen = motion → sein)", "highlight": "bin" },
+        { "de": "Er ist mit dem Zug gefahren.", "en": "He traveled by train. (fahren = motion → sein)", "highlight": "ist" },
+        { "de": "Sie ist aufgewacht.", "en": "She woke up. (aufwachen = state change → sein)", "highlight": "ist" },
+        { "de": "Ich habe gegessen.", "en": "I ate. (essen = no change of place → haben)", "highlight": "habe" },
+        { "de": "Wir haben gelacht.", "en": "We laughed. (lachen = no motion/change → haben)", "highlight": "haben" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which auxiliary does 'gehen' (to go) use in the Perfekt?", "options": ["sein (motion verb)", "haben", "Both are possible"], "correctIndex": 0, "explanation": "'gehen' is a verb of motion (change of place) → uses 'sein': Ich bin gegangen." },
+        { "type": "multiple-choice", "prompt": "Which auxiliary does 'essen' (to eat) use?", "options": ["haben (no change of place)", "sein (motion)", "Both"], "correctIndex": 0, "explanation": "'essen' has no motion or state change → uses 'haben': Ich habe gegessen." },
+        { "type": "fill-blank", "prompt": "Er ___ nach Berlin geflogen. (He flew to Berlin.) — fliegen = motion verb", "acceptedAnswers": ["ist"], "hint": "Motion verbs use 'sein'", "explanation": "'fliegen' (to fly) implies a change of place → uses 'sein': Er ist nach Berlin geflogen." },
+        { "type": "multiple-choice", "prompt": "Choose the correct Perfekt: 'She slept.' (schlafen — not a change of place)", "options": ["Sie hat geschlafen.", "Sie ist geschlafen.", "Sie hat schläft."], "correctIndex": 0, "explanation": "'schlafen' (to sleep, not the same as 'einschlafen' = to fall asleep) uses 'haben': Sie hat geschlafen." },
+        { "type": "matching", "prompt": "Match each verb to its correct auxiliary in Perfekt:", "pairs": [
+          { "left": "gehen (to go)", "right": "sein" },
+          { "left": "essen (to eat)", "right": "haben" },
+          { "left": "kommen (to come)", "right": "sein" },
+          { "left": "trinken (to drink)", "right": "haben" }
+        ], "explanation": "gehen→sein (motion), essen→haben, kommen→sein (motion), trinken→haben." },
+        { "type": "multiple-choice", "prompt": "Which verb uses 'sein' in Perfekt because of a state change?", "options": ["aufwachen (to wake up)", "essen (to eat)", "trinken (to drink)"], "correctIndex": 0, "explanation": "'aufwachen' (to wake up) involves a change of state (sleeping→awake) → uses 'sein': Ich bin aufgewacht." },
+        { "type": "fill-blank", "prompt": "Wir ___ in der Bibliothek geblieben. (We stayed in the library.) — bleiben uses sein", "acceptedAnswers": ["sind"], "hint": "'bleiben' is one of the special 'sein' verbs", "explanation": "'bleiben' (to stay) always uses 'sein': Wir sind geblieben." }
+      ]
+    }
+  ]
+}

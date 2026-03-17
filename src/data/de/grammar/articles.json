@@ -1,0 +1,86 @@
+{
+  "lessonId": "articles",
+  "nameEn": "Articles",
+  "nameDe": "Artikel",
+  "icon": "📎",
+  "tier": "A1",
+  "prerequisites": ["nouns-gender"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "definite-articles",
+      "title": "Definite Articles (the)",
+      "explanation": "German has three definite articles corresponding to 'the' in English, one for each grammatical gender: 'der' (masculine), 'die' (feminine), 'das' (neuter). The plural is always 'die' for all genders. These articles agree with the noun's gender: der Mann (the man), die Frau (the woman), das Kind (the child), die Kinder (the children). The definite article signals that you are talking about a specific, known thing.",
+      "tip": "der = masculine, die = feminine, das = neuter, die = plural. One easy trick: think of 'die' as the 'default' for feminine and all plurals.",
+      "examples": [
+        { "de": "der Mann", "en": "the man (masculine)", "highlight": "der" },
+        { "de": "die Frau", "en": "the woman (feminine)", "highlight": "die" },
+        { "de": "das Kind", "en": "the child (neuter)", "highlight": "das" },
+        { "de": "die Männer", "en": "the men (plural)", "highlight": "die" },
+        { "de": "der Hund", "en": "the dog (masculine)", "highlight": "der" },
+        { "de": "die Stadt", "en": "the city (feminine)", "highlight": "die" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the definite article for 'Hund' (dog)?", "options": ["der Hund", "die Hund", "das Hund"], "correctIndex": 0, "explanation": "'Hund' (dog) is masculine: der Hund. Most living male creatures are masculine." },
+        { "type": "multiple-choice", "prompt": "What is the definite article for 'Stadt' (city)?", "options": ["die Stadt", "der Stadt", "das Stadt"], "correctIndex": 0, "explanation": "'Stadt' (city) is feminine: die Stadt. Most cities are feminine in German when an article is used." },
+        { "type": "fill-blank", "prompt": "___ Kind spielt. (The child plays.) — neuter noun", "acceptedAnswers": ["Das", "das"], "hint": "Kind (child) is neuter", "explanation": "'Kind' is neuter: das Kind. Das Kind spielt = The child plays." },
+        { "type": "multiple-choice", "prompt": "What is the definite article for 'Bücher' (books, plural)?", "options": ["die Bücher", "der Bücher", "das Bücher"], "correctIndex": 0, "explanation": "All plural nouns use 'die', regardless of their singular gender: das Buch → die Bücher." },
+        { "type": "matching", "prompt": "Match each noun to its correct definite article:", "pairs": [
+          { "left": "Tisch (table, masc.)", "right": "der" },
+          { "left": "Lampe (lamp, fem.)", "right": "die" },
+          { "left": "Buch (book, neut.)", "right": "das" },
+          { "left": "Bücher (books, pl.)", "right": "die" }
+        ], "explanation": "der Tisch, die Lampe, das Buch, die Bücher. Gender must be memorized with each noun." },
+        { "type": "multiple-choice", "prompt": "Which article is used for ALL plural nouns?", "options": ["die", "der", "das"], "correctIndex": 0, "explanation": "All plural nouns take 'die': die Männer, die Frauen, die Kinder, die Häuser." },
+        { "type": "fill-blank", "prompt": "___ Katze schläft. (The cat sleeps.) — cats are feminine", "acceptedAnswers": ["Die", "die"], "hint": "Katze is feminine", "explanation": "'die Katze' — Katze is feminine. Die Katze schläft = The cat sleeps." },
+        { "type": "multiple-choice", "prompt": "Which sentence is correct?", "options": ["Der Mann ist nett.", "Die Mann ist nett.", "Das Mann ist nett."], "correctIndex": 0, "explanation": "'Mann' (man) is masculine: der Mann. Der Mann ist nett = The man is nice." }
+      ]
+    },
+    {
+      "sectionId": "indefinite-articles",
+      "title": "Indefinite Articles (a / an)",
+      "explanation": "The indefinite article ('a' or 'an' in English) in German is: 'ein' for masculine and neuter nouns, 'eine' for feminine nouns. The plural has no indefinite article (just the bare noun, or 'keine' for 'no/not any'). Examples: ein Mann (a man), eine Frau (a woman), ein Kind (a child), Männer (men). Use the indefinite article when introducing something new or unspecified. Note that 'ein' is also the number 'one'.",
+      "tip": "ein = masculine and neuter (both!), eine = feminine. No plural indefinite article — just use the bare noun.",
+      "examples": [
+        { "de": "ein Mann", "en": "a man (masculine — ein)", "highlight": "ein" },
+        { "de": "eine Frau", "en": "a woman (feminine — eine)", "highlight": "eine" },
+        { "de": "ein Kind", "en": "a child (neuter — ein)", "highlight": "ein" },
+        { "de": "Ich sehe einen Hund.", "en": "I see a dog. (accusative masculine — einen)", "highlight": "einen" },
+        { "de": "Männer", "en": "men (no indefinite article in plural)", "highlight": "Männer" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the indefinite article for 'Mann' (man, masculine)?", "options": ["ein Mann", "eine Mann", "einen Mann"], "correctIndex": 0, "explanation": "Masculine nouns take 'ein' in the nominative case: ein Mann (a man)." },
+        { "type": "multiple-choice", "prompt": "What is the indefinite article for 'Frau' (woman, feminine)?", "options": ["eine Frau", "ein Frau", "einer Frau"], "correctIndex": 0, "explanation": "Feminine nouns take 'eine': eine Frau (a woman)." },
+        { "type": "fill-blank", "prompt": "Ich habe ___ Katze. (I have a cat.) — Katze is feminine", "acceptedAnswers": ["eine"], "hint": "The feminine indefinite article", "explanation": "'Katze' is feminine, but wait — it is the direct object here (accusative). Feminine 'eine' does not change in the accusative. Ich habe eine Katze." },
+        { "type": "multiple-choice", "prompt": "What is the indefinite article for 'Buch' (book, neuter)?", "options": ["ein Buch", "eine Buch", "einem Buch"], "correctIndex": 0, "explanation": "Neuter nouns take 'ein' (same as masculine in nominative): ein Buch (a book)." },
+        { "type": "matching", "prompt": "Match each noun to its indefinite article (nominative):", "pairs": [
+          { "left": "Mann (man, masc.)", "right": "ein" },
+          { "left": "Frau (woman, fem.)", "right": "eine" },
+          { "left": "Kind (child, neut.)", "right": "ein" },
+          { "left": "Hunde (dogs, plural)", "right": "no article" }
+        ], "explanation": "ein Mann, eine Frau, ein Kind. Plural nouns have no indefinite article in German." },
+        { "type": "multiple-choice", "prompt": "How do you say 'a house' in German? (Haus is neuter)", "options": ["ein Haus", "eine Haus", "das Haus"], "correctIndex": 0, "explanation": "'Haus' is neuter → ein Haus. 'ein' covers both masculine and neuter in the nominative." },
+        { "type": "fill-blank", "prompt": "Das ist ___ Auto. (That is a car.) — Auto is neuter", "acceptedAnswers": ["ein"], "hint": "Auto is neuter — same as masculine for indefinite articles", "explanation": "'Auto' is neuter → ein Auto. Das ist ein Auto = That is a car." },
+        { "type": "multiple-choice", "prompt": "Which is the correct plural of 'ein Hund' (a dog)?", "options": ["Hunde (no article)", "eine Hunde", "ein Hunde"], "correctIndex": 0, "explanation": "German has no plural indefinite article. 'Ein Hund' (a dog) becomes just 'Hunde' (dogs) in the plural. You can say 'keine Hunde' (no dogs)." }
+      ]
+    },
+    {
+      "sectionId": "article-comparison",
+      "title": "Definite vs Indefinite",
+      "explanation": "Use the definite article (der/die/das) when both speaker and listener know which specific thing is being talked about, or when something has already been mentioned. Use the indefinite article (ein/eine) when introducing something for the first time, or when referring to any example of a category. In German, the articles also change form depending on the grammatical case (nominative, accusative, dative, genitive) — the nominative forms are learned here; other cases are covered later.",
+      "tip": "Definite (der/die/das) = specific, known. Indefinite (ein/eine) = new, any. 'Ich sehe einen Hund' → 'Der Hund ist groß.' First mention = ein, then refer back = der.",
+      "examples": [
+        { "de": "Ich kaufe ein Buch. Das Buch ist interessant.", "en": "I'm buying a book. The book is interesting.", "highlight": "ein Buch" },
+        { "de": "Eine Frau steht da. Die Frau lächelt.", "en": "A woman is standing there. The woman is smiling.", "highlight": "Eine Frau" },
+        { "de": "Die Sonne scheint.", "en": "The sun is shining. (always 'the sun' — specific)", "highlight": "Die" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "You mention a dog for the first time. Which article do you use?", "options": ["ein Hund (indefinite — first mention)", "der Hund (definite)", "das Hund"], "correctIndex": 0, "explanation": "First mention uses the indefinite article: 'Ich sehe einen Hund.' After that, you refer back with 'der Hund'." },
+        { "type": "multiple-choice", "prompt": "The sun is always specific. How do you say 'The sun shines'?", "options": ["Die Sonne scheint.", "Eine Sonne scheint.", "Sonne scheint."], "correctIndex": 0, "explanation": "Unique things like the sun (die Sonne), the moon (der Mond), and proper contexts use the definite article." },
+        { "type": "fill-blank", "prompt": "Ich habe ___ Schwester. (I have a sister.) — first mention, feminine", "acceptedAnswers": ["eine"], "hint": "First mention, feminine noun", "explanation": "First mention of your sister = indefinite article. Schwester is feminine → eine. Ich habe eine Schwester." },
+        { "type": "multiple-choice", "prompt": "You already mentioned a book. Now you refer to it again. Which article?", "options": ["Das Buch ist interessant. (definite)", "Ein Buch ist interessant.", "Buch ist interessant."], "correctIndex": 0, "explanation": "After the first mention with 'ein Buch', you refer back with 'das Buch'. Definite articles indicate known, already-mentioned items." },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly introduces a new car?", "options": ["Ich habe ein Auto gekauft.", "Ich habe das Auto gekauft.", "Ich habe Auto gekauft."], "correctIndex": 0, "explanation": "New information → indefinite article: 'ein Auto'. 'das Auto' would imply a specific known car." }
+      ]
+    }
+  ]
+}

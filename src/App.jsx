@@ -5,7 +5,7 @@ import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
 import { TRANSLATIONS } from './data/translations.js';
 import { getAllVocabularyWords } from './utils/dictionaryBuilder.js';
-import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU } from './utils/encouragement.js';
+import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE } from './utils/encouragement.js';
 import { getLanguageData, LANGUAGES } from './data/languageConfig.js';
 import { createAudioContext, playSound } from './utils/soundEffects.js';
 import FlashcardMode from './components/modes/FlashcardMode.jsx';
@@ -63,6 +63,23 @@ import ruGreetingDialogue from './data/ru/dialogues/greeting.json';
 import ruBeginnerReading from './data/ru/reading/beginner.json';
 import ruIntermediateReading from './data/ru/reading/intermediate.json';
 import ruAdvancedReading from './data/ru/reading/advanced.json';
+
+// Import German grammar data
+import { GRAMMAR_LESSONS_DE } from './data/de/grammar/index.js';
+
+// Import German sentence data
+import deSentenceData from './data/de/sentences.json';
+
+// Import German dialogue data
+import deRestaurantDialogue from './data/de/dialogues/restaurant.json';
+import deDirectionsDialogue from './data/de/dialogues/directions.json';
+import deShoppingDialogue from './data/de/dialogues/shopping.json';
+import deGreetingDialogue from './data/de/dialogues/greeting.json';
+
+// Import German reading data
+import deBeginnerReading from './data/de/reading/beginner.json';
+import deIntermediateReading from './data/de/reading/intermediate.json';
+import deAdvancedReading from './data/de/reading/advanced.json';
 
 // Import vocabulary theme data
 import colorsData from './data/vocabulary/themes/colors.json';
@@ -153,9 +170,17 @@ const RU_ALL_READING_PASSAGES = [
   ...ruAdvancedReading.passages
 ];
 
+const DE_GRAMMAR_LESSONS = GRAMMAR_LESSONS_DE;
+const DE_DIALOGUES = [deRestaurantDialogue, deDirectionsDialogue, deShoppingDialogue, deGreetingDialogue];
+const DE_ALL_READING_PASSAGES = [
+  ...deBeginnerReading.passages,
+  ...deIntermediateReading.passages,
+  ...deAdvancedReading.passages
+];
+
 function buildCategoryFlashcardSetsForLang(langCode) {
   const allWords = getAllVocabularyWords(langCode);
-  const nameField = langCode === 'ru' ? 'nameRu' : 'nameUk';
+  const nameField = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
   const sets = [];
   for (const [groupId, group] of Object.entries(CATEGORY_GROUPS)) {
     const catSet = new Set(group.categories);
@@ -164,7 +189,7 @@ function buildCategoryFlashcardSetsForLang(langCode) {
     sets.push({
       setId: groupId,
       nameEn: group.nameEn,
-      nameUk: group[nameField] || group.nameUk,
+      nameUk: group[nameField] || group.nameEn || group.nameUk,
       icon: group.icon,
       difficulty: group.difficulty,
       words: words.map(w => ({ uk: w.uk, en: w.en, phonetic: w.phonetic || '', examples: w.examples || [], examplesEn: w.examplesEn || [] })),
@@ -266,6 +291,8 @@ function splitByScript(text) {
 
 /** Speak mixed-language text: Cyrillic via local model, Latin via English Silero. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
+  // German is all-Latin — route directly to German TTS, never English
+  if (lang === 'de') return speakUkrainian(text, rate, volume, 'de');
   const chunks = splitByScript(text);
   if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'cyrillic')) {
     return speakUkrainian(text, rate, volume, lang);
@@ -371,27 +398,27 @@ export default function UkrainianTypingGame() {
   const CURRENT_TRANSLATIONS = langData.translations;
   const letterField = langData.targetField; // 'uk' or 'ru' - used to access keyboard data
   const phoneticField = langData.phoneticField; // 'ukrainianPhonetic' or 'russianPhonetic'
-  const CURRENT_ENCOURAGEMENTS = currentLanguage === 'ru' ? ENCOURAGEMENTS_RU : ENCOURAGEMENTS;
-  const CURRENT_MISTAKE_MESSAGES = currentLanguage === 'ru' ? MISTAKE_MESSAGES_RU : MISTAKE_MESSAGES;
+  const CURRENT_ENCOURAGEMENTS = currentLanguage === 'ru' ? ENCOURAGEMENTS_RU : currentLanguage === 'de' ? ENCOURAGEMENTS_DE : ENCOURAGEMENTS;
+  const CURRENT_MISTAKE_MESSAGES = currentLanguage === 'ru' ? MISTAKE_MESSAGES_RU : currentLanguage === 'de' ? MISTAKE_MESSAGES_DE : MISTAKE_MESSAGES;
   const normalizeVocabSet = (set) => ({
     ...set,
-    nameUk: currentLanguage === 'ru' ? set.nameRu || set.nameUk : set.nameUk,
+    nameUk: currentLanguage === 'ru' ? set.nameRu || set.nameUk : currentLanguage === 'de' ? set.nameDe || set.nameEn || set.nameUk : set.nameUk,
     words: set.words.map(w => ({
       ...w,
-      uk: currentLanguage === 'ru' ? (w.ru || w.uk) : w.uk,
-      phonetic: currentLanguage === 'ru' ? (w.phoneticRu || w.phonetic || '') : (w.phoneticUk || w.phonetic || ''),
+      uk: currentLanguage === 'ru' ? (w.ru || w.uk) : currentLanguage === 'de' ? (w.de || w.en || w.uk) : w.uk,
+      phonetic: currentLanguage === 'ru' ? (w.phoneticRu || w.phonetic || '') : currentLanguage === 'de' ? (w.phoneticDe || w.phonetic || '') : (w.phoneticUk || w.phonetic || ''),
       examples: Array.isArray(w.examples) ? w.examples :
-        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : (w.examples.uk || [])) : []),
+        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : currentLanguage === 'de' ? (w.examples.de || []) : (w.examples.uk || [])) : []),
       examplesEn: Array.isArray(w.examples) ? [] :
         (w.examples ? (w.examples.en || []) : [])
     }))
   });
   const CURRENT_VOCAB_THEMES = VOCABULARY_THEMES.map(normalizeVocabSet);
   const CURRENT_ADULT_VOCAB = normalizeVocabSet(ADULT_VOCABULARY);
-  const CURRENT_GRAMMAR = currentLanguage === 'ru' ? RU_GRAMMAR_LESSONS : GRAMMAR_LESSONS;
-  const CURRENT_DIALOGUES = currentLanguage === 'ru' ? RU_DIALOGUES : DIALOGUES;
-  const CURRENT_SENTENCES = currentLanguage === 'ru' ? ruSentenceData : sentenceData;
-  const CURRENT_READING = currentLanguage === 'ru' ? RU_ALL_READING_PASSAGES : ALL_READING_PASSAGES;
+  const CURRENT_GRAMMAR = currentLanguage === 'ru' ? RU_GRAMMAR_LESSONS : currentLanguage === 'de' ? DE_GRAMMAR_LESSONS : GRAMMAR_LESSONS;
+  const CURRENT_DIALOGUES = currentLanguage === 'ru' ? RU_DIALOGUES : currentLanguage === 'de' ? DE_DIALOGUES : DIALOGUES;
+  const CURRENT_SENTENCES = currentLanguage === 'ru' ? ruSentenceData : currentLanguage === 'de' ? deSentenceData : sentenceData;
+  const CURRENT_READING = currentLanguage === 'ru' ? RU_ALL_READING_PASSAGES : currentLanguage === 'de' ? DE_ALL_READING_PASSAGES : ALL_READING_PASSAGES;
   const CURRENT_DICT_SETS = buildCategoryFlashcardSetsForLang(currentLanguage);
 
   // Game state
@@ -1002,10 +1029,10 @@ export default function UkrainianTypingGame() {
         </div>
       </div>
       <div className="finger-legend">
-        <span style={{color: fingerColors['pinky-l']}}>● {currentLanguage === 'ru' ? 'Мизинец' : 'Мізинець'} (Pinky)</span>
-        <span style={{color: fingerColors['ring-l']}}>● {currentLanguage === 'ru' ? 'Безымянный' : 'Безіменний'} (Ring)</span>
-        <span style={{color: fingerColors['middle-l']}}>● {currentLanguage === 'ru' ? 'Средний' : 'Середній'} (Middle)</span>
-        <span style={{color: fingerColors['index-l']}}>● {currentLanguage === 'ru' ? 'Указательный' : 'Вказівний'} (Index)</span>
+        <span style={{color: fingerColors['pinky-l']}}>● {currentLanguage === 'ru' ? 'Мизинец' : currentLanguage === 'de' ? 'Kleiner Finger' : 'Мізинець'} (Pinky)</span>
+        <span style={{color: fingerColors['ring-l']}}>● {currentLanguage === 'ru' ? 'Безымянный' : currentLanguage === 'de' ? 'Ringfinger' : 'Безіменний'} (Ring)</span>
+        <span style={{color: fingerColors['middle-l']}}>● {currentLanguage === 'ru' ? 'Средний' : currentLanguage === 'de' ? 'Mittelfinger' : 'Середній'} (Middle)</span>
+        <span style={{color: fingerColors['index-l']}}>● {currentLanguage === 'ru' ? 'Указательный' : currentLanguage === 'de' ? 'Zeigefinger' : 'Вказівний'} (Index)</span>
       </div>
     </div>
   );
@@ -1037,9 +1064,9 @@ export default function UkrainianTypingGame() {
   // Keyboard setup modal
   const KeyboardSetupModal = () => {
     const langName = langData.name;
-    const exampleA = currentLanguage === 'ru' ? 'Ф' : 'Ф';
-    const exampleS = currentLanguage === 'ru' ? 'Ы' : 'І';
-    const gotIt = currentLanguage === 'ru' ? 'Понятно!' : 'Зрозуміло!';
+    const exampleA = currentLanguage === 'ru' ? 'Ф' : currentLanguage === 'de' ? 'A' : 'Ф';
+    const exampleS = currentLanguage === 'ru' ? 'Ы' : currentLanguage === 'de' ? 'S' : 'І';
+    const gotIt = currentLanguage === 'ru' ? 'Понятно!' : currentLanguage === 'de' ? 'Verstanden!' : 'Зрозуміло!';
     return (
       <div className="modal-overlay" onClick={() => setShowKeyboardSetup(false)}>
         <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -1739,7 +1766,7 @@ export default function UkrainianTypingGame() {
             
             <div className="explore-header">
               <h2>🔍 Explore the {langData.name} Keyboard</h2>
-              <p>Click any key to learn about it! {currentLanguage === 'ru' ? 'Познакомься с клавиатурой!' : 'Познайомся з клавіатурою!'}</p>
+              <p>Click any key to learn about it! {currentLanguage === 'ru' ? 'Познакомься с клавиатурой!' : currentLanguage === 'de' ? 'Erkunde die Tastatur!' : 'Познайомся з клавіатурою!'}</p>
             </div>
 
             <div className="keyboard explore-mode">
@@ -1813,7 +1840,7 @@ export default function UkrainianTypingGame() {
             ) : (
               <div className="key-info-panel empty">
                 <p>👆 Click a key above to see details</p>
-                <p className="hint-uk">{currentLanguage === 'ru' ? 'Нажми на клавишу выше' : 'Натисни на клавішу вище'}</p>
+                <p className="hint-uk">{currentLanguage === 'ru' ? 'Нажми на клавишу выше' : currentLanguage === 'de' ? 'Klicke auf eine Taste oben' : 'Натисни на клавішу вище'}</p>
               </div>
             )}
             

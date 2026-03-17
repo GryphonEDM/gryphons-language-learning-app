@@ -3,6 +3,7 @@
   "nameEn": "Emotions & Feelings",
   "nameUk": "Емоції та Почуття",
   "nameRu": "Эмоции и Чувства",
+  "nameDe": "Gefühle",
   "difficulty": "A2",
   "icon": "😊",
   "totalWords": 23,
@@ -11,252 +12,315 @@
     {
       "uk": "щасливий",
       "ru": "счастливый",
+      "de": "glücklich",
       "en": "happy",
       "phoneticUk": "shchaslyvyi",
       "phoneticRu": "schastlivyy",
+      "phoneticDe": "glew-klikh",
       "examples": {
         "uk": ["Він дуже щасливий сьогодні.", "Я почуваюся щасливим поруч із тобою."],
         "ru": ["он очень счастливый человек", "сегодня я чувствую себя счастливым"],
+        "de": ["Er ist heute sehr glücklich.", "Ich fühle mich glücklich, wenn ich bei dir bin."],
         "en": ["He is very happy today.", "I feel happy when I am with you."]
       }
     },
     {
       "uk": "сумний",
       "ru": "грустный",
+      "de": "traurig",
       "en": "sad",
       "phoneticUk": "sumnyi",
       "phoneticRu": "grustnyy",
+      "phoneticDe": "trow-rikh",
       "examples": {
         "uk": ["Вона виглядає сумною сьогодні.", "Цей фільм такий сумний, що я заплакав."],
         "ru": ["грустный фильм заставил меня плакать", "она выглядит грустной сегодня"],
+        "de": ["Sie sieht heute traurig aus.", "Dieser Film ist so traurig, dass ich geweint habe."],
         "en": ["She looks sad today.", "This film is so sad that I cried."]
       }
     },
     {
       "uk": "злий",
       "ru": "злой",
+      "de": "wütend",
       "en": "angry",
       "phoneticUk": "zlyi",
       "phoneticRu": "zloy",
+      "phoneticDe": "vew-tent",
       "examples": {
         "uk": ["Не будь таким злим через дрібниці.", "Начальник злий і кричить на всіх."],
         "ru": ["злой начальник кричит на всех подряд", "не будь таким злым из-за пустяков"],
+        "de": ["Sei nicht so wütend wegen Kleinigkeiten.", "Der Chef ist wütend und schreit alle an."],
         "en": ["Don't be so angry over small things.", "The boss is angry and shouts at everyone."]
       }
     },
     {
       "uk": "втомлений",
       "ru": "усталый",
+      "de": "müde",
       "en": "tired",
       "phoneticUk": "vtomlenyi",
       "phoneticRu": "ustalyy",
+      "phoneticDe": "mew-duh",
       "examples": {
         "uk": ["Я дуже втомлений після довгого дня.", "Втомлений працівник повільно йде додому."],
         "ru": ["усталый работник медленно идёт домой", "я очень усталый после долгого дня"],
+        "de": ["Ich bin nach einem langen Tag sehr müde.", "Der müde Arbeiter geht langsam nach Hause."],
         "en": ["I am very tired after a long day.", "The tired worker slowly walks home."]
       }
     },
     {
       "uk": "нервовий",
       "ru": "нервный",
+      "de": "nervös",
       "en": "nervous",
       "phoneticUk": "nervovyi",
       "phoneticRu": "nervnyy",
+      "phoneticDe": "ner-vohz",
       "examples": {
         "uk": ["Вона нервується перед важливим іспитом.", "Я завжди нервовий, коли говорю перед людьми."],
         "ru": ["нервный пациент ждёт результатов анализов", "она нервничает перед важным экзаменом"],
+        "de": ["Sie ist vor der wichtigen Prüfung nervös.", "Ich bin immer nervös, wenn ich vor Menschen spreche."],
         "en": ["She gets nervous before an important exam.", "I am always nervous when speaking in front of people."]
       }
     },
     {
       "uk": "здивований",
       "ru": "удивлённый",
+      "de": "überrascht",
       "en": "surprised",
       "phoneticUk": "zdyvovanyi",
       "phoneticRu": "udivlyonnyy",
+      "phoneticDe": "ew-ber-rasht",
       "examples": {
         "uk": ["Я був приємно здивований цим подарунком.", "Здивований гість не міг повірити своїм очам."],
         "ru": ["удивлённый гость не мог поверить своим глазам", "я был приятно удивлён подарком"],
+        "de": ["Ich war über dieses Geschenk angenehm überrascht.", "Der überraschte Gast konnte seinen Augen nicht trauen."],
         "en": ["I was pleasantly surprised by this gift.", "The surprised guest could not believe his eyes."]
       }
     },
     {
       "uk": "гордий",
       "ru": "гордый",
+      "de": "stolz",
       "en": "proud",
       "phoneticUk": "hordyi",
       "phoneticRu": "gordyy",
+      "phoneticDe": "shtolts",
       "examples": {
         "uk": ["Гордий батько дивиться на виступ сина.", "Я пишаюся своїми досягненнями."],
         "ru": ["гордый отец смотрит на выступление сына", "я горжусь своими достижениями"],
+        "de": ["Ein stolzer Vater schaut sich den Auftritt seines Sohnes an.", "Ich bin stolz auf meine Leistungen."],
         "en": ["A proud father watches his son's performance.", "I am proud of my achievements."]
       }
     },
     {
       "uk": "спокійно",
       "ru": "спокойный",
+      "de": "ruhig",
       "en": "calm/peaceful",
       "phoneticUk": "spokiyno",
       "phoneticRu": "spokoynyy",
+      "phoneticDe": "roo-ikh",
       "examples": {
         "uk": ["Будь спокійний, все буде добре.", "Голос учителя звучить спокійно і впевнено."],
         "ru": ["спокойный голос учителя успокаивает детей", "будь спокойным, всё будет хорошо"],
+        "de": ["Sei ruhig, alles wird gut.", "Die Stimme des Lehrers klingt ruhig und sicher."],
         "en": ["Be calm, everything will be fine.", "The teacher's voice sounds calm and confident."]
       }
     },
     {
       "uk": "нудно",
       "ru": "скучающий",
+      "de": "langweilig",
       "en": "boring/bored",
       "phoneticUk": "nudno",
       "phoneticRu": "skuchayushchiy",
+      "phoneticDe": "lang-vy-likh",
       "examples": {
         "uk": ["Мені нудно на цій довгій лекції.", "Студент дивиться у вікно, бо йому нудно."],
         "ru": ["скучающий студент смотрит в окно на уроке", "ей стало скучно на длинной лекции"],
+        "de": ["Diese lange Vorlesung ist langweilig.", "Der gelangweilte Student schaut aus dem Fenster."],
         "en": ["I am bored during this long lecture.", "The student looks out the window because he is bored."]
       }
     },
     {
       "uk": "голодний",
       "ru": "голодный",
+      "de": "hungrig",
       "en": "hungry",
       "phoneticUk": "holodnyi",
       "phoneticRu": "golodnyy",
+      "phoneticDe": "hoong-rikh",
       "examples": {
         "uk": ["Я дуже голодний після тренування.", "Голодна дитина просить їсти."],
         "ru": ["я очень голодный после тренировки", "голодный ребёнок просит есть"],
+        "de": ["Ich bin nach dem Training sehr hungrig.", "Das hungrige Kind bittet um Essen."],
         "en": ["I am very hungry after training.", "The hungry child asks for food."]
       }
     },
     {
       "uk": "боляче",
       "ru": "больно",
+      "de": "schmerzhaft",
       "en": "it hurts/painful",
       "phoneticUk": "bolyache",
       "phoneticRu": "bol'no",
+      "phoneticDe": "shmerts-haft",
       "examples": {
         "uk": ["Мені дуже боляче, коли я падаю.", "Боляче дивитися, як вони сваряться."],
         "ru": ["мне очень больно", "больно, когда упадёшь"],
+        "de": ["Es tut sehr weh, wenn ich hinfalle.", "Es ist schmerzhaft, wenn man sie streiten sieht."],
         "en": ["It hurts a lot when I fall.", "It is painful to watch them argue."]
       }
     },
     {
       "uk": "страшно",
       "ru": "страшно",
+      "de": "angsteinflößend",
       "en": "scary/frightening",
       "phoneticUk": "strashno",
       "phoneticRu": "strashno",
+      "phoneticDe": "angst-ain-floh-sent",
       "examples": {
         "uk": ["Мені страшно йти додому вночі.", "Не страшно помилятися, страшно нічого не робити."],
         "ru": ["мне очень страшно", "не страшно идти одному"],
+        "de": ["Ich habe Angst, nachts nach Hause zu gehen.", "Es ist nicht schlimm, Fehler zu machen."],
         "en": ["I am scared to walk home at night.", "It is not scary to make mistakes; it is scary to do nothing."]
       }
     },
     {
       "uk": "цікаво",
       "ru": "интересно",
+      "de": "interessant",
       "en": "interesting",
       "phoneticUk": "tsikavo",
       "phoneticRu": "interesno",
+      "phoneticDe": "in-teh-res-ant",
       "examples": {
         "uk": ["Мені цікаво дізнатися більше про це.", "Ця книга дуже цікава і захоплива."],
         "ru": ["это очень интересно", "мне интересно узнать больше"],
+        "de": ["Ich möchte mehr darüber erfahren.", "Dieses Buch ist sehr interessant und spannend."],
         "en": ["I am interested to learn more about this.", "This book is very interesting and engaging."]
       }
     },
     {
       "uk": "весело",
       "ru": "весело",
+      "de": "lustig",
       "en": "fun/cheerful",
       "phoneticUk": "veselo",
       "phoneticRu": "veselo",
+      "phoneticDe": "loos-tikh",
       "examples": {
         "uk": ["Нам дуже весело разом грати.", "На святі було так весело!"],
         "ru": ["нам очень весело вместе", "на празднике было весело"],
+        "de": ["Wir haben so viel Spaß beim gemeinsamen Spielen.", "Das Fest war so lustig!"],
         "en": ["We have so much fun playing together.", "The party was so much fun!"]
       }
     },
     {
       "uk": "соромно",
       "ru": "стыдно",
+      "de": "beschämt",
       "en": "ashamed/embarrassed",
       "phoneticUk": "soromno",
       "phoneticRu": "stydno",
+      "phoneticDe": "beh-shaymt",
       "examples": {
         "uk": ["Мені соромно за свій вчинок.", "Йому соромно зізнатися в помилці."],
         "ru": ["мне очень стыдно за свой поступок", "ему стыдно признаться"],
+        "de": ["Ich schäme mich für das, was ich getan habe.", "Er schämt sich, seinen Fehler zuzugeben."],
         "en": ["I am ashamed of what I did.", "He is embarrassed to admit his mistake."]
       }
     },
     {
       "uk": "наляканий",
       "ru": "испуганный",
+      "de": "erschrocken",
       "en": "scared",
       "phoneticUk": "nalyakanyi",
       "phoneticRu": "ispugannyy",
+      "phoneticDe": "er-shrok-en",
       "examples": {
         "uk": ["Наляканий хлопчик притиснувся до матері.", "Вона була дуже налякана після грози."],
         "ru": ["испуганный ребёнок прижался к матери", "она была очень испуганной после грозы"],
+        "de": ["Der erschrockene Junge drückte sich an seine Mutter.", "Sie war nach dem Gewitter sehr erschrocken."],
         "en": ["The scared boy pressed close to his mother.", "She was very scared after the thunderstorm."]
       }
     },
     {
       "uk": "закоханий",
       "ru": "влюблённый",
+      "de": "verliebt",
       "en": "in love",
       "phoneticUk": "zakokhanyi",
       "phoneticRu": "vlyublyonnyy",
+      "phoneticDe": "fer-leept",
       "examples": {
         "uk": ["Закоханий юнак дарує квіти дівчині.", "Вони виглядають такими закоханими."],
         "ru": ["влюблённый юноша дарит цветы девушке", "они выглядят такими влюблёнными друг в друга"],
+        "de": ["Der verliebte Junge schenkt dem Mädchen Blumen.", "Sie sehen so verliebt ineinander aus."],
         "en": ["The young man in love gives flowers to the girl.", "They look so in love with each other."]
       }
     },
     {
       "uk": "сором'язливий",
       "ru": "стыдливый",
+      "de": "schüchtern",
       "en": "shy",
       "phoneticUk": "soromyazlyvyi",
       "phoneticRu": "stydlivyy",
+      "phoneticDe": "shewkh-tern",
       "examples": {
         "uk": ["Сором'язливий хлопчик ховає очі.", "Вона дуже сором'язлива і тиха дівчина."],
         "ru": ["стыдливый мальчик прячет глаза от смущения", "она очень стыдливая и тихая девушка"],
+        "de": ["Der schüchterne Junge schaut zur Seite.", "Sie ist ein sehr schüchternes und ruhiges Mädchen."],
         "en": ["The shy boy looks away.", "She is a very shy and quiet girl."]
       }
     },
     {
       "uk": "радісний",
       "ru": "радостный",
+      "de": "freudig",
       "en": "joyful",
       "phoneticUk": "radisnyi",
       "phoneticRu": "radostnyy",
+      "phoneticDe": "froy-dikh",
       "examples": {
         "uk": ["Радісна дитина біжить назустріч мамі.", "Це був найрадісніший момент у житті."],
         "ru": ["радостный ребёнок бежит навстречу маме", "это был самый радостный момент в жизни"],
+        "de": ["Das freudige Kind läuft seiner Mutter entgegen.", "Das war der freudigste Moment im Leben."],
         "en": ["The joyful child runs to meet their mother.", "It was the most joyful moment in life."]
       }
     },
     {
       "uk": "схвильований",
       "ru": "взволнованный",
+      "de": "aufgeregt",
       "en": "excited",
       "phoneticUk": "skhvylovanyi",
       "phoneticRu": "vzvolnovannyy",
+      "phoneticDe": "owf-geh-regt",
       "examples": {
         "uk": ["Схвильовані діти чекають на Новий рік.", "Вона була дуже схвильована перед поїздкою."],
         "ru": ["взволнованные дети ждут наступления Нового года", "она была очень взволнована перед поездкой"],
+        "de": ["Die aufgeregten Kinder warten auf das Neue Jahr.", "Sie war vor der Reise sehr aufgeregt."],
         "en": ["The excited children wait for New Year.", "She was very excited before the trip."]
       }
     },
     {
       "uk": "розчарований",
       "ru": "разочарованный",
+      "de": "enttäuscht",
       "en": "disappointed",
       "phoneticUk": "rozcharovanyi",
       "phoneticRu": "razocharovannyy",
+      "phoneticDe": "ent-toysht",
       "examples": {
         "uk": ["Розчарований вболівальник іде зі стадіону.", "Я був дуже розчарований результатом гри."],
         "ru": ["разочарованный болельщик уходит со стадиона", "я был сильно разочарован результатом игры"],
+        "de": ["Der enttäuschte Fan verlässt das Stadion.", "Ich war vom Ergebnis des Spiels sehr enttäuscht."],
         "en": ["The disappointed fan leaves the stadium.", "I was very disappointed by the result of the game."]
       }
     }

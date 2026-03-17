@@ -1,0 +1,94 @@
+{
+  "lessonId": "nouns-gender",
+  "nameEn": "Noun Gender",
+  "nameDe": "Das Geschlecht der Nomen",
+  "icon": "🏷️",
+  "tier": "A1",
+  "prerequisites": ["alphabet"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "three-genders",
+      "title": "Der, Die, Das — Three Genders",
+      "explanation": "Every German noun has a grammatical gender: masculine (der), feminine (die), or neuter (das). This is called the Genus. Unlike English, gender is not always logical — 'das Mädchen' (the girl) is neuter! Gender must be memorized with each noun. The plural article is always 'die', regardless of gender. Always learn a noun together with its article: not just 'Tisch' but 'der Tisch'.",
+      "tip": "Always learn nouns with their article! Say 'der Tisch, die Lampe, das Buch' — never just 'Tisch, Lampe, Buch'.",
+      "examples": [
+        { "de": "der Tisch", "en": "the table (masculine)", "highlight": "der" },
+        { "de": "die Lampe", "en": "the lamp (feminine)", "highlight": "die" },
+        { "de": "das Buch", "en": "the book (neuter)", "highlight": "das" },
+        { "de": "das Mädchen", "en": "the girl (neuter — -chen suffix = neuter)", "highlight": "das" },
+        { "de": "die Tische", "en": "the tables (plural — always 'die')", "highlight": "die" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the article for 'Tisch' (table)?", "options": ["der (masculine)", "die (feminine)", "das (neuter)"], "correctIndex": 0, "explanation": "'der Tisch' is masculine. Tables, chairs, and most objects ending in a consonant cluster tend to be masculine." },
+        { "type": "multiple-choice", "prompt": "What is the article for 'Lampe' (lamp)?", "options": ["die (feminine)", "der (masculine)", "das (neuter)"], "correctIndex": 0, "explanation": "'die Lampe' is feminine. Most nouns ending in -e are feminine." },
+        { "type": "multiple-choice", "prompt": "What is the article for 'Buch' (book)?", "options": ["das (neuter)", "der (masculine)", "die (feminine)"], "correctIndex": 0, "explanation": "'das Buch' is neuter. You must memorize this — there is no rule that helps here." },
+        { "type": "fill-blank", "prompt": "The plural article in German is always ___", "acceptedAnswers": ["die"], "hint": "The same as the feminine singular article", "explanation": "In German, all plural nouns use the article 'die', regardless of their singular gender." },
+        { "type": "multiple-choice", "prompt": "Why is 'das Mädchen' (the girl) neuter despite referring to a female?", "options": ["Because it ends in -chen, which always makes a noun neuter", "Because girls are considered neuter in German culture", "It is actually feminine"], "correctIndex": 0, "explanation": "The diminutive suffix -chen always makes a noun grammatically neuter, overriding natural gender. Das Mädchen, das Häuschen, das Büchlein." },
+        { "type": "matching", "prompt": "Match each noun to its article:", "pairs": [
+          { "left": "Frau (woman)", "right": "die" },
+          { "left": "Mann (man)", "right": "der" },
+          { "left": "Kind (child)", "right": "das" },
+          { "left": "Bücher (books, plural)", "right": "die" }
+        ], "explanation": "die Frau, der Mann, das Kind, die Bücher (plural always uses die)." },
+        { "type": "multiple-choice", "prompt": "Which article is always used for plural nouns?", "options": ["die", "der", "das"], "correctIndex": 0, "explanation": "The plural article is always 'die', no matter what the singular gender is. die Tische, die Lampen, die Bücher." },
+        { "type": "fill-blank", "prompt": "___ Haus (house) — choose the correct article", "acceptedAnswers": ["das", "Das"], "hint": "Houses are neuter in German", "explanation": "'das Haus' — house is neuter in German. Das Haus, die Häuser (plural)." }
+      ]
+    },
+    {
+      "sectionId": "gender-tips",
+      "title": "Tips for Guessing Gender",
+      "explanation": "While gender must often be memorized, there are helpful patterns. Masculine (-er, -ig, -ling, -ismus, -or): der Lehrer (teacher), der König (king), der Frühling (spring). Feminine (-ung, -heit, -keit, -schaft, -tion, -e): die Wohnung (apartment), die Freiheit (freedom), die Freundschaft (friendship). Neuter (-chen, -lein, -ment, -tum, -um): das Mädchen (girl), das Instrument, das Zentrum. Also: most metals are neuter (das Gold, das Silber), and most infinitives used as nouns are neuter (das Laufen = running).",
+      "tip": "Key patterns: -ung, -heit, -keit, -schaft → die (feminine). -chen, -lein → das (neuter). -er (agent nouns) → der (masculine).",
+      "examples": [
+        { "de": "die Wohnung", "en": "the apartment (-ung → feminine)", "highlight": "ung" },
+        { "de": "die Freiheit", "en": "the freedom (-heit → feminine)", "highlight": "heit" },
+        { "de": "die Freundschaft", "en": "the friendship (-schaft → feminine)", "highlight": "schaft" },
+        { "de": "das Häuschen", "en": "the little house (-chen → neuter)", "highlight": "chen" },
+        { "de": "der Lehrer", "en": "the teacher (male, -er agent → masculine)", "highlight": "er" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What gender is 'Zeitung' (newspaper)?", "options": ["die (feminine — -ung suffix)", "der (masculine)", "das (neuter)"], "correctIndex": 0, "explanation": "Words ending in -ung are always feminine: die Zeitung, die Meinung (opinion), die Wohnung (apartment)." },
+        { "type": "multiple-choice", "prompt": "What gender is 'Freiheit' (freedom)?", "options": ["die (feminine — -heit suffix)", "der (masculine)", "das (neuter)"], "correctIndex": 0, "explanation": "Words ending in -heit are always feminine: die Freiheit, die Schönheit (beauty), die Gesundheit (health)." },
+        { "type": "fill-blank", "prompt": "Nouns ending in -schaft are always ___ gender", "acceptedAnswers": ["feminine", "die", "female"], "hint": "Like die Freundschaft (friendship)", "explanation": "-schaft nouns are always feminine (die): die Freundschaft, die Gesellschaft (society), die Mannschaft (team)." },
+        { "type": "multiple-choice", "prompt": "What gender is 'Büchlein' (little book)?", "options": ["das (neuter — -lein suffix)", "das (neuter — -chen suffix)", "die (feminine)"], "correctIndex": 0, "explanation": "Diminutive suffixes -lein (and -chen) always produce neuter nouns: das Büchlein, das Häuschen." },
+        { "type": "matching", "prompt": "Match each suffix to its gender:", "pairs": [
+          { "left": "-ung", "right": "die (feminine)" },
+          { "left": "-chen", "right": "das (neuter)" },
+          { "left": "-heit / -keit", "right": "die (feminine)" },
+          { "left": "-ment", "right": "das (neuter)" }
+        ], "explanation": "-ung, -heit, -keit, -schaft = feminine. -chen, -lein, -ment, -tum = neuter." },
+        { "type": "multiple-choice", "prompt": "What gender is 'Freundschaft' (friendship)?", "options": ["die (feminine)", "der (masculine)", "das (neuter)"], "correctIndex": 0, "explanation": "-schaft words are always feminine: die Freundschaft, die Gesellschaft, die Mannschaft." },
+        { "type": "fill-blank", "prompt": "die Schönheit — the suffix -heit tells us this noun is ___", "acceptedAnswers": ["feminine", "die", "female"], "hint": "One of three German genders", "explanation": "-heit always signals a feminine noun. die Schönheit (beauty), die Wahrheit (truth), die Gesundheit (health)." },
+        { "type": "multiple-choice", "prompt": "Which noun is definitely neuter based on its suffix?", "options": ["das Instrument (-ment)", "die Wohnung (-ung)", "der Frühling (-ling)"], "correctIndex": 0, "explanation": "-ment nouns are neuter: das Instrument, das Fundament, das Dokument. -ung is feminine, -ling is masculine." }
+      ]
+    },
+    {
+      "sectionId": "plurals",
+      "title": "Forming Plurals",
+      "explanation": "German plural formation is less predictable than English — there are multiple patterns. Common patterns: add -e (der Tisch → die Tische), add -er with Umlaut (das Buch → die Bücher), add -en or -n (die Frau → die Frauen), add -s (das Auto → die Autos, often for foreign words), or no change with Umlaut (der Vater → die Väter). Feminine nouns in -ung, -heit, -keit always add -en: die Wohnungen, die Freiheiten. The best approach is to learn the plural form alongside the noun.",
+      "tip": "Learn nouns as a trio: article + noun + plural. E.g., 'der Tisch / die Tische', 'das Buch / die Bücher'.",
+      "examples": [
+        { "de": "der Tisch → die Tische", "en": "table → tables (-e plural)", "highlight": "e" },
+        { "de": "das Buch → die Bücher", "en": "book → books (-er + Umlaut)", "highlight": "ücher" },
+        { "de": "die Frau → die Frauen", "en": "woman → women (-en plural)", "highlight": "en" },
+        { "de": "das Auto → die Autos", "en": "car → cars (-s plural)", "highlight": "s" },
+        { "de": "der Vater → die Väter", "en": "father → fathers (Umlaut, no ending)", "highlight": "ä" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the plural of 'das Buch' (book)?", "options": ["die Bücher", "die Buchs", "die Büche"], "correctIndex": 0, "explanation": "'das Buch' pluralizes to 'die Bücher' — the vowel u gets an Umlaut (ü) and -er is added." },
+        { "type": "multiple-choice", "prompt": "What is the plural of 'die Frau' (woman)?", "options": ["die Frauen", "die Fraue", "die Fraus"], "correctIndex": 0, "explanation": "'die Frau' pluralizes to 'die Frauen' by adding -en." },
+        { "type": "fill-blank", "prompt": "The plural of 'das Auto' (car) is die Autos. The plural suffix used is ___", "acceptedAnswers": ["-s", "s"], "hint": "Common for foreign loanwords", "explanation": "Many loanwords (often from English or French) form their plural by simply adding -s: Autos, Hotels, Computers." },
+        { "type": "multiple-choice", "prompt": "What is the plural of 'die Wohnung' (apartment)?", "options": ["die Wohnungen", "die Wohnungs", "die Wohnunge"], "correctIndex": 0, "explanation": "Nouns ending in -ung always form their plural with -en: die Wohnungen." },
+        { "type": "matching", "prompt": "Match each noun to its plural form:", "pairs": [
+          { "left": "der Tisch (table)", "right": "die Tische" },
+          { "left": "das Kind (child)", "right": "die Kinder" },
+          { "left": "die Frau (woman)", "right": "die Frauen" },
+          { "left": "das Auto (car)", "right": "die Autos" }
+        ], "explanation": "German has many plural patterns: Tische (-e), Kinder (-er), Frauen (-en), Autos (-s)." },
+        { "type": "multiple-choice", "prompt": "What article do ALL plural nouns use?", "options": ["die", "der", "das"], "correctIndex": 0, "explanation": "All plural nouns use 'die', regardless of their singular gender: der Mann → die Männer, das Kind → die Kinder, die Frau → die Frauen." },
+        { "type": "fill-blank", "prompt": "der Mann → die ___ (father/men use Umlaut + no ending change)", "acceptedAnswers": ["Männer", "männer"], "hint": "Add Umlaut to 'a' and -er", "explanation": "'der Mann' (man) pluralizes to 'die Männer'. The 'a' gets an Umlaut (ä) and -er is added." }
+      ]
+    }
+  ]
+}

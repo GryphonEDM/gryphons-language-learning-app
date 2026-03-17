@@ -2,48 +2,56 @@
   "level": "Beginner",
   "levelRu": "Начальный",
   "levelUk": "Початковий",
+  "levelDe": "Anfänger",
+  "nameDe": "Anfänger",
   "stories": [
     {
       "id": "b-1",
       "title": "A Good Day",
       "en": "Today is Saturday. I wake up at 9 o'clock. The sun is shining. I eat breakfast with my family. We have eggs and bread. After breakfast, I go to the park with my dog. We play for one hour. I am happy.",
       "ru": "Сегодня суббота. Я просыпаюсь в 9 часов. Солнце светит. Я ем завтрак с моей семьёй. У нас есть яйца и хлеб. После завтрака я иду в парк с моей собакой. Мы играем один час. Я счастлив/счастлива.",
-      "uk": "Сьогодні субота. Я прокидаюся о 9 годині. Сонце світить. Я їм сніданок з моєю сім'єю. У нас є яйця і хліб. Після сніданку я йду в парк з моїм собакою. Ми граємо одну годину. Я щасливий/щаслива."
+      "uk": "Сьогодні субота. Я прокидаюся о 9 годині. Сонце світить. Я їм сніданок з моєю сім'єю. У нас є яйця і хліб. Після сніданку я йду в парк з моїм собакою. Ми граємо одну годину. Я щасливий/щаслива.",
+      "de": "Heute ist Samstag. Ich wache um 9 Uhr auf. Die Sonne scheint. Ich frühstücke mit meiner Familie. Wir essen Eier und Brot. Nach dem Frühstück gehe ich mit meinem Hund in den Park. Wir spielen eine Stunde. Ich bin glücklich."
     },
     {
       "id": "b-2",
       "title": "At the Store",
       "en": "Today I go to the store. I need to buy food. I buy bread, milk, and apples. The apples are red and tasty. The seller is very kind. He says \"Have a good day!\" I pay with money. Then I go home. Mom cooks lunch.",
       "ru": "Сегодня я иду в магазин. Мне нужно купить еду. Я покупаю хлеб, молоко и яблоки. Яблоки красные и вкусные. Продавец очень добрый. Он говорит \"Хорошего дня!\" Я плачу деньгами. Потом я иду домой. Мама готовит обед.",
-      "uk": "Сьогодні я йду в магазин. Мені потрібно купити їжу. Я купую хліб, молоко і яблука. Яблука червоні і смачні. Продавець дуже добрий. Він каже \"Гарного дня!\" Я плачу грошима. Потім я йду додому. Мама готує обід."
+      "uk": "Сьогодні я йду в магазин. Мені потрібно купити їжу. Я купую хліб, молоко і яблука. Яблука червоні і смачні. Продавець дуже добрий. Він каже \"Гарного дня!\" Я плачу грошима. Потім я йду додому. Мама готує обід.",
+      "de": "Heute gehe ich in den Laden. Ich muss Lebensmittel kaufen. Ich kaufe Brot, Milch und Äpfel. Die Äpfel sind rot und lecker. Der Verkäufer ist sehr nett. Er sagt \"Einen schönen Tag!\" Ich bezahle mit Geld. Dann gehe ich nach Hause. Mama kocht Mittagessen."
     },
     {
       "id": "b-3",
       "title": "At School",
       "en": "I study at school. My school is big and bright. I have many friends at school. My teacher is very kind. Her name is Ms. Smith. Today we study mathematics and English. After lessons, I play football with my friends. I like my school very much.",
       "ru": "Я учусь в школе. Моя школа большая и светлая. У меня много друзей в школе. Моя учительница очень добрая. Её зовут госпожа Смит. Сегодня мы изучаем математику и английский. После уроков я играю в футбол с моими друзьями. Мне очень нравится моя школа.",
-      "uk": "Я вчуся в школі. Моя школа велика і світла. У мене багато друзів у школі. Моя вчителька дуже добра. Її звати пані Сміт. Сьогодні ми вивчаємо математику і англійську. Після уроків я граю у футбол з моїми друзями. Мені дуже подобається моя школа."
+      "uk": "Я вчуся в школі. Моя школа велика і світла. У мене багато друзів у школі. Моя вчителька дуже добра. Її звати пані Сміт. Сьогодні ми вивчаємо математику і англійську. Після уроків я граю у футбол з моїми друзями. Мені дуже подобається моя школа.",
+      "de": "Ich lerne in der Schule. Meine Schule ist groß und hell. Ich habe viele Freunde in der Schule. Meine Lehrerin ist sehr nett. Ihr Name ist Frau Schmidt. Heute lernen wir Mathematik und Englisch. Nach dem Unterricht spiele ich Fußball mit meinen Freunden. Ich mag meine Schule sehr."
     },
     {
       "id": "b-4",
       "title": "My Hobby",
       "en": "I have a hobby. I like to draw. Every evening I draw in my notebook. I draw animals and flowers. My favorite animal is a cat. I have many colored pencils. My mom likes my drawings. She puts them on the wall. I want to be an artist.",
       "ru": "У меня есть хобби. Я люблю рисовать. Каждый вечер я рисую в моём блокноте. Я рисую животных и цветы. Моё любимое животное - кошка. У меня много цветных карандашей. Моей маме нравятся мои рисунки. Она вешает их на стену. Я хочу быть художником/художницей.",
-      "uk": "У мене є хобі. Я люблю малювати. Щовечора я малюю в моєму зошиті. Я малюю тварин і квіти. Моя улюблена тварина - кішка. У мене багато кольорових олівців. Моїй мамі подобаються мої малюнки. Вона вішає їх на стіну. Я хочу бути художником/художницею."
+      "uk": "У мене є хобі. Я люблю малювати. Щовечора я малюю в моєму зошиті. Я малюю тварин і квіти. Моя улюблена тварина - кішка. У мене багато кольорових олівців. Моїй мамі подобаються мої малюнки. Вона вішає їх на стіну. Я хочу бути художником/художницею.",
+      "de": "Ich habe ein Hobby. Ich zeichne gern. Jeden Abend zeichne ich in meinem Heft. Ich zeichne Tiere und Blumen. Mein Lieblingstier ist eine Katze. Ich habe viele Buntstifte. Meiner Mama gefallen meine Zeichnungen. Sie hängt sie an die Wand. Ich möchte Künstler werden."
     },
     {
       "id": "b-5",
       "title": "The Birthday",
       "en": "Tomorrow is my birthday. I will be ten years old. My parents are preparing a party. They buy a big cake. The cake is chocolate. I invite five friends. We will play games and eat cake. I am very excited. Birthdays are wonderful!",
       "ru": "Завтра мой день рождения. Мне будет десять лет. Мои родители готовят вечеринку. Они покупают большой торт. Торт шоколадный. Я приглашаю пять друзей. Мы будем играть в игры и есть торт. Я очень взволнован/взволнована. Дни рождения замечательные!",
-      "uk": "Завтра мій день народження. Мені буде десять років. Мої батьки готують вечірку. Вони купують великий торт. Торт шоколадний. Я запрошую п'ять друзів. Ми будемо грати в ігри і їсти торт. Я дуже схвильований/схвильована. Дні народження чудові!"
+      "uk": "Завтра мій день народження. Мені буде десять років. Мої батьки готують вечірку. Вони купують великий торт. Торт шоколадний. Я запрошую п'ять друзів. Ми будемо грати в ігри і їсти торт. Я дуже схвильований/схвильована. Дні народження чудові!",
+      "de": "Morgen ist mein Geburtstag. Ich werde zehn Jahre alt. Meine Eltern bereiten eine Party vor. Sie kaufen einen großen Kuchen. Der Kuchen ist Schokolade. Ich lade fünf Freunde ein. Wir werden Spiele spielen und Kuchen essen. Ich bin sehr aufgeregt. Geburtstage sind wunderbar!"
     },
     {
       "id": "b-6",
       "title": "Weekend Plans",
       "en": "It is Friday evening. Tomorrow is the weekend. I don't go to school on the weekend. On Saturday morning, I help my father wash the car. In the afternoon, I visit my grandmother. She lives near the city. On Sunday, I rest at home and watch cartoons. I love weekends!",
       "ru": "Пятница вечером. Завтра выходные. Я не хожу в школу на выходных. В субботу утром я помогаю моему отцу мыть машину. Днём я навещаю мою бабушку. Она живёт рядом с городом. В воскресенье я отдыхаю дома и смотрю мультфильмы. Я люблю выходные!",
-      "uk": "П'ятниця вечором. Завтра вихідні. Я не ходжу в школу у вихідні. В суботу вранці я допомагаю моєму батькові мити машину. Вдень я відвідую мою бабусю. Вона живе біля міста. У неділю я відпочиваю вдома і дивлюся мультфільми. Я люблю вихідні!"
+      "uk": "П'ятниця вечором. Завтра вихідні. Я не ходжу в школу у вихідні. В суботу вранці я допомагаю моєму батькові мити машину. Вдень я відвідую мою бабусю. Вона живе біля міста. У неділю я відпочиваю вдома і дивлюся мультфільми. Я люблю вихідні!",
+      "de": "Es ist Freitagabend. Morgen ist das Wochenende. Ich gehe am Wochenende nicht in die Schule. Am Samstagmorgen helfe ich meinem Vater, das Auto zu waschen. Am Nachmittag besuche ich meine Oma. Sie wohnt in der Nähe der Stadt. Am Sonntag ruhe ich mich zu Hause aus und schaue Zeichentrickfilme. Ich liebe Wochenenden!"
     }
   ]
 }

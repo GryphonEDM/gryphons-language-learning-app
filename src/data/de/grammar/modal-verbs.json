@@ -1,0 +1,247 @@
+{
+  "lessonId": "modal-verbs",
+  "nameEn": "Modal Verbs",
+  "nameDe": "Modalverben",
+  "icon": "🔧",
+  "tier": "B1",
+  "prerequisites": ["verbs-present"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "core-modals-can-must-want",
+      "title": "können, müssen, wollen",
+      "explanation": "German has six modal verbs. This section covers the first three. 'können' means 'can/to be able to' and expresses ability or possibility. 'müssen' means 'must/have to' and expresses necessity or obligation. 'wollen' means 'to want to' and expresses desire or intention. All modal verbs are irregular in the singular present tense — the ich and er/sie/es forms have no ending (no -e or -t), and the stem often changes from the plural. Present tense of können: ich kann, du kannst, er/sie/es kann, wir können, ihr könnt, sie/Sie können.",
+      "tip": "Modal verbs always appear in position 2 in a main clause, and the dependent infinitive goes to the END of the sentence. Also note: 'müssen nicht' does NOT mean 'must not' — it means 'don't have to'. Use 'dürfen nicht' for 'must not/not allowed to'.",
+      "examples": [
+        { "de": "Ich kann Deutsch sprechen.", "en": "I can speak German.", "highlight": "kann ... sprechen" },
+        { "de": "Du musst jetzt lernen.", "en": "You must study now.", "highlight": "musst ... lernen" },
+        { "de": "Er will ein Buch lesen.", "en": "He wants to read a book.", "highlight": "will ... lesen" },
+        { "de": "Wir können morgen kommen.", "en": "We can come tomorrow.", "highlight": "können ... kommen" },
+        { "de": "Sie müssen nicht warten.", "en": "They don't have to wait. (NOT 'must not')", "highlight": "müssen nicht" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich ___ Klavier spielen. (I can play piano.)",
+          "options": ["kann", "will", "muss", "soll"],
+          "correctIndex": 0,
+          "explanation": "'können' expresses ability. 'ich kann' is the correct first-person singular form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Du ___ jetzt nach Hause gehen.",
+          "acceptedAnswers": ["musst", "kannst", "willst", "sollst", "darfst"],
+          "hint": "Any modal verb can fit here — which one means 'must/have to'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Sie müssen nicht kommen' mean?",
+          "options": ["They must not come.", "They do not have to come.", "They cannot come.", "They should not come."],
+          "correctIndex": 1,
+          "explanation": "'müssen nicht' = 'don't have to' (no obligation). To say 'must not', use 'dürfen nicht'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ ein neues Auto kaufen. (He wants to buy a new car.)",
+          "acceptedAnswers": ["will"],
+          "hint": "'wollen' expresses wanting/intention. What is the er/sie/es form?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form of 'können' is correct for 'wir'?",
+          "options": ["kann", "kannst", "könnt", "können"],
+          "correctIndex": 3,
+          "explanation": "'wir können' — the wir/sie/Sie forms match the infinitive stem. Only the singular ich/er/sie/es forms are irregular."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each modal verb to its primary English meaning:",
+          "pairs": [
+            { "left": "können", "right": "can / to be able to" },
+            { "left": "müssen", "right": "must / have to" },
+            { "left": "wollen", "right": "to want to" },
+            { "left": "dürfen nicht", "right": "must not / not allowed to" }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ heute nicht arbeiten. (I don't have to work today.)",
+          "acceptedAnswers": ["muss"],
+          "hint": "'muss nicht' = don't have to. What is the ich-form of müssen?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ihr ___ lauter sprechen. (You all can speak louder.)",
+          "options": ["kann", "könnt", "können", "kannst"],
+          "correctIndex": 1,
+          "explanation": "'ihr könnt' — the ihr-form of können is 'könnt' (stem könn- + -t ending)."
+        }
+      ]
+    },
+    {
+      "sectionId": "modals-may-should-like",
+      "title": "dürfen, sollen, mögen / möchten",
+      "explanation": "'dürfen' means 'may/to be allowed to' — it expresses permission or prohibition. 'sollen' means 'should/to be supposed to' — it expresses an obligation from an external source, often someone else's request or expectation. 'mögen' means 'to like' (general liking), while 'möchten' (its Konjunktiv II form) means 'would like to' and is used for polite requests. 'möchten' is extremely common in everyday German. Present: ich mag / ich möchte, du magst / du möchtest, er mag / er möchte.",
+      "tip": "'sollen' is for obligations given by others: 'Der Arzt sagt, ich soll mehr schlafen' (The doctor says I should sleep more). 'müssen' is for internal necessity. 'möchten' is the polite way to order or request — always use it in shops and restaurants.",
+      "examples": [
+        { "de": "Hier darf man nicht rauchen.", "en": "Smoking is not allowed here.", "highlight": "darf nicht" },
+        { "de": "Du sollst um 8 Uhr dort sein.", "en": "You are supposed to be there at 8 o'clock.", "highlight": "sollst ... sein" },
+        { "de": "Ich mag Kaffee sehr.", "en": "I like coffee a lot.", "highlight": "mag" },
+        { "de": "Ich möchte einen Kaffee, bitte.", "en": "I would like a coffee, please.", "highlight": "möchte" },
+        { "de": "Kinder dürfen das nicht sehen.", "en": "Children are not allowed to see that.", "highlight": "dürfen ... nicht sehen" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Im Krankenhaus ___ man nicht laut sprechen. (In the hospital, you are not allowed to speak loudly.)",
+          "options": ["will", "soll", "darf", "muss"],
+          "correctIndex": 2,
+          "explanation": "'dürfen' expresses permission/prohibition. 'darf nicht' = not allowed to. 'muss nicht' would mean 'doesn't have to'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ ein Glas Wasser, bitte. (I would like a glass of water, please.)",
+          "acceptedAnswers": ["möchte"],
+          "hint": "Polite 'would like' — the Konjunktiv II form of mögen."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Meine Mutter sagt, ich ___ mein Zimmer aufräumen. (My mother says I should/am supposed to clean my room.)",
+          "options": ["will", "soll", "darf", "mag"],
+          "correctIndex": 1,
+          "explanation": "'sollen' is used when the obligation comes from another person. Here, the mother's instruction = external obligation."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ keine Schokolade — er ist allergisch. (He is not allowed to eat chocolate — he is allergic.)",
+          "acceptedAnswers": ["darf"],
+          "hint": "Medical prohibition = not allowed. What is the er/sie/es form of dürfen?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between 'ich mag Musik' and 'ich möchte Musik hören'?",
+          "options": [
+            "They mean the same thing.",
+            "'mag' = I like music (general); 'möchte' = I would like to listen to music (specific desire/request).",
+            "'mag' = I want music; 'möchte' = I must listen to music.",
+            "'mag' is past tense; 'möchte' is present tense."
+          ],
+          "correctIndex": 1,
+          "explanation": "'mögen' (ich mag) expresses general liking. 'möchten' (ich möchte) expresses 'would like to' — a polite desire for a specific action."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ihr ___ bitte leiser sein. (You all should please be quieter — request from teacher)",
+          "acceptedAnswers": ["sollt"],
+          "hint": "'sollen' for an externally given request/obligation. ihr-form = sollt."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each modal to its usage context:",
+          "pairs": [
+            { "left": "dürfen", "right": "permission or prohibition" },
+            { "left": "sollen", "right": "obligation from another person" },
+            { "left": "mögen", "right": "general liking" },
+            { "left": "möchten", "right": "polite wish or request" }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Kinder ___ hier spielen. (Children are allowed to play here.)",
+          "options": ["dürfen", "sollen", "müssen", "wollen"],
+          "correctIndex": 0,
+          "explanation": "'dürfen' expresses permission. 'Kinder dürfen hier spielen' = children are allowed/permitted to play here."
+        }
+      ]
+    },
+    {
+      "sectionId": "modal-word-order",
+      "title": "Word Order with Modal Verbs",
+      "explanation": "Modal verbs follow the standard German word order rules with one key addition: the main verb (infinitive) is pushed to the END of the clause. In a main clause: Subject + Modal (position 2) + ... + Infinitive (end). Example: 'Ich kann heute Abend nicht kommen.' In a subordinate clause (after weil, dass, wenn, etc.), the modal itself moves to the end, coming AFTER the infinitive: '...weil ich heute Abend nicht kommen kann.' This is called the 'verbal bracket' (Satzklammer). With a separable verb as the main verb, the infinitive is used unseparated: 'Ich will früh aufstehen' (not 'Ich will auf früh stehen').",
+      "tip": "Main clause: MODAL in position 2, INFINITIVE at the end. Subordinate clause: INFINITIVE first, then MODAL at the very end. Think of it as: in subordinate clauses, the modal 'waits' until after all other verbs.",
+      "examples": [
+        { "de": "Ich muss heute arbeiten.", "en": "I have to work today. (modal pos. 2, infinitive at end)", "highlight": "muss ... arbeiten" },
+        { "de": "Er will ein neues Auto kaufen.", "en": "He wants to buy a new car.", "highlight": "will ... kaufen" },
+        { "de": "Ich komme nicht, weil ich lernen muss.", "en": "I'm not coming because I have to study. (subord. clause: lernen muss)", "highlight": "lernen muss" },
+        { "de": "Sie sagt, dass sie kommen kann.", "en": "She says that she can come. (subord. clause: kommen kann)", "highlight": "kommen kann" },
+        { "de": "Kannst du mir helfen?", "en": "Can you help me? (modal first in yes/no questions)", "highlight": "Kannst" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the infinitive go in a main clause with a modal verb?",
+          "options": ["Position 1", "Position 2", "Directly after the modal", "At the end of the clause"],
+          "correctIndex": 3,
+          "explanation": "In a main clause, the conjugated modal verb is in position 2, and the infinitive goes to the very end of the clause."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ morgen früh ___ (aufstehen — separable). (I have to get up early tomorrow.)",
+          "acceptedAnswers": ["muss ... aufstehen", "will ... aufstehen", "möchte ... aufstehen"],
+          "hint": "Modal goes in position 2; the separable verb stays together as an infinitive at the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word order is correct for a subordinate clause?",
+          "options": [
+            "...weil ich kann nicht kommen.",
+            "...weil ich nicht kommen kann.",
+            "...weil kann ich nicht kommen.",
+            "...weil ich nicht kann kommen."
+          ],
+          "correctIndex": 1,
+          "explanation": "In a subordinate clause, the modal verb goes to the end, after the infinitive: '...weil ich nicht kommen kann'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Rearrange: [Er / heute / arbeiten / muss]. Start with 'Er'.",
+          "acceptedAnswers": ["Er muss heute arbeiten."],
+          "hint": "Subject first, modal second, infinitive last."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In a yes/no question, where does the modal verb go?",
+          "options": ["Position 2", "At the end", "Position 1 (before the subject)", "After the subject"],
+          "correctIndex": 2,
+          "explanation": "In yes/no questions, the conjugated verb (including modals) moves to position 1, before the subject: 'Kannst du mir helfen?'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er sagt, dass er nicht ___ kann. (He says that he cannot come.)",
+          "acceptedAnswers": ["kommen"],
+          "hint": "In the 'dass' subordinate clause, the infinitive comes before the modal at the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correctly ordered sentence: 'I want to learn German quickly.'",
+          "options": [
+            "Ich will schnell lernen Deutsch.",
+            "Ich will Deutsch schnell lernen.",
+            "Ich Deutsch will schnell lernen.",
+            "Schnell will ich Deutsch lernen nicht."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ich will Deutsch schnell lernen' — modal in position 2, infinitive 'lernen' at the end. Adverbs and objects go between the modal and the infinitive."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ du mir bitte helfen? (Can you please help me? — form a yes/no question)",
+          "acceptedAnswers": ["Kannst"],
+          "hint": "Yes/no questions start with the conjugated modal verb. du-form of können."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich bleibe zu Hause, weil ich krank bin und ___ .",
+          "options": [
+            "ich muss ausruhen",
+            "ausruhen ich muss",
+            "ich ausruhen muss",
+            "muss ich ausruhen"
+          ],
+          "correctIndex": 2,
+          "explanation": "In the subordinate clause after 'weil', the verb order is: subject + other elements + infinitive + modal at end: 'ich ausruhen muss'."
+        }
+      ]
+    }
+  ]
+}

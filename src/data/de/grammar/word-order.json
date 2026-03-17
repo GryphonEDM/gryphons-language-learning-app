@@ -1,0 +1,91 @@
+{
+  "lessonId": "word-order",
+  "nameEn": "Word Order",
+  "nameDe": "Wortstellung",
+  "icon": "🔀",
+  "tier": "A1",
+  "prerequisites": ["verbs-present"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "basic-svo",
+      "title": "Basic SVO Order",
+      "explanation": "In a basic German statement, the order is Subject–Verb–Object (SVO), just like English. The verb always comes in second position. 'Ich trinke Kaffee.' (I drink coffee.) — Subject: Ich, Verb: trinke, Object: Kaffee. This is called the 'default' order. In German, the verb's position in second place is the most important rule in the entire language. No matter what comes first, the conjugated verb must be in position 2.",
+      "tip": "The verb is ALWAYS in position 2 in a German main clause. Count it: [Position 1] [VERB] [rest of sentence].",
+      "examples": [
+        { "de": "Ich trinke Kaffee.", "en": "I drink coffee. (S–V–O)", "highlight": "trinke" },
+        { "de": "Sie liest ein Buch.", "en": "She reads a book. (S–V–O)", "highlight": "liest" },
+        { "de": "Wir wohnen in Berlin.", "en": "We live in Berlin. (S–V–Adverb)", "highlight": "wohnen" },
+        { "de": "Der Hund schläft.", "en": "The dog sleeps. (S–V only)", "highlight": "schläft" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "In basic German word order, where does the verb go?", "options": ["In second position (after the subject)", "At the end of the sentence", "At the beginning of the sentence"], "correctIndex": 0, "explanation": "In a German main clause, the conjugated verb always occupies the second position. This is the V2 rule." },
+        { "type": "multiple-choice", "prompt": "Which sentence has correct German word order?", "options": ["Ich trinke Kaffee.", "Ich Kaffee trinke.", "Trinke ich Kaffee."], "correctIndex": 0, "explanation": "'Ich trinke Kaffee' follows S–V–O order with the verb in position 2. The second option puts the verb at the end (incorrect for a statement), and the third is a question." },
+        { "type": "fill-blank", "prompt": "Arrange: Buch / liest / Sie / ein → She reads a book.", "acceptedAnswers": ["Sie liest ein Buch.", "Sie liest ein Buch"], "hint": "Subject first, then verb in position 2", "explanation": "'Sie liest ein Buch.' — Subject (Sie) + Verb (liest) + Object (ein Buch)." },
+        { "type": "multiple-choice", "prompt": "In 'Wir wohnen in Berlin', what is in position 1?", "options": ["Wir (the subject)", "wohnen (the verb)", "in Berlin"], "correctIndex": 0, "explanation": "'Wir' is the subject in position 1. 'wohnen' is the verb in position 2. 'in Berlin' follows at the end." },
+        { "type": "matching", "prompt": "Label each part of 'Er kauft ein Auto':", "pairs": [
+          { "left": "Er", "right": "Subject (Position 1)" },
+          { "left": "kauft", "right": "Verb (Position 2)" },
+          { "left": "ein", "right": "Article" },
+          { "left": "Auto", "right": "Object (Position 3+)" }
+        ], "explanation": "Er = subject (pos. 1), kauft = verb (pos. 2), ein Auto = direct object (pos. 3+)." },
+        { "type": "multiple-choice", "prompt": "What is the correct order for 'The child plays in the park'?", "options": ["Das Kind spielt im Park.", "Das Kind im Park spielt.", "Im Park das Kind spielt."], "correctIndex": 0, "explanation": "'Das Kind spielt im Park.' — Subject (Das Kind) in position 1, Verb (spielt) in position 2, location (im Park) at the end." },
+        { "type": "fill-blank", "prompt": "Der Mann ___ Brot. (The man buys bread.) — verb: kaufen", "acceptedAnswers": ["kauft"], "hint": "3rd person singular of kaufen", "explanation": "'Der Mann kauft Brot.' — kaufen → er/sie/es kauft. Verb in position 2." }
+      ]
+    },
+    {
+      "sectionId": "v2-rule",
+      "title": "The V2 Rule — Fronting",
+      "explanation": "The most important German grammar rule: the conjugated verb is ALWAYS in position 2 in a main clause. This means that when you put an adverb, time expression, or other element first (position 1), the subject must move to position 3 (after the verb). This is called 'Subject-Verb inversion'. Example: 'Heute gehe ich einkaufen.' (Today I am going shopping.) — Heute (position 1), gehe (position 2), ich (position 3). Compare: 'Ich gehe heute einkaufen.' Both are correct!",
+      "tip": "Fronted element → verb MUST come second → subject comes third. Think of the verb as an anchor nailed to position 2.",
+      "examples": [
+        { "de": "Heute gehe ich einkaufen.", "en": "Today I am going shopping. (Heute fronted)", "highlight": "gehe" },
+        { "de": "Morgen kommt mein Freund.", "en": "Tomorrow my friend is coming. (Morgen fronted)", "highlight": "kommt" },
+        { "de": "Jetzt lerne ich Deutsch.", "en": "Now I am learning German. (Jetzt fronted)", "highlight": "lerne" },
+        { "de": "Im Sommer fahren wir ans Meer.", "en": "In summer we drive to the sea. (Prepositional phrase fronted)", "highlight": "fahren" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What happens to the subject when a time word is fronted?", "options": ["It moves to position 3 (after the verb)", "It stays in position 1", "It moves to the end"], "correctIndex": 0, "explanation": "When a non-subject is fronted to position 1, the subject moves to position 3, keeping the verb locked in position 2. This is subject-verb inversion." },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly fronts 'Morgen' (tomorrow)?", "options": ["Morgen kommt mein Freund.", "Morgen mein Freund kommt.", "Morgen mein Freund ist kommen."], "correctIndex": 0, "explanation": "'Morgen kommt mein Freund.' — Morgen (pos. 1), kommt (pos. 2), mein Freund (pos. 3). Verb stays in position 2." },
+        { "type": "fill-blank", "prompt": "Heute ___ wir Fußball. (Today we play football.) — spielen", "acceptedAnswers": ["spielen"], "hint": "Verb in position 2 after 'Heute'", "explanation": "'Heute spielen wir Fußball.' Heute is fronted (pos. 1), spielen = verb (pos. 2), wir = subject (pos. 3)." },
+        { "type": "multiple-choice", "prompt": "Rearrange to front the time word: 'Ich gehe morgen einkaufen.'", "options": ["Morgen gehe ich einkaufen.", "Morgen ich gehe einkaufen.", "Einkaufen gehe ich morgen."], "correctIndex": 0, "explanation": "Front 'morgen' → invert subject and verb: 'Morgen gehe ich einkaufen.' Verb (gehe) stays in position 2." },
+        { "type": "matching", "prompt": "Identify the position of each word in 'Heute lerne ich Deutsch':", "pairs": [
+          { "left": "Heute", "right": "Position 1 (fronted adverb)" },
+          { "left": "lerne", "right": "Position 2 (verb — always here!)" },
+          { "left": "ich", "right": "Position 3 (subject, inverted)" },
+          { "left": "Deutsch", "right": "Position 4 (object)" }
+        ], "explanation": "The V2 rule in action: fronted element (pos 1) + conjugated verb (pos 2) + subject (pos 3) + rest." },
+        { "type": "multiple-choice", "prompt": "Are 'Ich lerne heute Deutsch' and 'Heute lerne ich Deutsch' both correct?", "options": ["Yes, both are correct German", "Only 'Ich lerne heute Deutsch' is correct", "Only 'Heute lerne ich Deutsch' is correct"], "correctIndex": 0, "explanation": "Both sentences are grammatically correct. German allows you to front different elements to change emphasis. The verb always stays in position 2." },
+        { "type": "fill-blank", "prompt": "Abends ___ wir zusammen. (In the evenings we eat together.) — essen", "acceptedAnswers": ["essen"], "hint": "Verb in position 2 after 'Abends'", "explanation": "'Abends essen wir zusammen.' Abends is fronted (pos.1), essen = verb (pos. 2), wir = subject (pos. 3)." }
+      ]
+    },
+    {
+      "sectionId": "questions",
+      "title": "Questions: Yes/No and W-Questions",
+      "explanation": "German forms questions in two ways. Yes/No questions (Entscheidungsfragen): put the verb FIRST (before the subject): 'Kommst du morgen?' (Are you coming tomorrow?). This is verb-first order. W-questions (Ergänzungsfragen): start with a W-question word, then the verb in position 2 (same as V2 rule): 'Woher kommst du?' (Where do you come from?). Common W-words: wer (who), was (what), wo (where), woher (from where), wohin (to where), wann (when), warum (why), wie (how), wie viel (how much).",
+      "tip": "Yes/No question = Verb first! W-question = W-word first, then verb (V2 still applies).",
+      "examples": [
+        { "de": "Kommst du morgen?", "en": "Are you coming tomorrow? (verb first)", "highlight": "Kommst" },
+        { "de": "Hast du ein Auto?", "en": "Do you have a car? (haben first)", "highlight": "Hast" },
+        { "de": "Woher kommst du?", "en": "Where do you come from?", "highlight": "Woher" },
+        { "de": "Was machst du heute?", "en": "What are you doing today?", "highlight": "Was" },
+        { "de": "Wie viel kostet das?", "en": "How much does that cost?", "highlight": "Wie viel" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you form a yes/no question in German?", "options": ["Put the verb first (before the subject)", "Add 'Ist es wahr, dass...' before the statement", "Use rising intonation with normal word order"], "correctIndex": 0, "explanation": "Yes/No questions place the conjugated verb in position 1: 'Kommst du morgen?' (Are you coming tomorrow?)" },
+        { "type": "multiple-choice", "prompt": "Which is the correct yes/no question for 'Du sprichst Deutsch'?", "options": ["Sprichst du Deutsch?", "Du sprichst Deutsch?", "Ob du Deutsch sprichst?"], "correctIndex": 0, "explanation": "Invert the subject and verb: 'Sprichst du Deutsch?' Verb comes first in yes/no questions." },
+        { "type": "fill-blank", "prompt": "___ kommst du? (Where do you come from?) — W-question word for origin", "acceptedAnswers": ["Woher"], "hint": "Wo + her = from where", "explanation": "'Woher' means 'from where'. 'Woher kommst du?' = Where do you come from?" },
+        { "type": "multiple-choice", "prompt": "Which W-word means 'when'?", "options": ["wann", "wo", "warum"], "correctIndex": 0, "explanation": "'wann' = when. 'wo' = where. 'warum' = why. 'Wann kommst du?' = When are you coming?" },
+        { "type": "matching", "prompt": "Match each W-word to its English meaning:", "pairs": [
+          { "left": "wer", "right": "who" },
+          { "left": "was", "right": "what" },
+          { "left": "wo", "right": "where" },
+          { "left": "warum", "right": "why" }
+        ], "explanation": "wer=who, was=what, wo=where, wann=when, warum=why, wie=how, woher=from where, wohin=to where." },
+        { "type": "multiple-choice", "prompt": "What is the word order in 'Was machst du heute?'", "options": ["W-word (pos.1), verb (pos.2), subject (pos.3), time (pos.4)", "Subject, verb, W-word, time", "Verb, W-word, subject, time"], "correctIndex": 0, "explanation": "In W-questions, the W-word is in position 1, the verb stays in position 2, and the subject follows: Was (1) machst (2) du (3) heute (4)?" },
+        { "type": "fill-blank", "prompt": "___ kostet das? (How much does that cost?)", "acceptedAnswers": ["Wie viel", "Wieviel"], "hint": "Two words meaning 'how much'", "explanation": "'Wie viel' (or 'Wieviel') means 'how much'. Wie viel kostet das? = How much does that cost?" },
+        { "type": "multiple-choice", "prompt": "How do you ask 'Do you have a dog?' in German?", "options": ["Hast du einen Hund?", "Du hast einen Hund?", "Hast einen Hund du?"], "correctIndex": 0, "explanation": "Yes/No question: verb first. 'haben' → hast (for du). 'Hast du einen Hund?' Note: 'Hund' is accusative (direct object) → einen." }
+      ]
+    }
+  ]
+}
