@@ -76,6 +76,9 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
   const [aiIncludeQuestions, setAiIncludeQuestions] = useState(false);
   const [aiGenerating, setAiGenerating] = useState(false);
   const [aiError, setAiError] = useState(null);
+  const [aiProgressStep, setAiProgressStep] = useState('');
+  const [aiProgressPct, setAiProgressPct] = useState(0);
+  const aiAbortRef = useRef(null);
 
   // Flatten stories for prev/next navigation
   const flatStories = stories.flatMap(group => group.stories);
@@ -272,10 +275,28 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
     }
   };
 
-  // AI story generation
+  // AI story generation — progress detection based on streaming JSON keys
+  const detectProgress = (accumulated, hasQuestions) => {
+    if (hasQuestions && accumulated.includes('"questions"')) return { step: 'Creating comprehension questions...', pct: 85 };
+    if (accumulated.includes('"en"'))       return { step: 'Adding English translation...', pct: hasQuestions ? 65 : 80 };
+    if (accumulated.includes('"ru"'))       return { step: 'Translating to Russian...', pct: 50 };
+    if (accumulated.includes('"uk"'))       return { step: 'Writing the story in Ukrainian...', pct: 30 };
+    if (accumulated.includes('"titleEn"'))  return { step: 'Crafting a title...', pct: 10 };
+    return { step: 'Starting generation...', pct: 5 };
+  };
+
+  const cancelGeneration = () => {
+    if (aiAbortRef.current) aiAbortRef.current.abort();
+    setAiGenerating(false);
+    setAiProgressStep('');
+    setAiProgressPct(0);
+  };
+
   const generateStory = async () => {
     setAiGenerating(true);
     setAiError(null);
+    setAiProgressStep('Starting generation...');
+    setAiProgressPct(0);
 
     const topic = aiTopic.trim() || 'daily life';
     const questionsInstruction = aiIncludeQuestions
@@ -298,6 +319,9 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
 }${questionsInstruction}`;
 
     try {
+      const abort = new AbortController();
+      aiAbortRef.current = abort;
+
       const res = await fetch('/llm/chat/completions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -308,26 +332,55 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
             { role: 'user', content: prompt }
           ],
           temperature: 0.7,
-          stream: false,
+          stream: true,
           max_tokens: 2000
-        })
+        }),
+        signal: abort.signal,
       });
 
       if (!res.ok) throw new Error('LLM request failed');
 
-      const data = await res.json();
-      let content = data.choices?.[0]?.message?.content || '';
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let accumulated = '';
+      let sseBuffer = '';
 
-      // Strip markdown fences if present
-      content = content.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+      while (true) {
+        if (abort.signal.aborted) { reader.cancel(); break; }
+        const { done, value } = await reader.read();
+        if (done) break;
+        sseBuffer += decoder.decode(value, { stream: true });
+        const lines = sseBuffer.split('\n');
+        sseBuffer = lines.pop();
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') break;
+          try {
+            const chunk = JSON.parse(data);
+            const delta = chunk.choices?.[0]?.delta?.content;
+            if (delta) {
+              accumulated += delta;
+              const progress = detectProgress(accumulated, aiIncludeQuestions);
+              setAiProgressStep(progress.step);
+              setAiProgressPct(progress.pct);
+            }
+          } catch { /* ignore malformed chunks */ }
+        }
+      }
 
-      // Try to extract JSON object
+      if (abort.signal.aborted) return;
+
+      // Parse accumulated response
+      let content = accumulated.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
       const jsonMatch = content.match(/\{[\s\S]*\}/);
       if (!jsonMatch) throw new Error('No JSON found in response');
 
       const story = JSON.parse(jsonMatch[0]);
-
       if (!story.uk && !story.ru) throw new Error('Missing required fields');
+
+      setAiProgressPct(100);
+      setAiProgressStep('Done!');
 
       const aiStory = {
         id: 'ai-' + Date.now(),
@@ -341,7 +394,6 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         createdAt: Date.now(),
       };
 
-      // Save to localStorage
       saveAiStory(aiStory);
       setAiStories(prev => [aiStory, ...prev]);
 
@@ -360,6 +412,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
       setAiGenerating(false);
       handleSelectItem(item);
     } catch (err) {
+      if (err.name === 'AbortError') return;
       setAiGenerating(false);
       setAiError(err.message === 'Failed to fetch'
         ? 'Could not connect to LM Studio. Make sure it is running at localhost:1234.'
@@ -562,12 +615,16 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
             {aiGenerating ? 'Generating...' : 'Generate Story'}
           </button>
 
-          {/* Loading indicator */}
+          {/* Loading indicator with progress */}
           {aiGenerating && (
             <div style={styles.loadingContainer}>
               <SpinKeyframes />
               <div style={styles.loadingSpinner} />
-              <div style={styles.loadingText}>Writing your story...</div>
+              <div style={styles.loadingText}>{aiProgressStep || 'Starting generation...'}</div>
+              <div style={styles.progressBarTrack}>
+                <div style={{ ...styles.progressBarFill, width: `${aiProgressPct}%` }} />
+              </div>
+              <button style={styles.cancelBtn} onClick={cancelGeneration}>Cancel</button>
             </div>
           )}
 
@@ -1143,6 +1200,30 @@ const styles = {
   loadingText: {
     color: 'rgba(255,255,255,0.6)',
     fontSize: '1rem',
+  },
+  progressBarTrack: {
+    width: '100%',
+    maxWidth: '300px',
+    height: '6px',
+    background: 'rgba(139,92,246,0.15)',
+    borderRadius: '3px',
+    overflow: 'hidden',
+  },
+  progressBarFill: {
+    height: '100%',
+    background: 'linear-gradient(90deg, #8b5cf6, #c4b5fd)',
+    borderRadius: '3px',
+    transition: 'width 0.5s ease-out',
+  },
+  cancelBtn: {
+    padding: '0.4rem 1rem',
+    borderRadius: '8px',
+    border: '1px solid rgba(255,255,255,0.15)',
+    background: 'transparent',
+    color: 'rgba(255,255,255,0.5)',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    fontSize: '0.85rem',
   },
   errorBox: {
     background: 'rgba(248,113,113,0.1)',
