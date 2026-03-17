@@ -207,5 +207,13 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     stopSpeaking();
   }, []);
 
+  // Stop TTS on unmount
+  useEffect(() => {
+    return () => {
+      ttsSpeakingRef.current = false;
+      stopSpeaking();
+    };
+  }, []);
+
   return { messages, input, setInput, loading, send, reset, scrollRef, inputRef, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, onWordClick, activeWord, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode };
 }

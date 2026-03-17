@@ -49,6 +49,8 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth > 768);
   const [ttsHighlight, setTtsHighlight] = useState(null); // { msgIdx, wordStart, wordEnd }
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [contextLimit, setContextLimit] = useState(null); // max context tokens from model
+  const [tokenUsage, setTokenUsage] = useState(0); // total_tokens from last response
   const ttsSpeakingRef = useRef(false);
   const abortRef = useRef(null);
   const chatAreaRef = useRef(null);
@@ -87,11 +89,31 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     if (el) el.scrollTop = el.scrollHeight;
   }, [activeSession?.displayMessages, isLoading]);
 
-  // Check LM Studio connection on mount
+  // Check LM Studio connection and get model context length on mount
   useEffect(() => {
     fetch('/llm/models')
       .then(res => setLlmConnected(res.ok))
       .catch(() => setLlmConnected(false));
+
+    // Fetch context length from LM Studio native API
+    fetch('/lmstudio/models')
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (!data?.models) return;
+        // Find a loaded model and get its context length
+        for (const m of data.models) {
+          const loaded = m.loaded_instances?.[0];
+          if (loaded?.config?.context_length) {
+            setContextLimit(loaded.config.context_length);
+            return;
+          }
+          if (m.max_context_length) {
+            setContextLimit(m.max_context_length);
+            return;
+          }
+        }
+      })
+      .catch(() => {}); // LM Studio native API not available, bar just won't show
   }, []);
 
   function startNewChat() {
@@ -100,6 +122,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setActiveId(session.id);
     setUserInput('');
     setError(null);
+    setTokenUsage(0);
   }
 
   function deleteSession(id) {
@@ -122,9 +145,15 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setSessions(prev => prev.map(s => s.id === activeId ? updater(s) : s));
   }
 
+  const contextFull = contextLimit && tokenUsage / contextLimit > 0.95;
+
   const handleSend = async (directText, fromSTT = false) => {
     const text = (directText || userInput).trim();
     if (!text || isLoading || !activeSession) return;
+    if (contextFull) {
+      setError('Context window is full. Please start a new chat.');
+      return;
+    }
 
     setError(null);
     stopAll();
@@ -167,6 +196,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           messages: newMessages,
           temperature: 0.7,
           stream: true,
+          stream_options: { include_usage: true },
         }),
         signal: abort.signal,
       });
@@ -199,6 +229,10 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
           if (data === '[DONE]') break;
           try {
             const chunk = JSON.parse(data);
+            // Capture token usage from final chunk
+            if (chunk.usage) {
+              setTokenUsage(chunk.usage.total_tokens || 0);
+            }
             const delta = chunk.choices?.[0]?.delta?.content;
             if (delta) {
               reply += delta;
@@ -269,6 +303,15 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
     setIsLoading(false);
   }, []);
 
+  // Stop TTS and abort any pending LLM request on unmount
+  useEffect(() => {
+    return () => {
+      ttsSpeakingRef.current = false;
+      stopSpeaking();
+      if (abortRef.current) { abortRef.current.abort(); abortRef.current = null; }
+    };
+  }, []);
+
   const speakWithHighlight = useCallback(async (text, msgIdx) => {
     if (!ttsEnabled || !onSpeak) return;
     ttsSpeakingRef.current = true;
@@ -312,7 +355,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             <div
               key={s.id}
               style={{ ...styles.sessionItem, ...(s.id === activeId ? styles.sessionItemActive : {}) }}
-              onClick={() => { setActiveId(s.id); setError(null); }}
+              onClick={() => { setActiveId(s.id); setError(null); setTokenUsage(0); }}
             >
               <div style={styles.sessionTitle}>{s.title}</div>
               <div style={styles.sessionMeta}>
@@ -342,12 +385,32 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             <span style={styles.topBarSub}>{langName}</span>
           </div>
           <button style={styles.newChatBtnTop} onClick={startNewChat} title="New chat">＋ New</button>
+          {contextLimit && tokenUsage > 0 && (
+            <div style={styles.contextBar}>
+              <div style={styles.contextBarTrack}>
+                <div style={{
+                  ...styles.contextBarFill,
+                  width: `${Math.min(100, (tokenUsage / contextLimit) * 100)}%`,
+                  background: tokenUsage / contextLimit > 0.9 ? '#f87171'
+                    : tokenUsage / contextLimit > 0.7 ? '#fbbf24' : '#4ade80',
+                }} />
+              </div>
+              <span style={styles.contextBarLabel}>
+                {Math.round((tokenUsage / contextLimit) * 100)}%
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Banners */}
         {llmConnected === false && (
           <div style={styles.warningBanner}>
             ⚠️ LM Studio not detected at localhost:1234. Please start LM Studio and load a model.
+          </div>
+        )}
+        {contextLimit && tokenUsage / contextLimit > 0.9 && (
+          <div style={styles.warningBanner}>
+            ⚠️ Context is {Math.round((tokenUsage / contextLimit) * 100)}% full — start a new chat to avoid degraded responses.
           </div>
         )}
         {(error || sttError) && (
@@ -445,9 +508,9 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               <button style={styles.stopBtn} onClick={stopAll} title="Stop">⏹ Stop</button>
             )}
             <button
-              style={{ ...styles.sendBtn, ...(!userInput.trim() || isLoading ? styles.sendBtnDisabled : {}) }}
+              style={{ ...styles.sendBtn, ...(!userInput.trim() || isLoading || contextFull ? styles.sendBtnDisabled : {}) }}
               onClick={() => handleSend()}
-              disabled={isLoading || !userInput.trim()}
+              disabled={isLoading || !userInput.trim() || contextFull}
             >Send</button>
           </div>
         </div>
@@ -640,6 +703,29 @@ const styles = {
     fontSize: '0.88rem',
     fontWeight: '600',
     fontFamily: 'inherit',
+  },
+  contextBar: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.4rem',
+    marginLeft: 'auto',
+  },
+  contextBarTrack: {
+    width: '80px',
+    height: '6px',
+    background: 'rgba(255,255,255,0.1)',
+    borderRadius: '3px',
+    overflow: 'hidden',
+  },
+  contextBarFill: {
+    height: '100%',
+    borderRadius: '3px',
+    transition: 'width 0.3s, background 0.3s',
+  },
+  contextBarLabel: {
+    fontSize: '0.7rem',
+    color: 'rgba(255,255,255,0.5)',
+    minWidth: '2rem',
   },
   warningBanner: {
     background: 'rgba(255,160,0,0.12)',

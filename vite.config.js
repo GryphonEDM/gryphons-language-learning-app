@@ -32,6 +32,11 @@ export default defineConfig({
         target: 'http://localhost:1234/v1',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/llm/, '')
+      },
+      '/lmstudio': {
+        target: 'http://localhost:1234/api/v1',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/lmstudio/, '')
       }
     }
   }
