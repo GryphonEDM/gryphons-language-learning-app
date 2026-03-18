@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import { reviewCard, initSRSCard, mapCorrectToRating } from '../utils/srs.js';
 
 /**
  * Custom hook for managing learning progress across all modes
@@ -26,7 +27,7 @@ export const useProgress = (state, setState) => {
     }));
   }, [setState]);
 
-  const trackVocabularyMastery = useCallback((word, correct) => {
+  const trackVocabularyMastery = useCallback((word, correct, mode) => {
     setState(prev => {
       const wordData = prev.vocabularyMastery?.[word] || {
         timesCorrect: 0,
@@ -36,10 +37,19 @@ export const useProgress = (state, setState) => {
         modesUsed: []
       };
 
+      // Update legacy fields
       const newTimesCorrect = correct ? wordData.timesCorrect + 1 : wordData.timesCorrect;
       const newTimesWrong = correct ? wordData.timesWrong : wordData.timesWrong + 1;
       const totalAttempts = newTimesCorrect + newTimesWrong;
       const masteryLevel = totalAttempts > 0 ? newTimesCorrect / totalAttempts : 0;
+      const modesUsed = mode && !wordData.modesUsed?.includes(mode)
+        ? [...(wordData.modesUsed || []), mode]
+        : (wordData.modesUsed || []);
+
+      // Compute SRS update
+      const rating = mapCorrectToRating(correct);
+      const srsCard = wordData.stability !== undefined ? wordData : { ...wordData, ...initSRSCard() };
+      const updatedSRS = reviewCard(srsCard, rating);
 
       return {
         ...prev,
@@ -50,7 +60,8 @@ export const useProgress = (state, setState) => {
             timesWrong: newTimesWrong,
             lastReviewed: new Date().toISOString(),
             masteryLevel,
-            modesUsed: wordData.modesUsed
+            modesUsed,
+            ...updatedSRS
           }
         }
       };

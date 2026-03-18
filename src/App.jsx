@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { storageGet, storageSet, storageFlush, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
+import { reviewCard, initSRSCard, mapCorrectToRating } from './utils/srs.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -21,6 +22,7 @@ import StoryMode from './components/modes/StoryMode.jsx';
 import ChatMode from './components/modes/ChatMode.jsx';
 import MasteredWordsManager from './components/modes/MasteredWordsManager.jsx';
 import SpeechMode from './components/modes/SpeechMode.jsx';
+import MinimalPairsMode from './components/modes/MinimalPairsMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
@@ -899,6 +901,40 @@ export default function UkrainianTypingGame() {
     setMasteredWordsList(prev => prev.filter(m => m.word !== word));
   }, []);
 
+  // Unified progress tracker — feeds all modes into modeProgress + vocabularyMastery (with SRS)
+  const handleTrackProgress = useCallback((mode, data) => {
+    setModeProgress(prev => ({
+      ...prev,
+      [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
+    }));
+    if (data.word) {
+      const correct = data.correct !== undefined ? data.correct : !!data.mastered;
+      setVocabularyMastery(prev => {
+        const wordData = prev[data.word] || {
+          timesCorrect: 0, timesWrong: 0, lastReviewed: null, masteryLevel: 0, modesUsed: []
+        };
+        const newTimesCorrect = correct ? wordData.timesCorrect + 1 : wordData.timesCorrect;
+        const newTimesWrong = correct ? wordData.timesWrong : wordData.timesWrong + 1;
+        const totalAttempts = newTimesCorrect + newTimesWrong;
+        const masteryLevel = totalAttempts > 0 ? newTimesCorrect / totalAttempts : 0;
+        const modesUsed = mode && !wordData.modesUsed?.includes(mode)
+          ? [...(wordData.modesUsed || []), mode]
+          : (wordData.modesUsed || []);
+        const rating = mapCorrectToRating(correct);
+        const srsCard = wordData.stability !== undefined ? wordData : { ...wordData, ...initSRSCard() };
+        const updatedSRS = reviewCard(srsCard, rating);
+        return {
+          ...prev,
+          [data.word]: {
+            timesCorrect: newTimesCorrect, timesWrong: newTimesWrong,
+            lastReviewed: new Date().toISOString(), masteryLevel, modesUsed,
+            ...updatedSRS
+          }
+        };
+      });
+    }
+  }, []);
+
   // Language switching handler
   const switchLanguage = useCallback((newLang) => {
     if (newLang === currentLanguage) return;
@@ -1604,6 +1640,13 @@ export default function UkrainianTypingGame() {
                     <p>Hear words and type what you hear</p>
                   </div>
                 </div>
+                <div className="mode-card" data-mode="minimal-pairs" onClick={() => setGameMode('minimal-pairs')}>
+                  <div className="mode-icon">🎯</div>
+                  <div className="mode-info">
+                    <h3>Minimal Pairs</h3>
+                    <p>Train your ear to distinguish similar sounds</p>
+                  </div>
+                </div>
                 <div className="mode-card" data-mode="speech" onClick={() => setGameMode('speech')}>
                   <div className="mode-icon">🎙️</div>
                   <div className="mode-info">
@@ -2184,29 +2227,7 @@ export default function UkrainianTypingGame() {
               setSelectedVocabSet(null);
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: {
-                  ...(prev[mode] || {}),
-                  ...data,
-                  lastStudied: new Date().toISOString()
-                }
-              }));
-              // Track vocabulary mastery
-              if (data.word) {
-                setVocabularyMastery(prev => ({
-                  ...prev,
-                  [data.word]: {
-                    ...(prev[data.word] || { timesCorrect: 0, timesWrong: 0 }),
-                    timesCorrect: (prev[data.word]?.timesCorrect || 0) + (data.mastered ? 1 : 0),
-                    lastReviewed: new Date().toISOString(),
-                    masteryLevel: data.mastered ? 1 : (prev[data.word]?.masteryLevel || 0),
-                    modesUsed: ['flashcards']
-                  }
-                }));
-              }
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'translator' ? (
           <TranslatorMode
@@ -2234,12 +2255,44 @@ export default function UkrainianTypingGame() {
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'minimal-pairs' ? (
+          <MinimalPairsMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[MinimalPairs] Session complete:', stats);
+              // Achievement: first round
+              if (!achievements.includes('minimal_first')) {
+                setAchievements(prev => [...prev, 'minimal_first']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_first'));
+              }
+              // Achievement: perfect score
+              if (stats.score === stats.total && stats.total >= 10 && !achievements.includes('minimal_perfect')) {
+                setAchievements(prev => [...prev, 'minimal_perfect']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_perfect'));
+              }
+              // Achievement: 50 total correct (tracked via modeProgress)
+              const prevCorrect = modeProgress['minimal-pairs']?.totalCorrect || 0;
+              const newTotal = prevCorrect + (stats.score || 0);
               setModeProgress(prev => ({
                 ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
+                'minimal-pairs': { ...(prev['minimal-pairs'] || {}), totalCorrect: newTotal, lastStudied: new Date().toISOString() }
               }));
+              if (newTotal >= 50 && !achievements.includes('minimal_50')) {
+                setAchievements(prev => [...prev, 'minimal_50']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_50'));
+              }
+              setGameMode('menu');
             }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'translation' ? (
           <TranslationPracticeMode
@@ -2256,12 +2309,7 @@ export default function UkrainianTypingGame() {
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'grammar' ? (
           <GrammarMode
@@ -2277,12 +2325,7 @@ export default function UkrainianTypingGame() {
               console.log('[Grammar] Lesson complete:', stats);
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'sentences' ? (
           <SentenceMode
@@ -2299,12 +2342,7 @@ export default function UkrainianTypingGame() {
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'dialogue' ? (
           <DialogueMode
@@ -2320,12 +2358,7 @@ export default function UkrainianTypingGame() {
               console.log('[Dialogue] Complete:', stats);
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'stories' ? (
           <StoryMode
@@ -2342,12 +2375,7 @@ export default function UkrainianTypingGame() {
             onComplete={(stats) => {
               console.log('[Stories] Complete:', stats);
             }}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'chat' ? (
           <ChatMode
@@ -2375,12 +2403,7 @@ export default function UkrainianTypingGame() {
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
-            onTrackProgress={(mode, data) => {
-              setModeProgress(prev => ({
-                ...prev,
-                [mode]: { ...(prev[mode] || {}), ...data, lastStudied: new Date().toISOString() }
-              }));
-            }}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'mastered-words' ? (
           <MasteredWordsManager
