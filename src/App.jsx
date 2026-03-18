@@ -413,7 +413,7 @@ export const stopSpeaking = () => {
 };
 
 // Per-language volume boost for quieter TTS models
-const LANG_VOLUME_BOOST = { es: 1.35, fr: 1.15, el: 1.1, hi: 0.85, ar: 0.95, ko: 0.9, ja: 1.2, zh: 1.1 };
+const LANG_VOLUME_BOOST = { es: 1.45, fr: 1.15, el: 1.1, hi: 0.85, ar: 0.95, ko: 0.9, ja: 1.2, zh: 1.1 };
 
 export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk', onProgress = null) => {
   // Normalize volume across TTS models
