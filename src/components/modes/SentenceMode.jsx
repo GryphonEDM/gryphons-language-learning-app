@@ -73,7 +73,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
 
   function initTilesFromSentence(sentence) {
     if (!sentence) return [];
-    const allWords = [...sentence.words, ...sentence.distractors];
+    const allWords = [...(sentence.words ?? []), ...(sentence.distractors ?? [])];
     return allWords.sort(() => Math.random() - 0.5).map((word, i) => ({ id: `${i}-${word}`, word }));
   }
 
@@ -130,7 +130,8 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     if (feedback || placedTiles.length === 0) return;
 
     const placed = placedTiles.map(t => t.word);
-    const isCorrect = currentSentence.validOrders.some(order => {
+    const orders = currentSentence.validOrders?.length ? currentSentence.validOrders : [currentSentence.words ?? []];
+    const isCorrect = orders.some(order => {
       if (order.length !== placed.length) return false;
       return order.every((w, i) => w.toLowerCase() === placed[i].toLowerCase());
     });
@@ -319,7 +320,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
       const generatedSentences = parsed.sentences.map((s, i) => ({
         id: `ai-sentence-${timestamp}-${i}`,
         en: s.en,
-        [langCode]: s[langCode],
+        [langCode]: s[langCode] || s.text || '',
         uk: s.uk || (langCode === 'uk' ? s[langCode] : ''),
         ru: s.ru || (langCode === 'ru' ? s[langCode] : ''),
         de: s.de || (langCode === 'de' ? s[langCode] : ''),

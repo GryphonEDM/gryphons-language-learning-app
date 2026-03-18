@@ -47,26 +47,46 @@
       "questions": [
         {
           "question": "When was the Moscow Metro first opened?",
-          "options": ["1925", "1930", "1935", "1940"],
-          "correctIndex": 2,
+          "options": [
+            "1935",
+            "1940",
+            "1930",
+            "1925"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Открытый в 1935 году' — Opened in 1935."
         },
         {
           "question": "How many passengers does the Moscow Metro carry daily?",
-          "options": ["About 5 million", "About 7 million", "About 9 million", "About 12 million"],
-          "correctIndex": 2,
+          "options": [
+            "About 9 million",
+            "About 5 million",
+            "About 7 million",
+            "About 12 million"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'перевозит около девяти миллионов пассажиров ежедневно' — carries about nine million passengers daily."
         },
         {
           "question": "What were metro stations used for during World War II?",
-          "options": ["Military headquarters", "Bomb shelters", "Hospitals", "Supply storage"],
-          "correctIndex": 1,
+          "options": [
+            "Bomb shelters",
+            "Hospitals",
+            "Military headquarters",
+            "Supply storage"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'станции метро использовались как бомбоубежища' — metro stations were used as bomb shelters."
         },
         {
           "question": "Which station is noted for its golden mosaics on the ceiling?",
-          "options": ["Маяковская", "Комсомольская", "Площадь Революции", "Киевская"],
-          "correctIndex": 1,
+          "options": [
+            "Площадь Революции",
+            "Маяковская",
+            "Киевская",
+            "Комсомольская"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Станция «Комсомольская» поражает своими золотыми мозаиками на потолке' — Komsomolskaya station astounds with its golden mosaics on the ceiling."
         }
       ]
@@ -120,27 +140,118 @@
       "questions": [
         {
           "question": "Who is considered the founder of modern Russian literary language?",
-          "options": ["Dostoevsky", "Tolstoy", "Pushkin", "Chekhov"],
-          "correctIndex": 2,
+          "options": [
+            "Tolstoy",
+            "Pushkin",
+            "Chekhov",
+            "Dostoevsky"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'Александр Пушкин считается основоположником современного русского литературного языка' — Alexander Pushkin is considered the founder of modern Russian literary language."
         },
         {
           "question": "What did Dostoevsky explore in his works?",
-          "options": ["Russian nature", "Political systems", "Human psychology", "Military history"],
-          "correctIndex": 2,
+          "options": [
+            "Human psychology",
+            "Military history",
+            "Political systems",
+            "Russian nature"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Достоевский исследовал глубины человеческой психологии' — Dostoevsky explored the depths of human psychology."
         },
         {
           "question": "What period in Russian society does 'War and Peace' depict?",
-          "options": ["The Russian Revolution", "The Napoleonic Wars era", "World War I", "The reign of Peter the Great"],
-          "correctIndex": 1,
+          "options": [
+            "The Russian Revolution",
+            "The reign of Peter the Great",
+            "The Napoleonic Wars era",
+            "World War I"
+          ],
+          "correctIndex": 2,
           "explanation": "The text says 'создал масштабную картину русского общества в эпоху наполеоновских войн' — created a large-scale depiction of Russian society in the era of the Napoleonic wars."
         },
         {
           "question": "What confirms the worldwide significance of Russian literature according to the text?",
-          "options": ["The number of translations", "Nobel Prizes in literature", "International book sales", "University courses worldwide"],
-          "correctIndex": 1,
+          "options": [
+            "University courses worldwide",
+            "The number of translations",
+            "International book sales",
+            "Nobel Prizes in literature"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Многие русские писатели получили Нобелевскую премию по литературе, что подтверждает мировое значение' — Many Russian writers received the Nobel Prize in literature, which confirms the worldwide significance."
+        }
+      ]
+    },
+    {
+      "passageId": "p7",
+      "title": "Вечная мерзлота и изменение климата",
+      "titleEn": "Permafrost and Climate Change",
+      "difficulty": "B2",
+      "text": "Россия обладает крупнейшими в мире запасами вечной мерзлоты — промёрзшего грунта, который не оттаивает на протяжении тысячелетий. Вечная мерзлота занимает около шестидесяти пяти процентов территории страны, простираясь от Сибири до Дальнего Востока. На протяжении веков она служила надёжным фундаментом для зданий, дорог и трубопроводов. Однако в последние десятилетия глобальное потепление привело к ускоренному таянию мерзлоты, что создаёт серьёзные экологические и инфраструктурные проблемы. Здания проседают и разрушаются, дороги деформируются, а нефте- и газопроводы подвергаются риску повреждения. Ещё более тревожным является тот факт, что в вечной мерзлоте заключены огромные объёмы метана и углекислого газа. По мере её оттаивания эти парниковые газы высвобождаются в атмосферу, усиливая эффект глобального потепления. Учёные предупреждают, что этот процесс может запустить необратимую цепную реакцию. Российские и международные исследователи активно изучают способы мониторинга состояния мерзлоты и разрабатывают технологии для адаптации инфраструктуры к новым климатическим условиям.",
+      "wordGlossary": {
+        "вечная мерзлота": "permafrost",
+        "запасами": "reserves (instrumental)",
+        "промёрзший грунт": "frozen ground",
+        "оттаивает": "thaws",
+        "тысячелетий": "millennia (genitive plural)",
+        "простираясь": "stretching / extending",
+        "фундаментом": "foundation (instrumental)",
+        "трубопроводов": "pipelines (genitive plural)",
+        "потепление": "warming",
+        "ускоренному": "accelerated (dative)",
+        "таянию": "melting (dative)",
+        "проседают": "subside / sink",
+        "разрушаются": "collapse / deteriorate",
+        "деформируются": "deform / warp",
+        "подвергаются": "are subjected to",
+        "повреждения": "damage (genitive)",
+        "тревожным": "alarming (instrumental)",
+        "заключены": "contained / trapped",
+        "объёмы": "volumes",
+        "метан": "methane",
+        "углекислый газ": "carbon dioxide",
+        "парниковые газы": "greenhouse gases",
+        "высвобождаются": "are released",
+        "усиливая": "intensifying",
+        "необратимую": "irreversible",
+        "цепную реакцию": "chain reaction",
+        "мониторинга": "monitoring (genitive)"
+      },
+      "questions": [
+        {
+          "question": "What percentage of Russia's territory is covered by permafrost?",
+          "options": [
+            "About 40 percent",
+            "About 50 percent",
+            "About 65 percent",
+            "About 80 percent"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'занимает около шестидесяти пяти процентов территории страны' — covers about sixty-five percent of the country's territory."
+        },
+        {
+          "question": "What gases are trapped in the permafrost?",
+          "options": [
+            "Oxygen and nitrogen",
+            "Methane and carbon dioxide",
+            "Hydrogen and helium",
+            "Ozone and argon"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'в вечной мерзлоте заключены огромные объёмы метана и углекислого газа' — enormous volumes of methane and carbon dioxide are trapped in the permafrost."
+        },
+        {
+          "question": "What infrastructure problem does thawing permafrost cause?",
+          "options": [
+            "Flooding of cities",
+            "Increased earthquake activity",
+            "Buildings sinking and roads warping",
+            "Contamination of drinking water"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Здания проседают и разрушаются, дороги деформируются' — Buildings subside and collapse, roads deform."
         }
       ]
     }

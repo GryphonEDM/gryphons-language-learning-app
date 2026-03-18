@@ -31,26 +31,46 @@
       "questions": [
         {
           "question": "What was Shevchenko's birth condition?",
-          "options": ["He was a nobleman", "He was born into serfdom", "He was from a wealthy family", "He was born abroad"],
-          "correctIndex": 1,
+          "options": [
+            "He was born into serfdom",
+            "He was from a wealthy family",
+            "He was a nobleman",
+            "He was born abroad"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Шевченко виріс у кріпацтві' (grew up in serfdom)."
         },
         {
           "question": "What is his most famous work?",
-          "options": ["Eneyida", "Kobzar", "Zapovit", "Haydamaky"],
-          "correctIndex": 1,
+          "options": [
+            "Zapovit",
+            "Eneyida",
+            "Kobzar",
+            "Haydamaky"
+          ],
+          "correctIndex": 2,
           "explanation": "The text says 'Його найвідоміший твір — поема «Кобзар»'."
         },
         {
           "question": "When is Shevchenko's birthday celebrated?",
-          "options": ["January 22", "March 9", "August 24", "November 21"],
-          "correctIndex": 1,
+          "options": [
+            "January 22",
+            "August 24",
+            "November 21",
+            "March 9"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Кожного 9 березня'."
         },
         {
           "question": "How was Shevchenko freed from serfdom?",
-          "options": ["He escaped", "His friends collected money to buy his freedom", "The tsar freed him", "He won a contest"],
-          "correctIndex": 1,
+          "options": [
+            "His friends collected money to buy his freedom",
+            "The tsar freed him",
+            "He escaped",
+            "He won a contest"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'друзі зібрали гроші і викупили його свободу'."
         }
       ]

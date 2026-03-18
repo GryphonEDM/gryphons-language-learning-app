@@ -19,19 +19,34 @@
       "questions": [
         {
           "question": "Quelle date est aujourd'hui célébrée comme fête nationale en France ?",
-          "options": ["Le 4 juillet", "Le 14 juillet", "Le 26 août", "Le 9 novembre"],
-          "correctIndex": 1,
+          "options": [
+            "Le 9 novembre",
+            "Le 4 juillet",
+            "Le 14 juillet",
+            "Le 26 août"
+          ],
+          "correctIndex": 2,
           "explanation": "Le texte dit : « La prise de la Bastille le 14 juillet 1789 demeure le symbole le plus puissant de ce bouleversement, célébré encore aujourd'hui comme fête nationale. »"
         },
         {
           "question": "Quels principes la Déclaration des droits de l'homme et du citoyen proclamait-elle ?",
-          "options": ["La monarchie, la religion et la propriété", "L'égalité, la liberté et la souveraineté nationale", "La fraternité, la puissance militaire et la prospérité", "L'ordre, la discipline et le respect de l'autorité"],
-          "correctIndex": 1,
+          "options": [
+            "L'égalité, la liberté et la souveraineté nationale",
+            "La fraternité, la puissance militaire et la prospérité",
+            "L'ordre, la discipline et le respect de l'autorité",
+            "La monarchie, la religion et la propriété"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « elle proclamait pour la première fois les principes d'égalité, de liberté et de souveraineté nationale. »"
         },
         {
           "question": "Comment la Révolution française s'est-elle terminée selon le texte ?",
-          "options": ["Par la mort de Robespierre", "Par la signature d'un traité de paix", "Par le coup d'État de Napoléon Bonaparte en 1799", "Par le retour de la monarchie"],
+          "options": [
+            "Par la mort de Robespierre",
+            "Par le retour de la monarchie",
+            "Par le coup d'État de Napoléon Bonaparte en 1799",
+            "Par la signature d'un traité de paix"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « La Révolution prit fin avec le coup d'État de Napoléon Bonaparte en novembre 1799, qui mit en place le Consulat. »"
         }
@@ -56,20 +71,35 @@
       "questions": [
         {
           "question": "Combien de personnes dans le monde parlent français selon le texte ?",
-          "options": ["Environ 200 millions", "Environ 250 millions", "Environ 320 millions", "Environ 400 millions"],
+          "options": [
+            "Environ 400 millions",
+            "Environ 250 millions",
+            "Environ 320 millions",
+            "Environ 200 millions"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « le français est parlé par environ 320 millions de personnes réparties sur tous les continents. »"
         },
         {
           "question": "Dans quelle région du monde le nombre de francophones augmente-t-il le plus rapidement ?",
-          "options": ["En Europe de l'Ouest", "En Amérique du Nord", "Au Moyen-Orient", "En Afrique subsaharienne"],
-          "correctIndex": 3,
+          "options": [
+            "En Afrique subsaharienne",
+            "En Amérique du Nord",
+            "En Europe de l'Ouest",
+            "Au Moyen-Orient"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « c'est en Afrique subsaharienne que le nombre de francophones croît le plus rapidement en raison de la forte croissance démographique de cette région. »"
         },
         {
           "question": "Quel défi majeur est mentionné pour la francophonie ?",
-          "options": ["Le manque d'écoles dans les pays membres", "La domination croissante de l'anglais comme langue internationale", "Le refus des jeunes d'apprendre le français", "La fermeture de l'OIF"],
-          "correctIndex": 1,
+          "options": [
+            "Le manque d'écoles dans les pays membres",
+            "La fermeture de l'OIF",
+            "Le refus des jeunes d'apprendre le français",
+            "La domination croissante de l'anglais comme langue internationale"
+          ],
+          "correctIndex": 3,
           "explanation": "Le texte dit : « la francophonie fait face à des défis considérables : la domination croissante de l'anglais comme langue internationale. »"
         }
       ]
@@ -93,20 +123,35 @@
       "questions": [
         {
           "question": "Qu'est-ce que le mouvement impressionniste a apporté à la peinture selon le texte ?",
-          "options": ["Une représentation très précise et réaliste de la réalité", "Une représentation subjective et lumineuse de la réalité", "Une technique basée sur des formes géométriques abstraites", "Un retour aux thèmes religieux médiévaux"],
-          "correctIndex": 1,
+          "options": [
+            "Une représentation très précise et réaliste de la réalité",
+            "Un retour aux thèmes religieux médiévaux",
+            "Une représentation subjective et lumineuse de la réalité",
+            "Une technique basée sur des formes géométriques abstraites"
+          ],
+          "correctIndex": 2,
           "explanation": "Le texte dit : « il a révolutionné la peinture occidentale en proposant une représentation subjective et lumineuse de la réalité. »"
         },
         {
           "question": "Qui a inventé le cinéma selon le texte, et en quelle année ?",
-          "options": ["Thomas Edison, en 1880", "Georges Méliès, en 1900", "Les frères Lumière, en 1895", "René Clair, en 1910"],
-          "correctIndex": 2,
+          "options": [
+            "Thomas Edison, en 1880",
+            "Les frères Lumière, en 1895",
+            "Georges Méliès, en 1900",
+            "René Clair, en 1910"
+          ],
+          "correctIndex": 1,
           "explanation": "Le texte dit : « Le cinéma français, inventé par les frères Lumière en 1895. »"
         },
         {
           "question": "Quel est l'objectif de « l'exception culturelle française » selon le texte ?",
-          "options": ["Interdire les productions culturelles étrangères en France", "Exporter la culture française dans le monde entier", "Protéger la diversité culturelle face à la mondialisation", "Financer uniquement les artistes français nés en France"],
-          "correctIndex": 2,
+          "options": [
+            "Protéger la diversité culturelle face à la mondialisation",
+            "Interdire les productions culturelles étrangères en France",
+            "Exporter la culture française dans le monde entier",
+            "Financer uniquement les artistes français nés en France"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « Cette tradition interventionniste de l'État dans la culture — symbolisée par l'exception culturelle française — vise à protéger la diversité culturelle face à la mondialisation. »"
         }
       ]

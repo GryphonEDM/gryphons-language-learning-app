@@ -37,20 +37,35 @@
       "questions": [
         {
           "question": "Where does Anna live?",
-          "options": ["In Saint Petersburg", "In Moscow", "In Kazan", "In Novosibirsk"],
+          "options": [
+            "In Novosibirsk",
+            "In Moscow",
+            "In Saint Petersburg",
+            "In Kazan"
+          ],
           "correctIndex": 1,
           "explanation": "The text says 'Я живу в Москве' — I live in Moscow."
         },
         {
           "question": "How does Anna get to work?",
-          "options": ["By bus", "By car", "By metro", "On foot"],
-          "correctIndex": 2,
+          "options": [
+            "On foot",
+            "By car",
+            "By bus",
+            "By metro"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'я еду на работу на метро' — I go to work by metro."
         },
         {
           "question": "What does Anna eat for breakfast?",
-          "options": ["Bread and butter", "Porridge", "Eggs", "Pancakes"],
-          "correctIndex": 1,
+          "options": [
+            "Eggs",
+            "Pancakes",
+            "Bread and butter",
+            "Porridge"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Я ем кашу' — I eat porridge."
         }
       ]
@@ -91,21 +106,102 @@
       "questions": [
         {
           "question": "What is Anna's father's profession?",
-          "options": ["Teacher", "Engineer", "Doctor", "Driver"],
-          "correctIndex": 2,
+          "options": [
+            "Driver",
+            "Teacher",
+            "Engineer",
+            "Doctor"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Мой папа — врач' — My dad is a doctor."
         },
         {
           "question": "How old is Ivan?",
-          "options": ["Sixteen", "Eighteen", "Twenty", "Twenty-two"],
-          "correctIndex": 2,
+          "options": [
+            "Eighteen",
+            "Sixteen",
+            "Twenty-two",
+            "Twenty"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Ему двадцать лет' — He is twenty years old."
         },
         {
           "question": "What is the dog's name?",
-          "options": ["Маша", "Белка", "Шарик", "Рекс"],
-          "correctIndex": 1,
+          "options": [
+            "Белка",
+            "Маша",
+            "Рекс",
+            "Шарик"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Её зовут Белка' — Her name is Belka."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "В магазине",
+      "titleEn": "At the Store",
+      "difficulty": "A1",
+      "text": "Сегодня суббота. Мы с мамой идём в магазин. Нам нужно купить продукты на неделю. В магазине мы берём тележку. Сначала мы идём в отдел с овощами и фруктами. Мама выбирает помидоры, огурцы и картошку. Я беру яблоки и бананы. Потом мы идём за хлебом и молоком. Мама говорит: «Не забудь взять сыр и масло». Я кладу их в тележку. В конце мы покупаем рыбу и курицу на ужин. На кассе мы платим за всё. Сумки тяжёлые, но мы несём их вместе. Дома мы кладём продукты в холодильник. Мама говорит: «Спасибо за помощь!» Я люблю ходить в магазин с мамой.",
+      "wordGlossary": {
+        "суббота": "Saturday",
+        "магазин": "store / shop",
+        "купить": "to buy",
+        "продукты": "groceries / products",
+        "неделю": "week (accusative)",
+        "тележку": "shopping cart (accusative)",
+        "отдел": "department / section",
+        "овощами": "vegetables (instrumental)",
+        "фруктами": "fruits (instrumental)",
+        "выбирает": "chooses",
+        "помидоры": "tomatoes",
+        "огурцы": "cucumbers",
+        "картошку": "potatoes (accusative)",
+        "забудь": "forget (imperative)",
+        "кладу": "I put",
+        "касса": "checkout / register",
+        "платим": "we pay",
+        "сумки": "bags",
+        "тяжёлые": "heavy",
+        "несём": "we carry",
+        "холодильник": "refrigerator",
+        "помощь": "help"
+      },
+      "questions": [
+        {
+          "question": "What day of the week do they go shopping?",
+          "options": [
+            "Sunday",
+            "Friday",
+            "Saturday",
+            "Monday"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Сегодня суббота' — Today is Saturday."
+        },
+        {
+          "question": "What vegetables does mom choose?",
+          "options": [
+            "Tomatoes, cucumbers, and potatoes",
+            "Carrots, onions, and cabbage",
+            "Peppers, eggplants, and beets",
+            "Tomatoes, carrots, and peas"
+          ],
+          "correctIndex": 0,
+          "explanation": "The text says 'Мама выбирает помидоры, огурцы и картошку' — Mom chooses tomatoes, cucumbers, and potatoes."
+        },
+        {
+          "question": "Where do they put the groceries at home?",
+          "options": [
+            "On the table",
+            "In the cupboard",
+            "On the counter",
+            "In the refrigerator"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'мы кладём продукты в холодильник' — we put the groceries in the refrigerator."
         }
       ]
     }

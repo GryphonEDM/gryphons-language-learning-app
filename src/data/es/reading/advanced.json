@@ -21,19 +21,34 @@
       "questions": [
         {
           "question": "According to the text, what is a direct consequence of rising global temperatures?",
-          "options": ["Increased agricultural production", "Melting of the poles and rising sea levels", "More frequent snowfall in temperate regions", "Stronger winds in coastal cities"],
-          "correctIndex": 1,
+          "options": [
+            "More frequent snowfall in temperate regions",
+            "Increased agricultural production",
+            "Stronger winds in coastal cities",
+            "Melting of the poles and rising sea levels"
+          ],
+          "correctIndex": 3,
           "explanation": "The text states 'El aumento de las temperaturas globales provoca el deshielo de los polos, la elevación del nivel del mar' — rising global temperatures cause the melting of the poles and rising sea levels."
         },
         {
           "question": "What is the text's view on the Paris Agreement?",
-          "options": ["It is sufficient to solve the climate crisis", "It has been signed by all countries in the world", "It has been signed by many countries but the pace of action is still insufficient", "It focuses only on reducing fossil fuels"],
-          "correctIndex": 2,
+          "options": [
+            "It has been signed by many countries but the pace of action is still insufficient",
+            "It is sufficient to solve the climate crisis",
+            "It focuses only on reducing fossil fuels",
+            "It has been signed by all countries in the world"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'muchos países ya han firmado acuerdos internacionales como el Acuerdo de París, el ritmo de acción sigue siendo insuficiente' — many countries have signed it but the pace of action is still insufficient."
         },
         {
           "question": "What grammatical structure is used in the phrase 'a menos que se tomen medidas drásticas'?",
-          "options": ["The imperfect indicative", "The preterite tense", "The present subjunctive", "The conditional tense"],
+          "options": [
+            "The preterite tense",
+            "The conditional tense",
+            "The present subjunctive",
+            "The imperfect indicative"
+          ],
           "correctIndex": 2,
           "explanation": "'A menos que' (unless) is one of the conjunctions that always requires the subjunctive. 'Se tomen' is the present subjunctive form of 'tomar'."
         }
@@ -60,20 +75,35 @@
       "questions": [
         {
           "question": "What risk of cultural globalisation does the text identify?",
-          "options": ["That people will stop using the internet", "That cultural products from the USA will dominate global markets", "That Korean series will become too popular", "That people will lose interest in foreign cultures"],
-          "correctIndex": 1,
+          "options": [
+            "That people will lose interest in foreign cultures",
+            "That Korean series will become too popular",
+            "That people will stop using the internet",
+            "That cultural products from the USA will dominate global markets"
+          ],
+          "correctIndex": 3,
           "explanation": "The text warns of 'una tendencia preocupante hacia la homogeneización: los mismos productos culturales —producidos principalmente en Estados Unidos— dominan los mercados globales' — a worrying tendency towards homogenisation dominated by US-produced content."
         },
         {
           "question": "Which examples does the text give of non-English-speaking cultures succeeding globally?",
-          "options": ["Bollywood cinema and Japanese anime", "K-pop and Latin music", "French cinema and Brazilian football", "Scandinavian literature and African music"],
-          "correctIndex": 1,
+          "options": [
+            "K-pop and Latin music",
+            "Scandinavian literature and African music",
+            "French cinema and Brazilian football",
+            "Bollywood cinema and Japanese anime"
+          ],
+          "correctIndex": 0,
           "explanation": "The text explicitly mentions 'El fenómeno del K-pop coreano o el auge de la música latina' as examples of non-English-speaking cultures competing on the international stage."
         },
         {
           "question": "How does the text ultimately characterise cultural globalisation?",
-          "options": ["As entirely positive because it connects the world", "As entirely negative because it destroys local cultures", "As ambivalent — connecting the world but potentially homogenising it", "As irrelevant to most people's daily lives"],
-          "correctIndex": 2,
+          "options": [
+            "As irrelevant to most people's daily lives",
+            "As entirely positive because it connects the world",
+            "As entirely negative because it destroys local cultures",
+            "As ambivalent — connecting the world but potentially homogenising it"
+          ],
+          "correctIndex": 3,
           "explanation": "The final sentence states 'la globalización cultural es un fenómeno ambivalente: conecta el mundo, pero también puede homogeneizarlo' — it is ambivalent: it connects the world but can also homogenise it."
         }
       ]
@@ -99,20 +129,35 @@
       "questions": [
         {
           "question": "What language did Spanish evolve from?",
-          "options": ["Ancient Greek", "Arabic", "Vulgar Latin", "Gothic"],
+          "options": [
+            "Gothic",
+            "Arabic",
+            "Vulgar Latin",
+            "Ancient Greek"
+          ],
           "correctIndex": 2,
           "explanation": "The text states 'Sus orígenes se remontan al latín vulgar que fue introducido en la Península Ibérica durante la conquista romana' — its origins go back to the Vulgar Latin introduced during the Roman conquest."
         },
         {
           "question": "What happened to the Spanish language when it reached the Americas in 1492?",
-          "options": ["It replaced all indigenous languages immediately", "It mixed with hundreds of indigenous languages, greatly enriching its vocabulary", "It became a simplified version of the original", "It split into dozens of completely different languages"],
-          "correctIndex": 1,
+          "options": [
+            "It mixed with hundreds of indigenous languages, greatly enriching its vocabulary",
+            "It split into dozens of completely different languages",
+            "It replaced all indigenous languages immediately",
+            "It became a simplified version of the original"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'se mezcló con cientos de lenguas indígenas, lo que enriqueció enormemente su vocabulario' — it mixed with hundreds of indigenous languages, which enormously enriched its vocabulary."
         },
         {
           "question": "The sentence 'el castellano fue llevado a territorios vastísimos' is an example of which grammatical construction?",
-          "options": ["The present perfect", "A passive construction using 'ser' + past participle", "The reflexive passive", "The future tense"],
-          "correctIndex": 1,
+          "options": [
+            "The reflexive passive",
+            "The future tense",
+            "The present perfect",
+            "A passive construction using 'ser' + past participle"
+          ],
+          "correctIndex": 3,
           "explanation": "'Fue llevado' (was carried/brought) uses the verb 'ser' + past participle 'llevado', which is the standard passive construction in Spanish. The agent (los españoles) performs the action on the subject (el castellano)."
         }
       ]

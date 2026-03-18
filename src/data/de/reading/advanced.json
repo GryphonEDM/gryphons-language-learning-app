@@ -33,20 +33,35 @@
       "questions": [
         {
           "question": "How long does primary school last in Germany?",
-          "options": ["Three years", "Four years", "Five years", "Six years"],
-          "correctIndex": 1,
+          "options": [
+            "Four years",
+            "Five years",
+            "Three years",
+            "Six years"
+          ],
+          "correctIndex": 0,
           "explanation": "The text states 'die Grundschule, die vier Jahre dauert' — primary school lasts four years."
         },
         {
           "question": "What makes Germany's dual vocational training system internationally notable?",
-          "options": ["It is entirely free for all students", "Students learn only theory at school", "It combines practical workplace training with theoretical school learning", "It lasts only one year"],
-          "correctIndex": 2,
+          "options": [
+            "It lasts only one year",
+            "It combines practical workplace training with theoretical school learning",
+            "It is entirely free for all students",
+            "Students learn only theory at school"
+          ],
+          "correctIndex": 1,
           "explanation": "The text explains the dual system allows young people 'praktische Erfahrungen zu sammeln und gleichzeitig theoretisches Wissen zu erwerben' — to gain practical experience while acquiring theoretical knowledge simultaneously."
         },
         {
           "question": "What is a key criticism of the German school system mentioned in the passage?",
-          "options": ["There are too many school holidays", "The Abitur exam is too easy", "Early selection after primary school increases social inequality", "University education is too expensive"],
-          "correctIndex": 2,
+          "options": [
+            "University education is too expensive",
+            "Early selection after primary school increases social inequality",
+            "There are too many school holidays",
+            "The Abitur exam is too easy"
+          ],
+          "correctIndex": 1,
           "explanation": "The text states critics argue 'die frühe Selektion nach der Grundschule soziale Ungleichheiten verstärkt und Kindern aus einkommensschwachen Familien weniger Chancen bietet' — early selection reinforces social inequalities and offers fewer chances to children from low-income families."
         }
       ]
@@ -84,20 +99,35 @@
       "questions": [
         {
           "question": "What is the 'Energiewende'?",
-          "options": ["A new type of wind turbine", "Germany's transition from fossil fuels to renewable energy sources", "A government recycling program", "An energy-saving campaign for households"],
-          "correctIndex": 1,
+          "options": [
+            "An energy-saving campaign for households",
+            "A government recycling program",
+            "A new type of wind turbine",
+            "Germany's transition from fossil fuels to renewable energy sources"
+          ],
+          "correctIndex": 3,
           "explanation": "The text defines Energiewende as 'der Übergang von fossilen Brennstoffen hin zu erneuerbaren Energiequellen wie Wind, Sonne und Wasser' — the transition from fossil fuels to renewable energy sources such as wind, sun, and water."
         },
         {
           "question": "How does Germany's Pfandsystem (deposit return system) work?",
-          "options": ["Companies pay a fine for producing plastic", "Consumers pay a deposit when buying and get it back when returning empty containers", "The government collects bottles from households for free", "Supermarkets receive a tax break for recycling"],
-          "correctIndex": 1,
+          "options": [
+            "Companies pay a fine for producing plastic",
+            "Supermarkets receive a tax break for recycling",
+            "The government collects bottles from households for free",
+            "Consumers pay a deposit when buying and get it back when returning empty containers"
+          ],
+          "correctIndex": 3,
           "explanation": "The text explains 'Verbraucher zahlen beim Kauf eine Pfandgebühr und erhalten sie zurück, wenn sie die leeren Behälter zurückbringen' — consumers pay a deposit fee when purchasing and get it back when returning the empty containers."
         },
         {
           "question": "What major challenges does Germany still face regarding the environment?",
-          "options": ["Lack of public interest and awareness", "Phasing out coal power and shifting transport to low-emission drives", "Too many nuclear power plants still operating", "Insufficient wind and solar resources"],
-          "correctIndex": 1,
+          "options": [
+            "Phasing out coal power and shifting transport to low-emission drives",
+            "Lack of public interest and awareness",
+            "Insufficient wind and solar resources",
+            "Too many nuclear power plants still operating"
+          ],
+          "correctIndex": 0,
           "explanation": "The text mentions 'Der Ausstieg aus der Kohleverstromung sowie die Umstellung des Verkehrssektors auf emissionsarme Antriebe' — phasing out coal electricity generation and converting the transport sector to low-emission drivetrains — as major challenges."
         }
       ]
@@ -136,19 +166,34 @@
       "questions": [
         {
           "question": "Why did the East German government build the Berlin Wall in 1961?",
-          "options": ["To protect East Berlin from West German attacks", "To stop East German citizens from fleeing to the West", "To mark the official border between two countries", "To improve security after World War II"],
-          "correctIndex": 1,
+          "options": [
+            "To mark the official border between two countries",
+            "To protect East Berlin from West German attacks",
+            "To stop East German citizens from fleeing to the West",
+            "To improve security after World War II"
+          ],
+          "correctIndex": 2,
           "explanation": "The text states the wall was built 'um die Flucht von DDR-Bürgern in den Westen zu stoppen' — to stop the escape of East German citizens to the West."
         },
         {
           "question": "How long did the Berlin Wall divide the city?",
-          "options": ["About ten years", "About eighteen years", "Over twenty-eight years", "Over forty years"],
-          "correctIndex": 2,
+          "options": [
+            "Over twenty-eight years",
+            "Over forty years",
+            "About ten years",
+            "About eighteen years"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Über achtundzwanzig Jahre lang teilte die Mauer nicht nur die Stadt' — for over twenty-eight years the wall divided not only the city."
         },
         {
           "question": "What is the East Side Gallery?",
-          "options": ["A modern art museum inside a former government building", "A section of the Berlin Wall turned into an open-air gallery with painted murals", "A shopping street in former East Berlin", "A memorial park near the Brandenburg Gate"],
+          "options": [
+            "A shopping street in former East Berlin",
+            "A section of the Berlin Wall turned into an open-air gallery with painted murals",
+            "A memorial park near the Brandenburg Gate",
+            "A modern art museum inside a former government building"
+          ],
           "correctIndex": 1,
           "explanation": "The text describes the East Side Gallery as 'ein über einen Kilometer langes Freiluftmuseum mit bemalten Mauerabschnitten' — an open-air museum over a kilometer long with painted sections of the Wall."
         }

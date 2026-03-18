@@ -30,19 +30,34 @@
       "questions": [
         {
           "question": "What time does Anna get up in the morning?",
-          "options": ["Six o'clock", "Seven o'clock", "Half past seven", "Eight o'clock"],
-          "correctIndex": 1,
+          "options": [
+            "Eight o'clock",
+            "Six o'clock",
+            "Half past seven",
+            "Seven o'clock"
+          ],
+          "correctIndex": 3,
           "explanation": "The text states 'stehe ich um sieben Uhr auf' — Anna gets up at seven o'clock."
         },
         {
           "question": "How does Anna get to work?",
-          "options": ["She walks", "She drives a car", "She takes the bus", "She rides a bike"],
-          "correctIndex": 2,
+          "options": [
+            "She walks",
+            "She takes the bus",
+            "She drives a car",
+            "She rides a bike"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'fahre mit dem Bus zur Arbeit' — she travels to work by bus."
         },
         {
           "question": "What does Anna do in the evening?",
-          "options": ["She goes for a walk", "She reads a book", "She cooks dinner and watches TV", "She visits friends"],
+          "options": [
+            "She goes for a walk",
+            "She visits friends",
+            "She cooks dinner and watches TV",
+            "She reads a book"
+          ],
           "correctIndex": 2,
           "explanation": "The text states 'koche ich das Abendessen und schaue ein bisschen fern' — she cooks dinner and watches a little TV."
         }
@@ -78,19 +93,34 @@
       "questions": [
         {
           "question": "What is Max's father's profession?",
-          "options": ["Teacher", "Engineer", "Doctor", "Lawyer"],
-          "correctIndex": 2,
+          "options": [
+            "Lawyer",
+            "Teacher",
+            "Engineer",
+            "Doctor"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says Thomas 'arbeitet als Arzt in einem Krankenhaus' — he works as a doctor in a hospital."
         },
         {
           "question": "Where does Max study?",
-          "options": ["In Frankfurt", "In Munich", "In Berlin", "In Hamburg"],
-          "correctIndex": 3,
+          "options": [
+            "In Munich",
+            "In Hamburg",
+            "In Frankfurt",
+            "In Berlin"
+          ],
+          "correctIndex": 1,
           "explanation": "The text states 'Ich studiere jetzt an der Universität in Hamburg' — Max studies at the university in Hamburg."
         },
         {
           "question": "When does the family always eat lunch together?",
-          "options": ["Every evening", "On weekdays", "On weekends", "On Sundays only"],
+          "options": [
+            "On Sundays only",
+            "On weekdays",
+            "On weekends",
+            "Every evening"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Am Wochenende essen wir immer zusammen zu Mittag' — they always eat lunch together on the weekend."
         }
@@ -127,20 +157,35 @@
       "questions": [
         {
           "question": "Where does the bed stand in the room?",
-          "options": ["In the middle of the room", "Against the wall next to the window", "Near the door", "Next to the wardrobe"],
+          "options": [
+            "Near the door",
+            "Against the wall next to the window",
+            "In the middle of the room",
+            "Next to the wardrobe"
+          ],
           "correctIndex": 1,
           "explanation": "The text says 'Das Bett steht an der Wand neben dem Fenster' — the bed stands against the wall next to the window."
         },
         {
           "question": "What color is one of the walls?",
-          "options": ["White", "Green", "Blue", "Yellow"],
-          "correctIndex": 2,
+          "options": [
+            "Blue",
+            "Yellow",
+            "Green",
+            "White"
+          ],
+          "correctIndex": 0,
           "explanation": "The text states 'Mein Zimmer hat eine blaue Wand' — the room has a blue wall."
         },
         {
           "question": "How often does the narrator tidy up their room?",
-          "options": ["Every day", "Every week", "Every month", "Never"],
-          "correctIndex": 1,
+          "options": [
+            "Every week",
+            "Every day",
+            "Every month",
+            "Never"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Ich räume mein Zimmer jede Woche auf' — they tidy up their room every week."
         }
       ]
@@ -176,19 +221,34 @@
       "questions": [
         {
           "question": "What happens to the trees in spring?",
-          "options": ["They lose their leaves", "They turn yellow and red", "They become green again", "They are covered in snow"],
-          "correctIndex": 2,
+          "options": [
+            "They lose their leaves",
+            "They become green again",
+            "They are covered in snow",
+            "They turn yellow and red"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'die Bäume werden wieder grün' — the trees become green again in spring."
         },
         {
           "question": "What is the weather like today in the passage?",
-          "options": ["Hot and sunny", "Cloudy and raining a little", "Snowing heavily", "Windy and cold"],
+          "options": [
+            "Snowing heavily",
+            "Cloudy and raining a little",
+            "Hot and sunny",
+            "Windy and cold"
+          ],
           "correctIndex": 1,
           "explanation": "The text states 'Heute ist es bewölkt und es regnet ein bisschen' — today it is cloudy and raining a little."
         },
         {
           "question": "What does the narrator wear because of the weather?",
-          "options": ["A hat and gloves", "A coat and a scarf", "A raincoat and boots", "A sweater"],
+          "options": [
+            "A hat and gloves",
+            "A coat and a scarf",
+            "A raincoat and boots",
+            "A sweater"
+          ],
           "correctIndex": 1,
           "explanation": "The text says 'Ich trage einen Mantel und einen Schal' — the narrator wears a coat and a scarf."
         }

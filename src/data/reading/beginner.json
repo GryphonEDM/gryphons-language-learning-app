@@ -29,20 +29,35 @@
       "questions": [
         {
           "question": "Where does Oksana live?",
-          "options": ["In Lviv", "In Kyiv", "In Odesa", "In Kharkiv"],
-          "correctIndex": 1,
+          "options": [
+            "In Kharkiv",
+            "In Lviv",
+            "In Odesa",
+            "In Kyiv"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Я живу в Києві' (I live in Kyiv)."
         },
         {
           "question": "What does Oksana drink in the morning?",
-          "options": ["Tea", "Coffee", "Juice", "Water"],
-          "correctIndex": 1,
+          "options": [
+            "Water",
+            "Tea",
+            "Juice",
+            "Coffee"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Я п'ю каву' (I drink coffee)."
         },
         {
           "question": "What does Oksana do in the evening?",
-          "options": ["She cooks dinner", "She goes for a walk", "She reads books or watches movies", "She goes to the gym"],
-          "correctIndex": 2,
+          "options": [
+            "She reads books or watches movies",
+            "She goes to the gym",
+            "She cooks dinner",
+            "She goes for a walk"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Я читаю книги або дивлюся фільми'."
         }
       ]
@@ -73,20 +88,35 @@
       "questions": [
         {
           "question": "What is the father's name?",
-          "options": ["Petro", "Ivan", "Oleg", "Mykola"],
-          "correctIndex": 1,
+          "options": [
+            "Petro",
+            "Mykola",
+            "Oleg",
+            "Ivan"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Мого тата звати Іван'."
         },
         {
           "question": "Who is older?",
-          "options": ["The sister", "The brother", "They are the same age", "The mother"],
-          "correctIndex": 1,
+          "options": [
+            "The mother",
+            "The sister",
+            "They are the same age",
+            "The brother"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Брат старший' (the brother is older)."
         },
         {
           "question": "What do they do on Sundays?",
-          "options": ["Go to church", "Play sports", "Gather at the table and eat lunch together", "Watch TV"],
-          "correctIndex": 2,
+          "options": [
+            "Go to church",
+            "Gather at the table and eat lunch together",
+            "Play sports",
+            "Watch TV"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'Ми збираємося за столом і обідаємо разом'."
         }
       ]

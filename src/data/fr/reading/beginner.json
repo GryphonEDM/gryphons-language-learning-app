@@ -19,20 +19,35 @@
       "questions": [
         {
           "question": "Où habite Léa ?",
-          "options": ["À Paris", "À Lyon", "À Marseille", "À Bordeaux"],
-          "correctIndex": 1,
+          "options": [
+            "À Bordeaux",
+            "À Marseille",
+            "À Paris",
+            "À Lyon"
+          ],
+          "correctIndex": 3,
           "explanation": "Le texte dit : « J'habite à Lyon avec ma famille. »"
         },
         {
           "question": "Quelle est la profession du père de Léa ?",
-          "options": ["Professeur", "Avocat", "Médecin", "Ingénieur"],
+          "options": [
+            "Ingénieur",
+            "Avocat",
+            "Médecin",
+            "Professeur"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « Mon père s'appelle Pierre et il est médecin. »"
         },
         {
           "question": "Comment s'appelle le chien de la famille ?",
-          "options": ["Rex", "Fido", "Max", "Bobby"],
-          "correctIndex": 2,
+          "options": [
+            "Max",
+            "Bobby",
+            "Rex",
+            "Fido"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « Nous avons aussi un chien qui s'appelle Max. »"
         }
       ]
@@ -56,19 +71,34 @@
       "questions": [
         {
           "question": "À quelle heure est-ce que la personne se lève ?",
-          "options": ["À six heures", "À sept heures", "À huit heures", "À neuf heures"],
-          "correctIndex": 1,
+          "options": [
+            "À sept heures",
+            "À huit heures",
+            "À neuf heures",
+            "À six heures"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « Je me lève à sept heures du matin. »"
         },
         {
           "question": "Comment est-ce que la personne va au travail ?",
-          "options": ["En voiture", "À pied", "En vélo", "En bus"],
-          "correctIndex": 3,
+          "options": [
+            "En bus",
+            "À pied",
+            "En voiture",
+            "En vélo"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « je prends le bus pour aller au travail. »"
         },
         {
           "question": "Qu'est-ce que la personne fait après le dîner ?",
-          "options": ["Elle sort avec des amis", "Elle fait du sport", "Elle regarde la télévision ou lit un livre", "Elle travaille encore"],
+          "options": [
+            "Elle sort avec des amis",
+            "Elle fait du sport",
+            "Elle regarde la télévision ou lit un livre",
+            "Elle travaille encore"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « je regarde la télévision ou je lis un livre. »"
         }
@@ -93,20 +123,35 @@
       "questions": [
         {
           "question": "Dans quelle région de la France se trouve Montpellier ?",
-          "options": ["Dans le nord", "Dans l'est", "Dans le sud", "Dans l'ouest"],
-          "correctIndex": 2,
+          "options": [
+            "Dans le sud",
+            "Dans l'ouest",
+            "Dans l'est",
+            "Dans le nord"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « une ville de taille moyenne dans le sud de la France. »"
         },
         {
           "question": "Quand est le marché à Montpellier ?",
-          "options": ["Tous les dimanches matin", "Tous les vendredis soir", "Tous les samedis matin", "Tous les jours"],
+          "options": [
+            "Tous les dimanches matin",
+            "Tous les jours",
+            "Tous les samedis matin",
+            "Tous les vendredis soir"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « un grand marché tous les samedis matin. »"
         },
         {
           "question": "Où est-ce que les jeunes se retrouvent le soir ?",
-          "options": ["Dans les cafés", "Sur la place de la Comédie", "Dans la rue de la Loge", "Au marché"],
-          "correctIndex": 1,
+          "options": [
+            "Au marché",
+            "Dans les cafés",
+            "Dans la rue de la Loge",
+            "Sur la place de la Comédie"
+          ],
+          "correctIndex": 3,
           "explanation": "Le texte dit : « les jeunes se retrouvent sur la place de la Comédie pour discuter et s'amuser. »"
         }
       ]

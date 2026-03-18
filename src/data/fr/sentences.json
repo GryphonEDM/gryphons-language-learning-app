@@ -1,182 +1,523 @@
-[
-  {
-    "id": "s1",
-    "en": "I drink coffee.",
-    "fr": "Je bois du café.",
-    "words": ["Je", "bois", "du", "café"],
-    "distractors": ["prends", "de", "elle", "thé"],
-    "validOrders": [["Je", "bois", "du", "café"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s2",
-    "en": "She is a teacher.",
-    "fr": "Elle est professeure.",
-    "words": ["Elle", "est", "professeure"],
-    "distractors": ["il", "maîtresse", "une"],
-    "validOrders": [["Elle", "est", "professeure"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s3",
-    "en": "I have two brothers.",
-    "fr": "J'ai deux frères.",
-    "words": ["J'ai", "deux", "frères"],
-    "distractors": ["trois", "sœurs", "j'"],
-    "validOrders": [["J'ai", "deux", "frères"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s4",
-    "en": "We go to school.",
-    "fr": "Nous allons à l'école.",
-    "words": ["Nous", "allons", "à", "l'école"],
-    "distractors": ["université", "je", "vas"],
-    "validOrders": [["Nous", "allons", "à", "l'école"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s5",
-    "en": "He eats an apple.",
-    "fr": "Il mange une pomme.",
-    "words": ["Il", "mange", "une", "pomme"],
-    "distractors": ["boit", "elle", "poire"],
-    "validOrders": [["Il", "mange", "une", "pomme"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s6",
-    "en": "My mother is at home.",
-    "fr": "Ma mère est à la maison.",
-    "words": ["Ma", "mère", "est", "à", "la", "maison"],
-    "distractors": ["père", "dans", "mon"],
-    "validOrders": [["Ma", "mère", "est", "à", "la", "maison"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s7",
-    "en": "The book is on the table.",
-    "fr": "Le livre est sur la table.",
-    "words": ["Le", "livre", "est", "sur", "la", "table"],
-    "distractors": ["sous", "chaise", "un"],
-    "validOrders": [["Le", "livre", "est", "sur", "la", "table"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s8",
-    "en": "I like to read books.",
-    "fr": "J'aime lire des livres.",
-    "words": ["J'aime", "lire", "des", "livres"],
-    "distractors": ["écrire", "les", "je"],
-    "validOrders": [["J'aime", "lire", "des", "livres"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s9",
-    "en": "The weather is nice today.",
-    "fr": "Il fait beau aujourd'hui.",
-    "words": ["Il", "fait", "beau", "aujourd'hui"],
-    "distractors": ["mauvais", "chaud", "hier"],
-    "validOrders": [["Il", "fait", "beau", "aujourd'hui"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s10",
-    "en": "I would like a coffee, please.",
-    "fr": "Je voudrais un café, s'il vous plaît.",
-    "words": ["Je", "voudrais", "un", "café", "s'il", "vous", "plaît"],
-    "distractors": ["thé", "te", "veux"],
-    "validOrders": [["Je", "voudrais", "un", "café", "s'il", "vous", "plaît"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s11",
-    "en": "Where is the train station?",
-    "fr": "Où est la gare?",
-    "words": ["Où", "est", "la", "gare"],
-    "distractors": ["bus", "le", "comment"],
-    "validOrders": [["Où", "est", "la", "gare"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s12",
-    "en": "I speak a little French.",
-    "fr": "Je parle un peu français.",
-    "words": ["Je", "parle", "un", "peu", "français"],
-    "distractors": ["anglais", "beaucoup", "elle"],
-    "validOrders": [["Je", "parle", "un", "peu", "français"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s13",
-    "en": "She works in Paris.",
-    "fr": "Elle travaille à Paris.",
-    "words": ["Elle", "travaille", "à", "Paris"],
-    "distractors": ["il", "habite", "en"],
-    "validOrders": [["Elle", "travaille", "à", "Paris"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s14",
-    "en": "I went to the market yesterday.",
-    "fr": "Je suis allé au marché hier.",
-    "words": ["Je", "suis", "allé", "au", "marché", "hier"],
-    "distractors": ["demain", "parti", "du"],
-    "validOrders": [["Je", "suis", "allé", "au", "marché", "hier"]],
-    "difficulty": "B1"
-  },
-  {
-    "id": "s15",
-    "en": "Can you help me?",
-    "fr": "Pouvez-vous m'aider?",
-    "words": ["Pouvez-vous", "m'aider"],
-    "distractors": ["peux-tu", "me", "peut-il"],
-    "validOrders": [["Pouvez-vous", "m'aider"]],
-    "difficulty": "A2"
-  },
-  {
-    "id": "s16",
-    "en": "I don't understand.",
-    "fr": "Je ne comprends pas.",
-    "words": ["Je", "ne", "comprends", "pas"],
-    "distractors": ["sais", "rien", "plus"],
-    "validOrders": [["Je", "ne", "comprends", "pas"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s17",
-    "en": "The restaurant is closed on Mondays.",
-    "fr": "Le restaurant est fermé le lundi.",
-    "words": ["Le", "restaurant", "est", "fermé", "le", "lundi"],
-    "distractors": ["ouvert", "mardi", "la"],
-    "validOrders": [["Le", "restaurant", "est", "fermé", "le", "lundi"]],
-    "difficulty": "B1"
-  },
-  {
-    "id": "s18",
-    "en": "I have been living in France for three years.",
-    "fr": "J'habite en France depuis trois ans.",
-    "words": ["J'habite", "en", "France", "depuis", "trois", "ans"],
-    "distractors": ["deux", "Espagne", "pour"],
-    "validOrders": [["J'habite", "en", "France", "depuis", "trois", "ans"]],
-    "difficulty": "B1"
-  },
-  {
-    "id": "s19",
-    "en": "What time is it?",
-    "fr": "Quelle heure est-il?",
-    "words": ["Quelle", "heure", "est-il"],
-    "distractors": ["quel", "jour", "comment"],
-    "validOrders": [["Quelle", "heure", "est-il"]],
-    "difficulty": "A1"
-  },
-  {
-    "id": "s20",
-    "en": "I love French food.",
-    "fr": "J'adore la cuisine française.",
-    "words": ["J'adore", "la", "cuisine", "française"],
-    "distractors": ["italienne", "le", "aime"],
-    "validOrders": [["J'adore", "la", "cuisine", "française"]],
-    "difficulty": "A2"
-  }
-]
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink coffee.",
+      "fr": "Je bois du café.",
+      "words": [
+        "Je",
+        "bois",
+        "du",
+        "café"
+      ],
+      "distractors": [
+        "prends",
+        "de",
+        "elle",
+        "thé"
+      ],
+      "validOrders": [
+        [
+          "Je",
+          "bois",
+          "du",
+          "café"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "She is a teacher.",
+      "fr": "Elle est professeure.",
+      "words": [
+        "Elle",
+        "est",
+        "professeure"
+      ],
+      "distractors": [
+        "il",
+        "maîtresse",
+        "une"
+      ],
+      "validOrders": [
+        [
+          "Elle",
+          "est",
+          "professeure"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "I have two brothers.",
+      "fr": "J'ai deux frères.",
+      "words": [
+        "J'ai",
+        "deux",
+        "frères"
+      ],
+      "distractors": [
+        "trois",
+        "sœurs",
+        "j'"
+      ],
+      "validOrders": [
+        [
+          "J'ai",
+          "deux",
+          "frères"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "We go to school.",
+      "fr": "Nous allons à l'école.",
+      "words": [
+        "Nous",
+        "allons",
+        "à",
+        "l'école"
+      ],
+      "distractors": [
+        "université",
+        "je",
+        "vas"
+      ],
+      "validOrders": [
+        [
+          "Nous",
+          "allons",
+          "à",
+          "l'école"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "He eats an apple.",
+      "fr": "Il mange une pomme.",
+      "words": [
+        "Il",
+        "mange",
+        "une",
+        "pomme"
+      ],
+      "distractors": [
+        "boit",
+        "elle",
+        "poire"
+      ],
+      "validOrders": [
+        [
+          "Il",
+          "mange",
+          "une",
+          "pomme"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "My mother is at home.",
+      "fr": "Ma mère est à la maison.",
+      "words": [
+        "Ma",
+        "mère",
+        "est",
+        "à",
+        "la",
+        "maison"
+      ],
+      "distractors": [
+        "père",
+        "dans",
+        "mon"
+      ],
+      "validOrders": [
+        [
+          "Ma",
+          "mère",
+          "est",
+          "à",
+          "la",
+          "maison"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "The book is on the table.",
+      "fr": "Le livre est sur la table.",
+      "words": [
+        "Le",
+        "livre",
+        "est",
+        "sur",
+        "la",
+        "table"
+      ],
+      "distractors": [
+        "sous",
+        "chaise",
+        "un"
+      ],
+      "validOrders": [
+        [
+          "Le",
+          "livre",
+          "est",
+          "sur",
+          "la",
+          "table"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s8",
+      "en": "I like to read books.",
+      "fr": "J'aime lire des livres.",
+      "words": [
+        "J'aime",
+        "lire",
+        "des",
+        "livres"
+      ],
+      "distractors": [
+        "écrire",
+        "les",
+        "je"
+      ],
+      "validOrders": [
+        [
+          "J'aime",
+          "lire",
+          "des",
+          "livres"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s9",
+      "en": "The weather is nice today.",
+      "fr": "Il fait beau aujourd'hui.",
+      "words": [
+        "Il",
+        "fait",
+        "beau",
+        "aujourd'hui"
+      ],
+      "distractors": [
+        "mauvais",
+        "chaud",
+        "hier"
+      ],
+      "validOrders": [
+        [
+          "Il",
+          "fait",
+          "beau",
+          "aujourd'hui"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s10",
+      "en": "I would like a coffee, please.",
+      "fr": "Je voudrais un café, s'il vous plaît.",
+      "words": [
+        "Je",
+        "voudrais",
+        "un",
+        "café",
+        "s'il",
+        "vous",
+        "plaît"
+      ],
+      "distractors": [
+        "thé",
+        "te",
+        "veux"
+      ],
+      "validOrders": [
+        [
+          "Je",
+          "voudrais",
+          "un",
+          "café",
+          "s'il",
+          "vous",
+          "plaît"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s11",
+      "en": "Where is the train station?",
+      "fr": "Où est la gare?",
+      "words": [
+        "Où",
+        "est",
+        "la",
+        "gare"
+      ],
+      "distractors": [
+        "bus",
+        "le",
+        "comment"
+      ],
+      "validOrders": [
+        [
+          "Où",
+          "est",
+          "la",
+          "gare"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s12",
+      "en": "I speak a little French.",
+      "fr": "Je parle un peu français.",
+      "words": [
+        "Je",
+        "parle",
+        "un",
+        "peu",
+        "français"
+      ],
+      "distractors": [
+        "anglais",
+        "beaucoup",
+        "elle"
+      ],
+      "validOrders": [
+        [
+          "Je",
+          "parle",
+          "un",
+          "peu",
+          "français"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s13",
+      "en": "She works in Paris.",
+      "fr": "Elle travaille à Paris.",
+      "words": [
+        "Elle",
+        "travaille",
+        "à",
+        "Paris"
+      ],
+      "distractors": [
+        "il",
+        "habite",
+        "en"
+      ],
+      "validOrders": [
+        [
+          "Elle",
+          "travaille",
+          "à",
+          "Paris"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s14",
+      "en": "I went to the market yesterday.",
+      "fr": "Je suis allé au marché hier.",
+      "words": [
+        "Je",
+        "suis",
+        "allé",
+        "au",
+        "marché",
+        "hier"
+      ],
+      "distractors": [
+        "demain",
+        "parti",
+        "du"
+      ],
+      "validOrders": [
+        [
+          "Je",
+          "suis",
+          "allé",
+          "au",
+          "marché",
+          "hier"
+        ]
+      ],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s15",
+      "en": "Can you help me?",
+      "fr": "Pouvez-vous m'aider?",
+      "words": [
+        "Pouvez-vous",
+        "m'aider"
+      ],
+      "distractors": [
+        "peux-tu",
+        "me",
+        "peut-il"
+      ],
+      "validOrders": [
+        [
+          "Pouvez-vous",
+          "m'aider"
+        ]
+      ],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s16",
+      "en": "I don't understand.",
+      "fr": "Je ne comprends pas.",
+      "words": [
+        "Je",
+        "ne",
+        "comprends",
+        "pas"
+      ],
+      "distractors": [
+        "sais",
+        "rien",
+        "plus"
+      ],
+      "validOrders": [
+        [
+          "Je",
+          "ne",
+          "comprends",
+          "pas"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s17",
+      "en": "The restaurant is closed on Mondays.",
+      "fr": "Le restaurant est fermé le lundi.",
+      "words": [
+        "Le",
+        "restaurant",
+        "est",
+        "fermé",
+        "le",
+        "lundi"
+      ],
+      "distractors": [
+        "ouvert",
+        "mardi",
+        "la"
+      ],
+      "validOrders": [
+        [
+          "Le",
+          "restaurant",
+          "est",
+          "fermé",
+          "le",
+          "lundi"
+        ]
+      ],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s18",
+      "en": "I have been living in France for three years.",
+      "fr": "J'habite en France depuis trois ans.",
+      "words": [
+        "J'habite",
+        "en",
+        "France",
+        "depuis",
+        "trois",
+        "ans"
+      ],
+      "distractors": [
+        "deux",
+        "Espagne",
+        "pour"
+      ],
+      "validOrders": [
+        [
+          "J'habite",
+          "en",
+          "France",
+          "depuis",
+          "trois",
+          "ans"
+        ]
+      ],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s19",
+      "en": "What time is it?",
+      "fr": "Quelle heure est-il?",
+      "words": [
+        "Quelle",
+        "heure",
+        "est-il"
+      ],
+      "distractors": [
+        "quel",
+        "jour",
+        "comment"
+      ],
+      "validOrders": [
+        [
+          "Quelle",
+          "heure",
+          "est-il"
+        ]
+      ],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s20",
+      "en": "I love French food.",
+      "fr": "J'adore la cuisine française.",
+      "words": [
+        "J'adore",
+        "la",
+        "cuisine",
+        "française"
+      ],
+      "distractors": [
+        "italienne",
+        "le",
+        "aime"
+      ],
+      "validOrders": [
+        [
+          "J'adore",
+          "la",
+          "cuisine",
+          "française"
+        ]
+      ],
+      "difficulty": "A2"
+    }
+  ]
+}

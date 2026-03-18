@@ -30,20 +30,35 @@
       "questions": [
         {
           "question": "What can visitors do at the Reichstag building for free?",
-          "options": ["Take a boat trip", "Climb the glass dome", "Eat a traditional meal", "Watch a film about Berlin"],
-          "correctIndex": 1,
+          "options": [
+            "Climb the glass dome",
+            "Take a boat trip",
+            "Eat a traditional meal",
+            "Watch a film about Berlin"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Man kann kostenlos auf die Glaskuppel steigen' — you can climb the glass dome for free."
         },
         {
           "question": "What did the narrator eat for lunch?",
-          "options": ["A pretzel and soup", "Schnitzel with potatoes", "Currywurst with fries", "A cheese sandwich"],
-          "correctIndex": 2,
+          "options": [
+            "Currywurst with fries",
+            "Schnitzel with potatoes",
+            "A cheese sandwich",
+            "A pretzel and soup"
+          ],
+          "correctIndex": 0,
           "explanation": "The text states the narrator ate 'eine Currywurst mit Pommes — ein typisch Berliner Gericht' — currywurst with fries, a typical Berlin dish."
         },
         {
           "question": "Why did the narrator particularly enjoy Berlin?",
-          "options": ["Because it was cheap", "Because it was small and quiet", "Because the city is lively and diverse", "Because of the beautiful beaches"],
-          "correctIndex": 2,
+          "options": [
+            "Because the city is lively and diverse",
+            "Because it was small and quiet",
+            "Because of the beautiful beaches",
+            "Because it was cheap"
+          ],
+          "correctIndex": 0,
           "explanation": "The text explains 'weil die Stadt so lebendig und vielfältig ist' — because the city is so lively and diverse."
         }
       ]
@@ -78,19 +93,34 @@
       "questions": [
         {
           "question": "What time does the market close?",
-          "options": ["Twelve o'clock", "One o'clock", "Two o'clock", "Three o'clock"],
-          "correctIndex": 2,
+          "options": [
+            "One o'clock",
+            "Twelve o'clock",
+            "Three o'clock",
+            "Two o'clock"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says the market 'schließt um zwei Uhr nachmittags' — it closes at two o'clock in the afternoon."
         },
         {
           "question": "What bread does the narrator buy at the bread stall?",
-          "options": ["A white loaf and a baguette", "A rye bread and two rolls", "Three rolls and a pretzel", "A sourdough and some crackers"],
-          "correctIndex": 1,
+          "options": [
+            "A white loaf and a baguette",
+            "A sourdough and some crackers",
+            "Three rolls and a pretzel",
+            "A rye bread and two rolls"
+          ],
+          "correctIndex": 3,
           "explanation": "The text states 'Ich kaufe ein Roggenbrot und zwei Brötchen' — a rye bread and two rolls."
         },
         {
           "question": "Why does the narrator prefer shopping at the market over the supermarket?",
-          "options": ["Because it is cheaper", "Because it is closer to home", "Because the products are fresher and the vendors friendlier", "Because it is open on Sundays"],
+          "options": [
+            "Because it is cheaper",
+            "Because it is closer to home",
+            "Because the products are fresher and the vendors friendlier",
+            "Because it is open on Sundays"
+          ],
           "correctIndex": 2,
           "explanation": "The text explains 'weil die Produkte frischer und die Verkäufer freundlicher sind' — because the products are fresher and the sellers are friendlier."
         }
@@ -129,20 +159,35 @@
       "questions": [
         {
           "question": "When does the Oktoberfest take place?",
-          "options": ["In July and August", "In August and September", "At the end of September and beginning of October", "Throughout October and November"],
+          "options": [
+            "In July and August",
+            "In August and September",
+            "At the end of September and beginning of October",
+            "Throughout October and November"
+          ],
           "correctIndex": 2,
           "explanation": "The text says the Oktoberfest 'findet jedes Jahr Ende September und Anfang Oktober statt' — it takes place every year at the end of September and beginning of October."
         },
         {
           "question": "What do men traditionally wear at the Oktoberfest?",
-          "options": ["Suits and ties", "Lederhosen", "Dirndl dresses", "Bavarian hats"],
-          "correctIndex": 1,
+          "options": [
+            "Lederhosen",
+            "Suits and ties",
+            "Dirndl dresses",
+            "Bavarian hats"
+          ],
+          "correctIndex": 0,
           "explanation": "The text states 'Männer in Lederhosen' — men wear lederhosen (leather shorts)."
         },
         {
           "question": "Which Christmas market is mentioned as one of the most famous?",
-          "options": ["The Berlin Christmas market", "The Hamburg Christmas market", "The Munich Christmas market", "The Nuremberg Christkindlesmarkt"],
-          "correctIndex": 3,
+          "options": [
+            "The Berlin Christmas market",
+            "The Nuremberg Christkindlesmarkt",
+            "The Hamburg Christmas market",
+            "The Munich Christmas market"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'Der bekannteste ist vielleicht der Nürnberger Christkindlesmarkt' — the most famous is perhaps the Nuremberg Christkindlesmarkt."
         }
       ]
@@ -178,20 +223,35 @@
       "questions": [
         {
           "question": "How can you buy a Deutsche Bahn ticket without going to a counter?",
-          "options": ["Only by phone", "At a ticket machine or via the app", "Only online via a website", "Through a travel agency only"],
-          "correctIndex": 1,
+          "options": [
+            "Only online via a website",
+            "Through a travel agency only",
+            "At a ticket machine or via the app",
+            "Only by phone"
+          ],
+          "correctIndex": 2,
           "explanation": "The text mentions buying tickets 'an einem der vielen Automaten' (at one of the ticket machines) or using 'eine praktische App' (a practical app)."
         },
         {
           "question": "What is the ICE?",
-          "options": ["A regional slow train", "A night train service", "A high-speed intercity express train", "A tourist sightseeing train"],
+          "options": [
+            "A regional slow train",
+            "A night train service",
+            "A high-speed intercity express train",
+            "A tourist sightseeing train"
+          ],
           "correctIndex": 2,
           "explanation": "The text describes the ICE as 'den Intercity-Express' which 'fährt sehr schnell — manchmal über dreihundert Kilometer pro Stunde' — a very fast train, sometimes over 300 km/h."
         },
         {
           "question": "What can travelers do if the train is delayed?",
-          "options": ["Get a free return ticket", "Apply for compensation under certain conditions", "Travel first class for free", "Receive a full refund automatically"],
-          "correctIndex": 1,
+          "options": [
+            "Get a free return ticket",
+            "Receive a full refund automatically",
+            "Travel first class for free",
+            "Apply for compensation under certain conditions"
+          ],
+          "correctIndex": 3,
           "explanation": "The text states 'Bei Verspätungen kann man unter bestimmten Bedingungen eine Entschädigung beantragen' — with delays, one can apply for compensation under certain conditions."
         }
       ]

@@ -44,19 +44,34 @@
       "questions": [
         {
           "question": "How did the narrator travel to Saint Petersburg?",
-          "options": ["By plane", "By car", "By train", "By bus"],
+          "options": [
+            "By plane",
+            "By bus",
+            "By train",
+            "By car"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Я поехал туда на поезде из Москвы' — I went there by train from Moscow."
         },
         {
           "question": "What museum did the narrator visit?",
-          "options": ["The Russian Museum", "The Hermitage", "The Tretyakov Gallery", "The Pushkin Museum"],
+          "options": [
+            "The Russian Museum",
+            "The Hermitage",
+            "The Tretyakov Gallery",
+            "The Pushkin Museum"
+          ],
           "correctIndex": 1,
           "explanation": "The text says 'я посетил Эрмитаж' — I visited the Hermitage."
         },
         {
           "question": "What did the narrator do in the evening?",
-          "options": ["Went to a restaurant", "Walked along the river", "Went to the ballet", "Went to a concert"],
+          "options": [
+            "Went to a concert",
+            "Went to a restaurant",
+            "Went to the ballet",
+            "Walked along the river"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Вечером я пошёл в театр на балет' — In the evening I went to the theater for ballet."
         }
@@ -107,21 +122,107 @@
       "questions": [
         {
           "question": "What is borscht made from?",
-          "options": ["Potatoes and mushrooms", "Beets, cabbage, and meat", "Fish and vegetables", "Chicken and rice"],
-          "correctIndex": 1,
+          "options": [
+            "Beets, cabbage, and meat",
+            "Fish and vegetables",
+            "Potatoes and mushrooms",
+            "Chicken and rice"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Борщ — это суп из свёклы с капустой и мясом' — Borscht is a soup made from beets with cabbage and meat."
         },
         {
           "question": "What are pelmeni compared to in the text?",
-          "options": ["Chinese dumplings", "German sausages", "Italian ravioli", "French crepes"],
+          "options": [
+            "German sausages",
+            "Chinese dumplings",
+            "Italian ravioli",
+            "French crepes"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Пельмени напоминают итальянские равиоли' — Pelmeni resemble Italian ravioli."
         },
         {
           "question": "When is Maslenitsa celebrated?",
-          "options": ["In the beginning of spring", "At the end of winter", "In the middle of summer", "At the beginning of autumn"],
+          "options": [
+            "In the beginning of spring",
+            "At the end of winter",
+            "In the middle of summer",
+            "At the beginning of autumn"
+          ],
           "correctIndex": 1,
           "explanation": "The text says 'праздник, который отмечают в конце зимы' — a holiday celebrated at the end of winter."
+        }
+      ]
+    },
+    {
+      "passageId": "p5",
+      "title": "Русская баня",
+      "titleEn": "The Russian Bathhouse",
+      "difficulty": "B1",
+      "text": "Русская баня — это древняя традиция, которая существует уже более тысячи лет. Для русских людей баня всегда была больше, чем просто место для мытья. Это целый ритуал, связанный со здоровьем, общением и отдыхом. В традиционной бане есть парная — комната с очень высокой температурой, где на раскалённые камни плещут воду. Горячий пар наполняет комнату, и люди сидят на деревянных полках. Важная часть банного ритуала — берёзовый веник. Им хлещут по телу, что улучшает кровообращение и очищает кожу. После парной принято окунаться в холодную воду или прыгать в снег зимой. Такой контраст температур укрепляет иммунитет. В бане принято пить травяной чай и разговаривать с друзьями. Многие русские считают, что баня лечит не только тело, но и душу.",
+      "wordGlossary": {
+        "баня": "bathhouse / sauna",
+        "древняя": "ancient",
+        "традиция": "tradition",
+        "существует": "exists",
+        "тысячи": "thousand (genitive)",
+        "мытья": "washing (genitive)",
+        "ритуал": "ritual",
+        "здоровьем": "health (instrumental)",
+        "общением": "socializing (instrumental)",
+        "парная": "steam room",
+        "раскалённые": "red-hot",
+        "камни": "stones",
+        "плещут": "splash",
+        "пар": "steam",
+        "деревянных": "wooden",
+        "полках": "shelves / benches (prepositional)",
+        "берёзовый веник": "birch branch bundle",
+        "хлещут": "whip / lash",
+        "кровообращение": "blood circulation",
+        "очищает": "cleanses",
+        "кожу": "skin (accusative)",
+        "окунаться": "to plunge / dip",
+        "укрепляет": "strengthens",
+        "иммунитет": "immune system",
+        "травяной": "herbal",
+        "лечит": "heals",
+        "душу": "soul (accusative)"
+      },
+      "questions": [
+        {
+          "question": "How long has the Russian bathhouse tradition existed?",
+          "options": [
+            "About 500 years",
+            "About 200 years",
+            "More than 1,000 years",
+            "About 300 years"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'существует уже более тысячи лет' — has existed for more than a thousand years."
+        },
+        {
+          "question": "What is a birch 'venik' used for?",
+          "options": [
+            "Sweeping the floor",
+            "Whipping the body to improve circulation",
+            "Adding fragrance to the steam",
+            "Decorating the bathhouse"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'Им хлещут по телу, что улучшает кровообращение и очищает кожу' — They whip the body with it, which improves blood circulation and cleanses the skin."
+        },
+        {
+          "question": "What do people typically do after the steam room?",
+          "options": [
+            "Take a warm shower",
+            "Go to sleep immediately",
+            "Plunge into cold water or jump in snow",
+            "Drink hot coffee"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'принято окунаться в холодную воду или прыгать в снег зимой' — it is customary to plunge into cold water or jump into snow in winter."
         }
       ]
     }

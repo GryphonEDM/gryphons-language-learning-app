@@ -19,20 +19,35 @@
       "questions": [
         {
           "question": "Quand l'UNESCO a-t-elle reconnu le repas gastronomique français ?",
-          "options": ["En 2000", "En 2005", "En 2010", "En 2015"],
+          "options": [
+            "En 2005",
+            "En 2000",
+            "En 2010",
+            "En 2015"
+          ],
           "correctIndex": 2,
           "explanation": "Le texte dit : « En 2010, l'UNESCO a inscrit le repas gastronomique des Français au patrimoine culturel immatériel de l'humanité. »"
         },
         {
           "question": "Quelle est la spécialité culinaire de l'Alsace mentionnée dans le texte ?",
-          "options": ["La bouillabaisse", "Le cassoulet", "La choucroute", "Le coq au vin"],
-          "correctIndex": 2,
+          "options": [
+            "Le coq au vin",
+            "La choucroute",
+            "Le cassoulet",
+            "La bouillabaisse"
+          ],
+          "correctIndex": 1,
           "explanation": "Le texte dit : « la choucroute en Alsace. »"
         },
         {
           "question": "Selon le texte, pourquoi les marchés locaux sont-ils populaires ?",
-          "options": ["Parce qu'ils sont moins chers que les supermarchés", "Parce qu'ils permettent d'acheter des produits frais auprès des producteurs", "Parce qu'ils sont ouverts tous les jours", "Parce qu'ils proposent des plats cuisinés"],
-          "correctIndex": 1,
+          "options": [
+            "Parce qu'ils sont moins chers que les supermarchés",
+            "Parce qu'ils sont ouverts tous les jours",
+            "Parce qu'ils permettent d'acheter des produits frais auprès des producteurs",
+            "Parce qu'ils proposent des plats cuisinés"
+          ],
+          "correctIndex": 2,
           "explanation": "Le texte dit : « ils permettent aux Français d'acheter des produits frais directement auprès des producteurs. »"
         }
       ]
@@ -56,20 +71,35 @@
       "questions": [
         {
           "question": "Combien de visiteurs étrangers la France accueille-t-elle chaque année ?",
-          "options": ["Plus de 50 millions", "Plus de 70 millions", "Plus de 90 millions", "Plus de 110 millions"],
-          "correctIndex": 2,
+          "options": [
+            "Plus de 50 millions",
+            "Plus de 70 millions",
+            "Plus de 110 millions",
+            "Plus de 90 millions"
+          ],
+          "correctIndex": 3,
           "explanation": "Le texte dit : « accueillant chaque année plus de 90 millions de visiteurs étrangers. »"
         },
         {
           "question": "Selon le texte, que cherchent de nombreux voyageurs aujourd'hui ?",
-          "options": ["Des hôtels de luxe à Paris", "Des plages animées sur la Côte d'Azur", "À quitter les circuits touristiques classiques pour découvrir la France rurale", "Des billets moins chers pour visiter le Louvre"],
-          "correctIndex": 2,
+          "options": [
+            "À quitter les circuits touristiques classiques pour découvrir la France rurale",
+            "Des billets moins chers pour visiter le Louvre",
+            "Des hôtels de luxe à Paris",
+            "Des plages animées sur la Côte d'Azur"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « de nombreux voyageurs cherchent désormais à quitter les circuits touristiques classiques pour découvrir la France rurale et authentique. »"
         },
         {
           "question": "Quand est-ce que les Français voyagent surtout à l'intérieur du pays ?",
-          "options": ["En décembre et janvier", "En mars et avril", "En juillet et août", "En octobre et novembre"],
-          "correctIndex": 2,
+          "options": [
+            "En juillet et août",
+            "En octobre et novembre",
+            "En mars et avril",
+            "En décembre et janvier"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « pendant les grandes vacances de juillet et août. »"
         }
       ]
@@ -93,20 +123,35 @@
       "questions": [
         {
           "question": "À quel âge l'école devient-elle obligatoire en France ?",
-          "options": ["À 2 ans", "À 3 ans", "À 5 ans", "À 6 ans"],
-          "correctIndex": 1,
+          "options": [
+            "À 3 ans",
+            "À 5 ans",
+            "À 6 ans",
+            "À 2 ans"
+          ],
+          "correctIndex": 0,
           "explanation": "Le texte dit : « L'école est obligatoire de 3 à 16 ans. »"
         },
         {
           "question": "Qu'est-ce que le baccalauréat ?",
-          "options": ["Un diplôme universitaire", "Un examen national à la fin du lycée", "Une école d'élite", "Un type de collège"],
-          "correctIndex": 1,
+          "options": [
+            "Une école d'élite",
+            "Un type de collège",
+            "Un examen national à la fin du lycée",
+            "Un diplôme universitaire"
+          ],
+          "correctIndex": 2,
           "explanation": "Le texte dit : « les élèves passent le baccalauréat, un examen national qui détermine l'accès à l'enseignement supérieur. »"
         },
         {
           "question": "Quelle critique est formulée contre le système éducatif français dans le texte ?",
-          "options": ["Il coûte trop cher aux familles", "Il n'est pas assez rigoureux", "Il manque de flexibilité et présente des inégalités entre établissements", "Il ne prépare pas les élèves au marché du travail"],
-          "correctIndex": 2,
+          "options": [
+            "Il n'est pas assez rigoureux",
+            "Il manque de flexibilité et présente des inégalités entre établissements",
+            "Il coûte trop cher aux familles",
+            "Il ne prépare pas les élèves au marché du travail"
+          ],
+          "correctIndex": 1,
           "explanation": "Le texte dit : « le système est parfois critiqué pour son manque de flexibilité et pour les inégalités persistantes entre les établissements. »"
         }
       ]

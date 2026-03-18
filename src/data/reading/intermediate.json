@@ -29,20 +29,35 @@
       "questions": [
         {
           "question": "What river is Kyiv located on?",
-          "options": ["The Danube", "The Dnipro", "The Bug", "The Desna"],
-          "correctIndex": 1,
+          "options": [
+            "The Dnipro",
+            "The Bug",
+            "The Desna",
+            "The Danube"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'розташоване на берегах річки Дніпро'."
         },
         {
           "question": "What is Khreshchatyk?",
-          "options": ["A museum", "A church", "The main street", "A park"],
+          "options": [
+            "A church",
+            "A park",
+            "The main street",
+            "A museum"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Хрещатик — це головна вулиця міста'."
         },
         {
           "question": "What is notable about the Kyiv metro?",
-          "options": ["It is the oldest", "It is one of the deepest in the world", "It is very short", "It has the most stations"],
-          "correctIndex": 1,
+          "options": [
+            "It has the most stations",
+            "It is very short",
+            "It is the oldest",
+            "It is one of the deepest in the world"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'одне з найглибших у світі'."
         }
       ]
@@ -76,20 +91,35 @@
       "questions": [
         {
           "question": "What is the most famous Ukrainian dish?",
-          "options": ["Varenyky", "Borscht", "Salo", "Pampushky"],
-          "correctIndex": 1,
+          "options": [
+            "Varenyky",
+            "Salo",
+            "Pampushky",
+            "Borscht"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Найвідоміша страва — борщ'."
         },
         {
           "question": "What is borscht served with?",
-          "options": ["Bread", "Sour cream", "Cheese", "Rice"],
-          "correctIndex": 1,
+          "options": [
+            "Sour cream",
+            "Bread",
+            "Cheese",
+            "Rice"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Його подають зі сметаною'."
         },
         {
           "question": "What is medivnyk?",
-          "options": ["A honey cake", "A meat pie", "A soup", "A type of bread"],
-          "correctIndex": 0,
+          "options": [
+            "A type of bread",
+            "A soup",
+            "A meat pie",
+            "A honey cake"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'медівник — медовий торт' (honey cake)."
         }
       ]

@@ -363,8 +363,7 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     stopSpeaking();
     setTtsHighlight(null);
     setIsSpeaking(false);
-    if (abortRef.current) { abortRef.current.abort(); abortRef.current = null; }
-    setIsLoading(false);
+    if (abortRef.current) { abortRef.current.abort(); abortRef.current = null; setIsLoading(false); }
   }, []);
 
   // Stop TTS and abort any pending LLM request on unmount

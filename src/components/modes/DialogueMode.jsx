@@ -99,7 +99,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
       // Add NPC line to chat
       setChatHistory(prev => [...prev, {
         speaker: 'npc',
-        name: selectedDialogue.characters.npc.name,
+        name: selectedDialogue.characters?.npc?.name || 'NPC',
         text: exchange.text,
         translation: exchange.translation
       }]);
@@ -151,7 +151,7 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
     // Add player response to chat
     setChatHistory(prev => [...prev, {
       speaker: 'player',
-      name: selectedDialogue.characters.player.name,
+      name: selectedDialogue.characters?.player?.name || playerName,
       text: userInput.trim(),
       correct: isCorrect
     }]);

@@ -19,19 +19,34 @@
       "questions": [
         {
           "question": "How many siblings does Ana have?",
-          "options": ["None", "One", "Two", "Three"],
-          "correctIndex": 2,
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "None"
+          ],
+          "correctIndex": 1,
           "explanation": "The text says 'Tengo un hermano y una hermana' — Ana has one brother and one sister, so two siblings in total."
         },
         {
           "question": "How old is Ana's brother Carlos?",
-          "options": ["Fourteen", "Sixteen", "Eighteen", "Twenty"],
-          "correctIndex": 2,
+          "options": [
+            "Eighteen",
+            "Fourteen",
+            "Sixteen",
+            "Twenty"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'Él tiene dieciocho años' — he is eighteen years old."
         },
         {
           "question": "Where does Ana's family live?",
-          "options": ["In an apartment", "In a small house", "In a big house", "In a city"],
+          "options": [
+            "In a small house",
+            "In an apartment",
+            "In a big house",
+            "In a city"
+          ],
           "correctIndex": 2,
           "explanation": "The text says 'Vivimos juntos en una casa grande' — they live together in a big house."
         }
@@ -56,20 +71,35 @@
       "questions": [
         {
           "question": "What does the narrator eat for breakfast?",
-          "options": ["Eggs and juice", "Bread with butter and coffee", "Cereal and milk", "Fruit and tea"],
-          "correctIndex": 1,
+          "options": [
+            "Fruit and tea",
+            "Cereal and milk",
+            "Eggs and juice",
+            "Bread with butter and coffee"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Como pan con mantequilla y bebo un café' — bread with butter and a coffee."
         },
         {
           "question": "How does the narrator get to work?",
-          "options": ["By car", "On foot", "By bus", "By bicycle"],
-          "correctIndex": 2,
+          "options": [
+            "By bus",
+            "By bicycle",
+            "By car",
+            "On foot"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'voy al trabajo en autobús' — they go to work by bus."
         },
         {
           "question": "What time does the narrator go to bed?",
-          "options": ["Nine o'clock", "Ten o'clock", "Eleven o'clock", "Midnight"],
-          "correctIndex": 2,
+          "options": [
+            "Nine o'clock",
+            "Ten o'clock",
+            "Midnight",
+            "Eleven o'clock"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'Me acuesto a las once de la noche' — they go to bed at eleven at night."
         }
       ]
@@ -93,20 +123,35 @@
       "questions": [
         {
           "question": "Where is Valencia located in Spain?",
-          "options": ["In the north", "In the south", "In the west", "In the east"],
-          "correctIndex": 3,
+          "options": [
+            "In the east",
+            "In the south",
+            "In the west",
+            "In the north"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'una ciudad bonita en el este de España' — a beautiful city in the east of Spain."
         },
         {
           "question": "What can you find at the central market?",
-          "options": ["Clothes and shoes", "Books and electronics", "Fruits, vegetables and fresh produce", "Souvenirs and crafts"],
-          "correctIndex": 2,
+          "options": [
+            "Fruits, vegetables and fresh produce",
+            "Books and electronics",
+            "Clothes and shoes",
+            "Souvenirs and crafts"
+          ],
+          "correctIndex": 0,
           "explanation": "The text says 'venden frutas, verduras y muchos productos frescos' — they sell fruits, vegetables and many fresh products."
         },
         {
           "question": "Why does the narrator like living there?",
-          "options": ["Because the weather is always perfect", "Because it is cheap", "Because there is a lot to do and people are friendly", "Because it is near the beach"],
-          "correctIndex": 2,
+          "options": [
+            "Because the weather is always perfect",
+            "Because it is near the beach",
+            "Because it is cheap",
+            "Because there is a lot to do and people are friendly"
+          ],
+          "correctIndex": 3,
           "explanation": "The text says 'porque hay mucho que hacer y la gente es muy amable' — because there is a lot to do and the people are very friendly."
         }
       ]
