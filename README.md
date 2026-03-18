@@ -1,17 +1,21 @@
-# Ukrainian, Russian & German Typing Game
+# Multilingual Language Trainer
 
-A free, open-source web app originally made for learning to type on my Ukrainian keyboard, expanded over time to include TTS, language lessons, Russian, and German.
+A free, open-source web app for learning to type and speak in 12 languages with offline TTS, speech-to-text, and AI tutoring.
 
-Please report any errors in translation or pronunciation of the alphabet. Project is almost entirely vibe coded in spare time. Any issues may take a while or never be fixed.
+Please report any errors in translation or pronunciation. Project is almost entirely vibe coded in spare time. Any issues may take a while or never be fixed.
 
-Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises, reading practice, dialogue practice, pronunciation coaching, AI story generation, a translator, and text-to-speech pronunciation.
+## Supported Languages
+
+Ukrainian, Russian, English, German, Spanish, French, Greek, Hindi, Arabic, Korean, Japanese, Chinese (Mandarin)
+
+Each language includes typing lessons, vocabulary flashcards, grammar exercises, reading practice, dialogue practice, and text-to-speech pronunciation.
 
 ## Features
 
 ### Core
-- **Ukrainian + Russian + German** - Full support for all three languages with one-click switching and separate progress tracking
-- **Text-to-Speech** - All languages use server-side Silero TTS models (Ukrainian, Russian, English, German)
-- **Speech-to-Text** - Speak using Whisper (fully offline, auto-detects language)
+- **12 Languages** - Full support with one-click switching and separate progress tracking
+- **Text-to-Speech** - Multiple TTS engines per language (Silero, Kokoro, MMS-TTS, Piper) — all server-side, fully offline
+- **Speech-to-Text** - Whisper-powered dictation (fully offline, auto-detects language)
 - **AI Tutor** - Local LLM integration via LM Studio for chat, translations, pronunciation tips, and story generation
 - **Account System** - Create an account for cross-device progress sync (stored in local SQLite database)
 
@@ -53,9 +57,25 @@ Includes typing lessons, vocabulary flashcards (4000+ words), grammar exercises,
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) v16+
-- [Python](https://www.python.org/downloads/) 3.8+ (needed for TTS and STT)
+- [Python](https://www.python.org/downloads/) 3.10+ (needed for TTS and STT)
+- [espeak-ng](https://github.com/espeak-ng/espeak-ng) (system dependency for Kokoro TTS)
 
-### 1. Clone and install
+### One-click start (recommended)
+
+**Mac/Linux:**
+```bash
+chmod +x start.sh
+./start.sh
+```
+
+**Windows:**
+Double-click `start.bat`
+
+This automatically installs all dependencies, starts the TTS server, and launches the web app.
+
+### Manual setup
+
+#### 1. Clone and install
 
 ```bash
 git clone https://github.com/GryphonEDM/gryphons-ukrainian-russian-learning-app.git
@@ -63,89 +83,70 @@ cd gryphons-ukrainian-russian-learning-app
 npm install
 ```
 
-### 2. Run the web app
-
-```bash
-npm run dev
-```
-
-Open http://localhost:5173 in your browser. The app is fully functional without the TTS server — you just won't hear pronunciation.
-
-### 3. (Optional) Enable text-to-speech and speech-to-text
-
-All TTS runs through a single Flask server (`tts-server.py`) on port 3002, using Silero models for all four languages.
-
-#### Install Python dependencies
+#### 2. Set up the Python environment
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # macOS/Linux
 # .venv\Scripts\activate.bat     # Windows
 
-pip install flask flask-cors torch
-
-# Optional but recommended:
+pip install flask flask-cors torch soundfile requests
 pip install flask-jwt-extended bcrypt   # account system
-pip install num2words                   # better number pronunciation
+pip install num2words                   # number pronunciation
+pip install transformers                # MMS-TTS (French, Greek, Korean)
+pip install uroman                      # Korean TTS romanization
+pip install piper-tts pathvalidate      # Arabic TTS
 
 # Whisper STT — pick one:
 pip install mlx-whisper          # macOS Apple Silicon (fast)
 pip install faster-whisper       # Windows / Linux / Intel Mac
 ```
 
-#### Start the TTS server
+#### 3. Set up Kokoro TTS (Spanish, Hindi, Japanese, Chinese)
+
+Kokoro requires Python 3.10-3.12 (may differ from your venv Python). It runs as an auto-launched sidecar on port 3003.
 
 ```bash
-python tts-server.py
+# Install on Python 3.12 (adjust path for your system)
+python3.12 -m pip install kokoro>=0.9.4 soundfile "misaki[ja]" "misaki[zh]"
 ```
 
-On first run, models are downloaded automatically:
+Set `KOKORO_PYTHON` environment variable if your Python 3.12 isn't at the default path.
 
-| Language | Model | Size | Location |
-|---|---|---|---|
-| Ukrainian | Silero v5 CIS (`ukr_igor`) | ~91 MB | `tts-model-uk-silero/` |
-| Russian | Silero v5 (`aidar`) | ~65 MB | `tts-model-ru/` |
-| English | Silero v3 (`en_70`) | ~100 MB | `tts-model-en/` |
-| German | Silero v3 (`bernd_ungerer`) | ~54 MB | `tts-model-de/` |
-
-After the initial download (~310 MB total), TTS works fully offline. You should see:
-
-```
-[OK] Ukrainian TTS loaded! (speaker: ukr_igor)
-[OK] Russian TTS model loaded! (speaker: aidar)
-[OK] English TTS model loaded! (speaker: en_70)
-[OK] German TTS model loaded! (speaker: bernd_ungerer)
-[OK] Whisper STT ready (MLX backend, model: mlx-community/whisper-small-mlx)
-[SPEAKER] TTS + STT Server (Ukrainian + Russian + English + German)
-   Starting on http://localhost:3002
-```
-
-### Windows one-click start
-
-Double-click `start.bat` to automatically install all dependencies and start both the web app and TTS server.
-
-### Mac/Linux one-click start
+#### 4. Start the servers
 
 ```bash
-chmod +x start.sh
-./start.sh
+python tts-server.py    # Starts TTS on :3002, auto-launches Kokoro sidecar on :3003
+npm run dev             # Starts web app on :5173
 ```
 
 ## Text-to-Speech Details
 
-All four languages use Silero models served from `tts-server.py`. There is no browser-side TTS — everything goes through the server.
+All TTS is server-side — no browser TTS is used. Multiple engines are used to get the best quality per language:
 
-| | Ukrainian | Russian | English | German |
-|---|---|---|---|---|
-| **Model** | Silero v5 CIS | Silero v5 | Silero v3 | Silero v3 |
-| **Speaker** | ukr_igor | aidar | en_70 | bernd_ungerer |
-| **Model file** | `tts-model-uk-silero/v5_cis_base.pt` | `tts-model-ru/v5_ru.pt` | `tts-model-en/v3_en.pt` | `tts-model-de/v3_de.pt` |
-| **Download size** | ~91 MB | ~65 MB | ~100 MB | ~54 MB |
-| **Works offline?** | Yes (after first download) | Yes | Yes | Yes |
+| Language | Engine | Model / Voice | Notes |
+|----------|--------|---------------|-------|
+| Ukrainian | Silero v5 | `v5_cis_base.pt` / `ukr_igor` | Auto-downloads ~91MB |
+| Russian | Silero v5 | `v5_ru.pt` / `aidar` | Auto-downloads ~65MB |
+| English | Silero v3 | `v3_en.pt` / `en_70` | Auto-downloads ~100MB |
+| German | Silero v3 | `v3_de.pt` / `karlsson` | Auto-downloads ~54MB |
+| Spanish | Kokoro | `em_alex` | Via sidecar on port 3003 |
+| French | MMS-TTS | `facebook/mms-tts-fra` | Auto-downloads from HuggingFace |
+| Greek | MMS-TTS | `facebook/mms-tts-ell` | Auto-downloads from HuggingFace |
+| Hindi | Kokoro | `hm_omega` | Via sidecar on port 3003 |
+| Arabic | Piper | `kareem` voice | Male voice with custom reference |
+| Korean | MMS-TTS | `facebook/mms-tts-kor` | Requires `uroman` for romanization |
+| Japanese | Kokoro | `jm_kumo` | Via sidecar on port 3003 |
+| Chinese | Kokoro | `zm_yunjian` | Via sidecar on port 3003 |
 
-Mixed-script text (e.g. a Ukrainian sentence containing an English word) is split by script and each chunk is routed to the appropriate model automatically.
+**Mixed-language TTS:** When the AI tutor mixes languages (e.g. German text with English translations in parentheses), the app automatically routes each part to the correct TTS engine. For non-Latin-script languages (Ukrainian, Russian, Greek, Arabic, Korean, Chinese, Japanese), script detection splits native vs English text at the word level.
 
-### 4. (Optional) Enable Chat Practice with a local AI tutor
+### Architecture
+
+- **tts-server.py** (port 3002) — Main server handling Silero, MMS-TTS, and Piper models. Proxies Kokoro requests to the sidecar.
+- **kokoro-tts.py** (port 3003) — Kokoro sidecar auto-launched by tts-server.py. Runs on Python 3.12 due to Kokoro's version requirement. Falls back to espeak-ng if Python 3.12 isn't available.
+
+### 5. (Optional) Enable Chat Practice with a local AI tutor
 
 Chat Practice lets you have free-form conversations with an AI language tutor. It requires [LM Studio](https://lmstudio.ai/) running locally to serve an LLM.
 
@@ -153,7 +154,7 @@ Chat Practice lets you have free-form conversations with an AI language tutor. I
 
 1. Download and install [LM Studio](https://lmstudio.ai/) for your platform (Windows, macOS, or Linux)
 2. Open LM Studio and download a model:
-   - **Recommended:** `Qwen 3.5 35B` — excellent multilingual support for Ukrainian, Russian, and German (requires ~24GB RAM)
+   - **Recommended:** `Qwen 3.5 35B` — excellent multilingual support (requires ~24GB RAM)
    - **Lighter alternative:** `Qwen 3.5 9B` — still good quality, runs on most machines (~8GB RAM)
    - Search for "Qwen 3.5" in the LM Studio model search, pick a GGUF quantization that fits your hardware
 3. Load the model in LM Studio
@@ -163,7 +164,7 @@ That's it. The app automatically connects to LM Studio when you open Chat Practi
 
 #### Speech-to-Text (Whisper)
 
-The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects whether you're speaking English, Ukrainian, Russian, or German and transcribes it accurately.
+The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects the language being spoken and transcribes it accurately.
 
 - **macOS (Apple Silicon):** Uses [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) — optimized for M-series chips, very fast (~500ms)
 - **Windows / Linux / Intel Mac:** Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CPU-based, works everywhere
@@ -172,7 +173,7 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 
 ## How to play
 
-1. **Set up your keyboard** - Add Ukrainian, Russian, or German as an input language in your OS settings (click the Keyboard Setup Guide in the app for instructions)
+1. **Set up your keyboard** - Add the target language as an input language in your OS settings (click the Keyboard Setup Guide in the app for instructions)
 2. **Switch your keyboard** - Use `Win+Space` (Windows), `Ctrl+Space` (Mac), or `Super+Space` (Linux) to switch to the target language
 3. **Start typing** - Pick a lesson and type the letters/words shown. The virtual keyboard highlights which key to press
 4. **Explore other modes** - Try flashcards, grammar lessons, reading practice, and more from the main menu
@@ -185,16 +186,12 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 │   ├── components/modes/   # Game mode components (flashcards, grammar, chat, speech, etc.)
 │   ├── components/         # Shared components (ModeHeader, WordToolbar, StatsPage, etc.)
 │   ├── hooks/              # Custom hooks (TTS, STT, word click, speech practice, lesson chat)
-│   ├── data/               # Ukrainian language data (lessons, vocabulary, grammar, dialogues)
-│   ├── data/ru/            # Russian language data
-│   ├── data/de/            # German language data
+│   ├── data/               # Language data directories (uk, ru, de, es, fr, el, hi, ar, ko, ja, zh)
 │   └── utils/              # Helpers (dictionary builder, user dictionary, sound effects)
-├── tts-server.py           # Local TTS + STT server — Silero (4 languages) + Whisper on port 3002
-├── tts-model-uk-silero/    # Ukrainian TTS model files (auto-downloaded, gitignored)
-├── tts-model-ru/           # Russian TTS model files (auto-downloaded, gitignored)
-├── tts-model-en/           # English TTS model files (auto-downloaded, gitignored)
-├── tts-model-de/           # German TTS model files (auto-downloaded, gitignored)
-├── users.db                # SQLite database for accounts (auto-created, gitignored)
+├── tts-server.py           # Main TTS + STT server (Silero, MMS-TTS, Piper) on port 3002
+├── kokoro-tts.py           # Kokoro TTS sidecar (es, hi, ja, zh) on port 3003
+├── ref_audio/              # Reference audio for voice cloning (Arabic)
+├── scripts/                # Build scripts for vocabulary/story patches
 ├── start.bat               # Windows startup script
 ├── start.sh                # Mac/Linux startup script
 ├── index.html              # Vite entry point
@@ -212,16 +209,15 @@ The Whisper model (~500MB) downloads automatically on first use. After that, spe
 
 **Python dependency issues?**
 ```bash
-pip install flask flask-cors torch
-pip install flask-jwt-extended bcrypt   # for account system
-pip install num2words                   # for number pronunciation
+pip install flask flask-cors torch soundfile requests transformers
+pip install flask-jwt-extended bcrypt num2words uroman
+pip install piper-tts pathvalidate
 ```
 
-**A TTS model won't download?**
-- Ukrainian: download manually from `https://models.silero.ai/models/tts/ru/v5_cis_base.pt` → place at `tts-model-uk-silero/v5_cis_base.pt`
-- Russian: `https://models.silero.ai/models/tts/ru/v5_ru.pt` → `tts-model-ru/v5_ru.pt`
-- English: `https://models.silero.ai/models/tts/en/v3_en.pt` → `tts-model-en/v3_en.pt`
-- German: `https://models.silero.ai/models/tts/de/v3_de.pt` → `tts-model-de/v3_de.pt`
+**Kokoro sidecar not starting?**
+- Kokoro requires Python 3.10-3.12. Set `KOKORO_PYTHON` to the correct path if needed
+- Install Kokoro on the right Python: `python3.12 -m pip install kokoro>=0.9.4 soundfile "misaki[ja]" "misaki[zh]"`
+- If the sidecar isn't available, Spanish/Hindi/Japanese/Chinese fall back to espeak-ng
 
 **Chat Practice says "LM Studio not detected"?**
 - Make sure LM Studio is running and a model is loaded
@@ -241,12 +237,12 @@ openssl req -x509 -newkey rsa:2048 -keyout .cert/key.pem -out .cert/cert.pem -da
 The dev server will automatically use HTTPS when these cert files exist, and fall back to HTTP otherwise.
 
 **Port already in use?**
-- Close other apps using ports 5173 or 3002
-- Or edit the port in `vite.config.js` / `tts-server.py`
+- Close other apps using ports 5173, 3002, or 3003
+- Or edit the port in `vite.config.js` / `tts-server.py` / `kokoro-tts.py`
 
 ## Credits
 
-- TTS powered by [Silero Models](https://github.com/snakers4/silero-models)
+- TTS powered by [Silero Models](https://github.com/snakers4/silero-models), [Kokoro](https://github.com/hexgrad/kokoro), [MMS-TTS](https://huggingface.co/facebook/mms-tts), and [Piper](https://github.com/rhasspy/piper)
 - Speech-to-text by [OpenAI Whisper](https://github.com/openai/whisper) via [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) / [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 - LLM chat powered by [LM Studio](https://lmstudio.ai/)
 - Built with React + Vite
