@@ -7,6 +7,8 @@ import { buildDailySession, getTodayStr, getYesterdayStr } from '../../utils/dai
 import { reviewCard, formatInterval } from '../../utils/srs.js';
 import { MINIMAL_PAIRS } from '../../data/minimalPairs.js';
 import { storageGet, storageSet } from '../../utils/storage.js';
+import LessonChat from '../shared/LessonChat.jsx';
+import { useLessonChat } from '../../hooks/useLessonChat.js';
 
 const RATINGS = [
   { key: 'again', label: 'Again', color: '#f87171', bg: 'rgba(248,113,113,0.15)', xp: 0, num: '1' },
@@ -25,12 +27,13 @@ export default function DailyReviewMode({
   const targetField = langCode === 'en' ? 'en' : langCode;
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a daily spaced repetition review — they see ${langName} words and self-rate their recall. Help with vocabulary, pronunciation, or usage questions concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const mountedRef = useRef(true);
 
-  // Build session on mount
-  const session = useMemo(() => buildDailySession({
+  // Build session — useState so we can rebuild on "Continue"
+  const [session, setSession] = useState(() => buildDailySession({
     vocabularyMastery, modeProgress, langCode, ttsEnabled,
-  }), [vocabularyMastery, modeProgress, langCode, ttsEnabled]);
+  }));
 
   const [phase, setPhase] = useState('summary'); // summary, review, newWords, exercise, complete
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -145,7 +148,7 @@ export default function DailyReviewMode({
     const card = session.newCards[currentIdx];
     if (!card) return;
 
-    const points = rating === 'easy' ? 8 : 5;
+    const points = 3; // equal XP — the SRS rating (easy vs good) is the meaningful distinction
     setXpEarned(prev => prev + points);
     if (onAddXP) onAddXP(points);
     setNewWordsScore(prev => prev + 1);
@@ -279,12 +282,20 @@ export default function DailyReviewMode({
   }, [session, exerciseScore, xpEarned, onAddXP, onComplete]);
 
   const handleContinue = useCallback(() => {
-    // Rebuild session for remaining due cards
+    // Rebuild session from current SRS state (cards reviewed so far are no longer due)
+    const freshSession = buildDailySession({ vocabularyMastery, modeProgress, langCode, ttsEnabled });
+    setSession(freshSession);
     setContinueMode(true);
-    setPhase('review');
     setCurrentIdx(0);
     setRevealed(false);
-  }, []);
+    setReviewScore(0);
+    setExerciseScore(0);
+    if (freshSession.reviewCards.length > 0) {
+      setPhase('review');
+    } else {
+      setPhase('complete'); // nothing left to review
+    }
+  }, [vocabularyMastery, modeProgress, langCode, ttsEnabled]);
 
   // --- Streak data for display ---
   const streakData = useMemo(() => {
@@ -391,58 +402,61 @@ export default function DailyReviewMode({
           icon="📋"
           onExit={onExit}
         />
-        <div style={styles.main}>
-          <div style={styles.progressBar}>
-            <div style={{ ...styles.progressFill, width: `${progress}%` }} />
-          </div>
+        <div className="content-row" style={styles.contentRow}>
+          <div style={styles.main}>
+            <div style={styles.progressBar}>
+              <div style={{ ...styles.progressFill, width: `${progress}%` }} />
+            </div>
 
-          <div style={styles.card}>
-            <div style={styles.wordBig}>{card.word}</div>
-            {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
+            <div style={styles.card}>
+              <div style={styles.wordBig}>{card.word}</div>
+              {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
 
-            {ttsEnabled && onSpeak && (
-              <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>
-                🔊 Play
-              </button>
-            )}
+              {ttsEnabled && onSpeak && (
+                <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>
+                  🔊 Play
+                </button>
+              )}
 
-            {!revealed ? (
-              <button style={styles.showBtn} onClick={() => setRevealed(true)}>
-                Show Answer
-              </button>
-            ) : (
-              <div style={styles.answerArea}>
-                <div style={styles.translation}>{card.en}</div>
-                {card.examples?.length > 0 && (
-                  <div style={styles.example}>
-                    <div style={styles.exampleText}>{card.examples[0]}</div>
-                    {card.examplesEn?.length > 0 && (
-                      <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
-                    )}
+              {!revealed ? (
+                <button style={styles.showBtn} onClick={() => setRevealed(true)}>
+                  Show Answer
+                </button>
+              ) : (
+                <div style={styles.answerArea}>
+                  <div style={styles.translation}>{card.en}</div>
+                  {card.examples?.length > 0 && (
+                    <div style={styles.example}>
+                      <div style={styles.exampleText}>{card.examples[0]}</div>
+                      {card.examplesEn?.length > 0 && (
+                        <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
+                      )}
+                    </div>
+                  )}
+
+                  <div style={styles.ratingRow}>
+                    {previews.map(r => (
+                      <button
+                        key={r.key}
+                        style={{ ...styles.ratingBtn, borderColor: r.color, background: r.bg }}
+                        onClick={() => handleRating(r.key)}
+                      >
+                        <div style={{ color: r.color, fontWeight: '700', fontSize: '1rem' }}>{r.label}</div>
+                        <div style={styles.ratingInterval}>{r.interval}</div>
+                        <div style={styles.ratingKey}>{r.num}</div>
+                      </button>
+                    ))}
                   </div>
-                )}
-
-                <div style={styles.ratingRow}>
-                  {previews.map(r => (
-                    <button
-                      key={r.key}
-                      style={{ ...styles.ratingBtn, borderColor: r.color, background: r.bg }}
-                      onClick={() => handleRating(r.key)}
-                    >
-                      <div style={{ color: r.color, fontWeight: '700', fontSize: '1rem' }}>{r.label}</div>
-                      <div style={styles.ratingInterval}>{r.interval}</div>
-                      <div style={styles.ratingKey}>{r.num}</div>
-                    </button>
-                  ))}
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          <div style={styles.scoreBar}>
-            <span>Score: {reviewScore}/{currentIdx + (revealed ? 0 : 0)}</span>
-            <span>XP: +{xpEarned}</span>
+            <div style={styles.scoreBar}>
+              <span>Score: {reviewScore}/{currentIdx + (revealed ? 1 : 0)}</span>
+              <span>XP: +{xpEarned}</span>
+            </div>
           </div>
+          <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
         </div>
         <WordToolbar selectedWord={selectedWord} onDismiss={dismissWord} onSpeak={onSpeak} ttsEnabled={ttsEnabled} ttsVolume={ttsVolume} langName={langName} langCode={langCode} onMarkMastered={onMarkMastered} isMastered={masteredWordsList.some(m => m.word === selectedWord?.word)} />
       </div>
@@ -618,7 +632,7 @@ export default function DailyReviewMode({
               const pairsData = MINIMAL_PAIRS[langCode]?.pairs || [];
               if (pairsData.length === 0) return <p>No minimal pairs available.</p>;
               const pair = pairsData[currentIdx % pairsData.length];
-              const playedSide = currentIdx % 2 === 0 ? 'A' : 'B';
+              const playedSide = ((currentIdx * 7 + 3) % 11) % 2 === 0 ? 'A' : 'B'; // pseudo-random but stable per index
               const playedWord = playedSide === 'A' ? pair.wordA : pair.wordB;
 
               return (
@@ -750,7 +764,8 @@ const styles = {
     padding: '2rem',
     fontFamily: 'system-ui, -apple-system, sans-serif',
   },
-  main: { maxWidth: '650px', margin: '0 auto' },
+  contentRow: { display: 'flex', gap: '1.5rem', alignItems: 'flex-start' },
+  main: { flex: 1, minWidth: 0, maxWidth: '650px' },
 
   // Progress
   progressBar: {
