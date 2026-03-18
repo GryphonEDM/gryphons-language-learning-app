@@ -10,7 +10,7 @@
   },
   "exchanges": [
     { "speaker": "npc", "text": "Добрий день! Що вам потрібно?", "translation": "Good day! What do you need?" },
-    { "speaker": "player", "prompt": "Say 'hello' and ask for bread", "acceptedResponses": ["добрий день, мені потрібен хліб", "здравствуйте, хліб будь ласка", "привіт, хліб будь ласка", "хліб, будь ласка", "мені потрібен хліб"], "keyWords": ["хліб"], "hint": "хліб, будь ласка" },
+    { "speaker": "player", "prompt": "Say 'hello' and ask for bread", "acceptedResponses": ["добрий день, мені потрібен хліб", "добрий день, хліб будь ласка", "привіт, хліб будь ласка", "хліб, будь ласка", "мені потрібен хліб"], "keyWords": ["хліб"], "hint": "хліб, будь ласка" },
     { "speaker": "npc", "text": "Ось хліб. Ще щось?", "translation": "Here is the bread. Anything else?" },
     { "speaker": "player", "prompt": "Ask for milk", "acceptedResponses": ["молоко, будь ласка", "і молоко", "ще молоко", "можна молоко"], "keyWords": ["молоко"], "hint": "молоко..." },
     { "speaker": "npc", "text": "Будь ласка. Це все?", "translation": "Here you go. Is that all?" },

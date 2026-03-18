@@ -24,7 +24,7 @@ export const LESSONS = {
     description: "Learn the top row of the Ukrainian keyboard",
     hint: "й ц у к е н г ш щ з х ї",
     letters: ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ї'],
-    words: ['ще', 'єн', 'кухне', 'щуку', 'цех', 'неї', 'нею', 'ніж', 'шукун'],
+    words: ['ще', 'єн', 'кухне', 'щуку', 'цех', 'неї', 'нею', 'ніж', 'кущі'],
     xpPerLetter: 10,
     xpPerWord: 25,
     requiredXp: 0

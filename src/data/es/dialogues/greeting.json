@@ -101,12 +101,12 @@
     },
     {
       "speaker": "player",
-      "prompt": "Ask Carlos if he was born in Madrid",
+      "prompt": "Say no, but you are here visiting — then ask Carlos if he is from Madrid",
       "acceptedResponses": [
-        "¿Naciste en Madrid?",
-        "¿Eres de Madrid?",
-        "¿Tú eres de Madrid?",
-        "¿Naciste aquí en Madrid?"
+        "No, pero ¿tú eres de Madrid?",
+        "No, no tengo familia aquí. ¿Eres de Madrid?",
+        "No, estoy solo. ¿Naciste en Madrid?",
+        "No, pero ¿eres de aquí?"
       ],
       "keyWords": ["Madrid", "eres"],
       "hint": "¿Eres de Madrid?"

@@ -125,20 +125,8 @@
     },
     {
       "speaker": "npc",
-      "text": "¡De nada! ¡Buen provecho!",
-      "translation": "You are welcome! Enjoy!"
-    },
-    {
-      "speaker": "player",
-      "prompt": "You found the museum — say you found it and that the directions were perfect",
-      "acceptedResponses": [
-        "¡Lo encontré! Las indicaciones fueron perfectas.",
-        "¡Aquí está! Las indicaciones eran perfectas.",
-        "¡Lo encontré! Sus indicaciones fueron perfectas.",
-        "¡Lo encontré! Gracias por las indicaciones."
-      ],
-      "keyWords": ["encontré", "perfectas"],
-      "hint": "¡Lo encontré! Las indicaciones fueron perfectas."
+      "text": "¡De nada! ¡Que le vaya bien!",
+      "translation": "You are welcome! Take care!"
     }
   ]
 }
