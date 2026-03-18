@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { buildDictionary } from '../utils/dictionaryBuilder.js';
 import { lookupUserDict, saveToUserDict, translateWithLLM } from '../utils/userDictionary.js';
-import { stopSpeaking } from '../App.jsx';
+import { stopSpeaking, setTtsProgressCallback } from '../App.jsx';
 import useWhisperSTT from './useWhisperSTT.js';
 
 export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak, ttsEnabled, ttsVolume }) {
@@ -118,8 +118,17 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     // speakMixed handles language splitting internally
     const allWords = text.split(/\s+/).filter(Boolean);
     const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
+    const wordCount = allWords.length - startFromWordIdx;
+    // For Korean: use time-based progress to update word highlighting
+    if (langCode === 'ko') {
+      setTtsProgressCallback((progress) => {
+        const currentWord = startFromWordIdx + Math.floor(progress * wordCount);
+        setTtsHighlight({ msgIdx, wordStart: currentWord, wordEnd: Math.min(currentWord + 1, allWords.length) });
+      });
+    }
     setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
     try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+    setTtsProgressCallback(null);
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);

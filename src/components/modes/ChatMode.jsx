@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
-import { stopSpeaking } from '../../App.jsx';
+import { stopSpeaking, setTtsProgressCallback } from '../../App.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import { WordToolbar } from '../shared/WordToolbar.jsx';
 
@@ -391,8 +391,17 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     // speakMixed handles language splitting internally
     const allWords = text.split(/\s+/).filter(Boolean);
     const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
+    const wordCount = allWords.length - startFromWordIdx;
+    // For Korean: use time-based progress to update word highlighting
+    if (langCode === 'ko') {
+      setTtsProgressCallback((progress) => {
+        const currentWord = startFromWordIdx + Math.floor(progress * wordCount);
+        setTtsHighlight({ msgIdx, wordStart: currentWord, wordEnd: Math.min(currentWord + 1, allWords.length) });
+      });
+    }
     setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
     try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+    setTtsProgressCallback(null);
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);

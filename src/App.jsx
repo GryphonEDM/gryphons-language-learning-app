@@ -412,7 +412,7 @@ export const stopSpeaking = () => {
   }
 };
 
-export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
+export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk', onProgress = null) => {
   if (ttsCancelled) return;
   if (currentAudio) {
     currentAudio.pause();
@@ -442,6 +442,13 @@ export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk'
     currentAudio = audio;
 
     return new Promise((resolve) => {
+      if (onProgress) {
+        audio.ontimeupdate = () => {
+          if (audio.duration > 0) {
+            onProgress(audio.currentTime / audio.duration);
+          }
+        };
+      }
       audio.onended = () => {
         URL.revokeObjectURL(audioUrl);
         resolve();
@@ -536,6 +543,10 @@ function splitByScript(text, lang = 'uk') {
   return chunks;
 }
 
+// Global progress callback — set by speakWithHighlight for time-based word highlighting
+let ttsProgressCallback = null;
+export const setTtsProgressCallback = (cb) => { ttsProgressCallback = cb; };
+
 /** Speak mixed-language text: native via language model, parenthesized/Latin text via English TTS. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
   if (lang === 'en') return speakUkrainian(text, rate, volume, 'en');
@@ -548,15 +559,18 @@ const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
     return speakUkrainian(inner, rate, volume, 'en');
   }
 
+  // Korean uses time-based progress for highlighting (MMS-TTS is slow, no chunking)
+  const progressCb = lang === 'ko' ? ttsProgressCallback : null;
+
   // Split into native/English chunks
   const chunks = splitByScript(text, lang);
   if (chunks.length === 0 || (chunks.length === 1 && chunks[0].type === 'native')) {
-    return speakUkrainian(text, rate, volume, lang);
+    return speakUkrainian(text, rate, volume, lang, progressCb);
   }
   for (const chunk of chunks) {
     if (ttsCancelled) break;
     if (chunk.type === 'native') {
-      await speakUkrainian(chunk.text, rate, volume, lang);
+      await speakUkrainian(chunk.text, rate, volume, lang, progressCb);
     } else {
       await speakUkrainian(chunk.text, rate, volume, 'en');
     }
