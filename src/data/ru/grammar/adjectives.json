@@ -4,7 +4,9 @@
   "nameRu": "Согласование прилагательных",
   "icon": "🎨",
   "tier": "A1",
-  "prerequisites": ["nouns-basics"],
+  "prerequisites": [
+    "nouns-basics"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,53 +15,94 @@
       "explanation": "Russian adjectives change form to agree with the gender of the noun they describe. Masculine: -ый/-ий/-ой, Feminine: -ая/-яя, Neuter: -ое/-ее. Example: большой (m.), большая (f.), большое (n.) = big.",
       "tip": "Masc: -ый/-ий/-ой | Fem: -ая/-яя | Neuter: -ое/-ее",
       "examples": [
-        { "ru": "Большой дом.", "en": "A big house. (masculine)", "highlight": "Большой" },
-        { "ru": "Большая книга.", "en": "A big book. (feminine)", "highlight": "Большая" },
-        { "ru": "Большое окно.", "en": "A big window. (neuter)", "highlight": "Большое" }
+        {
+          "ru": "Большой дом.",
+          "en": "A big house. (masculine)",
+          "highlight": "Большой"
+        },
+        {
+          "ru": "Большая книга.",
+          "en": "A big book. (feminine)",
+          "highlight": "Большая"
+        },
+        {
+          "ru": "Большое окно.",
+          "en": "A big window. (neuter)",
+          "highlight": "Большое"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'___ кот спит.' (small, masculine — маленький)",
-          "options": ["Маленький", "Маленькая", "Маленькое"],
-          "correctIndex": 0,
+          "options": [
+            "Маленькое",
+            "Маленький",
+            "Маленькая"
+          ],
+          "correctIndex": 1,
           "explanation": "'Кот' is masculine, so the adjective takes the masculine form: маленький."
         },
         {
           "type": "fill-blank",
           "prompt": "___ девочка смеётся. (beautiful, feminine — красивый)",
-          "acceptedAnswers": ["Красивая", "красивая"],
+          "acceptedAnswers": [
+            "Красивая",
+            "красивая"
+          ],
           "hint": "Feminine adjective ending: -ая",
           "explanation": "'Девочка' is feminine, so use 'красивая' (feminine -ая ending)."
         },
         {
           "type": "multiple-choice",
           "prompt": "'___ солнце светит.' (bright — яркий)",
-          "options": ["Яркое", "Яркий", "Яркая"],
-          "correctIndex": 0,
+          "options": [
+            "Яркий",
+            "Яркая",
+            "Яркое"
+          ],
+          "correctIndex": 2,
           "explanation": "'Солнце' is neuter, so use the neuter form: яркое (-ое ending)."
         },
         {
           "type": "transformation",
           "prompt": "Change 'новый' to match 'машина' (f.): '___ машина'",
-          "acceptedAnswers": ["новая", "Новая"],
+          "acceptedAnswers": [
+            "новая",
+            "Новая"
+          ],
           "explanation": "'Машина' is feminine, so 'новый' becomes 'новая' (-ый → -ая)."
         },
         {
           "type": "matching",
           "prompt": "Match each noun with the correct form of 'красивый' (beautiful):",
           "pairs": [
-            { "left": "мальчик (m.)", "right": "красивый" },
-            { "left": "девушка (f.)", "right": "красивая" },
-            { "left": "озеро (n.)", "right": "красивое" },
-            { "left": "день (m.)", "right": "красивый" }
+            {
+              "left": "мальчик (m.)",
+              "right": "красивый"
+            },
+            {
+              "left": "девушка (f.)",
+              "right": "красивая"
+            },
+            {
+              "left": "озеро (n.)",
+              "right": "красивое"
+            },
+            {
+              "left": "день (m.)",
+              "right": "красивый"
+            }
           ],
           "explanation": "Masculine: красивый, Feminine: красивая, Neuter: красивое."
         },
         {
           "type": "fill-blank",
           "prompt": "___ окно открыто. (big — большой, neuter)",
-          "acceptedAnswers": ["Большое", "большое"],
+          "acceptedAnswers": [
+            "Большое",
+            "большое"
+          ],
           "hint": "Neuter adjective ending: -ое",
           "explanation": "'Окно' (window) is neuter, so use 'большое' (-ое ending)."
         },
@@ -68,28 +111,47 @@
           "prompt": "Find and fix the error: 'Вкусная торт стоит на столе.'",
           "incorrectText": "Вкусная торт стоит на столе.",
           "correctedText": "Вкусный торт стоит на столе.",
-          "acceptedAnswers": ["Вкусный торт стоит на столе.", "Вкусный торт стоит на столе"],
+          "acceptedAnswers": [
+            "Вкусный торт стоит на столе.",
+            "Вкусный торт стоит на столе"
+          ],
           "explanation": "'Торт' (cake) is masculine, so the adjective must be 'вкусный' (not feminine 'вкусная')."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct? '___ молоко.'  (cold — холодный)",
-          "options": ["Холодное", "Холодный", "Холодная"],
-          "correctIndex": 0,
+          "options": [
+            "Холодный",
+            "Холодное",
+            "Холодная"
+          ],
+          "correctIndex": 1,
           "explanation": "'Молоко' (milk) is neuter, so use 'холодное'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["интересная", "очень", "Эта", "книга"],
-          "correctOrder": ["Эта", "книга", "очень", "интересная"],
+          "words": [
+            "интересная",
+            "очень",
+            "Эта",
+            "книга"
+          ],
+          "correctOrder": [
+            "Эта",
+            "книга",
+            "очень",
+            "интересная"
+          ],
           "explanation": "'Эта книга очень интересная.' — This book is very interesting. 'Интересная' is feminine to match 'книга'."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the adjective you hear:",
           "audio": "Это старый дом.",
-          "acceptedAnswers": ["старый"],
+          "acceptedAnswers": [
+            "старый"
+          ],
           "explanation": "'Старый' (old, masculine) matches 'дом' (house, masculine)."
         }
       ]
@@ -100,39 +162,72 @@
       "explanation": "In the plural, adjectives have one form for all genders: -ые/-ие. Use -ие after г, к, х, ж, ч, ш, щ. Example: большие дома (big houses), большие книги (big books), большие окна (big windows).",
       "tip": "Plural is easy — -ые or -ие for all genders!",
       "examples": [
-        { "ru": "Большие дома.", "en": "Big houses.", "highlight": "Большие" },
-        { "ru": "Красивые цветы.", "en": "Beautiful flowers.", "highlight": "Красивые" },
-        { "ru": "Новые ученики.", "en": "New students.", "highlight": "Новые" }
+        {
+          "ru": "Большие дома.",
+          "en": "Big houses.",
+          "highlight": "Большие"
+        },
+        {
+          "ru": "Красивые цветы.",
+          "en": "Beautiful flowers.",
+          "highlight": "Красивые"
+        },
+        {
+          "ru": "Новые ученики.",
+          "en": "New students.",
+          "highlight": "Новые"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'___ дети играют.' (small, plural — маленький)",
-          "options": ["Маленькие", "Маленький", "Маленькая"],
-          "correctIndex": 0,
+          "options": [
+            "Маленькая",
+            "Маленький",
+            "Маленькие"
+          ],
+          "correctIndex": 2,
           "explanation": "Plural adjectives: after к use -ие: маленькие."
         },
         {
           "type": "fill-blank",
           "prompt": "___ машины едут. (new, plural — новый)",
-          "acceptedAnswers": ["Новые", "новые"],
+          "acceptedAnswers": [
+            "Новые",
+            "новые"
+          ],
           "hint": "Plural form ending: -ые",
           "explanation": "All plural adjectives take -ые/-ие: новые."
         },
         {
           "type": "transformation",
           "prompt": "Change to plural: 'большой дом' → 'большие ___'",
-          "acceptedAnswers": ["дома"],
+          "acceptedAnswers": [
+            "дома"
+          ],
           "explanation": "Singular 'большой дом' becomes 'большие дома'. The adjective becomes -ие in plural."
         },
         {
           "type": "matching",
           "prompt": "Match singular adjective forms with their plural:",
           "pairs": [
-            { "left": "большой (m.)", "right": "большие" },
-            { "left": "большая (f.)", "right": "большие" },
-            { "left": "большое (n.)", "right": "большие" },
-            { "left": "старый (m.)", "right": "старые" }
+            {
+              "left": "большой (m.)",
+              "right": "большие"
+            },
+            {
+              "left": "большая (f.)",
+              "right": "большие"
+            },
+            {
+              "left": "большое (n.)",
+              "right": "большие"
+            },
+            {
+              "left": "старый (m.)",
+              "right": "старые"
+            }
           ],
           "explanation": "Regardless of the singular gender form, all plurals end in -ые/-ие."
         },
@@ -141,41 +236,65 @@
           "prompt": "Find and fix the error: 'Красивый цветы стоят в вазе.'",
           "incorrectText": "Красивый цветы стоят в вазе.",
           "correctedText": "Красивые цветы стоят в вазе.",
-          "acceptedAnswers": ["Красивые цветы стоят в вазе.", "Красивые цветы стоят в вазе"],
+          "acceptedAnswers": [
+            "Красивые цветы стоят в вазе.",
+            "Красивые цветы стоят в вазе"
+          ],
           "explanation": "'Цветы' (flowers) is plural, so the adjective must be 'красивые' (not masculine singular 'красивый')."
         },
         {
           "type": "fill-blank",
           "prompt": "У нас ___ друзья. (good — хороший, plural)",
-          "acceptedAnswers": ["хорошие"],
+          "acceptedAnswers": [
+            "хорошие"
+          ],
           "hint": "Plural after ш: -ие",
           "explanation": "'Друзья' (friends) is plural, so use 'хорошие' (-ие after ш)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the plural form of 'синий' (blue)?",
-          "options": ["синие", "синяя", "синее"],
-          "correctIndex": 0,
+          "options": [
+            "синее",
+            "синие",
+            "синяя"
+          ],
+          "correctIndex": 1,
           "explanation": "All plural adjectives: синий → синие (-ие)."
         },
         {
           "type": "transformation",
           "prompt": "Make plural: 'интересная книга' → '___ книги'",
-          "acceptedAnswers": ["интересные", "Интересные"],
+          "acceptedAnswers": [
+            "интересные",
+            "Интересные"
+          ],
           "explanation": "Feminine singular 'интересная' becomes 'интересные' in plural (-ые)."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["вкусные", "Мама", "готовит", "блюда"],
-          "correctOrder": ["Мама", "готовит", "вкусные", "блюда"],
+          "words": [
+            "вкусные",
+            "Мама",
+            "готовит",
+            "блюда"
+          ],
+          "correctOrder": [
+            "Мама",
+            "готовит",
+            "вкусные",
+            "блюда"
+          ],
           "explanation": "'Мама готовит вкусные блюда.' — Mom cooks tasty dishes. 'Вкусные' = tasty (plural)."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the adjective you hear:",
           "audio": "Это новые студенты.",
-          "acceptedAnswers": ["новые"],
+          "acceptedAnswers": [
+            "новые"
+          ],
           "explanation": "'Новые' (new, plural) matches the plural noun 'студенты'."
         }
       ]
@@ -186,15 +305,29 @@
       "explanation": "Practice using adjectives with nouns in real sentences. Remember: the adjective must match the noun's gender (masculine, feminine, or neuter) in singular, and all plurals take -ые/-ие.",
       "tip": "The adjective must match the noun's gender: большой дом, большая книга, большое окно",
       "examples": [
-        { "ru": "Я живу в большом городе.", "en": "I live in a big city.", "highlight": "большом" },
-        { "ru": "У неё красивая улыбка.", "en": "She has a beautiful smile.", "highlight": "красивая" },
-        { "ru": "Это очень старые деревья.", "en": "These are very old trees.", "highlight": "старые" }
+        {
+          "ru": "Я живу в большом городе.",
+          "en": "I live in a big city.",
+          "highlight": "большом"
+        },
+        {
+          "ru": "У неё красивая улыбка.",
+          "en": "She has a beautiful smile.",
+          "highlight": "красивая"
+        },
+        {
+          "ru": "Это очень старые деревья.",
+          "en": "These are very old trees.",
+          "highlight": "старые"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "Я купил ___ телефон. (new, m. — новый)",
-          "acceptedAnswers": ["новый"],
+          "acceptedAnswers": [
+            "новый"
+          ],
           "hint": "Masculine singular: -ый",
           "explanation": "'Телефон' is masculine, so use 'новый'."
         },
@@ -203,44 +336,78 @@
           "prompt": "Find and fix the error: 'Это очень красивое мальчик.'",
           "incorrectText": "Это очень красивое мальчик.",
           "correctedText": "Это очень красивый мальчик.",
-          "acceptedAnswers": ["Это очень красивый мальчик.", "Это очень красивый мальчик"],
+          "acceptedAnswers": [
+            "Это очень красивый мальчик.",
+            "Это очень красивый мальчик"
+          ],
           "explanation": "'Мальчик' (boy) is masculine, so the adjective must be 'красивый' (not neuter 'красивое')."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["вкусную", "Он", "ест", "кашу"],
-          "correctOrder": ["Он", "ест", "вкусную", "кашу"],
+          "words": [
+            "вкусную",
+            "Он",
+            "ест",
+            "кашу"
+          ],
+          "correctOrder": [
+            "Он",
+            "ест",
+            "вкусную",
+            "кашу"
+          ],
           "explanation": "'Он ест вкусную кашу.' — He eats tasty porridge. 'Вкусную' matches feminine 'кашу' (accusative)."
         },
         {
           "type": "transformation",
           "prompt": "Fill in the correct adjective form: 'холодный' for 'вода' (f.): '___ вода'",
-          "acceptedAnswers": ["холодная", "Холодная"],
+          "acceptedAnswers": [
+            "холодная",
+            "Холодная"
+          ],
           "explanation": "'Вода' is feminine, so 'холодный' becomes 'холодная'."
         },
         {
           "type": "matching",
           "prompt": "Match each phrase with the correct adjective form of 'новый' (new):",
           "pairs": [
-            { "left": "___ дом (m.)", "right": "новый" },
-            { "left": "___ школа (f.)", "right": "новая" },
-            { "left": "___ окно (n.)", "right": "новое" },
-            { "left": "___ друзья (pl.)", "right": "новые" }
+            {
+              "left": "___ дом (m.)",
+              "right": "новый"
+            },
+            {
+              "left": "___ школа (f.)",
+              "right": "новая"
+            },
+            {
+              "left": "___ окно (n.)",
+              "right": "новое"
+            },
+            {
+              "left": "___ друзья (pl.)",
+              "right": "новые"
+            }
           ],
           "explanation": "новый (m.), новая (f.), новое (n.), новые (pl.)."
         },
         {
           "type": "multiple-choice",
           "prompt": "'Мы живём в ___ доме.' (old — старый, m. prepositional)",
-          "options": ["старом", "старый", "старая"],
+          "options": [
+            "старом",
+            "старая",
+            "старый"
+          ],
           "correctIndex": 0,
           "explanation": "In the prepositional case (в доме), masculine 'старый' becomes 'старом'. (Preview of case agreement!)"
         },
         {
           "type": "fill-blank",
           "prompt": "Она носит ___ платье. (beautiful, n. — красивый)",
-          "acceptedAnswers": ["красивое"],
+          "acceptedAnswers": [
+            "красивое"
+          ],
           "hint": "Neuter accusative: -ое",
           "explanation": "'Платье' is neuter, so 'красивый' → 'красивое'."
         },
@@ -249,25 +416,31 @@
           "prompt": "Find and fix the error: 'Маленькие кот сидит на крыше.'",
           "incorrectText": "Маленькие кот сидит на крыше.",
           "correctedText": "Маленький кот сидит на крыше.",
-          "acceptedAnswers": ["Маленький кот сидит на крыше.", "Маленький кот сидит на крыше"],
+          "acceptedAnswers": [
+            "Маленький кот сидит на крыше.",
+            "Маленький кот сидит на крыше"
+          ],
           "explanation": "'Кот' is singular masculine, so use 'маленький' (not plural 'маленькие')."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the full phrase:",
           "audio": "Большая красная машина.",
-          "acceptedAnswers": ["Большая красная машина.", "Большая красная машина"],
+          "acceptedAnswers": [
+            "Большая красная машина.",
+            "Большая красная машина"
+          ],
           "explanation": "Both adjectives match 'машина' (f.): большая (big), красная (red) — both feminine -ая endings."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is correct?",
           "options": [
-            "Это интересное кино.",
+            "Это интересная кино.",
             "Это интересный кино.",
-            "Это интересная кино."
+            "Это интересное кино."
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "'Кино' (cinema/movie) is neuter (indeclinable), so use 'интересное' (neuter -ое ending)."
         }
       ]

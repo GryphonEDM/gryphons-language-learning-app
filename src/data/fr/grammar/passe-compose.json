@@ -4,7 +4,10 @@
   "nameFr": "Le passé composé",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["avoir-etre", "present-tense"],
+  "prerequisites": [
+    "avoir-etre",
+    "present-tense"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,67 +16,117 @@
       "explanation": "The passé composé is the main past tense in spoken French, used to describe completed actions. It is formed with two parts: a present-tense auxiliary verb + a past participle. The majority of French verbs use avoir as the auxiliary. Formation: avoir (conjugated in present) + past participle. Present tense of avoir: j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont. To form the past participle: -ER verbs drop -er and add -é (parler → parlé), -IR verbs drop -ir and add -i (finir → fini), -RE verbs drop -re and add -u (vendre → vendu). Many common verbs have irregular past participles that must be memorized: être → été, avoir → eu, faire → fait, dire → dit, écrire → écrit, lire → lu, prendre → pris, mettre → mis, voir → vu, vouloir → voulu, pouvoir → pu, savoir → su, boire → bu. Negation: place ne...pas around the auxiliary: Je n'ai pas mangé (I didn't eat). Questions: use est-ce que or inversion: Est-ce que tu as vu le film? / As-tu vu le film? Agreement with avoir: normally the past participle does not agree with the subject — but it does agree with a preceding direct object: Les films que j'ai vus (vu + s because les films is masculine plural and precedes the verb).",
       "tip": "With avoir, the past participle almost never changes — learn this rule first, then learn the one exception (preceding direct object agreement) later. The irregular participles are the real priority: fait, dit, pris, mis, vu, eu, été are all extremely common. Say them out loud until they feel automatic.",
       "examples": [
-        { "fr": "J'ai parlé avec elle.", "en": "I spoke with her.", "highlight": "ai parlé" },
-        { "fr": "Tu as fini tes devoirs.", "en": "You finished your homework.", "highlight": "as fini" },
-        { "fr": "Il a vendu sa voiture.", "en": "He sold his car.", "highlight": "a vendu" },
-        { "fr": "Nous avons fait une erreur.", "en": "We made a mistake.", "highlight": "avons fait" },
-        { "fr": "Je n'ai pas mangé ce matin.", "en": "I didn't eat this morning.", "highlight": "n'ai pas mangé" },
-        { "fr": "Est-ce que vous avez vu ce film?", "en": "Did you see that film?", "highlight": "avez vu" }
+        {
+          "fr": "J'ai parlé avec elle.",
+          "en": "I spoke with her.",
+          "highlight": "ai parlé"
+        },
+        {
+          "fr": "Tu as fini tes devoirs.",
+          "en": "You finished your homework.",
+          "highlight": "as fini"
+        },
+        {
+          "fr": "Il a vendu sa voiture.",
+          "en": "He sold his car.",
+          "highlight": "a vendu"
+        },
+        {
+          "fr": "Nous avons fait une erreur.",
+          "en": "We made a mistake.",
+          "highlight": "avons fait"
+        },
+        {
+          "fr": "Je n'ai pas mangé ce matin.",
+          "en": "I didn't eat this morning.",
+          "highlight": "n'ai pas mangé"
+        },
+        {
+          "fr": "Est-ce que vous avez vu ce film?",
+          "en": "Did you see that film?",
+          "highlight": "avez vu"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past participle of 'parler' (to speak)?",
-          "options": ["parlé", "parli", "parlu"],
-          "correctIndex": 0,
+          "options": [
+            "parli",
+            "parlu",
+            "parlé"
+          ],
+          "correctIndex": 2,
           "explanation": "-ER verbs form the past participle by replacing -er with -é. Parler → parlé."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct for 'She ate the cake' (manger)?",
-          "options": ["Elle a mangé le gâteau.", "Elle est mangé le gâteau.", "Elle a mangée le gâteau."],
+          "options": [
+            "Elle a mangé le gâteau.",
+            "Elle a mangée le gâteau.",
+            "Elle est mangé le gâteau."
+          ],
           "correctIndex": 0,
           "explanation": "Manger uses avoir as its auxiliary. The past participle mangé does not agree with the subject, so no extra -e is added."
         },
         {
           "type": "fill-blank",
           "prompt": "Nous ___ (finir) le projet hier. (We finished the project yesterday.)",
-          "acceptedAnswers": ["avons fini"],
+          "acceptedAnswers": [
+            "avons fini"
+          ],
           "hint": "Finir is an -IR verb: past participle is fini. Use the nous form of avoir.",
           "explanation": "avons fini — avoir (nous avons) + past participle of finir (fini, from -IR → -i)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the irregular past participle of 'faire' (to do/make)?",
-          "options": ["fait", "faisé", "faitu"],
-          "correctIndex": 0,
+          "options": [
+            "faisé",
+            "fait",
+            "faitu"
+          ],
+          "correctIndex": 1,
           "explanation": "Faire has the irregular past participle 'fait'. This must be memorized — it does not follow any regular pattern."
         },
         {
           "type": "fill-blank",
           "prompt": "Tu ___ (voir) ce film? (Did you see that film?)",
-          "acceptedAnswers": ["as vu"],
+          "acceptedAnswers": [
+            "as vu"
+          ],
           "hint": "Voir has an irregular past participle. Use the tu form of avoir.",
           "explanation": "as vu — avoir (tu as) + irregular past participle of voir (vu)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I didn't eat' in French?",
-          "options": ["Je n'ai pas mangé.", "Je ai pas mangé.", "Je n'ai mangé pas."],
+          "options": [
+            "Je n'ai pas mangé.",
+            "Je ai pas mangé.",
+            "Je n'ai mangé pas."
+          ],
           "correctIndex": 0,
           "explanation": "Negation wraps the auxiliary with ne...pas: Je n'ai pas mangé. The ne comes before ai and pas comes after it, before the past participle."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the past participle of 'prendre' (to take)?",
-          "options": ["pris", "prendu", "prené"],
+          "options": [
+            "pris",
+            "prendu",
+            "prené"
+          ],
           "correctIndex": 0,
           "explanation": "Prendre has the irregular past participle 'pris'. Other -RE verbs use -u (vendre → vendu), but prendre is irregular."
         },
         {
           "type": "fill-blank",
           "prompt": "Ils ___ (boire) du café. (They drank coffee.)",
-          "acceptedAnswers": ["ont bu"],
+          "acceptedAnswers": [
+            "ont bu"
+          ],
           "hint": "Boire has an irregular past participle. Use the ils form of avoir.",
           "explanation": "ont bu — avoir (ils ont) + irregular past participle of boire (bu)."
         }
@@ -85,67 +138,117 @@
       "explanation": "A smaller but important group of verbs uses être instead of avoir as the auxiliary in the passé composé. The most common of these are often remembered with the mnemonic DR MRS VANDERTRAMP: Devenir, Revenir, Monter, Rester, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Retourner, Arriver, Mourir, Partir. These verbs generally describe motion or a change of state. Formation: être (present) + past participle, where the past participle must agree with the subject in gender and number — add nothing for masculine singular, -e for feminine singular, -s for masculine plural, -es for feminine plural. Present tense of être: je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont. Examples: Je suis allé (male: I went), Je suis allée (female: I went), Nous sommes partis (all-male or mixed group: we left), Nous sommes parties (all-female: we left). All reflexive verbs (se lever, se laver, se coucher, etc.) also use être in the passé composé: Je me suis levé(e) (I got up), Il s'est lavé (He washed himself), Elles se sont couchées (They [f] went to bed).",
       "tip": "DR MRS VANDERTRAMP is the classic mnemonic, but think of it this way: être verbs are almost always about going somewhere, coming from somewhere, or a major life event (being born, dying). When in doubt, ask: is this a motion or change-of-state verb? If yes, it probably uses être. And always remember: with être, the past participle is like an adjective — it must match the subject.",
       "examples": [
-        { "fr": "Je suis allé au marché.", "en": "I (male) went to the market.", "highlight": "suis allé" },
-        { "fr": "Elle est arrivée en retard.", "en": "She arrived late.", "highlight": "est arrivée" },
-        { "fr": "Nous sommes partis tôt.", "en": "We (mixed/male) left early.", "highlight": "sommes partis" },
-        { "fr": "Elles sont restées à la maison.", "en": "They (female) stayed at home.", "highlight": "sont restées" },
-        { "fr": "Il s'est levé à sept heures.", "en": "He got up at seven o'clock.", "highlight": "s'est levé" },
-        { "fr": "Tu es né en France?", "en": "Were you born in France?", "highlight": "es né" }
+        {
+          "fr": "Je suis allé au marché.",
+          "en": "I (male) went to the market.",
+          "highlight": "suis allé"
+        },
+        {
+          "fr": "Elle est arrivée en retard.",
+          "en": "She arrived late.",
+          "highlight": "est arrivée"
+        },
+        {
+          "fr": "Nous sommes partis tôt.",
+          "en": "We (mixed/male) left early.",
+          "highlight": "sommes partis"
+        },
+        {
+          "fr": "Elles sont restées à la maison.",
+          "en": "They (female) stayed at home.",
+          "highlight": "sont restées"
+        },
+        {
+          "fr": "Il s'est levé à sept heures.",
+          "en": "He got up at seven o'clock.",
+          "highlight": "s'est levé"
+        },
+        {
+          "fr": "Tu es né en France?",
+          "en": "Were you born in France?",
+          "highlight": "es né"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which auxiliary does 'aller' (to go) use in the passé composé?",
-          "options": ["être", "avoir", "either être or avoir"],
-          "correctIndex": 0,
+          "options": [
+            "avoir",
+            "être",
+            "either être or avoir"
+          ],
+          "correctIndex": 1,
           "explanation": "Aller is one of the DR MRS VANDERTRAMP verbs and always uses être: je suis allé(e), tu es allé(e), etc."
         },
         {
           "type": "multiple-choice",
           "prompt": "A female speaker says she arrived. Which is correct?",
-          "options": ["Je suis arrivée.", "Je suis arrivé.", "J'ai arrivée."],
+          "options": [
+            "Je suis arrivée.",
+            "Je suis arrivé.",
+            "J'ai arrivée."
+          ],
           "correctIndex": 0,
           "explanation": "Arriver uses être, so the past participle agrees with the subject. A female speaker adds -e: arrivée. Also note that arriver never uses avoir."
         },
         {
           "type": "fill-blank",
           "prompt": "Ils ___ (partir) sans nous. (They [male] left without us.)",
-          "acceptedAnswers": ["sont partis"],
+          "acceptedAnswers": [
+            "sont partis"
+          ],
           "hint": "Partir uses être. Add -s for masculine plural agreement.",
           "explanation": "sont partis — être (ils sont) + past participle parti, with -s added for masculine plural agreement."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She got up early' using se lever?",
-          "options": ["Elle s'est levée tôt.", "Elle a levée tôt.", "Elle est levée tôt."],
-          "correctIndex": 0,
+          "options": [
+            "Elle a levée tôt.",
+            "Elle s'est levée tôt.",
+            "Elle est levée tôt."
+          ],
+          "correctIndex": 1,
           "explanation": "All reflexive verbs use être. The reflexive pronoun se (→ s') comes before the auxiliary: s'est. The past participle levée agrees with the feminine subject elle."
         },
         {
           "type": "fill-blank",
           "prompt": "Nous ___ (rester) chez nous hier soir. (We stayed home last night.) [mixed group]",
-          "acceptedAnswers": ["sommes restés"],
+          "acceptedAnswers": [
+            "sommes restés"
+          ],
           "hint": "Rester uses être. For a mixed-gender group, use masculine plural agreement (-s).",
           "explanation": "sommes restés — être (nous sommes) + past participle resté, with -s for masculine plural (mixed group defaults to masculine)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct passé composé of 'mourir' (to die) for 'il'?",
-          "options": ["Il est mort.", "Il a mort.", "Il est mourri."],
-          "correctIndex": 0,
+          "options": [
+            "Il est mourri.",
+            "Il a mort.",
+            "Il est mort."
+          ],
+          "correctIndex": 2,
           "explanation": "Mourir uses être and has the irregular past participle 'mort'. Il est mort is the correct form."
         },
         {
           "type": "multiple-choice",
           "prompt": "A group of all women went out (sortir). Which is correct?",
-          "options": ["Elles sont sorties.", "Elles sont sortis.", "Elles ont sorties."],
+          "options": [
+            "Elles sont sorties.",
+            "Elles sont sortis.",
+            "Elles ont sorties."
+          ],
           "correctIndex": 0,
           "explanation": "Sortir uses être. For an all-female group, add -es to the past participle: sorties. Elles sont sortis is wrong because -is is masculine plural."
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ (se coucher) tard. (She went to bed late.)",
-          "acceptedAnswers": ["s'est couchée"],
+          "acceptedAnswers": [
+            "s'est couchée"
+          ],
           "hint": "Se coucher is reflexive, so it uses être. The past participle agrees with the feminine subject.",
           "explanation": "s'est couchée — reflexive se (→ s') + être (est) + past participle couchée, with -e added for the feminine subject elle."
         }

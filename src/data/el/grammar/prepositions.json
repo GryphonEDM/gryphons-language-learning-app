@@ -4,7 +4,9 @@
   "nameEl": "Προθέσεις",
   "icon": "📍",
   "tier": "A2",
-  "prerequisites": ["articles"],
+  "prerequisites": [
+    "articles"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,33 +15,69 @@
       "explanation": "Greek has a small set of core prepositions that carry a wide range of meanings. The most important ones are:\n\nσε — in, at, to (location and direction)\nαπό — from, of (origin, separation)\nμε — with (accompaniment, means)\nγια — for, about (purpose, topic)\nχωρίς — without\nμετά — after\nπριν — before\nπάνω — above, on (position)\nκάτω — below, under (position)\n\nCRITICAL — Σε + article contractions:\nWhen 'σε' is followed by a definite article, they fuse into a single word:\n  σε + τον = στον\n  σε + την = στην\n  σε + το  = στο\n  σε + τους = στους\n  σε + τις = στις\n  σε + τα  = στα\n\nThese contractions are mandatory — you must always contract. 'σε τον' is incorrect; 'στον' is the only accepted form.",
       "tip": "The contraction rule is simple: whenever σε meets an article starting with τ-, drop the 'ε' from σε and run them together. σε + τον → σ + τον → στον. Practice the six contracted forms until they feel automatic.",
       "examples": [
-        { "el": "Μένω στην Αθήνα.", "en": "I live in Athens. (σε + την → στην)", "highlight": "στην" },
-        { "el": "Έρχομαι από την Ελλάδα.", "en": "I come from Greece.", "highlight": "από" },
-        { "el": "Πάω στο σχολείο με τα πόδια.", "en": "I go to school on foot. (σε + το → στο)", "highlight": "στο" },
-        { "el": "Αυτό το βιβλίο είναι για σένα.", "en": "This book is for you.", "highlight": "για" },
-        { "el": "Πίνω καφέ χωρίς ζάχαρη.", "en": "I drink coffee without sugar.", "highlight": "χωρίς" },
-        { "el": "Πριν το φαγητό πλένω τα χέρια μου.", "en": "Before the meal I wash my hands.", "highlight": "Πριν" }
+        {
+          "el": "Μένω στην Αθήνα.",
+          "en": "I live in Athens. (σε + την → στην)",
+          "highlight": "στην"
+        },
+        {
+          "el": "Έρχομαι από την Ελλάδα.",
+          "en": "I come from Greece.",
+          "highlight": "από"
+        },
+        {
+          "el": "Πάω στο σχολείο με τα πόδια.",
+          "en": "I go to school on foot. (σε + το → στο)",
+          "highlight": "στο"
+        },
+        {
+          "el": "Αυτό το βιβλίο είναι για σένα.",
+          "en": "This book is for you.",
+          "highlight": "για"
+        },
+        {
+          "el": "Πίνω καφέ χωρίς ζάχαρη.",
+          "en": "I drink coffee without sugar.",
+          "highlight": "χωρίς"
+        },
+        {
+          "el": "Πριν το φαγητό πλένω τα χέρια μου.",
+          "en": "Before the meal I wash my hands.",
+          "highlight": "Πριν"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I go to the store' in Greek? (κατάστημα — neuter)",
-          "options": ["Πάω στο κατάστημα.", "Πάω σε το κατάστημα.", "Πάω στον κατάστημα."],
-          "correctIndex": 0,
+          "options": [
+            "Πάω σε το κατάστημα.",
+            "Πάω στον κατάστημα.",
+            "Πάω στο κατάστημα."
+          ],
+          "correctIndex": 2,
           "explanation": "σε + το (neuter article) contracts to στο: Πάω στο κατάστημα. 'σε το' is never written separately."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 'με' (with)?",
-          "options": ["Πηγαίνω με το αυτοκίνητο.", "Πηγαίνω για το αυτοκίνητο.", "Πηγαίνω από το αυτοκίνητο."],
-          "correctIndex": 0,
+          "options": [
+            "Πηγαίνω για το αυτοκίνητο.",
+            "Πηγαίνω από το αυτοκίνητο.",
+            "Πηγαίνω με το αυτοκίνητο."
+          ],
+          "correctIndex": 2,
           "explanation": "'Με' expresses means or accompaniment: με το αυτοκίνητο = by car / with the car."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct contracted form of σε + τους?",
-          "options": ["στους", "σε τους", "στον"],
-          "correctIndex": 0,
+          "options": [
+            "σε τους",
+            "στους",
+            "στον"
+          ],
+          "correctIndex": 1,
           "explanation": "σε + τους (masculine/feminine accusative plural article) contracts to στους. The contraction is always written as one word."
         }
       ]
@@ -50,33 +88,69 @@
       "explanation": "Greek has a rich set of words for describing spatial relationships. Most of these function as adverbs that can also act as prepositions (often followed by 'από' or 'σε/στο/στη...' to link to a noun phrase):\n\nμπροστά (από) — in front (of)\nπίσω (από) — behind\nδίπλα (σε) — next to, beside\nανάμεσα (σε / σε ... και ...) — between, among\nαπέναντι (από / σε) — opposite, across from\nκοντά (σε) — near, close to\nμακριά (από) — far (from)\nμέσα (σε) — inside, in\nέξω (από) — outside, out of\nπάνω (σε / από) — on top of, above\nκάτω (από / σε) — below, under, down\n\nThese words can stand alone as adverbs ('είναι μέσα' = he/she is inside) or take a complement with 'από' or 'σε': 'κοντά στο σπίτι' (near the house).",
       "tip": "Many location words pair naturally with 'από': μπροστά από, πίσω από, μακριά από, απέναντι από, κάτω από, έξω από. Others prefer 'σε' (contracted): δίπλα στο, κοντά στο, μέσα στο, πάνω στο.",
       "examples": [
-        { "el": "Το αυτοκίνητο είναι μπροστά από το σπίτι.", "en": "The car is in front of the house.", "highlight": "μπροστά από" },
-        { "el": "Η τσάντα είναι κάτω από την καρέκλα.", "en": "The bag is under the chair.", "highlight": "κάτω από" },
-        { "el": "Το φαρμακείο είναι δίπλα στο σούπερ μάρκετ.", "en": "The pharmacy is next to the supermarket.", "highlight": "δίπλα στο" },
-        { "el": "Η τράπεζα είναι απέναντι από το πάρκο.", "en": "The bank is opposite the park.", "highlight": "απέναντι από" },
-        { "el": "Μένω κοντά στο κέντρο.", "en": "I live near the city centre.", "highlight": "κοντά στο" },
-        { "el": "Τα παιδιά παίζουν έξω.", "en": "The children are playing outside.", "highlight": "έξω" }
+        {
+          "el": "Το αυτοκίνητο είναι μπροστά από το σπίτι.",
+          "en": "The car is in front of the house.",
+          "highlight": "μπροστά από"
+        },
+        {
+          "el": "Η τσάντα είναι κάτω από την καρέκλα.",
+          "en": "The bag is under the chair.",
+          "highlight": "κάτω από"
+        },
+        {
+          "el": "Το φαρμακείο είναι δίπλα στο σούπερ μάρκετ.",
+          "en": "The pharmacy is next to the supermarket.",
+          "highlight": "δίπλα στο"
+        },
+        {
+          "el": "Η τράπεζα είναι απέναντι από το πάρκο.",
+          "en": "The bank is opposite the park.",
+          "highlight": "απέναντι από"
+        },
+        {
+          "el": "Μένω κοντά στο κέντρο.",
+          "en": "I live near the city centre.",
+          "highlight": "κοντά στο"
+        },
+        {
+          "el": "Τα παιδιά παίζουν έξω.",
+          "en": "The children are playing outside.",
+          "highlight": "έξω"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'the cat is behind the sofa'? (καναπές — masc., σε+τον=στον)",
-          "options": ["Η γάτα είναι πίσω από τον καναπέ.", "Η γάτα είναι μπροστά από τον καναπέ.", "Η γάτα είναι δίπλα στον καναπέ."],
+          "options": [
+            "Η γάτα είναι πίσω από τον καναπέ.",
+            "Η γάτα είναι μπροστά από τον καναπέ.",
+            "Η γάτα είναι δίπλα στον καναπέ."
+          ],
           "correctIndex": 0,
           "explanation": "'Πίσω από' means 'behind'. Μπροστά από = in front of; δίπλα σε = next to."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which phrase means 'between the two trees'? (δέντρα — neuter plural)",
-          "options": ["ανάμεσα στα δύο δέντρα", "κοντά στα δύο δέντρα", "μακριά από τα δύο δέντρα"],
-          "correctIndex": 0,
+          "options": [
+            "κοντά στα δύο δέντρα",
+            "μακριά από τα δύο δέντρα",
+            "ανάμεσα στα δύο δέντρα"
+          ],
+          "correctIndex": 2,
           "explanation": "'Ανάμεσα σε' means 'between / among'. σε + τα → στα, so: ανάμεσα στα δύο δέντρα."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'she is inside the house'? (σπίτι — neuter)",
-          "options": ["Είναι μέσα στο σπίτι.", "Είναι έξω από το σπίτι.", "Είναι μακριά από το σπίτι."],
-          "correctIndex": 0,
+          "options": [
+            "Είναι μακριά από το σπίτι.",
+            "Είναι έξω από το σπίτι.",
+            "Είναι μέσα στο σπίτι."
+          ],
+          "correctIndex": 2,
           "explanation": "'Μέσα σε' (σε + το → στο) means 'inside': μέσα στο σπίτι. Έξω από = outside; μακριά από = far from."
         }
       ]
@@ -87,34 +161,70 @@
       "explanation": "Many everyday Greek expressions are built around prepositions. Learning these as chunks is the fastest way to sound natural:\n\nστο σπίτι — at home (σε + το)\nστη δουλειά — at work (σε + τη)\nαπό την Ελλάδα — from Greece\nμε τα πόδια — on foot (lit. with the feet)\nμε το αυτοκίνητο — by car\nμε το λεωφορείο — by bus\nγια πάντα — forever\nγια παράδειγμα — for example\nπριν από — before (+ noun phrase; e.g. πριν από το δείπνο = before dinner)\nμετά από — after (+ noun phrase; e.g. μετά από το μάθημα = after the lesson)\nχωρίς λόγο — for no reason (without reason)\nπάνω απ' όλα — above all\n\nNote on πριν/μετά: When followed by a noun phrase, Greek typically adds 'από': πριν από τη συνάντηση (before the meeting). Before verbs, use πριν + subjunctive: πριν φύγεις (before you leave).",
       "tip": "Means of transport always use 'με + definite article': με το αυτοκίνητο, με το τρένο, με το πλοίο. The single exception is 'με τα πόδια' (on foot), which uses the plural. Compare English 'by car' vs 'on foot' — Greek is consistent: always 'με'.",
       "examples": [
-        { "el": "Μένω στο σπίτι σήμερα.", "en": "I'm staying at home today.", "highlight": "στο σπίτι" },
-        { "el": "Η Ελένη είναι στη δουλειά.", "en": "Eleni is at work.", "highlight": "στη δουλειά" },
-        { "el": "Ο Γιάννης είναι από την Ελλάδα.", "en": "Yannis is from Greece.", "highlight": "από την Ελλάδα" },
-        { "el": "Πάω στο γραφείο με το μετρό.", "en": "I go to the office by metro.", "highlight": "με το μετρό" },
-        { "el": "Σε αγαπώ για πάντα.", "en": "I love you forever.", "highlight": "για πάντα" },
-        { "el": "Πριν από το δείπνο πίνουμε κρασί.", "en": "Before dinner we drink wine.", "highlight": "Πριν από" }
+        {
+          "el": "Μένω στο σπίτι σήμερα.",
+          "en": "I'm staying at home today.",
+          "highlight": "στο σπίτι"
+        },
+        {
+          "el": "Η Ελένη είναι στη δουλειά.",
+          "en": "Eleni is at work.",
+          "highlight": "στη δουλειά"
+        },
+        {
+          "el": "Ο Γιάννης είναι από την Ελλάδα.",
+          "en": "Yannis is from Greece.",
+          "highlight": "από την Ελλάδα"
+        },
+        {
+          "el": "Πάω στο γραφείο με το μετρό.",
+          "en": "I go to the office by metro.",
+          "highlight": "με το μετρό"
+        },
+        {
+          "el": "Σε αγαπώ για πάντα.",
+          "en": "I love you forever.",
+          "highlight": "για πάντα"
+        },
+        {
+          "el": "Πριν από το δείπνο πίνουμε κρασί.",
+          "en": "Before dinner we drink wine.",
+          "highlight": "Πριν από"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I go to school on foot'?",
-          "options": ["Πηγαίνω στο σχολείο με τα πόδια.", "Πηγαίνω στο σχολείο με το πόδι.", "Πηγαίνω στο σχολείο χωρίς πόδια."],
-          "correctIndex": 0,
+          "options": [
+            "Πηγαίνω στο σχολείο χωρίς πόδια.",
+            "Πηγαίνω στο σχολείο με το πόδι.",
+            "Πηγαίνω στο σχολείο με τα πόδια."
+          ],
+          "correctIndex": 2,
           "explanation": "'On foot' in Greek is 'με τα πόδια' (with the feet — always plural with the definite article τα)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which phrase correctly means 'after the lesson'?",
-          "options": ["μετά από το μάθημα", "πριν από το μάθημα", "χωρίς το μάθημα"],
-          "correctIndex": 0,
+          "options": [
+            "πριν από το μάθημα",
+            "μετά από το μάθημα",
+            "χωρίς το μάθημα"
+          ],
+          "correctIndex": 1,
           "explanation": "'After' + noun phrase in Greek is 'μετά από': μετά από το μάθημα. 'Πριν από' means before; 'χωρίς' means without."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'she is at work'? (δουλειά — feminine)",
-          "options": ["Είναι στη δουλειά.", "Είναι σε δουλειά.", "Είναι στην δουλειά."],
-          "correctIndex": 0,
-          "explanation": "σε + τη(ν) → στη (before consonant). Δουλειά starts with δ (a consonant), so the short form 'στη' is used, not 'στην'."
+          "options": [
+            "Είναι σε τη δουλειά.",
+            "Είναι σε δουλειά.",
+            "Είναι στη δουλειά."
+          ],
+          "correctIndex": 2,
+          "explanation": "σε + τη(ν) → στη or στην. Both 'στη δουλειά' and 'στην δουλειά' are accepted in Modern Greek (στην is common before dental consonants like δ), but 'στη δουλειά' is the more standard written form."
         }
       ]
     }

@@ -4,7 +4,9 @@
   "nameUk": "Узгодження прикметників",
   "icon": "🎨",
   "tier": "A1",
-  "prerequisites": ["nouns-basics"],
+  "prerequisites": [
+    "nouns-basics"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,53 +15,94 @@
       "explanation": "Ukrainian adjectives change form to agree with the gender of the noun they describe. Masculine: -ий/-ій, Feminine: -а/-я, Neuter: -е/-є. Example: великий (m.), велика (f.), велике (n.) = big.",
       "tip": "Masc: -ий/-ій | Fem: -а/-я | Neuter: -е/-є",
       "examples": [
-        { "uk": "Великий дім.", "en": "A big house. (masculine)", "highlight": "Великий" },
-        { "uk": "Велика книга.", "en": "A big book. (feminine)", "highlight": "Велика" },
-        { "uk": "Велике місто.", "en": "A big city. (neuter)", "highlight": "Велике" }
+        {
+          "uk": "Великий дім.",
+          "en": "A big house. (masculine)",
+          "highlight": "Великий"
+        },
+        {
+          "uk": "Велика книга.",
+          "en": "A big book. (feminine)",
+          "highlight": "Велика"
+        },
+        {
+          "uk": "Велике місто.",
+          "en": "A big city. (neuter)",
+          "highlight": "Велике"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'___ кіт спить.' (small, masculine — маленький)",
-          "options": ["Маленький", "Маленька", "Маленьке"],
-          "correctIndex": 0,
+          "options": [
+            "Маленька",
+            "Маленьке",
+            "Маленький"
+          ],
+          "correctIndex": 2,
           "explanation": "'Кіт' is masculine, so the adjective takes the masculine form: маленький."
         },
         {
           "type": "fill-blank",
           "prompt": "___ дівчинка сміється. (beautiful, feminine — гарний)",
-          "acceptedAnswers": ["Гарна", "гарна"],
+          "acceptedAnswers": [
+            "Гарна",
+            "гарна"
+          ],
           "hint": "Feminine adjective ending: -а",
           "explanation": "'Дівчинка' is feminine, so use 'гарна' (feminine -а ending)."
         },
         {
           "type": "multiple-choice",
           "prompt": "'___ сонце сяє.' (bright — яскравий)",
-          "options": ["Яскраве", "Яскравий", "Яскрава"],
-          "correctIndex": 0,
+          "options": [
+            "Яскрава",
+            "Яскраве",
+            "Яскравий"
+          ],
+          "correctIndex": 1,
           "explanation": "'Сонце' is neuter, so use the neuter form: яскраве (-е ending)."
         },
         {
           "type": "transformation",
           "prompt": "Change 'новий' to match 'машина' (f.): '___ машина'",
-          "acceptedAnswers": ["нова", "Нова"],
+          "acceptedAnswers": [
+            "нова",
+            "Нова"
+          ],
           "explanation": "'Машина' is feminine, so 'новий' becomes 'нова' (-ий → -а)."
         },
         {
           "type": "matching",
           "prompt": "Match each noun with the correct form of 'гарний' (beautiful):",
           "pairs": [
-            { "left": "хлопець (m.)", "right": "гарний" },
-            { "left": "дівчина (f.)", "right": "гарна" },
-            { "left": "озеро (n.)", "right": "гарне" },
-            { "left": "день (m.)", "right": "гарний" }
+            {
+              "left": "хлопець (m.)",
+              "right": "гарний"
+            },
+            {
+              "left": "дівчина (f.)",
+              "right": "гарна"
+            },
+            {
+              "left": "озеро (n.)",
+              "right": "гарне"
+            },
+            {
+              "left": "день (m.)",
+              "right": "гарний"
+            }
           ],
           "explanation": "Masculine: гарний, Feminine: гарна, Neuter: гарне."
         },
         {
           "type": "fill-blank",
           "prompt": "___ вікно відчинене. (big — великий, neuter)",
-          "acceptedAnswers": ["Велике", "велике"],
+          "acceptedAnswers": [
+            "Велике",
+            "велике"
+          ],
           "hint": "Neuter adjective ending: -е",
           "explanation": "'Вікно' (window) is neuter, so use 'велике' (-е ending)."
         },
@@ -68,28 +111,47 @@
           "prompt": "Find and fix the error: 'Смачна торт стоїть на столі.'",
           "incorrectText": "Смачна торт стоїть на столі.",
           "correctedText": "Смачний торт стоїть на столі.",
-          "acceptedAnswers": ["Смачний торт стоїть на столі.", "Смачний торт стоїть на столі"],
+          "acceptedAnswers": [
+            "Смачний торт стоїть на столі.",
+            "Смачний торт стоїть на столі"
+          ],
           "explanation": "'Торт' (cake) is masculine, so the adjective must be 'смачний' (not feminine 'смачна')."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct? '___ молоко.'  (cold — холодний)",
-          "options": ["Холодне", "Холодний", "Холодна"],
-          "correctIndex": 0,
+          "options": [
+            "Холодна",
+            "Холодне",
+            "Холодний"
+          ],
+          "correctIndex": 1,
           "explanation": "'Молоко' (milk) is neuter, so use 'холодне'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["цікава", "дуже", "Ця", "книга"],
-          "correctOrder": ["Ця", "книга", "дуже", "цікава"],
+          "words": [
+            "цікава",
+            "дуже",
+            "Ця",
+            "книга"
+          ],
+          "correctOrder": [
+            "Ця",
+            "книга",
+            "дуже",
+            "цікава"
+          ],
           "explanation": "'Ця книга дуже цікава.' — This book is very interesting. 'Цікава' is feminine to match 'книга'."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the adjective you hear:",
           "audio": "Це старий будинок.",
-          "acceptedAnswers": ["старий"],
+          "acceptedAnswers": [
+            "старий"
+          ],
           "explanation": "'Старий' (old, masculine) matches 'будинок' (building, masculine)."
         }
       ]
@@ -100,39 +162,73 @@
       "explanation": "In the plural, adjectives have one form for all genders: -і. Example: великі будинки (big houses), великі книги (big books), великі міста (big cities). This makes plurals simpler!",
       "tip": "Plural is easy — always -і for all genders!",
       "examples": [
-        { "uk": "Великі будинки.", "en": "Big houses.", "highlight": "Великі" },
-        { "uk": "Гарні квіти.", "en": "Beautiful flowers.", "highlight": "Гарні" },
-        { "uk": "Нові учні.", "en": "New students.", "highlight": "Нові" }
+        {
+          "uk": "Великі будинки.",
+          "en": "Big houses.",
+          "highlight": "Великі"
+        },
+        {
+          "uk": "Гарні квіти.",
+          "en": "Beautiful flowers.",
+          "highlight": "Гарні"
+        },
+        {
+          "uk": "Нові учні.",
+          "en": "New students.",
+          "highlight": "Нові"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'___ діти граються.' (small, plural — маленький)",
-          "options": ["Маленькі", "Маленький", "Маленька"],
-          "correctIndex": 0,
+          "options": [
+            "Маленький",
+            "Маленька",
+            "Маленькі"
+          ],
+          "correctIndex": 2,
           "explanation": "Plural adjectives always end in -і: маленькі."
         },
         {
           "type": "fill-blank",
           "prompt": "___ машини їдуть. (new, plural — новий)",
-          "acceptedAnswers": ["Нові", "нові"],
+          "acceptedAnswers": [
+            "Нові",
+            "нові"
+          ],
           "hint": "Plural form ending: -і",
           "explanation": "All plural adjectives take -і: нові."
         },
         {
           "type": "transformation",
           "prompt": "Change to plural: 'великий дім' → 'великі ___'",
-          "acceptedAnswers": ["будинки", "доми"],
+          "acceptedAnswers": [
+            "будинки",
+            "доми"
+          ],
           "explanation": "Singular 'великий дім' becomes 'великі будинки/доми'. The adjective becomes -і in plural."
         },
         {
           "type": "matching",
           "prompt": "Match singular adjective forms with their plural:",
           "pairs": [
-            { "left": "великий (m.)", "right": "великі" },
-            { "left": "велика (f.)", "right": "великі" },
-            { "left": "велике (n.)", "right": "великі" },
-            { "left": "старий (m.)", "right": "старі" }
+            {
+              "left": "великий (m.)",
+              "right": "великі"
+            },
+            {
+              "left": "велика (f.)",
+              "right": "великі"
+            },
+            {
+              "left": "велике (n.)",
+              "right": "великі"
+            },
+            {
+              "left": "старий (m.)",
+              "right": "старі"
+            }
           ],
           "explanation": "Regardless of the singular gender form, all plurals end in -і."
         },
@@ -141,41 +237,65 @@
           "prompt": "Find and fix the error: 'Гарний квіти стоять у вазі.'",
           "incorrectText": "Гарний квіти стоять у вазі.",
           "correctedText": "Гарні квіти стоять у вазі.",
-          "acceptedAnswers": ["Гарні квіти стоять у вазі.", "Гарні квіти стоять у вазі"],
+          "acceptedAnswers": [
+            "Гарні квіти стоять у вазі.",
+            "Гарні квіти стоять у вазі"
+          ],
           "explanation": "'Квіти' (flowers) is plural, so the adjective must be 'гарні' (not masculine singular 'гарний')."
         },
         {
           "type": "fill-blank",
           "prompt": "У нас ___ друзі. (good — добрий, plural)",
-          "acceptedAnswers": ["добрі"],
+          "acceptedAnswers": [
+            "добрі"
+          ],
           "hint": "Plural: -і",
           "explanation": "'Друзі' (friends) is plural, so use 'добрі'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the plural form of 'синій' (blue)?",
-          "options": ["сині", "синя", "синє"],
-          "correctIndex": 0,
+          "options": [
+            "синє",
+            "сині",
+            "синя"
+          ],
+          "correctIndex": 1,
           "explanation": "All plural adjectives end in -і: синій → сині."
         },
         {
           "type": "transformation",
           "prompt": "Make plural: 'цікава книга' → '___ книги'",
-          "acceptedAnswers": ["цікаві", "Цікаві"],
+          "acceptedAnswers": [
+            "цікаві",
+            "Цікаві"
+          ],
           "explanation": "Feminine singular 'цікава' becomes 'цікаві' in plural (always -і)."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["смачні", "Мама", "готує", "страви"],
-          "correctOrder": ["Мама", "готує", "смачні", "страви"],
+          "words": [
+            "смачні",
+            "Мама",
+            "готує",
+            "страви"
+          ],
+          "correctOrder": [
+            "Мама",
+            "готує",
+            "смачні",
+            "страви"
+          ],
           "explanation": "'Мама готує смачні страви.' — Mom cooks tasty dishes. 'Смачні' = tasty (plural)."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the adjective you hear:",
           "audio": "Це нові студенти.",
-          "acceptedAnswers": ["нові"],
+          "acceptedAnswers": [
+            "нові"
+          ],
           "explanation": "'Нові' (new, plural) matches the plural noun 'студенти'."
         }
       ]
@@ -186,15 +306,29 @@
       "explanation": "Practice using adjectives with nouns in real sentences. Remember: the adjective must match the noun's gender (masculine, feminine, or neuter) in singular, and all plurals take -і.",
       "tip": "The adjective must match the noun's gender: великий дім, велика книга, велике місто",
       "examples": [
-        { "uk": "Я живу у великому місті.", "en": "I live in a big city.", "highlight": "великому" },
-        { "uk": "Вона має гарну усмішку.", "en": "She has a beautiful smile.", "highlight": "гарну" },
-        { "uk": "Це дуже старі дерева.", "en": "These are very old trees.", "highlight": "старі" }
+        {
+          "uk": "Я живу у великому місті.",
+          "en": "I live in a big city.",
+          "highlight": "великому"
+        },
+        {
+          "uk": "Вона має гарну усмішку.",
+          "en": "She has a beautiful smile.",
+          "highlight": "гарну"
+        },
+        {
+          "uk": "Це дуже старі дерева.",
+          "en": "These are very old trees.",
+          "highlight": "старі"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "Я купив ___ телефон. (new, m. — новий)",
-          "acceptedAnswers": ["новий"],
+          "acceptedAnswers": [
+            "новий"
+          ],
           "hint": "Masculine singular: -ий",
           "explanation": "'Телефон' is masculine, so use 'новий'."
         },
@@ -203,44 +337,78 @@
           "prompt": "Find and fix the error: 'Це дуже гарне хлопець.'",
           "incorrectText": "Це дуже гарне хлопець.",
           "correctedText": "Це дуже гарний хлопець.",
-          "acceptedAnswers": ["Це дуже гарний хлопець.", "Це дуже гарний хлопець"],
+          "acceptedAnswers": [
+            "Це дуже гарний хлопець.",
+            "Це дуже гарний хлопець"
+          ],
           "explanation": "'Хлопець' (boy) is masculine, so the adjective must be 'гарний' (not neuter 'гарне')."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["смачну", "Він", "їсть", "кашу"],
-          "correctOrder": ["Він", "їсть", "смачну", "кашу"],
+          "words": [
+            "смачну",
+            "Він",
+            "їсть",
+            "кашу"
+          ],
+          "correctOrder": [
+            "Він",
+            "їсть",
+            "смачну",
+            "кашу"
+          ],
           "explanation": "'Він їсть смачну кашу.' — He eats tasty porridge. 'Смачну' matches feminine 'кашу'."
         },
         {
           "type": "transformation",
           "prompt": "Fill in the correct adjective form: 'холодний' for 'вода' (f.): '___ вода'",
-          "acceptedAnswers": ["холодна", "Холодна"],
+          "acceptedAnswers": [
+            "холодна",
+            "Холодна"
+          ],
           "explanation": "'Вода' is feminine, so 'холодний' becomes 'холодна'."
         },
         {
           "type": "matching",
           "prompt": "Match each phrase with the correct adjective form of 'новий' (new):",
           "pairs": [
-            { "left": "___ дім (m.)", "right": "новий" },
-            { "left": "___ школа (f.)", "right": "нова" },
-            { "left": "___ авто (n.)", "right": "нове" },
-            { "left": "___ друзі (pl.)", "right": "нові" }
+            {
+              "left": "___ дім (m.)",
+              "right": "новий"
+            },
+            {
+              "left": "___ школа (f.)",
+              "right": "нова"
+            },
+            {
+              "left": "___ авто (n.)",
+              "right": "нове"
+            },
+            {
+              "left": "___ друзі (pl.)",
+              "right": "нові"
+            }
           ],
           "explanation": "новий (m.), нова (f.), нове (n.), нові (pl.)."
         },
         {
           "type": "multiple-choice",
           "prompt": "'Ми живемо в ___ будинку.' (old — старий, m.)",
-          "options": ["старому", "старий", "стара"],
-          "correctIndex": 0,
+          "options": [
+            "стара",
+            "старому",
+            "старий"
+          ],
+          "correctIndex": 1,
           "explanation": "In the locative case (в будинку), masculine 'старий' becomes 'старому'. (Preview of case agreement!)"
         },
         {
           "type": "fill-blank",
           "prompt": "Вона носить ___ сукню. (beautiful, f. — гарний)",
-          "acceptedAnswers": ["гарну"],
+          "acceptedAnswers": [
+            "гарну"
+          ],
           "hint": "Feminine accusative: -у",
           "explanation": "'Сукню' is feminine accusative, so 'гарний' → 'гарну'."
         },
@@ -249,14 +417,20 @@
           "prompt": "Find and fix the error: 'Маленькі кіт сидить на дахі.'",
           "incorrectText": "Маленькі кіт сидить на дахі.",
           "correctedText": "Маленький кіт сидить на дахі.",
-          "acceptedAnswers": ["Маленький кіт сидить на дахі.", "Маленький кіт сидить на дахі"],
+          "acceptedAnswers": [
+            "Маленький кіт сидить на дахі.",
+            "Маленький кіт сидить на дахі"
+          ],
           "explanation": "'Кіт' is singular masculine, so use 'маленький' (not plural 'маленькі')."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the full phrase:",
           "audio": "Велика червона машина.",
-          "acceptedAnswers": ["Велика червона машина.", "Велика червона машина"],
+          "acceptedAnswers": [
+            "Велика червона машина.",
+            "Велика червона машина"
+          ],
           "explanation": "Both adjectives match 'машина' (f.): велика (big), червона (red) — both feminine -а endings."
         },
         {

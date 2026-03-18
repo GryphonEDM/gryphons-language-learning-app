@@ -4,7 +4,9 @@
   "nameEs": "Los artículos",
   "icon": "📎",
   "tier": "A1",
-  "prerequisites": ["nouns-gender"],
+  "prerequisites": [
+    "nouns-gender"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,46 +15,91 @@
       "explanation": "Definite articles in Spanish agree with the gender and number of the noun. Masculine singular: el, feminine singular: la, masculine plural: los, feminine plural: las. They correspond to English 'the'. Special rule: use 'el' (not 'la') before feminine nouns that begin with a stressed 'a' or 'ha' sound — e.g., 'el agua' (water), 'el área' (area). This is purely for ease of pronunciation; the noun is still feminine, so adjectives remain feminine: 'el agua fría'.",
       "tip": "el (m. sg.) | la (f. sg.) | los (m. pl.) | las (f. pl.) — Special: el agua, el área (stressed a-)",
       "examples": [
-        { "es": "El libro está en la mesa.", "en": "The book is on the table.", "highlight": "El, la" },
-        { "es": "La casa es grande.", "en": "The house is big.", "highlight": "La" },
-        { "es": "Los niños juegan en el parque.", "en": "The children play in the park.", "highlight": "Los, el" },
-        { "es": "Las flores son muy bonitas.", "en": "The flowers are very pretty.", "highlight": "Las" },
-        { "es": "El agua está fría.", "en": "The water is cold.", "highlight": "El agua" },
-        { "es": "El área del proyecto es grande.", "en": "The project area is large.", "highlight": "El área" }
+        {
+          "es": "El libro está en la mesa.",
+          "en": "The book is on the table.",
+          "highlight": "El, la"
+        },
+        {
+          "es": "La casa es grande.",
+          "en": "The house is big.",
+          "highlight": "La"
+        },
+        {
+          "es": "Los niños juegan en el parque.",
+          "en": "The children play in the park.",
+          "highlight": "Los, el"
+        },
+        {
+          "es": "Las flores son muy bonitas.",
+          "en": "The flowers are very pretty.",
+          "highlight": "Las"
+        },
+        {
+          "es": "El agua está fría.",
+          "en": "The water is cold.",
+          "highlight": "El agua"
+        },
+        {
+          "es": "El área del proyecto es grande.",
+          "en": "The project area is large.",
+          "highlight": "El área"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct definite article: '___ perro ladra.' (dog — masculine singular)",
-          "options": ["El", "La", "Los", "Las"],
+          "options": [
+            "El",
+            "Las",
+            "Los",
+            "La"
+          ],
           "correctIndex": 0,
           "explanation": "'Perro' (dog) is masculine singular, so the definite article is 'el'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct definite article: '___ ciudad es hermosa.' (city — feminine singular)",
-          "options": ["El", "La", "Los", "Las"],
+          "options": [
+            "El",
+            "La",
+            "Los",
+            "Las"
+          ],
           "correctIndex": 1,
           "explanation": "'Ciudad' (city) is feminine singular, so the definite article is 'la'."
         },
         {
           "type": "fill-blank",
           "prompt": "___ estudiantes estudian mucho. (students — masculine plural)",
-          "acceptedAnswers": ["Los", "los"],
+          "acceptedAnswers": [
+            "Los",
+            "los"
+          ],
           "hint": "Masculine plural definite article",
           "explanation": "'Estudiantes' (students) is masculine plural, so use 'los'."
         },
         {
           "type": "fill-blank",
           "prompt": "___ ventanas están abiertas. (windows — feminine plural)",
-          "acceptedAnswers": ["Las", "las"],
+          "acceptedAnswers": [
+            "Las",
+            "las"
+          ],
           "hint": "Feminine plural definite article",
           "explanation": "'Ventanas' (windows) is feminine plural, so use 'las'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct for 'agua' (water, feminine noun with stressed a-)?",
-          "options": ["El agua", "La agua", "Los agua", "Las agua"],
+          "options": [
+            "El agua",
+            "Las agua",
+            "Los agua",
+            "La agua"
+          ],
           "correctIndex": 0,
           "explanation": "Feminine nouns beginning with a stressed 'a' use 'el' in the singular to avoid the awkward 'la a-' sound. 'Agua' is still feminine: 'el agua fría'."
         },
@@ -61,24 +108,41 @@
           "prompt": "Find and fix the error: 'La área de la cocina es pequeña.'",
           "incorrectText": "La área de la cocina es pequeña.",
           "correctedText": "El área de la cocina es pequeña.",
-          "acceptedAnswers": ["El área de la cocina es pequeña.", "El área de la cocina es pequeña"],
+          "acceptedAnswers": [
+            "El área de la cocina es pequeña.",
+            "El área de la cocina es pequeña"
+          ],
           "explanation": "'Área' begins with a stressed 'a', so despite being feminine it takes 'el' in the singular: 'el área'."
         },
         {
           "type": "matching",
           "prompt": "Match each noun with its correct definite article:",
           "pairs": [
-            { "left": "libro (m. sg.)", "right": "el" },
-            { "left": "silla (f. sg.)", "right": "la" },
-            { "left": "gatos (m. pl.)", "right": "los" },
-            { "left": "flores (f. pl.)", "right": "las" }
+            {
+              "left": "libro (m. sg.)",
+              "right": "el"
+            },
+            {
+              "left": "silla (f. sg.)",
+              "right": "la"
+            },
+            {
+              "left": "gatos (m. pl.)",
+              "right": "los"
+            },
+            {
+              "left": "flores (f. pl.)",
+              "right": "las"
+            }
           ],
           "explanation": "el = masculine singular, la = feminine singular, los = masculine plural, las = feminine plural."
         },
         {
           "type": "fill-blank",
           "prompt": "Me gusta ___ música clásica. (music — feminine singular)",
-          "acceptedAnswers": ["la"],
+          "acceptedAnswers": [
+            "la"
+          ],
           "hint": "Feminine singular definite article",
           "explanation": "'Música' is feminine singular, so use 'la': 'Me gusta la música clásica.'"
         },
@@ -87,9 +151,9 @@
           "prompt": "Which sentence is correct?",
           "options": [
             "Los hombres trabajan aquí.",
-            "Las hombres trabajan aquí.",
+            "La hombres trabajan aquí.",
             "El hombres trabajan aquí.",
-            "La hombres trabajan aquí."
+            "Las hombres trabajan aquí."
           ],
           "correctIndex": 0,
           "explanation": "'Hombres' (men) is masculine plural, so the correct article is 'los'."
@@ -97,8 +161,22 @@
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["en", "Los", "parque.", "corren", "niños", "el"],
-          "correctOrder": ["Los", "niños", "corren", "en", "el", "parque."],
+          "words": [
+            "en",
+            "Los",
+            "parque.",
+            "corren",
+            "niños",
+            "el"
+          ],
+          "correctOrder": [
+            "Los",
+            "niños",
+            "corren",
+            "en",
+            "el",
+            "parque."
+          ],
           "explanation": "'Los niños corren en el parque.' — The children run in the park."
         }
       ]
@@ -109,24 +187,51 @@
       "explanation": "Indefinite articles introduce a noun for the first time or refer to a non-specific thing. Masculine singular: un, feminine singular: una, masculine plural: unos, feminine plural: unas. They correspond to English 'a/an' (singular) and 'some' (plural). Important: omit the indefinite article after the verb 'ser' when stating an unmodified profession, nationality, or religion — 'Soy médico' (I am a doctor). But if you add an adjective, the article returns: 'Soy un médico excelente'.",
       "tip": "un (m. sg.) | una (f. sg.) | unos (m. pl.) | unas (f. pl.) — Omit after ser with professions: Soy médico",
       "examples": [
-        { "es": "Tengo un gato en casa.", "en": "I have a cat at home.", "highlight": "un" },
-        { "es": "Ella compró una falda nueva.", "en": "She bought a new skirt.", "highlight": "una" },
-        { "es": "Hay unos libros en la estantería.", "en": "There are some books on the shelf.", "highlight": "unos" },
-        { "es": "Necesito unas llaves.", "en": "I need some keys.", "highlight": "unas" },
-        { "es": "Soy profesora.", "en": "I am a teacher. (no article — profession after ser)", "highlight": "Soy profesora" }
+        {
+          "es": "Tengo un gato en casa.",
+          "en": "I have a cat at home.",
+          "highlight": "un"
+        },
+        {
+          "es": "Ella compró una falda nueva.",
+          "en": "She bought a new skirt.",
+          "highlight": "una"
+        },
+        {
+          "es": "Hay unos libros en la estantería.",
+          "en": "There are some books on the shelf.",
+          "highlight": "unos"
+        },
+        {
+          "es": "Necesito unas llaves.",
+          "en": "I need some keys.",
+          "highlight": "unas"
+        },
+        {
+          "es": "Soy profesora.",
+          "en": "I am a teacher. (no article — profession after ser)",
+          "highlight": "Soy profesora"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct indefinite article: 'Quiero ___ café, por favor.' (coffee — masculine singular)",
-          "options": ["un", "una", "unos", "unas"],
-          "correctIndex": 0,
+          "options": [
+            "una",
+            "un",
+            "unas",
+            "unos"
+          ],
+          "correctIndex": 1,
           "explanation": "'Café' (coffee) is masculine singular, so the indefinite article is 'un'."
         },
         {
           "type": "fill-blank",
           "prompt": "Hay ___ naranja en la nevera. (orange — feminine singular)",
-          "acceptedAnswers": ["una"],
+          "acceptedAnswers": [
+            "una"
+          ],
           "hint": "Feminine singular indefinite article",
           "explanation": "'Naranja' (orange) is feminine singular, so use 'una'."
         },
@@ -134,12 +239,12 @@
           "type": "multiple-choice",
           "prompt": "Which sentence correctly omits the article?",
           "options": [
-            "Mi padre es un ingeniero.",
             "Mi padre es ingeniero.",
+            "Mi padre es un ingeniero.",
             "Mi padre es unos ingeniero.",
             "Mi padre es la ingeniero."
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "After 'ser', unmodified professions drop the indefinite article: 'Mi padre es ingeniero.' (My father is an engineer.)"
         },
         {
@@ -147,17 +252,19 @@
           "prompt": "When is the article required with a profession?",
           "options": [
             "Ella es doctora.",
-            "Ella es una doctora brillante.",
             "Ella es un doctora.",
-            "Ella es la doctora."
+            "Ella es la doctora.",
+            "Ella es una doctora brillante."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "When an adjective modifies the profession, the indefinite article is required: 'Ella es una doctora brillante.' (She is a brilliant doctor.)"
         },
         {
           "type": "fill-blank",
           "prompt": "Vi ___ películas interesantes esta semana. (movies — feminine plural)",
-          "acceptedAnswers": ["unas"],
+          "acceptedAnswers": [
+            "unas"
+          ],
           "hint": "Feminine plural indefinite article",
           "explanation": "'Películas' (movies) is feminine plural, so use 'unas': 'Vi unas películas interesantes.'"
         },
@@ -166,32 +273,61 @@
           "prompt": "Find and fix the error: 'Ella es una abogada.' (She is a lawyer — no adjective)",
           "incorrectText": "Ella es una abogada.",
           "correctedText": "Ella es abogada.",
-          "acceptedAnswers": ["Ella es abogada.", "Ella es abogada"],
+          "acceptedAnswers": [
+            "Ella es abogada.",
+            "Ella es abogada"
+          ],
           "explanation": "When stating a profession without an adjective after 'ser', drop the article: 'Ella es abogada.'"
         },
         {
           "type": "matching",
           "prompt": "Match each noun with its correct indefinite article:",
           "pairs": [
-            { "left": "perro (m. sg.)", "right": "un" },
-            { "left": "mesa (f. sg.)", "right": "una" },
-            { "left": "amigos (m. pl.)", "right": "unos" },
-            { "left": "amigas (f. pl.)", "right": "unas" }
+            {
+              "left": "perro (m. sg.)",
+              "right": "un"
+            },
+            {
+              "left": "mesa (f. sg.)",
+              "right": "una"
+            },
+            {
+              "left": "amigos (m. pl.)",
+              "right": "unos"
+            },
+            {
+              "left": "amigas (f. pl.)",
+              "right": "unas"
+            }
           ],
           "explanation": "un = masculine singular, una = feminine singular, unos = masculine plural, unas = feminine plural."
         },
         {
           "type": "fill-blank",
           "prompt": "Necesito ___ bolígrafo para escribir. (pen — masculine singular)",
-          "acceptedAnswers": ["un"],
+          "acceptedAnswers": [
+            "un"
+          ],
           "hint": "Masculine singular indefinite article",
           "explanation": "'Bolígrafo' (pen) is masculine singular, so use 'un'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["una", "bonita.", "ciudad", "es", "Madrid"],
-          "correctOrder": ["Madrid", "es", "una", "ciudad", "bonita."],
+          "words": [
+            "una",
+            "bonita.",
+            "ciudad",
+            "es",
+            "Madrid"
+          ],
+          "correctOrder": [
+            "Madrid",
+            "es",
+            "una",
+            "ciudad",
+            "bonita."
+          ],
           "explanation": "'Madrid es una ciudad bonita.' — Madrid is a beautiful city. 'Ciudad' is feminine, so 'una'."
         }
       ]

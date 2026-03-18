@@ -4,7 +4,9 @@
   "nameRu": "Существительные: род и множественное число",
   "icon": "📦",
   "tier": "A1",
-  "prerequisites": ["alphabet"],
+  "prerequisites": [
+    "alphabet"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,26 +15,145 @@
       "explanation": "Most Russian masculine nouns end in a consonant: кот (cat), дом (house), стол (table), хлеб (bread). Some end in -ь: день (day), словарь (dictionary). Nouns referring to males ending in -а/-я are also masculine: папа (dad), дядя (uncle).",
       "tip": "Ends in a consonant? Probably masculine!",
       "examples": [
-        { "ru": "Кот", "en": "Cat (masculine)", "highlight": "Кот" },
-        { "ru": "Стол", "en": "Table (masculine)", "highlight": "Стол" },
-        { "ru": "Папа", "en": "Dad (masculine)", "highlight": "Папа" }
+        {
+          "ru": "Кот",
+          "en": "Cat (masculine)",
+          "highlight": "Кот"
+        },
+        {
+          "ru": "Стол",
+          "en": "Table (masculine)",
+          "highlight": "Стол"
+        },
+        {
+          "ru": "Папа",
+          "en": "Dad (masculine)",
+          "highlight": "Папа"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What gender is 'кот' (cat)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Кот' ends in a consonant, so it is masculine." },
-        { "type": "multiple-choice", "prompt": "What gender is 'дом' (house)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Дом' ends in a consonant, making it masculine." },
-        { "type": "fill-blank", "prompt": "The gender of 'стол' (table) is ___", "acceptedAnswers": ["masculine", "мужской", "Masculine"], "hint": "It ends in a consonant", "explanation": "'Стол' ends in a consonant — masculine." },
-        { "type": "multiple-choice", "prompt": "Which noun is masculine?", "options": ["хлеб (bread)", "книга (book)", "окно (window)"], "correctIndex": 0, "explanation": "'Хлеб' ends in a consonant — masculine. 'Книга' (-а) is feminine, 'окно' (-о) is neuter." },
-        { "type": "matching", "prompt": "Match each masculine noun to its meaning:", "pairs": [
-          { "left": "кот", "right": "cat" },
-          { "left": "дом", "right": "house" },
-          { "left": "стол", "right": "table" },
-          { "left": "хлеб", "right": "bread" }
-        ], "explanation": "All these nouns end in a consonant and are masculine." },
-        { "type": "multiple-choice", "prompt": "'Папа' (dad) ends in -а. Is it masculine?", "options": ["Yes — it refers to a male person", "No — it's feminine", "No — it's neuter"], "correctIndex": 0, "explanation": "'Папа' is masculine despite ending in -а because it refers to a male person." },
-        { "type": "fill-blank", "prompt": "The gender of 'день' (day) is ___", "acceptedAnswers": ["masculine", "мужской", "Masculine"], "hint": "It ends in -ь but is still masculine", "explanation": "'День' ends in -ь. While -ь nouns can be masculine or feminine, 'день' is masculine." },
-        { "type": "multiple-choice", "prompt": "Most masculine nouns end in:", "options": ["A consonant", "-а or -я", "-о or -е"], "correctIndex": 0, "explanation": "The typical masculine ending is a consonant (including -ь for some)." },
-        { "type": "multiple-choice", "prompt": "What gender is 'брат' (brother)?", "options": ["Masculine", "Feminine", "Neuter"], "correctIndex": 0, "explanation": "'Брат' ends in a consonant — masculine." },
-        { "type": "fill-blank", "prompt": "'Друг' means 'friend'. Its gender is ___", "acceptedAnswers": ["masculine", "мужской", "Masculine"], "hint": "Ends in a consonant", "explanation": "'Друг' ends in a consonant — masculine." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'кот' (cat)?",
+          "options": [
+            "Neuter",
+            "Feminine",
+            "Masculine"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Кот' ends in a consonant, so it is masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'дом' (house)?",
+          "options": [
+            "Neuter",
+            "Masculine",
+            "Feminine"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Дом' ends in a consonant, making it masculine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'стол' (table) is ___",
+          "acceptedAnswers": [
+            "masculine",
+            "мужской",
+            "Masculine"
+          ],
+          "hint": "It ends in a consonant",
+          "explanation": "'Стол' ends in a consonant — masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which noun is masculine?",
+          "options": [
+            "книга (book)",
+            "хлеб (bread)",
+            "окно (window)"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Хлеб' ends in a consonant — masculine. 'Книга' (-а) is feminine, 'окно' (-о) is neuter."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each masculine noun to its meaning:",
+          "pairs": [
+            {
+              "left": "кот",
+              "right": "cat"
+            },
+            {
+              "left": "дом",
+              "right": "house"
+            },
+            {
+              "left": "стол",
+              "right": "table"
+            },
+            {
+              "left": "хлеб",
+              "right": "bread"
+            }
+          ],
+          "explanation": "All these nouns end in a consonant and are masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Папа' (dad) ends in -а. Is it masculine?",
+          "options": [
+            "No — it's feminine",
+            "Yes — it refers to a male person",
+            "No — it's neuter"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Папа' is masculine despite ending in -а because it refers to a male person."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'день' (day) is ___",
+          "acceptedAnswers": [
+            "masculine",
+            "мужской",
+            "Masculine"
+          ],
+          "hint": "It ends in -ь but is still masculine",
+          "explanation": "'День' ends in -ь. While -ь nouns can be masculine or feminine, 'день' is masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Most masculine nouns end in:",
+          "options": [
+            "-о or -е",
+            "-а or -я",
+            "A consonant"
+          ],
+          "correctIndex": 2,
+          "explanation": "The typical masculine ending is a consonant (including -ь for some)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'брат' (brother)?",
+          "options": [
+            "Masculine",
+            "Feminine",
+            "Neuter"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Брат' ends in a consonant — masculine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Друг' means 'friend'. Its gender is ___",
+          "acceptedAnswers": [
+            "masculine",
+            "мужской",
+            "Masculine"
+          ],
+          "hint": "Ends in a consonant",
+          "explanation": "'Друг' ends in a consonant — masculine."
+        }
       ]
     },
     {
@@ -41,26 +162,145 @@
       "explanation": "Most feminine nouns end in -а or -я: мама (mom), книга (book), земля (earth). Some end in a soft sign -ь: ночь (night), любовь (love), тетрадь (notebook). Context and dictionaries help distinguish -ь masculine from -ь feminine.",
       "tip": "Ends in -а or -я? Usually feminine!",
       "examples": [
-        { "ru": "Книга", "en": "Book (feminine)", "highlight": "Книга" },
-        { "ru": "Мама", "en": "Mom (feminine)", "highlight": "Мама" },
-        { "ru": "Земля", "en": "Earth (feminine)", "highlight": "Земля" }
+        {
+          "ru": "Книга",
+          "en": "Book (feminine)",
+          "highlight": "Книга"
+        },
+        {
+          "ru": "Мама",
+          "en": "Mom (feminine)",
+          "highlight": "Мама"
+        },
+        {
+          "ru": "Земля",
+          "en": "Earth (feminine)",
+          "highlight": "Земля"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What gender is 'книга' (book)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Книга' ends in -а, so it is feminine." },
-        { "type": "multiple-choice", "prompt": "What gender is 'земля' (earth)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Земля' ends in -я, making it feminine." },
-        { "type": "fill-blank", "prompt": "The gender of 'мама' (mom) is ___", "acceptedAnswers": ["feminine", "женский", "Feminine"], "hint": "Ends in -а", "explanation": "'Мама' ends in -а — feminine." },
-        { "type": "multiple-choice", "prompt": "Which noun is feminine?", "options": ["вода (water)", "хлеб (bread)", "село (village)"], "correctIndex": 0, "explanation": "'Вода' ends in -а — feminine." },
-        { "type": "matching", "prompt": "Match each feminine noun to its meaning:", "pairs": [
-          { "left": "книга", "right": "book" },
-          { "left": "мама", "right": "mom" },
-          { "left": "вода", "right": "water" },
-          { "left": "земля", "right": "earth" }
-        ], "explanation": "All these nouns end in -а or -я and are feminine." },
-        { "type": "multiple-choice", "prompt": "'Ночь' (night) ends in -ь. Is it feminine?", "options": ["Yes — some feminine nouns end in -ь", "No — it's masculine", "No — it's neuter"], "correctIndex": 0, "explanation": "'Ночь' is feminine. Many feminine nouns end in -ь (after ж, ш, ч, щ: ночь, мышь, вещь)." },
-        { "type": "fill-blank", "prompt": "The gender of 'любовь' (love) is ___", "acceptedAnswers": ["feminine", "женский", "Feminine"], "hint": "Ends in -ь but is feminine", "explanation": "'Любовь' is feminine despite ending in a consonant + ь." },
-        { "type": "multiple-choice", "prompt": "Most feminine nouns end in:", "options": ["-а or -я", "A consonant", "-о or -е"], "correctIndex": 0, "explanation": "The typical feminine endings are -а and -я." },
-        { "type": "multiple-choice", "prompt": "What gender is 'школа' (school)?", "options": ["Feminine", "Masculine", "Neuter"], "correctIndex": 0, "explanation": "'Школа' ends in -а — feminine." },
-        { "type": "fill-blank", "prompt": "'Сестра' means 'sister'. Its gender is ___", "acceptedAnswers": ["feminine", "женский", "Feminine"], "hint": "Ends in -а", "explanation": "'Сестра' ends in -а — feminine." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'книга' (book)?",
+          "options": [
+            "Feminine",
+            "Neuter",
+            "Masculine"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Книга' ends in -а, so it is feminine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'земля' (earth)?",
+          "options": [
+            "Feminine",
+            "Masculine",
+            "Neuter"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Земля' ends in -я, making it feminine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'мама' (mom) is ___",
+          "acceptedAnswers": [
+            "feminine",
+            "женский",
+            "Feminine"
+          ],
+          "hint": "Ends in -а",
+          "explanation": "'Мама' ends in -а — feminine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which noun is feminine?",
+          "options": [
+            "хлеб (bread)",
+            "село (village)",
+            "вода (water)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Вода' ends in -а — feminine."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each feminine noun to its meaning:",
+          "pairs": [
+            {
+              "left": "книга",
+              "right": "book"
+            },
+            {
+              "left": "мама",
+              "right": "mom"
+            },
+            {
+              "left": "вода",
+              "right": "water"
+            },
+            {
+              "left": "земля",
+              "right": "earth"
+            }
+          ],
+          "explanation": "All these nouns end in -а or -я and are feminine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Ночь' (night) ends in -ь. Is it feminine?",
+          "options": [
+            "Yes — some feminine nouns end in -ь",
+            "No — it's masculine",
+            "No — it's neuter"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Ночь' is feminine. Many feminine nouns end in -ь (after ж, ш, ч, щ: ночь, мышь, вещь)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'любовь' (love) is ___",
+          "acceptedAnswers": [
+            "feminine",
+            "женский",
+            "Feminine"
+          ],
+          "hint": "Ends in -ь but is feminine",
+          "explanation": "'Любовь' is feminine despite ending in a consonant + ь."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Most feminine nouns end in:",
+          "options": [
+            "A consonant",
+            "-а or -я",
+            "-о or -е"
+          ],
+          "correctIndex": 1,
+          "explanation": "The typical feminine endings are -а and -я."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'школа' (school)?",
+          "options": [
+            "Feminine",
+            "Masculine",
+            "Neuter"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Школа' ends in -а — feminine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Сестра' means 'sister'. Its gender is ___",
+          "acceptedAnswers": [
+            "feminine",
+            "женский",
+            "Feminine"
+          ],
+          "hint": "Ends in -а",
+          "explanation": "'Сестра' ends in -а — feminine."
+        }
       ]
     },
     {
@@ -69,26 +309,145 @@
       "explanation": "Neuter nouns typically end in -о or -е: окно (window), село (village), море (sea), сердце (heart). Some neuter nouns end in -мя: время (time), имя (name).",
       "tip": "Ends in -о or -е? Likely neuter!",
       "examples": [
-        { "ru": "Окно", "en": "Window (neuter)", "highlight": "Окно" },
-        { "ru": "Море", "en": "Sea (neuter)", "highlight": "Море" },
-        { "ru": "Село", "en": "Village (neuter)", "highlight": "Село" }
+        {
+          "ru": "Окно",
+          "en": "Window (neuter)",
+          "highlight": "Окно"
+        },
+        {
+          "ru": "Море",
+          "en": "Sea (neuter)",
+          "highlight": "Море"
+        },
+        {
+          "ru": "Село",
+          "en": "Village (neuter)",
+          "highlight": "Село"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What gender is 'окно' (window)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Окно' ends in -о, so it is neuter." },
-        { "type": "multiple-choice", "prompt": "What gender is 'море' (sea)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Море' ends in -е, making it neuter." },
-        { "type": "fill-blank", "prompt": "The gender of 'село' (village) is ___", "acceptedAnswers": ["neuter", "средний", "Neuter"], "hint": "Ends in -о", "explanation": "'Село' ends in -о — neuter." },
-        { "type": "multiple-choice", "prompt": "Which noun is neuter?", "options": ["молоко (milk)", "брат (brother)", "сестра (sister)"], "correctIndex": 0, "explanation": "'Молоко' ends in -о — neuter." },
-        { "type": "matching", "prompt": "Match each neuter noun to its meaning:", "pairs": [
-          { "left": "окно", "right": "window" },
-          { "left": "море", "right": "sea" },
-          { "left": "село", "right": "village" },
-          { "left": "сердце", "right": "heart" }
-        ], "explanation": "All these nouns end in -о or -е and are neuter." },
-        { "type": "multiple-choice", "prompt": "How can you tell 'молоко' (milk) is neuter?", "options": ["It ends in -о", "It ends in a consonant", "It ends in -а"], "correctIndex": 0, "explanation": "Nouns ending in -о are typically neuter." },
-        { "type": "fill-blank", "prompt": "The gender of 'время' (time) is ___", "acceptedAnswers": ["neuter", "средний", "Neuter"], "hint": "Nouns ending in -мя are neuter", "explanation": "'Время' is a special neuter noun ending in -мя." },
-        { "type": "multiple-choice", "prompt": "Most neuter nouns end in:", "options": ["-о or -е", "-а or -я", "A consonant"], "correctIndex": 0, "explanation": "The typical neuter endings are -о and -е." },
-        { "type": "multiple-choice", "prompt": "What gender is 'яблоко' (apple)?", "options": ["Neuter", "Masculine", "Feminine"], "correctIndex": 0, "explanation": "'Яблоко' ends in -о — neuter." },
-        { "type": "fill-blank", "prompt": "'Небо' means 'sky'. Its gender is ___", "acceptedAnswers": ["neuter", "средний", "Neuter"], "hint": "Ends in -о", "explanation": "'Небо' ends in -о — neuter." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'окно' (window)?",
+          "options": [
+            "Masculine",
+            "Neuter",
+            "Feminine"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Окно' ends in -о, so it is neuter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'море' (sea)?",
+          "options": [
+            "Neuter",
+            "Feminine",
+            "Masculine"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Море' ends in -е, making it neuter."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'село' (village) is ___",
+          "acceptedAnswers": [
+            "neuter",
+            "средний",
+            "Neuter"
+          ],
+          "hint": "Ends in -о",
+          "explanation": "'Село' ends in -о — neuter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which noun is neuter?",
+          "options": [
+            "сестра (sister)",
+            "брат (brother)",
+            "молоко (milk)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Молоко' ends in -о — neuter."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each neuter noun to its meaning:",
+          "pairs": [
+            {
+              "left": "окно",
+              "right": "window"
+            },
+            {
+              "left": "море",
+              "right": "sea"
+            },
+            {
+              "left": "село",
+              "right": "village"
+            },
+            {
+              "left": "сердце",
+              "right": "heart"
+            }
+          ],
+          "explanation": "All these nouns end in -о or -е and are neuter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How can you tell 'молоко' (milk) is neuter?",
+          "options": [
+            "It ends in a consonant",
+            "It ends in -а",
+            "It ends in -о"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nouns ending in -о are typically neuter."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The gender of 'время' (time) is ___",
+          "acceptedAnswers": [
+            "neuter",
+            "средний",
+            "Neuter"
+          ],
+          "hint": "Nouns ending in -мя are neuter",
+          "explanation": "'Время' is a special neuter noun ending in -мя."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Most neuter nouns end in:",
+          "options": [
+            "-о or -е",
+            "A consonant",
+            "-а or -я"
+          ],
+          "correctIndex": 0,
+          "explanation": "The typical neuter endings are -о and -е."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What gender is 'яблоко' (apple)?",
+          "options": [
+            "Neuter",
+            "Feminine",
+            "Masculine"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Яблоко' ends in -о — neuter."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Небо' means 'sky'. Its gender is ___",
+          "acceptedAnswers": [
+            "neuter",
+            "средний",
+            "Neuter"
+          ],
+          "hint": "Ends in -о",
+          "explanation": "'Небо' ends in -о — neuter."
+        }
       ]
     },
     {
@@ -97,26 +456,139 @@
       "explanation": "Common plural endings: masculine consonant nouns add -ы/-и (кот→коты, стол→столы). After г, к, х, ж, ч, ш, щ use -и (not -ы). Feminine -а→-ы/-и (книга→книги). Neuter -о→-а (окно→окна), -е→-я (море→моря).",
       "tip": "Masc: add -ы/-и | Fem: -а→-ы/-и | Neuter: -о→-а, -е→-я",
       "examples": [
-        { "ru": "Коты", "en": "Cats", "highlight": "Коты" },
-        { "ru": "Книги", "en": "Books", "highlight": "Книги" },
-        { "ru": "Окна", "en": "Windows", "highlight": "Окна" }
+        {
+          "ru": "Коты",
+          "en": "Cats",
+          "highlight": "Коты"
+        },
+        {
+          "ru": "Книги",
+          "en": "Books",
+          "highlight": "Книги"
+        },
+        {
+          "ru": "Окна",
+          "en": "Windows",
+          "highlight": "Окна"
+        }
       ],
       "exercises": [
-        { "type": "fill-blank", "prompt": "Make plural: кот → ___", "acceptedAnswers": ["коты", "Коты"], "hint": "Masculine: add -ы", "explanation": "Кот → коты. Masculine nouns ending in a hard consonant add -ы." },
-        { "type": "fill-blank", "prompt": "Make plural: книга → ___", "acceptedAnswers": ["книги", "Книги"], "hint": "After г, use -и (not -ы)", "explanation": "Книга → книги. After г, к, х, ж, ч, ш, щ the plural ending is -и." },
-        { "type": "fill-blank", "prompt": "Make plural: окно → ___", "acceptedAnswers": ["окна", "Окна"], "hint": "Neuter: -о becomes -а", "explanation": "Окно → окна. Neuter nouns ending in -о change to -а in the plural." },
-        { "type": "multiple-choice", "prompt": "What is the plural of 'стол' (table)?", "options": ["столы", "стола", "столи"], "correctIndex": 0, "explanation": "Masculine nouns add -ы/-и: стол → столы." },
-        { "type": "matching", "prompt": "Match each noun to its plural:", "pairs": [
-          { "left": "кот", "right": "коты" },
-          { "left": "книга", "right": "книги" },
-          { "left": "окно", "right": "окна" },
-          { "left": "море", "right": "моря" }
-        ], "explanation": "Кот→коты (-ы), книга→книги (-и after г), окно→окна (-а), море→моря (-я)." },
-        { "type": "fill-blank", "prompt": "Make plural: море → ___", "acceptedAnswers": ["моря", "Моря"], "hint": "Neuter: -е becomes -я", "explanation": "Море → моря. Neuter nouns ending in -е change to -я in the plural." },
-        { "type": "multiple-choice", "prompt": "What is the plural of 'школа' (school)?", "options": ["школы", "школа", "школе"], "correctIndex": 0, "explanation": "Feminine: -а → -ы, so школа → школы." },
-        { "type": "fill-blank", "prompt": "Make plural: дом → ___", "acceptedAnswers": ["дома", "Дома"], "hint": "Irregular: stress shifts, ending -а", "explanation": "Дом → дома. This is an irregular plural with stressed -а ending." },
-        { "type": "multiple-choice", "prompt": "What is the plural of 'село' (village)?", "options": ["сёла", "села", "селы"], "correctIndex": 0, "explanation": "Село → сёла. The stress shifts and ё appears." },
-        { "type": "fill-blank", "prompt": "Make plural: земля → ___", "acceptedAnswers": ["земли", "Земли"], "hint": "Feminine: -я becomes -и", "explanation": "Земля → земли. Feminine nouns ending in -я change to -и." }
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: кот → ___",
+          "acceptedAnswers": [
+            "коты",
+            "Коты"
+          ],
+          "hint": "Masculine: add -ы",
+          "explanation": "Кот → коты. Masculine nouns ending in a hard consonant add -ы."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: книга → ___",
+          "acceptedAnswers": [
+            "книги",
+            "Книги"
+          ],
+          "hint": "After г, use -и (not -ы)",
+          "explanation": "Книга → книги. After г, к, х, ж, ч, ш, щ the plural ending is -и."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: окно → ___",
+          "acceptedAnswers": [
+            "окна",
+            "Окна"
+          ],
+          "hint": "Neuter: -о becomes -а",
+          "explanation": "Окно → окна. Neuter nouns ending in -о change to -а in the plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'стол' (table)?",
+          "options": [
+            "столи",
+            "стола",
+            "столы"
+          ],
+          "correctIndex": 2,
+          "explanation": "Masculine nouns add -ы/-и: стол → столы."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun to its plural:",
+          "pairs": [
+            {
+              "left": "кот",
+              "right": "коты"
+            },
+            {
+              "left": "книга",
+              "right": "книги"
+            },
+            {
+              "left": "окно",
+              "right": "окна"
+            },
+            {
+              "left": "море",
+              "right": "моря"
+            }
+          ],
+          "explanation": "Кот→коты (-ы), книга→книги (-и after г), окно→окна (-а), море→моря (-я)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: море → ___",
+          "acceptedAnswers": [
+            "моря",
+            "Моря"
+          ],
+          "hint": "Neuter: -е becomes -я",
+          "explanation": "Море → моря. Neuter nouns ending in -е change to -я in the plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'школа' (school)?",
+          "options": [
+            "школа",
+            "школе",
+            "школы"
+          ],
+          "correctIndex": 2,
+          "explanation": "Feminine: -а → -ы, so школа → школы."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: дом → ___",
+          "acceptedAnswers": [
+            "дома",
+            "Дома"
+          ],
+          "hint": "Irregular: stress shifts, ending -а",
+          "explanation": "Дом → дома. This is an irregular plural with stressed -а ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'село' (village)?",
+          "options": [
+            "сёла",
+            "села",
+            "селы"
+          ],
+          "correctIndex": 0,
+          "explanation": "Село → сёла. The stress shifts and ё appears."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Make plural: земля → ___",
+          "acceptedAnswers": [
+            "земли",
+            "Земли"
+          ],
+          "hint": "Feminine: -я becomes -и",
+          "explanation": "Земля → земли. Feminine nouns ending in -я change to -и."
+        }
       ]
     }
   ]

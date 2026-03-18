@@ -13,31 +13,64 @@
       "explanation": "The basic Chinese numbers 1–10 are: 一 (yī) 1, 二 (èr) 2, 三 (sān) 3, 四 (sì) 4, 五 (wǔ) 5, 六 (liù) 6, 七 (qī) 7, 八 (bā) 8, 九 (jiǔ) 9, 十 (shí) 10. Zero is 零 (líng). Numbers 11–19 are formed by saying 十 plus the unit: 十一 (11), 十二 (12), etc. Multiples of ten use the multiplier before 十: 二十 (20), 三十 (30). Compound numbers combine both: 二十五 (25) = 二十 + 五.\n\nChinese has a unique system of one-handed gestures for numbers 1–10 that lets people show any number on a single hand. 1–5 use the same finger-counting as in the West, but 6–10 are distinct hand shapes: 6 is thumb and pinky extended (like a phone gesture), 7 is thumb and first two fingers pinched together, 8 is thumb and index finger extended in an L-shape, 9 is a hooked index finger, and 10 is either a closed fist or crossed index fingers forming a 十 shape.",
       "tip": "一 changes tone in context: before a 4th-tone syllable it becomes yí (2nd tone), and before 1st/2nd/3rd-tone syllables it becomes yì (4th tone). When counting alone, say yī.",
       "examples": [
-        { "zh": "一二三四五六七八九十", "pinyin": "yī èr sān sì wǔ liù qī bā jiǔ shí", "en": "One two three four five six seven eight nine ten", "highlight": "一二三四五六七八九十" },
-        { "zh": "我有三个孩子。", "pinyin": "Wǒ yǒu sān gè háizi.", "en": "I have three children.", "highlight": "三" },
-        { "zh": "她今年二十五岁。", "pinyin": "Tā jīnnián èrshíwǔ suì.", "en": "She is 25 years old this year.", "highlight": "二十五" },
-        { "zh": "请给我六个苹果。", "pinyin": "Qǐng gěi wǒ liù gè píngguǒ.", "en": "Please give me six apples.", "highlight": "六" }
+        {
+          "zh": "一二三四五六七八九十",
+          "pinyin": "yī èr sān sì wǔ liù qī bā jiǔ shí",
+          "en": "One two three four five six seven eight nine ten",
+          "highlight": "一二三四五六七八九十"
+        },
+        {
+          "zh": "我有三个孩子。",
+          "pinyin": "Wǒ yǒu sān gè háizi.",
+          "en": "I have three children.",
+          "highlight": "三"
+        },
+        {
+          "zh": "她今年二十五岁。",
+          "pinyin": "Tā jīnnián èrshíwǔ suì.",
+          "en": "She is 25 years old this year.",
+          "highlight": "二十五"
+        },
+        {
+          "zh": "请给我六个苹果。",
+          "pinyin": "Qǐng gěi wǒ liù gè píngguǒ.",
+          "en": "Please give me six apples.",
+          "highlight": "六"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say the number 17 in Chinese?",
-          "options": ["七十", "十七", "一七", "七一"],
-          "correctIndex": 1,
+          "options": [
+            "十七",
+            "七一",
+            "七十",
+            "一七"
+          ],
+          "correctIndex": 0,
           "explanation": "17 is 十七 (shíqī) — ten plus seven. 七十 would be 70."
         },
         {
           "type": "fill-blank",
           "prompt": "三十 + 八 = ___",
-          "acceptedAnswers": ["三十八", "三十 八"],
+          "acceptedAnswers": [
+            "三十八",
+            "三十 八"
+          ],
           "hint": "30 + 8",
           "explanation": "三十八 (sānshíbā) = 38. Combine the tens (三十) with the unit (八)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which hand gesture represents the number 6 in the Chinese one-hand system?",
-          "options": ["A closed fist", "Thumb and pinky extended", "An L-shape with thumb and index finger", "All five fingers open plus a wave"],
-          "correctIndex": 1,
+          "options": [
+            "A closed fist",
+            "An L-shape with thumb and index finger",
+            "All five fingers open plus a wave",
+            "Thumb and pinky extended"
+          ],
+          "correctIndex": 3,
           "explanation": "The number 6 is shown by extending the thumb and pinky while closing the other three fingers — it looks like a telephone gesture."
         }
       ]
@@ -48,31 +81,64 @@
       "explanation": "Chinese groups large numbers by ten-thousands (万 wàn = 10,000) rather than by thousands as in Western languages. The key units are: 百 (bǎi) = 100, 千 (qiān) = 1,000, 万 (wàn) = 10,000, 亿 (yì) = 100,000,000 (one hundred million). So one million is 一百万 (yī bǎi wàn, literally 'one hundred ten-thousands'), and one billion is 十亿 (shí yì, literally 'ten hundred-millions').\n\nWhen there is a zero in the middle of a number, you must say 零 (líng) once to mark the gap, but you never repeat it for consecutive zeros. For example: 305 = 三百零五, 1,020 = 一千零二十, but 1,005 = 一千零五 (one 零 covers both missing tens and hundreds). Trailing zeros are never read aloud: 400 = 四百 (not 四百零零).",
       "tip": "To convert a Western number to the 万 system: split at the ten-thousands place. 250,000 = 25 万 = 二十五万. 13,000,000 = 1,300 万 = 一千三百万.",
       "examples": [
-        { "zh": "这本书三百五十块。", "pinyin": "Zhè běn shū sānbǎi wǔshí kuài.", "en": "This book costs 350 yuan.", "highlight": "三百五十" },
-        { "zh": "那个城市有八百万人。", "pinyin": "Nàge chéngshì yǒu bābǎi wàn rén.", "en": "That city has 8 million people.", "highlight": "八百万" },
-        { "zh": "中国有十四亿人口。", "pinyin": "Zhōngguó yǒu shísì yì rénkǒu.", "en": "China has 1.4 billion people.", "highlight": "十四亿" },
-        { "zh": "房间号是三零五。", "pinyin": "Fángjiān hào shì sān líng wǔ.", "en": "The room number is 305.", "highlight": "三零五" }
+        {
+          "zh": "这本书三百五十块。",
+          "pinyin": "Zhè běn shū sānbǎi wǔshí kuài.",
+          "en": "This book costs 350 yuan.",
+          "highlight": "三百五十"
+        },
+        {
+          "zh": "那个城市有八百万人。",
+          "pinyin": "Nàge chéngshì yǒu bābǎi wàn rén.",
+          "en": "That city has 8 million people.",
+          "highlight": "八百万"
+        },
+        {
+          "zh": "中国有十四亿人口。",
+          "pinyin": "Zhōngguó yǒu shísì yì rénkǒu.",
+          "en": "China has 1.4 billion people.",
+          "highlight": "十四亿"
+        },
+        {
+          "zh": "房间号是三零五。",
+          "pinyin": "Fángjiān hào shì sān líng wǔ.",
+          "en": "The room number is 305.",
+          "highlight": "三零五"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 10,000 in Chinese?",
-          "options": ["十千", "一万", "一千零", "百百"],
+          "options": [
+            "百百",
+            "一万",
+            "十千",
+            "一千零"
+          ],
           "correctIndex": 1,
           "explanation": "Chinese uses 万 (wàn) for 10,000 as a base unit. You say 一万 (yī wàn), not 十千."
         },
         {
           "type": "fill-blank",
           "prompt": "50,000 in Chinese: ___万",
-          "acceptedAnswers": ["五", "5"],
+          "acceptedAnswers": [
+            "五",
+            "5"
+          ],
           "hint": "50,000 ÷ 10,000 = ?",
           "explanation": "50,000 = 五万 (wǔ wàn). Divide by 10,000 to get the number before 万."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say the number 1,008 in Chinese?",
-          "options": ["一千八", "一千零零八", "一千零八", "一千百八"],
-          "correctIndex": 2,
+          "options": [
+            "一千零八",
+            "一千百八",
+            "一千零零八",
+            "一千八"
+          ],
+          "correctIndex": 0,
           "explanation": "1,008 = 一千零八. Use a single 零 to bridge the gap (the missing hundreds and tens), never multiple 零 in a row."
         }
       ]
@@ -83,31 +149,64 @@
       "explanation": "Ordinal numbers are formed by placing 第 (dì) before the cardinal number: 第一 (dìyī) = first, 第二 (dì'èr) = second, 第三 (dìsān) = third, and so on. This pattern works for any number: 第十五 = fifteenth, 第一百 = one hundredth.\n\nChinese dates go from largest to smallest unit: 年 (nián, year) → 月 (yuè, month) → 日/号 (rì/hào, day). The year is read digit by digit: 2024年 = 二零二四年 (èr líng èr sì nián). Months are simply numbered 1–12: 一月 (January) through 十二月 (December). Days use 日 in formal writing and 号 (hào) in speech: 三月五号 = March 5th.\n\nDays of the week use 星期 (xīngqī) plus a number: 星期一 (Monday) through 星期六 (Saturday). Sunday breaks the pattern: 星期日 or 星期天 (xīngqītiān).",
       "tip": "Years are read digit by digit — 1998年 is 一九九八年, not 一千九百九十八年. This is different from how you read other large numbers!",
       "examples": [
-        { "zh": "他是第一名。", "pinyin": "Tā shì dìyī míng.", "en": "He is in first place.", "highlight": "第一" },
-        { "zh": "今天是二零二四年三月五号。", "pinyin": "Jīntiān shì èr líng èr sì nián sān yuè wǔ hào.", "en": "Today is March 5th, 2024.", "highlight": "二零二四年三月五号" },
-        { "zh": "我星期三有中文课。", "pinyin": "Wǒ xīngqīsān yǒu zhōngwén kè.", "en": "I have Chinese class on Wednesday.", "highlight": "星期三" },
-        { "zh": "她的生日是十月一号。", "pinyin": "Tā de shēngrì shì shí yuè yī hào.", "en": "Her birthday is October 1st.", "highlight": "十月一号" }
+        {
+          "zh": "他是第一名。",
+          "pinyin": "Tā shì dìyī míng.",
+          "en": "He is in first place.",
+          "highlight": "第一"
+        },
+        {
+          "zh": "今天是二零二四年三月五号。",
+          "pinyin": "Jīntiān shì èr líng èr sì nián sān yuè wǔ hào.",
+          "en": "Today is March 5th, 2024.",
+          "highlight": "二零二四年三月五号"
+        },
+        {
+          "zh": "我星期三有中文课。",
+          "pinyin": "Wǒ xīngqīsān yǒu zhōngwén kè.",
+          "en": "I have Chinese class on Wednesday.",
+          "highlight": "星期三"
+        },
+        {
+          "zh": "她的生日是十月一号。",
+          "pinyin": "Tā de shēngrì shì shí yuè yī hào.",
+          "en": "Her birthday is October 1st.",
+          "highlight": "十月一号"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "March 15th in Chinese (spoken style): 三月___号",
-          "acceptedAnswers": ["十五", "15"],
+          "acceptedAnswers": [
+            "十五",
+            "15"
+          ],
           "hint": "Just the number for 15",
           "explanation": "March 15th = 三月十五号. The day uses the cardinal number before 号."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'Thursday' in Chinese?",
-          "options": ["星期三", "星期四", "星期五", "星期日"],
-          "correctIndex": 1,
+          "options": [
+            "星期五",
+            "星期三",
+            "星期日",
+            "星期四"
+          ],
+          "correctIndex": 3,
           "explanation": "Thursday = 星期四 (xīngqīsì). The days Monday–Saturday use 一 through 六."
         },
         {
           "type": "multiple-choice",
           "prompt": "How is the year 2008 read in Chinese?",
-          "options": ["两千零八年", "二零零八年", "二千八年", "二八年"],
-          "correctIndex": 1,
+          "options": [
+            "二零零八年",
+            "二千八年",
+            "二八年",
+            "两千零八年"
+          ],
+          "correctIndex": 0,
           "explanation": "Years are read digit by digit: 2008 = 二零零八年 (èr líng líng bā nián). Each digit is spoken individually."
         }
       ]
@@ -118,31 +217,65 @@
       "explanation": "Chinese currency (人民币 Rénmínbì, RMB) has three units: 元/块 (yuán/kuài) for the main unit (like dollars), 角/毛 (jiǎo/máo) for tenths, and 分 (fēn) for hundredths. In everyday speech, 块 and 毛 are used; 元 and 角 appear on price tags and formal contexts. For example, ¥3.50 = 三块五毛 or simply 三块五 (the 毛 can be dropped when there are no 分). When there are 分: ¥8.25 = 八块二毛五分 or 八块二毛五.\n\nImportant: use 两 (liǎng) instead of 二 (èr) before measure words and units like 块: 两块钱 (two yuan), not 二块钱. However, 二 is used in larger compound numbers: 二十块 (20 yuan), 十二块 (12 yuan), and 二百块 (200 yuan) are all fine.\n\nPhone numbers are read digit by digit, with 一 (yāo, using a special reading to avoid confusion with 七 qī) for the digit 1: the number 110 (emergency) = 幺幺零 (yāo yāo líng). Mobile numbers like 138-1234-5678 are read as individual digits, often grouped rhythmically.",
       "tip": "二 vs 两: use 两 before measure words (两个, 两块, 两杯) and 二 in sequential/mathematical contexts (第二, 二十, 一二三). In phone numbers, 1 is read as 幺 (yāo), not 一 (yī).",
       "examples": [
-        { "zh": "这个多少钱？两块五。", "pinyin": "Zhège duōshao qián? Liǎng kuài wǔ.", "en": "How much is this? 2.50 yuan.", "highlight": "两块五" },
-        { "zh": "咖啡二十八块。", "pinyin": "Kāfēi èrshíbā kuài.", "en": "The coffee is 28 yuan.", "highlight": "二十八块" },
-        { "zh": "我的电话号码是幺三八幺二三四五六七八。", "pinyin": "Wǒ de diànhuà hàomǎ shì yāo sān bā yāo èr sān sì wǔ liù qī bā.", "en": "My phone number is 13812345678.", "highlight": "幺三八幺二三四五六七八" },
-        { "zh": "请给我两杯水。", "pinyin": "Qǐng gěi wǒ liǎng bēi shuǐ.", "en": "Please give me two cups of water.", "highlight": "两" }
+        {
+          "zh": "这个多少钱？两块五。",
+          "pinyin": "Zhège duōshao qián? Liǎng kuài wǔ.",
+          "en": "How much is this? 2.50 yuan.",
+          "highlight": "两块五"
+        },
+        {
+          "zh": "咖啡二十八块。",
+          "pinyin": "Kāfēi èrshíbā kuài.",
+          "en": "The coffee is 28 yuan.",
+          "highlight": "二十八块"
+        },
+        {
+          "zh": "我的电话号码是幺三八幺二三四五六七八。",
+          "pinyin": "Wǒ de diànhuà hàomǎ shì yāo sān bā yāo èr sān sì wǔ liù qī bā.",
+          "en": "My phone number is 13812345678.",
+          "highlight": "幺三八幺二三四五六七八"
+        },
+        {
+          "zh": "请给我两杯水。",
+          "pinyin": "Qǐng gěi wǒ liǎng bēi shuǐ.",
+          "en": "Please give me two cups of water.",
+          "highlight": "两"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'two yuan' in spoken Chinese?",
-          "options": ["二块钱", "两块钱", "二元钱", "俩块钱"],
-          "correctIndex": 1,
+          "options": [
+            "二元钱",
+            "俩块钱",
+            "二块钱",
+            "两块钱"
+          ],
+          "correctIndex": 3,
           "explanation": "Before the measure word/unit 块, use 两 not 二. So 'two yuan' = 两块钱 (liǎng kuài qián)."
         },
         {
           "type": "fill-blank",
           "prompt": "¥15.80 in spoken Chinese: 十五块___",
-          "acceptedAnswers": ["八毛", "八", "八毛钱"],
+          "acceptedAnswers": [
+            "八毛",
+            "八",
+            "八毛钱"
+          ],
           "hint": "0.80 yuan = ? 毛",
           "explanation": "¥15.80 = 十五块八毛. Since there are no 分, you can also just say 十五块八."
         },
         {
           "type": "multiple-choice",
           "prompt": "In a phone number, how is the digit 1 typically read?",
-          "options": ["一 (yī)", "幺 (yāo)", "壹 (yī)", "伊 (yī)"],
-          "correctIndex": 1,
+          "options": [
+            "壹 (yī)",
+            "伊 (yī)",
+            "一 (yī)",
+            "幺 (yāo)"
+          ],
+          "correctIndex": 3,
           "explanation": "In phone numbers and other digit-by-digit readings, 1 is read as 幺 (yāo) to avoid confusion with 七 (qī), which sounds similar to 一 (yī) over the phone."
         }
       ]

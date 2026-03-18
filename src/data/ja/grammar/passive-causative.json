@@ -4,7 +4,9 @@
   "nameJa": "受身・使役",
   "icon": "⚙️",
   "tier": "B2",
-  "prerequisites": ["verb-groups"],
+  "prerequisites": [
+    "verb-groups"
+  ],
   "estimatedMinutes": 35,
   "sections": [
     {
@@ -13,36 +15,62 @@
       "explanation": "The passive form expresses that the subject is acted upon. Formation: る-verbs: drop る, add られる: 食べる → 食べられる (to be eaten). う-verbs: change the final -u to -a and add れる: 読む → 読まれる (to be read), 書く → 書かれる (to be written), 話す → 話される (to be spoken). Irregular: する → される (to be done), 来る → 来られる (to be come to). The passive has three main uses in Japanese: 1) Direct passive (like English): この本は多くの人に読まれている (This book is read by many people). 2) Indirect/adversity passive — unique to Japanese — expressing that someone is negatively affected: 雨に降られた (I was rained on — and it was inconvenient). 3) Honorific passive: 先生が話された (The teacher spoke — respectful). The agent is marked with に.",
       "tip": "Japanese passive has a unique 'suffering passive' (迷惑の受身) not found in English. 電車で足を踏まれた (I had my foot stepped on in the train) — the subject suffers from someone else's action. Even intransitive verbs can be passive: 彼女に泣かれた (She cried on me — and I was troubled by it).",
       "examples": [
-        { "ja": "この曲は世界中で聞かれている。", "en": "This song is listened to all over the world.", "highlight": "聞かれている" },
-        { "ja": "電車で足を踏まれた。", "en": "I had my foot stepped on in the train. (adversity passive)", "highlight": "踏まれた" },
-        { "ja": "先生に褒められた。", "en": "I was praised by the teacher.", "highlight": "褒められた" },
-        { "ja": "隣の人にたばこを吸われて困った。", "en": "The person next to me smoked and it bothered me. (adversity)", "highlight": "吸われて" }
+        {
+          "ja": "この曲は世界中で聞かれている。",
+          "en": "This song is listened to all over the world.",
+          "highlight": "聞かれている"
+        },
+        {
+          "ja": "電車で足を踏まれた。",
+          "en": "I had my foot stepped on in the train. (adversity passive)",
+          "highlight": "踏まれた"
+        },
+        {
+          "ja": "先生に褒められた。",
+          "en": "I was praised by the teacher.",
+          "highlight": "褒められた"
+        },
+        {
+          "ja": "隣の人にたばこを吸われて困った。",
+          "en": "The person next to me smoked and it bothered me. (adversity)",
+          "highlight": "吸われて"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the passive form of 書く (kaku, to write)?",
-          "options": ["書ける", "書かれる", "書かせる", "書いられる"],
-          "correctIndex": 1,
+          "options": [
+            "書ける",
+            "書かせる",
+            "書いられる",
+            "書かれる"
+          ],
+          "correctIndex": 3,
           "explanation": "書く is an う-verb. Change く to か and add れる: 書く → 書かれる (kakareru, to be written)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the 'adversity passive' (迷惑の受身)?",
           "options": [
-            "A passive form used for polite speech",
             "A passive expressing that the subject is negatively affected by someone's action",
-            "A passive form only for transitive verbs",
-            "A formal written passive"
+            "A formal written passive",
+            "A passive form used for polite speech",
+            "A passive form only for transitive verbs"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "The adversity passive (迷惑の受身) expresses that the subject suffers or is negatively affected by someone else's action: 雨に降られた (I was rained on and inconvenienced). This usage is unique to Japanese."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the passive form of する (suru, to do)?",
-          "options": ["される", "させる", "すられる", "しれる"],
-          "correctIndex": 0,
+          "options": [
+            "させる",
+            "すられる",
+            "される",
+            "しれる"
+          ],
+          "correctIndex": 2,
           "explanation": "する has an irregular passive form: される (sareru, to be done). For example: 実験が行われた is often expressed as 実験がされた."
         }
       ]
@@ -53,16 +81,37 @@
       "explanation": "The causative form means 'to make/let someone do something.' Formation: る-verbs: drop る, add させる: 食べる → 食べさせる (to make/let eat). う-verbs: change the final -u to -a and add せる: 読む → 読ませる (to make/let read), 書く → 書かせる (to make/let write), 話す → 話させる (to make/let speak). Irregular: する → させる (to make/let do), 来る → 来させる (to make/let come). The causative can mean either 'make' (force) or 'let' (allow), depending on context and particles. With を: 母は子供に野菜を食べさせた (The mother made the child eat vegetables — forced). With を for the person: 先生は学生を帰らせた (The teacher let/made the students go home). Context determines whether it means 'make' or 'let.'",
       "tip": "The difference between 'make' and 'let' often depends on context and the verb. 子供を遊ばせる could mean 'let the child play' or 'make the child play.' Adding てあげる clarifies 'let': 遊ばせてあげる (let them play — doing a favor). With てください, it becomes a request: やらせてください (please let me do it).",
       "examples": [
-        { "ja": "母は子供に野菜を食べさせた。", "en": "The mother made the child eat vegetables.", "highlight": "食べさせた" },
-        { "ja": "先生は学生を帰らせた。", "en": "The teacher let the students go home.", "highlight": "帰らせた" },
-        { "ja": "やらせてください。", "en": "Please let me do it.", "highlight": "やらせて" },
-        { "ja": "部長は新人にコピーを取らせた。", "en": "The department head had the new employee make copies.", "highlight": "取らせた" }
+        {
+          "ja": "母は子供に野菜を食べさせた。",
+          "en": "The mother made the child eat vegetables.",
+          "highlight": "食べさせた"
+        },
+        {
+          "ja": "先生は学生を帰らせた。",
+          "en": "The teacher let the students go home.",
+          "highlight": "帰らせた"
+        },
+        {
+          "ja": "やらせてください。",
+          "en": "Please let me do it.",
+          "highlight": "やらせて"
+        },
+        {
+          "ja": "部長は新人にコピーを取らせた。",
+          "en": "The department head had the new employee make copies.",
+          "highlight": "取らせた"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the causative form of 飲む (nomu, to drink)?",
-          "options": ["飲まれる", "飲ませる", "飲める", "飲みさせる"],
+          "options": [
+            "飲める",
+            "飲ませる",
+            "飲みさせる",
+            "飲まれる"
+          ],
           "correctIndex": 1,
           "explanation": "飲む is an う-verb. Change む to ま and add せる: 飲む → 飲ませる (nomaseru, to make/let drink)."
         },
@@ -70,18 +119,23 @@
           "type": "multiple-choice",
           "prompt": "What does やらせてください mean?",
           "options": [
-            "Please do it for me",
             "Please let me do it",
-            "Please don't do it",
-            "Please make them do it"
+            "Please do it for me",
+            "Please make them do it",
+            "Please don't do it"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "やらせてください = causative (やらせる) + てください (please). It means 'please let me do it' — requesting permission to perform the action yourself."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the causative form of する (suru)?",
-          "options": ["される", "させる", "すらせる", "しさせる"],
+          "options": [
+            "しさせる",
+            "させる",
+            "すらせる",
+            "される"
+          ],
           "correctIndex": 1,
           "explanation": "する has an irregular causative form: させる (saseru, to make/let do). For example: 勉強させる (make someone study)."
         }
@@ -93,10 +147,26 @@
       "explanation": "The passive-causative combines both forms to express 'being made to do something' — the subject is forced by someone else. Formation: take the causative form and make it passive. る-verbs: 食べさせる → 食べさせられる (to be made to eat). う-verbs: 読ませる → 読ませられる (to be made to read). In casual speech, う-verbs often contract: 読ませられる → 読まされる, 飲ませられる → 飲まされる, 行かせられる → 行かされる. This contracted form (～される) is very common in spoken Japanese. Irregular: する → させられる, 来る → 来させられる. The passive-causative always carries a negative nuance — the subject doesn't want to do it but is forced: 毎日残業させられている (I'm being made to work overtime every day).",
       "tip": "The contracted form ～される is preferred in speech: 飲まされる instead of 飲ませられる, 歌わされる instead of 歌わせられる. However, る-verbs do NOT contract: 食べさせられる (not 食べさされる). The passive-causative always implies unwillingness — being forced against your will.",
       "examples": [
-        { "ja": "上司に残業させられた。", "en": "I was made to work overtime by my boss.", "highlight": "させられた" },
-        { "ja": "子供の頃、ピアノを習わされた。", "en": "As a child, I was made to learn piano. (contracted)", "highlight": "習わされた" },
-        { "ja": "パーティーで歌わされた。", "en": "I was made to sing at the party. (contracted)", "highlight": "歌わされた" },
-        { "ja": "嫌いな野菜を食べさせられた。", "en": "I was made to eat vegetables I dislike.", "highlight": "食べさせられた" }
+        {
+          "ja": "上司に残業させられた。",
+          "en": "I was made to work overtime by my boss.",
+          "highlight": "させられた"
+        },
+        {
+          "ja": "子供の頃、ピアノを習わされた。",
+          "en": "As a child, I was made to learn piano. (contracted)",
+          "highlight": "習わされた"
+        },
+        {
+          "ja": "パーティーで歌わされた。",
+          "en": "I was made to sing at the party. (contracted)",
+          "highlight": "歌わされた"
+        },
+        {
+          "ja": "嫌いな野菜を食べさせられた。",
+          "en": "I was made to eat vegetables I dislike.",
+          "highlight": "食べさせられた"
+        }
       ],
       "exercises": [
         {
@@ -104,30 +174,35 @@
           "prompt": "What nuance does the passive-causative always carry?",
           "options": [
             "Politeness and respect",
-            "Being forced to do something against your will",
+            "Neutral description of an action",
             "Doing something happily for someone",
-            "Neutral description of an action"
+            "Being forced to do something against your will"
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "The passive-causative always implies that the subject is being forced to do something they don't want to do. It expresses unwillingness and external compulsion."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the contracted passive-causative of 待つ (matsu, to wait)?",
-          "options": ["待たせられる", "待たされる", "待たれる", "待たさせる"],
-          "correctIndex": 1,
+          "options": [
+            "待たれる",
+            "待たせられる",
+            "待たさせる",
+            "待たされる"
+          ],
+          "correctIndex": 3,
           "explanation": "Full form: 待たせられる. Contracted: 待たされる (matasareru, to be made to wait). The contraction drops せら and becomes さ: ～ませられる → ～まされる."
         },
         {
           "type": "multiple-choice",
           "prompt": "Can る-verbs use the contracted passive-causative form?",
           "options": [
-            "Yes, all verbs can contract",
             "No, only う-verbs contract; る-verbs keep the full form",
             "Only irregular verbs contract",
+            "Yes, all verbs can contract",
             "る-verbs use a completely different form"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "Only う-verbs can use the contracted form (～まされる). る-verbs must use the full passive-causative: 食べさせられる (not 食べさされる). This is a key distinction to remember."
         }
       ]
@@ -138,16 +213,37 @@
       "explanation": "Let's compare all three forms using 書く (kaku, to write): Passive: 書かれる (kakareru) — 'to be written' / 'something is written by someone.' Causative: 書かせる (kakaseru) — 'to make/let someone write.' Passive-Causative: 書かされる (kakasareru) — 'to be made to write.' The key perspective shifts: Passive puts focus on the receiver of the action. Causative puts focus on the person who causes the action. Passive-Causative puts focus on the person being forced. Example chain: 先生が作文を書いた (The teacher wrote the essay — active). 作文が先生に書かれた (The essay was written by the teacher — passive). 先生は学生に作文を書かせた (The teacher made the students write an essay — causative). 学生は先生に作文を書かされた (The students were made to write an essay by the teacher — passive-causative).",
       "tip": "To keep the three forms straight: passive = ~(ら)れる (受身, something happens to you), causative = ~(さ)せる (使役, you make/let someone), passive-causative = ~(さ)せられる (受身使役, someone makes you). The passive-causative is always the longest form and always implies negative feelings.",
       "examples": [
-        { "ja": "レポートが書かれた。(passive)", "en": "The report was written.", "highlight": "書かれた" },
-        { "ja": "先生は学生にレポートを書かせた。(causative)", "en": "The teacher made the students write a report.", "highlight": "書かせた" },
-        { "ja": "学生は先生にレポートを書かされた。(passive-causative)", "en": "The students were made to write a report by the teacher.", "highlight": "書かされた" },
-        { "ja": "毎朝走らされている。(passive-causative)", "en": "I'm being made to run every morning.", "highlight": "走らされている" }
+        {
+          "ja": "レポートが書かれた。(passive)",
+          "en": "The report was written.",
+          "highlight": "書かれた"
+        },
+        {
+          "ja": "先生は学生にレポートを書かせた。(causative)",
+          "en": "The teacher made the students write a report.",
+          "highlight": "書かせた"
+        },
+        {
+          "ja": "学生は先生にレポートを書かされた。(passive-causative)",
+          "en": "The students were made to write a report by the teacher.",
+          "highlight": "書かされた"
+        },
+        {
+          "ja": "毎朝走らされている。(passive-causative)",
+          "en": "I'm being made to run every morning.",
+          "highlight": "走らされている"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "母は子供に薬を飲ませた。What form is 飲ませた?",
-          "options": ["Passive", "Causative", "Passive-Causative", "Potential"],
+          "options": [
+            "Potential",
+            "Causative",
+            "Passive",
+            "Passive-Causative"
+          ],
           "correctIndex": 1,
           "explanation": "飲ませた is the causative (past tense) of 飲む. The mother (母) caused the child (子供) to drink medicine. The mother is the causer."
         },
@@ -155,22 +251,22 @@
           "type": "multiple-choice",
           "prompt": "学生は毎日漢字を書かされる。What does this mean?",
           "options": [
-            "Students write kanji every day.",
-            "Students are able to write kanji.",
             "Students are made to write kanji every day.",
-            "Students make others write kanji."
+            "Students make others write kanji.",
+            "Students are able to write kanji.",
+            "Students write kanji every day."
           ],
-          "correctIndex": 2,
+          "correctIndex": 0,
           "explanation": "書かされる is the passive-causative (contracted) of 書く. The students are being forced to write kanji — they don't have a choice. The negative/forced nuance is key."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the passive form?",
           "options": [
-            "先生が学生を立たせた。",
-            "先生に褒められた。",
             "先生に宿題をやらされた。",
-            "先生が宿題を出した。"
+            "先生に褒められた。",
+            "先生が宿題を出した。",
+            "先生が学生を立たせた。"
           ],
           "correctIndex": 1,
           "explanation": "褒められた is the passive of 褒める (to praise): 'I was praised by the teacher.' 立たせた is causative ('made stand'), やらされた is passive-causative ('was made to do'), and 出した is active ('gave out')."

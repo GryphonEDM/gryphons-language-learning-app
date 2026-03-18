@@ -4,7 +4,9 @@
   "nameFr": "Les adjectifs",
   "icon": "🌈",
   "tier": "A1",
-  "prerequisites": ["avoir-etre"],
+  "prerequisites": [
+    "avoir-etre"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,72 +15,124 @@
       "explanation": "French adjectives must agree in gender and number with the noun they describe. The masculine singular form is the base form (grand, petit, bon). To make an adjective feminine, you usually add -e (grande, petite, bonne). To make it plural, add -s for masculine (grands, petits) or -es for feminine (grandes, petites). Some adjectives have irregular feminine forms: beau → belle, nouveau → nouvelle, vieux → vieille, blanc → blanche, doux → douce, faux → fausse. Adjectives that already end in -e do not change for the feminine form: rouge, libre, triste stay the same. Nationality adjectives follow the regular pattern: français → française, anglais → anglaise, américain → américaine.",
       "tip": "Remember: if the masculine form already ends in -e (rouge, libre, triste), the feminine form is identical. For adjectives ending in a consonant, doubling that consonant before adding -e is common for bon (bonne), gros (grosse), and gentil (gentille).",
       "examples": [
-        { "fr": "un grand garçon / une grande fille", "en": "a tall boy / a tall girl", "highlight": "grand / grande" },
-        { "fr": "un beau château / une belle maison", "en": "a beautiful castle / a beautiful house", "highlight": "beau / belle" },
-        { "fr": "un vieux monsieur / une vieille dame", "en": "an old gentleman / an old lady", "highlight": "vieux / vieille" },
-        { "fr": "des petits chats / des petites fleurs", "en": "small cats / small flowers", "highlight": "petits / petites" },
-        { "fr": "un étudiant français / une étudiante française", "en": "a French student (m) / a French student (f)", "highlight": "français / française" },
-        { "fr": "un pull rouge / une robe rouge", "en": "a red sweater / a red dress", "highlight": "rouge / rouge" }
+        {
+          "fr": "un grand garçon / une grande fille",
+          "en": "a tall boy / a tall girl",
+          "highlight": "grand / grande"
+        },
+        {
+          "fr": "un beau château / une belle maison",
+          "en": "a beautiful castle / a beautiful house",
+          "highlight": "beau / belle"
+        },
+        {
+          "fr": "un vieux monsieur / une vieille dame",
+          "en": "an old gentleman / an old lady",
+          "highlight": "vieux / vieille"
+        },
+        {
+          "fr": "des petits chats / des petites fleurs",
+          "en": "small cats / small flowers",
+          "highlight": "petits / petites"
+        },
+        {
+          "fr": "un étudiant français / une étudiante française",
+          "en": "a French student (m) / a French student (f)",
+          "highlight": "français / française"
+        },
+        {
+          "fr": "un pull rouge / une robe rouge",
+          "en": "a red sweater / a red dress",
+          "highlight": "rouge / rouge"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "What is the feminine form of the adjective 'beau'?",
-          "options": ["beaux", "belle", "beaue"],
-          "correctIndex": 1,
+          "options": [
+            "belle",
+            "beaue",
+            "beaux"
+          ],
+          "correctIndex": 0,
           "explanation": "'beau' is an irregular adjective. Its feminine form is 'belle', not 'beaue'."
         },
         {
           "type": "multiple-choice",
           "question": "Which sentence correctly uses adjective agreement?",
           "options": [
-            "une femme intelligent",
             "une femme intelligente",
+            "une femme intelligent",
             "une femme intelligents"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "'femme' is feminine, so the adjective must be feminine too: intelligente (add -e to intelligent)."
         },
         {
           "type": "multiple-choice",
           "question": "What is the feminine form of 'nouveau'?",
-          "options": ["nouvelles", "nouvelle", "nouveaue"],
+          "options": [
+            "nouveaue",
+            "nouvelle",
+            "nouvelles"
+          ],
           "correctIndex": 1,
           "explanation": "'nouveau' is irregular. Its feminine singular form is 'nouvelle'."
         },
         {
           "type": "fill-blank",
-          "question": "Complete with the correct form: 'une chanson ___' (beau)",
-          "options": ["beau", "beaux", "belle"],
+          "question": "Complete with the correct form: 'une robe ___' (neuf)",
+          "options": [
+            "neuf",
+            "neufs",
+            "neuve"
+          ],
           "correctIndex": 2,
-          "explanation": "'chanson' (song) is feminine, so 'beau' becomes 'belle': une chanson belle."
+          "explanation": "'robe' (dress) is feminine, so 'neuf' becomes 'neuve': une robe neuve (a new dress). Note: 'neuf/neuve' means brand-new and goes after the noun."
         },
         {
           "type": "multiple-choice",
           "question": "The adjective 'rouge' in 'une voiture rouge' — what is the feminine form?",
-          "options": ["rouges", "roug", "rouge"],
-          "correctIndex": 2,
+          "options": [
+            "rouges",
+            "rouge",
+            "roug"
+          ],
+          "correctIndex": 1,
           "explanation": "'rouge' already ends in -e, so the feminine form is identical: rouge."
         },
         {
           "type": "multiple-choice",
           "question": "How do you say 'good friends' (masculine plural) in French?",
-          "options": ["bon amis", "bons amis", "bonne amis"],
+          "options": [
+            "bon amis",
+            "bons amis",
+            "bonne amis"
+          ],
           "correctIndex": 1,
           "explanation": "For masculine plural, add -s to the base form: bon → bons."
         },
         {
           "type": "fill-blank",
           "question": "Complete: 'Elle est ___ (américain).'",
-          "options": ["américain", "américains", "américaine"],
+          "options": [
+            "américain",
+            "américains",
+            "américaine"
+          ],
           "correctIndex": 2,
           "explanation": "The subject 'elle' is feminine, so the nationality adjective takes the feminine form: américaine."
         },
         {
           "type": "multiple-choice",
           "question": "Which is the correct feminine plural of 'vieux'?",
-          "options": ["vieuxes", "vieilles", "vieux"],
-          "correctIndex": 1,
+          "options": [
+            "vieilles",
+            "vieuxes",
+            "vieux"
+          ],
+          "correctIndex": 0,
           "explanation": "'vieux' has the irregular feminine form 'vieille'. The feminine plural is 'vieilles'."
         }
       ]
@@ -89,30 +143,58 @@
       "explanation": "Unlike English, most French adjectives come AFTER the noun they describe: un livre intéressant (an interesting book), une femme intelligente (an intelligent woman), des fleurs rouges (red flowers). However, a group of common adjectives called BAGS adjectives always come BEFORE the noun. BAGS stands for: Beauty (beau, joli), Age (jeune, vieux, nouveau), Goodness (bon, mauvais, meilleur), and Size (grand, petit, gros, long, court). Examples: une belle vue (a beautiful view), un jeune enfant (a young child), un bon repas (a good meal), un petit problème (a small problem). A few adjectives change meaning depending on whether they appear before or after the noun: 'un homme grand' means a tall man, but 'un grand homme' means a great man; 'une voiture ancienne' means an old car, but 'mon ancien professeur' means my former teacher.",
       "tip": "Use the BAGS acronym to remember which adjectives go before the noun: Beauty, Age, Goodness, Size. Everything else almost always goes after. When in doubt, put it after and you'll be right most of the time.",
       "examples": [
-        { "fr": "un livre intéressant", "en": "an interesting book", "highlight": "intéressant" },
-        { "fr": "une belle femme", "en": "a beautiful woman", "highlight": "belle" },
-        { "fr": "un petit garçon", "en": "a little boy", "highlight": "petit" },
-        { "fr": "un homme grand / un grand homme", "en": "a tall man / a great man", "highlight": "grand" },
-        { "fr": "des fleurs rouges", "en": "red flowers", "highlight": "rouges" },
-        { "fr": "mon ancien professeur / une voiture ancienne", "en": "my former teacher / an old car", "highlight": "ancien / ancienne" }
+        {
+          "fr": "un livre intéressant",
+          "en": "an interesting book",
+          "highlight": "intéressant"
+        },
+        {
+          "fr": "une belle femme",
+          "en": "a beautiful woman",
+          "highlight": "belle"
+        },
+        {
+          "fr": "un petit garçon",
+          "en": "a little boy",
+          "highlight": "petit"
+        },
+        {
+          "fr": "un homme grand / un grand homme",
+          "en": "a tall man / a great man",
+          "highlight": "grand"
+        },
+        {
+          "fr": "des fleurs rouges",
+          "en": "red flowers",
+          "highlight": "rouges"
+        },
+        {
+          "fr": "mon ancien professeur / une voiture ancienne",
+          "en": "my former teacher / an old car",
+          "highlight": "ancien / ancienne"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "Where do most French adjectives go?",
           "options": [
-            "Before the noun, like in English",
             "After the noun",
+            "Before the noun, like in English",
             "Either position, it does not matter"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "Unlike English, most French adjectives are placed after the noun they modify."
         },
         {
           "type": "multiple-choice",
           "question": "Which of these adjectives is a BAGS adjective that goes BEFORE the noun?",
-          "options": ["intéressant", "rouge", "petit"],
-          "correctIndex": 2,
+          "options": [
+            "intéressant",
+            "petit",
+            "rouge"
+          ],
+          "correctIndex": 1,
           "explanation": "'petit' is a Size adjective and part of the BAGS group — it comes before the noun."
         },
         {
@@ -129,7 +211,11 @@
         {
           "type": "multiple-choice",
           "question": "What does 'un grand homme' mean (adjective before noun)?",
-          "options": ["a tall man", "a great man", "a big man"],
+          "options": [
+            "a tall man",
+            "a great man",
+            "a big man"
+          ],
           "correctIndex": 1,
           "explanation": "When 'grand' appears before the noun, it means 'great' (figuratively). After the noun ('un homme grand'), it means physically tall."
         },
@@ -137,9 +223,9 @@
           "type": "multiple-choice",
           "question": "Which sentence is correct for 'a young student (m)'?",
           "options": [
-            "un étudiant jeune",
+            "jeune un étudiant",
             "un jeune étudiant",
-            "jeune un étudiant"
+            "un étudiant jeune"
           ],
           "correctIndex": 1,
           "explanation": "'jeune' (young) is an Age adjective — part of BAGS — so it comes before the noun: un jeune étudiant."
@@ -158,19 +244,23 @@
         {
           "type": "multiple-choice",
           "question": "What does 'mon ancien professeur' mean (adjective before noun)?",
-          "options": ["my old professor (elderly)", "my ancient professor", "my former professor"],
-          "correctIndex": 2,
+          "options": [
+            "my former professor",
+            "my old professor (elderly)",
+            "my ancient professor"
+          ],
+          "correctIndex": 0,
           "explanation": "When 'ancien' comes before the noun it means 'former'. After the noun ('un professeur ancien') it means 'old/ancient'."
         },
         {
           "type": "multiple-choice",
           "question": "Which sentence correctly places a non-BAGS adjective?",
           "options": [
-            "une intéressante histoire",
             "une histoire intéressante",
+            "une intéressante histoire",
             "intéressante une histoire"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "'intéressant' is not a BAGS adjective, so it goes after the noun: une histoire intéressante."
         }
       ]

@@ -4,7 +4,10 @@
   "nameDe": "Passiv",
   "icon": "🔄",
   "tier": "B2",
-  "prerequisites": ["modal-verbs", "past-participle"],
+  "prerequisites": [
+    "modal-verbs",
+    "verbs-past"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,24 +16,51 @@
       "explanation": "The Vorgangspassiv (process/action passive) describes an action or process taking place. It is formed with the conjugated form of 'werden' + Partizip II at the end of the clause. The agent (who performs the action) is optional and introduced by 'von + dative': 'Das Buch wird von dem Autor geschrieben' (The book is being written by the author). In the active voice, the accusative object becomes the subject in the passive. Tenses: Present: wird gebaut (is being built). Simple past: wurde gebaut (was built). Perfect: ist gebaut worden (has been built — note: 'worden', not 'geworden'). Future: wird gebaut werden.",
       "tip": "Formation: conjugated 'werden' in position 2 + Partizip II at end. The agent is 'von + dative'. In perfect tense passive, use 'ist/sind' + Partizip II + 'worden' (not 'geworden'). The difference: 'worden' = passive perfect auxiliary; 'geworden' = become.",
       "examples": [
-        { "de": "Das Haus wird gebaut.", "en": "The house is being built. (present passive)", "highlight": "wird gebaut" },
-        { "de": "Das Haus wurde gebaut.", "en": "The house was built. (simple past passive)", "highlight": "wurde gebaut" },
-        { "de": "Das Buch wird von der Lehrerin erklärt.", "en": "The book is being explained by the teacher. (with agent)", "highlight": "wird ... erklärt" },
-        { "de": "Die Pizza wurde geliefert.", "en": "The pizza was delivered.", "highlight": "wurde geliefert" },
-        { "de": "Das Formular ist ausgefüllt worden.", "en": "The form has been filled out. (perfect passive)", "highlight": "ist ... worden" }
+        {
+          "de": "Das Haus wird gebaut.",
+          "en": "The house is being built. (present passive)",
+          "highlight": "wird gebaut"
+        },
+        {
+          "de": "Das Haus wurde gebaut.",
+          "en": "The house was built. (simple past passive)",
+          "highlight": "wurde gebaut"
+        },
+        {
+          "de": "Das Buch wird von der Lehrerin erklärt.",
+          "en": "The book is being explained by the teacher. (with agent)",
+          "highlight": "wird ... erklärt"
+        },
+        {
+          "de": "Die Pizza wurde geliefert.",
+          "en": "The pizza was delivered.",
+          "highlight": "wurde geliefert"
+        },
+        {
+          "de": "Das Formular ist ausgefüllt worden.",
+          "en": "The form has been filled out. (perfect passive)",
+          "highlight": "ist ... worden"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which auxiliary verb is used to form the Vorgangspassiv?",
-          "options": ["haben", "sein", "werden", "lassen"],
+          "options": [
+            "sein",
+            "lassen",
+            "werden",
+            "haben"
+          ],
           "correctIndex": 2,
           "explanation": "The Vorgangspassiv uses 'werden' as the auxiliary + Partizip II. 'sein' is used for the Zustandspassiv."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Auto ___ repariert. (The car is being repaired. — present)",
-          "acceptedAnswers": ["wird"],
+          "acceptedAnswers": [
+            "wird"
+          ],
           "hint": "Present tense Vorgangspassiv — which form of 'werden' for 'das Auto' (es/neuter)?"
         },
         {
@@ -39,8 +69,8 @@
           "options": [
             "It becomes the dative object.",
             "It becomes the subject (nominative) of the passive sentence.",
-            "It is dropped.",
-            "It stays in accusative."
+            "It stays in accusative.",
+            "It is dropped."
           ],
           "correctIndex": 1,
           "explanation": "In forming the passive, the accusative object of the active sentence becomes the nominative subject of the passive sentence. Active: 'Der Bäcker backt das Brot' → Passive: 'Das Brot wird gebacken.'"
@@ -48,38 +78,49 @@
         {
           "type": "fill-blank",
           "prompt": "Die Fenster ___ gestern geputzt. (The windows were cleaned yesterday. — past)",
-          "acceptedAnswers": ["wurden"],
+          "acceptedAnswers": [
+            "wurden"
+          ],
           "hint": "Simple past Vorgangspassiv — plural subject, past tense of 'werden'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you introduce the agent (doer) in a passive sentence?",
-          "options": ["mit + dative", "durch + accusative or von + dative", "für + accusative", "von + accusative"],
-          "correctIndex": 1,
+          "options": [
+            "durch + accusative or von + dative",
+            "von + accusative",
+            "für + accusative",
+            "mit + dative"
+          ],
+          "correctIndex": 0,
           "explanation": "The agent in a passive sentence is typically introduced by 'von + dative' (for persons/direct agents) or 'durch + accusative' (for means/instruments). 'Das Haus wird von dem Architekten entworfen' (by the architect)."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Lied ___ von vielen Menschen gesungen ___. (The song has been sung by many people. — perfect passive)",
-          "acceptedAnswers": ["ist ... worden"],
+          "acceptedAnswers": [
+            "ist ... worden"
+          ],
           "hint": "Perfect passive: sein + Partizip II + 'worden' (not 'geworden')."
         },
         {
           "type": "multiple-choice",
           "prompt": "Transform to passive: 'Man baut eine neue Schule.' (One is building a new school.)",
           "options": [
-            "Eine neue Schule ist gebaut.",
             "Eine neue Schule wird gebaut.",
-            "Eine neue Schule wird gebaut werden.",
-            "Eine neue Schule hat gebaut werden."
+            "Eine neue Schule ist gebaut.",
+            "Eine neue Schule hat gebaut werden.",
+            "Eine neue Schule wird gebaut werden."
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "'Eine neue Schule wird gebaut.' — Present Vorgangspassiv. The accusative 'eine neue Schule' becomes the nominative subject."
         },
         {
           "type": "fill-blank",
           "prompt": "Der Brief ___ von der Sekretärin geschrieben. (The letter was written by the secretary.)",
-          "acceptedAnswers": ["wurde"],
+          "acceptedAnswers": [
+            "wurde"
+          ],
           "hint": "Simple past passive — 'Der Brief' is masculine singular. Past tense of 'werden' for er/sie/es = wurde."
         }
       ]
@@ -90,70 +131,113 @@
       "explanation": "The Zustandspassiv (state passive) describes a STATE or condition that results from a completed action — not the action itself. It is formed with the conjugated form of 'sein' + Partizip II. Compare: 'Das Geschäft wird geschlossen' (Vorgangspassiv — the shop is being/getting closed = action) vs. 'Das Geschäft ist geschlossen' (Zustandspassiv — the shop is closed = resulting state). The Zustandspassiv is common with verbs that describe changes of state: öffnen/schließen, bauen, füllen, brechen, etc. The past of Zustandspassiv: 'Das Geschäft war geschlossen' (the shop was closed).",
       "tip": "Vorgangspassiv (werden + Partizip II) = action in progress. Zustandspassiv (sein + Partizip II) = resulting state. Tip: if you can paraphrase with 'the result is that...', it's Zustandspassiv. 'Das Fenster ist geöffnet' = the window is open (the result of opening). 'Das Fenster wird geöffnet' = the window is being opened (the action).",
       "examples": [
-        { "de": "Das Fenster ist geöffnet.", "en": "The window is open. (state = Zustandspassiv)", "highlight": "ist geöffnet" },
-        { "de": "Das Fenster wird geöffnet.", "en": "The window is being opened. (action = Vorgangspassiv)", "highlight": "wird geöffnet" },
-        { "de": "Das Geschäft ist geschlossen.", "en": "The shop is closed. (state)", "highlight": "ist geschlossen" },
-        { "de": "Die Tür ist bereits repariert.", "en": "The door is already repaired. (resulting state)", "highlight": "ist ... repariert" },
-        { "de": "Der Tisch war gedeckt.", "en": "The table was set. (past state)", "highlight": "war gedeckt" }
+        {
+          "de": "Das Fenster ist geöffnet.",
+          "en": "The window is open. (state = Zustandspassiv)",
+          "highlight": "ist geöffnet"
+        },
+        {
+          "de": "Das Fenster wird geöffnet.",
+          "en": "The window is being opened. (action = Vorgangspassiv)",
+          "highlight": "wird geöffnet"
+        },
+        {
+          "de": "Das Geschäft ist geschlossen.",
+          "en": "The shop is closed. (state)",
+          "highlight": "ist geschlossen"
+        },
+        {
+          "de": "Die Tür ist bereits repariert.",
+          "en": "The door is already repaired. (resulting state)",
+          "highlight": "ist ... repariert"
+        },
+        {
+          "de": "Der Tisch war gedeckt.",
+          "en": "The table was set. (past state)",
+          "highlight": "war gedeckt"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which sentence describes a STATE (Zustandspassiv)?",
           "options": [
+            "Das Haus wird gebaut werden.",
             "Das Haus wird gerade gebaut.",
-            "Das Haus ist gebaut.",
             "Das Haus wurde gebaut.",
-            "Das Haus wird gebaut werden."
+            "Das Haus ist gebaut."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "'Das Haus ist gebaut' uses 'sein + Partizip II' = Zustandspassiv (the house is built = state). The others use 'werden' = Vorgangspassiv (action)."
         },
         {
           "type": "fill-blank",
           "prompt": "Die Aufgabe ___ schon erledigt. (The task is already done. — state)",
-          "acceptedAnswers": ["ist"],
+          "acceptedAnswers": [
+            "ist"
+          ],
           "hint": "Zustandspassiv = sein + Partizip II. Present tense of 'sein' for 'die Aufgabe' (sie/singular)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the key difference between 'Die Tür wird geschlossen' and 'Die Tür ist geschlossen'?",
           "options": [
+            "The first is more polite.",
             "The first is past tense, the second is present.",
             "The first describes the action of closing; the second describes the closed state.",
-            "The first is more polite.",
             "There is no meaningful difference."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "'wird geschlossen' (werden = Vorgangspassiv) = the door is being closed (action happening now). 'ist geschlossen' (sein = Zustandspassiv) = the door is closed (it's in a closed state)."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Museum ___ heute geschlossen. (The museum is closed today. — state)",
-          "acceptedAnswers": ["ist"],
+          "acceptedAnswers": [
+            "ist"
+          ],
           "hint": "State, not action — Zustandspassiv. What form of 'sein' for 'das Museum'?"
         },
         {
           "type": "matching",
           "prompt": "Classify each sentence as Vorgangspassiv (action) or Zustandspassiv (state):",
           "pairs": [
-            { "left": "Das Buch wird gelesen.", "right": "Vorgangspassiv (action)" },
-            { "left": "Das Buch ist gelesen.", "right": "Zustandspassiv (state)" },
-            { "left": "Die Post wird zugestellt.", "right": "Vorgangspassiv (action)" },
-            { "left": "Das Paket ist zugestellt.", "right": "Zustandspassiv (state)" }
+            {
+              "left": "Das Buch wird gelesen.",
+              "right": "Vorgangspassiv (action)"
+            },
+            {
+              "left": "Das Buch ist gelesen.",
+              "right": "Zustandspassiv (state)"
+            },
+            {
+              "left": "Die Post wird zugestellt.",
+              "right": "Vorgangspassiv (action)"
+            },
+            {
+              "left": "Das Paket ist zugestellt.",
+              "right": "Zustandspassiv (state)"
+            }
           ]
         },
         {
           "type": "fill-blank",
           "prompt": "Als wir ankamen, ___ der Tisch schon gedeckt. (When we arrived, the table was already set.)",
-          "acceptedAnswers": ["war"],
+          "acceptedAnswers": [
+            "war"
+          ],
           "hint": "Past tense Zustandspassiv — past tense of 'sein' = war."
         },
         {
           "type": "multiple-choice",
           "prompt": "Das Geld ___ ausgegeben. The money is spent. (Which is Zustandspassiv?)",
-          "options": ["wird", "wurde", "ist", "hat"],
-          "correctIndex": 2,
+          "options": [
+            "wurde",
+            "ist",
+            "wird",
+            "hat"
+          ],
+          "correctIndex": 1,
           "explanation": "'ist ausgegeben' = Zustandspassiv (state: the money is in a spent state). 'wird ausgegeben' would be the action of spending it."
         }
       ]
@@ -164,77 +248,125 @@
       "explanation": "Modal verbs can be combined with the passive to express necessity, possibility, permission, etc. in passive constructions. The structure in a main clause is: Modal (position 2) + ... + Partizip II + werden (at end). Examples: 'Das Haus muss gebaut werden' (The house must be built), 'Das Formular kann ausgefüllt werden' (The form can be filled out), 'Der Fehler sollte korrigiert werden' (The mistake should be corrected). In a subordinate clause: ...dass das Haus gebaut werden muss. The werden infinitive comes before the modal at the very end in subordinate clauses.",
       "tip": "The formula: Modal + [object/other elements] + Partizip II + werden. Think of 'werden' as the passive infinitive marker — it always appears at the end after the Partizip II. In subordinate clauses, the order is: Partizip II + werden + Modal (all three at the end).",
       "examples": [
-        { "de": "Das Haus muss gebaut werden.", "en": "The house must be built.", "highlight": "muss ... gebaut werden" },
-        { "de": "Die Aufgabe kann morgen erledigt werden.", "en": "The task can be completed tomorrow.", "highlight": "kann ... erledigt werden" },
-        { "de": "Dieser Fehler darf nicht gemacht werden.", "en": "This mistake must not be made.", "highlight": "darf nicht ... gemacht werden" },
-        { "de": "Der Bericht soll bis Freitag eingereicht werden.", "en": "The report should be submitted by Friday.", "highlight": "soll ... eingereicht werden" },
-        { "de": "Ich glaube, dass das Problem gelöst werden muss.", "en": "I believe that the problem must be solved. (subord. clause)", "highlight": "gelöst werden muss" }
+        {
+          "de": "Das Haus muss gebaut werden.",
+          "en": "The house must be built.",
+          "highlight": "muss ... gebaut werden"
+        },
+        {
+          "de": "Die Aufgabe kann morgen erledigt werden.",
+          "en": "The task can be completed tomorrow.",
+          "highlight": "kann ... erledigt werden"
+        },
+        {
+          "de": "Dieser Fehler darf nicht gemacht werden.",
+          "en": "This mistake must not be made.",
+          "highlight": "darf nicht ... gemacht werden"
+        },
+        {
+          "de": "Der Bericht soll bis Freitag eingereicht werden.",
+          "en": "The report should be submitted by Friday.",
+          "highlight": "soll ... eingereicht werden"
+        },
+        {
+          "de": "Ich glaube, dass das Problem gelöst werden muss.",
+          "en": "I believe that the problem must be solved. (subord. clause)",
+          "highlight": "gelöst werden muss"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct structure for a modal passive in a main clause?",
           "options": [
-            "Modal + werden + Partizip II",
-            "Modal + Partizip II + werden",
+            "Partizip II + Modal + werden",
             "werden + Partizip II + Modal",
-            "Partizip II + Modal + werden"
+            "Modal + werden + Partizip II",
+            "Modal + Partizip II + werden"
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "Main clause: Modal (position 2) + ... + Partizip II + werden (at end). Example: 'muss gebaut werden'."
         },
         {
           "type": "fill-blank",
           "prompt": "Der Brief ___ noch geschrieben ___. (The letter still must be written.)",
-          "acceptedAnswers": ["muss ... werden"],
+          "acceptedAnswers": [
+            "muss ... werden"
+          ],
           "hint": "Modal passive: muss (position 2) + Partizip II + werden (end)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Das Formular ___ ausgefüllt werden. (The form must be filled out.)",
-          "options": ["kann", "muss", "will", "darf"],
-          "correctIndex": 1,
+          "options": [
+            "muss",
+            "darf",
+            "kann",
+            "will"
+          ],
+          "correctIndex": 0,
           "explanation": "Any modal can work grammatically, but 'muss' (must) best expresses obligation/necessity here. The passive structure 'ausgefüllt werden' is correct with any modal."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Problem ___ sofort gelöst werden. (The problem can be solved immediately.)",
-          "acceptedAnswers": ["kann"],
+          "acceptedAnswers": [
+            "kann"
+          ],
           "hint": "Which modal means 'can / is able to be'?"
         },
         {
           "type": "multiple-choice",
           "prompt": "In a subordinate clause: '...dass das Haus gebaut werden ___'",
-          "options": ["muss", "will", "soll", "All of these are grammatically possible"],
+          "options": [
+            "will",
+            "soll",
+            "muss",
+            "All of these are grammatically possible"
+          ],
           "correctIndex": 3,
           "explanation": "All modals are grammatically possible in a subordinate clause passive. The modal goes to the very end: 'dass das Haus gebaut werden muss/will/soll'."
         },
         {
           "type": "fill-blank",
           "prompt": "Die Regeln ___ eingehalten werden. (The rules must be followed.)",
-          "acceptedAnswers": ["müssen"],
+          "acceptedAnswers": [
+            "müssen"
+          ],
           "hint": "Subject is 'Die Regeln' (plural). Conjugate 'müssen' for plural."
         },
         {
           "type": "matching",
           "prompt": "Match each modal passive sentence to its English meaning:",
           "pairs": [
-            { "left": "Das darf nicht gemacht werden.", "right": "That must not be done." },
-            { "left": "Das kann verbessert werden.", "right": "That can be improved." },
-            { "left": "Das sollte überprüft werden.", "right": "That should be checked." },
-            { "left": "Das muss sofort geändert werden.", "right": "That must be changed immediately." }
+            {
+              "left": "Das darf nicht gemacht werden.",
+              "right": "That must not be done."
+            },
+            {
+              "left": "Das kann verbessert werden.",
+              "right": "That can be improved."
+            },
+            {
+              "left": "Das sollte überprüft werden.",
+              "right": "That should be checked."
+            },
+            {
+              "left": "Das muss sofort geändert werden.",
+              "right": "That must be changed immediately."
+            }
           ]
         },
         {
           "type": "multiple-choice",
           "prompt": "Transform to modal passive: 'Man muss das Auto reparieren.' (One must repair the car.)",
           "options": [
-            "Das Auto muss repariert sein.",
             "Das Auto muss repariert werden.",
             "Das Auto wird repariert müssen.",
+            "Das Auto muss repariert sein.",
             "Das Auto ist repariert werden."
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "'Das Auto muss repariert werden.' — Modal passive: muss + Partizip II (repariert) + werden. The accusative 'das Auto' becomes the subject."
         }
       ]

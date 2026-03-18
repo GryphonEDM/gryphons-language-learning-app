@@ -4,7 +4,9 @@
   "nameEl": "Ερωτήσεις και Άρνηση",
   "icon": "❓",
   "tier": "A1",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,32 +15,71 @@
       "explanation": "In Greek, yes/no questions use exactly the same word order as statements — there is no inversion of subject and verb. The only difference is a rising intonation at the end when speaking, and the question mark (;) at the end when writing. So the statement 'Μιλάς ελληνικά.' (You speak Greek.) becomes the question 'Μιλάς ελληνικά;' simply by raising your voice and adding a semicolon. To answer, use 'Ναι' (yes) or 'Όχι' (no). A common tag question is 'έτσι δεν είναι;' (isn't it so? / right?), added to the end of a statement: 'Είναι καλός, έτσι δεν είναι;' (He is good, isn't he?). Another short tag is 'ε;' or 'έτσι;' in informal speech.",
       "tip": "Greek uses a semicolon (;) as its question mark — what looks like a semicolon in Greek text is the standard question mark. Rising intonation alone is enough to signal a question in speech, without changing word order.",
       "examples": [
-        { "el": "Μιλάς ελληνικά;", "en": "Do you speak Greek?", "highlight": "Μιλάς" },
-        { "el": "Είναι αυτός ο δάσκαλος;", "en": "Is he the teacher?", "highlight": "Είναι" },
-        { "el": "Τρως κρέας;", "en": "Do you eat meat?", "highlight": "Τρως" },
-        { "el": "Ναι, τρώω κρέας.", "en": "Yes, I eat meat.", "highlight": "Ναι" },
-        { "el": "Όχι, δεν τρώω κρέας.", "en": "No, I don't eat meat.", "highlight": "Όχι" },
-        { "el": "Είναι ωραία η πόλη, έτσι δεν είναι;", "en": "The city is beautiful, isn't it?", "highlight": "έτσι δεν είναι" }
+        {
+          "el": "Μιλάς ελληνικά;",
+          "en": "Do you speak Greek?",
+          "highlight": "Μιλάς"
+        },
+        {
+          "el": "Είναι αυτός ο δάσκαλος;",
+          "en": "Is he the teacher?",
+          "highlight": "Είναι"
+        },
+        {
+          "el": "Τρως κρέας;",
+          "en": "Do you eat meat?",
+          "highlight": "Τρως"
+        },
+        {
+          "el": "Ναι, τρώω κρέας.",
+          "en": "Yes, I eat meat.",
+          "highlight": "Ναι"
+        },
+        {
+          "el": "Όχι, δεν τρώω κρέας.",
+          "en": "No, I don't eat meat.",
+          "highlight": "Όχι"
+        },
+        {
+          "el": "Είναι ωραία η πόλη, έτσι δεν είναι;",
+          "en": "The city is beautiful, isn't it?",
+          "highlight": "έτσι δεν είναι"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you turn the statement 'Μένεις στην Αθήνα.' into a yes/no question in Greek?",
-          "options": ["Μένεις στην Αθήνα; (rising intonation)", "Στην Αθήνα μένεις εσύ;", "Μένεις εσύ στην Αθήνα!", "Αθήνα μένεις;"],
-          "correctIndex": 0,
+          "options": [
+            "Μένεις εσύ στην Αθήνα!",
+            "Μένεις στην Αθήνα; (rising intonation)",
+            "Στην Αθήνα μένεις εσύ;",
+            "Αθήνα μένεις;"
+          ],
+          "correctIndex": 1,
           "explanation": "Greek yes/no questions keep the same word order as statements. Simply add a question mark (;) and raise intonation: Μένεις στην Αθήνα;"
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the Greek word for 'Yes'?",
-          "options": ["Ναι", "Όχι", "Έτσι", "Μάλιστα"],
-          "correctIndex": 0,
+          "options": [
+            "Όχι",
+            "Ναι",
+            "Έτσι",
+            "Μάλιστα"
+          ],
+          "correctIndex": 1,
           "explanation": "Ναι means 'yes'. Όχι means 'no'. Μάλιστα is a formal/emphatic 'yes', but Ναι is the standard word."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which tag phrase means 'isn't it?' in Greek?",
-          "options": ["έτσι δεν είναι;", "δεν είναι έτσι.", "ναι ή όχι;", "είναι έτσι!"],
+          "options": [
+            "έτσι δεν είναι;",
+            "είναι έτσι!",
+            "ναι ή όχι;",
+            "δεν είναι έτσι."
+          ],
           "correctIndex": 0,
           "explanation": "Έτσι δεν είναι; (literally 'so it isn't?') is the standard Greek tag question, equivalent to 'isn't it?' or 'right?'."
         }
@@ -50,33 +91,72 @@
       "explanation": "Greek question words are placed at the beginning of a sentence, followed by the verb and other elements. The main question words are: Τι; (What?), Ποιος / Ποια / Ποιο; (Who? / Which? — agreeing in gender with the noun), Πού; (Where?), Πότε; (When?), Πώς; (How?), Γιατί; (Why?), Πόσο; (How much? — for uncountable/neuter), Πόσοι / Πόσες / Πόσα; (How many? — agreeing in gender/number). Note that Γιατί; (why?) and the answer word γιατί (because) are written the same way — context makes the meaning clear. Question words in Greek do not carry written accent marks that differ from the same words used in statements (unlike Spanish), but they are always stressed on the marked syllable when spoken.",
       "tip": "Remember that Ποιος / Ποια / Ποιο agrees with the gender of the noun it refers to: Ποιος άντρας; (which man? — masculine), Ποια γυναίκα; (which woman? — feminine), Ποιο παιδί; (which child? — neuter). Πού (where) with an accent means 'where', while που without accent means 'that/which' (relative pronoun).",
       "examples": [
-        { "el": "Τι κάνεις;", "en": "What are you doing?", "highlight": "Τι" },
-        { "el": "Ποιος είναι αυτός;", "en": "Who is he?", "highlight": "Ποιος" },
-        { "el": "Πού μένεις;", "en": "Where do you live?", "highlight": "Πού" },
-        { "el": "Πότε φτάνει το τρένο;", "en": "When does the train arrive?", "highlight": "Πότε" },
-        { "el": "Πώς σε λένε;", "en": "What is your name? (lit. How do they call you?)", "highlight": "Πώς" },
-        { "el": "Γιατί μαθαίνεις ελληνικά;", "en": "Why are you learning Greek?", "highlight": "Γιατί" }
+        {
+          "el": "Τι κάνεις;",
+          "en": "What are you doing?",
+          "highlight": "Τι"
+        },
+        {
+          "el": "Ποιος είναι αυτός;",
+          "en": "Who is he?",
+          "highlight": "Ποιος"
+        },
+        {
+          "el": "Πού μένεις;",
+          "en": "Where do you live?",
+          "highlight": "Πού"
+        },
+        {
+          "el": "Πότε φτάνει το τρένο;",
+          "en": "When does the train arrive?",
+          "highlight": "Πότε"
+        },
+        {
+          "el": "Πώς σε λένε;",
+          "en": "What is your name? (lit. How do they call you?)",
+          "highlight": "Πώς"
+        },
+        {
+          "el": "Γιατί μαθαίνεις ελληνικά;",
+          "en": "Why are you learning Greek?",
+          "highlight": "Γιατί"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which question word means 'Where?' in Greek?",
-          "options": ["Πού;", "Πότε;", "Πώς;", "Γιατί;"],
-          "correctIndex": 0,
+          "options": [
+            "Γιατί;",
+            "Πώς;",
+            "Πού;",
+            "Πότε;"
+          ],
+          "correctIndex": 2,
           "explanation": "Πού; means 'where'. Πότε; = when, Πώς; = how, Γιατί; = why."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you ask 'How many students are there?' in Greek?",
-          "options": ["Πόσοι μαθητές υπάρχουν;", "Πόσο μαθητές υπάρχουν;", "Πότε μαθητές υπάρχουν;", "Τι μαθητές υπάρχουν;"],
-          "correctIndex": 0,
+          "options": [
+            "Πότε μαθητές υπάρχουν;",
+            "Πόσοι μαθητές υπάρχουν;",
+            "Τι μαθητές υπάρχουν;",
+            "Πόσο μαθητές υπάρχουν;"
+          ],
+          "correctIndex": 1,
           "explanation": "Πόσοι is the masculine plural form of 'how many', agreeing with μαθητές (masculine plural). Πόσο is used for singular/neuter quantities."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly asks 'Why do you work here?'",
-          "options": ["Γιατί δουλεύεις εδώ;", "Πότε δουλεύεις εδώ;", "Τι δουλεύεις εδώ;", "Ποιος δουλεύεις εδώ;"],
-          "correctIndex": 0,
+          "options": [
+            "Τι δουλεύεις εδώ;",
+            "Ποιος δουλεύεις εδώ;",
+            "Πότε δουλεύεις εδώ;",
+            "Γιατί δουλεύεις εδώ;"
+          ],
+          "correctIndex": 3,
           "explanation": "Γιατί; = why. Γιατί δουλεύεις εδώ; is the correct question. Note: Γιατί also means 'because' in answers — context determines meaning."
         }
       ]
@@ -87,32 +167,71 @@
       "explanation": "Greek has two main negation words: δεν and μην. Use δεν before a verb in the present, past, or future indicative tense to make it negative: 'Μιλώ.' (I speak.) → 'Δεν μιλώ.' (I don't speak.). 'Πήγα.' (I went.) → 'Δεν πήγα.' (I didn't go.). Use μην before a verb in the subjunctive or imperative to express prohibition or negative commands: 'Μην πηγαίνεις!' (Don't go!), 'Μην το κάνεις αυτό.' (Don't do that.). Unlike Spanish or some other languages, double negation is NOT standard in Greek — using δεν + a negative word like τίποτα (nothing) or κανείς (nobody) is the correct construction and does not create a double positive. To express 'neither...nor', use ούτε...ούτε: 'Δεν μιλώ ούτε γαλλικά ούτε γερμανικά.' (I speak neither French nor German.).",
       "tip": "The key distinction: δεν is for indicative statements and questions (facts, habitual actions, descriptions), while μην is for subjunctive and imperative (wishes, commands, prohibitions). A quick rule: if you are telling someone NOT to do something, use μην. If you are stating that something is not the case, use δεν.",
       "examples": [
-        { "el": "Δεν μιλώ αγγλικά.", "en": "I don't speak English.", "highlight": "Δεν μιλώ" },
-        { "el": "Δεν πήγε στο σχολείο.", "en": "He didn't go to school.", "highlight": "Δεν πήγε" },
-        { "el": "Μην πηγαίνεις εκεί!", "en": "Don't go there!", "highlight": "Μην πηγαίνεις" },
-        { "el": "Μην αργείς!", "en": "Don't be late!", "highlight": "Μην αργείς" },
-        { "el": "Δεν τρώω τίποτα.", "en": "I don't eat anything. / I eat nothing.", "highlight": "τίποτα" },
-        { "el": "Δεν μιλώ ούτε γαλλικά ούτε γερμανικά.", "en": "I speak neither French nor German.", "highlight": "ούτε...ούτε" }
+        {
+          "el": "Δεν μιλώ αγγλικά.",
+          "en": "I don't speak English.",
+          "highlight": "Δεν μιλώ"
+        },
+        {
+          "el": "Δεν πήγε στο σχολείο.",
+          "en": "He didn't go to school.",
+          "highlight": "Δεν πήγε"
+        },
+        {
+          "el": "Μην πηγαίνεις εκεί!",
+          "en": "Don't go there!",
+          "highlight": "Μην πηγαίνεις"
+        },
+        {
+          "el": "Μην αργείς!",
+          "en": "Don't be late!",
+          "highlight": "Μην αργείς"
+        },
+        {
+          "el": "Δεν τρώω τίποτα.",
+          "en": "I don't eat anything. / I eat nothing.",
+          "highlight": "τίποτα"
+        },
+        {
+          "el": "Δεν μιλώ ούτε γαλλικά ούτε γερμανικά.",
+          "en": "I speak neither French nor German.",
+          "highlight": "ούτε...ούτε"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which negation word do you use before an indicative verb to say 'I don't work'?",
-          "options": ["δεν", "μην", "ούτε", "όχι"],
-          "correctIndex": 0,
+          "options": [
+            "ούτε",
+            "όχι",
+            "μην",
+            "δεν"
+          ],
+          "correctIndex": 3,
           "explanation": "Δεν is used before indicative verbs (present, past, future). Δεν δουλεύω = I don't work. Μην is reserved for subjunctive/imperative."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'Don't eat that!' in Greek?",
-          "options": ["Μην το τρως!", "Δεν το τρως!", "Ούτε το τρως!", "Όχι τρως!"],
+          "options": [
+            "Μην το τρως!",
+            "Δεν το τρως!",
+            "Όχι τρως!",
+            "Ούτε το τρως!"
+          ],
           "correctIndex": 0,
           "explanation": "Commands and prohibitions use μην before the verb. Μην το τρως! = Don't eat that! Using δεν here would make a statement ('You don't eat it'), not a command."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly means 'She speaks neither Italian nor Spanish.'?",
-          "options": ["Δεν μιλά ούτε ιταλικά ούτε ισπανικά.", "Δεν μιλά ούτε ιταλικά ή ισπανικά.", "Μην μιλά ιταλικά ούτε ισπανικά.", "Δεν μιλά και ιταλικά και ισπανικά."],
+          "options": [
+            "Δεν μιλά ούτε ιταλικά ούτε ισπανικά.",
+            "Μην μιλά ιταλικά ούτε ισπανικά.",
+            "Δεν μιλά ούτε ιταλικά ή ισπανικά.",
+            "Δεν μιλά και ιταλικά και ισπανικά."
+          ],
           "correctIndex": 0,
           "explanation": "The neither...nor construction in Greek is ούτε...ούτε, combined with δεν before the verb: Δεν μιλά ούτε ιταλικά ούτε ισπανικά."
         }

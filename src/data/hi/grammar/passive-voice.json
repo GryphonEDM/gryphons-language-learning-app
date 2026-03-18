@@ -4,7 +4,9 @@
   "nameHi": "कर्मवाच्य",
   "icon": "🔀",
   "tier": "B1",
-  "prerequisites": ["verb-conjugation"],
+  "prerequisites": [
+    "verb-conjugation"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "Hindi forms the passive voice by combining the verb root with जाना (to go). The construction is: verb root + जाना (conjugated for tense, gender, and number of the grammatical subject). In a passive sentence, the object of the action becomes the grammatical subject, and the verb agrees with it. For example, the active sentence राम ने पत्र लिखा (Ram wrote the letter) becomes पत्र लिखा गया (The letter was written). Notice that लिखा गया uses the past form of जाना (गया), which agrees with पत्र (letter, masculine singular). If the subject were feminine, like किताब (book), we would say किताब लिखी गई (The book was written), where both लिखी and गई agree with the feminine subject. The passive is used in Hindi more broadly than in English — it appears in contexts expressing inability, compulsion, general truths, and politeness.",
       "tip": "The formula is simple: verb root + the appropriate form of जाना. The tricky part is making sure जाना agrees in gender and number with the new subject (the thing being acted upon), not the doer.",
       "examples": [
-        { "hi": "पत्र लिखा गया।", "en": "The letter was written.", "highlight": "लिखा गया" },
-        { "hi": "किताब पढ़ी गई।", "en": "The book was read. (feminine subject)", "highlight": "पढ़ी गई" },
-        { "hi": "खाना बनाया जाता है।", "en": "Food is made / Food gets made. (habitual passive)", "highlight": "बनाया जाता है" },
-        { "hi": "गाने गाए जाएँगे।", "en": "Songs will be sung. (future passive, masculine plural)", "highlight": "गाए जाएँगे" }
+        {
+          "hi": "पत्र लिखा गया।",
+          "en": "The letter was written.",
+          "highlight": "लिखा गया"
+        },
+        {
+          "hi": "किताब पढ़ी गई।",
+          "en": "The book was read. (feminine subject)",
+          "highlight": "पढ़ी गई"
+        },
+        {
+          "hi": "खाना बनाया जाता है।",
+          "en": "Food is made / Food gets made. (habitual passive)",
+          "highlight": "बनाया जाता है"
+        },
+        {
+          "hi": "गाने गाए जाएँगे।",
+          "en": "Songs will be sung. (future passive, masculine plural)",
+          "highlight": "गाए जाएँगे"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How is the passive voice formed in Hindi?",
-          "options": ["Verb root + जाना (conjugated)", "Verb root + करना (conjugated)", "Verb root + होना (conjugated)"],
-          "correctIndex": 0,
+          "options": [
+            "Verb root + होना (conjugated)",
+            "Verb root + करना (conjugated)",
+            "Verb root + जाना (conjugated)"
+          ],
+          "correctIndex": 2,
           "explanation": "Hindi passive is formed with verb root + जाना. The verb जाना conjugates for tense, gender, and number of the grammatical subject. For example: लिखा जाता है (is written), लिखा गया (was written), लिखा जाएगा (will be written)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct passive form of 'किताबें पढ़ना' (to read books)?",
-          "options": ["किताबें पढ़ी गईं।", "किताबें पढ़ा गया।", "किताबें पढ़े गए।"],
-          "correctIndex": 0,
+          "options": [
+            "किताबें पढ़ा गया।",
+            "किताबें पढ़ी गईं।",
+            "किताबें पढ़े गए।"
+          ],
+          "correctIndex": 1,
           "explanation": "किताबें is feminine plural, so both the main verb participle and जाना must agree: पढ़ी गईं। पढ़ा गया would be masculine singular, and पढ़े गए would be masculine plural — neither matches the feminine plural subject."
         },
         {
           "type": "multiple-choice",
           "prompt": "In the passive sentence 'खाना बनाया जाता है', what does जाता है indicate?",
-          "options": ["Present habitual passive (is made regularly)", "Past tense (was made)", "Future tense (will be made)"],
-          "correctIndex": 0,
+          "options": [
+            "Future tense (will be made)",
+            "Past tense (was made)",
+            "Present habitual passive (is made regularly)"
+          ],
+          "correctIndex": 2,
           "explanation": "जाता है is the present habitual form of जाना, so बनाया जाता है means 'is (regularly) made'. The past would be बनाया गया, and the future would be बनाया जाएगा."
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "In a passive sentence, the doer of the action (the agent) is optionally expressed using the postpositions से or द्वारा, both meaning 'by'. से is the more common, everyday form used in spoken Hindi, while द्वारा is more formal and literary. For example: यह कविता सूरदास द्वारा लिखी गई (This poem was written by Surdas) or यह काम राम से किया गया (This work was done by Ram). In many passive sentences, the agent is simply omitted if it is unknown, unimportant, or obvious from context: दरवाज़ा खोला गया (The door was opened — by whom is unstated). When the agent is included, note that से can sometimes also mean 'from' or indicate an instrument, so context matters. द्वारा is unambiguous and always means 'by (an agent)'. In formal writing, government notices, and news reports, द्वारा is strongly preferred.",
       "tip": "Use से for casual speech and द्वारा for formal or written Hindi. Many passive sentences omit the agent entirely — this is perfectly natural and very common.",
       "examples": [
-        { "hi": "यह पत्र मोहन द्वारा लिखा गया।", "en": "This letter was written by Mohan. (formal)", "highlight": "द्वारा" },
-        { "hi": "यह काम राम से किया गया।", "en": "This work was done by Ram. (informal)", "highlight": "से" },
-        { "hi": "ताजमहल शाहजहाँ द्वारा बनवाया गया।", "en": "The Taj Mahal was built by Shah Jahan.", "highlight": "द्वारा" },
-        { "hi": "चोर पुलिस द्वारा पकड़ा गया।", "en": "The thief was caught by the police.", "highlight": "द्वारा" }
+        {
+          "hi": "यह पत्र मोहन द्वारा लिखा गया।",
+          "en": "This letter was written by Mohan. (formal)",
+          "highlight": "द्वारा"
+        },
+        {
+          "hi": "यह काम राम से किया गया।",
+          "en": "This work was done by Ram. (informal)",
+          "highlight": "से"
+        },
+        {
+          "hi": "ताजमहल शाहजहाँ द्वारा बनवाया गया।",
+          "en": "The Taj Mahal was built by Shah Jahan.",
+          "highlight": "द्वारा"
+        },
+        {
+          "hi": "चोर पुलिस द्वारा पकड़ा गया।",
+          "en": "The thief was caught by the police.",
+          "highlight": "द्वारा"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which postposition marks the agent in a formal Hindi passive sentence?",
-          "options": ["द्वारा", "को", "में"],
-          "correctIndex": 0,
+          "options": [
+            "को",
+            "में",
+            "द्वारा"
+          ],
+          "correctIndex": 2,
           "explanation": "द्वारा means 'by' and marks the agent (doer) in formal passive constructions. को marks the indirect object or experiencer, and में means 'in'. In informal speech, से can also be used for the agent."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses an agent marker in the passive voice?",
-          "options": ["गीत लता जी द्वारा गाया गया।", "गीत लता जी को गाया गया।", "गीत लता जी में गाया गया।"],
-          "correctIndex": 0,
+          "options": [
+            "गीत लता जी को गाया गया।",
+            "गीत लता जी द्वारा गाया गया।",
+            "गीत लता जी में गाया गया।"
+          ],
+          "correctIndex": 1,
           "explanation": "द्वारा correctly marks the agent (लता जी) who performed the singing. को would incorrectly mark her as the indirect object, and में would mean 'in Lata ji', which makes no sense."
         },
         {
           "type": "multiple-choice",
           "prompt": "When is it acceptable to omit the agent in a Hindi passive sentence?",
-          "options": ["When the agent is unknown, unimportant, or obvious", "Never — the agent must always be stated", "Only in questions"],
-          "correctIndex": 0,
+          "options": [
+            "Never — the agent must always be stated",
+            "When the agent is unknown, unimportant, or obvious",
+            "Only in questions"
+          ],
+          "correctIndex": 1,
           "explanation": "Hindi passive sentences very commonly omit the agent. दरवाज़ा खोला गया (The door was opened) is perfectly grammatical without stating who opened it. Omitting the agent is natural when the focus is on the action or result, not the doer."
         }
       ]
@@ -83,30 +141,58 @@
       "explanation": "Hindi uses passive constructions in several ways that have no direct English equivalent. First, the 'inability passive': when someone cannot do something (often due to physical or emotional inability), Hindi uses a passive with से and a negation. For example: मुझसे यह नहीं होता (I cannot do this / This doesn't happen by me — implying inability). राम से चला नहीं जाता (Ram cannot walk — it's beyond his ability). Second, the passive can express compulsion or unavoidable situations, often in impersonal constructions: जाना पड़ता है (One has to go — though this uses पड़ना, a related pattern). Third, the passive is used for politeness and formality, especially in instructions and requests: बैठा जाए (Please be seated — more polite than बैठिए). यहाँ धूम्रपान नहीं किया जाता (Smoking is not done here — polite prohibition). These special uses make the passive far more common in Hindi than in English.",
       "tip": "The inability passive with से is very idiomatic: 'मुझसे नहीं होता' literally means 'it is not done by me' but really means 'I can't do it / I'm unable to'. This is one of the most useful Hindi patterns to internalize.",
       "examples": [
-        { "hi": "मुझसे यह नहीं किया जाता।", "en": "I am unable to do this. (inability passive)", "highlight": "मुझसे" },
-        { "hi": "उससे चला नहीं जाता।", "en": "He/She is unable to walk. (physical inability)", "highlight": "उससे" },
-        { "hi": "यहाँ हिंदी बोली जाती है।", "en": "Hindi is spoken here. (general statement)", "highlight": "बोली जाती है" },
-        { "hi": "कृपया बैठा जाए।", "en": "Please be seated. (polite passive request)", "highlight": "बैठा जाए" }
+        {
+          "hi": "मुझसे यह नहीं किया जाता।",
+          "en": "I am unable to do this. (inability passive)",
+          "highlight": "मुझसे"
+        },
+        {
+          "hi": "उससे चला नहीं जाता।",
+          "en": "He/She is unable to walk. (physical inability)",
+          "highlight": "उससे"
+        },
+        {
+          "hi": "यहाँ हिंदी बोली जाती है।",
+          "en": "Hindi is spoken here. (general statement)",
+          "highlight": "बोली जाती है"
+        },
+        {
+          "hi": "कृपया बैठा जाए।",
+          "en": "Please be seated. (polite passive request)",
+          "highlight": "बैठा जाए"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does 'मुझसे यह नहीं होता' mean?",
-          "options": ["I am unable to do this.", "I did not do this.", "This was not done for me."],
+          "options": [
+            "I am unable to do this.",
+            "I did not do this.",
+            "This was not done for me."
+          ],
           "correctIndex": 0,
           "explanation": "This is the inability passive. मुझसे (by me) + नहीं होता (is not done) expresses that the speaker is unable to do something — it's beyond their ability. It does not mean they chose not to do it or that someone else didn't do it for them."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why might someone say 'बैठा जाए' instead of 'बैठिए'?",
-          "options": ["बैठा जाए is more polite and formal", "बैठिए is grammatically incorrect", "बैठा जाए refers to the past"],
-          "correctIndex": 0,
+          "options": [
+            "बैठा जाए refers to the past",
+            "बैठिए is grammatically incorrect",
+            "बैठा जाए is more polite and formal"
+          ],
+          "correctIndex": 2,
           "explanation": "Both mean 'please sit', but बैठा जाए (passive subjunctive) is more formal and polite because it avoids directly commanding the listener. बैठिए (imperative) is perfectly correct but more direct. The passive form is preferred in formal settings."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the passive to express a general truth or rule?",
-          "options": ["यहाँ धूम्रपान नहीं किया जाता।", "मैंने धूम्रपान नहीं किया।", "वह धूम्रपान करता है।"],
+          "options": [
+            "यहाँ धूम्रपान नहीं किया जाता।",
+            "मैंने धूम्रपान नहीं किया।",
+            "वह धूम्रपान करता है।"
+          ],
           "correctIndex": 0,
           "explanation": "यहाँ धूम्रपान नहीं किया जाता (Smoking is not done here) uses the passive to state a general rule or prohibition impersonally. The other sentences are active voice: 'I didn't smoke' and 'He smokes'."
         }

@@ -4,7 +4,9 @@
   "nameEs": "Los Adjetivos",
   "icon": "🎨",
   "tier": "A1",
-  "prerequisites": ["nouns-gender"],
+  "prerequisites": [
+    "nouns-gender"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,122 @@
       "explanation": "Spanish adjectives must agree in gender with the noun they describe. Adjectives ending in -o are masculine; they change to -a when describing a feminine noun. For example, 'rojo' (red) becomes 'roja' for a feminine noun: 'el coche rojo' (the red car) vs. 'la manzana roja' (the red apple). Adjectives ending in -e or most consonants (like 'verde', 'azul', 'fácil') do not change for gender — they use the same form for both masculine and feminine nouns.",
       "tip": "Only adjectives ending in -o/a change for gender. Adjectives ending in -e or a consonant stay the same for both genders.",
       "examples": [
-        { "es": "el libro rojo", "en": "the red book (masculine)", "highlight": "rojo" },
-        { "es": "la mochila roja", "en": "the red backpack (feminine)", "highlight": "roja" },
-        { "es": "el coche negro", "en": "the black car (masculine)", "highlight": "negro" },
-        { "es": "la silla negra", "en": "the black chair (feminine)", "highlight": "negra" },
-        { "es": "el bolígrafo verde", "en": "the green pen (no change — -e ending)", "highlight": "verde" },
-        { "es": "la hoja verde", "en": "the green leaf (no change — -e ending)", "highlight": "verde" }
+        {
+          "es": "el libro rojo",
+          "en": "the red book (masculine)",
+          "highlight": "rojo"
+        },
+        {
+          "es": "la mochila roja",
+          "en": "the red backpack (feminine)",
+          "highlight": "roja"
+        },
+        {
+          "es": "el coche negro",
+          "en": "the black car (masculine)",
+          "highlight": "negro"
+        },
+        {
+          "es": "la silla negra",
+          "en": "the black chair (feminine)",
+          "highlight": "negra"
+        },
+        {
+          "es": "el bolígrafo verde",
+          "en": "the green pen (no change — -e ending)",
+          "highlight": "verde"
+        },
+        {
+          "es": "la hoja verde",
+          "en": "the green leaf (no change — -e ending)",
+          "highlight": "verde"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which form is correct? 'la camisa ___' (the white shirt)",
-          "options": ["blanca", "blanco", "blanc", "blancos"],
+          "options": [
+            "blanca",
+            "blanc",
+            "blanco",
+            "blancos"
+          ],
           "correctIndex": 0,
           "explanation": "'camisa' is feminine, so 'blanco' changes to 'blanca': la camisa blanca."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which form is correct? 'el gato ___' (the black cat)",
-          "options": ["negro", "negra", "negros", "negre"],
-          "correctIndex": 0,
+          "options": [
+            "negra",
+            "negros",
+            "negre",
+            "negro"
+          ],
+          "correctIndex": 3,
           "explanation": "'gato' is masculine, so the adjective stays 'negro': el gato negro."
         },
         {
           "type": "fill-blank",
           "prompt": "La flor es ___. (The flower is yellow.)",
-          "acceptedAnswers": ["amarilla"],
+          "acceptedAnswers": [
+            "amarilla"
+          ],
           "hint": "Flower (flor) is feminine. Change the -o of 'amarillo' to -a.",
           "explanation": "'flor' is feminine, so 'amarillo' becomes 'amarilla': La flor es amarilla."
         },
         {
           "type": "multiple-choice",
           "prompt": "Does 'verde' (green) change form for feminine nouns?",
-          "options": ["No — it stays 'verde' for both genders", "Yes — it becomes 'verda'", "Yes — it becomes 'verdo'", "Yes — it becomes 'verdea'"],
-          "correctIndex": 0,
+          "options": [
+            "Yes — it becomes 'verdo'",
+            "No — it stays 'verde' for both genders",
+            "Yes — it becomes 'verda'",
+            "Yes — it becomes 'verdea'"
+          ],
+          "correctIndex": 1,
           "explanation": "Adjectives ending in -e do not change for gender. Both 'el árbol verde' and 'la hierba verde' are correct."
         },
         {
           "type": "fill-blank",
           "prompt": "El cielo es ___. (The sky is blue.) — Use 'azul'.",
-          "acceptedAnswers": ["azul"],
+          "acceptedAnswers": [
+            "azul"
+          ],
           "hint": "'azul' ends in a consonant — it does not change for gender.",
           "explanation": "Adjectives ending in a consonant like 'azul' are the same for masculine and feminine: El cielo es azul."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct sentence: 'The red house'",
-          "options": ["la casa roja", "la casa rojo", "el casa roja", "la casa roje"],
+          "options": [
+            "la casa roja",
+            "la casa rojo",
+            "el casa roja",
+            "la casa roje"
+          ],
           "correctIndex": 0,
           "explanation": "'casa' is feminine, so the adjective must be 'roja'. Also, 'casa' takes the feminine article 'la'."
         },
         {
           "type": "fill-blank",
           "prompt": "El perro es ___. (The dog is pretty/cute.) — Use 'bonito'.",
-          "acceptedAnswers": ["bonito"],
+          "acceptedAnswers": [
+            "bonito"
+          ],
           "hint": "'perro' (dog) is masculine. Keep the -o ending.",
           "explanation": "'perro' is masculine, so the adjective stays 'bonito': El perro es bonito."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is correct? 'The good student' (student = el/la estudiante)",
-          "options": ["la estudiante buena", "la estudiante bueno", "la estudiante buene", "la estudiante buenas"],
+          "options": [
+            "la estudiante buena",
+            "la estudiante buenas",
+            "la estudiante buene",
+            "la estudiante bueno"
+          ],
           "correctIndex": 0,
           "explanation": "'estudiante' here is feminine (la estudiante), so 'bueno' changes to 'buena'."
         }
@@ -85,60 +142,110 @@
       "explanation": "Unlike English, most Spanish descriptive adjectives are placed AFTER the noun, not before it. 'A red car' in Spanish is 'un coche rojo' — the adjective follows the noun. This is the default rule for most adjectives describing color, shape, nationality, and physical qualities. A small group of common adjectives (bueno, malo, grande, pequeño, joven, viejo) can also appear before the noun, and a few change meaning depending on position (grande before a noun means 'great', after means 'big'). For now, default to placing descriptive adjectives after the noun.",
       "tip": "Default word order: NOUN + ADJECTIVE. Spanish is the opposite of English for most descriptive adjectives.",
       "examples": [
-        { "es": "una chica inteligente", "en": "a smart girl (noun first, then adjective)", "highlight": "inteligente" },
-        { "es": "un hombre alto", "en": "a tall man", "highlight": "alto" },
-        { "es": "una ciudad grande", "en": "a big city", "highlight": "grande" },
-        { "es": "un libro interesante", "en": "an interesting book", "highlight": "interesante" },
-        { "es": "una película aburrida", "en": "a boring movie", "highlight": "aburrida" },
-        { "es": "un buen estudiante", "en": "a good student (bueno can go before the noun, shortens to buen)", "highlight": "buen" }
+        {
+          "es": "una chica inteligente",
+          "en": "a smart girl (noun first, then adjective)",
+          "highlight": "inteligente"
+        },
+        {
+          "es": "un hombre alto",
+          "en": "a tall man",
+          "highlight": "alto"
+        },
+        {
+          "es": "una ciudad grande",
+          "en": "a big city",
+          "highlight": "grande"
+        },
+        {
+          "es": "un libro interesante",
+          "en": "an interesting book",
+          "highlight": "interesante"
+        },
+        {
+          "es": "una película aburrida",
+          "en": "a boring movie",
+          "highlight": "aburrida"
+        },
+        {
+          "es": "un buen estudiante",
+          "en": "a good student (bueno can go before the noun, shortens to buen)",
+          "highlight": "buen"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a fast car' in Spanish?",
-          "options": ["un coche rápido", "un rápido coche", "rápido coche un", "un coche rápida"],
-          "correctIndex": 0,
+          "options": [
+            "un rápido coche",
+            "un coche rápido",
+            "rápido coche un",
+            "un coche rápida"
+          ],
+          "correctIndex": 1,
           "explanation": "Descriptive adjectives follow the noun in Spanish: 'un coche rápido'. Also, 'coche' is masculine so 'rápido' is correct."
         },
         {
           "type": "fill-blank",
           "prompt": "Reorder to make a correct sentence: [mujer / una / simpática] (a friendly woman)",
-          "acceptedAnswers": ["una mujer simpática"],
+          "acceptedAnswers": [
+            "una mujer simpática"
+          ],
           "hint": "Article first, then noun, then adjective.",
           "explanation": "The correct order is: una mujer simpática — article, noun, adjective."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which translation of 'a difficult exam' is correct?",
-          "options": ["un examen difícil", "un difícil examen", "una examen difícil", "un examen difícile"],
-          "correctIndex": 0,
+          "options": [
+            "una examen difícil",
+            "un difícil examen",
+            "un examen difícil",
+            "un examen difícile"
+          ],
+          "correctIndex": 2,
           "explanation": "'examen' is masculine, and the adjective follows the noun: un examen difícil."
         },
         {
           "type": "multiple-choice",
           "prompt": "Where does the adjective normally go in a Spanish noun phrase?",
-          "options": ["After the noun", "Before the noun", "Before the article", "Either position — no difference"],
-          "correctIndex": 0,
+          "options": [
+            "Before the article",
+            "Before the noun",
+            "Either position — no difference",
+            "After the noun"
+          ],
+          "correctIndex": 3,
           "explanation": "The default position for descriptive adjectives in Spanish is after the noun (e.g., 'una casa bonita')."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella es una doctora ___. (She is a famous doctor.) — Use 'famoso'.",
-          "acceptedAnswers": ["famosa"],
+          "acceptedAnswers": [
+            "famosa"
+          ],
           "hint": "'doctora' is feminine. Adjust the adjective ending and place it after the noun.",
           "explanation": "'doctora' is feminine, so 'famoso' → 'famosa'. Placement: after the noun. una doctora famosa."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a boring book'?",
-          "options": ["un libro aburrido", "un aburrido libro", "una libro aburrida", "un libro aburrida"],
-          "correctIndex": 0,
+          "options": [
+            "un aburrido libro",
+            "un libro aburrida",
+            "una libro aburrida",
+            "un libro aburrido"
+          ],
+          "correctIndex": 3,
           "explanation": "'libro' is masculine, adjective after the noun: un libro aburrido."
         },
         {
           "type": "fill-blank",
           "prompt": "Es ___ ___ ___. (It is a long street.) — Use: calle / una / larga",
-          "acceptedAnswers": ["una calle larga"],
+          "acceptedAnswers": [
+            "una calle larga"
+          ],
           "hint": "'calle' (street) is feminine. Adjective goes after the noun.",
           "explanation": "The correct phrase is 'una calle larga' — feminine article and adjective, noun before adjective."
         }
@@ -150,68 +257,123 @@
       "explanation": "Here is a core set of descriptive adjectives you will use constantly in Spanish. Many come in o/a pairs. Key pairs to learn: alto/alta (tall), bajo/baja (short), grande (big), pequeño/pequeña (small), joven (young), viejo/vieja (old), guapo/guapa (handsome/pretty), feo/fea (ugly), bueno/buena (good), malo/mala (bad), feliz (happy), triste (sad), rápido/rápida (fast), lento/lenta (slow), fácil (easy), difícil (difficult), rico/rica (rich/delicious), pobre (poor), nuevo/nueva (new), and cansado/cansada (tired).",
       "tip": "Learn adjectives in o/a pairs. When you see a new adjective ending in -o, immediately practice its feminine -a form as well.",
       "examples": [
-        { "es": "El edificio es alto.", "en": "The building is tall.", "highlight": "alto" },
-        { "es": "La niña es pequeña.", "en": "The girl is small.", "highlight": "pequeña" },
-        { "es": "El hombre está cansado.", "en": "The man is tired.", "highlight": "cansado" },
-        { "es": "La sopa está rica.", "en": "The soup is delicious.", "highlight": "rica" },
-        { "es": "Es una pregunta difícil.", "en": "It is a difficult question.", "highlight": "difícil" },
-        { "es": "Los zapatos son nuevos.", "en": "The shoes are new.", "highlight": "nuevos" }
+        {
+          "es": "El edificio es alto.",
+          "en": "The building is tall.",
+          "highlight": "alto"
+        },
+        {
+          "es": "La niña es pequeña.",
+          "en": "The girl is small.",
+          "highlight": "pequeña"
+        },
+        {
+          "es": "El hombre está cansado.",
+          "en": "The man is tired.",
+          "highlight": "cansado"
+        },
+        {
+          "es": "La sopa está rica.",
+          "en": "The soup is delicious.",
+          "highlight": "rica"
+        },
+        {
+          "es": "Es una pregunta difícil.",
+          "en": "It is a difficult question.",
+          "highlight": "difícil"
+        },
+        {
+          "es": "Los zapatos son nuevos.",
+          "en": "The shoes are new.",
+          "highlight": "nuevos"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does 'guapo' mean?",
-          "options": ["handsome / good-looking", "fast", "happy", "old"],
-          "correctIndex": 0,
+          "options": [
+            "happy",
+            "fast",
+            "old",
+            "handsome / good-looking"
+          ],
+          "correctIndex": 3,
           "explanation": "'Guapo' means handsome or good-looking (for a male). The feminine form is 'guapa'."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the opposite of 'alto' (tall)?",
-          "options": ["bajo", "feo", "lento", "triste"],
-          "correctIndex": 0,
+          "options": [
+            "feo",
+            "triste",
+            "lento",
+            "bajo"
+          ],
+          "correctIndex": 3,
           "explanation": "'Bajo/baja' means short (in height), the opposite of 'alto/alta'."
         },
         {
           "type": "fill-blank",
           "prompt": "Mi abuela es ___. (My grandmother is old.) — Use 'viejo'.",
-          "acceptedAnswers": ["vieja"],
+          "acceptedAnswers": [
+            "vieja"
+          ],
           "hint": "'Abuela' (grandmother) is feminine. Change the -o to -a.",
           "explanation": "'abuela' is feminine, so 'viejo' → 'vieja': Mi abuela es vieja."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'The food is delicious'?",
-          "options": ["La comida está rica.", "La comida está rico.", "La comida es rica.", "La comida está ricas."],
-          "correctIndex": 0,
+          "options": [
+            "La comida está rico.",
+            "La comida está rica.",
+            "La comida es rica.",
+            "La comida está ricas."
+          ],
+          "correctIndex": 1,
           "explanation": "'Comida' is feminine, so 'rica' is correct. We use 'está' (from estar) for temporary states like taste."
         },
         {
           "type": "fill-blank",
           "prompt": "El ejercicio es ___. (The exercise is easy.)",
-          "acceptedAnswers": ["fácil"],
+          "acceptedAnswers": [
+            "fácil"
+          ],
           "hint": "'fácil' ends in a consonant — no gender change needed.",
           "explanation": "'fácil' does not change for gender: El ejercicio es fácil."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct sentence: 'She is sad.'",
-          "options": ["Ella está triste.", "Ella está tristo.", "Ella es trista.", "Ella está tristas."],
-          "correctIndex": 0,
+          "options": [
+            "Ella está tristas.",
+            "Ella es trista.",
+            "Ella está tristo.",
+            "Ella está triste."
+          ],
+          "correctIndex": 3,
           "explanation": "'Triste' ends in -e and does not change for gender. We use 'está' for emotional states."
         },
         {
           "type": "fill-blank",
           "prompt": "Compré un coche ___. (I bought a new car.)",
-          "acceptedAnswers": ["nuevo"],
+          "acceptedAnswers": [
+            "nuevo"
+          ],
           "hint": "'Coche' is masculine. Use the masculine form of 'nuevo'.",
           "explanation": "'coche' is masculine, so the adjective stays 'nuevo': Compré un coche nuevo."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 'lento' mean?",
-          "options": ["slow", "sad", "short", "easy"],
-          "correctIndex": 0,
+          "options": [
+            "short",
+            "sad",
+            "slow",
+            "easy"
+          ],
+          "correctIndex": 2,
           "explanation": "'Lento/lenta' means slow. Its opposite is 'rápido/rápida' (fast)."
         }
       ]

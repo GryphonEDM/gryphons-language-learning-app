@@ -4,7 +4,10 @@
   "nameDe": "Nominativ und Akkusativ",
   "icon": "⚖️",
   "tier": "A2",
-  "prerequisites": ["articles", "word-order"],
+  "prerequisites": [
+    "articles",
+    "word-order"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,22 +16,94 @@
       "explanation": "German has four grammatical cases that show the role of a noun in a sentence. The nominative case marks the subject — the person or thing performing the action. In the nominative, the articles are: der (masculine), die (feminine), das (neuter), die (plural) — these are the base forms you already know. The indefinite articles are: ein (masculine), eine (feminine), ein (neuter). Examples: Der Mann lacht. (The man laughs.) — 'Der Mann' is the subject (nominative). Eine Frau singt. (A woman sings.) — 'Eine Frau' is the subject.",
       "tip": "Nominative = the subject. Nothing changes from the basic article forms you already know: der/die/das, ein/eine/ein.",
       "examples": [
-        { "de": "Der Hund bellt.", "en": "The dog barks. (Hund = subject → nominative)", "highlight": "Der" },
-        { "de": "Eine Frau singt.", "en": "A woman sings. (Frau = subject → nominative)", "highlight": "Eine" },
-        { "de": "Das Kind schläft.", "en": "The child sleeps. (Kind = subject → nominative)", "highlight": "Das" },
-        { "de": "Mein Vater kocht.", "en": "My father cooks. (Vater = subject → nominative)", "highlight": "Mein" }
+        {
+          "de": "Der Hund bellt.",
+          "en": "The dog barks. (Hund = subject → nominative)",
+          "highlight": "Der"
+        },
+        {
+          "de": "Eine Frau singt.",
+          "en": "A woman sings. (Frau = subject → nominative)",
+          "highlight": "Eine"
+        },
+        {
+          "de": "Das Kind schläft.",
+          "en": "The child sleeps. (Kind = subject → nominative)",
+          "highlight": "Das"
+        },
+        {
+          "de": "Mein Vater kocht.",
+          "en": "My father cooks. (Vater = subject → nominative)",
+          "highlight": "Mein"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which case marks the subject of a sentence?", "options": ["Nominative", "Accusative", "Dative"], "correctIndex": 0, "explanation": "The nominative case marks the subject — the person or thing performing the action of the verb." },
-        { "type": "multiple-choice", "prompt": "In 'Der Mann lacht', what case is 'der Mann'?", "options": ["Nominative (subject)", "Accusative (object)", "Dative (indirect object)"], "correctIndex": 0, "explanation": "'Der Mann' is the subject of 'lachen' (to laugh) — it performs the action. Therefore it is in the nominative case." },
-        { "type": "fill-blank", "prompt": "___ Katze schläft. (The cat sleeps.) Use the nominative article.", "acceptedAnswers": ["Die", "die"], "hint": "Katze is feminine — use the nominative feminine article", "explanation": "'Katze' is feminine → nominative article is 'die'. Die Katze schläft." },
-        { "type": "multiple-choice", "prompt": "What is the nominative indefinite article for a neuter noun like 'Haus'?", "options": ["ein Haus", "eine Haus", "einen Haus"], "correctIndex": 0, "explanation": "Neuter nominative indefinite article is 'ein': ein Haus (a house). Masculine also uses 'ein'; only feminine uses 'eine'." },
-        { "type": "matching", "prompt": "Match each noun to its nominative article (definite):", "pairs": [
-          { "left": "Mann (man, masc.)", "right": "der" },
-          { "left": "Frau (woman, fem.)", "right": "die" },
-          { "left": "Kind (child, neut.)", "right": "das" },
-          { "left": "Kinder (children, pl.)", "right": "die" }
-        ], "explanation": "Nominative definite: der (masc.), die (fem.), das (neut.), die (pl.). These are the base forms." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which case marks the subject of a sentence?",
+          "options": [
+            "Dative",
+            "Nominative",
+            "Accusative"
+          ],
+          "correctIndex": 1,
+          "explanation": "The nominative case marks the subject — the person or thing performing the action of the verb."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'Der Mann lacht', what case is 'der Mann'?",
+          "options": [
+            "Dative (indirect object)",
+            "Nominative (subject)",
+            "Accusative (object)"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Der Mann' is the subject of 'lachen' (to laugh) — it performs the action. Therefore it is in the nominative case."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Katze schläft. (The cat sleeps.) Use the nominative article.",
+          "acceptedAnswers": [
+            "Die",
+            "die"
+          ],
+          "hint": "Katze is feminine — use the nominative feminine article",
+          "explanation": "'Katze' is feminine → nominative article is 'die'. Die Katze schläft."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the nominative indefinite article for a neuter noun like 'Haus'?",
+          "options": [
+            "eine Haus",
+            "ein Haus",
+            "einen Haus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Neuter nominative indefinite article is 'ein': ein Haus (a house). Masculine also uses 'ein'; only feminine uses 'eine'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun to its nominative article (definite):",
+          "pairs": [
+            {
+              "left": "Mann (man, masc.)",
+              "right": "der"
+            },
+            {
+              "left": "Frau (woman, fem.)",
+              "right": "die"
+            },
+            {
+              "left": "Kind (child, neut.)",
+              "right": "das"
+            },
+            {
+              "left": "Kinder (children, pl.)",
+              "right": "die"
+            }
+          ],
+          "explanation": "Nominative definite: der (masc.), die (fem.), das (neut.), die (pl.). These are the base forms."
+        }
       ]
     },
     {
@@ -37,27 +112,140 @@
       "explanation": "The accusative case marks the direct object — the person or thing receiving the action directly. In the accusative, ONLY the masculine article changes: 'der' becomes 'den', and 'ein' becomes 'einen'. Feminine, neuter, and plural articles stay the same. This is the only change in the accusative! Article table — Definite: den (masc.), die (fem.), das (neut.), die (pl.). Indefinite: einen (masc.), eine (fem.), ein (neut.), no article (pl.). Example: 'Ich sehe den Mann.' (I see the man.) — 'den Mann' is the direct object (accusative masculine).",
       "tip": "Only masculine changes in the accusative: der → den, ein → einen. All other genders stay the same!",
       "examples": [
-        { "de": "Ich sehe den Mann.", "en": "I see the man. (Mann = direct object → acc. masc. → den)", "highlight": "den" },
-        { "de": "Sie kauft einen Hund.", "en": "She buys a dog. (Hund = direct object → acc. masc. → einen)", "highlight": "einen" },
-        { "de": "Er liest die Zeitung.", "en": "He reads the newspaper. (feminine — no change: die)", "highlight": "die" },
-        { "de": "Wir essen das Brot.", "en": "We eat the bread. (neuter — no change: das)", "highlight": "das" },
-        { "de": "Ich habe einen Bruder.", "en": "I have a brother. (masc. → einen)", "highlight": "einen" }
+        {
+          "de": "Ich sehe den Mann.",
+          "en": "I see the man. (Mann = direct object → acc. masc. → den)",
+          "highlight": "den"
+        },
+        {
+          "de": "Sie kauft einen Hund.",
+          "en": "She buys a dog. (Hund = direct object → acc. masc. → einen)",
+          "highlight": "einen"
+        },
+        {
+          "de": "Er liest die Zeitung.",
+          "en": "He reads the newspaper. (feminine — no change: die)",
+          "highlight": "die"
+        },
+        {
+          "de": "Wir essen das Brot.",
+          "en": "We eat the bread. (neuter — no change: das)",
+          "highlight": "das"
+        },
+        {
+          "de": "Ich habe einen Bruder.",
+          "en": "I have a brother. (masc. → einen)",
+          "highlight": "einen"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "In German accusative case, which gender's article changes?", "options": ["Only masculine (der→den, ein→einen)", "All genders change", "Only feminine changes"], "correctIndex": 0, "explanation": "Only masculine articles change in the accusative: der→den and ein→einen. Feminine (die/eine), neuter (das/ein), and plural (die) stay the same." },
-        { "type": "multiple-choice", "prompt": "What is the accusative form of 'der Mann'?", "options": ["den Mann", "dem Mann", "des Mannes"], "correctIndex": 0, "explanation": "Masculine 'der' becomes 'den' in the accusative. 'Ich sehe den Mann' = I see the man." },
-        { "type": "fill-blank", "prompt": "Ich kaufe ___ Hund. (I buy a dog.) — Hund is masculine", "acceptedAnswers": ["einen"], "hint": "Indefinite masculine accusative", "explanation": "Masculine indefinite accusative: ein → einen. Ich kaufe einen Hund." },
-        { "type": "multiple-choice", "prompt": "What is the accusative of 'eine Frau' (a woman)?", "options": ["eine Frau (no change)", "einen Frau", "der Frau"], "correctIndex": 0, "explanation": "Feminine articles do NOT change in the accusative. 'eine Frau' stays 'eine Frau' as a direct object." },
-        { "type": "matching", "prompt": "Match each noun phrase to its accusative form:", "pairs": [
-          { "left": "der Hund (masc.)", "right": "den Hund" },
-          { "left": "die Katze (fem.)", "right": "die Katze (no change)" },
-          { "left": "das Buch (neut.)", "right": "das Buch (no change)" },
-          { "left": "ein Mann (masc. indef.)", "right": "einen Mann" }
-        ], "explanation": "Only masculine changes: der→den, ein→einen. Feminine (die/eine) and neuter (das/ein) stay the same." },
-        { "type": "multiple-choice", "prompt": "Which sentence is grammatically correct?", "options": ["Er kauft einen Apfel.", "Er kauft ein Apfel.", "Er kauft der Apfel."], "correctIndex": 0, "explanation": "'Apfel' (apple) is masculine. As the direct object (accusative), the indefinite article ein→einen: 'Er kauft einen Apfel'." },
-        { "type": "fill-blank", "prompt": "Ich sehe ___ Frau. (I see the woman.) — definite, feminine", "acceptedAnswers": ["die"], "hint": "Feminine definite article — no change in accusative", "explanation": "Feminine 'die' stays 'die' in the accusative. 'Ich sehe die Frau.'" },
-        { "type": "multiple-choice", "prompt": "What is the accusative of 'das Buch' (the book)?", "options": ["das Buch (no change)", "den Buch", "dem Buch"], "correctIndex": 0, "explanation": "Neuter articles do not change in the accusative. 'das Buch' stays 'das Buch': Ich lese das Buch (I read the book)." },
-        { "type": "multiple-choice", "prompt": "Identify the accusative object in: 'Die Frau kauft einen Rock.'", "options": ["einen Rock (masc. acc.)", "Die Frau (nom. subject)", "Both are accusative"], "correctIndex": 0, "explanation": "'Die Frau' is the subject (nominative). 'einen Rock' (a skirt) is the direct object (accusative masculine: ein→einen)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "In German accusative case, which gender's article changes?",
+          "options": [
+            "All genders change",
+            "Only feminine changes",
+            "Only masculine (der→den, ein→einen)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Only masculine articles change in the accusative: der→den and ein→einen. Feminine (die/eine), neuter (das/ein), and plural (die) stay the same."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative form of 'der Mann'?",
+          "options": [
+            "dem Mann",
+            "den Mann",
+            "des Mannes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Masculine 'der' becomes 'den' in the accusative. 'Ich sehe den Mann' = I see the man."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich kaufe ___ Hund. (I buy a dog.) — Hund is masculine",
+          "acceptedAnswers": [
+            "einen"
+          ],
+          "hint": "Indefinite masculine accusative",
+          "explanation": "Masculine indefinite accusative: ein → einen. Ich kaufe einen Hund."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative of 'eine Frau' (a woman)?",
+          "options": [
+            "der Frau",
+            "einen Frau",
+            "eine Frau (no change)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Feminine articles do NOT change in the accusative. 'eine Frau' stays 'eine Frau' as a direct object."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun phrase to its accusative form:",
+          "pairs": [
+            {
+              "left": "der Hund (masc.)",
+              "right": "den Hund"
+            },
+            {
+              "left": "die Katze (fem.)",
+              "right": "die Katze (no change)"
+            },
+            {
+              "left": "das Buch (neut.)",
+              "right": "das Buch (no change)"
+            },
+            {
+              "left": "ein Mann (masc. indef.)",
+              "right": "einen Mann"
+            }
+          ],
+          "explanation": "Only masculine changes: der→den, ein→einen. Feminine (die/eine) and neuter (das/ein) stay the same."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is grammatically correct?",
+          "options": [
+            "Er kauft der Apfel.",
+            "Er kauft einen Apfel.",
+            "Er kauft ein Apfel."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Apfel' (apple) is masculine. As the direct object (accusative), the indefinite article ein→einen: 'Er kauft einen Apfel'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich sehe ___ Frau. (I see the woman.) — definite, feminine",
+          "acceptedAnswers": [
+            "die"
+          ],
+          "hint": "Feminine definite article — no change in accusative",
+          "explanation": "Feminine 'die' stays 'die' in the accusative. 'Ich sehe die Frau.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative of 'das Buch' (the book)?",
+          "options": [
+            "dem Buch",
+            "den Buch",
+            "das Buch (no change)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Neuter articles do not change in the accusative. 'das Buch' stays 'das Buch': Ich lese das Buch (I read the book)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Identify the accusative object in: 'Die Frau kauft einen Rock.'",
+          "options": [
+            "einen Rock (masc. acc.)",
+            "Die Frau (nom. subject)",
+            "Both are accusative"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Die Frau' is the subject (nominative). 'einen Rock' (a skirt) is the direct object (accusative masculine: ein→einen)."
+        }
       ]
     },
     {
@@ -66,16 +254,76 @@
       "explanation": "To determine the case of a noun, ask these questions: Who/what performs the action? → Nominative (subject). Who/what receives the action directly? → Accusative (direct object). In the sentence 'Der Hund beißt den Mann' (The dog bites the man): 'der Hund' is the subject (nominative — performing the biting), 'den Mann' is the direct object (accusative — receiving the bite). Note that 'den' (not 'der') signals 'Mann' is the object — this is how German signals meaning even when word order changes.",
       "tip": "Nominative asks: WHO is doing it? Accusative asks: WHAT/WHO is being acted upon? The 'den' signals the object.",
       "examples": [
-        { "de": "Der Hund beißt den Mann.", "en": "The dog bites the man. (Dog=nom., Man=acc.)", "highlight": "den Mann" },
-        { "de": "Den Mann beißt der Hund.", "en": "The man is bitten by the dog. (same meaning! Cases show roles)", "highlight": "Den Mann" },
-        { "de": "Ein Kind sieht eine Katze.", "en": "A child sees a cat. (beide: Kind=nom., Katze=acc. fem. — no change)", "highlight": "eine Katze" }
+        {
+          "de": "Der Hund beißt den Mann.",
+          "en": "The dog bites the man. (Dog=nom., Man=acc.)",
+          "highlight": "den Mann"
+        },
+        {
+          "de": "Den Mann beißt der Hund.",
+          "en": "The man is bitten by the dog. (same meaning! Cases show roles)",
+          "highlight": "Den Mann"
+        },
+        {
+          "de": "Ein Kind sieht eine Katze.",
+          "en": "A child sees a cat. (beide: Kind=nom., Katze=acc. fem. — no change)",
+          "highlight": "eine Katze"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "In 'Der Hund beißt den Mann', who is the subject?", "options": ["Der Hund (nominative)", "Den Mann (accusative)", "Both are subjects"], "correctIndex": 0, "explanation": "'Der Hund' (nominative) is the subject doing the biting. 'Den Mann' (accusative, masculine) is the object being bitten." },
-        { "type": "multiple-choice", "prompt": "Why can German say 'Den Mann beißt der Hund' and it still means the dog bites the man?", "options": ["Because the articles show the case — den (acc.) = object, der (nom.) = subject", "Because German word order is always fixed", "Because 'beißt' changes form"], "correctIndex": 0, "explanation": "German uses cases (articles/endings) to show who does what, not just word order. 'den' marks the man as the object regardless of where it appears." },
-        { "type": "fill-blank", "prompt": "Ich sehe ___ Lehrer. (I see the teacher.) — Lehrer is masculine", "acceptedAnswers": ["den"], "hint": "Masculine definite accusative", "explanation": "Masculine direct object: der→den. 'Ich sehe den Lehrer' = I see the teacher." },
-        { "type": "multiple-choice", "prompt": "Which article form signals 'direct object, masculine'?", "options": ["den / einen", "der / ein", "die / eine"], "correctIndex": 0, "explanation": "'den' (definite) and 'einen' (indefinite) both signal masculine accusative — i.e., a masculine direct object." },
-        { "type": "multiple-choice", "prompt": "Complete: 'Sie kauft ___ Rock und ___ Bluse.' (She buys a skirt and a blouse. Rock=masc., Bluse=fem.)", "options": ["einen Rock und eine Bluse", "ein Rock und eine Bluse", "ein Rock und ein Bluse"], "correctIndex": 0, "explanation": "Rock (masc.) → einen Rock (acc. indef. masc.). Bluse (fem.) → eine Bluse (acc. indef. fem. — no change). 'Sie kauft einen Rock und eine Bluse.'" }
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'Der Hund beißt den Mann', who is the subject?",
+          "options": [
+            "Der Hund (nominative)",
+            "Both are subjects",
+            "Den Mann (accusative)"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Der Hund' (nominative) is the subject doing the biting. 'Den Mann' (accusative, masculine) is the object being bitten."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can German say 'Den Mann beißt der Hund' and it still means the dog bites the man?",
+          "options": [
+            "Because German word order is always fixed",
+            "Because the articles show the case — den (acc.) = object, der (nom.) = subject",
+            "Because 'beißt' changes form"
+          ],
+          "correctIndex": 1,
+          "explanation": "German uses cases (articles/endings) to show who does what, not just word order. 'den' marks the man as the object regardless of where it appears."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich sehe ___ Lehrer. (I see the teacher.) — Lehrer is masculine",
+          "acceptedAnswers": [
+            "den"
+          ],
+          "hint": "Masculine definite accusative",
+          "explanation": "Masculine direct object: der→den. 'Ich sehe den Lehrer' = I see the teacher."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article form signals 'direct object, masculine'?",
+          "options": [
+            "den / einen",
+            "die / eine",
+            "der / ein"
+          ],
+          "correctIndex": 0,
+          "explanation": "'den' (definite) and 'einen' (indefinite) both signal masculine accusative — i.e., a masculine direct object."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 'Sie kauft ___ Rock und ___ Bluse.' (She buys a skirt and a blouse. Rock=masc., Bluse=fem.)",
+          "options": [
+            "ein Rock und eine Bluse",
+            "einen Rock und eine Bluse",
+            "ein Rock und ein Bluse"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rock (masc.) → einen Rock (acc. indef. masc.). Bluse (fem.) → eine Bluse (acc. indef. fem. — no change). 'Sie kauft einen Rock und eine Bluse.'"
+        }
       ]
     }
   ]

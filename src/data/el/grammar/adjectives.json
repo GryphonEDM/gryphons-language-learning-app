@@ -4,7 +4,9 @@
   "nameEl": "Επίθετα",
   "icon": "🌈",
   "tier": "A1",
-  "prerequisites": ["nouns-declension"],
+  "prerequisites": [
+    "nouns-declension"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,33 +15,69 @@
       "explanation": "Greek adjectives must agree with the noun they describe in gender, number, and case — they change their ending to match. The most common adjective pattern is -ος/-α/-ο (masculine/feminine/neuter). Masculine adjectives end in -ος, feminine in -η or -α, and neuter in -ο. For example, 'καλός' (good) becomes 'καλή' in the feminine and 'καλό' in the neuter. In a noun phrase, every word — article, adjective, and noun — carries the same gender: ο καλός φίλος (the good friend, masculine), η καλή φίλη (the good friend, feminine), το καλό παιδί (the good child, neuter). This agreement is essential in Greek and applies to all adjectives.",
       "tip": "Learn each adjective as a trio: καλός / καλή / καλό. The article tells you the gender: ο = masculine, η = feminine, το = neuter.",
       "examples": [
-        { "el": "ο καλός φίλος", "en": "the good friend (masculine)", "highlight": "καλός" },
-        { "el": "η καλή φίλη", "en": "the good friend (feminine)", "highlight": "καλή" },
-        { "el": "το καλό παιδί", "en": "the good child (neuter)", "highlight": "καλό" },
-        { "el": "ο μεγάλος σκύλος", "en": "the big dog (masculine)", "highlight": "μεγάλος" },
-        { "el": "η μεγάλη πόλη", "en": "the big city (feminine)", "highlight": "μεγάλη" },
-        { "el": "το μεγάλο σπίτι", "en": "the big house (neuter)", "highlight": "μεγάλο" }
+        {
+          "el": "ο καλός φίλος",
+          "en": "the good friend (masculine)",
+          "highlight": "καλός"
+        },
+        {
+          "el": "η καλή φίλη",
+          "en": "the good friend (feminine)",
+          "highlight": "καλή"
+        },
+        {
+          "el": "το καλό παιδί",
+          "en": "the good child (neuter)",
+          "highlight": "καλό"
+        },
+        {
+          "el": "ο μεγάλος σκύλος",
+          "en": "the big dog (masculine)",
+          "highlight": "μεγάλος"
+        },
+        {
+          "el": "η μεγάλη πόλη",
+          "en": "the big city (feminine)",
+          "highlight": "μεγάλη"
+        },
+        {
+          "el": "το μεγάλο σπίτι",
+          "en": "the big house (neuter)",
+          "highlight": "μεγάλο"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which form of 'καλός' (good) goes with 'το παιδί' (the child, neuter)?",
-          "options": ["καλό", "καλός", "καλή"],
-          "correctIndex": 0,
+          "options": [
+            "καλή",
+            "καλός",
+            "καλό"
+          ],
+          "correctIndex": 2,
           "explanation": "Neuter nouns use the neuter adjective form ending in -ο: το καλό παιδί. Masculine uses -ος, feminine uses -η."
         },
         {
           "type": "multiple-choice",
           "prompt": "Complete: 'η ___ γυναίκα' (the beautiful woman — use ωραίος)",
-          "options": ["ωραία", "ωραίος", "ωραίο"],
-          "correctIndex": 0,
+          "options": [
+            "ωραίο",
+            "ωραίος",
+            "ωραία"
+          ],
+          "correctIndex": 2,
           "explanation": "'γυναίκα' is feminine (η). The feminine form of ωραίος is ωραία: η ωραία γυναίκα."
         },
         {
           "type": "multiple-choice",
           "prompt": "How does a Greek adjective change when used with different nouns?",
-          "options": ["It changes ending to match the noun's gender, number, and case", "It always stays the same form", "It only changes for plural nouns"],
-          "correctIndex": 0,
+          "options": [
+            "It only changes for plural nouns",
+            "It changes ending to match the noun's gender, number, and case",
+            "It always stays the same form"
+          ],
+          "correctIndex": 1,
           "explanation": "Greek adjectives agree with the noun in gender (masculine/feminine/neuter), number (singular/plural), and case. A single adjective has multiple forms."
         }
       ]
@@ -50,33 +88,72 @@
       "explanation": "Here are ten of the most useful Greek adjectives, each given in its masculine dictionary form (-ος). Remember that the feminine changes to -η or -α and the neuter to -ο. μεγάλος (big), μικρός (small), καλός (good), κακός (bad), ωραίος (beautiful), νέος (young/new), παλιός (old), ακριβός (expensive), φθηνός (cheap), δυνατός (strong). Learn each with a sample sentence: ο καλός δάσκαλος (the good teacher), ο κακός καιρός (the bad weather), ένα μεγάλο σπίτι (a big house), ένα μικρό παιδί (a small child), ένας νέος φίλος (a new/young friend).",
       "tip": "Learn opposites together: μεγάλος/μικρός, καλός/κακός, ακριβός/φθηνός, νέος/παλιός, δυνατός/αδύνατος.",
       "examples": [
-        { "el": "ο μεγάλος καφές είναι ακριβός", "en": "the large coffee is expensive", "highlight": "μεγάλος, ακριβός" },
-        { "el": "ένα φθηνό εστιατόριο", "en": "a cheap restaurant (neuter)", "highlight": "φθηνό" },
-        { "el": "ο νέος δάσκαλος είναι καλός", "en": "the young teacher is good", "highlight": "νέος, καλός" },
-        { "el": "η παλιά εκκλησία είναι ωραία", "en": "the old church is beautiful", "highlight": "παλιά, ωραία" },
-        { "el": "ο δυνατός αέρας είναι κακός", "en": "the strong wind is bad", "highlight": "δυνατός, κακός" },
-        { "el": "το μικρό παιδί παίζει", "en": "the small child plays", "highlight": "μικρό" }
+        {
+          "el": "ο μεγάλος καφές είναι ακριβός",
+          "en": "the large coffee is expensive",
+          "highlight": "μεγάλος, ακριβός"
+        },
+        {
+          "el": "ένα φθηνό εστιατόριο",
+          "en": "a cheap restaurant (neuter)",
+          "highlight": "φθηνό"
+        },
+        {
+          "el": "ο νέος δάσκαλος είναι καλός",
+          "en": "the young teacher is good",
+          "highlight": "νέος, καλός"
+        },
+        {
+          "el": "η παλιά εκκλησία είναι ωραία",
+          "en": "the old church is beautiful",
+          "highlight": "παλιά, ωραία"
+        },
+        {
+          "el": "ο δυνατός αέρας είναι κακός",
+          "en": "the strong wind is bad",
+          "highlight": "δυνατός, κακός"
+        },
+        {
+          "el": "το μικρό παιδί παίζει",
+          "en": "the small child plays",
+          "highlight": "μικρό"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does 'ακριβός' mean?",
-          "options": ["expensive", "cheap", "strong", "old"],
-          "correctIndex": 0,
+          "options": [
+            "old",
+            "strong",
+            "cheap",
+            "expensive"
+          ],
+          "correctIndex": 3,
           "explanation": "'ακριβός' means expensive. Its opposite is 'φθηνός' (cheap)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the opposite of 'μεγάλος' (big)?",
-          "options": ["μικρός", "κακός", "παλιός", "φθηνός"],
-          "correctIndex": 0,
+          "options": [
+            "παλιός",
+            "φθηνός",
+            "μικρός",
+            "κακός"
+          ],
+          "correctIndex": 2,
           "explanation": "'μικρός' means small — the direct opposite of μεγάλος (big)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which adjective means 'beautiful'?",
-          "options": ["ωραίος", "δυνατός", "νέος", "καλός"],
-          "correctIndex": 0,
+          "options": [
+            "δυνατός",
+            "καλός",
+            "νέος",
+            "ωραίος"
+          ],
+          "correctIndex": 3,
           "explanation": "'ωραίος/ωραία/ωραίο' means beautiful or nice-looking. 'καλός' means good, 'δυνατός' strong, 'νέος' young/new."
         }
       ]
@@ -87,32 +164,68 @@
       "explanation": "In Greek, adjectives normally come BEFORE the noun, just like in English: ο καλός δάσκαλος (the good teacher), η μεγάλη πόλη (the big city). The article is repeated or placed between the adjective and the noun: ο δάσκαλος ο καλός (a more emphatic or literary word order also exists). Adjectives can also be used predicatively — after the verb 'to be' (είναι): ο δάσκαλος είναι καλός (the teacher is good), η πόλη είναι μεγάλη (the city is big). In the predicate position, the adjective still agrees in gender and number with the subject. To form comparatives in Greek, simply place 'πιο' (more) before the adjective: πιο μεγάλος (bigger), πιο ακριβός (more expensive), πιο ωραία (more beautiful). The superlative adds the definite article: ο πιο μεγάλος (the biggest).",
       "tip": "Adjective before noun = attributive (ο καλός φίλος). Adjective after είναι = predicate (ο φίλος είναι καλός). Comparative = πιο + adjective.",
       "examples": [
-        { "el": "ο καλός δάσκαλος εξηγεί", "en": "the good teacher explains (attributive — adjective before noun)", "highlight": "καλός" },
-        { "el": "ο δάσκαλος είναι καλός", "en": "the teacher is good (predicate — adjective after είναι)", "highlight": "είναι καλός" },
-        { "el": "η πόλη είναι μεγάλη", "en": "the city is big (predicate adjective agrees with feminine subject)", "highlight": "μεγάλη" },
-        { "el": "αυτό το εστιατόριο είναι πιο φθηνό", "en": "this restaurant is cheaper (comparative with πιο)", "highlight": "πιο φθηνό" },
-        { "el": "η Αθήνα είναι η πιο μεγάλη πόλη", "en": "Athens is the biggest city (superlative with article + πιο)", "highlight": "η πιο μεγάλη" },
-        { "el": "θέλω ένα πιο φθηνό δωμάτιο", "en": "I want a cheaper room", "highlight": "πιο φθηνό" }
+        {
+          "el": "ο καλός δάσκαλος εξηγεί",
+          "en": "the good teacher explains (attributive — adjective before noun)",
+          "highlight": "καλός"
+        },
+        {
+          "el": "ο δάσκαλος είναι καλός",
+          "en": "the teacher is good (predicate — adjective after είναι)",
+          "highlight": "είναι καλός"
+        },
+        {
+          "el": "η πόλη είναι μεγάλη",
+          "en": "the city is big (predicate adjective agrees with feminine subject)",
+          "highlight": "μεγάλη"
+        },
+        {
+          "el": "αυτό το εστιατόριο είναι πιο φθηνό",
+          "en": "this restaurant is cheaper (comparative with πιο)",
+          "highlight": "πιο φθηνό"
+        },
+        {
+          "el": "η Αθήνα είναι η πιο μεγάλη πόλη",
+          "en": "Athens is the biggest city (superlative with article + πιο)",
+          "highlight": "η πιο μεγάλη"
+        },
+        {
+          "el": "θέλω ένα πιο φθηνό δωμάτιο",
+          "en": "I want a cheaper room",
+          "highlight": "πιο φθηνό"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Where does a Greek attributive adjective normally appear?",
-          "options": ["Before the noun", "After the noun", "After the verb"],
-          "correctIndex": 0,
+          "options": [
+            "After the verb",
+            "Before the noun",
+            "After the noun"
+          ],
+          "correctIndex": 1,
           "explanation": "Greek adjectives normally precede the noun, like in English: ο καλός φίλος (the good friend), η μεγάλη πόλη (the big city)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you form the comparative 'more expensive' in Greek?",
-          "options": ["πιο ακριβός", "ακριβότερος", "ακριβός πολύ"],
+          "options": [
+            "πιο ακριβός",
+            "ακριβός πολύ",
+            "ακριβότερος"
+          ],
           "correctIndex": 0,
           "explanation": "The most common comparative in Modern Greek uses 'πιο' + adjective: πιο ακριβός (more expensive), πιο μεγάλος (bigger)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses a predicate adjective correctly?",
-          "options": ["Το βιβλίο είναι ωραίο.", "Το ωραίο είναι βιβλίο.", "Ωραίο το είναι βιβλίο."],
+          "options": [
+            "Το βιβλίο είναι ωραίο.",
+            "Ωραίο το είναι βιβλίο.",
+            "Το ωραίο είναι βιβλίο."
+          ],
           "correctIndex": 0,
           "explanation": "In the predicate use, the adjective follows the verb 'είναι' and agrees with the subject: Το βιβλίο είναι ωραίο — neuter subject, neuter adjective form ωραίο."
         }

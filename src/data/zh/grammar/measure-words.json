@@ -4,7 +4,9 @@
   "nameZh": "量词",
   "icon": "📏",
   "tier": "A1",
-  "prerequisites": ["basic-sentence-structure"],
+  "prerequisites": [
+    "basic-sentence-structure"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +15,62 @@
       "explanation": "In Chinese, you cannot place a number directly before a noun. You must insert a measure word (also called a classifier) between the number and the noun. The pattern is: Number + Measure Word + Noun. The most universal measure word is 个 (gè), which can be used as a default when you don't know the specific classifier for a noun.",
       "tip": "When in doubt, use 个. Native speakers will understand you even if the measure word isn't the most precise one. Think of 个 as a safe fallback while you learn the others.",
       "examples": [
-        { "zh": "一个人", "en": "one person", "highlight": "个" },
-        { "zh": "两个苹果", "en": "two apples", "highlight": "个" },
-        { "zh": "三个朋友", "en": "three friends", "highlight": "个" },
-        { "zh": "五个学生", "en": "five students", "highlight": "个" }
+        {
+          "zh": "一个人",
+          "en": "one person",
+          "highlight": "个"
+        },
+        {
+          "zh": "两个苹果",
+          "en": "two apples",
+          "highlight": "个"
+        },
+        {
+          "zh": "三个朋友",
+          "en": "three friends",
+          "highlight": "个"
+        },
+        {
+          "zh": "五个学生",
+          "en": "five students",
+          "highlight": "个"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'two people' in Chinese?",
-          "options": ["两人", "两个人", "二人个", "个两人"],
-          "correctIndex": 1,
+          "options": [
+            "两个人",
+            "两人",
+            "二人个",
+            "个两人"
+          ],
+          "correctIndex": 0,
           "explanation": "The correct pattern is Number + Measure Word + Noun: 两个人. You cannot put a number directly before the noun without a measure word."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the universal measure word that works with most nouns?",
-          "options": ["只", "本", "个", "条"],
+          "options": [
+            "只",
+            "条",
+            "个",
+            "本"
+          ],
           "correctIndex": 2,
           "explanation": "个 (gè) is the universal, default measure word. While other measure words are more specific, 个 can be used with most nouns."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct word order for 'four apples'?",
-          "options": ["苹果四个", "四个苹果", "个四苹果", "四苹果个"],
-          "correctIndex": 1,
+          "options": [
+            "四个苹果",
+            "苹果四个",
+            "个四苹果",
+            "四苹果个"
+          ],
+          "correctIndex": 0,
           "explanation": "The correct order is Number (四) + Measure Word (个) + Noun (苹果): 四个苹果."
         }
       ]
@@ -48,31 +81,62 @@
       "explanation": "Different categories of nouns use different measure words. 本 (běn) is used for books and bound volumes. 只 (zhī) is used for most animals. 条 (tiáo) is used for long, thin objects like roads, rivers, fish, and trousers. 张 (zhāng) is used for flat objects like paper, tables, tickets, and photos. 件 (jiàn) is used for clothing items, luggage, and matters/affairs. 杯 (bēi) is used for cups or glasses of drinks.",
       "tip": "Try to learn each measure word together with its most common noun. For example, memorize 一本书 as a unit rather than learning 本 in isolation.",
       "examples": [
-        { "zh": "三本书", "en": "three books", "highlight": "本" },
-        { "zh": "两只猫", "en": "two cats", "highlight": "只" },
-        { "zh": "一条鱼", "en": "one fish", "highlight": "条" },
-        { "zh": "一张桌子", "en": "one table", "highlight": "张" }
+        {
+          "zh": "三本书",
+          "en": "three books",
+          "highlight": "本"
+        },
+        {
+          "zh": "两只猫",
+          "en": "two cats",
+          "highlight": "只"
+        },
+        {
+          "zh": "一条鱼",
+          "en": "one fish",
+          "highlight": "条"
+        },
+        {
+          "zh": "一张桌子",
+          "en": "one table",
+          "highlight": "张"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which measure word is correct for 'one book' (一___书)?",
-          "options": ["只", "条", "本", "张"],
-          "correctIndex": 2,
+          "options": [
+            "本",
+            "条",
+            "只",
+            "张"
+          ],
+          "correctIndex": 0,
           "explanation": "本 (běn) is the measure word for books and bound volumes: 一本书."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'two cats'?",
-          "options": ["两条猫", "两本猫", "两张猫", "两只猫"],
-          "correctIndex": 3,
+          "options": [
+            "两只猫",
+            "两条猫",
+            "两张猫",
+            "两本猫"
+          ],
+          "correctIndex": 0,
           "explanation": "只 (zhī) is the measure word for most animals: 两只猫."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which measure word would you use for a cup of coffee (一___咖啡)?",
-          "options": ["件", "杯", "张", "条"],
-          "correctIndex": 1,
+          "options": [
+            "杯",
+            "件",
+            "条",
+            "张"
+          ],
+          "correctIndex": 0,
           "explanation": "杯 (bēi) means 'cup/glass' and is the measure word for drinks: 一杯咖啡."
         }
       ]
@@ -83,31 +147,62 @@
       "explanation": "The demonstratives 这 (zhè, 'this') and 那 (nà, 'that') also require a measure word before the noun, just like numbers do. The pattern is: 这/那 + Measure Word + Noun. For example, 'this book' is 这本书, not 这书. When using the universal 个, native speakers often contract 这个 into a single syllable zhèi and 那个 into nèi in casual speech.",
       "tip": "Think of 这 and 那 as behaving exactly like the number 一 — they always need a measure word before the noun. If you can say 一本书, then 'this book' is 这本书.",
       "examples": [
-        { "zh": "这个人", "en": "this person", "highlight": "这个" },
-        { "zh": "那本书", "en": "that book", "highlight": "那本" },
-        { "zh": "这只猫很可爱", "en": "this cat is very cute", "highlight": "这只" },
-        { "zh": "那条路很长", "en": "that road is very long", "highlight": "那条" }
+        {
+          "zh": "这个人",
+          "en": "this person",
+          "highlight": "这个"
+        },
+        {
+          "zh": "那本书",
+          "en": "that book",
+          "highlight": "那本"
+        },
+        {
+          "zh": "这只猫很可爱",
+          "en": "this cat is very cute",
+          "highlight": "这只"
+        },
+        {
+          "zh": "那条路很长",
+          "en": "that road is very long",
+          "highlight": "那条"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'this book'?",
-          "options": ["这书", "这本书", "本这书", "这的书"],
+          "options": [
+            "这书",
+            "这本书",
+            "本这书",
+            "这的书"
+          ],
           "correctIndex": 1,
           "explanation": "Demonstratives require a measure word: 这 + 本 + 书 = 这本书."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct for 'that cat'?",
-          "options": ["那个猫", "猫那只", "那只猫", "只那猫"],
+          "options": [
+            "只那猫",
+            "猫那只",
+            "那只猫",
+            "那个猫"
+          ],
           "correctIndex": 2,
           "explanation": "那只猫 is the most natural choice. 只 is the specific measure word for animals, used with the demonstrative 那."
         },
         {
           "type": "multiple-choice",
           "prompt": "Fill in the blank: ___张票是你的 (this ticket is yours).",
-          "options": ["那", "这", "一", "两"],
-          "correctIndex": 1,
+          "options": [
+            "这",
+            "一",
+            "那",
+            "两"
+          ],
+          "correctIndex": 0,
           "explanation": "这 (zhè) means 'this'. Combined with 张 (the measure word for flat objects like tickets): 这张票是你的."
         }
       ]
@@ -118,31 +213,62 @@
       "explanation": "Some measure words describe how items are grouped or packaged. 双 (shuāng) is used for pairs of items that come in twos, like shoes, chopsticks, and hands. 套 (tào) is used for sets or suites of things, like a set of books, a suit of clothes, or an apartment. 块 (kuài) is used for pieces or chunks, and is also the colloquial word for the basic unit of Chinese currency (yuan). 瓶 (píng) is used for bottles of liquid.",
       "tip": "块 does double duty: it measures chunks of things (一块蛋糕, a piece of cake) and is the everyday word for yuan in money (十块钱, ten yuan). You'll hear 块钱 far more often than 元 in daily conversation.",
       "examples": [
-        { "zh": "一双鞋", "en": "a pair of shoes", "highlight": "双" },
-        { "zh": "一套房子", "en": "an apartment (a set/suite)", "highlight": "套" },
-        { "zh": "五块钱", "en": "five yuan (five bucks)", "highlight": "块" },
-        { "zh": "两瓶水", "en": "two bottles of water", "highlight": "瓶" }
+        {
+          "zh": "一双鞋",
+          "en": "a pair of shoes",
+          "highlight": "双"
+        },
+        {
+          "zh": "一套房子",
+          "en": "an apartment (a set/suite)",
+          "highlight": "套"
+        },
+        {
+          "zh": "五块钱",
+          "en": "five yuan (five bucks)",
+          "highlight": "块"
+        },
+        {
+          "zh": "两瓶水",
+          "en": "two bottles of water",
+          "highlight": "瓶"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a pair of chopsticks'?",
-          "options": ["一条筷子", "一双筷子", "一只筷子", "一个筷子"],
-          "correctIndex": 1,
+          "options": [
+            "一个筷子",
+            "一只筷子",
+            "一双筷子",
+            "一条筷子"
+          ],
+          "correctIndex": 2,
           "explanation": "双 (shuāng) is the measure word for pairs: 一双筷子 (a pair of chopsticks)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How would you say 'three bottles of beer'?",
-          "options": ["三杯啤酒", "三个啤酒", "三瓶啤酒", "三条啤酒"],
-          "correctIndex": 2,
+          "options": [
+            "三杯啤酒",
+            "三条啤酒",
+            "三个啤酒",
+            "三瓶啤酒"
+          ],
+          "correctIndex": 3,
           "explanation": "瓶 (píng) is the measure word for bottles: 三瓶啤酒. Note that 杯 (cups) would also be grammatically correct but refers to glasses of beer, not bottles."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 十块钱 mean?",
-          "options": ["ten pieces of money", "ten yuan", "ten coins", "ten dollars"],
-          "correctIndex": 1,
+          "options": [
+            "ten pieces of money",
+            "ten dollars",
+            "ten coins",
+            "ten yuan"
+          ],
+          "correctIndex": 3,
           "explanation": "块 (kuài) is the colloquial measure word for yuan, the basic unit of Chinese currency. 十块钱 means 'ten yuan'."
         }
       ]

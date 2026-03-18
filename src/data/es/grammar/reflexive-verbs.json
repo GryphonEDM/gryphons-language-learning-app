@@ -4,7 +4,10 @@
   "nameEs": "Verbos Reflexivos",
   "icon": "🪞",
   "tier": "A2",
-  "prerequisites": ["present-tense", "pronouns"],
+  "prerequisites": [
+    "present-tense",
+    "pronouns"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,68 +16,123 @@
       "explanation": "Reflexive verbs describe actions a subject performs on themselves. They are identified by the pronoun 'se' attached to the infinitive (e.g., lavarse — to wash oneself). When conjugating, the 'se' becomes a reflexive pronoun that matches the subject: me (yo), te (tú), se (él/ella/usted), nos (nosotros), os (vosotros), se (ellos/ellas/ustedes). The pronoun is placed directly before the conjugated verb: Yo me lavo. Tú te lavas. Él se lava. Nosotros nos lavamos. Vosotros os laváis. Ellos se lavan. With infinitives and gerunds, the pronoun may also be attached to the end: Voy a lavarme. / Estoy lavándome.",
       "tip": "The reflexive pronoun must always agree with the subject. A quick memory trick: think of the pronoun as a mirror — it reflects the action back to the person doing it. Me, te, se, nos, os, se.",
       "examples": [
-        { "es": "Yo me lavo las manos.", "en": "I wash my hands.", "highlight": "me" },
-        { "es": "Tú te peinas el cabello.", "en": "You comb your hair.", "highlight": "te" },
-        { "es": "Ella se mira en el espejo.", "en": "She looks at herself in the mirror.", "highlight": "se" },
-        { "es": "Nosotros nos preparamos para salir.", "en": "We get ourselves ready to go out.", "highlight": "nos" },
-        { "es": "Vosotros os divertís mucho.", "en": "You all enjoy yourselves a lot.", "highlight": "os" },
-        { "es": "Ellos se conocen muy bien.", "en": "They know each other very well.", "highlight": "se" }
+        {
+          "es": "Yo me lavo las manos.",
+          "en": "I wash my hands.",
+          "highlight": "me"
+        },
+        {
+          "es": "Tú te peinas el cabello.",
+          "en": "You comb your hair.",
+          "highlight": "te"
+        },
+        {
+          "es": "Ella se mira en el espejo.",
+          "en": "She looks at herself in the mirror.",
+          "highlight": "se"
+        },
+        {
+          "es": "Nosotros nos preparamos para salir.",
+          "en": "We get ourselves ready to go out.",
+          "highlight": "nos"
+        },
+        {
+          "es": "Vosotros os divertís mucho.",
+          "en": "You all enjoy yourselves a lot.",
+          "highlight": "os"
+        },
+        {
+          "es": "Ellos se conocen muy bien.",
+          "en": "They know each other very well.",
+          "highlight": "se"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which reflexive pronoun goes with 'yo'?",
-          "options": ["me", "te", "se", "nos"],
-          "correctIndex": 0,
+          "options": [
+            "se",
+            "te",
+            "nos",
+            "me"
+          ],
+          "correctIndex": 3,
           "explanation": "The reflexive pronoun for yo is 'me'. Yo me lavo = I wash myself."
         },
         {
           "type": "fill-blank",
           "prompt": "Tú ___ lavas las manos. (You wash your hands.)",
-          "acceptedAnswers": ["te"],
+          "acceptedAnswers": [
+            "te"
+          ],
           "hint": "The reflexive pronoun for tú is one letter: t_",
           "explanation": "The reflexive pronoun for tú is 'te'. Tú te lavas las manos."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which reflexive pronoun goes with 'nosotros'?",
-          "options": ["nos", "os", "se", "me"],
+          "options": [
+            "nos",
+            "me",
+            "os",
+            "se"
+          ],
           "correctIndex": 0,
           "explanation": "The reflexive pronoun for nosotros is 'nos'. Nosotros nos lavamos = We wash ourselves."
         },
         {
           "type": "fill-blank",
           "prompt": "Ellos ___ preparan para la fiesta. (They get ready for the party.)",
-          "acceptedAnswers": ["se"],
+          "acceptedAnswers": [
+            "se"
+          ],
           "hint": "The reflexive pronoun for ellos/ellas is the same as for él/ella",
           "explanation": "Both él/ella and ellos/ellas use 'se' as their reflexive pronoun."
         },
         {
           "type": "multiple-choice",
           "prompt": "Where does the reflexive pronoun go with a conjugated verb?",
-          "options": ["Before the conjugated verb", "After the conjugated verb", "At the end of the sentence", "It doesn't matter"],
-          "correctIndex": 0,
+          "options": [
+            "After the conjugated verb",
+            "It doesn't matter",
+            "At the end of the sentence",
+            "Before the conjugated verb"
+          ],
+          "correctIndex": 3,
           "explanation": "With a conjugated verb the reflexive pronoun comes directly before it: Yo me lavo (not Yo lavo me)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is correct?",
-          "options": ["Ella se peina.", "Ella peina se.", "Se ella peina.", "Ella peinas se."],
-          "correctIndex": 0,
+          "options": [
+            "Ella peina se.",
+            "Ella se peina.",
+            "Se ella peina.",
+            "Ella peinas se."
+          ],
+          "correctIndex": 1,
           "explanation": "The reflexive pronoun 'se' goes directly before the conjugated verb: Ella se peina."
         },
         {
           "type": "fill-blank",
           "prompt": "Vosotros ___ divertís en la playa. (You all enjoy yourselves at the beach.)",
-          "acceptedAnswers": ["os"],
+          "acceptedAnswers": [
+            "os"
+          ],
           "hint": "The reflexive pronoun for vosotros is 'os'",
           "explanation": "The reflexive pronoun for vosotros is 'os'. Vosotros os divertís en la playa."
         },
         {
           "type": "multiple-choice",
           "prompt": "How can the reflexive pronoun be placed with an infinitive?",
-          "options": ["Attached to the end of the infinitive", "Only before the infinitive", "Before the auxiliary verb only", "Reflexive pronouns cannot be used with infinitives"],
-          "correctIndex": 0,
+          "options": [
+            "Reflexive pronouns cannot be used with infinitives",
+            "Only before the infinitive",
+            "Before the auxiliary verb only",
+            "Attached to the end of the infinitive"
+          ],
+          "correctIndex": 3,
           "explanation": "With infinitives the pronoun can be attached to the end (lavarse, peinarse) or placed before the auxiliary verb: Me voy a lavar / Voy a lavarme. Both are correct."
         }
       ]
@@ -85,53 +143,98 @@
       "explanation": "Many daily routine actions in Spanish are expressed with reflexive verbs. The most common ones are: despertarse (to wake up), levantarse (to get up), ducharse (to shower), lavarse (to wash oneself), peinarse (to comb one's hair), vestirse (to get dressed), and acostarse (to go to bed / to lie down). Note that several of these are stem-changing: despertarse (e→ie): me despierto, te despiertas, se despierta, nos despertamos, os despertáis, se despiertan. Vestirse (e→i): me visto, te vistes, se viste, nos vestimos, os vestís, se visten. Acostarse (o→ue): me acuesto, te acuestas, se acuesta, nos acostamos, os acostáis, se acuestan. Ducharse and levantarse are regular.",
       "tip": "Remember that stem changes do NOT occur in the nosotros and vosotros forms — these are called the 'boot verbs' because if you draw a box around the forms that change, it looks like a boot (all except nosotros and vosotros).",
       "examples": [
-        { "es": "Me despierto a las siete de la mañana.", "en": "I wake up at seven in the morning.", "highlight": "despierto" },
-        { "es": "Él se levanta tarde los fines de semana.", "en": "He gets up late on weekends.", "highlight": "levanta" },
-        { "es": "Nosotros nos duchamos después del gimnasio.", "en": "We shower after the gym.", "highlight": "duchamos" },
-        { "es": "Tú te vistes muy elegante.", "en": "You dress very elegantly.", "highlight": "vistes" },
-        { "es": "Los niños se acuestan a las nueve.", "en": "The children go to bed at nine.", "highlight": "acuestan" },
-        { "es": "Ella se peina frente al espejo.", "en": "She combs her hair in front of the mirror.", "highlight": "peina" }
+        {
+          "es": "Me despierto a las siete de la mañana.",
+          "en": "I wake up at seven in the morning.",
+          "highlight": "despierto"
+        },
+        {
+          "es": "Él se levanta tarde los fines de semana.",
+          "en": "He gets up late on weekends.",
+          "highlight": "levanta"
+        },
+        {
+          "es": "Nosotros nos duchamos después del gimnasio.",
+          "en": "We shower after the gym.",
+          "highlight": "duchamos"
+        },
+        {
+          "es": "Tú te vistes muy elegante.",
+          "en": "You dress very elegantly.",
+          "highlight": "vistes"
+        },
+        {
+          "es": "Los niños se acuestan a las nueve.",
+          "en": "The children go to bed at nine.",
+          "highlight": "acuestan"
+        },
+        {
+          "es": "Ella se peina frente al espejo.",
+          "en": "She combs her hair in front of the mirror.",
+          "highlight": "peina"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I wake up at 7 a.m.' in Spanish?",
-          "options": ["Me despierto a las 7.", "Me desperto a las 7.", "Yo despierto a las 7.", "Me despiertos a las 7."],
-          "correctIndex": 0,
+          "options": [
+            "Me desperto a las 7.",
+            "Me despierto a las 7.",
+            "Yo despierto a las 7.",
+            "Me despiertos a las 7."
+          ],
+          "correctIndex": 1,
           "explanation": "Despertarse (e→ie) conjugates as me despierto for yo. The stem changes e→ie in all forms except nosotros/vosotros."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella se ___ (duchar) todos los días. (She showers every day.)",
-          "acceptedAnswers": ["ducha"],
+          "acceptedAnswers": [
+            "ducha"
+          ],
           "hint": "Ducharse is a regular -AR reflexive verb; she = ella → third person singular",
           "explanation": "Ducharse is regular: duc h + a = ducha. Ella se ducha todos los días."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct nosotros form of 'acostarse'?",
-          "options": ["nos acostamos", "nos acostemos", "nos acuestamos", "nos acuestan"],
-          "correctIndex": 0,
+          "options": [
+            "nos acuestan",
+            "nos acuestamos",
+            "nos acostemos",
+            "nos acostamos"
+          ],
+          "correctIndex": 3,
           "explanation": "Stem-changing verbs do NOT change in nosotros. Acostarse (o→ue) → nosotros nos acostamos (no stem change)."
         },
         {
           "type": "fill-blank",
           "prompt": "Yo me ___ (vestir) antes del desayuno. (I get dressed before breakfast.)",
-          "acceptedAnswers": ["visto"],
+          "acceptedAnswers": [
+            "visto"
+          ],
           "hint": "Vestirse is an e→i stem-changing verb; yo form has stem change",
           "explanation": "Vestirse (e→i): yo me visto. The stem changes from vest- to vist- in the yo form."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'The children go to bed at 9' in Spanish?",
-          "options": ["Los niños se acuestan a las 9.", "Los niños se acostean a las 9.", "Los niños acuestan a las 9.", "Los niños se acostan a las 9."],
+          "options": [
+            "Los niños se acuestan a las 9.",
+            "Los niños acuestan a las 9.",
+            "Los niños se acostean a las 9.",
+            "Los niños se acostan a las 9."
+          ],
           "correctIndex": 0,
           "explanation": "Acostarse (o→ue): ellos se acuestan. The o→ue stem change applies to ellos. 'Acostean' and 'acostan' are not valid forms."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros nos ___ (levantar) a las seis. (We get up at six.)",
-          "acceptedAnswers": ["levantamos"],
+          "acceptedAnswers": [
+            "levantamos"
+          ],
           "hint": "Levantarse is regular; nosotros ending for -AR verbs is -amos",
           "explanation": "Levantarse is regular: levant + amos = levantamos. Nosotros nos levantamos a las seis."
         },
@@ -139,18 +242,20 @@
           "type": "multiple-choice",
           "prompt": "Put the daily routine in the most logical order:",
           "options": [
-            "despertarse → levantarse → ducharse → vestirse → acostarse",
-            "levantarse → acostarse → vestirse → ducharse → despertarse",
+            "acostarse → vestirse → despertarse → levantarse → ducharse",
             "vestirse → ducharse → despertarse → levantarse → acostarse",
-            "acostarse → vestirse → despertarse → levantarse → ducharse"
+            "despertarse → levantarse → ducharse → vestirse → acostarse",
+            "levantarse → acostarse → vestirse → ducharse → despertarse"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "A typical daily sequence: wake up (despertarse) → get up (levantarse) → shower (ducharse) → get dressed (vestirse) → go to bed (acostarse)."
         },
         {
           "type": "fill-blank",
           "prompt": "Tú te ___ (despertar) cuando suena el despertador. (You wake up when the alarm goes off.)",
-          "acceptedAnswers": ["despiertas"],
+          "acceptedAnswers": [
+            "despiertas"
+          ],
           "hint": "Despertarse is e→ie; tú ending is -as, but the stem changes",
           "explanation": "Despertarse (e→ie): tú te despiertas. The e in the stem changes to ie: despert- → despiert-."
         }
@@ -162,51 +267,91 @@
       "explanation": "Some Spanish verbs have a completely different meaning when used reflexively. Understanding these pairs is essential for avoiding confusion. Key pairs: ir (to go) → irse (to leave, to go away): Voy al mercado. (I'm going to the market.) vs. Me voy. (I'm leaving.) dormir (to sleep) → dormirse (to fall asleep): El bebé duerme. (The baby sleeps.) vs. El bebé se duerme. (The baby falls asleep.) llamar (to call) → llamarse (to be named): Te llamo mañana. (I'll call you tomorrow.) vs. Me llamo Ana. (My name is Ana / I am called Ana.) Other important pairs: poner (to put) → ponerse (to put on clothing / to become): Pongo el libro. vs. Me pongo el abrigo. / Me pongo nervioso. quitar (to remove) → quitarse (to take off clothing): Quita el plato. vs. Me quito los zapatos.",
       "tip": "When you see llamarse, the literal meaning is 'to call oneself'. So '¿Cómo te llamas?' literally means 'What do you call yourself?' — a great way to remember that llamarse = to be named.",
       "examples": [
-        { "es": "¿Cómo te llamas?", "en": "What is your name? (lit. What do you call yourself?)", "highlight": "llamas" },
-        { "es": "Me llamo Carlos.", "en": "My name is Carlos.", "highlight": "llamo" },
-        { "es": "Me voy ahora mismo.", "en": "I'm leaving right now.", "highlight": "voy" },
-        { "es": "El niño se duerme en el sofá.", "en": "The child falls asleep on the sofa.", "highlight": "duerme" },
-        { "es": "Me pongo el abrigo porque hace frío.", "en": "I put on my coat because it's cold.", "highlight": "pongo" },
-        { "es": "Me quito los zapatos al entrar.", "en": "I take off my shoes when entering.", "highlight": "quito" }
+        {
+          "es": "¿Cómo te llamas?",
+          "en": "What is your name? (lit. What do you call yourself?)",
+          "highlight": "llamas"
+        },
+        {
+          "es": "Me llamo Carlos.",
+          "en": "My name is Carlos.",
+          "highlight": "llamo"
+        },
+        {
+          "es": "Me voy ahora mismo.",
+          "en": "I'm leaving right now.",
+          "highlight": "voy"
+        },
+        {
+          "es": "El niño se duerme en el sofá.",
+          "en": "The child falls asleep on the sofa.",
+          "highlight": "duerme"
+        },
+        {
+          "es": "Me pongo el abrigo porque hace frío.",
+          "en": "I put on my coat because it's cold.",
+          "highlight": "pongo"
+        },
+        {
+          "es": "Me quito los zapatos al entrar.",
+          "en": "I take off my shoes when entering.",
+          "highlight": "quito"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does 'Me llamo Pedro' mean?",
-          "options": ["My name is Pedro.", "I call Pedro.", "Pedro calls me.", "I am calling Pedro."],
-          "correctIndex": 0,
+          "options": [
+            "I call Pedro.",
+            "Pedro calls me.",
+            "My name is Pedro.",
+            "I am calling Pedro."
+          ],
+          "correctIndex": 2,
           "explanation": "Llamarse means 'to be named / to call oneself'. Me llamo Pedro = My name is Pedro (literally: I call myself Pedro)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between 'El bebé duerme' and 'El bebé se duerme'?",
           "options": [
-            "'duerme' = the baby sleeps; 'se duerme' = the baby falls asleep",
+            "'se duerme' is incorrect Spanish",
             "There is no difference",
             "'duerme' = the baby falls asleep; 'se duerme' = the baby sleeps",
-            "'se duerme' is incorrect Spanish"
+            "'duerme' = the baby sleeps; 'se duerme' = the baby falls asleep"
           ],
-          "correctIndex": 0,
+          "correctIndex": 3,
           "explanation": "Dormir = to sleep (a state). Dormirse = to fall asleep (a change of state / process). El bebé duerme = The baby is sleeping. El bebé se duerme = The baby is falling asleep."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella ___ ___ temprano porque tiene trabajo. (She leaves early because she has work.) [Use irse]",
-          "acceptedAnswers": ["se va", "se va temprano"],
+          "acceptedAnswers": [
+            "se va",
+            "se va temprano"
+          ],
           "hint": "Irse in the ella form: the reflexive pronoun is 'se' and ir conjugates to 'va'",
           "explanation": "Irse (to leave/go away): ella se va. Ir conjugates irregularly: voy, vas, va, vamos, vais, van."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence means 'I put on my jacket'?",
-          "options": ["Me pongo la chaqueta.", "Pongo la chaqueta.", "Me quito la chaqueta.", "Se pone la chaqueta."],
+          "options": [
+            "Me pongo la chaqueta.",
+            "Pongo la chaqueta.",
+            "Se pone la chaqueta.",
+            "Me quito la chaqueta."
+          ],
           "correctIndex": 0,
           "explanation": "Ponerse = to put on (clothing). Me pongo la chaqueta = I put on my jacket. 'Pongo la chaqueta' means I put the jacket (somewhere), not on myself."
         },
         {
           "type": "fill-blank",
           "prompt": "¿Cómo ___ ___ (llamarse) tu profesora? (What is your teacher's name?)",
-          "acceptedAnswers": ["se llama", "se llama tu profesora"],
+          "acceptedAnswers": [
+            "se llama",
+            "se llama tu profesora"
+          ],
           "hint": "Llamarse for ella/él/usted: reflexive pronoun 'se' + llama",
           "explanation": "Llamarse (to be named): ella se llama. ¿Cómo se llama tu profesora? = What is your teacher's name?"
         },
@@ -214,18 +359,20 @@
           "type": "multiple-choice",
           "prompt": "What does 'Voy al banco' mean, and how is it different from 'Me voy'?",
           "options": [
-            "'Voy al banco' = I'm going to the bank; 'Me voy' = I'm leaving",
-            "'Voy al banco' = I'm leaving the bank; 'Me voy' = I'm going somewhere",
             "They mean the same thing",
-            "'Me voy' is not a real expression"
+            "'Voy al banco' = I'm leaving the bank; 'Me voy' = I'm going somewhere",
+            "'Me voy' is not a real expression",
+            "'Voy al banco' = I'm going to the bank; 'Me voy' = I'm leaving"
           ],
-          "correctIndex": 0,
+          "correctIndex": 3,
           "explanation": "Ir = to go (toward a destination). Irse = to leave, to go away. Voy al banco specifies a destination; Me voy just means I'm heading out / leaving."
         },
         {
           "type": "fill-blank",
           "prompt": "Los estudiantes ___ ___ (dormirse) en clase. (The students fall asleep in class.)",
-          "acceptedAnswers": ["se duermen"],
+          "acceptedAnswers": [
+            "se duermen"
+          ],
           "hint": "Dormirse (o→ue): ellos form → reflexive pronoun 'se' + duermen",
           "explanation": "Dormirse (o→ue): ellos se duermen. The stem changes o→ue in all forms except nosotros/vosotros."
         },
@@ -233,12 +380,12 @@
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 'quitarse'?",
           "options": [
-            "Me quito el sombrero al entrar.",
             "Quito el sombrero al entrar.",
-            "Me quito al sombrero entrar.",
-            "Se quitas el sombrero."
+            "Me quito el sombrero al entrar.",
+            "Se quitas el sombrero.",
+            "Me quito al sombrero entrar."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Quitarse = to take off (clothing). Me quito el sombrero = I take off my hat. The reflexive pronoun 'me' must agree with the subject yo, and goes before the conjugated verb."
         }
       ]

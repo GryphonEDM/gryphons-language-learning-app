@@ -4,7 +4,9 @@
   "nameEs": "El presente",
   "icon": "⏰",
   "tier": "A1",
-  "prerequisites": ["pronouns"],
+  "prerequisites": [
+    "pronouns"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,27 +15,132 @@
       "explanation": "Most Spanish verbs belong to the -AR group. To conjugate them in the present tense, remove the -ar ending and add the personal endings: yo -o, tú -as, él/ella -a, nosotros -amos, vosotros -áis, ellos/ellas -an. Example: hablar (to speak) → stem: habl- → yo hablo, tú hablas, él/ella habla, nosotros hablamos, vosotros habláis, ellos/ellas hablan. Other common -AR verbs: caminar (to walk), trabajar (to work), escuchar (to listen), cocinar (to cook). The pattern is identical for all regular -AR verbs.",
       "tip": "The yo form always ends in -o for regular -AR verbs. The tú form ends in -as, and the ellos/ellas form ends in -an. Notice that vosotros -áis carries a written accent.",
       "examples": [
-        { "es": "Yo hablo español.", "en": "I speak Spanish.", "highlight": "hablo" },
-        { "es": "Tú caminas rápido.", "en": "You walk fast.", "highlight": "caminas" },
-        { "es": "Él trabaja mucho.", "en": "He works a lot.", "highlight": "trabaja" },
-        { "es": "Nosotros escuchamos música.", "en": "We listen to music.", "highlight": "escuchamos" },
-        { "es": "Vosotros cocináis muy bien.", "en": "You all cook very well.", "highlight": "cocináis" },
-        { "es": "Ellas hablan con sus amigos.", "en": "They (fem.) speak with their friends.", "highlight": "hablan" }
+        {
+          "es": "Yo hablo español.",
+          "en": "I speak Spanish.",
+          "highlight": "hablo"
+        },
+        {
+          "es": "Tú caminas rápido.",
+          "en": "You walk fast.",
+          "highlight": "caminas"
+        },
+        {
+          "es": "Él trabaja mucho.",
+          "en": "He works a lot.",
+          "highlight": "trabaja"
+        },
+        {
+          "es": "Nosotros escuchamos música.",
+          "en": "We listen to music.",
+          "highlight": "escuchamos"
+        },
+        {
+          "es": "Vosotros cocináis muy bien.",
+          "en": "You all cook very well.",
+          "highlight": "cocináis"
+        },
+        {
+          "es": "Ellas hablan con sus amigos.",
+          "en": "They (fem.) speak with their friends.",
+          "highlight": "hablan"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'hablar' (to speak) for 'yo'?", "options": ["yo hablo", "yo hablas", "yo hablar"], "correctIndex": 0, "explanation": "The yo form of regular -AR verbs drops -ar and adds -o: habl + o = hablo." },
-        { "type": "fill-blank", "prompt": "Tú ___ (caminar) al trabajo. (You walk to work.)", "acceptedAnswers": ["caminas"], "hint": "The tú ending for -AR verbs is -as", "explanation": "caminar → stem caMin- + as = caminas. Tú caminas al trabajo." },
-        { "type": "multiple-choice", "prompt": "How do you conjugate 'escuchar' (to listen) for 'ella'?", "options": ["ella escucha", "ella escuchas", "ella escuchan"], "correctIndex": 0, "explanation": "The él/ella form of -AR verbs takes the -a ending: escuch + a = escucha." },
-        { "type": "fill-blank", "prompt": "Nosotros ___ (cocinar) la cena. (We cook dinner.)", "acceptedAnswers": ["cocinamos"], "hint": "The nosotros ending for -AR verbs is -amos", "explanation": "cocinar → stem cocin- + amos = cocinamos. Nosotros cocinamos la cena." },
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'trabajar' (to work) for 'ellos'?", "options": ["ellos trabajan", "ellos trabaja", "ellos trabajas"], "correctIndex": 0, "explanation": "The ellos/ellas form of -AR verbs takes -an: trabaj + an = trabajan." },
-        { "type": "matching", "prompt": "Match each pronoun to the correct -AR ending:", "pairs": [
-          { "left": "yo", "right": "-o" },
-          { "left": "tú", "right": "-as" },
-          { "left": "nosotros", "right": "-amos" },
-          { "left": "ellos/ellas", "right": "-an" }
-        ], "explanation": "Regular -AR verb endings: yo -o, tú -as, él/ella -a, nosotros -amos, vosotros -áis, ellos/ellas -an." },
-        { "type": "fill-blank", "prompt": "Vosotros ___ (hablar) muy rápido. (You all speak very fast.)", "acceptedAnswers": ["habláis"], "hint": "The vosotros ending for -AR verbs is -áis (with an accent)", "explanation": "hablar → habl + áis = habláis. The vosotros form always carries a written accent on the á." },
-        { "type": "multiple-choice", "prompt": "Which sentence is correct?", "options": ["Ella camina al parque.", "Ella caminan al parque.", "Ella caminas al parque."], "correctIndex": 0, "explanation": "Third person singular (él/ella) takes -a: camina. The other options use the wrong endings." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'hablar' (to speak) for 'yo'?",
+          "options": [
+            "yo hablas",
+            "yo hablo",
+            "yo hablar"
+          ],
+          "correctIndex": 1,
+          "explanation": "The yo form of regular -AR verbs drops -ar and adds -o: habl + o = hablo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Tú ___ (caminar) al trabajo. (You walk to work.)",
+          "acceptedAnswers": [
+            "caminas"
+          ],
+          "hint": "The tú ending for -AR verbs is -as",
+          "explanation": "caminar → stem caMin- + as = caminas. Tú caminas al trabajo."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you conjugate 'escuchar' (to listen) for 'ella'?",
+          "options": [
+            "ella escuchan",
+            "ella escucha",
+            "ella escuchas"
+          ],
+          "correctIndex": 1,
+          "explanation": "The él/ella form of -AR verbs takes the -a ending: escuch + a = escucha."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nosotros ___ (cocinar) la cena. (We cook dinner.)",
+          "acceptedAnswers": [
+            "cocinamos"
+          ],
+          "hint": "The nosotros ending for -AR verbs is -amos",
+          "explanation": "cocinar → stem cocin- + amos = cocinamos. Nosotros cocinamos la cena."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'trabajar' (to work) for 'ellos'?",
+          "options": [
+            "ellos trabajan",
+            "ellos trabajas",
+            "ellos trabaja"
+          ],
+          "correctIndex": 0,
+          "explanation": "The ellos/ellas form of -AR verbs takes -an: trabaj + an = trabajan."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun to the correct -AR ending:",
+          "pairs": [
+            {
+              "left": "yo",
+              "right": "-o"
+            },
+            {
+              "left": "tú",
+              "right": "-as"
+            },
+            {
+              "left": "nosotros",
+              "right": "-amos"
+            },
+            {
+              "left": "ellos/ellas",
+              "right": "-an"
+            }
+          ],
+          "explanation": "Regular -AR verb endings: yo -o, tú -as, él/ella -a, nosotros -amos, vosotros -áis, ellos/ellas -an."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Vosotros ___ (hablar) muy rápido. (You all speak very fast.)",
+          "acceptedAnswers": [
+            "habláis"
+          ],
+          "hint": "The vosotros ending for -AR verbs is -áis (with an accent)",
+          "explanation": "hablar → habl + áis = habláis. The vosotros form always carries a written accent on the á."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Ella camina al parque.",
+            "Ella caminan al parque.",
+            "Ella caminas al parque."
+          ],
+          "correctIndex": 0,
+          "explanation": "Third person singular (él/ella) takes -a: camina. The other options use the wrong endings."
+        }
       ]
     },
     {
@@ -42,27 +149,132 @@
       "explanation": "The second and third groups of Spanish verbs end in -er and -ir. They share most endings, but differ in the nosotros and vosotros forms. For -ER verbs (comer, beber), remove -er and add: yo -o, tú -es, él/ella -e, nosotros -emos, vosotros -éis, ellos/ellas -en. For -IR verbs (vivir, escribir), remove -ir and add: yo -o, tú -es, él/ella -e, nosotros -imos, vosotros -ís, ellos/ellas -en. The key difference: nosotros uses -emos for -ER verbs but -imos for -IR verbs; vosotros uses -éis for -ER verbs but -ís for -IR verbs.",
       "tip": "The yo form is always -o for both groups. -ER and -IR verbs are identical in the yo, tú, él/ella, and ellos/ellas forms. Only nosotros and vosotros differ: -emos/-éis for -ER, -imos/-ís for -IR.",
       "examples": [
-        { "es": "Yo como una manzana.", "en": "I eat an apple.", "highlight": "como" },
-        { "es": "Tú bebes agua.", "en": "You drink water.", "highlight": "bebes" },
-        { "es": "Ella come en el restaurante.", "en": "She eats at the restaurant.", "highlight": "come" },
-        { "es": "Nosotros vivimos en Madrid.", "en": "We live in Madrid.", "highlight": "vivimos" },
-        { "es": "Vosotros coméis mucho.", "en": "You all eat a lot.", "highlight": "coméis" },
-        { "es": "Ellos escriben cartas.", "en": "They write letters.", "highlight": "escriben" }
+        {
+          "es": "Yo como una manzana.",
+          "en": "I eat an apple.",
+          "highlight": "como"
+        },
+        {
+          "es": "Tú bebes agua.",
+          "en": "You drink water.",
+          "highlight": "bebes"
+        },
+        {
+          "es": "Ella come en el restaurante.",
+          "en": "She eats at the restaurant.",
+          "highlight": "come"
+        },
+        {
+          "es": "Nosotros vivimos en Madrid.",
+          "en": "We live in Madrid.",
+          "highlight": "vivimos"
+        },
+        {
+          "es": "Vosotros coméis mucho.",
+          "en": "You all eat a lot.",
+          "highlight": "coméis"
+        },
+        {
+          "es": "Ellos escriben cartas.",
+          "en": "They write letters.",
+          "highlight": "escriben"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'comer' (to eat) for 'yo'?", "options": ["yo como", "yo comer", "yo comes"], "correctIndex": 0, "explanation": "The yo form of -ER verbs drops -er and adds -o: com + o = como." },
-        { "type": "fill-blank", "prompt": "Tú ___ (beber) café por las mañanas. (You drink coffee in the mornings.)", "acceptedAnswers": ["bebes"], "hint": "The tú ending for -ER verbs is -es", "explanation": "beber → stem beb- + es = bebes. Tú bebes café por las mañanas." },
-        { "type": "multiple-choice", "prompt": "How do you conjugate 'vivir' (to live) for 'nosotros'?", "options": ["nosotros vivimos", "nosotros vivemos", "nosotros viven"], "correctIndex": 0, "explanation": "-IR verbs use -imos for nosotros: viv + imos = vivimos. This is different from -ER verbs which use -emos (comemos)." },
-        { "type": "multiple-choice", "prompt": "What is the vosotros form of 'comer' (to eat)?", "options": ["vosotros coméis", "vosotros comís", "vosotros comen"], "correctIndex": 0, "explanation": "-ER verbs use -éis for vosotros: com + éis = coméis. Compare with -IR verbs which use -ís (vivís)." },
-        { "type": "fill-blank", "prompt": "Ellos ___ (escribir) un libro. (They write a book.)", "acceptedAnswers": ["escriben"], "hint": "The ellos ending for both -ER and -IR verbs is -en", "explanation": "escribir → stem escrib- + en = escriben. Both -ER and -IR verbs use -en for ellos/ellas." },
-        { "type": "matching", "prompt": "Match each nosotros/vosotros form to the correct verb group:", "pairs": [
-          { "left": "nosotros comemos", "right": "-ER verb" },
-          { "left": "nosotros vivimos", "right": "-IR verb" },
-          { "left": "vosotros coméis", "right": "-ER verb" },
-          { "left": "vosotros vivís", "right": "-IR verb" }
-        ], "explanation": "The nosotros and vosotros forms are what distinguish -ER from -IR verbs: -emos/-éis vs -imos/-ís." },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly uses 'beber' for 'él'?", "options": ["Él bebe vino.", "Él beben vino.", "Él bebes vino."], "correctIndex": 0, "explanation": "Third person singular of -ER verbs takes -e: beb + e = bebe. Él bebe vino." },
-        { "type": "fill-blank", "prompt": "Ella ___ (vivir) cerca de aquí. (She lives near here.)", "acceptedAnswers": ["vive"], "hint": "The él/ella ending for -IR verbs is -e", "explanation": "vivir → stem viv- + e = vive. The él/ella form is the same for both -ER and -IR verbs." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'comer' (to eat) for 'yo'?",
+          "options": [
+            "yo como",
+            "yo comes",
+            "yo comer"
+          ],
+          "correctIndex": 0,
+          "explanation": "The yo form of -ER verbs drops -er and adds -o: com + o = como."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Tú ___ (beber) café por las mañanas. (You drink coffee in the mornings.)",
+          "acceptedAnswers": [
+            "bebes"
+          ],
+          "hint": "The tú ending for -ER verbs is -es",
+          "explanation": "beber → stem beb- + es = bebes. Tú bebes café por las mañanas."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you conjugate 'vivir' (to live) for 'nosotros'?",
+          "options": [
+            "nosotros viven",
+            "nosotros vivimos",
+            "nosotros vivemos"
+          ],
+          "correctIndex": 1,
+          "explanation": "-IR verbs use -imos for nosotros: viv + imos = vivimos. This is different from -ER verbs which use -emos (comemos)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the vosotros form of 'comer' (to eat)?",
+          "options": [
+            "vosotros comen",
+            "vosotros coméis",
+            "vosotros comís"
+          ],
+          "correctIndex": 1,
+          "explanation": "-ER verbs use -éis for vosotros: com + éis = coméis. Compare with -IR verbs which use -ís (vivís)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ellos ___ (escribir) un libro. (They write a book.)",
+          "acceptedAnswers": [
+            "escriben"
+          ],
+          "hint": "The ellos ending for both -ER and -IR verbs is -en",
+          "explanation": "escribir → stem escrib- + en = escriben. Both -ER and -IR verbs use -en for ellos/ellas."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each nosotros/vosotros form to the correct verb group:",
+          "pairs": [
+            {
+              "left": "nosotros comemos",
+              "right": "-ER verb"
+            },
+            {
+              "left": "nosotros vivimos",
+              "right": "-IR verb"
+            },
+            {
+              "left": "vosotros coméis",
+              "right": "-ER verb"
+            },
+            {
+              "left": "vosotros vivís",
+              "right": "-IR verb"
+            }
+          ],
+          "explanation": "The nosotros and vosotros forms are what distinguish -ER from -IR verbs: -emos/-éis vs -imos/-ís."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'beber' for 'él'?",
+          "options": [
+            "Él beben vino.",
+            "Él bebes vino.",
+            "Él bebe vino."
+          ],
+          "correctIndex": 2,
+          "explanation": "Third person singular of -ER verbs takes -e: beb + e = bebe. Él bebe vino."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella ___ (vivir) cerca de aquí. (She lives near here.)",
+          "acceptedAnswers": [
+            "vive"
+          ],
+          "hint": "The él/ella ending for -IR verbs is -e",
+          "explanation": "vivir → stem viv- + e = vive. The él/ella form is the same for both -ER and -IR verbs."
+        }
       ]
     },
     {
@@ -71,26 +283,129 @@
       "explanation": "Many of the most common Spanish verbs are irregular in the present tense. Some are irregular only in the yo form; others are irregular throughout. Key irregular verbs: ser (to be [permanent]): soy, eres, es, somos, sois, son. estar (to be [temporary/location]): estoy, estás, está, estamos, estáis, están. ir (to go): voy, vas, va, vamos, vais, van. tener (to have): tengo, tienes, tiene, tenemos, tenéis, tienen. hacer (to do/make): hago, haces, hace, hacemos, hacéis, hacen. poder (to be able to/can): puedo, puedes, puede, podemos, podéis, pueden. querer (to want/love): quiero, quieres, quiere, queremos, queréis, quieren. Notice that tener, hacer, and ir have unique yo forms (tengo, hago, voy) that do not follow regular patterns.",
       "tip": "Focus on memorizing the yo forms first — soy, estoy, voy, tengo, hago, puedo, quiero. Once you know the yo form, the other forms often follow a more regular pattern (though ser and ir are irregular throughout).",
       "examples": [
-        { "es": "Yo soy estudiante.", "en": "I am a student.", "highlight": "soy" },
-        { "es": "Ella está cansada.", "en": "She is tired.", "highlight": "está" },
-        { "es": "Nosotros vamos al mercado.", "en": "We go to the market.", "highlight": "vamos" },
-        { "es": "Él tiene mucho trabajo.", "en": "He has a lot of work.", "highlight": "tiene" },
-        { "es": "¿Qué haces tú hoy?", "en": "What are you doing today?", "highlight": "haces" }
+        {
+          "es": "Yo soy estudiante.",
+          "en": "I am a student.",
+          "highlight": "soy"
+        },
+        {
+          "es": "Ella está cansada.",
+          "en": "She is tired.",
+          "highlight": "está"
+        },
+        {
+          "es": "Nosotros vamos al mercado.",
+          "en": "We go to the market.",
+          "highlight": "vamos"
+        },
+        {
+          "es": "Él tiene mucho trabajo.",
+          "en": "He has a lot of work.",
+          "highlight": "tiene"
+        },
+        {
+          "es": "¿Qué haces tú hoy?",
+          "en": "What are you doing today?",
+          "highlight": "haces"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the yo form of 'ser' (to be)?", "options": ["soy", "es", "sé"], "correctIndex": 0, "explanation": "ser is fully irregular: yo soy, tú eres, él/ella es, nosotros somos, vosotros sois, ellos/ellas son." },
-        { "type": "fill-blank", "prompt": "Yo ___ (estar) muy bien, gracias. (I am very well, thank you.)", "acceptedAnswers": ["estoy"], "hint": "The yo form of 'estar' is irregular", "explanation": "estar: yo estoy. The -oy ending is shared by both estar and ir in the yo form (estoy, voy)." },
-        { "type": "multiple-choice", "prompt": "How do you say 'We go to school' in Spanish?", "options": ["Nosotros vamos a la escuela.", "Nosotros voy a la escuela.", "Nosotros van a la escuela."], "correctIndex": 0, "explanation": "ir for nosotros is vamos: Nosotros vamos a la escuela. Note that vamos is also used for 'Let's go!'" },
-        { "type": "multiple-choice", "prompt": "What is the correct yo form of 'tener' (to have)?", "options": ["tengo", "tiene", "tenés"], "correctIndex": 0, "explanation": "tener has an irregular yo form: tengo. The other forms are mostly regular with the stem tien- (tienes, tiene) or ten- (tenemos, tenéis, tienen)." },
-        { "type": "matching", "prompt": "Match each irregular verb to its yo form:", "pairs": [
-          { "left": "ser (to be)", "right": "soy" },
-          { "left": "ir (to go)", "right": "voy" },
-          { "left": "hacer (to do/make)", "right": "hago" },
-          { "left": "querer (to want)", "right": "quiero" }
-        ], "explanation": "Irregular yo forms: soy (ser), estoy (estar), voy (ir), tengo (tener), hago (hacer), puedo (poder), quiero (querer)." },
-        { "type": "fill-blank", "prompt": "Él ___ (poder) hablar tres idiomas. (He can speak three languages.)", "acceptedAnswers": ["puede"], "hint": "poder is a stem-changing verb: o→ue in most forms", "explanation": "poder: puedo, puedes, puede, podemos, podéis, pueden. The o→ue change occurs in all forms except nosotros and vosotros." },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly uses 'querer' (to want)?", "options": ["Yo quiero un café.", "Yo quero un café.", "Yo quiers un café."], "correctIndex": 0, "explanation": "querer: yo quiero. The e→ie stem change gives quiero, quieres, quiere — but queremos and queréis keep the original stem." },
-        { "type": "multiple-choice", "prompt": "What is the difference between 'ser' and 'estar'?", "options": ["'ser' is for permanent traits; 'estar' is for temporary states and location", "They are interchangeable", "'estar' is more formal than 'ser'"], "correctIndex": 0, "explanation": "ser expresses identity, origin, and permanent characteristics (soy estudiante, es español). estar expresses temporary states, emotions, and location (estoy cansado, está en casa)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the yo form of 'ser' (to be)?",
+          "options": [
+            "soy",
+            "sé",
+            "es"
+          ],
+          "correctIndex": 0,
+          "explanation": "ser is fully irregular: yo soy, tú eres, él/ella es, nosotros somos, vosotros sois, ellos/ellas son."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Yo ___ (estar) muy bien, gracias. (I am very well, thank you.)",
+          "acceptedAnswers": [
+            "estoy"
+          ],
+          "hint": "The yo form of 'estar' is irregular",
+          "explanation": "estar: yo estoy. The -oy ending is shared by both estar and ir in the yo form (estoy, voy)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'We go to school' in Spanish?",
+          "options": [
+            "Nosotros voy a la escuela.",
+            "Nosotros vamos a la escuela.",
+            "Nosotros van a la escuela."
+          ],
+          "correctIndex": 1,
+          "explanation": "ir for nosotros is vamos: Nosotros vamos a la escuela. Note that vamos is also used for 'Let's go!'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct yo form of 'tener' (to have)?",
+          "options": [
+            "tiene",
+            "tenés",
+            "tengo"
+          ],
+          "correctIndex": 2,
+          "explanation": "tener has an irregular yo form: tengo. The other forms are mostly regular with the stem tien- (tienes, tiene) or ten- (tenemos, tenéis, tienen)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each irregular verb to its yo form:",
+          "pairs": [
+            {
+              "left": "ser (to be)",
+              "right": "soy"
+            },
+            {
+              "left": "ir (to go)",
+              "right": "voy"
+            },
+            {
+              "left": "hacer (to do/make)",
+              "right": "hago"
+            },
+            {
+              "left": "querer (to want)",
+              "right": "quiero"
+            }
+          ],
+          "explanation": "Irregular yo forms: soy (ser), estoy (estar), voy (ir), tengo (tener), hago (hacer), puedo (poder), quiero (querer)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Él ___ (poder) hablar tres idiomas. (He can speak three languages.)",
+          "acceptedAnswers": [
+            "puede"
+          ],
+          "hint": "poder is a stem-changing verb: o→ue in most forms",
+          "explanation": "poder: puedo, puedes, puede, podemos, podéis, pueden. The o→ue change occurs in all forms except nosotros and vosotros."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'querer' (to want)?",
+          "options": [
+            "Yo quiers un café.",
+            "Yo quiero un café.",
+            "Yo quero un café."
+          ],
+          "correctIndex": 1,
+          "explanation": "querer: yo quiero. The e→ie stem change gives quiero, quieres, quiere — but queremos and queréis keep the original stem."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between 'ser' and 'estar'?",
+          "options": [
+            "'ser' is for permanent traits; 'estar' is for temporary states and location",
+            "They are interchangeable",
+            "'estar' is more formal than 'ser'"
+          ],
+          "correctIndex": 0,
+          "explanation": "ser expresses identity, origin, and permanent characteristics (soy estudiante, es español). estar expresses temporary states, emotions, and location (estoy cansado, está en casa)."
+        }
       ]
     }
   ]

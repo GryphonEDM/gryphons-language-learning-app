@@ -4,7 +4,9 @@
   "nameEl": "Αντωνυμίες",
   "icon": "👤",
   "tier": "A2",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,33 +15,69 @@
       "explanation": "Greek subject pronouns are: εγώ (I), εσύ (you, singular), αυτός/αυτή/αυτό (he/she/it), εμείς (we), εσείς (you, plural or formal), αυτοί/αυτές/αυτά (they, masc./fem./neut.). A key feature of Greek is that subject pronouns are very often omitted — the verb ending already shows the person and number. For example, 'μιλώ' means 'I speak' on its own; 'εγώ μιλώ' is grammatical but adds emphasis or contrast. When you do use pronouns explicitly, they are called stressed (τονισμένες) forms. The plural εσείς is also the polite form for addressing one person formally, exactly like French 'vous'.",
       "tip": "Greek is a pro-drop language — you can (and usually do) skip the subject pronoun. Use it only for emphasis or contrast: 'Εγώ το είπα, όχι αυτός.' (I said it, not him.)",
       "examples": [
-        { "el": "Εγώ μιλώ ελληνικά.", "en": "I speak Greek. (emphatic)", "highlight": "Εγώ" },
-        { "el": "Εσύ μαθαίνεις γρήγορα.", "en": "You learn fast.", "highlight": "Εσύ" },
-        { "el": "Αυτός είναι δάσκαλος.", "en": "He is a teacher.", "highlight": "Αυτός" },
-        { "el": "Αυτή μένει στην Αθήνα.", "en": "She lives in Athens.", "highlight": "Αυτή" },
-        { "el": "Εμείς πάμε στην παραλία.", "en": "We are going to the beach.", "highlight": "Εμείς" },
-        { "el": "Αυτοί μιλούν πολύ δυνατά.", "en": "They (masc.) speak very loudly.", "highlight": "Αυτοί" }
+        {
+          "el": "Εγώ μιλώ ελληνικά.",
+          "en": "I speak Greek. (emphatic)",
+          "highlight": "Εγώ"
+        },
+        {
+          "el": "Εσύ μαθαίνεις γρήγορα.",
+          "en": "You learn fast.",
+          "highlight": "Εσύ"
+        },
+        {
+          "el": "Αυτός είναι δάσκαλος.",
+          "en": "He is a teacher.",
+          "highlight": "Αυτός"
+        },
+        {
+          "el": "Αυτή μένει στην Αθήνα.",
+          "en": "She lives in Athens.",
+          "highlight": "Αυτή"
+        },
+        {
+          "el": "Εμείς πάμε στην παραλία.",
+          "en": "We are going to the beach.",
+          "highlight": "Εμείς"
+        },
+        {
+          "el": "Αυτοί μιλούν πολύ δυνατά.",
+          "en": "They (masc.) speak very loudly.",
+          "highlight": "Αυτοί"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the Greek subject pronoun for 'we'?",
-          "options": ["εμείς", "εσείς", "αυτοί"],
-          "correctIndex": 0,
+          "options": [
+            "αυτοί",
+            "εσείς",
+            "εμείς"
+          ],
+          "correctIndex": 2,
           "explanation": "'εμείς' = we. 'εσείς' = you (plural/formal), 'αυτοί' = they (masculine)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which pronoun would a Greek speaker most likely omit in everyday speech?",
-          "options": ["The subject pronoun, since the verb ending shows the person", "The object pronoun, since it is rarely needed", "Neither — both are always required"],
+          "options": [
+            "The subject pronoun, since the verb ending shows the person",
+            "Neither — both are always required",
+            "The object pronoun, since it is rarely needed"
+          ],
           "correctIndex": 0,
           "explanation": "Greek is a pro-drop language. The verb ending encodes person and number, so 'μιλώ' already means 'I speak'. The subject pronoun εγώ is added only for emphasis or contrast."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'she' in Greek?",
-          "options": ["αυτή", "αυτός", "αυτό"],
-          "correctIndex": 0,
+          "options": [
+            "αυτό",
+            "αυτός",
+            "αυτή"
+          ],
+          "correctIndex": 2,
           "explanation": "'αυτή' = she (feminine). 'αυτός' = he (masculine), 'αυτό' = it (neuter). Greek pronouns agree in gender with the noun they replace."
         }
       ]
@@ -50,33 +88,69 @@
       "explanation": "Greek uses weak (unstressed / clitic) pronouns for objects. These come in two sets. Accusative (direct object): με (me), σε (you-sg), τον/την/το (him/her/it), μας (us), σας (you-pl/formal), τους/τις/τα (them masc./fem./neut.). Genitive (indirect object / possession): μου (to me / my), σου (to you / your), του/της/του (to him / his, to her / her, to it / its), μας (to us / our), σας (to you / your), τους (to them / their). Position: clitic pronouns almost always come directly before the finite verb — e.g., 'Σε βλέπω' (I see you), 'Μου δίνεις; (Do you give me / to me?). With imperatives they follow the verb: 'Πες μου!' (Tell me!).",
       "tip": "Remember: weak pronouns go BEFORE the verb in statements and questions, but AFTER the verb in imperatives. You can also stack both an indirect and a direct object pronoun: 'Μου το έδωσε' (He gave it to me).",
       "examples": [
-        { "el": "Σε βλέπω κάθε μέρα.", "en": "I see you every day.", "highlight": "Σε" },
-        { "el": "Μας καλεί στο σπίτι της.", "en": "She invites us to her house.", "highlight": "Μας" },
-        { "el": "Τον ξέρω πολύ καλά.", "en": "I know him very well.", "highlight": "Τον" },
-        { "el": "Μου αρέσει η μουσική.", "en": "I like music. (lit. Music pleases to me.)", "highlight": "Μου" },
-        { "el": "Σου έστειλα μήνυμα.", "en": "I sent you a message.", "highlight": "Σου" },
-        { "el": "Πες μου την αλήθεια!", "en": "Tell me the truth! (imperative)", "highlight": "μου" }
+        {
+          "el": "Σε βλέπω κάθε μέρα.",
+          "en": "I see you every day.",
+          "highlight": "Σε"
+        },
+        {
+          "el": "Μας καλεί στο σπίτι της.",
+          "en": "She invites us to her house.",
+          "highlight": "Μας"
+        },
+        {
+          "el": "Τον ξέρω πολύ καλά.",
+          "en": "I know him very well.",
+          "highlight": "Τον"
+        },
+        {
+          "el": "Μου αρέσει η μουσική.",
+          "en": "I like music. (lit. Music pleases to me.)",
+          "highlight": "Μου"
+        },
+        {
+          "el": "Σου έστειλα μήνυμα.",
+          "en": "I sent you a message.",
+          "highlight": "Σου"
+        },
+        {
+          "el": "Πες μου την αλήθεια!",
+          "en": "Tell me the truth! (imperative)",
+          "highlight": "μου"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Where does the weak object pronoun go in a normal statement like 'I see you'?",
-          "options": ["Before the verb: Σε βλέπω", "After the verb: Βλέπω σε", "Either position is equally common"],
-          "correctIndex": 0,
+          "options": [
+            "Either position is equally common",
+            "After the verb: Βλέπω σε",
+            "Before the verb: Σε βλέπω"
+          ],
+          "correctIndex": 2,
           "explanation": "In statements and questions, clitic pronouns precede the finite verb. 'Σε βλέπω' = I see you. The post-verbal position (enclitic) is used with imperatives."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which pronoun means 'to me / my' (genitive/indirect object)?",
-          "options": ["μου", "με", "μας"],
-          "correctIndex": 0,
+          "options": [
+            "με",
+            "μας",
+            "μου"
+          ],
+          "correctIndex": 2,
           "explanation": "'μου' is the genitive/indirect object form (to me, my). 'με' is the accusative (direct object: me). 'μας' means us (accusative) or to us/our (genitive)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'Tell me!' in Greek (imperative)?",
-          "options": ["Πες μου!", "Μου πες!", "Με πες!"],
-          "correctIndex": 0,
+          "options": [
+            "Με πες!",
+            "Μου πες!",
+            "Πες μου!"
+          ],
+          "correctIndex": 2,
           "explanation": "With imperatives, weak pronouns become enclitics — they follow the verb. 'Πες μου!' = Tell me! In contrast to statements where the pronoun comes before the verb."
         }
       ]
@@ -87,33 +161,69 @@
       "explanation": "Demonstrative pronouns in Greek: αυτός/αυτή/αυτό can mean both 'this' and 'that' (the near/far distinction is less strict than English, but context or pointing clarifies). For something more distant or emphatic, εκείνος/εκείνη/εκείνο means 'that (one over there)' or 'that aforementioned'. Both sets agree in gender, number, and case with the noun they refer to. The reflexive pronoun is ο εαυτός μου (myself), ο εαυτός σου (yourself), ο εαυτός του/της (himself/herself), etc. — literally 'the self of me/you/him'. It declines like a masculine noun: τον εαυτό μου (accusative: myself), του εαυτού μου (genitive). Possessive pronouns are the same as the genitive weak pronouns: μου/σου/του/της/μας/σας/τους, placed after the noun: το βιβλίο μου (my book).",
       "tip": "αυτός = this/that (near or familiar); εκείνος = that (yonder, more distant or previously mentioned). For the reflexive, combine εαυτός with the possessive genitive: εαυτό μου = myself (accusative).",
       "examples": [
-        { "el": "Αυτό το βιβλίο είναι δικό μου.", "en": "This book is mine.", "highlight": "Αυτό" },
-        { "el": "Εκείνος ο άντρας είναι γιατρός.", "en": "That man (over there) is a doctor.", "highlight": "Εκείνος" },
-        { "el": "Εκείνη η εποχή ήταν δύσκολη.", "en": "That era (aforementioned) was difficult.", "highlight": "Εκείνη" },
-        { "el": "Κοιτάζεται στον καθρέφτη — βλέπει τον εαυτό του.", "en": "He looks in the mirror — he sees himself.", "highlight": "τον εαυτό του" },
-        { "el": "Πρέπει να πιστεύεις στον εαυτό σου.", "en": "You must believe in yourself.", "highlight": "τον εαυτό σου" },
-        { "el": "Η τσάντα της είναι εκεί.", "en": "Her bag is there. (possessive 'της' after noun)", "highlight": "της" }
+        {
+          "el": "Αυτό το βιβλίο είναι δικό μου.",
+          "en": "This book is mine.",
+          "highlight": "Αυτό"
+        },
+        {
+          "el": "Εκείνος ο άντρας είναι γιατρός.",
+          "en": "That man (over there) is a doctor.",
+          "highlight": "Εκείνος"
+        },
+        {
+          "el": "Εκείνη η εποχή ήταν δύσκολη.",
+          "en": "That era (aforementioned) was difficult.",
+          "highlight": "Εκείνη"
+        },
+        {
+          "el": "Κοιτάζεται στον καθρέφτη — βλέπει τον εαυτό του.",
+          "en": "He looks in the mirror — he sees himself.",
+          "highlight": "τον εαυτό του"
+        },
+        {
+          "el": "Πρέπει να πιστεύεις στον εαυτό σου.",
+          "en": "You must believe in yourself.",
+          "highlight": "τον εαυτό σου"
+        },
+        {
+          "el": "Η τσάντα της είναι εκεί.",
+          "en": "Her bag is there. (possessive 'της' after noun)",
+          "highlight": "της"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which demonstrative pronoun conveys greater distance or refers to something previously mentioned?",
-          "options": ["εκείνος/εκείνη/εκείνο", "αυτός/αυτή/αυτό", "ο/η/το (definite article)"],
-          "correctIndex": 0,
+          "options": [
+            "ο/η/το (definite article)",
+            "αυτός/αυτή/αυτό",
+            "εκείνος/εκείνη/εκείνο"
+          ],
+          "correctIndex": 2,
           "explanation": "'εκείνος/εκείνη/εκείνο' points to something further away or previously mentioned, like English 'that (one)'. 'αυτός/αυτή/αυτό' covers both 'this' and general 'that'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'myself' in Greek (accusative)?",
-          "options": ["τον εαυτό μου", "ο εαυτός μου", "εαυτό"],
-          "correctIndex": 0,
+          "options": [
+            "εαυτό",
+            "ο εαυτός μου",
+            "τον εαυτό μου"
+          ],
+          "correctIndex": 2,
           "explanation": "The reflexive in the accusative is 'τον εαυτό μου'. 'ο εαυτός μου' is the nominative form. You need the accusative after most verbs: 'Βλέπω τον εαυτό μου' (I see myself)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Where is the possessive pronoun placed in Greek?",
-          "options": ["After the noun: το βιβλίο μου (my book)", "Before the noun: μου το βιβλίο", "Either position is equally common"],
-          "correctIndex": 0,
+          "options": [
+            "Either position is equally common",
+            "Before the noun: μου το βιβλίο",
+            "After the noun: το βιβλίο μου (my book)"
+          ],
+          "correctIndex": 2,
           "explanation": "Greek possessive pronouns (which are identical to the genitive weak pronouns) come AFTER the noun: το βιβλίο μου = my book, η τσάντα σου = your bag. This differs from English where the possessive comes before the noun."
         }
       ]

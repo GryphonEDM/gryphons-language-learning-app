@@ -4,7 +4,9 @@
   "nameAr": "الأسماء والجنس",
   "icon": "📝",
   "tier": "A1",
-  "prerequisites": ["alphabet-pronunciation"],
+  "prerequisites": [
+    "alphabet-pronunciation"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,31 +15,63 @@
       "explanation": "Every Arabic noun is either masculine (مذكّر) or feminine (مؤنّث) — there is no neuter gender. Most feminine nouns are marked with a special ending called تاء مربوطة (tāʼ marbūṭa), written as ة. This looks like ه (hāʼ) with two dots above it. For example, مدرسة (school), طالبة (female student), and سيارة (car) all end in ة and are feminine. Nouns without ة are usually masculine: كتاب (book), ولد (boy), باب (door). However, some nouns are feminine without ة — these include most female persons and animals (أم mother, بنت girl, أخت sister), body parts that come in pairs (يد hand, عين eye, رجل foot), and certain place names and countries.",
       "tip": "The quick rule: if a noun ends in ة (tāʼ marbūṭa), it is almost certainly feminine. If it does not end in ة, it is probably masculine — but watch out for the natural-gender exceptions like أم (mother) and أخت (sister).",
       "examples": [
-        { "ar": "مدرسة", "en": "school (feminine) — ends in ة", "highlight": "ة" },
-        { "ar": "كتاب", "en": "book (masculine) — no ة ending", "highlight": "كتاب" },
-        { "ar": "طالبة", "en": "female student (feminine) — ends in ة", "highlight": "ة" },
-        { "ar": "طالب", "en": "male student (masculine) — no ة ending", "highlight": "طالب" },
-        { "ar": "أم", "en": "mother (feminine) — no ة, but feminine by natural gender", "highlight": "أم" }
+        {
+          "ar": "مدرسة",
+          "en": "school (feminine) — ends in ة",
+          "highlight": "ة"
+        },
+        {
+          "ar": "كتاب",
+          "en": "book (masculine) — no ة ending",
+          "highlight": "كتاب"
+        },
+        {
+          "ar": "طالبة",
+          "en": "female student (feminine) — ends in ة",
+          "highlight": "ة"
+        },
+        {
+          "ar": "طالب",
+          "en": "male student (masculine) — no ة ending",
+          "highlight": "طالب"
+        },
+        {
+          "ar": "أم",
+          "en": "mother (feminine) — no ة, but feminine by natural gender",
+          "highlight": "أم"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the most common marker of a feminine noun in Arabic?",
-          "options": ["The ending ة (tāʼ marbūṭa)", "The prefix ال", "The ending ون"],
+          "options": [
+            "The ending ة (tāʼ marbūṭa)",
+            "The ending ون",
+            "The prefix ال"
+          ],
           "correctIndex": 0,
           "explanation": "The تاء مربوطة (ة) at the end of a noun is the most reliable marker of feminine gender in Arabic. Most nouns ending in ة are feminine."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these nouns is masculine?",
-          "options": ["كتاب (book)", "مدرسة (school)", "سيارة (car)"],
+          "options": [
+            "كتاب (book)",
+            "سيارة (car)",
+            "مدرسة (school)"
+          ],
           "correctIndex": 0,
           "explanation": "كتاب (book) is masculine — it does not end in ة. Both مدرسة (school) and سيارة (car) end in ة and are feminine."
         },
         {
           "type": "multiple-choice",
           "prompt": "The word أم (mother) does not end in ة. What is its gender?",
-          "options": ["Feminine — because it refers to a female person", "Masculine — because it lacks ة", "It can be either"],
+          "options": [
+            "Feminine — because it refers to a female person",
+            "Masculine — because it lacks ة",
+            "It can be either"
+          ],
           "correctIndex": 0,
           "explanation": "Words referring to female people and animals are feminine regardless of their ending. أم (mother), بنت (girl), and أخت (sister) are all feminine even without ة."
         }
@@ -49,31 +83,59 @@
       "explanation": "The تاء مربوطة (literally 'tied tāʼ') is written ة and is one of the most important features of Arabic nouns. It is called 'tied' because it looks like a ه (hāʼ) with its two dots 'tied' on top. In pronunciation, ة is silent at the end of a phrase (the word sounds like it ends in -a or -ah), but when the word is followed by a genitive construction (iḍāfa) or in formal Arabic with case endings, it is pronounced as a full 't'. For example, مدرسة by itself is pronounced 'madrasa', but in مدرسة الأولاد (the children's school), it is pronounced 'madrasat al-awlād'. The ة is also the standard way to create a feminine form from a masculine noun: معلّم (male teacher) → معلّمة (female teacher), طبيب (male doctor) → طبيبة (female doctor).",
       "tip": "When reading a word ending in ة by itself or at the end of a sentence, pronounce it as '-a' (the ة is silent). When the word is connected to the next word in a possessive construction, pronounce it as '-at'.",
       "examples": [
-        { "ar": "معلّم → معلّمة", "en": "male teacher → female teacher — adding ة makes it feminine", "highlight": "ة" },
-        { "ar": "طبيب → طبيبة", "en": "male doctor → female doctor — same pattern", "highlight": "ة" },
-        { "ar": "مدرسة", "en": "school — pronounced 'madrasa' in isolation (ة is silent)", "highlight": "ة" },
-        { "ar": "مدرسة الأولاد", "en": "the children's school — pronounced 'madrasat al-awlād' (ة becomes 't')", "highlight": "ة" }
+        {
+          "ar": "معلّم → معلّمة",
+          "en": "male teacher → female teacher — adding ة makes it feminine",
+          "highlight": "ة"
+        },
+        {
+          "ar": "طبيب → طبيبة",
+          "en": "male doctor → female doctor — same pattern",
+          "highlight": "ة"
+        },
+        {
+          "ar": "مدرسة",
+          "en": "school — pronounced 'madrasa' in isolation (ة is silent)",
+          "highlight": "ة"
+        },
+        {
+          "ar": "مدرسة الأولاد",
+          "en": "the children's school — pronounced 'madrasat al-awlād' (ة becomes 't')",
+          "highlight": "ة"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How is ة (tāʼ marbūṭa) pronounced when the word stands alone at the end of a phrase?",
-          "options": ["Silent — the word ends in an '-a' sound", "As a strong 't'", "As an 'h' sound"],
-          "correctIndex": 0,
+          "options": [
+            "As an 'h' sound",
+            "Silent — the word ends in an '-a' sound",
+            "As a strong 't'"
+          ],
+          "correctIndex": 1,
           "explanation": "In pause (at the end of a phrase or in isolation), ة is silent and the word ends in '-a' or '-ah'. So مدرسة is pronounced 'madrasa'. The 't' sound only appears when the word is connected to the next in a grammatical construction."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you form the feminine of معلّم (male teacher)?",
-          "options": ["Add ة to make معلّمة", "Add ال to make المعلّم", "Change the first letter"],
-          "correctIndex": 0,
+          "options": [
+            "Change the first letter",
+            "Add ة to make معلّمة",
+            "Add ال to make المعلّم"
+          ],
+          "correctIndex": 1,
           "explanation": "The standard way to create a feminine noun from a masculine one is to add ة (tāʼ marbūṭa). So معلّم (male teacher) becomes معلّمة (female teacher)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does ة look like?",
-          "options": ["Like ه (hāʼ) with two dots above", "Like ت (tāʼ) with a tail", "Like ا (alif) with a hamza"],
-          "correctIndex": 0,
+          "options": [
+            "Like ا (alif) with a hamza",
+            "Like ه (hāʼ) with two dots above",
+            "Like ت (tāʼ) with a tail"
+          ],
+          "correctIndex": 1,
           "explanation": "The تاء مربوطة (ة) looks like the letter ه (hāʼ) with two dots added above it. This is why it is sometimes confused with ه in handwriting."
         }
       ]
@@ -84,31 +146,59 @@
       "explanation": "Arabic nouns are built on root-and-pattern systems. Most Arabic words are derived from a three-consonant root (called a جذر), and different patterns (أوزان) produce different but related meanings. For example, the root ك-ت-ب (k-t-b) relates to writing: كتاب (kitāb, book), كاتب (kātib, writer), مكتب (maktab, office/desk), مكتبة (maktaba, library), كتابة (kitāba, writing). The pattern مَفعَل (mafʿal) often indicates a place: مكتب (office), مطبخ (kitchen, from ط-ب-خ 'to cook'), ملعب (playground, from ل-ع-ب 'to play'). The pattern فاعل (fāʿil) often indicates the doer: كاتب (writer), طالب (student), عامل (worker). Understanding these patterns helps you guess the meanings of new words.",
       "tip": "When you learn a new word, try to identify its three-letter root. This will help you recognize related words and expand your vocabulary much faster. For example, if you know درس means 'to study', you can guess that مدرسة (school) and مدرّس (teacher) are related.",
       "examples": [
-        { "ar": "كتاب، كاتب، مكتبة", "en": "book, writer, library — all from the root ك-ت-ب (writing)", "highlight": "كتب" },
-        { "ar": "مطبخ", "en": "kitchen — pattern مَفعَل (place) from root ط-ب-خ (cooking)", "highlight": "م" },
-        { "ar": "طالب", "en": "student — pattern فاعل (doer) from root ط-ل-ب (seeking)", "highlight": "طالب" },
-        { "ar": "مدرسة، مدرّس، درس", "en": "school, teacher, lesson — all from root د-ر-س (studying)", "highlight": "درس" }
+        {
+          "ar": "كتاب، كاتب، مكتبة",
+          "en": "book, writer, library — all from the root ك-ت-ب (writing)",
+          "highlight": "كتب"
+        },
+        {
+          "ar": "مطبخ",
+          "en": "kitchen — pattern مَفعَل (place) from root ط-ب-خ (cooking)",
+          "highlight": "م"
+        },
+        {
+          "ar": "طالب",
+          "en": "student — pattern فاعل (doer) from root ط-ل-ب (seeking)",
+          "highlight": "طالب"
+        },
+        {
+          "ar": "مدرسة، مدرّس، درس",
+          "en": "school, teacher, lesson — all from root د-ر-س (studying)",
+          "highlight": "درس"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Most Arabic words are derived from a root of how many consonants?",
-          "options": ["Three", "Two", "Five"],
-          "correctIndex": 0,
+          "options": [
+            "Two",
+            "Three",
+            "Five"
+          ],
+          "correctIndex": 1,
           "explanation": "The vast majority of Arabic words are built from three-consonant roots (trilateral roots). Different vowel patterns and affixes are applied to these roots to create related words with different meanings."
         },
         {
           "type": "multiple-choice",
           "prompt": "The words كتاب (book), كاتب (writer), and مكتبة (library) all share which root?",
-          "options": ["ك-ت-ب", "م-ك-ت", "ك-ا-ب"],
-          "correctIndex": 0,
+          "options": [
+            "م-ك-ت",
+            "ك-ت-ب",
+            "ك-ا-ب"
+          ],
+          "correctIndex": 1,
           "explanation": "All three words share the root ك-ت-ب (k-t-b) which relates to writing. The different patterns around the root consonants create different but related meanings."
         },
         {
           "type": "multiple-choice",
           "prompt": "The pattern مَفعَل (as in مكتب, مطبخ, ملعب) typically indicates:",
-          "options": ["A place", "A person", "An action"],
-          "correctIndex": 0,
+          "options": [
+            "An action",
+            "A place",
+            "A person"
+          ],
+          "correctIndex": 1,
           "explanation": "The pattern مَفعَل often indicates a place associated with the root's meaning: مكتب (office/desk, from 'writing'), مطبخ (kitchen, from 'cooking'), ملعب (playground, from 'playing')."
         }
       ]

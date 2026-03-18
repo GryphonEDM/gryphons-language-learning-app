@@ -4,7 +4,9 @@
   "nameRu": "Сложные предложения",
   "icon": "🔗",
   "tier": "B2",
-  "prerequisites": ["verbs-mood"],
+  "prerequisites": [
+    "verbs-mood"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,26 +15,158 @@
       "tip": "Key conjunctions: и (and), но (but), или (or), потому что (because), чтобы (in order to), если (if), когда (when), хотя (although). A comma is required before subordinating conjunctions.",
       "explanation": "Russian conjunctions connect clauses: и (and), но (but), или (or), потому что (because), чтобы (in order to), если (if), когда (when), хотя (although). 'Чтобы' with different subjects requires the past tense form after it. A comma is required before subordinating conjunctions.",
       "examples": [
-        { "ru": "Я учусь, потому что хочу знать русский.", "en": "I study because I want to know Russian.", "highlight": "потому что" },
-        { "ru": "Он пришёл, чтобы помочь.", "en": "He came in order to help.", "highlight": "чтобы" },
-        { "ru": "Хотя было холодно, мы пошли гулять.", "en": "Although it was cold, we went for a walk.", "highlight": "Хотя" }
+        {
+          "ru": "Я учусь, потому что хочу знать русский.",
+          "en": "I study because I want to know Russian.",
+          "highlight": "потому что"
+        },
+        {
+          "ru": "Он пришёл, чтобы помочь.",
+          "en": "He came in order to help.",
+          "highlight": "чтобы"
+        },
+        {
+          "ru": "Хотя было холодно, мы пошли гулять.",
+          "en": "Although it was cold, we went for a walk.",
+          "highlight": "Хотя"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я пришёл, ___ помочь тебе. (in order to)", "options": ["чтобы", "потому что", "если"], "correctIndex": 0, "explanation": "'Чтобы' means 'in order to' and introduces a purpose clause." },
-        { "type": "fill-blank", "prompt": "Он не пришёл, ___ был болен. (because)", "acceptedAnswers": ["потому что", "так как"], "hint": "Reason/cause conjunction", "explanation": "'Потому что' and 'так как' both mean 'because'." },
-        { "type": "multiple-choice", "prompt": "___ ты хочешь, я помогу. (If)", "options": ["Если", "Чтобы", "Когда"], "correctIndex": 0, "explanation": "'Если' means 'if' for real conditions (not hypothetical 'если бы')." },
-        { "type": "transformation", "prompt": "Connect the sentences with 'хотя' (although):", "baseWord": "Он устал. Он продолжил работать.", "context": "___ он устал, он продолжил работать.", "acceptedAnswers": ["Хотя"], "hint": "'Although' at the beginning", "explanation": "'Хотя он устал' = although he was tired. 'Хотя' introduces a concessive clause." },
-        { "type": "fill-blank", "prompt": "Я не знаю, ___ он придёт. (whether/if)", "acceptedAnswers": ["ли"], "hint": "Introduces indirect yes/no questions", "explanation": "'Ли' converts a yes/no question into indirect speech: 'придёт ли' = whether he will come. Note: ли comes after the verb." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Он читает чтобы выучить язык.", "correctedText": "Он читает, чтобы выучить язык.", "acceptedAnswers": ["читает,"], "explanation": "A comma is needed before 'чтобы': 'Он читает, чтобы выучить язык.' Russian requires a comma before subordinating conjunctions." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "потому что", "right": "because" },
-          { "left": "чтобы", "right": "in order to" },
-          { "left": "хотя", "right": "although" },
-          { "left": "если", "right": "if" }
-        ], "explanation": "These four subordinating conjunctions are essential for complex sentences." },
-        { "type": "multiple-choice", "prompt": "Ты можешь ___ остаться, ___ уйти. (either...or)", "options": ["или...или", "и...и", "ни...ни"], "correctIndex": 0, "explanation": "'Или...или' means 'either...or'. 'И...и' = 'both...and'. 'Ни...ни' = 'neither...nor'." },
-        { "type": "fill-blank", "prompt": "___ я пришёл домой, мама уже готовила ужин. (When)", "acceptedAnswers": ["Когда"], "hint": "Time conjunction", "explanation": "'Когда' means 'when' and introduces a time clause." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I'm learning Russian because I love this language.", "words": ["Я", "учу", "русский", "потому", "что", "люблю", "этот", "язык"], "correctOrder": ["Я", "учу", "русский", "потому", "что", "люблю", "этот", "язык"], "distractors": ["чтобы", "так как"], "explanation": "'Потому что' (because) connects the two clauses. Note: 'потому что' is two words." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я пришёл, ___ помочь тебе. (in order to)",
+          "options": [
+            "чтобы",
+            "если",
+            "потому что"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Чтобы' means 'in order to' and introduces a purpose clause."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он не пришёл, ___ был болен. (because)",
+          "acceptedAnswers": [
+            "потому что",
+            "так как"
+          ],
+          "hint": "Reason/cause conjunction",
+          "explanation": "'Потому что' and 'так как' both mean 'because'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ ты хочешь, я помогу. (If)",
+          "options": [
+            "Когда",
+            "Чтобы",
+            "Если"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Если' means 'if' for real conditions (not hypothetical 'если бы')."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Connect the sentences with 'хотя' (although):",
+          "baseWord": "Он устал. Он продолжил работать.",
+          "context": "___ он устал, он продолжил работать.",
+          "acceptedAnswers": [
+            "Хотя"
+          ],
+          "hint": "'Although' at the beginning",
+          "explanation": "'Хотя он устал' = although he was tired. 'Хотя' introduces a concessive clause."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я не знаю, ___ он придёт. (whether/if)",
+          "acceptedAnswers": [
+            "ли"
+          ],
+          "hint": "Introduces indirect yes/no questions",
+          "explanation": "'Ли' converts a yes/no question into indirect speech: 'придёт ли' = whether he will come. Note: ли comes after the verb."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Он читает чтобы выучить язык.",
+          "correctedText": "Он читает, чтобы выучить язык.",
+          "acceptedAnswers": [
+            "читает,"
+          ],
+          "explanation": "A comma is needed before 'чтобы': 'Он читает, чтобы выучить язык.' Russian requires a comma before subordinating conjunctions."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "потому что",
+              "right": "because"
+            },
+            {
+              "left": "чтобы",
+              "right": "in order to"
+            },
+            {
+              "left": "хотя",
+              "right": "although"
+            },
+            {
+              "left": "если",
+              "right": "if"
+            }
+          ],
+          "explanation": "These four subordinating conjunctions are essential for complex sentences."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ты можешь ___ остаться, ___ уйти. (either...or)",
+          "options": [
+            "и...и",
+            "или...или",
+            "ни...ни"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Или...или' means 'either...or'. 'И...и' = 'both...and'. 'Ни...ни' = 'neither...nor'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ я пришёл домой, мама уже готовила ужин. (When)",
+          "acceptedAnswers": [
+            "Когда"
+          ],
+          "hint": "Time conjunction",
+          "explanation": "'Когда' means 'when' and introduces a time clause."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I'm learning Russian because I love this language.",
+          "words": [
+            "Я",
+            "учу",
+            "русский",
+            "потому",
+            "что",
+            "люблю",
+            "этот",
+            "язык"
+          ],
+          "correctOrder": [
+            "Я",
+            "учу",
+            "русский",
+            "потому",
+            "что",
+            "люблю",
+            "этот",
+            "язык"
+          ],
+          "distractors": [
+            "чтобы",
+            "так как"
+          ],
+          "explanation": "'Потому что' (because) connects the two clauses. Note: 'потому что' is two words."
+        }
       ]
     },
     {
@@ -41,26 +175,137 @@
       "tip": "который/которая/которое/которые agrees in gender and number with the noun it refers to, but its case depends on its role in the relative clause.",
       "explanation": "Relative clauses describe a noun using который/которая/которое/которые (which/that/who), что (that), где (where), куда (where to). 'Который' agrees in gender and number with the noun it modifies, but its case depends on its function in the subordinate clause.",
       "examples": [
-        { "ru": "Книга, которую я читаю, очень интересная.", "en": "The book that I'm reading is very interesting.", "highlight": "которую" },
-        { "ru": "Город, где я живу, очень красивый.", "en": "The city where I live is very beautiful.", "highlight": "где" },
-        { "ru": "Человек, который пришёл, — мой друг.", "en": "The person who came is my friend.", "highlight": "который" }
+        {
+          "ru": "Книга, которую я читаю, очень интересная.",
+          "en": "The book that I'm reading is very interesting.",
+          "highlight": "которую"
+        },
+        {
+          "ru": "Город, где я живу, очень красивый.",
+          "en": "The city where I live is very beautiful.",
+          "highlight": "где"
+        },
+        {
+          "ru": "Человек, который пришёл, — мой друг.",
+          "en": "The person who came is my friend.",
+          "highlight": "который"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Мальчик, ___ стоит там, — мой брат. (who/that, masc. nom.)", "options": ["который", "которая", "которое"], "correctIndex": 0, "explanation": "'Который' agrees with 'мальчик' (masculine nominative). It means 'who/that'." },
-        { "type": "fill-blank", "prompt": "Девушка, ___ я видел, была очень красивая. (whom, fem. acc.)", "acceptedAnswers": ["которую"], "hint": "Feminine accusative of который", "explanation": "'Которую' is the feminine accusative form of 'который', agreeing with 'девушка'." },
-        { "type": "transformation", "prompt": "Combine using a relative clause:", "baseWord": "Я купил книгу. Книга очень интересная.", "context": "Книга, ___ я купил, очень интересная.", "acceptedAnswers": ["которую"], "hint": "Feminine accusative (книгу → которую)", "explanation": "'Книга' is feminine; as the object of 'купил', the relative pronoun is accusative: которую." },
-        { "type": "multiple-choice", "prompt": "Город, ___ мы едем, очень далеко. (where to)", "options": ["куда", "где", "который"], "correctIndex": 0, "explanation": "'Куда' means 'where to' (direction). 'Где' means 'where' (location)." },
-        { "type": "fill-blank", "prompt": "Друг, с ___ я разговаривал, живёт в Москве. (whom, masc. inst.)", "acceptedAnswers": ["которым"], "hint": "Masculine instrumental of который", "explanation": "'С которым' = with whom. Instrumental masculine: который → которым." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Женщина, который пришла, — моя мама.", "correctedText": "Женщина, которая пришла, — моя мама.", "acceptedAnswers": ["которая"], "explanation": "'Женщина' is feminine, so the relative pronoun must be 'которая' (not masculine 'который')." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "который (masc. nom.)", "right": "who/which (masculine subject)" },
-          { "left": "которую (fem. acc.)", "right": "whom/which (feminine object)" },
-          { "left": "где", "right": "where (location)" },
-          { "left": "куда", "right": "where (direction)" }
-        ], "explanation": "'Который' declines for gender, number, and case. 'Где' and 'куда' are invariable." },
-        { "type": "fill-blank", "prompt": "Дети, ___ играют во дворе, очень шумные. (who, plural nom.)", "acceptedAnswers": ["которые"], "hint": "Plural nominative of который", "explanation": "'Которые' is the plural nominative, agreeing with 'дети' (children)." },
-        { "type": "multiple-choice", "prompt": "Ресторан, ___ мы ели, был очень дорогой. (where)", "options": ["где", "куда", "который"], "correctIndex": 0, "explanation": "'Где' means 'where' (location). We ate at that restaurant (location, not direction)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Человек, который помог мне, был очень добрый.", "acceptedAnswers": ["Человек, который помог мне, был очень добрый.", "Человек, который помог мне, был очень добрый"], "explanation": "'Который' agrees with 'человек' (masculine). The relative clause 'который помог мне' means 'who helped me'." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Мальчик, ___ стоит там, — мой брат. (who/that, masc. nom.)",
+          "options": [
+            "который",
+            "которое",
+            "которая"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Который' agrees with 'мальчик' (masculine nominative). It means 'who/that'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Девушка, ___ я видел, была очень красивая. (whom, fem. acc.)",
+          "acceptedAnswers": [
+            "которую"
+          ],
+          "hint": "Feminine accusative of который",
+          "explanation": "'Которую' is the feminine accusative form of 'который', agreeing with 'девушка'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Combine using a relative clause:",
+          "baseWord": "Я купил книгу. Книга очень интересная.",
+          "context": "Книга, ___ я купил, очень интересная.",
+          "acceptedAnswers": [
+            "которую"
+          ],
+          "hint": "Feminine accusative (книгу → которую)",
+          "explanation": "'Книга' is feminine; as the object of 'купил', the relative pronoun is accusative: которую."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Город, ___ мы едем, очень далеко. (where to)",
+          "options": [
+            "который",
+            "где",
+            "куда"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Куда' means 'where to' (direction). 'Где' means 'where' (location)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Друг, с ___ я разговаривал, живёт в Москве. (whom, masc. inst.)",
+          "acceptedAnswers": [
+            "которым"
+          ],
+          "hint": "Masculine instrumental of который",
+          "explanation": "'С которым' = with whom. Instrumental masculine: который → которым."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Женщина, который пришла, — моя мама.",
+          "correctedText": "Женщина, которая пришла, — моя мама.",
+          "acceptedAnswers": [
+            "которая"
+          ],
+          "explanation": "'Женщина' is feminine, so the relative pronoun must be 'которая' (not masculine 'который')."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "который (masc. nom.)",
+              "right": "who/which (masculine subject)"
+            },
+            {
+              "left": "которую (fem. acc.)",
+              "right": "whom/which (feminine object)"
+            },
+            {
+              "left": "где",
+              "right": "where (location)"
+            },
+            {
+              "left": "куда",
+              "right": "where (direction)"
+            }
+          ],
+          "explanation": "'Который' declines for gender, number, and case. 'Где' and 'куда' are invariable."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Дети, ___ играют во дворе, очень шумные. (who, plural nom.)",
+          "acceptedAnswers": [
+            "которые"
+          ],
+          "hint": "Plural nominative of который",
+          "explanation": "'Которые' is the plural nominative, agreeing with 'дети' (children)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ресторан, ___ мы ели, был очень дорогой. (where)",
+          "options": [
+            "куда",
+            "где",
+            "который"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Где' means 'where' (location). We ate at that restaurant (location, not direction)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Человек, который помог мне, был очень добрый.",
+          "acceptedAnswers": [
+            "Человек, который помог мне, был очень добрый.",
+            "Человек, который помог мне, был очень добрый"
+          ],
+          "explanation": "'Который' agrees with 'человек' (masculine). The relative clause 'который помог мне' means 'who helped me'."
+        }
       ]
     },
     {
@@ -69,26 +314,151 @@
       "tip": "Statements → что (that). Yes/no questions → particle ли. Commands → чтобы + past tense. Wh-questions keep the question word.",
       "explanation": "To convert direct speech to indirect speech, use 'что' (that) after verbs of speaking/thinking. Он сказал: «Я приду» → Он сказал, что придёт. Pronouns and tenses may shift. For questions, use 'ли' (whether) or question words. For commands, use 'чтобы' + past tense.",
       "examples": [
-        { "ru": "Он сказал, что придёт завтра.", "en": "He said that he would come tomorrow.", "highlight": "что придёт" },
-        { "ru": "Она спросила, голоден ли я.", "en": "She asked whether I was hungry.", "highlight": "ли" },
-        { "ru": "Они сказали, что живут в Москве.", "en": "They said they live in Moscow.", "highlight": "что живут" }
+        {
+          "ru": "Он сказал, что придёт завтра.",
+          "en": "He said that he would come tomorrow.",
+          "highlight": "что придёт"
+        },
+        {
+          "ru": "Она спросила, голоден ли я.",
+          "en": "She asked whether I was hungry.",
+          "highlight": "ли"
+        },
+        {
+          "ru": "Они сказали, что живут в Москве.",
+          "en": "They said they live in Moscow.",
+          "highlight": "что живут"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Он сказал: «Я приду». → Он сказал, ___ придёт.", "options": ["что он", "ли он", "если он"], "correctIndex": 0, "explanation": "Declarative indirect speech uses 'что' (that): Он сказал, что он придёт." },
-        { "type": "fill-blank", "prompt": "Она спросила, хочу ___ я есть. (whether — particle)", "acceptedAnswers": ["ли"], "hint": "For yes/no questions in indirect speech", "explanation": "'Ли' converts a yes/no question into indirect speech. It follows the keyword: 'хочу ли я'." },
-        { "type": "transformation", "prompt": "Convert to indirect speech:", "baseWord": "Мама сказала: «Иди домой!»", "context": "Мама сказала, ___ я шёл домой.", "acceptedAnswers": ["чтобы"], "hint": "Commands become чтобы + past tense", "explanation": "Imperatives in indirect speech use 'чтобы' + past tense: Иди! → чтобы я шёл." },
-        { "type": "multiple-choice", "prompt": "Он спросил: «Где ты живёшь?» → Он спросил, ___ я живу.", "options": ["где", "ли", "что"], "correctIndex": 0, "explanation": "Wh-questions keep the question word: 'где' (where) stays in indirect speech." },
-        { "type": "fill-blank", "prompt": "Учитель сказал, ___ мы должны учиться больше. (that)", "acceptedAnswers": ["что"], "hint": "Declarative indirect speech", "explanation": "'Что' introduces the reported statement after verbs of saying/thinking." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Он сказал что он придёт.", "correctedText": "Он сказал, что он придёт.", "acceptedAnswers": ["сказал, что"], "explanation": "A comma is required before 'что' in indirect speech: 'Он сказал, что он придёт.'" },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Он сказал: «Я голоден.»", "right": "Он сказал, что он голоден." },
-          { "left": "Она спросила: «Ты придёшь?»", "right": "Она спросила, приду ли я." },
-          { "left": "Мама сказала: «Ешь!»", "right": "Мама сказала, чтобы я ел." },
-          { "left": "Он спросил: «Где парк?»", "right": "Он спросил, где парк." }
-        ], "explanation": "Statements → что. Yes/no questions → ли (after the key word). Commands → чтобы + past. Wh-questions keep the question word." },
-        { "type": "fill-blank", "prompt": "Друг сказал, ___ он переехал в новый город. (that)", "acceptedAnswers": ["что"], "hint": "Reported statement", "explanation": "'Что' introduces the indirect statement: He said that he moved to a new city." },
-        { "type": "multiple-choice", "prompt": "Врач посоветовал, ___ я больше отдыхал. (that I rest more — command)", "options": ["чтобы", "что", "ли"], "correctIndex": 0, "explanation": "Advice/commands in indirect speech use 'чтобы' + past tense: чтобы я отдыхал." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She said that she will come tomorrow.", "words": ["Она", "сказала", "что", "придёт", "завтра"], "correctOrder": ["Она", "сказала", "что", "придёт", "завтра"], "distractors": ["ли", "чтобы"], "explanation": "Reported statement: сказала + что + future action." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Он сказал: «Я приду». → Он сказал, ___ придёт.",
+          "options": [
+            "что он",
+            "если он",
+            "ли он"
+          ],
+          "correctIndex": 0,
+          "explanation": "Declarative indirect speech uses 'что' (that): Он сказал, что он придёт."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Она спросила, хочу ___ я есть. (whether — particle)",
+          "acceptedAnswers": [
+            "ли"
+          ],
+          "hint": "For yes/no questions in indirect speech",
+          "explanation": "'Ли' converts a yes/no question into indirect speech. It follows the keyword: 'хочу ли я'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Convert to indirect speech:",
+          "baseWord": "Мама сказала: «Иди домой!»",
+          "context": "Мама сказала, ___ я шёл домой.",
+          "acceptedAnswers": [
+            "чтобы"
+          ],
+          "hint": "Commands become чтобы + past tense",
+          "explanation": "Imperatives in indirect speech use 'чтобы' + past tense: Иди! → чтобы я шёл."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Он спросил: «Где ты живёшь?» → Он спросил, ___ я живу.",
+          "options": [
+            "ли",
+            "где",
+            "что"
+          ],
+          "correctIndex": 1,
+          "explanation": "Wh-questions keep the question word: 'где' (where) stays in indirect speech."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Учитель сказал, ___ мы должны учиться больше. (that)",
+          "acceptedAnswers": [
+            "что"
+          ],
+          "hint": "Declarative indirect speech",
+          "explanation": "'Что' introduces the reported statement after verbs of saying/thinking."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Он сказал что он придёт.",
+          "correctedText": "Он сказал, что он придёт.",
+          "acceptedAnswers": [
+            "сказал, что"
+          ],
+          "explanation": "A comma is required before 'что' in indirect speech: 'Он сказал, что он придёт.'"
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Он сказал: «Я голоден.»",
+              "right": "Он сказал, что он голоден."
+            },
+            {
+              "left": "Она спросила: «Ты придёшь?»",
+              "right": "Она спросила, приду ли я."
+            },
+            {
+              "left": "Мама сказала: «Ешь!»",
+              "right": "Мама сказала, чтобы я ел."
+            },
+            {
+              "left": "Он спросил: «Где парк?»",
+              "right": "Он спросил, где парк."
+            }
+          ],
+          "explanation": "Statements → что. Yes/no questions → ли (after the key word). Commands → чтобы + past. Wh-questions keep the question word."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Друг сказал, ___ он переехал в новый город. (that)",
+          "acceptedAnswers": [
+            "что"
+          ],
+          "hint": "Reported statement",
+          "explanation": "'Что' introduces the indirect statement: He said that he moved to a new city."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Врач посоветовал, ___ я больше отдыхал. (that I rest more — command)",
+          "options": [
+            "чтобы",
+            "ли",
+            "что"
+          ],
+          "correctIndex": 0,
+          "explanation": "Advice/commands in indirect speech use 'чтобы' + past tense: чтобы я отдыхал."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She said that she will come tomorrow.",
+          "words": [
+            "Она",
+            "сказала",
+            "что",
+            "придёт",
+            "завтра"
+          ],
+          "correctOrder": [
+            "Она",
+            "сказала",
+            "что",
+            "придёт",
+            "завтра"
+          ],
+          "distractors": [
+            "ли",
+            "чтобы"
+          ],
+          "explanation": "Reported statement: сказала + что + future action."
+        }
       ]
     },
     {
@@ -97,26 +467,138 @@
       "tip": "In Russian, commas are required before all subordinating conjunctions (что, который, потому что, если, когда, хотя, чтобы, где, куда).",
       "explanation": "Now let's combine conjunctions, relative clauses, and indirect speech in longer, real-world sentences. Focus on correct punctuation (commas before subordinating conjunctions) and proper agreement of который.",
       "examples": [
-        { "ru": "Я думаю, что книга, которую ты мне дал, очень интересная.", "en": "I think the book you gave me is very interesting.", "highlight": "что...которую" },
-        { "ru": "Хотя он устал, он продолжил работать, потому что хотел закончить.", "en": "Although he was tired, he kept working because he wanted to finish.", "highlight": "Хотя...потому что" },
-        { "ru": "Если пойдёшь в магазин, купи хлеб, который я люблю.", "en": "If you go to the store, buy the bread that I like.", "highlight": "Если...который" }
+        {
+          "ru": "Я думаю, что книга, которую ты мне дал, очень интересная.",
+          "en": "I think the book you gave me is very interesting.",
+          "highlight": "что...которую"
+        },
+        {
+          "ru": "Хотя он устал, он продолжил работать, потому что хотел закончить.",
+          "en": "Although he was tired, he kept working because he wanted to finish.",
+          "highlight": "Хотя...потому что"
+        },
+        {
+          "ru": "Если пойдёшь в магазин, купи хлеб, который я люблю.",
+          "en": "If you go to the store, buy the bread that I like.",
+          "highlight": "Если...который"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я хочу поехать в город, ___ живёт мой друг. (where)", "options": ["где", "куда", "который"], "correctIndex": 0, "explanation": "'Где' = where (location). My friend lives there (location, not direction)." },
-        { "type": "fill-blank", "prompt": "___ было холодно, мы пошли на прогулку, ___ хотели подышать свежим воздухом. (Although...because)", "acceptedAnswers": ["Хотя...потому что", "Хотя...так как"], "hint": "Concession + reason", "explanation": "'Хотя' (although) + 'потому что/так как' (because) combine two subordinate clauses." },
-        { "type": "transformation", "prompt": "Combine into one complex sentence:", "baseWord": "Я купил книгу. Мой друг посоветовал эту книгу. Книга очень интересная.", "context": "Книга, ___ мой друг посоветовал, очень интересная.", "acceptedAnswers": ["которую"], "hint": "Feminine accusative relative pronoun", "explanation": "'Которую' refers to 'книга' (feminine) as the object of 'посоветовал' (recommended)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Он сказал что хотя он устал но придёт.", "correctedText": "Он сказал, что, хотя он устал, придёт.", "acceptedAnswers": ["Он сказал, что, хотя он устал, придёт."], "explanation": "With 'хотя' (although), you don't need 'но' (but). And commas are needed before subordinating conjunctions." },
-        { "type": "multiple-choice", "prompt": "Я не знаю, придёт ___ он ___ нет. (whether...or)", "options": ["ли...или", "или...или", "что...что"], "correctIndex": 0, "explanation": "'Ли...или нет' = whether...or not (in indirect questions)." },
-        { "type": "fill-blank", "prompt": "Учитель, ___ нас учит, сказал, ___ завтра будет контрольная. (who...that)", "acceptedAnswers": ["который...что"], "hint": "Relative clause + indirect speech", "explanation": "'Который' introduces the relative clause about the teacher. 'Что' introduces indirect speech." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Хотя он болен, он работает.", "right": "Although he's sick, he works." },
-          { "left": "Если пойдёт дождь, возьми зонт.", "right": "If it rains, take an umbrella." },
-          { "left": "Он учится, чтобы сдать экзамен.", "right": "He studies in order to pass the exam." },
-          { "left": "Я знаю человека, который здесь работает.", "right": "I know the person who works here." }
-        ], "explanation": "Each sentence combines a main clause with a subordinate clause using different conjunctions." },
-        { "type": "fill-blank", "prompt": "Я приду, ___ закончу работу. (when)", "acceptedAnswers": ["когда"], "hint": "Time conjunction", "explanation": "'Когда' (when) introduces a time clause: I'll come when I finish work." },
-        { "type": "multiple-choice", "prompt": "Which sentence is punctuated correctly?", "options": ["Я думаю, что он прав, хотя другие не согласны.", "Я думаю что он прав хотя другие не согласны.", "Я думаю, что он прав хотя другие не согласны."], "correctIndex": 0, "explanation": "Commas are required before each subordinating conjunction: before 'что' and before 'хотя'." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Если ты хочешь, чтобы я пришёл, скажи мне.", "acceptedAnswers": ["Если ты хочешь, чтобы я пришёл, скажи мне.", "Если ты хочешь, чтобы я пришёл, скажи мне"], "explanation": "This sentence combines 'если' (if) with 'чтобы' (so that) + past tense, and an imperative 'скажи' (tell)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я хочу поехать в город, ___ живёт мой друг. (where)",
+          "options": [
+            "куда",
+            "который",
+            "где"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Где' = where (location). My friend lives there (location, not direction)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ было холодно, мы пошли на прогулку, ___ хотели подышать свежим воздухом. (Although...because)",
+          "acceptedAnswers": [
+            "Хотя...потому что",
+            "Хотя...так как"
+          ],
+          "hint": "Concession + reason",
+          "explanation": "'Хотя' (although) + 'потому что/так как' (because) combine two subordinate clauses."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Combine into one complex sentence:",
+          "baseWord": "Я купил книгу. Мой друг посоветовал эту книгу. Книга очень интересная.",
+          "context": "Книга, ___ мой друг посоветовал, очень интересная.",
+          "acceptedAnswers": [
+            "которую"
+          ],
+          "hint": "Feminine accusative relative pronoun",
+          "explanation": "'Которую' refers to 'книга' (feminine) as the object of 'посоветовал' (recommended)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Он сказал что хотя он устал но придёт.",
+          "correctedText": "Он сказал, что, хотя он устал, придёт.",
+          "acceptedAnswers": [
+            "Он сказал, что, хотя он устал, придёт."
+          ],
+          "explanation": "With 'хотя' (although), you don't need 'но' (but). And commas are needed before subordinating conjunctions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я не знаю, придёт ___ он ___ нет. (whether...or)",
+          "options": [
+            "что...что",
+            "ли...или",
+            "или...или"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Ли...или нет' = whether...or not (in indirect questions)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Учитель, ___ нас учит, сказал, ___ завтра будет контрольная. (who...that)",
+          "acceptedAnswers": [
+            "который...что"
+          ],
+          "hint": "Relative clause + indirect speech",
+          "explanation": "'Который' introduces the relative clause about the teacher. 'Что' introduces indirect speech."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Хотя он болен, он работает.",
+              "right": "Although he's sick, he works."
+            },
+            {
+              "left": "Если пойдёт дождь, возьми зонт.",
+              "right": "If it rains, take an umbrella."
+            },
+            {
+              "left": "Он учится, чтобы сдать экзамен.",
+              "right": "He studies in order to pass the exam."
+            },
+            {
+              "left": "Я знаю человека, который здесь работает.",
+              "right": "I know the person who works here."
+            }
+          ],
+          "explanation": "Each sentence combines a main clause with a subordinate clause using different conjunctions."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я приду, ___ закончу работу. (when)",
+          "acceptedAnswers": [
+            "когда"
+          ],
+          "hint": "Time conjunction",
+          "explanation": "'Когда' (when) introduces a time clause: I'll come when I finish work."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is punctuated correctly?",
+          "options": [
+            "Я думаю что он прав хотя другие не согласны.",
+            "Я думаю, что он прав, хотя другие не согласны.",
+            "Я думаю, что он прав хотя другие не согласны."
+          ],
+          "correctIndex": 1,
+          "explanation": "Commas are required before each subordinating conjunction: before 'что' and before 'хотя'."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Если ты хочешь, чтобы я пришёл, скажи мне.",
+          "acceptedAnswers": [
+            "Если ты хочешь, чтобы я пришёл, скажи мне.",
+            "Если ты хочешь, чтобы я пришёл, скажи мне"
+          ],
+          "explanation": "This sentence combines 'если' (if) with 'чтобы' (so that) + past tense, and an imperative 'скажи' (tell)."
+        }
       ]
     }
   ]

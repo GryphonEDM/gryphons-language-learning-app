@@ -4,7 +4,9 @@
   "nameUk": "Місцевий і кличний",
   "icon": "📌",
   "tier": "B1",
-  "prerequisites": ["cases-dat-inst"],
+  "prerequisites": [
+    "cases-dat-inst"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -12,33 +14,180 @@
       "title": "Locative Case",
       "explanation": "The locative case (місцевий відмінок) always appears after prepositions: в/у (in), на (on/at), по (along/around), при (at/by). It answers 'where?' (де?), 'on what?' (на чому?), 'about what?' (по чому?). Masculine: -і (most) or -у (some); feminine: -і; neuter: -і or -у. Consonant alternations are common: к→ц, г→з, х→с before -і.",
       "examples": [
-        { "uk": "Я живу в Україні.", "en": "I live in Ukraine.", "highlight": "в Україні" },
-        { "uk": "Книга на столі.", "en": "The book is on the table.", "highlight": "на столі" },
-        { "uk": "Ми говоримо по телефону.", "en": "We are talking on the phone.", "highlight": "по телефону" }
+        {
+          "uk": "Я живу в Україні.",
+          "en": "I live in Ukraine.",
+          "highlight": "в Україні"
+        },
+        {
+          "uk": "Книга на столі.",
+          "en": "The book is on the table.",
+          "highlight": "на столі"
+        },
+        {
+          "uk": "Ми говоримо по телефону.",
+          "en": "We are talking on the phone.",
+          "highlight": "по телефону"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Він працює в ___. (банк – bank)", "options": ["банку", "банк", "банці"], "correctIndex": 0, "explanation": "Банк → банку in the locative. Some masculine nouns take -у (especially places, institutions)." },
-        { "type": "fill-blank", "prompt": "Ми живемо в ___. (місто – city)", "acceptedAnswers": ["місті"], "hint": "Neuter -о → -і in locative", "explanation": "Місто → місті. Neuter nouns ending in -о take -і in the locative." },
-        { "type": "fill-blank", "prompt": "Діти грають на ___. (вулиця – street)", "acceptedAnswers": ["вулиці"], "hint": "Feminine -я → -і", "explanation": "Вулиця → вулиці. Feminine nouns take -і in the locative." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Ми живемо на Україна.", "errorWord": "Україна", "acceptedAnswers": ["Україні"], "explanation": "After в/на (location), use the locative: Україна → Україні." },
-        { "type": "multiple-choice", "prompt": "Квіти ростуть у ___. (парк – park)", "options": ["парку", "парці", "парк"], "correctIndex": 0, "explanation": "Парк → парку (locative). Location/place nouns often take -у." },
-        { "type": "transformation", "prompt": "Put the noun in the locative case:", "baseWord": "бібліотека", "context": "Вона працює в ___.", "acceptedAnswers": ["бібліотеці"], "hint": "Feminine -а → -і; к → ц before і", "explanation": "Бібліотека → бібліотеці. The consonant к changes to ц before the ending -і." },
-        { "type": "matching", "prompt": "Match the nominative to the locative form:", "pairs": [
-          { "left": "школа", "right": "школі" },
-          { "left": "книга", "right": "книзі" },
-          { "left": "рука", "right": "руці" },
-          { "left": "друг", "right": "другу / друзі" },
-          { "left": "ріка", "right": "ріці" }
-        ], "explanation": "Consonant changes before -і: книга → книзі (г→з), рука → руці (к→ц), ріка → ріці (к→ц). Школа → школі (no change). Друг → другу or друзі." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "We study at the university.", "words": ["Ми", "навчаємося", "в", "університеті"], "distractors": ["університет"], "validOrders": [["Ми", "навчаємося", "в", "університеті"]], "explanation": "В університеті — locative. Університет → університеті (-і ending)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Вона сидить на лавці в парку.", "acceptedAnswers": ["Вона сидить на лавці в парку.", "Вона сидить на лавці в парку"], "explanation": "На лавці (on the bench): лавка → лавці (к→ц). В парку: парк → парку." },
-        { "type": "table-fill", "prompt": "Complete the locative forms:", "headers": ["Nominative", "Locative (в/на ...)"], "rows": [
-          { "label": "дім", "answer": "домі", "prefilled": false },
-          { "label": "дорога", "answer": "дорозі", "prefilled": false },
-          { "label": "озеро", "answer": "озері", "prefilled": false },
-          { "label": "аптека", "answer": "аптеці", "prefilled": false },
-          { "label": "ліс", "answer": "лісі", "prefilled": false }
-        ], "explanation": "Дім → домі (stem change); дорога → дорозі (г→з); озеро → озері; аптека → аптеці (к→ц); ліс → лісі." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Він працює в ___. (банк – bank)",
+          "options": [
+            "банці",
+            "банк",
+            "банку"
+          ],
+          "correctIndex": 2,
+          "explanation": "Банк → банку in the locative. Some masculine nouns take -у (especially places, institutions)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми живемо в ___. (місто – city)",
+          "acceptedAnswers": [
+            "місті"
+          ],
+          "hint": "Neuter -о → -і in locative",
+          "explanation": "Місто → місті. Neuter nouns ending in -о take -і in the locative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Діти грають на ___. (вулиця – street)",
+          "acceptedAnswers": [
+            "вулиці"
+          ],
+          "hint": "Feminine -я → -і",
+          "explanation": "Вулиця → вулиці. Feminine nouns take -і in the locative."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Ми живемо на Україна.",
+          "errorWord": "Україна",
+          "acceptedAnswers": [
+            "Україні"
+          ],
+          "explanation": "After в/на (location), use the locative: Україна → Україні."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Квіти ростуть у ___. (парк – park)",
+          "options": [
+            "парку",
+            "парк",
+            "парці"
+          ],
+          "correctIndex": 0,
+          "explanation": "Парк → парку (locative). Location/place nouns often take -у."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the locative case:",
+          "baseWord": "бібліотека",
+          "context": "Вона працює в ___.",
+          "acceptedAnswers": [
+            "бібліотеці"
+          ],
+          "hint": "Feminine -а → -і; к → ц before і",
+          "explanation": "Бібліотека → бібліотеці. The consonant к changes to ц before the ending -і."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative to the locative form:",
+          "pairs": [
+            {
+              "left": "школа",
+              "right": "школі"
+            },
+            {
+              "left": "книга",
+              "right": "книзі"
+            },
+            {
+              "left": "рука",
+              "right": "руці"
+            },
+            {
+              "left": "друг",
+              "right": "другу / друзі"
+            },
+            {
+              "left": "ріка",
+              "right": "ріці"
+            }
+          ],
+          "explanation": "Consonant changes before -і: книга → книзі (г→з), рука → руці (к→ц), ріка → ріці (к→ц). Школа → школі (no change). Друг → другу or друзі."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "We study at the university.",
+          "words": [
+            "Ми",
+            "навчаємося",
+            "в",
+            "університеті"
+          ],
+          "distractors": [
+            "університет"
+          ],
+          "validOrders": [
+            [
+              "Ми",
+              "навчаємося",
+              "в",
+              "університеті"
+            ]
+          ],
+          "explanation": "В університеті — locative. Університет → університеті (-і ending)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Вона сидить на лавці в парку.",
+          "acceptedAnswers": [
+            "Вона сидить на лавці в парку.",
+            "Вона сидить на лавці в парку"
+          ],
+          "explanation": "На лавці (on the bench): лавка → лавці (к→ц). В парку: парк → парку."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the locative forms:",
+          "headers": [
+            "Nominative",
+            "Locative (в/на ...)"
+          ],
+          "rows": [
+            {
+              "label": "дім",
+              "answer": "домі",
+              "prefilled": false
+            },
+            {
+              "label": "дорога",
+              "answer": "дорозі",
+              "prefilled": false
+            },
+            {
+              "label": "озеро",
+              "answer": "озері",
+              "prefilled": false
+            },
+            {
+              "label": "аптека",
+              "answer": "аптеці",
+              "prefilled": false
+            },
+            {
+              "label": "ліс",
+              "answer": "лісі",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Дім → домі (stem change); дорога → дорозі (г→з); озеро → озері; аптека → аптеці (к→ц); ліс → лісі."
+        }
       ]
     },
     {
@@ -46,33 +195,183 @@
       "title": "Vocative Case",
       "explanation": "The vocative case (кличний відмінок) is used for direct address — calling or speaking to someone. It is unique to Ukrainian (and some other Slavic languages). Masculine -о → -е (Петро → Петре), consonant → -е or -у; feminine -а → -о (мама → мамо), -я → -е (Таня → Тане). It's used constantly in everyday Ukrainian speech.",
       "examples": [
-        { "uk": "Мамо, де ти?", "en": "Mom, where are you?", "highlight": "Мамо" },
-        { "uk": "Тарасе, іди сюди!", "en": "Taras, come here!", "highlight": "Тарасе" },
-        { "uk": "Друже, допоможи!", "en": "Friend, help!", "highlight": "Друже" }
+        {
+          "uk": "Мамо, де ти?",
+          "en": "Mom, where are you?",
+          "highlight": "Мамо"
+        },
+        {
+          "uk": "Тарасе, іди сюди!",
+          "en": "Taras, come here!",
+          "highlight": "Тарасе"
+        },
+        {
+          "uk": "Друже, допоможи!",
+          "en": "Friend, help!",
+          "highlight": "Друже"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "___, допоможи мені! (Оксана)", "options": ["Оксано", "Оксана", "Оксані"], "correctIndex": 0, "explanation": "Feminine names ending in -а change to -о in the vocative: Оксана → Оксано." },
-        { "type": "fill-blank", "prompt": "___, як справи? (Андрій)", "acceptedAnswers": ["Андрію"], "hint": "Masculine names ending in -ій → -ію", "explanation": "Андрій → Андрію. Masculine names/nouns ending in -й take -ю in the vocative." },
-        { "type": "fill-blank", "prompt": "___, послухай! (тато)", "acceptedAnswers": ["Тату", "тату"], "hint": "Masculine -о → -у", "explanation": "Тато → тату. Masculine nouns ending in -о take -у in the vocative." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Марія, іди сюди!", "errorWord": "Марія", "acceptedAnswers": ["Маріє"], "explanation": "Feminine names ending in -ія take -іє in the vocative: Марія → Маріє." },
-        { "type": "multiple-choice", "prompt": "___, ти вдома? (сестра – sister)", "options": ["Сестро", "Сестра", "Сестрі"], "correctIndex": 0, "explanation": "Feminine nouns ending in -а → -о in vocative: сестра → сестро." },
-        { "type": "matching", "prompt": "Match the name to its vocative form:", "pairs": [
-          { "left": "Ірина", "right": "Ірино" },
-          { "left": "Петро", "right": "Петре" },
-          { "left": "Олег", "right": "Олеже" },
-          { "left": "Наталя", "right": "Наталю" },
-          { "left": "Іван", "right": "Іване" }
-        ], "explanation": "Ірина→Ірино (-а→-о); Петро→Петре (-о→-е); Олег→Олеже (г→ж+е); Наталя→Наталю (-я→-ю); Іван→Іване (add -е)." },
-        { "type": "transformation", "prompt": "Form the vocative:", "baseWord": "друг", "context": "___, чекай на мене!", "acceptedAnswers": ["Друже", "друже"], "hint": "Masculine: г → ж + е", "explanation": "Друг → друже. Before the vocative -е, г changes to ж." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Grandma, tell me a story!", "words": ["Бабусю", "розкажи", "мені", "казку"], "distractors": ["Бабуся"], "validOrders": [["Бабусю", "розкажи", "мені", "казку"]], "explanation": "Бабуся → бабусю in the vocative (-я → -ю). Direct address form." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Друже, ходімо разом!", "acceptedAnswers": ["Друже, ходімо разом!", "Друже ходімо разом!", "Друже, ходімо разом"], "explanation": "Друг → друже in the vocative (г→ж+е). Ходімо = let's go." },
-        { "type": "table-fill", "prompt": "Complete the vocative forms:", "headers": ["Nominative", "Vocative"], "rows": [
-          { "label": "мама", "answer": "мамо", "prefilled": false },
-          { "label": "брат", "answer": "брате", "prefilled": false },
-          { "label": "Софія", "answer": "Софіє", "prefilled": false },
-          { "label": "пан (Mr.)", "answer": "пане", "prefilled": false },
-          { "label": "Богдан", "answer": "Богдане", "prefilled": false }
-        ], "explanation": "Мама→мамо; брат→брате; Софія→Софіє; пан→пане; Богдан→Богдане." }
+        {
+          "type": "multiple-choice",
+          "prompt": "___, допоможи мені! (Оксана)",
+          "options": [
+            "Оксані",
+            "Оксано",
+            "Оксана"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feminine names ending in -а change to -о in the vocative: Оксана → Оксано."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___, як справи? (Андрій)",
+          "acceptedAnswers": [
+            "Андрію"
+          ],
+          "hint": "Masculine names ending in -ій → -ію",
+          "explanation": "Андрій → Андрію. Masculine names/nouns ending in -й take -ю in the vocative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___, послухай! (тато)",
+          "acceptedAnswers": [
+            "Тату",
+            "тату"
+          ],
+          "hint": "Masculine -о → -у",
+          "explanation": "Тато → тату. Masculine nouns ending in -о take -у in the vocative."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Марія, іди сюди!",
+          "errorWord": "Марія",
+          "acceptedAnswers": [
+            "Маріє"
+          ],
+          "explanation": "Feminine names ending in -ія take -іє in the vocative: Марія → Маріє."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___, ти вдома? (сестра – sister)",
+          "options": [
+            "Сестрі",
+            "Сестра",
+            "Сестро"
+          ],
+          "correctIndex": 2,
+          "explanation": "Feminine nouns ending in -а → -о in vocative: сестра → сестро."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the name to its vocative form:",
+          "pairs": [
+            {
+              "left": "Ірина",
+              "right": "Ірино"
+            },
+            {
+              "left": "Петро",
+              "right": "Петре"
+            },
+            {
+              "left": "Олег",
+              "right": "Олеже"
+            },
+            {
+              "left": "Наталя",
+              "right": "Наталю"
+            },
+            {
+              "left": "Іван",
+              "right": "Іване"
+            }
+          ],
+          "explanation": "Ірина→Ірино (-а→-о); Петро→Петре (-о→-е); Олег→Олеже (г→ж+е); Наталя→Наталю (-я→-ю); Іван→Іване (add -е)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the vocative:",
+          "baseWord": "друг",
+          "context": "___, чекай на мене!",
+          "acceptedAnswers": [
+            "Друже",
+            "друже"
+          ],
+          "hint": "Masculine: г → ж + е",
+          "explanation": "Друг → друже. Before the vocative -е, г changes to ж."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Grandma, tell me a story!",
+          "words": [
+            "Бабусю",
+            "розкажи",
+            "мені",
+            "казку"
+          ],
+          "distractors": [
+            "Бабуся"
+          ],
+          "validOrders": [
+            [
+              "Бабусю",
+              "розкажи",
+              "мені",
+              "казку"
+            ]
+          ],
+          "explanation": "Бабуся → бабусю in the vocative (-я → -ю). Direct address form."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Друже, ходімо разом!",
+          "acceptedAnswers": [
+            "Друже, ходімо разом!",
+            "Друже ходімо разом!",
+            "Друже, ходімо разом"
+          ],
+          "explanation": "Друг → друже in the vocative (г→ж+е). Ходімо = let's go."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the vocative forms:",
+          "headers": [
+            "Nominative",
+            "Vocative"
+          ],
+          "rows": [
+            {
+              "label": "мама",
+              "answer": "мамо",
+              "prefilled": false
+            },
+            {
+              "label": "брат",
+              "answer": "брате",
+              "prefilled": false
+            },
+            {
+              "label": "Софія",
+              "answer": "Софіє",
+              "prefilled": false
+            },
+            {
+              "label": "пан (Mr.)",
+              "answer": "пане",
+              "prefilled": false
+            },
+            {
+              "label": "Богдан",
+              "answer": "Богдане",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Мама→мамо; брат→брате; Софія→Софіє; пан→пане; Богдан→Богдане."
+        }
       ]
     },
     {
@@ -80,35 +379,196 @@
       "title": "All Seven Cases Overview",
       "explanation": "Ukrainian has seven grammatical cases: 1) Називний (Nominative) — subject; 2) Родовий (Genitive) — possession, absence; 3) Давальний (Dative) — indirect object; 4) Знахідний (Accusative) — direct object; 5) Орудний (Instrumental) — means/tool; 6) Місцевий (Locative) — location; 7) Кличний (Vocative) — direct address. Practice identifying which case is needed in each context.",
       "examples": [
-        { "uk": "Мамо, дай мені книгу брата!", "en": "Mom, give me brother's book!", "highlight": "Мамо" },
-        { "uk": "Книга лежить на столі.", "en": "The book is on the table.", "highlight": "столі" },
-        { "uk": "Він пише ручкою.", "en": "He writes with a pen.", "highlight": "ручкою" }
+        {
+          "uk": "Мамо, дай мені книгу брата!",
+          "en": "Mom, give me brother's book!",
+          "highlight": "Мамо"
+        },
+        {
+          "uk": "Книга лежить на столі.",
+          "en": "The book is on the table.",
+          "highlight": "столі"
+        },
+        {
+          "uk": "Він пише ручкою.",
+          "en": "He writes with a pen.",
+          "highlight": "ручкою"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which case is 'мамі' in the sentence 'Я дав квіти мамі'?", "options": ["Dative (Давальний)", "Genitive (Родовий)", "Locative (Місцевий)"], "correctIndex": 0, "explanation": "Мамі here is dative — 'gave flowers TO mom'. Мама → мамі (dative = to whom?)." },
-        { "type": "fill-blank", "prompt": "Identify the case: 'Книга лежить на столі.' — столі is in the ___ case.", "acceptedAnswers": ["locative", "місцевий", "Locative", "Місцевий", "місцевому"], "hint": "After на (location) = ?", "explanation": "На столі — locative case. На + location always triggers the locative." },
-        { "type": "multiple-choice", "prompt": "In 'Тарасе, іди додому!', which case is 'Тарасе'?", "options": ["Vocative (Кличний)", "Nominative (Називний)", "Accusative (Знахідний)"], "correctIndex": 0, "explanation": "Тарасе is vocative — direct address. Тарас → Тарасе." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я бачу красива дівчина.", "errorWord": "дівчина", "acceptedAnswers": ["дівчину"], "explanation": "Бачити (to see) takes the accusative: дівчина → дівчину (feminine -а → -у)." },
-        { "type": "matching", "prompt": "Match each sentence fragment to the case used:", "pairs": [
-          { "left": "книга брата (brother's book)", "right": "Genitive" },
-          { "left": "пишу ручкою (write with pen)", "right": "Instrumental" },
-          { "left": "Іване! (Ivan!)", "right": "Vocative" },
-          { "left": "на столі (on the table)", "right": "Locative" },
-          { "left": "дав другу (gave to friend)", "right": "Dative" }
-        ], "explanation": "Брата=genitive (possession); ручкою=instrumental (tool); Іване=vocative (address); столі=locative (location); другу=dative (recipient)." },
-        { "type": "transformation", "prompt": "Put 'сестра' in the correct case:", "baseWord": "сестра", "context": "Немає ___.", "acceptedAnswers": ["сестри"], "hint": "Немає + ? case", "explanation": "Немає requires the genitive: сестра → сестри." },
-        { "type": "fill-blank", "prompt": "___ працює в школі. (вчитель — subject of sentence)", "acceptedAnswers": ["Вчитель"], "hint": "Subject = nominative", "explanation": "The subject of the sentence is in the nominative case: вчитель (no change)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Olena, give the book to Andriy!", "words": ["Олено", "дай", "книгу", "Андрієві"], "distractors": ["Олена", "Андрій"], "validOrders": [["Олено", "дай", "книгу", "Андрієві"]], "explanation": "Олено (vocative), книгу (accusative — direct object), Андрієві (dative — indirect object/recipient)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Друже, розкажи мені про цю книгу.", "acceptedAnswers": ["Друже, розкажи мені про цю книгу.", "Друже розкажи мені про цю книгу.", "Друже, розкажи мені про цю книгу"], "explanation": "Друже (vocative), мені (dative), книгу (accusative after про). Multiple cases in one sentence!" },
-        { "type": "table-fill", "prompt": "Complete all seven cases of 'книга' (book):", "headers": ["Case", "Form"], "rows": [
-          { "label": "Називний (Nominative)", "answer": "книга", "prefilled": true },
-          { "label": "Родовий (Genitive)", "answer": "книги", "prefilled": false },
-          { "label": "Давальний (Dative)", "answer": "книзі", "prefilled": false },
-          { "label": "Знахідний (Accusative)", "answer": "книгу", "prefilled": false },
-          { "label": "Орудний (Instrumental)", "answer": "книгою", "prefilled": false },
-          { "label": "Місцевий (Locative)", "answer": "книзі", "prefilled": false },
-          { "label": "Кличний (Vocative)", "answer": "книго", "prefilled": false }
-        ], "explanation": "Книга: nom. книга, gen. книги, dat. книзі (г→з), acc. книгу, inst. книгою, loc. книзі (г→з), voc. книго. Note: dative and locative forms are the same." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which case is 'мамі' in the sentence 'Я дав квіти мамі'?",
+          "options": [
+            "Dative (Давальний)",
+            "Genitive (Родовий)",
+            "Locative (Місцевий)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Мамі here is dative — 'gave flowers TO mom'. Мама → мамі (dative = to whom?)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Identify the case: 'Книга лежить на столі.' — столі is in the ___ case.",
+          "acceptedAnswers": [
+            "locative",
+            "місцевий",
+            "Locative",
+            "Місцевий",
+            "місцевому"
+          ],
+          "hint": "After на (location) = ?",
+          "explanation": "На столі — locative case. На + location always triggers the locative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'Тарасе, іди додому!', which case is 'Тарасе'?",
+          "options": [
+            "Nominative (Називний)",
+            "Vocative (Кличний)",
+            "Accusative (Знахідний)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Тарасе is vocative — direct address. Тарас → Тарасе."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я бачу красива дівчина.",
+          "errorWord": "дівчина",
+          "acceptedAnswers": [
+            "дівчину"
+          ],
+          "explanation": "Бачити (to see) takes the accusative: дівчина → дівчину (feminine -а → -у)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each sentence fragment to the case used:",
+          "pairs": [
+            {
+              "left": "книга брата (brother's book)",
+              "right": "Genitive"
+            },
+            {
+              "left": "пишу ручкою (write with pen)",
+              "right": "Instrumental"
+            },
+            {
+              "left": "Іване! (Ivan!)",
+              "right": "Vocative"
+            },
+            {
+              "left": "на столі (on the table)",
+              "right": "Locative"
+            },
+            {
+              "left": "дав другу (gave to friend)",
+              "right": "Dative"
+            }
+          ],
+          "explanation": "Брата=genitive (possession); ручкою=instrumental (tool); Іване=vocative (address); столі=locative (location); другу=dative (recipient)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put 'сестра' in the correct case:",
+          "baseWord": "сестра",
+          "context": "Немає ___.",
+          "acceptedAnswers": [
+            "сестри"
+          ],
+          "hint": "Немає + ? case",
+          "explanation": "Немає requires the genitive: сестра → сестри."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ працює в школі. (вчитель — subject of sentence)",
+          "acceptedAnswers": [
+            "Вчитель"
+          ],
+          "hint": "Subject = nominative",
+          "explanation": "The subject of the sentence is in the nominative case: вчитель (no change)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Olena, give the book to Andriy!",
+          "words": [
+            "Олено",
+            "дай",
+            "книгу",
+            "Андрієві"
+          ],
+          "distractors": [
+            "Олена",
+            "Андрій"
+          ],
+          "validOrders": [
+            [
+              "Олено",
+              "дай",
+              "книгу",
+              "Андрієві"
+            ]
+          ],
+          "explanation": "Олено (vocative), книгу (accusative — direct object), Андрієві (dative — indirect object/recipient)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Друже, розкажи мені про цю книгу.",
+          "acceptedAnswers": [
+            "Друже, розкажи мені про цю книгу.",
+            "Друже розкажи мені про цю книгу.",
+            "Друже, розкажи мені про цю книгу"
+          ],
+          "explanation": "Друже (vocative), мені (dative), книгу (accusative after про). Multiple cases in one sentence!"
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete all seven cases of 'книга' (book):",
+          "headers": [
+            "Case",
+            "Form"
+          ],
+          "rows": [
+            {
+              "label": "Називний (Nominative)",
+              "answer": "книга",
+              "prefilled": true
+            },
+            {
+              "label": "Родовий (Genitive)",
+              "answer": "книги",
+              "prefilled": false
+            },
+            {
+              "label": "Давальний (Dative)",
+              "answer": "книзі",
+              "prefilled": false
+            },
+            {
+              "label": "Знахідний (Accusative)",
+              "answer": "книгу",
+              "prefilled": false
+            },
+            {
+              "label": "Орудний (Instrumental)",
+              "answer": "книгою",
+              "prefilled": false
+            },
+            {
+              "label": "Місцевий (Locative)",
+              "answer": "книзі",
+              "prefilled": false
+            },
+            {
+              "label": "Кличний (Vocative)",
+              "answer": "книго",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Книга: nom. книга, gen. книги, dat. книзі (г→з), acc. книгу, inst. книгою, loc. книзі (г→з), voc. книго. Note: dative and locative forms are the same."
+        }
       ]
     }
   ]

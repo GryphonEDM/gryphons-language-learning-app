@@ -4,7 +4,9 @@
   "nameEs": "Verbos como Gustar",
   "icon": "❤️",
   "tier": "A2",
-  "prerequisites": ["pronouns"],
+  "prerequisites": [
+    "pronouns"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,68 +15,126 @@
       "explanation": "In English we say 'I like coffee,' but Spanish works the opposite way: the thing you like is the grammatical subject, and you are the indirect object. So 'Me gusta el café' literally means 'Coffee pleases me.' Because the subject is 'el café' (singular), the verb is gusta (singular). When the subject is plural — 'los gatos' — the verb becomes gustan: 'Me gustan los gatos.' The indirect object pronouns used are: me (to me), te (to you), le (to him/her/you formal), nos (to us), os (to you all — Spain), les (to them/you all).",
       "tip": "Ask yourself: what is the subject? If the subject is singular or an infinitive, use gusta. If the subject is plural, use gustan.",
       "examples": [
-        { "es": "Me gusta el café.", "en": "I like coffee. (Coffee pleases me.)", "highlight": "gusta" },
-        { "es": "Me gustan los gatos.", "en": "I like cats. (Cats please me.)", "highlight": "gustan" },
-        { "es": "Te gusta la música.", "en": "You like music.", "highlight": "Te gusta" },
-        { "es": "Le gusta bailar.", "en": "He/She likes to dance.", "highlight": "Le gusta" },
-        { "es": "Nos gustan las películas.", "en": "We like movies.", "highlight": "Nos gustan" },
-        { "es": "Les gusta el fútbol.", "en": "They like soccer.", "highlight": "Les gusta" }
+        {
+          "es": "Me gusta el café.",
+          "en": "I like coffee. (Coffee pleases me.)",
+          "highlight": "gusta"
+        },
+        {
+          "es": "Me gustan los gatos.",
+          "en": "I like cats. (Cats please me.)",
+          "highlight": "gustan"
+        },
+        {
+          "es": "Te gusta la música.",
+          "en": "You like music.",
+          "highlight": "Te gusta"
+        },
+        {
+          "es": "Le gusta bailar.",
+          "en": "He/She likes to dance.",
+          "highlight": "Le gusta"
+        },
+        {
+          "es": "Nos gustan las películas.",
+          "en": "We like movies.",
+          "highlight": "Nos gustan"
+        },
+        {
+          "es": "Les gusta el fútbol.",
+          "en": "They like soccer.",
+          "highlight": "Les gusta"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct verb: '___ el chocolate.' (I like chocolate.)",
-          "options": ["Me gusta", "Me gustan", "Me gusto", "Te gusta"],
-          "correctIndex": 0,
+          "options": [
+            "Me gustan",
+            "Te gusta",
+            "Me gusto",
+            "Me gusta"
+          ],
+          "correctIndex": 3,
           "explanation": "'el chocolate' is singular, so the verb is gusta. The indirect object pronoun for 'I' is me: Me gusta el chocolate."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct verb: '___ los libros.' (She likes books.)",
-          "options": ["Le gustan", "Le gusta", "Les gustan", "Me gustan"],
-          "correctIndex": 0,
+          "options": [
+            "Le gusta",
+            "Le gustan",
+            "Les gustan",
+            "Me gustan"
+          ],
+          "correctIndex": 1,
           "explanation": "'los libros' is plural, so the verb must be gustan. The pronoun for 'her' is le: Le gustan los libros."
         },
         {
           "type": "fill-blank",
           "prompt": "___ gusta ___ pizza. (We like pizza.)",
-          "acceptedAnswers": ["Nos gusta la", "nos gusta la"],
+          "acceptedAnswers": [
+            "Nos gusta la",
+            "nos gusta la"
+          ],
           "hint": "The pronoun for 'us' is nos. 'Pizza' is singular and feminine.",
           "explanation": "'la pizza' is singular, so use gusta. The pronoun for 'we' is nos: Nos gusta la pizza."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is correct? 'You (plural) like the dogs.'",
-          "options": ["Les gustan los perros.", "Les gusta los perros.", "Le gustan los perros.", "Os gustan los perros."],
-          "correctIndex": 3,
+          "options": [
+            "Le gustan los perros.",
+            "Les gustan los perros.",
+            "Os gustan los perros.",
+            "Les gusta los perros."
+          ],
+          "correctIndex": 2,
           "explanation": "In Spain, 'vosotros' uses 'os'. 'los perros' is plural, so gustan: Os gustan los perros. (Les gustan is used in Latin America.)"
         },
         {
           "type": "fill-blank",
           "prompt": "___ gusta correr. (They like to run.)",
-          "acceptedAnswers": ["Les", "les"],
+          "acceptedAnswers": [
+            "Les",
+            "les"
+          ],
           "hint": "The pronoun for 'them' is les. With an infinitive verb as subject, always use gusta (singular).",
           "explanation": "An infinitive (correr) always acts as a singular subject, so gusta. 'Them' = les: Les gusta correr."
         },
         {
           "type": "multiple-choice",
           "prompt": "Translate: 'I like the flowers.'",
-          "options": ["Me gustan las flores.", "Me gusta las flores.", "Te gustan las flores.", "Me gustan la flor."],
+          "options": [
+            "Me gustan las flores.",
+            "Te gustan las flores.",
+            "Me gusta las flores.",
+            "Me gustan la flor."
+          ],
           "correctIndex": 0,
           "explanation": "'las flores' is plural, so gustan. Pronoun for 'I' is me: Me gustan las flores."
         },
         {
           "type": "fill-blank",
           "prompt": "___ gustan los deportes. (You (informal) like sports.)",
-          "acceptedAnswers": ["Te", "te"],
+          "acceptedAnswers": [
+            "Te",
+            "te"
+          ],
           "hint": "The pronoun for informal 'you' (tú) is te.",
           "explanation": "Informal 'you' uses te. 'los deportes' is plural, so gustan: Te gustan los deportes."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why do we say 'Me gusta leer' and not 'Me gustan leer'?",
-          "options": ["Because an infinitive is always a singular subject", "Because leer is irregular", "Because me requires gusta", "Because we only use gustan with nouns"],
-          "correctIndex": 0,
+          "options": [
+            "Because we only use gustan with nouns",
+            "Because leer is irregular",
+            "Because me requires gusta",
+            "Because an infinitive is always a singular subject"
+          ],
+          "correctIndex": 3,
           "explanation": "An infinitive verb (like leer, correr, bailar) functions as a singular noun when it is the subject, so the verb is always gusta."
         }
       ]
@@ -85,68 +145,126 @@
       "explanation": "Many Spanish verbs follow the exact same reverse structure as gustar. The most common are: encantar (to love / to really like), molestar (to bother / to annoy), interesar (to interest), doler (to hurt / to ache), parecer (to seem), and quedar (to fit / to look on someone, or to have left). They all use the same indirect object pronouns (me, te, le, nos, os, les) and agree with the thing/person that is the real subject. For example: 'Me duele la cabeza' (My head hurts — literally 'the head hurts me') and 'Te encanta el chocolate' (You love chocolate).",
       "tip": "For doler, the body part is the subject: 'Me duelen los pies' (My feet hurt) because 'los pies' is plural. For parecer, the adjective agrees with the subject, not with you.",
       "examples": [
-        { "es": "Me encanta la música clásica.", "en": "I love classical music.", "highlight": "encanta" },
-        { "es": "Le molesta el ruido.", "en": "The noise bothers him/her.", "highlight": "molesta" },
-        { "es": "Nos interesan las ciencias.", "en": "We are interested in science.", "highlight": "interesan" },
-        { "es": "Me duele la espalda.", "en": "My back hurts.", "highlight": "duele" },
-        { "es": "Me parecen interesantes.", "en": "They seem interesting to me.", "highlight": "parecen" },
-        { "es": "Te queda bien esa camisa.", "en": "That shirt looks good on you.", "highlight": "queda" }
+        {
+          "es": "Me encanta la música clásica.",
+          "en": "I love classical music.",
+          "highlight": "encanta"
+        },
+        {
+          "es": "Le molesta el ruido.",
+          "en": "The noise bothers him/her.",
+          "highlight": "molesta"
+        },
+        {
+          "es": "Nos interesan las ciencias.",
+          "en": "We are interested in science.",
+          "highlight": "interesan"
+        },
+        {
+          "es": "Me duele la espalda.",
+          "en": "My back hurts.",
+          "highlight": "duele"
+        },
+        {
+          "es": "Me parecen interesantes.",
+          "en": "They seem interesting to me.",
+          "highlight": "parecen"
+        },
+        {
+          "es": "Te queda bien esa camisa.",
+          "en": "That shirt looks good on you.",
+          "highlight": "queda"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Translate: 'I love the beach.' (Use encantar.)",
-          "options": ["Me encanta la playa.", "Me encantan la playa.", "Te encanta la playa.", "Me encanta el playa."],
+          "options": [
+            "Me encanta la playa.",
+            "Me encantan la playa.",
+            "Te encanta la playa.",
+            "Me encanta el playa."
+          ],
           "correctIndex": 0,
           "explanation": "'la playa' is singular and feminine, so encanta (singular). Pronoun for 'I' is me: Me encanta la playa."
         },
         {
           "type": "fill-blank",
           "prompt": "___ duelen los pies. (My feet hurt.)",
-          "acceptedAnswers": ["Me", "me"],
+          "acceptedAnswers": [
+            "Me",
+            "me"
+          ],
           "hint": "The pronoun for 'me' / 'my' with doler is me. 'los pies' is plural.",
           "explanation": "'los pies' is plural so we use duelen. The pronoun for 'my (body part)' is me: Me duelen los pies."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct? 'The homework bothers him.' (Use molestar.)",
-          "options": ["Le molesta la tarea.", "Le molestan la tarea.", "Me molesta la tarea.", "Le molesta las tareas."],
-          "correctIndex": 0,
+          "options": [
+            "Me molesta la tarea.",
+            "Le molestan la tarea.",
+            "Le molesta la tarea.",
+            "Le molesta las tareas."
+          ],
+          "correctIndex": 2,
           "explanation": "'la tarea' is singular and feminine, so molesta. 'Him' = le: Le molesta la tarea."
         },
         {
           "type": "fill-blank",
           "prompt": "¿Te ___ las matemáticas? (Are you interested in mathematics?)",
-          "acceptedAnswers": ["interesan", "Interesan"],
+          "acceptedAnswers": [
+            "interesan",
+            "Interesan"
+          ],
           "hint": "'las matemáticas' is plural. Conjugate interesar to agree with the subject.",
           "explanation": "'las matemáticas' is plural, so the verb is interesan: ¿Te interesan las matemáticas?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Translate: 'Those shoes look great on you.' (Use quedar.)",
-          "options": ["Te quedan bien esos zapatos.", "Te queda bien esos zapatos.", "Le quedan bien esos zapatos.", "Te quedan mal esos zapatos."],
+          "options": [
+            "Te quedan bien esos zapatos.",
+            "Te quedan mal esos zapatos.",
+            "Te queda bien esos zapatos.",
+            "Le quedan bien esos zapatos."
+          ],
           "correctIndex": 0,
           "explanation": "'esos zapatos' is plural, so quedan. 'You' = te: Te quedan bien esos zapatos."
         },
         {
           "type": "multiple-choice",
           "prompt": "Translate: 'The movie seems boring to us.' (Use parecer.)",
-          "options": ["Nos parece aburrida la película.", "Nos parecen aburrida la película.", "Nos parece aburrido la película.", "Les parece aburrida la película."],
-          "correctIndex": 0,
+          "options": [
+            "Les parece aburrida la película.",
+            "Nos parecen aburrida la película.",
+            "Nos parece aburrido la película.",
+            "Nos parece aburrida la película."
+          ],
+          "correctIndex": 3,
           "explanation": "'la película' is singular and feminine, so parece (singular), and the adjective 'aburrida' must agree with 'la película' (feminine). 'Us' = nos."
         },
         {
           "type": "fill-blank",
           "prompt": "Me ___ la cabeza. (My head hurts.)",
-          "acceptedAnswers": ["duele", "Duele"],
+          "acceptedAnswers": [
+            "duele",
+            "Duele"
+          ],
           "hint": "'la cabeza' is singular. Use the correct form of doler.",
           "explanation": "'la cabeza' is singular, so the verb is duele: Me duele la cabeza."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which verb best fits? 'Loud music ___ me.' (annoys)",
-          "options": ["molesta", "encanta", "interesa", "queda"],
-          "correctIndex": 0,
+          "options": [
+            "queda",
+            "interesa",
+            "encanta",
+            "molesta"
+          ],
+          "correctIndex": 3,
           "explanation": "'Molestar' means to bother or annoy: La música alta me molesta."
         }
       ]
@@ -157,53 +275,101 @@
       "explanation": "Because le and les can be ambiguous (le could mean him, her, or you formal; les could mean them or you all), Spanish uses prepositional phrases called clarifiers to specify who is involved. These are: a mí (me), a ti (you informal), a él (him), a ella (her), a usted (you formal), a nosotros/nosotras (us), a vosotros/vosotras (you all — Spain), a ellos/ellas (them), a ustedes (you all). The indirect object pronoun (me, te, le…) is ALWAYS kept — the clarifier only adds extra information. Clarifiers also add emphasis: 'A mí me gusta, pero a ti no te gusta' (I like it, but you don't). Note: 'a mí' uses the stressed form mí, not yo.",
       "tip": "You CANNOT drop the indirect object pronoun when using a clarifier. 'A mí gusta el café' is wrong — you must say 'A mí me gusta el café.'",
       "examples": [
-        { "es": "A mí me gusta el jazz.", "en": "I like jazz. (emphatic)", "highlight": "A mí me" },
-        { "es": "A ti te encantan los gatos.", "en": "You love cats. (emphatic)", "highlight": "A ti te" },
-        { "es": "A él le molesta el ruido.", "en": "The noise bothers him. (clarified)", "highlight": "A él le" },
-        { "es": "A ella le duele la cabeza.", "en": "Her head hurts. (clarified)", "highlight": "A ella le" },
-        { "es": "A nosotros nos interesan los idiomas.", "en": "We are interested in languages.", "highlight": "A nosotros nos" },
-        { "es": "A ellos les parece difícil.", "en": "It seems difficult to them.", "highlight": "A ellos les" }
+        {
+          "es": "A mí me gusta el jazz.",
+          "en": "I like jazz. (emphatic)",
+          "highlight": "A mí me"
+        },
+        {
+          "es": "A ti te encantan los gatos.",
+          "en": "You love cats. (emphatic)",
+          "highlight": "A ti te"
+        },
+        {
+          "es": "A él le molesta el ruido.",
+          "en": "The noise bothers him. (clarified)",
+          "highlight": "A él le"
+        },
+        {
+          "es": "A ella le duele la cabeza.",
+          "en": "Her head hurts. (clarified)",
+          "highlight": "A ella le"
+        },
+        {
+          "es": "A nosotros nos interesan los idiomas.",
+          "en": "We are interested in languages.",
+          "highlight": "A nosotros nos"
+        },
+        {
+          "es": "A ellos les parece difícil.",
+          "en": "It seems difficult to them.",
+          "highlight": "A ellos les"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Add the correct clarifier and pronoun: '___ ___ gusta el fútbol.' (He likes soccer.)",
-          "options": ["A él le", "A él me", "A el le", "A él se"],
-          "correctIndex": 0,
+          "options": [
+            "A el le",
+            "A él se",
+            "A él le",
+            "A él me"
+          ],
+          "correctIndex": 2,
           "explanation": "The clarifier for 'him' is 'a él' (with accent on él to distinguish from 'el' the article). The pronoun is le: A él le gusta el fútbol."
         },
         {
           "type": "fill-blank",
           "prompt": "A ___ me encantan las fiestas. (I love parties — emphatic)",
-          "acceptedAnswers": ["mí", "mi"],
+          "acceptedAnswers": [
+            "mí",
+            "mi"
+          ],
           "hint": "The stressed prepositional form of 'yo' is mí (with accent mark).",
           "explanation": "The emphatic/prepositional form of 'yo' after 'a' is 'mí': A mí me encantan las fiestas."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses a clarifier for 'ella'?",
-          "options": ["A ella le gusta bailar.", "A ella gusta bailar.", "Ella le gusta bailar.", "A ella me gusta bailar."],
-          "correctIndex": 0,
+          "options": [
+            "A ella me gusta bailar.",
+            "A ella le gusta bailar.",
+            "Ella le gusta bailar.",
+            "A ella gusta bailar."
+          ],
+          "correctIndex": 1,
           "explanation": "You must keep the indirect object pronoun 'le' even when using the clarifier 'a ella': A ella le gusta bailar."
         },
         {
           "type": "fill-blank",
           "prompt": "A nosotros ___ interesan los viajes. (We are interested in travel.)",
-          "acceptedAnswers": ["nos", "Nos"],
+          "acceptedAnswers": [
+            "nos",
+            "Nos"
+          ],
           "hint": "The indirect object pronoun for 'nosotros' is nos. Remember: the pronoun is never dropped.",
           "explanation": "Even with 'a nosotros' as a clarifier, you still need the pronoun nos: A nosotros nos interesan los viajes."
         },
         {
           "type": "multiple-choice",
           "prompt": "Translate: 'The exam seems hard to them.' (Use parecer + clarifier for ellos.)",
-          "options": ["A ellos les parece difícil el examen.", "A ellos parece difícil el examen.", "A ellos le parece difícil el examen.", "A ellos les parecen difícil el examen."],
-          "correctIndex": 0,
+          "options": [
+            "A ellos parece difícil el examen.",
+            "A ellos les parece difícil el examen.",
+            "A ellos le parece difícil el examen.",
+            "A ellos les parecen difícil el examen."
+          ],
+          "correctIndex": 1,
           "explanation": "Clarifier: 'a ellos'. Pronoun: 'les'. 'el examen' is singular → parece: A ellos les parece difícil el examen."
         },
         {
           "type": "fill-blank",
           "prompt": "A ___ te molesta el frío. (The cold bothers you — emphatic.)",
-          "acceptedAnswers": ["ti", "Ti"],
+          "acceptedAnswers": [
+            "ti",
+            "Ti"
+          ],
           "hint": "The stressed prepositional form of 'tú' (informal you) after 'a' is 'ti' — no accent mark needed.",
           "explanation": "After 'a', informal 'you' becomes 'ti' (no accent): A ti te molesta el frío."
         },
@@ -212,8 +378,8 @@
           "prompt": "Which sentence adds emphasis to distinguish 'I like it but you don't'?",
           "options": [
             "A mí me gusta, pero a ti no te gusta.",
-            "Me gusta, pero te gusta.",
             "A yo me gusta, pero a tú no te gusta.",
+            "Me gusta, pero te gusta.",
             "Mí me gusta, pero ti no te gusta."
           ],
           "correctIndex": 0,
@@ -222,7 +388,10 @@
         {
           "type": "fill-blank",
           "prompt": "A ___ les encanta la pizza. (They love pizza — use ellas.)",
-          "acceptedAnswers": ["ellas", "Ellas"],
+          "acceptedAnswers": [
+            "ellas",
+            "Ellas"
+          ],
           "hint": "Use the feminine plural form. The full sentence will be: A ___ les encanta la pizza.",
           "explanation": "For 'they (feminine)' the clarifier is 'ellas': A ellas les encanta la pizza."
         }

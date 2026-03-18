@@ -4,7 +4,9 @@
   "nameHi": "प्रश्न और नकार",
   "icon": "❓",
   "tier": "A2",
-  "prerequisites": ["postpositions"],
+  "prerequisites": [
+    "postpositions"
+  ],
   "estimatedMinutes": 17,
   "sections": [
     {
@@ -13,31 +15,63 @@
       "explanation": "Hindi has a rich set of question words (प्रश्नवाचक शब्द) that are essential for everyday communication. The most important ones are: क्या (what — also used to form yes/no questions), कौन (who), कहाँ (where), कब (when), क्यों (why), कैसे/कैसा/कैसी (how / what kind), कितना/कितनी/कितने (how much / how many), किसका/किसकी/किसके (whose), and किधर (which direction). In Hindi, question words generally appear in the same position as the answer would — they do not move to the front of the sentence like in English. For example: तुम कहाँ जा रहे हो? (You where going are? = Where are you going?). The word क्या has a special double function: as a question word meaning 'what' (तुम क्या खा रहे हो? — What are you eating?) and as a yes/no question marker placed at the beginning of a sentence (क्या तुम आ रहे हो? — Are you coming?). When क्या starts a sentence, it signals that a yes or no answer is expected. The adjective-type question words कैसा and कितना inflect for gender and number like regular -आ adjectives.",
       "tip": "Hindi question words mostly start with क- (ka-): क्या, कौन, कहाँ, कब, क्यों, कैसे, कितना, किसका, किधर. Remember: क्या at the start of a sentence = yes/no question; क्या in the middle = 'what'.",
       "examples": [
-        { "hi": "तुम्हारा नाम क्या है?", "en": "What is your name?", "highlight": "क्या" },
-        { "hi": "क्या आप हिंदी बोलते हैं?", "en": "Do you speak Hindi? (yes/no question)", "highlight": "क्या" },
-        { "hi": "वह कौन है?", "en": "Who is that?", "highlight": "कौन" },
-        { "hi": "तुम कहाँ रहते हो?", "en": "Where do you live?", "highlight": "कहाँ" },
-        { "hi": "तुम्हें कितने चाहिए?", "en": "How many do you need?", "highlight": "कितने" }
+        {
+          "hi": "तुम्हारा नाम क्या है?",
+          "en": "What is your name?",
+          "highlight": "क्या"
+        },
+        {
+          "hi": "क्या आप हिंदी बोलते हैं?",
+          "en": "Do you speak Hindi? (yes/no question)",
+          "highlight": "क्या"
+        },
+        {
+          "hi": "वह कौन है?",
+          "en": "Who is that?",
+          "highlight": "कौन"
+        },
+        {
+          "hi": "तुम कहाँ रहते हो?",
+          "en": "Where do you live?",
+          "highlight": "कहाँ"
+        },
+        {
+          "hi": "तुम्हें कितने चाहिए?",
+          "en": "How many do you need?",
+          "highlight": "कितने"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between 'क्या तुम जाओगे?' and 'तुम क्या खाओगे?'",
-          "options": ["The first asks 'Will you go?' (yes/no); the second asks 'What will you eat?' (information)", "They mean the same thing", "The first is formal and the second is informal"],
-          "correctIndex": 0,
+          "options": [
+            "They mean the same thing",
+            "The first is formal and the second is informal",
+            "The first asks 'Will you go?' (yes/no); the second asks 'What will you eat?' (information)"
+          ],
+          "correctIndex": 2,
           "explanation": "When क्या appears at the beginning of a sentence, it turns the sentence into a yes/no question: 'Will you go?' When क्या appears in the middle (in the object position), it means 'what': 'What will you eat?'"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which question word means 'when'?",
-          "options": ["कहाँ", "कब", "कैसे"],
-          "correctIndex": 1,
+          "options": [
+            "कब",
+            "कहाँ",
+            "कैसे"
+          ],
+          "correctIndex": 0,
           "explanation": "कब means 'when'. कहाँ means 'where', and कैसे means 'how'. Most Hindi question words begin with क-, which can help you remember them."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you ask 'How is the weather?' in Hindi?",
-          "options": ["मौसम क्या है?", "मौसम कैसा है?", "मौसम कब है?"],
+          "options": [
+            "मौसम क्या है?",
+            "मौसम कैसा है?",
+            "मौसम कब है?"
+          ],
           "correctIndex": 1,
           "explanation": "कैसा means 'how / what kind of' and is used for asking about quality or condition. मौसम (weather) is masculine, so we use कैसा (masc. form). For feminine nouns, it would be कैसी."
         }
@@ -49,30 +83,58 @@
       "explanation": "Hindi has three main negation words, each used in different contexts: नहीं (not — general negation), मत (don't — prohibition/command), and न (not — literary/subjunctive negation). नहीं is the most common and versatile negator. It is placed directly before the verb or auxiliary: मैं नहीं जाऊँगा (I will not go), वह अच्छा नहीं है (He is not good), मैंने नहीं किया (I did not do it). नहीं can also stand alone as an answer meaning 'no'. मत is used exclusively for negative commands (prohibitions) with the imperative or subjunctive mood: मत जाओ (Don't go), मत बोलो (Don't speak), चिंता मत करो (Don't worry). Using नहीं instead of मत in commands sounds unnatural. न is used in formal/literary Hindi, in subjunctive clauses (चाहे वह आए या न आए — whether he comes or not), in polite requests (आप न जाएँ — Please don't go), and in compound expressions like न... न (neither... nor): न यह न वह (neither this nor that). Understanding which negation word to use is crucial for natural-sounding Hindi.",
       "tip": "Simple rule: नहीं for statements (I don't, he isn't), मत for commands (Don't do!), and न for formal/subjunctive contexts and neither...nor constructions. नहीं goes before the main verb; मत goes before the verb in commands.",
       "examples": [
-        { "hi": "मैं आज नहीं आऊँगा।", "en": "I will not come today.", "highlight": "नहीं" },
-        { "hi": "यहाँ मत बैठो।", "en": "Don't sit here. (command)", "highlight": "मत" },
-        { "hi": "वह कुछ नहीं बोला।", "en": "He did not say anything.", "highlight": "नहीं" },
-        { "hi": "न यह अच्छा है, न वह।", "en": "Neither this is good, nor that.", "highlight": "न" }
+        {
+          "hi": "मैं आज नहीं आऊँगा।",
+          "en": "I will not come today.",
+          "highlight": "नहीं"
+        },
+        {
+          "hi": "यहाँ मत बैठो।",
+          "en": "Don't sit here. (command)",
+          "highlight": "मत"
+        },
+        {
+          "hi": "वह कुछ नहीं बोला।",
+          "en": "He did not say anything.",
+          "highlight": "नहीं"
+        },
+        {
+          "hi": "न यह अच्छा है, न वह।",
+          "en": "Neither this is good, nor that.",
+          "highlight": "न"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which negation word is correct: 'वहाँ __ जाओ!' (Don't go there!)",
-          "options": ["नहीं", "मत", "न"],
+          "options": [
+            "न",
+            "मत",
+            "नहीं"
+          ],
           "correctIndex": 1,
           "explanation": "For negative commands (prohibitions), Hindi uses मत: मत जाओ! (Don't go!). Using नहीं in a command would sound unnatural. मत is specifically reserved for telling someone not to do something."
         },
         {
           "type": "multiple-choice",
           "prompt": "Where does 'नहीं' typically appear in a Hindi sentence?",
-          "options": ["At the beginning of the sentence", "Directly before the verb or auxiliary", "At the very end of the sentence"],
-          "correctIndex": 1,
+          "options": [
+            "At the very end of the sentence",
+            "At the beginning of the sentence",
+            "Directly before the verb or auxiliary"
+          ],
+          "correctIndex": 2,
           "explanation": "नहीं is placed directly before the verb or auxiliary it negates: मैं नहीं जाऊँगा (I will not go), वह अच्छा नहीं है (He is not good). This position is consistent across tenses."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'neither... nor...' in Hindi?",
-          "options": ["नहीं... नहीं...", "न... न...", "मत... मत..."],
+          "options": [
+            "मत... मत...",
+            "न... न...",
+            "नहीं... नहीं..."
+          ],
           "correctIndex": 1,
           "explanation": "The correlative construction न... न... means 'neither... nor...': न यह न वह (neither this nor that). न is the literary/formal negation particle and is always used in this paired construction."
         }
@@ -84,30 +146,58 @@
       "explanation": "Hindi has several ways to seek confirmation or add question tags to statements, which are extremely common in everyday conversation. The most frequent are: ना (right? / isn't it?), है ना (isn't it so?), क्या (really?), and सच (truly?). Adding ना or है ना at the end of a statement turns it into a confirmation-seeking question: तुम आ रहे हो ना? (You are coming, right?), यह अच्छा है, है ना? (This is good, isn't it?). The particle ना is informal and very commonly used in spoken Hindi. Another important pattern is using क्या at the end for surprise or confirmation: तुम जा रहे हो क्या? (Are you really going? / You're going?). Hindi also uses कि नहीं (or not) for explicit either-or confirmation: तुम आओगे कि नहीं? (Will you come or not?). Rhetorical questions often use भला or आख़िर for emphasis: भला यह कैसे हो सकता है? (How on earth can this happen?). These tag patterns make Hindi conversation feel natural and engaging.",
       "tip": "The easiest way to make a tag question is to add ना at the end of any statement. It is like the English 'right?' or 'isn't it?' and is used constantly in spoken Hindi. है ना is slightly more emphatic.",
       "examples": [
-        { "hi": "तुम कल आओगे ना?", "en": "You will come tomorrow, right?", "highlight": "ना" },
-        { "hi": "यह तुम्हारी किताब है, है ना?", "en": "This is your book, isn't it?", "highlight": "है ना" },
-        { "hi": "तुम जा रहे हो क्या?", "en": "Are you really going? / You're going?", "highlight": "क्या" },
-        { "hi": "तुम आओगे कि नहीं?", "en": "Will you come or not?", "highlight": "कि नहीं" }
+        {
+          "hi": "तुम कल आओगे ना?",
+          "en": "You will come tomorrow, right?",
+          "highlight": "ना"
+        },
+        {
+          "hi": "यह तुम्हारी किताब है, है ना?",
+          "en": "This is your book, isn't it?",
+          "highlight": "है ना"
+        },
+        {
+          "hi": "तुम जा रहे हो क्या?",
+          "en": "Are you really going? / You're going?",
+          "highlight": "क्या"
+        },
+        {
+          "hi": "तुम आओगे कि नहीं?",
+          "en": "Will you come or not?",
+          "highlight": "कि नहीं"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you add 'right?' to the end of 'यह अच्छा है' (This is good)?",
-          "options": ["यह अच्छा है क्या?", "यह अच्छा है ना?", "क्या यह अच्छा है?"],
-          "correctIndex": 1,
+          "options": [
+            "यह अच्छा है क्या?",
+            "क्या यह अच्छा है?",
+            "यह अच्छा है ना?"
+          ],
+          "correctIndex": 2,
           "explanation": "Adding ना at the end creates a tag question seeking confirmation: यह अच्छा है ना? = 'This is good, right?' It is the most natural and common way to add a tag in Hindi."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 'कि नहीं' at the end of a question express?",
-          "options": ["Polite request", "'Or not' — demanding a clear yes/no answer", "Surprise"],
-          "correctIndex": 1,
+          "options": [
+            "Surprise",
+            "Polite request",
+            "'Or not' — demanding a clear yes/no answer"
+          ],
+          "correctIndex": 2,
           "explanation": "कि नहीं literally means 'or not' and is added to demand a definitive answer: तुम आओगे कि नहीं? (Will you come or not?). It carries a slightly insistent or impatient tone."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the effect of placing 'क्या' at the END of a statement?",
-          "options": ["It asks 'what'", "It expresses surprise or seeks confirmation ('really?')", "It negates the statement"],
+          "options": [
+            "It negates the statement",
+            "It expresses surprise or seeks confirmation ('really?')",
+            "It asks 'what'"
+          ],
           "correctIndex": 1,
           "explanation": "When क्या appears at the end of a statement, it expresses surprise or disbelief: तुम जा रहे हो क्या? = 'You're really going?' / 'Are you going (I'm surprised)?'. This is different from क्या at the beginning, which forms a neutral yes/no question."
         }

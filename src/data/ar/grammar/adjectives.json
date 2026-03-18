@@ -4,7 +4,10 @@
   "nameAr": "الصفات",
   "icon": "🎨",
   "tier": "A2",
-  "prerequisites": ["nouns-gender", "definite-article"],
+  "prerequisites": [
+    "nouns-gender",
+    "definite-article"
+  ],
   "estimatedMinutes": 18,
   "sections": [
     {
@@ -13,30 +16,58 @@
       "explanation": "In Arabic, adjectives come AFTER the noun they describe, which is the opposite of English. The adjective must agree with the noun in gender: if the noun is feminine, the adjective must also be feminine. The feminine form of an adjective is usually made by adding ة (tāʼ marbūṭa), just like with nouns. For example: ولد كبير (a big boy — masculine noun, masculine adjective), بنت كبيرة (a big girl — feminine noun, feminine adjective). The adjective كبير becomes كبيرة when describing a feminine noun. This pattern is consistent: جميل/جميلة (beautiful), صغير/صغيرة (small), طويل/طويلة (tall/long), جديد/جديدة (new).",
       "tip": "Remember: noun first, then adjective. And match the gender — if the noun ends in ة, the adjective should too. Think of it as 'the noun leads, and the adjective follows and copies'.",
       "examples": [
-        { "ar": "كتاب جديد", "en": "a new book — masculine noun, masculine adjective", "highlight": "جديد" },
-        { "ar": "سيارة جديدة", "en": "a new car — feminine noun, feminine adjective (with ة)", "highlight": "جديدة" },
-        { "ar": "رجل طويل", "en": "a tall man", "highlight": "طويل" },
-        { "ar": "بنت طويلة", "en": "a tall girl", "highlight": "طويلة" }
+        {
+          "ar": "كتاب جديد",
+          "en": "a new book — masculine noun, masculine adjective",
+          "highlight": "جديد"
+        },
+        {
+          "ar": "سيارة جديدة",
+          "en": "a new car — feminine noun, feminine adjective (with ة)",
+          "highlight": "جديدة"
+        },
+        {
+          "ar": "رجل طويل",
+          "en": "a tall man",
+          "highlight": "طويل"
+        },
+        {
+          "ar": "بنت طويلة",
+          "en": "a tall girl",
+          "highlight": "طويلة"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Where does the adjective go in Arabic?",
-          "options": ["After the noun", "Before the noun", "Either position is correct"],
-          "correctIndex": 0,
+          "options": [
+            "Either position is correct",
+            "After the noun",
+            "Before the noun"
+          ],
+          "correctIndex": 1,
           "explanation": "In Arabic, the adjective always follows the noun: كتاب كبير (a big book), not كبير كتاب. This is the opposite of English word order."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a beautiful girl' if جميل means 'beautiful (m.)'?",
-          "options": ["بنت جميلة", "جميل بنت", "بنت جميل"],
-          "correctIndex": 0,
+          "options": [
+            "بنت جميل",
+            "جميل بنت",
+            "بنت جميلة"
+          ],
+          "correctIndex": 2,
           "explanation": "The noun بنت (girl) is feminine, so the adjective must also be feminine: جميلة (with ة). The adjective follows the noun: بنت جميلة."
         },
         {
           "type": "multiple-choice",
           "prompt": "In the phrase رجل كبير (a big man), why does كبير not have ة?",
-          "options": ["Because رجل is masculine, so the adjective must be masculine too", "Because كبير never takes ة", "Because ة is only for nouns"],
+          "options": [
+            "Because رجل is masculine, so the adjective must be masculine too",
+            "Because كبير never takes ة",
+            "Because ة is only for nouns"
+          ],
           "correctIndex": 0,
           "explanation": "The adjective agrees in gender with the noun. Since رجل (man) is masculine, the adjective is also masculine: كبير. If the noun were feminine (e.g., امرأة), the adjective would be كبيرة."
         }
@@ -48,30 +79,58 @@
       "explanation": "Besides gender, Arabic adjectives must also agree with the noun in definiteness. If the noun has ال (the definite article), the adjective must also have ال. If the noun is indefinite, the adjective must also be indefinite. This creates an important distinction: الكتاب الجديد means 'the new book' (noun + adjective, both definite — this is a noun phrase), while الكتاب جديدٌ means 'the book is new' (definite noun + indefinite adjective — this is a complete sentence). This difference in definiteness between noun and adjective is how Arabic creates 'is' sentences with adjectives — no verb needed.",
       "tip": "Both have ال = description (the new book). Only the noun has ال = sentence (the book IS new). This is one of the most elegant features of Arabic grammar.",
       "examples": [
-        { "ar": "الكتاب الجديد", "en": "the new book — both definite, this is a noun phrase", "highlight": "ال" },
-        { "ar": "الكتاب جديدٌ", "en": "The book is new — noun definite, adjective indefinite = a sentence", "highlight": "جديدٌ" },
-        { "ar": "البنت الجميلة", "en": "the beautiful girl — both definite", "highlight": "ال" },
-        { "ar": "البنت جميلةٌ", "en": "The girl is beautiful — a complete sentence", "highlight": "جميلةٌ" }
+        {
+          "ar": "الكتاب الجديد",
+          "en": "the new book — both definite, this is a noun phrase",
+          "highlight": "ال"
+        },
+        {
+          "ar": "الكتاب جديدٌ",
+          "en": "The book is new — noun definite, adjective indefinite = a sentence",
+          "highlight": "جديدٌ"
+        },
+        {
+          "ar": "البنت الجميلة",
+          "en": "the beautiful girl — both definite",
+          "highlight": "ال"
+        },
+        {
+          "ar": "البنت جميلةٌ",
+          "en": "The girl is beautiful — a complete sentence",
+          "highlight": "جميلةٌ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does الكتاب الكبير mean?",
-          "options": ["the big book (noun phrase)", "The book is big (sentence)", "a big book"],
+          "options": [
+            "the big book (noun phrase)",
+            "The book is big (sentence)",
+            "a big book"
+          ],
           "correctIndex": 0,
           "explanation": "When both the noun and the adjective have ال, it is a noun phrase: الكتاب الكبير = 'the big book'. If only the noun had ال (الكتاب كبير), it would mean 'The book is big'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'The house is big' using البيت and كبير?",
-          "options": ["البيت كبير", "البيت الكبير", "بيت كبير"],
-          "correctIndex": 0,
+          "options": [
+            "البيت الكبير",
+            "البيت كبير",
+            "بيت كبير"
+          ],
+          "correctIndex": 1,
           "explanation": "To make a sentence ('The house IS big'), the noun is definite (البيت) but the adjective is indefinite (كبير, without ال). This mismatch in definiteness creates a predicate: البيت كبير."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between المدرسة الكبيرة and المدرسة كبيرة?",
-          "options": ["The first is 'the big school' (phrase), the second is 'The school is big' (sentence)", "They mean the same thing", "The first is incorrect"],
+          "options": [
+            "The first is 'the big school' (phrase), the second is 'The school is big' (sentence)",
+            "The first is incorrect",
+            "They mean the same thing"
+          ],
           "correctIndex": 0,
           "explanation": "المدرسة الكبيرة (both definite) = 'the big school' (a noun phrase). المدرسة كبيرة (noun definite, adjective indefinite) = 'The school is big' (a complete sentence)."
         }
@@ -83,30 +142,58 @@
       "explanation": "Adjectives also agree with nouns in number. For human plural nouns, the adjective takes a plural form: masculine plural usually ends in ـون (or ـين in non-nominative case), and feminine plural ends in ـات. For example: معلّمون جُدد (new male teachers), معلّمات جديدات (new female teachers). However, for non-human plurals (animals, objects, abstract concepts), Arabic has a special rule: the adjective is always feminine singular, regardless of the noun's original gender. So كتب جديدة means 'new books' — even though كتاب is masculine, the plural كتب takes the feminine singular adjective جديدة. This rule applies to all non-human plurals and is one of the most distinctive features of Arabic grammar.",
       "tip": "The non-human plural rule is crucial: all non-human plurals are treated as feminine singular for agreement purposes. So 'big cars' is سيارات كبيرة, and 'big books' is also كتب كبيرة — both use the feminine singular adjective.",
       "examples": [
-        { "ar": "طلّاب جُدد", "en": "new (male) students — human plural, plural adjective", "highlight": "جُدد" },
-        { "ar": "طالبات جديدات", "en": "new female students — feminine human plural", "highlight": "جديدات" },
-        { "ar": "كتب جديدة", "en": "new books — non-human plural takes feminine singular adjective", "highlight": "جديدة" },
-        { "ar": "بيوت كبيرة", "en": "big houses — non-human plural, feminine singular adjective", "highlight": "كبيرة" }
+        {
+          "ar": "طلّاب جُدد",
+          "en": "new (male) students — human plural, plural adjective",
+          "highlight": "جُدد"
+        },
+        {
+          "ar": "طالبات جديدات",
+          "en": "new female students — feminine human plural",
+          "highlight": "جديدات"
+        },
+        {
+          "ar": "كتب جديدة",
+          "en": "new books — non-human plural takes feminine singular adjective",
+          "highlight": "جديدة"
+        },
+        {
+          "ar": "بيوت كبيرة",
+          "en": "big houses — non-human plural, feminine singular adjective",
+          "highlight": "كبيرة"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'new books' if كتب means 'books' and جديد means 'new'?",
-          "options": ["كتب جديدة", "كتب جديدون", "كتب جُدد"],
+          "options": [
+            "كتب جديدة",
+            "كتب جديدون",
+            "كتب جُدد"
+          ],
           "correctIndex": 0,
           "explanation": "Books are non-human, so the plural takes a feminine singular adjective: كتب جديدة. The rule is: all non-human plurals are treated as feminine singular for adjective agreement."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why is the adjective in سيارات كبيرة (big cars) feminine singular, not feminine plural?",
-          "options": ["Because non-human plurals always take feminine singular adjectives", "Because سيارات is singular", "Because كبيرة is already plural"],
-          "correctIndex": 0,
+          "options": [
+            "Because سيارات is singular",
+            "Because كبيرة is already plural",
+            "Because non-human plurals always take feminine singular adjectives"
+          ],
+          "correctIndex": 2,
           "explanation": "In Arabic, all non-human plural nouns — regardless of their original gender — take feminine singular adjective agreement. This is a consistent rule that applies across the language."
         },
         {
           "type": "multiple-choice",
           "prompt": "For the phrase 'tall teachers (male)', which form is correct?",
-          "options": ["معلّمون طِوال", "معلّمون طويلة", "معلّمون طويل"],
+          "options": [
+            "معلّمون طِوال",
+            "معلّمون طويل",
+            "معلّمون طويلة"
+          ],
           "correctIndex": 0,
           "explanation": "For human masculine plurals, the adjective takes its masculine plural form. معلّمون (male teachers) requires a plural adjective: طِوال (tall, plural). The feminine singular طويلة would be used for non-human plurals."
         }

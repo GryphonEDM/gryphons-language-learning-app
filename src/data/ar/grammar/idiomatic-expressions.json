@@ -13,31 +13,59 @@
       "explanation": "Arabic has a rich system of formulaic greetings and social expressions deeply rooted in Islamic and Arab culture. Many of these cannot be translated literally and must be learned as fixed phrases. The most universal greeting is السَّلَامُ عَلَيْكُمْ (peace be upon you), answered with وَعَلَيْكُمُ السَّلَامُ (and upon you peace). When meeting someone, أَهْلًا وَسَهْلًا (welcome) is standard, and the response is أَهْلًا بِكَ/بِكِ (welcome to you). After someone eats, you say صَحَّتَيْنِ (double health, i.e., bon appetit), and they reply عَلَى قَلْبَكَ (on your heart). When parting, مَعَ السَّلَامَةِ (with safety, goodbye) is answered with اللهُ يُسَلِّمَكَ (God keep you safe). These phrases are used daily and knowing them correctly signals cultural awareness and respect.",
       "tip": "Most Arabic greetings come in call-and-response pairs. Learning both the greeting and its expected reply is essential for natural conversation. These expressions are used across the entire Arab world regardless of dialect.",
       "examples": [
-        { "ar": "السَّلَامُ عَلَيْكُمْ — وَعَلَيْكُمُ السَّلَامُ", "en": "Peace be upon you — And upon you peace", "highlight": "السَّلَامُ عَلَيْكُمْ" },
-        { "ar": "أَهْلًا وَسَهْلًا", "en": "Welcome (lit. 'family and ease')", "highlight": "أَهْلًا وَسَهْلًا" },
-        { "ar": "مَعَ السَّلَامَةِ", "en": "Goodbye (lit. 'with safety')", "highlight": "مَعَ السَّلَامَةِ" },
-        { "ar": "تَشَرَّفْنَا", "en": "Pleased to meet you (lit. 'we are honored')", "highlight": "تَشَرَّفْنَا" }
+        {
+          "ar": "السَّلَامُ عَلَيْكُمْ — وَعَلَيْكُمُ السَّلَامُ",
+          "en": "Peace be upon you — And upon you peace",
+          "highlight": "السَّلَامُ عَلَيْكُمْ"
+        },
+        {
+          "ar": "أَهْلًا وَسَهْلًا",
+          "en": "Welcome (lit. 'family and ease')",
+          "highlight": "أَهْلًا وَسَهْلًا"
+        },
+        {
+          "ar": "مَعَ السَّلَامَةِ",
+          "en": "Goodbye (lit. 'with safety')",
+          "highlight": "مَعَ السَّلَامَةِ"
+        },
+        {
+          "ar": "تَشَرَّفْنَا",
+          "en": "Pleased to meet you (lit. 'we are honored')",
+          "highlight": "تَشَرَّفْنَا"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the proper response to السَّلَامُ عَلَيْكُمْ?",
-          "options": ["وَعَلَيْكُمُ السَّلَامُ", "أَهْلًا وَسَهْلًا", "مَعَ السَّلَامَةِ"],
-          "correctIndex": 0,
+          "options": [
+            "أَهْلًا وَسَهْلًا",
+            "وَعَلَيْكُمُ السَّلَامُ",
+            "مَعَ السَّلَامَةِ"
+          ],
+          "correctIndex": 1,
           "explanation": "The response to السَّلَامُ عَلَيْكُمْ (peace be upon you) is وَعَلَيْكُمُ السَّلَامُ (and upon you peace). This is the most fundamental greeting exchange in Arabic and is used universally."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does أَهْلًا وَسَهْلًا literally mean?",
-          "options": ["Family and ease (meaning: you are among family and at ease)", "Hello and goodbye", "Good morning and good evening"],
-          "correctIndex": 0,
+          "options": [
+            "Hello and goodbye",
+            "Family and ease (meaning: you are among family and at ease)",
+            "Good morning and good evening"
+          ],
+          "correctIndex": 1,
           "explanation": "أَهْلًا وَسَهْلًا literally means 'family and ease' — implying 'you have come to family (not strangers) and to an easy (not difficult) place.' It is the standard expression of welcome."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which expression means 'pleased to meet you'?",
-          "options": ["تَشَرَّفْنَا (we are honored)", "مَعَ السَّلَامَةِ (with safety)", "إِنْ شَاءَ اللهُ (God willing)"],
-          "correctIndex": 0,
+          "options": [
+            "إِنْ شَاءَ اللهُ (God willing)",
+            "مَعَ السَّلَامَةِ (with safety)",
+            "تَشَرَّفْنَا (we are honored)"
+          ],
+          "correctIndex": 2,
           "explanation": "تَشَرَّفْنَا (literally 'we are honored') is used when meeting someone for the first time. The other person can respond with الشَّرَفُ لِي (the honor is mine) or تَشَرَّفْنَا as well."
         }
       ]
@@ -48,30 +76,58 @@
       "explanation": "Many everyday Arabic expressions reference God (اللهُ), even among secular speakers, because these phrases are so deeply embedded in the language. إِنْ شَاءَ اللهُ (in shaa' Allaah, 'God willing') is used when speaking about future plans — it is considered improper to state future intentions without it. مَا شَاءَ اللهُ (maa shaa' Allaah, 'what God has willed') is used to express admiration and to ward off the evil eye when praising something. الحَمْدُ لِلَّهِ (al-hamdu lillaah, 'praise be to God') is used for gratitude and also as a response to 'How are you?' بِسْمِ اللهِ (bismillaah, 'in the name of God') is said before starting any activity — eating, working, traveling. سُبْحَانَ اللهِ (subhaan Allaah, 'glory to God') expresses wonder or astonishment. These expressions are essential for natural-sounding Arabic.",
       "tip": "Using these expressions correctly is a mark of fluency. إِنْ شَاءَ اللهُ for future plans, مَا شَاءَ اللهُ for admiration, الحَمْدُ لِلَّهِ for gratitude, بِسْمِ اللهِ before starting something.",
       "examples": [
-        { "ar": "إِنْ شَاءَ اللهُ سَأُسَافِرُ غَدًا", "en": "God willing, I will travel tomorrow.", "highlight": "إِنْ شَاءَ اللهُ" },
-        { "ar": "مَا شَاءَ اللهُ، بَيْتُكَ جَمِيلٌ!", "en": "Mashallah, your house is beautiful!", "highlight": "مَا شَاءَ اللهُ" },
-        { "ar": "كَيْفَ حَالُكَ؟ — الحَمْدُ لِلَّهِ", "en": "How are you? — Praise be to God (I'm well).", "highlight": "الحَمْدُ لِلَّهِ" },
-        { "ar": "بِسْمِ اللهِ، نَبْدَأُ", "en": "In the name of God, we begin.", "highlight": "بِسْمِ اللهِ" }
+        {
+          "ar": "إِنْ شَاءَ اللهُ سَأُسَافِرُ غَدًا",
+          "en": "God willing, I will travel tomorrow.",
+          "highlight": "إِنْ شَاءَ اللهُ"
+        },
+        {
+          "ar": "مَا شَاءَ اللهُ، بَيْتُكَ جَمِيلٌ!",
+          "en": "Mashallah, your house is beautiful!",
+          "highlight": "مَا شَاءَ اللهُ"
+        },
+        {
+          "ar": "كَيْفَ حَالُكَ؟ — الحَمْدُ لِلَّهِ",
+          "en": "How are you? — Praise be to God (I'm well).",
+          "highlight": "الحَمْدُ لِلَّهِ"
+        },
+        {
+          "ar": "بِسْمِ اللهِ، نَبْدَأُ",
+          "en": "In the name of God, we begin.",
+          "highlight": "بِسْمِ اللهِ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "When should you use إِنْ شَاءَ اللهُ?",
-          "options": ["When talking about future plans or intentions", "When greeting someone", "When apologizing"],
-          "correctIndex": 0,
+          "options": [
+            "When greeting someone",
+            "When talking about future plans or intentions",
+            "When apologizing"
+          ],
+          "correctIndex": 1,
           "explanation": "إِنْ شَاءَ اللهُ (God willing) is used whenever discussing future plans or events. It acknowledges that the future is in God's hands and is considered essential in Arabic discourse about upcoming actions."
         },
         {
           "type": "multiple-choice",
           "prompt": "What expression is used to show admiration and ward off the evil eye?",
-          "options": ["مَا شَاءَ اللهُ", "إِنْ شَاءَ اللهُ", "أَسْتَغْفِرُ اللهَ"],
-          "correctIndex": 0,
+          "options": [
+            "أَسْتَغْفِرُ اللهَ",
+            "مَا شَاءَ اللهُ",
+            "إِنْ شَاءَ اللهُ"
+          ],
+          "correctIndex": 1,
           "explanation": "مَا شَاءَ اللهُ ('what God has willed') is said when admiring or praising something — a beautiful child, a nice house, a good achievement. It serves both as genuine admiration and as protection from the evil eye (حَسَد)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does بِسْمِ اللهِ mean, and when is it used?",
-          "options": ["'In the name of God' — said before starting any activity", "'God is great' — said in prayer only", "'Thank God' — said after eating"],
+          "options": [
+            "'In the name of God' — said before starting any activity",
+            "'God is great' — said in prayer only",
+            "'Thank God' — said after eating"
+          ],
           "correctIndex": 0,
           "explanation": "بِسْمِ اللهِ means 'in the name of God' and is said before beginning any activity — eating, drinking, traveling, starting work, entering a house, and more. It is one of the most frequently used expressions in Arabic."
         }
@@ -83,30 +139,58 @@
       "explanation": "Arabic has a vast tradition of proverbs (أَمْثَال) and wise sayings (حِكَم) that are frequently used in conversation. These expressions add eloquence and cultural depth to speech. اَلعِلْمُ نُورٌ (knowledge is light) emphasizes the value of learning. مَنْ جَدَّ وَجَدَ (whoever strives, finds — i.e., effort leads to success) is a classic motivational proverb. اَلصَّبْرُ مِفْتَاحُ الفَرَجِ (patience is the key to relief) counsels endurance. الوَقْتُ كَالسَّيْفِ إِنْ لَمْ تَقْطَعْهُ قَطَعَكَ (time is like a sword — if you do not cut it, it cuts you) warns against wasting time. أَطْلُبِ العِلْمَ مِنَ المَهْدِ إِلَى اللَّحْدِ (seek knowledge from the cradle to the grave) emphasizes lifelong learning. Using proverbs appropriately in conversation is a hallmark of eloquent Arabic.",
       "tip": "Arabic proverbs often use rhyme and parallelism, making them easier to memorize. Try to learn a few by heart and use them in appropriate contexts — native speakers will be impressed by their correct use.",
       "examples": [
-        { "ar": "مَنْ جَدَّ وَجَدَ", "en": "Whoever strives, finds. (Hard work pays off.)", "highlight": "مَنْ جَدَّ وَجَدَ" },
-        { "ar": "الصَّبْرُ مِفْتَاحُ الفَرَجِ", "en": "Patience is the key to relief.", "highlight": "الصَّبْرُ مِفْتَاحُ الفَرَجِ" },
-        { "ar": "العِلْمُ نُورٌ وَالجَهْلُ ظَلَامٌ", "en": "Knowledge is light and ignorance is darkness.", "highlight": "العِلْمُ نُورٌ" },
-        { "ar": "مَنْ طَلَبَ العُلَا سَهِرَ اللَّيَالِيَ", "en": "Whoever seeks greatness stays up through the nights.", "highlight": "مَنْ طَلَبَ العُلَا" }
+        {
+          "ar": "مَنْ جَدَّ وَجَدَ",
+          "en": "Whoever strives, finds. (Hard work pays off.)",
+          "highlight": "مَنْ جَدَّ وَجَدَ"
+        },
+        {
+          "ar": "الصَّبْرُ مِفْتَاحُ الفَرَجِ",
+          "en": "Patience is the key to relief.",
+          "highlight": "الصَّبْرُ مِفْتَاحُ الفَرَجِ"
+        },
+        {
+          "ar": "العِلْمُ نُورٌ وَالجَهْلُ ظَلَامٌ",
+          "en": "Knowledge is light and ignorance is darkness.",
+          "highlight": "العِلْمُ نُورٌ"
+        },
+        {
+          "ar": "مَنْ طَلَبَ العُلَا سَهِرَ اللَّيَالِيَ",
+          "en": "Whoever seeks greatness stays up through the nights.",
+          "highlight": "مَنْ طَلَبَ العُلَا"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does the proverb مَنْ جَدَّ وَجَدَ mean?",
-          "options": ["Whoever strives, finds (hard work pays off)", "Whoever is patient succeeds", "Whoever travels learns"],
-          "correctIndex": 0,
+          "options": [
+            "Whoever travels learns",
+            "Whoever strives, finds (hard work pays off)",
+            "Whoever is patient succeeds"
+          ],
+          "correctIndex": 1,
           "explanation": "مَنْ جَدَّ وَجَدَ literally means 'whoever was serious/strived, found.' It is the Arabic equivalent of 'hard work pays off' or 'where there's a will, there's a way.' The rhyme (جَدَّ / وَجَدَ) makes it easy to remember."
         },
         {
           "type": "multiple-choice",
           "prompt": "Complete the proverb: الصَّبْرُ مِفْتَاحُ...",
-          "options": ["الفَرَجِ (relief)", "النَّجَاحِ (success)", "العِلْمِ (knowledge)"],
-          "correctIndex": 0,
+          "options": [
+            "النَّجَاحِ (success)",
+            "العِلْمِ (knowledge)",
+            "الفَرَجِ (relief)"
+          ],
+          "correctIndex": 2,
           "explanation": "الصَّبْرُ مِفْتَاحُ الفَرَجِ — 'Patience is the key to relief.' This proverb counsels endurance during hardship, promising that patience will eventually lead to relief and resolution."
         },
         {
           "type": "multiple-choice",
           "prompt": "What literary device makes Arabic proverbs memorable?",
-          "options": ["Rhyme and parallelism (سَجْع)", "They are always exactly three words", "They always contain numbers"],
+          "options": [
+            "Rhyme and parallelism (سَجْع)",
+            "They always contain numbers",
+            "They are always exactly three words"
+          ],
           "correctIndex": 0,
           "explanation": "Arabic proverbs frequently use rhyme (سَجْع) and parallel structures. For example, العِلْمُ نُورٌ وَالجَهْلُ ظَلَامٌ uses parallelism (X is Y, and Z is W) with contrasting pairs (knowledge/ignorance, light/darkness), making it elegant and easy to remember."
         }

@@ -4,7 +4,9 @@
   "nameFr": "Le conditionnel",
   "icon": "💭",
   "tier": "B1",
-  "prerequisites": ["future-tense"],
+  "prerequisites": [
+    "future-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,115 @@
       "explanation": "The conditional tense expresses what 'would' happen. It is formed using the same stem as the futur simple, but with the endings of the imparfait: -ais, -ais, -ait, -ions, -iez, -aient. For regular -ER and -IR verbs, the stem is the full infinitive: parler → je parlerais (I would speak), finir → je finirais (I would finish). For regular -RE verbs, drop the final -e before adding the endings: vendre → je vendrais (I would sell). The same irregular stems used in the futur simple apply here: être → ser- (je serais), avoir → aur- (tu aurais), aller → ir- (il irait), faire → fer- (elle ferait), vouloir → voudr- (je voudrais), pouvoir → pourr- (tu pourrais), savoir → saur- (il saurait), venir → viendr- (je viendrais), voir → verr- (vous verriez), envoyer → enverr- (ils enverraient). All six endings follow the imparfait pattern: -ais, -ais, -ait, -ions, -iez, -aient — so there is no need to learn new endings, only the stems.",
       "tip": "The key formula is: FUTUR SIMPLE STEM + IMPARFAIT ENDINGS. If you know the futur simple (je parlerai), just swap the ending: je parlerAIS. The -ait ending is the most common singular third-person form you will see. For irregular verbs, the stem is always the same as in the futur simple — master those stems once and you have both tenses covered.",
       "examples": [
-        { "fr": "Je parlerais plus lentement.", "en": "I would speak more slowly.", "highlight": "parlerais" },
-        { "fr": "Tu finirais avant midi.", "en": "You would finish before noon.", "highlight": "finirais" },
-        { "fr": "Nous vendrions la voiture.", "en": "We would sell the car.", "highlight": "vendrions" },
-        { "fr": "Je serais très content.", "en": "I would be very happy.", "highlight": "serais" },
-        { "fr": "Tu aurais le temps.", "en": "You would have the time.", "highlight": "aurais" },
-        { "fr": "Elle ferait un gâteau.", "en": "She would make a cake.", "highlight": "ferait" }
+        {
+          "fr": "Je parlerais plus lentement.",
+          "en": "I would speak more slowly.",
+          "highlight": "parlerais"
+        },
+        {
+          "fr": "Tu finirais avant midi.",
+          "en": "You would finish before noon.",
+          "highlight": "finirais"
+        },
+        {
+          "fr": "Nous vendrions la voiture.",
+          "en": "We would sell the car.",
+          "highlight": "vendrions"
+        },
+        {
+          "fr": "Je serais très content.",
+          "en": "I would be very happy.",
+          "highlight": "serais"
+        },
+        {
+          "fr": "Tu aurais le temps.",
+          "en": "You would have the time.",
+          "highlight": "aurais"
+        },
+        {
+          "fr": "Elle ferait un gâteau.",
+          "en": "She would make a cake.",
+          "highlight": "ferait"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct conditional form of parler for 'nous'?",
-          "options": ["nous parlerions", "nous parlerons", "nous parlions"],
-          "correctIndex": 0,
+          "options": [
+            "nous parlions",
+            "nous parlerions",
+            "nous parlerons"
+          ],
+          "correctIndex": 1,
           "explanation": "The conditional is formed with the futur stem (parler-) plus the imparfait ending for nous (-ions): nous parlerions."
         },
         {
           "type": "fill-blank",
           "prompt": "Il ___ (finir) ses devoirs avant le dîner. (He would finish his homework before dinner.)",
-          "acceptedAnswers": ["finirait"],
+          "acceptedAnswers": [
+            "finirait"
+          ],
           "hint": "Futur stem of finir is finir- + ending -ait for il",
           "explanation": "For regular -IR verbs, the conditional stem is the infinitive: finir- + -ait = finirait."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the conditional of vendre for 'je'?",
-          "options": ["je vendrais", "je vendais", "je vendreais"],
-          "correctIndex": 0,
+          "options": [
+            "je vendais",
+            "je vendreais",
+            "je vendrais"
+          ],
+          "correctIndex": 2,
           "explanation": "For -RE verbs, drop the final -e: vendr- + -ais = je vendrais."
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ (être) fatigués après le voyage. (You would be tired after the trip.)",
-          "acceptedAnswers": ["seriez"],
+          "acceptedAnswers": [
+            "seriez"
+          ],
           "hint": "Être has an irregular stem: ser- + ending -iez for vous",
           "explanation": "Être is irregular: the conditional stem is ser-. With the vous ending -iez: seriez."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly says 'He would go to Paris'?",
-          "options": ["Il irait à Paris", "Il allait à Paris", "Il allerait à Paris"],
+          "options": [
+            "Il irait à Paris",
+            "Il allerait à Paris",
+            "Il allait à Paris"
+          ],
           "correctIndex": 0,
           "explanation": "Aller has the irregular conditional stem ir-: il + ir- + -ait = il irait."
         },
         {
           "type": "fill-blank",
           "prompt": "Elles ___ (voir) le spectacle ensemble. (They would see the show together.)",
-          "acceptedAnswers": ["verraient"],
+          "acceptedAnswers": [
+            "verraient"
+          ],
           "hint": "Voir has an irregular stem: verr- + ending -aient for elles",
           "explanation": "Voir is irregular: the conditional stem is verr-. With the elles ending -aient: verraient."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'We would be able to come' using the conditional of pouvoir?",
-          "options": ["Nous pourrions venir", "Nous pouvions venir", "Nous pourrons venir"],
+          "options": [
+            "Nous pourrions venir",
+            "Nous pourrons venir",
+            "Nous pouvions venir"
+          ],
           "correctIndex": 0,
           "explanation": "Pouvoir has the irregular conditional stem pourr-. With the nous ending -ions: nous pourrions venir."
         },
         {
           "type": "fill-blank",
           "prompt": "Tu ___ (savoir) la réponse. (You would know the answer.)",
-          "acceptedAnswers": ["saurais"],
+          "acceptedAnswers": [
+            "saurais"
+          ],
           "hint": "Savoir has an irregular stem: saur- + ending -ais for tu",
           "explanation": "Savoir is irregular: the conditional stem is saur-. With the tu ending -ais: saurais."
         }
@@ -85,67 +135,115 @@
       "explanation": "The conditional has five main uses in French. (1) Polite requests — this is the most common use in everyday speech. Using voudrais instead of veux makes a request much more polite: Je voudrais un café (I would like a coffee), Pourriez-vous m'aider? (Could you help me?), Tu pourrais répéter? (Could you repeat?). (2) Hypothetical situations with si + imparfait in the condition clause and the conditional in the main clause: Si j'avais de l'argent, j'achèterais une voiture (If I had money, I would buy a car). IMPORTANT: never use the conditional after si — the imparfait always follows si. (3) Unverified or reported information (the journalistic conditional): Le président serait malade (The president is reportedly ill — unconfirmed). (4) Wishes and regrets: Je voudrais vivre à Paris, J'aimerais parler mieux français, Ce serait bien! (That would be nice!). (5) Advice with devoir: Tu devrais étudier plus (You should study more), Vous devriez partir (You should leave).",
       "tip": "The two most important uses for everyday French are polite requests (Je voudrais, Pourriez-vous, Tu pourrais) and hypothetical si + imparfait sentences. Remember the golden rule: NEVER put the conditional after si — use the imparfait there instead. Think of it as: si-clause = imparfait, result clause = conditional.",
       "examples": [
-        { "fr": "Je voudrais un café, s'il vous plaît.", "en": "I would like a coffee, please.", "highlight": "voudrais" },
-        { "fr": "Si j'avais de l'argent, j'achèterais une voiture.", "en": "If I had money, I would buy a car.", "highlight": "achèterais" },
-        { "fr": "Le président serait malade.", "en": "The president is reportedly ill.", "highlight": "serait" },
-        { "fr": "Tu devrais étudier plus.", "en": "You should study more.", "highlight": "devrais" },
-        { "fr": "Ce serait formidable!", "en": "That would be wonderful!", "highlight": "serait" },
-        { "fr": "Si elle pouvait, elle viendrait.", "en": "If she could, she would come.", "highlight": "viendrait" }
+        {
+          "fr": "Je voudrais un café, s'il vous plaît.",
+          "en": "I would like a coffee, please.",
+          "highlight": "voudrais"
+        },
+        {
+          "fr": "Si j'avais de l'argent, j'achèterais une voiture.",
+          "en": "If I had money, I would buy a car.",
+          "highlight": "achèterais"
+        },
+        {
+          "fr": "Le président serait malade.",
+          "en": "The president is reportedly ill.",
+          "highlight": "serait"
+        },
+        {
+          "fr": "Tu devrais étudier plus.",
+          "en": "You should study more.",
+          "highlight": "devrais"
+        },
+        {
+          "fr": "Ce serait formidable!",
+          "en": "That would be wonderful!",
+          "highlight": "serait"
+        },
+        {
+          "fr": "Si elle pouvait, elle viendrait.",
+          "en": "If she could, she would come.",
+          "highlight": "viendrait"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "You want to politely order a glass of water. Which sentence is most appropriate?",
-          "options": ["Je voudrais un verre d'eau.", "Je veux un verre d'eau.", "Je voulais un verre d'eau."],
-          "correctIndex": 0,
+          "options": [
+            "Je voulais un verre d'eau.",
+            "Je voudrais un verre d'eau.",
+            "Je veux un verre d'eau."
+          ],
+          "correctIndex": 1,
           "explanation": "Je voudrais (conditional of vouloir) is the polite way to make a request. Je veux sounds abrupt; je voulais is the imparfait and doesn't convey a current request."
         },
         {
           "type": "fill-blank",
           "prompt": "Si nous avions le temps, nous ___ (voyager) en Italie. (If we had the time, we would travel to Italy.)",
-          "acceptedAnswers": ["voyagerions"],
+          "acceptedAnswers": [
+            "voyagerions"
+          ],
           "hint": "The main clause of a si + imparfait sentence uses the conditional: voyager- + -ions",
           "explanation": "In a si + imparfait hypothetical, the result clause takes the conditional: nous voyagerions."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses the si + imparfait structure?",
-          "options": ["Si tu venais, ce serait super.", "Si tu viendrais, ce serait super.", "Si tu viens, ce serait super."],
-          "correctIndex": 0,
+          "options": [
+            "Si tu viens, ce serait super.",
+            "Si tu venais, ce serait super.",
+            "Si tu viendrais, ce serait super."
+          ],
+          "correctIndex": 1,
           "explanation": "After si in a hypothetical, use the imparfait (venais), never the conditional (viendrais). The result clause then takes the conditional (serait)."
         },
         {
           "type": "fill-blank",
           "prompt": "___ (pouvoir)-vous m'indiquer la gare? (Could you point me to the train station?)",
-          "acceptedAnswers": ["Pourriez"],
+          "acceptedAnswers": [
+            "Pourriez"
+          ],
           "hint": "Polite request using the conditional of pouvoir for vous, inverted",
           "explanation": "Pourriez-vous is the polite inverted conditional form: pourr- (irregular stem) + -iez (vous ending)."
         },
         {
           "type": "multiple-choice",
           "prompt": "A journalist writes: 'Il y ___ eu un accident.' What does this conditional convey?",
-          "options": ["Unverified / reported information", "A polite request", "A hypothetical si-clause"],
+          "options": [
+            "Unverified / reported information",
+            "A hypothetical si-clause",
+            "A polite request"
+          ],
           "correctIndex": 0,
           "explanation": "Il y aurait eu — the journalistic conditional signals that the information is unconfirmed or reported, not directly witnessed by the speaker."
         },
         {
           "type": "fill-blank",
           "prompt": "Tu ___ (devoir) dormir plus tôt. (You should go to sleep earlier.)",
-          "acceptedAnswers": ["devrais"],
+          "acceptedAnswers": [
+            "devrais"
+          ],
           "hint": "Use the conditional of devoir for tu to give advice",
           "explanation": "Devoir in the conditional expresses advice or recommendation: tu devrais = you should."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I would love to speak French better'?",
-          "options": ["J'aimerais parler mieux français.", "J'aimais parler mieux français.", "J'aimerai parler mieux français."],
-          "correctIndex": 0,
+          "options": [
+            "J'aimerai parler mieux français.",
+            "J'aimais parler mieux français.",
+            "J'aimerais parler mieux français."
+          ],
+          "correctIndex": 2,
           "explanation": "J'aimerais is the conditional of aimer, expressing a wish. J'aimais is the imparfait (I used to like), and j'aimerai is the futur simple (I will like)."
         },
         {
           "type": "fill-blank",
           "prompt": "Si elle ___ (avoir) plus de temps, elle lirait davantage. (If she had more time, she would read more.)",
-          "acceptedAnswers": ["avait"],
+          "acceptedAnswers": [
+            "avait"
+          ],
           "hint": "After si in a hypothetical sentence, use the imparfait, not the conditional",
           "explanation": "The si-clause requires the imparfait: si elle avait. The conditional (lirait) goes in the result clause, never after si."
         }

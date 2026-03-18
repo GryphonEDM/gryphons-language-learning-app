@@ -4,7 +4,9 @@
   "nameKo": "피동과 사동",
   "icon": "🔄",
   "tier": "B1",
-  "prerequisites": ["verb-conjugation"],
+  "prerequisites": [
+    "verb-conjugation"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "Korean forms the passive voice by adding one of four suffixes to the verb stem: -이, -히, -리, or -기. The choice of suffix depends on the verb, and there is no universal rule — they must be memorized. Some patterns help: -이 often attaches to stems ending in ㅎ, ㄱ, or a vowel (보다 → 보이다, 쌓다 → 쌓이다, 놓다 → 놓이다). -히 often attaches to stems ending in ㅂ, ㄱ, or ㄷ (먹다 → 먹히다, 잡다 → 잡히다, 닫다 → 닫히다). -리 often attaches to stems ending in ㄹ (듣다 → 들리다, 열다 → 열리다). -기 often attaches to stems ending in ㄴ, ㅁ, or ㅅ (안다 → 안기다, 담다 → 담기다). The passive sentence structure shifts the object to the subject: 고양이가 쥐를 잡았다 (The cat caught the mouse) → 쥐가 고양이에게 잡혔다 (The mouse was caught by the cat).",
       "tip": "Not every Korean verb has a lexical passive form with -이/히/리/기. For verbs that lack one, Korean uses the construction -아/어지다 instead (e.g., 만들다 → 만들어지다). When the lexical passive exists, it is generally preferred over -아/어지다.",
       "examples": [
-        { "ko": "문이 열리다", "en": "The door is opened (열다 → 열리다, passive with -리)", "highlight": "열리다" },
-        { "ko": "소리가 들리다", "en": "The sound is heard (듣다 → 들리다, passive with -리)", "highlight": "들리다" },
-        { "ko": "도둑이 잡히다", "en": "The thief is caught (잡다 → 잡히다, passive with -히)", "highlight": "잡히다" },
-        { "ko": "산이 보이다", "en": "The mountain is visible (보다 → 보이다, passive with -이)", "highlight": "보이다" }
+        {
+          "ko": "문이 열리다",
+          "en": "The door is opened (열다 → 열리다, passive with -리)",
+          "highlight": "열리다"
+        },
+        {
+          "ko": "소리가 들리다",
+          "en": "The sound is heard (듣다 → 들리다, passive with -리)",
+          "highlight": "들리다"
+        },
+        {
+          "ko": "도둑이 잡히다",
+          "en": "The thief is caught (잡다 → 잡히다, passive with -히)",
+          "highlight": "잡히다"
+        },
+        {
+          "ko": "산이 보이다",
+          "en": "The mountain is visible (보다 → 보이다, passive with -이)",
+          "highlight": "보이다"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the passive form of 먹다 (to eat)?",
-          "options": ["먹히다", "먹이다", "먹리다"],
+          "options": [
+            "먹히다",
+            "먹리다",
+            "먹이다"
+          ],
           "correctIndex": 0,
           "explanation": "먹다 takes the -히 passive suffix: 먹히다 (to be eaten). Example: 사과가 먹혔다 — The apple was eaten."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which passive suffix does 안다 (to hold/embrace) take?",
-          "options": ["-기 → 안기다", "-이 → 안이다", "-히 → 안히다"],
+          "options": [
+            "-기 → 안기다",
+            "-히 → 안히다",
+            "-이 → 안이다"
+          ],
           "correctIndex": 0,
           "explanation": "안다 takes the -기 suffix to form the passive 안기다 (to be held). Stems ending in ㄴ often take -기."
         },
         {
           "type": "multiple-choice",
           "prompt": "'그 별은 여기서 보인다' means:",
-          "options": ["That star is visible from here", "I see that star from here", "That star is looking from here"],
-          "correctIndex": 0,
+          "options": [
+            "That star is looking from here",
+            "That star is visible from here",
+            "I see that star from here"
+          ],
+          "correctIndex": 1,
           "explanation": "보이다 is the passive of 보다 (to see). 보인다 means 'is seen/is visible.' The star is the subject being seen, not doing the seeing."
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "Korean also uses suffixes to create causative verbs — meaning 'to make/cause someone to do something.' The suffixes overlap with passives (-이, -히, -리, -기) but also include -우 and -추. Like passives, the specific suffix must be memorized per verb. Examples: 먹다 (to eat) → 먹이다 (to feed — make someone eat). 죽다 (to die) → 죽이다 (to kill — cause to die). 읽다 (to read) → 읽히다 (to make someone read). 울다 (to cry) → 울리다 (to make someone cry). 웃다 (to laugh) → 웃기다 (to make someone laugh). 자다 (to sleep) → 재우다 (to put someone to sleep). 낮다 (to be low) → 낮추다 (to lower). The causative sentence introduces a causer: 아이가 먹어요 (The child eats) → 엄마가 아이에게 먹여요 (The mother feeds the child).",
       "tip": "Notice that some verb stems use the same suffix for both passive and causative — context and sentence structure determine meaning. For example, 보이다 can mean 'to be seen' (passive) or 'to show' (causative).",
       "examples": [
-        { "ko": "엄마가 아기에게 우유를 먹여요", "en": "The mother feeds the baby milk (먹다 → 먹이다)", "highlight": "먹여요" },
-        { "ko": "그 영화가 나를 울렸어요", "en": "That movie made me cry (울다 → 울리다)", "highlight": "울렸어요" },
-        { "ko": "아이를 재웠어요", "en": "I put the child to sleep (자다 → 재우다)", "highlight": "재웠어요" },
-        { "ko": "그 이야기가 모두를 웃겼어요", "en": "That story made everyone laugh (웃다 → 웃기다)", "highlight": "웃겼어요" }
+        {
+          "ko": "엄마가 아기에게 우유를 먹여요",
+          "en": "The mother feeds the baby milk (먹다 → 먹이다)",
+          "highlight": "먹여요"
+        },
+        {
+          "ko": "그 영화가 나를 울렸어요",
+          "en": "That movie made me cry (울다 → 울리다)",
+          "highlight": "울렸어요"
+        },
+        {
+          "ko": "아이를 재웠어요",
+          "en": "I put the child to sleep (자다 → 재우다)",
+          "highlight": "재웠어요"
+        },
+        {
+          "ko": "그 이야기가 모두를 웃겼어요",
+          "en": "That story made everyone laugh (웃다 → 웃기다)",
+          "highlight": "웃겼어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "먹이다 means:",
-          "options": ["to feed (make someone eat)", "to be eaten", "to eat together"],
-          "correctIndex": 0,
+          "options": [
+            "to eat together",
+            "to feed (make someone eat)",
+            "to be eaten"
+          ],
+          "correctIndex": 1,
           "explanation": "먹이다 is the causative form of 먹다 (to eat). It means 'to feed' — to cause someone to eat. The passive form is 먹히다 (to be eaten)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the causative form of 자다 (to sleep)?",
-          "options": ["재우다", "자이다", "자기다"],
-          "correctIndex": 0,
+          "options": [
+            "자이다",
+            "재우다",
+            "자기다"
+          ],
+          "correctIndex": 1,
           "explanation": "자다 → 재우다 (to put someone to sleep). This is one of the verbs that takes the -우 causative suffix, with a stem vowel change from ㅏ to ㅐ."
         },
         {
           "type": "multiple-choice",
           "prompt": "In '선생님이 학생에게 책을 읽혔어요,' what does 읽히다 mean?",
-          "options": ["to make someone read", "to be read", "to read aloud"],
-          "correctIndex": 0,
+          "options": [
+            "to be read",
+            "to read aloud",
+            "to make someone read"
+          ],
+          "correctIndex": 2,
           "explanation": "Here 읽히다 is used causatively: the teacher made the student read the book. The same form can be passive ('to be read') in a different sentence structure. Context determines meaning."
         }
       ]
@@ -83,31 +141,59 @@
       "explanation": "When a verb has no lexical passive form (no -이/히/리/기 passive exists), Korean uses the auxiliary construction -아/어지다 to express a passive or change-of-state meaning. This is formed by adding 지다 to the -아/어 form of the verb. For verbs: 만들다 (to make) → 만들어지다 (to be made). 사용하다 (to use) → 사용되다 (to be used — using the Sino-Korean passive 되다). For adjectives, -아/어지다 means 'to become': 예쁘다 (to be pretty) → 예뻐지다 (to become pretty). 좋다 (to be good) → 좋아지다 (to become good/better). 날씨가 따뜻해졌어요 (The weather became warm). This pattern is very productive and widely used in everyday Korean.",
       "tip": "Use -아/어지다 freely with adjectives to mean 'become [adjective].' With action verbs, use it for passive meaning only when no lexical passive (-이/히/리/기) exists. For Sino-Korean verbs (하다 verbs), the passive is often formed with 되다 instead: 발견하다 → 발견되다.",
       "examples": [
-        { "ko": "날씨가 추워졌어요", "en": "The weather became cold (춥다 → 추워지다)", "highlight": "추워졌어요" },
-        { "ko": "건물이 지어졌어요", "en": "The building was built (짓다 → 지어지다)", "highlight": "지어졌어요" },
-        { "ko": "문제가 해결되었어요", "en": "The problem was resolved (해결하다 → 해결되다)", "highlight": "해결되었어요" },
-        { "ko": "한국어가 쉬워졌어요", "en": "Korean became easier (쉽다 → 쉬워지다)", "highlight": "쉬워졌어요" }
+        {
+          "ko": "날씨가 추워졌어요",
+          "en": "The weather became cold (춥다 → 추워지다)",
+          "highlight": "추워졌어요"
+        },
+        {
+          "ko": "건물이 지어졌어요",
+          "en": "The building was built (짓다 → 지어지다)",
+          "highlight": "지어졌어요"
+        },
+        {
+          "ko": "문제가 해결되었어요",
+          "en": "The problem was resolved (해결하다 → 해결되다)",
+          "highlight": "해결되었어요"
+        },
+        {
+          "ko": "한국어가 쉬워졌어요",
+          "en": "Korean became easier (쉽다 → 쉬워지다)",
+          "highlight": "쉬워졌어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'길이 좋아졌어요' means:",
-          "options": ["The road became better", "The road is good", "Someone improved the road"],
-          "correctIndex": 0,
+          "options": [
+            "The road is good",
+            "The road became better",
+            "Someone improved the road"
+          ],
+          "correctIndex": 1,
           "explanation": "좋아지다 means 'to become good/better' — it combines the adjective 좋다 with -아지다 to show a change of state. So 길이 좋아졌어요 = The road became better."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'to be used' from 사용하다 (to use)?",
-          "options": ["사용되다", "사용해지다", "사용어지다"],
-          "correctIndex": 0,
+          "options": [
+            "사용어지다",
+            "사용해지다",
+            "사용되다"
+          ],
+          "correctIndex": 2,
           "explanation": "Sino-Korean verbs (하다 verbs) typically form passives with 되다, not -아/어지다. So 사용하다 → 사용되다 (to be used)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 예뻐지다 mean?",
-          "options": ["to become pretty", "to be made pretty by someone", "to see something pretty"],
-          "correctIndex": 0,
+          "options": [
+            "to be made pretty by someone",
+            "to become pretty",
+            "to see something pretty"
+          ],
+          "correctIndex": 1,
           "explanation": "When -아/어지다 is attached to an adjective, it expresses 'to become [adjective].' 예쁘다 (to be pretty) → 예뻐지다 (to become pretty)."
         }
       ]

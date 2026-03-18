@@ -4,7 +4,9 @@
   "nameHi": "भूतकाल",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["postpositions"],
+  "prerequisites": [
+    "postpositions"
+  ],
   "estimatedMinutes": 18,
   "sections": [
     {
@@ -13,32 +15,64 @@
       "explanation": "The simple past tense in Hindi describes actions that were completed at a specific point in the past. It is formed using the verb root plus the past tense suffixes that agree with the gender and number of the subject (or object, in transitive sentences). For intransitive verbs, the verb agrees with the subject: masculine singular takes -आ (e.g., गया — he went), feminine singular takes -ई (e.g., गई — she went), masculine plural takes -ए (e.g., गए — they went, masc.), and feminine plural takes -ईं (e.g., गईं — they went, fem.). For transitive verbs, the subject takes the postposition ने and the verb agrees with the object instead. For example: उसने किताब पढ़ी (He read the book) — पढ़ी agrees with किताब (feminine). If the object also has a postposition, the verb defaults to masculine singular: उसने उसको देखा (He saw him/her). This ergative construction with ने is one of the most distinctive features of Hindi grammar.",
       "tip": "Remember: with transitive verbs in the past tense, the subject always takes ने and the verb agrees with the object, not the subject. If the object has a postposition too, the verb defaults to masculine singular -आ.",
       "examples": [
-        { "hi": "मैं गया।", "en": "I went. (male speaker)", "highlight": "गया" },
-        { "hi": "वह आई।", "en": "She came.", "highlight": "आई" },
-        { "hi": "उसने खाना खाया।", "en": "He/She ate food.", "highlight": "ने" },
-        { "hi": "लड़की ने किताब पढ़ी।", "en": "The girl read a book.", "highlight": "पढ़ी" },
-        { "hi": "बच्चे स्कूल गए।", "en": "The children went to school.", "highlight": "गए" }
+        {
+          "hi": "मैं गया।",
+          "en": "I went. (male speaker)",
+          "highlight": "गया"
+        },
+        {
+          "hi": "वह आई।",
+          "en": "She came.",
+          "highlight": "आई"
+        },
+        {
+          "hi": "उसने खाना खाया।",
+          "en": "He/She ate food.",
+          "highlight": "ने"
+        },
+        {
+          "hi": "लड़की ने किताब पढ़ी।",
+          "en": "The girl read a book.",
+          "highlight": "पढ़ी"
+        },
+        {
+          "hi": "बच्चे स्कूल गए।",
+          "en": "The children went to school.",
+          "highlight": "गए"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She went' in Hindi?",
-          "options": ["वह गया।", "वह गई।", "वह गए।"],
+          "options": [
+            "वह गया।",
+            "वह गई।",
+            "वह गए।"
+          ],
           "correctIndex": 1,
           "explanation": "Since the subject is feminine singular (she), the verb जाना takes the feminine singular past form गई. Masculine singular would be गया, and masculine plural would be गए."
         },
         {
           "type": "multiple-choice",
           "prompt": "In the sentence 'उसने रोटी खाई', why does the verb end in -ई?",
-          "options": ["Because the subject is feminine", "Because रोटी (bread) is feminine and transitive past verbs agree with the object", "Because all past tense verbs end in -ई"],
-          "correctIndex": 1,
+          "options": [
+            "Because all past tense verbs end in -ई",
+            "Because the subject is feminine",
+            "Because रोटी (bread) is feminine and transitive past verbs agree with the object"
+          ],
+          "correctIndex": 2,
           "explanation": "In transitive past tense sentences with ने, the verb agrees with the object, not the subject. रोटी is feminine, so the verb खाना becomes खाई (feminine singular past)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which postposition marks the subject of a transitive verb in the past tense?",
-          "options": ["को", "ने", "से"],
-          "correctIndex": 1,
+          "options": [
+            "को",
+            "से",
+            "ने"
+          ],
+          "correctIndex": 2,
           "explanation": "The postposition ने marks the subject (agent) of a transitive verb in the simple past tense. This is called the ergative construction and is unique to Hindi and related languages."
         }
       ]
@@ -49,31 +83,59 @@
       "explanation": "The habitual past tense describes actions that used to happen regularly or were ongoing habits in the past, similar to English 'used to' or 'would (regularly)'. It is formed with the imperfective participle (verb root + ता/ती/ते) plus the past tense of होना (था/थी/थे/थीं). Both the participle and the auxiliary must agree with the subject in gender and number. For masculine singular: करता था (used to do), for feminine singular: करती थी (used to do), for masculine plural: करते थे (used to do), and for feminine plural: करती थीं (used to do). Unlike the simple past, there is no ergative ने construction — the verb always agrees with the subject. This tense is used for past routines, descriptions of past states, and nostalgic recollections.",
       "tip": "Think of this tense as painting a picture of how things were. Both parts must agree: the -ता/-ती/-ते participle AND the था/थी/थे/थीं auxiliary match the subject's gender and number.",
       "examples": [
-        { "hi": "मैं रोज़ स्कूल जाता था।", "en": "I used to go to school every day. (male speaker)", "highlight": "जाता था" },
-        { "hi": "वह हमेशा गाना गाती थी।", "en": "She always used to sing songs.", "highlight": "गाती थी" },
-        { "hi": "हम बचपन में खेलते थे।", "en": "We used to play in childhood.", "highlight": "खेलते थे" },
-        { "hi": "दादी कहानियाँ सुनाती थीं।", "en": "Grandmother used to tell stories.", "highlight": "सुनाती थीं" }
+        {
+          "hi": "मैं रोज़ स्कूल जाता था।",
+          "en": "I used to go to school every day. (male speaker)",
+          "highlight": "जाता था"
+        },
+        {
+          "hi": "वह हमेशा गाना गाती थी।",
+          "en": "She always used to sing songs.",
+          "highlight": "गाती थी"
+        },
+        {
+          "hi": "हम बचपन में खेलते थे।",
+          "en": "We used to play in childhood.",
+          "highlight": "खेलते थे"
+        },
+        {
+          "hi": "दादी कहानियाँ सुनाती थीं।",
+          "en": "Grandmother used to tell stories.",
+          "highlight": "सुनाती थीं"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How would a female speaker say 'I used to read'?",
-          "options": ["मैं पढ़ता था।", "मैं पढ़ती थी।", "मैं पढ़ते थे।"],
-          "correctIndex": 1,
+          "options": [
+            "मैं पढ़ती थी।",
+            "मैं पढ़ता था।",
+            "मैं पढ़ते थे।"
+          ],
+          "correctIndex": 0,
           "explanation": "A female speaker uses the feminine forms: पढ़ती (feminine participle) + थी (feminine past of होना). The masculine equivalents would be पढ़ता था."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which tense is used in: 'वे लोग यहाँ रहते थे'?",
-          "options": ["Simple past", "Habitual past", "Future tense"],
+          "options": [
+            "Simple past",
+            "Habitual past",
+            "Future tense"
+          ],
           "correctIndex": 1,
           "explanation": "The combination of the imperfective participle रहते + the past auxiliary थे forms the habitual past tense, meaning 'Those people used to live here.' It describes a regular past state."
         },
         {
           "type": "multiple-choice",
           "prompt": "Does the habitual past tense use the ने construction for transitive verbs?",
-          "options": ["Yes, always", "No, the verb agrees with the subject directly", "Only for masculine subjects"],
-          "correctIndex": 1,
+          "options": [
+            "No, the verb agrees with the subject directly",
+            "Yes, always",
+            "Only for masculine subjects"
+          ],
+          "correctIndex": 0,
           "explanation": "The habitual past tense does NOT use the ergative ने construction. The imperfective participle and auxiliary both agree directly with the subject, regardless of whether the verb is transitive or intransitive."
         }
       ]
@@ -84,31 +146,59 @@
       "explanation": "The present perfect tense describes actions that have been completed but have relevance to the present moment, similar to English 'has done' or 'have done'. It is formed with the perfective participle (same form as simple past: verb root + आ/ई/ए/ईं) plus the present tense of होना (है/हैं). For example: किया है (has done), गई है (has gone, fem.), आए हैं (have come, masc. pl.). For transitive verbs, the ने construction applies just as in the simple past — the verb agrees with the object. The present perfect is used when the result of a past action is still relevant: मैंने खाना खा लिया है (I have eaten food — implying I am not hungry now). It contrasts with the simple past, which simply reports a completed event without emphasizing current relevance.",
       "tip": "Present perfect = simple past participle + है/हैं. Use it when the past action still matters now. 'मैं गया' = 'I went' (just reporting), but 'मैं गया हूँ' = 'I have gone' (I am currently away).",
       "examples": [
-        { "hi": "मैंने काम कर लिया है।", "en": "I have finished the work.", "highlight": "कर लिया है" },
-        { "hi": "वह चली गई है।", "en": "She has left / gone away.", "highlight": "गई है" },
-        { "hi": "बारिश हो चुकी है।", "en": "It has already rained.", "highlight": "हो चुकी है" },
-        { "hi": "हम यह फ़िल्म देख चुके हैं।", "en": "We have already seen this film.", "highlight": "देख चुके हैं" }
+        {
+          "hi": "मैंने काम कर लिया है।",
+          "en": "I have finished the work.",
+          "highlight": "कर लिया है"
+        },
+        {
+          "hi": "वह चली गई है।",
+          "en": "She has left / gone away.",
+          "highlight": "गई है"
+        },
+        {
+          "hi": "बारिश हो चुकी है।",
+          "en": "It has already rained.",
+          "highlight": "हो चुकी है"
+        },
+        {
+          "hi": "हम यह फ़िल्म देख चुके हैं।",
+          "en": "We have already seen this film.",
+          "highlight": "देख चुके हैं"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the present perfect form of 'वह आना' (he to come)?",
-          "options": ["वह आया।", "वह आया है।", "वह आता था।"],
-          "correctIndex": 1,
+          "options": [
+            "वह आया।",
+            "वह आता था।",
+            "वह आया है।"
+          ],
+          "correctIndex": 2,
           "explanation": "The present perfect is formed by adding है to the perfective participle: आया + है = आया है (he has come). Without है, आया is just the simple past (he came)."
         },
         {
           "type": "multiple-choice",
           "prompt": "In 'उसने पत्र लिखा है', the verb लिखा agrees with:",
-          "options": ["उसने (the subject)", "पत्र (the object, masculine singular)", "है (the auxiliary)"],
-          "correctIndex": 1,
+          "options": [
+            "पत्र (the object, masculine singular)",
+            "उसने (the subject)",
+            "है (the auxiliary)"
+          ],
+          "correctIndex": 0,
           "explanation": "In the present perfect with a transitive verb, the ने construction is used and the participle agrees with the object. पत्र (letter) is masculine singular, so the verb is लिखा (masculine singular perfective participle)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which compound verb marker indicates 'already completed' in the present perfect?",
-          "options": ["लेना (e.g., कर लिया है)", "चुकना (e.g., कर चुका है)", "Both can express completion"],
-          "correctIndex": 2,
+          "options": [
+            "Both can express completion",
+            "चुकना (e.g., कर चुका है)",
+            "लेना (e.g., कर लिया है)"
+          ],
+          "correctIndex": 0,
           "explanation": "Both लेना and चुकना are used as compound verb markers to emphasize completion. कर लिया है means 'has done (for oneself)', while कर चुका है means 'has already done / is done with'. Both are common in the present perfect."
         }
       ]

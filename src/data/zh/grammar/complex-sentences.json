@@ -4,7 +4,10 @@
   "nameZh": "复杂句",
   "icon": "🧩",
   "tier": "B2",
-  "prerequisites": ["conjunctions", "complements"],
+  "prerequisites": [
+    "conjunctions",
+    "complements"
+  ],
   "estimatedMinutes": 30,
   "sections": [
     {
@@ -13,35 +16,58 @@
       "explanation": "Chinese has no relative pronouns like 'who', 'which', or 'that'. Instead, you form relative clauses by placing a modifying clause BEFORE the noun, followed by the particle 的. The structure is: [clause] + 的 + noun. This is the opposite of English, where the relative clause comes after the noun. For example, 'the book I bought yesterday' becomes '我昨天买的书' (I yesterday bought DE book). Any clause that describes or identifies a noun can be placed before it with 的. The subject of the relative clause can be different from the main clause subject: '妈妈做的菜' (the food mom made).",
       "tip": "Think of 的 as a connector that turns any clause into an adjective. The clause always comes BEFORE the noun it modifies — the exact reverse of English. If you can say 'the ___ that ...' in English, move the 'that ...' part before the noun and add 的.",
       "examples": [
-        { "zh": "我昨天买的书很有意思。", "en": "The book I bought yesterday is very interesting.", "highlight": "我昨天买的书" },
-        { "zh": "她穿的衣服非常漂亮。", "en": "The clothes she is wearing are very beautiful.", "highlight": "她穿的衣服" },
-        { "zh": "住在北京的朋友下周来看我。", "en": "The friend who lives in Beijing is coming to see me next week.", "highlight": "住在北京的朋友" },
-        { "zh": "老师教的内容我都记住了。", "en": "I remembered everything the teacher taught.", "highlight": "老师教的内容" }
+        {
+          "zh": "我昨天买的书很有意思。",
+          "en": "The book I bought yesterday is very interesting.",
+          "highlight": "我昨天买的书"
+        },
+        {
+          "zh": "她穿的衣服非常漂亮。",
+          "en": "The clothes she is wearing are very beautiful.",
+          "highlight": "她穿的衣服"
+        },
+        {
+          "zh": "住在北京的朋友下周来看我。",
+          "en": "The friend who lives in Beijing is coming to see me next week.",
+          "highlight": "住在北京的朋友"
+        },
+        {
+          "zh": "老师教的内容我都记住了。",
+          "en": "I remembered everything the teacher taught.",
+          "highlight": "老师教的内容"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'the movie I watched' in Chinese?",
-          "options": ["我看了电影的", "我看的电影", "电影的我看", "电影我看的"],
-          "correctIndex": 1,
+          "options": [
+            "我看的电影",
+            "我看了电影的",
+            "电影的我看",
+            "电影我看的"
+          ],
+          "correctIndex": 0,
           "explanation": "The modifying clause '我看' comes before 的, and the noun '电影' comes after: 我看的电影."
         },
         {
           "type": "fill-blank",
           "prompt": "他写___文章发表了。(The article he wrote was published.)",
-          "acceptedAnswers": ["的"],
+          "acceptedAnswers": [
+            "的"
+          ],
           "hint": "'他写' is the clause modifying '文章'. What particle connects a modifying clause to the noun?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses a relative clause with 的?",
           "options": [
+            "做妈妈的菜很好吃。",
             "妈妈做的菜很好吃。",
-            "的妈妈做菜很好吃。",
             "妈妈菜做的很好吃。",
-            "做妈妈的菜很好吃。"
+            "的妈妈做菜很好吃。"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "'妈妈做的菜' means 'the food mom made'. The clause (妈妈做) comes before 的, and the noun (菜) comes after."
         }
       ]
@@ -52,16 +78,37 @@
       "explanation": "In English, embedded (indirect) questions change word order: 'Where did he go?' becomes 'I don't know where he went.' Chinese is simpler — the word order stays exactly the same in both direct and indirect questions. The question is placed after verbs like 知道 (know), 告诉 (tell), 问 (ask), 明白 (understand), or 想 (wonder). Direct: '他去哪里？' (Where did he go?) → Indirect: '我不知道他去哪里。' (I don't know where he went.) The question word (谁, 什么, 哪里, 怎么, 为什么, etc.) stays in its original position.",
       "tip": "Unlike English, you never need to rearrange the word order for indirect questions. Just drop the entire question (minus the question mark) into the sentence after your main verb. The question word stays right where it would be in a direct question.",
       "examples": [
-        { "zh": "我不知道他去哪里了。", "en": "I don't know where he went.", "highlight": "他去哪里" },
-        { "zh": "你能告诉我这个多少钱吗？", "en": "Can you tell me how much this costs?", "highlight": "这个多少钱" },
-        { "zh": "我想知道她为什么没来。", "en": "I want to know why she didn't come.", "highlight": "她为什么没来" },
-        { "zh": "他问我谁是新老师。", "en": "He asked me who the new teacher is.", "highlight": "谁是新老师" }
+        {
+          "zh": "我不知道他去哪里了。",
+          "en": "I don't know where he went.",
+          "highlight": "他去哪里"
+        },
+        {
+          "zh": "你能告诉我这个多少钱吗？",
+          "en": "Can you tell me how much this costs?",
+          "highlight": "这个多少钱"
+        },
+        {
+          "zh": "我想知道她为什么没来。",
+          "en": "I want to know why she didn't come.",
+          "highlight": "她为什么没来"
+        },
+        {
+          "zh": "他问我谁是新老师。",
+          "en": "He asked me who the new teacher is.",
+          "highlight": "谁是新老师"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "我不知道他___。(I don't know where he lives.)",
-          "acceptedAnswers": ["住在哪里", "住哪里", "住在哪儿", "住哪儿"],
+          "acceptedAnswers": [
+            "住在哪里",
+            "住哪里",
+            "住在哪儿",
+            "住哪儿"
+          ],
           "hint": "The direct question is '他住在哪里？' — just embed it as-is after 不知道."
         },
         {
@@ -70,8 +117,8 @@
           "options": [
             "请告诉我什么时候会议开始。",
             "请告诉我会议什么时候开始。",
-            "请告诉我会议开始什么时候。",
-            "请告诉我开始会议什么时候。"
+            "请告诉我开始会议什么时候。",
+            "请告诉我会议开始什么时候。"
           ],
           "correctIndex": 1,
           "explanation": "The word order stays the same as the direct question: 会议什么时候开始. Just place it after 告诉我."
@@ -79,7 +126,10 @@
         {
           "type": "fill-blank",
           "prompt": "你知道她___吗？(Do you know what her name is?)",
-          "acceptedAnswers": ["叫什么", "叫什么名字"],
+          "acceptedAnswers": [
+            "叫什么",
+            "叫什么名字"
+          ],
           "hint": "The direct question is '她叫什么？' Keep the same word order after 知道."
         }
       ]
@@ -90,30 +140,58 @@
       "explanation": "除了...以外 is a versatile structure with two opposite meanings depending on what follows. (1) INCLUSIVE (besides/in addition to): Use 还 or 也 in the main clause. '除了中文以外，他还会说日语。' (Besides Chinese, he can also speak Japanese.) This means Chinese PLUS Japanese. (2) EXCLUSIVE (except for): Use 都 (often with 都不 or 都没) in the main clause. '除了他以外，我们都去了。' (Except for him, we all went.) This means everyone MINUS him. The 以外 part is often omitted in casual speech: 除了中文，他还会说日语.",
       "tip": "Look at the second half of the sentence to determine the meaning: 还/也 = inclusive (adding more), 都 = exclusive (everyone/everything except). Think of 还 as '+' and 都 as '−'.",
       "examples": [
-        { "zh": "除了英语以外，她还会说法语和西班牙语。", "en": "Besides English, she can also speak French and Spanish.", "highlight": "除了英语以外" },
-        { "zh": "除了星期天以外，我每天都上班。", "en": "Except for Sunday, I work every day.", "highlight": "除了星期天以外" },
-        { "zh": "除了看书，他还喜欢听音乐。", "en": "Besides reading, he also likes listening to music.", "highlight": "除了看书" },
-        { "zh": "除了小王以外，大家都来了。", "en": "Except for Xiao Wang, everyone came.", "highlight": "除了小王以外" }
+        {
+          "zh": "除了英语以外，她还会说法语和西班牙语。",
+          "en": "Besides English, she can also speak French and Spanish.",
+          "highlight": "除了英语以外"
+        },
+        {
+          "zh": "除了星期天以外，我每天都上班。",
+          "en": "Except for Sunday, I work every day.",
+          "highlight": "除了星期天以外"
+        },
+        {
+          "zh": "除了看书，他还喜欢听音乐。",
+          "en": "Besides reading, he also likes listening to music.",
+          "highlight": "除了看书"
+        },
+        {
+          "zh": "除了小王以外，大家都来了。",
+          "en": "Except for Xiao Wang, everyone came.",
+          "highlight": "除了小王以外"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "除了咖啡以外，我___喜欢喝茶。(Besides coffee, I also like drinking tea.)",
-          "options": ["都", "还", "就", "才"],
-          "correctIndex": 1,
+          "options": [
+            "还",
+            "就",
+            "才",
+            "都"
+          ],
+          "correctIndex": 0,
           "explanation": "This is inclusive — adding tea to coffee. Use 还 (also/in addition) for the inclusive meaning of 除了."
         },
         {
           "type": "multiple-choice",
           "prompt": "除了这道题以外，其他的我___做对了。(Except for this question, I got all the others right.)",
-          "options": ["还", "也", "都", "又"],
+          "options": [
+            "也",
+            "又",
+            "都",
+            "还"
+          ],
           "correctIndex": 2,
           "explanation": "This is exclusive — everything except this one question. Use 都 for the exclusive meaning of 除了."
         },
         {
           "type": "fill-blank",
           "prompt": "___数学以外，他还喜欢物理。(Besides math, he also likes physics.)",
-          "acceptedAnswers": ["除了"],
+          "acceptedAnswers": [
+            "除了"
+          ],
           "hint": "What word begins the 'besides/except' structure?"
         }
       ]
@@ -124,29 +202,54 @@
       "explanation": "无论 and 不管 both mean 'no matter / regardless of' and are used interchangeably, though 无论 is slightly more formal. They are followed by a question word (谁, 什么, 哪里, 怎么, 多) or an A-not-A choice (去不去, 好不好), and the main clause uses 都 or 也 to emphasize that the result is the same in all cases. Structure: 无论/不管 + [question word / A-not-A] + 都/也 + result. Example: '不管你去不去，我都要去。' (No matter whether you go or not, I'm going.) '无论多难，他都不放弃。' (No matter how hard it is, he won't give up.)",
       "tip": "不管/无论 must pair with 都 or 也 — never leave out the 都! Use a question word or A-not-A pattern after 不管/无论 to cover all possibilities. 不管 is more conversational; 无论 is more formal or written.",
       "examples": [
-        { "zh": "不管天气怎么样，我们都要出发。", "en": "No matter what the weather is like, we're setting off.", "highlight": "不管天气怎么样" },
-        { "zh": "无论你做什么决定，我都支持你。", "en": "No matter what decision you make, I'll support you.", "highlight": "无论你做什么决定" },
-        { "zh": "不管去不去，你都得告诉我。", "en": "Whether you go or not, you have to tell me.", "highlight": "不管去不去" },
-        { "zh": "无论多贵，她都想买那个包。", "en": "No matter how expensive it is, she wants to buy that bag.", "highlight": "无论多贵" }
+        {
+          "zh": "不管天气怎么样，我们都要出发。",
+          "en": "No matter what the weather is like, we're setting off.",
+          "highlight": "不管天气怎么样"
+        },
+        {
+          "zh": "无论你做什么决定，我都支持你。",
+          "en": "No matter what decision you make, I'll support you.",
+          "highlight": "无论你做什么决定"
+        },
+        {
+          "zh": "不管去不去，你都得告诉我。",
+          "en": "Whether you go or not, you have to tell me.",
+          "highlight": "不管去不去"
+        },
+        {
+          "zh": "无论多贵，她都想买那个包。",
+          "en": "No matter how expensive it is, she wants to buy that bag.",
+          "highlight": "无论多贵"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "不管谁来，我___不开门。(No matter who comes, I won't open the door.)",
-          "acceptedAnswers": ["都"],
+          "acceptedAnswers": [
+            "都"
+          ],
           "hint": "不管/无论 must be paired with ___ in the main clause to show the result is always the same."
         },
         {
           "type": "multiple-choice",
           "prompt": "___多忙，他都坚持锻炼。(No matter how busy he is, he persists in exercising.)",
-          "options": ["不管", "因为", "虽然", "如果"],
+          "options": [
+            "不管",
+            "因为",
+            "虽然",
+            "如果"
+          ],
           "correctIndex": 0,
           "explanation": "'No matter how...' uses 不管 or 无论 paired with 都. 因为 = because, 虽然 = although, 如果 = if."
         },
         {
           "type": "fill-blank",
           "prompt": "无论你去___去，我都会等你。(No matter whether you go or not, I'll wait for you.)",
-          "acceptedAnswers": ["不"],
+          "acceptedAnswers": [
+            "不"
+          ],
           "hint": "This uses the A-not-A pattern: 去___去 means 'go or not go'."
         }
       ]

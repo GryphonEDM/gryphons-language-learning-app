@@ -4,7 +4,9 @@
   "nameUk": "Майбутній час і вид",
   "icon": "⏩",
   "tier": "B1",
-  "prerequisites": ["verbs-past"],
+  "prerequisites": [
+    "verbs-past"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -12,33 +14,182 @@
       "title": "Imperfective Future",
       "explanation": "The imperfective future expresses ongoing, repeated, or habitual future actions. It is formed with буду/будеш/буде/будемо/будете/будуть + the infinitive of an imperfective verb. This is similar to English 'will be doing' or 'will do (regularly)'.",
       "examples": [
-        { "uk": "Я буду читати цю книгу.", "en": "I will be reading this book.", "highlight": "буду читати" },
-        { "uk": "Вона буде працювати завтра.", "en": "She will work tomorrow.", "highlight": "буде працювати" },
-        { "uk": "Ми будемо вчитися разом.", "en": "We will study together.", "highlight": "будемо вчитися" }
+        {
+          "uk": "Я буду читати цю книгу.",
+          "en": "I will be reading this book.",
+          "highlight": "буду читати"
+        },
+        {
+          "uk": "Вона буде працювати завтра.",
+          "en": "She will work tomorrow.",
+          "highlight": "буде працювати"
+        },
+        {
+          "uk": "Ми будемо вчитися разом.",
+          "en": "We will study together.",
+          "highlight": "будемо вчитися"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Ти ___ готувати вечерю? (will you, singular)", "options": ["будеш", "буду", "буде"], "correctIndex": 0, "explanation": "Ти → будеш. The conjugation: буду, будеш, буде, будемо, будете, будуть." },
-        { "type": "fill-blank", "prompt": "Вони ___ дивитися фільм увечері. (they will)", "acceptedAnswers": ["будуть"], "hint": "Вони → ?", "explanation": "Вони → будуть. Third person plural of бути in the future." },
-        { "type": "fill-blank", "prompt": "Ми ___ подорожувати влітку. (we will)", "acceptedAnswers": ["будемо"], "hint": "Ми → ?", "explanation": "Ми → будемо. First person plural of бути in the future." },
-        { "type": "transformation", "prompt": "Form the imperfective future:", "baseWord": "писати", "context": "Вона ___ ___ листа.", "acceptedAnswers": ["буде писати"], "hint": "Вона + буде + infinitive", "explanation": "Imperfective future: буде + писати. The action is ongoing or in progress." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я будеш читати книгу.", "errorWord": "будеш", "acceptedAnswers": ["буду"], "explanation": "Я requires буду (first person), not будеш (second person: ти)." },
-        { "type": "matching", "prompt": "Match the subject to the correct form of 'бути':", "pairs": [
-          { "left": "я", "right": "буду" },
-          { "left": "ти", "right": "будеш" },
-          { "left": "він/вона", "right": "буде" },
-          { "left": "ми", "right": "будемо" },
-          { "left": "вони", "right": "будуть" }
-        ], "explanation": "Future of бути: буду, будеш, буде, будемо, будете, будуть." },
-        { "type": "multiple-choice", "prompt": "Which sentence is imperfective future? (ongoing action)", "options": ["Він буде працювати.", "Він попрацює.", "Він працював."], "correctIndex": 0, "explanation": "Буде + infinitive = imperfective future (ongoing). Попрацює = perfective future. Працював = past." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "We will be watching TV in the evening.", "words": ["Ми", "будемо", "дивитися", "телевізор", "увечері"], "distractors": ["подивимося"], "validOrders": [["Ми", "будемо", "дивитися", "телевізор", "увечері"]], "explanation": "Imperfective future: будемо + дивитися. The action is ongoing (watching TV as a process)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Завтра я буду вчити українську мову.", "acceptedAnswers": ["Завтра я буду вчити українську мову.", "Завтра я буду вчити українську мову"], "explanation": "Буду вчити — imperfective future. The studying will be an ongoing process." },
-        { "type": "table-fill", "prompt": "Complete the imperfective future of 'працювати' (to work):", "headers": ["Subject", "Future Form"], "rows": [
-          { "label": "я", "answer": "буду працювати", "prefilled": false },
-          { "label": "ти", "answer": "будеш працювати", "prefilled": false },
-          { "label": "він/вона", "answer": "буде працювати", "prefilled": false },
-          { "label": "ми", "answer": "будемо працювати", "prefilled": false },
-          { "label": "вони", "answer": "будуть працювати", "prefilled": false }
-        ], "explanation": "Imperfective future = form of бути + infinitive: буду/будеш/буде/будемо/будете/будуть + працювати." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Ти ___ готувати вечерю? (will you, singular)",
+          "options": [
+            "буде",
+            "буду",
+            "будеш"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ти → будеш. The conjugation: буду, будеш, буде, будемо, будете, будуть."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вони ___ дивитися фільм увечері. (they will)",
+          "acceptedAnswers": [
+            "будуть"
+          ],
+          "hint": "Вони → ?",
+          "explanation": "Вони → будуть. Third person plural of бути in the future."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми ___ подорожувати влітку. (we will)",
+          "acceptedAnswers": [
+            "будемо"
+          ],
+          "hint": "Ми → ?",
+          "explanation": "Ми → будемо. First person plural of бути in the future."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the imperfective future:",
+          "baseWord": "писати",
+          "context": "Вона ___ ___ листа.",
+          "acceptedAnswers": [
+            "буде писати"
+          ],
+          "hint": "Вона + буде + infinitive",
+          "explanation": "Imperfective future: буде + писати. The action is ongoing or in progress."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я будеш читати книгу.",
+          "errorWord": "будеш",
+          "acceptedAnswers": [
+            "буду"
+          ],
+          "explanation": "Я requires буду (first person), not будеш (second person: ти)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the subject to the correct form of 'бути':",
+          "pairs": [
+            {
+              "left": "я",
+              "right": "буду"
+            },
+            {
+              "left": "ти",
+              "right": "будеш"
+            },
+            {
+              "left": "він/вона",
+              "right": "буде"
+            },
+            {
+              "left": "ми",
+              "right": "будемо"
+            },
+            {
+              "left": "вони",
+              "right": "будуть"
+            }
+          ],
+          "explanation": "Future of бути: буду, будеш, буде, будемо, будете, будуть."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is imperfective future? (ongoing action)",
+          "options": [
+            "Він працював.",
+            "Він буде працювати.",
+            "Він попрацює."
+          ],
+          "correctIndex": 1,
+          "explanation": "Буде + infinitive = imperfective future (ongoing). Попрацює = perfective future. Працював = past."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "We will be watching TV in the evening.",
+          "words": [
+            "Ми",
+            "будемо",
+            "дивитися",
+            "телевізор",
+            "увечері"
+          ],
+          "distractors": [
+            "подивимося"
+          ],
+          "validOrders": [
+            [
+              "Ми",
+              "будемо",
+              "дивитися",
+              "телевізор",
+              "увечері"
+            ]
+          ],
+          "explanation": "Imperfective future: будемо + дивитися. The action is ongoing (watching TV as a process)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Завтра я буду вчити українську мову.",
+          "acceptedAnswers": [
+            "Завтра я буду вчити українську мову.",
+            "Завтра я буду вчити українську мову"
+          ],
+          "explanation": "Буду вчити — imperfective future. The studying will be an ongoing process."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the imperfective future of 'працювати' (to work):",
+          "headers": [
+            "Subject",
+            "Future Form"
+          ],
+          "rows": [
+            {
+              "label": "я",
+              "answer": "буду працювати",
+              "prefilled": false
+            },
+            {
+              "label": "ти",
+              "answer": "будеш працювати",
+              "prefilled": false
+            },
+            {
+              "label": "він/вона",
+              "answer": "буде працювати",
+              "prefilled": false
+            },
+            {
+              "label": "ми",
+              "answer": "будемо працювати",
+              "prefilled": false
+            },
+            {
+              "label": "вони",
+              "answer": "будуть працювати",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Imperfective future = form of бути + infinitive: буду/будеш/буде/будемо/будете/будуть + працювати."
+        }
       ]
     },
     {
@@ -46,27 +197,157 @@
       "title": "Perfective Future",
       "explanation": "Perfective verbs express completed, one-time future actions. They conjugate like present tense verbs but have future meaning. You cannot use буду with perfective verbs! Instead, add present-tense endings directly to the perfective stem: прочитати → прочитаю, прочитаєш, прочитає, прочитаємо, прочитаєте, прочитають.",
       "examples": [
-        { "uk": "Я прочитаю цю книгу.", "en": "I will read (finish reading) this book.", "highlight": "прочитаю" },
-        { "uk": "Вона напише листа.", "en": "She will write a letter (and finish it).", "highlight": "напише" },
-        { "uk": "Ми зробимо це завтра.", "en": "We will do this tomorrow.", "highlight": "зробимо" }
+        {
+          "uk": "Я прочитаю цю книгу.",
+          "en": "I will read (finish reading) this book.",
+          "highlight": "прочитаю"
+        },
+        {
+          "uk": "Вона напише листа.",
+          "en": "She will write a letter (and finish it).",
+          "highlight": "напише"
+        },
+        {
+          "uk": "Ми зробимо це завтра.",
+          "en": "We will do this tomorrow.",
+          "highlight": "зробимо"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я ___ домашнє завдання. (зробити – to do/complete)", "options": ["зроблю", "буду зробити", "зробив"], "correctIndex": 0, "explanation": "Perfective verbs take present-tense endings for future meaning: зробити → зроблю. Never use буду + perfective!" },
-        { "type": "fill-blank", "prompt": "Ти ___ цей лист? (написати – to write/finish writing)", "acceptedAnswers": ["напишеш"], "hint": "Perfective, ти form: -еш ending", "explanation": "Написати → напишеш (ти). Perfective conjugates with present endings but means future." },
-        { "type": "fill-blank", "prompt": "Вони ___ цю задачу. (розв'язати – to solve)", "acceptedAnswers": ["розв'яжуть"], "hint": "Perfective, вони: -уть ending; з→ж", "explanation": "Розв'язати → розв'яжуть (вони). Consonant change: з → ж in conjugation." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я буду прочитати книгу.", "errorWord": "буду", "acceptedAnswers": ["прочитаю"], "explanation": "Never use буду with perfective verbs! Correct: Я прочитаю книгу. (perfective future)" },
-        { "type": "multiple-choice", "prompt": "Ми ___ все до вечора. (зробити – to complete)", "options": ["зробимо", "будемо зробити", "робимо"], "correctIndex": 0, "explanation": "Зробити (perfective) → зробимо (ми). Present-tense endings give future meaning for perfective verbs." },
-        { "type": "matching", "prompt": "Match each perfective verb to its 'я' future form:", "pairs": [
-          { "left": "прочитати (to read through)", "right": "прочитаю" },
-          { "left": "написати (to write)", "right": "напишу" },
-          { "left": "зробити (to do)", "right": "зроблю" },
-          { "left": "сказати (to say)", "right": "скажу" },
-          { "left": "купити (to buy)", "right": "куплю" }
-        ], "explanation": "Perfective 'я' forms: прочитаю, напишу (с→ш), зроблю (б→бл), скажу (з→ж), куплю (п→пл)." },
-        { "type": "transformation", "prompt": "Conjugate the perfective verb:", "baseWord": "вивчити", "context": "Вона ___ цей урок.", "acceptedAnswers": ["вивчить"], "hint": "Вона form: -ить ending", "explanation": "Вивчити → вивчить (вона). Second conjugation perfective: -ить for third person singular." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I will buy a gift for mom.", "words": ["Я", "куплю", "подарунок", "для", "мами"], "distractors": ["буду"], "validOrders": [["Я", "куплю", "подарунок", "для", "мами"]], "explanation": "Купити (perfective) → куплю. No буду needed for perfective future!" },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він прочитає цю статтю до ранку.", "acceptedAnswers": ["Він прочитає цю статтю до ранку.", "Він прочитає цю статтю до ранку"], "explanation": "Прочитати → прочитає (він). Perfective future — he will finish reading the article by morning." },
-        { "type": "multiple-choice", "prompt": "Ви ___ нам? (допомогти – to help, perfective)", "options": ["допоможете", "будете допомогти", "допомагаєте"], "correctIndex": 0, "explanation": "Допомогти (perfective) → допоможете (ви). г→ж in conjugation. No буду!" }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я ___ домашнє завдання. (зробити – to do/complete)",
+          "options": [
+            "зробив",
+            "зроблю",
+            "буду зробити"
+          ],
+          "correctIndex": 1,
+          "explanation": "Perfective verbs take present-tense endings for future meaning: зробити → зроблю. Never use буду + perfective!"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ти ___ цей лист? (написати – to write/finish writing)",
+          "acceptedAnswers": [
+            "напишеш"
+          ],
+          "hint": "Perfective, ти form: -еш ending",
+          "explanation": "Написати → напишеш (ти). Perfective conjugates with present endings but means future."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вони ___ цю задачу. (розв'язати – to solve)",
+          "acceptedAnswers": [
+            "розв'яжуть"
+          ],
+          "hint": "Perfective, вони: -уть ending; з→ж",
+          "explanation": "Розв'язати → розв'яжуть (вони). Consonant change: з → ж in conjugation."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я буду прочитати книгу.",
+          "errorWord": "буду",
+          "acceptedAnswers": [
+            "прочитаю"
+          ],
+          "explanation": "Never use буду with perfective verbs! Correct: Я прочитаю книгу. (perfective future)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ми ___ все до вечора. (зробити – to complete)",
+          "options": [
+            "будемо зробити",
+            "зробимо",
+            "робимо"
+          ],
+          "correctIndex": 1,
+          "explanation": "Зробити (perfective) → зробимо (ми). Present-tense endings give future meaning for perfective verbs."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each perfective verb to its 'я' future form:",
+          "pairs": [
+            {
+              "left": "прочитати (to read through)",
+              "right": "прочитаю"
+            },
+            {
+              "left": "написати (to write)",
+              "right": "напишу"
+            },
+            {
+              "left": "зробити (to do)",
+              "right": "зроблю"
+            },
+            {
+              "left": "сказати (to say)",
+              "right": "скажу"
+            },
+            {
+              "left": "купити (to buy)",
+              "right": "куплю"
+            }
+          ],
+          "explanation": "Perfective 'я' forms: прочитаю, напишу (с→ш), зроблю (б→бл), скажу (з→ж), куплю (п→пл)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Conjugate the perfective verb:",
+          "baseWord": "вивчити",
+          "context": "Вона ___ цей урок.",
+          "acceptedAnswers": [
+            "вивчить"
+          ],
+          "hint": "Вона form: -ить ending",
+          "explanation": "Вивчити → вивчить (вона). Second conjugation perfective: -ить for third person singular."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I will buy a gift for mom.",
+          "words": [
+            "Я",
+            "куплю",
+            "подарунок",
+            "для",
+            "мами"
+          ],
+          "distractors": [
+            "буду"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "куплю",
+              "подарунок",
+              "для",
+              "мами"
+            ]
+          ],
+          "explanation": "Купити (perfective) → куплю. No буду needed for perfective future!"
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Він прочитає цю статтю до ранку.",
+          "acceptedAnswers": [
+            "Він прочитає цю статтю до ранку.",
+            "Він прочитає цю статтю до ранку"
+          ],
+          "explanation": "Прочитати → прочитає (він). Perfective future — he will finish reading the article by morning."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ви ___ нам? (допомогти – to help, perfective)",
+          "options": [
+            "допоможете",
+            "будете допомогти",
+            "допомагаєте"
+          ],
+          "correctIndex": 0,
+          "explanation": "Допомогти (perfective) → допоможете (ви). г→ж in conjugation. No буду!"
+        }
       ]
     },
     {
@@ -74,33 +355,183 @@
       "title": "Aspect Pairs",
       "explanation": "Most Ukrainian verbs come in pairs: imperfective (ongoing/repeated) and perfective (completed/one-time). Common ways to form perfective from imperfective: add a prefix (читати → прочитати, писати → написати, робити → зробити). Some pairs have different stems entirely (говорити → сказати, брати → взяти). Learning aspect pairs is essential for fluency.",
       "examples": [
-        { "uk": "читати → прочитати", "en": "to read → to read through (finish)", "highlight": "про-" },
-        { "uk": "писати → написати", "en": "to write → to write (complete)", "highlight": "на-" },
-        { "uk": "говорити → сказати", "en": "to speak → to say (once)", "highlight": "сказати" }
+        {
+          "uk": "читати → прочитати",
+          "en": "to read → to read through (finish)",
+          "highlight": "про-"
+        },
+        {
+          "uk": "писати → написати",
+          "en": "to write → to write (complete)",
+          "highlight": "на-"
+        },
+        {
+          "uk": "говорити → сказати",
+          "en": "to speak → to say (once)",
+          "highlight": "сказати"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the perfective pair of 'робити' (to do)?", "options": ["зробити", "проробити", "наробити"], "correctIndex": 0, "explanation": "Робити → зробити. The prefix з- makes it perfective (to complete/finish doing)." },
-        { "type": "fill-blank", "prompt": "Imperfective 'вчити' (to learn) → perfective '___'", "acceptedAnswers": ["вивчити"], "hint": "Prefix ви- + вчити", "explanation": "Вчити → вивчити. The prefix ви- adds the meaning of completing the learning." },
-        { "type": "fill-blank", "prompt": "Imperfective 'їсти' (to eat) → perfective '___'", "acceptedAnswers": ["з'їсти"], "hint": "Prefix з- + їсти", "explanation": "Їсти → з'їсти. To eat up/finish eating. Note the apostrophe before ї." },
-        { "type": "matching", "prompt": "Match the imperfective verb to its perfective pair:", "pairs": [
-          { "left": "читати (to read)", "right": "прочитати" },
-          { "left": "писати (to write)", "right": "написати" },
-          { "left": "робити (to do)", "right": "зробити" },
-          { "left": "говорити (to speak)", "right": "сказати" },
-          { "left": "брати (to take)", "right": "взяти" }
-        ], "explanation": "Most pairs use prefixes (про-, на-, з-). Some are completely different words: говорити/сказати, брати/взяти." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я буду зробити домашню роботу.", "errorWord": "буду", "acceptedAnswers": ["зроблю"], "explanation": "Зробити is perfective — use зроблю (not буду + perfective). Correct: Я зроблю домашню роботу." },
-        { "type": "multiple-choice", "prompt": "Which is the imperfective verb?", "options": ["купувати", "купити", "куплю"], "correctIndex": 0, "explanation": "Купувати (imperfective, ongoing) vs купити (perfective, completed). Куплю is a conjugated perfective form." },
-        { "type": "transformation", "prompt": "Give the perfective form:", "baseWord": "готувати", "context": "Imperfective 'готувати' (to cook) → perfective '___'", "acceptedAnswers": ["приготувати"], "hint": "Prefix при-", "explanation": "Готувати → приготувати. The prefix при- makes it perfective (to finish cooking)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She will write and send the letter.", "words": ["Вона", "напише", "і", "надішле", "листа"], "distractors": ["буде"], "validOrders": [["Вона", "напише", "і", "надішле", "листа"]], "explanation": "Both напише and надішле are perfective — completed sequential actions. No буде needed." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він читає книгу, а потім прочитає її.", "acceptedAnswers": ["Він читає книгу, а потім прочитає її.", "Він читає книгу а потім прочитає її.", "Він читає книгу, а потім прочитає її"], "explanation": "Читає (imperfective present = is reading) vs прочитає (perfective future = will finish reading)." },
-        { "type": "table-fill", "prompt": "Complete the aspect pairs:", "headers": ["Imperfective", "Perfective"], "rows": [
-          { "label": "дивитися (to watch)", "answer": "подивитися", "prefilled": false },
-          { "label": "пити (to drink)", "answer": "випити", "prefilled": false },
-          { "label": "вчити (to study)", "answer": "вивчити", "prefilled": false },
-          { "label": "казати (to say)", "answer": "сказати", "prefilled": false },
-          { "label": "давати (to give)", "answer": "дати", "prefilled": false }
-        ], "explanation": "Дивитися→подивитися (по-); пити→випити (ви-); вчити→вивчити (ви-); казати→сказати (с-); давати→дати (shorter stem)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the perfective pair of 'робити' (to do)?",
+          "options": [
+            "проробити",
+            "наробити",
+            "зробити"
+          ],
+          "correctIndex": 2,
+          "explanation": "Робити → зробити. The prefix з- makes it perfective (to complete/finish doing)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Imperfective 'вчити' (to learn) → perfective '___'",
+          "acceptedAnswers": [
+            "вивчити"
+          ],
+          "hint": "Prefix ви- + вчити",
+          "explanation": "Вчити → вивчити. The prefix ви- adds the meaning of completing the learning."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Imperfective 'їсти' (to eat) → perfective '___'",
+          "acceptedAnswers": [
+            "з'їсти"
+          ],
+          "hint": "Prefix з- + їсти",
+          "explanation": "Їсти → з'їсти. To eat up/finish eating. Note the apostrophe before ї."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the imperfective verb to its perfective pair:",
+          "pairs": [
+            {
+              "left": "читати (to read)",
+              "right": "прочитати"
+            },
+            {
+              "left": "писати (to write)",
+              "right": "написати"
+            },
+            {
+              "left": "робити (to do)",
+              "right": "зробити"
+            },
+            {
+              "left": "говорити (to speak)",
+              "right": "сказати"
+            },
+            {
+              "left": "брати (to take)",
+              "right": "взяти"
+            }
+          ],
+          "explanation": "Most pairs use prefixes (про-, на-, з-). Some are completely different words: говорити/сказати, брати/взяти."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я буду зробити домашню роботу.",
+          "errorWord": "буду",
+          "acceptedAnswers": [
+            "зроблю"
+          ],
+          "explanation": "Зробити is perfective — use зроблю (not буду + perfective). Correct: Я зроблю домашню роботу."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the imperfective verb?",
+          "options": [
+            "купити",
+            "купувати",
+            "куплю"
+          ],
+          "correctIndex": 1,
+          "explanation": "Купувати (imperfective, ongoing) vs купити (perfective, completed). Куплю is a conjugated perfective form."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Give the perfective form:",
+          "baseWord": "готувати",
+          "context": "Imperfective 'готувати' (to cook) → perfective '___'",
+          "acceptedAnswers": [
+            "приготувати"
+          ],
+          "hint": "Prefix при-",
+          "explanation": "Готувати → приготувати. The prefix при- makes it perfective (to finish cooking)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She will write and send the letter.",
+          "words": [
+            "Вона",
+            "напише",
+            "і",
+            "надішле",
+            "листа"
+          ],
+          "distractors": [
+            "буде"
+          ],
+          "validOrders": [
+            [
+              "Вона",
+              "напише",
+              "і",
+              "надішле",
+              "листа"
+            ]
+          ],
+          "explanation": "Both напише and надішле are perfective — completed sequential actions. No буде needed."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Він читає книгу, а потім прочитає її.",
+          "acceptedAnswers": [
+            "Він читає книгу, а потім прочитає її.",
+            "Він читає книгу а потім прочитає її.",
+            "Він читає книгу, а потім прочитає її"
+          ],
+          "explanation": "Читає (imperfective present = is reading) vs прочитає (perfective future = will finish reading)."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the aspect pairs:",
+          "headers": [
+            "Imperfective",
+            "Perfective"
+          ],
+          "rows": [
+            {
+              "label": "дивитися (to watch)",
+              "answer": "подивитися",
+              "prefilled": false
+            },
+            {
+              "label": "пити (to drink)",
+              "answer": "випити",
+              "prefilled": false
+            },
+            {
+              "label": "вчити (to study)",
+              "answer": "вивчити",
+              "prefilled": false
+            },
+            {
+              "label": "казати (to say)",
+              "answer": "сказати",
+              "prefilled": false
+            },
+            {
+              "label": "давати (to give)",
+              "answer": "дати",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Дивитися→подивитися (по-); пити→випити (ви-); вчити→вивчити (ви-); казати→сказати (с-); давати→дати (shorter stem)."
+        }
       ]
     },
     {
@@ -108,27 +539,161 @@
       "title": "Choosing the Right Aspect",
       "explanation": "Use imperfective for: ongoing processes (Я буду читати), repeated/habitual actions (Вона буде щодня ходити), focus on the activity itself. Use perfective for: one-time completed actions (Я прочитаю книгу), results (Він зробить це), sequential actions (Прийду і розкажу). Key signal words: завжди/часто/щодня → imperfective; один раз/вже/нарешті → perfective.",
       "examples": [
-        { "uk": "Я буду читати щовечора. (habitual)", "en": "I will read every evening.", "highlight": "буду читати" },
-        { "uk": "Я прочитаю цю книгу за тиждень. (completed)", "en": "I will finish this book in a week.", "highlight": "прочитаю" },
-        { "uk": "Він зайде і скаже. (sequential)", "en": "He will come in and say.", "highlight": "зайде і скаже" }
+        {
+          "uk": "Я буду читати щовечора. (habitual)",
+          "en": "I will read every evening.",
+          "highlight": "буду читати"
+        },
+        {
+          "uk": "Я прочитаю цю книгу за тиждень. (completed)",
+          "en": "I will finish this book in a week.",
+          "highlight": "прочитаю"
+        },
+        {
+          "uk": "Він зайде і скаже. (sequential)",
+          "en": "He will come in and say.",
+          "highlight": "зайде і скаже"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я ___ цю книгу щодня. (read — daily habit)", "options": ["буду читати", "прочитаю", "читаю"], "correctIndex": 0, "explanation": "Щодня (every day) signals a repeated action → imperfective future: буду читати." },
-        { "type": "fill-blank", "prompt": "Він ___ тобі завтра. (зателефонувати – to call, one time)", "acceptedAnswers": ["зателефонує"], "hint": "One-time action → perfective", "explanation": "One-time action → perfective future: зателефонувати → зателефонує." },
-        { "type": "multiple-choice", "prompt": "Ми ___ кожного ранку. (run — regular habit)", "options": ["будемо бігати", "побіжимо", "бігаємо"], "correctIndex": 0, "explanation": "Кожного ранку (every morning) = repeated → imperfective future: будемо бігати." },
-        { "type": "fill-blank", "prompt": "Вона ___ цей торт до свята. (спекти – to bake, complete)", "acceptedAnswers": ["спече"], "hint": "Completed result → perfective", "explanation": "Спекти → спече (perfective future). The cake will be finished baking — result matters." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я прочитаю книги щодня.", "errorWord": "прочитаю", "acceptedAnswers": ["буду читати"], "explanation": "Щодня (every day) requires the imperfective aspect: буду читати, not прочитаю (one-time completion)." },
-        { "type": "matching", "prompt": "Match each context to the correct aspect:", "pairs": [
-          { "left": "Finish the project (result)", "right": "perfective (закінчу)" },
-          { "left": "Work every day (habit)", "right": "imperfective (буду працювати)" },
-          { "left": "Write one letter (one-time)", "right": "perfective (напишу)" },
-          { "left": "Study all evening (process)", "right": "imperfective (буду вчити)" },
-          { "left": "Come and tell (sequence)", "right": "perfective (прийду і скажу)" }
-        ], "explanation": "Perfective = result, one-time, sequence. Imperfective = habit, process, ongoing." },
-        { "type": "transformation", "prompt": "Choose the correct aspect:", "baseWord": "писати / написати", "context": "Він ___ листи кожного тижня.", "acceptedAnswers": ["буде писати"], "hint": "Кожного тижня = every week → repeated", "explanation": "Repeated action (every week) → imperfective: буде писати." },
-        { "type": "multiple-choice", "prompt": "Я прийду додому і ___. (відпочити – to rest, one-time)", "options": ["відпочину", "буду відпочивати", "відпочиваю"], "correctIndex": 0, "explanation": "Sequential one-time actions use perfective: прийду і відпочину." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Tomorrow I will be studying Ukrainian all day.", "words": ["Завтра", "я", "буду", "вчити", "українську", "цілий", "день"], "distractors": ["вивчу"], "validOrders": [["Завтра", "я", "буду", "вчити", "українську", "цілий", "день"]], "explanation": "Цілий день (all day) = ongoing process → imperfective: буду вчити." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Я зроблю це і підемо гуляти.", "acceptedAnswers": ["Я зроблю це і підемо гуляти.", "Я зроблю це і підемо гуляти"], "explanation": "Зроблю (perfective — I'll finish this) і підемо (perfective — we'll go). Sequential completed actions both use perfective." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я ___ цю книгу щодня. (read — daily habit)",
+          "options": [
+            "читаю",
+            "буду читати",
+            "прочитаю"
+          ],
+          "correctIndex": 1,
+          "explanation": "Щодня (every day) signals a repeated action → imperfective future: буду читати."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він ___ тобі завтра. (зателефонувати – to call, one time)",
+          "acceptedAnswers": [
+            "зателефонує"
+          ],
+          "hint": "One-time action → perfective",
+          "explanation": "One-time action → perfective future: зателефонувати → зателефонує."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ми ___ кожного ранку. (run — regular habit)",
+          "options": [
+            "бігаємо",
+            "побіжимо",
+            "будемо бігати"
+          ],
+          "correctIndex": 2,
+          "explanation": "Кожного ранку (every morning) = repeated → imperfective future: будемо бігати."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона ___ цей торт до свята. (спекти – to bake, complete)",
+          "acceptedAnswers": [
+            "спече"
+          ],
+          "hint": "Completed result → perfective",
+          "explanation": "Спекти → спече (perfective future). The cake will be finished baking — result matters."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я прочитаю книги щодня.",
+          "errorWord": "прочитаю",
+          "acceptedAnswers": [
+            "буду читати"
+          ],
+          "explanation": "Щодня (every day) requires the imperfective aspect: буду читати, not прочитаю (one-time completion)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each context to the correct aspect:",
+          "pairs": [
+            {
+              "left": "Finish the project (result)",
+              "right": "perfective (закінчу)"
+            },
+            {
+              "left": "Work every day (habit)",
+              "right": "imperfective (буду працювати)"
+            },
+            {
+              "left": "Write one letter (one-time)",
+              "right": "perfective (напишу)"
+            },
+            {
+              "left": "Study all evening (process)",
+              "right": "imperfective (буду вчити)"
+            },
+            {
+              "left": "Come and tell (sequence)",
+              "right": "perfective (прийду і скажу)"
+            }
+          ],
+          "explanation": "Perfective = result, one-time, sequence. Imperfective = habit, process, ongoing."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Choose the correct aspect:",
+          "baseWord": "писати / написати",
+          "context": "Він ___ листи кожного тижня.",
+          "acceptedAnswers": [
+            "буде писати"
+          ],
+          "hint": "Кожного тижня = every week → repeated",
+          "explanation": "Repeated action (every week) → imperfective: буде писати."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я прийду додому і ___. (відпочити – to rest, one-time)",
+          "options": [
+            "відпочиваю",
+            "буду відпочивати",
+            "відпочину"
+          ],
+          "correctIndex": 2,
+          "explanation": "Sequential one-time actions use perfective: прийду і відпочину."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Tomorrow I will be studying Ukrainian all day.",
+          "words": [
+            "Завтра",
+            "я",
+            "буду",
+            "вчити",
+            "українську",
+            "цілий",
+            "день"
+          ],
+          "distractors": [
+            "вивчу"
+          ],
+          "validOrders": [
+            [
+              "Завтра",
+              "я",
+              "буду",
+              "вчити",
+              "українську",
+              "цілий",
+              "день"
+            ]
+          ],
+          "explanation": "Цілий день (all day) = ongoing process → imperfective: буду вчити."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Я зроблю це і підемо гуляти.",
+          "acceptedAnswers": [
+            "Я зроблю це і підемо гуляти.",
+            "Я зроблю це і підемо гуляти"
+          ],
+          "explanation": "Зроблю (perfective — I'll finish this) і підемо (perfective — we'll go). Sequential completed actions both use perfective."
+        }
       ]
     }
   ]

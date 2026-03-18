@@ -4,7 +4,9 @@
   "nameAr": "الأعداد والوقت",
   "icon": "🔢",
   "tier": "A2",
-  "prerequisites": ["nouns-gender"],
+  "prerequisites": [
+    "nouns-gender"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "Arabic numerals 1–10 are: واحد (1), اثنان (2), ثلاثة (3), أربعة (4), خمسة (5), ستّة (6), سبعة (7), ثمانية (8), تسعة (9), عشرة (10). Arabic has a unique rule for numbers 3–10: the number takes the OPPOSITE gender of the noun it counts. If the noun is masculine, the number is feminine (with ة), and vice versa. For example: ثلاثة كتب (three books — كتاب is masculine, so the number is feminine ثلاثة). But: ثلاث سيارات (three cars — سيارة is feminine, so the number is masculine ثلاث, without ة). Numbers 1 and 2 agree in gender with the noun and usually come after it: كتاب واحد (one book), كتابان اثنان (two books).",
       "tip": "The gender-polarity rule for 3–10 is counterintuitive but consistent: if the counted noun is masculine, the number wears ة; if the noun is feminine, the number drops ة. Think of it as 'opposites attract'.",
       "examples": [
-        { "ar": "ثلاثة كتب", "en": "three books — كتاب is masculine, so the number takes ة (feminine form)", "highlight": "ثلاثة" },
-        { "ar": "ثلاث سيارات", "en": "three cars — سيارة is feminine, so the number drops ة (masculine form)", "highlight": "ثلاث" },
-        { "ar": "خمسة أولاد", "en": "five boys — masculine noun, feminine number", "highlight": "خمسة" },
-        { "ar": "خمس بنات", "en": "five girls — feminine noun, masculine number", "highlight": "خمس" }
+        {
+          "ar": "ثلاثة كتب",
+          "en": "three books — كتاب is masculine, so the number takes ة (feminine form)",
+          "highlight": "ثلاثة"
+        },
+        {
+          "ar": "ثلاث سيارات",
+          "en": "three cars — سيارة is feminine, so the number drops ة (masculine form)",
+          "highlight": "ثلاث"
+        },
+        {
+          "ar": "خمسة أولاد",
+          "en": "five boys — masculine noun, feminine number",
+          "highlight": "خمسة"
+        },
+        {
+          "ar": "خمس بنات",
+          "en": "five girls — feminine noun, masculine number",
+          "highlight": "خمس"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'three books' if كتاب (book) is masculine?",
-          "options": ["ثلاثة كتب", "ثلاث كتب", "كتب ثلاثة"],
-          "correctIndex": 0,
+          "options": [
+            "ثلاث كتب",
+            "ثلاثة كتب",
+            "كتب ثلاثة"
+          ],
+          "correctIndex": 1,
           "explanation": "For numbers 3–10, the number takes the opposite gender of the noun. Since كتاب is masculine, the number uses the feminine form: ثلاثة (with ة). The counted noun appears in the plural genitive: كتب."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the Arabic word for the number 7?",
-          "options": ["سبعة", "ستّة", "ثمانية"],
+          "options": [
+            "سبعة",
+            "ثمانية",
+            "ستّة"
+          ],
           "correctIndex": 0,
           "explanation": "سبعة (sabʿa) means seven. ستّة (sitta) is six, and ثمانية (thamāniya) is eight."
         },
         {
           "type": "multiple-choice",
           "prompt": "For numbers 3–10, the number takes which gender relative to the counted noun?",
-          "options": ["The opposite gender", "The same gender", "Always masculine"],
-          "correctIndex": 0,
+          "options": [
+            "Always masculine",
+            "The opposite gender",
+            "The same gender"
+          ],
+          "correctIndex": 1,
           "explanation": "This is Arabic's famous gender-polarity rule: numbers 3–10 take the opposite gender of the noun they count. Masculine nouns get feminine numbers (with ة) and feminine nouns get masculine numbers (without ة)."
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "Numbers 11–19 are compound: أحد عشر (11), اثنا عشر (12), ثلاثة عشر (13), أربعة عشر (14), خمسة عشر (15), ستّة عشر (16), سبعة عشر (17), ثمانية عشر (18), تسعة عشر (19). For 13–19, the first part follows the same gender-polarity rule as 3–10, while the second part (عشر/عشرة) agrees with the noun: عشر for masculine nouns, عشرة for feminine. Numbers 11 and 12 are exceptions — both parts agree in gender with the noun. The tens are: عشرون (20), ثلاثون (30), أربعون (40), خمسون (50), ستّون (60), سبعون (70), ثمانون (80), تسعون (90), مئة/مائة (100). Compound numbers like 25 put the unit first: خمسة وعشرون (five and twenty).",
       "tip": "For compound numbers, the unit comes first, then و (and), then the ten: خمسة وعشرون = 'five and twenty' (25). The tens (عشرون, ثلاثون, etc.) all end in ـون and do not change for gender.",
       "examples": [
-        { "ar": "خمسة عشر كتابًا", "en": "fifteen books — gender-polarity: masculine noun gets feminine first part", "highlight": "خمسة عشر" },
-        { "ar": "عشرون طالبًا", "en": "twenty students — tens do not change for gender", "highlight": "عشرون" },
-        { "ar": "خمسة وعشرون", "en": "twenty-five — unit first, then و, then the ten", "highlight": "و" },
-        { "ar": "مئة كتاب", "en": "one hundred books — مئة followed by singular noun", "highlight": "مئة" }
+        {
+          "ar": "خمسة عشر كتابًا",
+          "en": "fifteen books — gender-polarity: masculine noun gets feminine first part",
+          "highlight": "خمسة عشر"
+        },
+        {
+          "ar": "عشرون طالبًا",
+          "en": "twenty students — tens do not change for gender",
+          "highlight": "عشرون"
+        },
+        {
+          "ar": "خمسة وعشرون",
+          "en": "twenty-five — unit first, then و, then the ten",
+          "highlight": "و"
+        },
+        {
+          "ar": "مئة كتاب",
+          "en": "one hundred books — مئة followed by singular noun",
+          "highlight": "مئة"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 25 in Arabic?",
-          "options": ["خمسة وعشرون", "عشرون وخمسة", "خمسة عشرون"],
-          "correctIndex": 0,
+          "options": [
+            "عشرون وخمسة",
+            "خمسة وعشرون",
+            "خمسة عشرون"
+          ],
+          "correctIndex": 1,
           "explanation": "In Arabic compound numbers, the unit comes first, followed by و (and), then the ten: خمسة وعشرون (literally 'five and twenty'). This is the standard order for all compound numbers."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the Arabic word for 30?",
-          "options": ["ثلاثون", "عشرون", "أربعون"],
+          "options": [
+            "ثلاثون",
+            "أربعون",
+            "عشرون"
+          ],
           "correctIndex": 0,
           "explanation": "ثلاثون (thalāthūn) means thirty. The tens in Arabic all end in ـون: عشرون (20), ثلاثون (30), أربعون (40), and so on."
         },
         {
           "type": "multiple-choice",
           "prompt": "After مئة (100), the counted noun appears in which form?",
-          "options": ["Singular", "Plural", "Dual"],
-          "correctIndex": 0,
+          "options": [
+            "Plural",
+            "Singular",
+            "Dual"
+          ],
+          "correctIndex": 1,
           "explanation": "After مئة (100), the counted noun appears in the singular genitive form: مئة كتاب (100 books, literally 'a hundred of book'). This is different from numbers 3–10, which take a plural noun."
         }
       ]
@@ -83,31 +141,59 @@
       "explanation": "To ask the time in Arabic, you say: كم الساعة؟ (kam as-sāʿa? — What time is it?). The word ساعة means both 'hour' and 'clock/watch'. To answer, use الساعة followed by the number: الساعة الثالثة (It is three o'clock — using ordinal numbers for hours). For 'half past', use والنصف (wa-n-niṣf): الساعة الثالثة والنصف (3:30). For 'quarter past', use والربع (wa-r-rubʿ): الساعة الثالثة والربع (3:15). For 'quarter to', use إلا الربع (illā ar-rubʿ): الساعة الرابعة إلا الربع (3:45, literally 'the fourth hour minus a quarter'). Minutes are expressed with و (and) for past: الساعة الثالثة وعشر دقائق (3:10).",
       "tip": "Arabic uses ordinal numbers (الأولى, الثانية, الثالثة...) for clock hours, not cardinal numbers. Think of it as 'the third hour' rather than 'three o'clock'.",
       "examples": [
-        { "ar": "كم الساعة؟", "en": "What time is it?", "highlight": "كم" },
-        { "ar": "الساعة الثالثة", "en": "It is three o'clock (literally 'the third hour')", "highlight": "الثالثة" },
-        { "ar": "الساعة الخامسة والنصف", "en": "It is 5:30 — والنصف means 'and a half'", "highlight": "والنصف" },
-        { "ar": "الساعة السادسة إلا الربع", "en": "It is 5:45 — literally 'the sixth hour minus a quarter'", "highlight": "إلا الربع" }
+        {
+          "ar": "كم الساعة؟",
+          "en": "What time is it?",
+          "highlight": "كم"
+        },
+        {
+          "ar": "الساعة الثالثة",
+          "en": "It is three o'clock (literally 'the third hour')",
+          "highlight": "الثالثة"
+        },
+        {
+          "ar": "الساعة الخامسة والنصف",
+          "en": "It is 5:30 — والنصف means 'and a half'",
+          "highlight": "والنصف"
+        },
+        {
+          "ar": "الساعة السادسة إلا الربع",
+          "en": "It is 5:45 — literally 'the sixth hour minus a quarter'",
+          "highlight": "إلا الربع"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you ask 'What time is it?' in Arabic?",
-          "options": ["كم الساعة؟", "ما الوقت؟", "أين الساعة؟"],
-          "correctIndex": 0,
+          "options": [
+            "أين الساعة؟",
+            "كم الساعة؟",
+            "ما الوقت؟"
+          ],
+          "correctIndex": 1,
           "explanation": "كم الساعة؟ (kam as-sāʿa?) is the standard way to ask the time. كم means 'how much/many' and الساعة means 'the hour/clock'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'It is 3:30' in Arabic?",
-          "options": ["الساعة الثالثة والنصف", "الساعة الثلاثة والنصف", "الساعة ثلاثة ونصف"],
-          "correctIndex": 0,
+          "options": [
+            "الساعة الثلاثة والنصف",
+            "الساعة الثالثة والنصف",
+            "الساعة ثلاثة ونصف"
+          ],
+          "correctIndex": 1,
           "explanation": "Use the ordinal number with ال: الساعة الثالثة (the third hour), then add والنصف (and a half) for :30. The complete phrase is الساعة الثالثة والنصف."
         },
         {
           "type": "multiple-choice",
           "prompt": "الساعة الرابعة إلا الربع means what time?",
-          "options": ["3:45", "4:15", "4:45"],
-          "correctIndex": 0,
+          "options": [
+            "4:45",
+            "3:45",
+            "4:15"
+          ],
+          "correctIndex": 1,
           "explanation": "إلا الربع means 'minus a quarter'. So 'the fourth hour minus a quarter' = 3:45. Arabic expresses times from :45 to :59 by subtracting from the next hour."
         }
       ]

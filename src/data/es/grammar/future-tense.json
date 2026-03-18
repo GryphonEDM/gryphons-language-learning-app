@@ -4,7 +4,9 @@
   "nameEs": "El Futuro",
   "icon": "🔮",
   "tier": "B1",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,115 @@
       "explanation": "The Spanish simple future tense is remarkably easy: you attach endings directly to the full infinitive, without removing anything. The same six endings apply to ALL verbs (-AR, -ER, and -IR): yo -é, tú -ás, él/ella/usted -á, nosotros -emos, vosotros -éis, ellos/ellas/ustedes -án. For example, hablar (to speak) → yo hablaré, tú hablarás, él hablará, nosotros hablaremos, vosotros hablaréis, ellos hablarán. The same pattern works for -ER verbs: comer → comeré, comerás, comerá, comeremos, comeréis, comerán. And for -IR verbs: vivir → viviré, vivirás, vivirá, viviremos, viviréis, vivirán. Note that all forms except nosotros carry a written accent.",
       "tip": "Unlike the present tense, you never drop the infinitive ending in the simple future — just attach -é, -ás, -á, -emos, -éis, or -án directly to the full infinitive. Only nosotros (-emos) lacks a written accent.",
       "examples": [
-        { "es": "Mañana hablaré con mi jefe.", "en": "Tomorrow I will speak with my boss.", "highlight": "hablaré" },
-        { "es": "¿Comerás con nosotros esta noche?", "en": "Will you eat with us tonight?", "highlight": "Comerás" },
-        { "es": "Ella vivirá en París el año que viene.", "en": "She will live in Paris next year.", "highlight": "vivirá" },
-        { "es": "Nosotros trabajaremos juntos.", "en": "We will work together.", "highlight": "trabajaremos" },
-        { "es": "Vosotros beberéis agua en la carrera.", "en": "You all will drink water in the race.", "highlight": "beberéis" },
-        { "es": "Ellos escribirán una carta.", "en": "They will write a letter.", "highlight": "escribirán" }
+        {
+          "es": "Mañana hablaré con mi jefe.",
+          "en": "Tomorrow I will speak with my boss.",
+          "highlight": "hablaré"
+        },
+        {
+          "es": "¿Comerás con nosotros esta noche?",
+          "en": "Will you eat with us tonight?",
+          "highlight": "Comerás"
+        },
+        {
+          "es": "Ella vivirá en París el año que viene.",
+          "en": "She will live in Paris next year.",
+          "highlight": "vivirá"
+        },
+        {
+          "es": "Nosotros trabajaremos juntos.",
+          "en": "We will work together.",
+          "highlight": "trabajaremos"
+        },
+        {
+          "es": "Vosotros beberéis agua en la carrera.",
+          "en": "You all will drink water in the race.",
+          "highlight": "beberéis"
+        },
+        {
+          "es": "Ellos escribirán una carta.",
+          "en": "They will write a letter.",
+          "highlight": "escribirán"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct simple future form of 'hablar' (to speak) for 'yo'?",
-          "options": ["yo hablaré", "yo hablé", "yo hablaría"],
+          "options": [
+            "yo hablaré",
+            "yo hablaría",
+            "yo hablé"
+          ],
           "correctIndex": 0,
           "explanation": "Attach -é directly to the infinitive: hablar + é = hablaré. The written accent marks this as the future tense yo form."
         },
         {
           "type": "fill-blank",
           "prompt": "Tú ___ (comer) pizza esta noche. (You will eat pizza tonight.)",
-          "acceptedAnswers": ["comerás"],
+          "acceptedAnswers": [
+            "comerás"
+          ],
           "hint": "Attach the tú future ending -ás to the full infinitive comer",
           "explanation": "comer + ás = comerás. The tú form carries a written accent on the á."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She will live in Madrid' in Spanish?",
-          "options": ["Ella vivirá en Madrid.", "Ella vivierá en Madrid.", "Ella vivirás en Madrid."],
+          "options": [
+            "Ella vivirá en Madrid.",
+            "Ella vivirás en Madrid.",
+            "Ella vivierá en Madrid."
+          ],
           "correctIndex": 0,
           "explanation": "The él/ella future ending is -á: vivir + á = vivirá. The stem is the complete infinitive, nothing is removed."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ (trabajar) mañana. (We will work tomorrow.)",
-          "acceptedAnswers": ["trabajaremos"],
+          "acceptedAnswers": [
+            "trabajaremos"
+          ],
           "hint": "Attach -emos to the full infinitive trabajar — nosotros is the only future form without a written accent",
           "explanation": "trabajar + emos = trabajaremos. The nosotros form is the only one without a written accent in the simple future."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which option correctly conjugates 'beber' (to drink) for 'ellos'?",
-          "options": ["ellos beberán", "ellos beberén", "ellos bebieron"],
-          "correctIndex": 0,
+          "options": [
+            "ellos bebieron",
+            "ellos beberán",
+            "ellos beberén"
+          ],
+          "correctIndex": 1,
           "explanation": "The ellos/ellas future ending is -án: beber + án = beberán. Note: bebieron is the preterite (past) form, not future."
         },
         {
           "type": "fill-blank",
           "prompt": "Vosotros ___ (escribir) los informes. (You all will write the reports.)",
-          "acceptedAnswers": ["escribiréis"],
+          "acceptedAnswers": [
+            "escribiréis"
+          ],
           "hint": "Attach -éis to the full infinitive escribir",
           "explanation": "escribir + éis = escribiréis. The vosotros future ending -éis carries a written accent on the é."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses the simple future tense?",
-          "options": ["El tren llegará a las tres.", "El tren llegaré a las tres.", "El tren llegan a las tres."],
+          "options": [
+            "El tren llegará a las tres.",
+            "El tren llegan a las tres.",
+            "El tren llegaré a las tres."
+          ],
           "correctIndex": 0,
           "explanation": "El tren (the train) is third person singular, so the correct ending is -á: llegar + á = llegará. Option B uses the yo ending and option C uses the present tense."
         },
         {
           "type": "fill-blank",
           "prompt": "Usted ___ (hablar) con el director. (You will speak with the director.)",
-          "acceptedAnswers": ["hablará"],
+          "acceptedAnswers": [
+            "hablará"
+          ],
           "hint": "Usted (formal you) uses the same ending as él/ella: -á",
           "explanation": "hablar + á = hablará. Usted always uses the third person singular (él/ella) form in all tenses."
         }
@@ -85,67 +135,117 @@
       "explanation": "A small group of common verbs use a modified stem in the future tense instead of the full infinitive. The endings remain exactly the same (-é, -ás, -á, -emos, -éis, -án), but the stem changes. The most important irregular stems are: tener (to have) → tendr-, poder (to be able to) → podr-, hacer (to do/make) → har-, venir (to come) → vendr-, salir (to leave/go out) → saldr-, saber (to know) → sabr-. Examples: tener → yo tendré, tú tendrás, él tendrá, nosotros tendremos, vosotros tendréis, ellos tendrán. Hacer → yo haré, tú harás, él hará. Notice that hacer drops the -ce entirely. Poder → yo podré, tú podrás. Saber → yo sabré. These verbs are all high-frequency, so it is worth memorizing their stems.",
       "tip": "Several irregular stems follow a pattern: the vowel of the infinitive ending is replaced by a -d- (tener→tendr, venir→vendr, salir→saldr, poder→podr). Hacer is the most unusual — it shortens dramatically to har-. Saber shortens to sabr-.",
       "examples": [
-        { "es": "¿Tendrás tiempo mañana?", "en": "Will you have time tomorrow?", "highlight": "Tendrás" },
-        { "es": "No podré ir a la fiesta.", "en": "I won't be able to go to the party.", "highlight": "podré" },
-        { "es": "¿Qué harás este fin de semana?", "en": "What will you do this weekend?", "highlight": "harás" },
-        { "es": "Ellos vendrán a las ocho.", "en": "They will come at eight.", "highlight": "vendrán" },
-        { "es": "El avión saldrá a tiempo.", "en": "The plane will leave on time.", "highlight": "saldrá" },
-        { "es": "Nadie sabrá la respuesta.", "en": "Nobody will know the answer.", "highlight": "sabrá" }
+        {
+          "es": "¿Tendrás tiempo mañana?",
+          "en": "Will you have time tomorrow?",
+          "highlight": "Tendrás"
+        },
+        {
+          "es": "No podré ir a la fiesta.",
+          "en": "I won't be able to go to the party.",
+          "highlight": "podré"
+        },
+        {
+          "es": "¿Qué harás este fin de semana?",
+          "en": "What will you do this weekend?",
+          "highlight": "harás"
+        },
+        {
+          "es": "Ellos vendrán a las ocho.",
+          "en": "They will come at eight.",
+          "highlight": "vendrán"
+        },
+        {
+          "es": "El avión saldrá a tiempo.",
+          "en": "The plane will leave on time.",
+          "highlight": "saldrá"
+        },
+        {
+          "es": "Nadie sabrá la respuesta.",
+          "en": "Nobody will know the answer.",
+          "highlight": "sabrá"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct future form of 'tener' (to have) for 'yo'?",
-          "options": ["yo tendré", "yo teneré", "yo tendrí"],
+          "options": [
+            "yo tendré",
+            "yo tendrí",
+            "yo teneré"
+          ],
           "correctIndex": 0,
           "explanation": "tener has the irregular stem tendr-. Add the yo ending -é: tendr + é = tendré. Never attach the ending to the full infinitive for irregular verbs."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella ___ (poder) hablar contigo después. (She will be able to talk to you later.)",
-          "acceptedAnswers": ["podrá"],
+          "acceptedAnswers": [
+            "podrá"
+          ],
           "hint": "The irregular stem of poder is podr-; use the ella ending -á",
           "explanation": "poder → irregular stem podr- + á = podrá. The vowel of -er is dropped and replaced with nothing (not a -d-)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'We will do the work' using 'hacer'?",
-          "options": ["Nosotros haremos el trabajo.", "Nosotros haceremos el trabajo.", "Nosotros hacerémos el trabajo."],
+          "options": [
+            "Nosotros haremos el trabajo.",
+            "Nosotros haceremos el trabajo.",
+            "Nosotros hacerémos el trabajo."
+          ],
           "correctIndex": 0,
           "explanation": "hacer has the highly irregular stem har-. Add nosotros ending -emos: har + emos = haremos. The -ce of hacer is completely dropped."
         },
         {
           "type": "fill-blank",
           "prompt": "¿A qué hora ___ (venir) tus amigos? (What time will your friends come?)",
-          "acceptedAnswers": ["vendrán"],
+          "acceptedAnswers": [
+            "vendrán"
+          ],
           "hint": "The irregular stem of venir is vendr-; use the ellos/ellas ending -án",
           "explanation": "venir → irregular stem vendr- + án = vendrán. The pattern -dr- replaces the -ir ending of the infinitive."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct future tense of 'salir' (to leave) for 'tú'?",
-          "options": ["tú saldrás", "tú salirás", "tú saldrés"],
-          "correctIndex": 0,
+          "options": [
+            "tú salirás",
+            "tú saldrés",
+            "tú saldrás"
+          ],
+          "correctIndex": 2,
           "explanation": "salir → irregular stem saldr-. Add tú ending -ás: saldr + ás = saldrás. The -ir ending becomes -dr-."
         },
         {
           "type": "fill-blank",
           "prompt": "Yo ___ (saber) los resultados mañana. (I will know the results tomorrow.)",
-          "acceptedAnswers": ["sabré"],
+          "acceptedAnswers": [
+            "sabré"
+          ],
           "hint": "The irregular stem of saber is sabr-; use the yo ending -é",
           "explanation": "saber → irregular stem sabr- + é = sabré. The vowel -e of the infinitive ending is simply dropped."
         },
         {
           "type": "multiple-choice",
           "prompt": "Your friend asks: '¿Cuándo ___ (venir) tú a verme?' Which option correctly fills the blank?",
-          "options": ["vendrás", "venirás", "vendrés"],
-          "correctIndex": 0,
+          "options": [
+            "venirás",
+            "vendrás",
+            "vendrés"
+          ],
+          "correctIndex": 1,
           "explanation": "venir → irregular stem vendr- + tú ending -ás = vendrás. Only the endings from the standard set are used, even with irregular stems."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these future forms is INCORRECT?",
-          "options": ["él hará", "ella tenerá", "nosotros saldremos"],
+          "options": [
+            "nosotros saldremos",
+            "ella tenerá",
+            "él hará"
+          ],
           "correctIndex": 1,
           "explanation": "tener uses the irregular stem tendr-, not the full infinitive. The correct form is ella tendrá, not tenerá. The other two forms (hará, saldremos) correctly use their irregular stems."
         }
@@ -157,46 +257,86 @@
       "explanation": "Spanish has a very common alternative way to talk about the future: ir a + infinitive. This construction mirrors the English 'going to' and expresses actions that are planned or about to happen in the near future. The formula is: conjugated form of ir (in the present tense) + a + infinitive. The present tense of ir: yo voy, tú vas, él/ella va, nosotros vamos, vosotros vais, ellos/ellas van. Examples: voy a comer (I am going to eat / I will eat), vas a llamar (you are going to call), va a llover (it is going to rain), vamos a estudiar (we are going to study). While the simple future (comeré) and ir a + infinitive (voy a comer) can often be used interchangeably, ir a + infinitive usually implies a more immediate or concrete plan, while the simple future can sound more formal or refer to events further in the future.",
       "tip": "Think of 'ir a + infinitive' as the Spanish equivalent of English 'going to'. It is widely used in everyday conversation and is often preferred over the simple future for near-term plans. Remember: it is always 'ir a' — never 'ir de' or 'ir para' in this construction.",
       "examples": [
-        { "es": "Voy a comer una pizza esta noche.", "en": "I am going to eat a pizza tonight.", "highlight": "Voy a comer" },
-        { "es": "¿Vas a llamar a tu madre?", "en": "Are you going to call your mother?", "highlight": "Vas a llamar" },
-        { "es": "Va a llover esta tarde.", "en": "It is going to rain this afternoon.", "highlight": "Va a llover" },
-        { "es": "Vamos a estudiar para el examen.", "en": "We are going to study for the exam.", "highlight": "Vamos a estudiar" },
-        { "es": "¿Vais a ir al concierto?", "en": "Are you all going to go to the concert?", "highlight": "Vais a ir" },
-        { "es": "Van a abrir un restaurante nuevo.", "en": "They are going to open a new restaurant.", "highlight": "Van a abrir" }
+        {
+          "es": "Voy a comer una pizza esta noche.",
+          "en": "I am going to eat a pizza tonight.",
+          "highlight": "Voy a comer"
+        },
+        {
+          "es": "¿Vas a llamar a tu madre?",
+          "en": "Are you going to call your mother?",
+          "highlight": "Vas a llamar"
+        },
+        {
+          "es": "Va a llover esta tarde.",
+          "en": "It is going to rain this afternoon.",
+          "highlight": "Va a llover"
+        },
+        {
+          "es": "Vamos a estudiar para el examen.",
+          "en": "We are going to study for the exam.",
+          "highlight": "Vamos a estudiar"
+        },
+        {
+          "es": "¿Vais a ir al concierto?",
+          "en": "Are you all going to go to the concert?",
+          "highlight": "Vais a ir"
+        },
+        {
+          "es": "Van a abrir un restaurante nuevo.",
+          "en": "They are going to open a new restaurant.",
+          "highlight": "Van a abrir"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I am going to eat' using 'ir a + infinitive'?",
-          "options": ["Voy a comer.", "Voy comer.", "Voy de comer."],
-          "correctIndex": 0,
+          "options": [
+            "Voy comer.",
+            "Voy a comer.",
+            "Voy de comer."
+          ],
+          "correctIndex": 1,
           "explanation": "The structure is ir (conjugated) + a + infinitive. 'Voy' is the yo form of ir; you must include the preposition 'a' before the infinitive: voy a comer."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella ___ ___ ___ (ir a + llamar) a sus padres. (She is going to call her parents.)",
-          "acceptedAnswers": ["va a llamar"],
+          "acceptedAnswers": [
+            "va a llamar"
+          ],
           "hint": "Use the ella form of ir in the present tense, followed by 'a' and the infinitive llamar",
           "explanation": "ella va + a + llamar = va a llamar. The present tense of ir for ella is 'va'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence means 'We are going to travel to Mexico'?",
-          "options": ["Vamos a viajar a México.", "Vamos viajar a México.", "Iremos a viajar a México."],
-          "correctIndex": 0,
+          "options": [
+            "Vamos viajar a México.",
+            "Iremos a viajar a México.",
+            "Vamos a viajar a México."
+          ],
+          "correctIndex": 2,
           "explanation": "The nosotros form of ir is 'vamos'. The structure requires 'a' before the infinitive: vamos a viajar. Option C doubles up constructions incorrectly."
         },
         {
           "type": "fill-blank",
           "prompt": "¿___ ___ ___ (ir a + hacer) tú esta tarde? (What are you going to do this afternoon?)",
-          "acceptedAnswers": ["vas a hacer"],
+          "acceptedAnswers": [
+            "vas a hacer"
+          ],
           "hint": "Use the tú form of ir in the present tense, then 'a', then hacer",
           "explanation": "tú vas + a + hacer = vas a hacer. The tú present form of ir is 'vas'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the sentence that correctly expresses a near-future plan using 'ir a + infinitive':",
-          "options": ["Van a abrir una tienda nueva.", "Van abrir una tienda nueva.", "Vanen a abrir una tienda nueva."],
+          "options": [
+            "Van a abrir una tienda nueva.",
+            "Van abrir una tienda nueva.",
+            "Vanen a abrir una tienda nueva."
+          ],
           "correctIndex": 0,
           "explanation": "'Van' is the ellos/ellas/ustedes form of ir. The preposition 'a' is required: van a abrir. 'Vanen' does not exist in Spanish."
         },
@@ -204,25 +344,31 @@
           "type": "multiple-choice",
           "prompt": "How do 'voy a comer' and 'comeré' differ?",
           "options": [
+            "They cannot be used interchangeably and have entirely different meanings.",
             "'Voy a comer' implies a near-term plan; 'comeré' sounds more formal or refers to a less immediate future.",
-            "'Voy a comer' is past tense; 'comeré' is present tense.",
-            "They cannot be used interchangeably and have entirely different meanings."
+            "'Voy a comer' is past tense; 'comeré' is present tense."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Both mean 'I will eat', but 'voy a comer' (ir a + infinitive) typically conveys an imminent, concrete plan, while 'comeré' (simple future) can sound more formal or distant. In everyday speech, 'voy a comer' is more common."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ ___ ___ (ir a + aprender) francés. (We are going to learn French.)",
-          "acceptedAnswers": ["vamos a aprender"],
+          "acceptedAnswers": [
+            "vamos a aprender"
+          ],
           "hint": "The nosotros form of ir in the present tense is 'vamos'",
           "explanation": "nosotros vamos + a + aprender = vamos a aprender. 'Vamos a + infinitive' is one of the most common future constructions in spoken Spanish."
         },
         {
           "type": "multiple-choice",
           "prompt": "Translate to Spanish using 'ir a + infinitive': 'Are you all going to watch the game?'",
-          "options": ["¿Vais a ver el partido?", "¿Vais ver el partido?", "¿Vas a ver el partido?"],
-          "correctIndex": 0,
+          "options": [
+            "¿Vas a ver el partido?",
+            "¿Vais a ver el partido?",
+            "¿Vais ver el partido?"
+          ],
+          "correctIndex": 1,
           "explanation": "'You all' maps to vosotros, whose form of ir is 'vais'. Add 'a' before the infinitive ver: ¿vais a ver el partido? Option C uses the tú form (vas), which is singular."
         }
       ]

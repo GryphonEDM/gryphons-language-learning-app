@@ -4,7 +4,10 @@
   "nameUk": "Відмінювання прикметників",
   "icon": "🎯",
   "tier": "B1",
-  "prerequisites": ["adjectives-gender", "cases-dat-inst"],
+  "prerequisites": [
+    "adjectives-gender",
+    "cases-dat-inst"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -12,26 +15,150 @@
       "title": "Accusative & Genitive Adjectives",
       "explanation": "In the accusative case, feminine adjectives change -а to -у (велика → велику). Masculine/neuter inanimate adjectives stay the same as nominative. In the genitive, masculine and neuter adjectives take -ого (великого), and feminine adjectives take -ої (великої).",
       "examples": [
-        { "uk": "Я бачу велику машину.", "en": "I see a big car. (acc. fem.)", "highlight": "велику" },
-        { "uk": "Це дім старого друга.", "en": "This is an old friend's house. (gen. masc.)", "highlight": "старого" },
-        { "uk": "Без холодної води.", "en": "Without cold water. (gen. fem.)", "highlight": "холодної" }
+        {
+          "uk": "Я бачу велику машину.",
+          "en": "I see a big car. (acc. fem.)",
+          "highlight": "велику"
+        },
+        {
+          "uk": "Це дім старого друга.",
+          "en": "This is an old friend's house. (gen. masc.)",
+          "highlight": "старого"
+        },
+        {
+          "uk": "Без холодної води.",
+          "en": "Without cold water. (gen. fem.)",
+          "highlight": "холодної"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я читаю ___ книгу. (цікавий — interesting, acc. fem.)", "options": ["цікаву", "цікавий", "цікавої"], "correctIndex": 0, "explanation": "Accusative feminine adjectives end in -у: цікава → цікаву." },
-        { "type": "fill-blank", "prompt": "Вона купила ___ сукню. (новий — new, acc. fem.)", "acceptedAnswers": ["нову"], "hint": "Feminine accusative: -а → -у", "explanation": "The feminine accusative of 'нова' is 'нову' (ending -у)." },
-        { "type": "transformation", "prompt": "Put the adjective into the accusative feminine form:", "baseWord": "гарна (beautiful)", "context": "Він малює ___ картину.", "acceptedAnswers": ["гарну"], "hint": "Change -а to -у", "explanation": "Feminine accusative: гарна → гарну." },
-        { "type": "multiple-choice", "prompt": "Це кімната ___ сестри. (старший — older, gen. fem.)", "options": ["старшої", "старша", "старшу"], "correctIndex": 0, "explanation": "Genitive feminine adjectives end in -ої: старша → старшої." },
-        { "type": "fill-blank", "prompt": "Біля ___ дерева росте квітка. (високий — tall, gen. neut.)", "acceptedAnswers": ["високого"], "hint": "Genitive masculine/neuter: -ого", "explanation": "Genitive for masculine and neuter adjectives is -ого: високий → високого." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я не бачу великої будинку.", "errorWord": "великої", "acceptedAnswers": ["великого"], "explanation": "'Будинок' is masculine, so the genitive adjective must be 'великого' (not 'великої', which is feminine)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "нова → accusative", "right": "нову" },
-          { "left": "новий → genitive", "right": "нового" },
-          { "left": "нова → genitive", "right": "нової" },
-          { "left": "нове → genitive", "right": "нового" }
-        ], "explanation": "Acc. fem: -а→-у. Gen. masc/neut: -ого. Gen. fem: -ої." },
-        { "type": "multiple-choice", "prompt": "Я купив ___ телефон. (новий — new, acc. masc. inanimate)", "options": ["новий", "нового", "нову"], "correctIndex": 0, "explanation": "Inanimate masculine nouns keep the nominative adjective form in the accusative: новий." },
-        { "type": "fill-blank", "prompt": "Без ___ друга важко. (справжній — true, gen. masc.)", "acceptedAnswers": ["справжнього"], "hint": "Soft adjectives: -ій → genitive -ього", "explanation": "Soft-stem adjectives form the genitive as -ього: справжній → справжнього." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I see a beautiful girl.", "words": ["Я", "бачу", "гарну", "дівчину"], "distractors": ["гарна"], "validOrders": [["Я", "бачу", "гарну", "дівчину"]], "explanation": "The accusative feminine form 'гарну' must agree with 'дівчину'. 'Гарна' is nominative and incorrect here." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я читаю ___ книгу. (цікавий — interesting, acc. fem.)",
+          "options": [
+            "цікавої",
+            "цікаву",
+            "цікавий"
+          ],
+          "correctIndex": 1,
+          "explanation": "Accusative feminine adjectives end in -у: цікава → цікаву."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона купила ___ сукню. (новий — new, acc. fem.)",
+          "acceptedAnswers": [
+            "нову"
+          ],
+          "hint": "Feminine accusative: -а → -у",
+          "explanation": "The feminine accusative of 'нова' is 'нову' (ending -у)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the adjective into the accusative feminine form:",
+          "baseWord": "гарна (beautiful)",
+          "context": "Він малює ___ картину.",
+          "acceptedAnswers": [
+            "гарну"
+          ],
+          "hint": "Change -а to -у",
+          "explanation": "Feminine accusative: гарна → гарну."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Це кімната ___ сестри. (старший — older, gen. fem.)",
+          "options": [
+            "старшої",
+            "старшу",
+            "старша"
+          ],
+          "correctIndex": 0,
+          "explanation": "Genitive feminine adjectives end in -ої: старша → старшої."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Біля ___ дерева росте квітка. (високий — tall, gen. neut.)",
+          "acceptedAnswers": [
+            "високого"
+          ],
+          "hint": "Genitive masculine/neuter: -ого",
+          "explanation": "Genitive for masculine and neuter adjectives is -ого: високий → високого."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я не бачу великої будинку.",
+          "errorWord": "великої",
+          "acceptedAnswers": [
+            "великого"
+          ],
+          "explanation": "'Будинок' is masculine, so the genitive adjective must be 'великого' (not 'великої', which is feminine)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "нова → accusative",
+              "right": "нову"
+            },
+            {
+              "left": "новий → genitive",
+              "right": "нового"
+            },
+            {
+              "left": "нова → genitive",
+              "right": "нової"
+            },
+            {
+              "left": "нове → genitive",
+              "right": "нового"
+            }
+          ],
+          "explanation": "Acc. fem: -а→-у. Gen. masc/neut: -ого. Gen. fem: -ої."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я купив ___ телефон. (новий — new, acc. masc. inanimate)",
+          "options": [
+            "нового",
+            "нову",
+            "новий"
+          ],
+          "correctIndex": 2,
+          "explanation": "Inanimate masculine nouns keep the nominative adjective form in the accusative: новий."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Без ___ друга важко. (справжній — true, gen. masc.)",
+          "acceptedAnswers": [
+            "справжнього"
+          ],
+          "hint": "Soft adjectives: -ій → genitive -ього",
+          "explanation": "Soft-stem adjectives form the genitive as -ього: справжній → справжнього."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I see a beautiful girl.",
+          "words": [
+            "Я",
+            "бачу",
+            "гарну",
+            "дівчину"
+          ],
+          "distractors": [
+            "гарна"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "бачу",
+              "гарну",
+              "дівчину"
+            ]
+          ],
+          "explanation": "The accusative feminine form 'гарну' must agree with 'дівчину'. 'Гарна' is nominative and incorrect here."
+        }
       ]
     },
     {
@@ -39,26 +166,152 @@
       "title": "Dative & Instrumental Adjectives",
       "explanation": "In the dative case, masculine/neuter adjectives take -ому (великому), and feminine adjectives take -ій (великій). In the instrumental, masculine/neuter take -им (великим), and feminine takes -ою (великою).",
       "examples": [
-        { "uk": "Я дав подарунок доброму другу.", "en": "I gave a gift to a good friend. (dat. masc.)", "highlight": "доброму" },
-        { "uk": "Допоможи старій бабусі.", "en": "Help the old grandmother. (dat. fem.)", "highlight": "старій" },
-        { "uk": "Я пишу червоною ручкою.", "en": "I write with a red pen. (inst. fem.)", "highlight": "червоною" }
+        {
+          "uk": "Я дав подарунок доброму другу.",
+          "en": "I gave a gift to a good friend. (dat. masc.)",
+          "highlight": "доброму"
+        },
+        {
+          "uk": "Допоможи старій бабусі.",
+          "en": "Help the old grandmother. (dat. fem.)",
+          "highlight": "старій"
+        },
+        {
+          "uk": "Я пишу червоною ручкою.",
+          "en": "I write with a red pen. (inst. fem.)",
+          "highlight": "червоною"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я дзвоню ___ другу. (старий — old, dat. masc.)", "options": ["старому", "старий", "старим"], "correctIndex": 0, "explanation": "Dative masculine: старий → старому (ending -ому)." },
-        { "type": "fill-blank", "prompt": "Він допоміг ___ жінці. (молодий — young, dat. fem.)", "acceptedAnswers": ["молодій"], "hint": "Dative feminine: -ій", "explanation": "Dative feminine adjectives end in -ій: молода → молодій." },
-        { "type": "transformation", "prompt": "Put the adjective into the dative masculine form:", "baseWord": "розумний (smart)", "context": "Я подарував книгу ___ студенту.", "acceptedAnswers": ["розумному"], "hint": "Dative masculine: -ому", "explanation": "Dative masculine: розумний → розумному." },
-        { "type": "multiple-choice", "prompt": "Я їду ___ автобусом. (великий — big, inst. masc.)", "options": ["великим", "великому", "великого"], "correctIndex": 0, "explanation": "Instrumental masculine/neuter adjectives end in -им: великий → великим." },
-        { "type": "fill-blank", "prompt": "Вона малює ___ фарбою. (синій — blue, inst. fem.)", "acceptedAnswers": ["синьою"], "hint": "Instrumental feminine: -ою", "explanation": "Instrumental feminine for soft-stem adjectives: синя → синьою." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я розмовляю з новою другом.", "errorWord": "новою", "acceptedAnswers": ["новим"], "explanation": "'Друг' is masculine, so instrumental must be 'новим' (not 'новою', which is feminine)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "великий → dative masc.", "right": "великому" },
-          { "left": "велика → dative fem.", "right": "великій" },
-          { "left": "великий → inst. masc.", "right": "великим" },
-          { "left": "велика → inst. fem.", "right": "великою" }
-        ], "explanation": "Dat. masc/neut: -ому. Dat. fem: -ій. Inst. masc/neut: -им. Inst. fem: -ою." },
-        { "type": "fill-blank", "prompt": "Я пишу ___ олівцем. (гострий — sharp, inst. masc.)", "acceptedAnswers": ["гострим"], "hint": "Instrumental masculine: -им", "explanation": "Instrumental masculine: гострий → гострим." },
-        { "type": "multiple-choice", "prompt": "Я радий ___ новині. (гарний — good, dat. fem.)", "options": ["гарній", "гарною", "гарного"], "correctIndex": 0, "explanation": "Dative feminine: гарна → гарній." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I'm talking with a good friend.", "words": ["Я", "розмовляю", "з", "добрим", "другом"], "distractors": ["доброму"], "validOrders": [["Я", "розмовляю", "з", "добрим", "другом"]], "explanation": "Instrumental requires 'добрим' (not dative 'доброму')." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я дзвоню ___ другу. (старий — old, dat. masc.)",
+          "options": [
+            "старому",
+            "старим",
+            "старий"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dative masculine: старий → старому (ending -ому)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він допоміг ___ жінці. (молодий — young, dat. fem.)",
+          "acceptedAnswers": [
+            "молодій"
+          ],
+          "hint": "Dative feminine: -ій",
+          "explanation": "Dative feminine adjectives end in -ій: молода → молодій."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the adjective into the dative masculine form:",
+          "baseWord": "розумний (smart)",
+          "context": "Я подарував книгу ___ студенту.",
+          "acceptedAnswers": [
+            "розумному"
+          ],
+          "hint": "Dative masculine: -ому",
+          "explanation": "Dative masculine: розумний → розумному."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я їду ___ автобусом. (великий — big, inst. masc.)",
+          "options": [
+            "великого",
+            "великому",
+            "великим"
+          ],
+          "correctIndex": 2,
+          "explanation": "Instrumental masculine/neuter adjectives end in -им: великий → великим."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона малює ___ фарбою. (синій — blue, inst. fem.)",
+          "acceptedAnswers": [
+            "синьою"
+          ],
+          "hint": "Instrumental feminine: -ою",
+          "explanation": "Instrumental feminine for soft-stem adjectives: синя → синьою."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я розмовляю з новою другом.",
+          "errorWord": "новою",
+          "acceptedAnswers": [
+            "новим"
+          ],
+          "explanation": "'Друг' is masculine, so instrumental must be 'новим' (not 'новою', which is feminine)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "великий → dative masc.",
+              "right": "великому"
+            },
+            {
+              "left": "велика → dative fem.",
+              "right": "великій"
+            },
+            {
+              "left": "великий → inst. masc.",
+              "right": "великим"
+            },
+            {
+              "left": "велика → inst. fem.",
+              "right": "великою"
+            }
+          ],
+          "explanation": "Dat. masc/neut: -ому. Dat. fem: -ій. Inst. masc/neut: -им. Inst. fem: -ою."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я пишу ___ олівцем. (гострий — sharp, inst. masc.)",
+          "acceptedAnswers": [
+            "гострим"
+          ],
+          "hint": "Instrumental masculine: -им",
+          "explanation": "Instrumental masculine: гострий → гострим."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я радий ___ новині. (гарний — good, dat. fem.)",
+          "options": [
+            "гарній",
+            "гарною",
+            "гарного"
+          ],
+          "correctIndex": 0,
+          "explanation": "Dative feminine: гарна → гарній."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I'm talking with a good friend.",
+          "words": [
+            "Я",
+            "розмовляю",
+            "з",
+            "добрим",
+            "другом"
+          ],
+          "distractors": [
+            "доброму"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "розмовляю",
+              "з",
+              "добрим",
+              "другом"
+            ]
+          ],
+          "explanation": "Instrumental requires 'добрим' (not dative 'доброму')."
+        }
       ]
     },
     {
@@ -66,26 +319,137 @@
       "title": "Locative Adjectives",
       "explanation": "In the locative case (used after в/у, на, при, по), masculine and neuter adjectives take -ому (like dative), and feminine adjectives take -ій (like dative). Example: у великому місті, на високій горі.",
       "examples": [
-        { "uk": "Я живу у великому місті.", "en": "I live in a big city. (loc. neut.)", "highlight": "великому" },
-        { "uk": "На високій горі росте дерево.", "en": "A tree grows on a high mountain. (loc. fem.)", "highlight": "високій" },
-        { "uk": "У старому будинку холодно.", "en": "It's cold in the old house. (loc. masc.)", "highlight": "старому" }
+        {
+          "uk": "Я живу у великому місті.",
+          "en": "I live in a big city. (loc. neut.)",
+          "highlight": "великому"
+        },
+        {
+          "uk": "На високій горі росте дерево.",
+          "en": "A tree grows on a high mountain. (loc. fem.)",
+          "highlight": "високій"
+        },
+        {
+          "uk": "У старому будинку холодно.",
+          "en": "It's cold in the old house. (loc. masc.)",
+          "highlight": "старому"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я працюю в ___ офісі. (новий — new, loc. masc.)", "options": ["новому", "новий", "новим"], "correctIndex": 0, "explanation": "Locative masculine: новий → новому (same as dative)." },
-        { "type": "fill-blank", "prompt": "Вона сидить на ___ лавці. (дерев'яний — wooden, loc. fem.)", "acceptedAnswers": ["дерев'яній"], "hint": "Locative feminine: -ій", "explanation": "Locative feminine: дерев'яна → дерев'яній." },
-        { "type": "transformation", "prompt": "Put the adjective into the locative masculine form:", "baseWord": "тихий (quiet)", "context": "Ми живемо у ___ районі.", "acceptedAnswers": ["тихому"], "hint": "Locative masculine: -ому", "explanation": "Locative masculine: тихий → тихому." },
-        { "type": "multiple-choice", "prompt": "У ___ кімнаті тепло. (затишний — cozy, loc. fem.)", "options": ["затишній", "затишна", "затишну"], "correctIndex": 0, "explanation": "Locative feminine: затишна → затишній." },
-        { "type": "fill-blank", "prompt": "На ___ столі стоїть ваза. (круглий — round, loc. masc.)", "acceptedAnswers": ["круглому"], "hint": "Locative masculine: -ому", "explanation": "Locative masculine: круглий → круглому." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "У синьому сукні вона гарна.", "errorWord": "синьому", "acceptedAnswers": ["синій"], "explanation": "'Сукня' is feminine, so the locative adjective should be 'синій' (not 'синьому', which is masculine/neuter)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "старий будинок → locative", "right": "у старому будинку" },
-          { "left": "велика кімната → locative", "right": "у великій кімнаті" },
-          { "left": "чисте озеро → locative", "right": "на чистому озері" },
-          { "left": "гарна вулиця → locative", "right": "на гарній вулиці" }
-        ], "explanation": "Loc. masc/neut: -ому. Loc. fem: -ій. The nouns also change in the locative." },
-        { "type": "fill-blank", "prompt": "У ___ морі плавають риби. (глибокий — deep, loc. neut.)", "acceptedAnswers": ["глибокому"], "hint": "Locative neuter is the same as masculine: -ому", "explanation": "Locative neuter: глибоке → глибокому (same ending as masculine)." },
-        { "type": "multiple-choice", "prompt": "При ___ світлі важко читати. (тьмяний — dim, loc. neut.)", "options": ["тьмяному", "тьмяній", "тьмяне"], "correctIndex": 0, "explanation": "Locative neuter: тьмяне → тьмяному." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "У великому місті багато людей.", "acceptedAnswers": ["У великому місті багато людей.", "У великому місті багато людей"], "explanation": "'Великому' is the locative form of 'великий', used because 'місто' follows the preposition 'у'." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я працюю в ___ офісі. (новий — new, loc. masc.)",
+          "options": [
+            "новому",
+            "новий",
+            "новим"
+          ],
+          "correctIndex": 0,
+          "explanation": "Locative masculine: новий → новому (same as dative)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона сидить на ___ лавці. (дерев'яний — wooden, loc. fem.)",
+          "acceptedAnswers": [
+            "дерев'яній"
+          ],
+          "hint": "Locative feminine: -ій",
+          "explanation": "Locative feminine: дерев'яна → дерев'яній."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the adjective into the locative masculine form:",
+          "baseWord": "тихий (quiet)",
+          "context": "Ми живемо у ___ районі.",
+          "acceptedAnswers": [
+            "тихому"
+          ],
+          "hint": "Locative masculine: -ому",
+          "explanation": "Locative masculine: тихий → тихому."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "У ___ кімнаті тепло. (затишний — cozy, loc. fem.)",
+          "options": [
+            "затишній",
+            "затишна",
+            "затишну"
+          ],
+          "correctIndex": 0,
+          "explanation": "Locative feminine: затишна → затишній."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "На ___ столі стоїть ваза. (круглий — round, loc. masc.)",
+          "acceptedAnswers": [
+            "круглому"
+          ],
+          "hint": "Locative masculine: -ому",
+          "explanation": "Locative masculine: круглий → круглому."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "У синьому сукні вона гарна.",
+          "errorWord": "синьому",
+          "acceptedAnswers": [
+            "синій"
+          ],
+          "explanation": "'Сукня' is feminine, so the locative adjective should be 'синій' (not 'синьому', which is masculine/neuter)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "старий будинок → locative",
+              "right": "у старому будинку"
+            },
+            {
+              "left": "велика кімната → locative",
+              "right": "у великій кімнаті"
+            },
+            {
+              "left": "чисте озеро → locative",
+              "right": "на чистому озері"
+            },
+            {
+              "left": "гарна вулиця → locative",
+              "right": "на гарній вулиці"
+            }
+          ],
+          "explanation": "Loc. masc/neut: -ому. Loc. fem: -ій. The nouns also change in the locative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У ___ морі плавають риби. (глибокий — deep, loc. neut.)",
+          "acceptedAnswers": [
+            "глибокому"
+          ],
+          "hint": "Locative neuter is the same as masculine: -ому",
+          "explanation": "Locative neuter: глибоке → глибокому (same ending as masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "При ___ світлі важко читати. (тьмяний — dim, loc. neut.)",
+          "options": [
+            "тьмяному",
+            "тьмяне",
+            "тьмяній"
+          ],
+          "correctIndex": 0,
+          "explanation": "Locative neuter: тьмяне → тьмяному."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "У великому місті багато людей.",
+          "acceptedAnswers": [
+            "У великому місті багато людей.",
+            "У великому місті багато людей"
+          ],
+          "explanation": "'Великому' is the locative form of 'великий', used because 'місто' follows the preposition 'у'."
+        }
       ]
     },
     {
@@ -93,33 +457,184 @@
       "title": "Adjectives Across All Cases",
       "explanation": "Now let's practice adjective declension across all cases. Remember: Nom: -ий/-а/-е, Acc fem: -у, Gen: -ого/-ої, Dat: -ому/-ій, Inst: -им/-ою, Loc: -ому/-ій.",
       "examples": [
-        { "uk": "Новий студент прийшов.", "en": "A new student came. (nom.)", "highlight": "Новий" },
-        { "uk": "Я знаю нового студента.", "en": "I know the new student. (acc. animate masc.)", "highlight": "нового" },
-        { "uk": "Я дав книгу новому студенту.", "en": "I gave a book to the new student. (dat.)", "highlight": "новому" }
+        {
+          "uk": "Новий студент прийшов.",
+          "en": "A new student came. (nom.)",
+          "highlight": "Новий"
+        },
+        {
+          "uk": "Я знаю нового студента.",
+          "en": "I know the new student. (acc. animate masc.)",
+          "highlight": "нового"
+        },
+        {
+          "uk": "Я дав книгу новому студенту.",
+          "en": "I gave a book to the new student. (dat.)",
+          "highlight": "новому"
+        }
       ],
       "exercises": [
-        { "type": "table-fill", "prompt": "Complete the table:", "headers": ["Case", "великий (masc.)"], "rows": [
-          { "label": "Nominative", "answer": "великий", "prefilled": true },
-          { "label": "Genitive", "answer": "великого", "prefilled": false },
-          { "label": "Dative", "answer": "великому", "prefilled": false },
-          { "label": "Accusative (inanimate)", "answer": "великий", "prefilled": false },
-          { "label": "Instrumental", "answer": "великим", "prefilled": false },
-          { "label": "Locative", "answer": "великому", "prefilled": false }
-        ], "explanation": "Masculine adjective declension: Nom -ий, Gen -ого, Dat -ому, Acc (inanim.) = Nom, Inst -им, Loc -ому." },
-        { "type": "multiple-choice", "prompt": "Я познайомився з ___ дівчиною. (розумний — smart, inst. fem.)", "options": ["розумною", "розумній", "розумну"], "correctIndex": 0, "explanation": "Instrumental feminine: розумна → розумною." },
-        { "type": "fill-blank", "prompt": "Ми говорили про ___ фільм. (цікавий — interesting, acc. masc. inanim.)", "acceptedAnswers": ["цікавий"], "hint": "Inanimate masculine accusative = nominative", "explanation": "Inanimate masculine nouns keep the nominative adjective form in the accusative." },
-        { "type": "transformation", "prompt": "Put 'гарний' (beautiful) into the genitive feminine form:", "baseWord": "гарна", "context": "Без ___ погоди пікнік не вдасться.", "acceptedAnswers": ["гарної"], "hint": "Genitive feminine: -ої", "explanation": "Genitive feminine: гарна → гарної." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я живу в красиву квартирі.", "errorWord": "красиву", "acceptedAnswers": ["красивій"], "explanation": "After 'в' + locative, the feminine adjective must be 'красивій' (not accusative 'красиву')." },
-        { "type": "multiple-choice", "prompt": "Я бачу ___ хлопця. (молодий — young, acc. masc. animate)", "options": ["молодого", "молодий", "молодому"], "correctIndex": 0, "explanation": "Animate masculine accusative = genitive: молодий → молодого." },
-        { "type": "fill-blank", "prompt": "___ учителю подарували квіти. (улюблений — favorite, dat. masc.)", "acceptedAnswers": ["Улюбленому", "улюбленому"], "hint": "Dative masculine: -ому", "explanation": "Dative masculine: улюблений → улюбленому." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Я бачу (красива дівчина)", "right": "красиву дівчину" },
-          { "left": "Немає (гаряча вода)", "right": "гарячої води" },
-          { "left": "Я іду з (добрий друг)", "right": "добрим другом" },
-          { "left": "У (нова школа)", "right": "новій школі" }
-        ], "explanation": "Acc. fem: -у. Gen. fem: -ої. Inst. masc: -им. Loc. fem: -ій." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I gave flowers to a beautiful woman.", "words": ["Я", "подарував", "квіти", "гарній", "жінці"], "distractors": ["гарну"], "validOrders": [["Я", "подарував", "квіти", "гарній", "жінці"]], "explanation": "Dative feminine requires 'гарній' (not accusative 'гарну')." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Без доброго друга важко жити.", "acceptedAnswers": ["Без доброго друга важко жити.", "Без доброго друга важко жити"], "explanation": "'Доброго' is genitive masculine because 'без' requires the genitive case." }
+        {
+          "type": "table-fill",
+          "prompt": "Complete the table:",
+          "headers": [
+            "Case",
+            "великий (masc.)"
+          ],
+          "rows": [
+            {
+              "label": "Nominative",
+              "answer": "великий",
+              "prefilled": true
+            },
+            {
+              "label": "Genitive",
+              "answer": "великого",
+              "prefilled": false
+            },
+            {
+              "label": "Dative",
+              "answer": "великому",
+              "prefilled": false
+            },
+            {
+              "label": "Accusative (inanimate)",
+              "answer": "великий",
+              "prefilled": false
+            },
+            {
+              "label": "Instrumental",
+              "answer": "великим",
+              "prefilled": false
+            },
+            {
+              "label": "Locative",
+              "answer": "великому",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Masculine adjective declension: Nom -ий, Gen -ого, Dat -ому, Acc (inanim.) = Nom, Inst -им, Loc -ому."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я познайомився з ___ дівчиною. (розумний — smart, inst. fem.)",
+          "options": [
+            "розумну",
+            "розумною",
+            "розумній"
+          ],
+          "correctIndex": 1,
+          "explanation": "Instrumental feminine: розумна → розумною."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми говорили про ___ фільм. (цікавий — interesting, acc. masc. inanim.)",
+          "acceptedAnswers": [
+            "цікавий"
+          ],
+          "hint": "Inanimate masculine accusative = nominative",
+          "explanation": "Inanimate masculine nouns keep the nominative adjective form in the accusative."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put 'гарний' (beautiful) into the genitive feminine form:",
+          "baseWord": "гарна",
+          "context": "Без ___ погоди пікнік не вдасться.",
+          "acceptedAnswers": [
+            "гарної"
+          ],
+          "hint": "Genitive feminine: -ої",
+          "explanation": "Genitive feminine: гарна → гарної."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я живу в красиву квартирі.",
+          "errorWord": "красиву",
+          "acceptedAnswers": [
+            "красивій"
+          ],
+          "explanation": "After 'в' + locative, the feminine adjective must be 'красивій' (not accusative 'красиву')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я бачу ___ хлопця. (молодий — young, acc. masc. animate)",
+          "options": [
+            "молодому",
+            "молодий",
+            "молодого"
+          ],
+          "correctIndex": 2,
+          "explanation": "Animate masculine accusative = genitive: молодий → молодого."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ учителю подарували квіти. (улюблений — favorite, dat. masc.)",
+          "acceptedAnswers": [
+            "Улюбленому",
+            "улюбленому"
+          ],
+          "hint": "Dative masculine: -ому",
+          "explanation": "Dative masculine: улюблений → улюбленому."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Я бачу (красива дівчина)",
+              "right": "красиву дівчину"
+            },
+            {
+              "left": "Немає (гаряча вода)",
+              "right": "гарячої води"
+            },
+            {
+              "left": "Я іду з (добрий друг)",
+              "right": "добрим другом"
+            },
+            {
+              "left": "У (нова школа)",
+              "right": "новій школі"
+            }
+          ],
+          "explanation": "Acc. fem: -у. Gen. fem: -ої. Inst. masc: -им. Loc. fem: -ій."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I gave flowers to a beautiful woman.",
+          "words": [
+            "Я",
+            "подарував",
+            "квіти",
+            "гарній",
+            "жінці"
+          ],
+          "distractors": [
+            "гарну"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "подарував",
+              "квіти",
+              "гарній",
+              "жінці"
+            ]
+          ],
+          "explanation": "Dative feminine requires 'гарній' (not accusative 'гарну')."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Без доброго друга важко жити.",
+          "acceptedAnswers": [
+            "Без доброго друга важко жити.",
+            "Без доброго друга важко жити"
+          ],
+          "explanation": "'Доброго' is genitive masculine because 'без' requires the genitive case."
+        }
       ]
     }
   ]

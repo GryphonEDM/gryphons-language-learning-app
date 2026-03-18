@@ -4,7 +4,9 @@
   "nameHi": "परसर्ग",
   "icon": "📍",
   "tier": "A1",
-  "prerequisites": ["nouns-gender"],
+  "prerequisites": [
+    "nouns-gender"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,30 +15,54 @@
       "explanation": "Hindi uses postpositions instead of prepositions. While English places words like 'in', 'on', and 'from' before a noun (prepositions), Hindi places them after the noun (postpositions). For example, 'in the house' is घर में (ghar mein) — literally 'house in'. When a postposition follows a noun, the noun must be in its oblique case form. This means masculine -ा nouns change to -े before a postposition: लड़का becomes लड़के in लड़के को (to the boy).",
       "tip": "Always remember: the noun comes first, the postposition comes after. And whenever a postposition is present, the noun shifts to its oblique form.",
       "examples": [
-        { "hi": "घर में", "en": "in the house — में (in) comes after घर (house)", "highlight": "में" },
-        { "hi": "मेज़ पर", "en": "on the table — पर (on) comes after मेज़ (table)", "highlight": "पर" },
-        { "hi": "लड़के को", "en": "to the boy — लड़का becomes oblique लड़के before को", "highlight": "को" }
+        {
+          "hi": "घर में",
+          "en": "in the house — में (in) comes after घर (house)",
+          "highlight": "में"
+        },
+        {
+          "hi": "मेज़ पर",
+          "en": "on the table — पर (on) comes after मेज़ (table)",
+          "highlight": "पर"
+        },
+        {
+          "hi": "लड़के को",
+          "en": "to the boy — लड़का becomes oblique लड़के before को",
+          "highlight": "को"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Where does a postposition appear relative to the noun?",
-          "options": ["After the noun", "Before the noun", "It can go either place"],
+          "options": [
+            "After the noun",
+            "Before the noun",
+            "It can go either place"
+          ],
           "correctIndex": 0,
           "explanation": "In Hindi, postpositions come after the noun — the opposite of English prepositions. So 'in the house' becomes घर में (house + in), not में घर."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'on the table' in Hindi?",
-          "options": ["मेज़ पर", "पर मेज़", "मेज़ में"],
-          "correctIndex": 0,
+          "options": [
+            "पर मेज़",
+            "मेज़ पर",
+            "मेज़ में"
+          ],
+          "correctIndex": 1,
           "explanation": "मेज़ पर (table + on) correctly places the postposition पर after the noun मेज़. Since मेज़ does not end in -ा, its oblique form is the same as the direct form."
         },
         {
           "type": "multiple-choice",
           "prompt": "What happens to लड़का (boy) when followed by a postposition?",
-          "options": ["It changes to लड़के (oblique form)", "It stays as लड़का", "It changes to लड़की"],
-          "correctIndex": 0,
+          "options": [
+            "It stays as लड़का",
+            "It changes to लड़की",
+            "It changes to लड़के (oblique form)"
+          ],
+          "correctIndex": 2,
           "explanation": "Masculine nouns ending in -ा change to -े in the oblique case (before a postposition). So लड़का becomes लड़के — for example: लड़के को (to the boy), लड़के में (in the boy)."
         }
       ]
@@ -47,31 +73,59 @@
       "explanation": "The most frequently used Hindi postpositions are: में (in/inside), पर (on/at), से (from/by/with), को (to/for, also marks definite objects), और का/के/की (of/possessive, agrees with gender and number of the possessed noun). These simple postpositions directly follow the noun in its oblique form. से is especially versatile: दिल्ली से means 'from Delhi', चाकू से means 'with a knife' (instrument), and दोस्त से means 'from/by a friend'.",
       "tip": "The postposition से has multiple meanings depending on context: 'from' (origin), 'with' (instrument), and 'by' (agent). Pay attention to context to determine which meaning applies.",
       "examples": [
-        { "hi": "कमरे में", "en": "in the room — कमरा becomes oblique कमरे before में", "highlight": "में" },
-        { "hi": "दिल्ली से", "en": "from Delhi — से marks origin or source", "highlight": "से" },
-        { "hi": "बच्चे को", "en": "to the child — को marks the indirect object or destination", "highlight": "को" },
-        { "hi": "छत पर", "en": "on the roof — पर indicates location on a surface", "highlight": "पर" }
+        {
+          "hi": "कमरे में",
+          "en": "in the room — कमरा becomes oblique कमरे before में",
+          "highlight": "में"
+        },
+        {
+          "hi": "दिल्ली से",
+          "en": "from Delhi — से marks origin or source",
+          "highlight": "से"
+        },
+        {
+          "hi": "बच्चे को",
+          "en": "to the child — को marks the indirect object or destination",
+          "highlight": "को"
+        },
+        {
+          "hi": "छत पर",
+          "en": "on the roof — पर indicates location on a surface",
+          "highlight": "पर"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which postposition means 'from' or 'with (an instrument)'?",
-          "options": ["से", "में", "पर"],
-          "correctIndex": 0,
+          "options": [
+            "में",
+            "पर",
+            "से"
+          ],
+          "correctIndex": 2,
           "explanation": "से is one of the most versatile Hindi postpositions. It can mean 'from' (दिल्ली से = from Delhi), 'with/by means of' (चाकू से = with a knife), or 'by' (an agent)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'in the room' if the word for room is कमरा?",
-          "options": ["कमरे में", "कमरा में", "में कमरा"],
-          "correctIndex": 0,
+          "options": [
+            "में कमरा",
+            "कमरे में",
+            "कमरा में"
+          ],
+          "correctIndex": 1,
           "explanation": "कमरा is a masculine noun ending in -ा, so it changes to कमरे (oblique form) before the postposition में. The correct phrase is कमरे में (in the room)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which postposition is used to indicate 'on' or 'at' a surface?",
-          "options": ["पर", "में", "को"],
-          "correctIndex": 0,
+          "options": [
+            "को",
+            "में",
+            "पर"
+          ],
+          "correctIndex": 2,
           "explanation": "पर means 'on' or 'at' and is used for surfaces and locations. For example: मेज़ पर (on the table), छत पर (on the roof), स्टेशन पर (at the station)."
         }
       ]
@@ -82,31 +136,59 @@
       "explanation": "Hindi also has compound postpositions, which consist of a simple postposition (usually के or की) followed by another word. These express more specific spatial and abstract relationships. Common compound postpositions include: के लिए (for/in order to), के बारे में (about), के साथ (with/together with), के पास (near/possessing), के बाद (after), से पहले (before), की तरफ़ (towards), and के अंदर (inside). The first part (के/की) agrees with the grammatical context, and the whole compound follows the noun in oblique form.",
       "tip": "Think of compound postpositions as two-word phrases. The के/की part connects to the noun, and the second word specifies the relationship. के लिए (for) and के साथ (with) are among the first you should memorize.",
       "examples": [
-        { "hi": "बच्चों के लिए", "en": "for the children — के लिए means 'for'", "highlight": "के लिए" },
-        { "hi": "इस के बारे में", "en": "about this — के बारे में means 'about'", "highlight": "के बारे में" },
-        { "hi": "दोस्त के साथ", "en": "with a friend — के साथ means 'with/together with'", "highlight": "के साथ" },
-        { "hi": "खाने के बाद", "en": "after eating — के बाद means 'after'", "highlight": "के बाद" }
+        {
+          "hi": "बच्चों के लिए",
+          "en": "for the children — के लिए means 'for'",
+          "highlight": "के लिए"
+        },
+        {
+          "hi": "इसके बारे में",
+          "en": "about this — के बारे में means 'about'",
+          "highlight": "के बारे में"
+        },
+        {
+          "hi": "दोस्त के साथ",
+          "en": "with a friend — के साथ means 'with/together with'",
+          "highlight": "के साथ"
+        },
+        {
+          "hi": "खाने के बाद",
+          "en": "after eating — के बाद means 'after'",
+          "highlight": "के बाद"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'for the children' in Hindi?",
-          "options": ["बच्चों के लिए", "बच्चों में", "बच्चों को लिए"],
+          "options": [
+            "बच्चों के लिए",
+            "बच्चों को लिए",
+            "बच्चों में"
+          ],
           "correctIndex": 0,
           "explanation": "के लिए is the compound postposition meaning 'for'. बच्चों is the oblique plural of बच्चा (child), so बच्चों के लिए means 'for the children'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which compound postposition means 'with' or 'together with'?",
-          "options": ["के साथ", "के लिए", "के बाद"],
-          "correctIndex": 0,
+          "options": [
+            "के बाद",
+            "के लिए",
+            "के साथ"
+          ],
+          "correctIndex": 2,
           "explanation": "के साथ means 'with' or 'together with'. For example: दोस्त के साथ (with a friend), परिवार के साथ (with family). It expresses companionship or accompaniment."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does के बारे में mean?",
-          "options": ["About", "After", "Near"],
-          "correctIndex": 0,
+          "options": [
+            "Near",
+            "About",
+            "After"
+          ],
+          "correctIndex": 1,
           "explanation": "के बारे में means 'about' or 'regarding'. For example: इस किताब के बारे में (about this book). It is one of the most common compound postpositions in everyday Hindi."
         }
       ]

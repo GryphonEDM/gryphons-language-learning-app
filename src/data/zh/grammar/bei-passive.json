@@ -4,7 +4,9 @@
   "nameZh": "被字句",
   "icon": "🔄",
   "tier": "B1",
-  "prerequisites": ["ba-construction"],
+  "prerequisites": [
+    "ba-construction"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,34 +15,59 @@
       "explanation": "The 被 (bèi) construction is the main way to form passive sentences in Chinese. The basic pattern is: Subject + 被 + (Agent) + Verb + Complement. The agent (the person or thing performing the action) can be included or omitted. When included: 我的手机被弟弟摔坏了 (My phone was broken by my younger brother). When omitted: 我的手机被摔坏了 (My phone was broken). The verb in a 被 sentence almost always needs a complement — a result complement, directional complement, or 了. You cannot say 蛋糕被吃 alone; you need 蛋糕被吃了 or 蛋糕被吃完了. This is because 被 sentences describe something that happened to the subject with a result, not just an action in the abstract.",
       "tip": "Think of the complement requirement as the 'so what' rule: a 被 sentence must tell you the outcome. 书被撕了 (The book was torn) works because 了 signals the action is complete. 书被撕破了 (The book was torn apart) is even more natural because 破 specifies the result.",
       "examples": [
-        { "zh": "蛋糕被吃完了。", "pinyin": "Dàngāo bèi chī wán le.", "en": "The cake was all eaten up.", "highlight": "被" },
-        { "zh": "我的车被偷了。", "pinyin": "Wǒ de chē bèi tōu le.", "en": "My car was stolen.", "highlight": "被" },
-        { "zh": "那本书被老师拿走了。", "pinyin": "Nà běn shū bèi lǎoshī ná zǒu le.", "en": "That book was taken away by the teacher.", "highlight": "被老师" },
-        { "zh": "窗户被风吹开了。", "pinyin": "Chuānghù bèi fēng chuī kāi le.", "en": "The window was blown open by the wind.", "highlight": "被风" }
+        {
+          "zh": "蛋糕被吃完了。",
+          "pinyin": "Dàngāo bèi chī wán le.",
+          "en": "The cake was all eaten up.",
+          "highlight": "被"
+        },
+        {
+          "zh": "我的车被偷了。",
+          "pinyin": "Wǒ de chē bèi tōu le.",
+          "en": "My car was stolen.",
+          "highlight": "被"
+        },
+        {
+          "zh": "那本书被老师拿走了。",
+          "pinyin": "Nà běn shū bèi lǎoshī ná zǒu le.",
+          "en": "That book was taken away by the teacher.",
+          "highlight": "被老师"
+        },
+        {
+          "zh": "窗户被风吹开了。",
+          "pinyin": "Chuānghù bèi fēng chuī kāi le.",
+          "en": "The window was blown open by the wind.",
+          "highlight": "被风"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "我的钱包___偷了。(My wallet was stolen.)",
-          "acceptedAnswers": ["被"],
+          "acceptedAnswers": [
+            "被"
+          ],
           "hint": "Use the passive marker between the subject and the verb."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses the 被 construction?",
           "options": [
-            "苹果被吃。",
-            "苹果被吃完了。",
+            "苹果吃被完了。",
             "被苹果吃完了。",
-            "苹果吃被完了。"
+            "苹果被吃完了。",
+            "苹果被吃。"
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "苹果被吃完了 is correct. The verb in a 被 sentence needs a complement (here 完 + 了). 苹果被吃 is incomplete without a complement."
         },
         {
           "type": "fill-blank",
           "prompt": "杯子被他打___了。(The cup was broken by him.)",
-          "acceptedAnswers": ["碎", "破"],
+          "acceptedAnswers": [
+            "碎",
+            "破"
+          ],
           "hint": "Add a result complement that means 'shattered' or 'broken' after the verb 打."
         }
       ]
@@ -51,10 +78,30 @@
       "explanation": "Traditionally, 被 carries a negative or undesirable connotation. It implies that something unfortunate, unwanted, or unpleasant happened to the subject. 他被骂了 (He was scolded), 房子被拆了 (The house was demolished), 她被骗了 (She was deceived) — all describe events the subject would rather have avoided. This is a key difference from English, where passive voice is neutral. In Chinese, saying 他被表扬了 (He was praised) sounds slightly unusual in traditional grammar because praise is positive. However, modern Mandarin — especially in news, formal writing, and younger speakers' usage — has significantly relaxed this rule. 他被选为班长 (He was elected class president) and 她被录取了 (She was admitted) are now perfectly natural. Still, in everyday speech, if nothing bad happened, Chinese speakers often prefer active constructions or use 是...的 instead of 被.",
       "tip": "When in doubt about whether to use 被, ask: would the subject be unhappy about this? If yes, 被 is natural. If the event is positive, 被 still works in formal or news contexts, but in casual speech an active sentence may sound more natural.",
       "examples": [
-        { "zh": "小猫被车撞了。", "pinyin": "Xiǎo māo bèi chē zhuàng le.", "en": "The kitten was hit by a car.", "highlight": "被" },
-        { "zh": "他被公司开除了。", "pinyin": "Tā bèi gōngsī kāichú le.", "en": "He was fired by the company.", "highlight": "被" },
-        { "zh": "她被录取了。", "pinyin": "Tā bèi lùqǔ le.", "en": "She was admitted. (modern neutral usage)", "highlight": "被" },
-        { "zh": "那个计划被取消了。", "pinyin": "Nàge jìhuà bèi qǔxiāo le.", "en": "That plan was cancelled.", "highlight": "被" }
+        {
+          "zh": "小猫被车撞了。",
+          "pinyin": "Xiǎo māo bèi chē zhuàng le.",
+          "en": "The kitten was hit by a car.",
+          "highlight": "被"
+        },
+        {
+          "zh": "他被公司开除了。",
+          "pinyin": "Tā bèi gōngsī kāichú le.",
+          "en": "He was fired by the company.",
+          "highlight": "被"
+        },
+        {
+          "zh": "她被录取了。",
+          "pinyin": "Tā bèi lùqǔ le.",
+          "en": "She was admitted. (modern neutral usage)",
+          "highlight": "被"
+        },
+        {
+          "zh": "那个计划被取消了。",
+          "pinyin": "Nàge jìhuà bèi qǔxiāo le.",
+          "en": "That plan was cancelled.",
+          "highlight": "被"
+        }
       ],
       "exercises": [
         {
@@ -62,27 +109,29 @@
           "prompt": "In traditional usage, which sentence sounds most natural with 被?",
           "options": [
             "他被朋友夸了。(He was complimented by friends.)",
+            "他被升职了。(He was promoted.)",
             "钱被小偷偷走了。(The money was stolen by a thief.)",
-            "她被邀请参加了派对。(She was invited to the party.)",
-            "他被升职了。(He was promoted.)"
+            "她被邀请参加了派对。(She was invited to the party.)"
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "被 traditionally implies something negative happened to the subject. Having money stolen is clearly undesirable, making 被 the most natural fit. The other sentences describe positive events, which are acceptable in modern usage but less traditional."
         },
         {
           "type": "fill-blank",
           "prompt": "她的手机___摔坏了。(Her phone was dropped and broken.)",
-          "acceptedAnswers": ["被"],
+          "acceptedAnswers": [
+            "被"
+          ],
           "hint": "Breaking a phone is undesirable — use the passive marker."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why does modern Mandarin increasingly use 被 for neutral or positive events?",
           "options": [
-            "Because 被 has completely lost its negative meaning.",
+            "Because 把 now handles all negative meanings instead.",
             "Because of influence from English and formal writing styles.",
-            "Because active voice is no longer grammatical in Chinese.",
-            "Because 把 now handles all negative meanings instead."
+            "Because 被 has completely lost its negative meaning.",
+            "Because active voice is no longer grammatical in Chinese."
           ],
           "correctIndex": 1,
           "explanation": "Influence from translated texts, news writing, and English has expanded 被 beyond its traditionally negative scope. It hasn't fully lost its negative flavor — many speakers still feel it — but formal and media contexts now use it neutrally."
@@ -95,28 +144,50 @@
       "explanation": "Chinese strongly prefers active voice in everyday speech. Passive 被 sentences are used only when there is a reason to foreground the patient (the thing affected) rather than the agent. Common reasons include: (1) the agent is unknown — 我的自行车被偷了 (My bike was stolen — I don't know by whom); (2) the agent is obvious or unimportant — 饭被吃完了 (The food has been eaten up); (3) emphasis on the result or impact on the subject — 他被打伤了 (He was beaten and injured). Compare 被 with 把: both rearrange the usual subject-verb-object order, but in opposite directions. 把 keeps the agent as subject and moves the object forward: 他把杯子打破了 (He broke the cup). 被 makes the patient the subject: 杯子被他打破了 (The cup was broken by him). Use 把 when focusing on what the agent did to something; use 被 when focusing on what happened to the patient.",
       "tip": "If you can say a sentence naturally in active voice, do so. Reserve 被 for when the subject is clearly the receiver of the action, especially when the doer is unknown. Overusing 被 is one of the most common mistakes for English speakers learning Chinese.",
       "examples": [
-        { "zh": "我的自行车被偷了。", "pinyin": "Wǒ de zìxíngchē bèi tōu le.", "en": "My bike was stolen. (agent unknown)", "highlight": "被" },
-        { "zh": "他把杯子打破了。", "pinyin": "Tā bǎ bēizi dǎ pò le.", "en": "He broke the cup. (把 — agent focus)", "highlight": "把" },
-        { "zh": "杯子被他打破了。", "pinyin": "Bēizi bèi tā dǎ pò le.", "en": "The cup was broken by him. (被 — patient focus)", "highlight": "被" },
-        { "zh": "信已经被寄出去了。", "pinyin": "Xìn yǐjīng bèi jì chūqù le.", "en": "The letter has already been sent out.", "highlight": "被" }
+        {
+          "zh": "我的自行车被偷了。",
+          "pinyin": "Wǒ de zìxíngchē bèi tōu le.",
+          "en": "My bike was stolen. (agent unknown)",
+          "highlight": "被"
+        },
+        {
+          "zh": "他把杯子打破了。",
+          "pinyin": "Tā bǎ bēizi dǎ pò le.",
+          "en": "He broke the cup. (把 — agent focus)",
+          "highlight": "把"
+        },
+        {
+          "zh": "杯子被他打破了。",
+          "pinyin": "Bēizi bèi tā dǎ pò le.",
+          "en": "The cup was broken by him. (被 — patient focus)",
+          "highlight": "被"
+        },
+        {
+          "zh": "信已经被寄出去了。",
+          "pinyin": "Xìn yǐjīng bèi jì chūqù le.",
+          "en": "The letter has already been sent out.",
+          "highlight": "被"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Rewrite '有人吃了我的三明治' (Someone ate my sandwich) to emphasize what happened to the sandwich.",
           "options": [
-            "我把三明治吃了。",
             "三明治被吃了。",
-            "三明治吃被了。",
-            "有人被吃三明治了。"
+            "我把三明治吃了。",
+            "有人被吃三明治了。",
+            "三明治吃被了。"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "三明治被吃了 makes the sandwich the subject and uses 被 to show it was affected. The agent is omitted because 'someone' is vague and unimportant."
         },
         {
           "type": "fill-blank",
           "prompt": "他___妈妈骂了一顿。(He was scolded by his mom.)",
-          "acceptedAnswers": ["被"],
+          "acceptedAnswers": [
+            "被"
+          ],
           "hint": "The subject (他) is the receiver of the scolding. Use the passive marker."
         },
         {
@@ -125,8 +196,8 @@
           "options": [
             "他把门关了。/ 门被关了。",
             "他被门关了。/ 门把关了。",
-            "把他关了门。/ 被门关了他。",
-            "关了他把门。/ 关了门被他。"
+            "关了他把门。/ 关了门被他。",
+            "把他关了门。/ 被门关了他。"
           ],
           "correctIndex": 0,
           "explanation": "他把门关了 (He closed the door — 把 focuses on the agent acting on the object) and 门被关了 (The door was closed — 被 focuses on what happened to the door) are the correct pair."
@@ -139,10 +210,30 @@
       "explanation": "In the late 2000s, Chinese internet culture created a satirical use of 被 to describe events where someone is officially reported to have done something voluntarily, but the public suspects coercion or falsehood. The most famous example is 被自杀 (bèi zìshā, literally 'was suicided') — implying someone's death was ruled a suicide but was actually suspicious. Other examples include 被就业 (bèi jiùyè, 'was employed' — a graduate's employment was reported by the school without their knowledge) and 被自愿 (bèi zìyuàn, 'was volunteered'). This sarcastic 被 has become a recognizable rhetorical device. In formal and literary Chinese, the pattern 被...所... adds emphasis or a literary tone: 他被这个消息所震惊 (He was shocked by this news). Here 所 is a classical particle that intensifies the passive. Another formal variant uses 为...所...: 他为她的美丽所吸引 (He was attracted by her beauty). These patterns appear in news, essays, and speeches but rarely in casual conversation.",
       "tip": "The internet 被 is always ironic — it flags a contradiction between the official story and reality. In formal writing, 被...所... and 为...所... elevate the register; use them in essays or presentations, not in texting friends.",
       "examples": [
-        { "zh": "他被自杀了。", "pinyin": "Tā bèi zìshā le.", "en": "He 'was suicided.' (internet irony: death ruled suicide but suspected otherwise)", "highlight": "被自杀" },
-        { "zh": "我们被自愿加班了。", "pinyin": "Wǒmen bèi zìyuàn jiābān le.", "en": "We 'volunteered' to work overtime. (sarcasm: forced but called voluntary)", "highlight": "被自愿" },
-        { "zh": "他被这个消息所震惊。", "pinyin": "Tā bèi zhège xiāoxī suǒ zhènjīng.", "en": "He was shocked by this news. (formal 被...所...)", "highlight": "被...所" },
-        { "zh": "这座城市为世人所瞩目。", "pinyin": "Zhè zuò chéngshì wéi shìrén suǒ zhǔmù.", "en": "This city is admired by the world. (literary 为...所...)", "highlight": "为...所" }
+        {
+          "zh": "他被自杀了。",
+          "pinyin": "Tā bèi zìshā le.",
+          "en": "He 'was suicided.' (internet irony: death ruled suicide but suspected otherwise)",
+          "highlight": "被自杀"
+        },
+        {
+          "zh": "我们被自愿加班了。",
+          "pinyin": "Wǒmen bèi zìyuàn jiābān le.",
+          "en": "We 'volunteered' to work overtime. (sarcasm: forced but called voluntary)",
+          "highlight": "被自愿"
+        },
+        {
+          "zh": "他被这个消息所震惊。",
+          "pinyin": "Tā bèi zhège xiāoxī suǒ zhènjīng.",
+          "en": "He was shocked by this news. (formal 被...所...)",
+          "highlight": "被...所"
+        },
+        {
+          "zh": "这座城市为世人所瞩目。",
+          "pinyin": "Zhè zuò chéngshì wéi shìrén suǒ zhǔmù.",
+          "en": "This city is admired by the world. (literary 为...所...)",
+          "highlight": "为...所"
+        }
       ],
       "exercises": [
         {
@@ -150,29 +241,35 @@
           "prompt": "What does 被就业 (bèi jiùyè) most likely mean in internet slang?",
           "options": [
             "Someone happily found a job.",
+            "Someone helped others find employment.",
             "Someone was officially counted as employed without their knowledge or consent.",
-            "Someone was fired from their job.",
-            "Someone helped others find employment."
+            "Someone was fired from their job."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "Internet 被 + normally-voluntary-action implies the person was reported as having done something voluntarily, but it actually happened without their consent. 被就业 means being counted as 'employed' in statistics without actually having a job."
         },
         {
-          "type": "fill-blank",
-          "prompt": "全世界都___这个发现___震惊。(The whole world was shocked by this discovery.) — Use the formal 被...所... pattern.",
-          "acceptedAnswers": ["被 所", "被...所"],
-          "hint": "Fill in the two-part formal passive: 被 before the agent/cause and 所 before the verb."
+          "type": "multiple-choice",
+          "prompt": "全世界都___这个发现___震惊。(The whole world was shocked by this discovery.) Choose the correct pair to fill both blanks.",
+          "options": [
+            "被...所",
+            "把...所",
+            "被...得",
+            "让...所"
+          ],
+          "correctIndex": 0,
+          "explanation": "The formal passive pattern 被...所... is used here: 全世界都被这个发现所震惊. 被 marks the passive and 所 adds literary emphasis before the verb."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which register is 为...所... most appropriate for?",
           "options": [
-            "Texting a friend.",
+            "Chatting with coworkers at lunch.",
             "Ordering food at a restaurant.",
-            "A newspaper editorial or formal speech.",
-            "Chatting with coworkers at lunch."
+            "Texting a friend.",
+            "A newspaper editorial or formal speech."
           ],
-          "correctIndex": 2,
+          "correctIndex": 3,
           "explanation": "为...所... is a literary/classical passive pattern. It appears in formal writing such as editorials, academic papers, and speeches, not in everyday conversation."
         }
       ]

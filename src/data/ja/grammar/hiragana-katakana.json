@@ -13,31 +13,59 @@
       "explanation": "Hiragana is the foundational Japanese writing system, consisting of 46 basic characters. Each character represents a syllable (mora) — most are consonant-vowel pairs like か (ka), し (shi), つ (tsu), with five pure vowels あ (a), い (i), う (u), え (e), お (o). Hiragana is used for native Japanese words, grammatical particles, verb endings (okurigana), and any word not typically written in kanji. The characters are organized in a grid called the gojūon (fifty sounds) table, arranged by consonant row (あ, か, さ, た, な, は, ま, や, ら, わ) and vowel column (a, i, u, e, o). Dakuten (゛) and handakuten (゜) modify consonants: か→が (ka→ga), は→ば→ぱ (ha→ba→pa). Small characters like っ (double consonant), ゃ, ゅ, ょ (combination sounds) extend the system further.",
       "tip": "Learn the five vowels あいうえお first — every hiragana character builds on these vowel sounds. Practice writing each row (あ-row, か-row, etc.) repeatedly. The stroke order matters for legibility and muscle memory.",
       "examples": [
-        { "ja": "あいうえお", "en": "a i u e o — the five vowels, the foundation of all hiragana", "highlight": "あいうえお" },
-        { "ja": "かきくけこ", "en": "ka ki ku ke ko — the k-row, the first consonant row", "highlight": "か" },
-        { "ja": "がぎぐげご", "en": "ga gi gu ge go — dakuten (゛) turns k-sounds into g-sounds", "highlight": "が" },
-        { "ja": "ぱぴぷぺぽ", "en": "pa pi pu pe po — handakuten (゜) turns h-sounds into p-sounds", "highlight": "ぱ" }
+        {
+          "ja": "あいうえお",
+          "en": "a i u e o — the five vowels, the foundation of all hiragana",
+          "highlight": "あいうえお"
+        },
+        {
+          "ja": "かきくけこ",
+          "en": "ka ki ku ke ko — the k-row, the first consonant row",
+          "highlight": "か"
+        },
+        {
+          "ja": "がぎぐげご",
+          "en": "ga gi gu ge go — dakuten (゛) turns k-sounds into g-sounds",
+          "highlight": "が"
+        },
+        {
+          "ja": "ぱぴぷぺぽ",
+          "en": "pa pi pu pe po — handakuten (゜) turns h-sounds into p-sounds",
+          "highlight": "ぱ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How many basic hiragana characters are there?",
-          "options": ["46", "26", "71"],
+          "options": [
+            "46",
+            "26",
+            "71"
+          ],
           "correctIndex": 0,
           "explanation": "There are 46 basic hiragana characters in the modern Japanese writing system (including the obsolete ゐ and ゑ would make 48, but they are no longer used)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does adding dakuten (゛) to か (ka) produce?",
-          "options": ["が (ga)", "ぱ (pa)", "ざ (za)"],
-          "correctIndex": 0,
+          "options": [
+            "ざ (za)",
+            "ぱ (pa)",
+            "が (ga)"
+          ],
+          "correctIndex": 2,
           "explanation": "Dakuten (゛) voices the consonant: か (ka) becomes が (ga). This pattern applies across rows: さ→ざ, た→だ, は→ば."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is hiragana primarily used for?",
-          "options": ["Native Japanese words, particles, and verb endings", "Foreign loanwords", "Chinese-origin words only"],
-          "correctIndex": 0,
+          "options": [
+            "Chinese-origin words only",
+            "Native Japanese words, particles, and verb endings",
+            "Foreign loanwords"
+          ],
+          "correctIndex": 1,
           "explanation": "Hiragana is used for native Japanese words, grammatical particles (は, を, に), verb/adjective endings (okurigana), and words not commonly written in kanji. Foreign loanwords use katakana."
         }
       ]
@@ -48,31 +76,59 @@
       "explanation": "Katakana is the second Japanese syllabary, also containing 46 basic characters. Each katakana character corresponds to a hiragana character with the same pronunciation: あ→ア, か→カ, さ→サ. Katakana characters tend to have sharper, more angular strokes compared to hiragana's rounded forms. Katakana is used for: foreign loanwords (コーヒー, kōhī, coffee), foreign names (マイケル, Maikeru, Michael), onomatopoeia (ドキドキ, dokidoki, heartbeat sound), scientific/technical terms, and emphasis (similar to italics in English). Katakana also uses dakuten and handakuten the same way as hiragana: カ→ガ (ka→ga), ハ→バ→パ (ha→ba→pa). Extended katakana with small vowels handle sounds not native to Japanese: ティ (ti), ファ (fa), ヴィ (vi).",
       "tip": "Learn katakana alongside its hiragana counterpart — memorize them as pairs: あ/ア, か/カ, さ/サ. Some katakana look similar and are easily confused: シ (shi) vs ツ (tsu), ソ (so) vs ン (n). Pay attention to stroke direction: シ has horizontal-ish strokes, ツ has vertical-ish strokes.",
       "examples": [
-        { "ja": "アイウエオ", "en": "a i u e o — the five katakana vowels", "highlight": "アイウエオ" },
-        { "ja": "コーヒー", "en": "kōhī — coffee (a common loanword from Dutch/English)", "highlight": "コーヒー" },
-        { "ja": "テレビ", "en": "terebi — television (from English 'television')", "highlight": "テレビ" },
-        { "ja": "ドキドキ", "en": "dokidoki — the sound of a racing heartbeat (onomatopoeia)", "highlight": "ドキドキ" }
+        {
+          "ja": "アイウエオ",
+          "en": "a i u e o — the five katakana vowels",
+          "highlight": "アイウエオ"
+        },
+        {
+          "ja": "コーヒー",
+          "en": "kōhī — coffee (a common loanword from Dutch/English)",
+          "highlight": "コーヒー"
+        },
+        {
+          "ja": "テレビ",
+          "en": "terebi — television (from English 'television')",
+          "highlight": "テレビ"
+        },
+        {
+          "ja": "ドキドキ",
+          "en": "dokidoki — the sound of a racing heartbeat (onomatopoeia)",
+          "highlight": "ドキドキ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which of these is a correct use of katakana?",
-          "options": ["Writing a foreign loanword like コンピュータ (computer)", "Writing the particle は (wa)", "Writing native verbs like たべる (to eat)"],
-          "correctIndex": 0,
+          "options": [
+            "Writing native verbs like たべる (to eat)",
+            "Writing the particle は (wa)",
+            "Writing a foreign loanword like コンピュータ (computer)"
+          ],
+          "correctIndex": 2,
           "explanation": "Katakana is used for foreign loanwords. Particles and native verbs are written in hiragana. コンピュータ (konpyūta) comes from English 'computer'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which two katakana characters are commonly confused?",
-          "options": ["シ (shi) and ツ (tsu)", "ア (a) and カ (ka)", "ナ (na) and ニ (ni)"],
+          "options": [
+            "シ (shi) and ツ (tsu)",
+            "ア (a) and カ (ka)",
+            "ナ (na) and ニ (ni)"
+          ],
           "correctIndex": 0,
           "explanation": "シ (shi) and ツ (tsu) look very similar. The key difference is stroke direction: シ has strokes that sweep more horizontally, while ツ has strokes that sweep more vertically."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does the long vowel mark ー do in katakana?",
-          "options": ["It extends the previous vowel sound", "It indicates a pause", "It separates words"],
-          "correctIndex": 0,
+          "options": [
+            "It indicates a pause",
+            "It extends the previous vowel sound",
+            "It separates words"
+          ],
+          "correctIndex": 1,
           "explanation": "The chōon mark ー extends the preceding vowel. For example, コーヒー (kōhī) has two long vowels. This mark is used almost exclusively in katakana; hiragana spells out long vowels with additional vowel characters instead."
         }
       ]
@@ -83,31 +139,59 @@
       "explanation": "Reading Japanese requires recognizing hiragana and katakana quickly and knowing when each is used. In a typical Japanese sentence, you will see hiragana, katakana, and kanji mixed together. For example: 私はコーヒーを飲みます (Watashi wa kōhī o nomimasu — I drink coffee). Here, 私 (watashi) is kanji, は (wa) and を (o) are hiragana particles, コーヒー (kōhī) is a katakana loanword, and 飲みます (nomimasu) mixes kanji with hiragana okurigana. Small kana like ゃ, ゅ, ょ create combination sounds: きゃ (kya), しゅ (shu), ちょ (cho). The small っ/ッ doubles the following consonant: きっぷ (kippu, ticket), ベッド (beddo, bed). Long vowels in hiragana: おかあさん (okaasan — the extra あ lengthens the 'a').",
       "tip": "Practice reading words aloud. For small っ, pause briefly before the next consonant — it creates a glottal stop. For combination kana like きょ, treat them as a single syllable (kyo), not two (ki-yo).",
       "examples": [
-        { "ja": "きょう", "en": "kyō — today (きょ is one syllable 'kyo', う extends the vowel)", "highlight": "きょ" },
-        { "ja": "がっこう", "en": "gakkō — school (っ doubles the k, う extends the o)", "highlight": "っ" },
-        { "ja": "チョコレート", "en": "chokorēto — chocolate (katakana loanword)", "highlight": "チョコレート" },
-        { "ja": "おかあさん", "en": "okaasan — mother (the extra あ makes a long 'a' sound)", "highlight": "あ" }
+        {
+          "ja": "きょう",
+          "en": "kyō — today (きょ is one syllable 'kyo', う extends the vowel)",
+          "highlight": "きょ"
+        },
+        {
+          "ja": "がっこう",
+          "en": "gakkō — school (っ doubles the k, う extends the o)",
+          "highlight": "っ"
+        },
+        {
+          "ja": "チョコレート",
+          "en": "chokorēto — chocolate (katakana loanword)",
+          "highlight": "チョコレート"
+        },
+        {
+          "ja": "おかあさん",
+          "en": "okaasan — mother (the extra あ makes a long 'a' sound)",
+          "highlight": "あ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How is きょう (today) pronounced?",
-          "options": ["kyō (one syllable kyo + long o)", "ki-yo-u (three syllables)", "ki-you (two syllables)"],
+          "options": [
+            "kyō (one syllable kyo + long o)",
+            "ki-you (two syllables)",
+            "ki-yo-u (three syllables)"
+          ],
           "correctIndex": 0,
           "explanation": "Small ょ combines with き to form one syllable きょ (kyo). The う extends the 'o' vowel, making it きょう (kyō). It is two morae: kyo-o."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does the small っ in きっぷ indicate?",
-          "options": ["The following consonant (p) is doubled: kippu", "The vowel is silent", "It is pronounced as 'tsu'"],
-          "correctIndex": 0,
+          "options": [
+            "It is pronounced as 'tsu'",
+            "The vowel is silent",
+            "The following consonant (p) is doubled: kippu"
+          ],
+          "correctIndex": 2,
           "explanation": "Small っ (sokuon) doubles the consonant that follows it. きっぷ is pronounced 'kippu' with a brief pause/tension before the 'p' sound. It is NOT pronounced as 'tsu'."
         },
         {
           "type": "multiple-choice",
           "prompt": "In the sentence 私はパンを食べます, which part is katakana?",
-          "options": ["パン (pan — bread)", "私 (watashi — I)", "食べます (tabemasu — eat)"],
-          "correctIndex": 0,
+          "options": [
+            "食べます (tabemasu — eat)",
+            "私 (watashi — I)",
+            "パン (pan — bread)"
+          ],
+          "correctIndex": 2,
           "explanation": "パン (pan, bread — from Portuguese 'pão') is written in katakana because it is a foreign loanword. 私 is kanji, and 食べます uses kanji + hiragana."
         }
       ]
@@ -118,31 +202,59 @@
       "explanation": "Japanese uses three writing systems simultaneously: hiragana, katakana, and kanji. Hiragana (ひらがな) is the default script for native words, grammar, and function words. It has rounded, flowing strokes. Katakana (カタカナ) is used for foreign words, onomatopoeia, and emphasis. It has angular, sharp strokes. Kanji (漢字) are Chinese-origin characters that represent meanings and are used for content words (nouns, verb stems, adjective stems). Each kanji typically has multiple readings: on'yomi (Chinese-derived reading, often used in compounds) and kun'yomi (native Japanese reading, often used when the kanji stands alone). For example, 山 has on'yomi 'san' (as in 富士山 Fujisan, Mt. Fuji) and kun'yomi 'yama' (as in 山 yama, mountain). Romaji (ローマ字) — the Latin alphabet — is also used in modern Japan for acronyms, brand names, and input methods.",
       "tip": "Do not try to learn all three systems at once. Master hiragana first (1-2 weeks of daily practice), then katakana (another 1-2 weeks), then begin kanji gradually. You can read and write grammatically correct Japanese with hiragana alone while you build up kanji knowledge.",
       "examples": [
-        { "ja": "やま", "en": "yama — mountain (written in hiragana)", "highlight": "やま" },
-        { "ja": "山", "en": "yama — mountain (the same word written in kanji)", "highlight": "山" },
-        { "ja": "レストラン", "en": "resutoran — restaurant (katakana for foreign loanword)", "highlight": "レストラン" },
-        { "ja": "食べる", "en": "taberu — to eat (kanji 食 + hiragana べる for the verb ending)", "highlight": "べる" }
+        {
+          "ja": "やま",
+          "en": "yama — mountain (written in hiragana)",
+          "highlight": "やま"
+        },
+        {
+          "ja": "山",
+          "en": "yama — mountain (the same word written in kanji)",
+          "highlight": "山"
+        },
+        {
+          "ja": "レストラン",
+          "en": "resutoran — restaurant (katakana for foreign loanword)",
+          "highlight": "レストラン"
+        },
+        {
+          "ja": "食べる",
+          "en": "taberu — to eat (kanji 食 + hiragana べる for the verb ending)",
+          "highlight": "べる"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which writing system is used for grammatical particles like は and を?",
-          "options": ["Hiragana", "Katakana", "Kanji"],
-          "correctIndex": 0,
+          "options": [
+            "Katakana",
+            "Hiragana",
+            "Kanji"
+          ],
+          "correctIndex": 1,
           "explanation": "Grammatical particles (は, を, に, が, で, etc.) are always written in hiragana. They are function words that show the grammatical role of words in a sentence."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why does 食べる use both kanji and hiragana?",
-          "options": ["The kanji 食 carries the meaning, while べる is the verb conjugation ending (okurigana)", "It is a stylistic choice with no rule", "The hiragana part is a particle"],
+          "options": [
+            "The kanji 食 carries the meaning, while べる is the verb conjugation ending (okurigana)",
+            "The hiragana part is a particle",
+            "It is a stylistic choice with no rule"
+          ],
           "correctIndex": 0,
           "explanation": "In Japanese verbs and adjectives, the stem meaning is written in kanji (食 = eat) and the conjugating ending is written in hiragana (べる). This hiragana ending is called okurigana, and it changes with tense and form: 食べる→食べた→食べない."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which writing system would you use to write the English name 'John'?",
-          "options": ["Katakana: ジョン", "Hiragana: じょん", "Kanji"],
-          "correctIndex": 0,
+          "options": [
+            "Kanji",
+            "Katakana: ジョン",
+            "Hiragana: じょん"
+          ],
+          "correctIndex": 1,
           "explanation": "Foreign names are written in katakana. 'John' becomes ジョン (jon). Hiragana is reserved for native Japanese words and grammar. Kanji is not used for foreign names (though Chinese names may use their original kanji)."
         }
       ]

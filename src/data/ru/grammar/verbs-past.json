@@ -4,7 +4,9 @@
   "nameRu": "Прошедшее время",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["verbs-present"],
+  "prerequisites": [
+    "verbs-present"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,32 +15,169 @@
       "explanation": "Unlike many European languages, Russian past tense is based on gender, not person. Remove the -ть from the infinitive and add: masculine -л, feminine -ла, neuter -ло, plural -ли. The same form is used for all persons: я/ты/он читал, я/ты/она читала.",
       "tip": "он -л | она -ла | оно -ло | они -ли",
       "examples": [
-        { "ru": "Он читал книгу.", "en": "He was reading a book.", "highlight": "читал" },
-        { "ru": "Она работала вчера.", "en": "She worked yesterday.", "highlight": "работала" },
-        { "ru": "Оно светило ярко.", "en": "It shone brightly.", "highlight": "светило" }
+        {
+          "ru": "Он читал книгу.",
+          "en": "He was reading a book.",
+          "highlight": "читал"
+        },
+        {
+          "ru": "Она работала вчера.",
+          "en": "She worked yesterday.",
+          "highlight": "работала"
+        },
+        {
+          "ru": "Оно светило ярко.",
+          "en": "It shone brightly.",
+          "highlight": "светило"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Она ___ письмо. (писать — to write)", "options": ["писала", "писал", "писало"], "correctIndex": 0, "explanation": "Она (she) requires the feminine past tense form: писать → писала (-ла)." },
-        { "type": "fill-blank", "prompt": "Он ___ кофе. (пить — to drink)", "acceptedAnswers": ["пил"], "hint": "Masculine: drop -ть, add -л", "explanation": "Пить → пил. Drop -ть, the stem is пи-, add -л for masculine." },
-        { "type": "fill-blank", "prompt": "Мы ___ вместе. (работать — to work)", "acceptedAnswers": ["работали"], "hint": "Plural always ends in -ли", "explanation": "Мы (we) is plural, so работать → работали (-ли)." },
-        { "type": "transformation", "prompt": "Form the feminine past tense: 'Она ___ по телефону.' (говорить)", "acceptedAnswers": ["говорила"], "hint": "Drop -ть, add -ла", "explanation": "Говорить → говорила. For feminine subjects, the past tense ends in -ла." },
-        { "type": "error-correction", "prompt": "Find and fix the error: 'Она читал газету.'", "incorrectText": "Она читал газету.", "correctedText": "Она читала газету.", "acceptedAnswers": ["Она читала газету.", "Она читала газету"], "explanation": "Она is feminine, so the verb must be читала, not читал (masculine)." },
-        { "type": "matching", "prompt": "Match the subject to the correct past tense form of 'делать' (to do):", "pairs": [
-          { "left": "он", "right": "делал" },
-          { "left": "она", "right": "делала" },
-          { "left": "оно", "right": "делало" },
-          { "left": "они", "right": "делали" },
-          { "left": "мы", "right": "делали" }
-        ], "explanation": "Past tense depends on gender/number: он -л, она -ла, оно -ло, они/мы -ли." },
-        { "type": "multiple-choice", "prompt": "Солнце ___ ярко. (сиять — to shine)", "options": ["сияло", "сиял", "сияла"], "correctIndex": 0, "explanation": "Солнце (sun) is neuter, so the past tense is сияло (-ло)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She sang a song yesterday.", "words": ["Она", "вчера", "пела", "песню"], "correctOrder": ["Она", "вчера", "пела", "песню"], "explanation": "Она requires the feminine form пела. Word order in Russian is flexible." },
-        { "type": "table-fill", "prompt": "Complete the past tense forms of 'жить' (to live):", "headers": ["Subject", "Past Tense"], "rows": [
-          { "label": "он", "answer": "жил", "prefilled": false },
-          { "label": "она", "answer": "жила", "prefilled": false },
-          { "label": "оно", "answer": "жило", "prefilled": false },
-          { "label": "они", "answer": "жили", "prefilled": false }
-        ], "explanation": "Жить → жил (m), жила (f), жило (n), жили (pl). The stem is жи-, then add the gender ending." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Дети гуляли в парке.", "acceptedAnswers": ["Дети гуляли в парке.", "Дети гуляли в парке"], "explanation": "Дети (children) is plural, so the past tense is гуляли (-ли)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Она ___ письмо. (писать — to write)",
+          "options": [
+            "писал",
+            "писала",
+            "писало"
+          ],
+          "correctIndex": 1,
+          "explanation": "Она (she) requires the feminine past tense form: писать → писала (-ла)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он ___ кофе. (пить — to drink)",
+          "acceptedAnswers": [
+            "пил"
+          ],
+          "hint": "Masculine: drop -ть, add -л",
+          "explanation": "Пить → пил. Drop -ть, the stem is пи-, add -л for masculine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы ___ вместе. (работать — to work)",
+          "acceptedAnswers": [
+            "работали"
+          ],
+          "hint": "Plural always ends in -ли",
+          "explanation": "Мы (we) is plural, so работать → работали (-ли)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the feminine past tense: 'Она ___ по телефону.' (говорить)",
+          "acceptedAnswers": [
+            "говорила"
+          ],
+          "hint": "Drop -ть, add -ла",
+          "explanation": "Говорить → говорила. For feminine subjects, the past tense ends in -ла."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Она читал газету.'",
+          "incorrectText": "Она читал газету.",
+          "correctedText": "Она читала газету.",
+          "acceptedAnswers": [
+            "Она читала газету.",
+            "Она читала газету"
+          ],
+          "explanation": "Она is feminine, so the verb must be читала, not читал (masculine)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the subject to the correct past tense form of 'делать' (to do):",
+          "pairs": [
+            {
+              "left": "он",
+              "right": "делал"
+            },
+            {
+              "left": "она",
+              "right": "делала"
+            },
+            {
+              "left": "оно",
+              "right": "делало"
+            },
+            {
+              "left": "они",
+              "right": "делали"
+            },
+            {
+              "left": "мы",
+              "right": "делали"
+            }
+          ],
+          "explanation": "Past tense depends on gender/number: он -л, она -ла, оно -ло, они/мы -ли."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Солнце ___ ярко. (сиять — to shine)",
+          "options": [
+            "сияла",
+            "сияло",
+            "сиял"
+          ],
+          "correctIndex": 1,
+          "explanation": "Солнце (sun) is neuter, so the past tense is сияло (-ло)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She sang a song yesterday.",
+          "words": [
+            "Она",
+            "вчера",
+            "пела",
+            "песню"
+          ],
+          "correctOrder": [
+            "Она",
+            "вчера",
+            "пела",
+            "песню"
+          ],
+          "explanation": "Она requires the feminine form пела. Word order in Russian is flexible."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the past tense forms of 'жить' (to live):",
+          "headers": [
+            "Subject",
+            "Past Tense"
+          ],
+          "rows": [
+            {
+              "label": "он",
+              "answer": "жил",
+              "prefilled": false
+            },
+            {
+              "label": "она",
+              "answer": "жила",
+              "prefilled": false
+            },
+            {
+              "label": "оно",
+              "answer": "жило",
+              "prefilled": false
+            },
+            {
+              "label": "они",
+              "answer": "жили",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Жить → жил (m), жила (f), жило (n), жили (pl). The stem is жи-, then add the gender ending."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Дети гуляли в парке.",
+          "acceptedAnswers": [
+            "Дети гуляли в парке.",
+            "Дети гуляли в парке"
+          ],
+          "explanation": "Дети (children) is plural, so the past tense is гуляли (-ли)."
+        }
       ]
     },
     {
@@ -47,32 +186,170 @@
       "explanation": "Some common Russian verbs have irregular past tense forms. The stem may change or consonants may alternate. Key irregular verbs: есть → ел/ела, идти → шёл/шла, мочь → мог/могла, нести → нёс/несла, вести → вёл/вела.",
       "tip": "Memorize: идти→шёл/шла, есть→ел/ела, мочь→мог/могла",
       "examples": [
-        { "ru": "Он шёл домой.", "en": "He was walking home.", "highlight": "шёл" },
-        { "ru": "Она ела суп.", "en": "She was eating soup.", "highlight": "ела" },
-        { "ru": "Он мог помочь.", "en": "He could help.", "highlight": "мог" }
+        {
+          "ru": "Он шёл домой.",
+          "en": "He was walking home.",
+          "highlight": "шёл"
+        },
+        {
+          "ru": "Она ела суп.",
+          "en": "She was eating soup.",
+          "highlight": "ела"
+        },
+        {
+          "ru": "Он мог помочь.",
+          "en": "He could help.",
+          "highlight": "мог"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Он ___ на работу. (идти — to go on foot)", "options": ["шёл", "идил", "шол"], "correctIndex": 0, "explanation": "Идти has an irregular masculine past: шёл." },
-        { "type": "fill-blank", "prompt": "Она ___ завтрак. (есть — to eat)", "acceptedAnswers": ["ела"], "hint": "Irregular: есть → ел/ела", "explanation": "Есть → ела for feminine. The masculine form is ел." },
-        { "type": "fill-blank", "prompt": "Он ___ тяжёлый чемодан. (нести — to carry)", "acceptedAnswers": ["нёс"], "hint": "Irregular: stem changes to нёс-", "explanation": "Нести → нёс (masculine). The stem vowel changes. Feminine: несла." },
-        { "type": "error-correction", "prompt": "Find and fix the error: 'Она шёл по улице.'", "incorrectText": "Она шёл по улице.", "correctedText": "Она шла по улице.", "acceptedAnswers": ["Она шла по улице.", "Она шла по улице"], "explanation": "Она is feminine, so идти → шла, not шёл (masculine)." },
-        { "type": "multiple-choice", "prompt": "Они ___ воду. (пить — to drink)", "options": ["пили", "пил", "пила"], "correctIndex": 0, "explanation": "Они (they) is plural, so пить → пили." },
-        { "type": "transformation", "prompt": "Form the past tense: 'Она не ___ прийти.' (мочь)", "acceptedAnswers": ["могла"], "hint": "Irregular: мочь → мог/могла", "explanation": "Мочь → могла for feminine. The masculine form is мог." },
-        { "type": "matching", "prompt": "Match the verb to its masculine past form:", "pairs": [
-          { "left": "есть (to eat)", "right": "ел" },
-          { "left": "идти (to go)", "right": "шёл" },
-          { "left": "нести (to carry)", "right": "нёс" },
-          { "left": "мочь (to be able)", "right": "мог" },
-          { "left": "вести (to lead)", "right": "вёл" }
-        ], "explanation": "These verbs have stem changes in the masculine past: есть→ел, идти→шёл, нести→нёс, мочь→мог, вести→вёл." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She could not come.", "words": ["Она", "не", "могла", "прийти"], "correctOrder": ["Она", "не", "могла", "прийти"], "explanation": "Feminine subject она requires могла (not мог). Не goes before the verb." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Он нёс цветы домой.", "acceptedAnswers": ["Он нёс цветы домой.", "Он нёс цветы домой"], "explanation": "Нести → нёс in the masculine past. Цветы means flowers." },
-        { "type": "table-fill", "prompt": "Complete the irregular past tense forms:", "headers": ["Infinitive", "Он (m.)", "Она (f.)"], "rows": [
-          { "label": "идти", "answer": "шёл / шла", "prefilled": false },
-          { "label": "есть", "answer": "ел / ела", "prefilled": false },
-          { "label": "нести", "answer": "нёс / несла", "prefilled": false },
-          { "label": "мочь", "answer": "мог / могла", "prefilled": false }
-        ], "explanation": "Irregular past forms: идти→шёл/шла, есть→ел/ела, нести→нёс/несла, мочь→мог/могла." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Он ___ на работу. (идти — to go on foot)",
+          "options": [
+            "шол",
+            "идил",
+            "шёл"
+          ],
+          "correctIndex": 2,
+          "explanation": "Идти has an irregular masculine past: шёл."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Она ___ завтрак. (есть — to eat)",
+          "acceptedAnswers": [
+            "ела"
+          ],
+          "hint": "Irregular: есть → ел/ела",
+          "explanation": "Есть → ела for feminine. The masculine form is ел."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он ___ тяжёлый чемодан. (нести — to carry)",
+          "acceptedAnswers": [
+            "нёс"
+          ],
+          "hint": "Irregular: stem changes to нёс-",
+          "explanation": "Нести → нёс (masculine). The stem vowel changes. Feminine: несла."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Она шёл по улице.'",
+          "incorrectText": "Она шёл по улице.",
+          "correctedText": "Она шла по улице.",
+          "acceptedAnswers": [
+            "Она шла по улице.",
+            "Она шла по улице"
+          ],
+          "explanation": "Она is feminine, so идти → шла, not шёл (masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Они ___ воду. (пить — to drink)",
+          "options": [
+            "пил",
+            "пили",
+            "пила"
+          ],
+          "correctIndex": 1,
+          "explanation": "Они (they) is plural, so пить → пили."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the past tense: 'Она не ___ прийти.' (мочь)",
+          "acceptedAnswers": [
+            "могла"
+          ],
+          "hint": "Irregular: мочь → мог/могла",
+          "explanation": "Мочь → могла for feminine. The masculine form is мог."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the verb to its masculine past form:",
+          "pairs": [
+            {
+              "left": "есть (to eat)",
+              "right": "ел"
+            },
+            {
+              "left": "идти (to go)",
+              "right": "шёл"
+            },
+            {
+              "left": "нести (to carry)",
+              "right": "нёс"
+            },
+            {
+              "left": "мочь (to be able)",
+              "right": "мог"
+            },
+            {
+              "left": "вести (to lead)",
+              "right": "вёл"
+            }
+          ],
+          "explanation": "These verbs have stem changes in the masculine past: есть→ел, идти→шёл, нести→нёс, мочь→мог, вести→вёл."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She could not come.",
+          "words": [
+            "Она",
+            "не",
+            "могла",
+            "прийти"
+          ],
+          "correctOrder": [
+            "Она",
+            "не",
+            "могла",
+            "прийти"
+          ],
+          "explanation": "Feminine subject она requires могла (not мог). Не goes before the verb."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Он нёс цветы домой.",
+          "acceptedAnswers": [
+            "Он нёс цветы домой.",
+            "Он нёс цветы домой"
+          ],
+          "explanation": "Нести → нёс in the masculine past. Цветы means flowers."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the irregular past tense forms:",
+          "headers": [
+            "Infinitive",
+            "Он (m.)",
+            "Она (f.)"
+          ],
+          "rows": [
+            {
+              "label": "идти",
+              "answer": "шёл / шла",
+              "prefilled": false
+            },
+            {
+              "label": "есть",
+              "answer": "ел / ела",
+              "prefilled": false
+            },
+            {
+              "label": "нести",
+              "answer": "нёс / несла",
+              "prefilled": false
+            },
+            {
+              "label": "мочь",
+              "answer": "мог / могла",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Irregular past forms: идти→шёл/шла, есть→ел/ела, нести→нёс/несла, мочь→мог/могла."
+        }
       ]
     },
     {
@@ -81,27 +358,149 @@
       "explanation": "In real sentences, you must identify the gender of the subject to choose the correct past tense form. Remember: proper names have gender too (Мария = feminine, Иван = masculine). Plural subjects always use -ли regardless of gender.",
       "tip": "Match the verb to the subject's gender: Иван читал, Мария читала, дети читали",
       "examples": [
-        { "ru": "Мария готовила ужин.", "en": "Maria was cooking dinner.", "highlight": "готовила" },
-        { "ru": "Иван и Мария говорили.", "en": "Ivan and Maria were talking.", "highlight": "говорили" },
-        { "ru": "Дитя спало спокойно.", "en": "The child slept peacefully.", "highlight": "спало" }
+        {
+          "ru": "Мария готовила ужин.",
+          "en": "Maria was cooking dinner.",
+          "highlight": "готовила"
+        },
+        {
+          "ru": "Иван и Мария говорили.",
+          "en": "Ivan and Maria were talking.",
+          "highlight": "говорили"
+        },
+        {
+          "ru": "Дитя спало спокойно.",
+          "en": "The child slept peacefully.",
+          "highlight": "спало"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Андрей ___ в университете. (учиться — to study)", "options": ["учился", "училась", "учились"], "correctIndex": 0, "explanation": "Андрей is masculine, so учиться → учился. Reflexive verbs add -ся after the past ending." },
-        { "type": "fill-blank", "prompt": "Елена ___ новое платье. (купить — to buy)", "acceptedAnswers": ["купила"], "hint": "Елена is a female name.", "explanation": "Елена is feminine, so купить → купила (-ла)." },
-        { "type": "fill-blank", "prompt": "Родители ___ на концерт. (пойти — to go)", "acceptedAnswers": ["пошли"], "hint": "Родители (parents) is plural.", "explanation": "Родители is plural, so пойти → пошли." },
-        { "type": "error-correction", "prompt": "Find and fix the error: 'Оксана приготовил вкусный обед.'", "incorrectText": "Оксана приготовил вкусный обед.", "correctedText": "Оксана приготовила вкусный обед.", "acceptedAnswers": ["Оксана приготовила вкусный обед.", "Оксана приготовила вкусный обед"], "explanation": "Оксана is a female name, so the verb must be feminine: приготовила." },
-        { "type": "multiple-choice", "prompt": "Моё сердце ___ быстро. (биться — to beat)", "options": ["билось", "бился", "билась"], "correctIndex": 0, "explanation": "Сердце (heart) is neuter, so билось (-лось for neuter reflexive)." },
-        { "type": "transformation", "prompt": "Put the verb in the correct past tense form: 'Мы ___ летом.' (путешествовать — to travel)", "acceptedAnswers": ["путешествовали"], "hint": "Мы = plural → -ли", "explanation": "Мы is plural, so путешествовать → путешествовали (-ли)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "The children played in the yard.", "words": ["Дети", "играли", "во", "дворе"], "correctOrder": ["Дети", "играли", "во", "дворе"], "explanation": "Дети (children) is plural, requiring играли (not играл, which is masculine singular)." },
-        { "type": "matching", "prompt": "Match each subject to the correct form of 'быть' (to be) in past tense:", "pairs": [
-          { "left": "Иван", "right": "был" },
-          { "left": "Наташа", "right": "была" },
-          { "left": "село", "right": "было" },
-          { "left": "друзья", "right": "были" },
-          { "left": "девочка", "right": "была" }
-        ], "explanation": "Быть past: был (m), была (f), было (n), были (pl). Иван=m, Наташа/девочка=f, село=n, друзья=pl." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Она долго ждала автобус.", "acceptedAnswers": ["Она долго ждала автобус.", "Она долго ждала автобус"], "explanation": "Она is feminine, so ждать → ждала. Долго means 'for a long time'." },
-        { "type": "multiple-choice", "prompt": "Это место ___ очень красивым. (быть — to be)", "options": ["было", "был", "была"], "correctIndex": 0, "explanation": "Место is neuter, so быть → было in the past tense." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Андрей ___ в университете. (учиться — to study)",
+          "options": [
+            "учились",
+            "училась",
+            "учился"
+          ],
+          "correctIndex": 2,
+          "explanation": "Андрей is masculine, so учиться → учился. Reflexive verbs add -ся after the past ending."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Елена ___ новое платье. (купить — to buy)",
+          "acceptedAnswers": [
+            "купила"
+          ],
+          "hint": "Елена is a female name.",
+          "explanation": "Елена is feminine, so купить → купила (-ла)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Родители ___ на концерт. (пойти — to go)",
+          "acceptedAnswers": [
+            "пошли"
+          ],
+          "hint": "Родители (parents) is plural.",
+          "explanation": "Родители is plural, so пойти → пошли."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Оксана приготовил вкусный обед.'",
+          "incorrectText": "Оксана приготовил вкусный обед.",
+          "correctedText": "Оксана приготовила вкусный обед.",
+          "acceptedAnswers": [
+            "Оксана приготовила вкусный обед.",
+            "Оксана приготовила вкусный обед"
+          ],
+          "explanation": "Оксана is a female name, so the verb must be feminine: приготовила."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Моё сердце ___ быстро. (биться — to beat)",
+          "options": [
+            "бился",
+            "билось",
+            "билась"
+          ],
+          "correctIndex": 1,
+          "explanation": "Сердце (heart) is neuter, so билось (-лось for neuter reflexive)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the verb in the correct past tense form: 'Мы ___ летом.' (путешествовать — to travel)",
+          "acceptedAnswers": [
+            "путешествовали"
+          ],
+          "hint": "Мы = plural → -ли",
+          "explanation": "Мы is plural, so путешествовать → путешествовали (-ли)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "The children played in the yard.",
+          "words": [
+            "Дети",
+            "играли",
+            "во",
+            "дворе"
+          ],
+          "correctOrder": [
+            "Дети",
+            "играли",
+            "во",
+            "дворе"
+          ],
+          "explanation": "Дети (children) is plural, requiring играли (not играл, which is masculine singular)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each subject to the correct form of 'быть' (to be) in past tense:",
+          "pairs": [
+            {
+              "left": "Иван",
+              "right": "был"
+            },
+            {
+              "left": "Наташа",
+              "right": "была"
+            },
+            {
+              "left": "село",
+              "right": "было"
+            },
+            {
+              "left": "друзья",
+              "right": "были"
+            },
+            {
+              "left": "девочка",
+              "right": "была"
+            }
+          ],
+          "explanation": "Быть past: был (m), была (f), было (n), были (pl). Иван=m, Наташа/девочка=f, село=n, друзья=pl."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Она долго ждала автобус.",
+          "acceptedAnswers": [
+            "Она долго ждала автобус.",
+            "Она долго ждала автобус"
+          ],
+          "explanation": "Она is feminine, so ждать → ждала. Долго means 'for a long time'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Это место ___ очень красивым. (быть — to be)",
+          "options": [
+            "было",
+            "был",
+            "была"
+          ],
+          "correctIndex": 0,
+          "explanation": "Место is neuter, so быть → было in the past tense."
+        }
       ]
     }
   ]

@@ -4,7 +4,9 @@
   "nameJa": "過去形",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["verb-groups"],
+  "prerequisites": [
+    "verb-groups"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +15,62 @@
       "explanation": "To form the past tense of verbs in Japanese, the rules differ by verb group. For る-verbs (ichidan), drop る and add た. For う-verbs (godan), the ending changes based on the final kana: う/つ/る become った, む/ぶ/ぬ become んだ, く becomes いた, ぐ becomes いだ, and す becomes した. The irregular verbs する becomes した and くる becomes きた.",
       "tip": "The past tense conjugation rules for う-verbs follow the same sound changes as て-form, just replacing て with た and で with だ. Learn one and you learn both!",
       "examples": [
-        { "ja": "昨日、映画を見た。", "en": "I watched a movie yesterday.", "highlight": "見た" },
-        { "ja": "友達に手紙を書いた。", "en": "I wrote a letter to my friend.", "highlight": "書いた" },
-        { "ja": "朝ごはんを食べた。", "en": "I ate breakfast.", "highlight": "食べた" },
-        { "ja": "東京に行った。", "en": "I went to Tokyo.", "highlight": "行った" }
+        {
+          "ja": "昨日、映画を見た。",
+          "en": "I watched a movie yesterday.",
+          "highlight": "見た"
+        },
+        {
+          "ja": "友達に手紙を書いた。",
+          "en": "I wrote a letter to my friend.",
+          "highlight": "書いた"
+        },
+        {
+          "ja": "朝ごはんを食べた。",
+          "en": "I ate breakfast.",
+          "highlight": "食べた"
+        },
+        {
+          "ja": "東京に行った。",
+          "en": "I went to Tokyo.",
+          "highlight": "行った"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of 飲む (to drink)?",
-          "options": ["飲んだ", "飲った", "飲いた", "飲した"],
-          "correctIndex": 0,
+          "options": [
+            "飲った",
+            "飲んだ",
+            "飲いた",
+            "飲した"
+          ],
+          "correctIndex": 1,
           "explanation": "Verbs ending in む follow the む/ぶ/ぬ → んだ rule, so 飲む becomes 飲んだ."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of 話す (to speak)?",
-          "options": ["話った", "話んだ", "話した", "話いた"],
+          "options": [
+            "話んだ",
+            "話った",
+            "話した",
+            "話いた"
+          ],
           "correctIndex": 2,
           "explanation": "Verbs ending in す change to した, so 話す becomes 話した."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct sentence: 'I bought a book yesterday.'",
-          "options": ["昨日、本を買った。", "昨日、本を買いた。", "昨日、本を買んだ。", "昨日、本を買した。"],
-          "correctIndex": 0,
+          "options": [
+            "昨日、本を買んだ。",
+            "昨日、本を買した。",
+            "昨日、本を買いた。",
+            "昨日、本を買った。"
+          ],
+          "correctIndex": 3,
           "explanation": "買う ends in う, so it follows the う/つ/る → った rule: 買う becomes 買った."
         }
       ]
@@ -48,31 +81,62 @@
       "explanation": "To make a past negative verb, take the ない form and replace ない with なかった. For example, 食べない becomes 食べなかった (didn't eat), 行かない becomes 行かなかった (didn't go). For polite speech, use ませんでした: 食べませんでした, 行きませんでした.",
       "tip": "Think of なかった as the past tense of ない itself. The adjective ない conjugates just like any い-adjective: ない → なかった.",
       "examples": [
-        { "ja": "昨日、勉強しなかった。", "en": "I didn't study yesterday.", "highlight": "しなかった" },
-        { "ja": "彼は来なかった。", "en": "He didn't come.", "highlight": "来なかった" },
-        { "ja": "朝ごはんを食べませんでした。", "en": "I didn't eat breakfast. (polite)", "highlight": "食べませんでした" },
-        { "ja": "その映画は見なかった。", "en": "I didn't watch that movie.", "highlight": "見なかった" }
+        {
+          "ja": "昨日、勉強しなかった。",
+          "en": "I didn't study yesterday.",
+          "highlight": "しなかった"
+        },
+        {
+          "ja": "彼は来なかった。",
+          "en": "He didn't come.",
+          "highlight": "来なかった"
+        },
+        {
+          "ja": "朝ごはんを食べませんでした。",
+          "en": "I didn't eat breakfast. (polite)",
+          "highlight": "食べませんでした"
+        },
+        {
+          "ja": "その映画は見なかった。",
+          "en": "I didn't watch that movie.",
+          "highlight": "見なかった"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past negative of 読む (to read)?",
-          "options": ["読まなかった", "読みなかった", "読むなかった", "読めなかった"],
+          "options": [
+            "読まなかった",
+            "読みなかった",
+            "読むなかった",
+            "読めなかった"
+          ],
           "correctIndex": 0,
           "explanation": "The ない form of 読む is 読まない. Replace ない with なかった to get 読まなかった."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the polite past negative of 行く (to go):",
-          "options": ["行かなかったです", "行きませんでした", "行くませんでした", "行かないでした"],
+          "options": [
+            "行くませんでした",
+            "行きませんでした",
+            "行かないでした",
+            "行かなかったです"
+          ],
           "correctIndex": 1,
           "explanation": "The polite form 行きます becomes past negative 行きませんでした."
         },
         {
           "type": "multiple-choice",
           "prompt": "'I didn't drink coffee.' — Choose the correct translation:",
-          "options": ["コーヒーを飲みなかった。", "コーヒーを飲まなかった。", "コーヒーを飲んなかった。", "コーヒーを飲むなかった。"],
-          "correctIndex": 1,
+          "options": [
+            "コーヒーを飲みなかった。",
+            "コーヒーを飲んなかった。",
+            "コーヒーを飲まなかった。",
+            "コーヒーを飲むなかった。"
+          ],
+          "correctIndex": 2,
           "explanation": "飲む → 飲まない → 飲まなかった. The あ-row kana replaces the う-row ending before ない."
         }
       ]
@@ -83,31 +147,62 @@
       "explanation": "い-adjectives form past tense by dropping い and adding かった. For example, 高い (expensive) becomes 高かった. The negative past is 高くなかった. な-adjectives use だった for past affirmative and じゃなかった for past negative. For example, 静かだった (was quiet) and 静かじゃなかった (wasn't quiet).",
       "tip": "Remember that いい (good) is irregular: its past tense is よかった, not いかった. This is because いい historically comes from よい.",
       "examples": [
-        { "ja": "昨日は暑かった。", "en": "Yesterday was hot.", "highlight": "暑かった" },
-        { "ja": "テストは難しくなかった。", "en": "The test was not difficult.", "highlight": "難しくなかった" },
-        { "ja": "あの町は静かだった。", "en": "That town was quiet.", "highlight": "静かだった" },
-        { "ja": "パーティーは楽しかった。", "en": "The party was fun.", "highlight": "楽しかった" }
+        {
+          "ja": "昨日は暑かった。",
+          "en": "Yesterday was hot.",
+          "highlight": "暑かった"
+        },
+        {
+          "ja": "テストは難しくなかった。",
+          "en": "The test was not difficult.",
+          "highlight": "難しくなかった"
+        },
+        {
+          "ja": "あの町は静かだった。",
+          "en": "That town was quiet.",
+          "highlight": "静かだった"
+        },
+        {
+          "ja": "パーティーは楽しかった。",
+          "en": "The party was fun.",
+          "highlight": "楽しかった"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of おいしい (delicious)?",
-          "options": ["おいしいだった", "おいしかった", "おいしだった", "おいしくった"],
+          "options": [
+            "おいしくった",
+            "おいしかった",
+            "おいしいだった",
+            "おいしだった"
+          ],
           "correctIndex": 1,
           "explanation": "For い-adjectives, drop い and add かった: おいしい → おいしかった."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of いい (good)?",
-          "options": ["いかった", "いいだった", "よかった", "よいかった"],
+          "options": [
+            "よいかった",
+            "いかった",
+            "よかった",
+            "いいだった"
+          ],
           "correctIndex": 2,
           "explanation": "いい is irregular. It uses the よい stem: よかった."
         },
         {
           "type": "multiple-choice",
           "prompt": "'The room was not clean.' — Choose the correct translation (きれい = clean/な-adj):",
-          "options": ["部屋はきれくなかった。", "部屋はきれいじゃなかった。", "部屋はきれいなかった。", "部屋はきれいくなかった。"],
-          "correctIndex": 1,
+          "options": [
+            "部屋はきれいじゃなかった。",
+            "部屋はきれくなかった。",
+            "部屋はきれいなかった。",
+            "部屋はきれいくなかった。"
+          ],
+          "correctIndex": 0,
           "explanation": "きれい is a な-adjective (despite ending in い). Its past negative is きれいじゃなかった."
         }
       ]
@@ -118,31 +213,62 @@
       "explanation": "Now let's practice combining past tense verbs and adjectives in natural sentences. In everyday Japanese, the plain past tense (た/だ) is used in casual speech, diary writing, and storytelling. The polite past (ました/でした) is used in conversations with acquaintances, at work, and in formal situations.",
       "tip": "When telling a story or recounting your day, you'll chain past tense sentences together. The final verb is usually in past tense, while connecting verbs often use て-form.",
       "examples": [
-        { "ja": "週末は忙しかったけど、楽しかった。", "en": "The weekend was busy, but it was fun.", "highlight": "忙しかった" },
-        { "ja": "日本語を三年間勉強しました。", "en": "I studied Japanese for three years.", "highlight": "勉強しました" },
-        { "ja": "子供の時、よく公園で遊んだ。", "en": "When I was a child, I often played in the park.", "highlight": "遊んだ" },
-        { "ja": "先週の試験は簡単じゃなかった。", "en": "Last week's exam was not easy.", "highlight": "簡単じゃなかった" }
+        {
+          "ja": "週末は忙しかったけど、楽しかった。",
+          "en": "The weekend was busy, but it was fun.",
+          "highlight": "忙しかった"
+        },
+        {
+          "ja": "日本語を三年間勉強しました。",
+          "en": "I studied Japanese for three years.",
+          "highlight": "勉強しました"
+        },
+        {
+          "ja": "子供の時、よく公園で遊んだ。",
+          "en": "When I was a child, I often played in the park.",
+          "highlight": "遊んだ"
+        },
+        {
+          "ja": "先週の試験は簡単じゃなかった。",
+          "en": "Last week's exam was not easy.",
+          "highlight": "簡単じゃなかった"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'I went to Japan and ate sushi.' — Choose the correct translation:",
-          "options": ["日本に行って寿司を食べた。", "日本に行った寿司を食べた。", "日本に行く寿司を食べた。", "日本に行たて寿司を食べた。"],
-          "correctIndex": 0,
+          "options": [
+            "日本に行った寿司を食べた。",
+            "日本に行って寿司を食べた。",
+            "日本に行く寿司を食べた。",
+            "日本に行たて寿司を食べた。"
+          ],
+          "correctIndex": 1,
           "explanation": "When connecting two sequential past actions, the first verb uses て-form (行って) and the final verb uses past tense (食べた)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly says 'The weather was not good yesterday'?",
-          "options": ["昨日の天気はいくなかった。", "昨日の天気はよくなかった。", "昨日の天気はいいじゃなかった。", "昨日の天気はよいなかった。"],
-          "correctIndex": 1,
+          "options": [
+            "昨日の天気はいいじゃなかった。",
+            "昨日の天気はいくなかった。",
+            "昨日の天気はよいなかった。",
+            "昨日の天気はよくなかった。"
+          ],
+          "correctIndex": 3,
           "explanation": "いい uses the よい stem for all conjugations except the plain present. Negative past: よくなかった."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the grammatically correct sentence:",
-          "options": ["映画は面白いだった。", "映画は面白かった。", "映画は面白いかった。", "映画は面白くだった。"],
-          "correctIndex": 1,
+          "options": [
+            "映画は面白くだった。",
+            "映画は面白いかった。",
+            "映画は面白いだった。",
+            "映画は面白かった。"
+          ],
+          "correctIndex": 3,
           "explanation": "面白い is an い-adjective. Drop い, add かった: 面白かった."
         }
       ]

@@ -4,7 +4,9 @@
   "nameZh": "动态助词：了、过、着",
   "icon": "🔄",
   "tier": "A2",
-  "prerequisites": ["time-expressions"],
+  "prerequisites": [
+    "time-expressions"
+  ],
   "estimatedMinutes": 30,
   "sections": [
     {
@@ -13,34 +15,59 @@
       "explanation": "了 (le) is the most versatile aspect particle in Chinese. It has two main uses. First, verb 了 (placed directly after a verb) marks a completed action: 我吃了饭 (I ate / I have eaten). Second, sentence-final 了 signals a change of state or new situation: 他高了 (He has gotten taller — he wasn't tall before, but now he is). These two uses can overlap: 我买了一本书了 uses verb 了 for completion and sentence-final 了 to emphasize the new situation. Negation of completed actions uses 没(有) and drops 了: 我没吃饭 (I didn't eat), not 我没吃了饭.",
       "tip": "A common mistake is putting 了 after every past-tense sentence. Remember: 了 marks completion or change, not past tense itself. Habitual past actions (我以前每天跑步 — I used to run every day) do not use 了 because they describe a routine, not a single completed event.",
       "examples": [
-        { "zh": "我吃了午饭。", "pinyin": "Wǒ chī le wǔfàn.", "en": "I ate lunch. (completed action)", "highlight": "了" },
-        { "zh": "下雨了。", "pinyin": "Xià yǔ le.", "en": "It's started raining. (change of state)", "highlight": "了" },
-        { "zh": "她买了三本书。", "pinyin": "Tā mǎi le sān běn shū.", "en": "She bought three books.", "highlight": "了" },
-        { "zh": "我不想吃了。", "pinyin": "Wǒ bù xiǎng chī le.", "en": "I don't want to eat anymore. (change of state)", "highlight": "了" }
+        {
+          "zh": "我吃了午饭。",
+          "pinyin": "Wǒ chī le wǔfàn.",
+          "en": "I ate lunch. (completed action)",
+          "highlight": "了"
+        },
+        {
+          "zh": "下雨了。",
+          "pinyin": "Xià yǔ le.",
+          "en": "It's started raining. (change of state)",
+          "highlight": "了"
+        },
+        {
+          "zh": "她买了三本书。",
+          "pinyin": "Tā mǎi le sān běn shū.",
+          "en": "She bought three books.",
+          "highlight": "了"
+        },
+        {
+          "zh": "我不想吃了。",
+          "pinyin": "Wǒ bù xiǎng chī le.",
+          "en": "I don't want to eat anymore. (change of state)",
+          "highlight": "了"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "我昨天看___一部电影。(I watched a movie yesterday.)",
-          "acceptedAnswers": ["了"],
+          "acceptedAnswers": [
+            "了"
+          ],
           "hint": "Place the completion particle directly after the verb 看."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 了 to express a change of state?",
           "options": [
-            "他每天高了。",
-            "天气冷了。",
             "我了喜欢他。",
-            "她了去学校。"
+            "她了去学校。",
+            "他每天高了。",
+            "天气冷了。"
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "天气冷了 means 'It has gotten cold' — a new situation. Sentence-final 了 marks the change. The other options have incorrect placement or usage."
         },
         {
           "type": "fill-blank",
           "prompt": "他没___早饭。(He didn't eat breakfast.) — use the correct negation form.",
-          "acceptedAnswers": ["吃", "有吃"],
+          "acceptedAnswers": [
+            "吃",
+            "有吃"
+          ],
           "hint": "Negation of completed actions uses 没(有) and drops 了."
         }
       ]
@@ -51,34 +78,58 @@
       "explanation": "过 (guò) placed after a verb indicates that someone has had the experience of doing something at some unspecified time in the past. It is similar to English 'have ever done.' 我去过中国 means 'I have been to China (at some point).' The focus is on whether the experience has occurred, not when or how many times. To negate, use 没(有)…过: 我没去过日本 (I have never been to Japan). Unlike 了 which marks a specific completed action, 过 emphasizes life experience: 我吃了寿司 (I ate sushi — specific event) vs. 我吃过寿司 (I have eaten sushi before — experience).",
       "tip": "Think of 过 as answering the question 'Have you ever…?' If someone asks 你去过法国吗？they want to know about your lifetime experience, not about a specific trip.",
       "examples": [
-        { "zh": "我去过中国。", "pinyin": "Wǒ qù guo Zhōngguó.", "en": "I have been to China (before).", "highlight": "过" },
-        { "zh": "你吃过北京烤鸭吗？", "pinyin": "Nǐ chī guo Běijīng kǎoyā ma?", "en": "Have you ever eaten Peking duck?", "highlight": "过" },
-        { "zh": "她没学过法语。", "pinyin": "Tā méi xué guo Fǎyǔ.", "en": "She has never studied French.", "highlight": "过" },
-        { "zh": "我们见过面。", "pinyin": "Wǒmen jiàn guo miàn.", "en": "We have met before.", "highlight": "过" }
+        {
+          "zh": "我去过中国。",
+          "pinyin": "Wǒ qù guo Zhōngguó.",
+          "en": "I have been to China (before).",
+          "highlight": "过"
+        },
+        {
+          "zh": "你吃过北京烤鸭吗？",
+          "pinyin": "Nǐ chī guo Běijīng kǎoyā ma?",
+          "en": "Have you ever eaten Peking duck?",
+          "highlight": "过"
+        },
+        {
+          "zh": "她没学过法语。",
+          "pinyin": "Tā méi xué guo Fǎyǔ.",
+          "en": "She has never studied French.",
+          "highlight": "过"
+        },
+        {
+          "zh": "我们见过面。",
+          "pinyin": "Wǒmen jiàn guo miàn.",
+          "en": "We have met before.",
+          "highlight": "过"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "你看___这部电影吗？(Have you ever seen this movie?)",
-          "acceptedAnswers": ["过"],
+          "acceptedAnswers": [
+            "过"
+          ],
           "hint": "Use the experience particle after the verb 看."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between 我吃了寿司 and 我吃过寿司?",
           "options": [
-            "No difference — they are interchangeable.",
-            "吃了 refers to a specific completed event; 吃过 refers to having had the experience.",
             "吃了 is formal; 吃过 is informal.",
-            "吃了 is for food; 吃过 is for drinks."
+            "No difference — they are interchangeable.",
+            "吃了 is for food; 吃过 is for drinks.",
+            "吃了 refers to a specific completed event; 吃过 refers to having had the experience."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "了 marks a specific completed action (I ate sushi — referring to a particular time). 过 marks life experience (I have eaten sushi before — at some point in my life)."
         },
         {
           "type": "fill-blank",
           "prompt": "我没___过飞机。(I have never flown on a plane.)",
-          "acceptedAnswers": ["坐"],
+          "acceptedAnswers": [
+            "坐"
+          ],
           "hint": "The verb for 'riding/taking' a plane is 坐 (zuò)."
         }
       ]
@@ -89,34 +140,58 @@
       "explanation": "着 (zhe) placed after a verb describes a continuous or ongoing state — the result of an action being maintained. It does not describe an action in progress (that role belongs to 在), but rather the state that persists after or during an action. 他坐着 means 'He is seated (in a sitting state).' 门开着 means 'The door is open (in an open state).' 着 is commonly used to describe background states while another action occurs: 她笑着说 (She said it while smiling — smiling is the ongoing state accompanying the main action of speaking). Negation uses 没: 灯没开着 (The light isn't on).",
       "tip": "Compare 在 and 着: 他在写字 (He is writing — action in progress) vs. 墙上挂着一幅画 (A painting is hanging on the wall — static state). Use 在 for actions actively happening and 着 for sustained states.",
       "examples": [
-        { "zh": "他坐着看书。", "pinyin": "Tā zuò zhe kàn shū.", "en": "He reads while sitting. (sitting state)", "highlight": "着" },
-        { "zh": "门开着呢。", "pinyin": "Mén kāi zhe ne.", "en": "The door is open.", "highlight": "着" },
-        { "zh": "她穿着红色的裙子。", "pinyin": "Tā chuān zhe hóngsè de qúnzi.", "en": "She is wearing a red dress. (state of wearing)", "highlight": "着" },
-        { "zh": "墙上挂着一幅画。", "pinyin": "Qiáng shàng guà zhe yī fú huà.", "en": "A painting is hanging on the wall.", "highlight": "着" }
+        {
+          "zh": "他坐着看书。",
+          "pinyin": "Tā zuò zhe kàn shū.",
+          "en": "He reads while sitting. (sitting state)",
+          "highlight": "着"
+        },
+        {
+          "zh": "门开着呢。",
+          "pinyin": "Mén kāi zhe ne.",
+          "en": "The door is open.",
+          "highlight": "着"
+        },
+        {
+          "zh": "她穿着红色的裙子。",
+          "pinyin": "Tā chuān zhe hóngsè de qúnzi.",
+          "en": "She is wearing a red dress. (state of wearing)",
+          "highlight": "着"
+        },
+        {
+          "zh": "墙上挂着一幅画。",
+          "pinyin": "Qiáng shàng guà zhe yī fú huà.",
+          "en": "A painting is hanging on the wall.",
+          "highlight": "着"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "窗户关___呢。(The window is closed.)",
-          "acceptedAnswers": ["着"],
+          "acceptedAnswers": [
+            "着"
+          ],
           "hint": "Use the ongoing-state particle after 关 (to close)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 着 to describe a background state?",
           "options": [
-            "他着跑步。",
-            "她笑着说再见。",
+            "着他看电视。",
             "我着吃饭了。",
-            "着他看电视。"
+            "他着跑步。",
+            "她笑着说再见。"
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "她笑着说再见 (She said goodbye while smiling) uses 着 correctly: 笑着 describes the ongoing state of smiling while the main action 说 takes place. 着 goes after the verb, not before."
         },
         {
           "type": "fill-blank",
           "prompt": "桌子上放___很多书。(Many books are placed on the table.)",
-          "acceptedAnswers": ["着"],
+          "acceptedAnswers": [
+            "着"
+          ],
           "hint": "Describe the ongoing state of the books being placed there."
         }
       ]
@@ -127,40 +202,62 @@
       "explanation": "All three particles relate to how an action connects to time, but each serves a different purpose. 了 marks completion of a specific action or a change of state: 我喝了咖啡 (I drank coffee — done). 过 marks life experience without specifying when: 我喝过咖啡 (I have drunk coffee before — at some point). 着 marks an ongoing state being maintained: 她拿着咖啡 (She is holding coffee — sustained state). A common mistake is using 了 when 过 is needed: 你去了法国吗 asks about a specific trip, while 你去过法国吗 asks about lifetime experience. Another frequent error is confusing 着 with 在: 在 marks an action in progress, while 着 marks a sustained state.",
       "tip": "Quick test: ask yourself — Am I talking about (1) a completed event? Use 了. (2) A life experience / 'have you ever'? Use 过. (3) A state that is being maintained right now? Use 着.",
       "examples": [
-        { "zh": "我学了中文。/ 我学过中文。/ 她教着中文。", "pinyin": "Wǒ xué le Zhōngwén. / Wǒ xué guo Zhōngwén. / Tā jiāo zhe Zhōngwén.", "en": "I studied Chinese. (completed) / I have studied Chinese before. (experience) / She is teaching Chinese. (ongoing state)", "highlight": "了, 过, 着" },
-        { "zh": "他关了门。", "pinyin": "Tā guān le mén.", "en": "He closed the door. (completed action)", "highlight": "了" },
-        { "zh": "你坐过火车吗？", "pinyin": "Nǐ zuò guo huǒchē ma?", "en": "Have you ever ridden a train?", "highlight": "过" },
-        { "zh": "孩子们站着吃饭。", "pinyin": "Háizimen zhàn zhe chīfàn.", "en": "The children eat while standing.", "highlight": "着" }
+        {
+          "zh": "我学了中文。/ 我学过中文。/ 她教着中文。",
+          "pinyin": "Wǒ xué le Zhōngwén. / Wǒ xué guo Zhōngwén. / Tā jiāo zhe Zhōngwén.",
+          "en": "I studied Chinese. (completed) / I have studied Chinese before. (experience) / She is teaching Chinese. (ongoing state)",
+          "highlight": "了, 过, 着"
+        },
+        {
+          "zh": "他关了门。",
+          "pinyin": "Tā guān le mén.",
+          "en": "He closed the door. (completed action)",
+          "highlight": "了"
+        },
+        {
+          "zh": "你坐过火车吗？",
+          "pinyin": "Nǐ zuò guo huǒchē ma?",
+          "en": "Have you ever ridden a train?",
+          "highlight": "过"
+        },
+        {
+          "zh": "孩子们站着吃饭。",
+          "pinyin": "Háizimen zhàn zhe chīfàn.",
+          "en": "The children eat while standing.",
+          "highlight": "着"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "我___中国菜。Choose the correct particle if the meaning is 'I have tried Chinese food before.'",
           "options": [
+            "在吃",
             "吃了",
             "吃过",
-            "吃着",
-            "在吃"
+            "吃着"
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "吃过 expresses the experience of having tried Chinese food at some point. 吃了 would refer to a specific completed meal, and 吃着 would describe an ongoing state of eating."
         },
         {
           "type": "fill-blank",
           "prompt": "她抱___孩子走进来。(She walked in holding a child.)",
-          "acceptedAnswers": ["着"],
+          "acceptedAnswers": [
+            "着"
+          ],
           "hint": "Holding the child is the ongoing state while the main action is walking in."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence means 'It has started snowing' (a change just happened)?",
           "options": [
-            "下过雪。",
             "下着雪。",
-            "下雪了。",
-            "在下雪过。"
+            "在下雪过。",
+            "下过雪。",
+            "下雪了。"
           ],
-          "correctIndex": 2,
+          "correctIndex": 3,
           "explanation": "下雪了 uses sentence-final 了 to mark a change of state — it wasn't snowing before, but now it is. 下过雪 means 'It has snowed before (experience).' 下着雪 means 'It is snowing (ongoing state).'"
         }
       ]

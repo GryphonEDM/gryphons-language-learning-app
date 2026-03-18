@@ -4,7 +4,9 @@
   "nameEl": "Γενική Πτώση",
   "icon": "🔗",
   "tier": "B1",
-  "prerequisites": ["nouns-declension"],
+  "prerequisites": [
+    "nouns-declension"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,32 +15,62 @@
       "explanation": "The genitive case is formed by changing the ending of a noun and its article. Masculine nouns: -ος → -ου (ο φίλος → του φίλου), -ης → -η (ο ναύτης → του ναύτη), -ας → -α (ο μπαμπάς → του μπαμπά). Feminine nouns: -α or -η → -ας or -ης (η μητέρα → της μητέρας, η θάλασσα → της θάλασσας, η πόλη → της πόλης). Neuter nouns: -ο → -ου (το βιβλίο → του βιβλίου), -ι → -ιού or remains the same (το παιδί → του παιδιού). The definite article changes as follows: singular ο → του, η → της, το → του; plural οι → των, τα → των.",
       "tip": "For possession, swap the nominative article for the genitive: ο/το → του, η → της. Plural of all genders uses 'των'.",
       "examples": [
-        { "el": "ο φίλος → του φίλου", "en": "the friend (nom.) → of the friend (gen., masculine -ος → -ου)" },
-        { "el": "ο ναύτης → του ναύτη", "en": "the sailor (nom.) → of the sailor (gen., masculine -ης → -η)" },
-        { "el": "ο μπαμπάς → του μπαμπά", "en": "the dad (nom.) → of the dad (gen., masculine -ας → -α)" },
-        { "el": "η μητέρα → της μητέρας", "en": "the mother (nom.) → of the mother (gen., feminine -α → -ας)" },
-        { "el": "η θάλασσα → της θάλασσας", "en": "the sea (nom.) → of the sea (gen., feminine -α → -ας)" },
-        { "el": "το παιδί → του παιδιού", "en": "the child (nom.) → of the child (gen., neuter -ί → -ιού)" }
+        {
+          "el": "ο φίλος → του φίλου",
+          "en": "the friend (nom.) → of the friend (gen., masculine -ος → -ου)"
+        },
+        {
+          "el": "ο ναύτης → του ναύτη",
+          "en": "the sailor (nom.) → of the sailor (gen., masculine -ης → -η)"
+        },
+        {
+          "el": "ο μπαμπάς → του μπαμπά",
+          "en": "the dad (nom.) → of the dad (gen., masculine -ας → -α)"
+        },
+        {
+          "el": "η μητέρα → της μητέρας",
+          "en": "the mother (nom.) → of the mother (gen., feminine -α → -ας)"
+        },
+        {
+          "el": "η θάλασσα → της θάλασσας",
+          "en": "the sea (nom.) → of the sea (gen., feminine -α → -ας)"
+        },
+        {
+          "el": "το παιδί → του παιδιού",
+          "en": "the child (nom.) → of the child (gen., neuter -ί → -ιού)"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the genitive form of 'ο φίλος' (the friend)?",
-          "options": ["του φίλου", "της φίλης", "του φίλη"],
-          "correctIndex": 0,
+          "options": [
+            "της φίλης",
+            "του φίλη",
+            "του φίλου"
+          ],
+          "correctIndex": 2,
           "explanation": "Masculine -ος nouns change to -ου in the genitive, and the article ο becomes του → του φίλου."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the genitive form of 'η μητέρα' (the mother)?",
-          "options": ["του μητέρου", "της μητέρας", "της μητέρη"],
-          "correctIndex": 1,
+          "options": [
+            "της μητέρη",
+            "του μητέρου",
+            "της μητέρας"
+          ],
+          "correctIndex": 2,
           "explanation": "Feminine -α nouns change to -ας in the genitive, and the article η becomes της → της μητέρας."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the genitive article for ALL plural nouns (all genders)?",
-          "options": ["του", "της", "των"],
+          "options": [
+            "του",
+            "της",
+            "των"
+          ],
           "correctIndex": 2,
           "explanation": "In the plural, the genitive article is 'των' for all three genders: των φίλων, των μητέρων, των παιδιών."
         }
@@ -50,33 +82,63 @@
       "explanation": "The genitive case has several important uses in Greek. 1) Possession: it shows that something belongs to someone or something (η τσάντα της Μαρίας = Maria's bag; το αυτοκίνητο του Γιώργη = George's car). 2) After certain prepositions: εκτός (except/outside of) and λόγω (due to) govern the genitive. Note: από (from/of) takes the accusative case. 3) Fixed phrases and compound words: καλημέρα comes from καλή + μέρα (good + day), καληνύχτα from καλή + νύχτα. 4) Expressions of time and price: της εβδομάδας (per week/weekly), του χρόνου (next year, literally 'of the year').",
       "tip": "Think of the genitive as answering the question 'whose?' or 'of what/whom?' — it links two nouns together.",
       "examples": [
-        { "el": "η τσάντα της Μαρίας", "en": "Maria's bag (possession — the bag of Maria)" },
-        { "el": "το αυτοκίνητο του Γιώργη", "en": "George's car (possession — the car of George)" },
-        { "el": "Είμαι από την Αθήνα.", "en": "I am from Athens. (preposition 'από' + accusative)" },
-        { "el": "εκτός του σπιτιού", "en": "outside of the house (preposition 'εκτός' + genitive)" },
-        { "el": "λόγω της βροχής", "en": "due to the rain (preposition 'λόγω' + genitive)" },
-        { "el": "του χρόνου θα πάμε.", "en": "Next year we will go. (time expression using genitive)" }
+        {
+          "el": "η τσάντα της Μαρίας",
+          "en": "Maria's bag (possession — the bag of Maria)"
+        },
+        {
+          "el": "το αυτοκίνητο του Γιώργη",
+          "en": "George's car (possession — the car of George)"
+        },
+        {
+          "el": "Είμαι από την Αθήνα.",
+          "en": "I am from Athens. (preposition 'από' + accusative)"
+        },
+        {
+          "el": "εκτός του σπιτιού",
+          "en": "outside of the house (preposition 'εκτός' + genitive)"
+        },
+        {
+          "el": "λόγω της βροχής",
+          "en": "due to the rain (preposition 'λόγω' + genitive)"
+        },
+        {
+          "el": "του χρόνου θα πάμε.",
+          "en": "Next year we will go. (time expression using genitive)"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does 'η τσάντα της Μαρίας' mean?",
-          "options": ["the bag for Maria", "Maria's bag", "Maria has a bag"],
-          "correctIndex": 1,
+          "options": [
+            "Maria's bag",
+            "the bag for Maria",
+            "Maria has a bag"
+          ],
+          "correctIndex": 0,
           "explanation": "The genitive 'της Μαρίας' expresses possession — the bag belonging to Maria."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which preposition commonly takes a genitive noun in Greek?",
-          "options": ["σε", "λόγω", "για"],
-          "correctIndex": 1,
+          "options": [
+            "σε",
+            "για",
+            "λόγω"
+          ],
+          "correctIndex": 2,
           "explanation": "'Λόγω' (due to) governs the genitive case, e.g. λόγω της βροχής (due to the rain)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'George's car' in Greek?",
-          "options": ["το αυτοκίνητο για τον Γιώργη", "το αυτοκίνητο του Γιώργη", "το αυτοκίνητο από Γιώργης"],
-          "correctIndex": 1,
+          "options": [
+            "το αυτοκίνητο του Γιώργη",
+            "το αυτοκίνητο από Γιώργης",
+            "το αυτοκίνητο για τον Γιώργη"
+          ],
+          "correctIndex": 0,
           "explanation": "Possession is expressed with the genitive: του Γιώργη (of George) placed after the noun."
         }
       ]
@@ -87,33 +149,63 @@
       "explanation": "Greek personal pronouns have weak (clitic) genitive forms used to express possession. These are: μου (my/mine), σου (your/yours — singular), του (his/its for masculine), της (her/its for feminine), μας (our/ours), σας (your/yours — plural or formal), τους (their/theirs). These weak forms are placed after the noun they modify, unlike in English where the possessive comes before. For example: το σπίτι μου (my house), ο φίλος σου (your friend), η μητέρα του (his mother), το παιδί της (her child), το σπίτι μας (our house), ο δρόμος σας (your road), το αυτοκίνητο τους (their car).",
       "tip": "Weak genitive pronouns always follow the noun: 'το σπίτι μου' (lit. 'the house my') — never before it like in English.",
       "examples": [
-        { "el": "το σπίτι μου", "en": "my house (lit. the house of-me)" },
-        { "el": "ο φίλος σου", "en": "your friend (lit. the friend of-you, singular)" },
-        { "el": "η μητέρα του", "en": "his mother (lit. the mother of-him)" },
-        { "el": "το παιδί της", "en": "her child (lit. the child of-her)" },
-        { "el": "το σπίτι μας", "en": "our house (lit. the house of-us)" },
-        { "el": "το αυτοκίνητο τους", "en": "their car (lit. the car of-them)" }
+        {
+          "el": "το σπίτι μου",
+          "en": "my house (lit. the house of-me)"
+        },
+        {
+          "el": "ο φίλος σου",
+          "en": "your friend (lit. the friend of-you, singular)"
+        },
+        {
+          "el": "η μητέρα του",
+          "en": "his mother (lit. the mother of-him)"
+        },
+        {
+          "el": "το παιδί της",
+          "en": "her child (lit. the child of-her)"
+        },
+        {
+          "el": "το σπίτι μας",
+          "en": "our house (lit. the house of-us)"
+        },
+        {
+          "el": "το αυτοκίνητο τους",
+          "en": "their car (lit. the car of-them)"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'my house' in Greek?",
-          "options": ["μου το σπίτι", "το σπίτι μου", "το μου σπίτι"],
+          "options": [
+            "το μου σπίτι",
+            "το σπίτι μου",
+            "μου το σπίτι"
+          ],
           "correctIndex": 1,
           "explanation": "Weak genitive pronouns follow the noun: το σπίτι μου (the house my = my house)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 'ο φίλος σας' mean?",
-          "options": ["your friend (plural/formal)", "his friend", "our friend"],
-          "correctIndex": 0,
+          "options": [
+            "his friend",
+            "your friend (plural/formal)",
+            "our friend"
+          ],
+          "correctIndex": 1,
           "explanation": "'Σας' is the genitive pronoun for 'you' in the plural or formal register → your friend (plural/formal)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which weak genitive pronoun means 'her' (belonging to a female)?",
-          "options": ["του", "της", "τους"],
-          "correctIndex": 1,
+          "options": [
+            "του",
+            "τους",
+            "της"
+          ],
+          "correctIndex": 2,
           "explanation": "'Της' is the weak genitive form for 'her' — e.g. η τσάντα της (her bag). 'Του' is his, 'τους' is their."
         }
       ]

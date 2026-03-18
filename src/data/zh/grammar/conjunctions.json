@@ -4,7 +4,9 @@
   "nameZh": "连词",
   "icon": "🔀",
   "tier": "B1",
-  "prerequisites": ["basic-sentence-structure"],
+  "prerequisites": [
+    "basic-sentence-structure"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,35 +15,58 @@
       "explanation": "The pair 因为...所以... (yīnwèi...suǒyǐ...) expresses cause and effect, meaning 'because...therefore...' In formal or written Chinese both halves are used together, but in everyday speech you can omit either half — using just 因为 to state the reason, or just 所以 to state the result. When both are used, 因为 introduces the cause clause and 所以 introduces the effect clause. Unlike English, you should never pair 因为 with 但是 — cause always leads to effect, not contrast.",
       "tip": "In conversation, dropping one half is natural. '因为下雨，我没去。' (I didn't go because it rained) and '下雨，所以我没去。' (It rained, so I didn't go) are both perfectly fine. Using both together sounds more complete and slightly more formal.",
       "examples": [
-        { "zh": "因为今天下雨，所以我不想出去。", "en": "Because it's raining today, I don't want to go out.", "highlight": "因为 所以" },
-        { "zh": "因为他很累，所以早早就睡了。", "en": "Because he was very tired, he went to bed early.", "highlight": "因为 所以" },
-        { "zh": "我没吃早饭，所以现在很饿。", "en": "I didn't eat breakfast, so I'm very hungry now.", "highlight": "所以" },
-        { "zh": "因为路太远，我们坐出租车去吧。", "en": "Because the road is too far, let's take a taxi.", "highlight": "因为" }
+        {
+          "zh": "因为今天下雨，所以我不想出去。",
+          "en": "Because it's raining today, I don't want to go out.",
+          "highlight": "因为 所以"
+        },
+        {
+          "zh": "因为他很累，所以早早就睡了。",
+          "en": "Because he was very tired, he went to bed early.",
+          "highlight": "因为 所以"
+        },
+        {
+          "zh": "我没吃早饭，所以现在很饿。",
+          "en": "I didn't eat breakfast, so I'm very hungry now.",
+          "highlight": "所以"
+        },
+        {
+          "zh": "因为路太远，我们坐出租车去吧。",
+          "en": "Because the road is too far, let's take a taxi.",
+          "highlight": "因为"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "因为他生病了，___ 没来上课。(Because he was sick, he didn't come to class.)",
-          "options": ["但是", "所以", "可是", "虽然"],
-          "correctIndex": 1,
+          "options": [
+            "所以",
+            "可是",
+            "但是",
+            "虽然"
+          ],
+          "correctIndex": 0,
           "explanation": "因为 (because) pairs with 所以 (therefore/so) for cause and effect. 但是 and 可是 express contrast, not effect."
         },
         {
           "type": "fill-blank",
           "prompt": "___ 我很喜欢中文，所以每天都学习。(Because I really like Chinese, I study every day.)",
-          "acceptedAnswers": ["因为"],
+          "acceptedAnswers": [
+            "因为"
+          ],
           "hint": "The second clause uses 所以 (so/therefore). What word introduces the reason clause?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 因为...所以...?",
           "options": [
-            "因为他很高兴，所以考试考得很好。",
-            "因为他很高兴，但是考试考得很好。",
             "所以他很高兴，因为考试考得很好。",
-            "虽然他很高兴，所以考试考得很好。"
+            "因为他很高兴，但是考试考得很好。",
+            "虽然他很高兴，所以考试考得很好。",
+            "因为他很高兴，所以考试考得很好。"
           ],
-          "correctIndex": 0,
+          "correctIndex": 3,
           "explanation": "因为 introduces the cause and 所以 introduces the effect. You cannot mix 因为 with 但是, and 所以 cannot come before 因为."
         }
       ]
@@ -52,35 +77,58 @@
       "explanation": "The pair 虽然...但是... (suīrán...dànshì...) means 'although...but...' It expresses a concession: the first clause sets up an expectation, and the second clause contradicts it. In Chinese, unlike English, you MUST include 但是 (or 可是) after 虽然 — you cannot use 虽然 alone without the contrasting clause. 可是 (kěshì) works just like 但是 and is slightly more colloquial. You can also use 却 (què) as a more literary alternative that goes directly before the verb.",
       "tip": "English says 'although...∅' (no 'but'), but Chinese requires both halves: 虽然...但是/可是... Always pair them! Think of it as: 虽然 is a promise that a 但是 is coming.",
       "examples": [
-        { "zh": "虽然很贵，但是质量很好。", "en": "Although it's expensive, the quality is very good.", "highlight": "虽然 但是" },
-        { "zh": "虽然他很年轻，可是很有经验。", "en": "Although he is young, he is very experienced.", "highlight": "虽然 可是" },
-        { "zh": "虽然我学了三年中文，但是还说得不太好。", "en": "Although I've studied Chinese for three years, I still don't speak it very well.", "highlight": "虽然 但是" },
-        { "zh": "虽然天气很冷，但是他还是去跑步了。", "en": "Although the weather was very cold, he still went running.", "highlight": "虽然 但是 还是" }
+        {
+          "zh": "虽然很贵，但是质量很好。",
+          "en": "Although it's expensive, the quality is very good.",
+          "highlight": "虽然 但是"
+        },
+        {
+          "zh": "虽然他很年轻，可是很有经验。",
+          "en": "Although he is young, he is very experienced.",
+          "highlight": "虽然 可是"
+        },
+        {
+          "zh": "虽然我学了三年中文，但是还说得不太好。",
+          "en": "Although I've studied Chinese for three years, I still don't speak it very well.",
+          "highlight": "虽然 但是"
+        },
+        {
+          "zh": "虽然天气很冷，但是他还是去跑步了。",
+          "en": "Although the weather was very cold, he still went running.",
+          "highlight": "虽然 但是 还是"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "虽然这个菜很辣，___ 我很喜欢吃。(Although this dish is very spicy, I really like eating it.)",
-          "options": ["所以", "因为", "但是", "而且"],
-          "correctIndex": 2,
+          "options": [
+            "所以",
+            "但是",
+            "因为",
+            "而且"
+          ],
+          "correctIndex": 1,
           "explanation": "虽然 (although) must pair with 但是 (but) or 可是. It expresses concession — the result is unexpected given the first clause."
         },
         {
           "type": "fill-blank",
           "prompt": "___ 他很忙，但是每天都运动。(Although he is very busy, he exercises every day.)",
-          "acceptedAnswers": ["虽然"],
+          "acceptedAnswers": [
+            "虽然"
+          ],
           "hint": "The second clause uses 但是 (but). What word means 'although' and pairs with 但是?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is INCORRECT?",
           "options": [
-            "虽然他累了，但是还在工作。",
-            "虽然很难，可是我不放弃。",
+            "虽然她很高，所以打篮球很好。",
             "虽然下雨了，我还是去了。",
-            "虽然她很高，所以打篮球很好。"
+            "虽然他累了，但是还在工作。",
+            "虽然很难，可是我不放弃。"
           ],
-          "correctIndex": 3,
+          "correctIndex": 0,
           "explanation": "虽然 must pair with 但是 or 可是 (concession), never with 所以 (cause-effect). Option C is acceptable because 还是 ('still') can serve the contrasting role."
         }
       ]
@@ -91,35 +139,59 @@
       "explanation": "The pair 如果...就... (rúguǒ...jiù...) means 'if...then...' 如果 introduces the condition, and 就 (placed before the verb in the result clause) signals the consequence. 就 is an adverb, not a conjunction, so it goes before the verb — not at the start of the clause. You can omit 如果 when the conditional meaning is clear from context, leaving just 就 in the result clause. 要是 (yàoshi) is a more colloquial synonym for 如果.",
       "tip": "Remember that 就 is NOT at the start of the result clause — it goes right before the verb: '你来，我就高兴' (If you come, I will be happy), not '你来，就我高兴.' Think of 就 as hugging the verb.",
       "examples": [
-        { "zh": "如果明天下雨，我们就不去了。", "en": "If it rains tomorrow, we won't go.", "highlight": "如果 就" },
-        { "zh": "如果你有时间，就来我家吧。", "en": "If you have time, come to my house.", "highlight": "如果 就" },
-        { "zh": "如果你不懂，就问老师。", "en": "If you don't understand, ask the teacher.", "highlight": "如果 就" },
-        { "zh": "要是太贵了，我们就不买了。", "en": "If it's too expensive, we won't buy it.", "highlight": "要是 就" }
+        {
+          "zh": "如果明天下雨，我们就不去了。",
+          "en": "If it rains tomorrow, we won't go.",
+          "highlight": "如果 就"
+        },
+        {
+          "zh": "如果你有时间，就来我家吧。",
+          "en": "If you have time, come to my house.",
+          "highlight": "如果 就"
+        },
+        {
+          "zh": "如果你不懂，就问老师。",
+          "en": "If you don't understand, ask the teacher.",
+          "highlight": "如果 就"
+        },
+        {
+          "zh": "要是太贵了，我们就不买了。",
+          "en": "If it's too expensive, we won't buy it.",
+          "highlight": "要是 就"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "如果你喜欢，我 ___ 送给你。(If you like it, I'll give it to you.)",
-          "options": ["才", "都", "就", "也"],
-          "correctIndex": 2,
+          "options": [
+            "都",
+            "就",
+            "也",
+            "才"
+          ],
+          "correctIndex": 1,
           "explanation": "如果 (if) pairs with 就 (then) before the verb to express a conditional result."
         },
         {
           "type": "fill-blank",
           "prompt": "___ 明天天气好，我们就去爬山。(If the weather is good tomorrow, we'll go hiking.)",
-          "acceptedAnswers": ["如果", "要是"],
+          "acceptedAnswers": [
+            "如果",
+            "要是"
+          ],
           "hint": "The result clause has 就. What word introduces the 'if' condition? Both the formal and colloquial versions are accepted."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence places 就 correctly?",
           "options": [
+            "如果你累了，休息一下就吧。",
             "如果你累了，就休息一下吧。",
-            "如果你累了，休息就一下吧。",
             "就如果你累了，休息一下吧。",
-            "如果你累了，休息一下就吧。"
+            "如果你累了，休息就一下吧。"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "就 must go directly before the verb (就休息). It cannot be placed after the verb or at the start of the sentence."
         }
       ]
@@ -130,35 +202,59 @@
       "explanation": "Chinese has several paired conjunctions that connect clauses in an additive or parallel way. 不但...而且... (bùdàn...érqiě...) means 'not only...but also...' and adds emphasis to the second, more significant point. 又...又... (yòu...yòu...) means 'both...and...' and links two qualities or actions that are simultaneously true. 一边...一边... (yìbiān...yìbiān...) means 'while...at the same time...' and describes two actions happening at once. 既...也... (jì...yě...) means 'both...and also...' similar to 又...又... but slightly more formal.",
       "tip": "Use 又...又... for adjectives or states (又便宜又好吃 = both cheap and tasty). Use 一边...一边... for actions happening simultaneously (一边吃一边看 = eating while watching). Use 不但...而且... when the second point is more important or surprising than the first.",
       "examples": [
-        { "zh": "她不但会说中文，而且会说日语。", "en": "She can not only speak Chinese, but also Japanese.", "highlight": "不但 而且" },
-        { "zh": "这个菜又便宜又好吃。", "en": "This dish is both cheap and delicious.", "highlight": "又 又" },
-        { "zh": "他喜欢一边听音乐一边跑步。", "en": "He likes to listen to music while running.", "highlight": "一边 一边" },
-        { "zh": "这个地方既安静也很方便。", "en": "This place is both quiet and very convenient.", "highlight": "既 也" }
+        {
+          "zh": "她不但会说中文，而且会说日语。",
+          "en": "She can not only speak Chinese, but also Japanese.",
+          "highlight": "不但 而且"
+        },
+        {
+          "zh": "这个菜又便宜又好吃。",
+          "en": "This dish is both cheap and delicious.",
+          "highlight": "又 又"
+        },
+        {
+          "zh": "他喜欢一边听音乐一边跑步。",
+          "en": "He likes to listen to music while running.",
+          "highlight": "一边 一边"
+        },
+        {
+          "zh": "这个地方既安静也很方便。",
+          "en": "This place is both quiet and very convenient.",
+          "highlight": "既 也"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "这个房间又大 ___ 亮。(This room is both big and bright.)",
-          "options": ["又", "也", "而且", "一边"],
-          "correctIndex": 0,
+          "options": [
+            "也",
+            "而且",
+            "又",
+            "一边"
+          ],
+          "correctIndex": 2,
           "explanation": "又...又... is used to describe two qualities that are both true. The pattern requires 又 before each adjective."
         },
         {
           "type": "fill-blank",
           "prompt": "他不但聪明，___ 很努力。(He is not only smart, but also very hardworking.)",
-          "acceptedAnswers": ["而且", "而且还"],
+          "acceptedAnswers": [
+            "而且",
+            "而且还"
+          ],
           "hint": "不但 (not only) pairs with what word meaning 'but also'?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 一边...一边...?",
           "options": [
-            "她一边唱歌一边跳舞。",
             "她一边唱歌而且跳舞。",
+            "她一边唱歌所以跳舞。",
             "她又唱歌一边跳舞。",
-            "她一边唱歌所以跳舞。"
+            "她一边唱歌一边跳舞。"
           ],
-          "correctIndex": 0,
+          "correctIndex": 3,
           "explanation": "一边...一边... links two simultaneous actions. Both 一边 must be present, each before its respective verb."
         }
       ]

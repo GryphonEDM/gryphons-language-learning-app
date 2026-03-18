@@ -4,7 +4,9 @@
   "nameUk": "Прийменники",
   "icon": "📍",
   "tier": "A2",
-  "prerequisites": ["cases-nom-acc"],
+  "prerequisites": [
+    "cases-nom-acc"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -12,27 +14,153 @@
       "title": "Location Prepositions",
       "explanation": "Location prepositions answer 'where?' (де?). Key ones: в/у (in), на (on/at), під (under), над (above), біля (near), між (between). В/у and на are used with the locative case for location. Під, над, між use the instrumental case.",
       "examples": [
-        { "uk": "Книга на столі.", "en": "The book is on the table.", "highlight": "на столі" },
-        { "uk": "Він у кімнаті.", "en": "He is in the room.", "highlight": "у кімнаті" },
-        { "uk": "Кіт під ліжком.", "en": "The cat is under the bed.", "highlight": "під ліжком" }
+        {
+          "uk": "Книга на столі.",
+          "en": "The book is on the table.",
+          "highlight": "на столі"
+        },
+        {
+          "uk": "Він у кімнаті.",
+          "en": "He is in the room.",
+          "highlight": "у кімнаті"
+        },
+        {
+          "uk": "Кіт під ліжком.",
+          "en": "The cat is under the bed.",
+          "highlight": "під ліжком"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Діти грають ___ дворі. (in the)", "options": ["у", "на", "під"], "correctIndex": 0, "explanation": "У/в дворі — 'in the yard'. We use у/в for enclosed or defined spaces." },
-        { "type": "fill-blank", "prompt": "Лампа стоїть ___ столі. (on)", "acceptedAnswers": ["на"], "hint": "On a surface = на", "explanation": "На столі — 'on the table'. На indicates location on a surface." },
-        { "type": "fill-blank", "prompt": "Собака сидить ___ деревом. (under)", "acceptedAnswers": ["під"], "hint": "Under = під + instrumental", "explanation": "Під деревом — 'under the tree'. Під takes the instrumental case." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Картина висить на стіна.", "errorWord": "стіна", "acceptedAnswers": ["стіні"], "explanation": "На + location requires the locative case: стіна → стіні." },
-        { "type": "multiple-choice", "prompt": "Аптека ___ нашого дому. (near)", "options": ["біля", "над", "між"], "correctIndex": 0, "explanation": "Біля means 'near' and takes the genitive case: біля нашого дому." },
-        { "type": "matching", "prompt": "Match the preposition to its meaning:", "pairs": [
-          { "left": "в/у", "right": "in" },
-          { "left": "на", "right": "on/at" },
-          { "left": "під", "right": "under" },
-          { "left": "над", "right": "above" },
-          { "left": "біля", "right": "near" }
-        ], "explanation": "These are the five core location prepositions in Ukrainian." },
-        { "type": "transformation", "prompt": "Complete with the correct preposition:", "baseWord": "між", "context": "Банк знаходиться ___ поштою і аптекою.", "acceptedAnswers": ["між"], "hint": "Between = між + instrumental", "explanation": "Між поштою і аптекою — 'between the post office and the pharmacy'. Між takes the instrumental." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "The bird is above the tree.", "words": ["Птах", "над", "деревом"], "distractors": ["під"], "validOrders": [["Птах", "над", "деревом"]], "explanation": "Над деревом — 'above the tree'. Над takes the instrumental case." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Кафе знаходиться біля парку.", "acceptedAnswers": ["Кафе знаходиться біля парку.", "Кафе знаходиться біля парку"], "explanation": "Біля парку — 'near the park'. Біля takes the genitive: парк → парку." },
-        { "type": "multiple-choice", "prompt": "Ми живемо ___ Україні. (in)", "options": ["в", "на", "до"], "correctIndex": 0, "explanation": "В Україні — 'in Ukraine'. Note: historically на Україні was common, but в Україні is the standard modern Ukrainian form." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Діти грають ___ дворі. (in the)",
+          "options": [
+            "на",
+            "під",
+            "у"
+          ],
+          "correctIndex": 2,
+          "explanation": "У/в дворі — 'in the yard'. We use у/в for enclosed or defined spaces."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Лампа стоїть ___ столі. (on)",
+          "acceptedAnswers": [
+            "на"
+          ],
+          "hint": "On a surface = на",
+          "explanation": "На столі — 'on the table'. На indicates location on a surface."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Собака сидить ___ деревом. (under)",
+          "acceptedAnswers": [
+            "під"
+          ],
+          "hint": "Under = під + instrumental",
+          "explanation": "Під деревом — 'under the tree'. Під takes the instrumental case."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Картина висить на стіна.",
+          "errorWord": "стіна",
+          "acceptedAnswers": [
+            "стіні"
+          ],
+          "explanation": "На + location requires the locative case: стіна → стіні."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Аптека ___ нашого дому. (near)",
+          "options": [
+            "між",
+            "біля",
+            "над"
+          ],
+          "correctIndex": 1,
+          "explanation": "Біля means 'near' and takes the genitive case: біля нашого дому."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the preposition to its meaning:",
+          "pairs": [
+            {
+              "left": "в/у",
+              "right": "in"
+            },
+            {
+              "left": "на",
+              "right": "on/at"
+            },
+            {
+              "left": "під",
+              "right": "under"
+            },
+            {
+              "left": "над",
+              "right": "above"
+            },
+            {
+              "left": "біля",
+              "right": "near"
+            }
+          ],
+          "explanation": "These are the five core location prepositions in Ukrainian."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Complete with the correct preposition:",
+          "baseWord": "між",
+          "context": "Банк знаходиться ___ поштою і аптекою.",
+          "acceptedAnswers": [
+            "між"
+          ],
+          "hint": "Between = між + instrumental",
+          "explanation": "Між поштою і аптекою — 'between the post office and the pharmacy'. Між takes the instrumental."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "The bird is above the tree.",
+          "words": [
+            "Птах",
+            "над",
+            "деревом"
+          ],
+          "distractors": [
+            "під"
+          ],
+          "validOrders": [
+            [
+              "Птах",
+              "над",
+              "деревом"
+            ]
+          ],
+          "explanation": "Над деревом — 'above the tree'. Над takes the instrumental case."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Кафе знаходиться біля парку.",
+          "acceptedAnswers": [
+            "Кафе знаходиться біля парку.",
+            "Кафе знаходиться біля парку"
+          ],
+          "explanation": "Біля парку — 'near the park'. Біля takes the genitive: парк → парку."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ми живемо ___ Україні. (in)",
+          "options": [
+            "до",
+            "на",
+            "в"
+          ],
+          "correctIndex": 2,
+          "explanation": "В Україні — 'in Ukraine'. Note: historically на Україні was common, but в Україні is the standard modern Ukrainian form."
+        }
       ]
     },
     {
@@ -40,27 +168,157 @@
       "title": "Direction Prepositions",
       "explanation": "Direction prepositions answer 'where to?' (куди?) or 'where from?' (звідки?). Key ones: до (to, towards) + genitive, від (from, away from) + genitive, з/із (from, out of) + genitive, через (through, across) + accusative, у/в (into) + accusative.",
       "examples": [
-        { "uk": "Я іду до школи.", "en": "I am going to school.", "highlight": "до школи" },
-        { "uk": "Він вийшов з дому.", "en": "He went out of the house.", "highlight": "з дому" },
-        { "uk": "Ми йдемо через парк.", "en": "We are going through the park.", "highlight": "через парк" }
+        {
+          "uk": "Я іду до школи.",
+          "en": "I am going to school.",
+          "highlight": "до школи"
+        },
+        {
+          "uk": "Він вийшов з дому.",
+          "en": "He went out of the house.",
+          "highlight": "з дому"
+        },
+        {
+          "uk": "Ми йдемо через парк.",
+          "en": "We are going through the park.",
+          "highlight": "через парк"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я їду ___ Києва. (to)", "options": ["до", "від", "з"], "correctIndex": 0, "explanation": "До Києва — 'to Kyiv'. До (to/towards) takes the genitive case." },
-        { "type": "fill-blank", "prompt": "Потяг їде ___ Львова. (from)", "acceptedAnswers": ["від", "з", "із"], "hint": "From a place = від or з + genitive", "explanation": "Від/з Львова — 'from Lviv'. Both від and з can mean 'from', though від emphasizes 'away from' and з emphasizes 'out of'." },
-        { "type": "fill-blank", "prompt": "Ми перейшли ___ дорогу. (across)", "acceptedAnswers": ["через"], "hint": "Across/through = через + accusative", "explanation": "Через дорогу — 'across the road'. Через takes the accusative case." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я іду до магазин.", "errorWord": "магазин", "acceptedAnswers": ["магазину"], "explanation": "До requires the genitive case: магазин → магазину." },
-        { "type": "multiple-choice", "prompt": "Діти вибігли ___ школи. (out of)", "options": ["з", "до", "через"], "correctIndex": 0, "explanation": "З школи — 'out of school'. З/із means 'from/out of' and takes the genitive." },
-        { "type": "matching", "prompt": "Match each preposition to its direction meaning:", "pairs": [
-          { "left": "до", "right": "to, towards" },
-          { "left": "від", "right": "from, away from" },
-          { "left": "з/із", "right": "from, out of" },
-          { "left": "через", "right": "through, across" },
-          { "left": "у/в (+ acc.)", "right": "into" }
-        ], "explanation": "Direction prepositions: до/від/з take the genitive; через takes the accusative; в/у with direction takes the accusative." },
-        { "type": "transformation", "prompt": "Complete the sentence with the correct preposition and form:", "baseWord": "лікарня", "context": "Вона пішла ___ ___.", "acceptedAnswers": ["до лікарні"], "hint": "To the hospital: до + genitive", "explanation": "До лікарні — 'to the hospital'. Лікарня → лікарні in the genitive." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I came from work.", "words": ["Я", "прийшов", "з", "роботи"], "distractors": ["до"], "validOrders": [["Я", "прийшов", "з", "роботи"]], "explanation": "З роботи — 'from work'. З + genitive for origin/source." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він їде від бабусі до дідуся.", "acceptedAnswers": ["Він їде від бабусі до дідуся.", "Він їде від бабусі до дідуся"], "explanation": "Від бабусі (from grandma) до дідуся (to grandpa). Both prepositions take the genitive." },
-        { "type": "multiple-choice", "prompt": "Вона зайшла ___ магазин. (into)", "options": ["в", "від", "з"], "correctIndex": 0, "explanation": "В магазин — 'into the store'. В/у + accusative for entering (direction)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я їду ___ Києва. (to)",
+          "options": [
+            "від",
+            "до",
+            "з"
+          ],
+          "correctIndex": 1,
+          "explanation": "До Києва — 'to Kyiv'. До (to/towards) takes the genitive case."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Потяг їде ___ Львова. (from)",
+          "acceptedAnswers": [
+            "від",
+            "з",
+            "із"
+          ],
+          "hint": "From a place = від or з + genitive",
+          "explanation": "Від/з Львова — 'from Lviv'. Both від and з can mean 'from', though від emphasizes 'away from' and з emphasizes 'out of'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми перейшли ___ дорогу. (across)",
+          "acceptedAnswers": [
+            "через"
+          ],
+          "hint": "Across/through = через + accusative",
+          "explanation": "Через дорогу — 'across the road'. Через takes the accusative case."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я іду до магазин.",
+          "errorWord": "магазин",
+          "acceptedAnswers": [
+            "магазину"
+          ],
+          "explanation": "До requires the genitive case: магазин → магазину."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Діти вибігли ___ школи. (out of)",
+          "options": [
+            "до",
+            "з",
+            "через"
+          ],
+          "correctIndex": 1,
+          "explanation": "З школи — 'out of school'. З/із means 'from/out of' and takes the genitive."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each preposition to its direction meaning:",
+          "pairs": [
+            {
+              "left": "до",
+              "right": "to, towards"
+            },
+            {
+              "left": "від",
+              "right": "from, away from"
+            },
+            {
+              "left": "з/із",
+              "right": "from, out of"
+            },
+            {
+              "left": "через",
+              "right": "through, across"
+            },
+            {
+              "left": "у/в (+ acc.)",
+              "right": "into"
+            }
+          ],
+          "explanation": "Direction prepositions: до/від/з take the genitive; через takes the accusative; в/у with direction takes the accusative."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Complete the sentence with the correct preposition and form:",
+          "baseWord": "лікарня",
+          "context": "Вона пішла ___ ___.",
+          "acceptedAnswers": [
+            "до лікарні"
+          ],
+          "hint": "To the hospital: до + genitive",
+          "explanation": "До лікарні — 'to the hospital'. Лікарня → лікарні in the genitive."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I came from work.",
+          "words": [
+            "Я",
+            "прийшов",
+            "з",
+            "роботи"
+          ],
+          "distractors": [
+            "до"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "прийшов",
+              "з",
+              "роботи"
+            ]
+          ],
+          "explanation": "З роботи — 'from work'. З + genitive for origin/source."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Він їде від бабусі до дідуся.",
+          "acceptedAnswers": [
+            "Він їде від бабусі до дідуся.",
+            "Він їде від бабусі до дідуся"
+          ],
+          "explanation": "Від бабусі (from grandma) до дідуся (to grandpa). Both prepositions take the genitive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Вона зайшла ___ магазин. (into)",
+          "options": [
+            "від",
+            "в",
+            "з"
+          ],
+          "correctIndex": 1,
+          "explanation": "В магазин — 'into the store'. В/у + accusative for entering (direction)."
+        }
       ]
     },
     {
@@ -68,27 +326,157 @@
       "title": "Other Common Prepositions",
       "explanation": "Additional high-frequency prepositions: з/із (with) + instrumental, без (without) + genitive, для (for) + genitive, про (about) + accusative, за (behind/for) + accusative or instrumental, перед (before/in front of) + instrumental.",
       "examples": [
-        { "uk": "Кава з молоком.", "en": "Coffee with milk.", "highlight": "з молоком" },
-        { "uk": "Чай без цукру.", "en": "Tea without sugar.", "highlight": "без цукру" },
-        { "uk": "Розкажи про себе.", "en": "Tell about yourself.", "highlight": "про себе" }
+        {
+          "uk": "Кава з молоком.",
+          "en": "Coffee with milk.",
+          "highlight": "з молоком"
+        },
+        {
+          "uk": "Чай без цукру.",
+          "en": "Tea without sugar.",
+          "highlight": "без цукру"
+        },
+        {
+          "uk": "Розкажи про себе.",
+          "en": "Tell about yourself.",
+          "highlight": "про себе"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я п'ю чай ___ цукром. (with)", "options": ["з", "без", "для"], "correctIndex": 0, "explanation": "З цукром — 'with sugar'. З + instrumental means 'with'." },
-        { "type": "fill-blank", "prompt": "Він живе ___ батьків. (without)", "acceptedAnswers": ["без"], "hint": "Without = без + genitive", "explanation": "Без батьків — 'without parents'. Без takes the genitive case." },
-        { "type": "fill-blank", "prompt": "Це подарунок ___ тебе. (for)", "acceptedAnswers": ["для"], "hint": "For (purpose/recipient) = для + genitive", "explanation": "Для тебе — 'for you'. Для takes the genitive case." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Ми говорили про вона.", "errorWord": "вона", "acceptedAnswers": ["неї"], "explanation": "After a preposition, вона becomes неї: про неї — 'about her'." },
-        { "type": "multiple-choice", "prompt": "Дякую ___ допомогу! (for — thanking)", "options": ["за", "для", "про"], "correctIndex": 0, "explanation": "Дякую за допомогу — 'thank you for the help'. За + accusative is used with дякувати." },
-        { "type": "matching", "prompt": "Match the preposition to the case it requires:", "pairs": [
-          { "left": "з (with)", "right": "instrumental" },
-          { "left": "без (without)", "right": "genitive" },
-          { "left": "для (for)", "right": "genitive" },
-          { "left": "про (about)", "right": "accusative" },
-          { "left": "перед (in front of)", "right": "instrumental" }
-        ], "explanation": "Each preposition governs a specific case: з/перед + instrumental; без/для + genitive; про + accusative." },
-        { "type": "transformation", "prompt": "Complete with the correct preposition:", "baseWord": "за", "context": "Кіт сховався ___ диваном.", "acceptedAnswers": ["за"], "hint": "Behind = за + instrumental (location)", "explanation": "За диваном — 'behind the sofa'. За + instrumental for location behind something." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I am reading a book about Ukraine.", "words": ["Я", "читаю", "книгу", "про", "Україну"], "distractors": ["для"], "validOrders": [["Я", "читаю", "книгу", "про", "Україну"]], "explanation": "Про Україну — 'about Ukraine'. Про takes the accusative case." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Вона стоїть перед дзеркалом.", "acceptedAnswers": ["Вона стоїть перед дзеркалом.", "Вона стоїть перед дзеркалом"], "explanation": "Перед дзеркалом — 'in front of the mirror'. Перед takes the instrumental." },
-        { "type": "multiple-choice", "prompt": "Хліб ___ маслом — це смачно. (with)", "options": ["з", "без", "про"], "correctIndex": 0, "explanation": "З маслом — 'with butter'. З + instrumental: масло → маслом." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я п'ю чай ___ цукром. (with)",
+          "options": [
+            "з",
+            "без",
+            "для"
+          ],
+          "correctIndex": 0,
+          "explanation": "З цукром — 'with sugar'. З + instrumental means 'with'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він живе ___ батьків. (without)",
+          "acceptedAnswers": [
+            "без"
+          ],
+          "hint": "Without = без + genitive",
+          "explanation": "Без батьків — 'without parents'. Без takes the genitive case."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це подарунок ___ тебе. (for)",
+          "acceptedAnswers": [
+            "для"
+          ],
+          "hint": "For (purpose/recipient) = для + genitive",
+          "explanation": "Для тебе — 'for you'. Для takes the genitive case."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Ми говорили про вона.",
+          "errorWord": "вона",
+          "acceptedAnswers": [
+            "неї"
+          ],
+          "explanation": "After a preposition, вона becomes неї: про неї — 'about her'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Дякую ___ допомогу! (for — thanking)",
+          "options": [
+            "про",
+            "за",
+            "для"
+          ],
+          "correctIndex": 1,
+          "explanation": "Дякую за допомогу — 'thank you for the help'. За + accusative is used with дякувати."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the preposition to the case it requires:",
+          "pairs": [
+            {
+              "left": "з (with)",
+              "right": "instrumental"
+            },
+            {
+              "left": "без (without)",
+              "right": "genitive"
+            },
+            {
+              "left": "для (for)",
+              "right": "genitive"
+            },
+            {
+              "left": "про (about)",
+              "right": "accusative"
+            },
+            {
+              "left": "перед (in front of)",
+              "right": "instrumental"
+            }
+          ],
+          "explanation": "Each preposition governs a specific case: з/перед + instrumental; без/для + genitive; про + accusative."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Complete with the correct preposition:",
+          "baseWord": "за",
+          "context": "Кіт сховався ___ диваном.",
+          "acceptedAnswers": [
+            "за"
+          ],
+          "hint": "Behind = за + instrumental (location)",
+          "explanation": "За диваном — 'behind the sofa'. За + instrumental for location behind something."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I am reading a book about Ukraine.",
+          "words": [
+            "Я",
+            "читаю",
+            "книгу",
+            "про",
+            "Україну"
+          ],
+          "distractors": [
+            "для"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "читаю",
+              "книгу",
+              "про",
+              "Україну"
+            ]
+          ],
+          "explanation": "Про Україну — 'about Ukraine'. Про takes the accusative case."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Вона стоїть перед дзеркалом.",
+          "acceptedAnswers": [
+            "Вона стоїть перед дзеркалом.",
+            "Вона стоїть перед дзеркалом"
+          ],
+          "explanation": "Перед дзеркалом — 'in front of the mirror'. Перед takes the instrumental."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Хліб ___ маслом — це смачно. (with)",
+          "options": [
+            "без",
+            "про",
+            "з"
+          ],
+          "correctIndex": 2,
+          "explanation": "З маслом — 'with butter'. З + instrumental: масло → маслом."
+        }
       ]
     },
     {
@@ -96,32 +484,179 @@
       "title": "Prepositions + Cases",
       "explanation": "The most challenging aspect of Ukrainian prepositions is knowing which case follows each one. Some prepositions change meaning depending on the case: в/у + accusative = direction (into), в/у + locative = location (in). На + accusative = direction (onto), на + locative = location (on). За + accusative = for/during, за + instrumental = behind.",
       "examples": [
-        { "uk": "Я іду в магазин. (direction → accusative)", "en": "I am going to the store.", "highlight": "в магазин" },
-        { "uk": "Я в магазині. (location → locative)", "en": "I am in the store.", "highlight": "в магазині" },
-        { "uk": "За столом сидить бабуся. (behind → instrumental)", "en": "Grandma is sitting at the table.", "highlight": "За столом" }
+        {
+          "uk": "Я іду в магазин. (direction → accusative)",
+          "en": "I am going to the store.",
+          "highlight": "в магазин"
+        },
+        {
+          "uk": "Я в магазині. (location → locative)",
+          "en": "I am in the store.",
+          "highlight": "в магазині"
+        },
+        {
+          "uk": "За столом сидить бабуся. (behind → instrumental)",
+          "en": "Grandma is sitting at the table.",
+          "highlight": "За столом"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Він іде в ___. (school — direction)", "options": ["школу", "школі", "школи"], "correctIndex": 0, "explanation": "В + direction → accusative: школа → школу. He is going TO school." },
-        { "type": "fill-blank", "prompt": "Він ___ школі. (in — location)", "acceptedAnswers": ["в", "у"], "hint": "Location = в/у + locative", "explanation": "В/у школі — 'in school'. Location uses в/у + locative case." },
-        { "type": "fill-blank", "prompt": "Кішка стрибнула на ___. (table — direction onto)", "acceptedAnswers": ["стіл"], "hint": "На + direction → accusative; стіл is masculine inanimate", "explanation": "На стіл — 'onto the table'. Direction: на + accusative. Стіл stays the same (inanimate masculine = nominative)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Книга лежить на стіл.", "errorWord": "стіл", "acceptedAnswers": ["столі"], "explanation": "Location (lying on) requires locative: на столі, not на стіл (which would mean direction)." },
-        { "type": "multiple-choice", "prompt": "Ми поїхали ___ море. (to the sea — direction)", "options": ["на", "в", "біля"], "correctIndex": 0, "explanation": "На море — 'to the sea'. With bodies of water and open spaces, Ukrainian uses на for direction." },
-        { "type": "matching", "prompt": "Match the preposition + case to the correct meaning:", "pairs": [
-          { "left": "в + accusative", "right": "into (direction)" },
-          { "left": "в + locative", "right": "in (location)" },
-          { "left": "на + accusative", "right": "onto (direction)" },
-          { "left": "на + locative", "right": "on (location)" },
-          { "left": "за + instrumental", "right": "behind (location)" }
-        ], "explanation": "The same preposition can have different meanings depending on which case follows it." },
-        { "type": "transformation", "prompt": "Choose the correct case after the preposition:", "baseWord": "парк", "context": "Ми гуляємо в ___.", "acceptedAnswers": ["парку"], "hint": "Location → locative case", "explanation": "В парку — 'in the park'. Location requires the locative: парк → парку." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She put the cup on the table.", "words": ["Вона", "поставила", "чашку", "на", "стіл"], "distractors": ["столі"], "validOrders": [["Вона", "поставила", "чашку", "на", "стіл"]], "explanation": "Putting something onto → direction → на + accusative: на стіл (not на столі, which is location)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Діти бігають у дворі.", "acceptedAnswers": ["Діти бігають у дворі.", "Діти бігають у дворі"], "explanation": "У дворі — 'in the yard'. Location → у + locative." },
-        { "type": "table-fill", "prompt": "Complete the table — choose the correct form after the preposition:", "headers": ["Preposition + Noun", "Location (де?)", "Direction (куди?)"], "rows": [
-          { "label": "в + місто", "answer": "в місті / в місто", "prefilled": false },
-          { "label": "на + вулиця", "answer": "на вулиці / на вулицю", "prefilled": false },
-          { "label": "в + ліс", "answer": "в лісі / в ліс", "prefilled": false },
-          { "label": "на + площа", "answer": "на площі / на площу", "prefilled": false }
-        ], "explanation": "Location = locative case (місті, вулиці, лісі, площі). Direction = accusative case (місто, вулицю, ліс, площу)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Він іде в ___. (school — direction)",
+          "options": [
+            "школі",
+            "школу",
+            "школи"
+          ],
+          "correctIndex": 1,
+          "explanation": "В + direction → accusative: школа → школу. He is going TO school."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він ___ школі. (in — location)",
+          "acceptedAnswers": [
+            "в",
+            "у"
+          ],
+          "hint": "Location = в/у + locative",
+          "explanation": "В/у школі — 'in school'. Location uses в/у + locative case."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Кішка стрибнула на ___. (table — direction onto)",
+          "acceptedAnswers": [
+            "стіл"
+          ],
+          "hint": "На + direction → accusative; стіл is masculine inanimate",
+          "explanation": "На стіл — 'onto the table'. Direction: на + accusative. Стіл stays the same (inanimate masculine = nominative)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Книга лежить на стіл.",
+          "errorWord": "стіл",
+          "acceptedAnswers": [
+            "столі"
+          ],
+          "explanation": "Location (lying on) requires locative: на столі, not на стіл (which would mean direction)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ми поїхали ___ море. (to the sea — direction)",
+          "options": [
+            "на",
+            "біля",
+            "в"
+          ],
+          "correctIndex": 0,
+          "explanation": "На море — 'to the sea'. With bodies of water and open spaces, Ukrainian uses на for direction."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the preposition + case to the correct meaning:",
+          "pairs": [
+            {
+              "left": "в + accusative",
+              "right": "into (direction)"
+            },
+            {
+              "left": "в + locative",
+              "right": "in (location)"
+            },
+            {
+              "left": "на + accusative",
+              "right": "onto (direction)"
+            },
+            {
+              "left": "на + locative",
+              "right": "on (location)"
+            },
+            {
+              "left": "за + instrumental",
+              "right": "behind (location)"
+            }
+          ],
+          "explanation": "The same preposition can have different meanings depending on which case follows it."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Choose the correct case after the preposition:",
+          "baseWord": "парк",
+          "context": "Ми гуляємо в ___.",
+          "acceptedAnswers": [
+            "парку"
+          ],
+          "hint": "Location → locative case",
+          "explanation": "В парку — 'in the park'. Location requires the locative: парк → парку."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She put the cup on the table.",
+          "words": [
+            "Вона",
+            "поставила",
+            "чашку",
+            "на",
+            "стіл"
+          ],
+          "distractors": [
+            "столі"
+          ],
+          "validOrders": [
+            [
+              "Вона",
+              "поставила",
+              "чашку",
+              "на",
+              "стіл"
+            ]
+          ],
+          "explanation": "Putting something onto → direction → на + accusative: на стіл (not на столі, which is location)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Діти бігають у дворі.",
+          "acceptedAnswers": [
+            "Діти бігають у дворі.",
+            "Діти бігають у дворі"
+          ],
+          "explanation": "У дворі — 'in the yard'. Location → у + locative."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the table — choose the correct form after the preposition:",
+          "headers": [
+            "Preposition + Noun",
+            "Location (де?)",
+            "Direction (куди?)"
+          ],
+          "rows": [
+            {
+              "label": "в + місто",
+              "answer": "в місті / в місто",
+              "prefilled": false
+            },
+            {
+              "label": "на + вулиця",
+              "answer": "на вулиці / на вулицю",
+              "prefilled": false
+            },
+            {
+              "label": "в + ліс",
+              "answer": "в лісі / в ліс",
+              "prefilled": false
+            },
+            {
+              "label": "на + площа",
+              "answer": "на площі / на площу",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Location = locative case (місті, вулиці, лісі, площі). Direction = accusative case (місто, вулицю, ліс, площу)."
+        }
       ]
     }
   ]

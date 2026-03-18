@@ -13,29 +13,150 @@
       "explanation": "Ukrainian has 10 vowels: а, е, є, и, і, ї, о, у, ю, я. Six are \"plain\" vowels (а, е, и, і, о, у) with one sound each. Four are \"iotated\" vowels (є, ї, ю, я) — they represent TWO sounds (й + vowel) at the start of a word, after another vowel, or after an apostrophe. For example, я = й+а (ya), ї = й+і (yi). After a consonant, iotated vowels soften it instead: мя sounds like 'mya', not 'mйа'.",
       "tip": "Iotated vowels: є=ye, ї=yi, ю=yu, я=ya. Plain vowels: а=ah, е=eh, и=ih, і=ee, о=oh, у=oo",
       "examples": [
-        { "uk": "Мама", "en": "Mom", "highlight": "а" },
-        { "uk": "Місто", "en": "City", "highlight": "і" },
-        { "uk": "Україна", "en": "Ukraine (ї = й+і after vowel)", "highlight": "ї" },
-        { "uk": "Яблуко", "en": "Apple (я = й+а at word start)", "highlight": "Я" },
-        { "uk": "Юнак", "en": "Young man (ю = й+у at word start)", "highlight": "Ю" },
-        { "uk": "М'ясо", "en": "Meat (я after apostrophe = й+а)", "highlight": "я" }
+        {
+          "uk": "Мама",
+          "en": "Mom",
+          "highlight": "а"
+        },
+        {
+          "uk": "Місто",
+          "en": "City",
+          "highlight": "і"
+        },
+        {
+          "uk": "Україна",
+          "en": "Ukraine (ї = й+і after vowel)",
+          "highlight": "ї"
+        },
+        {
+          "uk": "Яблуко",
+          "en": "Apple (я = й+а at word start)",
+          "highlight": "Я"
+        },
+        {
+          "uk": "Юнак",
+          "en": "Young man (ю = й+у at word start)",
+          "highlight": "Ю"
+        },
+        {
+          "uk": "М'ясо",
+          "en": "Meat (я after apostrophe = й+а)",
+          "highlight": "я"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which letter sounds like 'ee' in English?", "options": ["і", "и", "е"], "correctIndex": 0, "explanation": "The letter 'і' sounds like 'ee' in English. 'и' is between 'i' and 'e'." },
-        { "type": "multiple-choice", "prompt": "How many vowels does Ukrainian have?", "options": ["10", "6", "12"], "correctIndex": 0, "explanation": "Ukrainian has 10 vowels: а, е, є, и, і, ї, о, у, ю, я." },
-        { "type": "fill-blank", "prompt": "The vowel in 'дім' (house) is ___", "acceptedAnswers": ["і"], "hint": "It sounds like 'ee'" },
-        { "type": "multiple-choice", "prompt": "Which vowel is NOT in Ukrainian?", "options": ["ы", "і", "е"], "correctIndex": 0, "explanation": "'ы' is a Russian vowel. Ukrainian uses 'и' instead." },
-        { "type": "matching", "prompt": "Match each vowel to its approximate English sound:", "pairs": [
-          { "left": "а", "right": "ah" },
-          { "left": "і", "right": "ee" },
-          { "left": "о", "right": "oh" },
-          { "left": "у", "right": "oo" }
-        ] },
-        { "type": "multiple-choice", "prompt": "Which letter represents TWO sounds (й+а)?", "options": ["я", "а", "и"], "correctIndex": 0, "explanation": "'я' is an iotated vowel that can represent й+а." },
-        { "type": "fill-blank", "prompt": "Complete: Укра_на", "acceptedAnswers": ["ї"], "hint": "This iotated vowel sounds like 'yee'" },
-        { "type": "multiple-choice", "prompt": "'и' in Ukrainian sounds closest to:", "options": ["English 'i' in 'bit'", "English 'ee' in 'see'", "English 'a' in 'cat'"], "correctIndex": 0, "explanation": "Ukrainian 'и' is between English 'i' in 'bit' and 'e' in 'bed'." },
-        { "type": "fill-blank", "prompt": "The first vowel in 'молоко' (milk) is ___", "acceptedAnswers": ["о"], "hint": "Sounds like 'oh'" },
-        { "type": "multiple-choice", "prompt": "Which pair are iotated vowels?", "options": ["є, ї, ю, я", "а, о, у, е", "и, і, е, о"], "correctIndex": 0, "explanation": "The iotated vowels are є, ї, ю, я — each can represent two sounds (й + vowel)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which letter sounds like 'ee' in English?",
+          "options": [
+            "і",
+            "е",
+            "и"
+          ],
+          "correctIndex": 0,
+          "explanation": "The letter 'і' sounds like 'ee' in English. 'и' is between 'i' and 'e'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many vowels does Ukrainian have?",
+          "options": [
+            "10",
+            "6",
+            "12"
+          ],
+          "correctIndex": 0,
+          "explanation": "Ukrainian has 10 vowels: а, е, є, и, і, ї, о, у, ю, я."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The vowel in 'дім' (house) is ___",
+          "acceptedAnswers": [
+            "і"
+          ],
+          "hint": "It sounds like 'ee'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which vowel is NOT in Ukrainian?",
+          "options": [
+            "і",
+            "е",
+            "ы"
+          ],
+          "correctIndex": 2,
+          "explanation": "'ы' is a Russian vowel. Ukrainian uses 'и' instead."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each vowel to its approximate English sound:",
+          "pairs": [
+            {
+              "left": "а",
+              "right": "ah"
+            },
+            {
+              "left": "і",
+              "right": "ee"
+            },
+            {
+              "left": "о",
+              "right": "oh"
+            },
+            {
+              "left": "у",
+              "right": "oo"
+            }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which letter represents TWO sounds (й+а)?",
+          "options": [
+            "а",
+            "и",
+            "я"
+          ],
+          "correctIndex": 2,
+          "explanation": "'я' is an iotated vowel that can represent й+а."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete: Укра_на",
+          "acceptedAnswers": [
+            "ї"
+          ],
+          "hint": "This iotated vowel sounds like 'yee'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'и' in Ukrainian sounds closest to:",
+          "options": [
+            "English 'ee' in 'see'",
+            "English 'i' in 'bit'",
+            "English 'a' in 'cat'"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ukrainian 'и' is between English 'i' in 'bit' and 'e' in 'bed'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The first vowel in 'молоко' (milk) is ___",
+          "acceptedAnswers": [
+            "о"
+          ],
+          "hint": "Sounds like 'oh'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair are iotated vowels?",
+          "options": [
+            "є, ї, ю, я",
+            "и, і, е, о",
+            "а, о, у, е"
+          ],
+          "correctIndex": 0,
+          "explanation": "The iotated vowels are є, ї, ю, я — each can represent two sounds (й + vowel)."
+        }
       ]
     },
     {
@@ -44,26 +165,136 @@
       "explanation": "Ukrainian has consonants similar to English plus a few unique ones: г (h-sound), ґ (hard g), щ (shch). The soft sign ь doesn't have its own sound — it softens the consonant before it. The apostrophe (') separates iotated vowels from consonants.",
       "tip": "г=h, ґ=g, х=kh, ц=ts, ч=ch, ш=sh, щ=shch",
       "examples": [
-        { "uk": "Ґанок", "en": "Porch", "highlight": "Ґ" },
-        { "uk": "День", "en": "Day", "highlight": "нь" },
-        { "uk": "Щастя", "en": "Happiness", "highlight": "Щ" }
+        {
+          "uk": "Ґанок",
+          "en": "Porch",
+          "highlight": "Ґ"
+        },
+        {
+          "uk": "День",
+          "en": "Day",
+          "highlight": "нь"
+        },
+        {
+          "uk": "Щастя",
+          "en": "Happiness",
+          "highlight": "Щ"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What sound does 'г' make in Ukrainian?", "options": ["h (as in 'hello')", "g (as in 'go')", "k (as in 'kit')"], "correctIndex": 0, "explanation": "Ukrainian 'г' is a voiced glottal fricative, like 'h' in English." },
-        { "type": "multiple-choice", "prompt": "Which letter makes a hard 'g' sound?", "options": ["ґ", "г", "х"], "correctIndex": 0, "explanation": "'ґ' is the hard 'g' sound, while 'г' is an 'h' sound." },
-        { "type": "fill-blank", "prompt": "The soft sign in Ukrainian is ___", "acceptedAnswers": ["ь"], "hint": "It softens the consonant before it" },
-        { "type": "multiple-choice", "prompt": "What does 'щ' sound like?", "options": ["shch", "sh", "ch"], "correctIndex": 0, "explanation": "'щ' represents the sound 'shch', a combination of ш and ч." },
-        { "type": "matching", "prompt": "Match each consonant to its sound:", "pairs": [
-          { "left": "ц", "right": "ts" },
-          { "left": "ч", "right": "ch" },
-          { "left": "ш", "right": "sh" },
-          { "left": "щ", "right": "shch" }
-        ] },
-        { "type": "multiple-choice", "prompt": "In 'день' (day), what does ь do?", "options": ["Softens the н", "Makes a vowel sound", "Is silent"], "correctIndex": 0, "explanation": "The soft sign ь softens the preceding consonant н, making it 'нь'." },
-        { "type": "fill-blank", "prompt": "Ukrainian for 'porch' starts with the letter ___", "acceptedAnswers": ["ґ", "Ґ"], "hint": "The hard 'g' letter" },
-        { "type": "multiple-choice", "prompt": "How is 'х' pronounced?", "options": ["Like 'ch' in Scottish 'loch'", "Like 'h' in 'hello'", "Like 'k' in 'kit'"], "correctIndex": 0, "explanation": "'х' is a voiceless velar fricative, like 'ch' in Scottish 'loch' or German 'Bach'." },
-        { "type": "fill-blank", "prompt": "'Ніч' means 'night'. The last sound is ___", "acceptedAnswers": ["ч"], "hint": "Like 'ch' in English" },
-        { "type": "multiple-choice", "prompt": "The apostrophe (') in Ukrainian:", "options": ["Separates consonant from iotated vowel", "Indicates stress", "Is a vowel"], "correctIndex": 0, "explanation": "The apostrophe separates a consonant from an iotated vowel, e.g., м'який (soft)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What sound does 'г' make in Ukrainian?",
+          "options": [
+            "g (as in 'go')",
+            "h (as in 'hello')",
+            "k (as in 'kit')"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ukrainian 'г' is a voiced glottal fricative, like 'h' in English."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which letter makes a hard 'g' sound?",
+          "options": [
+            "х",
+            "г",
+            "ґ"
+          ],
+          "correctIndex": 2,
+          "explanation": "'ґ' is the hard 'g' sound, while 'г' is an 'h' sound."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The soft sign in Ukrainian is ___",
+          "acceptedAnswers": [
+            "ь"
+          ],
+          "hint": "It softens the consonant before it"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'щ' sound like?",
+          "options": [
+            "ch",
+            "shch",
+            "sh"
+          ],
+          "correctIndex": 1,
+          "explanation": "'щ' represents the sound 'shch', a combination of ш and ч."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each consonant to its sound:",
+          "pairs": [
+            {
+              "left": "ц",
+              "right": "ts"
+            },
+            {
+              "left": "ч",
+              "right": "ch"
+            },
+            {
+              "left": "ш",
+              "right": "sh"
+            },
+            {
+              "left": "щ",
+              "right": "shch"
+            }
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'день' (day), what does ь do?",
+          "options": [
+            "Is silent",
+            "Softens the н",
+            "Makes a vowel sound"
+          ],
+          "correctIndex": 1,
+          "explanation": "The soft sign ь softens the preceding consonant н, making it 'нь'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ukrainian for 'porch' starts with the letter ___",
+          "acceptedAnswers": [
+            "ґ",
+            "Ґ"
+          ],
+          "hint": "The hard 'g' letter"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is 'х' pronounced?",
+          "options": [
+            "Like 'h' in 'hello'",
+            "Like 'k' in 'kit'",
+            "Like 'ch' in Scottish 'loch'"
+          ],
+          "correctIndex": 2,
+          "explanation": "'х' is a voiceless velar fricative, like 'ch' in Scottish 'loch' or German 'Bach'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Ніч' means 'night'. The last sound is ___",
+          "acceptedAnswers": [
+            "ч"
+          ],
+          "hint": "Like 'ch' in English"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The apostrophe (') in Ukrainian:",
+          "options": [
+            "Is a vowel",
+            "Indicates stress",
+            "Separates consonant from iotated vowel"
+          ],
+          "correctIndex": 2,
+          "explanation": "The apostrophe separates a consonant from an iotated vowel, e.g., м'який (soft)."
+        }
       ]
     },
     {
@@ -72,26 +303,134 @@
       "explanation": "Now let's put it all together! Ukrainian is read phonetically — each letter has a consistent sound. Stress can fall on any syllable and must be memorized, but the letters always sound the same.",
       "tip": "Ukrainian spelling is phonetic — what you see is what you say!",
       "examples": [
-        { "uk": "Кіт", "en": "Cat", "highlight": "Кіт" },
-        { "uk": "Будинок", "en": "Building/House", "highlight": "Будинок" },
-        { "uk": "Привіт", "en": "Hello", "highlight": "Привіт" }
+        {
+          "uk": "Кіт",
+          "en": "Cat",
+          "highlight": "Кіт"
+        },
+        {
+          "uk": "Будинок",
+          "en": "Building/House",
+          "highlight": "Будинок"
+        },
+        {
+          "uk": "Привіт",
+          "en": "Hello",
+          "highlight": "Привіт"
+        }
       ],
       "exercises": [
-        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Привіт", "acceptedAnswers": ["Привіт", "привіт"], "explanation": "'Привіт' means 'Hello'." },
-        { "type": "multiple-choice", "prompt": "'Кіт' means:", "options": ["Cat", "Dog", "Fish"], "correctIndex": 0, "explanation": "'Кіт' means 'cat' in Ukrainian." },
-        { "type": "fill-blank", "prompt": "How do you write 'hello' in Ukrainian? При___", "acceptedAnswers": ["віт"], "hint": "Sounds like 'veet'" },
-        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Дякую", "acceptedAnswers": ["Дякую", "дякую"], "explanation": "'Дякую' means 'Thank you'." },
-        { "type": "multiple-choice", "prompt": "How many syllables in 'будинок'?", "options": ["3 (бу-ди-нок)", "2 (буди-нок)", "4 (бу-ди-но-к)"], "correctIndex": 0, "explanation": "'Будинок' has three syllables: бу-ди-нок." },
-        { "type": "matching", "prompt": "Match each Ukrainian word to its English meaning:", "pairs": [
-          { "left": "Так", "right": "Yes" },
-          { "left": "Ні", "right": "No" },
-          { "left": "Привіт", "right": "Hello" },
-          { "left": "Дякую", "right": "Thank you" }
-        ] },
-        { "type": "fill-blank", "prompt": "Ukrainian for 'yes' is ___", "acceptedAnswers": ["так", "Так"], "hint": "Three letters, starts with т" },
-        { "type": "listen-type", "prompt": "Type what you hear:", "text": "Так", "acceptedAnswers": ["Так", "так"], "explanation": "'Так' means 'Yes'." },
-        { "type": "multiple-choice", "prompt": "'Дякую' means:", "options": ["Thank you", "Goodbye", "Please"], "correctIndex": 0, "explanation": "'Дякую' is the Ukrainian word for 'Thank you'." },
-        { "type": "fill-blank", "prompt": "Ukrainian for 'no' is ___", "acceptedAnswers": ["ні", "Ні"], "hint": "Two letters" }
+        {
+          "type": "listen-type",
+          "prompt": "Type what you hear:",
+          "text": "Привіт",
+          "acceptedAnswers": [
+            "Привіт",
+            "привіт"
+          ],
+          "explanation": "'Привіт' means 'Hello'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Кіт' means:",
+          "options": [
+            "Fish",
+            "Dog",
+            "Cat"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Кіт' means 'cat' in Ukrainian."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "How do you write 'hello' in Ukrainian? При___",
+          "acceptedAnswers": [
+            "віт"
+          ],
+          "hint": "Sounds like 'veet'"
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Type what you hear:",
+          "text": "Дякую",
+          "acceptedAnswers": [
+            "Дякую",
+            "дякую"
+          ],
+          "explanation": "'Дякую' means 'Thank you'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many syllables in 'будинок'?",
+          "options": [
+            "4 (бу-ди-но-к)",
+            "2 (буди-нок)",
+            "3 (бу-ди-нок)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Будинок' has three syllables: бу-ди-нок."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each Ukrainian word to its English meaning:",
+          "pairs": [
+            {
+              "left": "Так",
+              "right": "Yes"
+            },
+            {
+              "left": "Ні",
+              "right": "No"
+            },
+            {
+              "left": "Привіт",
+              "right": "Hello"
+            },
+            {
+              "left": "Дякую",
+              "right": "Thank you"
+            }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ukrainian for 'yes' is ___",
+          "acceptedAnswers": [
+            "так",
+            "Так"
+          ],
+          "hint": "Three letters, starts with т"
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Type what you hear:",
+          "text": "Так",
+          "acceptedAnswers": [
+            "Так",
+            "так"
+          ],
+          "explanation": "'Так' means 'Yes'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Дякую' means:",
+          "options": [
+            "Thank you",
+            "Goodbye",
+            "Please"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Дякую' is the Ukrainian word for 'Thank you'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ukrainian for 'no' is ___",
+          "acceptedAnswers": [
+            "ні",
+            "Ні"
+          ],
+          "hint": "Two letters"
+        }
       ]
     }
   ]

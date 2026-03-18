@@ -13,32 +13,63 @@
       "explanation": "Japanese uses counter words (助数詞) when counting things. You cannot just say a number alone — you need a counter suffix. The most universal counter is つ, which uses native Japanese numbers (ひとつ, ふたつ, みっつ...) and works for most objects. Another essential counter is 人 (にん) for people, with irregular readings: 一人 (ひとり), 二人 (ふたり), 三人 (さんにん), 四人 (よにん).",
       "tip": "The つ counter only goes up to 10 (とお). After 10, you generally need to use a specific counter. When in doubt, using つ for small numbers is a safe fallback for objects.",
       "examples": [
-        { "ja": "りんごをみっつください。", "en": "Three apples, please.", "highlight": "みっつ" },
-        { "ja": "家族は四人です。", "en": "There are four people in my family.", "highlight": "四人" },
-        { "ja": "部屋に学生が五人います。", "en": "There are five students in the room.", "highlight": "五人" },
-        { "ja": "ケーキをふたつ買った。", "en": "I bought two cakes.", "highlight": "ふたつ" }
+        {
+          "ja": "りんごをみっつください。",
+          "en": "Three apples, please.",
+          "highlight": "みっつ"
+        },
+        {
+          "ja": "家族は四人です。",
+          "en": "There are four people in my family.",
+          "highlight": "四人"
+        },
+        {
+          "ja": "部屋に学生が五人います。",
+          "en": "There are five students in the room.",
+          "highlight": "五人"
+        },
+        {
+          "ja": "ケーキをふたつ買った。",
+          "en": "I bought two cakes.",
+          "highlight": "ふたつ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'one person'?",
-          "options": ["いちにん", "ひとり", "いちり", "ひとにん"],
-          "correctIndex": 1,
+          "options": [
+            "いちり",
+            "ひとにん",
+            "ひとり",
+            "いちにん"
+          ],
+          "correctIndex": 2,
           "explanation": "一人 is read as ひとり, an irregular reading. Two people (二人) is ふたり. From three onward, it's regular: さんにん, etc."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'four things' using the つ counter?",
-          "options": ["しつ", "よっつ", "よんつ", "してつ"],
-          "correctIndex": 1,
+          "options": [
+            "よっつ",
+            "しつ",
+            "してつ",
+            "よんつ"
+          ],
+          "correctIndex": 0,
           "explanation": "The つ counter uses native Japanese numbers: ひとつ, ふたつ, みっつ, よっつ, いつつ..."
         },
         {
           "type": "multiple-choice",
           "prompt": "'I ate five (items/pieces).' — Choose the correct sentence:",
-          "options": ["五を食べた。", "五つを食べた。", "いつつを食べた。", "いつつ食べた。"],
-          "correctIndex": 2,
-          "explanation": "いつつ is the correct reading for 五つ. While 五つを食べた is also acceptable in writing, いつつ is the native reading."
+          "options": [
+            "五本を食べた。",
+            "いつつを食べた。",
+            "五を食べた。",
+            "いつつ食べた。"
+          ],
+          "correctIndex": 1,
+          "explanation": "いつつを食べた is correct — いつつ (five things) uses the general つ counter for items. 五本 is wrong because 本 counts long, thin objects, not food items. 五 alone is wrong because Japanese requires a counter."
         }
       ]
     },
@@ -48,31 +79,62 @@
       "explanation": "匹 (ひき) is for small to medium animals: 犬が二匹 (two dogs). 個 (こ) is for small, round, or compact objects: りんごが三個 (three apples). 本 (ほん) is for long, cylindrical things like pens, bottles, trees, and roads: ペンが一本 (one pen). 枚 (まい) is for flat, thin objects like paper, shirts, plates, and tickets: 切符が二枚 (two tickets).",
       "tip": "These four counters cover a huge number of everyday items. 本 is surprisingly versatile — it covers pens, umbrellas, bananas, bottles, rivers, movies, and phone calls!",
       "examples": [
-        { "ja": "猫を三匹飼っている。", "en": "I have three cats.", "highlight": "三匹" },
-        { "ja": "卵を六個買った。", "en": "I bought six eggs.", "highlight": "六個" },
-        { "ja": "ビールを二本ください。", "en": "Two bottles of beer, please.", "highlight": "二本" },
-        { "ja": "紙を五枚もらった。", "en": "I received five sheets of paper.", "highlight": "五枚" }
+        {
+          "ja": "猫を三匹飼っている。",
+          "en": "I have three cats.",
+          "highlight": "三匹"
+        },
+        {
+          "ja": "卵を六個買った。",
+          "en": "I bought six eggs.",
+          "highlight": "六個"
+        },
+        {
+          "ja": "ビールを二本ください。",
+          "en": "Two bottles of beer, please.",
+          "highlight": "二本"
+        },
+        {
+          "ja": "紙を五枚もらった。",
+          "en": "I received five sheets of paper.",
+          "highlight": "五枚"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which counter would you use for a dog?",
-          "options": ["個", "本", "匹", "枚"],
-          "correctIndex": 2,
+          "options": [
+            "個",
+            "匹",
+            "枚",
+            "本"
+          ],
+          "correctIndex": 1,
           "explanation": "匹 (ひき) is the counter for small to medium-sized animals, including dogs and cats."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which counter would you use for an umbrella?",
-          "options": ["枚", "個", "匹", "本"],
-          "correctIndex": 3,
+          "options": [
+            "匹",
+            "本",
+            "枚",
+            "個"
+          ],
+          "correctIndex": 1,
           "explanation": "本 (ほん) is used for long, cylindrical objects. Umbrellas are long and thin, so they use 本."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which counter would you use for a photograph?",
-          "options": ["本", "枚", "個", "匹"],
-          "correctIndex": 1,
+          "options": [
+            "枚",
+            "個",
+            "本",
+            "匹"
+          ],
+          "correctIndex": 0,
           "explanation": "枚 (まい) is used for flat, thin objects. Photographs are flat, so they use 枚."
         }
       ]
@@ -83,30 +145,61 @@
       "explanation": "Many counters have special sound changes (音変化) when combined with certain numbers. For 匹: 一匹 (いっぴき), 三匹 (さんびき), 六匹 (ろっぴき), 八匹 (はっぴき), 十匹 (じゅっぴき). For 本: 一本 (いっぽん), 三本 (さんぼん), 六本 (ろっぽん), 八本 (はっぽん), 十本 (じゅっぽん). For 個: 一個 (いっこ), 六個 (ろっこ), 八個 (はっこ), 十個 (じゅっこ).",
       "tip": "The sound changes follow a pattern: numbers 1, 6, 8, 10 often cause the counter to become a double consonant (っ + voiceless). Number 3 often voices the counter (h → b). If the counter starts with h, expect changes at 1, 3, 6, 8, 10.",
       "examples": [
-        { "ja": "犬が一匹いる。", "en": "There is one dog.", "highlight": "一匹" },
-        { "ja": "鉛筆が三本ある。", "en": "There are three pencils.", "highlight": "三本" },
-        { "ja": "みかんを六個食べた。", "en": "I ate six tangerines.", "highlight": "六個" },
-        { "ja": "魚を八匹釣った。", "en": "I caught eight fish.", "highlight": "八匹" }
+        {
+          "ja": "犬が一匹いる。",
+          "en": "There is one dog.",
+          "highlight": "一匹"
+        },
+        {
+          "ja": "鉛筆が三本ある。",
+          "en": "There are three pencils.",
+          "highlight": "三本"
+        },
+        {
+          "ja": "みかんを六個食べた。",
+          "en": "I ate six tangerines.",
+          "highlight": "六個"
+        },
+        {
+          "ja": "魚を八匹釣った。",
+          "en": "I caught eight fish.",
+          "highlight": "八匹"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you read 一本?",
-          "options": ["いちほん", "いっぽん", "ひとほん", "いちぼん"],
-          "correctIndex": 1,
+          "options": [
+            "いちぼん",
+            "ひとほん",
+            "いちほん",
+            "いっぽん"
+          ],
+          "correctIndex": 3,
           "explanation": "一 + 本 undergoes a sound change: いち + ほん → いっぽん. The ち becomes っ and ほ becomes ぽ."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you read 三匹?",
-          "options": ["さんひき", "さんぴき", "さんびき", "さっぴき"],
-          "correctIndex": 2,
+          "options": [
+            "さんぴき",
+            "さんひき",
+            "さっぴき",
+            "さんびき"
+          ],
+          "correctIndex": 3,
           "explanation": "三 + 匹 undergoes voicing: さん + ひき → さんびき. The number 3 voices h-initial counters to b."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you read 六個?",
-          "options": ["ろくこ", "ろっこ", "ろくご", "ろっご"],
+          "options": [
+            "ろくご",
+            "ろっこ",
+            "ろくこ",
+            "ろっご"
+          ],
           "correctIndex": 1,
           "explanation": "六 + 個 undergoes a sound change: ろく + こ → ろっこ. The く becomes っ."
         }
@@ -118,31 +211,62 @@
       "explanation": "To ask 'how many?' use いくつ (general/つ counter) or 何 (なん) + counter. 何人 (なんにん) = how many people? 何匹 (なんびき) = how many animals? 何本 (なんぼん) = how many (long things)? 何枚 (なんまい) = how many (flat things)? いくつ can also mean 'how old?' when asking a child's age. いくら means 'how much?' for price.",
       "tip": "The question word goes where the answer would go in the sentence. If the answer is テーブルにりんごが三つある, the question is テーブルにりんごがいくつある?",
       "examples": [
-        { "ja": "兄弟は何人いますか。", "en": "How many siblings do you have?", "highlight": "何人" },
-        { "ja": "猫は何匹飼っていますか。", "en": "How many cats do you have?", "highlight": "何匹" },
-        { "ja": "りんごはいくつ要りますか。", "en": "How many apples do you need?", "highlight": "いくつ" },
-        { "ja": "切符を何枚買いますか。", "en": "How many tickets will you buy?", "highlight": "何枚" }
+        {
+          "ja": "兄弟は何人いますか。",
+          "en": "How many siblings do you have?",
+          "highlight": "何人"
+        },
+        {
+          "ja": "猫は何匹飼っていますか。",
+          "en": "How many cats do you have?",
+          "highlight": "何匹"
+        },
+        {
+          "ja": "りんごはいくつ要りますか。",
+          "en": "How many apples do you need?",
+          "highlight": "いくつ"
+        },
+        {
+          "ja": "切符を何枚買いますか。",
+          "en": "How many tickets will you buy?",
+          "highlight": "何枚"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'How many pens are there?' — Choose the correct question:",
-          "options": ["ペンがいくつありますか。", "ペンが何本ありますか。", "ペンが何個ありますか。", "ペンがいくらありますか。"],
-          "correctIndex": 1,
+          "options": [
+            "ペンが何本ありますか。",
+            "ペンがいくつありますか。",
+            "ペンがいくらありますか。",
+            "ペンが何個ありますか。"
+          ],
+          "correctIndex": 0,
           "explanation": "Pens are long, thin objects, so they use 本. 'How many pens?' = 何本 (なんぼん)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you read 何人?",
-          "options": ["なにじん", "なんにん", "なにひと", "なんひと"],
-          "correctIndex": 1,
+          "options": [
+            "なんにん",
+            "なんひと",
+            "なにじん",
+            "なにひと"
+          ],
+          "correctIndex": 0,
           "explanation": "何人 meaning 'how many people?' is read as なんにん. (Note: 何人 read as なにじん means 'what nationality?')"
         },
         {
           "type": "multiple-choice",
           "prompt": "'How many sheets of paper do you need?' — Choose the correct question:",
-          "options": ["紙が何本要りますか。", "紙がいくら要りますか。", "紙が何枚要りますか。", "紙が何個要りますか。"],
-          "correctIndex": 2,
+          "options": [
+            "紙がいくら要りますか。",
+            "紙が何個要りますか。",
+            "紙が何本要りますか。",
+            "紙が何枚要りますか。"
+          ],
+          "correctIndex": 3,
           "explanation": "Paper is flat and thin, so it uses 枚. 'How many sheets?' = 何枚 (なんまい)."
         }
       ]

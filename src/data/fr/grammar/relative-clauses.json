@@ -4,7 +4,9 @@
   "nameFr": "Les propositions relatives",
   "icon": "🔗",
   "tier": "B1",
-  "prerequisites": ["pronouns"],
+  "prerequisites": [
+    "pronouns"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -48,22 +50,34 @@
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun: La fille ___ chante est ma sœur.",
-          "options": ["qui", "que", "dont"],
-          "correctIndex": 0,
+          "options": [
+            "que",
+            "dont",
+            "qui"
+          ],
+          "correctIndex": 2,
           "explanation": "Use qui because it is the subject of the verb 'chante' — la fille is doing the singing."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun: Le gâteau ___ tu manges est délicieux.",
-          "options": ["qui", "que", "dont"],
+          "options": [
+            "qui",
+            "que",
+            "dont"
+          ],
           "correctIndex": 1,
           "explanation": "Use que because the cake is the object — 'tu' is the subject doing the eating."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun: C'est un sujet ___ j'ai besoin. (avoir besoin de)",
-          "options": ["qui", "que", "dont"],
-          "correctIndex": 2,
+          "options": [
+            "qui",
+            "dont",
+            "que"
+          ],
+          "correctIndex": 1,
           "explanation": "Use dont because 'avoir besoin de' requires de, and dont replaces de + noun."
         },
         {
@@ -76,9 +90,9 @@
           "type": "multiple-choice",
           "prompt": "Which sentence uses the correct past participle agreement? (antecedent: les lettres, feminine plural)",
           "options": [
-            "Les lettres que j'ai écrit sont longues.",
+            "Les lettres qui j'ai écrites sont longues.",
             "Les lettres que j'ai écrites sont longues.",
-            "Les lettres qui j'ai écrites sont longues."
+            "Les lettres que j'ai écrit sont longues."
           ],
           "correctIndex": 1,
           "explanation": "After que in passé composé, the past participle agrees with the antecedent. 'Les lettres' is feminine plural, so écrit becomes écrites."
@@ -92,8 +106,12 @@
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun: Le médecin ___ tu connais la femme est parti.",
-          "options": ["qui", "que", "dont"],
-          "correctIndex": 2,
+          "options": [
+            "dont",
+            "que",
+            "qui"
+          ],
+          "correctIndex": 0,
           "explanation": "Dont expresses possession here — 'whose wife you know'. It replaces de + le médecin."
         },
         {
@@ -145,7 +163,11 @@
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct form: Le problème ___ je pense est grave. (penser à)",
-          "options": ["auquel", "lequel", "duquel"],
+          "options": [
+            "auquel",
+            "duquel",
+            "lequel"
+          ],
           "correctIndex": 0,
           "explanation": "Penser à + lequel contracts to auquel. The antecedent 'le problème' is masculine singular."
         },
@@ -158,15 +180,23 @@
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun for a person: L'ami ___ je travaille est sympathique. (travailler avec)",
-          "options": ["avec lequel", "avec qui", "auquel"],
-          "correctIndex": 1,
+          "options": [
+            "auquel",
+            "avec lequel",
+            "avec qui"
+          ],
+          "correctIndex": 2,
           "explanation": "For people after a preposition, use qui — not lequel. So: avec qui."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct relative pronoun: Le restaurant ___ nous allons souvent est fermé.",
-          "options": ["où", "dans lequel", "auquel"],
-          "correctIndex": 0,
+          "options": [
+            "dans lequel",
+            "où",
+            "auquel"
+          ],
+          "correctIndex": 1,
           "explanation": "Où is the natural choice for places. 'Dans lequel' would also be acceptable but où is preferred."
         },
         {
@@ -178,15 +208,23 @@
         {
           "type": "multiple-choice",
           "prompt": "Choose correctly: Je ne comprends pas ___ tu veux dire.",
-          "options": ["ce qui", "ce que", "ce dont"],
-          "correctIndex": 1,
+          "options": [
+            "ce que",
+            "ce qui",
+            "ce dont"
+          ],
+          "correctIndex": 0,
           "explanation": "Ce que is the object form — 'tu' is the subject, and the whole idea (what you want to say) is the object of 'comprends'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct contraction: Les associations ___ il participe sont locales. (participer à)",
-          "options": ["auxquelles", "lesquelles", "desquelles"],
-          "correctIndex": 0,
+          "options": [
+            "desquelles",
+            "auxquelles",
+            "lesquelles"
+          ],
+          "correctIndex": 1,
           "explanation": "Participer à + lesquelles contracts to auxquelles. 'Les associations' is feminine plural."
         },
         {

@@ -4,7 +4,9 @@
   "nameHi": "संज्ञा और लिंग",
   "icon": "🏷️",
   "tier": "A1",
-  "prerequisites": ["alphabet-pronunciation"],
+  "prerequisites": [
+    "alphabet-pronunciation"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "Every Hindi noun has a grammatical gender: either masculine (पुल्लिंग) or feminine (स्त्रीलिंग). Unlike English, gender in Hindi applies to all nouns — not just living beings but also objects, concepts, and abstract ideas. The gender of a noun affects the form of adjectives, verbs, and postpositions used with it, so learning each noun's gender is essential for speaking correctly.",
       "tip": "There is no neuter gender in Hindi — every noun is either masculine or feminine. When learning new vocabulary, always memorize the gender along with the word.",
       "examples": [
-        { "hi": "लड़का", "en": "boy — masculine noun (ends in -ा)", "highlight": "लड़का" },
-        { "hi": "लड़की", "en": "girl — feminine noun (ends in -ी)", "highlight": "लड़की" },
-        { "hi": "पानी", "en": "water — masculine noun (despite ending in -ी, it is an exception)", "highlight": "पानी" },
-        { "hi": "मेज़", "en": "table — feminine noun (no typical ending, must be memorized)", "highlight": "मेज़" }
+        {
+          "hi": "लड़का",
+          "en": "boy — masculine noun (ends in -ा)",
+          "highlight": "लड़का"
+        },
+        {
+          "hi": "लड़की",
+          "en": "girl — feminine noun (ends in -ी)",
+          "highlight": "लड़की"
+        },
+        {
+          "hi": "पानी",
+          "en": "water — masculine noun (despite ending in -ी, it is an exception)",
+          "highlight": "पानी"
+        },
+        {
+          "hi": "मेज़",
+          "en": "table — feminine noun (no typical ending, must be memorized)",
+          "highlight": "मेज़"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How many grammatical genders does Hindi have?",
-          "options": ["Two: masculine and feminine", "Three: masculine, feminine, and neuter", "Hindi nouns have no gender"],
-          "correctIndex": 0,
+          "options": [
+            "Hindi nouns have no gender",
+            "Three: masculine, feminine, and neuter",
+            "Two: masculine and feminine"
+          ],
+          "correctIndex": 2,
           "explanation": "Hindi has exactly two grammatical genders: masculine (पुल्लिंग) and feminine (स्त्रीलिंग). Every noun belongs to one of these two categories, and there is no neuter gender."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of the following is a masculine noun?",
-          "options": ["लड़का (boy)", "लड़की (girl)", "मेज़ (table)"],
-          "correctIndex": 0,
+          "options": [
+            "लड़की (girl)",
+            "मेज़ (table)",
+            "लड़का (boy)"
+          ],
+          "correctIndex": 2,
           "explanation": "लड़का (boy) is masculine. लड़की (girl) and मेज़ (table) are both feminine. Note that लड़का ends in -ा, which is a common masculine ending."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why is knowing a noun's gender important in Hindi?",
-          "options": ["It affects adjectives, verbs, and postpositions", "It only matters for polite speech", "It changes the meaning of the noun"],
-          "correctIndex": 0,
+          "options": [
+            "It changes the meaning of the noun",
+            "It only matters for polite speech",
+            "It affects adjectives, verbs, and postpositions"
+          ],
+          "correctIndex": 2,
           "explanation": "A noun's gender determines the form of associated adjectives, verb conjugations, and postpositions. For example, 'big boy' is बड़ा लड़का (masculine adjective form), while 'big girl' is बड़ी लड़की (feminine adjective form)."
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "Most masculine nouns in Hindi fall into two categories. Type 1 masculine nouns end in -ा (aa) in their base form — these change their ending when they become plural or are followed by a postposition. For example, लड़का (boy) becomes लड़के (boys). Type 2 masculine nouns end in any other vowel or a consonant — these do not change form in the plural. For example, आदमी (man) stays आदमी in the plural, and घर (house) stays घर.",
       "tip": "If a masculine noun ends in -ा, expect it to change to -े in the oblique case and plural. If it ends in anything else, its form stays the same.",
       "examples": [
-        { "hi": "लड़का → लड़के", "en": "boy → boys — Type 1: -ा ending changes to -े in plural", "highlight": "े" },
-        { "hi": "कमरा → कमरे", "en": "room → rooms — Type 1: another -ा noun changing to -े", "highlight": "े" },
-        { "hi": "आदमी → आदमी", "en": "man → men — Type 2: no ending change in plural", "highlight": "आदमी" },
-        { "hi": "घर → घर", "en": "house → houses — Type 2: consonant-ending noun, form stays the same", "highlight": "घर" }
+        {
+          "hi": "लड़का → लड़के",
+          "en": "boy → boys — Type 1: -ा ending changes to -े in plural",
+          "highlight": "े"
+        },
+        {
+          "hi": "कमरा → कमरे",
+          "en": "room → rooms — Type 1: another -ा noun changing to -े",
+          "highlight": "े"
+        },
+        {
+          "hi": "आदमी → आदमी",
+          "en": "man → men — Type 2: no ending change in plural",
+          "highlight": "आदमी"
+        },
+        {
+          "hi": "घर → घर",
+          "en": "house → houses — Type 2: consonant-ending noun, form stays the same",
+          "highlight": "घर"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the plural of कमरा (room)?",
-          "options": ["कमरे", "कमरा", "कमरी"],
-          "correctIndex": 0,
+          "options": [
+            "कमरा",
+            "कमरे",
+            "कमरी"
+          ],
+          "correctIndex": 1,
           "explanation": "कमरा is a Type 1 masculine noun ending in -ा. In the plural, the -ा changes to -े, giving कमरे (rooms). This is one of the most common patterns in Hindi."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the plural of आदमी (man)?",
-          "options": ["आदमी (unchanged)", "आदमे", "आदमियाँ"],
+          "options": [
+            "आदमी (unchanged)",
+            "आदमे",
+            "आदमियाँ"
+          ],
           "correctIndex": 0,
           "explanation": "आदमी is a Type 2 masculine noun — it does not end in -ा, so its form does not change in the plural. Context and verbs indicate whether it means 'man' or 'men'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which ending is the hallmark of Type 1 masculine nouns?",
-          "options": ["-ा (aa)", "-ी (ii)", "-े (e)"],
-          "correctIndex": 0,
+          "options": [
+            "-े (e)",
+            "-ी (ii)",
+            "-ा (aa)"
+          ],
+          "correctIndex": 2,
           "explanation": "Type 1 masculine nouns end in -ा in their base (direct singular) form. This -ा ending changes to -े in the oblique case and in the plural. Examples include लड़का, कमरा, and बेटा."
         }
       ]
@@ -83,31 +141,59 @@
       "explanation": "Feminine nouns also have two main types. Type 1 feminine nouns end in -ी (ii) — in the plural, this changes to -ियाँ. For example, लड़की (girl) becomes लड़कियाँ (girls). Type 2 feminine nouns end in any other vowel or a consonant — these add -एँ in the plural. For example, मेज़ (table) becomes मेज़ें (tables), and किताब (book) becomes किताबें (books). Some common exceptions exist: माँ (mother) becomes माँएँ, and बहन (sister) becomes बहनें.",
       "tip": "Feminine plurals always add a nasal sound: -ियाँ for Type 1 and -एँ for Type 2. The chandrabindu (ँ) or anunasik marks this nasalization.",
       "examples": [
-        { "hi": "लड़की → लड़कियाँ", "en": "girl → girls — Type 1: -ी changes to -ियाँ", "highlight": "ियाँ" },
-        { "hi": "चिड़िया → चिड़ियाँ", "en": "bird → birds — Type 1: -ा ending with nasalization", "highlight": "ँ" },
-        { "hi": "किताब → किताबें", "en": "book → books — Type 2: consonant ending, add -एँ", "highlight": "ें" },
-        { "hi": "मेज़ → मेज़ें", "en": "table → tables — Type 2: consonant ending, add -एँ", "highlight": "ें" }
+        {
+          "hi": "लड़की → लड़कियाँ",
+          "en": "girl → girls — Type 1: -ी changes to -ियाँ",
+          "highlight": "ियाँ"
+        },
+        {
+          "hi": "चिड़िया → चिड़ियाँ",
+          "en": "bird → birds — -इया ending: just add nasalization (-ियाँ)",
+          "highlight": "ँ"
+        },
+        {
+          "hi": "किताब → किताबें",
+          "en": "book → books — Type 2: consonant ending, add -एँ",
+          "highlight": "ें"
+        },
+        {
+          "hi": "मेज़ → मेज़ें",
+          "en": "table → tables — Type 2: consonant ending, add -एँ",
+          "highlight": "ें"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the plural of लड़की (girl)?",
-          "options": ["लड़कियाँ", "लड़कीएँ", "लड़की"],
-          "correctIndex": 0,
+          "options": [
+            "लड़कीएँ",
+            "लड़कियाँ",
+            "लड़की"
+          ],
+          "correctIndex": 1,
           "explanation": "लड़की is a Type 1 feminine noun ending in -ी. In the plural, -ी changes to -ियाँ, giving लड़कियाँ (girls). This pattern applies to most feminine nouns ending in -ी."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the plural of किताब (book)?",
-          "options": ["किताबें", "किताबियाँ", "किताबा"],
-          "correctIndex": 0,
+          "options": [
+            "किताबियाँ",
+            "किताबा",
+            "किताबें"
+          ],
+          "correctIndex": 2,
           "explanation": "किताब is a Type 2 feminine noun ending in a consonant. The plural is formed by adding -एँ, resulting in किताबें (books). This pattern applies to feminine nouns that do not end in -ी."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these is a feminine noun?",
-          "options": ["मेज़ (table)", "लड़का (boy)", "घर (house)"],
-          "correctIndex": 0,
+          "options": [
+            "लड़का (boy)",
+            "मेज़ (table)",
+            "घर (house)"
+          ],
+          "correctIndex": 1,
           "explanation": "मेज़ (table) is feminine in Hindi. लड़का (boy) and घर (house) are both masculine. The gender of inanimate objects like मेज़ must simply be memorized."
         }
       ]

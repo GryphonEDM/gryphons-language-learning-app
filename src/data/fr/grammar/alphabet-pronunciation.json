@@ -13,34 +13,58 @@
       "explanation": "French uses the same 26 letters as English, but many letters are pronounced quite differently. Key differences: the French R is guttural (produced in the throat, like a soft gargling sound); the French U requires rounded lips with no English equivalent; most final consonants are silent (chat, petit, vous); nasal vowels give French its distinctive sound (an/en sounds like 'ohn', in/im like 'an', on like 'ohn'); and liaison links words together when a word ending in a consonant is followed by a word starting with a vowel, as in 'les amis' (lay-za-mee). The 'oi' combination produces a 'wah' sound: moi, boire, voiture.",
       "tip": "Focus on three sounds first: the guttural R, the rounded U, and nasal vowels. These are the biggest differences from English and will improve your French accent dramatically.",
       "examples": [
-        { "fr": "rue", "en": "street", "highlight": "r" },
-        { "fr": "lune", "en": "moon (rounded U sound)", "highlight": "u" },
-        { "fr": "chat", "en": "cat (silent final T)", "highlight": "t" },
-        { "fr": "les amis", "en": "the friends (liaison: 'lay-za-mee')", "highlight": "s" },
-        { "fr": "moi", "en": "me (OI = 'wah' sound)", "highlight": "oi" },
-        { "fr": "enfant", "en": "child (nasal AN sound)", "highlight": "an" }
+        {
+          "fr": "rue",
+          "en": "street",
+          "highlight": "r"
+        },
+        {
+          "fr": "lune",
+          "en": "moon (rounded U sound)",
+          "highlight": "u"
+        },
+        {
+          "fr": "chat",
+          "en": "cat (silent final T)",
+          "highlight": "t"
+        },
+        {
+          "fr": "les amis",
+          "en": "the friends (liaison: 'lay-za-mee')",
+          "highlight": "s"
+        },
+        {
+          "fr": "moi",
+          "en": "me (OI = 'wah' sound)",
+          "highlight": "oi"
+        },
+        {
+          "fr": "enfant",
+          "en": "child (nasal AN sound)",
+          "highlight": "an"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "How is the French letter R pronounced?",
           "options": [
-            "From the throat, like a soft guttural sound",
+            "Silently, like a final consonant",
             "The same as the English R",
-            "Silently, like a final consonant"
+            "From the throat, like a soft guttural sound"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "The French R is guttural, produced at the back of the throat — quite different from the English R."
         },
         {
           "type": "multiple-choice",
           "question": "In the word 'chat' (cat), how is the final T pronounced?",
           "options": [
-            "It is silent",
+            "Like an S sound",
             "Like the English T",
-            "Like an S sound"
+            "It is silent"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "In French, most final consonants are silent. 'Chat' is pronounced 'sha', not 'shat'."
         },
         {
@@ -58,11 +82,11 @@
           "type": "multiple-choice",
           "question": "What is 'liaison' in French pronunciation?",
           "options": [
-            "Linking a word's final consonant to the next word's starting vowel",
             "Dropping the final vowel of a word",
+            "Linking a word's final consonant to the next word's starting vowel",
             "Stressing the last syllable of a sentence"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Liaison links normally-silent final consonants to the following word when it starts with a vowel. 'Les amis' becomes 'lay-za-mee'."
         },
         {
@@ -107,45 +131,69 @@
       "explanation": "French uses several accent marks that change pronunciation. The acute accent (é) gives a closed 'ay' sound as in 'café'. The grave accent (è) and circumflex (ê) give an open 'eh' sound as in 'père' and 'fête'. The circumflex on â signals a deeper 'ah'. The cedilla (ç) turns C into a soft 'S' sound before a, o, or u, as in 'garçon'. The œ ligature (oe) sounds like the German ö, used in 'cœur' (heart). The digraph CH produces a 'sh' sound (chat = 'sha'), and GN produces a 'ny' sound as in 'montagne'. Finally, H is always silent but behaves differently: 'h muet' allows liaison and elision, while 'h aspiré' blocks them.",
       "tip": "Accent marks are not optional decoration — they change the pronunciation and sometimes the meaning of words. 'ou' (or) vs 'où' (where) is a classic example.",
       "examples": [
-        { "fr": "café", "en": "coffee (é = 'ay' sound)", "highlight": "é" },
-        { "fr": "père", "en": "father (è = open 'eh' sound)", "highlight": "è" },
-        { "fr": "garçon", "en": "boy/waiter (ç = soft S)", "highlight": "ç" },
-        { "fr": "cœur", "en": "heart (œ = rounded 'uh')", "highlight": "œ" },
-        { "fr": "chat", "en": "cat (ch = 'sh' sound)", "highlight": "ch" },
-        { "fr": "montagne", "en": "mountain (gn = 'ny' sound)", "highlight": "gn" }
+        {
+          "fr": "café",
+          "en": "coffee (é = 'ay' sound)",
+          "highlight": "é"
+        },
+        {
+          "fr": "père",
+          "en": "father (è = open 'eh' sound)",
+          "highlight": "è"
+        },
+        {
+          "fr": "garçon",
+          "en": "boy/waiter (ç = soft S)",
+          "highlight": "ç"
+        },
+        {
+          "fr": "cœur",
+          "en": "heart (œ = rounded 'uh')",
+          "highlight": "œ"
+        },
+        {
+          "fr": "chat",
+          "en": "cat (ch = 'sh' sound)",
+          "highlight": "ch"
+        },
+        {
+          "fr": "montagne",
+          "en": "mountain (gn = 'ny' sound)",
+          "highlight": "gn"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "How is the letter 'é' (with acute accent) pronounced in 'café'?",
           "options": [
+            "Silent, like a final E",
             "Like 'ay' as in the English word 'say'",
-            "Like 'eh' as in the English word 'bet'",
-            "Silent, like a final E"
+            "Like 'eh' as in the English word 'bet'"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "The acute accent (é) produces a closed 'ay' sound. 'Café' is pronounced 'ka-fay'."
         },
         {
           "type": "multiple-choice",
           "question": "What does the cedilla (ç) do to the letter C?",
           "options": [
-            "Makes it a soft 'S' sound before a, o, or u",
             "Makes it a 'K' sound",
+            "Makes it a soft 'S' sound before a, o, or u",
             "Makes it silent"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "The cedilla softens C to an S sound. Without ç, 'garçon' would sound like 'garkon' instead of 'gar-sohn'."
         },
         {
           "type": "multiple-choice",
           "question": "How is 'CH' pronounced in French words like 'chat' and 'chose'?",
           "options": [
-            "Like 'sh' as in English 'shoe'",
+            "Like 'k' as in English 'character'",
             "Like 'ch' as in English 'chair'",
-            "Like 'k' as in English 'character'"
+            "Like 'sh' as in English 'shoe'"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "French CH always sounds like 'sh'. 'Chat' (cat) = 'sha', not 'chat' as in English."
         },
         {
@@ -164,8 +212,8 @@
           "question": "What is the difference between 'è' (grave) and 'é' (acute)?",
           "options": [
             "'é' is a closed 'ay' sound; 'è' is an open 'eh' sound",
-            "They sound identical — only the spelling differs",
-            "'è' is silent; 'é' is pronounced"
+            "'è' is silent; 'é' is pronounced",
+            "They sound identical — only the spelling differs"
           ],
           "correctIndex": 0,
           "explanation": "'é' (acute) = closed 'ay' as in 'café'. 'è' (grave) = open 'eh' as in 'père' (father)."
@@ -181,8 +229,8 @@
           "question": "The œ in 'cœur' (heart) sounds most like which description?",
           "options": [
             "A rounded 'uh' sound, similar to German ö",
-            "The 'oo' sound in English 'food'",
-            "The 'oe' sound in English 'poem'"
+            "The 'oe' sound in English 'poem'",
+            "The 'oo' sound in English 'food'"
           ],
           "correctIndex": 0,
           "explanation": "The œ ligature produces a rounded front vowel — like saying 'eh' with rounded lips. It appears in 'cœur', 'sœur', 'œuf'."

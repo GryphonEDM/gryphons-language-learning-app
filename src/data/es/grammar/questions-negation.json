@@ -4,7 +4,9 @@
   "nameEs": "Preguntas y Negación",
   "icon": "❓",
   "tier": "A1",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,119 @@
       "explanation": "In Spanish, yes/no questions are formed by inverting the subject and verb, or simply by using a rising intonation. Unlike English, Spanish uses an inverted question mark (¿) at the beginning of every question, and the standard question mark (?) at the end. So a statement like 'Tú hablas español.' becomes the question '¿Hablas tú español?' The subject pronoun is often dropped entirely in speech: '¿Hablas español?' is perfectly natural. To answer, use 'Sí' (yes) or 'No' (no), typically followed by a restatement: '¿Comes carne? — Sí, como carne.' or '— No, no como carne.'",
       "tip": "Always open a written Spanish question with ¿ and close it with ?. In speech you signal a question with rising intonation on the final syllable. The subject pronoun can move after the verb (¿Comes tú?) or be dropped altogether (¿Comes?) — both are correct.",
       "examples": [
-        { "es": "¿Hablas español?", "en": "Do you speak Spanish?", "highlight": "¿Hablas" },
-        { "es": "¿Come ella en casa?", "en": "Does she eat at home?", "highlight": "¿Come" },
-        { "es": "¿Viven ustedes en Madrid?", "en": "Do you (all) live in Madrid?", "highlight": "¿Viven" },
-        { "es": "¿Trabaja él mucho?", "en": "Does he work a lot?", "highlight": "¿Trabaja" },
-        { "es": "¿Escucháis música?", "en": "Do you all listen to music?", "highlight": "¿Escucháis" }
+        {
+          "es": "¿Hablas español?",
+          "en": "Do you speak Spanish?",
+          "highlight": "¿Hablas"
+        },
+        {
+          "es": "¿Come ella en casa?",
+          "en": "Does she eat at home?",
+          "highlight": "¿Come"
+        },
+        {
+          "es": "¿Viven ustedes en Madrid?",
+          "en": "Do you (all) live in Madrid?",
+          "highlight": "¿Viven"
+        },
+        {
+          "es": "¿Trabaja él mucho?",
+          "en": "Does he work a lot?",
+          "highlight": "¿Trabaja"
+        },
+        {
+          "es": "¿Escucháis música?",
+          "en": "Do you all listen to music?",
+          "highlight": "¿Escucháis"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which punctuation correctly starts a question in written Spanish?",
-          "options": ["¿", "?", "¡", "!"],
-          "correctIndex": 0,
+          "options": [
+            "!",
+            "¿",
+            "?",
+            "¡"
+          ],
+          "correctIndex": 1,
           "explanation": "Spanish uses an inverted question mark ¿ at the start of every written question. The standard ? closes the question."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you turn 'Tú hablas inglés.' into a yes/no question?",
-          "options": ["¿Hablas (tú) inglés?", "¿Tú hablas inglés!", "Hablas inglés tú?", "¿Inglés hablas tú?"],
-          "correctIndex": 0,
+          "options": [
+            "Hablas inglés tú?",
+            "¿Inglés hablas tú?",
+            "¿Tú hablas inglés!",
+            "¿Hablas (tú) inglés?"
+          ],
+          "correctIndex": 3,
           "explanation": "Invert the subject and verb (or drop the subject) and wrap with ¿ … ?: ¿Hablas (tú) inglés?"
         },
         {
           "type": "fill-blank",
           "prompt": "___ ella trabaja aquí? (Does she work here?)",
-          "acceptedAnswers": ["¿Trabaja"],
+          "acceptedAnswers": [
+            "¿Trabaja"
+          ],
           "hint": "Start with ¿ then the verb, then the subject",
           "explanation": "The question starts with ¿ followed by the verb: ¿Trabaja ella aquí?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of the following is a correctly formed yes/no question?",
-          "options": ["¿Comes tú pizza?", "¿Tú comes pizza!", "Comes tú pizza?", "¿Tú comes pizza?"],
-          "correctIndex": 0,
+          "options": [
+            "Comes tú pizza?",
+            "¿Comes tú pizza?",
+            "¿Tú comes pizza?",
+            "¿Tú comes pizza!"
+          ],
+          "correctIndex": 1,
           "explanation": "¿Comes tú pizza? is correct: inverted question mark at start, verb before subject, standard question mark at end."
         },
         {
           "type": "fill-blank",
           "prompt": "___ vosotros en casa? (Do you all live at home?)",
-          "acceptedAnswers": ["¿Vivís"],
+          "acceptedAnswers": [
+            "¿Vivís"
+          ],
           "hint": "Use the vosotros form of vivir (-ís) and open with ¿",
           "explanation": "vivir → vosotros vivís. The question becomes ¿Vivís vosotros en casa?"
         },
         {
           "type": "multiple-choice",
           "prompt": "How would you correctly answer '¿Bebes café?' in the negative?",
-          "options": ["No, no bebo café.", "No, bebo no café.", "Sí, no bebo café.", "No, bebas café."],
+          "options": [
+            "No, no bebo café.",
+            "Sí, no bebo café.",
+            "No, bebo no café.",
+            "No, bebas café."
+          ],
           "correctIndex": 0,
           "explanation": "To answer a yes/no question negatively, say 'No, no + verb': No, no bebo café."
         },
         {
           "type": "fill-blank",
           "prompt": "¿___ ustedes música? (Do you all listen to music?)",
-          "acceptedAnswers": ["escuchan"],
+          "acceptedAnswers": [
+            "escuchan",
+            "Escuchan"
+          ],
           "hint": "Use the ustedes form of escuchar (-an)",
           "explanation": "escuchar → ustedes escuchan. Full question: ¿Escuchan ustedes música?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is a statement, NOT a question?",
-          "options": ["Ella come ensalada.", "¿Come ella ensalada?", "¿Ella come ensalada?", "¿Come ensalada ella?"],
-          "correctIndex": 0,
+          "options": [
+            "¿Ella come ensalada?",
+            "¿Come ensalada ella?",
+            "¿Come ella ensalada?",
+            "Ella come ensalada."
+          ],
+          "correctIndex": 3,
           "explanation": "Ella come ensalada. is a statement — no ¿ at the start and no ? at the end. All others are questions."
         }
       ]
@@ -84,69 +138,131 @@
       "explanation": "Spanish question words (palabras interrogativas) are used to ask for specific information. All question words carry a written accent mark: qué (what), quién / quiénes (who / who plural), dónde (where), cuándo (when), cómo (how), cuánto / cuánta / cuántos / cuántas (how much / how many), and por qué (why). Note that por qué (why, two words) is different from porque (because, one word). Question words go at the beginning of the sentence, followed by the verb, then any other elements: ¿Dónde vives tú? / ¿Cuándo comes? / ¿Por qué estudias español?",
       "tip": "Every question word has a written accent mark — this is what distinguishes 'qué' (what, in a question) from 'que' (that, in a statement). Similarly, 'cuándo' vs 'cuando', 'cómo' vs 'como', 'dónde' vs 'donde'. In writing, the accent is mandatory.",
       "examples": [
-        { "es": "¿Qué comes?", "en": "What do you eat?", "highlight": "Qué" },
-        { "es": "¿Quién habla?", "en": "Who is speaking?", "highlight": "Quién" },
-        { "es": "¿Dónde vives?", "en": "Where do you live?", "highlight": "Dónde" },
-        { "es": "¿Cuándo llega el tren?", "en": "When does the train arrive?", "highlight": "Cuándo" },
-        { "es": "¿Cómo estás?", "en": "How are you?", "highlight": "Cómo" },
-        { "es": "¿Cuántos años tienes?", "en": "How old are you? (lit. How many years do you have?)", "highlight": "Cuántos" },
-        { "es": "¿Por qué estudias español?", "en": "Why do you study Spanish?", "highlight": "Por qué" }
+        {
+          "es": "¿Qué comes?",
+          "en": "What do you eat?",
+          "highlight": "Qué"
+        },
+        {
+          "es": "¿Quién habla?",
+          "en": "Who is speaking?",
+          "highlight": "Quién"
+        },
+        {
+          "es": "¿Dónde vives?",
+          "en": "Where do you live?",
+          "highlight": "Dónde"
+        },
+        {
+          "es": "¿Cuándo llega el tren?",
+          "en": "When does the train arrive?",
+          "highlight": "Cuándo"
+        },
+        {
+          "es": "¿Cómo estás?",
+          "en": "How are you?",
+          "highlight": "Cómo"
+        },
+        {
+          "es": "¿Cuántos años tienes?",
+          "en": "How old are you? (lit. How many years do you have?)",
+          "highlight": "Cuántos"
+        },
+        {
+          "es": "¿Por qué estudias español?",
+          "en": "Why do you study Spanish?",
+          "highlight": "Por qué"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which question word asks about a place (where)?",
-          "options": ["dónde", "cuándo", "quién", "cómo"],
-          "correctIndex": 0,
+          "options": [
+            "cómo",
+            "dónde",
+            "quién",
+            "cuándo"
+          ],
+          "correctIndex": 1,
           "explanation": "Dónde means 'where'. Cuándo = when, quién = who, cómo = how."
         },
         {
           "type": "fill-blank",
           "prompt": "¿___ te llamas? (What is your name? / lit. What do you call yourself?)",
-          "acceptedAnswers": ["Cómo", "cómo"],
+          "acceptedAnswers": [
+            "Cómo",
+            "cómo"
+          ],
           "hint": "The question asks 'how' you call yourself — use the question word for 'how'",
           "explanation": "¿Cómo te llamas? is the standard way to ask someone's name. Cómo = how."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you ask 'Why do you work here?' in Spanish?",
-          "options": ["¿Por qué trabajas aquí?", "¿Porque trabajas aquí?", "¿Por que trabajas aquí?", "¿Qué trabajas aquí?"],
+          "options": [
+            "¿Por qué trabajas aquí?",
+            "¿Por que trabajas aquí?",
+            "¿Qué trabajas aquí?",
+            "¿Porque trabajas aquí?"
+          ],
           "correctIndex": 0,
           "explanation": "Por qué (two words, accent on qué) means 'why'. Porque (one word, no accent) means 'because' and is used in answers."
         },
         {
           "type": "fill-blank",
           "prompt": "¿___ personas hay en tu familia? (How many people are in your family?)",
-          "acceptedAnswers": ["Cuántas", "cuántas"],
+          "acceptedAnswers": [
+            "Cuántas",
+            "cuántas"
+          ],
           "hint": "Personas is feminine plural — use the feminine plural form of cuánto",
           "explanation": "Cuánto agrees in gender and number with the noun: cuántas personas (feminine plural)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly asks 'Who lives here?'",
-          "options": ["¿Quién vive aquí?", "¿Qué vive aquí?", "¿Cómo vive aquí?", "¿Quienes vive aquí?"],
-          "correctIndex": 0,
+          "options": [
+            "¿Cómo vive aquí?",
+            "¿Quién vive aquí?",
+            "¿Qué vive aquí?",
+            "¿Quienes vive aquí?"
+          ],
+          "correctIndex": 1,
           "explanation": "Quién (singular) is used when the subject is unknown. ¿Quién vive aquí? = Who lives here?"
         },
         {
           "type": "fill-blank",
           "prompt": "¿___ llega el avión? (When does the plane arrive?)",
-          "acceptedAnswers": ["Cuándo", "cuándo"],
+          "acceptedAnswers": [
+            "Cuándo",
+            "cuándo"
+          ],
           "hint": "Use the question word for 'when'",
           "explanation": "Cuándo = when. ¿Cuándo llega el avión?"
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you ask 'What do you drink?' in Spanish?",
-          "options": ["¿Qué bebes?", "¿Quién bebes?", "¿Cómo bebes?", "¿Cuándo bebes?"],
-          "correctIndex": 0,
+          "options": [
+            "¿Cómo bebes?",
+            "¿Qué bebes?",
+            "¿Quién bebes?",
+            "¿Cuándo bebes?"
+          ],
+          "correctIndex": 1,
           "explanation": "Qué = what. ¿Qué bebes? asks what someone is drinking."
         },
         {
           "type": "multiple-choice",
           "prompt": "A friend says 'Estudio español.' You want to ask them why. What do you say?",
-          "options": ["¿Por qué estudias español?", "¿Porque estudias español?", "¿Qué estudias español?", "¿Cómo estudias español?"],
-          "correctIndex": 0,
+          "options": [
+            "¿Porque estudias español?",
+            "¿Cómo estudias español?",
+            "¿Por qué estudias español?",
+            "¿Qué estudias español?"
+          ],
+          "correctIndex": 2,
           "explanation": "Por qué (two words with accent) = why, used in questions. Porque (one word, no accent) = because, used in answers: Estudio español porque me gusta."
         }
       ]
@@ -157,67 +273,119 @@
       "explanation": "To make any Spanish sentence negative, place 'no' directly before the verb: 'Hablo inglés.' → 'No hablo inglés.' That is all that is needed for simple negation. Spanish also has a system of negative words that pair with 'no' to form double negation — this is grammatically required, not a double positive as it would be in English. The most common pairs are: no... nada (nothing), no... nunca (never), no... nadie (nobody / no one), no... ningún/ninguna (no / not any). The negative word comes after the verb: 'No como nada.' (I don't eat anything / I eat nothing.) If the negative word is placed before the verb, 'no' is dropped: 'Nunca como carne.' = 'No como carne nunca.' Both are correct.",
       "tip": "Spanish double negation is mandatory: you MUST use 'no' before the verb AND a negative word after it — unless the negative word comes first. 'No veo a nadie.' and 'A nadie veo.' are both correct; 'No veo a alguien.' is wrong in a negative sentence.",
       "examples": [
-        { "es": "No hablo alemán.", "en": "I don't speak German.", "highlight": "No hablo" },
-        { "es": "No como nada por las mañanas.", "en": "I don't eat anything in the mornings.", "highlight": "nada" },
-        { "es": "No llega nunca a tiempo.", "en": "He never arrives on time.", "highlight": "nunca" },
-        { "es": "No hay nadie en casa.", "en": "There is nobody at home.", "highlight": "nadie" },
-        { "es": "Nunca bebo café.", "en": "I never drink coffee.", "highlight": "Nunca" },
-        { "es": "Nadie sabe la respuesta.", "en": "Nobody knows the answer.", "highlight": "Nadie" }
+        {
+          "es": "No hablo alemán.",
+          "en": "I don't speak German.",
+          "highlight": "No hablo"
+        },
+        {
+          "es": "No como nada por las mañanas.",
+          "en": "I don't eat anything in the mornings.",
+          "highlight": "nada"
+        },
+        {
+          "es": "No llega nunca a tiempo.",
+          "en": "He never arrives on time.",
+          "highlight": "nunca"
+        },
+        {
+          "es": "No hay nadie en casa.",
+          "en": "There is nobody at home.",
+          "highlight": "nadie"
+        },
+        {
+          "es": "Nunca bebo café.",
+          "en": "I never drink coffee.",
+          "highlight": "Nunca"
+        },
+        {
+          "es": "Nadie sabe la respuesta.",
+          "en": "Nobody knows the answer.",
+          "highlight": "Nadie"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Where does 'no' go to negate a Spanish sentence?",
-          "options": ["Directly before the verb", "At the end of the sentence", "After the subject", "Anywhere in the sentence"],
-          "correctIndex": 0,
+          "options": [
+            "At the end of the sentence",
+            "Directly before the verb",
+            "Anywhere in the sentence",
+            "After the subject"
+          ],
+          "correctIndex": 1,
           "explanation": "No is placed directly before the conjugated verb: No hablo inglés. / No come carne."
         },
         {
           "type": "fill-blank",
           "prompt": "No tengo ___ . (I have nothing / I don't have anything.)",
-          "acceptedAnswers": ["nada"],
+          "acceptedAnswers": [
+            "nada"
+          ],
           "hint": "Use the negative word meaning 'nothing'",
           "explanation": "Nada = nothing. No tengo nada. is a correct double-negative sentence in Spanish."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She never eats meat.' using double negation?",
-          "options": ["No come carne nunca.", "No come carne nada.", "No come carne nadie.", "Come carne nunca."],
-          "correctIndex": 0,
+          "options": [
+            "No come carne nadie.",
+            "No come carne nada.",
+            "Come carne nunca.",
+            "No come carne nunca."
+          ],
+          "correctIndex": 3,
           "explanation": "No + verb + nunca = double negation meaning 'never': No come carne nunca. (Nunca come carne. is also correct.)"
         },
         {
           "type": "fill-blank",
           "prompt": "No hay ___ en la tienda. (There is nobody in the shop.)",
-          "acceptedAnswers": ["nadie"],
+          "acceptedAnswers": [
+            "nadie"
+          ],
           "hint": "Use the negative word meaning 'nobody'",
           "explanation": "Nadie = nobody / no one. No hay nadie en la tienda."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly means 'I never drink alcohol.'?",
-          "options": ["No bebo alcohol nunca.", "No bebo alcohol nada.", "Nunca bebo no alcohol.", "No nunca bebo alcohol."],
+          "options": [
+            "No bebo alcohol nunca.",
+            "No nunca bebo alcohol.",
+            "No bebo alcohol nada.",
+            "Nunca bebo no alcohol."
+          ],
           "correctIndex": 0,
           "explanation": "No bebo alcohol nunca. uses double negation correctly. Alternatively: Nunca bebo alcohol. (negative word before verb, no 'no' needed)."
         },
         {
           "type": "fill-blank",
           "prompt": "___ escucha la música. (Nobody listens to music.) — Put the negative word before the verb.",
-          "acceptedAnswers": ["Nadie"],
+          "acceptedAnswers": [
+            "Nadie"
+          ],
           "hint": "When the negative word comes before the verb, you do not need 'no'",
           "explanation": "Nadie escucha la música. — When nadie precedes the verb, 'no' is dropped. Compare: No escucha la música nadie."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of the following is INCORRECT in Spanish?",
-          "options": ["No veo a alguien.", "No veo a nadie.", "Nadie habla.", "No habla nunca."],
+          "options": [
+            "No veo a alguien.",
+            "Nadie habla.",
+            "No habla nunca.",
+            "No veo a nadie."
+          ],
           "correctIndex": 0,
           "explanation": "'No veo a alguien.' is incorrect because alguien (someone) cannot pair with no in a negative sentence. The correct form is: No veo a nadie. (double negation) or A nadie veo."
         },
         {
           "type": "fill-blank",
           "prompt": "No trabajo ___ los domingos. (I never work on Sundays.)",
-          "acceptedAnswers": ["nunca"],
+          "acceptedAnswers": [
+            "nunca"
+          ],
           "hint": "Use the negative word meaning 'never'",
           "explanation": "Nunca = never. No trabajo nunca los domingos. uses obligatory double negation."
         }

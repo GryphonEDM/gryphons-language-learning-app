@@ -4,7 +4,11 @@
   "nameHi": "शर्तवाचक वाक्य",
   "icon": "🔀",
   "tier": "B2",
-  "prerequisites": ["verb-conjugation", "past-tense", "future-tense"],
+  "prerequisites": [
+    "verb-conjugation",
+    "past-tense",
+    "future-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +17,59 @@
       "explanation": "Real conditionals describe situations that are possible or likely. In Hindi, these are formed using अगर (if) or यदि (if, more formal) in the condition clause, paired with तो (then) in the result clause. The verb forms used are the same as in normal indicative sentences — present habitual, future, or imperative. The structure is: अगर/यदि + condition clause, तो + result clause. For example: अगर बारिश होगी, तो हम नहीं जाएँगे (If it rains, we will not go). The word तो is often included for clarity but can sometimes be omitted in casual speech. यदि is more literary and formal than अगर, but they are interchangeable grammatically. You can also place the condition clause after the result clause for emphasis: हम नहीं जाएँगे अगर बारिश होगी।",
       "tip": "अगर is everyday spoken Hindi; यदि is formal/written. They work identically in grammar. Always pair them with तो in the result clause for clear, well-formed sentences.",
       "examples": [
-        { "hi": "अगर तुम आओगे, तो मुझे खुशी होगी।", "en": "If you come, I will be happy.", "highlight": "अगर...तो" },
-        { "hi": "यदि आप मेहनत करेंगे, तो सफल होंगे।", "en": "If you work hard, you will succeed.", "highlight": "यदि...तो" },
-        { "hi": "अगर भूख लगे, तो कुछ खा लो।", "en": "If you feel hungry, then eat something.", "highlight": "अगर...तो" },
-        { "hi": "अगर वह आज नहीं आया, तो कल आएगा।", "en": "If he doesn't come today, he will come tomorrow.", "highlight": "अगर...तो" }
+        {
+          "hi": "अगर तुम आओगे, तो मुझे खुशी होगी।",
+          "en": "If you come, I will be happy.",
+          "highlight": "अगर...तो"
+        },
+        {
+          "hi": "यदि आप मेहनत करेंगे, तो सफल होंगे।",
+          "en": "If you work hard, you will succeed.",
+          "highlight": "यदि...तो"
+        },
+        {
+          "hi": "अगर भूख लगे, तो कुछ खा लो।",
+          "en": "If you feel hungry, then eat something.",
+          "highlight": "अगर...तो"
+        },
+        {
+          "hi": "अगर वह आज नहीं आया, तो कल आएगा।",
+          "en": "If he doesn't come today, he will come tomorrow.",
+          "highlight": "अगर...तो"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "अगर और यदि में क्या अंतर है? (What is the difference between अगर and यदि?)",
-          "options": ["यदि अधिक औपचारिक है, लेकिन अर्थ एक ही है (यदि is more formal, but the meaning is the same)", "अगर भूतकाल के लिए है और यदि भविष्य के लिए (अगर is for past, यदि for future)", "यदि केवल नकारात्मक वाक्यों में आता है (यदि is only for negative sentences)"],
-          "correctIndex": 0,
+          "options": [
+            "यदि केवल नकारात्मक वाक्यों में आता है (यदि is only for negative sentences)",
+            "अगर भूतकाल के लिए है और यदि भविष्य के लिए (अगर is for past, यदि for future)",
+            "यदि अधिक औपचारिक है, लेकिन अर्थ एक ही है (यदि is more formal, but the meaning is the same)"
+          ],
+          "correctIndex": 2,
           "explanation": "Both अगर and यदि mean 'if' and are grammatically interchangeable. The only difference is register: यदि is more formal and literary, while अगर is used in everyday spoken Hindi. Both pair with तो in the result clause."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"अगर बारिश _____, तो हम घर पर रहेंगे।\" रिक्त स्थान भरें। (Fill in the blank.)",
-          "options": ["होगी", "होती", "हुई थी"],
-          "correctIndex": 0,
+          "options": [
+            "होती",
+            "हुई थी",
+            "होगी"
+          ],
+          "correctIndex": 2,
           "explanation": "Since the result clause uses the future tense (रहेंगे), the condition clause should also use the future tense: होगी. This creates a real conditional about a possible future event: If it rains (will rain), we will stay at home."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"यदि आप तैयार हैं, तो चलिए\" — इस वाक्य में कौन सा काल है? (What tense is used in this sentence?)",
-          "options": ["वर्तमान काल (Present tense)", "भविष्य काल (Future tense)", "भूतकाल (Past tense)"],
-          "correctIndex": 0,
+          "options": [
+            "भूतकाल (Past tense)",
+            "भविष्य काल (Future tense)",
+            "वर्तमान काल (Present tense)"
+          ],
+          "correctIndex": 2,
           "explanation": "This sentence uses the present tense in the condition (हैं) and an imperative in the result (चलिए). Real conditionals can use present tense for situations that are true right now: If you are ready, then let's go."
         }
       ]
@@ -48,29 +80,53 @@
       "explanation": "Unreal or counterfactual conditionals describe situations that are contrary to fact — things that did not happen or are impossible. Hindi uses the subjunctive form with होता/होती/होते to express these. The structure is: अगर + subject + verb stem + ता/ती/ते (+ होता/होती/होते for past counterfactuals), तो + result with ता/ती/ते (+ होता/होती/होते). For present counterfactuals: अगर मेरे पास पैसे होते, तो मैं कार खरीदता (If I had money, I would buy a car — but I don't have money). For past counterfactuals: अगर वह आया होता, तो हम खुश होते (If he had come, we would have been happy — but he didn't come). The key marker is the habitual participle (-ता/-ती/-ते) combined with होता forms, which shifts the meaning from real to imagined.",
       "tip": "The -ता/-ती/-ते + होता/होती/होते combination is the signature of counterfactual conditionals in Hindi. Whenever you see this pattern, the speaker is imagining something that is not (or was not) true.",
       "examples": [
-        { "hi": "अगर मेरे पास पंख होते, तो मैं उड़ जाता।", "en": "If I had wings, I would fly away. (but I don't have wings)", "highlight": "होते...जाता" },
-        { "hi": "अगर तुमने मेहनत की होती, तो पास हो जाते।", "en": "If you had worked hard, you would have passed. (but you didn't)", "highlight": "की होती...जाते" },
-        { "hi": "अगर बारिश न होती, तो हम पिकनिक पर जाते।", "en": "If it hadn't rained, we would have gone on a picnic.", "highlight": "न होती...जाते" }
+        {
+          "hi": "अगर मेरे पास पंख होते, तो मैं उड़ जाता।",
+          "en": "If I had wings, I would fly away. (but I don't have wings)",
+          "highlight": "होते...जाता"
+        },
+        {
+          "hi": "अगर तुमने मेहनत की होती, तो पास हो जाते।",
+          "en": "If you had worked hard, you would have passed. (but you didn't)",
+          "highlight": "की होती...जाते"
+        },
+        {
+          "hi": "अगर बारिश न होती, तो हम पिकनिक पर जाते।",
+          "en": "If it hadn't rained, we would have gone on a picnic.",
+          "highlight": "न होती...जाते"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"अगर मैं पक्षी होता, तो आसमान में उड़ता\" — यह वाक्य क्या व्यक्त करता है? (What does this sentence express?)",
-          "options": ["एक काल्पनिक/असंभव स्थिति (An imaginary/impossible situation)", "एक संभावित भविष्य की घटना (A possible future event)", "एक आदत (A habit)"],
+          "options": [
+            "एक काल्पनिक/असंभव स्थिति (An imaginary/impossible situation)",
+            "एक आदत (A habit)",
+            "एक संभावित भविष्य की घटना (A possible future event)"
+          ],
           "correctIndex": 0,
           "explanation": "The -ता + होता pattern marks this as a counterfactual conditional. The speaker is not a bird and cannot fly — this is an imaginary situation contrary to reality. The habitual participle (-ता) combined with होता creates this unreal meaning."
         },
         {
           "type": "multiple-choice",
           "prompt": "भूतकाल की असंभव शर्त बनाने के लिए कौन सा रूप प्रयोग होता है? (Which form is used for past counterfactuals?)",
-          "options": ["-ता/-ती/-ते + होता/होती/होते", "-ता/-ती/-ते + है/हैं", "-एगा/-एगी/-एँगे"],
-          "correctIndex": 0,
+          "options": [
+            "-ता/-ती/-ते + है/हैं",
+            "-एगा/-एगी/-एँगे",
+            "-ता/-ती/-ते + होता/होती/होते"
+          ],
+          "correctIndex": 2,
           "explanation": "Past counterfactuals in Hindi use the habitual participle (-ता/-ती/-ते) combined with the auxiliary होता/होती/होते. This combination signals that the event did not actually happen: अगर वह आया होता, तो... (If he had come, then...)"
         },
         {
           "type": "multiple-choice",
           "prompt": "\"अगर मुझे पता _____, तो मैं ज़रूर बताता।\" सही रूप चुनें। (Choose the correct form.)",
-          "options": ["होता", "है", "होगा"],
+          "options": [
+            "होता",
+            "होगा",
+            "है"
+          ],
           "correctIndex": 0,
           "explanation": "Since the result clause uses बताता (counterfactual), the condition clause must also be counterfactual: होता. The sentence means 'If I had known, I would have definitely told you' — implying the speaker did not know."
         }
@@ -82,31 +138,59 @@
       "explanation": "Beyond the basic real and unreal patterns, Hindi has several advanced conditional constructions. The particle चाहे (even if / no matter) introduces concessive conditionals: चाहे जो हो, मैं जाऊँगा (No matter what happens, I will go). The construction भले ही (even though / even if) works similarly: भले ही बारिश हो, हम जाएँगे (Even if it rains, we will go). You can also form conditionals without अगर by using the subjunctive alone: तुम चाहो तो चलो (If you want, then come along). The verb form alone carries the conditional meaning. Another important pattern uses बशर्ते (कि) meaning 'on the condition that' or 'provided that': मैं आऊँगा, बशर्ते कि तुम भी आओ (I will come, provided that you come too). These advanced forms add nuance and sophistication to your Hindi.",
       "tip": "In casual speech, Hindi speakers often drop अगर entirely and rely on the subjunctive verb form plus तो to imply conditionality: बोलो तो बताऊँ (If you say so, I'll tell you). Listen for this pattern in conversations.",
       "examples": [
-        { "hi": "चाहे कुछ भी हो जाए, मैं हार नहीं मानूँगा।", "en": "No matter what happens, I will not give up.", "highlight": "चाहे" },
-        { "hi": "भले ही देर हो जाए, काम पूरा करो।", "en": "Even if it gets late, finish the work.", "highlight": "भले ही" },
-        { "hi": "तुम चाहो तो हम कल चलते हैं।", "en": "If you want, we can go tomorrow. (no अगर used)", "highlight": "चाहो तो" },
-        { "hi": "मैं मदद करूँगा, बशर्ते कि तुम सच बोलो।", "en": "I will help, provided that you speak the truth.", "highlight": "बशर्ते कि" }
+        {
+          "hi": "चाहे कुछ भी हो जाए, मैं हार नहीं मानूँगा।",
+          "en": "No matter what happens, I will not give up.",
+          "highlight": "चाहे"
+        },
+        {
+          "hi": "भले ही देर हो जाए, काम पूरा करो।",
+          "en": "Even if it gets late, finish the work.",
+          "highlight": "भले ही"
+        },
+        {
+          "hi": "तुम चाहो तो हम कल चलते हैं।",
+          "en": "If you want, we can go tomorrow. (no अगर used)",
+          "highlight": "चाहो तो"
+        },
+        {
+          "hi": "मैं मदद करूँगा, बशर्ते कि तुम सच बोलो।",
+          "en": "I will help, provided that you speak the truth.",
+          "highlight": "बशर्ते कि"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"चाहे जो हो\" का क्या अर्थ है? (What does चाहे जो हो mean?)",
-          "options": ["चाहे कुछ भी हो जाए / No matter what happens", "अगर तुम चाहो / If you want", "जब भी हो / Whenever it happens"],
-          "correctIndex": 0,
+          "options": [
+            "जब भी हो / Whenever it happens",
+            "अगर तुम चाहो / If you want",
+            "चाहे कुछ भी हो जाए / No matter what happens"
+          ],
+          "correctIndex": 2,
           "explanation": "चाहे जो हो means 'no matter what happens' or 'whatever may be'. It introduces a concessive conditional — the result will happen regardless of the condition. This is different from अगर, which makes the result dependent on the condition."
         },
         {
           "type": "multiple-choice",
           "prompt": "निम्नलिखित में से कौन सा वाक्य बिना अगर/यदि के शर्त व्यक्त करता है? (Which sentence expresses a condition without अगर/यदि?)",
-          "options": ["तुम बोलो तो बताऊँ।", "अगर तुम बोलोगे तो बताऊँगा।", "यदि तुम बोलो तो बताऊँगा।"],
-          "correctIndex": 0,
+          "options": [
+            "यदि तुम बोलो तो बताऊँगा।",
+            "अगर तुम बोलोगे तो बताऊँगा।",
+            "तुम बोलो तो बताऊँ।"
+          ],
+          "correctIndex": 2,
           "explanation": "तुम बोलो तो बताऊँ uses the subjunctive form (बोलो, बताऊँ) without any explicit 'if' word. The conditional meaning is carried entirely by the subjunctive verb forms and the particle तो. This is a very natural and common pattern in spoken Hindi."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"बशर्ते कि\" का क्या अर्थ है? (What does बशर्ते कि mean?)",
-          "options": ["इस शर्त पर कि / On the condition that", "इसलिए कि / Because", "ताकि / So that"],
-          "correctIndex": 0,
+          "options": [
+            "ताकि / So that",
+            "इस शर्त पर कि / On the condition that",
+            "इसलिए कि / Because"
+          ],
+          "correctIndex": 1,
           "explanation": "बशर्ते कि means 'on the condition that' or 'provided that'. It comes from the Persian/Urdu word शर्त (condition) and is used to specify a strict requirement: मैं आऊँगा, बशर्ते कि तुम भी आओ (I'll come, provided you come too)."
         }
       ]

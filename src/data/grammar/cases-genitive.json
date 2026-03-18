@@ -4,7 +4,9 @@
   "nameUk": "Родовий відмінок",
   "icon": "📏",
   "tier": "A2",
-  "prerequisites": ["cases-nom-acc"],
+  "prerequisites": [
+    "cases-nom-acc"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -12,33 +14,178 @@
       "title": "Genitive for Possession",
       "explanation": "The genitive case answers 'whose?' (чий? чия? чиє?). It shows that something belongs to someone or something. Masculine nouns ending in a consonant add -а or -у. Feminine nouns change -а to -и/-і. Neuter nouns change -о to -а, -е to -я.",
       "examples": [
-        { "uk": "Це книга мами.", "en": "This is mom's book.", "highlight": "мами" },
-        { "uk": "Машина тата.", "en": "Dad's car.", "highlight": "тата" },
-        { "uk": "Центр міста.", "en": "The center of the city.", "highlight": "міста" }
+        {
+          "uk": "Це книга мами.",
+          "en": "This is mom's book.",
+          "highlight": "мами"
+        },
+        {
+          "uk": "Машина тата.",
+          "en": "Dad's car.",
+          "highlight": "тата"
+        },
+        {
+          "uk": "Центр міста.",
+          "en": "The center of the city.",
+          "highlight": "міста"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Чия це сумка? (сестра)", "options": ["сестри", "сестру", "сестрою"], "correctIndex": 0, "explanation": "Feminine nouns ending in -а change to -и in the genitive: сестра → сестри." },
-        { "type": "fill-blank", "prompt": "Це телефон ___. (брат)", "acceptedAnswers": ["брата"], "hint": "Masculine nouns add -а in the genitive.", "explanation": "Брат → брата. Most masculine animate nouns take -а in the genitive case." },
-        { "type": "transformation", "prompt": "Put the word in the genitive case:", "baseWord": "мама", "context": "Це дім ___.", "acceptedAnswers": ["мами"], "hint": "-а → -и", "explanation": "Мама → мами. Feminine nouns ending in -а change to -и in the genitive." },
-        { "type": "matching", "prompt": "Match the nominative form to its genitive:", "pairs": [
-          { "left": "тато", "right": "тата" },
-          { "left": "мама", "right": "мами" },
-          { "left": "місто", "right": "міста" },
-          { "left": "школа", "right": "школи" },
-          { "left": "друг", "right": "друга" }
-        ], "explanation": "Masculine animate: -а; feminine -а → -и; neuter -о → -а." },
-        { "type": "fill-blank", "prompt": "Це кімната ___. (дівчинка)", "acceptedAnswers": ["дівчинки"], "hint": "Feminine nouns: -а → -и after к.", "explanation": "Дівчинка → дівчинки. After к, the feminine genitive ending is -и." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Це машина тату.", "errorWord": "тату", "acceptedAnswers": ["тата"], "explanation": "The genitive of тато is тата, not тату. Тату is the dative form." },
-        { "type": "multiple-choice", "prompt": "Це вікно ___. (будинок – building)", "options": ["будинку", "будинок", "будинка"], "correctIndex": 0, "explanation": "Будинок → будинку. Some masculine inanimate nouns take -у in the genitive (buildings, locations)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Це ручка вчителя.", "acceptedAnswers": ["Це ручка вчителя.", "Це ручка вчителя"], "explanation": "Вчитель → вчителя. Masculine nouns ending in -ь change to -я in the genitive." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "This is the teacher's book.", "words": ["Це", "книга", "вчителя"], "distractors": ["вчитель"], "validOrders": [["Це", "книга", "вчителя"]], "explanation": "The possessor in the genitive (вчителя) follows the noun it modifies (книга)." },
-        { "type": "table-fill", "prompt": "Complete the genitive forms:", "headers": ["Nominative", "Genitive"], "rows": [
-          { "label": "подруга", "answer": "подруги", "prefilled": false },
-          { "label": "батько", "answer": "батька", "prefilled": false },
-          { "label": "море", "answer": "моря", "prefilled": false },
-          { "label": "сусід", "answer": "сусіда", "prefilled": false },
-          { "label": "книга", "answer": "книги", "prefilled": false }
-        ], "explanation": "Подруга → подруги (-а → -и); батько → батька (-о → -а); море → моря (-е → -я); сусід → сусіда (add -а); книга → книги (-а → -и)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Чия це сумка? (сестра)",
+          "options": [
+            "сестру",
+            "сестри",
+            "сестрою"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feminine nouns ending in -а change to -и in the genitive: сестра → сестри."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це телефон ___. (брат)",
+          "acceptedAnswers": [
+            "брата"
+          ],
+          "hint": "Masculine nouns add -а in the genitive.",
+          "explanation": "Брат → брата. Most masculine animate nouns take -а in the genitive case."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the word in the genitive case:",
+          "baseWord": "мама",
+          "context": "Це дім ___.",
+          "acceptedAnswers": [
+            "мами"
+          ],
+          "hint": "-а → -и",
+          "explanation": "Мама → мами. Feminine nouns ending in -а change to -и in the genitive."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative form to its genitive:",
+          "pairs": [
+            {
+              "left": "тато",
+              "right": "тата"
+            },
+            {
+              "left": "мама",
+              "right": "мами"
+            },
+            {
+              "left": "місто",
+              "right": "міста"
+            },
+            {
+              "left": "школа",
+              "right": "школи"
+            },
+            {
+              "left": "друг",
+              "right": "друга"
+            }
+          ],
+          "explanation": "Masculine animate: -а; feminine -а → -и; neuter -о → -а."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це кімната ___. (дівчинка)",
+          "acceptedAnswers": [
+            "дівчинки"
+          ],
+          "hint": "Feminine nouns: -а → -и after к.",
+          "explanation": "Дівчинка → дівчинки. After к, the feminine genitive ending is -и."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Це машина тату.",
+          "errorWord": "тату",
+          "acceptedAnswers": [
+            "тата"
+          ],
+          "explanation": "The genitive of тато is тата, not тату. Тату is the dative form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Це вікно ___. (будинок – building)",
+          "options": [
+            "будинок",
+            "будинку",
+            "будинка"
+          ],
+          "correctIndex": 1,
+          "explanation": "Будинок → будинку. Some masculine inanimate nouns take -у in the genitive (buildings, locations)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Це ручка вчителя.",
+          "acceptedAnswers": [
+            "Це ручка вчителя.",
+            "Це ручка вчителя"
+          ],
+          "explanation": "Вчитель → вчителя. Masculine nouns ending in -ь change to -я in the genitive."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "This is the teacher's book.",
+          "words": [
+            "Це",
+            "книга",
+            "вчителя"
+          ],
+          "distractors": [
+            "вчитель"
+          ],
+          "validOrders": [
+            [
+              "Це",
+              "книга",
+              "вчителя"
+            ]
+          ],
+          "explanation": "The possessor in the genitive (вчителя) follows the noun it modifies (книга)."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the genitive forms:",
+          "headers": [
+            "Nominative",
+            "Genitive"
+          ],
+          "rows": [
+            {
+              "label": "подруга",
+              "answer": "подруги",
+              "prefilled": false
+            },
+            {
+              "label": "батько",
+              "answer": "батька",
+              "prefilled": false
+            },
+            {
+              "label": "море",
+              "answer": "моря",
+              "prefilled": false
+            },
+            {
+              "label": "сусід",
+              "answer": "сусіда",
+              "prefilled": false
+            },
+            {
+              "label": "книга",
+              "answer": "книги",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Подруга → подруги (-а → -и); батько → батька (-о → -а); море → моря (-е → -я); сусід → сусіда (add -а); книга → книги (-а → -и)."
+        }
       ]
     },
     {
@@ -46,27 +193,153 @@
       "title": "Genitive for Absence",
       "explanation": "The genitive case is used with немає (there is no / there isn't) to express absence. The noun that is absent goes into the genitive case. Немає + genitive = 'there is no...'.",
       "examples": [
-        { "uk": "Немає води.", "en": "There is no water.", "highlight": "води" },
-        { "uk": "Немає часу.", "en": "There is no time.", "highlight": "часу" },
-        { "uk": "Тут немає магазину.", "en": "There is no store here.", "highlight": "магазину" }
+        {
+          "uk": "Немає води.",
+          "en": "There is no water.",
+          "highlight": "води"
+        },
+        {
+          "uk": "Немає часу.",
+          "en": "There is no time.",
+          "highlight": "часу"
+        },
+        {
+          "uk": "Тут немає магазину.",
+          "en": "There is no store here.",
+          "highlight": "магазину"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Немає ___. (молоко – milk)", "options": ["молока", "молоко", "молоку"], "correctIndex": 0, "explanation": "Neuter nouns: -о → -а in the genitive. Молоко → молока." },
-        { "type": "fill-blank", "prompt": "У мене немає ___. (час – time)", "acceptedAnswers": ["часу"], "hint": "Abstract masculine nouns often take -у.", "explanation": "Час → часу. Abstract and collective masculine nouns typically take -у in the genitive." },
-        { "type": "fill-blank", "prompt": "Тут немає ___. (вода – water)", "acceptedAnswers": ["води"], "hint": "Feminine: -а → -и", "explanation": "Вода → води. Feminine nouns ending in -а change to -и in the genitive." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Немає хліб на столі.", "errorWord": "хліб", "acceptedAnswers": ["хліба"], "explanation": "After немає, the noun must be in the genitive case: хліб → хліба." },
-        { "type": "multiple-choice", "prompt": "У класі немає ___. (вчителька – female teacher)", "options": ["вчительки", "вчителька", "вчительку"], "correctIndex": 0, "explanation": "Вчителька → вчительки. Feminine nouns ending in -а change to -и after к." },
-        { "type": "transformation", "prompt": "Transform using немає:", "baseWord": "цукор", "context": "У нас немає ___.", "acceptedAnswers": ["цукру"], "hint": "Masculine, substance noun: -у ending", "explanation": "Цукор → цукру. Substance/material nouns take -у in the genitive." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "There are no students here.", "words": ["Тут", "немає", "студентів"], "distractors": ["студенти"], "validOrders": [["Тут", "немає", "студентів"]], "explanation": "Немає requires the genitive case: студенти → студентів (genitive plural)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "У мене немає грошей.", "acceptedAnswers": ["У мене немає грошей.", "У мене немає грошей"], "explanation": "Гроші → грошей (genitive plural). Немає always takes the genitive." },
-        { "type": "matching", "prompt": "Match each noun to its genitive form used with немає:", "pairs": [
-          { "left": "сіль", "right": "солі" },
-          { "left": "хліб", "right": "хліба" },
-          { "left": "кава", "right": "кави" },
-          { "left": "чай", "right": "чаю" },
-          { "left": "м'ясо", "right": "м'яса" }
-        ], "explanation": "Сіль → солі (fem -ь → -і); хліб → хліба (masc animate-style); кава → кави (-а → -и); чай → чаю (substance); м'ясо → м'яса (-о → -а)." },
-        { "type": "multiple-choice", "prompt": "Сьогодні немає ___. (сонце – sun)", "options": ["сонця", "сонце", "сонцю"], "correctIndex": 0, "explanation": "Сонце → сонця. Neuter nouns ending in -це change to -ця in the genitive." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Немає ___. (молоко – milk)",
+          "options": [
+            "молока",
+            "молоку",
+            "молоко"
+          ],
+          "correctIndex": 0,
+          "explanation": "Neuter nouns: -о → -а in the genitive. Молоко → молока."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У мене немає ___. (час – time)",
+          "acceptedAnswers": [
+            "часу"
+          ],
+          "hint": "Abstract masculine nouns often take -у.",
+          "explanation": "Час → часу. Abstract and collective masculine nouns typically take -у in the genitive."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Тут немає ___. (вода – water)",
+          "acceptedAnswers": [
+            "води"
+          ],
+          "hint": "Feminine: -а → -и",
+          "explanation": "Вода → води. Feminine nouns ending in -а change to -и in the genitive."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Немає хліб на столі.",
+          "errorWord": "хліб",
+          "acceptedAnswers": [
+            "хліба"
+          ],
+          "explanation": "After немає, the noun must be in the genitive case: хліб → хліба."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "У класі немає ___. (вчителька – female teacher)",
+          "options": [
+            "вчительку",
+            "вчительки",
+            "вчителька"
+          ],
+          "correctIndex": 1,
+          "explanation": "Вчителька → вчительки. Feminine nouns ending in -а change to -и after к."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Transform using немає:",
+          "baseWord": "цукор",
+          "context": "У нас немає ___.",
+          "acceptedAnswers": [
+            "цукру"
+          ],
+          "hint": "Masculine, substance noun: -у ending",
+          "explanation": "Цукор → цукру. Substance/material nouns take -у in the genitive."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "There are no students here.",
+          "words": [
+            "Тут",
+            "немає",
+            "студентів"
+          ],
+          "distractors": [
+            "студенти"
+          ],
+          "validOrders": [
+            [
+              "Тут",
+              "немає",
+              "студентів"
+            ]
+          ],
+          "explanation": "Немає requires the genitive case: студенти → студентів (genitive plural)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "У мене немає грошей.",
+          "acceptedAnswers": [
+            "У мене немає грошей.",
+            "У мене немає грошей"
+          ],
+          "explanation": "Гроші → грошей (genitive plural). Немає always takes the genitive."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun to its genitive form used with немає:",
+          "pairs": [
+            {
+              "left": "сіль",
+              "right": "солі"
+            },
+            {
+              "left": "хліб",
+              "right": "хліба"
+            },
+            {
+              "left": "кава",
+              "right": "кави"
+            },
+            {
+              "left": "чай",
+              "right": "чаю"
+            },
+            {
+              "left": "м'ясо",
+              "right": "м'яса"
+            }
+          ],
+          "explanation": "Сіль → солі (fem -ь → -і); хліб → хліба (masc, takes -а as a concrete countable noun); кава → кави (-а → -и); чай → чаю (substance); м'ясо → м'яса (-о → -а)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Сьогодні немає ___. (сонце – sun)",
+          "options": [
+            "сонця",
+            "сонце",
+            "сонцю"
+          ],
+          "correctIndex": 0,
+          "explanation": "Сонце → сонця. Neuter nouns ending in -це change to -ця in the genitive."
+        }
       ]
     },
     {
@@ -74,61 +347,335 @@
       "title": "Genitive After Prepositions",
       "explanation": "Several important prepositions require the genitive case: від (from), до (to/until), без (without), з/із (from/out of), для (for), після (after), біля (near).",
       "examples": [
-        { "uk": "Від Києва до Львова.", "en": "From Kyiv to Lviv.", "highlight": "Києва" },
-        { "uk": "Без цукру.", "en": "Without sugar.", "highlight": "цукру" },
-        { "uk": "Для мами.", "en": "For mom.", "highlight": "мами" }
+        {
+          "uk": "Від Києва до Львова.",
+          "en": "From Kyiv to Lviv.",
+          "highlight": "Києва"
+        },
+        {
+          "uk": "Без цукру.",
+          "en": "Without sugar.",
+          "highlight": "цукру"
+        },
+        {
+          "uk": "Для мами.",
+          "en": "For mom.",
+          "highlight": "мами"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я іду до ___. (школа – school)", "options": ["школи", "школа", "школу"], "correctIndex": 0, "explanation": "До + genitive: школа → школи." },
-        { "type": "fill-blank", "prompt": "Кава без ___. (молоко – milk)", "acceptedAnswers": ["молока"], "hint": "Без + genitive; neuter -о → -а", "explanation": "Без requires the genitive case: молоко → молока." },
-        { "type": "fill-blank", "prompt": "Він приїхав від ___. (бабуся – grandmother)", "acceptedAnswers": ["бабусі"], "hint": "Від + genitive; feminine -я → -і", "explanation": "Від requires genitive: бабуся → бабусі. Feminine nouns ending in -я change to -і." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я купив подарунок для мама.", "errorWord": "мама", "acceptedAnswers": ["мами"], "explanation": "Для requires the genitive case: мама → мами." },
-        { "type": "matching", "prompt": "Match each preposition phrase to its correct form:", "pairs": [
-          { "left": "від (друг)", "right": "від друга" },
-          { "left": "до (місто)", "right": "до міста" },
-          { "left": "без (сіль)", "right": "без солі" },
-          { "left": "для (сестра)", "right": "для сестри" },
-          { "left": "після (урок)", "right": "після уроку" }
-        ], "explanation": "Each preposition requires the genitive: друг → друга, місто → міста, сіль → солі, сестра → сестри, урок → уроку." },
-        { "type": "transformation", "prompt": "Put the noun in the correct case after the preposition:", "baseWord": "робота", "context": "Він прийшов після ___.", "acceptedAnswers": ["роботи"], "hint": "Після + genitive; feminine -а → -и", "explanation": "Після requires genitive: робота → роботи." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I came from the store.", "words": ["Я", "прийшов", "з", "магазину"], "distractors": ["магазин"], "validOrders": [["Я", "прийшов", "з", "магазину"]], "explanation": "З (from) requires the genitive case: магазин → магазину." },
-        { "type": "multiple-choice", "prompt": "Ми живемо біля ___. (парк – park)", "options": ["парку", "парк", "парка"], "correctIndex": 0, "explanation": "Біля + genitive: парк → парку (inanimate location noun takes -у)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Він іде до лікаря.", "acceptedAnswers": ["Він іде до лікаря.", "Він іде до лікаря"], "explanation": "До + genitive: лікар → лікаря. Masculine animate nouns take -а/-я." },
-        { "type": "fill-blank", "prompt": "Я вийшов із ___. (дім – house)", "acceptedAnswers": ["дому"], "hint": "Із + genitive; дім is a special noun.", "explanation": "Дім → дому in the genitive. Із requires the genitive case." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я іду до ___. (школа – school)",
+          "options": [
+            "школу",
+            "школа",
+            "школи"
+          ],
+          "correctIndex": 2,
+          "explanation": "До + genitive: школа → школи."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Кава без ___. (молоко – milk)",
+          "acceptedAnswers": [
+            "молока"
+          ],
+          "hint": "Без + genitive; neuter -о → -а",
+          "explanation": "Без requires the genitive case: молоко → молока."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він приїхав від ___. (бабуся – grandmother)",
+          "acceptedAnswers": [
+            "бабусі"
+          ],
+          "hint": "Від + genitive; feminine -я → -і",
+          "explanation": "Від requires genitive: бабуся → бабусі. Feminine nouns ending in -я change to -і."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я купив подарунок для мама.",
+          "errorWord": "мама",
+          "acceptedAnswers": [
+            "мами"
+          ],
+          "explanation": "Для requires the genitive case: мама → мами."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each preposition phrase to its correct form:",
+          "pairs": [
+            {
+              "left": "від (друг)",
+              "right": "від друга"
+            },
+            {
+              "left": "до (місто)",
+              "right": "до міста"
+            },
+            {
+              "left": "без (сіль)",
+              "right": "без солі"
+            },
+            {
+              "left": "для (сестра)",
+              "right": "для сестри"
+            },
+            {
+              "left": "після (урок)",
+              "right": "після уроку"
+            }
+          ],
+          "explanation": "Each preposition requires the genitive: друг → друга, місто → міста, сіль → солі, сестра → сестри, урок → уроку."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the correct case after the preposition:",
+          "baseWord": "робота",
+          "context": "Він прийшов після ___.",
+          "acceptedAnswers": [
+            "роботи"
+          ],
+          "hint": "Після + genitive; feminine -а → -и",
+          "explanation": "Після requires genitive: робота → роботи."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I came from the store.",
+          "words": [
+            "Я",
+            "прийшов",
+            "з",
+            "магазину"
+          ],
+          "distractors": [
+            "магазин"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "прийшов",
+              "з",
+              "магазину"
+            ]
+          ],
+          "explanation": "З (from) requires the genitive case: магазин → магазину."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ми живемо біля ___. (парк – park)",
+          "options": [
+            "парка",
+            "парк",
+            "парку"
+          ],
+          "correctIndex": 2,
+          "explanation": "Біля + genitive: парк → парку (inanimate location noun takes -у)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Він іде до лікаря.",
+          "acceptedAnswers": [
+            "Він іде до лікаря.",
+            "Він іде до лікаря"
+          ],
+          "explanation": "До + genitive: лікар → лікаря. Masculine animate nouns take -а/-я."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я вийшов із ___. (дім – house)",
+          "acceptedAnswers": [
+            "дому"
+          ],
+          "hint": "Із + genitive; дім is a special noun.",
+          "explanation": "Дім → дому in the genitive. Із requires the genitive case."
+        }
       ]
     },
     {
       "sectionId": "numbers",
       "title": "Genitive with Numbers",
-      "explanation": "Numbers affect the case of the noun: 1 = nominative singular; 2, 3, 4 = genitive singular; 5-20 and compound numbers ending in 5-9, 0 = genitive plural. This is one of the trickiest parts of Ukrainian grammar.",
+      "explanation": "Numbers affect the case of the noun: 1 = nominative singular; 2, 3, 4 = nominative plural; 5-20 and compound numbers ending in 5-9, 0 = genitive plural. This is one of the trickiest parts of Ukrainian grammar.",
       "examples": [
-        { "uk": "Одна книга.", "en": "One book. (nominative)", "highlight": "книга" },
-        { "uk": "Дві книги.", "en": "Two books. (genitive singular)", "highlight": "книги" },
-        { "uk": "П'ять книг.", "en": "Five books. (genitive plural)", "highlight": "книг" }
+        {
+          "uk": "Одна книга.",
+          "en": "One book. (nominative)",
+          "highlight": "книга"
+        },
+        {
+          "uk": "Дві книги.",
+          "en": "Two books. (nominative plural)",
+          "highlight": "книги"
+        },
+        {
+          "uk": "П'ять книг.",
+          "en": "Five books. (genitive plural)",
+          "highlight": "книг"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Три ___. (студент – student)", "options": ["студенти", "студент", "студентів"], "correctIndex": 0, "explanation": "After 2, 3, 4 we use the nominative plural (which looks like genitive singular for masculine): три студенти." },
-        { "type": "fill-blank", "prompt": "Дві ___. (година – hour)", "acceptedAnswers": ["години"], "hint": "2, 3, 4 + genitive singular", "explanation": "After два/дві, три, чотири, the noun takes the genitive singular form: година → години." },
-        { "type": "multiple-choice", "prompt": "Шість ___. (день – day)", "options": ["днів", "дні", "день"], "correctIndex": 0, "explanation": "After 5 and above, the noun takes the genitive plural: день → днів." },
-        { "type": "fill-blank", "prompt": "П'ять ___. (хвилина – minute)", "acceptedAnswers": ["хвилин"], "hint": "5+ takes genitive plural; feminine nouns drop the ending.", "explanation": "Хвилина → хвилин (genitive plural). Feminine nouns ending in -а drop the -а and may have zero ending." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "У мене є три собака.", "errorWord": "собака", "acceptedAnswers": ["собаки"], "explanation": "After три, the noun takes the genitive singular: собака → собаки." },
-        { "type": "transformation", "prompt": "Use the correct form after the number:", "baseWord": "місяць", "context": "Я чекав сім ___.", "acceptedAnswers": ["місяців"], "hint": "7 requires genitive plural: -ів", "explanation": "Місяць → місяців (genitive plural). After 5+, masculine nouns often take -ів." },
-        { "type": "matching", "prompt": "Match each number phrase to the correct noun form:", "pairs": [
-          { "left": "один (день)", "right": "один день" },
-          { "left": "два (дні)", "right": "два дні" },
-          { "left": "п'ять (днів)", "right": "п'ять днів" },
-          { "left": "чотири (книги)", "right": "чотири книги" },
-          { "left": "десять (книг)", "right": "десять книг" }
-        ], "explanation": "1 = nominative; 2-4 = genitive singular (or nom. plural for some); 5+ = genitive plural." },
-        { "type": "multiple-choice", "prompt": "Двадцять одна ___. (гривня – hryvnia)", "options": ["гривня", "гривень", "гривні"], "correctIndex": 0, "explanation": "Compound numbers ending in 1 (двадцять одна) use the nominative singular: гривня." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I bought five apples.", "words": ["Я", "купив", "п'ять", "яблук"], "distractors": ["яблука"], "validOrders": [["Я", "купив", "п'ять", "яблук"]], "explanation": "П'ять requires the genitive plural: яблуко → яблук." },
-        { "type": "table-fill", "prompt": "Complete the noun form for each number:", "headers": ["Number + Noun", "Correct Form"], "rows": [
-          { "label": "2 + рік (year)", "answer": "два роки", "prefilled": false },
-          { "label": "5 + рік (year)", "answer": "п'ять років", "prefilled": false },
-          { "label": "3 + яблуко (apple)", "answer": "три яблука", "prefilled": false },
-          { "label": "10 + яблуко (apple)", "answer": "десять яблук", "prefilled": false },
-          { "label": "4 + гривня (hryvnia)", "answer": "чотири гривні", "prefilled": false }
-        ], "explanation": "Рік: 2-4 → роки, 5+ → років. Яблуко: 2-4 → яблука (gen. sg.), 5+ → яблук (gen. pl.). Гривня: 2-4 → гривні (gen. sg.)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Три ___. (студент – student)",
+          "options": [
+            "студенти",
+            "студентів",
+            "студент"
+          ],
+          "correctIndex": 0,
+          "explanation": "After 2, 3, 4 we use the nominative plural: три студенти."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Дві ___. (година – hour)",
+          "acceptedAnswers": [
+            "години"
+          ],
+          "hint": "2, 3, 4 + nominative plural",
+          "explanation": "After два/дві, три, чотири, the noun takes the nominative plural form: година → години."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Шість ___. (день – day)",
+          "options": [
+            "днів",
+            "день",
+            "дні"
+          ],
+          "correctIndex": 0,
+          "explanation": "After 5 and above, the noun takes the genitive plural: день → днів."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "П'ять ___. (хвилина – minute)",
+          "acceptedAnswers": [
+            "хвилин"
+          ],
+          "hint": "5+ takes genitive plural; feminine nouns drop the ending.",
+          "explanation": "Хвилина → хвилин (genitive plural). Feminine nouns ending in -а drop the -а and may have zero ending."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "У мене є три собака.",
+          "errorWord": "собака",
+          "acceptedAnswers": [
+            "собаки"
+          ],
+          "explanation": "After три, the noun takes the nominative plural: собака → собаки."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Use the correct form after the number:",
+          "baseWord": "місяць",
+          "context": "Я чекав сім ___.",
+          "acceptedAnswers": [
+            "місяців"
+          ],
+          "hint": "7 requires genitive plural: -ів",
+          "explanation": "Місяць → місяців (genitive plural). After 5+, masculine nouns often take -ів."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each number phrase to the correct noun form:",
+          "pairs": [
+            {
+              "left": "один (день)",
+              "right": "один день"
+            },
+            {
+              "left": "два (дні)",
+              "right": "два дні"
+            },
+            {
+              "left": "п'ять (днів)",
+              "right": "п'ять днів"
+            },
+            {
+              "left": "чотири (книги)",
+              "right": "чотири книги"
+            },
+            {
+              "left": "десять (книг)",
+              "right": "десять книг"
+            }
+          ],
+          "explanation": "1 = nominative singular; 2-4 = nominative plural; 5+ = genitive plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Двадцять одна ___. (гривня – hryvnia)",
+          "options": [
+            "гривень",
+            "гривні",
+            "гривня"
+          ],
+          "correctIndex": 2,
+          "explanation": "Compound numbers ending in 1 (двадцять одна) use the nominative singular: гривня."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I bought five apples.",
+          "words": [
+            "Я",
+            "купив",
+            "п'ять",
+            "яблук"
+          ],
+          "distractors": [
+            "яблука"
+          ],
+          "validOrders": [
+            [
+              "Я",
+              "купив",
+              "п'ять",
+              "яблук"
+            ]
+          ],
+          "explanation": "П'ять requires the genitive plural: яблуко → яблук."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the noun form for each number:",
+          "headers": [
+            "Number + Noun",
+            "Correct Form"
+          ],
+          "rows": [
+            {
+              "label": "2 + рік (year)",
+              "answer": "два роки",
+              "prefilled": false
+            },
+            {
+              "label": "5 + рік (year)",
+              "answer": "п'ять років",
+              "prefilled": false
+            },
+            {
+              "label": "3 + яблуко (apple)",
+              "answer": "три яблука",
+              "prefilled": false
+            },
+            {
+              "label": "10 + яблуко (apple)",
+              "answer": "десять яблук",
+              "prefilled": false
+            },
+            {
+              "label": "4 + гривня (hryvnia)",
+              "answer": "чотири гривні",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Рік: 2-4 → роки, 5+ → років. Яблуко: 2-4 → яблука (nom. pl.), 5+ → яблук (gen. pl.). Гривня: 2-4 → гривні (nom. pl.)."
+        }
       ]
     }
   ]

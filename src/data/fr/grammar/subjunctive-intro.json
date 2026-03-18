@@ -4,7 +4,9 @@
   "nameFr": "Introduction au subjonctif",
   "icon": "🌀",
   "tier": "B1",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -49,17 +51,21 @@
           "type": "multiple-choice",
           "prompt": "Which stem do you use to form the present subjunctive of a regular verb?",
           "options": [
-            "The ils/elles present tense form minus -ent",
+            "The je present tense form",
             "The infinitive minus -er/-ir/-re",
-            "The je present tense form"
+            "The ils/elles present tense form minus -ent"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "Drop -ent from the ils/elles present tense form to get the subjunctive stem: parlent → parl-, finissent → finiss-, vendent → vend-."
         },
         {
           "type": "fill-blank",
           "prompt": "Complete with the correct subjunctive: Il faut que tu ___ (parler) plus fort.",
-          "options": ["parles", "parlez", "parlais"],
+          "options": [
+            "parles",
+            "parlez",
+            "parlais"
+          ],
           "correctIndex": 0,
           "explanation": "parler → ils parlent → stem parl- + subjunctive ending -es for tu → parles."
         },
@@ -77,7 +83,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with the correct subjunctive: Je veux qu'il ___ (finir) ses devoirs.",
-          "options": ["finisse", "finit", "finissait"
+          "options": [
+            "finisse",
+            "finit",
+            "finissait"
           ],
           "correctIndex": 0,
           "explanation": "finir → ils finissent → stem finiss- + subjunctive ending -e for il → finisse."
@@ -86,17 +95,20 @@
           "type": "multiple-choice",
           "prompt": "The subjunctive forms que nous parlions and que vous parliez are identical to which other tense?",
           "options": [
+            "The conditional tense",
             "The imperfect tense",
-            "The future tense",
-            "The conditional tense"
+            "The future tense"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "The nous and vous subjunctive forms always match the imperfect: nous parlions, vous parliez — same in both moods."
         },
         {
           "type": "fill-blank",
           "prompt": "Complete with the correct subjunctive: Il est essentiel que nous ___ (vendre) la maison.",
-          "options": ["vendions", "vendons", "vendiez"
+          "options": [
+            "vendions",
+            "vendons",
+            "vendiez"
           ],
           "correctIndex": 0,
           "explanation": "vendre → ils vendent → stem vend- + subjunctive ending -ions for nous → vendions."
@@ -115,7 +127,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with the correct subjunctive: Je doute qu'elle ___ (savoir) la réponse.",
-          "options": ["sache", "sait", "savait"],
+          "options": [
+            "sache",
+            "sait",
+            "savait"
+          ],
           "correctIndex": 0,
           "explanation": "savoir has the irregular subjunctive stem sach-: que je sache, tu saches, il sache, nous sachions, vous sachiez, ils sachent."
         }
@@ -163,17 +179,21 @@
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses the subjunctive?",
           "options": [
+            "Je sais qu'il vient demain.",
             "Je doute qu'il vienne demain.",
-            "Je crois qu'il vient demain.",
-            "Je sais qu'il vient demain."
+            "Je crois qu'il vient demain."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Douter que triggers the subjunctive (doubt/uncertainty). Croire que and savoir que express certainty and take the indicative."
         },
         {
           "type": "fill-blank",
           "prompt": "Complete: Il est important que tu ___ (être) à l'heure.",
-          "options": ["sois", "es", "étais"],
+          "options": [
+            "sois",
+            "es",
+            "étais"
+          ],
           "correctIndex": 0,
           "explanation": "Il est important que is an impersonal expression that always triggers the subjunctive. être → subjunctive → tu sois."
         },
@@ -182,8 +202,8 @@
           "prompt": "Which of these triggers always requires the subjunctive?",
           "options": [
             "Il faut que",
-            "Je sais que",
-            "Il est évident que"
+            "Il est évident que",
+            "Je sais que"
           ],
           "correctIndex": 0,
           "explanation": "Il faut que is an impersonal expression of necessity that always requires the subjunctive. Je sais que and il est évident que express certainty and take the indicative."
@@ -191,7 +211,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Nous partons avant qu'il ___ (faire) nuit.",
-          "options": ["fasse", "fait", "fera"],
+          "options": [
+            "fasse",
+            "fait",
+            "fera"
+          ],
           "correctIndex": 0,
           "explanation": "Avant que is a conjunction that always requires the subjunctive. faire → irregular subjunctive → il fasse."
         },
@@ -199,17 +223,21 @@
           "type": "multiple-choice",
           "prompt": "Which sentence requires the subjunctive rather than the infinitive?",
           "options": [
+            "Il préfère rester ici.",
             "Je veux qu'elle parte.",
-            "Je veux partir.",
-            "Il préfère rester ici."
+            "Je veux partir."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "When two different subjects are involved (je/elle), the subjunctive is used after que. When the subject is the same, use the infinitive (je veux partir, not que je parte)."
         },
         {
           "type": "fill-blank",
           "prompt": "Complete: Je suis triste qu'elle ___ (partir) si tôt.",
-          "options": ["parte", "part", "partait"],
+          "options": [
+            "parte",
+            "part",
+            "partait"
+          ],
           "correctIndex": 0,
           "explanation": "Être triste que expresses emotion and triggers the subjunctive. partir → ils partent → stem part- + subjunctive ending -e for elle → parte."
         },
@@ -217,17 +245,21 @@
           "type": "multiple-choice",
           "prompt": "Which conjunction always requires the subjunctive in the following clause?",
           "options": [
-            "bien que",
             "parce que",
+            "bien que",
             "pendant que"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Bien que (although) is a concessive conjunction that always requires the subjunctive. Parce que and pendant que are followed by the indicative."
         },
         {
           "type": "fill-blank",
           "prompt": "Complete: Il exige que nous ___ (avoir) tous les documents.",
-          "options": ["ayons", "avons", "avions"],
+          "options": [
+            "ayons",
+            "avons",
+            "avions"
+          ],
           "correctIndex": 0,
           "explanation": "Exiger que expresses obligation and triggers the subjunctive. avoir has an irregular subjunctive: nous ayons."
         }

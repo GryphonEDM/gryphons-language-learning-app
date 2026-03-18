@@ -4,7 +4,10 @@
   "nameUk": "Присвійні та вказівні займенники",
   "icon": "👆",
   "tier": "A2",
-  "prerequisites": ["pronouns-personal", "nouns-basics"],
+  "prerequisites": [
+    "pronouns-personal",
+    "nouns-basics"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -12,26 +15,155 @@
       "title": "Possessive Pronouns",
       "explanation": "Possessive pronouns show ownership and agree with the noun they modify in gender, number, and case. Мій/моя/моє/мої (my), твій/твоя/твоє/твої (your sg.), наш/наша/наше/наші (our), ваш/ваша/ваше/ваші (your pl./formal). Third person forms його (his/its), її (her), їхній/їхня/їхнє/їхні (their) — його and її do NOT change.",
       "examples": [
-        { "uk": "Мій брат студент.", "en": "My brother is a student.", "highlight": "Мій" },
-        { "uk": "Це її книга.", "en": "This is her book.", "highlight": "її" },
-        { "uk": "Наше місто красиве.", "en": "Our city is beautiful.", "highlight": "Наше" }
+        {
+          "uk": "Мій брат студент.",
+          "en": "My brother is a student.",
+          "highlight": "Мій"
+        },
+        {
+          "uk": "Це її книга.",
+          "en": "This is her book.",
+          "highlight": "її"
+        },
+        {
+          "uk": "Наше місто красиве.",
+          "en": "Our city is beautiful.",
+          "highlight": "Наше"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "___ сестра працює в лікарні. (my)", "options": ["Моя", "Мій", "Моє"], "correctIndex": 0, "explanation": "Сестра is feminine, so we use the feminine possessive: моя." },
-        { "type": "fill-blank", "prompt": "___ телефон дзвонить. (your, informal singular)", "acceptedAnswers": ["Твій", "твій"], "hint": "Телефон is masculine → masculine possessive", "explanation": "Телефон is masculine, so the possessive is твій (your, singular informal)." },
-        { "type": "fill-blank", "prompt": "Це ___ дім. (our)", "acceptedAnswers": ["наш"], "hint": "Дім is masculine.", "explanation": "Дім is masculine, so we use наш (our, masculine form)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Це мій кімната.", "errorWord": "мій", "acceptedAnswers": ["моя"], "explanation": "Кімната (room) is feminine, so the possessive must be моя, not мій (masculine)." },
-        { "type": "multiple-choice", "prompt": "Де ___ окуляри? (your, formal/plural)", "options": ["ваші", "ваш", "ваша"], "correctIndex": 0, "explanation": "Окуляри (glasses) is plural, so we use the plural form ваші." },
-        { "type": "matching", "prompt": "Match each noun with the correct form of 'мій' (my):", "pairs": [
-          { "left": "друг (m.)", "right": "мій" },
-          { "left": "подруга (f.)", "right": "моя" },
-          { "left": "авто (n.)", "right": "моє" },
-          { "left": "батьки (pl.)", "right": "мої" }
-        ], "explanation": "Мій changes to match gender/number: мій (m), моя (f), моє (n), мої (pl)." },
-        { "type": "transformation", "prompt": "Choose the correct possessive:", "baseWord": "наш", "context": "___ школа найкраща.", "acceptedAnswers": ["Наша", "наша"], "hint": "Школа is feminine.", "explanation": "Школа is feminine, so наш → наша." },
-        { "type": "multiple-choice", "prompt": "Це ___ рішення. (his)", "options": ["його", "йому", "їхнє"], "correctIndex": 0, "explanation": "Його (his) never changes form regardless of the noun's gender or number." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Their children go to school.", "words": ["Їхні", "діти", "ходять", "до", "школи"], "distractors": ["Їхній"], "validOrders": [["Їхні", "діти", "ходять", "до", "школи"]], "explanation": "Діти is plural, so їхній → їхні. Їхній is masculine singular." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Моя мама працює в лікарні.", "acceptedAnswers": ["Моя мама працює в лікарні.", "Моя мама працює в лікарні"], "explanation": "Мама is feminine, so we use моя (my, feminine form)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "___ сестра працює в лікарні. (my)",
+          "options": [
+            "Моє",
+            "Мій",
+            "Моя"
+          ],
+          "correctIndex": 2,
+          "explanation": "Сестра is feminine, so we use the feminine possessive: моя."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ телефон дзвонить. (your, informal singular)",
+          "acceptedAnswers": [
+            "Твій",
+            "твій"
+          ],
+          "hint": "Телефон is masculine → masculine possessive",
+          "explanation": "Телефон is masculine, so the possessive is твій (your, singular informal)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це ___ дім. (our)",
+          "acceptedAnswers": [
+            "наш"
+          ],
+          "hint": "Дім is masculine.",
+          "explanation": "Дім is masculine, so we use наш (our, masculine form)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Це мій кімната.",
+          "errorWord": "мій",
+          "acceptedAnswers": [
+            "моя"
+          ],
+          "explanation": "Кімната (room) is feminine, so the possessive must be моя, not мій (masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Де ___ окуляри? (your, formal/plural)",
+          "options": [
+            "ваша",
+            "ваші",
+            "ваш"
+          ],
+          "correctIndex": 1,
+          "explanation": "Окуляри (glasses) is plural, so we use the plural form ваші."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun with the correct form of 'мій' (my):",
+          "pairs": [
+            {
+              "left": "друг (m.)",
+              "right": "мій"
+            },
+            {
+              "left": "подруга (f.)",
+              "right": "моя"
+            },
+            {
+              "left": "авто (n.)",
+              "right": "моє"
+            },
+            {
+              "left": "батьки (pl.)",
+              "right": "мої"
+            }
+          ],
+          "explanation": "Мій changes to match gender/number: мій (m), моя (f), моє (n), мої (pl)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Choose the correct possessive:",
+          "baseWord": "наш",
+          "context": "___ школа найкраща.",
+          "acceptedAnswers": [
+            "Наша",
+            "наша"
+          ],
+          "hint": "Школа is feminine.",
+          "explanation": "Школа is feminine, so наш → наша."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Це ___ рішення. (his)",
+          "options": [
+            "їхнє",
+            "його",
+            "йому"
+          ],
+          "correctIndex": 1,
+          "explanation": "Його (his) never changes form regardless of the noun's gender or number."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Their children go to school.",
+          "words": [
+            "Їхні",
+            "діти",
+            "ходять",
+            "до",
+            "школи"
+          ],
+          "distractors": [
+            "Їхній"
+          ],
+          "validOrders": [
+            [
+              "Їхні",
+              "діти",
+              "ходять",
+              "до",
+              "школи"
+            ]
+          ],
+          "explanation": "Діти is plural, so їхній → їхні. Їхній is masculine singular."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Моя мама працює в лікарні.",
+          "acceptedAnswers": [
+            "Моя мама працює в лікарні.",
+            "Моя мама працює в лікарні"
+          ],
+          "explanation": "Мама is feminine, so we use моя (my, feminine form)."
+        }
       ]
     },
     {
@@ -39,31 +171,175 @@
       "title": "Demonstrative Pronouns",
       "explanation": "Demonstrative pronouns point to specific items. 'This/these': цей (m), ця (f), це (n), ці (pl). 'That/those': той (m), та (f), те (n), ті (pl). They agree with the noun in gender and number.",
       "examples": [
-        { "uk": "Цей будинок новий.", "en": "This building is new.", "highlight": "Цей" },
-        { "uk": "Та дівчина моя сестра.", "en": "That girl is my sister.", "highlight": "Та" },
-        { "uk": "Ці яблука смачні.", "en": "These apples are tasty.", "highlight": "Ці" }
+        {
+          "uk": "Цей будинок новий.",
+          "en": "This building is new.",
+          "highlight": "Цей"
+        },
+        {
+          "uk": "Та дівчина моя сестра.",
+          "en": "That girl is my sister.",
+          "highlight": "Та"
+        },
+        {
+          "uk": "Ці яблука смачні.",
+          "en": "These apples are tasty.",
+          "highlight": "Ці"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "___ книга дуже цікава. (this)", "options": ["Ця", "Цей", "Це"], "correctIndex": 0, "explanation": "Книга is feminine, so we use ця (this, feminine)." },
-        { "type": "fill-blank", "prompt": "___ хлопець мій друг. (that)", "acceptedAnswers": ["Той", "той"], "hint": "Хлопець is masculine → masculine demonstrative", "explanation": "Хлопець is masculine, so we use той (that, masculine)." },
-        { "type": "fill-blank", "prompt": "___ завдання складне. (this)", "acceptedAnswers": ["Це", "це"], "hint": "Завдання is neuter.", "explanation": "Завдання (task) is neuter, so we use це (this, neuter)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Цей вулиця довга.", "errorWord": "Цей", "acceptedAnswers": ["Ця"], "explanation": "Вулиця (street) is feminine, so it should be ця, not цей (masculine)." },
-        { "type": "multiple-choice", "prompt": "___ квіти для тебе. (these)", "options": ["Ці", "Цей", "Ця"], "correctIndex": 0, "explanation": "Квіти (flowers) is plural, so we use ці (these, plural)." },
-        { "type": "matching", "prompt": "Match each noun with the correct form of 'той' (that):", "pairs": [
-          { "left": "чоловік (m.)", "right": "той" },
-          { "left": "жінка (f.)", "right": "та" },
-          { "left": "дерево (n.)", "right": "те" },
-          { "left": "люди (pl.)", "right": "ті" }
-        ], "explanation": "Той changes by gender/number: той (m), та (f), те (n), ті (pl)." },
-        { "type": "transformation", "prompt": "Choose the correct demonstrative:", "baseWord": "цей", "context": "___ дівчата з нашого класу.", "acceptedAnswers": ["Ці", "ці"], "hint": "Дівчата is plural.", "explanation": "Дівчата (girls) is plural, so цей → ці." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "That house is very old.", "words": ["Той", "будинок", "дуже", "старий"], "distractors": ["Та"], "validOrders": [["Той", "будинок", "дуже", "старий"]], "explanation": "Будинок is masculine, so we use той (not та, which is feminine)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Ці вправи дуже корисні.", "acceptedAnswers": ["Ці вправи дуже корисні.", "Ці вправи дуже корисні"], "explanation": "Вправи (exercises) is plural, requiring the plural demonstrative ці." },
-        { "type": "table-fill", "prompt": "Complete the demonstrative pronouns:", "headers": ["Gender/Number", "This", "That"], "rows": [
-          { "label": "Masculine", "answer": "цей / той", "prefilled": false },
-          { "label": "Feminine", "answer": "ця / та", "prefilled": false },
-          { "label": "Neuter", "answer": "це / те", "prefilled": false },
-          { "label": "Plural", "answer": "ці / ті", "prefilled": false }
-        ], "explanation": "This: цей/ця/це/ці. That: той/та/те/ті. They follow the same gender/number agreement pattern." }
+        {
+          "type": "multiple-choice",
+          "prompt": "___ книга дуже цікава. (this)",
+          "options": [
+            "Ця",
+            "Цей",
+            "Це"
+          ],
+          "correctIndex": 0,
+          "explanation": "Книга is feminine, so we use ця (this, feminine)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ хлопець мій друг. (that)",
+          "acceptedAnswers": [
+            "Той",
+            "той"
+          ],
+          "hint": "Хлопець is masculine → masculine demonstrative",
+          "explanation": "Хлопець is masculine, so we use той (that, masculine)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ завдання складне. (this)",
+          "acceptedAnswers": [
+            "Це",
+            "це"
+          ],
+          "hint": "Завдання is neuter.",
+          "explanation": "Завдання (task) is neuter, so we use це (this, neuter)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Цей вулиця довга.",
+          "errorWord": "Цей",
+          "acceptedAnswers": [
+            "Ця"
+          ],
+          "explanation": "Вулиця (street) is feminine, so it should be ця, not цей (masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ квіти для тебе. (these)",
+          "options": [
+            "Цей",
+            "Ці",
+            "Ця"
+          ],
+          "correctIndex": 1,
+          "explanation": "Квіти (flowers) is plural, so we use ці (these, plural)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun with the correct form of 'той' (that):",
+          "pairs": [
+            {
+              "left": "чоловік (m.)",
+              "right": "той"
+            },
+            {
+              "left": "жінка (f.)",
+              "right": "та"
+            },
+            {
+              "left": "дерево (n.)",
+              "right": "те"
+            },
+            {
+              "left": "люди (pl.)",
+              "right": "ті"
+            }
+          ],
+          "explanation": "Той changes by gender/number: той (m), та (f), те (n), ті (pl)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Choose the correct demonstrative:",
+          "baseWord": "цей",
+          "context": "___ дівчата з нашого класу.",
+          "acceptedAnswers": [
+            "Ці",
+            "ці"
+          ],
+          "hint": "Дівчата is plural.",
+          "explanation": "Дівчата (girls) is plural, so цей → ці."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "That house is very old.",
+          "words": [
+            "Той",
+            "будинок",
+            "дуже",
+            "старий"
+          ],
+          "distractors": [
+            "Та"
+          ],
+          "validOrders": [
+            [
+              "Той",
+              "будинок",
+              "дуже",
+              "старий"
+            ]
+          ],
+          "explanation": "Будинок is masculine, so we use той (not та, which is feminine)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Ці вправи дуже корисні.",
+          "acceptedAnswers": [
+            "Ці вправи дуже корисні.",
+            "Ці вправи дуже корисні"
+          ],
+          "explanation": "Вправи (exercises) is plural, requiring the plural demonstrative ці."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the demonstrative pronouns:",
+          "headers": [
+            "Gender/Number",
+            "This",
+            "That"
+          ],
+          "rows": [
+            {
+              "label": "Masculine",
+              "answer": "цей / той",
+              "prefilled": false
+            },
+            {
+              "label": "Feminine",
+              "answer": "ця / та",
+              "prefilled": false
+            },
+            {
+              "label": "Neuter",
+              "answer": "це / те",
+              "prefilled": false
+            },
+            {
+              "label": "Plural",
+              "answer": "ці / ті",
+              "prefilled": false
+            }
+          ],
+          "explanation": "This: цей/ця/це/ці. That: той/та/те/ті. They follow the same gender/number agreement pattern."
+        }
       ]
     },
     {
@@ -71,26 +347,155 @@
       "title": "Pronouns in Practice",
       "explanation": "In real speech and writing, possessive and demonstrative pronouns combine naturally. You might say 'Ця моя книга' (this is my book) or 'Той його друг' (that friend of his). Practice using them together in context.",
       "examples": [
-        { "uk": "Ця моя улюблена пісня.", "en": "This is my favorite song.", "highlight": "Ця моя" },
-        { "uk": "Ті ваші друзі прийшли.", "en": "Those friends of yours came.", "highlight": "Ті ваші" },
-        { "uk": "Його цей проєкт важливий.", "en": "This project of his is important.", "highlight": "Його цей" }
+        {
+          "uk": "Ця моя улюблена пісня.",
+          "en": "This is my favorite song.",
+          "highlight": "Ця моя"
+        },
+        {
+          "uk": "Ті ваші друзі прийшли.",
+          "en": "Those friends of yours came.",
+          "highlight": "Ті ваші"
+        },
+        {
+          "uk": "Його цей проєкт важливий.",
+          "en": "This project of his is important.",
+          "highlight": "Його цей"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "___ ___ кіт дуже розумний. (this, my) — кіт is masculine", "options": ["Цей мій", "Ця моя", "Це моє"], "correctIndex": 0, "explanation": "Кіт is masculine, so both the demonstrative and possessive are masculine: цей мій." },
-        { "type": "fill-blank", "prompt": "___ сумка належить їй. (that, feminine)", "acceptedAnswers": ["Та", "та"], "hint": "Сумка is feminine.", "explanation": "Сумка (bag) is feminine, so we use та (that, feminine)." },
-        { "type": "fill-blank", "prompt": "Я знаю ___ вашу подругу. (this/that, feminine)", "acceptedAnswers": ["цю", "ту"], "hint": "In accusative: ця → цю, та → ту", "explanation": "In the accusative case (after знаю), the feminine demonstratives become цю (this) or ту (that)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Той моя улюблена книга.", "errorWord": "Той", "acceptedAnswers": ["Та"], "explanation": "Книга is feminine, so the demonstrative must be та (feminine), not той (masculine)." },
-        { "type": "multiple-choice", "prompt": "___ завдання наше. (this, neuter)", "options": ["Це", "Цей", "Ця"], "correctIndex": 0, "explanation": "Завдання is neuter, so we use це (this, neuter)." },
-        { "type": "transformation", "prompt": "Fill in the correct pronoun forms:", "baseWord": "твій", "context": "Де ___ нові черевики?", "acceptedAnswers": ["твої"], "hint": "Черевики (shoes) is plural.", "explanation": "Черевики is plural, so твій → твої." },
-        { "type": "matching", "prompt": "Match the sentence to the correct pronoun:", "pairs": [
-          { "left": "___ мій телефон. (this, m.)", "right": "Це" },
-          { "left": "___ наша вчителька. (that, f.)", "right": "Та" },
-          { "left": "___ його діти. (these, pl.)", "right": "Ці" },
-          { "left": "Де ___ ключі? (my, pl.)", "right": "мої" }
-        ], "explanation": "Це мій телефон (neuter 'це' used as 'this is'); Та наша вчителька (fem.); Ці його діти (pl.); мої ключі (pl.)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "These your books are on the table.", "words": ["Ці", "твої", "книги", "на", "столі"], "distractors": ["Цей"], "validOrders": [["Ці", "твої", "книги", "на", "столі"]], "explanation": "Книги is plural: ці (these, pl.) + твої (your, pl.)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Наш новий сусід дуже привітний.", "acceptedAnswers": ["Наш новий сусід дуже привітний.", "Наш новий сусід дуже привітний"], "explanation": "Сусід (neighbor) is masculine, so the possessive is наш (our, masculine)." },
-        { "type": "multiple-choice", "prompt": "Я не знаю ___ людей. (those, genitive plural)", "options": ["тих", "ті", "той"], "correctIndex": 0, "explanation": "In the genitive plural (after не знаю + plural), ті → тих." }
+        {
+          "type": "multiple-choice",
+          "prompt": "___ ___ кіт дуже розумний. (this, my) — кіт is masculine",
+          "options": [
+            "Ця моя",
+            "Цей мій",
+            "Це моє"
+          ],
+          "correctIndex": 1,
+          "explanation": "Кіт is masculine, so both the demonstrative and possessive are masculine: цей мій."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ сумка належить їй. (that, feminine)",
+          "acceptedAnswers": [
+            "Та",
+            "та"
+          ],
+          "hint": "Сумка is feminine.",
+          "explanation": "Сумка (bag) is feminine, so we use та (that, feminine)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я знаю ___ вашу подругу. (this/that, feminine)",
+          "acceptedAnswers": [
+            "цю",
+            "ту"
+          ],
+          "hint": "In accusative: ця → цю, та → ту",
+          "explanation": "In the accusative case (after знаю), the feminine demonstratives become цю (this) or ту (that)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Той моя улюблена книга.",
+          "errorWord": "Той",
+          "acceptedAnswers": [
+            "Та"
+          ],
+          "explanation": "Книга is feminine, so the demonstrative must be та (feminine), not той (masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ завдання наше. (this, neuter)",
+          "options": [
+            "Ця",
+            "Цей",
+            "Це"
+          ],
+          "correctIndex": 2,
+          "explanation": "Завдання is neuter, so we use це (this, neuter)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Fill in the correct pronoun forms:",
+          "baseWord": "твій",
+          "context": "Де ___ нові черевики?",
+          "acceptedAnswers": [
+            "твої"
+          ],
+          "hint": "Черевики (shoes) is plural.",
+          "explanation": "Черевики is plural, so твій → твої."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the sentence to the correct pronoun:",
+          "pairs": [
+            {
+              "left": "___ мій телефон. (this, m.)",
+              "right": "Це"
+            },
+            {
+              "left": "___ наша вчителька. (that, f.)",
+              "right": "Та"
+            },
+            {
+              "left": "___ його діти. (these, pl.)",
+              "right": "Ці"
+            },
+            {
+              "left": "Де ___ ключі? (my, pl.)",
+              "right": "мої"
+            }
+          ],
+          "explanation": "Це мій телефон (neuter 'це' used as 'this is'); Та наша вчителька (fem.); Ці його діти (pl.); мої ключі (pl.)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "These your books are on the table.",
+          "words": [
+            "Ці",
+            "твої",
+            "книги",
+            "на",
+            "столі"
+          ],
+          "distractors": [
+            "Цей"
+          ],
+          "validOrders": [
+            [
+              "Ці",
+              "твої",
+              "книги",
+              "на",
+              "столі"
+            ]
+          ],
+          "explanation": "Книги is plural: ці (these, pl.) + твої (your, pl.)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Наш новий сусід дуже привітний.",
+          "acceptedAnswers": [
+            "Наш новий сусід дуже привітний.",
+            "Наш новий сусід дуже привітний"
+          ],
+          "explanation": "Сусід (neighbor) is masculine, so the possessive is наш (our, masculine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я не знаю ___ людей. (those, genitive plural)",
+          "options": [
+            "той",
+            "ті",
+            "тих"
+          ],
+          "correctIndex": 2,
+          "explanation": "In the genitive plural (after не знаю + plural), ті → тих."
+        }
       ]
     }
   ]

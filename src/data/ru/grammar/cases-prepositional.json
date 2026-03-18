@@ -4,7 +4,9 @@
   "nameRu": "Предложный падеж",
   "icon": "📌",
   "tier": "B1",
-  "prerequisites": ["cases-dat-inst"],
+  "prerequisites": [
+    "cases-dat-inst"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,33 +15,178 @@
       "tip": "The prepositional case always follows a preposition. With в/на it indicates location. Masculine/neuter nouns take -е, feminine nouns ending in -а take -е, feminine nouns ending in -ь take -и.",
       "explanation": "The prepositional case (предложный падеж) always appears after prepositions: в (in), на (on/at). It answers 'where?' (где?), 'in what?' (в чём?), 'on what?' (на чём?). Masculine nouns take -е (most) or -у (some common nouns); feminine -а → -е; feminine -ь → -и; neuter -о → -е, -ие → -ии. Some masculine nouns take stressed -у: в лесу, на полу, в шкафу.",
       "examples": [
-        { "ru": "Я живу в России.", "en": "I live in Russia.", "highlight": "в России" },
-        { "ru": "Книга на столе.", "en": "The book is on the table.", "highlight": "на столе" },
-        { "ru": "Мы говорим по телефону.", "en": "We are talking on the phone.", "highlight": "по телефону" }
+        {
+          "ru": "Я живу в России.",
+          "en": "I live in Russia.",
+          "highlight": "в России"
+        },
+        {
+          "ru": "Книга на столе.",
+          "en": "The book is on the table.",
+          "highlight": "на столе"
+        },
+        {
+          "ru": "Мы говорим по телефону.",
+          "en": "We are talking on the phone.",
+          "highlight": "по телефону"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Он работает в ___. (банк – bank)", "options": ["банке", "банк", "банку"], "correctIndex": 0, "explanation": "Банк → банке in the prepositional. Most masculine nouns take -е." },
-        { "type": "fill-blank", "prompt": "Мы живём в ___. (город – city)", "acceptedAnswers": ["городе"], "hint": "Masculine → -е in prepositional", "explanation": "Город → городе. Masculine nouns take -е in the prepositional." },
-        { "type": "fill-blank", "prompt": "Дети играют на ___. (улица – street)", "acceptedAnswers": ["улице"], "hint": "Feminine -а → -е", "explanation": "Улица → улице. Feminine nouns ending in -а take -е in the prepositional." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Мы живём в Москва.", "correctedText": "Мы живём в Москве.", "acceptedAnswers": ["Москве"], "explanation": "After в (location), use the prepositional: Москва → Москве." },
-        { "type": "multiple-choice", "prompt": "Дети гуляют в ___. (парк – park)", "options": ["парке", "парку", "парк"], "correctIndex": 0, "explanation": "Парк → парке (prepositional). Most masculine nouns take -е." },
-        { "type": "transformation", "prompt": "Put the noun in the prepositional case:", "baseWord": "библиотека", "context": "Она работает в ___.", "acceptedAnswers": ["библиотеке"], "hint": "Feminine -а → -е", "explanation": "Библиотека → библиотеке. Feminine nouns ending in -а take -е in the prepositional." },
-        { "type": "matching", "prompt": "Match the nominative to the prepositional form:", "pairs": [
-          { "left": "школа", "right": "школе" },
-          { "left": "книга", "right": "книге" },
-          { "left": "лес", "right": "лесу" },
-          { "left": "пол", "right": "полу" },
-          { "left": "река", "right": "реке" }
-        ], "explanation": "Most nouns take -е: школа→школе, книга→книге, река→реке. Some masculine nouns take stressed -у: лес→лесу, пол→полу." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "We study at the university.", "words": ["Мы", "учимся", "в", "университете"], "correctOrder": ["Мы", "учимся", "в", "университете"], "distractors": ["университет"], "explanation": "В университете — prepositional. Университет → университете (-е ending)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Она сидит на скамейке в парке.", "acceptedAnswers": ["Она сидит на скамейке в парке.", "Она сидит на скамейке в парке"], "explanation": "На скамейке (on the bench): скамейка → скамейке. В парке: парк → парке." },
-        { "type": "table-fill", "prompt": "Complete the prepositional forms:", "headers": ["Nominative", "Prepositional (в/на ...)"], "rows": [
-          { "label": "дом", "answer": "доме", "prefilled": false },
-          { "label": "дорога", "answer": "дороге", "prefilled": false },
-          { "label": "озеро", "answer": "озере", "prefilled": false },
-          { "label": "аптека", "answer": "аптеке", "prefilled": false },
-          { "label": "шкаф", "answer": "шкафу", "prefilled": false }
-        ], "explanation": "Дом→доме; дорога→дороге; озеро→озере; аптека→аптеке; шкаф→шкафу (stressed -у, one of the exceptions)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Он работает в ___. (банк – bank)",
+          "options": [
+            "банк",
+            "банке",
+            "банку"
+          ],
+          "correctIndex": 1,
+          "explanation": "Банк → банке in the prepositional. Most masculine nouns take -е."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы живём в ___. (город – city)",
+          "acceptedAnswers": [
+            "городе"
+          ],
+          "hint": "Masculine → -е in prepositional",
+          "explanation": "Город → городе. Masculine nouns take -е in the prepositional."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Дети играют на ___. (улица – street)",
+          "acceptedAnswers": [
+            "улице"
+          ],
+          "hint": "Feminine -а → -е",
+          "explanation": "Улица → улице. Feminine nouns ending in -а take -е in the prepositional."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Мы живём в Москва.",
+          "correctedText": "Мы живём в Москве.",
+          "acceptedAnswers": [
+            "Москве"
+          ],
+          "explanation": "After в (location), use the prepositional: Москва → Москве."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Дети гуляют в ___. (парк – park)",
+          "options": [
+            "парк",
+            "парке",
+            "парку"
+          ],
+          "correctIndex": 1,
+          "explanation": "Парк → парке (prepositional). Most masculine nouns take -е."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the prepositional case:",
+          "baseWord": "библиотека",
+          "context": "Она работает в ___.",
+          "acceptedAnswers": [
+            "библиотеке"
+          ],
+          "hint": "Feminine -а → -е",
+          "explanation": "Библиотека → библиотеке. Feminine nouns ending in -а take -е in the prepositional."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative to the prepositional form:",
+          "pairs": [
+            {
+              "left": "школа",
+              "right": "школе"
+            },
+            {
+              "left": "книга",
+              "right": "книге"
+            },
+            {
+              "left": "лес",
+              "right": "лесу"
+            },
+            {
+              "left": "пол",
+              "right": "полу"
+            },
+            {
+              "left": "река",
+              "right": "реке"
+            }
+          ],
+          "explanation": "Most nouns take -е: школа→школе, книга→книге, река→реке. Some masculine nouns take stressed -у: лес→лесу, пол→полу."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "We study at the university.",
+          "words": [
+            "Мы",
+            "учимся",
+            "в",
+            "университете"
+          ],
+          "correctOrder": [
+            "Мы",
+            "учимся",
+            "в",
+            "университете"
+          ],
+          "distractors": [
+            "университет"
+          ],
+          "explanation": "В университете — prepositional. Университет → университете (-е ending)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Она сидит на скамейке в парке.",
+          "acceptedAnswers": [
+            "Она сидит на скамейке в парке.",
+            "Она сидит на скамейке в парке"
+          ],
+          "explanation": "На скамейке (on the bench): скамейка → скамейке. В парке: парк → парке."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the prepositional forms:",
+          "headers": [
+            "Nominative",
+            "Prepositional (в/на ...)"
+          ],
+          "rows": [
+            {
+              "label": "дом",
+              "answer": "доме",
+              "prefilled": false
+            },
+            {
+              "label": "дорога",
+              "answer": "дороге",
+              "prefilled": false
+            },
+            {
+              "label": "озеро",
+              "answer": "озере",
+              "prefilled": false
+            },
+            {
+              "label": "аптека",
+              "answer": "аптеке",
+              "prefilled": false
+            },
+            {
+              "label": "шкаф",
+              "answer": "шкафу",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Дом→доме; дорога→дороге; озеро→озере; аптека→аптеке; шкаф→шкафу (stressed -у, one of the exceptions)."
+        }
       ]
     },
     {
@@ -48,27 +195,157 @@
       "tip": "With о/об the prepositional case indicates the topic of speech or thought: думать о чём-то (to think about something), говорить о ком-то (to speak about someone).",
       "explanation": "The prepositional case with о/об means 'about': думать о работе (to think about work), говорить о друге (to talk about a friend). Use 'об' before vowels: об Анне, об этом. The same endings apply: masculine/neuter -е, feminine -а → -е, feminine -ь → -и.",
       "examples": [
-        { "ru": "Я думаю о маме.", "en": "I'm thinking about mom.", "highlight": "о маме" },
-        { "ru": "Мы говорили об этом фильме.", "en": "We talked about this film.", "highlight": "об этом фильме" },
-        { "ru": "Она мечтает о путешествии.", "en": "She dreams about traveling.", "highlight": "о путешествии" }
+        {
+          "ru": "Я думаю о маме.",
+          "en": "I'm thinking about mom.",
+          "highlight": "о маме"
+        },
+        {
+          "ru": "Мы говорили об этом фильме.",
+          "en": "We talked about this film.",
+          "highlight": "об этом фильме"
+        },
+        {
+          "ru": "Она мечтает о путешествии.",
+          "en": "She dreams about traveling.",
+          "highlight": "о путешествии"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я думаю о ___. (работа – work)", "options": ["работе", "работу", "работа"], "correctIndex": 0, "explanation": "О + prepositional: работа → работе." },
-        { "type": "fill-blank", "prompt": "Мы говорили о ___. (погода – weather)", "acceptedAnswers": ["погоде"], "hint": "Feminine -а → -е", "explanation": "Погода → погоде. О погоде — about the weather." },
-        { "type": "fill-blank", "prompt": "Он рассказывал о ___. (путешествие – trip)", "acceptedAnswers": ["путешествии"], "hint": "Neuter -ие → -ии", "explanation": "Путешествие → путешествии. Nouns ending in -ие take -ии in the prepositional." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я мечтаю о море.", "correctedText": "Я мечтаю о море.", "acceptedAnswers": ["море"], "explanation": "Море → море. Neuter nouns ending in -е keep -е in the prepositional. This sentence is actually correct!" },
-        { "type": "multiple-choice", "prompt": "Она думает ___ экзамене. (about)", "options": ["об", "о", "на"], "correctIndex": 0, "explanation": "'Об' is used before words starting with a vowel: об экзамене." },
-        { "type": "transformation", "prompt": "Put the noun in the prepositional with о/об:", "baseWord": "жизнь", "context": "Он написал книгу о ___.", "acceptedAnswers": ["жизни"], "hint": "Feminine -ь → -и", "explanation": "Жизнь → жизни. Feminine nouns ending in -ь take -и in the prepositional." },
-        { "type": "matching", "prompt": "Match the nominative to the prepositional form after о/об:", "pairs": [
-          { "left": "любовь", "right": "о любви" },
-          { "left": "здоровье", "right": "о здоровье" },
-          { "left": "друг", "right": "о друге" },
-          { "left": "Анна", "right": "об Анне" },
-          { "left": "музыка", "right": "о музыке" }
-        ], "explanation": "Любовь→любви (-ь→-и); здоровье→здоровье (-ье stays); друг→друге; Анна→Анне (об before vowel); музыка→музыке." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She told me about her new job.", "words": ["Она", "рассказала", "мне", "о", "новой", "работе"], "correctOrder": ["Она", "рассказала", "мне", "о", "новой", "работе"], "distractors": ["работа"], "explanation": "О новой работе — about the new job. Both adjective and noun are in the prepositional." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Мы часто вспоминаем о школе.", "acceptedAnswers": ["Мы часто вспоминаем о школе.", "Мы часто вспоминаем о школе"], "explanation": "Вспоминать о + prepositional: школа → школе." },
-        { "type": "fill-blank", "prompt": "Все говорят об ___. (этот фильм – this film, prepositional)", "acceptedAnswers": ["этом фильме"], "hint": "Об + demonstrative + noun in prepositional", "explanation": "Этот → этом, фильм → фильме. Об этом фильме — about this film." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я думаю о ___. (работа – work)",
+          "options": [
+            "работа",
+            "работе",
+            "работу"
+          ],
+          "correctIndex": 1,
+          "explanation": "О + prepositional: работа → работе."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы говорили о ___. (погода – weather)",
+          "acceptedAnswers": [
+            "погоде"
+          ],
+          "hint": "Feminine -а → -е",
+          "explanation": "Погода → погоде. О погоде — about the weather."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он рассказывал о ___. (путешествие – trip)",
+          "acceptedAnswers": [
+            "путешествии"
+          ],
+          "hint": "Neuter -ие → -ии",
+          "explanation": "Путешествие → путешествии. Nouns ending in -ие take -ии in the prepositional."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я мечтаю о морю.",
+          "correctedText": "Я мечтаю о море.",
+          "acceptedAnswers": [
+            "море",
+            "Я мечтаю о море.",
+            "Я мечтаю о море"
+          ],
+          "explanation": "Море → море in the prepositional (not морю). Neuter nouns ending in -е keep -е in the prepositional case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Она думает ___ экзамене. (about)",
+          "options": [
+            "о",
+            "об",
+            "на"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Об' is used before words starting with a vowel: об экзамене."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the prepositional with о/об:",
+          "baseWord": "жизнь",
+          "context": "Он написал книгу о ___.",
+          "acceptedAnswers": [
+            "жизни"
+          ],
+          "hint": "Feminine -ь → -и",
+          "explanation": "Жизнь → жизни. Feminine nouns ending in -ь take -и in the prepositional."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative to the prepositional form after о/об:",
+          "pairs": [
+            {
+              "left": "любовь",
+              "right": "о любви"
+            },
+            {
+              "left": "здоровье",
+              "right": "о здоровье"
+            },
+            {
+              "left": "друг",
+              "right": "о друге"
+            },
+            {
+              "left": "Анна",
+              "right": "об Анне"
+            },
+            {
+              "left": "музыка",
+              "right": "о музыке"
+            }
+          ],
+          "explanation": "Любовь→любви (-ь→-и); здоровье→здоровье (-ье stays); друг→друге; Анна→Анне (об before vowel); музыка→музыке."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She told me about her new job.",
+          "words": [
+            "Она",
+            "рассказала",
+            "мне",
+            "о",
+            "новой",
+            "работе"
+          ],
+          "correctOrder": [
+            "Она",
+            "рассказала",
+            "мне",
+            "о",
+            "новой",
+            "работе"
+          ],
+          "distractors": [
+            "работа"
+          ],
+          "explanation": "О новой работе — about the new job. Both adjective and noun are in the prepositional."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Мы часто вспоминаем о школе.",
+          "acceptedAnswers": [
+            "Мы часто вспоминаем о школе.",
+            "Мы часто вспоминаем о школе"
+          ],
+          "explanation": "Вспоминать о + prepositional: школа → школе."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Все говорят об ___. (этот фильм – this film, prepositional)",
+          "acceptedAnswers": [
+            "этом фильме"
+          ],
+          "hint": "Об + demonstrative + noun in prepositional",
+          "explanation": "Этот → этом, фильм → фильме. Об этом фильме — about this film."
+        }
       ]
     },
     {
@@ -77,34 +354,187 @@
       "tip": "Russian has six cases: именительный (nominative), родительный (genitive), дательный (dative), винительный (accusative), творительный (instrumental), предложный (prepositional).",
       "explanation": "Russian has six grammatical cases: 1) Именительный (Nominative) — subject; 2) Родительный (Genitive) — possession, absence; 3) Дательный (Dative) — indirect object; 4) Винительный (Accusative) — direct object; 5) Творительный (Instrumental) — means/tool; 6) Предложный (Prepositional) — location, topic. Practice identifying which case is needed in each context.",
       "examples": [
-        { "ru": "Мама, дай мне книгу брата!", "en": "Mom, give me brother's book!", "highlight": "Мама" },
-        { "ru": "Книга лежит на столе.", "en": "The book is on the table.", "highlight": "столе" },
-        { "ru": "Он пишет ручкой.", "en": "He writes with a pen.", "highlight": "ручкой" }
+        {
+          "ru": "Мама, дай мне книгу брата!",
+          "en": "Mom, give me brother's book!",
+          "highlight": "Мама"
+        },
+        {
+          "ru": "Книга лежит на столе.",
+          "en": "The book is on the table.",
+          "highlight": "столе"
+        },
+        {
+          "ru": "Он пишет ручкой.",
+          "en": "He writes with a pen.",
+          "highlight": "ручкой"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which case is 'маме' in the sentence 'Я дал цветы маме'?", "options": ["Dative (Дательный)", "Genitive (Родительный)", "Prepositional (Предложный)"], "correctIndex": 0, "explanation": "Маме here is dative — 'gave flowers TO mom'. Мама → маме (dative = to whom?)." },
-        { "type": "fill-blank", "prompt": "Identify the case: 'Книга лежит на столе.' — столе is in the ___ case.", "acceptedAnswers": ["prepositional", "предложный", "Prepositional", "Предложный", "предложном"], "hint": "After на (location) = ?", "explanation": "На столе — prepositional case. На + location always triggers the prepositional." },
-        { "type": "multiple-choice", "prompt": "In 'Он пишет ручкой', which case is 'ручкой'?", "options": ["Instrumental (Творительный)", "Nominative (Именительный)", "Accusative (Винительный)"], "correctIndex": 0, "explanation": "Ручкой is instrumental — writing WITH a pen. Ручка → ручкой." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я вижу красивая девушка.", "correctedText": "Я вижу красивую девушку.", "acceptedAnswers": ["красивую девушку"], "explanation": "Видеть (to see) takes the accusative: девушка → девушку, красивая → красивую." },
-        { "type": "matching", "prompt": "Match each sentence fragment to the case used:", "pairs": [
-          { "left": "книга брата (brother's book)", "right": "Genitive" },
-          { "left": "пишу ручкой (write with pen)", "right": "Instrumental" },
-          { "left": "на столе (on the table)", "right": "Prepositional" },
-          { "left": "дал другу (gave to friend)", "right": "Dative" },
-          { "left": "вижу дом (see the house)", "right": "Accusative" }
-        ], "explanation": "Брата=genitive (possession); ручкой=instrumental (tool); столе=prepositional (location); другу=dative (recipient); дом=accusative (direct object)." },
-        { "type": "transformation", "prompt": "Put 'сестра' in the correct case:", "baseWord": "сестра", "context": "Нет ___.", "acceptedAnswers": ["сестры"], "hint": "Нет + ? case", "explanation": "Нет requires the genitive: сестра → сестры." },
-        { "type": "fill-blank", "prompt": "___ работает в школе. (учитель — subject of sentence)", "acceptedAnswers": ["Учитель"], "hint": "Subject = nominative", "explanation": "The subject of the sentence is in the nominative case: учитель (no change)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Mom, give the book to Andrey!", "words": ["Мама", "дай", "книгу", "Андрею"], "correctOrder": ["Мама", "дай", "книгу", "Андрею"], "distractors": ["Андрей"], "explanation": "Мама (nominative, address), книгу (accusative — direct object), Андрею (dative — indirect object/recipient)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Расскажи мне об этой книге.", "acceptedAnswers": ["Расскажи мне об этой книге.", "Расскажи мне об этой книге"], "explanation": "Мне (dative), об этой книге (prepositional). Multiple cases in one sentence!" },
-        { "type": "table-fill", "prompt": "Complete all six cases of 'книга' (book):", "headers": ["Case", "Form"], "rows": [
-          { "label": "Именительный (Nominative)", "answer": "книга", "prefilled": true },
-          { "label": "Родительный (Genitive)", "answer": "книги", "prefilled": false },
-          { "label": "Дательный (Dative)", "answer": "книге", "prefilled": false },
-          { "label": "Винительный (Accusative)", "answer": "книгу", "prefilled": false },
-          { "label": "Творительный (Instrumental)", "answer": "книгой", "prefilled": false },
-          { "label": "Предложный (Prepositional)", "answer": "книге", "prefilled": false }
-        ], "explanation": "Книга: nom. книга, gen. книги, dat. книге, acc. книгу, inst. книгой, prep. книге. Note: dative and prepositional forms are the same for feminine -а nouns." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which case is 'маме' in the sentence 'Я дал цветы маме'?",
+          "options": [
+            "Prepositional (Предложный)",
+            "Dative (Дательный)",
+            "Genitive (Родительный)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Маме here is dative — 'gave flowers TO mom'. Мама → маме (dative = to whom?)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Identify the case: 'Книга лежит на столе.' — столе is in the ___ case.",
+          "acceptedAnswers": [
+            "prepositional",
+            "предложный",
+            "Prepositional",
+            "Предложный",
+            "предложном"
+          ],
+          "hint": "After на (location) = ?",
+          "explanation": "На столе — prepositional case. На + location always triggers the prepositional."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'Он пишет ручкой', which case is 'ручкой'?",
+          "options": [
+            "Nominative (Именительный)",
+            "Instrumental (Творительный)",
+            "Accusative (Винительный)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ручкой is instrumental — writing WITH a pen. Ручка → ручкой."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я вижу красивая девушка.",
+          "correctedText": "Я вижу красивую девушку.",
+          "acceptedAnswers": [
+            "красивую девушку"
+          ],
+          "explanation": "Видеть (to see) takes the accusative: девушка → девушку, красивая → красивую."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each sentence fragment to the case used:",
+          "pairs": [
+            {
+              "left": "книга брата (brother's book)",
+              "right": "Genitive"
+            },
+            {
+              "left": "пишу ручкой (write with pen)",
+              "right": "Instrumental"
+            },
+            {
+              "left": "на столе (on the table)",
+              "right": "Prepositional"
+            },
+            {
+              "left": "дал другу (gave to friend)",
+              "right": "Dative"
+            },
+            {
+              "left": "вижу дом (see the house)",
+              "right": "Accusative"
+            }
+          ],
+          "explanation": "Брата=genitive (possession); ручкой=instrumental (tool); столе=prepositional (location); другу=dative (recipient); дом=accusative (direct object)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put 'сестра' in the correct case:",
+          "baseWord": "сестра",
+          "context": "Нет ___.",
+          "acceptedAnswers": [
+            "сестры"
+          ],
+          "hint": "Нет + ? case",
+          "explanation": "Нет requires the genitive: сестра → сестры."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ работает в школе. (учитель — subject of sentence)",
+          "acceptedAnswers": [
+            "Учитель"
+          ],
+          "hint": "Subject = nominative",
+          "explanation": "The subject of the sentence is in the nominative case: учитель (no change)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Mom, give the book to Andrey!",
+          "words": [
+            "Мама",
+            "дай",
+            "книгу",
+            "Андрею"
+          ],
+          "correctOrder": [
+            "Мама",
+            "дай",
+            "книгу",
+            "Андрею"
+          ],
+          "distractors": [
+            "Андрей"
+          ],
+          "explanation": "Мама (nominative, address), книгу (accusative — direct object), Андрею (dative — indirect object/recipient)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Расскажи мне об этой книге.",
+          "acceptedAnswers": [
+            "Расскажи мне об этой книге.",
+            "Расскажи мне об этой книге"
+          ],
+          "explanation": "Мне (dative), об этой книге (prepositional). Multiple cases in one sentence!"
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete all six cases of 'книга' (book):",
+          "headers": [
+            "Case",
+            "Form"
+          ],
+          "rows": [
+            {
+              "label": "Именительный (Nominative)",
+              "answer": "книга",
+              "prefilled": true
+            },
+            {
+              "label": "Родительный (Genitive)",
+              "answer": "книги",
+              "prefilled": false
+            },
+            {
+              "label": "Дательный (Dative)",
+              "answer": "книге",
+              "prefilled": false
+            },
+            {
+              "label": "Винительный (Accusative)",
+              "answer": "книгу",
+              "prefilled": false
+            },
+            {
+              "label": "Творительный (Instrumental)",
+              "answer": "книгой",
+              "prefilled": false
+            },
+            {
+              "label": "Предложный (Prepositional)",
+              "answer": "книге",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Книга: nom. книга, gen. книги, dat. книге, acc. книгу, inst. книгой, prep. книге. Note: dative and prepositional forms are the same for feminine -а nouns."
+        }
       ]
     }
   ]

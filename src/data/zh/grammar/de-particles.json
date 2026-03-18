@@ -4,7 +4,9 @@
   "nameZh": "的、地、得",
   "icon": "🔗",
   "tier": "B1",
-  "prerequisites": ["adjectives"],
+  "prerequisites": [
+    "adjectives"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,15 +15,61 @@
       "explanation": "的 (de) is the most common of the three particles. It connects a modifier to a noun, functioning like the English possessive 's or the word 'of'. It is used in three main ways: (1) to show possession — 我的书 (my book), 妈妈的手机 (Mom's phone); (2) to attach an adjective to a noun — 漂亮的花 (beautiful flowers), 红色的车 (a red car); and (3) to form relative clauses — 我买的书 (the book that I bought), 她写的文章 (the article she wrote). When a single-syllable adjective modifies a noun directly, 的 is often dropped: 好人 (good person), 大城市 (big city).",
       "tip": "Think of 的 as the glue between a description and a noun. If the description is short (one syllable like 好, 大, 小), you can usually skip 的. If the description is longer or a full clause, 的 is required.",
       "examples": [
-        { "zh": "我的书", "en": "my book", "highlight": "的" },
-        { "zh": "漂亮的花", "en": "beautiful flowers", "highlight": "漂亮的" },
-        { "zh": "妈妈做的饭很好吃。", "en": "The food Mom made is delicious.", "highlight": "做的" },
-        { "zh": "穿红衣服的女孩是我姐姐。", "en": "The girl wearing red clothes is my older sister.", "highlight": "穿红衣服的" }
+        {
+          "zh": "我的书",
+          "en": "my book",
+          "highlight": "的"
+        },
+        {
+          "zh": "漂亮的花",
+          "en": "beautiful flowers",
+          "highlight": "漂亮的"
+        },
+        {
+          "zh": "妈妈做的饭很好吃。",
+          "en": "The food Mom made is delicious.",
+          "highlight": "做的"
+        },
+        {
+          "zh": "穿红衣服的女孩是我姐姐。",
+          "en": "The girl wearing red clothes is my older sister.",
+          "highlight": "穿红衣服的"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'my friend' in Chinese?", "options": ["我的朋友", "我地朋友", "我得朋友"], "correctIndex": 0, "explanation": "Possession uses 的: 我的朋友 (my friend). 的 links the possessor (我) to the noun (朋友)." },
-        { "type": "multiple-choice", "prompt": "Which is correct for 'a beautiful city'?", "options": ["美丽的城市", "美丽地城市", "美丽得城市"], "correctIndex": 0, "explanation": "An adjective modifying a noun uses 的: 美丽的城市. The pattern is adjective + 的 + noun." },
-        { "type": "multiple-choice", "prompt": "'The book he bought' — which particle fills the blank: 他买___书?", "options": ["的", "地", "得"], "correctIndex": 0, "explanation": "A relative clause modifying a noun uses 的: 他买的书 (the book he bought). The clause 他买 describes which 书." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'my friend' in Chinese?",
+          "options": [
+            "我的朋友",
+            "我得朋友",
+            "我地朋友"
+          ],
+          "correctIndex": 0,
+          "explanation": "Possession uses 的: 我的朋友 (my friend). 的 links the possessor (我) to the noun (朋友)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'a beautiful city'?",
+          "options": [
+            "美丽得城市",
+            "美丽地城市",
+            "美丽的城市"
+          ],
+          "correctIndex": 2,
+          "explanation": "An adjective modifying a noun uses 的: 美丽的城市. The pattern is adjective + 的 + noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'The book he bought' — which particle fills the blank: 他买___书?",
+          "options": [
+            "的",
+            "地",
+            "得"
+          ],
+          "correctIndex": 0,
+          "explanation": "A relative clause modifying a noun uses 的: 他买的书 (the book he bought). The clause 他买 describes which 书."
+        }
       ]
     },
     {
@@ -30,15 +78,61 @@
       "explanation": "地 (de) turns an adjective or descriptive phrase into an adverb that modifies a verb. It works like the English suffix '-ly'. The pattern is: adjective/adverb + 地 + verb. For example: 高兴地说 (happily said), 慢慢地走 (slowly walked), 认真地学习 (studied seriously). Without 地, the adjective would modify a noun (using 的). With 地, it tells you HOW the action is performed. Two-syllable adjectives and reduplicated forms (慢慢, 快快) almost always require 地 before the verb.",
       "tip": "的 points right toward a noun; 地 points right toward a verb. If the word after the particle is a verb (an action), you need 地, not 的.",
       "examples": [
-        { "zh": "她高兴地笑了。", "en": "She laughed happily.", "highlight": "高兴地" },
-        { "zh": "他慢慢地走回家。", "en": "He slowly walked home.", "highlight": "慢慢地" },
-        { "zh": "老师认真地讲课。", "en": "The teacher lectures seriously.", "highlight": "认真地" },
-        { "zh": "孩子们快乐地唱歌。", "en": "The children sang joyfully.", "highlight": "快乐地" }
+        {
+          "zh": "她高兴地笑了。",
+          "en": "She laughed happily.",
+          "highlight": "高兴地"
+        },
+        {
+          "zh": "他慢慢地走回家。",
+          "en": "He slowly walked home.",
+          "highlight": "慢慢地"
+        },
+        {
+          "zh": "老师认真地讲课。",
+          "en": "The teacher lectures seriously.",
+          "highlight": "认真地"
+        },
+        {
+          "zh": "孩子们快乐地唱歌。",
+          "en": "The children sang joyfully.",
+          "highlight": "快乐地"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Fill in the blank: 她安静___离开了。(She left quietly.)", "options": ["地", "的", "得"], "correctIndex": 0, "explanation": "安静 (quiet) describes HOW she left (离开), so it modifies a verb. Use 地: 安静地离开了." },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly uses 地?", "options": ["他认真地看书。", "他认真的看书。", "他认真得看书。"], "correctIndex": 0, "explanation": "认真 (seriously) describes HOW he reads (看书). Since it modifies a verb, use 地: 认真地看书." },
-        { "type": "multiple-choice", "prompt": "'She spoke loudly' — which is correct?", "options": ["她大声地说。", "她大声的说。", "她大声得说。"], "correctIndex": 0, "explanation": "大声 (loudly) describes the manner of speaking (说). Adverb + 地 + verb: 大声地说." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 她安静___离开了。(She left quietly.)",
+          "options": [
+            "得",
+            "的",
+            "地"
+          ],
+          "correctIndex": 2,
+          "explanation": "安静 (quiet) describes HOW she left (离开), so it modifies a verb. Use 地: 安静地离开了."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 地?",
+          "options": [
+            "他认真得看书。",
+            "他认真地看书。",
+            "他认真的看书。"
+          ],
+          "correctIndex": 1,
+          "explanation": "认真 (seriously) describes HOW he reads (看书). Since it modifies a verb, use 地: 认真地看书."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'She spoke loudly' — which is correct?",
+          "options": [
+            "她大声的说。",
+            "她大声地说。",
+            "她大声得说。"
+          ],
+          "correctIndex": 1,
+          "explanation": "大声 (loudly) describes the manner of speaking (说). Adverb + 地 + verb: 大声地说."
+        }
       ]
     },
     {
@@ -47,15 +141,61 @@
       "explanation": "得 (de) follows a verb and introduces a complement that describes the result, degree, or quality of the action. The pattern is: verb + 得 + complement. For example: 跑得快 (runs fast), 说得好 (speaks well), 做得很累 (worked so hard that [I'm] exhausted). The complement after 得 can be an adjective (好, 快), a phrase (很好, 非常清楚), or even a full clause describing a result. 得 answers the question 'how well?' or 'to what extent?' Unlike 地 which comes BEFORE the verb, 得 comes AFTER the verb.",
       "tip": "得 is a mirror of 地: 地 goes BEFORE the verb (how you do it), 得 goes AFTER the verb (how well you did it). If you can ask 'How well did they do it?', the answer uses 得.",
       "examples": [
-        { "zh": "他跑得很快。", "en": "He runs very fast.", "highlight": "得很快" },
-        { "zh": "你中文说得真好！", "en": "You speak Chinese really well!", "highlight": "说得真好" },
-        { "zh": "她累得不想动。", "en": "She's so tired she doesn't want to move.", "highlight": "累得" },
-        { "zh": "他写得非常清楚。", "en": "He writes very clearly.", "highlight": "得非常清楚" }
+        {
+          "zh": "他跑得很快。",
+          "en": "He runs very fast.",
+          "highlight": "得很快"
+        },
+        {
+          "zh": "你中文说得真好！",
+          "en": "You speak Chinese really well!",
+          "highlight": "说得真好"
+        },
+        {
+          "zh": "她累得不想动。",
+          "en": "She's so tired she doesn't want to move.",
+          "highlight": "累得"
+        },
+        {
+          "zh": "他写得非常清楚。",
+          "en": "He writes very clearly.",
+          "highlight": "得非常清楚"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Fill in the blank: 她唱___非常好听。(She sings very beautifully.)", "options": ["得", "的", "地"], "correctIndex": 0, "explanation": "The complement 非常好听 evaluates the quality of singing (唱). Verb + 得 + complement: 唱得非常好听." },
-        { "type": "multiple-choice", "prompt": "Which sentence means 'He eats very fast'?", "options": ["他吃得很快。", "他吃的很快。", "他吃地很快。"], "correctIndex": 0, "explanation": "很快 (very fast) is a complement describing the result/degree of eating. Use 得 after the verb: 吃得很快." },
-        { "type": "multiple-choice", "prompt": "'She was so happy she cried' — which is correct?", "options": ["她高兴得哭了。", "她高兴的哭了。", "她高兴地哭了。"], "correctIndex": 0, "explanation": "哭了 (cried) is the result/extent of being happy. This is a resultative complement: adjective + 得 + result clause. 高兴得哭了." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 她唱___非常好听。(She sings very beautifully.)",
+          "options": [
+            "地",
+            "得",
+            "的"
+          ],
+          "correctIndex": 1,
+          "explanation": "The complement 非常好听 evaluates the quality of singing (唱). Verb + 得 + complement: 唱得非常好听."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'He eats very fast'?",
+          "options": [
+            "他吃地很快。",
+            "他吃得很快。",
+            "他吃的很快。"
+          ],
+          "correctIndex": 1,
+          "explanation": "很快 (very fast) is a complement describing the result/degree of eating. Use 得 after the verb: 吃得很快."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'She was so happy she cried' — which is correct?",
+          "options": [
+            "她高兴的哭了。",
+            "她高兴地哭了。",
+            "她高兴得哭了。"
+          ],
+          "correctIndex": 2,
+          "explanation": "哭了 (cried) is the result/extent of being happy. This is a resultative complement: adjective + 得 + result clause. 高兴得哭了."
+        }
       ]
     },
     {
@@ -64,15 +204,61 @@
       "explanation": "All three particles are pronounced 'de' but serve different grammatical roles. Summary: (1) 的 connects a modifier to a NOUN — modifier + 的 + noun (我的猫, 好看的电影). (2) 地 connects a modifier to a VERB as an adverb — adverb + 地 + verb (开心地跳, 努力地工作). (3) 得 follows a VERB and introduces a complement — verb + 得 + complement (跳得高, 工作得很辛苦). Common mistakes: using 的 everywhere because it is the most familiar; confusing 地 and 得 because they both relate to verbs. The key: 地 tells HOW the action is done (before the verb), while 得 evaluates the result or degree (after the verb).",
       "tip": "Memory trick: 的 → noun (的 contains 白, think 'blank noun'); 地 → verb-before (地 contains 土, think 'ground before you step'); 得 → verb-after (得 contains 寸, think 'measuring the result').",
       "examples": [
-        { "zh": "她穿了漂亮的衣服，开心地走出门，走得很快。", "en": "She wore beautiful clothes, happily walked out the door, and walked very fast.", "highlight": "漂亮的…开心地…走得" },
-        { "zh": "妈妈做的菜很好吃。妈妈认真地做菜。妈妈做得很好。", "en": "The food Mom makes is delicious. Mom cooks seriously. Mom cooks very well.", "highlight": "做的…认真地…做得" },
-        { "zh": "安静的教室 vs. 安静地坐着", "en": "a quiet classroom vs. sitting quietly", "highlight": "安静的…安静地" },
-        { "zh": "写的字 vs. 写得好", "en": "the characters [one] wrote vs. wrote well", "highlight": "写的…写得" }
+        {
+          "zh": "她穿了漂亮的衣服，开心地走出门，走得很快。",
+          "en": "She wore beautiful clothes, happily walked out the door, and walked very fast.",
+          "highlight": "漂亮的…开心地…走得"
+        },
+        {
+          "zh": "妈妈做的菜很好吃。妈妈认真地做菜。妈妈做得很好。",
+          "en": "The food Mom makes is delicious. Mom cooks seriously. Mom cooks very well.",
+          "highlight": "做的…认真地…做得"
+        },
+        {
+          "zh": "安静的教室 vs. 安静地坐着",
+          "en": "a quiet classroom vs. sitting quietly",
+          "highlight": "安静的…安静地"
+        },
+        {
+          "zh": "写的字 vs. 写得好",
+          "en": "the characters [one] wrote vs. wrote well",
+          "highlight": "写的…写得"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "他努力___工作。(He works hard.) — which particle?", "options": ["地", "的", "得"], "correctIndex": 0, "explanation": "努力 describes HOW he works. It modifies the verb 工作, so use 地: 努力地工作." },
-        { "type": "multiple-choice", "prompt": "这是我买___手机。(This is the phone I bought.) — which particle?", "options": ["的", "地", "得"], "correctIndex": 0, "explanation": "我买 is a clause modifying the noun 手机 (which phone? the one I bought). Use 的: 我买的手机." },
-        { "type": "multiple-choice", "prompt": "他今天起___很早。(He got up very early today.) — which particle?", "options": ["得", "的", "地"], "correctIndex": 0, "explanation": "很早 is a complement describing the degree/result of 起 (getting up). Use 得 after the verb: 起得很早." }
+        {
+          "type": "multiple-choice",
+          "prompt": "他努力___工作。(He works hard.) — which particle?",
+          "options": [
+            "得",
+            "的",
+            "地"
+          ],
+          "correctIndex": 2,
+          "explanation": "努力 describes HOW he works. It modifies the verb 工作, so use 地: 努力地工作."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "这是我买___手机。(This is the phone I bought.) — which particle?",
+          "options": [
+            "得",
+            "地",
+            "的"
+          ],
+          "correctIndex": 2,
+          "explanation": "我买 is a clause modifying the noun 手机 (which phone? the one I bought). Use 的: 我买的手机."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "他今天起___很早。(He got up very early today.) — which particle?",
+          "options": [
+            "的",
+            "地",
+            "得"
+          ],
+          "correctIndex": 2,
+          "explanation": "很早 is a complement describing the degree/result of 起 (getting up). Use 得 after the verb: 起得很早."
+        }
       ]
     }
   ]

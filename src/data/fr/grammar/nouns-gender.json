@@ -4,7 +4,9 @@
   "nameFr": "Les noms et le genre",
   "icon": "🏷️",
   "tier": "A1",
-  "prerequisites": ["alphabet-pronunciation"],
+  "prerequisites": [
+    "alphabet-pronunciation"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -48,56 +50,88 @@
         {
           "type": "multiple-choice",
           "question": "Which article do you use with a masculine noun?",
-          "options": ["le / un", "la / une", "les / des"],
-          "correctIndex": 0,
+          "options": [
+            "la / une",
+            "les / des",
+            "le / un"
+          ],
+          "correctIndex": 2,
           "explanation": "Masculine nouns use le (the) and un (a/an). Feminine nouns use la and une."
         },
         {
           "type": "multiple-choice",
           "question": "What is the correct article for 'maison' (house)?",
-          "options": ["la maison", "le maison", "un maison"],
+          "options": [
+            "la maison",
+            "le maison",
+            "un maison"
+          ],
           "correctIndex": 0,
           "explanation": "'Maison' is feminine. It takes the article la."
         },
         {
           "type": "multiple-choice",
           "question": "Which ending typically signals a feminine noun?",
-          "options": ["-tion", "-age", "-eau"],
-          "correctIndex": 0,
+          "options": [
+            "-age",
+            "-tion",
+            "-eau"
+          ],
+          "correctIndex": 1,
           "explanation": "The ending -tion (as in nation, question) typically indicates a feminine noun."
         },
         {
           "type": "multiple-choice",
           "question": "What does 'le livre' mean?",
-          "options": ["the book", "the tower", "the pound"],
+          "options": [
+            "the book",
+            "the tower",
+            "the pound"
+          ],
           "correctIndex": 0,
           "explanation": "'Le livre' (masculine) means 'the book'. 'La livre' (feminine) means 'the pound'."
         },
         {
           "type": "fill-blank",
           "question": "Complete: ___ actrice est talentueuse. (The actress is talented.)",
-          "options": ["L'", "Le", "Un"],
+          "options": [
+            "L'",
+            "Le",
+            "Un"
+          ],
           "correctIndex": 0,
           "explanation": "'Actrice' is feminine and begins with a vowel, so le/la shortens to l'."
         },
         {
           "type": "multiple-choice",
           "question": "How do you make the masculine noun 'ami' (friend) feminine?",
-          "options": ["amie", "amia", "amière"],
-          "correctIndex": 0,
+          "options": [
+            "amière",
+            "amia",
+            "amie"
+          ],
+          "correctIndex": 2,
           "explanation": "Many masculine nouns become feminine by adding -e: ami → amie."
         },
         {
           "type": "multiple-choice",
           "question": "Which word is masculine?",
-          "options": ["le problème", "la question", "la situation"],
-          "correctIndex": 0,
+          "options": [
+            "la question",
+            "la situation",
+            "le problème"
+          ],
+          "correctIndex": 2,
           "explanation": "'Problème' is masculine (le problème). 'Question' and 'situation' end in -tion/-sion and are feminine."
         },
         {
           "type": "fill-blank",
           "question": "Complete: C'est ___ acteur célèbre. (He is a famous actor.)",
-          "options": ["un", "une", "la"],
+          "options": [
+            "un",
+            "une",
+            "la"
+          ],
           "correctIndex": 0,
           "explanation": "'Acteur' is masculine, so it takes the indefinite article 'un'."
         }
@@ -144,57 +178,89 @@
         {
           "type": "multiple-choice",
           "question": "What is the plural of 'un livre' (a book)?",
-          "options": ["des livres", "des livres-x", "des livraux"],
-          "correctIndex": 0,
+          "options": [
+            "des livres-x",
+            "des livres",
+            "des livraux"
+          ],
+          "correctIndex": 1,
           "explanation": "'Livre' is a regular noun. It takes a simple -s in the plural: des livres."
         },
         {
           "type": "multiple-choice",
           "question": "What is the plural of 'un journal' (a newspaper)?",
-          "options": ["des journaux", "des journals", "des journales"],
-          "correctIndex": 0,
+          "options": [
+            "des journales",
+            "des journals",
+            "des journaux"
+          ],
+          "correctIndex": 2,
           "explanation": "Nouns ending in -al change to -aux in the plural: journal → journaux."
         },
         {
           "type": "multiple-choice",
           "question": "What is the plural of 'un château' (a castle)?",
-          "options": ["des châteaux", "des châteaus", "des châteaues"],
-          "correctIndex": 0,
+          "options": [
+            "des châteaus",
+            "des châteaux",
+            "des châteaues"
+          ],
+          "correctIndex": 1,
           "explanation": "Nouns ending in -eau add -x to form the plural: château → châteaux."
         },
         {
           "type": "fill-blank",
           "question": "Complete: Les ___ sont beaux. (The eyes are beautiful.)",
-          "options": ["yeux", "œils", "œiles"],
+          "options": [
+            "yeux",
+            "œils",
+            "œiles"
+          ],
           "correctIndex": 0,
           "explanation": "'Œil' has an irregular plural: les yeux. It does not follow any standard rule."
         },
         {
           "type": "multiple-choice",
           "question": "What is the plural of 'une voix' (a voice)?",
-          "options": ["des voix", "des voixs", "des voixes"],
+          "options": [
+            "des voix",
+            "des voixes",
+            "des voixs"
+          ],
           "correctIndex": 0,
           "explanation": "Nouns already ending in -x do not change in the plural: voix → voix."
         },
         {
           "type": "multiple-choice",
           "question": "What is the plural of 'un bijou' (a jewel)?",
-          "options": ["des bijoux", "des bijous", "des bijoues"],
-          "correctIndex": 0,
+          "options": [
+            "des bijous",
+            "des bijoux",
+            "des bijoues"
+          ],
+          "correctIndex": 1,
           "explanation": "'Bijou' is one of the special -ou nouns that add -x in the plural: bijoux."
         },
         {
           "type": "fill-blank",
           "question": "Complete: Il a deux ___ dans le jardin. (He has two animals in the garden.)",
-          "options": ["animaux", "animals", "animales"],
+          "options": [
+            "animaux",
+            "animals",
+            "animales"
+          ],
           "correctIndex": 0,
           "explanation": "The plural of 'animal' follows the -al → -aux pattern: animaux."
         },
         {
           "type": "multiple-choice",
           "question": "Which plural form is correct for 'un bras' (an arm)?",
-          "options": ["des bras", "des brass", "des brases"],
-          "correctIndex": 0,
+          "options": [
+            "des brass",
+            "des bras",
+            "des brases"
+          ],
+          "correctIndex": 1,
           "explanation": "Nouns ending in -s do not change in the plural: bras → bras."
         }
       ]

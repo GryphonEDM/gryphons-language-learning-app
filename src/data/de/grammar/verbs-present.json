@@ -4,7 +4,9 @@
   "nameDe": "Das Präsens",
   "icon": "🔄",
   "tier": "A1",
-  "prerequisites": ["pronouns"],
+  "prerequisites": [
+    "pronouns"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,27 +15,134 @@
       "explanation": "Most German verbs end in -en in the infinitive (machen, wohnen, spielen). To conjugate in the present tense, remove -en to get the stem, then add personal endings: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. Example: machen (to make/do) → Stem: mach- → ich mache, du machst, er macht, wir machen, ihr macht, sie machen. If the stem ends in -t or -d, add an extra 'e' for pronunciation: du arbeitest (not 'arbeitst').",
       "tip": "Ending pattern: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en. The wir and sie/Sie forms match the infinitive!",
       "examples": [
-        { "de": "ich mache", "en": "I do / I make", "highlight": "e" },
-        { "de": "du machst", "en": "you do", "highlight": "st" },
-        { "de": "er/sie/es macht", "en": "he/she/it does", "highlight": "t" },
-        { "de": "wir machen", "en": "we do", "highlight": "en" },
-        { "de": "ihr macht", "en": "you all do", "highlight": "t" },
-        { "de": "sie/Sie machen", "en": "they / you (formal) do", "highlight": "en" }
+        {
+          "de": "ich mache",
+          "en": "I do / I make",
+          "highlight": "e"
+        },
+        {
+          "de": "du machst",
+          "en": "you do",
+          "highlight": "st"
+        },
+        {
+          "de": "er/sie/es macht",
+          "en": "he/she/it does",
+          "highlight": "t"
+        },
+        {
+          "de": "wir machen",
+          "en": "we do",
+          "highlight": "en"
+        },
+        {
+          "de": "ihr macht",
+          "en": "you all do",
+          "highlight": "t"
+        },
+        {
+          "de": "sie/Sie machen",
+          "en": "they / you (formal) do",
+          "highlight": "en"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'spielen' (to play) for 'er'?", "options": ["er spielt", "er spielst", "er spielen"], "correctIndex": 0, "explanation": "3rd person singular (er/sie/es) takes the -t ending: spiel + t = spielt." },
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'wohnen' (to live) for 'du'?", "options": ["du wohnst", "du wohnt", "du wohnen"], "correctIndex": 0, "explanation": "2nd person singular (du) takes the -st ending: wohn + st = wohnst." },
-        { "type": "fill-blank", "prompt": "Wir ___ (spielen) Fußball. (We play football.)", "acceptedAnswers": ["spielen"], "hint": "The wir-form matches the infinitive", "explanation": "wir + spielen: the wir-form keeps the full -en ending. Wir spielen Fußball." },
-        { "type": "multiple-choice", "prompt": "Why is 'du arbeitest' correct (not 'du arbeitst')?", "options": ["The stem ends in -t, so an extra -e- is added for pronunciation", "It is an irregular verb", "German always adds extra vowels"], "correctIndex": 0, "explanation": "When the stem ends in -t or -d (arbeit-, red-), an extra -e- is inserted before the ending: du arbeitest, er arbeitet." },
-        { "type": "matching", "prompt": "Match each pronoun to the ending added to the verb stem:", "pairs": [
-          { "left": "ich", "right": "-e" },
-          { "left": "du", "right": "-st" },
-          { "left": "er/sie/es", "right": "-t" },
-          { "left": "wir", "right": "-en" }
-        ], "explanation": "The standard present tense endings: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en." },
-        { "type": "multiple-choice", "prompt": "Conjugate 'lernen' (to learn) for 'ich':", "options": ["ich lerne", "ich lernst", "ich lernt"], "correctIndex": 0, "explanation": "1st person singular (ich) takes -e: lern + e = lerne. Ich lerne Deutsch." },
-        { "type": "fill-blank", "prompt": "Ihr ___ (kommen) heute. You all come today. — use ihr form", "acceptedAnswers": ["kommt"], "hint": "The ihr ending is -t", "explanation": "ihr + kommen: komm + t = kommt. Ihr kommt heute." },
-        { "type": "multiple-choice", "prompt": "Which two pronoun forms use the -en ending?", "options": ["wir and sie/Sie", "ihr and wir", "ich and du"], "correctIndex": 0, "explanation": "wir and sie/Sie both take the -en ending, which is identical to the infinitive: wir machen, sie machen, Sie machen." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'spielen' (to play) for 'er'?",
+          "options": [
+            "er spielst",
+            "er spielen",
+            "er spielt"
+          ],
+          "correctIndex": 2,
+          "explanation": "3rd person singular (er/sie/es) takes the -t ending: spiel + t = spielt."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'wohnen' (to live) for 'du'?",
+          "options": [
+            "du wohnen",
+            "du wohnst",
+            "du wohnt"
+          ],
+          "correctIndex": 1,
+          "explanation": "2nd person singular (du) takes the -st ending: wohn + st = wohnst."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (spielen) Fußball. (We play football.)",
+          "acceptedAnswers": [
+            "spielen"
+          ],
+          "hint": "The wir-form matches the infinitive",
+          "explanation": "wir + spielen: the wir-form keeps the full -en ending. Wir spielen Fußball."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is 'du arbeitest' correct (not 'du arbeitst')?",
+          "options": [
+            "German always adds extra vowels",
+            "It is an irregular verb",
+            "The stem ends in -t, so an extra -e- is added for pronunciation"
+          ],
+          "correctIndex": 2,
+          "explanation": "When the stem ends in -t or -d (arbeit-, red-), an extra -e- is inserted before the ending: du arbeitest, er arbeitet."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun to the ending added to the verb stem:",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "-e"
+            },
+            {
+              "left": "du",
+              "right": "-st"
+            },
+            {
+              "left": "er/sie/es",
+              "right": "-t"
+            },
+            {
+              "left": "wir",
+              "right": "-en"
+            }
+          ],
+          "explanation": "The standard present tense endings: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 'lernen' (to learn) for 'ich':",
+          "options": [
+            "ich lerne",
+            "ich lernst",
+            "ich lernt"
+          ],
+          "correctIndex": 0,
+          "explanation": "1st person singular (ich) takes -e: lern + e = lerne. Ich lerne Deutsch."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ihr ___ (kommen) heute. You all come today. — use ihr form",
+          "acceptedAnswers": [
+            "kommt"
+          ],
+          "hint": "The ihr ending is -t",
+          "explanation": "ihr + kommen: komm + t = kommt. Ihr kommt heute."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which two pronoun forms use the -en ending?",
+          "options": [
+            "wir and sie/Sie",
+            "ihr and wir",
+            "ich and du"
+          ],
+          "correctIndex": 0,
+          "explanation": "wir and sie/Sie both take the -en ending, which is identical to the infinitive: wir machen, sie machen, Sie machen."
+        }
       ]
     },
     {
@@ -42,28 +151,145 @@
       "explanation": "The two most important German verbs are 'sein' (to be) and 'haben' (to have). Both are highly irregular and must be memorized. sein: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben. These verbs are used constantly in everyday speech and as auxiliary verbs for the perfect tense.",
       "tip": "Memorize 'sein' first: bin, bist, ist, sind, seid, sind. It's the most-used verb in the language!",
       "examples": [
-        { "de": "Ich bin müde.", "en": "I am tired.", "highlight": "bin" },
-        { "de": "Du bist toll!", "en": "You are great!", "highlight": "bist" },
-        { "de": "Er ist Arzt.", "en": "He is a doctor.", "highlight": "ist" },
-        { "de": "Wir sind hier.", "en": "We are here.", "highlight": "sind" },
-        { "de": "Ich habe Hunger.", "en": "I am hungry. (lit: I have hunger)", "highlight": "habe" },
-        { "de": "Sie hat ein Auto.", "en": "She has a car.", "highlight": "hat" }
+        {
+          "de": "Ich bin müde.",
+          "en": "I am tired.",
+          "highlight": "bin"
+        },
+        {
+          "de": "Du bist toll!",
+          "en": "You are great!",
+          "highlight": "bist"
+        },
+        {
+          "de": "Er ist Arzt.",
+          "en": "He is a doctor.",
+          "highlight": "ist"
+        },
+        {
+          "de": "Wir sind hier.",
+          "en": "We are here.",
+          "highlight": "sind"
+        },
+        {
+          "de": "Ich habe Hunger.",
+          "en": "I am hungry. (lit: I have hunger)",
+          "highlight": "habe"
+        },
+        {
+          "de": "Sie hat ein Auto.",
+          "en": "She has a car.",
+          "highlight": "hat"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'sein' for 'ich'?", "options": ["ich bin", "ich ist", "ich sei"], "correctIndex": 0, "explanation": "'sein' (to be): ich bin. This is completely irregular — unlike the stem-based pattern for regular verbs." },
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'sein' for 'wir'?", "options": ["wir sind", "wir sein", "wir seid"], "correctIndex": 0, "explanation": "'sein': wir sind. Note: 'seid' is for 'ihr' (you all)." },
-        { "type": "fill-blank", "prompt": "Er ___ (haben) ein Fahrrad. (He has a bicycle.)", "acceptedAnswers": ["hat"], "hint": "3rd person singular of 'haben'", "explanation": "'haben' for er/sie/es is 'hat': Er hat ein Fahrrad." },
-        { "type": "multiple-choice", "prompt": "How do you say 'I am hungry' in German? (German uses 'haben')", "options": ["Ich habe Hunger.", "Ich bin Hunger.", "Ich esse Hunger."], "correctIndex": 0, "explanation": "German says 'Ich habe Hunger' (I have hunger) rather than 'I am hungry'. Similarly: Ich habe Durst (I am thirsty)." },
-        { "type": "matching", "prompt": "Match each pronoun to the correct form of 'sein':", "pairs": [
-          { "left": "ich", "right": "bin" },
-          { "left": "du", "right": "bist" },
-          { "left": "er/sie/es", "right": "ist" },
-          { "left": "wir", "right": "sind" }
-        ], "explanation": "sein: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind." },
-        { "type": "multiple-choice", "prompt": "What is the form of 'haben' for 'ihr'?", "options": ["ihr habt", "ihr haben", "ihr hat"], "correctIndex": 0, "explanation": "'haben' for ihr: habt. Note the -t ending for ihr (same as regular verbs), but 'hab-' loses the 'e' of the stem." },
-        { "type": "fill-blank", "prompt": "Wir ___ (sein) Studenten. We are students.", "acceptedAnswers": ["sind"], "hint": "The wir-form of 'sein'", "explanation": "'sein': wir sind. Wir sind Studenten = We are students." },
-        { "type": "multiple-choice", "prompt": "Which form of 'haben' is used for 'sie' (she)?", "options": ["sie hat", "sie haben", "sie hast"], "correctIndex": 0, "explanation": "'haben' for er/sie/es is 'hat'. Sie hat = She has." },
-        { "type": "multiple-choice", "prompt": "Choose the correct sentence: 'You (informal) are from Germany.'", "options": ["Du bist aus Deutschland.", "Du bist Deutschland.", "Du sein aus Deutschland."], "correctIndex": 0, "explanation": "'du' + sein = bist. 'Du bist aus Deutschland' uses the correct form and the preposition 'aus' (from, out of)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'sein' for 'ich'?",
+          "options": [
+            "ich bin",
+            "ich ist",
+            "ich sei"
+          ],
+          "correctIndex": 0,
+          "explanation": "'sein' (to be): ich bin. This is completely irregular — unlike the stem-based pattern for regular verbs."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'sein' for 'wir'?",
+          "options": [
+            "wir seid",
+            "wir sind",
+            "wir sein"
+          ],
+          "correctIndex": 1,
+          "explanation": "'sein': wir sind. Note: 'seid' is for 'ihr' (you all)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ (haben) ein Fahrrad. (He has a bicycle.)",
+          "acceptedAnswers": [
+            "hat"
+          ],
+          "hint": "3rd person singular of 'haben'",
+          "explanation": "'haben' for er/sie/es is 'hat': Er hat ein Fahrrad."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I am hungry' in German? (German uses 'haben')",
+          "options": [
+            "Ich bin Hunger.",
+            "Ich esse Hunger.",
+            "Ich habe Hunger."
+          ],
+          "correctIndex": 2,
+          "explanation": "German says 'Ich habe Hunger' (I have hunger) rather than 'I am hungry'. Similarly: Ich habe Durst (I am thirsty)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun to the correct form of 'sein':",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "bin"
+            },
+            {
+              "left": "du",
+              "right": "bist"
+            },
+            {
+              "left": "er/sie/es",
+              "right": "ist"
+            },
+            {
+              "left": "wir",
+              "right": "sind"
+            }
+          ],
+          "explanation": "sein: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the form of 'haben' for 'ihr'?",
+          "options": [
+            "ihr hat",
+            "ihr habt",
+            "ihr haben"
+          ],
+          "correctIndex": 1,
+          "explanation": "'haben' for ihr: habt. Note the -t ending for ihr (same as regular verbs), but 'hab-' loses the 'e' of the stem."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (sein) Studenten. We are students.",
+          "acceptedAnswers": [
+            "sind"
+          ],
+          "hint": "The wir-form of 'sein'",
+          "explanation": "'sein': wir sind. Wir sind Studenten = We are students."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form of 'haben' is used for 'sie' (she)?",
+          "options": [
+            "sie hat",
+            "sie haben",
+            "sie hast"
+          ],
+          "correctIndex": 0,
+          "explanation": "'haben' for er/sie/es is 'hat'. Sie hat = She has."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence: 'You (informal) are from Germany.'",
+          "options": [
+            "Du bist aus Deutschland.",
+            "Du bist Deutschland.",
+            "Du sein aus Deutschland."
+          ],
+          "correctIndex": 0,
+          "explanation": "'du' + sein = bist. 'Du bist aus Deutschland' uses the correct form and the preposition 'aus' (from, out of)."
+        }
       ]
     },
     {
@@ -72,22 +298,99 @@
       "explanation": "Many common German verbs change their stem vowel in the du and er/sie/es forms. The most common changes are: e → i (sprechen→sprichst, helfen→hilfst), e → ie (lesen→liest, sehen→siehst), a → ä (fahren→fährst, schlafen→schläfst). These are called 'strong verbs'. The ich, wir, ihr, and sie forms use the unchanged stem. Only du and er/sie/es change. You must learn which verbs do this.",
       "tip": "Only du and er/sie/es forms change in strong verbs. ich, wir, and sie keep the original stem vowel.",
       "examples": [
-        { "de": "sprechen: ich spreche, du sprichst, er spricht", "en": "to speak: e→i change in du/er forms", "highlight": "i" },
-        { "de": "lesen: ich lese, du liest, er liest", "en": "to read: e→ie change in du/er forms", "highlight": "ie" },
-        { "de": "fahren: ich fahre, du fährst, er fährt", "en": "to drive: a→ä change in du/er forms", "highlight": "ä" }
+        {
+          "de": "sprechen: ich spreche, du sprichst, er spricht",
+          "en": "to speak: e→i change in du/er forms",
+          "highlight": "i"
+        },
+        {
+          "de": "lesen: ich lese, du liest, er liest",
+          "en": "to read: e→ie change in du/er forms",
+          "highlight": "ie"
+        },
+        {
+          "de": "fahren: ich fahre, du fährst, er fährt",
+          "en": "to drive: a→ä change in du/er forms",
+          "highlight": "ä"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'sprechen' (to speak) for 'er'?", "options": ["er spricht", "er sprecht", "er sprechen"], "correctIndex": 0, "explanation": "'sprechen' has an e→i stem change in the er/sie/es form: sprich + t = spricht." },
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'lesen' (to read) for 'du'?", "options": ["du liest", "du lesest", "du lest"], "correctIndex": 0, "explanation": "'lesen' has an e→ie stem change in the du and er forms: liest (not 'lesst')." },
-        { "type": "fill-blank", "prompt": "Er ___ (fahren) schnell. He drives fast. — strong verb a→ä", "acceptedAnswers": ["fährt"], "hint": "a changes to ä in er/sie/es", "explanation": "'fahren' has an a→ä change: er fährt (not 'fahrt'). Only du and er/sie/es forms change." },
-        { "type": "multiple-choice", "prompt": "Which forms of a strong verb keep the original stem vowel?", "options": ["ich, wir, ihr, sie/Sie", "du and er/sie/es", "All forms change"], "correctIndex": 0, "explanation": "Only 'du' and 'er/sie/es' show the vowel change. ich, wir, ihr, sie/Sie keep the original vowel." },
-        { "type": "matching", "prompt": "Match each verb to its er/sie/es form:", "pairs": [
-          { "left": "sprechen (to speak)", "right": "spricht" },
-          { "left": "lesen (to read)", "right": "liest" },
-          { "left": "fahren (to drive)", "right": "fährt" },
-          { "left": "sehen (to see)", "right": "sieht" }
-        ], "explanation": "sprechen→spricht (e→i), lesen→liest (e→ie), fahren→fährt (a→ä), sehen→sieht (e→ie)." },
-        { "type": "multiple-choice", "prompt": "What is the correct form of 'helfen' (to help) for 'du'?", "options": ["du hilfst", "du helfst", "du helft"], "correctIndex": 0, "explanation": "'helfen' has an e→i change: hilf + st = hilfst." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'sprechen' (to speak) for 'er'?",
+          "options": [
+            "er sprecht",
+            "er sprechen",
+            "er spricht"
+          ],
+          "correctIndex": 2,
+          "explanation": "'sprechen' has an e→i stem change in the er/sie/es form: sprich + t = spricht."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'lesen' (to read) for 'du'?",
+          "options": [
+            "du liest",
+            "du lest",
+            "du lesest"
+          ],
+          "correctIndex": 0,
+          "explanation": "'lesen' has an e→ie stem change in the du and er forms: liest (not 'lesst')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ (fahren) schnell. He drives fast. — strong verb a→ä",
+          "acceptedAnswers": [
+            "fährt"
+          ],
+          "hint": "a changes to ä in er/sie/es",
+          "explanation": "'fahren' has an a→ä change: er fährt (not 'fahrt'). Only du and er/sie/es forms change."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which forms of a strong verb keep the original stem vowel?",
+          "options": [
+            "ich, wir, ihr, sie/Sie",
+            "All forms change",
+            "du and er/sie/es"
+          ],
+          "correctIndex": 0,
+          "explanation": "Only 'du' and 'er/sie/es' show the vowel change. ich, wir, ihr, sie/Sie keep the original vowel."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each verb to its er/sie/es form:",
+          "pairs": [
+            {
+              "left": "sprechen (to speak)",
+              "right": "spricht"
+            },
+            {
+              "left": "lesen (to read)",
+              "right": "liest"
+            },
+            {
+              "left": "fahren (to drive)",
+              "right": "fährt"
+            },
+            {
+              "left": "sehen (to see)",
+              "right": "sieht"
+            }
+          ],
+          "explanation": "sprechen→spricht (e→i), lesen→liest (e→ie), fahren→fährt (a→ä), sehen→sieht (e→ie)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form of 'helfen' (to help) for 'du'?",
+          "options": [
+            "du helfst",
+            "du helft",
+            "du hilfst"
+          ],
+          "correctIndex": 2,
+          "explanation": "'helfen' has an e→i change: hilf + st = hilfst."
+        }
       ]
     }
   ]

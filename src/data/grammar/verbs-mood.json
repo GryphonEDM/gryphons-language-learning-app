@@ -4,7 +4,9 @@
   "nameUk": "Умовний і наказовий спосіб",
   "icon": "❗",
   "tier": "B2",
-  "prerequisites": ["verbs-past"],
+  "prerequisites": [
+    "verbs-past"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -12,26 +14,152 @@
       "title": "Imperative Mood",
       "explanation": "The imperative mood is used for commands, requests, and instructions. Formation: take the 2nd person present stem and add -и (after consonant clusters), -й (after vowels), or -ь (after soft consonants). For plural/formal, add -те: читай → читайте, пиши → пишіть, говори → говоріть.",
       "examples": [
-        { "uk": "Читай цю книгу!", "en": "Read this book! (informal)", "highlight": "Читай" },
-        { "uk": "Пишіть, будь ласка!", "en": "Write, please! (formal)", "highlight": "Пишіть" },
-        { "uk": "Будь обережний!", "en": "Be careful! (informal)", "highlight": "Будь" }
+        {
+          "uk": "Читай цю книгу!",
+          "en": "Read this book! (informal)",
+          "highlight": "Читай"
+        },
+        {
+          "uk": "Пишіть, будь ласка!",
+          "en": "Write, please! (formal)",
+          "highlight": "Пишіть"
+        },
+        {
+          "uk": "Будь обережний!",
+          "en": "Be careful! (informal)",
+          "highlight": "Будь"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the informal imperative of 'читати' (to read)?", "options": ["читай", "читаю", "читає"], "correctIndex": 0, "explanation": "Читати → stem чита- + й = читай. The -й ending is used after vowels." },
-        { "type": "fill-blank", "prompt": "___! Я хочу тебе почути. (Speak! — informal, говорити)", "acceptedAnswers": ["Говори"], "hint": "Stem говор- + и", "explanation": "Говорити → говори. The -и ending is used after consonants." },
-        { "type": "transformation", "prompt": "Make the formal imperative:", "baseWord": "читай (read, informal)", "context": "___! (formal/plural)", "acceptedAnswers": ["Читайте", "читайте"], "hint": "Add -те for formal", "explanation": "Informal читай + те = читайте (formal/plural imperative)." },
-        { "type": "multiple-choice", "prompt": "What is the imperative of 'бути' (to be)?", "options": ["будь", "будеш", "бувай"], "correctIndex": 0, "explanation": "Бути → будь (be!). This is an irregular but very common imperative." },
-        { "type": "fill-blank", "prompt": "___ тихо! (Be quiet! — informal, сидіти)", "acceptedAnswers": ["Сиди"], "hint": "Stem сид- + и", "explanation": "Сидіти → сиди (sit/be). 'Сиди тихо' = Be/sit quiet." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Пишій мені листа!", "errorWord": "Пишій", "acceptedAnswers": ["Пиши"], "explanation": "The imperative of 'писати' is 'пиши' (not 'пишій'). Stem пиш- + и." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "читати", "right": "читай / читайте" },
-          { "left": "писати", "right": "пиши / пишіть" },
-          { "left": "говорити", "right": "говори / говоріть" },
-          { "left": "бути", "right": "будь / будьте" }
-        ], "explanation": "Each verb has informal (singular) and formal/plural imperative forms, differing by -те." },
-        { "type": "fill-blank", "prompt": "Не ___ це! (Don't do this! — informal, робити)", "acceptedAnswers": ["роби"], "hint": "Negative imperative: не + imperative form", "explanation": "Робити → роби. Negative imperative: не роби (don't do)." },
-        { "type": "multiple-choice", "prompt": "Which is the correct formal imperative of 'допомогти' (to help)?", "options": ["допоможіть", "допомогте", "допоможи"], "correctIndex": 0, "explanation": "Допомогти → допоможи (informal) → допоможіть (formal). The stem changes: г → ж." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Please open the window!", "words": ["Будь", "ласка", "відчини", "вікно"], "distractors": ["відчинити", "відчиняй"], "validOrders": [["Будь", "ласка", "відчини", "вікно"]], "explanation": "'Будь ласка' (please) + imperative 'відчини' (open). 'Відчинити' is the infinitive, not imperative." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the informal imperative of 'читати' (to read)?",
+          "options": [
+            "читаю",
+            "читай",
+            "читає"
+          ],
+          "correctIndex": 1,
+          "explanation": "Читати → stem чита- + й = читай. The -й ending is used after vowels."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___! Я хочу тебе почути. (Speak! — informal, говорити)",
+          "acceptedAnswers": [
+            "Говори"
+          ],
+          "hint": "Stem говор- + и",
+          "explanation": "Говорити → говори. The -и ending is used after consonants."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Make the formal imperative:",
+          "baseWord": "читай (read, informal)",
+          "context": "___! (formal/plural)",
+          "acceptedAnswers": [
+            "Читайте",
+            "читайте"
+          ],
+          "hint": "Add -те for formal",
+          "explanation": "Informal читай + те = читайте (formal/plural imperative)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the imperative of 'бути' (to be)?",
+          "options": [
+            "будеш",
+            "бувай",
+            "будь"
+          ],
+          "correctIndex": 2,
+          "explanation": "Бути → будь (be!). This is an irregular but very common imperative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ тихо! (Be quiet! — informal, сидіти)",
+          "acceptedAnswers": [
+            "Сиди"
+          ],
+          "hint": "Stem сид- + и",
+          "explanation": "Сидіти → сиди (sit/be). 'Сиди тихо' = Be/sit quiet."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Пишій мені листа!",
+          "errorWord": "Пишій",
+          "acceptedAnswers": [
+            "Пиши"
+          ],
+          "explanation": "The imperative of 'писати' is 'пиши' (not 'пишій'). Stem пиш- + и."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "читати",
+              "right": "читай / читайте"
+            },
+            {
+              "left": "писати",
+              "right": "пиши / пишіть"
+            },
+            {
+              "left": "говорити",
+              "right": "говори / говоріть"
+            },
+            {
+              "left": "бути",
+              "right": "будь / будьте"
+            }
+          ],
+          "explanation": "Each verb has informal (singular) and formal/plural imperative forms, differing by -те."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Не ___ це! (Don't do this! — informal, робити)",
+          "acceptedAnswers": [
+            "роби"
+          ],
+          "hint": "Negative imperative: не + imperative form",
+          "explanation": "Робити → роби. Negative imperative: не роби (don't do)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct formal imperative of 'допомогти' (to help)?",
+          "options": [
+            "допомогте",
+            "допоможіть",
+            "допоможи"
+          ],
+          "correctIndex": 1,
+          "explanation": "Допомогти → допоможи (informal) → допоможіть (formal). The stem changes: г → ж."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Please open the window!",
+          "words": [
+            "Будь",
+            "ласка",
+            "відчини",
+            "вікно"
+          ],
+          "distractors": [
+            "відчинити",
+            "відчиняй"
+          ],
+          "validOrders": [
+            [
+              "Будь",
+              "ласка",
+              "відчини",
+              "вікно"
+            ]
+          ],
+          "explanation": "'Будь ласка' (please) + imperative 'відчини' (open). 'Відчинити' is the infinitive, not imperative."
+        }
       ]
     },
     {
@@ -39,26 +167,137 @@
       "title": "Conditional Mood",
       "explanation": "The conditional mood expresses wishes, hypothetical situations, and polite requests. Formation: past tense verb + б (after vowels) or би (after consonants). Я читав би = I would read. Якби я знав... = If I knew... The particle б/би can move in the sentence.",
       "examples": [
-        { "uk": "Я читав би цю книгу.", "en": "I would read this book.", "highlight": "читав би" },
-        { "uk": "Якби я знав, я б допоміг.", "en": "If I had known, I would have helped.", "highlight": "Якби...я б" },
-        { "uk": "Вона хотіла б поїхати.", "en": "She would like to go.", "highlight": "хотіла б" }
+        {
+          "uk": "Я читав би цю книгу.",
+          "en": "I would read this book.",
+          "highlight": "читав би"
+        },
+        {
+          "uk": "Якби я знав, я б допоміг.",
+          "en": "If I had known, I would have helped.",
+          "highlight": "Якби...я б"
+        },
+        {
+          "uk": "Вона хотіла б поїхати.",
+          "en": "She would like to go.",
+          "highlight": "хотіла б"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'I would buy' in Ukrainian?", "options": ["я купив би", "я куплю", "я купував"], "correctIndex": 0, "explanation": "Conditional = past tense + б/би: купив (past) + би = купив би." },
-        { "type": "fill-blank", "prompt": "Якби я ___ гроші, я б купив машину. (had — мати, past masc.)", "acceptedAnswers": ["мав"], "hint": "Past tense of мати (masculine)", "explanation": "Якби + past tense forms the 'if' clause: якби я мав = if I had." },
-        { "type": "transformation", "prompt": "Form the conditional:", "baseWord": "Вона поїхала. (She went.)", "context": "Вона ___ поїхати до Парижа.", "acceptedAnswers": ["хотіла б"], "hint": "She would like to...", "explanation": "Хотіла б + infinitive = would like to. Past feminine хотіла + б." },
-        { "type": "multiple-choice", "prompt": "Якби він ___, він би не запізнився.", "options": ["встав раніше", "встане раніше", "встає раніше"], "correctIndex": 0, "explanation": "Якби + past tense: якби він встав раніше = if he had gotten up earlier." },
-        { "type": "fill-blank", "prompt": "Ми ___ б вам допомогти. (could — могти, past plural)", "acceptedAnswers": ["могли"], "hint": "Past tense plural of могти", "explanation": "Могли б = would be able to / could. Past plural 'могли' + б." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Якби я знаю, я б прийшов.", "errorWord": "знаю", "acceptedAnswers": ["знав"], "explanation": "After 'якби', the verb must be in past tense: знав (not present 'знаю'). Якби я знав = if I knew." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Я читав би", "right": "I would read" },
-          { "left": "Якби я знав", "right": "If I knew" },
-          { "left": "Вона хотіла б", "right": "She would like" },
-          { "left": "Ми могли б", "right": "We could" }
-        ], "explanation": "All conditional forms use past tense + б/би. 'Якби' introduces the condition ('if')." },
-        { "type": "fill-blank", "prompt": "Я ___ б каву, будь ласка. (would like — хотіти, past masc.)", "acceptedAnswers": ["хотів"], "hint": "Polite request: past tense + б", "explanation": "Хотів би = I would like. This is the polite way to order or request something." },
-        { "type": "multiple-choice", "prompt": "Which is a correct conditional sentence?", "options": ["Якби я мав час, я б прочитав цю книгу.", "Якби я маю час, я прочитаю цю книгу.", "Якби я матиму час, я прочитав би."], "correctIndex": 0, "explanation": "Both clauses must use past tense + б/би: якби мав...я б прочитав." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Якби я знав, я б тобі сказав.", "acceptedAnswers": ["Якби я знав, я б тобі сказав.", "Якби я знав, я б тобі сказав"], "explanation": "'Якби я знав' = if I had known. 'Я б сказав' = I would have told. Both use past tense + б/би." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I would buy' in Ukrainian?",
+          "options": [
+            "я куплю",
+            "я купив би",
+            "я купував"
+          ],
+          "correctIndex": 1,
+          "explanation": "Conditional = past tense + б/би: купив (past) + би = купив би."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Якби я ___ гроші, я б купив машину. (had — мати, past masc.)",
+          "acceptedAnswers": [
+            "мав"
+          ],
+          "hint": "Past tense of мати (masculine)",
+          "explanation": "Якби + past tense forms the 'if' clause: якби я мав = if I had."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the conditional:",
+          "baseWord": "Вона поїхала. (She went.)",
+          "context": "Вона ___ поїхати до Парижа.",
+          "acceptedAnswers": [
+            "хотіла б"
+          ],
+          "hint": "She would like to...",
+          "explanation": "Хотіла б + infinitive = would like to. Past feminine хотіла + б."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Якби він ___, він би не запізнився.",
+          "options": [
+            "встав раніше",
+            "встане раніше",
+            "встає раніше"
+          ],
+          "correctIndex": 0,
+          "explanation": "Якби + past tense: якби він встав раніше = if he had gotten up earlier."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ми ___ б вам допомогти. (could — могти, past plural)",
+          "acceptedAnswers": [
+            "могли"
+          ],
+          "hint": "Past tense plural of могти",
+          "explanation": "Могли б = would be able to / could. Past plural 'могли' + б."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Якби я знаю, я б прийшов.",
+          "errorWord": "знаю",
+          "acceptedAnswers": [
+            "знав"
+          ],
+          "explanation": "After 'якби', the verb must be in past tense: знав (not present 'знаю'). Якби я знав = if I knew."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Я читав би",
+              "right": "I would read"
+            },
+            {
+              "left": "Якби я знав",
+              "right": "If I knew"
+            },
+            {
+              "left": "Вона хотіла б",
+              "right": "She would like"
+            },
+            {
+              "left": "Ми могли б",
+              "right": "We could"
+            }
+          ],
+          "explanation": "All conditional forms use past tense + б/би. 'Якби' introduces the condition ('if')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я ___ б каву, будь ласка. (would like — хотіти, past masc.)",
+          "acceptedAnswers": [
+            "хотів"
+          ],
+          "hint": "Polite request: past tense + б",
+          "explanation": "Хотів би = I would like. This is the polite way to order or request something."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is a correct conditional sentence?",
+          "options": [
+            "Якби я маю час, я прочитаю цю книгу.",
+            "Якби я мав час, я б прочитав цю книгу.",
+            "Якби я матиму час, я прочитав би."
+          ],
+          "correctIndex": 1,
+          "explanation": "Both clauses must use past tense + б/би: якби мав...я б прочитав."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Якби я знав, я б тобі сказав.",
+          "acceptedAnswers": [
+            "Якби я знав, я б тобі сказав.",
+            "Якби я знав, я б тобі сказав"
+          ],
+          "explanation": "'Якби я знав' = if I had known. 'Я б сказав' = I would have told. Both use past tense + б/би."
+        }
       ]
     },
     {
@@ -66,26 +305,158 @@
       "title": "Mood in Context",
       "explanation": "Imperatives are used for directions, requests, advice, and recipes. Conditionals express wishes, polite requests, hypotheticals, and regrets. Practice recognizing and using both moods in real-life situations.",
       "examples": [
-        { "uk": "Ідіть прямо, потім поверніть праворуч.", "en": "Go straight, then turn right. (directions)", "highlight": "Ідіть...поверніть" },
-        { "uk": "Я б хотів замовити каву.", "en": "I would like to order coffee. (polite request)", "highlight": "хотів" },
-        { "uk": "Не забудь ключі!", "en": "Don't forget the keys! (reminder)", "highlight": "забудь" }
+        {
+          "uk": "Ідіть прямо, потім поверніть праворуч.",
+          "en": "Go straight, then turn right. (directions)",
+          "highlight": "Ідіть...поверніть"
+        },
+        {
+          "uk": "Я б хотів замовити каву.",
+          "en": "I would like to order coffee. (polite request)",
+          "highlight": "хотів"
+        },
+        {
+          "uk": "Не забудь ключі!",
+          "en": "Don't forget the keys! (reminder)",
+          "highlight": "забудь"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How would you politely order in a restaurant?", "options": ["Я хотів би замовити борщ.", "Дай мені борщ!", "Я замовлю борщ."], "correctIndex": 0, "explanation": "Conditional 'хотів би' is the polite form for ordering. 'Дай мені' is too direct." },
-        { "type": "fill-blank", "prompt": "___ прямо до кінця вулиці. (Go — formal, іти)", "acceptedAnswers": ["Ідіть"], "hint": "Formal imperative of іти", "explanation": "Іти → іди (informal) → ідіть (formal). Used for giving directions." },
-        { "type": "transformation", "prompt": "Make this request polite using the conditional:", "baseWord": "Дай мені воду.", "context": "Чи не ___ ви мені воду?", "acceptedAnswers": ["могли б дати", "дали б"], "hint": "Use conditional for politeness", "explanation": "'Чи не могли б ви дати' = Could you give... Much more polite than the direct imperative." },
-        { "type": "multiple-choice", "prompt": "Which is correct advice?", "options": ["Вчи українську щодня!", "Вивчив би українську!", "Українську вчить!"], "correctIndex": 0, "explanation": "Imperative 'вчи' (study!) is the natural way to give advice. The other forms are grammatically awkward." },
-        { "type": "fill-blank", "prompt": "Якби я був на твоєму місці, я б ___ лікаря. (visited — відвідати, past masc.)", "acceptedAnswers": ["відвідав"], "hint": "Conditional advice: якби я був..., я б + past tense", "explanation": "'Якби я був на твоєму місці' = If I were in your place. 'Я б відвідав' = I would visit." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Не забувай свій зонтик!", "errorWord": "забувай", "acceptedAnswers": ["забудь"], "explanation": "For a specific one-time reminder, use perfective imperative: 'Не забудь!' (Don't forget!). 'Не забувай' would mean 'don't keep forgetting' (habitual)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Допоможіть, будь ласка!", "right": "Help me, please! (request)" },
-          { "left": "Я б хотів поїхати.", "right": "I would like to go. (wish)" },
-          { "left": "Поверніть ліворуч.", "right": "Turn left. (direction)" },
-          { "left": "Якби я міг, я б прийшов.", "right": "If I could, I would come. (hypothetical)" }
-        ], "explanation": "Imperatives for direct requests/directions. Conditionals for polite wishes and hypotheticals." },
-        { "type": "multiple-choice", "prompt": "A recipe says: '___ цибулю дрібно.' (Chop the onion finely.)", "options": ["Наріжте", "Наріжу", "Нарізав би"], "correctIndex": 0, "explanation": "Recipes use formal imperatives: наріжте (chop, formal). This is standard in Ukrainian cookbooks." },
-        { "type": "fill-blank", "prompt": "Якби ти ___ раніше, ми б встигли. (came — прийти, past masc.)", "acceptedAnswers": ["прийшов"], "hint": "Past tense of прийти (masculine)", "explanation": "Якби ти прийшов раніше = If you had come earlier. Conditional uses past tense after якби." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "If I had money, I would travel.", "words": ["Якби", "я", "мав", "гроші", "я", "б", "подорожував"], "distractors": ["маю", "подорожую"], "validOrders": [["Якби", "я", "мав", "гроші", "я", "б", "подорожував"]], "explanation": "Conditional: якби + past tense (мав) in the if-clause, past tense + б (подорожував) in the result clause." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you politely order in a restaurant?",
+          "options": [
+            "Я хотів би замовити борщ.",
+            "Дай мені борщ!",
+            "Я замовлю борщ."
+          ],
+          "correctIndex": 0,
+          "explanation": "Conditional 'хотів би' is the polite form for ordering. 'Дай мені' is too direct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ прямо до кінця вулиці. (Go — formal, іти)",
+          "acceptedAnswers": [
+            "Ідіть"
+          ],
+          "hint": "Formal imperative of іти",
+          "explanation": "Іти → іди (informal) → ідіть (formal). Used for giving directions."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Make this request polite using the conditional:",
+          "baseWord": "Дай мені воду.",
+          "context": "Чи не ___ ви мені воду?",
+          "acceptedAnswers": [
+            "могли б дати",
+            "дали б"
+          ],
+          "hint": "Use conditional for politeness",
+          "explanation": "'Чи не могли б ви дати' = Could you give... Much more polite than the direct imperative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct advice?",
+          "options": [
+            "Вивчив би українську!",
+            "Вчи українську щодня!",
+            "Українську вчить!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Imperative 'вчи' (study!) is the natural way to give advice. The other forms are grammatically awkward."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Якби я був на твоєму місці, я б ___ лікаря. (visited — відвідати, past masc.)",
+          "acceptedAnswers": [
+            "відвідав"
+          ],
+          "hint": "Conditional advice: якби я був..., я б + past tense",
+          "explanation": "'Якби я був на твоєму місці' = If I were in your place. 'Я б відвідав' = I would visit."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Не забувай свій зонтик!",
+          "errorWord": "забувай",
+          "acceptedAnswers": [
+            "забудь"
+          ],
+          "explanation": "For a specific one-time reminder, use perfective imperative: 'Не забудь!' (Don't forget!). 'Не забувай' would mean 'don't keep forgetting' (habitual)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Допоможіть, будь ласка!",
+              "right": "Help me, please! (request)"
+            },
+            {
+              "left": "Я б хотів поїхати.",
+              "right": "I would like to go. (wish)"
+            },
+            {
+              "left": "Поверніть ліворуч.",
+              "right": "Turn left. (direction)"
+            },
+            {
+              "left": "Якби я міг, я б прийшов.",
+              "right": "If I could, I would come. (hypothetical)"
+            }
+          ],
+          "explanation": "Imperatives for direct requests/directions. Conditionals for polite wishes and hypotheticals."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A recipe says: '___ цибулю дрібно.' (Chop the onion finely.)",
+          "options": [
+            "Наріжте",
+            "Нарізав би",
+            "Наріжу"
+          ],
+          "correctIndex": 0,
+          "explanation": "Recipes use formal imperatives: наріжте (chop, formal). This is standard in Ukrainian cookbooks."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Якби ти ___ раніше, ми б встигли. (came — прийти, past masc.)",
+          "acceptedAnswers": [
+            "прийшов"
+          ],
+          "hint": "Past tense of прийти (masculine)",
+          "explanation": "Якби ти прийшов раніше = If you had come earlier. Conditional uses past tense after якби."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "If I had money, I would travel.",
+          "words": [
+            "Якби",
+            "я",
+            "мав",
+            "гроші",
+            "я",
+            "б",
+            "подорожував"
+          ],
+          "distractors": [
+            "маю",
+            "подорожую"
+          ],
+          "validOrders": [
+            [
+              "Якби",
+              "я",
+              "мав",
+              "гроші",
+              "я",
+              "б",
+              "подорожував"
+            ]
+          ],
+          "explanation": "Conditional: якби + past tense (мав) in the if-clause, past tense + б (подорожував) in the result clause."
+        }
       ]
     }
   ]

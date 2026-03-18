@@ -4,7 +4,9 @@
   "nameEs": "Verbos con Cambio Radical",
   "icon": "🔄",
   "tier": "A2",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,115 @@
       "explanation": "Some Spanish verbs change the stressed vowel 'e' in their stem to 'ie' when that syllable is stressed. This happens in all forms EXCEPT nosotros and vosotros, creating what is called the 'boot verb' pattern (imagine drawing a boot shape around the affected forms). Key verbs: querer (to want/love) → quiero, quieres, quiere, queremos, queréis, quieren; pensar (to think) → pienso, piensas, piensa, pensamos, pensáis, piensan; empezar (to start) → empiezo, empiezas, empieza, empezamos, empezáis, empiezan; tener (to have) → tengo, tienes, tiene, tenemos, tenéis, tienen (yo form is irregular: tengo); venir (to come) → vengo, vienes, viene, venimos, venís, vienen (yo form is also irregular: vengo). Notice that tener and venir have a special yo form ending in -go in addition to the stem change.",
       "tip": "Draw a 'boot' around the four forms that change (yo, tú, él/ella, ellos/ellas). The nosotros and vosotros forms keep the original stem — they fall outside the boot. For tener and venir, also remember the irregular yo forms: tengo and vengo.",
       "examples": [
-        { "es": "Yo quiero un café.", "en": "I want a coffee.", "highlight": "quiero" },
-        { "es": "¿Tú piensas en mí?", "en": "Do you think about me?", "highlight": "piensas" },
-        { "es": "La clase empieza a las nueve.", "en": "The class starts at nine.", "highlight": "empieza" },
-        { "es": "Nosotros pensamos que sí.", "en": "We think so.", "highlight": "pensamos" },
-        { "es": "Ella tiene mucho trabajo.", "en": "She has a lot of work.", "highlight": "tiene" },
-        { "es": "Ellos vienen mañana.", "en": "They are coming tomorrow.", "highlight": "vienen" }
+        {
+          "es": "Yo quiero un café.",
+          "en": "I want a coffee.",
+          "highlight": "quiero"
+        },
+        {
+          "es": "¿Tú piensas en mí?",
+          "en": "Do you think about me?",
+          "highlight": "piensas"
+        },
+        {
+          "es": "La clase empieza a las nueve.",
+          "en": "The class starts at nine.",
+          "highlight": "empieza"
+        },
+        {
+          "es": "Nosotros pensamos que sí.",
+          "en": "We think so.",
+          "highlight": "pensamos"
+        },
+        {
+          "es": "Ella tiene mucho trabajo.",
+          "en": "She has a lot of work.",
+          "highlight": "tiene"
+        },
+        {
+          "es": "Ellos vienen mañana.",
+          "en": "They are coming tomorrow.",
+          "highlight": "vienen"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'querer' (to want) for 'yo'?",
-          "options": ["yo quiero", "yo quero", "yo queremos"],
-          "correctIndex": 0,
+          "options": [
+            "yo queremos",
+            "yo quero",
+            "yo quiero"
+          ],
+          "correctIndex": 2,
           "explanation": "The e in the stem changes to ie when stressed: quer- → quier-. Yo quiero."
         },
         {
           "type": "fill-blank",
           "prompt": "Tú ___ (pensar) que el examen es difícil. (You think the exam is hard.)",
-          "acceptedAnswers": ["piensas"],
+          "acceptedAnswers": [
+            "piensas"
+          ],
           "hint": "The stem vowel e changes to ie for tú",
           "explanation": "pensar → pens- becomes piens- when stressed: tú piensas."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you conjugate 'empezar' (to start) for 'ella'?",
-          "options": ["ella empieza", "ella empeza", "ella empiezan"],
+          "options": [
+            "ella empieza",
+            "ella empiezan",
+            "ella empeza"
+          ],
           "correctIndex": 0,
           "explanation": "The stressed e in the stem changes to ie: empez- → empiez-. Ella empieza."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ (querer) ir al cine. (We want to go to the movies.)",
-          "acceptedAnswers": ["queremos"],
+          "acceptedAnswers": [
+            "queremos"
+          ],
           "hint": "Nosotros falls outside the 'boot' — no stem change here",
           "explanation": "The nosotros form keeps the original stem: queremos. No e→ie change."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the yo form of 'tener' (to have)?",
-          "options": ["yo tengo", "yo tiene", "yo teno"],
-          "correctIndex": 0,
+          "options": [
+            "yo tiene",
+            "yo tengo",
+            "yo teno"
+          ],
+          "correctIndex": 1,
           "explanation": "Tener has an irregular yo form: tengo. The other forms follow the e→ie pattern (tienes, tiene, tienen) but yo is simply tengo."
         },
         {
           "type": "fill-blank",
           "prompt": "Ellos ___ (venir) a la fiesta esta noche. (They are coming to the party tonight.)",
-          "acceptedAnswers": ["vienen"],
+          "acceptedAnswers": [
+            "vienen"
+          ],
           "hint": "The e in the stem changes to ie for ellos — the stem is vien-",
           "explanation": "venir → ven- becomes vien- when stressed: ellos vienen."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses a stem-changing verb correctly?",
-          "options": ["Tú tienes hambre.", "Tú tenes hambre.", "Tú tenemos hambre."],
+          "options": [
+            "Tú tienes hambre.",
+            "Tú tenes hambre.",
+            "Tú tenemos hambre."
+          ],
           "correctIndex": 0,
           "explanation": "Tener changes e→ie for tú: tienes. 'Tenes' is not a word in Spanish."
         },
         {
           "type": "fill-blank",
           "prompt": "Yo ___ (empezar) a estudiar ahora. (I am starting to study now.)",
-          "acceptedAnswers": ["empiezo"],
+          "acceptedAnswers": [
+            "empiezo"
+          ],
           "hint": "The e changes to ie for yo; also note the z stays as z before o",
           "explanation": "empezar → empez- + ie stem change → empiez- + o = empiezo."
         }
@@ -85,61 +135,107 @@
       "explanation": "Another common stem-change pattern replaces the stressed 'o' in the verb stem with 'ue'. Like the e→ie verbs, this change occurs in all present-tense forms except nosotros and vosotros (the boot pattern). Key verbs: poder (to be able to/can) → puedo, puedes, puede, podemos, podéis, pueden; dormir (to sleep) → duermo, duermes, duerme, dormimos, dormís, duermen; volver (to return) → vuelvo, vuelves, vuelve, volvemos, volvéis, vuelven; costar (to cost) → cuesta (used mostly in 3rd person: cuesta, cuestan); encontrar (to find/meet) → encuentro, encuentras, encuentra, encontramos, encontráis, encuentran. Note: costar is almost always used in the 3rd person singular (cuesta) or plural (cuestan) since prices are the subject.",
       "tip": "The boot pattern applies here too: yo, tú, él/ella, and ellos/ellas all get the ue change; nosotros and vosotros keep the original o. A useful trick: the ue forms are the ones you say most often in everyday conversation.",
       "examples": [
-        { "es": "Yo no puedo dormir.", "en": "I can't sleep.", "highlight": "puedo" },
-        { "es": "¿Cuánto cuesta este libro?", "en": "How much does this book cost?", "highlight": "cuesta" },
-        { "es": "Ella vuelve a casa tarde.", "en": "She returns home late.", "highlight": "vuelve" },
-        { "es": "Nosotros dormimos ocho horas.", "en": "We sleep eight hours.", "highlight": "dormimos" },
-        { "es": "¿Tú encuentras la llave?", "en": "Do you find the key?", "highlight": "encuentras" },
-        { "es": "Ellos pueden hablar español.", "en": "They can speak Spanish.", "highlight": "pueden" }
+        {
+          "es": "Yo no puedo dormir.",
+          "en": "I can't sleep.",
+          "highlight": "puedo"
+        },
+        {
+          "es": "¿Cuánto cuesta este libro?",
+          "en": "How much does this book cost?",
+          "highlight": "cuesta"
+        },
+        {
+          "es": "Ella vuelve a casa tarde.",
+          "en": "She returns home late.",
+          "highlight": "vuelve"
+        },
+        {
+          "es": "Nosotros dormimos ocho horas.",
+          "en": "We sleep eight hours.",
+          "highlight": "dormimos"
+        },
+        {
+          "es": "¿Tú encuentras la llave?",
+          "en": "Do you find the key?",
+          "highlight": "encuentras"
+        },
+        {
+          "es": "Ellos pueden hablar español.",
+          "en": "They can speak Spanish.",
+          "highlight": "pueden"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'poder' (to be able to) for 'yo'?",
-          "options": ["yo puedo", "yo podo", "yo podemos"],
-          "correctIndex": 0,
+          "options": [
+            "yo podo",
+            "yo podemos",
+            "yo puedo"
+          ],
+          "correctIndex": 2,
           "explanation": "The o in the stem changes to ue when stressed: pod- → pued-. Yo puedo."
         },
         {
           "type": "fill-blank",
           "prompt": "¿Tú ___ (dormir) bien por las noches? (Do you sleep well at night?)",
-          "acceptedAnswers": ["duermes"],
+          "acceptedAnswers": [
+            "duermes"
+          ],
           "hint": "The o in the stem changes to ue for tú",
           "explanation": "dormir → dorm- becomes duerm- when stressed: tú duermes."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'This jacket costs fifty euros'?",
-          "options": ["Esta chaqueta cuesta cincuenta euros.", "Esta chaqueta costa cincuenta euros.", "Esta chaqueta cuestan cincuenta euros."],
-          "correctIndex": 0,
+          "options": [
+            "Esta chaqueta cuestan cincuenta euros.",
+            "Esta chaqueta costa cincuenta euros.",
+            "Esta chaqueta cuesta cincuenta euros."
+          ],
+          "correctIndex": 2,
           "explanation": "Costar changes o→ue in the 3rd person singular: cuesta. 'Costa' is incorrect; 'cuestan' is plural."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ (volver) a las diez. (We return at ten.)",
-          "acceptedAnswers": ["volvemos"],
+          "acceptedAnswers": [
+            "volvemos"
+          ],
           "hint": "Nosotros is outside the boot — no stem change",
           "explanation": "The nosotros form keeps the original stem: volvemos. No o→ue change."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'encontrar' (to find) for 'ellos'?",
-          "options": ["ellos encuentran", "ellos encontran", "ellos encontramos"],
+          "options": [
+            "ellos encuentran",
+            "ellos encontramos",
+            "ellos encontran"
+          ],
           "correctIndex": 0,
           "explanation": "The o in encontr- changes to ue: encuentran. The boot pattern applies to ellos/ellas."
         },
         {
           "type": "fill-blank",
           "prompt": "Yo ___ (volver) pronto. (I will return soon. / I am returning soon.)",
-          "acceptedAnswers": ["vuelvo"],
+          "acceptedAnswers": [
+            "vuelvo"
+          ],
           "hint": "The o changes to ue for yo; the ending is -o",
           "explanation": "volver → volv- + ue stem change → vuelv- + o = vuelvo."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these correctly uses a o→ue stem-changing verb?",
-          "options": ["Ella puede venir mañana.", "Ella pode venir mañana.", "Ella puedes venir mañana."],
-          "correctIndex": 0,
+          "options": [
+            "Ella puedes venir mañana.",
+            "Ella pode venir mañana.",
+            "Ella puede venir mañana."
+          ],
+          "correctIndex": 2,
           "explanation": "Poder changes o→ue for ella: puede. 'Pode' misses the stem change; 'puedes' is the tú form."
         }
       ]
@@ -150,67 +246,115 @@
       "explanation": "A third group of stem-changing verbs, all of which are -IR verbs, changes the stressed 'e' in the stem to 'i'. As with the other patterns, this change follows the boot pattern: it occurs in yo, tú, él/ella, and ellos/ellas, but NOT in nosotros or vosotros. Key verbs: pedir (to ask for/order) → pido, pides, pide, pedimos, pedís, piden; servir (to serve) → sirvo, sirves, sirve, servimos, servís, sirven; repetir (to repeat) → repito, repites, repite, repetimos, repetís, repiten; seguir (to follow/continue) → sigo, sigues, sigue, seguimos, seguís, siguen. Note: seguir drops the 'u' in the yo form (sigo, not sigueo) to maintain the hard 'g' sound. The e→i change is exclusive to -IR verbs — you will never see it in -AR or -ER verbs.",
       "tip": "All e→i stem-changing verbs are -IR verbs. If you see a stem-change and the infinitive ends in -ir, it is likely e→i. The nosotros and vosotros forms keep the original e: pedimos, servimos, repetimos, seguimos.",
       "examples": [
-        { "es": "Yo pido la cuenta.", "en": "I ask for the bill.", "highlight": "pido" },
-        { "es": "El camarero sirve la comida.", "en": "The waiter serves the food.", "highlight": "sirve" },
-        { "es": "¿Tú repites la pregunta?", "en": "Do you repeat the question?", "highlight": "repites" },
-        { "es": "Nosotros pedimos pizza.", "en": "We order pizza.", "highlight": "pedimos" },
-        { "es": "Ellos siguen las instrucciones.", "en": "They follow the instructions.", "highlight": "siguen" },
-        { "es": "Yo sigo a mi profesor.", "en": "I follow my teacher.", "highlight": "sigo" }
+        {
+          "es": "Yo pido la cuenta.",
+          "en": "I ask for the bill.",
+          "highlight": "pido"
+        },
+        {
+          "es": "El camarero sirve la comida.",
+          "en": "The waiter serves the food.",
+          "highlight": "sirve"
+        },
+        {
+          "es": "¿Tú repites la pregunta?",
+          "en": "Do you repeat the question?",
+          "highlight": "repites"
+        },
+        {
+          "es": "Nosotros pedimos pizza.",
+          "en": "We order pizza.",
+          "highlight": "pedimos"
+        },
+        {
+          "es": "Ellos siguen las instrucciones.",
+          "en": "They follow the instructions.",
+          "highlight": "siguen"
+        },
+        {
+          "es": "Yo sigo a mi profesor.",
+          "en": "I follow my teacher.",
+          "highlight": "sigo"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'pedir' (to order/ask for) for 'yo'?",
-          "options": ["yo pido", "yo pedo", "yo pides"],
-          "correctIndex": 0,
+          "options": [
+            "yo pides",
+            "yo pedo",
+            "yo pido"
+          ],
+          "correctIndex": 2,
           "explanation": "The e in the stem changes to i when stressed: ped- → pid-. Yo pido."
         },
         {
           "type": "fill-blank",
           "prompt": "El restaurante ___ (servir) platos típicos. (The restaurant serves typical dishes.)",
-          "acceptedAnswers": ["sirve"],
+          "acceptedAnswers": [
+            "sirve"
+          ],
           "hint": "The e changes to i; the él/ella ending is -e",
           "explanation": "servir → serv- becomes sirv- when stressed: sirve. El restaurante sirve platos típicos."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you conjugate 'repetir' (to repeat) for 'tú'?",
-          "options": ["tú repites", "tú repetes", "tú repetimos"],
+          "options": [
+            "tú repites",
+            "tú repetes",
+            "tú repetimos"
+          ],
           "correctIndex": 0,
           "explanation": "The e in repit- changes to i: tú repites. 'Repetes' uses the wrong stem; 'repetimos' is the nosotros form."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ (pedir) más tiempo. (We ask for more time.)",
-          "acceptedAnswers": ["pedimos"],
+          "acceptedAnswers": [
+            "pedimos"
+          ],
           "hint": "Nosotros stays outside the boot — no stem change",
           "explanation": "The nosotros form keeps the original e: pedimos. No e→i change."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the yo form of 'seguir' (to follow)?",
-          "options": ["yo sigo", "yo sigueo", "yo sigue"],
-          "correctIndex": 0,
+          "options": [
+            "yo sigue",
+            "yo sigueo",
+            "yo sigo"
+          ],
+          "correctIndex": 2,
           "explanation": "Seguir drops the 'u' in the yo form to keep a hard 'g' sound: sigo. 'Sigueo' is not a word; 'sigue' is the él/ella form."
         },
         {
           "type": "fill-blank",
           "prompt": "Ellos ___ (repetir) las palabras nuevas. (They repeat the new words.)",
-          "acceptedAnswers": ["repiten"],
+          "acceptedAnswers": [
+            "repiten"
+          ],
           "hint": "The e changes to i for ellos; the ending is -en",
           "explanation": "repetir → repit- + i stem change → repit- + en = repiten."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 'servir' (to serve)?",
-          "options": ["Ellas sirven la cena a las ocho.", "Ellas serven la cena a las ocho.", "Ellas servimos la cena a las ocho."],
-          "correctIndex": 0,
+          "options": [
+            "Ellas servimos la cena a las ocho.",
+            "Ellas serven la cena a las ocho.",
+            "Ellas sirven la cena a las ocho."
+          ],
+          "correctIndex": 2,
           "explanation": "The e→i change applies to ellas: sirven. 'Serven' misses the stem change; 'servimos' is the nosotros form."
         },
         {
           "type": "fill-blank",
           "prompt": "¿Tú ___ (seguir) estudiando español? (Are you continuing to study Spanish?)",
-          "acceptedAnswers": ["sigues"],
+          "acceptedAnswers": [
+            "sigues"
+          ],
           "hint": "The e changes to i for tú; note seguir drops the u except in yo",
           "explanation": "seguir → segu- + i stem change → sigu- + es = sigues. (The 'u' stays to keep the hard 'g' before e.)"
         }

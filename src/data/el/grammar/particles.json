@@ -4,7 +4,9 @@
   "nameEl": "Μόρια και Σύνδεσμοι",
   "icon": "🔗",
   "tier": "B1",
-  "prerequisites": ["questions-negation"],
+  "prerequisites": [
+    "questions-negation"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,33 +15,72 @@
       "explanation": "Greek particles are small, uninflected words that carry grammatical meaning. The most important are the mood markers: θα (future/conditional marker, placed before a verb), να (subjunctive marker, used for wishes, purpose, and after many verbs), and ας (let's / let them — for first and third person suggestions or soft commands). The negation system has two branches: δεν negates indicative verbs ('Δεν πάω' = I don't go), while μην negates subjunctive and imperative forms ('Μην πας' = Don't go). Additional particles of high frequency include ούτε (not even; neither — often paired: ούτε...ούτε), μόνο (only), και (and), αλλά (but), ή (or), όμως (however — usually placed after the first word of the clause), γιατί (because / why), άρα (therefore / so — marks a logical conclusion), and δηλαδή (that is / namely / in other words — introduces clarification). Unlike conjunctions, particles like θα and να cannot be separated from the verb they govern by anything other than a clitic pronoun.",
       "tip": "Θα and να are the two most critical particles at B1 level. Θα + present stem forms the future: θα πάω (I will go). Να + present stem forms the subjunctive, used after verbs of wanting, needing, and hoping: θέλω να πάω (I want to go). Ας + verb makes a soft imperative for 1st or 3rd person: ας πάμε (let's go), ας φύγει (let him leave).",
       "examples": [
-        { "el": "Θα πάω στην αγορά αύριο.", "en": "I will go to the market tomorrow.", "highlight": "Θα" },
-        { "el": "Θέλω να μάθω ελληνικά.", "en": "I want to learn Greek.", "highlight": "να" },
-        { "el": "Ας φάμε κάτι πρώτα.", "en": "Let's eat something first.", "highlight": "Ας" },
-        { "el": "Μην αργείς — θα σε περιμένουμε.", "en": "Don't be late — we will wait for you.", "highlight": "Μην" },
-        { "el": "Δεν ξέρω ούτε λέξη γερμανικά.", "en": "I don't know even one word of German.", "highlight": "ούτε" },
-        { "el": "Ήταν κουρασμένος, άρα έφυγε νωρίς.", "en": "He was tired, therefore he left early.", "highlight": "άρα" }
+        {
+          "el": "Θα πάω στην αγορά αύριο.",
+          "en": "I will go to the market tomorrow.",
+          "highlight": "Θα"
+        },
+        {
+          "el": "Θέλω να μάθω ελληνικά.",
+          "en": "I want to learn Greek.",
+          "highlight": "να"
+        },
+        {
+          "el": "Ας φάμε κάτι πρώτα.",
+          "en": "Let's eat something first.",
+          "highlight": "Ας"
+        },
+        {
+          "el": "Μην αργείς — θα σε περιμένουμε.",
+          "en": "Don't be late — we will wait for you.",
+          "highlight": "Μην"
+        },
+        {
+          "el": "Δεν ξέρω ούτε λέξη γερμανικά.",
+          "en": "I don't know even one word of German.",
+          "highlight": "ούτε"
+        },
+        {
+          "el": "Ήταν κουρασμένος, άρα έφυγε νωρίς.",
+          "en": "He was tired, therefore he left early.",
+          "highlight": "άρα"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which particle do you place before a verb to mark the future tense in Greek?",
-          "options": ["θα", "να", "ας", "μην"],
+          "options": [
+            "θα",
+            "ας",
+            "να",
+            "μην"
+          ],
           "correctIndex": 0,
           "explanation": "Θα is the future/conditional marker in Greek. It is placed directly before the verb: θα πάω (I will go), θα φάμε (we will eat). Να marks the subjunctive mood, ας forms soft imperatives, and μην is a negative particle."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which particle introduces a clarification or paraphrase, meaning 'that is' or 'in other words'?",
-          "options": ["δηλαδή", "άρα", "όμως", "μόνο"],
+          "options": [
+            "δηλαδή",
+            "μόνο",
+            "όμως",
+            "άρα"
+          ],
           "correctIndex": 0,
           "explanation": "Δηλαδή means 'that is / namely / in other words' and is used to rephrase or clarify: Έφυγε, δηλαδή δεν είναι εδώ. (He left, meaning he is not here.) Άρα expresses logical consequence, όμως means 'however', and μόνο means 'only'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'Let's go to the beach!' using the correct Greek particle?",
-          "options": ["Ας πάμε στην παραλία!", "Να πάμε στην παραλία!", "Θα πάμε στην παραλία!", "Μην πάμε στην παραλία!"],
-          "correctIndex": 0,
+          "options": [
+            "Να πάμε στην παραλία!",
+            "Μην πάμε στην παραλία!",
+            "Ας πάμε στην παραλία!",
+            "Θα πάμε στην παραλία!"
+          ],
+          "correctIndex": 2,
           "explanation": "Ας + first person plural verb forms a suggestion or soft imperative meaning 'let's'. Ας πάμε! = Let's go! Να πάμε would be a subjunctive clause (that we go), θα πάμε states a future fact (we will go), and μην πάμε means 'let's not go' (negative)."
         }
       ]
@@ -50,33 +91,72 @@
       "explanation": "Coordinating conjunctions link two elements of equal grammatical rank: two nouns, two adjective phrases, two main clauses, etc. The core set in Greek: και (and — the most common conjunction, also used in the sense of 'even' in some contexts), αλλά (but — general contrast), μα (but — more colloquial/emphatic than αλλά), ή (or — for alternatives), ούτε...ούτε (neither...nor — requires δεν before the verb in the first clause), είτε...είτε (either...or — expresses a choice between alternatives without preference), ενώ (while / whereas — used to contrast two simultaneous or opposing situations), όμως (however — typically placed after the first word or phrase of the second clause, not at the beginning), παρόλο που (although / even though — concessive; introduces a clause that contrasts with what is expected), and ακόμα και (even — for emphasis, meaning 'even X'). Position matters: και and αλλά appear between the two elements; όμως is postpositive (after the first word); ενώ begins a new clause. Παρόλο που, though semantically concessive, is treated here as a coordinator between two contrasted ideas at B1 level.",
       "tip": "A common error is placing όμως at the very start of a sentence. Instead, put it after the first stressed word: Εγώ όμως δεν συμφωνώ. (I, however, don't agree.) Also note that ούτε...ούτε requires δεν before the main verb: Δεν τρώω ούτε κρέας ούτε ψάρι. (I eat neither meat nor fish.)",
       "examples": [
-        { "el": "Μου αρέσει η μουσική και ο χορός.", "en": "I like music and dancing.", "highlight": "και" },
-        { "el": "Ήθελα να έρθω, αλλά ήμουν κουρασμένος.", "en": "I wanted to come, but I was tired.", "highlight": "αλλά" },
-        { "el": "Θες τσάι ή καφέ;", "en": "Do you want tea or coffee?", "highlight": "ή" },
-        { "el": "Είτε έρθεις είτε όχι, θα διασκεδάσουμε.", "en": "Whether you come or not, we will have fun.", "highlight": "Είτε...είτε" },
-        { "el": "Εγώ όμως πιστεύω ότι έχεις δίκιο.", "en": "I, however, believe that you are right.", "highlight": "όμως" },
-        { "el": "Ακόμα και ο δάσκαλος δεν ήξερε την απάντηση.", "en": "Even the teacher didn't know the answer.", "highlight": "Ακόμα και" }
+        {
+          "el": "Μου αρέσει η μουσική και ο χορός.",
+          "en": "I like music and dancing.",
+          "highlight": "και"
+        },
+        {
+          "el": "Ήθελα να έρθω, αλλά ήμουν κουρασμένος.",
+          "en": "I wanted to come, but I was tired.",
+          "highlight": "αλλά"
+        },
+        {
+          "el": "Θες τσάι ή καφέ;",
+          "en": "Do you want tea or coffee?",
+          "highlight": "ή"
+        },
+        {
+          "el": "Είτε έρθεις είτε όχι, θα διασκεδάσουμε.",
+          "en": "Whether you come or not, we will have fun.",
+          "highlight": "Είτε...είτε"
+        },
+        {
+          "el": "Εγώ όμως πιστεύω ότι έχεις δίκιο.",
+          "en": "I, however, believe that you are right.",
+          "highlight": "όμως"
+        },
+        {
+          "el": "Ακόμα και ο δάσκαλος δεν ήξερε την απάντηση.",
+          "en": "Even the teacher didn't know the answer.",
+          "highlight": "Ακόμα και"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which conjunction pair is used for 'neither...nor' in Greek?",
-          "options": ["ούτε...ούτε", "είτε...είτε", "και...και", "ή...ή"],
-          "correctIndex": 0,
+          "options": [
+            "ή...ή",
+            "είτε...είτε",
+            "ούτε...ούτε",
+            "και...και"
+          ],
+          "correctIndex": 2,
           "explanation": "Ούτε...ούτε means 'neither...nor'. It requires δεν before the main verb: Δεν μιλά ούτε ισπανικά ούτε γαλλικά. (She speaks neither Spanish nor French.) Είτε...είτε means 'either...or'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Where in a sentence is the conjunction όμως typically placed?",
-          "options": ["After the first word or phrase of the clause", "Always at the very beginning of the sentence", "At the end of the sentence", "Between the subject and verb only"],
-          "correctIndex": 0,
+          "options": [
+            "Between the subject and verb only",
+            "Always at the very beginning of the sentence",
+            "At the end of the sentence",
+            "After the first word or phrase of the clause"
+          ],
+          "correctIndex": 3,
           "explanation": "Όμως is postpositive — it follows the first stressed element in the clause rather than opening it: Εγώ όμως δεν ήρθα. (I, however, didn't come.) Placing it at the very start is unnatural in standard Greek."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses ενώ to express a contrast?",
-          "options": ["Εγώ μελετώ, ενώ αυτός παίζει.", "Εγώ μελετώ ενώ και αυτός παίζει.", "Ενώ εγώ, αυτός παίζει μελετώ.", "Εγώ ενώ μελετώ αλλά αυτός παίζει."],
-          "correctIndex": 0,
+          "options": [
+            "Εγώ μελετώ ενώ και αυτός παίζει.",
+            "Εγώ μελετώ, ενώ αυτός παίζει.",
+            "Ενώ εγώ, αυτός παίζει μελετώ.",
+            "Εγώ ενώ μελετώ αλλά αυτός παίζει."
+          ],
+          "correctIndex": 1,
           "explanation": "Ενώ (while / whereas) introduces a contrasting clause. It is placed at the boundary between the two clauses: Εγώ μελετώ, ενώ αυτός παίζει. (I study, while he plays.) The other options have incorrect word order or redundant conjunctions."
         }
       ]
@@ -87,33 +167,72 @@
       "explanation": "Subordinating conjunctions introduce a dependent (subordinate) clause that cannot stand alone. Greek subordinating conjunctions: ότι and πως both mean 'that' and introduce indirect statements after verbs of saying, thinking, and knowing (Νομίζω ότι έχεις δίκιο. — I think that you are right. Both ότι and πως are interchangeable here, with πως being slightly more colloquial). Γιατί (because) introduces a causal clause. Αν (if) introduces a conditional clause. Όταν (when) introduces a temporal clause; note it takes indicative, unlike the English confusion with 'if'. Ενώ (while) introduces a temporal or concessive clause with ongoing action. Αφού (since / after — causal or temporal; context distinguishes) introduces either a reason or a sequence. Μόλις (as soon as) introduces a punctual temporal clause. Μέχρι να (until — note: να marks subjunctive, so the dependent verb is in subjunctive mood) introduces a temporal boundary. Για να (in order to — purpose clause; verb following is subjunctive) expresses purpose. Παρά (rather than / instead of — used in comparisons of preference, typically with subjunctive: παρά να...) expresses a preference against. Εφόσον (since / provided that — used for conditions that are assumed to be true or for causal explanation in more formal registers) introduces a conditional or causal clause.",
       "tip": "The distinction between αν and όταν is important: αν = if (uncertain condition), όταν = when (certain future event or recurring situation). Αν έρθεις, θα σε δω. (If you come, I will see you — uncertain.) Όταν έρθεις, θα σε δω. (When you come, I will see you — expected.) Purpose clauses with για να always require the subjunctive: Σπουδάζω για να μάθω. (I study in order to learn.)",
       "examples": [
-        { "el": "Νομίζω ότι έχεις δίκιο.", "en": "I think that you are right.", "highlight": "ότι" },
-        { "el": "Δεν ήρθε γιατί ήταν άρρωστος.", "en": "He didn't come because he was sick.", "highlight": "γιατί" },
-        { "el": "Αν έχεις χρόνο, ελά να τα πούμε.", "en": "If you have time, come and let's talk.", "highlight": "Αν" },
-        { "el": "Όταν φτάσεις, τηλεφώνησέ μου.", "en": "When you arrive, call me.", "highlight": "Όταν" },
-        { "el": "Μελετώ για να περάσω τις εξετάσεις.", "en": "I study in order to pass the exams.", "highlight": "για να" },
-        { "el": "Μόλις τελειώσει, θα σε ενημερώσω.", "en": "As soon as it finishes, I will let you know.", "highlight": "Μόλις" }
+        {
+          "el": "Νομίζω ότι έχεις δίκιο.",
+          "en": "I think that you are right.",
+          "highlight": "ότι"
+        },
+        {
+          "el": "Δεν ήρθε γιατί ήταν άρρωστος.",
+          "en": "He didn't come because he was sick.",
+          "highlight": "γιατί"
+        },
+        {
+          "el": "Αν έχεις χρόνο, ελά να τα πούμε.",
+          "en": "If you have time, come and let's talk.",
+          "highlight": "Αν"
+        },
+        {
+          "el": "Όταν φτάσεις, τηλεφώνησέ μου.",
+          "en": "When you arrive, call me.",
+          "highlight": "Όταν"
+        },
+        {
+          "el": "Μελετώ για να περάσω τις εξετάσεις.",
+          "en": "I study in order to pass the exams.",
+          "highlight": "για να"
+        },
+        {
+          "el": "Μόλις τελειώσει, θα σε ενημερώσω.",
+          "en": "As soon as it finishes, I will let you know.",
+          "highlight": "Μόλις"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which conjunction is used for purpose clauses meaning 'in order to'?",
-          "options": ["για να", "μόλις", "αφού", "εφόσον"],
-          "correctIndex": 0,
+          "options": [
+            "αφού",
+            "για να",
+            "εφόσον",
+            "μόλις"
+          ],
+          "correctIndex": 1,
           "explanation": "Για να introduces a purpose clause and is always followed by the subjunctive: Πηγαίνω στο γυμναστήριο για να γυμναστώ. (I go to the gym in order to exercise.) Μόλις = as soon as, αφού = since/after, εφόσον = since/provided that."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between αν and όταν in Greek?",
-          "options": ["Αν means 'if' (uncertain condition); όταν means 'when' (certain or recurring event)", "Αν means 'when' (certain event); όταν means 'if' (uncertain condition)", "They are fully interchangeable", "Αν is only used in past tense; όταν only in future tense"],
+          "options": [
+            "Αν means 'if' (uncertain condition); όταν means 'when' (certain or recurring event)",
+            "They are fully interchangeable",
+            "Αν is only used in past tense; όταν only in future tense",
+            "Αν means 'when' (certain event); όταν means 'if' (uncertain condition)"
+          ],
           "correctIndex": 0,
           "explanation": "Αν introduces a conditional clause where the outcome is uncertain: Αν έρθεις, θα χαρώ. (If you come, I will be happy.) Όταν introduces a temporal clause where the event is expected: Όταν έρθεις, θα φάμε. (When you come, we will eat.) They are not interchangeable."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses μέχρι να to mean 'I will wait until he arrives'?",
-          "options": ["Θα περιμένω μέχρι να έρθει.", "Θα περιμένω μέχρι να ήρθε.", "Θα περιμένω αφού να έρθει.", "Θα περιμένω μέχρι ότι έρθει."],
-          "correctIndex": 0,
+          "options": [
+            "Θα περιμένω μέχρι ότι έρθει.",
+            "Θα περιμένω αφού να έρθει.",
+            "Θα περιμένω μέχρι να έρθει.",
+            "Θα περιμένω μέχρι να ήρθε."
+          ],
+          "correctIndex": 2,
           "explanation": "Μέχρι να requires the subjunctive form of the verb. Θα περιμένω μέχρι να έρθει. (I will wait until he comes.) The verb έρθει is the subjunctive/aorist stem form. Using ήρθε (past indicative) or combining with ότι is incorrect."
         }
       ]

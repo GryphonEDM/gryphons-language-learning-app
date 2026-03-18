@@ -4,7 +4,9 @@
   "nameFr": "Avoir et être",
   "icon": "⚡",
   "tier": "A1",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -48,22 +50,34 @@
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I am hungry' in French?",
-          "options": ["Je suis faim.", "J'ai faim.", "J'ai chaud."],
-          "correctIndex": 1,
+          "options": [
+            "J'ai chaud.",
+            "Je suis faim.",
+            "J'ai faim."
+          ],
+          "correctIndex": 2,
           "explanation": "Avoir is used for hunger: j'ai faim, not je suis faim."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence means 'She is twenty years old'?",
-          "options": ["Elle est vingt ans.", "Elle a vingt ans.", "Elle sont vingt ans."],
-          "correctIndex": 1,
+          "options": [
+            "Elle est vingt ans.",
+            "Elle sont vingt ans.",
+            "Elle a vingt ans."
+          ],
+          "correctIndex": 2,
           "explanation": "Age in French uses avoir: elle a vingt ans."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'You (tu) are thirsty' in French?",
-          "options": ["Tu es soif.", "Tu as soif.", "Tu as froid."],
-          "correctIndex": 1,
+          "options": [
+            "Tu as froid.",
+            "Tu es soif.",
+            "Tu as soif."
+          ],
+          "correctIndex": 2,
           "explanation": "Avoir soif means to be thirsty: tu as soif."
         },
         {
@@ -76,8 +90,12 @@
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct passé composé of 'I ate'?",
-          "options": ["Je suis mangé.", "J'ai mangé.", "J'avais mangé."],
-          "correctIndex": 1,
+          "options": [
+            "J'avais mangé.",
+            "Je suis mangé.",
+            "J'ai mangé."
+          ],
+          "correctIndex": 2,
           "explanation": "Manger uses avoir as its auxiliary: j'ai mangé."
         },
         {
@@ -90,8 +108,12 @@
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'He is afraid' in French?",
-          "options": ["Il est peur.", "Il a peur.", "Il ont peur."],
-          "correctIndex": 1,
+          "options": [
+            "Il est peur.",
+            "Il ont peur.",
+            "Il a peur."
+          ],
+          "correctIndex": 2,
           "explanation": "Avoir peur means to be afraid: il a peur."
         },
         {
@@ -144,15 +166,23 @@
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She is a teacher' in French?",
-          "options": ["Elle est une professeure.", "Elle est professeure.", "Elle a professeure."],
+          "options": [
+            "Elle est une professeure.",
+            "Elle est professeure.",
+            "Elle a professeure."
+          ],
           "correctIndex": 1,
           "explanation": "Professions after être take no article: elle est professeure."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 'c'est'?",
-          "options": ["C'est grand.", "C'est Marie.", "C'est médecin."],
-          "correctIndex": 1,
+          "options": [
+            "C'est Marie.",
+            "C'est grand.",
+            "C'est médecin."
+          ],
+          "correctIndex": 0,
           "explanation": "C'est is used before a proper name: c'est Marie. Before an adjective alone, use il/elle est."
         },
         {
@@ -165,8 +195,12 @@
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I went to the store' using passé composé?",
-          "options": ["J'ai allé au magasin.", "Je suis allé au magasin.", "J'étais allé au magasin."],
-          "correctIndex": 1,
+          "options": [
+            "Je suis allé au magasin.",
+            "J'étais allé au magasin.",
+            "J'ai allé au magasin."
+          ],
+          "correctIndex": 0,
           "explanation": "Aller uses être as its auxiliary: je suis allé(e) au magasin."
         },
         {
@@ -179,14 +213,22 @@
         {
           "type": "multiple-choice",
           "prompt": "Which is correct for 'He is tall'?",
-          "options": ["C'est grand.", "Il est grand.", "Il a grand."],
+          "options": [
+            "C'est grand.",
+            "Il est grand.",
+            "Il a grand."
+          ],
           "correctIndex": 1,
           "explanation": "Il est is used before an adjective alone: il est grand."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'We are in Lyon'?",
-          "options": ["Nous avons à Lyon.", "Nous sommes à Lyon.", "Nous êtes à Lyon."],
+          "options": [
+            "Nous êtes à Lyon.",
+            "Nous sommes à Lyon.",
+            "Nous avons à Lyon."
+          ],
           "correctIndex": 1,
           "explanation": "Être is used for location: nous sommes à Lyon."
         },

@@ -4,7 +4,9 @@
   "nameFr": "Le comparatif et le superlatif",
   "icon": "📊",
   "tier": "B1",
-  "prerequisites": ["adjectives"],
+  "prerequisites": [
+    "adjectives"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,19 +15,47 @@
       "explanation": "French has three comparative structures for adjectives: 'plus + adjective + que' (more...than), 'moins + adjective + que' (less...than), and 'aussi + adjective + que' (as...as). The adjective must still agree in gender and number with the noun it describes — Marie est plus grande que Pierre. For adverbs use the same structure without agreement: il parle plus vite que moi. For nouns use 'plus de / moins de / autant de + noun + que': j'ai plus d'argent que toi, elle a autant d'amis que moi. For verbs, place 'plus / moins' after the verb: il travaille plus que moi. Two key irregular comparatives: 'bon' becomes 'meilleur(e)' (never 'plus bon'), and 'mauvais' becomes 'pire' (never 'plus mauvais'). The adverb 'bien' becomes 'mieux' in comparisons: il parle mieux que moi.",
       "tip": "Never say 'plus bon' or 'plus mauvais' — use 'meilleur' and 'pire' instead. Also remember that 'meilleur' is an adjective and must agree: elle est meilleure que lui, while 'mieux' is an adverb and never changes.",
       "examples": [
-        { "fr": "Marie est plus grande que Pierre.", "en": "Marie is taller than Pierre.", "highlight": "plus grande que" },
-        { "fr": "Ce livre est moins intéressant que l'autre.", "en": "This book is less interesting than the other one.", "highlight": "moins intéressant que" },
-        { "fr": "Il est aussi intelligent que son frère.", "en": "He is as intelligent as his brother.", "highlight": "aussi intelligent que" },
-        { "fr": "J'ai plus d'argent que toi.", "en": "I have more money than you.", "highlight": "plus d'argent que" },
-        { "fr": "Elle a autant d'amis que moi.", "en": "She has as many friends as me.", "highlight": "autant d'amis que" },
-        { "fr": "Il parle mieux que moi.", "en": "He speaks better than me.", "highlight": "mieux que" }
+        {
+          "fr": "Marie est plus grande que Pierre.",
+          "en": "Marie is taller than Pierre.",
+          "highlight": "plus grande que"
+        },
+        {
+          "fr": "Ce livre est moins intéressant que l'autre.",
+          "en": "This book is less interesting than the other one.",
+          "highlight": "moins intéressant que"
+        },
+        {
+          "fr": "Il est aussi intelligent que son frère.",
+          "en": "He is as intelligent as his brother.",
+          "highlight": "aussi intelligent que"
+        },
+        {
+          "fr": "J'ai plus d'argent que toi.",
+          "en": "I have more money than you.",
+          "highlight": "plus d'argent que"
+        },
+        {
+          "fr": "Elle a autant d'amis que moi.",
+          "en": "She has as many friends as me.",
+          "highlight": "autant d'amis que"
+        },
+        {
+          "fr": "Il parle mieux que moi.",
+          "en": "He speaks better than me.",
+          "highlight": "mieux que"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "How do you say 'more interesting than' when comparing adjectives?",
-          "options": ["aussi intéressant que", "moins intéressant que", "plus intéressant que"],
-          "correctIndex": 2,
+          "options": [
+            "plus intéressant que",
+            "aussi intéressant que",
+            "moins intéressant que"
+          ],
+          "correctIndex": 0,
           "explanation": "'plus + adjective + que' expresses 'more...than': plus intéressant que."
         },
         {
@@ -33,23 +63,31 @@
           "question": "Which sentence correctly uses a comparative of equality?",
           "options": [
             "Elle est plus grande que lui.",
-            "Elle est aussi grande que lui.",
-            "Elle est moins grande que lui."
+            "Elle est moins grande que lui.",
+            "Elle est aussi grande que lui."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "'aussi + adjective + que' means 'as...as', expressing equality: elle est aussi grande que lui."
         },
         {
           "type": "multiple-choice",
           "question": "What is the correct comparative of 'bon' (good)?",
-          "options": ["plus bon", "meilleur", "aussi bon"],
-          "correctIndex": 1,
+          "options": [
+            "meilleur",
+            "aussi bon",
+            "plus bon"
+          ],
+          "correctIndex": 0,
           "explanation": "'bon' has an irregular comparative: 'meilleur'. You should never say 'plus bon' in French."
         },
         {
           "type": "fill-blank",
           "question": "Complete: 'Il parle ___ que moi.' (He speaks better than me — use the adverb form)",
-          "options": ["plus bien", "mieux", "meilleur"],
+          "options": [
+            "plus bien",
+            "mieux",
+            "meilleur"
+          ],
           "correctIndex": 1,
           "explanation": "'bien' has the irregular comparative 'mieux' (adverb). 'Meilleur' is an adjective, not used here."
         },
@@ -57,17 +95,21 @@
           "type": "multiple-choice",
           "question": "How do you say 'I have less time than him'?",
           "options": [
+            "J'ai plus de temps que lui.",
             "J'ai moins de temps que lui.",
-            "J'ai autant de temps que lui.",
-            "J'ai plus de temps que lui."
+            "J'ai autant de temps que lui."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "For noun comparisons meaning 'less...than', use 'moins de + noun + que': j'ai moins de temps que lui."
         },
         {
           "type": "fill-blank",
           "question": "Complete: 'Cette robe est ___ chère ___ l'autre.' (This dress is less expensive than the other one.)",
-          "options": ["plus … que", "moins … que", "aussi … que"],
+          "options": [
+            "plus … que",
+            "moins … que",
+            "aussi … que"
+          ],
           "correctIndex": 1,
           "explanation": "'moins + adjective + que' expresses 'less...than': cette robe est moins chère que l'autre."
         },
@@ -75,11 +117,11 @@
           "type": "multiple-choice",
           "question": "Which is correct for 'She works more than him'?",
           "options": [
+            "Elle travaille autant que lui.",
             "Elle travaille plus que lui.",
-            "Elle travaille mieux que lui.",
-            "Elle travaille autant que lui."
+            "Elle travaille mieux que lui."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "For verb comparisons, place 'plus' after the verb: elle travaille plus que lui (she works more than him)."
         },
         {
@@ -87,10 +129,10 @@
           "question": "The adjective agreement in 'Marie est plus grande que Pierre' — why does 'grande' have an -e?",
           "options": [
             "Because 'que' requires the feminine form.",
-            "Because 'Marie' is feminine, so the adjective must agree.",
-            "Because comparative adjectives always end in -e."
+            "Because comparative adjectives always end in -e.",
+            "Because 'Marie' is feminine, so the adjective must agree."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "Adjectives must always agree with the noun/subject they describe. Marie is feminine, so 'grand' becomes 'grande'."
         }
       ]
@@ -101,43 +143,79 @@
       "explanation": "The superlative expresses the highest or lowest degree. For adjectives, use 'le/la/les + plus/moins + adjective': c'est le plus grand bâtiment de la ville (it's the tallest building in the city), elle est la plus intelligente de la classe (she is the smartest in the class). The article (le/la/les) and the adjective both agree with the noun. If the adjective normally follows the noun, the article is repeated: c'est le bâtiment le plus grand. After a superlative, 'in' translates as 'de': le meilleur restaurant de Paris (the best restaurant in Paris). Irregular superlatives: 'bon' becomes 'le meilleur / la meilleure' (the best), 'mauvais' becomes 'le pire / la pire' (the worst), and the adverb 'bien' becomes 'le mieux' (the best). For nouns use 'le plus de / le moins de': c'est lui qui a le plus d'expérience. For verbs: c'est elle qui travaille le plus (she works the most).",
       "tip": "Remember that after a superlative, French uses 'de' where English uses 'in': le plus grand bâtiment DE la ville, le meilleur restaurant DE Paris. Also, 'le meilleur' (adjective) and 'le mieux' (adverb) are both irregular — choose based on whether you are describing a noun or a verb.",
       "examples": [
-        { "fr": "C'est le plus grand bâtiment de la ville.", "en": "It's the tallest building in the city.", "highlight": "le plus grand … de" },
-        { "fr": "Elle est la plus intelligente de la classe.", "en": "She is the smartest in the class.", "highlight": "la plus intelligente de" },
-        { "fr": "C'est le bâtiment le plus grand.", "en": "It's the tallest building. (adjective follows noun)", "highlight": "le plus grand" },
-        { "fr": "C'est le meilleur restaurant de Paris.", "en": "It's the best restaurant in Paris.", "highlight": "le meilleur … de" },
-        { "fr": "C'est lui qui a le plus d'expérience.", "en": "He is the one who has the most experience.", "highlight": "le plus d'expérience" },
-        { "fr": "C'est elle qui travaille le plus.", "en": "She is the one who works the most.", "highlight": "travaille le plus" }
+        {
+          "fr": "C'est le plus grand bâtiment de la ville.",
+          "en": "It's the tallest building in the city.",
+          "highlight": "le plus grand … de"
+        },
+        {
+          "fr": "Elle est la plus intelligente de la classe.",
+          "en": "She is the smartest in the class.",
+          "highlight": "la plus intelligente de"
+        },
+        {
+          "fr": "C'est le bâtiment le plus grand.",
+          "en": "It's the tallest building. (adjective follows noun)",
+          "highlight": "le plus grand"
+        },
+        {
+          "fr": "C'est le meilleur restaurant de Paris.",
+          "en": "It's the best restaurant in Paris.",
+          "highlight": "le meilleur … de"
+        },
+        {
+          "fr": "C'est lui qui a le plus d'expérience.",
+          "en": "He is the one who has the most experience.",
+          "highlight": "le plus d'expérience"
+        },
+        {
+          "fr": "C'est elle qui travaille le plus.",
+          "en": "She is the one who works the most.",
+          "highlight": "travaille le plus"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "How do you say 'the most interesting book' (un livre intéressant)?",
           "options": [
-            "le livre plus intéressant",
             "le livre le plus intéressant",
+            "le livre plus intéressant",
             "le livre aussi intéressant"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "When an adjective follows the noun, the definite article is repeated: le livre le plus intéressant."
         },
         {
           "type": "multiple-choice",
           "question": "What word follows the superlative to mean 'in' (as in 'the best in France')?",
-          "options": ["en", "dans", "de"],
+          "options": [
+            "en",
+            "dans",
+            "de"
+          ],
           "correctIndex": 2,
           "explanation": "After a superlative, 'in' is expressed with 'de' in French: le meilleur de France."
         },
         {
           "type": "multiple-choice",
           "question": "What is the superlative of 'bon' (good)?",
-          "options": ["le plus bon", "le meilleur", "le mieux"],
-          "correctIndex": 1,
+          "options": [
+            "le mieux",
+            "le plus bon",
+            "le meilleur"
+          ],
+          "correctIndex": 2,
           "explanation": "'bon' has the irregular superlative 'le meilleur' (adjective). Never say 'le plus bon'."
         },
         {
           "type": "fill-blank",
           "question": "Complete: 'Elle est ___ de toute l'équipe.' (She is the best [female] on the whole team.)",
-          "options": ["le meilleur", "la meilleure", "le mieux"],
+          "options": [
+            "le meilleur",
+            "la meilleure",
+            "le mieux"
+          ],
           "correctIndex": 1,
           "explanation": "Since 'elle' is feminine, the irregular superlative 'meilleur' must agree: la meilleure."
         },
@@ -146,16 +224,20 @@
           "question": "Which sentence correctly expresses 'the worst film of the year'?",
           "options": [
             "le film le plus mauvais de l'année",
-            "le film le pire de l'année",
-            "le film moins mauvais de l'année"
+            "le film moins mauvais de l'année",
+            "le film le pire de l'année"
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "'mauvais' has the irregular superlative 'pire': le film le pire de l'année (or le pire film de l'année)."
         },
         {
           "type": "fill-blank",
           "question": "Complete: 'C'est le restaurant ___ de Paris.' (It's the best restaurant in Paris.)",
-          "options": ["le plus bon", "le mieux", "le meilleur"],
+          "options": [
+            "le plus bon",
+            "le mieux",
+            "le meilleur"
+          ],
           "correctIndex": 2,
           "explanation": "The superlative of 'bon' is 'le meilleur' (irregular adjective): c'est le meilleur restaurant de Paris."
         },
@@ -164,21 +246,21 @@
           "question": "How do you say 'She sings the best' (using the verb superlative)?",
           "options": [
             "C'est elle qui chante le meilleur.",
-            "C'est elle qui chante le mieux.",
-            "C'est elle qui chante la meilleure."
+            "C'est elle qui chante la meilleure.",
+            "C'est elle qui chante le mieux."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "For verb superlatives with 'bien', use 'le mieux' (adverb, invariable): c'est elle qui chante le mieux."
         },
         {
           "type": "multiple-choice",
           "question": "Which sentence correctly uses a noun superlative?",
           "options": [
-            "C'est lui qui a le plus de patience.",
             "C'est lui qui a le plus patience.",
+            "C'est lui qui a le plus de patience.",
             "C'est lui qui a plus de patience."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "For noun superlatives use 'le plus de + noun': c'est lui qui a le plus de patience (he has the most patience)."
         }
       ]

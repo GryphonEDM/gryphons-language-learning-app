@@ -4,7 +4,9 @@
   "nameJa": "可能形",
   "icon": "💪",
   "tier": "B1",
-  "prerequisites": ["verb-groups"],
+  "prerequisites": [
+    "verb-groups"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,30 +15,61 @@
       "explanation": "To make the potential form of る-verbs, drop the final る and add られる. For example: 食べる (taberu, to eat) → 食べられる (taberareru, can eat), 見る (miru, to see) → 見られる (mirareru, can see). In casual speech, the ら is often dropped, giving 食べれる (tabereru) — this is called 'ら抜き言葉' (ra-nuki kotoba). While very common in everyday conversation, the full られる form is considered more grammatically correct. The potential form conjugates as a る-verb itself: 食べられます (taberaremasu, polite), 食べられない (taberarenai, negative). The object particle を often changes to が with the potential form: ピザを食べる → ピザが食べられる.",
       "tip": "Remember: る-verb potential = stem + られる. In casual speech, most Japanese speakers say 食べれる instead of 食べられる. Both are widely understood, but use the full form in formal writing. Also note that が replaces を with potential verbs: 日本語が話せる (I can speak Japanese).",
       "examples": [
-        { "ja": "この漢字が読めますか？", "en": "Can you read this kanji? (polite)", "highlight": "読めます" },
-        { "ja": "辛い物が食べられない。", "en": "I can't eat spicy food.", "highlight": "食べられない" },
-        { "ja": "朝早く起きられる。", "en": "I can wake up early in the morning.", "highlight": "起きられる" },
-        { "ja": "ここから富士山が見られる。", "en": "You can see Mt. Fuji from here.", "highlight": "見られる" }
+        {
+          "ja": "この漢字が読めますか？",
+          "en": "Can you read this kanji? (polite)",
+          "highlight": "読めます"
+        },
+        {
+          "ja": "辛い物が食べられない。",
+          "en": "I can't eat spicy food.",
+          "highlight": "食べられない"
+        },
+        {
+          "ja": "朝早く起きられる。",
+          "en": "I can wake up early in the morning.",
+          "highlight": "起きられる"
+        },
+        {
+          "ja": "ここから富士山が見られる。",
+          "en": "You can see Mt. Fuji from here.",
+          "highlight": "見られる"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you form the potential of る-verbs?",
-          "options": ["Drop る, add れる", "Drop る, add られる", "Drop る, add える", "Add られる after る"],
-          "correctIndex": 1,
+          "options": [
+            "Drop る, add られる",
+            "Drop る, add える",
+            "Add られる after る",
+            "Drop る, add れる"
+          ],
+          "correctIndex": 0,
           "explanation": "For る-verbs, drop the final る and add られる: 食べる → 食べられる. The shortened form (食べれる) is common in casual speech but られる is the standard form."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the potential form of 見る (miru, to see)?",
-          "options": ["見える", "見られる", "見れる", "見せる"],
+          "options": [
+            "見える",
+            "見られる",
+            "見せる",
+            "見れる"
+          ],
           "correctIndex": 1,
           "explanation": "見る → 見られる (mirareru). Note: 見える (mieru) is a separate verb meaning 'to be visible' — it's not the potential form of 見る, though their meanings overlap."
         },
         {
           "type": "multiple-choice",
           "prompt": "What particle often replaces を when using the potential form?",
-          "options": ["に", "で", "が", "は"],
+          "options": [
+            "に",
+            "は",
+            "が",
+            "で"
+          ],
           "correctIndex": 2,
           "explanation": "With the potential form, the object particle を often changes to が: ピザを食べる (eat pizza) → ピザが食べられる (can eat pizza). Both を and が are used in practice, but が is more traditional."
         }
@@ -48,31 +81,62 @@
       "explanation": "For う-verbs, change the final -u syllable to the corresponding -e syllable, then add る. The mappings: う→える, く→ける, ぐ→げる, す→せる, つ→てる, ぬ→ねる, ぶ→べる, む→める, る→れる. Examples: 書く (kaku, to write) → 書ける (kakeru, can write), 読む (yomu, to read) → 読める (yomeru, can read), 話す (hanasu, to speak) → 話せる (hanaseru, can speak), 泳ぐ (oyogu, to swim) → 泳げる (oyogeru, can swim). Irregular verbs: する (suru, to do) → できる (dekiru, can do), 来る (kuru, to come) → 来られる (korareru, can come). The resulting potential form always conjugates as a る-verb.",
       "tip": "For う-verbs, think of it as changing from the う-row to the え-row: く→け, む→め, す→せ, etc., then adding る. The する → できる change is completely irregular — just memorize it. For 来る, the potential is 来られる (korareru), and colloquially 来れる (koreru).",
       "examples": [
-        { "ja": "日本語が話せますか？", "en": "Can you speak Japanese? (polite)", "highlight": "話せます" },
-        { "ja": "明日までにレポートが書ける。", "en": "I can write the report by tomorrow.", "highlight": "書ける" },
-        { "ja": "50メートル泳げる。", "en": "I can swim 50 meters.", "highlight": "泳げる" },
-        { "ja": "パーティーに来られますか？", "en": "Can you come to the party? (polite)", "highlight": "来られます" }
+        {
+          "ja": "日本語が話せますか？",
+          "en": "Can you speak Japanese? (polite)",
+          "highlight": "話せます"
+        },
+        {
+          "ja": "明日までにレポートが書ける。",
+          "en": "I can write the report by tomorrow.",
+          "highlight": "書ける"
+        },
+        {
+          "ja": "50メートル泳げる。",
+          "en": "I can swim 50 meters.",
+          "highlight": "泳げる"
+        },
+        {
+          "ja": "パーティーに来られますか？",
+          "en": "Can you come to the party? (polite)",
+          "highlight": "来られます"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the potential form of 飲む (nomu, to drink)?",
-          "options": ["飲まれる", "飲める", "飲ませる", "飲みれる"],
+          "options": [
+            "飲まれる",
+            "飲める",
+            "飲ませる",
+            "飲みれる"
+          ],
           "correctIndex": 1,
           "explanation": "飲む is an う-verb. Change む to め, then add る: 飲む → 飲める (nomeru, can drink). The え-row mapping: む → め."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the potential form of する (to do)?",
-          "options": ["される", "すれる", "できる", "させる"],
-          "correctIndex": 2,
+          "options": [
+            "できる",
+            "される",
+            "すれる",
+            "させる"
+          ],
+          "correctIndex": 0,
           "explanation": "する has a completely irregular potential form: できる (dekiru, can do). This must be memorized — it doesn't follow any pattern."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the potential form of 買う (kau, to buy)?",
-          "options": ["買われる", "買える", "買いれる", "買おえる"],
-          "correctIndex": 1,
+          "options": [
+            "買おえる",
+            "買いれる",
+            "買われる",
+            "買える"
+          ],
+          "correctIndex": 3,
           "explanation": "買う is an う-verb ending in う. Change う to え, add る: 買う → 買える (kaeru, can buy)."
         }
       ]
@@ -83,30 +147,61 @@
       "explanation": "できる (dekiru) is extremely versatile. As the potential of する, it means 'can do': 料理ができる (ryouri ga dekiru, I can cook). It also means 'to be possible' or 'to be completed': 準備ができた (junbi ga dekita, preparations are done). With nouns, use [noun] + ができる: 日本語ができる (nihongo ga dekiru, I can do Japanese / I know Japanese). With verbs, use [verb dictionary form] + ことができる for a more formal potential: 泳ぐことができる (oyogu koto ga dekiru, I am able to swim). The ことができる pattern is more formal and often used in writing, announcements, and official contexts. The direct potential form (泳げる) is more casual and conversational.",
       "tip": "Use [noun] + ができる for abilities/skills: ピアノができる (I can play piano). Use [verb] + ことができる for a formal alternative to the potential form. In everyday speech, the direct potential form (話せる) is preferred over ことができる (話すことができる).",
       "examples": [
-        { "ja": "運転ができますか？", "en": "Can you drive? (lit. can you do driving?)", "highlight": "ができます" },
-        { "ja": "ここで写真を撮ることができます。", "en": "You can take photos here. (formal)", "highlight": "ことができます" },
-        { "ja": "英語ができる人を探しています。", "en": "I'm looking for someone who can speak English.", "highlight": "ができる" },
-        { "ja": "予約ができました。", "en": "The reservation is done / I was able to make a reservation.", "highlight": "ができました" }
+        {
+          "ja": "運転ができますか？",
+          "en": "Can you drive? (lit. can you do driving?)",
+          "highlight": "ができます"
+        },
+        {
+          "ja": "ここで写真を撮ることができます。",
+          "en": "You can take photos here. (formal)",
+          "highlight": "ことができます"
+        },
+        {
+          "ja": "英語ができる人を探しています。",
+          "en": "I'm looking for someone who can speak English.",
+          "highlight": "ができる"
+        },
+        {
+          "ja": "予約ができました。",
+          "en": "The reservation is done / I was able to make a reservation.",
+          "highlight": "ができました"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which pattern is more formal for expressing ability?",
-          "options": ["Direct potential form (e.g., 話せる)", "ことができる (e.g., 話すことができる)", "They are equally formal", "Neither is formal"],
+          "options": [
+            "Neither is formal",
+            "ことができる (e.g., 話すことができる)",
+            "Direct potential form (e.g., 話せる)",
+            "They are equally formal"
+          ],
           "correctIndex": 1,
           "explanation": "The ことができる pattern is more formal and is preferred in written language, announcements, and official contexts. The direct potential form is more casual and conversational."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 料理ができる mean?",
-          "options": ["Cooking is finished", "I can cook", "Both meanings are possible", "I want to cook"],
-          "correctIndex": 2,
+          "options": [
+            "I can cook",
+            "Both meanings are possible",
+            "Cooking is finished",
+            "I want to cook"
+          ],
+          "correctIndex": 1,
           "explanation": "料理ができる can mean both 'I can cook' (ability) and 'the cooking/food is ready' (completion), depending on context. できる carries both the meaning of ability and completion."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I can play piano' using できる?",
-          "options": ["ピアノができる", "ピアノをできる", "ピアノにできる", "ピアノでできる"],
+          "options": [
+            "ピアノができる",
+            "ピアノにできる",
+            "ピアノをできる",
+            "ピアノでできる"
+          ],
           "correctIndex": 0,
           "explanation": "For noun + できる (skill/ability), use が: ピアノができる. The particle が marks the thing you are able to do."
         }
@@ -118,34 +213,60 @@
       "explanation": "The potential form changes the meaning from 'do X' to 'can do X.' Compare: 漢字を書く (kanji wo kaku, I write kanji) vs 漢字が書ける (kanji ga kakeru, I can write kanji). Key differences: 1) The particle often changes from を to が. 2) The potential form cannot take a direct object with を (since the verb becomes intransitive). 3) Some verbs have separate 'ability' verbs that overlap with the potential: 見る (to look) → 見られる (potential) vs 見える (to be visible), 聞く (to listen) → 聞ける (potential) vs 聞こえる (to be audible). 見える/聞こえる describe natural, involuntary perception ('it's visible/audible'), while 見られる/聞ける describe deliberate ability ('I can watch/listen').",
       "tip": "見える vs 見られる: 星が見える (stars are visible — natural state) vs 映画が見られる (I can watch the movie — ability/opportunity). 聞こえる vs 聞ける: 音が聞こえる (I can hear a sound — involuntary) vs 音楽が聞ける (I can listen to music — ability).",
       "examples": [
-        { "ja": "隣の部屋の声が聞こえる。", "en": "I can hear voices from the next room. (involuntary)", "highlight": "聞こえる" },
-        { "ja": "このアプリで音楽が聞ける。", "en": "You can listen to music with this app. (ability)", "highlight": "聞ける" },
-        { "ja": "今日は天気がいいので、山が見える。", "en": "The weather is good today, so the mountains are visible.", "highlight": "見える" },
-        { "ja": "チケットがあれば、コンサートが見られる。", "en": "If you have a ticket, you can watch the concert.", "highlight": "見られる" }
+        {
+          "ja": "隣の部屋の声が聞こえる。",
+          "en": "I can hear voices from the next room. (involuntary)",
+          "highlight": "聞こえる"
+        },
+        {
+          "ja": "このアプリで音楽が聞ける。",
+          "en": "You can listen to music with this app. (ability)",
+          "highlight": "聞ける"
+        },
+        {
+          "ja": "今日は天気がいいので、山が見える。",
+          "en": "The weather is good today, so the mountains are visible.",
+          "highlight": "見える"
+        },
+        {
+          "ja": "チケットがあれば、コンサートが見られる。",
+          "en": "If you have a ticket, you can watch the concert.",
+          "highlight": "見られる"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct sentence: 'I can hear birds singing.'",
-          "options": ["鳥の声が聞ける。", "鳥の声が聞こえる。", "鳥の声を聞く。", "鳥の声が聞かれる。"],
-          "correctIndex": 1,
+          "options": [
+            "鳥の声を聞く。",
+            "鳥の声が聞ける。",
+            "鳥の声が聞こえる。",
+            "鳥の声が聞かれる。"
+          ],
+          "correctIndex": 2,
           "explanation": "聞こえる is used for involuntary/natural hearing — you naturally hear the birds without trying. 聞ける would imply you have the ability or opportunity to listen."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence means 'I can eat sushi'?",
-          "options": ["寿司を食べる。", "寿司が食べられる。", "寿司を食べている。", "寿司が食べたい。"],
-          "correctIndex": 1,
+          "options": [
+            "寿司を食べている。",
+            "寿司を食べる。",
+            "寿司が食べたい。",
+            "寿司が食べられる。"
+          ],
+          "correctIndex": 3,
           "explanation": "寿司が食べられる uses the potential form of 食べる with the particle が, meaning 'I can eat sushi.' 寿司を食べる means 'I eat sushi' (regular), and 寿司が食べたい means 'I want to eat sushi.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between 見える and 見られる?",
           "options": [
-            "見える is casual, 見られる is polite",
+            "見える is past tense, 見られる is present tense",
             "見える means 'visible' (involuntary), 見られる means 'can watch' (ability)",
-            "They are exactly the same",
-            "見える is past tense, 見られる is present tense"
+            "見える is casual, 見られる is polite",
+            "They are exactly the same"
           ],
           "correctIndex": 1,
           "explanation": "見える describes something being naturally visible (involuntary perception), while 見られる is the potential form of 見る expressing ability or opportunity to watch/see something deliberately."

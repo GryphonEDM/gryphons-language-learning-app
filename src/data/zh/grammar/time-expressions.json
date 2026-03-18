@@ -4,7 +4,9 @@
   "nameZh": "时间表达",
   "icon": "⏰",
   "tier": "A2",
-  "prerequisites": ["question-forms"],
+  "prerequisites": [
+    "question-forms"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,20 +15,71 @@
       "explanation": "Chinese has a clear set of time words organized into logical groups. Days: 昨天 (zuótiān, yesterday), 今天 (jīntiān, today), 明天 (míngtiān, tomorrow). Relative time: 现在 (xiànzài, now), 以前 (yǐqián, before/in the past), 以后 (yǐhòu, after/in the future). Parts of the day: 早上 (zǎoshang, morning), 中午 (zhōngwǔ, noon), 下午 (xiàwǔ, afternoon), 晚上 (wǎnshang, evening/night). Notice how 上 means 'upper/first part' and 下 means 'lower/second part' — morning is the upper half, afternoon is the lower half of the day.",
       "tip": "The character 天 (tiān) means 'day' or 'sky'. You can see it in 昨天, 今天, 明天 — just swap the first character to shift between yesterday, today, and tomorrow.",
       "examples": [
-        { "zh": "今天是星期一。", "en": "Today is Monday.", "highlight": "今天" },
-        { "zh": "昨天很冷。", "en": "Yesterday was very cold.", "highlight": "昨天" },
-        { "zh": "明天你有空吗？", "en": "Are you free tomorrow?", "highlight": "明天" },
-        { "zh": "现在是早上八点。", "en": "It is 8:00 in the morning now.", "highlight": "现在" }
+        {
+          "zh": "今天是星期一。",
+          "en": "Today is Monday.",
+          "highlight": "今天"
+        },
+        {
+          "zh": "昨天很冷。",
+          "en": "Yesterday was very cold.",
+          "highlight": "昨天"
+        },
+        {
+          "zh": "明天你有空吗？",
+          "en": "Are you free tomorrow?",
+          "highlight": "明天"
+        },
+        {
+          "zh": "现在是早上八点。",
+          "en": "It is 8:00 in the morning now.",
+          "highlight": "现在"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which word means 'tomorrow'?", "options": ["明天", "昨天", "今天"], "correctIndex": 0, "explanation": "明天 (míngtiān) means 'tomorrow'. 昨天 = yesterday, 今天 = today." },
-        { "type": "matching", "prompt": "Match each time word to its meaning:", "pairs": [
-          { "left": "早上", "right": "morning" },
-          { "left": "中午", "right": "noon" },
-          { "left": "下午", "right": "afternoon" },
-          { "left": "晚上", "right": "evening" }
-        ], "explanation": "早上 = morning, 中午 = noon, 下午 = afternoon, 晚上 = evening/night." },
-        { "type": "fill-blank", "prompt": "___很热。(Yesterday was very hot.)", "acceptedAnswers": ["昨天"], "hint": "The word for 'yesterday' starts with 昨", "explanation": "昨天很热。昨天 (zuótiān) means 'yesterday'." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word means 'tomorrow'?",
+          "options": [
+            "明天",
+            "昨天",
+            "今天"
+          ],
+          "correctIndex": 0,
+          "explanation": "明天 (míngtiān) means 'tomorrow'. 昨天 = yesterday, 今天 = today."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each time word to its meaning:",
+          "pairs": [
+            {
+              "left": "早上",
+              "right": "morning"
+            },
+            {
+              "left": "中午",
+              "right": "noon"
+            },
+            {
+              "left": "下午",
+              "right": "afternoon"
+            },
+            {
+              "left": "晚上",
+              "right": "evening"
+            }
+          ],
+          "explanation": "早上 = morning, 中午 = noon, 下午 = afternoon, 晚上 = evening/night."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___很热。(Yesterday was very hot.)",
+          "acceptedAnswers": [
+            "昨天"
+          ],
+          "hint": "The word for 'yesterday' starts with 昨",
+          "explanation": "昨天很热。昨天 (zuótiān) means 'yesterday'."
+        }
       ]
     },
     {
@@ -35,15 +88,59 @@
       "explanation": "In Chinese, time expressions come BEFORE the verb, typically at the beginning of the sentence or right after the subject. The standard order is: Subject + Time + Verb (+ Object). For example, '我明天去' (I tomorrow go = I will go tomorrow). This is the opposite of English, where time usually goes at the end. Time can also go before the subject for emphasis: '明天我去' (Tomorrow I go). Both positions are correct, but time NEVER goes after the verb the way it does in English.",
       "tip": "Think of Chinese word order as: WHO + WHEN + does WHAT. Time sets the scene before the action happens — the listener knows the time frame before hearing the verb.",
       "examples": [
-        { "zh": "我明天去北京。", "en": "I will go to Beijing tomorrow.", "highlight": "明天" },
-        { "zh": "她昨天买了一本书。", "en": "She bought a book yesterday.", "highlight": "昨天" },
-        { "zh": "我们下午三点开会。", "en": "We will have a meeting at 3 PM.", "highlight": "下午三点" },
-        { "zh": "他现在不在家。", "en": "He is not at home now.", "highlight": "现在" }
+        {
+          "zh": "我明天去北京。",
+          "en": "I will go to Beijing tomorrow.",
+          "highlight": "明天"
+        },
+        {
+          "zh": "她昨天买了一本书。",
+          "en": "She bought a book yesterday.",
+          "highlight": "昨天"
+        },
+        {
+          "zh": "我们下午三点开会。",
+          "en": "We will have a meeting at 3 PM.",
+          "highlight": "下午三点"
+        },
+        {
+          "zh": "他现在不在家。",
+          "en": "He is not at home now.",
+          "highlight": "现在"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Where does the time word go in a Chinese sentence?", "options": ["Before the verb (after the subject or at the start)", "After the verb, like in English", "At the very end of the sentence"], "correctIndex": 0, "explanation": "In Chinese, time expressions come before the verb. The pattern is Subject + Time + Verb (+ Object)." },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly says 'I will go tomorrow'?", "options": ["我明天去。", "我去明天。", "明天去我。"], "correctIndex": 0, "explanation": "我明天去。— Subject (我) + Time (明天) + Verb (去). Time must come before the verb." },
-        { "type": "fill-blank", "prompt": "她___看电影。(She will watch a movie tonight.) — use 晚上", "acceptedAnswers": ["晚上"], "hint": "Place the time word before the verb 看", "explanation": "她晚上看电影。Time (晚上) goes between the subject (她) and the verb (看)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the time word go in a Chinese sentence?",
+          "options": [
+            "Before the verb (after the subject or at the start)",
+            "After the verb, like in English",
+            "At the very end of the sentence"
+          ],
+          "correctIndex": 0,
+          "explanation": "In Chinese, time expressions come before the verb. The pattern is Subject + Time + Verb (+ Object)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I will go tomorrow'?",
+          "options": [
+            "明天去我。",
+            "我去明天。",
+            "我明天去。"
+          ],
+          "correctIndex": 2,
+          "explanation": "我明天去。— Subject (我) + Time (明天) + Verb (去). Time must come before the verb."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "她___看电影。(She will watch a movie tonight.) — use 晚上",
+          "acceptedAnswers": [
+            "晚上"
+          ],
+          "hint": "Place the time word before the verb 看",
+          "explanation": "她晚上看电影。Time (晚上) goes between the subject (她) and the verb (看)."
+        }
       ]
     },
     {
@@ -52,15 +149,59 @@
       "explanation": "To express how long an action has lasted, Chinese uses 了 (le) after the verb, followed by the duration. The pattern is: Verb + 了 + Duration (+ Object). For example, '学了两年' (studied for two years). If there is an object, the duration goes between 了 and the object, or you can repeat the verb: '我学了两年中文' or '我学中文学了两年'. The pattern 从...到... (cóng...dào...) means 'from...to...' and is used for time ranges: '从九点到五点' (from 9 o'clock to 5 o'clock).",
       "tip": "了 after the verb signals that the action has a measured result — here, a duration. Think of it as 'verb + marker + how long'.",
       "examples": [
-        { "zh": "我学了两年中文。", "en": "I have studied Chinese for two years.", "highlight": "学了两年" },
-        { "zh": "他等了三十分钟。", "en": "He waited for thirty minutes.", "highlight": "等了三十分钟" },
-        { "zh": "我从九点工作到五点。", "en": "I work from 9 o'clock to 5 o'clock.", "highlight": "从九点" },
-        { "zh": "她从星期一到星期五上班。", "en": "She works from Monday to Friday.", "highlight": "从星期一到星期五" }
+        {
+          "zh": "我学了两年中文。",
+          "en": "I have studied Chinese for two years.",
+          "highlight": "学了两年"
+        },
+        {
+          "zh": "他等了三十分钟。",
+          "en": "He waited for thirty minutes.",
+          "highlight": "等了三十分钟"
+        },
+        {
+          "zh": "我从九点工作到五点。",
+          "en": "I work from 9 o'clock to 5 o'clock.",
+          "highlight": "从九点"
+        },
+        {
+          "zh": "她从星期一到星期五上班。",
+          "en": "She works from Monday to Friday.",
+          "highlight": "从星期一到星期五"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'I studied for three hours'?", "options": ["我学了三个小时。", "我三个小时学了。", "我了学三个小时。"], "correctIndex": 0, "explanation": "Verb (学) + 了 + Duration (三个小时). The duration follows 了 after the verb." },
-        { "type": "fill-blank", "prompt": "我从八点___六点上课。(I have class from 8 to 6.) — fill in the linking word", "acceptedAnswers": ["到"], "hint": "从...___... means 'from...to...'", "explanation": "从...到... is the 'from...to...' pattern. 从八点到六点 = from 8 to 6." },
-        { "type": "multiple-choice", "prompt": "What does 了 signal in '他住了五年'?", "options": ["The duration of the action (he lived for five years)", "A future plan to live somewhere", "A question about how long he lived"], "correctIndex": 0, "explanation": "Verb + 了 + duration indicates how long an action lasted. 他住了五年 = He lived (there) for five years." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I studied for three hours'?",
+          "options": [
+            "我了学三个小时。",
+            "我三个小时学了。",
+            "我学了三个小时。"
+          ],
+          "correctIndex": 2,
+          "explanation": "Verb (学) + 了 + Duration (三个小时). The duration follows 了 after the verb."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我从八点___六点上课。(I have class from 8 to 6.) — fill in the linking word",
+          "acceptedAnswers": [
+            "到"
+          ],
+          "hint": "从...___... means 'from...to...'",
+          "explanation": "从...到... is the 'from...to...' pattern. 从八点到六点 = from 8 to 6."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 了 signal in '他住了五年'?",
+          "options": [
+            "A future plan to live somewhere",
+            "A question about how long he lived",
+            "The duration of the action (he lived for five years)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Verb + 了 + duration indicates how long an action lasted. 他住了五年 = He lived (there) for five years."
+        }
       ]
     },
     {
@@ -69,20 +210,71 @@
       "explanation": "Frequency words express how often something happens. Common ones include: 每天 (měitiān, every day), 经常 (jīngcháng, often), 有时候 (yǒu shíhou, sometimes), 很少 (hěn shǎo, rarely), 从来不 (cónglái bù, never). Like other time expressions, frequency words go BEFORE the verb: '我每天跑步' (I run every day). 从来不 is a strong negation meaning 'never in one's life': '他从来不喝酒' (He never drinks alcohol). 每 (měi) means 'every' and combines with time nouns: 每天 (every day), 每年 (every year), 每个星期 (every week).",
       "tip": "Frequency words follow the same rule as all time expressions — they go before the verb. Never put them at the end of the sentence.",
       "examples": [
-        { "zh": "我每天早上跑步。", "en": "I run every morning.", "highlight": "每天" },
-        { "zh": "她经常看中国电影。", "en": "She often watches Chinese movies.", "highlight": "经常" },
-        { "zh": "他有时候迟到。", "en": "He is sometimes late.", "highlight": "有时候" },
-        { "zh": "我从来不吃辣的。", "en": "I never eat spicy food.", "highlight": "从来不" }
+        {
+          "zh": "我每天早上跑步。",
+          "en": "I run every morning.",
+          "highlight": "每天"
+        },
+        {
+          "zh": "她经常看中国电影。",
+          "en": "She often watches Chinese movies.",
+          "highlight": "经常"
+        },
+        {
+          "zh": "他有时候迟到。",
+          "en": "He is sometimes late.",
+          "highlight": "有时候"
+        },
+        {
+          "zh": "我从来不吃辣的。",
+          "en": "I never eat spicy food.",
+          "highlight": "从来不"
+        }
       ],
       "exercises": [
-        { "type": "matching", "prompt": "Match each frequency word to its meaning:", "pairs": [
-          { "left": "每天", "right": "every day" },
-          { "left": "经常", "right": "often" },
-          { "left": "有时候", "right": "sometimes" },
-          { "left": "从来不", "right": "never" }
-        ], "explanation": "每天 = every day, 经常 = often, 有时候 = sometimes, 从来不 = never." },
-        { "type": "multiple-choice", "prompt": "Where does 经常 go in 'She often reads books' (她/经常/看书)?", "options": ["她经常看书。(before the verb)", "她看书经常。(after the object)", "经常她看书。(before the subject only)"], "correctIndex": 0, "explanation": "Frequency adverbs go after the subject and before the verb: 她经常看书。" },
-        { "type": "fill-blank", "prompt": "他___喝咖啡。(He never drinks coffee.) — use the phrase meaning 'never'", "acceptedAnswers": ["从来不"], "hint": "从来 + 不 = never", "explanation": "从来不 means 'never'. 他从来不喝咖啡。The phrase goes directly before the verb." }
+        {
+          "type": "matching",
+          "prompt": "Match each frequency word to its meaning:",
+          "pairs": [
+            {
+              "left": "每天",
+              "right": "every day"
+            },
+            {
+              "left": "经常",
+              "right": "often"
+            },
+            {
+              "left": "有时候",
+              "right": "sometimes"
+            },
+            {
+              "left": "从来不",
+              "right": "never"
+            }
+          ],
+          "explanation": "每天 = every day, 经常 = often, 有时候 = sometimes, 从来不 = never."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does 经常 go in 'She often reads books' (她/经常/看书)?",
+          "options": [
+            "她看书经常。(after the object)",
+            "经常她看书。(before the subject only)",
+            "她经常看书。(before the verb)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Frequency adverbs go after the subject and before the verb: 她经常看书。"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "他___喝咖啡。(He never drinks coffee.) — use the phrase meaning 'never'",
+          "acceptedAnswers": [
+            "从来不"
+          ],
+          "hint": "从来 + 不 = never",
+          "explanation": "从来不 means 'never'. 他从来不喝咖啡。The phrase goes directly before the verb."
+        }
       ]
     }
   ]

@@ -4,7 +4,9 @@
   "nameUk": "Вид дієслова",
   "icon": "🔀",
   "tier": "B2",
-  "prerequisites": ["verbs-future-aspect"],
+  "prerequisites": [
+    "verbs-future-aspect"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -12,26 +14,138 @@
       "title": "Aspect Pair Patterns",
       "explanation": "Most Ukrainian verbs come in aspect pairs: imperfective (ongoing/repeated) and perfective (completed/single). Common patterns: add a prefix to make perfective: читати → прочитати, писати → написати, робити → зробити, їсти → з'їсти.",
       "examples": [
-        { "uk": "читати → прочитати", "en": "to read → to read (and finish)", "highlight": "прочитати" },
-        { "uk": "писати → написати", "en": "to write → to write (and complete)", "highlight": "написати" },
-        { "uk": "робити → зробити", "en": "to do → to do (and complete)", "highlight": "зробити" }
+        {
+          "uk": "читати → прочитати",
+          "en": "to read → to read (and finish)",
+          "highlight": "прочитати"
+        },
+        {
+          "uk": "писати → написати",
+          "en": "to write → to write (and complete)",
+          "highlight": "написати"
+        },
+        {
+          "uk": "робити → зробити",
+          "en": "to do → to do (and complete)",
+          "highlight": "зробити"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the perfective pair of 'читати' (to read)?", "options": ["прочитати", "зачитати", "перечитати"], "correctIndex": 0, "explanation": "Читати → прочитати (to read and finish). 'Зачитати' means to start reading, 'перечитати' means to reread." },
-        { "type": "fill-blank", "prompt": "The perfective pair of 'писати' (to write) is ___.", "acceptedAnswers": ["написати"], "hint": "Prefix на-", "explanation": "Писати → написати. The prefix на- marks completion." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "читати", "right": "прочитати" },
-          { "left": "писати", "right": "написати" },
-          { "left": "робити", "right": "зробити" },
-          { "left": "їсти", "right": "з'їсти" }
-        ], "explanation": "Each imperfective verb pairs with a perfective formed by adding a prefix: про-, на-, з-." },
-        { "type": "multiple-choice", "prompt": "What is the perfective of 'готувати' (to cook/prepare)?", "options": ["приготувати", "заготувати", "виготувати"], "correctIndex": 0, "explanation": "Готувати → приготувати (to prepare/cook completely). The prefix при- marks completion here." },
-        { "type": "fill-blank", "prompt": "The perfective pair of 'вчити' (to learn/study) is ___.", "acceptedAnswers": ["вивчити"], "hint": "Prefix ви-", "explanation": "Вчити → вивчити (to learn completely). The prefix ви- indicates thorough completion." },
-        { "type": "transformation", "prompt": "Form the perfective:", "baseWord": "будувати (to build)", "context": "Вони ___ новий дім за рік.", "acceptedAnswers": ["збудували"], "hint": "Prefix з- + past tense", "explanation": "Будувати → збудувати. Past tense masculine plural: збудували." },
-        { "type": "multiple-choice", "prompt": "Which verb is imperfective?", "options": ["малювати", "намалювати", "зробити"], "correctIndex": 0, "explanation": "'Малювати' (to draw/paint) is imperfective — no prefix. 'Намалювати' and 'зробити' are perfective." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я хочу зписати лист.", "errorWord": "зписати", "acceptedAnswers": ["написати"], "explanation": "The correct perfective of 'писати' is 'написати' (prefix на-), not 'зписати'." },
-        { "type": "fill-blank", "prompt": "The perfective pair of 'купувати' (to buy) is ___.", "acceptedAnswers": ["купити"], "hint": "This pair changes the suffix, not the prefix", "explanation": "Купувати → купити. Some aspect pairs differ by suffix rather than prefix: -увати (imperf.) vs. -ити (perf.)." },
-        { "type": "multiple-choice", "prompt": "What is the imperfective pair of 'відповісти' (to answer)?", "options": ["відповідати", "повідати", "відповітати"], "correctIndex": 0, "explanation": "Відповісти (perf.) ↔ відповідати (imperf.). The suffix changes: -істи → -ідати." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the perfective pair of 'читати' (to read)?",
+          "options": [
+            "зачитати",
+            "прочитати",
+            "перечитати"
+          ],
+          "correctIndex": 1,
+          "explanation": "Читати → прочитати (to read and finish). 'Зачитати' means to start reading, 'перечитати' means to reread."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The perfective pair of 'писати' (to write) is ___.",
+          "acceptedAnswers": [
+            "написати"
+          ],
+          "hint": "Prefix на-",
+          "explanation": "Писати → написати. The prefix на- marks completion."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "читати",
+              "right": "прочитати"
+            },
+            {
+              "left": "писати",
+              "right": "написати"
+            },
+            {
+              "left": "робити",
+              "right": "зробити"
+            },
+            {
+              "left": "їсти",
+              "right": "з'їсти"
+            }
+          ],
+          "explanation": "Each imperfective verb pairs with a perfective formed by adding a prefix: про-, на-, з-."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the perfective of 'готувати' (to cook/prepare)?",
+          "options": [
+            "заготувати",
+            "приготувати",
+            "виготувати"
+          ],
+          "correctIndex": 1,
+          "explanation": "Готувати → приготувати (to prepare/cook completely). The prefix при- marks completion here."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The perfective pair of 'вчити' (to learn/study) is ___.",
+          "acceptedAnswers": [
+            "вивчити"
+          ],
+          "hint": "Prefix ви-",
+          "explanation": "Вчити → вивчити (to learn completely). The prefix ви- indicates thorough completion."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the perfective:",
+          "baseWord": "будувати (to build)",
+          "context": "Вони ___ новий дім за рік.",
+          "acceptedAnswers": [
+            "збудували"
+          ],
+          "hint": "Prefix з- + past tense",
+          "explanation": "Будувати → збудувати. Past tense masculine plural: збудували."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb is imperfective?",
+          "options": [
+            "намалювати",
+            "зробити",
+            "малювати"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Малювати' (to draw/paint) is imperfective — no prefix. 'Намалювати' and 'зробити' are perfective."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я хочу зписати лист.",
+          "errorWord": "зписати",
+          "acceptedAnswers": [
+            "написати"
+          ],
+          "explanation": "The correct perfective of 'писати' is 'написати' (prefix на-), not 'зписати'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The perfective pair of 'купувати' (to buy) is ___.",
+          "acceptedAnswers": [
+            "купити"
+          ],
+          "hint": "This pair changes the suffix, not the prefix",
+          "explanation": "Купувати → купити. Some aspect pairs differ by suffix rather than prefix: -увати (imperf.) vs. -ити (perf.)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the imperfective pair of 'відповісти' (to answer)?",
+          "options": [
+            "відповітати",
+            "відповідати",
+            "повідати"
+          ],
+          "correctIndex": 1,
+          "explanation": "Відповісти (perf.) ↔ відповідати (imperf.). The suffix changes: -істи → -ідати."
+        }
       ]
     },
     {
@@ -39,26 +153,139 @@
       "title": "Prefix Meanings",
       "explanation": "Adding different prefixes to the same verb creates new verbs with different meanings. For example: писати (to write) → написати (complete writing), переписати (rewrite), виписати (write out/discharge), підписати (sign), записати (write down).",
       "examples": [
-        { "uk": "написати — завершити писати", "en": "napisati — to finish writing", "highlight": "написати" },
-        { "uk": "переписати — писати знову", "en": "perepisati — to rewrite", "highlight": "переписати" },
-        { "uk": "підписати — поставити підпис", "en": "pidpisati — to sign", "highlight": "підписати" }
+        {
+          "uk": "написати — завершити писати",
+          "en": "napisati — to finish writing",
+          "highlight": "написати"
+        },
+        {
+          "uk": "переписати — писати знову",
+          "en": "perepisati — to rewrite",
+          "highlight": "переписати"
+        },
+        {
+          "uk": "підписати — поставити підпис",
+          "en": "pidpisati — to sign",
+          "highlight": "підписати"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What does 'переписати' mean?", "options": ["to rewrite", "to finish writing", "to sign"], "correctIndex": 0, "explanation": "Prefix пере- means 're-' or 'across': переписати = to rewrite." },
-        { "type": "fill-blank", "prompt": "Будь ласка, ___ це слово. (write down — записати)", "acceptedAnswers": ["запиши", "запишіть"], "hint": "за- means 'down' or 'to record'", "explanation": "Записати = to write down/record. Imperative: запиши (informal) / запишіть (formal)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "написати", "right": "to complete writing" },
-          { "left": "переписати", "right": "to rewrite" },
-          { "left": "підписати", "right": "to sign" },
-          { "left": "записати", "right": "to write down" }
-        ], "explanation": "Each prefix changes the base meaning of 'писати': на- (complete), пере- (re-), під- (under/sign), за- (record)." },
-        { "type": "multiple-choice", "prompt": "Він ___ документ. (signed)", "options": ["підписав", "написав", "переписав"], "correctIndex": 0, "explanation": "Підписати = to sign. Past tense masc.: підписав." },
-        { "type": "fill-blank", "prompt": "Я хочу ___ їжу. (to cook, perfective — prefix при-)", "acceptedAnswers": ["приготувати"], "hint": "готувати + prefix при-", "explanation": "При- + готувати = приготувати (to cook/prepare completely)." },
-        { "type": "transformation", "prompt": "Add the correct prefix to change the meaning:", "baseWord": "ходити (to walk)", "context": "Він ___ з кімнати. (walked out)", "acceptedAnswers": ["вийшов"], "hint": "Prefix ви- means 'out'", "explanation": "Ви- + йти = вийти (to go out). Past tense masc.: вийшов." },
-        { "type": "multiple-choice", "prompt": "What does 'перечитати' mean?", "options": ["to reread", "to finish reading", "to read aloud"], "correctIndex": 0, "explanation": "Prefix пере- means 're-': перечитати = to reread." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Вона виписала контракт.", "errorWord": "виписала", "acceptedAnswers": ["підписала"], "explanation": "'Виписати' means to write out/discharge. To sign a contract is 'підписати': підписала контракт." },
-        { "type": "fill-blank", "prompt": "Мені потрібно ___ цей текст. (to rewrite — пере-)", "acceptedAnswers": ["переписати"], "hint": "пере- + писати", "explanation": "Переписати = to rewrite. Prefix пере- means 're-' or 'again'." },
-        { "type": "multiple-choice", "prompt": "What does prefix 'до-' usually mean in 'дочитати'?", "options": ["to finish (reading to the end)", "to start reading", "to read aloud"], "correctIndex": 0, "explanation": "Prefix до- means 'to the end' or 'up to': дочитати = to finish reading (to the end)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'переписати' mean?",
+          "options": [
+            "to rewrite",
+            "to finish writing",
+            "to sign"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prefix пере- means 're-' or 'across': переписати = to rewrite."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Будь ласка, ___ це слово. (write down — записати)",
+          "acceptedAnswers": [
+            "запиши",
+            "запишіть"
+          ],
+          "hint": "за- means 'down' or 'to record'",
+          "explanation": "Записати = to write down/record. Imperative: запиши (informal) / запишіть (formal)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "написати",
+              "right": "to complete writing"
+            },
+            {
+              "left": "переписати",
+              "right": "to rewrite"
+            },
+            {
+              "left": "підписати",
+              "right": "to sign"
+            },
+            {
+              "left": "записати",
+              "right": "to write down"
+            }
+          ],
+          "explanation": "Each prefix changes the base meaning of 'писати': на- (complete), пере- (re-), під- (under/sign), за- (record)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Він ___ документ. (signed)",
+          "options": [
+            "написав",
+            "переписав",
+            "підписав"
+          ],
+          "correctIndex": 2,
+          "explanation": "Підписати = to sign. Past tense masc.: підписав."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я хочу ___ їжу. (to cook, perfective — prefix при-)",
+          "acceptedAnswers": [
+            "приготувати"
+          ],
+          "hint": "готувати + prefix при-",
+          "explanation": "При- + готувати = приготувати (to cook/prepare completely)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Add the correct prefix to change the meaning:",
+          "baseWord": "ходити (to walk)",
+          "context": "Він ___ з кімнати. (walked out)",
+          "acceptedAnswers": [
+            "вийшов"
+          ],
+          "hint": "Prefix ви- means 'out'",
+          "explanation": "Ви- + йти = вийти (to go out). Past tense masc.: вийшов."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'перечитати' mean?",
+          "options": [
+            "to finish reading",
+            "to read aloud",
+            "to reread"
+          ],
+          "correctIndex": 2,
+          "explanation": "Prefix пере- means 're-': перечитати = to reread."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Вона виписала контракт.",
+          "errorWord": "виписала",
+          "acceptedAnswers": [
+            "підписала"
+          ],
+          "explanation": "'Виписати' means to write out/discharge. To sign a contract is 'підписати': підписала контракт."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мені потрібно ___ цей текст. (to rewrite — пере-)",
+          "acceptedAnswers": [
+            "переписати"
+          ],
+          "hint": "пере- + писати",
+          "explanation": "Переписати = to rewrite. Prefix пере- means 're-' or 'again'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does prefix 'до-' usually mean in 'дочитати'?",
+          "options": [
+            "to finish (reading to the end)",
+            "to read aloud",
+            "to start reading"
+          ],
+          "correctIndex": 0,
+          "explanation": "Prefix до- means 'to the end' or 'up to': дочитати = to finish reading (to the end)."
+        }
       ]
     },
     {
@@ -66,26 +293,155 @@
       "title": "Aspect in Past Tense",
       "explanation": "In the past tense, imperfective verbs express ongoing, repeated, or habitual actions (was doing, used to do). Perfective verbs express completed, one-time actions (did, finished). Він читав книгу (was reading) vs. Він прочитав книгу (finished reading).",
       "examples": [
-        { "uk": "Він читав книгу весь вечір.", "en": "He was reading a book all evening. (imperfective)", "highlight": "читав" },
-        { "uk": "Він прочитав книгу за два дні.", "en": "He read (finished) the book in two days. (perfective)", "highlight": "прочитав" },
-        { "uk": "Вона часто готувала борщ.", "en": "She often cooked borscht. (habitual, imperfective)", "highlight": "готувала" }
+        {
+          "uk": "Він читав книгу весь вечір.",
+          "en": "He was reading a book all evening. (imperfective)",
+          "highlight": "читав"
+        },
+        {
+          "uk": "Він прочитав книгу за два дні.",
+          "en": "He read (finished) the book in two days. (perfective)",
+          "highlight": "прочитав"
+        },
+        {
+          "uk": "Вона часто готувала борщ.",
+          "en": "She often cooked borscht. (habitual, imperfective)",
+          "highlight": "готувала"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Вона ___ лист цілу годину. (was writing — ongoing)", "options": ["писала", "написала", "запишала"], "correctIndex": 0, "explanation": "Imperfective 'писала' shows ongoing action over a period of time (цілу годину = for a whole hour)." },
-        { "type": "fill-blank", "prompt": "Він нарешті ___ цю книгу. (finished reading — perfective past masc.)", "acceptedAnswers": ["прочитав"], "hint": "Perfective of читати", "explanation": "'Нарешті' (finally) signals completion, so perfective 'прочитав' is correct." },
-        { "type": "multiple-choice", "prompt": "Яке речення описує завершену дію? (Which describes a completed action?)", "options": ["Я зробив домашнє завдання.", "Я робив домашнє завдання.", "Я роблю домашнє завдання."], "correctIndex": 0, "explanation": "'Зробив' (perfective past) = completed. 'Робив' (imperfective past) = was doing." },
-        { "type": "transformation", "prompt": "Rewrite with a perfective verb to show completion:", "baseWord": "Вона готувала обід.", "context": "Вона ___ обід. (completed)", "acceptedAnswers": ["приготувала"], "hint": "Perfective of готувати", "explanation": "Готувала (was cooking) → приготувала (cooked/finished cooking)." },
-        { "type": "fill-blank", "prompt": "У дитинстві я часто ___ у парку. (used to play — imperfective past)", "acceptedAnswers": ["грав", "грала"], "hint": "Habitual past = imperfective", "explanation": "'Часто' (often) + childhood memory = habitual action, requiring imperfective 'грав/грала'." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Я вже написав цей лист три рази вчора.", "errorWord": "написав", "acceptedAnswers": ["писав"], "explanation": "'Три рази' (three times) implies repetition, which requires imperfective 'писав'. Perfective 'написав' would mean completed once." },
-        { "type": "multiple-choice", "prompt": "Я ___ каву і пішов на роботу. (drank and left)", "options": ["випив", "пив", "п'ю"], "correctIndex": 0, "explanation": "Two sequential completed actions: випив (drank up, perfective) and пішов (left, perfective)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Він читав книгу.", "right": "He was reading." },
-          { "left": "Він прочитав книгу.", "right": "He finished reading." },
-          { "left": "Вона писала лист.", "right": "She was writing." },
-          { "left": "Вона написала лист.", "right": "She wrote (completed)." }
-        ], "explanation": "Imperfective past = process/ongoing. Perfective past = completed result." },
-        { "type": "fill-blank", "prompt": "Коли я ___, зателефонував друг. (was eating — imperfective past masc.)", "acceptedAnswers": ["їв"], "hint": "Background action = imperfective", "explanation": "The background action (was eating) is imperfective: їв. The interrupting action (called) is perfective." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She cooked dinner and we ate.", "words": ["Вона", "приготувала", "вечерю", "і", "ми", "поїли"], "distractors": ["готувала"], "validOrders": [["Вона", "приготувала", "вечерю", "і", "ми", "поїли"]], "explanation": "Both verbs are perfective (приготувала, поїли) because both actions were completed in sequence." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Вона ___ лист цілу годину. (was writing — ongoing)",
+          "options": [
+            "написала",
+            "запишала",
+            "писала"
+          ],
+          "correctIndex": 2,
+          "explanation": "Imperfective 'писала' shows ongoing action over a period of time (цілу годину = for a whole hour)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він нарешті ___ цю книгу. (finished reading — perfective past masc.)",
+          "acceptedAnswers": [
+            "прочитав"
+          ],
+          "hint": "Perfective of читати",
+          "explanation": "'Нарешті' (finally) signals completion, so perfective 'прочитав' is correct."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Яке речення описує завершену дію? (Which describes a completed action?)",
+          "options": [
+            "Я роблю домашнє завдання.",
+            "Я робив домашнє завдання.",
+            "Я зробив домашнє завдання."
+          ],
+          "correctIndex": 2,
+          "explanation": "'Зробив' (perfective past) = completed. 'Робив' (imperfective past) = was doing."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Rewrite with a perfective verb to show completion:",
+          "baseWord": "Вона готувала обід.",
+          "context": "Вона ___ обід. (completed)",
+          "acceptedAnswers": [
+            "приготувала"
+          ],
+          "hint": "Perfective of готувати",
+          "explanation": "Готувала (was cooking) → приготувала (cooked/finished cooking)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У дитинстві я часто ___ у парку. (used to play — imperfective past)",
+          "acceptedAnswers": [
+            "грав",
+            "грала"
+          ],
+          "hint": "Habitual past = imperfective",
+          "explanation": "'Часто' (often) + childhood memory = habitual action, requiring imperfective 'грав/грала'."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Я вже написав цей лист три рази вчора.",
+          "errorWord": "написав",
+          "acceptedAnswers": [
+            "писав"
+          ],
+          "explanation": "'Три рази' (three times) implies repetition, which requires imperfective 'писав'. Perfective 'написав' would mean completed once."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я ___ каву і пішов на роботу. (drank and left)",
+          "options": [
+            "пив",
+            "випив",
+            "п'ю"
+          ],
+          "correctIndex": 1,
+          "explanation": "Two sequential completed actions: випив (drank up, perfective) and пішов (left, perfective)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Він читав книгу.",
+              "right": "He was reading."
+            },
+            {
+              "left": "Він прочитав книгу.",
+              "right": "He finished reading."
+            },
+            {
+              "left": "Вона писала лист.",
+              "right": "She was writing."
+            },
+            {
+              "left": "Вона написала лист.",
+              "right": "She wrote (completed)."
+            }
+          ],
+          "explanation": "Imperfective past = process/ongoing. Perfective past = completed result."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Коли я ___, зателефонував друг. (was eating — imperfective past masc.)",
+          "acceptedAnswers": [
+            "їв"
+          ],
+          "hint": "Background action = imperfective",
+          "explanation": "The background action (was eating) is imperfective: їв. The interrupting action (called) is perfective."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She cooked dinner and we ate.",
+          "words": [
+            "Вона",
+            "приготувала",
+            "вечерю",
+            "і",
+            "ми",
+            "поїли"
+          ],
+          "distractors": [
+            "готувала"
+          ],
+          "validOrders": [
+            [
+              "Вона",
+              "приготувала",
+              "вечерю",
+              "і",
+              "ми",
+              "поїли"
+            ]
+          ],
+          "explanation": "Both verbs are perfective (приготувала, поїли) because both actions were completed in sequence."
+        }
       ]
     },
     {
@@ -93,26 +449,140 @@
       "title": "Choosing Aspect in Context",
       "explanation": "Choosing the right aspect depends on context. Use imperfective for: ongoing actions, habits, duration, general statements. Use perfective for: completed actions, results, single events, sequences. Key words: imperfective — часто, завжди, довго, кожен день. Perfective — вже, нарешті, раптом, одразу.",
       "examples": [
-        { "uk": "Я завжди снідаю о восьмій.", "en": "I always have breakfast at eight. (habitual = imperf.)", "highlight": "снідаю" },
-        { "uk": "Я вже поснідав.", "en": "I already had breakfast. (completed = perf.)", "highlight": "поснідав" },
-        { "uk": "Вона довго вибирала подарунок.", "en": "She was choosing a gift for a long time. (duration = imperf.)", "highlight": "вибирала" }
+        {
+          "uk": "Я завжди снідаю о восьмій.",
+          "en": "I always have breakfast at eight. (habitual = imperf.)",
+          "highlight": "снідаю"
+        },
+        {
+          "uk": "Я вже поснідав.",
+          "en": "I already had breakfast. (completed = perf.)",
+          "highlight": "поснідав"
+        },
+        {
+          "uk": "Вона довго вибирала подарунок.",
+          "en": "She was choosing a gift for a long time. (duration = imperf.)",
+          "highlight": "вибирала"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я ___ цю книгу кожен вечір. (read — every evening)", "options": ["читаю", "прочитаю", "прочитав"], "correctIndex": 0, "explanation": "'Кожен вечір' (every evening) indicates a habit, requiring imperfective 'читаю'." },
-        { "type": "fill-blank", "prompt": "Він раптом ___ і вийшов. (stood up — perfective past masc.)", "acceptedAnswers": ["встав"], "hint": "'Раптом' signals a sudden completed action", "explanation": "'Раптом' (suddenly) signals a single, abrupt action — perfective: встав (stood up)." },
-        { "type": "multiple-choice", "prompt": "Ти вже ___ домашнє завдання? (Did you finish your homework?)", "options": ["зробив", "робив", "робиш"], "correctIndex": 0, "explanation": "'Вже' (already) implies a result/completion — perfective 'зробив'." },
-        { "type": "transformation", "prompt": "Choose the correct aspect:", "baseWord": "вчити / вивчити", "context": "Я довго ___ цю тему, але нарешті ___.", "acceptedAnswers": ["вчив...вивчив", "вчила...вивчила"], "hint": "First blank: ongoing process. Second: completed result.", "explanation": "'Довго' = duration (imperfective вчив). 'Нарешті' = completion (perfective вивчив)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Вона завжди приготувала обід о шостій.", "errorWord": "приготувала", "acceptedAnswers": ["готувала"], "explanation": "'Завжди' (always) indicates a habit, requiring imperfective 'готувала', not perfective 'приготувала'." },
-        { "type": "fill-blank", "prompt": "Я ___ тобі завтра. (will call — perfective future)", "acceptedAnswers": ["зателефоную", "подзвоню"], "hint": "Single future action = perfective", "explanation": "A single planned future action uses perfective: зателефоную (I will call)." },
-        { "type": "multiple-choice", "prompt": "Коли я ___ вулицю, почався дощ. (was crossing)", "options": ["переходив", "перейшов", "перейду"], "correctIndex": 0, "explanation": "Background action interrupted by another event = imperfective: переходив (was crossing)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "завжди, часто, довго", "right": "imperfective" },
-          { "left": "вже, нарешті, раптом", "right": "perfective" },
-          { "left": "кожен день, зазвичай", "right": "imperfective" },
-          { "left": "одразу, за годину", "right": "perfective" }
-        ], "explanation": "Signal words help determine aspect: duration/habit = imperfective, completion/result = perfective." },
-        { "type": "fill-blank", "prompt": "Не ___ мене! Я зайнятий. (disturb — imperfective imperative)", "acceptedAnswers": ["турбуй", "відволікай"], "hint": "General prohibition = imperfective", "explanation": "Prohibitions and general requests typically use imperfective: Не турбуй! (Don't disturb!)" },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Я довго писав лист, але нарешті написав.", "acceptedAnswers": ["Я довго писав лист, але нарешті написав.", "Я довго писав лист, але нарешті написав"], "explanation": "'Довго писав' (imperfective = was writing for a long time) contrasts with 'нарешті написав' (perfective = finally finished writing)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я ___ цю книгу кожен вечір. (read — every evening)",
+          "options": [
+            "прочитаю",
+            "прочитав",
+            "читаю"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Кожен вечір' (every evening) indicates a habit, requiring imperfective 'читаю'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Він раптом ___ і вийшов. (stood up — perfective past masc.)",
+          "acceptedAnswers": [
+            "встав"
+          ],
+          "hint": "'Раптом' signals a sudden completed action",
+          "explanation": "'Раптом' (suddenly) signals a single, abrupt action — perfective: встав (stood up)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ти вже ___ домашнє завдання? (Did you finish your homework?)",
+          "options": [
+            "робиш",
+            "робив",
+            "зробив"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Вже' (already) implies a result/completion — perfective 'зробив'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Choose the correct aspect:",
+          "baseWord": "вчити / вивчити",
+          "context": "Я довго ___ цю тему, але нарешті ___.",
+          "acceptedAnswers": [
+            "вчив...вивчив",
+            "вчила...вивчила"
+          ],
+          "hint": "First blank: ongoing process. Second: completed result.",
+          "explanation": "'Довго' = duration (imperfective вчив). 'Нарешті' = completion (perfective вивчив)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Вона завжди приготувала обід о шостій.",
+          "errorWord": "приготувала",
+          "acceptedAnswers": [
+            "готувала"
+          ],
+          "explanation": "'Завжди' (always) indicates a habit, requiring imperfective 'готувала', not perfective 'приготувала'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я ___ тобі завтра. (will call — perfective future)",
+          "acceptedAnswers": [
+            "зателефоную",
+            "подзвоню"
+          ],
+          "hint": "Single future action = perfective",
+          "explanation": "A single planned future action uses perfective: зателефоную (I will call)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Коли я ___ вулицю, почався дощ. (was crossing)",
+          "options": [
+            "перейду",
+            "перейшов",
+            "переходив"
+          ],
+          "correctIndex": 2,
+          "explanation": "Background action interrupted by another event = imperfective: переходив (was crossing)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "завжди, часто, довго",
+              "right": "imperfective"
+            },
+            {
+              "left": "вже, нарешті, раптом",
+              "right": "perfective"
+            },
+            {
+              "left": "кожен день, зазвичай",
+              "right": "imperfective"
+            },
+            {
+              "left": "одразу, за годину",
+              "right": "perfective"
+            }
+          ],
+          "explanation": "Signal words help determine aspect: duration/habit = imperfective, completion/result = perfective."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Не ___ мене! Я зайнятий. (disturb — imperfective imperative)",
+          "acceptedAnswers": [
+            "турбуй",
+            "відволікай"
+          ],
+          "hint": "General prohibition = imperfective",
+          "explanation": "Prohibitions and general requests typically use imperfective: Не турбуй! (Don't disturb!)"
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Я довго писав лист, але нарешті написав.",
+          "acceptedAnswers": [
+            "Я довго писав лист, але нарешті написав.",
+            "Я довго писав лист, але нарешті написав"
+          ],
+          "explanation": "'Довго писав' (imperfective = was writing for a long time) contrasts with 'нарешті написав' (perfective = finally finished writing)."
+        }
       ]
     }
   ]

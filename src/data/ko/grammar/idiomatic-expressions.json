@@ -4,7 +4,10 @@
   "nameKo": "관용 표현과 사자성어",
   "icon": "📜",
   "tier": "B2",
-  "prerequisites": ["verb-conjugation", "relative-clauses"],
+  "prerequisites": [
+    "verb-conjugation",
+    "relative-clauses"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +16,59 @@
       "explanation": "Korean has many idioms built around body parts, and knowing them is essential for natural speech. 눈이 높다 (eyes are high) = to have high standards / be picky. 발이 넓다 (feet are wide) = to know many people / have wide connections. 손이 크다 (hands are big) = to be generous (especially with food). 입이 가볍다 (mouth is light) = to be unable to keep secrets. 귀가 얇다 (ears are thin) = to be easily influenced by others. 눈이 빠지게 기다리다 (wait until eyes fall out) = to wait eagerly/desperately. 발이 묶이다 (feet are tied) = to be stuck/unable to go. 손에 땀을 쥐다 (grip sweat in hands) = to be on the edge of one's seat, thrilling. These idioms are used regularly in conversation, news, and literature.",
       "tip": "Body-part idioms rarely translate literally. When you encounter [body part] + [unexpected adjective/verb], suspect an idiom. Context will usually make the figurative meaning clear.",
       "examples": [
-        { "ko": "그 사람은 눈이 너무 높아요", "en": "That person has too high standards (eyes are high)", "highlight": "눈이 높아요" },
-        { "ko": "우리 엄마는 손이 커요", "en": "My mom is generous with food (hands are big)", "highlight": "손이 커요" },
-        { "ko": "그 사람은 입이 가벼워서 비밀을 못 지켜요", "en": "That person can't keep secrets (mouth is light)", "highlight": "입이 가벼워서" },
-        { "ko": "경기가 손에 땀을 쥐게 했어요", "en": "The game was thrilling (made you grip sweat in your hands)", "highlight": "손에 땀을 쥐게" }
+        {
+          "ko": "그 사람은 눈이 너무 높아요",
+          "en": "That person has too high standards (eyes are high)",
+          "highlight": "눈이 높아요"
+        },
+        {
+          "ko": "우리 엄마는 손이 커요",
+          "en": "My mom is generous with food (hands are big)",
+          "highlight": "손이 커요"
+        },
+        {
+          "ko": "그 사람은 입이 가벼워서 비밀을 못 지켜요",
+          "en": "That person can't keep secrets (mouth is light)",
+          "highlight": "입이 가벼워서"
+        },
+        {
+          "ko": "경기가 손에 땀을 쥐게 했어요",
+          "en": "The game was thrilling (made you grip sweat in your hands)",
+          "highlight": "손에 땀을 쥐게"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'발이 넓다' figuratively means:",
-          "options": ["To know many people / have wide connections", "To have big feet", "To walk a lot"],
-          "correctIndex": 0,
+          "options": [
+            "To have big feet",
+            "To know many people / have wide connections",
+            "To walk a lot"
+          ],
+          "correctIndex": 1,
           "explanation": "발이 넓다 (feet are wide) is an idiom meaning the person has extensive social connections — they 'get around' and know many people."
         },
         {
           "type": "multiple-choice",
           "prompt": "If someone is described as '귀가 얇다' (ears are thin), they:",
-          "options": ["Are easily influenced by what others say", "Have good hearing", "Don't listen to anyone"],
+          "options": [
+            "Are easily influenced by what others say",
+            "Have good hearing",
+            "Don't listen to anyone"
+          ],
           "correctIndex": 0,
           "explanation": "귀가 얇다 means a person is easily swayed by others' opinions — their 'ears' let everything through, so they're easily influenced."
         },
         {
           "type": "multiple-choice",
           "prompt": "'눈이 빠지게 기다렸어요' means:",
-          "options": ["I waited desperately/eagerly", "My eyes hurt from waiting", "I waited while looking around"],
-          "correctIndex": 0,
+          "options": [
+            "My eyes hurt from waiting",
+            "I waited while looking around",
+            "I waited desperately/eagerly"
+          ],
+          "correctIndex": 2,
           "explanation": "눈이 빠지게 기다리다 means to wait so eagerly that one's eyes could fall out — an exaggerated expression for desperate, longing anticipation."
         }
       ]
@@ -48,30 +79,58 @@
       "explanation": "사자성어 (four-character idioms) come from Chinese characters and are the Korean equivalent of Latin proverbs in English. Each consists of four Sino-Korean syllables packed with meaning. 일석이조 (一石二鳥) = one stone, two birds — killing two birds with one stone. 자업자득 (自業自得) = own work, own gain — you reap what you sow. 오합지졸 (烏合之卒) = crow-gathered soldiers — a disorganized rabble. 유비무환 (有備無患) = having preparation, no worry — being prepared prevents trouble. 이심전심 (以心傳心) = from heart to heart — unspoken understanding. 전화위복 (轉禍爲福) = turn disaster into fortune — a blessing in disguise. 우유부단 (優柔不斷) = soft and not cutting — indecisive. These are used in formal speech, writing, news headlines, and educated conversation.",
       "tip": "You do not need to know the Chinese characters to use 사자성어 — just learn the Korean pronunciation and meaning. Using them appropriately in conversation marks you as an educated and fluent speaker.",
       "examples": [
-        { "ko": "이번 출장은 일석이조였어요", "en": "This business trip killed two birds with one stone", "highlight": "일석이조" },
-        { "ko": "그건 자업자득이에요", "en": "That's reaping what you sowed (you brought it on yourself)", "highlight": "자업자득" },
-        { "ko": "이심전심으로 서로 이해했어요", "en": "We understood each other without words (heart to heart)", "highlight": "이심전심" },
-        { "ko": "유비무환이라고 미리 준비하세요", "en": "As they say, 'preparation prevents worry' — prepare in advance", "highlight": "유비무환" }
+        {
+          "ko": "이번 출장은 일석이조였어요",
+          "en": "This business trip killed two birds with one stone",
+          "highlight": "일석이조"
+        },
+        {
+          "ko": "그건 자업자득이에요",
+          "en": "That's reaping what you sowed (you brought it on yourself)",
+          "highlight": "자업자득"
+        },
+        {
+          "ko": "이심전심으로 서로 이해했어요",
+          "en": "We understood each other without words (heart to heart)",
+          "highlight": "이심전심"
+        },
+        {
+          "ko": "유비무환이라고 미리 준비하세요",
+          "en": "As they say, 'preparation prevents worry' — prepare in advance",
+          "highlight": "유비무환"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "일석이조 (一石二鳥) literally means:",
-          "options": ["One stone, two birds", "One stone, one bird", "Two stones, one bird"],
-          "correctIndex": 0,
+          "options": [
+            "One stone, one bird",
+            "One stone, two birds",
+            "Two stones, one bird"
+          ],
+          "correctIndex": 1,
           "explanation": "일(一) = one, 석(石) = stone, 이(二) = two, 조(鳥) = bird. It means achieving two goals with one action — same as the English 'killing two birds with one stone.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "If someone says '자업자득이에요' about your situation, they mean:",
-          "options": ["You brought it on yourself", "You did a great job", "You should try harder"],
-          "correctIndex": 0,
+          "options": [
+            "You should try harder",
+            "You did a great job",
+            "You brought it on yourself"
+          ],
+          "correctIndex": 2,
           "explanation": "자업자득 means 'own work, own result' — you reap what you sow. It's used when someone's misfortune is seen as a consequence of their own actions."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which 사자성어 describes being indecisive?",
-          "options": ["우유부단", "이심전심", "전화위복"],
+          "options": [
+            "우유부단",
+            "이심전심",
+            "전화위복"
+          ],
           "correctIndex": 0,
           "explanation": "우유부단 (優柔不斷) means 'soft and not cutting' — indecisive, unable to make firm decisions. 이심전심 = heart-to-heart understanding. 전화위복 = turning misfortune into blessing."
         }
@@ -83,31 +142,59 @@
       "explanation": "Korean proverbs (속담) are short, memorable sayings that encapsulate folk wisdom. 가는 말이 고와야 오는 말이 곱다 — if the words you send are kind, the words that come back will be kind (treat others as you wish to be treated). 원숭이도 나무에서 떨어진다 — even a monkey falls from a tree (everyone makes mistakes). 세 살 버릇 여든까지 간다 — habits from age three last until eighty (old habits die hard). 남의 떡이 더 커 보인다 — other people's rice cake looks bigger (the grass is always greener). 하늘이 무너져도 솟아날 구멍이 있다 — even if the sky falls, there is a hole to escape through (there's always a way out). 꿩 먹고 알 먹기 — eat the pheasant and eat the egg too (getting double benefit, similar to 일석이조). Proverbs appear in daily conversation and are a rich part of Korean cultural identity.",
       "tip": "When Koreans use proverbs in conversation, they often say the first half and expect you to know the rest. Knowing these proverbs signals cultural literacy and earns respect from native speakers.",
       "examples": [
-        { "ko": "원숭이도 나무에서 떨어진다", "en": "Even monkeys fall from trees (experts make mistakes too)", "highlight": "원숭이도" },
-        { "ko": "남의 떡이 더 커 보인다", "en": "Others' rice cakes look bigger (the grass is always greener)", "highlight": "남의 떡" },
-        { "ko": "세 살 버릇 여든까지 간다", "en": "Habits from age 3 last until 80 (old habits die hard)", "highlight": "세 살 버릇" },
-        { "ko": "가는 말이 고와야 오는 말이 곱다", "en": "Kind words going out bring kind words back", "highlight": "가는 말" }
+        {
+          "ko": "원숭이도 나무에서 떨어진다",
+          "en": "Even monkeys fall from trees (experts make mistakes too)",
+          "highlight": "원숭이도"
+        },
+        {
+          "ko": "남의 떡이 더 커 보인다",
+          "en": "Others' rice cakes look bigger (the grass is always greener)",
+          "highlight": "남의 떡"
+        },
+        {
+          "ko": "세 살 버릇 여든까지 간다",
+          "en": "Habits from age 3 last until 80 (old habits die hard)",
+          "highlight": "세 살 버릇"
+        },
+        {
+          "ko": "가는 말이 고와야 오는 말이 곱다",
+          "en": "Kind words going out bring kind words back",
+          "highlight": "가는 말"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'원숭이도 나무에서 떨어진다' is used when:",
-          "options": ["An expert makes an unexpected mistake", "Someone is climbing a tree", "A beginner fails at something easy"],
+          "options": [
+            "An expert makes an unexpected mistake",
+            "Someone is climbing a tree",
+            "A beginner fails at something easy"
+          ],
           "correctIndex": 0,
           "explanation": "This proverb is used when someone skilled or experienced makes an error — even monkeys, experts at climbing trees, can fall. It's a comforting proverb that says nobody is perfect."
         },
         {
           "type": "multiple-choice",
           "prompt": "'남의 떡이 더 커 보인다' is similar to which English saying?",
-          "options": ["The grass is always greener on the other side", "A bird in the hand is worth two in the bush", "Actions speak louder than words"],
+          "options": [
+            "The grass is always greener on the other side",
+            "Actions speak louder than words",
+            "A bird in the hand is worth two in the bush"
+          ],
           "correctIndex": 0,
           "explanation": "남의 떡이 더 커 보인다 (others' rice cakes look bigger) means people tend to think what others have is better — the same idea as 'the grass is always greener.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "'하늘이 무너져도 솟아날 구멍이 있다' conveys:",
-          "options": ["There is always a way out, even in the worst situations", "The sky is falling and there is no hope", "Natural disasters are unavoidable"],
-          "correctIndex": 0,
+          "options": [
+            "Natural disasters are unavoidable",
+            "The sky is falling and there is no hope",
+            "There is always a way out, even in the worst situations"
+          ],
+          "correctIndex": 2,
           "explanation": "Even if the sky collapses, there is a hole to rise through — this proverb expresses optimism that no matter how dire the situation, there is always a way to survive and recover."
         }
       ]

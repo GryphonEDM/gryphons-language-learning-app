@@ -4,7 +4,9 @@
   "nameDe": "Personalpronomen",
   "icon": "👤",
   "tier": "A1",
-  "prerequisites": ["nouns-gender"],
+  "prerequisites": [
+    "nouns-gender"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,28 +15,145 @@
       "explanation": "German personal pronouns in the nominative case (the subject of a sentence): ich (I), du (you, informal singular), er (he), sie (she), es (it), wir (we), ihr (you all, informal plural), sie (they), Sie (you, formal — always capitalized). Note that 'sie' can mean 'she' or 'they', and 'Sie' (capital S) is the formal 'you' for both singular and plural. Context and verb form clarify meaning.",
       "tip": "Capital 'Sie' = formal 'you' (like vouvoyer in French). Lowercase 'sie' = she or they. The verb ending often clarifies which one.",
       "examples": [
-        { "de": "Ich lerne Deutsch.", "en": "I am learning German.", "highlight": "Ich" },
-        { "de": "Du sprichst gut!", "en": "You speak well! (informal)", "highlight": "Du" },
-        { "de": "Er kommt morgen.", "en": "He is coming tomorrow.", "highlight": "Er" },
-        { "de": "Sie wohnt in Berlin.", "en": "She lives in Berlin.", "highlight": "Sie" },
-        { "de": "Wir essen zusammen.", "en": "We eat together.", "highlight": "Wir" },
-        { "de": "Sie sprechen Deutsch.", "en": "They / You (formal) speak German.", "highlight": "Sie" }
+        {
+          "de": "Ich lerne Deutsch.",
+          "en": "I am learning German.",
+          "highlight": "Ich"
+        },
+        {
+          "de": "Du sprichst gut!",
+          "en": "You speak well! (informal)",
+          "highlight": "Du"
+        },
+        {
+          "de": "Er kommt morgen.",
+          "en": "He is coming tomorrow.",
+          "highlight": "Er"
+        },
+        {
+          "de": "Sie wohnt in Berlin.",
+          "en": "She lives in Berlin.",
+          "highlight": "Sie"
+        },
+        {
+          "de": "Wir essen zusammen.",
+          "en": "We eat together.",
+          "highlight": "Wir"
+        },
+        {
+          "de": "Sie sprechen Deutsch.",
+          "en": "They / You (formal) speak German.",
+          "highlight": "Sie"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the German word for 'I'?", "options": ["ich", "du", "wir"], "correctIndex": 0, "explanation": "'ich' means 'I'. Note: in German, 'ich' is NOT capitalized unless it starts a sentence — unlike English 'I'." },
-        { "type": "multiple-choice", "prompt": "What does 'ihr' mean?", "options": ["You all (informal plural)", "She", "You (formal)"], "correctIndex": 0, "explanation": "'ihr' is the informal second person plural — like 'y'all' in American English. It is used when addressing multiple friends or family members." },
-        { "type": "fill-blank", "prompt": "___ wohne in München. (I live in Munich.)", "acceptedAnswers": ["Ich"], "hint": "The first person singular pronoun", "explanation": "'Ich' = I. Notice the verb 'wohne' is conjugated for ich (1st person singular)." },
-        { "type": "multiple-choice", "prompt": "How many meanings does 'sie' (lowercase) have?", "options": ["Two: she and they", "One: only she", "Three: she, they, and formal you"], "correctIndex": 0, "explanation": "Lowercase 'sie' = she (3rd person singular feminine) OR they (3rd person plural). Capital 'Sie' = formal you." },
-        { "type": "matching", "prompt": "Match each pronoun to its English meaning:", "pairs": [
-          { "left": "ich", "right": "I" },
-          { "left": "wir", "right": "we" },
-          { "left": "ihr", "right": "you all (informal)" },
-          { "left": "Sie", "right": "you (formal)" }
-        ], "explanation": "ich=I, wir=we, ihr=you(plural informal), Sie=you(formal). The formal Sie is always capitalized." },
-        { "type": "multiple-choice", "prompt": "A teacher addresses a class formally. Which pronoun do they use?", "options": ["Sie (formal you)", "ihr (informal plural)", "du (informal singular)"], "correctIndex": 0, "explanation": "Adults who don't know each other well, or formal situations (business, meeting strangers), use 'Sie'. Informally, friends and children use 'du' / 'ihr'." },
-        { "type": "fill-blank", "prompt": "___ kommt aus Japan. He comes from Japan.", "acceptedAnswers": ["Er"], "hint": "Third person masculine", "explanation": "'Er' = he. 'Er kommt aus Japan' = He comes from Japan." },
-        { "type": "multiple-choice", "prompt": "Which pronoun would you use to talk about a group of friends?", "options": ["sie (they)", "er (he)", "es (it)"], "correctIndex": 0, "explanation": "'sie' (lowercase, with a plural verb) means 'they'. 'Sie spielen Fußball' = They play football." },
-        { "type": "multiple-choice", "prompt": "What is the subject pronoun for 'it' in German?", "options": ["es", "das", "was"], "correctIndex": 0, "explanation": "'es' = it. It refers to neuter nouns (das-nouns) and is also used in fixed phrases like 'Es gibt' (There is/are) and 'Wie geht es Ihnen?' (How are you?)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the German word for 'I'?",
+          "options": [
+            "wir",
+            "du",
+            "ich"
+          ],
+          "correctIndex": 2,
+          "explanation": "'ich' means 'I'. Note: in German, 'ich' is NOT capitalized unless it starts a sentence — unlike English 'I'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'ihr' mean?",
+          "options": [
+            "You all (informal plural)",
+            "She",
+            "You (formal)"
+          ],
+          "correctIndex": 0,
+          "explanation": "'ihr' is the informal second person plural — like 'y'all' in American English. It is used when addressing multiple friends or family members."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ wohne in München. (I live in Munich.)",
+          "acceptedAnswers": [
+            "Ich"
+          ],
+          "hint": "The first person singular pronoun",
+          "explanation": "'Ich' = I. Notice the verb 'wohne' is conjugated for ich (1st person singular)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many meanings does 'sie' (lowercase) have?",
+          "options": [
+            "Two: she and they",
+            "One: only she",
+            "Three: she, they, and formal you"
+          ],
+          "correctIndex": 0,
+          "explanation": "Lowercase 'sie' = she (3rd person singular feminine) OR they (3rd person plural). Capital 'Sie' = formal you."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun to its English meaning:",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "I"
+            },
+            {
+              "left": "wir",
+              "right": "we"
+            },
+            {
+              "left": "ihr",
+              "right": "you all (informal)"
+            },
+            {
+              "left": "Sie",
+              "right": "you (formal)"
+            }
+          ],
+          "explanation": "ich=I, wir=we, ihr=you(plural informal), Sie=you(formal). The formal Sie is always capitalized."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A teacher addresses a class formally. Which pronoun do they use?",
+          "options": [
+            "Sie (formal you)",
+            "du (informal singular)",
+            "ihr (informal plural)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adults who don't know each other well, or formal situations (business, meeting strangers), use 'Sie'. Informally, friends and children use 'du' / 'ihr'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ kommt aus Japan. He comes from Japan.",
+          "acceptedAnswers": [
+            "Er"
+          ],
+          "hint": "Third person masculine",
+          "explanation": "'Er' = he. 'Er kommt aus Japan' = He comes from Japan."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun would you use to talk about a group of friends?",
+          "options": [
+            "es (it)",
+            "er (he)",
+            "sie (they)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'sie' (lowercase, with a plural verb) means 'they'. 'Sie spielen Fußball' = They play football."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the subject pronoun for 'it' in German?",
+          "options": [
+            "es",
+            "was",
+            "das"
+          ],
+          "correctIndex": 0,
+          "explanation": "'es' = it. It refers to neuter nouns (das-nouns) and is also used in fixed phrases like 'Es gibt' (There is/are) and 'Wie geht es Ihnen?' (How are you?)."
+        }
       ]
     },
     {
@@ -43,26 +162,129 @@
       "explanation": "When a pronoun is the direct object (accusative case) of a verb, it changes form. The changes are: ich → mich (me), du → dich (you), er → ihn (him), sie → sie (her — no change), es → es (it — no change), wir → uns (us), ihr → euch (you all), sie/Sie → sie/Sie (them/formal you — no change). The key changes to memorize are: ich→mich, du→dich, er→ihn, wir→uns, ihr→euch.",
       "tip": "The big changes: ich→mich, du→dich, er→ihn, wir→uns, ihr→euch. 'sie', 'es', and formal 'Sie' don't change!",
       "examples": [
-        { "de": "Er liebt mich.", "en": "He loves me. (ich→mich)", "highlight": "mich" },
-        { "de": "Ich sehe dich.", "en": "I see you. (du→dich)", "highlight": "dich" },
-        { "de": "Sie kennt ihn.", "en": "She knows him. (er→ihn)", "highlight": "ihn" },
-        { "de": "Er fragt uns.", "en": "He is asking us. (wir→uns)", "highlight": "uns" },
-        { "de": "Ich höre euch.", "en": "I hear you all. (ihr→euch)", "highlight": "euch" }
+        {
+          "de": "Er liebt mich.",
+          "en": "He loves me. (ich→mich)",
+          "highlight": "mich"
+        },
+        {
+          "de": "Ich sehe dich.",
+          "en": "I see you. (du→dich)",
+          "highlight": "dich"
+        },
+        {
+          "de": "Sie kennt ihn.",
+          "en": "She knows him. (er→ihn)",
+          "highlight": "ihn"
+        },
+        {
+          "de": "Er fragt uns.",
+          "en": "He is asking us. (wir→uns)",
+          "highlight": "uns"
+        },
+        {
+          "de": "Ich höre euch.",
+          "en": "I hear you all. (ihr→euch)",
+          "highlight": "euch"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the accusative form of 'ich' (I)?", "options": ["mich (me)", "ich (no change)", "mir"], "correctIndex": 0, "explanation": "'ich' becomes 'mich' in the accusative case. 'Er sieht mich' = He sees me." },
-        { "type": "multiple-choice", "prompt": "What is the accusative form of 'du' (you)?", "options": ["dich (you)", "du (no change)", "dir"], "correctIndex": 0, "explanation": "'du' becomes 'dich' in the accusative. 'Ich liebe dich' = I love you." },
-        { "type": "fill-blank", "prompt": "Er → ___ in the accusative case (him)", "acceptedAnswers": ["ihn"], "hint": "Starts with 'i'", "explanation": "'er' becomes 'ihn' in the accusative. 'Sie sieht ihn' = She sees him." },
-        { "type": "multiple-choice", "prompt": "What is the accusative form of 'wir' (we)?", "options": ["uns (us)", "wir (no change)", "euch"], "correctIndex": 0, "explanation": "'wir' becomes 'uns' in the accusative. 'Er besucht uns' = He is visiting us." },
-        { "type": "matching", "prompt": "Match each nominative pronoun to its accusative form:", "pairs": [
-          { "left": "ich", "right": "mich" },
-          { "left": "du", "right": "dich" },
-          { "left": "er", "right": "ihn" },
-          { "left": "wir", "right": "uns" }
-        ], "explanation": "ich→mich, du→dich, er→ihn, wir→uns. These are the key accusative pronoun changes." },
-        { "type": "multiple-choice", "prompt": "Fill in: Ich liebe ___ (I love you).", "options": ["dich", "du", "dir"], "correctIndex": 0, "explanation": "'lieben' takes an accusative object. 'du' in the accusative is 'dich'. 'Ich liebe dich' is the classic German 'I love you'." },
-        { "type": "fill-blank", "prompt": "Siehst du ___? (Do you see him?) — use accusative of 'er'", "acceptedAnswers": ["ihn"], "hint": "The accusative of 'er' (he)", "explanation": "'er' → 'ihn' in the accusative. 'Siehst du ihn?' = Do you see him?" },
-        { "type": "multiple-choice", "prompt": "Which pronoun does NOT change in the accusative case?", "options": ["sie (she/they)", "ich (I)", "er (he)"], "correctIndex": 0, "explanation": "'sie' (she), 'sie' (they), 'es' (it), and 'Sie' (formal you) do not change in the accusative. Only ich→mich, du→dich, er→ihn, wir→uns, ihr→euch change." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative form of 'ich' (I)?",
+          "options": [
+            "mich (me)",
+            "ich (no change)",
+            "mir"
+          ],
+          "correctIndex": 0,
+          "explanation": "'ich' becomes 'mich' in the accusative case. 'Er sieht mich' = He sees me."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative form of 'du' (you)?",
+          "options": [
+            "dir",
+            "du (no change)",
+            "dich (you)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'du' becomes 'dich' in the accusative. 'Ich liebe dich' = I love you."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er → ___ in the accusative case (him)",
+          "acceptedAnswers": [
+            "ihn"
+          ],
+          "hint": "Starts with 'i'",
+          "explanation": "'er' becomes 'ihn' in the accusative. 'Sie sieht ihn' = She sees him."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the accusative form of 'wir' (we)?",
+          "options": [
+            "euch",
+            "wir (no change)",
+            "uns (us)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'wir' becomes 'uns' in the accusative. 'Er besucht uns' = He is visiting us."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each nominative pronoun to its accusative form:",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "mich"
+            },
+            {
+              "left": "du",
+              "right": "dich"
+            },
+            {
+              "left": "er",
+              "right": "ihn"
+            },
+            {
+              "left": "wir",
+              "right": "uns"
+            }
+          ],
+          "explanation": "ich→mich, du→dich, er→ihn, wir→uns. These are the key accusative pronoun changes."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: Ich liebe ___ (I love you).",
+          "options": [
+            "dir",
+            "dich",
+            "du"
+          ],
+          "correctIndex": 1,
+          "explanation": "'lieben' takes an accusative object. 'du' in the accusative is 'dich'. 'Ich liebe dich' is the classic German 'I love you'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Siehst du ___? (Do you see him?) — use accusative of 'er'",
+          "acceptedAnswers": [
+            "ihn"
+          ],
+          "hint": "The accusative of 'er' (he)",
+          "explanation": "'er' → 'ihn' in the accusative. 'Siehst du ihn?' = Do you see him?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun does NOT change in the accusative case?",
+          "options": [
+            "ich (I)",
+            "er (he)",
+            "sie (she/they)"
+          ],
+          "correctIndex": 2,
+          "explanation": "'sie' (she), 'sie' (they), 'es' (it), and 'Sie' (formal you) do not change in the accusative. Only ich→mich, du→dich, er→ihn, wir→uns, ihr→euch change."
+        }
       ]
     }
   ]

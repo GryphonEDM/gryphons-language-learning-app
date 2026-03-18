@@ -4,54 +4,116 @@
   "nameEl": "Ενεστώτας",
   "icon": "⏰",
   "tier": "A1",
-  "prerequisites": ["articles"],
+  "prerequisites": [
+    "articles"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
       "sectionId": "group-a-verbs",
       "title": "Group A Verbs (-ω)",
-      "explanation": "Group A verbs are the most common verb group in Greek. Their infinitive-like form (dictionary form) ends in -ω. To conjugate them in the present tense, remove -ω and add the personal endings: εγώ -ω, εσύ -εις, αυτός/ή/ό -ει, εμείς -ούμε, εσείς -ετε, αυτοί/ές/ά -ουν. Example: γράφω (to write) → stem: γράφ- → εγώ γράφω, εσύ γράφεις, αυτός γράφει, εμείς γράφουμε, εσείς γράφετε, αυτοί γράφουν. Other common Group A verbs: μιλώ (to speak) — note this can also behave as a contract verb, τρώω (to eat) — slightly irregular but follows Group A endings, πίνω (to drink), διαβάζω (to read/study), ακούω (to hear/listen). The subject pronouns are often omitted in Greek because the verb ending already indicates the person.",
-      "tip": "The endings -ω, -εις, -ει, -ούμε, -ετε, -ουν are the backbone of Group A. Notice that -ούμε (we) is stressed on the final syllable — don't confuse it with the -ουν of the third person plural.",
+      "explanation": "Group A verbs are the most common verb group in Greek. Their infinitive-like form (dictionary form) ends in -ω. To conjugate them in the present tense, remove -ω and add the personal endings: εγώ -ω, εσύ -εις, αυτός/ή/ό -ει, εμείς -ουμε, εσείς -ετε, αυτοί/ές/ά -ουν. Example: γράφω (to write) → stem: γράφ- → εγώ γράφω, εσύ γράφεις, αυτός γράφει, εμείς γράφουμε, εσείς γράφετε, αυτοί γράφουν. Other common Group A verbs: μιλώ (to speak) — note this can also behave as a contract verb, τρώω (to eat) — slightly irregular but follows Group A endings, πίνω (to drink), διαβάζω (to read/study), ακούω (to hear/listen). The subject pronouns are often omitted in Greek because the verb ending already indicates the person.",
+      "tip": "The endings -ω, -εις, -ει, -ουμε, -ετε, -ουν are the backbone of Group A. Notice that -ουμε (we) is unstressed — the stress stays on the stem (γράφουμε, πίνουμε). Don't confuse this with Group B's -ούμε, which is stressed on the ending.",
       "conjugationTable": {
         "verb": "γράφω",
         "meaning": "to write",
         "rows": [
-          { "pronoun": "εγώ", "form": "γράφω", "ending": "-ω" },
-          { "pronoun": "εσύ", "form": "γράφεις", "ending": "-εις" },
-          { "pronoun": "αυτός/ή/ό", "form": "γράφει", "ending": "-ει" },
-          { "pronoun": "εμείς", "form": "γράφουμε", "ending": "-ούμε" },
-          { "pronoun": "εσείς", "form": "γράφετε", "ending": "-ετε" },
-          { "pronoun": "αυτοί/ές/ά", "form": "γράφουν", "ending": "-ουν" }
+          {
+            "pronoun": "εγώ",
+            "form": "γράφω",
+            "ending": "-ω"
+          },
+          {
+            "pronoun": "εσύ",
+            "form": "γράφεις",
+            "ending": "-εις"
+          },
+          {
+            "pronoun": "αυτός/ή/ό",
+            "form": "γράφει",
+            "ending": "-ει"
+          },
+          {
+            "pronoun": "εμείς",
+            "form": "γράφουμε",
+            "ending": "-ουμε"
+          },
+          {
+            "pronoun": "εσείς",
+            "form": "γράφετε",
+            "ending": "-ετε"
+          },
+          {
+            "pronoun": "αυτοί/ές/ά",
+            "form": "γράφουν",
+            "ending": "-ουν"
+          }
         ]
       },
       "examples": [
-        { "el": "Εγώ γράφω ένα γράμμα.", "en": "I am writing a letter.", "highlight": "γράφω" },
-        { "el": "Εσύ πίνεις καφέ κάθε πρωί.", "en": "You drink coffee every morning.", "highlight": "πίνεις" },
-        { "el": "Αυτός τρώει στο εστιατόριο.", "en": "He eats at the restaurant.", "highlight": "τρώει" },
-        { "el": "Εμείς ακούμε μουσική.", "en": "We are listening to music.", "highlight": "ακούμε" },
-        { "el": "Εσείς διαβάζετε πολύ.", "en": "You (all) study a lot.", "highlight": "διαβάζετε" },
-        { "el": "Αυτοί γράφουν στον πίνακα.", "en": "They write on the board.", "highlight": "γράφουν" }
+        {
+          "el": "Εγώ γράφω ένα γράμμα.",
+          "en": "I am writing a letter.",
+          "highlight": "γράφω"
+        },
+        {
+          "el": "Εσύ πίνεις καφέ κάθε πρωί.",
+          "en": "You drink coffee every morning.",
+          "highlight": "πίνεις"
+        },
+        {
+          "el": "Αυτός τρώει στο εστιατόριο.",
+          "en": "He eats at the restaurant.",
+          "highlight": "τρώει"
+        },
+        {
+          "el": "Εμείς ακούμε μουσική.",
+          "en": "We are listening to music.",
+          "highlight": "ακούμε"
+        },
+        {
+          "el": "Εσείς διαβάζετε πολύ.",
+          "en": "You (all) study a lot.",
+          "highlight": "διαβάζετε"
+        },
+        {
+          "el": "Αυτοί γράφουν στον πίνακα.",
+          "en": "They write on the board.",
+          "highlight": "γράφουν"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'γράφω' (to write) for 'εσύ'?",
-          "options": ["εσύ γράφεις", "εσύ γράφει", "εσύ γράφουν"],
-          "correctIndex": 0,
+          "options": [
+            "εσύ γράφει",
+            "εσύ γράφεις",
+            "εσύ γράφουν"
+          ],
+          "correctIndex": 1,
           "explanation": "The εσύ (you) ending for Group A verbs is -εις: γράφ + εις = γράφεις."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you conjugate 'πίνω' (to drink) for 'εμείς'?",
-          "options": ["εμείς πίνουμε", "εμείς πίνετε", "εμείς πίνεις"],
-          "correctIndex": 0,
-          "explanation": "The εμείς (we) ending for Group A verbs is -ούμε: πίν + ούμε = πίνουμε."
+          "options": [
+            "εμείς πίνετε",
+            "εμείς πίνεις",
+            "εμείς πίνουμε"
+          ],
+          "correctIndex": 2,
+          "explanation": "The εμείς (we) ending for Group A verbs is -ουμε: πίν + ουμε = πίνουμε (stress stays on the stem)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses 'ακούω' (to hear/listen) for 'αυτοί'?",
-          "options": ["Αυτοί ακούν μουσική.", "Αυτοί ακούει μουσική.", "Αυτοί ακούς μουσική."],
-          "correctIndex": 0,
+          "options": [
+            "Αυτοί ακούς μουσική.",
+            "Αυτοί ακούν μουσική.",
+            "Αυτοί ακούει μουσική."
+          ],
+          "correctIndex": 1,
           "explanation": "The αυτοί/ές/ά (they) ending for Group A verbs is -ουν: ακού + ουν = ακούν (the ω drops). Αυτοί ακούν μουσική."
         }
       ]
@@ -65,43 +127,103 @@
         "verb": "αγαπώ",
         "meaning": "to love",
         "rows": [
-          { "pronoun": "εγώ", "form": "αγαπώ", "ending": "-ώ / -άω" },
-          { "pronoun": "εσύ", "form": "αγαπάς", "ending": "-άς" },
-          { "pronoun": "αυτός/ή/ό", "form": "αγαπά", "ending": "-ά" },
-          { "pronoun": "εμείς", "form": "αγαπάμε", "ending": "-άμε" },
-          { "pronoun": "εσείς", "form": "αγαπάτε", "ending": "-άτε" },
-          { "pronoun": "αυτοί/ές/ά", "form": "αγαπάνε", "ending": "-άνε / -ούν" }
+          {
+            "pronoun": "εγώ",
+            "form": "αγαπώ",
+            "ending": "-ώ / -άω"
+          },
+          {
+            "pronoun": "εσύ",
+            "form": "αγαπάς",
+            "ending": "-άς"
+          },
+          {
+            "pronoun": "αυτός/ή/ό",
+            "form": "αγαπά",
+            "ending": "-ά"
+          },
+          {
+            "pronoun": "εμείς",
+            "form": "αγαπάμε",
+            "ending": "-άμε"
+          },
+          {
+            "pronoun": "εσείς",
+            "form": "αγαπάτε",
+            "ending": "-άτε"
+          },
+          {
+            "pronoun": "αυτοί/ές/ά",
+            "form": "αγαπάνε",
+            "ending": "-άνε / -ούν"
+          }
         ]
       },
       "examples": [
-        { "el": "Εγώ αγαπώ την Ελλάδα.", "en": "I love Greece.", "highlight": "αγαπώ" },
-        { "el": "Εσύ μιλάς πολύ γρήγορα.", "en": "You speak very fast.", "highlight": "μιλάς" },
-        { "el": "Αυτός περνά ωραία.", "en": "He is having a good time.", "highlight": "περνά" },
-        { "el": "Εμείς ρωτάμε τον δάσκαλο.", "en": "We ask the teacher.", "highlight": "ρωτάμε" },
-        { "el": "Εσείς αγαπάτε τα ζώα.", "en": "You (all) love animals.", "highlight": "αγαπάτε" },
-        { "el": "Αυτοί μιλάνε ελληνικά.", "en": "They speak Greek.", "highlight": "μιλάνε" }
+        {
+          "el": "Εγώ αγαπώ την Ελλάδα.",
+          "en": "I love Greece.",
+          "highlight": "αγαπώ"
+        },
+        {
+          "el": "Εσύ μιλάς πολύ γρήγορα.",
+          "en": "You speak very fast.",
+          "highlight": "μιλάς"
+        },
+        {
+          "el": "Αυτός περνά ωραία.",
+          "en": "He is having a good time.",
+          "highlight": "περνά"
+        },
+        {
+          "el": "Εμείς ρωτάμε τον δάσκαλο.",
+          "en": "We ask the teacher.",
+          "highlight": "ρωτάμε"
+        },
+        {
+          "el": "Εσείς αγαπάτε τα ζώα.",
+          "en": "You (all) love animals.",
+          "highlight": "αγαπάτε"
+        },
+        {
+          "el": "Αυτοί μιλάνε ελληνικά.",
+          "en": "They speak Greek.",
+          "highlight": "μιλάνε"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'μιλώ' (to speak) for 'εσύ'?",
-          "options": ["εσύ μιλάς", "εσύ μιλείς", "εσύ μιλά"],
+          "options": [
+            "εσύ μιλάς",
+            "εσύ μιλά",
+            "εσύ μιλείς"
+          ],
           "correctIndex": 0,
           "explanation": "Group B verbs use -άς for εσύ: μιλ + άς = μιλάς. Do not confuse with Group A which uses -εις."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'He passes / he is having a good time' using 'περνώ'?",
-          "options": ["αυτός περνά", "αυτός περνάει", "αυτός περνούμε"],
+          "options": [
+            "αυτός περνά",
+            "αυτός περνάει",
+            "αυτός περνούμε"
+          ],
           "correctIndex": 0,
           "explanation": "The αυτός/ή/ό ending for Group B verbs is -ά: περν + ά = περνά."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which ending is used for 'εμείς' with Group B verbs?",
-          "options": ["-άμε", "-ούμε", "-ετε"],
-          "correctIndex": 0,
-          "explanation": "Group B verbs use -άμε for εμείς (e.g., αγαπάμε, μιλάμε), while Group A uses -ούμε (e.g., γράφουμε, πίνουμε)."
+          "options": [
+            "-ετε",
+            "-άμε",
+            "-ούμε"
+          ],
+          "correctIndex": 1,
+          "explanation": "Group B verbs use -άμε for εμείς (e.g., αγαπάμε, μιλάμε), while Group A uses -ουμε (e.g., γράφουμε, πίνουμε)."
         }
       ]
     },
@@ -115,103 +237,247 @@
           "verb": "είμαι",
           "meaning": "to be",
           "rows": [
-            { "pronoun": "εγώ", "form": "είμαι" },
-            { "pronoun": "εσύ", "form": "είσαι" },
-            { "pronoun": "αυτός/ή/ό", "form": "είναι" },
-            { "pronoun": "εμείς", "form": "είμαστε" },
-            { "pronoun": "εσείς", "form": "είστε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "είναι" }
+            {
+              "pronoun": "εγώ",
+              "form": "είμαι"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "είσαι"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "είναι"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "είμαστε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "είστε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "είναι"
+            }
           ]
         },
         {
           "verb": "έχω",
           "meaning": "to have",
           "rows": [
-            { "pronoun": "εγώ", "form": "έχω" },
-            { "pronoun": "εσύ", "form": "έχεις" },
-            { "pronoun": "αυτός/ή/ό", "form": "έχει" },
-            { "pronoun": "εμείς", "form": "έχουμε" },
-            { "pronoun": "εσείς", "form": "έχετε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "έχουν" }
+            {
+              "pronoun": "εγώ",
+              "form": "έχω"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "έχεις"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "έχει"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "έχουμε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "έχετε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "έχουν"
+            }
           ]
         },
         {
           "verb": "πάω",
           "meaning": "to go",
           "rows": [
-            { "pronoun": "εγώ", "form": "πάω" },
-            { "pronoun": "εσύ", "form": "πας" },
-            { "pronoun": "αυτός/ή/ό", "form": "πάει" },
-            { "pronoun": "εμείς", "form": "πάμε" },
-            { "pronoun": "εσείς", "form": "πάτε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "πάνε" }
+            {
+              "pronoun": "εγώ",
+              "form": "πάω"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "πας"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "πάει"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "πάμε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "πάτε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "πάνε"
+            }
           ]
         },
         {
           "verb": "κάνω",
           "meaning": "to do / to make",
           "rows": [
-            { "pronoun": "εγώ", "form": "κάνω" },
-            { "pronoun": "εσύ", "form": "κάνεις" },
-            { "pronoun": "αυτός/ή/ό", "form": "κάνει" },
-            { "pronoun": "εμείς", "form": "κάνουμε" },
-            { "pronoun": "εσείς", "form": "κάνετε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "κάνουν" }
+            {
+              "pronoun": "εγώ",
+              "form": "κάνω"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "κάνεις"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "κάνει"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "κάνουμε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "κάνετε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "κάνουν"
+            }
           ]
         },
         {
           "verb": "θέλω",
           "meaning": "to want",
           "rows": [
-            { "pronoun": "εγώ", "form": "θέλω" },
-            { "pronoun": "εσύ", "form": "θέλεις" },
-            { "pronoun": "αυτός/ή/ό", "form": "θέλει" },
-            { "pronoun": "εμείς", "form": "θέλουμε" },
-            { "pronoun": "εσείς", "form": "θέλετε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "θέλουν" }
+            {
+              "pronoun": "εγώ",
+              "form": "θέλω"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "θέλεις"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "θέλει"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "θέλουμε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "θέλετε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "θέλουν"
+            }
           ]
         },
         {
           "verb": "λέω",
           "meaning": "to say",
           "rows": [
-            { "pronoun": "εγώ", "form": "λέω" },
-            { "pronoun": "εσύ", "form": "λες" },
-            { "pronoun": "αυτός/ή/ό", "form": "λέει" },
-            { "pronoun": "εμείς", "form": "λέμε" },
-            { "pronoun": "εσείς", "form": "λέτε" },
-            { "pronoun": "αυτοί/ές/ά", "form": "λένε" }
+            {
+              "pronoun": "εγώ",
+              "form": "λέω"
+            },
+            {
+              "pronoun": "εσύ",
+              "form": "λες"
+            },
+            {
+              "pronoun": "αυτός/ή/ό",
+              "form": "λέει"
+            },
+            {
+              "pronoun": "εμείς",
+              "form": "λέμε"
+            },
+            {
+              "pronoun": "εσείς",
+              "form": "λέτε"
+            },
+            {
+              "pronoun": "αυτοί/ές/ά",
+              "form": "λένε"
+            }
           ]
         }
       ],
       "examples": [
-        { "el": "Εγώ είμαι από την Ελλάδα.", "en": "I am from Greece.", "highlight": "είμαι" },
-        { "el": "Αυτός έχει ένα σπίτι στην Αθήνα.", "en": "He has a house in Athens.", "highlight": "έχει" },
-        { "el": "Εμείς πάμε στην παραλία.", "en": "We are going to the beach.", "highlight": "πάμε" },
-        { "el": "Τι κάνεις σήμερα;", "en": "What are you doing today?", "highlight": "κάνεις" },
-        { "el": "Θέλω ένα ποτήρι νερό.", "en": "I want a glass of water.", "highlight": "Θέλω" },
-        { "el": "Τι λες; Δεν σε ακούω.", "en": "What are you saying? I can't hear you.", "highlight": "λες" }
+        {
+          "el": "Εγώ είμαι από την Ελλάδα.",
+          "en": "I am from Greece.",
+          "highlight": "είμαι"
+        },
+        {
+          "el": "Αυτός έχει ένα σπίτι στην Αθήνα.",
+          "en": "He has a house in Athens.",
+          "highlight": "έχει"
+        },
+        {
+          "el": "Εμείς πάμε στην παραλία.",
+          "en": "We are going to the beach.",
+          "highlight": "πάμε"
+        },
+        {
+          "el": "Τι κάνεις σήμερα;",
+          "en": "What are you doing today?",
+          "highlight": "κάνεις"
+        },
+        {
+          "el": "Θέλω ένα ποτήρι νερό.",
+          "en": "I want a glass of water.",
+          "highlight": "Θέλω"
+        },
+        {
+          "el": "Τι λες; Δεν σε ακούω.",
+          "en": "What are you saying? I can't hear you.",
+          "highlight": "λες"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is special about 'είναι' in the conjugation of 'είμαι' (to be)?",
-          "options": ["It is used for both αυτός/ή/ό (he/she/it) and αυτοί/ές/ά (they)", "It is only used for αυτός (he)", "It changes depending on gender"],
-          "correctIndex": 0,
+          "options": [
+            "It is only used for αυτός (he)",
+            "It changes depending on gender",
+            "It is used for both αυτός/ή/ό (he/she/it) and αυτοί/ές/ά (they)"
+          ],
+          "correctIndex": 2,
           "explanation": "Unlike most verbs, 'είμαι' uses the same form 'είναι' for both third person singular (αυτός/ή/ό) and third person plural (αυτοί/ές/ά)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'We go to the market' in Greek?",
-          "options": ["Εμείς πάμε στην αγορά.", "Εμείς πάτε στην αγορά.", "Εμείς πάει στην αγορά."],
+          "options": [
+            "Εμείς πάμε στην αγορά.",
+            "Εμείς πάτε στην αγορά.",
+            "Εμείς πάει στην αγορά."
+          ],
           "correctIndex": 0,
           "explanation": "The εμείς form of 'πάω' (to go) is 'πάμε': Εμείς πάμε στην αγορά. Note: πάτε is the εσείς form and πάει is for αυτός/ή/ό."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct form of 'λέω' (to say) for 'αυτοί' (they)?",
-          "options": ["αυτοί λένε", "αυτοί λέουν", "αυτοί λέτε"],
-          "correctIndex": 0,
+          "options": [
+            "αυτοί λέτε",
+            "αυτοί λέουν",
+            "αυτοί λένε"
+          ],
+          "correctIndex": 2,
           "explanation": "'λέω' is irregular: the αυτοί/ές/ά form is 'λένε' (not λέουν). Full conjugation: λέω, λες, λέει, λέμε, λέτε, λένε."
         }
       ]

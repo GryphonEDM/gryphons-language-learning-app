@@ -4,7 +4,9 @@
   "nameFr": "Le présent",
   "icon": "⏱️",
   "tier": "A1",
-  "prerequisites": ["articles"],
+  "prerequisites": [
+    "articles"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,68 +15,118 @@
       "explanation": "The largest group of French verbs ends in -er in the infinitive (parler, aimer, danser). To conjugate in the present tense, remove -er to get the stem, then add the personal endings: je -e, tu -es, il/elle -e, nous -ons, vous -ez, ils/elles -ent. Example: parler (to speak) → stem: parl- → je parle, tu parles, il/elle parle, nous parlons, vous parlez, ils/elles parlent. Important pronunciation note: the endings -e, -es, and -ent are all silent — je parle, tu parles, and ils parlent all sound identical at the end. The -ons ending sounds like 'ohn' and -ez sounds like 'ay'. Spelling changes: verbs ending in -ger (manger, nager) add a silent e before -ons to keep the soft g sound: nous mangeons. Verbs ending in -cer (commencer, lancer) change c to ç before -ons: nous commençons.",
       "tip": "Three endings are silent in speech: -e, -es, and -ent. This means je parle, tu parles, and ils parlent all sound the same at the end. Only -ons ('ohn') and -ez ('ay') are clearly pronounced. For -ger verbs, always write nous mangeons — the extra e keeps the g soft.",
       "examples": [
-        { "fr": "Je parle français.", "en": "I speak French.", "highlight": "parle" },
-        { "fr": "Tu aimes la musique.", "en": "You like music.", "highlight": "aimes" },
-        { "fr": "Elle danse très bien.", "en": "She dances very well.", "highlight": "danse" },
-        { "fr": "Nous mangeons ensemble.", "en": "We eat together.", "highlight": "mangeons" },
-        { "fr": "Vous travaillez beaucoup.", "en": "You work a lot.", "highlight": "travaillez" },
-        { "fr": "Ils habitent à Paris.", "en": "They live in Paris.", "highlight": "habitent" }
+        {
+          "fr": "Je parle français.",
+          "en": "I speak French.",
+          "highlight": "parle"
+        },
+        {
+          "fr": "Tu aimes la musique.",
+          "en": "You like music.",
+          "highlight": "aimes"
+        },
+        {
+          "fr": "Elle danse très bien.",
+          "en": "She dances very well.",
+          "highlight": "danse"
+        },
+        {
+          "fr": "Nous mangeons ensemble.",
+          "en": "We eat together.",
+          "highlight": "mangeons"
+        },
+        {
+          "fr": "Vous travaillez beaucoup.",
+          "en": "You work a lot.",
+          "highlight": "travaillez"
+        },
+        {
+          "fr": "Ils habitent à Paris.",
+          "en": "They live in Paris.",
+          "highlight": "habitent"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'parler' (to speak) for 'je'?",
-          "options": ["je parle", "je parles", "je parlons"],
+          "options": [
+            "je parle",
+            "je parlons",
+            "je parles"
+          ],
           "correctIndex": 0,
           "explanation": "The je form of -ER verbs drops -er and adds -e: parl + e = parle. The final -e is silent."
         },
         {
           "type": "fill-blank",
           "prompt": "Tu ___ (écouter) de la musique. (You listen to music.)",
-          "acceptedAnswers": ["écoutes"],
+          "acceptedAnswers": [
+            "écoutes"
+          ],
           "hint": "The tu ending for -ER verbs is -es (silent)",
           "explanation": "écouter → stem écout- + es = écoutes. The -es ending is silent, so tu écoutes and je écoute sound nearly the same."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you conjugate 'danser' (to dance) for 'nous'?",
-          "options": ["nous dansons", "nous dansez", "nous dansent"],
+          "options": [
+            "nous dansons",
+            "nous dansent",
+            "nous dansez"
+          ],
           "correctIndex": 0,
           "explanation": "The nous ending for -ER verbs is -ons: dans + ons = dansons. This ending sounds like 'ohn'."
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ (regarder) la télévision. (You watch television.)",
-          "acceptedAnswers": ["regardez"],
+          "acceptedAnswers": [
+            "regardez"
+          ],
           "hint": "The vous ending for -ER verbs is -ez, pronounced 'ay'",
           "explanation": "regarder → stem regard- + ez = regardez. The -ez ending sounds like 'ay', just like the word 'et' (and)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct form of 'manger' (to eat) for 'nous'?",
-          "options": ["nous mangeons", "nous mangons", "nous mangeon"],
-          "correctIndex": 0,
+          "options": [
+            "nous mangons",
+            "nous mangeon",
+            "nous mangeons"
+          ],
+          "correctIndex": 2,
           "explanation": "Verbs ending in -ger add a silent e before -ons to preserve the soft g sound: mang + e + ons = mangeons. Without the e, the g would be hard as in 'gare'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How many of these forms sound different at the end: je parle / tu parles / ils parlent?",
-          "options": ["None — all three endings are silent", "Two are silent, one is pronounced", "All three are pronounced differently"],
+          "options": [
+            "None — all three endings are silent",
+            "Two are silent, one is pronounced",
+            "All three are pronounced differently"
+          ],
           "correctIndex": 0,
           "explanation": "The endings -e, -es, and -ent are all silent. Je parle, tu parles, and ils parlent are all pronounced 'parl'. This is a key feature of French pronunciation."
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ (travailler) à Lyon. (She works in Lyon.)",
-          "acceptedAnswers": ["travaille"],
+          "acceptedAnswers": [
+            "travaille"
+          ],
           "hint": "The il/elle ending for -ER verbs is -e (silent)",
           "explanation": "travailler → stem travaill- + e = travaille. The final -e is silent. Note that the double-l in travailler is pronounced like a 'y' sound."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'aimer' (to like/love) for 'ils'?",
-          "options": ["ils aiment", "ils aimez", "ils aimons"],
-          "correctIndex": 0,
+          "options": [
+            "ils aimez",
+            "ils aimons",
+            "ils aiment"
+          ],
+          "correctIndex": 2,
           "explanation": "The ils/elles ending for -ER verbs is -ent: aim + ent = aiment. The -ent is completely silent — ils aiment sounds identical to il aime."
         }
       ]
@@ -85,67 +137,117 @@
       "explanation": "French has two other major verb groups: -IR verbs and -RE verbs. For regular -IR verbs (finir, choisir, réussir), remove -ir and add: je -is, tu -is, il/elle -it, nous -issons, vous -issez, ils/elles -issent. Notice the -iss- that appears in all plural forms — this is a key marker of this verb group. Example: finir (to finish) → je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent. For -RE verbs (vendre, attendre, répondre), remove -re and add: je -s, tu -s, il/elle [nothing], nous -ons, vous -ez, ils/elles -ent. Example: vendre (to sell) → je vends, tu vends, il vend, nous vendons, vous vendez, ils vendent. The il/elle form of -RE verbs is just the bare stem with no ending added.",
       "tip": "The -iss- infix is the signature of regular -IR verbs in the plural: finissons, finissez, finissent. For -RE verbs, the il/elle form has no ending at all — just the stem: il vend, il attend, il répond. Also note: the final -s and -d in je vends and il vend are both silent.",
       "examples": [
-        { "fr": "Je finis mon travail.", "en": "I finish my work.", "highlight": "finis" },
-        { "fr": "Tu choisis une option.", "en": "You choose an option.", "highlight": "choisis" },
-        { "fr": "Nous finissons à midi.", "en": "We finish at noon.", "highlight": "finissons" },
-        { "fr": "Il vend des légumes.", "en": "He sells vegetables.", "highlight": "vend" },
-        { "fr": "Vous répondez à la question.", "en": "You answer the question.", "highlight": "répondez" },
-        { "fr": "Elles attendent le bus.", "en": "They (fem.) wait for the bus.", "highlight": "attendent" }
+        {
+          "fr": "Je finis mon travail.",
+          "en": "I finish my work.",
+          "highlight": "finis"
+        },
+        {
+          "fr": "Tu choisis une option.",
+          "en": "You choose an option.",
+          "highlight": "choisis"
+        },
+        {
+          "fr": "Nous finissons à midi.",
+          "en": "We finish at noon.",
+          "highlight": "finissons"
+        },
+        {
+          "fr": "Il vend des légumes.",
+          "en": "He sells vegetables.",
+          "highlight": "vend"
+        },
+        {
+          "fr": "Vous répondez à la question.",
+          "en": "You answer the question.",
+          "highlight": "répondez"
+        },
+        {
+          "fr": "Elles attendent le bus.",
+          "en": "They (fem.) wait for the bus.",
+          "highlight": "attendent"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'finir' (to finish) for 'je'?",
-          "options": ["je finis", "je finie", "je finit"],
+          "options": [
+            "je finis",
+            "je finie",
+            "je finit"
+          ],
           "correctIndex": 0,
           "explanation": "The je form of regular -IR verbs drops -ir and adds -is: fin + is = finis. Both je and tu take -is in the singular."
         },
         {
           "type": "fill-blank",
           "prompt": "Nous ___ (choisir) un restaurant. (We choose a restaurant.)",
-          "acceptedAnswers": ["choisissons"],
+          "acceptedAnswers": [
+            "choisissons"
+          ],
           "hint": "The nous form of -IR verbs adds -iss- before -ons",
           "explanation": "choisir → stem chois- + issons = choisissons. The -iss- infix appears in all plural forms of regular -IR verbs."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct nous form of 'réussir' (to succeed)?",
-          "options": ["nous réussissons", "nous réussisons", "nous réussons"],
+          "options": [
+            "nous réussissons",
+            "nous réussons",
+            "nous réussisons"
+          ],
           "correctIndex": 0,
           "explanation": "Regular -IR verbs insert -iss- before the plural endings: réuss + issons = réussissons. This -iss- is the hallmark of this verb class."
         },
         {
           "type": "fill-blank",
           "prompt": "Il ___ (vendre) sa voiture. (He sells his car.)",
-          "acceptedAnswers": ["vend"],
+          "acceptedAnswers": [
+            "vend"
+          ],
           "hint": "The il/elle form of -RE verbs has no added ending — just the stem",
           "explanation": "vendre → stem vend- + nothing = vend. Unlike -ER and -IR verbs, the il/elle form of -RE verbs adds no ending at all. The final d is silent."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of 'attendre' (to wait) for 'tu'?",
-          "options": ["tu attends", "tu attend", "tu attendes"],
-          "correctIndex": 0,
+          "options": [
+            "tu attend",
+            "tu attends",
+            "tu attendes"
+          ],
+          "correctIndex": 1,
           "explanation": "The tu form of -RE verbs adds -s to the stem: attend + s = attends. The final -s is silent."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do 'finir' and 'vendre' differ in the ils/elles form?",
-          "options": ["finir adds -issent; vendre adds -ent", "Both add -issent", "Both add -ent"],
-          "correctIndex": 0,
+          "options": [
+            "Both add -issent",
+            "Both add -ent",
+            "finir adds -issent; vendre adds -ent"
+          ],
+          "correctIndex": 2,
           "explanation": "Regular -IR verbs: ils finissent (with -iss-). Regular -RE verbs: ils vendent (stem + ent, no -iss-). The -iss- is exclusive to the -IR group."
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ (répondre) à l'email. (You reply to the email.)",
-          "acceptedAnswers": ["répondez"],
+          "acceptedAnswers": [
+            "répondez"
+          ],
           "hint": "The vous ending for -RE verbs is -ez",
           "explanation": "répondre → stem répond- + ez = répondez. The vous ending -ez is the same for -ER, -IR, and -RE verbs, always pronounced 'ay'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is correct?",
-          "options": ["Ils remplissent le formulaire.", "Ils remplent le formulaire.", "Ils remplisent le formulaire."],
+          "options": [
+            "Ils remplissent le formulaire.",
+            "Ils remplisent le formulaire.",
+            "Ils remplent le formulaire."
+          ],
           "correctIndex": 0,
           "explanation": "remplir is a regular -IR verb: ils remplissent (stem rempl- + issent). Double-s is required: remplissent, not remplisent."
         }

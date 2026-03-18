@@ -4,7 +4,9 @@
   "nameUk": "Числа, дати і час",
   "icon": "🔢",
   "tier": "B2",
-  "prerequisites": ["cases-genitive"],
+  "prerequisites": [
+    "cases-genitive"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -12,26 +14,137 @@
       "title": "Cardinal Numbers",
       "explanation": "Ukrainian cardinal numbers: один/одна/одне (1), два/дві (2), три (3), чотири (4), п'ять (5), шість (6), сім (7), вісім (8), дев'ять (9), десять (10). Teens: одинадцять (11)...дев'ятнадцять (19). Tens: двадцять (20), тридцять (30), сорок (40), п'ятдесят (50), шістдесят (60), сімдесят (70), вісімдесят (80), дев'яносто (90), сто (100). 'Один/одна/одне' agrees in gender; 'два/дві' has masculine/neuter and feminine forms.",
       "examples": [
-        { "uk": "один хлопець, одна дівчина, одне місто", "en": "one boy, one girl, one city", "highlight": "один/одна/одне" },
-        { "uk": "два брати, дві сестри", "en": "two brothers, two sisters", "highlight": "два/дві" },
-        { "uk": "двадцять п'ять", "en": "twenty-five", "highlight": "двадцять п'ять" }
+        {
+          "uk": "один хлопець, одна дівчина, одне місто",
+          "en": "one boy, one girl, one city",
+          "highlight": "один/одна/одне"
+        },
+        {
+          "uk": "два брати, дві сестри",
+          "en": "two brothers, two sisters",
+          "highlight": "два/дві"
+        },
+        {
+          "uk": "двадцять п'ять",
+          "en": "twenty-five",
+          "highlight": "двадцять п'ять"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'one book' (книга is feminine)?", "options": ["одна книга", "один книга", "одне книга"], "correctIndex": 0, "explanation": "'Книга' is feminine, so use 'одна': одна книга." },
-        { "type": "fill-blank", "prompt": "___ сестри прийшли в гості. (two sisters — fem.)", "acceptedAnswers": ["Дві"], "hint": "Feminine form of два", "explanation": "'Дві' is the feminine form of 'два'. Сестра is feminine, so: дві сестри." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "11", "right": "одинадцять" },
-          { "left": "15", "right": "п'ятнадцять" },
-          { "left": "20", "right": "двадцять" },
-          { "left": "40", "right": "сорок" }
-        ], "explanation": "Teens add -надцять to the base number. 'Сорок' (40) is irregular — not formed from чотири." },
-        { "type": "fill-blank", "prompt": "У класі ___ учнів. (30)", "acceptedAnswers": ["тридцять"], "hint": "три + дцять", "explanation": "Тридцять (30). Tens from 50-80 use -десят: п'ятдесят, шістдесят..." },
-        { "type": "multiple-choice", "prompt": "How do you say 57?", "options": ["п'ятдесят сім", "п'ятьдесят сім", "п'ять десять сім"], "correctIndex": 0, "explanation": "57 = п'ятдесят (50) + сім (7) = п'ятдесят сім." },
-        { "type": "transformation", "prompt": "Write the number in words:", "baseWord": "93", "context": "У бабусі ___ роки.", "acceptedAnswers": ["дев'яносто три"], "hint": "90 + 3", "explanation": "93 = дев'яносто (90) + три (3)." },
-        { "type": "fill-blank", "prompt": "У мене ___ гривень. (100)", "acceptedAnswers": ["сто"], "hint": "A round number", "explanation": "Сто = 100. 'Сто гривень' uses genitive plural after numbers 5+." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "У неї два сестри.", "errorWord": "два", "acceptedAnswers": ["дві"], "explanation": "'Сестра' is feminine, so use 'дві' (not masculine 'два'): дві сестри." },
-        { "type": "multiple-choice", "prompt": "How do you say 'one city' (місто is neuter)?", "options": ["одне місто", "один місто", "одна місто"], "correctIndex": 0, "explanation": "'Місто' is neuter, so use 'одне': одне місто." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Двадцять три студенти вивчають українську.", "acceptedAnswers": ["Двадцять три студенти вивчають українську.", "Двадцять три студенти вивчають українську"], "explanation": "23 = двадцять три. After 2-4 (and compounds ending in 2-4), nouns take nominative plural: студенти." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'one book' (книга is feminine)?",
+          "options": [
+            "одне книга",
+            "одна книга",
+            "один книга"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Книга' is feminine, so use 'одна': одна книга."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ сестри прийшли в гості. (two sisters — fem.)",
+          "acceptedAnswers": [
+            "Дві"
+          ],
+          "hint": "Feminine form of два",
+          "explanation": "'Дві' is the feminine form of 'два'. Сестра is feminine, so: дві сестри."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "11",
+              "right": "одинадцять"
+            },
+            {
+              "left": "15",
+              "right": "п'ятнадцять"
+            },
+            {
+              "left": "20",
+              "right": "двадцять"
+            },
+            {
+              "left": "40",
+              "right": "сорок"
+            }
+          ],
+          "explanation": "Teens add -надцять to the base number. 'Сорок' (40) is irregular — not formed from чотири."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У класі ___ учнів. (30)",
+          "acceptedAnswers": [
+            "тридцять"
+          ],
+          "hint": "три + дцять",
+          "explanation": "Тридцять (30). Tens from 50-80 use -десят: п'ятдесят, шістдесят..."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 57?",
+          "options": [
+            "п'ятдесят сім",
+            "п'ятьдесят сім",
+            "п'ять десять сім"
+          ],
+          "correctIndex": 0,
+          "explanation": "57 = п'ятдесят (50) + сім (7) = п'ятдесят сім."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Write the number in words:",
+          "baseWord": "93",
+          "context": "У бабусі ___ роки.",
+          "acceptedAnswers": [
+            "дев'яносто три"
+          ],
+          "hint": "90 + 3",
+          "explanation": "93 = дев'яносто (90) + три (3)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У мене ___ гривень. (100)",
+          "acceptedAnswers": [
+            "сто"
+          ],
+          "hint": "A round number",
+          "explanation": "Сто = 100. 'Сто гривень' uses genitive plural after numbers 5+."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "У неї два сестри.",
+          "errorWord": "два",
+          "acceptedAnswers": [
+            "дві"
+          ],
+          "explanation": "'Сестра' is feminine, so use 'дві' (not masculine 'два'): дві сестри."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'one city' (місто is neuter)?",
+          "options": [
+            "одне місто",
+            "один місто",
+            "одна місто"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Місто' is neuter, so use 'одне': одне місто."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Двадцять три студенти вивчають українську.",
+          "acceptedAnswers": [
+            "Двадцять три студенти вивчають українську.",
+            "Двадцять три студенти вивчають українську"
+          ],
+          "explanation": "23 = двадцять три. After 2-4 (and compounds ending in 2-4), nouns take nominative plural: студенти."
+        }
       ]
     },
     {
@@ -39,26 +152,151 @@
       "title": "Numbers with Cases",
       "explanation": "Numbers govern different noun cases: 1 + nominative singular (один студент). 2-4 + nominative plural (два студенти, три книги). 5-20 + genitive plural (п'ять студентів, десять книг). For compound numbers, the last digit determines the case: 21 студент, 22 студенти, 25 студентів.",
       "examples": [
-        { "uk": "один студент", "en": "one student (nom. sing.)", "highlight": "студент" },
-        { "uk": "три студенти", "en": "three students (nom. pl.)", "highlight": "студенти" },
-        { "uk": "п'ять студентів", "en": "five students (gen. pl.)", "highlight": "студентів" }
+        {
+          "uk": "один студент",
+          "en": "one student (nom. sing.)",
+          "highlight": "студент"
+        },
+        {
+          "uk": "три студенти",
+          "en": "three students (nom. pl.)",
+          "highlight": "студенти"
+        },
+        {
+          "uk": "п'ять студентів",
+          "en": "five students (gen. pl.)",
+          "highlight": "студентів"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Два ___. (книга — book)", "options": ["книги", "книг", "книга"], "correctIndex": 0, "explanation": "After 2-4, nouns take nominative plural: дві книги." },
-        { "type": "fill-blank", "prompt": "П'ять ___. (студент — student, gen. pl.)", "acceptedAnswers": ["студентів"], "hint": "After 5+, genitive plural", "explanation": "After 5-20, nouns take genitive plural: п'ять студентів." },
-        { "type": "multiple-choice", "prompt": "Двадцять один ___. (рік — year)", "options": ["рік", "роки", "років"], "correctIndex": 0, "explanation": "Compound numbers ending in 1 take nominative singular: двадцять один рік." },
-        { "type": "transformation", "prompt": "Complete with the correct noun form:", "baseWord": "місяць (month)", "context": "Три ___.", "acceptedAnswers": ["місяці"], "hint": "2-4 + nominative plural", "explanation": "After 2-4: три місяці (nominative plural)." },
-        { "type": "fill-blank", "prompt": "Тринадцять ___. (день — day, gen. pl.)", "acceptedAnswers": ["днів"], "hint": "After 13 (5-20 range), genitive plural", "explanation": "Тринадцять днів. Numbers 5-20 require genitive plural. Genitive plural of 'день' is 'днів'." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "У мене є чотири книг.", "errorWord": "книг", "acceptedAnswers": ["книги"], "explanation": "After 2-4, use nominative plural: чотири книги (not genitive plural 'книг')." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "1 + noun", "right": "nominative singular" },
-          { "left": "2-4 + noun", "right": "nominative plural" },
-          { "left": "5-20 + noun", "right": "genitive plural" },
-          { "left": "21 + noun", "right": "nominative singular" }
-        ], "explanation": "The case of the noun depends on the last digit: 1=nom.sg., 2-4=nom.pl., 5-20=gen.pl." },
-        { "type": "fill-blank", "prompt": "Двадцять два ___. (студент — student)", "acceptedAnswers": ["студенти"], "hint": "Ends in 2 → nominative plural", "explanation": "22 ends in 2, so: двадцять два студенти (nominative plural)." },
-        { "type": "multiple-choice", "prompt": "Сто ___. (гривня — hryvnia)", "options": ["гривень", "гривні", "гривня"], "correctIndex": 0, "explanation": "100 is in the 5+ range, so genitive plural: сто гривень." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I have five brothers.", "words": ["У", "мене", "п'ять", "братів"], "distractors": ["брати", "брат"], "validOrders": [["У", "мене", "п'ять", "братів"]], "explanation": "After п'ять (5), genitive plural is required: братів. Not 'брати' (nom. pl.) or 'брат' (nom. sg.)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Два ___. (книга — book)",
+          "options": [
+            "книга",
+            "книги",
+            "книг"
+          ],
+          "correctIndex": 1,
+          "explanation": "After 2-4, nouns take nominative plural: дві книги."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "П'ять ___. (студент — student, gen. pl.)",
+          "acceptedAnswers": [
+            "студентів"
+          ],
+          "hint": "After 5+, genitive plural",
+          "explanation": "After 5-20, nouns take genitive plural: п'ять студентів."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Двадцять один ___. (рік — year)",
+          "options": [
+            "років",
+            "рік",
+            "роки"
+          ],
+          "correctIndex": 1,
+          "explanation": "Compound numbers ending in 1 take nominative singular: двадцять один рік."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Complete with the correct noun form:",
+          "baseWord": "місяць (month)",
+          "context": "Три ___.",
+          "acceptedAnswers": [
+            "місяці"
+          ],
+          "hint": "2-4 + nominative plural",
+          "explanation": "After 2-4: три місяці (nominative plural)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Тринадцять ___. (день — day, gen. pl.)",
+          "acceptedAnswers": [
+            "днів"
+          ],
+          "hint": "After 13 (5-20 range), genitive plural",
+          "explanation": "Тринадцять днів. Numbers 5-20 require genitive plural. Genitive plural of 'день' is 'днів'."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "У мене є чотири книг.",
+          "errorWord": "книг",
+          "acceptedAnswers": [
+            "книги"
+          ],
+          "explanation": "After 2-4, use nominative plural: чотири книги (not genitive plural 'книг')."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "1 + noun",
+              "right": "nominative singular"
+            },
+            {
+              "left": "2-4 + noun",
+              "right": "nominative plural"
+            },
+            {
+              "left": "5-20 + noun",
+              "right": "genitive plural"
+            },
+            {
+              "left": "21 + noun",
+              "right": "nominative singular"
+            }
+          ],
+          "explanation": "The case of the noun depends on the last digit: 1=nom.sg., 2-4=nom.pl., 5-20=gen.pl."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Двадцять два ___. (студент — student)",
+          "acceptedAnswers": [
+            "студенти"
+          ],
+          "hint": "Ends in 2 → nominative plural",
+          "explanation": "22 ends in 2, so: двадцять два студенти (nominative plural)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Сто ___. (гривня — hryvnia)",
+          "options": [
+            "гривня",
+            "гривень",
+            "гривні"
+          ],
+          "correctIndex": 1,
+          "explanation": "100 is in the 5+ range, so genitive plural: сто гривень."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "I have five brothers.",
+          "words": [
+            "У",
+            "мене",
+            "п'ять",
+            "братів"
+          ],
+          "distractors": [
+            "брати",
+            "брат"
+          ],
+          "validOrders": [
+            [
+              "У",
+              "мене",
+              "п'ять",
+              "братів"
+            ]
+          ],
+          "explanation": "After п'ять (5), genitive plural is required: братів. Not 'брати' (nom. pl.) or 'брат' (nom. sg.)."
+        }
       ]
     },
     {
@@ -66,26 +304,137 @@
       "title": "Telling Time",
       "explanation": "To ask the time: Котра година? (What time is it?) Hours use ordinal feminine forms: перша (1:00), друга (2:00), третя (3:00)... Minutes: п'ять хвилин (5 min.), десять хвилин (10 min.). Half past: пів на третю (2:30, literally 'half towards the third'). Quarter: чверть на другу (1:15).",
       "examples": [
-        { "uk": "Котра година? — Третя година.", "en": "What time is it? — It's 3 o'clock.", "highlight": "Третя" },
-        { "uk": "П'ять хвилин на четверту.", "en": "It's 3:05 (five minutes towards the fourth).", "highlight": "П'ять хвилин" },
-        { "uk": "Пів на другу.", "en": "It's 1:30 (half towards the second).", "highlight": "Пів на другу" }
+        {
+          "uk": "Котра година? — Третя година.",
+          "en": "What time is it? — It's 3 o'clock.",
+          "highlight": "Третя"
+        },
+        {
+          "uk": "П'ять хвилин на четверту.",
+          "en": "It's 3:05 (five minutes towards the fourth).",
+          "highlight": "П'ять хвилин"
+        },
+        {
+          "uk": "Пів на другу.",
+          "en": "It's 1:30 (half towards the second).",
+          "highlight": "Пів на другу"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'It's 2 o'clock'?", "options": ["Друга година.", "Два годин.", "Дві години."], "correctIndex": 0, "explanation": "Hours use feminine ordinal numbers: друга година (the second hour)." },
-        { "type": "fill-blank", "prompt": "Котра година? — ___ година. (5:00)", "acceptedAnswers": ["П'ята"], "hint": "Ordinal feminine of п'ять", "explanation": "5:00 = п'ята година. Ordinal feminine: п'ятий → п'ята." },
-        { "type": "multiple-choice", "prompt": "How do you say 1:30?", "options": ["Пів на другу.", "Пів на першу.", "Половина першої."], "correctIndex": 0, "explanation": "1:30 = 'пів на другу' (half towards the second hour). Ukrainian counts towards the next hour." },
-        { "type": "transformation", "prompt": "Express in Ukrainian:", "baseWord": "2:30", "context": "Зараз ___.", "acceptedAnswers": ["пів на третю"], "hint": "Half towards the third hour", "explanation": "2:30 = пів на третю (half towards 3:00)." },
-        { "type": "fill-blank", "prompt": "Зустрінемось о ___ годині. (at 6 o'clock — locative)", "acceptedAnswers": ["шостій"], "hint": "Ordinal feminine locative of шість", "explanation": "'О шостій годині' = at 6 o'clock. The preposition 'о' takes the locative case." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Пів на перша.", "errorWord": "перша", "acceptedAnswers": ["першу"], "explanation": "'Пів на' requires the accusative: пів на першу (12:30), not nominative 'перша'." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "1:00", "right": "перша година" },
-          { "left": "3:30", "right": "пів на четверту" },
-          { "left": "6:15", "right": "чверть на сьому" },
-          { "left": "12:00", "right": "дванадцята година" }
-        ], "explanation": "Full hours use ordinal feminines. :30 = 'пів на' + next hour acc. :15 = 'чверть на' + next hour acc." },
-        { "type": "fill-blank", "prompt": "Чверть на ___. (4:15 — accusative of п'ята)", "acceptedAnswers": ["п'яту"], "hint": "Quarter towards the fifth hour", "explanation": "4:15 = чверть на п'яту (quarter towards the fifth hour, accusative)." },
-        { "type": "multiple-choice", "prompt": "How do you say 'at what time?'", "options": ["О котрій годині?", "Котра година?", "Який час?"], "correctIndex": 0, "explanation": "'О котрій годині?' = At what time? 'Котра година?' = What time is it (now)?" },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Зустрінемось о пів на восьму.", "acceptedAnswers": ["Зустрінемось о пів на восьму.", "Зустрінемось о пів на восьму"], "explanation": "'О пів на восьму' = at 7:30 (half towards the eighth). 'Зустрінемось' = we'll meet." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It's 2 o'clock'?",
+          "options": [
+            "Два годин.",
+            "Дві години.",
+            "Друга година."
+          ],
+          "correctIndex": 2,
+          "explanation": "Hours use feminine ordinal numbers: друга година (the second hour)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Котра година? — ___ година. (5:00)",
+          "acceptedAnswers": [
+            "П'ята"
+          ],
+          "hint": "Ordinal feminine of п'ять",
+          "explanation": "5:00 = п'ята година. Ordinal feminine: п'ятий → п'ята."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 1:30?",
+          "options": [
+            "Пів на другу.",
+            "Половина першої.",
+            "Пів на першу."
+          ],
+          "correctIndex": 0,
+          "explanation": "1:30 = 'пів на другу' (half towards the second hour). Ukrainian counts towards the next hour."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Express in Ukrainian:",
+          "baseWord": "2:30",
+          "context": "Зараз ___.",
+          "acceptedAnswers": [
+            "пів на третю"
+          ],
+          "hint": "Half towards the third hour",
+          "explanation": "2:30 = пів на третю (half towards 3:00)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Зустрінемось о ___ годині. (at 6 o'clock — locative)",
+          "acceptedAnswers": [
+            "шостій"
+          ],
+          "hint": "Ordinal feminine locative of шість",
+          "explanation": "'О шостій годині' = at 6 o'clock. The preposition 'о' takes the locative case."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Пів на перша.",
+          "errorWord": "перша",
+          "acceptedAnswers": [
+            "першу"
+          ],
+          "explanation": "'Пів на' requires the accusative: пів на першу (12:30), not nominative 'перша'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "1:00",
+              "right": "перша година"
+            },
+            {
+              "left": "3:30",
+              "right": "пів на четверту"
+            },
+            {
+              "left": "6:15",
+              "right": "чверть на сьому"
+            },
+            {
+              "left": "12:00",
+              "right": "дванадцята година"
+            }
+          ],
+          "explanation": "Full hours use ordinal feminines. :30 = 'пів на' + next hour acc. :15 = 'чверть на' + next hour acc."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Чверть на ___. (4:15 — accusative of п'ята)",
+          "acceptedAnswers": [
+            "п'яту"
+          ],
+          "hint": "Quarter towards the fifth hour",
+          "explanation": "4:15 = чверть на п'яту (quarter towards the fifth hour, accusative)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'at what time?'",
+          "options": [
+            "Який час?",
+            "Котра година?",
+            "О котрій годині?"
+          ],
+          "correctIndex": 2,
+          "explanation": "'О котрій годині?' = At what time? 'Котра година?' = What time is it (now)?"
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Зустрінемось о пів на восьму.",
+          "acceptedAnswers": [
+            "Зустрінемось о пів на восьму.",
+            "Зустрінемось о пів на восьму"
+          ],
+          "explanation": "'О пів на восьму' = at 7:30 (half towards the eighth). 'Зустрінемось' = we'll meet."
+        }
       ]
     },
     {
@@ -93,31 +442,165 @@
       "title": "Days, Months, Dates",
       "explanation": "Days of the week: понеділок (Monday), вівторок (Tuesday), середа (Wednesday), четвер (Thursday), п'ятниця (Friday), субота (Saturday), неділя (Sunday). Months: січень (January), лютий (February), березень (March), квітень (April), травень (May), червень (June), липень (July), серпень (August), вересень (September), жовтень (October), листопад (November), грудень (December). Dates use ordinal + genitive month: першого січня (January 1st).",
       "examples": [
-        { "uk": "Сьогодні понеділок.", "en": "Today is Monday.", "highlight": "понеділок" },
-        { "uk": "Мій день народження п'ятого травня.", "en": "My birthday is May 5th.", "highlight": "п'ятого травня" },
-        { "uk": "У середу я піду до лікаря.", "en": "On Wednesday I'll go to the doctor.", "highlight": "середу" }
+        {
+          "uk": "Сьогодні понеділок.",
+          "en": "Today is Monday.",
+          "highlight": "понеділок"
+        },
+        {
+          "uk": "Мій день народження п'ятого травня.",
+          "en": "My birthday is May 5th.",
+          "highlight": "п'ятого травня"
+        },
+        {
+          "uk": "У середу я піду до лікаря.",
+          "en": "On Wednesday I'll go to the doctor.",
+          "highlight": "середу"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Which is 'Wednesday' in Ukrainian?", "options": ["середа", "четвер", "п'ятниця"], "correctIndex": 0, "explanation": "Середа = Wednesday. It comes from 'середина' (middle) — the middle of the work week." },
-        { "type": "fill-blank", "prompt": "Новий рік — першого ___. (January, genitive)", "acceptedAnswers": ["січня"], "hint": "Genitive of січень", "explanation": "Dates use genitive for the month: першого січня (January 1st). Січень → січня." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "понеділок", "right": "Monday" },
-          { "left": "середа", "right": "Wednesday" },
-          { "left": "п'ятниця", "right": "Friday" },
-          { "left": "неділя", "right": "Sunday" }
-        ], "explanation": "Days of the week in Ukrainian. Note: 'неділя' (Sunday) literally means 'not working'." },
-        { "type": "transformation", "prompt": "Express this date in Ukrainian:", "baseWord": "March 8", "context": "Свято — ___.", "acceptedAnswers": ["восьмого березня"], "hint": "Ordinal genitive + month genitive", "explanation": "March 8 = восьмого березня. Ordinal genitive masc. + month in genitive." },
-        { "type": "fill-blank", "prompt": "У ___ я завжди відпочиваю. (on Saturday — accusative)", "acceptedAnswers": ["суботу"], "hint": "Feminine day → accusative -у", "explanation": "'У суботу' = on Saturday. Days with feminine ending take accusative: субота → суботу." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Мій день народження десяте грудень.", "errorWord": "десяте грудень", "acceptedAnswers": ["десятого грудня"], "explanation": "Dates use genitive: десятого (ordinal gen.) грудня (month gen.). Not nominative forms." },
-        { "type": "multiple-choice", "prompt": "How do you say 'on Thursday'?", "options": ["у четвер", "у четверг", "на четвер"], "correctIndex": 0, "explanation": "'У четвер' = on Thursday. Masculine days use 'у' without a case change." },
-        { "type": "fill-blank", "prompt": "Літо починається першого ___. (June, genitive)", "acceptedAnswers": ["червня"], "hint": "Genitive of червень", "explanation": "Червень → червня (genitive). Summer starts on June 1st: першого червня." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "січень", "right": "January" },
-          { "left": "квітень", "right": "April" },
-          { "left": "серпень", "right": "August" },
-          { "left": "листопад", "right": "November" }
-        ], "explanation": "Ukrainian months. 'Листопад' (November) literally means 'leaf fall'." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "My birthday is on September 15th.", "words": ["Мій", "день", "народження", "п'ятнадцятого", "вересня"], "distractors": ["п'ятнадцять", "вересень"], "validOrders": [["Мій", "день", "народження", "п'ятнадцятого", "вересня"]], "explanation": "Dates require ordinal genitive (п'ятнадцятого) + month genitive (вересня). Not cardinal numbers or nominative forms." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is 'Wednesday' in Ukrainian?",
+          "options": [
+            "середа",
+            "четвер",
+            "п'ятниця"
+          ],
+          "correctIndex": 0,
+          "explanation": "Середа = Wednesday. It comes from 'середина' (middle) — the middle of the work week."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Новий рік — першого ___. (January, genitive)",
+          "acceptedAnswers": [
+            "січня"
+          ],
+          "hint": "Genitive of січень",
+          "explanation": "Dates use genitive for the month: першого січня (January 1st). Січень → січня."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "понеділок",
+              "right": "Monday"
+            },
+            {
+              "left": "середа",
+              "right": "Wednesday"
+            },
+            {
+              "left": "п'ятниця",
+              "right": "Friday"
+            },
+            {
+              "left": "неділя",
+              "right": "Sunday"
+            }
+          ],
+          "explanation": "Days of the week in Ukrainian. Note: 'неділя' (Sunday) literally means 'not working'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Express this date in Ukrainian:",
+          "baseWord": "March 8",
+          "context": "Свято — ___.",
+          "acceptedAnswers": [
+            "восьмого березня"
+          ],
+          "hint": "Ordinal genitive + month genitive",
+          "explanation": "March 8 = восьмого березня. Ordinal genitive masc. + month in genitive."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "У ___ я завжди відпочиваю. (on Saturday — accusative)",
+          "acceptedAnswers": [
+            "суботу"
+          ],
+          "hint": "Feminine day → accusative -у",
+          "explanation": "'У суботу' = on Saturday. Days with feminine ending take accusative: субота → суботу."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Мій день народження десяте грудень.",
+          "errorWord": "десяте грудень",
+          "acceptedAnswers": [
+            "десятого грудня"
+          ],
+          "explanation": "Dates use genitive: десятого (ordinal gen.) грудня (month gen.). Not nominative forms."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'on Thursday'?",
+          "options": [
+            "у четверг",
+            "на четвер",
+            "у четвер"
+          ],
+          "correctIndex": 2,
+          "explanation": "'У четвер' = on Thursday. Masculine days use 'у' without a case change."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Літо починається першого ___. (June, genitive)",
+          "acceptedAnswers": [
+            "червня"
+          ],
+          "hint": "Genitive of червень",
+          "explanation": "Червень → червня (genitive). Summer starts on June 1st: першого червня."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "січень",
+              "right": "January"
+            },
+            {
+              "left": "квітень",
+              "right": "April"
+            },
+            {
+              "left": "серпень",
+              "right": "August"
+            },
+            {
+              "left": "листопад",
+              "right": "November"
+            }
+          ],
+          "explanation": "Ukrainian months. 'Листопад' (November) literally means 'leaf fall'."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "My birthday is on September 15th.",
+          "words": [
+            "Мій",
+            "день",
+            "народження",
+            "п'ятнадцятого",
+            "вересня"
+          ],
+          "distractors": [
+            "п'ятнадцять",
+            "вересень"
+          ],
+          "validOrders": [
+            [
+              "Мій",
+              "день",
+              "народження",
+              "п'ятнадцятого",
+              "вересня"
+            ]
+          ],
+          "explanation": "Dates require ordinal genitive (п'ятнадцятого) + month genitive (вересня). Not cardinal numbers or nominative forms."
+        }
       ]
     }
   ]

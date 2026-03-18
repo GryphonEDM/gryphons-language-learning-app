@@ -4,7 +4,9 @@
   "nameZh": "能愿动词",
   "icon": "💪",
   "tier": "A2",
-  "prerequisites": ["basic-verbs"],
+  "prerequisites": [
+    "basic-verbs"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,23 +15,46 @@
       "explanation": "能 (néng) expresses physical ability or circumstantial possibility — whether something is possible given the situation or one's physical capacity. It answers the question 'Is it physically possible?' or 'Do the circumstances allow it?' Unlike 会 (huì), which refers to learned skills, 能 focuses on whether conditions permit an action. The negative form is 不能 (bù néng), meaning 'cannot' due to circumstances or physical limitation. 能 is placed directly before the main verb: Subject + 能 + Verb + Object.",
       "tip": "Think of 能 as 'able to' based on external conditions. If someone is sick and can't come to work, you use 不能 — the ability exists but circumstances prevent it. If someone never learned to swim, you'd use 不会 instead.",
       "examples": [
-        { "zh": "我今天不能去上班。", "en": "I can't go to work today. (e.g., I'm sick)", "highlight": "不能" },
-        { "zh": "你能看见那座山吗？", "en": "Can you see that mountain?", "highlight": "能" },
-        { "zh": "这里能停车吗？", "en": "Can one park here? (Is parking possible here?)", "highlight": "能" },
-        { "zh": "他跑得很快，能赢比赛。", "en": "He runs very fast and can win the race.", "highlight": "能" }
+        {
+          "zh": "我今天不能去上班。",
+          "en": "I can't go to work today. (e.g., I'm sick)",
+          "highlight": "不能"
+        },
+        {
+          "zh": "你能看见那座山吗？",
+          "en": "Can you see that mountain?",
+          "highlight": "能"
+        },
+        {
+          "zh": "这里能停车吗？",
+          "en": "Can one park here? (Is parking possible here?)",
+          "highlight": "能"
+        },
+        {
+          "zh": "他跑得很快，能赢比赛。",
+          "en": "He runs very fast and can win the race.",
+          "highlight": "能"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "我生病了，今天___去学校。(I'm sick; I can't go to school today.)",
-          "options": ["不会", "不能", "不可以", "不想"],
-          "correctIndex": 1,
+          "options": [
+            "不能",
+            "不可以",
+            "不会",
+            "不想"
+          ],
+          "correctIndex": 0,
           "explanation": "不能 is used because circumstances (being sick) prevent the action. 不会 would mean you never learned how to go to school."
         },
         {
           "type": "fill-blank",
           "prompt": "你___帮我搬这个箱子吗？(Can you help me move this box?)",
-          "acceptedAnswers": ["能"],
+          "acceptedAnswers": [
+            "能"
+          ],
           "hint": "You're asking if someone is physically able to help — use the modal for physical ability."
         },
         {
@@ -37,11 +62,11 @@
           "prompt": "Which sentence correctly uses 能 for circumstantial possibility?",
           "options": [
             "我能说中文。(I can speak Chinese — learned skill)",
-            "明天能下雨。(It can rain tomorrow.)",
             "下雨了，我们不能出去。(It's raining; we can't go out.)",
-            "我能想去北京。(I can want to go to Beijing.)"
+            "我能想去北京。(I can want to go to Beijing.)",
+            "明天能下雨。(It can rain tomorrow.)"
           ],
-          "correctIndex": 2,
+          "correctIndex": 1,
           "explanation": "不能出去 correctly uses 能 for circumstantial impossibility — rain prevents going out. The first option would be better with 会 (learned skill)."
         }
       ]
@@ -52,23 +77,46 @@
       "explanation": "会 (huì) has two main uses. First, it expresses a learned skill or acquired ability — something you studied or practiced to be able to do, like speaking a language, playing an instrument, or cooking. Second, it expresses future probability or likelihood — that something will or is likely to happen. Context makes the meaning clear. The negative form is 不会 (bù huì), meaning either 'cannot (never learned)' or 'won't (unlikely to happen)'. Like 能, it goes before the verb: Subject + 会 + Verb + Object.",
       "tip": "For skills, ask yourself: 'Did I learn this?' If yes, use 会. Compare: 我会游泳 (I can swim — I learned how) vs. 我今天不能游泳 (I can't swim today — maybe the pool is closed). For probability, 会 works like 'will' in English: 明天会下雨 (It will rain tomorrow).",
       "examples": [
-        { "zh": "她会说三种语言。", "en": "She can speak three languages. (learned skill)", "highlight": "会说" },
-        { "zh": "我不会做饭。", "en": "I can't cook. (never learned how)", "highlight": "不会" },
-        { "zh": "明天会下雨吗？", "en": "Will it rain tomorrow? (probability)", "highlight": "会" },
-        { "zh": "别担心，他会来的。", "en": "Don't worry, he will come.", "highlight": "会来" }
+        {
+          "zh": "她会说三种语言。",
+          "en": "She can speak three languages. (learned skill)",
+          "highlight": "会说"
+        },
+        {
+          "zh": "我不会做饭。",
+          "en": "I can't cook. (never learned how)",
+          "highlight": "不会"
+        },
+        {
+          "zh": "明天会下雨吗？",
+          "en": "Will it rain tomorrow? (probability)",
+          "highlight": "会"
+        },
+        {
+          "zh": "别担心，他会来的。",
+          "en": "Don't worry, he will come.",
+          "highlight": "会来"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "我___弹钢琴，学了五年。(I can play piano; I studied for five years.)",
-          "options": ["能", "会", "可以", "想"],
+          "options": [
+            "想",
+            "会",
+            "能",
+            "可以"
+          ],
           "correctIndex": 1,
           "explanation": "会 is correct because playing piano is a learned skill. The sentence even specifies years of study."
         },
         {
           "type": "fill-blank",
           "prompt": "别担心，明天___好的。(Don't worry, tomorrow will be fine.)",
-          "acceptedAnswers": ["会"],
+          "acceptedAnswers": [
+            "会"
+          ],
           "hint": "You're expressing future probability — something that will likely happen."
         },
         {
@@ -76,11 +124,11 @@
           "prompt": "What is the difference between 我不会游泳 and 我不能游泳?",
           "options": [
             "They mean the same thing.",
-            "不会 = I never learned to swim; 不能 = I can't swim right now (circumstances prevent it).",
+            "不会 is formal; 不能 is informal.",
             "不会 = I won't swim; 不能 = I don't like swimming.",
-            "不会 is formal; 不能 is informal."
+            "不会 = I never learned to swim; 不能 = I can't swim right now (circumstances prevent it)."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "不会游泳 means you never acquired the skill. 不能游泳 means something currently prevents you — maybe the pool is closed or you're injured."
         }
       ]
@@ -91,35 +139,59 @@
       "explanation": "可以 (kěyǐ) is used to ask for, grant, or describe permission. It means 'may' or 'to be allowed to'. When asking permission, the typical pattern is: 我可以...吗？(May I...?). To grant permission, simply say 可以 (yes, you may). The negative forms carry an important distinction: 不可以 (bù kěyǐ) means 'not allowed / may not' — it implies a rule or prohibition. 不能 (bù néng) can also mean 'cannot' in the sense of prohibition, but tends to sound stronger and more absolute. In practice, 不可以 and 不能 overlap when expressing prohibition, but 不可以 feels more like 'it's not permitted' while 不能 feels more like 'it's impossible / absolutely cannot'.",
       "tip": "Use 可以 when rules or social norms are involved. For strong prohibitions (like laws), Chinese speakers often prefer 不能 or even 不准 (bù zhǔn). When someone asks 可以吗？, you can reply 可以 (sure) or 不行 (bù xíng — no way).",
       "examples": [
-        { "zh": "我可以坐这里吗？", "en": "May I sit here?", "highlight": "可以" },
-        { "zh": "这里不可以抽烟。", "en": "Smoking is not allowed here.", "highlight": "不可以" },
-        { "zh": "你可以用我的电脑。", "en": "You may use my computer.", "highlight": "可以" },
-        { "zh": "考试的时候不能用手机。", "en": "You cannot use phones during exams. (strong prohibition)", "highlight": "不能" }
+        {
+          "zh": "我可以坐这里吗？",
+          "en": "May I sit here?",
+          "highlight": "可以"
+        },
+        {
+          "zh": "这里不可以抽烟。",
+          "en": "Smoking is not allowed here.",
+          "highlight": "不可以"
+        },
+        {
+          "zh": "你可以用我的电脑。",
+          "en": "You may use my computer.",
+          "highlight": "可以"
+        },
+        {
+          "zh": "考试的时候不能用手机。",
+          "en": "You cannot use phones during exams. (strong prohibition)",
+          "highlight": "不能"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "老师，我___去洗手间吗？(Teacher, may I go to the restroom?)",
-          "options": ["能", "会", "可以", "想"],
-          "correctIndex": 2,
+          "options": [
+            "会",
+            "可以",
+            "想",
+            "能"
+          ],
+          "correctIndex": 1,
           "explanation": "可以 is the correct modal for asking permission. You're asking whether you are allowed to go."
         },
         {
           "type": "fill-blank",
           "prompt": "图书馆里___大声说话。(You may not speak loudly in the library.)",
-          "acceptedAnswers": ["不可以", "不能"],
+          "acceptedAnswers": [
+            "不可以",
+            "不能"
+          ],
           "hint": "This is a rule/prohibition — use the negative form of the permission modal."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the nuance between 不可以 and 不能 when expressing prohibition?",
           "options": [
-            "They are completely identical with no difference.",
             "不可以 = 'not permitted' (rule-based); 不能 = 'cannot' (stronger, more absolute).",
+            "不能 is polite; 不可以 is rude.",
             "不可以 is only for questions; 不能 is only for statements.",
-            "不能 is polite; 不可以 is rude."
+            "They are completely identical with no difference."
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "不可以 emphasizes that something is not permitted by rules. 不能 is broader and stronger — it can mean both 'impossible' and 'absolutely prohibited'."
         }
       ]
@@ -130,33 +202,56 @@
       "explanation": "想 (xiǎng) expresses desire, intention, or 'wanting to' do something. It is softer than 要 (yào), which can sound more determined or demanding. The negative 不想 (bù xiǎng) means 'don't want to' or 'don't feel like it'. 应该 (yīnggāi) means 'should' or 'ought to' — it expresses moral obligation, expectation, or logical deduction. The negative 不应该 (bù yīnggāi) means 'shouldn't'. Both go before the verb: Subject + 想/应该 + Verb + Object. 想 can also mean 'to think' or 'to miss (someone)', but as a modal verb it specifically means 'want to'.",
       "tip": "想 is your everyday 'want to' — it sounds natural and not pushy. For stronger intent, use 要 (yào): 我要走了 (I'm leaving now — decided). 应该 is like English 'should' — it gives advice or states expectations, not commands. For direct orders, use 必须 (bìxū, 'must').",
       "examples": [
-        { "zh": "我想喝咖啡。", "en": "I want to drink coffee.", "highlight": "想" },
-        { "zh": "他不想去派对。", "en": "He doesn't want to go to the party.", "highlight": "不想" },
-        { "zh": "你应该多运动。", "en": "You should exercise more.", "highlight": "应该" },
-        { "zh": "我们不应该浪费时间。", "en": "We shouldn't waste time.", "highlight": "不应该" }
+        {
+          "zh": "我想喝咖啡。",
+          "en": "I want to drink coffee.",
+          "highlight": "想"
+        },
+        {
+          "zh": "他不想去派对。",
+          "en": "He doesn't want to go to the party.",
+          "highlight": "不想"
+        },
+        {
+          "zh": "你应该多运动。",
+          "en": "You should exercise more.",
+          "highlight": "应该"
+        },
+        {
+          "zh": "我们不应该浪费时间。",
+          "en": "We shouldn't waste time.",
+          "highlight": "不应该"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "我___去中国旅游。(I want to travel to China.)",
-          "options": ["能", "会", "应该", "想"],
-          "correctIndex": 3,
+          "options": [
+            "想",
+            "应该",
+            "能",
+            "会"
+          ],
+          "correctIndex": 0,
           "explanation": "想 expresses a desire or wish. The speaker wants to travel — it's about personal desire, not ability, permission, or obligation."
         },
         {
           "type": "fill-blank",
           "prompt": "你___早点儿睡觉。(You should go to bed earlier.)",
-          "acceptedAnswers": ["应该"],
+          "acceptedAnswers": [
+            "应该"
+          ],
           "hint": "This is advice about what someone ought to do — use the 'should' modal."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which pair correctly shows the difference between 想 and 应该?",
           "options": [
-            "想 = must do; 应该 = want to do",
-            "想 = want to (desire); 应该 = should (obligation/advice)",
             "想 = will do; 应该 = can do",
-            "想 = may do; 应该 = might do"
+            "想 = want to (desire); 应该 = should (obligation/advice)",
+            "想 = may do; 应该 = might do",
+            "想 = must do; 应该 = want to do"
           ],
           "correctIndex": 1,
           "explanation": "想 expresses personal desire ('I want to'), while 应该 expresses obligation or advice ('you should'). They serve very different functions."

@@ -4,7 +4,10 @@
   "nameEs": "Introducción al Subjuntivo",
   "icon": "🌀",
   "tier": "B2",
-  "prerequisites": ["present-tense", "ser-estar"],
+  "prerequisites": [
+    "present-tense",
+    "ser-estar"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +16,119 @@
       "explanation": "The present subjunctive is built from the yo form of the present indicative. Start with the yo form, drop the -o, then add the 'opposite' vowel endings — this is the key 'flip-vowel' rule. For -AR verbs (hablar → yo hablo → stem habl-), add the -ER endings: -e, -es, -e, -emos, -éis, -en. For -ER and -IR verbs (comer → yo como → stem com-; vivir → yo vivo → stem viv-), add the -AR endings: -a, -as, -a, -amos, -áis, -an. Because the stem comes from the yo form, stem-changing and irregular yo forms carry through automatically. For example: tener → yo tengo → subj. stem teng- → tenga, tengas, tenga…; hacer → yo hago → hag- → haga, hagas…; conocer → yo conozco → conozc- → conozca, conozcas…",
       "tip": "Remember the two steps: (1) take the yo-present stem (drop the -o), (2) flip the vowel. -AR verbs get -e endings; -ER/-IR verbs get -a endings. Any irregularity in the yo form is automatically inherited by all subjunctive forms.",
       "examples": [
-        { "es": "hablar → hablo → habl- → hable, hables, hable, hablemos, habléis, hablen", "en": "-AR verb: flip to -e endings", "highlight": "hable" },
-        { "es": "comer → como → com- → coma, comas, coma, comamos, comáis, coman", "en": "-ER verb: flip to -a endings", "highlight": "coma" },
-        { "es": "vivir → vivo → viv- → viva, vivas, viva, vivamos, viváis, vivan", "en": "-IR verb: flip to -a endings", "highlight": "viva" },
-        { "es": "tener → tengo → teng- → tenga, tengas, tenga…", "en": "Irregular yo form carries into all subjunctive forms", "highlight": "tenga" },
-        { "es": "hacer → hago → hag- → haga, hagas, haga…", "en": "hacer subjunctive stem from yo hago", "highlight": "haga" },
-        { "es": "ir → voy → vay- → vaya, vayas, vaya…", "en": "Fully irregular: ir subjunctive", "highlight": "vaya" }
+        {
+          "es": "hablar → hablo → habl- → hable, hables, hable, hablemos, habléis, hablen",
+          "en": "-AR verb: flip to -e endings",
+          "highlight": "hable"
+        },
+        {
+          "es": "comer → como → com- → coma, comas, coma, comamos, comáis, coman",
+          "en": "-ER verb: flip to -a endings",
+          "highlight": "coma"
+        },
+        {
+          "es": "vivir → vivo → viv- → viva, vivas, viva, vivamos, viváis, vivan",
+          "en": "-IR verb: flip to -a endings",
+          "highlight": "viva"
+        },
+        {
+          "es": "tener → tengo → teng- → tenga, tengas, tenga…",
+          "en": "Irregular yo form carries into all subjunctive forms",
+          "highlight": "tenga"
+        },
+        {
+          "es": "hacer → hago → hag- → haga, hagas, haga…",
+          "en": "hacer subjunctive stem from yo hago",
+          "highlight": "haga"
+        },
+        {
+          "es": "ir → voy → vay- → vaya, vayas, vaya…",
+          "en": "Fully irregular: ir subjunctive",
+          "highlight": "vaya"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the yo form of the present subjunctive of 'hablar'?",
-          "options": ["hable", "habla", "hablas", "hablio"],
-          "correctIndex": 0,
+          "options": [
+            "hablas",
+            "hable",
+            "habla",
+            "hablio"
+          ],
+          "correctIndex": 1,
           "explanation": "hablar → yo hablo → stem habl- → flip vowel to -e → yo hable."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella ___ (comer) la ensalada. (subjunctive, ella form)",
-          "acceptedAnswers": ["coma"],
+          "acceptedAnswers": [
+            "coma"
+          ],
           "hint": "comer → como → com- → flip to -a endings",
           "explanation": "comer: yo como → stem com- → ella coma (flip to -a ending for -ER verbs)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct nosotros subjunctive form of 'vivir'?",
-          "options": ["vivamos", "vivemos", "vivimos", "vivan"],
+          "options": [
+            "vivamos",
+            "vivimos",
+            "vivemos",
+            "vivan"
+          ],
           "correctIndex": 0,
           "explanation": "vivir → vivo → viv- → nosotros vivamos (flip to -a endings: -amos for nosotros)."
         },
         {
           "type": "fill-blank",
           "prompt": "Tú ___ (hablar) más despacio. (subjunctive, tú form)",
-          "acceptedAnswers": ["hables"],
+          "acceptedAnswers": [
+            "hables"
+          ],
           "hint": "hablar is -AR, so flip to -e endings. Tú ending is -es.",
           "explanation": "hablar → habl- → tú hables. The tú subjunctive of -AR verbs ends in -es."
         },
         {
           "type": "multiple-choice",
           "prompt": "The subjunctive stem of 'tener' comes from which yo form?",
-          "options": ["tengo → teng-", "teno → ten-", "tenero → tener-", "tiene → tien-"],
-          "correctIndex": 0,
+          "options": [
+            "teno → ten-",
+            "tiene → tien-",
+            "tengo → teng-",
+            "tenero → tener-"
+          ],
+          "correctIndex": 2,
           "explanation": "Irregular yo: tengo. Drop -o → stem teng-. All subjunctive forms use this stem: tenga, tengas, tenga, tengamos, tengáis, tengan."
         },
         {
           "type": "fill-blank",
           "prompt": "Ellos ___ (hacer) la tarea. (subjunctive, ellos form)",
-          "acceptedAnswers": ["hagan"],
+          "acceptedAnswers": [
+            "hagan"
+          ],
           "hint": "hacer → yo hago → stem hag- → ellos ending for -ER verbs is -an",
           "explanation": "hacer → hago → hag- → ellos hagan. Irregular yo form hago gives stem hag-."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the ella/usted subjunctive of 'ir'?",
-          "options": ["vaya", "ira", "vaya", "va"],
-          "correctIndex": 0,
+          "options": [
+            "ira",
+            "vaya",
+            "va",
+            "vaya"
+          ],
+          "correctIndex": 3,
           "explanation": "ir is fully irregular in the subjunctive. The stem is vay-: vaya, vayas, vaya, vayamos, vayáis, vayan."
         },
         {
           "type": "fill-blank",
           "prompt": "Nosotros ___ (comer) juntos. (subjunctive, nosotros form)",
-          "acceptedAnswers": ["comamos"],
+          "acceptedAnswers": [
+            "comamos"
+          ],
           "hint": "comer → com- → nosotros ending is -amos for -ER/-IR flip-vowel",
           "explanation": "comer → com- → nosotros comamos. Note: -emos would be the indicative nosotros; the subjunctive flips to -amos."
         }
@@ -85,39 +140,77 @@
       "explanation": "The subjunctive is required after certain verbs and expressions that convey wishes, desires, emotions, recommendations, or impersonal judgments — especially when the subject of the main clause differs from the subject of the subordinate clause. The structure is: trigger verb/expression + que + subjunctive. Common triggers include: querer que (to want that), esperar que (to hope that), desear que (to wish that), recomendar que (to recommend that), pedir que (to ask/request that), aconsejar que (to advise that), and impersonal expressions like es importante que, es necesario que, es bueno que, es mejor que, ojalá que. The conjunction 'que' introduces the subjunctive clause. If there is only one subject, use the infinitive instead: Quiero ir (I want to go — same subject) vs. Quiero que vayas (I want you to go — different subjects).",
       "tip": "A useful memory trick: WEIRDO — Wishes, Emotion, Impersonal expressions, Recommendations/Requests, Doubt/Denial, Ojalá. Whenever one of these categories appears with a subject change and 'que', the subjunctive follows.",
       "examples": [
-        { "es": "Quiero que tú estudies más.", "en": "I want you to study more.", "highlight": "estudies" },
-        { "es": "Espero que ella llegue a tiempo.", "en": "I hope she arrives on time.", "highlight": "llegue" },
-        { "es": "Él recomienda que nosotros comamos aquí.", "en": "He recommends that we eat here.", "highlight": "comamos" },
-        { "es": "Es importante que vosotros habléis con el médico.", "en": "It is important that you all speak with the doctor.", "highlight": "habléis" },
-        { "es": "Ojalá que haga buen tiempo.", "en": "Hopefully the weather will be nice.", "highlight": "haga" },
-        { "es": "Te pido que tengas paciencia.", "en": "I ask you to have patience.", "highlight": "tengas" }
+        {
+          "es": "Quiero que tú estudies más.",
+          "en": "I want you to study more.",
+          "highlight": "estudies"
+        },
+        {
+          "es": "Espero que ella llegue a tiempo.",
+          "en": "I hope she arrives on time.",
+          "highlight": "llegue"
+        },
+        {
+          "es": "Él recomienda que nosotros comamos aquí.",
+          "en": "He recommends that we eat here.",
+          "highlight": "comamos"
+        },
+        {
+          "es": "Es importante que vosotros habléis con el médico.",
+          "en": "It is important that you all speak with the doctor.",
+          "highlight": "habléis"
+        },
+        {
+          "es": "Ojalá que haga buen tiempo.",
+          "en": "Hopefully the weather will be nice.",
+          "highlight": "haga"
+        },
+        {
+          "es": "Te pido que tengas paciencia.",
+          "en": "I ask you to have patience.",
+          "highlight": "tengas"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Quiero que tú ___ (hablar) con tu jefe.",
-          "options": ["hables", "hablas", "hablar", "habla"],
-          "correctIndex": 0,
+          "options": [
+            "habla",
+            "hablar",
+            "hablas",
+            "hables"
+          ],
+          "correctIndex": 3,
           "explanation": "querer que triggers the subjunctive. hablar → tú hables (flip to -e endings)."
         },
         {
           "type": "fill-blank",
           "prompt": "Espero que él ___ (llegar) pronto. (I hope he arrives soon.)",
-          "acceptedAnswers": ["llegue"],
+          "acceptedAnswers": [
+            "llegue"
+          ],
           "hint": "esperar que triggers subjunctive; llegar → él llegue",
           "explanation": "esperar que → subjunctive. llegar → llegu- (spelling change to keep the g sound before e) → él llegue."
         },
         {
           "type": "multiple-choice",
           "prompt": "Es importante que nosotros ___ (ser) puntuales.",
-          "options": ["seamos", "somos", "ser", "sean"],
+          "options": [
+            "seamos",
+            "somos",
+            "ser",
+            "sean"
+          ],
           "correctIndex": 0,
           "explanation": "es importante que triggers subjunctive. ser is irregular: seamos (nosotros subjunctive of ser)."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella recomienda que vosotros ___ (comer) más verduras.",
-          "acceptedAnswers": ["comáis"],
+          "acceptedAnswers": [
+            "comáis"
+          ],
           "hint": "recomendar que → subjunctive; comer vosotros form is -áis",
           "explanation": "recomendar que → subjunctive. comer → com- → vosotros comáis (flip to -a endings; vosotros -áis)."
         },
@@ -125,18 +218,20 @@
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses a subjunctive trigger?",
           "options": [
-            "Espero que ellos vengan mañana.",
-            "Espero que ellos vienen mañana.",
             "Espero ellos vienen mañana.",
-            "Espero que ellos vendrán mañana."
+            "Espero que ellos vendrán mañana.",
+            "Espero que ellos vienen mañana.",
+            "Espero que ellos vengan mañana."
           ],
-          "correctIndex": 0,
+          "correctIndex": 3,
           "explanation": "esperar que requires subjunctive: vengan (ellos, from venir → vengo → veng- → vengan). The indicative 'vienen' or future 'vendrán' are incorrect here."
         },
         {
           "type": "fill-blank",
           "prompt": "Ojalá que tú ___ (tener) suerte. (Hopefully you'll have luck.)",
-          "acceptedAnswers": ["tengas"],
+          "acceptedAnswers": [
+            "tengas"
+          ],
           "hint": "ojalá que always triggers subjunctive; tener → yo tengo → teng-",
           "explanation": "ojalá que always requires subjunctive. tener → tengo → teng- → tú tengas."
         },
@@ -144,18 +239,20 @@
           "type": "multiple-choice",
           "prompt": "When do you use the infinitive instead of que + subjunctive after 'querer'?",
           "options": [
+            "When the sentence is negative",
             "When both clauses share the same subject",
             "When the verb is -AR",
-            "When the sentence is negative",
             "When the subject is ellos"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "Same subject → infinitive: Quiero ir (I want to go). Different subjects → que + subjunctive: Quiero que vayas (I want you to go)."
         },
         {
           "type": "fill-blank",
           "prompt": "Es necesario que ella ___ (hacer) ejercicio. (It is necessary that she exercise.)",
-          "acceptedAnswers": ["haga"],
+          "acceptedAnswers": [
+            "haga"
+          ],
           "hint": "es necesario que → subjunctive; hacer → yo hago → hag-",
           "explanation": "es necesario que triggers subjunctive. hacer → hago → hag- → ella haga."
         }
@@ -167,39 +264,77 @@
       "explanation": "The choice between subjunctive and indicative often hinges on certainty. When the speaker presents something as fact or expresses genuine belief, use the indicative. When expressing doubt, denial, uncertainty, or when the reality of the subordinate event is not asserted, use the subjunctive. The clearest contrast is with creer que (to believe/think that): affirmative 'Creo que' signals the speaker believes the fact → indicative. Negative 'No creo que' signals doubt or denial → subjunctive. The same pattern holds for other verbs of mental state: pensar que / no pensar que, estar seguro de que / no estar seguro de que, es evidente que (indicative) / no es evidente que (subjunctive), es verdad que (indicative) / no es verdad que (subjunctive). Similarly, questions can tip toward the subjunctive: ¿Crees que venga? (doubtful question) vs. ¿Crees que viene? (asking for a fact). The indicative reports reality; the subjunctive marks unreality, uncertainty, or speaker-colored evaluation.",
       "tip": "Quick test: if you can substitute 'I know for a fact that…' the indicative fits. If you can substitute 'I doubt that…' or 'It's not certain that…', use the subjunctive. Affirmative creer/pensar → indicative. Negative or doubtful creer/pensar → subjunctive.",
       "examples": [
-        { "es": "Creo que viene mañana.", "en": "I believe he is coming tomorrow. (stated as fact)", "highlight": "viene" },
-        { "es": "No creo que venga mañana.", "en": "I don't believe he is coming tomorrow. (doubt)", "highlight": "venga" },
-        { "es": "Es verdad que ella trabaja mucho.", "en": "It is true that she works a lot. (fact)", "highlight": "trabaja" },
-        { "es": "No es verdad que ella trabaje mucho.", "en": "It is not true that she works a lot. (denial)", "highlight": "trabaje" },
-        { "es": "Pensamos que el examen es fácil.", "en": "We think the exam is easy. (belief stated as fact)", "highlight": "es" },
-        { "es": "No pensamos que el examen sea fácil.", "en": "We don't think the exam is easy. (doubt/denial)", "highlight": "sea" }
+        {
+          "es": "Creo que viene mañana.",
+          "en": "I believe he is coming tomorrow. (stated as fact)",
+          "highlight": "viene"
+        },
+        {
+          "es": "No creo que venga mañana.",
+          "en": "I don't believe he is coming tomorrow. (doubt)",
+          "highlight": "venga"
+        },
+        {
+          "es": "Es verdad que ella trabaja mucho.",
+          "en": "It is true that she works a lot. (fact)",
+          "highlight": "trabaja"
+        },
+        {
+          "es": "No es verdad que ella trabaje mucho.",
+          "en": "It is not true that she works a lot. (denial)",
+          "highlight": "trabaje"
+        },
+        {
+          "es": "Pensamos que el examen es fácil.",
+          "en": "We think the exam is easy. (belief stated as fact)",
+          "highlight": "es"
+        },
+        {
+          "es": "No pensamos que el examen sea fácil.",
+          "en": "We don't think the exam is easy. (doubt/denial)",
+          "highlight": "sea"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Creo que él ___ (estar) en casa. (I think he is at home — stated as likely fact)",
-          "options": ["está", "esté", "estar", "estará"],
-          "correctIndex": 0,
+          "options": [
+            "esté",
+            "está",
+            "estará",
+            "estar"
+          ],
+          "correctIndex": 1,
           "explanation": "Affirmative 'creo que' presents the clause as a believed fact → indicative: está."
         },
         {
           "type": "fill-blank",
           "prompt": "No creo que él ___ (estar) en casa. (I don't think he is at home.)",
-          "acceptedAnswers": ["esté"],
+          "acceptedAnswers": [
+            "esté"
+          ],
           "hint": "Negative 'no creo que' expresses doubt → subjunctive",
           "explanation": "Negative creer que → subjunctive. estar is irregular in subjunctive: esté, estés, esté, estemos, estéis, estén (all with written accents on the stem vowel)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Es verdad que ellos ___ (vivir) en Barcelona.",
-          "options": ["viven", "vivan", "vivir", "viva"],
+          "options": [
+            "viven",
+            "vivan",
+            "viva",
+            "vivir"
+          ],
           "correctIndex": 0,
           "explanation": "es verdad que affirms a fact → indicative: viven (ellos present indicative of vivir)."
         },
         {
           "type": "fill-blank",
           "prompt": "No es verdad que ellos ___ (vivir) en Barcelona.",
-          "acceptedAnswers": ["vivan"],
+          "acceptedAnswers": [
+            "vivan"
+          ],
           "hint": "no es verdad que negates and denies → subjunctive",
           "explanation": "no es verdad que → subjunctive. vivir → viv- → ellos vivan."
         },
@@ -207,18 +342,21 @@
           "type": "multiple-choice",
           "prompt": "Which sentence is grammatically correct?",
           "options": [
-            "No pienso que sea una buena idea.",
-            "No pienso que es una buena idea.",
             "Pienso que sea una buena idea.",
-            "No pienso que sería una buena idea."
+            "No pienso que sería una buena idea.",
+            "No pienso que sea una buena idea.",
+            "No pienso que es una buena idea."
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "no pensar que → subjunctive → sea (ser subjunctive ella/usted form). Affirmative pensar que would use the indicative es. The conditional sería is not used here."
         },
         {
           "type": "fill-blank",
           "prompt": "Pensamos que el tiempo ___ (ser) bueno mañana. (We think the weather will be good — stated as belief)",
-          "acceptedAnswers": ["será", "es"],
+          "acceptedAnswers": [
+            "será",
+            "es"
+          ],
           "hint": "Affirmative pensar que → indicative; future or present indicative both acceptable",
           "explanation": "Affirmative pensar que uses the indicative. Both 'será' (future) and 'es' (present used for near future) are acceptable indicative forms here."
         },
@@ -228,8 +366,8 @@
           "options": [
             "Affirmative: sabe / Negative: no creo que sepa",
             "Affirmative: sepa / Negative: no creo que sabe",
-            "Affirmative: sabe / Negative: no creo que sabe",
-            "Affirmative: sepa / Negative: no creo que sepa"
+            "Affirmative: sepa / Negative: no creo que sepa",
+            "Affirmative: sabe / Negative: no creo que sabe"
           ],
           "correctIndex": 0,
           "explanation": "Affirmative creo que → indicative: sabe. Negative no creo que → subjunctive: sepa (saber irregular subjunctive: yo sé → s- + ep- → sepa, sepas, sepa…)."
@@ -237,7 +375,9 @@
         {
           "type": "fill-blank",
           "prompt": "No estoy seguro de que María ___ (venir) a la fiesta. (I'm not sure María is coming to the party.)",
-          "acceptedAnswers": ["venga"],
+          "acceptedAnswers": [
+            "venga"
+          ],
           "hint": "no estar seguro de que expresses uncertainty → subjunctive; venir → yo vengo → veng-",
           "explanation": "no estar seguro de que signals uncertainty → subjunctive. venir → vengo → veng- → ella venga."
         }

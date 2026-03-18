@@ -4,7 +4,9 @@
   "nameUk": "Ступені порівняння",
   "icon": "📊",
   "tier": "B1",
-  "prerequisites": ["adjectives-gender"],
+  "prerequisites": [
+    "adjectives-gender"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -12,26 +14,137 @@
       "title": "Comparative Forms",
       "explanation": "To form the comparative, add -іший/-іша/-іше to the stem: красивий → красивіший. For common short adjectives, add -ший/-ша/-ше: великий → більший. Some are irregular: добрий → кращий, поганий → гірший, малий → менший.",
       "examples": [
-        { "uk": "Ця книга цікавіша.", "en": "This book is more interesting.", "highlight": "цікавіша" },
-        { "uk": "Він сильніший за мене.", "en": "He is stronger than me.", "highlight": "сильніший" },
-        { "uk": "Сьогодні погода кращa.", "en": "Today the weather is better.", "highlight": "кращa" }
+        {
+          "uk": "Ця книга цікавіша.",
+          "en": "This book is more interesting.",
+          "highlight": "цікавіша"
+        },
+        {
+          "uk": "Він сильніший за мене.",
+          "en": "He is stronger than me.",
+          "highlight": "сильніший"
+        },
+        {
+          "uk": "Сьогодні погода кращa.",
+          "en": "Today the weather is better.",
+          "highlight": "кращa"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the comparative form of 'великий' (big)?", "options": ["більший", "великіший", "великіш"], "correctIndex": 0, "explanation": "'Великий' has the irregular comparative 'більший'." },
-        { "type": "fill-blank", "prompt": "Ця задача ___ за ту. (складний — difficult, comparative fem.)", "acceptedAnswers": ["складніша"], "hint": "Add -іша for feminine comparative", "explanation": "Складний → складніший (masc.) → складніша (fem.)." },
-        { "type": "transformation", "prompt": "Form the comparative:", "baseWord": "красивий (beautiful)", "context": "Ця квітка ___.", "acceptedAnswers": ["красивіша"], "hint": "Add -іша for feminine", "explanation": "Красивий → красивіший → красивіша (feminine)." },
-        { "type": "multiple-choice", "prompt": "What is the comparative of 'добрий' (good)?", "options": ["кращий", "добріший", "найдобріший"], "correctIndex": 0, "explanation": "'Добрий' has the irregular comparative 'кращий' (better)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Він поганіший за мене в математиці.", "errorWord": "поганіший", "acceptedAnswers": ["гірший"], "explanation": "'Поганий' has the irregular comparative 'гірший' (worse), not 'поганіший'." },
-        { "type": "fill-blank", "prompt": "Мій брат ___ за мене. (високий — tall, comparative masc.)", "acceptedAnswers": ["вищий"], "hint": "Високий has an irregular comparative", "explanation": "Високий → вищий (taller). The -к- drops and the stem shortens." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "добрий", "right": "кращий" },
-          { "left": "поганий", "right": "гірший" },
-          { "left": "великий", "right": "більший" },
-          { "left": "малий", "right": "менший" }
-        ], "explanation": "These are the four most common irregular comparatives in Ukrainian." },
-        { "type": "multiple-choice", "prompt": "Ця вулиця ___ за ту. (широкий — wide)", "options": ["ширша", "широкіша", "ширшій"], "correctIndex": 0, "explanation": "Широкий → ширший/ширша. The -ок- drops in the comparative." },
-        { "type": "fill-blank", "prompt": "Сьогодні ___ ніж учора. (теплий — warm, comparative neut.)", "acceptedAnswers": ["тепліше"], "hint": "Neuter comparative: -іше", "explanation": "Теплий → тепліший → тепліше (neuter, used impersonally for weather)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Ця кімната більша за ту.", "acceptedAnswers": ["Ця кімната більша за ту.", "Ця кімната більша за ту"], "explanation": "'Більша' is the feminine comparative of 'великий', agreeing with 'кімната'. 'За ту' means 'than that one'." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative form of 'великий' (big)?",
+          "options": [
+            "великіший",
+            "більший",
+            "великіш"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Великий' has the irregular comparative 'більший'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ця задача ___ за ту. (складний — difficult, comparative fem.)",
+          "acceptedAnswers": [
+            "складніша"
+          ],
+          "hint": "Add -іша for feminine comparative",
+          "explanation": "Складний → складніший (masc.) → складніша (fem.)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the comparative:",
+          "baseWord": "красивий (beautiful)",
+          "context": "Ця квітка ___.",
+          "acceptedAnswers": [
+            "красивіша"
+          ],
+          "hint": "Add -іша for feminine",
+          "explanation": "Красивий → красивіший → красивіша (feminine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative of 'добрий' (good)?",
+          "options": [
+            "найдобріший",
+            "кращий",
+            "добріший"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Добрий' has the irregular comparative 'кращий' (better)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Він поганіший за мене в математиці.",
+          "errorWord": "поганіший",
+          "acceptedAnswers": [
+            "гірший"
+          ],
+          "explanation": "'Поганий' has the irregular comparative 'гірший' (worse), not 'поганіший'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мій брат ___ за мене. (високий — tall, comparative masc.)",
+          "acceptedAnswers": [
+            "вищий"
+          ],
+          "hint": "Високий has an irregular comparative",
+          "explanation": "Високий → вищий (taller). The -к- drops and the stem shortens."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "добрий",
+              "right": "кращий"
+            },
+            {
+              "left": "поганий",
+              "right": "гірший"
+            },
+            {
+              "left": "великий",
+              "right": "більший"
+            },
+            {
+              "left": "малий",
+              "right": "менший"
+            }
+          ],
+          "explanation": "These are the four most common irregular comparatives in Ukrainian."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ця вулиця ___ за ту. (широкий — wide)",
+          "options": [
+            "ширшій",
+            "ширша",
+            "широкіша"
+          ],
+          "correctIndex": 1,
+          "explanation": "Широкий → ширший/ширша. The -ок- drops in the comparative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Сьогодні ___ ніж учора. (теплий — warm, comparative neut.)",
+          "acceptedAnswers": [
+            "тепліше"
+          ],
+          "hint": "Neuter comparative: -іше",
+          "explanation": "Теплий → тепліший → тепліше (neuter, used impersonally for weather)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "text": "Ця кімната більша за ту.",
+          "acceptedAnswers": [
+            "Ця кімната більша за ту.",
+            "Ця кімната більша за ту"
+          ],
+          "explanation": "'Більша' is the feminine comparative of 'великий', agreeing with 'кімната'. 'За ту' means 'than that one'."
+        }
       ]
     },
     {
@@ -39,26 +152,149 @@
       "title": "Superlative Forms",
       "explanation": "To form the superlative, add the prefix най- to the comparative: більший → найбільший (biggest), кращий → найкращий (best). Alternatively, use 'найбільш' + adjective: найбільш цікавий (most interesting).",
       "examples": [
-        { "uk": "Це найкращий фільм.", "en": "This is the best movie.", "highlight": "найкращий" },
-        { "uk": "Вона найрозумніша в класі.", "en": "She is the smartest in class.", "highlight": "найрозумніша" },
-        { "uk": "Це найбільш важливе питання.", "en": "This is the most important question.", "highlight": "найбільш важливе" }
+        {
+          "uk": "Це найкращий фільм.",
+          "en": "This is the best movie.",
+          "highlight": "найкращий"
+        },
+        {
+          "uk": "Вона найрозумніша в класі.",
+          "en": "She is the smartest in class.",
+          "highlight": "найрозумніша"
+        },
+        {
+          "uk": "Це найбільш важливе питання.",
+          "en": "This is the most important question.",
+          "highlight": "найбільш важливе"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the superlative of 'добрий' (good)?", "options": ["найкращий", "найдобріший", "кращий"], "correctIndex": 0, "explanation": "Добрий → кращий (comparative) → найкращий (superlative)." },
-        { "type": "fill-blank", "prompt": "Це ___ будинок у місті. (високий — tall, superlative masc.)", "acceptedAnswers": ["найвищий"], "hint": "най- + comparative form", "explanation": "Високий → вищий → найвищий (tallest)." },
-        { "type": "transformation", "prompt": "Form the superlative:", "baseWord": "цікавий (interesting)", "context": "Це ___ книга.", "acceptedAnswers": ["найцікавіша"], "hint": "най- + comparative feminine", "explanation": "Цікавий → цікавіший → найцікавіша (fem. superlative)." },
-        { "type": "multiple-choice", "prompt": "Це ___ день у моєму житті. (поганий — bad, superlative)", "options": ["найгірший", "найпоганіший", "гірший"], "correctIndex": 0, "explanation": "Поганий → гірший → найгірший (worst)." },
-        { "type": "fill-blank", "prompt": "Вона ___ студентка в університеті. (розумний — smart, superlative fem.)", "acceptedAnswers": ["найрозумніша"], "hint": "най- + comparative feminine (-іша)", "explanation": "Розумний → розумніша → найрозумніша." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Це самий великий парк у місті.", "errorWord": "самий", "acceptedAnswers": ["найбільший"], "explanation": "Ukrainian doesn't use 'самий' for superlatives (that's a Russian pattern). The correct form is 'найбільший парк'." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "добрий (good)", "right": "найкращий (best)" },
-          { "left": "поганий (bad)", "right": "найгірший (worst)" },
-          { "left": "великий (big)", "right": "найбільший (biggest)" },
-          { "left": "малий (small)", "right": "найменший (smallest)" }
-        ], "explanation": "Superlatives are formed by adding най- to the irregular comparative forms." },
-        { "type": "multiple-choice", "prompt": "Which is a valid alternative superlative for 'найважливіший'?", "options": ["найбільш важливий", "самий важливий", "більш важливий"], "correctIndex": 0, "explanation": "'Найбільш + adjective' is the analytical superlative, equivalent to the synthetic form." },
-        { "type": "fill-blank", "prompt": "Це ___ місто в Україні. (старий — old, superlative neut.)", "acceptedAnswers": ["найстаріше"], "hint": "The comparative of старий is старіший", "explanation": "Старий → старіший → найстаріше (neuter superlative)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "This is the most beautiful city.", "words": ["Це", "найгарніше", "місто"], "distractors": ["найгарніший", "гарніше"], "validOrders": [["Це", "найгарніше", "місто"]], "explanation": "'Місто' is neuter, so the superlative must be 'найгарніше' (neuter form)." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the superlative of 'добрий' (good)?",
+          "options": [
+            "найкращий",
+            "найдобріший",
+            "кращий"
+          ],
+          "correctIndex": 0,
+          "explanation": "Добрий → кращий (comparative) → найкращий (superlative)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це ___ будинок у місті. (високий — tall, superlative masc.)",
+          "acceptedAnswers": [
+            "найвищий"
+          ],
+          "hint": "най- + comparative form",
+          "explanation": "Високий → вищий → найвищий (tallest)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the superlative:",
+          "baseWord": "цікавий (interesting)",
+          "context": "Це ___ книга.",
+          "acceptedAnswers": [
+            "найцікавіша"
+          ],
+          "hint": "най- + comparative feminine",
+          "explanation": "Цікавий → цікавіший → найцікавіша (fem. superlative)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Це ___ день у моєму житті. (поганий — bad, superlative)",
+          "options": [
+            "найпоганіший",
+            "гірший",
+            "найгірший"
+          ],
+          "correctIndex": 2,
+          "explanation": "Поганий → гірший → найгірший (worst)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона ___ студентка в університеті. (розумний — smart, superlative fem.)",
+          "acceptedAnswers": [
+            "найрозумніша"
+          ],
+          "hint": "най- + comparative feminine (-іша)",
+          "explanation": "Розумний → розумніша → найрозумніша."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Це самий великий парк у місті.",
+          "errorWord": "самий",
+          "acceptedAnswers": [
+            "найбільший"
+          ],
+          "explanation": "Ukrainian doesn't use 'самий' for superlatives (that's a Russian pattern). The correct form is 'найбільший парк'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "добрий (good)",
+              "right": "найкращий (best)"
+            },
+            {
+              "left": "поганий (bad)",
+              "right": "найгірший (worst)"
+            },
+            {
+              "left": "великий (big)",
+              "right": "найбільший (biggest)"
+            },
+            {
+              "left": "малий (small)",
+              "right": "найменший (smallest)"
+            }
+          ],
+          "explanation": "Superlatives are formed by adding най- to the irregular comparative forms."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is a valid alternative superlative for 'найважливіший'?",
+          "options": [
+            "більш важливий",
+            "самий важливий",
+            "найбільш важливий"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Найбільш + adjective' is the analytical superlative, equivalent to the synthetic form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Це ___ місто в Україні. (старий — old, superlative neut.)",
+          "acceptedAnswers": [
+            "найстаріше"
+          ],
+          "hint": "The comparative of старий is старіший",
+          "explanation": "Старий → старіший → найстаріше (neuter superlative)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "This is the most beautiful city.",
+          "words": [
+            "Це",
+            "найгарніше",
+            "місто"
+          ],
+          "distractors": [
+            "найгарніший",
+            "гарніше"
+          ],
+          "validOrders": [
+            [
+              "Це",
+              "найгарніше",
+              "місто"
+            ]
+          ],
+          "explanation": "'Місто' is neuter, so the superlative must be 'найгарніше' (neuter form)."
+        }
       ]
     },
     {
@@ -66,26 +302,154 @@
       "title": "Comparisons in Sentences",
       "explanation": "Use 'ніж' or 'за' for 'than': Він старший за мене / Він старший, ніж я. Use 'такий...як' for 'as...as': Він такий високий, як я. Use 'менш' for 'less': менш важливий (less important).",
       "examples": [
-        { "uk": "Він розумніший, ніж я.", "en": "He is smarter than me.", "highlight": "ніж" },
-        { "uk": "Вона така висока, як її мама.", "en": "She is as tall as her mom.", "highlight": "така...як" },
-        { "uk": "Це менш складне завдання.", "en": "This is a less difficult task.", "highlight": "менш складне" }
+        {
+          "uk": "Він розумніший, ніж я.",
+          "en": "He is smarter than me.",
+          "highlight": "ніж"
+        },
+        {
+          "uk": "Вона така висока, як її мама.",
+          "en": "She is as tall as her mom.",
+          "highlight": "така...як"
+        },
+        {
+          "uk": "Це менш складне завдання.",
+          "en": "This is a less difficult task.",
+          "highlight": "менш складне"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Мій дім більший ___ твого. (than)", "options": ["за", "як", "від"], "correctIndex": 0, "explanation": "'За' is used with comparatives to mean 'than' when followed by a noun/pronoun in the accusative." },
-        { "type": "fill-blank", "prompt": "Вона така розумна, ___ її сестра. (as)", "acceptedAnswers": ["як"], "hint": "такий...як means 'as...as'", "explanation": "'Такий/така/таке...як' expresses equality: 'as...as'." },
-        { "type": "transformation", "prompt": "Rewrite using 'ніж':", "baseWord": "Він старший за мене.", "context": "Він старший, ___ я.", "acceptedAnswers": ["ніж"], "hint": "'ніж' is an alternative to 'за' for comparisons", "explanation": "'Ніж' + nominative is an alternative to 'за' + accusative for expressing 'than'." },
-        { "type": "multiple-choice", "prompt": "Ця книга ___ цікава, ніж та. (less)", "options": ["менш", "менше", "мало"], "correctIndex": 0, "explanation": "'Менш' (less) is used before adjectives to form the opposite of a comparative." },
-        { "type": "fill-blank", "prompt": "Літо ___ за зиму. (warm — comparative neut.)", "acceptedAnswers": ["тепліше"], "hint": "Теплий → comparative neuter", "explanation": "Теплий → тепліше (neuter comparative, used for seasons)." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "sentence": "Він такий високий ніж я.", "errorWord": "ніж", "acceptedAnswers": ["як"], "explanation": "With 'такий...як' (as...as), you must use 'як', not 'ніж'. 'Ніж' is only for comparatives." },
-        { "type": "multiple-choice", "prompt": "Which sentence means 'Spring is warmer than winter'?", "options": ["Весна тепліша за зиму.", "Весна така тепла, як зима.", "Весна менш тепла за зиму."], "correctIndex": 0, "explanation": "'Тепліша за зиму' = warmer than winter. Option 2 means 'as warm as' and option 3 means 'less warm than'." },
-        { "type": "fill-blank", "prompt": "Ця задача не ___ складна, ___ та. (as...as)", "acceptedAnswers": ["така...як", "така, як"], "hint": "такий/така/таке...як", "explanation": "Negative comparison: не така складна, як та = not as difficult as that one." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "більший за (+ acc.)", "right": "bigger than" },
-          { "left": "такий...як", "right": "as...as" },
-          { "left": "менш", "right": "less" },
-          { "left": "ніж (+ nom.)", "right": "than" }
-        ], "explanation": "'За' + accusative and 'ніж' + nominative both mean 'than'. 'Такий...як' = 'as...as'. 'Менш' = 'less'." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "My brother is taller than me.", "words": ["Мій", "брат", "вищий", "за", "мене"], "distractors": ["ніж", "як"], "validOrders": [["Мій", "брат", "вищий", "за", "мене"]], "explanation": "'Вищий за мене' uses 'за' + accusative. 'Ніж я' would also be correct but with nominative." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Мій дім більший ___ твого. (than)",
+          "options": [
+            "як",
+            "за",
+            "від"
+          ],
+          "correctIndex": 1,
+          "explanation": "'За' is used with comparatives to mean 'than' when followed by a noun/pronoun in the accusative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Вона така розумна, ___ її сестра. (as)",
+          "acceptedAnswers": [
+            "як"
+          ],
+          "hint": "такий...як means 'as...as'",
+          "explanation": "'Такий/така/таке...як' expresses equality: 'as...as'."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Rewrite using 'ніж':",
+          "baseWord": "Він старший за мене.",
+          "context": "Він старший, ___ я.",
+          "acceptedAnswers": [
+            "ніж"
+          ],
+          "hint": "'ніж' is an alternative to 'за' for comparisons",
+          "explanation": "'Ніж' + nominative is an alternative to 'за' + accusative for expressing 'than'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Ця книга ___ цікава, ніж та. (less)",
+          "options": [
+            "менш",
+            "менше",
+            "мало"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Менш' (less) is used before adjectives to form the opposite of a comparative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Літо ___ за зиму. (warm — comparative neut.)",
+          "acceptedAnswers": [
+            "тепліше"
+          ],
+          "hint": "Теплий → comparative neuter",
+          "explanation": "Теплий → тепліше (neuter comparative, used for seasons)."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "sentence": "Він такий високий ніж я.",
+          "errorWord": "ніж",
+          "acceptedAnswers": [
+            "як"
+          ],
+          "explanation": "With 'такий...як' (as...as), you must use 'як', not 'ніж'. 'Ніж' is only for comparatives."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'Spring is warmer than winter'?",
+          "options": [
+            "Весна тепліша за зиму.",
+            "Весна менш тепла за зиму.",
+            "Весна така тепла, як зима."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Тепліша за зиму' = warmer than winter. Option 2 means 'as warm as' and option 3 means 'less warm than'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ця задача не ___ складна, ___ та. (as...as)",
+          "acceptedAnswers": [
+            "така...як",
+            "така, як"
+          ],
+          "hint": "такий/така/таке...як",
+          "explanation": "Negative comparison: не така складна, як та = not as difficult as that one."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "більший за (+ acc.)",
+              "right": "bigger than"
+            },
+            {
+              "left": "такий...як",
+              "right": "as...as"
+            },
+            {
+              "left": "менш",
+              "right": "less"
+            },
+            {
+              "left": "ніж (+ nom.)",
+              "right": "than"
+            }
+          ],
+          "explanation": "'За' + accusative and 'ніж' + nominative both mean 'than'. 'Такий...як' = 'as...as'. 'Менш' = 'less'."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "My brother is taller than me.",
+          "words": [
+            "Мій",
+            "брат",
+            "вищий",
+            "за",
+            "мене"
+          ],
+          "distractors": [
+            "ніж",
+            "як"
+          ],
+          "validOrders": [
+            [
+              "Мій",
+              "брат",
+              "вищий",
+              "за",
+              "мене"
+            ]
+          ],
+          "explanation": "'Вищий за мене' uses 'за' + accusative. 'Ніж я' would also be correct but with nominative."
+        }
       ]
     }
   ]

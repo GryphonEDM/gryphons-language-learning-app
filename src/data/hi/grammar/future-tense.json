@@ -4,7 +4,9 @@
   "nameHi": "भविष्यकाल",
   "icon": "⏩",
   "tier": "A2",
-  "prerequisites": ["postpositions"],
+  "prerequisites": [
+    "postpositions"
+  ],
   "estimatedMinutes": 18,
   "sections": [
     {
@@ -13,32 +15,64 @@
       "explanation": "The definite future tense in Hindi expresses actions that will happen in the future with reasonable certainty — plans, intentions, and predictions. It is formed by adding future suffixes directly to the verb root. The suffixes vary by person, gender, and number. For the verb करना (to do): मैं करूँगा/करूँगी (I will do, masc./fem.), तू करेगा/करेगी (you will do, intimate), तुम करोगे/करोगी (you will do, informal), आप करेंगे/करेंगी (you will do, formal), वह/यह करेगा/करेगी (he/she/it will do), हम करेंगे/करेंगी (we will do), वे/ये करेंगे/करेंगी (they will do). Notice that the future tense does NOT use the ने construction — the verb always agrees with the subject. The गा/गी/गे suffix is the hallmark of the Hindi future tense. Masculine forms end in -गा (singular) or -गे (plural/formal), while feminine forms end in -गी (both singular and plural).",
       "tip": "The future tense is simple: verb root + personal suffix + गा/गी/गे. There is no ने construction in the future. Remember: -गा for masculine singular, -गी for all feminine, -गे for masculine plural and formal आप.",
       "examples": [
-        { "hi": "मैं कल दिल्ली जाऊँगा।", "en": "I will go to Delhi tomorrow. (male speaker)", "highlight": "जाऊँगा" },
-        { "hi": "मैं कल दिल्ली जाऊँगी।", "en": "I will go to Delhi tomorrow. (female speaker)", "highlight": "जाऊँगी" },
-        { "hi": "वह अगले साल शादी करेगा।", "en": "He will get married next year.", "highlight": "करेगा" },
-        { "hi": "हम साथ खाना खाएँगे।", "en": "We will eat food together.", "highlight": "खाएँगे" },
-        { "hi": "आप क्या पिएँगे?", "en": "What will you drink? (formal)", "highlight": "पिएँगे" }
+        {
+          "hi": "मैं कल दिल्ली जाऊँगा।",
+          "en": "I will go to Delhi tomorrow. (male speaker)",
+          "highlight": "जाऊँगा"
+        },
+        {
+          "hi": "मैं कल दिल्ली जाऊँगी।",
+          "en": "I will go to Delhi tomorrow. (female speaker)",
+          "highlight": "जाऊँगी"
+        },
+        {
+          "hi": "वह अगले साल शादी करेगा।",
+          "en": "He will get married next year.",
+          "highlight": "करेगा"
+        },
+        {
+          "hi": "हम साथ खाना खाएँगे।",
+          "en": "We will eat food together.",
+          "highlight": "खाएँगे"
+        },
+        {
+          "hi": "आप क्या पिएँगे?",
+          "en": "What will you drink? (formal)",
+          "highlight": "पिएँगे"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How would a female speaker say 'I will write'?",
-          "options": ["मैं लिखूँगा।", "मैं लिखूँगी।", "मैं लिखेगी।"],
-          "correctIndex": 1,
+          "options": [
+            "मैं लिखूँगी।",
+            "मैं लिखेगी।",
+            "मैं लिखूँगा।"
+          ],
+          "correctIndex": 0,
           "explanation": "A female speaker uses the feminine suffix -ऊँगी with the first person: लिख + ऊँगी = लिखूँगी. The masculine equivalent is लिखूँगा."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct future tense form for 'वे (they, masc.) will come'?",
-          "options": ["वे आएँगे।", "वे आएगा।", "वे आएँगी।"],
+          "options": [
+            "वे आएँगे।",
+            "वे आएगा।",
+            "वे आएँगी।"
+          ],
           "correctIndex": 0,
           "explanation": "For masculine plural subjects like वे (they), the future suffix is -एँगे: आ + एँगे = आएँगे. The singular form would be आएगा, and the feminine plural would be आएँगी."
         },
         {
           "type": "multiple-choice",
           "prompt": "Does the future tense use the ने postposition with transitive verbs?",
-          "options": ["Yes, just like the past tense", "No, the future tense never uses ने", "Only with formal subjects"],
-          "correctIndex": 1,
+          "options": [
+            "No, the future tense never uses ने",
+            "Only with formal subjects",
+            "Yes, just like the past tense"
+          ],
+          "correctIndex": 0,
           "explanation": "The ने (ergative) construction is only used in the perfective past tenses. In the future tense, the verb always agrees with the subject directly, regardless of whether the verb is transitive or intransitive."
         }
       ]
@@ -49,30 +83,58 @@
       "explanation": "Hindi has a special construction for expressing probability, conjecture, or guessing about the present or future — often translated as 'probably', 'might', 'must be', or 'I wonder'. This is formed using the future tense of होना (to be): होगा/होगी/होंगे/होंगी as an auxiliary with a present participle or noun/adjective. For present probability: वह घर पर होगा (He is probably at home), वह सो रहा होगा (He must be sleeping). For future probability: कल बारिश होगी (It will probably rain tomorrow). The presumptive can also express wondering: वह कौन होगा? (Who could that be?). This construction is extremely common in everyday Hindi and adds nuance that English expresses with adverbs like 'probably' or 'perhaps'. The auxiliary होगा/होगी agrees with the subject in gender and number.",
       "tip": "When you want to say 'probably' or 'must be', just add होगा/होगी/होंगे after the main expression. It works with nouns (वह डॉक्टर होगा — He is probably a doctor), adjectives (वह थका होगा — He must be tired), and progressive forms (वह खा रहा होगा — He must be eating).",
       "examples": [
-        { "hi": "वह सो रहा होगा।", "en": "He must be sleeping. / He is probably sleeping.", "highlight": "होगा" },
-        { "hi": "अभी दस बजे होंगे।", "en": "It must be about ten o'clock now.", "highlight": "होंगे" },
-        { "hi": "कल बारिश होगी।", "en": "It will probably rain tomorrow.", "highlight": "होगी" },
-        { "hi": "वह कौन होगा?", "en": "Who could that be? / I wonder who that is.", "highlight": "होगा" }
+        {
+          "hi": "वह सो रहा होगा।",
+          "en": "He must be sleeping. / He is probably sleeping.",
+          "highlight": "होगा"
+        },
+        {
+          "hi": "अभी दस बजे होंगे।",
+          "en": "It must be about ten o'clock now.",
+          "highlight": "होंगे"
+        },
+        {
+          "hi": "कल बारिश होगी।",
+          "en": "It will probably rain tomorrow.",
+          "highlight": "होगी"
+        },
+        {
+          "hi": "वह कौन होगा?",
+          "en": "Who could that be? / I wonder who that is.",
+          "highlight": "होगा"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She is probably tired'?",
-          "options": ["वह थकी होगी।", "वह थकी है।", "वह थकी थी।"],
-          "correctIndex": 0,
+          "options": [
+            "वह थकी थी।",
+            "वह थकी होगी।",
+            "वह थकी है।"
+          ],
+          "correctIndex": 1,
           "explanation": "To express probability about the present, use the presumptive: थकी (tired, fem.) + होगी (probably is, fem.) = 'She is probably tired.' Without होगी, it would be a definite statement."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 'वह खा रहा होगा' mean?",
-          "options": ["He was eating.", "He will eat.", "He must be eating right now."],
-          "correctIndex": 2,
+          "options": [
+            "He must be eating right now.",
+            "He was eating.",
+            "He will eat."
+          ],
+          "correctIndex": 0,
           "explanation": "The progressive participle खा रहा + the presumptive होगा creates the meaning 'He must be eating' or 'He is probably eating right now.' It expresses a guess about an ongoing action."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which auxiliary is used to form the presumptive in Hindi?",
-          "options": ["The future tense of होना (होगा/होगी/होंगे)", "The past tense of होना (था/थी/थे)", "The verb चाहना (चाहिए)"],
+          "options": [
+            "The future tense of होना (होगा/होगी/होंगे)",
+            "The verb चाहना (चाहिए)",
+            "The past tense of होना (था/थी/थे)"
+          ],
           "correctIndex": 0,
           "explanation": "The presumptive mood uses the future forms of होना — होगा, होगी, होंगे, होंगी — as auxiliaries. These add a sense of probability or conjecture to the main predicate."
         }
@@ -84,31 +146,59 @@
       "explanation": "The subjunctive mood in Hindi is used to express wishes, suggestions, possibilities, purposes, and polite requests. It is formed with the verb root plus subjunctive suffixes, without any गा/गी/गे ending. The forms are: मैं करूँ (that I do / let me do), तू करे (that you do, intimate), तुम करो (that you do / please do), आप करें (that you do / please do, formal), वह करे (that he/she do), हम करें (that we do), वे करें (that they do). The subjunctive looks similar to the future tense but crucially lacks the -गा/-गी/-गे suffix. It appears in many contexts: after conjunctions like ताकि (so that), शायद (perhaps), चाहे (even if); in polite requests: आप बैठें (Please sit); in suggestions: चलो, चलें (Let's go); and in expressing wishes: भगवान करे सब ठीक हो (May God make everything alright). The subjunctive is essential for polite and nuanced Hindi.",
       "tip": "The subjunctive looks like the future tense minus the -गा/-गी/-गे ending. Compare: मैं जाऊँगा (I will go, definite) vs. मैं जाऊँ (that I go / let me go, subjunctive). Use it for suggestions, wishes, and after words like ताकि, शायद, and चाहे.",
       "examples": [
-        { "hi": "शायद वह आज आए।", "en": "Perhaps he will come today.", "highlight": "आए" },
-        { "hi": "आप अंदर आएँ।", "en": "Please come inside. (polite request)", "highlight": "आएँ" },
-        { "hi": "मैं चाहता हूँ कि तुम पढ़ो।", "en": "I want you to study.", "highlight": "पढ़ो" },
-        { "hi": "चलो, बाज़ार चलें।", "en": "Come on, let's go to the market.", "highlight": "चलें" }
+        {
+          "hi": "शायद वह आज आए।",
+          "en": "Perhaps he will come today.",
+          "highlight": "आए"
+        },
+        {
+          "hi": "आप अंदर आएँ।",
+          "en": "Please come inside. (polite request)",
+          "highlight": "आएँ"
+        },
+        {
+          "hi": "मैं चाहता हूँ कि तुम पढ़ो।",
+          "en": "I want you to study.",
+          "highlight": "पढ़ो"
+        },
+        {
+          "hi": "चलो, बाज़ार चलें।",
+          "en": "Come on, let's go to the market.",
+          "highlight": "चलें"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between 'वह जाएगा' and 'वह जाए'?",
-          "options": ["जाएगा is definite future; जाए is subjunctive (possibility/wish)", "They mean the same thing", "जाए is past tense"],
+          "options": [
+            "जाएगा is definite future; जाए is subjunctive (possibility/wish)",
+            "जाए is past tense",
+            "They mean the same thing"
+          ],
           "correctIndex": 0,
           "explanation": "वह जाएगा (He will go) is the definite future — a statement of what will happen. वह जाए (that he go / may he go) is the subjunctive — expressing possibility, wish, or suggestion. The subjunctive drops the -गा ending."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the subjunctive correctly for a polite request?",
-          "options": ["आप बैठेंगे।", "आप बैठें।", "आप बैठते हैं।"],
+          "options": [
+            "आप बैठेंगे।",
+            "आप बैठें।",
+            "आप बैठते हैं।"
+          ],
           "correctIndex": 1,
           "explanation": "आप बैठें (Please sit) uses the subjunctive for a polite request. आप बैठेंगे means 'You will sit' (definite future), and आप बैठते हैं means 'You sit' (present habitual) — neither conveys a polite request."
         },
         {
           "type": "multiple-choice",
           "prompt": "After 'ताकि' (so that), which verb form is used?",
-          "options": ["Future tense", "Subjunctive", "Past tense"],
-          "correctIndex": 1,
+          "options": [
+            "Subjunctive",
+            "Future tense",
+            "Past tense"
+          ],
+          "correctIndex": 0,
           "explanation": "Purpose clauses introduced by ताकि (so that) always take the subjunctive. For example: मैं पढ़ता हूँ ताकि मैं पास हो जाऊँ (I study so that I may pass). The subjunctive expresses the intended or desired outcome."
         }
       ]

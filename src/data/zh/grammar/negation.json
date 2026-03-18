@@ -4,7 +4,9 @@
   "nameZh": "否定",
   "icon": "🚫",
   "tier": "A1",
-  "prerequisites": ["basic-verbs"],
+  "prerequisites": [
+    "basic-verbs"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,15 +15,63 @@
       "explanation": "不 (bù) is the most common negation word in Chinese. It negates present and future actions, habitual actions, and adjectives. Place 不 directly before the verb or adjective you want to negate. For habitual actions: '我不喝咖啡。' (I don't drink coffee.) For present states: '他不高兴。' (He is not happy.) For future plans: '我明天不去。' (I'm not going tomorrow.) Note: before a 4th-tone syllable, 不 changes to 2nd tone (bú). For example: 不是 is pronounced 'bú shì'.",
       "tip": "不 is for things that are generally or always true, ongoing states, and anything that hasn't happened yet. Think of it as 'not' for the present, future, and habitual.",
       "examples": [
-        { "zh": "我不吃肉。", "pinyin": "Wǒ bù chī ròu.", "en": "I don't eat meat.", "highlight": "不" },
-        { "zh": "她不漂亮吗？", "pinyin": "Tā bù piàoliang ma?", "en": "Isn't she pretty?", "highlight": "不" },
-        { "zh": "他不想去。", "pinyin": "Tā bù xiǎng qù.", "en": "He doesn't want to go.", "highlight": "不" },
-        { "zh": "今天不冷。", "pinyin": "Jīntiān bù lěng.", "en": "It's not cold today.", "highlight": "不" }
+        {
+          "zh": "我不吃肉。",
+          "pinyin": "Wǒ bù chī ròu.",
+          "en": "I don't eat meat.",
+          "highlight": "不"
+        },
+        {
+          "zh": "她不漂亮吗？",
+          "pinyin": "Tā bù piàoliang ma?",
+          "en": "Isn't she pretty?",
+          "highlight": "不"
+        },
+        {
+          "zh": "他不想去。",
+          "pinyin": "Tā bù xiǎng qù.",
+          "en": "He doesn't want to go.",
+          "highlight": "不"
+        },
+        {
+          "zh": "今天不冷。",
+          "pinyin": "Jīntiān bù lěng.",
+          "en": "It's not cold today.",
+          "highlight": "不"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'I don't like coffee'?", "options": ["我不喜欢咖啡。", "我没喜欢咖啡。", "我喜欢不咖啡。"], "correctIndex": 0, "explanation": "Liking is an ongoing state/preference, so use 不 before the verb: 我不喜欢咖啡。(Wǒ bù xǐhuan kāfēi.)" },
-        { "type": "fill-blank", "prompt": "她___高兴。(She is not happy.)", "acceptedAnswers": ["不"], "hint": "Negation word for present states", "explanation": "Adjectives describing current states use 不: 她不高兴。(Tā bù gāoxìng.)" },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly says 'It's not hot tomorrow'?", "options": ["明天不热。", "明天没热。", "不明天热。"], "correctIndex": 0, "explanation": "Future states use 不, placed before the adjective: 明天不热。(Míngtiān bù rè.)" }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't like coffee'?",
+          "options": [
+            "我没喜欢咖啡。",
+            "我不喜欢咖啡。",
+            "我喜欢不咖啡。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Liking is an ongoing state/preference, so use 不 before the verb: 我不喜欢咖啡。(Wǒ bù xǐhuan kāfēi.)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "她___高兴。(She is not happy.)",
+          "acceptedAnswers": [
+            "不"
+          ],
+          "hint": "Negation word for present states",
+          "explanation": "Adjectives describing current states use 不: 她不高兴。(Tā bù gāoxìng.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'It's not hot tomorrow'?",
+          "options": [
+            "明天不热。",
+            "明天没热。",
+            "不明天热。"
+          ],
+          "correctIndex": 0,
+          "explanation": "Future states use 不, placed before the adjective: 明天不热。(Míngtiān bù rè.)"
+        }
       ]
     },
     {
@@ -30,15 +80,63 @@
       "explanation": "没 (méi) negates completed actions and past experiences. It indicates that something did not happen or has not yet happened. 没 is short for 没有 (méiyǒu) — both forms are interchangeable when negating verbs. Key rule: when using 没, do NOT add 了 (le) to the verb, since 没 already cancels the completion. Correct: '我没吃饭。' (I didn't eat.) Incorrect: '我没吃了饭。' 没有 can also stand alone to mean 'don't have': '我没有钱。' (I don't have money.) The verb 有 (to have) is ALWAYS negated with 没, never with 不.",
       "tip": "没 is for things that didn't happen in the past. Never combine 没 with 了. And remember: 有 (to have) always pairs with 没, never 不.",
       "examples": [
-        { "zh": "我没去学校。", "pinyin": "Wǒ méi qù xuéxiào.", "en": "I didn't go to school.", "highlight": "没" },
-        { "zh": "他没有吃早饭。", "pinyin": "Tā méiyǒu chī zǎofàn.", "en": "He didn't eat breakfast.", "highlight": "没有" },
-        { "zh": "我没有钱。", "pinyin": "Wǒ méiyǒu qián.", "en": "I don't have money.", "highlight": "没有" },
-        { "zh": "她没来。", "pinyin": "Tā méi lái.", "en": "She didn't come.", "highlight": "没" }
+        {
+          "zh": "我没去学校。",
+          "pinyin": "Wǒ méi qù xuéxiào.",
+          "en": "I didn't go to school.",
+          "highlight": "没"
+        },
+        {
+          "zh": "他没有吃早饭。",
+          "pinyin": "Tā méiyǒu chī zǎofàn.",
+          "en": "He didn't eat breakfast.",
+          "highlight": "没有"
+        },
+        {
+          "zh": "我没有钱。",
+          "pinyin": "Wǒ méiyǒu qián.",
+          "en": "I don't have money.",
+          "highlight": "没有"
+        },
+        {
+          "zh": "她没来。",
+          "pinyin": "Tā méi lái.",
+          "en": "She didn't come.",
+          "highlight": "没"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'I didn't buy it'?", "options": ["我没买。", "我不买了。", "我没买了。"], "correctIndex": 0, "explanation": "Past negation uses 没 without 了: 我没买。(Wǒ méi mǎi.) Option C is wrong because 没 and 了 don't combine." },
-        { "type": "fill-blank", "prompt": "我___有时间。(I don't have time.)", "acceptedAnswers": ["没"], "hint": "有 is always negated with this word", "explanation": "有 (to have) is always negated with 没: 我没有时间。(Wǒ méiyǒu shíjiān.)" },
-        { "type": "multiple-choice", "prompt": "Which is correct for 'He hasn't arrived yet'?", "options": ["他还没到。", "他还不到。", "他没到了。"], "correctIndex": 0, "explanation": "还没 means 'hasn't yet'. 他还没到。(Tā hái méi dào.) No 了 is needed with 没." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I didn't buy it'?",
+          "options": [
+            "我没买了。",
+            "我不买了。",
+            "我没买。"
+          ],
+          "correctIndex": 2,
+          "explanation": "Past negation uses 没 without 了: 我没买。(Wǒ méi mǎi.) Option C is wrong because 没 and 了 don't combine."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我___有时间。(I don't have time.)",
+          "acceptedAnswers": [
+            "没"
+          ],
+          "hint": "有 is always negated with this word",
+          "explanation": "有 (to have) is always negated with 没: 我没有时间。(Wǒ méiyǒu shíjiān.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'He hasn't arrived yet'?",
+          "options": [
+            "他没到了。",
+            "他还不到。",
+            "他还没到。"
+          ],
+          "correctIndex": 2,
+          "explanation": "还没 means 'hasn't yet'. 他还没到。(Tā hái méi dào.) No 了 is needed with 没."
+        }
       ]
     },
     {
@@ -47,15 +145,65 @@
       "explanation": "不 and 没 are not interchangeable. 不 negates the present, future, habits, willingness, and adjectives. 没 negates past completed actions and the verb 有. Compare: '我不看电视。' (I don't watch TV — habit.) vs '我没看电视。' (I didn't watch TV — past event.) '他不去。' (He won't go — future/willingness.) vs '他没去。' (He didn't go — past.) Common mistake: using 不 for past actions. '我昨天不去。' sounds unnatural — use '我昨天没去。' Another common mistake: using 没 with adjectives. '她没漂亮' is wrong — use '她不漂亮。'",
       "tip": "Ask yourself: Am I talking about something that already happened? Use 没. Am I talking about a state, habit, or future? Use 不. For 有, always use 没.",
       "examples": [
-        { "zh": "我不喝酒。/ 我昨天没喝酒。", "pinyin": "Wǒ bù hē jiǔ. / Wǒ zuótiān méi hē jiǔ.", "en": "I don't drink alcohol. / I didn't drink alcohol yesterday.", "highlight": "不, 没" },
-        { "zh": "他不去。/ 他没去。", "pinyin": "Tā bù qù. / Tā méi qù.", "en": "He won't go. / He didn't go.", "highlight": "不, 没" },
-        { "zh": "我不忙。(NOT: 我没忙。)", "pinyin": "Wǒ bù máng.", "en": "I'm not busy. (adjective → 不)", "highlight": "不" },
-        { "zh": "她没有猫。(NOT: 她不有猫。)", "pinyin": "Tā méiyǒu māo.", "en": "She doesn't have a cat. (有 → always 没)", "highlight": "没有" }
+        {
+          "zh": "我不喝酒。/ 我昨天没喝酒。",
+          "pinyin": "Wǒ bù hē jiǔ. / Wǒ zuótiān méi hē jiǔ.",
+          "en": "I don't drink alcohol. / I didn't drink alcohol yesterday.",
+          "highlight": "不, 没"
+        },
+        {
+          "zh": "他不去。/ 他没去。",
+          "pinyin": "Tā bù qù. / Tā méi qù.",
+          "en": "He won't go. / He didn't go.",
+          "highlight": "不, 没"
+        },
+        {
+          "zh": "我不忙。(NOT: 我没忙。)",
+          "pinyin": "Wǒ bù máng.",
+          "en": "I'm not busy. (adjective → 不)",
+          "highlight": "不"
+        },
+        {
+          "zh": "她没有猫。(NOT: 她不有猫。)",
+          "pinyin": "Tā méiyǒu māo.",
+          "en": "She doesn't have a cat. (有 → always 没)",
+          "highlight": "没有"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Fill in: '我昨天___去上班。' (I didn't go to work yesterday.)", "options": ["没", "不", "没不"], "correctIndex": 0, "explanation": "Past completed action (昨天 = yesterday) → use 没: 我昨天没去上班。" },
-        { "type": "multiple-choice", "prompt": "Which is correct for 'She is not tall'?", "options": ["她不高。", "她没高。", "她没有高。"], "correctIndex": 0, "explanation": "Adjectives use 不 for negation, not 没. 她不高。(Tā bù gāo.)" },
-        { "type": "multiple-choice", "prompt": "'I don't have a car.' — which negation word?", "options": ["没 — 我没有车。", "不 — 我不有车。", "Either works"], "correctIndex": 0, "explanation": "有 (to have) is always negated with 没有, never 不有. 我没有车。(Wǒ méiyǒu chē.)" }
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: '我昨天___去上班。' (I didn't go to work yesterday.)",
+          "options": [
+            "没",
+            "没不",
+            "不"
+          ],
+          "correctIndex": 0,
+          "explanation": "Past completed action (昨天 = yesterday) → use 没: 我昨天没去上班。"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'She is not tall'?",
+          "options": [
+            "她没有高。",
+            "她不高。",
+            "她没高。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adjectives use 不 for negation, not 没. 她不高。(Tā bù gāo.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I don't have a car.' — which negation word?",
+          "options": [
+            "不 — 我不有车。",
+            "Either works",
+            "没 — 我没有车。"
+          ],
+          "correctIndex": 2,
+          "explanation": "有 (to have) is always negated with 没有, never 不有. 我没有车。(Wǒ méiyǒu chē.)"
+        }
       ]
     },
     {
@@ -64,15 +212,63 @@
       "explanation": "Several common expressions use negation in fixed patterns. 不是 (bú shì) means 'is not' and negates identity/classification: '我不是学生。' (I am not a student.) 不要 (bú yào) means 'don't want to' or serves as a mild prohibition: '不要说话！' (Don't talk!) 别 (bié) is stronger and more colloquial for negative commands: '别走！' (Don't leave!) 别 is used only for imperatives, never for statements. Double negation creates emphasis or affirmation: '不能不去' means 'can't not go' = 'must go'. '他不是不知道' means 'It's not that he doesn't know' = 'He does know.'",
       "tip": "别 is only for telling someone NOT to do something (commands). 不要 works for both 'don't want' and commands. Double negation = strong affirmation.",
       "examples": [
-        { "zh": "我不是老师。", "pinyin": "Wǒ bú shì lǎoshī.", "en": "I am not a teacher.", "highlight": "不是" },
-        { "zh": "不要跑！", "pinyin": "Bú yào pǎo!", "en": "Don't run!", "highlight": "不要" },
-        { "zh": "别哭！", "pinyin": "Bié kū!", "en": "Don't cry!", "highlight": "别" },
-        { "zh": "你不能不来。", "pinyin": "Nǐ bù néng bù lái.", "en": "You must come. (can't not come)", "highlight": "不能不" }
+        {
+          "zh": "我不是老师。",
+          "pinyin": "Wǒ bú shì lǎoshī.",
+          "en": "I am not a teacher.",
+          "highlight": "不是"
+        },
+        {
+          "zh": "不要跑！",
+          "pinyin": "Bú yào pǎo!",
+          "en": "Don't run!",
+          "highlight": "不要"
+        },
+        {
+          "zh": "别哭！",
+          "pinyin": "Bié kū!",
+          "en": "Don't cry!",
+          "highlight": "别"
+        },
+        {
+          "zh": "你不能不来。",
+          "pinyin": "Nǐ bù néng bù lái.",
+          "en": "You must come. (can't not come)",
+          "highlight": "不能不"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'Don't go!' as a command to a friend?", "options": ["别走！", "不走！", "没走！"], "correctIndex": 0, "explanation": "For imperative negation (commands), use 别: 别走！(Bié zǒu!) You could also say 不要走！" },
-        { "type": "fill-blank", "prompt": "我___是中国人。(I am not Chinese.)", "acceptedAnswers": ["不"], "hint": "Negating 是 (to be)", "explanation": "是 is negated with 不: 我不是中国人。(Wǒ bú shì Zhōngguó rén.)" },
-        { "type": "multiple-choice", "prompt": "What does '不能不去' mean?", "options": ["Must go (double negation = affirmation)", "Cannot go", "Don't want to go"], "correctIndex": 0, "explanation": "不能不去 = can't not go = must go. Double negation in Chinese creates strong affirmation." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Don't go!' as a command to a friend?",
+          "options": [
+            "别走！",
+            "不走！",
+            "没走！"
+          ],
+          "correctIndex": 0,
+          "explanation": "For imperative negation (commands), use 别: 别走！(Bié zǒu!) You could also say 不要走！"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我___是中国人。(I am not Chinese.)",
+          "acceptedAnswers": [
+            "不"
+          ],
+          "hint": "Negating 是 (to be)",
+          "explanation": "是 is negated with 不: 我不是中国人。(Wǒ bú shì Zhōngguó rén.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '不能不去' mean?",
+          "options": [
+            "Don't want to go",
+            "Cannot go",
+            "Must go (double negation = affirmation)"
+          ],
+          "correctIndex": 2,
+          "explanation": "不能不去 = can't not go = must go. Double negation in Chinese creates strong affirmation."
+        }
       ]
     }
   ]

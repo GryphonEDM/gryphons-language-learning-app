@@ -4,7 +4,9 @@
   "nameRu": "Настоящее время глаголов",
   "icon": "🔄",
   "tier": "A1",
-  "prerequisites": ["alphabet"],
+  "prerequisites": [
+    "alphabet"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,10 +15,26 @@
       "explanation": "First conjugation verbs have -е- in their endings: -у/-ю, -ешь, -ет, -ем, -ете, -ут/-ют. Most verbs ending in -ать, -ять, -еть belong here. Example: читать (to read): читаю, читаешь, читает, читаем, читаете, читают.",
       "tip": "First conjugation = -е- endings: -ешь, -ет, -ем, -ете",
       "examples": [
-        { "ru": "Я читаю книгу.", "en": "I read a book.", "highlight": "читаю" },
-        { "ru": "Ты работаешь хорошо.", "en": "You work well.", "highlight": "работаешь" },
-        { "ru": "Мы знаем ответ.", "en": "We know the answer.", "highlight": "знаем" },
-        { "ru": "Они поют песню.", "en": "They sing a song.", "highlight": "поют" }
+        {
+          "ru": "Я читаю книгу.",
+          "en": "I read a book.",
+          "highlight": "читаю"
+        },
+        {
+          "ru": "Ты работаешь хорошо.",
+          "en": "You work well.",
+          "highlight": "работаешь"
+        },
+        {
+          "ru": "Мы знаем ответ.",
+          "en": "We know the answer.",
+          "highlight": "знаем"
+        },
+        {
+          "ru": "Они поют песню.",
+          "en": "They sing a song.",
+          "highlight": "поют"
+        }
       ],
       "exercises": [
         {
@@ -25,12 +43,30 @@
           "table": {
             "infinitive": "читать",
             "rows": [
-              { "pronoun": "я", "answer": "читаю" },
-              { "pronoun": "ты", "answer": "читаешь" },
-              { "pronoun": "он/она/оно", "answer": "читает" },
-              { "pronoun": "мы", "answer": "читаем" },
-              { "pronoun": "вы", "answer": "читаете" },
-              { "pronoun": "они", "answer": "читают" }
+              {
+                "pronoun": "я",
+                "answer": "читаю"
+              },
+              {
+                "pronoun": "ты",
+                "answer": "читаешь"
+              },
+              {
+                "pronoun": "он/она/оно",
+                "answer": "читает"
+              },
+              {
+                "pronoun": "мы",
+                "answer": "читаем"
+              },
+              {
+                "pronoun": "вы",
+                "answer": "читаете"
+              },
+              {
+                "pronoun": "они",
+                "answer": "читают"
+              }
             ]
           },
           "explanation": "'Читать' is first conjugation: the endings use -е- (читаешь, читает, читаем, читаете) and -ют (читают)."
@@ -38,34 +74,50 @@
         {
           "type": "multiple-choice",
           "prompt": "Conjugate 'работать' (to work) for 'мы' (we):",
-          "options": ["работаем", "работают", "работаешь"],
-          "correctIndex": 0,
+          "options": [
+            "работаешь",
+            "работаем",
+            "работают"
+          ],
+          "correctIndex": 1,
           "explanation": "'Мы' takes the -ем ending in first conjugation: работаем."
         },
         {
           "type": "fill-blank",
           "prompt": "Ты ___ по-русски? (понимать — to understand)",
-          "acceptedAnswers": ["понимаешь"],
+          "acceptedAnswers": [
+            "понимаешь"
+          ],
           "hint": "-ать verb, 'ты' form: -ешь",
           "explanation": "'Понимать' is first conjugation. For 'ты': понимаешь."
         },
         {
           "type": "transformation",
           "prompt": "Change the subject from 'я' to 'они': 'Я рисую картину.'",
-          "acceptedAnswers": ["Они рисуют картину.", "Они рисуют картину"],
+          "acceptedAnswers": [
+            "Они рисуют картину.",
+            "Они рисуют картину"
+          ],
           "explanation": "'Рисовать' first conjugation: я рисую → они рисуют (-ют ending)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which ending does 'он' take with first conjugation verbs?",
-          "options": ["-ет", "-ит", "-ут", "-ем"],
-          "correctIndex": 0,
+          "options": [
+            "-ит",
+            "-ут",
+            "-ет",
+            "-ем"
+          ],
+          "correctIndex": 2,
           "explanation": "In first conjugation, third person singular (он/она/оно) takes -ет."
         },
         {
           "type": "fill-blank",
           "prompt": "Она ___ завтрак. (готовить — to cook/prepare)",
-          "acceptedAnswers": ["готовит"],
+          "acceptedAnswers": [
+            "готовит"
+          ],
           "hint": "Careful: готовить is 2nd conjugation (-ить verb)",
           "explanation": "'Готовить' is second conjugation (-ить): она готовит."
         },
@@ -73,10 +125,22 @@
           "type": "matching",
           "prompt": "Match each pronoun with the correct form of 'знать' (to know):",
           "pairs": [
-            { "left": "я", "right": "знаю" },
-            { "left": "ты", "right": "знаешь" },
-            { "left": "он", "right": "знает" },
-            { "left": "они", "right": "знают" }
+            {
+              "left": "я",
+              "right": "знаю"
+            },
+            {
+              "left": "ты",
+              "right": "знаешь"
+            },
+            {
+              "left": "он",
+              "right": "знает"
+            },
+            {
+              "left": "они",
+              "right": "знают"
+            }
           ],
           "explanation": "'Знать' is first conjugation: знаю, знаешь, знает, знаем, знаете, знают."
         },
@@ -85,21 +149,35 @@
           "prompt": "Find and fix the error: 'Мы читают книгу.'",
           "incorrectText": "Мы читают книгу.",
           "correctedText": "Мы читаем книгу.",
-          "acceptedAnswers": ["Мы читаем книгу.", "Мы читаем книгу"],
+          "acceptedAnswers": [
+            "Мы читаем книгу.",
+            "Мы читаем книгу"
+          ],
           "explanation": "'Мы' requires -ем (not -ют, which is for 'они'): мы читаем."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["хорошо", "Ты", "поёшь"],
-          "correctOrder": ["Ты", "поёшь", "хорошо"],
+          "words": [
+            "хорошо",
+            "Ты",
+            "поёшь"
+          ],
+          "correctOrder": [
+            "Ты",
+            "поёшь",
+            "хорошо"
+          ],
           "explanation": "'Ты поёшь хорошо.' — You sing well. 'Петь' first conjugation, ты → поёшь."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Они работают вместе.",
-          "acceptedAnswers": ["Они работают вместе.", "Они работают вместе"],
+          "acceptedAnswers": [
+            "Они работают вместе.",
+            "Они работают вместе"
+          ],
           "explanation": "'Работать' first conjugation: они работают. 'Вместе' means together."
         }
       ]
@@ -110,10 +188,26 @@
       "explanation": "Second conjugation verbs have -и- in their endings: -у/-ю, -ишь, -ит, -им, -ите, -ат/-ят. Verbs ending in -ить often belong here. Example: говорить (to speak): говорю, говоришь, говорит, говорим, говорите, говорят.",
       "tip": "Second conjugation = -и- endings: -ишь, -ит, -им, -ите",
       "examples": [
-        { "ru": "Я говорю правду.", "en": "I speak the truth.", "highlight": "говорю" },
-        { "ru": "Ты говоришь по-русски.", "en": "You speak Russian.", "highlight": "говоришь" },
-        { "ru": "Мы учим новые слова.", "en": "We learn new words.", "highlight": "учим" },
-        { "ru": "Они видят море.", "en": "They see the sea.", "highlight": "видят" }
+        {
+          "ru": "Я говорю правду.",
+          "en": "I speak the truth.",
+          "highlight": "говорю"
+        },
+        {
+          "ru": "Ты говоришь по-русски.",
+          "en": "You speak Russian.",
+          "highlight": "говоришь"
+        },
+        {
+          "ru": "Мы учим новые слова.",
+          "en": "We learn new words.",
+          "highlight": "учим"
+        },
+        {
+          "ru": "Они видят море.",
+          "en": "They see the sea.",
+          "highlight": "видят"
+        }
       ],
       "exercises": [
         {
@@ -122,12 +216,30 @@
           "table": {
             "infinitive": "говорить",
             "rows": [
-              { "pronoun": "я", "answer": "говорю" },
-              { "pronoun": "ты", "answer": "говоришь" },
-              { "pronoun": "он/она/оно", "answer": "говорит" },
-              { "pronoun": "мы", "answer": "говорим" },
-              { "pronoun": "вы", "answer": "говорите" },
-              { "pronoun": "они", "answer": "говорят" }
+              {
+                "pronoun": "я",
+                "answer": "говорю"
+              },
+              {
+                "pronoun": "ты",
+                "answer": "говоришь"
+              },
+              {
+                "pronoun": "он/она/оно",
+                "answer": "говорит"
+              },
+              {
+                "pronoun": "мы",
+                "answer": "говорим"
+              },
+              {
+                "pronoun": "вы",
+                "answer": "говорите"
+              },
+              {
+                "pronoun": "они",
+                "answer": "говорят"
+              }
             ]
           },
           "explanation": "'Говорить' is second conjugation: -ишь, -ит, -им, -ите, -ят."
@@ -135,34 +247,50 @@
         {
           "type": "multiple-choice",
           "prompt": "Conjugate 'смотреть' (to watch) for 'они' (they):",
-          "options": ["смотрят", "смотрим", "смотрит"],
-          "correctIndex": 0,
+          "options": [
+            "смотрит",
+            "смотрят",
+            "смотрим"
+          ],
+          "correctIndex": 1,
           "explanation": "'Смотреть' is second conjugation (exception). 'Они' form: смотрят."
         },
         {
           "type": "fill-blank",
           "prompt": "Ты ___ по-русски? (говорить — to speak)",
-          "acceptedAnswers": ["говоришь"],
+          "acceptedAnswers": [
+            "говоришь"
+          ],
           "hint": "Second conjugation, 'ты' form: -ишь",
           "explanation": "'Говорить' second conjugation: ты говоришь."
         },
         {
           "type": "transformation",
           "prompt": "Change the subject from 'я' to 'вы': 'Я вижу море.'",
-          "acceptedAnswers": ["Вы видите море.", "Вы видите море"],
+          "acceptedAnswers": [
+            "Вы видите море.",
+            "Вы видите море"
+          ],
           "explanation": "'Видеть' second conjugation: я вижу → вы видите (-ите ending)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which verb is second conjugation?",
-          "options": ["любить (to love)", "читать (to read)", "работать (to work)", "петь (to sing)"],
+          "options": [
+            "любить (to love)",
+            "читать (to read)",
+            "работать (to work)",
+            "петь (to sing)"
+          ],
           "correctIndex": 0,
           "explanation": "'Любить' ends in -ить, which is the hallmark of second conjugation. The others are first conjugation."
         },
         {
           "type": "fill-blank",
           "prompt": "Она ___ музыку. (любить — to love)",
-          "acceptedAnswers": ["любит"],
+          "acceptedAnswers": [
+            "любит"
+          ],
           "hint": "Second conjugation, 'она' form: -ит",
           "explanation": "'Любить' second conjugation: она любит."
         },
@@ -170,10 +298,22 @@
           "type": "matching",
           "prompt": "Match each pronoun with the correct form of 'учить' (to learn/teach):",
           "pairs": [
-            { "left": "я", "right": "учу" },
-            { "left": "ты", "right": "учишь" },
-            { "left": "мы", "right": "учим" },
-            { "left": "они", "right": "учат" }
+            {
+              "left": "я",
+              "right": "учу"
+            },
+            {
+              "left": "ты",
+              "right": "учишь"
+            },
+            {
+              "left": "мы",
+              "right": "учим"
+            },
+            {
+              "left": "они",
+              "right": "учат"
+            }
           ],
           "explanation": "'Учить' is second conjugation: учу, учишь, учит, учим, учите, учат."
         },
@@ -182,21 +322,37 @@
           "prompt": "Find and fix the error: 'Мы говорят хорошо.'",
           "incorrectText": "Мы говорят хорошо.",
           "correctedText": "Мы говорим хорошо.",
-          "acceptedAnswers": ["Мы говорим хорошо.", "Мы говорим хорошо"],
+          "acceptedAnswers": [
+            "Мы говорим хорошо.",
+            "Мы говорим хорошо"
+          ],
           "explanation": "'Мы' requires -им (not -ят which is for 'они'): мы говорим."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["новые", "Вы", "учите", "слова"],
-          "correctOrder": ["Вы", "учите", "новые", "слова"],
+          "words": [
+            "новые",
+            "Вы",
+            "учите",
+            "слова"
+          ],
+          "correctOrder": [
+            "Вы",
+            "учите",
+            "новые",
+            "слова"
+          ],
           "explanation": "'Вы учите новые слова.' — You learn new words. 'Учить' second conjugation, вы → учите."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Дети любят мороженое.",
-          "acceptedAnswers": ["Дети любят мороженое.", "Дети любят мороженое"],
+          "acceptedAnswers": [
+            "Дети любят мороженое.",
+            "Дети любят мороженое"
+          ],
           "explanation": "'Любить' second conjugation: дети (they) → любят."
         }
       ]
@@ -207,10 +363,26 @@
       "explanation": "Some important Russian verbs are irregular. быть (to be) — rarely used in present tense (omitted). есть (to eat): ем, ешь, ест, едим, едите, едят. пить (to drink): пью, пьёшь, пьёт, пьём, пьёте, пьют. хотеть (to want) mixes conjugations: хочу, хочешь, хочет, хотим, хотите, хотят.",
       "tip": "Memorize these — есть, пить, хотеть, and быть are used constantly",
       "examples": [
-        { "ru": "Я ем завтрак.", "en": "I eat breakfast.", "highlight": "ем" },
-        { "ru": "Ты пьёшь чай.", "en": "You drink tea.", "highlight": "пьёшь" },
-        { "ru": "Они дают подарки.", "en": "They give gifts.", "highlight": "дают" },
-        { "ru": "Я студент.", "en": "I am a student.", "highlight": "студент" }
+        {
+          "ru": "Я ем завтрак.",
+          "en": "I eat breakfast.",
+          "highlight": "ем"
+        },
+        {
+          "ru": "Ты пьёшь чай.",
+          "en": "You drink tea.",
+          "highlight": "пьёшь"
+        },
+        {
+          "ru": "Они дают подарки.",
+          "en": "They give gifts.",
+          "highlight": "дают"
+        },
+        {
+          "ru": "Я студент.",
+          "en": "I am a student.",
+          "highlight": "студент"
+        }
       ],
       "exercises": [
         {
@@ -219,12 +391,30 @@
           "table": {
             "infinitive": "есть",
             "rows": [
-              { "pronoun": "я", "answer": "ем" },
-              { "pronoun": "ты", "answer": "ешь" },
-              { "pronoun": "он/она/оно", "answer": "ест" },
-              { "pronoun": "мы", "answer": "едим" },
-              { "pronoun": "вы", "answer": "едите" },
-              { "pronoun": "они", "answer": "едят" }
+              {
+                "pronoun": "я",
+                "answer": "ем"
+              },
+              {
+                "pronoun": "ты",
+                "answer": "ешь"
+              },
+              {
+                "pronoun": "он/она/оно",
+                "answer": "ест"
+              },
+              {
+                "pronoun": "мы",
+                "answer": "едим"
+              },
+              {
+                "pronoun": "вы",
+                "answer": "едите"
+              },
+              {
+                "pronoun": "они",
+                "answer": "едят"
+              }
             ]
           },
           "explanation": "'Есть' (to eat) is irregular. Note the changes: ем, ешь, ест, едим, едите, едят."
@@ -232,21 +422,30 @@
         {
           "type": "fill-blank",
           "prompt": "Ты ___ кофе? (пить — to drink)",
-          "acceptedAnswers": ["пьёшь"],
+          "acceptedAnswers": [
+            "пьёшь"
+          ],
           "hint": "Irregular: пью, пьёшь, пьёт...",
           "explanation": "'Пить' is irregular: ты пьёшь."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the 'они' form of 'есть' (to eat)?",
-          "options": ["едят", "ест", "едим", "едите"],
+          "options": [
+            "едят",
+            "ест",
+            "едим",
+            "едите"
+          ],
           "correctIndex": 0,
           "explanation": "'Есть' (to eat) irregular: они едят."
         },
         {
           "type": "fill-blank",
           "prompt": "Мы ___ воду. (пить — to drink)",
-          "acceptedAnswers": ["пьём"],
+          "acceptedAnswers": [
+            "пьём"
+          ],
           "hint": "Irregular: пью, пьёшь, пьёт, пьём...",
           "explanation": "'Пить' irregular: мы пьём."
         },
@@ -254,27 +453,42 @@
           "type": "multiple-choice",
           "prompt": "In modern Russian, the verb 'быть' (to be) in present tense is usually:",
           "options": [
+            "Used only in past tense",
             "Omitted entirely",
-            "Conjugated like regular verbs",
-            "Used only in past tense"
+            "Conjugated like regular verbs"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "'Быть' is omitted in present tense: 'Я студент' (I am a student) — no verb needed."
         },
         {
           "type": "transformation",
           "prompt": "Change the subject from 'я' to 'он': 'Я ем яблоко.'",
-          "acceptedAnswers": ["Он ест яблоко.", "Он ест яблоко"],
+          "acceptedAnswers": [
+            "Он ест яблоко.",
+            "Он ест яблоко"
+          ],
           "explanation": "'Есть' (to eat) irregular: я ем → он ест."
         },
         {
           "type": "matching",
           "prompt": "Match each pronoun with the correct form of 'пить' (to drink):",
           "pairs": [
-            { "left": "я", "right": "пью" },
-            { "left": "ты", "right": "пьёшь" },
-            { "left": "она", "right": "пьёт" },
-            { "left": "они", "right": "пьют" }
+            {
+              "left": "я",
+              "right": "пью"
+            },
+            {
+              "left": "ты",
+              "right": "пьёшь"
+            },
+            {
+              "left": "она",
+              "right": "пьёт"
+            },
+            {
+              "left": "они",
+              "right": "пьют"
+            }
           ],
           "explanation": "'Пить' irregular: пью, пьёшь, пьёт, пьём, пьёте, пьют."
         },
@@ -283,21 +497,37 @@
           "prompt": "Find and fix the error: 'Они ест ужин.'",
           "incorrectText": "Они ест ужин.",
           "correctedText": "Они едят ужин.",
-          "acceptedAnswers": ["Они едят ужин.", "Они едят ужин"],
+          "acceptedAnswers": [
+            "Они едят ужин.",
+            "Они едят ужин"
+          ],
           "explanation": "'Ест' is the он/она form. For 'они' use 'едят'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["завтрак", "едим", "Мы", "вместе"],
-          "correctOrder": ["Мы", "едим", "завтрак", "вместе"],
+          "words": [
+            "завтрак",
+            "едим",
+            "Мы",
+            "вместе"
+          ],
+          "correctOrder": [
+            "Мы",
+            "едим",
+            "завтрак",
+            "вместе"
+          ],
           "explanation": "'Мы едим завтрак вместе.' — We eat breakfast together. 'Есть' irregular: мы едим."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Он пьёт горячий чай.",
-          "acceptedAnswers": ["Он пьёт горячий чай.", "Он пьёт горячий чай"],
+          "acceptedAnswers": [
+            "Он пьёт горячий чай.",
+            "Он пьёт горячий чай"
+          ],
           "explanation": "'Пить' irregular: он пьёт. 'Горячий чай' = hot tea."
         }
       ]
@@ -308,23 +538,41 @@
       "explanation": "Practice using present tense verbs in real sentences. Choose the correct conjugation based on the subject.",
       "tip": "Match the verb ending to the subject: я→-ю, ты→-ешь/-ишь, он→-ет/-ит",
       "examples": [
-        { "ru": "Я учу русский язык.", "en": "I study the Russian language.", "highlight": "учу" },
-        { "ru": "Ты хорошо говоришь.", "en": "You speak well.", "highlight": "говоришь" },
-        { "ru": "Они всегда помогают.", "en": "They always help.", "highlight": "помогают" }
+        {
+          "ru": "Я учу русский язык.",
+          "en": "I study the Russian language.",
+          "highlight": "учу"
+        },
+        {
+          "ru": "Ты хорошо говоришь.",
+          "en": "You speak well.",
+          "highlight": "говоришь"
+        },
+        {
+          "ru": "Они всегда помогают.",
+          "en": "They always help.",
+          "highlight": "помогают"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "Мой брат ___ в школе. (работать — to work)",
-          "acceptedAnswers": ["работает"],
+          "acceptedAnswers": [
+            "работает"
+          ],
           "hint": "First conjugation, он form: -ет",
           "explanation": "'Работать' first conjugation: он работает."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the correct verb form: 'Дети ___ в парке.' (играть — to play)",
-          "options": ["играют", "играет", "играю"],
-          "correctIndex": 0,
+          "options": [
+            "играет",
+            "играю",
+            "играют"
+          ],
+          "correctIndex": 2,
           "explanation": "'Дети' (children) = они. 'Играть' first conjugation: они играют."
         },
         {
@@ -332,26 +580,44 @@
           "prompt": "Find and fix the error: 'Я говорит по-русски.'",
           "incorrectText": "Я говорит по-русски.",
           "correctedText": "Я говорю по-русски.",
-          "acceptedAnswers": ["Я говорю по-русски.", "Я говорю по-русски"],
+          "acceptedAnswers": [
+            "Я говорю по-русски.",
+            "Я говорю по-русски"
+          ],
           "explanation": "'Говорит' is for он/она. For 'я' use 'говорю'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["каждый день", "Мы", "русский", "учим"],
-          "correctOrder": ["Мы", "учим", "русский", "каждый день"],
+          "words": [
+            "каждый день",
+            "Мы",
+            "русский",
+            "учим"
+          ],
+          "correctOrder": [
+            "Мы",
+            "учим",
+            "русский",
+            "каждый день"
+          ],
           "explanation": "'Мы учим русский каждый день.' — We learn Russian every day."
         },
         {
           "type": "transformation",
           "prompt": "Rewrite for 'вы': 'Я читаю газету.'",
-          "acceptedAnswers": ["Вы читаете газету.", "Вы читаете газету"],
+          "acceptedAnswers": [
+            "Вы читаете газету.",
+            "Вы читаете газету"
+          ],
           "explanation": "'Читать' first conjugation: я читаю → вы читаете."
         },
         {
           "type": "fill-blank",
           "prompt": "Она ___ кофе с молоком. (пить — to drink)",
-          "acceptedAnswers": ["пьёт"],
+          "acceptedAnswers": [
+            "пьёт"
+          ],
           "hint": "Irregular verb, 'она' form",
           "explanation": "'Пить' irregular: она пьёт."
         },
@@ -359,10 +625,22 @@
           "type": "matching",
           "prompt": "Match each sentence with the correct verb form:",
           "pairs": [
-            { "left": "Я ___ книгу. (читать)", "right": "читаю" },
-            { "left": "Ты ___ песню. (петь)", "right": "поёшь" },
-            { "left": "Он ___ урок. (учить)", "right": "учит" },
-            { "left": "Мы ___ вместе. (работать)", "right": "работаем" }
+            {
+              "left": "Я ___ книгу. (читать)",
+              "right": "читаю"
+            },
+            {
+              "left": "Ты ___ песню. (петь)",
+              "right": "поёшь"
+            },
+            {
+              "left": "Он ___ урок. (учить)",
+              "right": "учит"
+            },
+            {
+              "left": "Мы ___ вместе. (работать)",
+              "right": "работаем"
+            }
           ],
           "explanation": "First conj.: читаю, поёшь, работаем. Second conj.: учит."
         },
@@ -370,18 +648,21 @@
           "type": "multiple-choice",
           "prompt": "Which sentence is correct?",
           "options": [
-            "Ты любишь музыку.",
             "Ты любит музыку.",
-            "Ты любят музыку."
+            "Ты любят музыку.",
+            "Ты любишь музыку."
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "'Любить' second conjugation: ты любишь. '-ит' is for он/она, '-ят' is for они."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Мы всегда завтракаем вместе.",
-          "acceptedAnswers": ["Мы всегда завтракаем вместе.", "Мы всегда завтракаем вместе"],
+          "acceptedAnswers": [
+            "Мы всегда завтракаем вместе.",
+            "Мы всегда завтракаем вместе"
+          ],
           "explanation": "'Завтракать' (to have breakfast) first conjugation: мы завтракаем. 'Всегда' = always."
         },
         {
@@ -389,7 +670,10 @@
           "prompt": "Find and fix the error: 'Они пьёшь воду.'",
           "incorrectText": "Они пьёшь воду.",
           "correctedText": "Они пьют воду.",
-          "acceptedAnswers": ["Они пьют воду.", "Они пьют воду"],
+          "acceptedAnswers": [
+            "Они пьют воду.",
+            "Они пьют воду"
+          ],
           "explanation": "'Пьёшь' is for 'ты'. For 'они' the correct form is 'пьют'."
         }
       ]

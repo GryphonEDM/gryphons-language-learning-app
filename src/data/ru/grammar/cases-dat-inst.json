@@ -4,7 +4,9 @@
   "nameRu": "Дательный и творительный",
   "icon": "🔧",
   "tier": "B1",
-  "prerequisites": ["cases-genitive"],
+  "prerequisites": [
+    "cases-genitive"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,33 +15,178 @@
       "tip": "The dative case answers кому? (to whom?) and чему? (to what?). Masculine nouns take -у/-ю, feminine nouns ending in -а take -е, and feminine nouns ending in -ь take -и.",
       "explanation": "The dative case (дательный падеж) marks the indirect object — the recipient of an action. It answers 'to whom?' (кому?) and 'to what?' (чему?). Masculine nouns take -у or -ю, feminine nouns ending in -а/-я take -е/-и, neuter nouns take -у/-ю. The dative is used with verbs like давать (to give), помогать (to help), звонить (to call).",
       "examples": [
-        { "ru": "Я дал книгу брату.", "en": "I gave a book to my brother.", "highlight": "брату" },
-        { "ru": "Скажи маме.", "en": "Tell mom.", "highlight": "маме" },
-        { "ru": "Я помог другу.", "en": "I helped a friend.", "highlight": "другу" }
+        {
+          "ru": "Я дал книгу брату.",
+          "en": "I gave a book to my brother.",
+          "highlight": "брату"
+        },
+        {
+          "ru": "Скажи маме.",
+          "en": "Tell mom.",
+          "highlight": "маме"
+        },
+        {
+          "ru": "Я помог другу.",
+          "en": "I helped a friend.",
+          "highlight": "другу"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я написал письмо ___. (сестра – sister)", "options": ["сестре", "сестру", "сестра"], "correctIndex": 0, "explanation": "Feminine nouns ending in -а take -е in the dative: сестра → сестре." },
-        { "type": "fill-blank", "prompt": "Он подарил цветы ___. (девушка – girl)", "acceptedAnswers": ["девушке"], "hint": "Feminine -а → -е in dative", "explanation": "Девушка → девушке. Feminine nouns ending in -а change to -е in the dative." },
-        { "type": "fill-blank", "prompt": "Дай ___ воды. (кот – cat)", "acceptedAnswers": ["коту"], "hint": "Masculine: -у", "explanation": "Кот → коту. Masculine nouns take -у in the dative." },
-        { "type": "transformation", "prompt": "Put the noun in the dative case:", "baseWord": "учитель", "context": "Ученики подарили цветы ___.", "acceptedAnswers": ["учителю"], "hint": "Masculine soft stem: -ю", "explanation": "Учитель → учителю. Masculine nouns ending in -ь take -ю in the dative." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я рассказал историю бабушка.", "correctedText": "Я рассказал историю бабушке.", "acceptedAnswers": ["бабушке"], "explanation": "Рассказал... бабушке — 'told grandma'. Бабушка → бабушке (dative, feminine -а → -е)." },
-        { "type": "multiple-choice", "prompt": "Мне нужно позвонить ___. (врач – doctor)", "options": ["врачу", "врач", "врача"], "correctIndex": 0, "explanation": "Позвонить + dative: врач → врачу." },
-        { "type": "matching", "prompt": "Match the nominative to the dative form:", "pairs": [
-          { "left": "мама", "right": "маме" },
-          { "left": "папа", "right": "папе" },
-          { "left": "друг", "right": "другу" },
-          { "left": "ребёнок", "right": "ребёнку" },
-          { "left": "студент", "right": "студенту" }
-        ], "explanation": "Feminine -а → -е; masculine consonant → -у; папа (masculine -а) → папе; ребёнок → ребёнку." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Give this letter to the teacher.", "words": ["Дай", "это", "письмо", "учителю"], "correctOrder": ["Дай", "это", "письмо", "учителю"], "distractors": ["учитель"], "explanation": "Дай + accusative (письмо) + dative (учителю) — give the letter to the teacher." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Я помогаю бабушке готовить.", "acceptedAnswers": ["Я помогаю бабушке готовить.", "Я помогаю бабушке готовить"], "explanation": "Помогать (to help) takes the dative: бабушка → бабушке." },
-        { "type": "table-fill", "prompt": "Complete the dative forms:", "headers": ["Nominative", "Dative"], "rows": [
-          { "label": "отец", "answer": "отцу", "prefilled": false },
-          { "label": "подруга", "answer": "подруге", "prefilled": false },
-          { "label": "юноша", "answer": "юноше", "prefilled": false },
-          { "label": "учительница", "answer": "учительнице", "prefilled": false },
-          { "label": "дедушка", "answer": "дедушке", "prefilled": false }
-        ], "explanation": "Отец → отцу; подруга → подруге; юноша → юноше (masculine -а → -е); учительница → учительнице; дедушка → дедушке." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я написал письмо ___. (сестра – sister)",
+          "options": [
+            "сестру",
+            "сестре",
+            "сестра"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feminine nouns ending in -а take -е in the dative: сестра → сестре."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он подарил цветы ___. (девушка – girl)",
+          "acceptedAnswers": [
+            "девушке"
+          ],
+          "hint": "Feminine -а → -е in dative",
+          "explanation": "Девушка → девушке. Feminine nouns ending in -а change to -е in the dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Дай ___ воды. (кот – cat)",
+          "acceptedAnswers": [
+            "коту"
+          ],
+          "hint": "Masculine: -у",
+          "explanation": "Кот → коту. Masculine nouns take -у in the dative."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the dative case:",
+          "baseWord": "учитель",
+          "context": "Ученики подарили цветы ___.",
+          "acceptedAnswers": [
+            "учителю"
+          ],
+          "hint": "Masculine soft stem: -ю",
+          "explanation": "Учитель → учителю. Masculine nouns ending in -ь take -ю in the dative."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я рассказал историю бабушка.",
+          "correctedText": "Я рассказал историю бабушке.",
+          "acceptedAnswers": [
+            "бабушке"
+          ],
+          "explanation": "Рассказал... бабушке — 'told grandma'. Бабушка → бабушке (dative, feminine -а → -е)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Мне нужно позвонить ___. (врач – doctor)",
+          "options": [
+            "врачу",
+            "врача",
+            "врач"
+          ],
+          "correctIndex": 0,
+          "explanation": "Позвонить + dative: врач → врачу."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative to the dative form:",
+          "pairs": [
+            {
+              "left": "мама",
+              "right": "маме"
+            },
+            {
+              "left": "папа",
+              "right": "папе"
+            },
+            {
+              "left": "друг",
+              "right": "другу"
+            },
+            {
+              "left": "ребёнок",
+              "right": "ребёнку"
+            },
+            {
+              "left": "студент",
+              "right": "студенту"
+            }
+          ],
+          "explanation": "Feminine -а → -е; masculine consonant → -у; папа (masculine -а) → папе; ребёнок → ребёнку."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Give this letter to the teacher.",
+          "words": [
+            "Дай",
+            "это",
+            "письмо",
+            "учителю"
+          ],
+          "correctOrder": [
+            "Дай",
+            "это",
+            "письмо",
+            "учителю"
+          ],
+          "distractors": [
+            "учитель"
+          ],
+          "explanation": "Дай + accusative (письмо) + dative (учителю) — give the letter to the teacher."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Я помогаю бабушке готовить.",
+          "acceptedAnswers": [
+            "Я помогаю бабушке готовить.",
+            "Я помогаю бабушке готовить"
+          ],
+          "explanation": "Помогать (to help) takes the dative: бабушка → бабушке."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the dative forms:",
+          "headers": [
+            "Nominative",
+            "Dative"
+          ],
+          "rows": [
+            {
+              "label": "отец",
+              "answer": "отцу",
+              "prefilled": false
+            },
+            {
+              "label": "подруга",
+              "answer": "подруге",
+              "prefilled": false
+            },
+            {
+              "label": "юноша",
+              "answer": "юноше",
+              "prefilled": false
+            },
+            {
+              "label": "учительница",
+              "answer": "учительнице",
+              "prefilled": false
+            },
+            {
+              "label": "дедушка",
+              "answer": "дедушке",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Отец → отцу; подруга → подруге; юноша → юноше (masculine -а → -е); учительница → учительнице; дедушка → дедушке."
+        }
       ]
     },
     {
@@ -48,27 +195,151 @@
       "tip": "Personal pronouns in dative: мне, тебе, ему, ей, нам, вам, им. The dative is used in impersonal constructions like мне холодно (I am cold).",
       "explanation": "The dative case is used with verbs of giving (давать, дарить), telling (говорить, рассказывать), helping (помогать), and also in impersonal constructions like мне холодно (I am cold), ему интересно (he finds it interesting). Personal pronouns in dative: мне, тебе, ему, ей, нам, вам, им.",
       "examples": [
-        { "ru": "Мне нравится эта песня.", "en": "I like this song.", "highlight": "Мне" },
-        { "ru": "Тебе нужна помощь?", "en": "Do you need help?", "highlight": "Тебе" },
-        { "ru": "Ей было весело.", "en": "She was having fun.", "highlight": "Ей" }
+        {
+          "ru": "Мне нравится эта песня.",
+          "en": "I like this song.",
+          "highlight": "Мне"
+        },
+        {
+          "ru": "Тебе нужна помощь?",
+          "en": "Do you need help?",
+          "highlight": "Тебе"
+        },
+        {
+          "ru": "Ей было весело.",
+          "en": "She was having fun.",
+          "highlight": "Ей"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "___ нравится эта книга. (I)", "options": ["Мне", "Я", "Меня"], "correctIndex": 0, "explanation": "Нравиться takes the dative: я → мне. Literally 'to me is pleasing this book'." },
-        { "type": "fill-blank", "prompt": "___ надо идти. (he)", "acceptedAnswers": ["Ему"], "hint": "Dative of он = ему", "explanation": "Ему надо идти — 'He needs to go'. Он → ему in the dative." },
-        { "type": "fill-blank", "prompt": "Мы подарили ___ часы. (he, dative)", "acceptedAnswers": ["ему"], "hint": "Dative of он", "explanation": "Подарить (to give as a gift) takes the dative: он → ему." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я холодно.", "correctedText": "Мне холодно.", "acceptedAnswers": ["Мне"], "explanation": "Impersonal constructions use the dative: Мне холодно (I am cold), not Я холодно." },
-        { "type": "multiple-choice", "prompt": "___ нужно больше времени. (we)", "options": ["Нам", "Мы", "Нас"], "correctIndex": 0, "explanation": "Нужно takes the dative: мы → нам." },
-        { "type": "matching", "prompt": "Match the personal pronoun to its dative form:", "pairs": [
-          { "left": "я", "right": "мне" },
-          { "left": "ты", "right": "тебе" },
-          { "left": "он", "right": "ему" },
-          { "left": "она", "right": "ей" },
-          { "left": "они", "right": "им" }
-        ], "explanation": "Dative personal pronouns: я→мне, ты→тебе, он→ему, она→ей, мы→нам, вы→вам, они→им." },
-        { "type": "transformation", "prompt": "Rewrite with the dative pronoun:", "baseWord": "она", "context": "___ нравится танцевать.", "acceptedAnswers": ["Ей"], "hint": "Dative of она = ей", "explanation": "Она → ей in the dative. Нравиться + dative = likes." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Tell me the truth.", "words": ["Скажи", "мне", "правду"], "correctOrder": ["Скажи", "мне", "правду"], "distractors": ["я"], "explanation": "Сказать (to tell) takes the dative: я → мне. Правду is accusative (direct object)." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Нам нужно купить хлеб.", "acceptedAnswers": ["Нам нужно купить хлеб.", "Нам нужно купить хлеб"], "explanation": "Нам нужно — 'we need to'. Нужно takes the dative: мы → нам." },
-        { "type": "multiple-choice", "prompt": "Я помогаю ___. (они – they)", "options": ["им", "их", "они"], "correctIndex": 0, "explanation": "Помогать (to help) takes the dative: они → им." }
+        {
+          "type": "multiple-choice",
+          "prompt": "___ нравится эта книга. (I)",
+          "options": [
+            "Я",
+            "Мне",
+            "Меня"
+          ],
+          "correctIndex": 1,
+          "explanation": "Нравиться takes the dative: я → мне. Literally 'to me is pleasing this book'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ надо идти. (he)",
+          "acceptedAnswers": [
+            "Ему"
+          ],
+          "hint": "Dative of он = ему",
+          "explanation": "Ему надо идти — 'He needs to go'. Он → ему in the dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы подарили ___ часы. (he, dative)",
+          "acceptedAnswers": [
+            "ему"
+          ],
+          "hint": "Dative of он",
+          "explanation": "Подарить (to give as a gift) takes the dative: он → ему."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я холодно.",
+          "correctedText": "Мне холодно.",
+          "acceptedAnswers": [
+            "Мне"
+          ],
+          "explanation": "Impersonal constructions use the dative: Мне холодно (I am cold), not Я холодно."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ нужно больше времени. (we)",
+          "options": [
+            "Мы",
+            "Нам",
+            "Нас"
+          ],
+          "correctIndex": 1,
+          "explanation": "Нужно takes the dative: мы → нам."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the personal pronoun to its dative form:",
+          "pairs": [
+            {
+              "left": "я",
+              "right": "мне"
+            },
+            {
+              "left": "ты",
+              "right": "тебе"
+            },
+            {
+              "left": "он",
+              "right": "ему"
+            },
+            {
+              "left": "она",
+              "right": "ей"
+            },
+            {
+              "left": "они",
+              "right": "им"
+            }
+          ],
+          "explanation": "Dative personal pronouns: я→мне, ты→тебе, он→ему, она→ей, мы→нам, вы→вам, они→им."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Rewrite with the dative pronoun:",
+          "baseWord": "она",
+          "context": "___ нравится танцевать.",
+          "acceptedAnswers": [
+            "Ей"
+          ],
+          "hint": "Dative of она = ей",
+          "explanation": "Она → ей in the dative. Нравиться + dative = likes."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Tell me the truth.",
+          "words": [
+            "Скажи",
+            "мне",
+            "правду"
+          ],
+          "correctOrder": [
+            "Скажи",
+            "мне",
+            "правду"
+          ],
+          "distractors": [
+            "я"
+          ],
+          "explanation": "Сказать (to tell) takes the dative: я → мне. Правду is accusative (direct object)."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Нам нужно купить хлеб.",
+          "acceptedAnswers": [
+            "Нам нужно купить хлеб.",
+            "Нам нужно купить хлеб"
+          ],
+          "explanation": "Нам нужно — 'we need to'. Нужно takes the dative: мы → нам."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Я помогаю ___. (они – they)",
+          "options": [
+            "им",
+            "они",
+            "их"
+          ],
+          "correctIndex": 0,
+          "explanation": "Помогать (to help) takes the dative: они → им."
+        }
       ]
     },
     {
@@ -77,33 +348,178 @@
       "tip": "The instrumental case answers чем? (with what?) and кем? (with whom?). Masculine/neuter nouns take -ом/-ем, feminine nouns ending in -а take -ой/-ей.",
       "explanation": "The instrumental case (творительный падеж) answers 'with what?' (чем?) and 'with whom?' (с кем?). It indicates the instrument or means of an action, and accompaniment. Masculine/neuter nouns take -ом/-ем, feminine nouns ending in -а take -ой/-ей. Used after prepositions с (with), между (between), над (above), под (under), за (behind), перед (in front of).",
       "examples": [
-        { "ru": "Я пишу ручкой.", "en": "I write with a pen.", "highlight": "ручкой" },
-        { "ru": "Он едет автобусом.", "en": "He travels by bus.", "highlight": "автобусом" },
-        { "ru": "Режу хлеб ножом.", "en": "I cut bread with a knife.", "highlight": "ножом" }
+        {
+          "ru": "Я пишу ручкой.",
+          "en": "I write with a pen.",
+          "highlight": "ручкой"
+        },
+        {
+          "ru": "Он едет автобусом.",
+          "en": "He travels by bus.",
+          "highlight": "автобусом"
+        },
+        {
+          "ru": "Режу хлеб ножом.",
+          "en": "I cut bread with a knife.",
+          "highlight": "ножом"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я ем суп ___. (ложка – spoon)", "options": ["ложкой", "ложки", "ложку"], "correctIndex": 0, "explanation": "Feminine -а → -ой in the instrumental: ложка → ложкой (with a spoon)." },
-        { "type": "fill-blank", "prompt": "Он рисует ___. (карандаш – pencil)", "acceptedAnswers": ["карандашом"], "hint": "Masculine: -ом after ш", "explanation": "Карандаш → карандашом. Masculine nouns take -ом in the instrumental (stressed after ж, ш, ч, щ, ц)." },
-        { "type": "fill-blank", "prompt": "Мы едем ___. (поезд – train)", "acceptedAnswers": ["поездом"], "hint": "Masculine: -ом", "explanation": "Поезд → поездом. Masculine nouns take -ом in the instrumental (by train)." },
-        { "type": "transformation", "prompt": "Put the noun in the instrumental case:", "baseWord": "вода", "context": "Он облился ___.", "acceptedAnswers": ["водой"], "hint": "Feminine -а → -ой", "explanation": "Вода → водой. Feminine nouns ending in -а take -ой in the instrumental." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я пишу карандаш.", "correctedText": "Я пишу карандашом.", "acceptedAnswers": ["карандашом"], "explanation": "Writing WITH a pencil requires the instrumental case: карандаш → карандашом." },
-        { "type": "multiple-choice", "prompt": "Она ест торт ___. (вилка – fork)", "options": ["вилкой", "вилка", "вилки"], "correctIndex": 0, "explanation": "Feminine -а → -ой: вилка → вилкой (with a fork)." },
-        { "type": "matching", "prompt": "Match the nominative to the instrumental form:", "pairs": [
-          { "left": "нож (knife)", "right": "ножом" },
-          { "left": "рука (hand)", "right": "рукой" },
-          { "left": "молоток (hammer)", "right": "молотком" },
-          { "left": "иголка (needle)", "right": "иголкой" },
-          { "left": "ключ (key)", "right": "ключом" }
-        ], "explanation": "Masculine: нож→ножом, молоток→молотком, ключ→ключом. Feminine: рука→рукой, иголка→иголкой." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She opened the door with a key.", "words": ["Она", "открыла", "дверь", "ключом"], "correctOrder": ["Она", "открыла", "дверь", "ключом"], "distractors": ["ключ"], "explanation": "Ключом (with a key) is instrumental. The instrument used for the action." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Он едет на работу машиной.", "acceptedAnswers": ["Он едет на работу машиной.", "Он едет на работу машиной"], "explanation": "Машиной — 'by car' (instrumental). Машина → машиной." },
-        { "type": "table-fill", "prompt": "Complete the instrumental forms:", "headers": ["Nominative", "Instrumental"], "rows": [
-          { "label": "соль (f.)", "answer": "солью", "prefilled": false },
-          { "label": "ночь (f.)", "answer": "ночью", "prefilled": false },
-          { "label": "земля (f.)", "answer": "землёй", "prefilled": false },
-          { "label": "сахар (m.)", "answer": "сахаром", "prefilled": false },
-          { "label": "масло (n.)", "answer": "маслом", "prefilled": false }
-        ], "explanation": "Feminine -ь → -ью (солью, ночью); земля → землёй; masculine сахар → сахаром; neuter масло → маслом." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я ем суп ___. (ложка – spoon)",
+          "options": [
+            "ложки",
+            "ложкой",
+            "ложку"
+          ],
+          "correctIndex": 1,
+          "explanation": "Feminine -а → -ой in the instrumental: ложка → ложкой (with a spoon)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он рисует ___. (карандаш – pencil)",
+          "acceptedAnswers": [
+            "карандашом"
+          ],
+          "hint": "Masculine: -ом after ш",
+          "explanation": "Карандаш → карандашом. Masculine nouns take -ом in the instrumental (stressed after ж, ш, ч, щ, ц)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы едем ___. (поезд – train)",
+          "acceptedAnswers": [
+            "поездом"
+          ],
+          "hint": "Masculine: -ом",
+          "explanation": "Поезд → поездом. Masculine nouns take -ом in the instrumental (by train)."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the instrumental case:",
+          "baseWord": "вода",
+          "context": "Он облился ___.",
+          "acceptedAnswers": [
+            "водой"
+          ],
+          "hint": "Feminine -а → -ой",
+          "explanation": "Вода → водой. Feminine nouns ending in -а take -ой in the instrumental."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я пишу карандаш.",
+          "correctedText": "Я пишу карандашом.",
+          "acceptedAnswers": [
+            "карандашом"
+          ],
+          "explanation": "Writing WITH a pencil requires the instrumental case: карандаш → карандашом."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Она ест торт ___. (вилка – fork)",
+          "options": [
+            "вилки",
+            "вилка",
+            "вилкой"
+          ],
+          "correctIndex": 2,
+          "explanation": "Feminine -а → -ой: вилка → вилкой (with a fork)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the nominative to the instrumental form:",
+          "pairs": [
+            {
+              "left": "нож (knife)",
+              "right": "ножом"
+            },
+            {
+              "left": "рука (hand)",
+              "right": "рукой"
+            },
+            {
+              "left": "молоток (hammer)",
+              "right": "молотком"
+            },
+            {
+              "left": "иголка (needle)",
+              "right": "иголкой"
+            },
+            {
+              "left": "ключ (key)",
+              "right": "ключом"
+            }
+          ],
+          "explanation": "Masculine: нож→ножом, молоток→молотком, ключ→ключом. Feminine: рука→рукой, иголка→иголкой."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She opened the door with a key.",
+          "words": [
+            "Она",
+            "открыла",
+            "дверь",
+            "ключом"
+          ],
+          "correctOrder": [
+            "Она",
+            "открыла",
+            "дверь",
+            "ключом"
+          ],
+          "distractors": [
+            "ключ"
+          ],
+          "explanation": "Ключом (with a key) is instrumental. The instrument used for the action."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Он едет на работу машиной.",
+          "acceptedAnswers": [
+            "Он едет на работу машиной.",
+            "Он едет на работу машиной"
+          ],
+          "explanation": "Машиной — 'by car' (instrumental). Машина → машиной."
+        },
+        {
+          "type": "table-fill",
+          "prompt": "Complete the instrumental forms:",
+          "headers": [
+            "Nominative",
+            "Instrumental"
+          ],
+          "rows": [
+            {
+              "label": "соль (f.)",
+              "answer": "солью",
+              "prefilled": false
+            },
+            {
+              "label": "ночь (f.)",
+              "answer": "ночью",
+              "prefilled": false
+            },
+            {
+              "label": "земля (f.)",
+              "answer": "землёй",
+              "prefilled": false
+            },
+            {
+              "label": "сахар (m.)",
+              "answer": "сахаром",
+              "prefilled": false
+            },
+            {
+              "label": "масло (n.)",
+              "answer": "маслом",
+              "prefilled": false
+            }
+          ],
+          "explanation": "Feminine -ь → -ью (солью, ночью); земля → землёй; masculine сахар → сахаром; neuter масло → маслом."
+        }
       ]
     },
     {
@@ -112,27 +528,151 @@
       "tip": "Instrumental pronouns: со мной, с тобой, с ним, с ней, с нами, с вами, с ними. The instrumental is used for professions: Он работает врачом.",
       "explanation": "The instrumental case is used in several common patterns: 1) с + instrumental = 'with' (accompaniment): с другом, с сестрой; 2) profession/identity: Он работает учителем (He works as a teacher); 3) seasons: зимой, весной, летом, осенью (in winter, spring, summer, autumn); 4) after verbs like интересоваться (to be interested in), заниматься (to be engaged in).",
       "examples": [
-        { "ru": "Она гуляет с подругой.", "en": "She walks with a friend.", "highlight": "с подругой" },
-        { "ru": "Он работает учителем.", "en": "He works as a teacher.", "highlight": "учителем" },
-        { "ru": "Я интересуюсь музыкой.", "en": "I am interested in music.", "highlight": "музыкой" }
+        {
+          "ru": "Она гуляет с подругой.",
+          "en": "She walks with a friend.",
+          "highlight": "с подругой"
+        },
+        {
+          "ru": "Он работает учителем.",
+          "en": "He works as a teacher.",
+          "highlight": "учителем"
+        },
+        {
+          "ru": "Я интересуюсь музыкой.",
+          "en": "I am interested in music.",
+          "highlight": "музыкой"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "Я иду в кино с ___. (друг – friend)", "options": ["другом", "друга", "другу"], "correctIndex": 0, "explanation": "С + instrumental: друг → другом (with a friend)." },
-        { "type": "fill-blank", "prompt": "Она работает ___. (врач – doctor)", "acceptedAnswers": ["врачом"], "hint": "Profession = instrumental case", "explanation": "Работать + instrumental for profession: врач → врачом." },
-        { "type": "fill-blank", "prompt": "Он пьёт кофе с ___. (молоко – milk)", "acceptedAnswers": ["молоком"], "hint": "С + instrumental; neuter -о → -ом", "explanation": "С молоком — 'with milk'. Молоко → молоком in the instrumental." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я интересуюсь история.", "correctedText": "Я интересуюсь историей.", "acceptedAnswers": ["историей"], "explanation": "Интересоваться takes the instrumental: история → историей." },
-        { "type": "multiple-choice", "prompt": "Он стал ___. (инженер – engineer)", "options": ["инженером", "инженера", "инженеру"], "correctIndex": 0, "explanation": "Стать (to become) + instrumental: инженер → инженером." },
-        { "type": "matching", "prompt": "Match the pronoun to its instrumental form (after с):", "pairs": [
-          { "left": "я", "right": "со мной" },
-          { "left": "ты", "right": "с тобой" },
-          { "left": "он", "right": "с ним" },
-          { "left": "она", "right": "с ней" },
-          { "left": "они", "right": "с ними" }
-        ], "explanation": "Instrumental pronouns: со мной, с тобой, с ним, с ней, с нами, с вами, с ними." },
-        { "type": "transformation", "prompt": "Put the noun in the instrumental after с:", "baseWord": "сестра", "context": "Я живу с ___.", "acceptedAnswers": ["сестрой"], "hint": "Feminine -а → -ой", "explanation": "С сестрой — 'with my sister'. Сестра → сестрой in the instrumental." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "She is interested in art.", "words": ["Она", "интересуется", "искусством"], "correctOrder": ["Она", "интересуется", "искусством"], "distractors": ["искусство"], "explanation": "Интересоваться + instrumental: искусство → искусством." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Мы разговариваем с соседями.", "acceptedAnswers": ["Мы разговариваем с соседями.", "Мы разговариваем с соседями"], "explanation": "С соседями — 'with neighbors'. Соседи → соседями (instrumental plural)." },
-        { "type": "multiple-choice", "prompt": "Чем ты занимаешься? — Я занимаюсь ___. (спорт – sport)", "options": ["спортом", "спорту", "спорт"], "correctIndex": 0, "explanation": "Заниматься (to be engaged in) takes the instrumental: спорт → спортом." }
+        {
+          "type": "multiple-choice",
+          "prompt": "Я иду в кино с ___. (друг – friend)",
+          "options": [
+            "другом",
+            "друга",
+            "другу"
+          ],
+          "correctIndex": 0,
+          "explanation": "С + instrumental: друг → другом (with a friend)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Она работает ___. (врач – doctor)",
+          "acceptedAnswers": [
+            "врачом"
+          ],
+          "hint": "Profession = instrumental case",
+          "explanation": "Работать + instrumental for profession: врач → врачом."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Он пьёт кофе с ___. (молоко – milk)",
+          "acceptedAnswers": [
+            "молоком"
+          ],
+          "hint": "С + instrumental; neuter -о → -ом",
+          "explanation": "С молоком — 'with milk'. Молоко → молоком in the instrumental."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Я интересуюсь история.",
+          "correctedText": "Я интересуюсь историей.",
+          "acceptedAnswers": [
+            "историей"
+          ],
+          "explanation": "Интересоваться takes the instrumental: история → историей."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Он стал ___. (инженер – engineer)",
+          "options": [
+            "инженера",
+            "инженеру",
+            "инженером"
+          ],
+          "correctIndex": 2,
+          "explanation": "Стать (to become) + instrumental: инженер → инженером."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pronoun to its instrumental form (after с):",
+          "pairs": [
+            {
+              "left": "я",
+              "right": "со мной"
+            },
+            {
+              "left": "ты",
+              "right": "с тобой"
+            },
+            {
+              "left": "он",
+              "right": "с ним"
+            },
+            {
+              "left": "она",
+              "right": "с ней"
+            },
+            {
+              "left": "они",
+              "right": "с ними"
+            }
+          ],
+          "explanation": "Instrumental pronouns: со мной, с тобой, с ним, с ней, с нами, с вами, с ними."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Put the noun in the instrumental after с:",
+          "baseWord": "сестра",
+          "context": "Я живу с ___.",
+          "acceptedAnswers": [
+            "сестрой"
+          ],
+          "hint": "Feminine -а → -ой",
+          "explanation": "С сестрой — 'with my sister'. Сестра → сестрой in the instrumental."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "She is interested in art.",
+          "words": [
+            "Она",
+            "интересуется",
+            "искусством"
+          ],
+          "correctOrder": [
+            "Она",
+            "интересуется",
+            "искусством"
+          ],
+          "distractors": [
+            "искусство"
+          ],
+          "explanation": "Интересоваться + instrumental: искусство → искусством."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Мы разговариваем с соседями.",
+          "acceptedAnswers": [
+            "Мы разговариваем с соседями.",
+            "Мы разговариваем с соседями"
+          ],
+          "explanation": "С соседями — 'with neighbors'. Соседи → соседями (instrumental plural)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Чем ты занимаешься? — Я занимаюсь ___. (спорт – sport)",
+          "options": [
+            "спорту",
+            "спорт",
+            "спортом"
+          ],
+          "correctIndex": 2,
+          "explanation": "Заниматься (to be engaged in) takes the instrumental: спорт → спортом."
+        }
       ]
     }
   ]

@@ -4,7 +4,9 @@
   "nameFr": "Les verbes pronominaux",
   "icon": "🔁",
   "tier": "A2",
-  "prerequisites": ["pronouns"],
+  "prerequisites": [
+    "pronouns"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,60 +15,116 @@
       "explanation": "Reflexive verbs (les verbes pronominaux) are verbs where the action reflects back on the subject — the subject both does and receives the action. Every reflexive verb is accompanied by a reflexive pronoun that matches the subject: me (myself), te (yourself), se (himself/herself/itself/themselves), nous (ourselves), vous (yourselves/yourself formal). In the infinitive form, reflexive verbs are always listed with se or s': s'appeler (to be called), se lever (to get up), se laver (to wash). To conjugate, replace se with the pronoun matching your subject: je me lève, tu te lèves, il/elle se lève, nous nous levons, vous vous levez, ils/elles se lèvent. Before a vowel or silent h, me→m', te→t', se→s': je m'appelle, tu t'appelles, il s'appelle. For negation, ne comes before the reflexive pronoun and pas comes after the verb: Je ne me lève pas (I don't get up), Il ne s'appelle pas Pierre. In the passé composé, reflexive verbs always use être as the auxiliary, and the past participle agrees in gender and number with the subject: Je me suis levé(e), Tu t'es levé(e), Ils se sont levés, Elles se sont levées. There are three main types of reflexive/pronominal verbs: (1) true reflexive, where the subject acts on itself — se laver (wash oneself), se coiffer (do one's hair); (2) reciprocal, where subjects act on each other — ils se voient (they see each other), nous nous parlons (we talk to each other); (3) idiomatic, where the se is simply part of the verb's meaning and must be learned — se souvenir (to remember), s'en aller (to leave), se tromper (to be wrong/mistaken), se sentir (to feel).",
       "tip": "A quick trick: if you can add 'each other' or 'oneself' to the English meaning, it is likely a true reflexive or reciprocal verb. For idiomatic ones (se souvenir, se tromper, s'en aller), you just have to memorize them — there is no parallel English structure. In the passé composé, always check the subject's gender to get the agreement right: a woman says 'Je me suis levée' (with an extra e), a man says 'Je me suis levé'.",
       "examples": [
-        { "fr": "Je me lève à sept heures.", "en": "I get up at seven o'clock.", "highlight": "me lève" },
-        { "fr": "Comment tu t'appelles?", "en": "What's your name? (lit. What do you call yourself?)", "highlight": "t'appelles" },
-        { "fr": "Il ne se rase pas le week-end.", "en": "He doesn't shave on the weekend.", "highlight": "ne se rase pas" },
-        { "fr": "Nous nous parlons tous les jours.", "en": "We talk to each other every day.", "highlight": "nous parlons" },
-        { "fr": "Je me suis levée tôt ce matin.", "en": "I (f.) got up early this morning.", "highlight": "me suis levée" },
-        { "fr": "Elle se trompe souvent.", "en": "She is often mistaken.", "highlight": "se trompe" }
+        {
+          "fr": "Je me lève à sept heures.",
+          "en": "I get up at seven o'clock.",
+          "highlight": "me lève"
+        },
+        {
+          "fr": "Comment tu t'appelles?",
+          "en": "What's your name? (lit. What do you call yourself?)",
+          "highlight": "t'appelles"
+        },
+        {
+          "fr": "Il ne se rase pas le week-end.",
+          "en": "He doesn't shave on the weekend.",
+          "highlight": "ne se rase pas"
+        },
+        {
+          "fr": "Nous nous parlons tous les jours.",
+          "en": "We talk to each other every day.",
+          "highlight": "nous parlons"
+        },
+        {
+          "fr": "Je me suis levée tôt ce matin.",
+          "en": "I (f.) got up early this morning.",
+          "highlight": "me suis levée"
+        },
+        {
+          "fr": "Elle se trompe souvent.",
+          "en": "She is often mistaken.",
+          "highlight": "se trompe"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which reflexive pronoun goes with 'nous' to form 'we wash ourselves'?",
-          "options": ["se lavons", "nous lavons", "nous nous lavons"],
+          "options": [
+            "nous lavons",
+            "se lavons",
+            "nous nous lavons"
+          ],
           "correctIndex": 2
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form of s'appeler for 'il'?",
-          "options": ["il s'appelle", "il se appelle", "il m'appelle"],
-          "correctIndex": 0
+          "options": [
+            "il m'appelle",
+            "il se appelle",
+            "il s'appelle"
+          ],
+          "correctIndex": 2
         },
         {
           "type": "multiple-choice",
           "prompt": "In the passé composé, which auxiliary verb do reflexive verbs always use?",
-          "options": ["avoir", "être", "either avoir or être"],
-          "correctIndex": 1
+          "options": [
+            "être",
+            "either avoir or être",
+            "avoir"
+          ],
+          "correctIndex": 0
         },
         {
           "type": "fill-blank",
           "prompt": "Je ___ lève à huit heures. (I get up at eight.)",
-          "options": ["te", "me", "se"],
+          "options": [
+            "te",
+            "me",
+            "se"
+          ],
           "correctIndex": 1
         },
         {
           "type": "fill-blank",
           "prompt": "Il ___ souvient de toi. (He remembers you.) — idiomatic reflexive",
-          "options": ["me", "te", "se"],
+          "options": [
+            "me",
+            "te",
+            "se"
+          ],
           "correctIndex": 2
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I don't get up' using negation with a reflexive verb?",
-          "options": ["Je me ne lève pas", "Je ne me lève pas", "Je me lève ne pas"],
+          "options": [
+            "Je me ne lève pas",
+            "Je ne me lève pas",
+            "Je me lève ne pas"
+          ],
           "correctIndex": 1
         },
         {
           "type": "multiple-choice",
           "prompt": "'Ils se voient chaque semaine.' What type of reflexive verb is this?",
-          "options": ["True reflexive (action on self)", "Reciprocal (action on each other)", "Idiomatic"],
+          "options": [
+            "Idiomatic",
+            "Reciprocal (action on each other)",
+            "True reflexive (action on self)"
+          ],
           "correctIndex": 1
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ est levée tôt. (She got up early.) — passé composé",
-          "options": ["a", "s'", "se"],
+          "options": [
+            "a",
+            "s'",
+            "se"
+          ],
           "correctIndex": 1
         }
       ]
@@ -77,60 +135,116 @@
       "explanation": "Reflexive verbs are essential for talking about your daily routine in French. Here is a sequence from morning to night: se réveiller (to wake up), se lever (to get up), se laver (to wash — general), se doucher (to shower), se brosser les dents (to brush one's teeth), se coiffer (to do one's hair), se maquiller (to put on makeup), se raser (to shave), se parfumer (to put on perfume/cologne), s'habiller (to get dressed), se préparer (to get ready), se dépêcher (to hurry). During the day: s'asseoir (to sit down — irregular: je m'assieds or je m'assois), se promener (to take a walk), se reposer (to rest). In the evening: se coucher (to go to bed), s'endormir (to fall asleep). An important grammar point: when a reflexive verb is followed by a body part, use the definite article (le, la, les) — not a possessive adjective (mon, ma, mes). This is because the reflexive pronoun already implies ownership: Je me lave les mains (I wash my hands — not 'mes mains'), Il se brosse les dents (He brushes his teeth — not 'ses dents'), Elle se coiffe les cheveux (She does her hair). The reflexive pronoun plus the definite article together signal that it is the subject's own body part.",
       "tip": "To describe your morning routine in sequence, use time expressions and link your reflexive verbs: D'abord je me réveille, ensuite je me lève, puis je me douche, après je m'habille... (First I wake up, then I get up, then I shower, then I get dressed...). Remember: body parts always take the definite article after a reflexive verb — never use 'mon/ma/mes' in these constructions.",
       "examples": [
-        { "fr": "Je me réveille à six heures et demie.", "en": "I wake up at half past six.", "highlight": "me réveille" },
-        { "fr": "Elle se brosse les dents après le dîner.", "en": "She brushes her teeth after dinner.", "highlight": "se brosse les dents" },
-        { "fr": "Il se rase devant le miroir.", "en": "He shaves in front of the mirror.", "highlight": "se rase" },
-        { "fr": "Nous nous dépêchons pour ne pas être en retard.", "en": "We hurry so as not to be late.", "highlight": "nous dépêchons" },
-        { "fr": "Je m'assieds près de la fenêtre.", "en": "I sit down near the window.", "highlight": "m'assieds" },
-        { "fr": "Ils se couchent tard le vendredi soir.", "en": "They go to bed late on Friday nights.", "highlight": "se couchent" }
+        {
+          "fr": "Je me réveille à six heures et demie.",
+          "en": "I wake up at half past six.",
+          "highlight": "me réveille"
+        },
+        {
+          "fr": "Elle se brosse les dents après le dîner.",
+          "en": "She brushes her teeth after dinner.",
+          "highlight": "se brosse les dents"
+        },
+        {
+          "fr": "Il se rase devant le miroir.",
+          "en": "He shaves in front of the mirror.",
+          "highlight": "se rase"
+        },
+        {
+          "fr": "Nous nous dépêchons pour ne pas être en retard.",
+          "en": "We hurry so as not to be late.",
+          "highlight": "nous dépêchons"
+        },
+        {
+          "fr": "Je m'assieds près de la fenêtre.",
+          "en": "I sit down near the window.",
+          "highlight": "m'assieds"
+        },
+        {
+          "fr": "Ils se couchent tard le vendredi soir.",
+          "en": "They go to bed late on Friday nights.",
+          "highlight": "se couchent"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I wash my hands' in French using a reflexive verb?",
-          "options": ["Je me lave mes mains", "Je me lave les mains", "Je lave les mains"],
-          "correctIndex": 1
+          "options": [
+            "Je me lave mes mains",
+            "Je lave les mains",
+            "Je me lave les mains"
+          ],
+          "correctIndex": 2
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ habille rapidement. (She gets dressed quickly.)",
-          "options": ["te", "s'", "me"],
+          "options": [
+            "te",
+            "s'",
+            "me"
+          ],
           "correctIndex": 1
         },
         {
           "type": "multiple-choice",
           "prompt": "Which verb means 'to fall asleep'?",
-          "options": ["se coucher", "s'endormir", "se reposer"],
+          "options": [
+            "se coucher",
+            "s'endormir",
+            "se reposer"
+          ],
           "correctIndex": 1
         },
         {
           "type": "multiple-choice",
           "prompt": "After a reflexive verb, which article do you use with a body part?",
-          "options": ["possessive (mon/ma/mes)", "definite (le/la/les)", "indefinite (un/une/des)"],
-          "correctIndex": 1
+          "options": [
+            "definite (le/la/les)",
+            "possessive (mon/ma/mes)",
+            "indefinite (un/une/des)"
+          ],
+          "correctIndex": 0
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ réveillez à quelle heure? (What time do you wake up?)",
-          "options": ["te", "vous", "se"],
+          "options": [
+            "te",
+            "vous",
+            "se"
+          ],
           "correctIndex": 1
         },
         {
           "type": "multiple-choice",
           "prompt": "What is one accepted conjugation of s'asseoir for 'je'?",
-          "options": ["je m'assois", "je s'assieds", "je me assieds"],
+          "options": [
+            "je m'assois",
+            "je me assieds",
+            "je s'assieds"
+          ],
           "correctIndex": 0
         },
         {
           "type": "multiple-choice",
           "prompt": "Put these morning routine actions in the most logical order: (A) se doucher, (B) se réveiller, (C) s'habiller",
-          "options": ["A → B → C", "B → A → C", "C → B → A"],
-          "correctIndex": 1
+          "options": [
+            "B → A → C",
+            "C → B → A",
+            "A → B → C"
+          ],
+          "correctIndex": 0
         },
         {
           "type": "fill-blank",
           "prompt": "Il se brosse ___ dents deux fois par jour. (He brushes his teeth twice a day.)",
-          "options": ["ses", "des", "les"],
+          "options": [
+            "ses",
+            "des",
+            "les"
+          ],
           "correctIndex": 2
         }
       ]

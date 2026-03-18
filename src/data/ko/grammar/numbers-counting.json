@@ -4,7 +4,9 @@
   "nameKo": "숫자와 세기",
   "icon": "🔢",
   "tier": "A1",
-  "prerequisites": ["hangul-basics"],
+  "prerequisites": [
+    "hangul-basics"
+  ],
   "estimatedMinutes": 18,
   "sections": [
     {
@@ -13,30 +15,54 @@
       "explanation": "Korean has two number systems, and both are used in daily life. The native Korean system (고유어 수) is used for counting things, telling hours, and ages. The numbers 1-10 are: 하나 (1), 둘 (2), 셋 (3), 넷 (4), 다섯 (5), 여섯 (6), 일곱 (7), 여덟 (8), 아홉 (9), 열 (10). For 11-19, combine 열 with the unit: 열하나 (11), 열둘 (12), etc. Tens are: 스물 (20), 서른 (30), 마흔 (40), 쉰 (50), 예순 (60), 일흔 (70), 여든 (80), 아흔 (90). Important: when 하나, 둘, 셋, 넷, and 스물 appear before a counter, they shorten to 한, 두, 세, 네, and 스무: 한 개 (one thing), 두 명 (two people), 세 마리 (three animals). Native Korean numbers are typically used only up to 99; beyond that, Sino-Korean numbers take over.",
       "tip": "Remember: 하나, 둘, 셋, 넷 shorten to 한, 두, 세, 네 before counters. The rhyme 하둘셋넷 (ha-dul-set-net) is how Koreans count off quickly, like '1-2-3-4!'",
       "examples": [
-        { "ko": "하나, 둘, 셋!", "en": "One, two, three!", "highlight": "하나" },
-        { "ko": "사과 세 개", "en": "three apples (세 = shortened 셋 before counter 개)", "highlight": "세" },
-        { "ko": "스물다섯 살", "en": "25 years old (스물 + 다섯, but 스물 stays full before 다섯)", "highlight": "스물다섯" }
+        {
+          "ko": "하나, 둘, 셋!",
+          "en": "One, two, three!",
+          "highlight": "하나"
+        },
+        {
+          "ko": "사과 세 개",
+          "en": "three apples (세 = shortened 셋 before counter 개)",
+          "highlight": "세"
+        },
+        {
+          "ko": "스물다섯 살",
+          "en": "25 years old (스물 + 다섯; 스물 keeps its full form here because the shortened form 스무 is only used directly before a counter, as in 스무 살 = 20 years old)",
+          "highlight": "스물다섯"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the native Korean number for 7?",
-          "options": ["일곱", "칠", "여섯"],
-          "correctIndex": 0,
+          "options": [
+            "여섯",
+            "일곱",
+            "칠"
+          ],
+          "correctIndex": 1,
           "explanation": "일곱 is 7 in native Korean. 칠 is 7 in Sino-Korean. 여섯 is 6 in native Korean."
         },
         {
           "type": "multiple-choice",
           "prompt": "How does 하나 change before a counter?",
-          "options": ["It shortens to 한", "It stays as 하나", "It changes to 일"],
-          "correctIndex": 0,
+          "options": [
+            "It stays as 하나",
+            "It shortens to 한",
+            "It changes to 일"
+          ],
+          "correctIndex": 1,
           "explanation": "Before a counter, 하나 shortens to 한: 한 개 (one thing), 한 명 (one person), 한 잔 (one cup). The same pattern applies to 둘→두, 셋→세, 넷→네, 스물→스무."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 12 in native Korean?",
-          "options": ["열둘", "십이", "이열"],
-          "correctIndex": 0,
+          "options": [
+            "십이",
+            "이열",
+            "열둘"
+          ],
+          "correctIndex": 2,
           "explanation": "In the native Korean system, 12 is 열 (10) + 둘 (2) = 열둘. 십이 is 12 in the Sino-Korean system."
         }
       ]
@@ -47,30 +73,54 @@
       "explanation": "The Sino-Korean number system (한자어 수) comes from Chinese characters and is used for dates, money, phone numbers, addresses, minutes, and numbers above 99. The digits are: 일 (1), 이 (2), 삼 (3), 사 (4), 오 (5), 육 (6), 칠 (7), 팔 (8), 구 (9), 십 (10). Larger numbers are built systematically: 십일 (11 = 10+1), 이십 (20 = 2×10), 이십삼 (23 = 2×10+3), 백 (100), 천 (1,000), 만 (10,000). Note that Korean groups large numbers by 만 (ten thousands) rather than by thousands as in English: 50,000 is 오만, not 'fifty thousand.' Prices use Sino-Korean numbers: 삼천 원 (3,000 won), 만 오천 원 (15,000 won). Dates also use Sino-Korean: 삼월 십오일 (March 15th).",
       "tip": "Use Sino-Korean for: dates (월, 일), money (원), phone numbers, minutes (분), and any number over 99. An easy way to remember: if it involves a formal system or measurement, it is probably Sino-Korean.",
       "examples": [
-        { "ko": "삼천 원", "en": "3,000 won (삼 = 3, 천 = thousand)", "highlight": "삼천" },
-        { "ko": "이월 십사일", "en": "February 14th", "highlight": "이월" },
-        { "ko": "전화번호: 공일공-이삼사오-육칠팔구", "en": "Phone: 010-2345-6789 (공 = zero)", "highlight": "공" }
+        {
+          "ko": "삼천 원",
+          "en": "3,000 won (삼 = 3, 천 = thousand)",
+          "highlight": "삼천"
+        },
+        {
+          "ko": "이월 십사일",
+          "en": "February 14th",
+          "highlight": "이월"
+        },
+        {
+          "ko": "전화번호: 공일공-이삼사오-육칠팔구",
+          "en": "Phone: 010-2345-6789 (공 = zero)",
+          "highlight": "공"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 500 in Sino-Korean?",
-          "options": ["오백", "다섯백", "오십"],
+          "options": [
+            "오백",
+            "오십",
+            "다섯백"
+          ],
           "correctIndex": 0,
           "explanation": "500 is 오 (5) + 백 (100) = 오백. 다섯 is the native Korean 5 and would not be combined with 백. 오십 is 50."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which number system is used for money in Korean?",
-          "options": ["Sino-Korean (일, 이, 삼...)", "Native Korean (하나, 둘, 셋...)", "Either system works"],
-          "correctIndex": 0,
+          "options": [
+            "Either system works",
+            "Sino-Korean (일, 이, 삼...)",
+            "Native Korean (하나, 둘, 셋...)"
+          ],
+          "correctIndex": 1,
           "explanation": "Money always uses Sino-Korean numbers: 천 원 (1,000 won), 만 원 (10,000 won), 오만 원 (50,000 won). Native Korean numbers are not used with currency."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 45,000 in Sino-Korean?",
-          "options": ["사만 오천", "사십오천", "넷만 다섯천"],
-          "correctIndex": 0,
+          "options": [
+            "넷만 다섯천",
+            "사만 오천",
+            "사십오천"
+          ],
+          "correctIndex": 1,
           "explanation": "45,000 = 사만 (4 × 10,000) + 오천 (5 × 1,000) = 사만 오천. Korean groups by 만 (ten-thousands), so 45,000 is '4 ten-thousands and 5 thousands.'"
         }
       ]
@@ -81,30 +131,54 @@
       "explanation": "Korean requires counter words (분류사) when counting things — you cannot just say 'three apples' as a number plus a noun. Instead, you say noun + number + counter: 사과 세 개 (apple three-piece = three apples). The most common counters are: 개 — general counter for objects (like 'piece' or 'thing'); 명 — counter for people (polite: 분); 마리 — counter for animals. Other common counters include: 잔 (cups of drinks), 병 (bottles), 권 (books/volumes), 장 (flat things like paper), 대 (machines/vehicles), 벌 (sets of clothing). The number always uses the native Korean system with counters (except for specific cases like 층 for building floors, which uses Sino-Korean). Remember the shortened forms: 한 개, 두 명, 세 마리, 네 잔.",
       "tip": "The basic pattern is: Noun + Native Korean Number + Counter. Start with 개 (things), 명 (people), 마리 (animals) — these three cover most daily counting situations.",
       "examples": [
-        { "ko": "사과 두 개", "en": "two apples (개 = general counter for things)", "highlight": "개" },
-        { "ko": "학생 세 명", "en": "three students (명 = counter for people)", "highlight": "명" },
-        { "ko": "고양이 한 마리", "en": "one cat (마리 = counter for animals)", "highlight": "마리" }
+        {
+          "ko": "사과 두 개",
+          "en": "two apples (개 = general counter for things)",
+          "highlight": "개"
+        },
+        {
+          "ko": "학생 세 명",
+          "en": "three students (명 = counter for people)",
+          "highlight": "명"
+        },
+        {
+          "ko": "고양이 한 마리",
+          "en": "one cat (마리 = counter for animals)",
+          "highlight": "마리"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'five books' using the counter 권?",
-          "options": ["책 다섯 권", "책 오 권", "다섯 책"],
+          "options": [
+            "책 다섯 권",
+            "책 오 권",
+            "다섯 책"
+          ],
           "correctIndex": 0,
           "explanation": "The pattern is: 책 (book) + 다섯 (5, native Korean) + 권 (book counter) = 책 다섯 권. Counters use native Korean numbers, not Sino-Korean."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which counter would you use for dogs?",
-          "options": ["마리", "명", "개"],
-          "correctIndex": 0,
+          "options": [
+            "명",
+            "개",
+            "마리"
+          ],
+          "correctIndex": 2,
           "explanation": "마리 is the counter for animals: 강아지 두 마리 (two dogs). 명 is for people, and 개 is the general counter for objects (not animals)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'four people' politely?",
-          "options": ["네 분", "네 명", "넷 사람"],
-          "correctIndex": 0,
+          "options": [
+            "넷 사람",
+            "네 명",
+            "네 분"
+          ],
+          "correctIndex": 2,
           "explanation": "분 is the polite counter for people (명 is neutral). 네 is the shortened form of 넷 (4) before a counter. So 'four people' (polite) = 네 분."
         }
       ]

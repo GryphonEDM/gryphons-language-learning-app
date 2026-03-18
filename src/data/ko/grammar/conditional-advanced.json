@@ -4,7 +4,10 @@
   "nameKo": "고급 조건 표현",
   "icon": "🔀",
   "tier": "B2",
-  "prerequisites": ["verb-conjugation", "relative-clauses"],
+  "prerequisites": [
+    "verb-conjugation",
+    "relative-clauses"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +16,59 @@
       "explanation": "-(으)ㄴ/는다면 is a stronger hypothetical conditional meaning 'if (hypothetically)' — it emphasizes that the condition is imagined, unlikely, or being considered as a possibility. It combines the plain-style ending with -면. Action verbs present: -ㄴ다면 (vowel stem) / -는다면 (consonant stem). 간다면 (if [one] goes), 먹는다면 (if [one] eats). Descriptive verbs: -다면. 좋다면 (if it's good), 크다면 (if it's big). Past: -았/었다면. 갔다면 (if [one] had gone). This pattern is common for wishful thinking, philosophical questions, and discussing unlikely scenarios. Compare: 비가 오면 (if it rains — neutral, might happen) vs. 비가 온다면 (if it were to rain — more hypothetical emphasis).",
       "tip": "-(으)면 is a neutral 'if' for everyday conditions. -(으)ㄴ/는다면 adds a layer of 'suppose/imagine that...' — use it for thought experiments, wishes, and unlikely conditions.",
       "examples": [
-        { "ko": "만약 로또에 당첨된다면 뭐 할 거예요?", "en": "If you hypothetically won the lottery, what would you do?", "highlight": "당첨된다면" },
-        { "ko": "시간이 있다면 여행을 가고 싶어요", "en": "If I had time, I'd want to travel", "highlight": "있다면" },
-        { "ko": "내가 새라면 하늘을 날겠다", "en": "If I were a bird, I would fly in the sky", "highlight": "새라면" },
-        { "ko": "다시 학생이 된다면 더 열심히 공부할 거예요", "en": "If I became a student again, I would study harder", "highlight": "된다면" }
+        {
+          "ko": "만약 로또에 당첨된다면 뭐 할 거예요?",
+          "en": "If you hypothetically won the lottery, what would you do?",
+          "highlight": "당첨된다면"
+        },
+        {
+          "ko": "시간이 있다면 여행을 가고 싶어요",
+          "en": "If I had time, I'd want to travel",
+          "highlight": "있다면"
+        },
+        {
+          "ko": "내가 새라면 하늘을 날겠다",
+          "en": "If I were a bird, I would fly in the sky",
+          "highlight": "새라면"
+        },
+        {
+          "ko": "다시 학생이 된다면 더 열심히 공부할 거예요",
+          "en": "If I became a student again, I would study harder",
+          "highlight": "된다면"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between '비가 오면' and '비가 온다면'?",
-          "options": ["오면 is neutral/likely; 온다면 is more hypothetical", "They are exactly the same", "오면 is formal; 온다면 is casual"],
-          "correctIndex": 0,
+          "options": [
+            "They are exactly the same",
+            "오면 is formal; 온다면 is casual",
+            "오면 is neutral/likely; 온다면 is more hypothetical"
+          ],
+          "correctIndex": 2,
           "explanation": "-(으)면 is a straightforward 'if' for conditions that may well happen. -(으)ㄴ/는다면 emphasizes the hypothetical nature — 'supposing that' or 'in the event that.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'If I were rich' using -(으)ㄴ/는다면?",
-          "options": ["부자라면", "부자다면", "부자이면"],
-          "correctIndex": 0,
+          "options": [
+            "부자이면",
+            "부자다면",
+            "부자라면"
+          ],
+          "correctIndex": 2,
           "explanation": "부자 is a noun, so it takes 이다. The hypothetical form of 이다 is -(이)라면: 부자라면 (if [I] were rich)."
         },
         {
           "type": "multiple-choice",
           "prompt": "'그때 더 열심히 공부했다면 좋았을 텐데' means:",
-          "options": ["If I had studied harder back then, it would have been good", "If I study harder, it will be good", "When I studied harder, it was good"],
-          "correctIndex": 0,
+          "options": [
+            "When I studied harder, it was good",
+            "If I had studied harder back then, it would have been good",
+            "If I study harder, it will be good"
+          ],
+          "correctIndex": 1,
           "explanation": "-았/었다면 is the past hypothetical: 'if [something] had happened.' Combined with -았/었을 텐데, it expresses regret about an unrealized past condition."
         }
       ]
@@ -48,31 +79,59 @@
       "explanation": "-았/었더라면 expresses a counterfactual condition in the past — something that did NOT happen but you are imagining what would have been different if it had. It is the Korean equivalent of 'if only I had...' or 'had I done...' The -더- element adds a reflective, recollective nuance. 일찍 출발했더라면 늦지 않았을 거예요 (If I had left early, I wouldn't have been late). 그 사람을 만났더라면 인생이 달라졌을 거예요 (If I had met that person, my life would have been different). The result clause typically uses -았/었을 거예요 or -았/었을 텐데 to express the imagined outcome. This pattern inherently carries regret or wistful reflection.",
       "tip": "-았/었더라면 is ALWAYS about the past and ALWAYS counterfactual (it didn't happen). If you want a condition that might still happen, use -(으)면 or -(으)ㄴ/는다면 instead.",
       "examples": [
-        { "ko": "일찍 일어났더라면 비행기를 놓치지 않았을 거예요", "en": "If I had woken up early, I wouldn't have missed the plane", "highlight": "일어났더라면" },
-        { "ko": "그때 고백했더라면 어떻게 됐을까?", "en": "If I had confessed back then, what would have happened?", "highlight": "고백했더라면" },
-        { "ko": "더 열심히 연습했더라면 시합에서 이겼을 텐데", "en": "If I had practiced harder, I would have won the match", "highlight": "연습했더라면" },
-        { "ko": "그 회사에 지원했더라면 합격했을지도 몰라요", "en": "If I had applied to that company, I might have been accepted", "highlight": "지원했더라면" }
+        {
+          "ko": "일찍 일어났더라면 비행기를 놓치지 않았을 거예요",
+          "en": "If I had woken up early, I wouldn't have missed the plane",
+          "highlight": "일어났더라면"
+        },
+        {
+          "ko": "그때 고백했더라면 어떻게 됐을까?",
+          "en": "If I had confessed back then, what would have happened?",
+          "highlight": "고백했더라면"
+        },
+        {
+          "ko": "더 열심히 연습했더라면 시합에서 이겼을 텐데",
+          "en": "If I had practiced harder, I would have won the match",
+          "highlight": "연습했더라면"
+        },
+        {
+          "ko": "그 회사에 지원했더라면 합격했을지도 몰라요",
+          "en": "If I had applied to that company, I might have been accepted",
+          "highlight": "지원했더라면"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'-았/었더라면' is used for:",
-          "options": ["Past situations that did NOT happen (counterfactual)", "Past situations that DID happen", "Future possibilities"],
+          "options": [
+            "Past situations that did NOT happen (counterfactual)",
+            "Past situations that DID happen",
+            "Future possibilities"
+          ],
           "correctIndex": 0,
           "explanation": "-았/었더라면 is strictly counterfactual past: it refers to something that did not happen, and imagines what the outcome would have been."
         },
         {
           "type": "multiple-choice",
           "prompt": "'우산을 가져왔더라면 비를 안 맞았을 텐데' means:",
-          "options": ["If I had brought an umbrella, I wouldn't have gotten rained on", "If I bring an umbrella, I won't get rained on", "I brought an umbrella so I didn't get rained on"],
-          "correctIndex": 0,
+          "options": [
+            "I brought an umbrella so I didn't get rained on",
+            "If I bring an umbrella, I won't get rained on",
+            "If I had brought an umbrella, I wouldn't have gotten rained on"
+          ],
+          "correctIndex": 2,
           "explanation": "가져왔더라면 (if I had brought) is counterfactual — the speaker did NOT bring an umbrella and got rained on, and is expressing regret."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which result clause best pairs with -았/었더라면?",
-          "options": ["-았/었을 거예요 or -았/었을 텐데", "-아/어요", "-(으)ㄹ 거예요"],
-          "correctIndex": 0,
+          "options": [
+            "-아/어요",
+            "-았/었을 거예요 or -았/었을 텐데",
+            "-(으)ㄹ 거예요"
+          ],
+          "correctIndex": 1,
           "explanation": "Since -았/었더라면 is counterfactual past, the result should also be in the unrealized past: -았/었을 거예요 (would have) or -았/었을 텐데 (would have been the case that)."
         }
       ]
@@ -83,31 +142,59 @@
       "explanation": "-(으)ㄹ 텐데 expresses an unrealized expectation, assumption, or regret. 텐데 comes from 터 (bound noun meaning 'fact/situation') + 이다 + -ㄴ데. It means 'it would be the case that...' or 'I expect/assume that...' Present/future: 좋을 텐데 (it would be nice / I assume it's nice). 힘들 텐데 (it must be hard). Past counterfactual: 좋았을 텐데 (it would have been nice). 갔을 텐데 (they probably would have gone). When -(으)ㄹ 텐데 ends the sentence, it implies 'but (unfortunately it isn't so)' — expressing regret or sympathy. 여행을 갈 수 있으면 좋을 텐데 (It would be nice if I could travel — but I can't). 많이 피곤할 텐데 쉬세요 (You must be very tired, so please rest — expressing sympathy).",
       "tip": "-(으)ㄹ 텐데 at the end of a sentence = 'it would be nice / I assume so, but...' (trailing regret). -(으)ㄹ 텐데 followed by another clause = 'since it's probably the case that...' (expressing assumption and giving advice).",
       "examples": [
-        { "ko": "시간이 있으면 좋을 텐데", "en": "It would be nice to have time (but I don't)", "highlight": "좋을 텐데" },
-        { "ko": "배고플 텐데 이거 드세요", "en": "You must be hungry — please eat this", "highlight": "배고플 텐데" },
-        { "ko": "그 소식을 들으면 기뻐할 텐데", "en": "They would be happy if they heard that news", "highlight": "기뻐할 텐데" },
-        { "ko": "더 일찍 말했으면 좋았을 텐데", "en": "It would have been nice if you had told me earlier", "highlight": "좋았을 텐데" }
+        {
+          "ko": "시간이 있으면 좋을 텐데",
+          "en": "It would be nice to have time (but I don't)",
+          "highlight": "좋을 텐데"
+        },
+        {
+          "ko": "배고플 텐데 이거 드세요",
+          "en": "You must be hungry — please eat this",
+          "highlight": "배고플 텐데"
+        },
+        {
+          "ko": "그 소식을 들으면 기뻐할 텐데",
+          "en": "They would be happy if they heard that news",
+          "highlight": "기뻐할 텐데"
+        },
+        {
+          "ko": "더 일찍 말했으면 좋았을 텐데",
+          "en": "It would have been nice if you had told me earlier",
+          "highlight": "좋았을 텐데"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "'한국어를 잘하면 좋을 텐데' expresses:",
-          "options": ["A wish — 'It would be nice if I spoke Korean well (but I don't)'", "A fact — 'I speak Korean well'", "Advice — 'You should speak Korean well'"],
-          "correctIndex": 0,
+          "options": [
+            "Advice — 'You should speak Korean well'",
+            "A wish — 'It would be nice if I spoke Korean well (but I don't)'",
+            "A fact — 'I speak Korean well'"
+          ],
+          "correctIndex": 1,
           "explanation": "좋을 텐데 at the end of a sentence expresses a wish or regret about something that isn't the case. The speaker wishes they spoke Korean well but currently doesn't."
         },
         {
           "type": "multiple-choice",
           "prompt": "'많이 추울 텐데 따뜻하게 입으세요' means:",
-          "options": ["It's probably very cold, so dress warmly", "It was very cold, so I dressed warmly", "If it's cold, I'll dress warmly"],
-          "correctIndex": 0,
+          "options": [
+            "It was very cold, so I dressed warmly",
+            "If it's cold, I'll dress warmly",
+            "It's probably very cold, so dress warmly"
+          ],
+          "correctIndex": 2,
           "explanation": "-(으)ㄹ 텐데 here expresses an assumption about the listener's situation (it must be cold), followed by advice (dress warmly). This is a sympathetic/caring usage."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does -았/었을 텐데 at the end of a sentence convey?",
-          "options": ["Regret about a past outcome that didn't happen", "Certainty about what happened", "A plan for the future"],
-          "correctIndex": 0,
+          "options": [
+            "Certainty about what happened",
+            "Regret about a past outcome that didn't happen",
+            "A plan for the future"
+          ],
+          "correctIndex": 1,
           "explanation": "-았/었을 텐데 expresses regret about an unrealized past: 'it would have been the case that...' It implies things didn't turn out that way, and the speaker wishes they had."
         }
       ]

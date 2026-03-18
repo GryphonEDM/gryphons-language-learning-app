@@ -4,7 +4,9 @@
   "nameKo": "과거 시제",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["basic-verbs"],
+  "prerequisites": [
+    "basic-verbs"
+  ],
   "estimatedMinutes": 18,
   "sections": [
     {
@@ -13,29 +15,53 @@
       "explanation": "The polite past tense in Korean is formed by adding -았어요 or -었어요 to the verb stem. The rule follows the same vowel harmony as present tense: if the last vowel of the stem is ㅏ or ㅗ (bright vowels), add -았어요; for all other vowels, add -었어요. For 하다 verbs, the past tense is always 했어요. Examples: 가다 → 갔어요 (went — 가+았어요 contracts to 갔어요), 먹다 → 먹었어요 (ate), 오다 → 왔어요 (came — 오+았어요 contracts to 왔어요), 마시다 → 마셨어요 (drank — 마시+었어요 contracts to 마셨어요), 공부하다 → 공부했어요 (studied). The contraction rules are identical to present tense — the same vowel merging applies, just with 았/었 instead of 아/어.",
       "tip": "If you already know the present tense -아/어요 form, the past tense is easy: just insert ㅆ before 어요. 가요 → 갔어요, 먹어요 → 먹었어요, 해요 → 했어요. The ㅆ batchim is the key marker of past tense.",
       "examples": [
-        { "ko": "어제 학교에 갔어요.", "en": "I went to school yesterday. (가다 → 갔어요)", "highlight": "갔어요" },
-        { "ko": "점심을 먹었어요.", "en": "I ate lunch. (먹다 → 먹었어요)", "highlight": "먹었어요" },
-        { "ko": "한국어를 공부했어요.", "en": "I studied Korean. (공부하다 → 공부했어요)", "highlight": "했어요" }
+        {
+          "ko": "어제 학교에 갔어요.",
+          "en": "I went to school yesterday. (가다 → 갔어요)",
+          "highlight": "갔어요"
+        },
+        {
+          "ko": "점심을 먹었어요.",
+          "en": "I ate lunch. (먹다 → 먹었어요)",
+          "highlight": "먹었어요"
+        },
+        {
+          "ko": "한국어를 공부했어요.",
+          "en": "I studied Korean. (공부하다 → 공부했어요)",
+          "highlight": "했어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of 보다 (to see)?",
-          "options": ["봤어요", "보았어요", "보었어요"],
-          "correctIndex": 0,
+          "options": [
+            "보었어요",
+            "봤어요",
+            "보았어요"
+          ],
+          "correctIndex": 1,
           "explanation": "보다 → stem 보 (last vowel ㅗ, bright) → 보 + 았어요 → 봤어요 (ㅗ+ㅏ contracts to ㅘ, then add ㅆ). 보았어요 is technically correct but the contracted 봤어요 is standard."
         },
         {
           "type": "multiple-choice",
           "prompt": "Conjugate 읽다 (to read) to the past tense.",
-          "options": ["읽었어요", "읽았어요", "읽셨어요"],
-          "correctIndex": 0,
+          "options": [
+            "읽았어요",
+            "읽셨어요",
+            "읽었어요"
+          ],
+          "correctIndex": 2,
           "explanation": "읽다 → stem 읽 (last vowel ㅣ, not bright) → add -었어요: 읽었어요 (read/past). Only stems with ㅏ or ㅗ take -았어요."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I exercised' using 운동하다?",
-          "options": ["운동했어요", "운동하았어요", "운동하었어요"],
+          "options": [
+            "운동했어요",
+            "운동하았어요",
+            "운동하었어요"
+          ],
           "correctIndex": 0,
           "explanation": "All 하다 verbs form the past tense as 했어요: 운동했어요 (exercised), 요리했어요 (cooked), 일했어요 (worked). 하다 always becomes 했어요 in the past."
         }
@@ -47,30 +73,54 @@
       "explanation": "Several common verbs have irregular stems in the past tense. The ㅂ-irregular verbs (where ㅂ changes to 우 before a vowel): 춥다 → 추웠어요 (was cold), 덥다 → 더웠어요 (was hot), 돕다 → 도왔어요 (helped — ㅂ→오 is a special case). The ㄷ-irregular verbs (where ㄷ changes to ㄹ before a vowel): 듣다 → 들었어요 (listened), 걷다 → 걸었어요 (walked). The ㅡ-drop verbs (ㅡ drops when followed by 아/어): 쓰다 → 썼어요 (wrote/used), 크다 → 컸어요 (was big), 바쁘다 → 바빴어요 (was busy). The ㄹ-irregular verbs (ㄹ drops before ㄴ, ㅂ, ㅅ but stays before vowels): 살다 → 살았어요 (lived), 만들다 → 만들었어요 (made). Irregulars must be memorized, but the patterns become intuitive with practice.",
       "tip": "The three most common irregular patterns: ㅂ→우 (춥다→추웠어요), ㄷ→ㄹ (듣다→들었어요), ㅡ-drop (쓰다→썼어요). Once you learn these three patterns, you can handle most irregular past tenses.",
       "examples": [
-        { "ko": "어제 날씨가 추웠어요.", "en": "The weather was cold yesterday. (춥다 → 추웠어요, ㅂ-irregular)", "highlight": "추웠어요" },
-        { "ko": "음악을 들었어요.", "en": "I listened to music. (듣다 → 들었어요, ㄷ-irregular)", "highlight": "들었어요" },
-        { "ko": "편지를 썼어요.", "en": "I wrote a letter. (쓰다 → 썼어요, ㅡ-drop)", "highlight": "썼어요" }
+        {
+          "ko": "어제 날씨가 추웠어요.",
+          "en": "The weather was cold yesterday. (춥다 → 추웠어요, ㅂ-irregular)",
+          "highlight": "추웠어요"
+        },
+        {
+          "ko": "음악을 들었어요.",
+          "en": "I listened to music. (듣다 → 들었어요, ㄷ-irregular)",
+          "highlight": "들었어요"
+        },
+        {
+          "ko": "편지를 썼어요.",
+          "en": "I wrote a letter. (쓰다 → 썼어요, ㅡ-drop)",
+          "highlight": "썼어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of 걷다 (to walk)?",
-          "options": ["걸었어요", "걷었어요", "걸았어요"],
-          "correctIndex": 0,
+          "options": [
+            "걸았어요",
+            "걷었어요",
+            "걸었어요"
+          ],
+          "correctIndex": 2,
           "explanation": "걷다 is a ㄷ-irregular verb. The ㄷ changes to ㄹ before a vowel ending: 걷 → 걸 + 었어요 = 걸었어요 (walked)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Conjugate 덥다 (to be hot, weather) to the past tense.",
-          "options": ["더웠어요", "덥었어요", "더왔어요"],
-          "correctIndex": 0,
+          "options": [
+            "덥었어요",
+            "더왔어요",
+            "더웠어요"
+          ],
+          "correctIndex": 2,
           "explanation": "덥다 is a ㅂ-irregular verb. The ㅂ changes to 우: 덥 → 더우 + 었어요 = 더웠어요 (was hot). Most adjectives ending in ㅂ follow this pattern."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense of 바쁘다 (to be busy)?",
-          "options": ["바빴어요", "바쁘었어요", "바쁘았어요"],
-          "correctIndex": 0,
+          "options": [
+            "바쁘았어요",
+            "바빴어요",
+            "바쁘었어요"
+          ],
+          "correctIndex": 1,
           "explanation": "바쁘다 is a ㅡ-drop verb. The ㅡ drops, and since the vowel before ㅡ is ㅏ (bright), add -았어요: 바쁘 → 바빠 → 바빴어요 (was busy)."
         }
       ]
@@ -81,29 +131,53 @@
       "explanation": "Negating past tense works the same way as present tense, using either 안 or -지 않았어요. Method 1: Place 안 before the past tense verb: 안 갔어요 (did not go), 안 먹었어요 (did not eat). Method 2: Stem + 지 않았어요: 가지 않았어요 (did not go), 먹지 않았어요 (did not eat). For 하다 verbs with method 1, 안 goes between the noun and 하다: 공부 안 했어요 (did not study), 운동 안 했어요 (did not exercise). With method 2: 공부하지 않았어요. For existence, use 없었어요 (did not exist/have), not 안 있었어요. Both negation methods are equally correct; 안 is more casual and conversational, while -지 않았어요 is slightly more formal.",
       "tip": "For 하다 verbs, the 안 goes between the noun and 했어요: 공부 안 했어요, NOT 안 공부했어요. This is a common mistake — split the verb when using 안.",
       "examples": [
-        { "ko": "어제 안 갔어요.", "en": "I did not go yesterday.", "highlight": "안 갔어요" },
-        { "ko": "공부 안 했어요.", "en": "I did not study. (안 splits into the 하다 verb)", "highlight": "안 했어요" },
-        { "ko": "먹지 않았어요.", "en": "I did not eat. (-지 않았어요 form)", "highlight": "않았어요" }
+        {
+          "ko": "어제 안 갔어요.",
+          "en": "I did not go yesterday.",
+          "highlight": "안 갔어요"
+        },
+        {
+          "ko": "공부 안 했어요.",
+          "en": "I did not study. (안 splits into the 하다 verb)",
+          "highlight": "안 했어요"
+        },
+        {
+          "ko": "먹지 않았어요.",
+          "en": "I did not eat. (-지 않았어요 form)",
+          "highlight": "않았어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I did not exercise' using 안?",
-          "options": ["운동 안 했어요", "안 운동했어요", "운동안 했어요"],
+          "options": [
+            "운동 안 했어요",
+            "운동안 했어요",
+            "안 운동했어요"
+          ],
           "correctIndex": 0,
           "explanation": "For 하다 verbs, 안 is placed between the noun and 했어요: 운동 안 했어요. Do not put 안 at the very beginning of a 하다 verb phrase."
         },
         {
           "type": "multiple-choice",
           "prompt": "Negate 왔어요 (came) using the -지 않다 form.",
-          "options": ["오지 않았어요", "와지 않았어요", "오지 안았어요"],
-          "correctIndex": 0,
+          "options": [
+            "와지 않았어요",
+            "오지 안았어요",
+            "오지 않았어요"
+          ],
+          "correctIndex": 2,
           "explanation": "Use the verb stem (오, from 오다) + 지 않았어요: 오지 않았어요 (did not come). Always attach -지 to the original stem, not the conjugated form."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I did not have money'?",
-          "options": ["돈이 없었어요", "돈이 안 있었어요", "돈을 않았어요"],
+          "options": [
+            "돈이 없었어요",
+            "돈을 않았어요",
+            "돈이 안 있었어요"
+          ],
           "correctIndex": 0,
           "explanation": "있다/없다 is a special pair. The past of 없다 is 없었어요: 돈이 없었어요 (did not have money). Never use 안 있다 — always use 없다."
         }

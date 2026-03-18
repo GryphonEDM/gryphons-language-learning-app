@@ -13,30 +13,58 @@
       "explanation": "إِذَا (idhaa, 'if/when') introduces real or likely conditions — situations that may well happen. It is followed by a past tense verb in the condition clause (الشَّرْط), even when the meaning is present or future. The result clause (الجَوَاب) typically uses the past tense or the particle فَـ + present/future tense. For example: إِذَا دَرَسْتَ نَجَحْتَ (If you study, you will succeed) — both verbs are past tense in form but future in meaning. When the result clause begins with a nominal sentence, imperative, negation with لَنْ/لَمْ, or an emphatic particle, it must be introduced by فَـ: إِذَا جَاءَ فَأَخْبِرْهُ (If he comes, then inform him). إِذَا is the most common conditional particle in everyday Arabic and is used for conditions the speaker considers realistic and possible.",
       "tip": "After إِذَا, use past tense verbs even for future meaning. Add فَـ before the result clause if it starts with a noun, imperative, negative particle, or other non-verbal element.",
       "examples": [
-        { "ar": "إِذَا دَرَسْتَ نَجَحْتَ", "en": "If you study, you will succeed.", "highlight": "إِذَا" },
-        { "ar": "إِذَا جَاءَ فَأَخْبِرْهُ", "en": "If he comes, then inform him.", "highlight": "فَأَخْبِرْهُ" },
-        { "ar": "إِذَا سَأَلَكَ أَحَدٌ فَقُلِ الحَقِيقَةَ", "en": "If someone asks you, tell the truth.", "highlight": "فَقُلِ" },
-        { "ar": "إِذَا أَرَدْتَ النَّجَاحَ فَاعْمَلْ بِجِدٍّ", "en": "If you want success, then work hard.", "highlight": "فَاعْمَلْ" }
+        {
+          "ar": "إِذَا دَرَسْتَ نَجَحْتَ",
+          "en": "If you study, you will succeed.",
+          "highlight": "إِذَا"
+        },
+        {
+          "ar": "إِذَا جَاءَ فَأَخْبِرْهُ",
+          "en": "If he comes, then inform him.",
+          "highlight": "فَأَخْبِرْهُ"
+        },
+        {
+          "ar": "إِذَا سَأَلَكَ أَحَدٌ فَقُلِ الحَقِيقَةَ",
+          "en": "If someone asks you, tell the truth.",
+          "highlight": "فَقُلِ"
+        },
+        {
+          "ar": "إِذَا أَرَدْتَ النَّجَاحَ فَاعْمَلْ بِجِدٍّ",
+          "en": "If you want success, then work hard.",
+          "highlight": "فَاعْمَلْ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What type of condition does إِذَا express?",
-          "options": ["A real or likely condition", "An impossible or unreal condition", "A past regret"],
+          "options": [
+            "A real or likely condition",
+            "An impossible or unreal condition",
+            "A past regret"
+          ],
           "correctIndex": 0,
           "explanation": "إِذَا introduces conditions that are real and possible — things that may actually happen. For unreal or impossible conditions, Arabic uses لَوْ instead."
         },
         {
           "type": "multiple-choice",
           "prompt": "What tense follows إِذَا in the condition clause?",
-          "options": ["Past tense (even for future meaning)", "Present tense only", "Future with سَوْفَ"],
-          "correctIndex": 0,
+          "options": [
+            "Future with سَوْفَ",
+            "Present tense only",
+            "Past tense (even for future meaning)"
+          ],
+          "correctIndex": 2,
           "explanation": "After إِذَا, the condition clause uses past tense verbs, even though the meaning is typically about the future. إِذَا دَرَسْتَ نَجَحْتَ literally uses past forms but means 'If you study, you will succeed.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "When must فَـ be added before the result clause after إِذَا?",
-          "options": ["When the result starts with a nominal sentence, imperative, or negation particle", "Always", "Never — فَـ is optional"],
+          "options": [
+            "When the result starts with a nominal sentence, imperative, or negation particle",
+            "Never — فَـ is optional",
+            "Always"
+          ],
           "correctIndex": 0,
           "explanation": "فَـ is required before the result clause when it begins with something other than a simple past-tense verb — such as a nominal sentence, an imperative, a negation particle (لَنْ, لَمْ), or an emphasis particle (إِنَّ, قَدْ)."
         }
@@ -48,30 +76,58 @@
       "explanation": "لَوْ (law, 'if') introduces unreal, hypothetical, or counterfactual conditions — situations contrary to reality or highly unlikely. Like إِذَا, it is followed by a past tense verb, but the meaning is 'if (but it did not happen)' or 'if (but it is unlikely)'. The result clause often contains لَـ (emphatic lam): لَوْ دَرَسْتُ لَنَجَحْتُ (If I had studied, I would have succeeded — but I did not study). لَوْ can express past counterfactuals: لَوْ كُنْتُ هُنَاكَ لَسَاعَدْتُكَ (If I had been there, I would have helped you). It also expresses present unreal conditions: لَوْ كُنْتُ غَنِيًّا لَاشْتَرَيْتُ بَيْتًا (If I were rich, I would buy a house). لَوْ sentences convey a sense of wishing, regret, or hypothetical reasoning.",
       "tip": "لَوْ = 'if' for unreal/impossible conditions. The result clause often has لَـ before the verb. Think of لَوْ as expressing what would have happened (but did not) or what would happen (but will not).",
       "examples": [
-        { "ar": "لَوْ دَرَسْتُ لَنَجَحْتُ", "en": "If I had studied, I would have succeeded.", "highlight": "لَوْ" },
-        { "ar": "لَوْ كُنْتُ مَكَانَكَ لَفَعَلْتُ ذَلِكَ", "en": "If I were in your place, I would have done that.", "highlight": "لَفَعَلْتُ" },
-        { "ar": "لَوْ عَرَفْتُ لَأَخْبَرْتُكَ", "en": "If I had known, I would have told you.", "highlight": "لَأَخْبَرْتُكَ" },
-        { "ar": "لَوْ كَانَ الأَمْرُ سَهْلًا لَمَا احْتَجْنَا إِلَى مُسَاعَدَةٍ", "en": "If the matter were easy, we would not have needed help.", "highlight": "لَمَا احْتَجْنَا" }
+        {
+          "ar": "لَوْ دَرَسْتُ لَنَجَحْتُ",
+          "en": "If I had studied, I would have succeeded.",
+          "highlight": "لَوْ"
+        },
+        {
+          "ar": "لَوْ كُنْتُ مَكَانَكَ لَفَعَلْتُ ذَلِكَ",
+          "en": "If I were in your place, I would have done that.",
+          "highlight": "لَفَعَلْتُ"
+        },
+        {
+          "ar": "لَوْ عَرَفْتُ لَأَخْبَرْتُكَ",
+          "en": "If I had known, I would have told you.",
+          "highlight": "لَأَخْبَرْتُكَ"
+        },
+        {
+          "ar": "لَوْ كَانَ الأَمْرُ سَهْلًا لَمَا احْتَجْنَا إِلَى مُسَاعَدَةٍ",
+          "en": "If the matter were easy, we would not have needed help.",
+          "highlight": "لَمَا احْتَجْنَا"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What type of condition does لَوْ express?",
-          "options": ["Unreal, hypothetical, or counterfactual conditions", "Real and likely conditions", "Commands and requests"],
-          "correctIndex": 0,
+          "options": [
+            "Commands and requests",
+            "Real and likely conditions",
+            "Unreal, hypothetical, or counterfactual conditions"
+          ],
+          "correctIndex": 2,
           "explanation": "لَوْ introduces conditions that are contrary to fact or hypothetical. لَوْ دَرَسْتُ لَنَجَحْتُ implies 'but I did not study, and I did not succeed.' For real conditions, use إِذَا instead."
         },
         {
           "type": "multiple-choice",
           "prompt": "In لَوْ دَرَسْتُ لَنَجَحْتُ, what is the function of لَـ before نَجَحْتُ?",
-          "options": ["It is an emphatic lam marking the result of a لَوْ condition", "It means 'not'", "It is a preposition meaning 'for'"],
-          "correctIndex": 0,
+          "options": [
+            "It means 'not'",
+            "It is an emphatic lam marking the result of a لَوْ condition",
+            "It is a preposition meaning 'for'"
+          ],
+          "correctIndex": 1,
           "explanation": "The لَـ before the result clause is called لام الجواب (the lam of the answer/result). It emphasizes the result of the hypothetical condition and is a standard part of لَوْ sentences."
         },
         {
           "type": "multiple-choice",
           "prompt": "How would you say 'If I were rich, I would travel'?",
-          "options": ["لَوْ كُنْتُ غَنِيًّا لَسَافَرْتُ", "إِذَا كُنْتُ غَنِيًّا سَافَرْتُ", "لَوْلَا الغِنَى لَسَافَرْتُ"],
+          "options": [
+            "لَوْ كُنْتُ غَنِيًّا لَسَافَرْتُ",
+            "إِذَا كُنْتُ غَنِيًّا سَافَرْتُ",
+            "لَوْلَا الغِنَى لَسَافَرْتُ"
+          ],
           "correctIndex": 0,
           "explanation": "This is an unreal/hypothetical condition (you are not rich), so لَوْ is correct: لَوْ كُنْتُ غَنِيًّا لَسَافَرْتُ. إِذَا would imply this is a real possibility. لَوْلَا means 'if it were not for.'"
         }
@@ -83,31 +139,59 @@
       "explanation": "لَوْلَا (lawlaa) means 'if it were not for' or 'were it not for' and introduces a special type of counterfactual condition. It is followed by a noun (not a verb) that represents the reason something did not happen, and then the result clause with لَـ shows what would have happened otherwise. The structure is: لَوْلَا + noun + لَـ + past tense verb. For example: لَوْلَا المَطَرُ لَذَهَبْتُ (Were it not for the rain, I would have gone). The noun after لَوْلَا is in the nominative case and is the subject of an implied existence statement: 'if the rain did not exist...' لَوْلَا is also used rhetorically for emphasis and in expressions of gratitude: لَوْلَا اللهُ لَهَلَكْنَا (Were it not for God, we would have perished). A related word, لَوْلَا + pronoun + لَـ, uses independent pronouns: لَوْلَاكَ لَمَا نَجَحْتُ (Were it not for you, I would not have succeeded).",
       "tip": "لَوْلَا is always followed by a noun (never a verb directly). The noun is in the nominative case. The result clause uses لَـ + past tense. Think of it as: 'If X did not exist, then Y would have happened.'",
       "examples": [
-        { "ar": "لَوْلَا المَطَرُ لَذَهَبْتُ", "en": "Were it not for the rain, I would have gone.", "highlight": "لَوْلَا" },
-        { "ar": "لَوْلَا الصَّبْرُ لَمَا نَجَحْنَا", "en": "Were it not for patience, we would not have succeeded.", "highlight": "لَوْلَا الصَّبْرُ" },
-        { "ar": "لَوْلَاكَ لَضِعْتُ", "en": "Were it not for you, I would have been lost.", "highlight": "لَوْلَاكَ" },
-        { "ar": "لَوْلَا العِلْمُ لَبَقِيَ النَّاسُ فِي جَهْلٍ", "en": "Were it not for knowledge, people would have remained in ignorance.", "highlight": "لَوْلَا العِلْمُ" }
+        {
+          "ar": "لَوْلَا المَطَرُ لَذَهَبْتُ",
+          "en": "Were it not for the rain, I would have gone.",
+          "highlight": "لَوْلَا"
+        },
+        {
+          "ar": "لَوْلَا الصَّبْرُ لَمَا نَجَحْنَا",
+          "en": "Were it not for patience, we would not have succeeded.",
+          "highlight": "لَوْلَا الصَّبْرُ"
+        },
+        {
+          "ar": "لَوْلَاكَ لَضِعْتُ",
+          "en": "Were it not for you, I would have been lost.",
+          "highlight": "لَوْلَاكَ"
+        },
+        {
+          "ar": "لَوْلَا العِلْمُ لَبَقِيَ النَّاسُ فِي جَهْلٍ",
+          "en": "Were it not for knowledge, people would have remained in ignorance.",
+          "highlight": "لَوْلَا العِلْمُ"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What must follow لَوْلَا directly?",
-          "options": ["A noun in the nominative case", "A verb in the past tense", "A verb in the present tense"],
+          "options": [
+            "A noun in the nominative case",
+            "A verb in the present tense",
+            "A verb in the past tense"
+          ],
           "correctIndex": 0,
           "explanation": "لَوْلَا is always followed by a noun (in the nominative case), not a verb. The noun represents the thing whose absence is being hypothesized. For example, لَوْلَا المَطَرُ — 'if the rain did not exist.'"
         },
         {
           "type": "multiple-choice",
           "prompt": "What does لَوْلَا المُعَلِّمُ لَمَا فَهِمْتُ mean?",
-          "options": ["Were it not for the teacher, I would not have understood", "If the teacher comes, I will understand", "The teacher did not understand"],
-          "correctIndex": 0,
+          "options": [
+            "If the teacher comes, I will understand",
+            "The teacher did not understand",
+            "Were it not for the teacher, I would not have understood"
+          ],
+          "correctIndex": 2,
           "explanation": "لَوْلَا المُعَلِّمُ لَمَا فَهِمْتُ means 'Were it not for the teacher, I would not have understood.' It implies the teacher's help was the reason the speaker understood."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the difference between لَوْ and لَوْلَا?",
-          "options": ["لَوْ introduces a full hypothetical condition; لَوْلَا means 'if it were not for'", "They are identical in meaning", "لَوْلَا is used for real conditions"],
-          "correctIndex": 0,
+          "options": [
+            "لَوْلَا is used for real conditions",
+            "They are identical in meaning",
+            "لَوْ introduces a full hypothetical condition; لَوْلَا means 'if it were not for'"
+          ],
+          "correctIndex": 2,
           "explanation": "لَوْ introduces a full counterfactual condition ('If X had happened, Y would have happened'). لَوْلَا specifically means 'if it were not for X' — it attributes the non-occurrence of something to the existence of X."
         }
       ]

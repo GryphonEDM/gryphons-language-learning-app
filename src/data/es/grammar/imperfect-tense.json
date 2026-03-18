@@ -4,7 +4,9 @@
   "nameEs": "El Pretérito Imperfecto",
   "icon": "🔁",
   "tier": "B1",
-  "prerequisites": ["preterite-tense"],
+  "prerequisites": [
+    "preterite-tense"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,30 +15,61 @@
       "explanation": "The imperfect tense describes past actions that were ongoing, habitual, or repeated. Regular -ar verbs take the endings -aba, -abas, -aba, -ábamos, -abais, -aban. Regular -er and -ir verbs take the endings -ía, -ías, -ía, -íamos, -íais, -ían. Note that the yo and él/ella/usted forms are identical — context makes the subject clear.",
       "tip": "All -er and -ir verbs share the same imperfect endings. The only accent mark in -ar endings is on -ábamos; in -er/-ir endings, every form has an accent on the í.",
       "examples": [
-        { "es": "Yo hablaba español todos los días.", "en": "I used to speak Spanish every day.", "highlight": "hablaba" },
-        { "es": "Nosotros comíamos juntos cada noche.", "en": "We used to eat together every night.", "highlight": "comíamos" },
-        { "es": "Ellos vivían cerca del mar.", "en": "They used to live near the sea.", "highlight": "vivían" },
-        { "es": "Tú cantabas muy bien de joven.", "en": "You used to sing very well when you were young.", "highlight": "cantabas" }
+        {
+          "es": "Yo hablaba español todos los días.",
+          "en": "I used to speak Spanish every day.",
+          "highlight": "hablaba"
+        },
+        {
+          "es": "Nosotros comíamos juntos cada noche.",
+          "en": "We used to eat together every night.",
+          "highlight": "comíamos"
+        },
+        {
+          "es": "Ellos vivían cerca del mar.",
+          "en": "They used to live near the sea.",
+          "highlight": "vivían"
+        },
+        {
+          "es": "Tú cantabas muy bien de joven.",
+          "en": "You used to sing very well when you were young.",
+          "highlight": "cantabas"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct imperfect form of 'hablar' for 'nosotros'?",
-          "options": ["hablamos", "hablábamos", "hablámos", "hablábemos"],
-          "correctIndex": 1,
+          "options": [
+            "hablábemos",
+            "hablamos",
+            "hablábamos",
+            "hablámos"
+          ],
+          "correctIndex": 2,
           "explanation": "-Ar verbs take -ábamos for nosotros in the imperfect. The accent on the á is required."
         },
         {
           "type": "multiple-choice",
           "prompt": "Complete the sentence: 'De niña, ella ___ mucho.' (leer)",
-          "options": ["leía", "leaba", "leyaba", "leíaba"],
-          "correctIndex": 0,
+          "options": [
+            "leaba",
+            "leyaba",
+            "leía",
+            "leíaba"
+          ],
+          "correctIndex": 2,
           "explanation": "'Leer' is an -er verb. Its imperfect stem is le- and the ella ending is -ía, giving 'leía'."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the 'vosotros' form of 'vivir' in the imperfect?",
-          "options": ["vivabais", "vivíais", "viviais", "viviíais"],
+          "options": [
+            "viviíais",
+            "vivíais",
+            "viviais",
+            "vivabais"
+          ],
           "correctIndex": 1,
           "explanation": "-Ir verbs take -íais for vosotros in the imperfect: viv + íais = vivíais."
         },
@@ -44,39 +77,47 @@
           "type": "multiple-choice",
           "prompt": "Which sentence uses the imperfect correctly?",
           "options": [
-            "Ayer yo trabajaba hasta las ocho.",
-            "Cada verano nosotros viajábamos a la playa.",
+            "Tú compraste un coche nuevo ayer.",
             "El lunes ella comió una ensalada.",
-            "Tú compraste un coche nuevo ayer."
+            "Cada verano nosotros viajábamos a la playa.",
+            "Ayer yo trabajaba hasta las ocho."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "'Cada verano' signals a habitual past action, which takes the imperfect. The other options either describe completed one-time events or use the preterite correctly."
         },
         {
           "type": "fill-blank",
           "prompt": "Cuando era niño, yo ___ (jugar) en el parque todos los días.",
-          "acceptedAnswers": ["jugaba"],
+          "acceptedAnswers": [
+            "jugaba"
+          ],
           "hint": "-Ar verb, yo form: stem + -aba",
           "explanation": "'Jugar' is a regular -ar verb in the imperfect. Yo form: jug + aba = jugaba."
         },
         {
           "type": "fill-blank",
           "prompt": "Mis abuelos ___ (vivir) en un pueblo pequeño.",
-          "acceptedAnswers": ["vivían"],
+          "acceptedAnswers": [
+            "vivían"
+          ],
           "hint": "-Ir verb, ellos form: stem + -ían",
           "explanation": "'Vivir' is a regular -ir verb. Ellos/ellas form: viv + ían = vivían."
         },
         {
           "type": "fill-blank",
           "prompt": "Vosotros ___ (comer) muy tarde cuando erais jóvenes.",
-          "acceptedAnswers": ["comíais"],
+          "acceptedAnswers": [
+            "comíais"
+          ],
           "hint": "-Er verb, vosotros form: stem + -íais",
           "explanation": "'Comer' is a regular -er verb. Vosotros form: com + íais = comíais."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella siempre ___ (escuchar) música clásica por las mañanas.",
-          "acceptedAnswers": ["escuchaba"],
+          "acceptedAnswers": [
+            "escuchaba"
+          ],
           "hint": "-Ar verb, ella form: stem + -aba",
           "explanation": "'Escuchar' is a regular -ar verb. Ella form: escuch + aba = escuchaba."
         }
@@ -88,65 +129,109 @@
       "explanation": "Good news: the imperfect has only three irregular verbs in Spanish — ser, ir, and ver. All other verbs follow the regular patterns. Ser (to be): era, eras, era, éramos, erais, eran. Ir (to go): iba, ibas, iba, íbamos, ibais, iban. Ver (to see): veía, veías, veía, veíamos, veíais, veían. Note that 'ver' is irregular only because its stem retains the 'e' (ve-) before the -ía endings, rather than dropping it.",
       "tip": "Ir in the imperfect (iba, ibas…) looks like a regular -ar verb, but 'ir' is not an -ar verb — this is simply its irregular pattern. Don't let it confuse you.",
       "examples": [
-        { "es": "Cuando era pequeño, iba al colegio a pie.", "en": "When I was little, I used to walk to school.", "highlight": "era, iba" },
-        { "es": "Nosotros éramos muy buenos amigos.", "en": "We were very good friends.", "highlight": "éramos" },
-        { "es": "Ellos iban al mercado todos los sábados.", "en": "They used to go to the market every Saturday.", "highlight": "iban" },
-        { "es": "Tú veías muchas películas de aventura.", "en": "You used to watch a lot of adventure movies.", "highlight": "veías" }
+        {
+          "es": "Cuando era pequeño, iba al colegio a pie.",
+          "en": "When I was little, I used to walk to school.",
+          "highlight": "era, iba"
+        },
+        {
+          "es": "Nosotros éramos muy buenos amigos.",
+          "en": "We were very good friends.",
+          "highlight": "éramos"
+        },
+        {
+          "es": "Ellos iban al mercado todos los sábados.",
+          "en": "They used to go to the market every Saturday.",
+          "highlight": "iban"
+        },
+        {
+          "es": "Tú veías muchas películas de aventura.",
+          "en": "You used to watch a lot of adventure movies.",
+          "highlight": "veías"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct imperfect form of 'ser' for 'ellos'?",
-          "options": ["serían", "sían", "eran", "éranos"],
+          "options": [
+            "serían",
+            "sían",
+            "eran",
+            "éranos"
+          ],
           "correctIndex": 2,
           "explanation": "The ellos/ellas form of 'ser' in the imperfect is 'eran'. The full conjugation is: era, eras, era, éramos, erais, eran."
         },
         {
           "type": "multiple-choice",
           "prompt": "Complete: 'De joven, yo ___ al gimnasio todos los lunes.' (ir)",
-          "options": ["iba", "ibía", "fui", "iría"],
+          "options": [
+            "iba",
+            "iría",
+            "fui",
+            "ibía"
+          ],
           "correctIndex": 0,
           "explanation": "The yo form of 'ir' in the imperfect is 'iba'. Note: 'fui' is the preterite of 'ir'; 'iría' is the conditional."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the 'nosotros' form of 'ver' in the imperfect?",
-          "options": ["vábamos", "viábamos", "veíamos", "véamos"],
-          "correctIndex": 2,
+          "options": [
+            "vábamos",
+            "veíamos",
+            "viábamos",
+            "véamos"
+          ],
+          "correctIndex": 1,
           "explanation": "'Ver' keeps its full stem 've-' before the -ía endings. Nosotros: ve + íamos = veíamos."
         },
         {
           "type": "multiple-choice",
           "prompt": "How many truly irregular verbs does the imperfect tense have?",
-          "options": ["Two", "Three", "Five", "Eight"],
-          "correctIndex": 1,
+          "options": [
+            "Three",
+            "Five",
+            "Two",
+            "Eight"
+          ],
+          "correctIndex": 0,
           "explanation": "Only three verbs are irregular in the imperfect: ser, ir, and ver. Every other Spanish verb follows the regular -aba or -ía patterns."
         },
         {
           "type": "fill-blank",
           "prompt": "Mis padres ___ (ser) profesores antes de jubilarse.",
-          "acceptedAnswers": ["eran"],
+          "acceptedAnswers": [
+            "eran"
+          ],
           "hint": "Irregular: ser → era, eras, era, éramos, erais, eran",
           "explanation": "The ellos form of 'ser' in the imperfect is 'eran'."
         },
         {
           "type": "fill-blank",
           "prompt": "Cuando tenía diez años, yo ___ (ir) a la biblioteca cada semana.",
-          "acceptedAnswers": ["iba"],
+          "acceptedAnswers": [
+            "iba"
+          ],
           "hint": "Irregular: ir → iba, ibas, iba, íbamos, ibais, iban",
           "explanation": "The yo form of 'ir' in the imperfect is 'iba'."
         },
         {
           "type": "fill-blank",
           "prompt": "Vosotros ___ (ver) las noticias todas las noches.",
-          "acceptedAnswers": ["veíais"],
+          "acceptedAnswers": [
+            "veíais"
+          ],
           "hint": "Irregular: ver → veía, veías, veía, veíamos, veíais, veían",
           "explanation": "The vosotros form of 'ver' in the imperfect is 'veíais'."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella y yo ___ (ser) compañeras de clase en la universidad.",
-          "acceptedAnswers": ["éramos"],
+          "acceptedAnswers": [
+            "éramos"
+          ],
           "hint": "Irregular: nosotros form of ser in the imperfect — remember the accent",
           "explanation": "The nosotros form of 'ser' in the imperfect is 'éramos'. The accent on the é is required."
         }
@@ -158,42 +243,73 @@
       "explanation": "Both tenses describe the past, but they have different uses. Use the PRETERITE for completed, one-time actions with a clear beginning or end — things that happened and are done. Use the IMPERFECT for background states, habitual/repeated actions, ongoing conditions, or descriptions in the past. Key contrast: 'Ayer comí una pizza' (yesterday I ate a pizza — completed event) vs. 'De niño comía pizza cada viernes' (as a child I used to eat pizza every Friday — habitual). They often appear together: the imperfect sets the scene while the preterite describes what happened.",
       "tip": "Trigger words help: words like 'ayer', 'una vez', 'de repente', 'el lunes pasado' usually signal the preterite. Words like 'siempre', 'nunca', 'todos los días', 'de niño', 'cuando era joven', 'a veces' usually signal the imperfect.",
       "examples": [
-        { "es": "Ayer comí en ese restaurante.", "en": "Yesterday I ate at that restaurant.", "highlight": "comí" },
-        { "es": "De niño comía en ese restaurante cada semana.", "en": "As a child I used to eat at that restaurant every week.", "highlight": "comía" },
-        { "es": "Llovía cuando salí de casa.", "en": "It was raining when I left the house.", "highlight": "Llovía, salí" },
-        { "es": "Ella leía cuando sonó el teléfono.", "en": "She was reading when the phone rang.", "highlight": "leía, sonó" }
+        {
+          "es": "Ayer comí en ese restaurante.",
+          "en": "Yesterday I ate at that restaurant.",
+          "highlight": "comí"
+        },
+        {
+          "es": "De niño comía en ese restaurante cada semana.",
+          "en": "As a child I used to eat at that restaurant every week.",
+          "highlight": "comía"
+        },
+        {
+          "es": "Llovía cuando salí de casa.",
+          "en": "It was raining when I left the house.",
+          "highlight": "Llovía, salí"
+        },
+        {
+          "es": "Ella leía cuando sonó el teléfono.",
+          "en": "She was reading when the phone rang.",
+          "highlight": "leía, sonó"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which tense fits? 'Ayer ___ (ver) una película muy buena.'",
-          "options": ["veía", "vi", "veaba", "vería"],
+          "options": [
+            "veaba",
+            "vi",
+            "vería",
+            "veía"
+          ],
           "correctIndex": 1,
           "explanation": "'Ayer' (yesterday) signals a completed, one-time event. Use the preterite: vi."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which tense fits? 'De niña, ella siempre ___ (leer) antes de dormir.'",
-          "options": ["leyó", "leía", "ha leído", "leerá"],
-          "correctIndex": 1,
+          "options": [
+            "leerá",
+            "ha leído",
+            "leía",
+            "leyó"
+          ],
+          "correctIndex": 2,
           "explanation": "'De niña' and 'siempre' signal a habitual past action. Use the imperfect: leía."
         },
         {
           "type": "multiple-choice",
           "prompt": "Choose the sentence that correctly combines both tenses.",
           "options": [
-            "Yo dormía cuando sonaba el teléfono.",
             "Yo dormí cuando sonó el teléfono.",
-            "Yo dormía cuando sonó el teléfono.",
-            "Yo dormí cuando sonaba el teléfono."
+            "Yo dormía cuando sonaba el teléfono.",
+            "Yo dormí cuando sonaba el teléfono.",
+            "Yo dormía cuando sonó el teléfono."
           ],
-          "correctIndex": 2,
+          "correctIndex": 3,
           "explanation": "The imperfect sets the ongoing background (dormía = I was sleeping), while the preterite marks the interrupting event (sonó = rang). 'Yo dormía cuando sonó el teléfono' is correct."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which trigger word most strongly suggests using the imperfect?",
-          "options": ["ayer", "de repente", "todos los veranos", "el martes pasado"],
+          "options": [
+            "el martes pasado",
+            "de repente",
+            "todos los veranos",
+            "ayer"
+          ],
           "correctIndex": 2,
           "explanation": "'Todos los veranos' (every summer) signals a habitual repeated action, which takes the imperfect. The other options indicate completed, specific past events."
         },
@@ -202,9 +318,9 @@
           "prompt": "Which sentence describes a background state (imperfect) rather than a completed event?",
           "options": [
             "Me rompí la pierna el año pasado.",
-            "Ella llegó tarde a la reunión.",
+            "Compramos una casa nueva en enero.",
             "Hacía mucho frío cuando salimos.",
-            "Compramos una casa nueva en enero."
+            "Ella llegó tarde a la reunión."
           ],
           "correctIndex": 2,
           "explanation": "'Hacía mucho frío' describes the weather as an ongoing background condition at the time — this is the imperfect used for description."
@@ -212,21 +328,27 @@
         {
           "type": "fill-blank",
           "prompt": "De pequeño, yo ___ (jugar) al fútbol todos los fines de semana.",
-          "acceptedAnswers": ["jugaba"],
+          "acceptedAnswers": [
+            "jugaba"
+          ],
           "hint": "Habitual past action — use the imperfect",
           "explanation": "'De pequeño' and 'todos los fines de semana' mark this as a habitual past action, requiring the imperfect: jugaba."
         },
         {
           "type": "fill-blank",
           "prompt": "El lunes pasado, nosotros ___ (ir) al museo por primera vez.",
-          "acceptedAnswers": ["fuimos"],
+          "acceptedAnswers": [
+            "fuimos"
+          ],
           "hint": "Completed, one-time past event — use the preterite",
           "explanation": "'El lunes pasado' and 'por primera vez' signal a completed, specific past event, requiring the preterite: fuimos."
         },
         {
           "type": "fill-blank",
           "prompt": "Ella ___ (escribir) una carta cuando su hermano ___ (entrar) en la habitación.",
-          "acceptedAnswers": ["escribía, entró"],
+          "acceptedAnswers": [
+            "escribía, entró"
+          ],
           "hint": "First blank = ongoing background action; second blank = interrupting completed action",
           "explanation": "The ongoing background action takes the imperfect (escribía), while the interrupting event takes the preterite (entró). This is the classic imperfect + preterite combination."
         }

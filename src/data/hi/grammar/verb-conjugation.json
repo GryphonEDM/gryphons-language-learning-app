@@ -13,30 +13,58 @@
       "explanation": "Hindi verbs are built from a root called a धातु (dhātu). The dictionary form of every Hindi verb ends in -ना (-nā), which is the infinitive marker. To find the root, you remove -ना: करना → कर (to do → do), खाना → खा (to eat → eat), लिखना → लिख (to write → write), पढ़ना → पढ़ (to read → read). The root is the foundation for all conjugation. Hindi verbs conjugate based on three factors: the subject's gender (masculine/feminine), the subject's number (singular/plural), and the tense or aspect (present habitual, past, future, etc.). Unlike English where the verb changes mainly for person (I go, he goes), Hindi verbs change form based on gender and number far more extensively. Understanding the root is the first step to mastering any tense.",
       "tip": "Always identify the root first by removing -ना from the infinitive. The root never changes — only the suffixes added to it change based on tense, gender, and number.",
       "examples": [
-        { "hi": "करना → कर (धातु)", "en": "to do → do (root)", "highlight": "कर" },
-        { "hi": "खाना → खा (धातु)", "en": "to eat → eat (root)", "highlight": "खा" },
-        { "hi": "लिखना → लिख (धातु)", "en": "to write → write (root)", "highlight": "लिख" },
-        { "hi": "बोलना → बोल (धातु)", "en": "to speak → speak (root)", "highlight": "बोल" }
+        {
+          "hi": "करना → कर (धातु)",
+          "en": "to do → do (root)",
+          "highlight": "कर"
+        },
+        {
+          "hi": "खाना → खा (धातु)",
+          "en": "to eat → eat (root)",
+          "highlight": "खा"
+        },
+        {
+          "hi": "लिखना → लिख (धातु)",
+          "en": "to write → write (root)",
+          "highlight": "लिख"
+        },
+        {
+          "hi": "बोलना → बोल (धातु)",
+          "en": "to speak → speak (root)",
+          "highlight": "बोल"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the verb root (धातु) of पढ़ना (to read)?",
-          "options": ["पढ़", "पढ़न", "पढ़ना"],
-          "correctIndex": 0,
+          "options": [
+            "पढ़ना",
+            "पढ़",
+            "पढ़न"
+          ],
+          "correctIndex": 1,
           "explanation": "To find the root, remove the infinitive ending -ना from पढ़ना. This gives us पढ़. The root पढ़ is the base to which all conjugation suffixes are added."
         },
         {
           "type": "multiple-choice",
           "prompt": "Hindi verb conjugation depends on which of the following?",
-          "options": ["Gender, number, and tense", "Only the person (I, you, he)", "Only the tense"],
+          "options": [
+            "Gender, number, and tense",
+            "Only the person (I, you, he)",
+            "Only the tense"
+          ],
           "correctIndex": 0,
           "explanation": "Hindi verbs conjugate based on the subject's gender (masculine/feminine), number (singular/plural), and the tense or aspect. This is why the same verb can have many different forms depending on who is performing the action."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these is NOT a correct root extraction?",
-          "options": ["सोना → सोन", "सोना → सो", "जाना → जा"],
+          "options": [
+            "सोना → सोन",
+            "जाना → जा",
+            "सोना → सो"
+          ],
           "correctIndex": 0,
           "explanation": "The root of सोना (to sleep) is सो, not सोन. You remove the entire -ना suffix. Similarly, जाना becomes जा. Always remove just -ना to get the root."
         }
@@ -48,31 +76,59 @@
       "explanation": "The present habitual tense describes actions that happen regularly or habitually, like 'I eat', 'she reads', 'they go'. It is formed by adding -ता/-ती/-ते to the verb root, followed by the appropriate form of होना (to be): हूँ, है, हैं. The -ता/-ती/-ते suffix agrees with the subject's gender and number: masculine singular uses -ता, feminine singular and plural use -ती, and masculine plural uses -ते. For example: मैं खाता हूँ (I eat, masculine), मैं खाती हूँ (I eat, feminine), वह खाता है (he eats), वह खाती है (she eats), वे खाते हैं (they eat, masculine), वे खाती हैं (they eat, feminine). The auxiliary verb होना changes for person: हूँ (I am), है (he/she/it is), हो (you informal are), हैं (we/they/you formal are).",
       "tip": "Think of -ता/-ती/-ते as the 'habitual marker'. Masculine singular = -ता, feminine (both singular and plural) = -ती, masculine plural = -ते. Then add the right form of होना to match the subject.",
       "examples": [
-        { "hi": "मैं रोज़ पढ़ता हूँ।", "en": "I read every day. (masculine speaker)", "highlight": "पढ़ता हूँ" },
-        { "hi": "वह हर दिन दूध पीती है।", "en": "She drinks milk every day.", "highlight": "पीती है" },
-        { "hi": "हम स्कूल जाते हैं।", "en": "We go to school. (masculine/mixed group)", "highlight": "जाते हैं" },
-        { "hi": "लड़कियाँ गाना गाती हैं।", "en": "The girls sing songs.", "highlight": "गाती हैं" }
+        {
+          "hi": "मैं रोज़ पढ़ता हूँ।",
+          "en": "I read every day. (masculine speaker)",
+          "highlight": "पढ़ता हूँ"
+        },
+        {
+          "hi": "वह हर दिन दूध पीती है।",
+          "en": "She drinks milk every day.",
+          "highlight": "पीती है"
+        },
+        {
+          "hi": "हम स्कूल जाते हैं।",
+          "en": "We go to school. (masculine/mixed group)",
+          "highlight": "जाते हैं"
+        },
+        {
+          "hi": "लड़कियाँ गाना गाती हैं।",
+          "en": "The girls sing songs.",
+          "highlight": "गाती हैं"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How would you say 'She writes a letter' in Hindi (present habitual)?",
-          "options": ["वह चिट्ठी लिखती है।", "वह चिट्ठी लिखता है।", "वह चिट्ठी लिखते हैं।"],
-          "correctIndex": 0,
+          "options": [
+            "वह चिट्ठी लिखता है।",
+            "वह चिट्ठी लिखते हैं।",
+            "वह चिट्ठी लिखती है।"
+          ],
+          "correctIndex": 2,
           "explanation": "Since the subject वह (she) is feminine singular, the verb takes the -ती suffix: लिखती है। The -ता form would be used for masculine singular, and -ते for masculine plural."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which form correctly completes: 'हम हिंदी _____ हैं' (We speak Hindi)?",
-          "options": ["बोलते", "बोलता", "बोलती"],
+          "options": [
+            "बोलते",
+            "बोलता",
+            "बोलती"
+          ],
           "correctIndex": 0,
           "explanation": "हम (we) is plural and takes the masculine plural form -ते (assuming a masculine or mixed group). बोलते हैं means 'we speak'. If the group were all-female, it would be बोलती हैं."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does the auxiliary verb (हूँ, है, हैं) indicate in the present habitual tense?",
-          "options": ["The person and number of the subject", "The gender of the subject", "The time of day the action occurs"],
-          "correctIndex": 0,
+          "options": [
+            "The gender of the subject",
+            "The time of day the action occurs",
+            "The person and number of the subject"
+          ],
+          "correctIndex": 2,
           "explanation": "The auxiliary (हूँ = I, है = he/she/it, हो = you informal, हैं = we/they/you formal) matches the person and number of the subject. Gender is already shown by the -ता/-ती/-ते suffix on the main verb."
         }
       ]
@@ -83,30 +139,58 @@
       "explanation": "Most Hindi verbs follow regular conjugation patterns, but a few high-frequency verbs are irregular and must be memorized. The three most important irregular verbs are: होना (to be) — the most fundamental Hindi verb. Its present forms are: हूँ (I am), है (he/she/it is/you informal are), हो (you informal are), हैं (we/they/you formal are). Its past forms change by gender: था (masc. sg.), थी (fem. sg.), थे (masc. pl.), थीं (fem. pl.). करना (to do/make) — mostly regular, but in the future tense the root changes: करूँगा (I will do, masc.), करूँगी (I will do, fem.), करेगा (he will do), करेगी (she will do), करेंगे (they will do, masc.), करेंगी (they will do, fem.). जाना (to go) — its past tense is completely irregular. Instead of the expected जाया, the past form is गया (masc. sg.), गई (fem. sg.), गए (masc. pl.), गईं (fem. pl.). This suppletive past form must simply be memorized.",
       "tip": "For जाना, remember: the past tense uses a completely different root — गया/गई, not जाया. This is similar to English 'go' → 'went'. होना and जाना are used so often that their irregular forms will become natural with practice.",
       "examples": [
-        { "hi": "मैं ठीक हूँ।", "en": "I am fine.", "highlight": "हूँ" },
-        { "hi": "वह कल दिल्ली गई।", "en": "She went to Delhi yesterday. (irregular past of जाना)", "highlight": "गई" },
-        { "hi": "हम कल यह काम करेंगे।", "en": "We will do this work tomorrow.", "highlight": "करेंगे" },
-        { "hi": "वे बाज़ार गए थे।", "en": "They had gone to the market. (masculine plural)", "highlight": "गए थे" }
+        {
+          "hi": "मैं ठीक हूँ।",
+          "en": "I am fine.",
+          "highlight": "हूँ"
+        },
+        {
+          "hi": "वह कल दिल्ली गई।",
+          "en": "She went to Delhi yesterday. (irregular past of जाना)",
+          "highlight": "गई"
+        },
+        {
+          "hi": "हम कल यह काम करेंगे।",
+          "en": "We will do this work tomorrow.",
+          "highlight": "करेंगे"
+        },
+        {
+          "hi": "वे बाज़ार गए थे।",
+          "en": "They had gone to the market. (masculine plural)",
+          "highlight": "गए थे"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the past tense masculine singular form of जाना (to go)?",
-          "options": ["गया", "जाया", "जाता"],
-          "correctIndex": 0,
+          "options": [
+            "जाया",
+            "जाता",
+            "गया"
+          ],
+          "correctIndex": 2,
           "explanation": "जाना has a suppletive (completely irregular) past tense. The masculine singular past form is गया, not जाया. Similarly: feminine singular गई, masculine plural गए, feminine plural गईं. This must simply be memorized."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct past tense form: 'वह घर पर ___' (She was at home)?",
-          "options": ["थी", "था", "थे"],
+          "options": [
+            "थी",
+            "थे",
+            "था"
+          ],
           "correctIndex": 0,
           "explanation": "Since the subject वह refers to 'she' (feminine singular), the past form of होना is थी. था is masculine singular, and थे is masculine plural. Past forms of होना change by gender and number."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'He will do' in Hindi?",
-          "options": ["वह करेगा", "वह करता", "वह किया"],
+          "options": [
+            "वह करेगा",
+            "वह किया",
+            "वह करता"
+          ],
           "correctIndex": 0,
           "explanation": "The future tense of करना for masculine singular is करेगा. The full sentence is 'वह करेगा' (he will do). करता is present habitual, and किया is simple past."
         }

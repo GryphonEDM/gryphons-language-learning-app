@@ -13,31 +13,59 @@
       "explanation": "Korean verbs always end in -다 in their dictionary form. To conjugate, you remove -다 to get the verb stem, then add the appropriate ending. If the last vowel of the stem is ㅏ or ㅗ (bright vowels), you add -아 endings. For all other vowels (dark vowels), you add -어 endings. For example: 가다 (to go) has stem 가, and since ㅏ is a bright vowel, you get 가 + 아 = 가 (the two ㅏ merge). 먹다 (to eat) has stem 먹, and since ㅓ is a dark vowel, you get 먹 + 어 = 먹어. 하다 (to do) is a special case that always becomes 해 (하 + 여 contracts to 해). This bright/dark vowel harmony rule is the foundation of Korean conjugation.",
       "tip": "Remember: ㅏ and ㅗ are 'bright' (양성모음) — they pair with -아. Everything else is 'dark' (음성모음) — they pair with -어. The verb 하다 always contracts to 해, never 하어.",
       "examples": [
-        { "ko": "가다 → 가 + 아 → 가 (갑니다)", "en": "to go → stem 가 + 아 → 가 (bright vowel ㅏ merges)", "highlight": "가" },
-        { "ko": "먹다 → 먹 + 어 → 먹어 (먹습니다)", "en": "to eat → stem 먹 + 어 → 먹어 (dark vowel ㅓ)", "highlight": "먹어" },
-        { "ko": "오다 → 오 + 아 → 와", "en": "to come → stem 오 + 아 → 와 (ㅗ + ㅏ contracts to ㅘ)", "highlight": "와" },
-        { "ko": "배우다 → 배우 + 어 → 배워", "en": "to learn → stem 배우 + 어 → 배워 (ㅜ + ㅓ contracts to ㅝ)", "highlight": "배워" }
+        {
+          "ko": "가다 → 가 + 아 → 가 (갑니다)",
+          "en": "to go → stem 가 + 아 → 가 (bright vowel ㅏ merges)",
+          "highlight": "가"
+        },
+        {
+          "ko": "먹다 → 먹 + 어 → 먹어 (먹습니다)",
+          "en": "to eat → stem 먹 + 어 → 먹어 (dark vowel ㅓ)",
+          "highlight": "먹어"
+        },
+        {
+          "ko": "오다 → 오 + 아 → 와",
+          "en": "to come → stem 오 + 아 → 와 (ㅗ + ㅏ contracts to ㅘ)",
+          "highlight": "와"
+        },
+        {
+          "ko": "배우다 → 배우 + 어 → 배워",
+          "en": "to learn → stem 배우 + 어 → 배워 (ㅜ + ㅓ contracts to ㅝ)",
+          "highlight": "배워"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the informal polite (해요) form of 보다 (to see)?",
-          "options": ["봐요", "보어요", "보아요"],
+          "options": [
+            "봐요",
+            "보어요",
+            "보아요"
+          ],
           "correctIndex": 0,
           "explanation": "보다 has stem 보. Since ㅗ is a bright vowel, we add -아: 보 + 아 = 봐 (ㅗ + ㅏ contracts to ㅘ). Adding 요 gives 봐요."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which vowel harmony rule applies to 읽다 (to read)?",
-          "options": ["Dark vowel → add -어", "Bright vowel → add -아", "Special 하다 rule → add -여"],
+          "options": [
+            "Dark vowel → add -어",
+            "Special 하다 rule → add -여",
+            "Bright vowel → add -아"
+          ],
           "correctIndex": 0,
           "explanation": "읽다 has stem 읽. The last vowel is ㅣ, which is a dark vowel. So we add -어: 읽 + 어 = 읽어."
         },
         {
           "type": "multiple-choice",
           "prompt": "How does 공부하다 (to study) conjugate in the informal polite form?",
-          "options": ["공부해요", "공부하어요", "공부하아요"],
-          "correctIndex": 0,
+          "options": [
+            "공부하아요",
+            "공부해요",
+            "공부하어요"
+          ],
+          "correctIndex": 1,
           "explanation": "All 하다 verbs follow the special contraction: 하 + 여 contracts to 해. So 공부하다 → 공부해요."
         }
       ]
@@ -48,30 +76,58 @@
       "explanation": "Verbs with stems ending in 으 (the 'eu' vowel) are special: when you add a vowel ending, the 으 drops out and you look at the vowel before it to determine harmony. If there is no vowel before 으, you add -어. For example: 쓰다 (to write) → 쓰 + 어 → 써 (으 drops, no prior vowel, so -어 is used, and ㅆ doubles). 크다 (to be big) → 크 + 어 → 커. 바쁘다 (to be busy) → 바쁘 + 아 → 바빠 (으 drops, prior vowel is ㅏ, so -아 is used). ㄹ verbs (stems ending in ㄹ) drop the ㄹ before endings starting with ㄴ, ㅂ, or ㅅ. For example: 살다 (to live) → 삽니다 (ㄹ drops before ㅂ), 사는 (ㄹ drops before ㄴ), 사세요 (ㄹ drops before ㅅ). But ㄹ stays before vowel endings: 살아요.",
       "tip": "For 으 verbs: just pretend 으 is invisible — look at the vowel before it. If there is no vowel before 으, default to -어. For ㄹ verbs, remember the consonants that delete ㄹ: ㄴ, ㅂ, ㅅ (think: '납세' — taxpaying).",
       "examples": [
-        { "ko": "쓰다 → 써요", "en": "to write → 써요 (으 drops, no prior vowel → -어, doubles to 써)", "highlight": "써" },
-        { "ko": "바쁘다 → 바빠요", "en": "to be busy → 바빠요 (으 drops, prior vowel ㅏ → -아)", "highlight": "바빠" },
-        { "ko": "살다 → 삽니다 / 살아요", "en": "to live → ㄹ drops before ㅂ in 삽니다, stays in 살아요", "highlight": "삽니다" },
-        { "ko": "알다 → 압니다 / 알아요", "en": "to know → ㄹ drops before ㅂ in 압니다, stays in 알아요", "highlight": "압니다" }
+        {
+          "ko": "쓰다 → 써요",
+          "en": "to write → 써요 (으 drops, no prior vowel → -어, doubles to 써)",
+          "highlight": "써"
+        },
+        {
+          "ko": "바쁘다 → 바빠요",
+          "en": "to be busy → 바빠요 (으 drops, prior vowel ㅏ → -아)",
+          "highlight": "바빠"
+        },
+        {
+          "ko": "살다 → 삽니다 / 살아요",
+          "en": "to live → ㄹ drops before ㅂ in 삽니다, stays in 살아요",
+          "highlight": "삽니다"
+        },
+        {
+          "ko": "알다 → 압니다 / 알아요",
+          "en": "to know → ㄹ drops before ㅂ in 압니다, stays in 알아요",
+          "highlight": "압니다"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the 해요 form of 예쁘다 (to be pretty)?",
-          "options": ["예뻐요", "예쁘어요", "예빠요"],
+          "options": [
+            "예뻐요",
+            "예쁘어요",
+            "예빠요"
+          ],
           "correctIndex": 0,
           "explanation": "예쁘다 has 으 before -다. The 으 drops, and the prior vowel is ㅖ (dark vowel), so we add -어: 예쁘 → 예뻐요."
         },
         {
           "type": "multiple-choice",
           "prompt": "How does 만들다 (to make) conjugate in the formal polite style (합니다)?",
-          "options": ["만듭니다", "만들습니다", "만드ㅂ니다"],
+          "options": [
+            "만듭니다",
+            "만드ㅂ니다",
+            "만들습니다"
+          ],
           "correctIndex": 0,
           "explanation": "만들다 is a ㄹ verb. Before ㅂ in -ㅂ니다, the ㄹ drops: 만들 → 만드 + ㅂ니다 → 만듭니다."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the 해요 form of 크다 (to be big)?",
-          "options": ["커요", "크어요", "카요"],
+          "options": [
+            "커요",
+            "크어요",
+            "카요"
+          ],
           "correctIndex": 0,
           "explanation": "크다 has stem 크. The 으 drops, and since there is no prior vowel, we default to -어: 크 → 커요."
         }
@@ -83,30 +139,58 @@
       "explanation": "Some Korean verb stems change their final consonant when a vowel ending is added. ㄷ irregulars: the final ㄷ changes to ㄹ before a vowel ending. For example: 듣다 (to listen) → 들어요, 걷다 (to walk) → 걸어요. Not all ㄷ verbs are irregular — 닫다 (to close) is regular: 닫아요. ㅂ irregulars: the final ㅂ changes to 우 (or 오 for a few verbs like 돕다) before a vowel ending. For example: 춥다 (to be cold) → 추워요, 어렵다 (to be difficult) → 어려워요, 돕다 (to help) → 도와요. Not all ㅂ verbs are irregular — 잡다 (to catch) is regular: 잡아요. ㅅ irregulars: the final ㅅ drops before a vowel ending. For example: 짓다 (to build) → 지어요, 낫다 (to be better) → 나아요. Not all ㅅ verbs are irregular — 웃다 (to laugh) is regular: 웃어요.",
       "tip": "There is no single rule to know which verbs are irregular — you have to memorize them. But a helpful pattern: most adjectives ending in ㅂ are irregular (춥다, 덥다, 어렵다, 쉽다), while most action verbs ending in ㅂ are regular (잡다, 입다, 씹다).",
       "examples": [
-        { "ko": "듣다 → 들어요", "en": "to listen → ㄷ changes to ㄹ before vowel ending", "highlight": "들어" },
-        { "ko": "춥다 → 추워요", "en": "to be cold → ㅂ changes to 우 before vowel ending", "highlight": "추워" },
-        { "ko": "짓다 → 지어요", "en": "to build → ㅅ drops before vowel ending", "highlight": "지어" },
-        { "ko": "돕다 → 도와요", "en": "to help → ㅂ changes to 오 (exception among ㅂ irregulars)", "highlight": "도와" }
+        {
+          "ko": "듣다 → 들어요",
+          "en": "to listen → ㄷ changes to ㄹ before vowel ending",
+          "highlight": "들어"
+        },
+        {
+          "ko": "춥다 → 추워요",
+          "en": "to be cold → ㅂ changes to 우 before vowel ending",
+          "highlight": "추워"
+        },
+        {
+          "ko": "짓다 → 지어요",
+          "en": "to build → ㅅ drops before vowel ending",
+          "highlight": "지어"
+        },
+        {
+          "ko": "돕다 → 도와요",
+          "en": "to help → ㅂ changes to 오 (exception among ㅂ irregulars)",
+          "highlight": "도와"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the 해요 form of 걷다 (to walk)?",
-          "options": ["걸어요", "걷어요", "걸워요"],
+          "options": [
+            "걸어요",
+            "걸워요",
+            "걷어요"
+          ],
           "correctIndex": 0,
           "explanation": "걷다 is a ㄷ irregular verb. Before a vowel ending, ㄷ changes to ㄹ: 걷 → 걸 + 어요 = 걸어요."
         },
         {
           "type": "multiple-choice",
           "prompt": "쉽다 (to be easy) is a ㅂ irregular verb. What is its 해요 form?",
-          "options": ["쉬워요", "쉽어요", "쉬어요"],
+          "options": [
+            "쉬워요",
+            "쉽어요",
+            "쉬어요"
+          ],
           "correctIndex": 0,
           "explanation": "As a ㅂ irregular, the ㅂ changes to 우 before a vowel: 쉽 → 쉬우 + 어 → 쉬워요 (우 + 어 contracts to 워)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these ㅂ-ending verbs is REGULAR (does NOT undergo the ㅂ irregular change)?",
-          "options": ["잡다 (to catch)", "춥다 (to be cold)", "어렵다 (to be difficult)"],
+          "options": [
+            "잡다 (to catch)",
+            "춥다 (to be cold)",
+            "어렵다 (to be difficult)"
+          ],
           "correctIndex": 0,
           "explanation": "잡다 (to catch) is regular — it conjugates as 잡아요. Most action verbs ending in ㅂ are regular, while most adjectives ending in ㅂ (춥다, 어렵다, 쉽다) are irregular."
         }

@@ -4,7 +4,9 @@
   "nameJa": "授受表現",
   "icon": "🎁",
   "tier": "B1",
-  "prerequisites": ["te-form"],
+  "prerequisites": [
+    "te-form"
+  ],
   "estimatedMinutes": 30,
   "sections": [
     {
@@ -13,10 +15,26 @@
       "explanation": "あげる (ageru) means 'to give' and is used when the speaker (or someone in the speaker's in-group) gives something to someone else. The basic pattern is: [giver] は [receiver] に [thing] を あげる. Examples: 私は友達にプレゼントをあげた (I gave a present to my friend). あげる literally means 'to raise up' — you are elevating the other person by giving to them. Important: you NEVER use あげる when someone gives to you — that would be くれる. あげる is only for giving away from the speaker. The polite form is あげます. For giving to social superiors, use 差し上げる (sashiageru) instead, which is the humble/respectful form of あげる.",
       "tip": "Think of あげる as an arrow pointing AWAY from you → outward giving. You give (あげる) to others. If you need to give to a social superior (teacher, boss), use 差し上げる (sashiageru) for extra politeness. Never use あげる to describe receiving!",
       "examples": [
-        { "ja": "妹に本をあげた。", "en": "I gave a book to my younger sister.", "highlight": "あげた" },
-        { "ja": "友達に誕生日プレゼントをあげます。", "en": "I will give a birthday present to my friend.", "highlight": "あげます" },
-        { "ja": "田中さんは山田さんにチョコレートをあげた。", "en": "Tanaka gave chocolate to Yamada.", "highlight": "あげた" },
-        { "ja": "先生にお花を差し上げました。", "en": "I gave flowers to the teacher. (humble/polite)", "highlight": "差し上げました" }
+        {
+          "ja": "妹に本をあげた。",
+          "en": "I gave a book to my younger sister.",
+          "highlight": "あげた"
+        },
+        {
+          "ja": "友達に誕生日プレゼントをあげます。",
+          "en": "I will give a birthday present to my friend.",
+          "highlight": "あげます"
+        },
+        {
+          "ja": "田中さんは山田さんにチョコレートをあげた。",
+          "en": "Tanaka gave chocolate to Yamada.",
+          "highlight": "あげた"
+        },
+        {
+          "ja": "先生にお花を差し上げました。",
+          "en": "I gave flowers to the teacher. (humble/polite)",
+          "highlight": "差し上げました"
+        }
       ],
       "exercises": [
         {
@@ -35,18 +53,23 @@
           "type": "multiple-choice",
           "prompt": "Choose the correct particle pattern for あげる:",
           "options": [
-            "[giver] は [receiver] に [thing] を あげる",
-            "[giver] は [thing] に [receiver] を あげる",
             "[receiver] は [giver] に [thing] を あげる",
-            "[giver] は [receiver] で [thing] を あげる"
+            "[giver] は [receiver] で [thing] を あげる",
+            "[giver] は [receiver] に [thing] を あげる",
+            "[giver] は [thing] に [receiver] を あげる"
           ],
-          "correctIndex": 0,
+          "correctIndex": 2,
           "explanation": "The pattern is: [giver] は [receiver] に [thing] を あげる. The receiver is marked with に, and the thing given is marked with を."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the humble/polite form of あげる used with superiors?",
-          "options": ["くださる", "差し上げる", "いただく", "くれる"],
+          "options": [
+            "いただく",
+            "差し上げる",
+            "くださる",
+            "くれる"
+          ],
           "correctIndex": 1,
           "explanation": "差し上げる (sashiageru) is the humble form of あげる, used when giving to social superiors like teachers, bosses, or customers."
         }
@@ -58,36 +81,62 @@
       "explanation": "もらう (morau) means 'to receive' and is used when the speaker (or someone in the speaker's in-group) receives something from someone else. The basic pattern is: [receiver] は [giver] に/から [thing] を もらう. Examples: 私は母に時計をもらった (I received a watch from my mother). Both に and から can mark the giver, but に is more common for people you know personally, while から is used for organizations or more distant sources. The polite form is もらいます. The humble/polite form for receiving from superiors is いただく (itadaku) — you may recognize this from いただきます (said before meals, literally 'I humbly receive').",
       "tip": "Think of もらう as an arrow pointing TOWARD you ← inward receiving. You receive (もらう) from others. Use に for the giver in most cases: 友達にもらった. Use から for organizations or when emphasizing the source: 会社からもらった. いただく is the polite upgrade for receiving from superiors.",
       "examples": [
-        { "ja": "誕生日に友達にプレゼントをもらった。", "en": "I received a present from my friend on my birthday.", "highlight": "もらった" },
-        { "ja": "会社からボーナスをもらいました。", "en": "I received a bonus from the company.", "highlight": "もらいました" },
-        { "ja": "先生にアドバイスをいただきました。", "en": "I received advice from the teacher. (humble/polite)", "highlight": "いただきました" },
-        { "ja": "姉に古い服をもらった。", "en": "I got old clothes from my older sister.", "highlight": "もらった" }
+        {
+          "ja": "誕生日に友達にプレゼントをもらった。",
+          "en": "I received a present from my friend on my birthday.",
+          "highlight": "もらった"
+        },
+        {
+          "ja": "会社からボーナスをもらいました。",
+          "en": "I received a bonus from the company.",
+          "highlight": "もらいました"
+        },
+        {
+          "ja": "先生にアドバイスをいただきました。",
+          "en": "I received advice from the teacher. (humble/polite)",
+          "highlight": "いただきました"
+        },
+        {
+          "ja": "姉に古い服をもらった。",
+          "en": "I got old clothes from my older sister.",
+          "highlight": "もらった"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What does もらう express?",
           "options": [
-            "Giving something to someone",
             "Receiving something from someone",
             "Lending something to someone",
-            "Returning something"
+            "Returning something",
+            "Giving something to someone"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "もらう means 'to receive.' It is used when the speaker or the speaker's in-group receives something from someone else."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the humble/polite form of もらう?",
-          "options": ["あげる", "くれる", "いただく", "差し上げる"],
-          "correctIndex": 2,
+          "options": [
+            "いただく",
+            "くれる",
+            "差し上げる",
+            "あげる"
+          ],
+          "correctIndex": 0,
           "explanation": "いただく (itadaku) is the humble form of もらう, used when receiving from social superiors. いただきます before meals literally means 'I humbly receive (this food).'"
         },
         {
           "type": "multiple-choice",
           "prompt": "Which particle marks the giver in a もらう sentence?",
-          "options": ["を", "が", "に or から", "で"],
-          "correctIndex": 2,
+          "options": [
+            "が",
+            "に or から",
+            "を",
+            "で"
+          ],
+          "correctIndex": 1,
           "explanation": "The giver is marked with に (for individuals) or から (for organizations or to emphasize the source): 友達にもらった (from a friend), 学校からもらった (from the school)."
         }
       ]
@@ -98,20 +147,36 @@
       "explanation": "くれる (kureru) means 'to give' but specifically when someone gives to the speaker or the speaker's in-group. The basic pattern is: [giver] が [receiver (me/us)] に [thing] を くれる. Examples: 母が私にセーターをくれた (My mother gave me a sweater). くれる expresses gratitude — by using くれる, you show appreciation that someone did something for you. Compare: 田中さんが教えた (Tanaka taught — neutral) vs 田中さんが教えてくれた (Tanaka kindly taught me — grateful). The polite/honorific form is くださる (kudasaru), from which ください (kudasai, please) comes. You can omit 私に since it's implied: 友達がチケットをくれた (My friend gave me tickets).",
       "tip": "くれる = someone gives TO ME/US. It carries a feeling of gratitude. If your friend gives you a book, say 友達が本をくれた (not あげた!). The receiver (me) is often omitted since くれる already implies 'to me.' くださる is the honorific upgrade: 先生がくださった.",
       "examples": [
-        { "ja": "母がお弁当を作ってくれた。", "en": "My mother made me a bento. (grateful nuance)", "highlight": "くれた" },
-        { "ja": "友達が日本語を教えてくれる。", "en": "My friend teaches me Japanese. (I appreciate it)", "highlight": "くれる" },
-        { "ja": "先生が辞書をくださいました。", "en": "The teacher gave me a dictionary. (honorific)", "highlight": "くださいました" },
-        { "ja": "彼がこの花をくれた。", "en": "He gave me these flowers.", "highlight": "くれた" }
+        {
+          "ja": "母がお弁当を作ってくれた。",
+          "en": "My mother made me a bento. (grateful nuance)",
+          "highlight": "くれた"
+        },
+        {
+          "ja": "友達が日本語を教えてくれる。",
+          "en": "My friend teaches me Japanese. (I appreciate it)",
+          "highlight": "くれる"
+        },
+        {
+          "ja": "先生が辞書をくださいました。",
+          "en": "The teacher gave me a dictionary. (honorific)",
+          "highlight": "くださいました"
+        },
+        {
+          "ja": "彼がこの花をくれた。",
+          "en": "He gave me these flowers.",
+          "highlight": "くれた"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "When do you use くれる instead of あげる?",
           "options": [
-            "When you give something to someone",
-            "When someone gives something to you or your in-group",
             "When you give to a superior",
-            "When you receive from a store"
+            "When someone gives something to you or your in-group",
+            "When you receive from a store",
+            "When you give something to someone"
           ],
           "correctIndex": 1,
           "explanation": "くれる is used when someone else gives something TO the speaker or the speaker's in-group. It carries a nuance of gratitude. あげる is for giving AWAY from the speaker."
@@ -119,8 +184,13 @@
         {
           "type": "multiple-choice",
           "prompt": "What is the honorific form of くれる?",
-          "options": ["いただく", "差し上げる", "くださる", "もらう"],
-          "correctIndex": 2,
+          "options": [
+            "もらう",
+            "くださる",
+            "差し上げる",
+            "いただく"
+          ],
+          "correctIndex": 1,
           "explanation": "くださる (kudasaru) is the honorific form of くれる, used when a social superior gives to you. ください (kudasai, 'please') comes from this verb."
         },
         {
@@ -128,11 +198,11 @@
           "prompt": "Choose the correct sentence: 'My friend gave me a ticket.'",
           "options": [
             "私は友達にチケットをあげた。",
+            "Both B and C are correct.",
             "友達がチケットをくれた。",
-            "友達にチケットをもらった。",
-            "Both B and C are correct."
+            "友達にチケットをもらった。"
           ],
-          "correctIndex": 3,
+          "correctIndex": 1,
           "explanation": "Both 友達がチケットをくれた (my friend gave me a ticket — using くれる) and 友達にチケットをもらった (I received a ticket from my friend — using もらう) are correct. They describe the same event from different perspectives."
         }
       ]
@@ -143,10 +213,26 @@
       "explanation": "When combined with the て-form, あげる/もらう/くれる express doing actions as favors. てあげる = doing something for someone: 荷物を持ってあげる (I'll carry the luggage for you). てもらう = having someone do something for you (receiving a favor): 友達に手伝ってもらった (I had my friend help me). てくれる = someone does something for me (with gratitude): 兄が駅まで送ってくれた (My brother drove me to the station — I'm grateful). These are extremely common in daily Japanese. てもらう is especially useful because it lets you politely request help: 手伝ってもらえますか (Could you help me?). The potential form of てもらう (てもらえる) is one of the most polite ways to ask for something.",
       "tip": "てあげる can sometimes sound condescending (like you're doing someone a huge favor), so use it carefully! てもらう and てくれる are safer. てもらえますか？ is a very polite way to ask for help. てくれない？ is a casual way to ask: 教えてくれない？ (Won't you teach me? / Can you teach me?).",
       "examples": [
-        { "ja": "道を教えてあげた。", "en": "I showed them the way. (did a favor)", "highlight": "教えてあげた" },
-        { "ja": "友達に空港まで送ってもらった。", "en": "I had my friend take me to the airport.", "highlight": "送ってもらった" },
-        { "ja": "先輩が仕事を手伝ってくれた。", "en": "My senior colleague helped me with work. (grateful)", "highlight": "手伝ってくれた" },
-        { "ja": "写真を撮ってもらえますか？", "en": "Could you take a photo for me? (polite request)", "highlight": "撮ってもらえますか" }
+        {
+          "ja": "道を教えてあげた。",
+          "en": "I showed them the way. (did a favor)",
+          "highlight": "教えてあげた"
+        },
+        {
+          "ja": "友達に空港まで送ってもらった。",
+          "en": "I had my friend take me to the airport.",
+          "highlight": "送ってもらった"
+        },
+        {
+          "ja": "先輩が仕事を手伝ってくれた。",
+          "en": "My senior colleague helped me with work. (grateful)",
+          "highlight": "手伝ってくれた"
+        },
+        {
+          "ja": "写真を撮ってもらえますか？",
+          "en": "Could you take a photo for me? (polite request)",
+          "highlight": "撮ってもらえますか"
+        }
       ],
       "exercises": [
         {
@@ -165,10 +251,10 @@
           "type": "multiple-choice",
           "prompt": "How do you politely ask someone to take a photo?",
           "options": [
-            "写真を撮ってあげますか？",
             "写真を撮ってくれた。",
+            "写真を撮ってあげる。",
             "写真を撮ってもらえますか？",
-            "写真を撮ってあげる。"
+            "写真を撮ってあげますか？"
           ],
           "correctIndex": 2,
           "explanation": "撮ってもらえますか uses the potential form of てもらう to make a polite request: 'Would you be able to take a photo (for me)?' This is one of the most natural and polite ways to ask for help."
@@ -177,12 +263,12 @@
           "type": "multiple-choice",
           "prompt": "Why should you be careful with てあげる?",
           "options": [
-            "It is grammatically incorrect",
             "It can sound condescending, as if emphasizing your generosity",
             "It is too formal",
-            "It only works with る-verbs"
+            "It only works with る-verbs",
+            "It is grammatically incorrect"
           ],
-          "correctIndex": 1,
+          "correctIndex": 0,
           "explanation": "てあげる can sound condescending or patronizing because it explicitly states you are doing a favor for someone. In many situations, てくれる or てもらう (from the receiver's perspective) sounds more natural and humble."
         }
       ]

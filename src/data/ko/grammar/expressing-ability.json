@@ -4,7 +4,9 @@
   "nameKo": "능력 표현",
   "icon": "💪",
   "tier": "B1",
-  "prerequisites": ["verb-conjugation"],
+  "prerequisites": [
+    "verb-conjugation"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "The most common way to express ability or possibility in Korean is -(으)ㄹ 수 있다. You take the verb stem, add -(으)ㄹ (the future/prospective modifier), then 수 (a bound noun meaning 'way/method'), then 있다 (to exist). Literally it means 'there exists a way to [verb].' Add -ㄹ if the stem ends in a vowel, -을 if it ends in a consonant. Examples: 가다 → 갈 수 있다 (can go). 먹다 → 먹을 수 있다 (can eat). 만들다 → 만들 수 있다 (can make — ㄹ stems keep their ㄹ). 하다 → 할 수 있다 (can do). In polite speech: 갈 수 있어요, 먹을 수 있어요. This pattern expresses both learned ability ('I can swim') and situational possibility ('I can go tomorrow').",
       "tip": "수 is always separated by a space from the modifier and from 있다: 갈 수 있다 (three-word structure). Never write 갈수있다 without spaces.",
       "examples": [
-        { "ko": "저는 한국어를 말할 수 있어요", "en": "I can speak Korean", "highlight": "말할 수 있어요" },
-        { "ko": "내일 갈 수 있어요", "en": "I can go tomorrow", "highlight": "갈 수 있어요" },
-        { "ko": "이 문제를 풀 수 있어요?", "en": "Can you solve this problem?", "highlight": "풀 수 있어요" },
-        { "ko": "여기서 수영할 수 있어요", "en": "You can swim here", "highlight": "수영할 수 있어요" }
+        {
+          "ko": "저는 한국어를 말할 수 있어요",
+          "en": "I can speak Korean",
+          "highlight": "말할 수 있어요"
+        },
+        {
+          "ko": "내일 갈 수 있어요",
+          "en": "I can go tomorrow",
+          "highlight": "갈 수 있어요"
+        },
+        {
+          "ko": "이 문제를 풀 수 있어요?",
+          "en": "Can you solve this problem?",
+          "highlight": "풀 수 있어요"
+        },
+        {
+          "ko": "여기서 수영할 수 있어요",
+          "en": "You can swim here",
+          "highlight": "수영할 수 있어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I can read Korean'?",
-          "options": ["한국어를 읽을 수 있어요", "한국어를 읽는 수 있어요", "한국어를 읽은 수 있어요"],
-          "correctIndex": 0,
+          "options": [
+            "한국어를 읽는 수 있어요",
+            "한국어를 읽을 수 있어요",
+            "한국어를 읽은 수 있어요"
+          ],
+          "correctIndex": 1,
           "explanation": "읽다 → stem 읽 (ends in consonant) + 을 수 있다 → 읽을 수 있어요. Always use the -(으)ㄹ modifier form before 수."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct form for 만들다 (to make) + -(으)ㄹ 수 있다?",
-          "options": ["만들 수 있다", "만들을 수 있다", "만든 수 있다"],
-          "correctIndex": 0,
+          "options": [
+            "만들을 수 있다",
+            "만든 수 있다",
+            "만들 수 있다"
+          ],
+          "correctIndex": 2,
           "explanation": "만들다 has a ㄹ stem. ㄹ stems already end in ㄹ, so you just add 수 있다 directly: 만들 수 있다."
         },
         {
           "type": "multiple-choice",
           "prompt": "'오늘 만날 수 있어요?' means:",
-          "options": ["Can we meet today?", "Did we meet today?", "Will we definitely meet today?"],
-          "correctIndex": 0,
+          "options": [
+            "Did we meet today?",
+            "Will we definitely meet today?",
+            "Can we meet today?"
+          ],
+          "correctIndex": 2,
           "explanation": "만나다 → 만날 수 있다 means 'can meet.' The question form 만날 수 있어요? asks about possibility: 'Can we meet today?'"
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "There are two main ways to express inability in Korean. First, -(으)ㄹ 수 없다 — the negative of -(으)ㄹ 수 있다. Simply replace 있다 with 없다: 갈 수 없다 (cannot go), 먹을 수 없다 (cannot eat). Second, the short negation 못 placed before the verb: 못 가다 (cannot go), 못 먹다 (cannot eat), 못 하다 (cannot do). For 하다 compound verbs, 못 goes between the noun and 하다: 운동 못 하다 (cannot exercise), or you can say 운동을 못 하다. Both forms express inability, but 못 is more common in casual speech. 못 specifically implies inability (not lack of permission). For lack of permission, use -(으)면 안 되다 instead.",
       "tip": "못 is short and punchy for conversation. -(으)ㄹ 수 없다 is slightly more formal or emphatic. Both are correct and interchangeable for expressing inability. But 못 cannot be used with adjectives — only with action verbs.",
       "examples": [
-        { "ko": "오늘은 갈 수 없어요", "en": "I cannot go today (formal/explicit)", "highlight": "갈 수 없어요" },
-        { "ko": "오늘은 못 가요", "en": "I can't go today (casual/short)", "highlight": "못 가요" },
-        { "ko": "매운 음식을 못 먹어요", "en": "I can't eat spicy food", "highlight": "못 먹어요" },
-        { "ko": "수영을 할 수 없어요", "en": "I cannot swim", "highlight": "할 수 없어요" }
+        {
+          "ko": "오늘은 갈 수 없어요",
+          "en": "I cannot go today (formal/explicit)",
+          "highlight": "갈 수 없어요"
+        },
+        {
+          "ko": "오늘은 못 가요",
+          "en": "I can't go today (casual/short)",
+          "highlight": "못 가요"
+        },
+        {
+          "ko": "매운 음식을 못 먹어요",
+          "en": "I can't eat spicy food",
+          "highlight": "못 먹어요"
+        },
+        {
+          "ko": "수영을 할 수 없어요",
+          "en": "I cannot swim",
+          "highlight": "할 수 없어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct short negation for 운동하다 (to exercise)?",
-          "options": ["운동 못 해요", "못 운동해요", "운동못해요"],
-          "correctIndex": 0,
+          "options": [
+            "운동못해요",
+            "운동 못 해요",
+            "못 운동해요"
+          ],
+          "correctIndex": 1,
           "explanation": "For 하다 compound verbs, 못 goes between the noun and 하다 (conjugated): 운동 못 해요. Alternatively: 운동을 못 해요."
         },
         {
           "type": "multiple-choice",
           "prompt": "'저는 노래를 못 해요' means:",
-          "options": ["I can't sing", "I don't sing", "I won't sing"],
+          "options": [
+            "I can't sing",
+            "I don't sing",
+            "I won't sing"
+          ],
           "correctIndex": 0,
           "explanation": "못 before a verb expresses inability. 노래를 못 해요 = I can't sing (I lack the ability). 'I don't sing' (by choice) would be 노래를 안 해요."
         },
         {
           "type": "multiple-choice",
           "prompt": "Why can't you say '못 예뻐요' to mean 'can't be pretty'?",
-          "options": ["못 cannot be used with adjectives", "못 can only be used in past tense", "예쁘다 is an irregular verb"],
-          "correctIndex": 0,
+          "options": [
+            "예쁘다 is an irregular verb",
+            "못 can only be used in past tense",
+            "못 cannot be used with adjectives"
+          ],
+          "correctIndex": 2,
           "explanation": "못 is only used with action verbs to express inability to perform an action. It cannot be used with descriptive verbs (adjectives) like 예쁘다, 크다, 좋다."
         }
       ]
@@ -83,30 +141,58 @@
       "explanation": "A third way to express inability is the long negation pattern: verb stem + -지 못하다. This attaches -지 to the verb stem, then adds 못하다. Examples: 가다 → 가지 못하다 (cannot go). 먹다 → 먹지 못하다 (cannot eat). 이해하다 → 이해하지 못하다 (cannot understand). This form works with any verb, including 하다 compounds, without word-order concerns. It often carries a nuance of 'failed to do' or 'was unable to despite wanting to.' In polite speech: 가지 못해요, 먹지 못했어요. This pattern is especially common in written Korean and formal speech. Compare: 못 갔어요 (casual: couldn't go) vs. 가지 못했어요 (formal/literary: was unable to go).",
       "tip": "Use -지 못하다 when you want to emphasize that the inability was unfortunate or that you tried but failed. It also avoids the word-order issues of 못 with 하다 compounds — 공부하지 못하다 is always clear.",
       "examples": [
-        { "ko": "비가 와서 가지 못했어요", "en": "It rained, so I couldn't go", "highlight": "가지 못했어요" },
-        { "ko": "그 말을 이해하지 못했어요", "en": "I couldn't understand those words", "highlight": "이해하지 못했어요" },
-        { "ko": "약속을 지키지 못해서 미안해요", "en": "I'm sorry I couldn't keep the promise", "highlight": "지키지 못해서" },
-        { "ko": "시간이 없어서 끝내지 못했어요", "en": "I didn't have time, so I couldn't finish", "highlight": "끝내지 못했어요" }
+        {
+          "ko": "비가 와서 가지 못했어요",
+          "en": "It rained, so I couldn't go",
+          "highlight": "가지 못했어요"
+        },
+        {
+          "ko": "그 말을 이해하지 못했어요",
+          "en": "I couldn't understand those words",
+          "highlight": "이해하지 못했어요"
+        },
+        {
+          "ko": "약속을 지키지 못해서 미안해요",
+          "en": "I'm sorry I couldn't keep the promise",
+          "highlight": "지키지 못해서"
+        },
+        {
+          "ko": "시간이 없어서 끝내지 못했어요",
+          "en": "I didn't have time, so I couldn't finish",
+          "highlight": "끝내지 못했어요"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you express 'I couldn't sleep' using -지 못하다?",
-          "options": ["자지 못했어요", "잠지 못했어요", "자기 못했어요"],
+          "options": [
+            "자지 못했어요",
+            "잠지 못했어요",
+            "자기 못했어요"
+          ],
           "correctIndex": 0,
           "explanation": "자다 (to sleep) → stem 자 + -지 못하다 → 자지 못하다. Past tense: 자지 못했어요."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which nuance does -지 못하다 often carry compared to 못?",
-          "options": ["Tried but was unable / regret about inability", "Lack of permission", "Unwillingness to do something"],
-          "correctIndex": 0,
+          "options": [
+            "Lack of permission",
+            "Tried but was unable / regret about inability",
+            "Unwillingness to do something"
+          ],
+          "correctIndex": 1,
           "explanation": "-지 못하다 often implies that you wanted to do something but were unable, or that you regret the inability. It sounds more formal and sometimes more empathetic than the short 못."
         },
         {
           "type": "multiple-choice",
           "prompt": "'참석하지 못해서 죄송합니다' means:",
-          "options": ["I'm sorry I couldn't attend", "I'm sorry I didn't want to attend", "I'm sorry I won't attend"],
+          "options": [
+            "I'm sorry I couldn't attend",
+            "I'm sorry I won't attend",
+            "I'm sorry I didn't want to attend"
+          ],
           "correctIndex": 0,
           "explanation": "참석하다 (to attend) + -지 못하다 = couldn't attend. The sentence politely apologizes for being unable to attend."
         }

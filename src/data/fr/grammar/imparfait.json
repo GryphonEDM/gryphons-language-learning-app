@@ -4,7 +4,9 @@
   "nameFr": "L'imparfait",
   "icon": "🌅",
   "tier": "A2",
-  "prerequisites": ["passe-compose"],
+  "prerequisites": [
+    "passe-compose"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,117 @@
       "explanation": "The imparfait (imperfect) is formed with a single rule that applies to almost every French verb: take the nous form of the present tense, remove -ons to get the imperfect stem, then add the endings -ais, -ais, -ait, -ions, -iez, -aient. Example: parler → nous parlons → stem parl- → je parlais, tu parlais, il/elle parlait, nous parlions, vous parliez, ils/elles parlaient. The same process works for -IR verbs: finir → nous finissons → stem finiss- → je finissais, tu finissais, il finissait, nous finissions, vous finissiez, ils finissaient. And -RE verbs: vendre → nous vendons → stem vend- → je vendais, tu vendais, il vendait, nous vendions, vous vendiez, ils vendaient. There is only one truly irregular imperfect stem: être, which uses ét- (j'étais, tu étais, il était, nous étions, vous étiez, ils étaient). All other verbs, even irregular ones like avoir (nous avons → av-) and aller (nous allons → all-), follow the nous-form rule perfectly. Spelling note: verbs ending in -ger (manger, nager) must write nous mangions and vous mangiez — the i of -ions/-iez already keeps the g soft, but the stem already ends in -ge, giving mange + ions = mangions. The silent e is dropped since the i that follows is enough to soften the g.",
       "tip": "The nous-form trick is nearly foolproof. If you know the present tense, you can form the imparfait for any verb except être. Just cover up -ons and add the new endings. The -ais/-ais/-ait endings are all pronounced identically — 'eh' — so three of the six forms sound the same in speech.",
       "examples": [
-        { "fr": "Je parlais à mon ami.", "en": "I was talking to my friend.", "highlight": "parlais" },
-        { "fr": "Tu finissais tes devoirs.", "en": "You were finishing your homework.", "highlight": "finissais" },
-        { "fr": "Il vendait des fleurs.", "en": "He was selling flowers.", "highlight": "vendait" },
-        { "fr": "Nous mangions ensemble chaque soir.", "en": "We ate together every evening.", "highlight": "mangions" },
-        { "fr": "Vous parliez trop vite.", "en": "You were speaking too fast.", "highlight": "parliez" },
-        { "fr": "J'étais fatigué après le travail.", "en": "I was tired after work.", "highlight": "étais" }
+        {
+          "fr": "Je parlais à mon ami.",
+          "en": "I was talking to my friend.",
+          "highlight": "parlais"
+        },
+        {
+          "fr": "Tu finissais tes devoirs.",
+          "en": "You were finishing your homework.",
+          "highlight": "finissais"
+        },
+        {
+          "fr": "Il vendait des fleurs.",
+          "en": "He was selling flowers.",
+          "highlight": "vendait"
+        },
+        {
+          "fr": "Nous mangions ensemble chaque soir.",
+          "en": "We ate together every evening.",
+          "highlight": "mangions"
+        },
+        {
+          "fr": "Vous parliez trop vite.",
+          "en": "You were speaking too fast.",
+          "highlight": "parliez"
+        },
+        {
+          "fr": "J'étais fatigué après le travail.",
+          "en": "I was tired after work.",
+          "highlight": "étais"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the imparfait stem for 'parler' (nous parlons)?",
-          "options": ["parl-", "parle-", "parler-"],
-          "correctIndex": 0,
+          "options": [
+            "parler-",
+            "parle-",
+            "parl-"
+          ],
+          "correctIndex": 2,
           "explanation": "Remove -ons from the nous form: parlons → parl-. Then add imparfait endings: je parlais, tu parlais, il parlait…"
         },
         {
           "type": "fill-blank",
           "prompt": "Il ___ (être) très gentil avec tout le monde. (He was very kind to everyone.)",
-          "acceptedAnswers": ["était"],
+          "acceptedAnswers": [
+            "était"
+          ],
           "hint": "être is the only irregular imparfait — its stem is ét-",
           "explanation": "être uses the irregular stem ét-: j'étais, tu étais, il/elle était, nous étions, vous étiez, ils étaient. It is the only verb that doesn't use the nous-form trick."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct imparfait form of 'finir' for 'nous'?",
-          "options": ["nous finissions", "nous finisions", "nous finissons"],
+          "options": [
+            "nous finissions",
+            "nous finisions",
+            "nous finissons"
+          ],
           "correctIndex": 2,
           "explanation": "finir → nous finissons → stem finiss-. Add -ions: finiss + ions = finissions. The double-s from the present tense stem is preserved."
         },
         {
           "type": "fill-blank",
           "prompt": "Quand j'étais enfant, nous ___ (manger) toujours en famille. (When I was a child, we always ate as a family.)",
-          "acceptedAnswers": ["mangions"],
+          "acceptedAnswers": [
+            "mangions"
+          ],
           "hint": "manger → nous mangeons → stem mange- → mange + ions",
           "explanation": "manger → nous mangeons → remove -ons → stem mange-. Add -ions: mange + ions = mangions. The e in the stem keeps the g soft before the i."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct imparfait of 'avoir' (to have) for 'ils'?",
-          "options": ["ils avaient", "ils avions", "ils avaientent"],
-          "correctIndex": 0,
+          "options": [
+            "ils avions",
+            "ils avaientent",
+            "ils avaient"
+          ],
+          "correctIndex": 2,
           "explanation": "avoir → nous avons → stem av-. The ils/elles imparfait ending is -aient: av + aient = avaient. Note: avoir follows the nous-form rule perfectly despite being irregular in the present."
         },
         {
           "type": "multiple-choice",
           "prompt": "How are je parlais, tu parlais, and il parlait pronounced at the end?",
-          "options": ["All three sound the same — all end in 'eh'", "Only je and tu sound the same", "All three are pronounced differently"],
-          "correctIndex": 0,
+          "options": [
+            "All three are pronounced differently",
+            "Only je and tu sound the same",
+            "All three sound the same — all end in 'eh'"
+          ],
+          "correctIndex": 2,
           "explanation": "The endings -ais, -ais, and -ait are all pronounced identically as 'eh'. So je parlais, tu parlais, and il parlait are distinguished only by context or the subject pronoun."
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ (vendre) des légumes au marché. (You used to sell vegetables at the market.)",
-          "acceptedAnswers": ["vendiez"],
+          "acceptedAnswers": [
+            "vendiez"
+          ],
           "hint": "vendre → nous vendons → stem vend- → vend + iez",
           "explanation": "vendre → nous vendons → remove -ons → stem vend-. The vous imparfait ending is -iez: vend + iez = vendiez."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the imparfait correctly?",
-          "options": ["Elle chantait une chanson.", "Elle chantera une chanson.", "Elle a chanté une chanson."],
+          "options": [
+            "Elle chantait une chanson.",
+            "Elle chantera une chanson.",
+            "Elle a chanté une chanson."
+          ],
           "correctIndex": 0,
           "explanation": "chanter → nous chantons → stem chant- + ait = chantait. The imparfait elle form ends in -ait. The second option is future tense; the third is passé composé."
         }
@@ -85,68 +137,121 @@
       "explanation": "French has two main past tenses, and choosing between them is one of the most important skills in A2 French. Use the imparfait for: (1) habitual or repeated past actions — things you used to do or did regularly (Quand j'étais enfant, je jouais au foot — When I was a child, I used to play football); (2) ongoing background states or actions in progress — what was happening when something else occurred (Il faisait beau et les oiseaux chantaient — It was nice and birds were singing); (3) descriptions of past states, feelings, or conditions (La maison était grande — The house was big; J'avais faim — I was hungry); (4) actions that had been going on for a period of time, often with 'depuis' (Je travaillais depuis deux ans — I had been working for two years). Use the passé composé for: (1) specific completed actions — things that happened once and are done (J'ai mangé une pizza — I ate a pizza); (2) events that interrupt an ongoing imparfait action (Je dormais quand le téléphone a sonné — I was sleeping when the phone rang); (3) a series of sequential completed actions (Elle est entrée, elle a pris son manteau et elle est partie — She came in, took her coat and left). A useful mental image: the imparfait paints the background scene (ongoing, descriptive), while the passé composé places events on that background (completed, punctual). In storytelling, they work together: the imparfait sets the stage, the passé composé moves the plot forward.",
       "tip": "Look for signal words: words like toujours (always), souvent (often), tous les jours (every day), chaque semaine (every week), and quand j'étais enfant (when I was a child) point to the imparfait. Words like soudain (suddenly), un jour (one day), d'abord/ensuite/enfin (first/then/finally), and specific times point to the passé composé. When two past verbs appear together and one interrupts the other, the interrupted action is imparfait and the interrupting event is passé composé.",
       "examples": [
-        { "fr": "Je dormais quand le téléphone a sonné.", "en": "I was sleeping when the phone rang.", "highlight": "dormais / a sonné" },
-        { "fr": "Quand j'étais enfant, je jouais au foot tous les samedis.", "en": "When I was a child, I played football every Saturday.", "highlight": "étais / jouais" },
-        { "fr": "Il faisait froid, alors elle a mis son manteau.", "en": "It was cold, so she put on her coat.", "highlight": "faisait / a mis" },
-        { "fr": "La rue était calme quand l'accident s'est produit.", "en": "The street was quiet when the accident happened.", "highlight": "était / s'est produit" },
-        { "fr": "J'ai mangé une pizza et j'ai regardé un film.", "en": "I ate a pizza and watched a film.", "highlight": "ai mangé / ai regardé" },
-        { "fr": "Je travaillais depuis trois ans quand j'ai reçu une promotion.", "en": "I had been working for three years when I received a promotion.", "highlight": "travaillais / ai reçu" }
+        {
+          "fr": "Je dormais quand le téléphone a sonné.",
+          "en": "I was sleeping when the phone rang.",
+          "highlight": "dormais / a sonné"
+        },
+        {
+          "fr": "Quand j'étais enfant, je jouais au foot tous les samedis.",
+          "en": "When I was a child, I played football every Saturday.",
+          "highlight": "étais / jouais"
+        },
+        {
+          "fr": "Il faisait froid, alors elle a mis son manteau.",
+          "en": "It was cold, so she put on her coat.",
+          "highlight": "faisait / a mis"
+        },
+        {
+          "fr": "La rue était calme quand l'accident s'est produit.",
+          "en": "The street was quiet when the accident happened.",
+          "highlight": "était / s'est produit"
+        },
+        {
+          "fr": "J'ai mangé une pizza et j'ai regardé un film.",
+          "en": "I ate a pizza and watched a film.",
+          "highlight": "ai mangé / ai regardé"
+        },
+        {
+          "fr": "Je travaillais depuis trois ans quand j'ai reçu une promotion.",
+          "en": "I had been working for three years when I received a promotion.",
+          "highlight": "travaillais / ai reçu"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"Every summer, we went to the beach.\" Which past tense is needed?",
-          "options": ["Imparfait — chaque été, nous allions à la plage", "Passé composé — chaque été, nous sommes allés à la plage", "Either is correct"],
-          "correctIndex": 0,
+          "options": [
+            "Passé composé — chaque été, nous sommes allés à la plage",
+            "Imparfait — chaque été, nous allions à la plage",
+            "Either is correct"
+          ],
+          "correctIndex": 1,
           "explanation": "Chaque été (every summer) signals a habitual, repeated action. Habitual past actions use the imparfait: nous allions. The passé composé would suggest it happened only once."
         },
         {
           "type": "fill-blank",
           "prompt": "Je ___ (lire) quand ma mère ___ (appeler). (I was reading when my mother called.)",
-          "acceptedAnswers": ["lisais ... a appelé", "lisais…a appelé"],
+          "acceptedAnswers": [
+            "lisais ... a appelé",
+            "lisais…a appelé"
+          ],
           "hint": "The ongoing action uses imparfait; the interrupting event uses passé composé",
           "explanation": "The ongoing background action (reading) uses imparfait: lisais. The event that interrupted it (called) uses passé composé: a appelé. This imparfait + passé composé pattern is very common in French narrative."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence describes a completed one-time past event?",
-          "options": ["J'ai visité Paris l'année dernière.", "Je visitais Paris souvent.", "Quand j'étais jeune, je visitais Paris."],
+          "options": [
+            "J'ai visité Paris l'année dernière.",
+            "Je visitais Paris souvent.",
+            "Quand j'étais jeune, je visitais Paris."
+          ],
           "correctIndex": 0,
           "explanation": "J'ai visité uses the passé composé, indicating a specific completed event (last year). The other two use the imparfait for habitual/repeated visits. L'année dernière (last year) is a specific time marker that pairs naturally with passé composé."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"The sky was grey and it was raining.\" How would you express this in French?",
-          "options": ["Le ciel était gris et il pleuvait.", "Le ciel a été gris et il a plu.", "Le ciel sera gris et il pleuvra."],
-          "correctIndex": 0,
+          "options": [
+            "Le ciel a été gris et il a plu.",
+            "Le ciel était gris et il pleuvait.",
+            "Le ciel sera gris et il pleuvra."
+          ],
+          "correctIndex": 1,
           "explanation": "Descriptions of a past scene — states, weather, atmosphere — use the imparfait: était (was) and pleuvait (was raining). The passé composé version (a été, a plu) would imply the sky turned grey and it rained as a one-time completed event, which is unnatural for scene-setting."
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ (entrer), ___ (prendre) son sac et ___ (partir). (She came in, took her bag and left.)",
-          "acceptedAnswers": ["est entrée ... a pris ... est partie", "est entrée…a pris…est partie"],
+          "acceptedAnswers": [
+            "est entrée ... a pris ... est partie",
+            "est entrée…a pris…est partie"
+          ],
           "hint": "A series of sequential completed actions uses passé composé",
           "explanation": "Three sequential completed actions all use the passé composé: est entrée (came in), a pris (took), est partie (left). Sequential narration of plot events always uses passé composé."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses depuis correctly with the imparfait?",
-          "options": ["J'attendais depuis une heure quand il est arrivé.", "J'ai attendu depuis une heure quand il est arrivé.", "J'attendais depuis une heure quand il arrivait."],
-          "correctIndex": 0,
+          "options": [
+            "J'ai attendu depuis une heure quand il est arrivé.",
+            "J'attendais depuis une heure quand il est arrivé.",
+            "J'attendais depuis une heure quand il arrivait."
+          ],
+          "correctIndex": 1,
           "explanation": "When an action had been going on for a duration (depuis + time) before another past event, use imparfait + depuis: j'attendais depuis une heure (I had been waiting for an hour). The interrupting arrival uses passé composé: est arrivé."
         },
         {
           "type": "fill-blank",
           "prompt": "Quand j'___ (être) enfant, je ___ (avoir) un chien. (When I was a child, I had a dog.)",
-          "acceptedAnswers": ["étais ... avais", "étais…avais"],
+          "acceptedAnswers": [
+            "étais ... avais",
+            "étais…avais"
+          ],
           "hint": "Past states and conditions use imparfait; être and avoir both follow the imparfait pattern here",
           "explanation": "Both verbs describe past states or conditions during a period of time (childhood), so both use the imparfait: étais (was) and avais (had). The irregular stem for être is ét-, and avoir → nous avons → stem av- → j'avais."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"Suddenly, the door opened.\" Which tense fits 'suddenly'?",
-          "options": ["Passé composé — Soudain, la porte s'est ouverte.", "Imparfait — Soudain, la porte s'ouvrait.", "Either is equally correct."],
-          "correctIndex": 0,
+          "options": [
+            "Either is equally correct.",
+            "Imparfait — Soudain, la porte s'ouvrait.",
+            "Passé composé — Soudain, la porte s'est ouverte."
+          ],
+          "correctIndex": 2,
           "explanation": "Soudain (suddenly) signals a sudden, completed, punctual event — exactly the territory of the passé composé: s'est ouverte. The imparfait s'ouvrait would mean the door was (gradually) opening, which is possible but not what 'suddenly' implies."
         }
       ]

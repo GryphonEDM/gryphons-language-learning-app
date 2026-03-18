@@ -4,7 +4,9 @@
   "nameRu": "Условное и повелительное наклонение",
   "icon": "❗",
   "tier": "B2",
-  "prerequisites": ["verbs-past"],
+  "prerequisites": [
+    "verbs-past"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,26 +15,148 @@
       "tip": "Imperative endings: -й after vowels (читай), -и after consonant clusters (пиши), -ь after single soft consonant (встань). Add -те for formal/plural.",
       "explanation": "The imperative mood is used for commands, requests, and instructions. Formation: take the 3rd person present stem and add -й (after vowels: читай), -и (after consonant clusters or when stressed: пиши, говори), or -ь (after single soft consonant, unstressed: встань). For plural/formal, add -те: читай → читайте, пиши → пишите, говори → говорите.",
       "examples": [
-        { "ru": "Читай эту книгу!", "en": "Read this book! (informal)", "highlight": "Читай" },
-        { "ru": "Пишите, пожалуйста!", "en": "Write, please! (formal)", "highlight": "Пишите" },
-        { "ru": "Будь осторожен!", "en": "Be careful! (informal)", "highlight": "Будь" }
+        {
+          "ru": "Читай эту книгу!",
+          "en": "Read this book! (informal)",
+          "highlight": "Читай"
+        },
+        {
+          "ru": "Пишите, пожалуйста!",
+          "en": "Write, please! (formal)",
+          "highlight": "Пишите"
+        },
+        {
+          "ru": "Будь осторожен!",
+          "en": "Be careful! (informal)",
+          "highlight": "Будь"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "What is the informal imperative of 'читать' (to read)?", "options": ["читай", "читаю", "читает"], "correctIndex": 0, "explanation": "Читать → stem чита- + й = читай. The -й ending is used after vowels." },
-        { "type": "fill-blank", "prompt": "___! Я хочу тебя услышать. (Speak! — informal, говорить)", "acceptedAnswers": ["Говори"], "hint": "Stem говор- + и", "explanation": "Говорить → говори. The -и ending is used after consonants." },
-        { "type": "transformation", "prompt": "Make the formal imperative:", "baseWord": "читай (read, informal)", "context": "___! (formal/plural)", "acceptedAnswers": ["Читайте", "читайте"], "hint": "Add -те for formal", "explanation": "Informal читай + те = читайте (formal/plural imperative)." },
-        { "type": "multiple-choice", "prompt": "What is the imperative of 'быть' (to be)?", "options": ["будь", "будешь", "бывай"], "correctIndex": 0, "explanation": "Быть → будь (be!). This is an irregular but very common imperative." },
-        { "type": "fill-blank", "prompt": "___ тихо! (Be quiet! — informal, сидеть)", "acceptedAnswers": ["Сиди"], "hint": "Stem сид- + и", "explanation": "Сидеть → сиди (sit/be). 'Сиди тихо' = Be/sit quiet." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Пишей мне письмо!", "correctedText": "Пиши мне письмо!", "acceptedAnswers": ["Пиши"], "explanation": "The imperative of 'писать' is 'пиши' (not 'пишей'). Stem пиш- + и." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "читать", "right": "читай / читайте" },
-          { "left": "писать", "right": "пиши / пишите" },
-          { "left": "говорить", "right": "говори / говорите" },
-          { "left": "быть", "right": "будь / будьте" }
-        ], "explanation": "Each verb has informal (singular) and formal/plural imperative forms, differing by -те." },
-        { "type": "fill-blank", "prompt": "Не ___ это! (Don't do this! — informal, делать)", "acceptedAnswers": ["делай"], "hint": "Negative imperative: не + imperative form", "explanation": "Делать → делай. Negative imperative: не делай (don't do)." },
-        { "type": "multiple-choice", "prompt": "Which is the correct formal imperative of 'помочь' (to help)?", "options": ["помогите", "помочьте", "помоги"], "correctIndex": 0, "explanation": "Помочь → помоги (informal) → помогите (formal)." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "Please open the window!", "words": ["Пожалуйста", "откройте", "окно"], "correctOrder": ["Пожалуйста", "откройте", "окно"], "distractors": ["открыть", "открывай"], "explanation": "'Пожалуйста' (please) + imperative 'откройте' (open, formal). 'Открыть' is the infinitive, not imperative." }
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the informal imperative of 'читать' (to read)?",
+          "options": [
+            "читаю",
+            "читай",
+            "читает"
+          ],
+          "correctIndex": 1,
+          "explanation": "Читать → stem чита- + й = читай. The -й ending is used after vowels."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___! Я хочу тебя услышать. (Speak! — informal, говорить)",
+          "acceptedAnswers": [
+            "Говори"
+          ],
+          "hint": "Stem говор- + и",
+          "explanation": "Говорить → говори. The -и ending is used after consonants."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Make the formal imperative:",
+          "baseWord": "читай (read, informal)",
+          "context": "___! (formal/plural)",
+          "acceptedAnswers": [
+            "Читайте",
+            "читайте"
+          ],
+          "hint": "Add -те for formal",
+          "explanation": "Informal читай + те = читайте (formal/plural imperative)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the imperative of 'быть' (to be)?",
+          "options": [
+            "будь",
+            "бывай",
+            "будешь"
+          ],
+          "correctIndex": 0,
+          "explanation": "Быть → будь (be!). This is an irregular but very common imperative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ тихо! (Be quiet! — informal, сидеть)",
+          "acceptedAnswers": [
+            "Сиди"
+          ],
+          "hint": "Stem сид- + и",
+          "explanation": "Сидеть → сиди (sit/be). 'Сиди тихо' = Be/sit quiet."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Пишей мне письмо!",
+          "correctedText": "Пиши мне письмо!",
+          "acceptedAnswers": [
+            "Пиши"
+          ],
+          "explanation": "The imperative of 'писать' is 'пиши' (not 'пишей'). Stem пиш- + и."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "читать",
+              "right": "читай / читайте"
+            },
+            {
+              "left": "писать",
+              "right": "пиши / пишите"
+            },
+            {
+              "left": "говорить",
+              "right": "говори / говорите"
+            },
+            {
+              "left": "быть",
+              "right": "будь / будьте"
+            }
+          ],
+          "explanation": "Each verb has informal (singular) and formal/plural imperative forms, differing by -те."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Не ___ это! (Don't do this! — informal, делать)",
+          "acceptedAnswers": [
+            "делай"
+          ],
+          "hint": "Negative imperative: не + imperative form",
+          "explanation": "Делать → делай. Negative imperative: не делай (don't do)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct formal imperative of 'помочь' (to help)?",
+          "options": [
+            "помочьте",
+            "помоги",
+            "помогите"
+          ],
+          "correctIndex": 2,
+          "explanation": "Помочь → помоги (informal) → помогите (formal)."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "Please open the window!",
+          "words": [
+            "Пожалуйста",
+            "откройте",
+            "окно"
+          ],
+          "correctOrder": [
+            "Пожалуйста",
+            "откройте",
+            "окно"
+          ],
+          "distractors": [
+            "открыть",
+            "открывай"
+          ],
+          "explanation": "'Пожалуйста' (please) + imperative 'откройте' (open, formal). 'Открыть' is the infinitive, not imperative."
+        }
       ]
     },
     {
@@ -41,26 +165,137 @@
       "tip": "Conditional = past tense + бы. The particle бы can move in the sentence. Если бы я знал... = If I had known...",
       "explanation": "The conditional mood expresses wishes, hypothetical situations, and polite requests. Formation: past tense verb + бы. Я читал бы = I would read. Если бы я знал... = If I knew... The particle бы can move in the sentence: Я бы читал = Я читал бы.",
       "examples": [
-        { "ru": "Я читал бы эту книгу.", "en": "I would read this book.", "highlight": "читал бы" },
-        { "ru": "Если бы я знал, я бы помог.", "en": "If I had known, I would have helped.", "highlight": "Если бы...я бы" },
-        { "ru": "Она хотела бы поехать.", "en": "She would like to go.", "highlight": "хотела бы" }
+        {
+          "ru": "Я читал бы эту книгу.",
+          "en": "I would read this book.",
+          "highlight": "читал бы"
+        },
+        {
+          "ru": "Если бы я знал, я бы помог.",
+          "en": "If I had known, I would have helped.",
+          "highlight": "Если бы...я бы"
+        },
+        {
+          "ru": "Она хотела бы поехать.",
+          "en": "She would like to go.",
+          "highlight": "хотела бы"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How do you say 'I would buy' in Russian?", "options": ["я купил бы", "я куплю", "я покупал"], "correctIndex": 0, "explanation": "Conditional = past tense + бы: купил (past) + бы = купил бы." },
-        { "type": "fill-blank", "prompt": "Если бы я ___ деньги, я бы купил машину. (had — иметь, past masc.)", "acceptedAnswers": ["имел"], "hint": "Past tense of иметь (masculine)", "explanation": "Если бы + past tense forms the 'if' clause: если бы я имел = if I had." },
-        { "type": "transformation", "prompt": "Form the conditional:", "baseWord": "Она поехала. (She went.)", "context": "Она ___ поехать в Париж.", "acceptedAnswers": ["хотела бы"], "hint": "She would like to...", "explanation": "Хотела бы + infinitive = would like to. Past feminine хотела + бы." },
-        { "type": "multiple-choice", "prompt": "Если бы он ___, он бы не опоздал.", "options": ["встал раньше", "встанет раньше", "встаёт раньше"], "correctIndex": 0, "explanation": "Если бы + past tense: если бы он встал раньше = if he had gotten up earlier." },
-        { "type": "fill-blank", "prompt": "Мы ___ бы вам помочь. (could — мочь, past plural)", "acceptedAnswers": ["могли"], "hint": "Past tense plural of мочь", "explanation": "Могли бы = would be able to / could. Past plural 'могли' + бы." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Если бы я знаю, я бы пришёл.", "correctedText": "Если бы я знал, я бы пришёл.", "acceptedAnswers": ["знал"], "explanation": "After 'если бы', the verb must be in past tense: знал (not present 'знаю'). Если бы я знал = if I knew." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Я читал бы", "right": "I would read" },
-          { "left": "Если бы я знал", "right": "If I knew" },
-          { "left": "Она хотела бы", "right": "She would like" },
-          { "left": "Мы могли бы", "right": "We could" }
-        ], "explanation": "All conditional forms use past tense + бы. 'Если бы' introduces the condition ('if')." },
-        { "type": "fill-blank", "prompt": "Я ___ бы кофе, пожалуйста. (would like — хотеть, past masc.)", "acceptedAnswers": ["хотел"], "hint": "Polite request: past tense + бы", "explanation": "Хотел бы = I would like. This is the polite way to order or request something." },
-        { "type": "multiple-choice", "prompt": "Which is a correct conditional sentence?", "options": ["Если бы я имел время, я бы прочитал эту книгу.", "Если бы я имею время, я прочитаю эту книгу.", "Если бы я буду иметь время, я прочитал бы."], "correctIndex": 0, "explanation": "Both clauses must use past tense + бы: если бы имел...я бы прочитал." },
-        { "type": "listen-type", "prompt": "Listen and type what you hear:", "audio": "Если бы я знал, я бы тебе сказал.", "acceptedAnswers": ["Если бы я знал, я бы тебе сказал.", "Если бы я знал, я бы тебе сказал"], "explanation": "'Если бы я знал' = if I had known. 'Я бы сказал' = I would have told. Both use past tense + бы." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I would buy' in Russian?",
+          "options": [
+            "я покупал",
+            "я купил бы",
+            "я куплю"
+          ],
+          "correctIndex": 1,
+          "explanation": "Conditional = past tense + бы: купил (past) + бы = купил бы."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Если бы я ___ деньги, я бы купил машину. (had — иметь, past masc.)",
+          "acceptedAnswers": [
+            "имел"
+          ],
+          "hint": "Past tense of иметь (masculine)",
+          "explanation": "Если бы + past tense forms the 'if' clause: если бы я имел = if I had."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Form the conditional:",
+          "baseWord": "Она поехала. (She went.)",
+          "context": "Она ___ поехать в Париж.",
+          "acceptedAnswers": [
+            "хотела бы"
+          ],
+          "hint": "She would like to...",
+          "explanation": "Хотела бы + infinitive = would like to. Past feminine хотела + бы."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Если бы он ___, он бы не опоздал.",
+          "options": [
+            "встаёт раньше",
+            "встал раньше",
+            "встанет раньше"
+          ],
+          "correctIndex": 1,
+          "explanation": "Если бы + past tense: если бы он встал раньше = if he had gotten up earlier."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Мы ___ бы вам помочь. (could — мочь, past plural)",
+          "acceptedAnswers": [
+            "могли"
+          ],
+          "hint": "Past tense plural of мочь",
+          "explanation": "Могли бы = would be able to / could. Past plural 'могли' + бы."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Если бы я знаю, я бы пришёл.",
+          "correctedText": "Если бы я знал, я бы пришёл.",
+          "acceptedAnswers": [
+            "знал"
+          ],
+          "explanation": "After 'если бы', the verb must be in past tense: знал (not present 'знаю'). Если бы я знал = if I knew."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Я читал бы",
+              "right": "I would read"
+            },
+            {
+              "left": "Если бы я знал",
+              "right": "If I knew"
+            },
+            {
+              "left": "Она хотела бы",
+              "right": "She would like"
+            },
+            {
+              "left": "Мы могли бы",
+              "right": "We could"
+            }
+          ],
+          "explanation": "All conditional forms use past tense + бы. 'Если бы' introduces the condition ('if')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Я ___ бы кофе, пожалуйста. (would like — хотеть, past masc.)",
+          "acceptedAnswers": [
+            "хотел"
+          ],
+          "hint": "Polite request: past tense + бы",
+          "explanation": "Хотел бы = I would like. This is the polite way to order or request something."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is a correct conditional sentence?",
+          "options": [
+            "Если бы я буду иметь время, я прочитал бы.",
+            "Если бы я имею время, я прочитаю эту книгу.",
+            "Если бы я имел время, я бы прочитал эту книгу."
+          ],
+          "correctIndex": 2,
+          "explanation": "Both clauses must use past tense + бы: если бы имел...я бы прочитал."
+        },
+        {
+          "type": "listen-type",
+          "prompt": "Listen and type what you hear:",
+          "audio": "Если бы я знал, я бы тебе сказал.",
+          "acceptedAnswers": [
+            "Если бы я знал, я бы тебе сказал.",
+            "Если бы я знал, я бы тебе сказал"
+          ],
+          "explanation": "'Если бы я знал' = if I had known. 'Я бы сказал' = I would have told. Both use past tense + бы."
+        }
       ]
     },
     {
@@ -69,26 +304,158 @@
       "tip": "Use imperatives for directions, requests, advice, and recipes. Use conditionals for wishes, polite requests, and hypothetical situations.",
       "explanation": "Imperatives are used for directions, requests, advice, and recipes. Conditionals express wishes, polite requests, hypotheticals, and regrets. Practice recognizing and using both moods in real-life situations.",
       "examples": [
-        { "ru": "Идите прямо, потом поверните направо.", "en": "Go straight, then turn right. (directions)", "highlight": "Идите...поверните" },
-        { "ru": "Я бы хотел заказать кофе.", "en": "I would like to order coffee. (polite request)", "highlight": "хотел" },
-        { "ru": "Не забудь ключи!", "en": "Don't forget the keys! (reminder)", "highlight": "забудь" }
+        {
+          "ru": "Идите прямо, потом поверните направо.",
+          "en": "Go straight, then turn right. (directions)",
+          "highlight": "Идите...поверните"
+        },
+        {
+          "ru": "Я бы хотел заказать кофе.",
+          "en": "I would like to order coffee. (polite request)",
+          "highlight": "хотел"
+        },
+        {
+          "ru": "Не забудь ключи!",
+          "en": "Don't forget the keys! (reminder)",
+          "highlight": "забудь"
+        }
       ],
       "exercises": [
-        { "type": "multiple-choice", "prompt": "How would you politely order in a restaurant?", "options": ["Я хотел бы заказать борщ.", "Дай мне борщ!", "Я закажу борщ."], "correctIndex": 0, "explanation": "Conditional 'хотел бы' is the polite form for ordering. 'Дай мне' is too direct." },
-        { "type": "fill-blank", "prompt": "___ прямо до конца улицы. (Go — formal, идти)", "acceptedAnswers": ["Идите"], "hint": "Formal imperative of идти", "explanation": "Идти → иди (informal) → идите (formal). Used for giving directions." },
-        { "type": "transformation", "prompt": "Make this request polite using the conditional:", "baseWord": "Дай мне воду.", "context": "Не ___ бы вы мне воду?", "acceptedAnswers": ["могли бы дать", "дали"], "hint": "Use conditional for politeness", "explanation": "'Не могли бы вы дать' = Could you give... Much more polite than the direct imperative." },
-        { "type": "multiple-choice", "prompt": "Which is correct advice?", "options": ["Учи русский каждый день!", "Выучил бы русский!", "Русский учит!"], "correctIndex": 0, "explanation": "Imperative 'учи' (study!) is the natural way to give advice." },
-        { "type": "fill-blank", "prompt": "Если бы я был на твоём месте, я бы ___ врача. (visited — посетить, past masc.)", "acceptedAnswers": ["посетил"], "hint": "Conditional advice: если бы я был..., я бы + past tense", "explanation": "'Если бы я был на твоём месте' = If I were in your place. 'Я бы посетил' = I would visit." },
-        { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Не забывай свой зонтик!", "correctedText": "Не забудь свой зонтик!", "acceptedAnswers": ["забудь"], "explanation": "For a specific one-time reminder, use perfective imperative: 'Не забудь!' (Don't forget!). 'Не забывай' would mean 'don't keep forgetting' (habitual)." },
-        { "type": "matching", "prompt": "Match the pairs:", "pairs": [
-          { "left": "Помогите, пожалуйста!", "right": "Help me, please! (request)" },
-          { "left": "Я бы хотел поехать.", "right": "I would like to go. (wish)" },
-          { "left": "Поверните налево.", "right": "Turn left. (direction)" },
-          { "left": "Если бы я мог, я бы пришёл.", "right": "If I could, I would come. (hypothetical)" }
-        ], "explanation": "Imperatives for direct requests/directions. Conditionals for polite wishes and hypotheticals." },
-        { "type": "multiple-choice", "prompt": "A recipe says: '___ лук мелко.' (Chop the onion finely.)", "options": ["Нарежьте", "Нарежу", "Нарезал бы"], "correctIndex": 0, "explanation": "Recipes use formal imperatives: нарежьте (chop, formal). This is standard in Russian cookbooks." },
-        { "type": "fill-blank", "prompt": "Если бы ты ___ раньше, мы бы успели. (came — прийти, past masc.)", "acceptedAnswers": ["пришёл"], "hint": "Past tense of прийти (masculine)", "explanation": "Если бы ты пришёл раньше = If you had come earlier. Conditional uses past tense after если бы." },
-        { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "If I had money, I would travel.", "words": ["Если", "бы", "я", "имел", "деньги", "я", "бы", "путешествовал"], "correctOrder": ["Если", "бы", "я", "имел", "деньги", "я", "бы", "путешествовал"], "distractors": ["имею", "путешествую"], "explanation": "Conditional: если бы + past tense (имел) in the if-clause, past tense + бы (путешествовал) in the result clause." }
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you politely order in a restaurant?",
+          "options": [
+            "Я закажу борщ.",
+            "Я хотел бы заказать борщ.",
+            "Дай мне борщ!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Conditional 'хотел бы' is the polite form for ordering. 'Дай мне' is too direct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ прямо до конца улицы. (Go — formal, идти)",
+          "acceptedAnswers": [
+            "Идите"
+          ],
+          "hint": "Formal imperative of идти",
+          "explanation": "Идти → иди (informal) → идите (formal). Used for giving directions."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Make this request polite using the conditional:",
+          "baseWord": "Дай мне воду.",
+          "context": "Не ___ бы вы мне воду?",
+          "acceptedAnswers": [
+            "могли бы дать",
+            "дали"
+          ],
+          "hint": "Use conditional for politeness",
+          "explanation": "'Не могли бы вы дать' = Could you give... Much more polite than the direct imperative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct advice?",
+          "options": [
+            "Русский учит!",
+            "Учи русский каждый день!",
+            "Выучил бы русский!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Imperative 'учи' (study!) is the natural way to give advice."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Если бы я был на твоём месте, я бы ___ врача. (visited — посетить, past masc.)",
+          "acceptedAnswers": [
+            "посетил"
+          ],
+          "hint": "Conditional advice: если бы я был..., я бы + past tense",
+          "explanation": "'Если бы я был на твоём месте' = If I were in your place. 'Я бы посетил' = I would visit."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error:",
+          "incorrectText": "Не забывай свой зонтик!",
+          "correctedText": "Не забудь свой зонтик!",
+          "acceptedAnswers": [
+            "забудь"
+          ],
+          "explanation": "For a specific one-time reminder, use perfective imperative: 'Не забудь!' (Don't forget!). 'Не забывай' would mean 'don't keep forgetting' (habitual)."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pairs:",
+          "pairs": [
+            {
+              "left": "Помогите, пожалуйста!",
+              "right": "Help me, please! (request)"
+            },
+            {
+              "left": "Я бы хотел поехать.",
+              "right": "I would like to go. (wish)"
+            },
+            {
+              "left": "Поверните налево.",
+              "right": "Turn left. (direction)"
+            },
+            {
+              "left": "Если бы я мог, я бы пришёл.",
+              "right": "If I could, I would come. (hypothetical)"
+            }
+          ],
+          "explanation": "Imperatives for direct requests/directions. Conditionals for polite wishes and hypotheticals."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A recipe says: '___ лук мелко.' (Chop the onion finely.)",
+          "options": [
+            "Нарежу",
+            "Нарежьте",
+            "Нарезал бы"
+          ],
+          "correctIndex": 1,
+          "explanation": "Recipes use formal imperatives: нарежьте (chop, formal). This is standard in Russian cookbooks."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Если бы ты ___ раньше, мы бы успели. (came — прийти, past masc.)",
+          "acceptedAnswers": [
+            "пришёл"
+          ],
+          "hint": "Past tense of прийти (masculine)",
+          "explanation": "Если бы ты пришёл раньше = If you had come earlier. Conditional uses past tense after если бы."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Arrange into a correct sentence:",
+          "translation": "If I had money, I would travel.",
+          "words": [
+            "Если",
+            "бы",
+            "я",
+            "имел",
+            "деньги",
+            "я",
+            "бы",
+            "путешествовал"
+          ],
+          "correctOrder": [
+            "Если",
+            "бы",
+            "я",
+            "имел",
+            "деньги",
+            "я",
+            "бы",
+            "путешествовал"
+          ],
+          "distractors": [
+            "имею",
+            "путешествую"
+          ],
+          "explanation": "Conditional: если бы + past tense (имел) in the if-clause, past tense + бы (путешествовал) in the result clause."
+        }
       ]
     }
   ]

@@ -4,7 +4,9 @@
   "nameJa": "動詞のグループと活用",
   "icon": "🔄",
   "tier": "A1",
-  "prerequisites": ["basic-sentence-structure"],
+  "prerequisites": [
+    "basic-sentence-structure"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +15,59 @@
       "explanation": "る-verbs (also called Group 2 or ichidan verbs) are the easiest to conjugate. They always end in -いる (-iru) or -える (-eru) in dictionary form. To conjugate, simply drop the final る and add the new ending. Examples: 食べる (taberu, to eat) → 食べます (tabemasu, polite), 見る (miru, to see) → 見ます (mimasu, polite). Common る-verbs: 食べる (eat), 見る (see), 寝る (sleep), 起きる (wake up), 出る (leave), 着る (wear), いる (exist, animate), 教える (teach), 開ける (open), 閉める (close). The conjugation is completely regular — once you know how to conjugate one る-verb, you know them all. The stem (what remains after dropping る) never changes.",
       "tip": "If a verb ends in -iru or -eru, it is PROBABLY a る-verb, but there are exceptions! 帰る (kaeru, to return), 走る (hashiru, to run), 入る (hairu, to enter), and 切る (kiru, to cut) end in -iru/-eru but are actually う-verbs. You need to memorize these exceptions.",
       "examples": [
-        { "ja": "食べる → 食べます", "en": "taberu → tabemasu (to eat → polite form: drop る, add ます)", "highlight": "食べます" },
-        { "ja": "見る → 見ます", "en": "miru → mimasu (to see → polite form)", "highlight": "見ます" },
-        { "ja": "起きる → 起きます", "en": "okiru → okimasu (to wake up → polite form)", "highlight": "起きます" },
-        { "ja": "教える → 教えます", "en": "oshieru → oshiemasu (to teach → polite form)", "highlight": "教えます" }
+        {
+          "ja": "食べる → 食べます",
+          "en": "taberu → tabemasu (to eat → polite form: drop る, add ます)",
+          "highlight": "食べます"
+        },
+        {
+          "ja": "見る → 見ます",
+          "en": "miru → mimasu (to see → polite form)",
+          "highlight": "見ます"
+        },
+        {
+          "ja": "起きる → 起きます",
+          "en": "okiru → okimasu (to wake up → polite form)",
+          "highlight": "起きます"
+        },
+        {
+          "ja": "教える → 教えます",
+          "en": "oshieru → oshiemasu (to teach → polite form)",
+          "highlight": "教えます"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you conjugate る-verbs to ます form?",
-          "options": ["Drop る and add ます", "Change る to り and add ます", "Add ます directly after る"],
-          "correctIndex": 0,
+          "options": [
+            "Add ます directly after る",
+            "Change る to り and add ます",
+            "Drop る and add ます"
+          ],
+          "correctIndex": 2,
           "explanation": "For る-verbs, simply drop the final る and add ます: 食べる → 食べ + ます = 食べます. The stem never changes."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the ます form of 寝る (neru, to sleep)?",
-          "options": ["寝ます (nemasu)", "寝ります (nerimasu)", "寝るます (nerumasu)"],
+          "options": [
+            "寝ます (nemasu)",
+            "寝るます (nerumasu)",
+            "寝ります (nerimasu)"
+          ],
           "correctIndex": 0,
           "explanation": "寝る is a る-verb: drop る → 寝, then add ます → 寝ます (nemasu)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these is a る-verb?",
-          "options": ["食べる (taberu, to eat)", "帰る (kaeru, to return)", "走る (hashiru, to run)"],
-          "correctIndex": 0,
+          "options": [
+            "帰る (kaeru, to return)",
+            "走る (hashiru, to run)",
+            "食べる (taberu, to eat)"
+          ],
+          "correctIndex": 2,
           "explanation": "食べる is a genuine る-verb (ends in -eru, conjugates as 食べ+ます). 帰る and 走る look like る-verbs but are actually う-verbs (exceptions that must be memorized)."
         }
       ]
@@ -48,31 +78,59 @@
       "explanation": "う-verbs (also called Group 1 or godan verbs) end in an -u sound in dictionary form: -う, -く, -ぐ, -す, -つ, -ぬ, -ぶ, -む, -る. To make the ます form, change the final -u syllable to the corresponding -i syllable, then add ます. The mappings are: う→い, く→き, ぐ→ぎ, す→し, つ→ち, ぬ→に, ぶ→び, む→み, る→り. Examples: 書く (kaku, write) → 書きます (kakimasu), 飲む (nomu, drink) → 飲みます (nomimasu), 話す (hanasu, speak) → 話します (hanashimasu), 買う (kau, buy) → 買います (kaimasu). These are the largest group of Japanese verbs.",
       "tip": "The key pattern: change the last vowel from 'u' to 'i' before adding ます. Think of the あいうえお column — you are moving from the う-row to the い-row: く→き, む→み, す→し, etc. For verbs ending in う, insert い: 買う → 買います (ka-u → ka-i-masu).",
       "examples": [
-        { "ja": "書く → 書きます", "en": "kaku → kakimasu (to write: く→き + ます)", "highlight": "書きます" },
-        { "ja": "飲む → 飲みます", "en": "nomu → nomimasu (to drink: む→み + ます)", "highlight": "飲みます" },
-        { "ja": "話す → 話します", "en": "hanasu → hanashimasu (to speak: す→し + ます)", "highlight": "話します" },
-        { "ja": "待つ → 待ちます", "en": "matsu → machimasu (to wait: つ→ち + ます)", "highlight": "待ちます" }
+        {
+          "ja": "書く → 書きます",
+          "en": "kaku → kakimasu (to write: く→き + ます)",
+          "highlight": "書きます"
+        },
+        {
+          "ja": "飲む → 飲みます",
+          "en": "nomu → nomimasu (to drink: む→み + ます)",
+          "highlight": "飲みます"
+        },
+        {
+          "ja": "話す → 話します",
+          "en": "hanasu → hanashimasu (to speak: す→し + ます)",
+          "highlight": "話します"
+        },
+        {
+          "ja": "待つ → 待ちます",
+          "en": "matsu → machimasu (to wait: つ→ち + ます)",
+          "highlight": "待ちます"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the ます form of 読む (yomu, to read)?",
-          "options": ["読みます (yomimasu)", "読ます (yomasu)", "読むます (yomumasu)"],
+          "options": [
+            "読みます (yomimasu)",
+            "読むます (yomumasu)",
+            "読ます (yomasu)"
+          ],
           "correctIndex": 0,
           "explanation": "読む is an う-verb: change む to み, then add ます → 読みます (yomimasu). The む→み change follows the u-row to i-row pattern."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the ます form of 買う (kau, to buy)?",
-          "options": ["買います (kaimasu)", "買ます (kamasu)", "買うます (kaumasu)"],
-          "correctIndex": 0,
+          "options": [
+            "買うます (kaumasu)",
+            "買います (kaimasu)",
+            "買ます (kamasu)"
+          ],
+          "correctIndex": 1,
           "explanation": "For verbs ending in う, change う to い: 買う → 買い, then add ます → 買います (kaimasu)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you convert an う-verb's ending to make the ます form?",
-          "options": ["Change the final -u syllable to its -i counterpart", "Drop the final syllable entirely", "Add ます directly"],
-          "correctIndex": 0,
+          "options": [
+            "Add ます directly",
+            "Change the final -u syllable to its -i counterpart",
+            "Drop the final syllable entirely"
+          ],
+          "correctIndex": 1,
           "explanation": "The rule for う-verbs: shift the final syllable from the u-column to the i-column (く→き, む→み, す→し, etc.), then add ます."
         }
       ]
@@ -83,31 +141,59 @@
       "explanation": "Japanese has only two truly irregular verbs: する (suru, to do) and 来る (kuru, to come). These do not follow the patterns of either る-verbs or う-verbs and must be memorized individually. する conjugations: します (shimasu, polite), しない (shinai, negative), した (shita, past), して (shite, te-form). 来る conjugations: 来ます (kimasu, polite), 来ない (konai, negative), 来た (kita, past), 来て (kite, te-form). Notice 来る is unusual because the kanji 来 changes pronunciation depending on the form: くる (kuru), きます (kimasu), こない (konai). する is extremely common because it combines with nouns to create compound verbs: 勉強する (benkyō suru, to study), 料理する (ryōri suru, to cook), 運動する (undō suru, to exercise), 旅行する (ryokō suru, to travel).",
       "tip": "The good news: there are only TWO irregular verbs in all of Japanese! Memorize する and 来る and their forms. Pay special attention to 来る — the reading of 来 changes: く (kuru), き (kimasu), こ (konai). Also learn the noun+する pattern, as it creates hundreds of useful verbs.",
       "examples": [
-        { "ja": "勉強する → 勉強します", "en": "benkyō suru → benkyō shimasu (to study → polite form)", "highlight": "します" },
-        { "ja": "来る → 来ます", "en": "kuru → kimasu (to come → polite form — note: く changes to き)", "highlight": "来ます" },
-        { "ja": "明日、友達が来ます。", "en": "A friend will come tomorrow. (来ます = polite form of 来る)", "highlight": "来ます" },
-        { "ja": "毎日、運動します。", "en": "I exercise every day. (運動する = noun + する compound verb)", "highlight": "運動します" }
+        {
+          "ja": "勉強する → 勉強します",
+          "en": "benkyō suru → benkyō shimasu (to study → polite form)",
+          "highlight": "します"
+        },
+        {
+          "ja": "来る → 来ます",
+          "en": "kuru → kimasu (to come → polite form — note: く changes to き)",
+          "highlight": "来ます"
+        },
+        {
+          "ja": "明日、友達が来ます。",
+          "en": "A friend will come tomorrow. (来ます = polite form of 来る)",
+          "highlight": "来ます"
+        },
+        {
+          "ja": "毎日、運動します。",
+          "en": "I exercise every day. (運動する = noun + する compound verb)",
+          "highlight": "運動します"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How many truly irregular verbs does Japanese have?",
-          "options": ["2 (する and 来る)", "5", "Many, like English"],
-          "correctIndex": 0,
+          "options": [
+            "5",
+            "2 (する and 来る)",
+            "Many, like English"
+          ],
+          "correctIndex": 1,
           "explanation": "Japanese has only two irregular verbs: する (to do) and 来る (to come). All other verbs follow either the る-verb or う-verb conjugation patterns."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the polite (ます) form of 来る (kuru)?",
-          "options": ["来ます (kimasu)", "来ります (kurimasu)", "くます (kumasu)"],
-          "correctIndex": 0,
+          "options": [
+            "くます (kumasu)",
+            "来ります (kurimasu)",
+            "来ます (kimasu)"
+          ],
+          "correctIndex": 2,
           "explanation": "来る → 来ます (kimasu). The reading changes from く (ku) to き (ki). This is irregular and must be memorized."
         },
         {
           "type": "multiple-choice",
           "prompt": "How does 勉強する (to study) become polite?",
-          "options": ["勉強します (benkyō shimasu)", "勉強すります (benkyō surimasu)", "勉強ます (benkyō masu)"],
-          "correctIndex": 0,
+          "options": [
+            "勉強ます (benkyō masu)",
+            "勉強します (benkyō shimasu)",
+            "勉強すります (benkyō surimasu)"
+          ],
+          "correctIndex": 1,
           "explanation": "Noun+する compound verbs follow する's conjugation: 勉強する → 勉強します. The noun part stays the same; only する changes to します."
         }
       ]
@@ -118,31 +204,59 @@
       "explanation": "The ます form is the polite present/future tense. Once you have the ます stem, you can create four polite forms. Affirmative present: 食べます (tabemasu — I eat / I will eat). Negative present: 食べません (tabemasen — I do not eat). Affirmative past: 食べました (tabemashita — I ate). Negative past: 食べませんでした (tabemasen deshita — I did not eat). These four forms work identically for all verb groups — once you reach the ます stem, the endings are completely regular. The present tense in Japanese covers both present habitual actions and future actions: 毎日食べます (I eat every day — habitual) and 明日食べます (I will eat tomorrow — future). Context and time words distinguish them.",
       "tip": "Memorize this pattern: ます (present+), ません (present-), ました (past+), ませんでした (past-). This works for every single verb once you have the ます stem. Four endings, no exceptions.",
       "examples": [
-        { "ja": "行きます / 行きません", "en": "ikimasu / ikimasen (I go / I do not go)", "highlight": "ません" },
-        { "ja": "行きました / 行きませんでした", "en": "ikimashita / ikimasen deshita (I went / I did not go)", "highlight": "ました" },
-        { "ja": "毎朝コーヒーを飲みます。", "en": "I drink coffee every morning. (present habitual)", "highlight": "飲みます" },
-        { "ja": "昨日は何も食べませんでした。", "en": "I did not eat anything yesterday. (negative past)", "highlight": "食べませんでした" }
+        {
+          "ja": "行きます / 行きません",
+          "en": "ikimasu / ikimasen (I go / I do not go)",
+          "highlight": "ません"
+        },
+        {
+          "ja": "行きました / 行きませんでした",
+          "en": "ikimashita / ikimasen deshita (I went / I did not go)",
+          "highlight": "ました"
+        },
+        {
+          "ja": "毎朝コーヒーを飲みます。",
+          "en": "I drink coffee every morning. (present habitual)",
+          "highlight": "飲みます"
+        },
+        {
+          "ja": "昨日は何も食べませんでした。",
+          "en": "I did not eat anything yesterday. (negative past)",
+          "highlight": "食べませんでした"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the polite negative past of 飲みます (nomimasu)?",
-          "options": ["飲みませんでした (nomimasen deshita)", "飲みましたない (nomimashita nai)", "飲みないでした (nominai deshita)"],
-          "correctIndex": 0,
+          "options": [
+            "飲みましたない (nomimashita nai)",
+            "飲みませんでした (nomimasen deshita)",
+            "飲みないでした (nominai deshita)"
+          ],
+          "correctIndex": 1,
           "explanation": "Polite negative past: ます stem + ませんでした. 飲み + ませんでした = 飲みませんでした (I did not drink)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 明日行きます mean?",
-          "options": ["I will go tomorrow. (ます covers future actions)", "I went tomorrow.", "I am going now."],
-          "correctIndex": 0,
+          "options": [
+            "I went tomorrow.",
+            "I will go tomorrow. (ます covers future actions)",
+            "I am going now."
+          ],
+          "correctIndex": 1,
           "explanation": "The ます form covers both present habitual and future actions. With a future time word like 明日 (tomorrow), 行きます means 'I will go'."
         },
         {
           "type": "multiple-choice",
           "prompt": "How many polite conjugation endings does the ます system have?",
-          "options": ["4: ます, ません, ました, ませんでした", "2: ます and ました", "6"],
-          "correctIndex": 0,
+          "options": [
+            "6",
+            "4: ます, ません, ました, ませんでした",
+            "2: ます and ました"
+          ],
+          "correctIndex": 1,
           "explanation": "There are four ます-form endings: ます (present affirmative), ません (present negative), ました (past affirmative), ませんでした (past negative). These work for all verbs."
         }
       ]

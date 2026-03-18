@@ -13,31 +13,59 @@
       "explanation": "The Arabic alphabet has 28 letters, all consonants or long vowels. Arabic is written from right to left. Unlike English, Arabic has no uppercase or lowercase distinction. Instead, each letter has up to four forms depending on its position in a word: isolated (standing alone), initial (beginning of a word), medial (middle of a word), and final (end of a word). Most letters connect to the following letter, but six letters — ا (alif), د (dāl), ذ (dhāl), ر (rāʼ), ز (zāy), and و (wāw) — only connect to the letter before them, never to the letter after. This means a new 'segment' starts after these letters. Short vowels (a, i, u) are usually not written — readers infer them from context. When they are written, they appear as small marks above or below the consonant: فَتْحة (fatḥa) for 'a', كَسْرة (kasra) for 'i', and ضَمَّة (ḍamma) for 'u'.",
       "tip": "Start by learning the six non-connecting letters (ا د ذ ر ز و). Once you recognize them, you can better identify where word-internal breaks occur, making it easier to spot individual letters in connected script.",
       "examples": [
-        { "ar": "ب", "en": "bāʼ — the letter 'b'; connects on both sides: initial بـ, medial ـبـ, final ـب", "highlight": "ب" },
-        { "ar": "د", "en": "dāl — the letter 'd'; a non-connector, only connects to the right: final ـد, but never links left", "highlight": "د" },
-        { "ar": "كتاب", "en": "book — notice how ك connects to ت, which connects to ا, but ا does not connect forward to ب", "highlight": "كتاب" },
-        { "ar": "مدرسة", "en": "school — after د (non-connector) a new segment starts with ر, another non-connector", "highlight": "مدرسة" }
+        {
+          "ar": "ب",
+          "en": "bāʼ — the letter 'b'; connects on both sides: initial بـ, medial ـبـ, final ـب",
+          "highlight": "ب"
+        },
+        {
+          "ar": "د",
+          "en": "dāl — the letter 'd'; a non-connector, only connects to the right: final ـد, but never links left",
+          "highlight": "د"
+        },
+        {
+          "ar": "كتاب",
+          "en": "book — notice how ك connects to ت, which connects to ا, but ا does not connect forward to ب",
+          "highlight": "كتاب"
+        },
+        {
+          "ar": "مدرسة",
+          "en": "school — after د (non-connector) a new segment starts with ر, another non-connector",
+          "highlight": "مدرسة"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How many letters are in the Arabic alphabet?",
-          "options": ["28", "26", "32"],
-          "correctIndex": 0,
+          "options": [
+            "26",
+            "28",
+            "32"
+          ],
+          "correctIndex": 1,
           "explanation": "The Arabic alphabet has 28 letters. All are consonants or long vowels. Short vowels are represented by diacritical marks, not separate letters."
         },
         {
           "type": "multiple-choice",
           "prompt": "In which direction is Arabic written?",
-          "options": ["Right to left", "Left to right", "Top to bottom"],
+          "options": [
+            "Right to left",
+            "Left to right",
+            "Top to bottom"
+          ],
           "correctIndex": 0,
           "explanation": "Arabic is written and read from right to left. Numbers, however, are written left to right (the same as in English)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which of these letters is a non-connector (does not connect to the letter after it)?",
-          "options": ["د (dāl)", "ب (bāʼ)", "ن (nūn)"],
-          "correctIndex": 0,
+          "options": [
+            "ن (nūn)",
+            "ب (bāʼ)",
+            "د (dāl)"
+          ],
+          "correctIndex": 2,
           "explanation": "The letter د (dāl) is one of the six non-connecting letters (ا د ذ ر ز و). It connects to the preceding letter but never links forward to the following letter."
         }
       ]
@@ -48,31 +76,59 @@
       "explanation": "Because Arabic letters connect in cursive, each letter changes shape depending on where it appears. The isolated form is the letter by itself. The initial form is used when the letter starts a connected segment. The medial form appears when the letter is between two connecting letters. The final form is used at the end of a connected segment. For example, the letter ع (ʿayn) has four clearly distinct shapes: isolated ع, initial عـ, medial ـعـ, final ـع. Some letters like ب (bāʼ), ت (tāʼ), and ث (thāʼ) share the same base shape and differ only in the number and placement of dots: ب has one dot below, ت has two dots above, and ث has three dots above. Learning these 'dot families' helps you memorize the alphabet faster.",
       "tip": "Group letters by shape families: ب/ت/ث share a base; ج/ح/خ share a base; د/ذ share a base; ر/ز share a base; س/ش share a base; ص/ض share a base; ط/ظ share a base; ع/غ share a base; ف/ق share a base. Learning families reduces 28 letters to about 15 shapes.",
       "examples": [
-        { "ar": "بـ ـبـ ـب ب", "en": "bāʼ in all four forms: initial, medial, final, isolated — one dot below in every form", "highlight": "ب" },
-        { "ar": "تـ ـتـ ـت ت", "en": "tāʼ in all four forms — same shape as bāʼ but with two dots above", "highlight": "ت" },
-        { "ar": "عـ ـعـ ـع ع", "en": "ʿayn in all four forms — notice how the shape changes significantly in each position", "highlight": "ع" },
-        { "ar": "بنت", "en": "girl — بـ (initial bāʼ) + ـنـ (medial nūn) + ـت (final tāʼ)", "highlight": "بنت" }
+        {
+          "ar": "بـ ـبـ ـب ب",
+          "en": "bāʼ in all four forms: initial, medial, final, isolated — one dot below in every form",
+          "highlight": "ب"
+        },
+        {
+          "ar": "تـ ـتـ ـت ت",
+          "en": "tāʼ in all four forms — same shape as bāʼ but with two dots above",
+          "highlight": "ت"
+        },
+        {
+          "ar": "عـ ـعـ ـع ع",
+          "en": "ʿayn in all four forms — notice how the shape changes significantly in each position",
+          "highlight": "ع"
+        },
+        {
+          "ar": "بنت",
+          "en": "girl — بـ (initial bāʼ) + ـنـ (medial nūn) + ـت (final tāʼ)",
+          "highlight": "بنت"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How many positional forms can an Arabic letter have?",
-          "options": ["Four: isolated, initial, medial, final", "Two: uppercase and lowercase", "Three: beginning, middle, end"],
-          "correctIndex": 0,
+          "options": [
+            "Three: beginning, middle, end",
+            "Four: isolated, initial, medial, final",
+            "Two: uppercase and lowercase"
+          ],
+          "correctIndex": 1,
           "explanation": "Arabic letters have four forms: isolated (standing alone), initial (start of a segment), medial (middle of a segment), and final (end of a segment). Non-connecting letters have only isolated and final forms."
         },
         {
           "type": "multiple-choice",
           "prompt": "The letters ب, ت, and ث differ from each other only by:",
-          "options": ["The number and position of dots", "Their overall shape", "Their size"],
-          "correctIndex": 0,
+          "options": [
+            "Their overall shape",
+            "Their size",
+            "The number and position of dots"
+          ],
+          "correctIndex": 2,
           "explanation": "These three letters share the same base shape. They differ only in dots: ب has one dot below, ت has two dots above, and ث has three dots above. Recognizing these 'dot families' makes learning the alphabet much faster."
         },
         {
           "type": "multiple-choice",
           "prompt": "In the word بنت (girl), which form of the letter ب is used?",
-          "options": ["Initial form (بـ)", "Isolated form (ب)", "Medial form (ـبـ)"],
-          "correctIndex": 0,
+          "options": [
+            "Medial form (ـبـ)",
+            "Initial form (بـ)",
+            "Isolated form (ب)"
+          ],
+          "correctIndex": 1,
           "explanation": "Since ب is the first letter in بنت and connects to the next letter ن, it appears in its initial form بـ. The letter ت at the end appears in its final form ـت."
         }
       ]
@@ -83,31 +139,63 @@
       "explanation": "Arabic has several sounds that do not exist in English. The emphatic consonants ص (ṣād), ض (ḍād), ط (ṭāʼ), and ظ (ẓāʼ) are produced by pressing the tongue against the roof of the mouth while constricting the throat — they sound 'heavier' or 'darker' than their non-emphatic counterparts س, د, ت, ذ. The letter ع (ʿayn) is a voiced constriction deep in the throat — often described as a 'squeeze' in the throat with vibration. The letter غ (ghayn) is like a gargled French 'r'. The letter ح (ḥāʼ) is a strong, breathy 'h' produced from the throat — much stronger than English 'h'. The letter خ (khāʼ) sounds like the 'ch' in Scottish 'loch' or German 'Bach'. The letter ق (qāf) is a 'k' sound produced at the very back of the throat, at the uvula. The hamza ء is a glottal stop, like the catch in 'uh-oh'.",
       "tip": "For ع (ʿayn), try saying 'ah' while squeezing the muscles at the back of your throat. For ح (ḥāʼ), exhale heavily as if fogging a mirror, but from deeper in the throat. These two sounds are the most challenging for English speakers — practice them often.",
       "examples": [
-        { "ar": "عين", "en": "eye — starts with ع (ʿayn), the deep throaty voiced sound", "highlight": "ع" },
-        { "ar": "حليب", "en": "milk — starts with ح (ḥāʼ), a strong breathy 'h' from the throat", "highlight": "ح" },
-        { "ar": "خبز", "en": "bread — starts with خ (khāʼ), like Scottish 'ch' in 'loch'", "highlight": "خ" },
-        { "ar": "قلب", "en": "heart — starts with ق (qāf), a deep 'k' from the uvula", "highlight": "ق" },
-        { "ar": "صباح", "en": "morning — starts with ص (ṣād), an emphatic 's' with a heavier, darker quality", "highlight": "ص" }
+        {
+          "ar": "عين",
+          "en": "eye — starts with ع (ʿayn), the deep throaty voiced sound",
+          "highlight": "ع"
+        },
+        {
+          "ar": "حليب",
+          "en": "milk — starts with ح (ḥāʼ), a strong breathy 'h' from the throat",
+          "highlight": "ح"
+        },
+        {
+          "ar": "خبز",
+          "en": "bread — starts with خ (khāʼ), like Scottish 'ch' in 'loch'",
+          "highlight": "خ"
+        },
+        {
+          "ar": "قلب",
+          "en": "heart — starts with ق (qāf), a deep 'k' from the uvula",
+          "highlight": "ق"
+        },
+        {
+          "ar": "صباح",
+          "en": "morning — starts with ص (ṣād), an emphatic 's' with a heavier, darker quality",
+          "highlight": "ص"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which Arabic letter represents a deep throaty voiced sound with no English equivalent?",
-          "options": ["ع (ʿayn)", "ه (hāʼ)", "ك (kāf)"],
+          "options": [
+            "ع (ʿayn)",
+            "ك (kāf)",
+            "ه (hāʼ)"
+          ],
           "correctIndex": 0,
           "explanation": "The letter ع (ʿayn) is produced by constricting the muscles deep in the throat while voicing — it has no equivalent in English. It is one of the most distinctive sounds of Arabic and takes practice to master."
         },
         {
           "type": "multiple-choice",
           "prompt": "What makes the emphatic consonants (ص ض ط ظ) different from their non-emphatic counterparts (س د ت ذ)?",
-          "options": ["They are produced with the tongue pressed against the palate and the throat constricted, giving a heavier sound", "They are simply louder versions of the same sounds", "They are always doubled"],
-          "correctIndex": 0,
+          "options": [
+            "They are simply louder versions of the same sounds",
+            "They are always doubled",
+            "They are produced with the tongue pressed against the palate and the throat constricted, giving a heavier sound"
+          ],
+          "correctIndex": 2,
           "explanation": "Emphatic consonants are articulated with the tongue pressed against the upper palate and the pharynx constricted. This produces a 'heavier' or 'darker' quality. For example, ص (ṣād) sounds like a deep, dark 's', while س (sīn) is a regular, lighter 's'."
         },
         {
           "type": "multiple-choice",
           "prompt": "The letter خ (khāʼ) sounds most like which of these?",
-          "options": ["The 'ch' in Scottish 'loch'", "The 'k' in 'kite'", "The 'sh' in 'ship'"],
+          "options": [
+            "The 'ch' in Scottish 'loch'",
+            "The 'sh' in 'ship'",
+            "The 'k' in 'kite'"
+          ],
           "correctIndex": 0,
           "explanation": "خ (khāʼ) is a voiceless velar/uvular fricative, similar to the 'ch' in Scottish 'loch' or German 'Bach'. It is not a 'k' sound (that would be ك kāf) nor a 'sh' sound (that would be ش shīn)."
         }

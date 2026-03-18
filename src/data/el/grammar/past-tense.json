@@ -4,7 +4,9 @@
   "nameEl": "Αόριστος",
   "icon": "⏪",
   "tier": "A2",
-  "prerequisites": ["present-tense"],
+  "prerequisites": [
+    "present-tense"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,33 +15,69 @@
       "explanation": "The aorist (αόριστος) is the most common past tense in Greek. It expresses a completed, single action in the past — equivalent to the English simple past ('I wrote', 'she left', 'they ate').\n\nFORMATION (Group A / -ω verbs):\nThe basic pattern: remove the present -ω ending, add the augment ε- (or a vowel change at the start), and attach the aorist endings:\n\n  Singular:  -α (I) · -ες (you) · -ε (he/she/it)\n  Plural:    -αμε (we) · -ατε (you pl.) · -αν (they)\n\nEXAMPLE — γράφω (I write) → aorist: έγραψα\n  έγραψα   (I wrote)\n  έγραψες  (you wrote)\n  έγραψε   (he/she wrote)\n  γράψαμε  (we wrote)\n  γράψατε  (you all wrote)\n  έγραψαν  (they wrote)\n\nNote: The augment ε- appears on stressed forms (1st/2nd/3rd singular and 3rd plural); the unstressed plural forms (1st/2nd plural) drop the ε- augment because the stress falls elsewhere.\n\nMany verbs have irregular aorist stems that must be learned individually. The aorist stem often differs substantially from the present stem.",
       "tip": "The key signal of the aorist is the -α ending in the first person singular. If you hear or see a verb ending in -α, -ες, -ε, -αμε, -ατε, -αν, it is almost certainly aorist (past tense).",
       "examples": [
-        { "el": "Έγραψα ένα γράμμα.", "en": "I wrote a letter.", "highlight": "Έγραψα" },
-        { "el": "Μίλησες με τον Νίκο χθες;", "en": "Did you speak with Nikos yesterday?", "highlight": "Μίλησες" },
-        { "el": "Η Μαρία έφτασε αργά.", "en": "Maria arrived late.", "highlight": "έφτασε" },
-        { "el": "Αγοράσαμε ψωμί από τον φούρνο.", "en": "We bought bread from the bakery.", "highlight": "Αγοράσαμε" },
-        { "el": "Δουλέψατε πολύ σήμερα.", "en": "You (all) worked a lot today.", "highlight": "Δουλέψατε" },
-        { "el": "Τα παιδιά έπαιξαν στο πάρκο.", "en": "The children played in the park.", "highlight": "έπαιξαν" }
+        {
+          "el": "Έγραψα ένα γράμμα.",
+          "en": "I wrote a letter.",
+          "highlight": "Έγραψα"
+        },
+        {
+          "el": "Μίλησες με τον Νίκο χθες;",
+          "en": "Did you speak with Nikos yesterday?",
+          "highlight": "Μίλησες"
+        },
+        {
+          "el": "Η Μαρία έφτασε αργά.",
+          "en": "Maria arrived late.",
+          "highlight": "έφτασε"
+        },
+        {
+          "el": "Αγοράσαμε ψωμί από τον φούρνο.",
+          "en": "We bought bread from the bakery.",
+          "highlight": "Αγοράσαμε"
+        },
+        {
+          "el": "Δουλέψατε πολύ σήμερα.",
+          "en": "You (all) worked a lot today.",
+          "highlight": "Δουλέψατε"
+        },
+        {
+          "el": "Τα παιδιά έπαιξαν στο πάρκο.",
+          "en": "The children played in the park.",
+          "highlight": "έπαιξαν"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct aorist (past tense) of 'γράφω' (I write) in the first person singular?",
-          "options": ["έγραψα", "γράφω", "γράφα"],
+          "options": [
+            "έγραψα",
+            "γράφα",
+            "γράφω"
+          ],
           "correctIndex": 0,
           "explanation": "'Έγραψα' is the aorist of γράφω. The stem changes from γραφ- to γραψ- and the augment ε- is added: έγραψα (I wrote)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What do the aorist endings -α, -ες, -ε, -αμε, -ατε, -αν express?",
-          "options": ["A completed past action", "An ongoing present action", "A future intention"],
+          "options": [
+            "A completed past action",
+            "An ongoing present action",
+            "A future intention"
+          ],
           "correctIndex": 0,
           "explanation": "The aorist expresses a completed, single past action — 'I did something'. It corresponds to the English simple past."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence is in the aorist tense?",
-          "options": ["Αγοράσαμε ψωμί.", "Αγοράζουμε ψωμί.", "Θα αγοράσουμε ψωμί."],
-          "correctIndex": 0,
+          "options": [
+            "Θα αγοράσουμε ψωμί.",
+            "Αγοράζουμε ψωμί.",
+            "Αγοράσαμε ψωμί."
+          ],
+          "correctIndex": 2,
           "explanation": "'Αγοράσαμε' (we bought) is aorist. 'Αγοράζουμε' is present tense, and 'θα αγοράσουμε' is future tense."
         }
       ]
@@ -50,33 +88,69 @@
       "explanation": "Many of the most frequently used Greek verbs have irregular aorist forms. Their past tense stems bear little resemblance to the present tense stem and must be memorised individually. These are among the most important verbs in the language.\n\nKEY IRREGULAR VERBS:\n  είμαι  (I am)     → ήμουν   (I was)\n  έχω    (I have)   → είχα    (I had)\n  πάω    (I go)     → πήγα    (I went)\n  λέω    (I say)    → είπα    (I said)\n  βλέπω  (I see)    → είδα    (I saw)\n  τρώω   (I eat)    → έφαγα   (I ate)\n  πίνω   (I drink)  → ήπια    (I drank)\n  έρχομαι (I come)  → ήρθα    (I came)\n\nThese verbs are irregular because they derive from ancient Greek roots or have undergone historical sound changes. Mastering these eight verbs will allow you to talk about the past in a wide range of everyday situations.",
       "tip": "Notice that several irregular aorists start with η- (ήμουν, ήπια, ήρθα) or ει- (είχα, είπα, είδα). These vowel augments signal the past tense even when the stem is completely different from the present.",
       "examples": [
-        { "el": "Ήμουν στο σπίτι χθες βράδυ.", "en": "I was at home yesterday evening.", "highlight": "Ήμουν" },
-        { "el": "Είχα πολλή δουλειά την περασμένη εβδομάδα.", "en": "I had a lot of work last week.", "highlight": "Είχα" },
-        { "el": "Πήγαμε στην παραλία το Σάββατο.", "en": "We went to the beach on Saturday.", "highlight": "Πήγαμε" },
-        { "el": "Τι είπες; Δεν άκουσα.", "en": "What did you say? I didn't hear.", "highlight": "είπες" },
-        { "el": "Είδα ένα ωραίο φιλμ χθες.", "en": "I saw a nice film yesterday.", "highlight": "Είδα" },
-        { "el": "Ήρθε αργά αλλά έφτασε.", "en": "He came late but he arrived.", "highlight": "Ήρθε" }
+        {
+          "el": "Ήμουν στο σπίτι χθες βράδυ.",
+          "en": "I was at home yesterday evening.",
+          "highlight": "Ήμουν"
+        },
+        {
+          "el": "Είχα πολλή δουλειά την περασμένη εβδομάδα.",
+          "en": "I had a lot of work last week.",
+          "highlight": "Είχα"
+        },
+        {
+          "el": "Πήγαμε στην παραλία το Σάββατο.",
+          "en": "We went to the beach on Saturday.",
+          "highlight": "Πήγαμε"
+        },
+        {
+          "el": "Τι είπες; Δεν άκουσα.",
+          "en": "What did you say? I didn't hear.",
+          "highlight": "είπες"
+        },
+        {
+          "el": "Είδα ένα ωραίο φιλμ χθες.",
+          "en": "I saw a nice film yesterday.",
+          "highlight": "Είδα"
+        },
+        {
+          "el": "Ήρθε αργά αλλά έφτασε.",
+          "en": "He came late but he arrived.",
+          "highlight": "Ήρθε"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the aorist (past) form of 'πάω' (I go)?",
-          "options": ["πήγα", "πήγαω", "έπαα"],
-          "correctIndex": 0,
+          "options": [
+            "πήγαω",
+            "έπαα",
+            "πήγα"
+          ],
+          "correctIndex": 2,
           "explanation": "'Πήγα' is the irregular aorist of πάω (I go). The stem changes completely: πάω → πήγα (I went)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I saw him at the market'?",
-          "options": ["Τον είδα στην αγορά.", "Τον βλέπω στην αγορά.", "Τον έβλεπα στην αγορά."],
-          "correctIndex": 0,
+          "options": [
+            "Τον έβλεπα στην αγορά.",
+            "Τον είδα στην αγορά.",
+            "Τον βλέπω στην αγορά."
+          ],
+          "correctIndex": 1,
           "explanation": "'Είδα' is the irregular aorist of βλέπω (I see): είδα = I saw. So 'τον είδα στην αγορά' = I saw him at the market."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which verb pair is INCORRECTLY matched (present → aorist)?",
-          "options": ["λέω → είπα", "τρώω → έφαγα", "πίνω → έπινα"],
-          "correctIndex": 2,
+          "options": [
+            "πίνω → έπινα",
+            "τρώω → έφαγα",
+            "λέω → είπα"
+          ],
+          "correctIndex": 0,
           "explanation": "'Έπινα' is the imperfect of πίνω, not the aorist. The correct aorist of πίνω (I drink) is 'ήπια' (I drank)."
         }
       ]
@@ -87,37 +161,69 @@
       "explanation": "Greek distinguishes two main past tenses that English merges into the simple past:\n\nAORIST (Αόριστος) — a single, completed past action.\n  'I wrote the letter.' — a specific, finished event.\n\nIMPERFECT (Παρατατικός) — an ongoing, habitual, or repeated past action.\n  'I was writing the letter.' / 'I used to write letters.' — something in progress or done repeatedly.\n\nIMPERFECT FORMATION:\nAugment ε- + present stem + endings: -α, -ες, -ε, -αμε, -ατε, -αν\n\nEXAMPLE — γράφω (I write):\n  Imperfect: έγραφα (I was writing / I used to write)\n  Aorist:    έγραψα (I wrote — once, completed)\n\nCONTRASTING EXAMPLES:\n  Έγραψα ένα γράμμα. = I wrote a letter. (aorist — done)\n  Έγραφα όταν χτύπησε το τηλέφωνο. = I was writing when the phone rang. (imperfect — in progress)\n\n  Πήγα στο σχολείο. = I went to school. (aorist — specific occasion)\n  Πήγαινα στο σχολείο κάθε μέρα. = I used to go to school every day. (imperfect — habitual)\n\nA useful rule: if you can say 'used to' or 'was doing' in English, the imperfect fits. If the action is a single completed event, use the aorist.",
       "tip": "The imperfect and aorist share the same endings (-α, -ες, -ε, -αμε, -ατε, -αν). The difference is in the stem: aorist has a special past stem (often with -σ- or -ξ-), while the imperfect uses the present stem with the augment.",
       "examples": [
-        { "el": "Έγραψα ένα γράμμα χθες.", "en": "I wrote a letter yesterday. (aorist — single completed action)", "highlight": "Έγραψα" },
-        { "el": "Έγραφα ένα γράμμα όταν ήρθες.", "en": "I was writing a letter when you arrived. (imperfect — action in progress)", "highlight": "Έγραφα" },
-        { "el": "Πήγα στο σούπερ μάρκετ το απόγευμα.", "en": "I went to the supermarket in the afternoon. (aorist — one specific trip)", "highlight": "Πήγα" },
-        { "el": "Πήγαινα στη δουλειά με τα πόδια κάθε μέρα.", "en": "I used to walk to work every day. (imperfect — habitual action)", "highlight": "Πήγαινα" },
-        { "el": "Διάβασε το βιβλίο σε δύο μέρες.", "en": "He read the book in two days. (aorist — completed)", "highlight": "Διάβασε" },
-        { "el": "Διάβαζε κάθε βράδυ πριν κοιμηθεί.", "en": "He used to read every evening before going to sleep. (imperfect — habitual)", "highlight": "Διάβαζε" }
+        {
+          "el": "Έγραψα ένα γράμμα χθες.",
+          "en": "I wrote a letter yesterday. (aorist — single completed action)",
+          "highlight": "Έγραψα"
+        },
+        {
+          "el": "Έγραφα ένα γράμμα όταν ήρθες.",
+          "en": "I was writing a letter when you arrived. (imperfect — action in progress)",
+          "highlight": "Έγραφα"
+        },
+        {
+          "el": "Πήγα στο σούπερ μάρκετ το απόγευμα.",
+          "en": "I went to the supermarket in the afternoon. (aorist — one specific trip)",
+          "highlight": "Πήγα"
+        },
+        {
+          "el": "Πήγαινα στη δουλειά με τα πόδια κάθε μέρα.",
+          "en": "I used to walk to work every day. (imperfect — habitual action)",
+          "highlight": "Πήγαινα"
+        },
+        {
+          "el": "Διάβασε το βιβλίο σε δύο μέρες.",
+          "en": "He read the book in two days. (aorist — completed)",
+          "highlight": "Διάβασε"
+        },
+        {
+          "el": "Διάβαζε κάθε βράδυ πριν κοιμηθεί.",
+          "en": "He used to read every evening before going to sleep. (imperfect — habitual)",
+          "highlight": "Διάβαζε"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which tense would you use to say 'I was eating when she called'?",
-          "options": ["Imperfect — έτρωγα (I was eating)", "Aorist — έφαγα (I ate)", "Present — τρώω (I eat)"],
+          "options": [
+            "Imperfect — έτρωγα (I was eating)",
+            "Present — τρώω (I eat)",
+            "Aorist — έφαγα (I ate)"
+          ],
           "correctIndex": 0,
           "explanation": "'I was eating' describes an action in progress when interrupted — this is the imperfect: έτρωγα. The aorist (έφαγα) would mean the eating was completed."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the imperfect correctly to express a habitual past action?",
-          "options": ["Πήγαινε στην παραλία κάθε καλοκαίρι.", "Πήγε στην παραλία χθες.", "Θα πάει στην παραλία αύριο."],
-          "correctIndex": 0,
+          "options": [
+            "Θα πάει στην παραλία αύριο.",
+            "Πήγε στην παραλία χθες.",
+            "Πήγαινε στην παραλία κάθε καλοκαίρι."
+          ],
+          "correctIndex": 2,
           "explanation": "'Πήγαινε' is imperfect and means 'he/she used to go' — perfect for a repeated/habitual action. 'Πήγε' (aorist) = went once. 'Θα πάει' = will go (future)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the key difference between the aorist and the imperfect in Greek?",
           "options": [
+            "Aorist = formal; Imperfect = informal",
             "Aorist = completed single action; Imperfect = ongoing or repeated past action",
-            "Aorist = past; Imperfect = present",
-            "Aorist = formal; Imperfect = informal"
+            "Aorist = past; Imperfect = present"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "The aorist expresses a single completed event ('I wrote the letter'). The imperfect expresses ongoing, habitual, or repeated past actions ('I was writing' / 'I used to write'). Both are past tenses."
         }
       ]

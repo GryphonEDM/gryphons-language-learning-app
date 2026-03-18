@@ -4,7 +4,10 @@
   "nameDe": "Präpositionen: Akkusativ, Dativ & Wechselpräpositionen",
   "icon": "📍",
   "tier": "A2",
-  "prerequisites": ["accusative-case", "dative-case"],
+  "prerequisites": [
+    "cases-nominative-accusative",
+    "dative-case"
+  ],
   "estimatedMinutes": 30,
   "sections": [
     {
@@ -13,73 +16,133 @@
       "explanation": "These prepositions ALWAYS take the accusative case: durch (through), für (for), gegen (against/around), ohne (without), um (around/at). A helpful mnemonic is 'dogs fight gorillas on umbrellas' — but the real key is memorizing the list. The noun or pronoun that follows must be in accusative case: den (masc), die (fem), das (neut), die (plural).",
       "tip": "Use the acronym DOGFU: Durch, Ohne, Gegen, Für, Um — all accusative, always.",
       "examples": [
-        { "de": "Er fährt durch den Tunnel.", "en": "He drives through the tunnel.", "highlight": "durch den" },
-        { "de": "Das Geschenk ist für meinen Vater.", "en": "The gift is for my father.", "highlight": "für meinen" },
-        { "de": "Ich bin gegen den Krieg.", "en": "I am against the war.", "highlight": "gegen den" },
-        { "de": "Sie geht ohne ihren Bruder.", "en": "She goes without her brother.", "highlight": "ohne ihren" },
-        { "de": "Wir sitzen um den Tisch.", "en": "We sit around the table.", "highlight": "um den" }
+        {
+          "de": "Er fährt durch den Tunnel.",
+          "en": "He drives through the tunnel.",
+          "highlight": "durch den"
+        },
+        {
+          "de": "Das Geschenk ist für meinen Vater.",
+          "en": "The gift is for my father.",
+          "highlight": "für meinen"
+        },
+        {
+          "de": "Ich bin gegen den Krieg.",
+          "en": "I am against the war.",
+          "highlight": "gegen den"
+        },
+        {
+          "de": "Sie geht ohne ihren Bruder.",
+          "en": "She goes without her brother.",
+          "highlight": "ohne ihren"
+        },
+        {
+          "de": "Wir sitzen um den Tisch.",
+          "en": "We sit around the table.",
+          "highlight": "um den"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which preposition always takes the accusative case?",
-          "options": ["mit", "für", "bei", "nach"],
-          "correctIndex": 1,
+          "options": [
+            "für",
+            "nach",
+            "mit",
+            "bei"
+          ],
+          "correctIndex": 0,
           "explanation": "'für' (for) is an accusative preposition. 'mit', 'bei', and 'nach' are dative prepositions."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Buch ist ___ dich.",
-          "acceptedAnswers": ["für"],
+          "acceptedAnswers": [
+            "für"
+          ],
           "hint": "This means 'for you' — use an accusative preposition."
         },
         {
           "type": "multiple-choice",
           "prompt": "Ich fahre ___ den Park. (I drive through the park.)",
-          "options": ["durch", "aus", "nach", "von"],
+          "options": [
+            "durch",
+            "von",
+            "aus",
+            "nach"
+          ],
           "correctIndex": 0,
           "explanation": "'durch' means 'through' and takes accusative. The others are dative prepositions."
         },
         {
           "type": "fill-blank",
           "prompt": "Sie geht ___ einen Regenschirm in den Regen.",
-          "acceptedAnswers": ["ohne"],
+          "acceptedAnswers": [
+            "ohne"
+          ],
           "hint": "'without' — takes accusative case."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the accusative form of 'der Mann' after 'für'?",
-          "options": ["für der Mann", "für dem Mann", "für den Mann", "für die Mann"],
-          "correctIndex": 2,
+          "options": [
+            "für der Mann",
+            "für die Mann",
+            "für dem Mann",
+            "für den Mann"
+          ],
+          "correctIndex": 3,
           "explanation": "Masculine nouns change from 'der' to 'den' in accusative case. So 'für den Mann' is correct."
         },
         {
           "type": "fill-blank",
           "prompt": "Wir kämpfen ___ die Freiheit.",
-          "acceptedAnswers": ["für"],
+          "acceptedAnswers": [
+            "für"
+          ],
           "hint": "We fight 'for' freedom — an accusative preposition."
         },
         {
           "type": "matching",
           "prompt": "Match each accusative preposition to its English meaning:",
           "pairs": [
-            { "left": "durch", "right": "through" },
-            { "left": "für", "right": "for" },
-            { "left": "gegen", "right": "against" },
-            { "left": "ohne", "right": "without" }
+            {
+              "left": "durch",
+              "right": "through"
+            },
+            {
+              "left": "für",
+              "right": "for"
+            },
+            {
+              "left": "gegen",
+              "right": "against"
+            },
+            {
+              "left": "ohne",
+              "right": "without"
+            }
           ]
         },
         {
           "type": "multiple-choice",
           "prompt": "Der Zug fährt ___ den Bahnhof. (The train goes around the station.)",
-          "options": ["mit", "bei", "um", "nach"],
-          "correctIndex": 2,
+          "options": [
+            "nach",
+            "um",
+            "bei",
+            "mit"
+          ],
+          "correctIndex": 1,
           "explanation": "'um' means 'around' and takes accusative. Here it describes movement around the station."
         },
         {
           "type": "fill-blank",
           "prompt": "Ich bin ___ diesen Plan. (I am against this plan.)",
-          "acceptedAnswers": ["gegen"],
+          "acceptedAnswers": [
+            "gegen"
+          ],
           "hint": "'against' — always accusative."
         }
       ]
@@ -90,80 +153,145 @@
       "explanation": "These prepositions ALWAYS take the dative case: aus (from/out of), bei (at/near/with), mit (with), nach (after/to), seit (since/for), von (from/of), zu (to), gegenüber (opposite/across from). In dative, articles change: der → dem (masc), die → der (fem), das → dem (neut), die → den + -n (plural). Gegenüber can come before or after its noun.",
       "tip": "Remember dative prepositions with the rhyme: 'aus, bei, mit, nach, seit, von, zu' — seven core datives to know by heart. Add 'gegenüber' as an eighth.",
       "examples": [
-        { "de": "Er kommt aus der Schweiz.", "en": "He comes from Switzerland.", "highlight": "aus der" },
-        { "de": "Ich wohne bei meiner Tante.", "en": "I live with/at my aunt's.", "highlight": "bei meiner" },
-        { "de": "Sie fährt mit dem Bus.", "en": "She travels by bus.", "highlight": "mit dem" },
-        { "de": "Ich lerne Deutsch seit einem Jahr.", "en": "I have been learning German for a year.", "highlight": "seit einem" },
-        { "de": "Das Café ist gegenüber dem Bahnhof.", "en": "The café is opposite the station.", "highlight": "gegenüber dem" }
+        {
+          "de": "Er kommt aus der Schweiz.",
+          "en": "He comes from Switzerland.",
+          "highlight": "aus der"
+        },
+        {
+          "de": "Ich wohne bei meiner Tante.",
+          "en": "I live with/at my aunt's.",
+          "highlight": "bei meiner"
+        },
+        {
+          "de": "Sie fährt mit dem Bus.",
+          "en": "She travels by bus.",
+          "highlight": "mit dem"
+        },
+        {
+          "de": "Ich lerne Deutsch seit einem Jahr.",
+          "en": "I have been learning German for a year.",
+          "highlight": "seit einem"
+        },
+        {
+          "de": "Das Café ist gegenüber dem Bahnhof.",
+          "en": "The café is opposite the station.",
+          "highlight": "gegenüber dem"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which preposition is a dative preposition?",
-          "options": ["durch", "für", "gegen", "mit"],
-          "correctIndex": 3,
+          "options": [
+            "mit",
+            "für",
+            "gegen",
+            "durch"
+          ],
+          "correctIndex": 0,
           "explanation": "'mit' (with) is always dative. The others (durch, für, gegen) are accusative prepositions."
         },
         {
           "type": "fill-blank",
           "prompt": "Ich fahre ___ dem Fahrrad zur Arbeit.",
-          "acceptedAnswers": ["mit"],
+          "acceptedAnswers": [
+            "mit"
+          ],
           "hint": "By bicycle — use the dative preposition meaning 'with/by'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Er wohnt ___ seiner Mutter. (He lives with his mother.)",
-          "options": ["für", "bei", "durch", "um"],
-          "correctIndex": 1,
+          "options": [
+            "durch",
+            "um",
+            "für",
+            "bei"
+          ],
+          "correctIndex": 3,
           "explanation": "'bei' means 'at/with' when referring to staying or living somewhere. It takes dative: 'seiner Mutter'."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Kind kommt ___ der Schule nach Hause.",
-          "acceptedAnswers": ["aus"],
+          "acceptedAnswers": [
+            "aus"
+          ],
           "hint": "'out of' or 'from' a place — dative preposition."
         },
         {
           "type": "multiple-choice",
           "prompt": "Ich lerne Deutsch ___ drei Monaten.",
-          "options": ["in", "vor", "seit", "bis"],
-          "correctIndex": 2,
+          "options": [
+            "seit",
+            "vor",
+            "in",
+            "bis"
+          ],
+          "correctIndex": 0,
           "explanation": "'seit' (since/for) is used with ongoing actions that started in the past and continue to the present. It takes dative."
         },
         {
           "type": "matching",
           "prompt": "Match each dative preposition to its primary meaning:",
           "pairs": [
-            { "left": "aus", "right": "out of / from" },
-            { "left": "seit", "right": "since / for (duration)" },
-            { "left": "zu", "right": "to (a place or person)" },
-            { "left": "von", "right": "from / of" }
+            {
+              "left": "aus",
+              "right": "out of / from"
+            },
+            {
+              "left": "seit",
+              "right": "since / for (duration)"
+            },
+            {
+              "left": "zu",
+              "right": "to (a place or person)"
+            },
+            {
+              "left": "von",
+              "right": "from / of"
+            }
           ]
         },
         {
           "type": "fill-blank",
           "prompt": "Ich gehe ___ meinem Freund. (I'm going to my friend's place.)",
-          "acceptedAnswers": ["zu"],
+          "acceptedAnswers": [
+            "zu"
+          ],
           "hint": "'to' a person or place — always dative."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct dative form? Das Geschäft ist gegenüber ___.",
-          "options": ["der Schule", "die Schule", "das Schule", "den Schule"],
-          "correctIndex": 0,
+          "options": [
+            "den Schule",
+            "der Schule",
+            "die Schule",
+            "das Schule"
+          ],
+          "correctIndex": 1,
           "explanation": "'Schule' is feminine. In dative, feminine articles change from 'die' to 'der'. So 'gegenüber der Schule' is correct."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Paket ist ___ meiner Schwester. (The package is from my sister.)",
-          "acceptedAnswers": ["von"],
+          "acceptedAnswers": [
+            "von"
+          ],
           "hint": "'from' a person — use this dative preposition."
         },
         {
           "type": "multiple-choice",
           "prompt": "Nach dem Essen gehen wir spazieren. What does 'nach' mean here?",
-          "options": ["to", "from", "after", "with"],
-          "correctIndex": 2,
+          "options": [
+            "after",
+            "from",
+            "to",
+            "with"
+          ],
+          "correctIndex": 0,
           "explanation": "'nach' can mean 'to' (with place names) or 'after' (with time). Here it means 'after the meal'."
         }
       ]
@@ -174,30 +302,62 @@
       "explanation": "These 9 prepositions take EITHER accusative OR dative depending on meaning: an, auf, in, über, unter, vor, hinter, neben, zwischen. The key rule: ACCUSATIVE = movement/direction (Wohin? Where to?), DATIVE = location/position (Wo? Where?). For example: 'Ich hänge das Bild an die Wand' (accusative — I'm hanging it) vs. 'Das Bild hängt an der Wand' (dative — it's hanging there).",
       "tip": "Ask yourself: Is something MOVING to a place (→ accusative) or STAYING at a place (→ dative)? Movement = accusative, Location = dative. The question 'Wohin?' triggers accusative; 'Wo?' triggers dative.",
       "examples": [
-        { "de": "Das Buch liegt auf dem Tisch.", "en": "The book is lying on the table. (location → dative)", "highlight": "auf dem" },
-        { "de": "Ich lege das Buch auf den Tisch.", "en": "I put the book on the table. (movement → accusative)", "highlight": "auf den" },
-        { "de": "Die Katze sitzt in der Box.", "en": "The cat is sitting in the box. (location → dative)", "highlight": "in der" },
-        { "de": "Die Katze springt in die Box.", "en": "The cat jumps into the box. (movement → accusative)", "highlight": "in die" },
-        { "de": "Das Auto steht vor dem Haus.", "en": "The car is parked in front of the house. (location → dative)", "highlight": "vor dem" }
+        {
+          "de": "Das Buch liegt auf dem Tisch.",
+          "en": "The book is lying on the table. (location → dative)",
+          "highlight": "auf dem"
+        },
+        {
+          "de": "Ich lege das Buch auf den Tisch.",
+          "en": "I put the book on the table. (movement → accusative)",
+          "highlight": "auf den"
+        },
+        {
+          "de": "Die Katze sitzt in der Box.",
+          "en": "The cat is sitting in the box. (location → dative)",
+          "highlight": "in der"
+        },
+        {
+          "de": "Die Katze springt in die Box.",
+          "en": "The cat jumps into the box. (movement → accusative)",
+          "highlight": "in die"
+        },
+        {
+          "de": "Das Auto steht vor dem Haus.",
+          "en": "The car is parked in front of the house. (location → dative)",
+          "highlight": "vor dem"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Ich stelle das Glas ___ den Tisch. (I place the glass onto the table.)",
-          "options": ["auf dem", "auf den", "auf der", "auf die"],
-          "correctIndex": 1,
+          "options": [
+            "auf der",
+            "auf dem",
+            "auf die",
+            "auf den"
+          ],
+          "correctIndex": 3,
           "explanation": "'stellen' indicates movement/placement (Wohin?), so accusative is required. 'Tisch' is masculine, so 'den Tisch' is correct."
         },
         {
           "type": "fill-blank",
           "prompt": "Die Schlüssel liegen ___ dem Tisch. (The keys are lying on the table — location)",
-          "acceptedAnswers": ["auf"],
+          "acceptedAnswers": [
+            "auf"
+          ],
           "hint": "Location, not movement — this two-way preposition takes dative here."
         },
         {
           "type": "multiple-choice",
           "prompt": "Das Kind läuft ___ das Zimmer. (The child runs into the room.)",
-          "options": ["in dem", "in der", "in das", "in die"],
+          "options": [
+            "in dem",
+            "in der",
+            "in das",
+            "in die"
+          ],
           "correctIndex": 2,
           "explanation": "Running into the room = movement (Wohin?), so accusative. 'Zimmer' is neuter, so 'in das Zimmer' (or 'ins Zimmer')."
         },
@@ -205,47 +365,75 @@
           "type": "matching",
           "prompt": "Match the sentence to the correct case being used:",
           "pairs": [
-            { "left": "Das Bild hängt an der Wand.", "right": "Dative (location)" },
-            { "left": "Ich hänge das Bild an die Wand.", "right": "Accusative (movement)" },
-            { "left": "Er sitzt hinter dem Baum.", "right": "Dative (location)" },
-            { "left": "Er geht hinter den Baum.", "right": "Accusative (movement)" }
+            {
+              "left": "Das Bild hängt an der Wand.",
+              "right": "Dative (location)"
+            },
+            {
+              "left": "Ich hänge das Bild an die Wand.",
+              "right": "Accusative (movement)"
+            },
+            {
+              "left": "Er sitzt hinter dem Baum.",
+              "right": "Dative (location)"
+            },
+            {
+              "left": "Er geht hinter den Baum.",
+              "right": "Accusative (movement)"
+            }
           ]
         },
         {
           "type": "fill-blank",
           "prompt": "Wir sitzen ___ dem Tisch. (We are sitting at/between the table — location)",
-          "acceptedAnswers": ["an", "hinter", "neben", "vor", "unter"],
+          "acceptedAnswers": [
+            "an",
+            "hinter",
+            "neben",
+            "vor",
+            "unter"
+          ],
           "hint": "Location answer — any two-way preposition with dative 'dem' works here."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses the two-way preposition correctly for location?",
           "options": [
-            "Die Lampe hängt über den Tisch.",
-            "Die Lampe hängt über dem Tisch.",
             "Ich hänge die Lampe über dem Tisch.",
-            "Ich hänge die Lampe über der Tisch."
+            "Ich hänge die Lampe über der Tisch.",
+            "Die Lampe hängt über den Tisch.",
+            "Die Lampe hängt über dem Tisch."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "'Die Lampe hängt über dem Tisch' is correct — the lamp is hanging (location = dative). Option A incorrectly uses accusative for location. Option C uses dative for movement (hanging it up), which should be accusative."
         },
         {
           "type": "fill-blank",
           "prompt": "Er stellt sein Fahrrad ___ die Wand. (He leans his bike against the wall — movement/direction)",
-          "acceptedAnswers": ["an", "gegen"],
+          "acceptedAnswers": [
+            "an",
+            "gegen"
+          ],
           "hint": "Movement toward the wall — accusative. Which two-way preposition fits?"
         },
         {
           "type": "multiple-choice",
           "prompt": "Wo ist die Katze? — Die Katze sitzt ___ dem Sofa.",
-          "options": ["auf", "in", "durch", "für"],
-          "correctIndex": 0,
+          "options": [
+            "für",
+            "durch",
+            "auf",
+            "in"
+          ],
+          "correctIndex": 2,
           "explanation": "'auf dem Sofa' = on the sofa (location, dative). 'durch' and 'für' are accusative-only prepositions. 'in' could work with certain contexts but 'auf' is most natural for sitting on a sofa."
         },
         {
           "type": "fill-blank",
           "prompt": "Das Restaurant liegt ___ dem Hotel und dem Supermarkt.",
-          "acceptedAnswers": ["zwischen"],
+          "acceptedAnswers": [
+            "zwischen"
+          ],
           "hint": "The restaurant is 'between' (location) two places — dative follows."
         }
       ]

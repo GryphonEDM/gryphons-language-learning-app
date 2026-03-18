@@ -4,7 +4,9 @@
   "nameEl": "Άρθρα",
   "icon": "📖",
   "tier": "A1",
-  "prerequisites": ["nouns-declension"],
+  "prerequisites": [
+    "nouns-declension"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,33 +15,69 @@
       "explanation": "Greek definite articles agree with the noun in gender (masculine/feminine/neuter), number (singular/plural), and case (nominative/accusative/genitive). The basic nominative forms are:\n\nSingular: ο (masc.) · η (fem.) · το (neut.)\nPlural:   οι (masc.) · οι (fem.) · τα (neut.)\n\nAccusative singular: τον (masc.) · την (fem.) · το (neut.)\nAccusative plural:   τους (masc.) · τις (fem.) · τα (neut.)\n\nGenitive singular: του (masc.) · της (fem.) · του (neut.)\nGenitive plural:   των (masc.) · των (fem.) · των (neut.)\n\nGreek uses the definite article far more than English — with names of people, languages, abstract concepts, and in many set phrases where English omits 'the'.",
       "tip": "Masculine and feminine plurals are both 'οι' in the nominative — the same form! Neuter plural is always 'τα'. Genitive plural is always 'των' for all genders.",
       "examples": [
-        { "el": "ο άντρας", "en": "the man (masculine singular nominative)", "highlight": "ο" },
-        { "el": "η γυναίκα", "en": "the woman (feminine singular nominative)", "highlight": "η" },
-        { "el": "το παιδί", "en": "the child (neuter singular nominative)", "highlight": "το" },
-        { "el": "οι άντρες", "en": "the men (masculine plural nominative)", "highlight": "οι" },
-        { "el": "τα παιδιά", "en": "the children (neuter plural nominative)", "highlight": "τα" },
-        { "el": "Βλέπω τον πατέρα.", "en": "I see the father. (masculine accusative singular)", "highlight": "τον" }
+        {
+          "el": "ο άντρας",
+          "en": "the man (masculine singular nominative)",
+          "highlight": "ο"
+        },
+        {
+          "el": "η γυναίκα",
+          "en": "the woman (feminine singular nominative)",
+          "highlight": "η"
+        },
+        {
+          "el": "το παιδί",
+          "en": "the child (neuter singular nominative)",
+          "highlight": "το"
+        },
+        {
+          "el": "οι άντρες",
+          "en": "the men (masculine plural nominative)",
+          "highlight": "οι"
+        },
+        {
+          "el": "τα παιδιά",
+          "en": "the children (neuter plural nominative)",
+          "highlight": "τα"
+        },
+        {
+          "el": "Βλέπω τον πατέρα.",
+          "en": "I see the father. (masculine accusative singular)",
+          "highlight": "τον"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the correct definite article for 'άντρας' (man, masculine)?",
-          "options": ["ο άντρας", "η άντρας", "το άντρας"],
-          "correctIndex": 0,
+          "options": [
+            "η άντρας",
+            "ο άντρας",
+            "το άντρας"
+          ],
+          "correctIndex": 1,
           "explanation": "Masculine nouns take 'ο' in the nominative singular: ο άντρας (the man)."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the correct definite article for 'γυναίκα' (woman, feminine)?",
-          "options": ["η γυναίκα", "ο γυναίκα", "το γυναίκα"],
-          "correctIndex": 0,
+          "options": [
+            "το γυναίκα",
+            "ο γυναίκα",
+            "η γυναίκα"
+          ],
+          "correctIndex": 2,
           "explanation": "Feminine nouns take 'η' in the nominative singular: η γυναίκα (the woman)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which article goes with 'παιδιά' (children, neuter plural)?",
-          "options": ["τα παιδιά", "οι παιδιά", "τους παιδιά"],
-          "correctIndex": 0,
+          "options": [
+            "οι παιδιά",
+            "τα παιδιά",
+            "τους παιδιά"
+          ],
+          "correctIndex": 1,
           "explanation": "Neuter plural nouns take 'τα': τα παιδιά (the children). Neuter plurals always use τα."
         }
       ]
@@ -50,32 +88,68 @@
       "explanation": "Greek indefinite articles (meaning 'a' or 'an') only exist in the singular — there is no plural indefinite article in Greek. The forms are:\n\nNominative: ένας (masc.) · μία / μια (fem.) · ένα (neut.)\nAccusative: έναν / ένα (masc.) · μία(ν) / μια(ν) (fem.) · ένα (neut.)\n\nNote: 'ένας' is also the number 'one'. In the accusative, the masculine 'έναν' (with final -ν) is used before vowels or certain consonants, and 'ένα' before others. The feminine 'μίαν/μιαν' retains -ν in formal/written registers. There is no plural equivalent — Greek simply omits the article: 'βλέπω παιδιά' (I see children).",
       "tip": "Only three forms to learn: ένας (m), μία (f), ένα (n). No plural! 'ένας' doubles as the number 'one' — context tells them apart.",
       "examples": [
-        { "el": "ένας άντρας", "en": "a man (masculine)", "highlight": "ένας" },
-        { "el": "μία γυναίκα", "en": "a woman (feminine)", "highlight": "μία" },
-        { "el": "ένα παιδί", "en": "a child (neuter)", "highlight": "ένα" },
-        { "el": "Βλέπω έναν φίλο.", "en": "I see a friend. (masculine accusative)", "highlight": "έναν" },
-        { "el": "Έχω μία ερώτηση.", "en": "I have a question. (feminine accusative)", "highlight": "μία" },
-        { "el": "Θέλω ένα καφέ.", "en": "I want a coffee. (neuter accusative)", "highlight": "ένα" }
+        {
+          "el": "ένας άντρας",
+          "en": "a man (masculine)",
+          "highlight": "ένας"
+        },
+        {
+          "el": "μία γυναίκα",
+          "en": "a woman (feminine)",
+          "highlight": "μία"
+        },
+        {
+          "el": "ένα παιδί",
+          "en": "a child (neuter)",
+          "highlight": "ένα"
+        },
+        {
+          "el": "Βλέπω έναν φίλο.",
+          "en": "I see a friend. (masculine accusative)",
+          "highlight": "έναν"
+        },
+        {
+          "el": "Έχω μία ερώτηση.",
+          "en": "I have a question. (feminine accusative)",
+          "highlight": "μία"
+        },
+        {
+          "el": "Θέλω ένα καφέ.",
+          "en": "I want a coffee. (neuter accusative)",
+          "highlight": "ένα"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a dog' in Greek? (σκύλος — masculine)",
-          "options": ["ένας σκύλος", "μία σκύλος", "ένα σκύλος"],
-          "correctIndex": 0,
+          "options": [
+            "ένα σκύλος",
+            "ένας σκύλος",
+            "μία σκύλος"
+          ],
+          "correctIndex": 1,
           "explanation": "Masculine nouns use 'ένας': ένας σκύλος (a dog)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'a city' in Greek? (πόλη — feminine)",
-          "options": ["μία πόλη", "ένας πόλη", "ένα πόλη"],
+          "options": [
+            "μία πόλη",
+            "ένα πόλη",
+            "ένας πόλη"
+          ],
           "correctIndex": 0,
           "explanation": "Feminine nouns use 'μία': μία πόλη (a city)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is correct for 'a book'? (βιβλίο — neuter)",
-          "options": ["ένα βιβλίο", "ένας βιβλίο", "μία βιβλίο"],
+          "options": [
+            "ένα βιβλίο",
+            "ένας βιβλίο",
+            "μία βιβλίο"
+          ],
           "correctIndex": 0,
           "explanation": "Neuter nouns use 'ένα': ένα βιβλίο (a book)."
         }
@@ -87,32 +161,68 @@
       "explanation": "Greek uses the definite article in many situations where English omits 'the':\n\n1. WITH PEOPLE'S NAMES: Greeks almost always use the article before first names and surnames.\n   Ο Γιώργης είναι εδώ. = George is here.\n   Η Μαρία τηλεφώνησε. = Maria called.\n\n2. WITH LANGUAGES: Languages always take the definite article.\n   Μαθαίνω τα ελληνικά. = I am learning Greek.\n   Μιλά τα αγγλικά καλά. = She speaks English well.\n\n3. WITH ABSTRACT NOUNS: Abstract and general concepts use the article.\n   Η αγάπη είναι σημαντική. = Love is important.\n\n4. WITH COUNTRIES, CITIES (often): Many place names take an article.\n   Η Ελλάδα είναι όμορφη. = Greece is beautiful.\n   Η Αθήνα = Athens.\n\n5. OMIT with professions after 'to be' (informal), and in some set expressions.\n\nThe indefinite article is omitted when speaking generally in the plural: Βλέπω σκύλους. = I see dogs (some dogs).",
       "tip": "When in doubt, use the definite article in Greek — it appears where English has nothing. The biggest surprises are names of people and languages, which always take the article.",
       "examples": [
-        { "el": "Ο Νίκος μένει στην Αθήνα.", "en": "Nikos lives in Athens. (article before personal name)", "highlight": "Ο" },
-        { "el": "Μαθαίνω τα ελληνικά.", "en": "I am learning Greek. (article before language)", "highlight": "τα" },
-        { "el": "Η Ελλάδα είναι πολύ όμορφη.", "en": "Greece is very beautiful. (article before country)", "highlight": "Η" },
-        { "el": "Η αγάπη είναι δύναμη.", "en": "Love is strength. (article before abstract noun)", "highlight": "Η" },
-        { "el": "Βλέπω σκύλους στο πάρκο.", "en": "I see dogs in the park. (no article in plural for 'some dogs')", "highlight": "σκύλους" },
-        { "el": "Η Μαρία μιλά τα γαλλικά.", "en": "Maria speaks French. (article before both name and language)", "highlight": "Η" }
+        {
+          "el": "Ο Νίκος μένει στην Αθήνα.",
+          "en": "Nikos lives in Athens. (article before personal name)",
+          "highlight": "Ο"
+        },
+        {
+          "el": "Μαθαίνω τα ελληνικά.",
+          "en": "I am learning Greek. (article before language)",
+          "highlight": "τα"
+        },
+        {
+          "el": "Η Ελλάδα είναι πολύ όμορφη.",
+          "en": "Greece is very beautiful. (article before country)",
+          "highlight": "Η"
+        },
+        {
+          "el": "Η αγάπη είναι δύναμη.",
+          "en": "Love is strength. (article before abstract noun)",
+          "highlight": "Η"
+        },
+        {
+          "el": "Βλέπω σκύλους στο πάρκο.",
+          "en": "I see dogs in the park. (no article in plural for 'some dogs')",
+          "highlight": "σκύλους"
+        },
+        {
+          "el": "Η Μαρία μιλά τα γαλλικά.",
+          "en": "Maria speaks French. (article before both name and language)",
+          "highlight": "Η"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'Kostas is my friend' in Greek? (Κώστας — male name)",
-          "options": ["Ο Κώστας είναι φίλος μου.", "Κώστας είναι φίλος μου.", "Ένας Κώστας είναι φίλος μου."],
+          "options": [
+            "Ο Κώστας είναι φίλος μου.",
+            "Κώστας είναι φίλος μου.",
+            "Ένας Κώστας είναι φίλος μου."
+          ],
           "correctIndex": 0,
           "explanation": "Greek uses the definite article before personal names: Ο Κώστας (not just Κώστας)."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I am learning Greek' in Greek?",
-          "options": ["Μαθαίνω τα ελληνικά.", "Μαθαίνω ελληνικά.", "Μαθαίνω τα Ελληνικά."],
+          "options": [
+            "Μαθαίνω τα ελληνικά.",
+            "Μαθαίνω ελληνικά.",
+            "Μαθαίνω τα Ελληνικά."
+          ],
           "correctIndex": 0,
           "explanation": "Languages take the definite article in Greek: 'τα ελληνικά'. Language names are not capitalised in Greek."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly says 'Greece is beautiful'?",
-          "options": ["Η Ελλάδα είναι όμορφη.", "Ελλάδα είναι όμορφη.", "Μία Ελλάδα είναι όμορφη."],
+          "options": [
+            "Η Ελλάδα είναι όμορφη.",
+            "Μία Ελλάδα είναι όμορφη.",
+            "Ελλάδα είναι όμορφη."
+          ],
           "correctIndex": 0,
           "explanation": "Country names in Greek take the definite article: Η Ελλάδα (Greece). Omitting it sounds unnatural."
         }

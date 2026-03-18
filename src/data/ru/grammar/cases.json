@@ -4,7 +4,10 @@
   "nameRu": "Именительный и винительный падежи",
   "icon": "📐",
   "tier": "A2",
-  "prerequisites": ["nouns-basics", "pronouns-personal"],
+  "prerequisites": [
+    "nouns-basics",
+    "pronouns-personal"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,31 +16,58 @@
       "explanation": "The nominative case is the basic dictionary form. It's used for the subject — who or what does the action. It answers кто? (who?) or что? (what?).",
       "tip": "Nominative = the doer. No ending changes needed!",
       "examples": [
-        { "ru": "Кот спит.", "en": "The cat is sleeping.", "highlight": "Кот" },
-        { "ru": "Мама готовит.", "en": "Mom is cooking.", "highlight": "Мама" },
-        { "ru": "Книга интересная.", "en": "The book is interesting.", "highlight": "Книга" },
-        { "ru": "Дети играют.", "en": "Children are playing.", "highlight": "Дети" }
+        {
+          "ru": "Кот спит.",
+          "en": "The cat is sleeping.",
+          "highlight": "Кот"
+        },
+        {
+          "ru": "Мама готовит.",
+          "en": "Mom is cooking.",
+          "highlight": "Мама"
+        },
+        {
+          "ru": "Книга интересная.",
+          "en": "The book is interesting.",
+          "highlight": "Книга"
+        },
+        {
+          "ru": "Дети играют.",
+          "en": "Children are playing.",
+          "highlight": "Дети"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which word is in the nominative case? 'Мальчик читает книгу.'",
-          "options": ["Мальчик", "книгу", "читает"],
+          "options": [
+            "Мальчик",
+            "читает",
+            "книгу"
+          ],
           "correctIndex": 0,
           "explanation": "'Мальчик' (the boy) is the subject performing the action, so it is in the nominative case."
         },
         {
           "type": "fill-blank",
           "prompt": "___ идёт в школу. (девочка — girl)",
-          "acceptedAnswers": ["Девочка", "девочка"],
+          "acceptedAnswers": [
+            "Девочка",
+            "девочка"
+          ],
           "hint": "The subject form of 'girl'",
           "explanation": "The subject of the sentence takes the nominative form: 'девочка'."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which word is the subject (nominative)? 'Солнце светит ярко.'",
-          "options": ["Солнце", "ярко", "светит"],
-          "correctIndex": 0,
+          "options": [
+            "светит",
+            "Солнце",
+            "ярко"
+          ],
+          "correctIndex": 1,
           "explanation": "'Солнце' (the sun) is the subject doing the shining — nominative case."
         },
         {
@@ -45,52 +75,88 @@
           "prompt": "Find and fix the error: 'Книгу лежит на столе.'",
           "incorrectText": "Книгу лежит на столе.",
           "correctedText": "Книга лежит на столе.",
-          "acceptedAnswers": ["Книга лежит на столе.", "Книга лежит на столе"],
+          "acceptedAnswers": [
+            "Книга лежит на столе.",
+            "Книга лежит на столе"
+          ],
           "explanation": "'Книга' is the subject and must be in nominative ('книга'), not accusative ('книгу')."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order to make a sentence:",
-          "words": ["работает", "Папа", "дома"],
-          "correctOrder": ["Папа", "работает", "дома"],
+          "words": [
+            "работает",
+            "Папа",
+            "дома"
+          ],
+          "correctOrder": [
+            "Папа",
+            "работает",
+            "дома"
+          ],
           "explanation": "The subject 'Папа' (dad, nominative) comes first: 'Папа работает дома.' (Dad works at home.)"
         },
         {
           "type": "matching",
           "prompt": "Match each sentence with its nominative (subject) word:",
           "pairs": [
-            { "left": "Собака лает.", "right": "Собака" },
-            { "left": "Учитель объясняет.", "right": "Учитель" },
-            { "left": "Дождь идёт.", "right": "Дождь" },
-            { "left": "Студенты учатся.", "right": "Студенты" }
+            {
+              "left": "Собака лает.",
+              "right": "Собака"
+            },
+            {
+              "left": "Учитель объясняет.",
+              "right": "Учитель"
+            },
+            {
+              "left": "Дождь идёт.",
+              "right": "Дождь"
+            },
+            {
+              "left": "Студенты учатся.",
+              "right": "Студенты"
+            }
           ],
           "explanation": "The nominative word is always the subject — the one performing the action."
         },
         {
           "type": "fill-blank",
           "prompt": "___ очень вкусная. (вода — water)",
-          "acceptedAnswers": ["Вода", "вода"],
+          "acceptedAnswers": [
+            "Вода",
+            "вода"
+          ],
           "hint": "Subject form, no changes needed",
           "explanation": "'Вода' is the subject and stays in its dictionary (nominative) form."
         },
         {
           "type": "multiple-choice",
           "prompt": "In 'Брат и сестра поют.', which words are in the nominative?",
-          "options": ["Брат и сестра", "поют", "и сестра"],
-          "correctIndex": 0,
+          "options": [
+            "поют",
+            "Брат и сестра",
+            "и сестра"
+          ],
+          "correctIndex": 1,
           "explanation": "Both 'брат' and 'сестра' are subjects (nominative) — they are the ones singing."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the subject of the sentence:",
           "audio": "Бабушка готовит ужин.",
-          "acceptedAnswers": ["Бабушка", "бабушка"],
+          "acceptedAnswers": [
+            "Бабушка",
+            "бабушка"
+          ],
           "explanation": "'Бабушка' (grandmother) is the subject in nominative — she is cooking dinner."
         },
         {
           "type": "transformation",
           "prompt": "Rewrite using 'учитель' (teacher, m.) as the subject: '___ объясняет урок.'",
-          "acceptedAnswers": ["Учитель объясняет урок.", "Учитель объясняет урок"],
+          "acceptedAnswers": [
+            "Учитель объясняет урок.",
+            "Учитель объясняет урок"
+          ],
           "explanation": "The nominative form is simply 'учитель' — no ending changes for the subject."
         }
       ]
@@ -101,59 +167,99 @@
       "explanation": "The accusative marks the direct object — what receives the action. For inanimate masculine nouns and all neuter nouns, the accusative looks the same as nominative. Feminine nouns ending in -а change to -у, and -я to -ю.",
       "tip": "Inanimate masc/neuter = no change! Feminine: -а→-у, -я→-ю",
       "examples": [
-        { "ru": "Я читаю книгу.", "en": "I read a book.", "highlight": "книгу" },
-        { "ru": "Он купил хлеб.", "en": "He bought bread.", "highlight": "хлеб" },
-        { "ru": "Она пьёт кофе.", "en": "She drinks coffee.", "highlight": "кофе" }
+        {
+          "ru": "Я читаю книгу.",
+          "en": "I read a book.",
+          "highlight": "книгу"
+        },
+        {
+          "ru": "Он купил хлеб.",
+          "en": "He bought bread.",
+          "highlight": "хлеб"
+        },
+        {
+          "ru": "Она пьёт кофе.",
+          "en": "She drinks coffee.",
+          "highlight": "кофе"
+        }
       ],
       "exercises": [
         {
           "type": "transformation",
           "prompt": "Put 'книга' (book, f.) into the accusative case:",
-          "acceptedAnswers": ["книгу"],
+          "acceptedAnswers": [
+            "книгу"
+          ],
           "explanation": "Feminine nouns ending in -а change to -у in the accusative: книга → книгу."
         },
         {
           "type": "fill-blank",
           "prompt": "Я купил ___. (хлеб — bread, m. inanimate)",
-          "acceptedAnswers": ["хлеб"],
+          "acceptedAnswers": [
+            "хлеб"
+          ],
           "hint": "Inanimate masculine — no change",
           "explanation": "Inanimate masculine nouns keep their nominative form in the accusative: хлеб stays хлеб."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct accusative? 'Она пьёт ___.' (вода — water, f.)",
-          "options": ["воду", "вода", "воде"],
-          "correctIndex": 0,
+          "options": [
+            "воде",
+            "воду",
+            "вода"
+          ],
+          "correctIndex": 1,
           "explanation": "Feminine -а changes to -у in accusative: вода → воду."
         },
         {
           "type": "transformation",
           "prompt": "Put 'песня' (song, f.) into the accusative case:",
-          "acceptedAnswers": ["песню"],
+          "acceptedAnswers": [
+            "песню"
+          ],
           "explanation": "Feminine nouns ending in -я change to -ю in the accusative: песня → песню."
         },
         {
           "type": "matching",
           "prompt": "Match each noun with its accusative form:",
           "pairs": [
-            { "left": "вода (f.)", "right": "воду" },
-            { "left": "стол (m. inanim.)", "right": "стол" },
-            { "left": "молоко (n.)", "right": "молоко" },
-            { "left": "каша (f.)", "right": "кашу" }
+            {
+              "left": "вода (f.)",
+              "right": "воду"
+            },
+            {
+              "left": "стол (m. inanim.)",
+              "right": "стол"
+            },
+            {
+              "left": "молоко (n.)",
+              "right": "молоко"
+            },
+            {
+              "left": "каша (f.)",
+              "right": "кашу"
+            }
           ],
           "explanation": "Feminine -а→-у; inanimate masculine and neuter stay the same in accusative."
         },
         {
           "type": "fill-blank",
           "prompt": "Мы смотрим ___. (фильм — film, m. inanimate)",
-          "acceptedAnswers": ["фильм"],
+          "acceptedAnswers": [
+            "фильм"
+          ],
           "hint": "Inanimate masculine nouns don't change",
           "explanation": "'Фильм' is inanimate masculine, so it stays the same in the accusative."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct accusative? 'Он видит ___.' (море — sea, n.)",
-          "options": ["море", "моря", "морю"],
+          "options": [
+            "море",
+            "моря",
+            "морю"
+          ],
           "correctIndex": 0,
           "explanation": "Neuter nouns don't change in the accusative: море stays море."
         },
@@ -162,21 +268,34 @@
           "prompt": "Find and fix the error: 'Я пью вода.'",
           "incorrectText": "Я пью вода.",
           "correctedText": "Я пью воду.",
-          "acceptedAnswers": ["Я пью воду.", "Я пью воду"],
+          "acceptedAnswers": [
+            "Я пью воду.",
+            "Я пью воду"
+          ],
           "explanation": "'Вода' is feminine and a direct object, so it must be in accusative: воду."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["читает", "газету", "Дедушка"],
-          "correctOrder": ["Дедушка", "читает", "газету"],
+          "words": [
+            "читает",
+            "газету",
+            "Дедушка"
+          ],
+          "correctOrder": [
+            "Дедушка",
+            "читает",
+            "газету"
+          ],
           "explanation": "'Дедушка' (grandpa, nominative subject) reads 'газету' (newspaper, accusative object)."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the direct object (accusative word):",
           "audio": "Сестра покупает юбку.",
-          "acceptedAnswers": ["юбку"],
+          "acceptedAnswers": [
+            "юбку"
+          ],
           "explanation": "'Юбку' (skirt) is the direct object in accusative. Feminine: юбка → юбку (-а→-у)."
         }
       ]
@@ -187,35 +306,57 @@
       "explanation": "Animate masculine nouns (people, animals) have a special accusative form that looks like the genitive: кот→кота, брат→брата, друг→друга. Feminine animate nouns follow the same -а→-у rule.",
       "tip": "Animate masculine accusative = genitive form (add -а)!",
       "examples": [
-        { "ru": "Я вижу кота.", "en": "I see the cat.", "highlight": "кота" },
-        { "ru": "Она любит брата.", "en": "She loves her brother.", "highlight": "брата" },
-        { "ru": "Я знаю маму.", "en": "I know mom.", "highlight": "маму" }
+        {
+          "ru": "Я вижу кота.",
+          "en": "I see the cat.",
+          "highlight": "кота"
+        },
+        {
+          "ru": "Она любит брата.",
+          "en": "She loves her brother.",
+          "highlight": "брата"
+        },
+        {
+          "ru": "Я знаю маму.",
+          "en": "I know mom.",
+          "highlight": "маму"
+        }
       ],
       "exercises": [
         {
           "type": "transformation",
           "prompt": "Put 'кот' (cat, m. animate) into the accusative case:",
-          "acceptedAnswers": ["кота"],
+          "acceptedAnswers": [
+            "кота"
+          ],
           "explanation": "Animate masculine nouns take the genitive form in accusative: кот → кота."
         },
         {
           "type": "fill-blank",
           "prompt": "Я вижу ___. (брат — brother, m. animate)",
-          "acceptedAnswers": ["брата"],
+          "acceptedAnswers": [
+            "брата"
+          ],
           "hint": "Animate masculine: add -а",
           "explanation": "Animate masculine accusative = genitive: брат → брата."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct accusative? 'Она любит ___.' (друг — friend, m. animate)",
-          "options": ["друга", "друг", "другу"],
+          "options": [
+            "друга",
+            "другу",
+            "друг"
+          ],
           "correctIndex": 0,
           "explanation": "Animate masculine nouns take the genitive form in accusative: друг → друга."
         },
         {
           "type": "fill-blank",
           "prompt": "Дети любят ___. (собака — dog, f. animate)",
-          "acceptedAnswers": ["собаку"],
+          "acceptedAnswers": [
+            "собаку"
+          ],
           "hint": "Feminine -а changes to -у even for animate nouns",
           "explanation": "Feminine animate nouns follow the same rule: -а→-у. Собака → собаку."
         },
@@ -224,49 +365,77 @@
           "prompt": "Find and fix the error: 'Я знаю учитель.'",
           "incorrectText": "Я знаю учитель.",
           "correctedText": "Я знаю учителя.",
-          "acceptedAnswers": ["Я знаю учителя.", "Я знаю учителя"],
+          "acceptedAnswers": [
+            "Я знаю учителя.",
+            "Я знаю учителя"
+          ],
           "explanation": "'Учитель' (teacher) is animate masculine — accusative requires genitive form: учителя."
         },
         {
           "type": "matching",
           "prompt": "Match each animate noun with its accusative form:",
           "pairs": [
-            { "left": "папа (m.)", "right": "папу" },
-            { "left": "сестра (f.)", "right": "сестру" },
-            { "left": "мальчик (m.)", "right": "мальчика" },
-            { "left": "бабушка (f.)", "right": "бабушку" }
+            {
+              "left": "папа (m.)",
+              "right": "папу"
+            },
+            {
+              "left": "сестра (f.)",
+              "right": "сестру"
+            },
+            {
+              "left": "мальчик (m.)",
+              "right": "мальчика"
+            },
+            {
+              "left": "бабушка (f.)",
+              "right": "бабушку"
+            }
           ],
           "explanation": "Animate masculine nouns take genitive endings; feminine nouns: -а→-у."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["кота", "Девочка", "видит"],
-          "correctOrder": ["Девочка", "видит", "кота"],
+          "words": [
+            "кота",
+            "Девочка",
+            "видит"
+          ],
+          "correctOrder": [
+            "Девочка",
+            "видит",
+            "кота"
+          ],
           "explanation": "'Девочка' (girl, nominative) sees 'кота' (cat, accusative animate)."
         },
         {
           "type": "multiple-choice",
           "prompt": "In 'Мы ждём врача.', why is it 'врача' and not 'врач'?",
           "options": [
-            "Because 'врач' is animate masculine, so accusative = genitive",
             "Because it's in the dative case",
+            "Because 'врач' is animate masculine, so accusative = genitive",
             "Because it's a feminine noun"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "'Врач' (doctor) is animate masculine, so the accusative form matches the genitive: врача."
         },
         {
           "type": "transformation",
           "prompt": "Rewrite with 'студент' (student, m. animate) as the direct object: 'Профессор видит ___.'",
-          "acceptedAnswers": ["Профессор видит студента.", "студента"],
+          "acceptedAnswers": [
+            "Профессор видит студента.",
+            "студента"
+          ],
           "explanation": "Animate masculine accusative: студент → студента."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the animate accusative word:",
           "audio": "Мама зовёт сына.",
-          "acceptedAnswers": ["сына"],
+          "acceptedAnswers": [
+            "сына"
+          ],
           "explanation": "'Сына' (son, accusative) — animate masculine: сын → сына."
         }
       ]
@@ -277,15 +446,31 @@
       "explanation": "In a sentence, the subject is in nominative and the direct object is in accusative. Practice identifying and forming both cases in full sentences.",
       "tip": "Subject (nominative) does the action → Object (accusative) receives it",
       "examples": [
-        { "ru": "Девочка читает книгу.", "en": "The girl reads a book.", "highlight": "Девочка...книгу" },
-        { "ru": "Кот ест рыбу.", "en": "The cat eats fish.", "highlight": "Кот...рыбу" }
+        {
+          "ru": "Девочка читает книгу.",
+          "en": "The girl reads a book.",
+          "highlight": "Девочка...книгу"
+        },
+        {
+          "ru": "Кот ест рыбу.",
+          "en": "The cat eats fish.",
+          "highlight": "Кот...рыбу"
+        }
       ],
       "exercises": [
         {
           "type": "sentence-order",
           "prompt": "Put the words in order (subject first, then verb, then object):",
-          "words": ["пишет", "Ученик", "письмо"],
-          "correctOrder": ["Ученик", "пишет", "письмо"],
+          "words": [
+            "пишет",
+            "Ученик",
+            "письмо"
+          ],
+          "correctOrder": [
+            "Ученик",
+            "пишет",
+            "письмо"
+          ],
           "explanation": "'Ученик' (student, nominative) writes 'письмо' (letter, accusative — neuter, no change)."
         },
         {
@@ -293,56 +478,87 @@
           "prompt": "Find and fix the error: 'Мама видит кот.'",
           "incorrectText": "Мама видит кот.",
           "correctedText": "Мама видит кота.",
-          "acceptedAnswers": ["Мама видит кота.", "Мама видит кота"],
+          "acceptedAnswers": [
+            "Мама видит кота.",
+            "Мама видит кота"
+          ],
           "explanation": "'Кот' is animate masculine — the accusative form is 'кота'."
         },
         {
           "type": "fill-blank",
           "prompt": "___ варит ___. (мама — mom; каша — porridge)",
-          "acceptedAnswers": ["Мама варит кашу", "Мама варит кашу."],
+          "acceptedAnswers": [
+            "Мама варит кашу",
+            "Мама варит кашу."
+          ],
           "hint": "Subject in nominative, object in accusative (-а→-у)",
           "explanation": "'Мама' (nominative subject) cooks 'кашу' (accusative of каша: -а→-у)."
         },
         {
           "type": "transformation",
           "prompt": "Change the object to accusative: 'Мальчик рисует (картина — picture, f.).'",
-          "acceptedAnswers": ["Мальчик рисует картину.", "картину"],
+          "acceptedAnswers": [
+            "Мальчик рисует картину.",
+            "картину"
+          ],
           "explanation": "Feminine -а→-у in accusative: картина → картину."
         },
         {
           "type": "multiple-choice",
           "prompt": "In 'Папа покупает машину.', identify the nominative and accusative words:",
           "options": [
+            "Both are nominative",
             "Папа = nominative, машину = accusative",
-            "Папа = accusative, машину = nominative",
-            "Both are nominative"
+            "Папа = accusative, машину = nominative"
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "'Папа' is the subject (nominative), 'машину' is the direct object (accusative of машина)."
         },
         {
           "type": "matching",
           "prompt": "Match the sentence role to the correct case:",
           "pairs": [
-            { "left": "Subject (doer)", "right": "Nominative" },
-            { "left": "Direct object (receiver)", "right": "Accusative" },
-            { "left": "кто? что?", "right": "Nominative" },
-            { "left": "кого? что?", "right": "Accusative" }
+            {
+              "left": "Subject (doer)",
+              "right": "Nominative"
+            },
+            {
+              "left": "Direct object (receiver)",
+              "right": "Accusative"
+            },
+            {
+              "left": "кто? что?",
+              "right": "Nominative"
+            },
+            {
+              "left": "кого? что?",
+              "right": "Accusative"
+            }
           ],
           "explanation": "Nominative answers кто?/что? (who?/what?) for the subject. Accusative answers кого?/что? for the direct object."
         },
         {
           "type": "fill-blank",
           "prompt": "Бабушка любит ___. (внук — grandson, m. animate)",
-          "acceptedAnswers": ["внука"],
+          "acceptedAnswers": [
+            "внука"
+          ],
           "hint": "Animate masculine accusative = genitive",
           "explanation": "Animate masculine accusative: внук → внука."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["сестру", "Брат", "ждёт"],
-          "correctOrder": ["Брат", "ждёт", "сестру"],
+          "words": [
+            "сестру",
+            "Брат",
+            "ждёт"
+          ],
+          "correctOrder": [
+            "Брат",
+            "ждёт",
+            "сестру"
+          ],
           "explanation": "'Брат' (brother, nominative) waits for 'сестру' (sister, accusative: сестра→сестру)."
         },
         {
@@ -350,14 +566,20 @@
           "prompt": "Find and fix the error: 'Собаку видит мальчика.'",
           "incorrectText": "Собаку видит мальчика.",
           "correctedText": "Собака видит мальчика.",
-          "acceptedAnswers": ["Собака видит мальчика.", "Собака видит мальчика"],
+          "acceptedAnswers": [
+            "Собака видит мальчика.",
+            "Собака видит мальчика"
+          ],
           "explanation": "'Собака' is the subject and should be in nominative (not 'собаку'). 'Мальчика' is the animate masculine accusative — correct."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the full sentence, paying attention to nominative and accusative forms:",
           "audio": "Учитель проверяет тетрадь.",
-          "acceptedAnswers": ["Учитель проверяет тетрадь.", "Учитель проверяет тетрадь"],
+          "acceptedAnswers": [
+            "Учитель проверяет тетрадь.",
+            "Учитель проверяет тетрадь"
+          ],
           "explanation": "'Учитель' (teacher, nominative subject) checks 'тетрадь' (notebook, accusative — feminine -ь noun, no change in acc.)."
         }
       ]

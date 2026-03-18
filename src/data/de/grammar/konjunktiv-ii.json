@@ -4,7 +4,10 @@
   "nameDe": "Konjunktiv II",
   "icon": "💭",
   "tier": "B2",
-  "prerequisites": ["modal-verbs", "past-tense"],
+  "prerequisites": [
+    "modal-verbs",
+    "verbs-past"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,71 +16,124 @@
       "explanation": "The most common way to express hypotheticals and polite requests in modern German is 'würde + infinitive'. 'würde' is the Konjunktiv II form of 'werden'. Conjugation: ich würde, du würdest, er/sie/es würde, wir würden, ihr würdet, sie/Sie würden. Uses: (1) Hypotheticals: 'Ich würde gerne reisen' (I would like to travel). (2) Polite requests: 'Würden Sie mir bitte helfen?' (Would you please help me?). (3) Unreal conditions: 'Wenn ich Zeit hätte, würde ich kommen' (If I had time, I would come). The würde construction replaces the less common synthetic Konjunktiv II forms for most regular verbs.",
       "tip": "The würde conjugation mirrors the simple past of 'werden' but adds an umlaut: wurde → würde. It's like English 'would' + infinitive. For sein, haben, and modal verbs, German prefers the synthetic forms (wäre, hätte, könnte, etc.) rather than würde — these are covered in the next section.",
       "examples": [
-        { "de": "Ich würde gerne nach Berlin reisen.", "en": "I would like to travel to Berlin.", "highlight": "würde ... reisen" },
-        { "de": "Würden Sie bitte leiser sprechen?", "en": "Would you please speak more quietly?", "highlight": "Würden ... sprechen" },
-        { "de": "Was würdest du in meiner Situation tun?", "en": "What would you do in my situation?", "highlight": "würdest ... tun" },
-        { "de": "Er würde mehr schlafen, wenn er könnte.", "en": "He would sleep more if he could.", "highlight": "würde ... schlafen" },
-        { "de": "Das würde ich nie machen.", "en": "I would never do that.", "highlight": "würde ... machen" }
+        {
+          "de": "Ich würde gerne nach Berlin reisen.",
+          "en": "I would like to travel to Berlin.",
+          "highlight": "würde ... reisen"
+        },
+        {
+          "de": "Würden Sie bitte leiser sprechen?",
+          "en": "Would you please speak more quietly?",
+          "highlight": "Würden ... sprechen"
+        },
+        {
+          "de": "Was würdest du in meiner Situation tun?",
+          "en": "What would you do in my situation?",
+          "highlight": "würdest ... tun"
+        },
+        {
+          "de": "Er würde mehr schlafen, wenn er könnte.",
+          "en": "He would sleep more if he could.",
+          "highlight": "würde ... schlafen"
+        },
+        {
+          "de": "Das würde ich nie machen.",
+          "en": "I would never do that.",
+          "highlight": "würde ... machen"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the Konjunktiv II form of 'werden' for 'ich'?",
-          "options": ["wurde", "würde", "werde", "geworden"],
+          "options": [
+            "geworden",
+            "würde",
+            "werde",
+            "wurde"
+          ],
           "correctIndex": 1,
           "explanation": "'würde' is the Konjunktiv II of 'werden' for ich/er/sie/es. It's the simple past 'wurde' with an umlaut added."
         },
         {
           "type": "fill-blank",
           "prompt": "Ich ___ gerne ein neues Fahrrad kaufen. (I would like to buy a new bicycle.)",
-          "acceptedAnswers": ["würde"],
+          "acceptedAnswers": [
+            "würde"
+          ],
           "hint": "Konjunktiv II of werden, first person singular."
         },
         {
           "type": "multiple-choice",
           "prompt": "___ Sie mir bitte die Rechnung bringen? (Would you please bring me the bill?)",
-          "options": ["Werden", "Würden", "Wären", "Hätten"],
-          "correctIndex": 1,
+          "options": [
+            "Würden",
+            "Hätten",
+            "Werden",
+            "Wären"
+          ],
+          "correctIndex": 0,
           "explanation": "'Würden Sie...?' is the polite request form using Konjunktiv II of werden. 'Sie würden' is the formal Sie form."
         },
         {
           "type": "fill-blank",
           "prompt": "Was ___ du in diesem Fall tun? (What would you do in this case?)",
-          "acceptedAnswers": ["würdest"],
+          "acceptedAnswers": [
+            "würdest"
+          ],
           "hint": "du-form of würde."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which statement about 'würde + infinitive' is TRUE?",
           "options": [
-            "It is only used for past hypotheticals.",
-            "It replaces Konjunktiv II forms for most regular verbs but NOT for sein, haben, and modals.",
             "It is the same as the future tense.",
-            "It can only be used in questions."
+            "It can only be used in questions.",
+            "It replaces Konjunktiv II forms for most regular verbs but NOT for sein, haben, and modals.",
+            "It is only used for past hypotheticals."
           ],
-          "correctIndex": 1,
+          "correctIndex": 2,
           "explanation": "For regular verbs, 'würde + infinitive' is the standard way to express the Konjunktiv II. However, sein (→wäre), haben (→hätte), and modal verbs (→könnte, müsste, etc.) use their own synthetic Konjunktiv II forms."
         },
         {
           "type": "fill-blank",
           "prompt": "Er ___ lieber zu Hause bleiben. (He would rather stay home.)",
-          "acceptedAnswers": ["würde"],
+          "acceptedAnswers": [
+            "würde"
+          ],
           "hint": "er/sie/es form of würde."
         },
         {
           "type": "matching",
           "prompt": "Match each pronoun to its correct würde form:",
           "pairs": [
-            { "left": "ich", "right": "würde" },
-            { "left": "du", "right": "würdest" },
-            { "left": "wir", "right": "würden" },
-            { "left": "ihr", "right": "würdet" }
+            {
+              "left": "ich",
+              "right": "würde"
+            },
+            {
+              "left": "du",
+              "right": "würdest"
+            },
+            {
+              "left": "wir",
+              "right": "würden"
+            },
+            {
+              "left": "ihr",
+              "right": "würdet"
+            }
           ]
         },
         {
           "type": "multiple-choice",
           "prompt": "Das ___ ich dir empfehlen. (I would recommend that to you.)",
-          "options": ["werde", "würde", "wurde", "wäre"],
+          "options": [
+            "wurde",
+            "würde",
+            "wäre",
+            "werde"
+          ],
           "correctIndex": 1,
           "explanation": "'würde' is correct for hypothetical recommendations. 'werde' is present/future indicative; 'wurde' is past indicative; 'wäre' is Konjunktiv II of sein."
         }
@@ -89,71 +145,122 @@
       "explanation": "For 'haben' and 'sein', and their derived modal and auxiliary uses, German uses the synthetic Konjunktiv II forms: hätte (would have) and wäre (would be). Conjugation of hätte: ich hätte, du hättest, er hätte, wir hätten, ihr hättet, sie hätten. Conjugation of wäre: ich wäre, du wärest/wärst, er wäre, wir wären, ihr wäret/wärt, sie wären. These are used: (1) In present hypotheticals: 'Wenn ich Zeit hätte...' (If I had time...), 'Wenn ich reich wäre...' (If I were rich...). (2) In past unreal conditions with the Konjunktiv II perfect: 'Wenn ich das gewusst hätte...' (If I had known that...). Modal Konjunktiv II forms: könnte (could), müsste (would have to), dürfte (would be allowed), sollte (should), wollte (would want).",
       "tip": "hätte = Konjunktiv II of haben. wäre = Konjunktiv II of sein. These are the two most important synthetic Konjunktiv II forms. Also crucial: the modal Konjunktiv II forms (könnte, müsste, dürfte, sollte) which are simply the past tense forms with an umlaut added where possible.",
       "examples": [
-        { "de": "Wenn ich mehr Geld hätte, würde ich reisen.", "en": "If I had more money, I would travel.", "highlight": "hätte" },
-        { "de": "Wenn ich ein Vogel wäre, würde ich fliegen.", "en": "If I were a bird, I would fly.", "highlight": "wäre" },
-        { "de": "Ich hätte gerne noch einen Kaffee.", "en": "I would like another coffee.", "highlight": "hätte gerne" },
-        { "de": "Das wäre wunderbar!", "en": "That would be wonderful!", "highlight": "wäre" },
-        { "de": "Wenn ich das gewusst hätte, wäre ich früher gekommen.", "en": "If I had known that, I would have come earlier. (past hypothetical)", "highlight": "gewusst hätte ... wäre ... gekommen" }
+        {
+          "de": "Wenn ich mehr Geld hätte, würde ich reisen.",
+          "en": "If I had more money, I would travel.",
+          "highlight": "hätte"
+        },
+        {
+          "de": "Wenn ich ein Vogel wäre, würde ich fliegen.",
+          "en": "If I were a bird, I would fly.",
+          "highlight": "wäre"
+        },
+        {
+          "de": "Ich hätte gerne noch einen Kaffee.",
+          "en": "I would like another coffee.",
+          "highlight": "hätte gerne"
+        },
+        {
+          "de": "Das wäre wunderbar!",
+          "en": "That would be wonderful!",
+          "highlight": "wäre"
+        },
+        {
+          "de": "Wenn ich das gewusst hätte, wäre ich früher gekommen.",
+          "en": "If I had known that, I would have come earlier. (past hypothetical)",
+          "highlight": "gewusst hätte ... wäre ... gekommen"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the Konjunktiv II form of 'haben' for 'ich'?",
-          "options": ["hatte", "habe", "hätte", "gehabt"],
-          "correctIndex": 2,
+          "options": [
+            "gehabt",
+            "hätte",
+            "hatte",
+            "habe"
+          ],
+          "correctIndex": 1,
           "explanation": "'hätte' is the Konjunktiv II of 'haben' — it's the simple past 'hatte' with an umlaut: hatte → hätte."
         },
         {
           "type": "fill-blank",
           "prompt": "Wenn ich Zeit ___, würde ich mehr lesen. (If I had time, I would read more.)",
-          "acceptedAnswers": ["hätte"],
+          "acceptedAnswers": [
+            "hätte"
+          ],
           "hint": "Konjunktiv II of 'haben' for ich — the 'wenn' clause verb."
         },
         {
           "type": "multiple-choice",
           "prompt": "Wenn ich du ___, würde ich das nicht machen. (If I were you, I wouldn't do that.)",
-          "options": ["war", "bin", "wäre", "sei"],
-          "correctIndex": 2,
+          "options": [
+            "war",
+            "wäre",
+            "sei",
+            "bin"
+          ],
+          "correctIndex": 1,
           "explanation": "'wäre' is the Konjunktiv II of 'sein'. This is an unreal/hypothetical condition (I am not you), so Konjunktiv II is required."
         },
         {
           "type": "fill-blank",
           "prompt": "Das ___ toll! (That would be great!)",
-          "acceptedAnswers": ["wäre"],
+          "acceptedAnswers": [
+            "wäre"
+          ],
           "hint": "Konjunktiv II of 'sein' — expresses hypothetical state."
         },
         {
           "type": "matching",
           "prompt": "Match each infinitive to its Konjunktiv II form:",
           "pairs": [
-            { "left": "haben", "right": "hätte" },
-            { "left": "sein", "right": "wäre" },
-            { "left": "können", "right": "könnte" },
-            { "left": "müssen", "right": "müsste" }
+            {
+              "left": "haben",
+              "right": "hätte"
+            },
+            {
+              "left": "sein",
+              "right": "wäre"
+            },
+            {
+              "left": "können",
+              "right": "könnte"
+            },
+            {
+              "left": "müssen",
+              "right": "müsste"
+            }
           ]
         },
         {
           "type": "fill-blank",
           "prompt": "Ich ___ gerne mitkommen, aber ich muss arbeiten. (I would like to come along, but I have to work.)",
-          "acceptedAnswers": ["würde", "könnte"],
+          "acceptedAnswers": [
+            "würde",
+            "könnte"
+          ],
           "hint": "Use 'würde' (would) or 'könnte' (could) for a hypothetical desire."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence expresses a past unreal condition?",
           "options": [
+            "Wenn ich Zeit haben würde, käme ich.",
             "Wenn ich Zeit hätte, würde ich kommen.",
-            "Wenn ich Zeit gehabt hätte, wäre ich gekommen.",
             "Wenn ich Zeit habe, komme ich.",
-            "Wenn ich Zeit haben würde, käme ich."
+            "Wenn ich Zeit gehabt hätte, wäre ich gekommen."
           ],
-          "correctIndex": 1,
+          "correctIndex": 3,
           "explanation": "'Wenn ich Zeit gehabt hätte, wäre ich gekommen' = past unreal condition (Konjunktiv II perfect). The situation was in the past and cannot be changed. Option A is present hypothetical."
         },
         {
           "type": "fill-blank",
           "prompt": "Er ___ nicht so müde, wenn er früher ins Bett gegangen wäre. (He would not be so tired if he had gone to bed earlier.)",
-          "acceptedAnswers": ["wäre"],
+          "acceptedAnswers": [
+            "wäre"
+          ],
           "hint": "Konjunktiv II of 'sein' for er/sie/es — expresses a hypothetical state."
         }
       ]
@@ -164,77 +271,128 @@
       "explanation": "German conditional sentences (Konditionalsätze) follow predictable patterns based on whether the condition is real, hypothetical, or counterfactual. TYPE 1 — Real condition (indicative): 'Wenn es morgen regnet, bleibe ich zu Hause.' (If it rains tomorrow, I'll stay home.) TYPE 2 — Hypothetical/unreal present (Konjunktiv II): 'Wenn ich Zeit hätte, würde ich kommen.' (If I had time, I would come — but I don't.) TYPE 3 — Counterfactual past (Konjunktiv II perfect): 'Wenn ich das gewusst hätte, hätte ich anders gehandelt.' (If I had known, I would have acted differently.) The 'dann' (then) in the main clause is optional but common in spoken German.",
       "tip": "Type 2 conditionals: wenn + Konjunktiv II ... würde + infinitive (or Konjunktiv II form). Type 3 conditionals: wenn + Partizip II + hätte/wäre ... Partizip II + hätte/wäre. The wenn-clause always has verb-final order. When the wenn-clause comes first, the main clause begins with the verb (inverted order).",
       "examples": [
-        { "de": "Wenn ich Hunger habe, esse ich etwas. (Type 1)", "en": "If I'm hungry, I eat something. (real condition)", "highlight": "Wenn ... habe" },
-        { "de": "Wenn ich Hunger hätte, würde ich etwas essen. (Type 2)", "en": "If I were hungry, I would eat something. (hypothetical)", "highlight": "hätte ... würde ... essen" },
-        { "de": "Wenn ich Hunger gehabt hätte, hätte ich etwas gegessen. (Type 3)", "en": "If I had been hungry, I would have eaten something. (past counterfactual)", "highlight": "gehabt hätte ... hätte ... gegessen" },
-        { "de": "Wenn ich Lottogewinner wäre, würde ich nicht mehr arbeiten.", "en": "If I were a lottery winner, I wouldn't work anymore.", "highlight": "wäre ... würde ... arbeiten" },
-        { "de": "Hätte ich mehr Zeit, würde ich Klavier lernen.", "en": "If I had more time, I would learn piano. (inverted ohne 'wenn')", "highlight": "Hätte ... würde ... lernen" }
+        {
+          "de": "Wenn ich Hunger habe, esse ich etwas. (Type 1)",
+          "en": "If I'm hungry, I eat something. (real condition)",
+          "highlight": "Wenn ... habe"
+        },
+        {
+          "de": "Wenn ich Hunger hätte, würde ich etwas essen. (Type 2)",
+          "en": "If I were hungry, I would eat something. (hypothetical)",
+          "highlight": "hätte ... würde ... essen"
+        },
+        {
+          "de": "Wenn ich Hunger gehabt hätte, hätte ich etwas gegessen. (Type 3)",
+          "en": "If I had been hungry, I would have eaten something. (past counterfactual)",
+          "highlight": "gehabt hätte ... hätte ... gegessen"
+        },
+        {
+          "de": "Wenn ich Lottogewinner wäre, würde ich nicht mehr arbeiten.",
+          "en": "If I were a lottery winner, I wouldn't work anymore.",
+          "highlight": "wäre ... würde ... arbeiten"
+        },
+        {
+          "de": "Hätte ich mehr Zeit, würde ich Klavier lernen.",
+          "en": "If I had more time, I would learn piano. (inverted ohne 'wenn')",
+          "highlight": "Hätte ... würde ... lernen"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "Which type of conditional is: 'Wenn es schneit, bauen wir einen Schneemann.'?",
-          "options": ["Type 1 (real/open condition)", "Type 2 (present hypothetical)", "Type 3 (past counterfactual)", "None of the above"],
-          "correctIndex": 0,
+          "options": [
+            "None of the above",
+            "Type 1 (real/open condition)",
+            "Type 3 (past counterfactual)",
+            "Type 2 (present hypothetical)"
+          ],
+          "correctIndex": 1,
           "explanation": "Both verbs are in the indicative (schneit, bauen) — this is a Type 1 real/open conditional. It's genuinely possible it will snow."
         },
         {
           "type": "fill-blank",
           "prompt": "Wenn ich ein Millionär ___, ___ ich ein Schloss kaufen.",
-          "acceptedAnswers": ["wäre ... würde", "wäre ... würde ich"],
+          "acceptedAnswers": [
+            "wäre ... würde",
+            "wäre ... würde ich"
+          ],
           "hint": "Type 2 hypothetical: Konjunktiv II of 'sein' + würde + infinitive."
         },
         {
           "type": "multiple-choice",
           "prompt": "Identify the Type 3 conditional sentence:",
           "options": [
-            "Wenn ich mehr übe, werde ich besser.",
             "Wenn ich mehr üben würde, wäre ich besser.",
             "Wenn ich mehr geübt hätte, wäre ich besser geworden.",
-            "Wenn ich mehr üben kann, werde ich besser sein."
+            "Wenn ich mehr üben kann, werde ich besser sein.",
+            "Wenn ich mehr übe, werde ich besser."
           ],
-          "correctIndex": 2,
+          "correctIndex": 1,
           "explanation": "'Wenn ich mehr geübt hätte, wäre ich besser geworden' = Type 3 (past counterfactual). Both clauses use Konjunktiv II perfect: geübt hätte / wäre ... geworden."
         },
         {
           "type": "fill-blank",
           "prompt": "Wenn ich das früher ___ (wissen), ___ ich dir geholfen. (If I had known earlier, I would have helped you.)",
-          "acceptedAnswers": ["gewusst hätte ... hätte", "gewusst hätte"],
+          "acceptedAnswers": [
+            "gewusst hätte ... hätte",
+            "gewusst hätte"
+          ],
           "hint": "Type 3: Partizip II of 'wissen' + hätte in wenn-clause; main clause also Konjunktiv II perfect."
         },
         {
           "type": "multiple-choice",
           "prompt": "When the wenn-clause comes first in a conditional sentence, what happens in the main clause?",
           "options": [
-            "The verb stays in position 2.",
-            "The verb goes to the end.",
             "The verb moves to position 1 (before the subject).",
-            "The word order doesn't change."
+            "The word order doesn't change.",
+            "The verb stays in position 2.",
+            "The verb goes to the end."
           ],
-          "correctIndex": 2,
+          "correctIndex": 0,
           "explanation": "When the wenn-clause precedes the main clause, the main clause uses inverted order: verb before subject. 'Wenn ich Zeit hätte, würde ich kommen' — 'würde' comes before 'ich'."
         },
         {
           "type": "fill-blank",
           "prompt": "___ ich mehr Geld, würde ich öfter reisen. (If I had more money, I would travel more.)",
-          "acceptedAnswers": ["Hätte", "Wenn ich"],
+          "acceptedAnswers": [
+            "Hätte",
+            "Wenn ich"
+          ],
           "hint": "This is a conditional without 'wenn' — invert to put Konjunktiv II verb first: 'Hätte ich...'"
         },
         {
           "type": "matching",
           "prompt": "Match each conditional type to its structure:",
           "pairs": [
-            { "left": "Type 1 (real)", "right": "Indicative in both clauses" },
-            { "left": "Type 2 (hypothetical)", "right": "wenn + Konjunktiv II ... würde + Infinitiv" },
-            { "left": "Type 3 (counterfactual past)", "right": "wenn + Partizip II + hätte/wäre ... Partizip II + hätte/wäre" },
-            { "left": "Inverted condition (no wenn)", "right": "Konjunktiv II verb first: Hätte ich... / Wäre ich..." }
+            {
+              "left": "Type 1 (real)",
+              "right": "Indicative in both clauses"
+            },
+            {
+              "left": "Type 2 (hypothetical)",
+              "right": "wenn + Konjunktiv II ... würde + Infinitiv"
+            },
+            {
+              "left": "Type 3 (counterfactual past)",
+              "right": "wenn + Partizip II + hätte/wäre ... Partizip II + hätte/wäre"
+            },
+            {
+              "left": "Inverted condition (no wenn)",
+              "right": "Konjunktiv II verb first: Hätte ich... / Wäre ich..."
+            }
           ]
         },
         {
           "type": "multiple-choice",
           "prompt": "Wenn ich du wäre, ___ ich das sofort erledigen.",
-          "options": ["werde", "würde", "habe", "hätte"],
-          "correctIndex": 1,
+          "options": [
+            "hätte",
+            "habe",
+            "werde",
+            "würde"
+          ],
+          "correctIndex": 3,
           "explanation": "'würde' is correct — this is a Type 2 hypothetical conditional. Main clause: 'würde ich das sofort erledigen'."
         }
       ]

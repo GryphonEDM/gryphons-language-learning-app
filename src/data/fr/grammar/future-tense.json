@@ -4,7 +4,9 @@
   "nameFr": "Le futur",
   "icon": "🚀",
   "tier": "A2",
-  "prerequisites": ["imparfait"],
+  "prerequisites": [
+    "imparfait"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,67 +15,117 @@
       "explanation": "The futur proche (near future) is formed with the present tense of aller + an infinitive: je vais manger (I'm going to eat), tu vas partir (you're going to leave), il/elle va pleuvoir (it's going to rain). The conjugations of aller in the present are: je vais, tu vas, il/elle va, nous allons, vous allez, ils/elles vont. This structure is the most common way to express the future in everyday spoken French — far more frequent than the futur simple. Use it for planned or imminent events, things that are certain to happen, or anything you think of as 'around the corner'. Negation: place ne...pas around the conjugated form of aller — the infinitive stays at the end: Je ne vais pas manger (I'm not going to eat), Nous n'allons pas partir (We're not going to leave). With reflexive verbs, the reflexive pronoun comes before the infinitive and must agree with the subject: Je vais me lever (I'm going to get up), Il va se coucher (He's going to go to bed), Vous allez vous reposer (You're going to rest).",
       "tip": "This is the most common way to express the future in spoken French! Think of it as the direct equivalent of English 'going to'. The word order for negation is: subject + ne + aller + pas + infinitive. For reflexives, remember the pronoun belongs right before the infinitive: je vais ME lever, not je me vais lever.",
       "examples": [
-        { "fr": "Je vais manger une pizza.", "en": "I'm going to eat a pizza.", "highlight": "vais manger" },
-        { "fr": "Tu vas partir ce soir.", "en": "You're going to leave tonight.", "highlight": "vas partir" },
-        { "fr": "Il va pleuvoir demain.", "en": "It's going to rain tomorrow.", "highlight": "va pleuvoir" },
-        { "fr": "Nous allons voyager en France.", "en": "We're going to travel to France.", "highlight": "allons voyager" },
-        { "fr": "Je ne vais pas travailler ce weekend.", "en": "I'm not going to work this weekend.", "highlight": "ne vais pas travailler" },
-        { "fr": "Il va se coucher tôt ce soir.", "en": "He's going to go to bed early tonight.", "highlight": "va se coucher" }
+        {
+          "fr": "Je vais manger une pizza.",
+          "en": "I'm going to eat a pizza.",
+          "highlight": "vais manger"
+        },
+        {
+          "fr": "Tu vas partir ce soir.",
+          "en": "You're going to leave tonight.",
+          "highlight": "vas partir"
+        },
+        {
+          "fr": "Il va pleuvoir demain.",
+          "en": "It's going to rain tomorrow.",
+          "highlight": "va pleuvoir"
+        },
+        {
+          "fr": "Nous allons voyager en France.",
+          "en": "We're going to travel to France.",
+          "highlight": "allons voyager"
+        },
+        {
+          "fr": "Je ne vais pas travailler ce weekend.",
+          "en": "I'm not going to work this weekend.",
+          "highlight": "ne vais pas travailler"
+        },
+        {
+          "fr": "Il va se coucher tôt ce soir.",
+          "en": "He's going to go to bed early tonight.",
+          "highlight": "va se coucher"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'She is going to study' in French?",
-          "options": ["Elle va étudier", "Elle vais étudier", "Elle aller étudier"],
+          "options": [
+            "Elle va étudier",
+            "Elle vais étudier",
+            "Elle aller étudier"
+          ],
           "correctIndex": 0,
           "explanation": "Futur proche = aller (present) + infinitive. For elle, aller conjugates as va: elle va étudier."
         },
         {
           "type": "fill-blank",
           "prompt": "Nous ___ (aller) regarder un film ce soir. (We are going to watch a film tonight.)",
-          "acceptedAnswers": ["allons"],
+          "acceptedAnswers": [
+            "allons"
+          ],
           "hint": "Conjugate aller in the present tense for nous",
           "explanation": "The nous form of aller in the present tense is allons: nous allons regarder un film."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly expresses 'I am not going to leave'?",
-          "options": ["Je ne vais pas partir", "Je vais ne pas partir", "Je ne pas vais partir"],
-          "correctIndex": 0,
+          "options": [
+            "Je ne pas vais partir",
+            "Je vais ne pas partir",
+            "Je ne vais pas partir"
+          ],
+          "correctIndex": 2,
           "explanation": "In negation, ne...pas wraps the conjugated verb (vais). The infinitive (partir) stays at the end: Je ne vais pas partir."
         },
         {
           "type": "fill-blank",
           "prompt": "Tu ___ (aller) finir tes devoirs. (You are going to finish your homework.)",
-          "acceptedAnswers": ["vas"],
+          "acceptedAnswers": [
+            "vas"
+          ],
           "hint": "Conjugate aller in the present tense for tu",
           "explanation": "The tu form of aller in the present tense is vas: tu vas finir tes devoirs."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I'm going to get up early' using a reflexive verb?",
-          "options": ["Je vais me lever tôt", "Je me vais lever tôt", "Je vais lever me tôt"],
+          "options": [
+            "Je vais me lever tôt",
+            "Je me vais lever tôt",
+            "Je vais lever me tôt"
+          ],
           "correctIndex": 0,
           "explanation": "With reflexive verbs in the futur proche, the reflexive pronoun (me) goes directly before the infinitive: je vais ME lever tôt."
         },
         {
           "type": "fill-blank",
           "prompt": "Ils ___ (aller) arriver dans une heure. (They are going to arrive in an hour.)",
-          "acceptedAnswers": ["vont"],
+          "acceptedAnswers": [
+            "vont"
+          ],
           "hint": "Conjugate aller in the present tense for ils",
           "explanation": "The ils/elles form of aller in the present tense is vont: ils vont arriver dans une heure."
         },
         {
           "type": "multiple-choice",
           "prompt": "What does 'Vous allez vous reposer' mean?",
-          "options": ["You are going to rest", "You are going to get up", "You are resting now"],
-          "correctIndex": 0,
+          "options": [
+            "You are going to get up",
+            "You are going to rest",
+            "You are resting now"
+          ],
+          "correctIndex": 1,
           "explanation": "Vous allez = you are going to; se reposer = to rest. The reflexive pronoun vous matches the subject: vous allez vous reposer."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which option correctly translates 'We are not going to eat at the restaurant'?",
-          "options": ["Nous n'allons pas manger au restaurant", "Nous allons ne manger pas au restaurant", "Nous n'allons manger pas au restaurant"],
+          "options": [
+            "Nous n'allons pas manger au restaurant",
+            "Nous n'allons manger pas au restaurant",
+            "Nous allons ne manger pas au restaurant"
+          ],
           "correctIndex": 0,
           "explanation": "Negation wraps the conjugated form of aller: nous n'allons pas. The infinitive (manger) follows: Nous n'allons pas manger au restaurant."
         }
@@ -85,68 +137,118 @@
       "explanation": "The futur simple is formed by adding endings directly to the infinitive (for -ER and -IR verbs) or to the infinitive minus its final -e (for -RE verbs). The endings are: -ai, -as, -a, -ons, -ez, -ont — these are the same as the present tense of avoir (minus av-), so they are easy to remember. Examples: parler → je parlerai, tu parleras, il parlera, nous parlerons, vous parlerez, ils parleront; finir → je finirai; vendre → je vendrai (drop the final -e). Many common verbs have irregular stems that must be memorized — the endings stay the same: être → ser- (je serai), avoir → aur- (j'aurai), aller → ir- (j'irai), faire → fer- (je ferai), vouloir → voudr- (je voudrai), pouvoir → pourr- (je pourrai), savoir → saur- (je saurai), venir → viendr- (je viendrai), voir → verr- (je verrai), envoyer → enverr- (j'enverrai). Use the futur simple for predictions (Il fera beau demain — It will be nice tomorrow), promises (Je t'appellerai — I will call you), and — crucially — in clauses after quand, lorsque, and dès que when the context is future (Quand tu arriveras, appelle-moi — When you arrive, call me). Note: French uses futur simple after quand + future context where English uses the present tense.",
       "tip": "The endings -ai, -as, -a, -ons, -ez, -ont are identical to the present tense of avoir (j'ai, tu as, il a, nous avons, vous avez, ils ont) — minus the av-. The key pitfall for irregular stems: aller becomes ir- (not all-), so j'irai not j'allerai. Also remember: after quand/lorsque/dès que with a future meaning, French requires futur simple — never use present tense here as in English.",
       "examples": [
-        { "fr": "Je parlerai au professeur demain.", "en": "I will speak to the teacher tomorrow.", "highlight": "parlerai" },
-        { "fr": "Il fera beau ce weekend.", "en": "The weather will be nice this weekend.", "highlight": "fera" },
-        { "fr": "Nous serons prêts à midi.", "en": "We will be ready at noon.", "highlight": "serons" },
-        { "fr": "Tu pourras venir avec nous.", "en": "You will be able to come with us.", "highlight": "pourras" },
-        { "fr": "Quand tu arriveras, appelle-moi.", "en": "When you arrive, call me.", "highlight": "arriveras" },
-        { "fr": "Ils verront la différence bientôt.", "en": "They will see the difference soon.", "highlight": "verront" }
+        {
+          "fr": "Je parlerai au professeur demain.",
+          "en": "I will speak to the teacher tomorrow.",
+          "highlight": "parlerai"
+        },
+        {
+          "fr": "Il fera beau ce weekend.",
+          "en": "The weather will be nice this weekend.",
+          "highlight": "fera"
+        },
+        {
+          "fr": "Nous serons prêts à midi.",
+          "en": "We will be ready at noon.",
+          "highlight": "serons"
+        },
+        {
+          "fr": "Tu pourras venir avec nous.",
+          "en": "You will be able to come with us.",
+          "highlight": "pourras"
+        },
+        {
+          "fr": "Quand tu arriveras, appelle-moi.",
+          "en": "When you arrive, call me.",
+          "highlight": "arriveras"
+        },
+        {
+          "fr": "Ils verront la différence bientôt.",
+          "en": "They will see the difference soon.",
+          "highlight": "verront"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "What is the futur simple of 'parler' for 'je'?",
-          "options": ["je parlerai", "je parlerait", "je parlerais"],
-          "correctIndex": 0,
+          "options": [
+            "je parlerais",
+            "je parlerait",
+            "je parlerai"
+          ],
+          "correctIndex": 2,
           "explanation": "Futur simple endings: -ai, -as, -a, -ons, -ez, -ont. For je: parler + ai = je parlerai. The ending -ait would be conditional; -ais is also conditional."
         },
         {
           "type": "fill-blank",
           "prompt": "Elle ___ (finir) son travail demain. (She will finish her work tomorrow.)",
-          "acceptedAnswers": ["finira"],
+          "acceptedAnswers": [
+            "finira"
+          ],
           "hint": "Add the il/elle futur simple ending to the infinitive",
           "explanation": "For -IR verbs, keep the full infinitive and add the ending: finir + a = finira. Elle finira son travail demain."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is the irregular futur simple stem for 'être'?",
-          "options": ["ser-", "êtr-", "est-"],
-          "correctIndex": 0,
+          "options": [
+            "êtr-",
+            "est-",
+            "ser-"
+          ],
+          "correctIndex": 2,
           "explanation": "être has an irregular stem in the futur simple: ser-. So je serai (I will be), tu seras, il sera, etc."
         },
         {
           "type": "fill-blank",
           "prompt": "Nous ___ (aller) en vacances l'été prochain. (We will go on holiday next summer.)",
-          "acceptedAnswers": ["irons"],
+          "acceptedAnswers": [
+            "irons"
+          ],
           "hint": "aller has an irregular futur simple stem: ir-",
           "explanation": "aller → irregular stem ir-. Add -ons for nous: ir + ons = irons. Nous irons en vacances l'été prochain."
         },
         {
           "type": "multiple-choice",
           "prompt": "How do you say 'I will be able to come' in French?",
-          "options": ["Je pourrai venir", "Je peuverai venir", "Je pouvoirai venir"],
+          "options": [
+            "Je pourrai venir",
+            "Je peuverai venir",
+            "Je pouvoirai venir"
+          ],
           "correctIndex": 0,
           "explanation": "pouvoir has the irregular futur simple stem pourr-. Add -ai for je: pourr + ai = pourrai. Je pourrai venir."
         },
         {
           "type": "fill-blank",
           "prompt": "Vous ___ (vendre) votre voiture la semaine prochaine. (You will sell your car next week.)",
-          "acceptedAnswers": ["vendrez"],
+          "acceptedAnswers": [
+            "vendrez"
+          ],
           "hint": "For -RE verbs, drop the final -e before adding endings",
           "explanation": "vendre is a -RE verb: drop the final -e to get vendr-, then add -ez for vous: vendr + ez = vendrez."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which sentence correctly uses the futur simple after 'quand'?",
-          "options": ["Quand il arrivera, nous mangerons.", "Quand il arrive, nous mangerons.", "Quand il arrivera, nous mangeons."],
-          "correctIndex": 0,
+          "options": [
+            "Quand il arrivera, nous mangeons.",
+            "Quand il arrive, nous mangerons.",
+            "Quand il arrivera, nous mangerons."
+          ],
+          "correctIndex": 2,
           "explanation": "After quand in a future context, French requires futur simple in BOTH clauses. Quand il arrivera (when he arrives) + nous mangerons (we will eat). English uses present after 'when' but French uses futur simple."
         },
         {
           "type": "multiple-choice",
           "prompt": "What is 'je ferai' in English?",
-          "options": ["I will do / I will make", "I am doing", "I was doing"],
-          "correctIndex": 0,
+          "options": [
+            "I was doing",
+            "I will do / I will make",
+            "I am doing"
+          ],
+          "correctIndex": 1,
           "explanation": "faire has the irregular futur simple stem fer-. Je ferai = I will do / I will make. The stem fer- must be memorized — do not try to derive it from the infinitive faire."
         }
       ]

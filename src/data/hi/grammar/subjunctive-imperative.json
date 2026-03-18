@@ -4,7 +4,10 @@
   "nameHi": "संभावना और आज्ञा वाचक",
   "icon": "🙏",
   "tier": "B2",
-  "prerequisites": ["verb-conjugation", "pronouns-honorifics"],
+  "prerequisites": [
+    "verb-conjugation",
+    "pronouns-honorifics"
+  ],
   "estimatedMinutes": 20,
   "sections": [
     {
@@ -13,31 +16,59 @@
       "explanation": "The subjunctive mood in Hindi expresses wishes, possibilities, doubts, suggestions, and hypothetical situations — things that may or may not happen. It is formed by using a special set of verb endings that differ from the indicative (factual) mood. The subjunctive endings are: मैं -ऊँ (e.g., जाऊँ), तू -ए (जाए), तुम -ओ (जाओ), वह/यह -ए (जाए), हम -एँ (जाएँ), आप -एँ (जाएँ), वे/ये -एँ (जाएँ). The subjunctive is used after certain constructions: शायद (perhaps) — शायद वह आए (Perhaps he may come); चाहना कि (to want that) — मैं चाहता हूँ कि तुम जाओ (I want you to go); ज़रूरी है कि (it is necessary that) — ज़रूरी है कि वह पढ़े (It is necessary that he study). The subjunctive never takes the auxiliary है/हैं — the verb form alone expresses the mood.",
       "tip": "The subjunctive form for तुम (-ओ) looks identical to the familiar imperative (तुम जाओ). Context tells you whether it is a command or a subjunctive wish. After शायद, कि, or in conditional clauses, it is subjunctive.",
       "examples": [
-        { "hi": "शायद कल बारिश हो।", "en": "Perhaps it may rain tomorrow.", "highlight": "हो" },
-        { "hi": "मैं चाहता हूँ कि तुम मेरे साथ चलो।", "en": "I want you to come with me.", "highlight": "चलो" },
-        { "hi": "ज़रूरी है कि हम समय पर पहुँचें।", "en": "It is necessary that we arrive on time.", "highlight": "पहुँचें" },
-        { "hi": "भगवान करे सब ठीक हो जाए।", "en": "May God make everything alright.", "highlight": "हो जाए" }
+        {
+          "hi": "शायद कल बारिश हो।",
+          "en": "Perhaps it may rain tomorrow.",
+          "highlight": "हो"
+        },
+        {
+          "hi": "मैं चाहता हूँ कि तुम मेरे साथ चलो।",
+          "en": "I want you to come with me.",
+          "highlight": "चलो"
+        },
+        {
+          "hi": "ज़रूरी है कि हम समय पर पहुँचें।",
+          "en": "It is necessary that we arrive on time.",
+          "highlight": "पहुँचें"
+        },
+        {
+          "hi": "भगवान करे सब ठीक हो जाए।",
+          "en": "May God make everything alright.",
+          "highlight": "हो जाए"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"शायद वह कल _____\" — सही रूप चुनें। (Choose the correct form for: Perhaps he may come tomorrow.)",
-          "options": ["आए", "आता है", "आएगा"],
-          "correctIndex": 0,
+          "options": [
+            "आएगा",
+            "आता है",
+            "आए"
+          ],
+          "correctIndex": 2,
           "explanation": "After शायद (perhaps), the subjunctive form is used. For वह, the subjunctive of आना is आए. The indicative आता है would state a fact, and the future आएगा would express certainty — but शायद expresses uncertainty, requiring the subjunctive."
         },
         {
           "type": "multiple-choice",
           "prompt": "संभावनार्थक (subjunctive) में सहायक क्रिया है/हैं का प्रयोग होता है या नहीं? (Is the auxiliary है/हैं used in the subjunctive?)",
-          "options": ["नहीं, सहायक क्रिया नहीं लगती (No, no auxiliary is used)", "हाँ, हमेशा लगती है (Yes, always)", "केवल बहुवचन में (Only in plural)"],
-          "correctIndex": 0,
+          "options": [
+            "हाँ, हमेशा लगती है (Yes, always)",
+            "केवल बहुवचन में (Only in plural)",
+            "नहीं, सहायक क्रिया नहीं लगती (No, no auxiliary is used)"
+          ],
+          "correctIndex": 2,
           "explanation": "The subjunctive mood in Hindi never takes the auxiliary है/हैं. The bare subjunctive verb form alone expresses the mood: शायद वह आए (not *शायद वह आए है). This is one of the key distinguishing features of the subjunctive."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"मैं चाहता हूँ कि वह _____\" — रिक्त स्थान में 'पढ़ना' का कौन सा रूप आएगा? (Fill in the blank with the correct form of पढ़ना.)",
-          "options": ["पढ़े", "पढ़ता है", "पढ़ेगा"],
-          "correctIndex": 0,
+          "options": [
+            "पढ़ेगा",
+            "पढ़ता है",
+            "पढ़े"
+          ],
+          "correctIndex": 2,
           "explanation": "After चाहना कि (to want that), the subjunctive is required. For वह, the subjunctive of पढ़ना is पढ़े. The construction 'मैं चाहता हूँ कि + subjunctive' is one of the most common uses of the subjunctive in Hindi."
         }
       ]
@@ -48,31 +79,59 @@
       "explanation": "Hindi has three levels of imperative (command) forms corresponding to the three second-person pronouns, each carrying a different level of formality and politeness. The तू form (intimate/rude): uses the bare verb stem — तू जा (Go!), तू बैठ (Sit!), तू खा (Eat!). This form is used with very close friends, children, animals, or to show anger/disrespect. The तुम form (informal/friendly): adds -ओ — तुम जाओ (Go), तुम बैठो (Sit), तुम खाओ (Eat). This is the standard informal imperative used with friends, peers, and younger people. The आप form (formal/respectful): adds -इए/-इये — आप जाइए (Please go), आप बैठिए (Please sit), आप खाइए (Please eat). This is the polite imperative used with elders, strangers, and in formal situations. There is also an extra-polite form using -इएगा: आप बैठिएगा (Would you please sit) which adds a future tense marker to soften the request further.",
       "tip": "When in doubt about which form to use, always default to the आप form (-इए). It is never wrong to be too polite in Hindi. Using तू with the wrong person can be deeply offensive.",
       "examples": [
-        { "hi": "तू चुप कर! (तू — very direct/harsh)", "en": "Be quiet! (intimate/rude)", "highlight": "कर" },
-        { "hi": "तुम यहाँ बैठो। (तुम — friendly)", "en": "Sit here. (informal)", "highlight": "बैठो" },
-        { "hi": "आप अंदर आइए। (आप — respectful)", "en": "Please come inside. (formal/polite)", "highlight": "आइए" },
-        { "hi": "ज़रा ये देखिएगा। (extra polite)", "en": "Would you please look at this.", "highlight": "देखिएगा" }
+        {
+          "hi": "तू चुप कर! (तू — very direct/harsh)",
+          "en": "Be quiet! (intimate/rude)",
+          "highlight": "कर"
+        },
+        {
+          "hi": "तुम यहाँ बैठो। (तुम — friendly)",
+          "en": "Sit here. (informal)",
+          "highlight": "बैठो"
+        },
+        {
+          "hi": "आप अंदर आइए। (आप — respectful)",
+          "en": "Please come inside. (formal/polite)",
+          "highlight": "आइए"
+        },
+        {
+          "hi": "ज़रा ये देखिएगा। (extra polite)",
+          "en": "Would you please look at this.",
+          "highlight": "देखिएगा"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"बैठना\" का आप-स्तर का आज्ञार्थक रूप क्या है? (What is the आप-level imperative of बैठना?)",
-          "options": ["बैठिए", "बैठो", "बैठ"],
-          "correctIndex": 0,
+          "options": [
+            "बैठो",
+            "बैठिए",
+            "बैठ"
+          ],
+          "correctIndex": 1,
           "explanation": "The आप-level imperative adds -इए to the verb stem: बैठ + इए = बैठिए. This is the polite form. बैठो is the तुम-level (informal), and बैठ is the तू-level (intimate/rude)."
         },
         {
           "type": "multiple-choice",
           "prompt": "अगर आप किसी अजनबी से बात कर रहे हैं, तो कौन सा रूप उचित है? (Which form is appropriate with a stranger?)",
-          "options": ["आप बैठिए", "तुम बैठो", "तू बैठ"],
-          "correctIndex": 0,
+          "options": [
+            "तुम बैठो",
+            "आप बैठिए",
+            "तू बैठ"
+          ],
+          "correctIndex": 1,
           "explanation": "With strangers, you should always use the आप form (बैठिए) to show respect. Using तुम or तू with a stranger would be considered rude or overly familiar. Hindi social norms require formal address with people you don't know well."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"-इएगा\" प्रत्यय किस लिए प्रयोग होता है? (What is the -इएगा suffix used for?)",
-          "options": ["अतिरिक्त विनम्रता के लिए (For extra politeness)", "क्रोध व्यक्त करने के लिए (To express anger)", "भूतकाल के लिए (For past tense)"],
-          "correctIndex": 0,
+          "options": [
+            "क्रोध व्यक्त करने के लिए (To express anger)",
+            "भूतकाल के लिए (For past tense)",
+            "अतिरिक्त विनम्रता के लिए (For extra politeness)"
+          ],
+          "correctIndex": 2,
           "explanation": "The -इएगा suffix creates an extra-polite request by adding a future tense marker to the imperative. It softens the command into a gentle request: बैठिएगा (Would you please sit) sounds more courteous than even the already polite बैठिए (Please sit)."
         }
       ]
@@ -83,30 +142,58 @@
       "explanation": "Beyond the basic imperative forms, Hindi has several constructions for making polite requests and expressing prohibitions. For polite requests, you can use: कृपया (please, formal) — कृपया बैठिए (Please sit); ज़रा (just/a bit, softener) — ज़रा सुनिए (Just listen for a moment); क्या आप...सकते हैं? (Can you...?) — क्या आप दरवाज़ा खोल सकते हैं? (Can you open the door?). For prohibitions (negative commands), Hindi uses मत (don't) with तू/तुम forms and न with आप/subjunctive forms: तुम मत जाओ (Don't go, informal); आप न जाइए (Please don't go, formal); मत रोओ (Don't cry). The word मत is placed directly before the verb. For stronger prohibitions, you can use नहीं with the future tense: तुम वहाँ नहीं जाओगे (You will not go there — stern prohibition). Note that मत is used exclusively with imperatives, while नहीं is the general negation word.",
       "tip": "To soften any request, add ज़रा (just/a little) before the verb: ज़रा बताइए (Just tell me) sounds much gentler than बताइए (Tell me). Combining कृपया and -इए is the most polite form possible: कृपया बताइए (Please do tell).",
       "examples": [
-        { "hi": "कृपया यहाँ हस्ताक्षर कीजिए।", "en": "Please sign here.", "highlight": "कृपया" },
-        { "hi": "ज़रा इधर आइए।", "en": "Just come here (for a moment).", "highlight": "ज़रा" },
-        { "hi": "तुम वहाँ मत जाओ, ख़तरनाक है।", "en": "Don't go there, it's dangerous.", "highlight": "मत जाओ" },
-        { "hi": "क्या आप मेरी मदद कर सकते हैं?", "en": "Can you help me? (polite request as question)", "highlight": "क्या आप...सकते हैं" }
+        {
+          "hi": "कृपया यहाँ हस्ताक्षर कीजिए।",
+          "en": "Please sign here.",
+          "highlight": "कृपया"
+        },
+        {
+          "hi": "ज़रा इधर आइए।",
+          "en": "Just come here (for a moment).",
+          "highlight": "ज़रा"
+        },
+        {
+          "hi": "तुम वहाँ मत जाओ, ख़तरनाक है।",
+          "en": "Don't go there, it's dangerous.",
+          "highlight": "मत जाओ"
+        },
+        {
+          "hi": "क्या आप मेरी मदद कर सकते हैं?",
+          "en": "Can you help me? (polite request as question)",
+          "highlight": "क्या आप...सकते हैं"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "prompt": "\"मत\" और \"न\" में क्या अंतर है निषेधात्मक आज्ञा में? (What is the difference between मत and न in negative commands?)",
-          "options": ["मत तू/तुम के साथ, न आप/संभावनार्थक के साथ (मत with तू/तुम, न with आप/subjunctive)", "दोनों एक ही हैं (Both are the same)", "मत औपचारिक है, न अनौपचारिक (मत is formal, न is informal)"],
+          "options": [
+            "मत तू/तुम के साथ, न आप/संभावनार्थक के साथ (मत with तू/तुम, न with आप/subjunctive)",
+            "मत औपचारिक है, न अनौपचारिक (मत is formal, न is informal)",
+            "दोनों एक ही हैं (Both are the same)"
+          ],
           "correctIndex": 0,
           "explanation": "मत is used for direct prohibitions with तू/तुम imperatives: तुम मत जाओ (Don't go). न is used with आप forms and in subjunctive contexts: आप न जाइए (Please don't go), or ऐसा न करें (One should not do this). Using the right one matches the formality level."
         },
         {
           "type": "multiple-choice",
           "prompt": "सबसे विनम्र अनुरोध कौन सा है? (Which is the most polite request?)",
-          "options": ["कृपया ज़रा बताइएगा", "बता दे", "बता दो"],
-          "correctIndex": 0,
+          "options": [
+            "बता दो",
+            "बता दे",
+            "कृपया ज़रा बताइएगा"
+          ],
+          "correctIndex": 2,
           "explanation": "कृपया ज़रा बताइएगा combines three politeness strategies: कृपया (please), ज़रा (just/a bit, softener), and -इएगा (extra-polite imperative). This makes it the most courteous option. बता दे is the तू form (very direct) and बता दो is the तुम form (informal)."
         },
         {
           "type": "multiple-choice",
           "prompt": "\"ज़रा\" शब्द का अनुरोध में क्या कार्य है? (What role does ज़रा play in a request?)",
-          "options": ["यह अनुरोध को नरम बनाता है (It softens the request)", "यह आदेश को कठोर बनाता है (It makes the command harsher)", "यह प्रश्न बनाता है (It forms a question)"],
+          "options": [
+            "यह अनुरोध को नरम बनाता है (It softens the request)",
+            "यह आदेश को कठोर बनाता है (It makes the command harsher)",
+            "यह प्रश्न बनाता है (It forms a question)"
+          ],
           "correctIndex": 0,
           "explanation": "ज़रा literally means 'a little' or 'just', and when placed before an imperative, it softens the request by implying it will only take a small effort or moment: ज़रा सुनिए (Just listen for a moment) feels much gentler than सुनिए (Listen)."
         }

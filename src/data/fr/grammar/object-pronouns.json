@@ -4,7 +4,9 @@
   "nameFr": "Les pronoms compléments",
   "icon": "🔄",
   "tier": "B1",
-  "prerequisites": ["future-tense"],
+  "prerequisites": [
+    "future-tense"
+  ],
   "estimatedMinutes": 25,
   "sections": [
     {
@@ -13,68 +15,125 @@
       "explanation": "Direct object pronouns replace a noun that directly receives the action of the verb — there is no preposition before it. The pronouns are: me/m' (me), te/t' (you), le/l' (him/it, masculine), la/l' (her/it, feminine), nous (us), vous (you), les (them). They are placed BEFORE the conjugated verb. With the passé composé, the pronoun goes before the auxiliary verb, and the past participle must agree in gender and number with the pronoun. With verb + infinitive constructions (like vouloir + infinitive), the pronoun goes before the infinitive, not the conjugated verb. With negation, ne comes before the pronoun and pas comes after the conjugated verb: Je ne le mange pas.",
       "tip": "Use l' (with apostrophe) before a vowel or silent h for both le and la: Je l'aime (I love him/her), Il l'achète (He buys it). For passé composé agreement, remember: Elle l'a vue (she saw her — the past participle agrees feminine because la/l' refers to a feminine noun).",
       "examples": [
-        { "fr": "Je mange le gâteau → Je le mange.", "en": "I eat the cake → I eat it.", "highlight": "le" },
-        { "fr": "Tu vois Marie → Tu la vois.", "en": "You see Marie → You see her.", "highlight": "la" },
-        { "fr": "Nous regardons les films → Nous les regardons.", "en": "We watch the films → We watch them.", "highlight": "les" },
-        { "fr": "Elle a vu le film → Elle l'a vu.", "en": "She saw the film → She saw it.", "highlight": "l'a vu" },
-        { "fr": "Je veux manger la pizza → Je veux la manger.", "en": "I want to eat the pizza → I want to eat it.", "highlight": "la manger" },
-        { "fr": "Je ne le mange pas.", "en": "I don't eat it.", "highlight": "ne le … pas" }
+        {
+          "fr": "Je mange le gâteau → Je le mange.",
+          "en": "I eat the cake → I eat it.",
+          "highlight": "le"
+        },
+        {
+          "fr": "Tu vois Marie → Tu la vois.",
+          "en": "You see Marie → You see her.",
+          "highlight": "la"
+        },
+        {
+          "fr": "Nous regardons les films → Nous les regardons.",
+          "en": "We watch the films → We watch them.",
+          "highlight": "les"
+        },
+        {
+          "fr": "Elle a vu le film → Elle l'a vu.",
+          "en": "She saw the film → She saw it.",
+          "highlight": "l'a vu"
+        },
+        {
+          "fr": "Je veux manger la pizza → Je veux la manger.",
+          "en": "I want to eat the pizza → I want to eat it.",
+          "highlight": "la manger"
+        },
+        {
+          "fr": "Je ne le mange pas.",
+          "en": "I don't eat it.",
+          "highlight": "ne le … pas"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "Replace the direct object: 'Je cherche le livre.' → ?",
-          "options": ["Je lui cherche.", "Je le cherche.", "Je en cherche."],
-          "correctIndex": 1,
+          "options": [
+            "Je le cherche.",
+            "Je en cherche.",
+            "Je lui cherche."
+          ],
+          "correctIndex": 0,
           "explanation": "'le livre' is a masculine singular direct object, replaced by 'le'. The pronoun goes before the verb: Je le cherche."
         },
         {
           "type": "multiple-choice",
           "question": "Which sentence correctly replaces the object in 'Ils aiment la musique.'?",
-          "options": ["Ils l'aiment.", "Ils la aiment.", "Ils lui aiment."],
-          "correctIndex": 0,
+          "options": [
+            "Ils lui aiment.",
+            "Ils la aiment.",
+            "Ils l'aiment."
+          ],
+          "correctIndex": 2,
           "explanation": "'la' becomes 'l'' before the vowel in 'aiment'. The correct form is 'Ils l'aiment.'"
         },
         {
           "type": "fill-blank",
           "question": "Replace 'les enfants': 'Elle regarde les enfants.' → 'Elle ___ regarde.'",
-          "options": ["leur", "les", "en"],
+          "options": [
+            "leur",
+            "les",
+            "en"
+          ],
           "correctIndex": 1,
           "explanation": "'les enfants' is a plural direct object, replaced by 'les'. The pronoun goes before the verb."
         },
         {
           "type": "multiple-choice",
           "question": "With passé composé — replace the object: 'Il a mangé la tarte.' → ?",
-          "options": ["Il l'a mangée.", "Il lui a mangé.", "Il a la mangé."],
-          "correctIndex": 0,
+          "options": [
+            "Il a la mangé.",
+            "Il l'a mangée.",
+            "Il lui a mangé."
+          ],
+          "correctIndex": 1,
           "explanation": "'la tarte' is feminine, so the pronoun is 'la/l''. In passé composé, l' goes before the auxiliary, and the past participle agrees: mangée (feminine)."
         },
         {
           "type": "fill-blank",
           "question": "With an infinitive — replace the object: 'Tu dois appeler ta mère.' → 'Tu dois ___ appeler.'",
-          "options": ["lui", "la", "en"],
+          "options": [
+            "lui",
+            "l'",
+            "en"
+          ],
           "correctIndex": 1,
-          "explanation": "'ta mère' is a feminine direct object. With a conjugated verb + infinitive, the pronoun goes before the infinitive: Tu dois la appeler → Tu dois l'appeler."
+          "acceptedAnswers": ["l'", "la"],
+          "explanation": "'ta mère' is a feminine direct object. With a conjugated verb + infinitive, the pronoun goes before the infinitive. Since 'appeler' starts with a vowel, 'la' elides to 'l'': Tu dois l'appeler."
         },
         {
           "type": "multiple-choice",
           "question": "Which sentence correctly adds negation to 'Je le connais.'?",
-          "options": ["Je le ne connais pas.", "Je ne le connais pas.", "Je ne connais le pas."],
+          "options": [
+            "Je le ne connais pas.",
+            "Je ne le connais pas.",
+            "Je ne connais le pas."
+          ],
           "correctIndex": 1,
           "explanation": "With negation, 'ne' comes before the pronoun and 'pas' comes after the verb: Je ne le connais pas."
         },
         {
           "type": "fill-blank",
           "question": "Replace the object: 'Vous comprenez le problème.' → 'Vous ___ comprenez.'",
-          "options": ["lui", "en", "le"],
+          "options": [
+            "lui",
+            "en",
+            "le"
+          ],
           "correctIndex": 2,
           "explanation": "'le problème' is masculine singular and a direct object (no preposition), replaced by 'le'."
         },
         {
           "type": "multiple-choice",
           "question": "Which direct object pronoun replaces 'nous' (us) as a direct object?",
-          "options": ["on", "nous", "leur"],
-          "correctIndex": 1,
+          "options": [
+            "leur",
+            "on",
+            "nous"
+          ],
+          "correctIndex": 2,
           "explanation": "'nous' serves as both subject and direct object pronoun. Example: Il nous voit — He sees us."
         }
       ]
@@ -85,60 +144,112 @@
       "explanation": "Indirect object pronouns replace 'à + person'. They are: me/m' (to me), te/t' (to you), lui (to him/her), nous (to us), vous (to you), leur (to them). Note that 'lui' and 'leur' are used for people only — not things. The pronoun 'en' replaces 'de + thing' or a partitive article (du/de la/des), meaning 'some of it/them' or 'about it'. When a number follows, it stays after the verb: Il en a trois. The pronoun 'y' replaces 'à + place' or 'à + thing' (but not à + person), meaning 'there' or 'about it'. When multiple pronouns are used together, the order is: me/te/nous/vous → le/la/les → lui/leur → y → en.",
       "tip": "A common mistake is using 'lui' for a direct object — 'lui' is only indirect (à + person). Compare: Je la vois (I see her — direct) vs. Je lui parle (I speak to her — indirect). Also remember: 'y' and 'en' never replace people — use indirect object pronouns for people.",
       "examples": [
-        { "fr": "Je parle à Marie → Je lui parle.", "en": "I speak to Marie → I speak to her.", "highlight": "lui" },
-        { "fr": "Il donne des fleurs à ses parents → Il leur donne des fleurs.", "en": "He gives flowers to his parents → He gives them flowers.", "highlight": "leur" },
-        { "fr": "Je mange du pain → J'en mange.", "en": "I eat some bread → I eat some.", "highlight": "en" },
-        { "fr": "Il a trois chats → Il en a trois.", "en": "He has three cats → He has three of them.", "highlight": "en … trois" },
-        { "fr": "Je vais à Paris → J'y vais.", "en": "I'm going to Paris → I'm going there.", "highlight": "y" },
-        { "fr": "Tu penses à ton examen → Tu y penses.", "en": "You're thinking about your exam → You're thinking about it.", "highlight": "y" }
+        {
+          "fr": "Je parle à Marie → Je lui parle.",
+          "en": "I speak to Marie → I speak to her.",
+          "highlight": "lui"
+        },
+        {
+          "fr": "Il donne des fleurs à ses parents → Il leur donne des fleurs.",
+          "en": "He gives flowers to his parents → He gives them flowers.",
+          "highlight": "leur"
+        },
+        {
+          "fr": "Je mange du pain → J'en mange.",
+          "en": "I eat some bread → I eat some.",
+          "highlight": "en"
+        },
+        {
+          "fr": "Il a trois chats → Il en a trois.",
+          "en": "He has three cats → He has three of them.",
+          "highlight": "en … trois"
+        },
+        {
+          "fr": "Je vais à Paris → J'y vais.",
+          "en": "I'm going to Paris → I'm going there.",
+          "highlight": "y"
+        },
+        {
+          "fr": "Tu penses à ton examen → Tu y penses.",
+          "en": "You're thinking about your exam → You're thinking about it.",
+          "highlight": "y"
+        }
       ],
       "exercises": [
         {
           "type": "multiple-choice",
           "question": "Replace the indirect object: 'Elle écrit à son frère.' → ?",
-          "options": ["Elle le écrit.", "Elle en écrit.", "Elle lui écrit."],
+          "options": [
+            "Elle en écrit.",
+            "Elle le écrit.",
+            "Elle lui écrit."
+          ],
           "correctIndex": 2,
           "explanation": "'à son frère' is an indirect object with a person, so it is replaced by 'lui': Elle lui écrit."
         },
         {
           "type": "fill-blank",
           "question": "Replace 'à ses amis': 'Il téléphone à ses amis.' → 'Il ___ téléphone.'",
-          "options": ["les", "leur", "y"],
+          "options": [
+            "les",
+            "leur",
+            "y"
+          ],
           "correctIndex": 1,
           "explanation": "'à ses amis' is indirect, referring to plural people, so it is replaced by 'leur': Il leur téléphone."
         },
         {
           "type": "multiple-choice",
           "question": "Replace the partitive: 'Tu bois du café.' → ?",
-          "options": ["Tu le bois.", "Tu en bois.", "Tu y bois."],
+          "options": [
+            "Tu le bois.",
+            "Tu en bois.",
+            "Tu y bois."
+          ],
           "correctIndex": 1,
           "explanation": "'du café' contains a partitive article (du). It is replaced by 'en': Tu en bois."
         },
         {
           "type": "fill-blank",
           "question": "Replace 'de son voyage': 'Elle parle de son voyage.' → 'Elle ___ parle.'",
-          "options": ["lui", "y", "en"],
+          "options": [
+            "lui",
+            "y",
+            "en"
+          ],
           "correctIndex": 2,
           "explanation": "'de son voyage' refers to a thing (not a person), replaced by 'en': Elle en parle."
         },
         {
           "type": "multiple-choice",
           "question": "Replace the location: 'Nous allons au marché.' → ?",
-          "options": ["Nous lui allons.", "Nous y allons.", "Nous en allons."],
-          "correctIndex": 1,
+          "options": [
+            "Nous y allons.",
+            "Nous en allons.",
+            "Nous lui allons."
+          ],
+          "correctIndex": 0,
           "explanation": "'au marché' is a place (à + place), replaced by 'y': Nous y allons."
         },
         {
           "type": "fill-blank",
           "question": "Replace 'à ce problème': 'Il réfléchit à ce problème.' → 'Il ___ réfléchit.'",
-          "options": ["lui", "en", "y"],
+          "options": [
+            "lui",
+            "en",
+            "y"
+          ],
           "correctIndex": 2,
           "explanation": "'à ce problème' refers to a thing (not a person), so it is replaced by 'y': Il y réfléchit."
         },
         {
           "type": "multiple-choice",
           "question": "Which pronoun replaces 'des croissants' in 'Je veux des croissants.'?",
-          "options": ["les", "en", "y"],
+          "options": [
+            "les",
+            "en",
+            "y"
+          ],
           "correctIndex": 1,
           "explanation": "'des croissants' uses a partitive/indefinite article before a thing, replaced by 'en': Je veux en → J'en veux."
         },
@@ -147,8 +258,8 @@
           "question": "In 'Il m'en donne', what is the correct order of pronouns?",
           "options": [
             "me/te/nous/vous comes before en — this is correct",
-            "en comes before me — this is correct",
-            "The order does not matter for these two pronouns"
+            "The order does not matter for these two pronouns",
+            "en comes before me — this is correct"
           ],
           "correctIndex": 0,
           "explanation": "The pronoun order rule places me/te/nous/vous before y and en. So 'm'' (me) comes before 'en': Il m'en donne — He gives me some."

@@ -4,7 +4,9 @@
   "nameRu": "Личные местоимения",
   "icon": "👤",
   "tier": "A1",
-  "prerequisites": ["alphabet"],
+  "prerequisites": [
+    "alphabet"
+  ],
   "estimatedMinutes": 15,
   "sections": [
     {
@@ -13,55 +15,100 @@
       "explanation": "Russian personal pronouns in the nominative case are used as subjects: я (I), ты (you, informal), он (he), она (she), оно (it), мы (we), вы (you, formal/plural), они (they). 'Вы' with a capital letter is also used as a polite form for one person.",
       "tip": "я=I, ты=you(informal), он=he, она=she, оно=it, мы=we, вы=you(formal/plural), они=they",
       "examples": [
-        { "ru": "Я люблю кофе.", "en": "I love coffee.", "highlight": "Я" },
-        { "ru": "Он работает здесь.", "en": "He works here.", "highlight": "Он" },
-        { "ru": "Вы понимаете?", "en": "Do you understand?", "highlight": "Вы" },
-        { "ru": "Они изучают русский.", "en": "They study Russian.", "highlight": "Они" }
+        {
+          "ru": "Я люблю кофе.",
+          "en": "I love coffee.",
+          "highlight": "Я"
+        },
+        {
+          "ru": "Он работает здесь.",
+          "en": "He works here.",
+          "highlight": "Он"
+        },
+        {
+          "ru": "Вы понимаете?",
+          "en": "Do you understand?",
+          "highlight": "Вы"
+        },
+        {
+          "ru": "Они изучают русский.",
+          "en": "They study Russian.",
+          "highlight": "Они"
+        }
       ],
       "exercises": [
         {
           "type": "matching",
           "prompt": "Match each Russian pronoun with its English translation:",
           "pairs": [
-            { "left": "я", "right": "I" },
-            { "left": "ты", "right": "you (informal)" },
-            { "left": "он", "right": "he" },
-            { "left": "она", "right": "she" }
+            {
+              "left": "я",
+              "right": "I"
+            },
+            {
+              "left": "ты",
+              "right": "you (informal)"
+            },
+            {
+              "left": "он",
+              "right": "he"
+            },
+            {
+              "left": "она",
+              "right": "she"
+            }
           ],
           "explanation": "я=I, ты=you (informal singular), он=he, она=she."
         },
         {
           "type": "multiple-choice",
           "prompt": "What pronoun means 'she'?",
-          "options": ["она", "он", "оно"],
-          "correctIndex": 0,
+          "options": [
+            "оно",
+            "она",
+            "он"
+          ],
+          "correctIndex": 1,
           "explanation": "'Она' means 'she'. 'Он' = he, 'оно' = it."
         },
         {
           "type": "fill-blank",
           "prompt": "___ изучаем русский. (We)",
-          "acceptedAnswers": ["Мы", "мы"],
+          "acceptedAnswers": [
+            "Мы",
+            "мы"
+          ],
           "hint": "First person plural",
           "explanation": "'Мы' means 'we' and is the subject pronoun for first person plural."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the formal/polite 'you'?",
-          "options": ["Вы", "Ты", "Они"],
-          "correctIndex": 0,
+          "options": [
+            "Ты",
+            "Они",
+            "Вы"
+          ],
+          "correctIndex": 2,
           "explanation": "'Вы' is formal/plural. 'Ты' is informal singular."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the pronoun you hear:",
           "audio": "Они идут домой.",
-          "acceptedAnswers": ["Они", "они"],
+          "acceptedAnswers": [
+            "Они",
+            "они"
+          ],
           "explanation": "'Они' means 'they'. 'Идут домой' = are going home."
         },
         {
           "type": "fill-blank",
           "prompt": "___ играет на гитаре. (He)",
-          "acceptedAnswers": ["Он", "он"],
+          "acceptedAnswers": [
+            "Он",
+            "он"
+          ],
           "hint": "Third person singular, masculine",
           "explanation": "'Он' means 'he' — used for masculine subjects."
         },
@@ -69,10 +116,22 @@
           "type": "matching",
           "prompt": "Match the remaining pronouns with their translations:",
           "pairs": [
-            { "left": "оно", "right": "it" },
-            { "left": "мы", "right": "we" },
-            { "left": "вы", "right": "you (formal/plural)" },
-            { "left": "они", "right": "they" }
+            {
+              "left": "оно",
+              "right": "it"
+            },
+            {
+              "left": "мы",
+              "right": "we"
+            },
+            {
+              "left": "вы",
+              "right": "you (formal/plural)"
+            },
+            {
+              "left": "они",
+              "right": "they"
+            }
           ],
           "explanation": "оно=it, мы=we, вы=you (formal/plural), они=they."
         },
@@ -81,20 +140,35 @@
           "prompt": "Find and fix the error: 'Он читаем книгу.'",
           "incorrectText": "Он читаем книгу.",
           "correctedText": "Он читает книгу.",
-          "acceptedAnswers": ["Он читает книгу.", "Он читает книгу"],
+          "acceptedAnswers": [
+            "Он читает книгу.",
+            "Он читает книгу"
+          ],
           "explanation": "'Он' (he) requires third person singular verb form 'читает', not 'читаем' (which goes with 'мы')."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["работаем", "вместе", "Мы"],
-          "correctOrder": ["Мы", "работаем", "вместе"],
+          "words": [
+            "работаем",
+            "вместе",
+            "Мы"
+          ],
+          "correctOrder": [
+            "Мы",
+            "работаем",
+            "вместе"
+          ],
           "explanation": "'Мы работаем вместе.' — We work together. The pronoun 'мы' is the subject."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which pronoun would you use for a table (стол)?",
-          "options": ["он", "она", "оно"],
+          "options": [
+            "он",
+            "оно",
+            "она"
+          ],
           "correctIndex": 0,
           "explanation": "'Стол' (table) is masculine in Russian, so you use 'он' to refer to it."
         }
@@ -106,55 +180,98 @@
       "explanation": "When pronouns are objects (not subjects), they change form. Accusative (direct object): меня, тебя, его, её, нас, вас, их. Dative (indirect object — to/for whom): мне, тебе, ему, ей, нам, вам, им.",
       "tip": "Acc: меня, тебя, его, её | Dat: мне, тебе, ему, ей",
       "examples": [
-        { "ru": "Он видит меня.", "en": "He sees me.", "highlight": "меня" },
-        { "ru": "Я дал ей цветы.", "en": "I gave her flowers.", "highlight": "ей" },
-        { "ru": "Они знают нас.", "en": "They know us.", "highlight": "нас" },
-        { "ru": "Скажи мне.", "en": "Tell me.", "highlight": "мне" }
+        {
+          "ru": "Он видит меня.",
+          "en": "He sees me.",
+          "highlight": "меня"
+        },
+        {
+          "ru": "Я дал ей цветы.",
+          "en": "I gave her flowers.",
+          "highlight": "ей"
+        },
+        {
+          "ru": "Они знают нас.",
+          "en": "They know us.",
+          "highlight": "нас"
+        },
+        {
+          "ru": "Скажи мне.",
+          "en": "Tell me.",
+          "highlight": "мне"
+        }
       ],
       "exercises": [
         {
           "type": "matching",
           "prompt": "Match subject pronouns with their accusative (direct object) forms:",
           "pairs": [
-            { "left": "я →", "right": "меня" },
-            { "left": "ты →", "right": "тебя" },
-            { "left": "он →", "right": "его" },
-            { "left": "она →", "right": "её" }
+            {
+              "left": "я →",
+              "right": "меня"
+            },
+            {
+              "left": "ты →",
+              "right": "тебя"
+            },
+            {
+              "left": "он →",
+              "right": "его"
+            },
+            {
+              "left": "она →",
+              "right": "её"
+            }
           ],
           "explanation": "Accusative forms: я→меня, ты→тебя, он→его, она→её."
         },
         {
           "type": "fill-blank",
           "prompt": "Она видит ___. (me)",
-          "acceptedAnswers": ["меня"],
+          "acceptedAnswers": [
+            "меня"
+          ],
           "hint": "Accusative of 'я'",
           "explanation": "The accusative form of 'я' (I) is 'меня' (me)."
         },
         {
           "type": "multiple-choice",
           "prompt": "Which is the dative form of 'ты' (you)?",
-          "options": ["тебе", "тебя", "ты"],
+          "options": [
+            "тебе",
+            "ты",
+            "тебя"
+          ],
           "correctIndex": 0,
           "explanation": "'Тебе' is the dative (to you). 'Тебя' is accusative (you as direct object)."
         },
         {
           "type": "fill-blank",
           "prompt": "Дай ___ книгу. (to him)",
-          "acceptedAnswers": ["ему"],
+          "acceptedAnswers": [
+            "ему"
+          ],
           "hint": "Dative of 'он'",
           "explanation": "The dative form of 'он' (he) is 'ему' (to him)."
         },
         {
           "type": "transformation",
           "prompt": "Replace the noun with a pronoun: 'Я вижу Наташу.' → 'Я вижу ___.'",
-          "acceptedAnswers": ["её", "Я вижу её."],
+          "acceptedAnswers": [
+            "её",
+            "Я вижу её."
+          ],
           "explanation": "Наташа (she) → её (her, accusative). 'Я вижу её.' = I see her."
         },
         {
           "type": "multiple-choice",
           "prompt": "'Мама дала ___ подарок.' (to us)",
-          "options": ["нам", "нас", "мы"],
-          "correctIndex": 0,
+          "options": [
+            "мы",
+            "нас",
+            "нам"
+          ],
+          "correctIndex": 2,
           "explanation": "'Нам' is the dative form of 'мы' (we) — to/for us. 'Нас' is accusative."
         },
         {
@@ -162,32 +279,60 @@
           "prompt": "Find and fix the error: 'Он знает я.'",
           "incorrectText": "Он знает я.",
           "correctedText": "Он знает меня.",
-          "acceptedAnswers": ["Он знает меня.", "Он знает меня"],
+          "acceptedAnswers": [
+            "Он знает меня.",
+            "Он знает меня"
+          ],
           "explanation": "'Я' is nominative (subject form). As a direct object, use 'меня'."
         },
         {
           "type": "matching",
           "prompt": "Match subject pronouns with their dative (indirect object) forms:",
           "pairs": [
-            { "left": "мы →", "right": "нам" },
-            { "left": "вы →", "right": "вам" },
-            { "left": "они →", "right": "им" },
-            { "left": "она →", "right": "ей" }
+            {
+              "left": "мы →",
+              "right": "нам"
+            },
+            {
+              "left": "вы →",
+              "right": "вам"
+            },
+            {
+              "left": "они →",
+              "right": "им"
+            },
+            {
+              "left": "она →",
+              "right": "ей"
+            }
           ],
           "explanation": "Dative: мы→нам, вы→вам, они→им, она→ей."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["мне", "Расскажи", "об", "этом"],
-          "correctOrder": ["Расскажи", "мне", "об", "этом"],
+          "words": [
+            "мне",
+            "Расскажи",
+            "об",
+            "этом"
+          ],
+          "correctOrder": [
+            "Расскажи",
+            "мне",
+            "об",
+            "этом"
+          ],
           "explanation": "'Расскажи мне об этом.' — Tell me about it. 'Мне' = to me (dative)."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Они пригласили нас на ужин.",
-          "acceptedAnswers": ["Они пригласили нас на ужин.", "Они пригласили нас на ужин"],
+          "acceptedAnswers": [
+            "Они пригласили нас на ужин.",
+            "Они пригласили нас на ужин"
+          ],
           "explanation": "'Нас' is the accusative of 'мы' (we → us). 'Пригласили' = invited."
         }
       ]
@@ -198,14 +343,25 @@
       "explanation": "Practice using personal pronouns — both subject and object forms — in complete sentences. Pay attention to whether the pronoun is the doer (nominative) or the receiver (accusative/dative).",
       "tip": "Subject = nominative (я, он...), direct object = accusative (меня, его...), indirect object = dative (мне, ему...)",
       "examples": [
-        { "ru": "Я знаю его, а он знает меня.", "en": "I know him, and he knows me.", "highlight": "Я...его...он...меня" },
-        { "ru": "Она дала мне книгу.", "en": "She gave me a book.", "highlight": "Она...мне" }
+        {
+          "ru": "Я знаю его, а он знает меня.",
+          "en": "I know him, and he knows me.",
+          "highlight": "Я...его...он...меня"
+        },
+        {
+          "ru": "Она дала мне книгу.",
+          "en": "She gave me a book.",
+          "highlight": "Она...мне"
+        }
       ],
       "exercises": [
         {
           "type": "fill-blank",
           "prompt": "___ позвонил ___. (He called me.)",
-          "acceptedAnswers": ["Он позвонил мне.", "Он позвонил мне"],
+          "acceptedAnswers": [
+            "Он позвонил мне.",
+            "Он позвонил мне"
+          ],
           "hint": "He = он, me (dative) = мне",
           "explanation": "'Он' (he, nominative subject) позвонил 'мне' (me, dative — called to me)."
         },
@@ -213,11 +369,11 @@
           "type": "multiple-choice",
           "prompt": "Choose the correct sentence for 'She sees them.':",
           "options": [
-            "Она видит их.",
             "Она видит они.",
+            "Она видит их.",
             "Её видит они."
           ],
-          "correctIndex": 0,
+          "correctIndex": 1,
           "explanation": "'Она' (she, nominative) видит 'их' (them, accusative). 'Они' is nominative only."
         },
         {
@@ -225,26 +381,42 @@
           "prompt": "Find and fix the error: 'Мы помогаем они.'",
           "incorrectText": "Мы помогаем они.",
           "correctedText": "Мы помогаем им.",
-          "acceptedAnswers": ["Мы помогаем им.", "Мы помогаем им"],
+          "acceptedAnswers": [
+            "Мы помогаем им.",
+            "Мы помогаем им"
+          ],
           "explanation": "'Они' is nominative. As an indirect object (to them), use dative 'им'."
         },
         {
           "type": "sentence-order",
           "prompt": "Put the words in order:",
-          "words": ["ждёт", "Она", "тебя"],
-          "correctOrder": ["Она", "ждёт", "тебя"],
+          "words": [
+            "ждёт",
+            "Она",
+            "тебя"
+          ],
+          "correctOrder": [
+            "Она",
+            "ждёт",
+            "тебя"
+          ],
           "explanation": "'Она ждёт тебя.' — She is waiting for you. 'Тебя' = accusative of 'ты'."
         },
         {
           "type": "transformation",
           "prompt": "Replace nouns with pronouns: 'Мария дала Олегу подарок.' → '___ дала ___ подарок.'",
-          "acceptedAnswers": ["Она дала ему подарок.", "Она дала ему подарок"],
+          "acceptedAnswers": [
+            "Она дала ему подарок.",
+            "Она дала ему подарок"
+          ],
           "explanation": "Мария → она (she), Олегу (dative) → ему (to him)."
         },
         {
           "type": "fill-blank",
           "prompt": "Скажи ___, пожалуйста. (to her)",
-          "acceptedAnswers": ["ей"],
+          "acceptedAnswers": [
+            "ей"
+          ],
           "hint": "Dative of 'она'",
           "explanation": "'Ей' is the dative form of 'она' — to/for her."
         },
@@ -252,25 +424,44 @@
           "type": "matching",
           "prompt": "Match each sentence with the correct pronoun form:",
           "pairs": [
-            { "left": "___ работаю. (I)", "right": "Я" },
-            { "left": "Он видит ___. (us)", "right": "нас" },
-            { "left": "Дай ___ воду. (to me)", "right": "мне" },
-            { "left": "___ играют. (They)", "right": "Они" }
+            {
+              "left": "___ работаю. (I)",
+              "right": "Я"
+            },
+            {
+              "left": "Он видит ___. (us)",
+              "right": "нас"
+            },
+            {
+              "left": "Дай ___ воду. (to me)",
+              "right": "мне"
+            },
+            {
+              "left": "___ играют. (They)",
+              "right": "Они"
+            }
           ],
           "explanation": "Subject (nominative): я, они. Direct object (accusative): нас. Indirect object (dative): мне."
         },
         {
           "type": "multiple-choice",
           "prompt": "'Я хочу спросить ___.' (him)",
-          "options": ["его", "он", "ему"],
-          "correctIndex": 0,
+          "options": [
+            "ему",
+            "его",
+            "он"
+          ],
+          "correctIndex": 1,
           "explanation": "'Спросить' (to ask) takes a direct object → accusative: его (him)."
         },
         {
           "type": "listen-type",
           "prompt": "Listen and type the sentence:",
           "audio": "Они ждут нас около школы.",
-          "acceptedAnswers": ["Они ждут нас около школы.", "Они ждут нас около школы"],
+          "acceptedAnswers": [
+            "Они ждут нас около школы.",
+            "Они ждут нас около школы"
+          ],
           "explanation": "'Они' (they, nominative) are waiting for 'нас' (us, accusative). 'Около школы' = near school."
         },
         {
@@ -278,7 +469,10 @@
           "prompt": "Find and fix the error: 'Тебе видел меня.'",
           "incorrectText": "Тебе видел меня.",
           "correctedText": "Ты видел меня.",
-          "acceptedAnswers": ["Ты видел меня.", "Ты видел меня"],
+          "acceptedAnswers": [
+            "Ты видел меня.",
+            "Ты видел меня"
+          ],
           "explanation": "'Тебе' is dative. The subject must be nominative: 'Ты' (you)."
         }
       ]
