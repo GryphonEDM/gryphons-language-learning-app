@@ -85,10 +85,9 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
 
   // Start a new session when entering, or resume latest
   useEffect(() => {
-    const existing = loadSessions();
-    if (existing.length > 0) {
-      setActiveId(existing[0].id);
-      setTokenUsage(existing[0].tokenUsage || 0);
+    if (sessions.length > 0) {
+      setActiveId(sessions[0].id);
+      setTokenUsage(sessions[0].tokenUsage || 0);
     } else {
       startNewChat();
     }
@@ -146,25 +145,37 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
   };
 
   function startNewChat() {
-    const session = makeSession(langCode);
-    setSessions(prev => [session, ...prev]);
-    setActiveId(session.id);
-    setUserInput('');
-    setError(null);
-    setTokenUsage(0);
+    setSessions(prev => {
+      // Don't create another empty chat if one already exists — just activate it
+      const empty = prev.find(s => s.displayMessages.length === 0);
+      if (empty) {
+        setActiveId(empty.id);
+        setTokenUsage(0);
+        return prev;
+      }
+      const session = makeSession(langCode);
+      setActiveId(session.id);
+      setUserInput('');
+      setError(null);
+      setTokenUsage(0);
+      return [session, ...prev];
+    });
   }
 
   function deleteSession(id) {
     setSessions(prev => {
       const next = prev.filter(s => s.id !== id);
       if (id === activeId) {
-        if (next.length > 0) setActiveId(next[0].id);
-        else {
-          const fresh = makeSession(langCode);
-          setSessions([fresh]);
-          setActiveId(fresh.id);
-          return [fresh];
+        if (next.length > 0) {
+          setActiveId(next[0].id);
+          setTokenUsage(next[0].tokenUsage || 0);
+          return next;
         }
+        // Last session deleted — create a fresh one
+        const fresh = makeSession(langCode);
+        setActiveId(fresh.id);
+        setTokenUsage(0);
+        return [fresh];
       }
       return next;
     });
@@ -376,41 +387,12 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     setTtsHighlight(null);
-    // Split by punctuation but preserve parenthesized groups for TTS language detection
-    const chunks = [];
-    // First split out parenthesized sections, then split non-paren parts by punctuation
-    const parts = text.split(/(\([^)]*\))/g);
-    for (const part of parts) {
-      if (!part) continue;
-      if (part.startsWith('(')) {
-        chunks.push(part); // Keep parenthesized text as one chunk
-      } else {
-        // Split non-paren text by sentence boundaries
-        const subs = part.split(/(?<=[.!?;,])\s+/);
-        for (const sub of subs) {
-          if (sub.trim()) chunks.push(sub.trim());
-        }
-      }
-    }
-    let wordOffset = 0;
-    for (const chunk of chunks) {
-      if (!ttsSpeakingRef.current) break;
-      const words = chunk.split(/\s+/).filter(Boolean);
-      const chunkEnd = wordOffset + words.length;
-      if (chunkEnd <= startFromWordIdx) { wordOffset = chunkEnd; continue; }
-      // If starting mid-chunk, slice the words and rejoin
-      let speakText = chunk;
-      let highlightStart = wordOffset;
-      if (wordOffset < startFromWordIdx) {
-        const skipWords = startFromWordIdx - wordOffset;
-        speakText = words.slice(skipWords).join(' ');
-        highlightStart = startFromWordIdx;
-      }
-      setTtsHighlight({ msgIdx, wordStart: highlightStart, wordEnd: chunkEnd });
-      try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
-      wordOffset = chunkEnd;
-      if (!ttsSpeakingRef.current) break;
-    }
+    // Highlight all words and speak the full text in one call
+    // speakMixed handles language splitting internally
+    const allWords = text.split(/\s+/).filter(Boolean);
+    const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
+    setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
+    try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);

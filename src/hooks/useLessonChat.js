@@ -114,38 +114,12 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     await new Promise(r => setTimeout(r, 50));
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
-    // Split by punctuation but preserve parenthesized groups for TTS language detection
-    const chunks = [];
-    const parts = text.split(/(\([^)]*\))/g);
-    for (const part of parts) {
-      if (!part) continue;
-      if (part.startsWith('(')) {
-        chunks.push(part);
-      } else {
-        const subs = part.split(/(?<=[.!?;,])\s+/);
-        for (const sub of subs) {
-          if (sub.trim()) chunks.push(sub.trim());
-        }
-      }
-    }
-    let wordOffset = 0;
-    for (const chunk of chunks) {
-      if (!ttsSpeakingRef.current) break;
-      const words = chunk.split(/\s+/).filter(Boolean);
-      const chunkEnd = wordOffset + words.length;
-      if (chunkEnd <= startFromWordIdx) { wordOffset = chunkEnd; continue; }
-      let speakText = chunk;
-      let highlightStart = wordOffset;
-      if (wordOffset < startFromWordIdx) {
-        const skipWords = startFromWordIdx - wordOffset;
-        speakText = words.slice(skipWords).join(' ');
-        highlightStart = startFromWordIdx;
-      }
-      setTtsHighlight({ msgIdx, wordStart: highlightStart, wordEnd: chunkEnd });
-      try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
-      wordOffset = chunkEnd;
-      if (!ttsSpeakingRef.current) break;
-    }
+    // Highlight all words and speak the full text in one call
+    // speakMixed handles language splitting internally
+    const allWords = text.split(/\s+/).filter(Boolean);
+    const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
+    setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
+    try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);
