@@ -680,6 +680,7 @@ export default function UkrainianTypingGame() {
   const [alphabetBestTime, setAlphabetBestTime] = useState(null);
   const [alphabetLoopStartTime, setAlphabetLoopStartTime] = useState(null);
   const [showGreenFlash, setShowGreenFlash] = useState(false);
+  const [toast, setToast] = useState(null);
 
   // Refs
   const inputRef = useRef(null);
@@ -816,6 +817,14 @@ export default function UkrainianTypingGame() {
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
   }, []);
+
+  // Toast auto-dismiss
+  useEffect(() => {
+    if (!toast) return;
+    const exitTimer = setTimeout(() => setToast(prev => prev ? { ...prev, visible: false } : null), 3500);
+    const removeTimer = setTimeout(() => setToast(null), 4000);
+    return () => { clearTimeout(exitTimer); clearTimeout(removeTimer); };
+  }, [toast?.message]);
 
   // Mastered words handlers
   const handleMarkMastered = useCallback((word) => {
@@ -1707,12 +1716,15 @@ export default function UkrainianTypingGame() {
                     </p>
                   </div>
                 </div>
-                {masteredWordsList.length > 0 && (
                 <div
                   className="vocab-theme-card"
                   data-vocab-set="mastered-review"
-                  style={{ border: '2px solid #4caf50' }}
+                  style={{ border: '2px solid #4caf50', opacity: masteredWordsList.length === 0 ? 0.5 : 1 }}
                   onClick={() => {
+                    if (masteredWordsList.length === 0) {
+                      setToast({ message: 'No mastered words yet! Mark words as mastered with the ⭐ button while practicing to build your review deck.', visible: true });
+                      return;
+                    }
                     const allWords = getAllVocabularyWords(currentLanguage);
                     const masteredSet = new Set(masteredWordsList.map(m => m.word));
                     const matched = allWords.filter(w => masteredSet.has(w.uk));
@@ -1753,7 +1765,6 @@ export default function UkrainianTypingGame() {
                     </div>
                   </div>
                 </div>
-                )}
               </div>
 
               {/* Dictionary category sets - the main bulk of 4000+ words */}
@@ -2451,6 +2462,13 @@ export default function UkrainianTypingGame() {
           </div>
         )}
       </main>
+
+      {toast && (
+        <div className={`toast-notification ${toast.visible ? 'toast-enter' : 'toast-exit'}`}>
+          <span style={{ marginRight: '8px', fontSize: '1.3rem' }}>⭐</span>
+          {toast.message}
+        </div>
+      )}
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap');
@@ -3950,6 +3968,43 @@ export default function UkrainianTypingGame() {
           margin: 0;
           color: rgba(255,255,255,0.6);
           font-size: 0.9rem;
+        }
+
+        .toast-notification {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          max-width: 340px;
+          padding: 16px 20px;
+          background: rgba(30, 30, 50, 0.95);
+          border: 1px solid rgba(255, 215, 0, 0.3);
+          border-radius: 12px;
+          color: #fff;
+          font-size: 0.95rem;
+          line-height: 1.4;
+          z-index: 10000;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(8px);
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .toast-enter {
+          animation: toastSlideUp 0.35s ease-out forwards;
+        }
+
+        .toast-exit {
+          animation: toastSlideDown 0.4s ease-in forwards;
+        }
+
+        @keyframes toastSlideUp {
+          from { transform: translateY(100px); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes toastSlideDown {
+          from { transform: translateY(0); opacity: 1; }
+          to { transform: translateY(100px); opacity: 0; }
         }
       `}</style>
     </div>
