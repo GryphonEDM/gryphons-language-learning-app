@@ -83,9 +83,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete the command: '___ la vérité!' (Tell the truth! — tu form of 'dire')",
-          "answer": "Dis",
           "hint": "The tu-form imperative of 'dire' is irregular: Dis!",
-          "explanation": "Dire has the irregular present tense tu form 'tu dis', so the imperative is simply Dis!"
+          "explanation": "Dire has the irregular present tense tu form 'tu dis', so the imperative is simply Dis!",
+          "acceptedAnswers": [
+            "Dis"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -112,9 +114,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: '___ sage!' (Be good! — tu form of 'être')",
-          "answer": "Sois",
           "hint": "Être has an irregular imperative: sois, soyons, soyez.",
-          "explanation": "Être is irregular in the imperative. The tu form is Sois, not 'es'."
+          "explanation": "Être is irregular in the imperative. The tu form is Sois, not 'es'.",
+          "acceptedAnswers": [
+            "Sois"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -192,9 +196,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: '___!' meaning 'Sit down!' (vous form of s'asseoir)",
-          "answer": "Asseyez-vous",
           "hint": "Reflexive affirmative command: verb + hyphen + reflexive pronoun. Vous form of s'asseoir is asseyez.",
-          "explanation": "Reflexive affirmative commands: Asseyez-vous! The reflexive pronoun comes after the verb with a hyphen."
+          "explanation": "Reflexive affirmative commands: Asseyez-vous! The reflexive pronoun comes after the verb with a hyphen.",
+          "acceptedAnswers": [
+            "Asseyez-vous"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -221,9 +227,11 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: '___ les!' meaning 'Listen to them!' (tu form of écouter)",
-          "answer": "Écoute-les",
           "hint": "Affirmative command: verb + hyphen + pronoun. 'them' as a direct object is 'les'.",
-          "explanation": "Affirmative commands put the pronoun after the verb: Écoute-les! (Listen to them!)"
+          "explanation": "Affirmative commands put the pronoun after the verb: Écoute-les! (Listen to them!)",
+          "acceptedAnswers": [
+            "Écoute-les"
+          ]
         },
         {
           "type": "multiple-choice",

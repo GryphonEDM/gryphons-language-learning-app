@@ -1,0 +1,204 @@
+{
+  "lessonId": "sentence-endings",
+  "nameEn": "Sentence-Final Endings",
+  "nameKo": "종결 어미",
+  "icon": "💬",
+  "tier": "B1",
+  "prerequisites": [
+    "verb-conjugation",
+    "past-tense"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "realization-surprise",
+      "title": "-군요/-는군요 (Realization) and -네요 (Mild Surprise)",
+      "explanation": "-군요 and -는군요 express a realization or newfound understanding — 'oh, I see that...' or 'so it is...' The speaker has just come to understand something. With adjectives and 이다: stem + -군요 (e.g., 예쁘군요 — oh, it's pretty). With action verbs (present): stem + -는군요 (e.g., 먹는군요 — oh, you're eating). With past tense: -았/었군요 (e.g., 갔군요 — oh, you went). -네요 expresses mild surprise or an impression upon directly experiencing something — 'oh!' or 'wow.' It is less reflective than -군요 and more about immediate reaction. With verbs/adjectives: stem + -네요 (e.g., 맛있네요 — oh, it's delicious!, 비가 오네요 — oh, it's raining!). -군요 feels like internal realization; -네요 feels like outward reaction to something you just noticed.",
+      "tip": "-군요 = 'I now realize/understand that...' (reflective). -네요 = 'Oh! I just noticed that...' (reactive, immediate). Both add emotional color to observations.",
+      "examples": [
+        {
+          "ko": "한국어를 잘하시는군요!",
+          "en": "Oh, I see you speak Korean well!",
+          "highlight": "잘하시는군요"
+        },
+        {
+          "ko": "벌써 12시군요.",
+          "en": "Oh, it's already 12 o'clock. (realization)",
+          "highlight": "12시군요"
+        },
+        {
+          "ko": "이 케이크 맛있네요!",
+          "en": "Oh, this cake is delicious!",
+          "highlight": "맛있네요"
+        },
+        {
+          "ko": "밖에 눈이 오네요.",
+          "en": "Oh, it's snowing outside! (just noticed)",
+          "highlight": "오네요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You just realized your friend can cook well. Which ending fits best?",
+          "options": [
+            "요리를 잘하네요!",
+            "요리를 잘하는군요!",
+            "요리를 잘해요!",
+            "요리를 잘하지요!"
+          ],
+          "correctIndex": 1,
+          "explanation": "-는군요 expresses realization about an ongoing fact: 요리를 잘하는군요 = 'Oh, I see you cook well!' (I've come to realize this)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You taste soup for the first time and it's spicy. Which ending fits best?",
+          "options": [
+            "맵군요!",
+            "맵네요!",
+            "매워요!",
+            "맵잖아요!"
+          ],
+          "correctIndex": 1,
+          "explanation": "-네요 is used for immediate reactions upon experiencing something: 맵네요! = 'Oh, it's spicy!' (just tasted it and reacting)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "벌써 졸업했___. (Oh, you already graduated. — realization)",
+          "hint": "Realization ending for past tense",
+          "explanation": "Past tense + -군요: 졸업했 + 군요 = 졸업했군요 (Oh, I see you graduated).",
+          "acceptedAnswers": [
+            "군요"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "conjecture-intention",
+      "title": "-겠- (Conjecture and Intention)",
+      "explanation": "-겠- is an infix that expresses either the speaker's conjecture/supposition or intention/determination. For conjecture: 내일 비가 오겠어요 (It will probably rain tomorrow), 힘들겠어요 (That must be hard), 맛있겠다! (That looks/must be delicious!). The speaker is guessing based on available information. For intention (first person): 제가 하겠습니다 (I will do it — firm determination), 알겠습니다 (I understand / understood — acknowledging). -겠- conjugates like a regular ending: 가겠어요, 먹겠습니다, 좋겠네요. In formal/business contexts, -겠- with first person shows strong will: 최선을 다하겠습니다 (I will do my best). With second/third person, it is always conjecture, never intention.",
+      "tip": "First person + -겠- = intention ('I will'). Second/third person + -겠- = conjecture ('you/they probably will'). 알겠습니다 (understood) and 맛있겠다 (looks delicious) are extremely common set phrases.",
+      "examples": [
+        {
+          "ko": "피곤하시겠어요.",
+          "en": "You must be tired. (conjecture)",
+          "highlight": "피곤하시겠어요"
+        },
+        {
+          "ko": "제가 하겠습니다.",
+          "en": "I will do it. (firm intention)",
+          "highlight": "하겠습니다"
+        },
+        {
+          "ko": "맛있겠다!",
+          "en": "That looks delicious!",
+          "highlight": "맛있겠다"
+        },
+        {
+          "ko": "내일은 날씨가 좋겠어요.",
+          "en": "The weather will probably be nice tomorrow.",
+          "highlight": "좋겠어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 알겠습니다 mean?",
+          "options": [
+            "I don't know.",
+            "Do you understand?",
+            "I understand. / Understood.",
+            "You probably know."
+          ],
+          "correctIndex": 2,
+          "explanation": "알겠습니다 is first person + -겠-, so it expresses intention/acknowledgment: 'I understand / Understood.' This is one of the most common formal expressions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Your friend shows you a photo of a beautiful beach. How would you react using -겠-?",
+          "options": [
+            "좋겠다!",
+            "좋았다!",
+            "좋은데!",
+            "좋지!"
+          ],
+          "correctIndex": 0,
+          "explanation": "좋겠다! expresses conjecture/longing: 'That must be nice!' or 'How nice (that would be)!' -겠- here conveys imagining how nice it is."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "많이 바쁘시___. (You must be very busy.)",
+          "hint": "Conjecture ending in polite form",
+          "explanation": "-겠어요 expresses conjecture about someone else: 바쁘시겠어요 = You must be busy.",
+          "acceptedAnswers": [
+            "겠어요"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "retrospective-obvious",
+      "title": "-더라고요 (Retrospective) and -잖아요 (Obviously)",
+      "explanation": "-더라고요 is used to report something you personally witnessed or experienced in the past — 'I noticed that...' or 'I saw that...' It conveys firsthand observation being recalled. For example: 그 식당 음식이 맛있더라고요 (I found that restaurant's food was delicious — when I went there). 어제 비가 많이 오더라고요 (It was raining a lot yesterday — I saw it myself). The speaker is sharing a personal past observation. Important: you generally cannot use -더라고요 about your own actions or states (since you don't 'observe' yourself). -잖아요 means 'you know' or 'obviously' — it reminds the listener of something they should already know or presents something as self-evident. 오늘 일요일이잖아요 (It's Sunday, you know), 제가 말했잖아요 (I told you, didn't I?). It can sound slightly reproachful.",
+      "tip": "-더라고요 = 'When I was there / at that time, I noticed...' (firsthand past observation). -잖아요 = 'As you know...' or 'obviously...' (reminding someone of a known fact).",
+      "examples": [
+        {
+          "ko": "그 영화 정말 재미있더라고요.",
+          "en": "That movie was really fun. (I saw it and found it so.)",
+          "highlight": "재미있더라고요"
+        },
+        {
+          "ko": "서울 겨울이 춥더라고요.",
+          "en": "Seoul winters are cold. (I experienced it firsthand.)",
+          "highlight": "춥더라고요"
+        },
+        {
+          "ko": "오늘 월요일이잖아요.",
+          "en": "It's Monday, you know. (reminding)",
+          "highlight": "월요일이잖아요"
+        },
+        {
+          "ko": "제가 어제 말했잖아요!",
+          "en": "I told you yesterday! (you should know this)",
+          "highlight": "말했잖아요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You went to a new cafe and the coffee was great. How do you share this experience?",
+          "options": [
+            "커피가 맛있잖아요.",
+            "커피가 맛있더라고요.",
+            "커피가 맛있군요.",
+            "커피가 맛있네요."
+          ],
+          "correctIndex": 1,
+          "explanation": "-더라고요 reports a personal past experience: 커피가 맛있더라고요 = 'The coffee was good (I found when I tried it).' This shares your firsthand observation."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Your friend forgot that the library is closed on Mondays. How do you remind them?",
+          "options": [
+            "월요일에 도서관이 쉬더라고요.",
+            "월요일에 도서관이 쉬네요.",
+            "월요일에 도서관이 쉬잖아요.",
+            "월요일에 도서관이 쉬겠어요."
+          ],
+          "correctIndex": 2,
+          "explanation": "-잖아요 reminds someone of something they should already know: 도서관이 쉬잖아요 = 'The library is closed, you know!' (obvious/known fact)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "제가 전에 ___. (I told you before! — reminding)",
+          "hint": "Reminding ending meaning 'you know/obviously' with 말하다 past tense",
+          "explanation": "-잖아요 with past tense 말했-: 말했잖아요 = I told you, didn't I!",
+          "acceptedAnswers": [
+            "말했잖아요",
+            "말했잖아요!"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "setId": "time-calendar",
+  "nameEn": "Time & Calendar",
+  "nameUk": "Час і календар",
+  "nameRu": "Время и календарь",
+  "nameDe": "Zeit und Kalender",
+  "nameEs": "Tiempo y calendario",
+  "nameFr": "Temps et calendrier",
+  "nameEl": "Χρόνος και ημερολόγιο",
+  "nameHi": "समय और कैलेंडर",
+  "nameAr": "الوقت والتقويم",
+  "nameKo": "시간과 달력",
+  "nameZh": "时间与日历",
+  "nameJa": "時間とカレンダー",
+  "difficulty": "A1",
+  "icon": "📅",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "понеділок",
+      "ru": "понедельник",
+      "de": "Montag",
+      "en": "Monday",
+      "phoneticUk": "ponedilok",
+      "phoneticRu": "ponedel'nik",
+      "phoneticDe": "MOHN-tahk",
+      "es": "lunes",
+      "phoneticEs": "LOO-nes",
+      "fr": "lundi",
+      "frPhonetic": "LUN-dee",
+      "el": "Δευτέρα",
+      "elPhonetic": "dhef-TE-ra",
+      "hi": "सोमवार",
+      "hiPhonetic": "SOM-vaar",
+      "ar": "الاِثْنَيْن",
+      "arPhonetic": "al-ith-NAYN",
+      "ko": "월요일",
+      "koPhonetic": "WOL-yo-il",
+      "zh": "星期一",
+      "zhPhonetic": "xīngqīyī",
+      "ja": "月曜日",
+      "jaPhonetic": "getsuyoubi",
+      "examples": {
+        "uk": [
+          "Понеділок — перший день тижня.",
+          "У понеділок я починаю нову роботу."
+        ],
+        "en": [
+          "Monday is the first day of the week.",
+          "On Monday I start a new job."
+        ]
+      }
+    },
+    {
+      "uk": "вівторок",
+      "ru": "вторник",
+      "de": "Dienstag",
+      "en": "Tuesday",
+      "phoneticUk": "vivtorok",
+      "phoneticRu": "vtornik",
+      "phoneticDe": "DEENS-tahk",
+      "es": "martes",
+      "phoneticEs": "MAR-tes",
+      "fr": "mardi",
+      "frPhonetic": "mar-DEE",
+      "el": "Τρίτη",
+      "elPhonetic": "TRI-ti",
+      "hi": "मंगलवार",
+      "hiPhonetic": "MANGAL-vaar",
+      "ar": "الثُّلَاثَاء",
+      "arPhonetic": "ath-thu-LAA-thaa",
+      "ko": "화요일",
+      "koPhonetic": "HWA-yo-il",
+      "zh": "星期二",
+      "zhPhonetic": "xīngqīèr",
+      "ja": "火曜日",
+      "jaPhonetic": "kayoubi",
+      "examples": {
+        "uk": [
+          "У вівторок у мене урок музики.",
+          "Ми зустрінемося у вівторок."
+        ],
+        "en": [
+          "On Tuesday I have a music lesson.",
+          "We will meet on Tuesday."
+        ]
+      }
+    },
+    {
+      "uk": "середа",
+      "ru": "среда",
+      "de": "Mittwoch",
+      "en": "Wednesday",
+      "phoneticUk": "sereda",
+      "phoneticRu": "sreda",
+      "phoneticDe": "MIT-vokh",
+      "es": "miércoles",
+      "phoneticEs": "MYER-koh-les",
+      "fr": "mercredi",
+      "frPhonetic": "mehr-kruh-DEE",
+      "el": "Τετάρτη",
+      "elPhonetic": "te-TAR-ti",
+      "hi": "बुधवार",
+      "hiPhonetic": "BUDH-vaar",
+      "ar": "الأَرْبِعَاء",
+      "arPhonetic": "al-ar-bi-AAA",
+      "ko": "수요일",
+      "koPhonetic": "SU-yo-il",
+      "zh": "星期三",
+      "zhPhonetic": "xīngqīsān",
+      "ja": "水曜日",
+      "jaPhonetic": "suiyoubi",
+      "examples": {
+        "uk": [
+          "Середа — це середина тижня.",
+          "У середу ми підемо в кіно."
+        ],
+        "en": [
+          "Wednesday is the middle of the week.",
+          "On Wednesday we will go to the cinema."
+        ]
+      }
+    },
+    {
+      "uk": "четвер",
+      "ru": "четверг",
+      "de": "Donnerstag",
+      "en": "Thursday",
+      "phoneticUk": "chetver",
+      "phoneticRu": "chetverg",
+      "phoneticDe": "DON-ners-tahk",
+      "es": "jueves",
+      "phoneticEs": "HWEH-bes",
+      "fr": "jeudi",
+      "frPhonetic": "zhuh-DEE",
+      "el": "Πέμπτη",
+      "elPhonetic": "PEMP-ti",
+      "hi": "गुरुवार",
+      "hiPhonetic": "GU-ru-vaar",
+      "ar": "الخَمِيس",
+      "arPhonetic": "al-kha-MEES",
+      "ko": "목요일",
+      "koPhonetic": "MOK-yo-il",
+      "zh": "星期四",
+      "zhPhonetic": "xīngqīsì",
+      "ja": "木曜日",
+      "jaPhonetic": "mokuyoubi",
+      "examples": {
+        "uk": [
+          "У четвер у нас тренування.",
+          "Четвер — мій улюблений день."
+        ],
+        "en": [
+          "On Thursday we have practice.",
+          "Thursday is my favourite day."
+        ]
+      }
+    },
+    {
+      "uk": "п'ятниця",
+      "ru": "пятница",
+      "de": "Freitag",
+      "en": "Friday",
+      "phoneticUk": "pyatnytsia",
+      "phoneticRu": "pyatnitsa",
+      "phoneticDe": "FRAY-tahk",
+      "es": "viernes",
+      "phoneticEs": "BYER-nes",
+      "fr": "vendredi",
+      "frPhonetic": "vahn-druh-DEE",
+      "el": "Παρασκευή",
+      "elPhonetic": "pa-ra-ske-VI",
+      "hi": "शुक्रवार",
+      "hiPhonetic": "SHUKR-vaar",
+      "ar": "الجُمُعَة",
+      "arPhonetic": "al-JU-mu-a",
+      "ko": "금요일",
+      "koPhonetic": "GEUM-yo-il",
+      "zh": "星期五",
+      "zhPhonetic": "xīngqīwǔ",
+      "ja": "金曜日",
+      "jaPhonetic": "kinyoubi",
+      "examples": {
+        "uk": [
+          "У п'ятницю школа закінчується рано.",
+          "Ми завжди радіємо п'ятниці."
+        ],
+        "en": [
+          "On Friday school finishes early.",
+          "We always look forward to Friday."
+        ]
+      }
+    },
+    {
+      "uk": "субота",
+      "ru": "суббота",
+      "de": "Samstag",
+      "en": "Saturday",
+      "phoneticUk": "subota",
+      "phoneticRu": "subbota",
+      "phoneticDe": "ZAMS-tahk",
+      "es": "sábado",
+      "phoneticEs": "SAH-bah-doh",
+      "fr": "samedi",
+      "frPhonetic": "sam-DEE",
+      "el": "Σάββατο",
+      "elPhonetic": "SA-va-to",
+      "hi": "शनिवार",
+      "hiPhonetic": "SHA-ni-vaar",
+      "ar": "السَّبْت",
+      "arPhonetic": "as-SABT",
+      "ko": "토요일",
+      "koPhonetic": "TO-yo-il",
+      "zh": "星期六",
+      "zhPhonetic": "xīngqīliù",
+      "ja": "土曜日",
+      "jaPhonetic": "doyoubi",
+      "examples": {
+        "uk": [
+          "У суботу ми їдемо на пікнік.",
+          "Субота — день для відпочинку."
+        ],
+        "en": [
+          "On Saturday we are going on a picnic.",
+          "Saturday is a day for rest."
+        ]
+      }
+    },
+    {
+      "uk": "неділя",
+      "ru": "воскресенье",
+      "de": "Sonntag",
+      "en": "Sunday",
+      "phoneticUk": "nedilya",
+      "phoneticRu": "voskresen'ye",
+      "phoneticDe": "ZONN-tahk",
+      "es": "domingo",
+      "phoneticEs": "doh-MEEN-goh",
+      "fr": "dimanche",
+      "frPhonetic": "dee-MAHNSH",
+      "el": "Κυριακή",
+      "elPhonetic": "ki-ri-a-KI",
+      "hi": "रविवार",
+      "hiPhonetic": "RA-vi-vaar",
+      "ar": "الأَحَد",
+      "arPhonetic": "al-A-had",
+      "ko": "일요일",
+      "koPhonetic": "IL-yo-il",
+      "zh": "星期天",
+      "zhPhonetic": "xīngqītiān",
+      "ja": "日曜日",
+      "jaPhonetic": "nichiyoubi",
+      "examples": {
+        "uk": [
+          "У неділю ми відвідуємо бабусю.",
+          "Неділя — останній день тижня."
+        ],
+        "en": [
+          "On Sunday we visit grandma.",
+          "Sunday is the last day of the week."
+        ]
+      }
+    },
+    {
+      "uk": "січень",
+      "ru": "январь",
+      "de": "Januar",
+      "en": "January",
+      "phoneticUk": "sichen'",
+      "phoneticRu": "yanvar'",
+      "phoneticDe": "YAH-noo-ar",
+      "es": "enero",
+      "phoneticEs": "eh-NEH-roh",
+      "fr": "janvier",
+      "frPhonetic": "zhahn-vee-EH",
+      "el": "Ιανουάριος",
+      "elPhonetic": "i-a-nu-A-ri-os",
+      "hi": "जनवरी",
+      "hiPhonetic": "JAN-va-ree",
+      "ar": "يَنَايِر",
+      "arPhonetic": "ya-NAA-yir",
+      "ko": "일월",
+      "koPhonetic": "IL-wol",
+      "zh": "一月",
+      "zhPhonetic": "yīyuè",
+      "ja": "一月",
+      "jaPhonetic": "ichigatsu",
+      "examples": {
+        "uk": [
+          "Січень — перший місяць року.",
+          "У січні зазвичай дуже холодно."
+        ],
+        "en": [
+          "January is the first month of the year.",
+          "It is usually very cold in January."
+        ]
+      }
+    },
+    {
+      "uk": "лютий",
+      "ru": "февраль",
+      "de": "Februar",
+      "en": "February",
+      "phoneticUk": "lyutiy",
+      "phoneticRu": "fevral'",
+      "phoneticDe": "FEB-roo-ar",
+      "es": "febrero",
+      "phoneticEs": "feh-BREH-roh",
+      "fr": "février",
+      "frPhonetic": "feh-vree-EH",
+      "el": "Φεβρουάριος",
+      "elPhonetic": "fev-ru-A-ri-os",
+      "hi": "फ़रवरी",
+      "hiPhonetic": "FAR-va-ree",
+      "ar": "فِبْرَايِر",
+      "arPhonetic": "fib-RAA-yir",
+      "ko": "이월",
+      "koPhonetic": "I-wol",
+      "zh": "二月",
+      "zhPhonetic": "èryuè",
+      "ja": "二月",
+      "jaPhonetic": "nigatsu",
+      "examples": {
+        "uk": [
+          "Лютий — найкоротший місяць.",
+          "День закоханих у лютому."
+        ],
+        "en": [
+          "February is the shortest month.",
+          "Valentine's Day is in February."
+        ]
+      }
+    },
+    {
+      "uk": "березень",
+      "ru": "март",
+      "de": "März",
+      "en": "March",
+      "phoneticUk": "berezen'",
+      "phoneticRu": "mart",
+      "phoneticDe": "MEHRTS",
+      "es": "marzo",
+      "phoneticEs": "MAR-thoh",
+      "fr": "mars",
+      "frPhonetic": "MARS",
+      "el": "Μάρτιος",
+      "elPhonetic": "MAR-ti-os",
+      "hi": "मार्च",
+      "hiPhonetic": "MARCH",
+      "ar": "مَارِس",
+      "arPhonetic": "MAA-ris",
+      "ko": "삼월",
+      "koPhonetic": "SAM-wol",
+      "zh": "三月",
+      "zhPhonetic": "sānyuè",
+      "ja": "三月",
+      "jaPhonetic": "sangatsu",
+      "examples": {
+        "uk": [
+          "Весна починається у березні.",
+          "У березні дні стають довшими."
+        ],
+        "en": [
+          "Spring begins in March.",
+          "In March the days get longer."
+        ]
+      }
+    },
+    {
+      "uk": "квітень",
+      "ru": "апрель",
+      "de": "April",
+      "en": "April",
+      "phoneticUk": "kviten'",
+      "phoneticRu": "aprel'",
+      "phoneticDe": "a-PRIL",
+      "es": "abril",
+      "phoneticEs": "ah-BREEL",
+      "fr": "avril",
+      "frPhonetic": "av-REEL",
+      "el": "Απρίλιος",
+      "elPhonetic": "a-PRI-li-os",
+      "hi": "अप्रैल",
+      "hiPhonetic": "AP-rail",
+      "ar": "أَبْرِيل",
+      "arPhonetic": "AB-reel",
+      "ko": "사월",
+      "koPhonetic": "SA-wol",
+      "zh": "四月",
+      "zhPhonetic": "sìyuè",
+      "ja": "四月",
+      "jaPhonetic": "shigatsu",
+      "examples": {
+        "uk": [
+          "У квітні цвітуть дерева.",
+          "Квітень приносить теплу погоду."
+        ],
+        "en": [
+          "In April the trees bloom.",
+          "April brings warm weather."
+        ]
+      }
+    },
+    {
+      "uk": "травень",
+      "ru": "май",
+      "de": "Mai",
+      "en": "May",
+      "phoneticUk": "traven'",
+      "phoneticRu": "may",
+      "phoneticDe": "MAY",
+      "es": "mayo",
+      "phoneticEs": "MAH-yoh",
+      "fr": "mai",
+      "frPhonetic": "MEH",
+      "el": "Μάιος",
+      "elPhonetic": "MA-i-os",
+      "hi": "मई",
+      "hiPhonetic": "MA-ee",
+      "ar": "مَايُو",
+      "arPhonetic": "MAA-yu",
+      "ko": "오월",
+      "koPhonetic": "O-wol",
+      "zh": "五月",
+      "zhPhonetic": "wǔyuè",
+      "ja": "五月",
+      "jaPhonetic": "gogatsu",
+      "examples": {
+        "uk": [
+          "У травні багато свят.",
+          "Травень — красивий весняний місяць."
+        ],
+        "en": [
+          "There are many holidays in May.",
+          "May is a beautiful spring month."
+        ]
+      }
+    },
+    {
+      "uk": "червень",
+      "ru": "июнь",
+      "de": "Juni",
+      "en": "June",
+      "phoneticUk": "cherven'",
+      "phoneticRu": "iyun'",
+      "phoneticDe": "YOO-nee",
+      "es": "junio",
+      "phoneticEs": "HOO-nee-oh",
+      "fr": "juin",
+      "frPhonetic": "ZHWAN",
+      "el": "Ιούνιος",
+      "elPhonetic": "i-OU-ni-os",
+      "hi": "जून",
+      "hiPhonetic": "JOON",
+      "ar": "يُونِيُو",
+      "arPhonetic": "YOO-ni-yu",
+      "ko": "유월",
+      "koPhonetic": "YU-wol",
+      "zh": "六月",
+      "zhPhonetic": "liùyuè",
+      "ja": "六月",
+      "jaPhonetic": "rokugatsu",
+      "examples": {
+        "uk": [
+          "Літо починається у червні.",
+          "У червні закінчується навчальний рік."
+        ],
+        "en": [
+          "Summer begins in June.",
+          "The school year ends in June."
+        ]
+      }
+    },
+    {
+      "uk": "липень",
+      "ru": "июль",
+      "de": "Juli",
+      "en": "July",
+      "phoneticUk": "lypen'",
+      "phoneticRu": "iyul'",
+      "phoneticDe": "YOO-lee",
+      "es": "julio",
+      "phoneticEs": "HOO-lee-oh",
+      "fr": "juillet",
+      "frPhonetic": "zhwee-YEH",
+      "el": "Ιούλιος",
+      "elPhonetic": "i-OU-li-os",
+      "hi": "जुलाई",
+      "hiPhonetic": "ju-LAA-ee",
+      "ar": "يُولِيُو",
+      "arPhonetic": "YOO-li-yu",
+      "ko": "칠월",
+      "koPhonetic": "CHIL-wol",
+      "zh": "七月",
+      "zhPhonetic": "qīyuè",
+      "ja": "七月",
+      "jaPhonetic": "shichigatsu",
+      "examples": {
+        "uk": [
+          "Липень — найспекотніший місяць.",
+          "У липні ми їдемо у відпустку."
+        ],
+        "en": [
+          "July is the hottest month.",
+          "In July we go on vacation."
+        ]
+      }
+    },
+    {
+      "uk": "серпень",
+      "ru": "август",
+      "de": "August",
+      "en": "August",
+      "phoneticUk": "serpen'",
+      "phoneticRu": "avgust",
+      "phoneticDe": "ow-GOOST",
+      "es": "agosto",
+      "phoneticEs": "ah-GOS-toh",
+      "fr": "août",
+      "frPhonetic": "OOT",
+      "el": "Αύγουστος",
+      "elPhonetic": "AV-ghu-stos",
+      "hi": "अगस्त",
+      "hiPhonetic": "A-gast",
+      "ar": "أَغُسْطُس",
+      "arPhonetic": "a-GHUS-tus",
+      "ko": "팔월",
+      "koPhonetic": "PAL-wol",
+      "zh": "八月",
+      "zhPhonetic": "bāyuè",
+      "ja": "八月",
+      "jaPhonetic": "hachigatsu",
+      "examples": {
+        "uk": [
+          "Серпень — останній місяць літа.",
+          "У серпні ми збираємо врожай."
+        ],
+        "en": [
+          "August is the last month of summer.",
+          "In August we harvest the crops."
+        ]
+      }
+    },
+    {
+      "uk": "вересень",
+      "ru": "сентябрь",
+      "de": "September",
+      "en": "September",
+      "phoneticUk": "veresen'",
+      "phoneticRu": "sentyabr'",
+      "phoneticDe": "zep-TEM-ber",
+      "es": "septiembre",
+      "phoneticEs": "sep-TYEM-breh",
+      "fr": "septembre",
+      "frPhonetic": "sep-TAHM-bruh",
+      "el": "Σεπτέμβριος",
+      "elPhonetic": "sep-TEM-vri-os",
+      "hi": "सितम्बर",
+      "hiPhonetic": "si-TAM-bar",
+      "ar": "سِبْتَمْبِر",
+      "arPhonetic": "sib-TAM-bir",
+      "ko": "구월",
+      "koPhonetic": "GU-wol",
+      "zh": "九月",
+      "zhPhonetic": "jiǔyuè",
+      "ja": "九月",
+      "jaPhonetic": "kugatsu",
+      "examples": {
+        "uk": [
+          "Школа починається у вересні.",
+          "Вересень — початок осені."
+        ],
+        "en": [
+          "School starts in September.",
+          "September is the beginning of autumn."
+        ]
+      }
+    },
+    {
+      "uk": "жовтень",
+      "ru": "октябрь",
+      "de": "Oktober",
+      "en": "October",
+      "phoneticUk": "zhovten'",
+      "phoneticRu": "oktyabr'",
+      "phoneticDe": "ok-TOH-ber",
+      "es": "octubre",
+      "phoneticEs": "ok-TOO-breh",
+      "fr": "octobre",
+      "frPhonetic": "ok-TOH-bruh",
+      "el": "Οκτώβριος",
+      "elPhonetic": "ok-TO-vri-os",
+      "hi": "अक्टूबर",
+      "hiPhonetic": "ak-TOO-bar",
+      "ar": "أُكْتُوبِر",
+      "arPhonetic": "uk-TOO-bir",
+      "ko": "시월",
+      "koPhonetic": "SHI-wol",
+      "zh": "十月",
+      "zhPhonetic": "shíyuè",
+      "ja": "十月",
+      "jaPhonetic": "juugatsu",
+      "examples": {
+        "uk": [
+          "У жовтні листя стає жовтим.",
+          "Жовтень — середина осені."
+        ],
+        "en": [
+          "In October the leaves turn yellow.",
+          "October is the middle of autumn."
+        ]
+      }
+    },
+    {
+      "uk": "листопад",
+      "ru": "ноябрь",
+      "de": "November",
+      "en": "November",
+      "phoneticUk": "lystopad",
+      "phoneticRu": "noyabr'",
+      "phoneticDe": "no-VEM-ber",
+      "es": "noviembre",
+      "phoneticEs": "no-BYEM-breh",
+      "fr": "novembre",
+      "frPhonetic": "no-VAHM-bruh",
+      "el": "Νοέμβριος",
+      "elPhonetic": "no-EM-vri-os",
+      "hi": "नवम्बर",
+      "hiPhonetic": "na-VAM-bar",
+      "ar": "نُوفَمْبِر",
+      "arPhonetic": "nu-FAM-bir",
+      "ko": "십일월",
+      "koPhonetic": "SHI-bil-wol",
+      "zh": "十一月",
+      "zhPhonetic": "shíyīyuè",
+      "ja": "十一月",
+      "jaPhonetic": "juuichigatsu",
+      "examples": {
+        "uk": [
+          "У листопаді стає холодно.",
+          "Листопад — останній місяць осені."
+        ],
+        "en": [
+          "In November it gets cold.",
+          "November is the last month of autumn."
+        ]
+      }
+    },
+    {
+      "uk": "грудень",
+      "ru": "декабрь",
+      "de": "Dezember",
+      "en": "December",
+      "phoneticUk": "hruden'",
+      "phoneticRu": "dekabr'",
+      "phoneticDe": "deh-TSEM-ber",
+      "es": "diciembre",
+      "phoneticEs": "dee-THYEM-breh",
+      "fr": "décembre",
+      "frPhonetic": "deh-SAHM-bruh",
+      "el": "Δεκέμβριος",
+      "elPhonetic": "dhe-KEM-vri-os",
+      "hi": "दिसम्बर",
+      "hiPhonetic": "di-SAM-bar",
+      "ar": "دِيسَمْبِر",
+      "arPhonetic": "dee-SAM-bir",
+      "ko": "십이월",
+      "koPhonetic": "SHI-bi-wol",
+      "zh": "十二月",
+      "zhPhonetic": "shíèryuè",
+      "ja": "十二月",
+      "jaPhonetic": "juunigatsu",
+      "examples": {
+        "uk": [
+          "Грудень — останній місяць року.",
+          "У грудні ми святкуємо Новий рік."
+        ],
+        "en": [
+          "December is the last month of the year.",
+          "In December we celebrate New Year."
+        ]
+      }
+    },
+    {
+      "uk": "сьогодні",
+      "ru": "сегодня",
+      "de": "heute",
+      "en": "today",
+      "phoneticUk": "s'ohodni",
+      "phoneticRu": "sevodnya",
+      "phoneticDe": "HOY-teh",
+      "es": "hoy",
+      "phoneticEs": "OY",
+      "fr": "aujourd'hui",
+      "frPhonetic": "oh-zhoor-DWEE",
+      "el": "σήμερα",
+      "elPhonetic": "SI-me-ra",
+      "hi": "आज",
+      "hiPhonetic": "AAJ",
+      "ar": "اليَوْم",
+      "arPhonetic": "al-YAWM",
+      "ko": "오늘",
+      "koPhonetic": "O-neul",
+      "zh": "今天",
+      "zhPhonetic": "jīntiān",
+      "ja": "今日",
+      "jaPhonetic": "kyou",
+      "examples": {
+        "uk": [
+          "Сьогодні гарна погода.",
+          "Що ти робиш сьогодні?"
+        ],
+        "en": [
+          "Today the weather is nice.",
+          "What are you doing today?"
+        ]
+      }
+    }
+  ]
+}

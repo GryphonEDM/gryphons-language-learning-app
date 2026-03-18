@@ -1,0 +1,204 @@
+{
+  "lessonId": "relative-tense",
+  "nameEn": "Relative Clauses and Tense Marking",
+  "nameKo": "관형절과 시제 표현",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": [
+    "verb-conjugation",
+    "past-tense",
+    "adjectives"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "past-adjective-modifier",
+      "title": "-(으)ㄴ — Past (Verbs) and Present (Adjectives)",
+      "explanation": "In Korean, relative clauses come BEFORE the noun they modify (the opposite of English). The modifier ending -(으)ㄴ has two uses depending on the word type. With ACTION VERBS, -(으)ㄴ marks PAST tense: 먹다 → 먹은 (that one ate), 만들다 → 만든 (that one made), 읽다 → 읽은 (that one read). Examples: 어제 먹은 음식 (the food I ate yesterday), 내가 만든 케이크 (the cake I made). With DESCRIPTIVE VERBS (adjectives), -(으)ㄴ marks PRESENT state: 크다 → 큰 (big), 작다 → 작은 (small), 예쁘다 → 예쁜 (pretty). Examples: 큰 집 (a big house), 예쁜 꽃 (a pretty flower). The rule: consonant-ending stems take -은, vowel-ending stems take -ㄴ. ㄹ-ending stems drop ㄹ and take -ㄴ: 만들다 → 만든, 길다 → 긴.",
+      "tip": "Action verbs + -(으)ㄴ = past modifier (the thing someone did). Adjectives + -(으)ㄴ = present modifier (the thing that is). This is because adjectives in Korean describe current states, not actions.",
+      "examples": [
+        {
+          "ko": "어제 읽은 책이 재미있었어요.",
+          "en": "The book I read yesterday was interesting.",
+          "highlight": "읽은 책"
+        },
+        {
+          "ko": "내가 만든 음식을 드세요.",
+          "en": "Please eat the food I made.",
+          "highlight": "만든 음식"
+        },
+        {
+          "ko": "큰 가방이 필요해요.",
+          "en": "I need a big bag.",
+          "highlight": "큰 가방"
+        },
+        {
+          "ko": "예쁜 꽃을 샀어요.",
+          "en": "I bought pretty flowers.",
+          "highlight": "예쁜 꽃"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the food I ate' using 먹다?",
+          "options": [
+            "먹는 음식",
+            "먹은 음식",
+            "먹을 음식",
+            "먹는다 음식"
+          ],
+          "correctIndex": 1,
+          "explanation": "For action verbs in past tense, use -(으)ㄴ: 먹다 → 먹은. 먹은 음식 = the food (that I) ate."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'a small room' using 작다 (to be small)?",
+          "options": [
+            "작는 방",
+            "작을 방",
+            "작은 방",
+            "작고 방"
+          ],
+          "correctIndex": 2,
+          "explanation": "Adjectives use -(으)ㄴ for present-state modification: 작다 → 작은. 작은 방 = a small room."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "내가 ___ 영화는 슬펐어요. (The movie I watched was sad.) [보다 = to watch]",
+          "hint": "Past modifier form of 보다",
+          "explanation": "보다 (vowel ending) + ㄴ = 본. 내가 본 영화 = the movie I watched.",
+          "acceptedAnswers": [
+            "본"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "present-modifier",
+      "title": "-는 — Present Tense (Action Verbs)",
+      "explanation": "-는 is the present-tense modifier ending for ACTION VERBS. It describes something happening now or habitually. Attach -는 directly to the verb stem: 먹다 → 먹는 (that is eating / that eats), 가다 → 가는 (that is going / that goes), 읽다 → 읽는 (that is reading / that reads). Examples: 지금 먹는 음식 (the food I'm eating now), 매일 가는 카페 (the cafe I go to every day), 여기서 일하는 사람 (the person who works here). For ㄹ-ending stems, drop ㄹ before -는: 살다 → 사는 (living), 만들다 → 만드는 (making). Important: -는 is ONLY for action verbs. Adjectives do NOT use -는 for present tense — they use -(으)ㄴ instead. This is a key difference from many other languages.",
+      "tip": "Present action = -는: 먹는 사람 (person who is eating). Present state (adjectives) = -(으)ㄴ: 큰 사람 (big person). Don't mix them up!",
+      "examples": [
+        {
+          "ko": "지금 먹는 음식이 뭐예요?",
+          "en": "What is the food you're eating now?",
+          "highlight": "먹는 음식"
+        },
+        {
+          "ko": "서울에 사는 친구가 있어요.",
+          "en": "I have a friend who lives in Seoul.",
+          "highlight": "사는 친구"
+        },
+        {
+          "ko": "매일 마시는 커피가 맛있어요.",
+          "en": "The coffee I drink every day is delicious.",
+          "highlight": "마시는 커피"
+        },
+        {
+          "ko": "한국어를 가르치는 선생님이에요.",
+          "en": "It's the teacher who teaches Korean.",
+          "highlight": "가르치는 선생님"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the person who is singing' using 노래하다?",
+          "options": [
+            "노래한 사람",
+            "노래하는 사람",
+            "노래할 사람",
+            "노래하고 사람"
+          ],
+          "correctIndex": 1,
+          "explanation": "Present-tense action verb modifier: 노래하다 → 노래하는. 노래하는 사람 = the person who is singing."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct present modifier for 살다 (to live)? (ㄹ-irregular)",
+          "options": [
+            "살는",
+            "살은",
+            "사는",
+            "살을"
+          ],
+          "correctIndex": 2,
+          "explanation": "ㄹ-ending stems drop ㄹ before -는: 살다 → 사는. 서울에 사는 사람 = a person who lives in Seoul."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "여기서 일___ 사람이 많아요. (There are many people who work here.)",
+          "hint": "Present modifier ending for action verbs",
+          "explanation": "일하다 + -는 = 일하는. 일하는 사람 = person who works.",
+          "acceptedAnswers": [
+            "하는"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "future-modifier",
+      "title": "-(으)ㄹ — Future / Prospective Modifier",
+      "explanation": "-(으)ㄹ is the future or prospective modifier ending, meaning 'that will' or 'that is to be.' Consonant-ending stems take -을, vowel-ending stems take -ㄹ: 먹다 → 먹을 (that will eat / to be eaten), 가다 → 갈 (that will go), 읽다 → 읽을 (that will read). Examples: 내일 먹을 음식 (the food to eat tomorrow), 읽을 책 (a book to read), 갈 곳 (a place to go). This ending also appears in many grammar patterns: -(으)ㄹ 수 있다 (can do), -(으)ㄹ 거예요 (will do), -(으)ㄹ까요? (shall we?), -(으)ㄹ 때 (when). The prospective meaning often implies purpose or plans: 마실 물 (water to drink), 입을 옷 (clothes to wear). For ㄹ-ending stems, the ㄹ is kept: 만들다 → 만들 (that will make), 살다 → 살 (that will live).",
+      "tip": "Past -(으)ㄴ, Present -는, Future -(으)ㄹ — these three modifiers are the backbone of Korean relative clauses. Master them and you can describe any noun with a clause.",
+      "examples": [
+        {
+          "ko": "마실 물이 있어요?",
+          "en": "Is there water to drink?",
+          "highlight": "마실 물"
+        },
+        {
+          "ko": "내일 만날 사람이 있어요.",
+          "en": "There's someone I'll meet tomorrow.",
+          "highlight": "만날 사람"
+        },
+        {
+          "ko": "이번 주말에 할 일이 많아요.",
+          "en": "I have a lot of things to do this weekend.",
+          "highlight": "할 일"
+        },
+        {
+          "ko": "살 집을 찾고 있어요.",
+          "en": "I'm looking for a house to live in.",
+          "highlight": "살 집"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'a book to read' using 읽다?",
+          "options": [
+            "읽는 책",
+            "읽은 책",
+            "읽을 책",
+            "읽고 책"
+          ],
+          "correctIndex": 2,
+          "explanation": "Future/prospective modifier: 읽다 → 읽을. 읽을 책 = a book to read (that will be read)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which set correctly shows past, present, and future modifiers for 먹다?",
+          "options": [
+            "먹은, 먹는, 먹을",
+            "먹는, 먹은, 먹을",
+            "먹을, 먹는, 먹은",
+            "먹은, 먹을, 먹는"
+          ],
+          "correctIndex": 0,
+          "explanation": "먹다: past = 먹은, present = 먹는, future = 먹을. This is the standard tense modifier pattern for action verbs."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "내일 ___ 곳이 어디예요? (Where is the place we'll go tomorrow?) [가다 = to go]",
+          "hint": "Future modifier form of 가다",
+          "explanation": "가다 (vowel ending) + ㄹ = 갈. 갈 곳 = a place to go.",
+          "acceptedAnswers": [
+            "갈"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "setId": "school",
+  "nameEn": "School & Education",
+  "nameUk": "Школа та освіта",
+  "nameRu": "Школа и образование",
+  "nameDe": "Schule und Bildung",
+  "nameEs": "Escuela y educación",
+  "nameFr": "École et éducation",
+  "nameEl": "Σχολείο και εκπαίδευση",
+  "nameHi": "स्कूल और शिक्षा",
+  "nameAr": "المدرسة والتعليم",
+  "nameKo": "학교와 교육",
+  "nameZh": "学校与教育",
+  "nameJa": "学校と教育",
+  "difficulty": "A1",
+  "icon": "🏫",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "вчитель",
+      "ru": "учитель",
+      "de": "Lehrer",
+      "en": "teacher",
+      "phoneticUk": "vchytel'",
+      "phoneticRu": "uchitel'",
+      "phoneticDe": "LEH-rer",
+      "es": "profesor",
+      "phoneticEs": "pro-feh-SOR",
+      "fr": "professeur",
+      "frPhonetic": "pro-feh-SUHR",
+      "el": "δάσκαλος",
+      "elPhonetic": "DHAS-ka-los",
+      "hi": "शिक्षक",
+      "hiPhonetic": "SHIK-shak",
+      "ar": "مُعَلِّم",
+      "arPhonetic": "mu-AL-lim",
+      "ko": "선생님",
+      "koPhonetic": "SEON-seng-nim",
+      "zh": "老师",
+      "zhPhonetic": "lǎoshī",
+      "ja": "先生",
+      "jaPhonetic": "sensei",
+      "examples": {
+        "uk": [
+          "Наш вчитель дуже добрий.",
+          "Вчитель пояснив нову тему."
+        ],
+        "en": [
+          "Our teacher is very kind.",
+          "The teacher explained the new topic."
+        ]
+      }
+    },
+    {
+      "uk": "учень",
+      "ru": "ученик",
+      "de": "Schüler",
+      "en": "student",
+      "phoneticUk": "uchen'",
+      "phoneticRu": "uchenik",
+      "phoneticDe": "SHOO-ler",
+      "es": "estudiante",
+      "phoneticEs": "es-too-dee-AN-teh",
+      "fr": "élève",
+      "frPhonetic": "eh-LEV",
+      "el": "μαθητής",
+      "elPhonetic": "ma-thi-TIS",
+      "hi": "छात्र",
+      "hiPhonetic": "CHAA-tra",
+      "ar": "طَالِب",
+      "arPhonetic": "TAA-lib",
+      "ko": "학생",
+      "koPhonetic": "HAK-seng",
+      "zh": "学生",
+      "zhPhonetic": "xuéshēng",
+      "ja": "学生",
+      "jaPhonetic": "gakusei",
+      "examples": {
+        "uk": [
+          "Учень відповів на запитання правильно.",
+          "У нашому класі тридцять учнів."
+        ],
+        "en": [
+          "The student answered the question correctly.",
+          "There are thirty students in our class."
+        ]
+      }
+    },
+    {
+      "uk": "книга",
+      "ru": "книга",
+      "de": "Buch",
+      "en": "book",
+      "phoneticUk": "knyha",
+      "phoneticRu": "kniga",
+      "phoneticDe": "BOOKH",
+      "es": "libro",
+      "phoneticEs": "LEE-broh",
+      "fr": "livre",
+      "frPhonetic": "LEE-vruh",
+      "el": "βιβλίο",
+      "elPhonetic": "vi-VLI-o",
+      "hi": "किताब",
+      "hiPhonetic": "ki-TAAB",
+      "ar": "كِتَاب",
+      "arPhonetic": "ki-TAAB",
+      "ko": "책",
+      "koPhonetic": "CHEK",
+      "zh": "书",
+      "zhPhonetic": "shū",
+      "ja": "本",
+      "jaPhonetic": "hon",
+      "examples": {
+        "uk": [
+          "Я читаю цікаву книгу.",
+          "Ця книга лежить на столі."
+        ],
+        "en": [
+          "I am reading an interesting book.",
+          "This book is on the table."
+        ]
+      }
+    },
+    {
+      "uk": "олівець",
+      "ru": "карандаш",
+      "de": "Bleistift",
+      "en": "pencil",
+      "phoneticUk": "olivets'",
+      "phoneticRu": "karandash",
+      "phoneticDe": "BLAY-shtift",
+      "es": "lápiz",
+      "phoneticEs": "LAH-pith",
+      "fr": "crayon",
+      "frPhonetic": "kreh-YON",
+      "el": "μολύβι",
+      "elPhonetic": "mo-LI-vi",
+      "hi": "पेंसिल",
+      "hiPhonetic": "PEN-sil",
+      "ar": "قَلَم رَصَاص",
+      "arPhonetic": "QA-lam ra-SAAS",
+      "ko": "연필",
+      "koPhonetic": "YEON-pil",
+      "zh": "铅笔",
+      "zhPhonetic": "qiānbǐ",
+      "ja": "鉛筆",
+      "jaPhonetic": "enpitsu",
+      "examples": {
+        "uk": [
+          "Дай мені олівець, будь ласка.",
+          "Я пишу олівцем у зошиті."
+        ],
+        "en": [
+          "Give me a pencil, please.",
+          "I write with a pencil in my notebook."
+        ]
+      }
+    },
+    {
+      "uk": "парта",
+      "ru": "парта",
+      "de": "Schreibtisch",
+      "en": "desk",
+      "phoneticUk": "parta",
+      "phoneticRu": "parta",
+      "phoneticDe": "SHRAYB-tish",
+      "es": "escritorio",
+      "phoneticEs": "es-kri-TOR-ee-oh",
+      "fr": "bureau",
+      "frPhonetic": "boo-ROH",
+      "el": "θρανίο",
+      "elPhonetic": "thra-NI-o",
+      "hi": "डेस्क",
+      "hiPhonetic": "DESK",
+      "ar": "مَكْتَب",
+      "arPhonetic": "MAK-tab",
+      "ko": "책상",
+      "koPhonetic": "CHEK-sang",
+      "zh": "课桌",
+      "zhPhonetic": "kèzhuō",
+      "ja": "机",
+      "jaPhonetic": "tsukue",
+      "examples": {
+        "uk": [
+          "Моя парта стоїть біля вікна.",
+          "На парті лежать книги та зошити."
+        ],
+        "en": [
+          "My desk is near the window.",
+          "There are books and notebooks on the desk."
+        ]
+      }
+    },
+    {
+      "uk": "клас",
+      "ru": "класс",
+      "de": "Klassenzimmer",
+      "en": "classroom",
+      "phoneticUk": "klas",
+      "phoneticRu": "klass",
+      "phoneticDe": "KLAS-sen-tsim-mer",
+      "es": "aula",
+      "phoneticEs": "OW-lah",
+      "fr": "salle de classe",
+      "frPhonetic": "sal-duh-KLAS",
+      "el": "τάξη",
+      "elPhonetic": "TAK-si",
+      "hi": "कक्षा",
+      "hiPhonetic": "KAK-shaa",
+      "ar": "فَصْل",
+      "arPhonetic": "FASL",
+      "ko": "교실",
+      "koPhonetic": "GYO-shil",
+      "zh": "教室",
+      "zhPhonetic": "jiàoshì",
+      "ja": "教室",
+      "jaPhonetic": "kyoushitsu",
+      "examples": {
+        "uk": [
+          "Наш клас великий і світлий.",
+          "У класі є дошка та комп'ютер."
+        ],
+        "en": [
+          "Our classroom is big and bright.",
+          "There is a board and a computer in the classroom."
+        ]
+      }
+    },
+    {
+      "uk": "домашнє завдання",
+      "ru": "домашнее задание",
+      "de": "Hausaufgabe",
+      "en": "homework",
+      "phoneticUk": "domashnie zavdannya",
+      "phoneticRu": "domashneye zadaniye",
+      "phoneticDe": "HOWS-owf-gah-beh",
+      "es": "tarea",
+      "phoneticEs": "tah-REH-ah",
+      "fr": "devoirs",
+      "frPhonetic": "duh-VWAR",
+      "el": "εργασία",
+      "elPhonetic": "er-gha-SI-a",
+      "hi": "गृहकार्य",
+      "hiPhonetic": "GRIH-kaarya",
+      "ar": "وَاجِب مَنْزِلِيّ",
+      "arPhonetic": "WAA-jib man-ZI-lee",
+      "ko": "숙제",
+      "koPhonetic": "SUK-je",
+      "zh": "作业",
+      "zhPhonetic": "zuòyè",
+      "ja": "宿題",
+      "jaPhonetic": "shukudai",
+      "examples": {
+        "uk": [
+          "Я зробив домашнє завдання після школи.",
+          "Вчитель перевірив наше домашнє завдання."
+        ],
+        "en": [
+          "I did my homework after school.",
+          "The teacher checked our homework."
+        ]
+      }
+    },
+    {
+      "uk": "іспит",
+      "ru": "экзамен",
+      "de": "Prüfung",
+      "en": "exam",
+      "phoneticUk": "ispyt",
+      "phoneticRu": "ekzamen",
+      "phoneticDe": "PROO-fung",
+      "es": "examen",
+      "phoneticEs": "ek-SAH-men",
+      "fr": "examen",
+      "frPhonetic": "eg-za-MEN",
+      "el": "εξέταση",
+      "elPhonetic": "ek-SE-ta-si",
+      "hi": "परीक्षा",
+      "hiPhonetic": "pa-REEK-shaa",
+      "ar": "اِمْتِحَان",
+      "arPhonetic": "im-ti-HAAN",
+      "ko": "시험",
+      "koPhonetic": "SHI-heom",
+      "zh": "考试",
+      "zhPhonetic": "kǎoshì",
+      "ja": "試験",
+      "jaPhonetic": "shiken",
+      "examples": {
+        "uk": [
+          "Завтра у нас іспит з математики.",
+          "Я склав іспит на відмінно."
+        ],
+        "en": [
+          "We have a math exam tomorrow.",
+          "I passed the exam with an excellent grade."
+        ]
+      }
+    },
+    {
+      "uk": "урок",
+      "ru": "урок",
+      "de": "Unterricht",
+      "en": "lesson",
+      "phoneticUk": "urok",
+      "phoneticRu": "urok",
+      "phoneticDe": "OON-ter-rikht",
+      "es": "lección",
+      "phoneticEs": "lek-thee-ON",
+      "fr": "leçon",
+      "frPhonetic": "luh-SON",
+      "el": "μάθημα",
+      "elPhonetic": "MA-thi-ma",
+      "hi": "पाठ",
+      "hiPhonetic": "PAATH",
+      "ar": "دَرْس",
+      "arPhonetic": "DARS",
+      "ko": "수업",
+      "koPhonetic": "SU-eop",
+      "zh": "课",
+      "zhPhonetic": "kè",
+      "ja": "授業",
+      "jaPhonetic": "jugyou",
+      "examples": {
+        "uk": [
+          "Сьогодні у нас п'ять уроків.",
+          "Урок починається о дев'ятій годині."
+        ],
+        "en": [
+          "We have five lessons today.",
+          "The lesson starts at nine o'clock."
+        ]
+      }
+    },
+    {
+      "uk": "оцінка",
+      "ru": "оценка",
+      "de": "Note",
+      "en": "grade",
+      "phoneticUk": "otsinka",
+      "phoneticRu": "otsenka",
+      "phoneticDe": "NOH-teh",
+      "es": "nota",
+      "phoneticEs": "NOH-tah",
+      "fr": "note",
+      "frPhonetic": "NOT",
+      "el": "βαθμός",
+      "elPhonetic": "vath-MOS",
+      "hi": "ग्रेड",
+      "hiPhonetic": "GRED",
+      "ar": "دَرَجَة",
+      "arPhonetic": "DA-ra-ja",
+      "ko": "성적",
+      "koPhonetic": "SEONG-jeok",
+      "zh": "成绩",
+      "zhPhonetic": "chéngjì",
+      "ja": "成績",
+      "jaPhonetic": "seiseki",
+      "examples": {
+        "uk": [
+          "Я отримав хорошу оцінку з математики.",
+          "Оцінки важливі для навчання."
+        ],
+        "en": [
+          "I got a good grade in math.",
+          "Grades are important for studying."
+        ]
+      }
+    },
+    {
+      "uk": "дошка",
+      "ru": "доска",
+      "de": "Tafel",
+      "en": "blackboard",
+      "phoneticUk": "doshka",
+      "phoneticRu": "doska",
+      "phoneticDe": "TAH-fel",
+      "es": "pizarra",
+      "phoneticEs": "pi-THAR-rah",
+      "fr": "tableau",
+      "frPhonetic": "ta-BLOH",
+      "el": "πίνακας",
+      "elPhonetic": "PI-na-kas",
+      "hi": "ब्लैकबोर्ड",
+      "hiPhonetic": "BLEK-bord",
+      "ar": "سَبُّورَة",
+      "arPhonetic": "sab-BOO-ra",
+      "ko": "칠판",
+      "koPhonetic": "CHIL-pan",
+      "zh": "黑板",
+      "zhPhonetic": "hēibǎn",
+      "ja": "黒板",
+      "jaPhonetic": "kokuban",
+      "examples": {
+        "uk": [
+          "Вчитель пише на дошці.",
+          "Витри дошку, будь ласка."
+        ],
+        "en": [
+          "The teacher writes on the blackboard.",
+          "Please wipe the blackboard."
+        ]
+      }
+    },
+    {
+      "uk": "зошит",
+      "ru": "тетрадь",
+      "de": "Heft",
+      "en": "notebook",
+      "phoneticUk": "zoshyt",
+      "phoneticRu": "tetrad'",
+      "phoneticDe": "HEFT",
+      "es": "cuaderno",
+      "phoneticEs": "kwa-DEHR-noh",
+      "fr": "cahier",
+      "frPhonetic": "ka-YEH",
+      "el": "τετράδιο",
+      "elPhonetic": "te-TRA-dhi-o",
+      "hi": "नोटबुक",
+      "hiPhonetic": "NOT-buk",
+      "ar": "دَفْتَر",
+      "arPhonetic": "DAF-tar",
+      "ko": "공책",
+      "koPhonetic": "GONG-chek",
+      "zh": "笔记本",
+      "zhPhonetic": "bǐjìběn",
+      "ja": "ノート",
+      "jaPhonetic": "nooto",
+      "examples": {
+        "uk": [
+          "Я записав усе в зошит.",
+          "Мій зошит з математики синього кольору."
+        ],
+        "en": [
+          "I wrote everything in my notebook.",
+          "My math notebook is blue."
+        ]
+      }
+    },
+    {
+      "uk": "рюкзак",
+      "ru": "рюкзак",
+      "de": "Rucksack",
+      "en": "backpack",
+      "phoneticUk": "ryukzak",
+      "phoneticRu": "ryukzak",
+      "phoneticDe": "RUK-zak",
+      "es": "mochila",
+      "phoneticEs": "mo-CHEE-lah",
+      "fr": "sac à dos",
+      "frPhonetic": "sak-a-DOH",
+      "el": "σακίδιο",
+      "elPhonetic": "sa-KI-dhi-o",
+      "hi": "बस्ता",
+      "hiPhonetic": "BAS-taa",
+      "ar": "حَقِيبَة ظَهْر",
+      "arPhonetic": "ha-QEE-ba DHAHR",
+      "ko": "배낭",
+      "koPhonetic": "BE-nang",
+      "zh": "书包",
+      "zhPhonetic": "shūbāo",
+      "ja": "リュックサック",
+      "jaPhonetic": "ryukkusakku",
+      "examples": {
+        "uk": [
+          "Я поклав книги в рюкзак.",
+          "Мій рюкзак дуже важкий сьогодні."
+        ],
+        "en": [
+          "I put the books in my backpack.",
+          "My backpack is very heavy today."
+        ]
+      }
+    },
+    {
+      "uk": "гумка",
+      "ru": "ластик",
+      "de": "Radiergummi",
+      "en": "eraser",
+      "phoneticUk": "humka",
+      "phoneticRu": "lastik",
+      "phoneticDe": "ra-DEER-gum-mi",
+      "es": "borrador",
+      "phoneticEs": "bor-rah-DOR",
+      "fr": "gomme",
+      "frPhonetic": "GOM",
+      "el": "γόμα",
+      "elPhonetic": "GHO-ma",
+      "hi": "रबड़",
+      "hiPhonetic": "RA-bar",
+      "ar": "مِمْحَاة",
+      "arPhonetic": "MIM-haa",
+      "ko": "지우개",
+      "koPhonetic": "JI-u-ge",
+      "zh": "橡皮",
+      "zhPhonetic": "xiàngpí",
+      "ja": "消しゴム",
+      "jaPhonetic": "keshigomu",
+      "examples": {
+        "uk": [
+          "Я стер помилку гумкою.",
+          "Дай мені гумку, будь ласка."
+        ],
+        "en": [
+          "I erased the mistake with an eraser.",
+          "Give me an eraser, please."
+        ]
+      }
+    },
+    {
+      "uk": "лінійка",
+      "ru": "линейка",
+      "de": "Lineal",
+      "en": "ruler",
+      "phoneticUk": "liniyika",
+      "phoneticRu": "lineyka",
+      "phoneticDe": "li-neh-AHL",
+      "es": "regla",
+      "phoneticEs": "REH-glah",
+      "fr": "règle",
+      "frPhonetic": "REH-gluh",
+      "el": "χάρακας",
+      "elPhonetic": "KHA-ra-kas",
+      "hi": "पट्टी",
+      "hiPhonetic": "PAT-tee",
+      "ar": "مِسْطَرَة",
+      "arPhonetic": "MIS-ta-ra",
+      "ko": "자",
+      "koPhonetic": "JA",
+      "zh": "尺子",
+      "zhPhonetic": "chǐzi",
+      "ja": "定規",
+      "jaPhonetic": "jougi",
+      "examples": {
+        "uk": [
+          "Я провів лінію за допомогою лінійки.",
+          "Моя лінійка має тридцять сантиметрів."
+        ],
+        "en": [
+          "I drew a line using a ruler.",
+          "My ruler is thirty centimetres long."
+        ]
+      }
+    },
+    {
+      "uk": "бібліотека",
+      "ru": "библиотека",
+      "de": "Bibliothek",
+      "en": "library",
+      "phoneticUk": "biblioteka",
+      "phoneticRu": "biblioteka",
+      "phoneticDe": "bi-blee-oh-TEK",
+      "es": "biblioteca",
+      "phoneticEs": "bi-blee-oh-TEH-kah",
+      "fr": "bibliothèque",
+      "frPhonetic": "bi-blee-oh-TEK",
+      "el": "βιβλιοθήκη",
+      "elPhonetic": "vi-vli-o-THI-ki",
+      "hi": "पुस्तकालय",
+      "hiPhonetic": "pus-ta-KAA-lay",
+      "ar": "مَكْتَبَة",
+      "arPhonetic": "MAK-ta-ba",
+      "ko": "도서관",
+      "koPhonetic": "DO-seo-gwan",
+      "zh": "图书馆",
+      "zhPhonetic": "túshūguǎn",
+      "ja": "図書館",
+      "jaPhonetic": "toshokan",
+      "examples": {
+        "uk": [
+          "Я ходжу до бібліотеки щотижня.",
+          "У бібліотеці багато цікавих книг."
+        ],
+        "en": [
+          "I go to the library every week.",
+          "There are many interesting books in the library."
+        ]
+      }
+    },
+    {
+      "uk": "наука",
+      "ru": "наука",
+      "de": "Wissenschaft",
+      "en": "science",
+      "phoneticUk": "nauka",
+      "phoneticRu": "nauka",
+      "phoneticDe": "VIS-sen-shaft",
+      "es": "ciencia",
+      "phoneticEs": "thee-EN-thee-ah",
+      "fr": "science",
+      "frPhonetic": "see-AHNS",
+      "el": "επιστήμη",
+      "elPhonetic": "e-pi-STI-mi",
+      "hi": "विज्ञान",
+      "hiPhonetic": "vi-GYAAN",
+      "ar": "عِلْم",
+      "arPhonetic": "ILM",
+      "ko": "과학",
+      "koPhonetic": "GWA-hak",
+      "zh": "科学",
+      "zhPhonetic": "kēxué",
+      "ja": "科学",
+      "jaPhonetic": "kagaku",
+      "examples": {
+        "uk": [
+          "Я люблю уроки науки.",
+          "Наука допомагає нам розуміти світ."
+        ],
+        "en": [
+          "I love science lessons.",
+          "Science helps us understand the world."
+        ]
+      }
+    },
+    {
+      "uk": "математика",
+      "ru": "математика",
+      "de": "Mathematik",
+      "en": "mathematics",
+      "phoneticUk": "matematyka",
+      "phoneticRu": "matematika",
+      "phoneticDe": "ma-teh-ma-TEEK",
+      "es": "matemáticas",
+      "phoneticEs": "ma-teh-MAH-tee-kas",
+      "fr": "mathématiques",
+      "frPhonetic": "ma-teh-ma-TEEK",
+      "el": "μαθηματικά",
+      "elPhonetic": "ma-thi-ma-ti-KA",
+      "hi": "गणित",
+      "hiPhonetic": "GA-nit",
+      "ar": "رِيَاضِيَّات",
+      "arPhonetic": "ri-yaa-dhi-YAAT",
+      "ko": "수학",
+      "koPhonetic": "SU-hak",
+      "zh": "数学",
+      "zhPhonetic": "shùxué",
+      "ja": "数学",
+      "jaPhonetic": "suugaku",
+      "examples": {
+        "uk": [
+          "Математика — мій улюблений предмет.",
+          "На уроці математики ми вивчали дроби."
+        ],
+        "en": [
+          "Mathematics is my favourite subject.",
+          "In math class we studied fractions."
+        ]
+      }
+    },
+    {
+      "uk": "історія",
+      "ru": "история",
+      "de": "Geschichte",
+      "en": "history",
+      "phoneticUk": "istoriya",
+      "phoneticRu": "istoriya",
+      "phoneticDe": "geh-SHIKH-teh",
+      "es": "historia",
+      "phoneticEs": "is-TOR-ee-ah",
+      "fr": "histoire",
+      "frPhonetic": "is-TWAR",
+      "el": "ιστορία",
+      "elPhonetic": "is-to-RI-a",
+      "hi": "इतिहास",
+      "hiPhonetic": "i-ti-HAAS",
+      "ar": "تَارِيخ",
+      "arPhonetic": "taa-REEKH",
+      "ko": "역사",
+      "koPhonetic": "YEOK-sa",
+      "zh": "历史",
+      "zhPhonetic": "lìshǐ",
+      "ja": "歴史",
+      "jaPhonetic": "rekishi",
+      "examples": {
+        "uk": [
+          "Я вивчаю історію в школі.",
+          "Історія допомагає зрозуміти минуле."
+        ],
+        "en": [
+          "I study history at school.",
+          "History helps us understand the past."
+        ]
+      }
+    },
+    {
+      "uk": "географія",
+      "ru": "география",
+      "de": "Geographie",
+      "en": "geography",
+      "phoneticUk": "heohrafiya",
+      "phoneticRu": "geografiya",
+      "phoneticDe": "geh-oh-gra-FEE",
+      "es": "geografía",
+      "phoneticEs": "heh-oh-gra-FEE-ah",
+      "fr": "géographie",
+      "frPhonetic": "zheh-oh-gra-FEE",
+      "el": "γεωγραφία",
+      "elPhonetic": "ye-o-ghra-FI-a",
+      "hi": "भूगोल",
+      "hiPhonetic": "BHOO-gol",
+      "ar": "جُغْرَافِيَا",
+      "arPhonetic": "jugh-RAA-fee-ya",
+      "ko": "지리",
+      "koPhonetic": "JI-ri",
+      "zh": "地理",
+      "zhPhonetic": "dìlǐ",
+      "ja": "地理",
+      "jaPhonetic": "chiri",
+      "examples": {
+        "uk": [
+          "На уроці географії ми вивчаємо карти.",
+          "Географія розповідає про різні країни."
+        ],
+        "en": [
+          "In geography class we study maps.",
+          "Geography tells us about different countries."
+        ]
+      }
+    }
+  ]
+}

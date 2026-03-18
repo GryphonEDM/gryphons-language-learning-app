@@ -103,8 +103,10 @@
         {
           "type": "fill-blank",
           "prompt": "The French word for 'moon' is 'lune'. The U in 'lune' is pronounced with _______ lips.",
-          "answer": "rounded",
-          "hint": "This lip shape has no direct equivalent in English."
+          "hint": "This lip shape has no direct equivalent in English.",
+          "acceptedAnswers": [
+            "rounded"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -120,8 +122,10 @@
         {
           "type": "fill-blank",
           "prompt": "The nasal vowel 'in' (as in 'jardin') sounds like the English word _______.",
-          "answer": "an",
-          "hint": "Think of the English word that rhymes with 'man' or 'can'."
+          "hint": "Think of the English word that rhymes with 'man' or 'can'.",
+          "acceptedAnswers": [
+            "an"
+          ]
         }
       ]
     },
@@ -221,8 +225,10 @@
         {
           "type": "fill-blank",
           "prompt": "In French, the letter H is always _______.",
-          "answer": "silent",
-          "hint": "You never pronounce this letter, but it still affects how surrounding words are linked."
+          "hint": "You never pronounce this letter, but it still affects how surrounding words are linked.",
+          "acceptedAnswers": [
+            "silent"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -238,8 +244,10 @@
         {
           "type": "fill-blank",
           "prompt": "The word 'garçon' uses a cedilla so that the C is pronounced as _______, not as a hard K.",
-          "answer": "S",
-          "hint": "Think of the sound at the start of 'snake' or 'soft'."
+          "hint": "Think of the sound at the start of 'snake' or 'soft'.",
+          "acceptedAnswers": [
+            "S"
+          ]
         }
       ]
     }

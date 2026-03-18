@@ -1,0 +1,202 @@
+{
+  "lessonId": "perfect-tenses",
+  "nameEn": "Perfect Tenses",
+  "nameEl": "Συντελεσμένοι Χρόνοι",
+  "icon": "✅",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "future-tense"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "present-perfect",
+      "title": "Present Perfect (Παρακείμενος)",
+      "explanation": "The present perfect (παρακείμενος) in Greek is formed with the auxiliary verb έχω (to have) in the present tense + the infinitive-like form (απαρέμφατο) of the main verb. The infinitive-like form is built from the perfective/aorist stem and ends in -ει (third person singular aorist without the augment).\n\nFORMATION: έχω + aorist stem + -ει\n  έχω γράψει  (I have written)\n  έχεις γράψει (you have written)\n  έχει γράψει  (he/she has written)\n  έχουμε γράψει (we have written)\n  έχετε γράψει  (you all have written)\n  έχουν γράψει  (they have written)\n\nThe form after έχω never changes — it is invariable regardless of person, number, or gender. Only έχω conjugates.\n\nUSAGE:\nThe present perfect expresses an action that was completed in the past but has relevance to the present moment:\n  Έχω διαβάσει αυτό το βιβλίο. = I have read this book. (and I know its content now)\n  Έχεις φάει; = Have you eaten? (are you still hungry or not?)",
+      "tip": "The invariable form after έχω always ends in -ει. Think of it as a frozen third-person aorist without the augment: έγραψε → γράψει, έφαγε → φάει, είπε → πει.",
+      "examples": [
+        {
+          "el": "Έχω διαβάσει αυτό το βιβλίο δύο φορές.",
+          "en": "I have read this book twice.",
+          "highlight": "Έχω διαβάσει"
+        },
+        {
+          "el": "Έχεις δει αυτή την ταινία;",
+          "en": "Have you seen this movie?",
+          "highlight": "Έχεις δει"
+        },
+        {
+          "el": "Έχουμε ήδη φάει.",
+          "en": "We have already eaten.",
+          "highlight": "Έχουμε ήδη φάει"
+        },
+        {
+          "el": "Δεν έχει τελειώσει ακόμα.",
+          "en": "He/She has not finished yet.",
+          "highlight": "έχει τελειώσει"
+        },
+        {
+          "el": "Έχουν μάθει ελληνικά.",
+          "en": "They have learned Greek.",
+          "highlight": "Έχουν μάθει"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I have written a letter' in Greek?",
+          "options": [
+            "Έγραψα ένα γράμμα.",
+            "Έχω γράψει ένα γράμμα.",
+            "Θα γράψω ένα γράμμα."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Έχω γράψει' is the present perfect: έχω (I have) + γράψει (written). 'Έγραψα' is the simple past (aorist), and 'θα γράψω' is the future."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "_____ δει αυτή την ταινία; (Have you seen this movie?)",
+          "hint": "Second person singular of έχω",
+          "explanation": "Έχεις is the second person singular of έχω. 'Έχεις δει' = you have seen.",
+          "acceptedAnswers": [
+            "Έχεις"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the present perfect, what happens to the form after έχω?",
+          "options": [
+            "It changes to agree with the subject in person and number.",
+            "It remains invariable — only έχω conjugates.",
+            "It takes a different ending for masculine and feminine subjects."
+          ],
+          "correctIndex": 1,
+          "explanation": "The form after έχω (e.g., γράψει, φάει, δει) is invariable. It never changes regardless of the subject. Only the auxiliary verb έχω is conjugated."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-perfect",
+      "title": "Past Perfect (Υπερσυντέλικος)",
+      "explanation": "The past perfect (υπερσυντέλικος) expresses an action that had been completed before another past action. It is formed with the past tense of έχω (which is είχα) + the same invariable form used in the present perfect.\n\nFORMATION: είχα + aorist stem + -ει\n  είχα γράψει  (I had written)\n  είχες γράψει (you had written)\n  είχε γράψει  (he/she had written)\n  είχαμε γράψει (we had written)\n  είχατε γράψει (you all had written)\n  είχαν γράψει  (they had written)\n\nUSAGE:\nThe past perfect places one past event before another:\n  Όταν έφτασα, είχε ήδη φύγει. = When I arrived, he had already left.\n  Είχα τελειώσει πριν έρθεις. = I had finished before you came.\n\nIt is also used to express past experiences up to a certain point in the past:\n  Μέχρι τότε, δεν είχα ταξιδέψει στο εξωτερικό. = Until then, I had not traveled abroad.",
+      "tip": "The past perfect is identical in structure to the present perfect — just replace έχω with είχα. If you know the present perfect, you already know the past perfect.",
+      "examples": [
+        {
+          "el": "Όταν έφτασα στο σπίτι, είχε ήδη φύγει.",
+          "en": "When I arrived home, he/she had already left.",
+          "highlight": "είχε ήδη φύγει"
+        },
+        {
+          "el": "Είχαμε τελειώσει τη δουλειά πριν βρέξει.",
+          "en": "We had finished the work before it rained.",
+          "highlight": "Είχαμε τελειώσει"
+        },
+        {
+          "el": "Δεν είχες φάει τίποτα όλη μέρα;",
+          "en": "Had you not eaten anything all day?",
+          "highlight": "είχες φάει"
+        },
+        {
+          "el": "Είχαν ακούσει τα νέα πριν τους πούμε.",
+          "en": "They had heard the news before we told them.",
+          "highlight": "Είχαν ακούσει"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She had already left' in Greek?",
+          "options": [
+            "Έχει ήδη φύγει.",
+            "Είχε ήδη φύγει.",
+            "Θα έχει φύγει."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Είχε φύγει' is the past perfect: είχε (she had) + φύγει (left). 'Έχει φύγει' is the present perfect (she has left), and 'θα έχει φύγει' is the future perfect."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "_____ τελειώσει τη δουλειά πριν φύγεις; (Had you finished the work before you left?)",
+          "hint": "Second person singular past tense of έχω",
+          "explanation": "Είχες is the second person singular past tense of έχω. 'Είχες τελειώσει' = you had finished.",
+          "acceptedAnswers": [
+            "Είχες"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses the past perfect?",
+          "options": [
+            "Όταν ήρθε, είχα μαγειρέψει.",
+            "Όταν ήρθε, έχω μαγειρέψει.",
+            "Όταν ήρθε, θα μαγειρέψω."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Είχα μαγειρέψει' (I had cooked) correctly uses the past perfect to show that the cooking was completed before the other person arrived. 'Έχω μαγειρέψει' is present perfect and 'θα μαγειρέψω' is future."
+        }
+      ]
+    },
+    {
+      "sectionId": "future-perfect",
+      "title": "Future Perfect (Συντελεσμένος Μέλλοντας)",
+      "explanation": "The future perfect (συντελεσμένος μέλλοντας) expresses an action that will have been completed by a specific future point. It is formed with θα + έχω (present tense) + the invariable form.\n\nFORMATION: θα + έχω + aorist stem + -ει\n  θα έχω γράψει  (I will have written)\n  θα έχεις γράψει (you will have written)\n  θα έχει γράψει  (he/she will have written)\n  θα έχουμε γράψει (we will have written)\n  θα έχετε γράψει  (you all will have written)\n  θα έχουν γράψει  (they will have written)\n\nUSAGE:\nThe future perfect is used for actions that will be completed before a future moment:\n  Μέχρι τον Ιούνιο, θα έχω τελειώσει τις σπουδές μου. = By June, I will have finished my studies.\n  Θα έχεις φύγει πριν έρθω; = Will you have left before I come?\n\nIt is less common in everyday speech than the present or past perfect, but is important in formal contexts and when planning.",
+      "tip": "The pattern is beautifully consistent: present perfect = έχω + form, past perfect = είχα + form, future perfect = θα έχω + form. Master one and you know all three.",
+      "examples": [
+        {
+          "el": "Μέχρι αύριο, θα έχω τελειώσει.",
+          "en": "By tomorrow, I will have finished.",
+          "highlight": "θα έχω τελειώσει"
+        },
+        {
+          "el": "Θα έχουν φτάσει πριν νυχτώσει.",
+          "en": "They will have arrived before it gets dark.",
+          "highlight": "Θα έχουν φτάσει"
+        },
+        {
+          "el": "Θα έχεις μάθει αρκετά ελληνικά μέχρι τότε.",
+          "en": "You will have learned enough Greek by then.",
+          "highlight": "Θα έχεις μάθει"
+        },
+        {
+          "el": "Δε θα έχουμε προλάβει.",
+          "en": "We will not have made it in time.",
+          "highlight": "θα έχουμε προλάβει"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you form the future perfect in Greek?",
+          "options": [
+            "θα + past tense verb",
+            "θα + έχω + invariable form (-ει)",
+            "να + έχω + invariable form (-ει)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The future perfect is formed with θα + έχω (conjugated) + the invariable form ending in -ει. The particle θα marks the future, and the structure is otherwise identical to the present perfect."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Μέχρι το βράδυ, θα _____ διαβάσει όλο το βιβλίο. (By evening, she will have read the whole book.)",
+          "hint": "Third person singular of έχω",
+          "explanation": "Θα έχει is the third person singular future perfect auxiliary. 'Θα έχει διαβάσει' = she will have read.",
+          "acceptedAnswers": [
+            "έχει"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Translate: 'By next year, we will have moved to Athens.'",
+          "options": [
+            "Μέχρι του χρόνου, θα μετακομίσουμε στην Αθήνα.",
+            "Μέχρι του χρόνου, θα έχουμε μετακομίσει στην Αθήνα.",
+            "Μέχρι του χρόνου, είχαμε μετακομίσει στην Αθήνα."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Θα έχουμε μετακομίσει' is the future perfect: by a future point, the action will have been completed. The first option uses simple future (will move), and the third uses past perfect (had moved)."
+        }
+      ]
+    }
+  ]
+}

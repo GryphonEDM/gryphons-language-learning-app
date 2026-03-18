@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { storageGet, storageSet } from '../../utils/storage.js';
 import { buildDictionary } from '../../utils/dictionaryBuilder.js';
+import { getUserDict, saveToUserDict as saveToUserDictUtil, lookupUserDict } from '../../utils/userDictionary.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { speakUkrainian, stopSpeaking } from '../../App.jsx';
@@ -36,10 +37,7 @@ export default function FlashcardMode({
   const [sessionStats, setSessionStats] = useState({ studied: 0, mastered: 0 });
   const [selectedExampleWord, setSelectedExampleWord] = useState(null);
   const [addWordForm, setAddWordForm] = useState(null); // null or { word, en }
-  const [userDict, setUserDict] = useState(() => {
-    try { return JSON.parse(storageGet('userDictionary') || '{}'); }
-    catch { return {}; }
-  });
+  const [userDict, setUserDict] = useState(() => getUserDict(langCode));
   const dict = buildDictionary(langCode);
 
   // Speech practice integration
@@ -243,15 +241,13 @@ export default function FlashcardMode({
     }
   }, [langName]);
 
-  const saveToUserDict = useCallback((uk, en) => {
-    if (!uk || !en) return;
-    const key = uk.toLowerCase();
-    const newDict = { ...userDict, [key]: en };
-    setUserDict(newDict);
-    storageSet('userDictionary', JSON.stringify(newDict));
+  const saveToUserDict = useCallback((word, en) => {
+    if (!word || !en) return;
+    saveToUserDictUtil(word, en, langCode);
+    setUserDict(getUserDict(langCode));
     setSelectedExampleWord(prev => prev ? { ...prev, translation: en } : prev);
     setAddWordForm(null);
-  }, [userDict]);
+  }, [langCode]);
 
   const handleExampleWordClick = useCallback((word, index) => {
     const cleaned = word.replace(/[.,!?;:"""()—–\-…]/g, '').trim();

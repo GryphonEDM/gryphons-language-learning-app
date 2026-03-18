@@ -1,0 +1,210 @@
+{
+  "lessonId": "participles",
+  "nameEn": "Active and Passive Participles",
+  "nameAr": "اسم الفاعل واسم المفعول",
+  "icon": "🔤",
+  "tier": "B1",
+  "prerequisites": ["verb-forms"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "active-participle-form-i",
+      "title": "Form I Active Participle — اسم الفَاعِل",
+      "explanation": "The active participle (اسم الفَاعِل) in Form I follows the pattern فَاعِل (faa'il). It describes the doer of an action. To form it, take the three root consonants and apply the فَاعِل pattern: كَتَبَ (to write) → كَاتِب (writer/writing), عَلِمَ (to know) → عَالِم (scholar/knowing), طَبَخَ (to cook) → طَابِخ (cook/cooking). The active participle can function as an adjective: طَالِبٌ مُجْتَهِدٌ (a diligent student, where طَالِب itself is an active participle from طَلَبَ meaning 'one who seeks'). It can also function as a noun, referring to the person or thing performing the action. The feminine form adds تَاء مَرْبُوطَة: كَاتِبَة (female writer), طَالِبَة (female student). The plural can be sound or broken: كَاتِبُونَ / كُتَّاب.",
+      "tip": "The فَاعِل pattern is one of the most productive in Arabic. Many everyday nouns — like عَامِل (worker), سَائِق (driver), طَالِب (student) — are actually active participles describing 'the one who does X.'",
+      "examples": [
+        {
+          "ar": "كَاتِب",
+          "en": "writer (from كَتَبَ, to write)",
+          "highlight": "كَاتِب"
+        },
+        {
+          "ar": "عَالِم",
+          "en": "scholar / knower (from عَلِمَ, to know)",
+          "highlight": "عَالِم"
+        },
+        {
+          "ar": "سَائِق",
+          "en": "driver (from سَاقَ, to drive)",
+          "highlight": "سَائِق"
+        },
+        {
+          "ar": "الطَّالِبُ نَاجِحٌ",
+          "en": "The student is successful.",
+          "highlight": "نَاجِحٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the active participle (اسم الفَاعِل) of the verb دَرَسَ (to study)?",
+          "options": [
+            "مَدْرُوس",
+            "دَارِس",
+            "دِرَاسَة"
+          ],
+          "correctIndex": 1,
+          "explanation": "The active participle of Form I follows the pattern فَاعِل. From the root د-ر-س, we get دَارِس (one who studies / a studier). مَدْرُوس is the passive participle, and دِرَاسَة is the masdar (verbal noun)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The active participle of فَتَحَ (to open) following the فَاعِل pattern is: ___",
+          "explanation": "Applying the فَاعِل pattern to the root ف-ت-ح gives فَاتِح (opener / one who opens).",
+          "acceptedAnswers": [
+            "فَاتِح"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "passive-participle-form-i",
+      "title": "Form I Passive Participle — اسم المَفْعُول",
+      "explanation": "The passive participle (اسم المَفْعُول) in Form I follows the pattern مَفْعُول (maf'uul). It describes the thing or person that receives the action. To form it, take the three root consonants and apply the مَفْعُول pattern: كَتَبَ (to write) → مَكْتُوب (written), عَلِمَ (to know) → مَعْلُوم (known), فَهِمَ (to understand) → مَفْهُوم (understood). Like active participles, passive participles can function as adjectives or nouns. For example, مَكْتُوب can mean 'written' (adjective) or 'letter/missive' (noun). The feminine form is مَكْتُوبَة, and plurals follow standard patterns: مَكْتُوبَات or broken plurals like مَكَاتِيب. Many common Arabic words are passive participles: مَشْرُوع (project, literally 'something begun'), مَعْرُوف (known/famous), مَجْهُول (unknown).",
+      "tip": "The مَفْعُول pattern always has a مـ prefix with fatha, sukun on the second root letter, and a long uu before the last root letter. If you see مَـ...ـُو... in a word, it is likely a passive participle.",
+      "examples": [
+        {
+          "ar": "مَكْتُوب",
+          "en": "written / a letter (from كَتَبَ, to write)",
+          "highlight": "مَكْتُوب"
+        },
+        {
+          "ar": "مَعْلُوم",
+          "en": "known (from عَلِمَ, to know)",
+          "highlight": "مَعْلُوم"
+        },
+        {
+          "ar": "مَفْهُوم",
+          "en": "understood / concept (from فَهِمَ, to understand)",
+          "highlight": "مَفْهُوم"
+        },
+        {
+          "ar": "الأَمْرُ مَعْرُوفٌ",
+          "en": "The matter is known.",
+          "highlight": "مَعْرُوفٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the passive participle (اسم المَفْعُول) of شَرِبَ (to drink)?",
+          "options": [
+            "شَارِب",
+            "مَشْرُوب",
+            "شُرْب"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passive participle of Form I follows the مَفْعُول pattern. From the root ش-ر-ب we get مَشْرُوب (something drunk / a beverage). شَارِب is the active participle (drinker), and شُرْب is the masdar."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The passive participle of طَبَخَ (to cook) is: ___",
+          "explanation": "Applying the مَفْعُول pattern to the root ط-ب-خ gives مَطْبُوخ (cooked).",
+          "acceptedAnswers": [
+            "مَطْبُوخ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "derived-form-participles",
+      "title": "Participles of Derived Forms (II–X)",
+      "explanation": "For verb Forms II through X, both the active and passive participles are formed by replacing the present-tense prefix يـ with مُـ (meem with damma). The active participle keeps the kasra before the last root letter, while the passive participle changes it to fatha. Form II: يُعَلِّمُ → مُعَلِّم (teacher, active) / مُعَلَّم (taught, passive). Form III: يُسَافِرُ → مُسَافِر (traveler). Form IV: يُرْسِلُ → مُرْسِل (sender) / مُرْسَل (sent). Form V: يَتَعَلَّمُ → مُتَعَلِّم (learner) / مُتَعَلَّم (learned). Form VIII: يَسْتَخْدِمُ → مُسْتَخْدِم (user) / مُسْتَخْدَم (used). This pattern is wonderfully regular — once you know the present tense form, you can derive both participles.",
+      "tip": "For Forms II–X: replace يـ with مُـ for the active participle, keeping the vowel before the last root letter as kasra. For the passive, change that kasra to fatha. This one rule covers all derived forms.",
+      "examples": [
+        {
+          "ar": "مُعَلِّم / مُعَلَّم",
+          "en": "teacher (active) / taught (passive) — Form II",
+          "highlight": "مُعَلِّم"
+        },
+        {
+          "ar": "مُسَافِر",
+          "en": "traveler — Form III active participle",
+          "highlight": "مُسَافِر"
+        },
+        {
+          "ar": "مُسْتَخْدِم / مُسْتَخْدَم",
+          "en": "user (active) / used (passive) — Form X",
+          "highlight": "مُسْتَخْدِم"
+        },
+        {
+          "ar": "المُهَنْدِسُ مُتَخَصِّصٌ فِي البَرْمَجَةِ",
+          "en": "The engineer is specialized in programming.",
+          "highlight": "مُتَخَصِّصٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the active participle of the Form II verb دَرَّسَ (to teach)?",
+          "options": [
+            "مُدَرَّس",
+            "مُدَرِّس",
+            "دَارِس"
+          ],
+          "correctIndex": 1,
+          "explanation": "For Form II, replace the يـ prefix of the present tense يُدَرِّسُ with مُـ to get مُدَرِّس (teacher). The kasra before the last root letter indicates it is the active participle. مُدَرَّس (with fatha) would be the passive participle (something taught)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The active participle of يَسْتَعْمِلُ (Form X, to use) is: ___",
+          "explanation": "Replace the يـ prefix with مُـ: يَسْتَعْمِلُ → مُسْتَعْمِل (user / one who uses). The kasra before the last root letter marks the active participle.",
+          "acceptedAnswers": [
+            "مُسْتَعْمِل"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "participles-in-sentences",
+      "title": "Using Participles in Sentences",
+      "explanation": "Participles in Arabic serve dual roles as adjectives and nouns, and they agree in gender, number, and definiteness with the words they describe. As adjectives, they follow the noun: كِتَابٌ مَكْتُوبٌ (a written book), رِسَالَةٌ مَكْتُوبَةٌ (a written letter). As nouns, they can stand alone: جَاءَ الكَاتِبُ (the writer came). Active participles can also express ongoing or imminent actions — similar to the English present participle. For example: أَنَا ذَاهِبٌ (I am going / I am about to go), هُوَ نَائِمٌ (he is sleeping). This usage is extremely common in spoken and written Arabic. The passive participle often describes states or results: البَابُ مَفْتُوحٌ (the door is open, i.e., it has been opened).",
+      "tip": "When an active participle describes an ongoing state or imminent action, it functions almost like a present tense verb. هُوَ مُسَافِرٌ غَدًا means 'He is traveling tomorrow' — using the participle instead of the verb.",
+      "examples": [
+        {
+          "ar": "أَنَا ذَاهِبٌ إِلَى السُّوقِ",
+          "en": "I am going to the market.",
+          "highlight": "ذَاهِبٌ"
+        },
+        {
+          "ar": "البَابُ مَفْتُوحٌ",
+          "en": "The door is open.",
+          "highlight": "مَفْتُوحٌ"
+        },
+        {
+          "ar": "رَأَيْتُ رَجُلًا جَالِسًا",
+          "en": "I saw a man sitting.",
+          "highlight": "جَالِسًا"
+        },
+        {
+          "ar": "هَذِهِ مَسْأَلَةٌ مَعْرُوفَةٌ",
+          "en": "This is a well-known issue.",
+          "highlight": "مَعْرُوفَةٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence البَابُ مَفْتُوحٌ (The door is open), what type of word is مَفْتُوحٌ?",
+          "options": [
+            "Active participle (اسم الفَاعِل)",
+            "Passive participle (اسم المَفْعُول)",
+            "Masdar (verbal noun)"
+          ],
+          "correctIndex": 1,
+          "explanation": "مَفْتُوحٌ follows the مَفْعُول pattern (passive participle from فَتَحَ). It describes the state of the door as a result of being opened. The active participle would be فَاتِح (one who opens)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses an active participle to express an ongoing action?",
+          "options": [
+            "كَتَبَ الطَّالِبُ (The student wrote.)",
+            "الطَّالِبُ كَاتِبٌ رِسَالَةً (The student is writing a letter.)",
+            "كُتِبَ الدَّرْسُ (The lesson was written.)"
+          ],
+          "correctIndex": 1,
+          "explanation": "كَاتِبٌ (active participle) is used here to express an ongoing action — 'the student is writing.' This is a common use of the active participle in Arabic, functioning similarly to the present continuous in English."
+        }
+      ]
+    }
+  ]
+}

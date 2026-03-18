@@ -1,0 +1,721 @@
+{
+  "setId": "sports",
+  "nameEn": "Sports",
+  "nameUk": "Спорт",
+  "nameRu": "Спорт",
+  "nameDe": "Sport",
+  "nameEs": "Deportes",
+  "nameFr": "Sports",
+  "nameEl": "Αθλήματα",
+  "nameHi": "खेल",
+  "nameAr": "رياضة",
+  "nameKo": "스포츠",
+  "nameZh": "运动",
+  "nameJa": "スポーツ",
+  "difficulty": "A1",
+  "icon": "⚽",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "футбол",
+      "ru": "футбол",
+      "de": "Fußball",
+      "en": "football",
+      "phoneticUk": "futbol",
+      "phoneticRu": "futbol",
+      "phoneticDe": "FOOS-bal",
+      "es": "fútbol",
+      "phoneticEs": "FOOT-bol",
+      "fr": "football",
+      "frPhonetic": "foot-BOL",
+      "el": "ποδόσφαιρο",
+      "elPhonetic": "po-DO-sfe-ro",
+      "hi": "फ़ुटबॉल",
+      "hiPhonetic": "FUT-bol",
+      "ar": "كُرَة القَدَم",
+      "arPhonetic": "KU-rat al-QA-dam",
+      "ko": "축구",
+      "koPhonetic": "CHUK-gu",
+      "zh": "足球",
+      "zhPhonetic": "zúqiú",
+      "ja": "サッカー",
+      "jaPhonetic": "sakkaa",
+      "examples": {
+        "uk": [
+          "Футбол — найпопулярніший вид спорту у світі.",
+          "Хлопці грають у футбол у парку."
+        ],
+        "en": [
+          "Football is the most popular sport in the world.",
+          "The boys play football in the park."
+        ]
+      }
+    },
+    {
+      "uk": "баскетбол",
+      "ru": "баскетбол",
+      "de": "Basketball",
+      "en": "basketball",
+      "phoneticUk": "basketbol",
+      "phoneticRu": "basketbol",
+      "phoneticDe": "BAS-ket-bal",
+      "es": "baloncesto",
+      "phoneticEs": "ba-lon-THES-toh",
+      "fr": "basket-ball",
+      "frPhonetic": "bas-ket-BOL",
+      "el": "μπάσκετ",
+      "elPhonetic": "BAS-ket",
+      "hi": "बास्केटबॉल",
+      "hiPhonetic": "BAS-ket-bol",
+      "ar": "كُرَة السَّلَّة",
+      "arPhonetic": "KU-rat as-SAL-la",
+      "ko": "농구",
+      "koPhonetic": "NONG-gu",
+      "zh": "篮球",
+      "zhPhonetic": "lánqiú",
+      "ja": "バスケットボール",
+      "jaPhonetic": "basuketto booru",
+      "examples": {
+        "uk": [
+          "Баскетбол дуже популярний у США.",
+          "Він грає в баскетбол кожного дня."
+        ],
+        "en": [
+          "Basketball is very popular in the USA.",
+          "He plays basketball every day."
+        ]
+      }
+    },
+    {
+      "uk": "теніс",
+      "ru": "теннис",
+      "de": "Tennis",
+      "en": "tennis",
+      "phoneticUk": "tenis",
+      "phoneticRu": "tennis",
+      "phoneticDe": "TEN-nis",
+      "es": "tenis",
+      "phoneticEs": "TEH-nees",
+      "fr": "tennis",
+      "frPhonetic": "teh-NEES",
+      "el": "τένις",
+      "elPhonetic": "TE-nis",
+      "hi": "टेनिस",
+      "hiPhonetic": "TE-nis",
+      "ar": "تِنِس",
+      "arPhonetic": "TI-nis",
+      "ko": "테니스",
+      "koPhonetic": "TE-ni-seu",
+      "zh": "网球",
+      "zhPhonetic": "wǎngqiú",
+      "ja": "テニス",
+      "jaPhonetic": "tenisu",
+      "examples": {
+        "uk": [
+          "Вона грає в теніс двічі на тиждень.",
+          "Теніс — це гра з ракеткою та м'ячем."
+        ],
+        "en": [
+          "She plays tennis twice a week.",
+          "Tennis is a game with a racket and a ball."
+        ]
+      }
+    },
+    {
+      "uk": "плавання",
+      "ru": "плавание",
+      "de": "Schwimmen",
+      "en": "swimming",
+      "phoneticUk": "plavannya",
+      "phoneticRu": "plavaniye",
+      "phoneticDe": "SHVIM-men",
+      "es": "natación",
+      "phoneticEs": "na-tah-THYON",
+      "fr": "natation",
+      "frPhonetic": "na-ta-SYON",
+      "el": "κολύμβηση",
+      "elPhonetic": "ko-LIM-vi-si",
+      "hi": "तैराकी",
+      "hiPhonetic": "tai-RAA-kee",
+      "ar": "سِبَاحَة",
+      "arPhonetic": "si-BAA-ha",
+      "ko": "수영",
+      "koPhonetic": "SU-yeong",
+      "zh": "游泳",
+      "zhPhonetic": "yóuyǒng",
+      "ja": "水泳",
+      "jaPhonetic": "suiei",
+      "examples": {
+        "uk": [
+          "Плавання — чудовий вид спорту для здоров'я.",
+          "Діти ходять на плавання кожну суботу."
+        ],
+        "en": [
+          "Swimming is a great sport for health.",
+          "The children go swimming every Saturday."
+        ]
+      }
+    },
+    {
+      "uk": "біг",
+      "ru": "бег",
+      "de": "Laufen",
+      "en": "running",
+      "phoneticUk": "bih",
+      "phoneticRu": "beg",
+      "phoneticDe": "LAU-fen",
+      "es": "correr",
+      "phoneticEs": "ko-REHR",
+      "fr": "course",
+      "frPhonetic": "KOORS",
+      "el": "τρέξιμο",
+      "elPhonetic": "TREK-si-mo",
+      "hi": "दौड़",
+      "hiPhonetic": "DAUR",
+      "ar": "جَرْي",
+      "arPhonetic": "JARY",
+      "ko": "달리기",
+      "koPhonetic": "DAL-li-gi",
+      "zh": "跑步",
+      "zhPhonetic": "pǎobù",
+      "ja": "ランニング",
+      "jaPhonetic": "ranningu",
+      "examples": {
+        "uk": [
+          "Біг — найпростіший спосіб тренуватися.",
+          "Я займаюся бігом кожного ранку."
+        ],
+        "en": [
+          "Running is the simplest way to exercise.",
+          "I go running every morning."
+        ]
+      }
+    },
+    {
+      "uk": "велоспорт",
+      "ru": "велоспорт",
+      "de": "Radfahren",
+      "en": "cycling",
+      "phoneticUk": "velosport",
+      "phoneticRu": "velosport",
+      "phoneticDe": "RAHT-fah-ren",
+      "es": "ciclismo",
+      "phoneticEs": "thee-KLEES-moh",
+      "fr": "cyclisme",
+      "frPhonetic": "see-KLEEZM",
+      "el": "ποδηλασία",
+      "elPhonetic": "po-di-la-SI-a",
+      "hi": "साइकिलिंग",
+      "hiPhonetic": "SAI-kil-ing",
+      "ar": "رُكُوب الدَّرَّاجَة",
+      "arPhonetic": "ru-KOOB ad-DAR-raa-ja",
+      "ko": "자전거",
+      "koPhonetic": "JA-jeon-geo",
+      "zh": "骑自行车",
+      "zhPhonetic": "qí zìxíngchē",
+      "ja": "サイクリング",
+      "jaPhonetic": "saikuringu",
+      "examples": {
+        "uk": [
+          "Велоспорт корисний для здоров'я.",
+          "Він займається велоспортом уже три роки."
+        ],
+        "en": [
+          "Cycling is good for health.",
+          "He has been cycling for three years."
+        ]
+      }
+    },
+    {
+      "uk": "волейбол",
+      "ru": "волейбол",
+      "de": "Volleyball",
+      "en": "volleyball",
+      "phoneticUk": "voleybol",
+      "phoneticRu": "voleybol",
+      "phoneticDe": "VOL-ley-bal",
+      "es": "voleibol",
+      "phoneticEs": "bo-LEH-ee-bol",
+      "fr": "volley-ball",
+      "frPhonetic": "vo-leh-BOL",
+      "el": "βόλεϊ",
+      "elPhonetic": "VO-lei",
+      "hi": "वॉलीबॉल",
+      "hiPhonetic": "VO-lee-bol",
+      "ar": "كُرَة الطَّائِرَة",
+      "arPhonetic": "KU-rat at-TAA-i-ra",
+      "ko": "배구",
+      "koPhonetic": "BE-gu",
+      "zh": "排球",
+      "zhPhonetic": "páiqiú",
+      "ja": "バレーボール",
+      "jaPhonetic": "bareebooru",
+      "examples": {
+        "uk": [
+          "Ми граємо у волейбол на пляжі.",
+          "Волейбол — командний вид спорту."
+        ],
+        "en": [
+          "We play volleyball on the beach.",
+          "Volleyball is a team sport."
+        ]
+      }
+    },
+    {
+      "uk": "бейсбол",
+      "ru": "бейсбол",
+      "de": "Baseball",
+      "en": "baseball",
+      "phoneticUk": "beysbol",
+      "phoneticRu": "beysbol",
+      "phoneticDe": "BEYS-bol",
+      "es": "béisbol",
+      "phoneticEs": "BEYS-bol",
+      "fr": "base-ball",
+      "frPhonetic": "BEYZ-bol",
+      "el": "μπέιζμπολ",
+      "elPhonetic": "BEIZ-bol",
+      "hi": "बेसबॉल",
+      "hiPhonetic": "BES-bol",
+      "ar": "بَيْسْبُول",
+      "arPhonetic": "BEYS-bool",
+      "ko": "야구",
+      "koPhonetic": "YA-gu",
+      "zh": "棒球",
+      "zhPhonetic": "bàngqiú",
+      "ja": "野球",
+      "jaPhonetic": "yakyuu",
+      "examples": {
+        "uk": [
+          "Бейсбол популярний у США та Японії.",
+          "Він кидає м'яч у бейсболі дуже добре."
+        ],
+        "en": [
+          "Baseball is popular in the USA and Japan.",
+          "He throws the ball in baseball very well."
+        ]
+      }
+    },
+    {
+      "uk": "гольф",
+      "ru": "гольф",
+      "de": "Golf",
+      "en": "golf",
+      "phoneticUk": "hol'f",
+      "phoneticRu": "gol'f",
+      "phoneticDe": "GOLF",
+      "es": "golf",
+      "phoneticEs": "GOLF",
+      "fr": "golf",
+      "frPhonetic": "GOLF",
+      "el": "γκολφ",
+      "elPhonetic": "GOLF",
+      "hi": "गोल्फ़",
+      "hiPhonetic": "GOLF",
+      "ar": "غُولْف",
+      "arPhonetic": "GOLF",
+      "ko": "골프",
+      "koPhonetic": "GOL-peu",
+      "zh": "高尔夫",
+      "zhPhonetic": "gāoěrfū",
+      "ja": "ゴルフ",
+      "jaPhonetic": "gorufu",
+      "examples": {
+        "uk": [
+          "Гольф — популярний спорт серед бізнесменів.",
+          "Він грає в гольф кожні вихідні."
+        ],
+        "en": [
+          "Golf is a popular sport among businesspeople.",
+          "He plays golf every weekend."
+        ]
+      }
+    },
+    {
+      "uk": "бокс",
+      "ru": "бокс",
+      "de": "Boxen",
+      "en": "boxing",
+      "phoneticUk": "boks",
+      "phoneticRu": "boks",
+      "phoneticDe": "BOK-sen",
+      "es": "boxeo",
+      "phoneticEs": "bok-SEH-oh",
+      "fr": "boxe",
+      "frPhonetic": "BOKS",
+      "el": "πυγμαχία",
+      "elPhonetic": "pig-ma-HI-a",
+      "hi": "मुक्केबाज़ी",
+      "hiPhonetic": "MUK-ke-baa-zee",
+      "ar": "مُلَاكَمَة",
+      "arPhonetic": "mu-LAA-ka-ma",
+      "ko": "권투",
+      "koPhonetic": "GWON-tu",
+      "zh": "拳击",
+      "zhPhonetic": "quánjī",
+      "ja": "ボクシング",
+      "jaPhonetic": "bokushingu",
+      "examples": {
+        "uk": [
+          "Бокс вимагає великої сили та витривалості.",
+          "Він тренується з боксу тричі на тиждень."
+        ],
+        "en": [
+          "Boxing requires great strength and endurance.",
+          "He trains in boxing three times a week."
+        ]
+      }
+    },
+    {
+      "uk": "лижний спорт",
+      "ru": "лыжный спорт",
+      "de": "Skifahren",
+      "en": "skiing",
+      "phoneticUk": "lyzhnyy sport",
+      "phoneticRu": "lyzhnyy sport",
+      "phoneticDe": "SHEE-fah-ren",
+      "es": "esquí",
+      "phoneticEs": "es-KEE",
+      "fr": "ski",
+      "frPhonetic": "SKEE",
+      "el": "σκι",
+      "elPhonetic": "SKI",
+      "hi": "स्कीइंग",
+      "hiPhonetic": "SKEE-ing",
+      "ar": "تَزَلُّج",
+      "arPhonetic": "ta-ZAL-luj",
+      "ko": "스키",
+      "koPhonetic": "SEU-ki",
+      "zh": "滑雪",
+      "zhPhonetic": "huáxuě",
+      "ja": "スキー",
+      "jaPhonetic": "sukii",
+      "examples": {
+        "uk": [
+          "Лижний спорт популярний взимку.",
+          "Ми їдемо кататися на лижах у гори."
+        ],
+        "en": [
+          "Skiing is popular in winter.",
+          "We go skiing in the mountains."
+        ]
+      }
+    },
+    {
+      "uk": "ковзанярство",
+      "ru": "катание на коньках",
+      "de": "Eislaufen",
+      "en": "ice skating",
+      "phoneticUk": "kovzanyarstvo",
+      "phoneticRu": "kataniye na kon'kakh",
+      "phoneticDe": "ICE-lau-fen",
+      "es": "patinaje sobre hielo",
+      "phoneticEs": "pa-tee-NAH-heh SOH-breh YEH-loh",
+      "fr": "patinage sur glace",
+      "frPhonetic": "pa-ti-NAZH soor GLAS",
+      "el": "παγοδρομία",
+      "elPhonetic": "pa-gho-dro-MI-a",
+      "hi": "आइस स्केटिंग",
+      "hiPhonetic": "ICE SKE-ting",
+      "ar": "تَزَلُّج عَلَى الجَلِيد",
+      "arPhonetic": "ta-ZAL-luj a-la al-ja-LEED",
+      "ko": "아이스 스케이팅",
+      "koPhonetic": "A-i-seu seu-ke-i-ting",
+      "zh": "滑冰",
+      "zhPhonetic": "huábīng",
+      "ja": "アイススケート",
+      "jaPhonetic": "aisu sukeeto",
+      "examples": {
+        "uk": [
+          "Ковзанярство — красивий зимовий спорт.",
+          "Діти катаються на ковзанах у парку."
+        ],
+        "en": [
+          "Ice skating is a beautiful winter sport.",
+          "The children ice skate in the park."
+        ]
+      }
+    },
+    {
+      "uk": "гімнастика",
+      "ru": "гимнастика",
+      "de": "Turnen",
+      "en": "gymnastics",
+      "phoneticUk": "himnastyka",
+      "phoneticRu": "gimnastika",
+      "phoneticDe": "TOOR-nen",
+      "es": "gimnasia",
+      "phoneticEs": "him-NAH-syah",
+      "fr": "gymnastique",
+      "frPhonetic": "zheem-nas-TEEK",
+      "el": "γυμναστική",
+      "elPhonetic": "yim-na-sti-KI",
+      "hi": "जिम्नास्टिक्स",
+      "hiPhonetic": "JIM-nas-tiks",
+      "ar": "جُمْبَاز",
+      "arPhonetic": "JUM-baaz",
+      "ko": "체조",
+      "koPhonetic": "CHE-jo",
+      "zh": "体操",
+      "zhPhonetic": "tǐcāo",
+      "ja": "体操",
+      "jaPhonetic": "taisou",
+      "examples": {
+        "uk": [
+          "Гімнастика розвиває гнучкість і силу.",
+          "Вона займається гімнастикою з дитинства."
+        ],
+        "en": [
+          "Gymnastics develops flexibility and strength.",
+          "She has been doing gymnastics since childhood."
+        ]
+      }
+    },
+    {
+      "uk": "танець",
+      "ru": "танец",
+      "de": "Tanz",
+      "en": "dance",
+      "phoneticUk": "tanets",
+      "phoneticRu": "tanets",
+      "phoneticDe": "TANTS",
+      "es": "baile",
+      "phoneticEs": "BAH-ee-leh",
+      "fr": "danse",
+      "frPhonetic": "DAHNS",
+      "el": "χορός",
+      "elPhonetic": "kho-ROS",
+      "hi": "नृत्य",
+      "hiPhonetic": "NRITYA",
+      "ar": "رَقْص",
+      "arPhonetic": "RAQS",
+      "ko": "춤",
+      "koPhonetic": "CHUM",
+      "zh": "舞蹈",
+      "zhPhonetic": "wǔdǎo",
+      "ja": "ダンス",
+      "jaPhonetic": "dansu",
+      "examples": {
+        "uk": [
+          "Танець — це мистецтво руху.",
+          "Вона любить танцювати сальсу."
+        ],
+        "en": [
+          "Dance is the art of movement.",
+          "She loves dancing salsa."
+        ]
+      }
+    },
+    {
+      "uk": "йога",
+      "ru": "йога",
+      "de": "Yoga",
+      "en": "yoga",
+      "phoneticUk": "yoha",
+      "phoneticRu": "yoga",
+      "phoneticDe": "YOH-gah",
+      "es": "yoga",
+      "phoneticEs": "YOH-gah",
+      "fr": "yoga",
+      "frPhonetic": "YO-gah",
+      "el": "γιόγκα",
+      "elPhonetic": "YION-ga",
+      "hi": "योग",
+      "hiPhonetic": "YOG",
+      "ar": "يُوغَا",
+      "arPhonetic": "YOO-ghaa",
+      "ko": "요가",
+      "koPhonetic": "YO-ga",
+      "zh": "瑜伽",
+      "zhPhonetic": "yújiā",
+      "ja": "ヨガ",
+      "jaPhonetic": "yoga",
+      "examples": {
+        "uk": [
+          "Йога допомагає розслабитися.",
+          "Вона практикує йогу кожного ранку."
+        ],
+        "en": [
+          "Yoga helps to relax.",
+          "She practices yoga every morning."
+        ]
+      }
+    },
+    {
+      "uk": "серфінг",
+      "ru": "сёрфинг",
+      "de": "Surfen",
+      "en": "surfing",
+      "phoneticUk": "serfinh",
+      "phoneticRu": "syorfing",
+      "phoneticDe": "ZOOR-fen",
+      "es": "surf",
+      "phoneticEs": "SOORF",
+      "fr": "surf",
+      "frPhonetic": "SEURF",
+      "el": "σέρφινγκ",
+      "elPhonetic": "SER-fing",
+      "hi": "सर्फ़िंग",
+      "hiPhonetic": "SAR-fing",
+      "ar": "رُكُوب الأَمْوَاج",
+      "arPhonetic": "ru-KOOB al-AM-waaj",
+      "ko": "서핑",
+      "koPhonetic": "SEO-ping",
+      "zh": "冲浪",
+      "zhPhonetic": "chōnglàng",
+      "ja": "サーフィン",
+      "jaPhonetic": "saafin",
+      "examples": {
+        "uk": [
+          "Серфінг популярний на узбережжі океану.",
+          "Він навчився серфінгу влітку."
+        ],
+        "en": [
+          "Surfing is popular on the ocean coast.",
+          "He learned surfing in the summer."
+        ]
+      }
+    },
+    {
+      "uk": "боротьба",
+      "ru": "борьба",
+      "de": "Ringen",
+      "en": "wrestling",
+      "phoneticUk": "borot'ba",
+      "phoneticRu": "bor'ba",
+      "phoneticDe": "RING-en",
+      "es": "lucha libre",
+      "phoneticEs": "LOO-chah LEE-breh",
+      "fr": "lutte",
+      "frPhonetic": "LOOT",
+      "el": "πάλη",
+      "elPhonetic": "PA-li",
+      "hi": "कुश्ती",
+      "hiPhonetic": "KUSH-tee",
+      "ar": "مُصَارَعَة",
+      "arPhonetic": "mu-SAA-ra-a",
+      "ko": "레슬링",
+      "koPhonetic": "RE-seul-ling",
+      "zh": "摔跤",
+      "zhPhonetic": "shuāijiāo",
+      "ja": "レスリング",
+      "jaPhonetic": "resuringu",
+      "examples": {
+        "uk": [
+          "Боротьба — один із найдавніших видів спорту.",
+          "Він займається боротьбою вже п'ять років."
+        ],
+        "en": [
+          "Wrestling is one of the oldest sports.",
+          "He has been wrestling for five years."
+        ]
+      }
+    },
+    {
+      "uk": "стрільба з лука",
+      "ru": "стрельба из лука",
+      "de": "Bogenschießen",
+      "en": "archery",
+      "phoneticUk": "stril'ba z luka",
+      "phoneticRu": "strel'ba iz luka",
+      "phoneticDe": "BOH-gen-shee-sen",
+      "es": "tiro con arco",
+      "phoneticEs": "TEE-roh kon AR-koh",
+      "fr": "tir à l'arc",
+      "frPhonetic": "TEER ah LARK",
+      "el": "τοξοβολία",
+      "elPhonetic": "tok-so-vo-LI-a",
+      "hi": "तीरंदाज़ी",
+      "hiPhonetic": "teer-an-DAA-zee",
+      "ar": "رِمَايَة بِالقَوْس",
+      "arPhonetic": "ri-MAA-ya bil-QAWS",
+      "ko": "양궁",
+      "koPhonetic": "YANG-gung",
+      "zh": "射箭",
+      "zhPhonetic": "shèjiàn",
+      "ja": "アーチェリー",
+      "jaPhonetic": "aacherii",
+      "examples": {
+        "uk": [
+          "Стрільба з лука вимагає точності.",
+          "Вона виграла змагання зі стрільби з лука."
+        ],
+        "en": [
+          "Archery requires precision.",
+          "She won the archery competition."
+        ]
+      }
+    },
+    {
+      "uk": "крикет",
+      "ru": "крикет",
+      "de": "Kricket",
+      "en": "cricket",
+      "phoneticUk": "kryket",
+      "phoneticRu": "kriket",
+      "phoneticDe": "KRI-ket",
+      "es": "críquet",
+      "phoneticEs": "KREE-ket",
+      "fr": "cricket",
+      "frPhonetic": "KRI-ket",
+      "el": "κρίκετ",
+      "elPhonetic": "KRI-ket",
+      "hi": "क्रिकेट",
+      "hiPhonetic": "KRI-ket",
+      "ar": "كْرِيكِت",
+      "arPhonetic": "KRI-kit",
+      "ko": "크리켓",
+      "koPhonetic": "KEU-ri-ket",
+      "zh": "板球",
+      "zhPhonetic": "bǎnqiú",
+      "ja": "クリケット",
+      "jaPhonetic": "kuriketto",
+      "examples": {
+        "uk": [
+          "Крикет дуже популярний в Індії.",
+          "Гра в крикет може тривати кілька днів."
+        ],
+        "en": [
+          "Cricket is very popular in India.",
+          "A cricket game can last several days."
+        ]
+      }
+    },
+    {
+      "uk": "шахи",
+      "ru": "шахматы",
+      "de": "Schach",
+      "en": "chess",
+      "phoneticUk": "shakhy",
+      "phoneticRu": "shakhmaty",
+      "phoneticDe": "SHAKH",
+      "es": "ajedrez",
+      "phoneticEs": "ah-heh-DRETH",
+      "fr": "échecs",
+      "frPhonetic": "eh-SHEK",
+      "el": "σκάκι",
+      "elPhonetic": "SKA-ki",
+      "hi": "शतरंज",
+      "hiPhonetic": "sha-TRANJ",
+      "ar": "شَطْرَنْج",
+      "arPhonetic": "SHA-tranj",
+      "ko": "체스",
+      "koPhonetic": "CHE-seu",
+      "zh": "国际象棋",
+      "zhPhonetic": "guójì xiàngqí",
+      "ja": "チェス",
+      "jaPhonetic": "chesu",
+      "examples": {
+        "uk": [
+          "Шахи розвивають логічне мислення.",
+          "Мій дідусь навчив мене грати в шахи."
+        ],
+        "en": [
+          "Chess develops logical thinking.",
+          "My grandfather taught me to play chess."
+        ]
+      }
+    }
+  ]
+}

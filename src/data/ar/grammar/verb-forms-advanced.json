@@ -1,0 +1,258 @@
+{
+  "lessonId": "verb-forms-advanced",
+  "nameEn": "Verb Forms V–X (أوزان متقدّمة)",
+  "nameAr": "أَوْزَانُ الْفِعْلِ V–X",
+  "icon": "📐",
+  "tier": "B1",
+  "prerequisites": [
+    "verb-forms",
+    "past-tense",
+    "present-tense"
+  ],
+  "estimatedMinutes": 28,
+  "sections": [
+    {
+      "sectionId": "form-v-vi",
+      "title": "Form V (تَفَعَّلَ) and Form VI (تَفَاعَلَ)",
+      "explanation": "Form V (تَفَعَّلَ) is formed by adding the prefix تـ to Form II (فَعَّلَ). It often expresses the reflexive or middle voice of Form II. If Form II means 'to teach someone' (عَلَّمَ), Form V means 'to learn / teach oneself' (تَعَلَّمَ). If Form II means 'to break something' (كَسَّرَ), Form V means 'to break apart / become broken' (تَكَسَّرَ). Past pattern: تَفَعَّلَ, present: يَتَفَعَّلُ, verbal noun: تَفَعُّلٌ. Form VI (تَفَاعَلَ) is formed by adding تـ to Form III (فَاعَلَ). It expresses reciprocal action (doing something to each other) or pretending. If Form III means 'to correspond with' (كَاتَبَ), Form VI means 'to write to each other' (تَكَاتَبَ). تَظَاهَرَ means 'to pretend' or 'to demonstrate together'. Past pattern: تَفَاعَلَ, present: يَتَفَاعَلُ, verbal noun: تَفَاعُلٌ.",
+      "tip": "Both Form V and Form VI start with تـ in the past tense. The difference: Form V has shadda on the middle radical (تَفَعَّلَ), while Form VI has alif after the first radical (تَفَاعَلَ). Form V = reflexive of Form II. Form VI = reciprocal of Form III.",
+      "examples": [
+        {
+          "ar": "تَعَلَّمَ الْعَرَبِيَّةَ",
+          "en": "He learned Arabic (Form V — reflexive of عَلَّمَ 'to teach')",
+          "highlight": "تَعَلَّمَ"
+        },
+        {
+          "ar": "تَكَلَّمَ بِالْعَرَبِيَّةِ",
+          "en": "He spoke in Arabic (Form V — from كَلَّمَ 'to talk to')",
+          "highlight": "تَكَلَّمَ"
+        },
+        {
+          "ar": "تَبَادَلُوا الْهَدَايَا",
+          "en": "They exchanged gifts (Form VI — reciprocal of بَادَلَ)",
+          "highlight": "تَبَادَلُوا"
+        },
+        {
+          "ar": "تَعَاوَنُوا فِي الْعَمَلِ",
+          "en": "They cooperated at work (Form VI — reciprocal, 'helped each other')",
+          "highlight": "تَعَاوَنُوا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Form V (تَفَعَّلَ) typically expresses which meaning?",
+          "options": [
+            "Causative (making someone do something)",
+            "Reflexive or middle voice of Form II",
+            "Reciprocal action (doing to each other)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form V is the reflexive of Form II. If عَلَّمَ (Form II) means 'to teach', then تَعَلَّمَ (Form V) means 'to learn' (to teach oneself)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form expresses reciprocal action (doing something to each other)?",
+          "options": [
+            "Form V (تَفَعَّلَ)",
+            "Form VI (تَفَاعَلَ)",
+            "Form VII (اِنْفَعَلَ)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form VI (تَفَاعَلَ) expresses reciprocal action. تَبَادَلَ = 'to exchange (with each other)', تَعَاوَنَ = 'to cooperate (help each other)'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He learns (present tense of تَعَلَّمَ): ___",
+          "explanation": "Form V present tense uses the pattern يَتَفَعَّلُ. So تَعَلَّمَ → يَتَعَلَّمُ.",
+          "acceptedAnswers": [
+            "يَتَعَلَّمُ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "form-vii-viii",
+      "title": "Form VII (اِنْفَعَلَ) and Form VIII (اِفْتَعَلَ)",
+      "explanation": "Form VII (اِنْفَعَلَ) adds the prefix اِنْـ to the root. It typically expresses the passive or reflexive meaning of Form I. If كَسَرَ (Form I) means 'to break something', then اِنْكَسَرَ (Form VII) means 'to be broken / to break (intransitive)'. Form VII verbs are ALWAYS intransitive — they cannot take a direct object. Past: اِنْفَعَلَ, present: يَنْفَعِلُ, verbal noun: اِنْفِعَالٌ. The initial hamza is hamzat al-waṣl (drops in connected speech). Form VIII (اِفْتَعَلَ) inserts a تـ after the first radical. It often carries a reflexive meaning or intensification. اِجْتَمَعَ (to gather/meet — from جَمَعَ), اِخْتَارَ (to choose — from خَارَ/خَيَرَ), اِنْتَظَرَ (to wait — from نَظَرَ). Past: اِفْتَعَلَ, present: يَفْتَعِلُ, verbal noun: اِفْتِعَالٌ. Form VIII is very common and often develops meanings distinct from Form I.",
+      "tip": "Form VII always starts with اِنْـ and is always intransitive (no direct object). Form VIII has a تـ AFTER the first radical (not before, like Forms V/VI). Both start with hamzat al-waṣl.",
+      "examples": [
+        {
+          "ar": "اِنْكَسَرَ الزُّجَاجُ",
+          "en": "The glass broke (Form VII — passive/reflexive of كَسَرَ)",
+          "highlight": "اِنْكَسَرَ"
+        },
+        {
+          "ar": "اِنْفَتَحَ الْبَابُ",
+          "en": "The door opened (Form VII — reflexive of فَتَحَ 'to open')",
+          "highlight": "اِنْفَتَحَ"
+        },
+        {
+          "ar": "اِجْتَمَعَ النَّاسُ",
+          "en": "The people gathered (Form VIII — from جَمَعَ 'to gather')",
+          "highlight": "اِجْتَمَعَ"
+        },
+        {
+          "ar": "اِخْتَارَ كِتَابًا",
+          "en": "He chose a book (Form VIII — from خ-ي-ر 'choice')",
+          "highlight": "اِخْتَارَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Form VII (اِنْفَعَلَ) is always:",
+          "options": [
+            "Transitive (takes a direct object)",
+            "Intransitive (no direct object)",
+            "Causative (makes someone do something)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form VII verbs are always intransitive — they express something happening to the subject, not the subject doing something to an object. اِنْكَسَرَ = 'it broke' (not 'it broke something')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The people gathered (present): يَ___ النَّاسُ",
+          "explanation": "اِجْتَمَعَ in the present tense follows the pattern يَفْتَعِلُ: يَجْتَمِعُ.",
+          "acceptedAnswers": [
+            "جْتَمِعُ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form inserts تـ AFTER the first radical?",
+          "options": [
+            "Form V (تَفَعَّلَ)",
+            "Form VII (اِنْفَعَلَ)",
+            "Form VIII (اِفْتَعَلَ)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Form VIII (اِفْتَعَلَ) inserts تـ after the first radical: root ج-م-ع → اِجْتَمَعَ. Form V puts تـ before the root, and Form VII adds اِنْـ before the root."
+        }
+      ]
+    },
+    {
+      "sectionId": "form-ix",
+      "title": "Form IX (اِفْعَلَّ) — Colors and Defects",
+      "explanation": "Form IX (اِفْعَلَّ) is the rarest of the ten forms. It is used almost exclusively for colors and physical defects/characteristics. The pattern doubles the third radical (with shadda). Examples: اِحْمَرَّ (to become red, from أَحْمَر 'red'), اِصْفَرَّ (to become yellow, from أَصْفَر 'yellow'), اِسْوَدَّ (to become black, from أَسْوَد 'black'), اِبْيَضَّ (to become white, from أَبْيَض 'white'), اِعْوَجَّ (to become crooked). Past: اِفْعَلَّ, present: يَفْعَلُّ, verbal noun: اِفْعِلَالٌ. Because it is limited to colors and defects, you will encounter it less frequently than other forms, but it is important to recognize.",
+      "tip": "If you see a verb describing becoming a color or developing a physical characteristic, it is likely Form IX. The shadda on the last radical is the distinctive marker.",
+      "examples": [
+        {
+          "ar": "اِحْمَرَّ وَجْهُهُ",
+          "en": "His face turned red / He blushed (Form IX — color)",
+          "highlight": "اِحْمَرَّ"
+        },
+        {
+          "ar": "اِصْفَرَّتِ الْأَوْرَاقُ",
+          "en": "The leaves turned yellow (Form IX — color)",
+          "highlight": "اِصْفَرَّتِ"
+        },
+        {
+          "ar": "اِبْيَضَّ شَعْرُهُ",
+          "en": "His hair turned white (Form IX — color)",
+          "highlight": "اِبْيَضَّ"
+        },
+        {
+          "ar": "يَحْمَرُّ عِنْدَ الْخَجَلِ",
+          "en": "He turns red when embarrassed (present tense of Form IX)",
+          "highlight": "يَحْمَرُّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Form IX (اِفْعَلَّ) is mainly used for:",
+          "options": [
+            "Reciprocal actions",
+            "Colors and physical defects",
+            "Seeking or requesting"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form IX is almost exclusively used for colors (اِحْمَرَّ = 'to become red') and physical defects/characteristics (اِعْوَجَّ = 'to become crooked')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The leaves turned yellow: ___ الْأَوْرَاقُ",
+          "explanation": "From أَصْفَر (yellow), Form IX is اِصْفَرَّ. With a feminine plural subject, add ـتِ: اِصْفَرَّتِ.",
+          "acceptedAnswers": [
+            "اِصْفَرَّتِ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "form-x",
+      "title": "Form X (اِسْتَفْعَلَ) — Seeking and Considering",
+      "explanation": "Form X (اِسْتَفْعَلَ) adds the prefix اِسْتَـ to the root. Its core meanings are: (1) Seeking or requesting the action of Form I: غَفَرَ (to forgive) → اِسْتَغْفَرَ (to seek forgiveness). (2) Considering or deeming: حَسُنَ (to be good) → اِسْتَحْسَنَ (to consider good / to approve). (3) Sometimes it expresses 'to use' or 'to employ': خَدَمَ (to serve) → اِسْتَخْدَمَ (to use / to employ). Past: اِسْتَفْعَلَ, present: يَسْتَفْعِلُ, verbal noun: اِسْتِفْعَالٌ. Form X is very productive and common in Modern Standard Arabic. The initial hamza is hamzat al-waṣl. Examples: اِسْتَقْبَلَ (to receive/welcome — 'to seek someone's coming'), اِسْتَعْمَلَ (to use — 'to put to work'), اِسْتَمَرَّ (to continue), اِسْتَعَدَّ (to prepare / get ready).",
+      "tip": "When you see اِسْتَـ at the beginning of a verb, it is Form X. Try to find the three-letter root inside it. The meaning often relates to 'seeking' or 'requesting' the base meaning: اِسْتَغْفَرَ = 'to seek' (اِسْتَ) + 'forgiveness' (غَفَرَ).",
+      "examples": [
+        {
+          "ar": "اِسْتَغْفَرَ اللَّهَ",
+          "en": "He sought God's forgiveness (seeking forgiveness — from غَفَرَ)",
+          "highlight": "اِسْتَغْفَرَ"
+        },
+        {
+          "ar": "اِسْتَخْدَمَ الْحَاسُوبَ",
+          "en": "He used the computer (using/employing — from خَدَمَ)",
+          "highlight": "اِسْتَخْدَمَ"
+        },
+        {
+          "ar": "يَسْتَعِدُّ لِلِامْتِحَانِ",
+          "en": "He is preparing for the exam (getting ready — from عَدَّ/أَعَدَّ)",
+          "highlight": "يَسْتَعِدُّ"
+        },
+        {
+          "ar": "اِسْتَقْبَلَ الضُّيُوفَ",
+          "en": "He received/welcomed the guests (seeking their arrival — from قَبِلَ)",
+          "highlight": "اِسْتَقْبَلَ"
+        },
+        {
+          "ar": "يَسْتَمِرُّ فِي الْعَمَلِ",
+          "en": "He continues working (from مَرَّ 'to pass/continue')",
+          "highlight": "يَسْتَمِرُّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the core meaning of Form X (اِسْتَفْعَلَ)?",
+          "options": [
+            "Making someone do something (causative)",
+            "Seeking, requesting, or considering",
+            "Doing something to each other (reciprocal)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form X typically means 'seeking' or 'requesting' the action of the base root. اِسْتَغْفَرَ = to seek forgiveness, اِسْتَعْمَلَ = to put to use."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He uses (present tense of اِسْتَخْدَمَ): ___",
+          "explanation": "Form X present tense follows the pattern يَسْتَفْعِلُ. So اِسْتَخْدَمَ → يَسْتَخْدِمُ.",
+          "acceptedAnswers": [
+            "يَسْتَخْدِمُ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the root of اِسْتَقْبَلَ (to receive/welcome)?",
+          "options": [
+            "س-ق-ب",
+            "ق-ب-ل",
+            "س-ت-ق"
+          ],
+          "correctIndex": 1,
+          "explanation": "Remove the Form X prefix اِسْتَـ to find the root: اِسْتَقْبَلَ → ق-ب-ل (related to قَبِلَ 'to accept' and قَبْل 'before/in front of')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He sought forgiveness from God: ___ اللَّهَ",
+          "explanation": "From the root غ-ف-ر (forgiveness), Form X is اِسْتَغْفَرَ (to seek forgiveness).",
+          "acceptedAnswers": [
+            "اِسْتَغْفَرَ",
+            "استغفر"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, t
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '');
     if (!cleaned) return null;
     // Check user dictionary first
-    const userTranslation = lookupUserDict(cleaned);
+    const userTranslation = lookupUserDict(cleaned, langCode);
     if (userTranslation) return userTranslation;
     // Fall back to built-in dictionary
     if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
@@ -37,7 +37,7 @@ export function useWordClick({ langCode = 'uk', langName, onSpeak, ttsEnabled, t
       pendingRef.current = requestId;
       translateWithLLM(cleaned, resolvedLangName, contextSentence).then(llmTranslation => {
         if (llmTranslation && pendingRef.current === requestId) {
-          saveToUserDict(cleaned, llmTranslation);
+          saveToUserDict(cleaned, llmTranslation, langCode);
           setSelectedWord(prev =>
             prev && prev.word === cleaned
               ? { ...prev, translation: llmTranslation }

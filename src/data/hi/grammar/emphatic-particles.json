@@ -1,0 +1,218 @@
+{
+  "lessonId": "emphatic-particles",
+  "nameEn": "Emphatic Particles",
+  "nameHi": "बल देने वाले अव्यय",
+  "icon": "💬",
+  "tier": "A2",
+  "prerequisites": [
+    "pronouns",
+    "present-tense"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "particle-hi",
+      "title": "ही — Only, Exactly, Emphasis",
+      "explanation": "The particle ही is placed immediately after the word it emphasizes. It narrows the focus to that specific word, conveying meanings like 'only', 'exactly', 'itself', or 'just'.\n\nBASIC MEANINGS:\n  वह ही = he himself / only he\n  यह ही = this very one (contracts to यही)\n  अभी = right now (अब + ही)\n  वहीं = right there (वहाँ + ही)\n\nCOMMON CONTRACTIONS:\nही often merges with the preceding word:\n  यह + ही = यही (this very)\n  वह + ही = वही (that very / the same)\n  अब + ही = अभी (right now)\n  कब + ही = कभी (ever / sometime)\n  यहाँ + ही = यहीं (right here)\n  वहाँ + ही = वहीं (right there)\n\nEMPHASIS PATTERNS:\nही can follow any word to emphasize it:\n  मैं ही जाऊँगा। = I myself will go. / Only I will go.\n  आज ही करो। = Do it today itself. / Do it today only.\n  एक ही आदमी आया। = Only one man came.\n  चाय ही पीता हूँ। = I drink only tea.",
+      "tip": "ही always comes after the word it emphasizes, never before. The position of ही changes the meaning: 'मैं ही जाऊँगा' (only I will go) vs. 'मैं आज ही जाऊँगा' (I will go today itself).",
+      "examples": [
+        {
+          "hi": "मैं ही यह काम करूँगा।",
+          "en": "I myself will do this work. / Only I will do this work.",
+          "highlight": "ही"
+        },
+        {
+          "hi": "वही लड़का आया था।",
+          "en": "That same boy had come. (वह + ही = वही)",
+          "highlight": "वही"
+        },
+        {
+          "hi": "अभी चलो!",
+          "en": "Let's go right now! (अब + ही = अभी)",
+          "highlight": "अभी"
+        },
+        {
+          "hi": "आज ही काम ख़त्म करो।",
+          "en": "Finish the work today itself.",
+          "highlight": "आज ही"
+        },
+        {
+          "hi": "यहीं रुको।",
+          "en": "Stop right here. (यहाँ + ही = यहीं)",
+          "highlight": "यहीं"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"मैं ही जाऊँगा\" का क्या मतलब है? (What does this sentence mean?)",
+          "options": [
+            "I will also go.",
+            "I myself will go. / Only I will go.",
+            "I will not go."
+          ],
+          "correctIndex": 1,
+          "explanation": "ही after मैं emphasizes the subject, meaning 'I myself' or 'only I'. The particle भी (not ही) would mean 'also'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "आज ___ काम ख़त्म करो। (Finish the work today itself.)",
+          "hint": "Emphatic particle meaning 'itself/only'",
+          "explanation": "ही after आज emphasizes 'today' — meaning the work must be done today itself, not later.",
+          "acceptedAnswers": [
+            "ही"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "वह + ही का संक्षिप्त रूप क्या है? (What is the contracted form of वह + ही?)",
+          "options": [
+            "वही",
+            "वभी",
+            "वहीं"
+          ],
+          "correctIndex": 0,
+          "explanation": "वह + ही contracts to वही, meaning 'that very one' or 'the same'. वहीं is the contraction of वहाँ + ही (right there)."
+        }
+      ]
+    },
+    {
+      "sectionId": "particle-bhi",
+      "title": "भी — Also, Even, Too",
+      "explanation": "The particle भी means 'also', 'too', or 'even'. Like ही, it is placed after the word it modifies.\n\nBASIC USAGE:\n  मैं भी जाऊँगा। = I will also go. / I too will go.\n  वह भी आई। = She also came.\n  यह भी अच्छा है। = This is also good.\n\nMEANING 'EVEN':\nIn certain contexts, भी conveys 'even':\n  बच्चे भी यह जानते हैं। = Even children know this.\n  उसने खाना भी नहीं खाया। = He didn't even eat food.\n\nCOMMON COMBINATIONS:\n  कोई भी = anyone at all\n  कुछ भी = anything at all\n  कहीं भी = anywhere at all\n  कभी भी = anytime at all\n  जो भी = whoever / whatever\n  चाहे ... भी = even if ...\n\nThese combinations create indefinite pronouns that are extremely common in everyday Hindi.",
+      "tip": "ही narrows focus ('only this'), while भी widens it ('this too'). They are opposites in function: ही excludes, भी includes.",
+      "examples": [
+        {
+          "hi": "मैं भी चाय पीता हूँ।",
+          "en": "I also drink tea.",
+          "highlight": "भी"
+        },
+        {
+          "hi": "बच्चे भी यह समझ सकते हैं।",
+          "en": "Even children can understand this.",
+          "highlight": "भी"
+        },
+        {
+          "hi": "कुछ भी हो सकता है।",
+          "en": "Anything can happen.",
+          "highlight": "कुछ भी"
+        },
+        {
+          "hi": "उसने पानी भी नहीं पिया।",
+          "en": "He didn't even drink water.",
+          "highlight": "भी नहीं"
+        },
+        {
+          "hi": "कहीं भी बैठ जाओ।",
+          "en": "Sit anywhere at all.",
+          "highlight": "कहीं भी"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"उसने पानी भी नहीं पिया\" का क्या मतलब है?",
+          "options": [
+            "He also drank water.",
+            "He didn't even drink water.",
+            "He only drank water."
+          ],
+          "correctIndex": 1,
+          "explanation": "भी with नहीं creates the meaning 'not even'. He didn't even drink water — emphasizing that he consumed nothing at all."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "कुछ ___ हो सकता है। (Anything can happen.)",
+          "hint": "Particle meaning 'also/even' that creates indefinites",
+          "explanation": "कुछ + भी = anything at all. भी after question words and indefinites creates universal/emphatic indefinite pronouns.",
+          "acceptedAnswers": [
+            "भी"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair correctly shows the difference between ही and भी?",
+          "options": [
+            "ही means 'also', भी means 'only'",
+            "ही means 'only/exactly', भी means 'also/even'",
+            "ही and भी mean the same thing"
+          ],
+          "correctIndex": 1,
+          "explanation": "ही narrows focus to 'only' or 'exactly' that word, while भी widens to include 'also' or 'even'. They are functional opposites."
+        }
+      ]
+    },
+    {
+      "sectionId": "particles-to-na",
+      "title": "तो and न — Emphasis and Softening",
+      "explanation": "तो (EMPHASIS / THEN):\nतो is a versatile particle with several functions:\n\n1. EMPHASIS on a word — adds stress or contrast:\n  मैं तो जाऊँगा। = I (for my part) will go. / As for me, I will go.\n  यह तो बहुत अच्छा है! = This is really very good!\n\n2. CONDITIONAL 'THEN':\n  अगर तुम चलो, तो मैं भी चलूँगा। = If you go, then I will also go.\n\n3. TOPIC MARKER — introduces a topic for discussion:\n  पैसे तो हैं, लेकिन समय नहीं। = Money, well, there is, but time there isn't.\n\n4. MILD CONTRAST:\n  वह तो नहीं आया। = He (on the other hand) didn't come.\n\nन (TAG QUESTION / SOFTENER):\nन (or ना) at the end of a sentence softens it into a gentle question or request:\n  तुम आओगे न? = You will come, won't you?\n  यह अच्छा है न? = This is good, isn't it?\n  बैठो न। = Do sit down. (gentle request)\n\nन/ना as a softener makes commands and statements less blunt and more polite or intimate. It is extremely common in casual Hindi conversation.",
+      "tip": "तो after a subject often signals 'as for X' — it is setting up a contrast. न/ना at the end of a sentence is like the English 'right?', 'won't you?', or 'no?' — it invites agreement.",
+      "examples": [
+        {
+          "hi": "मैं तो तैयार हूँ।",
+          "en": "I (for my part) am ready. / As for me, I am ready.",
+          "highlight": "तो"
+        },
+        {
+          "hi": "यह तो बहुत मज़ेदार है!",
+          "en": "This is really very fun!",
+          "highlight": "तो"
+        },
+        {
+          "hi": "अगर बारिश हो, तो मत जाओ।",
+          "en": "If it rains, then don't go.",
+          "highlight": "तो"
+        },
+        {
+          "hi": "तुम आओगे ना?",
+          "en": "You will come, won't you?",
+          "highlight": "ना"
+        },
+        {
+          "hi": "यह ठीक है न?",
+          "en": "This is okay, right?",
+          "highlight": "न"
+        },
+        {
+          "hi": "बैठो ना।",
+          "en": "Do sit down. (gentle/friendly request)",
+          "highlight": "ना"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"मैं तो जाऊँगा\" में तो का क्या काम है? (What is the function of तो here?)",
+          "options": [
+            "It means 'then' in a conditional sentence.",
+            "It emphasizes the subject — 'As for me, I will go.'",
+            "It negates the sentence."
+          ],
+          "correctIndex": 1,
+          "explanation": "तो after मैं emphasizes the subject, creating a sense of 'as for me' or 'I for my part'. It often implies a contrast with what others might do."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "तुम आओगे ___? (You will come, won't you?)",
+          "hint": "Tag question particle at the end",
+          "explanation": "न or ना at the end of a sentence turns it into a gentle tag question, like 'won't you?' or 'right?' in English.",
+          "acceptedAnswers": [
+            "न",
+            "ना"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses तो as a conditional 'then'?",
+          "options": [
+            "यह तो बहुत अच्छा है!",
+            "अगर वह आए, तो बताना।",
+            "मैं तो तैयार हूँ।"
+          ],
+          "correctIndex": 1,
+          "explanation": "'अगर वह आए, तो बताना' uses तो as 'then' in a conditional: 'If he comes, then tell (me).' The other sentences use तो for emphasis."
+        }
+      ]
+    }
+  ]
+}

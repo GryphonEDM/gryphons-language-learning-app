@@ -1,0 +1,230 @@
+{
+  "lessonId": "hollow-verbs",
+  "nameEn": "Hollow Verbs (الأفعال الجوفاء)",
+  "nameAr": "الْأَفْعَالُ الْجَوْفَاءُ",
+  "icon": "🔄",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "present-tense",
+    "verb-forms"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "what-are-hollow",
+      "title": "What Are Hollow Verbs?",
+      "explanation": "Hollow verbs (الأفعال الجوفاء) are verbs whose middle radical (the second root letter) is a weak letter — either وَاو (wāw) or يَاء (yā'). They are called 'hollow' because the weak middle letter is unstable and often changes or disappears in conjugation. The root letters are still three, but the middle one shifts between appearing as a long vowel (ا, و, ي), a short vowel, or disappearing entirely, depending on the conjugation pattern. Common hollow verbs include: قَالَ (he said, root: ق-و-ل), نَامَ (he slept, root: ن-و-م), زَارَ (he visited, root: ز-و-ر), بَاعَ (he sold, root: ب-ي-ع), سَارَ (he walked, root: س-ي-ر). In the dictionary form (past tense, third person masculine), the middle weak letter appears as alif (ا).",
+      "tip": "To identify a hollow verb: look at the past tense form. If the second letter is alif (ا) — like قَالَ, نَامَ, بَاعَ — it is likely a hollow verb. Check a dictionary to see if the root's middle letter is و or ي.",
+      "examples": [
+        {
+          "ar": "قَالَ (ق-و-ل)",
+          "en": "he said (middle radical و appears as alif ا in past tense)",
+          "highlight": "قَالَ"
+        },
+        {
+          "ar": "نَامَ (ن-و-م)",
+          "en": "he slept (middle radical و appears as alif ا)",
+          "highlight": "نَامَ"
+        },
+        {
+          "ar": "بَاعَ (ب-ي-ع)",
+          "en": "he sold (middle radical ي appears as alif ا)",
+          "highlight": "بَاعَ"
+        },
+        {
+          "ar": "زَارَ (ز-و-ر)",
+          "en": "he visited (middle radical و appears as alif ا)",
+          "highlight": "زَارَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What makes a verb 'hollow'?",
+          "options": [
+            "Its first radical is a weak letter (و or ي)",
+            "Its second (middle) radical is a weak letter (و or ي)",
+            "Its third (last) radical is a weak letter (و or ي)"
+          ],
+          "correctIndex": 1,
+          "explanation": "A hollow verb has a weak letter (و or ي) as its second/middle radical. This middle letter changes form across conjugations, hence the name 'hollow'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a hollow verb?",
+          "options": [
+            "كَتَبَ (he wrote)",
+            "قَالَ (he said)",
+            "مَشَى (he walked)"
+          ],
+          "correctIndex": 1,
+          "explanation": "قَالَ has the root ق-و-ل, where the middle radical is و (a weak letter). كَتَبَ is a sound verb (all strong letters), and مَشَى is a defective verb (weak final radical)."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-tense-hollow",
+      "title": "Past Tense Conjugation of Hollow Verbs",
+      "explanation": "In the past tense, hollow verbs show a key pattern: the long alif (ا) appears when the suffix begins with a consonant or there is no suffix (هُوَ, هِيَ, هُمْ forms), but the alif DISAPPEARS when the suffix begins with a vowel (i.e., when a consonant cluster would form). When the alif disappears, it is replaced by a short vowel: for wāw-hollow verbs → short ُ (ḍamma), for yā'-hollow verbs → short ِ (kasra). Compare: قَالَ (he said) → قَالَتْ (she said, alif stays) → قُلْتُ (I said, alif drops → short ḍamma because root has و). بَاعَ (he sold) → بَاعَتْ (she sold, alif stays) → بِعْتُ (I sold, alif drops → short kasra because root has ي).",
+      "tip": "When conjugating with suffixes that start with a consonant cluster (ـتُ, ـتَ, ـتِ, ـنَا, ـتُمْ, etc.), the alif drops and you see the 'true identity' of the middle radical: ḍamma for و verbs, kasra for ي verbs.",
+      "examples": [
+        {
+          "ar": "قَالَ → قَالَتْ → قُلْتُ → قُلْنَا",
+          "en": "he said → she said → I said → we said",
+          "highlight": "قُلْتُ"
+        },
+        {
+          "ar": "نَامَ → نَامَتْ → نِمْتُ → نِمْنَا",
+          "en": "he slept → she slept → I slept → we slept",
+          "highlight": "نِمْتُ"
+        },
+        {
+          "ar": "بَاعَ → بَاعَتْ → بِعْتُ → بِعْنَا",
+          "en": "he sold → she sold → I sold → we sold",
+          "highlight": "بِعْتُ"
+        },
+        {
+          "ar": "زَارَ → زَارَتْ → زُرْتُ → زُرْنَا",
+          "en": "he visited → she visited → I visited → we visited",
+          "highlight": "زُرْتُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "I said (أنا): ___",
+          "explanation": "قَالَ (root: ق-و-ل) loses its alif before the suffix ـتُ. Since the middle radical is و, the short vowel is ḍamma: قُلْتُ.",
+          "acceptedAnswers": [
+            "قُلْتُ"
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "We sold (نحن): ___",
+          "explanation": "بَاعَ (root: ب-ي-ع) loses its alif before ـنَا. Since the middle radical is ي, the short vowel is kasra: بِعْنَا.",
+          "acceptedAnswers": [
+            "بِعْنَا"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does قَالَ become قُلْتُ (not قِلْتُ) in the first person?",
+          "options": [
+            "Because the root's middle radical is و, which corresponds to ḍamma",
+            "Because the root's middle radical is ي, which corresponds to kasra",
+            "Because all hollow verbs use ḍamma in the past tense"
+          ],
+          "correctIndex": 0,
+          "explanation": "قَالَ has the root ق-و-ل. The middle radical و corresponds to ḍamma (ـُـ), so when the alif drops: قُلْتُ. If it were a ي verb, it would take kasra."
+        }
+      ]
+    },
+    {
+      "sectionId": "present-tense-hollow",
+      "title": "Present Tense Conjugation of Hollow Verbs",
+      "explanation": "In the present tense, the middle radical of hollow verbs appears as a long vowel — but which long vowel depends on the root. Wāw-hollow verbs typically show ū (ـُو) in the present: يَقُولُ (he says), يَنَامُ (he sleeps — irregular pattern with fatḥa + alif), يَزُورُ (he visits). Yā'-hollow verbs typically show ī (ـِي): يَبِيعُ (he sells), يَسِيرُ (he walks). Some wāw-hollow verbs take fatḥa + alif instead of ḍamma + wāw: يَنَامُ (he sleeps, not *يَنُومُ), يَخَافُ (he fears, not *يَخُوفُ). In the jussive mood (مجزوم — used with لَمْ, لا النَّاهِيَة, etc.), the long vowel shortens or disappears: لَمْ يَقُلْ (he did not say), لَمْ يَنَمْ (he did not sleep), لَمْ يَبِعْ (he did not sell).",
+      "tip": "The jussive (مجزوم) is where hollow verbs change the most: the long vowel vanishes entirely. يَقُولُ → لَمْ يَقُلْ, يَبِيعُ → لَمْ يَبِعْ. Master the jussive forms — they also appear in imperative and conditional constructions.",
+      "examples": [
+        {
+          "ar": "يَقُولُ الْحَقَّ",
+          "en": "He says the truth (وَاو appears as ـُو in present)",
+          "highlight": "يَقُولُ"
+        },
+        {
+          "ar": "يَبِيعُ الْخُضَارَ",
+          "en": "He sells vegetables (يَاء appears as ـِي in present)",
+          "highlight": "يَبِيعُ"
+        },
+        {
+          "ar": "لَمْ يَقُلْ شَيْئًا",
+          "en": "He did not say anything (jussive — long vowel drops)",
+          "highlight": "لَمْ يَقُلْ"
+        },
+        {
+          "ar": "يَنَامُ بَاكِرًا",
+          "en": "He sleeps early (irregular: fatḥa + alif instead of ḍamma + wāw)",
+          "highlight": "يَنَامُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to the middle radical of a hollow verb in the jussive (مجزوم)?",
+          "options": [
+            "It becomes a short vowel",
+            "The long vowel disappears entirely",
+            "It stays the same as the indicative"
+          ],
+          "correctIndex": 1,
+          "explanation": "In the jussive, the long vowel of hollow verbs disappears: يَقُولُ → يَقُلْ, يَبِيعُ → يَبِعْ, يَنَامُ → يَنَمْ."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He did not sell: لَمْ ___",
+          "explanation": "يَبِيعُ in the jussive loses its long vowel ـِي and takes sukun: يَبِعْ. So: لَمْ يَبِعْ.",
+          "acceptedAnswers": [
+            "يَبِعْ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "common-hollow-verbs",
+      "title": "Common Hollow Verbs to Memorize",
+      "explanation": "Here are the most important hollow verbs grouped by type. Wāw-hollow (middle radical و): قَالَ/يَقُولُ (to say), زَارَ/يَزُورُ (to visit), عَادَ/يَعُودُ (to return), كَانَ/يَكُونُ (to be), صَامَ/يَصُومُ (to fast), نَامَ/يَنَامُ (to sleep — irregular present pattern), خَافَ/يَخَافُ (to fear — irregular present pattern). Yā'-hollow (middle radical ي): بَاعَ/يَبِيعُ (to sell), سَارَ/يَسِيرُ (to walk), طَارَ/يَطِيرُ (to fly), عَاشَ/يَعِيشُ (to live), غَابَ/يَغِيبُ (to be absent). Note that كَانَ (to be) is the most important hollow verb in Arabic — it is used extensively to form past-tense nominal sentences and compound tenses.",
+      "tip": "كَانَ/يَكُونُ is the most essential hollow verb. It conjugates: كُنْتُ (I was), كُنْتَ (you m. were), كُنْتِ (you f. were), كُنَّا (we were), كَانُوا (they were). Master this verb first.",
+      "examples": [
+        {
+          "ar": "كَانَ الْجَوُّ جَمِيلًا",
+          "en": "The weather was beautiful (كَانَ = he/it was)",
+          "highlight": "كَانَ"
+        },
+        {
+          "ar": "عَادَ إِلَى الْبَيْتِ",
+          "en": "He returned home (عَادَ = he returned, root: ع-و-د)",
+          "highlight": "عَادَ"
+        },
+        {
+          "ar": "طَارَ الْعُصْفُورُ",
+          "en": "The bird flew (طَارَ = he flew, root: ط-ي-ر)",
+          "highlight": "طَارَ"
+        },
+        {
+          "ar": "كُنَّا نَلْعَبُ فِي الْحَدِيقَةِ",
+          "en": "We were playing in the park (كُنَّا = we were)",
+          "highlight": "كُنَّا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "I was (أنا): ___",
+          "explanation": "كَانَ (root: ك-و-ن) loses its alif before ـتُ. Middle radical is و, so short vowel is ḍamma: كُنْتُ.",
+          "acceptedAnswers": [
+            "كُنْتُ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is the correct present tense of زَارَ (he visited)?",
+          "options": [
+            "يَزِيرُ",
+            "يَزُورُ",
+            "يَزَارُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "زَارَ has the root ز-و-ر (wāw-hollow). In the present tense, the middle و appears as ـُو: يَزُورُ (he visits)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "We returned (نحن): ___",
+          "explanation": "عَادَ (root: ع-و-د). Before ـنَا, the alif drops and و becomes ḍamma: عُدْنَا.",
+          "acceptedAnswers": [
+            "عُدْنَا"
+          ]
+        }
+      ]
+    }
+  ]
+}

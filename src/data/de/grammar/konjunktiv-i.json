@@ -1,0 +1,240 @@
+{
+  "lessonId": "konjunktiv-i",
+  "nameEn": "Konjunktiv I (Reported Speech)",
+  "nameDe": "Konjunktiv I (Indirekte Rede)",
+  "icon": "🗣️",
+  "tier": "B2",
+  "prerequisites": [
+    "konjunktiv-ii",
+    "nebensaetze"
+  ],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "formation",
+      "title": "Formation of Konjunktiv I",
+      "explanation": "Konjunktiv I is formed from the infinitive stem of the verb plus special endings. Take the infinitive, remove -en, and add: ich -e, du -est, er/sie/es -e, wir -en, ihr -et, sie/Sie -en. For example, 'gehen': ich gehe, du gehest, er gehe, wir gehen, ihr gehet, sie gehen. For 'haben': ich habe, du habest, er habe, wir haben, ihr habet, sie haben. The verb 'sein' is irregular: ich sei, du sei(e)st, er sei, wir seien, ihr seiet, sie seien. Notice that many Konjunktiv I forms are identical to the indicative (ich gehe, wir gehen). In those cases, Konjunktiv II is used as a replacement.",
+      "tip": "The most commonly used Konjunktiv I form is the 3rd person singular (er/sie/es), because it is always distinguishable from the indicative: er geht (indicative) vs. er gehe (Konjunktiv I).",
+      "examples": [
+        {
+          "de": "er gehe",
+          "en": "he go (subjunctive -- reported speech)",
+          "highlight": "gehe"
+        },
+        {
+          "de": "sie habe",
+          "en": "she have (subjunctive -- reported speech)",
+          "highlight": "habe"
+        },
+        {
+          "de": "es sei",
+          "en": "it be (subjunctive -- reported speech)",
+          "highlight": "sei"
+        },
+        {
+          "de": "er komme",
+          "en": "he come (subjunctive -- reported speech)",
+          "highlight": "komme"
+        },
+        {
+          "de": "sie wisse",
+          "en": "she know (subjunctive -- reported speech)",
+          "highlight": "wisse"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Konjunktiv I form of 'gehen' for er/sie/es?",
+          "options": [
+            "er geht",
+            "er gehe",
+            "er ginge"
+          ],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I of 'gehen' for er/sie/es: stem geh- + ending -e = er gehe. 'Er geht' is indicative, 'er ginge' is Konjunktiv II."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Konjunktiv I of 'haben' for er/sie/es: er/sie/es ___",
+          "acceptedAnswers": [
+            "habe"
+          ],
+          "hint": "Infinitive stem hab- + ending -e",
+          "explanation": "Konjunktiv I: haben, stem hab- + -e = habe."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each verb to its Konjunktiv I form (er/sie/es):",
+          "pairs": [
+            {
+              "left": "sein",
+              "right": "er sei"
+            },
+            {
+              "left": "haben",
+              "right": "er habe"
+            },
+            {
+              "left": "kommen",
+              "right": "er komme"
+            },
+            {
+              "left": "wissen",
+              "right": "er wisse"
+            }
+          ],
+          "explanation": "Konjunktiv I is formed from the infinitive stem + -e for er/sie/es. 'Sein' is irregular: er sei (not er seie)."
+        }
+      ]
+    },
+    {
+      "sectionId": "reported-speech",
+      "title": "Using Konjunktiv I in Reported Speech",
+      "explanation": "Konjunktiv I is primarily used in reported speech (indirekte Rede) to signal that you are reporting what someone else said, without confirming whether it is true. Direct speech: Er sagt: 'Ich bin krank.' Reported speech: Er sagt, er sei krank. The conjunction 'dass' can optionally be used: Er sagt, dass er krank sei. In formal writing and news reports, Konjunktiv I is standard. In everyday spoken German, people often use the indicative instead: Er sagt, er ist krank. Tenses shift: present becomes Konjunktiv I present (er gehe), past becomes Konjunktiv I past (er sei gegangen / er habe gesagt).",
+      "tip": "In news German, you will see Konjunktiv I constantly: 'Der Minister sagte, die Lage sei ernst.' This signals the journalist is reporting, not endorsing, the statement.",
+      "examples": [
+        {
+          "de": "Er sagte, er sei krank.",
+          "en": "He said he was sick. (reported speech)",
+          "highlight": "sei"
+        },
+        {
+          "de": "Sie behauptet, sie habe nichts gewusst.",
+          "en": "She claims she knew nothing. (reported speech)",
+          "highlight": "habe"
+        },
+        {
+          "de": "Der Arzt meint, das Kind brauche Ruhe.",
+          "en": "The doctor says the child needs rest. (reported speech)",
+          "highlight": "brauche"
+        },
+        {
+          "de": "Die Zeitung berichtet, der Präsident komme morgen.",
+          "en": "The newspaper reports the president is coming tomorrow.",
+          "highlight": "komme"
+        },
+        {
+          "de": "Er sagte, er habe den Brief geschrieben.",
+          "en": "He said he had written the letter.",
+          "highlight": "habe"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Er sagte, er ___ müde. (He said he was tired.) -- use Konjunktiv I of 'sein'",
+          "acceptedAnswers": [
+            "sei"
+          ],
+          "hint": "Konjunktiv I of 'sein' for er = sei",
+          "explanation": "In reported speech: Er sagte, er sei müde. 'Sei' is the Konjunktiv I of 'sein'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to reported speech: Maria sagt: 'Ich habe Hunger.' -- Maria sagt, sie ___ Hunger.",
+          "options": [
+            "hat",
+            "habe",
+            "hätte"
+          ],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I for reported speech: 'ich habe' (direct) becomes 'sie habe' (reported). 'Hat' is indicative, 'hätte' is Konjunktiv II."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Lehrerin sagte, die Schüler ___ mehr lernen. (The teacher said the students should study more.) -- Konjunktiv I of 'sollen'",
+          "acceptedAnswers": [
+            "sollten"
+          ],
+          "hint": "When Konjunktiv I is identical to indicative (sie sollen = sie sollen), use Konjunktiv II instead",
+          "explanation": "Konjunktiv I of 'sollen' for sie (plural) would be 'sollen' -- identical to indicative. So we use Konjunktiv II: 'sollten'."
+        }
+      ]
+    },
+    {
+      "sectionId": "konjunktiv-i-vs-ii",
+      "title": "When to Use Konjunktiv I vs. Konjunktiv II in Reported Speech",
+      "explanation": "The rule: Use Konjunktiv I in reported speech whenever it is clearly different from the indicative. When the Konjunktiv I form is identical to the indicative, replace it with Konjunktiv II. Examples: 'ich gehe' (indicative) = 'ich gehe' (Konj. I) -- identical! Use Konjunktiv II: 'ich ginge'. 'wir haben' (indicative) = 'wir haben' (Konj. I) -- identical! Use Konjunktiv II: 'wir hätten'. 'er geht' (indicative) is not the same as 'er gehe' (Konj. I) -- different! Use Konjunktiv I: 'er gehe'. The 3rd person singular (er/sie/es) almost always uses Konjunktiv I because it is always distinguishable. The 1st person singular and all plural forms often require Konjunktiv II as a substitute.",
+      "tip": "Practical shortcut: for er/sie/es, use Konjunktiv I. For ich, wir, sie (plural), you often need Konjunktiv II because Konjunktiv I looks the same as the indicative.",
+      "examples": [
+        {
+          "de": "Er sagte, er gehe nach Hause.",
+          "en": "He said he was going home. (Konj. I -- clearly different from 'geht')",
+          "highlight": "gehe"
+        },
+        {
+          "de": "Er sagte, sie gingen nach Hause.",
+          "en": "He said they were going home. (Konj. II -- because Konj. I 'gehen' = indicative)",
+          "highlight": "gingen"
+        },
+        {
+          "de": "Sie sagten, sie hätten kein Geld.",
+          "en": "They said they had no money. (Konj. II replaces Konj. I 'haben')",
+          "highlight": "hätten"
+        },
+        {
+          "de": "Er meinte, er wisse die Antwort.",
+          "en": "He said he knew the answer. (Konj. I of 'wissen')",
+          "highlight": "wisse"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Reported speech: Sie sagten: 'Wir haben keine Zeit.' -- Sie sagten, sie ___ keine Zeit.",
+          "options": [
+            "haben",
+            "hätten",
+            "habe"
+          ],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I of 'haben' for sie (plural) is 'haben' -- identical to the indicative. So we use Konjunktiv II: 'hätten'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Reported speech: Der Chef sagte: 'Die Firma wächst.' -- Der Chef sagte, die Firma ___.",
+          "options": [
+            "wächst",
+            "wachse",
+            "würde wachsen"
+          ],
+          "correctIndex": 1,
+          "explanation": "For er/sie/es, Konjunktiv I is always different from indicative: die Firma wächst (ind.) becomes die Firma wachse (Konj. I)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er sagte, er ___ das nicht. (He said he didn't know that.) -- Konjunktiv I of 'wissen' for er",
+          "acceptedAnswers": [
+            "wisse"
+          ],
+          "hint": "Konjunktiv I stem of 'wissen' = wiss-",
+          "explanation": "Konjunktiv I: wissen becomes er wisse. This is clearly different from the indicative 'er weiss'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each reported speech situation to the correct form:",
+          "pairs": [
+            {
+              "left": "er geht (Konj. I)",
+              "right": "gehe"
+            },
+            {
+              "left": "wir gehen (Konj. II needed)",
+              "right": "gingen"
+            },
+            {
+              "left": "er hat (Konj. I)",
+              "right": "habe"
+            },
+            {
+              "left": "sie haben (Konj. II needed)",
+              "right": "hätten"
+            }
+          ],
+          "explanation": "When Konjunktiv I = indicative (wir gehen, sie haben), switch to Konjunktiv II (wir gingen, sie hätten)."
+        }
+      ]
+    }
+  ]
+}

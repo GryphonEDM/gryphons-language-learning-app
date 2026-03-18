@@ -10,6 +10,14 @@ import houseData from '../data/vocabulary/themes/house.json';
 import foodData from '../data/vocabulary/themes/food.json';
 import clothingData from '../data/vocabulary/themes/clothing.json';
 import professionsData from '../data/vocabulary/themes/professions.json';
+import schoolData from '../data/vocabulary/themes/school.json';
+import timeCalendarData from '../data/vocabulary/themes/time-calendar.json';
+import greetingsData from '../data/vocabulary/themes/greetings.json';
+import fruitsVegetablesData from '../data/vocabulary/themes/fruits-vegetables.json';
+import countriesData from '../data/vocabulary/themes/countries.json';
+import sportsData from '../data/vocabulary/themes/sports.json';
+import moneyShoppingData from '../data/vocabulary/themes/money-shopping.json';
+import natureData from '../data/vocabulary/themes/nature.json';
 import comprehensiveDict from '../data/vocabulary/comprehensive-dictionary.json';
 import comprehensiveDictExt from '../data/vocabulary/comprehensive-dictionary-ext.json';
 import comprehensiveDictExt2 from '../data/vocabulary/comprehensive-dictionary-ext2.json';
@@ -35,7 +43,7 @@ import { KO_TRANSLATIONS } from '../data/ko/translations.js';
 import { ZH_TRANSLATIONS } from '../data/zh/translations.js';
 import { JA_TRANSLATIONS } from '../data/ja/translations.js';
 
-const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData, foodData, clothingData, professionsData];
+const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData, foodData, clothingData, professionsData, schoolData, timeCalendarData, greetingsData, fruitsVegetablesData, countriesData, sportsData, moneyShoppingData, natureData];
 const COMPREHENSIVE = [comprehensiveDict, comprehensiveDictExt, comprehensiveDictExt2, comprehensiveDictExt3, comprehensiveDictExt4, comprehensiveDictExt5, comprehensiveDictExt6, comprehensiveDictExt7, comprehensiveDictExt8, comprehensiveDictExt9, comprehensiveDictExt10, comprehensiveDictExt11, comprehensiveDictExt12];
 
 // Per-category CEFR level assignment for accurate difficulty filtering

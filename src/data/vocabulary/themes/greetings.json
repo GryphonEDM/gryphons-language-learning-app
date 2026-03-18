@@ -1,0 +1,721 @@
+{
+  "setId": "greetings",
+  "nameEn": "Greetings & Polite Phrases",
+  "nameUk": "Привітання та ввічливі фрази",
+  "nameRu": "Приветствия и вежливые фразы",
+  "nameDe": "Begrüßungen und höfliche Ausdrücke",
+  "nameEs": "Saludos y frases de cortesía",
+  "nameFr": "Salutations et formules de politesse",
+  "nameEl": "Χαιρετισμοί και ευγενικές φράσεις",
+  "nameHi": "अभिवादन और शिष्टाचार",
+  "nameAr": "التحيات والعبارات المهذبة",
+  "nameKo": "인사와 예의 표현",
+  "nameZh": "问候与礼貌用语",
+  "nameJa": "挨拶と丁寧な表現",
+  "difficulty": "A1",
+  "icon": "👋",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "привіт",
+      "ru": "привет",
+      "de": "hallo",
+      "en": "hello",
+      "phoneticUk": "pryvit",
+      "phoneticRu": "privet",
+      "phoneticDe": "HAL-loh",
+      "es": "hola",
+      "phoneticEs": "OH-lah",
+      "fr": "bonjour",
+      "frPhonetic": "bon-ZHOOR",
+      "el": "γεια σου",
+      "elPhonetic": "YA-su",
+      "hi": "नमस्ते",
+      "hiPhonetic": "na-MAS-teh",
+      "ar": "مَرْحَبًا",
+      "arPhonetic": "MAR-ha-ban",
+      "ko": "안녕하세요",
+      "koPhonetic": "an-nyeong-ha-SE-yo",
+      "zh": "你好",
+      "zhPhonetic": "nǐhǎo",
+      "ja": "こんにちは",
+      "jaPhonetic": "konnichiwa",
+      "examples": {
+        "uk": [
+          "Привіт, як справи?",
+          "Привіт, радий тебе бачити!"
+        ],
+        "en": [
+          "Hello, how are you?",
+          "Hello, glad to see you!"
+        ]
+      }
+    },
+    {
+      "uk": "до побачення",
+      "ru": "до свидания",
+      "de": "auf Wiedersehen",
+      "en": "goodbye",
+      "phoneticUk": "do pobachennya",
+      "phoneticRu": "do svidaniya",
+      "phoneticDe": "owf-VEE-der-zeh-en",
+      "es": "adiós",
+      "phoneticEs": "ah-dee-OS",
+      "fr": "au revoir",
+      "frPhonetic": "oh-ruh-VWAR",
+      "el": "αντίο",
+      "elPhonetic": "an-DI-o",
+      "hi": "अलविदा",
+      "hiPhonetic": "al-vi-DAA",
+      "ar": "مَعَ السَّلَامَة",
+      "arPhonetic": "ma-a as-sa-LAA-ma",
+      "ko": "안녕히 가세요",
+      "koPhonetic": "an-nyeong-hi ga-SE-yo",
+      "zh": "再见",
+      "zhPhonetic": "zàijiàn",
+      "ja": "さようなら",
+      "jaPhonetic": "sayounara",
+      "examples": {
+        "uk": [
+          "До побачення, до завтра!",
+          "Вона сказала до побачення і пішла."
+        ],
+        "en": [
+          "Goodbye, see you tomorrow!",
+          "She said goodbye and left."
+        ]
+      }
+    },
+    {
+      "uk": "будь ласка",
+      "ru": "пожалуйста",
+      "de": "bitte",
+      "en": "please",
+      "phoneticUk": "bud' laska",
+      "phoneticRu": "pozhaluysta",
+      "phoneticDe": "BIT-teh",
+      "es": "por favor",
+      "phoneticEs": "por-fah-BOR",
+      "fr": "s'il vous plaît",
+      "frPhonetic": "seel-voo-PLEH",
+      "el": "παρακαλώ",
+      "elPhonetic": "pa-ra-ka-LO",
+      "hi": "कृपया",
+      "hiPhonetic": "KRIP-yaa",
+      "ar": "مِنْ فَضْلِك",
+      "arPhonetic": "min FADH-lik",
+      "ko": "제발",
+      "koPhonetic": "JE-bal",
+      "zh": "请",
+      "zhPhonetic": "qǐng",
+      "ja": "お願いします",
+      "jaPhonetic": "onegaishimasu",
+      "examples": {
+        "uk": [
+          "Дайте мені воду, будь ласка.",
+          "Будь ласка, закрийте двері."
+        ],
+        "en": [
+          "Give me water, please.",
+          "Please close the door."
+        ]
+      }
+    },
+    {
+      "uk": "дякую",
+      "ru": "спасибо",
+      "de": "danke",
+      "en": "thank you",
+      "phoneticUk": "dyakuyu",
+      "phoneticRu": "spasibo",
+      "phoneticDe": "DAN-keh",
+      "es": "gracias",
+      "phoneticEs": "GRAH-thee-as",
+      "fr": "merci",
+      "frPhonetic": "mehr-SEE",
+      "el": "ευχαριστώ",
+      "elPhonetic": "ef-kha-ri-STO",
+      "hi": "धन्यवाद",
+      "hiPhonetic": "DHAN-ya-vaad",
+      "ar": "شُكْرًا",
+      "arPhonetic": "SHUK-ran",
+      "ko": "감사합니다",
+      "koPhonetic": "gam-sa-HAM-ni-da",
+      "zh": "谢谢",
+      "zhPhonetic": "xièxie",
+      "ja": "ありがとう",
+      "jaPhonetic": "arigatou",
+      "examples": {
+        "uk": [
+          "Дякую за допомогу!",
+          "Дякую, все було чудово."
+        ],
+        "en": [
+          "Thank you for your help!",
+          "Thank you, everything was wonderful."
+        ]
+      }
+    },
+    {
+      "uk": "вибачте",
+      "ru": "извините",
+      "de": "Entschuldigung",
+      "en": "sorry",
+      "phoneticUk": "vybachte",
+      "phoneticRu": "izvinite",
+      "phoneticDe": "ent-SHUL-di-gung",
+      "es": "perdón",
+      "phoneticEs": "per-DON",
+      "fr": "pardon",
+      "frPhonetic": "par-DON",
+      "el": "συγγνώμη",
+      "elPhonetic": "si-GHNO-mi",
+      "hi": "माफ़ कीजिए",
+      "hiPhonetic": "MAAF kee-ji-eh",
+      "ar": "آسِف",
+      "arPhonetic": "AA-sif",
+      "ko": "죄송합니다",
+      "koPhonetic": "jwe-song-HAM-ni-da",
+      "zh": "对不起",
+      "zhPhonetic": "duìbùqǐ",
+      "ja": "ごめんなさい",
+      "jaPhonetic": "gomennasai",
+      "examples": {
+        "uk": [
+          "Вибачте, я запізнився.",
+          "Вибачте за незручності."
+        ],
+        "en": [
+          "Sorry, I am late.",
+          "Sorry for the inconvenience."
+        ]
+      }
+    },
+    {
+      "uk": "перепрошую",
+      "ru": "простите",
+      "de": "Verzeihung",
+      "en": "excuse me",
+      "phoneticUk": "pereproshuyu",
+      "phoneticRu": "prostite",
+      "phoneticDe": "fehr-TSAY-ung",
+      "es": "disculpe",
+      "phoneticEs": "dis-KOOL-peh",
+      "fr": "excusez-moi",
+      "frPhonetic": "ek-skoo-zeh-MWA",
+      "el": "με συγχωρείτε",
+      "elPhonetic": "meh sin-kho-RI-teh",
+      "hi": "क्षमा करें",
+      "hiPhonetic": "KSHA-maa ka-REN",
+      "ar": "عَفْوًا",
+      "arPhonetic": "AF-wan",
+      "ko": "실례합니다",
+      "koPhonetic": "shil-lye-HAM-ni-da",
+      "zh": "打扰一下",
+      "zhPhonetic": "dǎrǎo yīxià",
+      "ja": "すみません",
+      "jaPhonetic": "sumimasen",
+      "examples": {
+        "uk": [
+          "Перепрошую, де знаходиться вокзал?",
+          "Перепрошую, можна пройти?"
+        ],
+        "en": [
+          "Excuse me, where is the train station?",
+          "Excuse me, may I pass?"
+        ]
+      }
+    },
+    {
+      "uk": "так",
+      "ru": "да",
+      "de": "ja",
+      "en": "yes",
+      "phoneticUk": "tak",
+      "phoneticRu": "da",
+      "phoneticDe": "YAH",
+      "es": "sí",
+      "phoneticEs": "SEE",
+      "fr": "oui",
+      "frPhonetic": "WEE",
+      "el": "ναι",
+      "elPhonetic": "NEH",
+      "hi": "हाँ",
+      "hiPhonetic": "HAAN",
+      "ar": "نَعَم",
+      "arPhonetic": "NA-am",
+      "ko": "네",
+      "koPhonetic": "NE",
+      "zh": "是",
+      "zhPhonetic": "shì",
+      "ja": "はい",
+      "jaPhonetic": "hai",
+      "examples": {
+        "uk": [
+          "Так, я згоден із тобою.",
+          "Так, я прийду завтра."
+        ],
+        "en": [
+          "Yes, I agree with you.",
+          "Yes, I will come tomorrow."
+        ]
+      }
+    },
+    {
+      "uk": "ні",
+      "ru": "нет",
+      "de": "nein",
+      "en": "no",
+      "phoneticUk": "ni",
+      "phoneticRu": "net",
+      "phoneticDe": "NAYN",
+      "es": "no",
+      "phoneticEs": "NOH",
+      "fr": "non",
+      "frPhonetic": "NON",
+      "el": "όχι",
+      "elPhonetic": "O-hi",
+      "hi": "नहीं",
+      "hiPhonetic": "na-HEEN",
+      "ar": "لَا",
+      "arPhonetic": "LAA",
+      "ko": "아니요",
+      "koPhonetic": "a-NI-yo",
+      "zh": "不",
+      "zhPhonetic": "bù",
+      "ja": "いいえ",
+      "jaPhonetic": "iie",
+      "examples": {
+        "uk": [
+          "Ні, дякую, я не голодний.",
+          "Ні, я не можу прийти."
+        ],
+        "en": [
+          "No, thank you, I am not hungry.",
+          "No, I cannot come."
+        ]
+      }
+    },
+    {
+      "uk": "доброго ранку",
+      "ru": "доброе утро",
+      "de": "guten Morgen",
+      "en": "good morning",
+      "phoneticUk": "dobroho ranku",
+      "phoneticRu": "dobroye utro",
+      "phoneticDe": "GOO-ten MOR-gen",
+      "es": "buenos días",
+      "phoneticEs": "BWEH-nos DEE-as",
+      "fr": "bonjour",
+      "frPhonetic": "bon-ZHOOR",
+      "el": "καλημέρα",
+      "elPhonetic": "ka-li-ME-ra",
+      "hi": "सुप्रभात",
+      "hiPhonetic": "su-pra-BHAAT",
+      "ar": "صَبَاح الخَيْر",
+      "arPhonetic": "sa-BAAH al-KHAYR",
+      "ko": "좋은 아침",
+      "koPhonetic": "JO-eun A-chim",
+      "zh": "早上好",
+      "zhPhonetic": "zǎoshang hǎo",
+      "ja": "おはようございます",
+      "jaPhonetic": "ohayou gozaimasu",
+      "examples": {
+        "uk": [
+          "Доброго ранку, як ви спали?",
+          "Доброго ранку, сьогодні гарна погода."
+        ],
+        "en": [
+          "Good morning, how did you sleep?",
+          "Good morning, the weather is nice today."
+        ]
+      }
+    },
+    {
+      "uk": "добрий вечір",
+      "ru": "добрый вечер",
+      "de": "guten Abend",
+      "en": "good evening",
+      "phoneticUk": "dobriy vechir",
+      "phoneticRu": "dobriy vecher",
+      "phoneticDe": "GOO-ten AH-bent",
+      "es": "buenas tardes",
+      "phoneticEs": "BWEH-nas TAR-des",
+      "fr": "bonsoir",
+      "frPhonetic": "bon-SWAR",
+      "el": "καλησπέρα",
+      "elPhonetic": "ka-li-SPE-ra",
+      "hi": "शुभ संध्या",
+      "hiPhonetic": "SHUBH SANDH-yaa",
+      "ar": "مَسَاء الخَيْر",
+      "arPhonetic": "ma-SAA al-KHAYR",
+      "ko": "좋은 저녁",
+      "koPhonetic": "JO-eun JEO-nyeok",
+      "zh": "晚上好",
+      "zhPhonetic": "wǎnshang hǎo",
+      "ja": "こんばんは",
+      "jaPhonetic": "konbanwa",
+      "examples": {
+        "uk": [
+          "Добрий вечір, ласкаво просимо!",
+          "Добрий вечір, як минув ваш день?"
+        ],
+        "en": [
+          "Good evening, welcome!",
+          "Good evening, how was your day?"
+        ]
+      }
+    },
+    {
+      "uk": "на добраніч",
+      "ru": "спокойной ночи",
+      "de": "gute Nacht",
+      "en": "good night",
+      "phoneticUk": "na dobranich",
+      "phoneticRu": "spokoynoy nochi",
+      "phoneticDe": "GOO-teh NAKHT",
+      "es": "buenas noches",
+      "phoneticEs": "BWEH-nas NOH-ches",
+      "fr": "bonne nuit",
+      "frPhonetic": "bon-NWEE",
+      "el": "καληνύχτα",
+      "elPhonetic": "ka-li-NIKH-ta",
+      "hi": "शुभ रात्रि",
+      "hiPhonetic": "SHUBH RAA-tri",
+      "ar": "تِصْبَح عَلَى خَيْر",
+      "arPhonetic": "TIS-bah a-la KHAYR",
+      "ko": "안녕히 주무세요",
+      "koPhonetic": "an-nyeong-hi ju-mu-SE-yo",
+      "zh": "晚安",
+      "zhPhonetic": "wǎn'ān",
+      "ja": "おやすみなさい",
+      "jaPhonetic": "oyasuminasai",
+      "examples": {
+        "uk": [
+          "На добраніч, солодких снів!",
+          "Мама сказала дітям на добраніч."
+        ],
+        "en": [
+          "Good night, sweet dreams!",
+          "Mom said good night to the children."
+        ]
+      }
+    },
+    {
+      "uk": "як справи",
+      "ru": "как дела",
+      "de": "wie geht es Ihnen",
+      "en": "how are you",
+      "phoneticUk": "yak spravy",
+      "phoneticRu": "kak dela",
+      "phoneticDe": "vee-GEHT-es-EE-nen",
+      "es": "¿cómo estás?",
+      "phoneticEs": "KOH-moh es-TAHS",
+      "fr": "comment allez-vous",
+      "frPhonetic": "ko-MAHN-ta-leh-VOO",
+      "el": "τι κάνεις",
+      "elPhonetic": "ti-KA-nis",
+      "hi": "आप कैसे हैं",
+      "hiPhonetic": "AAP KAI-seh HAIN",
+      "ar": "كَيْفَ حَالُك",
+      "arPhonetic": "KAY-fa HAA-luk",
+      "ko": "어떻게 지내세요",
+      "koPhonetic": "eo-tteo-ke ji-NE-se-yo",
+      "zh": "你好吗",
+      "zhPhonetic": "nǐ hǎo ma",
+      "ja": "お元気ですか",
+      "jaPhonetic": "ogenki desu ka",
+      "examples": {
+        "uk": [
+          "Привіт, як справи?",
+          "Як справи? Давно не бачились!"
+        ],
+        "en": [
+          "Hello, how are you?",
+          "How are you? Long time no see!"
+        ]
+      }
+    },
+    {
+      "uk": "добре",
+      "ru": "хорошо",
+      "de": "gut",
+      "en": "fine",
+      "phoneticUk": "dobre",
+      "phoneticRu": "khorosho",
+      "phoneticDe": "GOOT",
+      "es": "bien",
+      "phoneticEs": "BYEN",
+      "fr": "bien",
+      "frPhonetic": "BYAN",
+      "el": "καλά",
+      "elPhonetic": "ka-LA",
+      "hi": "अच्छा",
+      "hiPhonetic": "ACHH-chaa",
+      "ar": "بِخَيْر",
+      "arPhonetic": "bi-KHAYR",
+      "ko": "잘 지내요",
+      "koPhonetic": "JAL ji-NE-yo",
+      "zh": "好",
+      "zhPhonetic": "hǎo",
+      "ja": "元気です",
+      "jaPhonetic": "genki desu",
+      "examples": {
+        "uk": [
+          "Дякую, у мене все добре.",
+          "Добре, я зроблю це завтра."
+        ],
+        "en": [
+          "Thank you, I am fine.",
+          "Fine, I will do it tomorrow."
+        ]
+      }
+    },
+    {
+      "uk": "ласкаво просимо",
+      "ru": "добро пожаловать",
+      "de": "willkommen",
+      "en": "welcome",
+      "phoneticUk": "laskavo prosymo",
+      "phoneticRu": "dobro pozhalovat'",
+      "phoneticDe": "vil-KOM-men",
+      "es": "bienvenido",
+      "phoneticEs": "byen-beh-NEE-doh",
+      "fr": "bienvenue",
+      "frPhonetic": "byan-vuh-NOO",
+      "el": "καλώς ήρθατε",
+      "elPhonetic": "ka-LOS IR-tha-te",
+      "hi": "स्वागत है",
+      "hiPhonetic": "SWAA-gat hai",
+      "ar": "أَهْلًا وَسَهْلًا",
+      "arPhonetic": "AH-lan wa-SAH-lan",
+      "ko": "환영합니다",
+      "koPhonetic": "hwan-yeong-HAM-ni-da",
+      "zh": "欢迎",
+      "zhPhonetic": "huānyíng",
+      "ja": "ようこそ",
+      "jaPhonetic": "youkoso",
+      "examples": {
+        "uk": [
+          "Ласкаво просимо до нашого дому!",
+          "Ласкаво просимо до України!"
+        ],
+        "en": [
+          "Welcome to our home!",
+          "Welcome to Ukraine!"
+        ]
+      }
+    },
+    {
+      "uk": "вітаю",
+      "ru": "поздравляю",
+      "de": "herzlichen Glückwunsch",
+      "en": "congratulations",
+      "phoneticUk": "vitayu",
+      "phoneticRu": "pozdravlyayu",
+      "phoneticDe": "HERTS-li-khen GLOOK-vunsh",
+      "es": "felicidades",
+      "phoneticEs": "feh-lee-thee-DAH-des",
+      "fr": "félicitations",
+      "frPhonetic": "feh-lee-see-ta-SYON",
+      "el": "συγχαρητήρια",
+      "elPhonetic": "sin-kha-ri-TI-ri-a",
+      "hi": "बधाई हो",
+      "hiPhonetic": "ba-DHAAI ho",
+      "ar": "مَبْرُوك",
+      "arPhonetic": "mab-ROOK",
+      "ko": "축하합니다",
+      "koPhonetic": "chuk-ha-HAM-ni-da",
+      "zh": "恭喜",
+      "zhPhonetic": "gōngxǐ",
+      "ja": "おめでとう",
+      "jaPhonetic": "omedetou",
+      "examples": {
+        "uk": [
+          "Вітаю з перемогою!",
+          "Вітаю, ти склав іспит!"
+        ],
+        "en": [
+          "Congratulations on your victory!",
+          "Congratulations, you passed the exam!"
+        ]
+      }
+    },
+    {
+      "uk": "з днем народження",
+      "ru": "с днём рождения",
+      "de": "alles Gute zum Geburtstag",
+      "en": "happy birthday",
+      "phoneticUk": "z dnem narodzhennya",
+      "phoneticRu": "s dnyom rozhdeniya",
+      "phoneticDe": "AL-les GOO-teh tsum geh-BURTS-tahk",
+      "es": "feliz cumpleaños",
+      "phoneticEs": "feh-LEETH koom-pleh-AH-nyos",
+      "fr": "joyeux anniversaire",
+      "frPhonetic": "zhwa-YUH ah-nee-vehr-SEHR",
+      "el": "χρόνια πολλά",
+      "elPhonetic": "KHRO-ni-a po-LA",
+      "hi": "जन्मदिन मुबारक",
+      "hiPhonetic": "JAN-ma-din mu-BAA-rak",
+      "ar": "عِيد مِيلَاد سَعِيد",
+      "arPhonetic": "EED mi-LAAD sa-EED",
+      "ko": "생일 축하합니다",
+      "koPhonetic": "SENG-il chuk-ha-HAM-ni-da",
+      "zh": "生日快乐",
+      "zhPhonetic": "shēngrì kuàilè",
+      "ja": "お誕生日おめでとう",
+      "jaPhonetic": "otanjoubi omedetou",
+      "examples": {
+        "uk": [
+          "З днем народження, дорогий друже!",
+          "Бажаю тобі всього найкращого з днем народження!"
+        ],
+        "en": [
+          "Happy birthday, dear friend!",
+          "I wish you all the best, happy birthday!"
+        ]
+      }
+    },
+    {
+      "uk": "будьмо",
+      "ru": "ура",
+      "de": "prost",
+      "en": "cheers",
+      "phoneticUk": "bud'mo",
+      "phoneticRu": "ura",
+      "phoneticDe": "PROHST",
+      "es": "salud",
+      "phoneticEs": "sa-LOOD",
+      "fr": "santé",
+      "frPhonetic": "sahn-TEH",
+      "el": "στην υγειά μας",
+      "elPhonetic": "stin i-YA-mas",
+      "hi": "चीयर्स",
+      "hiPhonetic": "CHEERS",
+      "ar": "في صِحَّتِك",
+      "arPhonetic": "fee SIH-ha-tik",
+      "ko": "건배",
+      "koPhonetic": "GEON-be",
+      "zh": "干杯",
+      "zhPhonetic": "gānbēi",
+      "ja": "乾杯",
+      "jaPhonetic": "kanpai",
+      "examples": {
+        "uk": [
+          "Будьмо! За нашу дружбу!",
+          "Підніміть келихи — будьмо!"
+        ],
+        "en": [
+          "Cheers! To our friendship!",
+          "Raise your glasses — cheers!"
+        ]
+      }
+    },
+    {
+      "uk": "до зустрічі",
+      "ru": "до встречи",
+      "de": "bis später",
+      "en": "see you later",
+      "phoneticUk": "do zustrichi",
+      "phoneticRu": "do vstrechi",
+      "phoneticDe": "bis SHPEH-ter",
+      "es": "hasta luego",
+      "phoneticEs": "AHS-tah LWEH-goh",
+      "fr": "à plus tard",
+      "frPhonetic": "ah-ploo-TAR",
+      "el": "τα λέμε",
+      "elPhonetic": "ta-LE-me",
+      "hi": "फिर मिलेंगे",
+      "hiPhonetic": "PHIR mi-LEN-ge",
+      "ar": "إِلَى اللِّقَاء",
+      "arPhonetic": "i-la al-li-QAA",
+      "ko": "나중에 봐요",
+      "koPhonetic": "na-jung-e BWA-yo",
+      "zh": "回头见",
+      "zhPhonetic": "huítóu jiàn",
+      "ja": "また後で",
+      "jaPhonetic": "mata atode",
+      "examples": {
+        "uk": [
+          "До зустрічі, друзі!",
+          "До зустрічі наступного тижня."
+        ],
+        "en": [
+          "See you later, friends!",
+          "See you later next week."
+        ]
+      }
+    },
+    {
+      "uk": "приємно познайомитися",
+      "ru": "приятно познакомиться",
+      "de": "freut mich",
+      "en": "nice to meet you",
+      "phoneticUk": "pryyemno poznayomytysya",
+      "phoneticRu": "priyatno poznakomit'sya",
+      "phoneticDe": "FROYT mikh",
+      "es": "encantado",
+      "phoneticEs": "en-kan-TAH-doh",
+      "fr": "enchanté",
+      "frPhonetic": "ahn-shahn-TEH",
+      "el": "χαίρω πολύ",
+      "elPhonetic": "KHEH-ro po-LI",
+      "hi": "आपसे मिलकर खुशी हुई",
+      "hiPhonetic": "AAP-se mil-kar KHU-shee HU-ee",
+      "ar": "تَشَرَّفْنَا",
+      "arPhonetic": "ta-shar-RAF-na",
+      "ko": "만나서 반갑습니다",
+      "koPhonetic": "man-na-seo ban-GAP-seum-ni-da",
+      "zh": "很高兴认识你",
+      "zhPhonetic": "hěn gāoxìng rènshi nǐ",
+      "ja": "はじめまして",
+      "jaPhonetic": "hajimemashite",
+      "examples": {
+        "uk": [
+          "Приємно познайомитися, мене звати Олег.",
+          "Дуже приємно з вами познайомитися."
+        ],
+        "en": [
+          "Nice to meet you, my name is Oleg.",
+          "Very nice to meet you."
+        ]
+      }
+    },
+    {
+      "uk": "гарного дня",
+      "ru": "хорошего дня",
+      "de": "schönen Tag noch",
+      "en": "have a good day",
+      "phoneticUk": "harnoho dnya",
+      "phoneticRu": "khoroshevo dnya",
+      "phoneticDe": "SHUH-nen TAHK nokh",
+      "es": "que tenga un buen día",
+      "phoneticEs": "keh TEN-gah oon bwen DEE-ah",
+      "fr": "bonne journée",
+      "frPhonetic": "bon-zhoor-NEH",
+      "el": "καλή σας μέρα",
+      "elPhonetic": "ka-LI sas ME-ra",
+      "hi": "आपका दिन शुभ हो",
+      "hiPhonetic": "AAP-kaa din SHUBH ho",
+      "ar": "يَوْم سَعِيد",
+      "arPhonetic": "YAWM sa-EED",
+      "ko": "좋은 하루 보내세요",
+      "koPhonetic": "JO-eun HA-ru bo-NE-se-yo",
+      "zh": "祝你有美好的一天",
+      "zhPhonetic": "zhù nǐ yǒu měihǎo de yītiān",
+      "ja": "良い一日を",
+      "jaPhonetic": "yoi ichinichi wo",
+      "examples": {
+        "uk": [
+          "До побачення, гарного дня!",
+          "Гарного дня, до зустрічі!"
+        ],
+        "en": [
+          "Goodbye, have a good day!",
+          "Have a good day, see you later!"
+        ]
+      }
+    }
+  ]
+}

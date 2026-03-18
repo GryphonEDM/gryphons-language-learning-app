@@ -23,6 +23,16 @@ import caseSystemLesson from './case-system.json';
 import comparisonLesson from './comparison.json';
 import weakVerbsLesson from './weak-verbs.json';
 import emphasisParticlesLesson from './emphasis-particles.json';
+import tanwinNunationLesson from './tanwin-nunation.json';
+import hamzaRulesLesson from './hamza-rules.json';
+import hollowVerbsLesson from './hollow-verbs.json';
+import doubledVerbsLesson from './doubled-verbs.json';
+import verbFormsAdvancedLesson from './verb-forms-advanced.json';
+import participlesLesson from './participles.json';
+import masdarLesson from './masdar.json';
+import kanaSistersLesson from './kana-sisters.json';
+import subjunctiveJussiveLesson from './subjunctive-jussive.json';
+import wordOrderLesson from './word-order.json';
 
 export const GRAMMAR_LESSONS_AR = [
   alphabetLesson,
@@ -50,4 +60,14 @@ export const GRAMMAR_LESSONS_AR = [
   comparisonLesson,
   weakVerbsLesson,
   emphasisParticlesLesson,
+  tanwinNunationLesson,
+  hamzaRulesLesson,
+  hollowVerbsLesson,
+  doubledVerbsLesson,
+  verbFormsAdvancedLesson,
+  participlesLesson,
+  masdarLesson,
+  kanaSistersLesson,
+  subjunctiveJussiveLesson,
+  wordOrderLesson,
 ];

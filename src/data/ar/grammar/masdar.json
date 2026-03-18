@@ -1,0 +1,223 @@
+{
+  "lessonId": "masdar",
+  "nameEn": "Masdar (Verbal Noun)",
+  "nameAr": "المَصْدَر",
+  "icon": "📝",
+  "tier": "B1",
+  "prerequisites": ["verb-forms"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "form-i-masdar",
+      "title": "Form I Masdar — Varied Patterns",
+      "explanation": "The masdar (المَصْدَر) is the verbal noun — it names the action itself. Unlike English gerunds (-ing) or infinitives (to do), Arabic masdars follow specific noun patterns. Form I masdars are irregular — there is no single predictable pattern, so they must be memorized with each verb. However, some common patterns recur frequently. فَعْل (fa'l): ضَرَبَ → ضَرْب (hitting), فَتَحَ → فَتْح (opening). فُعُول (fu'uul): جَلَسَ → جُلُوس (sitting), دَخَلَ → دُخُول (entering). فِعَالَة (fi'aala): كَتَبَ → كِتَابَة (writing), قَرَأَ → قِرَاءَة (reading). فَعَل (fa'al): عَمِلَ → عَمَل (work), سَفَرَ → سَفَر (travel). فُعْلَة (fu'la): فَرِحَ → فُرْحَة (joy). While these patterns seem unpredictable, exposure and practice will help you recognize the most common ones.",
+      "tip": "Form I masdars must be memorized individually. When learning a new Form I verb, always learn its masdar alongside it. Dictionaries list the masdar right after the verb entry.",
+      "examples": [
+        {
+          "ar": "كِتَابَة",
+          "en": "writing (masdar of كَتَبَ)",
+          "highlight": "كِتَابَة"
+        },
+        {
+          "ar": "دُخُول",
+          "en": "entering (masdar of دَخَلَ)",
+          "highlight": "دُخُول"
+        },
+        {
+          "ar": "فَتْح",
+          "en": "opening (masdar of فَتَحَ)",
+          "highlight": "فَتْح"
+        },
+        {
+          "ar": "عَمَل",
+          "en": "work (masdar of عَمِلَ)",
+          "highlight": "عَمَل"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is the masdar (verbal noun) of كَتَبَ (to write)?",
+          "options": [
+            "كَاتِب",
+            "مَكْتُوب",
+            "كِتَابَة"
+          ],
+          "correctIndex": 2,
+          "explanation": "كِتَابَة (writing) is the masdar of كَتَبَ. It follows the فِعَالَة pattern. كَاتِب is the active participle (writer) and مَكْتُوب is the passive participle (written)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why are Form I masdars considered difficult for learners?",
+          "options": [
+            "They are always the same pattern",
+            "They do not follow a single predictable pattern",
+            "They cannot be used in sentences"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form I masdars are irregular — different verbs use different masdar patterns (فَعْل, فُعُول, فِعَالَة, etc.). Unlike derived forms (II–X), there is no one formula to predict the Form I masdar, so each must be memorized."
+        }
+      ]
+    },
+    {
+      "sectionId": "derived-form-masdars",
+      "title": "Masdars of Derived Forms (II–X)",
+      "explanation": "Unlike Form I, the masdars of Forms II through X are highly regular and predictable. Form II: تَفْعِيل (taf'iil) — عَلَّمَ → تَعْلِيم (teaching), دَرَّسَ → تَدْرِيس (instruction). Form III: مُفَاعَلَة (mufaa'ala) or فِعَال (fi'aal) — سَاعَدَ → مُسَاعَدَة (helping), قَاتَلَ → قِتَال (fighting). Form IV: إِفْعَال (if'aal) — أَرْسَلَ → إِرْسَال (sending), أَسْلَمَ → إِسْلَام (submission). Form V: تَفَعُّل (tafa''ul) — تَعَلَّمَ → تَعَلُّم (learning). Form VI: تَفَاعُل (tafaa'ul) — تَعَاوَنَ → تَعَاوُن (cooperation). Form VII: اِنْفِعَال (infi'aal) — اِنْكَسَرَ → اِنْكِسَار (breaking). Form VIII: اِفْتِعَال (ifti'aal) — اِجْتَمَعَ → اِجْتِمَاع (meeting). Form X: اِسْتِفْعَال (istif'aal) — اِسْتَخْدَمَ → اِسْتِخْدَام (usage).",
+      "tip": "Memorize the masdar pattern for each form number. Forms II–X are beautifully regular: once you know the form number, you can predict the masdar with near-100% accuracy.",
+      "examples": [
+        {
+          "ar": "تَعْلِيم",
+          "en": "teaching — Form II masdar (from عَلَّمَ)",
+          "highlight": "تَعْلِيم"
+        },
+        {
+          "ar": "إِرْسَال",
+          "en": "sending — Form IV masdar (from أَرْسَلَ)",
+          "highlight": "إِرْسَال"
+        },
+        {
+          "ar": "اِجْتِمَاع",
+          "en": "meeting — Form VIII masdar (from اِجْتَمَعَ)",
+          "highlight": "اِجْتِمَاع"
+        },
+        {
+          "ar": "اِسْتِخْدَام",
+          "en": "usage — Form X masdar (from اِسْتَخْدَمَ)",
+          "highlight": "اِسْتِخْدَام"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "The Form II masdar of نَظَّمَ (to organize) following the تَفْعِيل pattern is: ___",
+          "explanation": "Form II masdars follow the pattern تَفْعِيل. From the root ن-ظ-م: نَظَّمَ → تَنْظِيم (organization / organizing).",
+          "acceptedAnswers": [
+            "تَنْظِيم"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the masdar of the Form IV verb أَعْلَنَ (to announce)?",
+          "options": [
+            "تَعْلِين",
+            "إِعْلَان",
+            "عِلَان"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form IV masdars follow the إِفْعَال pattern. From أَعْلَنَ we get إِعْلَان (announcement). This is a very common word in Modern Standard Arabic."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The Form X masdar of اِسْتَعْمَلَ (to use) following the اِسْتِفْعَال pattern is: ___",
+          "explanation": "Form X masdars follow the pattern اِسْتِفْعَال. From the root ع-م-ل: اِسْتَعْمَلَ → اِسْتِعْمَال (usage).",
+          "acceptedAnswers": [
+            "اِسْتِعْمَال"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "masdar-in-sentences",
+      "title": "Using the Masdar in Sentences",
+      "explanation": "The masdar functions as a noun in Arabic sentences and can appear in several grammatical roles. As a subject: القِرَاءَةُ مُفِيدَةٌ (Reading is beneficial). As an object: أُحِبُّ السِّبَاحَةَ (I love swimming). After prepositions: قَبْلَ الذَّهَابِ (before going), بَعْدَ الأَكْلِ (after eating). In an idafa (possessive) construction, the masdar can take an object: قِرَاءَةُ الكِتَابِ مُمْتِعَةٌ (Reading the book is enjoyable) — here the masdar قِرَاءَة is in construct state with الكِتَاب. The masdar can also follow certain verbs as a cognate accusative (مَفْعُول مُطْلَق) to emphasize the action: ضَرَبْتُهُ ضَرْبًا شَدِيدًا (I struck him a severe striking). Understanding how to use masdars unlocks a more sophisticated and natural Arabic style.",
+      "tip": "A masdar + a noun in genitive (idafa) often translates to an English gerund + object: كِتَابَةُ الرِّسَالَةِ = writing the letter. The masdar behaves exactly like a noun, taking case endings and articles.",
+      "examples": [
+        {
+          "ar": "القِرَاءَةُ مُفِيدَةٌ",
+          "en": "Reading is beneficial.",
+          "highlight": "القِرَاءَةُ"
+        },
+        {
+          "ar": "أُحِبُّ السِّبَاحَةَ",
+          "en": "I love swimming.",
+          "highlight": "السِّبَاحَةَ"
+        },
+        {
+          "ar": "قَبْلَ الذَّهَابِ",
+          "en": "before going",
+          "highlight": "الذَّهَابِ"
+        },
+        {
+          "ar": "كِتَابَةُ الرِّسَالَةِ سَهْلَةٌ",
+          "en": "Writing the letter is easy.",
+          "highlight": "كِتَابَةُ الرِّسَالَةِ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In القِرَاءَةُ مُفِيدَةٌ (Reading is beneficial), what grammatical role does القِرَاءَة play?",
+          "options": [
+            "Object (مَفْعُول بِهِ)",
+            "Subject (مُبْتَدَأ)",
+            "Predicate (خَبَر)"
+          ],
+          "correctIndex": 1,
+          "explanation": "القِرَاءَةُ is the subject (مُبْتَدَأ) of this nominal sentence. The masdar acts as a noun meaning 'reading' or 'the act of reading.' مُفِيدَةٌ is the predicate (خَبَر)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "To say 'before eating' using the masdar of أَكَلَ: قَبْلَ ___",
+          "explanation": "The masdar of أَكَلَ (to eat) is أَكْل. After the preposition قَبْلَ, it takes the genitive case with the definite article: الأَكْلِ.",
+          "acceptedAnswers": [
+            "الأَكْلِ",
+            "الأكلِ",
+            "الأَكْل"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "masdar-vs-participle",
+      "title": "Masdar vs. Active Participle — When to Use Which",
+      "explanation": "Students often confuse the masdar with the active participle, since both relate to the verb. The key distinction: the masdar names the action itself (an abstract noun), while the active participle names the doer of the action (or describes an ongoing state). Compare: كِتَابَة (writing, the act) vs. كَاتِب (writer, the person). تَعْلِيم (teaching, the process) vs. مُعَلِّم (teacher, the person). In sentences: الكِتَابَةُ فَنٌّ (Writing is an art) uses the masdar because we are talking about the activity. الكَاتِبُ مَاهِرٌ (The writer is skilled) uses the participle because we are talking about the person. Sometimes the distinction affects meaning dramatically: عَمَل (work, the action/product) vs. عَامِل (worker, the person who works).",
+      "tip": "Ask yourself: am I talking about the action/process, or about the person/thing doing it? Action → masdar. Person/thing → participle.",
+      "examples": [
+        {
+          "ar": "التَّعْلِيمُ مُهِمٌّ — المُعَلِّمُ مُهِمٌّ",
+          "en": "Education is important. — The teacher is important.",
+          "highlight": "التَّعْلِيمُ"
+        },
+        {
+          "ar": "السِّيَاقَةُ مُمْتِعَةٌ",
+          "en": "Driving is enjoyable. (masdar = the activity)",
+          "highlight": "السِّيَاقَةُ"
+        },
+        {
+          "ar": "السَّائِقُ مَاهِرٌ",
+          "en": "The driver is skilled. (participle = the person)",
+          "highlight": "السَّائِقُ"
+        },
+        {
+          "ar": "أُحِبُّ القِرَاءَةَ وَأَحْتَرِمُ القَارِئَ",
+          "en": "I love reading and I respect the reader.",
+          "highlight": "القِرَاءَةَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word completes the sentence: ___ مُهِمٌّ فِي حَيَاتِنَا (___  is important in our lives) — if we mean 'education' (the process)?",
+          "options": [
+            "المُعَلِّمُ (the teacher)",
+            "التَّعْلِيمُ (education)",
+            "المُتَعَلِّمُ (the learner)"
+          ],
+          "correctIndex": 1,
+          "explanation": "التَّعْلِيمُ is the masdar (verbal noun) meaning 'education' or 'the process of teaching.' We use the masdar because we are referring to the abstract concept, not a person. المُعَلِّم and المُتَعَلِّم are participles referring to people."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between سِبَاحَة and سَابِح?",
+          "options": [
+            "They mean the same thing",
+            "سِبَاحَة is the masdar (swimming, the activity); سَابِح is the active participle (swimmer, the person)",
+            "سِبَاحَة is a verb; سَابِح is a noun"
+          ],
+          "correctIndex": 1,
+          "explanation": "سِبَاحَة is the masdar (verbal noun) meaning 'swimming' as an activity. سَابِح is the active participle meaning 'swimmer' — the person who swims. The masdar names the action; the participle names the doer."
+        }
+      ]
+    }
+  ]
+}

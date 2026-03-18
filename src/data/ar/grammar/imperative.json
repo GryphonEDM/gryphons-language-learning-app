@@ -73,8 +73,10 @@
         {
           "type": "fill-blank",
           "prompt": "تَسْمَعُ (you listen) → ___ (Listen!)",
-          "answer": "اِسْمَعْ",
-          "explanation": "Remove تـ to get سْمَعْ. The first letter has sukun, so add hamzat al-wasl with kasra (the internal vowel is fatḥa, not ḍamma): اِسْمَعْ."
+          "explanation": "Remove تـ to get سْمَعْ. The first letter has sukun, so add hamzat al-wasl with kasra (the internal vowel is fatḥa, not ḍamma): اِسْمَعْ.",
+          "acceptedAnswers": [
+            "اِسْمَعْ"
+          ]
         }
       ]
     },
@@ -142,8 +144,10 @@
         {
           "type": "fill-blank",
           "prompt": "To say 'Eat!' to a group of men, the form is: ___ (base: كُلْ)",
-          "answer": "كُلُوا",
-          "explanation": "For the masculine plural (أنتم), add ـُوا to the base: كُلْ → كُلُوا."
+          "explanation": "For the masculine plural (أنتم), add ـُوا to the base: كُلْ → كُلُوا.",
+          "acceptedAnswers": [
+            "كُلُوا"
+          ]
         }
       ]
     },
@@ -200,8 +204,10 @@
         {
           "type": "fill-blank",
           "prompt": "Don't read! (to masculine plural) → لا ___",
-          "answer": "تَقْرَأُوا",
-          "explanation": "Use لا + present tense for أنتم: لا تَقْرَأُوا. The prefix تـ remains because this is a present-tense construction, not a true imperative."
+          "explanation": "Use لا + present tense for أنتم: لا تَقْرَأُوا. The prefix تـ remains because this is a present-tense construction, not a true imperative.",
+          "acceptedAnswers": [
+            "تَقْرَأُوا"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -279,8 +285,10 @@
         {
           "type": "fill-blank",
           "prompt": "'Read the book!' in Arabic: ___ الكتابَ!",
-          "answer": "اِقْرَأْ",
-          "explanation": "The imperative of يَقْرَأُ is اِقْرَأْ. Remove the prefix تـ from تَقْرَأُ to get قْرَأْ, then add hamzat al-wasl with kasra: اِقْرَأْ."
+          "explanation": "The imperative of يَقْرَأُ is اِقْرَأْ. Remove the prefix تـ from تَقْرَأُ to get قْرَأْ, then add hamzat al-wasl with kasra: اِقْرَأْ.",
+          "acceptedAnswers": [
+            "اِقْرَأْ"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -296,8 +304,10 @@
         {
           "type": "fill-blank",
           "prompt": "'Write your name!' (to a man): ___ اسْمَك!",
-          "answer": "اُكْتُبْ",
-          "explanation": "The imperative of يَكْتُبُ is اُكْتُبْ. The hamza takes ḍamma because the internal vowel is ḍamma (كْتُبْ)."
+          "explanation": "The imperative of يَكْتُبُ is اُكْتُبْ. The hamza takes ḍamma because the internal vowel is ḍamma (كْتُبْ).",
+          "acceptedAnswers": [
+            "اُكْتُبْ"
+          ]
         }
       ]
     }

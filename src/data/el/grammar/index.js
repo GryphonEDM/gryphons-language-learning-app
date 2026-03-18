@@ -20,6 +20,7 @@ import particlesLesson from './particles.json';
 import passiveVoiceLesson from './passive-voice.json';
 import advancedVerbsLesson from './advanced-verbs.json';
 import reportedSpeechLesson from './reported-speech.json';
+import perfectTensesLesson from './perfect-tenses.json';
 
 export const GRAMMAR_LESSONS_EL = [
   alphabetLesson,
@@ -43,5 +44,6 @@ export const GRAMMAR_LESSONS_EL = [
   subjunctiveLesson,
   particlesLesson,
   reportedSpeechLesson,
+  perfectTensesLesson,
   advancedVerbsLesson,
 ];

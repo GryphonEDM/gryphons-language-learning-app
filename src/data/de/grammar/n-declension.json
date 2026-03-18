@@ -1,0 +1,222 @@
+{
+  "lessonId": "n-declension",
+  "nameEn": "N-Declension (Weak Nouns)",
+  "nameDe": "Die N-Deklination",
+  "icon": "🔤",
+  "tier": "B1",
+  "prerequisites": [
+    "cases",
+    "articles"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "basic-pattern",
+      "title": "The N-Declension Pattern",
+      "explanation": "Certain masculine nouns in German add -(e)n in every case except the nominative singular. These are called 'weak nouns' (schwache Nomen). In the nominative singular they look normal, but in the accusative, dative, and genitive singular — and in all plural forms — they take the ending -(e)n. Compare: der Student (nominative) → den Studenten (accusative) → dem Studenten (dative) → des Studenten (genitive). This is different from regular masculine nouns like der Tisch, which only change the article: den Tisch, dem Tisch, des Tisches.",
+      "tip": "If the noun ends in -e, just add -n (der Junge → den Jungen). Otherwise add -en (der Student → den Studenten).",
+      "examples": [
+        {
+          "de": "Der Student lernt Deutsch.",
+          "en": "The student is learning German.",
+          "highlight": "Der Student"
+        },
+        {
+          "de": "Ich sehe den Studenten.",
+          "en": "I see the student.",
+          "highlight": "den Studenten"
+        },
+        {
+          "de": "Ich helfe dem Studenten.",
+          "en": "I help the student.",
+          "highlight": "dem Studenten"
+        },
+        {
+          "de": "Das Buch des Studenten ist neu.",
+          "en": "The student's book is new.",
+          "highlight": "des Studenten"
+        },
+        {
+          "de": "Der Junge spielt Fußball.",
+          "en": "The boy is playing football.",
+          "highlight": "Der Junge"
+        },
+        {
+          "de": "Ich kenne den Jungen.",
+          "en": "I know the boy.",
+          "highlight": "den Jungen"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'I see the student.' → Ich sehe ___.",
+          "options": [
+            "den Student",
+            "den Studenten",
+            "dem Studenten"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Student' is an n-declension noun. In the accusative it becomes 'den Studenten'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich helfe dem ___. (I help the patient.) — use the dative of 'Patient'",
+          "acceptedAnswers": [
+            "Patienten"
+          ],
+          "hint": "'Patient' adds -en in all cases except nominative singular",
+          "explanation": "N-declension: der Patient → dem Patienten (dative)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Kennst du den ___? (Do you know the boy?) — use the accusative of 'Junge'",
+          "acceptedAnswers": [
+            "Jungen"
+          ],
+          "hint": "Nouns ending in -e just add -n",
+          "explanation": "N-declension: der Junge → den Jungen. Nouns ending in -e add -n."
+        }
+      ]
+    },
+    {
+      "sectionId": "which-nouns",
+      "title": "Which Nouns Follow the N-Declension?",
+      "explanation": "N-declension nouns are almost always masculine and typically refer to living beings (people or animals). Common categories: 1) Masculine nouns ending in -e: der Junge (boy), der Kunde (customer), der Kollege (colleague), der Löwe (lion), der Affe (monkey). 2) Masculine nouns ending in -ent: der Student, der Patient, der Präsident. 3) Ending in -ant: der Elefant, der Demonstrant. 4) Ending in -ist: der Polizist, der Tourist, der Journalist. 5) Ending in -at: der Soldat, der Demokrat. 6) Ending in -oge: der Biologe, der Psychologe. 7) Other common ones: der Herr (gentleman/Mr.), der Mensch (person), der Nachbar (neighbor), der Bauer (farmer).",
+      "tip": "Most n-declension nouns are of foreign origin (Latin/Greek) and refer to people. If a masculine noun ends in -e, -ent, -ant, -ist, -at, or -oge, it almost certainly follows the n-declension.",
+      "examples": [
+        {
+          "de": "Der Polizist hilft dem Touristen.",
+          "en": "The policeman helps the tourist.",
+          "highlight": "dem Touristen"
+        },
+        {
+          "de": "Ich frage den Kollegen.",
+          "en": "I ask the colleague.",
+          "highlight": "den Kollegen"
+        },
+        {
+          "de": "Der Löwe frisst den Affen.",
+          "en": "The lion eats the monkey.",
+          "highlight": "den Affen"
+        },
+        {
+          "de": "Kennen Sie den Herrn?",
+          "en": "Do you know the gentleman?",
+          "highlight": "den Herrn"
+        },
+        {
+          "de": "Das ist die Meinung des Menschen.",
+          "en": "That is the person's opinion.",
+          "highlight": "des Menschen"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which noun does NOT follow the n-declension?",
+          "options": [
+            "der Tourist",
+            "der Tisch",
+            "der Kollege"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Tisch' is a regular masculine noun (des Tisches, not des Tischen). 'Tourist' and 'Kollege' are n-declension nouns."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each nominative form with its accusative form:",
+          "pairs": [
+            {
+              "left": "der Herr",
+              "right": "den Herrn"
+            },
+            {
+              "left": "der Kunde",
+              "right": "den Kunden"
+            },
+            {
+              "left": "der Präsident",
+              "right": "den Präsidenten"
+            },
+            {
+              "left": "der Soldat",
+              "right": "den Soldaten"
+            }
+          ],
+          "explanation": "All these are n-declension nouns. 'Herr' adds only -n; the others add -en or -n depending on whether they already end in -e."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich habe mit dem ___ gesprochen. (I spoke with the journalist.) — use the dative of 'Journalist'",
+          "acceptedAnswers": [
+            "Journalisten"
+          ],
+          "hint": "Nouns ending in -ist add -en in non-nominative cases",
+          "explanation": "N-declension: der Journalist → dem Journalisten (dative)."
+        }
+      ]
+    },
+    {
+      "sectionId": "mixed-declension",
+      "title": "Mixed Declension and Exceptions",
+      "explanation": "A small group of n-declension nouns also add -s in the genitive singular. These are called 'mixed declension' nouns. The most common are: der Name (name) → des Namens, der Gedanke (thought) → des Gedankens, der Glaube (belief) → des Glaubens, der Wille (will) → des Willens, der Friede (peace) → des Friedens, der Buchstabe (letter of alphabet) → des Buchstabens, das Herz (heart) → des Herzens. Note that 'das Herz' is the only neuter n-declension noun! In accusative and dative these use -n like normal n-declension: den Namen, dem Namen.",
+      "tip": "Mixed declension = n-declension + genitive -s. Remember: des Namens, des Herzens. These are exceptions you need to memorize.",
+      "examples": [
+        {
+          "de": "Wie ist der Name des Patienten?",
+          "en": "What is the patient's name?",
+          "highlight": "des Patienten"
+        },
+        {
+          "de": "Ich kenne den Namen des Mannes nicht.",
+          "en": "I don't know the man's name.",
+          "highlight": "den Namen"
+        },
+        {
+          "de": "Der Gedanke des Philosophen war neu.",
+          "en": "The philosopher's thought was new.",
+          "highlight": "des Philosophen"
+        },
+        {
+          "de": "Im Grunde seines Herzens weiß er es.",
+          "en": "In the bottom of his heart, he knows it.",
+          "highlight": "seines Herzens"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the genitive of 'der Name'?",
+          "options": [
+            "des Namen",
+            "des Namens",
+            "des Names"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Name' is a mixed declension noun. It adds -n in accusative/dative (den Namen, dem Namen) but -ns in the genitive: des Namens."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das ist die Bedeutung des ___. (That is the meaning of the thought.) — genitive of 'Gedanke'",
+          "acceptedAnswers": [
+            "Gedankens"
+          ],
+          "hint": "Mixed declension nouns add -ns in the genitive",
+          "explanation": "Mixed declension: der Gedanke → des Gedankens (genitive with -ns)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the only neuter noun that follows a form of n-declension?",
+          "options": [
+            "das Auge",
+            "das Herz",
+            "das Ende"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Das Herz' is the only neuter n-declension noun: das Herz, das Herz (acc.), dem Herzen (dat.), des Herzens (gen.)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "lessonId": "hamza-rules",
+  "nameEn": "Hamza Rules (أحكام الهمزة)",
+  "nameAr": "أَحْكَامُ الْهَمْزَةِ",
+  "icon": "✏️",
+  "tier": "A2",
+  "prerequisites": [
+    "alphabet-pronunciation",
+    "tanwin-nunation"
+  ],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "hamza-wasl-vs-qat",
+      "title": "Hamzat al-Waṣl vs. Hamzat al-Qaṭ'",
+      "explanation": "Arabic has two types of hamza at the beginning of words. (1) Hamzat al-qaṭ' (همزة القطع, ءَ/أَ/إِ): a 'real' hamza that is ALWAYS pronounced, whether the word comes at the beginning of speech or in the middle. It is written with a hamza sign (ء) on or under the alif. Examples: أَكَلَ (he ate), إِسْلَام (Islam), أُمّ (mother). (2) Hamzat al-waṣl (همزة الوصل, اِ): a 'connecting' hamza that is pronounced ONLY at the start of speech. When the word comes after another word in connected speech, the hamzat al-waṣl is silent and the preceding word links directly to the next consonant. It is written as a plain alif (ا) without a hamza sign. Examples: اِسْتَمَعَ (he listened — pronounced 'istama'a' at start, but 'stama'a' after a vowel).",
+      "tip": "Test: say the word after وَ (and). If the initial vowel disappears in connected speech, it is hamzat al-waṣl. If it stays, it is hamzat al-qaṭ'. Example: وَأَكَلَ (wa-akala, hamza stays = qaṭ') vs. وَاسْتَمَعَ (wa-stama'a, hamza drops = waṣl).",
+      "examples": [
+        {
+          "ar": "أَكَلَ الْوَلَدُ",
+          "en": "The boy ate (أَ = hamzat al-qaṭ', always pronounced)",
+          "highlight": "أَكَلَ"
+        },
+        {
+          "ar": "اِسْتَمَعَ الطَّالِبُ",
+          "en": "The student listened (اِ = hamzat al-waṣl, drops in connected speech)",
+          "highlight": "اِسْتَمَعَ"
+        },
+        {
+          "ar": "إِنَّ اللَّهَ كَرِيمٌ",
+          "en": "Indeed, God is generous (إِ = hamzat al-qaṭ')",
+          "highlight": "إِنَّ"
+        },
+        {
+          "ar": "الْكِتَابُ",
+          "en": "the book (الـ begins with hamzat al-waṣl)",
+          "highlight": "الْ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between hamzat al-waṣl and hamzat al-qaṭ'?",
+          "options": [
+            "Hamzat al-waṣl is always pronounced; hamzat al-qaṭ' is sometimes silent",
+            "Hamzat al-qaṭ' is always pronounced; hamzat al-waṣl is silent in connected speech",
+            "They are the same thing with different names"
+          ],
+          "correctIndex": 1,
+          "explanation": "Hamzat al-qaṭ' (cutting hamza) is always pronounced. Hamzat al-waṣl (connecting hamza) is only pronounced at the start of speech and drops when preceded by another word."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these words starts with hamzat al-waṣl?",
+          "options": [
+            "أَخَذَ (he took)",
+            "اِنْطَلَقَ (he set off)",
+            "أُمٌّ (mother)"
+          ],
+          "correctIndex": 1,
+          "explanation": "اِنْطَلَقَ (Form VII verb) starts with hamzat al-waṣl. Verb Forms VII, VIII, IX, X all begin with hamzat al-waṣl. أَخَذَ and أُمٌّ have hamzat al-qaṭ'."
+        }
+      ]
+    },
+    {
+      "sectionId": "where-wasl-and-qat",
+      "title": "Where Each Hamza Type Appears",
+      "explanation": "Hamzat al-waṣl appears in specific, predictable places: (1) The definite article الـ. (2) The imperative of Form I verbs: اُكْتُبْ, اِجْلِسْ. (3) The past tense, imperative, and masdar of Forms VII (اِنْفَعَلَ), VIII (اِفْتَعَلَ), IX (اِفْعَلَّ), and X (اِسْتَفْعَلَ). (4) A small number of nouns: اِبْنٌ (son), اِبْنَةٌ (daughter), اِسْمٌ (name), اِمْرَأَةٌ (woman), اِمْرُؤٌ (man), اِثْنَانِ (two m.), اِثْنَتَانِ (two f.). Everything else uses hamzat al-qaṭ': all Form I past tense verbs starting with hamza (أَكَلَ, أَخَذَ), all Form IV verbs (أَفْعَلَ), particles (إِنَّ, أَنَّ, إِلَى, إِذَا), and most nouns (أَبٌ, أُمٌّ, أُسْتَاذٌ).",
+      "tip": "If you are unsure, try the وَ test. Say the word after وَ — if the initial vowel disappears, it is waṣl. In writing: hamzat al-qaṭ' has ء on or under the alif (أ/إ), while hamzat al-waṣl is a bare alif (ا) — sometimes marked with a small ص above it (ٱ) in Quranic text.",
+      "examples": [
+        {
+          "ar": "اِبْنُ أَحْمَدَ",
+          "en": "Ahmad's son (اِبْن has hamzat al-waṣl)",
+          "highlight": "اِبْنُ"
+        },
+        {
+          "ar": "أَرْسَلَ رِسَالَةً",
+          "en": "He sent a message (أَرْسَلَ = Form IV, hamzat al-qaṭ')",
+          "highlight": "أَرْسَلَ"
+        },
+        {
+          "ar": "اِسْتَخْدَمَ الْحَاسُوبَ",
+          "en": "He used the computer (اِسْتَخْدَمَ = Form X, hamzat al-waṣl)",
+          "highlight": "اِسْتَخْدَمَ"
+        },
+        {
+          "ar": "إِلَى الْمَدْرَسَةِ",
+          "en": "to the school (إِلَى = particle, hamzat al-qaṭ')",
+          "highlight": "إِلَى"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Form IV verbs (أَفْعَلَ) start with which type of hamza?",
+          "options": [
+            "Hamzat al-waṣl",
+            "Hamzat al-qaṭ'",
+            "No hamza"
+          ],
+          "correctIndex": 1,
+          "explanation": "Form IV verbs (أَفْعَلَ, e.g., أَرْسَلَ) always start with hamzat al-qaṭ'. This distinguishes them from Forms VII-X which use hamzat al-waṣl."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The word for 'name' in Arabic is ___ (with hamzat al-waṣl)",
+          "explanation": "اِسْمٌ is one of the small group of nouns that begin with hamzat al-waṣl. It is connected in speech: مَا اسْمُكَ (what is your name?) — the hamza drops.",
+          "acceptedAnswers": [
+            "اِسْمٌ",
+            "اسْمٌ",
+            "اسم"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "middle-hamza",
+      "title": "Hamza in the Middle of a Word (الهمزة المتوسّطة)",
+      "explanation": "When hamza appears in the middle of a word, its 'seat' (the letter it sits on) depends on the strongest vowel surrounding it. The vowel strength hierarchy is: kasra (ـِـ) is the strongest, then ḍamma (ـُـ), then fatḥa (ـَـ), and sukun (ـْـ) is the weakest. Compare the vowel ON the hamza and the vowel BEFORE it — the stronger vowel determines the seat. If kasra wins → hamza sits on yā' (ئـ). If ḍamma wins → hamza sits on wāw (ؤ). If fatḥa wins → hamza sits on alif (أ). Examples: سُئِلَ (su'ila, 'he was asked') — kasra is strongest → seat is yā'. رُؤُوسٌ (ru'ūs, 'heads') — ḍamma is strongest → seat is wāw. سَأَلَ (sa'ala, 'he asked') — fatḥa is strongest → seat is alif.",
+      "tip": "Remember the hierarchy: kasra > ḍamma > fatḥa > sukun. The strongest vowel always wins. Think of kasra as ي (yā'), ḍamma as و (wāw), and fatḥa as ا (alif) — each vowel 'wants' its corresponding letter as the seat.",
+      "examples": [
+        {
+          "ar": "سَأَلَ",
+          "en": "he asked (fatḥa + fatḥa → seat on alif: أ)",
+          "highlight": "أ"
+        },
+        {
+          "ar": "سُئِلَ",
+          "en": "he was asked (ḍamma + kasra → kasra wins, seat on yā': ئ)",
+          "highlight": "ئِ"
+        },
+        {
+          "ar": "رُؤُوسٌ",
+          "en": "heads (ḍamma + ḍamma → seat on wāw: ؤ)",
+          "highlight": "ؤُ"
+        },
+        {
+          "ar": "مَسْؤُولٌ",
+          "en": "responsible (sukun + ḍamma → ḍamma wins, seat on wāw: ؤ)",
+          "highlight": "ؤُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the vowel strength hierarchy for hamza seating, which vowel is strongest?",
+          "options": [
+            "Fatḥa (ـَـ)",
+            "Ḍamma (ـُـ)",
+            "Kasra (ـِـ)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Kasra is the strongest vowel: kasra > ḍamma > fatḥa > sukun. When kasra is involved, hamza sits on yā' (ئـ)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is hamza written on yā' in سُئِلَ?",
+          "options": [
+            "Because the vowel before hamza is ḍamma",
+            "Because the vowel on hamza is kasra, and kasra is the strongest",
+            "Because the word is in the passive voice"
+          ],
+          "correctIndex": 1,
+          "explanation": "We compare the vowel before hamza (ḍamma on سُ) with the vowel on hamza (kasra). Kasra is stronger than ḍamma, so hamza sits on yā': سُئِلَ."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The word 'question' (su'āl) is written: ___",
+          "explanation": "In سُؤَالٌ, we compare ḍamma (before hamza) and fatḥa (on hamza). Ḍamma is stronger, so hamza sits on wāw: سُؤَالٌ.",
+          "acceptedAnswers": [
+            "سُؤَالٌ",
+            "سؤال"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "final-hamza",
+      "title": "Hamza at the End of a Word (الهمزة المتطرّفة)",
+      "explanation": "When hamza is the last letter of a word, its seat depends ONLY on the vowel of the letter before it. If the letter before has kasra → hamza on yā' (ئ): شَاطِئٌ (shāṭi', 'beach'). If the letter before has ḍamma → hamza on wāw (ؤ): تَبَاطُؤٌ (tabāṭu', 'slowness'). If the letter before has fatḥa → hamza on alif (أ): قَرَأَ (qara'a, 'he read'). If the letter before has sukun → hamza on the line (ء): شَيْءٌ (shay', 'thing'), جُزْءٌ (juz', 'part'). When tanwīn fatḥatan is added to a final hamza, the spelling may change — for example, شَيْئًا (a thing, accusative) gets an alif added.",
+      "tip": "Final hamza is simpler than middle hamza — you only look at ONE vowel (the letter before). Sukun = hamza sits alone on the line (ء).",
+      "examples": [
+        {
+          "ar": "قَرَأَ",
+          "en": "he read (fatḥa before → hamza on alif: أ)",
+          "highlight": "أَ"
+        },
+        {
+          "ar": "شَاطِئٌ",
+          "en": "beach (kasra before → hamza on yā': ئ)",
+          "highlight": "ئٌ"
+        },
+        {
+          "ar": "شَيْءٌ",
+          "en": "thing (sukun before → hamza on the line: ء)",
+          "highlight": "ءٌ"
+        },
+        {
+          "ar": "جُزْءٌ",
+          "en": "part (sukun before → hamza on the line: ء)",
+          "highlight": "ءٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the word شَيْءٌ (thing), why is hamza written on the line?",
+          "options": [
+            "Because the vowel before hamza is fatḥa",
+            "Because the vowel before hamza is sukun (yā' sākina)",
+            "Because the word is indefinite"
+          ],
+          "correctIndex": 1,
+          "explanation": "The yā' before hamza has sukun (شَيْـ). When the preceding letter has sukun, final hamza sits alone on the line: شَيْءٌ."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He read a book: ___ كِتَابًا",
+          "explanation": "The verb 'he read' is قَرَأَ. The letter before final hamza (rā') has fatḥa, so hamza sits on alif.",
+          "acceptedAnswers": [
+            "قَرَأَ"
+          ]
+        }
+      ]
+    }
+  ]
+}

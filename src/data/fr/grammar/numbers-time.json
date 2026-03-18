@@ -83,8 +83,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Il y a ___ (91) jours.",
-          "answer": "quatre-vingt-onze",
-          "hint": "90 = quatre-vingt-dix, so 91 = quatre-vingt-onze (no -s on vingt when followed by a number)."
+          "hint": "90 = quatre-vingt-dix, so 91 = quatre-vingt-onze (no -s on vingt when followed by a number).",
+          "acceptedAnswers": [
+            "quatre-vingt-onze"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -100,8 +102,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Elle habite au ___ (17) rue Victor Hugo.",
-          "answer": "dix-sept",
-          "hint": "17 = dix-sept (10+7)."
+          "hint": "17 = dix-sept (10+7).",
+          "acceptedAnswers": [
+            "dix-sept"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -190,8 +194,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Il est cinq heures ___ (quarter past).",
-          "answer": "et quart",
-          "hint": "Quarter past = et quart."
+          "hint": "Quarter past = et quart.",
+          "acceptedAnswers": [
+            "et quart"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -207,8 +213,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Il est ___ (midnight).",
-          "answer": "minuit",
-          "hint": "Midnight has its own special word in French — not minuit heure."
+          "hint": "Midnight has its own special word in French — not minuit heure.",
+          "acceptedAnswers": [
+            "minuit"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -235,8 +243,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Le film commence à ___ heures ___ (7:20).",
-          "answer": "sept heures vingt",
-          "hint": "Just place the minutes after heures with no joining word for plain minutes: sept heures vingt."
+          "hint": "Just place the minutes after heures with no joining word for plain minutes: sept heures vingt.",
+          "acceptedAnswers": [
+            "sept heures vingt"
+          ]
         }
       ]
     }

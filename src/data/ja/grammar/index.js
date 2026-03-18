@@ -21,6 +21,7 @@ import comparisonLesson from './comparison.json';
 import desireIntentionLesson from './desire-intention.json';
 import complexSentencesLesson from './complex-sentences.json';
 import auxiliaryPatternsLesson from './auxiliary-patterns.json';
+import advancedConditionalsLesson from './advanced-conditionals.json';
 
 export const GRAMMAR_LESSONS_JA = [
   hiraganaKatakanaLesson,
@@ -46,4 +47,5 @@ export const GRAMMAR_LESSONS_JA = [
   desireIntentionLesson,
   complexSentencesLesson,
   auxiliaryPatternsLesson,
+  advancedConditionalsLesson,
 ];

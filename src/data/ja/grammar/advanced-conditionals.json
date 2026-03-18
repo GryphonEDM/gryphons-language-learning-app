@@ -1,0 +1,192 @@
+{
+  "lessonId": "advanced-conditionals",
+  "nameEn": "Advanced Conditionals",
+  "nameJa": "条件表現の使い分け",
+  "icon": "🔀",
+  "tier": "B1",
+  "prerequisites": [
+    "conditionals"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "tara-specifics",
+      "title": "たら — Specific Situations and Past Discovery",
+      "explanation": "While the basic conditionals lesson introduced all four forms, this lesson focuses on when to choose each one. たら is the most flexible conditional and is best for SPECIFIC, one-time situations. It emphasizes temporal sequence: the condition happens first, THEN the result follows. Key strengths of たら: 1) One-time future events: 明日雨が降ったら、ピクニックは中止です (If it rains tomorrow, the picnic is cancelled). 2) Past discoveries (ONLY たら can do this): ドアを開けたら、猫がいた (When I opened the door, there was a cat). 3) Completed conditions: 宿題が終わったら、遊びに行こう (When you finish homework, let's go play). 4) Hypothetical situations: もし宝くじに当たったら、世界旅行をしたい (If I won the lottery, I'd want to travel the world). When in doubt about which conditional to use, たら is almost always acceptable.",
+      "tip": "たら is the 'safe choice' conditional. It works in nearly every situation. Its unique ability is describing past discoveries: 見たら (when I looked...). Choose たら for specific, concrete situations rather than general rules.",
+      "examples": [
+        {
+          "ja": "家に帰ったら、手を洗ってください。",
+          "en": "When you get home, please wash your hands. (specific sequence)",
+          "highlight": "帰ったら"
+        },
+        {
+          "ja": "冷蔵庫を開けたら、何もなかった。",
+          "en": "When I opened the fridge, there was nothing. (past discovery)",
+          "highlight": "開けたら"
+        },
+        {
+          "ja": "もし時間があったら、映画を見に行きたい。",
+          "en": "If I have time, I'd like to go see a movie. (hypothetical)",
+          "highlight": "あったら"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conditional is correct? 'When I arrived at the station, the train had already left.' (past discovery)",
+          "options": [
+            "駅に着くと、電車はもう出ていた。",
+            "駅に着いたら、電車はもう出ていた。",
+            "駅に着けば、電車はもう出ていた。",
+            "駅に着くなら、電車はもう出ていた。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Past discoveries — finding out something upon completing an action — can ONLY use たら. 着いたら = when I arrived (and then discovered)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which situation is BEST suited for たら?",
+          "options": [
+            "Describing a general truth: 'If you heat water, it boils.'",
+            "A specific one-time plan: 'If it's sunny tomorrow, let's have a BBQ.'",
+            "Giving a topic-based recommendation: 'If it's sushi, try that restaurant.'",
+            "Stating a mechanical fact: 'Press this button and the light turns on.'"
+          ],
+          "correctIndex": 1,
+          "explanation": "たら excels at specific, one-time situations with a clear temporal sequence. General truths suit と, recommendations suit なら, and mechanical facts suit と."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "宿題が終わっ___、ゲームしよう。(When homework is done, let's play games.)",
+          "hint": "Specific future condition, temporal sequence",
+          "explanation": "たら is perfect for 'when X is done, then Y': 終わったら = when it's finished.",
+          "acceptedAnswers": [
+            "たら"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "ba-nara-nuance",
+      "title": "ば vs. なら — General Conditions vs. Topic-Based Advice",
+      "explanation": "ば expresses a general, logical condition: 'if condition X is met, result Y follows.' It focuses on the condition side and implies a natural or logical consequence. Best uses: 1) General advice: 練習すれば上手になる (If you practice, you'll improve). 2) Proverbs and general truths: 急がば回れ (Haste makes waste — literally 'if you hurry, go around'). 3) ～ばいい pattern (should/just do): 聞けばいい (You should just ask). Key restriction: ば generally cannot have a volitional action (command, invitation) in the result clause, EXCEPT in the ～ばいい pattern. なら picks up a TOPIC and responds with advice or a comment. It is reactive — often used after hearing new information. 日本に行くなら、京都がおすすめ (If you're going to Japan, I recommend Kyoto). Unique feature: with なら, the result can happen BEFORE the condition: 出かけるなら、傘を持って行って (If you're going out, take an umbrella — take it before going).",
+      "tip": "ば = logical/general 'if-then.' なら = 'if that's the case / speaking of which.' Use ば for advice about what works in general. Use なら when responding to someone's situation or topic.",
+      "examples": [
+        {
+          "ja": "もっと勉強すれば、合格できる。",
+          "en": "If you study more, you can pass. (general logical condition)",
+          "highlight": "勉強すれば"
+        },
+        {
+          "ja": "分からなければ、先生に聞けばいい。",
+          "en": "If you don't understand, you should just ask the teacher.",
+          "highlight": "聞けばいい"
+        },
+        {
+          "ja": "旅行に行くなら、沖縄がいいよ。",
+          "en": "If you're going on a trip, Okinawa is good. (topic-based advice)",
+          "highlight": "行くなら"
+        },
+        {
+          "ja": "買うなら、今がチャンスだ。",
+          "en": "If you're going to buy it, now is the chance.",
+          "highlight": "買うなら"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Your friend says they want to learn Japanese. Which is most natural to respond with advice?",
+          "options": [
+            "日本語を勉強すると、毎日練習してね。",
+            "日本語を勉強するなら、このアプリがおすすめだよ。",
+            "日本語を勉強すれば、このアプリがおすすめだよ。",
+            "日本語を勉強したら、このアプリがおすすめだよ。"
+          ],
+          "correctIndex": 1,
+          "explanation": "なら is ideal for responding to someone's stated plan and offering topic-based advice: 'If you're going to study Japanese (as you mentioned), I recommend this app.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses ～ばいい?",
+          "options": [
+            "タクシーに乗ればいいよ。(You should just take a taxi.)",
+            "タクシーに乗るばいいよ。",
+            "タクシーに乗ったばいいよ。",
+            "タクシーに乗れるばいいよ。"
+          ],
+          "correctIndex": 0,
+          "explanation": "～ばいい uses the ば form + いい: 乗る → 乗れば → 乗ればいい (you should just ride/take). This is an exception where ば can have a volitional nuance."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "パソコンを買う___、秋葉原に行ってみて。(If you're buying a computer, try going to Akihabara.)",
+          "hint": "Responding to someone's plan with a recommendation",
+          "explanation": "なら responds to the topic (buying a computer) with advice: 買うなら = if you're going to buy.",
+          "acceptedAnswers": [
+            "なら"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "to-vs-tara",
+      "title": "と vs. たら — Automatic Results vs. Specific Events",
+      "explanation": "と and たら can sometimes seem interchangeable, but they have distinct nuances. と is for AUTOMATIC, HABITUAL, or INEVITABLE results — things that always happen the same way. Think of と as describing 'rules of the universe': 春になると桜が咲く (When spring comes, cherry blossoms bloom — every year). ボタンを押すと電気がつく (Press the button and the light turns on — always). Directions also use と: まっすぐ行くと右に銀行がある (Go straight and there's a bank on the right). たら is for SPECIFIC, one-time events where the result may or may not happen: 明日晴れたら、公園に行こう (If it's sunny tomorrow, let's go to the park — one specific day). Critical difference: と CANNOT have volitional results (requests, commands, invitations, decisions). Wrong: 雨が降ると、傘を持っていってください. Right: 雨が降ったら、傘を持っていってください. This is because と implies automatic inevitability, which clashes with human choice.",
+      "tip": "と = 'whenever X, Y always happens' (automatic/habitual). たら = 'if/when X happens this time, then Y' (specific/one-time). If the result involves someone's choice or request, use たら, not と.",
+      "examples": [
+        {
+          "ja": "冬になると、雪が降る。",
+          "en": "When winter comes, it snows. (automatic, every year)",
+          "highlight": "なると"
+        },
+        {
+          "ja": "この道をまっすぐ行くと、駅が見えます。",
+          "en": "Go straight on this road and you'll see the station. (directions)",
+          "highlight": "行くと"
+        },
+        {
+          "ja": "明日天気がよかったら、海に行こう。",
+          "en": "If the weather is nice tomorrow, let's go to the beach. (specific plan)",
+          "highlight": "よかったら"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conditional is correct? 'Every time I eat too much, my stomach hurts.' (habitual, automatic)",
+          "options": [
+            "食べすぎたら、お腹が痛くなる。",
+            "食べすぎると、お腹が痛くなる。",
+            "食べすぎれば、お腹が痛くなる。",
+            "食べすぎるなら、お腹が痛くなる。"
+          ],
+          "correctIndex": 1,
+          "explanation": "と is best for automatic, habitual results: every time you eat too much, your stomach hurts. This is a natural cause-and-effect that always happens."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is INCORRECT?",
+          "options": [
+            "お金があったら、旅行に行きたい。",
+            "このボタンを押すと、水が出る。",
+            "暑くなると、窓を開けてください。",
+            "よかったら、一緒に来ませんか？"
+          ],
+          "correctIndex": 2,
+          "explanation": "と cannot be followed by a request (～てください). 暑くなると、窓を開けてください is wrong. Correct: 暑くなったら、窓を開けてください (use たら for requests)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "この角を右に曲がる___、コンビニがあります。(Turn right at this corner and there's a convenience store.)",
+          "hint": "Giving directions — automatic/inevitable result",
+          "explanation": "Directions use と because the result is a fixed fact: 曲がると = when you turn (the convenience store is always there).",
+          "acceptedAnswers": [
+            "と"
+          ]
+        }
+      ]
+    }
+  ]
+}

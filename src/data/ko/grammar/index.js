@@ -22,6 +22,9 @@ import countersLesson from './counters.json';
 import negationLesson from './negation.json';
 import comparisonLesson from './comparison.json';
 import progressiveAspectLesson from './progressive-aspect.json';
+import requestsPermissionLesson from './requests-permission.json';
+import sentenceEndingsLesson from './sentence-endings.json';
+import relativeTenseLesson from './relative-tense.json';
 
 export const GRAMMAR_LESSONS_KO = [
   hangulBasicsLesson,
@@ -48,4 +51,7 @@ export const GRAMMAR_LESSONS_KO = [
   negationLesson,
   comparisonLesson,
   progressiveAspectLesson,
+  requestsPermissionLesson,
+  sentenceEndingsLesson,
+  relativeTenseLesson,
 ];

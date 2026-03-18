@@ -1,0 +1,196 @@
+{
+  "lessonId": "verbal-adjectives",
+  "nameEn": "Verbal Adjectives and Participles",
+  "nameHi": "कृदंत और विशेषण रूप",
+  "icon": "📝",
+  "tier": "B1",
+  "prerequisites": [
+    "adjectives",
+    "verb-conjugation"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "present-participle",
+      "title": "Present Participle (वर्तमान कृदंत) — ता हुआ / ती हुई",
+      "explanation": "The present participle describes an ongoing action and functions as an adjective modifying a noun, or as part of a progressive construction. It is formed by combining the imperfective participle (ता/ती/ते) with हुआ/हुई/हुए.\n\nFORMATION:\nVerb stem + ता/ती/ते + हुआ/हुई/हुए\n\nThe form agrees with the noun it modifies in gender and number:\n  MASCULINE SINGULAR: दौड़ता हुआ लड़का = the running boy\n  FEMININE SINGULAR: दौड़ती हुई लड़की = the running girl\n  MASCULINE PLURAL: दौड़ते हुए लड़के = the running boys\n  FEMININE PLURAL: दौड़ती हुई लड़कियाँ = the running girls\n\nUSAGE:\n1. AS AN ADJECTIVE (modifying a noun):\n  गाता हुआ आदमी = the singing man\n  सोती हुई बच्ची = the sleeping girl\n\n2. EXPRESSING SIMULTANEOUS ACTION ('while doing'):\n  वह हँसते हुए बोला। = He spoke while laughing.\n  वह रोती हुई आई। = She came crying.\n\nNote: हुआ/हुई/हुए is sometimes dropped in casual speech:\n  दौड़ता लड़का = the running boy (shorter form)",
+      "tip": "The present participle always agrees with the noun it modifies, NOT with the subject of the sentence. Think of it as an adjective derived from a verb — and Hindi adjectives agree with their nouns.",
+      "examples": [
+        {
+          "hi": "दौड़ता हुआ लड़का गिर गया।",
+          "en": "The running boy fell down.",
+          "highlight": "दौड़ता हुआ"
+        },
+        {
+          "hi": "गाती हुई लड़की बहुत सुंदर है।",
+          "en": "The singing girl is very beautiful.",
+          "highlight": "गाती हुई"
+        },
+        {
+          "hi": "वह हँसते हुए बोला।",
+          "en": "He spoke while laughing.",
+          "highlight": "हँसते हुए"
+        },
+        {
+          "hi": "बहती हुई नदी को देखो।",
+          "en": "Look at the flowing river.",
+          "highlight": "बहती हुई"
+        },
+        {
+          "hi": "खेलते हुए बच्चे शोर मचा रहे थे।",
+          "en": "The playing children were making noise.",
+          "highlight": "खेलते हुए"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"दौड़ती हुई लड़की\" — कृदंत स्त्रीलिंग क्यों है? (Why is the participle feminine?)",
+          "options": [
+            "Because दौड़ना is a feminine verb",
+            "Because it agrees with लड़की, which is feminine",
+            "Because all participles are feminine by default"
+          ],
+          "correctIndex": 1,
+          "explanation": "The present participle acts as an adjective and agrees with the noun it modifies. लड़की is feminine singular, so the participle takes the feminine form: दौड़ती हुई."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "गाता _____ आदमी कौन है? (Who is the singing man?)",
+          "hint": "Masculine singular form of होना participle",
+          "explanation": "आदमी is masculine singular, so the present participle takes हुआ: गाता हुआ आदमी.",
+          "acceptedAnswers": [
+            "हुआ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"वह रोती हुई आई\" — what does this sentence mean?",
+          "options": [
+            "She came to cry.",
+            "She came while crying. / She came crying.",
+            "She will come crying."
+          ],
+          "correctIndex": 1,
+          "explanation": "The present participle रोती हुई here expresses a simultaneous action: she came while crying / she came in a state of crying."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-participle",
+      "title": "Past Participle (भूत कृदंत) — हुआ / हुई",
+      "explanation": "The past participle describes a completed action and is used as an adjective modifying a noun. It is formed from the perfective participle of the verb.\n\nFORMATION:\nVerb stem + आ/ई/ए (perfective form), often combined with हुआ/हुई/हुए for emphasis.\n\nCOMMON FORMS:\n  टूटा हुआ = broken (टूटना, to break)\n  खुला हुआ = open (खुलना, to open)\n  बंद = closed (बंद करना/होना)\n  लिखा हुआ = written (लिखना, to write)\n  बना हुआ = made/built (बनना, to be made)\n  गिरा हुआ = fallen (गिरना, to fall)\n  सड़ा हुआ = rotten (सड़ना, to rot)\n\nAGREEMENT:\nLike all Hindi adjectives ending in -आ, past participles agree with the noun:\n  MASCULINE SINGULAR: टूटा हुआ शीशा = broken glass\n  FEMININE SINGULAR: टूटी हुई खिड़की = broken window\n  MASCULINE PLURAL: टूटे हुए खिलौने = broken toys\n  FEMININE PLURAL: टूटी हुई चूड़ियाँ = broken bangles\n\nThese forms describe the resulting state of a completed action, not the action itself.\n\nNote: हुआ/हुई can be omitted in casual speech: टूटा शीशा = broken glass.",
+      "tip": "Past participles describe states resulting from completed actions. Think of them as answering 'what happened to this thing?' — टूटा हुआ शीशा = glass that has broken / glass in a broken state.",
+      "examples": [
+        {
+          "hi": "टूटा हुआ शीशा मत छुओ।",
+          "en": "Don't touch the broken glass.",
+          "highlight": "टूटा हुआ"
+        },
+        {
+          "hi": "खुली हुई किताब मेज़ पर है।",
+          "en": "The open book is on the table.",
+          "highlight": "खुली हुई"
+        },
+        {
+          "hi": "बना हुआ खाना फ्रिज में रखो।",
+          "en": "Put the prepared food in the fridge.",
+          "highlight": "बना हुआ"
+        },
+        {
+          "hi": "गिरे हुए पत्ते ज़मीन पर थे।",
+          "en": "The fallen leaves were on the ground.",
+          "highlight": "गिरे हुए"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"टूटी हुई खिड़की\" — participle स्त्रीलिंग क्यों है?",
+          "options": [
+            "Because टूटना is feminine",
+            "Because खिड़की is feminine, and the participle agrees with it",
+            "Because हुई is always feminine"
+          ],
+          "correctIndex": 1,
+          "explanation": "The past participle agrees with the noun it modifies. खिड़की (window) is feminine, so टूटा becomes टूटी and हुआ becomes हुई."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "_____ हुआ खाना फ्रिज में रखो। (Put the prepared food in the fridge.)",
+          "hint": "Past participle of बनना (masculine singular)",
+          "explanation": "खाना is masculine singular, so the past participle of बनना takes the masculine form: बना हुआ.",
+          "acceptedAnswers": [
+            "बना"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "obligative-participle",
+      "title": "Obligative Participle (विध्यर्थक कृदंत) — ना / नी / ने",
+      "explanation": "The obligative participle expresses obligation, necessity, or something that 'is to be done'. It is formed from the verb infinitive and functions as an adjective.\n\nFORMATION:\nVerb stem + ना/नी/ने (same as infinitive, but used as an adjective)\n\nThe form agrees with the noun it modifies:\n  MASCULINE SINGULAR: करने का काम = work to be done (oblique because of का)\n  FEMININE SINGULAR: पढ़ने की किताब = a book to be read\n  MASCULINE PLURAL: देखने के मंदिर = temples to be seen\n\nCOMMON PATTERNS:\n\n1. VERB + ना/नी/ने + वाला/वाली/वाले = 'one who does / is about to do':\n  जाने वाला = one who is about to go (masculine)\n  आने वाली ट्रेन = the arriving train / the train that is about to come\n  पढ़ने वाले बच्चे = children who study\n\n2. VERB + ने + को/के लिए = 'in order to / for doing':\n  खाने के लिए = for eating / in order to eat\n  पढ़ने के लिए = for reading / in order to read\n\n3. VERB + ना/नी/ने as adjective with होना = obligation:\n  मुझे काम करना है। = I have to work. (करना agrees with काम, masculine)\n  मुझे किताब पढ़नी है। = I have to read a book. (पढ़नी agrees with किताब, feminine)\n  मुझे पत्र लिखने हैं। = I have to write letters. (लिखने agrees with पत्र, masculine plural)",
+      "tip": "When the obligative participle is used with होना (to have to), the verb form agrees with the object, NOT the subject. मुझे किताब पढ़नी है — पढ़नी agrees with किताब (feminine), not with मुझे.",
+      "examples": [
+        {
+          "hi": "मुझे किताब पढ़नी है।",
+          "en": "I have to read a book. (पढ़नी agrees with किताब, feminine)",
+          "highlight": "पढ़नी"
+        },
+        {
+          "hi": "आने वाली ट्रेन लेट है।",
+          "en": "The arriving train is late.",
+          "highlight": "आने वाली"
+        },
+        {
+          "hi": "खाने के लिए कुछ लाओ।",
+          "en": "Bring something to eat.",
+          "highlight": "खाने के लिए"
+        },
+        {
+          "hi": "मुझे तीन पत्र लिखने हैं।",
+          "en": "I have to write three letters. (लिखने agrees with पत्र, masculine plural)",
+          "highlight": "लिखने"
+        },
+        {
+          "hi": "देखने वाली जगहें बहुत हैं।",
+          "en": "There are many places to see.",
+          "highlight": "देखने वाली"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"मुझे किताब पढ़नी है\" में पढ़नी स्त्रीलिंग क्यों है?",
+          "options": [
+            "Because मुझे is feminine",
+            "Because किताब is feminine and the obligative agrees with the object",
+            "Because है makes everything feminine"
+          ],
+          "correctIndex": 1,
+          "explanation": "In obligative constructions with होना, the verbal form agrees with the object. किताब is feminine, so पढ़ना becomes पढ़नी."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "मुझे काम _____ है। (I have to work.)",
+          "hint": "Obligative form of करना, agreeing with काम (masculine singular)",
+          "explanation": "काम is masculine singular, so the obligative form of करना is करना (masculine singular): मुझे काम करना है.",
+          "acceptedAnswers": [
+            "करना"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"आने वाली ट्रेन\" — what does वाली indicate?",
+          "options": [
+            "The train that has already arrived",
+            "The train that is about to come / the coming train",
+            "The train that never comes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Verb stem + ने + वाला/वाली/वाले means 'one who does' or 'one who is about to do'. आने वाली ट्रेन = the train that is about to come / the coming train. वाली is feminine to agree with ट्रेन."
+        }
+      ]
+    }
+  ]
+}

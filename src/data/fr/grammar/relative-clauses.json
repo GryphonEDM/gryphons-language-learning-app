@@ -83,8 +83,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with qui, que, or dont: Le professeur ___ nous respectons est très sévère.",
-          "answer": "que",
-          "explanation": "Que is correct because the professor is the object — 'nous' is the subject doing the respecting."
+          "explanation": "Que is correct because the professor is the object — 'nous' is the subject doing the respecting.",
+          "acceptedAnswers": [
+            "que"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -100,8 +102,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with qui, que, or dont: La maison ___ appartient à mes parents est grande.",
-          "answer": "qui",
-          "explanation": "Qui is correct because 'la maison' is the subject of the verb 'appartient'."
+          "explanation": "Qui is correct because 'la maison' is the subject of the verb 'appartient'.",
+          "acceptedAnswers": [
+            "qui"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -117,8 +121,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: Le roman ___ j'ai lu hier était passionnant.",
-          "answer": "que",
-          "explanation": "Que is correct because the novel is the direct object — 'j'ai lu' has its own subject 'je'."
+          "explanation": "Que is correct because the novel is the direct object — 'j'ai lu' has its own subject 'je'.",
+          "acceptedAnswers": [
+            "que"
+          ]
         }
       ]
     },
@@ -174,8 +180,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: La chaise sur ___ tu es assis est cassée.",
-          "answer": "laquelle",
-          "explanation": "Sur + laquelle because 'la chaise' is feminine singular, and we need lequel after a preposition for a thing."
+          "explanation": "Sur + laquelle because 'la chaise' is feminine singular, and we need lequel after a preposition for a thing.",
+          "acceptedAnswers": [
+            "laquelle"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -202,8 +210,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with ce qui, ce que, or ce dont: ___ m'intéresse, c'est la photographie.",
-          "answer": "Ce qui",
-          "explanation": "Ce qui is used when the relative pronoun is the subject of the verb that follows. 'Ce qui m'intéresse' = what interests me."
+          "explanation": "Ce qui is used when the relative pronoun is the subject of the verb that follows. 'Ce qui m'intéresse' = what interests me.",
+          "acceptedAnswers": [
+            "Ce qui"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -230,8 +240,10 @@
         {
           "type": "fill-blank",
           "prompt": "Complete: L'époque ___ mes parents sont nés était difficile.",
-          "answer": "où",
-          "explanation": "Où is used for time expressions as well as places — here it means 'when' (the era when my parents were born)."
+          "explanation": "Où is used for time expressions as well as places — here it means 'when' (the era when my parents were born).",
+          "acceptedAnswers": [
+            "où"
+          ]
         }
       ]
     }

@@ -1,0 +1,224 @@
+{
+  "lessonId": "subjunctive-jussive",
+  "nameEn": "Subjunctive and Jussive Moods",
+  "nameAr": "المُضَارِع المَنْصُوب والمَجْزُوم",
+  "icon": "🎯",
+  "tier": "B1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "mood-overview",
+      "title": "The Three Moods of the Present Tense",
+      "explanation": "Arabic present-tense verbs (المُضَارِع) have three moods, each with a different final vowel. The indicative (المَرْفُوع) is the default mood, used in simple statements. Its marker is damma (ـُ): يَكْتُبُ (he writes). The subjunctive (المَنْصُوب) is used after certain particles. Its marker is fatha (ـَ): يَكْتُبَ. The jussive (المَجْزُوم) is used after other particles and in commands. Its marker is sukun (ـْ): يَكْتُبْ. For the five special conjugations (the 'five verbs' — يَكْتُبُونَ, تَكْتُبُونَ, يَكْتُبَانِ, تَكْتُبَانِ, تَكْتُبِينَ), the indicative ends in نَ, the subjunctive and jussive drop the نَ. So يَكْتُبُونَ (indicative) → يَكْتُبُوا (subjunctive/jussive). Understanding these moods is essential for expressing purpose, negation, wishes, and commands in Arabic.",
+      "tip": "Think of the moods by their final vowels: indicative = ـُ (damma), subjunctive = ـَ (fatha), jussive = ـْ (sukun). For the five special forms, the subjunctive and jussive drop the final نَ.",
+      "examples": [
+        {
+          "ar": "يَكْتُبُ (indicative) — يَكْتُبَ (subjunctive) — يَكْتُبْ (jussive)",
+          "en": "he writes — (that) he write — (let) him write",
+          "highlight": "يَكْتُبُ"
+        },
+        {
+          "ar": "يَذْهَبُونَ (indicative) — يَذْهَبُوا (subjunctive/jussive)",
+          "en": "they go — (that) they go [نَ dropped]",
+          "highlight": "يَذْهَبُونَ"
+        },
+        {
+          "ar": "تَدْرُسِينَ (indicative) — تَدْرُسِي (subjunctive/jussive)",
+          "en": "you (f.) study — (that) you study [نَ dropped]",
+          "highlight": "تَدْرُسِينَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the marker of the subjunctive mood (المَنْصُوب) on regular present-tense verbs?",
+          "options": [
+            "Damma (ـُ)",
+            "Fatha (ـَ)",
+            "Sukun (ـْ)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The subjunctive mood is marked by fatha (ـَ) on the last letter: يَكْتُبَ. The indicative uses damma (يَكْتُبُ) and the jussive uses sukun (يَكْتُبْ)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does the verb يَعْمَلُونَ change in the subjunctive?",
+          "options": [
+            "يَعْمَلُونَ (no change)",
+            "يَعْمَلُوا (the نَ is dropped)",
+            "يَعْمَلُونْ (sukun on نَ)"
+          ],
+          "correctIndex": 1,
+          "explanation": "For the 'five verbs' (الأَفْعَال الخَمْسَة), the subjunctive and jussive are formed by dropping the final نَ. So يَعْمَلُونَ becomes يَعْمَلُوا."
+        }
+      ]
+    },
+    {
+      "sectionId": "subjunctive-particles",
+      "title": "Subjunctive Particles — أَنْ، لَنْ، كَيْ، لِـ",
+      "explanation": "The subjunctive mood is triggered by specific particles. أَنْ (that / to): used before verbs to create infinitive-like clauses. أُرِيدُ أَنْ أَتَعَلَّمَ (I want to learn). لَنْ (will not): negates the future. لَنْ أَذْهَبَ (I will not go). كَيْ (in order to): expresses purpose. دَرَسْتُ كَيْ أَنْجَحَ (I studied in order to succeed). لِـ (in order to / so that): also expresses purpose, attached to the verb. جِئْتُ لِأَتَعَلَّمَ (I came to learn). حَتَّى (until / so that): يَدْرُسُ حَتَّى يَنْجَحَ (He studies so that he succeeds). After all of these particles, the verb must be in the subjunctive — the final damma changes to fatha.",
+      "tip": "The most common subjunctive particle is أَنْ — you will use it constantly to say 'I want to...', 'I can...', 'I need to...' (أُرِيدُ أَنْ, أَسْتَطِيعُ أَنْ, أَحْتَاجُ أَنْ). Always follow أَنْ with the subjunctive.",
+      "examples": [
+        {
+          "ar": "أُرِيدُ أَنْ أَقْرَأَ كِتَابًا",
+          "en": "I want to read a book.",
+          "highlight": "أَنْ أَقْرَأَ"
+        },
+        {
+          "ar": "لَنْ أَنْسَى هَذَا اليَوْمَ",
+          "en": "I will never forget this day.",
+          "highlight": "لَنْ أَنْسَى"
+        },
+        {
+          "ar": "سَافَرَ كَيْ يَتَعَلَّمَ",
+          "en": "He traveled in order to learn.",
+          "highlight": "كَيْ يَتَعَلَّمَ"
+        },
+        {
+          "ar": "جَاءَ لِيَدْرُسَ",
+          "en": "He came to study.",
+          "highlight": "لِيَدْرُسَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "I want to go: أُرِيدُ أَنْ ___",
+          "explanation": "After أَنْ the verb takes the subjunctive. يَذْهَبُ (indicative) becomes أَذْهَبَ (subjunctive, first person, with fatha ending).",
+          "acceptedAnswers": [
+            "أَذْهَبَ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle negates the future tense and triggers the subjunctive?",
+          "options": [
+            "لَمْ",
+            "لَنْ",
+            "لَا"
+          ],
+          "correctIndex": 1,
+          "explanation": "لَنْ negates the future and triggers the subjunctive: لَنْ أَذْهَبَ (I will not go). لَمْ negates the past and triggers the jussive. لَا can negate the present (without changing the mood) or be used for prohibition (with jussive)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "He will not succeed: لَنْ ___",
+          "explanation": "After لَنْ, the verb takes the subjunctive with fatha: يَنْجَحُ → يَنْجَحَ.",
+          "acceptedAnswers": [
+            "يَنْجَحَ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "jussive-particles",
+      "title": "Jussive Particles — لَمْ، لَا النَّاهِيَة",
+      "explanation": "The jussive mood is triggered by a different set of particles. لَمْ (did not): negates the past using a present-tense verb form in the jussive. لَمْ يَذْهَبْ means 'He did not go' (literally 'he has-not go'). This is the most common way to negate the past in Modern Standard Arabic. لَا النَّاهِيَة (prohibitive لَا, don't): used for negative commands (prohibition). لَا تَذْهَبْ (Don't go!), لَا تَكْتُبْ (Don't write!). لِـ الأَمْر (laam of command): used for third-person commands. لِيَذْهَبْ (Let him go!), لِنَذْهَبْ (Let us go!). لَمَّا (not yet): similar to لَمْ but implies the action has not yet happened. لَمَّا يَصِلْ (He has not yet arrived). After all these particles, the final vowel becomes sukun (ـْ), or the نَ drops in the five special forms.",
+      "tip": "لَمْ + present tense verb (jussive) = past negation. This is more common in written Arabic than مَا + past tense verb. So 'I did not write' is لَمْ أَكْتُبْ (not مَا كَتَبْتُ, though both exist).",
+      "examples": [
+        {
+          "ar": "لَمْ يَكْتُبْ الدَّرْسَ",
+          "en": "He did not write the lesson.",
+          "highlight": "لَمْ يَكْتُبْ"
+        },
+        {
+          "ar": "لَا تَلْعَبْ فِي الشَّارِعِ!",
+          "en": "Don't play in the street!",
+          "highlight": "لَا تَلْعَبْ"
+        },
+        {
+          "ar": "لِنَبْدَأْ العَمَلَ",
+          "en": "Let us begin the work.",
+          "highlight": "لِنَبْدَأْ"
+        },
+        {
+          "ar": "لَمَّا يَصِلْ بَعْدُ",
+          "en": "He has not arrived yet.",
+          "highlight": "لَمَّا يَصِلْ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "He did not understand: لَمْ ___",
+          "explanation": "After لَمْ, the present-tense verb takes the jussive with sukun: يَفْهَمُ → يَفْهَمْ.",
+          "acceptedAnswers": [
+            "يَفْهَمْ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does لَا تَكْذِبْ mean?",
+          "options": [
+            "He did not lie",
+            "Don't lie!",
+            "He will not lie"
+          ],
+          "correctIndex": 1,
+          "explanation": "لَا + jussive (second person) forms a prohibition — a negative command. لَا تَكْذِبْ means 'Don't lie!' The second-person prefix تـ and the jussive sukun confirm this is a prohibition."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you negate 'they went' (ذَهَبُوا) using لَمْ?",
+          "options": [
+            "لَمْ يَذْهَبُونَ",
+            "لَمْ يَذْهَبُوا",
+            "لَا يَذْهَبُوا"
+          ],
+          "correctIndex": 1,
+          "explanation": "After لَمْ, the verb takes the jussive. For the 'five verbs' form يَذْهَبُونَ, the jussive drops the نَ: لَمْ يَذْهَبُوا (they did not go)."
+        }
+      ]
+    },
+    {
+      "sectionId": "conjugation-summary",
+      "title": "Conjugation Table — All Three Moods",
+      "explanation": "Here is a summary of how the verb يَكْتُبُ (to write) conjugates across all three moods for key persons. هُوَ: يَكْتُبُ (indicative) / يَكْتُبَ (subjunctive) / يَكْتُبْ (jussive). هِيَ: تَكْتُبُ / تَكْتُبَ / تَكْتُبْ. أَنَا: أَكْتُبُ / أَكْتُبَ / أَكْتُبْ. نَحْنُ: نَكْتُبُ / نَكْتُبَ / نَكْتُبْ. أَنْتَ: تَكْتُبُ / تَكْتُبَ / تَكْتُبْ. أَنْتِ: تَكْتُبِينَ / تَكْتُبِي / تَكْتُبِي. هُمْ: يَكْتُبُونَ / يَكْتُبُوا / يَكْتُبُوا. أَنْتُمْ: تَكْتُبُونَ / تَكْتُبُوا / تَكْتُبُوا. Notice: for most persons, the difference is only in the final short vowel (ـُ / ـَ / ـْ). For the five special forms, the change is dropping the final نَ.",
+      "tip": "For daily practice, focus on the most common constructions: أُرِيدُ أَنْ + subjunctive, لَنْ + subjunctive, لَمْ + jussive, لَا + jussive (prohibition). These four patterns cover the vast majority of mood usage.",
+      "examples": [
+        {
+          "ar": "لَمْ أَكْتُبْ — أُرِيدُ أَنْ أَكْتُبَ — أَكْتُبُ",
+          "en": "I did not write — I want to write — I write",
+          "highlight": "أَكْتُبْ"
+        },
+        {
+          "ar": "لَنْ يَفْعَلُوا ذَلِكَ",
+          "en": "They will not do that.",
+          "highlight": "يَفْعَلُوا"
+        },
+        {
+          "ar": "يَجِبُ أَنْ نَتَعَاوَنَ",
+          "en": "We must cooperate.",
+          "highlight": "أَنْ نَتَعَاوَنَ"
+        },
+        {
+          "ar": "لَا تَنْسَ وَاجِبَكَ!",
+          "en": "Don't forget your homework!",
+          "highlight": "لَا تَنْسَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "We must study: يَجِبُ أَنْ ___",
+          "explanation": "After أَنْ, the verb takes the subjunctive. نَدْرُسُ (indicative) becomes نَدْرُسَ (subjunctive, with fatha).",
+          "acceptedAnswers": [
+            "نَدْرُسَ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses the jussive mood?",
+          "options": [
+            "لَمْ يَأْكُلُ الطَّعَامَ",
+            "لَمْ يَأْكُلْ الطَّعَامَ",
+            "لَنْ يَأْكُلْ الطَّعَامَ"
+          ],
+          "correctIndex": 1,
+          "explanation": "After لَمْ, the verb must be in the jussive (sukun): لَمْ يَأْكُلْ. The first option incorrectly keeps the indicative damma. The third option incorrectly uses sukun after لَنْ (which requires the subjunctive fatha)."
+        }
+      ]
+    }
+  ]
+}

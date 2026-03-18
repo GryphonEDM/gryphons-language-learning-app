@@ -42,7 +42,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
     if (!cleaned) return null;
-    const userHit = lookupUserDict(cleaned);
+    const userHit = lookupUserDict(cleaned, langCode);
     if (userHit) return userHit;
     if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
@@ -75,7 +75,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
       chatPendingRef.current = requestId;
       translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
         if (llmTranslation && chatPendingRef.current === requestId) {
-          saveToUserDict(cleaned, llmTranslation);
+          saveToUserDict(cleaned, llmTranslation, langCode);
           setChatSelectedWord(prev =>
             prev && prev.word === cleaned
               ? { ...prev, translation: llmTranslation }
@@ -98,7 +98,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
 
   const handleChatSaveToDict = useCallback((en) => {
     if (!chatSelectedWord || !en.trim()) return;
-    saveToUserDict(chatSelectedWord.word, en);
+    saveToUserDict(chatSelectedWord.word, en, langCode);
     dismissChatWord();
   }, [chatSelectedWord, dismissChatWord]);
 

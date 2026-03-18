@@ -27,7 +27,7 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
 
   const handleSave = () => {
     if (!addForm?.en.trim()) return;
-    saveToUserDict(selectedWord.word, addForm.en);
+    saveToUserDict(selectedWord.word, addForm.en, langCode);
     onDismiss();
   };
 

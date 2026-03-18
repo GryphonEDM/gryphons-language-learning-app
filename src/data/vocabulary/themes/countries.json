@@ -1,0 +1,721 @@
+{
+  "setId": "countries",
+  "nameEn": "Countries",
+  "nameUk": "Країни",
+  "nameRu": "Страны",
+  "nameDe": "Länder",
+  "nameEs": "Países",
+  "nameFr": "Pays",
+  "nameEl": "Χώρες",
+  "nameHi": "देश",
+  "nameAr": "دول",
+  "nameKo": "나라",
+  "nameZh": "国家",
+  "nameJa": "国",
+  "difficulty": "A1",
+  "icon": "🌍",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "США",
+      "ru": "США",
+      "de": "USA",
+      "en": "USA",
+      "phoneticUk": "es-sha-A",
+      "phoneticRu": "es-she-A",
+      "phoneticDe": "oo-es-AH",
+      "es": "Estados Unidos",
+      "phoneticEs": "es-TAH-dohs oo-NEE-dohs",
+      "fr": "États-Unis",
+      "frPhonetic": "eh-tah-zoo-NEE",
+      "el": "ΗΠΑ",
+      "elPhonetic": "i-pi-A",
+      "hi": "अमेरिका",
+      "hiPhonetic": "a-ME-ri-kaa",
+      "ar": "الولايات المتحدة",
+      "arPhonetic": "al-wi-LAA-yaat al-mut-TA-hi-da",
+      "ko": "미국",
+      "koPhonetic": "MI-guk",
+      "zh": "美国",
+      "zhPhonetic": "měiguó",
+      "ja": "アメリカ",
+      "jaPhonetic": "amerika",
+      "examples": {
+        "uk": [
+          "США — велика країна в Північній Америці.",
+          "Вашингтон — столиця США."
+        ],
+        "en": [
+          "The USA is a large country in North America.",
+          "Washington is the capital of the USA."
+        ]
+      }
+    },
+    {
+      "uk": "Китай",
+      "ru": "Китай",
+      "de": "China",
+      "en": "China",
+      "phoneticUk": "kytay",
+      "phoneticRu": "kitay",
+      "phoneticDe": "KHEE-nah",
+      "es": "China",
+      "phoneticEs": "CHEE-nah",
+      "fr": "Chine",
+      "frPhonetic": "SHEEN",
+      "el": "Κίνα",
+      "elPhonetic": "KI-na",
+      "hi": "चीन",
+      "hiPhonetic": "CHEEN",
+      "ar": "الصين",
+      "arPhonetic": "as-SEEN",
+      "ko": "중국",
+      "koPhonetic": "JUNG-guk",
+      "zh": "中国",
+      "zhPhonetic": "zhōngguó",
+      "ja": "中国",
+      "jaPhonetic": "chuugoku",
+      "examples": {
+        "uk": [
+          "Китай має найбільше населення у світі.",
+          "Великий мур знаходиться в Китаї."
+        ],
+        "en": [
+          "China has the largest population in the world.",
+          "The Great Wall is in China."
+        ]
+      }
+    },
+    {
+      "uk": "Японія",
+      "ru": "Япония",
+      "de": "Japan",
+      "en": "Japan",
+      "phoneticUk": "yaponiya",
+      "phoneticRu": "yaponiya",
+      "phoneticDe": "ya-PAN",
+      "es": "Japón",
+      "phoneticEs": "ha-PON",
+      "fr": "Japon",
+      "frPhonetic": "zha-PON",
+      "el": "Ιαπωνία",
+      "elPhonetic": "ia-po-NI-a",
+      "hi": "जापान",
+      "hiPhonetic": "jaa-PAAN",
+      "ar": "اليابان",
+      "arPhonetic": "al-yaa-BAAN",
+      "ko": "일본",
+      "koPhonetic": "IL-bon",
+      "zh": "日本",
+      "zhPhonetic": "rìběn",
+      "ja": "日本",
+      "jaPhonetic": "nihon",
+      "examples": {
+        "uk": [
+          "Японія — острівна країна в Азії.",
+          "Токіо — столиця Японії."
+        ],
+        "en": [
+          "Japan is an island country in Asia.",
+          "Tokyo is the capital of Japan."
+        ]
+      }
+    },
+    {
+      "uk": "Німеччина",
+      "ru": "Германия",
+      "de": "Deutschland",
+      "en": "Germany",
+      "phoneticUk": "nimechchyna",
+      "phoneticRu": "germaniya",
+      "phoneticDe": "DOYCH-lant",
+      "es": "Alemania",
+      "phoneticEs": "ah-leh-MAH-nyah",
+      "fr": "Allemagne",
+      "frPhonetic": "al-MAHN-yuh",
+      "el": "Γερμανία",
+      "elPhonetic": "yer-ma-NI-a",
+      "hi": "जर्मनी",
+      "hiPhonetic": "JAR-ma-nee",
+      "ar": "ألمانيا",
+      "arPhonetic": "al-MAA-nee-yaa",
+      "ko": "독일",
+      "koPhonetic": "DOG-il",
+      "zh": "德国",
+      "zhPhonetic": "déguó",
+      "ja": "ドイツ",
+      "jaPhonetic": "doitsu",
+      "examples": {
+        "uk": [
+          "Німеччина знаходиться в центрі Європи.",
+          "Берлін — столиця Німеччини."
+        ],
+        "en": [
+          "Germany is in the center of Europe.",
+          "Berlin is the capital of Germany."
+        ]
+      }
+    },
+    {
+      "uk": "Франція",
+      "ru": "Франция",
+      "de": "Frankreich",
+      "en": "France",
+      "phoneticUk": "frantsiya",
+      "phoneticRu": "frantsiya",
+      "phoneticDe": "FRANK-raykh",
+      "es": "Francia",
+      "phoneticEs": "FRAN-thyah",
+      "fr": "France",
+      "frPhonetic": "FRAHNS",
+      "el": "Γαλλία",
+      "elPhonetic": "gha-LI-a",
+      "hi": "फ़्रांस",
+      "hiPhonetic": "FRAANS",
+      "ar": "فرنسا",
+      "arPhonetic": "FA-ran-saa",
+      "ko": "프랑스",
+      "koPhonetic": "PEU-rang-seu",
+      "zh": "法国",
+      "zhPhonetic": "fǎguó",
+      "ja": "フランス",
+      "jaPhonetic": "furansu",
+      "examples": {
+        "uk": [
+          "Франція відома Ейфелевою вежею.",
+          "Париж — столиця Франції."
+        ],
+        "en": [
+          "France is famous for the Eiffel Tower.",
+          "Paris is the capital of France."
+        ]
+      }
+    },
+    {
+      "uk": "Іспанія",
+      "ru": "Испания",
+      "de": "Spanien",
+      "en": "Spain",
+      "phoneticUk": "ispaniya",
+      "phoneticRu": "ispaniya",
+      "phoneticDe": "SHPAH-nee-en",
+      "es": "España",
+      "phoneticEs": "es-PAH-nyah",
+      "fr": "Espagne",
+      "frPhonetic": "es-PAN-yuh",
+      "el": "Ισπανία",
+      "elPhonetic": "is-pa-NI-a",
+      "hi": "स्पेन",
+      "hiPhonetic": "SPEN",
+      "ar": "إسبانيا",
+      "arPhonetic": "is-BAA-nee-yaa",
+      "ko": "스페인",
+      "koPhonetic": "SEU-pe-in",
+      "zh": "西班牙",
+      "zhPhonetic": "xībānyá",
+      "ja": "スペイン",
+      "jaPhonetic": "supein",
+      "examples": {
+        "uk": [
+          "Іспанія — сонячна країна на півдні Європи.",
+          "Мадрид — столиця Іспанії."
+        ],
+        "en": [
+          "Spain is a sunny country in southern Europe.",
+          "Madrid is the capital of Spain."
+        ]
+      }
+    },
+    {
+      "uk": "Італія",
+      "ru": "Италия",
+      "de": "Italien",
+      "en": "Italy",
+      "phoneticUk": "italiya",
+      "phoneticRu": "italiya",
+      "phoneticDe": "ee-TAH-lee-en",
+      "es": "Italia",
+      "phoneticEs": "ee-TAH-lyah",
+      "fr": "Italie",
+      "frPhonetic": "ee-ta-LEE",
+      "el": "Ιταλία",
+      "elPhonetic": "i-ta-LI-a",
+      "hi": "इटली",
+      "hiPhonetic": "IT-lee",
+      "ar": "إيطاليا",
+      "arPhonetic": "ee-TAA-lee-yaa",
+      "ko": "이탈리아",
+      "koPhonetic": "I-tal-li-a",
+      "zh": "意大利",
+      "zhPhonetic": "yìdàlì",
+      "ja": "イタリア",
+      "jaPhonetic": "itaria",
+      "examples": {
+        "uk": [
+          "Італія відома своєю кухнею та мистецтвом.",
+          "Рим — столиця Італії."
+        ],
+        "en": [
+          "Italy is famous for its cuisine and art.",
+          "Rome is the capital of Italy."
+        ]
+      }
+    },
+    {
+      "uk": "Бразилія",
+      "ru": "Бразилия",
+      "de": "Brasilien",
+      "en": "Brazil",
+      "phoneticUk": "brazyliya",
+      "phoneticRu": "braziliya",
+      "phoneticDe": "bra-ZEE-lee-en",
+      "es": "Brasil",
+      "phoneticEs": "bra-SEEL",
+      "fr": "Brésil",
+      "frPhonetic": "breh-ZEEL",
+      "el": "Βραζιλία",
+      "elPhonetic": "vra-zi-LI-a",
+      "hi": "ब्राज़ील",
+      "hiPhonetic": "braa-ZEEL",
+      "ar": "البرازيل",
+      "arPhonetic": "al-bra-ZEEL",
+      "ko": "브라질",
+      "koPhonetic": "BEU-ra-jil",
+      "zh": "巴西",
+      "zhPhonetic": "bāxī",
+      "ja": "ブラジル",
+      "jaPhonetic": "burajiru",
+      "examples": {
+        "uk": [
+          "Бразилія — найбільша країна Південної Америки.",
+          "У Бразилії ростуть тропічні ліси."
+        ],
+        "en": [
+          "Brazil is the largest country in South America.",
+          "Tropical forests grow in Brazil."
+        ]
+      }
+    },
+    {
+      "uk": "Індія",
+      "ru": "Индия",
+      "de": "Indien",
+      "en": "India",
+      "phoneticUk": "indiya",
+      "phoneticRu": "indiya",
+      "phoneticDe": "IN-dee-en",
+      "es": "India",
+      "phoneticEs": "IN-dyah",
+      "fr": "Inde",
+      "frPhonetic": "AND",
+      "el": "Ινδία",
+      "elPhonetic": "in-DI-a",
+      "hi": "भारत",
+      "hiPhonetic": "BHAA-rat",
+      "ar": "الهند",
+      "arPhonetic": "al-HIND",
+      "ko": "인도",
+      "koPhonetic": "IN-do",
+      "zh": "印度",
+      "zhPhonetic": "yìndù",
+      "ja": "インド",
+      "jaPhonetic": "indo",
+      "examples": {
+        "uk": [
+          "Індія — дуже велика країна в Азії.",
+          "Нью-Делі — столиця Індії."
+        ],
+        "en": [
+          "India is a very large country in Asia.",
+          "New Delhi is the capital of India."
+        ]
+      }
+    },
+    {
+      "uk": "Росія",
+      "ru": "Россия",
+      "de": "Russland",
+      "en": "Russia",
+      "phoneticUk": "rosiya",
+      "phoneticRu": "rossiya",
+      "phoneticDe": "ROOS-lant",
+      "es": "Rusia",
+      "phoneticEs": "ROO-syah",
+      "fr": "Russie",
+      "frPhonetic": "roo-SEE",
+      "el": "Ρωσία",
+      "elPhonetic": "ro-SI-a",
+      "hi": "रूस",
+      "hiPhonetic": "ROOS",
+      "ar": "روسيا",
+      "arPhonetic": "ROO-see-yaa",
+      "ko": "러시아",
+      "koPhonetic": "REO-si-a",
+      "zh": "俄罗斯",
+      "zhPhonetic": "éluósī",
+      "ja": "ロシア",
+      "jaPhonetic": "roshia",
+      "examples": {
+        "uk": [
+          "Росія — найбільша країна у світі за площею.",
+          "Москва — столиця Росії."
+        ],
+        "en": [
+          "Russia is the largest country in the world by area.",
+          "Moscow is the capital of Russia."
+        ]
+      }
+    },
+    {
+      "uk": "Канада",
+      "ru": "Канада",
+      "de": "Kanada",
+      "en": "Canada",
+      "phoneticUk": "kanada",
+      "phoneticRu": "kanada",
+      "phoneticDe": "KA-na-da",
+      "es": "Canadá",
+      "phoneticEs": "ka-na-DAH",
+      "fr": "Canada",
+      "frPhonetic": "ka-na-DA",
+      "el": "Καναδάς",
+      "elPhonetic": "ka-na-DAS",
+      "hi": "कनाडा",
+      "hiPhonetic": "ka-NAA-daa",
+      "ar": "كندا",
+      "arPhonetic": "KA-na-daa",
+      "ko": "캐나다",
+      "koPhonetic": "KE-na-da",
+      "zh": "加拿大",
+      "zhPhonetic": "jiānádà",
+      "ja": "カナダ",
+      "jaPhonetic": "kanada",
+      "examples": {
+        "uk": [
+          "Канада знаходиться на півночі Америки.",
+          "Оттава — столиця Канади."
+        ],
+        "en": [
+          "Canada is in the north of America.",
+          "Ottawa is the capital of Canada."
+        ]
+      }
+    },
+    {
+      "uk": "Австралія",
+      "ru": "Австралия",
+      "de": "Australien",
+      "en": "Australia",
+      "phoneticUk": "avstraliya",
+      "phoneticRu": "avstraliya",
+      "phoneticDe": "ow-STRAH-lee-en",
+      "es": "Australia",
+      "phoneticEs": "ow-STRAH-lyah",
+      "fr": "Australie",
+      "frPhonetic": "oh-stra-LEE",
+      "el": "Αυστραλία",
+      "elPhonetic": "af-stra-LI-a",
+      "hi": "ऑस्ट्रेलिया",
+      "hiPhonetic": "OS-tre-li-yaa",
+      "ar": "أستراليا",
+      "arPhonetic": "us-TRAA-lee-yaa",
+      "ko": "호주",
+      "koPhonetic": "HO-ju",
+      "zh": "澳大利亚",
+      "zhPhonetic": "àodàlìyà",
+      "ja": "オーストラリア",
+      "jaPhonetic": "oosutoraria",
+      "examples": {
+        "uk": [
+          "Австралія — і країна, і континент.",
+          "Канберра — столиця Австралії."
+        ],
+        "en": [
+          "Australia is both a country and a continent.",
+          "Canberra is the capital of Australia."
+        ]
+      }
+    },
+    {
+      "uk": "Мексика",
+      "ru": "Мексика",
+      "de": "Mexiko",
+      "en": "Mexico",
+      "phoneticUk": "meksyka",
+      "phoneticRu": "meksika",
+      "phoneticDe": "MEK-si-ko",
+      "es": "México",
+      "phoneticEs": "MEH-hee-koh",
+      "fr": "Mexique",
+      "frPhonetic": "mek-SEEK",
+      "el": "Μεξικό",
+      "elPhonetic": "mek-si-KO",
+      "hi": "मेक्सिको",
+      "hiPhonetic": "MEK-si-ko",
+      "ar": "المكسيك",
+      "arPhonetic": "al-MAK-seek",
+      "ko": "멕시코",
+      "koPhonetic": "MEK-si-ko",
+      "zh": "墨西哥",
+      "zhPhonetic": "mòxīgē",
+      "ja": "メキシコ",
+      "jaPhonetic": "mekishiko",
+      "examples": {
+        "uk": [
+          "Мексика знаходиться на півдні Північної Америки.",
+          "Мехіко — столиця Мексики."
+        ],
+        "en": [
+          "Mexico is in the south of North America.",
+          "Mexico City is the capital of Mexico."
+        ]
+      }
+    },
+    {
+      "uk": "Південна Корея",
+      "ru": "Южная Корея",
+      "de": "Südkorea",
+      "en": "South Korea",
+      "phoneticUk": "pivdenna koreya",
+      "phoneticRu": "yuzhnaya koreya",
+      "phoneticDe": "ZOOD-ko-reh-ah",
+      "es": "Corea del Sur",
+      "phoneticEs": "ko-REH-ah del SOOR",
+      "fr": "Corée du Sud",
+      "frPhonetic": "ko-REH doo SOOD",
+      "el": "Νότια Κορέα",
+      "elPhonetic": "NO-tia ko-RE-a",
+      "hi": "दक्षिण कोरिया",
+      "hiPhonetic": "dak-shin KO-ri-yaa",
+      "ar": "كوريا الجنوبية",
+      "arPhonetic": "KO-ree-yaa al-ja-NOO-bee-yaa",
+      "ko": "한국",
+      "koPhonetic": "HAN-guk",
+      "zh": "韩国",
+      "zhPhonetic": "hánguó",
+      "ja": "韓国",
+      "jaPhonetic": "kankoku",
+      "examples": {
+        "uk": [
+          "Південна Корея відома своїми технологіями.",
+          "Сеул — столиця Південної Кореї."
+        ],
+        "en": [
+          "South Korea is known for its technology.",
+          "Seoul is the capital of South Korea."
+        ]
+      }
+    },
+    {
+      "uk": "Велика Британія",
+      "ru": "Великобритания",
+      "de": "Vereinigtes Königreich",
+      "en": "United Kingdom",
+      "phoneticUk": "velyka brytaniya",
+      "phoneticRu": "velikobritaniya",
+      "phoneticDe": "fer-AY-nik-tes KER-nik-raykh",
+      "es": "Reino Unido",
+      "phoneticEs": "REH-ee-noh oo-NEE-doh",
+      "fr": "Royaume-Uni",
+      "frPhonetic": "rwa-YOHM oo-NEE",
+      "el": "Ηνωμένο Βασίλειο",
+      "elPhonetic": "i-no-ME-no va-SI-li-o",
+      "hi": "यूनाइटेड किंगडम",
+      "hiPhonetic": "yoo-NAI-ted KING-dam",
+      "ar": "المملكة المتحدة",
+      "arPhonetic": "al-MAM-la-ka al-mut-TA-hi-da",
+      "ko": "영국",
+      "koPhonetic": "YEONG-guk",
+      "zh": "英国",
+      "zhPhonetic": "yīngguó",
+      "ja": "イギリス",
+      "jaPhonetic": "igirisu",
+      "examples": {
+        "uk": [
+          "Велика Британія — острівна країна в Європі.",
+          "Лондон — столиця Великої Британії."
+        ],
+        "en": [
+          "The United Kingdom is an island country in Europe.",
+          "London is the capital of the United Kingdom."
+        ]
+      }
+    },
+    {
+      "uk": "Туреччина",
+      "ru": "Турция",
+      "de": "Türkei",
+      "en": "Turkey",
+      "phoneticUk": "turechchyna",
+      "phoneticRu": "turtsiya",
+      "phoneticDe": "TOOR-kay",
+      "es": "Turquía",
+      "phoneticEs": "tur-KEE-ah",
+      "fr": "Turquie",
+      "frPhonetic": "toor-KEE",
+      "el": "Τουρκία",
+      "elPhonetic": "tur-KI-a",
+      "hi": "तुर्की",
+      "hiPhonetic": "TUR-kee",
+      "ar": "تركيا",
+      "arPhonetic": "TUR-kee-yaa",
+      "ko": "터키",
+      "koPhonetic": "TEO-ki",
+      "zh": "土耳其",
+      "zhPhonetic": "tǔěrqí",
+      "ja": "トルコ",
+      "jaPhonetic": "toruko",
+      "examples": {
+        "uk": [
+          "Туреччина розташована між Європою та Азією.",
+          "Анкара — столиця Туреччини."
+        ],
+        "en": [
+          "Turkey is located between Europe and Asia.",
+          "Ankara is the capital of Turkey."
+        ]
+      }
+    },
+    {
+      "uk": "Єгипет",
+      "ru": "Египет",
+      "de": "Ägypten",
+      "en": "Egypt",
+      "phoneticUk": "yehypet",
+      "phoneticRu": "yegipet",
+      "phoneticDe": "eh-GOOP-ten",
+      "es": "Egipto",
+      "phoneticEs": "eh-HEEP-toh",
+      "fr": "Égypte",
+      "frPhonetic": "eh-ZHEE-pt",
+      "el": "Αίγυπτος",
+      "elPhonetic": "E-yip-tos",
+      "hi": "मिस्र",
+      "hiPhonetic": "MISR",
+      "ar": "مصر",
+      "arPhonetic": "MISR",
+      "ko": "이집트",
+      "koPhonetic": "I-jip-teu",
+      "zh": "埃及",
+      "zhPhonetic": "āijí",
+      "ja": "エジプト",
+      "jaPhonetic": "ejiputo",
+      "examples": {
+        "uk": [
+          "Єгипет відомий своїми пірамідами.",
+          "Каїр — столиця Єгипту."
+        ],
+        "en": [
+          "Egypt is famous for its pyramids.",
+          "Cairo is the capital of Egypt."
+        ]
+      }
+    },
+    {
+      "uk": "Україна",
+      "ru": "Украина",
+      "de": "Ukraine",
+      "en": "Ukraine",
+      "phoneticUk": "ukrayina",
+      "phoneticRu": "ukraina",
+      "phoneticDe": "oo-kra-EE-neh",
+      "es": "Ucrania",
+      "phoneticEs": "oo-KRAH-nyah",
+      "fr": "Ukraine",
+      "frPhonetic": "oo-KREN",
+      "el": "Ουκρανία",
+      "elPhonetic": "u-kra-NI-a",
+      "hi": "यूक्रेन",
+      "hiPhonetic": "YOO-kren",
+      "ar": "أوكرانيا",
+      "arPhonetic": "uk-RAA-nee-yaa",
+      "ko": "우크라이나",
+      "koPhonetic": "U-keu-ra-i-na",
+      "zh": "乌克兰",
+      "zhPhonetic": "wūkèlán",
+      "ja": "ウクライナ",
+      "jaPhonetic": "ukuraina",
+      "examples": {
+        "uk": [
+          "Україна — велика країна в Європі.",
+          "Київ — столиця України."
+        ],
+        "en": [
+          "Ukraine is a large country in Europe.",
+          "Kyiv is the capital of Ukraine."
+        ]
+      }
+    },
+    {
+      "uk": "Польща",
+      "ru": "Польша",
+      "de": "Polen",
+      "en": "Poland",
+      "phoneticUk": "polshcha",
+      "phoneticRu": "pol'sha",
+      "phoneticDe": "POH-len",
+      "es": "Polonia",
+      "phoneticEs": "po-LOH-nyah",
+      "fr": "Pologne",
+      "frPhonetic": "po-LON-yuh",
+      "el": "Πολωνία",
+      "elPhonetic": "po-lo-NI-a",
+      "hi": "पोलैंड",
+      "hiPhonetic": "PO-lend",
+      "ar": "بولندا",
+      "arPhonetic": "bo-LAN-daa",
+      "ko": "폴란드",
+      "koPhonetic": "POL-lan-deu",
+      "zh": "波兰",
+      "zhPhonetic": "bōlán",
+      "ja": "ポーランド",
+      "jaPhonetic": "poorando",
+      "examples": {
+        "uk": [
+          "Польща — сусідня країна України.",
+          "Варшава — столиця Польщі."
+        ],
+        "en": [
+          "Poland is a neighboring country of Ukraine.",
+          "Warsaw is the capital of Poland."
+        ]
+      }
+    },
+    {
+      "uk": "Аргентина",
+      "ru": "Аргентина",
+      "de": "Argentinien",
+      "en": "Argentina",
+      "phoneticUk": "arhentyna",
+      "phoneticRu": "argentina",
+      "phoneticDe": "ar-gen-TEE-nee-en",
+      "es": "Argentina",
+      "phoneticEs": "ar-hen-TEE-nah",
+      "fr": "Argentine",
+      "frPhonetic": "ar-zhon-TEEN",
+      "el": "Αργεντινή",
+      "elPhonetic": "ar-yen-di-NI",
+      "hi": "अर्जेंटीना",
+      "hiPhonetic": "ar-jen-TEE-naa",
+      "ar": "الأرجنتين",
+      "arPhonetic": "al-ar-jan-TEEN",
+      "ko": "아르헨티나",
+      "koPhonetic": "A-reu-hen-ti-na",
+      "zh": "阿根廷",
+      "zhPhonetic": "āgēntíng",
+      "ja": "アルゼンチン",
+      "jaPhonetic": "aruzenchin",
+      "examples": {
+        "uk": [
+          "Аргентина знаходиться в Південній Америці.",
+          "Буенос-Айрес — столиця Аргентини."
+        ],
+        "en": [
+          "Argentina is in South America.",
+          "Buenos Aires is the capital of Argentina."
+        ]
+      }
+    }
+  ]
+}

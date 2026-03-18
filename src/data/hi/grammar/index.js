@@ -19,6 +19,9 @@ import subjunctiveImperativeLesson from './subjunctive-imperative.json';
 import complexSentencesLesson from './complex-sentences.json';
 import idiomaticExpressionsLesson from './idiomatic-expressions.json';
 import reflexiveLesson from './reflexive.json';
+import ergativeAlignmentLesson from './ergative-alignment.json';
+import emphaticParticlesLesson from './emphatic-particles.json';
+import verbalAdjectivesLesson from './verbal-adjectives.json';
 
 export const GRAMMAR_LESSONS_HI = [
   alphabetLesson,
@@ -42,4 +45,7 @@ export const GRAMMAR_LESSONS_HI = [
   complexSentencesLesson,
   idiomaticExpressionsLesson,
   reflexiveLesson,
+  emphaticParticlesLesson,
+  ergativeAlignmentLesson,
+  verbalAdjectivesLesson,
 ];

@@ -1,0 +1,721 @@
+{
+  "setId": "nature",
+  "nameEn": "Nature",
+  "nameUk": "Природа",
+  "nameRu": "Природа",
+  "nameDe": "Natur",
+  "nameEs": "Naturaleza",
+  "nameFr": "Nature",
+  "nameEl": "Φύση",
+  "nameHi": "प्रकृति",
+  "nameAr": "طبيعة",
+  "nameKo": "자연",
+  "nameZh": "自然",
+  "nameJa": "自然",
+  "difficulty": "A1",
+  "icon": "🌿",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "дерево",
+      "ru": "дерево",
+      "de": "Baum",
+      "en": "tree",
+      "phoneticUk": "derevo",
+      "phoneticRu": "derevo",
+      "phoneticDe": "BAUM",
+      "es": "árbol",
+      "phoneticEs": "AR-bol",
+      "fr": "arbre",
+      "frPhonetic": "ARBRUH",
+      "el": "δέντρο",
+      "elPhonetic": "DEN-dro",
+      "hi": "पेड़",
+      "hiPhonetic": "PED",
+      "ar": "شَجَرَة",
+      "arPhonetic": "SHA-ja-ra",
+      "ko": "나무",
+      "koPhonetic": "NA-mu",
+      "zh": "树",
+      "zhPhonetic": "shù",
+      "ja": "木",
+      "jaPhonetic": "ki",
+      "examples": {
+        "uk": [
+          "Високе дерево росте біля нашого дому.",
+          "Діти граються під деревом."
+        ],
+        "en": [
+          "A tall tree grows near our house.",
+          "The children play under the tree."
+        ]
+      }
+    },
+    {
+      "uk": "квітка",
+      "ru": "цветок",
+      "de": "Blume",
+      "en": "flower",
+      "phoneticUk": "kvitka",
+      "phoneticRu": "tsvetok",
+      "phoneticDe": "BLOO-meh",
+      "es": "flor",
+      "phoneticEs": "FLOR",
+      "fr": "fleur",
+      "frPhonetic": "FLUHR",
+      "el": "λουλούδι",
+      "elPhonetic": "lu-LOU-di",
+      "hi": "फूल",
+      "hiPhonetic": "PHOOL",
+      "ar": "زَهْرَة",
+      "arPhonetic": "ZAH-ra",
+      "ko": "꽃",
+      "koPhonetic": "KKOT",
+      "zh": "花",
+      "zhPhonetic": "huā",
+      "ja": "花",
+      "jaPhonetic": "hana",
+      "examples": {
+        "uk": [
+          "Красива квітка цвіте в саду.",
+          "Він подарував їй букет квіток."
+        ],
+        "en": [
+          "A beautiful flower blooms in the garden.",
+          "He gave her a bouquet of flowers."
+        ]
+      }
+    },
+    {
+      "uk": "гора",
+      "ru": "гора",
+      "de": "Berg",
+      "en": "mountain",
+      "phoneticUk": "hora",
+      "phoneticRu": "gora",
+      "phoneticDe": "BEHRK",
+      "es": "montaña",
+      "phoneticEs": "mon-TAH-nyah",
+      "fr": "montagne",
+      "frPhonetic": "mon-TAN-yuh",
+      "el": "βουνό",
+      "elPhonetic": "vu-NO",
+      "hi": "पहाड़",
+      "hiPhonetic": "pa-HAAD",
+      "ar": "جَبَل",
+      "arPhonetic": "JA-bal",
+      "ko": "산",
+      "koPhonetic": "SAN",
+      "zh": "山",
+      "zhPhonetic": "shān",
+      "ja": "山",
+      "jaPhonetic": "yama",
+      "examples": {
+        "uk": [
+          "Високі гори вкриті снігом.",
+          "Ми піднялися на гору влітку."
+        ],
+        "en": [
+          "The tall mountains are covered with snow.",
+          "We climbed the mountain in summer."
+        ]
+      }
+    },
+    {
+      "uk": "річка",
+      "ru": "река",
+      "de": "Fluss",
+      "en": "river",
+      "phoneticUk": "richka",
+      "phoneticRu": "reka",
+      "phoneticDe": "FLOOS",
+      "es": "río",
+      "phoneticEs": "REE-oh",
+      "fr": "rivière",
+      "frPhonetic": "ree-VYEHR",
+      "el": "ποτάμι",
+      "elPhonetic": "po-TA-mi",
+      "hi": "नदी",
+      "hiPhonetic": "na-DEE",
+      "ar": "نَهْر",
+      "arPhonetic": "NAHR",
+      "ko": "강",
+      "koPhonetic": "GANG",
+      "zh": "河",
+      "zhPhonetic": "hé",
+      "ja": "川",
+      "jaPhonetic": "kawa",
+      "examples": {
+        "uk": [
+          "Річка тече через місто.",
+          "Ми купалися в річці влітку."
+        ],
+        "en": [
+          "The river flows through the city.",
+          "We swam in the river in summer."
+        ]
+      }
+    },
+    {
+      "uk": "озеро",
+      "ru": "озеро",
+      "de": "See",
+      "en": "lake",
+      "phoneticUk": "ozero",
+      "phoneticRu": "ozero",
+      "phoneticDe": "ZEH",
+      "es": "lago",
+      "phoneticEs": "LAH-goh",
+      "fr": "lac",
+      "frPhonetic": "LAK",
+      "el": "λίμνη",
+      "elPhonetic": "LIM-ni",
+      "hi": "झील",
+      "hiPhonetic": "JHEEL",
+      "ar": "بُحَيْرَة",
+      "arPhonetic": "bu-HAY-ra",
+      "ko": "호수",
+      "koPhonetic": "HO-su",
+      "zh": "湖",
+      "zhPhonetic": "hú",
+      "ja": "湖",
+      "jaPhonetic": "mizuumi",
+      "examples": {
+        "uk": [
+          "Тихе озеро знаходиться в горах.",
+          "Ми рибалили на озері."
+        ],
+        "en": [
+          "A quiet lake is in the mountains.",
+          "We fished on the lake."
+        ]
+      }
+    },
+    {
+      "uk": "океан",
+      "ru": "океан",
+      "de": "Ozean",
+      "en": "ocean",
+      "phoneticUk": "okean",
+      "phoneticRu": "okean",
+      "phoneticDe": "oh-tseh-AHN",
+      "es": "océano",
+      "phoneticEs": "oh-THEH-ah-noh",
+      "fr": "océan",
+      "frPhonetic": "oh-seh-AN",
+      "el": "ωκεανός",
+      "elPhonetic": "o-ke-a-NOS",
+      "hi": "महासागर",
+      "hiPhonetic": "ma-haa-SAA-gar",
+      "ar": "مُحِيط",
+      "arPhonetic": "mu-HEET",
+      "ko": "바다",
+      "koPhonetic": "BA-da",
+      "zh": "海洋",
+      "zhPhonetic": "hǎiyáng",
+      "ja": "海",
+      "jaPhonetic": "umi",
+      "examples": {
+        "uk": [
+          "Океан дуже глибокий і великий.",
+          "Ми бачили океан уперше."
+        ],
+        "en": [
+          "The ocean is very deep and vast.",
+          "We saw the ocean for the first time."
+        ]
+      }
+    },
+    {
+      "uk": "ліс",
+      "ru": "лес",
+      "de": "Wald",
+      "en": "forest",
+      "phoneticUk": "lis",
+      "phoneticRu": "les",
+      "phoneticDe": "VALT",
+      "es": "bosque",
+      "phoneticEs": "BOS-keh",
+      "fr": "forêt",
+      "frPhonetic": "fo-REH",
+      "el": "δάσος",
+      "elPhonetic": "DA-sos",
+      "hi": "जंगल",
+      "hiPhonetic": "JAN-gal",
+      "ar": "غَابَة",
+      "arPhonetic": "GHAA-ba",
+      "ko": "숲",
+      "koPhonetic": "SUP",
+      "zh": "森林",
+      "zhPhonetic": "sēnlín",
+      "ja": "森",
+      "jaPhonetic": "mori",
+      "examples": {
+        "uk": [
+          "У лісі росте багато грибів.",
+          "Ми гуляли по лісу цілий день."
+        ],
+        "en": [
+          "Many mushrooms grow in the forest.",
+          "We walked in the forest all day."
+        ]
+      }
+    },
+    {
+      "uk": "сонце",
+      "ru": "солнце",
+      "de": "Sonne",
+      "en": "sun",
+      "phoneticUk": "sontse",
+      "phoneticRu": "solntse",
+      "phoneticDe": "ZON-neh",
+      "es": "sol",
+      "phoneticEs": "SOL",
+      "fr": "soleil",
+      "frPhonetic": "so-LAY",
+      "el": "ήλιος",
+      "elPhonetic": "I-li-os",
+      "hi": "सूरज",
+      "hiPhonetic": "SOO-raj",
+      "ar": "شَمْس",
+      "arPhonetic": "SHAMS",
+      "ko": "태양",
+      "koPhonetic": "TE-yang",
+      "zh": "太阳",
+      "zhPhonetic": "tàiyáng",
+      "ja": "太陽",
+      "jaPhonetic": "taiyou",
+      "examples": {
+        "uk": [
+          "Сонце світить яскраво сьогодні.",
+          "Сонце сідає за горизонт увечері."
+        ],
+        "en": [
+          "The sun is shining brightly today.",
+          "The sun sets on the horizon in the evening."
+        ]
+      }
+    },
+    {
+      "uk": "місяць",
+      "ru": "луна",
+      "de": "Mond",
+      "en": "moon",
+      "phoneticUk": "misyats",
+      "phoneticRu": "luna",
+      "phoneticDe": "MOHNT",
+      "es": "luna",
+      "phoneticEs": "LOO-nah",
+      "fr": "lune",
+      "frPhonetic": "LOON",
+      "el": "φεγγάρι",
+      "elPhonetic": "fen-GA-ri",
+      "hi": "चाँद",
+      "hiPhonetic": "CHAAND",
+      "ar": "قَمَر",
+      "arPhonetic": "QA-mar",
+      "ko": "달",
+      "koPhonetic": "DAL",
+      "zh": "月亮",
+      "zhPhonetic": "yuèliàng",
+      "ja": "月",
+      "jaPhonetic": "tsuki",
+      "examples": {
+        "uk": [
+          "Повний місяць освітлює ніч.",
+          "Місяць видно на небі вночі."
+        ],
+        "en": [
+          "The full moon lights up the night.",
+          "The moon is visible in the sky at night."
+        ]
+      }
+    },
+    {
+      "uk": "зірка",
+      "ru": "звезда",
+      "de": "Stern",
+      "en": "star",
+      "phoneticUk": "zirka",
+      "phoneticRu": "zvezda",
+      "phoneticDe": "SHTERN",
+      "es": "estrella",
+      "phoneticEs": "es-TREH-yah",
+      "fr": "étoile",
+      "frPhonetic": "eh-TWAL",
+      "el": "αστέρι",
+      "elPhonetic": "a-STE-ri",
+      "hi": "तारा",
+      "hiPhonetic": "TAA-raa",
+      "ar": "نَجْم",
+      "arPhonetic": "NAJM",
+      "ko": "별",
+      "koPhonetic": "BYEOL",
+      "zh": "星星",
+      "zhPhonetic": "xīngxing",
+      "ja": "星",
+      "jaPhonetic": "hoshi",
+      "examples": {
+        "uk": [
+          "На небі сяють тисячі зірок.",
+          "Найяскравіша зірка — це Сіріус."
+        ],
+        "en": [
+          "Thousands of stars shine in the sky.",
+          "The brightest star is Sirius."
+        ]
+      }
+    },
+    {
+      "uk": "дощ",
+      "ru": "дождь",
+      "de": "Regen",
+      "en": "rain",
+      "phoneticUk": "doshch",
+      "phoneticRu": "dozhd'",
+      "phoneticDe": "REH-gen",
+      "es": "lluvia",
+      "phoneticEs": "YOO-vyah",
+      "fr": "pluie",
+      "frPhonetic": "PLOO-ee",
+      "el": "βροχή",
+      "elPhonetic": "vro-HI",
+      "hi": "बारिश",
+      "hiPhonetic": "BAA-rish",
+      "ar": "مَطَر",
+      "arPhonetic": "MA-tar",
+      "ko": "비",
+      "koPhonetic": "BI",
+      "zh": "雨",
+      "zhPhonetic": "yǔ",
+      "ja": "雨",
+      "jaPhonetic": "ame",
+      "examples": {
+        "uk": [
+          "Сьогодні цілий день іде дощ.",
+          "Після дощу з'явилася веселка."
+        ],
+        "en": [
+          "It has been raining all day today.",
+          "A rainbow appeared after the rain."
+        ]
+      }
+    },
+    {
+      "uk": "сніг",
+      "ru": "снег",
+      "de": "Schnee",
+      "en": "snow",
+      "phoneticUk": "snih",
+      "phoneticRu": "sneg",
+      "phoneticDe": "SHNEH",
+      "es": "nieve",
+      "phoneticEs": "NYEH-beh",
+      "fr": "neige",
+      "frPhonetic": "NEZH",
+      "el": "χιόνι",
+      "elPhonetic": "KHIO-ni",
+      "hi": "बर्फ़",
+      "hiPhonetic": "BARF",
+      "ar": "ثَلْج",
+      "arPhonetic": "THALJ",
+      "ko": "눈",
+      "koPhonetic": "NUN",
+      "zh": "雪",
+      "zhPhonetic": "xuě",
+      "ja": "雪",
+      "jaPhonetic": "yuki",
+      "examples": {
+        "uk": [
+          "Білий сніг вкрив усе навколо.",
+          "Діти ліплять сніговика зі снігу."
+        ],
+        "en": [
+          "White snow covered everything around.",
+          "The children are making a snowman out of snow."
+        ]
+      }
+    },
+    {
+      "uk": "вітер",
+      "ru": "ветер",
+      "de": "Wind",
+      "en": "wind",
+      "phoneticUk": "viter",
+      "phoneticRu": "veter",
+      "phoneticDe": "VINT",
+      "es": "viento",
+      "phoneticEs": "BYEN-toh",
+      "fr": "vent",
+      "frPhonetic": "VON",
+      "el": "άνεμος",
+      "elPhonetic": "A-ne-mos",
+      "hi": "हवा",
+      "hiPhonetic": "ha-VAA",
+      "ar": "رِيح",
+      "arPhonetic": "REEH",
+      "ko": "바람",
+      "koPhonetic": "BA-ram",
+      "zh": "风",
+      "zhPhonetic": "fēng",
+      "ja": "風",
+      "jaPhonetic": "kaze",
+      "examples": {
+        "uk": [
+          "Сильний вітер дме з моря.",
+          "Вітер зірвав листя з дерев."
+        ],
+        "en": [
+          "A strong wind blows from the sea.",
+          "The wind tore the leaves off the trees."
+        ]
+      }
+    },
+    {
+      "uk": "хмара",
+      "ru": "облако",
+      "de": "Wolke",
+      "en": "cloud",
+      "phoneticUk": "khmara",
+      "phoneticRu": "oblako",
+      "phoneticDe": "VOL-keh",
+      "es": "nube",
+      "phoneticEs": "NOO-beh",
+      "fr": "nuage",
+      "frPhonetic": "noo-AZSH",
+      "el": "σύννεφο",
+      "elPhonetic": "SI-ne-fo",
+      "hi": "बादल",
+      "hiPhonetic": "BAA-dal",
+      "ar": "سَحَابَة",
+      "arPhonetic": "sa-HAA-ba",
+      "ko": "구름",
+      "koPhonetic": "GU-reum",
+      "zh": "云",
+      "zhPhonetic": "yún",
+      "ja": "雲",
+      "jaPhonetic": "kumo",
+      "examples": {
+        "uk": [
+          "Білі хмари пливуть по небу.",
+          "Темні хмари означають дощ."
+        ],
+        "en": [
+          "White clouds float across the sky.",
+          "Dark clouds mean rain."
+        ]
+      }
+    },
+    {
+      "uk": "небо",
+      "ru": "небо",
+      "de": "Himmel",
+      "en": "sky",
+      "phoneticUk": "nebo",
+      "phoneticRu": "nebo",
+      "phoneticDe": "HIM-mel",
+      "es": "cielo",
+      "phoneticEs": "THYEH-loh",
+      "fr": "ciel",
+      "frPhonetic": "SYEL",
+      "el": "ουρανός",
+      "elPhonetic": "u-ra-NOS",
+      "hi": "आकाश",
+      "hiPhonetic": "aa-KAASH",
+      "ar": "سَمَاء",
+      "arPhonetic": "sa-MAA",
+      "ko": "하늘",
+      "koPhonetic": "HA-neul",
+      "zh": "天空",
+      "zhPhonetic": "tiānkōng",
+      "ja": "空",
+      "jaPhonetic": "sora",
+      "examples": {
+        "uk": [
+          "Небо сьогодні блакитне і чисте.",
+          "Птахи летять високо в небі."
+        ],
+        "en": [
+          "The sky is blue and clear today.",
+          "Birds fly high in the sky."
+        ]
+      }
+    },
+    {
+      "uk": "трава",
+      "ru": "трава",
+      "de": "Gras",
+      "en": "grass",
+      "phoneticUk": "trava",
+      "phoneticRu": "trava",
+      "phoneticDe": "GRAHS",
+      "es": "hierba",
+      "phoneticEs": "YEHR-bah",
+      "fr": "herbe",
+      "frPhonetic": "EHRB",
+      "el": "γρασίδι",
+      "elPhonetic": "ghra-SI-di",
+      "hi": "घास",
+      "hiPhonetic": "GHAAS",
+      "ar": "عُشْب",
+      "arPhonetic": "USHB",
+      "ko": "풀",
+      "koPhonetic": "PUL",
+      "zh": "草",
+      "zhPhonetic": "cǎo",
+      "ja": "草",
+      "jaPhonetic": "kusa",
+      "examples": {
+        "uk": [
+          "Зелена трава росте в парку.",
+          "Діти бігають по траві босоніж."
+        ],
+        "en": [
+          "Green grass grows in the park.",
+          "Children run barefoot on the grass."
+        ]
+      }
+    },
+    {
+      "uk": "камінь",
+      "ru": "камень",
+      "de": "Stein",
+      "en": "stone",
+      "phoneticUk": "kamin'",
+      "phoneticRu": "kamen'",
+      "phoneticDe": "SHTAYN",
+      "es": "piedra",
+      "phoneticEs": "PYEH-drah",
+      "fr": "pierre",
+      "frPhonetic": "PYEHR",
+      "el": "πέτρα",
+      "elPhonetic": "PE-tra",
+      "hi": "पत्थर",
+      "hiPhonetic": "PAT-thar",
+      "ar": "حَجَر",
+      "arPhonetic": "HA-jar",
+      "ko": "돌",
+      "koPhonetic": "DOL",
+      "zh": "石头",
+      "zhPhonetic": "shítou",
+      "ja": "石",
+      "jaPhonetic": "ishi",
+      "examples": {
+        "uk": [
+          "Великий камінь лежить біля річки.",
+          "Дорога вимощена каменем."
+        ],
+        "en": [
+          "A large stone lies by the river.",
+          "The road is paved with stone."
+        ]
+      }
+    },
+    {
+      "uk": "острів",
+      "ru": "остров",
+      "de": "Insel",
+      "en": "island",
+      "phoneticUk": "ostriv",
+      "phoneticRu": "ostrov",
+      "phoneticDe": "IN-zel",
+      "es": "isla",
+      "phoneticEs": "EES-lah",
+      "fr": "île",
+      "frPhonetic": "EEL",
+      "el": "νησί",
+      "elPhonetic": "ni-SI",
+      "hi": "द्वीप",
+      "hiPhonetic": "DVEEP",
+      "ar": "جَزِيرَة",
+      "arPhonetic": "ja-ZEE-ra",
+      "ko": "섬",
+      "koPhonetic": "SEOM",
+      "zh": "岛",
+      "zhPhonetic": "dǎo",
+      "ja": "島",
+      "jaPhonetic": "shima",
+      "examples": {
+        "uk": [
+          "На острові є красивий пляж.",
+          "Ми подорожували на тропічний острів."
+        ],
+        "en": [
+          "There is a beautiful beach on the island.",
+          "We traveled to a tropical island."
+        ]
+      }
+    },
+    {
+      "uk": "пустеля",
+      "ru": "пустыня",
+      "de": "Wüste",
+      "en": "desert",
+      "phoneticUk": "pustelya",
+      "phoneticRu": "pustynya",
+      "phoneticDe": "VOO-steh",
+      "es": "desierto",
+      "phoneticEs": "deh-SYEHR-toh",
+      "fr": "désert",
+      "frPhonetic": "deh-ZEHR",
+      "el": "έρημος",
+      "elPhonetic": "E-ri-mos",
+      "hi": "रेगिस्तान",
+      "hiPhonetic": "re-gis-TAAN",
+      "ar": "صَحْرَاء",
+      "arPhonetic": "SAH-raa",
+      "ko": "사막",
+      "koPhonetic": "SA-mak",
+      "zh": "沙漠",
+      "zhPhonetic": "shāmò",
+      "ja": "砂漠",
+      "jaPhonetic": "sabaku",
+      "examples": {
+        "uk": [
+          "У пустелі дуже спекотно вдень.",
+          "Сахара — найбільша пустеля у світі."
+        ],
+        "en": [
+          "It is very hot in the desert during the day.",
+          "The Sahara is the largest desert in the world."
+        ]
+      }
+    },
+    {
+      "uk": "долина",
+      "ru": "долина",
+      "de": "Tal",
+      "en": "valley",
+      "phoneticUk": "dolyna",
+      "phoneticRu": "dolina",
+      "phoneticDe": "TAHL",
+      "es": "valle",
+      "phoneticEs": "BAH-yeh",
+      "fr": "vallée",
+      "frPhonetic": "va-LEH",
+      "el": "κοιλάδα",
+      "elPhonetic": "ki-LA-da",
+      "hi": "घाटी",
+      "hiPhonetic": "GHAA-tee",
+      "ar": "وَادٍ",
+      "arPhonetic": "WAA-din",
+      "ko": "골짜기",
+      "koPhonetic": "GOL-jja-gi",
+      "zh": "山谷",
+      "zhPhonetic": "shāngǔ",
+      "ja": "谷",
+      "jaPhonetic": "tani",
+      "examples": {
+        "uk": [
+          "Зелена долина лежить між горами.",
+          "У долині тече маленька річка."
+        ],
+        "en": [
+          "A green valley lies between the mountains.",
+          "A small river flows through the valley."
+        ]
+      }
+    }
+  ]
+}

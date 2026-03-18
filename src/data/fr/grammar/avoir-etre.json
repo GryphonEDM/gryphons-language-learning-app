@@ -83,9 +83,11 @@
         {
           "type": "fill-blank",
           "prompt": "Ils _____ envie de partir. (They want to leave.)",
-          "answer": "ont",
           "hint": "Third person plural of avoir",
-          "explanation": "Ils ont envie de = they want to / feel like."
+          "explanation": "Ils ont envie de = they want to / feel like.",
+          "acceptedAnswers": [
+            "ont"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -101,9 +103,11 @@
         {
           "type": "fill-blank",
           "prompt": "Nous _____ raison. (We are right.)",
-          "answer": "avons",
           "hint": "First person plural of avoir",
-          "explanation": "Avoir raison means to be right: nous avons raison."
+          "explanation": "Avoir raison means to be right: nous avons raison.",
+          "acceptedAnswers": [
+            "avons"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -119,9 +123,11 @@
         {
           "type": "fill-blank",
           "prompt": "Tu _____ besoin de dormir. (You need to sleep.)",
-          "answer": "as",
           "hint": "Second person singular of avoir",
-          "explanation": "Avoir besoin de means to need: tu as besoin de."
+          "explanation": "Avoir besoin de means to need: tu as besoin de.",
+          "acceptedAnswers": [
+            "as"
+          ]
         }
       ]
     },
@@ -188,9 +194,11 @@
         {
           "type": "fill-blank",
           "prompt": "Vous _____ très gentils. (You are very kind.)",
-          "answer": "êtes",
           "hint": "Second person plural of être",
-          "explanation": "Vous êtes is the second person plural (formal or group) of être."
+          "explanation": "Vous êtes is the second person plural (formal or group) of être.",
+          "acceptedAnswers": [
+            "êtes"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -206,9 +214,11 @@
         {
           "type": "fill-blank",
           "prompt": "Ils _____ nés en France. (They were born in France.)",
-          "answer": "sont",
           "hint": "Third person plural of être",
-          "explanation": "Naître uses être as auxiliary in passé composé: ils sont nés."
+          "explanation": "Naître uses être as auxiliary in passé composé: ils sont nés.",
+          "acceptedAnswers": [
+            "sont"
+          ]
         },
         {
           "type": "multiple-choice",
@@ -235,9 +245,11 @@
         {
           "type": "fill-blank",
           "prompt": "Tu _____ très courageux. (You are very brave.)",
-          "answer": "es",
           "hint": "Second person singular of être",
-          "explanation": "Tu es is the second person singular of être."
+          "explanation": "Tu es is the second person singular of être.",
+          "acceptedAnswers": [
+            "es"
+          ]
         }
       ]
     }

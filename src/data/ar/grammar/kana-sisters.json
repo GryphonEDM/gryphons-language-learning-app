@@ -1,0 +1,210 @@
+{
+  "lessonId": "kana-sisters",
+  "nameEn": "Sisters of Kaana",
+  "nameAr": "كَانَ وَأَخَوَاتُهَا",
+  "icon": "👯",
+  "tier": "A2",
+  "prerequisites": ["nominal-sentences"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "kana-basics",
+      "title": "كَانَ — Past Tense Copula",
+      "explanation": "In Arabic, nominal sentences (الجُمْلَة الاسْمِيَّة) do not need a verb 'to be' in the present tense: البَيْتُ كَبِيرٌ (The house is big). But when you want to express the past ('was'), you use كَانَ. When كَانَ enters a nominal sentence, it changes the predicate (الخَبَر) from nominative to accusative. The subject (الاسم) remains nominative. So البَيْتُ كَبِيرٌ (The house is big) becomes كَانَ البَيْتُ كَبِيرًا (The house was big). Notice: كَبِيرٌ (nominative, with damma/tanween) changed to كَبِيرًا (accusative, with fatha/tanween). كَانَ is conjugated for person, gender, and number like any Arabic verb: كُنْتُ (I was), كُنْتَ (you m. were), كَانَتْ (she was), كَانُوا (they m. were), etc.",
+      "tip": "Remember: كَانَ keeps the subject in the nominative (مَرْفُوع) but puts the predicate in the accusative (مَنْصُوب). Think of it as: كَانَ 'steals' the damma from the predicate and replaces it with fatha.",
+      "examples": [
+        {
+          "ar": "كَانَ الجَوُّ حَارًّا",
+          "en": "The weather was hot.",
+          "highlight": "كَانَ"
+        },
+        {
+          "ar": "كَانَتِ المَدِينَةُ جَمِيلَةً",
+          "en": "The city was beautiful.",
+          "highlight": "كَانَتِ"
+        },
+        {
+          "ar": "كُنْتُ طَالِبًا",
+          "en": "I was a student.",
+          "highlight": "كُنْتُ"
+        },
+        {
+          "ar": "كَانُوا سُعَدَاءَ",
+          "en": "They were happy.",
+          "highlight": "كَانُوا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to the predicate (خَبَر) when كَانَ enters a nominal sentence?",
+          "options": [
+            "It stays nominative (مَرْفُوع)",
+            "It becomes accusative (مَنْصُوب)",
+            "It becomes genitive (مَجْرُور)"
+          ],
+          "correctIndex": 1,
+          "explanation": "When كَانَ enters a nominal sentence, the predicate changes from nominative to accusative. The subject remains nominative. So كَبِيرٌ becomes كَبِيرًا in كَانَ البَيْتُ كَبِيرًا."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "الوَلَدُ ذَكِيٌّ (The boy is smart) → كَانَ الوَلَدُ ___ (The boy was smart)",
+          "explanation": "The predicate ذَكِيٌّ (nominative) changes to ذَكِيًّا (accusative) when كَانَ is added. The tanween changes from ٌ to ً.",
+          "acceptedAnswers": [
+            "ذَكِيًّا"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "asbaha-zalla-baqiya",
+      "title": "أَصْبَحَ، ظَلَّ، بَقِيَ — Becoming and Remaining",
+      "explanation": "Several verbs work exactly like كَانَ — they enter nominal sentences and put the predicate in the accusative. These are called 'sisters of كَانَ' (أَخَوَات كَانَ). أَصْبَحَ means 'to become' (literally 'to enter the morning'): أَصْبَحَ الطِّفْلُ كَبِيرًا (The child became big). صَارَ also means 'to become': صَارَ الطَّقْسُ بَارِدًا (The weather became cold). ظَلَّ means 'to remain/continue': ظَلَّ الرَّجُلُ وَاقِفًا (The man kept standing). بَقِيَ means 'to remain/stay': بَقِيَ البَابُ مَفْتُوحًا (The door remained open). All of these verbs follow the same rule: the subject stays nominative, and the predicate becomes accusative. They conjugate like regular verbs for tense, person, gender, and number.",
+      "tip": "All 'sisters of كَانَ' follow the same grammatical rule: subject = nominative, predicate = accusative. The only difference between them is meaning: كَانَ (was), أَصْبَحَ/صَارَ (became), ظَلَّ/بَقِيَ (remained).",
+      "examples": [
+        {
+          "ar": "أَصْبَحَ الطِّفْلُ طَبِيبًا",
+          "en": "The child became a doctor.",
+          "highlight": "أَصْبَحَ"
+        },
+        {
+          "ar": "صَارَ الطَّقْسُ بَارِدًا",
+          "en": "The weather became cold.",
+          "highlight": "صَارَ"
+        },
+        {
+          "ar": "ظَلَّ الطَّالِبُ مُجْتَهِدًا",
+          "en": "The student remained diligent.",
+          "highlight": "ظَلَّ"
+        },
+        {
+          "ar": "بَقِيَ البَابُ مَفْتُوحًا",
+          "en": "The door remained open.",
+          "highlight": "بَقِيَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb means 'to become' and is a sister of كَانَ?",
+          "options": [
+            "لَيْسَ",
+            "أَصْبَحَ",
+            "بَقِيَ"
+          ],
+          "correctIndex": 1,
+          "explanation": "أَصْبَحَ means 'to become' (literally 'to enter the morning'). Like كَانَ, it takes a nominative subject and an accusative predicate. لَيْسَ means 'is not' and بَقِيَ means 'to remain.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The man kept standing: ظَلَّ الرَّجُلُ ___",
+          "explanation": "The predicate after ظَلَّ must be in the accusative. وَاقِف (standing) becomes وَاقِفًا in the accusative with tanween fatha.",
+          "acceptedAnswers": [
+            "وَاقِفًا"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "laysa-negation",
+      "title": "لَيْسَ — Present Tense Negation",
+      "explanation": "لَيْسَ is a unique sister of كَانَ. It negates nominal sentences in the present tense, meaning 'is not / are not.' Like كَانَ, it puts the predicate in the accusative. الجَوُّ حَارٌّ (The weather is hot) → لَيْسَ الجَوُّ حَارًّا (The weather is not hot). لَيْسَ conjugates for person and gender but has no real past or future form — it always expresses present negation. Its conjugations: لَسْتُ (I am not), لَسْتَ (you m. are not), لَسْتِ (you f. are not), لَيْسَ (he is not), لَيْسَتْ (she is not), لَسْنَا (we are not), لَسْتُمْ (you pl. m. are not), لَيْسُوا (they m. are not). Note: when the predicate is a prepositional phrase, you may see the particle بِـ reinforcing the negation: لَيْسَ بِكَبِيرٍ (is not big), though this is optional.",
+      "tip": "لَيْسَ is the go-to way to negate 'is/are' in Arabic. It follows the same accusative-predicate rule as all sisters of كَانَ. Memorize its conjugations — they look unusual because لَيْسَ behaves like a past-tense verb in form but has present-tense meaning.",
+      "examples": [
+        {
+          "ar": "لَيْسَ الأَمْرُ صَعْبًا",
+          "en": "The matter is not difficult.",
+          "highlight": "لَيْسَ"
+        },
+        {
+          "ar": "لَسْتُ مُتْعَبًا",
+          "en": "I am not tired.",
+          "highlight": "لَسْتُ"
+        },
+        {
+          "ar": "لَيْسَتِ المُشْكِلَةُ كَبِيرَةً",
+          "en": "The problem is not big.",
+          "highlight": "لَيْسَتِ"
+        },
+        {
+          "ar": "لَيْسُوا هُنَا",
+          "en": "They are not here.",
+          "highlight": "لَيْسُوا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Negate: الكِتَابُ مُمِلٌّ (The book is boring) → لَيْسَ الكِتَابُ ___",
+          "explanation": "The predicate مُمِلٌّ changes to the accusative مُمِلًّا after لَيْسَ, following the same rule as all sisters of كَانَ.",
+          "acceptedAnswers": [
+            "مُمِلًّا"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I am not a teacher'?",
+          "options": [
+            "لَيْسَ مُعَلِّمٌ",
+            "لَسْتُ مُعَلِّمًا",
+            "لَسْتُ مُعَلِّمٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first-person conjugation of لَيْسَ is لَسْتُ, and the predicate must be accusative: مُعَلِّمًا (not مُعَلِّمٌ). So the correct answer is لَسْتُ مُعَلِّمًا."
+        }
+      ]
+    },
+    {
+      "sectionId": "ma-zaala-continuity",
+      "title": "مَا زَالَ — Still / Continue To",
+      "explanation": "مَا زَالَ (and its synonym لَا يَزَالُ in the present) means 'still is' or 'continues to be.' It is formed with the negation particle مَا plus the verb زَالَ. Despite containing a negation word, the meaning is affirmative — 'X is still Y.' Like all sisters of كَانَ, it puts the predicate in the accusative. مَا زَالَ الطَّقْسُ حَارًّا means 'The weather is still hot.' It conjugates for person and gender: مَا زِلْتُ (I am still), مَا زَالَتْ (she is still), مَا زَالُوا (they are still). In the present tense, you can say لَا يَزَالُ / لَا تَزَالُ: لَا يَزَالُ المَطَرُ نَازِلًا (The rain is still falling). This construction is extremely common in news Arabic and formal writing.",
+      "tip": "مَا زَالَ literally means 'has not ceased,' which is why it uses a negation particle but has an affirmative meaning. Think of it as 'has not stopped being X' = 'is still X.'",
+      "examples": [
+        {
+          "ar": "مَا زَالَ الطَّالِبُ مُجْتَهِدًا",
+          "en": "The student is still diligent.",
+          "highlight": "مَا زَالَ"
+        },
+        {
+          "ar": "مَا زِلْتُ أَتَعَلَّمُ العَرَبِيَّةَ",
+          "en": "I am still learning Arabic.",
+          "highlight": "مَا زِلْتُ"
+        },
+        {
+          "ar": "لَا تَزَالُ المَدِينَةُ جَمِيلَةً",
+          "en": "The city is still beautiful.",
+          "highlight": "لَا تَزَالُ"
+        },
+        {
+          "ar": "مَا زَالُوا فِي البَيْتِ",
+          "en": "They are still at home.",
+          "highlight": "مَا زَالُوا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does مَا زَالَ الجَوُّ بَارِدًا mean?",
+          "options": [
+            "The weather is no longer cold",
+            "The weather is still cold",
+            "The weather was cold"
+          ],
+          "correctIndex": 1,
+          "explanation": "مَا زَالَ means 'is still' — despite the negation particle مَا, the overall meaning is affirmative (literally 'has not ceased being'). So the sentence means 'The weather is still cold.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct way to say 'I am still hungry'?",
+          "options": [
+            "مَا زِلْتُ جَائِعًا",
+            "مَا زَالَ جَائِعٌ",
+            "مَا زِلْتُ جَائِعٌ"
+          ],
+          "correctIndex": 0,
+          "explanation": "The first-person conjugation is مَا زِلْتُ, and the predicate must be accusative: جَائِعًا. The correct answer is مَا زِلْتُ جَائِعًا (I am still hungry)."
+        }
+      ]
+    }
+  ]
+}

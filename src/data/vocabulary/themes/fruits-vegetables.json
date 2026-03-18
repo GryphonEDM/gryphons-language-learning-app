@@ -1,0 +1,721 @@
+{
+  "setId": "fruits-vegetables",
+  "nameEn": "Fruits & Vegetables",
+  "nameUk": "Фрукти та овочі",
+  "nameRu": "Фрукты и овощи",
+  "nameDe": "Obst und Gemüse",
+  "nameEs": "Frutas y verduras",
+  "nameFr": "Fruits et légumes",
+  "nameEl": "Φρούτα και λαχανικά",
+  "nameHi": "फल और सब्ज़ियाँ",
+  "nameAr": "فواكه وخضروات",
+  "nameKo": "과일과 채소",
+  "nameZh": "水果与蔬菜",
+  "nameJa": "果物と野菜",
+  "difficulty": "A1",
+  "icon": "🍎",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "яблуко",
+      "ru": "яблоко",
+      "de": "Apfel",
+      "en": "apple",
+      "phoneticUk": "yabluko",
+      "phoneticRu": "yabloko",
+      "phoneticDe": "AP-fel",
+      "es": "manzana",
+      "phoneticEs": "man-THAH-nah",
+      "fr": "pomme",
+      "frPhonetic": "POM",
+      "el": "μήλο",
+      "elPhonetic": "MI-lo",
+      "hi": "सेब",
+      "hiPhonetic": "SEB",
+      "ar": "تُفَّاحَة",
+      "arPhonetic": "tuf-FAA-ha",
+      "ko": "사과",
+      "koPhonetic": "SA-gwa",
+      "zh": "苹果",
+      "zhPhonetic": "píngguǒ",
+      "ja": "りんご",
+      "jaPhonetic": "ringo",
+      "examples": {
+        "uk": [
+          "Червоне яблуко лежить на столі.",
+          "Я з'їв яблуко після обіду."
+        ],
+        "en": [
+          "A red apple is on the table.",
+          "I ate an apple after lunch."
+        ]
+      }
+    },
+    {
+      "uk": "банан",
+      "ru": "банан",
+      "de": "Banane",
+      "en": "banana",
+      "phoneticUk": "banan",
+      "phoneticRu": "banan",
+      "phoneticDe": "ba-NAH-neh",
+      "es": "plátano",
+      "phoneticEs": "PLAH-tah-noh",
+      "fr": "banane",
+      "frPhonetic": "ba-NAN",
+      "el": "μπανάνα",
+      "elPhonetic": "ba-NA-na",
+      "hi": "केला",
+      "hiPhonetic": "KEH-laa",
+      "ar": "مَوْز",
+      "arPhonetic": "MAWZ",
+      "ko": "바나나",
+      "koPhonetic": "BA-na-na",
+      "zh": "香蕉",
+      "zhPhonetic": "xiāngjiāo",
+      "ja": "バナナ",
+      "jaPhonetic": "banana",
+      "examples": {
+        "uk": [
+          "Мавпа їсть стиглий банан.",
+          "Я купив зв'язку бананів у магазині."
+        ],
+        "en": [
+          "The monkey eats a ripe banana.",
+          "I bought a bunch of bananas at the store."
+        ]
+      }
+    },
+    {
+      "uk": "апельсин",
+      "ru": "апельсин",
+      "de": "Orange",
+      "en": "orange",
+      "phoneticUk": "apel'syn",
+      "phoneticRu": "apel'sin",
+      "phoneticDe": "oh-RAHN-zheh",
+      "es": "naranja",
+      "phoneticEs": "nah-RAHN-hah",
+      "fr": "orange",
+      "frPhonetic": "oh-RAHNZH",
+      "el": "πορτοκάλι",
+      "elPhonetic": "por-to-KA-li",
+      "hi": "संतरा",
+      "hiPhonetic": "SAN-ta-raa",
+      "ar": "بُرْتُقَال",
+      "arPhonetic": "bur-tu-QAAL",
+      "ko": "오렌지",
+      "koPhonetic": "O-ren-ji",
+      "zh": "橙子",
+      "zhPhonetic": "chéngzi",
+      "ja": "オレンジ",
+      "jaPhonetic": "orenji",
+      "examples": {
+        "uk": [
+          "Апельсин багатий на вітамін С.",
+          "Я почистив апельсин і з'їв його."
+        ],
+        "en": [
+          "An orange is rich in vitamin C.",
+          "I peeled the orange and ate it."
+        ]
+      }
+    },
+    {
+      "uk": "полуниця",
+      "ru": "клубника",
+      "de": "Erdbeere",
+      "en": "strawberry",
+      "phoneticUk": "polunytsia",
+      "phoneticRu": "klubnika",
+      "phoneticDe": "ERT-beh-reh",
+      "es": "fresa",
+      "phoneticEs": "FREH-sah",
+      "fr": "fraise",
+      "frPhonetic": "FREHZ",
+      "el": "φράουλα",
+      "elPhonetic": "FRA-u-la",
+      "hi": "स्ट्रॉबेरी",
+      "hiPhonetic": "STRO-be-ree",
+      "ar": "فَرَاوْلَة",
+      "arPhonetic": "fa-RAW-la",
+      "ko": "딸기",
+      "koPhonetic": "TTAL-gi",
+      "zh": "草莓",
+      "zhPhonetic": "cǎoméi",
+      "ja": "いちご",
+      "jaPhonetic": "ichigo",
+      "examples": {
+        "uk": [
+          "Полуниця — моя улюблена ягода.",
+          "Ми збирали полуницю в саду."
+        ],
+        "en": [
+          "Strawberry is my favourite berry.",
+          "We picked strawberries in the garden."
+        ]
+      }
+    },
+    {
+      "uk": "виноград",
+      "ru": "виноград",
+      "de": "Traube",
+      "en": "grape",
+      "phoneticUk": "vynograd",
+      "phoneticRu": "vinograd",
+      "phoneticDe": "TROW-beh",
+      "es": "uva",
+      "phoneticEs": "OO-bah",
+      "fr": "raisin",
+      "frPhonetic": "reh-ZAN",
+      "el": "σταφύλι",
+      "elPhonetic": "sta-FI-li",
+      "hi": "अंगूर",
+      "hiPhonetic": "an-GOOR",
+      "ar": "عِنَب",
+      "arPhonetic": "I-nab",
+      "ko": "포도",
+      "koPhonetic": "PO-do",
+      "zh": "葡萄",
+      "zhPhonetic": "pútao",
+      "ja": "ぶどう",
+      "jaPhonetic": "budou",
+      "examples": {
+        "uk": [
+          "Цей виноград дуже солодкий.",
+          "З винограду роблять вино."
+        ],
+        "en": [
+          "These grapes are very sweet.",
+          "Wine is made from grapes."
+        ]
+      }
+    },
+    {
+      "uk": "лимон",
+      "ru": "лимон",
+      "de": "Zitrone",
+      "en": "lemon",
+      "phoneticUk": "lymon",
+      "phoneticRu": "limon",
+      "phoneticDe": "tsi-TROH-neh",
+      "es": "limón",
+      "phoneticEs": "lee-MON",
+      "fr": "citron",
+      "frPhonetic": "see-TRON",
+      "el": "λεμόνι",
+      "elPhonetic": "le-MO-ni",
+      "hi": "नींबू",
+      "hiPhonetic": "NEEM-boo",
+      "ar": "لَيْمُون",
+      "arPhonetic": "lay-MOON",
+      "ko": "레몬",
+      "koPhonetic": "RE-mon",
+      "zh": "柠檬",
+      "zhPhonetic": "níngméng",
+      "ja": "レモン",
+      "jaPhonetic": "remon",
+      "examples": {
+        "uk": [
+          "Лимон дуже кислий.",
+          "Я додаю лимон до чаю."
+        ],
+        "en": [
+          "A lemon is very sour.",
+          "I add lemon to my tea."
+        ]
+      }
+    },
+    {
+      "uk": "кавун",
+      "ru": "арбуз",
+      "de": "Wassermelone",
+      "en": "watermelon",
+      "phoneticUk": "kavun",
+      "phoneticRu": "arbuz",
+      "phoneticDe": "VAS-ser-meh-loh-neh",
+      "es": "sandía",
+      "phoneticEs": "san-DEE-ah",
+      "fr": "pastèque",
+      "frPhonetic": "pas-TEK",
+      "el": "καρπούζι",
+      "elPhonetic": "kar-POU-zi",
+      "hi": "तरबूज़",
+      "hiPhonetic": "tar-BOOZ",
+      "ar": "بِطِّيخ",
+      "arPhonetic": "bit-TEEKH",
+      "ko": "수박",
+      "koPhonetic": "SU-bak",
+      "zh": "西瓜",
+      "zhPhonetic": "xīguā",
+      "ja": "スイカ",
+      "jaPhonetic": "suika",
+      "examples": {
+        "uk": [
+          "Влітку ми їмо багато кавунів.",
+          "Цей кавун дуже великий і солодкий."
+        ],
+        "en": [
+          "In summer we eat a lot of watermelons.",
+          "This watermelon is very big and sweet."
+        ]
+      }
+    },
+    {
+      "uk": "помідор",
+      "ru": "помидор",
+      "de": "Tomate",
+      "en": "tomato",
+      "phoneticUk": "pomidor",
+      "phoneticRu": "pomidor",
+      "phoneticDe": "to-MAH-teh",
+      "es": "tomate",
+      "phoneticEs": "to-MAH-teh",
+      "fr": "tomate",
+      "frPhonetic": "to-MAT",
+      "el": "ντομάτα",
+      "elPhonetic": "do-MA-ta",
+      "hi": "टमाटर",
+      "hiPhonetic": "ta-MAA-tar",
+      "ar": "طَمَاطِم",
+      "arPhonetic": "ta-MAA-tim",
+      "ko": "토마토",
+      "koPhonetic": "TO-ma-to",
+      "zh": "番茄",
+      "zhPhonetic": "fānqié",
+      "ja": "トマト",
+      "jaPhonetic": "tomato",
+      "examples": {
+        "uk": [
+          "Червоний помідор росте в городі.",
+          "Я додаю помідори до салату."
+        ],
+        "en": [
+          "A red tomato grows in the garden.",
+          "I add tomatoes to the salad."
+        ]
+      }
+    },
+    {
+      "uk": "картопля",
+      "ru": "картофель",
+      "de": "Kartoffel",
+      "en": "potato",
+      "phoneticUk": "kartoplya",
+      "phoneticRu": "kartofel'",
+      "phoneticDe": "kar-TOF-fel",
+      "es": "patata",
+      "phoneticEs": "pa-TAH-tah",
+      "fr": "pomme de terre",
+      "frPhonetic": "pom-duh-TEHR",
+      "el": "πατάτα",
+      "elPhonetic": "pa-TA-ta",
+      "hi": "आलू",
+      "hiPhonetic": "AA-loo",
+      "ar": "بَطَاطَا",
+      "arPhonetic": "ba-TAA-taa",
+      "ko": "감자",
+      "koPhonetic": "GAM-ja",
+      "zh": "土豆",
+      "zhPhonetic": "tǔdòu",
+      "ja": "じゃがいも",
+      "jaPhonetic": "jagaimo",
+      "examples": {
+        "uk": [
+          "Бабуся варить картоплю на обід.",
+          "Смажена картопля дуже смачна."
+        ],
+        "en": [
+          "Grandma boils potatoes for lunch.",
+          "Fried potatoes are very tasty."
+        ]
+      }
+    },
+    {
+      "uk": "морква",
+      "ru": "морковь",
+      "de": "Karotte",
+      "en": "carrot",
+      "phoneticUk": "morkva",
+      "phoneticRu": "morkov'",
+      "phoneticDe": "ka-ROT-teh",
+      "es": "zanahoria",
+      "phoneticEs": "thah-nah-OR-ee-ah",
+      "fr": "carotte",
+      "frPhonetic": "ka-ROT",
+      "el": "καρότο",
+      "elPhonetic": "ka-RO-to",
+      "hi": "गाजर",
+      "hiPhonetic": "GAA-jar",
+      "ar": "جَزَر",
+      "arPhonetic": "JA-zar",
+      "ko": "당근",
+      "koPhonetic": "DANG-geun",
+      "zh": "胡萝卜",
+      "zhPhonetic": "húluóbo",
+      "ja": "にんじん",
+      "jaPhonetic": "ninjin",
+      "examples": {
+        "uk": [
+          "Морква корисна для зору.",
+          "Я натерла моркву для салату."
+        ],
+        "en": [
+          "Carrots are good for your eyesight.",
+          "I grated carrots for the salad."
+        ]
+      }
+    },
+    {
+      "uk": "цибуля",
+      "ru": "лук",
+      "de": "Zwiebel",
+      "en": "onion",
+      "phoneticUk": "tsybulya",
+      "phoneticRu": "luk",
+      "phoneticDe": "TSVEE-bel",
+      "es": "cebolla",
+      "phoneticEs": "theh-BOH-yah",
+      "fr": "oignon",
+      "frPhonetic": "oh-NYON",
+      "el": "κρεμμύδι",
+      "elPhonetic": "kre-MI-dhi",
+      "hi": "प्याज़",
+      "hiPhonetic": "PYAAZ",
+      "ar": "بَصَل",
+      "arPhonetic": "BA-sal",
+      "ko": "양파",
+      "koPhonetic": "YANG-pa",
+      "zh": "洋葱",
+      "zhPhonetic": "yángcōng",
+      "ja": "玉ねぎ",
+      "jaPhonetic": "tamanegi",
+      "examples": {
+        "uk": [
+          "Від цибулі сльозяться очі.",
+          "Я нарізала цибулю для супу."
+        ],
+        "en": [
+          "Onions make your eyes water.",
+          "I chopped onion for the soup."
+        ]
+      }
+    },
+    {
+      "uk": "огірок",
+      "ru": "огурец",
+      "de": "Gurke",
+      "en": "cucumber",
+      "phoneticUk": "ohirok",
+      "phoneticRu": "ogurets",
+      "phoneticDe": "GOOR-keh",
+      "es": "pepino",
+      "phoneticEs": "peh-PEE-noh",
+      "fr": "concombre",
+      "frPhonetic": "kon-KOHM-bruh",
+      "el": "αγγούρι",
+      "elPhonetic": "an-GOU-ri",
+      "hi": "खीरा",
+      "hiPhonetic": "KHEE-raa",
+      "ar": "خِيَار",
+      "arPhonetic": "khi-YAAR",
+      "ko": "오이",
+      "koPhonetic": "O-i",
+      "zh": "黄瓜",
+      "zhPhonetic": "huángguā",
+      "ja": "きゅうり",
+      "jaPhonetic": "kyuuri",
+      "examples": {
+        "uk": [
+          "Свіжий огірок хрусткий і смачний.",
+          "Бабуся солить огірки на зиму."
+        ],
+        "en": [
+          "A fresh cucumber is crunchy and tasty.",
+          "Grandma pickles cucumbers for winter."
+        ]
+      }
+    },
+    {
+      "uk": "салат",
+      "ru": "салат",
+      "de": "Salat",
+      "en": "lettuce",
+      "phoneticUk": "salat",
+      "phoneticRu": "salat",
+      "phoneticDe": "za-LAHT",
+      "es": "lechuga",
+      "phoneticEs": "leh-CHOO-gah",
+      "fr": "laitue",
+      "frPhonetic": "leh-TOO",
+      "el": "μαρούλι",
+      "elPhonetic": "ma-ROU-li",
+      "hi": "सलाद पत्ता",
+      "hiPhonetic": "sa-LAAD PAT-taa",
+      "ar": "خَسّ",
+      "arPhonetic": "KHASS",
+      "ko": "상추",
+      "koPhonetic": "SANG-chu",
+      "zh": "生菜",
+      "zhPhonetic": "shēngcài",
+      "ja": "レタス",
+      "jaPhonetic": "retasu",
+      "examples": {
+        "uk": [
+          "Я додаю листя салату до бутерброда.",
+          "Свіжий салат дуже корисний."
+        ],
+        "en": [
+          "I add lettuce leaves to my sandwich.",
+          "Fresh lettuce is very healthy."
+        ]
+      }
+    },
+    {
+      "uk": "перець",
+      "ru": "перец",
+      "de": "Paprika",
+      "en": "pepper",
+      "phoneticUk": "perets'",
+      "phoneticRu": "perets",
+      "phoneticDe": "PAP-ri-ka",
+      "es": "pimiento",
+      "phoneticEs": "pee-MYEN-toh",
+      "fr": "poivron",
+      "frPhonetic": "pwa-VRON",
+      "el": "πιπεριά",
+      "elPhonetic": "pi-pe-RYA",
+      "hi": "मिर्च",
+      "hiPhonetic": "MIRCH",
+      "ar": "فُلْفُل",
+      "arPhonetic": "FUL-ful",
+      "ko": "고추",
+      "koPhonetic": "GO-chu",
+      "zh": "辣椒",
+      "zhPhonetic": "làjiāo",
+      "ja": "ピーマン",
+      "jaPhonetic": "piiman",
+      "examples": {
+        "uk": [
+          "Червоний перець солодкий і смачний.",
+          "Я додаю перець до салату."
+        ],
+        "en": [
+          "Red pepper is sweet and tasty.",
+          "I add pepper to the salad."
+        ]
+      }
+    },
+    {
+      "uk": "часник",
+      "ru": "чеснок",
+      "de": "Knoblauch",
+      "en": "garlic",
+      "phoneticUk": "chasnyk",
+      "phoneticRu": "chesnok",
+      "phoneticDe": "KNOB-lowkh",
+      "es": "ajo",
+      "phoneticEs": "AH-hoh",
+      "fr": "ail",
+      "frPhonetic": "AY",
+      "el": "σκόρδο",
+      "elPhonetic": "SKOR-dho",
+      "hi": "लहसुन",
+      "hiPhonetic": "LAH-sun",
+      "ar": "ثُوم",
+      "arPhonetic": "THOOM",
+      "ko": "마늘",
+      "koPhonetic": "MA-neul",
+      "zh": "大蒜",
+      "zhPhonetic": "dàsuàn",
+      "ja": "にんにく",
+      "jaPhonetic": "ninniku",
+      "examples": {
+        "uk": [
+          "Часник додає смаку стравам.",
+          "Часник корисний для здоров'я."
+        ],
+        "en": [
+          "Garlic adds flavour to dishes.",
+          "Garlic is good for your health."
+        ]
+      }
+    },
+    {
+      "uk": "персик",
+      "ru": "персик",
+      "de": "Pfirsich",
+      "en": "peach",
+      "phoneticUk": "persyk",
+      "phoneticRu": "persik",
+      "phoneticDe": "PFIR-zikh",
+      "es": "melocotón",
+      "phoneticEs": "meh-loh-koh-TON",
+      "fr": "pêche",
+      "frPhonetic": "PESH",
+      "el": "ροδάκινο",
+      "elPhonetic": "ro-DHA-ki-no",
+      "hi": "आड़ू",
+      "hiPhonetic": "AA-doo",
+      "ar": "خَوْخ",
+      "arPhonetic": "KHAWKH",
+      "ko": "복숭아",
+      "koPhonetic": "BOK-sung-a",
+      "zh": "桃子",
+      "zhPhonetic": "táozi",
+      "ja": "桃",
+      "jaPhonetic": "momo",
+      "examples": {
+        "uk": [
+          "Стиглий персик дуже соковитий.",
+          "Я купив кілограм персиків на ринку."
+        ],
+        "en": [
+          "A ripe peach is very juicy.",
+          "I bought a kilogram of peaches at the market."
+        ]
+      }
+    },
+    {
+      "uk": "груша",
+      "ru": "груша",
+      "de": "Birne",
+      "en": "pear",
+      "phoneticUk": "hrusha",
+      "phoneticRu": "grusha",
+      "phoneticDe": "BEER-neh",
+      "es": "pera",
+      "phoneticEs": "PEH-rah",
+      "fr": "poire",
+      "frPhonetic": "PWAR",
+      "el": "αχλάδι",
+      "elPhonetic": "a-KHLA-dhi",
+      "hi": "नाशपाती",
+      "hiPhonetic": "NAASH-paa-tee",
+      "ar": "كُمَّثْرَى",
+      "arPhonetic": "KUM-math-ra",
+      "ko": "배",
+      "koPhonetic": "BE",
+      "zh": "梨",
+      "zhPhonetic": "lí",
+      "ja": "梨",
+      "jaPhonetic": "nashi",
+      "examples": {
+        "uk": [
+          "Ця груша дуже солодка.",
+          "У бабусі в саду росте грушевое дерево."
+        ],
+        "en": [
+          "This pear is very sweet.",
+          "There is a pear tree in grandma's garden."
+        ]
+      }
+    },
+    {
+      "uk": "вишня",
+      "ru": "вишня",
+      "de": "Kirsche",
+      "en": "cherry",
+      "phoneticUk": "vyshnya",
+      "phoneticRu": "vishnya",
+      "phoneticDe": "KEER-sheh",
+      "es": "cereza",
+      "phoneticEs": "theh-REH-thah",
+      "fr": "cerise",
+      "frPhonetic": "suh-REEZ",
+      "el": "κεράσι",
+      "elPhonetic": "ke-RA-si",
+      "hi": "चेरी",
+      "hiPhonetic": "CHE-ree",
+      "ar": "كَرَز",
+      "arPhonetic": "KA-raz",
+      "ko": "체리",
+      "koPhonetic": "CHE-ri",
+      "zh": "樱桃",
+      "zhPhonetic": "yīngtáo",
+      "ja": "さくらんぼ",
+      "jaPhonetic": "sakuranbo",
+      "examples": {
+        "uk": [
+          "Вишня цвіте навесні.",
+          "Бабуся варить варення з вишень."
+        ],
+        "en": [
+          "Cherry trees bloom in spring.",
+          "Grandma makes jam from cherries."
+        ]
+      }
+    },
+    {
+      "uk": "ананас",
+      "ru": "ананас",
+      "de": "Ananas",
+      "en": "pineapple",
+      "phoneticUk": "ananas",
+      "phoneticRu": "ananas",
+      "phoneticDe": "AH-na-nas",
+      "es": "piña",
+      "phoneticEs": "PEE-nyah",
+      "fr": "ananas",
+      "frPhonetic": "ah-na-NAS",
+      "el": "ανανάς",
+      "elPhonetic": "a-na-NAS",
+      "hi": "अनानास",
+      "hiPhonetic": "a-NAA-naas",
+      "ar": "أَنَانَاس",
+      "arPhonetic": "a-NA-naas",
+      "ko": "파인애플",
+      "koPhonetic": "PA-in-e-peul",
+      "zh": "菠萝",
+      "zhPhonetic": "bōluó",
+      "ja": "パイナップル",
+      "jaPhonetic": "painappuru",
+      "examples": {
+        "uk": [
+          "Ананас росте в тропічних країнах.",
+          "Я люблю свіжий ананасовий сік."
+        ],
+        "en": [
+          "Pineapples grow in tropical countries.",
+          "I love fresh pineapple juice."
+        ]
+      }
+    },
+    {
+      "uk": "манго",
+      "ru": "манго",
+      "de": "Mango",
+      "en": "mango",
+      "phoneticUk": "manho",
+      "phoneticRu": "mango",
+      "phoneticDe": "MAN-goh",
+      "es": "mango",
+      "phoneticEs": "MAN-goh",
+      "fr": "mangue",
+      "frPhonetic": "MAHNG",
+      "el": "μάνγκο",
+      "elPhonetic": "MAN-go",
+      "hi": "आम",
+      "hiPhonetic": "AAM",
+      "ar": "مَانْجُو",
+      "arPhonetic": "MAN-ju",
+      "ko": "망고",
+      "koPhonetic": "MANG-go",
+      "zh": "芒果",
+      "zhPhonetic": "mángguǒ",
+      "ja": "マンゴー",
+      "jaPhonetic": "mangoo",
+      "examples": {
+        "uk": [
+          "Манго — тропічний фрукт.",
+          "Стигле манго дуже солодке і ароматне."
+        ],
+        "en": [
+          "Mango is a tropical fruit.",
+          "A ripe mango is very sweet and fragrant."
+        ]
+      }
+    }
+  ]
+}

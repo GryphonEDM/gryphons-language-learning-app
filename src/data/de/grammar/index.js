@@ -25,6 +25,10 @@ import passiveVoiceLesson from './passive-voice.json';
 import konjunktivLesson from './konjunktiv-ii.json';
 import complexSentencesLesson from './complex-sentences.json';
 import imperfektLesson from './imperfekt.json';
+import nDeclensionLesson from './n-declension.json';
+import konjunktivILesson from './konjunktiv-i.json';
+import plusquamperfektLesson from './plusquamperfekt.json';
+import experienceVerbsLesson from './experience-verbs.json';
 
 export const GRAMMAR_LESSONS_DE = [
   alphabetLesson,
@@ -51,4 +55,8 @@ export const GRAMMAR_LESSONS_DE = [
   konjunktivLesson,
   complexSentencesLesson,
   imperfektLesson,
+  nDeclensionLesson,
+  konjunktivILesson,
+  plusquamperfektLesson,
+  experienceVerbsLesson,
 ];

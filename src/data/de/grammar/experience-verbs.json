@@ -1,0 +1,239 @@
+{
+  "lessonId": "experience-verbs",
+  "nameEn": "Dative Experience Verbs Expanded",
+  "nameDe": "Verben mit Dativ-Erfahrung",
+  "icon": "💡",
+  "tier": "A2",
+  "prerequisites": [
+    "cases",
+    "articles"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "gefallen-schmecken",
+      "title": "Gefallen, Schmecken, Stehen — Things That Please You",
+      "explanation": "In German, several verbs flip the sentence structure compared to English. Instead of 'I like the book', German says 'The book pleases me': Das Buch gefällt mir. The person who experiences the feeling is in the dative case, and the thing causing the feeling is the subject (nominative). Key verbs: gefallen (to please / to like): Der Film gefällt mir. (I like the film — lit: The film pleases me.) schmecken (to taste good to): Die Suppe schmeckt mir. (The soup tastes good to me — I like how it tastes.) stehen (to suit / look good on): Das Kleid steht dir. (The dress looks good on you — lit: suits you.)",
+      "tip": "The experiencer is always in the dative (mir, dir, ihm, ihr, uns, euch, ihnen). The thing that pleases/tastes good/suits is the subject and controls the verb conjugation!",
+      "examples": [
+        {
+          "de": "Der Film gefällt mir sehr.",
+          "en": "I really like the film. (The film pleases me.)",
+          "highlight": "gefällt mir"
+        },
+        {
+          "de": "Die Blumen gefallen ihr.",
+          "en": "She likes the flowers. (The flowers please her.)",
+          "highlight": "gefallen ihr"
+        },
+        {
+          "de": "Die Suppe schmeckt mir gut.",
+          "en": "The soup tastes good to me.",
+          "highlight": "schmeckt mir"
+        },
+        {
+          "de": "Das Essen schmeckt den Kindern nicht.",
+          "en": "The children don't like the food. (The food doesn't taste good to them.)",
+          "highlight": "schmeckt den Kindern"
+        },
+        {
+          "de": "Die Jacke steht dir gut.",
+          "en": "The jacket looks good on you. (The jacket suits you.)",
+          "highlight": "steht dir"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I like the house' using 'gefallen'?",
+          "options": [
+            "Ich gefalle das Haus.",
+            "Das Haus gefällt mir.",
+            "Das Haus gefällt mich."
+          ],
+          "correctIndex": 1,
+          "explanation": "The house is the subject (it pleases), and the experiencer is in dative: Das Haus gefällt mir. (Not 'mich' — that would be accusative.)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Pizza ___ uns sehr gut. (The pizza tastes very good to us.) — use 'schmecken'",
+          "acceptedAnswers": [
+            "schmeckt"
+          ],
+          "hint": "Die Pizza (singular subject) controls the verb conjugation",
+          "explanation": "Die Pizza (singular) → schmeckt. The experiencer 'uns' is in dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das Kleid steht ___ sehr gut. (The dress looks very good on her.)",
+          "acceptedAnswers": [
+            "ihr"
+          ],
+          "hint": "The dative pronoun for 'she' is 'ihr'",
+          "explanation": "The experiencer with 'stehen' is in dative: ihr (her). Das Kleid steht ihr sehr gut."
+        }
+      ]
+    },
+    {
+      "sectionId": "fehlen-gehoeren-passen",
+      "title": "Fehlen, Gehören, Passen — Missing, Belonging, Fitting",
+      "explanation": "Three more important dative experience verbs: fehlen (to be missing / to miss someone): Du fehlst mir. (I miss you — lit: You are missing to me.) Mein Schlüssel fehlt mir. (I'm missing my key.) gehören (to belong to): Das Buch gehört mir. (The book belongs to me.) Wem gehört das Auto? (Who does the car belong to?) passen (to fit / to suit): Die Schuhe passen mir nicht. (The shoes don't fit me.) Passt dir Montag? (Does Monday suit you / work for you?) With all three verbs, the person affected is in the dative case.",
+      "tip": "'Du fehlst mir' is one of the most beautiful German phrases — literally 'You are missing to me', meaning 'I miss you'. The person who is missed is the subject!",
+      "examples": [
+        {
+          "de": "Du fehlst mir.",
+          "en": "I miss you. (You are missing to me.)",
+          "highlight": "fehlst mir"
+        },
+        {
+          "de": "Mir fehlt noch ein Euro.",
+          "en": "I'm still missing one euro.",
+          "highlight": "Mir fehlt"
+        },
+        {
+          "de": "Das Auto gehört meinem Vater.",
+          "en": "The car belongs to my father.",
+          "highlight": "gehört meinem Vater"
+        },
+        {
+          "de": "Wem gehört diese Tasche?",
+          "en": "Who does this bag belong to?",
+          "highlight": "Wem gehört"
+        },
+        {
+          "de": "Die Hose passt mir nicht.",
+          "en": "The pants don't fit me.",
+          "highlight": "passt mir"
+        },
+        {
+          "de": "Passt euch Freitag?",
+          "en": "Does Friday work for you (all)?",
+          "highlight": "Passt euch"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I miss you' in German?",
+          "options": [
+            "Ich fehle dir.",
+            "Du fehlst mir.",
+            "Ich fehle dich."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Du fehlst mir' — the person who is missed (du) is the subject, and the person who feels the absence (mir) is in dative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wem ___ dieses Fahrrad? (Who does this bicycle belong to?) — use 'gehören'",
+          "acceptedAnswers": [
+            "gehört"
+          ],
+          "hint": "Dieses Fahrrad (singular subject) controls the conjugation",
+          "explanation": "'Gehören' + dative: Wem gehört dieses Fahrrad? The owner is expressed in the dative (wem)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Schuhe passen ___ nicht. (The shoes don't fit him.)",
+          "acceptedAnswers": [
+            "ihm"
+          ],
+          "hint": "Dative pronoun for 'he' is 'ihm'",
+          "explanation": "'Passen' takes a dative experiencer: Die Schuhe passen ihm nicht."
+        }
+      ]
+    },
+    {
+      "sectionId": "helfen-danken",
+      "title": "Helfen and Danken — Helping and Thanking",
+      "explanation": "Two extremely common verbs that take the dative: helfen (to help): Ich helfe dir. (I help you.) Kannst du mir helfen? (Can you help me?) Unlike English, where 'help' takes a direct object, German 'helfen' always takes the dative. danken (to thank): Ich danke Ihnen. (I thank you — formal.) Wir danken euch für die Hilfe. (We thank you all for the help.) Note that in modern German, 'jemandem danken' (dative) is the traditional form, though you will also hear 'sich bei jemandem bedanken'. Other useful dative verbs in this category: gratulieren (to congratulate): Ich gratuliere dir! glauben (to believe someone): Ich glaube dir. (I believe you.)",
+      "tip": "A common mistake for English speakers: 'Ich helfe dich' is WRONG. It must be 'Ich helfe dir' (dative). Similarly: 'Ich danke dir' (not 'dich').",
+      "examples": [
+        {
+          "de": "Kannst du mir helfen?",
+          "en": "Can you help me?",
+          "highlight": "mir helfen"
+        },
+        {
+          "de": "Er hilft seinem Bruder.",
+          "en": "He helps his brother.",
+          "highlight": "hilft seinem Bruder"
+        },
+        {
+          "de": "Ich danke dir für alles.",
+          "en": "I thank you for everything.",
+          "highlight": "danke dir"
+        },
+        {
+          "de": "Wir danken Ihnen herzlich.",
+          "en": "We thank you sincerely. (formal)",
+          "highlight": "danken Ihnen"
+        },
+        {
+          "de": "Ich gratuliere dir zum Geburtstag!",
+          "en": "I congratulate you on your birthday! / Happy birthday!",
+          "highlight": "gratuliere dir"
+        },
+        {
+          "de": "Ich glaube dir.",
+          "en": "I believe you.",
+          "highlight": "glaube dir"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct? 'Can you help me?'",
+          "options": [
+            "Kannst du mich helfen?",
+            "Kannst du mir helfen?",
+            "Kannst du ich helfen?"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Helfen' takes the dative: mir (not mich). Kannst du mir helfen?"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ dir für deine Hilfe. (I thank you for your help.) — use 'danken'",
+          "acceptedAnswers": [
+            "danke"
+          ],
+          "hint": "Conjugate 'danken' for ich",
+          "explanation": "'Danken' takes dative: Ich danke dir für deine Hilfe."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each dative verb to its correct usage:",
+          "pairs": [
+            {
+              "left": "helfen",
+              "right": "Ich helfe dir."
+            },
+            {
+              "left": "danken",
+              "right": "Ich danke Ihnen."
+            },
+            {
+              "left": "gefallen",
+              "right": "Das gefällt mir."
+            },
+            {
+              "left": "gehören",
+              "right": "Das gehört mir."
+            }
+          ],
+          "explanation": "All these verbs take the dative case for the person affected: mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er hilft ___ Nachbarin. (He helps his neighbor — female.) — use the dative of 'seine'",
+          "acceptedAnswers": [
+            "seiner"
+          ],
+          "hint": "Dative feminine of possessive 'sein' → seiner",
+          "explanation": "'Helfen' takes dative. Feminine dative: seine → seiner. Er hilft seiner Nachbarin."
+        }
+      ]
+    }
+  ]
+}

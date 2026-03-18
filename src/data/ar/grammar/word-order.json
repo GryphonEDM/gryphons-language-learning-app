@@ -1,0 +1,225 @@
+{
+  "lessonId": "word-order",
+  "nameEn": "Arabic Word Order",
+  "nameAr": "تَرْتِيب الكَلِمَات",
+  "icon": "🔀",
+  "tier": "A2",
+  "prerequisites": ["nominal-sentences", "verbal-sentences"],
+  "estimatedMinutes": 16,
+  "sections": [
+    {
+      "sectionId": "vso-default",
+      "title": "VSO — The Default Word Order",
+      "explanation": "Arabic's default word order in verbal sentences is Verb–Subject–Object (VSO). This means the verb comes first, followed by the subject (الفَاعِل), then the object (المَفْعُول بِهِ). For example: كَتَبَ الطَّالِبُ الدَّرْسَ (The student wrote the lesson) — literally 'Wrote the-student the-lesson.' This differs from English (SVO) and takes practice to internalize. In VSO order, the verb agrees with the subject in gender but stays singular regardless of the subject's number: جَاءَ الطُّلَّابُ (The students came) uses the singular verb جَاءَ, not the plural جَاءُوا. This singular-verb rule only applies when the subject follows the verb. VSO is the most neutral, unmarked order in Modern Standard Arabic and classical Arabic.",
+      "tip": "In VSO, the verb is always singular even with a plural subject: كَتَبَ الطُّلَّابُ (The students wrote), NOT كَتَبُوا الطُّلَّابُ. The verb only agrees in gender: كَتَبَتِ الطَّالِبَاتُ (The female students wrote).",
+      "examples": [
+        {
+          "ar": "كَتَبَ الطَّالِبُ الدَّرْسَ",
+          "en": "The student wrote the lesson. (VSO)",
+          "highlight": "كَتَبَ"
+        },
+        {
+          "ar": "أَكَلَ الوَلَدُ التُّفَّاحَةَ",
+          "en": "The boy ate the apple. (VSO)",
+          "highlight": "أَكَلَ"
+        },
+        {
+          "ar": "جَاءَ الضُّيُوفُ",
+          "en": "The guests came. (singular verb with plural subject)",
+          "highlight": "جَاءَ"
+        },
+        {
+          "ar": "فَتَحَتِ البِنْتُ البَابَ",
+          "en": "The girl opened the door. (feminine verb agreement)",
+          "highlight": "فَتَحَتِ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the default word order in Arabic verbal sentences?",
+          "options": [
+            "SVO (Subject–Verb–Object)",
+            "VSO (Verb–Subject–Object)",
+            "OVS (Object–Verb–Subject)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arabic's default verbal sentence order is VSO: the verb comes first, then the subject, then the object. كَتَبَ الطَّالِبُ الدَّرْسَ = Wrote the-student the-lesson."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct when 'the teachers' (المُعَلِّمُونَ, plural) is the subject in VSO?",
+          "options": [
+            "شَرَحُوا المُعَلِّمُونَ الدَّرْسَ",
+            "شَرَحَ المُعَلِّمُونَ الدَّرْسَ",
+            "شَرَحُونَ المُعَلِّمُونَ الدَّرْسَ"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the subject follows the verb (VSO), the verb stays singular: شَرَحَ المُعَلِّمُونَ الدَّرْسَ. The verb only matches in gender, not number, in this position."
+        }
+      ]
+    },
+    {
+      "sectionId": "svo-emphasis",
+      "title": "SVO — Fronting the Subject for Emphasis",
+      "explanation": "When the subject is placed before the verb (SVO), it creates a nominal sentence (الجُمْلَة الاسْمِيَّة) whose predicate is a verbal sentence. This fronting emphasizes the subject — it highlights who did the action. الطَّالِبُ كَتَبَ الدَّرْسَ means 'The student (it was he who) wrote the lesson.' Importantly, when the subject precedes the verb, the verb must agree fully in gender AND number: الطُّلَّابُ كَتَبُوا الدَّرْسَ (The students wrote the lesson) — the plural كَتَبُوا is required because الطُّلَّاب precedes the verb. Compare: كَتَبَ الطُّلَّابُ الدَّرْسَ (VSO, singular verb) vs. الطُّلَّابُ كَتَبُوا الدَّرْسَ (SVO, plural verb). This SVO order is common in speech and in sentences where the topic has already been established.",
+      "tip": "SVO in Arabic is not wrong — it is simply marked. Use it when you want to emphasize or contrast the subject: 'THE STUDENT wrote the lesson (not the teacher).' Notice the verb must now fully agree in number too.",
+      "examples": [
+        {
+          "ar": "الطُّلَّابُ كَتَبُوا الدَّرْسَ",
+          "en": "The students wrote the lesson. (SVO, full agreement)",
+          "highlight": "الطُّلَّابُ"
+        },
+        {
+          "ar": "مُحَمَّدٌ فَهِمَ السُّؤَالَ",
+          "en": "Muhammad understood the question. (SVO, emphasis on Muhammad)",
+          "highlight": "مُحَمَّدٌ"
+        },
+        {
+          "ar": "البَنَاتُ ذَهَبْنَ إِلَى المَدْرَسَةِ",
+          "en": "The girls went to school. (SVO, feminine plural agreement)",
+          "highlight": "البَنَاتُ ذَهَبْنَ"
+        },
+        {
+          "ar": "أَنَا أُحِبُّ القِرَاءَةَ",
+          "en": "I love reading. (SVO with pronoun subject)",
+          "highlight": "أَنَا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In الطُّلَّابُ كَتَبُوا, why is the verb plural كَتَبُوا and not singular كَتَبَ?",
+          "options": [
+            "Because the subject الطُّلَّاب comes before the verb, requiring full agreement",
+            "Because كَتَبَ is only for females",
+            "Because all Arabic verbs must be plural"
+          ],
+          "correctIndex": 0,
+          "explanation": "When the subject precedes the verb (SVO), the verb must agree in both gender and number. Since الطُّلَّاب is masculine plural and comes first, the verb must be the plural كَتَبُوا."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Rearrange to SVO with emphasis on the girls: ذَهَبَتِ البَنَاتُ → البَنَاتُ ___",
+          "explanation": "When البَنَاتُ is fronted, the verb must fully agree (feminine plural): ذَهَبْنَ.",
+          "acceptedAnswers": [
+            "ذَهَبْنَ"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "fronting-taqdeem",
+      "title": "Fronting the Object — التَّقْدِيم والتَّأْخِير",
+      "explanation": "Arabic allows fronting (تَقْدِيم) of the object before the verb or subject for emphasis or focus. When the object is moved to the front, it keeps its accusative case. الدَّرْسَ كَتَبَ الطَّالِبُ means 'It was THE LESSON that the student wrote' — the object الدَّرْسَ is fronted for emphasis. This technique is common in rhetorical Arabic and literary style. Fronting is also used when the object is an interrogative word: مَاذَا كَتَبْتَ؟ (What did you write?) — the object مَاذَا naturally comes first. Another common fronting pattern involves إِيَّاكَ (you, accusative pronoun): إِيَّاكَ نَعْبُدُ (It is You we worship — from Surat al-Fatiha). Fronting can apply to other sentence elements too, such as adverbs and prepositional phrases: فِي البَيْتِ جَلَسْتُ (At home I sat).",
+      "tip": "Fronting is a powerful rhetorical tool. When you see an accusative noun at the beginning of a sentence (before the verb), it is a fronted object. The case ending (accusative) confirms its grammatical role regardless of position.",
+      "examples": [
+        {
+          "ar": "الكِتَابَ قَرَأْتُ",
+          "en": "It is the BOOK that I read. (fronted object)",
+          "highlight": "الكِتَابَ"
+        },
+        {
+          "ar": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "en": "It is You we worship, and it is You we ask for help.",
+          "highlight": "إِيَّاكَ"
+        },
+        {
+          "ar": "مَاذَا فَعَلْتَ؟",
+          "en": "What did you do? (interrogative object fronted)",
+          "highlight": "مَاذَا"
+        },
+        {
+          "ar": "فِي المَكْتَبَةِ وَجَدْتُ الكِتَابَ",
+          "en": "In the library I found the book. (fronted prepositional phrase)",
+          "highlight": "فِي المَكْتَبَةِ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In الدَّرْسَ فَهِمَ الطَّالِبُ, which element is fronted for emphasis?",
+          "options": [
+            "الطَّالِبُ (the subject)",
+            "فَهِمَ (the verb)",
+            "الدَّرْسَ (the object)"
+          ],
+          "correctIndex": 2,
+          "explanation": "الدَّرْسَ is the object — you can tell by its accusative case ending (fatha). It has been moved to the front of the sentence for emphasis: 'It was THE LESSON that the student understood.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does fronting not change the grammatical case of the fronted word?",
+          "options": [
+            "Because Arabic uses case endings to mark grammatical roles, not word position",
+            "Because only verbs have case endings",
+            "Because fronting is not real Arabic grammar"
+          ],
+          "correctIndex": 0,
+          "explanation": "Arabic is an inflected language — grammatical roles are marked by case endings (إعراب), not by position. So an object remains accusative (مَنْصُوب) whether it appears after the verb or is fronted to the beginning of the sentence."
+        }
+      ]
+    },
+    {
+      "sectionId": "topicalization-cleft",
+      "title": "Topicalization and Cleft Sentences",
+      "explanation": "Topicalization is when a topic is placed at the beginning of a sentence, followed by a comment about it. This is the essence of the nominal sentence: الكِتَابُ قَرَأْتُهُ (The book — I read it). Notice the resumptive pronoun ـهُ on the verb, which refers back to the topic الكِتَاب. This differs from simple fronting because the fronted element is nominative (as a topic) and a pronoun echoes it. Cleft-like sentences use أَمَّا...فَـ (as for...then): أَمَّا الطَّالِبُ فَقَدْ نَجَحَ (As for the student, he has succeeded). This structure is extremely common in formal Arabic and helps organize information clearly. Another topicalization tool is the pronoun of separation (ضَمِير الفَصْل): اللهُ هُوَ الرَّحْمَنُ (God — He is the Merciful), where هُوَ separates and emphasizes the identification.",
+      "tip": "أَمَّا...فَـ is one of the most useful structures in Arabic writing and formal speech. It introduces a topic and guarantees a comment will follow. Think of it as 'As for X, [something about X].'",
+      "examples": [
+        {
+          "ar": "الكِتَابُ قَرَأْتُهُ أَمْسِ",
+          "en": "The book — I read it yesterday. (topicalization with resumptive pronoun)",
+          "highlight": "قَرَأْتُهُ"
+        },
+        {
+          "ar": "أَمَّا الامْتِحَانُ فَكَانَ صَعْبًا",
+          "en": "As for the exam, it was difficult.",
+          "highlight": "أَمَّا"
+        },
+        {
+          "ar": "أَمَّا أَنَا فَأُحِبُّ الرِّيَاضِيَّاتِ",
+          "en": "As for me, I love mathematics.",
+          "highlight": "أَمَّا أَنَا فَـ"
+        },
+        {
+          "ar": "المُعَلِّمُ هُوَ الَّذِي شَرَحَ الدَّرْسَ",
+          "en": "The teacher is the one who explained the lesson.",
+          "highlight": "هُوَ الَّذِي"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In الكِتَابُ قَرَأْتُهُ, what is the function of the ـهُ suffix on قَرَأْتُ?",
+          "options": [
+            "It marks the verb as past tense",
+            "It is a resumptive pronoun referring back to the topic الكِتَاب",
+            "It makes the verb passive"
+          ],
+          "correctIndex": 1,
+          "explanation": "The ـهُ is a resumptive pronoun (ضَمِير عَائِد) that refers back to the topic الكِتَاب. This is standard in topicalized sentences: the topic is stated first, then a pronoun in the comment clause links back to it."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "As for the teacher, she succeeded: أَمَّا المُعَلِّمَةُ ___ نَجَحَتْ",
+          "explanation": "The أَمَّا...فَـ structure requires فَـ before the comment clause. So the answer is فَقَدْ or simply فَـ attached to the next word.",
+          "acceptedAnswers": [
+            "فَقَدْ",
+            "فَ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the أَمَّا...فَـ construction correctly?",
+          "options": [
+            "أَمَّا الطَّقْسُ جَمِيلٌ",
+            "أَمَّا الطَّقْسُ فَجَمِيلٌ",
+            "فَأَمَّا الطَّقْسُ جَمِيلٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "The أَمَّا...فَـ structure requires فَـ to introduce the comment. أَمَّا الطَّقْسُ فَجَمِيلٌ (As for the weather, it is beautiful) is the correct pattern. The فَـ is obligatory after أَمَّا."
+        }
+      ]
+    }
+  ]
+}

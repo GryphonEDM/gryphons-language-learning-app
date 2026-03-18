@@ -1,0 +1,170 @@
+{
+  "lessonId": "tanwin-nunation",
+  "nameEn": "Nunation (Tanwīn)",
+  "nameAr": "التَّنْوِين",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [
+    "alphabet-pronunciation",
+    "nouns-gender"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "what-is-tanwin",
+      "title": "What Is Tanwīn?",
+      "explanation": "Tanwīn (التَّنْوِين) is the addition of an extra 'n' sound (نون) at the end of a noun to indicate that it is indefinite (without 'the'). In English, indefiniteness is shown with 'a' or 'an' — in Arabic, it is shown by doubling the final vowel mark and pronouncing it with an '-n' at the end. There are three forms of tanwīn corresponding to the three short vowels: fatḥatan (ـًـ, -an), kasratan (ـٍـ, -in), and ḍammatan (ـٌـ, -un). When you see a noun without the definite article الـ, it will typically carry tanwīn. For example: كِتَابٌ (kitābun, 'a book'), كِتَابًا (kitāban, 'a book' in accusative), كِتَابٍ (kitābin, 'a book' in genitive).",
+      "tip": "Think of tanwīn as the Arabic equivalent of 'a/an'. If a noun does NOT have الـ and is not in a possessive construction (إضافة), it gets tanwīn.",
+      "examples": [
+        {
+          "ar": "كِتَابٌ",
+          "en": "a book (nominative — ḍammatan)",
+          "highlight": "ـٌ"
+        },
+        {
+          "ar": "كِتَابًا",
+          "en": "a book (accusative — fatḥatan)",
+          "highlight": "ـًا"
+        },
+        {
+          "ar": "كِتَابٍ",
+          "en": "a book (genitive — kasratan)",
+          "highlight": "ـٍ"
+        },
+        {
+          "ar": "الْكِتَابُ",
+          "en": "the book (definite — no tanwīn!)",
+          "highlight": "الْ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does tanwīn indicate about a noun?",
+          "options": [
+            "The noun is definite (has 'the')",
+            "The noun is indefinite (has 'a/an')",
+            "The noun is plural"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tanwīn marks a noun as indefinite. Definite nouns use the article الـ and do NOT carry tanwīn."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many forms of tanwīn are there?",
+          "options": [
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "correctIndex": 1,
+          "explanation": "There are three forms: fatḥatan (ـًـ), kasratan (ـٍـ), and ḍammatan (ـٌـ), matching the three short vowels."
+        }
+      ]
+    },
+    {
+      "sectionId": "three-forms",
+      "title": "The Three Forms of Tanwīn",
+      "explanation": "Each tanwīn form corresponds to a grammatical case. (1) Ḍammatan (ـٌـ, -un): used for the nominative case (المرفوع) — the subject of a sentence. Example: جَاءَ وَلَدٌ (A boy came). (2) Fatḥatan (ـًـ, -an): used for the accusative case (المنصوب) — the object of a verb. Example: رَأَيْتُ وَلَدًا (I saw a boy). Note: fatḥatan usually adds an extra alif (ا) after the final letter, e.g., وَلَدًا — except when the word already ends in tā' marbūṭa (ة) or alif (ا/ى). (3) Kasratan (ـٍـ, -in): used for the genitive case (المجرور) — after prepositions or in iḍāfa. Example: ذَهَبْتُ إِلَى مَدْرَسَةٍ (I went to a school).",
+      "tip": "The extra alif in fatḥatan (كِتَابًا) is a spelling convention — it helps readers recognize the accusative tanwīn. Words ending in ة or ى do NOT add this alif: مَدْرَسَةً (not مَدْرَسَةًا), فَتًى (not فَتًىا).",
+      "examples": [
+        {
+          "ar": "جَاءَ طَالِبٌ",
+          "en": "A student came (nominative — ḍammatan)",
+          "highlight": "طَالِبٌ"
+        },
+        {
+          "ar": "قَرَأْتُ كِتَابًا",
+          "en": "I read a book (accusative — fatḥatan + alif)",
+          "highlight": "كِتَابًا"
+        },
+        {
+          "ar": "سَلَّمْتُ عَلَى رَجُلٍ",
+          "en": "I greeted a man (genitive — kasratan after عَلَى)",
+          "highlight": "رَجُلٍ"
+        },
+        {
+          "ar": "هَذِهِ مَدْرَسَةٌ كَبِيرَةٌ",
+          "en": "This is a big school (both nouns have ḍammatan)",
+          "highlight": "مَدْرَسَةٌ كَبِيرَةٌ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which tanwīn form is used for the subject (nominative) of a sentence?",
+          "options": [
+            "Fatḥatan (ـًـ)",
+            "Kasratan (ـٍـ)",
+            "Ḍammatan (ـٌـ)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Ḍammatan (ـٌـ, -un) is the nominative tanwīn, used for subjects. Example: جَاءَ وَلَدٌ (A boy came)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "I read a book: قَرَأْتُ ___",
+          "explanation": "The word 'book' (كِتَاب) is the object of the verb, so it takes the accusative tanwīn (fatḥatan). Since it doesn't end in ة or ى, an alif is added: كِتَابًا.",
+          "acceptedAnswers": [
+            "كِتَابًا"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "tanwin-and-definite",
+      "title": "Tanwīn vs. the Definite Article",
+      "explanation": "A fundamental rule in Arabic: tanwīn and the definite article الـ NEVER appear on the same noun. A noun is either definite (with الـ, no tanwīn) or indefinite (with tanwīn, no الـ). Similarly, a noun in an إضافة (possessive construction) as the first element (المضاف) loses its tanwīn. For example: كِتَابُ الطَّالِبِ (the student's book) — كِتَاب has no tanwīn because it is the first part of an iḍāfa. Also, proper nouns and pronouns are inherently definite and do not take tanwīn. Some nouns are 'diptote' (ممنوع من الصرف) and resist tanwīn — they take fatḥa instead of kasra in the genitive and do not take tanwīn unless preceded by الـ.",
+      "tip": "Quick test: Can you put الـ on the noun? If the noun already has الـ, a pronoun suffix, or is the first word in an iḍāfa, it CANNOT have tanwīn.",
+      "examples": [
+        {
+          "ar": "بَيْتٌ — الْبَيْتُ",
+          "en": "a house — the house (tanwīn vs. الـ)",
+          "highlight": "بَيْتٌ"
+        },
+        {
+          "ar": "كِتَابُ الْمُعَلِّمِ",
+          "en": "the teacher's book (iḍāfa — no tanwīn on كِتَاب)",
+          "highlight": "كِتَابُ"
+        },
+        {
+          "ar": "ذَهَبْتُ إِلَى أَحْمَدَ",
+          "en": "I went to Ahmad (proper noun — no tanwīn, fatḥa in genitive)",
+          "highlight": "أَحْمَدَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Can a noun carry both الـ and tanwīn at the same time?",
+          "options": [
+            "Yes, in formal Arabic",
+            "No, never",
+            "Only in the accusative case"
+          ],
+          "correctIndex": 1,
+          "explanation": "A noun is either definite (الـ) or indefinite (tanwīn) — never both. This is one of the most fundamental rules in Arabic grammar."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does كِتَابُ in كِتَابُ الطَّالِبِ have no tanwīn?",
+          "options": [
+            "Because it has الـ",
+            "Because it is the first part of an iḍāfa (possessive construction)",
+            "Because it is a verb, not a noun"
+          ],
+          "correctIndex": 1,
+          "explanation": "In an iḍāfa construction, the first noun (المضاف) loses its tanwīn. كِتَابُ is the possessed noun in 'the student's book', so no tanwīn."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "A big house (nominative): بَيْتٌ ___",
+          "explanation": "The adjective must match the noun in case and definiteness. Since بَيْتٌ is indefinite nominative, the adjective كَبِير also takes ḍammatan: كَبِيرٌ.",
+          "acceptedAnswers": [
+            "كَبِيرٌ"
+          ]
+        }
+      ]
+    }
+  ]
+}

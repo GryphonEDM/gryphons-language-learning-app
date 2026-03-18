@@ -1,0 +1,204 @@
+{
+  "lessonId": "requests-permission",
+  "nameEn": "Requests and Permission",
+  "nameKo": "요청과 허가",
+  "icon": "🙏",
+  "tier": "A2",
+  "prerequisites": [
+    "verb-conjugation"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "please-do",
+      "title": "-아/어 주세요 (Please Do) and -지 마세요 (Please Don't)",
+      "explanation": "-아/어 주세요 is used to politely ask someone to do something for you. It combines the -아/어 connective ending with 주다 (to give) in the polite imperative: the literal sense is 'please give me the doing of...' For example: 도와주세요 (please help me), 말해 주세요 (please tell me), 읽어 주세요 (please read it for me). The vowel harmony rule applies: bright vowels (ㅏ, ㅗ) take -아 주세요, and all others take -어 주세요. 하다 verbs become 해 주세요. To politely ask someone NOT to do something, use -지 마세요. Attach -지 to the verb stem and add 마세요: 만지지 마세요 (please don't touch), 걱정하지 마세요 (please don't worry), 가지 마세요 (please don't go). -지 마세요 is the negative counterpart of -아/어 주세요.",
+      "tip": "-아/어 주세요 literally means 'please give me the favor of doing X.' -지 마세요 is the polite way to say 'please don't.' Both are essential for everyday polite requests in Korean.",
+      "examples": [
+        {
+          "ko": "천천히 말해 주세요.",
+          "en": "Please speak slowly.",
+          "highlight": "말해 주세요"
+        },
+        {
+          "ko": "문을 닫아 주세요.",
+          "en": "Please close the door.",
+          "highlight": "닫아 주세요"
+        },
+        {
+          "ko": "여기서 사진을 찍지 마세요.",
+          "en": "Please don't take photos here.",
+          "highlight": "찍지 마세요"
+        },
+        {
+          "ko": "걱정하지 마세요.",
+          "en": "Please don't worry.",
+          "highlight": "걱정하지 마세요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Please help me' using 돕다 (to help)?",
+          "options": [
+            "도와 주세요",
+            "돕아 주세요",
+            "돕지 주세요",
+            "도와 마세요"
+          ],
+          "correctIndex": 0,
+          "explanation": "돕다 is an irregular verb: 돕 + 아 → 도와. So 'please help me' is 도와 주세요. The ㅂ changes to 와 before 아."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you politely say 'Please don't run' using 뛰다 (to run)?",
+          "options": [
+            "뛰어 주세요",
+            "뛰지 마세요",
+            "뛰지 주세요",
+            "뛰어 마세요"
+          ],
+          "correctIndex": 1,
+          "explanation": "-지 마세요 attaches to the verb stem to make a polite negative request: 뛰 + 지 마세요 = 뛰지 마세요 (please don't run)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "이 편지를 읽어 ___. (Please read this letter for me.)",
+          "hint": "Polite request ending with 주다",
+          "explanation": "읽어 주세요 is the polite request form: read (읽다) + -어 주세요.",
+          "acceptedAnswers": [
+            "주세요"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "may-i",
+      "title": "-아/어도 되다 (May I) and -(으)면 안 되다 (Must Not)",
+      "explanation": "-아/어도 되다 is used to ask for or grant permission — 'may I,' 'is it okay to,' or 'you may.' 되다 means 'to be okay/allowed.' The pattern is: verb stem + -아/어도 되다. Examples: 가도 돼요? (May I go?), 먹어도 돼요 (You may eat), 앉아도 돼요? (May I sit down?). The response can be: 네, -아/어도 돼요 (yes, you may) or 아니요, -(으)면 안 돼요 (no, you must not). -(으)면 안 되다 expresses prohibition or that something is not allowed. It literally means 'if you do X, it won't do.' Consonant-ending stems take -으면 안 되다; vowel-ending stems take -면 안 되다. Examples: 여기서 담배를 피우면 안 돼요 (You must not smoke here), 늦으면 안 돼요 (You must not be late).",
+      "tip": "-아/어도 되다 asks 'is it okay if I...?' while -(으)면 안 되다 says 'you must not / it's not okay to.' They are natural pairs for permission and prohibition.",
+      "examples": [
+        {
+          "ko": "여기 앉아도 돼요?",
+          "en": "May I sit here?",
+          "highlight": "앉아도 돼요"
+        },
+        {
+          "ko": "사진을 찍어도 돼요?",
+          "en": "May I take a photo?",
+          "highlight": "찍어도 돼요"
+        },
+        {
+          "ko": "여기서 담배를 피우면 안 돼요.",
+          "en": "You must not smoke here.",
+          "highlight": "피우면 안 돼요"
+        },
+        {
+          "ko": "수업 시간에 전화하면 안 돼요.",
+          "en": "You must not make phone calls during class.",
+          "highlight": "전화하면 안 돼요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you ask 'May I open the window?' using 열다 (to open)?",
+          "options": [
+            "창문을 열면 안 돼요?",
+            "창문을 열어도 돼요?",
+            "창문을 열지 마세요?",
+            "창문을 여세요?"
+          ],
+          "correctIndex": 1,
+          "explanation": "-아/어도 돼요? asks for permission: 열다 → 열어도 돼요? (May I open?). 창문을 열어도 돼요? = May I open the window?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 늦으면 안 돼요 mean?",
+          "options": [
+            "You may be late.",
+            "You must not be late.",
+            "Are you late?",
+            "Please don't be late."
+          ],
+          "correctIndex": 1,
+          "explanation": "-(으)면 안 되다 means 'must not / is not allowed.' 늦으면 안 돼요 = You must not be late."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "이거 먹어도 ___? (May I eat this?)",
+          "hint": "Permission pattern using 되다",
+          "explanation": "-아/어도 돼요? is the permission question. 먹어도 돼요? = May I eat?",
+          "acceptedAnswers": [
+            "돼요",
+            "돼요?"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "shall-we",
+      "title": "-(으)ㄹ까요? (Shall We? / Do You Think?)",
+      "explanation": "-(으)ㄹ까요? has two main uses: making suggestions ('shall we...?') and asking for opinions or speculation ('do you think...?'). Formation: verb stem ending in vowel + -ㄹ까요?, verb stem ending in consonant + -을까요?. For suggestions: 같이 갈까요? (Shall we go together?), 뭐 먹을까요? (What shall we eat?), 커피를 마실까요? (Shall we drink coffee?). For asking opinions: 내일 비가 올까요? (Do you think it will rain tomorrow?), 이 색이 어울릴까요? (Do you think this color suits me?). When used with the first person singular (제가/내가), it offers to do something: 제가 도와드릴까요? (Shall I help you?). This is a very common and versatile ending in conversational Korean.",
+      "tip": "-(으)ㄹ까요? is softer than a direct question — it invites the other person's input. Use it for polite suggestions, offers to help, and when wondering about something together.",
+      "examples": [
+        {
+          "ko": "같이 점심 먹을까요?",
+          "en": "Shall we eat lunch together?",
+          "highlight": "먹을까요"
+        },
+        {
+          "ko": "제가 도와드릴까요?",
+          "en": "Shall I help you?",
+          "highlight": "도와드릴까요"
+        },
+        {
+          "ko": "내일 날씨가 좋을까요?",
+          "en": "Do you think the weather will be nice tomorrow?",
+          "highlight": "좋을까요"
+        },
+        {
+          "ko": "어디서 만날까요?",
+          "en": "Where shall we meet?",
+          "highlight": "만날까요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Shall we go together?' using 가다 (to go)?",
+          "options": [
+            "같이 가세요?",
+            "같이 갈까요?",
+            "같이 가도 돼요?",
+            "같이 가지 마세요?"
+          ],
+          "correctIndex": 1,
+          "explanation": "가다 stem is 가 (vowel ending), so add -ㄹ까요?: 갈까요? 같이 갈까요? = Shall we go together?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 제가 문을 닫을까요? mean?",
+          "options": [
+            "Did you close the door?",
+            "Please close the door.",
+            "Shall I close the door?",
+            "You must not close the door."
+          ],
+          "correctIndex": 2,
+          "explanation": "제가 + -(으)ㄹ까요? means 'shall I...?' — offering to do something. 제가 문을 닫을까요? = Shall I close the door?"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "뭐 마실___? (What shall we drink?)",
+          "hint": "Suggestion ending",
+          "explanation": "마시다 stem is 마시 (vowel ending) → 마실까요? 뭐 마실까요? = What shall we drink?",
+          "acceptedAnswers": [
+            "까요",
+            "까요?"
+          ]
+        }
+      ]
+    }
+  ]
+}

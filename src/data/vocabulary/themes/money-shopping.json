@@ -1,0 +1,721 @@
+{
+  "setId": "money-shopping",
+  "nameEn": "Money & Shopping",
+  "nameUk": "Гроші та покупки",
+  "nameRu": "Деньги и покупки",
+  "nameDe": "Geld und Einkaufen",
+  "nameEs": "Dinero y compras",
+  "nameFr": "Argent et achats",
+  "nameEl": "Χρήματα και αγορές",
+  "nameHi": "पैसा और खरीदारी",
+  "nameAr": "المال والتسوق",
+  "nameKo": "돈과 쇼핑",
+  "nameZh": "金钱与购物",
+  "nameJa": "お金と買い物",
+  "difficulty": "A1",
+  "icon": "💰",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "гроші",
+      "ru": "деньги",
+      "de": "Geld",
+      "en": "money",
+      "phoneticUk": "hroshi",
+      "phoneticRu": "den'gi",
+      "phoneticDe": "GELT",
+      "es": "dinero",
+      "phoneticEs": "dee-NEH-roh",
+      "fr": "argent",
+      "frPhonetic": "ar-ZHON",
+      "el": "χρήματα",
+      "elPhonetic": "KHRI-ma-ta",
+      "hi": "पैसा",
+      "hiPhonetic": "PAI-saa",
+      "ar": "مَال",
+      "arPhonetic": "MAAL",
+      "ko": "돈",
+      "koPhonetic": "DON",
+      "zh": "钱",
+      "zhPhonetic": "qián",
+      "ja": "お金",
+      "jaPhonetic": "okane",
+      "examples": {
+        "uk": [
+          "У мене немає достатньо грошей.",
+          "Гроші потрібно витрачати розумно."
+        ],
+        "en": [
+          "I don't have enough money.",
+          "Money should be spent wisely."
+        ]
+      }
+    },
+    {
+      "uk": "ціна",
+      "ru": "цена",
+      "de": "Preis",
+      "en": "price",
+      "phoneticUk": "tsina",
+      "phoneticRu": "tsena",
+      "phoneticDe": "PRICE",
+      "es": "precio",
+      "phoneticEs": "PREH-thyoh",
+      "fr": "prix",
+      "frPhonetic": "PREE",
+      "el": "τιμή",
+      "elPhonetic": "ti-MI",
+      "hi": "कीमत",
+      "hiPhonetic": "KEE-mat",
+      "ar": "سِعْر",
+      "arPhonetic": "SI'R",
+      "ko": "가격",
+      "koPhonetic": "GA-gyeok",
+      "zh": "价格",
+      "zhPhonetic": "jiàgé",
+      "ja": "値段",
+      "jaPhonetic": "nedan",
+      "examples": {
+        "uk": [
+          "Яка ціна цієї сукні?",
+          "Ціни на продукти зросли."
+        ],
+        "en": [
+          "What is the price of this dress?",
+          "Food prices have gone up."
+        ]
+      }
+    },
+    {
+      "uk": "дорогий",
+      "ru": "дорогой",
+      "de": "teuer",
+      "en": "expensive",
+      "phoneticUk": "dorohyy",
+      "phoneticRu": "dorogoy",
+      "phoneticDe": "TOY-er",
+      "es": "caro",
+      "phoneticEs": "KAH-roh",
+      "fr": "cher",
+      "frPhonetic": "SHEHR",
+      "el": "ακριβός",
+      "elPhonetic": "a-kri-VOS",
+      "hi": "महँगा",
+      "hiPhonetic": "me-HEN-gaa",
+      "ar": "غَالٍ",
+      "arPhonetic": "GHAA-lin",
+      "ko": "비싼",
+      "koPhonetic": "BI-ssan",
+      "zh": "贵",
+      "zhPhonetic": "guì",
+      "ja": "高い",
+      "jaPhonetic": "takai",
+      "examples": {
+        "uk": [
+          "Ця сумка занадто дорога для мене.",
+          "Дорогі речі не завжди кращі."
+        ],
+        "en": [
+          "This bag is too expensive for me.",
+          "Expensive things are not always better."
+        ]
+      }
+    },
+    {
+      "uk": "дешевий",
+      "ru": "дешёвый",
+      "de": "billig",
+      "en": "cheap",
+      "phoneticUk": "deshevyy",
+      "phoneticRu": "deshyovyy",
+      "phoneticDe": "BIL-lik",
+      "es": "barato",
+      "phoneticEs": "ba-RAH-toh",
+      "fr": "bon marché",
+      "frPhonetic": "bon mar-SHEH",
+      "el": "φτηνός",
+      "elPhonetic": "fti-NOS",
+      "hi": "सस्ता",
+      "hiPhonetic": "SAS-taa",
+      "ar": "رَخِيص",
+      "arPhonetic": "ra-KHEES",
+      "ko": "싼",
+      "koPhonetic": "SSAN",
+      "zh": "便宜",
+      "zhPhonetic": "piányi",
+      "ja": "安い",
+      "jaPhonetic": "yasui",
+      "examples": {
+        "uk": [
+          "Цей магазин продає дешеві товари.",
+          "Я знайшов дешевий квиток на літак."
+        ],
+        "en": [
+          "This store sells cheap goods.",
+          "I found a cheap plane ticket."
+        ]
+      }
+    },
+    {
+      "uk": "купувати",
+      "ru": "покупать",
+      "de": "kaufen",
+      "en": "buy",
+      "phoneticUk": "kupuvaty",
+      "phoneticRu": "pokupat'",
+      "phoneticDe": "KAU-fen",
+      "es": "comprar",
+      "phoneticEs": "kom-PRAR",
+      "fr": "acheter",
+      "frPhonetic": "ash-TEH",
+      "el": "αγοράζω",
+      "elPhonetic": "a-gho-RA-zo",
+      "hi": "खरीदना",
+      "hiPhonetic": "kha-REED-naa",
+      "ar": "يَشْتَرِي",
+      "arPhonetic": "yash-TA-ree",
+      "ko": "사다",
+      "koPhonetic": "SA-da",
+      "zh": "买",
+      "zhPhonetic": "mǎi",
+      "ja": "買う",
+      "jaPhonetic": "kau",
+      "examples": {
+        "uk": [
+          "Я хочу купити нові черевики.",
+          "Мама купує продукти в супермаркеті."
+        ],
+        "en": [
+          "I want to buy new shoes.",
+          "Mom buys groceries at the supermarket."
+        ]
+      }
+    },
+    {
+      "uk": "продавати",
+      "ru": "продавать",
+      "de": "verkaufen",
+      "en": "sell",
+      "phoneticUk": "prodavaty",
+      "phoneticRu": "prodavat'",
+      "phoneticDe": "fer-KAU-fen",
+      "es": "vender",
+      "phoneticEs": "ben-DEHR",
+      "fr": "vendre",
+      "frPhonetic": "VONDR",
+      "el": "πουλάω",
+      "elPhonetic": "pu-LA-o",
+      "hi": "बेचना",
+      "hiPhonetic": "BECH-naa",
+      "ar": "يَبِيع",
+      "arPhonetic": "ya-BEE'",
+      "ko": "팔다",
+      "koPhonetic": "PAL-da",
+      "zh": "卖",
+      "zhPhonetic": "mài",
+      "ja": "売る",
+      "jaPhonetic": "uru",
+      "examples": {
+        "uk": [
+          "Він продає овочі на ринку.",
+          "Ми хочемо продати старий автомобіль."
+        ],
+        "en": [
+          "He sells vegetables at the market.",
+          "We want to sell the old car."
+        ]
+      }
+    },
+    {
+      "uk": "платити",
+      "ru": "платить",
+      "de": "bezahlen",
+      "en": "pay",
+      "phoneticUk": "platyty",
+      "phoneticRu": "platit'",
+      "phoneticDe": "be-TSAH-len",
+      "es": "pagar",
+      "phoneticEs": "pa-GAR",
+      "fr": "payer",
+      "frPhonetic": "peh-YEH",
+      "el": "πληρώνω",
+      "elPhonetic": "pli-RO-no",
+      "hi": "भुगतान करना",
+      "hiPhonetic": "bhug-TAAN kar-NAA",
+      "ar": "يَدْفَع",
+      "arPhonetic": "YAD-fa'",
+      "ko": "지불하다",
+      "koPhonetic": "JI-bul-ha-da",
+      "zh": "付款",
+      "zhPhonetic": "fùkuǎn",
+      "ja": "払う",
+      "jaPhonetic": "harau",
+      "examples": {
+        "uk": [
+          "Я заплачу карткою, будь ласка.",
+          "Потрібно заплатити за парковку."
+        ],
+        "en": [
+          "I will pay by card, please.",
+          "You need to pay for parking."
+        ]
+      }
+    },
+    {
+      "uk": "чек",
+      "ru": "чек",
+      "de": "Quittung",
+      "en": "receipt",
+      "phoneticUk": "chek",
+      "phoneticRu": "chek",
+      "phoneticDe": "kvi-TOONG",
+      "es": "recibo",
+      "phoneticEs": "reh-THEE-boh",
+      "fr": "reçu",
+      "frPhonetic": "reh-SOO",
+      "el": "απόδειξη",
+      "elPhonetic": "a-PO-dik-si",
+      "hi": "रसीद",
+      "hiPhonetic": "ra-SEED",
+      "ar": "إِيصَال",
+      "arPhonetic": "ee-SAAL",
+      "ko": "영수증",
+      "koPhonetic": "YEONG-su-jeung",
+      "zh": "收据",
+      "zhPhonetic": "shōujù",
+      "ja": "レシート",
+      "jaPhonetic": "reshiito",
+      "examples": {
+        "uk": [
+          "Збережіть чек на випадок повернення.",
+          "Касир дав мені чек."
+        ],
+        "en": [
+          "Keep the receipt in case of a return.",
+          "The cashier gave me a receipt."
+        ]
+      }
+    },
+    {
+      "uk": "знижка",
+      "ru": "скидка",
+      "de": "Rabatt",
+      "en": "discount",
+      "phoneticUk": "znyzhka",
+      "phoneticRu": "skidka",
+      "phoneticDe": "ra-BAT",
+      "es": "descuento",
+      "phoneticEs": "des-KWEN-toh",
+      "fr": "remise",
+      "frPhonetic": "reh-MEEZ",
+      "el": "έκπτωση",
+      "elPhonetic": "EK-pto-si",
+      "hi": "छूट",
+      "hiPhonetic": "CHHOOT",
+      "ar": "خَصْم",
+      "arPhonetic": "KHASM",
+      "ko": "할인",
+      "koPhonetic": "HAL-in",
+      "zh": "折扣",
+      "zhPhonetic": "zhékòu",
+      "ja": "割引",
+      "jaPhonetic": "waribiki",
+      "examples": {
+        "uk": [
+          "У цьому магазині сьогодні знижка 20%.",
+          "Я купив куртку зі знижкою."
+        ],
+        "en": [
+          "This store has a 20% discount today.",
+          "I bought a jacket at a discount."
+        ]
+      }
+    },
+    {
+      "uk": "готівка",
+      "ru": "наличные",
+      "de": "Bargeld",
+      "en": "cash",
+      "phoneticUk": "hotivka",
+      "phoneticRu": "nalichnye",
+      "phoneticDe": "BAR-gelt",
+      "es": "efectivo",
+      "phoneticEs": "eh-fek-TEE-boh",
+      "fr": "espèces",
+      "frPhonetic": "es-PES",
+      "el": "μετρητά",
+      "elPhonetic": "me-tri-TA",
+      "hi": "नकद",
+      "hiPhonetic": "NA-kad",
+      "ar": "نَقْد",
+      "arPhonetic": "NAQD",
+      "ko": "현금",
+      "koPhonetic": "HYEON-geum",
+      "zh": "现金",
+      "zhPhonetic": "xiànjīn",
+      "ja": "現金",
+      "jaPhonetic": "genkin",
+      "examples": {
+        "uk": [
+          "Ви платите готівкою чи карткою?",
+          "У мене немає готівки з собою."
+        ],
+        "en": [
+          "Are you paying with cash or card?",
+          "I don't have cash on me."
+        ]
+      }
+    },
+    {
+      "uk": "кредитна картка",
+      "ru": "кредитная карта",
+      "de": "Kreditkarte",
+      "en": "credit card",
+      "phoneticUk": "kredytna kartka",
+      "phoneticRu": "kreditnaya karta",
+      "phoneticDe": "kre-DEET-kar-teh",
+      "es": "tarjeta de crédito",
+      "phoneticEs": "tar-HEH-tah deh KREH-dee-toh",
+      "fr": "carte de crédit",
+      "frPhonetic": "KART duh kreh-DEE",
+      "el": "πιστωτική κάρτα",
+      "elPhonetic": "pi-sto-ti-KI KAR-ta",
+      "hi": "क्रेडिट कार्ड",
+      "hiPhonetic": "KRE-dit KAARD",
+      "ar": "بِطَاقَة ائْتِمَان",
+      "arPhonetic": "bi-TAA-qat i'-ti-MAAN",
+      "ko": "신용카드",
+      "koPhonetic": "SIN-yong-ka-deu",
+      "zh": "信用卡",
+      "zhPhonetic": "xìnyòngkǎ",
+      "ja": "クレジットカード",
+      "jaPhonetic": "kurejitto kaado",
+      "examples": {
+        "uk": [
+          "Я заплачу кредитною карткою.",
+          "Моя кредитна картка закінчується наступного місяця."
+        ],
+        "en": [
+          "I will pay with a credit card.",
+          "My credit card expires next month."
+        ]
+      }
+    },
+    {
+      "uk": "магазин",
+      "ru": "магазин",
+      "de": "Geschäft",
+      "en": "store",
+      "phoneticUk": "mahazyn",
+      "phoneticRu": "magazin",
+      "phoneticDe": "geh-SHEFT",
+      "es": "tienda",
+      "phoneticEs": "TYEN-dah",
+      "fr": "magasin",
+      "frPhonetic": "ma-ga-ZAN",
+      "el": "κατάστημα",
+      "elPhonetic": "ka-TA-sti-ma",
+      "hi": "दुकान",
+      "hiPhonetic": "du-KAAN",
+      "ar": "مَتْجَر",
+      "arPhonetic": "MAT-jar",
+      "ko": "가게",
+      "koPhonetic": "GA-ge",
+      "zh": "商店",
+      "zhPhonetic": "shāngdiàn",
+      "ja": "店",
+      "jaPhonetic": "mise",
+      "examples": {
+        "uk": [
+          "Цей магазин працює до дев'ятої вечора.",
+          "Я йду в магазин за хлібом."
+        ],
+        "en": [
+          "This store is open until nine in the evening.",
+          "I am going to the store for bread."
+        ]
+      }
+    },
+    {
+      "uk": "ринок",
+      "ru": "рынок",
+      "de": "Markt",
+      "en": "market",
+      "phoneticUk": "rynok",
+      "phoneticRu": "rynok",
+      "phoneticDe": "MARKT",
+      "es": "mercado",
+      "phoneticEs": "mer-KAH-doh",
+      "fr": "marché",
+      "frPhonetic": "mar-SHEH",
+      "el": "αγορά",
+      "elPhonetic": "a-gho-RA",
+      "hi": "बाज़ार",
+      "hiPhonetic": "baa-ZAAR",
+      "ar": "سُوق",
+      "arPhonetic": "SOOQ",
+      "ko": "시장",
+      "koPhonetic": "SI-jang",
+      "zh": "市场",
+      "zhPhonetic": "shìchǎng",
+      "ja": "市場",
+      "jaPhonetic": "ichiba",
+      "examples": {
+        "uk": [
+          "На ринку продають свіжі овочі.",
+          "Ми ходимо на ринок щосуботи."
+        ],
+        "en": [
+          "Fresh vegetables are sold at the market.",
+          "We go to the market every Saturday."
+        ]
+      }
+    },
+    {
+      "uk": "гаманець",
+      "ru": "кошелёк",
+      "de": "Geldbörse",
+      "en": "wallet",
+      "phoneticUk": "hamanets",
+      "phoneticRu": "koshelyok",
+      "phoneticDe": "GELT-ber-zeh",
+      "es": "cartera",
+      "phoneticEs": "kar-TEH-rah",
+      "fr": "portefeuille",
+      "frPhonetic": "port-FUH-yuh",
+      "el": "πορτοφόλι",
+      "elPhonetic": "por-to-FO-li",
+      "hi": "बटुआ",
+      "hiPhonetic": "ba-TU-aa",
+      "ar": "مَحْفَظَة",
+      "arPhonetic": "MAH-fa-za",
+      "ko": "지갑",
+      "koPhonetic": "JI-gap",
+      "zh": "钱包",
+      "zhPhonetic": "qiánbāo",
+      "ja": "財布",
+      "jaPhonetic": "saifu",
+      "examples": {
+        "uk": [
+          "Я загубив свій гаманець учора.",
+          "У гаманці лежать гроші та картки."
+        ],
+        "en": [
+          "I lost my wallet yesterday.",
+          "There is money and cards in the wallet."
+        ]
+      }
+    },
+    {
+      "uk": "решта",
+      "ru": "сдача",
+      "de": "Wechselgeld",
+      "en": "change",
+      "phoneticUk": "reshta",
+      "phoneticRu": "sdacha",
+      "phoneticDe": "VEK-sel-gelt",
+      "es": "cambio",
+      "phoneticEs": "KAM-byoh",
+      "fr": "monnaie",
+      "frPhonetic": "mo-NEH",
+      "el": "ρέστα",
+      "elPhonetic": "RE-sta",
+      "hi": "छुट्टा",
+      "hiPhonetic": "CHHUT-taa",
+      "ar": "فِكَّة",
+      "arPhonetic": "FIK-ka",
+      "ko": "거스름돈",
+      "koPhonetic": "GEO-seu-reum-don",
+      "zh": "零钱",
+      "zhPhonetic": "língqián",
+      "ja": "お釣り",
+      "jaPhonetic": "otsuri",
+      "examples": {
+        "uk": [
+          "Ось ваша решта, будь ласка.",
+          "У мене немає дрібної решти."
+        ],
+        "en": [
+          "Here is your change, please.",
+          "I don't have small change."
+        ]
+      }
+    },
+    {
+      "uk": "вартість",
+      "ru": "стоимость",
+      "de": "Kosten",
+      "en": "cost",
+      "phoneticUk": "vartist",
+      "phoneticRu": "stoimost'",
+      "phoneticDe": "KOS-ten",
+      "es": "costo",
+      "phoneticEs": "KOS-toh",
+      "fr": "coût",
+      "frPhonetic": "KOO",
+      "el": "κόστος",
+      "elPhonetic": "KO-stos",
+      "hi": "लागत",
+      "hiPhonetic": "LAA-gat",
+      "ar": "تَكْلِفَة",
+      "arPhonetic": "TAK-li-fa",
+      "ko": "비용",
+      "koPhonetic": "BI-yong",
+      "zh": "费用",
+      "zhPhonetic": "fèiyòng",
+      "ja": "費用",
+      "jaPhonetic": "hiyou",
+      "examples": {
+        "uk": [
+          "Яка вартість доставки?",
+          "Вартість проїзду зросла."
+        ],
+        "en": [
+          "What is the cost of delivery?",
+          "The cost of travel has increased."
+        ]
+      }
+    },
+    {
+      "uk": "розпродаж",
+      "ru": "распродажа",
+      "de": "Ausverkauf",
+      "en": "sale",
+      "phoneticUk": "rozprodazh",
+      "phoneticRu": "rasprodazha",
+      "phoneticDe": "OWS-fer-kauf",
+      "es": "rebajas",
+      "phoneticEs": "reh-BAH-has",
+      "fr": "soldes",
+      "frPhonetic": "SOLD",
+      "el": "εκπτώσεις",
+      "elPhonetic": "ek-PTO-sis",
+      "hi": "सेल",
+      "hiPhonetic": "SEL",
+      "ar": "تَخْفِيضَات",
+      "arPhonetic": "takh-fee-DAAT",
+      "ko": "세일",
+      "koPhonetic": "SE-il",
+      "zh": "打折",
+      "zhPhonetic": "dǎzhé",
+      "ja": "セール",
+      "jaPhonetic": "seeru",
+      "examples": {
+        "uk": [
+          "У магазині великий розпродаж!",
+          "Я чекаю на розпродаж, щоб купити пальто."
+        ],
+        "en": [
+          "There is a big sale at the store!",
+          "I am waiting for a sale to buy a coat."
+        ]
+      }
+    },
+    {
+      "uk": "вигідна покупка",
+      "ru": "выгодная покупка",
+      "de": "Schnäppchen",
+      "en": "bargain",
+      "phoneticUk": "vyhidna pokupka",
+      "phoneticRu": "vygodnaya pokupka",
+      "phoneticDe": "SHNEP-khen",
+      "es": "ganga",
+      "phoneticEs": "GAN-gah",
+      "fr": "bonne affaire",
+      "frPhonetic": "bon ah-FEHR",
+      "el": "ευκαιρία",
+      "elPhonetic": "ef-ke-RI-a",
+      "hi": "सस्ता सौदा",
+      "hiPhonetic": "SAS-taa SAU-daa",
+      "ar": "صَفْقَة",
+      "arPhonetic": "SAF-qa",
+      "ko": "싸게 산 물건",
+      "koPhonetic": "SSA-ge san mul-geon",
+      "zh": "便宜货",
+      "zhPhonetic": "piányihuò",
+      "ja": "掘り出し物",
+      "jaPhonetic": "horidashimono",
+      "examples": {
+        "uk": [
+          "Це була дуже вигідна покупка.",
+          "На ринку можна знайти вигідні покупки."
+        ],
+        "en": [
+          "That was a real bargain.",
+          "You can find bargains at the market."
+        ]
+      }
+    },
+    {
+      "uk": "покупець",
+      "ru": "покупатель",
+      "de": "Kunde",
+      "en": "customer",
+      "phoneticUk": "pokupets",
+      "phoneticRu": "pokupatel'",
+      "phoneticDe": "KOON-deh",
+      "es": "cliente",
+      "phoneticEs": "klee-EN-teh",
+      "fr": "client",
+      "frPhonetic": "klee-ON",
+      "el": "πελάτης",
+      "elPhonetic": "pe-LA-tis",
+      "hi": "ग्राहक",
+      "hiPhonetic": "GRAA-hak",
+      "ar": "زَبُون",
+      "arPhonetic": "za-BOON",
+      "ko": "손님",
+      "koPhonetic": "SON-nim",
+      "zh": "顾客",
+      "zhPhonetic": "gùkè",
+      "ja": "お客さん",
+      "jaPhonetic": "okyakusan",
+      "examples": {
+        "uk": [
+          "Покупець завжди правий.",
+          "У магазині багато покупців."
+        ],
+        "en": [
+          "The customer is always right.",
+          "There are many customers in the store."
+        ]
+      }
+    },
+    {
+      "uk": "касир",
+      "ru": "кассир",
+      "de": "Kassierer",
+      "en": "cashier",
+      "phoneticUk": "kasyr",
+      "phoneticRu": "kassir",
+      "phoneticDe": "ka-SEE-rer",
+      "es": "cajero",
+      "phoneticEs": "ka-HEH-roh",
+      "fr": "caissier",
+      "frPhonetic": "keh-SYEH",
+      "el": "ταμίας",
+      "elPhonetic": "ta-MI-as",
+      "hi": "कैशियर",
+      "hiPhonetic": "KE-shi-yar",
+      "ar": "أَمِين الصُّنْدُوق",
+      "arPhonetic": "a-MEEN as-SUN-dooq",
+      "ko": "계산원",
+      "koPhonetic": "GYE-san-won",
+      "zh": "收银员",
+      "zhPhonetic": "shōuyínyuán",
+      "ja": "レジ係",
+      "jaPhonetic": "rejigakari",
+      "examples": {
+        "uk": [
+          "Касир дав мені чек.",
+          "Касир працює біля каси весь день."
+        ],
+        "en": [
+          "The cashier gave me a receipt.",
+          "The cashier works at the register all day."
+        ]
+      }
+    }
+  ]
+}

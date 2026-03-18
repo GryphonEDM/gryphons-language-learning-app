@@ -96,7 +96,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
   const lookupWord = useCallback((word) => {
     const cleaned = word.toLowerCase().replace(/[.,!?;:"""()—–\-…]/g, '');
     if (!cleaned) return null;
-    const userHit = lookupUserDict(cleaned);
+    const userHit = lookupUserDict(cleaned, langCode);
     if (userHit) return userHit;
     if (dict.targetToEn[cleaned]) return dict.targetToEn[cleaned];
     for (let i = cleaned.length - 1; i >= Math.max(1, cleaned.length - 3); i--) {
@@ -184,7 +184,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
       wordPendingRef.current = requestId;
       translateWithLLM(cleaned, langName, contextSentence).then(llmTranslation => {
         if (llmTranslation && wordPendingRef.current === requestId) {
-          saveToUserDict(cleaned, llmTranslation);
+          saveToUserDict(cleaned, llmTranslation, langCode);
           setSelectedWord(prev =>
             prev && prev.word === cleaned
               ? { ...prev, translation: llmTranslation }
@@ -916,7 +916,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
                     disabled={wordAddForm.translating}
                     autoFocus={!wordAddForm.translating}
                     onKeyDown={e => {
-                      if (e.key === 'Enter' && wordAddForm.en.trim()) { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }
+                      if (e.key === 'Enter' && wordAddForm.en.trim()) { saveToUserDict(selectedWord.word, wordAddForm.en, langCode); setWordAddForm(null); setSelectedWord(null); }
                       if (e.key === 'Escape') setWordAddForm(null);
                     }}
                   />
@@ -925,7 +925,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
                     <button
                       style={styles.addWordSave}
                       disabled={wordAddForm.translating || !wordAddForm.en.trim()}
-                      onClick={() => { saveToUserDict(selectedWord.word, wordAddForm.en); setWordAddForm(null); setSelectedWord(null); }}
+                      onClick={() => { saveToUserDict(selectedWord.word, wordAddForm.en, langCode); setWordAddForm(null); setSelectedWord(null); }}
                     >Save</button>
                   </div>
                 </div>

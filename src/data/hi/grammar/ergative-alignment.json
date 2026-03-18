@@ -1,0 +1,207 @@
+{
+  "lessonId": "ergative-alignment",
+  "nameEn": "Ergative Case (ने Construction)",
+  "nameHi": "कर्ता कारक (ने की रचना)",
+  "icon": "🔀",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "postpositions"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "ergative-basics",
+      "title": "The Ergative ने — When and Why",
+      "explanation": "Hindi uses a special grammatical system called 'ergative alignment' in the perfective aspect. When a transitive verb is in the perfective (completed action — simple past, present perfect, past perfect), the subject takes the postposition ने. This is a major structural difference from English.\n\nTHE RULE:\nTransitive verb + perfective aspect → subject takes ने\n\nWHAT CHANGES:\nWhen ने is added to the subject, the verb no longer agrees with the subject. Instead, it agrees with the object in gender and number — but only if the object does not have a postposition (like को).\n\n  उसने किताब पढ़ी। = He read a book.\n  Here: उसने = he (with ने), किताब = book (feminine), पढ़ी = read (feminine singular, agreeing with किताब).\n\n  Compare with the imperfective (no ने):\n  वह किताब पढ़ता है। = He reads a book.\n  Here: वह = he (no ने), पढ़ता = reads (masculine singular, agreeing with वह).\n\nNON-ERGATIVE CASES:\nने is NOT used with:\n  - Intransitive verbs: वह गया। (He went.) — no ने because जाना is intransitive.\n  - Imperfective aspect: वह खाना खाता है। (He eats food.) — present habitual, not perfective.\n  - Future tense: वह खाना खाएगा। (He will eat food.) — future, not perfective.",
+      "tip": "Ask yourself two questions: (1) Is the verb transitive? (2) Is the action completed (perfective)? If both answers are yes, the subject takes ने and the verb agrees with the object.",
+      "examples": [
+        {
+          "hi": "उसने किताब पढ़ी।",
+          "en": "He read a book. (verb agrees with किताब, feminine)",
+          "highlight": "उसने"
+        },
+        {
+          "hi": "लड़की ने खाना खाया।",
+          "en": "The girl ate food. (verb agrees with खाना, masculine)",
+          "highlight": "लड़की ने"
+        },
+        {
+          "hi": "हमने फ़िल्म देखी।",
+          "en": "We watched a movie. (verb agrees with फ़िल्म, feminine)",
+          "highlight": "हमने"
+        },
+        {
+          "hi": "वह गया। (no ने — intransitive verb)",
+          "en": "He went. (जाना is intransitive, so no ने is used)",
+          "highlight": "वह"
+        },
+        {
+          "hi": "राम ने पत्र लिखा।",
+          "en": "Ram wrote a letter. (verb agrees with पत्र, masculine)",
+          "highlight": "राम ने"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"उसने किताब पढ़ी\" में क्रिया किससे मेल खाती है? (In this sentence, what does the verb agree with?)",
+          "options": [
+            "उसने (the subject)",
+            "किताब (the object)",
+            "Neither — the verb is always masculine"
+          ],
+          "correctIndex": 1,
+          "explanation": "In ergative constructions with ने, the verb agrees with the object, not the subject. किताब is feminine, so the verb takes the feminine form पढ़ी instead of masculine पढ़ा."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses ने?",
+          "options": [
+            "वह ने सोया। (He slept.)",
+            "उसने खाना खाया। (He ate food.)",
+            "वह ने जाता है। (He goes.)"
+          ],
+          "correctIndex": 1,
+          "explanation": "ने is only used with transitive verbs in the perfective aspect. सोना (to sleep) is intransitive, so no ने. जाता है is imperfective, so no ने. खाना खाया is transitive + perfective, so ने is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "लड़की ___ खाना खाया। (The girl ate food.)",
+          "hint": "Postposition used with transitive verbs in perfective",
+          "explanation": "ने is required because खाना (to eat) is transitive and the action is perfective (completed). The verb खाया agrees with खाना (masculine).",
+          "acceptedAnswers": [
+            "ने"
+          ]
+        }
+      ]
+    },
+    {
+      "sectionId": "verb-agreement-patterns",
+      "title": "Verb Agreement in Ergative Sentences",
+      "explanation": "When ने is used, verb agreement follows specific rules based on whether the object is marked with a postposition.\n\nRULE 1 — Object without postposition:\nThe verb agrees with the object in gender and number.\n  उसने रोटी खाई। = He ate bread. (रोटी is feminine → खाई)\n  उसने समोसा खाया। = He ate a samosa. (समोसा is masculine → खाया)\n  उसने रोटियाँ खाईं। = He ate rotis. (रोटियाँ is feminine plural → खाईं)\n\nRULE 2 — Object with postposition (को, etc.):\nWhen the object takes a postposition like को, the verb cannot agree with it. The verb defaults to masculine singular.\n  उसने लड़के को देखा। = He saw the boy. (लड़के को has postposition → देखा, default masculine singular)\n  उसने लड़की को देखा। = He saw the girl. (लड़की को has postposition → देखा, still default masculine singular)\n\nRULE 3 — No object:\nIf there is no explicit object, the verb defaults to masculine singular.\n  उसने खाया। = He ate. (no object → खाया, default)\n\nThe को postposition is often used with specific/definite or animate objects, which is why verb agreement patterns can shift within the same conversation.",
+      "tip": "If the object has को after it, the verb 'gives up' trying to agree and defaults to masculine singular. This is the most common source of errors for learners.",
+      "examples": [
+        {
+          "hi": "उसने चिट्ठी लिखी।",
+          "en": "He wrote a letter. (चिट्ठी feminine → लिखी)",
+          "highlight": "लिखी"
+        },
+        {
+          "hi": "उसने पत्र लिखा।",
+          "en": "He wrote a letter. (पत्र masculine → लिखा)",
+          "highlight": "लिखा"
+        },
+        {
+          "hi": "माँ ने बच्चों को बुलाया।",
+          "en": "Mother called the children. (बच्चों को has postposition → बुलाया default)",
+          "highlight": "बुलाया"
+        },
+        {
+          "hi": "उसने सारी किताबें पढ़ीं।",
+          "en": "He/She read all the books. (किताबें feminine plural → पढ़ीं)",
+          "highlight": "पढ़ीं"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"उसने लड़की को देखा\" — क्रिया 'देखा' पुल्लिंग क्यों है? (Why is the verb masculine?)",
+          "options": [
+            "Because the subject उसने is masculine",
+            "Because the object लड़की has the postposition को, so the verb defaults to masculine singular",
+            "Because देखना is always masculine"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the object is marked with को, the verb cannot agree with it and defaults to masculine singular (देखा). Without को, it would be: उसने लड़की देखी (feminine, agreeing with लड़की)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "उसने रोटी _____ । (He ate bread.)",
+          "hint": "Past tense of खाना, agreeing with रोटी (feminine)",
+          "explanation": "रोटी is feminine and has no postposition, so the verb agrees with it: खाई (feminine singular past of खाना).",
+          "acceptedAnswers": [
+            "खाई"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: \"मैंने गाने _____ ।\" (I sang songs.) — गाने is masculine plural.",
+          "options": [
+            "गाई",
+            "गाया",
+            "गाए"
+          ],
+          "correctIndex": 2,
+          "explanation": "गाने (songs) is masculine plural with no postposition, so the verb agrees: गाए (masculine plural past of गाना). गाई would be feminine singular, गाया masculine singular."
+        }
+      ]
+    },
+    {
+      "sectionId": "ergative-vs-non-ergative",
+      "title": "Ergative vs. Non-Ergative Contrast",
+      "explanation": "Understanding the ergative system requires seeing the contrast between perfective (with ने) and imperfective (without ने) constructions side by side.\n\nIMPERFECTIVE (no ने, verb agrees with subject):\n  वह किताब पढ़ता है। = He reads a book. (पढ़ता agrees with वह, masculine subject)\n  वह किताब पढ़ती है। = She reads a book. (पढ़ती agrees with वह, feminine subject)\n\nPERFECTIVE (ने, verb agrees with object):\n  उसने किताब पढ़ी। = He read a book. (पढ़ी agrees with किताब, feminine object)\n  उसने किताब पढ़ी। = She read a book. (पढ़ी agrees with किताब — same form regardless of subject gender!)\n\nNotice that in the perfective, whether the subject is male or female does not matter — the verb form is identical because it agrees with the object.\n\nSPECIAL VERBS:\nSome transitive verbs like लाना (to bring) and भूलना (to forget) can be used with or without ने depending on dialect and context:\n  मैं भूल गया / मैंने भूल गया — both are heard.\n\nCOMPOUND VERBS:\nIn compound verbs (verb + auxiliary like लेना, देना, जाना), ने usage depends on the auxiliary verb:\n  उसने खा लिया। = He ate up. (लेना is transitive → ने used)\n  वह खा गया। = He ate. (जाना is intransitive → no ने)",
+      "tip": "The simplest test: say the same sentence in present habitual and simple past. If the verb form changes to match the object in the past, you know ने is at work.",
+      "examples": [
+        {
+          "hi": "वह फल खाता है। → उसने फल खाया।",
+          "en": "He eats fruit. → He ate fruit. (imperfective → perfective with ने)",
+          "highlight": "उसने"
+        },
+        {
+          "hi": "वह गाना गाती है। → उसने गाना गाया।",
+          "en": "She sings a song. → She sang a song. (verb agrees with गाना masculine in perfective)",
+          "highlight": "गाया"
+        },
+        {
+          "hi": "बच्चे दूध पीते हैं। → बच्चों ने दूध पिया।",
+          "en": "Children drink milk. → Children drank milk.",
+          "highlight": "बच्चों ने"
+        },
+        {
+          "hi": "उसने खाना खा लिया। (compound verb with लेना → ने used)",
+          "en": "He ate up the food. (लेना is transitive, so ने is required)",
+          "highlight": "खा लिया"
+        },
+        {
+          "hi": "वह चला गया। (compound verb with जाना → no ने)",
+          "en": "He went away. (जाना is intransitive, so no ने)",
+          "highlight": "चला गया"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to perfective: \"वह चाय पीती है\" (She drinks tea.) What is the correct past tense?",
+          "options": [
+            "वह चाय पी।",
+            "उसने चाय पी।",
+            "उसने चाय पिया।"
+          ],
+          "correctIndex": 1,
+          "explanation": "पीना is transitive, so the perfective requires ने: उसने. चाय is feminine, so the verb is पी (feminine singular past). पिया would be masculine, which is incorrect for चाय."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "बच्चों ___ दूध पिया। (The children drank milk.)",
+          "hint": "Postposition for transitive verbs in perfective",
+          "explanation": "पीना is transitive and the action is perfective, so the subject takes ने. दूध is masculine, so the verb is पिया (masculine singular).",
+          "acceptedAnswers": [
+            "ने"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"उसने खाना खा लिया\" uses ने, but \"वह चला गया\" does not. Why?",
+          "options": [
+            "Because खाना is a longer word than चलना",
+            "Because in compound verbs, ने depends on the auxiliary: लेना is transitive (ने), जाना is intransitive (no ने)",
+            "Because खा लिया is past tense and चला गया is present tense"
+          ],
+          "correctIndex": 1,
+          "explanation": "In compound verbs, the auxiliary verb determines ने usage. लेना (to take) is transitive, so ने is used. जाना (to go) is intransitive, so ने is not used. Both sentences are in the perfective past tense."
+        }
+      ]
+    }
+  ]
+}

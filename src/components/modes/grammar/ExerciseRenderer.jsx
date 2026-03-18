@@ -64,12 +64,13 @@ function MultipleChoice({ exercise, onAnswer, feedback }) {
 function FillBlank({ exercise, onAnswer, feedback }) {
   const [value, setValue] = useState('');
   const inputRef = useRef(null);
+  const answers = exercise.acceptedAnswers || (exercise.answer ? [exercise.answer] : []);
 
   useEffect(() => { setValue(''); inputRef.current?.focus(); }, [exercise]);
 
   const handleSubmit = () => {
     if (!value.trim() || feedback) return;
-    const isCorrect = exercise.acceptedAnswers
+    const isCorrect = answers
       .map(a => a.toLowerCase())
       .includes(value.trim().toLowerCase());
     onAnswer(isCorrect);
@@ -89,8 +90,8 @@ function FillBlank({ exercise, onAnswer, feedback }) {
       />
       {exercise.hint && !feedback && <p style={s.hint}>Hint: {exercise.hint}</p>}
       {!feedback && <button style={s.checkBtn} onClick={handleSubmit} disabled={!value.trim()}>Check Answer</button>}
-      {feedback && !feedback.correct && exercise.acceptedAnswers && (
-        <p style={s.correctAnswer}>Correct answer: {exercise.acceptedAnswers[0]}</p>
+      {feedback && !feedback.correct && answers.length > 0 && (
+        <p style={s.correctAnswer}>Correct answer: {answers[0]}</p>
       )}
     </div>
   );
@@ -295,13 +296,14 @@ function ErrorCorrection({ exercise, onAnswer, feedback }) {
 function Transformation({ exercise, onAnswer, feedback }) {
   const [value, setValue] = useState('');
   const inputRef = useRef(null);
+  const answers = exercise.acceptedAnswers || (exercise.answer ? [exercise.answer] : []);
 
   useEffect(() => { setValue(''); inputRef.current?.focus(); }, [exercise]);
 
   const handleSubmit = () => {
     if (!value.trim() || feedback) return;
     const userVal = value.trim().toLowerCase().replace(/[.!?]+$/, '');
-    const isCorrect = exercise.acceptedAnswers.some(a =>
+    const isCorrect = answers.some(a =>
       a.toLowerCase().replace(/[.!?]+$/, '') === userVal
     );
     onAnswer(isCorrect);
@@ -323,8 +325,8 @@ function Transformation({ exercise, onAnswer, feedback }) {
       />
       {exercise.hint && !feedback && <p style={s.hint}>Hint: {exercise.hint}</p>}
       {!feedback && <button style={s.checkBtn} onClick={handleSubmit} disabled={!value.trim()}>Check Answer</button>}
-      {feedback && !feedback.correct && (
-        <p style={s.correctAnswer}>Correct: {exercise.acceptedAnswers[0]}</p>
+      {feedback && !feedback.correct && answers.length > 0 && (
+        <p style={s.correctAnswer}>Correct: {answers[0]}</p>
       )}
     </div>
   );
@@ -358,7 +360,8 @@ function ListenType({ exercise, onAnswer, feedback, onSpeak, ttsEnabled, ttsVolu
 
   const handleSubmit = () => {
     if (!value.trim() || feedback) return;
-    const isCorrect = exercise.acceptedAnswers
+    const answers = exercise.acceptedAnswers || (exercise.answer ? [exercise.answer] : []);
+    const isCorrect = answers
       .map(a => a.toLowerCase().replace(/[.,!?;:]/g, ''))
       .includes(value.trim().toLowerCase().replace(/[.,!?;:]/g, ''));
     onAnswer(isCorrect);

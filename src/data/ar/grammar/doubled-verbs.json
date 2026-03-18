@@ -1,0 +1,222 @@
+{
+  "lessonId": "doubled-verbs",
+  "nameEn": "Doubled Verbs (الأفعال المضعّفة)",
+  "nameAr": "الْأَفْعَالُ الْمُضَعَّفَةُ",
+  "icon": "🔁",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "present-tense",
+    "verb-forms"
+  ],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "what-are-doubled",
+      "title": "What Are Doubled Verbs?",
+      "explanation": "Doubled verbs (الأفعال المضعّفة) are verbs whose second and third root letters are identical. In their base form, these two identical consonants merge into one letter with a shadda (ّ). For example: مَدَّ (he stretched, root: م-د-د), حَبَّ (he loved, root: ح-ب-ب), رَدَّ (he replied, root: ر-د-د), ضَمَّ (he embraced, root: ض-م-م), شَدَّ (he pulled, root: ش-د-د). The key challenge with doubled verbs is knowing when the two identical letters stay merged (with shadda) and when they separate. This affects pronunciation, spelling, and conjugation throughout all tenses.",
+      "tip": "To identify a doubled verb: if a past-tense verb has only two visible root letters and the second one has shadda, it is likely a doubled verb. The shadda tells you the second and third radicals are the same letter.",
+      "examples": [
+        {
+          "ar": "مَدَّ (م-د-د)",
+          "en": "he stretched/extended (دّ = two dāl letters merged)",
+          "highlight": "مَدَّ"
+        },
+        {
+          "ar": "رَدَّ (ر-د-د)",
+          "en": "he replied/returned (دّ = two dāl letters merged)",
+          "highlight": "رَدَّ"
+        },
+        {
+          "ar": "حَبَّ (ح-ب-ب)",
+          "en": "he loved (بّ = two bā' letters merged)",
+          "highlight": "حَبَّ"
+        },
+        {
+          "ar": "ظَنَّ (ظ-ن-ن)",
+          "en": "he thought/assumed (نّ = two nūn letters merged)",
+          "highlight": "ظَنَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What defines a 'doubled verb' in Arabic?",
+          "options": [
+            "A verb with a weak letter as its middle radical",
+            "A verb whose second and third root letters are identical",
+            "A verb that is used twice in a sentence"
+          ],
+          "correctIndex": 1,
+          "explanation": "A doubled verb has identical second and third radicals (e.g., م-د-د). These two identical letters merge with a shadda in certain forms."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the root of the verb مَدَّ (he stretched)?",
+          "options": [
+            "م-د (two letters)",
+            "م-د-د (three letters)",
+            "م-د-ّ (two letters + shadda)"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arabic roots are typically three letters. The shadda in مَدَّ represents two dāl letters merged: م-د-د. The root is still three consonants."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-tense-doubled",
+      "title": "Past Tense: When to Merge and When to Separate",
+      "explanation": "The critical rule for doubled verbs in the past tense: the two identical letters STAY MERGED (with shadda) when the suffix begins with a vowel or there is no suffix. They SEPARATE when the suffix begins with a consonant. Merged (suffix starts with vowel or no suffix): مَدَّ (he stretched), مَدَّتْ (she stretched — the تْ has sukun but follows the merged form), مَدُّوا (they stretched). Separated (suffix starts with consonant): مَدَدْتُ (I stretched), مَدَدْتَ (you m. stretched), مَدَدْنَا (we stretched). When the letters separate, they appear as two distinct letters without shadda, and the first one takes sukun: مَدَدْتُ (ma-dad-tu). This separation is necessary because Arabic does not allow a consonant cluster followed by another consonant.",
+      "tip": "Suffixes starting with a consonant (ـتُ, ـتَ, ـتِ, ـتُمْ, ـنَا) force separation: مَدَدْتُ. Suffixes starting with a vowel (ـُوا, ـَتْ) keep the merge: مَدُّوا. No suffix at all = merged: مَدَّ.",
+      "examples": [
+        {
+          "ar": "مَدَّ → مَدَدْتُ",
+          "en": "he stretched → I stretched (letters separate before ـتُ)",
+          "highlight": "مَدَدْتُ"
+        },
+        {
+          "ar": "رَدَّ → رَدَدْنَا",
+          "en": "he replied → we replied (letters separate before ـنَا)",
+          "highlight": "رَدَدْنَا"
+        },
+        {
+          "ar": "حَبَّ → حَبَّتْ",
+          "en": "he loved → she loved (letters stay merged)",
+          "highlight": "حَبَّتْ"
+        },
+        {
+          "ar": "ضَمَّ → ضَمُّوا",
+          "en": "he embraced → they embraced (letters stay merged)",
+          "highlight": "ضَمُّوا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "I replied (أنا): ___",
+          "explanation": "رَدَّ (root: ر-د-د). Before the suffix ـتُ (starts with consonant), the doubled letters separate: رَدَدْتُ.",
+          "acceptedAnswers": [
+            "رَدَدْتُ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In مَدُّوا (they stretched), why do the doubled letters stay merged?",
+          "options": [
+            "Because the suffix ـُوا starts with a vowel",
+            "Because the verb is in the plural form",
+            "Because doubled letters always stay merged"
+          ],
+          "correctIndex": 0,
+          "explanation": "The suffix ـُوا starts with a vowel (ḍamma). Doubled letters stay merged when the suffix begins with a vowel. They only separate when the suffix starts with a consonant."
+        }
+      ]
+    },
+    {
+      "sectionId": "present-tense-doubled",
+      "title": "Present Tense of Doubled Verbs",
+      "explanation": "In the present tense, doubled verbs keep the two identical letters merged (with shadda) in most forms: يَمُدُّ (he stretches), تَمُدُّ (you/she stretch), نَمُدُّ (we stretch), يَمُدُّونَ (they stretch), تَمُدِّينَ (you f. stretch). The doubled letters only separate in the jussive mood (مجزوم) when the ending is sukun, but even then there are two acceptable forms: لَمْ يَمُدَّ (with fatḥa on the merged letters) or لَمْ يَمْدُدْ (with the letters separated). The merged jussive form (لَمْ يَمُدَّ) is more common in everyday speech. The vowel pattern on doubled verbs varies: يَمُدُّ (ḍamma), يَرُدُّ (ḍamma), يَظُنُّ (ḍamma), but also يَحِبُّ (kasra — a common irregular pattern for 'to love').",
+      "tip": "In the present tense indicative (المرفوع), doubled letters always stay merged: يَمُدُّ. In the jussive, you can either keep them merged with fatḥa (لَمْ يَمُدَّ) or separate them (لَمْ يَمْدُدْ) — both are correct.",
+      "examples": [
+        {
+          "ar": "يَمُدُّ يَدَهُ",
+          "en": "He stretches out his hand (present — merged)",
+          "highlight": "يَمُدُّ"
+        },
+        {
+          "ar": "يَرُدُّ عَلَى الرِّسَالَةِ",
+          "en": "He replies to the message (present — merged)",
+          "highlight": "يَرُدُّ"
+        },
+        {
+          "ar": "أُحِبُّ الْقِرَاءَةَ",
+          "en": "I love reading (أُحِبُّ — Form IV doubled verb)",
+          "highlight": "أُحِبُّ"
+        },
+        {
+          "ar": "لَمْ يَرُدَّ عَلَيَّ",
+          "en": "He did not reply to me (jussive — merged with fatḥa)",
+          "highlight": "لَمْ يَرُدَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "She thinks/assumes (هِيَ): ___",
+          "explanation": "ظَنَّ → يَظُنُّ. For هِيَ, the prefix is تـ: تَظُنُّ. The doubled letters stay merged in the present tense.",
+          "acceptedAnswers": [
+            "تَظُنُّ"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the jussive (مجزوم) of يَمُدُّ?",
+          "options": [
+            "يَمُدُّ (no change)",
+            "يَمُدَّ or يَمْدُدْ (both are correct)",
+            "يَمْدُدُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "In the jussive, doubled verbs have two acceptable forms: merged with fatḥa (يَمُدَّ) or separated (يَمْدُدْ). Both are grammatically correct."
+        }
+      ]
+    },
+    {
+      "sectionId": "imperative-and-common",
+      "title": "Imperative and Common Doubled Verbs",
+      "explanation": "The imperative of doubled verbs keeps the letters merged: مُدَّ (stretch!), رُدَّ (reply!), ضُمَّ (embrace!), شُدَّ (pull!). The feminine singular adds ـِّي: مُدِّي, رُدِّي. The masculine plural adds ـُّوا: مُدُّوا, رُدُّوا. Common doubled verbs to memorize: مَدَّ/يَمُدُّ (to stretch), رَدَّ/يَرُدُّ (to reply/return), حَبَّ/يُحِبُّ (to love — usually used as أَحَبَّ/يُحِبُّ in Form IV), ظَنَّ/يَظُنُّ (to think/assume), شَدَّ/يَشُدُّ (to pull/tighten), عَدَّ/يَعُدُّ (to count), ضَمَّ/يَضُمُّ (to embrace/include), حَلَّ/يَحُلُّ (to solve/untie), دَلَّ/يَدُلُّ (to indicate), مَرَّ/يَمُرُّ (to pass by).",
+      "tip": "The imperative of doubled verbs is short: just the merged letters with the right vowel — مُدَّ, رُدَّ, شُدَّ. The initial vowel follows the same rules as regular imperatives.",
+      "examples": [
+        {
+          "ar": "رُدَّ عَلَى السُّؤَالِ!",
+          "en": "Reply to the question! (imperative, masculine singular)",
+          "highlight": "رُدَّ"
+        },
+        {
+          "ar": "عُدُّوا الْأَرْقَامَ!",
+          "en": "Count the numbers! (imperative, masculine plural)",
+          "highlight": "عُدُّوا"
+        },
+        {
+          "ar": "مَرَّ بِالسُّوقِ",
+          "en": "He passed by the market",
+          "highlight": "مَرَّ"
+        },
+        {
+          "ar": "حَلَّ الْمُشْكِلَةَ",
+          "en": "He solved the problem",
+          "highlight": "حَلَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Reply! (to a woman): ___",
+          "explanation": "The imperative of رَدَّ/يَرُدُّ is رُدَّ. For feminine singular, add ـِّي: رُدِّي.",
+          "acceptedAnswers": [
+            "رُدِّي"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense of مَرَّ (he passed by)?",
+          "options": [
+            "يَمُرُّ",
+            "يَمْرُرُ",
+            "يَمَرُّ"
+          ],
+          "correctIndex": 0,
+          "explanation": "مَرَّ (root: م-ر-ر) follows the standard doubled verb pattern in the present tense: يَمُرُّ (he passes by). The doubled letters stay merged."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "We counted (نحن): ___",
+          "explanation": "عَدَّ (root: ع-د-د). Before ـنَا (consonant suffix), the doubled letters separate: عَدَدْنَا.",
+          "acceptedAnswers": [
+            "عَدَدْنَا"
+          ]
+        }
+      ]
+    }
+  ]
+}

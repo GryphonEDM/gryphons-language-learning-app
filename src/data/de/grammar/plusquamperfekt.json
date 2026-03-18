@@ -1,0 +1,210 @@
+{
+  "lessonId": "plusquamperfekt",
+  "nameEn": "Plusquamperfekt (Past Perfect)",
+  "nameDe": "Das Plusquamperfekt",
+  "icon": "⏪",
+  "tier": "B1",
+  "prerequisites": [
+    "perfekt",
+    "verbs-present"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "formation",
+      "title": "Formation: hatte/war + Partizip II",
+      "explanation": "The Plusquamperfekt (past perfect) is formed with the Präteritum of 'haben' or 'sein' (hatte/war) plus the Partizip II (past participle). It follows the same haben/sein rules as the Perfekt: most verbs use 'hatte', while verbs of movement or change of state use 'war'. Examples with 'haben': ich hatte gemacht, du hattest gesagt, er hatte gegessen, wir hatten gelernt. Examples with 'sein': ich war gegangen, du warst gefahren, er war gekommen, wir waren gelaufen. Remember: the Partizip II is the same form used in the Perfekt (gemacht, gegessen, gegangen, etc.).",
+      "tip": "Plusquamperfekt = Perfekt but with hatte/war instead of habe/bin. Same Partizip II, same haben/sein choice!",
+      "examples": [
+        {
+          "de": "Ich hatte schon gegessen.",
+          "en": "I had already eaten.",
+          "highlight": "hatte gegessen"
+        },
+        {
+          "de": "Er war schon gegangen.",
+          "en": "He had already left.",
+          "highlight": "war gegangen"
+        },
+        {
+          "de": "Wir hatten das Buch gelesen.",
+          "en": "We had read the book.",
+          "highlight": "hatten gelesen"
+        },
+        {
+          "de": "Sie war nach Berlin gefahren.",
+          "en": "She had driven to Berlin.",
+          "highlight": "war gefahren"
+        },
+        {
+          "de": "Die Kinder hatten ihre Hausaufgaben gemacht.",
+          "en": "The children had done their homework.",
+          "highlight": "hatten gemacht"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct Plusquamperfekt of 'essen' (ich)?",
+          "options": [
+            "ich habe gegessen",
+            "ich hatte gegessen",
+            "ich war gegessen"
+          ],
+          "correctIndex": 1,
+          "explanation": "Plusquamperfekt uses 'hatte' (not 'habe'). 'Essen' uses 'haben': ich hatte gegessen."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ schon nach Hause gegangen. (He had already gone home.)",
+          "acceptedAnswers": [
+            "war"
+          ],
+          "hint": "'Gehen' is a verb of movement, so it uses 'sein' → 'war' in Plusquamperfekt",
+          "explanation": "'Gehen' uses 'sein' in perfect tenses: er ist gegangen (Perfekt) → er war gegangen (Plusquamperfekt)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ den Film schon gesehen. (We had already seen the film.)",
+          "acceptedAnswers": [
+            "hatten"
+          ],
+          "hint": "'Sehen' uses 'haben' → 'hatten' in Plusquamperfekt",
+          "explanation": "'Sehen' uses 'haben': wir haben gesehen (Perfekt) → wir hatten gesehen (Plusquamperfekt)."
+        }
+      ]
+    },
+    {
+      "sectionId": "usage",
+      "title": "Usage: Events Before Other Past Events",
+      "explanation": "The Plusquamperfekt describes an event that happened before another past event. It establishes a 'past within the past'. The earlier event uses Plusquamperfekt, while the later event uses Perfekt or Präteritum. Example: Nachdem ich gegessen hatte, ging ich spazieren. (After I had eaten, I went for a walk.) — First: eating (Plusquamperfekt). Then: walking (Präteritum). Common signal words: nachdem (after), bevor (before), als (when), sobald (as soon as), bereits (already), schon (already).",
+      "tip": "'Nachdem' almost always triggers Plusquamperfekt in the nachdem-clause, with Präteritum or Perfekt in the main clause.",
+      "examples": [
+        {
+          "de": "Nachdem er aufgestanden war, frühstückte er.",
+          "en": "After he had gotten up, he ate breakfast.",
+          "highlight": "aufgestanden war"
+        },
+        {
+          "de": "Ich hatte das Buch gelesen, bevor der Film kam.",
+          "en": "I had read the book before the movie came out.",
+          "highlight": "hatte gelesen"
+        },
+        {
+          "de": "Als wir ankamen, hatte das Konzert schon begonnen.",
+          "en": "When we arrived, the concert had already started.",
+          "highlight": "hatte begonnen"
+        },
+        {
+          "de": "Nachdem sie ihre Prüfung bestanden hatte, feierte sie.",
+          "en": "After she had passed her exam, she celebrated.",
+          "highlight": "bestanden hatte"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which event uses the Plusquamperfekt? 'Nachdem ich ___ (arrive), rief ich dich an (I called you).'",
+          "options": [
+            "Both events use Plusquamperfekt",
+            "The nachdem-clause (arriving) uses Plusquamperfekt",
+            "The main clause (calling) uses Plusquamperfekt"
+          ],
+          "correctIndex": 1,
+          "explanation": "The event that happened first (arriving) goes in the nachdem-clause and uses Plusquamperfekt. The later event (calling) uses Präteritum or Perfekt."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nachdem er das Essen ___ ___, räumte er die Küche auf. (After he had cooked the meal, he cleaned up the kitchen.) — Plusquamperfekt of 'kochen'",
+          "acceptedAnswers": [
+            "gekocht hatte"
+          ],
+          "hint": "hatte + Partizip II (gekocht), but in subordinate clause the auxiliary goes to the end",
+          "explanation": "In a nachdem-clause the verb goes to the end: nachdem er das Essen gekocht hatte."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Als ich ankam, ___ der Zug schon abgefahren. (When I arrived, the train had already departed.)",
+          "acceptedAnswers": [
+            "war"
+          ],
+          "hint": "'Abfahren' is a movement verb → uses 'sein' → 'war'",
+          "explanation": "'Abfahren' uses 'sein': der Zug war abgefahren (Plusquamperfekt)."
+        }
+      ]
+    },
+    {
+      "sectionId": "perfekt-vs-plusquamperfekt",
+      "title": "Perfekt vs. Plusquamperfekt",
+      "explanation": "Perfekt and Plusquamperfekt use the same Partizip II but different auxiliaries. Perfekt uses habe/bin (present tense of haben/sein), while Plusquamperfekt uses hatte/war (past tense of haben/sein). Perfekt describes past events in general: Ich habe das Buch gelesen. (I have read the book / I read the book.) Plusquamperfekt describes events that occurred before another past event: Ich hatte das Buch schon gelesen, als der Lehrer danach fragte. (I had already read the book when the teacher asked about it.) In everyday German, people sometimes skip the Plusquamperfekt and use Perfekt for both events, but using Plusquamperfekt is grammatically correct and clearer.",
+      "tip": "Think of it as layers of the past: Perfekt = 'what happened', Plusquamperfekt = 'what had already happened before that'.",
+      "examples": [
+        {
+          "de": "Ich habe den Brief geschrieben. (Perfekt)",
+          "en": "I wrote the letter. (simple past event)",
+          "highlight": "habe geschrieben"
+        },
+        {
+          "de": "Ich hatte den Brief schon geschrieben, als er anrief. (Plusquamperfekt)",
+          "en": "I had already written the letter when he called.",
+          "highlight": "hatte geschrieben"
+        },
+        {
+          "de": "Sie ist eingeschlafen. (Perfekt)",
+          "en": "She fell asleep.",
+          "highlight": "ist eingeschlafen"
+        },
+        {
+          "de": "Sie war schon eingeschlafen, als ich kam. (Plusquamperfekt)",
+          "en": "She had already fallen asleep when I came.",
+          "highlight": "war eingeschlafen"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each Perfekt form with its Plusquamperfekt equivalent:",
+          "pairs": [
+            {
+              "left": "ich habe gemacht",
+              "right": "ich hatte gemacht"
+            },
+            {
+              "left": "er ist gekommen",
+              "right": "er war gekommen"
+            },
+            {
+              "left": "wir haben gesehen",
+              "right": "wir hatten gesehen"
+            },
+            {
+              "left": "sie ist gelaufen",
+              "right": "sie war gelaufen"
+            }
+          ],
+          "explanation": "To convert Perfekt → Plusquamperfekt: habe→hatte, bin→war, ist→war, haben→hatten, sind→waren. The Partizip II stays the same."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct tense: 'Nachdem er seine Arbeit ___ (finish), ging er nach Hause.'",
+          "options": [
+            "beendet hat (Perfekt)",
+            "beendet hatte (Plusquamperfekt)",
+            "beendete (Präteritum)"
+          ],
+          "correctIndex": 1,
+          "explanation": "After 'nachdem', the earlier event uses Plusquamperfekt: Nachdem er seine Arbeit beendet hatte, ging er nach Hause."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Bevor ich nach Deutschland flog, ___ ich schon Deutsch gelernt. (Before I flew to Germany, I had already learned German.)",
+          "acceptedAnswers": [
+            "hatte"
+          ],
+          "hint": "The earlier event (learning German) uses Plusquamperfekt with 'haben'",
+          "explanation": "Learning German happened first → Plusquamperfekt: ich hatte Deutsch gelernt."
+        }
+      ]
+    }
+  ]
+}
