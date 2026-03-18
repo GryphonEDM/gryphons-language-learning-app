@@ -100,6 +100,17 @@ if %ERRORLEVEL% neq 0 (
 ) else (
     echo requests already installed.
 )
+
+python -c "from silma_tts.api import SilmaTTS" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing SILMA TTS (Arabic)...
+    pip install onnxruntime
+    pip install catt-tashkeel --no-deps
+    pip install silma-tts --no-deps
+    pip install vocos cached_path ema_pytorch torchdiffeq x_transformers transformers_stream_generator unidecode pydub safetensors torchcodec matplotlib "antlr4-python3-runtime==4.9.3"
+) else (
+    echo SILMA TTS already installed.
+)
 echo.
 
 echo [4/6] Checking Whisper STT dependencies...

@@ -86,6 +86,25 @@ if ! python3 -c "import requests" &> /dev/null; then
 else
     echo "requests already installed."
 fi
+
+if ! python3 -c "from silma_tts.api import SilmaTTS" &> /dev/null; then
+    echo "Installing SILMA TTS (Arabic)..."
+    pip install onnxruntime
+    pip install catt-tashkeel --no-deps
+    pip install silma-tts --no-deps
+    pip install vocos cached_path ema_pytorch torchdiffeq x_transformers transformers_stream_generator unidecode pydub safetensors torchcodec matplotlib 'antlr4-python3-runtime==4.9.3'
+    # Patch nemo_text_processing import (doesn't build on macOS)
+    SILMA_UTILS=$(python3 -c "from importlib.resources import files; print(files('silma_tts').joinpath('infer/utils_infer.py'))" 2>/dev/null)
+    if [ -n "$SILMA_UTILS" ] && grep -q "^from nemo_text_processing" "$SILMA_UTILS"; then
+        sed -i '' 's/^from nemo_text_processing.text_normalization.normalize import Normalizer/try:\n    from nemo_text_processing.text_normalization.normalize import Normalizer\nexcept ImportError:\n    Normalizer = None/' "$SILMA_UTILS"
+        # Also guard normalize_text function
+        sed -i '' '/def normalize_text/,/return nemo_normalizer.normalize/{s/return nemo_normalizer.normalize/if nemo_normalizer is None:\n        return text\n    return nemo_normalizer.normalize/}' "$SILMA_UTILS"
+        # Guard load_nemo_text_normalizer
+        sed -i '' '/def load_nemo_text_normalizer/,/lang = detect/{s/lang = detect/if Normalizer is None:\n        return None\n    lang = detect/}' "$SILMA_UTILS"
+    fi
+else
+    echo "SILMA TTS already installed."
+fi
 echo ""
 
 echo "[4/6] Checking Whisper STT dependencies..."

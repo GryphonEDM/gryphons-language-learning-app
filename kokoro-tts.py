@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Kokoro TTS sidecar service — runs on port 3003.
 
-Preloads Kokoro pipelines for French, Hindi, Japanese, and Chinese.
+Preloads Kokoro pipelines for Spanish, French, Hindi, Japanese, and Chinese.
 Called by tts-server.py which proxies requests here.
 """
 from flask import Flask, request, send_file
@@ -17,6 +17,7 @@ CORS(app)
 
 # Language config: app lang code -> (kokoro lang code, default voice)
 KOKORO_LANGS = {
+    'es': ('e', 'em_alex'),
     'fr': ('f', 'ff_siwis'),
     'hi': ('h', 'hm_omega'),
     'ja': ('j', 'jm_kumo'),

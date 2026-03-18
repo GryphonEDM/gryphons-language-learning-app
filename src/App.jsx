@@ -463,15 +463,38 @@ export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk'
   }
 };
 
-/** Split text into alternating cyrillic/latin chunks for mixed TTS. */
-function splitByScript(text) {
+/** Detect the native script type for a language. */
+const LANG_SCRIPT = {
+  uk: 'cyrillic', ru: 'cyrillic',
+  el: 'greek', hi: 'devanagari', ar: 'arabic', ko: 'korean',
+  zh: 'cjk', ja: 'cjk',
+  de: 'latin', es: 'latin', fr: 'latin', en: 'latin',
+};
+
+/** Regex patterns for non-Latin scripts. */
+const SCRIPT_PATTERNS = {
+  cyrillic: /[а-яёіїєґА-ЯЁІЇЄҐ]/,
+  greek: /[\u0370-\u03FF\u1F00-\u1FFF]/,
+  devanagari: /[\u0900-\u097F]/,
+  arabic: /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/,
+  korean: /[\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F]/,
+  cjk: /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]/,
+};
+
+/** Split text into alternating native-script/latin chunks for mixed TTS. */
+function splitByScript(text, lang = 'uk') {
+  const scriptType = LANG_SCRIPT[lang] || 'cyrillic';
+  if (scriptType === 'latin') return []; // Can't split Latin-script languages
+  const nativePattern = SCRIPT_PATTERNS[scriptType];
+  if (!nativePattern) return [];
+
   const tokens = text.split(/(\s+)/);
   const chunks = [];
   let current = null;
   for (const token of tokens) {
-    const isCyrillic = /[а-яёіїєґА-ЯЁІЇЄҐ]/.test(token);
+    const isNative = nativePattern.test(token);
     const isLatin = /[a-zA-Z]/.test(token);
-    const type = isCyrillic ? 'cyrillic' : isLatin ? 'latin' : null;
+    const type = isNative ? 'native' : isLatin ? 'latin' : null;
     if (type === null) {
       if (current) current.text += token;
     } else if (current && current.type === type) {
@@ -485,25 +508,23 @@ function splitByScript(text) {
   return chunks;
 }
 
-/** Speak mixed-language text: Cyrillic via local model, Latin via English Silero. */
+/** Speak mixed-language text: native script via language model, Latin via English. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
-  // Non-Cyrillic scripts — route directly to their TTS, never English
-  if (lang === 'de') return speakUkrainian(text, rate, volume, 'de');
-  if (lang === 'es') return speakUkrainian(text, rate, volume, 'es');
-  if (lang === 'fr') return speakUkrainian(text, rate, volume, 'fr');
-  if (lang === 'el') return speakUkrainian(text, rate, volume, 'el');
-  if (lang === 'hi') return speakUkrainian(text, rate, volume, 'hi');
-  if (lang === 'ar') return speakUkrainian(text, rate, volume, 'ar');
-  if (lang === 'ko') return speakUkrainian(text, rate, volume, 'ko');
-  if (lang === 'zh') return speakUkrainian(text, rate, volume, 'zh');
-  if (lang === 'ja') return speakUkrainian(text, rate, volume, 'ja');
-  const chunks = splitByScript(text);
-  if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'cyrillic')) {
+  const scriptType = LANG_SCRIPT[lang] || 'latin';
+
+  // Latin-script languages (de, es, fr) — send everything to their TTS
+  if (scriptType === 'latin' && lang !== 'en') {
+    return speakUkrainian(text, rate, volume, lang);
+  }
+
+  // Non-Latin-script languages — split and route English words to English TTS
+  const chunks = splitByScript(text, lang);
+  if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'native')) {
     return speakUkrainian(text, rate, volume, lang);
   }
   for (const chunk of chunks) {
     if (ttsCancelled) break;
-    if (chunk.type === 'cyrillic') {
+    if (chunk.type === 'native') {
       await speakUkrainian(chunk.text, rate, volume, lang);
     } else {
       await speakUkrainian(chunk.text, rate, volume, 'en');

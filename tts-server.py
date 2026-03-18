@@ -22,8 +22,8 @@ except ImportError:
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 RU_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-ru", "v5_ru.pt")
 DE_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-de", "v3_de.pt")
-ES_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-es", "v3_es.pt")
 # French TTS now handled by Kokoro sidecar
+# Spanish TTS now handled by Kokoro sidecar
 
 app = Flask(__name__)
 CORS(app)
@@ -191,22 +191,33 @@ DE_SPEAKER = 'bernd_ungerer'
 DE_SAMPLE_RATE = 48000
 print(f"[OK] German TTS model loaded! (speaker: {DE_SPEAKER})")
 
-# === Spanish TTS (Silero v3) ===
-os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-es"), exist_ok=True)
-
-print("Loading Spanish TTS model (Silero v3)...")
-if not os.path.isfile(ES_MODEL_PATH):
-    print("  Downloading Silero v3 Spanish model (~100MB)...")
-    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/es/v3_es.pt', ES_MODEL_PATH)
-
-tts_es = torch.package.PackageImporter(ES_MODEL_PATH).load_pickle("tts_models", "model")
-tts_es.to(torch.device('cpu'))
-ES_SPEAKER = 'es_0'
-ES_SAMPLE_RATE = 48000
-print(f"[OK] Spanish TTS model loaded! (speaker: {ES_SPEAKER})")
+# === Spanish TTS — now handled by Kokoro sidecar (port 3003) ===
+print("[OK] Spanish TTS → Kokoro sidecar")
 
 # === French TTS — now handled by Kokoro sidecar (port 3003) ===
 print("[OK] French TTS → Kokoro sidecar")
+
+# === Arabic TTS (SILMA v1) ===
+AR_TTS_AVAILABLE = False
+try:
+    from silma_tts.api import SilmaTTS
+    from importlib.resources import files as pkg_files
+
+    print("Loading Arabic TTS model (SILMA v1)...")
+    tts_ar = SilmaTTS(enable_normalizer=False, force_tashkeel=True)
+    AR_REF_AUDIO = os.path.join(SCRIPT_DIR, "ref_audio", "ar_male.24k.wav")
+    AR_REF_TEXT = "كنت أسأل عن رجل دين وعلم وخلق ويصلح لولاية القضاء"
+    AR_TTS_AVAILABLE = True
+    # Warmup: compile MPS/CUDA kernels so first real request is fast
+    print("  Warming up SILMA (short inference)...")
+    tts_ar.infer(
+        ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
+        gen_text="مرحبا", file_wave=None,
+        seed=42, speed=1.0, nfe_step=4
+    )
+    print(f"[OK] Arabic TTS (SILMA) loaded and warmed up on {tts_ar.device}")
+except Exception as e:
+    print(f"[WARN] SILMA Arabic TTS not available — espeak-ng fallback: {e}")
 
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
@@ -439,7 +450,7 @@ def generate_tts():
         text = expand_single_letter(text, lang)
 
         # Kokoro TTS languages — proxy to sidecar on port 3003
-        if lang in ('fr', 'hi', 'ja', 'zh'):
+        if lang in ('es', 'fr', 'hi', 'ja', 'zh'):
             return proxy_to_kokoro(text, lang)
         elif lang == 'ru':
             return generate_russian_tts(text)
@@ -447,8 +458,6 @@ def generate_tts():
             return generate_german_tts(text)
         elif lang == 'en':
             return generate_english_tts(text)
-        elif lang == 'es':
-            return generate_spanish_tts(text)
         elif lang == 'el':
             return generate_greek_tts(text)
         elif lang == 'ar':
@@ -559,20 +568,6 @@ def generate_german_tts(text):
         except OSError:
             pass
 
-def generate_spanish_tts(text):
-    text = numbers_to_words(text, lang='es')
-    print(f"[TTS-ES] Generating ({ES_SPEAKER}): {text[:80]}")
-    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
-        tmp_path = tmp.name
-    tts_es.save_wav(text=text, speaker=ES_SPEAKER, sample_rate=ES_SAMPLE_RATE, audio_path=tmp_path)
-    try:
-        print(f"[TTS-ES] Generated successfully")
-        return send_file(tmp_path, mimetype='audio/wav')
-    finally:
-        try:
-            os.unlink(tmp_path)
-        except OSError:
-            pass
 
 def generate_greek_tts(text):
     """Generate Greek TTS using espeak-ng."""
@@ -597,7 +592,38 @@ def generate_greek_tts(text):
             pass
 
 def generate_arabic_tts(text):
-    """Generate Arabic TTS using espeak-ng."""
+    """Generate Arabic TTS — SILMA (primary) or espeak-ng (fallback)."""
+    if AR_TTS_AVAILABLE:
+        try:
+            return generate_arabic_silma_tts(text)
+        except Exception as e:
+            print(f"[TTS-AR] SILMA error: {repr(e)}, falling back to espeak-ng")
+            import traceback
+            traceback.print_exc()
+            return generate_arabic_espeak_tts(text)
+    return generate_arabic_espeak_tts(text)
+
+def generate_arabic_silma_tts(text):
+    """Generate Arabic TTS using SILMA diffusion model."""
+    print(f"[TTS-AR] Generating (SILMA): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        tts_ar.infer(
+            ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
+            gen_text=text, file_wave=tmp_path,
+            seed=42, speed=1.0, nfe_step=12
+        )
+        print(f"[TTS-AR] Generated successfully (SILMA)")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+def generate_arabic_espeak_tts(text):
+    """Generate Arabic TTS using espeak-ng (fallback)."""
     import subprocess
     print(f"[TTS-AR] Generating (espeak-ng ar): {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
@@ -607,7 +633,7 @@ def generate_arabic_tts(text):
             ['espeak-ng', '-v', 'ar', '-s', '150', '-a', '180', '-w', tmp_path, text],
             check=True, capture_output=True
         )
-        print(f"[TTS-AR] Generated successfully")
+        print(f"[TTS-AR] Generated successfully (espeak-ng)")
         return send_file(tmp_path, mimetype='audio/wav')
     except subprocess.CalledProcessError as e:
         print(f"[TTS-AR] espeak-ng error: {e.stderr.decode()}")
@@ -677,9 +703,10 @@ def start_kokoro_sidecar():
 if __name__ == '__main__':
     start_kokoro_sidecar()
     print("\n[SPEAKER] TTS + STT Server")
-    print("   Silero: uk, ru, en, de, es")
-    print("   Kokoro (sidecar :3003): fr, hi, ja, zh")
-    print("   espeak-ng: el, ar, ko")
+    print("   Silero: uk, ru, en, de")
+    print("   Kokoro (sidecar :3003): es, fr, hi, ja, zh")
+    print(f"   SILMA: ar {'(loaded)' if AR_TTS_AVAILABLE else '(unavailable, espeak-ng fallback)'}")
+    print("   espeak-ng: el, ko")
     print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)
