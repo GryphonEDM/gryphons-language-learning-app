@@ -413,7 +413,7 @@ export const stopSpeaking = () => {
 };
 
 // Per-language volume level (0.0-1.0, applied as audio.volume directly)
-const LANG_VOLUME = { es: 1.0, fr: 0.85, el: 0.8, hi: 0.55, ar: 0.65, ko: 0.6, ja: 0.9, zh: 0.8 };
+const LANG_VOLUME = { uk: 0.9, ru: 0.45, en: 0.4, de: 0.45, es: 1.0, fr: 0.8, el: 0.7, hi: 0.5, ar: 0.4, ko: 0.4, ja: 0.7, zh: 0.6 };
 
 export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk', onProgress = null) => {
   // Normalize volume across TTS models
