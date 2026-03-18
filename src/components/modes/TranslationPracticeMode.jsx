@@ -38,7 +38,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const getFilteredWords = useCallback((cat, cefr) => {
     if (cat) {
       return (cat.words || []).map(w => ({
-        uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+        uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
         source: w.source || cat.setId,
         examples: w.examples || [], examplesEn: w.examplesEn || [],
       }));
@@ -49,13 +49,13 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
       vocabularySets.forEach(set => {
         if (!cefrMatches(set.difficulty || '', cefr)) return;
         (set.words || []).forEach(w => {
-          const key = (w.uk || '').toLowerCase();
+          const key = (w[langCode] || w.uk || '').toLowerCase();
           if (key && !seen.has(key)) {
             seen.add(key);
             filtered.push({
-              uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+              uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
               source: w.source || set.setId,
-              examples: w.examples || [], examplesEn: w.examplesEn || [],
+              examples: w.examples || [], examplesEn: w.examplesEn || '',
             });
           }
         });

@@ -2146,7 +2146,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'listening' ? (
           <ListeningMode
             langCode={currentLanguage}
-            vocabularySets={DICTIONARY_FLASHCARD_SETS}
+            vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
@@ -2168,7 +2168,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'translation' ? (
           <TranslationPracticeMode
             langCode={currentLanguage}
-            vocabularySets={DICTIONARY_FLASHCARD_SETS}
+            vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}

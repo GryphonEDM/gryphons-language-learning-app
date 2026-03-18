@@ -34,7 +34,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
     if (cat) {
       // Specific category selected — use its words
       return (cat.words || []).map(w => ({
-        uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+        uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
         source: w.source || cat.setId,
         examples: w.examples || [], examplesEn: w.examplesEn || [],
       }));
@@ -46,11 +46,11 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
       vocabularySets.forEach(set => {
         if (!cefrMatches(set.difficulty || '', cefr)) return;
         (set.words || []).forEach(w => {
-          const key = (w.uk || '').toLowerCase();
+          const key = (w[langCode] || w.uk || '').toLowerCase();
           if (key && !seen.has(key)) {
             seen.add(key);
             filtered.push({
-              uk: w.uk, en: w.en, phonetic: w.phonetic || '',
+              uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
               source: w.source || set.setId,
               examples: w.examples || [], examplesEn: w.examplesEn || [],
             });
@@ -374,7 +374,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
             {!feedback.correct && (
               <div style={styles.correctAnswer}>
-                Correct answer: <strong><ClickableText text={currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></strong>
+                Correct answer: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></strong>
                 {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
               </div>
             )}
