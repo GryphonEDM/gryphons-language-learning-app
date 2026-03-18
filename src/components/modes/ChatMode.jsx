@@ -210,10 +210,8 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     const userMsg = { role: 'user', content: llmContent };
     const userDisplay = { sender: 'user', text };
 
-    // Build LLM message history: system prompt + session history + new message
-    const history = activeSession.messages.length > 0
-      ? activeSession.messages
-      : [{ role: 'system', content: systemPrompt }];
+    // Build LLM message history: system prompt always first, then session history + new message
+    const history = [{ role: 'system', content: systemPrompt }, ...activeSession.messages];
 
     const trimmed = history.length > 21
       ? [history[0], ...history.slice(-20)]
