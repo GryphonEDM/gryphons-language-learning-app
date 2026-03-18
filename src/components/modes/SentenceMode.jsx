@@ -6,6 +6,7 @@ import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { storageGet, storageSet } from '../../utils/storage.js';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -193,6 +194,8 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
       startExercise(selectedDifficulty);
     }
   };
+
+  useNextShortcut(handleNext, !!feedback);
 
   // --- AI Generation ---
   const detectProgress = (accumulated) => {

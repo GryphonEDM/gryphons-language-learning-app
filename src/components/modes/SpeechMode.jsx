@@ -10,6 +10,7 @@ import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
 import { speakUkrainian, stopSpeaking } from '../../App.jsx';
 import { cefrMatches } from '../../utils/speechUtils.js';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 // --- Helpers ---
 
@@ -192,6 +193,8 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
       }
     }
   }, [currentIdx, items, speech, currentItem, score, xpEarned, difficulty, onComplete, onTrackProgress]);
+
+  useNextShortcut(handleNext, !!speech.feedback);
 
   // Get vocabulary words for the selected category
   const getSelectedVocabWords = useCallback(() => {

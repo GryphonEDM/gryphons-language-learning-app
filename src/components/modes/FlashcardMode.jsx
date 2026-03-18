@@ -6,6 +6,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { speakUkrainian, stopSpeaking } from '../../App.jsx';
 import useSpeechPractice from '../../hooks/useSpeechPractice.js';
 import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 /**
  * Flashcard Mode Component
@@ -198,6 +199,8 @@ export default function FlashcardMode({
       }
     }
   };
+
+  useNextShortcut(moveToNext, isFlipped && !addWordForm);
 
   const handlePronounce = () => {
     if (ttsEnabled && onSpeak) {

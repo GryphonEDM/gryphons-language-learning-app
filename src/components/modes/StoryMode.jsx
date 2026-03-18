@@ -8,6 +8,7 @@ import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import SpeechPracticeModal from '../shared/SpeechPracticeModal.jsx';
 import { storageGet, storageSet } from '../../utils/storage.js';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 const RANDOM_TOPICS = {
   A1: ['my cat', 'at the park', 'breakfast', 'my family', 'colors', 'my room', 'at the store', 'the weather', 'my friend', 'school'],
@@ -280,6 +281,8 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
       }
     }
   };
+
+  useNextShortcut(handleNextQuestion, !!feedback);
 
   // AI story generation — progress detection based on streaming JSON keys
   const detectProgress = (accumulated, hasQuestions) => {

@@ -9,6 +9,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import ExerciseRenderer from './grammar/ExerciseRenderer.jsx';
 import { stopSpeaking } from '../../App.jsx';
 import { createAudioContext, playSound } from '../../utils/soundEffects.js';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE, ENCOURAGEMENTS_ES, MISTAKE_MESSAGES_ES, ENCOURAGEMENTS_FR, MISTAKE_MESSAGES_FR, ENCOURAGEMENTS_EL, MISTAKE_MESSAGES_EL, ENCOURAGEMENTS_HI, MISTAKE_MESSAGES_HI, ENCOURAGEMENTS_AR, MISTAKE_MESSAGES_AR, ENCOURAGEMENTS_KO, MISTAKE_MESSAGES_KO, ENCOURAGEMENTS_ZH, MISTAKE_MESSAGES_ZH, ENCOURAGEMENTS_JA, MISTAKE_MESSAGES_JA } from '../../utils/encouragement.js';
 
 const TIER_INFO = {
@@ -215,6 +216,9 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
   const handleRetry = () => {
     if (selectedLesson) startLesson(selectedLesson);
   };
+
+  useNextShortcut(handleNext, phase === 'exercise' && !!feedback);
+  useNextShortcut(handleNextSection, phase === 'section-complete');
 
   // ─── Picker ─────────────────────────────────────────────────────
   if (phase === 'picker') {

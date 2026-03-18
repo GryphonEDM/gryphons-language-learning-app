@@ -7,6 +7,7 @@ import { useWordClick } from '../../hooks/useWordClick.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { cefrMatches } from '../../utils/speechUtils.js';
+import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
@@ -196,6 +197,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const handleRetry = () => {
     startExercise(selectedCategory, cefrFilter);
   };
+
+  useNextShortcut(handleNext, submitted);
 
   const handleDirectionChange = () => {
     const newDir = direction === `en-${langCode}` ? `${langCode}-en` : `en-${langCode}`;
