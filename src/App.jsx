@@ -1060,6 +1060,78 @@ export default function UkrainianTypingGame() {
     }
   }, [recentKeyTimes, achievements]);
 
+  // Award a single achievement by ID (if not already earned)
+  const awardAchievement = useCallback((id) => {
+    if (achievements.includes(id)) return false;
+    const a = ACHIEVEMENTS.find(a => a.id === id);
+    if (!a) return false;
+    setAchievements(prev => prev.includes(id) ? prev : [...prev, id]);
+    setXp(prev => prev + a.xp);
+    setRecentAchievement(a);
+    setTimeout(() => setRecentAchievement(null), 3500);
+    return true;
+  }, [achievements]);
+
+  // Check mode-specific achievements based on onComplete stats
+  const checkModeAchievements = useCallback((stats) => {
+    const mode = stats.mode;
+
+    if (mode === 'listening') {
+      awardAchievement('listener_first');
+      if (stats.score === stats.total && stats.total >= 10) awardAchievement('listener_perfect');
+      if (stats.usedSlowSpeed) awardAchievement('listener_slow');
+    }
+
+    if (mode === 'translation') {
+      awardAchievement('translate_first');
+      if (stats.bestStreak >= 10) awardAchievement('translate_streak');
+      if (!stats.usedHints) awardAchievement('translate_no_hints');
+    }
+
+    if (mode === 'grammar') {
+      awardAchievement('grammar_first');
+      if (stats.lessonId && stats.lessonId.includes('cases')) awardAchievement('grammar_cases');
+      if (stats.score === stats.totalExercises && stats.totalExercises > 0) awardAchievement('grammar_perfect_section');
+      // Check if all grammar lessons completed
+      const completedLessons = Object.keys(modeProgress.grammar || {}).filter(k => modeProgress.grammar[k]?.done);
+      if (CURRENT_GRAMMAR.length > 0 && completedLessons.length >= CURRENT_GRAMMAR.length) awardAchievement('grammar_all');
+      // A1/A2 completion
+      const a1Lessons = CURRENT_GRAMMAR.filter(l => l.difficulty === 'A1');
+      const a2Lessons = CURRENT_GRAMMAR.filter(l => l.difficulty === 'A2');
+      if (a1Lessons.length > 0 && a1Lessons.every(l => modeProgress.grammar?.[l.lessonId]?.done)) awardAchievement('grammar_a1_complete');
+      if (a2Lessons.length > 0 && a2Lessons.every(l => modeProgress.grammar?.[l.lessonId]?.done)) awardAchievement('grammar_a2_complete');
+    }
+
+    if (mode === 'sentences') {
+      awardAchievement('sentence_first');
+      if (stats.consecutiveCorrect >= 5) awardAchievement('sentence_no_mistakes');
+      // Track cumulative correct for sentence_10
+      const prevSentenceCorrect = modeProgress.sentences?.totalCorrect || 0;
+      const newSentenceTotal = prevSentenceCorrect + (stats.score || 0);
+      setModeProgress(prev => ({
+        ...prev,
+        sentences: { ...(prev.sentences || {}), totalCorrect: newSentenceTotal }
+      }));
+      if (newSentenceTotal >= 10) awardAchievement('sentence_10');
+    }
+
+    if (mode === 'dialogue') {
+      awardAchievement('dialogue_first');
+      if (stats.score === stats.totalPlayerTurns && stats.totalPlayerTurns > 0) awardAchievement('dialogue_perfect');
+      // Check if all dialogues completed
+      const completedDialogues = Object.keys(modeProgress.dialogue || {}).filter(k => modeProgress.dialogue[k]?.completed);
+      if (CURRENT_DIALOGUES.length > 0 && completedDialogues.length >= CURRENT_DIALOGUES.length) awardAchievement('dialogue_all');
+    }
+
+    if (mode === 'reading') {
+      awardAchievement('reader_first');
+      if (stats.score === stats.total && stats.total > 0) awardAchievement('reader_perfect');
+      // Check if all reading passages completed
+      const completedReadings = Object.keys(modeProgress.reading || {}).filter(k => modeProgress.reading[k]?.completed);
+      if (CURRENT_READING.length > 0 && completedReadings.length >= CURRENT_READING.length) awardAchievement('reader_all');
+    }
+  }, [awardAchievement, modeProgress, CURRENT_GRAMMAR, CURRENT_DIALOGUES, CURRENT_READING]);
+
   // Get next target (letter or word)
   const getNextTarget = useCallback((mode, level, currentLetterIndex = 0) => {
     // Alphabet mode
@@ -2210,19 +2282,17 @@ export default function UkrainianTypingGame() {
             }}
             onComplete={(stats) => {
               console.log('[Flashcards] Session complete:', stats);
-              // Award bonus XP for completing the set
               setXp(prev => prev + 50);
-              // Check achievements
+              // Vocabulary achievements
+              awardAchievement('first_flashcard');
               const totalMastered = Object.keys(vocabularyMastery).length;
-              if (totalMastered >= 10 && !achievements.includes('vocab_10')) {
-                setAchievements(prev => [...prev, 'vocab_10']);
-                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'vocab_10'));
-              }
-              if (totalMastered >= 50 && !achievements.includes('vocab_50')) {
-                setAchievements(prev => [...prev, 'vocab_50']);
-                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'vocab_50'));
-              }
-              // Return to menu
+              if (totalMastered >= 10) awardAchievement('vocab_10');
+              if (totalMastered >= 50) awardAchievement('vocab_50');
+              if (totalMastered >= 100) awardAchievement('vocab_100');
+              // Theme-specific achievements
+              if (stats.setId === 'colors') awardAchievement('theme_colors');
+              if (stats.setId === 'animals') awardAchievement('theme_animals');
+              if (stats.setId === 'family') awardAchievement('theme_family');
               setGameMode('menu');
               setSelectedVocabSet(null);
             }}
@@ -2252,6 +2322,7 @@ export default function UkrainianTypingGame() {
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Listening] Session complete:', stats);
+              checkModeAchievements(stats);
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
@@ -2270,13 +2341,17 @@ export default function UkrainianTypingGame() {
               console.log('[MinimalPairs] Session complete:', stats);
               // Achievement: first round
               if (!achievements.includes('minimal_first')) {
+                const a = ACHIEVEMENTS.find(a => a.id === 'minimal_first');
                 setAchievements(prev => [...prev, 'minimal_first']);
-                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_first'));
+                setXp(prev => prev + a.xp);
+                setRecentAchievement(a);
               }
               // Achievement: perfect score
               if (stats.score === stats.total && stats.total >= 10 && !achievements.includes('minimal_perfect')) {
+                const a = ACHIEVEMENTS.find(a => a.id === 'minimal_perfect');
                 setAchievements(prev => [...prev, 'minimal_perfect']);
-                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_perfect'));
+                setXp(prev => prev + a.xp);
+                setRecentAchievement(a);
               }
               // Achievement: 50 total correct (tracked via modeProgress)
               const prevCorrect = modeProgress['minimal-pairs']?.totalCorrect || 0;
@@ -2286,8 +2361,10 @@ export default function UkrainianTypingGame() {
                 'minimal-pairs': { ...(prev['minimal-pairs'] || {}), totalCorrect: newTotal, lastStudied: new Date().toISOString() }
               }));
               if (newTotal >= 50 && !achievements.includes('minimal_50')) {
+                const a = ACHIEVEMENTS.find(a => a.id === 'minimal_50');
                 setAchievements(prev => [...prev, 'minimal_50']);
-                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'minimal_50'));
+                setXp(prev => prev + a.xp);
+                setRecentAchievement(a);
               }
               setGameMode('menu');
             }}
@@ -2306,6 +2383,7 @@ export default function UkrainianTypingGame() {
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Translation] Session complete:', stats);
+              checkModeAchievements(stats);
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
@@ -2323,6 +2401,7 @@ export default function UkrainianTypingGame() {
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Grammar] Lesson complete:', stats);
+              checkModeAchievements(stats);
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
@@ -2339,6 +2418,7 @@ export default function UkrainianTypingGame() {
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Sentences] Session complete:', stats);
+              checkModeAchievements(stats);
               setGameMode('menu');
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
@@ -2356,6 +2436,7 @@ export default function UkrainianTypingGame() {
             onExit={() => setGameMode('menu')}
             onComplete={(stats) => {
               console.log('[Dialogue] Complete:', stats);
+              checkModeAchievements(stats);
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
@@ -2374,6 +2455,7 @@ export default function UkrainianTypingGame() {
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onComplete={(stats) => {
               console.log('[Stories] Complete:', stats);
+              checkModeAchievements(stats);
             }}
             onTrackProgress={handleTrackProgress}
           />

@@ -25,6 +25,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const [score, setScore] = useState(0);
   const [xpEarned, setXpEarned] = useState(0);
   const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
   const [hintLevel, setHintLevel] = useState(0);
   const [usedHints, setUsedHints] = useState(false);
   const [sessionUsedHints, setSessionUsedHints] = useState(false);
@@ -75,6 +76,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
     setScore(0);
     setXpEarned(0);
     setStreak(0);
+    setBestStreak(0);
     setHintLevel(0);
     setUsedHints(false);
     setSessionUsedHints(false);
@@ -151,7 +153,11 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
 
     if (isCorrect) {
       setScore(prev => prev + 1);
-      setStreak(prev => prev + 1);
+      setStreak(prev => {
+        const next = prev + 1;
+        setBestStreak(best => Math.max(best, next));
+        return next;
+      });
       if (ttsEnabled && onSpeak && direction === `en-${langCode}`) {
         onSpeak(answer, 0.8, ttsVolume);
       }
@@ -188,6 +194,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
           total: words.length,
           xpEarned,
           usedHints: sessionUsedHints,
+          bestStreak,
           direction
         });
       }
@@ -212,6 +219,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
     setScore(0);
     setXpEarned(0);
     setStreak(0);
+    setBestStreak(0);
     setHintLevel(0);
     setUsedHints(false);
     setSessionUsedHints(false);

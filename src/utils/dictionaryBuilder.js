@@ -88,11 +88,23 @@ export const CATEGORY_DIFFICULTY = {
 
 const cache = { uk: { dictionary: null, vocabulary: null }, ru: { dictionary: null, vocabulary: null }, de: { dictionary: null, vocabulary: null }, es: { dictionary: null, vocabulary: null }, fr: { dictionary: null, vocabulary: null }, el: { dictionary: null, vocabulary: null }, hi: { dictionary: null, vocabulary: null }, ar: { dictionary: null, vocabulary: null }, ko: { dictionary: null, vocabulary: null }, zh: { dictionary: null, vocabulary: null }, ja: { dictionary: null, vocabulary: null } };
 
+const LANG_CONFIG = {
+  uk: { targetField: 'uk', phoneticField: 'phoneticUk', translations: TRANSLATIONS },
+  ru: { targetField: 'ru', phoneticField: 'phoneticRu', translations: RU_TRANSLATIONS },
+  de: { targetField: 'de', phoneticField: 'phoneticDe', translations: DE_TRANSLATIONS },
+  es: { targetField: 'es', phoneticField: 'phoneticEs', translations: ES_TRANSLATIONS },
+  fr: { targetField: 'fr', phoneticField: 'frPhonetic', translations: FR_TRANSLATIONS },
+  el: { targetField: 'el', phoneticField: 'elPhonetic', translations: EL_TRANSLATIONS },
+  hi: { targetField: 'hi', phoneticField: 'hiPhonetic', translations: HI_TRANSLATIONS },
+  ar: { targetField: 'ar', phoneticField: 'arPhonetic', translations: AR_TRANSLATIONS },
+  ko: { targetField: 'ko', phoneticField: 'koPhonetic', translations: KO_TRANSLATIONS },
+  zh: { targetField: 'zh', phoneticField: 'zhPhonetic', translations: ZH_TRANSLATIONS },
+  ja: { targetField: 'ja', phoneticField: 'jaPhonetic', translations: JA_TRANSLATIONS },
+};
+
 function getDataForLang(langCode) {
-  const targetField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : langCode === 'es' ? 'es' : langCode === 'fr' ? 'fr' : langCode === 'el' ? 'el' : langCode === 'hi' ? 'hi' : langCode === 'ar' ? 'ar' : langCode === 'ko' ? 'ko' : langCode === 'zh' ? 'zh' : langCode === 'ja' ? 'ja' : 'uk';
-  const phoneticField = langCode === 'ru' ? 'phoneticRu' : langCode === 'de' ? 'phoneticDe' : langCode === 'es' ? 'phoneticEs' : langCode === 'fr' ? 'frPhonetic' : langCode === 'el' ? 'elPhonetic' : langCode === 'hi' ? 'hiPhonetic' : langCode === 'ar' ? 'arPhonetic' : langCode === 'ko' ? 'koPhonetic' : langCode === 'zh' ? 'zhPhonetic' : langCode === 'ja' ? 'jaPhonetic' : 'phoneticUk';
-  const translations = langCode === 'ru' ? RU_TRANSLATIONS : langCode === 'de' ? DE_TRANSLATIONS : langCode === 'es' ? ES_TRANSLATIONS : langCode === 'fr' ? FR_TRANSLATIONS : langCode === 'el' ? EL_TRANSLATIONS : langCode === 'hi' ? HI_TRANSLATIONS : langCode === 'ar' ? AR_TRANSLATIONS : langCode === 'ko' ? KO_TRANSLATIONS : langCode === 'zh' ? ZH_TRANSLATIONS : langCode === 'ja' ? JA_TRANSLATIONS : TRANSLATIONS;
-  return { targetField, phoneticField, themeData: THEME_DATA, comprehensiveData: COMPREHENSIVE, translations };
+  const config = LANG_CONFIG[langCode] || LANG_CONFIG.uk;
+  return { ...config, themeData: THEME_DATA, comprehensiveData: COMPREHENSIVE };
 }
 
 function addEntry(targetToEn, enToTarget, target, en) {

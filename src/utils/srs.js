@@ -18,6 +18,7 @@ const MINIMUM_STABILITY = 0.1;    // ~2.4 hours floor
 const LAPSE_MULTIPLIER = 0.5;
 const EASY_BONUS = 1.3;
 const HARD_PENALTY = 0.8;
+const MAX_INTERVAL = 365;  // Cap at 1 year
 
 const DIFFICULTY_DELTA = {
   again: 0.15,
@@ -83,7 +84,7 @@ export function reviewCard(card, rating, now = Date.now()) {
       lapses = currentLapses + 1;
     } else {
       // Success: grow stability
-      let growthFactor = STABILITY_GROWTH * (1.1 - currentDifficulty);
+      let growthFactor = 1.0 + (STABILITY_GROWTH - 1.0) * (1.1 - currentDifficulty);
       if (rating === 'hard') growthFactor *= HARD_PENALTY;
       if (rating === 'easy') growthFactor *= EASY_BONUS;
 
@@ -94,7 +95,7 @@ export function reviewCard(card, rating, now = Date.now()) {
     }
   }
 
-  const interval = stability;
+  const interval = Math.min(stability, MAX_INTERVAL);
   const nextReview = new Date(now + interval * MS_PER_DAY).toISOString();
 
   return {
