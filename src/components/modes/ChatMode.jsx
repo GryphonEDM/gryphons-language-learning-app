@@ -73,7 +73,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
   const clickTimerRef = useRef(null);
 
   const systemPrompt = `You are a friendly ${langName} language tutor having a conversation with a student.
-- Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary.
+- Respond primarily in ${langName}, with English translations in parentheses when introducing new vocabulary. ONLY use parentheses for English translations — never use parentheses for ${langName} text.
 - Keep responses concise (2-3 sentences max).
 - If the user makes a grammar or spelling mistake, gently correct it.
 - Adjust your complexity to match the user's level.

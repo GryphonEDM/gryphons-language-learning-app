@@ -151,7 +151,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     historyRef.current = [...historyRef.current, userMsg];
 
     const payload = [
-      { role: 'system', content: systemPrompt },
+      { role: 'system', content: systemPrompt + ` When including English translations, always put them in parentheses. Only use parentheses for English — never for ${langName} text.` },
       ...historyRef.current,
     ];
 
