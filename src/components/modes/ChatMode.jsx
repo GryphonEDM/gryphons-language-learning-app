@@ -376,7 +376,22 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     setTtsHighlight(null);
-    const chunks = text.split(/(?<=[.!?;,])\s+/);
+    // Split by punctuation but preserve parenthesized groups for TTS language detection
+    const chunks = [];
+    // First split out parenthesized sections, then split non-paren parts by punctuation
+    const parts = text.split(/(\([^)]*\))/g);
+    for (const part of parts) {
+      if (!part) continue;
+      if (part.startsWith('(')) {
+        chunks.push(part); // Keep parenthesized text as one chunk
+      } else {
+        // Split non-paren text by sentence boundaries
+        const subs = part.split(/(?<=[.!?;,])\s+/);
+        for (const sub of subs) {
+          if (sub.trim()) chunks.push(sub.trim());
+        }
+      }
+    }
     let wordOffset = 0;
     for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;

@@ -540,6 +540,14 @@ function splitByScript(text, lang = 'uk') {
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
   if (lang === 'en') return speakUkrainian(text, rate, volume, 'en');
 
+  const scriptType = LANG_SCRIPT[lang] || 'latin';
+
+  // For Latin-script languages: if the whole chunk is parenthesized, speak as English
+  if (scriptType === 'latin' && /^\(.*\)$/.test(text.trim())) {
+    const inner = text.trim().slice(1, -1);
+    return speakUkrainian(inner, rate, volume, 'en');
+  }
+
   // Split into native/English chunks
   const chunks = splitByScript(text, lang);
   if (chunks.length === 0 || (chunks.length === 1 && chunks[0].type === 'native')) {

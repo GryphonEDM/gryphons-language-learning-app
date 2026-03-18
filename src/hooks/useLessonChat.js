@@ -114,8 +114,20 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     await new Promise(r => setTimeout(r, 50));
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
-    // Split on sentence boundaries and commas/semicolons for more responsive stopping
-    const chunks = text.split(/(?<=[.!?;,])\s+/);
+    // Split by punctuation but preserve parenthesized groups for TTS language detection
+    const chunks = [];
+    const parts = text.split(/(\([^)]*\))/g);
+    for (const part of parts) {
+      if (!part) continue;
+      if (part.startsWith('(')) {
+        chunks.push(part);
+      } else {
+        const subs = part.split(/(?<=[.!?;,])\s+/);
+        for (const sub of subs) {
+          if (sub.trim()) chunks.push(sub.trim());
+        }
+      }
+    }
     let wordOffset = 0;
     for (const chunk of chunks) {
       if (!ttsSpeakingRef.current) break;
