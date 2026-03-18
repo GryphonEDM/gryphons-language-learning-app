@@ -169,6 +169,39 @@ export function getReviewStats(vocabularyMastery, now = Date.now()) {
 }
 
 /**
+ * Returns the earliest upcoming review time (for "next review in ~Xh" display).
+ * @param {object} vocabularyMastery
+ * @param {number} now
+ * @returns {number|null} Hours until next review, or null if no scheduled reviews
+ */
+export function getNextDueHours(vocabularyMastery, now = Date.now()) {
+  let earliest = Infinity;
+  for (const data of Object.values(vocabularyMastery || {})) {
+    if (!data.nextReview) continue;
+    const reviewTime = new Date(data.nextReview).getTime();
+    if (reviewTime > now && reviewTime < earliest) {
+      earliest = reviewTime;
+    }
+  }
+  if (earliest === Infinity) return null;
+  return Math.round((earliest - now) / (1000 * 60 * 60));
+}
+
+/**
+ * Formats an interval in days to a human-readable string.
+ * @param {number} days
+ * @returns {string}
+ */
+export function formatInterval(days) {
+  if (days < 1 / 24) return '< 1 min';
+  if (days < 1) return `~${Math.round(days * 24)} hours`;
+  if (days < 1.5) return '~1 day';
+  if (days < 30) return `~${Math.round(days)} days`;
+  if (days < 365) return `~${Math.round(days / 30)} months`;
+  return '~1 year';
+}
+
+/**
  * Maps a binary correct/wrong result (+ optional response time) to a 4-point SRS rating.
  * @param {boolean} correct
  * @param {number|null} responseTimeMs - Optional: time taken to answer

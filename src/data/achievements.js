@@ -68,4 +68,8 @@ export const ACHIEVEMENTS = [
   { id: 'minimal_first', name: 'Sound Spotter', nameUk: 'Шукач звуків', nameRu: 'Искатель звуков', desc: 'Complete your first minimal pairs round', icon: '🎯', xp: 50 },
   { id: 'minimal_perfect', name: 'Perfect Ear', nameUk: 'Досконалий слух', nameRu: 'Совершенный слух', desc: 'Get 10/10 in a minimal pairs session', icon: '👂', xp: 200 },
   { id: 'minimal_50', name: 'Sound Scholar', nameUk: 'Вчений звуків', nameRu: 'Учёный звуков', desc: 'Correctly identify 50 minimal pairs', icon: '🔊', xp: 300 },
+  // P10 - Daily Review
+  { id: 'daily_first', name: 'Daily Learner', nameUk: 'Щоденний учень', nameRu: 'Ежедневный ученик', desc: 'Complete your first daily review', icon: '📋', xp: 75 },
+  { id: 'daily_streak_7', name: 'Week Warrior', nameUk: 'Воїн тижня', nameRu: 'Воин недели', desc: 'Maintain a 7-day review streak', icon: '🔥', xp: 200 },
+  { id: 'daily_streak_30', name: 'Monthly Master', nameUk: 'Місячний майстер', nameRu: 'Месячный мастер', desc: 'Maintain a 30-day review streak', icon: '💎', xp: 500 },
 ];

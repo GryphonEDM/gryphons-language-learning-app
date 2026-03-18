@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { storageGet, storageSet, storageFlush, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
-import { reviewCard, initSRSCard, mapCorrectToRating } from './utils/srs.js';
+import { reviewCard, initSRSCard, mapCorrectToRating, getReviewStats, getNextDueHours, getNewCards } from './utils/srs.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -23,6 +23,7 @@ import ChatMode from './components/modes/ChatMode.jsx';
 import MasteredWordsManager from './components/modes/MasteredWordsManager.jsx';
 import SpeechMode from './components/modes/SpeechMode.jsx';
 import MinimalPairsMode from './components/modes/MinimalPairsMode.jsx';
+import DailyReviewMode from './components/modes/DailyReviewMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
@@ -920,7 +921,7 @@ export default function UkrainianTypingGame() {
         const modesUsed = mode && !wordData.modesUsed?.includes(mode)
           ? [...(wordData.modesUsed || []), mode]
           : (wordData.modesUsed || []);
-        const rating = mapCorrectToRating(correct);
+        const rating = data.rating || mapCorrectToRating(correct);
         const srsCard = wordData.stability !== undefined ? wordData : { ...wordData, ...initSRSCard() };
         const updatedSRS = reviewCard(srsCard, rating);
         return {
@@ -1679,6 +1680,78 @@ export default function UkrainianTypingGame() {
       <main className="game-main" ref={mainRef}>
         {gameMode === 'menu' ? (
           <div className="menu-screen">
+            {/* Daily Review Banner */}
+            {(() => {
+              const srsStats = getReviewStats(vocabularyMastery);
+              const allWords = getAllVocabularyWords(currentLanguage);
+              const targetField = currentLanguage === 'en' ? 'en' : currentLanguage;
+              const allWordKeys = allWords.map(w => (w[targetField] || w.uk || ''));
+              const newAvailable = getNewCards(allWordKeys, vocabularyMastery, 1).length > 0;
+              const nextHours = getNextDueHours(vocabularyMastery);
+              let streakInfo = {};
+              try { streakInfo = JSON.parse(storageGet('dailyReviewStreak') || '{}'); } catch {}
+              const today = new Date().toLocaleDateString('en-CA');
+              const yesterday = (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d.toLocaleDateString('en-CA'); })();
+              const doneToday = streakInfo.lastSessionDate === today;
+              const streakAtRisk = !doneToday && streakInfo.lastSessionDate === yesterday && (streakInfo.currentStreak || 0) > 0;
+              const hasDue = srsStats.due > 0;
+              const hasContent = hasDue || newAvailable;
+
+              return (
+                <div
+                  data-mode="daily-review"
+                  onClick={() => setGameMode('daily-review')}
+                  style={{
+                    background: doneToday && !hasDue
+                      ? 'linear-gradient(135deg, rgba(74,222,128,0.15), rgba(74,222,128,0.05))'
+                      : streakAtRisk
+                        ? 'linear-gradient(135deg, rgba(251,191,36,0.2), rgba(248,113,113,0.1))'
+                        : 'linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.05))',
+                    border: doneToday && !hasDue
+                      ? '2px solid rgba(74,222,128,0.3)'
+                      : streakAtRisk
+                        ? '2px solid rgba(251,191,36,0.4)'
+                        : '2px solid rgba(255,215,0,0.3)',
+                    borderRadius: '16px', padding: '1.25rem 1.5rem', marginBottom: '1.5rem',
+                    cursor: hasContent ? 'pointer' : 'default',
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap',
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffd700', marginBottom: '0.3rem' }}>
+                      📋 Daily Review
+                    </div>
+                    <div style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.7)' }}>
+                      {doneToday && !hasDue
+                        ? `✅ All caught up!${nextHours ? ` Next review in ~${nextHours}h` : ''}`
+                        : hasDue
+                          ? `${srsStats.due} card${srsStats.due !== 1 ? 's' : ''} due${newAvailable ? ' · new words ready' : ''}`
+                          : newAvailable
+                            ? 'New words ready to learn'
+                            : 'Start learning to build your review queue'
+                      }
+                    </div>
+                    {streakAtRisk && <div style={{ fontSize: '0.85rem', color: '#fbbf24', marginTop: '0.2rem' }}>⚠️ Review today to keep your streak!</div>}
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    {(streakInfo.currentStreak || 0) > 0 && (
+                      <div style={{ fontSize: '1rem', color: '#ffa500', fontWeight: '600' }}>
+                        🔥 {streakInfo.currentStreak}
+                      </div>
+                    )}
+                    {hasContent && (
+                      <div style={{
+                        background: 'linear-gradient(135deg, #ffd700, #e6c200)', color: '#1a1a2e',
+                        padding: '0.5rem 1rem', borderRadius: '10px', fontWeight: '700', fontSize: '0.9rem',
+                      }}>
+                        Start →
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })()}
+
             {/* Learning Modes */}
             <div className="new-modes-section">
               <h2>🎯 Learning Modes</h2>
@@ -2266,6 +2339,56 @@ export default function UkrainianTypingGame() {
             vocabularyMastery={vocabularyMastery}
             langData={langData}
             onClose={() => setGameMode('menu')}
+          />
+        ) : gameMode === 'daily-review' ? (
+          <DailyReviewMode
+            langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
+            modeProgress={modeProgress}
+            vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[DailyReview] Session complete:', stats);
+              // Achievement: first daily review
+              if (!achievements.includes('daily_first')) {
+                setAchievements(prev => [...prev, 'daily_first']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'daily_first'));
+              }
+              // Achievement: 7-day streak
+              if (stats.streak >= 7 && !achievements.includes('daily_streak_7')) {
+                setAchievements(prev => [...prev, 'daily_streak_7']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'daily_streak_7'));
+              }
+              // Achievement: 30-day streak
+              if (stats.streak >= 30 && !achievements.includes('daily_streak_30')) {
+                setAchievements(prev => [...prev, 'daily_streak_30']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'daily_streak_30'));
+              }
+              // Update per-language mode progress
+              const dailyPrev = modeProgress['daily-review'] || {};
+              const today = new Date().toLocaleDateString('en-CA');
+              const usedToday = (dailyPrev.newCardsDate === today) ? (dailyPrev.newCardsToday || 0) : 0;
+              setModeProgress(prev => ({
+                ...prev,
+                'daily-review': {
+                  ...dailyPrev,
+                  sessionsCompleted: (dailyPrev.sessionsCompleted || 0) + 1,
+                  totalReviewed: (dailyPrev.totalReviewed || 0) + (stats.reviewed || 0),
+                  totalNewIntroduced: (dailyPrev.totalNewIntroduced || 0) + (stats.newWords || 0),
+                  newCardsToday: usedToday + (stats.newWords || 0),
+                  newCardsDate: today,
+                  lastStudied: new Date().toISOString(),
+                }
+              }));
+              setGameMode('menu');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
           />
         ) : gameMode === 'flashcards' ? (
           <FlashcardMode

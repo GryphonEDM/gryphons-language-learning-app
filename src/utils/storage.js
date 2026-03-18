@@ -37,6 +37,7 @@ const ALL_KEYS = [
   'grammar_completed_ko',
   'grammar_completed_zh',
   'grammar_completed_ja',
+  'dailyReviewStreak',
 ];
 
 const DEBOUNCE_MS = 300;
