@@ -60,8 +60,8 @@
       "exercises": [
         {
           "type": "fill-blank",
-          "prompt": "我不知道他___住。(I don't know where he lives.)",
-          "acceptedAnswers": ["住在哪里", "住哪里", "在哪里", "在哪儿"],
+          "prompt": "我不知道他___。(I don't know where he lives.)",
+          "acceptedAnswers": ["住在哪里", "住哪里", "住在哪儿", "住哪儿"],
           "hint": "The direct question is '他住在哪里？' — just embed it as-is after 不知道."
         },
         {

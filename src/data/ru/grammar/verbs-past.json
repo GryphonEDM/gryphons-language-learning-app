@@ -101,7 +101,7 @@
           { "left": "девочка", "right": "была" }
         ], "explanation": "Быть past: был (m), была (f), было (n), были (pl). Иван=m, Наташа/девочка=f, село=n, друзья=pl." },
         { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Она долго ждала автобус.", "acceptedAnswers": ["Она долго ждала автобус.", "Она долго ждала автобус"], "explanation": "Она is feminine, so ждать → ждала. Долго means 'for a long time'." },
-        { "type": "multiple-choice", "prompt": "Этот место ___ очень красивым. (быть — to be)", "options": ["было", "был", "была"], "correctIndex": 0, "explanation": "Место is neuter, so быть → было in the past tense." }
+        { "type": "multiple-choice", "prompt": "Это место ___ очень красивым. (быть — to be)", "options": ["было", "был", "была"], "correctIndex": 0, "explanation": "Место is neuter, so быть → было in the past tense." }
       ]
     }
   ]

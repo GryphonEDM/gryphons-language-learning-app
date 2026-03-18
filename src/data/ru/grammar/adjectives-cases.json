@@ -110,7 +110,7 @@
           { "label": "Instrumental", "answer": "большим", "prefilled": false },
           { "label": "Prepositional", "answer": "большом", "prefilled": false }
         ], "explanation": "Masculine adjective declension: Nom -ой, Gen -ого, Dat -ому, Acc (inanim.) = Nom, Inst -им, Prep -ом." },
-        { "type": "multiple-choice", "prompt": "Я познакомился с ___ девушкой. (умный — smart, inst. fem.)", "options": ["умной", "умной", "умную"], "correctIndex": 0, "explanation": "Instrumental feminine: умная → умной." },
+        { "type": "multiple-choice", "prompt": "Я познакомился с ___ девушкой. (умный — smart, inst. fem.)", "options": ["умной", "умная", "умную"], "correctIndex": 0, "explanation": "Instrumental feminine: умная → умной." },
         { "type": "fill-blank", "prompt": "Мы говорили о ___ фильме. (интересный — interesting, prep. masc.)", "acceptedAnswers": ["интересном"], "hint": "Prepositional masculine: -ом", "explanation": "Prepositional masculine: интересный → интересном." },
         { "type": "transformation", "prompt": "Put 'красивый' (beautiful) into the genitive feminine form:", "baseWord": "красивая", "context": "Без ___ погоды пикник не получится.", "acceptedAnswers": ["красивой", "хорошей"], "hint": "Genitive feminine: -ой", "explanation": "Genitive feminine: красивая → красивой." },
         { "type": "error-correction", "prompt": "Find and fix the error:", "incorrectText": "Я живу в красивую квартире.", "correctedText": "Я живу в красивой квартире.", "acceptedAnswers": ["красивой"], "explanation": "After 'в' + prepositional, the feminine adjective must be 'красивой' (not accusative 'красивую')." },

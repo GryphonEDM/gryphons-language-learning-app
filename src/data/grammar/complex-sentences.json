@@ -106,7 +106,7 @@
         { "type": "fill-blank", "prompt": "Вчитель, ___ нас навчає, сказав, ___ завтра буде контрольна. (who...that)", "acceptedAnswers": ["який...що", "яка...що"], "hint": "Relative clause + indirect speech", "explanation": "'Який/яка' introduces the relative clause about the teacher. 'Що' introduces indirect speech." },
         { "type": "matching", "prompt": "Match the pairs:", "pairs": [
           { "left": "Хоча він хворий, він працює.", "right": "Although he's sick, he works." },
-          { "left": "Якщо підеш дощ, візьми парасольку.", "right": "If it rains, take an umbrella." },
+          { "left": "Якщо піде дощ, візьми парасольку.", "right": "If it rains, take an umbrella." },
           { "left": "Він вчиться, щоб здати іспит.", "right": "He studies in order to pass the exam." },
           { "left": "Я знаю людину, яка тут працює.", "right": "I know the person who works here." }
         ], "explanation": "Each sentence combines a main clause with a subordinate clause using different conjunctions." },

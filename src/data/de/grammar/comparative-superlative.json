@@ -190,8 +190,8 @@
             "Sie ist die intelligentste Studentin.",
             "Sie ist die intelligenten Studentin."
           ],
-          "correctIndex": 2,
-          "explanation": "Attributive superlative: die + stem + '-st' + adjective ending. 'intelligent' → 'die intelligentste Studentin'. Note: -e- is not needed here as the stem doesn't end in t/d/s etc."
+          "correctIndex": 1,
+          "explanation": "Attributive superlative: die + stem + '-st' + adjective ending. 'intelligent' ends in -t, so it needs the extra -e-: 'die intelligenteste Studentin'. This follows the same rule as 'alt → älteste'."
         },
         {
           "type": "fill-blank",

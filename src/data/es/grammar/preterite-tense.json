@@ -52,7 +52,7 @@
         {
           "type": "multiple-choice",
           "prompt": "What is the preterite of 'escribir' (to write) for 'ellos'?",
-          "options": ["ellos escribieron", "ellos escribieron", "ellos escribió"],
+          "options": ["ellos escribieron", "ellos escriberon", "ellos escribió"],
           "correctIndex": 0,
           "explanation": "The ellos/ellas preterite ending for -IR verbs is -ieron: escrib + ieron = escribieron."
         },
@@ -223,7 +223,7 @@
           "prompt": "Mi abuela ___ (nacer) en 1940 en Sevilla. (My grandmother was born in 1940 in Seville.)",
           "acceptedAnswers": ["nació"],
           "hint": "A specific year (en 1940) signals a completed event — use the preterite",
-          "explanation": "A birth at a specific year is a completed one-time event: nació (-AR verb, él/ella preterite = -ó). Specific years (en 1940, en 2005) consistently trigger the preterite."
+          "explanation": "A birth at a specific year is a completed one-time event: nació (-ER verb, él/ella preterite = -ió). Specific years (en 1940, en 2005) consistently trigger the preterite."
         }
       ]
     }

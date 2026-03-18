@@ -60,14 +60,14 @@
           "type": "multiple-choice",
           "prompt": "Which noun ending is CORRECT in the genitive? 'Das ist der Hund ___.'",
           "options": ["des Nachbars", "des Nachbares", "des Nachbarn", "der Nachbar"],
-          "correctIndex": 0,
-          "explanation": "'Nachbar' (neighbor, masculine) adds -s in the genitive: 'des Nachbars'. Short nouns that end in a consonant can take either -s or -es, but -s is more common for longer words."
+          "correctIndex": 2,
+          "explanation": "'Nachbar' is a weak noun (n-Deklination). Weak masculine nouns take -n or -en in all cases except nominative singular: 'des Nachbarn' (genitive), 'dem Nachbarn' (dative), 'den Nachbarn' (accusative)."
         },
         {
           "type": "fill-blank",
-          "prompt": "___ Deutschlands Hauptstadt ist Berlin.",
+          "prompt": "Die Hauptstadt ___ ist Berlin. (Germany's capital is Berlin.)",
           "acceptedAnswers": ["Deutschlands"],
-          "hint": "This sentence is already complete — proper names take -s directly (no article). Rephrase: 'Germany's capital is Berlin.'"
+          "hint": "Proper names form the genitive by adding -s directly (no article needed)."
         },
         {
           "type": "multiple-choice",

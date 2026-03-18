@@ -38,7 +38,7 @@
         {
           "type": "multiple-choice",
           "prompt": "Which is the correct imparfait form of 'finir' for 'nous'?",
-          "options": ["nous finissions", "nous finisions", "nous finissions"],
+          "options": ["nous finissions", "nous finisions", "nous finissons"],
           "correctIndex": 2,
           "explanation": "finir → nous finissons → stem finiss-. Add -ions: finiss + ions = finissions. The double-s from the present tense stem is preserved."
         },

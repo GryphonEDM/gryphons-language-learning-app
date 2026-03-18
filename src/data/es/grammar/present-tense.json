@@ -17,7 +17,7 @@
         { "es": "Tú caminas rápido.", "en": "You walk fast.", "highlight": "caminas" },
         { "es": "Él trabaja mucho.", "en": "He works a lot.", "highlight": "trabaja" },
         { "es": "Nosotros escuchamos música.", "en": "We listen to music.", "highlight": "escuchamos" },
-        { "es": "Vosotros cocinais muy bien.", "en": "You all cook very well.", "highlight": "cocinais" },
+        { "es": "Vosotros cocináis muy bien.", "en": "You all cook very well.", "highlight": "cocináis" },
         { "es": "Ellas hablan con sus amigos.", "en": "They (fem.) speak with their friends.", "highlight": "hablan" }
       ],
       "exercises": [
@@ -89,7 +89,7 @@
           { "left": "querer (to want)", "right": "quiero" }
         ], "explanation": "Irregular yo forms: soy (ser), estoy (estar), voy (ir), tengo (tener), hago (hacer), puedo (poder), quiero (querer)." },
         { "type": "fill-blank", "prompt": "Él ___ (poder) hablar tres idiomas. (He can speak three languages.)", "acceptedAnswers": ["puede"], "hint": "poder is a stem-changing verb: o→ue in most forms", "explanation": "poder: puedo, puedes, puede, podemos, podéis, pueden. The o→ue change occurs in all forms except nosotros and vosotros." },
-        { "type": "multiple-choice", "prompt": "Which sentence correctly uses 'querer' (to want)?", "options": ["Yo quiero un café.", "Yo quero un café.", "Yo quiers un café."], "correctIndex": 0, "explanation": "querer: yo quiero. The o→ie stem change gives quiero, quieres, quiere — but queremos and queréis keep the original stem." },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly uses 'querer' (to want)?", "options": ["Yo quiero un café.", "Yo quero un café.", "Yo quiers un café."], "correctIndex": 0, "explanation": "querer: yo quiero. The e→ie stem change gives quiero, quieres, quiere — but queremos and queréis keep the original stem." },
         { "type": "multiple-choice", "prompt": "What is the difference between 'ser' and 'estar'?", "options": ["'ser' is for permanent traits; 'estar' is for temporary states and location", "They are interchangeable", "'estar' is more formal than 'ser'"], "correctIndex": 0, "explanation": "ser expresses identity, origin, and permanent characteristics (soy estudiante, es español). estar expresses temporary states, emotions, and location (estoy cansado, está en casa)." }
       ]
     }

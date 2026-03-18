@@ -88,7 +88,7 @@
         { "type": "transformation", "prompt": "Complete with the correct preposition:", "baseWord": "за", "context": "Кіт сховався ___ диваном.", "acceptedAnswers": ["за"], "hint": "Behind = за + instrumental (location)", "explanation": "За диваном — 'behind the sofa'. За + instrumental for location behind something." },
         { "type": "sentence-order", "prompt": "Arrange into a correct sentence:", "translation": "I am reading a book about Ukraine.", "words": ["Я", "читаю", "книгу", "про", "Україну"], "distractors": ["для"], "validOrders": [["Я", "читаю", "книгу", "про", "Україну"]], "explanation": "Про Україну — 'about Ukraine'. Про takes the accusative case." },
         { "type": "listen-type", "prompt": "Listen and type what you hear:", "text": "Вона стоїть перед дзеркалом.", "acceptedAnswers": ["Вона стоїть перед дзеркалом.", "Вона стоїть перед дзеркалом"], "explanation": "Перед дзеркалом — 'in front of the mirror'. Перед takes the instrumental." },
-        { "type": "multiple-choice", "prompt": "Хліб ___ масла — це смачно. (with)", "options": ["з", "без", "про"], "correctIndex": 0, "explanation": "Wait — this is tricky. З маслом, not з масла. But here we actually want 'bread with butter': хліб з маслом. The exercise tests recognizing the preposition з (with)." }
+        { "type": "multiple-choice", "prompt": "Хліб ___ маслом — це смачно. (with)", "options": ["з", "без", "про"], "correctIndex": 0, "explanation": "З маслом — 'with butter'. З + instrumental: масло → маслом." }
       ]
     },
     {

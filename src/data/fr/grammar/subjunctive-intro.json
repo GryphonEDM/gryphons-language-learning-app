@@ -96,7 +96,7 @@
         {
           "type": "fill-blank",
           "prompt": "Complete with the correct subjunctive: Il est essentiel que nous ___ (vendre) la maison.",
-          "options": ["vendions", "vendons", "vendions"
+          "options": ["vendions", "vendons", "vendiez"
           ],
           "correctIndex": 0,
           "explanation": "vendre → ils vendent → stem vend- + subjunctive ending -ions for nous → vendions."

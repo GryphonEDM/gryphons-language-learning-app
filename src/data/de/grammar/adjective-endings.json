@@ -78,7 +78,7 @@
           { "left": "einen ___ Mann (masc. acc.)", "right": "-en (einen großen Mann)" }
         ], "explanation": "With ein/eine: masc. nom. -er, fem. nom. -e, neut. nom. -es, masc. acc. -en." },
         { "type": "multiple-choice", "prompt": "Which sentence is correct? 'She has a nice cat.' (Katze = fem.)", "options": ["Sie hat eine nette Katze.", "Sie hat ein nettes Katze.", "Sie hat einen netten Katze."], "correctIndex": 0, "explanation": "'Katze' is feminine. Accusative feminine with 'eine': adjective takes -e. 'eine nette Katze' (not -es or -en)." },
-        { "type": "fill-blank", "prompt": "Das ist ein gut___ Idee. — Idee is feminine", "acceptedAnswers": ["e", "-e"], "hint": "Feminine with eine — adjective ending", "explanation": "'Idee' is feminine (die Idee). With 'eine', feminine nominative adjective takes -e: 'eine gute Idee'. (Das ist eine gute Idee.)" }
+        { "type": "fill-blank", "prompt": "Das ist eine gut___ Idee. — Idee is feminine", "acceptedAnswers": ["e", "-e"], "hint": "Feminine with eine — adjective ending", "explanation": "'Idee' is feminine (die Idee). With 'eine', feminine nominative adjective takes -e: 'eine gute Idee'. (Das ist eine gute Idee.)" }
       ]
     }
   ]

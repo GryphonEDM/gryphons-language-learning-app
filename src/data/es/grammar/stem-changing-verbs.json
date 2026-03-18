@@ -66,7 +66,7 @@
         {
           "type": "multiple-choice",
           "prompt": "Which sentence uses a stem-changing verb correctly?",
-          "options": ["Tú tienes hambre.", "Tú tenes hambre.", "Tú tienes hambre. / Tú tenes hambre."],
+          "options": ["Tú tienes hambre.", "Tú tenes hambre.", "Tú tenemos hambre."],
           "correctIndex": 0,
           "explanation": "Tener changes e→ie for tú: tienes. 'Tenes' is not a word in Spanish."
         },

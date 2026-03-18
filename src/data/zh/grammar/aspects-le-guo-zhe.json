@@ -78,7 +78,7 @@
         {
           "type": "fill-blank",
           "prompt": "我没___过飞机。(I have never flown on a plane.)",
-          "acceptedAnswers": ["坐", "做"],
+          "acceptedAnswers": ["坐"],
           "hint": "The verb for 'riding/taking' a plane is 坐 (zuò)."
         }
       ]

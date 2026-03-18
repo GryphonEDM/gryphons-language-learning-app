@@ -10,7 +10,7 @@
     {
       "sectionId": "genitive-formation",
       "title": "Genitive Case Endings",
-      "explanation": "The genitive case is formed by changing the ending of a noun and its article. Masculine nouns: -ος → -ου (ο φίλος → του φίλου), -ης → -η (ο ναύτης → του ναύτη), -ας → -α (ο μπαμπάς → του μπαμπά). Feminine nouns: -α or -η → -ας or -ης (η μητέρα → της μητέρας, η θάλασσα → της θάλασσας, η πόλη → της πόλης). Neuter nouns: -ο → -ου (το δρόμο → του δρόμου), -ι → -ιού or remains the same (το παιδί → του παιδιού). The definite article changes as follows: singular ο → του, η → της, το → του; plural οι → των, τα → των.",
+      "explanation": "The genitive case is formed by changing the ending of a noun and its article. Masculine nouns: -ος → -ου (ο φίλος → του φίλου), -ης → -η (ο ναύτης → του ναύτη), -ας → -α (ο μπαμπάς → του μπαμπά). Feminine nouns: -α or -η → -ας or -ης (η μητέρα → της μητέρας, η θάλασσα → της θάλασσας, η πόλη → της πόλης). Neuter nouns: -ο → -ου (το βιβλίο → του βιβλίου), -ι → -ιού or remains the same (το παιδί → του παιδιού). The definite article changes as follows: singular ο → του, η → της, το → του; plural οι → των, τα → των.",
       "tip": "For possession, swap the nominative article for the genitive: ο/το → του, η → της. Plural of all genders uses 'των'.",
       "examples": [
         { "el": "ο φίλος → του φίλου", "en": "the friend (nom.) → of the friend (gen., masculine -ος → -ου)" },
@@ -47,12 +47,12 @@
     {
       "sectionId": "genitive-uses",
       "title": "Uses of the Genitive",
-      "explanation": "The genitive case has several important uses in Greek. 1) Possession: it shows that something belongs to someone or something (η τσάντα της Μαρίας = Maria's bag; το αυτοκίνητο του Γιώργη = George's car). 2) After certain prepositions: από (from/of), μέσα σε (inside), εκτός (except/outside of), λόγω (due to) all govern the genitive. 3) Fixed phrases and compound words: καλημέρα comes from καλή + μέρα (good + day), καληνύχτα from καλή + νύχτα. 4) Expressions of time and price: της εβδομάδας (per week/weekly), του χρόνου (next year, literally 'of the year').",
+      "explanation": "The genitive case has several important uses in Greek. 1) Possession: it shows that something belongs to someone or something (η τσάντα της Μαρίας = Maria's bag; το αυτοκίνητο του Γιώργη = George's car). 2) After certain prepositions: εκτός (except/outside of) and λόγω (due to) govern the genitive. Note: από (from/of) takes the accusative case. 3) Fixed phrases and compound words: καλημέρα comes from καλή + μέρα (good + day), καληνύχτα from καλή + νύχτα. 4) Expressions of time and price: της εβδομάδας (per week/weekly), του χρόνου (next year, literally 'of the year').",
       "tip": "Think of the genitive as answering the question 'whose?' or 'of what/whom?' — it links two nouns together.",
       "examples": [
         { "el": "η τσάντα της Μαρίας", "en": "Maria's bag (possession — the bag of Maria)" },
         { "el": "το αυτοκίνητο του Γιώργη", "en": "George's car (possession — the car of George)" },
-        { "el": "Είμαι από την Αθήνα.", "en": "I am from Athens. (preposition 'από' + genitive)" },
+        { "el": "Είμαι από την Αθήνα.", "en": "I am from Athens. (preposition 'από' + accusative)" },
         { "el": "εκτός του σπιτιού", "en": "outside of the house (preposition 'εκτός' + genitive)" },
         { "el": "λόγω της βροχής", "en": "due to the rain (preposition 'λόγω' + genitive)" },
         { "el": "του χρόνου θα πάμε.", "en": "Next year we will go. (time expression using genitive)" }
