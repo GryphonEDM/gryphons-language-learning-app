@@ -79,7 +79,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 - Adjust your complexity to match the user's level.
 - Encourage the user to practice by asking follow-up questions in ${langName}.
 - If the user writes in English, respond in ${langName} with an English translation, and encourage them to try in ${langName}.
-- IMPORTANT: Wrap ALL English text (translations, explanations, parenthetical notes) in [EN]...[/EN] tags. Example: "Das ist ein Hund. [EN](This means 'this is a dog.')[/EN]" — this is required for text-to-speech. NEVER wrap ${langName} text in these tags.${masteredWordsList.length > 0 ? `\n- The student has marked these words as mastered: ${masteredWordsList.slice(0, 100).map(m => m.word).join(', ')}${masteredWordsList.length > 100 ? ` (and ${masteredWordsList.length - 100} more)` : ''}. Use these words naturally and introduce related vocabulary just beyond their level.` : ''}`;
+${masteredWordsList.length > 0 ? `\n- The student has marked these words as mastered: ${masteredWordsList.slice(0, 100).map(m => m.word).join(', ')}${masteredWordsList.length > 100 ? ` (and ${masteredWordsList.length - 100} more)` : ''}. Use these words naturally and introduce related vocabulary just beyond their level.` : ''}`;
 
   const activeSession = sessions.find(s => s.id === activeId) || null;
 
@@ -278,7 +278,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               reply += delta;
               updateSession(s => {
                 const msgs = [...s.displayMessages];
-                msgs[msgs.length - 1] = { sender: 'bot', text: reply.replace(/\[EN\](.*?)\[\/EN\]/gi, '$1') };
+                msgs[msgs.length - 1] = { sender: 'bot', text: reply };
                 return { ...s, displayMessages: msgs };
               });
             }

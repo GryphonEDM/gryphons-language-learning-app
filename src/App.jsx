@@ -483,32 +483,36 @@ const SCRIPT_PATTERNS = {
 
 /**
  * Split text into alternating native/english chunks for mixed TTS.
- * For all languages: uses [EN]...[/EN] tags from LLM output.
- * For non-Latin scripts: also splits by character script as fallback.
+ * For Latin-script languages: treats parenthesized text as English.
+ * For non-Latin scripts: splits by character script detection.
  */
 function splitByScript(text, lang = 'uk') {
-  // First: check for [EN]...[/EN] tags (works for all languages)
-  const tagPattern = /\[EN\](.*?)\[\/EN\]/gi;
-  if (tagPattern.test(text)) {
-    tagPattern.lastIndex = 0;
+  const scriptType = LANG_SCRIPT[lang] || 'latin';
+
+  // Latin-script languages: extract parenthesized text as English
+  if (scriptType === 'latin') {
+    const parenPattern = /\(([^)]+)\)/g;
+    if (!parenPattern.test(text)) return [];
+    parenPattern.lastIndex = 0;
     const chunks = [];
     let lastIndex = 0;
     let match;
-    while ((match = tagPattern.exec(text)) !== null) {
+    while ((match = parenPattern.exec(text)) !== null) {
       const before = text.slice(lastIndex, match.index);
       if (before.trim()) chunks.push({ type: 'native', text: before });
-      const english = match[1];
-      if (english.trim()) chunks.push({ type: 'latin', text: english });
+      const inner = match[1];
+      if (inner.trim()) chunks.push({ type: 'latin', text: inner });
       lastIndex = match.index + match[0].length;
     }
     const after = text.slice(lastIndex);
     if (after.trim()) chunks.push({ type: 'native', text: after });
-    return chunks;
+    // Only split if we found at least one native + one english chunk
+    const hasNative = chunks.some(c => c.type === 'native');
+    const hasEnglish = chunks.some(c => c.type === 'latin');
+    return (hasNative && hasEnglish) ? chunks : [];
   }
 
-  // Fallback for non-Latin scripts: split by character script detection
-  const scriptType = LANG_SCRIPT[lang] || 'latin';
-  if (scriptType === 'latin') return []; // Can't detect without tags
+  // Non-Latin scripts: split by character script detection
   const nativePattern = SCRIPT_PATTERNS[scriptType];
   if (!nativePattern) return [];
 
@@ -532,19 +536,14 @@ function splitByScript(text, lang = 'uk') {
   return chunks;
 }
 
-/** Strip [EN]...[/EN] tags from text for display. */
-export function stripEnTags(text) {
-  return text.replace(/\[EN\](.*?)\[\/EN\]/gi, '$1');
-}
-
-/** Speak mixed-language text: native via language model, [EN]-tagged text via English TTS. */
+/** Speak mixed-language text: native via language model, parenthesized/Latin text via English TTS. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
-  if (lang === 'en') return speakUkrainian(stripEnTags(text), rate, volume, 'en');
+  if (lang === 'en') return speakUkrainian(text, rate, volume, 'en');
 
   // Split into native/English chunks
   const chunks = splitByScript(text, lang);
   if (chunks.length === 0 || (chunks.length === 1 && chunks[0].type === 'native')) {
-    return speakUkrainian(stripEnTags(text), rate, volume, lang);
+    return speakUkrainian(text, rate, volume, lang);
   }
   for (const chunk of chunks) {
     if (ttsCancelled) break;

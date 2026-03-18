@@ -198,26 +198,20 @@ print("[OK] Spanish TTS → Kokoro sidecar")
 print("[OK] French TTS → Kokoro sidecar")
 
 # === Arabic TTS (SILMA v1) ===
-AR_TTS_AVAILABLE = False
-try:
-    from silma_tts.api import SilmaTTS
-    from importlib.resources import files as pkg_files
+from silma_tts.api import SilmaTTS
 
-    print("Loading Arabic TTS model (SILMA v1)...")
-    tts_ar = SilmaTTS(enable_normalizer=False, force_tashkeel=True)
-    AR_REF_AUDIO = os.path.join(SCRIPT_DIR, "ref_audio", "ar_male.24k.wav")
-    AR_REF_TEXT = "كنت أسأل عن رجل دين وعلم وخلق ويصلح لولاية القضاء"
-    AR_TTS_AVAILABLE = True
-    # Warmup: compile MPS/CUDA kernels so first real request is fast
-    print("  Warming up SILMA (short inference)...")
-    tts_ar.infer(
-        ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
-        gen_text="مرحبا", file_wave=None,
-        seed=42, speed=1.0, nfe_step=4
-    )
-    print(f"[OK] Arabic TTS (SILMA) loaded and warmed up on {tts_ar.device}")
-except Exception as e:
-    print(f"[WARN] SILMA Arabic TTS not available — espeak-ng fallback: {e}")
+print("Loading Arabic TTS model (SILMA v1)...")
+tts_ar = SilmaTTS(enable_normalizer=False, force_tashkeel=True)
+AR_REF_AUDIO = os.path.join(SCRIPT_DIR, "ref_audio", "ar_male.24k.wav")
+AR_REF_TEXT = "كنت أسأل عن رجل دين وعلم وخلق ويصلح لولاية القضاء"
+# Warmup: run a real inference to compile MPS/CUDA kernels and cache ref audio
+print("  Warming up SILMA...")
+tts_ar.infer(
+    ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
+    gen_text="مرحبا كيف حالك", file_wave=None,
+    seed=42, speed=1.0, nfe_step=12
+)
+print(f"[OK] Arabic TTS (SILMA) loaded and warmed up on {tts_ar.device}")
 
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
@@ -592,18 +586,6 @@ def generate_greek_tts(text):
             pass
 
 def generate_arabic_tts(text):
-    """Generate Arabic TTS — SILMA (primary) or espeak-ng (fallback)."""
-    if AR_TTS_AVAILABLE:
-        try:
-            return generate_arabic_silma_tts(text)
-        except Exception as e:
-            print(f"[TTS-AR] SILMA error: {repr(e)}, falling back to espeak-ng")
-            import traceback
-            traceback.print_exc()
-            return generate_arabic_espeak_tts(text)
-    return generate_arabic_espeak_tts(text)
-
-def generate_arabic_silma_tts(text):
     """Generate Arabic TTS using SILMA diffusion model."""
     print(f"[TTS-AR] Generating (SILMA): {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
@@ -616,28 +598,6 @@ def generate_arabic_silma_tts(text):
         )
         print(f"[TTS-AR] Generated successfully (SILMA)")
         return send_file(tmp_path, mimetype='audio/wav')
-    finally:
-        try:
-            os.unlink(tmp_path)
-        except OSError:
-            pass
-
-def generate_arabic_espeak_tts(text):
-    """Generate Arabic TTS using espeak-ng (fallback)."""
-    import subprocess
-    print(f"[TTS-AR] Generating (espeak-ng ar): {text[:80]}")
-    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
-        tmp_path = tmp.name
-    try:
-        subprocess.run(
-            ['espeak-ng', '-v', 'ar', '-s', '150', '-a', '180', '-w', tmp_path, text],
-            check=True, capture_output=True
-        )
-        print(f"[TTS-AR] Generated successfully (espeak-ng)")
-        return send_file(tmp_path, mimetype='audio/wav')
-    except subprocess.CalledProcessError as e:
-        print(f"[TTS-AR] espeak-ng error: {e.stderr.decode()}")
-        raise
     finally:
         try:
             os.unlink(tmp_path)
@@ -705,7 +665,7 @@ if __name__ == '__main__':
     print("\n[SPEAKER] TTS + STT Server")
     print("   Silero: uk, ru, en, de")
     print("   Kokoro (sidecar :3003): es, fr, hi, ja, zh")
-    print(f"   SILMA: ar {'(loaded)' if AR_TTS_AVAILABLE else '(unavailable, espeak-ng fallback)'}")
+    print("   SILMA: ar")
     print("   espeak-ng: el, ko")
     print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")

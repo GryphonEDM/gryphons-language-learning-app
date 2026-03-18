@@ -151,7 +151,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     historyRef.current = [...historyRef.current, userMsg];
 
     const payload = [
-      { role: 'system', content: systemPrompt + `\n\nIMPORTANT: When mixing ${langName} and English in a response, wrap ALL English text (translations, explanations) in [EN]...[/EN] tags. Example: "Das ist ein Hund. [EN]This means 'this is a dog.'[/EN]" — this is used for text-to-speech routing. NEVER wrap ${langName} text in [EN] tags. Only wrap English.` },
+      { role: 'system', content: systemPrompt },
       ...historyRef.current,
     ];
 
@@ -193,7 +193,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
               reply += delta;
               setMessages(prev => {
                 const msgs = [...prev];
-                msgs[msgs.length - 1] = { sender: 'bot', text: reply.replace(/\[EN\](.*?)\[\/EN\]/gi, '$1') };
+                msgs[msgs.length - 1] = { sender: 'bot', text: reply };
                 return msgs;
               });
             }
