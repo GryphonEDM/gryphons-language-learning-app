@@ -75,7 +75,7 @@ export function storageGet(key) {
   return _cache[key] ?? null;
 }
 
-async function pushToServer(key, value) {
+async function pushToServer(key, value, keepalive = false) {
   if (!_authToken) return;
   try {
     const res = await fetch(`/api/data/${encodeURIComponent(key)}`, {
@@ -85,6 +85,7 @@ async function pushToServer(key, value) {
         Authorization: `Bearer ${_authToken}`,
       },
       body: JSON.stringify({ value }),
+      keepalive,
     });
     if (!res.ok) {
       console.warn(`[storage] Save failed for "${key}": HTTP ${res.status}`);
@@ -119,10 +120,10 @@ export async function storageFlush() {
   if (keys.length === 0) return;
   // Cancel all pending timers
   keys.forEach(k => { clearTimeout(_timers[k]); delete _timers[k]; });
-  // Fire all pushes in parallel
+  // Fire all pushes in parallel with keepalive so browser doesn't cancel on unload
   const entries = keys.map(k => [k, _pending[k]]);
   entries.forEach(([k]) => delete _pending[k]);
-  await Promise.all(entries.map(([k, v]) => pushToServer(k, v)));
+  await Promise.all(entries.map(([k, v]) => pushToServer(k, v, true)));
 }
 
 /**
@@ -137,7 +138,7 @@ export async function initFromServer(token) {
     const res = await fetch('/api/data', {
       headers: { Authorization: `Bearer ${t}` },
     });
-    if (res.status === 401) return false;
+    if (res.status === 401 || res.status === 422) return false;
     if (!res.ok) {
       console.warn('[storage] initFromServer: server error', res.status);
       return true;

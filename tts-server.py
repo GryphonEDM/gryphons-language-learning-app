@@ -88,7 +88,7 @@ if DB_ENABLED:
             conn.commit()
             user = conn.execute('SELECT id FROM users WHERE username = ?', (username,)).fetchone()
             conn.close()
-            token = create_access_token(identity={'id': user['id'], 'username': username})
+            token = create_access_token(identity=str(user['id']), additional_claims={'username': username})
             return jsonify({'token': token, 'username': username})
         except sqlite3.IntegrityError:
             return jsonify({'error': 'Username already taken'}), 409
@@ -105,14 +105,13 @@ if DB_ENABLED:
         conn.close()
         if not user or not bcrypt.checkpw(password.encode(), user['password_hash'].encode()):
             return jsonify({'error': 'Invalid username or password'}), 401
-        token = create_access_token(identity={'id': user['id'], 'username': username})
+        token = create_access_token(identity=str(user['id']), additional_claims={'username': username})
         return jsonify({'token': token, 'username': username})
 
     @app.route('/api/data', methods=['GET'])
     @jwt_required()
     def get_all_data():
-        identity = get_jwt_identity()
-        user_id = identity['id']
+        user_id = int(get_jwt_identity())
         conn = get_db()
         rows = conn.execute('SELECT key, value FROM user_data WHERE user_id = ?', (user_id,)).fetchall()
         conn.close()
@@ -121,8 +120,7 @@ if DB_ENABLED:
     @app.route('/api/data/<path:key>', methods=['PUT'])
     @jwt_required()
     def set_data(key):
-        identity = get_jwt_identity()
-        user_id = identity['id']
+        user_id = int(get_jwt_identity())
         data = request.get_json() or {}
         value = data.get('value')
         if value is None:
