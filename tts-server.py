@@ -2,12 +2,15 @@
 from flask import Flask, request, send_file, jsonify
 from flask_cors import CORS
 import os
+import sys
 import re
 import tempfile
 import torch
 import sqlite3
 import datetime
 import requests as http_requests
+import numpy as np
+import soundfile as sf
 
 try:
     from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
@@ -197,21 +200,36 @@ print("[OK] Spanish TTS → Kokoro sidecar")
 # === French TTS — now handled by Kokoro sidecar (port 3003) ===
 print("[OK] French TTS → Kokoro sidecar")
 
-# === Arabic TTS (SILMA v1) ===
-from silma_tts.api import SilmaTTS
+# === Arabic TTS (Piper — kareem) ===
+AR_PIPER_MODEL = os.path.join(SCRIPT_DIR, "tts-model-ar", "ar_JO-kareem-medium.onnx")
+os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-ar"), exist_ok=True)
+if not os.path.isfile(AR_PIPER_MODEL):
+    print("  Downloading Piper Arabic model (kareem, ~60MB)...")
+    torch.hub.download_url_to_file(
+        'https://huggingface.co/rhasspy/piper-voices/resolve/main/ar/ar_JO/kareem/medium/ar_JO-kareem-medium.onnx',
+        AR_PIPER_MODEL
+    )
+    torch.hub.download_url_to_file(
+        'https://huggingface.co/rhasspy/piper-voices/resolve/main/ar/ar_JO/kareem/medium/ar_JO-kareem-medium.onnx.json',
+        AR_PIPER_MODEL + '.json'
+    )
+print("[OK] Arabic TTS (Piper kareem)")
 
-print("Loading Arabic TTS model (SILMA v1)...")
-tts_ar = SilmaTTS(enable_normalizer=False, force_tashkeel=True)
-AR_REF_AUDIO = os.path.join(SCRIPT_DIR, "ref_audio", "ar_male.24k.wav")
-AR_REF_TEXT = "كنت أسأل عن رجل دين وعلم وخلق ويصلح لولاية القضاء"
-# Warmup: run a real inference to compile MPS/CUDA kernels and cache ref audio
-print("  Warming up SILMA...")
-tts_ar.infer(
-    ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
-    gen_text="مرحبا كيف حالك", file_wave=None,
-    seed=42, speed=1.0, nfe_step=12
-)
-print(f"[OK] Arabic TTS (SILMA) loaded and warmed up on {tts_ar.device}")
+# === Greek TTS (MMS-TTS) ===
+from transformers import VitsModel, VitsTokenizer
+
+print("Loading Greek TTS model (MMS-TTS)...")
+tts_el_model = VitsModel.from_pretrained('facebook/mms-tts-ell')
+tts_el_tokenizer = VitsTokenizer.from_pretrained('facebook/mms-tts-ell')
+EL_SAMPLE_RATE = tts_el_model.config.sampling_rate
+print(f"[OK] Greek TTS (MMS-TTS) loaded! (sample rate: {EL_SAMPLE_RATE})")
+
+# === Korean TTS (MMS-TTS) ===
+print("Loading Korean TTS model (MMS-TTS)...")
+tts_ko_model = VitsModel.from_pretrained('facebook/mms-tts-kor')
+tts_ko_tokenizer = VitsTokenizer.from_pretrained('facebook/mms-tts-kor')
+KO_SAMPLE_RATE = tts_ko_model.config.sampling_rate
+print(f"[OK] Korean TTS (MMS-TTS) loaded! (sample rate: {KO_SAMPLE_RATE})")
 
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
@@ -564,21 +582,18 @@ def generate_german_tts(text):
 
 
 def generate_greek_tts(text):
-    """Generate Greek TTS using espeak-ng."""
-    import subprocess
-    print(f"[TTS-EL] Generating (espeak-ng el): {text[:80]}")
+    """Generate Greek TTS using MMS-TTS (VITS)."""
+    print(f"[TTS-EL] Generating (MMS-TTS): {text[:80]}")
+    inputs = tts_el_tokenizer(text, return_tensors='pt')
+    with torch.no_grad():
+        output = tts_el_model(**inputs).waveform
+    audio = output.squeeze().numpy()
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
+    sf.write(tmp_path, audio, EL_SAMPLE_RATE)
     try:
-        subprocess.run(
-            ['espeak-ng', '-v', 'el', '-s', '150', '-a', '180', '-w', tmp_path, text],
-            check=True, capture_output=True
-        )
-        print(f"[TTS-EL] Generated successfully")
+        print(f"[TTS-EL] Generated successfully ({len(audio)/EL_SAMPLE_RATE:.1f}s audio)")
         return send_file(tmp_path, mimetype='audio/wav')
-    except subprocess.CalledProcessError as e:
-        print(f"[TTS-EL] espeak-ng error: {e.stderr.decode()}")
-        raise
     finally:
         try:
             os.unlink(tmp_path)
@@ -586,18 +601,22 @@ def generate_greek_tts(text):
             pass
 
 def generate_arabic_tts(text):
-    """Generate Arabic TTS using SILMA diffusion model."""
-    print(f"[TTS-AR] Generating (SILMA): {text[:80]}")
+    """Generate Arabic TTS using Piper (kareem voice)."""
+    import subprocess
+    print(f"[TTS-AR] Generating (Piper kareem): {text[:80]}")
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
     try:
-        tts_ar.infer(
-            ref_file=AR_REF_AUDIO, ref_text=AR_REF_TEXT,
-            gen_text=text, file_wave=tmp_path,
-            seed=42, speed=1.0, nfe_step=12
+        subprocess.run(
+            [os.path.join(os.path.dirname(sys.executable), 'piper'), '--model', AR_PIPER_MODEL, '--output_file', tmp_path],
+            input=text.encode('utf-8'),
+            check=True, capture_output=True
         )
-        print(f"[TTS-AR] Generated successfully (SILMA)")
+        print(f"[TTS-AR] Generated successfully (Piper)")
         return send_file(tmp_path, mimetype='audio/wav')
+    except subprocess.CalledProcessError as e:
+        print(f"[TTS-AR] Piper error: {e.stderr.decode()}")
+        raise
     finally:
         try:
             os.unlink(tmp_path)
@@ -605,21 +624,18 @@ def generate_arabic_tts(text):
             pass
 
 def generate_korean_tts(text):
-    """Generate Korean TTS using espeak-ng."""
-    import subprocess
-    print(f"[TTS-KO] Generating (espeak-ng ko): {text[:80]}")
+    """Generate Korean TTS using MMS-TTS (VITS). Requires uroman for romanization."""
+    print(f"[TTS-KO] Generating (MMS-TTS): {text[:80]}")
+    inputs = tts_ko_tokenizer(text, return_tensors='pt')
+    with torch.no_grad():
+        output = tts_ko_model(**inputs).waveform
+    audio = output.squeeze().numpy()
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
         tmp_path = tmp.name
+    sf.write(tmp_path, audio, KO_SAMPLE_RATE)
     try:
-        subprocess.run(
-            ['espeak-ng', '-v', 'ko', '-s', '150', '-a', '180', '-w', tmp_path, text],
-            check=True, capture_output=True
-        )
-        print(f"[TTS-KO] Generated successfully")
+        print(f"[TTS-KO] Generated successfully ({len(audio)/KO_SAMPLE_RATE:.1f}s audio)")
         return send_file(tmp_path, mimetype='audio/wav')
-    except subprocess.CalledProcessError as e:
-        print(f"[TTS-KO] espeak-ng error: {e.stderr.decode()}")
-        raise
     finally:
         try:
             os.unlink(tmp_path)
@@ -665,8 +681,8 @@ if __name__ == '__main__':
     print("\n[SPEAKER] TTS + STT Server")
     print("   Silero: uk, ru, en, de")
     print("   Kokoro (sidecar :3003): es, fr, hi, ja, zh")
-    print("   SILMA: ar")
-    print("   espeak-ng: el, ko")
+    print("   Piper: ar")
+    print("   MMS-TTS: el, ko")
     print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)
