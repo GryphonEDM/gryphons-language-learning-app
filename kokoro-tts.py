@@ -18,7 +18,6 @@ CORS(app)
 # Language config: app lang code -> (kokoro lang code, default voice)
 KOKORO_LANGS = {
     'es': ('e', 'em_alex'),
-    'fr': ('f', 'ff_siwis'),
     'hi': ('h', 'hm_omega'),
     'ja': ('j', 'jm_kumo'),
     'zh': ('z', 'zm_yunjian'),

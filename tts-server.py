@@ -222,6 +222,13 @@ tts_el_tokenizer = VitsTokenizer.from_pretrained('facebook/mms-tts-ell')
 EL_SAMPLE_RATE = tts_el_model.config.sampling_rate
 print(f"[OK] Greek TTS (MMS-TTS) loaded! (sample rate: {EL_SAMPLE_RATE})")
 
+# === French TTS (MMS-TTS) ===
+print("Loading French TTS model (MMS-TTS)...")
+tts_fr_model = VitsModel.from_pretrained('facebook/mms-tts-fra')
+tts_fr_tokenizer = VitsTokenizer.from_pretrained('facebook/mms-tts-fra')
+FR_SAMPLE_RATE = tts_fr_model.config.sampling_rate
+print(f"[OK] French TTS (MMS-TTS) loaded! (sample rate: {FR_SAMPLE_RATE})")
+
 # === Korean TTS (MMS-TTS) ===
 print("Loading Korean TTS model (MMS-TTS)...")
 tts_ko_model = VitsModel.from_pretrained('facebook/mms-tts-kor')
@@ -460,8 +467,10 @@ def generate_tts():
         text = expand_single_letter(text, lang)
 
         # Kokoro TTS languages — proxy to sidecar on port 3003
-        if lang in ('es', 'fr', 'hi', 'ja', 'zh'):
+        if lang in ('es', 'hi', 'ja', 'zh'):
             return proxy_to_kokoro(text, lang)
+        elif lang == 'fr':
+            return generate_french_tts(text)
         elif lang == 'ru':
             return generate_russian_tts(text)
         elif lang == 'de':
@@ -615,6 +624,25 @@ def generate_arabic_tts(text):
     except subprocess.CalledProcessError as e:
         print(f"[TTS-AR] Piper error: {e.stderr.decode()}")
         raise
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+def generate_french_tts(text):
+    """Generate French TTS using MMS-TTS (VITS)."""
+    print(f"[TTS-FR] Generating (MMS-TTS): {text[:80]}")
+    inputs = tts_fr_tokenizer(text, return_tensors='pt')
+    with torch.no_grad():
+        output = tts_fr_model(**inputs).waveform
+    audio = output.squeeze().numpy()
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    sf.write(tmp_path, audio, FR_SAMPLE_RATE)
+    try:
+        print(f"[TTS-FR] Generated successfully ({len(audio)/FR_SAMPLE_RATE:.1f}s audio)")
+        return send_file(tmp_path, mimetype='audio/wav')
     finally:
         try:
             os.unlink(tmp_path)
