@@ -575,7 +575,7 @@ IMPORTANT RULES:
             )}
             <div style={styles.bubbleText}>
               {msg.speaker !== 'player'
-                ? <ClickableText text={msg.text} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                ? <ClickableText text={msg.text} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
                 : msg.text}
             </div>
             {msg.translation && (

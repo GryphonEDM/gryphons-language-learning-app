@@ -625,7 +625,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
                 Correct: <strong style={{ color: '#ffd700' }}>
-                  <ClickableText text={currentSentence[langCode]} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                  <ClickableText text={currentSentence[langCode]} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
                 </strong>
               </div>
             )}

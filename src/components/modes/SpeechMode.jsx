@@ -474,7 +474,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
           <div style={styles.card}>
             {/* Target display */}
             <div style={styles.targetText}>
-              <ClickableText text={currentItem?.target || ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+              <ClickableText text={currentItem?.target || ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
             </div>
             {currentItem?.phonetic && (
               <div style={styles.phonetic}>{currentItem.phonetic}</div>

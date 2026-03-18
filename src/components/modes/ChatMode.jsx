@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import useWhisperSTT from '../../hooks/useWhisperSTT.js';
 import { stopSpeaking } from '../../App.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
-import { WordToolbar } from '../shared/WordToolbar.jsx';
+import { WordToolbar, tokenizeText } from '../shared/WordToolbar.jsx';
 
 import { storageGet, storageSet } from '../../utils/storage.js';
 
@@ -553,8 +553,9 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
                 <div style={styles.bubbleText}>
                   {(() => {
                     let wordCount = 0;
-                    return msg.text.split(/(\s+)/).map((token, j) => {
-                      if (/^\s+$/.test(token)) return token;
+                    return tokenizeText(msg.text, langCode).map((seg, j) => {
+                      if (!seg.isWord) return seg.text;
+                      const token = seg.text;
                       const myWordIdx = wordCount++;
                       const isSelected = selectedWord && selectedWord.word === token.replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '').toLowerCase();
                       const isHighlighted = ttsHighlight?.msgIdx === i &&

@@ -341,7 +341,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
           Translate to {direction === `en-${langCode}` ? langName : 'English'}:
         </p>
         <div style={styles.prompt}>
-          <ClickableText text={prompt ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+          <ClickableText text={prompt ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
         </div>
 
         {hintText && (
@@ -401,7 +401,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
                 Correct answer: <strong style={{ color: '#ffd700' }}>
-                  <ClickableText text={answer ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                  <ClickableText text={answer ?? ''} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
                 </strong>
               </div>
             )}

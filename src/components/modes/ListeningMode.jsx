@@ -374,7 +374,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
             {!feedback.correct && (
               <div style={styles.correctAnswer}>
-                Correct answer: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></strong>
+                Correct answer: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></strong>
                 {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
               </div>
             )}

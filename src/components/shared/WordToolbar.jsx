@@ -107,20 +107,43 @@ export function WordToolbar({ selectedWord, onDismiss, onSpeak, ttsEnabled, ttsV
 }
 
 /**
+ * Tokenize text into clickable segments.
+ * For Japanese/Chinese (no spaces between words), uses Intl.Segmenter for word-level splitting.
+ * For all other languages, splits on whitespace as before.
+ */
+export function tokenizeText(text, langCode) {
+  if ((langCode === 'ja' || langCode === 'zh') && typeof Intl !== 'undefined' && Intl.Segmenter) {
+    const segmenter = new Intl.Segmenter(langCode, { granularity: 'word' });
+    // For CJK, treat all non-whitespace/non-punctuation segments as clickable words,
+    // since Intl.Segmenter marks some valid characters (particles, complements) as non-word-like
+    return Array.from(segmenter.segment(text), s => ({
+      text: s.segment,
+      isWord: s.isWordLike || (!/^\s+$/.test(s.segment) && !/^[.,!?;:"""''()—–\-…«»\[\]*，。！？；：（）、「」『』【】]+$/.test(s.segment))
+    }));
+  }
+  // Fallback for ja/zh if Intl.Segmenter unavailable: split per character
+  if (langCode === 'ja' || langCode === 'zh') {
+    return Array.from(text, ch => ({ text: ch, isWord: !/\s/.test(ch) && !/[.,!?;:"""''()—–\-…«»\[\]*]/.test(ch) }));
+  }
+  // All other languages: whitespace split (existing behavior)
+  return text.split(/(\s+)/).map(t => ({ text: t, isWord: !/^\s+$/.test(t) }));
+}
+
+/**
  * Renders a string as a series of clickable word tokens.
  */
-export function ClickableText({ text = '', onWordClick, activeWord = null, style = {} }) {
-  const tokens = text.split(/(\s+)/);
+export function ClickableText({ text = '', onWordClick, activeWord = null, style = {}, langCode }) {
+  const tokens = tokenizeText(text, langCode);
   return (
     <span style={style}>
       {tokens.map((token, i) => {
-        if (/^\s+$/.test(token)) return token;
-        const cleaned = token.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').toLowerCase();
+        if (!token.isWord) return token.text;
+        const cleaned = token.text.replace(/[.,!?;:"""''()—–\-…«»\[\]*]/g, '').toLowerCase();
         const isActive = activeWord && activeWord === cleaned;
         return (
           <span
             key={i}
-            onClick={(e) => onWordClick(e, token, text)}
+            onClick={(e) => onWordClick(e, token.text, text)}
             style={{
               cursor: 'pointer',
               borderRadius: '3px',
@@ -131,7 +154,7 @@ export function ClickableText({ text = '', onWordClick, activeWord = null, style
             onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,215,0,0.15)'; }}
             onMouseLeave={e => { e.currentTarget.style.background = isActive ? 'rgba(255,215,0,0.25)' : 'transparent'; }}
           >
-            {token}
+            {token.text}
           </span>
         );
       })}

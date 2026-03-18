@@ -385,13 +385,13 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                 </button>
               )}
             </div>
-            <p style={styles.explanation}><ClickableText text={currentSection.explanation} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></p>
+            <p style={styles.explanation}><ClickableText text={currentSection.explanation} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></p>
 
             {/* Tip card */}
             {currentSection.tip && (
               <div style={styles.tipCard}>
                 <span style={styles.tipIcon}>💡</span>
-                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></span>
+                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></span>
               </div>
             )}
 
@@ -402,7 +402,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                 return (
                   <div key={i} style={styles.exampleRow}>
                     <div style={styles.exampleUk}>
-                      <ClickableText text={nativeText} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                      <ClickableText text={nativeText} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
                       {ttsEnabled && (
                         <button style={styles.miniSpeak} onClick={() => onSpeak(nativeText, 0.8, ttsVolume)}>🔊</button>
                       )}
@@ -453,12 +453,12 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             {currentSection?.tip && (
               <div style={styles.tipCardSmall}>
                 <span style={styles.tipIcon}>💡</span>
-                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} /></span>
+                <span><ClickableText text={currentSection.tip} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></span>
               </div>
             )}
 
             <p style={styles.exercisePrompt}>
-              <ClickableText text={currentExercise.prompt} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+              <ClickableText text={currentExercise.prompt} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
               {ttsEnabled && currentExercise.prompt && currentExercise.type !== 'listen-type' && (
                 <button style={styles.miniSpeak} onClick={() => {
                   // Extract Cyrillic text from prompt for TTS

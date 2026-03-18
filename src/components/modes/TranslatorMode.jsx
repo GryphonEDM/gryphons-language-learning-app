@@ -220,7 +220,7 @@ export default function TranslatorMode({ langCode = 'uk', onSpeak, ttsEnabled, t
               <span style={styles.loading}>Translating...</span>
             ) : outputText ? (
               <span style={styles.outputText}>
-                <ClickableText text={outputText} onWordClick={handleWordClick} activeWord={selectedWord?.word} />
+                <ClickableText text={outputText} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
               </span>
             ) : suggestions.length > 0 ? (
               <div style={styles.suggestionsArea}>
