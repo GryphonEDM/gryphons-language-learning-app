@@ -1,0 +1,149 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameEs": "Conocer a alguien",
+  "icon": "👋",
+  "context": "You are at a Spanish language exchange event in Madrid and meet a Spanish speaker named Carlos.",
+  "characters": {
+    "npc": { "name": "Carlos" },
+    "player": { "name": "Usted" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "¡Hola! Soy Carlos. ¿Cómo te llamas?",
+      "translation": "Hello! I am Carlos. What is your name?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and say your name (say 'Hello, I am...')",
+      "acceptedResponses": [
+        "Hola, me llamo",
+        "Hola! Me llamo",
+        "¡Hola! Me llamo",
+        "Hola, soy"
+      ],
+      "keyWords": ["Hola", "llamo"],
+      "hint": "¡Hola! Me llamo..."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Mucho gusto! ¿De dónde eres?",
+      "translation": "Nice to meet you! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say where you are from (say 'I am from...')",
+      "acceptedResponses": [
+        "Soy de",
+        "Soy de Estados Unidos",
+        "Soy de Inglaterra",
+        "Vengo de"
+      ],
+      "keyWords": ["Soy", "de"],
+      "hint": "Soy de..."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Qué interesante! ¿Y por qué aprendes español?",
+      "translation": "How interesting! And why are you learning Spanish?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you are learning Spanish because you love the culture",
+      "acceptedResponses": [
+        "Porque me encanta la cultura",
+        "Me encanta la cultura española",
+        "Porque la cultura es fascinante",
+        "Me encanta la cultura hispana"
+      ],
+      "keyWords": ["encanta", "cultura"],
+      "hint": "Porque me encanta la cultura."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Qué bueno! ¿Cuánto tiempo llevas aprendiendo español?",
+      "translation": "That is great! How long have you been learning Spanish?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you have been learning Spanish for six months",
+      "acceptedResponses": [
+        "Llevo seis meses aprendiendo español",
+        "Hace seis meses que aprendo español",
+        "Seis meses",
+        "Llevo seis meses estudiando español"
+      ],
+      "keyWords": ["seis", "meses"],
+      "hint": "Llevo seis meses aprendiendo español."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Impresionante! Tu español es muy bueno. ¿Vives aquí en Madrid?",
+      "translation": "Impressive! Your Spanish is very good. Do you live here in Madrid?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say no, you are visiting for two weeks",
+      "acceptedResponses": [
+        "No, estoy de visita por dos semanas",
+        "No, estoy aquí de visita",
+        "No, solo estoy dos semanas",
+        "Estoy de visita dos semanas"
+      ],
+      "keyWords": ["visita", "semanas"],
+      "hint": "No, estoy de visita por dos semanas."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Qué bien! ¿Y tienes familia o amigos aquí en España?",
+      "translation": "How nice! And do you have family or friends here in Spain?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask Carlos if he was born in Madrid",
+      "acceptedResponses": [
+        "¿Naciste en Madrid?",
+        "¿Eres de Madrid?",
+        "¿Tú eres de Madrid?",
+        "¿Naciste aquí en Madrid?"
+      ],
+      "keyWords": ["Madrid", "eres"],
+      "hint": "¿Eres de Madrid?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Sí, soy madrileño de toda la vida. ¿Te gustaría intercambiar números para practicar juntos?",
+      "translation": "Yes, I have been from Madrid my whole life. Would you like to exchange numbers to practice together?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes, that would be great!",
+      "acceptedResponses": [
+        "Sí, me parece genial",
+        "¡Sí, me parece genial!",
+        "Sí, claro",
+        "¡Sí, claro!"
+      ],
+      "keyWords": ["Sí", "genial"],
+      "hint": "¡Sí, me parece genial!"
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Perfecto! Fue un placer conocerte. ¡Hasta pronto!",
+      "translation": "Perfect! It was a pleasure to meet you. See you soon!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say goodbye and that it was a pleasure to meet him too",
+      "acceptedResponses": [
+        "¡Hasta pronto! Igualmente.",
+        "Igualmente, hasta pronto",
+        "¡Adiós! Fue un placer.",
+        "Hasta luego, igualmente"
+      ],
+      "keyWords": ["Hasta", "igualmente"],
+      "hint": "¡Hasta pronto! Igualmente."
+    }
+  ]
+}

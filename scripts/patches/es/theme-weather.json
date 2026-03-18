@@ -1,0 +1,20 @@
+{
+  "weather": {"es": "tiempo", "phoneticEs": "TYEM-po", "examples_es": ["¿Qué tiempo hace hoy?", "El tiempo en verano es muy caluroso."]},
+  "sun": {"es": "sol", "phoneticEs": "sol", "examples_es": ["El sol brilla con fuerza hoy.", "Me encanta tomar el sol en la playa."]},
+  "rain": {"es": "lluvia", "phoneticEs": "YOO-vyah", "examples_es": ["La lluvia cae con fuerza.", "Me gusta la lluvia en otoño."]},
+  "snow": {"es": "nieve", "phoneticEs": "NYEH-veh", "examples_es": ["La nieve cubre las montañas en invierno.", "Los niños juegan en la nieve con alegría."]},
+  "wind": {"es": "viento", "phoneticEs": "VYEN-to", "examples_es": ["El viento sopla muy fuerte hoy.", "Un viento frío llegó desde el norte."]},
+  "cloud": {"es": "nube", "phoneticEs": "NOO-beh", "examples_es": ["Una gran nube tapó el sol.", "El cielo está lleno de nubes grises."]},
+  "fog": {"es": "niebla", "phoneticEs": "NYEB-lah", "examples_es": ["La niebla cubre el valle por la mañana.", "Conducir con niebla es muy peligroso."]},
+  "thunder": {"es": "trueno", "phoneticEs": "TRWEH-no", "examples_es": ["El trueno retumbó por toda la ciudad.", "Los niños se asustaron con el trueno."]},
+  "lightning": {"es": "relámpago", "phoneticEs": "reh-LAM-pah-go", "examples_es": ["Un relámpago iluminó el cielo oscuro.", "El relámpago cayó cerca de un árbol."]},
+  "cold": {"es": "frío", "phoneticEs": "FREE-oh", "examples_es": ["Hace mucho frío esta mañana.", "Me pongo el abrigo cuando hay frío."]},
+  "warm": {"es": "cálido", "phoneticEs": "KAH-lee-do", "examples_es": ["El clima cálido es ideal para salir.", "Prefiero un día cálido y soleado."]},
+  "hot": {"es": "caliente", "phoneticEs": "kah-LYEN-teh", "examples_es": ["El café está muy caliente, ten cuidado.", "En agosto el sol está muy caliente."]},
+  "thunderstorm": {"es": "tormenta", "phoneticEs": "tor-MEN-tah", "examples_es": ["La tormenta duró toda la noche.", "Una tormenta eléctrica sorprendió a los excursionistas."]},
+  "frost": {"es": "escarcha", "phoneticEs": "es-KAR-chah", "examples_es": ["La escarcha cubría el suelo al amanecer.", "Las plantas se dañaron por la escarcha."]},
+  "heat": {"es": "calor", "phoneticEs": "kah-LOR", "examples_es": ["El calor del verano es insoportable.", "Bebemos agua fría para soportar el calor."]},
+  "rainbow": {"es": "arcoíris", "phoneticEs": "ar-ko-EE-rees", "examples_es": ["Apareció un arcoíris después de la lluvia.", "El arcoíris tiene siete colores hermosos."]},
+  "ice": {"es": "hielo", "phoneticEs": "YEH-lo", "examples_es": ["El lago estaba cubierto de hielo.", "Añade hielo al vaso para enfriar la bebida."]},
+  "temperature": {"es": "temperatura", "phoneticEs": "tem-peh-rah-TOO-rah", "examples_es": ["La temperatura bajó mucho esta noche.", "¿Cuál es la temperatura máxima de hoy?"]}
+}

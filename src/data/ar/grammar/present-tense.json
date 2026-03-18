@@ -1,0 +1,116 @@
+{
+  "lessonId": "present-tense",
+  "nameEn": "Present Tense (المضارع)",
+  "nameAr": "الفعل المضارع",
+  "icon": "⏰",
+  "tier": "A1",
+  "prerequisites": ["pronouns"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "mudaric-basics",
+      "title": "Introduction to المضارع",
+      "explanation": "The Arabic present tense is called المضارع (al-muḍāriʿ). It expresses actions happening now or habitually, similar to both 'I write' and 'I am writing' in English. The present tense is formed by adding prefixes (and sometimes suffixes) to the verb root. Every present-tense verb starts with one of four prefix letters: أ (for أنا), ت (for أنتَ, أنتِ, أنتم, and هي), ي (for هو and هم), or ن (for نحن). These four letters are remembered by the mnemonic word أَنَيْتُ (or نأيت). The base form you will see in dictionaries is usually the هو (he) past-tense form, but the present tense is what you will use most in conversation.",
+      "tip": "Remember the prefix letters with أنيت: أ for 'I', ن for 'we', ي for 'he/they', ت for 'you/she'. Once you know which prefix to use, conjugation becomes much easier.",
+      "examples": [
+        { "ar": "يكتب", "en": "he writes / he is writing — prefix يـ for 'he'", "highlight": "يـ" },
+        { "ar": "أكتب", "en": "I write / I am writing — prefix أ for 'I'", "highlight": "أ" },
+        { "ar": "تكتب", "en": "you (m.) write / she writes — prefix تـ for 'you' and 'she'", "highlight": "تـ" },
+        { "ar": "نكتب", "en": "we write / we are writing — prefix نـ for 'we'", "highlight": "نـ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What prefix does the present-tense verb take for أنا (I)?",
+          "options": ["أ", "ي", "ت"],
+          "correctIndex": 0,
+          "explanation": "For أنا (I), the present-tense prefix is أ. So 'I write' is أكتب (a-ktubu), where أ replaces the ي of the base form يكتب."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb يقرأ means 'he reads'. What does أقرأ mean?",
+          "options": ["I read", "She reads", "We read"],
+          "correctIndex": 0,
+          "explanation": "Changing the prefix from يـ (he) to أ gives أقرأ (I read). The prefix أ always indicates first person singular (أنا)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which present-tense prefix letter is used for نحن (we)?",
+          "options": ["ن", "أ", "ي"],
+          "correctIndex": 0,
+          "explanation": "The prefix ن is used for نحن (we). So 'we write' is نكتب (naktubu). Remember أنيت: أ (I), ن (we), ي (he/they), ت (you/she)."
+        }
+      ]
+    },
+    {
+      "sectionId": "full-conjugation",
+      "title": "Full Present-Tense Conjugation",
+      "explanation": "Let us conjugate the verb كتب (to write) in the present tense for all persons. Singular: أنا أكتبُ (I write), أنتَ تكتبُ (you m. write), أنتِ تكتبينَ (you f. write), هو يكتبُ (he writes), هي تكتبُ (she writes). Plural: نحن نكتبُ (we write), أنتم تكتبونَ (you m.pl. write), أنتنّ تكتبْنَ (you f.pl. write), هم يكتبونَ (they m. write), هنّ يكتبْنَ (they f. write). Notice the key patterns: أنتِ adds the suffix ـينَ; أنتم and هم add ـونَ; أنتنّ and هنّ add ـْنَ. The forms for أنتَ and هي are identical (تكتبُ) — context tells you which is meant.",
+      "tip": "The masculine plural suffix ـونَ and the feminine 'you' suffix ـينَ are the most important to memorize. The singular forms (أنا، أنتَ، هو، هي) all have the same base pattern — they differ only in the prefix.",
+      "examples": [
+        { "ar": "أنتِ تكتبين رسالة", "en": "You (f.) write a letter — suffix ـين marks feminine 'you'", "highlight": "تكتبين" },
+        { "ar": "هم يكتبون كل يوم", "en": "They (m.) write every day — suffix ـون marks masculine plural", "highlight": "يكتبون" },
+        { "ar": "نحن نكتب بالعربية", "en": "We write in Arabic — prefix نـ, no extra suffix", "highlight": "نكتب" },
+        { "ar": "هي تكتب قصة", "en": "She writes a story — prefix تـ for 'she'", "highlight": "تكتب" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'you (feminine) write' in Arabic?",
+          "options": ["تكتبين", "تكتب", "يكتبون"],
+          "correctIndex": 0,
+          "explanation": "For أنتِ (you, feminine singular), the form is تكتبين — prefix تـ plus suffix ـين. The suffix ـين is the distinctive marker of the feminine 'you' form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The form يكتبون corresponds to which pronoun?",
+          "options": ["هم (they, masculine)", "هو (he)", "نحن (we)"],
+          "correctIndex": 0,
+          "explanation": "يكتبون has the prefix يـ (third person) and the suffix ـون (masculine plural), giving 'they (m.) write'. The هو form would be يكتب (no suffix)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "تكتبُ can mean both 'you (m.) write' and which other meaning?",
+          "options": ["She writes", "They write", "I write"],
+          "correctIndex": 0,
+          "explanation": "The forms for أنتَ (you, m.) and هي (she) are identical in the present tense: both are تكتبُ. Context determines which meaning is intended."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-present-verbs",
+      "title": "Common Present-Tense Verbs",
+      "explanation": "Here are some of the most common Arabic verbs in their present-tense هو form: يكتب (he writes), يقرأ (he reads), يأكل (he eats), يشرب (he drinks), يذهب (he goes), يعمل (he works), يدرس (he studies), يتكلّم (he speaks), يفهم (he understands), يعرف (he knows). All of these follow the same prefix/suffix pattern you learned. Note that some verbs have different internal vowel patterns — for instance يَكتُبُ has 'a-u' vowels while يَفهَمُ has 'a-a' vowels. These vowel patterns must be memorized for each verb, but the prefixes and suffixes are always the same.",
+      "tip": "When you learn a new verb, always learn its present-tense form (the يـ form). This is the form you will use most often. The internal vowels may vary between verbs, but the prefixes (أ ن ي ت) and suffixes (ـين ـون ـْنَ) never change.",
+      "examples": [
+        { "ar": "يقرأ كتابًا", "en": "He reads a book", "highlight": "يقرأ" },
+        { "ar": "أذهب إلى المدرسة", "en": "I go to school", "highlight": "أذهب" },
+        { "ar": "نتكلّم العربية", "en": "We speak Arabic", "highlight": "نتكلّم" },
+        { "ar": "هل تفهم؟", "en": "Do you (m.) understand?", "highlight": "تفهم" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does يذهب mean?",
+          "options": ["He goes", "He eats", "He reads"],
+          "correctIndex": 0,
+          "explanation": "يذهب (yadhhabu) means 'he goes', from the root ذ-ه-ب. To say 'I go', change the prefix to أ: أذهب."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you say 'we study'?",
+          "options": ["ندرس", "يدرس", "أدرس"],
+          "correctIndex": 0,
+          "explanation": "For نحن (we), use the prefix نـ. So 'we study' is ندرس (nadrusu). يدرس is 'he studies' and أدرس is 'I study'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In يأكل (he eats) and يشرب (he drinks), what do the prefixes have in common?",
+          "options": ["Both use the prefix يـ for 'he'", "Both use the prefix تـ", "They have no prefix"],
+          "correctIndex": 0,
+          "explanation": "Both يأكل and يشرب use the prefix يـ, which marks the third person masculine singular (he). All 'he' present-tense verbs start with يـ."
+        }
+      ]
+    }
+  ]
+}

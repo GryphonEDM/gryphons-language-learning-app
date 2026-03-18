@@ -1,0 +1,130 @@
+{
+  "lessonId": "subjunctive",
+  "nameEn": "The Subjunctive Mood",
+  "nameEl": "Υποτακτική Έγκλιση",
+  "icon": "🌀",
+  "tier": "B1",
+  "prerequisites": ["modal-verbs"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "subjunctive-intro",
+      "title": "The Subjunctive with Να",
+      "explanation": "Greek has no infinitive. Instead, the subjunctive mood (υποτακτική) is used with the particle να wherever English would use 'to + verb'. Να is invariable — it never changes form — and it is always followed by a conjugated verb.\n\nWHEN TO USE ΝΑ + SUBJUNCTIVE:\nAfter modal and control verbs: θέλω (I want), μπορώ (I can / am able), πρέπει (it is necessary / must), αρέσει (it pleases / I like), αρχίζω (I begin), προσπαθώ (I try), φοβάμαι (I am afraid).\n\nTWO ASPECTS — IMPERFECTIVE vs. PERFECTIVE:\nThe aspect of the verb after να changes the meaning:\n\n  IMPERFECTIVE (present stem) — ongoing or repeated action:\n    Θέλω να τρώω. = I want to be eating. / I want to eat (regularly).\n\n  PERFECTIVE (aorist stem, no augment) — single, complete action:\n    Θέλω να φάω. = I want to eat (now / once).\n\nIn most everyday contexts the perfective is the neutral, default choice. The imperfective after να emphasises repetition or continuity.\n\nCONJUGATION EXAMPLE — perfective subjunctive of γράφω:\n  να γράψω  (that I write)\n  να γράψεις (that you write)\n  να γράψει  (that he/she writes)\n  να γράψουμε (that we write)\n  να γράψετε  (that you all write)\n  να γράψουν  (that they write)\n\nNotice: same endings as the present tense, but built on the aorist stem and without the augment ε-.",
+      "tip": "A quick test: if the English sentence has 'to + verb' after words like want, can, must, like — Greek will almost always use να + subjunctive. There is no Greek word for the English 'to' before a verb.",
+      "examples": [
+        { "el": "Θέλω να φάω κάτι νόστιμο.", "en": "I want to eat something tasty. (perfective — a single act of eating)", "highlight": "να φάω" },
+        { "el": "Θέλω να τρώω καλά κάθε μέρα.", "en": "I want to eat well every day. (imperfective — ongoing / habitual)", "highlight": "να τρώω" },
+        { "el": "Μπορείς να με βοηθήσεις;", "en": "Can you help me?", "highlight": "να με βοηθήσεις" },
+        { "el": "Πρέπει να φύγουμε τώρα.", "en": "We must leave now.", "highlight": "να φύγουμε" },
+        { "el": "Μου αρέσει να διαβάζω βιβλία.", "en": "I like to read books. (imperfective — general habit)", "highlight": "να διαβάζω" },
+        { "el": "Προσπαθώ να μάθω ελληνικά.", "en": "I am trying to learn Greek.", "highlight": "να μάθω" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I want to go to Athens' in Greek?",
+          "options": ["Θέλω να πάω στην Αθήνα.", "Θέλω πάω στην Αθήνα.", "Θέλω ότι πάω στην Αθήνα."],
+          "correctIndex": 0,
+          "explanation": "Greek requires να between θέλω and the verb. 'Θέλω να πάω' = I want to go. The particle να cannot be omitted, and ότι introduces statements of fact, not wishes."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence expresses 'I want to eat' as a single action right now (perfective)?",
+          "options": ["Θέλω να φάω.", "Θέλω να τρώω.", "Θέλω ότι τρώω."],
+          "correctIndex": 0,
+          "explanation": "'Να φάω' uses the perfective (aorist) stem φα- and expresses a single, complete act of eating. 'Να τρώω' uses the present (imperfective) stem and implies ongoing or habitual eating."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What role does the particle να play in Greek grammar?",
+          "options": [
+            "It introduces the subjunctive and replaces the infinitive ('to + verb').",
+            "It marks the future tense, like θα.",
+            "It negates the following verb."
+          ],
+          "correctIndex": 0,
+          "explanation": "Να is the subjunctive particle. Greek has no infinitive, so να + conjugated verb does the job of English 'to + verb'. It is different from θα (future) and δεν/μην (negation)."
+        }
+      ]
+    },
+    {
+      "sectionId": "subjunctive-after-conjunctions",
+      "title": "Subjunctive After Conjunctions",
+      "explanation": "The subjunctive (να + verb) is used after a range of conjunctions expressing purpose, time, and manner. These conjunctions are very common in everyday speech.\n\nPURPOSE — 'in order to':\n  για να + subjunctive\n  Φεύγω νωρίς για να προλάβω το λεωφορείο.\n  (I'm leaving early in order to catch the bus.)\n\nBEFORE — 'before':\n  πριν (να) + subjunctive\n  Τηλεφώνησέ μου πριν έρθεις.\n  (Call me before you come.)\n\nWITHOUT — 'without':\n  χωρίς να + subjunctive\n  Έφυγε χωρίς να πει αντίο.\n  (He left without saying goodbye.)\n\nTIME CONJUNCTIONS — these take the subjunctive when referring to a future or anticipated event:\n  αφού (after)     — Αφού φας, μπορείς να παίξεις. (After you eat, you can play.)\n  μόλις (as soon as) — Μόλις φτάσεις, τηλεφώνησέ μου. (As soon as you arrive, call me.)\n  όταν (when)      — Όταν μεγαλώσεις, θα καταλάβεις. (When you grow up, you will understand.)\n\nNote: αφού, μόλις, and όταν do not always take να in the clause itself (the verb after them is directly in the subjunctive form), but they trigger the subjunctive/perfective verb form when the event is anticipated rather than factual.",
+      "tip": "Για να is the clearest purpose marker — whenever you want to say 'in order to' or simply 'to' (with a purpose), use για να + subjunctive. Χωρίς να always needs να, even when English just says 'without doing'.",
+      "examples": [
+        { "el": "Σπουδάζω πολύ για να περάσω τις εξετάσεις.", "en": "I study a lot in order to pass the exams.", "highlight": "για να περάσω" },
+        { "el": "Πήγαμε νωρίς για να βρούμε καλές θέσεις.", "en": "We went early in order to find good seats.", "highlight": "για να βρούμε" },
+        { "el": "Πρέπει να τελειώσεις πριν φύγουμε.", "en": "You must finish before we leave.", "highlight": "πριν φύγουμε" },
+        { "el": "Βγήκε χωρίς να πάρει τα κλειδιά του.", "en": "He went out without taking his keys.", "highlight": "χωρίς να πάρει" },
+        { "el": "Μόλις φτάσεις στο σταθμό, στείλε μου μήνυμα.", "en": "As soon as you arrive at the station, send me a message.", "highlight": "Μόλις φτάσεις" },
+        { "el": "Όταν τελειώσεις, έλα να με βρεις.", "en": "When you finish, come and find me.", "highlight": "Όταν τελειώσεις" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conjunction expresses purpose ('in order to') and requires να + subjunctive?",
+          "options": ["για να", "χωρίς να", "πριν να"],
+          "correctIndex": 0,
+          "explanation": "'Για να' specifically marks purpose: 'I did X in order to achieve Y'. Both χωρίς να and πριν να also use the subjunctive, but they express 'without' and 'before' respectively, not purpose."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She left without eating'?",
+          "options": ["Έφυγε χωρίς να φάει.", "Έφυγε πριν να φάει.", "Έφυγε για να φάει."],
+          "correctIndex": 0,
+          "explanation": "'Χωρίς να' means 'without'. 'Έφυγε χωρίς να φάει' = she left without eating. 'Πριν να φάει' = before eating. 'Για να φάει' = in order to eat."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'μόλις' (as soon as) with the subjunctive?",
+          "options": [
+            "Μόλις έρθεις, θα σου πω τα νέα.",
+            "Μόλις να έρθεις, θα σου πω τα νέα.",
+            "Μόλις ότι έρθεις, θα σου πω τα νέα."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Μόλις' is followed directly by the verb in subjunctive form without an additional να. 'Μόλις έρθεις, θα σου πω τα νέα' = As soon as you come, I will tell you the news."
+        }
+      ]
+    },
+    {
+      "sectionId": "imperative-forms",
+      "title": "The Imperative: Commands and Requests",
+      "explanation": "The imperative (προστακτική) is used to give commands, instructions, and requests. Like the subjunctive, Greek imperatives come in two aspects.\n\nIMPERFECTIVE IMPERATIVE (ongoing or repeated action):\nTake the 2nd person singular present tense and drop the final -ς.\n  μιλάς → Μίλα!  (Speak! / Keep talking!)\n  γράφεις → Γράφε! (Write! / Keep writing!)\n  τρώς → Τρώε!    (Eat! / Keep eating!)\n\nFor the plural (you all), use the regular 2nd person plural present:\n  Μιλάτε!  (Speak, everyone! / You all speak!)\n  Γράφετε! (Write, everyone!)\n\nPERFECTIVE IMPERATIVE (single, one-off action):\nBuilt on the aorist stem (same stem as the perfective subjunctive, no augment).\nSingular endings vary: many verbs take -ε, -ς, or -άσε/-ήσε.\n  Γράψε! (Write! — one specific thing)\n  Πές μου! (Tell me!)\n  Πήγαινε! (Go!)\n\nNEGATIVE IMPERATIVE:\nUse μην + present tense form (imperfective subjunctive).\n  Μην μιλάς! (Don't speak!)\n  Μην τρως! (Don't eat!)\n  Μην πας! (Don't go!)\n\nNote: the negative imperative always uses μην (not δεν) and always takes the imperfective (present) form, regardless of whether the prohibition is for a single act or repeated behaviour.\n\nPOLITENESS:\nFor polite requests, the subjunctive with να or a question with μπορείς/μπορείτε is preferred over the bare imperative:\n  Μπορείτε να μου φέρετε νερό; (Could you bring me some water?)",
+      "tip": "Remember: μην is for imperatives and subjunctives (prohibitions and wishes); δεν is for statements of fact. Never use δεν to negate a command.",
+      "examples": [
+        { "el": "Μίλα πιο σιγά, παρακαλώ.", "en": "Speak more quietly, please. (imperfective imperative — manner of speaking)", "highlight": "Μίλα" },
+        { "el": "Γράψε το όνομά σου εδώ.", "en": "Write your name here. (perfective imperative — single specific action)", "highlight": "Γράψε" },
+        { "el": "Φάε το φαγητό σου!", "en": "Eat your food! (perfective imperative)", "highlight": "Φάε" },
+        { "el": "Μην μιλάς με γεμάτο στόμα.", "en": "Don't speak with your mouth full. (negative imperative)", "highlight": "Μην μιλάς" },
+        { "el": "Μην ξεχάσεις τα κλειδιά σου.", "en": "Don't forget your keys. (negative imperative — perfective subjunctive form)", "highlight": "Μην ξεχάσεις" },
+        { "el": "Ελάτε μέσα, παρακαλώ!", "en": "Come in, please! (plural perfective imperative)", "highlight": "Ελάτε" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you form the imperfective imperative singular from the verb 'μιλάς' (you speak)?",
+          "options": ["Drop the final -ς: Μίλα!", "Add -ε to the stem: Μιλάε!", "Use the aorist stem: Μίλησε!"],
+          "correctIndex": 0,
+          "explanation": "The imperfective imperative singular is formed by dropping the -ς from the 2nd person present: μιλάς → Μίλα! 'Μίλησε' is actually the perfective imperative (single action)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word is used to form a negative imperative (prohibition)?",
+          "options": ["μην", "δεν", "όχι"],
+          "correctIndex": 0,
+          "explanation": "Negative imperatives use 'μην', not 'δεν'. 'Δεν' negates statements (e.g. δεν μιλάω = I don't speak). 'Μην' negates commands and subjunctives (μην μιλάς = don't speak)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is a correct negative command meaning 'Don't forget'?",
+          "options": ["Μην ξεχάσεις!", "Δεν ξεχνάς!", "Μη να ξεχάσεις!"],
+          "correctIndex": 0,
+          "explanation": "'Μην ξεχάσεις' is the correct negative imperative: μην + perfective subjunctive form. 'Δεν ξεχνάς' is a present-tense statement ('you don't forget'), not a command. 'Μη να' is not a valid combination."
+        }
+      ]
+    }
+  ]
+}

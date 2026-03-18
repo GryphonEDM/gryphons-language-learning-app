@@ -1,0 +1,122 @@
+{
+  "lessonId": "alphabet-pronunciation",
+  "nameEn": "Alphabet & Pronunciation",
+  "nameEl": "Αλφάβητο και Προφορά",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "the-greek-alphabet",
+      "title": "The Greek Alphabet",
+      "explanation": "The Modern Greek alphabet has 24 letters, each with an uppercase and lowercase form. In order they are: Αα (alpha), Ββ (beta), Γγ (gamma), Δδ (delta), Εε (epsilon), Ζζ (zeta), Ηη (eta), Θθ (theta), Ιι (iota), Κκ (kappa), Λλ (lambda), Μμ (mu), Νν (nu), Ξξ (xi), Οο (omicron), Ππ (pi), Ρρ (rho), Σσ/ς (sigma), Ττ (tau), Υυ (upsilon), Φφ (phi), Χχ (chi), Ψψ (psi), Ωω (omega). Several letters look familiar from English or math — Α, Β, Κ, Μ, Ν, Ο, Τ, Ζ — but some sound quite different. The letter sigma has two lowercase forms: σ is used in the middle of a word, and ς is used only at the end of a word (e.g., καλός). The letters ξ (xi) and ψ (psi) each represent two-consonant sounds: ξ = 'ks' and ψ = 'ps'. Greek is largely phonetic — each letter represents a consistent sound — making pronunciation learnable once you know the rules.",
+      "tip": "Focus first on the letters that look like English but sound different: Β sounds like 'v', not 'b'; Η sounds like 'ee', not 'ay'; Ρ is a rolled 'r'; Χ is a guttural 'kh'. And remember: final sigma ς is only for the last letter of a word.",
+      "examples": [
+        { "el": "αγάπη", "en": "love — starts with α (alpha), sounds like 'ah'", "highlight": "α" },
+        { "el": "βιβλίο", "en": "book — β (beta) sounds like English 'v', not 'b'", "highlight": "β" },
+        { "el": "γάτα", "en": "cat — γ (gamma) is a soft 'g' or 'y' sound before front vowels", "highlight": "γ" },
+        { "el": "δρόμος", "en": "road/street — δ (delta) sounds like 'th' in 'this'", "highlight": "δ" },
+        { "el": "ζωή", "en": "life — ζ (zeta) sounds like English 'z'", "highlight": "ζ" },
+        { "el": "καλός", "en": "good/nice — note the final ς (final sigma), used only at word's end", "highlight": "ς" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "The Greek letter Β (beta) makes what sound in Modern Greek?",
+          "options": ["Like 'v' in 'very'", "Like 'b' in 'boy'", "Like 'p' in 'pet'"],
+          "correctIndex": 0,
+          "explanation": "In Modern Greek, Β (beta) sounds like 'v', not 'b'. So 'βιβλίο' (book) is pronounced 'vivlio'. This is a common surprise for English speakers who expect a 'b' sound."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When is the special letter ς (final sigma) used?",
+          "options": ["Only at the end of a word", "Only at the beginning of a word", "Whenever a double sigma appears"],
+          "correctIndex": 0,
+          "explanation": "Greek has two lowercase forms of sigma: σ is used in the middle of words, and ς is used only at the very end of a word. For example: 'καλός' (good) — the word ends in ς, but if sigma appeared mid-word it would be σ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many letters are in the Modern Greek alphabet?",
+          "options": ["24", "26", "27"],
+          "correctIndex": 0,
+          "explanation": "The Greek alphabet has 24 letters, from alpha (Α) to omega (Ω). The English alphabet has 26 letters — Greek has two fewer."
+        }
+      ]
+    },
+    {
+      "sectionId": "vowels-and-stress",
+      "title": "Vowels and Stress",
+      "explanation": "Modern Greek has only 5 distinct vowel sounds, but 7 vowel letters — because several letters share the same sound. The vowel sounds are: 'ah' (spelled α), 'eh' (spelled ε), 'ee' (spelled η, ι, or υ), 'oh' (spelled ο or ω), and that is it — no 'oo' vowel as a standalone letter. This means three letters all sound like 'ee': η (eta), ι (iota), and υ (upsilon). Likewise, ο (omicron) and ω (omega) both sound like 'oh'. The merging of these sounds happened over centuries as ancient Greek pronunciation evolved into Modern Greek. Every Greek word of two or more syllables has exactly one stress, marked with an accent (΄) over the stressed vowel — for example: αγάπη (a-GA-pi), δρόμος (DRO-mos), παιδί (pe-DI). The accent is always written, and following it is essential for being understood, as stress can change meaning: πότε (PO-te) means 'when', while ποτέ (po-TE) means 'never'.",
+      "tip": "When you see η, ι, or υ, they all sound like 'ee' (as in 'feet'). When you see ο or ω, they both sound like 'oh' (as in 'go'). The accent mark over a vowel tells you exactly which syllable to stress — always follow it!",
+      "examples": [
+        { "el": "ήλιος", "en": "sun — η sounds like 'ee': 'EE-lios'", "highlight": "η" },
+        { "el": "ιδέα", "en": "idea — ι sounds like 'ee': 'i-DE-a'", "highlight": "ι" },
+        { "el": "υπολογιστής", "en": "computer — υ sounds like 'ee': 'i-po-lo-yis-TIS'", "highlight": "υ" },
+        { "el": "ώρα", "en": "hour/time — ω sounds like 'oh': 'O-ra'", "highlight": "ω" },
+        { "el": "πότε", "en": "when — stress on first syllable: 'PO-te'", "highlight": "ό" },
+        { "el": "ποτέ", "en": "never — stress on last syllable: 'po-TE' — same letters, different stress, different meaning!", "highlight": "έ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of the following Greek letters does NOT sound like 'ee'?",
+          "options": ["ε (epsilon)", "η (eta)", "υ (upsilon)"],
+          "correctIndex": 0,
+          "explanation": "Ε (epsilon) sounds like 'eh' (as in 'bed'), not 'ee'. The three letters that all sound like 'ee' are η (eta), ι (iota), and υ (upsilon). This is one of the trickiest features of the Greek writing system."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In Modern Greek, how do ο (omicron) and ω (omega) differ in pronunciation?",
+          "options": ["They sound identical — both say 'oh'", "Ω is longer than ο", "Ο sounds like 'oh' and ω sounds like 'oo'"],
+          "correctIndex": 0,
+          "explanation": "In Modern Greek, ο and ω are pronounced identically — both make an 'oh' sound. In ancient Greek they were different (short vs. long 'o'), but that distinction disappeared in Modern Greek. The different spellings are preserved for historical and etymological reasons."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The words πότε (when) and ποτέ (never) are spelled with the same letters. What makes them different?",
+          "options": ["The position of the stress accent", "One uses ο and the other uses ω", "They are actually the same word"],
+          "correctIndex": 0,
+          "explanation": "Stress placement changes meaning in Greek. Πότε (PO-te) = 'when', ποτέ (po-TE) = 'never'. The accent mark (΄) always shows which syllable is stressed, and following it correctly is crucial for communication."
+        }
+      ]
+    },
+    {
+      "sectionId": "consonant-sounds",
+      "title": "Unique Consonant Sounds",
+      "explanation": "Several Greek consonants have sounds that differ significantly from their English letter-name equivalents, and mastering them is key to sounding natural. Δ (delta) sounds like the voiced 'th' in 'this' or 'the' — not like an English 'd'. Θ (theta) sounds like the unvoiced 'th' in 'think' or 'thin' — this is actually where the English 'th' came from historically. Χ (chi) is a guttural sound made at the back of the throat, like the Scottish 'loch' or German 'Bach' — it has no direct English equivalent. Γ (gamma) is a soft sound: before back vowels (α, ο, ω) it is a voiced version of χ, a soft guttural 'gh'; before front vowels (ε, η, ι, υ) it sounds like 'y' in 'yes'. Ξ (xi) always sounds like 'ks', as in 'fox' — for example ξένος (KSE-nos, foreigner). Ψ (psi) always sounds like 'ps', as in 'lapse' — for example ψάρι (PSA-ri, fish). Β (beta) sounds like 'v'. Φ (phi) sounds like 'f'. Ρ (rho) is a lightly rolled 'r'. These sounds become natural with practice.",
+      "tip": "Remember the 'th' pair: Δ = voiced 'th' as in 'the' (feel your throat vibrate), Θ = unvoiced 'th' as in 'think' (no vibration). For Χ, think of clearing your throat gently. Ξ and Ψ each carry two sounds — 'ks' and 'ps' — in a single letter.",
+      "examples": [
+        { "el": "δέντρο", "en": "tree — δ sounds like voiced 'th' in 'the': 'THEN-tro'", "highlight": "δ" },
+        { "el": "θάλασσα", "en": "sea — θ sounds like unvoiced 'th' in 'think': 'THA-la-sa'", "highlight": "θ" },
+        { "el": "χέρι", "en": "hand — χ is a guttural 'kh' sound: 'KHE-ri'", "highlight": "χ" },
+        { "el": "γεια", "en": "hello/health — γ before ε/ι sounds like 'y': 'YA'", "highlight": "γ" },
+        { "el": "ξένος", "en": "foreigner/strange — ξ sounds like 'ks': 'KSE-nos'", "highlight": "ξ" },
+        { "el": "ψάρι", "en": "fish — ψ sounds like 'ps': 'PSA-ri'", "highlight": "ψ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How does the Greek letter Δ (delta) sound in Modern Greek?",
+          "options": ["Like 'th' in 'this' (voiced)", "Like 'd' in 'dog'", "Like 'th' in 'think' (unvoiced)"],
+          "correctIndex": 0,
+          "explanation": "Δ (delta) makes the voiced 'th' sound, as in 'this', 'the', or 'there' — you feel your throat vibrate. It does NOT sound like an English 'd'. So 'δέντρο' (tree) is pronounced 'THEN-tro', and 'δρόμος' (road) is 'THRO-mos'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between Δ (delta) and Θ (theta)?",
+          "options": ["Both make 'th' sounds, but Δ is voiced ('this') and Θ is unvoiced ('think')", "Δ sounds like 'd' and Θ sounds like 'th'", "They sound identical in Modern Greek"],
+          "correctIndex": 0,
+          "explanation": "Both Δ and Θ produce a 'th' sound, but they differ in voicing. Δ = voiced 'th' as in 'the', 'this', 'there' (throat vibrates). Θ = unvoiced 'th' as in 'think', 'thin', 'three' (throat does not vibrate). Touch your throat to feel the difference."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The Greek letter Ξ (xi) in 'ξένος' (foreigner) makes what sound?",
+          "options": ["'ks' as in 'fox'", "'z' as in 'zebra'", "'sh' as in 'shop'"],
+          "correctIndex": 0,
+          "explanation": "Ξ (xi) always represents the 'ks' sound, like 'x' in 'fox' or 'tax'. 'Ξένος' (foreigner) is pronounced 'KSE-nos'. Similarly, Ψ (psi) always represents 'ps' as in 'lapse' — 'ψάρι' (fish) = 'PSA-ri'."
+        }
+      ]
+    }
+  ]
+}

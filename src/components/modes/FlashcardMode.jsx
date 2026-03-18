@@ -25,8 +25,8 @@ export default function FlashcardMode({
   onMarkMastered,
   masteredWordsList = []
 }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
-  const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
+  const langNative = { uk: 'Українська', ru: 'Русский', de: 'Deutsch', es: 'Español', fr: 'Français', el: 'Ελληνικά', hi: 'हिन्दी', ar: 'العربية', ko: '한국어', zh: '中文', ja: '日本語' }[langCode] || 'Українська';
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing vocabulary with flashcards. Answer questions about vocabulary, pronunciation, grammar, or usage concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);

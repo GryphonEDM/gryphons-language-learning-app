@@ -1,0 +1,163 @@
+{
+  "lessonId": "complements",
+  "nameEn": "Complements",
+  "nameZh": "补语",
+  "icon": "➕",
+  "tier": "B1",
+  "prerequisites": ["basic-verbs"],
+  "estimatedMinutes": 30,
+  "sections": [
+    {
+      "sectionId": "result-complements",
+      "title": "Result Complements",
+      "explanation": "A result complement is a verb or adjective placed directly after the main verb to indicate the outcome or result of that action. The structure is simply verb + result, written as one unit with no space or particle between them. For example, 看见 (kànjiàn) combines 看 (to look) with 见 (to perceive/see), meaning 'to see' — you looked and successfully perceived something. Similarly, 听懂 (tīngdǒng) combines 听 (to listen) with 懂 (to understand), meaning 'to listen and understand.' The result complement tells you what happened as a consequence of the action. Common result complements include 见 (perceive), 懂 (understand), 完 (finish), 会 (master/learn), 到 (reach/achieve), 好 (do well/complete), and 错 (do wrong). Negation uses 没(有): 我没看见他 (I didn't see him).",
+      "tip": "Think of result complements as answering 'and then what happened?' after the verb. The verb tells you the action; the complement tells you the outcome. If you looked but didn't manage to see, you say 没看见 — the action happened but the result didn't.",
+      "examples": [
+        { "zh": "我看见他了。", "pinyin": "Wǒ kànjiàn tā le.", "en": "I saw him. (looked and perceived)", "highlight": "看见" },
+        { "zh": "你听懂了吗？", "pinyin": "Nǐ tīngdǒng le ma?", "en": "Did you understand (what you heard)?", "highlight": "听懂" },
+        { "zh": "作业做完了。", "pinyin": "Zuòyè zuòwán le.", "en": "The homework is finished.", "highlight": "做完" },
+        { "zh": "我学会了开车。", "pinyin": "Wǒ xuéhuì le kāichē.", "en": "I learned how to drive. (studied and mastered it)", "highlight": "学会" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "这本书我看___了。(I finished reading this book.)",
+          "acceptedAnswers": ["完"],
+          "hint": "Which result complement means 'to finish/complete'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 听懂 mean?",
+          "options": [
+            "To listen carefully",
+            "To listen and understand",
+            "To listen again",
+            "To enjoy listening"
+          ],
+          "correctIndex": 1,
+          "explanation": "听懂 combines 听 (to listen) with the result complement 懂 (to understand). It means you listened and, as a result, understood what was said."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我没看___那个人。(I didn't see that person.)",
+          "acceptedAnswers": ["见"],
+          "hint": "Which result complement means 'to perceive/catch sight of'?"
+        }
+      ]
+    },
+    {
+      "sectionId": "direction-complements",
+      "title": "Direction Complements",
+      "explanation": "Direction complements are formed by adding 来 (lái, toward the speaker) or 去 (qù, away from the speaker) after a verb to indicate the direction of movement. Simple direction complements use a single directional verb: 进来 (jìnlái, come in), 出去 (chūqù, go out), 上来 (shànglái, come up), 下去 (xiàqù, go down), 回来 (huílái, come back), 过来 (guòlái, come over). The choice between 来 and 去 depends on the speaker's perspective: 进来 means 'come in' (toward me), while 进去 means 'go in' (away from me). When there is an object that is a place, it goes between the directional verb and 来/去: 他走进教室来 (He walked into the classroom — toward the speaker). Direction complements can also be used figuratively: 想出来 (to think of / come up with — an idea 'comes out').",
+      "tip": "Always ask yourself: is the movement toward me or away from me? Toward the speaker = 来. Away from the speaker = 去. If someone is at the door and you want them to enter, say 进来 (come in, toward me). If you are telling someone to go inside a room you are not in, say 进去 (go in, away from me).",
+      "examples": [
+        { "zh": "请进来！", "pinyin": "Qǐng jìnlái!", "en": "Please come in!", "highlight": "进来" },
+        { "zh": "他出去了。", "pinyin": "Tā chūqù le.", "en": "He went out.", "highlight": "出去" },
+        { "zh": "你上来吧。", "pinyin": "Nǐ shànglái ba.", "en": "Come up (here).", "highlight": "上来" },
+        { "zh": "她回来了吗？", "pinyin": "Tā huílái le ma?", "en": "Has she come back?", "highlight": "回来" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "快下___！（Come down quickly! — speaker is below）",
+          "acceptedAnswers": ["来"],
+          "hint": "The speaker is below, so the movement is toward the speaker."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are inside a room and someone is outside. You want them to enter. Which do you say?",
+          "options": [
+            "请进去。",
+            "请进来。",
+            "请出来。",
+            "请出去。"
+          ],
+          "correctIndex": 1,
+          "explanation": "进来 means 'come in' — movement toward the speaker. Since you are inside and want the person to come to where you are, you use 来, not 去."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "他走___了，不在家。(He went out, he's not home.)",
+          "acceptedAnswers": ["出去"],
+          "hint": "The movement is away from the speaker's location (home), and it means 'go out.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "degree-complements",
+      "title": "Degree Complements",
+      "explanation": "Degree complements describe how well, how badly, or to what extent an action is performed. The structure is: verb + 得 (de) + adjective/description. For example, 跑得快 (pǎo de kuài) means 'run fast,' and 说得好 (shuō de hǎo) means 'speak well.' The particle 得 acts as a bridge between the verb and the description of degree. To make it negative, add 不 before the adjective: 跑得不快 (doesn't run fast), 说得不好 (doesn't speak well). When a verb has an object, you must repeat the verb: 她说中文说得很好 or 她中文说得很好 (She speaks Chinese very well). You cannot say 她说得中文很好. Degree complements are essential for giving evaluations, making comparisons, and describing manner of action.",
+      "tip": "Remember: the object cannot go between 得 and the adjective. If you need to include an object, either put it before the verb (她中文说得很好) or repeat the verb (她说中文说得很好). A common beginner error is saying 她说得中文很好 — this is incorrect.",
+      "examples": [
+        { "zh": "他跑得很快。", "pinyin": "Tā pǎo de hěn kuài.", "en": "He runs very fast.", "highlight": "得很快" },
+        { "zh": "你说得真好！", "pinyin": "Nǐ shuō de zhēn hǎo!", "en": "You speak really well!", "highlight": "得真好" },
+        { "zh": "她唱歌唱得不好。", "pinyin": "Tā chàng gē chàng de bù hǎo.", "en": "She doesn't sing well.", "highlight": "得不好" },
+        { "zh": "他写字写得很漂亮。", "pinyin": "Tā xiě zì xiě de hěn piàoliang.", "en": "He writes characters very beautifully.", "highlight": "得很漂亮" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "她跳舞跳___很好看。(She dances very beautifully.)",
+          "acceptedAnswers": ["得"],
+          "hint": "Which particle connects the verb to the degree description?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'He doesn't eat fast'?",
+          "options": [
+            "他吃得不快。",
+            "他不吃得快。",
+            "他得吃不快。",
+            "他吃不得快。"
+          ],
+          "correctIndex": 0,
+          "explanation": "The negative form of a degree complement places 不 between 得 and the adjective: verb + 得 + 不 + adjective. So 吃得不快 is correct."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "这个菜做___太咸了。(This dish was made too salty.)",
+          "acceptedAnswers": ["得"],
+          "hint": "Use the particle that links the verb to its degree description."
+        }
+      ]
+    },
+    {
+      "sectionId": "potential-complements",
+      "title": "Potential Complements",
+      "explanation": "Potential complements express whether it is possible to achieve a certain result. They are formed by inserting 得 (de, can) or 不 (bù, cannot) between the verb and its result complement. The positive form verb + 得 + result means 'can achieve the result,' while the negative form verb + 不 + result means 'cannot achieve the result.' For example, 看得见 (kàn de jiàn) means 'can see' and 看不见 (kàn bú jiàn) means 'cannot see.' Similarly, 听得懂 (tīng de dǒng) means 'can understand (by listening)' and 听不懂 (tīng bù dǒng) means 'cannot understand.' The potential complement describes inherent ability or possibility given the circumstances — not willingness or permission. Questions can use the A-not-A pattern: 你看得见看不见？(Can you see it or not?) or simply add 吗: 你看得见吗？",
+      "tip": "Do not confuse potential complements with degree complements — both use 得 but in different positions. In degree complements, 得 comes after the full verb and before a descriptive adjective (跑得快 — runs fast). In potential complements, 得 is inserted between the verb and a result complement (跑得动 — can manage to run). The negative test helps: 跑不快 would mean 'can't run fast' (potential), while 跑得不快 means 'doesn't run fast' (degree).",
+      "examples": [
+        { "zh": "你看得见吗？", "pinyin": "Nǐ kàn de jiàn ma?", "en": "Can you see (it)?", "highlight": "看得见" },
+        { "zh": "字太小，我看不见。", "pinyin": "Zì tài xiǎo, wǒ kàn bú jiàn.", "en": "The characters are too small; I can't see them.", "highlight": "看不见" },
+        { "zh": "他说得太快，我听不懂。", "pinyin": "Tā shuō de tài kuài, wǒ tīng bù dǒng.", "en": "He speaks too fast; I can't understand.", "highlight": "听不懂" },
+        { "zh": "这个箱子拿得动吗？", "pinyin": "Zhège xiāngzi ná de dòng ma?", "en": "Can (you) lift this box?", "highlight": "拿得动" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "音乐太大声了，我听___清楚。(The music is too loud; I can't hear clearly.)",
+          "acceptedAnswers": ["不"],
+          "hint": "Use the negative potential complement form: verb + ___ + result."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 吃不完 mean?",
+          "options": [
+            "Don't want to finish eating",
+            "Haven't finished eating yet",
+            "Can't finish eating (too much food)",
+            "Didn't finish eating"
+          ],
+          "correctIndex": 2,
+          "explanation": "吃不完 is a negative potential complement: 吃 (eat) + 不 (cannot) + 完 (finish). It means the food cannot be finished — there is too much to eat."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "你看___懂这本书吗？(Can you understand this book?)",
+          "acceptedAnswers": ["得"],
+          "hint": "Use the positive potential complement form: verb + ___ + result."
+        }
+      ]
+    }
+  ]
+}

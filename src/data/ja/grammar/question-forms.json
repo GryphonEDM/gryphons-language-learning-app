@@ -1,0 +1,151 @@
+{
+  "lessonId": "question-forms",
+  "nameEn": "Question Forms",
+  "nameJa": "疑問文",
+  "icon": "❓",
+  "tier": "A1",
+  "prerequisites": ["particles"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "ka-questions",
+      "title": "か Questions",
+      "explanation": "The simplest way to form a question in Japanese is to add か to the end of a statement. In polite speech, this is standard: これはペンですか (Is this a pen?). The word order does not change — just add か. In casual speech, か can sound blunt or even aggressive, so rising intonation alone is often used instead: これ、ペン？ When か is used casually, it often implies rhetorical surprise or self-directed wondering.",
+      "tip": "In polite Japanese, always use か for questions. In casual Japanese, rely on rising intonation (の？ or just ？) instead. Using か in casual speech can sound rude, especially with women's speech patterns.",
+      "examples": [
+        { "ja": "日本語を勉強していますか。", "en": "Are you studying Japanese?", "highlight": "か" },
+        { "ja": "これはあなたの本ですか。", "en": "Is this your book?", "highlight": "ですか" },
+        { "ja": "明日、暇？", "en": "Are you free tomorrow? (casual)", "highlight": "？" },
+        { "ja": "もう食べたの？", "en": "Did you already eat? (casual)", "highlight": "の" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you politely ask 'Is this a station?'  (駅 = station)",
+          "options": ["これは駅か。", "これは駅ですか。", "これは駅です。", "駅はこれですか。"],
+          "correctIndex": 1,
+          "explanation": "In polite speech, add ですか to the noun: これは駅ですか。"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the most natural casual question for 'Do you like sushi?'",
+          "options": ["寿司が好きですか。", "寿司が好きか。", "寿司、好き？", "寿司が好きかい。"],
+          "correctIndex": 2,
+          "explanation": "In casual speech, rising intonation with ？ is most natural. 好きか sounds blunt or masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the の in 行くの？ do?",
+          "options": ["It makes the sentence past tense.", "It adds emphasis to a casual question.", "It makes the sentence polite.", "It negates the verb."],
+          "correctIndex": 1,
+          "explanation": "の (or んですか in polite form) is used in casual questions to seek explanation or add a conversational, curious tone."
+        }
+      ]
+    },
+    {
+      "sectionId": "question-words",
+      "title": "Question Words: 何・誰・どこ・いつ・どう",
+      "explanation": "Japanese question words: 何 (なに/なん) = what, 誰 (だれ) = who, どこ = where, いつ = when, どう = how, なぜ/どうして/なんで = why. These words go in the same position as the answer would appear. 'What did you eat?' = 何を食べましたか (answer: 寿司を食べました). Question words take the same particles as their answers.",
+      "tip": "何 is read なに before most particles (何を、何が、何に) but なん before です, で, and counters (何ですか、何で、何人). Both readings are correct in many contexts, but following the pattern sounds more natural.",
+      "examples": [
+        { "ja": "何を食べますか。", "en": "What will you eat?", "highlight": "何を" },
+        { "ja": "誰が来ましたか。", "en": "Who came?", "highlight": "誰が" },
+        { "ja": "駅はどこですか。", "en": "Where is the station?", "highlight": "どこ" },
+        { "ja": "いつ日本に行きますか。", "en": "When will you go to Japan?", "highlight": "いつ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'____ did you go yesterday?' — Which question word fills the blank?",
+          "options": ["何に", "誰に", "どこに", "いつに"],
+          "correctIndex": 2,
+          "explanation": "どこに asks 'where to?' — 昨日どこに行きましたか (Where did you go yesterday?)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'____ is that person?' — Which question word fits?",
+          "options": ["何", "どこ", "いつ", "誰"],
+          "correctIndex": 3,
+          "explanation": "誰 (だれ) means 'who.' あの人は誰ですか (Who is that person?)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you ask 'How was the movie?' in Japanese?",
+          "options": ["映画は何でしたか。", "映画はどうでしたか。", "映画はどこでしたか。", "映画はいつでしたか。"],
+          "correctIndex": 1,
+          "explanation": "どう means 'how' (in what way/manner). 映画はどうでしたか = How was the movie?"
+        }
+      ]
+    },
+    {
+      "sectionId": "donna-dono",
+      "title": "どんな & どの (What kind / Which)",
+      "explanation": "どんな means 'what kind of' and is followed by a noun: どんな音楽が好きですか (What kind of music do you like?). どの means 'which' and is used when choosing from a specific set: どの色がいいですか (Which color would you like?). The difference: どんな asks about type/quality, while どの asks you to pick one from visible or known options.",
+      "tip": "Compare: どんな本？(What kind of book? — asking about genre, topic, etc.) vs. どの本？(Which book? — pointing at specific books to choose from). どんな is open-ended, どの is selective.",
+      "examples": [
+        { "ja": "どんな映画が好きですか。", "en": "What kind of movies do you like?", "highlight": "どんな" },
+        { "ja": "どの電車に乗りますか。", "en": "Which train will you take?", "highlight": "どの" },
+        { "ja": "どんな仕事をしていますか。", "en": "What kind of work do you do?", "highlight": "どんな" },
+        { "ja": "どのケーキが食べたいですか。", "en": "Which cake do you want to eat?", "highlight": "どの" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'What kind of food do you like?' — Choose the correct sentence:",
+          "options": ["どの食べ物が好きですか。", "何食べ物が好きですか。", "どんな食べ物が好きですか。", "どう食べ物が好きですか。"],
+          "correctIndex": 2,
+          "explanation": "どんな + noun asks 'what kind of ~?' どんな食べ物 = what kind of food."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are at a restaurant looking at a menu. How do you ask 'Which one is recommended?'",
+          "options": ["どんながおすすめですか。", "どれがおすすめですか。", "何のがおすすめですか。", "どこがおすすめですか。"],
+          "correctIndex": 1,
+          "explanation": "どれ means 'which one' (standalone, not before a noun). どの + noun or どれ alone for 'which.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'What kind of person is your teacher?' — Choose the correct sentence:",
+          "options": ["先生はどの人ですか。", "先生はどう人ですか。", "先生はどんな人ですか。", "先生は何人ですか。"],
+          "correctIndex": 2,
+          "explanation": "どんな人 asks about a person's character/qualities: 'What kind of person?' 何人 would mean 'how many people?' or 'what nationality?'"
+        }
+      ]
+    },
+    {
+      "sectionId": "casual-questions",
+      "title": "Casual Questions",
+      "explanation": "In casual Japanese, questions are formed differently than polite speech. Rising intonation replaces か: 行く？ (Are you going?). The particle の (or ん) is added for seeking explanation or showing curiosity: 何してるの？ (What are you doing?). って is used to quote or ask about something: それって何？ (What's that?). じゃない？ is used for tag questions: 面白いんじゃない？ (Isn't it interesting?).",
+      "tip": "の at the end of casual questions is very common and softens the question. Men and women both use it. Without の, questions can sound abrupt: 食べる？ (You eating?) vs. 食べるの？ (Are you going to eat?).",
+      "examples": [
+        { "ja": "今日、何するの？", "en": "What are you doing today?", "highlight": "の" },
+        { "ja": "これって美味しい？", "en": "Is this (thing) good?", "highlight": "って" },
+        { "ja": "明日も来るんじゃない？", "en": "Aren't you coming tomorrow too?", "highlight": "んじゃない" },
+        { "ja": "もう帰るの？早くない？", "en": "You're leaving already? Isn't it early?", "highlight": "の" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the most natural casual way to ask 'Where are you going?'",
+          "options": ["どこに行きますか。", "どこ行くの？", "どこに行くか。", "どこに行くですか。"],
+          "correctIndex": 1,
+          "explanation": "どこ行くの？ is natural casual Japanese. The particle に is often dropped in casual speech, and の makes it a friendly question."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does って do in the sentence これって何？",
+          "options": ["It marks the topic casually (like は).", "It makes the sentence past tense.", "It makes the sentence polite.", "It negates the sentence."],
+          "correctIndex": 0,
+          "explanation": "って is a casual topic marker, similar to は but more conversational. これって = 'this thing' / 'speaking of this.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Isn't it cold?' (casual) — Choose the most natural expression:",
+          "options": ["寒いですか。", "寒くないか。", "寒くない？", "寒いませんか。"],
+          "correctIndex": 2,
+          "explanation": "寒くない？ with rising intonation is a natural casual tag question meaning 'Isn't it cold?' or 'It's cold, right?'"
+        }
+      ]
+    }
+  ]
+}

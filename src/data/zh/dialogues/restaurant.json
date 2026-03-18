@@ -1,0 +1,115 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At a Restaurant",
+  "nameZh": "在餐厅",
+  "icon": "🍜",
+  "context": "You are at a restaurant in Beijing. A server comes to greet you and take your order.",
+  "characters": {
+    "npc": { "name": "服务员" },
+    "player": { "name": "你" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "欢迎光临！请问几位？",
+      "translation": "Welcome! How many guests?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the server how many people and ask for a table.",
+      "acceptedResponses": [
+        "一个人，麻烦给我一个位子。",
+        "两位，有空桌吗？",
+        "就我一个人。",
+        "两个人，谢谢。"
+      ],
+      "keyWords": ["位", "人"],
+      "hint": "Use '一个人' (one person) or '两位' (two guests) to state your party size."
+    },
+    {
+      "speaker": "npc",
+      "text": "好的，请这边坐。这是菜单，您先看看。",
+      "translation": "OK, please sit over here. Here's the menu, take a look first."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the menu or request a recommendation.",
+      "acceptedResponses": [
+        "请问有什么推荐的菜吗？",
+        "你们的招牌菜是什么？",
+        "菜单上有什么好吃的？",
+        "有没有今天的特色菜？"
+      ],
+      "keyWords": ["推荐", "招牌", "菜"],
+      "hint": "Ask '有什么推荐的菜吗' (any recommended dishes?) or '招牌菜是什么' (what's the signature dish?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "我们的宫保鸡丁和红烧肉都很受欢迎。您想点什么？",
+      "translation": "Our kung pao chicken and braised pork are both very popular. What would you like to order?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a dish from the menu.",
+      "acceptedResponses": [
+        "我要一份宫保鸡丁，再来一碗米饭。",
+        "来一个红烧肉，谢谢。",
+        "请给我一份麻婆豆腐和一碗米饭。",
+        "我点一个西红柿炒鸡蛋吧。"
+      ],
+      "keyWords": ["要", "来", "份", "点"],
+      "hint": "Use '我要一份…' (I'd like a portion of…) or '来一个…' (bring me a…) to order."
+    },
+    {
+      "speaker": "npc",
+      "text": "好的。您想喝点什么？",
+      "translation": "OK. What would you like to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a drink.",
+      "acceptedResponses": [
+        "来一瓶啤酒，谢谢。",
+        "给我一杯茶吧。",
+        "我要一瓶水就好了。",
+        "来一杯可乐。"
+      ],
+      "keyWords": ["瓶", "杯", "要"],
+      "hint": "Use '来一瓶…' (bring a bottle of…) or '来一杯…' (bring a glass of…)."
+    },
+    {
+      "speaker": "npc",
+      "text": "请问您能吃辣吗？宫保鸡丁有点辣。",
+      "translation": "Can you eat spicy food? The kung pao chicken is a bit spicy."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you can handle spicy food or ask to adjust the spice level.",
+      "acceptedResponses": [
+        "没问题，我很能吃辣。",
+        "可以少放一点辣椒吗？",
+        "我不太能吃辣，麻烦做微辣的。",
+        "没关系，我喜欢吃辣的。"
+      ],
+      "keyWords": ["辣", "能"],
+      "hint": "Use '能吃辣' (can eat spicy) or '少放辣椒' (put less chili) / '微辣' (mildly spicy)."
+    },
+    {
+      "speaker": "npc",
+      "text": "好的，马上给您做。请稍等。……您吃好了吗？",
+      "translation": "OK, we'll make it right away. Please wait a moment. …Are you done eating?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you're finished and ask for the bill.",
+      "acceptedResponses": [
+        "吃好了，麻烦买单。",
+        "谢谢，请帮我结账。",
+        "很好吃！一共多少钱？",
+        "吃完了，可以刷卡吗？"
+      ],
+      "keyWords": ["买单", "结账", "多少钱"],
+      "hint": "Use '买单' (pay the bill) or '结账' (settle the bill) or '多少钱' (how much?)."
+    }
+  ]
+}

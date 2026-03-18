@@ -45,7 +45,7 @@ function titleFromMessages(displayMessages) {
 }
 
 export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
 
@@ -427,7 +427,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
             >
               <div style={styles.sessionTitle}>{s.title}</div>
               <div style={styles.sessionMeta}>
-                {s.langCode === 'ru' ? '🇷🇺' : s.langCode === 'de' ? '🇩🇪' : '🇺🇦'} · {s.displayMessages.length} msg{s.displayMessages.length !== 1 ? 's' : ''}
+                {{ uk: '🇺🇦', ru: '🇷🇺', de: '🇩🇪', es: '🇪🇸', fr: '🇫🇷', el: '🇬🇷', hi: '🇮🇳', ar: '🇸🇦', ko: '🇰🇷', zh: '🇨🇳', ja: '🇯🇵' }[s.langCode] || '🇺🇦'} · {s.displayMessages.length} msg{s.displayMessages.length !== 1 ? 's' : ''}
               </div>
               <button
                 style={styles.deleteBtn}
@@ -626,7 +626,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
               onClick={() => toggleMic(langCode)}
               disabled={isTranscribing || (isListening && micLang !== langCode)}
               title={`Speak in ${langName}`}
-            >🎤 {langCode === 'ru' ? 'RU' : langCode === 'de' ? 'DE' : 'UA'}</button>
+            >🎤 {langCode.toUpperCase()}</button>
             {(isLoading || isSpeaking) && (
               <button style={styles.stopBtn} onClick={stopAll} title="Stop">⏹ Stop</button>
             )}

@@ -3,7 +3,7 @@ import ModeHeader from '../shared/ModeHeader.jsx';
 import { buildDictionary, getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
 
 export default function MasteredWordsManager({ langCode = 'uk', masteredWordsList = [], onMarkMastered, onUnmarkMastered, onSpeak, ttsEnabled, ttsVolume, onExit }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
   const dict = buildDictionary(langCode);
   const allWords = useMemo(() => getAllVocabularyWords(langCode), [langCode]);
 

@@ -1,0 +1,216 @@
+{
+  "lessonId": "ser-estar",
+  "nameEn": "Ser vs Estar",
+  "nameEs": "Ser y estar",
+  "icon": "🔀",
+  "tier": "A1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "ser",
+      "title": "Using SER",
+      "explanation": "SER is used for permanent or inherent characteristics that define the essential nature of something or someone. Use ser for: identity and names (Soy María), nationality and origin (Es español), profession (Somos médicos), relationships (Es mi madre), material or composition (La mesa es de madera), and time/dates (Son las tres). Full conjugation: soy, eres, es, somos, sois, son.",
+      "tip": "SER = identity, origin, profession, relationships, material, time. Think: what something IS by nature.",
+      "examples": [
+        { "es": "Soy María.", "en": "I am María.", "highlight": "Soy" },
+        { "es": "Él es español.", "en": "He is Spanish.", "highlight": "es" },
+        { "es": "Somos médicos.", "en": "We are doctors.", "highlight": "Somos" },
+        { "es": "Ella es mi madre.", "en": "She is my mother.", "highlight": "es" },
+        { "es": "La mesa es de madera.", "en": "The table is made of wood.", "highlight": "es" },
+        { "es": "Son las tres.", "en": "It is three o'clock.", "highlight": "Son" }
+      ],
+      "exercises": [
+        {
+          "type": "table-fill",
+          "prompt": "Fill in the conjugation table for 'ser' (to be — permanent):",
+          "table": {
+            "infinitive": "ser",
+            "rows": [
+              { "pronoun": "yo", "answer": "soy" },
+              { "pronoun": "tú", "answer": "eres" },
+              { "pronoun": "él/ella/usted", "answer": "es" },
+              { "pronoun": "nosotros", "answer": "somos" },
+              { "pronoun": "vosotros", "answer": "sois" },
+              { "pronoun": "ellos/ustedes", "answer": "son" }
+            ]
+          },
+          "explanation": "'Ser' is irregular: soy, eres, es, somos, sois, son. Each form must be memorized."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb do you use to say someone's nationality? 'Ella ___ italiana.'",
+          "options": ["es", "está", "son", "estoy"],
+          "correctIndex": 0,
+          "explanation": "Nationality is a permanent characteristic, so we use SER: Ella es italiana."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nosotros ___ profesores. (We are teachers.)",
+          "acceptedAnswers": ["somos"],
+          "hint": "Profession uses SER. 'Nosotros' form of ser.",
+          "explanation": "Profession uses SER. Nosotros → somos: Nosotros somos profesores."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is Monday'?",
+          "options": ["Es lunes.", "Está lunes.", "Estoy lunes.", "Eres lunes."],
+          "correctIndex": 0,
+          "explanation": "Days of the week and time use SER: Es lunes. / Son las tres."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ las nueve de la mañana. (It is nine in the morning.)",
+          "acceptedAnswers": ["Son"],
+          "hint": "Time uses SER. 'Las nueve' is plural.",
+          "explanation": "Clock time uses SER. Plural times use 'son': Son las nueve."
+        },
+        {
+          "type": "transformation",
+          "prompt": "Change the subject from 'yo' to 'ellos': 'Yo soy estudiante.'",
+          "acceptedAnswers": ["Ellos son estudiantes.", "Ellos son estudiante."],
+          "explanation": "'Ser' for profession: yo soy → ellos son. The noun often becomes plural too: estudiantes."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Tú estás mi amigo.'",
+          "incorrectText": "Tú estás mi amigo.",
+          "correctedText": "Tú eres mi amigo.",
+          "acceptedAnswers": ["Tú eres mi amigo.", "Tú eres mi amigo"],
+          "explanation": "Relationships use SER, not ESTAR. 'Tú eres mi amigo' — You are my friend."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The chair is made of plastic. Choose the correct sentence:",
+          "options": ["La silla es de plástico.", "La silla está de plástico.", "La silla son de plástico.", "La silla estoy de plástico."],
+          "correctIndex": 0,
+          "explanation": "Material/composition uses SER: La silla es de plástico."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun with the correct form of 'ser':",
+          "pairs": [
+            { "left": "yo", "right": "soy" },
+            { "left": "tú", "right": "eres" },
+            { "left": "él", "right": "es" },
+            { "left": "ellos", "right": "son" }
+          ],
+          "explanation": "'Ser' conjugation: soy, eres, es, somos, sois, son."
+        },
+        {
+          "type": "sentence-order",
+          "prompt": "Put the words in order:",
+          "words": ["colombiana", "es", "Ella"],
+          "correctOrder": ["Ella", "es", "colombiana"],
+          "explanation": "'Ella es colombiana.' — She is Colombian. Nationality uses SER."
+        }
+      ]
+    },
+    {
+      "sectionId": "estar",
+      "title": "Using ESTAR",
+      "explanation": "ESTAR is used for temporary states, conditions, location, and progressive tenses. Use estar for: emotions and temporary feelings (Estoy cansado — I am tired), location of people, places, and things (Estamos en casa — We are at home), health conditions (Está enfermo — He is sick), and progressive tenses (Estoy comiendo — I am eating). Important rule: location ALWAYS uses ESTAR, even for permanent things: El museo está en Madrid (the museum isn't going anywhere, but location still uses estar). Full conjugation: estoy, estás, está, estamos, estáis, están.",
+      "tip": "ESTAR = temporary states, emotions, location, health, progressive (-ando/-iendo). If it can change, it's probably estar.",
+      "examples": [
+        { "es": "Estoy cansado.", "en": "I am tired.", "highlight": "Estoy" },
+        { "es": "Estamos en casa.", "en": "We are at home.", "highlight": "Estamos" },
+        { "es": "Está enfermo.", "en": "He is sick.", "highlight": "Está" },
+        { "es": "Estoy comiendo.", "en": "I am eating.", "highlight": "Estoy" },
+        { "es": "El museo está en Madrid.", "en": "The museum is in Madrid.", "highlight": "está" },
+        { "es": "Está aburrido.", "en": "He is bored (feeling bored right now).", "highlight": "Está" }
+      ],
+      "exercises": [
+        {
+          "type": "table-fill",
+          "prompt": "Fill in the conjugation table for 'estar' (to be — states/location):",
+          "table": {
+            "infinitive": "estar",
+            "rows": [
+              { "pronoun": "yo", "answer": "estoy" },
+              { "pronoun": "tú", "answer": "estás" },
+              { "pronoun": "él/ella/usted", "answer": "está" },
+              { "pronoun": "nosotros", "answer": "estamos" },
+              { "pronoun": "vosotros", "answer": "estáis" },
+              { "pronoun": "ellos/ustedes", "answer": "están" }
+            ]
+          },
+          "explanation": "'Estar' is irregular: estoy, estás, está, estamos, estáis, están. Note the written accent on estás, está, estáis, están."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'The bank is on Main Street'? (Location)",
+          "options": ["El banco está en la calle Principal.", "El banco es en la calle Principal.", "El banco son en la calle Principal.", "El banco estoy en la calle Principal."],
+          "correctIndex": 0,
+          "explanation": "Location ALWAYS uses ESTAR, even for permanent buildings: El banco está en la calle Principal."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella ___ triste hoy. (She is sad today.)",
+          "acceptedAnswers": ["está"],
+          "hint": "Emotional states use ESTAR. 'Ella' form of estar.",
+          "explanation": "Temporary emotional states use ESTAR: Ella está triste. The emotion can change."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Tricky: 'He is boring' (as a personality trait) vs 'He is bored' (right now). Which is which?",
+          "options": ["Es aburrido (trait) / Está aburrido (right now)", "Está aburrido (trait) / Es aburrido (right now)", "Both use estar", "Both use ser"],
+          "correctIndex": 0,
+          "explanation": "SER describes a permanent trait: Es aburrido = He is a boring person. ESTAR describes a temporary state: Está aburrido = He is bored (at this moment)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nosotros ___ comiendo pizza. (We are eating pizza — progressive)",
+          "acceptedAnswers": ["estamos"],
+          "hint": "Progressive tenses (action in progress) use ESTAR + gerund.",
+          "explanation": "Progressive tenses use ESTAR: Nosotros estamos comiendo. The gerund 'comiendo' is formed from comer + -iendo."
+        },
+        {
+          "type": "error-correction",
+          "prompt": "Find and fix the error: 'Madrid es en España.'",
+          "incorrectText": "Madrid es en España.",
+          "correctedText": "Madrid está en España.",
+          "acceptedAnswers": ["Madrid está en España.", "Madrid está en España"],
+          "explanation": "Location always uses ESTAR, even for permanent geographical facts: Madrid está en España."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She is ready' (temporary state)?",
+          "options": ["Ella está lista.", "Ella es lista.", "Ella son lista.", "Ella estás lista."],
+          "correctIndex": 0,
+          "explanation": "ESTAR for temporary states: Ella está lista = She is ready (right now). Note: 'Ella es lista' means 'She is clever' — a permanent trait!"
+        },
+        {
+          "type": "transformation",
+          "prompt": "Change 'yo' to 'vosotros': 'Yo estoy en el trabajo.'",
+          "acceptedAnswers": ["Vosotros estáis en el trabajo.", "Vosotros estáis en el trabajo"],
+          "explanation": "'Estar' for location: yo estoy → vosotros estáis. Vosotros estáis en el trabajo."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each use to the correct verb (SER or ESTAR):",
+          "pairs": [
+            { "left": "location of a place", "right": "estar" },
+            { "left": "profession", "right": "ser" },
+            { "left": "progressive tense", "right": "estar" },
+            { "left": "nationality", "right": "ser" }
+          ],
+          "explanation": "SER: identity, profession, nationality, relationships, material, time. ESTAR: location, emotions, health, progressive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence: 'The water is hot' (right now, in the cup)",
+          "options": ["El agua está caliente.", "El agua es caliente.", "El agua son caliente.", "El agua estoy caliente."],
+          "correctIndex": 0,
+          "explanation": "ESTAR for temporary conditions: El agua está caliente — the water is hot (right now). If you said 'El agua es caliente' it would imply water is always hot by nature."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿Dónde ___ tus llaves? (Where are your keys?)",
+          "acceptedAnswers": ["están"],
+          "hint": "Location uses ESTAR. 'Tus llaves' is third-person plural.",
+          "explanation": "Location uses ESTAR: ¿Dónde están tus llaves? — Where are your keys? (ellos/ellas form = están)"
+        }
+      ]
+    }
+  ]
+}

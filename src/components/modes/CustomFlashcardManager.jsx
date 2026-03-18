@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function CustomFlashcardManager({ langCode = 'uk', customWords, onSave, onSpeak, ttsEnabled, ttsVolume }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
   const [newUk, setNewUk] = useState('');
   const [newEn, setNewEn] = useState('');
   const [newPhonetic, setNewPhonetic] = useState('');

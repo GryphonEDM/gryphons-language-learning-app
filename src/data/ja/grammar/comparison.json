@@ -1,0 +1,171 @@
+{
+  "lessonId": "comparison",
+  "nameEn": "Comparison",
+  "nameJa": "比較",
+  "icon": "⚖️",
+  "tier": "B1",
+  "prerequisites": ["adjectives"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "yori-more-than",
+      "title": "より (More Than)",
+      "explanation": "To say 'A is more [adjective] than B', Japanese uses the pattern: AはBより[adjective]です. The particle より marks the item being compared against (the lesser one): 'とうきょうはおおさかよりおおきいです' (Tokyo is bigger than Osaka). Unlike English, Japanese adjectives don't change form — there is no '-er' suffix. The comparison is expressed entirely through より. You can also reverse the order: BよりAのほうが[adjective]です, which emphasizes A using のほうが (covered in the next section).",
+      "tip": "より always marks the thing that is 'less' in the comparison. Think of it as 'compared to B, A is...' The adjective itself stays in its normal form — no conjugation needed for comparisons.",
+      "examples": [
+        { "ja": "なつはふゆよりあついです。", "en": "Summer is hotter than winter.", "highlight": "より" },
+        { "ja": "にほんごはえいごよりむずかしいです。", "en": "Japanese is harder than English.", "highlight": "より" },
+        { "ja": "でんしゃはバスよりはやいです。", "en": "The train is faster than the bus.", "highlight": "より" },
+        { "ja": "きょうはきのうよりさむいです。", "en": "Today is colder than yesterday.", "highlight": "より" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "ひこうきはでんしゃ___はやいです。(The airplane is faster than the train.)",
+          "acceptedAnswers": ["より"],
+          "hint": "Which particle marks the item being compared against?",
+          "explanation": "より marks the lesser item in a comparison: でんしゃより = 'compared to the train'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'Cats are smaller than dogs'?",
+          "options": [
+            "ねこはいぬよりちいさいです。",
+            "いぬはねこよりちいさいです。",
+            "ねこよりいぬはちいさいです。",
+            "ねこはいぬがちいさいです。"
+          ],
+          "correctIndex": 0,
+          "explanation": "ねこは (cats — topic) いぬより (compared to dogs) ちいさい (are small) = 'Cats are smaller than dogs.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "この___はあのみせ___やすいです。(This shop is cheaper than that shop.)",
+          "acceptedAnswers": ["みせ、より", "みせはあのみせより"],
+          "hint": "Topic は... compared-item より adjective.",
+          "explanation": "このみせは あのみせより やすいです — 'This shop is cheaper than that shop.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "no-hou-ga-preference",
+      "title": "のほうが (Preference)",
+      "explanation": "のほうが emphasizes a preference or choice between two things. The pattern is: AのほうがBより[adjective]です, meaning 'A is more [adjective] than B' with emphasis on A. This is commonly used when someone asks which you prefer: 'コーヒーとおちゃとどちらがすきですか' (Which do you like, coffee or tea?) → 'おちゃのほうがすきです' (I prefer tea / I like tea more). When comparing two options, ほう literally means 'direction/side', so のほうが means 'the side of A'. The より part is often omitted when the comparison is clear from context.",
+      "tip": "When asked 'AとBとどちらが...?', answer with '[preferred one]のほうが...です'. The より part can be dropped: 'おちゃのほうがすきです' is perfectly natural without mentioning coffee.",
+      "examples": [
+        { "ja": "やまとうみとどちらがすきですか。", "en": "Which do you like more, mountains or the sea?", "highlight": "どちら" },
+        { "ja": "うみのほうがすきです。", "en": "I prefer the sea.", "highlight": "のほうが" },
+        { "ja": "バスよりでんしゃのほうがべんりです。", "en": "The train is more convenient than the bus.", "highlight": "のほうが" },
+        { "ja": "にくよりさかなのほうがけんこうにいいです。", "en": "Fish is healthier than meat.", "highlight": "のほうが" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "コーヒーとおちゃとどちらがすきですか。→ おちゃ___すきです。(I prefer tea.)",
+          "options": ["のほうが", "よりも", "がいちばん", "のように"],
+          "correctIndex": 0,
+          "explanation": "のほうが marks the preferred item: おちゃのほうがすきです = 'I prefer tea.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "なつ___ふゆ___すきです。(I like summer more than winter.)",
+          "acceptedAnswers": ["よりなつのほうが", "よりなつの方が"],
+          "hint": "Pattern: [less preferred]より[preferred]のほうが",
+          "explanation": "ふゆよりなつのほうがすきです — 'Compared to winter, I like summer more.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct way to ask 'Which is bigger, Tokyo or Osaka?'",
+          "options": [
+            "とうきょうとおおさかとどちらがおおきいですか。",
+            "とうきょうはおおさかがおおきいですか。",
+            "とうきょうよりおおさかがおおきいですか。",
+            "とうきょうとおおさかのほうがおおきいですか。"
+          ],
+          "correctIndex": 0,
+          "explanation": "AとBとどちらが[adjective]ですか is the standard pattern for comparing two items."
+        }
+      ]
+    },
+    {
+      "sectionId": "ichiban-most",
+      "title": "一番 (Most / Best)",
+      "explanation": "一番 (いちばん) means 'number one' or 'most' and is used to form superlatives. The pattern is: [group]のなかで[topic]がいちばん[adjective]です. For example: 'くだもののなかでりんごがいちばんすきです' (Among fruits, I like apples the most). When asking 'what is the most...?', use: '[group]のなかでなにがいちばん[adjective]ですか'. For people, use だれ instead of なに. For places, use どこ. For choosing from a specific set, use 'このなかで' (among these).",
+      "tip": "いちばん goes right before the adjective, like an adverb. The group can be stated with のなかで (among/within) or で alone: 'せかいでいちばんたかいやまはエベレストです' (The tallest mountain in the world is Everest).",
+      "examples": [
+        { "ja": "にほんでいちばんたかいやまはふじさんです。", "en": "The tallest mountain in Japan is Mt. Fuji.", "highlight": "いちばんたかい" },
+        { "ja": "きせつのなかでなにがいちばんすきですか。", "en": "Which season do you like the most?", "highlight": "いちばんすき" },
+        { "ja": "このクラスでだれがいちばんせがたかいですか。", "en": "Who is the tallest in this class?", "highlight": "いちばんせがたかい" },
+        { "ja": "すしがいちばんおいしいとおもいます。", "en": "I think sushi is the most delicious.", "highlight": "いちばんおいしい" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "のみもののなかでコーヒーが___すきです。(Among drinks, I like coffee the most.)",
+          "acceptedAnswers": ["いちばん", "一番"],
+          "hint": "The word meaning 'number one / most'.",
+          "explanation": "いちばん (一番) before the adjective creates a superlative: いちばんすき = 'like the most'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___のなかでだれがいちばんはやいですか。(Who is the fastest in [the class]?)",
+          "options": ["クラス", "クラスが", "クラスに", "クラスと"],
+          "correctIndex": 0,
+          "explanation": "クラスのなかで = 'within the class'. No particle is needed before のなかで."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'Summer is the hottest season'?",
+          "options": [
+            "なつはいちばんあついきせつです。",
+            "なつよりあついきせつです。",
+            "なつのほうがあついきせつです。",
+            "なつがもっとあついきせつです。"
+          ],
+          "correctIndex": 0,
+          "explanation": "いちばんあつい = 'the hottest' (superlative). なつはいちばんあついきせつです = 'Summer is the hottest season.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "onaji-kurai-about-same",
+      "title": "同じくらい (About the Same)",
+      "explanation": "To say two things are about the same degree, use 同じくらい (おなじくらい): 'AとBはおなじくらい[adjective]です' means 'A and B are about equally [adjective]'. For example: 'とうきょうとニューヨークはおなじくらいにぎやかです' (Tokyo and New York are about equally lively). くらい (or ぐらい) means 'approximately / to the extent of'. You can also compare specific qualities: 'AはBとおなじくらいのたかさです' (A is about the same height as B), where たかさ is the noun form of たかい. To say 'not as much as', use ほど with a negative: 'AはBほど[adjective negative]です' — 'A is not as [adjective] as B'.",
+      "tip": "おなじくらい is for equal comparisons. For 'not as much as', use ほど + negative: 'おおさかはとうきょうほどおおきくないです' (Osaka is not as big as Tokyo). ほど sets the benchmark that isn't reached.",
+      "examples": [
+        { "ja": "このふたつのかばんはおなじくらいのねだんです。", "en": "These two bags are about the same price.", "highlight": "おなじくらい" },
+        { "ja": "にほんごとちゅうごくごはおなじくらいむずかしいです。", "en": "Japanese and Chinese are about equally difficult.", "highlight": "おなじくらい" },
+        { "ja": "おおさかはとうきょうほどおおきくないです。", "en": "Osaka is not as big as Tokyo.", "highlight": "ほど" },
+        { "ja": "あにとおなじくらいせがたかいです。", "en": "I'm about the same height as my older brother.", "highlight": "おなじくらい" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "このふたつのレストランは___おいしいです。(These two restaurants are about equally delicious.)",
+          "acceptedAnswers": ["おなじくらい", "同じくらい"],
+          "hint": "The phrase meaning 'about the same degree'.",
+          "explanation": "おなじくらい (同じくらい) expresses that two things are about equal in some quality."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'This test is not as hard as the last one'?",
+          "options": [
+            "このテストはまえのテストよりむずかしいです。",
+            "このテストはまえのテストほどむずかしくないです。",
+            "このテストはまえのテストとおなじくらいむずかしいです。",
+            "このテストはまえのテストがいちばんむずかしいです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "ほど + negative (むずかしくない) = 'not as difficult as'. This test isn't as hard as the previous one."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "にほんはイギリス___ちいさくないです。(Japan is not as small as the UK.)",
+          "acceptedAnswers": ["ほど"],
+          "hint": "Which particle means 'to the extent of' and is used with negatives for 'not as... as'?",
+          "explanation": "ほど + negative: イギリスほどちいさくない = 'not as small as the UK'."
+        }
+      ]
+    }
+  ]
+}

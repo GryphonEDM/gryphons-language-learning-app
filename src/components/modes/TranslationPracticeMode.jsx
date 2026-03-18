@@ -29,8 +29,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const [sessionUsedHints, setSessionUsedHints] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
-  const langNative = langCode === 'ru' ? 'Русский' : langCode === 'de' ? 'Deutsch' : 'Українська';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
+  const langNative = { uk: 'Українська', ru: 'Русский', de: 'Deutsch', es: 'Español', fr: 'Français', el: 'Ελληνικά', hi: 'हिन्दी', ar: 'العربية', ko: '한국어', zh: '中文', ja: '日本語' }[langCode] || 'Українська';
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a translation practice exercise — translating words between English and ${langName}. Answer questions about vocabulary, usage, or grammar concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
   const dirLabel = direction === `en-${langCode}` ? `EN → ${langCode.toUpperCase()}` : `${langCode.toUpperCase()} → EN`;
 
@@ -112,8 +112,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   }, [pickerStep]);
 
   const currentWord = words[currentIdx];
-  const prompt = direction === `en-${langCode}` ? currentWord?.en : currentWord?.[langCode];
-  const answer = direction === `en-${langCode}` ? currentWord?.[langCode] : currentWord?.en;
+  const prompt = direction === `en-${langCode}` ? currentWord?.en : currentWord?.uk;
+  const answer = direction === `en-${langCode}` ? currentWord?.uk : currentWord?.en;
 
   const getAcceptedAnswers = () => {
     if (!answer) return [];

@@ -1,0 +1,132 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping",
+  "nameKo": "쇼핑하기",
+  "icon": "🛒",
+  "context": "You are shopping at a traditional market in Seoul. A salesperson greets you at their stall.",
+  "characters": {
+    "npc": { "name": "판매원" },
+    "player": { "name": "당신" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "어서 오세요! 뭐 찾으시는 거 있으세요?",
+      "translation": "Welcome! Are you looking for something?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the salesperson what you're looking for.",
+      "acceptedResponses": [
+        "네, 선물을 찾고 있어요.",
+        "한국 기념품이 있어요?",
+        "그냥 구경하고 있어요.",
+        "친구한테 줄 선물을 사고 싶어요."
+      ],
+      "keyWords": ["찾고", "선물", "구경"],
+      "hint": "Use '찾고 있어요' (I'm looking for) or '구경하고 있어요' (I'm just browsing)."
+    },
+    {
+      "speaker": "npc",
+      "text": "선물이요? 이 한복 인형이 인기가 많아요. 이거 어때요?",
+      "translation": "A gift? This hanbok doll is very popular. How about this one?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the price.",
+      "acceptedResponses": [
+        "예쁘네요! 이거 얼마예요?",
+        "이거 가격이 어떻게 돼요?",
+        "얼마예요?",
+        "좋아 보여요. 얼마예요?"
+      ],
+      "keyWords": ["얼마예요"],
+      "hint": "Ask '얼마예요?' (how much is it?) to find out the price."
+    },
+    {
+      "speaker": "npc",
+      "text": "이만 오천 원이에요. 품질이 아주 좋아요!",
+      "translation": "It's 25,000 won. The quality is very good!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Try to negotiate the price or ask for a discount.",
+      "acceptedResponses": [
+        "좀 깎아 주실 수 있어요?",
+        "너무 비싸요. 이만 원에 안 될까요?",
+        "할인해 주세요!",
+        "좀 싸게 해 주세요."
+      ],
+      "keyWords": ["깎아", "비싸", "싸게", "할인"],
+      "hint": "Use '깎아 주세요' (please give a discount) or '좀 싸게 해 주세요' (make it cheaper)."
+    },
+    {
+      "speaker": "npc",
+      "text": "음... 두 개 사시면 사만 원에 해 드릴게요. 어때요?",
+      "translation": "Hmm... if you buy two, I'll give them to you for 40,000 won. How about it?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Respond to the offer — accept, decline, or counter.",
+      "acceptedResponses": [
+        "좋아요! 두 개 살게요.",
+        "그래도 좀 비싼데... 삼만 오천 원은요?",
+        "한 개만 이만 원에 주세요.",
+        "네, 좋아요. 두 개 주세요."
+      ],
+      "keyWords": ["좋아요", "살게요", "주세요"],
+      "hint": "Use '살게요' (I'll buy) to accept or counter with a different price."
+    },
+    {
+      "speaker": "npc",
+      "text": "네, 알겠습니다! 포장해 드릴까요?",
+      "translation": "OK, understood! Shall I wrap it for you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you want it wrapped.",
+      "acceptedResponses": [
+        "네, 포장해 주세요. 선물이거든요.",
+        "네, 예쁘게 포장해 주세요.",
+        "아니요, 괜찮아요. 그냥 주세요.",
+        "네, 부탁드려요."
+      ],
+      "keyWords": ["포장", "주세요"],
+      "hint": "Use '포장해 주세요' (please wrap it) or '괜찮아요' (it's OK, no need)."
+    },
+    {
+      "speaker": "npc",
+      "text": "여기 있습니다! 카드로 하시겠어요, 현금으로 하시겠어요?",
+      "translation": "Here you go! Will you pay by card or cash?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the salesperson how you want to pay.",
+      "acceptedResponses": [
+        "카드로 할게요.",
+        "현금으로 할게요.",
+        "카드 되죠? 카드로 주세요.",
+        "현금이요. 여기 있어요."
+      ],
+      "keyWords": ["카드", "현금"],
+      "hint": "Use '카드로 할게요' (I'll pay by card) or '현금으로 할게요' (I'll pay by cash)."
+    },
+    {
+      "speaker": "npc",
+      "text": "감사합니다! 또 오세요!",
+      "translation": "Thank you! Come again!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank them and say goodbye.",
+      "acceptedResponses": [
+        "감사합니다! 안녕히 계세요.",
+        "고마워요! 다음에 또 올게요.",
+        "감사합니다! 좋은 하루 되세요.",
+        "네, 감사합니다! 안녕히 계세요."
+      ],
+      "keyWords": ["감사합니다", "안녕히"],
+      "hint": "Use '감사합니다' (thank you) and '안녕히 계세요' (goodbye, to someone staying)."
+    }
+  ]
+}

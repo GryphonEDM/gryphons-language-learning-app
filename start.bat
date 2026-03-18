@@ -92,6 +92,14 @@ if %ERRORLEVEL% neq 0 (
 ) else (
     echo num2words already installed.
 )
+
+python -c "import requests" >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Installing requests...
+    pip install requests
+) else (
+    echo requests already installed.
+)
 echo.
 
 echo [4/6] Checking Whisper STT dependencies...

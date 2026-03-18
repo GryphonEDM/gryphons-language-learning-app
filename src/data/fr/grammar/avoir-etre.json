@@ -1,0 +1,203 @@
+{
+  "lessonId": "avoir-etre",
+  "nameEn": "Avoir & Être (To Have & To Be)",
+  "nameFr": "Avoir et être",
+  "icon": "⚡",
+  "tier": "A1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "avoir",
+      "title": "Avoir — To Have",
+      "explanation": "Avoir means 'to have' and is one of the most important verbs in French. It is conjugated as: j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont. Beyond ownership, avoir appears in many idiomatic expressions where English uses 'to be': avoir faim (to be hungry), avoir soif (to be thirsty), avoir chaud (to be hot), avoir froid (to be cold), avoir peur (to be afraid), avoir raison (to be right), avoir tort (to be wrong), avoir ... ans (to be ... years old). Avoir is also the most common auxiliary verb used to form the passé composé (past tense): j'ai mangé (I ate / I have eaten).",
+      "tip": "When you feel the urge to use 'être' for hunger, thirst, age, fear, or temperature sensations, stop and use 'avoir' instead. French treats these as things you 'have', not states you 'are'.",
+      "examples": [
+        {
+          "fr": "J'ai faim.",
+          "en": "I am hungry.",
+          "highlight": "ai"
+        },
+        {
+          "fr": "Tu as froid.",
+          "en": "You are cold.",
+          "highlight": "as"
+        },
+        {
+          "fr": "Il a peur.",
+          "en": "He is afraid.",
+          "highlight": "a"
+        },
+        {
+          "fr": "Elle a vingt ans.",
+          "en": "She is twenty years old.",
+          "highlight": "a"
+        },
+        {
+          "fr": "Nous avons besoin d'aide.",
+          "en": "We need help.",
+          "highlight": "avons"
+        },
+        {
+          "fr": "J'ai mangé une pomme.",
+          "en": "I ate an apple.",
+          "highlight": "ai mangé"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I am hungry' in French?",
+          "options": ["Je suis faim.", "J'ai faim.", "J'ai chaud."],
+          "correctIndex": 1,
+          "explanation": "Avoir is used for hunger: j'ai faim, not je suis faim."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She is twenty years old'?",
+          "options": ["Elle est vingt ans.", "Elle a vingt ans.", "Elle sont vingt ans."],
+          "correctIndex": 1,
+          "explanation": "Age in French uses avoir: elle a vingt ans."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'You (tu) are thirsty' in French?",
+          "options": ["Tu es soif.", "Tu as soif.", "Tu as froid."],
+          "correctIndex": 1,
+          "explanation": "Avoir soif means to be thirsty: tu as soif."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ils _____ envie de partir. (They want to leave.)",
+          "answer": "ont",
+          "hint": "Third person plural of avoir",
+          "explanation": "Ils ont envie de = they want to / feel like."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct passé composé of 'I ate'?",
+          "options": ["Je suis mangé.", "J'ai mangé.", "J'avais mangé."],
+          "correctIndex": 1,
+          "explanation": "Manger uses avoir as its auxiliary: j'ai mangé."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nous _____ raison. (We are right.)",
+          "answer": "avons",
+          "hint": "First person plural of avoir",
+          "explanation": "Avoir raison means to be right: nous avons raison."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He is afraid' in French?",
+          "options": ["Il est peur.", "Il a peur.", "Il ont peur."],
+          "correctIndex": 1,
+          "explanation": "Avoir peur means to be afraid: il a peur."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Tu _____ besoin de dormir. (You need to sleep.)",
+          "answer": "as",
+          "hint": "Second person singular of avoir",
+          "explanation": "Avoir besoin de means to need: tu as besoin de."
+        }
+      ]
+    },
+    {
+      "sectionId": "etre",
+      "title": "Être — To Be",
+      "explanation": "Être means 'to be' and is conjugated as: je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont. It is used for identity, nationality, profession, description, and sometimes location. Note that professions after être take no article: elle est médecin (she is a doctor), not elle est une médecin. For distinguishing c'est vs il/elle est: use c'est before an article+noun or a proper name (c'est un médecin, c'est Marie), and use il/elle est before an adjective or bare profession (il est grand, elle est médecin). Être also serves as the auxiliary verb for a group of verbs of movement and state change in the passé composé (the DR MRS VANDERTRAMP verbs): je suis allé(e) (I went), il est né (he was born), elle est morte (she died).",
+      "tip": "Remember the DR MRS VANDERTRAMP acronym for verbs that use être in the passé composé: Devenir, Revenir, Mourir, Retourner, Sortir, Venir, Aller, Naître, Descendre, Entrer, Rentrer, Tomber, Rester, Arriver, Monter, Partir. All reflexive verbs also use être.",
+      "examples": [
+        {
+          "fr": "Je suis américain.",
+          "en": "I am American.",
+          "highlight": "suis"
+        },
+        {
+          "fr": "Elle est médecin.",
+          "en": "She is a doctor.",
+          "highlight": "est"
+        },
+        {
+          "fr": "Nous sommes à Paris.",
+          "en": "We are in Paris.",
+          "highlight": "sommes"
+        },
+        {
+          "fr": "C'est un bon livre.",
+          "en": "It is a good book.",
+          "highlight": "C'est"
+        },
+        {
+          "fr": "Il est intelligent.",
+          "en": "He is intelligent.",
+          "highlight": "est"
+        },
+        {
+          "fr": "Je suis allée au marché.",
+          "en": "I went to the market.",
+          "highlight": "suis allée"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is a teacher' in French?",
+          "options": ["Elle est une professeure.", "Elle est professeure.", "Elle a professeure."],
+          "correctIndex": 1,
+          "explanation": "Professions after être take no article: elle est professeure."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'c'est'?",
+          "options": ["C'est grand.", "C'est Marie.", "C'est médecin."],
+          "correctIndex": 1,
+          "explanation": "C'est is used before a proper name: c'est Marie. Before an adjective alone, use il/elle est."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Vous _____ très gentils. (You are very kind.)",
+          "answer": "êtes",
+          "hint": "Second person plural of être",
+          "explanation": "Vous êtes is the second person plural (formal or group) of être."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I went to the store' using passé composé?",
+          "options": ["J'ai allé au magasin.", "Je suis allé au magasin.", "J'étais allé au magasin."],
+          "correctIndex": 1,
+          "explanation": "Aller uses être as its auxiliary: je suis allé(e) au magasin."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ils _____ nés en France. (They were born in France.)",
+          "answer": "sont",
+          "hint": "Third person plural of être",
+          "explanation": "Naître uses être as auxiliary in passé composé: ils sont nés."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'He is tall'?",
+          "options": ["C'est grand.", "Il est grand.", "Il a grand."],
+          "correctIndex": 1,
+          "explanation": "Il est is used before an adjective alone: il est grand."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'We are in Lyon'?",
+          "options": ["Nous avons à Lyon.", "Nous sommes à Lyon.", "Nous êtes à Lyon."],
+          "correctIndex": 1,
+          "explanation": "Être is used for location: nous sommes à Lyon."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Tu _____ très courageux. (You are very brave.)",
+          "answer": "es",
+          "hint": "Second person singular of être",
+          "explanation": "Tu es is the second person singular of être."
+        }
+      ]
+    }
+  ]
+}

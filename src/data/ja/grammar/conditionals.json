@@ -1,0 +1,186 @@
+{
+  "lessonId": "conditionals",
+  "nameEn": "Conditionals",
+  "nameJa": "条件形",
+  "icon": "🔀",
+  "tier": "B1",
+  "prerequisites": ["past-tense"],
+  "estimatedMinutes": 30,
+  "sections": [
+    {
+      "sectionId": "tara",
+      "title": "たら — If / When (Most Versatile)",
+      "explanation": "たら (tara) is the most versatile conditional in Japanese. It is formed by taking the past tense (た form) and adding ら: 食べた → 食べたら (if/when I eat), 行った → 行ったら (if/when I go), 高かった → 高かったら (if it is/was expensive), 静かだった → 静かだったら (if it is/was quiet). たら can express both 'if' and 'when,' and can be used for hypothetical situations, future conditions, completed conditions, and even past discoveries. It focuses on what happens AFTER the condition is fulfilled. Past discovery usage: 家に帰ったら、猫がいた (When I got home, there was a cat — I discovered this). Hypothetical: 宝くじに当たったら、旅行する (If I win the lottery, I'll travel).",
+      "tip": "たら is the safest conditional to use when in doubt — it works in almost any situation. Form it by adding ら to the た-form. It emphasizes sequence: the result happens AFTER the condition. It is the only conditional that can describe past discoveries: 開けたら、中に手紙があった (When I opened it, there was a letter inside).",
+      "examples": [
+        { "ja": "雨が降ったら、家にいます。", "en": "If it rains, I'll stay home.", "highlight": "降ったら" },
+        { "ja": "安かったら、買います。", "en": "If it's cheap, I'll buy it.", "highlight": "安かったら" },
+        { "ja": "駅に着いたら、電話してください。", "en": "When you arrive at the station, please call me.", "highlight": "着いたら" },
+        { "ja": "窓を開けたら、鳥が飛んできた。", "en": "When I opened the window, a bird flew in. (past discovery)", "highlight": "開けたら" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you form たら?",
+          "options": [
+            "Dictionary form + たら",
+            "Past tense (た form) + ら",
+            "て-form + ら",
+            "ます form + たら"
+          ],
+          "correctIndex": 1,
+          "explanation": "たら is formed by adding ら to the た-form (past tense): 食べた → 食べたら, 行った → 行ったら, 高かった → 高かったら."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conditional can describe a past discovery?",
+          "options": ["ば", "なら", "と", "たら"],
+          "correctIndex": 3,
+          "explanation": "Only たら can describe discovering something after completing an action: 家に帰ったら、猫がいた (When I got home, there was a cat). The other conditionals cannot be used this way."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct たら form of 暑い (atsui, hot):",
+          "options": ["暑いたら", "暑くたら", "暑かったら", "暑さたら"],
+          "correctIndex": 2,
+          "explanation": "For い-adjectives, use the past tense + ら: 暑い → 暑かった → 暑かったら (if it's hot)."
+        }
+      ]
+    },
+    {
+      "sectionId": "ba",
+      "title": "ば — If (General Condition)",
+      "explanation": "ば (ba) expresses a general or logical condition — 'if X, then Y.' Formation varies by word type. For う-verbs: change the final -u to -e and add ば: 行く → 行けば (if I go), 読む → 読めば (if I read). For る-verbs: drop る and add れば: 食べる → 食べれば (if I eat). For い-adjectives: drop い and add ければ: 高い → 高ければ (if it's expensive). For な-adjectives/nouns: add であれば or なら(ば): 静かであれば (if it's quiet). Irregular: する → すれば, 来る → 来れば, いい → よければ. ば emphasizes the condition itself and often implies that the result naturally follows. It is commonly used for general truths, advice, and hypotheticals.",
+      "tip": "ば focuses on the condition side of the 'if-then' — if you fulfill this condition, the result follows. A key restriction: you generally cannot use ば when the result clause describes your own intentional action (use たら instead). Exception: the common phrase ～ばいい (it would be good if...) is fine: 聞けばいい (you should just ask).",
+      "examples": [
+        { "ja": "練習すれば、上手になる。", "en": "If you practice, you'll get better.", "highlight": "すれば" },
+        { "ja": "安ければ、買いたい。", "en": "If it's cheap, I want to buy it.", "highlight": "安ければ" },
+        { "ja": "薬を飲めば、治る。", "en": "If you take medicine, you'll get better.", "highlight": "飲めば" },
+        { "ja": "よければ、一緒に行きませんか？", "en": "If it's alright with you, shall we go together?", "highlight": "よければ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the ば form of 行く (iku, to go)?",
+          "options": ["行くば", "行けば", "行きば", "行ったば"],
+          "correctIndex": 1,
+          "explanation": "For う-verbs, change the final -u to -e and add ば: 行く (iku) → 行けば (ikeba). The く changes to け."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the ば form of いい (ii, good)?",
+          "options": ["いければ", "いいば", "よければ", "いいなら"],
+          "correctIndex": 2,
+          "explanation": "いい has an irregular ば form: よければ (yokereba). It uses the alternate stem よ- (from the original form よい) + ければ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What nuance does ば carry compared to たら?",
+          "options": [
+            "ば emphasizes the condition/logical relationship; たら emphasizes what happens after",
+            "ば is always past tense; たら is always future",
+            "They are completely identical",
+            "ば is casual; たら is formal"
+          ],
+          "correctIndex": 0,
+          "explanation": "ば emphasizes the condition and the logical connection between condition and result. たら emphasizes the temporal sequence — what happens after the condition is met. ば is more about 'given that X' while たら is more about 'after X happens.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "nara",
+      "title": "なら — If It's the Case That",
+      "explanation": "なら (nara) means 'if it's the case that...' or 'if we're talking about...' It is used when you pick up on something someone said and respond with a condition based on that topic. Unlike たら and ば, なら does not require the condition to happen first — the result can happen before or independently of the condition. Pattern: [plain form / noun / topic] + なら. Examples: 日本に行くなら、京都がおすすめです (If you're going to Japan, I recommend Kyoto — you haven't gone yet, but the recommendation comes first). 肉なら、このレストランがいい (If we're talking about meat, this restaurant is good). なら often responds to new information: A: 明日暇だよ B: 暇なら、映画を見に行こう (If you're free, let's go see a movie).",
+      "tip": "なら is often used to respond to what someone just said — it picks up a topic and adds your comment. Unlike other conditionals, the 'result' with なら can happen BEFORE or independently of the condition: 日本に行くなら、ガイドブックを買っておいて (If you're going to Japan, buy a guidebook [beforehand]).",
+      "examples": [
+        { "ja": "日本語を勉強するなら、この本がいい。", "en": "If you're going to study Japanese, this book is good.", "highlight": "するなら" },
+        { "ja": "寿司なら、あの店がおいしい。", "en": "If we're talking about sushi, that restaurant is delicious.", "highlight": "寿司なら" },
+        { "ja": "暇なら、手伝ってくれない？", "en": "If you're free, could you help me?", "highlight": "暇なら" },
+        { "ja": "車を買うなら、日本車がおすすめです。", "en": "If you're buying a car, I recommend Japanese cars.", "highlight": "買うなら" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What makes なら different from たら?",
+          "options": [
+            "なら requires the condition to happen first",
+            "なら responds to a topic or situation; the result can precede the condition",
+            "なら can only be used with nouns",
+            "なら is only for past events"
+          ],
+          "correctIndex": 1,
+          "explanation": "なら picks up on a topic or situation and the result/advice can happen before or independently of the condition. 日本に行くなら、ガイドブックを買って (If you're going to Japan, buy a guidebook first) — buying happens before going."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Someone says 明日暇だよ (I'm free tomorrow). How do you respond with なら?",
+          "options": [
+            "暇だったら、映画を見よう。",
+            "暇なら、映画を見に行こう。",
+            "暇ば、映画を見よう。",
+            "暇と、映画を見に行く。"
+          ],
+          "correctIndex": 1,
+          "explanation": "暇なら picks up on what they just said ('I'm free') and responds with a suggestion. This responsive usage is very natural for なら."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence: 'If we're talking about ramen, Ichiran is the best.'",
+          "options": [
+            "ラーメンを食べたら、一蘭が一番いい。",
+            "ラーメンなら、一蘭が一番おいしい。",
+            "ラーメンば、一蘭が一番だ。",
+            "ラーメンと、一蘭がいい。"
+          ],
+          "correctIndex": 1,
+          "explanation": "ラーメンなら is the topic-conditional: 'if we're talking about ramen / when it comes to ramen.' This picks up the topic and gives an opinion about it."
+        }
+      ]
+    },
+    {
+      "sectionId": "to-conditional",
+      "title": "と — Automatic / Natural Result",
+      "explanation": "と (to) as a conditional expresses automatic, natural, or inevitable results — things that always happen when the condition is met. Pattern: [present tense plain form] + と. Examples: ボタンを押すと、ドアが開く (When you press the button, the door opens — always). 春になると、桜が咲く (When spring comes, cherry blossoms bloom — every year). と is used for: 1) Natural phenomena and habits: 冬になると、雪が降る (When winter comes, it snows). 2) Mechanical/automatic results: このボタンを押すと、電気がつく (Press this button and the light turns on). 3) Directions: まっすぐ行くと、右に駅がある (Go straight and the station is on the right). Important restriction: you CANNOT use と with requests, commands, or intentional actions in the result clause.",
+      "tip": "と is for inevitable, automatic results — like cause and effect. You cannot use it with volitional results (commands, requests, invitations). Wrong: 雨が降ると、傘を持っていってください. Right: 雨が降ったら、傘を持っていってください. と = 'whenever X, then Y always happens.'",
+      "examples": [
+        { "ja": "春になると、花が咲く。", "en": "When spring comes, flowers bloom. (natural/recurring)", "highlight": "なると" },
+        { "ja": "このボタンを押すと、電気がつきます。", "en": "When you press this button, the light turns on. (automatic)", "highlight": "押すと" },
+        { "ja": "右に曲がると、コンビニがあります。", "en": "If you turn right, there's a convenience store. (directions)", "highlight": "曲がると" },
+        { "ja": "食べすぎると、お腹が痛くなる。", "en": "If you eat too much, your stomach will hurt. (natural consequence)", "highlight": "食べすぎると" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What kind of results does と express?",
+          "options": [
+            "Hypothetical wishes",
+            "Automatic, natural, or inevitable results",
+            "Polite requests",
+            "Past discoveries"
+          ],
+          "correctIndex": 1,
+          "explanation": "と expresses automatic, natural, or inevitable results — things that always or naturally happen when the condition is met. It cannot be used with intentional actions, requests, or commands."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is INCORRECT with と?",
+          "options": [
+            "ボタンを押すと、ドアが開く。",
+            "春になると、暖かくなる。",
+            "暇になると、映画を見に行こう。",
+            "右に曲がると、駅がある。"
+          ],
+          "correctIndex": 2,
+          "explanation": "と cannot be used when the result is a volitional/intentional action like an invitation (～しよう). 暇になると、映画を見に行こう is incorrect. Use たら or ば instead: 暇になったら、映画を見に行こう."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the best conditional for: 'When winter comes, it gets cold.' (natural, recurring event)",
+          "options": ["冬になったら", "冬になると", "冬になれば", "冬なら"],
+          "correctIndex": 1,
+          "explanation": "冬になると is best here because it describes a natural, recurring phenomenon — every winter it gets cold. と is ideal for expressing these inevitable, automatic results."
+        }
+      ]
+    }
+  ]
+}

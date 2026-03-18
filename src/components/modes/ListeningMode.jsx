@@ -11,7 +11,8 @@ import { cefrMatches } from '../../utils/speechUtils.js';
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
 export default function ListeningMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' };
+  const langName = langNames[langCode] || 'Ukrainian';
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
   const [pickerStep, setPickerStep] = useState('category'); // category, cefr
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -331,7 +332,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
                 else handleSubmit();
               }
             }}
-            placeholder={`Type the ${langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian'} word...`}
+            placeholder={`Type the ${langName} word...`}
             disabled={submitted}
             autoFocus
           />

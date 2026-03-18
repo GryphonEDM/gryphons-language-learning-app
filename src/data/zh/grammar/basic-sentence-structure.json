@@ -1,0 +1,151 @@
+{
+  "lessonId": "basic-sentence-structure",
+  "nameEn": "Basic Sentence Structure",
+  "nameZh": "基本句型",
+  "icon": "📝",
+  "tier": "A1",
+  "prerequisites": ["pinyin-tones"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "svo-word-order",
+      "title": "SVO Word Order",
+      "explanation": "Chinese follows the same basic Subject-Verb-Object word order as English. The subject comes first, then the verb, then the object. Unlike many European languages, Chinese verbs do not conjugate — the same form is used regardless of subject or tense. This makes basic sentences straightforward once you know the vocabulary.",
+      "tip": "Think of Chinese word order as remarkably similar to English: 'I eat rice' maps directly to 我(I) 吃(eat) 饭(rice). No verb conjugation needed!",
+      "examples": [
+        { "zh": "我吃饭。", "en": "I eat rice.", "highlight": "我 吃 饭" },
+        { "zh": "她喝水。", "en": "She drinks water.", "highlight": "她 喝 水" },
+        { "zh": "他学中文。", "en": "He studies Chinese.", "highlight": "他 学 中文" },
+        { "zh": "我们看书。", "en": "We read books.", "highlight": "我们 看 书" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I drink tea' in Chinese?",
+          "options": ["我喝茶。", "喝我茶。", "茶喝我。", "我茶喝。"],
+          "correctIndex": 0,
+          "explanation": "Chinese follows SVO order: 我 (I) + 喝 (drink) + 茶 (tea)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct word order for 'She reads books'?",
+          "options": ["她看书。", "看她书。", "书看她。", "她书看。"],
+          "correctIndex": 0,
+          "explanation": "Subject 她 (she) comes first, then verb 看 (read), then object 书 (books)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'They eat fruit'?",
+          "options": ["他们水果吃。", "吃他们水果。", "他们吃水果。", "水果他们吃。"],
+          "correctIndex": 2,
+          "explanation": "SVO order: 他们 (they) + 吃 (eat) + 水果 (fruit)."
+        }
+      ]
+    },
+    {
+      "sectionId": "shi-sentences",
+      "title": "是 (shì) Sentences",
+      "explanation": "The verb 是 (shì) means 'to be' and is used to link two nouns or noun phrases: A 是 B means 'A is B.' Unlike English, 是 is not used with adjectives — you would not say 我是高 for 'I am tall.' To negate a 是 sentence, place 不 (bù) before 是 to form 不是 (bú shì), meaning 'is not.'",
+      "tip": "Use 是 only to equate two nouns ('I am a student'), never with adjectives. For adjectives, Chinese uses 很 instead: 我很高 (I am tall).",
+      "examples": [
+        { "zh": "我是学生。", "en": "I am a student.", "highlight": "是" },
+        { "zh": "她是老师。", "en": "She is a teacher.", "highlight": "是" },
+        { "zh": "他不是医生。", "en": "He is not a doctor.", "highlight": "不是" },
+        { "zh": "这不是我的书。", "en": "This is not my book.", "highlight": "不是" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He is a doctor'?",
+          "options": ["他是医生。", "他不是医生。", "他有医生。", "他医生是。"],
+          "correctIndex": 0,
+          "explanation": "Use the A 是 B pattern: 他 (he) 是 (is) 医生 (doctor)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She is not a student'?",
+          "options": ["她是学生。", "她没有学生。", "她不是学生。", "她没是学生。"],
+          "correctIndex": 2,
+          "explanation": "To negate 是, place 不 before it: 她不是学生。Never use 没 with 是."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '这是我的猫。' mean?",
+          "options": ["This has my cat.", "This is my cat.", "I am a cat.", "That is not a cat."],
+          "correctIndex": 1,
+          "explanation": "这 (this) 是 (is) 我的 (my) 猫 (cat) — 'This is my cat.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "you-sentences",
+      "title": "有 (yǒu) Sentences",
+      "explanation": "The verb 有 (yǒu) expresses possession ('to have') and existence ('there is/are'). For possession, the subject is a person: 我有一本书 (I have a book). For existence, the subject is a place: 桌子上有一本书 (On the table there is a book). To negate 有, always use 没 (méi), never 不. The negative form is 没有 (méi yǒu).",
+      "tip": "有 is the only common verb that is always negated with 没 instead of 不. Remember: 没有 for 'don't have,' never 不有.",
+      "examples": [
+        { "zh": "我有两个孩子。", "en": "I have two children.", "highlight": "有" },
+        { "zh": "她没有车。", "en": "She doesn't have a car.", "highlight": "没有" },
+        { "zh": "这里有很多人。", "en": "There are many people here.", "highlight": "有" },
+        { "zh": "房间里没有人。", "en": "There is no one in the room.", "highlight": "没有" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't have money'?",
+          "options": ["我不有钱。", "我没有钱。", "我有不钱。", "我没钱有。"],
+          "correctIndex": 1,
+          "explanation": "有 is always negated with 没, not 不. The correct form is 我没有钱。"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '桌子上有三本书。' mean?",
+          "options": ["The table has three legs.", "I have three books.", "There are three books on the table.", "Three books are not on the table."],
+          "correctIndex": 2,
+          "explanation": "桌子上 (on the table) 有 (there are) 三本书 (three books) — existence pattern with a place as subject."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'He has a younger sister'?",
+          "options": ["他有妹妹。", "他是妹妹。", "他没有妹妹。", "他不有妹妹。"],
+          "correctIndex": 0,
+          "explanation": "Use 有 for possession: 他 (he) 有 (has) 妹妹 (younger sister)."
+        }
+      ]
+    },
+    {
+      "sectionId": "shi-de-construction",
+      "title": "是...的 (shì...de) Construction",
+      "explanation": "The 是...的 construction is used to emphasize specific details — such as when, where, how, or why — about an action that already happened. The emphasized information is placed between 是 and 的. For example, 他是昨天来的 (He came yesterday) stresses that it was yesterday. Without 是...的, the sentence simply states the action; with it, you draw attention to the circumstance. 是 can sometimes be omitted, but 的 is always required.",
+      "tip": "Think of 是...的 as a spotlight: it highlights the detail you care about most. If someone asks '你是什么时候来的？' (When did you come?), the answer uses 是...的 to spotlight the time.",
+      "examples": [
+        { "zh": "我是昨天来的。", "en": "I came yesterday. (emphasis: yesterday)", "highlight": "是 昨天 的" },
+        { "zh": "她是坐飞机来的。", "en": "She came by plane. (emphasis: by plane)", "highlight": "是 坐飞机 的" },
+        { "zh": "你是在哪儿买的？", "en": "Where did you buy it? (emphasis: where)", "highlight": "是 在哪儿 的" },
+        { "zh": "他是跟朋友一起去的。", "en": "He went with friends. (emphasis: with friends)", "highlight": "是 跟朋友一起 的" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you emphasize that you came 'by train'?",
+          "options": ["我坐火车来了。", "我是坐火车来的。", "我坐火车是来。", "我的坐火车来是。"],
+          "correctIndex": 1,
+          "explanation": "Place the emphasized detail (坐火车) between 是 and 的: 我是坐火车来的。"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '她是在北京学的中文。' emphasize?",
+          "options": ["That she studied Chinese.", "That she studied in Beijing.", "That she is in Beijing now.", "That she speaks Chinese."],
+          "correctIndex": 1,
+          "explanation": "The 是...的 construction spotlights 在北京 (in Beijing), emphasizing the location where she studied Chinese."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence asks 'When did you arrive?' with proper emphasis?",
+          "options": ["你什么时候到了？", "你是什么时候到的？", "你到是什么时候？", "你的到什么时候是？"],
+          "correctIndex": 1,
+          "explanation": "Use 是...的 to ask about emphasized details: 你是什么时候到的？ spotlights the time of arrival."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers & Time",
+  "nameHi": "संख्याएँ और समय",
+  "icon": "🔢",
+  "tier": "A2",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "hindi-numbers",
+      "title": "Hindi Numbers (हिंदी संख्याएँ)",
+      "explanation": "Hindi has its own set of number words that must be memorized individually, as they do not follow a simple pattern like English. The numbers 1-10 are: एक (1), दो (2), तीन (3), चार (4), पाँच (5), छह (6), सात (7), आठ (8), नौ (9), दस (10). From 11-19, each number has a unique form: ग्यारह (11), बारह (12), तेरह (13), चौदह (14), पंद्रह (15), सोलह (16), सत्रह (17), अठारह (18), उन्नीस (19). The tens are: बीस (20), तीस (30), चालीस (40), पचास (50), साठ (60), सत्तर (70), अस्सी (80), नब्बे (90), सौ (100). Numbers between tens (21-29, 31-39, etc.) each have unique compound forms that must be learned — for example: इक्कीस (21), बाईस (22), तेईस (23), चौबीस (24), पच्चीस (25). Hindi also uses Devanagari numerals: १, २, ३, ४, ५, ६, ७, ८, ९, ० alongside Arabic numerals. For larger numbers, हज़ार means thousand, लाख means 100,000, and करोड़ means 10,000,000 — these are the Indian numbering system units.",
+      "tip": "Start by memorizing 1-20 and the tens (20, 30... 100). The in-between numbers (21-29, etc.) are irregular and must be learned individually. Practice counting daily! Hindi uses लाख (100,000) and करोड़ (10 million) instead of the Western million/billion.",
+      "examples": [
+        { "hi": "एक, दो, तीन, चार, पाँच", "en": "One, two, three, four, five", "highlight": "एक" },
+        { "hi": "ग्यारह बच्चे", "en": "Eleven children", "highlight": "ग्यारह" },
+        { "hi": "पच्चीस रुपये", "en": "Twenty-five rupees", "highlight": "पच्चीस" },
+        { "hi": "सौ लोग आए।", "en": "A hundred people came.", "highlight": "सौ" },
+        { "hi": "दो लाख रुपये", "en": "Two hundred thousand rupees (2 lakh)", "highlight": "लाख" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Hindi word for the number 15?",
+          "options": ["पंद्रह", "पाँच", "पचास"],
+          "correctIndex": 0,
+          "explanation": "पंद्रह means 15. पाँच means 5, and पचास means 50. Hindi numbers from 11-19 each have unique forms that must be memorized individually."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'लाख' represent in the Indian numbering system?",
+          "options": ["Ten thousand (10,000)", "One hundred thousand (100,000)", "One million (1,000,000)"],
+          "correctIndex": 1,
+          "explanation": "एक लाख equals 100,000 (one hundred thousand). The Indian numbering system uses लाख (100,000) and करोड़ (10,000,000) as its major units, which differ from the Western system of millions and billions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct Hindi word for 20?",
+          "options": ["दस", "बीस", "तीस"],
+          "correctIndex": 1,
+          "explanation": "बीस means 20. दस means 10, and तीस means 30. The Hindi tens (20, 30, 40...) each have unique forms: बीस, तीस, चालीस, पचास, साठ, सत्तर, अस्सी, नब्बे."
+        }
+      ]
+    },
+    {
+      "sectionId": "telling-time",
+      "title": "Telling Time (समय बताना)",
+      "explanation": "Hindi tells time using the word बजे (o'clock, struck), which comes from the verb बजना (to ring/strike). The basic pattern is: [number] बजे हैं — 'It is [number] o'clock.' For example: तीन बजे हैं (It is three o'clock). Special forms exist for certain hours: एक बजा है (It is one o'clock — note बजा, singular, because एक is singular), डेढ़ बजा है (It is 1:30), ढाई बजे हैं (It is 2:30), सवा तीन बजे हैं (It is 3:15), पौने चार बजे हैं (It is 3:45 — quarter to four), साढ़े चार बजे हैं (It is 4:30). The key time vocabulary includes: सवा (quarter past), साढ़े (half past, for 3 and above), पौने (quarter to), सुबह (morning), दोपहर (afternoon), शाम (evening), रात (night). To ask the time: क्या समय हुआ है? or कितने बजे हैं? (What time is it?). For scheduling: [number] बजे (at [number] o'clock) — मैं पाँच बजे आऊँगा (I will come at five o'clock).",
+      "tip": "Remember the special half-hour words: डेढ़ (1.5), ढाई (2.5), and साढ़े (half past, for 3+). For quarter past use सवा, for quarter to use पौने. एक बजा uses singular; all others use बजे (plural).",
+      "examples": [
+        { "hi": "कितने बजे हैं?", "en": "What time is it?", "highlight": "कितने बजे" },
+        { "hi": "पाँच बजे हैं।", "en": "It is five o'clock.", "highlight": "पाँच बजे" },
+        { "hi": "सवा दस बजे हैं।", "en": "It is 10:15 (quarter past ten).", "highlight": "सवा" },
+        { "hi": "साढ़े छह बजे हैं।", "en": "It is 6:30 (half past six).", "highlight": "साढ़े" },
+        { "hi": "पौने नौ बजे हैं।", "en": "It is 8:45 (quarter to nine).", "highlight": "पौने" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is 2:30' in Hindi?",
+          "options": ["साढ़े दो बजे हैं।", "ढाई बजे हैं।", "दो बजे हैं।"],
+          "correctIndex": 1,
+          "explanation": "For 2:30, Hindi uses the special word ढाई (two and a half). साढ़े is used for half past 3 and above (साढ़े तीन, साढ़े चार, etc.). डेढ़ is used for 1:30."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'पौने चार बजे हैं' mean?",
+          "options": ["It is 4:15.", "It is 3:45 (quarter to four).", "It is 4:30."],
+          "correctIndex": 1,
+          "explanation": "पौने means 'quarter to' — so पौने चार means 'quarter to four', which is 3:45. सवा means 'quarter past' and साढ़े means 'half past'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why do we say 'एक बजा है' but 'दो बजे हैं'?",
+          "options": ["बजा is singular (one) while बजे is plural (two or more)", "There is no difference, both are correct", "बजा is formal and बजे is informal"],
+          "correctIndex": 0,
+          "explanation": "Since एक (one) is singular, the verb form is singular: एक बजा है. For all other numbers (दो, तीन, etc.), the plural form is used: बजे हैं. This follows Hindi's standard singular/plural agreement."
+        }
+      ]
+    },
+    {
+      "sectionId": "days-months",
+      "title": "Days and Months (दिन और महीने)",
+      "explanation": "The Hindi days of the week (सप्ताह के दिन) are named after celestial bodies, similar to many languages: सोमवार (Monday, from सोम — Moon), मंगलवार (Tuesday, from मंगल — Mars), बुधवार (Wednesday, from बुध — Mercury), गुरुवार or बृहस्पतिवार (Thursday, from गुरु/बृहस्पति — Jupiter), शुक्रवार (Friday, from शुक्र — Venus), शनिवार (Saturday, from शनि — Saturn), रविवार (Sunday, from रवि — Sun). All days end in -वार (day/turn). The Hindi months follow two systems: the Gregorian calendar months used in everyday life — जनवरी (January), फ़रवरी (February), मार्च (March), अप्रैल (April), मई (May), जून (June), जुलाई (July), अगस्त (August), सितंबर (September), अक्तूबर (October), नवंबर (November), दिसंबर (December) — and the traditional Hindu calendar months (चैत्र, वैशाख, etc.) used for festivals and religious dates. Useful time expressions include: आज (today), कल (yesterday/tomorrow — context determines which), परसों (day before yesterday / day after tomorrow), अगले हफ़्ते (next week), पिछले महीने (last month).",
+      "tip": "All days end in -वार. कल means BOTH 'yesterday' and 'tomorrow' — the tense of the sentence tells you which! परसों similarly means both 'day before yesterday' and 'day after tomorrow'. The Gregorian month names are borrowed from English and easy to recognize.",
+      "examples": [
+        { "hi": "आज सोमवार है।", "en": "Today is Monday.", "highlight": "सोमवार" },
+        { "hi": "मैं शुक्रवार को आऊँगा।", "en": "I will come on Friday.", "highlight": "शुक्रवार" },
+        { "hi": "जनवरी में बहुत ठंड होती है।", "en": "It is very cold in January.", "highlight": "जनवरी" },
+        { "hi": "कल मैं गया था।", "en": "Yesterday I went. (past tense = yesterday)", "highlight": "कल" },
+        { "hi": "कल मैं जाऊँगा।", "en": "Tomorrow I will go. (future tense = tomorrow)", "highlight": "कल" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is unique about the Hindi word 'कल'?",
+          "options": ["It means both 'yesterday' and 'tomorrow'", "It means 'today'", "It means 'next week'"],
+          "correctIndex": 0,
+          "explanation": "कल is unique in that it means both 'yesterday' and 'tomorrow'. The verb tense in the sentence determines the meaning: कल मैं गया (Yesterday I went) vs. कल मैं जाऊँगा (Tomorrow I will go)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which day is 'बुधवार'?",
+          "options": ["Tuesday", "Wednesday", "Thursday"],
+          "correctIndex": 1,
+          "explanation": "बुधवार is Wednesday, named after बुध (Mercury). The days follow celestial bodies: सोमवार (Moon/Monday), मंगलवार (Mars/Tuesday), बुधवार (Mercury/Wednesday), गुरुवार (Jupiter/Thursday)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What suffix do all Hindi days of the week share?",
+          "options": ["-दिन", "-वार", "-काल"],
+          "correctIndex": 1,
+          "explanation": "All Hindi days of the week end in -वार (meaning 'day' or 'turn'): सोमवार, मंगलवार, बुधवार, गुरुवार, शुक्रवार, शनिवार, रविवार."
+        }
+      ]
+    }
+  ]
+}

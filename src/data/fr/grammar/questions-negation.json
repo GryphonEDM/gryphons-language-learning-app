@@ -1,0 +1,139 @@
+{
+  "lessonId": "questions-negation",
+  "nameEn": "Questions & Negation",
+  "nameFr": "Les questions et la négation",
+  "icon": "❓",
+  "tier": "A1",
+  "prerequisites": ["pronouns"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "questions",
+      "title": "Asking Questions",
+      "explanation": "There are three ways to ask a yes/no question in French. (1) Intonation: keep the word order the same as a statement and simply raise your voice at the end — 'Tu parles français?' This is the most common in everyday speech. (2) Est-ce que: place 'est-ce que' (or 'est-ce qu'' before a vowel) at the start of the sentence — 'Est-ce que tu parles français?' This works in all registers. (3) Inversion: swap the subject pronoun and verb, joined by a hyphen — 'Parles-tu français?' This is formal and mostly written. When the verb ends in a vowel and the subject is il, elle, or on, add -t- between them: 'Parle-t-il français?'. For information questions, use question words (mots interrogatifs): où (where), quand (when), comment (how), combien de (how many/much), pourquoi (why), qui (who), que / qu'est-ce que (what), quel/quelle (which/what).",
+      "tip": "Est-ce que is the safest choice — it works in speaking and writing at any level. Inversion is expected in formal writing and on exams. Intonation alone is very natural in conversation but avoid it in writing.",
+      "examples": [
+        { "fr": "Tu parles français?", "en": "Do you speak French? (intonation)", "highlight": "intonation" },
+        { "fr": "Est-ce que tu parles français?", "en": "Do you speak French? (est-ce que)", "highlight": "Est-ce que" },
+        { "fr": "Parles-tu français?", "en": "Do you speak French? (inversion)", "highlight": "Parles-tu" },
+        { "fr": "Parle-t-il anglais?", "en": "Does he speak English? (inversion with -t-)", "highlight": "Parle-t-il" },
+        { "fr": "Où est-ce que tu habites?", "en": "Where do you live?", "highlight": "Où est-ce que" },
+        { "fr": "Qu'est-ce que tu fais?", "en": "What are you doing?", "highlight": "Qu'est-ce que" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a correct yes/no question using est-ce que?",
+          "options": ["Est-ce que tu manges?", "Tu manges est-ce que?", "Est-ce tu manges?"],
+          "correctIndex": 0
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which inversion form is correct for 'elle parle'?",
+          "options": ["Parle-elle?", "Parle-t-elle?", "Elle-parle?"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the question word 'où' mean?",
+          "options": ["when", "how", "where"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Combien ça coûte?' mean?",
+          "options": ["How is it made?", "How much does it cost?", "Who made it?"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ tu t'appelles? (What is your name? — using comment)",
+          "options": ["Pourquoi", "Comment", "Quand"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ est-ce que tu pars? (When are you leaving?)",
+          "options": ["Où", "Qui", "Quand"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you turn 'Il mange' into an inversion question?",
+          "options": ["Mange-il?", "Mange-t-il?", "Est-il mange?"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ est-ce que tu fais? (What are you doing?)",
+          "options": ["Qui", "Qu'", "Où"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "sectionId": "negation",
+      "title": "Making Sentences Negative",
+      "explanation": "To make a sentence negative in French, wrap the verb with 'ne' before it and 'pas' after it: 'Je parle' → 'Je ne parle pas' (I don't speak). Before a vowel or silent h, 'ne' shortens to 'n'': 'J'ai' → 'Je n'ai pas' (I don't have). In spoken French, the 'ne' is very often dropped informally: 'Je parle pas', 'Il mange pas'. Besides ne...pas, there are other negative expressions: ne...jamais (never), ne...rien (nothing), ne...plus (no longer / not anymore), ne...personne (nobody), ne...que (only). An important rule: after any negation, the articles du, de la, des, un, and une all change to 'de' (or 'd'' before a vowel). For example: 'J'ai du pain' → 'Je n'ai pas de pain'; 'Elle a une voiture' → 'Elle n'a pas de voiture'.",
+      "tip": "Remember the article change after negation — du, de la, des, un, une all become 'de'. The only exception is with the verb être: 'Ce n'est pas un problème' keeps 'un'.",
+      "examples": [
+        { "fr": "Je ne parle pas espagnol.", "en": "I don't speak Spanish.", "highlight": "ne...pas" },
+        { "fr": "Il ne mange jamais de viande.", "en": "He never eats meat.", "highlight": "ne...jamais" },
+        { "fr": "Elle ne travaille plus ici.", "en": "She no longer works here.", "highlight": "ne...plus" },
+        { "fr": "Je ne vois personne.", "en": "I don't see anyone.", "highlight": "ne...personne" },
+        { "fr": "Il ne boit que de l'eau.", "en": "He only drinks water.", "highlight": "ne...que" },
+        { "fr": "Je n'ai pas de pain.", "en": "I don't have any bread. (du → de after negation)", "highlight": "n'ai pas de" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you make 'Je mange' negative?",
+          "options": ["Je mange pas ne.", "Je ne mange pas.", "Pas je mange."],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'ne...jamais' mean?",
+          "options": ["not yet", "never", "no longer"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Je n'___ pas de voiture. (I don't have a car.)",
+          "options": ["suis", "ai", "vais"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to 'du' after negation? 'J'ai du café' → 'Je n'ai pas ___ café.'",
+          "options": ["du", "de la", "de"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She no longer lives here'?",
+          "options": ["Elle ne vit jamais ici.", "Elle ne vit plus ici.", "Elle ne vit personne ici."],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Il ne dit ___. (He says nothing.)",
+          "options": ["personne", "jamais", "rien"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct negative of 'Elle a une amie'?",
+          "options": ["Elle n'a pas une amie.", "Elle n'a pas d'amie.", "Elle a pas une amie."],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Je ne parle que français' mean?",
+          "options": ["I never speak French.", "I don't speak French at all.", "I only speak French."],
+          "correctIndex": 2
+        }
+      ]
+    }
+  ]
+}

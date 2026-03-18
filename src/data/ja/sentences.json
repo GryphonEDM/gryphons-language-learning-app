@@ -1,0 +1,184 @@
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink water.",
+      "ja": "私は水を飲みます。",
+      "words": ["私は", "水を", "飲みます"],
+      "distractors": ["食べます", "コーヒーを", "ご飯を"],
+      "validOrders": [["私は", "水を", "飲みます"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "This is a book.",
+      "ja": "これは本です。",
+      "words": ["これは", "本", "です"],
+      "distractors": ["それは", "かばん", "あれは"],
+      "validOrders": [["これは", "本", "です"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "Hello, nice to meet you.",
+      "ja": "こんにちは、はじめまして。",
+      "words": ["こんにちは", "はじめまして"],
+      "distractors": ["ありがとう", "すみません", "さようなら"],
+      "validOrders": [["こんにちは", "はじめまして"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "I am a student.",
+      "ja": "私は学生です。",
+      "words": ["私は", "学生", "です"],
+      "distractors": ["先生", "医者", "彼は"],
+      "validOrders": [["私は", "学生", "です"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "I go to school.",
+      "ja": "私は学校に行きます。",
+      "words": ["私は", "学校に", "行きます"],
+      "distractors": ["家に", "来ます", "会社に"],
+      "validOrders": [["私は", "学校に", "行きます"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "The house is big.",
+      "ja": "家は大きいです。",
+      "words": ["家は", "大きい", "です"],
+      "distractors": ["小さい", "学校は", "いい"],
+      "validOrders": [["家は", "大きい", "です"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "I like Japanese food.",
+      "ja": "私は日本の料理が好きです。",
+      "words": ["私は", "日本の", "料理が", "好きです"],
+      "distractors": ["韓国の", "嫌いです", "音楽が"],
+      "validOrders": [["私は", "日本の", "料理が", "好きです"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s8",
+      "en": "Where is the bathroom?",
+      "ja": "トイレはどこにありますか？",
+      "words": ["トイレは", "どこに", "ありますか"],
+      "distractors": ["食堂は", "いつ", "ありません"],
+      "validOrders": [["トイレは", "どこに", "ありますか"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s9",
+      "en": "I read a book every day.",
+      "ja": "私は毎日本を読みます。",
+      "words": ["私は", "毎日", "本を", "読みます"],
+      "distractors": ["時々", "新聞を", "書きます"],
+      "validOrders": [["私は", "毎日", "本を", "読みます"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s10",
+      "en": "My friend is a teacher.",
+      "ja": "私の友達は先生です。",
+      "words": ["私の", "友達は", "先生", "です"],
+      "distractors": ["彼の", "弟は", "学生"],
+      "validOrders": [["私の", "友達は", "先生", "です"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s11",
+      "en": "I want to eat sushi.",
+      "ja": "私は寿司を食べたいです。",
+      "words": ["私は", "寿司を", "食べたい", "です"],
+      "distractors": ["ラーメンを", "飲みたい", "見たい"],
+      "validOrders": [["私は", "寿司を", "食べたい", "です"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s12",
+      "en": "Today the weather is good.",
+      "ja": "今日は天気がいいです。",
+      "words": ["今日は", "天気が", "いい", "です"],
+      "distractors": ["明日は", "気分が", "悪い"],
+      "validOrders": [["今日は", "天気が", "いい", "です"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s13",
+      "en": "I studied Japanese at the library yesterday.",
+      "ja": "私は昨日図書館で日本語を勉強しました。",
+      "words": ["私は", "昨日", "図書館で", "日本語を", "勉強しました"],
+      "distractors": ["今日", "学校で", "英語を", "読みました"],
+      "validOrders": [["私は", "昨日", "図書館で", "日本語を", "勉強しました"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s14",
+      "en": "Can you speak a little slower, please?",
+      "ja": "もう少しゆっくり話してください。",
+      "words": ["もう少し", "ゆっくり", "話して", "ください"],
+      "distractors": ["もっと", "早く", "聞いて", "ましょう"],
+      "validOrders": [["もう少し", "ゆっくり", "話して", "ください"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s15",
+      "en": "Japan has four distinct seasons.",
+      "ja": "日本には四季があります。",
+      "words": ["日本には", "四季が", "あります"],
+      "distractors": ["韓国には", "天気が", "います"],
+      "validOrders": [["日本には", "四季が", "あります"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s16",
+      "en": "I have been studying Japanese for two years.",
+      "ja": "私は2年間日本語を勉強しています。",
+      "words": ["私は", "2年間", "日本語を", "勉強しています"],
+      "distractors": ["英語を", "3年間", "勉強しました", "話しています"],
+      "validOrders": [["私は", "2年間", "日本語を", "勉強しています"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s17",
+      "en": "If you go to Tokyo, you should visit Asakusa.",
+      "ja": "東京に行ったら浅草にぜひ行ってみてください。",
+      "words": ["東京に", "行ったら", "浅草に", "ぜひ", "行ってみてください"],
+      "distractors": ["大阪に", "来たら", "京都に", "一度", "来てみてください"],
+      "validOrders": [["東京に", "行ったら", "浅草に", "ぜひ", "行ってみてください"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s18",
+      "en": "The more you practice, the better your pronunciation gets.",
+      "ja": "練習すればするほど発音がよくなります。",
+      "words": ["練習すれば", "するほど", "発音が", "よくなります"],
+      "distractors": ["勉強すれば", "するたびに", "実力が", "悪くなります"],
+      "validOrders": [["練習すれば", "するほど", "発音が", "よくなります"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s19",
+      "en": "Japanese culture has become popular worldwide.",
+      "ja": "日本の文化は世界中で人気になりました。",
+      "words": ["日本の", "文化は", "世界中で", "人気に", "なりました"],
+      "distractors": ["韓国の", "音楽は", "全国で", "有名に", "なります"],
+      "validOrders": [["日本の", "文化は", "世界中で", "人気に", "なりました"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s20",
+      "en": "Although it was difficult at first, I got used to keigo.",
+      "ja": "最初は難しかったですが、敬語に慣れました。",
+      "words": ["最初は", "難しかったですが", "敬語に", "慣れました"],
+      "distractors": ["後では", "簡単でしたが", "タメ口に", "覚えました"],
+      "validOrders": [["最初は", "難しかったですが", "敬語に", "慣れました"]],
+      "difficulty": "B2"
+    }
+  ]
+}

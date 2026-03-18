@@ -1,0 +1,116 @@
+{
+  "lessonId": "causative-verbs",
+  "nameEn": "Causative Verbs",
+  "nameHi": "प्रेरणार्थक क्रियाएँ",
+  "icon": "🔗",
+  "tier": "B2",
+  "prerequisites": ["postpositions", "verb-conjugation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "first-causative",
+      "title": "First Causative (प्रथम प्रेरणार्थक)",
+      "explanation": "Hindi has a unique system where verbs can be modified to show that someone is causing another person to perform an action. The first causative indicates that the subject makes someone else do something directly. It is formed by modifying the root verb, typically by changing the vowel or adding the suffix -ाना. For example, करना (to do) becomes कराना (to make someone do), खाना (to eat) becomes खिलाना (to feed / to make someone eat), पढ़ना (to read/study) becomes पढ़ाना (to teach / to make someone study), and सोना (to sleep) becomes सुलाना (to put someone to sleep). The person who is made to perform the action is marked with the postposition से or को depending on the verb. The causative agent (the one who causes the action) is the grammatical subject of the sentence.",
+      "tip": "Many first causatives are common everyday words — खिलाना (to feed) and पढ़ाना (to teach) are used so frequently that learners often learn them before realizing they are causative forms. Think of the first causative as the 'make someone do' form.",
+      "examples": [
+        { "hi": "माँ बच्चे को खाना खिलाती है।", "en": "The mother feeds the child food. (makes the child eat)", "highlight": "खिलाती" },
+        { "hi": "शिक्षक बच्चों को हिंदी पढ़ाते हैं।", "en": "The teacher teaches the children Hindi. (makes them study)", "highlight": "पढ़ाते" },
+        { "hi": "माँ बच्चे को सुलाती है।", "en": "The mother puts the child to sleep. (makes the child sleep)", "highlight": "सुलाती" },
+        { "hi": "वह मुझसे काम कराता है।", "en": "He makes me do work.", "highlight": "कराता" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "खाना (to eat) का प्रथम प्रेरणार्थक रूप क्या है? (What is the first causative of खाना?)",
+          "options": ["खिलाना", "खिलवाना", "खाना"],
+          "correctIndex": 0,
+          "explanation": "खाना (to eat) becomes खिलाना (to feed / to make someone eat) in the first causative. The vowel change from खा- to खिला- is a common pattern in Hindi causative formation. खिलवाना would be the second causative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"शिक्षक बच्चों को हिंदी पढ़ाते हैं\" में पढ़ाना किस क्रिया का प्रेरणार्थक है? (In this sentence, पढ़ाना is the causative of which verb?)",
+          "options": ["पढ़ना (to read/study)", "पड़ना (to fall/lie)", "पहुँचना (to arrive)"],
+          "correctIndex": 0,
+          "explanation": "पढ़ाना is the first causative of पढ़ना (to read/study). When a teacher पढ़ाता है, they are making students study — hence 'to teach'. This is one of the most common causative forms in everyday Hindi."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "करना (to do) का प्रथम प्रेरणार्थक रूप कौन सा है? (What is the first causative of करना?)",
+          "options": ["कराना", "करवाना", "किलाना"],
+          "correctIndex": 0,
+          "explanation": "करना (to do) becomes कराना (to make someone do) in the first causative. The pattern here adds -ाना to the shortened root. करवाना is the second causative (to have someone make another person do)."
+        }
+      ]
+    },
+    {
+      "sectionId": "second-causative",
+      "title": "Second Causative (द्वितीय प्रेरणार्थक)",
+      "explanation": "The second causative adds another layer of indirection: the subject causes a second person to make a third person perform the action. It is formed by adding -वाना to the root or modifying the first causative form. For example, करना → कराना → करवाना (to do → to make someone do → to have someone get it done through another person), लिखना → लिखाना → लिखवाना (to write → to make someone write → to have someone get it written), बनाना → बनवाना (to make → to have something made by someone). The second causative is extremely useful in everyday Hindi for situations where you arrange for work to be done indirectly — such as hiring someone, delegating tasks, or getting services. The indirect agent is typically marked with से.",
+      "tip": "Think of the second causative as 'to have something done' or 'to get something done through someone else'. If you say मैंने घर बनवाया, you did not build the house yourself nor did you directly make someone build it — you arranged for it to be built (hired builders, etc.).",
+      "examples": [
+        { "hi": "मैंने मज़दूरों से घर बनवाया।", "en": "I had the house built by the workers.", "highlight": "बनवाया" },
+        { "hi": "उसने सेक्रेटरी से पत्र लिखवाया।", "en": "He/She had the letter written by the secretary.", "highlight": "लिखवाया" },
+        { "hi": "हमने दर्ज़ी से कपड़े सिलवाए।", "en": "We had clothes stitched by the tailor.", "highlight": "सिलवाए" },
+        { "hi": "मैंने नौकर से कमरा साफ़ करवाया।", "en": "I had the room cleaned by the servant.", "highlight": "करवाया" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "लिखना → लिखाना → ? द्वितीय प्रेरणार्थक रूप क्या होगा? (What is the second causative of लिखना?)",
+          "options": ["लिखवाना", "लिखाना", "लिखना"],
+          "correctIndex": 0,
+          "explanation": "The chain is: लिखना (to write) → लिखाना (to make someone write, first causative) → लिखवाना (to have someone get it written, second causative). The -वाना suffix is the hallmark of the second causative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"मैंने दर्ज़ी से कपड़े सिलवाए\" — इस वाक्य में कौन सिलाई कर रहा है? (Who is doing the stitching in this sentence?)",
+          "options": ["दर्ज़ी (the tailor)", "मैं (I)", "कपड़े (the clothes)"],
+          "correctIndex": 0,
+          "explanation": "In this second causative construction, the subject (मैं) arranged for the tailor (दर्ज़ी) to stitch the clothes. The postposition से marks the actual doer of the action. The subject is the one who caused the action to happen indirectly."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "बनाना (to make) का द्वितीय प्रेरणार्थक रूप क्या है? (What is the second causative of बनाना?)",
+          "options": ["बनवाना", "बनाना", "बनना"],
+          "correctIndex": 0,
+          "explanation": "बनाना (to make) is itself already a causative of बनना (to be made). Its second causative is बनवाना (to have something made). So the full chain is: बनना (to be made) → बनाना (to make) → बनवाना (to have something made by someone)."
+        }
+      ]
+    },
+    {
+      "sectionId": "causative-patterns-and-exceptions",
+      "title": "Patterns, Exceptions & Usage",
+      "explanation": "While the -आना / -वाना pattern covers many verbs, Hindi causative formation has several important patterns and exceptions. Monosyllabic roots often undergo vowel changes: खाना (eat) → खिलाना (feed), not *खाआना; देना (give) → दिलाना/दिलवाना (have given); पीना (drink) → पिलाना (make drink). Some verbs have irregular causatives: देखना (see) → दिखाना (show), सीखना (learn) → सिखाना (teach). A few verbs do not form second causatives at all, or the forms are rarely used. Intransitive verbs can become transitive through the first causative: जागना (to wake up, intransitive) → जगाना (to wake someone up, transitive). Note that the postposition usage changes: with the first causative, the agent of the original action often takes को, while with the second causative, the intermediate agent takes से. Context and common usage will guide you — many causatives are used idiomatically and should be learned as vocabulary items.",
+      "tip": "Not all causatives follow neat rules. Learn the common irregular causatives as fixed vocabulary: दिखाना (to show, from देखना), सिखाना (to teach, from सीखना), and सुनाना (to narrate/tell, from सुनना). These are used daily and must simply be memorized.",
+      "examples": [
+        { "hi": "माँ ने बच्चे को दूध पिलाया।", "en": "The mother made the child drink milk. (पीना → पिलाना)", "highlight": "पिलाया" },
+        { "hi": "उसने मुझे रास्ता दिखाया।", "en": "He/She showed me the way. (देखना → दिखाना)", "highlight": "दिखाया" },
+        { "hi": "दादी ने हमें कहानी सुनाई।", "en": "Grandmother told/narrated us a story. (सुनना → सुनाना)", "highlight": "सुनाई" },
+        { "hi": "अलार्म ने मुझे जगाया।", "en": "The alarm woke me up. (जागना → जगाना)", "highlight": "जगाया" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "देखना (to see) का प्रेरणार्थक रूप क्या है? (What is the causative of देखना?)",
+          "options": ["दिखाना (to show)", "देखाना", "देखवाना"],
+          "correctIndex": 0,
+          "explanation": "देखना (to see) has the irregular causative दिखाना (to show). This is one of the most common irregular causatives in Hindi and should be memorized. The form *देखाना does not exist in standard Hindi."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "पीना (to drink) का प्रेरणार्थक रूप क्या है? (What is the causative of पीना?)",
+          "options": ["पिलाना", "पीआना", "पीवाना"],
+          "correctIndex": 0,
+          "explanation": "पीना (to drink) becomes पिलाना (to make someone drink / to serve a drink) in the first causative. The vowel shortens from ई to इ and -लाना is added. This is a common pattern for monosyllabic verbs with long vowels."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "जागना (to wake up) अकर्मक क्रिया है। इसका प्रेरणार्थक कौन सा है? (जागना is intransitive. What is its causative?)",
+          "options": ["जगाना", "जागाना", "जागवाना"],
+          "correctIndex": 0,
+          "explanation": "जागना (to wake up, intransitive) becomes जगाना (to wake someone up, transitive/causative). The long vowel आ in जाग shortens to अ in जग, and -आना is added. This pattern of turning intransitive verbs into transitive ones through causation is very productive in Hindi."
+        }
+      ]
+    }
+  ]
+}

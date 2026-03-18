@@ -1,0 +1,122 @@
+{
+  "lessonId": "comparatives",
+  "nameEn": "Comparatives & Superlatives",
+  "nameEl": "Συγκριτικός και Υπερθετικός",
+  "icon": "📊",
+  "tier": "A2",
+  "prerequisites": ["adjectives"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "comparative-forms",
+      "title": "Comparative Forms",
+      "explanation": "Greek has two ways to form comparatives. The most common is 'πιο + adjective + από' (more...than): 'πιο μεγάλος από' (bigger than), 'πιο ακριβός από' (more expensive than). The word 'από' introduces the second element of the comparison. Some adjectives also have a synthetic comparative with the suffix -τερος/-τερη/-τερο: μεγαλύτερος (bigger), μικρότερος (smaller), ακριβότερος (more expensive). Several common adjectives have irregular comparatives: καλύτερος (better, from καλός), χειρότερος (worse, from κακός). To say 'as...as' use the construction 'τόσο...όσο': Είναι τόσο μεγάλος όσο εγώ (He is as tall as me). Both comparative strategies are correct and widely used in everyday Greek.",
+      "tip": "Use 'πιο + adjective + από' as a safe default for any adjective. The -τερος forms are more formal and only exist for common adjectives.",
+      "examples": [
+        { "el": "πιο μεγάλος από", "en": "bigger than (πιο + adjective + από)", "highlight": "πιο, από" },
+        { "el": "μεγαλύτερος", "en": "bigger (synthetic comparative, -τερος ending)", "highlight": "μεγαλύτερος" },
+        { "el": "μικρότερος", "en": "smaller (synthetic comparative)", "highlight": "μικρότερος" },
+        { "el": "καλύτερος", "en": "better (irregular comparative of καλός)", "highlight": "καλύτερος" },
+        { "el": "χειρότερος", "en": "worse (irregular comparative of κακός)", "highlight": "χειρότερος" },
+        { "el": "τόσο ψηλός όσο εσύ", "en": "as tall as you (as...as construction)", "highlight": "τόσο, όσο" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'more expensive than' using the πιο construction?",
+          "options": ["πιο ακριβός από", "ακριβότατος", "τόσο ακριβός"],
+          "correctIndex": 0,
+          "explanation": "'πιο ακριβός από' is the standard comparative construction: πιο + adjective + από. 'ακριβότατος' is a superlative and 'τόσο ακριβός' is incomplete without 'όσο'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word is the irregular comparative of 'καλός' (good)?",
+          "options": ["καλύτερος", "πιο καλός", "καλότερος"],
+          "correctIndex": 0,
+          "explanation": "'καλύτερος' is the irregular synthetic comparative of καλός. While 'πιο καλός' is also used informally, 'καλύτερος' is the standard form. 'καλότερος' does not exist."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What construction means 'as...as' in Greek?",
+          "options": ["τόσο...όσο", "πιο...από", "ο/η/το πιο"],
+          "correctIndex": 0,
+          "explanation": "'τόσο...όσο' expresses equality: 'τόσο μεγάλος όσο' (as big as). 'πιο...από' means 'more...than' and 'ο/η/το πιο' introduces a superlative."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlative-forms",
+      "title": "Superlative Forms",
+      "explanation": "Greek has two types of superlatives. The relative superlative (the most...) is formed with the definite article + πιο + adjective: 'ο πιο μεγάλος' (the biggest, masculine), 'η πιο μεγάλη' (the biggest, feminine), 'το πιο μεγάλο' (the biggest, neuter). The article must agree in gender with the noun. Alternatively, use the article + synthetic comparative: 'ο μεγαλύτερος'. The absolute superlative (very, extremely) expresses the highest degree without comparison. It is formed either with 'πολύ' + adjective: 'πολύ μεγάλος' (very big), or with the suffix -τατος/-τατη/-τατο added to the stem: 'μεγαλύτατος' (very/most big, formal/literary). The -τατος form is mostly found in formal writing; 'πολύ' is standard in speech.",
+      "tip": "For the relative superlative, match the article gender to the noun: ο πιο καλός δάσκαλος, η πιο καλή δασκάλα, το πιο καλό παιδί.",
+      "examples": [
+        { "el": "ο πιο μεγάλος", "en": "the biggest (masculine relative superlative)", "highlight": "ο πιο" },
+        { "el": "η πιο μικρή", "en": "the smallest (feminine relative superlative)", "highlight": "η πιο" },
+        { "el": "το πιο ακριβό", "en": "the most expensive (neuter relative superlative)", "highlight": "το πιο" },
+        { "el": "ο μεγαλύτερος", "en": "the biggest (article + synthetic comparative)", "highlight": "ο μεγαλύτερος" },
+        { "el": "πολύ μεγάλος", "en": "very big (absolute superlative with πολύ)", "highlight": "πολύ" },
+        { "el": "μεγαλύτατος", "en": "very/extremely big (absolute superlative, -τατος ending, formal)", "highlight": "μεγαλύτατος" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the best' referring to a masculine noun (ο δάσκαλος)?",
+          "options": ["ο πιο καλός / ο καλύτερος", "το πιο καλό", "πολύ καλός"],
+          "correctIndex": 0,
+          "explanation": "For a masculine noun use the masculine article ο: 'ο πιο καλός' or 'ο καλύτερος'. 'το πιο καλό' uses the neuter article and 'πολύ καλός' is an absolute superlative meaning 'very good', not 'the best'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'πολύ ακριβός' mean?",
+          "options": ["very expensive (absolute superlative)", "the most expensive (relative superlative)", "more expensive than"],
+          "correctIndex": 0,
+          "explanation": "'πολύ ακριβός' means very expensive — the absolute superlative using πολύ. 'The most expensive' would be 'ο πιο ακριβός' and 'more expensive than' would be 'πιο ακριβός από'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which suffix marks the formal absolute superlative in Greek?",
+          "options": ["-τατος", "-τερος", "-ότατος only for specific adjectives"],
+          "correctIndex": 0,
+          "explanation": "The suffix -τατος/-τατη/-τατο marks the formal/literary absolute superlative (e.g., μεγαλύτατος). The suffix -τερος forms the comparative, not the superlative."
+        }
+      ]
+    },
+    {
+      "sectionId": "comparison-sentences",
+      "title": "Comparison Sentences",
+      "explanation": "Let's put comparatives and superlatives to work in full sentences. When comparing two things, the structure is: Subject + verb + comparative adjective + από + second element. Note that adjectives agree in gender with the subject noun: 'Η Αθήνα είναι μεγαλύτερη από τη Θεσσαλονίκη' — μεγαλύτερη is feminine to match Αθήνα (η). After 'από', nouns appear in the accusative case: 'από τη Θεσσαλονίκη', 'από τον χειμώνα'. Key irregular comparatives to memorize: καλός → καλύτερος (good → better), κακός → χειρότερος (bad → worse), πολύς → περισσότερος (much/many → more), λίγος → λιγότερος (few/little → fewer/less). These irregular forms follow the same gender/number/case agreement rules as regular adjectives.",
+      "tip": "After 'από' in a comparison, the noun takes the accusative case. Remember: 'από τον' (masculine), 'από τη(ν)' (feminine), 'από το' (neuter).",
+      "examples": [
+        { "el": "Η Αθήνα είναι μεγαλύτερη από τη Θεσσαλονίκη.", "en": "Athens is bigger than Thessaloniki.", "highlight": "μεγαλύτερη, από" },
+        { "el": "Το καλοκαίρι είναι πιο ζεστό από τον χειμώνα.", "en": "Summer is warmer than winter.", "highlight": "πιο ζεστό, από" },
+        { "el": "Αυτό το εστιατόριο είναι καλύτερο από εκείνο.", "en": "This restaurant is better than that one.", "highlight": "καλύτερο" },
+        { "el": "Ο καφές είναι χειρότερος από τον χυμό.", "en": "The coffee is worse than the juice.", "highlight": "χειρότερος" },
+        { "el": "Θέλω περισσότερο νερό.", "en": "I want more water. (πολύς → περισσότερος)", "highlight": "περισσότερο" },
+        { "el": "Έχω λιγότερα λεφτά από σένα.", "en": "I have less money than you. (λίγος → λιγότερος)", "highlight": "λιγότερα" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: 'Η Ελλάδα είναι ___ από την Κύπρο.' (bigger)",
+          "options": ["μεγαλύτερη", "μεγαλύτερος", "πιο μεγάλο"],
+          "correctIndex": 0,
+          "explanation": "'Ελλάδα' is feminine (η), so the comparative adjective must be feminine: μεγαλύτερη. 'μεγαλύτερος' is masculine and 'πιο μεγάλο' is neuter — neither matches."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative of 'πολύς' (much/many)?",
+          "options": ["περισσότερος", "πολύτερος", "χειρότερος"],
+          "correctIndex": 0,
+          "explanation": "'πολύς' has the irregular comparative 'περισσότερος' (more). 'πολύτερος' does not exist. 'χειρότερος' is the comparative of κακός (bad → worse)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'The train is faster than the bus'?",
+          "options": ["Το τρένο είναι πιο γρήγορο από το λεωφορείο.", "Το τρένο είναι πιο γρήγορο από λεωφορείο.", "Το τρένο είναι γρηγορύτερο από λεωφορείου."],
+          "correctIndex": 0,
+          "explanation": "The correct sentence uses 'από το λεωφορείο' (accusative with the article). Dropping the article after 'από' is incorrect for a specific noun, and 'γρηγορύτερο' is not a standard form — use 'πιο γρήγορο' or 'γρηγορότερο'."
+        }
+      ]
+    }
+  ]
+}

@@ -75,9 +75,20 @@ export default function useSpeechPractice({ langCode, langName, onResult }) {
     if (!feedback || llmLoading) return;
     setLlmLoading(true);
     try {
-      const langSpecific = langCode === 'uk'
-        ? 'For Ukrainian, pay attention to: soft/hard consonants, palatalization, vowel reduction, stress patterns, and the letters ь, ї, є, щ, г (fricative "h").'
-        : 'For Russian, pay attention to: soft/hard consonants, palatalization, vowel reduction (аканье/иканье), stress patterns, and the letters ы, э, ё, щ, ж.';
+      const langSpecificMap = {
+        uk: 'For Ukrainian, pay attention to: soft/hard consonants, palatalization, vowel reduction, stress patterns, and the letters ь, ї, є, щ, г (fricative "h").',
+        ru: 'For Russian, pay attention to: soft/hard consonants, palatalization, vowel reduction (аканье/иканье), stress patterns, and the letters ы, э, ё, щ, ж.',
+        de: 'For German, pay attention to: umlauts (ä, ö, ü), the ch sound (ich-Laut vs ach-Laut), final consonant devoicing, and the r sound.',
+        es: 'For Spanish, pay attention to: rolled r (rr), the ñ sound, b/v distinction, and vowel clarity — Spanish vowels are always pure.',
+        fr: 'For French, pay attention to: nasal vowels (an, en, in, on, un), the r sound (uvular), silent final consonants, and liaison between words.',
+        el: 'For Greek, pay attention to: the γ sound (gamma, like a soft g), θ and δ (like English th in "think" and "this"), and stress marked by accent.',
+        hi: 'For Hindi, pay attention to: aspirated vs unaspirated consonants (क vs ख), retroflex sounds (ट, ड), and the inherent "a" vowel in consonants.',
+        ar: 'For Arabic, pay attention to: emphatic consonants (ص, ض, ط, ظ), the ع (ain) and ح (ha) sounds, and short vs long vowels.',
+        ko: 'For Korean, pay attention to: tense vs lax vs aspirated consonants (ㄱ vs ㄲ vs ㅋ), vowel distinctions (ㅓ vs ㅗ), and final consonant sounds (받침).',
+        zh: 'For Chinese, pay attention to: the four tones (flat, rising, dipping, falling), retroflex sounds (zh, ch, sh, r), the difference between j/q/x and z/c/s, and aspirated vs unaspirated consonants (b/p, d/t, g/k).',
+        ja: 'For Japanese, pay attention to: long vs short vowels (おばさん vs おばあさん), pitch accent patterns, the difference between つ and す, particles は (wa) and を (wo), and double consonants (きっと vs きと).',
+      };
+      const langSpecific = langSpecificMap[langCode] || `Pay attention to the specific pronunciation features of ${langName}.`;
 
       const systemPrompt = `You are a ${langName} pronunciation coach. A student spoke a ${langName} word/phrase and a speech recognition system (Whisper) transcribed what it heard.
 

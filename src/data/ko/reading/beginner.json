@@ -1,0 +1,160 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "우리 가족",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "우리 가족은 네 명이에요. 아버지, 어머니, 언니, 그리고 저예요. 아버지는 회사원이고 어머니는 선생님이에요. 언니 이름은 지은이에요. 언니는 스물두 살이고 대학생이에요. 저는 열아홉 살이에요. 우리 가족은 서울에 살아요. 우리 집에는 강아지 한 마리도 있어요. 이름은 보리예요. 저는 우리 가족을 정말 사랑해요.",
+      "wordGlossary": {
+        "가족": "family",
+        "아버지": "father",
+        "어머니": "mother",
+        "언니": "older sister (for females)",
+        "회사원": "office worker",
+        "선생님": "teacher",
+        "대학생": "university student",
+        "살아요": "live/reside",
+        "강아지": "puppy/dog",
+        "사랑해요": "love"
+      },
+      "questions": [
+        {
+          "question": "아버지의 직업은 뭐예요?",
+          "options": ["선생님이에요.", "회사원이에요.", "의사예요.", "요리사예요."],
+          "correctIndex": 1,
+          "explanation": "글에서 아버지는 회사원이라고 했어요."
+        },
+        {
+          "question": "가족은 몇 명이에요?",
+          "options": ["세 명이에요.", "네 명이에요.", "다섯 명이에요.", "두 명이에요."],
+          "correctIndex": 1,
+          "explanation": "글에서 가족은 네 명이라고 했어요."
+        },
+        {
+          "question": "강아지 이름은 뭐예요?",
+          "options": ["지은이에요.", "보리예요.", "나비예요.", "바둑이에요."],
+          "correctIndex": 1,
+          "explanation": "글에서 강아지 이름은 보리라고 했어요."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "나의 하루",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "저는 매일 아침 일곱 시에 일어나요. 먼저 세수를 하고 이를 닦아요. 아침밥은 보통 밥과 국을 먹어요. 여덟 시에 버스를 타고 학교에 가요. 학교는 세 시에 끝나요. 학교가 끝나면 집에 와서 숙제를 해요. 저녁에는 가족과 같이 밥을 먹어요. 밥을 먹고 나서 텔레비전을 조금 봐요. 열 시에 잠을 자요.",
+      "wordGlossary": {
+        "일어나요": "get up/wake up",
+        "세수": "washing one's face",
+        "이를 닦아요": "brush teeth",
+        "아침밥": "breakfast",
+        "버스": "bus",
+        "학교": "school",
+        "끝나요": "finish/end",
+        "숙제": "homework",
+        "저녁": "evening/dinner",
+        "잠을 자요": "go to sleep"
+      },
+      "questions": [
+        {
+          "question": "몇 시에 일어나요?",
+          "options": ["여섯 시에요.", "일곱 시에요.", "여덟 시에요.", "아홉 시에요."],
+          "correctIndex": 1,
+          "explanation": "글에서 일곱 시에 일어난다고 했어요."
+        },
+        {
+          "question": "학교에 어떻게 가요?",
+          "options": ["걸어서 가요.", "버스를 타고 가요.", "자전거를 타고 가요.", "지하철을 타고 가요."],
+          "correctIndex": 1,
+          "explanation": "글에서 버스를 타고 학교에 간다고 했어요."
+        },
+        {
+          "question": "학교가 끝나고 뭐 해요?",
+          "options": ["운동을 해요.", "숙제를 해요.", "친구를 만나요.", "게임을 해요."],
+          "correctIndex": 1,
+          "explanation": "글에서 학교가 끝나면 집에 와서 숙제를 한다고 했어요."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "시장에서",
+      "titleEn": "At the Market",
+      "difficulty": "A2",
+      "text": "오늘 어머니와 같이 시장에 갔어요. 시장에는 사람이 정말 많았어요. 먼저 과일 가게에서 사과와 배를 샀어요. 사과는 다섯 개에 삼천 원이었어요. 그다음에 생선 가게에서 고등어를 샀어요. 어머니는 두부와 파도 사셨어요. 시장 음식도 먹었어요. 떡볶이와 순대를 먹었는데 정말 맛있었어요. 시장은 활기차고 재미있었어요. 다음 주에도 시장에 가고 싶어요.",
+      "wordGlossary": {
+        "시장": "market",
+        "과일": "fruit",
+        "사과": "apple",
+        "배": "pear",
+        "생선": "fish",
+        "고등어": "mackerel",
+        "두부": "tofu",
+        "떡볶이": "spicy rice cakes",
+        "맛있었어요": "was delicious",
+        "활기차고": "lively/vibrant"
+      },
+      "questions": [
+        {
+          "question": "사과는 얼마였어요?",
+          "options": ["다섯 개에 이천 원이었어요.", "다섯 개에 삼천 원이었어요.", "세 개에 삼천 원이었어요.", "다섯 개에 오천 원이었어요."],
+          "correctIndex": 1,
+          "explanation": "글에서 사과는 다섯 개에 삼천 원이었다고 했어요."
+        },
+        {
+          "question": "시장에서 무슨 음식을 먹었어요?",
+          "options": ["김밥과 라면을 먹었어요.", "떡볶이와 순대를 먹었어요.", "비빔밥을 먹었어요.", "만두를 먹었어요."],
+          "correctIndex": 1,
+          "explanation": "글에서 떡볶이와 순대를 먹었다고 했어요."
+        },
+        {
+          "question": "누구와 같이 시장에 갔어요?",
+          "options": ["아버지와 갔어요.", "친구와 갔어요.", "어머니와 갔어요.", "혼자 갔어요."],
+          "correctIndex": 2,
+          "explanation": "글에서 어머니와 같이 시장에 갔다고 했어요."
+        }
+      ]
+    },
+    {
+      "passageId": "p4",
+      "title": "학교",
+      "titleEn": "School",
+      "difficulty": "A2",
+      "text": "저는 서울에 있는 고등학교에 다녀요. 우리 학교에는 학생이 약 천 명 있어요. 저는 이학년이에요. 제일 좋아하는 과목은 음악이에요. 음악 시간에 기타를 배우고 있어요. 수학은 좀 어렵지만 열심히 공부해요. 점심시간에는 학교 식당에서 급식을 먹어요. 오늘 급식은 불고기와 김치찌개였어요. 방과 후에는 축구부 활동을 해요. 축구를 할 때가 가장 즐거워요. 좋은 친구들이 많아서 학교생활이 행복해요.",
+      "wordGlossary": {
+        "고등학교": "high school",
+        "학생": "student",
+        "과목": "subject",
+        "음악": "music",
+        "기타": "guitar",
+        "수학": "math",
+        "급식": "school lunch",
+        "방과 후": "after school",
+        "축구부": "soccer club",
+        "행복해요": "happy"
+      },
+      "questions": [
+        {
+          "question": "제일 좋아하는 과목은 뭐예요?",
+          "options": ["수학이에요.", "음악이에요.", "영어예요.", "체육이에요."],
+          "correctIndex": 1,
+          "explanation": "글에서 제일 좋아하는 과목은 음악이라고 했어요."
+        },
+        {
+          "question": "오늘 급식은 뭐였어요?",
+          "options": ["비빔밥이었어요.", "불고기와 김치찌개였어요.", "라면이었어요.", "카레였어요."],
+          "correctIndex": 1,
+          "explanation": "글에서 오늘 급식은 불고기와 김치찌개였다고 했어요."
+        },
+        {
+          "question": "방과 후에 뭐 해요?",
+          "options": ["공부해요.", "축구부 활동을 해요.", "집에 가요.", "음악을 들어요."],
+          "correctIndex": 1,
+          "explanation": "글에서 방과 후에는 축구부 활동을 한다고 했어요."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameHi": "परिचय",
+  "icon": "👋",
+  "context": "You are at a Hindi language class in Delhi. Rahul, a friendly classmate, comes over to introduce himself.",
+  "characters": {
+    "npc": { "name": "राहुल" },
+    "player": { "name": "आप" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "नमस्ते! मेरा नाम राहुल है। आप यहाँ हिंदी सीखने आए हैं?",
+      "translation": "Hello! My name is Rahul. Have you come here to learn Hindi?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and introduce yourself.",
+      "acceptedResponses": [
+        "नमस्ते राहुल! हाँ, मैं हिंदी सीखने आया हूँ। मेरा नाम [name] है।",
+        "नमस्ते! जी हाँ, मैं हिंदी की क्लास में हूँ। मेरा नाम [name] है।",
+        "हाँ, नमस्ते! मैं यहाँ हिंदी सीख रहा हूँ।",
+        "नमस्ते! मैं [name] हूँ। हाँ, मैं हिंदी सीखना चाहता हूँ।"
+      ],
+      "keyWords": ["नमस्ते", "हाँ", "नाम"],
+      "hint": "Start with 'नमस्ते' and say 'मेरा नाम... है' to introduce yourself."
+    },
+    {
+      "speaker": "npc",
+      "text": "बहुत अच्छा! आप कहाँ से हैं?",
+      "translation": "Very good! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him where you are from.",
+      "acceptedResponses": [
+        "मैं अमेरिका से हूँ।",
+        "मैं इंग्लैंड से हूँ।",
+        "मैं कनाडा से हूँ।",
+        "मैं ऑस्ट्रेलिया से हूँ।"
+      ],
+      "keyWords": ["मैं", "से हूँ"],
+      "hint": "Say 'मैं... से हूँ' followed by your country."
+    },
+    {
+      "speaker": "npc",
+      "text": "अच्छा! आप दिल्ली में कब आए?",
+      "translation": "Nice! When did you come to Delhi?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him when you arrived in Delhi.",
+      "acceptedResponses": [
+        "मैं पिछले हफ़्ते आया।",
+        "मैं दो दिन पहले आया।",
+        "मैं एक महीने पहले दिल्ली आया।",
+        "मैं कल ही आया हूँ।"
+      ],
+      "keyWords": ["मैं", "आया"],
+      "hint": "Use 'मैं... पहले आया' to say when you arrived."
+    },
+    {
+      "speaker": "npc",
+      "text": "वाह! दिल्ली कैसी लगी आपको?",
+      "translation": "Wow! How do you like Delhi?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Share your impression of Delhi.",
+      "acceptedResponses": [
+        "दिल्ली बहुत अच्छी लगी। यहाँ का खाना बहुत स्वादिष्ट है।",
+        "मुझे दिल्ली बहुत पसंद है। बहुत ख़ूबसूरत शहर है।",
+        "दिल्ली बहुत बड़ा और दिलचस्प शहर है।",
+        "मुझे यहाँ बहुत अच्छा लग रहा है।"
+      ],
+      "keyWords": ["दिल्ली", "अच्छी", "पसंद"],
+      "hint": "Use 'मुझे दिल्ली बहुत पसंद है' or 'दिल्ली बहुत अच्छी लगी'."
+    },
+    {
+      "speaker": "npc",
+      "text": "सुनकर ख़ुशी हुई! आप क्या काम करते हैं?",
+      "translation": "Happy to hear that! What do you do for work?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him what you do for a living.",
+      "acceptedResponses": [
+        "मैं टीचर हूँ।",
+        "मैं स्टूडेंट हूँ। मैं पढ़ाई कर रहा हूँ।",
+        "मैं एक कंपनी में काम करता हूँ।",
+        "मैं इंजीनियर हूँ।"
+      ],
+      "keyWords": ["मैं", "हूँ"],
+      "hint": "Say 'मैं... हूँ' with your profession, or 'मैं... काम करता हूँ'."
+    },
+    {
+      "speaker": "npc",
+      "text": "बढ़िया! आप हिंदी क्यों सीखना चाहते हैं?",
+      "translation": "Great! Why do you want to learn Hindi?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Explain why you want to learn Hindi.",
+      "acceptedResponses": [
+        "मुझे हिंदी भाषा बहुत पसंद है।",
+        "मैं भारत में रहना चाहता हूँ इसलिए हिंदी सीख रहा हूँ।",
+        "मेरे भारतीय दोस्त हैं और मैं उनसे हिंदी में बात करना चाहता हूँ।",
+        "हिंदी फ़िल्में देखना पसंद है, इसलिए सीख रहा हूँ।"
+      ],
+      "keyWords": ["हिंदी", "सीख", "चाहता"],
+      "hint": "Use 'मुझे हिंदी पसंद है' or 'मैं... चाहता हूँ' to explain your reason."
+    },
+    {
+      "speaker": "npc",
+      "text": "बहुत बढ़िया! चलिए, क्लास शुरू होने वाली है। साथ चलें?",
+      "translation": "Excellent! Come, the class is about to start. Shall we go together?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept his invitation to go to class together.",
+      "acceptedResponses": [
+        "हाँ, चलिए! बहुत अच्छा होगा।",
+        "ज़रूर, चलिए साथ चलते हैं!",
+        "हाँ, क्यों नहीं? चलिए!",
+        "बिलकुल! आपसे मिलकर बहुत ख़ुशी हुई। चलिए!"
+      ],
+      "keyWords": ["हाँ", "चलिए"],
+      "hint": "Use 'हाँ, चलिए' (yes, let's go) or 'ज़रूर' (of course) to accept."
+    }
+  ]
+}

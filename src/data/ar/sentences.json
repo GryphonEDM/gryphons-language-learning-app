@@ -1,0 +1,184 @@
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink water.",
+      "ar": "أشرب الماء.",
+      "words": ["أشرب", "الماء"],
+      "distractors": ["آكل", "العصير", "الحليب"],
+      "validOrders": [["أشرب", "الماء"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "She is a teacher.",
+      "ar": "هي معلّمة.",
+      "words": ["هي", "معلّمة"],
+      "distractors": ["هو", "طبيبة", "معلّم"],
+      "validOrders": [["هي", "معلّمة"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "I have two brothers.",
+      "ar": "لديّ أخوان.",
+      "words": ["لديّ", "أخوان"],
+      "distractors": ["لديه", "أخوات", "ثلاثة"],
+      "validOrders": [["لديّ", "أخوان"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "We go to school.",
+      "ar": "نذهب إلى المدرسة.",
+      "words": ["نذهب", "إلى", "المدرسة"],
+      "distractors": ["أذهب", "من", "الجامعة"],
+      "validOrders": [["نذهب", "إلى", "المدرسة"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "He eats bread.",
+      "ar": "هو يأكل الخبز.",
+      "words": ["هو", "يأكل", "الخبز"],
+      "distractors": ["هي", "يشرب", "الجبن"],
+      "validOrders": [["هو", "يأكل", "الخبز"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "The house is big.",
+      "ar": "البيت كبير.",
+      "words": ["البيت", "كبير"],
+      "distractors": ["السيّارة", "صغير", "جميل"],
+      "validOrders": [["البيت", "كبير"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "I speak a little Arabic.",
+      "ar": "أتكلّم العربيّة قليلاً.",
+      "words": ["أتكلّم", "العربيّة", "قليلاً"],
+      "distractors": ["أفهم", "الإنجليزيّة", "كثيراً"],
+      "validOrders": [["أتكلّم", "العربيّة", "قليلاً"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s8",
+      "en": "Where is the pharmacy?",
+      "ar": "أين الصيدليّة؟",
+      "words": ["أين", "الصيدليّة"],
+      "distractors": ["متى", "المستشفى", "المدرسة"],
+      "validOrders": [["أين", "الصيدليّة"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s9",
+      "en": "I want coffee, please.",
+      "ar": "أريد قهوة من فضلك.",
+      "words": ["أريد", "قهوة", "من", "فضلك"],
+      "distractors": ["أشرب", "شاي", "في", "بيتك"],
+      "validOrders": [["أريد", "قهوة", "من", "فضلك"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s10",
+      "en": "My name is Ahmad.",
+      "ar": "اسمي أحمد.",
+      "words": ["اسمي", "أحمد"],
+      "distractors": ["اسمه", "محمّد", "خالد"],
+      "validOrders": [["اسمي", "أحمد"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s11",
+      "en": "Today the weather is nice.",
+      "ar": "اليوم الطقس جميل.",
+      "words": ["اليوم", "الطقس", "جميل"],
+      "distractors": ["غداً", "الجوّ", "بارد"],
+      "validOrders": [["اليوم", "الطقس", "جميل"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s12",
+      "en": "I like Arabic food.",
+      "ar": "أحبّ الطعام العربيّ.",
+      "words": ["أحبّ", "الطعام", "العربيّ"],
+      "distractors": ["أكره", "الشراب", "الإيطاليّ"],
+      "validOrders": [["أحبّ", "الطعام", "العربيّ"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s13",
+      "en": "Can you help me, please?",
+      "ar": "هل يمكنك مساعدتي من فضلك؟",
+      "words": ["هل", "يمكنك", "مساعدتي", "من", "فضلك"],
+      "distractors": ["لا", "يمكنني", "مساعدته", "في"],
+      "validOrders": [["هل", "يمكنك", "مساعدتي", "من", "فضلك"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s14",
+      "en": "I visited the museum yesterday.",
+      "ar": "زرت المتحف أمس.",
+      "words": ["زرت", "المتحف", "أمس"],
+      "distractors": ["رأيت", "المكتبة", "اليوم"],
+      "validOrders": [["زرت", "المتحف", "أمس"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s15",
+      "en": "The Arabic language has a rich history.",
+      "ar": "اللغة العربيّة لها تاريخ غنيّ.",
+      "words": ["اللغة", "العربيّة", "لها", "تاريخ", "غنيّ"],
+      "distractors": ["الكلمة", "الإنجليزيّة", "له", "كتاب", "طويل"],
+      "validOrders": [["اللغة", "العربيّة", "لها", "تاريخ", "غنيّ"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s16",
+      "en": "I study Arabic every day.",
+      "ar": "أدرس العربيّة كلّ يوم.",
+      "words": ["أدرس", "العربيّة", "كلّ", "يوم"],
+      "distractors": ["أقرأ", "الفرنسيّة", "بعض", "أسبوع"],
+      "validOrders": [["أدرس", "العربيّة", "كلّ", "يوم"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s17",
+      "en": "Reading books broadens the mind.",
+      "ar": "قراءة الكتب توسّع العقل.",
+      "words": ["قراءة", "الكتب", "توسّع", "العقل"],
+      "distractors": ["كتابة", "القصص", "تضيّق", "القلب"],
+      "validOrders": [["قراءة", "الكتب", "توسّع", "العقل"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s18",
+      "en": "Cultural exchange strengthens relations between peoples.",
+      "ar": "التبادل الثقافيّ يعزّز العلاقات بين الشعوب.",
+      "words": ["التبادل", "الثقافيّ", "يعزّز", "العلاقات", "بين", "الشعوب"],
+      "distractors": ["التواصل", "الاقتصاديّ", "يضعف", "الصداقات", "مع", "الدول"],
+      "validOrders": [["التبادل", "الثقافيّ", "يعزّز", "العلاقات", "بين", "الشعوب"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s19",
+      "en": "Technology has changed our daily lives greatly.",
+      "ar": "غيّرت التكنولوجيا حياتنا اليوميّة كثيراً.",
+      "words": ["غيّرت", "التكنولوجيا", "حياتنا", "اليوميّة", "كثيراً"],
+      "distractors": ["أثّرت", "العلوم", "عملنا", "الأسبوعيّة", "قليلاً"],
+      "validOrders": [["غيّرت", "التكنولوجيا", "حياتنا", "اليوميّة", "كثيراً"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s20",
+      "en": "Protecting the environment is the responsibility of every individual.",
+      "ar": "حماية البيئة مسؤوليّة كلّ فرد.",
+      "words": ["حماية", "البيئة", "مسؤوليّة", "كلّ", "فرد"],
+      "distractors": ["تلويث", "الطبيعة", "واجب", "بعض", "مجتمع"],
+      "validOrders": [["حماية", "البيئة", "مسؤوليّة", "كلّ", "فرد"]],
+      "difficulty": "B2"
+    }
+  ]
+}

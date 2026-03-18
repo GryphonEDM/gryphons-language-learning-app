@@ -1,0 +1,171 @@
+{
+  "lessonId": "complex-sentences",
+  "nameEn": "Complex Sentences",
+  "nameJa": "複文",
+  "icon": "🏗️",
+  "tier": "B2",
+  "prerequisites": ["conjunctions"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "relative-clauses",
+      "title": "Relative Clauses (Noun Modification)",
+      "explanation": "In Japanese, relative clauses come before the noun they modify, with no relative pronoun (no 'who', 'which', 'that'). Simply place a plain-form clause directly before the noun: 'きのうかったほん' (the book [that I] bought yesterday). The verb in the modifying clause is always in plain form, even in polite speech. Examples: 'にほんごをおしえているせんせい' (the teacher who teaches Japanese), 'わたしがすんでいるまち' (the town where I live). The subject inside the relative clause is marked with が (not は): 'あにがつくったケーキ' (the cake that my older brother made). These clauses can be quite long in Japanese and are a key feature of natural writing and speech.",
+      "tip": "Japanese relative clauses are the reverse of English: the description comes BEFORE the noun. No connecting word is needed — just put the plain-form sentence right before the noun it describes. Always use が (not は) for the subject inside the clause.",
+      "examples": [
+        { "ja": "ともだちがくれたプレゼントをあけました。", "en": "I opened the present that my friend gave me.", "highlight": "ともだちがくれたプレゼント" },
+        { "ja": "あそこにたっているひとはだれですか。", "en": "Who is the person standing over there?", "highlight": "たっているひと" },
+        { "ja": "きのうみたえいがはおもしろかったです。", "en": "The movie I watched yesterday was interesting.", "highlight": "きのうみたえいが" },
+        { "ja": "わたしがはたらいているかいしゃはとうきょうにあります。", "en": "The company where I work is in Tokyo.", "highlight": "はたらいているかいしゃ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the book that I bought' in Japanese?",
+          "options": [
+            "かったほん",
+            "ほんをかった",
+            "ほんがかった",
+            "かうのほん"
+          ],
+          "correctIndex": 0,
+          "explanation": "The plain-form verb comes before the noun: かった (bought) + ほん (book) = かったほん (the book I bought)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ひとはわたしのともだちです。(The person who is singing is my friend.)",
+          "acceptedAnswers": ["うたっている", "うたをうたっている"],
+          "hint": "Plain form of 'is singing' before ひと.",
+          "explanation": "うたっている (singing) modifies ひと (person): うたっているひと = 'the person who is singing'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle marks the subject inside a relative clause?",
+          "options": ["は", "が", "を", "に"],
+          "correctIndex": 1,
+          "explanation": "Inside relative clauses, the subject is marked with が, not は. は is for the main topic of the sentence."
+        }
+      ]
+    },
+    {
+      "sectionId": "nominalizers",
+      "title": "Nominalizers の and こと",
+      "explanation": "の and こと turn verbs and clauses into noun phrases (nominalization). This lets you use a verb phrase as the subject or object of a sentence. こと is used in formal or abstract contexts: 'にほんごをはなすことができます' (I can speak Japanese — lit. 'the thing of speaking Japanese is possible'). の is more colloquial and used for personal, direct experiences: 'あめがふるのがみえます' (I can see the rain falling). Some grammar patterns require one specifically: ことができる (can do), ことがある (have experienced), ことにする (decide to) always use こと. のがすき (like doing), のがじょうず (good at doing) can use either, but の is more natural in speech.",
+      "tip": "General rule: こと for abstract facts and fixed grammar patterns, の for concrete, sensory, and emotional situations. When in doubt, こと is safer in formal contexts. Both can follow plain-form verbs directly.",
+      "examples": [
+        { "ja": "にほんごをはなすことができます。", "en": "I can speak Japanese.", "highlight": "こと" },
+        { "ja": "ふじさんにのぼったことがあります。", "en": "I have climbed Mt. Fuji (before).", "highlight": "ことがあります" },
+        { "ja": "おんがくをきくのがすきです。", "en": "I like listening to music.", "highlight": "のが" },
+        { "ja": "かれがくるのをまっています。", "en": "I am waiting for him to come.", "highlight": "のを" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "にほんにいった___があります。(I have been to Japan before.)",
+          "options": ["の", "こと", "もの", "ところ"],
+          "correctIndex": 1,
+          "explanation": "ことがある (have experienced) is a fixed pattern that always uses こと."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "りょうりをつくる___がすきです。(I like cooking.)",
+          "acceptedAnswers": ["の", "こと"],
+          "hint": "Either nominalizer works with すき, but one is more natural in speech.",
+          "explanation": "Both のがすき and ことがすき are correct. の is slightly more natural in casual speech."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pattern MUST use こと (not の)?",
+          "options": [
+            "___がすきです (like doing)",
+            "___ができます (can do)",
+            "___がみえます (can see)",
+            "___がきこえます (can hear)"
+          ],
+          "correctIndex": 1,
+          "explanation": "ことができる (can do) is a fixed expression that requires こと. The others can use の."
+        }
+      ]
+    },
+    {
+      "sectionId": "you-ni-suru-naru",
+      "title": "ようにする / ようになる",
+      "explanation": "ようにする means 'to make an effort to' or 'to try to make sure that'. It implies conscious effort toward a habit or goal: 'まいにちうんどうするようにしています' (I make sure to exercise every day). ようになる means 'to come to' or 'to reach the point where' — it describes a gradual, natural change: 'にほんごがはなせるようになりました' (I came to be able to speak Japanese / I became able to speak Japanese). Both attach to the plain dictionary form of verbs. With potential verbs, ようになる is especially common: 'たべられるようになった' (I became able to eat it). ようにする emphasizes effort; ようになる emphasizes result.",
+      "tip": "ようにする = YOU make effort (active). ようになる = change HAPPENS (result). 'かんじをよむようにする' = 'I make sure to read kanji.' 'かんじがよめるようになる' = 'I become able to read kanji.'",
+      "examples": [
+        { "ja": "やさいをたべるようにしています。", "en": "I make sure to eat vegetables.", "highlight": "ようにしています" },
+        { "ja": "にほんごがよめるようになりました。", "en": "I became able to read Japanese.", "highlight": "ようになりました" },
+        { "ja": "あさはやくおきるようにしています。", "en": "I try to wake up early in the morning.", "highlight": "ようにしています" },
+        { "ja": "すこしずつにほんのせいかつになれるようになりました。", "en": "I gradually got used to life in Japan.", "highlight": "ようになりました" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "まいにちにほんごをべんきょうする___います。(I make sure to study Japanese every day.)",
+          "options": ["ようにして", "ようになって", "ことにして", "ためにして"],
+          "correctIndex": 0,
+          "explanation": "ようにしています = 'I make an effort to / I make sure to'. It implies conscious, ongoing effort."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "さかながたべられる___なりました。(I became able to eat fish.)",
+          "acceptedAnswers": ["ように"],
+          "hint": "Potential form + ___ + なる = 'came to be able to'.",
+          "explanation": "ようになる describes a gradual change. たべられるようになりました = 'I became able to eat.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence describes a natural change rather than conscious effort?",
+          "options": [
+            "はやくねるようにしています。",
+            "かんじがかけるようになりました。",
+            "あさごはんをたべるようにしています。",
+            "おさけをのまないようにしています。"
+          ],
+          "correctIndex": 1,
+          "explanation": "ようになりました (became able to) describes a natural, gradual change. The others use ようにしている (making effort)."
+        }
+      ]
+    },
+    {
+      "sectionId": "tame-ni-you-ni-purpose",
+      "title": "ために / ように (Purpose)",
+      "explanation": "Both ために and ように express purpose ('in order to'), but they differ in usage. ために is used with volitional verbs (actions you consciously do) and nouns: 'にほんにいくためにおかねをためています' (I'm saving money in order to go to Japan). ように is used with potential verbs, negative verbs, or non-volitional verbs — situations where the result is not directly controlled: 'にほんごがはなせるようにまいにちれんしゅうしています' (I practice every day so that I can speak Japanese). With nouns, ために uses の: 'けんこうのためにうんどうする' (exercise for health). Key distinction: ために = direct, intentional action toward a goal. ように = working toward a state or ability you can't directly control.",
+      "tip": "If the purpose verb is something you DO intentionally → ために. If the purpose verb is a state, ability, or negative → ように. 'Test' it: can you command the purpose? 'Go to Japan!' (yes → ために). 'Be able to speak!' (no → ように).",
+      "examples": [
+        { "ja": "しけんにごうかくするためにべんきょうします。", "en": "I study in order to pass the exam.", "highlight": "ために" },
+        { "ja": "にほんごがじょうずになるようにれんしゅうしています。", "en": "I practice so that I become good at Japanese.", "highlight": "ように" },
+        { "ja": "かぞくのためにはたらいています。", "en": "I work for the sake of my family.", "highlight": "ために" },
+        { "ja": "わすれないようにメモをとりました。", "en": "I took notes so that I wouldn't forget.", "highlight": "ように" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "にほんにいく___おかねをためています。(I'm saving money in order to go to Japan.)",
+          "options": ["ように", "ために", "ことに", "のに"],
+          "correctIndex": 1,
+          "explanation": "いく (go) is a volitional verb — a direct, intentional action. Use ために for conscious, deliberate goals."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "かんじがよめる___まいにちれんしゅうします。(I practice every day so that I can read kanji.)",
+          "acceptedAnswers": ["ように"],
+          "hint": "よめる is a potential verb (can read) — a state you can't directly command.",
+          "explanation": "Potential verbs use ように: かんじがよめるように = 'so that I can read kanji'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses ように with a negative verb?",
+          "options": [
+            "おくれるためにはやくでます。",
+            "おくれないようにはやくでます。",
+            "おくれないためにはやくでます。",
+            "おくれるようにはやくでます。"
+          ],
+          "correctIndex": 1,
+          "explanation": "おくれないように = 'so that I won't be late'. Negative verbs use ように because the purpose is a state (not being late), not a direct action."
+        }
+      ]
+    }
+  ]
+}

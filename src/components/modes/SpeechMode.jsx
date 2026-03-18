@@ -90,7 +90,7 @@ const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 // --- Component ---
 
 export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   // Phase
   const [phase, setPhase] = useState('picker'); // picker, playing, complete

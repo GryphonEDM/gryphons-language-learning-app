@@ -1,0 +1,113 @@
+{
+  "lessonId": "honorifics",
+  "nameEn": "Honorifics & Speech Levels",
+  "nameKo": "높임말과 존댓말",
+  "icon": "🎩",
+  "tier": "A2",
+  "prerequisites": ["basic-verbs", "particles-subject-object"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "speech-levels",
+      "title": "존댓말 vs 반말: Formal and Casual Speech",
+      "explanation": "Korean has multiple speech levels that indicate the relationship between the speaker and the listener. The two most important to learn first are 존댓말 (polite/formal speech) and 반말 (casual/informal speech). 존댓말 is used with strangers, elders, superiors, and in professional settings — essentially anyone you are not close with or who is older/higher in status. 반말 is used with close friends of the same age, younger people, and children. The polite -아/어요 form you have learned is standard 존댓말: 먹어요, 가요, 해요. The 반말 equivalent drops 요: 먹어, 가, 해. There is also the formal polite level (합쇼체) using -ㅂ/습니다: 먹습니다, 갑니다, 합니다 — used in news, business, military, and very formal situations. Using the wrong speech level is a significant social error in Korean. When in doubt, always use 존댓말.",
+      "tip": "Default to 존댓말 (-아/어요) with everyone you meet. Only switch to 반말 when someone explicitly says it is okay or when speaking with clearly younger children. In Korean culture, it is much better to be overly polite than accidentally casual.",
+      "examples": [
+        { "ko": "감사합니다. (formal) / 고마워. (casual)", "en": "Thank you. — 합니다 is formal polite; 고마워 is 반말", "highlight": "합니다" },
+        { "ko": "어디에 가요? (polite) / 어디 가? (casual)", "en": "Where are you going?", "highlight": "가요" },
+        { "ko": "밥 먹었어요? (polite) / 밥 먹었어? (casual)", "en": "Did you eat? (a common Korean greeting)", "highlight": "먹었어요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "When should you use 존댓말?",
+          "options": ["With strangers, elders, and in professional settings", "Only with your boss", "Only when speaking to elderly people"],
+          "correctIndex": 0,
+          "explanation": "존댓말 is used in all situations where you do not have a close, equal relationship: strangers, elders, teachers, coworkers, service interactions, and anyone older than you. It is the safe default."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the 반말 form of 좋아요 (it is good)?",
+          "options": ["좋아", "좋아요", "좋습니다"],
+          "correctIndex": 0,
+          "explanation": "반말 is formed by dropping 요 from the polite form: 좋아요 → 좋아. This is the casual form used with close friends of the same age."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the most formal form of 'I eat'?",
+          "options": ["먹습니다", "먹어요", "먹어"],
+          "correctIndex": 0,
+          "explanation": "먹습니다 is the formal polite level (합쇼체), used in news broadcasts, business, and very formal situations. 먹어요 is standard polite (해요체). 먹어 is casual (반말)."
+        }
+      ]
+    },
+    {
+      "sectionId": "honorific-seyo",
+      "title": "Polite Requests & Descriptions: -(으)세요",
+      "explanation": "The ending -(으)세요 is used in two ways: to make polite requests (like 'please do...') and to describe the actions of someone you respect. For requests: add -세요 after a vowel stem and -으세요 after a consonant stem. 가다 → 가세요 (please go), 앉다 → 앉으세요 (please sit), 읽다 → 읽으세요 (please read), 하다 → 하세요 (please do). ㄹ stems drop ㄹ before -세요: 만들다 → 만드세요 (please make), 살다 → 사세요 (please live/buy — context-dependent). For describing respected persons: 할머니가 주무세요 (Grandmother is sleeping — using the honorific verb 주무시다 instead of 자다). Common polite phrases: 안녕하세요 (hello — literally 'please be at peace'), 어서 오세요 (welcome — literally 'please come quickly').",
+      "tip": "-(으)세요 is incredibly common. You hear it everywhere: 안녕하세요 (hello), 어서 오세요 (welcome), 잠깐만요 — 기다리세요 (wait a moment, please wait). Use it for polite requests and when talking about elders' actions.",
+      "examples": [
+        { "ko": "여기 앉으세요.", "en": "Please sit here.", "highlight": "앉으세요" },
+        { "ko": "안녕하세요.", "en": "Hello. (lit. Please be at peace.)", "highlight": "하세요" },
+        { "ko": "어머니가 요리하세요.", "en": "My mother cooks. (respectful description)", "highlight": "하세요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you politely say 'Please wait' using 기다리다?",
+          "options": ["기다리세요", "기다리으세요", "기다려세요"],
+          "correctIndex": 0,
+          "explanation": "기다리다 → stem 기다리 (ends in vowel) → add -세요: 기다리세요 (please wait). After vowel stems, just add -세요 directly."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the polite request form of 먹다 (to eat)?",
+          "options": ["드세요 (honorific for eat)", "먹으세요", "먹세요"],
+          "correctIndex": 0,
+          "explanation": "While 먹으세요 is grammatically possible, the standard honorific for 'please eat' uses the special honorific verb 드시다 → 드세요. Korean has several honorific verb replacements: 먹다→드시다, 자다→주무시다, 있다→계시다."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 안녕하세요 literally mean?",
+          "options": ["Please be at peace/well.", "Good morning.", "How are you?"],
+          "correctIndex": 0,
+          "explanation": "안녕하세요 comes from 안녕 (peace/well-being) + 하세요 (please be/do). It literally asks 'Please be at peace' and is used as a universal greeting at any time of day."
+        }
+      ]
+    },
+    {
+      "sectionId": "honorific-infix",
+      "title": "The Honorific Infix: -시-",
+      "explanation": "The honorific infix -시- (or -으시- after consonants) is inserted into verb forms to show respect for the subject of the sentence — the person performing the action. It is used when the subject is someone you respect (elders, teachers, customers). Formation: stem + 시 + ending. 가다 → 가시다 → 가세요 (polite present) / 가셨어요 (polite past) / 가실 거예요 (polite future). 읽다 → 읽으시다 → 읽으세요 / 읽으셨어요 / 읽으실 거예요. Important: NEVER use -시- for yourself — it is only for the person you are showing respect to. Saying 제가 가시다 is like calling yourself 'Your Majesty.' Korean also has special honorific vocabulary that replaces common words entirely: 먹다/마시다 → 드시다, 자다 → 주무시다, 있다 → 계시다, 말하다 → 말씀하시다, 이름 → 성함, 나이 → 연세, 집 → 댁.",
+      "tip": "Never use -시- about yourself. Use it for elders, teachers, and anyone you respect. Key honorific verbs to memorize: 드시다 (eat/drink), 주무시다 (sleep), 계시다 (exist/be), 말씀하시다 (speak).",
+      "examples": [
+        { "ko": "선생님이 오셨어요.", "en": "The teacher has arrived. (-시- + past = -셨-)", "highlight": "오셨어요" },
+        { "ko": "할아버지가 주무세요.", "en": "Grandfather is sleeping. (주무시다 = honorific of 자다)", "highlight": "주무세요" },
+        { "ko": "어머니가 뭐라고 말씀하셨어요?", "en": "What did your mother say? (말씀하시다 = honorific of 말하다)", "highlight": "말씀하셨어요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'My grandmother ate' respectfully?",
+          "options": ["할머니가 드셨어요.", "할머니가 먹었어요.", "할머니가 먹으셨어요."],
+          "correctIndex": 0,
+          "explanation": "For elders, use the honorific verb 드시다 instead of 먹다. Past tense: 드시다 → 드셨어요. While 먹으셨어요 uses the -시- infix, 드셨어요 is more natural and respectful."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence incorrectly uses -시-?",
+          "options": ["제가 가셨어요. (I went — using honorific for oneself)", "선생님이 오셨어요. (The teacher came.)", "아버지가 읽으셨어요. (Father read it.)"],
+          "correctIndex": 0,
+          "explanation": "You must NEVER use -시- for yourself. 제가 가셨어요 is incorrect — it should be 제가 갔어요. The honorific -시- is only for the person you are respecting, not for the speaker."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the honorific replacement for 있다 (to be/exist)?",
+          "options": ["계시다", "있으시다", "이시다"],
+          "correctIndex": 0,
+          "explanation": "계시다 is the honorific form of 있다. When talking about respected persons, use 계시다: 어머니가 집에 계세요 (Mother is at home). While 있으시다 is sometimes heard, 계시다 is the proper honorific form."
+        }
+      ]
+    }
+  ]
+}

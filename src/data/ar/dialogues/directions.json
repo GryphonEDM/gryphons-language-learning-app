@@ -1,0 +1,132 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameAr": "السؤال عن الاتجاهات",
+  "icon": "🧭",
+  "context": "You are lost in the old souk in Marrakech and need to find your way back to the hotel. You approach a friendly vendor for help.",
+  "characters": {
+    "npc": { "name": "بائع" },
+    "player": { "name": "أنت" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "مرحباً يا صديقي! هل تحتاج مساعدة؟ تبدو تائهاً.",
+      "translation": "Hello my friend! Do you need help? You look lost."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him you are lost and need to find your hotel.",
+      "acceptedResponses": [
+        "نعم، أنا تائه. هل يمكنك أن تدلّني على الطريق إلى الفندق؟",
+        "مرحباً! نعم، ضعتُ في السوق. أبحث عن فندق النخيل.",
+        "من فضلك، أنا تائه. كيف أصل إلى فندقي؟",
+        "أهلاً! نعم، لا أعرف الطريق. أريد أن أرجع إلى الفندق."
+      ],
+      "keyWords": ["تائه", "فندق"],
+      "hint": "Say 'أنا تائه' (I'm lost) and mention 'الفندق' (the hotel)."
+    },
+    {
+      "speaker": "npc",
+      "text": "لا تقلق! ما اسم فندقك؟ وهل تعرف في أيّ شارع؟",
+      "translation": "Don't worry! What is the name of your hotel? Do you know which street it's on?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him the hotel name and that it's near the main square.",
+      "acceptedResponses": [
+        "اسم الفندق هو فندق النخيل. أظنّ أنّه قريب من الساحة الرئيسية.",
+        "فندق النخيل. هو بالقرب من الساحة الكبيرة.",
+        "فندقي اسمه النخيل وهو قريب من ساحة المدينة.",
+        "اسمه فندق النخيل. أعتقد أنّه بجانب الساحة الرئيسية."
+      ],
+      "keyWords": ["فندق", "الساحة"],
+      "hint": "Say the hotel name and mention 'الساحة الرئيسية' (the main square)."
+    },
+    {
+      "speaker": "npc",
+      "text": "آه، أعرفه! اُمشِ مباشرة في هذا الشارع حتّى تصل إلى المسجد الكبير.",
+      "translation": "Ah, I know it! Walk straight down this street until you reach the big mosque."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm the direction and ask what to do after the mosque.",
+      "acceptedResponses": [
+        "أمشي مباشرة حتّى المسجد. وبعد ذلك، ماذا أفعل؟",
+        "حسناً، مباشرة حتّى المسجد الكبير. ثمّ إلى أين؟",
+        "فهمتُ، أمشي مباشرة. وماذا بعد المسجد؟",
+        "إلى المسجد الكبير. وبعده، أذهب إلى أين؟"
+      ],
+      "keyWords": ["المسجد", "بعد"],
+      "hint": "Confirm 'مباشرة حتّى المسجد' and ask 'وبعد ذلك' (and after that)."
+    },
+    {
+      "speaker": "npc",
+      "text": "عند المسجد، اِنعطف يميناً. ثمّ امشِ حوالي مئة متر.",
+      "translation": "At the mosque, turn right. Then walk about a hundred meters."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Repeat the directions to confirm and ask if you will see any landmarks.",
+      "acceptedResponses": [
+        "يميناً عند المسجد ثمّ مئة متر. هل سأرى شيئاً مميّزاً؟",
+        "أنعطف يميناً ثمّ أمشي مئة متر. هل هناك علامة أستدلّ بها؟",
+        "حسناً، يميناً ثمّ مئة متر. هل سأمرّ بمكان معروف؟",
+        "فهمتُ، يميناً عند المسجد. هل توجد علامة واضحة؟"
+      ],
+      "keyWords": ["يميناً", "مئة متر"],
+      "hint": "Repeat 'يميناً' (right) and 'مئة متر', then ask about landmarks."
+    },
+    {
+      "speaker": "npc",
+      "text": "نعم! سترى صيدلية كبيرة على يسارك. الفندق مقابل الصيدلية تماماً.",
+      "translation": "Yes! You will see a big pharmacy on your left. The hotel is right across from the pharmacy."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm you understand and ask how long the walk will take.",
+      "acceptedResponses": [
+        "فهمتُ، الفندق مقابل الصيدلية. كم دقيقة يستغرق المشي؟",
+        "ممتاز! كم تستغرق المسافة مشياً على الأقدام؟",
+        "شكراً! هل المسافة بعيدة من هنا؟",
+        "واضح. كم من الوقت سأحتاج للوصول؟"
+      ],
+      "keyWords": ["فهمتُ", "كم"],
+      "hint": "Say 'فهمتُ' (I understand) and ask 'كم دقيقة' (how many minutes)."
+    },
+    {
+      "speaker": "npc",
+      "text": "حوالي عشر دقائق مشياً. الطريق سهل إن شاء الله.",
+      "translation": "About ten minutes on foot. The way is easy, God willing."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him warmly for his help.",
+      "acceptedResponses": [
+        "شكراً جزيلاً لك! ساعدتني كثيراً.",
+        "ألف شكر يا صديقي! أنت لطيف جدّاً.",
+        "شكراً لك على المساعدة! جزاك الله خيراً.",
+        "أشكرك كثيراً! مع السلامة!"
+      ],
+      "keyWords": ["شكراً", "ساعدتني"],
+      "hint": "Use 'شكراً جزيلاً' (thank you very much) or 'ألف شكر' (a thousand thanks)."
+    },
+    {
+      "speaker": "npc",
+      "text": "عفواً! إذا ضعتَ مرّة أخرى، اسأل أيّ شخص عن المسجد الكبير. الجميع يعرفه. مع السلامة!",
+      "translation": "You're welcome! If you get lost again, ask anyone about the big mosque. Everyone knows it. Goodbye!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say goodbye and wish him well.",
+      "acceptedResponses": [
+        "مع السلامة! يوم سعيد!",
+        "شكراً مرّة أخرى! مع السلامة!",
+        "الله يعطيك العافية! مع السلامة!",
+        "إلى اللقاء! شكراً يا صديقي!"
+      ],
+      "keyWords": ["مع السلامة"],
+      "hint": "Say 'مع السلامة' (goodbye) and optionally wish him well."
+    }
+  ]
+}

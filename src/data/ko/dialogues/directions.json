@@ -1,0 +1,110 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameKo": "길 찾기",
+  "icon": "🗺️",
+  "context": "You are in Myeongdong, Seoul, and you need to find your way. You stop a passerby to ask for directions.",
+  "characters": {
+    "npc": { "name": "행인" },
+    "player": { "name": "당신" }
+  },
+  "exchanges": [
+    {
+      "speaker": "player",
+      "prompt": "Politely get the passerby's attention and ask for help.",
+      "acceptedResponses": [
+        "저기요, 죄송한데 길 좀 물어봐도 될까요?",
+        "실례합니다, 길 좀 알려 주실 수 있어요?",
+        "저기요, 잠깐만요. 길을 잃었어요.",
+        "죄송합니다, 길 좀 여쭤봐도 될까요?"
+      ],
+      "keyWords": ["저기요", "길"],
+      "hint": "Use '저기요' (excuse me) or '실례합니다' to get attention, then mention '길' (road/way)."
+    },
+    {
+      "speaker": "npc",
+      "text": "네, 물론이죠! 어디 가시려고요?",
+      "translation": "Yes, of course! Where are you trying to go?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the passerby where you want to go.",
+      "acceptedResponses": [
+        "명동 성당에 가고 싶은데요.",
+        "명동역이 어디예요?",
+        "남산타워에 어떻게 가요?",
+        "명동 지하상가에 가려고 하는데요."
+      ],
+      "keyWords": ["가고", "어디", "어떻게"],
+      "hint": "Use '~에 가고 싶은데요' (I want to go to) or '어떻게 가요?' (how do I get there?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "아, 명동역이요? 여기서 쭉 직진하세요. 큰 사거리가 나올 거예요.",
+      "translation": "Ah, Myeongdong Station? Go straight from here. You'll come to a big intersection."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm the direction and ask what to do at the intersection.",
+      "acceptedResponses": [
+        "직진하면 되는 거죠? 사거리에서 어떻게 해요?",
+        "쭉 직진이요? 사거리에서 어디로 가야 해요?",
+        "네, 알겠어요. 사거리에서 어느 쪽으로 가요?",
+        "직진해서 사거리까지요? 그다음에요?"
+      ],
+      "keyWords": ["직진", "사거리"],
+      "hint": "Confirm '직진' (go straight) and ask about the '사거리' (intersection)."
+    },
+    {
+      "speaker": "npc",
+      "text": "사거리에서 오른쪽으로 돌아가세요. 그러면 왼쪽에 지하철 입구가 보일 거예요.",
+      "translation": "Turn right at the intersection. Then you'll see the subway entrance on the left."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask approximately how far it is or how long it takes.",
+      "acceptedResponses": [
+        "여기서 얼마나 걸려요?",
+        "걸어서 몇 분이나 걸려요?",
+        "여기서 멀어요?",
+        "가까워요, 아니면 멀어요?"
+      ],
+      "keyWords": ["얼마나", "걸려요", "멀어요"],
+      "hint": "Use '얼마나 걸려요?' (how long does it take?) or '멀어요?' (is it far?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "걸어서 한 5분 정도 걸릴 거예요. 가까워요!",
+      "translation": "It will take about 5 minutes on foot. It's close!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if there's a landmark to look for.",
+      "acceptedResponses": [
+        "근처에 뭐가 있어요? 찾기 쉬워요?",
+        "어떤 건물 옆에 있어요?",
+        "지하철 입구 근처에 뭐가 있어요?",
+        "혹시 표지판이 있어요?"
+      ],
+      "keyWords": ["근처", "있어요"],
+      "hint": "Ask '근처에 뭐가 있어요?' (what's nearby?) to find a landmark."
+    },
+    {
+      "speaker": "npc",
+      "text": "큰 화장품 가게 옆에 있어요. 못 찾으시면 아무한테나 물어보세요!",
+      "translation": "It's next to a big cosmetics store. If you can't find it, just ask anyone!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank the passerby for their help.",
+      "acceptedResponses": [
+        "정말 감사합니다! 도움이 많이 됐어요.",
+        "감사합니다! 잘 찾아갈게요.",
+        "고마워요! 좋은 하루 되세요.",
+        "너무 친절하시네요. 감사합니다!"
+      ],
+      "keyWords": ["감사합니다"],
+      "hint": "Use '감사합니다' (thank you) or '고마워요' to express gratitude."
+    }
+  ]
+}

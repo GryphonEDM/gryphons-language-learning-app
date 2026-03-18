@@ -1,0 +1,163 @@
+{
+  "lessonId": "alphabet-pronunciation",
+  "nameEn": "Alphabet & Pronunciation",
+  "nameEs": "El alfabeto y la pronunciación",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "the-spanish-alphabet",
+      "title": "The Spanish Alphabet",
+      "explanation": "The Spanish alphabet has 27 letters — the same 26 as English, plus the unique letter Ñ (eñe). Spanish is a phonetic language, meaning words are almost always pronounced exactly as they are written. The five vowels (A, E, I, O, U) always have the same clear, short sound regardless of their position in a word: A as in 'father', E as in 'bed', I as in 'machine', O as in 'note', U as in 'flute'. The letter H is always silent in Spanish — 'hola' is pronounced 'ola'. The letters LL together make a 'y' sound (like English 'yes'), so 'llamar' sounds like 'yamar'. The letter Ñ makes an 'ny' sound (like 'canyon'), so 'España' sounds like 'es-PAN-ya'. The letter V is pronounced identically to B in Spanish.",
+      "tip": "Spanish vowels never change their sound — A, E, I, O, U are always the same. Once you learn them, you can pronounce almost any Spanish word correctly. H is always silent!",
+      "examples": [
+        { "es": "hola", "en": "hello (H is silent — sounds like 'ola')", "highlight": "h" },
+        { "es": "llamar", "en": "to call (LL = 'y' sound — sounds like 'yamar')", "highlight": "ll" },
+        { "es": "España", "en": "Spain (Ñ = 'ny' sound — sounds like 'es-PAN-ya')", "highlight": "ñ" },
+        { "es": "año", "en": "year (Ñ = 'ny' sound — sounds like 'an-yo')", "highlight": "ñ" },
+        { "es": "casa", "en": "house (vowels A always sound the same: 'kah-sah')", "highlight": "a" },
+        { "es": "lluvia", "en": "rain (LL = 'y' sound — sounds like 'yoo-vya')", "highlight": "ll" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the letter H pronounced in Spanish?",
+          "options": ["It is always silent", "Like English 'h' in 'hello'", "Like English 'j'"],
+          "correctIndex": 0,
+          "explanation": "H is always silent in Spanish. 'Hola' is pronounced 'ola', 'hablar' sounds like 'ablar', 'hombre' sounds like 'ombre'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you pronounce the letters LL in Spanish (e.g., in 'llamar')?",
+          "options": ["Like English 'y' in 'yes'", "Like English 'l' in 'lamp'", "Like English 'll' in 'llama'"],
+          "correctIndex": 0,
+          "explanation": "LL in Spanish makes a 'y' sound. 'Llamar' (to call) sounds like 'yamar', 'lluvia' (rain) sounds like 'yoo-vya'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The letter Ñ in 'España' (Spain) makes what sound?",
+          "options": ["'ny' as in 'canyon'", "'n' as in 'no'", "'ng' as in 'ring'"],
+          "correctIndex": 0,
+          "explanation": "Ñ makes an 'ny' sound. España sounds like 'es-PAN-ya', año (year) sounds like 'an-yo', mañana (tomorrow/morning) sounds like 'man-YA-na'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The word 'hola' (hello) is pronounced '___la' because the H is always silent.",
+          "acceptedAnswers": ["o", "O"],
+          "hint": "Remove the H and what vowel is left at the start?",
+          "explanation": "'Hola' is pronounced 'ola' — the H is completely silent, so the word starts with the 'o' sound."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many letters are in the Spanish alphabet?",
+          "options": ["27", "26", "28"],
+          "correctIndex": 0,
+          "explanation": "The Spanish alphabet has 27 letters — the same 26 as English plus the unique letter Ñ (eñe)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In Spanish, the vowel E always sounds like:",
+          "options": ["The 'e' in 'bed'", "The 'ee' in 'feet'", "The 'a' in 'cake'"],
+          "correctIndex": 0,
+          "explanation": "Spanish E is always a short, clear sound like the 'e' in 'bed' or 'set'. It never sounds like the English 'ee' sound or a long 'a'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The word 'año' (year) contains the letter ___, which makes an 'ny' sound.",
+          "acceptedAnswers": ["ñ", "Ñ"],
+          "hint": "It's the uniquely Spanish letter — like 'n' with a tilde (~) on top.",
+          "explanation": "The letter Ñ (eñe) makes an 'ny' sound, like the 'ny' in 'canyon'. 'Año' sounds like 'an-yo'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which statement about Spanish vowels is correct?",
+          "options": [
+            "Each vowel always has the same sound, regardless of position",
+            "Vowels change sound depending on nearby consonants",
+            "The vowel U is always silent"
+          ],
+          "correctIndex": 0,
+          "explanation": "Spanish vowels are consistent — A, E, I, O, U always keep the same sound. This is unlike English where vowels can change (e.g., 'a' in 'cake' vs 'cat'). Note: U is silent after Q and G in certain combinations, which is covered in the next section."
+        }
+      ]
+    },
+    {
+      "sectionId": "special-pronunciation-rules",
+      "title": "Special Pronunciation Rules",
+      "explanation": "Several Spanish letters and letter combinations follow consistent rules that differ from English. RR (double R) is a strongly trilled 'r' sound — your tongue vibrates rapidly against the roof of your mouth. A single R at the start of a word is also trilled. QU before E or I makes a hard 'k' sound (the U is silent): 'que' sounds like 'ke', 'quiero' sounds like 'kye-ro'. The letter C has two sounds: before E or I it sounds like an English 'S' (in Latin America) — 'ciudad' sounds like 'syoo-dad'; before A, O, or U it sounds like a hard 'K' — 'casa' sounds like 'kasa'. The letter G is hard (like English 'g' in 'go') before A, O, and U — 'gato' sounds like 'gato' — but soft (like English 'h') before E or I — 'gente' sounds like 'hen-te'. Accent marks (á, é, í, ó, ú) indicate which syllable receives stress, overriding the default stress rules.",
+      "tip": "Think of it this way: C and G are 'soft' before E and I, 'hard' everywhere else. QU always drops the U sound. And accent marks tell you exactly where to stress — follow them!",
+      "examples": [
+        { "es": "perro / pero", "en": "dog (trilled RR) / but (single R) — the RR vs R distinction changes meaning", "highlight": "rr" },
+        { "es": "que / quiero", "en": "that/what / I want — QU before E/I = 'k' sound, U is silent", "highlight": "qu" },
+        { "es": "ciudad / casa", "en": "city (C before I = soft 's') / house (C before A = hard 'k')", "highlight": "c" },
+        { "es": "gente / gato", "en": "people (G before E = soft 'h') / cat (G before A = hard 'g')", "highlight": "g" },
+        { "es": "café / cafe", "en": "coffee (accent on E = stress: ca-FÉ) — accent marks mark stress", "highlight": "é" },
+        { "es": "mamá / mama", "en": "mom (accent on final A = ma-MÁ) vs. a different emphasis without accent", "highlight": "á" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is 'que' (that/what) pronounced in Spanish?",
+          "options": ["Like 'ke' — the U is silent", "Like 'kwe' — pronounce the U", "Like 'che'"],
+          "correctIndex": 0,
+          "explanation": "QU before E or I makes a hard 'k' sound and the U is silent. 'Que' = 'ke', 'quiero' = 'kyero', 'queso' (cheese) = 'keso'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the C in 'ciudad' (city) pronounced? (C comes before I)",
+          "options": ["Like an 'S' sound (in Latin America)", "Like a hard 'K' sound", "Like 'ch' in 'church'"],
+          "correctIndex": 0,
+          "explanation": "C before E or I is soft — it sounds like 'S' in Latin America (and like 'th' in Castilian Spanish). 'Ciudad' sounds like 'syoo-dad' in Latin American Spanish."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the C in 'casa' (house) pronounced? (C comes before A)",
+          "options": ["Like a hard 'K' sound", "Like an 'S' sound", "Like 'ch' in 'church'"],
+          "correctIndex": 0,
+          "explanation": "C before A, O, or U is hard — it sounds like 'K'. 'Casa' = 'kasa', 'como' = 'komo', 'cuándo' = 'kwando'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "In the word 'perro' (dog), the double R (RR) is pronounced as a ___ sound.",
+          "acceptedAnswers": ["trilled", "rolled", "trill", "roll"],
+          "hint": "Your tongue vibrates rapidly against the roof of your mouth.",
+          "explanation": "RR is a strongly trilled or rolled R — the tongue taps rapidly against the alveolar ridge. This is different from a single R, and the difference can change word meaning: 'perro' (dog) vs 'pero' (but)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the G in 'gente' (people) pronounced? (G comes before E)",
+          "options": ["Like English 'h' in 'hot'", "Like English 'g' in 'go'", "Like English 'j' in 'jump'"],
+          "correctIndex": 0,
+          "explanation": "G before E or I is soft — it sounds like English 'h'. 'Gente' sounds like 'hen-te', 'girar' (to spin) sounds like 'hi-rar'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What do accent marks (like á, é, í) indicate in Spanish?",
+          "options": ["Which syllable receives stress", "That the vowel is long", "That the vowel is silent"],
+          "correctIndex": 0,
+          "explanation": "Accent marks indicate stress — they tell you which syllable to emphasize. 'Café' (ca-FÉ), 'mamá' (ma-MÁ), 'fácil' (FÁ-cil). Without an accent mark, stress follows default rules (usually the second-to-last syllable)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "In 'quiero' (I want), the QU combination sounds like ___ and the U is silent.",
+          "acceptedAnswers": ["k", "K", "ke", "ki"],
+          "hint": "Think of the word 'key' — what letter makes that hard sound?",
+          "explanation": "QU before E or I always makes a hard 'k' sound, and the U is not pronounced. 'Quiero' sounds like 'kyero'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The words 'perro' (dog) and 'pero' (but) differ only in their R sound. What causes the difference in meaning?",
+          "options": [
+            "Double R (RR) is trilled strongly; single R is a soft tap",
+            "They are actually pronounced the same way",
+            "The double R is silent"
+          ],
+          "correctIndex": 0,
+          "explanation": "RR vs R is a meaningful distinction in Spanish. RR requires a strong trill (tongue vibrating rapidly), while a single R between vowels is a soft single tap. 'Perro' (dog) vs 'pero' (but) — same spelling except for the R, completely different words."
+        }
+      ]
+    }
+  ]
+}

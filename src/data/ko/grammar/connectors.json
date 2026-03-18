@@ -1,0 +1,113 @@
+{
+  "lessonId": "connectors",
+  "nameEn": "Sentence Connectors",
+  "nameKo": "연결 어미",
+  "icon": "🔗",
+  "tier": "A2",
+  "prerequisites": ["basic-verbs", "past-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "connector-go",
+      "title": "Listing Actions: -고",
+      "explanation": "The connector -고 is used to list actions or states in sequence, similar to 'and' in English. Attach -고 directly to the verb stem (no vowel harmony needed): 먹다 → 먹고, 가다 → 가고, 하다 → 하고. It connects two clauses: 밥을 먹고 커피를 마셨어요 (I ate rice and drank coffee). -고 can indicate sequential actions (and then) or simply list parallel facts: 한국어는 재미있고 유용해요 (Korean is interesting and useful). The tense is marked only on the final verb — the -고 clause stays in its stem form: 아침에 운동하고 샤워했어요 (I exercised in the morning and then showered — past tense only on 샤워했어요). You can chain multiple -고 clauses: 일어나고, 세수하고, 아침을 먹었어요 (I woke up, washed my face, and ate breakfast).",
+      "tip": "-고 is the simplest connector: just add it to the stem. No vowel harmony, no irregulars. Tense goes only on the last verb. Use it freely to list or sequence actions.",
+      "examples": [
+        { "ko": "밥을 먹고 학교에 갔어요.", "en": "I ate and went to school.", "highlight": "먹고" },
+        { "ko": "이 영화는 재미있고 감동적이에요.", "en": "This movie is fun and moving.", "highlight": "재미있고" },
+        { "ko": "샤워하고 옷을 입었어요.", "en": "I showered and got dressed.", "highlight": "샤워하고" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Connect these actions with -고: 'I read a book and watched TV.'",
+          "options": ["책을 읽고 TV를 봤어요.", "책을 읽었고 TV를 봤어요.", "책을 읽어 TV를 봤어요."],
+          "correctIndex": 0,
+          "explanation": "Attach -고 to the stem 읽: 읽고. The past tense goes only on the final verb 봤어요. The first clause stays as the stem + 고."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the tense marker go in a -고 sentence?",
+          "options": ["Only on the final verb", "On both verbs", "On the first verb only"],
+          "correctIndex": 0,
+          "explanation": "In -고 constructions, tense is marked only on the final (last) verb. The -고 clause uses just the stem form: 먹고 갔어요 (ate and went), not 먹었고 갔어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses -고 to describe parallel states?",
+          "options": ["서울은 크고 바빠요.", "서울은 크어 바빠요.", "서울은 큰고 바빠요."],
+          "correctIndex": 0,
+          "explanation": "크다 → stem 크 + 고 = 크고. 서울은 크고 바빠요 means 'Seoul is big and busy.' -고 connects two descriptive verbs in parallel."
+        }
+      ]
+    },
+    {
+      "sectionId": "connector-myeon",
+      "title": "Conditions: -(으)면",
+      "explanation": "The connector -(으)면 expresses 'if' or 'when' (for habitual or hypothetical situations). Add -면 after a vowel-ending stem and -으면 after a consonant-ending stem: 가다 → 가면 (if/when you go), 먹다 → 먹으면 (if/when you eat), 있다 → 있으면 (if there is). For ㄹ-ending stems, drop ㄹ and add -면: 만들다 → 만들면 (if you make), 살다 → 살면 (if you live). Examples: 시간이 있으면 만나요 (If you have time, let's meet), 비가 오면 집에 있을 거예요 (If it rains, I will stay home). -(으)면 is also used for general truths and habitual conditions: 봄이 오면 꽃이 펴요 (When spring comes, flowers bloom). It does not take tense markers — the tense is shown on the main clause verb.",
+      "tip": "Vowel stem → -면 (가면). Consonant stem → -으면 (먹으면). ㄹ stem → just -면 (살면, 만들면). No tense on the -(으)면 clause — the main clause carries all the tense.",
+      "examples": [
+        { "ko": "배고프면 먹어요.", "en": "If you are hungry, eat.", "highlight": "배고프면" },
+        { "ko": "시간이 있으면 영화를 볼 거예요.", "en": "If I have time, I will watch a movie.", "highlight": "있으면" },
+        { "ko": "한국에 가면 김치를 먹어 보세요.", "en": "If you go to Korea, try eating kimchi.", "highlight": "가면" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'if it is cheap' using 싸다 (to be cheap)?",
+          "options": ["싸면", "싸으면", "쌀면"],
+          "correctIndex": 0,
+          "explanation": "싸다 → stem 싸 (ends in vowel) → add -면: 싸면 (if it is cheap). Use -면 directly after vowel-ending stems."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 날씨가 좋___  공원에 갈 거예요. (If the weather is nice, I will go to the park.)",
+          "options": ["으면", "면", "고"],
+          "correctIndex": 0,
+          "explanation": "좋다 → stem 좋 (ends in consonant ㅎ) → add -으면: 좋으면. 날씨가 좋으면 공원에 갈 거예요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which connector means 'if/when'?",
+          "options": ["-(으)면", "-고", "-지만"],
+          "correctIndex": 0,
+          "explanation": "-(으)면 expresses conditions: 'if' or 'when.' -고 means 'and' (listing), and -지만 means 'but' (contrast)."
+        }
+      ]
+    },
+    {
+      "sectionId": "contrast-reason",
+      "title": "Contrast & Reason: -지만, -아/어서",
+      "explanation": "Two more essential connectors round out basic Korean sentence linking. -지만 means 'but' or 'however' and attaches directly to the stem with no vowel harmony: 좋다 → 좋지만 (but it is good), 비싸다 → 비싸지만 (but it is expensive). Example: 한국어는 어렵지만 재미있어요 (Korean is difficult but interesting). The connector -아/어서 expresses reason ('because/so') or sequential cause-and-effect. It follows the same vowel harmony as -아/어요: 늦다 → 늦어서 (because I was late), 배고프다 → 배고파서 (because I am hungry), 좋다 → 좋아서 (because it is good). Example: 비가 와서 집에 있었어요 (Because it rained, I stayed home). Important: -아/어서 does NOT take tense in the first clause — the tense goes only on the final verb. Also, -아/어서 cannot be used with imperative or propositive endings for giving reasons (use -(으)니까 instead for commands).",
+      "tip": "-지만 = 'but' (no changes needed, just add to stem). -아/어서 = 'because/so' (follows vowel harmony). Neither takes tense — only the final verb shows tense.",
+      "examples": [
+        { "ko": "비싸지만 맛있어요.", "en": "It is expensive but delicious.", "highlight": "비싸지만" },
+        { "ko": "피곤해서 일찍 잤어요.", "en": "Because I was tired, I went to bed early.", "highlight": "피곤해서" },
+        { "ko": "시간이 없어서 못 갔어요.", "en": "Because I had no time, I could not go.", "highlight": "없어서" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is small but pretty' using 작다 and 예쁘다?",
+          "options": ["작지만 예뻐요.", "작은데 예뻐요.", "작어서 예뻐요."],
+          "correctIndex": 0,
+          "explanation": "작다 → stem 작 + 지만 = 작지만 (but it is small). 작지만 예뻐요 = It is small but pretty. -지만 always attaches directly to the stem."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 배가 고파___ 밥을 먹었어요. (Because I was hungry, I ate.)",
+          "options": ["서", "지만", "고"],
+          "correctIndex": 0,
+          "explanation": "배가 고프다 → 고파 (vowel harmony) + 서 = 고파서 (because I was hungry). -아/어서 expresses the reason or cause."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Can you use tense markers in the -아/어서 clause?",
+          "options": ["No — tense goes only on the final verb", "Yes — both clauses need tense", "Only past tense is allowed"],
+          "correctIndex": 0,
+          "explanation": "The -아/어서 clause does not carry tense. 피곤해서 잤어요 (Because I was tired, I slept) — the past tense is only on 잤어요, not on 피곤해서. This is a key rule."
+        }
+      ]
+    }
+  ]
+}

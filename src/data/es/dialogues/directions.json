@@ -1,0 +1,144 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameEs": "Pedir direcciones",
+  "icon": "🗺️",
+  "context": "You are lost in Madrid and ask a local (Ana) for directions to the Prado Museum.",
+  "characters": {
+    "npc": { "name": "Ana" },
+    "player": { "name": "Usted" }
+  },
+  "exchanges": [
+    {
+      "speaker": "player",
+      "prompt": "Excuse a passerby and ask if she can help you",
+      "acceptedResponses": [
+        "Perdón, ¿me puede ayudar?",
+        "Disculpe, ¿me puede ayudar?",
+        "Perdona, ¿puedes ayudarme?",
+        "Disculpe, necesito ayuda"
+      ],
+      "keyWords": ["Perdón", "ayudar"],
+      "hint": "Perdón, ¿me puede ayudar?"
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Claro que sí! ¿Qué necesita?",
+      "translation": "Of course! What do you need?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you are lost and ask where the Prado Museum is",
+      "acceptedResponses": [
+        "Estoy perdido. ¿Dónde está el Museo del Prado?",
+        "Estoy perdida. ¿Dónde está el Museo del Prado?",
+        "¿Dónde está el Museo del Prado? Estoy perdido.",
+        "Busco el Museo del Prado. ¿Dónde está?"
+      ],
+      "keyWords": ["Prado", "dónde"],
+      "hint": "Estoy perdido. ¿Dónde está el Museo del Prado?"
+    },
+    {
+      "speaker": "npc",
+      "text": "El Museo del Prado está bastante cerca. Siga todo recto por esta calle.",
+      "translation": "The Prado Museum is quite close. Continue straight ahead along this street."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Apologise and ask her to repeat more slowly",
+      "acceptedResponses": [
+        "Perdone, ¿puede repetir más despacio?",
+        "Lo siento, ¿puede hablar más despacio?",
+        "Disculpe, ¿puede repetir más lento?",
+        "¿Puede repetir más despacio, por favor?"
+      ],
+      "keyWords": ["repetir", "despacio"],
+      "hint": "Perdone, ¿puede repetir más despacio?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Claro. Siga... todo recto... por esta calle. Luego doble a la derecha en el semáforo.",
+      "translation": "Of course. Continue... straight ahead... along this street. Then turn right at the traffic lights."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm: straight ahead and then turn right at the traffic lights",
+      "acceptedResponses": [
+        "Todo recto y luego doblo a la derecha en el semáforo",
+        "Recto y a la derecha en el semáforo",
+        "Todo recto y después a la derecha, ¿sí?",
+        "Derecho y luego a la derecha en el semáforo"
+      ],
+      "keyWords": ["recto", "derecha", "semáforo"],
+      "hint": "Todo recto y luego doblo a la derecha en el semáforo."
+    },
+    {
+      "speaker": "npc",
+      "text": "Exacto. Después de doblar, cruce la plaza y verá el museo en la esquina.",
+      "translation": "Exactly. After turning, cross the square and you will see the museum on the corner."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how many meters away the museum is from here",
+      "acceptedResponses": [
+        "¿A cuántos metros está?",
+        "¿Cuántos metros hay desde aquí?",
+        "¿A cuántos metros queda el museo?",
+        "¿Cuántos metros son desde aquí?"
+      ],
+      "keyWords": ["metros"],
+      "hint": "¿A cuántos metros está?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Está a unos trescientos metros. A pie son unos cinco minutos.",
+      "translation": "It is about three hundred meters away. On foot it is about five minutes."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you understand: cross the square and it is on the corner",
+      "acceptedResponses": [
+        "Entendido. Cruzo la plaza y está en la esquina.",
+        "Comprendo. Cruzo la plaza y el museo está en la esquina.",
+        "Ah, bien. Cruzar la plaza y está en la esquina.",
+        "Vale, cruzo la plaza y está en la esquina"
+      ],
+      "keyWords": ["cruzo", "esquina"],
+      "hint": "Entendido. Cruzo la plaza y está en la esquina."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Eso es! No tiene pérdida. ¡Que disfrute la visita!",
+      "translation": "That is it! You cannot miss it. Enjoy your visit!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank her very much and say goodbye",
+      "acceptedResponses": [
+        "Muchas gracias. ¡Hasta luego!",
+        "Muchísimas gracias. ¡Adiós!",
+        "Muchas gracias por su ayuda. ¡Adiós!",
+        "Gracias, muy amable. ¡Hasta luego!"
+      ],
+      "keyWords": ["gracias", "luego"],
+      "hint": "Muchas gracias. ¡Hasta luego!"
+    },
+    {
+      "speaker": "npc",
+      "text": "¡De nada! ¡Buen provecho!",
+      "translation": "You are welcome! Enjoy!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "You found the museum — say you found it and that the directions were perfect",
+      "acceptedResponses": [
+        "¡Lo encontré! Las indicaciones fueron perfectas.",
+        "¡Aquí está! Las indicaciones eran perfectas.",
+        "¡Lo encontré! Sus indicaciones fueron perfectas.",
+        "¡Lo encontré! Gracias por las indicaciones."
+      ],
+      "keyWords": ["encontré", "perfectas"],
+      "hint": "¡Lo encontré! Las indicaciones fueron perfectas."
+    }
+  ]
+}

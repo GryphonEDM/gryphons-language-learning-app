@@ -1,0 +1,115 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Mi familia",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "Me llamo Ana. Tengo veinte años. Mi familia es pequeña. Tengo un hermano y una hermana. Mi hermano se llama Carlos. Él tiene dieciocho años. Mi hermana se llama Sofía. Ella tiene catorce años. Mi madre se llama Elena y mi padre se llama Jorge. Ellos tienen cuarenta y cinco años. Vivimos juntos en una casa grande. Me gustan mucho mi familia.",
+      "wordGlossary": {
+        "me llamo": "my name is",
+        "tengo": "I have / I am (years old)",
+        "pequeña": "small",
+        "hermano": "brother",
+        "hermana": "sister",
+        "madre": "mother",
+        "padre": "father",
+        "vivimos": "we live"
+      },
+      "questions": [
+        {
+          "question": "How many siblings does Ana have?",
+          "options": ["None", "One", "Two", "Three"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Tengo un hermano y una hermana' — Ana has one brother and one sister, so two siblings in total."
+        },
+        {
+          "question": "How old is Ana's brother Carlos?",
+          "options": ["Fourteen", "Sixteen", "Eighteen", "Twenty"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Él tiene dieciocho años' — he is eighteen years old."
+        },
+        {
+          "question": "Where does Ana's family live?",
+          "options": ["In an apartment", "In a small house", "In a big house", "In a city"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Vivimos juntos en una casa grande' — they live together in a big house."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Mi día",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "Me despierto a las siete de la mañana. Primero, desayuno con mi familia. Como pan con mantequilla y bebo un café. A las ocho, voy al trabajo en autobús. Trabajo de nueve a cinco. A mediodía, como con mis compañeros en un restaurante. Por la tarde, vuelvo a casa a las seis. Ceno a las ocho y leo un libro antes de dormir. Me acuesto a las once de la noche.",
+      "wordGlossary": {
+        "me despierto": "I wake up",
+        "desayuno": "I have breakfast",
+        "bebo": "I drink",
+        "voy": "I go",
+        "a mediodía": "at noon / at midday",
+        "vuelvo": "I return / I come back",
+        "ceno": "I have dinner",
+        "me acuesto": "I go to bed"
+      },
+      "questions": [
+        {
+          "question": "What does the narrator eat for breakfast?",
+          "options": ["Eggs and juice", "Bread with butter and coffee", "Cereal and milk", "Fruit and tea"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Como pan con mantequilla y bebo un café' — bread with butter and a coffee."
+        },
+        {
+          "question": "How does the narrator get to work?",
+          "options": ["By car", "On foot", "By bus", "By bicycle"],
+          "correctIndex": 2,
+          "explanation": "The text says 'voy al trabajo en autobús' — they go to work by bus."
+        },
+        {
+          "question": "What time does the narrator go to bed?",
+          "options": ["Nine o'clock", "Ten o'clock", "Eleven o'clock", "Midnight"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Me acuesto a las once de la noche' — they go to bed at eleven at night."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Mi ciudad",
+      "titleEn": "My City",
+      "difficulty": "A2",
+      "text": "Vivo en Valencia, una ciudad bonita en el este de España. Hay muchos parques y jardines en mi ciudad. También hay museos, tiendas y restaurantes muy buenos. El centro histórico es antiguo y muy interesante. Hay una catedral famosa y muchas calles pequeñas con casas de colores. El mercado central es enorme y venden frutas, verduras y muchos productos frescos. En verano hace mucho calor, pero en primavera el tiempo es perfecto. Me gusta vivir aquí porque hay mucho que hacer y la gente es muy amable.",
+      "wordGlossary": {
+        "hay": "there is / there are",
+        "jardines": "gardens",
+        "museos": "museums",
+        "antiguo": "old / ancient",
+        "calles": "streets",
+        "mercado": "market",
+        "enorme": "enormous / huge",
+        "amable": "friendly / kind"
+      },
+      "questions": [
+        {
+          "question": "Where is Valencia located in Spain?",
+          "options": ["In the north", "In the south", "In the west", "In the east"],
+          "correctIndex": 3,
+          "explanation": "The text says 'una ciudad bonita en el este de España' — a beautiful city in the east of Spain."
+        },
+        {
+          "question": "What can you find at the central market?",
+          "options": ["Clothes and shoes", "Books and electronics", "Fruits, vegetables and fresh produce", "Souvenirs and crafts"],
+          "correctIndex": 2,
+          "explanation": "The text says 'venden frutas, verduras y muchos productos frescos' — they sell fruits, vegetables and many fresh products."
+        },
+        {
+          "question": "Why does the narrator like living there?",
+          "options": ["Because the weather is always perfect", "Because it is cheap", "Because there is a lot to do and people are friendly", "Because it is near the beach"],
+          "correctIndex": 2,
+          "explanation": "The text says 'porque hay mucho que hacer y la gente es muy amable' — because there is a lot to do and the people are very friendly."
+        }
+      ]
+    }
+  ]
+}

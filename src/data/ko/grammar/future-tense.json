@@ -1,0 +1,113 @@
+{
+  "lessonId": "future-tense",
+  "nameEn": "Future Tense",
+  "nameKo": "미래 시제",
+  "icon": "⏩",
+  "tier": "A2",
+  "prerequisites": ["basic-verbs", "past-tense"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "future-plan",
+      "title": "Plans & Intentions: -(으)ㄹ 거예요",
+      "explanation": "The most common way to express future plans and intentions in Korean is -(으)ㄹ 거예요. This roughly translates to 'I am going to...' or 'I will...' when talking about personal plans. Formation: if the verb stem ends in a vowel, add -ㄹ 거예요; if it ends in a consonant, add -을 거예요. If the stem ends in ㄹ, it already has the ㄹ so just add 거예요. Examples: 가다 → 갈 거예요 (will go), 먹다 → 먹을 거예요 (will eat), 만들다 → 만들 거예요 (will make), 하다 → 할 거예요 (will do). This form can also express a guess or expectation about a future situation: 내일 비가 올 거예요 (It will probably rain tomorrow). It is the most versatile and frequently used future form in everyday Korean.",
+      "tip": "Vowel stem → -ㄹ 거예요 (가 → 갈 거예요). Consonant stem → -을 거예요 (먹 → 먹을 거예요). ㄹ stem → just add 거예요 (만들 → 만들 거예요). Think of 거 as short for 것 (thing) — literally 'it is a thing I will do.'",
+      "examples": [
+        { "ko": "내일 학교에 갈 거예요.", "en": "I will go to school tomorrow.", "highlight": "갈 거예요" },
+        { "ko": "저녁에 뭐 먹을 거예요?", "en": "What will you eat for dinner?", "highlight": "먹을 거예요" },
+        { "ko": "주말에 영화를 볼 거예요.", "en": "I am going to watch a movie on the weekend.", "highlight": "볼 거예요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I will study' using 공부하다?",
+          "options": ["공부할 거예요", "공부할거예요", "공부하을 거예요"],
+          "correctIndex": 0,
+          "explanation": "공부하다 → stem 하 (ends in vowel) → add -ㄹ 거예요: 공부할 거예요. Note the space between 할 and 거예요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 읽다 (to read) to the future tense.",
+          "options": ["읽을 거예요", "읽ㄹ 거예요", "읽겠어요"],
+          "correctIndex": 0,
+          "explanation": "읽다 → stem 읽 (ends in consonant) → add -을 거예요: 읽을 거예요 (will read)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 비가 올 거예요 mean?",
+          "options": ["It will (probably) rain.", "It is raining.", "It rained."],
+          "correctIndex": 0,
+          "explanation": "-(으)ㄹ 거예요 can express both personal plans and predictions/expectations. 비가 올 거예요 means 'It will probably rain' — a prediction about the future."
+        }
+      ]
+    },
+    {
+      "sectionId": "conjecture-volition",
+      "title": "Conjecture & Strong Will: -겠-",
+      "explanation": "The suffix -겠- has two main uses: expressing the speaker's strong will or determination, and making conjectures or guesses. For will/determination (first person): 제가 하겠습니다 (I will do it — with determination), 열심히 공부하겠어요 (I will study hard — a firm commitment). For conjecture (about others or situations): 맛있겠다! (That must be delicious!), 힘들겠어요 (That must be tough), 내일 춥겠어요 (It will probably be cold tomorrow). The formality marker -겠- is often heard in formal settings: 알겠습니다 (I understand — literally 'I will know'), 모르겠어요 (I don't know / I'm not sure — literally 'I won't know'). The difference from -(으)ㄹ 거예요: -겠- implies stronger personal resolve or a subjective guess, while -(으)ㄹ 거예요 is for general plans and more objective predictions.",
+      "tip": "-겠- is easy to form: just insert 겠 between the stem and the ending. 가다 → 가겠어요, 먹다 → 먹겠어요. No vowel harmony rules — 겠 is the same for all verbs. Remember: first person = determination, second/third person = conjecture.",
+      "examples": [
+        { "ko": "제가 하겠습니다.", "en": "I will do it. (strong determination, formal)", "highlight": "하겠습니다" },
+        { "ko": "맛있겠다!", "en": "That must be delicious! (conjecture)", "highlight": "맛있겠다" },
+        { "ko": "알겠습니다.", "en": "I understand. (lit. I will know — very common formal phrase)", "highlight": "알겠습니다" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 피곤하겠어요 mean?",
+          "options": ["You must be tired. (conjecture about someone)", "I will be tired. (my plan)", "I was tired."],
+          "correctIndex": 0,
+          "explanation": "When -겠- is used about someone else, it expresses conjecture or empathy: 피곤하겠어요 means 'You must be tired' or 'That must be tiring.' It is not about the speaker's intention."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does -겠- differ from -(으)ㄹ 거예요?",
+          "options": ["-겠- expresses stronger will or subjective guesses; -(으)ㄹ 거예요 is for general plans", "They are identical in meaning", "-겠- is only for past events"],
+          "correctIndex": 0,
+          "explanation": "-겠- conveys personal determination or subjective conjecture, while -(으)ㄹ 거예요 is the neutral, everyday future for plans and predictions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 모르겠어요 mean in everyday speech?",
+          "options": ["I don't know / I'm not sure", "I will not know in the future", "You probably don't know"],
+          "correctIndex": 0,
+          "explanation": "모르겠어요 literally means 'I won't/can't know,' but in practice it is the standard way to say 'I don't know' or 'I'm not sure.' It is softer and more polite than 몰라요."
+        }
+      ]
+    },
+    {
+      "sectionId": "future-negation",
+      "title": "Negating the Future",
+      "explanation": "Negating future tense works with the same two patterns. With 안: place 안 before the verb in its future form. 안 갈 거예요 (will not go), 안 먹을 거예요 (will not eat). For 하다 verbs: 공부 안 할 거예요 (will not study). With -지 않다: attach -지 않다 to the stem, then conjugate 않다 to the future: 가지 않을 거예요 (will not go), 먹지 않을 거예요 (will not eat). For -겠-: 안 가겠어요 or 가지 않겠어요. There is also a special negative future form -(으)ㄹ 리가 없다 for expressing disbelief: 그럴 리가 없어요 (There is no way that is true). In casual conversation, 안 + future is the most common pattern.",
+      "tip": "Negation with the future works exactly like present and past: 안 before the verb, or -지 않다 on the stem. The future ending goes on the main verb (or on 않다 in the long form).",
+      "examples": [
+        { "ko": "내일 안 갈 거예요.", "en": "I will not go tomorrow.", "highlight": "안 갈" },
+        { "ko": "운동 안 할 거예요.", "en": "I will not exercise.", "highlight": "안 할" },
+        { "ko": "먹지 않을 거예요.", "en": "I will not eat. (-지 않다 form)", "highlight": "않을 거예요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I will not buy it' using 안 and 사다 (to buy)?",
+          "options": ["안 살 거예요", "사 안 을 거예요", "살 안 거예요"],
+          "correctIndex": 0,
+          "explanation": "Place 안 before the future form: 안 살 거예요. 사다 → stem 사 → future modifier 살 → 안 살 거예요 (will not buy)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Negate 할 거예요 (will do) using the -지 않다 form.",
+          "options": ["하지 않을 거예요", "하지 않겠어요", "안 하지 거예요"],
+          "correctIndex": 0,
+          "explanation": "Stem 하 + 지 않다, then conjugate 않다 to future: 하지 않을 거예요 (will not do). The future marker goes on 않다, not on 하다."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct negation of 공부하다 using 안 in the future?",
+          "options": ["공부 안 할 거예요", "안 공부할 거예요", "공부안할 거예요"],
+          "correctIndex": 0,
+          "explanation": "For 하다 verbs, 안 goes between the noun and 할 거예요: 공부 안 할 거예요, just like in present and past tense."
+        }
+      ]
+    }
+  ]
+}

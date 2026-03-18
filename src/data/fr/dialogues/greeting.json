@@ -1,0 +1,132 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameFr": "Rencontrer quelqu'un",
+  "icon": "👋",
+  "context": "You are at a language exchange event in Paris. Sophie, a friendly Parisian, comes over to introduce herself.",
+  "characters": {
+    "npc": { "name": "Sophie" },
+    "player": { "name": "Vous" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Bonjour ! Je m'appelle Sophie. Vous êtes ici pour l'échange linguistique ?",
+      "translation": "Hello! My name is Sophie. Are you here for the language exchange?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet her and confirm you are here for the language exchange.",
+      "acceptedResponses": [
+        "Oui, bonjour ! Je m'appelle [name]. Je suis ici pour l'échange linguistique.",
+        "Bonjour ! Oui, c'est ça. Je suis [name].",
+        "Oui, exactement. Bonjour, je m'appelle [name].",
+        "Bonjour Sophie ! Oui, je suis là pour l'échange. Je m'appelle [name]."
+      ],
+      "keyWords": ["bonjour", "oui"],
+      "hint": "Start with 'Bonjour' and confirm with 'oui'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Enchanté de vous rencontrer ! D'où venez-vous ?",
+      "translation": "Lovely to meet you! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell her where you are from.",
+      "acceptedResponses": [
+        "Je viens des États-Unis.",
+        "Je viens d'Angleterre.",
+        "Je viens du Canada.",
+        "Je suis américain. Je viens de New York."
+      ],
+      "keyWords": ["viens", "je"],
+      "hint": "Use 'Je viens de...' to say where you are from."
+    },
+    {
+      "speaker": "npc",
+      "text": "Oh, comme c'est intéressant ! Et vous habitez à Paris maintenant, ou vous êtes en visite ?",
+      "translation": "Oh, how interesting! And do you live in Paris now, or are you visiting?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you are visiting Paris for two weeks.",
+      "acceptedResponses": [
+        "Je suis en visite pour deux semaines.",
+        "Je visite Paris pendant deux semaines.",
+        "Je suis ici en touriste pour deux semaines.",
+        "Non, je suis en vacances ici pour deux semaines."
+      ],
+      "keyWords": ["visite", "semaines"],
+      "hint": "Say 'Je suis en visite' and mention 'deux semaines'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Deux semaines, c'est bien ! Pourquoi est-ce que vous apprenez le français ?",
+      "translation": "Two weeks, that's nice! Why are you learning French?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you love French culture and want to travel in France.",
+      "acceptedResponses": [
+        "J'adore la culture française et je veux voyager en France.",
+        "Parce que j'aime la culture française et je voudrais voyager.",
+        "J'aime beaucoup la France et je veux pouvoir voyager ici.",
+        "Parce que la culture française me passionne et j'adore voyager."
+      ],
+      "keyWords": ["culture", "voyager"],
+      "hint": "Use 'j'adore' or 'j'aime' and mention 'voyager'."
+    },
+    {
+      "speaker": "npc",
+      "text": "C'est une très bonne raison ! Depuis combien de temps vous étudiez le français ?",
+      "translation": "That's a very good reason! How long have you been studying French?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell her you have been studying French for one year.",
+      "acceptedResponses": [
+        "J'étudie le français depuis un an.",
+        "Depuis un an environ.",
+        "Ça fait un an que j'apprends le français.",
+        "J'apprends le français depuis un an maintenant."
+      ],
+      "keyWords": ["depuis", "an"],
+      "hint": "Use 'depuis' to express how long. 'Un an' means one year."
+    },
+    {
+      "speaker": "npc",
+      "text": "Un an seulement ? Votre français est déjà très bien ! Vous prenez des cours ?",
+      "translation": "Only one year? Your French is already very good! Are you taking classes?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you take online classes and also practice with an app.",
+      "acceptedResponses": [
+        "Oui, je prends des cours en ligne et je m'entraîne avec une application.",
+        "J'ai des cours en ligne et j'utilise aussi une application pour pratiquer.",
+        "Oui, des cours sur internet et une appli pour m'exercer.",
+        "Je fais des cours en ligne et je pratique avec une application chaque jour."
+      ],
+      "keyWords": ["cours", "application"],
+      "hint": "Mention 'cours en ligne' and 'application'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Excellent ! Moi, j'apprends l'anglais depuis deux ans. On peut s'aider mutuellement ce soir !",
+      "translation": "Excellent! I've been learning English for two years. We can help each other tonight!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Agree enthusiastically and say it is a great idea.",
+      "acceptedResponses": [
+        "Oui, c'est une excellente idée ! Je suis très content de pratiquer avec vous.",
+        "Bien sûr ! C'est une super idée. Ça me fait très plaisir.",
+        "Absolument ! Quelle bonne idée. Je suis ravi de pratiquer ensemble.",
+        "Oui, avec plaisir ! C'est exactement pourquoi je suis venu ce soir."
+      ],
+      "keyWords": ["idée", "oui"],
+      "hint": "Say 'oui' and call it 'une bonne idée' or 'une excellente idée'."
+    }
+  ]
+}

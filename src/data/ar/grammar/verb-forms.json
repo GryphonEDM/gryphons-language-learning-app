@@ -1,0 +1,116 @@
+{
+  "lessonId": "verb-forms",
+  "nameEn": "Arabic Verb Forms (Awzaan)",
+  "nameAr": "أوزان الفعل العربي",
+  "icon": "⚙️",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "form-i-basic",
+      "title": "Form I — فَعَلَ (The Base Form)",
+      "explanation": "Form I (فَعَلَ) is the simplest and most common verb form in Arabic. It consists of three root consonants with vowels placed between them. The past tense pattern is فَعَلَ (fa'ala), the present tense is يَفْعَلُ (yaf'alu), and the verbal noun (masdar) varies. Most basic actions in Arabic use Form I. The three root letters carry the core meaning, and the vowel patterns on those letters determine tense, voice, and other grammatical information. For example, the root ك-ت-ب (k-t-b) relates to writing: كَتَبَ (kataba) means 'he wrote', يَكْتُبُ (yaktubu) means 'he writes'. Understanding the root-and-pattern system is the key to unlocking Arabic morphology.",
+      "tip": "Think of Arabic roots like skeletons and verb forms like different outfits. The same three-letter root can appear in many forms, each adding a shade of meaning. Start by memorizing the root letters of common verbs.",
+      "examples": [
+        { "ar": "كَتَبَ", "en": "he wrote (root: ك-ت-ب, writing)", "highlight": "كَتَبَ" },
+        { "ar": "ذَهَبَ", "en": "he went (root: ذ-ه-ب, going)", "highlight": "ذَهَبَ" },
+        { "ar": "جَلَسَ", "en": "he sat (root: ج-ل-س, sitting)", "highlight": "جَلَسَ" },
+        { "ar": "فَتَحَ", "en": "he opened (root: ف-ت-ح, opening)", "highlight": "فَتَحَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the root of the verb كَتَبَ (kataba, he wrote)?",
+          "options": ["ك-ت-ب", "ك-ت-م", "ك-ب-ر"],
+          "correctIndex": 0,
+          "explanation": "The root of كَتَبَ is ك-ت-ب (k-t-b). These three consonants carry the core meaning of 'writing'. All words related to writing — كِتَاب (book), مَكْتَبَة (library), كَاتِب (writer) — share this root."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many root consonants does a standard Arabic verb have?",
+          "options": ["Three", "Four", "Two"],
+          "correctIndex": 0,
+          "explanation": "The vast majority of Arabic verbs are built on three root consonants (called trilateral roots). There are also some four-consonant roots, but three-letter roots form the backbone of the Arabic verb system."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a Form I (فَعَلَ) past tense verb?",
+          "options": ["ذَهَبَ (he went)", "عَلَّمَ (he taught)", "أَرْسَلَ (he sent)"],
+          "correctIndex": 0,
+          "explanation": "ذَهَبَ follows the basic فَعَلَ pattern with three root letters and simple voweling. عَلَّمَ is Form II (فَعَّلَ, with a doubled middle letter) and أَرْسَلَ is Form IV (أَفْعَلَ, with a prefixed hamza)."
+        }
+      ]
+    },
+    {
+      "sectionId": "form-ii-intensive",
+      "title": "Form II — فَعَّلَ (Intensification & Causation)",
+      "explanation": "Form II (فَعَّلَ, fa''ala) is formed by doubling the middle root letter (shown by a shadda ّ). It often adds one of these meanings to the base root: intensification (doing something forcefully or repeatedly), causation (making someone do something), or denomination (making a verb from a noun). The past tense pattern is فَعَّلَ, the present tense is يُفَعِّلُ (yufa''ilu), and the verbal noun is تَفْعِيل (taf'iil). For example, from the root ع-ل-م (knowledge): عَلِمَ (Form I) means 'he knew', while عَلَّمَ (Form II) means 'he taught' — i.e., he caused someone to know. From ك-س-ر (breaking): كَسَرَ (Form I) means 'he broke', while كَسَّرَ (Form II) means 'he smashed/shattered' (intensive breaking).",
+      "tip": "When you see a shadda (ّ) on the middle letter of a verb, you are likely looking at Form II. Think of the doubling as 'intensifying' or 'causing' the original meaning.",
+      "examples": [
+        { "ar": "عَلَّمَ", "en": "he taught (causative of 'to know')", "highlight": "عَلَّمَ" },
+        { "ar": "كَسَّرَ", "en": "he smashed (intensive of 'to break')", "highlight": "كَسَّرَ" },
+        { "ar": "دَرَّسَ", "en": "he taught/lectured (causative of 'to study')", "highlight": "دَرَّسَ" },
+        { "ar": "نَظَّفَ", "en": "he cleaned (from نَظِيف, clean)", "highlight": "نَظَّفَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the distinguishing feature of Form II (فَعَّلَ)?",
+          "options": ["The middle root letter is doubled (shadda)", "A prefix أ is added", "An alif is inserted after the first root letter"],
+          "correctIndex": 0,
+          "explanation": "Form II is recognized by the doubling (shadda ّ) on the middle root letter. This doubling often signals intensification, causation, or making a verb from a noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "If عَلِمَ means 'he knew', what does عَلَّمَ most likely mean?",
+          "options": ["He taught (caused someone to know)", "He forgot", "He asked"],
+          "correctIndex": 0,
+          "explanation": "Form II often adds causative meaning. عَلِمَ (Form I) = 'he knew', so عَلَّمَ (Form II) = 'he taught', meaning he caused someone else to know."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense pattern for Form II?",
+          "options": ["يُفَعِّلُ", "يَفْعَلُ", "يُفَاعِلُ"],
+          "correctIndex": 0,
+          "explanation": "The present tense of Form II follows the pattern يُفَعِّلُ (yufa''ilu), with a damma on the prefix letter and a shadda on the middle root letter. For example: يُعَلِّمُ (yu'allimu, he teaches)."
+        }
+      ]
+    },
+    {
+      "sectionId": "form-iii-and-iv",
+      "title": "Forms III and IV — فاعَلَ & أَفْعَلَ",
+      "explanation": "Form III (فَاعَلَ, faa'ala) inserts a long alif after the first root letter. It usually indicates doing something with someone or reciprocal action. The past tense is فَاعَلَ, the present is يُفَاعِلُ (yufaa'ilu), and the verbal noun is مُفَاعَلَة (mufaa'ala). For example, from ك-ت-ب: كَاتَبَ means 'he corresponded with (someone)' — writing back and forth. Form IV (أَفْعَلَ, af'ala) adds a hamza-alif prefix before the root. It often has a causative or transitive meaning similar to Form II, but tends to be more direct. The past tense is أَفْعَلَ, the present is يُفْعِلُ (yuf'ilu), and the verbal noun is إِفْعَال (if'aal). For example: جَلَسَ (he sat) becomes أَجْلَسَ (he seated someone). These two forms expand your ability to express reciprocal and causative actions with precision.",
+      "tip": "Form III = doing something together or to each other (look for the long alif after the first letter). Form IV = making something happen (look for the أ prefix). Both are extremely common in formal and written Arabic.",
+      "examples": [
+        { "ar": "كَاتَبَ", "en": "he corresponded with (reciprocal writing)", "highlight": "كَاتَبَ" },
+        { "ar": "سَافَرَ", "en": "he traveled (Form III from root س-ف-ر)", "highlight": "سَافَرَ" },
+        { "ar": "أَرْسَلَ", "en": "he sent (Form IV, causative)", "highlight": "أَرْسَلَ" },
+        { "ar": "أَجْلَسَ", "en": "he seated someone (he caused someone to sit)", "highlight": "أَجْلَسَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Form III (فَاعَلَ) typically expresses which type of meaning?",
+          "options": ["Reciprocal or mutual action", "Passive voice", "Reflexive action"],
+          "correctIndex": 0,
+          "explanation": "Form III typically expresses reciprocal or mutual action — doing something with, to, or at someone. For example, كَاتَبَ means 'he corresponded with someone' (writing to each other), and قَاتَلَ means 'he fought someone' (mutual combat)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What prefix distinguishes Form IV (أَفْعَلَ) from Form I?",
+          "options": ["A hamza-alif (أ) before the root", "A taa (ت) before the root", "A nun (ن) before the root"],
+          "correctIndex": 0,
+          "explanation": "Form IV is formed by adding a hamza-alif (أ) prefix before the three root letters. In the present tense, the pattern becomes يُفْعِلُ with a damma on the prefix and kasra before the last root letter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb is Form IV?",
+          "options": ["أَسْلَمَ (he submitted/became Muslim)", "سَالَمَ (he made peace with)", "سَلِمَ (he was safe)"],
+          "correctIndex": 0,
+          "explanation": "أَسْلَمَ follows the Form IV pattern أَفْعَلَ, with the root س-ل-م. سَالَمَ is Form III (فَاعَلَ), and سَلِمَ is Form I (فَعِلَ)."
+        }
+      ]
+    }
+  ]
+}

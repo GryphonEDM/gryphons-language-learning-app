@@ -1,0 +1,115 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameZh": "问路",
+  "icon": "🗺️",
+  "context": "You are lost in Beijing and need to find your way to the Palace Museum (故宫).",
+  "characters": {
+    "npc": { "name": "路人" },
+    "player": { "name": "你" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "你好！你看起来好像迷路了，需要帮忙吗？",
+      "translation": "Hello! You look like you might be lost. Do you need help?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say excuse me, you want to ask how to get to the Palace Museum",
+      "acceptedResponses": [
+        "请问，去故宫怎么走？",
+        "你好，请问故宫怎么走？",
+        "不好意思，请问怎么去故宫？",
+        "打扰一下，我想去故宫"
+      ],
+      "keyWords": ["请问", "故宫"],
+      "hint": "请问，去故宫怎么走？"
+    },
+    {
+      "speaker": "npc",
+      "text": "故宫啊！从这里往前走，到路口往右拐。",
+      "translation": "The Palace Museum! Go straight ahead from here, and turn right at the intersection."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm: go straight and then turn right at the intersection?",
+      "acceptedResponses": [
+        "往前走，然后右拐？",
+        "一直往前走，到路口右拐？",
+        "好的，往前走然后往右拐",
+        "前面路口右拐，对吗？"
+      ],
+      "keyWords": ["前", "右拐"],
+      "hint": "往前走，然后右拐？"
+    },
+    {
+      "speaker": "npc",
+      "text": "对，右拐以后再走大概五百米，你就能看到故宫的大门了。",
+      "translation": "Right, after turning right walk about five hundred meters and you will see the main gate of the Palace Museum."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how far it is from here, and how long it takes to walk",
+      "acceptedResponses": [
+        "从这里走过去要多长时间？",
+        "走路大概要多久？",
+        "离这里远不远？走路要多长时间？",
+        "走过去大概需要多少分钟？"
+      ],
+      "keyWords": ["多长时间", "走"],
+      "hint": "从这里走过去要多长时间？"
+    },
+    {
+      "speaker": "npc",
+      "text": "走路大概要十五分钟，不算远。",
+      "translation": "It takes about fifteen minutes on foot. It is not too far."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if you can also take the bus or subway there",
+      "acceptedResponses": [
+        "可以坐公交车或者地铁去吗？",
+        "那里有公交车或者地铁吗？",
+        "能坐地铁去吗？",
+        "附近有没有公交车或地铁？"
+      ],
+      "keyWords": ["公交车", "地铁"],
+      "hint": "可以坐公交车或者地铁去吗？"
+    },
+    {
+      "speaker": "npc",
+      "text": "可以坐地铁一号线，在天安门东站下车，出站就到了。不过走路也很方便。",
+      "translation": "You can take subway line 1 and get off at Tian'anmen East station. It is right there when you exit. But walking is also convenient."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you understand, you will walk there. Thank them very much.",
+      "acceptedResponses": [
+        "我明白了，我走过去吧。非常感谢！",
+        "好的，我走路去。谢谢你！",
+        "知道了，我走过去。太感谢了！",
+        "明白了，那我走过去吧。非常感谢你！"
+      ],
+      "keyWords": ["走", "感谢"],
+      "hint": "我明白了，我走过去吧。非常感谢！"
+    },
+    {
+      "speaker": "npc",
+      "text": "不客气！祝你玩得开心！",
+      "translation": "You are welcome! Have a great time!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say thank you and goodbye",
+      "acceptedResponses": [
+        "谢谢！再见！",
+        "非常感谢！再见！",
+        "谢谢你！拜拜！",
+        "多谢！再见！"
+      ],
+      "keyWords": ["谢谢", "再见"],
+      "hint": "谢谢！再见！"
+    }
+  ]
+}

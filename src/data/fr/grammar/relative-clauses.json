@@ -1,0 +1,201 @@
+{
+  "lessonId": "relative-clauses",
+  "nameEn": "Relative Clauses",
+  "nameFr": "Les propositions relatives",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": ["pronouns"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "qui-que-dont",
+      "title": "Qui, Que, and Dont",
+      "explanation": "French relative clauses connect two ideas by linking a noun (the antecedent) to a clause that describes it. The three most common relative pronouns are qui, que/qu', and dont.\n\n**Qui** (who, which, that) introduces a relative clause where the pronoun acts as the **subject** of the following verb. It can refer to both people and things.\n\n**Que/Qu'** (whom, which, that) introduces a relative clause where the pronoun acts as the **direct object** — there is always another subject after it. Que becomes qu' before a vowel or silent h. In passé composé, the past participle must agree in gender and number with the noun que refers to.\n\n**Dont** (whose, of which, about which) replaces **de + noun or pronoun**. It is used when the verb in the relative clause takes de (parler de, avoir besoin de, se souvenir de, etc.), or to express possession (whose).",
+      "tip": "Quick test: cover the relative clause and ask 'who/what is doing the verb?' If the answer is the antecedent, use qui. If something else is doing the verb and the antecedent is being acted on, use que. If the verb needs de, use dont.",
+      "examples": [
+        {
+          "fr": "L'homme qui parle est mon père.",
+          "en": "The man who is speaking is my father.",
+          "highlight": "qui"
+        },
+        {
+          "fr": "Le livre qui est sur la table est intéressant.",
+          "en": "The book that is on the table is interesting.",
+          "highlight": "qui"
+        },
+        {
+          "fr": "L'homme que je vois est mon père.",
+          "en": "The man whom I see is my father.",
+          "highlight": "que"
+        },
+        {
+          "fr": "La femme que j'ai vue travaille ici.",
+          "en": "The woman whom I saw works here.",
+          "highlight": "que j'ai vue"
+        },
+        {
+          "fr": "Le film dont je te parle est excellent.",
+          "en": "The film I'm telling you about is excellent.",
+          "highlight": "dont"
+        },
+        {
+          "fr": "L'homme dont tu connais la fille est ici.",
+          "en": "The man whose daughter you know is here.",
+          "highlight": "dont"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun: La fille ___ chante est ma sœur.",
+          "options": ["qui", "que", "dont"],
+          "correctIndex": 0,
+          "explanation": "Use qui because it is the subject of the verb 'chante' — la fille is doing the singing."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun: Le gâteau ___ tu manges est délicieux.",
+          "options": ["qui", "que", "dont"],
+          "correctIndex": 1,
+          "explanation": "Use que because the cake is the object — 'tu' is the subject doing the eating."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun: C'est un sujet ___ j'ai besoin. (avoir besoin de)",
+          "options": ["qui", "que", "dont"],
+          "correctIndex": 2,
+          "explanation": "Use dont because 'avoir besoin de' requires de, and dont replaces de + noun."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete with qui, que, or dont: Le professeur ___ nous respectons est très sévère.",
+          "answer": "que",
+          "explanation": "Que is correct because the professor is the object — 'nous' is the subject doing the respecting."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the correct past participle agreement? (antecedent: les lettres, feminine plural)",
+          "options": [
+            "Les lettres que j'ai écrit sont longues.",
+            "Les lettres que j'ai écrites sont longues.",
+            "Les lettres qui j'ai écrites sont longues."
+          ],
+          "correctIndex": 1,
+          "explanation": "After que in passé composé, the past participle agrees with the antecedent. 'Les lettres' is feminine plural, so écrit becomes écrites."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete with qui, que, or dont: La maison ___ appartient à mes parents est grande.",
+          "answer": "qui",
+          "explanation": "Qui is correct because 'la maison' is the subject of the verb 'appartient'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun: Le médecin ___ tu connais la femme est parti.",
+          "options": ["qui", "que", "dont"],
+          "correctIndex": 2,
+          "explanation": "Dont expresses possession here — 'whose wife you know'. It replaces de + le médecin."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete: Le roman ___ j'ai lu hier était passionnant.",
+          "answer": "que",
+          "explanation": "Que is correct because the novel is the direct object — 'j'ai lu' has its own subject 'je'."
+        }
+      ]
+    },
+    {
+      "sectionId": "lequel-ou",
+      "title": "Lequel and Où",
+      "explanation": "When a relative clause uses a **preposition** (avec, sur, dans, pour, etc.), French generally requires **lequel** and its forms rather than que.\n\n**Lequel** (which) agrees in gender and number with its antecedent: lequel (masc. sg.), laquelle (fem. sg.), lesquels (masc. pl.), lesquelles (fem. pl.). It is used for things. For **people** after a preposition, use **qui** instead.\n\nImportant contractions: **à + lequel = auquel**, à + lesquels = auxquels, à + lesquelles = auxquelles; **de + lequel = duquel**, de + lesquels = desquels, de + lesquelles = desquelles. (À la laquelle and de la laquelle do NOT contract.)\n\n**Où** (where, when) is a relative pronoun used for **place or time**. It can often replace a preposition + lequel when referring to location.\n\n**Ce qui / ce que / ce dont** are used when there is no specific noun antecedent — they refer to a whole idea or an unspecified thing, translating as 'what'. Ce qui is the subject form, ce que is the object form, and ce dont is used when the verb requires de.",
+      "tip": "Remember: preposition + person → preposition + qui. Preposition + thing → preposition + lequel (with agreement and contractions). For places and times, où is usually the most natural choice.",
+      "examples": [
+        {
+          "fr": "Le stylo avec lequel j'écris est rouge.",
+          "en": "The pen with which I am writing is red.",
+          "highlight": "avec lequel"
+        },
+        {
+          "fr": "La table sur laquelle il travaille est grande.",
+          "en": "The table on which he works is big.",
+          "highlight": "sur laquelle"
+        },
+        {
+          "fr": "La personne à qui je parle est directrice.",
+          "en": "The person to whom I am speaking is a director.",
+          "highlight": "à qui"
+        },
+        {
+          "fr": "La ville où j'habite est belle.",
+          "en": "The city where I live is beautiful.",
+          "highlight": "où"
+        },
+        {
+          "fr": "Le jour où je suis arrivé, il pleuvait.",
+          "en": "The day when I arrived, it was raining.",
+          "highlight": "où"
+        },
+        {
+          "fr": "Ce dont il a besoin, c'est du repos.",
+          "en": "What he needs is rest.",
+          "highlight": "Ce dont"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct form: Le problème ___ je pense est grave. (penser à)",
+          "options": ["auquel", "lequel", "duquel"],
+          "correctIndex": 0,
+          "explanation": "Penser à + lequel contracts to auquel. The antecedent 'le problème' is masculine singular."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete: La chaise sur ___ tu es assis est cassée.",
+          "answer": "laquelle",
+          "explanation": "Sur + laquelle because 'la chaise' is feminine singular, and we need lequel after a preposition for a thing."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun for a person: L'ami ___ je travaille est sympathique. (travailler avec)",
+          "options": ["avec lequel", "avec qui", "auquel"],
+          "correctIndex": 1,
+          "explanation": "For people after a preposition, use qui — not lequel. So: avec qui."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct relative pronoun: Le restaurant ___ nous allons souvent est fermé.",
+          "options": ["où", "dans lequel", "auquel"],
+          "correctIndex": 0,
+          "explanation": "Où is the natural choice for places. 'Dans lequel' would also be acceptable but où is preferred."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete with ce qui, ce que, or ce dont: ___ m'intéresse, c'est la photographie.",
+          "answer": "Ce qui",
+          "explanation": "Ce qui is used when the relative pronoun is the subject of the verb that follows. 'Ce qui m'intéresse' = what interests me."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose correctly: Je ne comprends pas ___ tu veux dire.",
+          "options": ["ce qui", "ce que", "ce dont"],
+          "correctIndex": 1,
+          "explanation": "Ce que is the object form — 'tu' is the subject, and the whole idea (what you want to say) is the object of 'comprends'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct contraction: Les associations ___ il participe sont locales. (participer à)",
+          "options": ["auxquelles", "lesquelles", "desquelles"],
+          "correctIndex": 0,
+          "explanation": "Participer à + lesquelles contracts to auxquelles. 'Les associations' is feminine plural."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Complete: L'époque ___ mes parents sont nés était difficile.",
+          "answer": "où",
+          "explanation": "Où is used for time expressions as well as places — here it means 'when' (the era when my parents were born)."
+        }
+      ]
+    }
+  ]
+}

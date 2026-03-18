@@ -1,0 +1,139 @@
+{
+  "lessonId": "prepositions",
+  "nameEn": "Prepositions",
+  "nameFr": "Les prépositions",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["articles"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "place-prepositions",
+      "title": "Prepositions of Place",
+      "explanation": "French prepositions of place tell you where something is. 'À' means at/to and is used with cities and general location (à Paris, à la maison, au bureau). 'Dans' means in/inside an enclosed space (dans la voiture). 'En' is used for feminine countries, time expressions, and materials (en France, en été, en bois). 'Sur' means on top of, 'sous' means under. Compound prepositions like 'près de', 'loin de', 'à côté de', 'en face de', 'devant', and 'derrière' describe relative position. Key distinction: 'à la maison' (at home, general sense) vs 'dans la maison' (inside the house, physically enclosed).",
+      "tip": "Remember that 'de' contracts with 'le' → 'du' and with 'les' → 'des'. So 'près de + le marché' = 'près du marché', and 'loin de + les écoles' = 'loin des écoles'. 'De + la' and 'de + l'' do not contract.",
+      "examples": [
+        { "fr": "Le chat est sur la table.", "en": "The cat is on the table.", "highlight": "sur" },
+        { "fr": "Les clés sont sous le lit.", "en": "The keys are under the bed.", "highlight": "sous" },
+        { "fr": "La boulangerie est à côté du supermarché.", "en": "The bakery is next to the supermarket.", "highlight": "à côté du" },
+        { "fr": "L'hôtel est en face de la gare.", "en": "The hotel is across from the train station.", "highlight": "en face de" },
+        { "fr": "Nous habitons près de l'école, loin du centre-ville.", "en": "We live near the school, far from the city center.", "highlight": "près de / loin du" },
+        { "fr": "Il y a un café entre la banque et la pharmacie.", "en": "There is a café between the bank and the pharmacy.", "highlight": "entre" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition means 'under'?",
+          "options": ["sur", "sous", "dans"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct preposition: 'Le livre est ___ la table.' (The book is on the table.)",
+          "options": ["sous", "derrière", "sur"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between 'à la maison' and 'dans la maison'?",
+          "options": ["No difference — they mean the same thing.", "'À la maison' means at home (general); 'dans la maison' means physically inside the house.", "'Dans la maison' means at home; 'à la maison' means inside the house."],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "La bibliothèque est ___ du parc. (The library is near the park. — 'parc' is masculine.)",
+          "options": ["près de la", "près du", "près de l'"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence: 'The car is behind the building.'",
+          "options": ["La voiture est devant le bâtiment.", "La voiture est entre le bâtiment.", "La voiture est derrière le bâtiment."],
+          "correctIndex": 2
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "La poste est ___ la banque et le café. (The post office is between the bank and the café.)",
+          "options": ["en face de", "entre", "à côté de"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition describes something inside an enclosed space, like being inside a car?",
+          "options": ["à", "sur", "dans"],
+          "correctIndex": 2
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "L'arrêt de bus est ___ de la mairie. (The bus stop is in front of the town hall.)",
+          "options": ["derrière", "devant", "sous"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "sectionId": "country-prepositions",
+      "title": "Prepositions with Countries & Cities",
+      "explanation": "The preposition used before a country depends on its gender and number. Feminine countries (most ending in -e) use 'en' with no article: en France, en Espagne, en Italie, en Allemagne, en Angleterre, en Chine. Masculine countries use 'au' (= à + le): au Canada, au Mexique, au Japon, au Brésil, au Portugal. Plural countries use 'aux': aux États-Unis, aux Pays-Bas. Cities always use 'à' regardless of gender: à Paris, à Londres, à New York. To express coming FROM a country, use 'de' (feminine: de France), 'du' (masculine: du Canada), or 'des' (plural: des États-Unis). Exception: islands and a few special cases use 'à' even for countries (à Cuba, à Haïti, à Chypre). For French regions: feminine regions use 'en' (en Bretagne, en Normandie), masculine regions use 'dans le' (dans le Nord, dans le Midi).",
+      "tip": "A quick test for country gender: if the country name ends in -e, it is almost always feminine → use 'en'. If it doesn't end in -e, it is likely masculine → use 'au'. The main masculine exception ending in -e is le Mexique.",
+      "examples": [
+        { "fr": "Elle habite en France mais son ami vit au Japon.", "en": "She lives in France but her friend lives in Japan.", "highlight": "en France / au Japon" },
+        { "fr": "Ils sont nés aux États-Unis.", "en": "They were born in the United States.", "highlight": "aux États-Unis" },
+        { "fr": "Je vais à Paris la semaine prochaine.", "en": "I am going to Paris next week.", "highlight": "à Paris" },
+        { "fr": "Il vient du Canada et elle vient de l'Italie.", "en": "He comes from Canada and she comes from Italy.", "highlight": "du Canada / de l'Italie" },
+        { "fr": "Nous partons en Bretagne, pas dans le Midi.", "en": "We are going to Brittany, not to the South of France.", "highlight": "en Bretagne / dans le Midi" },
+        { "fr": "Il passe ses vacances à Cuba chaque été.", "en": "He spends his holidays in Cuba every summer.", "highlight": "à Cuba" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition is used with a feminine country like 'Espagne'?",
+          "options": ["au", "en", "à"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Mon frère habite ___ Canada. (My brother lives in Canada — masculine country.)",
+          "options": ["en", "au", "aux"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition is used with a plural country like 'Pays-Bas'?",
+          "options": ["aux", "au", "en"],
+          "correctIndex": 0
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Elle voyage ___ Tokyo. (She is traveling to Tokyo — a city.)",
+          "options": ["en", "au", "à"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence: 'He comes from Japan.'",
+          "options": ["Il vient d'Japon.", "Il vient du Japon.", "Il vient au Japon."],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Elles reviennent ___ États-Unis. (They are coming back from the United States.)",
+          "options": ["du", "de", "des"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition is used for the masculine French region 'le Nord'?",
+          "options": ["en le Nord", "dans le Nord", "au Nord"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is 'à Cuba' correct instead of 'au Cuba' or 'en Cuba'?",
+          "options": ["Cuba is a feminine country, so it uses à.", "Cuba is an island, and islands typically use à regardless of gender.", "Cuba is a masculine plural country."],
+          "correctIndex": 1
+        }
+      ]
+    }
+  ]
+}

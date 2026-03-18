@@ -1,0 +1,113 @@
+{
+  "lessonId": "particles-subject-object",
+  "nameEn": "Particles: Subject & Object",
+  "nameKo": "조사: 주격과 목적격",
+  "icon": "🏷️",
+  "tier": "A1",
+  "prerequisites": ["hangul-basics"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "topic-particle",
+      "title": "Topic Particles: 은/는",
+      "explanation": "Korean uses small words called particles (조사) that attach directly to nouns to show their grammatical role. The topic particles 은 and 는 mark the topic of a sentence — what you are talking about. Use 은 after a consonant-ending noun and 는 after a vowel-ending noun. For example: 저는 학생이에요 (As for me, I am a student). The topic particle emphasizes contrast or introduces the general topic. It is often compared to 'as for...' or 'speaking of...' in English. When comparing two things, 은/는 highlights the contrast: 사과는 좋아요, 바나나는 싫어요 (Apples I like, bananas I don't like). The topic particle is one of the most fundamental and frequently used particles in Korean.",
+      "tip": "After a consonant (받침), use 은. After a vowel, use 는. Example: 책 ends in ㄱ → 책은; 나 ends in ㅏ → 나는. Think of 은/는 as setting the stage — 'As for X, ...'",
+      "examples": [
+        { "ko": "저는 학생이에요.", "en": "I am a student. (는 after vowel 저)", "highlight": "는" },
+        { "ko": "날씨는 좋아요.", "en": "The weather is nice.", "highlight": "는" },
+        { "ko": "한국은 아시아에 있어요.", "en": "Korea is in Asia. (은 after consonant 국)", "highlight": "은" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle should follow 책 (book)?",
+          "options": ["은 — because 책 ends in a consonant (ㄱ)", "는 — because 책 ends in a vowel", "이 — because it is a subject"],
+          "correctIndex": 0,
+          "explanation": "책 ends with the consonant ㄱ (batchim), so you attach 은: 책은. The rule is simple: 은 after consonants, 는 after vowels."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the topic particle 은/는 do in a sentence?",
+          "options": ["Marks the topic — what the sentence is about", "Marks the direct object of a verb", "Marks the location of an action"],
+          "correctIndex": 0,
+          "explanation": "은/는 marks the topic of the sentence. It tells the listener 'as for this thing, here is what I want to say about it.' It can also imply contrast with something else."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: 커피___ 맛있어요. (Coffee is delicious.)",
+          "options": ["는", "은", "를"],
+          "correctIndex": 0,
+          "explanation": "커피 ends with the vowel ㅣ, so the topic particle 는 is used: 커피는 맛있어요. Remember: 는 after vowels, 은 after consonants."
+        }
+      ]
+    },
+    {
+      "sectionId": "subject-particle",
+      "title": "Subject Particles: 이/가",
+      "explanation": "The subject particles 이 and 가 mark the grammatical subject — who or what performs an action or is being described. Use 이 after a consonant-ending noun and 가 after a vowel-ending noun. The key difference from 은/는: while 은/는 marks the general topic (old or known information), 이/가 highlights the specific subject (often new information or emphasis on identity). For example: 누가 왔어요? — 민수가 왔어요. (Who came? — Minsu came.) Here, 가 emphasizes that it is specifically Minsu. Compare: 민수는 학생이에요 (As for Minsu, he is a student — topic/general info) vs. 민수가 학생이에요 (Minsu is the student — identifying who the student is). Subject particles are also used with descriptive expressions: 날씨가 좋아요 (The weather is nice — as a new observation).",
+      "tip": "Use 이/가 when answering 'who?' or 'what?' questions or when presenting new information. Use 은/는 when talking about a known topic. After consonants: 이. After vowels: 가.",
+      "examples": [
+        { "ko": "고양이가 귀여워요.", "en": "The cat is cute. (가 after vowel 이)", "highlight": "가" },
+        { "ko": "물이 차가워요.", "en": "The water is cold. (이 after consonant ㄹ)", "highlight": "이" },
+        { "ko": "누가 했어요?", "en": "Who did it? (가 marks the unknown subject)", "highlight": "가" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle follows 비 (rain) as a subject?",
+          "options": ["가 — because 비 ends in a vowel", "이 — because 비 ends in a consonant", "는 — because 비 is the topic"],
+          "correctIndex": 0,
+          "explanation": "비 ends with the vowel ㅣ, so the subject particle 가 is used: 비가 와요 (It is raining / Rain comes). After vowels: 가. After consonants: 이."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Someone asks 누가 학생이에요? (Who is the student?) — How would you answer?",
+          "options": ["민수가 학생이에요. (Minsu is [the one who is] a student.)", "민수는 학생이에요. (As for Minsu, he is a student.)", "민수를 학생이에요."],
+          "correctIndex": 0,
+          "explanation": "When answering a 'who?' question, you use 이/가 to identify the specific person: 민수가 학생이에요 — it is Minsu who is the student. 은/는 would shift the meaning to general information about Minsu."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 시간___ 없어요. (I have no time. / There is no time.)",
+          "options": ["이", "가", "은"],
+          "correctIndex": 0,
+          "explanation": "시간 ends with the consonant ㄴ, so the subject particle 이 is used: 시간이 없어요. The subject particle marks 시간 as what is being described (it does not exist)."
+        }
+      ]
+    },
+    {
+      "sectionId": "object-particle",
+      "title": "Object Particles: 을/를",
+      "explanation": "The object particles 을 and 를 mark the direct object of a verb — the thing that receives the action. Use 을 after a consonant-ending noun and 를 after a vowel-ending noun. For example: 밥을 먹어요 (I eat rice) — 밥 is what is being eaten. 커피를 마셔요 (I drink coffee) — 커피 is what is being drunk. Korean sentence order is typically Subject-Object-Verb (SOV): 저는 책을 읽어요 (I read a book — literally 'I, book, read'). The object particle is essential for clarity because Korean word order can be flexible; the particles, not position, tell you each noun's role. In casual speech, particles are sometimes dropped, but using them correctly is important for clear and polite communication.",
+      "tip": "After a consonant (받침), use 을. After a vowel, use 를. Always remember Korean word order is SOV: Subject + Object + Verb. The verb always comes last!",
+      "examples": [
+        { "ko": "밥을 먹어요.", "en": "I eat rice. (을 after consonant ㅂ)", "highlight": "을" },
+        { "ko": "커피를 마셔요.", "en": "I drink coffee. (를 after vowel ㅣ)", "highlight": "를" },
+        { "ko": "영화를 봐요.", "en": "I watch a movie. (를 after vowel ㅏ)", "highlight": "를" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle completes this sentence? 음악___ 들어요. (I listen to music.)",
+          "options": ["을 — because 악 ends in a consonant (ㄱ)", "를 — because 악 ends in a vowel", "이 — because 음악 is the subject"],
+          "correctIndex": 0,
+          "explanation": "음악 ends with the consonant ㄱ, so the object particle 을 is used: 음악을 들어요 (I listen to music). 을 after consonants, 를 after vowels."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the typical word order in a Korean sentence?",
+          "options": ["Subject-Object-Verb (SOV)", "Subject-Verb-Object (SVO)", "Verb-Subject-Object (VSO)"],
+          "correctIndex": 0,
+          "explanation": "Korean follows Subject-Object-Verb order. The verb always comes at the end: 저는 (I) 책을 (book) 읽어요 (read) — literally 'I book read.' This is different from English SVO order."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence for 'I study Korean.'",
+          "options": ["저는 한국어를 공부해요.", "저는 한국어을 공부해요.", "저는 한국어가 공부해요."],
+          "correctIndex": 0,
+          "explanation": "한국어 ends with the vowel ㅓ, so the object particle 를 is used: 한국어를 공부해요. Using 을 would be incorrect because 을 follows consonants only."
+        }
+      ]
+    }
+  ]
+}

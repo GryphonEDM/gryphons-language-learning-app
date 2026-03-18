@@ -1,0 +1,116 @@
+{
+  "lessonId": "formal-speech",
+  "nameEn": "Formal Speech & Written Korean",
+  "nameKo": "격식체와 문어체",
+  "icon": "🎩",
+  "tier": "B2",
+  "prerequisites": ["verb-conjugation"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "hapnida-style",
+      "title": "합니다 Style (격식체 높임)",
+      "explanation": "Korean has two main polite speech levels: 해요체 (informal polite) and 합니다체 (formal polite). 합니다체 is used in formal situations — news broadcasts, business presentations, military, public speeches, and with strangers you want to show maximum respect to. For action verbs: stem + -ㅂ니다 (vowel) or -습니다 (consonant). 가다 → 갑니다, 먹다 → 먹습니다, 하다 → 합니다. For questions: stem + -ㅂ니까? (vowel) or -습니까? (consonant). 가다 → 갑니까?, 먹다 → 먹습니까? For descriptive verbs: same endings. 좋다 → 좋습니다, 크다 → 큽니다. Past tense: -았/었습니다, -았/었습니까? 갔습니다, 먹었습니까? Negative: 안 갑니다, 못 먹습니다, 가지 않습니다.",
+      "tip": "합니다체 is always safe when unsure about formality — it is never rude. In job interviews, first meetings with elders, and public speaking, default to 합니다체. Switch to 해요체 only when the other person signals it is okay.",
+      "examples": [
+        { "ko": "반갑습니다", "en": "Nice to meet you (formal)", "highlight": "습니다" },
+        { "ko": "어디에서 오셨습니까?", "en": "Where did you come from? (formal question)", "highlight": "습니까" },
+        { "ko": "저는 학생입니다", "en": "I am a student (formal)", "highlight": "입니다" },
+        { "ko": "감사합니다", "en": "Thank you (formal)", "highlight": "합니다" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the 합니다 form of 읽다 (to read)?",
+          "options": ["읽습니다", "읽ㅂ니다", "읽합니다"],
+          "correctIndex": 0,
+          "explanation": "읽다 has stem 읽 ending in a consonant, so add -습니다: 읽습니다."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you form a formal question from 알다 (to know)?",
+          "options": ["압니까?", "알습니까?", "아ㅂ니까?"],
+          "correctIndex": 0,
+          "explanation": "알다 is a ㄹ verb. Before ㅂ, the ㄹ drops: 알 → 아 + ㅂ니까 = 압니까?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In which situation would 합니다체 be LEAST appropriate?",
+          "options": ["Texting a close friend", "A job interview", "A news broadcast"],
+          "correctIndex": 0,
+          "explanation": "합니다체 would be overly formal and stiff when texting a close friend. Friends typically use 반말 (informal) or 해요체 (informal polite). Job interviews and news broadcasts call for 합니다체."
+        }
+      ]
+    },
+    {
+      "sectionId": "written-korean",
+      "title": "Written/Literary Style (문어체)",
+      "explanation": "Written Korean — found in newspapers, academic papers, books, and formal documents — uses the plain style (해라체) with specific endings. Statements: -다 for all verbs (간다, 먹는다, 좋다, 컸다). Questions: -(으)ㄴ가? or -는가? (좋은가?, 가는가?). Commands: -아/어라 (가라, 먹어라). Propositions: -자 (가자). In news and academic writing, the -다 ending is standard: 대통령이 발표했다 (The president announced). 경제가 성장한다 (The economy is growing). Note the present tense forms: action verbs use -ㄴ다/-는다 (not just -다). 가다 → 간다, 먹다 → 먹는다. Descriptive verbs use just -다: 좋다, 크다. This style is impersonal and objective — perfect for factual reporting.",
+      "tip": "Written style uses the same forms as indirect speech quotations (-ㄴ/는다, -다). If you master indirect speech quoting patterns, you already know how to write in literary Korean style.",
+      "examples": [
+        { "ko": "한국의 인구가 감소한다", "en": "Korea's population is decreasing (news style)", "highlight": "감소한다" },
+        { "ko": "이 연구는 중요한 결과를 보여준다", "en": "This research shows important results (academic)", "highlight": "보여준다" },
+        { "ko": "봄이 왔다", "en": "Spring has come (literary)", "highlight": "왔다" },
+        { "ko": "그는 조용히 방을 나갔다", "en": "He quietly left the room (novel style)", "highlight": "나갔다" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How would a newspaper write '경제가 성장하다' (the economy grows) in present tense?",
+          "options": ["경제가 성장한다", "경제가 성장하다", "경제가 성장합니다"],
+          "correctIndex": 0,
+          "explanation": "In written/literary style, action verbs in present tense use -ㄴ다/-는다. 성장하다 → 성장한다 (stem 하 ends in vowel, add -ㄴ다)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which style would you use in an academic paper?",
+          "options": ["해라체/문어체 (plain/written style)", "합니다체 (formal polite)", "해요체 (informal polite)"],
+          "correctIndex": 0,
+          "explanation": "Academic papers in Korean use the plain written style (해라체/문어체) with -다 endings. 합니다체 is too speech-oriented, and 해요체 is too casual for academic writing."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the written-style present tense of 먹다 (to eat)?",
+          "options": ["먹는다", "먹다", "먹는다고"],
+          "correctIndex": 0,
+          "explanation": "Action verbs with consonant-ending stems use -는다 in written style: 먹 + 는다 = 먹는다."
+        }
+      ]
+    },
+    {
+      "sectionId": "honorific-system",
+      "title": "Honorific Vocabulary and -(으)시-",
+      "explanation": "Beyond speech levels, Korean has an honorific system that elevates the subject of the sentence. The suffix -(으)시- is inserted into the verb to honor the subject: 가다 → 가시다 (to go, honorific), 먹다 → 드시다 (special honorific word), 있다 → 계시다 (special honorific). In formal speech: 가십니다, 드십니까? Many verbs have entirely different honorific counterparts: 먹다/마시다 → 드시다 (eat/drink), 자다 → 주무시다 (sleep), 있다 → 계시다 (exist/be), 말하다 → 말씀하시다 (speak), 죽다 → 돌아가시다 (die/pass away), 주다 → 드리다 (give to someone respected). The particle 은/는 becomes 께서는 for honored subjects, and 에게 becomes 께. Example: 할머니께서 주무시고 계십니다 (Grandmother is sleeping — triple honorific: 께서 + 주무시다 + 계시다).",
+      "tip": "Always use honorifics when talking about someone older or of higher status, even when talking TO a friend. '우리 할머니가 잔다' is rude even in casual speech — say '우리 할머니께서 주무신다' because the honored subject requires it regardless of listener.",
+      "examples": [
+        { "ko": "선생님이 오셨습니다", "en": "The teacher has arrived (honorific -(으)시- + formal)", "highlight": "오셨습니다" },
+        { "ko": "할아버지께서 진지를 드셨어요", "en": "Grandfather ate his meal (드시다 = honorific of 먹다)", "highlight": "드셨어요" },
+        { "ko": "어머니께서 주무시고 계세요", "en": "Mother is sleeping (주무시다 = honorific of 자다)", "highlight": "주무시고 계세요" },
+        { "ko": "사장님께서 말씀하셨습니다", "en": "The CEO spoke (말씀하시다 = honorific of 말하다)", "highlight": "말씀하셨습니다" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the honorific form of 먹다 (to eat)?",
+          "options": ["드시다", "먹으시다", "먹시다"],
+          "correctIndex": 0,
+          "explanation": "먹다 has a special honorific replacement word: 드시다. While 먹으시다 is sometimes heard, 드시다 is the proper honorific form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'할머니께서 집에 계세요' uses which honorific form?",
+          "options": ["계시다 — honorific of 있다", "가시다 — honorific of 가다", "오시다 — honorific of 오다"],
+          "correctIndex": 0,
+          "explanation": "계시다 is the special honorific form of 있다 (to exist/be). 할머니께서 집에 계세요 = Grandmother is at home (said respectfully)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why should you say '교수님이 말씀하셨어요' instead of '교수님이 말했어요'?",
+          "options": ["The professor is the subject and deserves honorific language", "말하다 is an irregular verb", "It is past tense"],
+          "correctIndex": 0,
+          "explanation": "When the subject is someone deserving respect (professor, elder, boss), you must use honorific vocabulary. 말하다 → 말씀하시다 for honored subjects."
+        }
+      ]
+    }
+  ]
+}

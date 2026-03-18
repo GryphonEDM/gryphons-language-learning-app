@@ -1,0 +1,132 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameHi": "रेस्तरां में",
+  "icon": "🍽️",
+  "context": "You are at a restaurant in Jaipur. The waiter comes to your table to take your order.",
+  "characters": {
+    "npc": { "name": "वेटर" },
+    "player": { "name": "आप" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "नमस्ते! आइए, बैठिए। यह रहा मेन्यू। क्या लेंगे आप?",
+      "translation": "Hello! Come, please sit. Here is the menu. What would you like to have?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask what the special dishes are today.",
+      "acceptedResponses": [
+        "नमस्ते! आज का स्पेशल क्या है?",
+        "शुक्रिया। आज कोई ख़ास डिश है?",
+        "नमस्ते, आज क्या अच्छा है?",
+        "मेन्यू दीजिए। आज की स्पेशल डिश क्या है?"
+      ],
+      "keyWords": ["आज", "स्पेशल", "क्या"],
+      "hint": "Ask 'आज का स्पेशल क्या है?' to find out today's specials."
+    },
+    {
+      "speaker": "npc",
+      "text": "आज का स्पेशल दाल मखनी और पनीर बटर मसाला है। रोटी या नान के साथ लेंगे?",
+      "translation": "Today's special is dal makhani and paneer butter masala. Would you like it with roti or naan?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a dish with your choice of bread.",
+      "acceptedResponses": [
+        "मुझे पनीर बटर मसाला दीजिए, नान के साथ।",
+        "दाल मखनी दीजिए और दो रोटी भी।",
+        "एक पनीर बटर मसाला और दो बटर नान दीजिए।",
+        "मुझे दाल मखनी चाहिए, रोटी के साथ।"
+      ],
+      "keyWords": ["दीजिए", "रोटी", "नान"],
+      "hint": "Use 'मुझे... दीजिए' to order, and mention 'रोटी' or 'नान'."
+    },
+    {
+      "speaker": "npc",
+      "text": "बहुत अच्छा। तीखा कितना चाहिए? कम, मीडियम, या बहुत तीखा?",
+      "translation": "Very good. How spicy would you like it? Mild, medium, or very spicy?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the waiter your spice preference.",
+      "acceptedResponses": [
+        "कम तीखा रखिए, प्लीज़।",
+        "मीडियम तीखा ठीक रहेगा।",
+        "बहुत तीखा मत रखिए। हल्का तीखा दीजिए।",
+        "मुझे मीडियम तीखा पसंद है।"
+      ],
+      "keyWords": ["तीखा", "कम", "मीडियम"],
+      "hint": "Say 'कम तीखा' (mild), 'मीडियम' (medium), or 'बहुत तीखा' (very spicy)."
+    },
+    {
+      "speaker": "npc",
+      "text": "ठीक है। और चावल भी लेंगे? जीरा राइस या प्लेन राइस?",
+      "translation": "Okay. Would you also like rice? Jeera rice or plain rice?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you want rice and which kind.",
+      "acceptedResponses": [
+        "हाँ, जीरा राइस दे दीजिए।",
+        "हाँ, प्लेन चावल दीजिए।",
+        "नहीं, चावल नहीं चाहिए। रोटी काफ़ी है।",
+        "एक प्लेट जीरा राइस दे दीजिए।"
+      ],
+      "keyWords": ["चावल", "राइस", "दीजिए"],
+      "hint": "Say 'जीरा राइस दीजिए' or 'चावल नहीं चाहिए' if you don't want rice."
+    },
+    {
+      "speaker": "npc",
+      "text": "पीने के लिए क्या लाऊँ? लस्सी, चाय, या ठंडा?",
+      "translation": "What shall I bring to drink? Lassi, tea, or a cold drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a drink.",
+      "acceptedResponses": [
+        "एक मीठी लस्सी दे दीजिए।",
+        "एक मसाला चाय लाइए।",
+        "पानी की बोतल दीजिए।",
+        "एक ठंडी लस्सी दीजिए, प्लीज़।"
+      ],
+      "keyWords": ["लस्सी", "चाय", "दीजिए", "पानी"],
+      "hint": "Use 'एक... दीजिए' to order a drink — लस्सी, चाय, or पानी."
+    },
+    {
+      "speaker": "npc",
+      "text": "खाना कैसा लगा? कुछ और चाहिए?",
+      "translation": "How was the food? Would you like anything else?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Compliment the food and ask for the bill.",
+      "acceptedResponses": [
+        "खाना बहुत स्वादिष्ट था! बिल दे दीजिए।",
+        "बहुत अच्छा खाना था। अब बिल लाइए।",
+        "खाना बढ़िया था! कितने पैसे हुए?",
+        "मज़ा आ गया! प्लीज़ बिल दे दीजिए।"
+      ],
+      "keyWords": ["खाना", "अच्छा", "बिल"],
+      "hint": "Say 'खाना बहुत अच्छा था' and then 'बिल दे दीजिए' for the check."
+    },
+    {
+      "speaker": "npc",
+      "text": "शुक्रिया! आपका बिल पाँच सौ रुपये है। फिर आइएगा!",
+      "translation": "Thank you! Your bill is five hundred rupees. Please come again!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank the waiter and say goodbye.",
+      "acceptedResponses": [
+        "शुक्रिया! खाना बहुत अच्छा था। फिर आऊँगा!",
+        "धन्यवाद! बहुत बढ़िया खाना था। नमस्ते!",
+        "बहुत शुक्रिया। ज़रूर आऊँगा फिर।",
+        "शुक्रिया भाई। खाना लाजवाब था!"
+      ],
+      "keyWords": ["शुक्रिया", "धन्यवाद", "अच्छा"],
+      "hint": "Say 'शुक्रिया' or 'धन्यवाद' and compliment the food one more time."
+    }
+  ]
+}

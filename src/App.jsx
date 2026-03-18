@@ -5,7 +5,7 @@ import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
 import { TRANSLATIONS } from './data/translations.js';
 import { getAllVocabularyWords } from './utils/dictionaryBuilder.js';
-import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE } from './utils/encouragement.js';
+import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE, ENCOURAGEMENTS_ES, MISTAKE_MESSAGES_ES, ENCOURAGEMENTS_FR, MISTAKE_MESSAGES_FR, ENCOURAGEMENTS_EL, MISTAKE_MESSAGES_EL, ENCOURAGEMENTS_HI, MISTAKE_MESSAGES_HI, ENCOURAGEMENTS_AR, MISTAKE_MESSAGES_AR, ENCOURAGEMENTS_KO, MISTAKE_MESSAGES_KO, ENCOURAGEMENTS_ZH, MISTAKE_MESSAGES_ZH, ENCOURAGEMENTS_JA, MISTAKE_MESSAGES_JA } from './utils/encouragement.js';
 import { getLanguageData, LANGUAGES } from './data/languageConfig.js';
 import { createAudioContext, playSound } from './utils/soundEffects.js';
 import FlashcardMode from './components/modes/FlashcardMode.jsx';
@@ -66,6 +66,8 @@ import ruAdvancedReading from './data/ru/reading/advanced.json';
 
 // Import German grammar data
 import { GRAMMAR_LESSONS_DE } from './data/de/grammar/index.js';
+import { GRAMMAR_LESSONS_ES } from './data/es/grammar/index.js';
+import { GRAMMAR_LESSONS_FR } from './data/fr/grammar/index.js';
 
 // Import German sentence data
 import deSentenceData from './data/de/sentences.json';
@@ -80,6 +82,136 @@ import deGreetingDialogue from './data/de/dialogues/greeting.json';
 import deBeginnerReading from './data/de/reading/beginner.json';
 import deIntermediateReading from './data/de/reading/intermediate.json';
 import deAdvancedReading from './data/de/reading/advanced.json';
+
+// Import Spanish sentence data
+import esSentenceData from './data/es/sentences.json';
+
+// Import Spanish dialogue data
+import esRestaurantDialogue from './data/es/dialogues/restaurant.json';
+import esDirectionsDialogue from './data/es/dialogues/directions.json';
+import esShoppingDialogue from './data/es/dialogues/shopping.json';
+import esGreetingDialogue from './data/es/dialogues/greeting.json';
+
+// Import Spanish reading data
+import esBeginnerReading from './data/es/reading/beginner.json';
+import esIntermediateReading from './data/es/reading/intermediate.json';
+import esAdvancedReading from './data/es/reading/advanced.json';
+
+// Import French sentence data
+import frSentenceData from './data/fr/sentences.json';
+
+// Import French dialogue data
+import frRestaurantDialogue from './data/fr/dialogues/restaurant.json';
+import frDirectionsDialogue from './data/fr/dialogues/directions.json';
+import frShoppingDialogue from './data/fr/dialogues/shopping.json';
+import frGreetingDialogue from './data/fr/dialogues/greeting.json';
+
+// Import French reading data
+import frBeginnerReading from './data/fr/reading/beginner.json';
+import frIntermediateReading from './data/fr/reading/intermediate.json';
+import frAdvancedReading from './data/fr/reading/advanced.json';
+
+// Import Greek grammar data
+import { GRAMMAR_LESSONS_EL } from './data/el/grammar/index.js';
+
+// Import Greek sentence data
+import elSentenceData from './data/el/sentences.json';
+
+// Import Greek dialogue data
+import elRestaurantDialogue from './data/el/dialogues/restaurant.json';
+import elDirectionsDialogue from './data/el/dialogues/directions.json';
+import elShoppingDialogue from './data/el/dialogues/shopping.json';
+import elGreetingDialogue from './data/el/dialogues/greeting.json';
+
+// Import Greek reading data
+import elBeginnerReading from './data/el/reading/beginner.json';
+import elIntermediateReading from './data/el/reading/intermediate.json';
+import elAdvancedReading from './data/el/reading/advanced.json';
+
+// Import Hindi grammar data
+import { GRAMMAR_LESSONS_HI } from './data/hi/grammar/index.js';
+
+// Import Hindi sentence data
+import hiSentenceData from './data/hi/sentences.json';
+
+// Import Hindi dialogue data
+import hiRestaurantDialogue from './data/hi/dialogues/restaurant.json';
+import hiDirectionsDialogue from './data/hi/dialogues/directions.json';
+import hiShoppingDialogue from './data/hi/dialogues/shopping.json';
+import hiGreetingDialogue from './data/hi/dialogues/greeting.json';
+
+// Import Hindi reading data
+import hiBeginnerReading from './data/hi/reading/beginner.json';
+import hiIntermediateReading from './data/hi/reading/intermediate.json';
+import hiAdvancedReading from './data/hi/reading/advanced.json';
+
+// Import Arabic grammar data
+import { GRAMMAR_LESSONS_AR } from './data/ar/grammar/index.js';
+
+// Import Arabic sentence data
+import arSentenceData from './data/ar/sentences.json';
+
+// Import Arabic dialogue data
+import arRestaurantDialogue from './data/ar/dialogues/restaurant.json';
+import arDirectionsDialogue from './data/ar/dialogues/directions.json';
+import arShoppingDialogue from './data/ar/dialogues/shopping.json';
+import arGreetingDialogue from './data/ar/dialogues/greeting.json';
+
+// Import Arabic reading data
+import arBeginnerReading from './data/ar/reading/beginner.json';
+import arIntermediateReading from './data/ar/reading/intermediate.json';
+import arAdvancedReading from './data/ar/reading/advanced.json';
+
+// Import Korean grammar data
+import { GRAMMAR_LESSONS_KO } from './data/ko/grammar/index.js';
+
+// Import Korean sentence data
+import koSentenceData from './data/ko/sentences.json';
+
+// Import Korean dialogue data
+import koRestaurantDialogue from './data/ko/dialogues/restaurant.json';
+import koDirectionsDialogue from './data/ko/dialogues/directions.json';
+import koShoppingDialogue from './data/ko/dialogues/shopping.json';
+import koGreetingDialogue from './data/ko/dialogues/greeting.json';
+
+// Import Korean reading data
+import koBeginnerReading from './data/ko/reading/beginner.json';
+import koIntermediateReading from './data/ko/reading/intermediate.json';
+import koAdvancedReading from './data/ko/reading/advanced.json';
+
+// Import Chinese grammar data
+import { GRAMMAR_LESSONS_ZH } from './data/zh/grammar/index.js';
+
+// Import Chinese sentence data
+import zhSentenceData from './data/zh/sentences.json';
+
+// Import Chinese dialogue data
+import zhRestaurantDialogue from './data/zh/dialogues/restaurant.json';
+import zhDirectionsDialogue from './data/zh/dialogues/directions.json';
+import zhShoppingDialogue from './data/zh/dialogues/shopping.json';
+import zhGreetingDialogue from './data/zh/dialogues/greeting.json';
+
+// Import Chinese reading data
+import zhBeginnerReading from './data/zh/reading/beginner.json';
+import zhIntermediateReading from './data/zh/reading/intermediate.json';
+import zhAdvancedReading from './data/zh/reading/advanced.json';
+
+// Import Japanese grammar data
+import { GRAMMAR_LESSONS_JA } from './data/ja/grammar/index.js';
+
+// Import Japanese sentence data
+import jaSentenceData from './data/ja/sentences.json';
+
+// Import Japanese dialogue data
+import jaGreetingDialogue from './data/ja/dialogues/greeting.json';
+import jaRestaurantDialogue from './data/ja/dialogues/restaurant.json';
+import jaShoppingDialogue from './data/ja/dialogues/shopping.json';
+import jaDirectionsDialogue from './data/ja/dialogues/directions.json';
+
+// Import Japanese reading data
+import jaBeginnerReading from './data/ja/reading/beginner.json';
+import jaIntermediateReading from './data/ja/reading/intermediate.json';
+import jaAdvancedReading from './data/ja/reading/advanced.json';
 
 // Import vocabulary theme data
 import colorsData from './data/vocabulary/themes/colors.json';
@@ -178,9 +310,73 @@ const DE_ALL_READING_PASSAGES = [
   ...deAdvancedReading.passages
 ];
 
+const ES_GRAMMAR_LESSONS = GRAMMAR_LESSONS_ES;
+const ES_DIALOGUES = [esRestaurantDialogue, esDirectionsDialogue, esShoppingDialogue, esGreetingDialogue];
+const ES_ALL_READING_PASSAGES = [
+  ...esBeginnerReading.passages,
+  ...esIntermediateReading.passages,
+  ...esAdvancedReading.passages
+];
+
+const FR_GRAMMAR_LESSONS = GRAMMAR_LESSONS_FR;
+const FR_DIALOGUES = [frRestaurantDialogue, frDirectionsDialogue, frShoppingDialogue, frGreetingDialogue];
+const FR_ALL_READING_PASSAGES = [
+  ...frBeginnerReading.passages,
+  ...frIntermediateReading.passages,
+  ...frAdvancedReading.passages
+];
+
+const EL_GRAMMAR_LESSONS = GRAMMAR_LESSONS_EL;
+const EL_DIALOGUES = [elRestaurantDialogue, elDirectionsDialogue, elShoppingDialogue, elGreetingDialogue];
+const EL_ALL_READING_PASSAGES = [
+  ...elBeginnerReading.passages,
+  ...elIntermediateReading.passages,
+  ...elAdvancedReading.passages
+];
+
+const HI_GRAMMAR_LESSONS = GRAMMAR_LESSONS_HI;
+const HI_DIALOGUES = [hiRestaurantDialogue, hiDirectionsDialogue, hiShoppingDialogue, hiGreetingDialogue];
+const HI_ALL_READING_PASSAGES = [
+  ...hiBeginnerReading.passages,
+  ...hiIntermediateReading.passages,
+  ...hiAdvancedReading.passages
+];
+
+const AR_GRAMMAR_LESSONS = GRAMMAR_LESSONS_AR;
+const AR_DIALOGUES = [arRestaurantDialogue, arDirectionsDialogue, arShoppingDialogue, arGreetingDialogue];
+const AR_ALL_READING_PASSAGES = [
+  ...arBeginnerReading.passages,
+  ...arIntermediateReading.passages,
+  ...arAdvancedReading.passages
+];
+
+const KO_GRAMMAR_LESSONS = GRAMMAR_LESSONS_KO;
+const KO_DIALOGUES = [koRestaurantDialogue, koDirectionsDialogue, koShoppingDialogue, koGreetingDialogue];
+const KO_ALL_READING_PASSAGES = [
+  ...koBeginnerReading.passages,
+  ...koIntermediateReading.passages,
+  ...koAdvancedReading.passages
+];
+
+const ZH_GRAMMAR_LESSONS = GRAMMAR_LESSONS_ZH;
+const ZH_DIALOGUES = [zhRestaurantDialogue, zhDirectionsDialogue, zhShoppingDialogue, zhGreetingDialogue];
+const ZH_ALL_READING_PASSAGES = [
+  ...zhBeginnerReading.passages,
+  ...zhIntermediateReading.passages,
+  ...zhAdvancedReading.passages
+];
+
+const JA_GRAMMAR_LESSONS = GRAMMAR_LESSONS_JA;
+const JA_DIALOGUES = [jaRestaurantDialogue, jaDirectionsDialogue, jaShoppingDialogue, jaGreetingDialogue];
+const JA_ALL_READING_PASSAGES = [
+  ...jaBeginnerReading.passages,
+  ...jaIntermediateReading.passages,
+  ...jaAdvancedReading.passages
+];
+
 function buildCategoryFlashcardSetsForLang(langCode) {
   const allWords = getAllVocabularyWords(langCode);
-  const nameField = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
+  const nameField = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : langCode === 'es' ? 'nameEs' : langCode === 'fr' ? 'nameFr' : langCode === 'el' ? 'nameEl' : langCode === 'hi' ? 'nameHi' : langCode === 'ar' ? 'nameAr' : langCode === 'ko' ? 'nameKo' : langCode === 'zh' ? 'nameZh' : langCode === 'ja' ? 'nameJa' : 'nameUk';
   const sets = [];
   for (const [groupId, group] of Object.entries(CATEGORY_GROUPS)) {
     const catSet = new Set(group.categories);
@@ -291,8 +487,16 @@ function splitByScript(text) {
 
 /** Speak mixed-language text: Cyrillic via local model, Latin via English Silero. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
-  // German is all-Latin — route directly to German TTS, never English
+  // Non-Cyrillic scripts — route directly to their TTS, never English
   if (lang === 'de') return speakUkrainian(text, rate, volume, 'de');
+  if (lang === 'es') return speakUkrainian(text, rate, volume, 'es');
+  if (lang === 'fr') return speakUkrainian(text, rate, volume, 'fr');
+  if (lang === 'el') return speakUkrainian(text, rate, volume, 'el');
+  if (lang === 'hi') return speakUkrainian(text, rate, volume, 'hi');
+  if (lang === 'ar') return speakUkrainian(text, rate, volume, 'ar');
+  if (lang === 'ko') return speakUkrainian(text, rate, volume, 'ko');
+  if (lang === 'zh') return speakUkrainian(text, rate, volume, 'zh');
+  if (lang === 'ja') return speakUkrainian(text, rate, volume, 'ja');
   const chunks = splitByScript(text);
   if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'cyrillic')) {
     return speakUkrainian(text, rate, volume, lang);
@@ -396,29 +600,30 @@ export default function UkrainianTypingGame() {
   const CURRENT_LESSONS = langData.lessons;
   const CURRENT_ALPHABET = langData.alphabetChallenge;
   const CURRENT_TRANSLATIONS = langData.translations;
+  const nameField = langData.nameField; // e.g. 'nameUk', 'nameHi', 'nameAr', 'nameKo'
   const letterField = langData.targetField; // 'uk' or 'ru' - used to access keyboard data
   const phoneticField = langData.phoneticField; // 'ukrainianPhonetic' or 'russianPhonetic'
-  const CURRENT_ENCOURAGEMENTS = currentLanguage === 'ru' ? ENCOURAGEMENTS_RU : currentLanguage === 'de' ? ENCOURAGEMENTS_DE : ENCOURAGEMENTS;
-  const CURRENT_MISTAKE_MESSAGES = currentLanguage === 'ru' ? MISTAKE_MESSAGES_RU : currentLanguage === 'de' ? MISTAKE_MESSAGES_DE : MISTAKE_MESSAGES;
+  const CURRENT_ENCOURAGEMENTS = currentLanguage === 'ru' ? ENCOURAGEMENTS_RU : currentLanguage === 'de' ? ENCOURAGEMENTS_DE : currentLanguage === 'es' ? ENCOURAGEMENTS_ES : currentLanguage === 'fr' ? ENCOURAGEMENTS_FR : currentLanguage === 'el' ? ENCOURAGEMENTS_EL : currentLanguage === 'hi' ? ENCOURAGEMENTS_HI : currentLanguage === 'ar' ? ENCOURAGEMENTS_AR : currentLanguage === 'ko' ? ENCOURAGEMENTS_KO : currentLanguage === 'zh' ? ENCOURAGEMENTS_ZH : currentLanguage === 'ja' ? ENCOURAGEMENTS_JA : ENCOURAGEMENTS;
+  const CURRENT_MISTAKE_MESSAGES = currentLanguage === 'ru' ? MISTAKE_MESSAGES_RU : currentLanguage === 'de' ? MISTAKE_MESSAGES_DE : currentLanguage === 'es' ? MISTAKE_MESSAGES_ES : currentLanguage === 'fr' ? MISTAKE_MESSAGES_FR : currentLanguage === 'el' ? MISTAKE_MESSAGES_EL : currentLanguage === 'hi' ? MISTAKE_MESSAGES_HI : currentLanguage === 'ar' ? MISTAKE_MESSAGES_AR : currentLanguage === 'ko' ? MISTAKE_MESSAGES_KO : currentLanguage === 'zh' ? MISTAKE_MESSAGES_ZH : currentLanguage === 'ja' ? MISTAKE_MESSAGES_JA : MISTAKE_MESSAGES;
   const normalizeVocabSet = (set) => ({
     ...set,
-    nameUk: currentLanguage === 'ru' ? set.nameRu || set.nameUk : currentLanguage === 'de' ? set.nameDe || set.nameEn || set.nameUk : set.nameUk,
+    nameUk: currentLanguage === 'ru' ? set.nameRu || set.nameUk : currentLanguage === 'de' ? set.nameDe || set.nameEn || set.nameUk : currentLanguage === 'es' ? set.nameEs || set.nameEn || set.nameUk : currentLanguage === 'fr' ? set.nameFr || set.nameEn || set.nameUk : currentLanguage === 'el' ? set.nameEl || set.nameEn || set.nameUk : currentLanguage === 'hi' ? set.nameHi || set.nameEn || set.nameUk : currentLanguage === 'ar' ? set.nameAr || set.nameEn || set.nameUk : currentLanguage === 'ko' ? set.nameKo || set.nameEn || set.nameUk : currentLanguage === 'zh' ? set.nameZh || set.nameEn || set.nameUk : currentLanguage === 'ja' ? set.nameJa || set.nameEn || set.nameUk : set.nameUk,
     words: set.words.map(w => ({
       ...w,
-      uk: currentLanguage === 'ru' ? (w.ru || w.uk) : currentLanguage === 'de' ? (w.de || w.en || w.uk) : w.uk,
-      phonetic: currentLanguage === 'ru' ? (w.phoneticRu || w.phonetic || '') : currentLanguage === 'de' ? (w.phoneticDe || w.phonetic || '') : (w.phoneticUk || w.phonetic || ''),
+      uk: currentLanguage === 'ru' ? (w.ru || w.uk) : currentLanguage === 'de' ? (w.de || w.en || w.uk) : currentLanguage === 'es' ? (w.es || w.en || w.uk) : currentLanguage === 'fr' ? (w.fr || w.en || w.uk) : currentLanguage === 'el' ? (w.el || w.en || w.uk) : currentLanguage === 'hi' ? (w.hi || w.en || w.uk) : currentLanguage === 'ar' ? (w.ar || w.en || w.uk) : currentLanguage === 'ko' ? (w.ko || w.en || w.uk) : currentLanguage === 'zh' ? (w.zh || w.en || w.uk) : currentLanguage === 'ja' ? (w.ja || w.en || w.uk) : w.uk,
+      phonetic: currentLanguage === 'ru' ? (w.phoneticRu || w.phonetic || '') : currentLanguage === 'de' ? (w.phoneticDe || w.phonetic || '') : currentLanguage === 'es' ? (w.phoneticEs || w.phonetic || '') : currentLanguage === 'fr' ? (w.frPhonetic || w.phonetic || '') : currentLanguage === 'el' ? (w.elPhonetic || w.phonetic || '') : currentLanguage === 'hi' ? (w.hiPhonetic || w.phonetic || '') : currentLanguage === 'ar' ? (w.arPhonetic || w.phonetic || '') : currentLanguage === 'ko' ? (w.koPhonetic || w.phonetic || '') : currentLanguage === 'zh' ? (w.zhPhonetic || w.phonetic || '') : currentLanguage === 'ja' ? (w.jaPhonetic || w.phonetic || '') : (w.phoneticUk || w.phonetic || ''),
       examples: Array.isArray(w.examples) ? w.examples :
-        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : currentLanguage === 'de' ? (w.examples.de || []) : (w.examples.uk || [])) : []),
+        (w.examples ? (currentLanguage === 'ru' ? (w.examples.ru || []) : currentLanguage === 'de' ? (w.examples.de || []) : currentLanguage === 'es' ? (w.examples.es || []) : currentLanguage === 'fr' ? (w.examples.fr || []) : currentLanguage === 'el' ? (w.examples.el || []) : currentLanguage === 'hi' ? (w.examples.hi || []) : currentLanguage === 'ar' ? (w.examples.ar || []) : currentLanguage === 'ko' ? (w.examples.ko || []) : currentLanguage === 'zh' ? (w.examples.zh || []) : currentLanguage === 'ja' ? (w.examples.ja || []) : (w.examples.uk || [])) : []),
       examplesEn: Array.isArray(w.examples) ? [] :
         (w.examples ? (w.examples.en || []) : [])
     }))
   });
   const CURRENT_VOCAB_THEMES = VOCABULARY_THEMES.map(normalizeVocabSet);
   const CURRENT_ADULT_VOCAB = normalizeVocabSet(ADULT_VOCABULARY);
-  const CURRENT_GRAMMAR = currentLanguage === 'ru' ? RU_GRAMMAR_LESSONS : currentLanguage === 'de' ? DE_GRAMMAR_LESSONS : GRAMMAR_LESSONS;
-  const CURRENT_DIALOGUES = currentLanguage === 'ru' ? RU_DIALOGUES : currentLanguage === 'de' ? DE_DIALOGUES : DIALOGUES;
-  const CURRENT_SENTENCES = currentLanguage === 'ru' ? ruSentenceData : currentLanguage === 'de' ? deSentenceData : sentenceData;
-  const CURRENT_READING = currentLanguage === 'ru' ? RU_ALL_READING_PASSAGES : currentLanguage === 'de' ? DE_ALL_READING_PASSAGES : ALL_READING_PASSAGES;
+  const CURRENT_GRAMMAR = currentLanguage === 'ru' ? RU_GRAMMAR_LESSONS : currentLanguage === 'de' ? DE_GRAMMAR_LESSONS : currentLanguage === 'es' ? ES_GRAMMAR_LESSONS : currentLanguage === 'fr' ? FR_GRAMMAR_LESSONS : currentLanguage === 'el' ? EL_GRAMMAR_LESSONS : currentLanguage === 'hi' ? HI_GRAMMAR_LESSONS : currentLanguage === 'ar' ? AR_GRAMMAR_LESSONS : currentLanguage === 'ko' ? KO_GRAMMAR_LESSONS : currentLanguage === 'zh' ? ZH_GRAMMAR_LESSONS : currentLanguage === 'ja' ? JA_GRAMMAR_LESSONS : GRAMMAR_LESSONS;
+  const CURRENT_DIALOGUES = currentLanguage === 'ru' ? RU_DIALOGUES : currentLanguage === 'de' ? DE_DIALOGUES : currentLanguage === 'es' ? ES_DIALOGUES : currentLanguage === 'fr' ? FR_DIALOGUES : currentLanguage === 'el' ? EL_DIALOGUES : currentLanguage === 'hi' ? HI_DIALOGUES : currentLanguage === 'ar' ? AR_DIALOGUES : currentLanguage === 'ko' ? KO_DIALOGUES : currentLanguage === 'zh' ? ZH_DIALOGUES : currentLanguage === 'ja' ? JA_DIALOGUES : DIALOGUES;
+  const CURRENT_SENTENCES = currentLanguage === 'ru' ? ruSentenceData : currentLanguage === 'de' ? deSentenceData : currentLanguage === 'es' ? esSentenceData : currentLanguage === 'fr' ? frSentenceData : currentLanguage === 'el' ? elSentenceData : currentLanguage === 'hi' ? hiSentenceData : currentLanguage === 'ar' ? arSentenceData : currentLanguage === 'ko' ? koSentenceData : currentLanguage === 'zh' ? zhSentenceData : currentLanguage === 'ja' ? jaSentenceData : sentenceData;
+  const CURRENT_READING = currentLanguage === 'ru' ? RU_ALL_READING_PASSAGES : currentLanguage === 'de' ? DE_ALL_READING_PASSAGES : currentLanguage === 'es' ? ES_ALL_READING_PASSAGES : currentLanguage === 'fr' ? FR_ALL_READING_PASSAGES : currentLanguage === 'el' ? EL_ALL_READING_PASSAGES : currentLanguage === 'hi' ? HI_ALL_READING_PASSAGES : currentLanguage === 'ar' ? AR_ALL_READING_PASSAGES : currentLanguage === 'ko' ? KO_ALL_READING_PASSAGES : currentLanguage === 'zh' ? ZH_ALL_READING_PASSAGES : currentLanguage === 'ja' ? JA_ALL_READING_PASSAGES : ALL_READING_PASSAGES;
   const CURRENT_DICT_SETS = buildCategoryFlashcardSetsForLang(currentLanguage);
 
   // Game state
@@ -631,13 +836,15 @@ export default function UkrainianTypingGame() {
     } catch (e) {
       console.log('[Save] Could not save before language switch:', e);
     }
+    // Save, switch, stay in current mode
     setCurrentLanguage(newLang);
     storageSet('typingGameLanguage', newLang);
-    setGameMode('menu');
     setStreak(0);
+    setCurrentInput('');
+    setCurrentIndex(0);
+    setCurrentTarget('');
     setExploreSelectedKey(null);
     setSelectedVocabSet(null);
-    // Load new language progress (also sets isReadyToSave)
     loadProgress(newLang);
   }, [currentLanguage, loadProgress, buildSaveData, langData.storageKey]);
   
@@ -1029,10 +1236,10 @@ export default function UkrainianTypingGame() {
         </div>
       </div>
       <div className="finger-legend">
-        <span style={{color: fingerColors['pinky-l']}}>● {currentLanguage === 'ru' ? 'Мизинец' : currentLanguage === 'de' ? 'Kleiner Finger' : 'Мізинець'} (Pinky)</span>
-        <span style={{color: fingerColors['ring-l']}}>● {currentLanguage === 'ru' ? 'Безымянный' : currentLanguage === 'de' ? 'Ringfinger' : 'Безіменний'} (Ring)</span>
-        <span style={{color: fingerColors['middle-l']}}>● {currentLanguage === 'ru' ? 'Средний' : currentLanguage === 'de' ? 'Mittelfinger' : 'Середній'} (Middle)</span>
-        <span style={{color: fingerColors['index-l']}}>● {currentLanguage === 'ru' ? 'Указательный' : currentLanguage === 'de' ? 'Zeigefinger' : 'Вказівний'} (Index)</span>
+        <span style={{color: fingerColors['pinky-l']}}>● {{ uk:'Мізинець', ru:'Мизинец', de:'Kleiner Finger', es:'Meñique', fr:'Auriculaire', el:'Μικρό', hi:'कनिष्ठा', ar:'الخنصر', ko:'새끼', zh:'小指', ja:'小指' }[currentLanguage] || 'Pinky'} (Pinky)</span>
+        <span style={{color: fingerColors['ring-l']}}>● {{ uk:'Безіменний', ru:'Безымянный', de:'Ringfinger', es:'Anular', fr:'Annulaire', el:'Παράμεσος', hi:'अनामिका', ar:'البنصر', ko:'약지', zh:'无名指', ja:'薬指' }[currentLanguage] || 'Ring'} (Ring)</span>
+        <span style={{color: fingerColors['middle-l']}}>● {{ uk:'Середній', ru:'Средний', de:'Mittelfinger', es:'Medio', fr:'Majeur', el:'Μεσαίο', hi:'मध्यमा', ar:'الوسطى', ko:'중지', zh:'中指', ja:'中指' }[currentLanguage] || 'Middle'} (Middle)</span>
+        <span style={{color: fingerColors['index-l']}}>● {{ uk:'Вказівний', ru:'Указательный', de:'Zeigefinger', es:'Índice', fr:'Index', el:'Δείκτης', hi:'तर्जनी', ar:'السبابة', ko:'검지', zh:'食指', ja:'人差し指' }[currentLanguage] || 'Index'} (Index)</span>
       </div>
     </div>
   );
@@ -1064,9 +1271,10 @@ export default function UkrainianTypingGame() {
   // Keyboard setup modal
   const KeyboardSetupModal = () => {
     const langName = langData.name;
-    const exampleA = currentLanguage === 'ru' ? 'Ф' : currentLanguage === 'de' ? 'A' : 'Ф';
-    const exampleS = currentLanguage === 'ru' ? 'Ы' : currentLanguage === 'de' ? 'S' : 'І';
-    const gotIt = currentLanguage === 'ru' ? 'Понятно!' : currentLanguage === 'de' ? 'Verstanden!' : 'Зрозуміло!';
+    const homeRow = langData.homeRowLetters.split(' ');
+    const exampleA = homeRow[0] || 'A';
+    const exampleS = homeRow[1] || 'S';
+    const gotIt = { uk: 'Зрозуміло!', ru: 'Понятно!', de: 'Verstanden!', es: '¡Entendido!', fr: 'Compris !', el: 'Κατάλαβα!', hi: 'समझ गया!', ar: 'فهمت!', ko: '알겠어요!', zh: '明白了!', ja: 'わかりました！' }[currentLanguage] || 'Got it!';
     return (
       <div className="modal-overlay" onClick={() => setShowKeyboardSetup(false)}>
         <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -1124,7 +1332,7 @@ export default function UkrainianTypingGame() {
           <span className="level-number">Lesson {level}</span>
         </div>
         <div className="level-name">{lesson.name}</div>
-        {lesson.nameUk && <div className="level-name-uk">{lesson.nameUk}</div>}
+        {lesson[nameField] && <div className="level-name-uk">{lesson[nameField]}</div>}
         <div className="level-desc">
           {unlocked ? lesson.description : `🔒 Requires ${lesson.requiredXp} XP`}
         </div>
@@ -1403,7 +1611,7 @@ export default function UkrainianTypingGame() {
                     setSelectedVocabSet({
                       setId: 'random',
                       nameEn: 'Random (All Words)',
-                      nameUk: currentLanguage === 'ru' ? 'Случайные (Все слова)' : 'Випадкові (Всі слова)',
+                      nameUk: { uk:'Випадкові (Всі слова)', ru:'Случайные (Все слова)', de:'Zufällig (Alle Wörter)', es:'Aleatorio (Todas)', fr:'Aléatoire (Tous)', el:'Τυχαία (Όλα)', hi:'यादृच्छिक (सभी)', ar:'عشوائي (الكل)', ko:'랜덤 (전체)', zh:'随机 (全部)', ja:'ランダム (全部)' }[currentLanguage] || 'Random (All Words)',
                       difficulty: 'Mixed',
                       icon: '🎲',
                       words: shuffled.map(w => ({
@@ -1423,7 +1631,7 @@ export default function UkrainianTypingGame() {
                   <div className="theme-icon">🎲</div>
                   <div className="theme-info">
                     <h3>Random (All Words)</h3>
-                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'Случайные (Все слова)' : 'Випадкові (Всі слова)'}</p>
+                    <p className="theme-name-uk">{{ uk:'Випадкові (Всі слова)', ru:'Случайные (Все слова)', de:'Zufällig (Alle Wörter)', es:'Aleatorio (Todas)', fr:'Aléatoire (Tous)', el:'Τυχαία (Όλα)', hi:'यादृच्छिक (सभी)', ar:'عشوائي (الكل)', ko:'랜덤 (전체)', zh:'随机 (全部)', ja:'ランダム (全部)' }[currentLanguage] || 'Random (All Words)'}</p>
                     <div className="theme-meta">
                       <span className="theme-difficulty" style={{ color: '#ffd700' }}>Mixed</span>
                       <span className="theme-word-count">{getAllVocabularyWords(currentLanguage).length} words</span>
@@ -1446,7 +1654,7 @@ export default function UkrainianTypingGame() {
                     setSelectedVocabSet({
                       setId: 'random-difficulty',
                       nameEn: `Random (${randomDifficulty})`,
-                      nameUk: currentLanguage === 'ru' ? `Случайные (${randomDifficulty})` : `Випадкові (${randomDifficulty})`,
+                      nameUk: ({ uk:'Випадкові', ru:'Случайные', de:'Zufällig', es:'Aleatorio', fr:'Aléatoire', el:'Τυχαία', hi:'यादृच्छिक', ar:'عشوائي', ko:'랜덤', zh:'随机', ja:'ランダム' }[currentLanguage] || 'Random') + ` (${randomDifficulty})`,
                       difficulty: randomDifficulty,
                       icon: '🎯',
                       words: shuffled.map(w => ({
@@ -1766,7 +1974,7 @@ export default function UkrainianTypingGame() {
             
             <div className="explore-header">
               <h2>🔍 Explore the {langData.name} Keyboard</h2>
-              <p>Click any key to learn about it! {currentLanguage === 'ru' ? 'Познакомься с клавиатурой!' : currentLanguage === 'de' ? 'Erkunde die Tastatur!' : 'Познайомся з клавіатурою!'}</p>
+              <p>Click any key to learn about it! {{ uk:'Познайомся з клавіатурою!', ru:'Познакомься с клавиатурой!', de:'Erkunde die Tastatur!', es:'¡Explora el teclado!', fr:'Explore le clavier !', el:'Εξερεύνησε το πληκτρολόγιο!', hi:'कीबोर्ड को जानें!', ar:'استكشف لوحة المفاتيح!', ko:'키보드를 탐색해 보세요!', zh:'探索键盘！', ja:'キーボードを探索しましょう！' }[currentLanguage] || 'Explore the keyboard!'}</p>
             </div>
 
             <div className="keyboard explore-mode">
@@ -1840,7 +2048,7 @@ export default function UkrainianTypingGame() {
             ) : (
               <div className="key-info-panel empty">
                 <p>👆 Click a key above to see details</p>
-                <p className="hint-uk">{currentLanguage === 'ru' ? 'Нажми на клавишу выше' : currentLanguage === 'de' ? 'Klicke auf eine Taste oben' : 'Натисни на клавішу вище'}</p>
+                <p className="hint-uk">{{ uk:'Натисни на клавішу вище', ru:'Нажми на клавишу выше', de:'Klicke auf eine Taste oben', es:'Haz clic en una tecla arriba', fr:'Clique sur une touche ci-dessus', el:'Κάνε κλικ σε ένα πλήκτρο', hi:'ऊपर किसी कुंजी पर क्लिक करें', ar:'انقر على مفتاح أعلاه', ko:'위의 키를 클릭하세요', zh:'点击上方的键来了解它！', ja:'上のキーをクリックして学びましょう！' }[currentLanguage] || 'Click a key above'}</p>
               </div>
             )}
             
@@ -2118,7 +2326,7 @@ export default function UkrainianTypingGame() {
             {gameMode !== 'alphabet' && (
               <div className="lesson-header">
                 <h2>{CURRENT_LESSONS[currentLevel].name}</h2>
-                {CURRENT_LESSONS[currentLevel].nameUk && <p className="lesson-name-uk">{CURRENT_LESSONS[currentLevel].nameUk}</p>}
+                {CURRENT_LESSONS[currentLevel][nameField] && <p className="lesson-name-uk">{CURRENT_LESSONS[currentLevel][nameField]}</p>}
                 <p>{CURRENT_LESSONS[currentLevel].hint}</p>
               </div>
             )}
@@ -2128,7 +2336,7 @@ export default function UkrainianTypingGame() {
               <>
                 <div className="lesson-header">
                   <h2>{CURRENT_ALPHABET.name}</h2>
-                  <p className="lesson-name-uk">{CURRENT_ALPHABET.nameUk}</p>
+                  <p className="lesson-name-uk">{CURRENT_ALPHABET[nameField]}</p>
                   <p>{CURRENT_ALPHABET.hint}</p>
                 </div>
                 <div className="alphabet-stats">

@@ -1,0 +1,132 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping at the Market",
+  "nameAr": "التسوق في السوق",
+  "icon": "🛍️",
+  "context": "You are shopping at a traditional market in Fez. A merchant selling handcrafted goods invites you to look at his wares.",
+  "characters": {
+    "npc": { "name": "التاجر" },
+    "player": { "name": "أنت" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "تفضّل يا أخي! عندي أجمل البضائع في السوق. ادخل وانظر!",
+      "translation": "Welcome, my friend! I have the most beautiful goods in the market. Come in and look!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Show interest and say you are looking for a gift.",
+      "acceptedResponses": [
+        "شكراً! أبحث عن هدية لعائلتي.",
+        "مرحباً! أريد أن أشتري هدية تذكارية.",
+        "أهلاً! هل عندك هدايا جميلة؟ أبحث عن شيء مميّز.",
+        "شكراً! أريد هدية من المغرب لأصدقائي."
+      ],
+      "keyWords": ["أبحث", "هدية"],
+      "hint": "Say 'أبحث عن هدية' (I'm looking for a gift) or 'أريد أن أشتري' (I want to buy)."
+    },
+    {
+      "speaker": "npc",
+      "text": "عندي سجّاد مغربي تقليدي، وأطباق من الخزف، وفوانيس نحاسية. ما الذي يعجبك؟",
+      "translation": "I have traditional Moroccan carpets, ceramic plates, and brass lanterns. What do you like?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask to see one of the items more closely.",
+      "acceptedResponses": [
+        "هذا الفانوس النحاسي جميل. هل يمكنني أن أراه عن قرب؟",
+        "أعجبتني هذه الأطباق. هل يمكنني أن أنظر إليها؟",
+        "السجّاد جميل جدّاً! هل يمكنني أن ألمسه؟",
+        "أريد أن أرى الفوانيس من فضلك."
+      ],
+      "keyWords": ["جميل", "أن أرى"],
+      "hint": "Say something is 'جميل' (beautiful) and ask 'هل يمكنني أن أرى' (can I see)."
+    },
+    {
+      "speaker": "npc",
+      "text": "تفضّل! هذا مصنوع يدوياً. كلّ قطعة فريدة. هذا بثلاثمئة درهم.",
+      "translation": "Here you go! This is handmade. Every piece is unique. This one is three hundred dirhams."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say the price is too high and offer a lower price.",
+      "acceptedResponses": [
+        "ثلاثمئة درهم؟ هذا غالٍ جدّاً! ما رأيك في مئة وخمسين؟",
+        "السعر مرتفع. هل يمكن بمئتي درهم؟",
+        "غالٍ كثيراً! أعطيك مئة وخمسين درهماً.",
+        "هذا كثير. هل يمكنك أن تخفّض السعر؟ مئة وخمسون درهماً؟"
+      ],
+      "keyWords": ["غالٍ", "درهم"],
+      "hint": "Say 'غالٍ جدّاً' (too expensive) and suggest a lower price."
+    },
+    {
+      "speaker": "npc",
+      "text": "يا أخي، هذا سعر خاصّ لك! لكن أقلّ سعر هو مئتان وخمسون درهماً.",
+      "translation": "My friend, this is a special price for you! But the lowest price is two hundred and fifty dirhams."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Continue negotiating and meet him in the middle.",
+      "acceptedResponses": [
+        "ما رأيك في مئتي درهم؟ هذا سعر عادل.",
+        "أعطيك مئتي درهم. هذا آخر عرض.",
+        "مئتا درهم وأنا أشتريه الآن.",
+        "هل نتّفق على مئتي درهم؟"
+      ],
+      "keyWords": ["مئتي", "درهم"],
+      "hint": "Offer a middle price like 'مئتي درهم' and say it's fair."
+    },
+    {
+      "speaker": "npc",
+      "text": "حسناً، مئتان وعشرون درهماً ونتّفق. هذا آخر سعر!",
+      "translation": "Alright, two hundred and twenty dirhams and we have a deal. That's the final price!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept the deal and ask if he can wrap it.",
+      "acceptedResponses": [
+        "اتّفقنا! هل يمكنك أن تغلّفه كهدية من فضلك؟",
+        "حسناً، موافق! هل تستطيع أن تلفّه لي؟",
+        "قبلتُ! من فضلك غلّفه جيّداً.",
+        "اتّفقنا على مئتين وعشرين. هل يمكنك تغليفه؟"
+      ],
+      "keyWords": ["اتّفقنا", "تغلّف"],
+      "hint": "Say 'اتّفقنا' (we have a deal) and ask 'هل يمكنك أن تغلّفه' (can you wrap it)."
+    },
+    {
+      "speaker": "npc",
+      "text": "بالتأكيد! هل تدفع نقداً أم ببطاقة؟",
+      "translation": "Of course! Are you paying cash or by card?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how you will pay and thank him.",
+      "acceptedResponses": [
+        "سأدفع نقداً. تفضّل. شكراً جزيلاً!",
+        "نقداً من فضلك. شكراً لك!",
+        "هل يمكنني الدفع ببطاقة؟ شكراً!",
+        "سأدفع نقداً. شكراً يا أخي!"
+      ],
+      "keyWords": ["نقداً", "شكراً"],
+      "hint": "Say 'نقداً' (cash) or 'ببطاقة' (by card) and thank with 'شكراً'."
+    },
+    {
+      "speaker": "npc",
+      "text": "شكراً لك يا صديقي! تفضّل هديتك. أتمنّى أن تعجب عائلتك. تعال مرّة أخرى!",
+      "translation": "Thank you, my friend! Here is your gift. I hope your family likes it. Come again!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say goodbye and compliment his shop.",
+      "acceptedResponses": [
+        "شكراً! عندك بضائع رائعة. مع السلامة!",
+        "شكراً جزيلاً! محلّك جميل جدّاً. إلى اللقاء!",
+        "أشكرك! سأعود مرّة أخرى إن شاء الله. مع السلامة!",
+        "شكراً يا صديقي! بضائعك ممتازة. مع السلامة!"
+      ],
+      "keyWords": ["شكراً", "مع السلامة"],
+      "hint": "Compliment with 'رائعة' (wonderful) or 'جميل' (beautiful) and say 'مع السلامة'."
+    }
+  ]
+}

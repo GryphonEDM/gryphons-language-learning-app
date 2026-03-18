@@ -1,0 +1,121 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "El cambio climático",
+      "titleEn": "Climate Change",
+      "difficulty": "B2",
+      "text": "El cambio climático es uno de los desafíos más urgentes a los que se enfrenta la humanidad en el siglo XXI. Los científicos advierten que, a menos que se tomen medidas drásticas en las próximas décadas, las consecuencias podrían ser catastróficas. El aumento de las temperaturas globales provoca el deshielo de los polos, la elevación del nivel del mar y la intensificación de fenómenos meteorológicos extremos como huracanes, sequías e inundaciones. Es fundamental que los gobiernos del mundo adopten políticas energéticas más sostenibles y que reduzcan su dependencia de los combustibles fósiles. Sin embargo, el cambio también depende del comportamiento individual. Que cada ciudadano reduzca su huella de carbono —ya sea usando transporte público, consumiendo menos carne o eligiendo energías renovables— es igualmente importante. Aunque muchos países ya han firmado acuerdos internacionales como el Acuerdo de París, el ritmo de acción sigue siendo insuficiente. La crisis climática no conoce fronteras y exige una respuesta global, coordinada y, sobre todo, urgente.",
+      "wordGlossary": {
+        "desafíos": "challenges",
+        "a menos que": "unless (subjunctive trigger)",
+        "deshielo": "melting / thawing (of ice)",
+        "sequías": "droughts",
+        "inundaciones": "floods",
+        "combustibles fósiles": "fossil fuels",
+        "huella de carbono": "carbon footprint",
+        "energías renovables": "renewable energies",
+        "acuerdos": "agreements / accords",
+        "exige": "demands / requires"
+      },
+      "questions": [
+        {
+          "question": "According to the text, what is a direct consequence of rising global temperatures?",
+          "options": ["Increased agricultural production", "Melting of the poles and rising sea levels", "More frequent snowfall in temperate regions", "Stronger winds in coastal cities"],
+          "correctIndex": 1,
+          "explanation": "The text states 'El aumento de las temperaturas globales provoca el deshielo de los polos, la elevación del nivel del mar' — rising global temperatures cause the melting of the poles and rising sea levels."
+        },
+        {
+          "question": "What is the text's view on the Paris Agreement?",
+          "options": ["It is sufficient to solve the climate crisis", "It has been signed by all countries in the world", "It has been signed by many countries but the pace of action is still insufficient", "It focuses only on reducing fossil fuels"],
+          "correctIndex": 2,
+          "explanation": "The text says 'muchos países ya han firmado acuerdos internacionales como el Acuerdo de París, el ritmo de acción sigue siendo insuficiente' — many countries have signed it but the pace of action is still insufficient."
+        },
+        {
+          "question": "What grammatical structure is used in the phrase 'a menos que se tomen medidas drásticas'?",
+          "options": ["The imperfect indicative", "The preterite tense", "The present subjunctive", "The conditional tense"],
+          "correctIndex": 2,
+          "explanation": "'A menos que' (unless) is one of the conjunctions that always requires the subjunctive. 'Se tomen' is the present subjunctive form of 'tomar'."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "La globalización cultural",
+      "titleEn": "Cultural Globalization",
+      "difficulty": "B2",
+      "text": "La globalización ha transformado profundamente el panorama cultural del mundo contemporáneo. Gracias a internet y a las plataformas de contenido digital, una persona en Buenos Aires puede disfrutar de una serie coreana, escuchar música africana y leer literatura escandinava el mismo día. Sin embargo, este intercambio aparentemente enriquecedor esconde también ciertos riesgos. Aunque la diversidad cultural parece estar más accesible que nunca, en la práctica existe una tendencia preocupante hacia la homogeneización: los mismos productos culturales —producidos principalmente en Estados Unidos— dominan los mercados globales. A pesar de los esfuerzos de muchas comunidades por preservar sus lenguas y tradiciones, numerosas culturas minoritarias se encuentran en peligro de desaparición. No obstante, hay motivos para el optimismo. Cada vez más artistas de todo el mundo están logrando visibilidad global sin renunciar a sus raíces culturales. El fenómeno del K-pop coreano o el auge de la música latina son ejemplos claros de cómo las culturas no anglófonas pueden competir en el escenario internacional. En definitiva, la globalización cultural es un fenómeno ambivalente: conecta el mundo, pero también puede homogeneizarlo si no se protegen activamente las identidades locales.",
+      "wordGlossary": {
+        "panorama": "landscape / panorama / scene",
+        "sin embargo": "however / nevertheless",
+        "enriquecedor": "enriching",
+        "homogeneización": "homogenisation",
+        "a pesar de": "despite / in spite of",
+        "no obstante": "nonetheless / nevertheless",
+        "renunciar a": "to give up / to renounce",
+        "auge": "rise / boom / peak",
+        "anglófonas": "English-speaking",
+        "ambivalente": "ambivalent / double-edged"
+      },
+      "questions": [
+        {
+          "question": "What risk of cultural globalisation does the text identify?",
+          "options": ["That people will stop using the internet", "That cultural products from the USA will dominate global markets", "That Korean series will become too popular", "That people will lose interest in foreign cultures"],
+          "correctIndex": 1,
+          "explanation": "The text warns of 'una tendencia preocupante hacia la homogeneización: los mismos productos culturales —producidos principalmente en Estados Unidos— dominan los mercados globales' — a worrying tendency towards homogenisation dominated by US-produced content."
+        },
+        {
+          "question": "Which examples does the text give of non-English-speaking cultures succeeding globally?",
+          "options": ["Bollywood cinema and Japanese anime", "K-pop and Latin music", "French cinema and Brazilian football", "Scandinavian literature and African music"],
+          "correctIndex": 1,
+          "explanation": "The text explicitly mentions 'El fenómeno del K-pop coreano o el auge de la música latina' as examples of non-English-speaking cultures competing on the international stage."
+        },
+        {
+          "question": "How does the text ultimately characterise cultural globalisation?",
+          "options": ["As entirely positive because it connects the world", "As entirely negative because it destroys local cultures", "As ambivalent — connecting the world but potentially homogenising it", "As irrelevant to most people's daily lives"],
+          "correctIndex": 2,
+          "explanation": "The final sentence states 'la globalización cultural es un fenómeno ambivalente: conecta el mundo, pero también puede homogeneizarlo' — it is ambivalent: it connects the world but can also homogenise it."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Historia de la lengua española",
+      "titleEn": "History of the Spanish Language",
+      "difficulty": "B2",
+      "text": "El español, conocido también como castellano, es hablado hoy en día por más de 500 millones de personas en el mundo, lo que lo convierte en la segunda lengua más hablada como lengua materna. Sus orígenes se remontan al latín vulgar que fue introducido en la Península Ibérica durante la conquista romana, entre los siglos III y II antes de Cristo. A lo largo de los siglos, la lengua fue evolucionando y diferenciándose del latín original, proceso que se aceleró tras la caída del Imperio Romano. Durante la Edad Media, el castellano fue consolidándose como la lengua dominante de Castilla y fue empleado en documentos oficiales a partir del siglo XIII. La Reconquista y la posterior unificación de los reinos peninsulares bajo los Reyes Católicos impulsaron su expansión. Con la llegada de los españoles al continente americano en 1492, el castellano fue llevado a territorios vastísimos donde se mezcló con cientos de lenguas indígenas, lo que enriqueció enormemente su vocabulario. En los siglos siguientes, el español fue reconocido como lengua internacional y es actualmente uno de los seis idiomas oficiales de las Naciones Unidas.",
+      "wordGlossary": {
+        "se remontan": "go back / date back to",
+        "latín vulgar": "Vulgar Latin (spoken Latin)",
+        "a lo largo de": "throughout / over the course of",
+        "fue evolucionando": "was evolving (past progressive)",
+        "fue empleado": "was used / was employed (passive)",
+        "Reconquista": "the Reconquista (Christian reconquest of Iberia)",
+        "impulsaron": "drove / promoted / boosted (preterite)",
+        "vastísimos": "vast / enormous (superlative)",
+        "enriqueció": "enriched (preterite)",
+        "Naciones Unidas": "United Nations"
+      },
+      "questions": [
+        {
+          "question": "What language did Spanish evolve from?",
+          "options": ["Ancient Greek", "Arabic", "Vulgar Latin", "Gothic"],
+          "correctIndex": 2,
+          "explanation": "The text states 'Sus orígenes se remontan al latín vulgar que fue introducido en la Península Ibérica durante la conquista romana' — its origins go back to the Vulgar Latin introduced during the Roman conquest."
+        },
+        {
+          "question": "What happened to the Spanish language when it reached the Americas in 1492?",
+          "options": ["It replaced all indigenous languages immediately", "It mixed with hundreds of indigenous languages, greatly enriching its vocabulary", "It became a simplified version of the original", "It split into dozens of completely different languages"],
+          "correctIndex": 1,
+          "explanation": "The text says 'se mezcló con cientos de lenguas indígenas, lo que enriqueció enormemente su vocabulario' — it mixed with hundreds of indigenous languages, which enormously enriched its vocabulary."
+        },
+        {
+          "question": "The sentence 'el castellano fue llevado a territorios vastísimos' is an example of which grammatical construction?",
+          "options": ["The present perfect", "A passive construction using 'ser' + past participle", "The reflexive passive", "The future tense"],
+          "correctIndex": 1,
+          "explanation": "'Fue llevado' (was carried/brought) uses the verb 'ser' + past participle 'llevado', which is the standard passive construction in Spanish. The agent (los españoles) performs the action on the subject (el castellano)."
+        }
+      ]
+    }
+  ]
+}

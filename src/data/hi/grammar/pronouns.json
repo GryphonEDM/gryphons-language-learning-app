@@ -1,0 +1,116 @@
+{
+  "lessonId": "pronouns",
+  "nameEn": "Pronouns",
+  "nameHi": "सर्वनाम",
+  "icon": "👤",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "personal-pronouns",
+      "title": "Personal Pronouns (पुरुषवाचक सर्वनाम)",
+      "explanation": "Hindi personal pronouns distinguish three levels of formality in the second person, which is one of the most important features of the language. First person: मैं (I) and हम (we). Second person: तू (you, very intimate/informal), तुम (you, informal but respectful), and आप (you, formal/polite). Third person: यह (this/he/she, nearby) and वह (that/he/she, distant), with plurals ये (these/they, nearby) and वे (those/they, distant). Hindi pronouns do not distinguish gender — वह can mean 'he' or 'she' depending on context.",
+      "tip": "Choosing the right 'you' is crucial in Hindi. Use आप with elders, strangers, and in formal settings. Use तुम with friends and peers. Reserve तू for very close relationships or prayer — using it with the wrong person can be rude.",
+      "examples": [
+        { "hi": "मैं छात्र हूँ", "en": "I am a student — मैं is the first person singular pronoun", "highlight": "मैं" },
+        { "hi": "आप कैसे हैं?", "en": "How are you? (formal) — आप is the polite form of 'you'", "highlight": "आप" },
+        { "hi": "तुम कहाँ हो?", "en": "Where are you? (informal) — तुम is used with friends and peers", "highlight": "तुम" },
+        { "hi": "वह डॉक्टर है", "en": "He/She is a doctor — वह can refer to any gender", "highlight": "वह" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun would you use to address a teacher or elder politely?",
+          "options": ["आप", "तुम", "तू"],
+          "correctIndex": 0,
+          "explanation": "आप is the formal and polite form of 'you'. It is used with elders, teachers, strangers, and in any formal context. Using तुम or तू with an elder would be considered disrespectful."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does the pronoun वह (he/she) change based on gender?",
+          "options": ["No, वह is used for both 'he' and 'she'", "Yes, वह is masculine only", "Yes, वह is feminine only"],
+          "correctIndex": 0,
+          "explanation": "Hindi pronouns do not change based on gender. वह can mean 'he', 'she', or even 'it' — context and verb agreement reveal the gender. For example, वह जाता है (he goes) vs. वह जाती है (she goes)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of मैं (I)?",
+          "options": ["हम (we)", "ये (these)", "वे (those)"],
+          "correctIndex": 0,
+          "explanation": "हम means 'we' and is the plural of मैं (I). Note that हम is also sometimes used as a singular 'I' in a formal or royal sense, though this usage is less common in modern speech."
+        }
+      ]
+    },
+    {
+      "sectionId": "oblique-pronouns",
+      "title": "Oblique Pronoun Forms",
+      "explanation": "When pronouns are followed by a postposition, they change to their oblique form — just like nouns do. The key oblique forms are: मैं → मुझ, तू → तुझ, तुम → तुम (unchanged), आप → आप (unchanged), यह → इस, वह → उस, हम → हम (unchanged), ये → इन, वे → उन. Some pronouns also have special combined forms with common postpositions: मुझको or मुझे (to me), तुमको or तुम्हें (to you), उसको or उसे (to him/her), and हमको or हमें (to us). These contracted forms are very common in spoken Hindi.",
+      "tip": "The merged forms (मुझे, तुम्हें, उसे, हमें, इसे, इन्हें, उन्हें) are much more common in everyday speech than the full forms (मुझको, तुमको, etc.). Learn the merged forms first as they are what you will hear most often.",
+      "examples": [
+        { "hi": "मुझे पानी चाहिए", "en": "I need water — मुझे is the oblique मुझ + को (merged form)", "highlight": "मुझे" },
+        { "hi": "उसको बताओ", "en": "Tell him/her — उसको = उस (oblique of वह) + को", "highlight": "उसको" },
+        { "hi": "इसमें क्या है?", "en": "What is in this? — इसमें = इस (oblique of यह) + में", "highlight": "इसमें" },
+        { "hi": "हमें जाना है", "en": "We have to go — हमें is the merged form of हमको", "highlight": "हमें" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the oblique form of वह (he/she) before a postposition?",
+          "options": ["उस", "वह", "इस"],
+          "correctIndex": 0,
+          "explanation": "वह changes to उस in the oblique case. For example: उसको (to him/her), उसमें (in that), उसपर (on that). The nearby pronoun यह changes to इस in the oblique case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does मुझे mean?",
+          "options": ["To me / for me", "I / me (subject)", "My / mine"],
+          "correctIndex": 0,
+          "explanation": "मुझे is the merged form of मुझ + को, meaning 'to me' or 'for me'. It is extremely common: मुझे भूख लगी है (I am hungry, literally 'to me hunger has occurred'), मुझे पसंद है (I like it, literally 'to me it is liked')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair correctly shows a pronoun and its oblique form?",
+          "options": ["यह → इस", "मैं → मेरा", "आप → उन"],
+          "correctIndex": 0,
+          "explanation": "यह (this/he/she nearby) becomes इस in the oblique case before postpositions. मेरा is actually the possessive form of मैं (not oblique), and उन is the oblique of वे (not आप)."
+        }
+      ]
+    },
+    {
+      "sectionId": "possessive-pronouns",
+      "title": "Possessive Pronouns (अधिकारवाचक सर्वनाम)",
+      "explanation": "Hindi possessive pronouns work like the postposition का/के/की — they agree in gender and number with the thing possessed, not the possessor. The possessive forms are: मेरा/मेरी/मेरे (my), तेरा/तेरी/तेरे (your, intimate), तुम्हारा/तुम्हारी/तुम्हारे (your, informal), आपका/आपकी/आपके (your, formal), इसका/इसकी/इसके (his/her/its, nearby), उसका/उसकी/उसके (his/her/its, distant), हमारा/हमारी/हमारे (our), and उनका/उनकी/उनके (their). The -ा form is for masculine singular, -ी for feminine, and -े for masculine plural or oblique.",
+      "tip": "Remember: the possessive ending matches the thing owned, not the owner. So a man says मेरी किताब (my book) with -ी because किताब is feminine, even though the speaker is male.",
+      "examples": [
+        { "hi": "मेरा नाम", "en": "my name — मेरा (masculine) because नाम is masculine", "highlight": "मेरा" },
+        { "hi": "मेरी किताब", "en": "my book — मेरी (feminine) because किताब is feminine", "highlight": "मेरी" },
+        { "hi": "आपका घर", "en": "your house (formal) — आपका (masculine) because घर is masculine", "highlight": "आपका" },
+        { "hi": "उनके बच्चे", "en": "their children — उनके (masculine plural) because बच्चे is masculine plural", "highlight": "उनके" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'my name' in Hindi? (नाम is masculine)",
+          "options": ["मेरा नाम", "मेरी नाम", "मेरे नाम"],
+          "correctIndex": 0,
+          "explanation": "Since नाम (name) is masculine singular, the possessive form must also be masculine singular: मेरा. So 'my name' is मेरा नाम. If the noun were feminine, you would use मेरी."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A male speaker wants to say 'my mother' (माँ is feminine). Which form is correct?",
+          "options": ["मेरी माँ", "मेरा माँ", "मेरे माँ"],
+          "correctIndex": 0,
+          "explanation": "The possessive agrees with the noun being possessed, not the speaker. Since माँ (mother) is feminine, the correct form is मेरी माँ — regardless of whether the speaker is male or female."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the formal possessive for 'your' when the possessed noun is feminine?",
+          "options": ["आपकी", "आपका", "तुम्हारी"],
+          "correctIndex": 0,
+          "explanation": "आपकी is the feminine form of the formal possessive 'your'. For example: आपकी बेटी (your daughter). तुम्हारी is also feminine but informal. आपका is the masculine form."
+        }
+      ]
+    }
+  ]
+}

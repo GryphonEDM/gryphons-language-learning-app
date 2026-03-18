@@ -16,13 +16,45 @@
       "en": "family",
       "phoneticUk": "simya",
       "phoneticRu": "sem'ya",
-      "phoneticDe": "fa-mee-lee-uh",
+      "phoneticDe": "fah-MEE-lee-eh",
       "examples": {
-        "uk": ["Наша сім'я дуже дружна.", "У нас велика і весела сім'я."],
-        "ru": ["наша семья очень дружная и крепкая", "большая семья собралась за праздничным столом"],
-        "de": ["Unsere Familie ist sehr eng zusammen.", "Wir haben eine große und fröhliche Familie."],
-        "en": ["Our family is very close.", "We have a big and cheerful family."]
-      }
+        "uk": [
+          "Наша сім'я дуже дружна.",
+          "У нас велика і весела сім'я."
+        ],
+        "ru": [
+          "наша семья очень дружная и крепкая",
+          "большая семья собралась за праздничным столом"
+        ],
+        "de": [
+          "Unsere Familie ist sehr eng zusammen.",
+          "Wir haben eine große und fröhliche Familie."
+        ],
+        "en": [
+          "Our family is very close.",
+          "We have a big and cheerful family."
+        ],
+        "es": [
+          "Mi familia es muy grande.",
+          "La familia se reúne los domingos."
+        ]
+      },
+      "es": "familia",
+      "phoneticEs": "fah-MEE-lyah",
+      "fr": "famille",
+      "frPhonetic": "fa-MEE",
+      "el": "οικογένεια",
+      "elPhonetic": "i-ko-YE-ni-a",
+      "hi": "परिवार",
+      "hiPhonetic": "pa-ri-VAAR",
+      "ar": "عَائِلَة",
+      "arPhonetic": "AA-i-la",
+      "ko": "가족",
+      "koPhonetic": "GA-jok",
+      "zh": "家庭",
+      "zhPhonetic": "jiātíng",
+      "ja": "家族",
+      "jaPhonetic": "KA-zoku"
     },
     {
       "uk": "мати",
@@ -31,13 +63,45 @@
       "en": "mother",
       "phoneticUk": "maty",
       "phoneticRu": "mat'",
-      "phoneticDe": "moo-ter",
+      "phoneticDe": "MOO-ter",
       "examples": {
-        "uk": ["Моя мати готує смачний обід.", "Мати дуже любить своїх дітей."],
-        "ru": ["мать любит своих детей больше всего", "моя мать готовит вкусный обед"],
-        "de": ["Meine Mutter kocht ein leckeres Mittagessen.", "Eine Mutter liebt ihre Kinder sehr."],
-        "en": ["My mother cooks a delicious lunch.", "A mother loves her children very much."]
-      }
+        "uk": [
+          "Моя мати готує смачний обід.",
+          "Мати дуже любить своїх дітей."
+        ],
+        "ru": [
+          "мать любит своих детей больше всего",
+          "моя мать готовит вкусный обед"
+        ],
+        "de": [
+          "Meine Mutter kocht ein leckeres Mittagessen.",
+          "Eine Mutter liebt ihre Kinder sehr."
+        ],
+        "en": [
+          "My mother cooks a delicious lunch.",
+          "A mother loves her children very much."
+        ],
+        "es": [
+          "Mi madre cocina muy bien.",
+          "La madre abraza a su hijo."
+        ]
+      },
+      "es": "madre",
+      "phoneticEs": "MAH-dreh",
+      "fr": "mère",
+      "frPhonetic": "MAIR",
+      "el": "μητέρα",
+      "elPhonetic": "mi-TE-ra",
+      "hi": "माँ",
+      "hiPhonetic": "MAAN",
+      "ar": "أُمّ",
+      "arPhonetic": "UMM",
+      "ko": "어머니",
+      "koPhonetic": "eo-MEO-ni",
+      "zh": "母亲",
+      "zhPhonetic": "mǔqīn",
+      "ja": "母",
+      "jaPhonetic": "haha"
     },
     {
       "uk": "батько",
@@ -46,13 +110,45 @@
       "en": "father",
       "phoneticUk": "batko",
       "phoneticRu": "otets",
-      "phoneticDe": "fah-ter",
+      "phoneticDe": "FAH-ter",
       "examples": {
-        "uk": ["Мій батько працює щодня.", "Батько читає книгу ввечері."],
-        "ru": ["отец работает в офисе каждый день", "мой отец читает газету по утрам"],
-        "de": ["Mein Vater arbeitet jeden Tag.", "Der Vater liest abends ein Buch."],
-        "en": ["My father works every day.", "Father reads a book in the evening."]
-      }
+        "uk": [
+          "Мій батько працює щодня.",
+          "Батько читає книгу ввечері."
+        ],
+        "ru": [
+          "отец работает в офисе каждый день",
+          "мой отец читает газету по утрам"
+        ],
+        "de": [
+          "Mein Vater arbeitet jeden Tag.",
+          "Der Vater liest abends ein Buch."
+        ],
+        "en": [
+          "My father works every day.",
+          "Father reads a book in the evening."
+        ],
+        "es": [
+          "Mi padre trabaja en la ciudad.",
+          "El padre lleva a los niños al parque."
+        ]
+      },
+      "es": "padre",
+      "phoneticEs": "PAH-dreh",
+      "fr": "père",
+      "frPhonetic": "PEHR",
+      "el": "πατέρας",
+      "elPhonetic": "pa-TE-ras",
+      "hi": "पिता",
+      "hiPhonetic": "pi-TAA",
+      "ar": "أَب",
+      "arPhonetic": "AB",
+      "ko": "아버지",
+      "koPhonetic": "a-BO-ji",
+      "zh": "父亲",
+      "zhPhonetic": "fùqīn",
+      "ja": "父",
+      "jaPhonetic": "chichi"
     },
     {
       "uk": "син",
@@ -61,13 +157,45 @@
       "en": "son",
       "phoneticUk": "syn",
       "phoneticRu": "syn",
-      "phoneticDe": "zohn",
+      "phoneticDe": "ZOHN",
       "examples": {
-        "uk": ["Мій син ходить до першого класу.", "Наш старший син допомагає батькові."],
-        "ru": ["сын помогает отцу в гараже", "наш сын ходит в первый класс"],
-        "de": ["Mein Sohn geht in die erste Klasse.", "Unser älterer Sohn hilft dem Vater."],
-        "en": ["My son is in first grade.", "Our older son helps his father."]
-      }
+        "uk": [
+          "Мій син ходить до першого класу.",
+          "Наш старший син допомагає батькові."
+        ],
+        "ru": [
+          "сын помогает отцу в гараже",
+          "наш сын ходит в первый класс"
+        ],
+        "de": [
+          "Mein Sohn geht in die erste Klasse.",
+          "Unser älterer Sohn hilft dem Vater."
+        ],
+        "en": [
+          "My son is in first grade.",
+          "Our older son helps his father."
+        ],
+        "es": [
+          "Su hijo tiene cinco años.",
+          "El hijo ayuda a su padre."
+        ]
+      },
+      "es": "hijo",
+      "phoneticEs": "EE-hoh",
+      "fr": "fils",
+      "frPhonetic": "FEES",
+      "el": "γιος",
+      "elPhonetic": "YIOS",
+      "hi": "बेटा",
+      "hiPhonetic": "BE-taa",
+      "ar": "اِبْن",
+      "arPhonetic": "IBN",
+      "ko": "아들",
+      "koPhonetic": "A-dul",
+      "zh": "儿子",
+      "zhPhonetic": "érzi",
+      "ja": "息子",
+      "jaPhonetic": "musuko"
     },
     {
       "uk": "донька",
@@ -76,13 +204,45 @@
       "en": "daughter",
       "phoneticUk": "donka",
       "phoneticRu": "doch'",
-      "phoneticDe": "tokh-ter",
+      "phoneticDe": "TOKH-ter",
       "examples": {
-        "uk": ["Моя донька схожа на маму.", "Наша донька вчиться в університеті."],
-        "ru": ["дочь похожа на свою мать", "наша дочь учится в университете"],
-        "de": ["Meine Tochter sieht ihrer Mutter ähnlich.", "Unsere Tochter studiert an der Universität."],
-        "en": ["My daughter looks like her mom.", "Our daughter studies at university."]
-      }
+        "uk": [
+          "Моя донька схожа на маму.",
+          "Наша донька вчиться в університеті."
+        ],
+        "ru": [
+          "дочь похожа на свою мать",
+          "наша дочь учится в университете"
+        ],
+        "de": [
+          "Meine Tochter sieht ihrer Mutter ähnlich.",
+          "Unsere Tochter studiert an der Universität."
+        ],
+        "en": [
+          "My daughter looks like her mom.",
+          "Our daughter studies at university."
+        ],
+        "es": [
+          "Su hija estudia medicina.",
+          "La hija llama a su madre todos los días."
+        ]
+      },
+      "es": "hija",
+      "phoneticEs": "EE-hah",
+      "fr": "fille",
+      "frPhonetic": "FEE-yuh",
+      "el": "κόρη",
+      "elPhonetic": "KO-ri",
+      "hi": "बेटी",
+      "hiPhonetic": "BE-tee",
+      "ar": "بِنْت",
+      "arPhonetic": "BINT",
+      "ko": "딸",
+      "koPhonetic": "TTAL",
+      "zh": "女儿",
+      "zhPhonetic": "nǚ'ér",
+      "ja": "娘",
+      "jaPhonetic": "musume"
     },
     {
       "uk": "брат",
@@ -91,13 +251,45 @@
       "en": "brother",
       "phoneticUk": "brat",
       "phoneticRu": "brat",
-      "phoneticDe": "broo-der",
+      "phoneticDe": "BROO-der",
       "examples": {
-        "uk": ["Мій брат завжди мені допомагає.", "Старший брат навчається в школі."],
-        "ru": ["мой брат учится в старшей школе", "старший брат всегда помогает мне"],
-        "de": ["Mein Bruder hilft mir immer.", "Mein älterer Bruder geht zur Schule."],
-        "en": ["My brother always helps me.", "My older brother studies at school."]
-      }
+        "uk": [
+          "Мій брат завжди мені допомагає.",
+          "Старший брат навчається в школі."
+        ],
+        "ru": [
+          "мой брат учится в старшей школе",
+          "старший брат всегда помогает мне"
+        ],
+        "de": [
+          "Mein Bruder hilft mir immer.",
+          "Mein älterer Bruder geht zur Schule."
+        ],
+        "en": [
+          "My brother always helps me.",
+          "My older brother studies at school."
+        ],
+        "es": [
+          "Mi hermano vive en Madrid.",
+          "El hermano mayor cuida a los pequeños."
+        ]
+      },
+      "es": "hermano",
+      "phoneticEs": "ehr-MAH-noh",
+      "fr": "frère",
+      "frPhonetic": "FREHR",
+      "el": "αδερφός",
+      "elPhonetic": "a-der-FOS",
+      "hi": "भाई",
+      "hiPhonetic": "BHAA-ee",
+      "ar": "أَخ",
+      "arPhonetic": "AKH",
+      "ko": "형제",
+      "koPhonetic": "HYONG-je",
+      "zh": "兄弟",
+      "zhPhonetic": "xiōngdì",
+      "ja": "兄弟",
+      "jaPhonetic": "kyoudai"
     },
     {
       "uk": "сестра",
@@ -106,43 +298,139 @@
       "en": "sister",
       "phoneticUk": "sestra",
       "phoneticRu": "sestra",
-      "phoneticDe": "shves-ter",
+      "phoneticDe": "SHVES-ter",
       "examples": {
-        "uk": ["Моя сестра грає на піаніно.", "Молодша сестра малює гарні картини."],
-        "ru": ["моя сестра играет на пианино", "младшая сестра рисует красивые картины"],
-        "de": ["Meine Schwester spielt Klavier.", "Meine jüngere Schwester malt schöne Bilder."],
-        "en": ["My sister plays the piano.", "My younger sister draws beautiful pictures."]
-      }
+        "uk": [
+          "Моя сестра грає на піаніно.",
+          "Молодша сестра малює гарні картини."
+        ],
+        "ru": [
+          "моя сестра играет на пианино",
+          "младшая сестра рисует красивые картины"
+        ],
+        "de": [
+          "Meine Schwester spielt Klavier.",
+          "Meine jüngere Schwester malt schöne Bilder."
+        ],
+        "en": [
+          "My sister plays the piano.",
+          "My younger sister draws beautiful pictures."
+        ],
+        "es": [
+          "Mi hermana es muy divertida.",
+          "La hermana le presta su ropa."
+        ]
+      },
+      "es": "hermana",
+      "phoneticEs": "ehr-MAH-nah",
+      "fr": "sœur",
+      "frPhonetic": "SUR",
+      "el": "αδερφή",
+      "elPhonetic": "a-der-FI",
+      "hi": "बहन",
+      "hiPhonetic": "BE-han",
+      "ar": "أُخْت",
+      "arPhonetic": "UKHT",
+      "ko": "자매",
+      "koPhonetic": "ja-ME",
+      "zh": "姐妹",
+      "zhPhonetic": "jiěmèi",
+      "ja": "姉妹",
+      "jaPhonetic": "shimai"
     },
     {
       "uk": "дідусь",
       "ru": "дедушка",
-      "de": "Großvater",
+      "de": "Großvater/Opa",
       "en": "grandfather",
       "phoneticUk": "didus",
       "phoneticRu": "dedushka",
-      "phoneticDe": "grohs-fah-ter",
+      "phoneticDe": "GROHS-fah-ter/OH-pah",
       "examples": {
-        "uk": ["Мій дідусь любить ходити на рибалку.", "Дідусь сидить у своєму улюбленому кріслі."],
-        "ru": ["дедушка сидит в любимом кресле", "мой дедушка любит ходить на рыбалку"],
-        "de": ["Mein Großvater geht gern angeln.", "Großvater sitzt in seinem Lieblingssessel."],
-        "en": ["My grandfather loves to go fishing.", "Grandfather sits in his favourite armchair."]
-      }
+        "uk": [
+          "Мій дідусь любить ходити на рибалку.",
+          "Дідусь сидить у своєму улюбленому кріслі."
+        ],
+        "ru": [
+          "дедушка сидит в любимом кресле",
+          "мой дедушка любит ходить на рыбалку"
+        ],
+        "de": [
+          "Mein Großvater geht gern angeln.",
+          "Großvater sitzt in seinem Lieblingssessel."
+        ],
+        "en": [
+          "My grandfather loves to go fishing.",
+          "Grandfather sits in his favourite armchair."
+        ],
+        "es": [
+          "Mi abuelo cuenta historias increíbles.",
+          "El abuelo juega con sus nietos."
+        ]
+      },
+      "es": "abuelo",
+      "phoneticEs": "ah-BWEH-loh",
+      "fr": "grand-père",
+      "frPhonetic": "grahn-PEHR",
+      "el": "παππούς",
+      "elPhonetic": "pa-POOS",
+      "hi": "दादा",
+      "hiPhonetic": "DAA-daa",
+      "ar": "جَدّ",
+      "arPhonetic": "JADD",
+      "ko": "할아버지",
+      "koPhonetic": "ha-RA-bo-ji",
+      "zh": "爷爷",
+      "zhPhonetic": "yéye",
+      "ja": "おじいさん",
+      "jaPhonetic": "ojiisan"
     },
     {
       "uk": "бабуся",
       "ru": "бабушка",
-      "de": "Großmutter",
+      "de": "Großmutter/Oma",
       "en": "grandmother",
       "phoneticUk": "babusya",
       "phoneticRu": "babushka",
-      "phoneticDe": "grohs-moo-ter",
+      "phoneticDe": "GROHS-moo-ter/OH-mah",
       "examples": {
-        "uk": ["Бабуся пече смачні пиріжки.", "Моя бабуся розповідає казки онукам."],
-        "ru": ["бабушка печёт вкусные пирожки", "моя бабушка рассказывает сказки внукам"],
-        "de": ["Großmutter backt leckere Kuchen.", "Meine Großmutter erzählt den Enkeln Märchen."],
-        "en": ["Grandmother bakes delicious pastries.", "My grandmother tells fairy tales to the grandchildren."]
-      }
+        "uk": [
+          "Бабуся пече смачні пиріжки.",
+          "Моя бабуся розповідає казки онукам."
+        ],
+        "ru": [
+          "бабушка печёт вкусные пирожки",
+          "моя бабушка рассказывает сказки внукам"
+        ],
+        "de": [
+          "Großmutter backt leckere Kuchen.",
+          "Meine Großmutter erzählt den Enkeln Märchen."
+        ],
+        "en": [
+          "Grandmother bakes delicious pastries.",
+          "My grandmother tells fairy tales to the grandchildren."
+        ],
+        "es": [
+          "Mi abuela hace la mejor sopa.",
+          "La abuela nos enseña a cocinar."
+        ]
+      },
+      "es": "abuela",
+      "phoneticEs": "ah-BWEH-lah",
+      "fr": "grand-mère",
+      "frPhonetic": "grahn-MEHR",
+      "el": "γιαγιά",
+      "elPhonetic": "ya-YA",
+      "hi": "दादी",
+      "hiPhonetic": "DAA-dee",
+      "ar": "جَدَّة",
+      "arPhonetic": "JAD-da",
+      "ko": "할머니",
+      "koPhonetic": "HAL-mo-ni",
+      "zh": "奶奶",
+      "zhPhonetic": "nǎinai",
+      "ja": "おばあさん",
+      "jaPhonetic": "obaasan"
     },
     {
       "uk": "дядько",
@@ -151,13 +439,45 @@
       "en": "uncle",
       "phoneticUk": "dyadko",
       "phoneticRu": "dyadya",
-      "phoneticDe": "on-kel",
+      "phoneticDe": "ON-kel",
       "examples": {
-        "uk": ["Мій дядько приїхав до нас у гості.", "Дядько живе в іншому місті."],
-        "ru": ["дядя приехал в гости из другого города", "мой дядя живёт в Москве уже десять лет"],
-        "de": ["Mein Onkel ist uns besuchen gekommen.", "Onkel wohnt in einer anderen Stadt."],
-        "en": ["My uncle came to visit us.", "Uncle lives in another city."]
-      }
+        "uk": [
+          "Мій дядько приїхав до нас у гості.",
+          "Дядько живе в іншому місті."
+        ],
+        "ru": [
+          "дядя приехал в гости из другого города",
+          "мой дядя живёт в Москве уже десять лет"
+        ],
+        "de": [
+          "Mein Onkel ist uns besuchen gekommen.",
+          "Onkel wohnt in einer anderen Stadt."
+        ],
+        "en": [
+          "My uncle came to visit us.",
+          "Uncle lives in another city."
+        ],
+        "es": [
+          "Mi tío vive en el extranjero.",
+          "El tío nos trae regalos de sus viajes."
+        ]
+      },
+      "es": "tío",
+      "phoneticEs": "TEE-oh",
+      "fr": "oncle",
+      "frPhonetic": "OHNK-luh",
+      "el": "θείος",
+      "elPhonetic": "THI-os",
+      "hi": "चाचा",
+      "hiPhonetic": "CHAA-chaa",
+      "ar": "عَمّ",
+      "arPhonetic": "AMM",
+      "ko": "삼촌",
+      "koPhonetic": "SAM-chon",
+      "zh": "叔叔",
+      "zhPhonetic": "shūshu",
+      "ja": "おじさん",
+      "jaPhonetic": "ojisan"
     },
     {
       "uk": "тітка",
@@ -166,13 +486,45 @@
       "en": "aunt",
       "phoneticUk": "titka",
       "phoneticRu": "tyotya",
-      "phoneticDe": "tan-tuh",
+      "phoneticDe": "TAN-teh",
       "examples": {
-        "uk": ["Моя тітка подарувала мені цікаву книгу.", "Тітка працює вчителькою в школі."],
-        "ru": ["тётя подарила мне интересную книгу", "моя тётя работает учителем в школе"],
-        "de": ["Meine Tante hat mir ein interessantes Buch geschenkt.", "Tante arbeitet als Lehrerin in der Schule."],
-        "en": ["My aunt gave me an interesting book.", "Aunt works as a teacher at school."]
-      }
+        "uk": [
+          "Моя тітка подарувала мені цікаву книгу.",
+          "Тітка працює вчителькою в школі."
+        ],
+        "ru": [
+          "тётя подарила мне интересную книгу",
+          "моя тётя работает учителем в школе"
+        ],
+        "de": [
+          "Meine Tante hat mir ein interessantes Buch geschenkt.",
+          "Tante arbeitet als Lehrerin in der Schule."
+        ],
+        "en": [
+          "My aunt gave me an interesting book.",
+          "Aunt works as a teacher at school."
+        ],
+        "es": [
+          "Mi tía es profesora de música.",
+          "La tía cuida a los niños los fines de semana."
+        ]
+      },
+      "es": "tía",
+      "phoneticEs": "TEE-ah",
+      "fr": "tante",
+      "frPhonetic": "TAHNT",
+      "el": "θεία",
+      "elPhonetic": "THI-a",
+      "hi": "चाची",
+      "hiPhonetic": "CHAA-chee",
+      "ar": "عَمَّة",
+      "arPhonetic": "AM-ma",
+      "ko": "이모",
+      "koPhonetic": "I-mo",
+      "zh": "阿姨",
+      "zhPhonetic": "āyí",
+      "ja": "おばさん",
+      "jaPhonetic": "obasan"
     },
     {
       "uk": "чоловік",
@@ -181,13 +533,45 @@
       "en": "husband",
       "phoneticUk": "cholovik",
       "phoneticRu": "muzh",
-      "phoneticDe": "eh-eh-man",
+      "phoneticDe": "AY-eh-mahn",
       "examples": {
-        "uk": ["Мій чоловік працює лікарем.", "Чоловік подарував дружині квіти."],
-        "ru": ["муж дарит цветы жене на праздник", "мой муж работает врачом в больнице"],
-        "de": ["Mein Ehemann arbeitet als Arzt.", "Der Ehemann hat seiner Frau Blumen geschenkt."],
-        "en": ["My husband works as a doctor.", "The husband gave his wife flowers."]
-      }
+        "uk": [
+          "Мій чоловік працює лікарем.",
+          "Чоловік подарував дружині квіти."
+        ],
+        "ru": [
+          "муж дарит цветы жене на праздник",
+          "мой муж работает врачом в больнице"
+        ],
+        "de": [
+          "Mein Ehemann arbeitet als Arzt.",
+          "Der Ehemann hat seiner Frau Blumen geschenkt."
+        ],
+        "en": [
+          "My husband works as a doctor.",
+          "The husband gave his wife flowers."
+        ],
+        "es": [
+          "Su esposo trabaja en una empresa grande.",
+          "El esposo prepara la cena esta noche."
+        ]
+      },
+      "es": "esposo",
+      "phoneticEs": "ehs-POH-soh",
+      "fr": "mari",
+      "frPhonetic": "mah-REE",
+      "el": "σύζυγος",
+      "elPhonetic": "SI-zi-gos",
+      "hi": "पति",
+      "hiPhonetic": "PA-ti",
+      "ar": "زَوْج",
+      "arPhonetic": "ZAWJ",
+      "ko": "남편",
+      "koPhonetic": "NAM-pyon",
+      "zh": "丈夫",
+      "zhPhonetic": "zhàngfu",
+      "ja": "夫",
+      "jaPhonetic": "otto"
     },
     {
       "uk": "дружина",
@@ -196,13 +580,45 @@
       "en": "wife",
       "phoneticUk": "druzhyna",
       "phoneticRu": "zhena",
-      "phoneticDe": "eh-eh-frow",
+      "phoneticDe": "AY-eh-frow",
       "examples": {
-        "uk": ["Моя дружина готує вечерю для всіх.", "Його дружина викладає математику в школі."],
-        "ru": ["жена готовит ужин для всей семьи", "его жена преподаёт математику в школе"],
-        "de": ["Meine Ehefrau kocht das Abendessen für alle.", "Seine Ehefrau unterrichtet Mathematik in der Schule."],
-        "en": ["My wife cooks dinner for everyone.", "His wife teaches maths at school."]
-      }
+        "uk": [
+          "Моя дружина готує вечерю для всіх.",
+          "Його дружина викладає математику в школі."
+        ],
+        "ru": [
+          "жена готовит ужин для всей семьи",
+          "его жена преподаёт математику в школе"
+        ],
+        "de": [
+          "Meine Ehefrau kocht das Abendessen für alle.",
+          "Seine Ehefrau unterrichtet Mathematik in der Schule."
+        ],
+        "en": [
+          "My wife cooks dinner for everyone.",
+          "His wife teaches maths at school."
+        ],
+        "es": [
+          "Su esposa es médica.",
+          "La esposa organiza las vacaciones familiares."
+        ]
+      },
+      "es": "esposa",
+      "phoneticEs": "ehs-POH-sah",
+      "fr": "femme",
+      "frPhonetic": "FAM",
+      "el": "σύζυγος",
+      "elPhonetic": "SI-zi-gos",
+      "hi": "पत्नी",
+      "hiPhonetic": "PAT-nee",
+      "ar": "زَوْجَة",
+      "arPhonetic": "ZAW-ja",
+      "ko": "아내",
+      "koPhonetic": "a-NE",
+      "zh": "妻子",
+      "zhPhonetic": "qīzi",
+      "ja": "妻",
+      "jaPhonetic": "tsuma"
     },
     {
       "uk": "онук",
@@ -211,13 +627,45 @@
       "en": "grandson",
       "phoneticUk": "onuk",
       "phoneticRu": "vnuk",
-      "phoneticDe": "en-kel",
+      "phoneticDe": "EN-kel",
       "examples": {
-        "uk": ["Мій онук ходить до дитячого садка.", "Онук допомагає дідусеві в городі."],
-        "ru": ["мой внук ходит в детский сад", "внук помогает дедушке в огороде"],
-        "de": ["Mein Enkel geht in den Kindergarten.", "Der Enkel hilft dem Großvater im Garten."],
-        "en": ["My grandson goes to kindergarten.", "The grandson helps his grandfather in the garden."]
-      }
+        "uk": [
+          "Мій онук ходить до дитячого садка.",
+          "Онук допомагає дідусеві в городі."
+        ],
+        "ru": [
+          "мой внук ходит в детский сад",
+          "внук помогает дедушке в огороде"
+        ],
+        "de": [
+          "Mein Enkel geht in den Kindergarten.",
+          "Der Enkel hilft dem Großvater im Garten."
+        ],
+        "en": [
+          "My grandson goes to kindergarten.",
+          "The grandson helps his grandfather in the garden."
+        ],
+        "es": [
+          "El nieto visita a sus abuelos cada verano.",
+          "Mi nieto aprendió a caminar hoy."
+        ]
+      },
+      "es": "nieto",
+      "phoneticEs": "NYEH-toh",
+      "fr": "petit-fils",
+      "frPhonetic": "puh-tee-FEES",
+      "el": "εγγονός",
+      "elPhonetic": "e-go-NOS",
+      "hi": "पोता",
+      "hiPhonetic": "PO-taa",
+      "ar": "حَفِيد",
+      "arPhonetic": "ha-FEED",
+      "ko": "손자",
+      "koPhonetic": "SON-ja",
+      "zh": "孙子",
+      "zhPhonetic": "sūnzi",
+      "ja": "孫",
+      "jaPhonetic": "mago"
     },
     {
       "uk": "онука",
@@ -226,13 +674,45 @@
       "en": "granddaughter",
       "phoneticUk": "onuka",
       "phoneticRu": "vnuchka",
-      "phoneticDe": "en-kel-in",
+      "phoneticDe": "EN-keh-lin",
       "examples": {
-        "uk": ["Моя онука навідує бабусю щонеділі.", "Онука любить малювати квіти."],
-        "ru": ["внучка навещает бабушку каждое воскресенье", "моя внучка любит рисовать цветы"],
-        "de": ["Meine Enkelin besucht die Großmutter jeden Sonntag.", "Die Enkelin malt gern Blumen."],
-        "en": ["My granddaughter visits her grandmother every Sunday.", "The granddaughter loves to draw flowers."]
-      }
+        "uk": [
+          "Моя онука навідує бабусю щонеділі.",
+          "Онука любить малювати квіти."
+        ],
+        "ru": [
+          "внучка навещает бабушку каждое воскресенье",
+          "моя внучка любит рисовать цветы"
+        ],
+        "de": [
+          "Meine Enkelin besucht die Großmutter jeden Sonntag.",
+          "Die Enkelin malt gern Blumen."
+        ],
+        "en": [
+          "My granddaughter visits her grandmother every Sunday.",
+          "The granddaughter loves to draw flowers."
+        ],
+        "es": [
+          "La nieta le lee cuentos a su abuela.",
+          "Mi nieta tiene los ojos de su madre."
+        ]
+      },
+      "es": "nieta",
+      "phoneticEs": "NYEH-tah",
+      "fr": "petite-fille",
+      "frPhonetic": "puh-teet-FEE-yuh",
+      "el": "εγγονή",
+      "elPhonetic": "e-go-NI",
+      "hi": "पोती",
+      "hiPhonetic": "PO-tee",
+      "ar": "حَفِيدَة",
+      "arPhonetic": "ha-FEE-da",
+      "ko": "손녀",
+      "koPhonetic": "SON-nyo",
+      "zh": "孙女",
+      "zhPhonetic": "sūnnǚ",
+      "ja": "孫娘",
+      "jaPhonetic": "magomusume"
     },
     {
       "uk": "дитина",
@@ -241,13 +721,45 @@
       "en": "child",
       "phoneticUk": "dytyna",
       "phoneticRu": "rebyonok",
-      "phoneticDe": "kint",
+      "phoneticDe": "KINT",
       "examples": {
-        "uk": ["Маленька дитина грається у дворі.", "Дитина спить у своєму ліжечку."],
-        "ru": ["ребёнок играет с мячом во дворе", "маленький ребёнок спит в кроватке"],
-        "de": ["Das kleine Kind spielt auf dem Hof.", "Das Kind schläft in seinem Bettchen."],
-        "en": ["The little child plays in the yard.", "The child is sleeping in their cot."]
-      }
+        "uk": [
+          "Маленька дитина грається у дворі.",
+          "Дитина спить у своєму ліжечку."
+        ],
+        "ru": [
+          "ребёнок играет с мячом во дворе",
+          "маленький ребёнок спит в кроватке"
+        ],
+        "de": [
+          "Das kleine Kind spielt auf dem Hof.",
+          "Das Kind schläft in seinem Bettchen."
+        ],
+        "en": [
+          "The little child plays in the yard.",
+          "The child is sleeping in their cot."
+        ],
+        "es": [
+          "El niño juega en el jardín.",
+          "Ese niño es muy curioso."
+        ]
+      },
+      "es": "niño",
+      "phoneticEs": "NEE-nyoh",
+      "fr": "enfant",
+      "frPhonetic": "an-FAN",
+      "el": "παιδί",
+      "elPhonetic": "pe-THI",
+      "hi": "बच्चा",
+      "hiPhonetic": "BACH-chaa",
+      "ar": "طِفْل",
+      "arPhonetic": "TIFL",
+      "ko": "아이",
+      "koPhonetic": "A-i",
+      "zh": "孩子",
+      "zhPhonetic": "háizi",
+      "ja": "子供",
+      "jaPhonetic": "kodomo"
     },
     {
       "uk": "батьки",
@@ -256,13 +768,53 @@
       "en": "parents",
       "phoneticUk": "batky",
       "phoneticRu": "roditeli",
-      "phoneticDe": "el-tern",
+      "phoneticDe": "EL-tern",
       "examples": {
-        "uk": ["Мої батьки піклуються про нас.", "Батьки живуть у тихому селі."],
-        "ru": ["родители заботятся о своих детях", "мои родители живут в тихой деревне"],
-        "de": ["Meine Eltern kümmern sich um uns.", "Die Eltern wohnen in einem ruhigen Dorf."],
-        "en": ["My parents take care of us.", "The parents live in a quiet village."]
-      }
+        "uk": [
+          "Мої батьки піклуються про нас.",
+          "Батьки живуть у тихому селі."
+        ],
+        "ru": [
+          "родители заботятся о своих детях",
+          "мои родители живут в тихой деревне"
+        ],
+        "de": [
+          "Meine Eltern kümmern sich um uns.",
+          "Die Eltern wohnen in einem ruhigen Dorf."
+        ],
+        "en": [
+          "My parents take care of us.",
+          "The parents live in a quiet village."
+        ],
+        "es": [
+          "Mis padres viven en el campo.",
+          "Los padres apoyan a sus hijos en todo."
+        ]
+      },
+      "es": "padres",
+      "phoneticEs": "PAH-drehs",
+      "fr": "parents",
+      "frPhonetic": "pa-RAHN",
+      "el": "γονείς",
+      "elPhonetic": "go-NIS",
+      "hi": "माता-पिता",
+      "hiPhonetic": "MAA-taa PI-taa",
+      "ar": "والدان",
+      "arPhonetic": "waa-li-DAAN",
+      "ko": "부모님",
+      "koPhonetic": "bu-MO-nim",
+      "zh": "父母",
+      "zhPhonetic": "fùmǔ",
+      "ja": "両親",
+      "jaPhonetic": "ryoushin"
     }
-  ]
+  ],
+  "nameEs": "Familia",
+  "nameFr": "La famille",
+  "nameEl": "Η οικογένεια",
+  "nameHi": "परिवार",
+  "nameAr": "العائلة",
+  "nameKo": "가족",
+  "nameZh": "家庭",
+  "nameJa": "家族"
 }

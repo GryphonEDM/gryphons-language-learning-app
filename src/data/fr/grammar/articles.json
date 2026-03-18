@@ -1,0 +1,139 @@
+{
+  "lessonId": "articles",
+  "nameEn": "Articles",
+  "nameFr": "Les articles",
+  "icon": "📝",
+  "tier": "A1",
+  "prerequisites": ["nouns-gender"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "definite-articles",
+      "title": "Definite Articles (le, la, les)",
+      "explanation": "Definite articles mean 'the' and refer to something specific. In French, the article must match the gender and number of the noun. Use 'le' before masculine singular nouns, 'la' before feminine singular nouns, 'l'' before any noun starting with a vowel or silent h, and 'les' before any plural noun. Note two important contractions: 'de + le' becomes 'du' and 'de + les' becomes 'des'; likewise 'à + le' becomes 'au' and 'à + les' becomes 'aux'.",
+      "tip": "When a noun begins with a vowel sound (including silent h), always use l' regardless of gender. For contractions, only le and les contract — la and l' stay separate after de or à.",
+      "examples": [
+        { "fr": "Le garçon lit le livre.", "en": "The boy reads the book.", "highlight": "Le" },
+        { "fr": "La mère et la fille sont à la maison.", "en": "The mother and the daughter are at home.", "highlight": "La" },
+        { "fr": "L'ami de Paul parle à l'école.", "en": "Paul's friend speaks at the school.", "highlight": "L'" },
+        { "fr": "L'homme ouvre l'heure de la réunion.", "en": "The man opens the meeting time.", "highlight": "L'" },
+        { "fr": "Je vais au café avec les amis.", "en": "I am going to the café with the friends.", "highlight": "au / les" },
+        { "fr": "Elle parle du pain et des enfants.", "en": "She talks about the bread and the children.", "highlight": "du / des" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct definite article for 'livre' (book, masculine).",
+          "options": ["le", "la", "les"],
+          "correctIndex": 0
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct definite article for 'maison' (house, feminine).",
+          "options": ["le", "la", "l'"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article is used before 'école' (school, feminine, starts with vowel)?",
+          "options": ["la", "le", "l'"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the contraction of 'de + le'?",
+          "options": ["de la", "du", "des"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the contraction of 'à + les'?",
+          "options": ["au", "aux", "à les"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Je vais ___ café. (I am going to the café.)",
+          "options": ["à le", "au", "aux"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Elle parle ___ enfants. (She talks to the children.)",
+          "options": ["aux", "au", "des"],
+          "correctIndex": 0
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the correct definite article for 'homme' (man, masculine, silent h)?",
+          "options": ["Le homme parle.", "La homme parle.", "L'homme parle."],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "sectionId": "indefinite-partitive",
+      "title": "Indefinite & Partitive Articles",
+      "explanation": "Indefinite articles mean 'a' or 'an' (un, une) or 'some' in the plural (des). Use 'un' for masculine singular nouns and 'une' for feminine singular nouns. Partitive articles express an unspecified quantity of something — 'some'. Use 'du' before masculine singular nouns (du pain), 'de la' before feminine singular nouns (de la viande), and 'de l'' before nouns beginning with a vowel or silent h (de l'eau). After a negation (ne...pas), all indefinite and partitive articles are replaced by 'de' (or 'd'' before a vowel).",
+      "tip": "After negation, never use un, une, des, du, de la, or de l'. Replace all of them with just 'de' (or 'd'' before a vowel): Je n'ai pas de pain, Je n'ai pas d'ami.",
+      "examples": [
+        { "fr": "J'ai un livre et une maison.", "en": "I have a book and a house.", "highlight": "un / une" },
+        { "fr": "Il y a des amis à la fête.", "en": "There are some friends at the party.", "highlight": "des" },
+        { "fr": "Je mange du pain avec du beurre.", "en": "I eat some bread with some butter.", "highlight": "du" },
+        { "fr": "Elle écoute de la musique et boit de l'eau.", "en": "She listens to some music and drinks some water.", "highlight": "de la / de l'" },
+        { "fr": "Il n'a pas de pain.", "en": "He has no bread. (He doesn't have any bread.)", "highlight": "de" },
+        { "fr": "Je ne veux pas d'argent.", "en": "I don't want any money.", "highlight": "d'" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct indefinite article for 'café' (coffee, masculine singular).",
+          "options": ["une", "un", "des"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct indefinite article for 'femme' (woman, feminine singular).",
+          "options": ["un", "une", "des"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which partitive article is used before 'vin' (wine, masculine)?",
+          "options": ["de la", "du", "de l'"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which partitive article is used before 'viande' (meat, feminine)?",
+          "options": ["du", "de l'", "de la"],
+          "correctIndex": 2
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Je bois ___ eau. (I drink some water.)",
+          "options": ["du", "de la", "de l'"],
+          "correctIndex": 2
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Il mange ___ fromage. (He eats some cheese, masculine.)",
+          "options": ["de la", "du", "de l'"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "After negation, what replaces 'du pain' in 'Je n'ai pas ___ pain'?",
+          "options": ["du", "de la", "de"],
+          "correctIndex": 2
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Je n'ai pas ___ amis ici. (I have no friends here.)",
+          "options": ["des", "de", "d'"],
+          "correctIndex": 2
+        }
+      ]
+    }
+  ]
+}

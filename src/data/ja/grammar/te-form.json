@@ -1,0 +1,151 @@
+{
+  "lessonId": "te-form",
+  "nameEn": "Te-form",
+  "nameJa": "て形",
+  "icon": "🔗",
+  "tier": "A2",
+  "prerequisites": ["verb-groups"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "te-form-ru-verbs",
+      "title": "て-form for る-verbs and Irregulars",
+      "explanation": "For る-verbs (ichidan verbs), forming the て-form is simple: drop る and add て. For example, 食べる becomes 食べて, 見る becomes 見て. The two irregular verbs are する → して and くる → きて. This is the easiest group to remember.",
+      "tip": "If you can identify a verb as a る-verb, て-form is always just dropping る and adding て. The challenge is knowing which verbs are truly る-verbs versus う-verbs that happen to end in る (like 帰る → 帰って, which is an う-verb).",
+      "examples": [
+        { "ja": "野菜を食べてください。", "en": "Please eat your vegetables.", "highlight": "食べて" },
+        { "ja": "この映画を見て！", "en": "Watch this movie!", "highlight": "見て" },
+        { "ja": "宿題をして寝た。", "en": "I did my homework and went to sleep.", "highlight": "して" },
+        { "ja": "早く起きて学校に行った。", "en": "I woke up early and went to school.", "highlight": "起きて" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of 教える (to teach)?",
+          "options": ["教えて", "教えって", "教えいて", "教えして"],
+          "correctIndex": 0,
+          "explanation": "教える is a る-verb. Drop る, add て: 教えて."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of くる (to come)?",
+          "options": ["くって", "くて", "きて", "こて"],
+          "correctIndex": 2,
+          "explanation": "くる is irregular. Its て-form is きて."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of 開ける (to open)?",
+          "options": ["開けって", "開いて", "開けて", "開けんで"],
+          "correctIndex": 2,
+          "explanation": "開ける is a る-verb. Drop る, add て: 開けて. (Note: 開く is a different verb, an う-verb, with て-form 開いて.)"
+        }
+      ]
+    },
+    {
+      "sectionId": "te-form-u-verbs",
+      "title": "て-form for う-verbs",
+      "explanation": "う-verbs (godan verbs) have て-form rules based on their final kana. う/つ/る → って (買う→買って, 待つ→待って, 帰る→帰って). む/ぶ/ぬ → んで (読む→読んで, 遊ぶ→遊んで, 死ぬ→死んで). く → いて (書く→書いて). ぐ → いで (泳ぐ→泳いで). す → して (話す→話して). Exception: 行く → 行って (not 行いて).",
+      "tip": "A popular mnemonic song sung to the tune of 'Santa Claus Is Coming to Town': って for う・つ・る, んで for む・ぶ・ぬ, いて for く, いで for ぐ, して for す!",
+      "examples": [
+        { "ja": "本を読んでから寝る。", "en": "I'll sleep after reading a book.", "highlight": "読んで" },
+        { "ja": "駅まで歩いて行った。", "en": "I walked to the station.", "highlight": "歩いて" },
+        { "ja": "友達を待って一緒に行こう。", "en": "Let's wait for our friend and go together.", "highlight": "待って" },
+        { "ja": "プールで泳いで楽しかった。", "en": "I swam in the pool and it was fun.", "highlight": "泳いで" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of 遊ぶ (to play)?",
+          "options": ["遊んで", "遊って", "遊びて", "遊いで"],
+          "correctIndex": 0,
+          "explanation": "Verbs ending in ぶ follow the む/ぶ/ぬ → んで rule: 遊ぶ → 遊んで."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of 行く (to go)?",
+          "options": ["行いて", "行きて", "行って", "行くて"],
+          "correctIndex": 2,
+          "explanation": "行く is a special exception. Instead of the regular く → いて rule, it becomes 行って."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the て-form of 話す (to speak)?",
+          "options": ["話って", "話いて", "話して", "話んで"],
+          "correctIndex": 2,
+          "explanation": "Verbs ending in す become して: 話す → 話して."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-form-requests",
+      "title": "て-form for Requests",
+      "explanation": "One of the most common uses of て-form is making requests. て-form + ください means 'please do ~'. For example, 食べてください (please eat), 見てください (please look). Without ください, just using て-form alone is a casual request among friends: 食べて！ (eat!), 見て！ (look!). You can also use て-form + くれる/もらえる for asking favors more politely.",
+      "tip": "てください is polite but can still sound commanding in some situations. For softer requests, try てもらえますか (could you do ~ for me?) or ていただけますか (could you kindly do ~?).",
+      "examples": [
+        { "ja": "窓を開けてください。", "en": "Please open the window.", "highlight": "開けてください" },
+        { "ja": "ここに名前を書いてください。", "en": "Please write your name here.", "highlight": "書いてください" },
+        { "ja": "ちょっと待って！", "en": "Wait a moment!", "highlight": "待って" },
+        { "ja": "写真を撮ってもらえますか。", "en": "Could you take a photo for me?", "highlight": "撮ってもらえますか" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'Please sit down.' (座る = to sit) — Choose the correct sentence:",
+          "options": ["座るください。", "座ってください。", "座りてください。", "座てください。"],
+          "correctIndex": 1,
+          "explanation": "座る is an う-verb ending in る, so て-form is 座って. Add ください for the polite request."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Please speak slowly.' (ゆっくり = slowly, 話す = to speak) — Choose the correct sentence:",
+          "options": ["ゆっくり話してください。", "ゆっくり話いてください。", "ゆっくり話すください。", "ゆっくり話ってください。"],
+          "correctIndex": 0,
+          "explanation": "話す → 話して (す → して rule). ゆっくり話してください."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the most polite way to ask someone to help you?",
+          "options": ["手伝って。", "手伝ってください。", "手伝っていただけますか。", "手伝ってくれ。"],
+          "correctIndex": 2,
+          "explanation": "ていただけますか is the most polite and humble form of request, appropriate for formal situations."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-form-progressive",
+      "title": "て-form + いる (Progressive & States)",
+      "explanation": "て-form + いる expresses ongoing actions (like English '-ing') or resulting states. 食べている means 'is eating' (action in progress). 結婚している means 'is married' (resulting state). 知っている means 'knows' (state). In casual speech, い is often dropped: 食べてる, 読んでる. The polite form is ています: 食べています.",
+      "tip": "Whether ている means 'is doing' (progressive) or 'has done / is in a state' depends on the verb type. Movement and change-of-state verbs (like 行く, 死ぬ, 結婚する) typically express a resulting state, not an ongoing action.",
+      "examples": [
+        { "ja": "今、本を読んでいる。", "en": "I am reading a book right now.", "highlight": "読んでいる" },
+        { "ja": "姉は東京に住んでいます。", "en": "My older sister lives in Tokyo.", "highlight": "住んでいます" },
+        { "ja": "彼女はもう帰っている。", "en": "She has already gone home.", "highlight": "帰っている" },
+        { "ja": "何を食べてるの？", "en": "What are you eating? (casual)", "highlight": "食べてる" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I am studying Japanese.' — Choose the correct sentence:",
+          "options": ["日本語を勉強する。", "日本語を勉強している。", "日本語を勉強した。", "日本語を勉強して。"],
+          "correctIndex": 1,
+          "explanation": "している expresses an ongoing action. 勉強している = am studying."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 田中さんは結婚している mean?",
+          "options": ["Tanaka is getting married.", "Tanaka got married.", "Tanaka is married.", "Tanaka wants to get married."],
+          "correctIndex": 2,
+          "explanation": "結婚する is a change-of-state verb, so している expresses the resulting state: 'is married.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the casual spoken form of 待っている?",
+          "options": ["待ってる", "待ちる", "待つる", "待てる"],
+          "correctIndex": 0,
+          "explanation": "In casual speech, the い in ている is often dropped: 待っている → 待ってる."
+        }
+      ]
+    }
+  ]
+}

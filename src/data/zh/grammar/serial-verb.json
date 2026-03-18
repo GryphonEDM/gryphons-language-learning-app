@@ -1,0 +1,79 @@
+{
+  "lessonId": "serial-verb",
+  "nameEn": "Serial Verb Constructions",
+  "nameZh": "连动句",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": ["basic-verbs"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "what-are-serial-verbs",
+      "title": "What Are Serial Verbs?",
+      "explanation": "A serial verb construction (连动句 liándòng jù) places two or more verbs in sequence with the same subject, without any conjunction between them. In English you would say 'I go to the store AND buy things', but in Chinese no 'and' is needed — you simply string the verbs together: 我去商店买东西. The verbs appear in the natural chronological order of the actions. This is one of the most common sentence patterns in Chinese and feels very natural once you get used to it. The subject controls all the verbs in the chain, and each verb can take its own object.",
+      "tip": "Think of serial verbs as a movie scene: events unfold in order, one after another, with the same actor. Just line up the verbs in the order things happen — no glue words needed.",
+      "examples": [
+        { "zh": "我去商店买东西。", "en": "I go to the store to buy things.", "highlight": "去商店买东西" },
+        { "zh": "她回家做饭。", "en": "She goes home to cook.", "highlight": "回家做饭" },
+        { "zh": "他们来中国学中文。", "en": "They come to China to study Chinese.", "highlight": "来中国学中文" },
+        { "zh": "我每天骑自行车上班。", "en": "I ride my bike to work every day.", "highlight": "骑自行车上班" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you say 'I go to school to study' in Chinese using a serial verb construction?", "options": ["我去学校和学习。", "我去学校学习。", "我学习去学校。"], "correctIndex": 1, "explanation": "In a serial verb construction, verbs are placed in chronological order with no conjunction. 我去学校学习 — first you go, then you study. No 和 (and) is needed." },
+        { "type": "fill-blank", "prompt": "她回家___饭。(She goes home to cook.)", "acceptedAnswers": ["做", "煮"], "hint": "What verb means 'to cook / to make (food)'?" },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly uses a serial verb construction?", "options": ["我买东西去商店。", "我去商店买东西。", "我和去商店买东西。"], "correctIndex": 1, "explanation": "The actions must be in chronological order: first go (去商店), then buy (买东西). No conjunction is needed between the verbs." }
+      ]
+    },
+    {
+      "sectionId": "purpose-constructions",
+      "title": "Purpose Constructions",
+      "explanation": "One of the most common serial verb patterns expresses purpose: going somewhere in order to do something. The pattern is Subject + 去/来 + Place + Verb + Object. The first verb indicates movement (去 go, 来 come, 回 return) and the second verb states the purpose of that movement. This is equivalent to English 'go somewhere TO do something', but Chinese simply omits 'to' — the purpose is implied by placing the verbs in sequence. You can also drop the place if it is understood from context: 我去买东西 (I'm going to buy things).",
+      "tip": "Whenever you want to say 'go to [place] to [do something]', just put 去 + place + action verb. No extra word for 'to' or 'in order to' is needed.",
+      "examples": [
+        { "zh": "我去图书馆看书。", "en": "I go to the library to read.", "highlight": "去图书馆看书" },
+        { "zh": "他来北京找工作。", "en": "He comes to Beijing to look for work.", "highlight": "来北京找工作" },
+        { "zh": "我们回家吃饭。", "en": "We go home to eat.", "highlight": "回家吃饭" },
+        { "zh": "她去超市买水果。", "en": "She goes to the supermarket to buy fruit.", "highlight": "去超市买水果" }
+      ],
+      "exercises": [
+        { "type": "fill-blank", "prompt": "我___图书馆借书。(I go to the library to borrow books.)", "acceptedAnswers": ["去"], "hint": "Which movement verb means 'to go'?" },
+        { "type": "multiple-choice", "prompt": "How do you say 'He comes to China to travel'?", "options": ["他来中国旅游。", "他来旅游中国。", "他旅游来中国。"], "correctIndex": 0, "explanation": "The pattern is 来 + place + purpose verb: 来中国旅游. The movement verb comes first, followed by the destination, then the purpose." },
+        { "type": "fill-blank", "prompt": "她去超市___菜。(She goes to the supermarket to buy groceries.)", "acceptedAnswers": ["买"], "hint": "Which verb means 'to buy'?" }
+      ]
+    },
+    {
+      "sectionId": "means-constructions",
+      "title": "Means Constructions",
+      "explanation": "Serial verbs can also express the means or method of an action — using X to do Y, or taking some vehicle to go somewhere. The pattern is Subject + Method Verb + (Object) + Main Verb + (Object). Common examples include 用 (yòng, to use) + tool + action, or transport verb + vehicle + movement verb. For instance, 用筷子吃饭 means 'use chopsticks to eat' and 坐飞机去 means 'take a plane to go'. No preposition like 'by' or 'with' is needed — the method verb and main verb simply sit side by side.",
+      "tip": "用 (use) is your Swiss army knife for 'with/using' in Chinese. Just say 用 + tool + action verb: 用电脑工作 (use a computer to work), 用手机打电话 (use a phone to make calls).",
+      "examples": [
+        { "zh": "我用筷子吃饭。", "en": "I use chopsticks to eat.", "highlight": "用筷子吃饭" },
+        { "zh": "她坐飞机去上海。", "en": "She takes a plane to go to Shanghai.", "highlight": "坐飞机去上海" },
+        { "zh": "他用中文写信。", "en": "He writes letters in Chinese.", "highlight": "用中文写信" },
+        { "zh": "我们骑车去公园。", "en": "We ride bikes to go to the park.", "highlight": "骑车去公园" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you say 'I take the train to go to Beijing'?", "options": ["我坐火车去北京。", "我去北京坐火车。", "我用火车去北京。"], "correctIndex": 0, "explanation": "For transportation, use 坐 (sit/ride) + vehicle + destination verb: 坐火车去北京. 用 is for tools, not vehicles." },
+        { "type": "fill-blank", "prompt": "他___筷子吃饭。(He uses chopsticks to eat.)", "acceptedAnswers": ["用"], "hint": "Which verb means 'to use'?" },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly says 'She uses a computer to study'?", "options": ["她学习用电脑。", "她用电脑学习。", "她电脑用学习。"], "correctIndex": 1, "explanation": "The means comes first: 用电脑 (use a computer) + purpose verb 学习 (study). The method verb phrase precedes the main action." }
+      ]
+    },
+    {
+      "sectionId": "sequential-actions",
+      "title": "Sequential Actions",
+      "explanation": "When you want to emphasize the order of two actions — first do A, then do B — Chinese uses explicit sequence markers: 先...然后... (xiān...ránhòu..., first...then...) and ...以后... (...yǐhòu..., after...). With 先...然后..., the pattern is Subject + 先 + Verb₁ + 然后 + Verb₂. With 以后, the pattern is Verb₁ + 以后 + Subject + Verb₂, meaning 'after doing A, (subject) does B'. These are technically still serial verb structures, but with added time words to make the sequence crystal clear. You can also use 再 (zài, then/after that) in place of 然后 for a slightly more casual tone.",
+      "tip": "先...然后... is like 'first...then...' and works almost identically to English. Use ...以后... when you want to emphasize that one thing must finish before the next begins — it is closer to 'after doing X'.",
+      "examples": [
+        { "zh": "我先吃饭，然后去上班。", "en": "I first eat, then go to work.", "highlight": "先...然后" },
+        { "zh": "吃完饭以后，我们去散步。", "en": "After finishing the meal, we go for a walk.", "highlight": "以后" },
+        { "zh": "她先做作业，再看电视。", "en": "She does homework first, then watches TV.", "highlight": "先...再" },
+        { "zh": "下课以后，我去图书馆。", "en": "After class ends, I go to the library.", "highlight": "以后" }
+      ],
+      "exercises": [
+        { "type": "fill-blank", "prompt": "我___洗手，然后吃饭。(I first wash my hands, then eat.)", "acceptedAnswers": ["先"], "hint": "Which word means 'first' in a 'first...then...' construction?" },
+        { "type": "multiple-choice", "prompt": "How do you say 'After class, I go home'?", "options": ["我下课去家以后。", "下课以后，我回家。", "以后下课，我回家。"], "correctIndex": 1, "explanation": "The pattern is Action + 以后 + Subject + next action: 下课以后，我回家. 以后 comes directly after the first action." },
+        { "type": "fill-blank", "prompt": "她先做作业，___看电视。(She does homework first, then watches TV.)", "acceptedAnswers": ["然后", "再"], "hint": "Which word means 'then' or 'after that'?" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping",
+  "nameFr": "Faire les courses",
+  "icon": "🛍️",
+  "context": "You are in a French clothing boutique in Paris. La Vendeuse (the saleswoman) approaches you to offer help. You want to find something to buy and try it on.",
+  "characters": {
+    "npc": { "name": "La Vendeuse" },
+    "player": { "name": "Vous" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Bonjour ! Bienvenue dans notre boutique. Je peux vous aider ?",
+      "translation": "Hello! Welcome to our shop. Can I help you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Hello! Yes, I am looking for a jacket.",
+      "acceptedResponses": [
+        "Bonjour ! Oui, je cherche une veste.",
+        "Bonjour, oui je cherche une veste.",
+        "Bonjour ! Je cherche une veste, s'il vous plaît.",
+        "Bonjour ! Oui, je voudrais une veste."
+      ],
+      "keyWords": ["cherche", "veste"],
+      "hint": "Say 'Bonjour' and use 'je cherche' (I am looking for) with 'une veste' (a jacket)"
+    },
+    {
+      "speaker": "npc",
+      "text": "Très bien ! Nous avons de très belles vestes. Vous cherchez quelque chose de décontracté ou de plus habillé ?",
+      "translation": "Very good! We have some very nice jackets. Are you looking for something casual or more formal?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Something casual, please. What do you have?",
+      "acceptedResponses": [
+        "Quelque chose de décontracté, s'il vous plaît. Qu'est-ce que vous avez ?",
+        "Quelque chose de décontracté. Qu'est-ce que vous avez ?",
+        "Je voudrais quelque chose de décontracté. Qu'est-ce que vous avez ?",
+        "Plutôt décontracté, s'il vous plaît. Qu'avez-vous ?"
+      ],
+      "keyWords": ["décontracté", "avez"],
+      "hint": "Say 'quelque chose de décontracté' and ask what they have with 'Qu'est-ce que vous avez ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Voilà ces modèles. Ils sont très populaires cette saison. Quelle est votre taille ?",
+      "translation": "Here are these styles. They are very popular this season. What is your size?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "What is my size? I don't know the French sizes.",
+      "acceptedResponses": [
+        "Quelle est ma taille ? Je ne connais pas les tailles françaises.",
+        "Je ne connais pas les tailles françaises. Quelle est ma taille ?",
+        "Je ne sais pas ma taille. Je ne connais pas les tailles françaises.",
+        "Quelle est ma taille ? Je ne connais pas les tailles en France."
+      ],
+      "keyWords": ["taille", "françaises"],
+      "hint": "Ask 'Quelle est ma taille ?' and explain you don't know French sizes: 'Je ne connais pas les tailles françaises'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Pas de problème ! Je vais prendre vos mesures. Vous faites du trente-huit, je pense. Voici une veste en taille trente-huit.",
+      "translation": "No problem! I will take your measurements. You are a size thirty-eight, I think. Here is a jacket in size thirty-eight."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Can I try it on?",
+      "acceptedResponses": [
+        "Je peux l'essayer ?",
+        "Est-ce que je peux l'essayer ?",
+        "Puis-je l'essayer, s'il vous plaît ?",
+        "Je peux essayer cette veste ?"
+      ],
+      "keyWords": ["essayer", "peux"],
+      "hint": "Ask 'Je peux l'essayer ?' or use 'Puis-je l'essayer ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Bien sûr ! La cabine d'essayage est là-bas, au fond à droite.",
+      "translation": "Of course! The fitting room is over there, at the back on the right."
+    },
+    {
+      "speaker": "player",
+      "prompt": "It fits well, but do you have it in blue?",
+      "acceptedResponses": [
+        "Elle me va bien, mais vous l'avez en bleu ?",
+        "Elle me va bien, mais est-ce que vous l'avez en bleu ?",
+        "Ça me va bien, mais vous avez ça en bleu ?",
+        "Elle me va bien. Est-ce que vous l'avez en bleu ?"
+      ],
+      "keyWords": ["va bien", "bleu"],
+      "hint": "Say 'Elle me va bien' (it fits well) and ask if they have it in blue: 'vous l'avez en bleu ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "En bleu ? Laissez-moi vérifier... Oui, nous l'avons en bleu marine. C'est très élégant !",
+      "translation": "In blue? Let me check... Yes, we have it in navy blue. It's very elegant!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Perfect! How much does it cost?",
+      "acceptedResponses": [
+        "Parfait ! Combien ça coûte ?",
+        "Parfait, combien ça coûte ?",
+        "C'est parfait ! C'est combien ?",
+        "Parfait ! Quel est le prix ?"
+      ],
+      "keyWords": ["combien", "coûte"],
+      "hint": "Say 'Parfait !' and ask the price with 'Combien ça coûte ?' or 'C'est combien ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Cette veste est à soixante-quinze euros. Et en ce moment, nous avons une promotion — vingt pour cent de réduction sur tous les articles.",
+      "translation": "This jacket is seventy-five euros. And right now, we have a promotion — twenty percent off on all items."
+    },
+    {
+      "speaker": "player",
+      "prompt": "I'll take it! I will pay by card.",
+      "acceptedResponses": [
+        "Je la prends ! Je vais payer par carte.",
+        "Je la prends. Je paie par carte.",
+        "Je vais la prendre ! Je peux payer par carte ?",
+        "Je la prends ! Je voudrais payer par carte."
+      ],
+      "keyWords": ["prends", "carte"],
+      "hint": "Say 'Je la prends !' (I'll take it) and 'Je vais payer par carte' (I will pay by card)"
+    },
+    {
+      "speaker": "npc",
+      "text": "Très bien ! Suivez-moi à la caisse. Merci pour votre achat et à bientôt !",
+      "translation": "Very good! Follow me to the till. Thank you for your purchase and see you soon!"
+    }
+  ]
+}

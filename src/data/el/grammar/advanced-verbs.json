@@ -1,0 +1,122 @@
+{
+  "lessonId": "advanced-verbs",
+  "nameEn": "Advanced Verb Forms",
+  "nameEl": "Προχωρημένες Ρηματικές Μορφές",
+  "icon": "🎓",
+  "tier": "B2",
+  "prerequisites": ["verb-conjugation", "subjunctive"],
+  "estimatedMinutes": 30,
+  "sections": [
+    {
+      "sectionId": "perfect-tenses",
+      "title": "Perfect Tenses",
+      "explanation": "Greek has three perfect tenses, all built with the auxiliary verb plus a past participle (invariable form ending in -ει or -ει after the auxiliary).\n\nPRESENT PERFECT (παρακείμενος) — έχω + past participle\nExpresses an action completed with present relevance ('I have done something').\n  Έχω διαβάσει  (I have read)\n  Έχεις φύγει   (you have left)\n  Έχει γράψει   (he/she has written)\n  Έχουμε φάει   (we have eaten)\n\nPAST PERFECT (υπερσυντέλικος) — είχα + past participle\nExpresses an action completed before another past action ('I had done something').\n  Είχα φύγει    (I had left)\n  Είχες έρθει   (you had come)\n  Είχε τελειώσει (he/she had finished)\n\nFUTURE PERFECT — θα έχω + past participle\nExpresses an action that will be completed before a future point ('I will have done something').\n  Θα έχω τελειώσει (I will have finished)\n  Θα έχουμε φύγει (we will have left)\n\nThe past participle used in all perfect tenses is the same invariable form — it does not change for person, number, or gender.",
+      "tip": "The key to recognising perfect tenses is the auxiliary: έχω/έχεις/... for present perfect, είχα/είχες/... for past perfect, and θα έχω/θα έχεις/... for future perfect. The past participle always ends in -ει.",
+      "examples": [
+        { "el": "Έχω διαβάσει αυτό το βιβλίο τρεις φορές.", "en": "I have read this book three times.", "highlight": "Έχω διαβάσει" },
+        { "el": "Έχεις ποτέ φάει σουβλάκι;", "en": "Have you ever eaten souvlaki?", "highlight": "Έχεις φάει" },
+        { "el": "Είχα φύγει πριν φτάσεις.", "en": "I had left before you arrived.", "highlight": "Είχα φύγει" },
+        { "el": "Είχε τελειώσει τη δουλειά όταν τον πήρα τηλέφωνο.", "en": "He had finished work when I called him.", "highlight": "Είχε τελειώσει" },
+        { "el": "Μέχρι το βράδυ θα έχω γράψει την αναφορά.", "en": "By evening I will have written the report.", "highlight": "θα έχω γράψει" },
+        { "el": "Θα έχουμε φύγει πριν αρχίσει η βροχή.", "en": "We will have left before the rain starts.", "highlight": "Θα έχουμε φύγει" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the present perfect (παρακείμενος)?",
+          "options": ["Έχω διαβάσει το βιβλίο.", "Διάβασα το βιβλίο.", "Θα διαβάσω το βιβλίο."],
+          "correctIndex": 0,
+          "explanation": "'Έχω διαβάσει' (I have read) is the present perfect, formed with έχω + past participle. 'Διάβασα' is aorist (simple past), and 'θα διαβάσω' is future."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you form the past perfect (υπερσυντέλικος) in Greek?",
+          "options": ["είχα + past participle", "έχω + past participle", "θα έχω + past participle"],
+          "correctIndex": 0,
+          "explanation": "The past perfect uses είχα (imperfect of έχω) + the past participle, e.g. 'Είχα φύγει' (I had left). The present perfect uses έχω, and the future perfect uses θα έχω."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence expresses a future perfect meaning ('will have done')?",
+          "options": ["Θα έχω τελειώσει μέχρι τότε.", "Είχα τελειώσει χθες.", "Έχω τελειώσει τώρα."],
+          "correctIndex": 0,
+          "explanation": "'Θα έχω τελειώσει' (I will have finished) is the future perfect. The auxiliary θα έχω signals that the action will be completed before a future moment."
+        }
+      ]
+    },
+    {
+      "sectionId": "passive-voice",
+      "title": "Passive Voice",
+      "explanation": "The passive voice (παθητική φωνή) expresses that the subject receives the action rather than performing it.\n\nPRESENT PASSIVE — endings -ομαι / -ιέμαι\nGroup A (-ω) verbs use -ομαι in the present passive:\n  γράφω (I write) → γράφομαι (I am being written / I get written)\n  Singular:  -ομαι · -εσαι · -εται\n  Plural:    -όμαστε · -εστε · -ονται\n\nGroup B (-άω/-ώ) verbs use -ιέμαι:\n  αγαπάω (I love) → αγαπιέμαι (I am loved)\n\nNote: Some verbs ending in -ομαι are DEPONENT (e.g. έρχομαι, κάθομαι) — they have passive form but active meaning and are NOT the same as true passives.\n\nPASSIVE AORIST\nThe passive aorist has the characteristic ending -θηκα / -τηκα:\n  γράφτηκε    (it/he/she was written)\n  διαβάστηκε  (it was read)\n  ακούστηκε   (it was heard)\n\nEXPRESSING THE AGENT\nThe person or thing performing the action is introduced with the preposition από (by):\n  Το βιβλίο γράφτηκε από τον Νίκο.  (The book was written by Nikos.)",
+      "tip": "A quick test: if you can insert 'by someone' and the sentence makes sense, it is a true passive. Deponent verbs like έρχομαι (I come) and κάθομαι (I sit) look passive but have no passive meaning — they cannot take a από-agent.",
+      "examples": [
+        { "el": "Το βιβλίο γράφεται από έναν διάσημο συγγραφέα.", "en": "The book is being written by a famous author.", "highlight": "γράφεται" },
+        { "el": "Η πόρτα ανοίγεται κάθε πρωί στις οκτώ.", "en": "The door is opened every morning at eight.", "highlight": "ανοίγεται" },
+        { "el": "Το γράμμα στάλθηκε χθες.", "en": "The letter was sent yesterday.", "highlight": "στάλθηκε" },
+        { "el": "Το ποίημα γράφτηκε από τον Καβάφη.", "en": "The poem was written by Cavafy.", "highlight": "γράφτηκε" },
+        { "el": "Η εκκλησία χτίστηκε τον δέκατο αιώνα.", "en": "The church was built in the tenth century.", "highlight": "χτίστηκε" },
+        { "el": "Η μουσική ακούγεται από μακριά.", "en": "The music can be heard from far away.", "highlight": "ακούγεται" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which ending signals the present passive of a Group A (-ω) verb?",
+          "options": ["-ομαι", "-τηκα", "-οντας"],
+          "correctIndex": 0,
+          "explanation": "Group A verbs form the present passive with -ομαι endings (e.g. γράφομαι). The ending -τηκα signals the passive aorist, and -οντας forms the present participle."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the agent (the doer) expressed in a Greek passive sentence?",
+          "options": ["With the preposition από", "With the preposition σε", "With the preposition με"],
+          "correctIndex": 0,
+          "explanation": "The agent in a Greek passive construction is introduced by από (by), e.g. 'γράφτηκε από τον Νίκο' (was written by Nikos)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a true passive sentence (not a deponent verb)?",
+          "options": ["Το φαγητό μαγειρεύτηκε από τη μητέρα.", "Κάθομαι στην καρέκλα.", "Έρχομαι από την Αθήνα."],
+          "correctIndex": 0,
+          "explanation": "'Μαγειρεύτηκε' (was cooked) is a true passive — it has a από-agent and the subject receives the action. 'Κάθομαι' (I sit) and 'έρχομαι' (I come) are deponent verbs with passive form but active meaning."
+        }
+      ]
+    },
+    {
+      "sectionId": "participles-verbal-nouns",
+      "title": "Participles and Verbal Nouns",
+      "explanation": "Greek forms several non-finite verb forms that function as adverbs, adjectives, or nouns.\n\nPRESENT PARTICIPLE (-οντας / -ώντας)\nFormed by adding -οντας to the aorist stem of Group A verbs, or -ώντας to Group B verbs. It is INVARIABLE (never changes form) and functions as an adverbial participle — describing how or when the action of the main verb takes place.\n  γράφω  → γράφοντας  (writing)\n  τρέχω  → τρέχοντας  (running)\n  μιλάω  → μιλώντας   (speaking)\nThe subject of the participle must be the same as the subject of the main verb.\n  Μιλώντας με τον Γιώργη, έμαθα τα νέα.  (Speaking with Giorgis, I learned the news.)\n\nPAST PARTICIPLE (verbal adjective)\nThe past participle (αρσενικό: -μένος, θηλυκό: -μένη, ουδέτερο: -μένο) is a fully declined ADJECTIVE. It agrees with the noun it modifies in gender, number, and case.\n  γράφω  → γραμμένος / γραμμένη / γραμμένο  (written)\n  ανοίγω → ανοιγμένος  (opened / open)\n  κλείνω → κλεισμένος  (closed / shut)\n\nVERBAL NOUN (-σιμο)\nThe verbal noun is formed with the neuter suffix -σιμο and uses the definite article το. It refers to the act or process itself, like the English gerund ('-ing' as a noun) or an abstract noun.\n  γράφω → το γράψιμο   (the writing / the act of writing)\n  τρέχω → το τρέξιμο   (the running)\n  διαβάζω → το διάβασμα (the reading/studying)",
+      "tip": "Remember the three-way distinction: γράφοντας (while writing — adverbial, invariable) vs. γραμμένος/-η/-ο (written — adjective, agrees with noun) vs. το γράψιμο (the writing — noun, takes articles and cases).",
+      "examples": [
+        { "el": "Γράφοντας στο τετράδιο, άκουγε μουσική.", "en": "While writing in the notebook, she was listening to music.", "highlight": "Γράφοντας" },
+        { "el": "Τρέχοντας στο πάρκο, σκέφτηκα πολλά πράγματα.", "en": "Running in the park, I thought about many things.", "highlight": "Τρέχοντας" },
+        { "el": "Το γράμμα ήταν γραμμένο με μικρά γράμματα.", "en": "The letter was written in lowercase letters.", "highlight": "γραμμένο" },
+        { "el": "Η πόρτα έμεινε ανοιγμένη όλη νύχτα.", "en": "The door stayed open all night.", "highlight": "ανοιγμένη" },
+        { "el": "Το γράψιμο αυτής της αναφοράς πήρε τρεις ώρες.", "en": "The writing of this report took three hours.", "highlight": "γράψιμο" },
+        { "el": "Μου αρέσει το τρέξιμο το πρωί.", "en": "I like running in the morning.", "highlight": "τρέξιμο" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is the present participle of 'γράφω' (to write), used as an adverb?",
+          "options": ["γράφοντας", "γραμμένος", "το γράψιμο"],
+          "correctIndex": 0,
+          "explanation": "'Γράφοντας' (writing) is the adverbial present participle — invariable and describing the circumstances of the main verb. 'Γραμμένος' is the past participle adjective, and 'το γράψιμο' is the verbal noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The past participle 'γραμμένος/-η/-ο' agrees with the noun it modifies in:",
+          "options": ["Gender, number, and case", "Only number", "It never changes form"],
+          "correctIndex": 0,
+          "explanation": "The past participle functions as a fully declined adjective and must agree with its noun in gender (γραμμένος/γραμμένη/γραμμένο), number (singular/plural), and case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the verbal noun correctly?",
+          "options": ["Το τρέξιμο είναι καλό για την υγεία.", "Τρέχοντας είναι καλό για την υγεία.", "Τρεγμένος είναι καλός για την υγεία."],
+          "correctIndex": 0,
+          "explanation": "'Το τρέξιμο' (the running) is the verbal noun — it acts as the subject of the sentence with the neuter definite article το. 'Τρέχοντας' is the adverbial participle (used alongside a main verb), and 'τρεγμένος' is not a standard form."
+        }
+      ]
+    }
+  ]
+}

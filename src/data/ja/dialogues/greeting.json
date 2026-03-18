@@ -1,0 +1,115 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameJa": "自己紹介",
+  "icon": "👋",
+  "context": "You are at a Japanese language exchange event in Tokyo. たけし, a friendly university student, comes to introduce himself.",
+  "characters": {
+    "npc": { "name": "たけし" },
+    "player": { "name": "あなた" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "こんにちは！僕はたけしです。日本語の交流会に来たんですか？",
+      "translation": "Hello! I'm Takeshi. Are you here for the Japanese language exchange?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and confirm you're here for the language exchange.",
+      "acceptedResponses": [
+        "はい、こんにちは！私は[name]です。交流会に来ました。",
+        "こんにちは、たけしさん！はい、日本語の交流会に来ました。",
+        "こんにちは！はい、そうです。私は[name]です。",
+        "はい、こんにちは！よろしくお願いします。"
+      ],
+      "keyWords": ["こんにちは", "はい"],
+      "hint": "Start with 'こんにちは' and confirm with 'はい'."
+    },
+    {
+      "speaker": "npc",
+      "text": "よろしくお願いします！どちらから来ましたか？",
+      "translation": "Nice to meet you! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him where you are from.",
+      "acceptedResponses": [
+        "アメリカから来ました。",
+        "イギリスから来ました。",
+        "カナダから来ました。",
+        "オーストラリアから来ました。"
+      ],
+      "keyWords": ["から", "来ました"],
+      "hint": "Say '[country]から来ました' to tell where you're from."
+    },
+    {
+      "speaker": "npc",
+      "text": "そうなんですね！どうして日本語を勉強しているんですか？",
+      "translation": "I see! Why are you studying Japanese?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Explain why you are learning Japanese.",
+      "acceptedResponses": [
+        "日本の文化が好きなので、勉強しています。",
+        "日本のアニメが好きで、日本語を勉強し始めました。",
+        "日本で働きたいので、日本語を勉強しています。",
+        "日本の音楽が好きなので、日本語を学んでいます。"
+      ],
+      "keyWords": ["好き", "勉強"],
+      "hint": "Use '好きなので' (because I like) or '～たいので' (because I want to) to explain."
+    },
+    {
+      "speaker": "npc",
+      "text": "すごいですね！日本語をどのくらい勉強していますか？",
+      "translation": "That's amazing! How long have you been studying Japanese?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how long you have been studying Japanese.",
+      "acceptedResponses": [
+        "日本語を6か月勉強しています。",
+        "1年前から日本語を勉強しています。",
+        "3か月前に日本語を始めました。",
+        "日本語を2年間勉強しています。"
+      ],
+      "keyWords": ["日本語", "勉強"],
+      "hint": "Use '日本語を[time]勉強しています' to say how long you've studied."
+    },
+    {
+      "speaker": "npc",
+      "text": "上手ですね！東京では何がしたいですか？",
+      "translation": "You're good! What do you want to do in Tokyo?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him what you want to do in Tokyo.",
+      "acceptedResponses": [
+        "おいしい日本料理を食べたいです。",
+        "浅草に行きたいです。",
+        "秋葉原で買い物がしたいです。",
+        "日本人の友達をたくさん作りたいです。"
+      ],
+      "keyWords": ["たいです"],
+      "hint": "Use '～たいです' (I want to) to express what you'd like to do."
+    },
+    {
+      "speaker": "npc",
+      "text": "いいですね！よかったら、一緒にお茶でもどうですか？",
+      "translation": "That sounds great! If you'd like, how about having tea together?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept his invitation enthusiastically.",
+      "acceptedResponses": [
+        "はい、ぜひ！一緒に行きましょう！",
+        "もちろんです！いいですね。",
+        "はい、喜んで！行きましょう！",
+        "いいですね！お茶を飲みに行きましょう。"
+      ],
+      "keyWords": ["はい", "行きましょう"],
+      "hint": "Use 'はい、ぜひ！' (yes, by all means!) or 'もちろんです' (of course) to accept."
+    }
+  ]
+}

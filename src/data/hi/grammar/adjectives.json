@@ -1,0 +1,118 @@
+{
+  "lessonId": "adjectives",
+  "nameEn": "Adjectives",
+  "nameHi": "विशेषण",
+  "icon": "🎨",
+  "tier": "A2",
+  "prerequisites": ["postpositions-case"],
+  "estimatedMinutes": 16,
+  "sections": [
+    {
+      "sectionId": "inflected-adjectives",
+      "title": "Inflected Adjectives (विकारी विशेषण)",
+      "explanation": "Hindi adjectives fall into two categories based on whether they change form. Inflected adjectives (विकारी विशेषण) are those that change their ending to agree with the gender, number, and case of the noun they describe. Most inflected adjectives end in -आ in their base (masculine singular direct) form, such as अच्छा (good), बड़ा (big), छोटा (small), काला (black), मोटा (fat/thick), and पतला (thin). These adjectives follow a predictable pattern: masculine singular direct = -आ (अच्छा लड़का — good boy), masculine singular oblique or masculine plural = -ए (अच्छे लड़के को — to the good boy; अच्छे लड़के — good boys), feminine singular and plural = -ई (अच्छी लड़की — good girl; अच्छी लड़कियाँ — good girls). This three-way system (-आ, -ए, -ई) is fundamental to Hindi and must be mastered early. The adjective always appears directly before the noun it modifies and must match it in all three dimensions: gender, number, and case.",
+      "tip": "For adjectives ending in -आ: think of the triangle -आ (masc. sg. direct), -ए (masc. oblique/plural), -ई (all feminine). This same pattern appears throughout Hindi grammar, so mastering it here pays off everywhere.",
+      "examples": [
+        { "hi": "अच्छा लड़का", "en": "good boy (masc. sg. direct)", "highlight": "अच्छा" },
+        { "hi": "अच्छे लड़के", "en": "good boys (masc. pl. direct)", "highlight": "अच्छे" },
+        { "hi": "अच्छी लड़की", "en": "good girl (fem. sg.)", "highlight": "अच्छी" },
+        { "hi": "बड़े घर में", "en": "in the big house (masc. sg. oblique)", "highlight": "बड़े" },
+        { "hi": "छोटी बिल्ली", "en": "small cat (fem. sg.)", "highlight": "छोटी" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form: 'काल__ कुत्ता' (black dog, masc. sg. direct)?",
+          "options": ["काला कुत्ता", "काली कुत्ता", "काले कुत्ता"],
+          "correctIndex": 0,
+          "explanation": "कुत्ता (dog) is masculine singular in the direct case, so the adjective काला takes the -आ ending: काला कुत्ता. Feminine would be काली and oblique/plural masculine would be काले."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 'मोट__ लड़कियाँ' (fat/chubby girls)",
+          "options": ["मोटा लड़कियाँ", "मोटी लड़कियाँ", "मोटे लड़कियाँ"],
+          "correctIndex": 1,
+          "explanation": "लड़कियाँ (girls) is feminine plural, so the adjective takes the -ई form: मोटी. Remember, feminine singular and plural both use the -ई ending for inflected adjectives."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'बड़े पेड़ पर' (on the big tree), why is it बड़े and not बड़ा?",
+          "options": ["Because पेड़ is plural", "Because पर makes it oblique case, and masculine singular oblique takes -ए", "Because बड़ा is an irregular adjective"],
+          "correctIndex": 1,
+          "explanation": "When a noun is followed by a postposition (like पर), it is in the oblique case. Masculine singular oblique adjectives change from -आ to -ए. So बड़ा becomes बड़े before पेड़ पर (on the tree)."
+        }
+      ]
+    },
+    {
+      "sectionId": "uninflected-adjectives",
+      "title": "Uninflected Adjectives (अविकारी विशेषण)",
+      "explanation": "Uninflected adjectives (अविकारी विशेषण) are those that never change form regardless of the gender, number, or case of the noun. These adjectives do NOT end in -आ in their base form. Common examples include: सुंदर (beautiful), ख़ूबसूरत (handsome/beautiful), लाल (red), साफ़ (clean), ग़रीब (poor), अमीर (rich), मशहूर (famous), and ज़रूरी (necessary). Whether the noun is masculine, feminine, singular, plural, direct, or oblique, these adjectives remain exactly the same. For example: सुंदर लड़का (beautiful boy), सुंदर लड़की (beautiful girl), सुंदर लड़कों के लिए (for the beautiful boys) — the adjective सुंदर never changes. Some loan words from Arabic, Persian, and English also behave as uninflected adjectives: बेहतर (better), मुश्किल (difficult), ख़राब (bad). Recognizing whether an adjective is inflected or uninflected is essential for correct agreement.",
+      "tip": "Quick test: does the adjective end in -आ? If yes, it inflects (-आ/-ए/-ई). If no, it stays the same always. Exceptions are rare. Words like सुंदर, लाल, साफ़ never change form.",
+      "examples": [
+        { "hi": "सुंदर लड़का", "en": "beautiful boy", "highlight": "सुंदर" },
+        { "hi": "सुंदर लड़की", "en": "beautiful girl", "highlight": "सुंदर" },
+        { "hi": "लाल फूल", "en": "red flower (masc.)", "highlight": "लाल" },
+        { "hi": "लाल साड़ी", "en": "red sari (fem.)", "highlight": "लाल" },
+        { "hi": "ग़रीब लोगों की मदद", "en": "help of/for poor people (oblique)", "highlight": "ग़रीब" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these adjectives does NOT change form with gender?",
+          "options": ["बड़ा (big)", "ख़ूबसूरत (beautiful)", "छोटा (small)"],
+          "correctIndex": 1,
+          "explanation": "ख़ूबसूरत does not end in -आ and is therefore uninflected — it stays the same regardless of the noun's gender, number, or case. Both बड़ा and छोटा end in -आ and must inflect."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form: 'साफ़ __ कमरे' (clean rooms, masc. pl.)?",
+          "options": ["साफ़े कमरे", "साफ़ कमरे", "साफ़ी कमरे"],
+          "correctIndex": 1,
+          "explanation": "साफ़ (clean) is an uninflected adjective — it does not end in -आ, so it never changes. It remains साफ़ regardless of whether the noun is masculine, feminine, singular, or plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How can you quickly tell if a Hindi adjective inflects or not?",
+          "options": ["Check if it ends in -आ in its base form", "Check if it has more than two syllables", "All Hindi adjectives inflect"],
+          "correctIndex": 0,
+          "explanation": "The reliable rule is: adjectives ending in -आ (like अच्छा, बड़ा, काला) inflect to agree with the noun. Adjectives that do not end in -आ (like सुंदर, लाल, साफ़) are uninflected and never change form."
+        }
+      ]
+    },
+    {
+      "sectionId": "adjective-comparison",
+      "title": "Comparatives and Superlatives (तुलना)",
+      "explanation": "Hindi does not have special comparative or superlative adjective forms like English '-er' and '-est'. Instead, comparisons are made using postpositions and adverbs. For comparatives, Hindi uses से (than/from) with the base adjective: राम श्याम से लंबा है (Ram is taller than Shyam — literally 'Ram from Shyam tall is'). The word ज़्यादा (more) can be added for emphasis: वह मुझसे ज़्यादा होशियार है (He is more clever than me). For 'less than', use कम (less): यह उससे कम महँगा है (This is less expensive than that). For superlatives, Hindi uses सबसे (from all / among all): वह सबसे अच्छा छात्र है (He is the best student — literally 'from all good student'). The adjective itself still inflects normally based on the noun it describes. This system is very regular and predictable once you know the key words: से (than), ज़्यादा (more), कम (less), and सबसे (most/among all).",
+      "tip": "Hindi comparison formula: X + Y से + adjective + है = 'X is more [adjective] than Y'. For superlative: X + सबसे + adjective + है = 'X is the most [adjective]'. The adjective still agrees with X.",
+      "examples": [
+        { "hi": "गीता सीता से लंबी है।", "en": "Geeta is taller than Seeta.", "highlight": "से लंबी" },
+        { "hi": "यह किताब उस किताब से अच्छी है।", "en": "This book is better than that book.", "highlight": "से अच्छी" },
+        { "hi": "वह सबसे तेज़ धावक है।", "en": "He is the fastest runner.", "highlight": "सबसे तेज़" },
+        { "hi": "यह कमरा उससे कम बड़ा है।", "en": "This room is less big than that one.", "highlight": "कम बड़ा" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Sita is smarter than Gita'?",
+          "options": ["सीता गीता से होशियार है।", "सीता गीता ज़्यादा होशियार है।", "सीता होशियार गीता है।"],
+          "correctIndex": 0,
+          "explanation": "The comparative pattern is: X + Y से + adjective + है. So: सीता + गीता से + होशियार + है = 'Sita is smarter than Gita.' The postposition से means 'than' in this context."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'सबसे' mean in 'वह सबसे अच्छा है'?",
+          "options": ["Everyone's", "The most / -est (superlative marker)", "Very"],
+          "correctIndex": 1,
+          "explanation": "सबसे literally means 'from all' (सब + से) and functions as the superlative marker. वह सबसे अच्छा है = 'He is the best (the good-est of all).' It is placed directly before the adjective."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'गीता सीता से लंबी है', why is it लंबी and not लंबा?",
+          "options": ["Because सीता is feminine", "Because गीता (the subject being described) is feminine", "Because से requires feminine adjective"],
+          "correctIndex": 1,
+          "explanation": "The adjective agrees with the noun it describes — in this case गीता, who is feminine. So लंबा becomes लंबी. The comparison word से does not affect adjective agreement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameJa": "道を聞く",
+  "icon": "🗺️",
+  "context": "You are lost in Tokyo and need to find your way to Tokyo Tower.",
+  "characters": {
+    "npc": { "name": "通行人" },
+    "player": { "name": "あなた" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "あ、どうしましたか？何かお探しですか？",
+      "translation": "Oh, what happened? Are you looking for something?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say excuse me, you are looking for Tokyo Tower",
+      "acceptedResponses": [
+        "すみません、東京タワーを探しています",
+        "すみません、東京タワーはどこですか",
+        "あの、すみません。東京タワーに行きたいです",
+        "すみません、東京タワーへの行き方を教えてください"
+      ],
+      "keyWords": ["すみません", "東京タワー"],
+      "hint": "すみません、東京タワーを探しています。"
+    },
+    {
+      "speaker": "npc",
+      "text": "東京タワーですね。ここからだと、あちらの方向です。まっすぐ行ってください。",
+      "translation": "Tokyo Tower, right. From here, it is in that direction. Please go straight."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask which direction — left or right at the intersection",
+      "acceptedResponses": [
+        "交差点では左ですか、右ですか",
+        "交差点で右に曲がりますか、左ですか",
+        "どちらの方向ですか。左ですか、右ですか",
+        "まっすぐの後、右ですか左ですか"
+      ],
+      "keyWords": ["左", "右"],
+      "hint": "交差点では左ですか、右ですか？"
+    },
+    {
+      "speaker": "npc",
+      "text": "交差点を右に曲がってください。そのまま五分くらい歩くと見えますよ。",
+      "translation": "Please turn right at the intersection. If you walk for about five minutes it will come into view."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how far it is from here — is it close?",
+      "acceptedResponses": [
+        "ここから遠いですか",
+        "ここから近いですか",
+        "ここからどのくらいかかりますか",
+        "歩いてどのくらいですか"
+      ],
+      "keyWords": ["ここから", "ですか"],
+      "hint": "ここから遠いですか？"
+    },
+    {
+      "speaker": "npc",
+      "text": "歩いて十五分くらいですね。でもバスも使えますよ。あそこのバス停から乗れます。",
+      "translation": "It is about fifteen minutes on foot. But you can also take a bus. You can catch it from the bus stop over there."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if you can also go by train or subway",
+      "acceptedResponses": [
+        "電車でも行けますか",
+        "地下鉄でも行けますか",
+        "電車か地下鉄でも行けますか",
+        "電車で行くこともできますか"
+      ],
+      "keyWords": ["電車", "行けますか"],
+      "hint": "電車でも行けますか？"
+    },
+    {
+      "speaker": "npc",
+      "text": "はい、地下鉄の大江戸線で赤羽橋駅まで行けます。駅から歩いて五分です。でも今日はいい天気ですから、歩くのもいいですよ。",
+      "translation": "Yes, you can take the Oedo subway line to Akabanebashi Station. It is a five-minute walk from the station. But the weather is nice today, so walking is also good."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you will walk then. Thank them very much for their help.",
+      "acceptedResponses": [
+        "では歩きます。どうもありがとうございます",
+        "歩いて行きます。本当にありがとうございます",
+        "じゃあ歩きます。ありがとうございました",
+        "歩いて行きます。教えてくれてありがとうございます"
+      ],
+      "keyWords": ["歩き", "ありがとう"],
+      "hint": "では歩きます。どうもありがとうございます。"
+    },
+    {
+      "speaker": "npc",
+      "text": "いいえ、どういたしまして。楽しんでくださいね！",
+      "translation": "Not at all, you are welcome. Please enjoy yourself!"
+    }
+  ]
+}

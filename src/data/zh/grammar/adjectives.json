@@ -1,0 +1,145 @@
+{
+  "lessonId": "adjectives",
+  "nameEn": "Adjectives",
+  "nameZh": "形容词",
+  "icon": "🎨",
+  "tier": "A2",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "id": "adjective-predicates",
+      "titleEn": "Adjective Predicates with 很",
+      "titleZh": "用很的形容词谓语",
+      "explanation": "In Chinese, adjectives can serve directly as predicates without a linking verb. You do NOT use 是 before adjectives. Instead, 很 is placed before the adjective as a default filler that neutralizes any comparative meaning. Without 很 or another adverb, a bare adjective predicate implies a comparison.",
+      "tip": "Think of 很 as a grammatical default rather than meaning 'very'. 她很漂亮 is simply 'She is pretty', not necessarily 'She is very pretty'.",
+      "examples": [
+        { "zh": "她很漂亮。", "en": "She is pretty.", "highlight": "很漂亮" },
+        { "zh": "今天很冷。", "en": "Today is cold.", "highlight": "很冷" },
+        { "zh": "这本书很有意思。", "en": "This book is interesting.", "highlight": "很有意思" },
+        { "zh": "他很高兴。", "en": "He is happy.", "highlight": "很高兴" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-in",
+          "prompt": "天气___热。(The weather is hot.)",
+          "answer": "很",
+          "hint": "Use the default adverb before the adjective."
+        },
+        {
+          "type": "correct-the-mistake",
+          "prompt": "这个菜是好吃。",
+          "answer": "这个菜很好吃。",
+          "hint": "Adjective predicates do not use 是."
+        },
+        {
+          "type": "translate",
+          "prompt": "The coffee is expensive.",
+          "answer": "咖啡很贵。",
+          "hint": "Use 很 + adjective as the predicate."
+        }
+      ]
+    },
+    {
+      "id": "modifying-nouns",
+      "titleEn": "Modifying Nouns with 的",
+      "titleZh": "用的修饰名词",
+      "explanation": "When an adjective modifies a noun, it is placed before the noun with the particle 的 in between: adjective + 的 + noun. However, single-syllable adjectives used as simple modifiers often drop 的, attaching directly to the noun.",
+      "tip": "Single-syllable adjectives like 大, 小, 好, 新 can go directly before the noun (大房子). Multi-syllable adjectives almost always need 的 (漂亮的花).",
+      "examples": [
+        { "zh": "漂亮的花", "en": "beautiful flowers", "highlight": "漂亮的" },
+        { "zh": "大房子", "en": "big house", "highlight": "大" },
+        { "zh": "好看的衣服", "en": "good-looking clothes", "highlight": "好看的" },
+        { "zh": "新书", "en": "new book", "highlight": "新" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-in",
+          "prompt": "干净___房间 (clean room)",
+          "answer": "的",
+          "hint": "干净 is a two-syllable adjective modifying a noun."
+        },
+        {
+          "type": "translate",
+          "prompt": "an expensive car",
+          "answer": "贵的车",
+          "hint": "Use adjective + 的 + noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'small cat'?",
+          "options": ["小的猫", "小猫", "猫小"],
+          "answer": "小猫",
+          "hint": "小 is a single-syllable adjective, so 的 can be dropped."
+        }
+      ]
+    },
+    {
+      "id": "comparative",
+      "titleEn": "Comparative",
+      "titleZh": "比较",
+      "explanation": "To compare two things, use the 比 pattern: A + 比 + B + adjective. This means 'A is more [adjective] than B'. For 'even more', add 更 before the adjective. For the superlative ('most'), use 最 before the adjective.",
+      "tip": "Never use 很 in a 比 comparison — 我比他很高 is wrong. The 比 structure already implies a difference in degree.",
+      "examples": [
+        { "zh": "我比他高。", "en": "I am taller than him.", "highlight": "比他高" },
+        { "zh": "今天比昨天更冷。", "en": "Today is even colder than yesterday.", "highlight": "比昨天更冷" },
+        { "zh": "她是最聪明的学生。", "en": "She is the smartest student.", "highlight": "最聪明" },
+        { "zh": "坐飞机比坐火车快。", "en": "Flying is faster than taking the train.", "highlight": "比坐火车快" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-in",
+          "prompt": "哥哥___弟弟高。(The older brother is taller than the younger brother.)",
+          "answer": "比",
+          "hint": "Use the comparison particle between A and B."
+        },
+        {
+          "type": "correct-the-mistake",
+          "prompt": "这个比那个很好。",
+          "answer": "这个比那个好。",
+          "hint": "Do not use 很 in a 比 comparison."
+        },
+        {
+          "type": "translate",
+          "prompt": "This is the most delicious dish.",
+          "answer": "这是最好吃的菜。",
+          "hint": "Use 最 for the superlative."
+        }
+      ]
+    },
+    {
+      "id": "degree-words",
+      "titleEn": "Degree Words",
+      "titleZh": "程度副词",
+      "explanation": "Chinese has a rich set of adverbs to express the degree of an adjective. 非常 and 特别 mean 'extremely/especially'. 真 means 'really/truly'. 太...了 means 'too (much)' and wraps around the adjective. 有点儿 means 'a little' and carries a slightly negative or reluctant tone.",
+      "tip": "有点儿 usually implies something undesirable: 有点儿贵 (a bit expensive — implying it's more than you'd like). For neutral 'a little', use 一点儿 after the adjective instead.",
+      "examples": [
+        { "zh": "这个蛋糕非常好吃。", "en": "This cake is extremely delicious.", "highlight": "非常好吃" },
+        { "zh": "今天特别热。", "en": "Today is especially hot.", "highlight": "特别热" },
+        { "zh": "这件衣服太贵了。", "en": "This piece of clothing is too expensive.", "highlight": "太贵了" },
+        { "zh": "这个电影有点儿无聊。", "en": "This movie is a little boring.", "highlight": "有点儿无聊" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-in",
+          "prompt": "这道菜___辣了！(This dish is too spicy!)",
+          "answer": "太",
+          "hint": "Use the degree word that pairs with 了 to mean 'too much'."
+        },
+        {
+          "type": "translate",
+          "prompt": "The exam is really difficult.",
+          "answer": "考试真难。",
+          "hint": "Use 真 to mean 'really'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence implies a negative feeling?",
+          "options": ["她很高。", "她有点儿高。", "她非常高。"],
+          "answer": "她有点儿高。",
+          "hint": "有点儿 carries a tone of mild dissatisfaction."
+        }
+      ]
+    }
+  ]
+}

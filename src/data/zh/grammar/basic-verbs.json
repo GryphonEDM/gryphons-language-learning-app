@@ -1,0 +1,79 @@
+{
+  "lessonId": "basic-verbs",
+  "nameEn": "Basic Verbs",
+  "nameZh": "基本动词",
+  "icon": "🏃",
+  "tier": "A1",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "verbs-dont-conjugate",
+      "title": "Chinese Verbs Don't Conjugate",
+      "explanation": "Unlike European languages, Chinese verbs never change form. There are no conjugations for person, number, tense, or mood. The verb 吃 (chī, to eat) stays 吃 whether you say 'I eat', 'she eats', 'we ate', or 'they will eat'. Time is expressed through context, time words (昨天 yesterday, 明天 tomorrow), and aspect particles (了, 过, 着) — not by changing the verb itself. This makes Chinese verbs much simpler to learn: once you know a verb, you can use it in any situation.",
+      "tip": "Think of Chinese verbs as fixed building blocks. Instead of memorizing conjugation tables, focus on learning time words and particles that go around the verb.",
+      "examples": [
+        { "zh": "我吃。你吃。他吃。", "en": "I eat. You eat. He eats. — same verb for all persons", "highlight": "吃" },
+        { "zh": "我昨天吃了面条。", "en": "I ate noodles yesterday. — 昨天 (yesterday) sets the time", "highlight": "昨天" },
+        { "zh": "她明天去北京。", "en": "She will go to Beijing tomorrow. — 明天 (tomorrow) sets the future", "highlight": "明天" },
+        { "zh": "我们现在学中文。", "en": "We are studying Chinese now. — 现在 (now) sets the present", "highlight": "现在" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How does the verb 吃 (chī) change for 'she eats' versus 'I eat'?", "options": ["It doesn't change — 吃 stays the same", "It adds a suffix for third person", "It changes tone for different subjects"], "correctIndex": 0, "explanation": "Chinese verbs never conjugate. 我吃 (I eat) and 她吃 (she eats) use exactly the same verb form." },
+        { "type": "multiple-choice", "prompt": "How does Chinese indicate past tense in '我昨天去了学校' (I went to school yesterday)?", "options": ["With the time word 昨天 and the particle 了", "By changing 去 to a past form", "By adding a prefix to the verb"], "correctIndex": 0, "explanation": "Chinese uses time words like 昨天 (yesterday) and aspect particles like 了 to indicate when something happened, not verb conjugation." },
+        { "type": "multiple-choice", "prompt": "Which sentence correctly says 'We will eat tomorrow'?", "options": ["我们明天吃。", "我们明天吃了。", "我们明天吃过。"], "correctIndex": 0, "explanation": "明天 (tomorrow) already signals the future. The verb 吃 stays unchanged. 了 and 过 indicate completed actions, so they would contradict 'tomorrow'." }
+      ]
+    },
+    {
+      "sectionId": "common-action-verbs",
+      "title": "Common Action Verbs",
+      "explanation": "Here are ten essential action verbs you will use every day: 吃 (chī, eat), 喝 (hē, drink), 看 (kàn, look/watch/read), 听 (tīng, listen), 说 (shuō, speak/say), 读 (dú, read aloud/study), 写 (xiě, write), 走 (zǒu, walk/leave), 跑 (pǎo, run), 坐 (zuò, sit). In Chinese, the basic sentence pattern is Subject + Verb + Object, the same as English. To negate a verb, put 不 (bù) before it: 我不吃 (I don't eat). For past negation, use 没 (méi): 我没吃 (I didn't eat).",
+      "tip": "看 (kàn) is versatile — it can mean 'look at', 'watch' (TV), or 'read' (a book). Context tells you which meaning is intended.",
+      "examples": [
+        { "zh": "我吃苹果，他喝茶。", "en": "I eat an apple; he drinks tea.", "highlight": "吃, 喝" },
+        { "zh": "她看电视，我听音乐。", "en": "She watches TV; I listen to music.", "highlight": "看, 听" },
+        { "zh": "你说中文，我写汉字。", "en": "You speak Chinese; I write Chinese characters.", "highlight": "说, 写" },
+        { "zh": "他不跑，他坐着。", "en": "He doesn't run; he is sitting.", "highlight": "跑, 坐" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Which verb means 'to listen'?", "options": ["听 (tīng)", "说 (shuō)", "读 (dú)"], "correctIndex": 0, "explanation": "听 (tīng) means 'to listen'. 说 means 'to speak/say' and 读 means 'to read aloud'." },
+        { "type": "multiple-choice", "prompt": "How do you say 'I don't drink coffee'?", "options": ["我不喝咖啡。", "我没喝咖啡。", "我喝不咖啡。"], "correctIndex": 0, "explanation": "不 (bù) goes before the verb for general negation: 我不喝咖啡 = I don't drink coffee (as a habit). 没喝 would mean 'didn't drink' (a specific past event)." },
+        { "type": "multiple-choice", "prompt": "What does '她看书' mean?", "options": ["She reads a book.", "She looks at a tree.", "She watches a show."], "correctIndex": 0, "explanation": "看书 means 'to read a book' (literally 'look-book'). 看 combined with 书 (book) gives the meaning of reading." }
+      ]
+    },
+    {
+      "sectionId": "verb-object-compounds",
+      "title": "Verb + Object Compounds",
+      "explanation": "Many common Chinese verbs are actually verb-object compounds: a verb paired with a default object. 吃饭 (chī fàn, eat-rice = eat a meal), 喝水 (hē shuǐ, drink-water = have a drink), 看书 (kàn shū, look-book = read), 说话 (shuō huà, speak-words = talk/speak), 走路 (zǒu lù, walk-road = walk). These are called separable verbs (离合词) because other elements can be inserted between the verb and object. For example, 吃了饭 (ate a meal) inserts 了 between 吃 and 饭. When you add a specific object, the default object is dropped: 吃饭 → 吃面条 (eat noodles), not 吃饭面条.",
+      "tip": "When you want to add a modifier like 了 or a duration, split the compound: 吃了饭, 说了两个小时的话. The default object drops when you supply a specific one.",
+      "examples": [
+        { "zh": "你吃饭了吗？", "en": "Have you eaten? (literally: eat-rice + 了 + question)", "highlight": "吃饭" },
+        { "zh": "我想喝水。", "en": "I want to drink water.", "highlight": "喝水" },
+        { "zh": "她在看书，别说话。", "en": "She's reading; don't talk.", "highlight": "看书, 说话" },
+        { "zh": "我们走路去学校。", "en": "We walk to school. (literally: walk-road go school)", "highlight": "走路" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What is the literal meaning of 吃饭 (chī fàn)?", "options": ["eat-rice (to have a meal)", "eat-bread (to have lunch)", "eat-food (to cook)"], "correctIndex": 0, "explanation": "吃饭 literally means 'eat rice' but is used generally to mean 'eat a meal' or 'have you eaten?' — rice being the staple food in Chinese culture." },
+        { "type": "multiple-choice", "prompt": "If you want to say 'eat noodles', which is correct?", "options": ["吃面条", "吃饭面条", "吃饭了面条"], "correctIndex": 0, "explanation": "When adding a specific object, the default object 饭 is dropped. You say 吃面条, not 吃饭面条." },
+        { "type": "multiple-choice", "prompt": "How do you insert 了 into 说话 to say 'spoke/talked'?", "options": ["说了话", "说话了", "了说话"], "correctIndex": 0, "explanation": "Separable verbs split to insert particles: 说 + 了 + 话 = 说了话 (spoke/talked). The particle goes between the verb and its object." }
+      ]
+    },
+    {
+      "sectionId": "gei-rang",
+      "title": "给 (gěi) and 让 (ràng)",
+      "explanation": "给 (gěi) means 'to give' and is also used as a preposition meaning 'to/for someone'. Pattern: Subject + 给 + Person + Verb/Object. Example: 我给你一本书 (I give you a book). It can also mark the recipient of an action: 我给他打电话 (I make a phone call to him). 让 (ràng) means 'to let/allow/make (someone do something)'. Pattern: Subject + 让 + Person + Verb. Example: 妈妈让我学习 (Mom makes me study). 让 can express permission (let/allow) or causation (make/cause), depending on context.",
+      "tip": "给 answers 'to/for whom?' while 让 answers 'who causes whom to do what?' Both place the affected person before the action verb.",
+      "examples": [
+        { "zh": "我给你一杯水。", "en": "I give you a glass of water.", "highlight": "给" },
+        { "zh": "请你给我看看。", "en": "Please show it to me. (literally: give me a look)", "highlight": "给" },
+        { "zh": "妈妈让我早点睡觉。", "en": "Mom makes me go to bed early.", "highlight": "让" },
+        { "zh": "老师不让我们说英文。", "en": "The teacher doesn't let us speak English.", "highlight": "让" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "What does '我给你打电话' mean?", "options": ["I'll call you. (give you a phone call)", "I give you a phone.", "I let you make a call."], "correctIndex": 0, "explanation": "给你 here means 'to you' — it marks the recipient of the action 打电话 (make a phone call). 我给你打电话 = I call you." },
+        { "type": "multiple-choice", "prompt": "Which sentence means 'Mom lets me play'?", "options": ["妈妈让我玩。", "妈妈给我玩。", "妈妈和我玩。"], "correctIndex": 0, "explanation": "让 + person + verb means 'let/allow someone to do something'. 妈妈让我玩 = Mom lets me play. 给 is for giving, and 和 means 'with'." },
+        { "type": "multiple-choice", "prompt": "How do you say 'Please give me a book'?", "options": ["请给我一本书。", "请让我一本书。", "请我给一本书。"], "correctIndex": 0, "explanation": "给 + person + object means 'give someone something'. 请给我一本书 = Please give me a book. 让 would mean 'let/make', not 'give'." }
+      ]
+    }
+  ]
+}

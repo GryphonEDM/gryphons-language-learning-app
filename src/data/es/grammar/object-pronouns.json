@@ -1,0 +1,269 @@
+{
+  "lessonId": "object-pronouns",
+  "nameEn": "Object Pronouns",
+  "nameEs": "Pronombres de Objeto",
+  "icon": "🎯",
+  "tier": "B1",
+  "prerequisites": ["pronouns", "present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "direct-object-pronouns",
+      "title": "Direct Object Pronouns",
+      "explanation": "Direct object pronouns replace the noun that directly receives the action of the verb. The forms are: me (me), te (you, informal), lo/la (him/her/it/you formal), nos (us), os (you all, Spain), los/las (them/you all). They are placed immediately before the conjugated verb. Use lo for masculine nouns and lo for 'usted' (male); use la for feminine nouns and la for 'usted' (female). Examples: Veo el libro → Lo veo. Veo a María → La veo. The pronoun never separates the subject from the verb — it slots in just before the verb form.",
+      "tip": "A quick test: ask '¿Qué?' or '¿A quién?' after the verb. Whatever answers that question is the direct object. Then replace it with the matching pronoun and move it before the verb.",
+      "examples": [
+        { "es": "Lo veo.", "en": "I see it / him.", "highlight": "Lo" },
+        { "es": "La llamo esta noche.", "en": "I'll call her tonight.", "highlight": "La" },
+        { "es": "¿Me escuchas?", "en": "Are you listening to me?", "highlight": "Me" },
+        { "es": "Te quiero mucho.", "en": "I love you very much.", "highlight": "Te" },
+        { "es": "Nos invitan a la fiesta.", "en": "They invite us to the party.", "highlight": "Nos" },
+        { "es": "Los compramos en el mercado.", "en": "We buy them at the market.", "highlight": "Los" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Replace the underlined noun: Veo **el coche**. → ___ veo.",
+          "options": ["Lo", "La", "Le", "Los"],
+          "correctIndex": 0,
+          "explanation": "'El coche' is masculine singular, so the direct object pronoun is 'lo'. It goes before the conjugated verb: Lo veo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ llamo mañana. (I'll call you — informal — tomorrow.)",
+          "acceptedAnswers": ["Te"],
+          "hint": "The informal 'you' direct object pronoun is 'te'",
+          "explanation": "The direct object pronoun for 'tú' is 'te'. It goes before the conjugated verb: Te llamo mañana."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Replace the underlined noun: Compramos **las manzanas**. → ___ compramos.",
+          "options": ["Las", "Los", "La", "Le"],
+          "correctIndex": 0,
+          "explanation": "'Las manzanas' is feminine plural, so the direct object pronoun is 'las'. Las compramos."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿___ ves? Sí, ___ veo. (Do you see us? Yes, I see you (pl., Spain).)",
+          "acceptedAnswers": ["Nos, os", "nos, os"],
+          "hint": "First blank: 'us' → nos. Second blank: 'you all' (Spain) → os",
+          "explanation": "'Nos' is the first-person plural direct object pronoun (us). 'Os' is the second-person plural direct object pronoun used in Spain (you all). ¿Nos veis? Sí, os vemos."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does the direct object pronoun go with a conjugated verb?",
+          "options": [
+            "Immediately before the conjugated verb",
+            "Immediately after the conjugated verb",
+            "At the end of the sentence",
+            "Before the subject"
+          ],
+          "correctIndex": 0,
+          "explanation": "With a single conjugated verb, the direct object pronoun always goes immediately before it: Lo veo, not Veo lo."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses a direct object pronoun?",
+          "options": [
+            "La conozco bien.",
+            "Conozco la bien.",
+            "Conozco bien la.",
+            "Bien la conozco."
+          ],
+          "correctIndex": 0,
+          "explanation": "'La' refers to a feminine person or thing. It must come directly before the conjugated verb 'conozco': La conozco bien."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella tiene la carta pero no ___ lee. (She has the letter but doesn't read it.)",
+          "acceptedAnswers": ["la"],
+          "hint": "'La carta' is feminine — which pronoun replaces it?",
+          "explanation": "'La carta' is feminine singular, so it is replaced by 'la'. The pronoun goes before the conjugated verb 'lee': no la lee."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Replace the underlined noun: El médico **examina a los pacientes**. → El médico ___ examina.",
+          "options": ["los", "les", "las", "le"],
+          "correctIndex": 0,
+          "explanation": "'Los pacientes' is masculine plural and is the direct object, so the correct pronoun is 'los'. Los examina."
+        }
+      ]
+    },
+    {
+      "sectionId": "indirect-object-pronouns",
+      "title": "Indirect Object Pronouns",
+      "explanation": "Indirect object pronouns indicate to whom or for whom an action is done. The forms are: me (to/for me), te (to/for you, informal), le (to/for him/her/it/you formal), nos (to/for us), os (to/for you all, Spain), les (to/for them/you all). They also go before the conjugated verb. Important rule: when le or les appears right before lo, la, los, or las (a direct object pronoun starting with l-), le/les changes to se. This avoids the awkward cluster 'le lo' → se lo, 'les la' → se la, etc. The indirect object pronoun often appears alongside a prepositional phrase (a él, a ella, a usted, a ellos) for clarification since 'le' and 'les' are ambiguous.",
+      "tip": "Remember the le→se rule with a simple sentence: 'Le lo doy' is wrong — you must say 'Se lo doy'. Think of it as a pronunciation smoothing rule. Add a clarifying phrase when needed: Se lo doy a ella (I give it to her).",
+      "examples": [
+        { "es": "Te mando un mensaje.", "en": "I'm sending you a message.", "highlight": "Te" },
+        { "es": "Le doy las llaves.", "en": "I give him/her the keys.", "highlight": "Le" },
+        { "es": "Nos explica la lección.", "en": "He/She explains the lesson to us.", "highlight": "Nos" },
+        { "es": "Les cuento un secreto.", "en": "I tell them a secret.", "highlight": "Les" },
+        { "es": "Me compra un regalo.", "en": "He/She buys me a gift.", "highlight": "Me" },
+        { "es": "Se lo digo a él.", "en": "I tell it to him. (le → se before lo)", "highlight": "Se" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct indirect object pronoun: Voy a dar un regalo ___ mi madre. (I'm going to give a gift to my mother.)",
+          "options": ["le", "la", "lo", "se"],
+          "correctIndex": 0,
+          "explanation": "'Mi madre' is a third-person singular indirect object. The indirect object pronoun is 'le'. With a conjugated verb phrase: Le voy a dar un regalo a mi madre."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ escribo una carta a ti. (I write you a letter.)",
+          "acceptedAnswers": ["Te"],
+          "hint": "The indirect object pronoun for 'tú' is 'te'",
+          "explanation": "When the action is done for 'tú', use the indirect object pronoun 'te'. Te escribo una carta."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Apply the le→se rule: 'Le lo doy a Juan.' The corrected sentence is:",
+          "options": [
+            "Se lo doy a Juan.",
+            "Le lo doy a Juan.",
+            "Lo se doy a Juan.",
+            "Lo le doy a Juan."
+          ],
+          "correctIndex": 0,
+          "explanation": "When 'le' (indirect) is followed by 'lo/la/los/las' (direct), 'le' changes to 'se'. Le lo → se lo. The correct sentence is: Se lo doy a Juan."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ mandamos flores a ellas. (We send them flowers.)",
+          "acceptedAnswers": ["Les"],
+          "hint": "The indirect object pronoun for 'ellas' (third-person plural) is 'les'",
+          "explanation": "For a third-person plural indirect object, use 'les'. Les mandamos flores a ellas."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Les la enseño a los niños' is incorrect. What is the corrected sentence?",
+          "options": [
+            "Se la enseño a los niños.",
+            "Les la enseño a los niños.",
+            "La les enseño a los niños.",
+            "La se enseño a los niños."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Les' before 'la' must become 'se': les la → se la. Se la enseño a los niños. (I teach it to the children.)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El camarero ___ trae la cuenta. (The waiter brings us the bill.)",
+          "acceptedAnswers": ["nos"],
+          "hint": "The indirect object pronoun for 'nosotros' is 'nos'",
+          "explanation": "For 'us' as indirect object, use 'nos'. El camarero nos trae la cuenta."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly replaces 'les' with 'se' when required?",
+          "options": [
+            "Se los entrego mañana.",
+            "Les los entrego mañana.",
+            "Los les entrego mañana.",
+            "Los se entrego mañana."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Les' before 'los' must become 'se': les los → se los. The indirect pronoun always comes before the direct pronoun: Se los entrego mañana."
+        }
+      ]
+    },
+    {
+      "sectionId": "double-object-pronouns-and-placement",
+      "title": "Double Object Pronouns and Placement with Infinitives/Gerunds",
+      "explanation": "When both an indirect and a direct object pronoun appear together, the indirect always comes first: indirect + direct + verb. Remember that le/les → se before lo/la/los/las. So the standard order is: (se) + lo/la/los/las + verb. Example: Doy la carta a Juan → Se la doy (a Juan). With verb phrases containing an infinitive or a gerund (present participle), you have two equally correct options: (1) place both pronouns before the conjugated verb — 'Se lo quiero dar', or (2) attach both pronouns together to the infinitive or gerund as a single suffix — 'Quiero dárselo' / 'Estoy dándoselo'. When attaching to an infinitive or gerund, a written accent is usually added to maintain the original stress: dar → dárselo, dando → dándoselo. With affirmative imperatives, pronouns are always attached to the end: ¡Dáselo! (Give it to him/her!). With negative imperatives, pronouns go before: No se lo des.",
+      "tip": "When attaching two pronouns to an infinitive or gerund, count back two syllables from the end of the original verb form and place the accent there: dár-se-lo, dán-do-se-lo. Double-check with a stress rule: the original stress must be preserved.",
+      "examples": [
+        { "es": "Se lo doy.", "en": "I give it to him/her.", "highlight": "Se lo" },
+        { "es": "Quiero dárselo.", "en": "I want to give it to him/her.", "highlight": "dárselo" },
+        { "es": "Se lo quiero dar.", "en": "I want to give it to him/her.", "highlight": "Se lo" },
+        { "es": "Estoy dándoselo.", "en": "I am giving it to him/her.", "highlight": "dándoselo" },
+        { "es": "¡Dáselo!", "en": "Give it to him/her!", "highlight": "Dáselo" },
+        { "es": "No se lo des.", "en": "Don't give it to him/her.", "highlight": "No se lo" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Combine the pronouns correctly: I give it (the book, masc.) to her. → ___",
+          "options": [
+            "Se lo doy.",
+            "Le lo doy.",
+            "Lo le doy.",
+            "Lo se doy."
+          ],
+          "correctIndex": 0,
+          "explanation": "Indirect 'le' + direct 'lo': le must become 'se' before 'lo'. Order: indirect (se) + direct (lo) + verb. → Se lo doy."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Quiero comprar las flores para ti. → Quiero ___. (I want to buy them for you — attach both pronouns to the infinitive.)",
+          "acceptedAnswers": ["comprártelas", "comprartelas"],
+          "hint": "Indirect 'te' + direct 'las', attached to the infinitive 'comprar' — add an accent to preserve stress",
+          "explanation": "Indirect 'te' + direct 'las' → telas. Attach to 'comprar': comprar + te + las = comprártelas. The accent on the antepenultimate syllable preserves the original stress of 'comprar'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is NOT a valid way to say 'I am sending it to them'?",
+          "options": [
+            "Les lo estoy enviando.",
+            "Se lo estoy enviando.",
+            "Estoy enviándoselo."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Les lo' is never correct — 'les' must become 'se' before 'lo'. Both 'Se lo estoy enviando' and 'Estoy enviándoselo' are valid alternatives."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella me explica la lección. → Ella ___ ___. (She explains it to me — replace 'la lección' with a pronoun.)",
+          "acceptedAnswers": ["me la explica", "me la"],
+          "hint": "Indirect 'me' stays as 'me'; direct pronoun for 'la lección' (fem. sing.) is 'la'. Order: me + la + verb",
+          "explanation": "'Me' (indirect, to me) does not change. 'La lección' → 'la' (feminine singular direct). Order: me la + verb. → Ella me la explica."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Affirmative imperative — attach pronouns to the verb: Give it (masc.) to us! → ___",
+          "options": [
+            "¡Dánoslo!",
+            "¡Nos lo da!",
+            "¡Lo nos da!",
+            "¡Danóslo!"
+          ],
+          "correctIndex": 0,
+          "explanation": "With affirmative imperatives, pronouns attach to the end: da + nos + lo = dánoslo. An accent is added to preserve the stress on 'da'. ¡Dánoslo!"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Negative imperative — pronouns go BEFORE the verb: Don't tell it to them! → ___",
+          "options": [
+            "¡No se lo digas!",
+            "¡No digas se lo!",
+            "¡Dígaselo no!",
+            "¡No les lo digas!"
+          ],
+          "correctIndex": 0,
+          "explanation": "Negative imperatives take pronouns before the verb. 'Le/les' → 'se' before 'lo': se lo. No + se lo + verb (subjunctive) → ¡No se lo digas!"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella está leyendo el libro a los niños. → Ella está ___. (She is reading it to them — attach both pronouns to the gerund.)",
+          "acceptedAnswers": ["leyéndoselo", "leyendoselo"],
+          "hint": "Indirect 'les' → 'se' before 'lo'. Attach 'se' + 'lo' to the gerund 'leyendo'. Add an accent.",
+          "explanation": "'Les' (to them) + 'lo' (it, masc.) → se lo. Attach to 'leyendo': leyendo + se + lo = leyéndoselo. Accent on the antepenultimate syllable. → Ella está leyéndoselo."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly places both pronouns before the conjugated verb (NOT attached)?",
+          "options": [
+            "Te lo voy a explicar.",
+            "Voy a explicartelo.",
+            "Voy a explicar te lo.",
+            "Telo voy a explicar."
+          ],
+          "correctIndex": 0,
+          "explanation": "When placing pronouns before a conjugated verb in a verb phrase, they go as a unit before the conjugated verb: te + lo + voy a explicar → Te lo voy a explicar. (Note: 'Voy a explicártelo' is also correct but uses attachment, not pre-placement.)"
+        }
+      ]
+    }
+  ]
+}

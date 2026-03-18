@@ -1,0 +1,220 @@
+{
+  "lessonId": "pronouns",
+  "nameEn": "Pronouns",
+  "nameEs": "Los Pronombres",
+  "icon": "👤",
+  "tier": "A1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "subject-pronouns",
+      "title": "Subject Pronouns",
+      "explanation": "Subject pronouns tell us who is performing the action of a verb. Spanish has the following subject pronouns: yo (I), tú (you, informal singular), él (he), ella (she), nosotros/nosotras (we), vosotros/vosotras (you all, informal plural — used mainly in Spain), ellos/ellas (they), usted (you, formal singular), ustedes (you all, formal plural). Notice that Spanish has two words for 'you' in the singular: tú (informal) and usted (formal). In Latin America, vosotros is rarely used and ustedes serves for all plural 'you' contexts.",
+      "tip": "Usted and ustedes are grammatically third person — they conjugate the verb the same way as él/ella and ellos/ellas respectively, even though they mean 'you'. They are often abbreviated as Ud. and Uds.",
+      "examples": [
+        { "es": "Yo soy estudiante.", "en": "I am a student.", "highlight": "Yo" },
+        { "es": "Tú hablas muy bien.", "en": "You speak very well.", "highlight": "Tú" },
+        { "es": "Él vive en Madrid.", "en": "He lives in Madrid.", "highlight": "Él" },
+        { "es": "Nosotros comemos juntos.", "en": "We eat together.", "highlight": "Nosotros" },
+        { "es": "Ellas trabajan aquí.", "en": "They (fem.) work here.", "highlight": "Ellas" },
+        { "es": "Ustedes son bienvenidos.", "en": "You all are welcome.", "highlight": "Ustedes" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun means 'we' in Spanish?",
+          "options": ["nosotros", "vosotros", "ellos", "ustedes"],
+          "correctIndex": 0,
+          "explanation": "Nosotros (masc. or mixed group) and nosotras (all-female group) both mean 'we'. Vosotros means 'you all' (Spain), ellos means 'they', and ustedes means 'you all' (formal or Latin American)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ es mi amiga. (She is my friend.)",
+          "acceptedAnswers": ["Ella"],
+          "hint": "The feminine singular third-person pronoun",
+          "explanation": "Ella means 'she'. Él (with an accent) means 'he'. The accent distinguishes the pronoun él from the article el (the)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does 'usted' conjugate its verb?",
+          "options": ["Like él/ella (third person singular)", "Like tú (second person singular)", "Like yo (first person singular)", "Like nosotros (first person plural)"],
+          "correctIndex": 0,
+          "explanation": "Even though usted means 'you', it is grammatically third person singular and uses the same verb form as él and ella — e.g., usted habla, usted come."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ somos de México. (We are from Mexico.)",
+          "acceptedAnswers": ["Nosotros", "Nosotras"],
+          "hint": "The first person plural pronoun",
+          "explanation": "Nosotros (mixed or masculine group) or nosotras (all-female group) both mean 'we'. Either is accepted here."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun is used for 'they' when referring to a group of women?",
+          "options": ["ellas", "ellos", "nosotras", "ustedes"],
+          "correctIndex": 0,
+          "explanation": "Ellas is the feminine plural third-person pronoun meaning 'they' for an all-female group. Ellos is used for male or mixed groups."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In Latin America, which pronoun is used as 'you all' in both formal and informal contexts?",
+          "options": ["ustedes", "vosotros", "ellos", "tú"],
+          "correctIndex": 0,
+          "explanation": "In Latin America, vosotros is not commonly used. Ustedes covers both informal and formal 'you all'. In Spain, vosotros is used for informal groups and ustedes for formal groups."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ viven en Buenos Aires. (They live in Buenos Aires.) — mixed group",
+          "acceptedAnswers": ["Ellos"],
+          "hint": "The masculine/mixed-group third person plural pronoun",
+          "explanation": "Ellos is used for a mixed or all-male group meaning 'they'. Ellas would be used for an all-female group."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'vosotros'?",
+          "options": ["Vosotros coméis muy rápido.", "Vosotros come muy rápido.", "Vosotros comen muy rápido.", "Vosotros comes muy rápido."],
+          "correctIndex": 0,
+          "explanation": "Vosotros takes the -éis ending for -ER verbs: comer → coméis. This form is characteristic of Spain. In Latin America, ustedes comen would be used instead."
+        }
+      ]
+    },
+    {
+      "sectionId": "tu-vs-usted",
+      "title": "Tú vs. Usted: Formal and Informal",
+      "explanation": "Spanish distinguishes between informal and formal address in the singular 'you'. Tú is informal and is used with friends, family members, children, peers, and anyone you know well or who is your social equal or younger. Usted is formal and is used with strangers, elders, authority figures (doctors, bosses, teachers you address formally), or in professional and service contexts. Usted conjugates verbs in the third person singular — the same as él and ella. In Latin America, this distinction is taken very seriously; in some regions (like Colombia), even children address parents with usted. In Spain the distinction is similar, though tú is used more liberally.",
+      "tip": "When in doubt in a new situation, start with usted. The other person will often invite you to use tú by saying '¡Tutéame!' (Call me tú!) or 'Puedes hablarme de tú' (You can address me informally).",
+      "examples": [
+        { "es": "¿Cómo te llamas?", "en": "What's your name? (informal)", "highlight": "te" },
+        { "es": "¿Cómo se llama usted?", "en": "What is your name? (formal)", "highlight": "usted" },
+        { "es": "Tú eres muy simpático.", "en": "You are very nice. (to a friend)", "highlight": "Tú" },
+        { "es": "Usted es muy amable, doctor.", "en": "You are very kind, doctor. (formal)", "highlight": "Usted" },
+        { "es": "¿Tú hablas inglés?", "en": "Do you speak English? (informal)", "highlight": "Tú" },
+        { "es": "¿Habla usted inglés?", "en": "Do you speak English? (formal)", "highlight": "usted" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You are meeting your friend's mother for the first time. Which pronoun should you use?",
+          "options": ["usted", "tú", "vosotros", "ella"],
+          "correctIndex": 0,
+          "explanation": "When meeting an elder or someone in a position of social respect for the first time, use usted. You can switch to tú if they invite you to."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿___ tiene reserva, señor? (Do you have a reservation, sir?) — formal",
+          "acceptedAnswers": ["Usted"],
+          "hint": "Use the formal singular 'you' when addressing a customer or stranger politely",
+          "explanation": "In a formal service context — hotel, restaurant, office — usted is the correct choice. The verb 'tiene' is third person singular, matching usted."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Your coworker (same age, friendly) asks if you want coffee. How do they address you?",
+          "options": ["¿Tú quieres café?", "¿Usted quiere café?", "¿Él quiere café?", "¿Vosotros queréis café?"],
+          "correctIndex": 0,
+          "explanation": "With a peer or friend in an informal setting, tú is appropriate. Usted would feel overly stiff between coworkers of the same level."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿___ estudias mucho? (Do you study a lot?) — asking a classmate",
+          "acceptedAnswers": ["Tú"],
+          "hint": "A classmate is a peer — use the informal pronoun",
+          "explanation": "Tú is correct for peers and friends. The verb 'estudias' (second person singular informal) also confirms this is a tú context."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb form pairs correctly with 'usted'?",
+          "options": ["Usted habla", "Usted hablas", "Usted hablo", "Usted habláis"],
+          "correctIndex": 0,
+          "explanation": "Usted uses the third person singular verb ending. For -AR verbs that is -a: habla. 'Hablas' is the tú form; 'hablo' is yo; 'habláis' is vosotros."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Doctor, ¿___ puede ver a mi hijo hoy? (Doctor, can you see my son today?) — formal",
+          "acceptedAnswers": ["usted"],
+          "hint": "Doctors are addressed formally",
+          "explanation": "A doctor is an authority/professional figure you address formally. Usted is correct, and the verb 'puede' is third person singular to match."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A child addresses their grandfather. Which is most natural in most Spanish-speaking regions?",
+          "options": ["Abuelo, ¿cómo está usted?", "Abuelo, ¿cómo estás tú?", "Abuelo, ¿cómo estáis?", "Abuelo, ¿cómo están?"],
+          "correctIndex": 0,
+          "explanation": "In many Spanish-speaking cultures, children address grandparents with usted as a sign of respect and affection. The correct formal form 'está' (third person singular) is used with usted."
+        }
+      ]
+    },
+    {
+      "sectionId": "pro-drop",
+      "title": "Dropping the Subject Pronoun (Pro-Drop)",
+      "explanation": "Spanish is a 'pro-drop' language, meaning subject pronouns are frequently omitted because the verb ending already tells you who the subject is. For example, 'hablo' can only mean 'I speak' — the -o ending uniquely identifies yo — so saying 'yo hablo' is grammatically correct but often redundant. In practice, native speakers drop the pronoun most of the time. However, pronouns are kept for clarity (when two possible subjects could be confused), contrast ('YO lo hago, no tú' — I'm doing it, not you), emphasis, or politeness. The pronoun is also typically stated when first introducing a topic or when switching subjects.",
+      "tip": "A helpful rule: if two people (él and ella, or tú and usted) could be the subject of the same verb form, include the pronoun to avoid ambiguity. For example, 'habla' could be él, ella, or usted — in those cases, the pronoun clarifies who you mean.",
+      "examples": [
+        { "es": "Hablo español e inglés.", "en": "I speak Spanish and English. (yo dropped)", "highlight": "Hablo" },
+        { "es": "¿Tienes hermanos?", "en": "Do you have siblings? (tú dropped)", "highlight": "Tienes" },
+        { "es": "Vivimos en Madrid.", "en": "We live in Madrid. (nosotros dropped)", "highlight": "Vivimos" },
+        { "es": "Yo lo hago, no tú.", "en": "I'll do it, not you. (pronoun kept for contrast)", "highlight": "Yo" },
+        { "es": "Él habla; ella escucha.", "en": "He speaks; she listens. (pronouns kept to distinguish subjects)", "highlight": "Él" },
+        { "es": "¿Comes mucho?", "en": "Do you eat a lot? (tú dropped naturally)", "highlight": "Comes" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "The sentence 'Comemos pizza los viernes.' has no subject pronoun. What is the implied subject?",
+          "options": ["nosotros/nosotras", "ellos/ellas", "yo", "vosotros"],
+          "correctIndex": 0,
+          "explanation": "The -emos ending is unique to nosotros/nosotras (first person plural). No other pronoun takes this ending for -ER verbs, so it is unambiguous without stating the pronoun."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Rewrite with the pronoun dropped: 'Yo tengo dos gatos.' → ___ dos gatos.",
+          "acceptedAnswers": ["Tengo"],
+          "hint": "Remove 'yo' and just use the verb form",
+          "explanation": "Because 'tengo' (-go ending) unambiguously means first person singular, 'yo' can be dropped. 'Tengo dos gatos' is the natural way to say this."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why would a speaker say 'Ella habla francés' instead of just 'Habla francés'?",
+          "options": ["To clarify it is she (not él or usted) who speaks French", "Because dropping the pronoun is a grammar error", "Because 'habla' does not indicate a subject without a pronoun", "To be more informal"],
+          "correctIndex": 0,
+          "explanation": "'Habla' is ambiguous — it works for él, ella, and usted. Including 'ella' removes that ambiguity and makes clear the subject is female. This is the main reason pronouns are kept with third-person forms."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "In the sentence '¡___ lo hago, no ella!' (I'm doing it, not her!), the pronoun is kept for ___.",
+          "acceptedAnswers": ["Yo", "emphasis", "Yo, emphasis", "contrast"],
+          "hint": "Think about why a speaker would stress the subject pronoun here",
+          "explanation": "The pronoun yo is retained here for emphasis and contrast — the speaker is stressing that it is they, and not someone else, who will do something. Fill 'Yo' for the blank; the reason is contrast/emphasis."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence sounds most natural to a native speaker?",
+          "options": ["¿Tienes hambre?", "¿Tú tienes hambre?", "Both are correct, but ¿Tienes hambre? is more natural", "Only ¿Tú tienes hambre? is grammatically correct"],
+          "correctIndex": 2,
+          "explanation": "Both are grammatically correct. However, dropping tú is more natural in everyday speech because 'tienes' already signals second person singular. Including 'tú' adds emphasis or contrast but is not the default."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In which situation is it best to KEEP the subject pronoun?",
+          "options": ["When switching from talking about él to talking about ella mid-conversation", "When using yo with -o ending verbs", "When using nosotros with -amos ending verbs", "Whenever speaking formally"],
+          "correctIndex": 0,
+          "explanation": "Switching between subjects that use the same verb form (él/ella/usted all share third person singular) is the clearest case where the pronoun must be stated to avoid confusion."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Translate naturally (drop the pronoun if possible): 'We work every day.' → ___ todos los días.",
+          "acceptedAnswers": ["Trabajamos"],
+          "hint": "Use the nosotros form of 'trabajar' — no pronoun needed",
+          "explanation": "Trabajamos (-amos ending) unambiguously means 'we work'. The pronoun nosotros is dropped since the verb ending makes the subject clear. 'Trabajamos todos los días.' is natural Spanish."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A student says 'Yo estudio, yo como bien y yo duermo ocho horas.' A native speaker would find this:",
+          "options": ["Unnatural — repeating yo for each verb is redundant and sounds emphatic or foreign", "Perfectly natural — yo should always be stated with each verb", "Wrong — yo cannot be used with estudio, como, or duermo", "Correct but only in formal writing"],
+          "correctIndex": 0,
+          "explanation": "Repeating yo before each verb in a list sounds unnatural and overly emphatic in Spanish. A native speaker would say 'Estudio, como bien y duermo ocho horas.' — the yo is understood from the verb endings."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "lessonId": "pinyin-tones",
+  "nameEn": "Pinyin and Tones",
+  "nameZh": "拼音和声调",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "initials",
+      "title": "Pinyin Initials",
+      "explanation": "Mandarin Chinese has 23 initials (声母, shēngmǔ) — the consonant sounds that begin a syllable: b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s, y, w. While many look like English letters, their pronunciation often differs. The pairs b/p, d/t, g/k are distinguished by aspiration (a puff of air), not voicing as in English — so 'b' sounds like an unaspirated 'p', and 'p' sounds like an aspirated 'p' with a strong puff of air. The retroflex initials zh, ch, sh, r are pronounced with the tongue curled back toward the roof of the mouth. The dental sibilants z, c, s are pronounced with the tongue behind the upper teeth. The palatals j, q, x only appear before i or ü and are pronounced with the tongue pressed against the hard palate. The semi-vowels y and w function as initials when a syllable would otherwise start with i or u.",
+      "tip": "The hardest distinction for English speakers is aspiration vs. voicing. Hold your hand in front of your mouth: when you say 'p' (pō) you should feel a puff of air, but 'b' (bō) should have no puff. Both are voiceless — neither vibrates the vocal cords the way English 'b' does. Practice b/p, d/t, and g/k pairs this way.",
+      "examples": [
+        { "zh": "bā (八)", "en": "eight — 'b' is an unaspirated p, not like English 'b'", "highlight": "b" },
+        { "zh": "pá (爬)", "en": "to climb — 'p' is aspirated, with a strong puff of air", "highlight": "p" },
+        { "zh": "zhī (知)", "en": "to know — 'zh' is a retroflex, tongue curled back", "highlight": "zh" },
+        { "zh": "xī (西)", "en": "west — 'x' is a palatal fricative, like 'sh' but with tongue flat against palate", "highlight": "x" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many initials does Mandarin pinyin have?",
+          "options": ["23", "21", "26"],
+          "correctIndex": 0,
+          "explanation": "Mandarin has 23 initials: b, p, m, f, d, t, n, l, g, k, h, j, q, x, zh, ch, sh, r, z, c, s, y, w."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What distinguishes 'b' from 'p' in Mandarin?",
+          "options": ["Aspiration — 'p' has a puff of air, 'b' does not", "Voicing — 'b' is voiced, 'p' is voiceless", "Tongue position — they are made in different places"],
+          "correctIndex": 0,
+          "explanation": "In Mandarin, b and p are both voiceless. The difference is aspiration: 'p' is pronounced with a strong puff of air, while 'b' has no puff. This is different from English, where 'b' is voiced and 'p' is voiceless."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which set of initials is pronounced with the tongue curled back (retroflex)?",
+          "options": ["zh, ch, sh, r", "z, c, s", "j, q, x"],
+          "correctIndex": 0,
+          "explanation": "The retroflex initials zh, ch, sh, r are pronounced with the tip of the tongue curled back toward the roof of the mouth. The dental sibilants z, c, s use the tongue tip behind the upper teeth, and the palatals j, q, x press the tongue flat against the hard palate."
+        }
+      ]
+    },
+    {
+      "sectionId": "finals",
+      "title": "Pinyin Finals",
+      "explanation": "Finals (韵母, yùnmǔ) are the vowel parts of a Mandarin syllable. There are 6 simple finals: a (open 'ah'), o (rounded 'oh'), e (unrounded 'uh', not like English 'e'), i (like 'ee'), u (like 'oo'), and ü (rounded 'ee' — purse your lips as if saying 'oo' while making an 'ee' sound). Compound finals combine vowels into diphthongs and triphthongs: ai (like 'eye'), ei (like 'ay'), ao (like 'ow' in 'cow'), ou (like 'oh'), ia, ie, iu, ua, uo, üe. Nasal finals end with n or ng: an, en, ang, eng, ong, in, ing, ian, iang, uan, uang, üan, ün. The distinction between -n (tongue touches upper teeth) and -ng (tongue pulls back, nasal resonance) is critical. Note that 'e' alone sounds like 'uh' (as in 得 dé), but in combinations like ei, ie, en it sounds closer to English 'e'. The final ü is written as 'u' after j, q, x (since these initials never combine with regular u), so 'ju' is actually pronounced 'jü'.",
+      "tip": "The trickiest finals for English speakers are 'e' (sounds like 'uh', not 'eh'), 'ü' (round your lips for 'oo' but say 'ee'), and the -n vs. -ng distinction. Practice pairs like: ān/āng, ēn/ēng, īn/īng. For -n, your tongue tip touches your upper teeth; for -ng, your tongue stays back and the sound resonates in your nose.",
+      "examples": [
+        { "zh": "dà (大)", "en": "big — simple final 'a', an open 'ah' sound", "highlight": "a" },
+        { "zh": "hē (喝)", "en": "to drink — 'e' alone sounds like 'uh', not English 'e'", "highlight": "e" },
+        { "zh": "nǚ (女)", "en": "woman — 'ü' is a rounded front vowel, lips pursed while saying 'ee'", "highlight": "ü" },
+        { "zh": "máng (忙)", "en": "busy — nasal final 'ang', tongue stays back with nasal resonance", "highlight": "ang" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the Mandarin simple final 'e' (as in 得 dé) pronounced?",
+          "options": ["Like 'uh' — an unrounded mid-back vowel", "Like 'eh' as in English 'bed'", "Like 'ee' as in English 'see'"],
+          "correctIndex": 0,
+          "explanation": "The standalone Mandarin 'e' is pronounced like 'uh', similar to the 'u' in English 'duh'. It is NOT like English 'e' in 'bed'. However, when combined in finals like 'ei' or 'ie', the 'e' sounds shift closer to English 'e'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "After the initials j, q, and x, the final 'u' is actually pronounced as:",
+          "options": ["ü (rounded front vowel)", "u (regular 'oo' sound)", "o (rounded 'oh' sound)"],
+          "correctIndex": 0,
+          "explanation": "Since j, q, x never combine with regular 'u', the dots on ü are dropped for convenience. So 'ju' is pronounced 'jü', 'qu' is 'qü', and 'xu' is 'xü'. This is a spelling shortcut — the pronunciation is always ü."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between the finals -n and -ng?",
+          "options": ["-n: tongue tip touches upper teeth; -ng: tongue stays back with nasal resonance", "-n is louder than -ng", "There is no difference; they sound the same"],
+          "correctIndex": 0,
+          "explanation": "For -n, the tongue tip presses against the back of the upper teeth (alveolar nasal). For -ng, the back of the tongue rises toward the soft palate and the sound resonates through the nose (velar nasal). Pairs like ān/āng and ēn/ēng sound distinctly different."
+        }
+      ]
+    },
+    {
+      "sectionId": "four-tones",
+      "title": "The Four Tones",
+      "explanation": "Mandarin is a tonal language — the pitch contour of a syllable determines its meaning. There are four main tones plus a neutral tone. The first tone (阴平, yīnpíng) is a high, flat pitch held steady, marked with a macron: ā. The second tone (阳平, yángpíng) rises from mid to high pitch, like asking a question in English, marked with an acute accent: á. The third tone (上声, shǎngshēng) dips low and then rises, marked with a caron: ǎ. In connected speech the third tone is often just a low tone without the final rise. The fourth tone (去声, qùshēng) falls sharply from high to low, like giving a firm command, marked with a grave accent: à. The neutral tone (轻声, qīngshēng) is short, light, and unstressed, with no tone mark: a. The classic example uses 'ma': mā (妈, mother), má (麻, hemp), mǎ (马, horse), mà (骂, to scold), ma (吗, question particle). Getting tones wrong changes meaning entirely — mǎi (买, to buy) vs. mài (卖, to sell).",
+      "tip": "Think of the four tones with these analogies: 1st tone — singing and holding a high note ('Laaaa'); 2nd tone — saying 'What??' with rising surprise; 3rd tone — the grumbling 'hmm...' sound you make when thinking, starting low; 4th tone — a sharp, commanding 'No!' falling from high to low. Practice with mā, má, mǎ, mà until each feels natural.",
+      "examples": [
+        { "zh": "mā (妈)", "en": "mother — 1st tone: high and flat, steady pitch", "highlight": "mā" },
+        { "zh": "má (麻)", "en": "hemp — 2nd tone: rising from mid to high", "highlight": "má" },
+        { "zh": "mǎ (马)", "en": "horse — 3rd tone: dips low then rises", "highlight": "mǎ" },
+        { "zh": "mà (骂)", "en": "to scold — 4th tone: sharp fall from high to low", "highlight": "mà" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which tone is described as 'high and flat, held steady'?",
+          "options": ["First tone (ā)", "Second tone (á)", "Fourth tone (à)"],
+          "correctIndex": 0,
+          "explanation": "The first tone is a high, level pitch held steady throughout the syllable. It stays at the top of your vocal range without rising or falling."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between mǎi (买) and mài (卖)?",
+          "options": ["mǎi (3rd tone) means 'to buy'; mài (4th tone) means 'to sell'", "They mean the same thing", "mǎi means 'to sell'; mài means 'to buy'"],
+          "correctIndex": 0,
+          "explanation": "This is a classic minimal pair showing why tones matter: mǎi (买, 3rd tone) means 'to buy' and mài (卖, 4th tone) means 'to sell'. Mixing up the tone reverses the meaning."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the neutral tone (轻声) pronounced?",
+          "options": ["Short, light, and unstressed with no specific pitch contour", "As a high, flat tone like the first tone", "As a rising tone like the second tone"],
+          "correctIndex": 0,
+          "explanation": "The neutral tone is short, light, and unstressed. Its pitch depends on the preceding tone rather than having a fixed contour. It is not marked with any accent in pinyin (e.g., 'ma' in 吗)."
+        }
+      ]
+    },
+    {
+      "sectionId": "tone-change-rules",
+      "title": "Tone Change Rules",
+      "explanation": "In natural Mandarin speech, tones are not always pronounced as their dictionary form. There are three important tone change rules (变调, biàndiào). First, third tone sandhi (三声变调): when two third-tone syllables occur in a row, the first one changes to a second tone. For example, 你好 (nǐ hǎo, hello) is actually pronounced 'ní hǎo'. The written pinyin keeps the original tone marks, but the spoken pronunciation changes. Second, the word 不 (bù, not) is normally fourth tone, but before another fourth-tone syllable it changes to second tone: 不是 (bù shì) is pronounced 'bú shì', and 不对 (bù duì) is pronounced 'bú duì'. Before first, second, or third tones, 不 stays as fourth tone: 不吃 (bù chī), 不来 (bù lái), 不好 (bù hǎo). Third, the word 一 (yī, one) follows a similar pattern: before a fourth-tone syllable it becomes second tone (一个 yí gè), and before first, second, or third tones it becomes fourth tone (一天 yì tiān, 一年 yì nián, 一起 yì qǐ). When 一 is used alone, in counting, or at the end of a word, it keeps its original first tone.",
+      "tip": "The third-tone sandhi is the most common rule — whenever you see two 3rd tones in a row, automatically change the first to 2nd tone in your pronunciation. For 不 and 一, just remember they change to 2nd tone before 4th-tone syllables. A handy phrase to practice all three rules: 一起买不到 (yìqǐ mǎi búdào) — 'cannot buy together'.",
+      "examples": [
+        { "zh": "你好 (nǐ hǎo → ní hǎo)", "en": "hello — first 3rd tone becomes 2nd tone before another 3rd tone", "highlight": "ní" },
+        { "zh": "不是 (bù shì → bú shì)", "en": "is not — 不 changes from 4th to 2nd tone before another 4th tone", "highlight": "bú" },
+        { "zh": "一个 (yī gè → yí gè)", "en": "one (of something) — 一 changes from 1st to 2nd tone before a 4th tone", "highlight": "yí" },
+        { "zh": "一天 (yī tiān → yì tiān)", "en": "one day — 一 changes from 1st to 4th tone before a 1st tone", "highlight": "yì" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is 你好 (nǐ hǎo) actually pronounced?",
+          "options": ["ní hǎo — the first 3rd tone changes to 2nd tone", "nǐ hǎo — both stay as 3rd tone", "ní háo — both change to 2nd tone"],
+          "correctIndex": 0,
+          "explanation": "When two 3rd-tone syllables are adjacent, the first changes to a 2nd tone (rising). So 你好 is written nǐ hǎo but pronounced ní hǎo. Only the first syllable changes — the second remains 3rd tone."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Before which tone does 不 (bù) change to second tone (bú)?",
+          "options": ["Before a 4th tone", "Before a 1st tone", "Before a 2nd tone"],
+          "correctIndex": 0,
+          "explanation": "不 is normally 4th tone (bù), but it changes to 2nd tone (bú) only before another 4th-tone syllable. For example: 不是 (bú shì), 不对 (bú duì). Before 1st, 2nd, or 3rd tones it stays as bù."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is 一天 (yī tiān) actually pronounced?",
+          "options": ["yì tiān — 一 becomes 4th tone before a 1st-tone syllable", "yí tiān — 一 becomes 2nd tone before a 1st-tone syllable", "yī tiān — 一 stays as 1st tone"],
+          "correctIndex": 0,
+          "explanation": "一 becomes 4th tone (yì) before 1st, 2nd, and 3rd tone syllables, and becomes 2nd tone (yí) before 4th tone syllables. Since 天 is 1st tone, 一天 is pronounced yì tiān."
+        }
+      ]
+    }
+  ]
+}

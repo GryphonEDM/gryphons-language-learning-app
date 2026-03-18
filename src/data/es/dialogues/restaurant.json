@@ -1,0 +1,188 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameEs": "En el restaurante",
+  "icon": "🍽️",
+  "context": "You are at a restaurant in Barcelona. The waiter (Manuel) approaches your table.",
+  "characters": {
+    "npc": { "name": "Manuel" },
+    "player": { "name": "Usted" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "¡Buenas tardes! Bienvenido. ¿Tiene reserva?",
+      "translation": "Good afternoon! Welcome. Do you have a reservation?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say 'yes, I have a reservation' or 'no, but we would like a table'",
+      "acceptedResponses": [
+        "sí, tengo una reserva",
+        "sí, tengo reserva",
+        "no, pero queremos una mesa",
+        "no, pero me gustaría una mesa"
+      ],
+      "keyWords": ["sí", "no", "reserva", "mesa"],
+      "hint": "sí, tengo una reserva"
+    },
+    {
+      "speaker": "npc",
+      "text": "Perfecto. Por favor, siéntese. Aquí tiene la carta.",
+      "translation": "Perfect. Please, have a seat. Here is the menu."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him and ask to see the menu",
+      "acceptedResponses": [
+        "gracias, ¿me puede traer la carta?",
+        "gracias, ¿puedo ver el menú?",
+        "gracias, ¿me trae el menú?",
+        "muchas gracias, ¿tiene la carta?"
+      ],
+      "keyWords": ["gracias", "carta", "menú"],
+      "hint": "gracias, ¿me puede traer la carta?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Hoy tenemos de especial: paella valenciana y bacalao a la catalana. ¿Le apetece algo en particular?",
+      "translation": "Today's specials are: Valencian paella and Catalan-style cod. Would you like something in particular?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask what the waiter recommends",
+      "acceptedResponses": [
+        "¿qué recomienda?",
+        "¿qué me recomienda?",
+        "¿qué recomienda usted?",
+        "¿cuál recomienda?"
+      ],
+      "keyWords": ["recomienda"],
+      "hint": "¿qué recomienda?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Le recomiendo la paella, está muy buena hoy. ¿Está listo para pedir?",
+      "translation": "I recommend the paella, it's very good today. Are you ready to order?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say what you want for the starter (first course)",
+      "acceptedResponses": [
+        "de primero quiero la sopa del día",
+        "de primer plato quiero la ensalada",
+        "para el primer plato, la sopa",
+        "de primero, la ensalada mixta"
+      ],
+      "keyWords": ["primero", "primer plato"],
+      "hint": "de primero quiero la sopa del día"
+    },
+    {
+      "speaker": "npc",
+      "text": "Muy bien. ¿Y de segundo?",
+      "translation": "Very good. And for the main course?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order your main course",
+      "acceptedResponses": [
+        "de segundo quiero la paella",
+        "de segundo plato, el bacalao por favor",
+        "para el segundo plato quiero la paella",
+        "de segundo, el pollo asado"
+      ],
+      "keyWords": ["segundo", "segundo plato"],
+      "hint": "de segundo quiero la paella"
+    },
+    {
+      "speaker": "npc",
+      "text": "Excelente elección. ¿Y para beber?",
+      "translation": "Excellent choice. And to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order something to drink",
+      "acceptedResponses": [
+        "para beber, una agua mineral",
+        "para beber quiero vino tinto",
+        "una cerveza, por favor",
+        "un vaso de vino blanco, por favor"
+      ],
+      "keyWords": ["beber", "agua", "vino", "cerveza"],
+      "hint": "para beber, una agua mineral"
+    },
+    {
+      "speaker": "npc",
+      "text": "Enseguida le traigo todo. ¿Le gustaría ver la carta de postres después?",
+      "translation": "I'll bring everything right away. Would you like to see the dessert menu afterwards?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Respond about dessert — say yes, you'd like to see it, or ask what desserts they have",
+      "acceptedResponses": [
+        "sí, me gustaría ver los postres",
+        "sí, ¿qué postres tienen?",
+        "sí, por favor, la carta de postres",
+        "de postre, ¿qué recomienda?"
+      ],
+      "keyWords": ["postre", "postres"],
+      "hint": "sí, ¿qué postres tienen?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Tenemos crema catalana, tarta de chocolate y helado de vainilla. ¿Qué le apetece?",
+      "translation": "We have crema catalana, chocolate cake and vanilla ice cream. What would you like?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a dessert or say you don't want one",
+      "acceptedResponses": [
+        "quiero la crema catalana, por favor",
+        "la tarta de chocolate, por favor",
+        "no gracias, solo la cuenta",
+        "un helado de vainilla, por favor"
+      ],
+      "keyWords": ["crema", "tarta", "helado", "cuenta"],
+      "hint": "quiero la crema catalana, por favor"
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Que aproveche! ¿Necesita algo más?",
+      "translation": "Enjoy your meal! Do you need anything else?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask for the bill",
+      "acceptedResponses": [
+        "la cuenta, por favor",
+        "¿me trae la cuenta, por favor?",
+        "¿puede traerme la cuenta?",
+        "me gustaría pagar, ¿me trae la cuenta?"
+      ],
+      "keyWords": ["cuenta"],
+      "hint": "la cuenta, por favor"
+    },
+    {
+      "speaker": "npc",
+      "text": "Aquí tiene. Son cuarenta y dos euros en total.",
+      "translation": "Here you are. That's forty-two euros in total."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Pay and leave a tip",
+      "acceptedResponses": [
+        "aquí tiene cincuenta euros, quédese con el cambio",
+        "tome, y quédese con la propina",
+        "aquí tiene, la propina es para usted",
+        "muchas gracias, quédese con el cambio como propina"
+      ],
+      "keyWords": ["propina", "cambio", "quédese"],
+      "hint": "aquí tiene, y quédese con la propina"
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Muchas gracias! Ha sido un placer. ¡Hasta pronto!",
+      "translation": "Thank you very much! It has been a pleasure. See you soon!"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "lessonId": "desire-intention",
+  "nameEn": "Desire & Intention",
+  "nameJa": "希望・意志",
+  "icon": "💭",
+  "tier": "A2",
+  "prerequisites": ["verb-groups"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "tai-want-to",
+      "title": "たい (Want to Do)",
+      "explanation": "To express 'I want to do [verb]', change the verb to its ます-stem and add たい. For example: たべます → たべたい (want to eat), いきます → いきたい (want to go), のみます → のみたい (want to drink). たい conjugates like an い-adjective: negative is たくない (don't want to), past is たかった (wanted to), past negative is たくなかった (didn't want to). The object particle を can optionally change to が with たい: 'みずをのみたい' and 'みずがのみたい' are both acceptable. Important: たい is mainly used for first person (I/we). For third person ('he wants to'), use たがっている instead.",
+      "tip": "たい is personal — use it for your own desires. To describe someone else's desires, use たがっている: 'かれはにほんにいきたがっている' (He wants to go to Japan). For polite requests to others, use たい in questions: 'なにがたべたいですか' (What do you want to eat?).",
+      "examples": [
+        { "ja": "にほんにいきたいです。", "en": "I want to go to Japan.", "highlight": "いきたい" },
+        { "ja": "つめたいみずがのみたい。", "en": "I want to drink cold water.", "highlight": "のみたい" },
+        { "ja": "きょうはなにもしたくないです。", "en": "I don't want to do anything today.", "highlight": "したくない" },
+        { "ja": "こどものとき、パイロットになりたかったです。", "en": "When I was a child, I wanted to become a pilot.", "highlight": "なりたかった" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "あたらしいくるまを___です。(I want to buy a new car.)",
+          "acceptedAnswers": ["かいたい"],
+          "hint": "かいます (to buy) → ます-stem + たい",
+          "explanation": "かいます → かい (stem) + たい = かいたい (want to buy)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I didn't want to eat'?",
+          "options": ["たべたいなかった", "たべたくなかった", "たべないたい", "たべたいじゃなかった"],
+          "correctIndex": 1,
+          "explanation": "たい conjugates like an い-adjective. Past negative: たい → たくなかった. So たべたくなかった."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is appropriate for 'He wants to go to Japan'?",
+          "options": [
+            "かれはにほんにいきたいです。",
+            "かれはにほんにいきたがっています。",
+            "かれはにほんにいくたいです。",
+            "かれはにほんにいきたいでした。"
+          ],
+          "correctIndex": 1,
+          "explanation": "For third-person desires, use たがっている: いきたがっています = 'he wants to go'. たい is mainly for first person."
+        }
+      ]
+    },
+    {
+      "sectionId": "hoshii-want-something",
+      "title": "ほしい (Want Something)",
+      "explanation": "ほしい means 'to want (a thing)' and is used for nouns, not verbs. The pattern is: [thing]がほしいです. For example: 'あたらしいパソコンがほしいです' (I want a new computer). Like たい, ほしい is an い-adjective and conjugates accordingly: ほしくない (don't want), ほしかった (wanted), ほしくなかった (didn't want). The desired item is marked with が (not を). ほしい is also primarily first-person; for third person, use ほしがっている. To say 'I want someone to do something', use the て-form + ほしい: 'てつだってほしい' (I want you to help me).",
+      "tip": "たい is for actions (want to DO), ほしい is for things (want to HAVE). The desired thing takes が: 'じかんがほしい' (I want time). For 'I want someone to do X', use て-form + ほしい: 'きてほしい' (I want you to come).",
+      "examples": [
+        { "ja": "あたらしいくつがほしいです。", "en": "I want new shoes.", "highlight": "ほしい" },
+        { "ja": "なにもほしくないです。", "en": "I don't want anything.", "highlight": "ほしくない" },
+        { "ja": "こどものとき、いぬがほしかったです。", "en": "When I was a child, I wanted a dog.", "highlight": "ほしかった" },
+        { "ja": "はやくきてほしいです。", "en": "I want you to come quickly.", "highlight": "きてほしい" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "もっとじかん___ほしいです。(I want more time.)",
+          "acceptedAnswers": ["が"],
+          "hint": "The desired item is marked with which particle?",
+          "explanation": "With ほしい, the desired thing takes が: じかんがほしい."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I want you to teach me'?",
+          "options": [
+            "おしえたいです。",
+            "おしえてほしいです。",
+            "おしえるほしいです。",
+            "おしえほしいです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "て-form + ほしい = 'I want (someone) to do...'. おしえて + ほしい = 'I want you to teach me.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between たい and ほしい?",
+          "options": [
+            "たい is polite, ほしい is casual.",
+            "たい is for actions (verbs), ほしい is for things (nouns).",
+            "たい is past tense, ほしい is present tense.",
+            "There is no difference."
+          ],
+          "correctIndex": 1,
+          "explanation": "たい attaches to verb stems (want to DO something), ほしい is used with nouns (want to HAVE something)."
+        }
+      ]
+    },
+    {
+      "sectionId": "tsumori-intend-to",
+      "title": "つもり (Intend To)",
+      "explanation": "つもり expresses intention or a plan that you have decided on. The pattern is: [verb plain form] + つもりです. For example: 'らいねんにほんにいくつもりです' (I intend to go to Japan next year). For negative intentions ('I intend not to'), use the verb's negative plain form + つもり: 'あしたはでかけないつもりです' (I intend not to go out tomorrow). Alternatively, verb + つもりはない means 'I have no intention of': 'やめるつもりはありません' (I have no intention of quitting). つもり implies a firm personal decision, stronger than a vague wish.",
+      "tip": "つもり conveys a firm decision already made. It's stronger than 'maybe' but not as official as 予定 (a scheduled plan). Don't use つもり for other people's intentions unless quoting them — it's presumptuous to state someone else's つもり.",
+      "examples": [
+        { "ja": "なつやすみにおきなわにいくつもりです。", "en": "I intend to go to Okinawa during summer vacation.", "highlight": "いくつもり" },
+        { "ja": "だいがくをそつぎょうしたらはたらくつもりです。", "en": "I intend to work after graduating from university.", "highlight": "はたらくつもり" },
+        { "ja": "もうおさけをのまないつもりです。", "en": "I intend not to drink alcohol anymore.", "highlight": "のまないつもり" },
+        { "ja": "かいしゃをやめるつもりはありません。", "en": "I have no intention of quitting the company.", "highlight": "つもりはありません" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "あしたはやくおきる___です。(I intend to wake up early tomorrow.)",
+          "acceptedAnswers": ["つもり"],
+          "hint": "The word expressing firm intention.",
+          "explanation": "Verb plain form + つもりです expresses intention: おきるつもりです = 'I intend to wake up.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I intend not to eat sweets'?",
+          "options": [
+            "おかしをたべるつもりじゃないです。",
+            "おかしをたべないつもりです。",
+            "おかしをたべたくないつもりです。",
+            "おかしをたべなくつもりです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Negative plain form + つもり: たべない + つもりです = 'I intend not to eat'. Option A would mean 'It's not that I intend to eat' — a different nuance."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'I have no intention of selling this house'?",
+          "options": [
+            "このいえをうらないつもりです。",
+            "このいえをうるつもりはありません。",
+            "このいえをうるつもりです。",
+            "このいえをうりたくないです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Verb + つもりはありません = 'I have no intention of...'. うるつもりはありません = 'I have no intention of selling.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "yotei-plan-to",
+      "title": "予定 (Plan / Scheduled To)",
+      "explanation": "予定 (よてい) means 'plan' or 'schedule' and expresses something that has been decided or arranged. The pattern is: [verb plain form] + よていです. For example: 'らいしゅうかいぎをするよていです' (We are scheduled to have a meeting next week). よてい is more concrete and official than つもり — it implies that arrangements have been made, not just personal intention. You can also use it as a noun: 'よていがあります' (I have plans), 'よていをたてる' (to make plans). To cancel plans: 'よていがかわりました' (The plans changed). For negative plans, use よていはない: 'いくよていはありません' (There are no plans to go).",
+      "tip": "つもり = personal intention (I've decided). よてい = concrete plan/schedule (it's been arranged). Use よてい for work meetings, travel bookings, events — things on a calendar. Use つもり for personal resolutions.",
+      "examples": [
+        { "ja": "らいげつけっこんするよていです。", "en": "I am planning to get married next month.", "highlight": "よてい" },
+        { "ja": "あしたのごごかいぎがあるよていです。", "en": "There is a meeting scheduled for tomorrow afternoon.", "highlight": "よてい" },
+        { "ja": "ことしちゅうにひっこすよていです。", "en": "I plan to move within this year.", "highlight": "よてい" },
+        { "ja": "こんしゅうまつはとくによていがありません。", "en": "I don't have any particular plans this weekend.", "highlight": "よていがありません" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "らいしゅうとうきょうにいく___です。(I am scheduled to go to Tokyo next week.)",
+          "acceptedAnswers": ["よてい", "予定"],
+          "hint": "The word for a concrete plan or schedule.",
+          "explanation": "Verb plain form + よていです = 'I am scheduled/planning to...'. いくよていです = 'I plan to go.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word better fits: 'The company _____ to release a new product in April.'",
+          "options": ["つもり", "よてい", "たい", "ほしい"],
+          "correctIndex": 1,
+          "explanation": "よてい is used for official, concrete plans like product releases. つもり is for personal intentions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'I have no plans for tomorrow'?",
+          "options": [
+            "あしたよていがありません。",
+            "あしたよていがあります。",
+            "あしたつもりがありません。",
+            "あしたよていをしません。"
+          ],
+          "correctIndex": 0,
+          "explanation": "よていがありません = 'I have no plans'. よてい works as a noun meaning 'plans/schedule'."
+        }
+      ]
+    }
+  ]
+}

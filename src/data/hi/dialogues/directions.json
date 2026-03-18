@@ -1,0 +1,127 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameHi": "रास्ता पूछना",
+  "icon": "🗺️",
+  "context": "You are lost in Old Delhi and need to find your way to India Gate. You ask a friendly shopkeeper for directions.",
+  "characters": {
+    "npc": { "name": "दुकानदार" },
+    "player": { "name": "आप" }
+  },
+  "exchanges": [
+    {
+      "speaker": "player",
+      "prompt": "Politely ask the shopkeeper for directions to India Gate.",
+      "acceptedResponses": [
+        "भाई साहब, इंडिया गेट कैसे जाएँ? रास्ता बता दीजिए।",
+        "नमस्ते, क्या आप बता सकते हैं इंडिया गेट कैसे पहुँचें?",
+        "माफ़ कीजिए, इंडिया गेट किधर है?",
+        "भाई, इंडिया गेट का रास्ता बता दीजिए।"
+      ],
+      "keyWords": ["इंडिया गेट", "रास्ता", "कैसे"],
+      "hint": "Ask 'इंडिया गेट कैसे जाएँ?' or 'इंडिया गेट किधर है?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "इंडिया गेट? हाँ हाँ, यहाँ से ज़्यादा दूर नहीं है। पहले सीधे जाइए इस सड़क पर।",
+      "translation": "India Gate? Yes yes, it's not too far from here. First go straight on this road."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm you understand and ask what to do next.",
+      "acceptedResponses": [
+        "अच्छा, सीधे जाना है। फिर उसके बाद?",
+        "ठीक है, सीधे। फिर क्या करूँ?",
+        "सीधे जाऊँ, समझ गया। उसके बाद?",
+        "ओके, सीधे चलूँ। आगे क्या करना है?"
+      ],
+      "keyWords": ["सीधे", "फिर", "बाद"],
+      "hint": "Confirm with 'सीधे' (straight) and ask 'फिर उसके बाद?' (then after that?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "फिर बड़े चौराहे पर दाएँ मुड़ जाइए। वहाँ एक मंदिर दिखेगा।",
+      "translation": "Then turn right at the big intersection. You will see a temple there."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Repeat the direction to confirm — right at the intersection near the temple.",
+      "acceptedResponses": [
+        "अच्छा, चौराहे पर दाएँ मुड़ना है, मंदिर के पास?",
+        "समझ गया, दाएँ मुड़ना है जहाँ मंदिर है।",
+        "चौराहे पर दाएँ, जहाँ मंदिर दिखेगा। ठीक है?",
+        "दाएँ मुड़ना है बड़े चौराहे पर। समझ गया।"
+      ],
+      "keyWords": ["दाएँ", "चौराहे", "मंदिर"],
+      "hint": "Repeat 'दाएँ मुड़ना है' (turn right) and mention 'चौराहे पर' (at the intersection)."
+    },
+    {
+      "speaker": "npc",
+      "text": "हाँ, बिलकुल। फिर थोड़ा आगे चलिए और बाएँ हाथ पर एक बड़ा पार्क आएगा।",
+      "translation": "Yes, exactly. Then walk a little further and there will be a big park on your left."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask approximately how far it is.",
+      "acceptedResponses": [
+        "अच्छा। वहाँ से कितनी दूर है इंडिया गेट?",
+        "यहाँ से कितना टाइम लगेगा पैदल?",
+        "कितनी दूर है वहाँ से? पैदल जा सकता हूँ?",
+        "पार्क के बाद कितना और चलना होगा?"
+      ],
+      "keyWords": ["कितनी", "दूर", "कितना"],
+      "hint": "Ask 'कितनी दूर है?' (how far is it?) or 'कितना टाइम लगेगा?' (how long will it take?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "पैदल बीस मिनट लगेंगे। या ऑटो ले लीजिए, पाँच मिनट में पहुँच जाएँगे।",
+      "translation": "It will take twenty minutes on foot. Or take an auto-rickshaw, you'll reach in five minutes."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about getting an auto-rickshaw and how much it should cost.",
+      "acceptedResponses": [
+        "ऑटो कहाँ मिलेगा? कितने पैसे लगेंगे?",
+        "ऑटो अच्छा रहेगा। कितना किराया होगा?",
+        "ऑटो ले लेता हूँ। कितने का पड़ेगा?",
+        "ऑटो किधर मिलेगा? कितने में जाएगा?"
+      ],
+      "keyWords": ["ऑटो", "कितने", "कितना"],
+      "hint": "Ask 'ऑटो कहाँ मिलेगा?' and 'कितने पैसे लगेंगे?' (how much will it cost?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "सामने वाले चौराहे पर ऑटो मिल जाएगा। तीस-चालीस रुपये में चला जाएगा। ज़्यादा मत देना!",
+      "translation": "You'll find an auto at the intersection ahead. It should cost thirty-forty rupees. Don't pay more!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank the shopkeeper for his help.",
+      "acceptedResponses": [
+        "बहुत बहुत शुक्रिया भाई साहब! बहुत मदद हुई।",
+        "धन्यवाद! आपने बहुत अच्छे से समझाया।",
+        "शुक्रिया भाई! अब मैं पहुँच जाऊँगा।",
+        "बहुत शुक्रिया आपका। नमस्ते!"
+      ],
+      "keyWords": ["शुक्रिया", "धन्यवाद", "मदद"],
+      "hint": "Say 'बहुत शुक्रिया' (thank you very much) or 'धन्यवाद'."
+    },
+    {
+      "speaker": "npc",
+      "text": "कोई बात नहीं! दिल्ली में मज़ा कीजिए। और हाँ, इंडिया गेट शाम को बहुत सुंदर लगता है!",
+      "translation": "No problem! Enjoy Delhi. And yes, India Gate looks very beautiful in the evening!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Respond warmly and say goodbye.",
+      "acceptedResponses": [
+        "ज़रूर! शाम को ही जाऊँगा। नमस्ते!",
+        "अच्छा सुझाव है! बहुत शुक्रिया, नमस्ते!",
+        "हाँ, शाम को जाऊँगा। फिर मिलेंगे!",
+        "धन्यवाद भाई, नमस्ते!"
+      ],
+      "keyWords": ["नमस्ते", "शुक्रिया", "शाम"],
+      "hint": "Say 'नमस्ते' or 'फिर मिलेंगे' (see you again) to say goodbye."
+    }
+  ]
+}

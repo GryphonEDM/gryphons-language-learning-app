@@ -1,0 +1,232 @@
+{
+  "lessonId": "prepositions",
+  "nameEn": "Prepositions",
+  "nameEs": "Las Preposiciones",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["articles"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "basic-location-prepositions",
+      "title": "Basic Location Prepositions",
+      "explanation": "Spanish prepositions of location describe where things are in relation to each other. Key prepositions: 'en' (in/at/on), 'a' (to/at), 'de' (of/from), 'con' (with), 'sin' (without), 'sobre' (on/over/about), 'debajo de' (under/beneath), 'delante de' (in front of), 'detrás de' (behind), 'entre' (between/among). Note that 'en' is versatile — it covers 'in', 'at', and 'on' depending on context. Compound prepositions like 'debajo de', 'delante de', and 'detrás de' always include 'de' and must agree with the following article.",
+      "tip": "en = in/at/on | sobre = on top of/about | debajo de = under | delante de = in front of | detrás de = behind | entre = between",
+      "examples": [
+        { "es": "El gato está debajo de la mesa.", "en": "The cat is under the table.", "highlight": "debajo de" },
+        { "es": "El libro está sobre la silla.", "en": "The book is on the chair.", "highlight": "sobre" },
+        { "es": "La tienda está delante de la escuela.", "en": "The store is in front of the school.", "highlight": "delante de" },
+        { "es": "El coche está detrás de la casa.", "en": "The car is behind the house.", "highlight": "detrás de" },
+        { "es": "Estoy en el trabajo.", "en": "I am at work.", "highlight": "en" },
+        { "es": "El parque está entre el banco y la farmacia.", "en": "The park is between the bank and the pharmacy.", "highlight": "entre" },
+        { "es": "Salgo sin paraguas.", "en": "I am leaving without an umbrella.", "highlight": "sin" },
+        { "es": "Vivo con mi familia.", "en": "I live with my family.", "highlight": "con" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "The keys are 'under' the sofa. Choose the correct preposition: 'Las llaves están ___ el sofá.'",
+          "options": ["debajo de", "delante de", "sobre", "entre"],
+          "correctIndex": 0,
+          "explanation": "'Debajo de' means 'under' or 'beneath'. The keys are below the sofa."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The newspaper is 'on top of' the table. 'El periódico está ___ la mesa.'",
+          "options": ["sobre", "sin", "detrás de", "debajo de"],
+          "correctIndex": 0,
+          "explanation": "'Sobre' means 'on top of' or 'over'. It can also mean 'about' when referring to topics."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "She goes everywhere 'without' her phone. 'Ella va a todos lados ___ su teléfono.'",
+          "options": ["sin", "con", "en", "sobre"],
+          "correctIndex": 0,
+          "explanation": "'Sin' means 'without'. Its opposite is 'con' (with)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The museum is 'between' the hotel and the park. 'El museo está ___ el hotel y el parque.'",
+          "options": ["entre", "detrás de", "sobre", "en"],
+          "correctIndex": 0,
+          "explanation": "'Entre' means 'between' (two things) or 'among' (several things)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The bus stop is 'in front of' the school. 'La parada de autobús está ___ la escuela.'",
+          "acceptedAnswers": ["delante de"],
+          "hint": "Two words — means 'in front of'",
+          "explanation": "'Delante de' means 'in front of'. Don't confuse it with 'detrás de' (behind)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "My office is 'behind' the library. 'Mi oficina está ___ la biblioteca.'",
+          "acceptedAnswers": ["detrás de"],
+          "hint": "Two words — opposite of 'delante de'",
+          "explanation": "'Detrás de' means 'behind'. Remember: 'de' follows to link with the noun."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "I am 'at' home right now. 'Estoy ___ casa ahora mismo.'",
+          "acceptedAnswers": ["en"],
+          "hint": "A very common short preposition covering in/at/on",
+          "explanation": "Use 'en' for location — in, at, or on a place. 'Estoy en casa' = I am at home."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "He arrived 'with' his brother. '¿Llegó ___ su hermano?'",
+          "options": ["con", "sin", "sobre", "entre"],
+          "correctIndex": 0,
+          "explanation": "'Con' means 'with'. It expresses accompaniment or the presence of something."
+        }
+      ]
+    },
+    {
+      "sectionId": "por-vs-para",
+      "title": "Por vs. Para",
+      "explanation": "Both 'por' and 'para' can be translated as 'for' in English, but they are not interchangeable. 'Por' expresses: cause/reason (because of), duration (for a period of time), exchange (in exchange for), movement through a place (through/along), and gratitude/feelings. 'Para' expresses: purpose or goal (in order to), destination (headed to), recipient (intended for), a deadline (due by), and opinion (in my view). A helpful shortcut: 'por' looks back at causes and exchanges; 'para' looks forward toward goals and destinations.",
+      "tip": "Por = cause, duration, exchange, through | Para = purpose, destination, recipient, deadline",
+      "examples": [
+        { "es": "Estudio español por amor a la cultura.", "en": "I study Spanish because of my love for the culture.", "highlight": "por" },
+        { "es": "Viví en Madrid por tres años.", "en": "I lived in Madrid for three years.", "highlight": "por" },
+        { "es": "Te doy mi libro por el tuyo.", "en": "I'll give you my book in exchange for yours.", "highlight": "por" },
+        { "es": "Estudio español para hablar con mi familia.", "en": "I study Spanish in order to speak with my family.", "highlight": "para" },
+        { "es": "Este regalo es para ti.", "en": "This gift is for you.", "highlight": "para" },
+        { "es": "Necesito el informe para el viernes.", "en": "I need the report by Friday.", "highlight": "para" },
+        { "es": "Caminamos por el parque.", "en": "We walked through the park.", "highlight": "por" },
+        { "es": "Salgo para Buenos Aires mañana.", "en": "I am leaving for Buenos Aires tomorrow.", "highlight": "para" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "She bought flowers 'for' her mother (recipient). 'Compró flores ___ su madre.'",
+          "options": ["para", "por", "con", "de"],
+          "correctIndex": 0,
+          "explanation": "Use 'para' when indicating the recipient — the flowers are intended for her mother."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "He was absent 'because of' the storm. 'Faltó ___ la tormenta.'",
+          "options": ["por", "para", "sin", "sobre"],
+          "correctIndex": 0,
+          "explanation": "Use 'por' for cause or reason. The storm was the cause of his absence."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "I need to finish the project 'by' Monday (deadline). 'Necesito terminar el proyecto ___ el lunes.'",
+          "options": ["para", "por", "en", "a"],
+          "correctIndex": 0,
+          "explanation": "Use 'para' for deadlines. The deadline is Monday — it's a goal/endpoint in time."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "They drove 'through' the mountains. 'Condujeron ___ las montañas.'",
+          "options": ["por", "para", "entre", "de"],
+          "correctIndex": 0,
+          "explanation": "Use 'por' to indicate movement through or along a place."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "I am calling 'in order to' confirm the reservation. 'Llamo ___ confirmar la reserva.'",
+          "acceptedAnswers": ["para"],
+          "hint": "Which preposition expresses purpose or goal?",
+          "explanation": "Use 'para' + infinitive to express purpose — 'in order to do something'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "We worked 'for' five hours. 'Trabajamos ___ cinco horas.'",
+          "acceptedAnswers": ["por"],
+          "hint": "Which preposition expresses duration of time?",
+          "explanation": "Use 'por' for duration — how long something lasted."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "She is leaving 'for' Paris tomorrow. 'Ella sale ___ París mañana.'",
+          "acceptedAnswers": ["para"],
+          "hint": "She is heading toward a destination.",
+          "explanation": "Use 'para' to express a destination when someone is heading somewhere."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "I sold my bike 'in exchange for' some money. 'Vendí mi bicicleta ___ dinero.'",
+          "options": ["por", "para", "con", "sin"],
+          "correctIndex": 0,
+          "explanation": "Use 'por' for exchange — you gave the bike and received money in return."
+        }
+      ]
+    },
+    {
+      "sectionId": "contractions-al-del",
+      "title": "Contractions: al and del",
+      "explanation": "Spanish has two mandatory contractions formed when the prepositions 'a' or 'de' are immediately followed by the masculine singular definite article 'el'. They are: 'a + el = al' and 'de + el = del'. These contractions are obligatory — you cannot write or say 'a el' or 'de el' (unless 'el' is a name or a pronoun with an accent: 'él'). Other articles (la, los, las) do not contract. Examples: 'Voy al mercado' (I'm going to the market), 'Vengo del trabajo' (I'm coming from work). The contractions also apply to compound prepositions ending in 'de': 'cerca del parque' (near the park), 'lejos del aeropuerto' (far from the airport).",
+      "tip": "a + el = al (ALWAYS) | de + el = del (ALWAYS) | No contraction with la, los, las | No contraction with él (pronoun)",
+      "examples": [
+        { "es": "Voy al supermercado.", "en": "I am going to the supermarket.", "highlight": "al" },
+        { "es": "Vengo del gimnasio.", "en": "I am coming from the gym.", "highlight": "del" },
+        { "es": "El perro del vecino es ruidoso.", "en": "The neighbor's dog is noisy.", "highlight": "del" },
+        { "es": "Pregúntale al profesor.", "en": "Ask the teacher.", "highlight": "al" },
+        { "es": "La biblioteca está cerca del hospital.", "en": "The library is near the hospital.", "highlight": "del" },
+        { "es": "Llegamos al aeropuerto a tiempo.", "en": "We arrived at the airport on time.", "highlight": "al" },
+        { "es": "El color del cielo es azul.", "en": "The color of the sky is blue.", "highlight": "del" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "I'm going to the bank. 'Voy ___ banco.'",
+          "options": ["al", "a el", "del", "de el"],
+          "correctIndex": 0,
+          "explanation": "'A + el' must contract to 'al'. Writing 'a el' is incorrect in standard Spanish."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "She is coming from the office. 'Ella viene ___ oficina.'",
+          "options": ["de la", "del", "de el", "al"],
+          "correctIndex": 0,
+          "explanation": "'Oficina' is feminine, so the article is 'la'. 'De + la' does NOT contract — it stays 'de la'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The end of the movie was surprising. 'El final ___ película fue sorprendente.'",
+          "options": ["de la", "del", "al", "de el"],
+          "correctIndex": 0,
+          "explanation": "'Película' is feminine, so we use 'de la'. Only 'de + el' contracts to 'del'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "We spoke to the director. 'Hablamos ___ director.'",
+          "options": ["al", "a la", "del", "de el"],
+          "correctIndex": 0,
+          "explanation": "'Director' is masculine singular, so 'a + el' contracts to 'al'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The price of the ticket is very high. 'El precio ___ boleto es muy alto.'",
+          "acceptedAnswers": ["del"],
+          "hint": "de + el = ?",
+          "explanation": "'Boleto' is masculine singular, so 'de + el' contracts to 'del'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "The children are going to the park. 'Los niños van ___ parque.'",
+          "acceptedAnswers": ["al"],
+          "hint": "a + el = ?",
+          "explanation": "'Parque' is masculine singular. 'A + el' contracts to 'al'. You cannot say 'a el parque'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "She is talking about him. 'Ella habla de ___.' (use the pronoun 'él')",
+          "acceptedAnswers": ["él"],
+          "hint": "When 'el' is a pronoun (he), it carries an accent mark: él. No contraction occurs.",
+          "explanation": "'Él' with an accent is a pronoun meaning 'he/him'. No contraction with 'de' — 'de él' is correct and stays as two words."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The house is far from the airport. 'La casa está lejos ___ aeropuerto.'",
+          "options": ["del", "de el", "al", "de la"],
+          "correctIndex": 0,
+          "explanation": "'Lejos de + el aeropuerto' requires the contraction 'del'. Compound prepositions ending in 'de' also trigger the contraction."
+        }
+      ]
+    }
+  ]
+}

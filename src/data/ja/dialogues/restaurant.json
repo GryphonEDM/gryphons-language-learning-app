@@ -1,0 +1,98 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At a Restaurant",
+  "nameJa": "レストランで",
+  "icon": "🍱",
+  "context": "You are at a restaurant in Tokyo. A server approaches your table.",
+  "characters": {
+    "npc": { "name": "店員" },
+    "player": { "name": "あなた" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "いらっしゃいませ！何名様ですか？",
+      "translation": "Welcome! How many in your party?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the server how many people are in your party.",
+      "acceptedResponses": [
+        "一人です。",
+        "二人です。",
+        "一名です。",
+        "二名です。"
+      ],
+      "keyWords": ["人", "名"],
+      "hint": "Use '一人です' (one person) or '二人です' (two people)."
+    },
+    {
+      "speaker": "npc",
+      "text": "かしこまりました。こちらのお席へどうぞ。メニューでございます。何かおすすめはございますか、と聞かれることもありますが、本日のおすすめは天ぷら定食でございます。",
+      "translation": "Certainly. Please come to this seat. Here is the menu. Today's recommendation is the tempura set meal."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the menu or respond to the recommendation.",
+      "acceptedResponses": [
+        "おすすめは何ですか？",
+        "天ぷら定食をお願いします。",
+        "メニューを見てもいいですか？",
+        "少し考えてもいいですか？"
+      ],
+      "keyWords": ["おすすめ", "お願い", "メニュー"],
+      "hint": "Ask 'おすすめは何ですか？' (What do you recommend?) or order with 'お願いします'."
+    },
+    {
+      "speaker": "npc",
+      "text": "はい、もちろんです。ご注文はお決まりですか？",
+      "translation": "Yes, of course. Have you decided on your order?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Place your food order.",
+      "acceptedResponses": [
+        "すみません、ラーメンをお願いします。",
+        "カツ丼を一つください。",
+        "焼き魚定食をお願いします。",
+        "親子丼を一つお願いします。"
+      ],
+      "keyWords": ["お願いします", "ください"],
+      "hint": "Say the dish name followed by 'をお願いします' or 'をください'."
+    },
+    {
+      "speaker": "npc",
+      "text": "かしこまりました。お飲み物はいかがなさいますか？",
+      "translation": "Certainly. What would you like to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a drink.",
+      "acceptedResponses": [
+        "お水をお願いします。",
+        "緑茶をください。",
+        "ビールを一杯お願いします。",
+        "烏龍茶をお願いします。"
+      ],
+      "keyWords": ["お願いします", "ください"],
+      "hint": "Say the drink name followed by 'をお願いします' (please) or 'をください'."
+    },
+    {
+      "speaker": "npc",
+      "text": "はい、少々お待ちくださいませ。ごゆっくりどうぞ。",
+      "translation": "Yes, please wait a moment. Please take your time."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask for the bill when you are finished.",
+      "acceptedResponses": [
+        "すみません、お会計をお願いします。",
+        "お勘定をお願いします。",
+        "チェックをお願いします。",
+        "ごちそうさまでした。お会計をお願いします。"
+      ],
+      "keyWords": ["お会計", "お勘定"],
+      "hint": "Use 'お会計をお願いします' (The bill, please) to ask for the check."
+    }
+  ]
+}

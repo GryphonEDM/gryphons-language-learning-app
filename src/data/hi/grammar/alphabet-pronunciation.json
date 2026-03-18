@@ -1,0 +1,115 @@
+{
+  "lessonId": "alphabet-pronunciation",
+  "nameEn": "Alphabet & Pronunciation",
+  "nameHi": "वर्णमाला और उच्चारण",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "devanagari-basics",
+      "title": "Devanagari Script Basics",
+      "explanation": "Hindi is written in the Devanagari script (देवनागरी), which is read from left to right, just like English. Unlike English, Devanagari is a phonetic script — each symbol represents a consistent sound, so once you learn the letters, you can read any Hindi word aloud correctly. Words in Devanagari are written beneath a horizontal line called the शिरोरेखा (shirorekha), which connects the letters in a word. The script has no concept of uppercase or lowercase letters.",
+      "tip": "Devanagari is highly systematic: vowels and consonants are grouped by the position of the tongue and mouth when producing each sound. This makes learning them in order especially helpful.",
+      "examples": [
+        { "hi": "नमस्ते", "en": "hello — a common greeting, written beneath the connecting headline", "highlight": "नमस्ते" },
+        { "hi": "हिन्दी", "en": "Hindi — the name of the language itself in Devanagari", "highlight": "हिन्दी" },
+        { "hi": "भारत", "en": "India — notice how each letter sits below the shirorekha line", "highlight": "भारत" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In which direction is Devanagari script read?",
+          "options": ["Left to right", "Right to left", "Top to bottom"],
+          "correctIndex": 0,
+          "explanation": "Devanagari is read from left to right, the same direction as English. This differs from scripts like Arabic or Hebrew, which are read right to left."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the horizontal line that runs along the top of Devanagari words called?",
+          "options": ["शिरोरेखा (shirorekha)", "मात्रा (maatraa)", "हलन्त (halant)"],
+          "correctIndex": 0,
+          "explanation": "The शिरोरेखा (shirorekha) is the headline that connects letters within a word. It is one of the most recognizable features of the Devanagari script."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which statement about Devanagari is true?",
+          "options": ["Each symbol represents a consistent sound", "It has uppercase and lowercase forms", "It is read from right to left"],
+          "correctIndex": 0,
+          "explanation": "Devanagari is a phonetic script, meaning each letter consistently represents the same sound. This makes pronunciation predictable once you learn the letters — unlike English, where spelling and pronunciation often differ."
+        }
+      ]
+    },
+    {
+      "sectionId": "vowels",
+      "title": "Vowels (स्वर)",
+      "explanation": "Hindi has 11 vowels called स्वर (swar). They come in pairs of short and long sounds: अ (a), आ (aa), इ (i), ई (ii), उ (u), ऊ (uu), ए (e), ऐ (ai), ओ (o), औ (au), plus ऋ (ri). Each vowel has two forms: an independent form used when the vowel starts a word or stands alone, and a dependent form called मात्रा (maatraa) that attaches to a consonant. For example, the vowel आ (aa) appears as the maatraa ा when attached to a consonant: क + ा = का (kaa).",
+      "tip": "Learn the vowels in their short-long pairs: अ/आ, इ/ई, उ/ऊ. The long vowel is simply a stretched version of the short one. Mastering the maatraa forms is essential for reading fluently.",
+      "examples": [
+        { "hi": "अनार", "en": "pomegranate — starts with the vowel अ (a)", "highlight": "अ" },
+        { "hi": "आम", "en": "mango — starts with the long vowel आ (aa)", "highlight": "आ" },
+        { "hi": "ईख", "en": "sugarcane — starts with the long vowel ई (ii)", "highlight": "ई" },
+        { "hi": "का", "en": "of/possessive — consonant क with the maatraa ा for आ", "highlight": "ा" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many vowels (स्वर) does Hindi have?",
+          "options": ["11", "5", "13"],
+          "correctIndex": 0,
+          "explanation": "Hindi has 11 vowels (स्वर): अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, and ऋ. They are organized in short-long pairs, which helps in memorization."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the dependent vowel form that attaches to consonants called?",
+          "options": ["मात्रा (maatraa)", "हलन्त (halant)", "शिरोरेखा (shirorekha)"],
+          "correctIndex": 0,
+          "explanation": "A मात्रा (maatraa) is the dependent vowel sign that attaches to a consonant to change its inherent vowel sound. For example, क (ka) + ि = कि (ki), where ि is the maatraa for इ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which vowel pair represents short and long 'u' sounds?",
+          "options": ["उ and ऊ", "अ and आ", "इ and ई"],
+          "correctIndex": 0,
+          "explanation": "उ (u) is the short 'u' and ऊ (uu) is the long 'u'. Similarly, अ/आ are the short/long 'a' pair, and इ/ई are the short/long 'i' pair."
+        }
+      ]
+    },
+    {
+      "sectionId": "consonants-and-inherent-a",
+      "title": "Consonants (व्यंजन) & the Inherent 'a'",
+      "explanation": "Hindi has 33 main consonants called व्यंजन (vyanjan), organized into groups based on where in the mouth the sound is produced. The first 25 consonants are arranged in five rows (वर्ग) of five: क-वर्ग (ka, kha, ga, gha, ṅa), च-वर्ग (cha, chha, ja, jha, ña), ट-वर्ग (ṭa, ṭha, ḍa, ḍha, ṇa), त-वर्ग (ta, tha, da, dha, na), and प-वर्ग (pa, pha, ba, bha, ma). The remaining 8 are य, र, ल, व, श, ष, स, ह. Every consonant carries an inherent 'a' sound (called the schwa). So क is not just 'k' — it is pronounced 'ka'. To remove this inherent vowel, a special mark called हलन्त (halant) ् is placed below the letter: क् = just 'k' with no vowel.",
+      "tip": "In spoken Hindi, the inherent 'a' at the end of words is often dropped. For example, नमस्ते is 'namaste' not 'namastea', and कमल is 'kamal' not 'kamala'. This schwa deletion rule is one of the trickiest aspects for learners.",
+      "examples": [
+        { "hi": "क ख ग घ ङ", "en": "ka, kha, ga, gha, nga — the first row (क-वर्ग), all produced at the back of the throat", "highlight": "क" },
+        { "hi": "त थ द ध न", "en": "ta, tha, da, dha, na — dental consonants, tongue touches the teeth", "highlight": "त" },
+        { "hi": "क्", "en": "k (no vowel) — the halant ् removes the inherent 'a' from क", "highlight": "्" },
+        { "hi": "कमल", "en": "lotus — pronounced 'kamal' (final 'a' is dropped in speech)", "highlight": "कमल" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many main consonants (व्यंजन) does Hindi have?",
+          "options": ["33", "26", "44"],
+          "correctIndex": 0,
+          "explanation": "Hindi has 33 main consonants (व्यंजन). The first 25 are arranged in 5 systematic rows of 5 (called वर्ग), and the remaining 8 are semi-vowels, sibilants, and the aspirate ह."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What inherent sound does every Hindi consonant carry?",
+          "options": ["The vowel 'a' (अ)", "The vowel 'i' (इ)", "No inherent sound"],
+          "correctIndex": 0,
+          "explanation": "Every Hindi consonant has a built-in 'a' (schwa) sound. So क is 'ka', ग is 'ga', and प is 'pa'. To remove this vowel, the halant mark (्) is used below the consonant."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the हलन्त (halant) mark do?",
+          "options": ["Removes the inherent 'a' vowel from a consonant", "Adds a nasal sound to a consonant", "Doubles the consonant sound"],
+          "correctIndex": 0,
+          "explanation": "The हलन्त (halant), written as ् below a consonant, removes the inherent 'a' sound. For example, क (ka) becomes क् (k). It is essential for forming conjunct consonants like क् + त = क्त (kta)."
+        }
+      ]
+    }
+  ]
+}

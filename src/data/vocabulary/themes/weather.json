@@ -14,13 +14,45 @@
       "en": "weather",
       "phoneticUk": "pohoda",
       "phoneticRu": "pagoda",
-      "phoneticDe": "vet-er",
+      "phoneticDe": "VET-ter",
       "examples": {
-        "uk": ["Сьогодні дуже гарна погода.", "Погана погода зіпсувала наші плани."],
-        "en": ["The weather is very nice today.", "The bad weather ruined our plans."],
-        "ru": ["сегодня хорошая погода", "плохая погода испортила планы"],
-        "de": ["Das Wetter ist heute sehr schön.", "Das schlechte Wetter hat unsere Pläne ruiniert."]
-      }
+        "uk": [
+          "Сьогодні дуже гарна погода.",
+          "Погана погода зіпсувала наші плани."
+        ],
+        "en": [
+          "The weather is very nice today.",
+          "The bad weather ruined our plans."
+        ],
+        "ru": [
+          "сегодня хорошая погода",
+          "плохая погода испортила планы"
+        ],
+        "de": [
+          "Das Wetter ist heute sehr schön.",
+          "Das schlechte Wetter hat unsere Pläne ruiniert."
+        ],
+        "es": [
+          "¿Qué tiempo hace hoy?",
+          "El tiempo en verano es muy caluroso."
+        ]
+      },
+      "es": "tiempo",
+      "phoneticEs": "TYEM-po",
+      "fr": "météo",
+      "frPhonetic": "may-tay-OH",
+      "el": "καιρός",
+      "elPhonetic": "ke-ROS",
+      "hi": "मौसम",
+      "hiPhonetic": "MAU-sam",
+      "ar": "طَقْس",
+      "arPhonetic": "TAQS",
+      "ko": "날씨",
+      "koPhonetic": "NAL-ssi",
+      "zh": "天气",
+      "zhPhonetic": "tiānqì",
+      "ja": "天気",
+      "jaPhonetic": "TEN-ki"
     },
     {
       "uk": "сонце",
@@ -29,13 +61,45 @@
       "en": "sun",
       "phoneticUk": "sontse",
       "phoneticRu": "solntse",
-      "phoneticDe": "zon-uh",
+      "phoneticDe": "ZON-neh",
       "examples": {
-        "uk": ["Сонце яскраво світить на небі.", "Увечері сонце сідає за обрій."],
-        "en": ["The sun shines brightly in the sky.", "In the evening the sun sets below the horizon."],
-        "ru": ["солнце светит ярко в безоблачном небе", "солнце садится за горизонт вечером"],
-        "de": ["Die Sonne scheint hell am Himmel.", "Am Abend geht die Sonne unter dem Horizont unter."]
-      }
+        "uk": [
+          "Сонце яскраво світить на небі.",
+          "Увечері сонце сідає за обрій."
+        ],
+        "en": [
+          "The sun shines brightly in the sky.",
+          "In the evening the sun sets below the horizon."
+        ],
+        "ru": [
+          "солнце светит ярко в безоблачном небе",
+          "солнце садится за горизонт вечером"
+        ],
+        "de": [
+          "Die Sonne scheint hell am Himmel.",
+          "Am Abend geht die Sonne unter dem Horizont unter."
+        ],
+        "es": [
+          "El sol brilla con fuerza hoy.",
+          "Me encanta tomar el sol en la playa."
+        ]
+      },
+      "es": "sol",
+      "phoneticEs": "sol",
+      "fr": "soleil",
+      "frPhonetic": "so-LAY",
+      "el": "ήλιος",
+      "elPhonetic": "I-lios",
+      "hi": "सूरज",
+      "hiPhonetic": "SOO-raj",
+      "ar": "شَمْس",
+      "arPhonetic": "SHAMS",
+      "ko": "태양",
+      "koPhonetic": "teh-YANG",
+      "zh": "太阳",
+      "zhPhonetic": "tàiyáng",
+      "ja": "太陽",
+      "jaPhonetic": "TAI-you"
     },
     {
       "uk": "дощ",
@@ -44,13 +108,45 @@
       "en": "rain",
       "phoneticUk": "doshch",
       "phoneticRu": "dozhd'",
-      "phoneticDe": "ray-gen",
+      "phoneticDe": "RAY-gen",
       "examples": {
-        "uk": ["На вулиці іде сильний дощ.", "Теплий дощ стукає по даху будинку."],
-        "en": ["There is heavy rain outside.", "Warm rain taps on the roof of the house."],
-        "ru": ["на улице идёт сильный дождь", "тёплый дождь стучит по крыше дома"],
-        "de": ["Draußen regnet es stark.", "Warmer Regen klopft auf das Dach des Hauses."]
-      }
+        "uk": [
+          "На вулиці іде сильний дощ.",
+          "Теплий дощ стукає по даху будинку."
+        ],
+        "en": [
+          "There is heavy rain outside.",
+          "Warm rain taps on the roof of the house."
+        ],
+        "ru": [
+          "на улице идёт сильный дождь",
+          "тёплый дождь стучит по крыше дома"
+        ],
+        "de": [
+          "Draußen regnet es stark.",
+          "Warmer Regen klopft auf das Dach des Hauses."
+        ],
+        "es": [
+          "La lluvia cae con fuerza.",
+          "Me gusta la lluvia en otoño."
+        ]
+      },
+      "es": "lluvia",
+      "phoneticEs": "YOO-vyah",
+      "fr": "pluie",
+      "frPhonetic": "PLWEE",
+      "el": "βροχή",
+      "elPhonetic": "vro-HI",
+      "hi": "बारिश",
+      "hiPhonetic": "BAA-rish",
+      "ar": "مَطَر",
+      "arPhonetic": "MA-tar",
+      "ko": "비",
+      "koPhonetic": "BI",
+      "zh": "雨",
+      "zhPhonetic": "yǔ",
+      "ja": "雨",
+      "jaPhonetic": "A-me"
     },
     {
       "uk": "сніг",
@@ -59,13 +155,45 @@
       "en": "snow",
       "phoneticUk": "snih",
       "phoneticRu": "sneg",
-      "phoneticDe": "shnay",
+      "phoneticDe": "SHNAY",
       "examples": {
-        "uk": ["Білий сніг вкрив усю землю.", "Перший сніг випав на початку листопада."],
-        "en": ["White snow covered all the ground.", "The first snow fell at the beginning of November."],
-        "ru": ["белый снег покрыл всю землю", "первый снег выпал в начале ноября"],
-        "de": ["Weißer Schnee hat die ganze Erde bedeckt.", "Der erste Schnee fiel Anfang November."]
-      }
+        "uk": [
+          "Білий сніг вкрив усю землю.",
+          "Перший сніг випав на початку листопада."
+        ],
+        "en": [
+          "White snow covered all the ground.",
+          "The first snow fell at the beginning of November."
+        ],
+        "ru": [
+          "белый снег покрыл всю землю",
+          "первый снег выпал в начале ноября"
+        ],
+        "de": [
+          "Weißer Schnee hat die ganze Erde bedeckt.",
+          "Der erste Schnee fiel Anfang November."
+        ],
+        "es": [
+          "La nieve cubre las montañas en invierno.",
+          "Los niños juegan en la nieve con alegría."
+        ]
+      },
+      "es": "nieve",
+      "phoneticEs": "NYEH-veh",
+      "fr": "neige",
+      "frPhonetic": "NEHZH",
+      "el": "χιόνι",
+      "elPhonetic": "KHYO-ni",
+      "hi": "बर्फ़",
+      "hiPhonetic": "BARF",
+      "ar": "ثَلْج",
+      "arPhonetic": "THALJ",
+      "ko": "눈",
+      "koPhonetic": "NUN",
+      "zh": "雪",
+      "zhPhonetic": "xuě",
+      "ja": "雪",
+      "jaPhonetic": "YU-ki"
     },
     {
       "uk": "вітер",
@@ -74,13 +202,45 @@
       "en": "wind",
       "phoneticUk": "viter",
       "phoneticRu": "veter",
-      "phoneticDe": "vint",
+      "phoneticDe": "VINT",
       "examples": {
-        "uk": ["Сильний вітер дме з моря.", "Холодний вітер зриває листя з дерев."],
-        "en": ["A strong wind is blowing from the sea.", "A cold wind tears the leaves from the trees."],
-        "ru": ["сильный ветер дует с моря", "холодный ветер сбивает листья с деревьев"],
-        "de": ["Ein starker Wind weht vom Meer.", "Ein kalter Wind reißt die Blätter von den Bäumen."]
-      }
+        "uk": [
+          "Сильний вітер дме з моря.",
+          "Холодний вітер зриває листя з дерев."
+        ],
+        "en": [
+          "A strong wind is blowing from the sea.",
+          "A cold wind tears the leaves from the trees."
+        ],
+        "ru": [
+          "сильный ветер дует с моря",
+          "холодный ветер сбивает листья с деревьев"
+        ],
+        "de": [
+          "Ein starker Wind weht vom Meer.",
+          "Ein kalter Wind reißt die Blätter von den Bäumen."
+        ],
+        "es": [
+          "El viento sopla muy fuerte hoy.",
+          "Un viento frío llegó desde el norte."
+        ]
+      },
+      "es": "viento",
+      "phoneticEs": "VYEN-to",
+      "fr": "vent",
+      "frPhonetic": "VOHN",
+      "el": "άνεμος",
+      "elPhonetic": "A-ne-mos",
+      "hi": "हवा",
+      "hiPhonetic": "ha-VAA",
+      "ar": "رِيح",
+      "arPhonetic": "REEH",
+      "ko": "바람",
+      "koPhonetic": "BA-ram",
+      "zh": "风",
+      "zhPhonetic": "fēng",
+      "ja": "風",
+      "jaPhonetic": "KA-ze"
     },
     {
       "uk": "хмара",
@@ -89,13 +249,45 @@
       "en": "cloud",
       "phoneticUk": "khmara",
       "phoneticRu": "oblako",
-      "phoneticDe": "vol-kuh",
+      "phoneticDe": "VOL-keh",
       "examples": {
-        "uk": ["Біла хмара повільно пливе по небу.", "Темні хмари закрили яскраве сонце."],
-        "en": ["A white cloud slowly drifts across the sky.", "Dark clouds covered the bright sun."],
-        "ru": ["белое облако медленно плывёт по небу", "тёмные облака закрыли яркое солнце"],
-        "de": ["Eine weiße Wolke zieht langsam über den Himmel.", "Dunkle Wolken haben die helle Sonne verdeckt."]
-      }
+        "uk": [
+          "Біла хмара повільно пливе по небу.",
+          "Темні хмари закрили яскраве сонце."
+        ],
+        "en": [
+          "A white cloud slowly drifts across the sky.",
+          "Dark clouds covered the bright sun."
+        ],
+        "ru": [
+          "белое облако медленно плывёт по небу",
+          "тёмные облака закрыли яркое солнце"
+        ],
+        "de": [
+          "Eine weiße Wolke zieht langsam über den Himmel.",
+          "Dunkle Wolken haben die helle Sonne verdeckt."
+        ],
+        "es": [
+          "Una gran nube tapó el sol.",
+          "El cielo está lleno de nubes grises."
+        ]
+      },
+      "es": "nube",
+      "phoneticEs": "NOO-beh",
+      "fr": "nuage",
+      "frPhonetic": "noo-AZH",
+      "el": "σύννεφο",
+      "elPhonetic": "SI-ne-fo",
+      "hi": "बादल",
+      "hiPhonetic": "BAA-dal",
+      "ar": "سَحَابَة",
+      "arPhonetic": "sa-HAA-ba",
+      "ko": "구름",
+      "koPhonetic": "GU-reum",
+      "zh": "云",
+      "zhPhonetic": "yún",
+      "ja": "雲",
+      "jaPhonetic": "KU-mo"
     },
     {
       "uk": "туман",
@@ -104,13 +296,45 @@
       "en": "fog",
       "phoneticUk": "tuman",
       "phoneticRu": "tuman",
-      "phoneticDe": "nay-bel",
+      "phoneticDe": "NAY-bel",
       "examples": {
-        "uk": ["Густий туман огорнув усе місто.", "Ранковий туман повільно розсіюється над річкою."],
-        "en": ["Thick fog enveloped the entire city.", "The morning fog slowly disperses over the river."],
-        "ru": ["густой туман окутал весь город", "утренний туман медленно рассеивается над рекой"],
-        "de": ["Dichter Nebel hat die ganze Stadt eingehüllt.", "Der Morgennebel löst sich langsam über dem Fluss auf."]
-      }
+        "uk": [
+          "Густий туман огорнув усе місто.",
+          "Ранковий туман повільно розсіюється над річкою."
+        ],
+        "en": [
+          "Thick fog enveloped the entire city.",
+          "The morning fog slowly disperses over the river."
+        ],
+        "ru": [
+          "густой туман окутал весь город",
+          "утренний туман медленно рассеивается над рекой"
+        ],
+        "de": [
+          "Dichter Nebel hat die ganze Stadt eingehüllt.",
+          "Der Morgennebel löst sich langsam über dem Fluss auf."
+        ],
+        "es": [
+          "La niebla cubre el valle por la mañana.",
+          "Conducir con niebla es muy peligroso."
+        ]
+      },
+      "es": "niebla",
+      "phoneticEs": "NYEB-lah",
+      "fr": "brouillard",
+      "frPhonetic": "broo-YAR",
+      "el": "ομίχλη",
+      "elPhonetic": "o-MI-khli",
+      "hi": "कोहरा",
+      "hiPhonetic": "KOH-raa",
+      "ar": "ضَبَاب",
+      "arPhonetic": "da-BAAB",
+      "ko": "안개",
+      "koPhonetic": "AN-geh",
+      "zh": "雾",
+      "zhPhonetic": "wù",
+      "ja": "霧",
+      "jaPhonetic": "KI-ri"
     },
     {
       "uk": "грім",
@@ -119,13 +343,45 @@
       "en": "thunder",
       "phoneticUk": "hrim",
       "phoneticRu": "grom",
-      "phoneticDe": "don-er",
+      "phoneticDe": "DON-ner",
       "examples": {
-        "uk": ["Гучний грім пролунав над містом.", "Вдалині гримить грім перед дощем."],
-        "en": ["Loud thunder rang out over the city.", "Thunder rumbles in the distance before the rain."],
-        "ru": ["громкий гром раздался над городом", "гром гремит вдалеке перед дождём"],
-        "de": ["Lauter Donner rollte über die Stadt.", "In der Ferne donnert es vor dem Regen."]
-      }
+        "uk": [
+          "Гучний грім пролунав над містом.",
+          "Вдалині гримить грім перед дощем."
+        ],
+        "en": [
+          "Loud thunder rang out over the city.",
+          "Thunder rumbles in the distance before the rain."
+        ],
+        "ru": [
+          "громкий гром раздался над городом",
+          "гром гремит вдалеке перед дождём"
+        ],
+        "de": [
+          "Lauter Donner rollte über die Stadt.",
+          "In der Ferne donnert es vor dem Regen."
+        ],
+        "es": [
+          "El trueno retumbó por toda la ciudad.",
+          "Los niños se asustaron con el trueno."
+        ]
+      },
+      "es": "trueno",
+      "phoneticEs": "TRWEH-no",
+      "fr": "tonnerre",
+      "frPhonetic": "to-NEHR",
+      "el": "βροντή",
+      "elPhonetic": "vron-TI",
+      "hi": "गरज",
+      "hiPhonetic": "GA-raj",
+      "ar": "رَعْد",
+      "arPhonetic": "RAD",
+      "ko": "천둥",
+      "koPhonetic": "cheon-DUNG",
+      "zh": "雷",
+      "zhPhonetic": "léi",
+      "ja": "雷",
+      "jaPhonetic": "KA-mi-na-ri"
     },
     {
       "uk": "блискавка",
@@ -134,13 +390,45 @@
       "en": "lightning",
       "phoneticUk": "blyskavka",
       "phoneticRu": "molniya",
-      "phoneticDe": "blits",
+      "phoneticDe": "BLITS",
       "examples": {
-        "uk": ["Яскрава блискавка освітила темне небо.", "Блискавка вдарила в старе дерево."],
-        "en": ["A bright lightning bolt lit up the dark sky.", "Lightning struck an old tree."],
-        "ru": ["яркая молния осветила тёмное небо", "молния ударила в старое дерево"],
-        "de": ["Ein heller Blitz hat den dunklen Himmel erleuchtet.", "Ein Blitz hat in einen alten Baum eingeschlagen."]
-      }
+        "uk": [
+          "Яскрава блискавка освітила темне небо.",
+          "Блискавка вдарила в старе дерево."
+        ],
+        "en": [
+          "A bright lightning bolt lit up the dark sky.",
+          "Lightning struck an old tree."
+        ],
+        "ru": [
+          "яркая молния осветила тёмное небо",
+          "молния ударила в старое дерево"
+        ],
+        "de": [
+          "Ein heller Blitz hat den dunklen Himmel erleuchtet.",
+          "Ein Blitz hat in einen alten Baum eingeschlagen."
+        ],
+        "es": [
+          "Un relámpago iluminó el cielo oscuro.",
+          "El relámpago cayó cerca de un árbol."
+        ]
+      },
+      "es": "relámpago",
+      "phoneticEs": "reh-LAM-pah-go",
+      "fr": "éclair",
+      "frPhonetic": "ay-KLEHR",
+      "el": "αστραπή",
+      "elPhonetic": "as-tra-PI",
+      "hi": "बिजली",
+      "hiPhonetic": "bij-LEE",
+      "ar": "بَرْق",
+      "arPhonetic": "BARQ",
+      "ko": "번개",
+      "koPhonetic": "BEON-geh",
+      "zh": "闪电",
+      "zhPhonetic": "shǎndiàn",
+      "ja": "稲妻",
+      "jaPhonetic": "i-NA-zu-ma"
     },
     {
       "uk": "холодно",
@@ -149,13 +437,45 @@
       "en": "cold",
       "phoneticUk": "kholodno",
       "phoneticRu": "kholodno",
-      "phoneticDe": "kalt",
+      "phoneticDe": "KAHLT",
       "examples": {
-        "uk": ["На вулиці взимку дуже холодно.", "Мені холодно без теплої куртки."],
-        "en": ["It is very cold outside in winter.", "I am cold without a warm jacket."],
-        "ru": ["на улице очень холодно зимой", "мне холодно без тёплой куртки"],
-        "de": ["Draußen ist es im Winter sehr kalt.", "Mir ist kalt ohne eine warme Jacke."]
-      }
+        "uk": [
+          "На вулиці взимку дуже холодно.",
+          "Мені холодно без теплої куртки."
+        ],
+        "en": [
+          "It is very cold outside in winter.",
+          "I am cold without a warm jacket."
+        ],
+        "ru": [
+          "на улице очень холодно зимой",
+          "мне холодно без тёплой куртки"
+        ],
+        "de": [
+          "Draußen ist es im Winter sehr kalt.",
+          "Mir ist kalt ohne eine warme Jacke."
+        ],
+        "es": [
+          "Hace mucho frío esta mañana.",
+          "Me pongo el abrigo cuando hay frío."
+        ]
+      },
+      "es": "frío",
+      "phoneticEs": "FREE-oh",
+      "fr": "froid",
+      "frPhonetic": "FRWAH",
+      "el": "κρύος",
+      "elPhonetic": "KRI-os",
+      "hi": "ठंडा",
+      "hiPhonetic": "THAN-daa",
+      "ar": "بَارِد",
+      "arPhonetic": "BAA-rid",
+      "ko": "차가운",
+      "koPhonetic": "cha-GA-un",
+      "zh": "冷",
+      "zhPhonetic": "lěng",
+      "ja": "寒い",
+      "jaPhonetic": "sa-MUI"
     },
     {
       "uk": "тепло",
@@ -164,13 +484,45 @@
       "en": "warm",
       "phoneticUk": "teplo",
       "phoneticRu": "teplo",
-      "phoneticDe": "varm",
+      "phoneticDe": "VARM",
       "examples": {
-        "uk": ["Сьогодні на вулиці дуже тепло.", "Тепла погода радує всіх людей."],
-        "en": ["It is very warm outside today.", "Warm weather makes everyone happy."],
-        "ru": ["сегодня на улице очень тепло", "тёплая погода радует всех людей"],
-        "de": ["Heute ist es draußen sehr warm.", "Warmes Wetter freut alle Menschen."]
-      }
+        "uk": [
+          "Сьогодні на вулиці дуже тепло.",
+          "Тепла погода радує всіх людей."
+        ],
+        "en": [
+          "It is very warm outside today.",
+          "Warm weather makes everyone happy."
+        ],
+        "ru": [
+          "сегодня на улице очень тепло",
+          "тёплая погода радует всех людей"
+        ],
+        "de": [
+          "Heute ist es draußen sehr warm.",
+          "Warmes Wetter freut alle Menschen."
+        ],
+        "es": [
+          "El clima cálido es ideal para salir.",
+          "Prefiero un día cálido y soleado."
+        ]
+      },
+      "es": "cálido",
+      "phoneticEs": "KAH-lee-do",
+      "fr": "chaud/tiède",
+      "frPhonetic": "TYEHD",
+      "el": "ζεστός",
+      "elPhonetic": "ze-STOS",
+      "hi": "गुनगुना",
+      "hiPhonetic": "gun-gu-NAA",
+      "ar": "دَافِئ",
+      "arPhonetic": "DAA-fi",
+      "ko": "따뜻한",
+      "koPhonetic": "TTA-ttu-tan",
+      "zh": "温暖",
+      "zhPhonetic": "wēnnuǎn",
+      "ja": "暖かい",
+      "jaPhonetic": "a-ta-ta-KAI"
     },
     {
       "uk": "спекотно",
@@ -179,13 +531,45 @@
       "en": "hot",
       "phoneticUk": "spekotno",
       "phoneticRu": "zharko",
-      "phoneticDe": "hice",
+      "phoneticDe": "HICE",
       "examples": {
-        "uk": ["Влітку буває дуже спекотно.", "Сьогодні так спекотно, що хочеться пити воду."],
-        "en": ["It can be very hot in summer.", "It is so hot today that you want to drink water."],
-        "ru": ["летом бывает очень жарко", "сегодня жарко, нужно пить воду"],
-        "de": ["Im Sommer kann es sehr heiß sein.", "Heute ist es so heiß, dass man Wasser trinken möchte."]
-      }
+        "uk": [
+          "Влітку буває дуже спекотно.",
+          "Сьогодні так спекотно, що хочеться пити воду."
+        ],
+        "en": [
+          "It can be very hot in summer.",
+          "It is so hot today that you want to drink water."
+        ],
+        "ru": [
+          "летом бывает очень жарко",
+          "сегодня жарко, нужно пить воду"
+        ],
+        "de": [
+          "Im Sommer kann es sehr heiß sein.",
+          "Heute ist es so heiß, dass man Wasser trinken möchte."
+        ],
+        "es": [
+          "El café está muy caliente, ten cuidado.",
+          "En agosto el sol está muy caliente."
+        ]
+      },
+      "es": "caliente",
+      "phoneticEs": "kah-LYEN-teh",
+      "fr": "chaud",
+      "frPhonetic": "SHOH",
+      "el": "ζεστός",
+      "elPhonetic": "ze-STOS",
+      "hi": "गर्म",
+      "hiPhonetic": "GARM",
+      "ar": "حَارّ",
+      "arPhonetic": "HAARR",
+      "ko": "뜨거운",
+      "koPhonetic": "TTU-go-un",
+      "zh": "热",
+      "zhPhonetic": "rè",
+      "ja": "暑い",
+      "jaPhonetic": "a-TSUI"
     },
     {
       "uk": "гроза",
@@ -194,13 +578,45 @@
       "en": "thunderstorm",
       "phoneticUk": "hroza",
       "phoneticRu": "groza",
-      "phoneticDe": "geh-vit-er",
+      "phoneticDe": "geh-VIT-ter",
       "examples": {
-        "uk": ["Сильна гроза почалася вночі.", "Під час грози блискала блискавка."],
-        "en": ["A heavy thunderstorm started in the night.", "Lightning flashed during the thunderstorm."],
-        "ru": ["сильная гроза началась поздно ночью", "во время грозы сверкала яркая молния"],
-        "de": ["Ein starkes Gewitter begann in der Nacht.", "Während des Gewitters blitzte es."]
-      }
+        "uk": [
+          "Сильна гроза почалася вночі.",
+          "Під час грози блискала блискавка."
+        ],
+        "en": [
+          "A heavy thunderstorm started in the night.",
+          "Lightning flashed during the thunderstorm."
+        ],
+        "ru": [
+          "сильная гроза началась поздно ночью",
+          "во время грозы сверкала яркая молния"
+        ],
+        "de": [
+          "Ein starkes Gewitter begann in der Nacht.",
+          "Während des Gewitters blitzte es."
+        ],
+        "es": [
+          "La tormenta duró toda la noche.",
+          "Una tormenta eléctrica sorprendió a los excursionistas."
+        ]
+      },
+      "es": "tormenta",
+      "phoneticEs": "tor-MEN-tah",
+      "fr": "orage",
+      "frPhonetic": "o-RAZH",
+      "el": "καταιγίδα",
+      "elPhonetic": "ka-teh-YI-dha",
+      "hi": "आँधी-तूफ़ान",
+      "hiPhonetic": "AAN-dhee TOO-faan",
+      "ar": "عاصفة رعدية",
+      "arPhonetic": "AA-si-fah RA-dee-yah",
+      "ko": "뇌우",
+      "koPhonetic": "NOE-u",
+      "zh": "雷暴",
+      "zhPhonetic": "léibào",
+      "ja": "雷雨",
+      "jaPhonetic": "RAI-u"
     },
     {
       "uk": "мороз",
@@ -209,28 +625,92 @@
       "en": "frost",
       "phoneticUk": "moroz",
       "phoneticRu": "moroz",
-      "phoneticDe": "frost",
+      "phoneticDe": "FROST",
       "examples": {
-        "uk": ["На вулиці сильний мороз.", "Мороз намалював візерунки на вікні."],
-        "en": ["There is a hard frost outside.", "Frost drew patterns on the window."],
-        "ru": ["на улице стоит сильный мороз", "мороз нарисовал красивые узоры на окне"],
-        "de": ["Draußen herrscht starker Frost.", "Der Frost hat Muster auf das Fenster gemalt."]
-      }
+        "uk": [
+          "На вулиці сильний мороз.",
+          "Мороз намалював візерунки на вікні."
+        ],
+        "en": [
+          "There is a hard frost outside.",
+          "Frost drew patterns on the window."
+        ],
+        "ru": [
+          "на улице стоит сильный мороз",
+          "мороз нарисовал красивые узоры на окне"
+        ],
+        "de": [
+          "Draußen herrscht starker Frost.",
+          "Der Frost hat Muster auf das Fenster gemalt."
+        ],
+        "es": [
+          "La escarcha cubría el suelo al amanecer.",
+          "Las plantas se dañaron por la escarcha."
+        ]
+      },
+      "es": "escarcha",
+      "phoneticEs": "es-KAR-chah",
+      "fr": "gel/givre",
+      "frPhonetic": "ZHEL/ZHEE-vruh",
+      "el": "παγετός",
+      "elPhonetic": "pa-ye-TOS",
+      "hi": "पाला",
+      "hiPhonetic": "PAA-laa",
+      "ar": "صَقِيع",
+      "arPhonetic": "sa-QEE",
+      "ko": "서리",
+      "koPhonetic": "SEO-ri",
+      "zh": "霜",
+      "zhPhonetic": "shuāng",
+      "ja": "霜",
+      "jaPhonetic": "shimo"
     },
     {
       "uk": "спека",
       "ru": "жара",
-      "de": "Hitze",
+      "de": "Wärme/Hitze",
       "en": "heat",
       "phoneticUk": "speka",
       "phoneticRu": "zhara",
-      "phoneticDe": "hit-tsuh",
+      "phoneticDe": "VAIR-meh/HIT-seh",
       "examples": {
-        "uk": ["Влітку стоїть нестерпна спека.", "Від спеки хочеться пити холодну воду."],
-        "en": ["There is unbearable heat in summer.", "The heat makes you want to drink cold water."],
-        "ru": ["летом стоит невыносимая жара", "от жары хочется пить холодную воду"],
-        "de": ["Im Sommer herrscht unerträgliche Hitze.", "Wegen der Hitze möchte man kaltes Wasser trinken."]
-      }
+        "uk": [
+          "Влітку стоїть нестерпна спека.",
+          "Від спеки хочеться пити холодну воду."
+        ],
+        "en": [
+          "There is unbearable heat in summer.",
+          "The heat makes you want to drink cold water."
+        ],
+        "ru": [
+          "летом стоит невыносимая жара",
+          "от жары хочется пить холодную воду"
+        ],
+        "de": [
+          "Im Sommer herrscht unerträgliche Hitze.",
+          "Wegen der Hitze möchte man kaltes Wasser trinken."
+        ],
+        "es": [
+          "El calor del verano es insoportable.",
+          "Bebemos agua fría para soportar el calor."
+        ]
+      },
+      "es": "calor",
+      "phoneticEs": "kah-LOR",
+      "fr": "chaleur",
+      "frPhonetic": "sha-LER",
+      "el": "θερμότητα",
+      "elPhonetic": "ther-MO-ti-ta",
+      "hi": "गर्मी",
+      "hiPhonetic": "GAR-mee",
+      "ar": "حرارة",
+      "arPhonetic": "ha-RAA-ra",
+      "ko": "열",
+      "koPhonetic": "YEOL",
+      "zh": "热量",
+      "zhPhonetic": "rèliàng",
+      "ja": "熱",
+      "jaPhonetic": "netsu"
     },
     {
       "uk": "веселка",
@@ -239,13 +719,45 @@
       "en": "rainbow",
       "phoneticUk": "veselka",
       "phoneticRu": "raduga",
-      "phoneticDe": "ray-gen-boh-gen",
+      "phoneticDe": "RAY-gen-boh-gen",
       "examples": {
-        "uk": ["Красива веселка з'явилася після дощу.", "Діти побачили яскраву веселку в небі."],
-        "en": ["A beautiful rainbow appeared after the rain.", "The children saw a bright rainbow in the sky."],
-        "ru": ["красивая радуга появилась после дождя", "дети увидели яркую радугу в небе"],
-        "de": ["Nach dem Regen erschien ein schöner Regenbogen.", "Die Kinder sahen einen hellen Regenbogen am Himmel."]
-      }
+        "uk": [
+          "Красива веселка з'явилася після дощу.",
+          "Діти побачили яскраву веселку в небі."
+        ],
+        "en": [
+          "A beautiful rainbow appeared after the rain.",
+          "The children saw a bright rainbow in the sky."
+        ],
+        "ru": [
+          "красивая радуга появилась после дождя",
+          "дети увидели яркую радугу в небе"
+        ],
+        "de": [
+          "Nach dem Regen erschien ein schöner Regenbogen.",
+          "Die Kinder sahen einen hellen Regenbogen am Himmel."
+        ],
+        "es": [
+          "Apareció un arcoíris después de la lluvia.",
+          "El arcoíris tiene siete colores hermosos."
+        ]
+      },
+      "es": "arcoíris",
+      "phoneticEs": "ar-ko-EE-rees",
+      "fr": "arc-en-ciel",
+      "frPhonetic": "ark-ohn-SYEHL",
+      "el": "ουράνιο τόξο",
+      "elPhonetic": "u-RA-nio TO-kso",
+      "hi": "इंद्रधनुष",
+      "hiPhonetic": "in-dra-DHA-nush",
+      "ar": "قَوْسُ قُزَحٍ",
+      "arPhonetic": "QAW-su QU-zah",
+      "ko": "무지개",
+      "koPhonetic": "mu-ji-GEH",
+      "zh": "彩虹",
+      "zhPhonetic": "cǎihóng",
+      "ja": "虹",
+      "jaPhonetic": "NI-ji"
     },
     {
       "uk": "лід",
@@ -254,13 +766,45 @@
       "en": "ice",
       "phoneticUk": "lid",
       "phoneticRu": "lyod",
-      "phoneticDe": "ice",
+      "phoneticDe": "ICE",
       "examples": {
-        "uk": ["Тонкий лід покрив поверхню озера.", "Обережно, на дорозі слизький лід!"],
-        "en": ["Thin ice covered the surface of the lake.", "Be careful, there is slippery ice on the road!"],
-        "ru": ["тонкий лёд покрыл поверхность озера", "осторожно, на дороге скользкий лёд"],
-        "de": ["Dünnes Eis hat die Oberfläche des Sees bedeckt.", "Vorsicht, auf der Straße liegt glitschiges Eis!"]
-      }
+        "uk": [
+          "Тонкий лід покрив поверхню озера.",
+          "Обережно, на дорозі слизький лід!"
+        ],
+        "en": [
+          "Thin ice covered the surface of the lake.",
+          "Be careful, there is slippery ice on the road!"
+        ],
+        "ru": [
+          "тонкий лёд покрыл поверхность озера",
+          "осторожно, на дороге скользкий лёд"
+        ],
+        "de": [
+          "Dünnes Eis hat die Oberfläche des Sees bedeckt.",
+          "Vorsicht, auf der Straße liegt glitschiges Eis!"
+        ],
+        "es": [
+          "El lago estaba cubierto de hielo.",
+          "Añade hielo al vaso para enfriar la bebida."
+        ]
+      },
+      "es": "hielo",
+      "phoneticEs": "YEH-lo",
+      "fr": "glace",
+      "frPhonetic": "GLAS",
+      "el": "πάγος",
+      "elPhonetic": "PA-ghos",
+      "hi": "बर्फ़",
+      "hiPhonetic": "BARF",
+      "ar": "جَلِيد",
+      "arPhonetic": "ja-LEED",
+      "ko": "얼음",
+      "koPhonetic": "EO-reum",
+      "zh": "冰",
+      "zhPhonetic": "bīng",
+      "ja": "氷",
+      "jaPhonetic": "KOU-ri"
     },
     {
       "uk": "температура",
@@ -269,15 +813,55 @@
       "en": "temperature",
       "phoneticUk": "temperatura",
       "phoneticRu": "temperatura",
-      "phoneticDe": "tem-peh-ra-toor",
+      "phoneticDe": "tem-peh-rah-TOOR",
       "examples": {
-        "uk": ["Температура повітря впала нижче нуля.", "Яка сьогодні температура на вулиці?"],
-        "en": ["The air temperature dropped below zero.", "What is the temperature outside today?"],
-        "ru": ["температура воздуха упала ниже нуля", "какая сегодня температура на улице"],
-        "de": ["Die Lufttemperatur ist unter null gefallen.", "Wie hoch ist heute die Temperatur draußen?"]
-      }
+        "uk": [
+          "Температура повітря впала нижче нуля.",
+          "Яка сьогодні температура на вулиці?"
+        ],
+        "en": [
+          "The air temperature dropped below zero.",
+          "What is the temperature outside today?"
+        ],
+        "ru": [
+          "температура воздуха упала ниже нуля",
+          "какая сегодня температура на улице"
+        ],
+        "de": [
+          "Die Lufttemperatur ist unter null gefallen.",
+          "Wie hoch ist heute die Temperatur draußen?"
+        ],
+        "es": [
+          "La temperatura bajó mucho esta noche.",
+          "¿Cuál es la temperatura máxima de hoy?"
+        ]
+      },
+      "es": "temperatura",
+      "phoneticEs": "tem-peh-rah-TOO-rah",
+      "fr": "température",
+      "frPhonetic": "tahn-pay-ra-TÜHR",
+      "el": "θερμοκρασία",
+      "elPhonetic": "ther-mo-kra-SI-a",
+      "hi": "तापमान",
+      "hiPhonetic": "taap-MAAN",
+      "ar": "دَرَجَةُ الحَرَارَة",
+      "arPhonetic": "DA-ra-ja-tul ha-RAA-ra",
+      "ko": "온도",
+      "koPhonetic": "ON-do",
+      "zh": "温度",
+      "zhPhonetic": "wēndù",
+      "ja": "温度",
+      "jaPhonetic": "ON-do"
     }
   ],
   "totalWords": 18,
-  "xpPerWord": 15
+  "xpPerWord": 15,
+  "nameEs": "El tiempo",
+  "nameFr": "La météo",
+  "nameEl": "Ο καιρός",
+  "nameHi": "मौसम",
+  "nameAr": "الطقس",
+  "nameKo": "날씨",
+  "nameZh": "天气",
+  "nameJa": "天気"
 }

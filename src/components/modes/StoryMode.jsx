@@ -45,8 +45,9 @@ function deleteAiStory(id) {
 }
 
 export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
-  const langField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : 'uk';
+  const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' };
+  const langName = langNames[langCode] || 'Ukrainian';
+  const langField = langCode;
   const dict = buildDictionary(langCode);
 
   const [aiStories, setAiStories] = useState(() => loadAiStories());
@@ -313,13 +314,12 @@ Topic: ${topic}
 
 ${DIFFICULTY_GUIDANCE[aiDifficulty]}
 
-The story should be 6-10 sentences long. Provide the story in Ukrainian, Russian, AND English.
+The story should be 6-10 sentences long. Provide the story in ${langName} AND English.
 
 Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact format:
 {
   "titleEn": "Story title in English",
-  "uk": "The full story in Ukrainian...",
-  "ru": "The full story in Russian...",
+  "${langField}": "The full story in ${langName}...",
   "en": "Full English translation of the story..."${aiIncludeQuestions ? ',\n  "questions": [...]' : ''}
 }${questionsInstruction}`;
 
@@ -333,7 +333,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
         body: JSON.stringify({
           model: 'local-model',
           messages: [
-            { role: 'system', content: 'You are a Ukrainian and Russian language learning content creator. Always respond with valid JSON only.' },
+            { role: 'system', content: `You are a ${langName} language learning content creator. Always respond with valid JSON only.` },
             { role: 'user', content: prompt }
           ],
           temperature: 0.7,
@@ -382,7 +382,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
       if (!jsonMatch) throw new Error('No JSON found in response');
 
       const story = JSON.parse(jsonMatch[0]);
-      if (!story.uk && !story.ru) throw new Error('Missing required fields');
+      if (!story[langField]) throw new Error(`Missing ${langField} field in response`);
 
       setAiProgressPct(100);
       setAiProgressStep('Done!');
@@ -390,8 +390,8 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
       const aiStory = {
         id: 'ai-' + Date.now(),
         titleEn: story.titleEn || 'AI Story',
-        uk: story.uk || '',
-        ru: story.ru || '',
+        [langField]: story[langField] || '',
+        uk: story[langField] || '', // backward compat: components read .uk
         en: story.en || null,
         difficulty: aiDifficulty,
         questions: story.questions && Array.isArray(story.questions) ? story.questions : null,
@@ -490,7 +490,7 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
               <h3 style={styles.levelTitle}>
                 {levelGroup.level}
                 <span style={styles.levelNative}>
-                  {' '}/ {langCode === 'ru' ? levelGroup.levelRu : langCode === 'de' ? levelGroup.levelDe : levelGroup.levelUk}
+                  {' '}/ {levelGroup['level' + langCode.charAt(0).toUpperCase() + langCode.slice(1)] || levelGroup.level}
                 </span>
               </h3>
               {levelGroup.stories.map((story) => (

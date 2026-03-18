@@ -1,0 +1,158 @@
+{
+  "lessonId": "conditional",
+  "nameEn": "Conditional Sentences",
+  "nameEl": "Υποθετικές Προτάσεις",
+  "icon": "🔀",
+  "tier": "B2",
+  "prerequisites": ["future-tense", "past-tense"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "real-conditional",
+      "title": "Real Conditionals (Open Conditions)",
+      "explanation": "Real conditionals (πραγματικές υποθετικές προτάσεις) express conditions that are genuinely possible — the speaker considers the outcome likely or at least plausible. The structure is: Αν + present tense → future tense (θα + present). The condition clause (πρόταση υπόθεσης) uses the present tense, while the result clause (απόδοση) uses θα + present to indicate a future consequence. This mirrors the English 'If … , then …' pattern for real possibilities. The conjunction αν (if) always introduces the condition. Note that the condition clause can come first or second in the sentence without changing the meaning.",
+      "tip": "Think of real conditionals as 'If X happens, Y will happen.' Both clauses refer to real time: the condition is in the present, the result is in the future. This is the most common conditional type in everyday Greek conversation.",
+      "examples": [
+        { "el": "Αν έχεις χρόνο, θα πάμε βόλτα.", "en": "If you have time, we'll go for a walk.", "highlight": "Αν έχεις" },
+        { "el": "Αν μελετάς, θα μάθεις.", "en": "If you study, you'll learn.", "highlight": "Αν μελετάς" },
+        { "el": "Αν βρέχει, θα μείνουμε σπίτι.", "en": "If it rains, we'll stay home.", "highlight": "Αν βρέχει" },
+        { "el": "Αν πεινάς, θα φτιάξω φαγητό.", "en": "If you're hungry, I'll make food.", "highlight": "Αν πεινάς" },
+        { "el": "Αν τελειώσεις νωρίς, θα πάμε καφέ.", "en": "If you finish early, we'll go for coffee.", "highlight": "Αν τελειώσεις" },
+        { "el": "Αν έρθει ο Νίκος, θα τον δούμε.", "en": "If Nikos comes, we'll see him.", "highlight": "Αν έρθει" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly forms a real conditional in Greek?",
+          "options": [
+            "Αν έχεις χρόνο, θα πάμε βόλτα.",
+            "Αν είχες χρόνο, θα πάμε βόλτα.",
+            "Αν θα έχεις χρόνο, πάμε βόλτα."
+          ],
+          "correctIndex": 0,
+          "explanation": "Real conditionals use Αν + present tense in the condition clause and θα + present in the result clause. 'Αν έχεις χρόνο, θα πάμε βόλτα' is the correct pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: Αν βρέχει, ___.",
+          "options": [
+            "θα μείνουμε σπίτι.",
+            "θα μέναμε σπίτι.",
+            "είχαμε μείνει σπίτι."
+          ],
+          "correctIndex": 0,
+          "explanation": "For a real conditional, the result clause needs θα + present tense verb: 'θα μείνουμε σπίτι' (we will stay home). The imperfect or past perfect forms belong to unreal conditionals."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What tense is used in the condition clause (αν-clause) of a real conditional?",
+          "options": [
+            "Present tense (ενεστώτας)",
+            "Imperfect tense (παρατατικός)",
+            "Past perfect (παρακείμενος)"
+          ],
+          "correctIndex": 0,
+          "explanation": "In real conditionals, the αν-clause uses the present tense. Only unreal (hypothetical) conditionals use the imperfect or past perfect in the condition clause."
+        }
+      ]
+    },
+    {
+      "sectionId": "unreal-present-future",
+      "title": "Unreal Conditionals (Present / Future)",
+      "explanation": "Unreal present or future conditionals (αντίθετες υποθετικές — παρόν/μέλλον) express hypothetical situations that are contrary to present reality or unlikely to happen in the future. The structure is: Αν + imperfect (παρατατικός) → θα + imperfect. Because the condition is not real, both clauses use the imperfect tense — the condition clause uses it after αν, and the result clause uses θα + imperfect. This corresponds to the English 'If I had … , I would …' (second conditional). The imperfect here is sometimes called the 'hypothetical imperfect' because it does not refer to past time — it signals unreality.",
+      "tip": "The key signal for unreal present conditionals is the imperfect tense in both clauses. If you see 'Αν + imperfect' followed by 'θα + imperfect', the speaker is imagining something that is not currently true.",
+      "examples": [
+        { "el": "Αν είχα χρήματα, θα αγόραζα σπίτι.", "en": "If I had money, I would buy a house.", "highlight": "Αν είχα" },
+        { "el": "Αν μιλούσες ελληνικά, θα σε καταλάβαιναν.", "en": "If you spoke Greek, they would understand you.", "highlight": "Αν μιλούσες" },
+        { "el": "Αν ήταν εδώ, θα βοηθούσε.", "en": "If he were here, he would help.", "highlight": "Αν ήταν" },
+        { "el": "Αν είχα χρόνο, θα ταξίδευα στην Ελλάδα.", "en": "If I had time, I would travel to Greece.", "highlight": "Αν είχα" },
+        { "el": "Αν ήξερε την αλήθεια, θα στεναχωριόταν.", "en": "If she knew the truth, she would be upset.", "highlight": "Αν ήξερε" },
+        { "el": "Αν δεν έβρεχε, θα πηγαίναμε παραλία.", "en": "If it weren't raining, we would go to the beach.", "highlight": "Αν δεν έβρεχε" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence expresses an unreal present conditional?",
+          "options": [
+            "Αν είχα χρήματα, θα αγόραζα σπίτι.",
+            "Αν έχω χρήματα, θα αγοράσω σπίτι.",
+            "Αν είχα αγοράσει σπίτι, θα ήμουν χαρούμενος."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Αν είχα χρήματα, θα αγόραζα σπίτι' uses Αν + imperfect (είχα) and θα + imperfect (αγόραζα), which is the correct structure for an unreal present conditional."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the unreal conditional: Αν ήταν εδώ, ___.",
+          "options": [
+            "θα βοηθούσε.",
+            "θα βοηθήσει.",
+            "θα έχει βοηθήσει."
+          ],
+          "correctIndex": 0,
+          "explanation": "Unreal present conditionals require θα + imperfect in the result clause. 'θα βοηθούσε' (imperfect of βοηθώ with θα) is correct. The other options use future or perfect forms that do not match the unreal present pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Αν μιλούσες ελληνικά, θα σε καταλάβαιναν' mean?",
+          "options": [
+            "If you spoke Greek, they would understand you.",
+            "If you speak Greek, they will understand you.",
+            "If you had spoken Greek, they would have understood you."
+          ],
+          "correctIndex": 0,
+          "explanation": "The imperfect tense in both clauses (μιλούσες, καταλάβαιναν) signals an unreal present conditional — a hypothetical situation contrary to present reality: 'If you spoke Greek (but you don't), they would understand you.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "unreal-past",
+      "title": "Unreal Past Conditionals & Wishes",
+      "explanation": "Unreal past conditionals (αντίθετες υποθετικές — παρελθόν) refer to situations that did not happen in the past. The structure is: Αν + past perfect (παρακείμενος: είχα + past participle) → θα + past perfect (θα είχα + past participle). This corresponds to the English third conditional: 'If I had done … , I would have done …'. Because the past opportunity is now gone, the condition is definitively unreal. Greek also uses μακάρι (I wish / if only) and εύχομαι (I wish / I hope) to express wishes or regrets. With μακάρι: μακάρι να + past perfect (or imperfect for present wish). With εύχομαι: εύχομαι να + subjunctive or εύχομαι + να + imperfect for an unattainable wish.",
+      "tip": "Spot unreal past conditionals by the pattern 'Αν + είχα + participle'. For expressing wishes, μακάρι is informal and emotional, while εύχομαι is more formal. Both are followed by να.",
+      "examples": [
+        { "el": "Αν είχες μελετήσει, θα είχες περάσει.", "en": "If you had studied, you would have passed.", "highlight": "Αν είχες μελετήσει" },
+        { "el": "Αν είχαμε φύγει νωρίτερα, δεν θα είχαμε χαθεί.", "en": "If we had left earlier, we wouldn't have gotten lost.", "highlight": "Αν είχαμε φύγει" },
+        { "el": "Αν είχε πάρει τηλέφωνο, θα ήξερα.", "en": "If he had called, I would have known.", "highlight": "Αν είχε πάρει" },
+        { "el": "Μακάρι να είχα μείνει σπίτι.", "en": "I wish I had stayed home.", "highlight": "Μακάρι να είχα" },
+        { "el": "Μακάρι να μιλούσα καλύτερα ελληνικά.", "en": "I wish I spoke Greek better.", "highlight": "Μακάρι να μιλούσα" },
+        { "el": "Εύχομαι να είχαμε περισσότερο χρόνο.", "en": "I wish we had had more time.", "highlight": "Εύχομαι να είχαμε" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is a correct unreal past conditional?",
+          "options": [
+            "Αν είχες μελετήσει, θα είχες περάσει.",
+            "Αν μελετούσες, θα περνούσες.",
+            "Αν μελετάς, θα περάσεις."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Αν είχες μελετήσει, θα είχες περάσει' uses Αν + past perfect (είχες μελετήσει) and θα + past perfect (θα είχες περάσει), correctly expressing an unreal past condition. The second option is unreal present; the third is real conditional."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I wish I had stayed home' in Greek?",
+          "options": [
+            "Μακάρι να είχα μείνει σπίτι.",
+            "Αν είχα μείνει σπίτι.",
+            "Εύχομαι να μένω σπίτι."
+          ],
+          "correctIndex": 0,
+          "explanation": "Wishes about the past use 'μακάρι να + past perfect': 'Μακάρι να είχα μείνει σπίτι.' The αν-clause alone is not a complete wish expression, and 'εύχομαι να μένω' expresses a present/future hope, not a past regret."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: Αν είχαμε φύγει νωρίτερα, ___.",
+          "options": [
+            "δεν θα είχαμε χαθεί.",
+            "δεν θα χανόμαστε.",
+            "δεν θα χαθούμε."
+          ],
+          "correctIndex": 0,
+          "explanation": "An unreal past conditional requires θα + past perfect in the result clause. 'δεν θα είχαμε χαθεί' (we would not have gotten lost) correctly uses θα + past perfect. The other options use imperfect or future forms that belong to other conditional types."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameZh": "认识新朋友",
+  "icon": "👋",
+  "context": "You are at a Chinese language exchange event in Beijing. 小明, a friendly Chinese university student, comes over to introduce himself.",
+  "characters": {
+    "npc": { "name": "小明" },
+    "player": { "name": "你" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "你好！我叫小明。你也是来参加语言交换活动的吗？",
+      "translation": "Hello! My name is Xiao Ming. Are you also here for the language exchange event?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and confirm you're here for the language exchange.",
+      "acceptedResponses": [
+        "你好！我叫[name]。对，我是来参加语言交换活动的。",
+        "你好小明！是的，我来参加语言交换活动。",
+        "你好！对，我也是来参加活动的。很高兴认识你！",
+        "你好！是的，我是来练习中文的。"
+      ],
+      "keyWords": ["你好", "是的"],
+      "hint": "Start with '你好' and confirm with '是的' or '对'."
+    },
+    {
+      "speaker": "npc",
+      "text": "很高兴认识你！你是从哪个国家来的？",
+      "translation": "Nice to meet you! Which country are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him where you are from.",
+      "acceptedResponses": [
+        "我是从美国来的。",
+        "我是从英国来的。",
+        "我是从加拿大来的。",
+        "我是从澳大利亚来的。"
+      ],
+      "keyWords": ["我是从", "来的"],
+      "hint": "Say '我是从[country]来的' to tell where you're from."
+    },
+    {
+      "speaker": "npc",
+      "text": "哦，原来如此！你为什么学中文呢？",
+      "translation": "Oh, I see! Why are you learning Chinese?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Explain why you are learning Chinese.",
+      "acceptedResponses": [
+        "因为我对中国文化很感兴趣，所以开始学中文了。",
+        "我很喜欢中国电影，所以想学中文。",
+        "因为我想在中国工作，所以在学中文。",
+        "我觉得中文很有意思，所以一直在学。"
+      ],
+      "keyWords": ["因为", "中文"],
+      "hint": "Use '因为...所以...' (because...so...) to explain your reason."
+    },
+    {
+      "speaker": "npc",
+      "text": "太棒了！你学了多长时间的中文了？",
+      "translation": "That's awesome! How long have you been learning Chinese?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how long you have been studying Chinese.",
+      "acceptedResponses": [
+        "我学了六个月的中文了。",
+        "我从一年前开始学中文的。",
+        "我学了差不多三个月了。",
+        "我已经学了两年中文了。"
+      ],
+      "keyWords": ["学了", "中文"],
+      "hint": "Use '我学了[time]的中文了' to say how long you've studied."
+    },
+    {
+      "speaker": "npc",
+      "text": "你说得很好！你在北京最想做什么？",
+      "translation": "You speak really well! What do you most want to do in Beijing?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him what you want to do in Beijing.",
+      "acceptedResponses": [
+        "我最想去长城看看。",
+        "我想尝尝地道的北京烤鸭。",
+        "我想去故宫参观。",
+        "我想多交一些中国朋友。"
+      ],
+      "keyWords": ["想"],
+      "hint": "Use '我想...' (I want to) or '我最想...' (I most want to) to express what you'd like to do."
+    },
+    {
+      "speaker": "npc",
+      "text": "好主意！我们一起去喝杯咖啡，怎么样？",
+      "translation": "Great idea! How about we go get a coffee together?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept his invitation enthusiastically.",
+      "acceptedResponses": [
+        "好啊！我们一起去吧！",
+        "当然可以！走吧！",
+        "好的！太好了，我们走吧！",
+        "好啊！我正好想喝咖啡。"
+      ],
+      "keyWords": ["好", "走吧"],
+      "hint": "Use '好啊！' (sounds good!) or '当然可以' (of course) to accept."
+    }
+  ]
+}

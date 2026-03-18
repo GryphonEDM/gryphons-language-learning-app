@@ -1,0 +1,116 @@
+{
+  "lessonId": "relative-clauses",
+  "nameEn": "Relative Clauses",
+  "nameAr": "الأسماء الموصولة والجمل الموصولية",
+  "icon": "🔗",
+  "tier": "B2",
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "relative-pronouns",
+      "title": "Relative Pronouns — الأَسْمَاء المَوْصُولَة",
+      "explanation": "Arabic relative pronouns must agree with their antecedent in gender and number. The main relative pronouns are: الَّذِي (alladhii, 'who/which/that' for masculine singular), الَّتِي (allatii, for feminine singular), اللَّذَانِ / اللَّذَيْنِ (for masculine dual, nominative / accusative-genitive), اللَّتَانِ / اللَّتَيْنِ (for feminine dual), الَّذِينَ (alladhiina, for masculine plural), اللَّاتِي or اللَّوَاتِي (for feminine plural). These pronouns are used only when the antecedent is definite. For indefinite antecedents, no relative pronoun is used — the relative clause directly follows the noun. For example: الرَّجُلُ الَّذِي جَاءَ (the man who came) uses الَّذِي because الرَّجُلُ is definite, but رَجُلٌ جَاءَ (a man who came) uses no pronoun because رَجُلٌ is indefinite.",
+      "tip": "Use relative pronouns only with definite nouns. With indefinite nouns, the relative clause follows directly without any pronoun. Always match the pronoun to the antecedent's gender and number.",
+      "examples": [
+        { "ar": "الرَّجُلُ الَّذِي جَاءَ", "en": "the man who came (masc. singular)", "highlight": "الَّذِي" },
+        { "ar": "المَرْأَةُ الَّتِي سَافَرَتْ", "en": "the woman who traveled (fem. singular)", "highlight": "الَّتِي" },
+        { "ar": "الطُّلَّابُ الَّذِينَ نَجَحُوا", "en": "the students who succeeded (masc. plural)", "highlight": "الَّذِينَ" },
+        { "ar": "رَجُلٌ يَعْمَلُ فِي المُسْتَشْفَى", "en": "a man who works in the hospital (indefinite — no pronoun)", "highlight": "رَجُلٌ يَعْمَلُ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which relative pronoun is used for a masculine singular definite noun?",
+          "options": ["الَّذِي", "الَّتِي", "الَّذِينَ"],
+          "correctIndex": 0,
+          "explanation": "الَّذِي is the relative pronoun for masculine singular definite antecedents. الَّتِي is for feminine singular, and الَّذِينَ is for masculine plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is no relative pronoun used in رَجُلٌ يَعْمَلُ هُنَا (a man who works here)?",
+          "options": ["Because رَجُلٌ is indefinite", "Because the clause is too short", "Because it is a verbal sentence"],
+          "correctIndex": 0,
+          "explanation": "Arabic relative pronouns are used only with definite antecedents. When the noun is indefinite (like رَجُلٌ with tanween), the relative clause follows directly without الَّذِي or any other pronoun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which relative pronoun would you use for الطَّالِبَاتُ (the female students)?",
+          "options": ["اللَّاتِي or اللَّوَاتِي", "الَّذِينَ", "الَّذِي"],
+          "correctIndex": 0,
+          "explanation": "For feminine plural definite nouns, use اللَّاتِي or اللَّوَاتِي. الَّذِينَ is for masculine plural, and الَّذِي is for masculine singular."
+        }
+      ]
+    },
+    {
+      "sectionId": "return-pronoun",
+      "title": "The Return Pronoun — الضَّمِير العَائِد",
+      "explanation": "In Arabic relative clauses, a pronoun referring back to the antecedent (called الضَّمِير العَائِد, the return pronoun) must appear inside the relative clause when the antecedent is not the subject of the clause. If the antecedent is the subject of the relative clause, the return pronoun is hidden inside the verb. If the antecedent is the object, a pronoun suffix appears on the verb: الكِتَابُ الَّذِي قَرَأْتُهُ (the book that I read it) — the ـهُ refers back to الكِتَابُ. If the antecedent relates to a preposition, the pronoun attaches to the preposition: البَيْتُ الَّذِي سَكَنْتُ فِيهِ (the house that I lived in it). This return pronoun is mandatory in Arabic and cannot be omitted, unlike English where 'the book I read' drops the pronoun.",
+      "tip": "Arabic ALWAYS needs a return pronoun in relative clauses — you cannot drop it like English does. 'The book I read' must be الكِتَابُ الَّذِي قَرَأْتُهُ (literally: the book which I read it).",
+      "examples": [
+        { "ar": "الكِتَابُ الَّذِي قَرَأْتُهُ", "en": "the book that I read (lit. 'read it')", "highlight": "ـهُ" },
+        { "ar": "البَيْتُ الَّذِي سَكَنْتُ فِيهِ", "en": "the house that I lived in (lit. 'lived in it')", "highlight": "فِيهِ" },
+        { "ar": "المُعَلِّمَةُ الَّتِي تَعَلَّمْنَا مِنْهَا", "en": "the teacher (f.) we learned from (lit. 'from her')", "highlight": "مِنْهَا" },
+        { "ar": "الصَّدِيقُ الَّذِي سَافَرَ", "en": "the friend who traveled (return pronoun hidden in verb)", "highlight": "سَافَرَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In الكِتَابُ الَّذِي قَرَأْتُهُ, what does the ـهُ suffix refer to?",
+          "options": ["الكِتَابُ (the book) — it is the return pronoun", "The speaker", "The relative pronoun الَّذِي"],
+          "correctIndex": 0,
+          "explanation": "The ـهُ is the return pronoun (الضَّمِير العَائِد) that refers back to the antecedent الكِتَابُ. It must be included in Arabic, even though English drops it: 'the book that I read' vs. 'the book that I read IT.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Can you omit the return pronoun in Arabic relative clauses?",
+          "options": ["No, it must always be present (either visible or hidden in the verb)", "Yes, it is always optional", "Only in informal speech"],
+          "correctIndex": 0,
+          "explanation": "The return pronoun is mandatory in Arabic. If the antecedent is the subject of the relative clause, the pronoun is hidden inside the verb conjugation. If it is the object or relates to a preposition, it appears as a visible suffix."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the city that I traveled to' in Arabic?",
+          "options": ["المَدِينَةُ الَّتِي سَافَرْتُ إِلَيْهَا", "المَدِينَةُ الَّذِي سَافَرْتُ إِلَيْهِ", "المَدِينَةُ الَّتِي سَافَرْتُ"],
+          "correctIndex": 0,
+          "explanation": "المَدِينَةُ is feminine, so use الَّتِي. The return pronoun ـهَا (feminine) attaches to the preposition إِلَى: إِلَيْهَا. You cannot omit the return pronoun, so the third option is incorrect."
+        }
+      ]
+    },
+    {
+      "sectionId": "complex-relative-clauses",
+      "title": "Complex Relative Clauses and مَا / مَنْ",
+      "explanation": "Beyond the gendered relative pronouns, Arabic has two general-purpose relative pronouns: مَنْ (man, 'whoever/he who') for people and مَا (maa, 'whatever/that which') for things and ideas. These are used without a specific antecedent. مَنْ يَدْرُسْ يَنْجَحْ (Whoever studies succeeds) — مَنْ acts as both the antecedent and the relative pronoun. مَا فَعَلْتَهُ كَانَ صَحِيحًا (What you did was correct) — مَا refers to an unspecified thing. مَنْ and مَا are treated as masculine singular for verb agreement, even when they refer to plural entities. These pronouns are common in proverbs, general statements, and conditional-like constructions. They also appear in questions (مَنْ = who?, مَا / مَاذَا = what?), so context distinguishes the relative use from the interrogative use.",
+      "tip": "مَنْ is for people ('whoever'), مَا is for things ('whatever'). Both are treated as masculine singular for agreement. They are extremely common in proverbs and general wisdom statements.",
+      "examples": [
+        { "ar": "مَنْ يَجْتَهِدْ يَنْجَحْ", "en": "Whoever works hard succeeds.", "highlight": "مَنْ" },
+        { "ar": "مَا فَعَلْتَهُ كَانَ صَوَابًا", "en": "What you did was correct.", "highlight": "مَا" },
+        { "ar": "أُحِبُّ مَنْ يَقُولُ الحَقَّ", "en": "I love whoever speaks the truth.", "highlight": "مَنْ يَقُولُ" },
+        { "ar": "خُذْ مَا تُرِيدُ", "en": "Take whatever you want.", "highlight": "مَا تُرِيدُ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does مَنْ mean when used as a relative pronoun?",
+          "options": ["Whoever / he who (for people)", "Whatever (for things)", "Where"],
+          "correctIndex": 0,
+          "explanation": "As a relative pronoun, مَنْ means 'whoever' or 'he who' and refers to people. مَا is used for things and concepts ('whatever' or 'that which'). Both can also function as interrogative pronouns in questions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In مَنْ يَدْرُسْ يَنْجَحْ, why are the verbs in the jussive mood?",
+          "options": ["Because مَنْ functions as a conditional particle here", "Because they are past tense", "They are actually in the indicative"],
+          "correctIndex": 0,
+          "explanation": "When مَنْ introduces a general conditional meaning ('whoever does X, Y happens'), it acts like a conditional particle (أَدَاة شَرْط), putting both the condition verb and the result verb in the jussive mood (مَجْزُوم)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is verb agreement handled with مَنْ and مَا?",
+          "options": ["Both are treated as masculine singular", "مَنْ is plural, مَا is singular", "They match the implied group"],
+          "correctIndex": 0,
+          "explanation": "مَنْ and مَا are grammatically treated as masculine singular, regardless of whether they refer to multiple people or things. So you say مَنْ يَدْرُسُ (he who studies), not مَنْ يَدْرُسُونَ."
+        }
+      ]
+    }
+  ]
+}

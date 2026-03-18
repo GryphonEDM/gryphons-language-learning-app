@@ -1,0 +1,149 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping",
+  "nameEl": "Ψώνια",
+  "icon": "🛍️",
+  "context": "You are shopping at a Greek gift shop in Monastiraki, Athens. The shopkeeper (Πωλητής) helps you.",
+  "characters": {
+    "npc": { "name": "Πωλητής" },
+    "player": { "name": "Εσύ" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Καλημέρα! Καλώς ορίσατε! Μπορώ να σας βοηθήσω;",
+      "translation": "Good morning! Welcome! Can I help you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet them and say you are looking for a souvenir",
+      "acceptedResponses": [
+        "Καλημέρα! Ψάχνω για ένα σουβενίρ",
+        "Γεια σας! Ψάχνω για σουβενίρ",
+        "Καλημέρα, ψάχνω κάτι για σουβενίρ",
+        "Γεια σας, θέλω να αγοράσω ένα σουβενίρ"
+      ],
+      "keyWords": ["σουβενίρ", "ψάχνω"],
+      "hint": "Καλημέρα! Ψάχνω για ένα σουβενίρ."
+    },
+    {
+      "speaker": "npc",
+      "text": "Έχουμε πολλά όμορφα πράγματα! Κεραμικά, μαγνητάκια, εικόνες, κοσμήματα... Τι σας αρέσει;",
+      "translation": "We have many beautiful things! Ceramics, magnets, icons, jewelry... What do you like?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you like the ceramic vase over there and ask if you can look at it",
+      "acceptedResponses": [
+        "Μου αρέσει αυτό το κεραμικό βάζο. Μπορώ να το δω;",
+        "Μ' αρέσει το κεραμικό βάζο εκεί. Μπορώ να το κοιτάξω;",
+        "Αυτό το βάζο είναι ωραίο. Μπορώ να το δω;",
+        "Θέλω να δω αυτό το κεραμικό βάζο"
+      ],
+      "keyWords": ["κεραμικό", "βάζο", "δω"],
+      "hint": "Μου αρέσει αυτό το κεραμικό βάζο. Μπορώ να το δω;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Βεβαίως! Ορίστε. Είναι χειροποίητο από τοπικούς τεχνίτες.",
+      "translation": "Of course! Here you go. It is handmade by local craftsmen."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say it is very beautiful and ask how much it costs",
+      "acceptedResponses": [
+        "Είναι πολύ όμορφο. Πόσο κοστίζει;",
+        "Είναι πάρα πολύ όμορφο! Πόσο κάνει;",
+        "Πολύ ωραίο! Πόσο κοστίζει;",
+        "Μου αρέσει πολύ. Πόσο κάνει;"
+      ],
+      "keyWords": ["όμορφο", "πόσο", "κοστίζει"],
+      "hint": "Είναι πολύ όμορφο. Πόσο κοστίζει;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Αυτό κοστίζει είκοσι πέντε ευρώ.",
+      "translation": "This one costs twenty-five euros."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say that is a little expensive. Ask if there is a discount.",
+      "acceptedResponses": [
+        "Είναι λίγο ακριβό. Υπάρχει έκπτωση;",
+        "Είναι λίγο ακριβό. Μπορείτε να μου κάνετε έκπτωση;",
+        "Λίγο ακριβό είναι. Έχετε έκπτωση;",
+        "Είναι ακριβό. Μπορείτε να το κατεβάσετε λίγο;"
+      ],
+      "keyWords": ["ακριβό", "έκπτωση"],
+      "hint": "Είναι λίγο ακριβό. Υπάρχει έκπτωση;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Για εσάς, θα σας κάνω έκπτωση! Είκοσι ευρώ. Είναι πολύ καλή τιμή!",
+      "translation": "For you, I will give you a discount! Twenty euros. It is a very good price!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if it comes in other colors",
+      "acceptedResponses": [
+        "Έχετε άλλα χρώματα;",
+        "Υπάρχει σε άλλα χρώματα;",
+        "Το έχετε σε άλλο χρώμα;",
+        "Έχει και άλλα χρώματα;"
+      ],
+      "keyWords": ["χρώματα", "άλλα"],
+      "hint": "Έχετε άλλα χρώματα;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ναι! Το έχουμε σε μπλε, άσπρο και κόκκινο. Ποιο χρώμα προτιμάτε;",
+      "translation": "Yes! We have it in blue, white and red. Which color do you prefer?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you prefer the blue one",
+      "acceptedResponses": [
+        "Προτιμώ το μπλε",
+        "Θέλω το μπλε, παρακαλώ",
+        "Το μπλε μου αρέσει περισσότερο",
+        "Θα πάρω το μπλε"
+      ],
+      "keyWords": ["μπλε", "προτιμώ"],
+      "hint": "Προτιμώ το μπλε."
+    },
+    {
+      "speaker": "npc",
+      "text": "Εξαιρετική επιλογή! Θα το τυλίξω για δώρο;",
+      "translation": "Excellent choice! Shall I wrap it as a gift?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes please, and ask if you can pay by card",
+      "acceptedResponses": [
+        "Ναι παρακαλώ. Μπορώ να πληρώσω με κάρτα;",
+        "Ναι, ευχαριστώ. Δέχεστε κάρτα;",
+        "Ναι! Πληρώνω με κάρτα;",
+        "Ναι παρακαλώ. Παίρνετε κάρτα;"
+      ],
+      "keyWords": ["κάρτα", "πληρώσω"],
+      "hint": "Ναι παρακαλώ. Μπορώ να πληρώσω με κάρτα;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Φυσικά! Δεχόμαστε κάρτα. Ορίστε η απόδειξη. Σας ευχαριστούμε πολύ!",
+      "translation": "Of course! We accept card. Here is your receipt. Thank you very much!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank them and say goodbye",
+      "acceptedResponses": [
+        "Ευχαριστώ πολύ. Αντίο!",
+        "Ευχαριστώ! Γεια σας!",
+        "Πολλές ευχαριστίες. Αντίο!",
+        "Ευχαριστώ, αντίο και καλή συνέχεια!"
+      ],
+      "keyWords": ["ευχαριστώ", "αντίο"],
+      "hint": "Ευχαριστώ πολύ. Αντίο!"
+    }
+  ]
+}

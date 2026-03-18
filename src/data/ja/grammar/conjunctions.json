@@ -1,0 +1,161 @@
+{
+  "lessonId": "conjunctions",
+  "nameEn": "Conjunctions",
+  "nameJa": "接続詞",
+  "icon": "🔗",
+  "tier": "A2",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "kara-node-because",
+      "title": "から / ので (Because)",
+      "explanation": "Both から and ので express reason or cause ('because'). から attaches to the plain or polite form of verbs and adjectives: 'さむいから、コートをきます' (Because it's cold, I'll wear a coat). ので also means 'because' but sounds softer and more polite. With な-adjectives and nouns, ので requires な before it: 'しずかなので' (because it's quiet), 'がくせいなので' (because I'm a student). With い-adjectives and verbs, ので attaches directly to the plain form: 'たかいので' (because it's expensive), 'いくので' (because I'm going). Both follow the pattern: [reason] + から/ので + [result].",
+      "tip": "Use から in casual speech and when stating reasons directly. Use ので in polite or formal situations — it implies the reason naturally leads to the result, sounding less forceful.",
+      "examples": [
+        { "ja": "あついから、まどをあけます。", "en": "Because it's hot, I'll open the window.", "highlight": "から" },
+        { "ja": "びょうきなので、きょうはやすみます。", "en": "Because I'm sick, I'll rest today.", "highlight": "なので" },
+        { "ja": "おかねがないから、かえません。", "en": "Because I have no money, I can't buy it.", "highlight": "から" },
+        { "ja": "あしたしけんがあるので、べんきょうします。", "en": "Because there's an exam tomorrow, I'll study.", "highlight": "ので" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "びょうき___、がっこうをやすみました。(Because I was sick, I was absent from school.) — Choose the most polite option.",
+          "options": ["から", "なので", "だから", "けど"],
+          "correctIndex": 1,
+          "explanation": "びょうき is a noun, so it needs な before ので → 'びょうきなので'. This is the polite way to give a reason."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "あめがふっている___、かさをもっていきます。(Because it's raining, I'll take an umbrella.)",
+          "acceptedAnswers": ["から", "ので"],
+          "hint": "Either reason-marker works here. The verb is in plain form.",
+          "explanation": "Both 'あめがふっているから' and 'あめがふっているので' are correct. ので is slightly softer."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct way to say 'Because it's quiet...' using ので?",
+          "options": ["しずかので", "しずかなので", "しずかだので", "しずくので"],
+          "correctIndex": 1,
+          "explanation": "しずか is a な-adjective. Before ので, な-adjectives require な: しずかなので."
+        }
+      ]
+    },
+    {
+      "sectionId": "kedo-ga-but",
+      "title": "けど / が (But)",
+      "explanation": "けど and が both mean 'but' or 'although', connecting two contrasting clauses. けど (and its more casual form けれど / けれども) is common in everyday speech: 'にほんごはむずかしいけど、たのしいです' (Japanese is difficult, but fun). が is more formal and used in writing or polite speech: 'にほんごはむずかしいですが、たのしいです'. Both attach to the end of the first clause. けど can connect to plain or polite forms. が typically follows polite forms in formal speech.",
+      "tip": "けど is casual — great for daily conversation. が is formal — use it in business, writing, or polite requests. Sometimes けど/が are used not to contrast but to soften or introduce a topic: 'すみませんが...' (Excuse me, but...).",
+      "examples": [
+        { "ja": "このレストランはたかいけど、おいしいです。", "en": "This restaurant is expensive, but the food is good.", "highlight": "けど" },
+        { "ja": "にほんごをべんきょうしましたが、まだむずかしいです。", "en": "I studied Japanese, but it's still difficult.", "highlight": "が" },
+        { "ja": "いきたいけど、じかんがない。", "en": "I want to go, but I don't have time.", "highlight": "けど" },
+        { "ja": "すみませんが、もういちどおねがいします。", "en": "Excuse me, but could you say that once more?", "highlight": "が" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "にほんごはむずかしい___、たのしいです。(Japanese is difficult, but fun.) — Choose the casual option.",
+          "options": ["が", "から", "けど", "ので"],
+          "correctIndex": 2,
+          "explanation": "けど is the casual conjunction for 'but'. が would also work but is more formal."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "えいがをみました___、あまりおもしろくなかったです。(I watched the movie, but it wasn't very interesting.)",
+          "acceptedAnswers": ["が", "けど"],
+          "hint": "'But' — either formal or casual works.",
+          "explanation": "Both が and けど mean 'but' here. が is formal, けど is casual."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses が to soften a request rather than to contrast?",
+          "options": [
+            "たかいですが、かいます。",
+            "すみませんが、みちをおしえてください。",
+            "さむいですが、でかけます。",
+            "ふるいですが、いいくるまです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "'すみませんが' uses が to politely introduce a request, not to show contrast. It softens the ask: 'Excuse me, but could you tell me the way?'"
+        }
+      ]
+    },
+    {
+      "sectionId": "shi-listing-reasons",
+      "title": "し (Listing Reasons)",
+      "explanation": "し is used to list multiple reasons or qualities, often to justify a conclusion. It translates roughly as 'and what's more' or 'not only... but also'. Each reason clause ends with し: 'やすいし、おいしいし、このレストランがすきです' (It's cheap, and it's delicious, so I like this restaurant). し attaches to the plain form of verbs, い-adjectives, な-adjectives (+ だし), and nouns (+ だし). You can list two or more reasons, and the final し is sometimes omitted before the conclusion.",
+      "tip": "Think of し as stacking reasons. It implies there may be even more reasons beyond what you've listed. It's a great way to build a persuasive or explanatory statement in natural Japanese.",
+      "examples": [
+        { "ja": "このへやはひろいし、あかるいし、いいですね。", "en": "This room is spacious, and bright — it's nice, isn't it?", "highlight": "し" },
+        { "ja": "あめだし、さむいし、いえにいます。", "en": "It's raining, and it's cold, so I'll stay home.", "highlight": "だし" },
+        { "ja": "かれはやさしいし、おもしろいし、にんきがあります。", "en": "He's kind, and funny, so he's popular.", "highlight": "し" },
+        { "ja": "じかんもないし、おかねもないし、りょこうできません。", "en": "I have no time, and no money either, so I can't travel.", "highlight": "し" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "このみせはやすい___、おいしい___、よくいきます。(This shop is cheap, and tasty, so I go often.)",
+          "acceptedAnswers": ["し、おいしいし", "し"],
+          "hint": "Use し after each reason.",
+          "explanation": "Attach し to each reason: やすいし、おいしいし → listing two qualities."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "あめだ___、かぜもつよい___、でかけたくない。(It's raining, and the wind is strong, so I don't want to go out.)",
+          "options": ["から、から", "し、し", "けど、けど", "ので、ので"],
+          "correctIndex": 1,
+          "explanation": "し is used to list multiple reasons. あめだし (noun + だし) and かぜもつよいし (い-adjective + し)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you attach し to a な-adjective like しずか (quiet)?",
+          "options": ["しずかし", "しずかなし", "しずかだし", "しずくし"],
+          "correctIndex": 2,
+          "explanation": "な-adjectives use だ before し: しずかだし (it's quiet, and...)."
+        }
+      ]
+    },
+    {
+      "sectionId": "node-vs-kara-nuance",
+      "title": "ので vs から — Nuance",
+      "explanation": "While both ので and から mean 'because', they carry different nuances. から states a reason directly and can sound assertive or subjective: 'いやだから、いかない' (I don't like it, so I'm not going). ので presents the reason as a natural, objective cause-and-effect, sounding softer: 'ちょっとつかれたので、やすみます' (I'm a bit tired, so I'll rest). In formal or polite contexts, ので is strongly preferred. から can sound blunt or self-centered in polite settings. When making requests or giving instructions, ので sounds more considerate: 'あぶないので、さわらないでください' (It's dangerous, so please don't touch it).",
+      "tip": "A simple rule: use ので when you want to sound polite and considerate, use から when you want to be direct or when speaking casually. In formal writing and business Japanese, ので is almost always preferred.",
+      "examples": [
+        { "ja": "いそがしいので、いけません。", "en": "Because I'm busy, I can't go. (polite/soft)", "highlight": "ので" },
+        { "ja": "いそがしいから、いけない。", "en": "I'm busy, so I can't go. (direct/casual)", "highlight": "から" },
+        { "ja": "きけんですので、おはいりにならないでください。", "en": "It is dangerous, so please do not enter. (very formal)", "highlight": "ですので" },
+        { "ja": "おもしろいから、もういっかいみたい。", "en": "It's interesting, so I want to watch it again. (casual)", "highlight": "から" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You are writing a formal email to a professor. Which is more appropriate? 'たいちょうがわるい___、おやすみをいただきたいです。'",
+          "options": ["から", "ので", "し", "けど"],
+          "correctIndex": 1,
+          "explanation": "In formal communication, ので is preferred because it sounds softer and more respectful than から."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence sounds more direct and casual?",
+          "options": [
+            "つかれたので、はやくねます。",
+            "つかれたから、はやくねる。",
+            "つかれたし、はやくねます。",
+            "つかれたが、はやくねます。"
+          ],
+          "correctIndex": 1,
+          "explanation": "から with plain form verb (ねる) is the most casual and direct. ので is softer."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "あぶない___、さわらないでください。(It's dangerous, so please don't touch it.) — Use the polite/soft option.",
+          "acceptedAnswers": ["ので"],
+          "hint": "Which reason-marker is softer and more polite?",
+          "explanation": "ので is the polite choice when giving warnings or instructions: あぶないので、さわらないでください。"
+        }
+      ]
+    }
+  ]
+}

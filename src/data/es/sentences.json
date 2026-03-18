@@ -1,0 +1,362 @@
+[
+  {
+    "id": "s1",
+    "en": "I drink coffee.",
+    "es": "Yo bebo café.",
+    "words": ["Yo", "bebo", "café"],
+    "distractors": ["tomo", "agua", "ella"],
+    "validOrders": [["Yo", "bebo", "café"], ["bebo", "café"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s2",
+    "en": "She is a teacher.",
+    "es": "Ella es profesora.",
+    "words": ["Ella", "es", "profesora"],
+    "distractors": ["maestra", "él", "está"],
+    "validOrders": [["Ella", "es", "profesora"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s3",
+    "en": "I have two brothers.",
+    "es": "Tengo dos hermanos.",
+    "words": ["Tengo", "dos", "hermanos"],
+    "distractors": ["tres", "hermanas", "yo"],
+    "validOrders": [["Tengo", "dos", "hermanos"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s4",
+    "en": "We go to school.",
+    "es": "Nosotros vamos a la escuela.",
+    "words": ["Nosotros", "vamos", "a", "la", "escuela"],
+    "distractors": ["universidad", "el", "van"],
+    "validOrders": [["Nosotros", "vamos", "a", "la", "escuela"], ["vamos", "a", "la", "escuela"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s5",
+    "en": "He eats an apple.",
+    "es": "Él come una manzana.",
+    "words": ["Él", "come", "una", "manzana"],
+    "distractors": ["bebe", "ella", "naranja"],
+    "validOrders": [["Él", "come", "una", "manzana"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s6",
+    "en": "My mother is at home.",
+    "es": "Mi madre está en casa.",
+    "words": ["Mi", "madre", "está", "en", "casa"],
+    "distractors": ["es", "padre", "la"],
+    "validOrders": [["Mi", "madre", "está", "en", "casa"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s7",
+    "en": "You speak Spanish.",
+    "es": "Tú hablas español.",
+    "words": ["Tú", "hablas", "español"],
+    "distractors": ["inglés", "yo", "habla"],
+    "validOrders": [["Tú", "hablas", "español"], ["hablas", "español"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s8",
+    "en": "The book is on the table.",
+    "es": "El libro está en la mesa.",
+    "words": ["El", "libro", "está", "en", "la", "mesa"],
+    "distractors": ["silla", "es", "un"],
+    "validOrders": [["El", "libro", "está", "en", "la", "mesa"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s9",
+    "en": "I am from Spain.",
+    "es": "Soy de España.",
+    "words": ["Soy", "de", "España"],
+    "distractors": ["estoy", "México", "yo"],
+    "validOrders": [["Soy", "de", "España"], ["Yo", "soy", "de", "España"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s10",
+    "en": "How old are you?",
+    "es": "¿Cuántos años tienes?",
+    "words": ["¿Cuántos", "años", "tienes?"],
+    "distractors": ["tiene", "meses", "cuándo"],
+    "validOrders": [["¿Cuántos", "años", "tienes?"]],
+    "difficulty": "A1"
+  },
+  {
+    "id": "s11",
+    "en": "I like to read books.",
+    "es": "Me gusta leer libros.",
+    "words": ["Me", "gusta", "leer", "libros"],
+    "distractors": ["gustan", "te", "escribir"],
+    "validOrders": [["Me", "gusta", "leer", "libros"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s12",
+    "en": "I am going to eat at the restaurant.",
+    "es": "Voy a comer en el restaurante.",
+    "words": ["Voy", "a", "comer", "en", "el", "restaurante"],
+    "distractors": ["vamos", "café", "la"],
+    "validOrders": [["Voy", "a", "comer", "en", "el", "restaurante"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s13",
+    "en": "She wakes up at seven in the morning.",
+    "es": "Ella se despierta a las siete.",
+    "words": ["Ella", "se", "despierta", "a", "las", "siete"],
+    "distractors": ["ocho", "levanta", "él"],
+    "validOrders": [["Ella", "se", "despierta", "a", "las", "siete"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s14",
+    "en": "The red dress is very pretty.",
+    "es": "El vestido rojo es muy bonito.",
+    "words": ["El", "vestido", "rojo", "es", "muy", "bonito"],
+    "distractors": ["azul", "bonita", "la"],
+    "validOrders": [["El", "vestido", "rojo", "es", "muy", "bonito"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s15",
+    "en": "They go to the park on Sundays.",
+    "es": "Ellos van al parque los domingos.",
+    "words": ["Ellos", "van", "al", "parque", "los", "domingos"],
+    "distractors": ["sábados", "a", "vamos"],
+    "validOrders": [["Ellos", "van", "al", "parque", "los", "domingos"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s16",
+    "en": "Do you want to come with me?",
+    "es": "¿Quieres venir conmigo?",
+    "words": ["¿Quieres", "venir", "conmigo?"],
+    "distractors": ["quiere", "contigo", "ir"],
+    "validOrders": [["¿Quieres", "venir", "conmigo?"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s17",
+    "en": "I don't understand the question.",
+    "es": "No entiendo la pregunta.",
+    "words": ["No", "entiendo", "la", "pregunta"],
+    "distractors": ["respuesta", "el", "comprendo"],
+    "validOrders": [["No", "entiendo", "la", "pregunta"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s18",
+    "en": "My sister is taller than me.",
+    "es": "Mi hermana es más alta que yo.",
+    "words": ["Mi", "hermana", "es", "más", "alta", "que", "yo"],
+    "distractors": ["baja", "hermano", "menos"],
+    "validOrders": [["Mi", "hermana", "es", "más", "alta", "que", "yo"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s19",
+    "en": "I brush my teeth every day.",
+    "es": "Me lavo los dientes todos los días.",
+    "words": ["Me", "lavo", "los", "dientes", "todos", "los", "días"],
+    "distractors": ["manos", "siempre", "te"],
+    "validOrders": [["Me", "lavo", "los", "dientes", "todos", "los", "días"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s20",
+    "en": "Where is the nearest pharmacy?",
+    "es": "¿Dónde está la farmacia más cercana?",
+    "words": ["¿Dónde", "está", "la", "farmacia", "más", "cercana?"],
+    "distractors": ["hospital", "lejos", "el"],
+    "validOrders": [["¿Dónde", "está", "la", "farmacia", "más", "cercana?"]],
+    "difficulty": "A2"
+  },
+  {
+    "id": "s21",
+    "en": "When I was young, I played in the park.",
+    "es": "Cuando era joven, jugaba en el parque.",
+    "words": ["Cuando", "era", "joven,", "jugaba", "en", "el", "parque"],
+    "distractors": ["niño", "juego", "jugué"],
+    "validOrders": [["Cuando", "era", "joven,", "jugaba", "en", "el", "parque"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s22",
+    "en": "Yesterday I went to the cinema with my friends.",
+    "es": "Ayer fui al cine con mis amigos.",
+    "words": ["Ayer", "fui", "al", "cine", "con", "mis", "amigos"],
+    "distractors": ["iba", "teatro", "tus"],
+    "validOrders": [["Ayer", "fui", "al", "cine", "con", "mis", "amigos"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s23",
+    "en": "She told me that she would call later.",
+    "es": "Ella me dijo que llamaría después.",
+    "words": ["Ella", "me", "dijo", "que", "llamaría", "después"],
+    "distractors": ["llamará", "antes", "dijó"],
+    "validOrders": [["Ella", "me", "dijo", "que", "llamaría", "después"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s24",
+    "en": "I had never seen such a beautiful landscape.",
+    "es": "Nunca había visto un paisaje tan bonito.",
+    "words": ["Nunca", "había", "visto", "un", "paisaje", "tan", "bonito"],
+    "distractors": ["jamás", "veo", "feo"],
+    "validOrders": [["Nunca", "había", "visto", "un", "paisaje", "tan", "bonito"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s25",
+    "en": "They give it to her every morning.",
+    "es": "Se lo dan cada mañana.",
+    "words": ["Se", "lo", "dan", "cada", "mañana"],
+    "distractors": ["le", "da", "tarde"],
+    "validOrders": [["Se", "lo", "dan", "cada", "mañana"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s26",
+    "en": "Although it was raining, we went for a walk.",
+    "es": "Aunque llovía, salimos a caminar.",
+    "words": ["Aunque", "llovía,", "salimos", "a", "caminar"],
+    "distractors": ["salíamos", "correr", "pero"],
+    "validOrders": [["Aunque", "llovía,", "salimos", "a", "caminar"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s27",
+    "en": "Next year I will travel to Mexico.",
+    "es": "El año que viene viajaré a México.",
+    "words": ["El", "año", "que", "viene", "viajaré", "a", "México"],
+    "distractors": ["pasado", "viajé", "España"],
+    "validOrders": [["El", "año", "que", "viene", "viajaré", "a", "México"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s28",
+    "en": "I need to learn more vocabulary.",
+    "es": "Necesito aprender más vocabulario.",
+    "words": ["Necesito", "aprender", "más", "vocabulario"],
+    "distractors": ["gramática", "menos", "necesitas"],
+    "validOrders": [["Necesito", "aprender", "más", "vocabulario"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s29",
+    "en": "Did you finish the homework that the teacher gave you?",
+    "es": "¿Terminaste los deberes que te dio la profesora?",
+    "words": ["¿Terminaste", "los", "deberes", "que", "te", "dio", "la", "profesora?"],
+    "distractors": ["tarea", "le", "dió"],
+    "validOrders": [["¿Terminaste", "los", "deberes", "que", "te", "dio", "la", "profesora?"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s30",
+    "en": "They used to eat together every Sunday.",
+    "es": "Solían comer juntos todos los domingos.",
+    "words": ["Solían", "comer", "juntos", "todos", "los", "domingos"],
+    "distractors": ["comían", "sábados", "solos"],
+    "validOrders": [["Solían", "comer", "juntos", "todos", "los", "domingos"]],
+    "difficulty": "B1"
+  },
+  {
+    "id": "s31",
+    "en": "I hope that you can come to the party.",
+    "es": "Espero que puedas venir a la fiesta.",
+    "words": ["Espero", "que", "puedas", "venir", "a", "la", "fiesta"],
+    "distractors": ["puedes", "reunión", "quiero"],
+    "validOrders": [["Espero", "que", "puedas", "venir", "a", "la", "fiesta"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s32",
+    "en": "If I had more money, I would buy a bigger house.",
+    "es": "Si tuviera más dinero, compraría una casa más grande.",
+    "words": ["Si", "tuviera", "más", "dinero,", "compraría", "una", "casa", "más", "grande"],
+    "distractors": ["tengo", "compré", "pequeña"],
+    "validOrders": [["Si", "tuviera", "más", "dinero,", "compraría", "una", "casa", "más", "grande"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s33",
+    "en": "It is important that everyone participates in the meeting.",
+    "es": "Es importante que todos participen en la reunión.",
+    "words": ["Es", "importante", "que", "todos", "participen", "en", "la", "reunión"],
+    "distractors": ["participan", "necesario", "asamblea"],
+    "validOrders": [["Es", "importante", "que", "todos", "participen", "en", "la", "reunión"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s34",
+    "en": "Not only did she speak Spanish, but she also knew French.",
+    "es": "No solo hablaba español, sino que también sabía francés.",
+    "words": ["No", "solo", "hablaba", "español,", "sino", "que", "también", "sabía", "francés"],
+    "distractors": ["habla", "pero", "italiano"],
+    "validOrders": [["No", "solo", "hablaba", "español,", "sino", "que", "también", "sabía", "francés"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s35",
+    "en": "I would have gone if they had invited me.",
+    "es": "Habría ido si me hubieran invitado.",
+    "words": ["Habría", "ido", "si", "me", "hubieran", "invitado"],
+    "distractors": ["hubiera", "habrías", "llamado"],
+    "validOrders": [["Habría", "ido", "si", "me", "hubieran", "invitado"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s36",
+    "en": "Despite being tired, she continued working.",
+    "es": "A pesar de estar cansada, siguió trabajando.",
+    "words": ["A", "pesar", "de", "estar", "cansada,", "siguió", "trabajando"],
+    "distractors": ["cansado", "continuó", "aunque"],
+    "validOrders": [["A", "pesar", "de", "estar", "cansada,", "siguió", "trabajando"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s37",
+    "en": "The report that was published last week caused great controversy.",
+    "es": "El informe que se publicó la semana pasada causó gran polémica.",
+    "words": ["El", "informe", "que", "se", "publicó", "la", "semana", "pasada", "causó", "gran", "polémica"],
+    "distractors": ["artículo", "publicó", "anterior"],
+    "validOrders": [["El", "informe", "que", "se", "publicó", "la", "semana", "pasada", "causó", "gran", "polémica"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s38",
+    "en": "I recommend that you visit the museum before it closes.",
+    "es": "Te recomiendo que visites el museo antes de que cierre.",
+    "words": ["Te", "recomiendo", "que", "visites", "el", "museo", "antes", "de", "que", "cierre"],
+    "distractors": ["visitas", "después", "abra"],
+    "validOrders": [["Te", "recomiendo", "que", "visites", "el", "museo", "antes", "de", "que", "cierre"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s39",
+    "en": "The more you practice, the better you will get.",
+    "es": "Cuanto más practiques, mejor llegarás a ser.",
+    "words": ["Cuanto", "más", "practiques,", "mejor", "llegarás", "a", "ser"],
+    "distractors": ["practicas", "peor", "serás"],
+    "validOrders": [["Cuanto", "más", "practiques,", "mejor", "llegarás", "a", "ser"]],
+    "difficulty": "B2"
+  },
+  {
+    "id": "s40",
+    "en": "It seems unlikely that they will reach an agreement.",
+    "es": "Parece poco probable que lleguen a un acuerdo.",
+    "words": ["Parece", "poco", "probable", "que", "lleguen", "a", "un", "acuerdo"],
+    "distractors": ["llegan", "desacuerdo", "muy"],
+    "validOrders": [["Parece", "poco", "probable", "que", "lleguen", "a", "un", "acuerdo"]],
+    "difficulty": "B2"
+  }
+]

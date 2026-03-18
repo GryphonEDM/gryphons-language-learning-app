@@ -1,0 +1,155 @@
+{
+  "lessonId": "location-prepositions",
+  "nameEn": "Location and Prepositions",
+  "nameZh": "方位和介词",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "zai-location",
+      "title": "在 (zài) — Location",
+      "explanation": "在 (zài) is the most fundamental location word in Chinese. It works in two main ways: (1) 在 + place = 'to be at/in a place', forming a complete statement about where someone or something is; (2) 在 + verb = an ongoing action, similar to the English progressive '-ing'. When 在 appears before a place noun, it tells you WHERE. When it appears directly before a verb with no place noun, it tells you someone is IN THE MIDDLE OF doing something.",
+      "tip": "Think of 在 as 'at' for location (在学校 = at school) and as '-ing' for actions (在看书 = reading). Context makes the meaning clear — if a place follows, it's location; if a verb follows, it's progressive.",
+      "examples": [
+        { "zh": "我在学校。", "pinyin": "Wǒ zài xuéxiào.", "en": "I am at school.", "highlight": "在学校" },
+        { "zh": "她在家。", "pinyin": "Tā zài jiā.", "en": "She is at home.", "highlight": "在家" },
+        { "zh": "他在看书。", "pinyin": "Tā zài kàn shū.", "en": "He is reading (a book).", "highlight": "在看" },
+        { "zh": "我们在吃饭。", "pinyin": "Wǒmen zài chī fàn.", "en": "We are eating.", "highlight": "在吃" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 在 mean in: 她在医院。?",
+          "options": ["She is going to the hospital", "She is at the hospital", "She left the hospital", "She works for the hospital"],
+          "correctIndex": 1,
+          "explanation": "在 + place means 'to be at/in' that place. 她在医院 = She is at the hospital."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我___图书馆。(I am at the library.)",
+          "acceptedAnswers": ["在"],
+          "hint": "Use the word that means 'at/in' a location."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'He is sleeping'?",
+          "options": ["他在床。", "他在睡觉。", "他睡觉在。", "在他睡觉。"],
+          "correctIndex": 1,
+          "explanation": "在 before a verb indicates an ongoing action. 他在睡觉 = He is sleeping. 他在床 would mean 'He is in bed' (location)."
+        }
+      ]
+    },
+    {
+      "sectionId": "direction-words",
+      "title": "Direction Words",
+      "explanation": "Chinese uses direction/position words (方位词, fāngwèicí) to describe where things are relative to other things. These words typically follow a reference noun: noun + 上/下/里/外/前/后/左/右/旁边/对面. The pattern is: object + direction word, meaning 'the top of / inside of / in front of' etc. These direction words turn nouns into location phrases that can follow 在.",
+      "tip": "Direction words attach AFTER the reference noun, the opposite of English. 'On the table' becomes 桌子上 (table-top). Think: reference point first, then direction.",
+      "examples": [
+        { "zh": "书在桌子上。", "pinyin": "Shū zài zhuōzi shàng.", "en": "The book is on the table.", "highlight": "桌子上" },
+        { "zh": "猫在椅子下。", "pinyin": "Māo zài yǐzi xià.", "en": "The cat is under the chair.", "highlight": "椅子下" },
+        { "zh": "钱在包里。", "pinyin": "Qián zài bāo lǐ.", "en": "The money is in the bag.", "highlight": "包里" },
+        { "zh": "银行在超市对面。", "pinyin": "Yínháng zài chāoshì duìmiàn.", "en": "The bank is across from the supermarket.", "highlight": "超市对面" }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each direction word to its English meaning:",
+          "pairs": [
+            { "left": "上 (shàng)", "right": "on / above" },
+            { "left": "里 (lǐ)", "right": "inside" },
+            { "left": "前 (qián)", "right": "in front of" },
+            { "left": "旁边 (pángbiān)", "right": "beside / next to" }
+          ]
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "手机在桌子___。(The phone is on the table.)",
+          "acceptedAnswers": ["上"],
+          "hint": "Which direction word means 'on top of'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'The cat is outside the house'?",
+          "options": ["猫在外房子。", "猫在房子外。", "外猫在房子。", "猫房子在外。"],
+          "correctIndex": 1,
+          "explanation": "The pattern is 在 + noun + direction word. 猫在房子外 = The cat is outside the house. The direction word 外 follows the reference noun 房子."
+        }
+      ]
+    },
+    {
+      "sectionId": "cong-dao-wang-xiang",
+      "title": "从...到... and 往/向",
+      "explanation": "To express movement from one place to another, Chinese uses 从 (cóng, from) and 到 (dào, to/arrive). They often appear together as 从...到... (from...to...). For indicating direction of movement, use 往 (wǎng) or 向 (xiàng), both meaning 'toward'. These go before a direction or place: 往/向 + direction/place + verb. 往 is slightly more common in spoken Chinese and for physical movement, while 向 can also be used for abstract directions.",
+      "tip": "从 marks the starting point, 到 marks the endpoint. Think of 从...到... as 'from...to...' brackets around your journey. 往 and 向 both mean 'toward' and are mostly interchangeable.",
+      "examples": [
+        { "zh": "我从家到学校要二十分钟。", "pinyin": "Wǒ cóng jiā dào xuéxiào yào èrshí fēnzhōng.", "en": "It takes me 20 minutes from home to school.", "highlight": "从家到学校" },
+        { "zh": "从北京到上海很远。", "pinyin": "Cóng Běijīng dào Shànghǎi hěn yuǎn.", "en": "It's very far from Beijing to Shanghai.", "highlight": "从北京到上海" },
+        { "zh": "请往前走。", "pinyin": "Qǐng wǎng qián zǒu.", "en": "Please go forward.", "highlight": "往前" },
+        { "zh": "向左转。", "pinyin": "Xiàng zuǒ zhuǎn.", "en": "Turn left.", "highlight": "向左" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "___北京___上海坐高铁要四个小时。(From Beijing to Shanghai by high-speed train takes 4 hours.)",
+          "acceptedAnswers": ["从，到", "从,到"],
+          "hint": "Use the 'from...to...' pattern with two words."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Go straight ahead'?",
+          "options": ["前往走。", "往前走。", "走往前。", "走前往。"],
+          "correctIndex": 1,
+          "explanation": "The pattern is 往 + direction + verb. 往前走 = go forward / go straight ahead. 往 comes before the direction word 前."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 从...到...?",
+          "options": ["从九点工作到五点。", "到九点从五点工作。", "工作从到九点五点。", "九点从到五点工作。"],
+          "correctIndex": 0,
+          "explanation": "从九点到五点 = from 9 o'clock to 5 o'clock. 从 marks the start, 到 marks the end, then the main verb can appear before or after."
+        }
+      ]
+    },
+    {
+      "sectionId": "location-of-actions",
+      "title": "Location of Actions",
+      "explanation": "There are two important patterns linking location and verbs. Pattern 1: 在 + place + verb — describes WHERE an action happens. The location comes before the verb as an adverbial phrase: 我在图书馆学习 (I study at the library). Pattern 2: verb + 在 + place — describes where something ENDS UP as a result of the action: 我住在北京 (I live in Beijing), 他坐在椅子上 (He sits/is seated on the chair). Pattern 1 emphasizes the setting; Pattern 2 emphasizes the result or state.",
+      "tip": "If the place is WHERE you DO something, put 在+place BEFORE the verb (在家吃饭). If the place is WHERE something ENDS UP or remains, put 在+place AFTER the verb (住在北京). Some verbs like 住 almost always use Pattern 2.",
+      "examples": [
+        { "zh": "我在图书馆学习。", "pinyin": "Wǒ zài túshūguǎn xuéxí.", "en": "I study at the library.", "highlight": "在图书馆学习" },
+        { "zh": "她在公园跑步。", "pinyin": "Tā zài gōngyuán pǎobù.", "en": "She runs in the park.", "highlight": "在公园跑步" },
+        { "zh": "他住在北京。", "pinyin": "Tā zhù zài Běijīng.", "en": "He lives in Beijing.", "highlight": "住在北京" },
+        { "zh": "请坐在这儿。", "pinyin": "Qǐng zuò zài zhèr.", "en": "Please sit here.", "highlight": "坐在这儿" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I work at a company'?",
+          "options": ["我工作在公司。", "我在公司工作。", "在我公司工作。", "公司在我工作。"],
+          "correctIndex": 1,
+          "explanation": "For describing where an action takes place, use 在 + place BEFORE the verb: 我在公司工作 = I work at a company."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "她住___上海。(She lives in Shanghai.)",
+          "acceptedAnswers": ["在"],
+          "hint": "住 (to live) uses the verb+在+place pattern — the location word goes between 住 and the place."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between 在家吃饭 and 吃在家?",
+          "options": [
+            "They mean exactly the same thing",
+            "在家吃饭 = eat at home (setting); 吃在家 is unnatural",
+            "吃在家 = eat at home; 在家吃饭 is unnatural",
+            "在家吃饭 = eat out; 吃在家 = eat at home"
+          ],
+          "correctIndex": 1,
+          "explanation": "在家吃饭 (eat at home) uses the natural Pattern 1: 在+place+verb. 吃在家 sounds unnatural because 吃 doesn't describe a resulting location. Only certain verbs like 住, 坐, 放, 站 naturally use verb+在+place."
+        }
+      ]
+    }
+  ]
+}

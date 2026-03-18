@@ -1,0 +1,151 @@
+{
+  "lessonId": "basic-sentence-structure",
+  "nameEn": "Basic Sentence Structure",
+  "nameJa": "基本文の構造",
+  "icon": "📝",
+  "tier": "A1",
+  "prerequisites": ["hiragana-katakana"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "sov-order",
+      "title": "SOV Word Order",
+      "explanation": "Japanese follows Subject-Object-Verb (SOV) word order, unlike English which uses Subject-Verb-Object (SVO). The verb always comes at the end of the sentence. For example, 'I eat sushi' in English becomes 私は寿司を食べます (Watashi wa sushi o tabemasu) — literally 'I (topic) sushi (object) eat'. This is one of the most fundamental differences from English. The subject can often be dropped when it is obvious from context — Japanese is a 'pro-drop' language. So 寿司を食べます (sushi o tabemasu) alone is perfectly natural if the speaker is clearly the one eating. Modifiers always come before what they modify: adjectives before nouns, adverbs before verbs, relative clauses before nouns.",
+      "tip": "Think of the verb as the period of a Japanese sentence — it always comes last. When constructing sentences, place your verb at the end and work backwards. Everything else goes between the subject and the verb.",
+      "examples": [
+        { "ja": "私は水を飲みます。", "en": "I drink water. (lit: I [topic] water [object] drink)", "highlight": "飲みます" },
+        { "ja": "田中さんは本を読みます。", "en": "Tanaka reads a book. (lit: Tanaka [topic] book [object] read)", "highlight": "読みます" },
+        { "ja": "猫が魚を食べます。", "en": "The cat eats fish. (lit: cat [subject] fish [object] eat)", "highlight": "食べます" },
+        { "ja": "毎日日本語を勉強します。", "en": "I study Japanese every day. (subject 'I' is dropped)", "highlight": "勉強します" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the basic word order in Japanese?",
+          "options": ["Subject-Object-Verb (SOV)", "Subject-Verb-Object (SVO)", "Verb-Subject-Object (VSO)"],
+          "correctIndex": 0,
+          "explanation": "Japanese uses SOV order. The verb always comes at the end. 'I eat sushi' becomes 私は寿司を食べます (I-sushi-eat)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct Japanese order for 'I read a book'?",
+          "options": ["私は本を読みます (I-book-read)", "私は読みます本を (I-read-book)", "読みます私は本を (read-I-book)"],
+          "correctIndex": 0,
+          "explanation": "Following SOV order: 私は (I, topic) + 本を (book, object) + 読みます (read, verb at the end)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can 寿司を食べます mean 'I eat sushi' without a subject?",
+          "options": ["Japanese allows dropping the subject when it is clear from context", "寿司 means 'I'", "The subject is hidden in the verb"],
+          "correctIndex": 0,
+          "explanation": "Japanese is a pro-drop language. When the subject is obvious from context (the speaker, in this case), it is natural and common to omit it entirely."
+        }
+      ]
+    },
+    {
+      "sectionId": "desu-masu",
+      "title": "です / ます Form (Polite Speech)",
+      "explanation": "Japanese has multiple speech levels. The です/ます form is the standard polite form used in everyday conversation with acquaintances, coworkers, strangers, and anyone you are not very close to. です (desu) is the polite copula, equivalent to 'is/am/are'. It attaches to nouns and な-adjectives: 学生です (gakusei desu — I am a student), 元気です (genki desu — I am well). ます (masu) is the polite verb ending, replacing the dictionary form ending: 食べる→食べます (taberu→tabemasu — to eat), 飲む→飲みます (nomu→nomimasu — to drink). The negative forms are: です→ではありません/じゃありません (is not), ます→ません (do not). Past tense: です→でした (was), ます→ました (did).",
+      "tip": "Always use です/ます form when speaking to anyone you do not know well. It is never wrong to be too polite in Japanese. Save casual/plain form for close friends and family. When in doubt, use です/ます.",
+      "examples": [
+        { "ja": "私は学生です。", "en": "I am a student. (です = polite 'am')", "highlight": "です" },
+        { "ja": "日本語を話します。", "en": "I speak Japanese. (ます = polite verb ending)", "highlight": "話します" },
+        { "ja": "学生ではありません。", "en": "I am not a student. (ではありません = polite negative of です)", "highlight": "ではありません" },
+        { "ja": "昨日、映画を見ました。", "en": "I watched a movie yesterday. (ました = polite past tense)", "highlight": "見ました" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the polite negative form of です?",
+          "options": ["ではありません (or じゃありません)", "ですない", "ません"],
+          "correctIndex": 0,
+          "explanation": "The polite negative of です is ではありません (formal) or じゃありません (slightly less formal but still polite). ません is the negative ending for verbs, not for です."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I ate' politely?",
+          "options": ["食べました (tabemashita)", "食べです (tabedesu)", "食べるました (taberumashita)"],
+          "correctIndex": 0,
+          "explanation": "The polite past tense of 食べる is 食べました. The verb stem 食べ + ました (polite past ending). You remove る and add ました."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When should you use です/ます form?",
+          "options": ["With acquaintances, strangers, and in formal/polite situations", "Only with your boss", "Only in writing"],
+          "correctIndex": 0,
+          "explanation": "です/ます is the default polite form used with anyone you are not very close to — coworkers, strangers, acquaintances, shopkeepers, etc. It is the safest speech level for learners."
+        }
+      ]
+    },
+    {
+      "sectionId": "wa-topic-marker",
+      "title": "は (Topic Marker)",
+      "explanation": "The particle は (pronounced 'wa', not 'ha', when used as a particle) marks the topic of the sentence — what the sentence is about. It is one of the most important and unique features of Japanese grammar. In 私は学生です (Watashi wa gakusei desu — I am a student), は tells the listener 'as for me' or 'speaking of me'. The topic is not always the grammatical subject — it sets the frame for what follows. は can mark various elements as the topic: 今日は暑いです (Kyō wa atsui desu — As for today, it is hot), 魚は食べません (Sakana wa tabemasen — As for fish, I don't eat it). The topic is often omitted once established in conversation. A key nuance: は often implies contrast. 肉は食べます (Niku wa tabemasu) can mean 'I eat meat (but maybe not fish)' — the は subtly contrasts meat with other foods.",
+      "tip": "Think of は as 'as for ~' or 'speaking of ~'. It sets the stage for what comes next. Remember: は the particle is ALWAYS pronounced 'wa', even though the character は is normally 'ha'. This is a historical spelling convention.",
+      "examples": [
+        { "ja": "私は田中です。", "en": "I am Tanaka. (As for me, I am Tanaka.)", "highlight": "は" },
+        { "ja": "今日は寒いです。", "en": "Today is cold. (As for today, it is cold.)", "highlight": "は" },
+        { "ja": "コーヒーは飲みます。", "en": "I drink coffee. (As for coffee, I drink it — implies contrast)", "highlight": "は" },
+        { "ja": "東京は大きいです。", "en": "Tokyo is big. (As for Tokyo, it is big.)", "highlight": "は" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the particle は pronounced?",
+          "options": ["wa", "ha", "ba"],
+          "correctIndex": 0,
+          "explanation": "When は is used as a particle (topic marker), it is pronounced 'wa'. This is a special exception — in all other contexts, は is pronounced 'ha'. This dates back to historical kana usage."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does は mark in a sentence?",
+          "options": ["The topic — what the sentence is about", "The direct object", "The verb"],
+          "correctIndex": 0,
+          "explanation": "は is the topic marker. It tells the listener what the sentence is about: 'as for X, ...' The direct object is marked by を, not は."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What nuance does は add in 肉は食べます (niku wa tabemasu)?",
+          "options": ["Contrast — 'I eat meat (but perhaps not other things)'", "It means 'I love meat'", "It makes the sentence a question"],
+          "correctIndex": 0,
+          "explanation": "は often carries a contrastive nuance. 肉は食べます implies 'I eat meat (but maybe not fish/vegetables)'. Without this contrast, you would simply say 肉を食べます."
+        }
+      ]
+    },
+    {
+      "sectionId": "basic-patterns",
+      "title": "Basic Sentence Patterns",
+      "explanation": "Japanese has several core sentence patterns that form the building blocks of communication. Pattern 1 — Identification: AはBです (A wa B desu — A is B). Used to identify or equate: 私は学生です (I am a student). Pattern 2 — Description: AはAdjです (A wa adj desu — A is adj). Used to describe: この本はおもしろいです (This book is interesting). Pattern 3 — Existence: AにBがあります/います (A ni B ga arimasu/imasu — In A, there is B). あります is for inanimate objects, います is for animate beings: 部屋に猫がいます (There is a cat in the room). Pattern 4 — Action: (Subj は) Obj を Verb (Topic does verb to object): 私はパンを食べます (I eat bread). These four patterns cover the vast majority of basic Japanese sentences.",
+      "tip": "Master these four patterns and you can express most basic ideas. Notice that います is for living things (people, animals) and あります is for non-living things (books, buildings). This distinction is important and unique to Japanese.",
+      "examples": [
+        { "ja": "これはペンです。", "en": "This is a pen. (Pattern 1: A は B です)", "highlight": "です" },
+        { "ja": "この映画はおもしろいです。", "en": "This movie is interesting. (Pattern 2: A は Adj です)", "highlight": "おもしろいです" },
+        { "ja": "机の上に本があります。", "en": "There is a book on the desk. (Pattern 3: Location に Thing が あります)", "highlight": "あります" },
+        { "ja": "公園に子供がいます。", "en": "There are children in the park. (Pattern 3: います for living things)", "highlight": "います" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb do you use for 'There is a dog in the yard'?",
+          "options": ["います (imasu) — for living things", "あります (arimasu) — for non-living things", "です (desu) — for identification"],
+          "correctIndex": 0,
+          "explanation": "Dogs are living beings, so you use います: 庭に犬がいます (niwa ni inu ga imasu). Use あります for inanimate objects like books, tables, and buildings."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pattern is これは本です (kore wa hon desu)?",
+          "options": ["Identification: A は B です (This is a book)", "Description: A は Adj です", "Existence: A に B が あります"],
+          "correctIndex": 0,
+          "explanation": "これは本です follows Pattern 1 (Identification): A は B です. It equates これ (this) with 本 (book): 'This is a book.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'This room is quiet'?",
+          "options": ["この部屋は静かです (kono heya wa shizuka desu)", "この部屋に静かがあります", "この部屋を静かです"],
+          "correctIndex": 0,
+          "explanation": "This follows Pattern 2 (Description): A は Adj です. 静か (shizuka, quiet) is a な-adjective, so it attaches directly to です: 静かです."
+        }
+      ]
+    }
+  ]
+}

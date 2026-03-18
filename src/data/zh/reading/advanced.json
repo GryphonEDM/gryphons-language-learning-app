@@ -1,0 +1,121 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "中国的科技发展",
+      "titleEn": "China's Tech Development",
+      "difficulty": "B1",
+      "text": "近年来，中国的科技产业发展非常迅速。许多大型科技公司，如华为、腾讯和阿里巴巴，已经成为全球知名的企业。中国在人工智能、电子商务和移动支付等领域取得了巨大的进步。如今，大多数中国人都使用手机支付，几乎不再使用现金。政府也大力支持科技创新，投入了大量资金用于研发。中国的科技发展不仅改变了人们的日常生活，也对全球经济产生了深远的影响。",
+      "wordGlossary": {
+        "科技": "science and technology",
+        "产业": "industry",
+        "迅速": "rapid, swift",
+        "全球": "global",
+        "人工智能": "artificial intelligence",
+        "电子商务": "e-commerce",
+        "移动支付": "mobile payment",
+        "创新": "innovation",
+        "研发": "research and development",
+        "深远": "profound, far-reaching"
+      },
+      "questions": [
+        {
+          "question": "根据文章，以下哪项不是中国科技发展的领域？",
+          "options": ["人工智能", "电子商务", "航空航天", "移动支付"],
+          "correctIndex": 2,
+          "explanation": "文章提到了人工智能、电子商务和移动支付，但没有提到航空航天。"
+        },
+        {
+          "question": "如今大多数中国人怎样付款？",
+          "options": ["使用信用卡", "使用现金", "使用手机支付", "使用支票"],
+          "correctIndex": 2,
+          "explanation": "文章指出「大多数中国人都使用手机支付，几乎不再使用现金」。"
+        },
+        {
+          "question": "中国政府对科技发展的态度是什么？",
+          "options": ["不关心", "大力支持", "限制发展", "保持中立"],
+          "correctIndex": 1,
+          "explanation": "文章说「政府也大力支持科技创新，投入了大量资金用于研发」。"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "环境保护",
+      "titleEn": "Environmental Protection",
+      "difficulty": "B2",
+      "text": "随着工业化的快速推进，环境污染已成为中国面临的重大挑战之一。空气污染、水污染和土壤污染严重威胁着人们的健康和生态系统的平衡。为了解决这些问题，中国政府制定了一系列环保政策，包括推广清洁能源、限制工厂排放和鼓励公众减少碳足迹。近年来，太阳能和风能等可再生能源的使用大幅增加。许多城市也开始实施垃圾分类制度，培养市民的环保意识。尽管挑战依然严峻，但中国在绿色发展方面已经取得了显著的成效。",
+      "wordGlossary": {
+        "工业化": "industrialization",
+        "污染": "pollution",
+        "威胁": "to threaten",
+        "生态系统": "ecosystem",
+        "清洁能源": "clean energy",
+        "排放": "emissions, to discharge",
+        "碳足迹": "carbon footprint",
+        "可再生能源": "renewable energy",
+        "垃圾分类": "waste sorting, garbage classification",
+        "显著": "notable, significant"
+      },
+      "questions": [
+        {
+          "question": "文章提到了哪些类型的污染？",
+          "options": ["只有空气污染", "空气和水污染", "空气、水和土壤污染", "噪音和光污染"],
+          "correctIndex": 2,
+          "explanation": "文章提到了「空气污染、水污染和土壤污染」三种类型。"
+        },
+        {
+          "question": "以下哪项是中国政府采取的环保措施？",
+          "options": ["关闭所有工厂", "推广清洁能源", "禁止使用汽车", "停止经济发展"],
+          "correctIndex": 1,
+          "explanation": "文章提到政府「推广清洁能源、限制工厂排放和鼓励公众减少碳足迹」。"
+        },
+        {
+          "question": "关于中国的环保现状，文章的观点是什么？",
+          "options": ["问题已经完全解决", "挑战严峻但已有显著成效", "情况越来越糟", "政府没有采取任何行动"],
+          "correctIndex": 1,
+          "explanation": "文章最后指出「尽管挑战依然严峻，但中国在绿色发展方面已经取得了显著的成效」。"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "中国的教育制度",
+      "titleEn": "Chinese Education System",
+      "difficulty": "B2",
+      "text": "中国的教育制度以其严格和竞争激烈而闻名。学生从小学到高中要经历十二年的基础教育。高考是中国最重要的全国性考试，每年六月举行，被认为是决定学生命运的关键时刻。高考成绩直接影响学生能否进入理想的大学。为了在高考中取得好成绩，许多学生从初中开始就参加各种补习班，学业压力非常大。近年来，社会各界开始反思这种应试教育模式，呼吁更加注重培养学生的创造力和综合素质。一些改革措施已经开始实施，但教育观念的转变仍然需要时间。",
+      "wordGlossary": {
+        "制度": "system, institution",
+        "竞争": "competition",
+        "基础教育": "basic/foundational education",
+        "高考": "national college entrance exam (gaokao)",
+        "命运": "fate, destiny",
+        "补习班": "tutoring class, cram school",
+        "学业压力": "academic pressure",
+        "应试教育": "exam-oriented education",
+        "创造力": "creativity",
+        "综合素质": "comprehensive quality/competence"
+      },
+      "questions": [
+        {
+          "question": "中国的基础教育一共有多少年？",
+          "options": ["九年", "十年", "十一年", "十二年"],
+          "correctIndex": 3,
+          "explanation": "文章指出「学生从小学到高中要经历十二年的基础教育」。"
+        },
+        {
+          "question": "高考在什么时候举行？",
+          "options": ["每年三月", "每年六月", "每年九月", "每年十二月"],
+          "correctIndex": 1,
+          "explanation": "文章说高考「每年六月举行」。"
+        },
+        {
+          "question": "社会各界对应试教育的态度是什么？",
+          "options": ["完全支持", "开始反思并呼吁改革", "没有任何看法", "认为应该更加严格"],
+          "correctIndex": 1,
+          "explanation": "文章提到「社会各界开始反思这种应试教育模式，呼吁更加注重培养学生的创造力和综合素质」。"
+        }
+      ]
+    }
+  ]
+}

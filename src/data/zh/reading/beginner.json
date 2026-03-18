@@ -1,0 +1,121 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "我的家",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "我家有五口人。爸爸、妈妈、哥哥、妹妹和我。爸爸是医生，他在医院工作。妈妈是老师，她在小学教数学。哥哥今年二十岁，他是大学生。妹妹今年八岁，她很可爱。我们家还有一只猫，它的名字叫小白。小白很喜欢睡觉。我爱我的家人。",
+      "wordGlossary": {
+        "家": "family/home",
+        "爸爸": "father",
+        "妈妈": "mother",
+        "哥哥": "older brother",
+        "妹妹": "younger sister",
+        "医生": "doctor",
+        "老师": "teacher",
+        "大学生": "university student",
+        "可爱": "cute",
+        "家人": "family members"
+      },
+      "questions": [
+        {
+          "question": "爸爸的工作是什么？",
+          "options": ["他是老师。", "他是医生。", "他是工人。", "他是厨师。"],
+          "correctIndex": 1,
+          "explanation": "文中说爸爸是医生，他在医院工作。"
+        },
+        {
+          "question": "家里有几口人？",
+          "options": ["三口人。", "四口人。", "五口人。", "六口人。"],
+          "correctIndex": 2,
+          "explanation": "文中说我家有五口人。"
+        },
+        {
+          "question": "猫的名字叫什么？",
+          "options": ["小花。", "小黑。", "小白。", "小黄。"],
+          "correctIndex": 2,
+          "explanation": "文中说猫的名字叫小白。"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "我的一天",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "我每天早上六点半起床。先刷牙洗脸，然后吃早饭。早饭我常常吃面包和喝牛奶。七点半我坐公共汽车去学校。上午有四节课，下午有两节课。中午我在学校食堂吃午饭。下午三点半放学。回家以后我先做作业，然后看一会儿电视。晚上九点我上床睡觉。",
+      "wordGlossary": {
+        "起床": "get up",
+        "刷牙": "brush teeth",
+        "洗脸": "wash face",
+        "早饭": "breakfast",
+        "公共汽车": "bus",
+        "学校": "school",
+        "食堂": "cafeteria",
+        "放学": "finish school",
+        "作业": "homework",
+        "睡觉": "sleep"
+      },
+      "questions": [
+        {
+          "question": "他几点起床？",
+          "options": ["六点。", "六点半。", "七点。", "七点半。"],
+          "correctIndex": 1,
+          "explanation": "文中说每天早上六点半起床。"
+        },
+        {
+          "question": "他怎么去学校？",
+          "options": ["走路去。", "坐公共汽车去。", "骑自行车去。", "坐地铁去。"],
+          "correctIndex": 1,
+          "explanation": "文中说七点半坐公共汽车去学校。"
+        },
+        {
+          "question": "放学以后他先做什么？",
+          "options": ["看电视。", "做作业。", "吃晚饭。", "玩游戏。"],
+          "correctIndex": 1,
+          "explanation": "文中说回家以后先做作业，然后看一会儿电视。"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "我的学校",
+      "titleEn": "My School",
+      "difficulty": "A1",
+      "text": "我的学校很大，也很漂亮。学校里有很多树和花。我们班有三十个学生，二十个男生和十个女生。我最喜欢的科目是英语，因为英语老师很有趣。数学课有点儿难，但是我会努力学习。中午我和同学们一起在食堂吃饭。下课的时候我们在操场上打篮球。我很喜欢我的学校和同学们。",
+      "wordGlossary": {
+        "漂亮": "beautiful",
+        "班": "class",
+        "男生": "boy/male student",
+        "女生": "girl/female student",
+        "科目": "subject",
+        "有趣": "interesting",
+        "努力": "work hard",
+        "同学": "classmate",
+        "操场": "playground",
+        "篮球": "basketball"
+      },
+      "questions": [
+        {
+          "question": "他们班有多少个学生？",
+          "options": ["二十个。", "二十五个。", "三十个。", "三十五个。"],
+          "correctIndex": 2,
+          "explanation": "文中说我们班有三十个学生。"
+        },
+        {
+          "question": "他最喜欢的科目是什么？",
+          "options": ["数学。", "语文。", "体育。", "英语。"],
+          "correctIndex": 3,
+          "explanation": "文中说最喜欢的科目是英语，因为英语老师很有趣。"
+        },
+        {
+          "question": "下课的时候他们做什么？",
+          "options": ["看书。", "打篮球。", "踢足球。", "跑步。"],
+          "correctIndex": 1,
+          "explanation": "文中说下课的时候在操场上打篮球。"
+        }
+      ]
+    }
+  ]
+}

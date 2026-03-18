@@ -1,0 +1,115 @@
+{
+  "lessonId": "idiomatic-expressions",
+  "nameEn": "Idiomatic Expressions",
+  "nameHi": "मुहावरे और लोकोक्तियाँ",
+  "icon": "💎",
+  "tier": "B2",
+  "prerequisites": ["postpositions", "verb-conjugation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "body-part-idioms",
+      "title": "Body-Part Idioms (शरीर अंगों के मुहावरे)",
+      "explanation": "Hindi is exceptionally rich in idioms built around body parts, especially eyes (आँख), nose (नाक), hands (हाथ), and head (सिर). These idioms are used constantly in everyday conversation and literature. आँखों का तारा means 'the star of one's eyes' — a deeply cherished person, especially a beloved child. नाक का बाल means 'a hair of the nose' — someone extremely close and trusted, indispensable. नाक कटना means 'the nose being cut' — to be humiliated or disgraced (the nose symbolizes honor in Hindi culture). हाथ पैर मारना means 'to strike hands and feet' — to struggle or make desperate efforts. सिर पर सवार होना means 'to ride on someone's head' — to dominate or pester someone constantly. आँख दिखाना means 'to show eyes' — to threaten or intimidate someone. These idioms cannot be understood literally and must be learned as fixed expressions with their figurative meanings.",
+      "tip": "In Hindi culture, the nose (नाक) symbolizes honor and respect — so most नाक idioms relate to pride, prestige, or dignity. The eyes (आँख) relate to love, attention, or intimidation. Learning these cultural associations helps you remember the idioms.",
+      "examples": [
+        { "hi": "वह अपने माता-पिता की आँखों का तारा है।", "en": "He is the apple of his parents' eyes. (deeply cherished)", "highlight": "आँखों का तारा" },
+        { "hi": "राम मेरे बॉस की नाक का बाल है।", "en": "Ram is indispensable to my boss. (lit: a nose hair of my boss)", "highlight": "नाक का बाल" },
+        { "hi": "उसकी हरकत से पूरे परिवार की नाक कट गई।", "en": "His behavior disgraced the entire family. (lit: the family's nose was cut)", "highlight": "नाक कट गई" },
+        { "hi": "नौकरी पाने के लिए उसने बहुत हाथ पैर मारे।", "en": "He struggled a lot to get a job. (lit: struck hands and feet)", "highlight": "हाथ पैर मारे" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"आँखों का तारा\" का क्या अर्थ है? (What does आँखों का तारा mean?)",
+          "options": ["बहुत प्यारा और क़ीमती व्यक्ति (A very dear and precious person)", "आँखों की बीमारी (An eye disease)", "तारों को देखने वाला (One who looks at stars)"],
+          "correctIndex": 0,
+          "explanation": "आँखों का तारा literally means 'the star of the eyes' and figuratively refers to someone extremely dear and precious — usually a beloved child. It is equivalent to the English idiom 'the apple of one's eye'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"नाक कटना\" का मुहावरे में क्या अर्थ है? (What does नाक कटना mean idiomatically?)",
+          "options": ["बेइज़्ज़ती होना / To be disgraced", "चोट लगना / To be injured", "नाराज़ होना / To be angry"],
+          "correctIndex": 0,
+          "explanation": "नाक कटना means 'to be disgraced' or 'to lose face'. In Hindi culture, the nose (नाक) symbolizes honor and prestige. When someone's nose is 'cut' (figuratively), their honor is damaged. Related: नाक ऊँची रखना (to keep one's nose high = to maintain dignity)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"हाथ पैर मारना\" का क्या अर्थ है? (What does हाथ पैर मारना mean?)",
+          "options": ["बहुत कोशिश करना / To struggle or make great efforts", "किसी को मारना / To hit someone", "तैरना / To swim"],
+          "correctIndex": 0,
+          "explanation": "हाथ पैर मारना literally means 'to strike hands and feet' but idiomatically means 'to struggle' or 'to make desperate efforts'. It paints a vivid picture of someone flailing and trying hard to achieve something or get out of a difficult situation."
+        }
+      ]
+    },
+    {
+      "sectionId": "animal-nature-idioms",
+      "title": "Animal & Nature Idioms (जानवर और प्रकृति के मुहावरे)",
+      "explanation": "Hindi has many colorful idioms drawn from the natural world — animals, plants, and natural phenomena. ऊँट के मुँह में जीरा means 'cumin in a camel's mouth' — something ridiculously inadequate or too small for the need (imagine giving a single cumin seed to a giant camel). बंदर क्या जाने अदरक का स्वाद means 'what does a monkey know of the taste of ginger' — an uncultured person cannot appreciate refined things (similar to 'casting pearls before swine'). घर की मुर्ग़ी दाल बराबर means 'the household chicken is equal to lentils' — something readily available at home is not valued (familiarity breeds contempt). आसमान से गिरे खजूर में अटके means 'fell from the sky, got stuck in a date palm' — to go from one bad situation to another (out of the frying pan, into the fire). दूध का जला छाछ भी फूँककर पीता है means 'one burnt by milk blows on buttermilk too' — once bitten, twice shy.",
+      "tip": "Many Hindi proverbs and idioms have near-exact equivalents in English. Learning the pairs helps: ऊँट के मुँह में जीरा ≈ 'a drop in the ocean'; दूध का जला छाछ भी फूँककर पीता है ≈ 'once bitten, twice shy'.",
+      "examples": [
+        { "hi": "इतने बड़े परिवार के लिए ये खाना तो ऊँट के मुँह में जीरा है।", "en": "This food for such a large family is like cumin in a camel's mouth. (woefully insufficient)", "highlight": "ऊँट के मुँह में जीरा" },
+        { "hi": "उसे कविता की क्या समझ — बंदर क्या जाने अदरक का स्वाद।", "en": "What does he understand of poetry — a monkey doesn't know the taste of ginger. (an unrefined person)", "highlight": "बंदर क्या जाने अदरक का स्वाद" },
+        { "hi": "पड़ोसी के बच्चों की तारीफ़ करते हो, अपने बच्चे? घर की मुर्ग़ी दाल बराबर!", "en": "You praise the neighbor's children, but your own? The household chicken is treated like lentils! (unappreciated)", "highlight": "घर की मुर्ग़ी दाल बराबर" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"ऊँट के मुँह में जीरा\" का क्या अर्थ है? (What does ऊँट के मुँह में जीरा mean?)",
+          "options": ["बहुत कम या अपर्याप्त (Very little or insufficient)", "बहुत ज़्यादा (Too much)", "बहुत स्वादिष्ट (Very tasty)"],
+          "correctIndex": 0,
+          "explanation": "ऊँट के मुँह में जीरा paints a vivid picture: a tiny cumin seed in the mouth of a huge camel — utterly insignificant and insufficient. It is used when something provided is far too little for the need, similar to 'a drop in the ocean' or 'a drop in the bucket'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"घर की मुर्ग़ी दाल बराबर\" किस स्थिति में प्रयोग होता है? (In what situation is घर की मुर्ग़ी दाल बराबर used?)",
+          "options": ["जब घर की चीज़ की क़द्र न हो (When things at home are not valued)", "जब खाना अच्छा हो (When the food is good)", "जब मुर्ग़ी बीमार हो (When the chicken is sick)"],
+          "correctIndex": 0,
+          "explanation": "This idiom means that what is easily available at home is undervalued. A household chicken (which would normally be prized) is treated as ordinary as दाल (lentils). It expresses the idea that familiarity breeds contempt — people often value what is distant or rare over what they already have."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"दूध का जला छाछ भी फूँककर पीता है\" का अंग्रेज़ी समकक्ष क्या है? (What is the English equivalent?)",
+          "options": ["Once bitten, twice shy", "The early bird catches the worm", "Actions speak louder than words"],
+          "correctIndex": 0,
+          "explanation": "दूध का जला छाछ भी फूँककर पीता है literally means 'one burnt by milk blows on buttermilk too'. A person who has been hurt by hot milk becomes so cautious that they blow even on cold buttermilk. This perfectly matches 'once bitten, twice shy' — past bad experiences make one overly cautious."
+        }
+      ]
+    },
+    {
+      "sectionId": "everyday-figurative-speech",
+      "title": "Everyday Figurative Speech (दैनिक लाक्षणिक भाषा)",
+      "explanation": "Beyond formal idioms and proverbs, Hindi is filled with figurative expressions used in daily conversation that sound strange when translated literally but are perfectly natural in Hindi. नौ दो ग्यारह होना means 'to become nine-two-eleven' — to run away or flee (9 + 2 = 11, suggesting the legs are running like the number 11). टेढ़ी खीर means 'crooked pudding' — a difficult or complicated task. दाल में कुछ काला means 'something black in the lentils' — something suspicious, something fishy. अपना उल्लू सीधा करना means 'to straighten one's own owl' — to serve one's own selfish interests. लोहे के चने चबाना means 'to chew iron chickpeas' — to face extreme hardship. These expressions add color and vividness to everyday Hindi and are essential for understanding native speakers. Using them naturally will make your Hindi sound much more authentic.",
+      "tip": "When you hear a Hindi phrase that makes no literal sense, it is probably an idiom. Ask a native speaker or look it up — trying to decode it literally will lead you astray. मुहावरों को रटो नहीं, समझो (Don't memorize idioms, understand them).",
+      "examples": [
+        { "hi": "पुलिस को देखकर चोर नौ दो ग्यारह हो गया।", "en": "Seeing the police, the thief ran away. (lit: became nine-two-eleven)", "highlight": "नौ दो ग्यारह" },
+        { "hi": "इस प्रोजेक्ट को समय पर पूरा करना टेढ़ी खीर है।", "en": "Completing this project on time is a tough task. (lit: crooked pudding)", "highlight": "टेढ़ी खीर" },
+        { "hi": "उसकी बातों में दाल में कुछ काला लगता है।", "en": "There seems to be something suspicious in his words. (lit: something black in the lentils)", "highlight": "दाल में कुछ काला" },
+        { "hi": "उसने बहुत लोहे के चने चबाए तब जाकर कामयाबी मिली।", "en": "He endured great hardship before achieving success. (lit: chewed iron chickpeas)", "highlight": "लोहे के चने चबाए" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"नौ दो ग्यारह होना\" का क्या अर्थ है? (What does नौ दो ग्यारह होना mean?)",
+          "options": ["भाग जाना / To run away", "गिनती करना / To count", "ग्यारह बजना / To be eleven o'clock"],
+          "correctIndex": 0,
+          "explanation": "नौ दो ग्यारह होना means 'to run away' or 'to flee'. The clever wordplay is that 9 + 2 = 11, and the number 11 visually resembles two legs running. So 'becoming 9-2-11' means showing your legs (running away). It is used humorously for someone who disappears quickly."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"दाल में कुछ काला\" का मुहावरे में क्या अर्थ है? (What does दाल में कुछ काला mean idiomatically?)",
+          "options": ["कोई संदेहजनक बात / Something suspicious", "खाना ख़राब होना / Food being spoiled", "दाल में मसाला होना / Spice in the lentils"],
+          "correctIndex": 0,
+          "explanation": "दाल में कुछ काला literally means 'something black in the lentils' — if you see a dark thing in your lentils, something is wrong. Figuratively, it means there is something suspicious or fishy going on. It is equivalent to the English 'something smells fishy' or 'there is something wrong here'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"लोहे के चने चबाना\" कब प्रयोग होता है? (When is लोहे के चने चबाना used?)",
+          "options": ["जब बहुत कठिनाई झेलनी पड़े (When facing extreme hardship)", "जब खाना कठोर हो (When food is hard)", "जब लोहा मिले (When iron is found)"],
+          "correctIndex": 0,
+          "explanation": "लोहे के चने चबाना means 'to chew iron chickpeas' — an obviously impossible and painful task. It is used to describe enduring extreme hardship, difficulty, or struggle. When someone has 'chewed iron chickpeas', they have been through very tough times to achieve something."
+        }
+      ]
+    }
+  ]
+}

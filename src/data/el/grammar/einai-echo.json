@@ -1,0 +1,137 @@
+{
+  "lessonId": "einai-echo",
+  "nameEn": "Είμαι (to be) & Έχω (to have)",
+  "nameEl": "Είμαι και Έχω",
+  "icon": "🔑",
+  "tier": "A1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "einai-conjugation",
+      "title": "Είμαι — To Be",
+      "explanation": "Είμαι (to be) is one of the most important Greek verbs. It is fully irregular and must be memorized. Full conjugation: εγώ είμαι (I am), εσύ είσαι (you are), αυτός/αυτή/αυτό είναι (he/she/it is), εμείς είμαστε (we are), εσείς είστε or είσαστε (you are — plural/formal), αυτοί/αυτές/αυτά είναι (they are). Use είμαι to: describe people and things (Είμαι κουρασμένος — I am tired), express nationality (Είμαι Έλληνας — I am Greek), state a profession (Είναι γιατρός — She is a doctor), and indicate location (Είμαστε στο σπίτι — We are at home).",
+      "tip": "The third-person singular and plural share the same form: είναι. Both αυτός είναι and αυτοί είναι use είναι.",
+      "examples": [
+        { "el": "Εγώ είμαι Έλληνας.", "en": "I am Greek.", "highlight": "είμαι" },
+        { "el": "Εσύ είσαι φοιτητής.", "en": "You are a student.", "highlight": "είσαι" },
+        { "el": "Αυτή είναι γιατρός.", "en": "She is a doctor.", "highlight": "είναι" },
+        { "el": "Εμείς είμαστε στο σπίτι.", "en": "We are at home.", "highlight": "είμαστε" },
+        { "el": "Εσείς είστε δάσκαλοι.", "en": "You (plural) are teachers.", "highlight": "είστε" },
+        { "el": "Αυτοί είναι φίλοι μου.", "en": "They are my friends.", "highlight": "είναι" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct form of είμαι for 'εσύ' (you)?",
+          "options": ["είμαι", "είσαι", "είναι", "είμαστε"],
+          "correctIndex": 1,
+          "explanation": "The second-person singular of είμαι is είσαι: Εσύ είσαι... (You are...)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is a teacher' in Greek?",
+          "options": ["Αυτή είμαι δασκάλα.", "Αυτή είσαι δασκάλα.", "Αυτή είναι δασκάλα.", "Αυτή είμαστε δασκάλα."],
+          "correctIndex": 2,
+          "explanation": "Third-person singular uses είναι: Αυτή είναι δασκάλα. Note that professions often drop the article in Greek."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses εμείς (we)?",
+          "options": ["Εμείς είναι στην Αθήνα.", "Εμείς είσαι στην Αθήνα.", "Εμείς είστε στην Αθήνα.", "Εμείς είμαστε στην Αθήνα."],
+          "correctIndex": 3,
+          "explanation": "The first-person plural of είμαι is είμαστε: Εμείς είμαστε στην Αθήνα. (We are in Athens.)"
+        }
+      ]
+    },
+    {
+      "sectionId": "echo-conjugation",
+      "title": "Έχω — To Have",
+      "explanation": "Έχω (to have) is a regular verb of the first conjugation group in Greek. Full conjugation: εγώ έχω (I have), εσύ έχεις (you have), αυτός/αυτή/αυτό έχει (he/she/it has), εμείς έχουμε (we have), εσείς έχετε (you have — plural/formal), αυτοί/αυτές/αυτά έχουν (they have). Use έχω to express: possession (Έχω ένα σπίτι — I have a house), obligation or things to do with έχω να + verb (Έχω να διαβάσω — I have to study / I have studying to do), and relationships (Έχω δύο αδέρφια — I have two siblings).",
+      "tip": "Έχω να + verb expresses obligation similar to 'I have to do something': Έχω να πάω στο σχολείο — I have to go to school.",
+      "examples": [
+        { "el": "Εγώ έχω ένα αυτοκίνητο.", "en": "I have a car.", "highlight": "έχω" },
+        { "el": "Εσύ έχεις αδέρφια;", "en": "Do you have siblings?", "highlight": "έχεις" },
+        { "el": "Αυτός έχει πολλά βιβλία.", "en": "He has many books.", "highlight": "έχει" },
+        { "el": "Εμείς έχουμε ένα σκύλο.", "en": "We have a dog.", "highlight": "έχουμε" },
+        { "el": "Εσείς έχετε δουλειά σήμερα;", "en": "Do you (plural) have work today?", "highlight": "έχετε" },
+        { "el": "Αυτοί έχουν να φύγουν νωρίς.", "en": "They have to leave early.", "highlight": "έχουν" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct form of έχω for 'αυτός' (he)?",
+          "options": ["έχω", "έχεις", "έχει", "έχουμε"],
+          "correctIndex": 2,
+          "explanation": "The third-person singular of έχω is έχει: Αυτός έχει... (He has...)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'We have a house'?",
+          "options": ["Εμείς έχουν ένα σπίτι.", "Εμείς έχουμε ένα σπίτι.", "Εμείς έχετε ένα σπίτι.", "Εμείς έχεις ένα σπίτι."],
+          "correctIndex": 1,
+          "explanation": "The first-person plural of έχω is έχουμε: Εμείς έχουμε ένα σπίτι. (We have a house.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Έχω να διαβάσω' mean?",
+          "options": ["I have a book.", "I have to study / I have studying to do.", "I have read the book.", "I want to read."],
+          "correctIndex": 1,
+          "explanation": "Έχω να + verb expresses obligation or a pending task: Έχω να διαβάσω = I have to study / I have studying to do."
+        }
+      ]
+    },
+    {
+      "sectionId": "practical-uses",
+      "title": "Είμαι and Έχω in Practice",
+      "explanation": "Combining είμαι and έχω lets you introduce yourself, describe people, and talk about possessions and family. Common patterns: Είμαι + [nationality/profession/adjective] for descriptions; Έχω + [number/article] + [noun] for possessions and family. Useful phrases — introductions: Είμαι ο Γιώργης, είμαι δάσκαλος και έχω δύο παιδιά (I am Giorgis, I am a teacher and I have two children). Describing others: Η Μαρία είναι γιατρός και έχει ένα μεγάλο σπίτι (Maria is a doctor and she has a big house). Asking about family: Έχεις αδέρφια; Ναι, έχω μια αδερφή — Do you have siblings? Yes, I have a sister.",
+      "tip": "When introducing yourself in Greek, you can combine both verbs naturally: Είμαι [name], είμαι [profession/nationality] και έχω [family/possessions].",
+      "examples": [
+        { "el": "Είμαι ο Νίκος και είμαι από την Αθήνα.", "en": "I am Nikos and I am from Athens.", "highlight": "Είμαι" },
+        { "el": "Είμαι φοιτητής και έχω πολλά μαθήματα.", "en": "I am a student and I have many classes.", "highlight": "Είμαι" },
+        { "el": "Η αδερφή μου είναι παντρεμένη και έχει δύο παιδιά.", "en": "My sister is married and has two children.", "highlight": "είναι" },
+        { "el": "Είμαστε Έλληνες και έχουμε σπίτι στη Θεσσαλονίκη.", "en": "We are Greek and we have a house in Thessaloniki.", "highlight": "Είμαστε" },
+        { "el": "Είσαι κουρασμένος; Έχεις πολλή δουλειά;", "en": "Are you tired? Do you have a lot of work?", "highlight": "Είσαι" },
+        { "el": "Αυτοί είναι πλούσιοι και έχουν πολλά σπίτια.", "en": "They are rich and they have many houses.", "highlight": "είναι" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you introduce yourself as a teacher with two children?",
+          "options": [
+            "Είμαι δάσκαλος και έχω δύο παιδιά.",
+            "Έχω δάσκαλος και είμαι δύο παιδιά.",
+            "Είμαι δύο παιδιά και έχω δάσκαλος.",
+            "Έχω είμαι δάσκαλος παιδιά."
+          ],
+          "correctIndex": 0,
+          "explanation": "Use είμαι for profession and έχω for possession: Είμαι δάσκαλος και έχω δύο παιδιά. (I am a teacher and I have two children.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'She is Greek and has a brother'?",
+          "options": [
+            "Αυτή έχει Ελληνίδα και είναι ένας αδερφός.",
+            "Αυτή είναι Ελληνίδα και έχει έναν αδερφό.",
+            "Αυτή είναι Ελληνίδα και είναι έναν αδερφό.",
+            "Αυτή έχει Ελληνίδα και έχει έναν αδερφό."
+          ],
+          "correctIndex": 1,
+          "explanation": "Nationality uses είναι, possession uses έχω: Αυτή είναι Ελληνίδα και έχει έναν αδερφό."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the most natural way to ask 'Are you married and do you have children?'",
+          "options": [
+            "Έχεις παντρεμένος και είσαι παιδιά;",
+            "Είσαι παιδιά και έχεις παντρεμένος;",
+            "Είσαι παντρεμένος/η και έχεις παιδιά;",
+            "Έχεις παντρεμένος/η και είσαι παιδιά;"
+          ],
+          "correctIndex": 2,
+          "explanation": "Marital status is a description using είμαι, and children are a possession using έχω: Είσαι παντρεμένος/η και έχεις παιδιά;"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "lessonId": "present-tense",
+  "nameEn": "Present Tense",
+  "nameHi": "वर्तमान काल",
+  "icon": "⏰",
+  "tier": "A1",
+  "prerequisites": ["nouns-gender", "pronouns"],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "simple-present",
+      "title": "Simple Present (सामान्य वर्तमान)",
+      "explanation": "The Hindi simple present tense expresses habitual actions and general truths. It is formed with the verb root + ता/ती/ते (imperfective participle) + हूँ/है/हैं (auxiliary verb). The participle ending agrees with the subject's gender and number: -ता for masculine singular, -ती for feminine singular/plural, and -ते for masculine plural. The auxiliary agrees with the person: हूँ (I), है (he/she/it/you informal), हो (you formal singular), हैं (we/they/you formal).",
+      "tip": "Think of the formula as: subject + object + verb root + ता/ती/ते + हूँ/है/हो/हैं. The ता ending carries the gender information, and the auxiliary carries the person information.",
+      "examples": [
+        { "hi": "मैं खाता हूँ", "en": "I eat (masculine speaker) — खा + ता + हूँ", "highlight": "खाता हूँ" },
+        { "hi": "मैं खाती हूँ", "en": "I eat (feminine speaker) — खा + ती + हूँ", "highlight": "खाती हूँ" },
+        { "hi": "वह पढ़ता है", "en": "He reads — पढ़ + ता + है", "highlight": "पढ़ता है" },
+        { "hi": "वे जाते हैं", "en": "They go (masculine) — जा + ते + हैं", "highlight": "जाते हैं" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How does a feminine speaker say 'I speak' using the verb बोलना?",
+          "options": ["मैं बोलती हूँ", "मैं बोलता हूँ", "मैं बोलते हैं"],
+          "correctIndex": 0,
+          "explanation": "A feminine speaker uses the -ती ending: बोल + ती + हूँ = बोलती हूँ. A masculine speaker would say बोलता हूँ. The auxiliary हूँ stays the same for both since the subject is मैं (I)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct simple present form for वे (they, masculine) with the verb लिखना (to write)?",
+          "options": ["वे लिखते हैं", "वे लिखता है", "वे लिखती हैं"],
+          "correctIndex": 0,
+          "explanation": "For masculine plural subjects, the participle ending is -ते and the auxiliary is हैं. So: लिख + ते + हैं = लिखते हैं. The full sentence is वे लिखते हैं (they write)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the simple present, what does the -ता/-ती/-ते ending agree with?",
+          "options": ["The subject's gender and number", "The object's gender", "The tense only"],
+          "correctIndex": 0,
+          "explanation": "The imperfective participle ending (-ता/-ती/-ते) agrees with the subject's gender and number: -ता for masculine singular, -ती for feminine (singular and plural), and -ते for masculine plural."
+        }
+      ]
+    },
+    {
+      "sectionId": "present-continuous",
+      "title": "Present Continuous (अपूर्ण वर्तमान)",
+      "explanation": "The present continuous tense describes actions happening right now. It is formed with the verb root + रहा/रही/रहे + हूँ/है/हो/हैं. The रहा form agrees with the subject's gender and number: रहा for masculine singular, रही for feminine singular/plural, and रहे for masculine plural. This tense is equivalent to the English '-ing' form: 'I am eating', 'She is reading'.",
+      "tip": "The present continuous is very common in everyday Hindi conversation. Whenever you want to describe what someone is doing right now, use verb root + रहा/रही/रहे + auxiliary.",
+      "examples": [
+        { "hi": "मैं खा रहा हूँ", "en": "I am eating (masculine speaker)", "highlight": "रहा" },
+        { "hi": "वह पढ़ रही है", "en": "She is reading — रही for feminine singular", "highlight": "रही" },
+        { "hi": "बच्चे खेल रहे हैं", "en": "The children are playing (masculine) — रहे for masculine plural", "highlight": "रहे" },
+        { "hi": "तुम क्या कर रहे हो?", "en": "What are you doing? — रहे with तुम (informal you)", "highlight": "कर रहे हो" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How does a feminine speaker say 'I am going' using the verb जाना?",
+          "options": ["मैं जा रही हूँ", "मैं जा रहा हूँ", "मैं जाती हूँ"],
+          "correctIndex": 0,
+          "explanation": "For a feminine speaker, the continuous form uses रही: जा + रही + हूँ = जा रही हूँ. This means 'I am going (right now)'. The option जाती हूँ would mean 'I go (habitually)'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is 'They (masculine) are sleeping' using the verb सोना?",
+          "options": ["वे सो रहे हैं", "वे सो रहा है", "वे सोते हैं"],
+          "correctIndex": 0,
+          "explanation": "For masculine plural subjects: सो + रहे + हैं = सो रहे हैं. The form रहे is used for masculine plural, and हैं is the auxiliary for third person plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between वह खाता है and वह खा रहा है?",
+          "options": ["खाता है is habitual; खा रहा है is happening now", "They mean the same thing", "खा रहा है is past tense"],
+          "correctIndex": 0,
+          "explanation": "वह खाता है (simple present) means 'he eats' as a habit or routine. वह खा रहा है (present continuous) means 'he is eating right now'. The continuous tense describes an action in progress at this moment."
+        }
+      ]
+    },
+    {
+      "sectionId": "negative-and-questions",
+      "title": "Negation & Questions in Present Tense",
+      "explanation": "To make a present tense sentence negative, add नहीं (not) before the verb. In the simple present, the auxiliary (हूँ/है/हैं) is usually dropped in negative sentences: मैं नहीं जाता (I don't go) instead of मैं नहीं जाता हूँ. In the continuous tense, the auxiliary is typically retained: मैं नहीं जा रहा हूँ (I am not going). To form yes/no questions, add क्या at the beginning of a statement or use rising intonation. For information questions, use question words like क्या (what), कौन (who), कहाँ (where), कब (when), कैसे (how), and क्यों (why).",
+      "tip": "In negative simple present sentences, dropping the auxiliary is standard in everyday Hindi. But in the continuous tense, keep the auxiliary for clarity. For questions, क्या at the start is the easiest method.",
+      "examples": [
+        { "hi": "मैं नहीं जाता", "en": "I don't go — नहीं before the verb, auxiliary dropped", "highlight": "नहीं" },
+        { "hi": "वह नहीं खा रही है", "en": "She is not eating — नहीं in continuous, auxiliary kept", "highlight": "नहीं" },
+        { "hi": "क्या तुम हिन्दी बोलते हो?", "en": "Do you speak Hindi? — क्या at the start makes it a question", "highlight": "क्या" },
+        { "hi": "तुम कहाँ जा रहे हो?", "en": "Where are you going? — कहाँ is the question word for 'where'", "highlight": "कहाँ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't read' (masculine speaker, verb: पढ़ना)?",
+          "options": ["मैं नहीं पढ़ता", "मैं पढ़ता नहीं हूँ", "मैं नहीं पढ़ रहा हूँ"],
+          "correctIndex": 0,
+          "explanation": "In the negative simple present, place नहीं before the verb and drop the auxiliary: मैं नहीं पढ़ता (I don't read). The option with रहा हूँ would mean 'I am not reading' — continuous tense, not simple present."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you turn वह जाता है (he goes) into a yes/no question?",
+          "options": ["क्या वह जाता है?", "वह क्या जाता है?", "वह जाता है क्या?"],
+          "correctIndex": 0,
+          "explanation": "The standard way to form a yes/no question is to place क्या at the beginning of the sentence: क्या वह जाता है? (Does he go?). While placing क्या at the end is sometimes heard colloquially, the beginning position is standard."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which question word means 'where'?",
+          "options": ["कहाँ", "कब", "क्यों"],
+          "correctIndex": 0,
+          "explanation": "कहाँ means 'where'. कब means 'when', and क्यों means 'why'. Other important question words include: क्या (what), कौन (who), and कैसे (how)."
+        }
+      ]
+    }
+  ]
+}

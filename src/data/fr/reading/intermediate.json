@@ -1,0 +1,115 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "La gastronomie française",
+      "titleEn": "French Gastronomy",
+      "difficulty": "B1",
+      "text": "La gastronomie française est reconnue dans le monde entier comme l'une des plus grandes cuisines du monde. En 2010, l'UNESCO a inscrit le repas gastronomique des Français au patrimoine culturel immatériel de l'humanité. Cette reconnaissance souligne l'importance des repas partagés dans la culture française. Un repas traditionnel français comprend plusieurs plats : une entrée, un plat principal, du fromage et un dessert. Les Français accordent beaucoup d'importance à la qualité des ingrédients et à la façon de les préparer. Chaque région de France possède ses spécialités culinaires : la bouillabaisse à Marseille, la choucroute en Alsace, le cassoulet dans le sud-ouest. Le vin joue également un rôle central dans la culture gastronomique française et chaque plat est souvent associé à un vin particulier. Les marchés locaux restent très populaires car ils permettent aux Français d'acheter des produits frais directement auprès des producteurs. Malgré l'influence croissante de la restauration rapide, la tradition du repas en famille reste profondément ancrée dans la société française.",
+      "wordGlossary": {
+        "gastronomie": "gastronomy, fine cuisine",
+        "patrimoine": "heritage, patrimony",
+        "immatériel": "intangible",
+        "entrée": "starter, first course",
+        "spécialités culinaires": "culinary specialties",
+        "producteurs": "producers, farmers",
+        "ancrée": "rooted, anchored",
+        "bouillabaisse": "traditional Provençal fish stew"
+      },
+      "questions": [
+        {
+          "question": "Quand l'UNESCO a-t-elle reconnu le repas gastronomique français ?",
+          "options": ["En 2000", "En 2005", "En 2010", "En 2015"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « En 2010, l'UNESCO a inscrit le repas gastronomique des Français au patrimoine culturel immatériel de l'humanité. »"
+        },
+        {
+          "question": "Quelle est la spécialité culinaire de l'Alsace mentionnée dans le texte ?",
+          "options": ["La bouillabaisse", "Le cassoulet", "La choucroute", "Le coq au vin"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « la choucroute en Alsace. »"
+        },
+        {
+          "question": "Selon le texte, pourquoi les marchés locaux sont-ils populaires ?",
+          "options": ["Parce qu'ils sont moins chers que les supermarchés", "Parce qu'ils permettent d'acheter des produits frais auprès des producteurs", "Parce qu'ils sont ouverts tous les jours", "Parce qu'ils proposent des plats cuisinés"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « ils permettent aux Français d'acheter des produits frais directement auprès des producteurs. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Les vacances en France",
+      "titleEn": "Vacations in France",
+      "difficulty": "B1",
+      "text": "La France est la première destination touristique mondiale, accueillant chaque année plus de 90 millions de visiteurs étrangers. Ce succès s'explique par la diversité exceptionnelle du pays : des plages de la Côte d'Azur aux montagnes des Alpes, en passant par les châteaux de la Loire et les vignobles de Bordeaux. Paris reste la ville la plus visitée, attirant des millions de touristes qui viennent admirer la tour Eiffel, le Louvre et Notre-Dame de Paris. Cependant, de nombreux voyageurs cherchent désormais à quitter les circuits touristiques classiques pour découvrir la France rurale et authentique. Les gîtes et les chambres d'hôtes offrent une alternative populaire aux hôtels traditionnels. En été, le littoral atlantique et méditerranéen se remplit de vacanciers français et étrangers. Les Français eux-mêmes voyagent beaucoup à l'intérieur du pays pendant les grandes vacances de juillet et août. Le tourisme vert, axé sur la découverte de la nature et des traditions locales, connaît une popularité croissante depuis quelques années. Les régions comme la Bretagne, la Provence et le Périgord proposent un patrimoine culturel et naturel remarquable.",
+      "wordGlossary": {
+        "destination touristique": "tourist destination",
+        "vignobles": "vineyards",
+        "circuits touristiques": "tourist routes, tours",
+        "gîtes": "self-catering holiday cottages",
+        "chambres d'hôtes": "bed and breakfast (B&B)",
+        "littoral": "coastline",
+        "vacanciers": "holidaymakers",
+        "tourisme vert": "eco-tourism, green tourism"
+      },
+      "questions": [
+        {
+          "question": "Combien de visiteurs étrangers la France accueille-t-elle chaque année ?",
+          "options": ["Plus de 50 millions", "Plus de 70 millions", "Plus de 90 millions", "Plus de 110 millions"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « accueillant chaque année plus de 90 millions de visiteurs étrangers. »"
+        },
+        {
+          "question": "Selon le texte, que cherchent de nombreux voyageurs aujourd'hui ?",
+          "options": ["Des hôtels de luxe à Paris", "Des plages animées sur la Côte d'Azur", "À quitter les circuits touristiques classiques pour découvrir la France rurale", "Des billets moins chers pour visiter le Louvre"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « de nombreux voyageurs cherchent désormais à quitter les circuits touristiques classiques pour découvrir la France rurale et authentique. »"
+        },
+        {
+          "question": "Quand est-ce que les Français voyagent surtout à l'intérieur du pays ?",
+          "options": ["En décembre et janvier", "En mars et avril", "En juillet et août", "En octobre et novembre"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « pendant les grandes vacances de juillet et août. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Le système éducatif français",
+      "titleEn": "The French Education System",
+      "difficulty": "B1",
+      "text": "Le système éducatif français est l'un des plus structurés et des plus centralisés au monde. L'école est obligatoire de 3 à 16 ans, mais beaucoup d'élèves continuent leurs études bien au-delà de cet âge. Le parcours scolaire commence par l'école maternelle, suivie de l'école primaire, puis du collège et enfin du lycée. À la fin du lycée, les élèves passent le baccalauréat, un examen national qui détermine l'accès à l'enseignement supérieur. La France possède un réseau d'universités publiques accessibles à tous les bacheliers moyennant des frais d'inscription modestes. Mais elle dispose aussi de grandes écoles très sélectives, comme l'École Polytechnique et Sciences Po, qui forment les élites du pays. L'enseignement laïc est un principe fondamental du système français, ce qui signifie que les signes religieux ostentatoires sont interdits dans les établissements scolaires publics. La réforme du baccalauréat en 2021 a introduit un contrôle continu pour une partie de la note finale. Le gouvernement investit massivement dans l'éducation, qui représente l'un des postes budgétaires les plus importants de l'État. Malgré ses qualités, le système est parfois critiqué pour son manque de flexibilité et pour les inégalités persistantes entre les établissements.",
+      "wordGlossary": {
+        "obligatoire": "compulsory, mandatory",
+        "baccalauréat": "the French high school diploma (le bac)",
+        "enseignement supérieur": "higher education",
+        "bacheliers": "students who have passed the baccalauréat",
+        "grandes écoles": "elite French higher education institutions",
+        "laïc": "secular, non-religious",
+        "ostentatoires": "ostentatious, conspicuous",
+        "contrôle continu": "continuous assessment"
+      },
+      "questions": [
+        {
+          "question": "À quel âge l'école devient-elle obligatoire en France ?",
+          "options": ["À 2 ans", "À 3 ans", "À 5 ans", "À 6 ans"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « L'école est obligatoire de 3 à 16 ans. »"
+        },
+        {
+          "question": "Qu'est-ce que le baccalauréat ?",
+          "options": ["Un diplôme universitaire", "Un examen national à la fin du lycée", "Une école d'élite", "Un type de collège"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « les élèves passent le baccalauréat, un examen national qui détermine l'accès à l'enseignement supérieur. »"
+        },
+        {
+          "question": "Quelle critique est formulée contre le système éducatif français dans le texte ?",
+          "options": ["Il coûte trop cher aux familles", "Il n'est pas assez rigoureux", "Il manque de flexibilité et présente des inégalités entre établissements", "Il ne prépare pas les élèves au marché du travail"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « le système est parfois critiqué pour son manque de flexibilité et pour les inégalités persistantes entre les établissements. »"
+        }
+      ]
+    }
+  ]
+}

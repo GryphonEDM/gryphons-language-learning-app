@@ -1,0 +1,116 @@
+{
+  "lessonId": "honorifics-formality",
+  "nameEn": "Honorifics & Formality",
+  "nameHi": "आदरसूचक और औपचारिकता",
+  "icon": "🙏",
+  "tier": "B1",
+  "prerequisites": ["verb-conjugation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "three-levels-of-you",
+      "title": "Three Levels of 'You': तू, तुम, आप",
+      "explanation": "Hindi has three distinct second-person pronouns, each carrying a different level of formality and respect. तू is the most intimate and informal form, used between very close friends, lovers, with small children, or when addressing God in prayer. Using तू with a stranger or elder is considered rude. तुम is the informal-but-friendly form, used between friends, with younger people, or in casual social situations. It occupies the middle ground and is the most commonly used form among peers. आप is the formal and respectful form, used with elders, strangers, teachers, authority figures, in-laws, and in professional settings. It is also used as a generic third person ('one') in formal speech. Using आप shows respect and social awareness. In many North Indian families, children address parents with आप, while in others तुम is acceptable. The choice of pronoun is deeply tied to social relationships, age differences, and regional customs. Getting it wrong can cause offense or awkwardness, so when in doubt, always default to आप.",
+      "tip": "When meeting someone for the first time, always use आप. You can switch to तुम if the other person invites informality or if you become friends. Reserve तू for intimate relationships or prayer. Remember: using a more respectful form is never offensive, but using a less respectful form can be.",
+      "examples": [
+        { "hi": "तू कहाँ जा रहा है?", "en": "Where are you going? (intimate/very informal)", "highlight": "तू" },
+        { "hi": "तुम कहाँ जा रहे हो?", "en": "Where are you going? (informal/friendly)", "highlight": "तुम" },
+        { "hi": "आप कहाँ जा रहे हैं?", "en": "Where are you going? (formal/respectful)", "highlight": "आप" },
+        { "hi": "हे भगवान, तू मेरी रक्षा कर।", "en": "O God, protect me. (तू used in prayer)", "highlight": "तू" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun should you use when speaking to a stranger in a shop?",
+          "options": ["आप", "तुम", "तू"],
+          "correctIndex": 0,
+          "explanation": "With strangers, always use आप to show respect and politeness. तुम would be too informal, and तू would be considered rude when used with someone you don't know."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In which context is तू commonly used without being considered rude?",
+          "options": ["In prayer, or between lovers/very close friends", "In business meetings", "When speaking to elders"],
+          "correctIndex": 0,
+          "explanation": "तू is appropriate in intimate contexts — between lovers, very close childhood friends, with small children, or when addressing God. Using it in business settings or with elders would be disrespectful."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the safest pronoun to use if you are unsure about the appropriate level of formality?",
+          "options": ["आप", "तुम", "तू"],
+          "correctIndex": 0,
+          "explanation": "When in doubt, always default to आप. Using a more respectful form is never offensive, but using तुम or तू when आप is expected can cause awkwardness or offense. You can always shift to a less formal form later if invited to."
+        }
+      ]
+    },
+    {
+      "sectionId": "verb-agreement-with-formality",
+      "title": "Verb Forms Change with Formality Level",
+      "explanation": "The choice of तू, तुम, or आप directly affects verb conjugation. Each pronoun requires a different verb form, and using the wrong form is as jarring as using the wrong pronoun. For the present tense: तू जाता है (you go, intimate), तुम जाते हो (you go, informal), आप जाते हैं (you go, formal). Notice that तू takes singular verb forms + है, तुम takes plural verb forms + हो, and आप takes plural verb forms + हैं. For imperatives (commands/requests): तू जा (go! — blunt), तुम जाओ (go — casual request), आप जाइए (please go — polite request). The imperative forms show the starkest difference: तू-imperatives are bare roots, तुम-imperatives add -ओ, and आप-imperatives add -इए/-इये. There is also a subjunctive form used for extra politeness: आप जाएँ (if you would go / please go). Mixing pronouns and verb forms — such as saying आप जाओ — is a common learner mistake and sounds very unnatural.",
+      "tip": "A quick formula: तू → singular verb + है, तुम → plural verb + हो, आप → plural verb + हैं. For commands: तू → bare root, तुम → root + ओ, आप → root + इए. Never mix them!",
+      "examples": [
+        { "hi": "तू बैठ। / तुम बैठो। / आप बैठिए।", "en": "Sit. (intimate) / Sit. (informal) / Please sit. (formal)", "highlight": "बैठ / बैठो / बैठिए" },
+        { "hi": "तू क्या करता है?", "en": "What do you do? (intimate, masculine)", "highlight": "करता है" },
+        { "hi": "तुम क्या करते हो?", "en": "What do you do? (informal, masculine)", "highlight": "करते हो" },
+        { "hi": "आप क्या करते हैं?", "en": "What do you do? (formal, masculine)", "highlight": "करते हैं" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb form correctly pairs with आप?",
+          "options": ["आप खाते हैं", "आप खाता है", "आप खाते हो"],
+          "correctIndex": 0,
+          "explanation": "आप always takes plural verb forms with हैं as the auxiliary. खाते हैं is correct. खाता है would pair with तू (singular), and खाते हो would pair with तुम."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you politely say 'Please come' using आप?",
+          "options": ["आप आइए।", "आप आओ।", "आप आ।"],
+          "correctIndex": 0,
+          "explanation": "The polite imperative for आप adds -इए to the root: आइए। आओ is the तुम-level imperative, and आ is the तू-level imperative. Using आओ with आप would be a mismatch."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is wrong with the sentence 'आप जाओ'?",
+          "options": ["जाओ is the तुम-form imperative; it should be जाइए with आप", "जाओ is the तू-form; it should be जा", "Nothing is wrong; this is correct Hindi"],
+          "correctIndex": 0,
+          "explanation": "आप requires the polite imperative form जाइए, not जाओ. जाओ pairs with तुम. Mixing आप with a तुम-level verb form is a common mistake that sounds unnatural and contradictory to Hindi speakers."
+        }
+      ]
+    },
+    {
+      "sectionId": "honorific-suffixes-and-titles",
+      "title": "Honorific Suffixes: जी, साहब, श्री, and More",
+      "explanation": "Beyond pronouns and verb forms, Hindi uses honorific suffixes and titles to show respect. The most universal is जी, which can be added after almost any name or title: मोहन जी, माता जी (respected mother), पिता जी (respected father), गुरु जी (respected teacher), हाँ जी (yes, respectfully). जी transforms any address into a respectful one and is used across all levels of society. साहब (sir/boss) is used to address or refer to a man with authority: मालिक साहब, डॉक्टर साहब. Its feminine equivalent is साहिबा or मैडम. श्री (Mr.) and श्रीमती (Mrs.) are formal prefixes used in official contexts: श्री नरेंद्र मोदी, श्रीमती इंदिरा गांधी. In professional settings, titles like डॉक्टर, प्रोफ़ेसर, and सर/मैम are common. Additionally, kinship terms are used as respectful address even for non-relatives: भैया (brother), दीदी (elder sister), अंकल, आंटी. Calling a shopkeeper भैया or a older woman आंटी is perfectly normal and shows friendly respect.",
+      "tip": "When in doubt, add जी after the person's name — it is never wrong and always polite. Even a simple हाँ जी (yes, respectfully) or नहीं जी (no, respectfully) shows good manners. Using kinship terms like भैया or दीदी with strangers is a warm, Hindi way of showing respect.",
+      "examples": [
+        { "hi": "नमस्ते, शर्मा जी!", "en": "Hello, Mr. Sharma! (जी added for respect)", "highlight": "जी" },
+        { "hi": "पिता जी, आप कैसे हैं?", "en": "Father, how are you? (respectful address)", "highlight": "पिता जी" },
+        { "hi": "श्रीमती गुप्ता आज नहीं आएँगी।", "en": "Mrs. Gupta will not come today. (formal prefix)", "highlight": "श्रीमती" },
+        { "hi": "भैया, यह कितने का है?", "en": "Brother, how much is this? (kinship term for stranger)", "highlight": "भैया" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the most versatile and commonly used Hindi honorific suffix?",
+          "options": ["जी", "साहब", "श्री"],
+          "correctIndex": 0,
+          "explanation": "जी is the most universal honorific in Hindi. It can be added after any name, title, or even words like हाँ (yes) and नहीं (no). It is appropriate in virtually all situations and never sounds out of place."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why might you call a shopkeeper 'भैया' even though he is not your brother?",
+          "options": ["It is a respectful and friendly way to address someone in Hindi", "It is required by grammar", "It means 'sir' in formal Hindi"],
+          "correctIndex": 0,
+          "explanation": "Using kinship terms like भैया (brother), दीदी (elder sister), or आंटी (auntie) with strangers is a culturally normal practice in Hindi. It creates a warm, respectful tone and is very common in everyday interactions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct formal way to refer to a married woman in official Hindi?",
+          "options": ["श्रीमती", "श्री", "सुश्री"],
+          "correctIndex": 0,
+          "explanation": "श्रीमती is the formal prefix for a married woman (equivalent to 'Mrs.'). श्री is for men (Mr.), and सुश्री is a gender-neutral or unmarried woman prefix (equivalent to 'Ms.')."
+        }
+      ]
+    }
+  ]
+}

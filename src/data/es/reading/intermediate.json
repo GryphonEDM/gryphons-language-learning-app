@@ -1,0 +1,115 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Un viaje a México",
+      "titleEn": "A Trip to Mexico",
+      "difficulty": "B1",
+      "text": "El año pasado, viajé a México con mi amiga Laura. Fue un viaje increíble. Llegamos a Ciudad de México un lunes por la mañana y enseguida fuimos al centro histórico. Visitamos el Zócalo, la plaza principal, y admiramos la catedral colonial. Al día siguiente, tomamos un autobús y viajamos a Teotihuacán para ver las pirámides. Subimos la Pirámide del Sol y las vistas desde arriba fueron espectaculares. Durante la semana, probamos muchas comidas típicas: tacos, enchiladas y tamales. Un día, fuimos a un mercado local donde compramos recuerdos para nuestras familias. La gente fue muy simpática y nos ayudó mucho cuando tuvimos problemas con las direcciones. Volví a casa con muchísimos recuerdos y ya tengo ganas de volver a México algún día.",
+      "wordGlossary": {
+        "viajé": "I travelled (preterite)",
+        "llegamos": "we arrived (preterite)",
+        "enseguida": "straight away / immediately",
+        "admiramos": "we admired (preterite)",
+        "subimos": "we climbed (preterite)",
+        "probamos": "we tried / tasted (preterite)",
+        "recuerdos": "souvenirs / memories",
+        "tengo ganas de": "I feel like / I can't wait to"
+      },
+      "questions": [
+        {
+          "question": "What did the narrator and Laura do on their second day in Mexico?",
+          "options": ["They visited a local market", "They went to see the pyramids at Teotihuacán", "They took a cooking class", "They explored the colonial cathedral"],
+          "correctIndex": 1,
+          "explanation": "The text says 'Al día siguiente, tomamos un autobús y viajamos a Teotihuacán para ver las pirámides' — the next day they took a bus to Teotihuacán to see the pyramids."
+        },
+        {
+          "question": "Which of the following foods did they NOT mention eating?",
+          "options": ["Tacos", "Enchiladas", "Tamales", "Churros"],
+          "correctIndex": 3,
+          "explanation": "The text mentions 'tacos, enchiladas y tamales' as the typical foods they tried. Churros are not mentioned."
+        },
+        {
+          "question": "Why were the local people helpful?",
+          "options": ["Because the narrator spoke perfect Spanish", "Because they worked as tour guides", "Because the narrator and Laura had problems with directions", "Because they wanted to sell souvenirs"],
+          "correctIndex": 2,
+          "explanation": "The text says 'nos ayudó mucho cuando tuvimos problemas con las direcciones' — the people helped a lot when they had problems with directions."
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "La vida universitaria",
+      "titleEn": "University Life",
+      "difficulty": "B1",
+      "text": "Me llamo Diego y estudio Ingeniería en la Universidad de Madrid. La vida universitaria es muy diferente a la vida en el instituto. Tengo más libertad pero también más responsabilidad. Cada día asisto a varias clases y por las tardes estudio en la biblioteca o en mi piso compartido. Vivo con tres compañeros de piso y nos llevamos muy bien. Cocinamos juntos por las noches y a veces salimos a tomar algo los fines de semana. El próximo año haré unas prácticas en una empresa de tecnología. También me gustaría estudiar un semestre en el extranjero. Mi sueño es vivir y trabajar en otro país después de terminar la carrera. Creo que la experiencia internacional será muy importante para mi futuro profesional.",
+      "wordGlossary": {
+        "asisto": "I attend",
+        "piso compartido": "shared flat / apartment",
+        "nos llevamos bien": "we get along well",
+        "a veces": "sometimes",
+        "haré": "I will do (future tense)",
+        "prácticas": "work placement / internship",
+        "en el extranjero": "abroad",
+        "carrera": "university degree / career"
+      },
+      "questions": [
+        {
+          "question": "Where does Diego study in the afternoons?",
+          "options": ["In a café", "At home alone", "In the library or in his shared flat", "In a study group on campus"],
+          "correctIndex": 2,
+          "explanation": "The text says 'estudio en la biblioteca o en mi piso compartido' — he studies in the library or in his shared flat."
+        },
+        {
+          "question": "What is Diego planning to do next year?",
+          "options": ["Travel around Spain", "Do a work placement at a technology company", "Move to another country", "Change his degree"],
+          "correctIndex": 1,
+          "explanation": "The text says 'El próximo año haré unas prácticas en una empresa de tecnología' — next year he will do a work placement at a technology company."
+        },
+        {
+          "question": "What is Diego's dream after finishing his degree?",
+          "options": ["To open his own company in Madrid", "To become a professor", "To live and work in another country", "To travel around South America"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Mi sueño es vivir y trabajar en otro país después de terminar la carrera' — his dream is to live and work in another country after finishing his degree."
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Receta española: gazpacho",
+      "titleEn": "Spanish Recipe: Gazpacho",
+      "difficulty": "B1",
+      "text": "El gazpacho es una sopa fría típica del sur de España, especialmente de Andalucía. Es perfecta para los días de verano cuando hace mucho calor. Para preparar un buen gazpacho necesitas los siguientes ingredientes: tomates maduros, pepino, pimiento verde, ajo, aceite de oliva, vinagre y sal. Primero, lava y corta todas las verduras en trozos grandes. Luego, ponlas en una batidora junto con el ajo, el aceite y el vinagre. Tritura todo durante unos minutos hasta obtener una mezcla suave y homogénea. Si la sopa está demasiado espesa, añade un poco de agua fría. Prueba el sabor y añade sal o vinagre según tu gusto. Finalmente, mete el gazpacho en el frigorífico durante al menos dos horas antes de servir. Sírvelo muy frío y decóralo con trocitos de pepino o pimiento por encima.",
+      "wordGlossary": {
+        "sopa fría": "cold soup",
+        "maduros": "ripe",
+        "pepino": "cucumber",
+        "pimiento": "pepper (vegetable)",
+        "batidora": "blender",
+        "tritura": "blend / grind (imperative)",
+        "espesa": "thick",
+        "frigorífico": "refrigerator / fridge"
+      },
+      "questions": [
+        {
+          "question": "Where in Spain does gazpacho originate?",
+          "options": ["Catalonia", "Andalusia", "The Basque Country", "Madrid"],
+          "correctIndex": 1,
+          "explanation": "The text says 'típica del sur de España, especialmente de Andalucía' — typical of the south of Spain, especially Andalusia."
+        },
+        {
+          "question": "What should you do if the soup is too thick?",
+          "options": ["Add more tomatoes", "Add more vinegar", "Add a little cold water", "Blend it for longer"],
+          "correctIndex": 2,
+          "explanation": "The text says 'Si la sopa está demasiado espesa, añade un poco de agua fría' — if the soup is too thick, add a little cold water."
+        },
+        {
+          "question": "How long should gazpacho be kept in the fridge before serving?",
+          "options": ["At least thirty minutes", "At least one hour", "At least two hours", "Overnight"],
+          "correctIndex": 2,
+          "explanation": "The text says 'mete el gazpacho en el frigorífico durante al menos dos horas antes de servir' — put the gazpacho in the fridge for at least two hours before serving."
+        }
+      ]
+    }
+  ]
+}

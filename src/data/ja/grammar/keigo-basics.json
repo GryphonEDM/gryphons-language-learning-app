@@ -1,0 +1,191 @@
+{
+  "lessonId": "keigo-basics",
+  "nameEn": "Keigo Basics",
+  "nameJa": "敬語の基本",
+  "icon": "🎩",
+  "tier": "B2",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 35,
+  "sections": [
+    {
+      "sectionId": "teineigo",
+      "title": "丁寧語 — Polite Speech",
+      "explanation": "丁寧語 (teineigo) is the most basic level of keigo and is what most learners encounter first. It involves using です (desu) and ます (masu) forms to show general politeness to the listener. You likely already use this: 食べます (tabemasu) instead of 食べる (taberu), きれいです (kirei desu) instead of きれいだ (kirei da). 丁寧語 does not elevate or humble anyone — it simply makes speech polite and appropriate for everyday formal situations. Key forms: verb ます form (行きます, 食べます), noun/な-adjective + です (学生です, 静かです), い-adjective + です (大きいです). Past tense: 行きました, 学生でした, 大きかったです. 丁寧語 is used with strangers, acquaintances, in business settings, and whenever you want to be polite.",
+      "tip": "丁寧語 is the 'default polite' mode. When in doubt, use です/ます. Switching between plain form (タメ口, tameguchi) and 丁寧語 depends on your relationship — use 丁寧語 with anyone you're not close to. Mixing plain and polite forms in the same sentence sounds unnatural.",
+      "examples": [
+        { "ja": "私は田中です。よろしくお願いします。", "en": "I am Tanaka. Nice to meet you.", "highlight": "です" },
+        { "ja": "明日、会議があります。", "en": "There is a meeting tomorrow.", "highlight": "あります" },
+        { "ja": "このケーキはおいしいです。", "en": "This cake is delicious.", "highlight": "おいしいです" },
+        { "ja": "昨日、映画を見ました。", "en": "I watched a movie yesterday.", "highlight": "見ました" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is 丁寧語 (teineigo)?",
+          "options": [
+            "Speech that humbles yourself",
+            "Speech that elevates the other person",
+            "General polite speech using です/ます",
+            "Casual speech between friends"
+          ],
+          "correctIndex": 2,
+          "explanation": "丁寧語 is general polite speech achieved through です and ます forms. It doesn't elevate or humble anyone — it simply makes speech appropriately polite for formal situations."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to 丁寧語: 明日、東京に行く。",
+          "options": [
+            "明日、東京にいらっしゃいます。",
+            "明日、東京に参ります。",
+            "明日、東京に行きます。",
+            "明日、東京に行かれます。"
+          ],
+          "correctIndex": 2,
+          "explanation": "行きます is the ます form (丁寧語) of 行く. いらっしゃいます would be 尊敬語 (honorific) and 参ります would be 謙譲語 (humble)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When should you use 丁寧語?",
+          "options": [
+            "Only with your boss",
+            "With strangers, acquaintances, and in formal situations",
+            "Only in written Japanese",
+            "Only with elderly people"
+          ],
+          "correctIndex": 1,
+          "explanation": "丁寧語 is the standard polite level used with strangers, acquaintances, coworkers, and in any formal or semi-formal situation. It is the safe default for most interactions."
+        }
+      ]
+    },
+    {
+      "sectionId": "kenjougo",
+      "title": "謙譲語 — Humble Speech",
+      "explanation": "謙譲語 (kenjougo) is humble speech — you lower yourself (or your in-group) to show respect to the other person. You use 謙譲語 for YOUR OWN actions when speaking to or about someone of higher status. Key humble verbs: 行く/来る → 参る (mairu, I go/come), いる → おる (oru, I am), する → いたす (itasu, I do), 言う → 申す (mousu, I say), 食べる/飲む → いただく (itadaku, I eat/drink), 見る → 拝見する (haiken suru, I look at), 会う → お目にかかる (ome ni kakaru, I meet), 知る → 存じる (zonjiru, I know), もらう → いただく (itadaku, I receive), あげる → 差し上げる (sashiageru, I give). Pattern for regular verbs: お + ます stem + する/いたす: お持ちする (I'll carry it for you), お送りいたします (I will send it — very polite).",
+      "tip": "謙譲語 is ONLY for your own actions — never use it for the other person's actions! Saying 先生が参りました (The teacher humbly came) is wrong and disrespectful. The teacher's actions use 尊敬語, not 謙譲語. Think: 'I humble myself to raise you up.'",
+      "examples": [
+        { "ja": "明日、そちらに参ります。", "en": "I will come to your place tomorrow. (humble)", "highlight": "参ります" },
+        { "ja": "私は田中と申します。", "en": "My name is Tanaka. (humble: I am called...)", "highlight": "申します" },
+        { "ja": "資料を拝見しました。", "en": "I looked at the documents. (humble)", "highlight": "拝見しました" },
+        { "ja": "お荷物をお持ちいたします。", "en": "I will carry your luggage. (humble + polite)", "highlight": "お持ちいたします" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the humble form of 行く (iku, to go)?",
+          "options": ["いらっしゃる", "参る", "おいでになる", "行かれる"],
+          "correctIndex": 1,
+          "explanation": "参る (mairu) is the humble form of 行く and 来る. Use it for your own going/coming when speaking to superiors: 私が参ります (I will go/come)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When do you use 謙譲語?",
+          "options": [
+            "To describe the other person's actions respectfully",
+            "To describe your own actions humbly when speaking to superiors",
+            "To speak casually with friends",
+            "To describe anyone's actions politely"
+          ],
+          "correctIndex": 1,
+          "explanation": "謙譲語 is used exclusively for your own actions (or your in-group's actions) to humble yourself when speaking with or about superiors. Never use it for the other person's actions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the humble form of 食べる/飲む?",
+          "options": ["召し上がる", "いただく", "お食べになる", "食べられる"],
+          "correctIndex": 1,
+          "explanation": "いただく (itadaku) is the humble form of 食べる and 飲む. いただきます before meals means 'I humbly receive (this food).' 召し上がる is the honorific form (for the other person's eating)."
+        }
+      ]
+    },
+    {
+      "sectionId": "sonkeigo",
+      "title": "尊敬語 — Honorific Speech",
+      "explanation": "尊敬語 (sonkeigo) is honorific speech — you elevate the other person's actions to show respect. You use 尊敬語 for the OTHER PERSON'S actions (a superior, customer, elder). Key honorific verbs: 行く/来る/いる → いらっしゃる (irassharu), 食べる/飲む → 召し上がる (meshiagaru), する → なさる (nasaru), 言う → おっしゃる (ossharu), 見る → ご覧になる (goran ni naru), 知る → ご存じ (gozonji), くれる → くださる (kudasaru). Pattern for regular verbs: お + ます stem + になる: お読みになる (you read — honorific), お帰りになる (you return — honorific). Another pattern: passive form as honorific: 読まれる, 行かれる (less formal than お～になる but still respectful).",
+      "tip": "尊敬語 is ONLY for the other person's (superior's) actions — never use it for yourself! Common mistake: いらっしゃいませ (welcome!) is 尊敬語 — the shop is honoring the customer. The お～になる pattern works for most verbs: お座りになる (please sit), お待ちになる (you wait). Using the passive form (行かれる) as honorific is simpler but slightly less formal.",
+      "examples": [
+        { "ja": "先生はもういらっしゃいますか？", "en": "Is the teacher here already? (honorific)", "highlight": "いらっしゃいます" },
+        { "ja": "社長がそうおっしゃいました。", "en": "The company president said so. (honorific)", "highlight": "おっしゃいました" },
+        { "ja": "どうぞ召し上がってください。", "en": "Please eat/drink. (honorific)", "highlight": "召し上がって" },
+        { "ja": "この資料をご覧になりましたか？", "en": "Have you looked at this document? (honorific)", "highlight": "ご覧になりました" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the honorific form of 言う (iu, to say)?",
+          "options": ["申す", "おっしゃる", "言われる", "言いなさる"],
+          "correctIndex": 1,
+          "explanation": "おっしゃる (ossharu) is the honorific form of 言う, used for a superior's speech: 先生がおっしゃった (The teacher said). 申す (mousu) is the humble form for your own speech."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the honorific form of いる (to be/exist)?",
+          "options": ["おる", "いらっしゃる", "おいでる", "いられる"],
+          "correctIndex": 1,
+          "explanation": "いらっしゃる (irassharu) is the honorific form of いる, 行く, and 来る. It is used for a superior's existence, going, or coming: 社長はいらっしゃいますか？ (Is the president here?)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you make a regular verb honorific using the お～になる pattern?",
+          "options": [
+            "お + dictionary form + になる",
+            "お + ます stem + になる",
+            "お + て form + になる",
+            "お + past form + になる"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pattern is: お + ます stem + になる. 読む → お読みになる (you read — honorific), 帰る → お帰りになる (you return — honorific)."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-keigo",
+      "title": "Common Keigo Expressions",
+      "explanation": "Certain keigo expressions appear constantly in daily Japanese life. In shops and restaurants: いらっしゃいませ (Welcome!), 少々お待ちください (Please wait a moment), かしこまりました (Certainly / Understood — humble). On the phone: 失礼いたします (Excuse me — humble, used when hanging up), ～と申しますが (My name is... — humble). In business emails: お忙しいところ恐れ入りますが (I'm sorry to bother you when you're busy), ご確認のほどよろしくお願いいたします (I kindly ask you to confirm), お世話になっております (Thank you for your continued support — standard business greeting). Self-introduction: ～と申します (My name is... — humble). When leaving: お先に失礼します (Excuse me for leaving before you — said when leaving work before colleagues).",
+      "tip": "You don't need to produce perfect keigo immediately — understanding it is the first step. Focus on recognizing these common phrases. In Japan, even native speakers sometimes struggle with keigo! Start with the most common ones: いらっしゃいませ, 失礼します, かしこまりました, お世話になっております.",
+      "examples": [
+        { "ja": "お世話になっております。", "en": "Thank you for your continued support. (business greeting)", "highlight": "お世話になっております" },
+        { "ja": "かしこまりました。すぐにお持ちします。", "en": "Certainly. I'll bring it right away.", "highlight": "かしこまりました" },
+        { "ja": "お先に失礼します。", "en": "Excuse me for leaving before you. (leaving work)", "highlight": "お先に失礼します" },
+        { "ja": "少々お待ちくださいませ。", "en": "Please wait a moment. (very polite)", "highlight": "お待ちくださいませ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does かしこまりました mean?",
+          "options": [
+            "I'm sorry",
+            "Certainly / Understood (humble)",
+            "Welcome",
+            "Thank you very much"
+          ],
+          "correctIndex": 1,
+          "explanation": "かしこまりました is a humble way to say 'certainly' or 'understood,' commonly used by service staff responding to customer requests. It is more formal than わかりました."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When leaving work before your colleagues, what do you say?",
+          "options": [
+            "さようなら",
+            "お先に失礼します",
+            "お世話になっております",
+            "いらっしゃいませ"
+          ],
+          "correctIndex": 1,
+          "explanation": "お先に失礼します (osaki ni shitsurei shimasu) means 'excuse me for leaving before you.' It's the standard phrase when leaving the office before your colleagues. They typically respond with お疲れ様です (otsukaresama desu)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the standard business email/phone greeting?",
+          "options": [
+            "こんにちは",
+            "お世話になっております",
+            "いらっしゃいませ",
+            "失礼いたします"
+          ],
+          "correctIndex": 1,
+          "explanation": "お世話になっております (osewa ni natte orimasu) is the standard business greeting used at the start of emails and phone calls. It roughly means 'Thank you for your continued support/relationship.'"
+        }
+      ]
+    }
+  ]
+}

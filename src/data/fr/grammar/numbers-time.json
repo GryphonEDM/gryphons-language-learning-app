@@ -1,0 +1,150 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers & Time",
+  "nameFr": "Les nombres et l'heure",
+  "icon": "🔢",
+  "tier": "A1",
+  "prerequisites": ["questions-negation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "numbers",
+      "title": "Cardinal Numbers",
+      "explanation": "French numbers follow predictable patterns up to 69. From 70, French uses arithmetic: 70 is soixante-dix (60+10), 71 is soixante et onze, 72 is soixante-douze, and so on to 79. 80 is quatre-vingts (4×20) — the -s drops when followed by another number: quatre-vingt-un (81). 90 is quatre-vingt-dix, continuing to 99. 100 is cent; multiples of 100 take -s only when not followed by another number: deux cents (200) but deux cent vingt (220). 1000 is mille and never takes -s. Note: Belgian and Swiss French use septante (70), octante (80), and nonante (90) instead.",
+      "tip": "Remember the arithmetic logic: soixante-dix = 60+10, quatre-vingts = 4×20. The -s on vingts and cents disappears the moment another number follows. Mille is always invariable.",
+      "examples": [
+        { "fr": "J'ai vingt et un ans.", "en": "I am twenty-one years old.", "highlight": "vingt et un" },
+        { "fr": "Il y a soixante-dix élèves dans l'école.", "en": "There are seventy students in the school.", "highlight": "soixante-dix" },
+        { "fr": "Le livre coûte quatre-vingt-cinq euros.", "en": "The book costs eighty-five euros.", "highlight": "quatre-vingt-cinq" },
+        { "fr": "Nous avons deux cents pages à lire.", "en": "We have two hundred pages to read.", "highlight": "deux cents" },
+        { "fr": "La ville a deux cent vingt mille habitants.", "en": "The city has two hundred twenty thousand inhabitants.", "highlight": "deux cent vingt mille" },
+        { "fr": "C'est la première fois que je viens ici.", "en": "It is the first time I come here.", "highlight": "première" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 75 in French?",
+          "options": ["soixante-quinze", "septante-cinq", "soixante et quinze"],
+          "correctIndex": 0,
+          "explanation": "In French (France), 75 = soixante-quinze (60+15). Septante-cinq is used in Belgium and Switzerland."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you write 80 in French?",
+          "options": ["quatre-vingt", "quatre-vingts", "huitante"],
+          "correctIndex": 1,
+          "explanation": "80 on its own is quatre-vingts with an -s. The -s is dropped only when another number follows (e.g. quatre-vingt-un)."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which is correct for 200?",
+          "options": ["deux cent", "deux cents", "deux mille"],
+          "correctIndex": 1,
+          "explanation": "Deux cents takes an -s because it is not followed by another number. If it were deux cent vingt, the -s would drop."
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: Il y a ___ (91) jours.",
+          "answer": "quatre-vingt-onze",
+          "hint": "90 = quatre-vingt-dix, so 91 = quatre-vingt-onze (no -s on vingt when followed by a number)."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 1,000,000 in French?",
+          "options": ["un mille", "un million", "mille mille"],
+          "correctIndex": 1,
+          "explanation": "Un million is the correct term. Mille is used for thousands: deux mille = 2,000."
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: Elle habite au ___ (17) rue Victor Hugo.",
+          "answer": "dix-sept",
+          "hint": "17 = dix-sept (10+7)."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "What is the ordinal form of 1 (masculine)?",
+          "options": ["unième", "premier", "primaire"],
+          "correctIndex": 1,
+          "explanation": "The ordinal for 1 is irregular: premier (masculine) / première (feminine). All other ordinals add -ième to the cardinal."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which sentence uses the correct form of cent?",
+          "options": ["trois cents euros", "trois cent euros", "trois cents vingt euros"],
+          "correctIndex": 0,
+          "explanation": "Trois cents takes an -s because no number follows. In trois cent vingt, the -s drops because vingt follows."
+        }
+      ]
+    },
+    {
+      "sectionId": "time",
+      "title": "Telling Time",
+      "explanation": "To ask the time, say Quelle heure est-il? (What time is it?). The answer always starts with Il est. Use Il est une heure for 1:00 (note: une, not un, because heure is feminine). For all other hours use the cardinal number: Il est deux heures, Il est trois heures, etc. To add minutes, simply follow the hour: Il est deux heures dix (2:10). Special expressions: et quart (quarter past), et demie (half past), moins le quart (quarter to). Noon is midi and midnight is minuit — neither uses heure. France commonly uses the 24-hour clock: Il est quatorze heures = 14:00. To specify AM/PM informally: du matin (morning), de l'après-midi (afternoon), du soir (evening).",
+      "tip": "Watch out for une heure (not un heure) — heure is feminine. Also note: et demie has an -e but midi et demi does not, because midi is masculine.",
+      "examples": [
+        { "fr": "Quelle heure est-il ? Il est trois heures.", "en": "What time is it? It is three o'clock.", "highlight": "Quelle heure est-il" },
+        { "fr": "Il est une heure et quart.", "en": "It is a quarter past one.", "highlight": "et quart" },
+        { "fr": "Il est neuf heures et demie.", "en": "It is half past nine.", "highlight": "et demie" },
+        { "fr": "Il est quatre heures moins le quart.", "en": "It is a quarter to four.", "highlight": "moins le quart" },
+        { "fr": "Le train part à quatorze heures trente.", "en": "The train leaves at 14:30 (2:30 pm).", "highlight": "quatorze heures trente" },
+        { "fr": "Le magasin ferme à midi.", "en": "The shop closes at noon.", "highlight": "midi" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'What time is it?' in French?",
+          "options": ["Quel temps fait-il ?", "Quelle heure est-il ?", "C'est quelle heure ?"],
+          "correctIndex": 1,
+          "explanation": "Quelle heure est-il ? is the standard way to ask the time. Quel temps fait-il ? asks about the weather."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 1:00 in French?",
+          "options": ["Il est un heure.", "Il est une heure.", "Il est une heures."],
+          "correctIndex": 1,
+          "explanation": "Heure is feminine, so use une (not un). The singular heure has no -s."
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: Il est cinq heures ___ (quarter past).",
+          "answer": "et quart",
+          "hint": "Quarter past = et quart."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "What does 'Il est huit heures moins le quart' mean?",
+          "options": ["It is 8:15.", "It is 7:45.", "It is 8:45."],
+          "correctIndex": 1,
+          "explanation": "Moins le quart means quarter to. Eight o'clock minus a quarter hour = 7:45."
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: Il est ___ (midnight).",
+          "answer": "minuit",
+          "hint": "Midnight has its own special word in French — not minuit heure."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "What is 14:00 in conversational French?",
+          "options": ["Il est deux heures de l'après-midi.", "Il est quatorze heures.", "Both are correct."],
+          "correctIndex": 2,
+          "explanation": "Both forms are correct. The 24-hour form (quatorze heures) is common on schedules; the 12-hour form with de l'après-midi is used in conversation."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which is correct for 12:30 (noon)?",
+          "options": ["Il est midi et demi.", "Il est midi et demie.", "Il est douze heures et demie."],
+          "correctIndex": 0,
+          "explanation": "Midi is masculine, so demi has no -e. Demie (with -e) is used after heures because heure is feminine."
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: Le film commence à ___ heures ___ (7:20).",
+          "answer": "sept heures vingt",
+          "hint": "Just place the minutes after heures with no joining word for plain minutes: sept heures vingt."
+        }
+      ]
+    }
+  ]
+}

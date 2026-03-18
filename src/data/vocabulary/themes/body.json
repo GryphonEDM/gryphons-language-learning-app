@@ -16,43 +16,139 @@
       "en": "head",
       "phoneticUk": "holova",
       "phoneticRu": "golova",
-      "phoneticDe": "kopf",
+      "phoneticDe": "KOPF",
       "examples": {
-        "uk": ["Сьогодні у мене дуже болить голова.", "Він похитав головою і сказав «ні»."],
-        "ru": ["у меня сильно болит голова сегодня", "он покачал головой в знак несогласия"],
-        "de": ["Heute habe ich starke Kopfschmerzen.", "Er schüttelte den Kopf und sagte \"nein\"."],
-        "en": ["I have a really bad headache today.", "He shook his head and said \"no\"."]
-      }
+        "uk": [
+          "Сьогодні у мене дуже болить голова.",
+          "Він похитав головою і сказав «ні»."
+        ],
+        "ru": [
+          "у меня сильно болит голова сегодня",
+          "он покачал головой в знак несогласия"
+        ],
+        "de": [
+          "Heute habe ich starke Kopfschmerzen.",
+          "Er schüttelte den Kopf und sagte \"nein\"."
+        ],
+        "en": [
+          "I have a really bad headache today.",
+          "He shook his head and said \"no\"."
+        ],
+        "es": [
+          "Me duele la cabeza.",
+          "La cabeza es la parte más importante del cuerpo."
+        ]
+      },
+      "es": "cabeza",
+      "phoneticEs": "kah-BEH-sah",
+      "fr": "tête",
+      "frPhonetic": "TET",
+      "el": "κεφάλι",
+      "elPhonetic": "keh-FAH-lee",
+      "hi": "सिर",
+      "hiPhonetic": "SIR",
+      "ar": "رَأْس",
+      "arPhonetic": "RAS",
+      "ko": "머리",
+      "koPhonetic": "MO-ri",
+      "zh": "头",
+      "zhPhonetic": "tóu",
+      "ja": "頭",
+      "jaPhonetic": "atama"
     },
     {
       "uk": "рука",
       "ru": "рука",
-      "de": "Hand",
+      "de": "Hand/Arm",
       "en": "hand/arm",
       "phoneticUk": "ruka",
       "phoneticRu": "ruka",
-      "phoneticDe": "hant",
+      "phoneticDe": "HAHNT/ARM",
       "examples": {
-        "uk": ["Дай мені руку, я допоможу тобі встати.", "Він зламав руку під час тренування."],
-        "ru": ["подай мне руку и помоги встать", "он сломал руку на тренировке"],
-        "de": ["Gib mir deine Hand, ich helfe dir aufzustehen.", "Er hat sich beim Training den Arm gebrochen."],
-        "en": ["Give me your hand, I'll help you up.", "He broke his arm during practice."]
-      }
+        "uk": [
+          "Дай мені руку, я допоможу тобі встати.",
+          "Він зламав руку під час тренування."
+        ],
+        "ru": [
+          "подай мне руку и помоги встать",
+          "он сломал руку на тренировке"
+        ],
+        "de": [
+          "Gib mir deine Hand, ich helfe dir aufzustehen.",
+          "Er hat sich beim Training den Arm gebrochen."
+        ],
+        "en": [
+          "Give me your hand, I'll help you up.",
+          "He broke his arm during practice."
+        ],
+        "es": [
+          "Me lavé la mano antes de comer.",
+          "Rompió el brazo jugando al fútbol."
+        ]
+      },
+      "es": "mano/brazo",
+      "phoneticEs": "MAH-no / BRAH-so",
+      "fr": "bras",
+      "frPhonetic": "BRA",
+      "el": "χέρι",
+      "elPhonetic": "HEH-ree",
+      "hi": "हाथ",
+      "hiPhonetic": "HAATH",
+      "ar": "يَد",
+      "arPhonetic": "YAD",
+      "ko": "손",
+      "koPhonetic": "SON",
+      "zh": "手",
+      "zhPhonetic": "shǒu",
+      "ja": "手",
+      "jaPhonetic": "te"
     },
     {
       "uk": "нога",
       "ru": "нога",
-      "de": "Bein",
+      "de": "Bein/Fuß",
       "en": "leg/foot",
       "phoneticUk": "noha",
       "phoneticRu": "noga",
-      "phoneticDe": "bine",
+      "phoneticDe": "BINE/FOOS",
       "examples": {
-        "uk": ["У нього болить нога після пробіжки.", "Вона поставила ногу на першу сходинку."],
-        "ru": ["у него болит нога после пробежки", "она поставила ногу на первую ступеньку"],
-        "de": ["Sein Bein schmerzt nach dem Laufen.", "Sie stellte den Fuß auf die erste Stufe."],
-        "en": ["His leg hurts after the run.", "She put her foot on the first step."]
-      }
+        "uk": [
+          "У нього болить нога після пробіжки.",
+          "Вона поставила ногу на першу сходинку."
+        ],
+        "ru": [
+          "у него болит нога после пробежки",
+          "она поставила ногу на первую ступеньку"
+        ],
+        "de": [
+          "Sein Bein schmerzt nach dem Laufen.",
+          "Sie stellte den Fuß auf die erste Stufe."
+        ],
+        "en": [
+          "His leg hurts after the run.",
+          "She put her foot on the first step."
+        ],
+        "es": [
+          "Le duele la pierna después de correr.",
+          "Se lastimó el pie al bajar las escaleras."
+        ]
+      },
+      "es": "pierna/pie",
+      "phoneticEs": "PYER-nah / pyeh",
+      "fr": "jambe/pied",
+      "frPhonetic": "ZHAHB/PYAY",
+      "el": "πόδι",
+      "elPhonetic": "PO-dhi",
+      "hi": "पैर",
+      "hiPhonetic": "PAIR",
+      "ar": "رِجْل",
+      "arPhonetic": "RIJL",
+      "ko": "다리",
+      "koPhonetic": "DA-ri",
+      "zh": "腿",
+      "zhPhonetic": "tuǐ",
+      "ja": "足",
+      "jaPhonetic": "ashi"
     },
     {
       "uk": "око",
@@ -61,13 +157,45 @@
       "en": "eye",
       "phoneticUk": "oko",
       "phoneticRu": "glaz",
-      "phoneticDe": "ow-guh",
+      "phoneticDe": "OW-geh",
       "examples": {
-        "uk": ["У неї дуже гарні блакитні очі.", "Заплющ очі й загадай бажання."],
-        "ru": ["у неё красивые голубые глаза", "закрой глаза и загадай желание"],
-        "de": ["Sie hat sehr schöne blaue Augen.", "Schließ die Augen und wünsch dir etwas."],
-        "en": ["She has very beautiful blue eyes.", "Close your eyes and make a wish."]
-      }
+        "uk": [
+          "У неї дуже гарні блакитні очі.",
+          "Заплющ очі й загадай бажання."
+        ],
+        "ru": [
+          "у неё красивые голубые глаза",
+          "закрой глаза и загадай желание"
+        ],
+        "de": [
+          "Sie hat sehr schöne blaue Augen.",
+          "Schließ die Augen und wünsch dir etwas."
+        ],
+        "en": [
+          "She has very beautiful blue eyes.",
+          "Close your eyes and make a wish."
+        ],
+        "es": [
+          "Tiene los ojos de color verde.",
+          "Me entró algo en el ojo."
+        ]
+      },
+      "es": "ojo",
+      "phoneticEs": "OH-ho",
+      "fr": "œil",
+      "frPhonetic": "UHY",
+      "el": "μάτι",
+      "elPhonetic": "MAH-tee",
+      "hi": "आँख",
+      "hiPhonetic": "AANKH",
+      "ar": "عَيْن",
+      "arPhonetic": "AYN",
+      "ko": "눈",
+      "koPhonetic": "NUN",
+      "zh": "眼睛",
+      "zhPhonetic": "yǎnjing",
+      "ja": "目",
+      "jaPhonetic": "me"
     },
     {
       "uk": "вухо",
@@ -76,13 +204,45 @@
       "en": "ear",
       "phoneticUk": "vukho",
       "phoneticRu": "ukho",
-      "phoneticDe": "ohr",
+      "phoneticDe": "OHR",
       "examples": {
-        "uk": ["Він притулив вухо до зачинених дверей.", "У собаки довгі м'які вуха."],
-        "ru": ["он приложил ухо к закрытой двери", "у собаки длинные висячие уши"],
-        "de": ["Er legte das Ohr an die geschlossene Tür.", "Der Hund hat lange, weiche Ohren."],
-        "en": ["He pressed his ear against the closed door.", "The dog has long, soft ears."]
-      }
+        "uk": [
+          "Він притулив вухо до зачинених дверей.",
+          "У собаки довгі м'які вуха."
+        ],
+        "ru": [
+          "он приложил ухо к закрытой двери",
+          "у собаки длинные висячие уши"
+        ],
+        "de": [
+          "Er legte das Ohr an die geschlossene Tür.",
+          "Der Hund hat lange, weiche Ohren."
+        ],
+        "en": [
+          "He pressed his ear against the closed door.",
+          "The dog has long, soft ears."
+        ],
+        "es": [
+          "Le duele la oreja desde ayer.",
+          "Lleva un pendiente en la oreja derecha."
+        ]
+      },
+      "es": "oreja",
+      "phoneticEs": "oh-REH-hah",
+      "fr": "oreille",
+      "frPhonetic": "o-RAY",
+      "el": "αυτί",
+      "elPhonetic": "ahf-TEE",
+      "hi": "कान",
+      "hiPhonetic": "KAAN",
+      "ar": "أُذُن",
+      "arPhonetic": "U-dhun",
+      "ko": "귀",
+      "koPhonetic": "KWI",
+      "zh": "耳朵",
+      "zhPhonetic": "ěrduo",
+      "ja": "耳",
+      "jaPhonetic": "mimi"
     },
     {
       "uk": "ніс",
@@ -91,13 +251,45 @@
       "en": "nose",
       "phoneticUk": "nis",
       "phoneticRu": "nos",
-      "phoneticDe": "nah-zuh",
+      "phoneticDe": "NAH-zeh",
       "examples": {
-        "uk": ["У клоуна смішний червоний ніс.", "На вулиці мороз щипає ніс і щоки."],
-        "ru": ["у клоуна смешной красный нос", "на улице мороз щиплет нос и щёки"],
-        "de": ["Der Clown hat eine lustige rote Nase.", "Draußen zwickt der Frost die Nase und Wangen."],
-        "en": ["The clown has a funny red nose.", "Outside, the frost nips your nose and cheeks."]
-      }
+        "uk": [
+          "У клоуна смішний червоний ніс.",
+          "На вулиці мороз щипає ніс і щоки."
+        ],
+        "ru": [
+          "у клоуна смешной красный нос",
+          "на улице мороз щиплет нос и щёки"
+        ],
+        "de": [
+          "Der Clown hat eine lustige rote Nase.",
+          "Draußen zwickt der Frost die Nase und Wangen."
+        ],
+        "en": [
+          "The clown has a funny red nose.",
+          "Outside, the frost nips your nose and cheeks."
+        ],
+        "es": [
+          "Se sonó la nariz con un pañuelo.",
+          "La nariz le sangra cuando hace frío."
+        ]
+      },
+      "es": "nariz",
+      "phoneticEs": "nah-REES",
+      "fr": "nez",
+      "frPhonetic": "NAY",
+      "el": "μύτη",
+      "elPhonetic": "MEE-tee",
+      "hi": "नाक",
+      "hiPhonetic": "NAAK",
+      "ar": "أَنْف",
+      "arPhonetic": "ANF",
+      "ko": "코",
+      "koPhonetic": "KO",
+      "zh": "鼻子",
+      "zhPhonetic": "bízi",
+      "ja": "鼻",
+      "jaPhonetic": "hana"
     },
     {
       "uk": "рот",
@@ -106,13 +298,45 @@
       "en": "mouth",
       "phoneticUk": "rot",
       "phoneticRu": "rot",
-      "phoneticDe": "moont",
+      "phoneticDe": "MOONT",
       "examples": {
-        "uk": ["Відкрий широко рот у лікаря.", "Дитина від подиву закрила рот рукою."],
-        "ru": ["открой рот пошире у врача", "ребёнок закрыл рот рукой от удивления"],
-        "de": ["Öffne beim Arzt weit den Mund.", "Das Kind bedeckte vor Staunen den Mund mit der Hand."],
-        "en": ["Open your mouth wide at the doctor's.", "The child covered her mouth in surprise."]
-      }
+        "uk": [
+          "Відкрий широко рот у лікаря.",
+          "Дитина від подиву закрила рот рукою."
+        ],
+        "ru": [
+          "открой рот пошире у врача",
+          "ребёнок закрыл рот рукой от удивления"
+        ],
+        "de": [
+          "Öffne beim Arzt weit den Mund.",
+          "Das Kind bedeckte vor Staunen den Mund mit der Hand."
+        ],
+        "en": [
+          "Open your mouth wide at the doctor's.",
+          "The child covered her mouth in surprise."
+        ],
+        "es": [
+          "Abre la boca para que el dentista te vea.",
+          "Habla con la boca llena no es educado."
+        ]
+      },
+      "es": "boca",
+      "phoneticEs": "BOH-kah",
+      "fr": "bouche",
+      "frPhonetic": "BOOSH",
+      "el": "στόμα",
+      "elPhonetic": "STO-mah",
+      "hi": "मुँह",
+      "hiPhonetic": "MUNH",
+      "ar": "فَم",
+      "arPhonetic": "FAM",
+      "ko": "입",
+      "koPhonetic": "IP",
+      "zh": "嘴",
+      "zhPhonetic": "zuǐ",
+      "ja": "口",
+      "jaPhonetic": "kuchi"
     },
     {
       "uk": "зуб",
@@ -121,13 +345,45 @@
       "en": "tooth",
       "phoneticUk": "zub",
       "phoneticRu": "zub",
-      "phoneticDe": "tsahn",
+      "phoneticDe": "TSAHN",
       "examples": {
-        "uk": ["У мене болить зуб, треба йти до лікаря.", "Дитина втратила свій перший молочний зуб."],
-        "ru": ["у меня болит зуб, нужно идти к врачу", "ребёнок потерял свой первый молочный зуб"],
-        "de": ["Mir tut ein Zahn weh, ich muss zum Zahnarzt.", "Das Kind hat seinen ersten Milchzahn verloren."],
-        "en": ["I have a toothache, I need to see a dentist.", "The child lost her first baby tooth."]
-      }
+        "uk": [
+          "У мене болить зуб, треба йти до лікаря.",
+          "Дитина втратила свій перший молочний зуб."
+        ],
+        "ru": [
+          "у меня болит зуб, нужно идти к врачу",
+          "ребёнок потерял свой первый молочный зуб"
+        ],
+        "de": [
+          "Mir tut ein Zahn weh, ich muss zum Zahnarzt.",
+          "Das Kind hat seinen ersten Milchzahn verloren."
+        ],
+        "en": [
+          "I have a toothache, I need to see a dentist.",
+          "The child lost her first baby tooth."
+        ],
+        "es": [
+          "Se le cayó un diente al niño.",
+          "El dentista le sacó el diente cariado."
+        ]
+      },
+      "es": "diente",
+      "phoneticEs": "DYEN-teh",
+      "fr": "dent",
+      "frPhonetic": "DON",
+      "el": "δόντι",
+      "elPhonetic": "DHON-tee",
+      "hi": "दाँत",
+      "hiPhonetic": "DAANT",
+      "ar": "سِنّ",
+      "arPhonetic": "SINN",
+      "ko": "이",
+      "koPhonetic": "I",
+      "zh": "牙齿",
+      "zhPhonetic": "yáchǐ",
+      "ja": "歯",
+      "jaPhonetic": "ha"
     },
     {
       "uk": "язик",
@@ -136,28 +392,92 @@
       "en": "tongue",
       "phoneticUk": "yazyk",
       "phoneticRu": "yazyk",
-      "phoneticDe": "tsoong-uh",
+      "phoneticDe": "TSOONG-eh",
       "examples": {
-        "uk": ["Покажи язик лікарю, будь ласка.", "Він прикусив язика під час їжі."],
-        "ru": ["покажи язык врачу", "он прикусил язык во время еды"],
-        "de": ["Zeig dem Arzt bitte deine Zunge.", "Er hat sich beim Essen auf die Zunge gebissen."],
-        "en": ["Show the doctor your tongue, please.", "He bit his tongue while eating."]
-      }
+        "uk": [
+          "Покажи язик лікарю, будь ласка.",
+          "Він прикусив язика під час їжі."
+        ],
+        "ru": [
+          "покажи язык врачу",
+          "он прикусил язык во время еды"
+        ],
+        "de": [
+          "Zeig dem Arzt bitte deine Zunge.",
+          "Er hat sich beim Essen auf die Zunge gebissen."
+        ],
+        "en": [
+          "Show the doctor your tongue, please.",
+          "He bit his tongue while eating."
+        ],
+        "es": [
+          "Se quemó la lengua con la sopa caliente.",
+          "La lengua nos ayuda a hablar y a saborear."
+        ]
+      },
+      "es": "lengua",
+      "phoneticEs": "LEN-gwah",
+      "fr": "langue",
+      "frPhonetic": "LONG",
+      "el": "γλώσσα",
+      "elPhonetic": "GHLO-sah",
+      "hi": "जीभ",
+      "hiPhonetic": "JEEBH",
+      "ar": "لِسَان",
+      "arPhonetic": "li-SAAN",
+      "ko": "혀",
+      "koPhonetic": "HYO",
+      "zh": "舌头",
+      "zhPhonetic": "shétou",
+      "ja": "舌",
+      "jaPhonetic": "shita"
     },
     {
       "uk": "шия",
       "ru": "шея",
-      "de": "Hals",
+      "de": "Hals/Nacken",
       "en": "neck",
       "phoneticUk": "shyya",
       "phoneticRu": "sheya",
-      "phoneticDe": "hals",
+      "phoneticDe": "HAHLS/NAH-ken",
       "examples": {
-        "uk": ["У жирафа дуже довга шия.", "У мене болить шия після сну."],
-        "ru": ["у жирафа очень длинная шея", "у меня болит шея после сна"],
-        "de": ["Eine Giraffe hat einen sehr langen Hals.", "Mein Hals tut nach dem Schlafen weh."],
-        "en": ["A giraffe has a very long neck.", "My neck hurts after sleeping."]
-      }
+        "uk": [
+          "У жирафа дуже довга шия.",
+          "У мене болить шия після сну."
+        ],
+        "ru": [
+          "у жирафа очень длинная шея",
+          "у меня болит шея после сна"
+        ],
+        "de": [
+          "Eine Giraffe hat einen sehr langen Hals.",
+          "Mein Hals tut nach dem Schlafen weh."
+        ],
+        "en": [
+          "A giraffe has a very long neck.",
+          "My neck hurts after sleeping."
+        ],
+        "es": [
+          "Lleva una bufanda alrededor del cuello.",
+          "Le duele el cuello por dormir mal."
+        ]
+      },
+      "es": "cuello",
+      "phoneticEs": "KWEH-yoh",
+      "fr": "cou",
+      "frPhonetic": "KOO",
+      "el": "λαιμός",
+      "elPhonetic": "leh-MOS",
+      "hi": "गर्दन",
+      "hiPhonetic": "GAR-dan",
+      "ar": "رَقَبَة",
+      "arPhonetic": "RA-qa-ba",
+      "ko": "목",
+      "koPhonetic": "MOK",
+      "zh": "脖子",
+      "zhPhonetic": "bózi",
+      "ja": "首",
+      "jaPhonetic": "kubi"
     },
     {
       "uk": "плече",
@@ -166,13 +486,45 @@
       "en": "shoulder",
       "phoneticUk": "pleche",
       "phoneticRu": "plecho",
-      "phoneticDe": "shool-ter",
+      "phoneticDe": "SHOOL-ter",
       "examples": {
-        "uk": ["Він поклав руку на плече друга.", "У спортсмена широкі міцні плечі."],
-        "ru": ["он положил руку на плечо друга", "у спортсмена широкие крепкие плечи"],
-        "de": ["Er legte die Hand auf die Schulter seines Freundes.", "Der Sportler hat breite, kräftige Schultern."],
-        "en": ["He placed his hand on his friend's shoulder.", "The athlete has broad, strong shoulders."]
-      }
+        "uk": [
+          "Він поклав руку на плече друга.",
+          "У спортсмена широкі міцні плечі."
+        ],
+        "ru": [
+          "он положил руку на плечо друга",
+          "у спортсмена широкие крепкие плечи"
+        ],
+        "de": [
+          "Er legte die Hand auf die Schulter seines Freundes.",
+          "Der Sportler hat breite, kräftige Schultern."
+        ],
+        "en": [
+          "He placed his hand on his friend's shoulder.",
+          "The athlete has broad, strong shoulders."
+        ],
+        "es": [
+          "Le pusieron el brazo en el hombro.",
+          "Se lesionó el hombro durante el partido."
+        ]
+      },
+      "es": "hombro",
+      "phoneticEs": "OHM-broh",
+      "fr": "épaule",
+      "frPhonetic": "ay-POLE",
+      "el": "ώμος",
+      "elPhonetic": "O-mos",
+      "hi": "कंधा",
+      "hiPhonetic": "KAN-dhaa",
+      "ar": "كَتِف",
+      "arPhonetic": "KA-tif",
+      "ko": "어깨",
+      "koPhonetic": "O-kke",
+      "zh": "肩膀",
+      "zhPhonetic": "jiānbǎng",
+      "ja": "肩",
+      "jaPhonetic": "kata"
     },
     {
       "uk": "спина",
@@ -181,13 +533,45 @@
       "en": "back",
       "phoneticUk": "spyna",
       "phoneticRu": "spina",
-      "phoneticDe": "rew-ken",
+      "phoneticDe": "ROO-ken",
       "examples": {
-        "uk": ["У мене болить спина від довгого сидіння.", "Тримай спину рівно за столом."],
-        "ru": ["у меня болит спина от долгого сидения", "держи спину прямо за столом"],
-        "de": ["Mein Rücken schmerzt vom langen Sitzen.", "Halte den Rücken gerade am Tisch."],
-        "en": ["My back hurts from sitting too long.", "Keep your back straight at the table."]
-      }
+        "uk": [
+          "У мене болить спина від довгого сидіння.",
+          "Тримай спину рівно за столом."
+        ],
+        "ru": [
+          "у меня болит спина от долгого сидения",
+          "держи спину прямо за столом"
+        ],
+        "de": [
+          "Mein Rücken schmerzt vom langen Sitzen.",
+          "Halte den Rücken gerade am Tisch."
+        ],
+        "en": [
+          "My back hurts from sitting too long.",
+          "Keep your back straight at the table."
+        ],
+        "es": [
+          "Le duele la espalda por tanto trabajo.",
+          "Lleva la mochila en la espalda."
+        ]
+      },
+      "es": "espalda",
+      "phoneticEs": "es-PAHL-dah",
+      "fr": "dos",
+      "frPhonetic": "DOH",
+      "el": "πλάτη",
+      "elPhonetic": "PLA-ti",
+      "hi": "पीठ",
+      "hiPhonetic": "PEETH",
+      "ar": "ظَهْر",
+      "arPhonetic": "DHAHR",
+      "ko": "등",
+      "koPhonetic": "DUNG",
+      "zh": "背",
+      "zhPhonetic": "bèi",
+      "ja": "背中",
+      "jaPhonetic": "senaka"
     },
     {
       "uk": "живіт",
@@ -196,13 +580,45 @@
       "en": "belly/stomach",
       "phoneticUk": "zhyvit",
       "phoneticRu": "zhivot",
-      "phoneticDe": "bowkh",
+      "phoneticDe": "BAOWKH",
       "examples": {
-        "uk": ["У мене болить живіт після обіду.", "Дитина лежить на животі й малює."],
-        "ru": ["у меня болит живот после обеда", "ребёнок лежит на животе и рисует"],
-        "de": ["Mein Bauch tut nach dem Mittagessen weh.", "Das Kind liegt auf dem Bauch und malt."],
-        "en": ["My stomach hurts after lunch.", "The child is lying on her belly and drawing."]
-      }
+        "uk": [
+          "У мене болить живіт після обіду.",
+          "Дитина лежить на животі й малює."
+        ],
+        "ru": [
+          "у меня болит живот после обеда",
+          "ребёнок лежит на животе и рисует"
+        ],
+        "de": [
+          "Mein Bauch tut nach dem Mittagessen weh.",
+          "Das Kind liegt auf dem Bauch und malt."
+        ],
+        "en": [
+          "My stomach hurts after lunch.",
+          "The child is lying on her belly and drawing."
+        ],
+        "es": [
+          "El bebé tiene la barriga llena.",
+          "Me duele el estómago después de comer tanto."
+        ]
+      },
+      "es": "barriga/estómago",
+      "phoneticEs": "bah-REE-gah / es-TOH-mah-goh",
+      "fr": "ventre",
+      "frPhonetic": "VAN-truh",
+      "el": "κοιλιά",
+      "elPhonetic": "ki-LIA",
+      "hi": "पेट",
+      "hiPhonetic": "PET",
+      "ar": "بطن",
+      "arPhonetic": "BATN",
+      "ko": "배",
+      "koPhonetic": "BEH",
+      "zh": "肚子",
+      "zhPhonetic": "dùzi",
+      "ja": "お腹",
+      "jaPhonetic": "onaka"
     },
     {
       "uk": "серце",
@@ -211,28 +627,92 @@
       "en": "heart",
       "phoneticUk": "sertse",
       "phoneticRu": "serdtse",
-      "phoneticDe": "herts",
+      "phoneticDe": "HAIRTS",
       "examples": {
-        "uk": ["Серце б'ється швидко від хвилювання.", "У неї дуже добре й щире серце."],
-        "ru": ["сердце бьётся быстро от волнения", "у неё очень доброе и отзывчивое сердце"],
-        "de": ["Das Herz schlägt vor Aufregung schnell.", "Sie hat ein sehr gutes und ehrliches Herz."],
-        "en": ["The heart beats fast from excitement.", "She has a very kind and warm heart."]
-      }
+        "uk": [
+          "Серце б'ється швидко від хвилювання.",
+          "У неї дуже добре й щире серце."
+        ],
+        "ru": [
+          "сердце бьётся быстро от волнения",
+          "у неё очень доброе и отзывчивое сердце"
+        ],
+        "de": [
+          "Das Herz schlägt vor Aufregung schnell.",
+          "Sie hat ein sehr gutes und ehrliches Herz."
+        ],
+        "en": [
+          "The heart beats fast from excitement.",
+          "She has a very kind and warm heart."
+        ],
+        "es": [
+          "El corazón late más rápido cuando corres.",
+          "Le dieron una operación de corazón abierto."
+        ]
+      },
+      "es": "corazón",
+      "phoneticEs": "koh-rah-SOHN",
+      "fr": "cœur",
+      "frPhonetic": "KUR",
+      "el": "καρδιά",
+      "elPhonetic": "kar-DHYA",
+      "hi": "दिल",
+      "hiPhonetic": "DIL",
+      "ar": "قَلْب",
+      "arPhonetic": "QALB",
+      "ko": "심장",
+      "koPhonetic": "SHIM-jang",
+      "zh": "心脏",
+      "zhPhonetic": "xīnzàng",
+      "ja": "心臓",
+      "jaPhonetic": "shinzou"
     },
     {
       "uk": "палець",
       "ru": "палец",
-      "de": "Finger",
+      "de": "Finger/Zehe",
       "en": "finger/toe",
       "phoneticUk": "palets",
       "phoneticRu": "palets",
-      "phoneticDe": "fing-er",
+      "phoneticDe": "FING-er/TSAY-eh",
       "examples": {
-        "uk": ["Вона випадково порізала палець ножем.", "На кожній руці по п'ять пальців."],
-        "ru": ["она случайно порезала палец ножом", "на каждой руке по пять пальцев"],
-        "de": ["Sie hat sich versehentlich mit einem Messer in den Finger geschnitten.", "An jeder Hand hat man fünf Finger."],
-        "en": ["She accidentally cut her finger with a knife.", "Each hand has five fingers."]
-      }
+        "uk": [
+          "Вона випадково порізала палець ножем.",
+          "На кожній руці по п'ять пальців."
+        ],
+        "ru": [
+          "она случайно порезала палец ножом",
+          "на каждой руке по пять пальцев"
+        ],
+        "de": [
+          "Sie hat sich versehentlich mit einem Messer in den Finger geschnitten.",
+          "An jeder Hand hat man fünf Finger."
+        ],
+        "en": [
+          "She accidentally cut her finger with a knife.",
+          "Each hand has five fingers."
+        ],
+        "es": [
+          "Se cortó el dedo con un cuchillo.",
+          "Se golpeó el dedo del pie con la puerta."
+        ]
+      },
+      "es": "dedo/dedo del pie",
+      "phoneticEs": "DEH-doh / DEH-doh del pyeh",
+      "fr": "doigt/orteil",
+      "frPhonetic": "DWAH/or-TAY",
+      "el": "δάχτυλο",
+      "elPhonetic": "DHAKH-ti-lo",
+      "hi": "उँगली",
+      "hiPhonetic": "UNG-lee",
+      "ar": "إِصْبَع",
+      "arPhonetic": "IS-ba",
+      "ko": "손가락",
+      "koPhonetic": "son-KA-rak",
+      "zh": "手指",
+      "zhPhonetic": "shǒuzhǐ",
+      "ja": "指",
+      "jaPhonetic": "yubi"
     },
     {
       "uk": "коліно",
@@ -241,28 +721,100 @@
       "en": "knee",
       "phoneticUk": "kolino",
       "phoneticRu": "koleno",
-      "phoneticDe": "k-nee",
+      "phoneticDe": "KNEE",
       "examples": {
-        "uk": ["Він упав і сильно вдарив коліно.", "Вода в річці була по коліно."],
-        "ru": ["он упал и сильно ушиб колено", "вода в реке была по колено"],
-        "de": ["Er ist gefallen und hat sich das Knie stark gestoßen.", "Das Wasser im Fluss reichte bis zum Knie."],
-        "en": ["He fell and badly hurt his knee.", "The water in the river was knee-deep."]
-      }
+        "uk": [
+          "Він упав і сильно вдарив коліно.",
+          "Вода в річці була по коліно."
+        ],
+        "ru": [
+          "он упал и сильно ушиб колено",
+          "вода в реке была по колено"
+        ],
+        "de": [
+          "Er ist gefallen und hat sich das Knie stark gestoßen.",
+          "Das Wasser im Fluss reichte bis zum Knie."
+        ],
+        "en": [
+          "He fell and badly hurt his knee.",
+          "The water in the river was knee-deep."
+        ],
+        "es": [
+          "Se cayó y se raspó la rodilla.",
+          "Le duele la rodilla cuando sube las escaleras."
+        ]
+      },
+      "es": "rodilla",
+      "phoneticEs": "roh-DEE-yah",
+      "fr": "genou",
+      "frPhonetic": "zhuh-NOO",
+      "el": "γόνατο",
+      "elPhonetic": "YO-na-to",
+      "hi": "घुटना",
+      "hiPhonetic": "GHUT-naa",
+      "ar": "رُكْبَة",
+      "arPhonetic": "RUK-ba",
+      "ko": "무릎",
+      "koPhonetic": "MU-rup",
+      "zh": "膝盖",
+      "zhPhonetic": "xīgài",
+      "ja": "膝",
+      "jaPhonetic": "hiza"
     },
     {
       "uk": "волосся",
       "ru": "волосы",
-      "de": "Haar",
+      "de": "Haar/Haare",
       "en": "hair",
       "phoneticUk": "volossya",
       "phoneticRu": "volosy",
-      "phoneticDe": "hahr",
+      "phoneticDe": "HAR/HAH-reh",
       "examples": {
-        "uk": ["У неї довге світле волосся.", "Вона розчісує волосся щоранку перед дзеркалом."],
-        "ru": ["у неё длинные светлые волосы", "он расчёсывает волосы каждое утро перед зеркалом"],
-        "de": ["Sie hat langes, helles Haar.", "Sie kämmt ihr Haar jeden Morgen vor dem Spiegel."],
-        "en": ["She has long, light-colored hair.", "She combs her hair every morning in front of the mirror."]
-      }
+        "uk": [
+          "У неї довге світле волосся.",
+          "Вона розчісує волосся щоранку перед дзеркалом."
+        ],
+        "ru": [
+          "у неё длинные светлые волосы",
+          "он расчёсывает волосы каждое утро перед зеркалом"
+        ],
+        "de": [
+          "Sie hat langes, helles Haar.",
+          "Sie kämmt ihr Haar jeden Morgen vor dem Spiegel."
+        ],
+        "en": [
+          "She has long, light-colored hair.",
+          "She combs her hair every morning in front of the mirror."
+        ],
+        "es": [
+          "Tiene el pelo largo y rizado.",
+          "Se cortó el pelo en la peluquería."
+        ]
+      },
+      "es": "pelo",
+      "phoneticEs": "PEH-loh",
+      "fr": "cheveux",
+      "frPhonetic": "shuh-VUH",
+      "el": "μαλλιά",
+      "elPhonetic": "mah-LYAH",
+      "hi": "बाल",
+      "hiPhonetic": "BAAL",
+      "ar": "شَعْر",
+      "arPhonetic": "SHA-r",
+      "ko": "머리카락",
+      "koPhonetic": "mo-ri-KA-rak",
+      "zh": "头发",
+      "zhPhonetic": "tóufa",
+      "ja": "髪",
+      "jaPhonetic": "kami"
     }
-  ]
+  ],
+  "nameEs": "El cuerpo",
+  "nameFr": "Le corps",
+  "nameEl": "Το σώμα",
+  "nameHi": "शरीर",
+  "nameAr": "الجسم",
+  "nameKo": "몸",
+  "nameZh": "身体",
+  "nameJa": "体"
 }

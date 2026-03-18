@@ -1,0 +1,116 @@
+{
+  "lessonId": "definite-article",
+  "nameEn": "The Definite Article",
+  "nameAr": "أداة التعريف",
+  "icon": "📰",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "al-the-definite-article",
+      "title": "ال — The One and Only Article",
+      "explanation": "Arabic has only one article: ال (al-), which is the definite article meaning 'the'. There is no indefinite article in Arabic — a noun without ال is automatically indefinite. The article ال is always attached directly to the beginning of the noun as a prefix. For example, كتاب means 'a book', and الكتاب means 'the book'. The article never changes for gender, number, or case — it is always ال regardless of whether the noun is masculine, feminine, singular, or plural. In formal Arabic, an indefinite noun takes the suffix -n (called tanwīn or nunation): كتابٌ (kitābun, 'a book') vs. الكتابُ (al-kitābu, 'the book').",
+      "tip": "Unlike English which has 'a/an' and 'the', Arabic only has 'the' (ال). If there is no ال, the noun is automatically indefinite. This makes the system simpler once you get used to it.",
+      "examples": [
+        { "ar": "كتاب → الكتاب", "en": "a book → the book", "highlight": "ال" },
+        { "ar": "بيت → البيت", "en": "a house → the house", "highlight": "ال" },
+        { "ar": "مدرسة → المدرسة", "en": "a school → the school", "highlight": "ال" },
+        { "ar": "الولد في البيت", "en": "The boy is in the house — both nouns have ال", "highlight": "ال" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the book' in Arabic?",
+          "options": ["الكتاب", "كتاب", "في كتاب"],
+          "correctIndex": 0,
+          "explanation": "Adding the prefix ال (al-) to كتاب (book) makes it الكتاب (the book). The article ال always attaches directly to the front of the noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does a noun WITHOUT ال indicate in Arabic?",
+          "options": ["It is indefinite (a/an)", "It is definite (the)", "It is plural"],
+          "correctIndex": 0,
+          "explanation": "Arabic has no word for 'a' or 'an'. A noun without ال is automatically indefinite. So كتاب by itself means 'a book'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does the article ال change based on the gender or number of the noun?",
+          "options": ["No, it is always ال", "Yes, it becomes الة for feminine nouns", "Yes, it doubles for plural nouns"],
+          "correctIndex": 0,
+          "explanation": "The definite article ال never changes. It is always ال regardless of whether the noun is masculine, feminine, singular, dual, or plural."
+        }
+      ]
+    },
+    {
+      "sectionId": "sun-letters",
+      "title": "Sun Letters (الحروف الشمسية)",
+      "explanation": "Arabic letters are divided into two groups based on how they interact with the definite article ال: sun letters and moon letters. There are 14 sun letters: ت ث د ذ ر ز س ش ص ض ط ظ ل ن. When ال precedes a sun letter, the ل (lām) of ال is silent — instead, the sun letter is doubled (geminated). This is called assimilation: the 'l' sound merges into the following consonant. For example, الشمس (the sun) is pronounced 'ash-shams', not 'al-shams'. The ل is still written but not pronounced. In formal writing, the doubling is shown with a شدّة (shadda) mark: الشَّمس. Sun letters are all articulated with the tongue near the teeth or the front of the palate — close to where 'l' is produced — which is why the assimilation occurs.",
+      "tip": "The word for 'sun' is شمس — and ش is a sun letter. Say 'ash-shams' (not 'al-shams'). A quick test: if saying 'al-' before the letter feels awkward and your tongue naturally doubles the next sound, it is a sun letter.",
+      "examples": [
+        { "ar": "الشَّمس", "en": "the sun — pronounced 'ash-shams', not 'al-shams'; ش is a sun letter", "highlight": "الشَّ" },
+        { "ar": "النَّاس", "en": "the people — pronounced 'an-nās', not 'al-nās'; ن is a sun letter", "highlight": "النَّ" },
+        { "ar": "الدَّرس", "en": "the lesson — pronounced 'ad-dars', not 'al-dars'; د is a sun letter", "highlight": "الدَّ" },
+        { "ar": "السَّلام", "en": "the peace — pronounced 'as-salām', not 'al-salām'; س is a sun letter", "highlight": "السَّ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is الشمس (the sun) correctly pronounced?",
+          "options": ["ash-shams", "al-shams", "a-shams"],
+          "correctIndex": 0,
+          "explanation": "The letter ش (shīn) is a sun letter, so the ل of ال assimilates into it. The result is a doubled ش: ash-shams. The ل is written but not pronounced."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens when ال comes before a sun letter?",
+          "options": ["The ل is silent and the sun letter is doubled", "The ال is dropped entirely", "Nothing special — it is pronounced 'al' as usual"],
+          "correctIndex": 0,
+          "explanation": "Before a sun letter, the ل (lām) of the article becomes silent and the following sun letter is doubled (geminated). This assimilation happens because sun letters are articulated near the same place as 'l'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How many sun letters are there in Arabic?",
+          "options": ["14", "28", "7"],
+          "correctIndex": 0,
+          "explanation": "There are 14 sun letters (ت ث د ذ ر ز س ش ص ض ط ظ ل ن) and 14 moon letters. Together they cover all 28 letters of the Arabic alphabet."
+        }
+      ]
+    },
+    {
+      "sectionId": "moon-letters",
+      "title": "Moon Letters (الحروف القمرية)",
+      "explanation": "The remaining 14 letters are moon letters: ا ب ج ح خ ع غ ف ق ك م ه و ي. When ال precedes a moon letter, the ل is fully pronounced as 'l'. For example, القمر (the moon) is pronounced 'al-qamar' — you clearly hear the 'l'. The name 'moon letters' comes from the word قمر (moon), where ق is a moon letter, and 'sun letters' from شمس (sun), where ش is a sun letter. Moon letters are generally articulated further from the tongue tip — at the lips, back of the throat, or with other articulators — so they do not naturally assimilate with 'l'. Recognizing whether a letter is a sun or moon letter will help you read aloud correctly and understand native speakers better.",
+      "tip": "If you can comfortably say 'al-' before the letter without your tongue wanting to skip the 'l', it is a moon letter. The word القمر (al-qamar, the moon) is the model — you clearly hear 'al-'.",
+      "examples": [
+        { "ar": "القمر", "en": "the moon — pronounced 'al-qamar'; ق is a moon letter, so the ل is heard", "highlight": "الق" },
+        { "ar": "الكتاب", "en": "the book — pronounced 'al-kitāb'; ك is a moon letter", "highlight": "الك" },
+        { "ar": "البيت", "en": "the house — pronounced 'al-bayt'; ب is a moon letter", "highlight": "الب" },
+        { "ar": "الولد", "en": "the boy — pronounced 'al-walad'; و is a moon letter", "highlight": "الو" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is القمر (the moon) pronounced?",
+          "options": ["al-qamar", "aq-qamar", "a-qamar"],
+          "correctIndex": 0,
+          "explanation": "The letter ق (qāf) is a moon letter, so the ل of the article is fully pronounced. You say 'al-qamar', clearly hearing the 'l' sound."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of the following is a moon letter?",
+          "options": ["ب (bāʼ)", "ت (tāʼ)", "ن (nūn)"],
+          "correctIndex": 0,
+          "explanation": "The letter ب (bāʼ) is a moon letter — it is articulated at the lips, far from where 'l' is produced. The letters ت and ن are sun letters because they are articulated near the teeth, close to where 'l' is made."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In الكتاب (the book), is the ل of ال pronounced?",
+          "options": ["Yes, because ك is a moon letter", "No, it is silent", "It depends on the speaker"],
+          "correctIndex": 0,
+          "explanation": "The letter ك (kāf) is a moon letter, so the ل of ال is clearly pronounced: 'al-kitāb'. If the next letter were a sun letter (like ش), the ل would be silent."
+        }
+      ]
+    }
+  ]
+}

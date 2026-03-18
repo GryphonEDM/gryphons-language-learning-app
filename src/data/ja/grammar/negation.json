@@ -1,0 +1,151 @@
+{
+  "lessonId": "negation",
+  "nameEn": "Negation",
+  "nameJa": "否定形",
+  "icon": "🚫",
+  "tier": "A1",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "nai-form",
+      "title": "ない Form (Verb Negation)",
+      "explanation": "To negate verbs in plain/casual speech, use the ない form. For る-verbs, drop る and add ない: 食べる → 食べない. For う-verbs, change the final う-row kana to the あ-row and add ない: 書く → 書かない, 飲む → 飲まない, 話す → 話さない. Special case: verbs ending in う change to わない (not あない): 買う → 買わない. Irregular: する → しない, くる → こない.",
+      "tip": "The verb ある (to exist) is special: its negative is ない, not あらない. This is the only verb where the negative form completely replaces the verb.",
+      "examples": [
+        { "ja": "私は肉を食べない。", "en": "I don't eat meat.", "highlight": "食べない" },
+        { "ja": "明日は学校に行かない。", "en": "I won't go to school tomorrow.", "highlight": "行かない" },
+        { "ja": "お酒を飲まない。", "en": "I don't drink alcohol.", "highlight": "飲まない" },
+        { "ja": "日曜日は何もしない。", "en": "I don't do anything on Sundays.", "highlight": "しない" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the ない form of 買う (to buy)?",
+          "options": ["買あない", "買わない", "買ない", "買かない"],
+          "correctIndex": 1,
+          "explanation": "Verbs ending in う are special: instead of あない, they become わない. 買う → 買わない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the ない form of 遊ぶ (to play)?",
+          "options": ["遊ばない", "遊びない", "遊ぶない", "遊べない"],
+          "correctIndex": 0,
+          "explanation": "Change the ぶ (う-row) to ば (あ-row) and add ない: 遊ぶ → 遊ばない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of ある (to exist)?",
+          "options": ["あらない", "ありない", "ない", "あるない"],
+          "correctIndex": 2,
+          "explanation": "ある is a special exception. Its negative form is simply ない."
+        }
+      ]
+    },
+    {
+      "sectionId": "janai",
+      "title": "じゃない (Noun & な-adjective Negation)",
+      "explanation": "To negate nouns and な-adjectives, replace だ/です with じゃない (casual) or じゃありません / ではありません (polite). For example: 学生だ → 学生じゃない (not a student), 静かだ → 静かじゃない (not quiet). For い-adjectives, drop い and add くない: 高い → 高くない (not expensive). Note: いい → よくない.",
+      "tip": "じゃ is a contraction of では. In writing and very formal speech, では is preferred: 学生ではありません. In casual conversation, じゃない is much more natural.",
+      "examples": [
+        { "ja": "これは猫じゃない。犬だ。", "en": "This is not a cat. It's a dog.", "highlight": "じゃない" },
+        { "ja": "彼は先生じゃありません。", "en": "He is not a teacher. (polite)", "highlight": "じゃありません" },
+        { "ja": "この部屋は静かじゃない。", "en": "This room is not quiet.", "highlight": "静かじゃない" },
+        { "ja": "このラーメンは高くない。", "en": "This ramen is not expensive.", "highlight": "高くない" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'This is not water.' (水 = water) — Choose the correct sentence:",
+          "options": ["これは水ない。", "これは水じゃない。", "これは水くない。", "これは水ではない。"],
+          "correctIndex": 1,
+          "explanation": "水 is a noun. Negate with じゃない: 水じゃない. (ではない is also correct but じゃない is more natural in speech.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of 元気だ (to be well/energetic)?",
+          "options": ["元気ない", "元気くない", "元気じゃない", "元気しない"],
+          "correctIndex": 2,
+          "explanation": "元気 is a な-adjective. Negate with じゃない: 元気じゃない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of 新しい (new)?",
+          "options": ["新しいじゃない", "新しじゃない", "新しくない", "新しいくない"],
+          "correctIndex": 2,
+          "explanation": "新しい is an い-adjective. Drop い, add くない: 新しくない."
+        }
+      ]
+    },
+    {
+      "sectionId": "masen",
+      "title": "ません (Polite Negation)",
+      "explanation": "The polite negative of verbs uses ません. Take the masu-stem and add ません: 食べます → 食べません, 行きます → 行きません, します → しません, きます → きません. For past polite negative, use ませんでした: 食べませんでした (didn't eat). This form is standard in polite conversation, work settings, and when speaking to strangers.",
+      "tip": "ません is simply the negative of ます. If you know the ます form, just swap ます for ません. The past is ませんでした.",
+      "examples": [
+        { "ja": "私はコーヒーを飲みません。", "en": "I don't drink coffee. (polite)", "highlight": "飲みません" },
+        { "ja": "明日は会社に行きません。", "en": "I won't go to the office tomorrow. (polite)", "highlight": "行きません" },
+        { "ja": "すみません、分かりません。", "en": "I'm sorry, I don't understand.", "highlight": "分かりません" },
+        { "ja": "昨日は運動しませんでした。", "en": "I didn't exercise yesterday. (polite)", "highlight": "しませんでした" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the polite negative of 読む (to read)?",
+          "options": ["読むません", "読みません", "読まません", "読めません"],
+          "correctIndex": 1,
+          "explanation": "The masu-stem of 読む is 読み. Add ません: 読みません."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past polite negative of 見る (to see)?",
+          "options": ["見ませんでした", "見ないでした", "見ませんだった", "見なかったです"],
+          "correctIndex": 0,
+          "explanation": "The polite negative of 見る is 見ません. Past form: 見ませんでした."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I don't know.' (polite) — Choose the correct sentence:",
+          "options": ["知りません。", "知っていません。", "知らません。", "知るません。"],
+          "correctIndex": 0,
+          "explanation": "知る → 知ります → 知りません. Note: 'I know' is 知っています (ている form), but the negative is simply 知りません."
+        }
+      ]
+    },
+    {
+      "sectionId": "naide-kudasai",
+      "title": "ないでください (Negative Requests)",
+      "explanation": "To ask someone NOT to do something, use the ない form + でください. For example: 食べないでください (please don't eat), 触らないでください (please don't touch). In casual speech, you can drop ください: 食べないで (don't eat). This pattern is essential for giving instructions, setting rules, and making polite prohibitions.",
+      "tip": "Don't confuse てください (please do) with ないでください (please don't do). Also note that ないで by itself can mean 'without doing': 朝ごはんを食べないで学校に行った (I went to school without eating breakfast).",
+      "examples": [
+        { "ja": "ここで写真を撮らないでください。", "en": "Please don't take photos here.", "highlight": "撮らないでください" },
+        { "ja": "心配しないでください。", "en": "Please don't worry.", "highlight": "しないでください" },
+        { "ja": "遅れないで！", "en": "Don't be late! (casual)", "highlight": "遅れないで" },
+        { "ja": "それを触らないでください。", "en": "Please don't touch that.", "highlight": "触らないでください" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'Please don't run.' (走る = to run) — Choose the correct sentence:",
+          "options": ["走ってください。", "走らないでください。", "走るないでください。", "走りないでください。"],
+          "correctIndex": 1,
+          "explanation": "走る is an う-verb. ない form: 走らない. Add でください: 走らないでください."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Please don't forget.' (忘れる = to forget) — Choose the correct sentence:",
+          "options": ["忘れないでください。", "忘らないでください。", "忘れるないでください。", "忘れなくてください。"],
+          "correctIndex": 0,
+          "explanation": "忘れる is a る-verb. ない form: 忘れない. Add でください: 忘れないでください."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 泣かないで mean?",
+          "options": ["Please cry.", "Don't cry. (casual)", "Without crying.", "Don't cry. (casual) / Without crying."],
+          "correctIndex": 3,
+          "explanation": "ないで can mean either a casual negative request ('don't cry') or 'without doing' ('without crying'), depending on context."
+        }
+      ]
+    }
+  ]
+}

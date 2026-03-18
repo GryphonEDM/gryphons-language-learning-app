@@ -1,0 +1,118 @@
+{
+  "lessonId": "questions-negation",
+  "nameEn": "Questions & Negation",
+  "nameAr": "الأسئلة والنفي",
+  "icon": "❓",
+  "tier": "A2",
+  "prerequisites": ["pronouns", "present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "question-words",
+      "title": "Question Words (أدوات الاستفهام)",
+      "explanation": "Arabic has a rich set of question words. The most important are: مَن (man, who), ما/ماذا (mā/mādhā, what), أين (ayna, where), متى (matā, when), كيف (kayfa, how), لماذا (limādhā, why), كم (kam, how much/how many), هل (hal, yes/no question marker). Question words usually come at the beginning of the sentence. Unlike English, Arabic does not change word order for questions with question words — you simply place the question word first and the rest of the sentence follows normal order. For yes/no questions, Arabic uses هل or أ (a shorter prefix form) at the start of the sentence: هل أنت طالب؟ (Are you a student?).",
+      "tip": "هل is the easiest way to form yes/no questions — just put هل at the beginning of any statement. هل أنت من مصر؟ (Are you from Egypt?). No other word order changes needed.",
+      "examples": [
+        { "ar": "مَن هذا؟", "en": "Who is this?", "highlight": "مَن" },
+        { "ar": "ماذا تريد؟", "en": "What do you want?", "highlight": "ماذا" },
+        { "ar": "أين المدرسة؟", "en": "Where is the school?", "highlight": "أين" },
+        { "ar": "متى تذهب؟", "en": "When do you go?", "highlight": "متى" },
+        { "ar": "كيف حالك؟", "en": "How are you? (literally: How is your condition?)", "highlight": "كيف" },
+        { "ar": "لماذا تدرس العربية؟", "en": "Why do you study Arabic?", "highlight": "لماذا" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you ask 'Where is the house?' in Arabic?",
+          "options": ["أين البيت؟", "متى البيت؟", "من البيت؟"],
+          "correctIndex": 0,
+          "explanation": "أين (ayna) means 'where'. Simply place it at the beginning of the sentence: أين البيت؟ (Where is the house?). No verb is needed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What word do you use to form yes/no questions in Arabic?",
+          "options": ["هل", "ما", "كيف"],
+          "correctIndex": 0,
+          "explanation": "هل (hal) is placed at the beginning of a statement to turn it into a yes/no question. For example: أنت طالب (You are a student) → هل أنت طالب؟ (Are you a student?)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does لماذا mean?",
+          "options": ["Why", "When", "How"],
+          "correctIndex": 0,
+          "explanation": "لماذا (limādhā) means 'why'. It is composed of لـ (for) + ما (what) + ذا (this), literally 'for what reason'. لماذا تدرس العربية؟ = 'Why do you study Arabic?'"
+        }
+      ]
+    },
+    {
+      "sectionId": "negation-present",
+      "title": "Negation: لا and ليس",
+      "explanation": "Arabic has different negation words depending on the type of sentence and tense. For negating present-tense verbs, use لا (lā) before the verb: لا أفهم (I don't understand), لا يعمل (he doesn't work). For negating nominal sentences (sentences without a verb, like 'He is a doctor'), use ليس (laysa) or its conjugated forms: ليس طبيبًا (He is not a doctor), ليست معلّمة (She is not a teacher). ليس conjugates for person and gender: لستُ (I am not), لستَ (you m. are not), لستِ (you f. are not), ليس (he is not), ليست (she is not), لسنا (we are not), لستم (you pl. are not), ليسوا (they m. are not). لا can also negate nouns to mean 'no' or 'there is no': لا مشكلة (no problem).",
+      "tip": "Simple rule: لا + verb = 'don't/doesn't'. ليس + noun/adjective = 'is not/am not'. لا أعرف = I don't know. ليس هنا = He is not here.",
+      "examples": [
+        { "ar": "لا أفهم", "en": "I don't understand — لا negates the present-tense verb", "highlight": "لا" },
+        { "ar": "لا يتكلّم العربية", "en": "He doesn't speak Arabic", "highlight": "لا" },
+        { "ar": "ليس طبيبًا", "en": "He is not a doctor — ليس negates a nominal sentence", "highlight": "ليس" },
+        { "ar": "لستُ متعبًا", "en": "I am not tired — لستُ is the أنا form of ليس", "highlight": "لستُ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't understand' in Arabic?",
+          "options": ["لا أفهم", "ليس أفهم", "لم أفهم"],
+          "correctIndex": 0,
+          "explanation": "To negate a present-tense verb, place لا before it: لا أفهم (I don't understand). ليس is used for nominal sentences, and لم is for past-tense negation."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is not a teacher'?",
+          "options": ["ليست معلّمة", "لا معلّمة", "لم معلّمة"],
+          "correctIndex": 0,
+          "explanation": "For negating a nominal sentence ('She is a teacher' → 'She is not a teacher'), use ليس. Since the subject is feminine (she), use ليست: ليست معلّمة."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the أنا (I) form of ليس?",
+          "options": ["لستُ", "ليس", "ليست"],
+          "correctIndex": 0,
+          "explanation": "ليس conjugates like a past-tense verb. The أنا form is لستُ (lastu): لستُ متعبًا = 'I am not tired'. ليس is 'he is not' and ليست is 'she is not'."
+        }
+      ]
+    },
+    {
+      "sectionId": "negation-past-future",
+      "title": "Negation: لم (Past) and لن (Future)",
+      "explanation": "To negate the past, Arabic uses لم (lam) followed by the present-tense verb in a special shortened form called المضارع المجزوم (the jussive mood). The verb loses its final vowel or نون ending: لم أفهمْ (I did not understand — from أفهمُ), لم يذهبْ (he did not go — from يذهبُ), لم يكتبوا (they did not write — from يكتبون, dropping the نون). Although لم uses the present-tense verb form, the meaning is past. To negate the future, use لن (lan) followed by the present-tense verb in the subjunctive (المضارع المنصوب): لن أذهبَ (I will not go), لن يفهمَ (he will not understand). The verb after لن takes a fatḥa on its final letter.",
+      "tip": "لم + jussive = past negation ('did not'). لن + subjunctive = future negation ('will not'). Both use the present-tense verb form, but with different endings. This is a key feature of Arabic grammar.",
+      "examples": [
+        { "ar": "لم أفهمْ الدرس", "en": "I did not understand the lesson — لم + jussive for past negation", "highlight": "لم" },
+        { "ar": "لم يذهبْ إلى المدرسة", "en": "He did not go to school", "highlight": "لم" },
+        { "ar": "لن أذهبَ غدًا", "en": "I will not go tomorrow — لن for future negation", "highlight": "لن" },
+        { "ar": "لن يفهمَ بدون دراسة", "en": "He will not understand without studying", "highlight": "لن" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He did not go' in Arabic?",
+          "options": ["لم يذهبْ", "لا يذهب", "لن يذهبَ"],
+          "correctIndex": 0,
+          "explanation": "لم + the jussive form of the present-tense verb expresses past negation. لم يذهبْ = 'he did not go'. لا يذهب would mean 'he doesn't go' (present) and لن يذهبَ would mean 'he will not go' (future)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle negates the future in Arabic?",
+          "options": ["لن", "لم", "لا"],
+          "correctIndex": 0,
+          "explanation": "لن (lan) negates the future: لن أسافرَ = 'I will not travel'. لم negates the past, and لا negates the present."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Match the negation: لا = present, لم = past, لن = ?",
+          "options": ["Future", "Past", "Present"],
+          "correctIndex": 0,
+          "explanation": "The three main negation particles correspond to three tenses: لا negates the present (لا أعرف, I don't know), لم negates the past (لم أعرفْ, I didn't know), and لن negates the future (لن أعرفَ, I won't know)."
+        }
+      ]
+    }
+  ]
+}

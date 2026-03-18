@@ -23,6 +23,14 @@ import comprehensiveDictExt12 from '../data/vocabulary/comprehensive-dictionary-
 
 import { RU_TRANSLATIONS } from '../data/ru/translations.js';
 import { DE_TRANSLATIONS } from '../data/de/translations.js';
+import { ES_TRANSLATIONS } from '../data/es/translations.js';
+import { FR_TRANSLATIONS } from '../data/fr/translations.js';
+import { EL_TRANSLATIONS } from '../data/el/translations.js';
+import { HI_TRANSLATIONS } from '../data/hi/translations.js';
+import { AR_TRANSLATIONS } from '../data/ar/translations.js';
+import { KO_TRANSLATIONS } from '../data/ko/translations.js';
+import { ZH_TRANSLATIONS } from '../data/zh/translations.js';
+import { JA_TRANSLATIONS } from '../data/ja/translations.js';
 
 const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData];
 const COMPREHENSIVE = [comprehensiveDict, comprehensiveDictExt, comprehensiveDictExt2, comprehensiveDictExt3, comprehensiveDictExt4, comprehensiveDictExt5, comprehensiveDictExt6, comprehensiveDictExt7, comprehensiveDictExt8, comprehensiveDictExt9, comprehensiveDictExt10, comprehensiveDictExt11, comprehensiveDictExt12];
@@ -78,12 +86,12 @@ export const CATEGORY_DIFFICULTY = {
   'translations': 'A2',
 };
 
-const cache = { uk: { dictionary: null, vocabulary: null }, ru: { dictionary: null, vocabulary: null }, de: { dictionary: null, vocabulary: null } };
+const cache = { uk: { dictionary: null, vocabulary: null }, ru: { dictionary: null, vocabulary: null }, de: { dictionary: null, vocabulary: null }, es: { dictionary: null, vocabulary: null }, fr: { dictionary: null, vocabulary: null }, el: { dictionary: null, vocabulary: null }, hi: { dictionary: null, vocabulary: null }, ar: { dictionary: null, vocabulary: null }, ko: { dictionary: null, vocabulary: null }, zh: { dictionary: null, vocabulary: null }, ja: { dictionary: null, vocabulary: null } };
 
 function getDataForLang(langCode) {
-  const targetField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : 'uk';
-  const phoneticField = langCode === 'ru' ? 'phoneticRu' : langCode === 'de' ? 'phoneticDe' : 'phoneticUk';
-  const translations = langCode === 'ru' ? RU_TRANSLATIONS : langCode === 'de' ? DE_TRANSLATIONS : TRANSLATIONS;
+  const targetField = langCode === 'ru' ? 'ru' : langCode === 'de' ? 'de' : langCode === 'es' ? 'es' : langCode === 'fr' ? 'fr' : langCode === 'el' ? 'el' : langCode === 'hi' ? 'hi' : langCode === 'ar' ? 'ar' : langCode === 'ko' ? 'ko' : langCode === 'zh' ? 'zh' : langCode === 'ja' ? 'ja' : 'uk';
+  const phoneticField = langCode === 'ru' ? 'phoneticRu' : langCode === 'de' ? 'phoneticDe' : langCode === 'es' ? 'phoneticEs' : langCode === 'fr' ? 'frPhonetic' : langCode === 'el' ? 'elPhonetic' : langCode === 'hi' ? 'hiPhonetic' : langCode === 'ar' ? 'arPhonetic' : langCode === 'ko' ? 'koPhonetic' : langCode === 'zh' ? 'zhPhonetic' : langCode === 'ja' ? 'jaPhonetic' : 'phoneticUk';
+  const translations = langCode === 'ru' ? RU_TRANSLATIONS : langCode === 'de' ? DE_TRANSLATIONS : langCode === 'es' ? ES_TRANSLATIONS : langCode === 'fr' ? FR_TRANSLATIONS : langCode === 'el' ? EL_TRANSLATIONS : langCode === 'hi' ? HI_TRANSLATIONS : langCode === 'ar' ? AR_TRANSLATIONS : langCode === 'ko' ? KO_TRANSLATIONS : langCode === 'zh' ? ZH_TRANSLATIONS : langCode === 'ja' ? JA_TRANSLATIONS : TRANSLATIONS;
   return { targetField, phoneticField, themeData: THEME_DATA, comprehensiveData: COMPREHENSIVE, translations };
 }
 

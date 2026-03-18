@@ -43,8 +43,8 @@ function deleteAiDialogue(id) {
 }
 
 export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
-  const nameField = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
+  const nameField = 'name' + langCode.charAt(0).toUpperCase() + langCode.slice(1);
   const [phase, setPhase] = useState('picker'); // picker, generate, playing, complete
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing a dialogue conversation exercise in ${langName}. Answer questions about phrases, vocabulary, grammar, or pronunciation concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
@@ -238,9 +238,10 @@ export default function DialogueMode({ langCode = 'uk', dialogues, onSpeak, ttsE
     setAiProgressPct(0);
 
     const topic = aiTopic.trim() || 'a casual everyday conversation';
-    const playerName = langCode === 'ru' ? 'Вы' : langCode === 'de' ? 'Sie' : 'Ви';
-    const langLabel = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
-    const nameFieldLabel = langCode === 'ru' ? 'nameRu' : langCode === 'de' ? 'nameDe' : 'nameUk';
+    const playerNames = { uk: 'Ви', ru: 'Вы', de: 'Sie', es: 'Usted', fr: 'Vous', el: 'Εσείς', hi: 'आप', ar: 'أنت', ko: '당신', zh: '您', ja: 'あなた' };
+    const playerName = playerNames[langCode] || 'You';
+    const langLabel = langName;
+    const nameFieldLabel = nameField;
 
     const prompt = `Create a dialogue practice exercise for a language learner at ${aiDifficulty} level.
 Scenario: ${topic}
@@ -357,7 +358,7 @@ IMPORTANT RULES:
         [nameField]: dialogue[nameField] || '',
         icon: dialogue.icon || '💬',
         context: dialogue.context || '',
-        characters: dialogue.characters || { npc: { name: langCode === 'ru' ? 'Собеседник' : langCode === 'de' ? 'Gesprächspartner' : 'Співрозмовник' }, player: { name: playerName } },
+        characters: dialogue.characters || { npc: { name: { uk: 'Співрозмовник', ru: 'Собеседник', de: 'Gesprächspartner', es: 'Interlocutor', fr: 'Interlocuteur', el: 'Συνομιλητής', hi: 'वार्ताकार', ar: 'محاور', ko: '대화 상대', zh: '对话伙伴', ja: '会話相手' }[langCode] || 'Partner' }, player: { name: playerName } },
         exchanges: dialogue.exchanges,
         difficulty: aiDifficulty,
         langCode,

@@ -1,0 +1,151 @@
+{
+  "lessonId": "particles",
+  "nameEn": "Essential Particles",
+  "nameJa": "助詞の基本",
+  "icon": "🔗",
+  "tier": "A1",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "wa-vs-ga",
+      "title": "は (Topic) vs が (Subject)",
+      "explanation": "The difference between は and が is one of the most nuanced aspects of Japanese. は marks the topic — what the sentence is about, old/known information. が marks the subject — who or what performs the action, often introducing new information. Compare: 田中さんは学生です (Tanaka-san wa gakusei desu — As for Tanaka, he is a student — Tanaka is already known to the listener) vs 田中さんが学生です (Tanaka-san ga gakusei desu — Tanaka is the one who is a student — answering 'who is the student?'). Key rules: が is used with existence verbs (いる/ある): 猫がいます (There is a cat). が is used in subordinate clauses. が is used when the subject is new information or being emphasized. は is used for general statements, contrasts, and established topics.",
+      "tip": "A helpful test: if you can rephrase with 'As for X...' and it sounds natural, use は. If you are answering 'who/what does this?', use が. In questions with 誰が (dare ga — who?), the answer also takes が: 誰が来ましたか？→田中さんが来ました。",
+      "examples": [
+        { "ja": "私は学生です。", "en": "I am a student. (は = topic, general statement about me)", "highlight": "は" },
+        { "ja": "誰が来ましたか？", "en": "Who came? (が marks the unknown subject being asked about)", "highlight": "が" },
+        { "ja": "田中さんが来ました。", "en": "Tanaka came. (が = new information — answering 'who came?')", "highlight": "が" },
+        { "ja": "庭に花があります。", "en": "There are flowers in the garden. (が with existence verb あります)", "highlight": "が" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle fits? 誰___来ましたか？(Who came?)",
+          "options": ["が", "は", "を"],
+          "correctIndex": 0,
+          "explanation": "When asking about an unknown subject with question words like 誰 (who), 何 (what), use が. The subject is new/unknown information: 誰が来ましたか？"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'As for me, I am a teacher' (general self-introduction)?",
+          "options": ["私は先生です。", "私が先生です。", "私を先生です。"],
+          "correctIndex": 0,
+          "explanation": "For a general self-introduction (established topic, known information), use は: 私は先生です. Using が would imply 'I am the one who is the teacher' (answering 'who is the teacher?')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle is required with existence verbs like いる and ある?",
+          "options": ["が", "は", "を"],
+          "correctIndex": 0,
+          "explanation": "Existence verbs (いる for animate, ある for inanimate) take が to mark what exists: 猫がいます (There is a cat), 本があります (There is a book). は can replace が for contrast, but が is the default."
+        }
+      ]
+    },
+    {
+      "sectionId": "wo-object",
+      "title": "を (Direct Object Marker)",
+      "explanation": "The particle を (pronounced 'o', not 'wo' in modern Japanese) marks the direct object of a verb — the thing that receives the action. In 本を読みます (hon o yomimasu — I read a book), を tells us that 本 (book) is what is being read. を is used with transitive verbs (verbs that take an object): 水を飲みます (I drink water), 映画を見ます (I watch a movie), 手紙を書きます (I write a letter). を is also used with verbs of motion to indicate the space traversed: 公園を歩きます (I walk through the park), 橋を渡ります (I cross the bridge), 大学を出ます (I leave/graduate from the university). Note: を is the only kana that is used exclusively as a particle — it never appears in regular words.",
+      "tip": "If you can ask 'what?' after the verb in English (eat what? read what? drink what?), the answer is the direct object and takes を in Japanese. Remember: を is pronounced 'o' in modern standard Japanese, identical to the vowel お.",
+      "examples": [
+        { "ja": "りんごを食べます。", "en": "I eat an apple. (を marks りんご as the object being eaten)", "highlight": "を" },
+        { "ja": "音楽を聞きます。", "en": "I listen to music. (を marks 音楽 as the object)", "highlight": "を" },
+        { "ja": "公園を散歩します。", "en": "I stroll through the park. (を marks the space traversed)", "highlight": "を" },
+        { "ja": "日本語を勉強しています。", "en": "I am studying Japanese. (を marks 日本語 as the object)", "highlight": "を" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle marks the direct object of a verb?",
+          "options": ["を", "は", "に"],
+          "correctIndex": 0,
+          "explanation": "を marks the direct object — the thing that receives the action of the verb. Example: パンを食べます (I eat bread) — bread is what is being eaten."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: コーヒー___飲みます。(I drink coffee.)",
+          "options": ["を", "が", "で"],
+          "correctIndex": 0,
+          "explanation": "コーヒー is the direct object of 飲みます (drink), so it takes を: コーヒーを飲みます. You drink 'what?' — coffee."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does を indicate in 道を歩きます (michi o arukimasu)?",
+          "options": ["The path/space being walked through", "The destination", "The starting point"],
+          "correctIndex": 0,
+          "explanation": "With motion verbs like 歩く (walk), を marks the space traversed — the road being walked along. This is different from the direct object use but still uses を."
+        }
+      ]
+    },
+    {
+      "sectionId": "ni-target-time",
+      "title": "に (Target / Time / Location)",
+      "explanation": "The particle に is one of the most versatile particles in Japanese with several core uses. 1) Direction/Target — marks the destination of movement: 学校に行きます (gakkō ni ikimasu — I go to school), 日本に来ました (nihon ni kimashita — I came to Japan). 2) Time — marks specific points in time: 七時に起きます (shichiji ni okimasu — I wake up at 7:00), 月曜日に会いましょう (getsuyōbi ni aimashō — Let's meet on Monday). Note: relative time words (today, tomorrow, now) do NOT take に. 3) Location of existence — marks where something/someone exists (with いる/ある): 部屋に猫がいます (heya ni neko ga imasu — There is a cat in the room). 4) Indirect object/recipient: 友達にプレゼントをあげます (tomodachi ni purezento o agemasu — I give a present to my friend).",
+      "tip": "に points to a specific target — think of it as an arrow pointing at a destination, a time point, or a recipient. For time, only use に with specific times (3 o'clock, Monday, January) — NOT with relative times like きょう (today), あした (tomorrow), いま (now).",
+      "examples": [
+        { "ja": "学校に行きます。", "en": "I go to school. (に marks the destination)", "highlight": "に" },
+        { "ja": "六時に起きます。", "en": "I wake up at 6 o'clock. (に marks the specific time)", "highlight": "に" },
+        { "ja": "東京に住んでいます。", "en": "I live in Tokyo. (に marks the location of residence)", "highlight": "に" },
+        { "ja": "母にメールを送ります。", "en": "I send an email to my mother. (に marks the recipient)", "highlight": "に" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 八時___起きます。(I wake up at 8 o'clock.)",
+          "options": ["に", "で", "を"],
+          "correctIndex": 0,
+          "explanation": "Specific times (8 o'clock, Monday, March) take に: 八時に起きます. Remember, relative times like きょう and あした do NOT take に."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses に for a destination?",
+          "options": ["図書館に行きます。(I go to the library.)", "図書館を行きます。", "図書館で行きます。"],
+          "correctIndex": 0,
+          "explanation": "に marks the destination of movement verbs like 行く (go), 来る (come), 帰る (return): 図書館に行きます."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does きょう (today) take the particle に?",
+          "options": ["No — relative time words do not take に", "Yes — all time words take に", "Only in formal speech"],
+          "correctIndex": 0,
+          "explanation": "Relative time words like きょう (today), あした (tomorrow), きのう (yesterday), いま (now) do NOT take に. You say きょう行きます (not きょうに行きます). Only specific, absolute times take に."
+        }
+      ]
+    },
+    {
+      "sectionId": "de-location-means",
+      "title": "で (Location of Action / Means)",
+      "explanation": "The particle で has two primary uses. 1) Location of action — marks where an action takes place: 図書館で勉強します (toshokan de benkyō shimasu — I study at the library), レストランで食べます (resutoran de tabemasu — I eat at a restaurant). This is different from に, which marks where something exists. Compare: 図書館に本があります (There are books in the library — existence, に) vs 図書館で本を読みます (I read books at the library — action, で). 2) Means/method — marks the tool, method, or means by which an action is done: バスで行きます (basu de ikimasu — I go by bus), 日本語で話します (nihongo de hanashimasu — I speak in Japanese), はしで食べます (hashi de tabemasu — I eat with chopsticks). で can also indicate reason/cause: 病気で休みました (byōki de yasumimashita — I took a day off due to illness).",
+      "tip": "で vs に for location: if someone is DOING something there, use で. If something simply EXISTS there, use に. Think: で = action at a place, に = existence at a place. For means, think of で as 'by means of' or 'using'.",
+      "examples": [
+        { "ja": "カフェで勉強します。", "en": "I study at a cafe. (で marks where the action happens)", "highlight": "で" },
+        { "ja": "電車で会社に行きます。", "en": "I go to work by train. (で = means, に = destination)", "highlight": "で" },
+        { "ja": "英語で説明してください。", "en": "Please explain in English. (で marks the language used)", "highlight": "で" },
+        { "ja": "ペンで名前を書きます。", "en": "I write my name with a pen. (で marks the tool used)", "highlight": "で" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: レストラン___食べます。(I eat at a restaurant.)",
+          "options": ["で", "に", "を"],
+          "correctIndex": 0,
+          "explanation": "で marks the location where an action takes place. Eating is an action, so the restaurant where you eat takes で: レストランで食べます."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle marks the means of transportation in バス___行きます (I go by bus)?",
+          "options": ["で", "に", "は"],
+          "correctIndex": 0,
+          "explanation": "で marks the means or method: バスで行きます (go by bus), 自転車で行きます (go by bicycle). Think of で as 'by means of'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is に correct in 部屋に猫がいます but で correct in 部屋で遊びます?",
+          "options": ["に marks where something exists; で marks where an action happens", "They are interchangeable", "に is formal, で is casual"],
+          "correctIndex": 0,
+          "explanation": "部屋に猫がいます — the cat exists in the room (existence → に). 部屋で遊びます — playing happens in the room (action → で). This is a key distinction between に and で for location."
+        }
+      ]
+    }
+  ]
+}

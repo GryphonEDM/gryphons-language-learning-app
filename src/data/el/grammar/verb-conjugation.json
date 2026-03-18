@@ -1,0 +1,122 @@
+{
+  "lessonId": "verb-conjugation",
+  "nameEn": "Verb Conjugation Patterns",
+  "nameEl": "Κλίση Ρημάτων",
+  "icon": "🔄",
+  "tier": "B1",
+  "prerequisites": ["present-tense", "past-tense"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "deponent-verbs",
+      "title": "Deponent Verbs: Passive Form, Active Meaning",
+      "explanation": "Deponent verbs in Greek look passive — they end in -ομαι or -άμαι — but carry an active meaning. There is no active form; this passive-looking ending IS the verb. The present tense conjugation is: -ομαι (I), -εσαι (you), -εται (he/she/it), -όμαστε (we), -εστε (you plural), -ονται (they). For the -άμαι group (e.g. κοιμάμαι), the endings shift accordingly: -άμαι, -άσαι, -άται, -όμαστε, -άστε, -ούνται. Common deponent verbs include έρχομαι (to come), κάθομαι (to sit), σκέφτομαι (to think), αισθάνομαι (to feel), ντρέπομαι (to be ashamed/embarrassed), and κοιμάμαι (to sleep). You must memorise these as deponents — trying to use an active form will sound wrong to native speakers.",
+      "tip": "Spot a deponent: if the dictionary form ends in -ομαι or -άμαι but the meaning is active (not 'being done to'), it is deponent. Do not add the active endings -ω/-εις/-ει.",
+      "examples": [
+        { "el": "έρχομαι στο σπίτι αργά", "en": "I come home late", "highlight": "έρχομαι" },
+        { "el": "κάθεσαι εδώ κάθε μέρα;", "en": "do you sit here every day?", "highlight": "κάθεσαι" },
+        { "el": "σκέφτεται πολύ πριν μιλήσει", "en": "he/she thinks a lot before speaking", "highlight": "σκέφτεται" },
+        { "el": "αισθάνομαι πολύ καλά σήμερα", "en": "I feel very well today", "highlight": "αισθάνομαι" },
+        { "el": "ντρέπεσαι να μιλάς στα ελληνικά;", "en": "are you ashamed/embarrassed to speak Greek?", "highlight": "ντρέπεσαι" },
+        { "el": "κοιμάται ήδη στις δέκα", "en": "he/she is already asleep at ten", "highlight": "κοιμάται" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is a deponent verb in Greek?",
+          "options": ["A verb with a passive-looking ending (-ομαι/-άμαι) but an active meaning", "A verb that can only be used in the past tense", "A verb that never changes its ending"],
+          "correctIndex": 0,
+          "explanation": "Deponent verbs end in -ομαι or -άμαι but express an active action or state. Examples: έρχομαι (I come), κοιμάμαι (I sleep). There is no alternative active form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which ending do you use for 'we' in the -ομαι conjugation?",
+          "options": ["-όμαστε", "-εστε", "-ονται", "-εσαι"],
+          "correctIndex": 0,
+          "explanation": "The 'we' form of -ομαι deponent verbs is -όμαστε: ερχόμαστε (we come), κοιμόμαστε (we sleep)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is the correct form of 'σκέφτομαι' for 'you (singular) think'?",
+          "options": ["σκέφτεσαι", "σκέφτεται", "σκέφτομαι"],
+          "correctIndex": 0,
+          "explanation": "The second person singular of -ομαι verbs ends in -εσαι: σκέφτεσαι (you think). -εται is third person, -ομαι is first person."
+        }
+      ]
+    },
+    {
+      "sectionId": "compound-verbs",
+      "title": "Compound Verbs with Prefixes",
+      "explanation": "Greek forms many verbs by attaching prefixes — often from ancient Greek prepositions — to a base verb. These prefixes reliably shift or specialise the meaning. Common prefixes include: ανα- (up, re-), απο- (away, off), παρα- (beside, along), προ- (before, forward), συ(ν)- (together, co-), δια- (through, apart), επι- (on, upon), εξ/εκ- (out of). For example, λαμβάνω (to take) → αναλαμβάνω (to take on/undertake); φωνώ (to call) → επικοινωνώ (to communicate, literally 'call upon together'). Recognising the prefix lets you make educated guesses at unfamiliar verbs. Note that the prefix may cause spelling changes at the join (e.g. συν + φωνώ = συμφωνώ, with assimilation of ν to μ before φ).",
+      "tip": "Learn the prefix meaning once, then apply it to many verbs. συμφωνώ (to agree) and διαφωνώ (to disagree) are exact opposites formed with συν- (together) vs δια- (apart).",
+      "examples": [
+        { "el": "αναλαμβάνω αυτό το έργο", "en": "I undertake this project", "highlight": "αναλαμβάνω" },
+        { "el": "αποφασίζεις γρήγορα", "en": "you decide quickly", "highlight": "αποφασίζεις" },
+        { "el": "παρακολουθούμε το μάθημα", "en": "we attend the lesson", "highlight": "παρακολουθούμε" },
+        { "el": "προτείνω μια άλλη λύση", "en": "I suggest another solution", "highlight": "προτείνω" },
+        { "el": "συμφωνούμε με αυτό", "en": "we agree with that", "highlight": "συμφωνούμε" },
+        { "el": "εξηγεί την απάντηση με απλά λόγια", "en": "he/she explains the answer in simple words", "highlight": "εξηγεί" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the prefix 'συ(ν)-' generally mean in Greek compound verbs?",
+          "options": ["together / co-", "away / off", "through / apart", "before / forward"],
+          "correctIndex": 0,
+          "explanation": "συ(ν)- means together or co-. Hence συμφωνώ (to agree, literally 'sound together') and επικοινωνώ (to communicate, 'call together upon')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verb means 'to disagree'?",
+          "options": ["διαφωνώ", "συμφωνώ", "αποφασίζω", "προτείνω"],
+          "correctIndex": 0,
+          "explanation": "διαφωνώ (to disagree) uses the prefix δια- (apart/through), contrasting with συμφωνώ (to agree) which uses συν- (together)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'παρακολουθώ' mean?",
+          "options": ["to attend / follow (a course or event)", "to suggest", "to undertake", "to explain"],
+          "correctIndex": 0,
+          "explanation": "παρακολουθώ means to attend or follow (e.g. a lecture, a show). It comes from παρα- (beside/along) + ακολουθώ (to follow): 'to follow alongside'."
+        }
+      ]
+    },
+    {
+      "sectionId": "verb-aspect",
+      "title": "Verb Aspect: Imperfective vs Perfective",
+      "explanation": "Aspect is one of the most important features of the Greek verb system. Every Greek verb has two stems: an imperfective stem and a perfective stem. Aspect expresses how the speaker views the action — not when it happened, but whether it is seen as ongoing/habitual (imperfective) or as a complete, bounded event (perfective). The present tense always uses the imperfective stem and describes actions that are happening now, happen regularly, or are in progress. The aorist (simple past) uses the perfective stem and presents the action as a single completed whole. The same distinction appears in the subjunctive and imperative: θα + imperfective = future ongoing; θα + perfective = future completed event. For example, γράφω (I write / I am writing — imperfective) vs έγραψα (I wrote — perfective); μιλώ (I speak / I am speaking) vs μίλησα (I spoke, once). The perfective stem is formed in various ways: often by adding -σ- before the ending, or by a root change (πηγαίνω → πάω/πήγα).",
+      "tip": "Think of imperfective as a movie (action in progress, repeating) and perfective as a snapshot (action completed, whole). Choose the stem first, then add tense endings.",
+      "examples": [
+        { "el": "γράφω κάθε μέρα (imperfective) / θα γράψω αύριο (perfective)", "en": "I write every day (ongoing habit) / I will write tomorrow (one completed act)", "highlight": "γράφω, γράψω" },
+        { "el": "μιλώ με τον φίλο μου (imperfective) / μίλησα μαζί του χθες (perfective)", "en": "I am talking with my friend (in progress) / I talked with him yesterday (completed)", "highlight": "μιλώ, μίλησα" },
+        { "el": "πηγαίνω στη δουλειά κάθε πρωί (imperfective)", "en": "I go to work every morning (habitual, imperfective)", "highlight": "πηγαίνω" },
+        { "el": "πήγα στην αγορά το πρωί (perfective)", "en": "I went to the market this morning (completed event, perfective)", "highlight": "πήγα" },
+        { "el": "θα γράφει για ώρες (imperfective future)", "en": "he/she will be writing for hours (extended future action)", "highlight": "θα γράφει" },
+        { "el": "θα γράψει ένα γράμμα (perfective future)", "en": "he/she will write a letter (one complete future act)", "highlight": "θα γράψει" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which stem does the Greek present tense always use?",
+          "options": ["The imperfective stem", "The perfective stem", "Either stem depending on the verb"],
+          "correctIndex": 0,
+          "explanation": "The present tense in Greek always uses the imperfective stem. It describes actions that are ongoing, habitual, or in progress: γράφω (I write / I am writing)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the core meaning of the perfective aspect?",
+          "options": ["The action is viewed as a single, completed whole", "The action is currently happening", "The action happens regularly in the present"],
+          "correctIndex": 0,
+          "explanation": "The perfective aspect presents an action as bounded and complete — a single event. It is used in the aorist (past) and with θα for a one-time completed future action."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence expresses a habitual present action (imperfective)?",
+          "options": ["μιλώ ελληνικά στη δουλειά κάθε μέρα", "μίλησα ελληνικά χθες", "θα μιλήσω ελληνικά αύριο"],
+          "correctIndex": 0,
+          "explanation": "μιλώ is the imperfective present: 'I speak Greek at work every day' — a habitual, ongoing pattern. μίλησα is aorist (completed past), θα μιλήσω is perfective future (one-off act)."
+        }
+      ]
+    }
+  ]
+}

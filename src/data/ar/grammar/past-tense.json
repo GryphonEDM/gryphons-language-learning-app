@@ -1,0 +1,116 @@
+{
+  "lessonId": "past-tense",
+  "nameEn": "Past Tense (الماضي)",
+  "nameAr": "الفعل الماضي",
+  "icon": "⏪",
+  "tier": "A2",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "madi-basics",
+      "title": "Introduction to الماضي",
+      "explanation": "The Arabic past tense is called الماضي (al-māḍī). Unlike the present tense which uses prefixes, the past tense uses suffixes attached to the verb stem. The base form (third person masculine singular — 'he did') has no suffix and is the simplest form of the verb. This is also the form listed in dictionaries. For example, كَتَبَ (kataba) means 'he wrote'. From this base, you add suffixes to indicate different persons: كَتَبْتُ (katabtu, I wrote), كَتَبْتَ (katabta, you m. wrote), كَتَبْتِ (katabti, you f. wrote), كَتَبَتْ (katabat, she wrote). Notice that the suffixes for 'I', 'you (m.)', and 'you (f.)' all start with ت — they differ in the final vowel.",
+      "tip": "The past tense is actually easier than the present tense because the base (he-form) has no affix at all, and all other forms simply add suffixes. Start by memorizing the he-form of common verbs.",
+      "examples": [
+        { "ar": "كَتَبَ", "en": "he wrote — base form, no suffix", "highlight": "كَتَبَ" },
+        { "ar": "كَتَبْتُ", "en": "I wrote — suffix ـتُ", "highlight": "ـتُ" },
+        { "ar": "كَتَبَتْ", "en": "she wrote — suffix ـَتْ", "highlight": "ـَتْ" },
+        { "ar": "كَتَبْتَ", "en": "you (m.) wrote — suffix ـتَ", "highlight": "ـتَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'he wrote' in Arabic?",
+          "options": ["كَتَبَ", "كَتَبْتُ", "يكتب"],
+          "correctIndex": 0,
+          "explanation": "كَتَبَ (kataba) is the base past-tense form meaning 'he wrote'. It has no suffix — it is the simplest form of the verb."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What suffix is added for 'I' in the past tense?",
+          "options": ["ـتُ (-tu)", "ـتَ (-ta)", "ـتِ (-ti)"],
+          "correctIndex": 0,
+          "explanation": "The suffix ـتُ (-tu) marks 'I' in the past tense. So كَتَبْتُ means 'I wrote'. The suffix ـتَ is for 'you (m.)' and ـتِ is for 'you (f.)'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does the Arabic past tense differ from the present tense in its formation?",
+          "options": ["The past uses suffixes while the present uses prefixes", "The past uses prefixes while the present uses suffixes", "Both use prefixes"],
+          "correctIndex": 0,
+          "explanation": "The past tense is formed by adding suffixes to the verb stem (كتب + تُ = كتبتُ), while the present tense uses prefixes (يـ + كتب = يكتب). This is a fundamental structural difference."
+        }
+      ]
+    },
+    {
+      "sectionId": "full-past-conjugation",
+      "title": "Full Past-Tense Conjugation",
+      "explanation": "Here is the complete past-tense conjugation of كتب (to write). Singular: أنا كتبْتُ (I wrote), أنتَ كتبْتَ (you m. wrote), أنتِ كتبْتِ (you f. wrote), هو كتبَ (he wrote), هي كتبَتْ (she wrote). Plural: نحن كتبْنا (we wrote), أنتم كتبْتُم (you m.pl. wrote), أنتنّ كتبْتُنَّ (you f.pl. wrote), هم كتبوا (they m. wrote), هنّ كتبْنَ (they f. wrote). Key suffixes to memorize: ـنا for 'we', ـتُم for 'you (m.pl.)', ـوا for 'they (m.)', and ـنَ for 'they (f.)'. The suffix ـوا is written with a silent alif after the wāw: كتبوا — this alif is not pronounced but is always written.",
+      "tip": "The three most common forms in everyday speech are the singular 'I/you/he/she' forms and the plural 'we/they' forms. Focus on: ـتُ (I), ـتَ/ـتِ (you), ـَ (he), ـَتْ (she), ـنا (we), ـوا (they m.).",
+      "examples": [
+        { "ar": "كتبْنا رسالة", "en": "We wrote a letter — suffix ـنا for 'we'", "highlight": "كتبْنا" },
+        { "ar": "كتبْتُم الدرس", "en": "You all (m.) wrote the lesson — suffix ـتُم", "highlight": "كتبْتُم" },
+        { "ar": "كتبوا القصة", "en": "They (m.) wrote the story — suffix ـوا (with silent alif)", "highlight": "كتبوا" },
+        { "ar": "ذهبَتْ إلى السوق", "en": "She went to the market — suffix ـَتْ for 'she'", "highlight": "ذهبَتْ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'we wrote' in Arabic?",
+          "options": ["كتبْنا", "كتبْتُم", "كتبوا"],
+          "correctIndex": 0,
+          "explanation": "The suffix ـنا marks 'we' in the past tense. So كتبْنا (katabnā) means 'we wrote'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The form كتبوا means 'they (m.) wrote'. Why is there an alif after the wāw?",
+          "options": ["It is a silent alif that is always written after وا in verb endings", "It changes the pronunciation", "It marks the feminine"],
+          "correctIndex": 0,
+          "explanation": "The alif in كتبوا is a spelling convention — it is always written after the masculine plural past-tense ending ـوا but is not pronounced. This is called ألف الجماعة (alif al-jamāʿa)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past-tense suffix for هي (she)?",
+          "options": ["ـَتْ (-at)", "ـتُ (-tu)", "ـنا (-nā)"],
+          "correctIndex": 0,
+          "explanation": "The suffix ـَتْ (-at) marks 'she' in the past tense. So كتبَتْ (katabat) means 'she wrote'. Note the fatḥa before the تْ, which distinguishes it from the 'I' suffix ـتُ."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-past-verbs",
+      "title": "Common Past-Tense Verbs",
+      "explanation": "Here are essential verbs in their past-tense هو form: ذَهَبَ (he went), أَكَلَ (he ate), شَرِبَ (he drank), دَرَسَ (he studied), فَهِمَ (he understood), عَمِلَ (he worked), سَمِعَ (he heard), فَتَحَ (he opened), جَلَسَ (he sat down), رَجَعَ (he returned). Notice that the internal vowel patterns vary: كَتَبَ follows fa-ʿa-la, شَرِبَ follows fa-ʿi-la, and some verbs follow other patterns. These vowel patterns must be learned with each verb. All of these verbs take the same suffixes — the suffix system is completely regular.",
+      "tip": "Arabic past-tense suffixes are 100% regular — there are no irregular suffix patterns. What varies between verbs is only the internal vowels of the stem. So once you know the suffixes, you can conjugate any verb.",
+      "examples": [
+        { "ar": "ذهبتُ إلى المدرسة", "en": "I went to school", "highlight": "ذهبتُ" },
+        { "ar": "أكلنا في المطعم", "en": "We ate at the restaurant", "highlight": "أكلنا" },
+        { "ar": "درسَتْ كثيرًا", "en": "She studied a lot", "highlight": "درسَتْ" },
+        { "ar": "فهموا الدرس", "en": "They (m.) understood the lesson", "highlight": "فهموا" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does ذهبتُ mean?",
+          "options": ["I went", "He went", "She went"],
+          "correctIndex": 0,
+          "explanation": "ذهبتُ has the suffix ـتُ which marks 'I' (أنا). So ذهبتُ means 'I went'. The base form ذهبَ (without suffix) means 'he went'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Are there irregular past-tense suffix patterns in Arabic?",
+          "options": ["No — the suffixes are completely regular for all verbs", "Yes — many common verbs have irregular suffixes", "Only the verb 'to be' is irregular"],
+          "correctIndex": 0,
+          "explanation": "Arabic past-tense suffixes are entirely regular. Every verb takes the same set of suffixes. What varies between verbs is the internal vowel pattern of the stem, not the suffixes."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "From the verb سَمِعَ (he heard), how would you say 'we heard'?",
+          "options": ["سمعْنا", "سمعوا", "يسمع"],
+          "correctIndex": 0,
+          "explanation": "To say 'we heard', add the suffix ـنا to the stem: سمعْنا (samiʿnā). The suffix ـنا always means 'we' in the past tense."
+        }
+      ]
+    }
+  ]
+}

@@ -16,10 +16,30 @@
         ],
         "en": [
           "My grandmother bakes delicious pies."
+        ],
+        "es": [
+          "Mi abuela hace la mejor sopa.",
+          "La abuela nos enseña a cocinar."
         ]
       },
-      "de": "Großmutter",
-      "phoneticDe": "GROHS-moot-er"
+      "de": "Großmutter/Oma",
+      "phoneticDe": "GROHS-moo-ter/OH-mah",
+      "es": "abuela",
+      "phoneticEs": "ah-BWEH-lah",
+      "fr": "grand-mère",
+      "frPhonetic": "grahn-MEHR",
+      "el": "γιαγιά",
+      "elPhonetic": "ya-YA",
+      "hi": "दादी",
+      "hiPhonetic": "DAA-dee",
+      "ar": "جَدَّة",
+      "arPhonetic": "JAD-da",
+      "ko": "할머니",
+      "koPhonetic": "HAL-mo-ni",
+      "zh": "奶奶",
+      "zhPhonetic": "nǎinai",
+      "ja": "おばあさん",
+      "jaPhonetic": "obaasan"
     },
     {
       "uk": "дідусь",
@@ -37,10 +57,30 @@
         ],
         "en": [
           "Grandfather reads the newspaper every morning."
+        ],
+        "es": [
+          "Mi abuelo cuenta historias increíbles.",
+          "El abuelo juega con sus nietos."
         ]
       },
-      "de": "Großvater",
-      "phoneticDe": "GROHS-fah-ter"
+      "de": "Großvater/Opa",
+      "phoneticDe": "GROHS-fah-ter/OH-pah",
+      "es": "abuelo",
+      "phoneticEs": "ah-BWEH-loh",
+      "fr": "grand-père",
+      "frPhonetic": "grahn-PEHR",
+      "el": "παππούς",
+      "elPhonetic": "pa-POOS",
+      "hi": "दादा",
+      "hiPhonetic": "DAA-daa",
+      "ar": "جَدّ",
+      "arPhonetic": "JADD",
+      "ko": "할아버지",
+      "koPhonetic": "ha-RA-bo-ji",
+      "zh": "爷爷",
+      "zhPhonetic": "yéye",
+      "ja": "おじいさん",
+      "jaPhonetic": "ojiisan"
     },
     {
       "uk": "онук",
@@ -58,10 +98,30 @@
         ],
         "en": [
           "The grandson helps his grandfather in the garden."
+        ],
+        "es": [
+          "El nieto visita a sus abuelos cada verano.",
+          "Mi nieto aprendió a caminar hoy."
         ]
       },
       "de": "Enkel",
-      "phoneticDe": "ENK-el"
+      "phoneticDe": "EN-kel",
+      "es": "nieto",
+      "phoneticEs": "NYEH-toh",
+      "fr": "petit-fils",
+      "frPhonetic": "puh-tee-FEES",
+      "el": "εγγονός",
+      "elPhonetic": "e-go-NOS",
+      "hi": "पोता",
+      "hiPhonetic": "PO-taa",
+      "ar": "حَفِيد",
+      "arPhonetic": "ha-FEED",
+      "ko": "손자",
+      "koPhonetic": "SON-ja",
+      "zh": "孙子",
+      "zhPhonetic": "sūnzi",
+      "ja": "孫",
+      "jaPhonetic": "mago"
     },
     {
       "uk": "онука",
@@ -79,10 +139,30 @@
         ],
         "en": [
           "The granddaughter paints beautiful pictures."
+        ],
+        "es": [
+          "La nieta le lee cuentos a su abuela.",
+          "Mi nieta tiene los ojos de su madre."
         ]
       },
       "de": "Enkelin",
-      "phoneticDe": "ENK-el-in"
+      "phoneticDe": "EN-keh-lin",
+      "es": "nieta",
+      "phoneticEs": "NYEH-tah",
+      "fr": "petite-fille",
+      "frPhonetic": "puh-teet-FEE-yuh",
+      "el": "εγγονή",
+      "elPhonetic": "e-go-NI",
+      "hi": "पोती",
+      "hiPhonetic": "PO-tee",
+      "ar": "حَفِيدَة",
+      "arPhonetic": "ha-FEE-da",
+      "ko": "손녀",
+      "koPhonetic": "SON-nyo",
+      "zh": "孙女",
+      "zhPhonetic": "sūnnǚ",
+      "ja": "孫娘",
+      "jaPhonetic": "magomusume"
     },
     {
       "uk": "племінник",
@@ -103,7 +183,23 @@
         ]
       },
       "de": "Neffe",
-      "phoneticDe": "NEF-eh"
+      "phoneticDe": "NEF-feh",
+      "es": "sobrino",
+      "phoneticEs": "soh-BREE-noh",
+      "fr": "neveu",
+      "frPhonetic": "nuh-VUH",
+      "el": "ανιψιός",
+      "elPhonetic": "a-ni-PSIOS",
+      "hi": "भतीजा",
+      "hiPhonetic": "bha-TEE-jaa",
+      "ar": "اِبْنُ الأَخ",
+      "arPhonetic": "IB-nul-AKH",
+      "ko": "조카",
+      "koPhonetic": "JO-ka",
+      "zh": "侄子",
+      "zhPhonetic": "zhízi",
+      "ja": "甥",
+      "jaPhonetic": "oi"
     },
     {
       "uk": "племінниця",
@@ -124,7 +220,23 @@
         ]
       },
       "de": "Nichte",
-      "phoneticDe": "NIKHT-eh"
+      "phoneticDe": "NIKH-teh",
+      "es": "sobrina",
+      "phoneticEs": "soh-BREE-nah",
+      "fr": "nièce",
+      "frPhonetic": "NYEHS",
+      "el": "ανιψιά",
+      "elPhonetic": "a-ni-PSIA",
+      "hi": "भतीजी",
+      "hiPhonetic": "bha-TEE-jee",
+      "ar": "بِنْتُ الأَخ",
+      "arPhonetic": "BIN-tul-AKH",
+      "ko": "조카딸",
+      "koPhonetic": "jo-ka-TTAL",
+      "zh": "侄女",
+      "zhPhonetic": "zhínǚ",
+      "ja": "姪",
+      "jaPhonetic": "mei"
     },
     {
       "uk": "зять",
@@ -145,7 +257,23 @@
         ]
       },
       "de": "Schwiegersohn",
-      "phoneticDe": "SHVEE-ger-zon"
+      "phoneticDe": "SHVEE-ger-zohn",
+      "es": "yerno",
+      "phoneticEs": "YER-no",
+      "fr": "gendre",
+      "frPhonetic": "ZHANDR",
+      "el": "γαμπρός",
+      "elPhonetic": "gam-BROS",
+      "hi": "दामाद",
+      "hiPhonetic": "DAA-maad",
+      "ar": "صِهْر",
+      "arPhonetic": "SIHR",
+      "ko": "사위",
+      "koPhonetic": "SA-wi",
+      "zh": "女婿",
+      "zhPhonetic": "nǚxu",
+      "ja": "婿",
+      "jaPhonetic": "muko"
     },
     {
       "uk": "невістка",
@@ -166,7 +294,23 @@
         ]
       },
       "de": "Schwiegertochter",
-      "phoneticDe": "SHVEE-ger-tokh-ter"
+      "phoneticDe": "SHVEE-ger-tokh-ter",
+      "es": "nuera",
+      "phoneticEs": "NUE-ra",
+      "fr": "belle-fille",
+      "frPhonetic": "bel-FEE-yuh",
+      "el": "νύφη",
+      "elPhonetic": "NI-fi",
+      "hi": "बहू",
+      "hiPhonetic": "ba-HOO",
+      "ar": "كَنَّة",
+      "arPhonetic": "KAN-na",
+      "ko": "며느리",
+      "koPhonetic": "MYEO-neu-ri",
+      "zh": "儿媳妇",
+      "zhPhonetic": "érxífù",
+      "ja": "嫁",
+      "jaPhonetic": "yome"
     },
     {
       "uk": "свекруха",
@@ -187,7 +331,23 @@
         ]
       },
       "de": "Schwiegermutter",
-      "phoneticDe": "SHVEE-ger-moot-er"
+      "phoneticDe": "SHVEE-ger-moo-ter",
+      "es": "suegra",
+      "phoneticEs": "SWAY-grah",
+      "fr": "belle-mère (du mari)",
+      "frPhonetic": "bel-MAIR (du ma-REE)",
+      "el": "πεθερά",
+      "elPhonetic": "pe-the-RA",
+      "hi": "सास",
+      "hiPhonetic": "SAAS",
+      "ar": "حَمَاة",
+      "arPhonetic": "ha-MAA",
+      "ko": "시어머니",
+      "koPhonetic": "shi-O-mo-ni",
+      "zh": "婆婆",
+      "zhPhonetic": "pópo",
+      "ja": "姑",
+      "jaPhonetic": "shuutome"
     },
     {
       "uk": "теща",
@@ -208,7 +368,23 @@
         ]
       },
       "de": "Schwiegermutter",
-      "phoneticDe": "SHVEE-ger-moot-er"
+      "phoneticDe": "SHVEE-ger-moo-ter",
+      "es": "suegra",
+      "phoneticEs": "SWAY-grah",
+      "fr": "belle-mère (de la femme)",
+      "frPhonetic": "bel-MAIR (de la FAM)",
+      "el": "πεθερά",
+      "elPhonetic": "pe-the-RA",
+      "hi": "सास",
+      "hiPhonetic": "SAAS",
+      "ar": "حَمَاة",
+      "arPhonetic": "ha-MAA",
+      "ko": "장모님",
+      "koPhonetic": "JANG-mo-nim",
+      "zh": "丈母娘",
+      "zhPhonetic": "zhàngmǔniáng",
+      "ja": "義母",
+      "jaPhonetic": "gibo"
     },
     {
       "uk": "тесть",
@@ -229,7 +405,23 @@
         ]
       },
       "de": "Schwiegervater",
-      "phoneticDe": "SHVEE-ger-fah-ter"
+      "phoneticDe": "SHVEE-ger-fah-ter",
+      "es": "suegro",
+      "phoneticEs": "SUE-gro",
+      "fr": "beau-père (côté femme)",
+      "frPhonetic": "bo-PEHR-ko-tay-FAM",
+      "el": "πεθερός",
+      "elPhonetic": "pe-the-ROS",
+      "hi": "ससुर",
+      "hiPhonetic": "SA-sur",
+      "ar": "حَمُو",
+      "arPhonetic": "HA-moo",
+      "ko": "장인",
+      "koPhonetic": "JANG-in",
+      "zh": "岳父",
+      "zhPhonetic": "yuèfù",
+      "ja": "義父",
+      "jaPhonetic": "gifu"
     },
     {
       "uk": "свекор",
@@ -250,7 +442,23 @@
         ]
       },
       "de": "Schwiegervater",
-      "phoneticDe": "SHVEE-ger-fah-ter"
+      "phoneticDe": "SHVEE-ger-fah-ter",
+      "es": "suegro",
+      "phoneticEs": "SUE-gro",
+      "fr": "beau-père (côté mari)",
+      "frPhonetic": "bo-PEHR-ko-tay-ma-REE",
+      "el": "πεθερός",
+      "elPhonetic": "pe-the-ROS",
+      "hi": "ससुर",
+      "hiPhonetic": "SA-sur",
+      "ar": "حَمُو",
+      "arPhonetic": "HA-moo",
+      "ko": "시아버지",
+      "koPhonetic": "SI-a-BEO-ji",
+      "zh": "公公",
+      "zhPhonetic": "gōnggong",
+      "ja": "舅",
+      "jaPhonetic": "shuuto"
     },
     {
       "uk": "хрещений батько",
@@ -270,8 +478,24 @@
           "My godfather lives in another city."
         ]
       },
-      "de": "Taufpate",
-      "phoneticDe": "TOWF-pah-teh"
+      "de": "Patenonkel",
+      "phoneticDe": "PAH-ten-on-kel",
+      "es": "padrino",
+      "phoneticEs": "pa-DRI-no",
+      "fr": "parrain",
+      "frPhonetic": "pa-RAN",
+      "el": "νονός",
+      "elPhonetic": "no-NOS",
+      "hi": "धर्मपिता",
+      "hiPhonetic": "dharm-PI-taa",
+      "ar": "عَرَّاب",
+      "arPhonetic": "ar-RAAB",
+      "ko": "대부",
+      "koPhonetic": "DAE-bu",
+      "zh": "教父",
+      "zhPhonetic": "jiàofù",
+      "ja": "名付け親",
+      "jaPhonetic": "nazuke oya"
     },
     {
       "uk": "хрещена мати",
@@ -291,8 +515,24 @@
           "My godmother came to my birthday."
         ]
       },
-      "de": "Taufpatin",
-      "phoneticDe": "TOWF-pah-tin"
+      "de": "Patentante",
+      "phoneticDe": "PAH-ten-tan-teh",
+      "es": "madrina",
+      "phoneticEs": "ma-DRI-na",
+      "fr": "marraine",
+      "frPhonetic": "ma-REN",
+      "el": "νονά",
+      "elPhonetic": "no-NA",
+      "hi": "धर्ममाता",
+      "hiPhonetic": "dharm-MAA-taa",
+      "ar": "عَرَّابَة",
+      "arPhonetic": "ar-RAA-ba",
+      "ko": "대모",
+      "koPhonetic": "DAE-mo",
+      "zh": "教母",
+      "zhPhonetic": "jiàomǔ",
+      "ja": "名付け親",
+      "jaPhonetic": "nazuke oya"
     },
     {
       "uk": "близнюки",
@@ -313,7 +553,23 @@
         ]
       },
       "de": "Zwillinge",
-      "phoneticDe": "TSVIL-ing-eh"
+      "phoneticDe": "TSVIL-ling-eh",
+      "es": "gemelos",
+      "phoneticEs": "he-ME-los",
+      "fr": "jumeaux",
+      "frPhonetic": "zhu-MO",
+      "el": "δίδυμα",
+      "elPhonetic": "DHI-dhi-ma",
+      "hi": "जुड़वाँ",
+      "hiPhonetic": "jur-VAAN",
+      "ar": "تَوْأَم",
+      "arPhonetic": "TAW-am",
+      "ko": "쌍둥이",
+      "koPhonetic": "SSANG-dung-i",
+      "zh": "双胞胎",
+      "zhPhonetic": "shuāngbāotāi",
+      "ja": "双子",
+      "jaPhonetic": "futago"
     },
     {
       "uk": "сирота",
@@ -334,7 +590,23 @@
         ]
       },
       "de": "Waise",
-      "phoneticDe": "VY-zeh"
+      "phoneticDe": "VY-zeh",
+      "es": "huérfano",
+      "phoneticEs": "WEHR-fa-no",
+      "fr": "orphelin",
+      "frPhonetic": "or-fuh-LAN",
+      "el": "ορφανός",
+      "elPhonetic": "or-fa-NOS",
+      "hi": "अनाथ",
+      "hiPhonetic": "a-NAATH",
+      "ar": "يَتِيم",
+      "arPhonetic": "ya-TEEM",
+      "ko": "고아",
+      "koPhonetic": "GO-a",
+      "zh": "孤儿",
+      "zhPhonetic": "gū'ér",
+      "ja": "孤児",
+      "jaPhonetic": "koji"
     },
     {
       "uk": "вдова",
@@ -355,7 +627,23 @@
         ]
       },
       "de": "Witwe",
-      "phoneticDe": "VIT-veh"
+      "phoneticDe": "VIT-veh",
+      "es": "viuda",
+      "phoneticEs": "VYOO-da",
+      "fr": "veuve",
+      "frPhonetic": "VUHV",
+      "el": "χήρα",
+      "elPhonetic": "HI-ra",
+      "hi": "विधवा",
+      "hiPhonetic": "VIDH-vaa",
+      "ar": "أَرْمَلَة",
+      "arPhonetic": "AR-ma-la",
+      "ko": "과부",
+      "koPhonetic": "GWA-bu",
+      "zh": "寡妇",
+      "zhPhonetic": "guǎfù",
+      "ja": "未亡人",
+      "jaPhonetic": "miboujin"
     },
     {
       "uk": "вдівець",
@@ -376,7 +664,23 @@
         ]
       },
       "de": "Witwer",
-      "phoneticDe": "VIT-ver"
+      "phoneticDe": "VIT-ver",
+      "es": "viudo",
+      "phoneticEs": "VYOO-do",
+      "fr": "veuf",
+      "frPhonetic": "VUHF",
+      "el": "χήρος",
+      "elPhonetic": "HI-ros",
+      "hi": "विधुर",
+      "hiPhonetic": "VI-dhur",
+      "ar": "أَرْمَل",
+      "arPhonetic": "AR-mal",
+      "ko": "홀아비",
+      "koPhonetic": "HOL-a-bi",
+      "zh": "鳏夫",
+      "zhPhonetic": "guānfū",
+      "ja": "男やもめ",
+      "jaPhonetic": "otoko yamome"
     },
     {
       "uk": "наречений",
@@ -397,7 +701,23 @@
         ]
       },
       "de": "Verlobter/Bräutigam",
-      "phoneticDe": "fer-LOHP-ter/BROY-ti-gam"
+      "phoneticDe": "fer-LOHP-ter/BROY-tee-gam",
+      "es": "novio",
+      "phoneticEs": "NO-vyо",
+      "fr": "fiancé",
+      "frPhonetic": "fyahn-SAY",
+      "el": "αρραβωνιαστικός",
+      "elPhonetic": "a-ra-vo-nia-sti-KOS",
+      "hi": "दूल्हा",
+      "hiPhonetic": "DOOL-haa",
+      "ar": "عَرِيس",
+      "arPhonetic": "a-REES",
+      "ko": "신랑",
+      "koPhonetic": "SIL-lang",
+      "zh": "未婚夫",
+      "zhPhonetic": "wèihūnfū",
+      "ja": "婚約者",
+      "jaPhonetic": "konyakusha"
     },
     {
       "uk": "наречена",
@@ -418,7 +738,23 @@
         ]
       },
       "de": "Verlobte/Braut",
-      "phoneticDe": "fer-LOHP-teh/browt"
+      "phoneticDe": "fer-LOHP-teh/BRAOWT",
+      "es": "novia",
+      "phoneticEs": "NO-vya",
+      "fr": "fiancée",
+      "frPhonetic": "fyahn-SAY",
+      "el": "αρραβωνιαστικιά",
+      "elPhonetic": "a-ra-vo-nia-sti-KIA",
+      "hi": "दुल्हन",
+      "hiPhonetic": "DUL-han",
+      "ar": "عَرُوس",
+      "arPhonetic": "a-ROOS",
+      "ko": "신부",
+      "koPhonetic": "SIN-bu",
+      "zh": "未婚妻",
+      "zhPhonetic": "wèihūnqī",
+      "ja": "花嫁",
+      "jaPhonetic": "hanayome"
     },
     {
       "uk": "колиска",
@@ -439,7 +775,23 @@
         ]
       },
       "de": "Wiege",
-      "phoneticDe": "VEE-geh"
+      "phoneticDe": "VEE-geh",
+      "es": "cuna",
+      "phoneticEs": "KOO-na",
+      "fr": "berceau",
+      "frPhonetic": "behr-SOH",
+      "el": "κούνια",
+      "elPhonetic": "KU-nia",
+      "hi": "पालना",
+      "hiPhonetic": "PAAL-naa",
+      "ar": "مَهْد",
+      "arPhonetic": "MAHD",
+      "ko": "요람",
+      "koPhonetic": "YO-ram",
+      "zh": "摇篮",
+      "zhPhonetic": "yáolán",
+      "ja": "ゆりかご",
+      "jaPhonetic": "yurikago"
     },
     {
       "uk": "підгузок",
@@ -460,7 +812,23 @@
         ]
       },
       "de": "Windel",
-      "phoneticDe": "VIN-del"
+      "phoneticDe": "VIN-del",
+      "es": "pañal",
+      "phoneticEs": "pa-NYAL",
+      "fr": "couche",
+      "frPhonetic": "KOOSH",
+      "el": "πάνα",
+      "elPhonetic": "PA-na",
+      "hi": "डायपर",
+      "hiPhonetic": "DAA-i-par",
+      "ar": "حِفَاض",
+      "arPhonetic": "hi-FAAD",
+      "ko": "기저귀",
+      "koPhonetic": "GI-jeo-gwi",
+      "zh": "尿布",
+      "zhPhonetic": "niàobù",
+      "ja": "おむつ",
+      "jaPhonetic": "omutsu"
     },
     {
       "uk": "соска",
@@ -481,7 +849,23 @@
         ]
       },
       "de": "Schnuller",
-      "phoneticDe": "SHNOOL-er"
+      "phoneticDe": "SHNUL-ler",
+      "es": "chupete",
+      "phoneticEs": "chu-PE-te",
+      "fr": "sucette",
+      "frPhonetic": "sü-SET",
+      "el": "πιπίλα",
+      "elPhonetic": "pi-PI-la",
+      "hi": "चुसनी",
+      "hiPhonetic": "CHUS-nee",
+      "ar": "لَهَّايَة",
+      "arPhonetic": "lah-HAA-ya",
+      "ko": "젖꼭지",
+      "koPhonetic": "JEOT-kkok-ji",
+      "zh": "奶嘴",
+      "zhPhonetic": "nǎizuǐ",
+      "ja": "おしゃぶり",
+      "jaPhonetic": "oshaburi"
     },
     {
       "uk": "козеня",
@@ -502,7 +886,23 @@
         ]
       },
       "de": "Zicklein",
-      "phoneticDe": "TSIK-line"
+      "phoneticDe": "TSIK-lyne",
+      "es": "cabrito",
+      "phoneticEs": "ka-BREE-to",
+      "fr": "chevreau",
+      "frPhonetic": "shuh-VROH",
+      "el": "κατσικάκι",
+      "elPhonetic": "ka-tsi-KA-ki",
+      "hi": "मेमना (बकरी का)",
+      "hiPhonetic": "MEM-naa",
+      "ar": "جَدْي",
+      "arPhonetic": "JAD-ee",
+      "ko": "새끼 염소",
+      "koPhonetic": "SAE-kki YEOM-so",
+      "zh": "小山羊",
+      "zhPhonetic": "xiǎo shānyáng",
+      "ja": "子ヤギ",
+      "jaPhonetic": "ko yagi"
     },
     {
       "uk": "ягня",
@@ -523,7 +923,23 @@
         ]
       },
       "de": "Lamm",
-      "phoneticDe": "lam"
+      "phoneticDe": "LAM",
+      "es": "cordero",
+      "phoneticEs": "kor-DE-ro",
+      "fr": "agneau",
+      "frPhonetic": "a-NYOH",
+      "el": "αρνάκι",
+      "elPhonetic": "ar-NA-ki",
+      "hi": "मेमना",
+      "hiPhonetic": "MEM-naa",
+      "ar": "حَمَل",
+      "arPhonetic": "HA-mal",
+      "ko": "새끼 양",
+      "koPhonetic": "SAE-kki YANG",
+      "zh": "羊羔",
+      "zhPhonetic": "yánggāo",
+      "ja": "子羊",
+      "jaPhonetic": "ko hitsuji"
     },
     {
       "uk": "теля",
@@ -544,7 +960,23 @@
         ]
       },
       "de": "Kalb",
-      "phoneticDe": "kalp"
+      "phoneticDe": "KALP",
+      "es": "ternero",
+      "phoneticEs": "ter-NE-ro",
+      "fr": "veau",
+      "frPhonetic": "VOH",
+      "el": "μοσχαράκι",
+      "elPhonetic": "mo-scha-RA-ki",
+      "hi": "बछड़ा",
+      "hiPhonetic": "bach-RAA",
+      "ar": "عِجْل",
+      "arPhonetic": "IJL",
+      "ko": "송아지",
+      "koPhonetic": "SONG-a-ji",
+      "zh": "小牛",
+      "zhPhonetic": "xiǎoniú",
+      "ja": "子牛",
+      "jaPhonetic": "ko ushi"
     },
     {
       "uk": "лоша",
@@ -565,7 +997,23 @@
         ]
       },
       "de": "Fohlen",
-      "phoneticDe": "FOH-len"
+      "phoneticDe": "FOH-len",
+      "es": "potro",
+      "phoneticEs": "PO-tro",
+      "fr": "poulain",
+      "frPhonetic": "poo-LAN",
+      "el": "πουλάρι",
+      "elPhonetic": "pu-LA-ri",
+      "hi": "बछेड़ा",
+      "hiPhonetic": "ba-CHHE-raa",
+      "ar": "مُهْر",
+      "arPhonetic": "MUHR",
+      "ko": "망아지",
+      "koPhonetic": "MANG-a-ji",
+      "zh": "小马驹",
+      "zhPhonetic": "xiǎo mǎjū",
+      "ja": "子馬",
+      "jaPhonetic": "ko uma"
     },
     {
       "uk": "цуценя",
@@ -586,7 +1034,23 @@
         ]
       },
       "de": "Welpe",
-      "phoneticDe": "VEL-peh"
+      "phoneticDe": "VEL-peh",
+      "es": "cachorro",
+      "phoneticEs": "ka-CHO-rro",
+      "fr": "chiot",
+      "frPhonetic": "SHYOH",
+      "el": "κουτάβι",
+      "elPhonetic": "ku-TA-vi",
+      "hi": "पिल्ला",
+      "hiPhonetic": "PIL-laa",
+      "ar": "جَرْو",
+      "arPhonetic": "JAR-woo",
+      "ko": "강아지",
+      "koPhonetic": "GANG-a-ji",
+      "zh": "小狗",
+      "zhPhonetic": "xiǎogǒu",
+      "ja": "子犬",
+      "jaPhonetic": "ko inu"
     },
     {
       "uk": "кошеня",
@@ -607,7 +1071,23 @@
         ]
       },
       "de": "Kätzchen",
-      "phoneticDe": "KETS-khen"
+      "phoneticDe": "KETS-khen",
+      "es": "gatito",
+      "phoneticEs": "ga-TEE-to",
+      "fr": "chaton",
+      "frPhonetic": "sha-TOHN",
+      "el": "γατάκι",
+      "elPhonetic": "ga-TA-ki",
+      "hi": "बिल्ली का बच्चा",
+      "hiPhonetic": "BIL-lee kaa BACH-chaa",
+      "ar": "هِرَّة صَغِيرَة",
+      "arPhonetic": "HIR-ra sa-GHEE-ra",
+      "ko": "새끼 고양이",
+      "koPhonetic": "SAE-kki GO-yang-i",
+      "zh": "小猫",
+      "zhPhonetic": "xiǎomāo",
+      "ja": "子猫",
+      "jaPhonetic": "ko neko"
     },
     {
       "uk": "лисиця",
@@ -625,10 +1105,30 @@
         ],
         "en": [
           "The fox is clever and agile."
+        ],
+        "es": [
+          "El zorro es muy astuto.",
+          "Vi un zorro en el bosque."
         ]
       },
       "de": "Fuchs",
-      "phoneticDe": "fooks"
+      "phoneticDe": "FOOKS",
+      "es": "zorro",
+      "phoneticEs": "THO-rroh",
+      "fr": "renard",
+      "frPhonetic": "ruh-NAR",
+      "el": "αλεπού",
+      "elPhonetic": "a-le-POU",
+      "hi": "लोमड़ी",
+      "hiPhonetic": "LOM-ree",
+      "ar": "ثَعْلَب",
+      "arPhonetic": "THA-lab",
+      "ko": "여우",
+      "koPhonetic": "YEO-u",
+      "zh": "狐狸",
+      "zhPhonetic": "húli",
+      "ja": "狐",
+      "jaPhonetic": "kitsune"
     },
     {
       "uk": "вовк",
@@ -646,10 +1146,30 @@
         ],
         "en": [
           "The wolf howls at night in the forest."
+        ],
+        "es": [
+          "El lobo aúlla a la luna llena.",
+          "Los lobos cazan en manada por las noches."
         ]
       },
       "de": "Wolf",
-      "phoneticDe": "volf"
+      "phoneticDe": "VOLF",
+      "es": "lobo",
+      "phoneticEs": "LOH-boh",
+      "fr": "loup",
+      "frPhonetic": "LOO",
+      "el": "λύκος",
+      "elPhonetic": "LI-kos",
+      "hi": "भेड़िया",
+      "hiPhonetic": "BHER-ee-yaa",
+      "ar": "ذِئْب",
+      "arPhonetic": "DHI-B",
+      "ko": "늑대",
+      "koPhonetic": "NEUK-deh",
+      "zh": "狼",
+      "zhPhonetic": "láng",
+      "ja": "狼",
+      "jaPhonetic": "ookami"
     },
     {
       "uk": "олень",
@@ -667,10 +1187,30 @@
         ],
         "en": [
           "The deer has beautiful antlers."
+        ],
+        "es": [
+          "El ciervo bebía agua en el río.",
+          "Un ciervo cruzó el camino del bosque."
         ]
       },
-      "de": "Reh",
-      "phoneticDe": "ray"
+      "de": "Reh/Hirsch",
+      "phoneticDe": "RAY/HEERSH",
+      "es": "ciervo",
+      "phoneticEs": "THYER-boh",
+      "fr": "cerf",
+      "frPhonetic": "SEHR",
+      "el": "ελάφι",
+      "elPhonetic": "e-LA-fi",
+      "hi": "हिरण",
+      "hiPhonetic": "HI-ran",
+      "ar": "غَزَال",
+      "arPhonetic": "gha-ZAAL",
+      "ko": "사슴",
+      "koPhonetic": "SA-seum",
+      "zh": "鹿",
+      "zhPhonetic": "lù",
+      "ja": "鹿",
+      "jaPhonetic": "shika"
     },
     {
       "uk": "лось",
@@ -691,7 +1231,23 @@
         ]
       },
       "de": "Elch",
-      "phoneticDe": "elkh"
+      "phoneticDe": "ELKH",
+      "es": "alce",
+      "phoneticEs": "AL-se",
+      "fr": "élan",
+      "frPhonetic": "ay-LAN",
+      "el": "άλκη",
+      "elPhonetic": "AL-ki",
+      "hi": "मूस",
+      "hiPhonetic": "MOOS",
+      "ar": "مُوظ",
+      "arPhonetic": "MOOZ",
+      "ko": "말코손바닥사슴",
+      "koPhonetic": "mal-ko-son-ba-dak-SA-seum",
+      "zh": "驼鹿",
+      "zhPhonetic": "tuólù",
+      "ja": "ヘラジカ",
+      "jaPhonetic": "herajika"
     },
     {
       "uk": "зебра",
@@ -712,7 +1268,23 @@
         ]
       },
       "de": "Zebra",
-      "phoneticDe": "TSAY-bra"
+      "phoneticDe": "TSAY-brah",
+      "es": "cebra",
+      "phoneticEs": "SEB-ra",
+      "fr": "zèbre",
+      "frPhonetic": "ZEB-ruh",
+      "el": "ζέβρα",
+      "elPhonetic": "ZEV-ra",
+      "hi": "ज़ेब्रा",
+      "hiPhonetic": "ZEB-raa",
+      "ar": "حِمَارٌ وَحْشِيّ",
+      "arPhonetic": "hi-MAA-run WAH-shee",
+      "ko": "얼룩말",
+      "koPhonetic": "EOL-lung-mal",
+      "zh": "斑马",
+      "zhPhonetic": "bānmǎ",
+      "ja": "シマウマ",
+      "jaPhonetic": "shimauma"
     },
     {
       "uk": "жирафа",
@@ -733,7 +1305,23 @@
         ]
       },
       "de": "Giraffe",
-      "phoneticDe": "gee-RAF-eh"
+      "phoneticDe": "zhee-RAF-feh",
+      "es": "jirafa",
+      "phoneticEs": "hi-RA-fa",
+      "fr": "girafe",
+      "frPhonetic": "zhee-RAF",
+      "el": "καμηλοπάρδαλη",
+      "elPhonetic": "ka-mi-lo-PAR-da-li",
+      "hi": "जिराफ़",
+      "hiPhonetic": "ji-RAAF",
+      "ar": "زَرَافَة",
+      "arPhonetic": "za-RAA-fa",
+      "ko": "기린",
+      "koPhonetic": "GI-rin",
+      "zh": "长颈鹿",
+      "zhPhonetic": "chángjǐnglù",
+      "ja": "キリン",
+      "jaPhonetic": "kirin"
     },
     {
       "uk": "носоріг",
@@ -754,7 +1342,23 @@
         ]
       },
       "de": "Nashorn",
-      "phoneticDe": "NAZ-horn"
+      "phoneticDe": "NAHS-horn",
+      "es": "rinoceronte",
+      "phoneticEs": "ri-no-se-RON-te",
+      "fr": "rhinocéros",
+      "frPhonetic": "ree-noh-say-ROS",
+      "el": "ρινόκερος",
+      "elPhonetic": "ri-NO-ke-ros",
+      "hi": "गैंडा",
+      "hiPhonetic": "GAIN-daa",
+      "ar": "وَحِيدُ القَرْنِ",
+      "arPhonetic": "wa-HEE-dul QARN",
+      "ko": "코뿔소",
+      "koPhonetic": "ko-PPUL-so",
+      "zh": "犀牛",
+      "zhPhonetic": "xīniú",
+      "ja": "サイ",
+      "jaPhonetic": "sai"
     },
     {
       "uk": "бегемот",
@@ -774,8 +1378,24 @@
           "The hippopotamus bathes in the river."
         ]
       },
-      "de": "Nilpferd",
-      "phoneticDe": "NEEL-pfairt"
+      "de": "Nilpferd/Flusspferd",
+      "phoneticDe": "NEEL-pfairt/FLOOS-pfairt",
+      "es": "hipopótamo",
+      "phoneticEs": "i-po-PO-ta-mo",
+      "fr": "hippopotame",
+      "frPhonetic": "ee-poh-poh-TAM",
+      "el": "ιπποπόταμος",
+      "elPhonetic": "i-po-PO-ta-mos",
+      "hi": "दरियाई घोड़ा",
+      "hiPhonetic": "da-ri-YAA-ee GHO-daa",
+      "ar": "فَرَسُ النَّهْرِ",
+      "arPhonetic": "FA-ra-sun NAHR",
+      "ko": "하마",
+      "koPhonetic": "HA-ma",
+      "zh": "河马",
+      "zhPhonetic": "hémǎ",
+      "ja": "カバ",
+      "jaPhonetic": "kaba"
     },
     {
       "uk": "горила",
@@ -796,7 +1416,23 @@
         ]
       },
       "de": "Gorilla",
-      "phoneticDe": "go-RIL-a"
+      "phoneticDe": "go-RIL-lah",
+      "es": "gorila",
+      "phoneticEs": "go-REE-la",
+      "fr": "gorille",
+      "frPhonetic": "go-REE-yuh",
+      "el": "γορίλας",
+      "elPhonetic": "go-RI-las",
+      "hi": "गोरिल्ला",
+      "hiPhonetic": "go-RIL-laa",
+      "ar": "غُورِيلَّا",
+      "arPhonetic": "ghoo-REEL-la",
+      "ko": "고릴라",
+      "koPhonetic": "GO-ril-la",
+      "zh": "大猩猩",
+      "zhPhonetic": "dàxīngxing",
+      "ja": "ゴリラ",
+      "jaPhonetic": "gorira"
     },
     {
       "uk": "шимпанзе",
@@ -817,7 +1453,23 @@
         ]
       },
       "de": "Schimpanse",
-      "phoneticDe": "shim-PAN-zeh"
+      "phoneticDe": "shim-PAN-zeh",
+      "es": "chimpancé",
+      "phoneticEs": "chim-pan-SE",
+      "fr": "chimpanzé",
+      "frPhonetic": "sham-pahn-ZAY",
+      "el": "χιμπατζής",
+      "elPhonetic": "him-ban-DZIS",
+      "hi": "चिंपैंज़ी",
+      "hiPhonetic": "chim-PAN-zee",
+      "ar": "شِمْبَانْزِي",
+      "arPhonetic": "shim-BAAN-zee",
+      "ko": "침팬지",
+      "koPhonetic": "CHIM-paen-ji",
+      "zh": "黑猩猩",
+      "zhPhonetic": "hēixīngxing",
+      "ja": "チンパンジー",
+      "jaPhonetic": "chinpanjii"
     },
     {
       "uk": "мавпа",
@@ -838,7 +1490,23 @@
         ]
       },
       "de": "Affe",
-      "phoneticDe": "AF-eh"
+      "phoneticDe": "AH-feh",
+      "es": "mono",
+      "phoneticEs": "MO-no",
+      "fr": "singe",
+      "frPhonetic": "SANZH",
+      "el": "μαϊμού",
+      "elPhonetic": "ma-i-MOU",
+      "hi": "बंदर",
+      "hiPhonetic": "BAN-dar",
+      "ar": "قِرْد",
+      "arPhonetic": "QIRD",
+      "ko": "원숭이",
+      "koPhonetic": "won-SUNG-i",
+      "zh": "猴子",
+      "zhPhonetic": "hóuzi",
+      "ja": "猿",
+      "jaPhonetic": "saru"
     },
     {
       "uk": "верблюд",
@@ -859,7 +1527,23 @@
         ]
       },
       "de": "Kamel",
-      "phoneticDe": "ka-MAYL"
+      "phoneticDe": "kah-MAYL",
+      "es": "camello",
+      "phoneticEs": "ka-MEL-yo",
+      "fr": "chameau",
+      "frPhonetic": "sha-MOH",
+      "el": "καμήλα",
+      "elPhonetic": "ka-MI-la",
+      "hi": "ऊँट",
+      "hiPhonetic": "OONT",
+      "ar": "جَمَل",
+      "arPhonetic": "JA-mal",
+      "ko": "낙타",
+      "koPhonetic": "NAK-ta",
+      "zh": "骆驼",
+      "zhPhonetic": "luòtuo",
+      "ja": "ラクダ",
+      "jaPhonetic": "rakuda"
     },
     {
       "uk": "кенгуру",
@@ -880,7 +1564,23 @@
         ]
       },
       "de": "Känguru",
-      "phoneticDe": "KENG-oo-roo"
+      "phoneticDe": "KENG-goo-roo",
+      "es": "canguro",
+      "phoneticEs": "kan-GOO-ro",
+      "fr": "kangourou",
+      "frPhonetic": "kahn-goo-ROO",
+      "el": "καγκουρό",
+      "elPhonetic": "kan-gu-RO",
+      "hi": "कंगारू",
+      "hiPhonetic": "kan-GAA-roo",
+      "ar": "كَنْغَر",
+      "arPhonetic": "KAN-ghar",
+      "ko": "캥거루",
+      "koPhonetic": "KAENG-geo-ru",
+      "zh": "袋鼠",
+      "zhPhonetic": "dàishǔ",
+      "ja": "カンガルー",
+      "jaPhonetic": "kangaruu"
     },
     {
       "uk": "бобер",
@@ -901,7 +1601,23 @@
         ]
       },
       "de": "Biber",
-      "phoneticDe": "BEE-ber"
+      "phoneticDe": "BEE-ber",
+      "es": "castor",
+      "phoneticEs": "cas-TOR",
+      "fr": "castor",
+      "frPhonetic": "kas-TOR",
+      "el": "κάστορας",
+      "elPhonetic": "KAS-to-ras",
+      "hi": "ऊदबिलाव",
+      "hiPhonetic": "ood-bi-LAAV",
+      "ar": "قندس",
+      "arPhonetic": "QUN-dus",
+      "ko": "비버",
+      "koPhonetic": "BI-beo",
+      "zh": "河狸",
+      "zhPhonetic": "hélí",
+      "ja": "ビーバー",
+      "jaPhonetic": "BII-baa"
     },
     {
       "uk": "їжак",
@@ -919,10 +1635,30 @@
         ],
         "en": [
           "The hedgehog curled up into a ball."
+        ],
+        "es": [
+          "El erizo se enrolla cuando se asusta.",
+          "Encontré un erizo en el jardín."
         ]
       },
       "de": "Igel",
-      "phoneticDe": "EE-gel"
+      "phoneticDe": "EE-gel",
+      "es": "erizo",
+      "phoneticEs": "eh-REE-thoh",
+      "fr": "hérisson",
+      "frPhonetic": "ay-ree-SON",
+      "el": "σκαντζόχοιρος",
+      "elPhonetic": "skan-DZO-hi-ros",
+      "hi": "साही",
+      "hiPhonetic": "SAA-hee",
+      "ar": "قُنْفُذ",
+      "arPhonetic": "QUN-fudh",
+      "ko": "고슴도치",
+      "koPhonetic": "go-seum-DO-chi",
+      "zh": "刺猬",
+      "zhPhonetic": "cìwei",
+      "ja": "ハリネズミ",
+      "jaPhonetic": "harinezumi"
     },
     {
       "uk": "білка",
@@ -940,10 +1676,30 @@
         ],
         "en": [
           "The squirrel gathers nuts for winter."
+        ],
+        "es": [
+          "La ardilla guarda nueces para el invierno.",
+          "Una ardilla trepó al árbol rápidamente."
         ]
       },
       "de": "Eichhörnchen",
-      "phoneticDe": "EYKH-hern-khen"
+      "phoneticDe": "EYKH-huhrn-khen",
+      "es": "ardilla",
+      "phoneticEs": "ar-DEE-yah",
+      "fr": "écureuil",
+      "frPhonetic": "ay-kü-RUH-yuh",
+      "el": "σκίουρος",
+      "elPhonetic": "SKI-ou-ros",
+      "hi": "गिलहरी",
+      "hiPhonetic": "gi-LAH-ree",
+      "ar": "سِنْجَاب",
+      "arPhonetic": "sin-JAAB",
+      "ko": "다람쥐",
+      "koPhonetic": "da-RAM-jwi",
+      "zh": "松鼠",
+      "zhPhonetic": "sōngshǔ",
+      "ja": "リス",
+      "jaPhonetic": "risu"
     },
     {
       "uk": "хом'як",
@@ -964,7 +1720,23 @@
         ]
       },
       "de": "Hamster",
-      "phoneticDe": "HAM-ster"
+      "phoneticDe": "HAM-ster",
+      "es": "hámster",
+      "phoneticEs": "HAM-ster",
+      "fr": "hamster",
+      "frPhonetic": "AHM-stehr",
+      "el": "χάμστερ",
+      "elPhonetic": "CHAM-ster",
+      "hi": "हैम्स्टर",
+      "hiPhonetic": "HAM-star",
+      "ar": "هَامْسْتَر",
+      "arPhonetic": "HAAMS-tar",
+      "ko": "햄스터",
+      "koPhonetic": "HAEM-seu-teo",
+      "zh": "仓鼠",
+      "zhPhonetic": "cāngshǔ",
+      "ja": "ハムスター",
+      "jaPhonetic": "hamusutaa"
     },
     {
       "uk": "морська свинка",
@@ -985,7 +1757,23 @@
         ]
       },
       "de": "Meerschweinchen",
-      "phoneticDe": "MAYR-shvine-khen"
+      "phoneticDe": "MEER-shvyn-khen",
+      "es": "cobaya",
+      "phoneticEs": "ko-BA-ya",
+      "fr": "cochon d'Inde",
+      "frPhonetic": "ko-shohn-DAN",
+      "el": "ινδικό χοιρίδιο",
+      "elPhonetic": "in-di-KO hoi-RI-di-o",
+      "hi": "गिनी पिग",
+      "hiPhonetic": "GI-nee PIG",
+      "ar": "خِنْزِير غِينِيَا",
+      "arPhonetic": "khin-ZEER ghee-NEE-ya",
+      "ko": "기니피그",
+      "koPhonetic": "GI-ni-PI-geu",
+      "zh": "豚鼠",
+      "zhPhonetic": "túnshǔ",
+      "ja": "モルモット",
+      "jaPhonetic": "morumotto"
     },
     {
       "uk": "хамелеон",
@@ -1006,7 +1794,23 @@
         ]
       },
       "de": "Chamäleon",
-      "phoneticDe": "ka-MAY-lee-on"
+      "phoneticDe": "kha-MAY-lay-on",
+      "es": "camaleón",
+      "phoneticEs": "ka-ma-le-ON",
+      "fr": "caméléon",
+      "frPhonetic": "ka-may-lay-OHN",
+      "el": "χαμαιλέων",
+      "elPhonetic": "cha-me-LE-on",
+      "hi": "गिरगिट",
+      "hiPhonetic": "GIR-git",
+      "ar": "حِرْبَاء",
+      "arPhonetic": "hir-BAA",
+      "ko": "카멜레온",
+      "koPhonetic": "KA-mel-LE-on",
+      "zh": "变色龙",
+      "zhPhonetic": "biànsèlóng",
+      "ja": "カメレオン",
+      "jaPhonetic": "kamereon"
     },
     {
       "uk": "ігуана",
@@ -1027,7 +1831,23 @@
         ]
       },
       "de": "Leguan",
-      "phoneticDe": "lay-GOO-an"
+      "phoneticDe": "leh-GUAN",
+      "es": "iguana",
+      "phoneticEs": "i-GWA-na",
+      "fr": "iguane",
+      "frPhonetic": "ee-GWAN",
+      "el": "ιγκουάνα",
+      "elPhonetic": "i-GUA-na",
+      "hi": "इगुआना",
+      "hiPhonetic": "i-gu-AA-naa",
+      "ar": "إِغْوَانَا",
+      "arPhonetic": "igh-WAA-na",
+      "ko": "이구아나",
+      "koPhonetic": "I-gu-A-na",
+      "zh": "鬣蜥",
+      "zhPhonetic": "lièxī",
+      "ja": "イグアナ",
+      "jaPhonetic": "iguana"
     },
     {
       "uk": "черепаха",
@@ -1048,7 +1868,23 @@
         ]
       },
       "de": "Schildkröte",
-      "phoneticDe": "SHILT-kreh-teh"
+      "phoneticDe": "SHILT-kruh-teh",
+      "es": "tortuga",
+      "phoneticEs": "tor-TU-ga",
+      "fr": "tortue",
+      "frPhonetic": "tor-TÜ",
+      "el": "χελώνα",
+      "elPhonetic": "khe-LO-na",
+      "hi": "कछुआ",
+      "hiPhonetic": "kach-HOO-aa",
+      "ar": "سُلَحْفَاة",
+      "arPhonetic": "su-lah-FAA",
+      "ko": "거북이",
+      "koPhonetic": "geo-BU-gi",
+      "zh": "乌龟",
+      "zhPhonetic": "wūguī",
+      "ja": "亀",
+      "jaPhonetic": "kame"
     },
     {
       "uk": "крокодил",
@@ -1069,7 +1905,23 @@
         ]
       },
       "de": "Krokodil",
-      "phoneticDe": "kro-ko-DEEL"
+      "phoneticDe": "kroh-koh-DEEL",
+      "es": "cocodrilo",
+      "phoneticEs": "ko-ko-DRI-lo",
+      "fr": "crocodile",
+      "frPhonetic": "kroh-koh-DEEL",
+      "el": "κροκόδειλος",
+      "elPhonetic": "kro-KO-thi-los",
+      "hi": "मगरमच्छ",
+      "hiPhonetic": "MA-gar-machh",
+      "ar": "تِمْسَاح",
+      "arPhonetic": "tim-SAAH",
+      "ko": "악어",
+      "koPhonetic": "A-geo",
+      "zh": "鳄鱼",
+      "zhPhonetic": "èyú",
+      "ja": "ワニ",
+      "jaPhonetic": "wani"
     },
     {
       "uk": "пітон",
@@ -1090,7 +1942,23 @@
         ]
       },
       "de": "Python",
-      "phoneticDe": "PY-ton"
+      "phoneticDe": "PEW-ton",
+      "es": "pitón",
+      "phoneticEs": "pi-TON",
+      "fr": "python",
+      "frPhonetic": "pee-TOHN",
+      "el": "πύθωνας",
+      "elPhonetic": "PI-tho-nas",
+      "hi": "अजगर",
+      "hiPhonetic": "AJ-gar",
+      "ar": "أَفْعَى بَايْثُون",
+      "arPhonetic": "AF-a BAY-thoon",
+      "ko": "비단뱀",
+      "koPhonetic": "BI-dan-BAEM",
+      "zh": "蟒蛇",
+      "zhPhonetic": "mǎngshé",
+      "ja": "ニシキヘビ",
+      "jaPhonetic": "nishikihebi"
     },
     {
       "uk": "жаба",
@@ -1108,10 +1976,30 @@
         ],
         "en": [
           "The frog jumped into the pond."
+        ],
+        "es": [
+          "La rana salta de piedra en piedra.",
+          "Escuché una rana croar junto al lago."
         ]
       },
       "de": "Frosch",
-      "phoneticDe": "frosh"
+      "phoneticDe": "FROSH",
+      "es": "rana",
+      "phoneticEs": "RAH-nah",
+      "fr": "grenouille",
+      "frPhonetic": "gruh-NOO-yuh",
+      "el": "βάτραχος",
+      "elPhonetic": "VAT-ra-khos",
+      "hi": "मेंढक",
+      "hiPhonetic": "MENDH-ak",
+      "ar": "ضِفْدَع",
+      "arPhonetic": "DIF-da",
+      "ko": "개구리",
+      "koPhonetic": "geh-GU-ri",
+      "zh": "青蛙",
+      "zhPhonetic": "qīngwā",
+      "ja": "蛙",
+      "jaPhonetic": "kaeru"
     },
     {
       "uk": "равлик",
@@ -1132,7 +2020,23 @@
         ]
       },
       "de": "Schnecke",
-      "phoneticDe": "SHNEK-eh"
+      "phoneticDe": "SHNEK-keh",
+      "es": "caracol",
+      "phoneticEs": "ca-ra-COL",
+      "fr": "escargot",
+      "frPhonetic": "es-kar-GOH",
+      "el": "σαλιγκάρι",
+      "elPhonetic": "sa-lin-GA-ri",
+      "hi": "घोंघा",
+      "hiPhonetic": "GHON-ghaa",
+      "ar": "حَلَزُون",
+      "arPhonetic": "ha-la-ZOON",
+      "ko": "달팽이",
+      "koPhonetic": "dal-PENG-i",
+      "zh": "蜗牛",
+      "zhPhonetic": "wōniú",
+      "ja": "蝸牛",
+      "jaPhonetic": "katatsumuri"
     },
     {
       "uk": "черв'як",
@@ -1153,7 +2057,23 @@
         ]
       },
       "de": "Wurm",
-      "phoneticDe": "voorm"
+      "phoneticDe": "VOORM",
+      "es": "gusano",
+      "phoneticEs": "gu-SA-no",
+      "fr": "ver",
+      "frPhonetic": "VEHR",
+      "el": "σκουλήκι",
+      "elPhonetic": "skoo-LEE-ki",
+      "hi": "कीड़ा",
+      "hiPhonetic": "KEE-raa",
+      "ar": "دُودَة",
+      "arPhonetic": "DOO-da",
+      "ko": "벌레",
+      "koPhonetic": "BEOL-leh",
+      "zh": "蠕虫",
+      "zhPhonetic": "rúchóng",
+      "ja": "虫",
+      "jaPhonetic": "mushi"
     },
     {
       "uk": "піца",
@@ -1174,7 +2094,23 @@
         ]
       },
       "de": "Pizza",
-      "phoneticDe": "PEET-sah"
+      "phoneticDe": "PIT-sah",
+      "es": "pizza",
+      "phoneticEs": "PEET-sah",
+      "fr": "pizza",
+      "frPhonetic": "PEED-za",
+      "el": "πίτσα",
+      "elPhonetic": "PEET-sa",
+      "hi": "पिज़्ज़ा",
+      "hiPhonetic": "PIZ-zaa",
+      "ar": "بِيتْزَا",
+      "arPhonetic": "BEET-zaa",
+      "ko": "피자",
+      "koPhonetic": "PI-ja",
+      "zh": "披萨",
+      "zhPhonetic": "pīsà",
+      "ja": "ピザ",
+      "jaPhonetic": "piza"
     },
     {
       "uk": "гамбургер",
@@ -1195,7 +2131,23 @@
         ]
       },
       "de": "Hamburger",
-      "phoneticDe": "HAM-boor-ger"
+      "phoneticDe": "HAM-bur-ger",
+      "es": "hamburguesa",
+      "phoneticEs": "am-bur-GE-sa",
+      "fr": "hamburger",
+      "frPhonetic": "ahm-boor-GEHR",
+      "el": "χάμπουργκερ",
+      "elPhonetic": "CHAM-bur-ger",
+      "hi": "हैमबर्गर",
+      "hiPhonetic": "HAM-bar-gar",
+      "ar": "هَامْبُرْغَر",
+      "arPhonetic": "haam-BUR-ghar",
+      "ko": "햄버거",
+      "koPhonetic": "HAEM-beo-geo",
+      "zh": "汉堡包",
+      "zhPhonetic": "hànbǎobāo",
+      "ja": "ハンバーガー",
+      "jaPhonetic": "hanbaagaa"
     },
     {
       "uk": "сендвіч",
@@ -1215,8 +2167,24 @@
           "She took a sandwich to work."
         ]
       },
-      "de": "Sandwich",
-      "phoneticDe": "ZEND-vich"
+      "de": "Sandwich/belegtes Brot",
+      "phoneticDe": "ZEND-vitch/beh-LAYK-tes broht",
+      "es": "sándwich",
+      "phoneticEs": "SAHND-weech",
+      "fr": "sandwich",
+      "frPhonetic": "SAND-weetch",
+      "el": "σάντουιτς",
+      "elPhonetic": "SAN-doo-its",
+      "hi": "सैंडविच",
+      "hiPhonetic": "SAIND-vich",
+      "ar": "شَطِيرَة",
+      "arPhonetic": "sha-TEE-ra",
+      "ko": "샌드위치",
+      "koPhonetic": "sen-du-WI-chi",
+      "zh": "三明治",
+      "zhPhonetic": "sānmíngzhì",
+      "ja": "サンドイッチ",
+      "jaPhonetic": "sandoicchi"
     },
     {
       "uk": "хот-дог",
@@ -1237,7 +2205,23 @@
         ]
       },
       "de": "Hotdog",
-      "phoneticDe": "HOT-dok"
+      "phoneticDe": "HOT-dog",
+      "es": "perrito caliente",
+      "phoneticEs": "pe-RREE-to ka-LYEN-te",
+      "fr": "hot-dog",
+      "frPhonetic": "ot-DOG",
+      "el": "χοτ ντογκ",
+      "elPhonetic": "HOT dog",
+      "hi": "हॉट डॉग",
+      "hiPhonetic": "HOT DOG",
+      "ar": "هُوت دُوغ",
+      "arPhonetic": "hoot DOOGH",
+      "ko": "핫도그",
+      "koPhonetic": "HAT-do-geu",
+      "zh": "热狗",
+      "zhPhonetic": "règǒu",
+      "ja": "ホットドッグ",
+      "jaPhonetic": "hotto doggu"
     },
     {
       "uk": "картопля фрі",
@@ -1258,7 +2242,23 @@
         ]
       },
       "de": "Pommes frites",
-      "phoneticDe": "POM-freet"
+      "phoneticDe": "POM-mes FRITS",
+      "es": "papas fritas",
+      "phoneticEs": "PA-pas FREE-tas",
+      "fr": "frites",
+      "frPhonetic": "FREET",
+      "el": "τηγανητές πατάτες",
+      "elPhonetic": "ti-ga-ni-TES pa-TA-tes",
+      "hi": "फ्रेंच फ्राइज़",
+      "hiPhonetic": "FRENCH FRAA-iz",
+      "ar": "بَطَاطِس مَقْلِيَّة",
+      "arPhonetic": "ba-TAA-tis maq-LEE-ya",
+      "ko": "감자튀김",
+      "koPhonetic": "GAM-ja-TWI-gim",
+      "zh": "薯条",
+      "zhPhonetic": "shǔtiáo",
+      "ja": "フライドポテト",
+      "jaPhonetic": "furaido poteto"
     },
     {
       "uk": "чіпси",
@@ -1279,7 +2279,23 @@
         ]
       },
       "de": "Chips",
-      "phoneticDe": "chips"
+      "phoneticDe": "SHIPS",
+      "es": "papas fritas de bolsa",
+      "phoneticEs": "PA-pas FREE-tas de BOL-sa",
+      "fr": "chips",
+      "frPhonetic": "SHEEP",
+      "el": "τσιπς",
+      "elPhonetic": "tsips",
+      "hi": "चिप्स",
+      "hiPhonetic": "CHIPS",
+      "ar": "رُقَائِق بَطَاطِس",
+      "arPhonetic": "ru-QAA-iq ba-TAA-tis",
+      "ko": "감자칩",
+      "koPhonetic": "GAM-ja-chip",
+      "zh": "薯片",
+      "zhPhonetic": "shǔpiàn",
+      "ja": "ポテトチップス",
+      "jaPhonetic": "potetochippusu"
     },
     {
       "uk": "попкорн",
@@ -1300,7 +2316,23 @@
         ]
       },
       "de": "Popcorn",
-      "phoneticDe": "POP-korn"
+      "phoneticDe": "POP-korn",
+      "es": "palomitas",
+      "phoneticEs": "pa-lo-MEE-tas",
+      "fr": "popcorn",
+      "frPhonetic": "POP-korn",
+      "el": "ποπ κορν",
+      "elPhonetic": "pop-KORN",
+      "hi": "पॉपकॉर्न",
+      "hiPhonetic": "POP-korn",
+      "ar": "فُشَار",
+      "arPhonetic": "fu-SHAAR",
+      "ko": "팝콘",
+      "koPhonetic": "PAP-kon",
+      "zh": "爆米花",
+      "zhPhonetic": "bàomǐhuā",
+      "ja": "ポップコーン",
+      "jaPhonetic": "poppukoon"
     },
     {
       "uk": "кекс",
@@ -1321,7 +2353,23 @@
         ]
       },
       "de": "Muffin",
-      "phoneticDe": "MUF-in"
+      "phoneticDe": "MAF-fin",
+      "es": "magdalena",
+      "phoneticEs": "mag-da-LE-na",
+      "fr": "muffin",
+      "frPhonetic": "MEW-feen",
+      "el": "μάφιν",
+      "elPhonetic": "MA-fin",
+      "hi": "कपकेक",
+      "hiPhonetic": "KAP-kek",
+      "ar": "كَعْكَة صَغِيرَة",
+      "arPhonetic": "KA-ka sa-GHEE-ra",
+      "ko": "머핀",
+      "koPhonetic": "MEO-pin",
+      "zh": "纸杯蛋糕",
+      "zhPhonetic": "zhǐbēi dàngāo",
+      "ja": "マフィン",
+      "jaPhonetic": "mafin"
     },
     {
       "uk": "торт",
@@ -1342,7 +2390,23 @@
         ]
       },
       "de": "Torte",
-      "phoneticDe": "TOR-teh"
+      "phoneticDe": "TOR-teh",
+      "es": "pastel",
+      "phoneticEs": "pas-TEL",
+      "fr": "gâteau (à étages)",
+      "frPhonetic": "gah-TOH ah ay-TAZH",
+      "el": "τούρτα",
+      "elPhonetic": "TOOR-ta",
+      "hi": "केक",
+      "hiPhonetic": "KEK",
+      "ar": "كَعْكَة",
+      "arPhonetic": "KA-ka",
+      "ko": "케이크",
+      "koPhonetic": "KE-i-keu",
+      "zh": "蛋糕",
+      "zhPhonetic": "dàngāo",
+      "ja": "ケーキ",
+      "jaPhonetic": "keeki"
     },
     {
       "uk": "пиріг",
@@ -1362,8 +2426,24 @@
           "Grandma baked an apple pie."
         ]
       },
-      "de": "Pastete",
-      "phoneticDe": "pas-TAY-teh"
+      "de": "Kuchen/Torte",
+      "phoneticDe": "KOO-khen/TOR-teh",
+      "es": "pastel",
+      "phoneticEs": "pas-TEL",
+      "fr": "tarte",
+      "frPhonetic": "TART",
+      "el": "πίτα",
+      "elPhonetic": "PI-ta",
+      "hi": "पाई",
+      "hiPhonetic": "PAA-ee",
+      "ar": "فطيرة",
+      "arPhonetic": "fa-TEE-ra",
+      "ko": "파이",
+      "koPhonetic": "PA-i",
+      "zh": "馅饼",
+      "zhPhonetic": "xiànbǐng",
+      "ja": "パイ",
+      "jaPhonetic": "pai"
     },
     {
       "uk": "пиріжок",
@@ -1383,8 +2463,24 @@
           "I bought a pastry at the market."
         ]
       },
-      "de": "Törtchen",
-      "phoneticDe": "TERT-khen"
+      "de": "Teigtasche",
+      "phoneticDe": "TYKE-tah-sheh",
+      "es": "pastelito",
+      "phoneticEs": "pas-te-LI-to",
+      "fr": "petit pâté",
+      "frPhonetic": "pe-TEE pa-TEH",
+      "el": "πιτάκι",
+      "elPhonetic": "pi-TA-ki",
+      "hi": "पैटी",
+      "hiPhonetic": "PAI-tee",
+      "ar": "فطيرة صغيرة",
+      "arPhonetic": "fa-TEE-ra sa-GHEE-ra",
+      "ko": "파이",
+      "koPhonetic": "PA-i",
+      "zh": "小馅饼",
+      "zhPhonetic": "xiǎo xiànbǐng",
+      "ja": "パイ",
+      "jaPhonetic": "pai"
     },
     {
       "uk": "вареники",
@@ -1405,7 +2501,23 @@
         ]
       },
       "de": "Wareniki",
-      "phoneticDe": "va-REH-ni-ki"
+      "phoneticDe": "vah-REH-nee-kee",
+      "es": "varenyky",
+      "phoneticEs": "va-RE-ni-ki",
+      "fr": "raviolis ukrainiens",
+      "frPhonetic": "rah-VYOH-lee ew-kray-NYEH",
+      "el": "βαρένικι",
+      "elPhonetic": "va-RE-ni-ki",
+      "hi": "वरेनिकी",
+      "hiPhonetic": "va-RE-ni-kee",
+      "ar": "فَارِينِيكِي",
+      "arPhonetic": "faa-ree-NEE-kee",
+      "ko": "바레니키",
+      "koPhonetic": "BA-re-NI-ki",
+      "zh": "水饺",
+      "zhPhonetic": "shuǐjiǎo",
+      "ja": "ヴァレーニキ",
+      "jaPhonetic": "vareeniki"
     },
     {
       "uk": "пельмені",
@@ -1426,7 +2538,23 @@
         ]
       },
       "de": "Pelmeni",
-      "phoneticDe": "pel-MAY-ni"
+      "phoneticDe": "pel-MAY-nee",
+      "es": "empanadas",
+      "phoneticEs": "em-pa-NA-das",
+      "fr": "raviolis à la viande",
+      "frPhonetic": "rah-VYOH-lee ah lah VYAHND",
+      "el": "πελμένι",
+      "elPhonetic": "pel-ME-ni",
+      "hi": "मोमो",
+      "hiPhonetic": "MO-mo",
+      "ar": "بِيلْمِينِي",
+      "arPhonetic": "beel-MEE-nee",
+      "ko": "만두",
+      "koPhonetic": "MAN-du",
+      "zh": "肉饺子",
+      "zhPhonetic": "ròu jiǎozi",
+      "ja": "ペリメニ",
+      "jaPhonetic": "perimeni"
     },
     {
       "uk": "голубці",
@@ -1447,7 +2575,23 @@
         ]
       },
       "de": "Kohlrouladen",
-      "phoneticDe": "KOHL-roo-lah-den"
+      "phoneticDe": "KOHL-roo-lah-den",
+      "es": "rollitos de col",
+      "phoneticEs": "rro-LLI-tos de KOL",
+      "fr": "choux farcis",
+      "frPhonetic": "SHOO far-SEE",
+      "el": "ντολμάδες",
+      "elPhonetic": "dol-MA-thes",
+      "hi": "बंदगोभी रोल",
+      "hiPhonetic": "band-GO-bhee ROL",
+      "ar": "محشي ملفوف",
+      "arPhonetic": "mah-SHEE mal-FOOF",
+      "ko": "양배추말이",
+      "koPhonetic": "yang-beh-chu-MA-ri",
+      "zh": "菜卷",
+      "zhPhonetic": "càijuǎn",
+      "ja": "ロールキャベツ",
+      "jaPhonetic": "rōrukyabetsu"
     },
     {
       "uk": "деруни",
@@ -1468,7 +2612,23 @@
         ]
       },
       "de": "Kartoffelpuffer",
-      "phoneticDe": "kar-TOF-fel-poof-fer"
+      "phoneticDe": "kar-TOF-fel-poof-fer",
+      "es": "tortitas de patata",
+      "phoneticEs": "tor-TI-tas de pa-TA-ta",
+      "fr": "galettes de pommes de terre",
+      "frPhonetic": "ga-LET duh POM duh TEHR",
+      "el": "τηγανίτες πατάτας",
+      "elPhonetic": "ti-ga-NI-tes pa-TA-tas",
+      "hi": "आलू टिक्की",
+      "hiPhonetic": "AA-loo TIK-kee",
+      "ar": "فطائر البطاطس",
+      "arPhonetic": "fa-TAA-ir al-ba-TAA-tis",
+      "ko": "감자전",
+      "koPhonetic": "gam-ja-JEON",
+      "zh": "土豆饼",
+      "zhPhonetic": "tǔdòu bǐng",
+      "ja": "じゃがいもパンケーキ",
+      "jaPhonetic": "jagaimo pankēki"
     },
     {
       "uk": "борщ",
@@ -1489,7 +2649,23 @@
         ]
       },
       "de": "Borschtsch",
-      "phoneticDe": "BORSH-tsh"
+      "phoneticDe": "BORSHT-sh",
+      "es": "borscht",
+      "phoneticEs": "BORSHT",
+      "fr": "bortsch",
+      "frPhonetic": "BORTSH",
+      "el": "μπορς",
+      "elPhonetic": "BORS",
+      "hi": "बोर्श",
+      "hiPhonetic": "BORSH",
+      "ar": "بُورْشْت",
+      "arPhonetic": "BOORSHT",
+      "ko": "보르시",
+      "koPhonetic": "BO-ru-shi",
+      "zh": "罗宋汤",
+      "zhPhonetic": "luósòngtāng",
+      "ja": "ボルシチ",
+      "jaPhonetic": "borushichi"
     },
     {
       "uk": "солянка",
@@ -1509,8 +2685,24 @@
           "Solyanka is a spicy and hearty soup."
         ]
       },
-      "de": "Eintopf",
-      "phoneticDe": "EYN-topf"
+      "de": "Soljanka",
+      "phoneticDe": "sol-YAHN-kah",
+      "es": "potaje",
+      "phoneticEs": "po-TA-he",
+      "fr": "soupe épaisse salée",
+      "frPhonetic": "SOOP ay-PESS sah-LAY",
+      "el": "σολιάνκα",
+      "elPhonetic": "so-LIAN-ka",
+      "hi": "गाढ़ा सूप",
+      "hiPhonetic": "GAA-rhaa SOOP",
+      "ar": "سُولْيَانْكَا",
+      "arPhonetic": "sol-YAAN-ka",
+      "ko": "솔랸카",
+      "koPhonetic": "SOL-lyan-ka",
+      "zh": "浓汤",
+      "zhPhonetic": "nóngtāng",
+      "ja": "ソリャンカ",
+      "jaPhonetic": "soryanka"
     },
     {
       "uk": "окрошка",
@@ -1530,8 +2722,24 @@
           "Okroshka is refreshing in the heat."
         ]
       },
-      "de": "kalte Gemüsesuppe",
-      "phoneticDe": "KAL-teh geh-MEW-zeh-zoop-eh"
+      "de": "Okroschka",
+      "phoneticDe": "ok-ROSH-kah",
+      "es": "gazpacho",
+      "phoneticEs": "gas-PA-cho",
+      "fr": "soupe froide aux légumes",
+      "frPhonetic": "SOOP FRWAHD oh lay-GEWM",
+      "el": "οκρόσκα",
+      "elPhonetic": "o-KROS-ka",
+      "hi": "ठंडा सब्ज़ी का सूप",
+      "hiPhonetic": "THAN-daa sub-ZEE kaa SOOP",
+      "ar": "أُوكْرُوشْكَا",
+      "arPhonetic": "ok-ROOSH-ka",
+      "ko": "오크로시카",
+      "koPhonetic": "O-keu-RO-si-ka",
+      "zh": "凉汤",
+      "zhPhonetic": "liángtāng",
+      "ja": "オクローシカ",
+      "jaPhonetic": "okurooshika"
     },
     {
       "uk": "сало",
@@ -1552,7 +2760,23 @@
         ]
       },
       "de": "Schmalz/Speck",
-      "phoneticDe": "shmalts/shpek"
+      "phoneticDe": "SHMALTS/SHPEK",
+      "es": "manteca de cerdo",
+      "phoneticEs": "man-TE-ka de SER-do",
+      "fr": "lard",
+      "frPhonetic": "LAR",
+      "el": "λαρδί",
+      "elPhonetic": "lar-DI",
+      "hi": "चरबी",
+      "hiPhonetic": "CHAR-bee",
+      "ar": "شَحْم",
+      "arPhonetic": "SHAHM",
+      "ko": "돼지비계",
+      "koPhonetic": "DWAE-ji-BI-gye",
+      "zh": "猪油",
+      "zhPhonetic": "zhūyóu",
+      "ja": "ラード",
+      "jaPhonetic": "raado"
     },
     {
       "uk": "кисляк",
@@ -1573,7 +2797,23 @@
         ]
       },
       "de": "Sauermilch",
-      "phoneticDe": "ZOW-er-milkh"
+      "phoneticDe": "ZAO-er-milkh",
+      "es": "leche agria",
+      "phoneticEs": "LE-che A-grya",
+      "fr": "lait fermenté",
+      "frPhonetic": "LAY fer-mahn-TAY",
+      "el": "ξινόγαλο",
+      "elPhonetic": "ksi-NO-ga-lo",
+      "hi": "खट्टा दूध",
+      "hiPhonetic": "KHAT-taa DOODH",
+      "ar": "لَبَن رَائِب",
+      "arPhonetic": "LA-ban RAA-ib",
+      "ko": "사워밀크",
+      "koPhonetic": "SA-wo-MIL-keu",
+      "zh": "酸奶",
+      "zhPhonetic": "suānnǎi",
+      "ja": "酸乳",
+      "jaPhonetic": "sannyuu"
     },
     {
       "uk": "узвар",
@@ -1593,8 +2833,24 @@
           "At Christmas, they make uzvar from dried fruit."
         ]
       },
-      "de": "Trockenkompott",
-      "phoneticDe": "TROK-en-kom-pot"
+      "de": "Trockenobstkompott",
+      "phoneticDe": "TROK-ken-ohpst-kom-POT",
+      "es": "compota de frutas secas",
+      "phoneticEs": "com-PO-ta de FRU-tas SE-cas",
+      "fr": "compote de fruits secs",
+      "frPhonetic": "kon-POT duh FRWEE SEK",
+      "el": "κομπόστα αποξηραμένων φρούτων",
+      "elPhonetic": "kom-BOS-ta a-po-xsi-ra-ME-non FROO-ton",
+      "hi": "सूखे फलों का शर्बत",
+      "hiPhonetic": "SOO-khe PHA-lon kaa SHAR-bat",
+      "ar": "كمبوت فواكه مجففة",
+      "arPhonetic": "kam-BOOT fa-waa-kih mu-JAF-fa-fah",
+      "ko": "과일 화채",
+      "koPhonetic": "gwa-il HWA-cheh",
+      "zh": "果干饮料",
+      "zhPhonetic": "guǒgān yǐnliào",
+      "ja": "ドライフルーツのコンポート",
+      "jaPhonetic": "doraifurūtsu no konpōto"
     },
     {
       "uk": "медовик",
@@ -1615,7 +2871,23 @@
         ]
       },
       "de": "Honigkuchen",
-      "phoneticDe": "HOH-nikh-koo-khen"
+      "phoneticDe": "HOH-nikh-koo-khen",
+      "es": "tarta de miel",
+      "phoneticEs": "TAR-ta de MYEL",
+      "fr": "gâteau au miel",
+      "frPhonetic": "gah-TOH oh MYEL",
+      "el": "κέικ μελιού",
+      "elPhonetic": "KE-ik me-LIOO",
+      "hi": "शहद का केक",
+      "hiPhonetic": "SHA-had kaa KEK",
+      "ar": "كَعْكَة عَسَل",
+      "arPhonetic": "KA-kat A-sal",
+      "ko": "꿀케이크",
+      "koPhonetic": "KKUL-ke-i-keu",
+      "zh": "蜂蜜蛋糕",
+      "zhPhonetic": "fēngmì dàngāo",
+      "ja": "ハニーケーキ",
+      "jaPhonetic": "hanikeeki"
     },
     {
       "uk": "пампушка",
@@ -1635,8 +2907,24 @@
           "Garlic pampushka is served with borscht."
         ]
       },
-      "de": "Knoblauchbrot/Pampushki",
-      "phoneticDe": "KNOB-lowkh-broht/pam-POOSH-ki"
+      "de": "Knoblauchbrötchen",
+      "phoneticDe": "KNOHP-laowkh-brewt-khen",
+      "es": "pan de ajo",
+      "phoneticEs": "pan de A-ho",
+      "fr": "pain à l'ail",
+      "frPhonetic": "PAH ah LYE",
+      "el": "παμπούσκα",
+      "elPhonetic": "pam-BOOS-ka",
+      "hi": "लहसुन की रोटी",
+      "hiPhonetic": "LAH-sun kee RO-tee",
+      "ar": "بَامْبُوشْكَا",
+      "arPhonetic": "bam-BOOSH-ka",
+      "ko": "팜푸시카",
+      "koPhonetic": "PAM-pu-SI-ka",
+      "zh": "蒜香面包",
+      "zhPhonetic": "suànxiāng miànbāo",
+      "ja": "パンプーシカ",
+      "jaPhonetic": "panpuushika"
     },
     {
       "uk": "кутя",
@@ -1656,8 +2944,24 @@
           "On Christmas Eve, kutya with poppy seeds is served."
         ]
       },
-      "de": "Weizengrütze",
-      "phoneticDe": "VY-tsen-grewt-seh"
+      "de": "Kutja",
+      "phoneticDe": "KOO-tyah",
+      "es": "kutia",
+      "phoneticEs": "KOO-tya",
+      "fr": "bouillie de blé de Noël",
+      "frPhonetic": "boo-YEE duh BLAY duh no-EL",
+      "el": "κόλιβο",
+      "elPhonetic": "KO-li-vo",
+      "hi": "गेहूँ की खीर",
+      "hiPhonetic": "ge-HOON kee KHEER",
+      "ar": "كُوتْيَا",
+      "arPhonetic": "KOOT-ya",
+      "ko": "쿠탸",
+      "koPhonetic": "KU-tya",
+      "zh": "圣诞小麦布丁",
+      "zhPhonetic": "shèngdàn xiǎomài bùdīng",
+      "ja": "クチャ",
+      "jaPhonetic": "kucha"
     },
     {
       "uk": "пантоміма",
@@ -1678,7 +2982,23 @@
         ]
       },
       "de": "Pantomime",
-      "phoneticDe": "pan-to-MEE-meh"
+      "phoneticDe": "pan-toh-MEE-meh",
+      "es": "pantomima",
+      "phoneticEs": "pan-to-MEE-ma",
+      "fr": "pantomime",
+      "frPhonetic": "pahn-toh-MEEM",
+      "el": "παντομίμα",
+      "elPhonetic": "pan-do-MI-ma",
+      "hi": "मूकाभिनय",
+      "hiPhonetic": "moo-KAABH-i-nay",
+      "ar": "تَمْثِيل صَامِت",
+      "arPhonetic": "tam-THEEL SAA-mit",
+      "ko": "팬터마임",
+      "koPhonetic": "PAEN-teo-MA-im",
+      "zh": "哑剧",
+      "zhPhonetic": "yǎjù",
+      "ja": "パントマイム",
+      "jaPhonetic": "pantomaimu"
     },
     {
       "uk": "цирк",
@@ -1699,7 +3019,23 @@
         ]
       },
       "de": "Zirkus",
-      "phoneticDe": "TSIR-koos"
+      "phoneticDe": "TSEER-koos",
+      "es": "circo",
+      "phoneticEs": "CIR-co",
+      "fr": "cirque",
+      "frPhonetic": "SEERК",
+      "el": "τσίρκο",
+      "elPhonetic": "TSIR-ko",
+      "hi": "सर्कस",
+      "hiPhonetic": "SAR-kas",
+      "ar": "سِرْك",
+      "arPhonetic": "SIRK",
+      "ko": "서커스",
+      "koPhonetic": "SEO-keo-seu",
+      "zh": "马戏团",
+      "zhPhonetic": "mǎxìtuán",
+      "ja": "サーカス",
+      "jaPhonetic": "saakasu"
     },
     {
       "uk": "клоун",
@@ -1720,7 +3056,23 @@
         ]
       },
       "de": "Clown",
-      "phoneticDe": "klown"
+      "phoneticDe": "KLAOWN",
+      "es": "payaso",
+      "phoneticEs": "pa-YA-so",
+      "fr": "clown",
+      "frPhonetic": "KLOON",
+      "el": "κλόουν",
+      "elPhonetic": "KLO-oun",
+      "hi": "जोकर",
+      "hiPhonetic": "JO-kar",
+      "ar": "مُهَرِّج",
+      "arPhonetic": "mu-HAR-rij",
+      "ko": "광대",
+      "koPhonetic": "GWANG-dae",
+      "zh": "小丑",
+      "zhPhonetic": "xiǎochǒu",
+      "ja": "ピエロ",
+      "jaPhonetic": "piero"
     },
     {
       "uk": "акробат",
@@ -1741,7 +3093,23 @@
         ]
       },
       "de": "Akrobat",
-      "phoneticDe": "ak-ro-BAT"
+      "phoneticDe": "ak-ro-BAHT",
+      "es": "acróbata",
+      "phoneticEs": "a-KRO-ba-ta",
+      "fr": "acrobate",
+      "frPhonetic": "ah-kroh-BAT",
+      "el": "ακροβάτης",
+      "elPhonetic": "a-kro-VA-tis",
+      "hi": "कलाबाज़",
+      "hiPhonetic": "ka-laa-BAAZ",
+      "ar": "بَهْلَوَان",
+      "arPhonetic": "bah-la-WAAN",
+      "ko": "곡예사",
+      "koPhonetic": "GOK-ye-sa",
+      "zh": "杂技演员",
+      "zhPhonetic": "zájì yǎnyuán",
+      "ja": "アクロバット",
+      "jaPhonetic": "akurobatto"
     },
     {
       "uk": "фокусник",
@@ -1762,7 +3130,23 @@
         ]
       },
       "de": "Zauberer",
-      "phoneticDe": "TSOW-ber-er"
+      "phoneticDe": "TSOW-beh-rer",
+      "es": "mago",
+      "phoneticEs": "MA-go",
+      "fr": "magicien",
+      "frPhonetic": "mah-zhee-SYEH",
+      "el": "μάγος",
+      "elPhonetic": "MA-ghos",
+      "hi": "जादूगर",
+      "hiPhonetic": "jaa-DOO-gar",
+      "ar": "سَاحِر",
+      "arPhonetic": "SAA-hir",
+      "ko": "마술사",
+      "koPhonetic": "MA-sul-sa",
+      "zh": "魔术师",
+      "zhPhonetic": "móshùshī",
+      "ja": "手品師",
+      "jaPhonetic": "tejinashi"
     },
     {
       "uk": "казка",
@@ -1783,7 +3167,23 @@
         ]
       },
       "de": "Märchen",
-      "phoneticDe": "MAIR-khen"
+      "phoneticDe": "MAIR-khen",
+      "es": "cuento de hadas",
+      "phoneticEs": "CUEN-to de A-das",
+      "fr": "conte de fées",
+      "frPhonetic": "KONT de FEH",
+      "el": "παραμύθι",
+      "elPhonetic": "pa-ra-MI-thi",
+      "hi": "परियों की कहानी",
+      "hiPhonetic": "pa-ri-YON kee ka-HAA-nee",
+      "ar": "حكاية خيالية",
+      "arPhonetic": "hi-KAA-ya kha-yaa-LEE-ya",
+      "ko": "동화",
+      "koPhonetic": "DONG-hwa",
+      "zh": "童话",
+      "zhPhonetic": "tónghuà",
+      "ja": "おとぎ話",
+      "jaPhonetic": "otogibanashi"
     },
     {
       "uk": "легенда",
@@ -1804,7 +3204,23 @@
         ]
       },
       "de": "Legende",
-      "phoneticDe": "leh-GEN-deh"
+      "phoneticDe": "leh-GEN-deh",
+      "es": "leyenda",
+      "phoneticEs": "le-YEN-da",
+      "fr": "légende",
+      "frPhonetic": "lay-ZHAHND",
+      "el": "θρύλος",
+      "elPhonetic": "THRI-los",
+      "hi": "किंवदंती",
+      "hiPhonetic": "kin-va-DAN-tee",
+      "ar": "أُسْطُورَة شَعْبِيَّة",
+      "arPhonetic": "us-TOO-ra sha-BIY-ya",
+      "ko": "전설",
+      "koPhonetic": "JEON-seol",
+      "zh": "传说",
+      "zhPhonetic": "chuánshuō",
+      "ja": "伝説",
+      "jaPhonetic": "densetsu"
     },
     {
       "uk": "міф",
@@ -1825,7 +3241,23 @@
         ]
       },
       "de": "Mythos",
-      "phoneticDe": "MEW-tos"
+      "phoneticDe": "MOO-tos",
+      "es": "mito",
+      "phoneticEs": "MI-to",
+      "fr": "mythe",
+      "frPhonetic": "MEET",
+      "el": "μύθος",
+      "elPhonetic": "MI-thos",
+      "hi": "मिथक",
+      "hiPhonetic": "MI-thak",
+      "ar": "أُسْطُورَة",
+      "arPhonetic": "us-TOO-ra",
+      "ko": "신화",
+      "koPhonetic": "SHIN-hwa",
+      "zh": "神话",
+      "zhPhonetic": "shénhuà",
+      "ja": "神話",
+      "jaPhonetic": "shinwa"
     },
     {
       "uk": "пригода",
@@ -1846,7 +3278,23 @@
         ]
       },
       "de": "Abenteuer",
-      "phoneticDe": "AH-ben-toy-er"
+      "phoneticDe": "AH-ben-toy-er",
+      "es": "aventura",
+      "phoneticEs": "a-ven-TU-ra",
+      "fr": "aventure",
+      "frPhonetic": "a-vahn-TOOR",
+      "el": "περιπέτεια",
+      "elPhonetic": "pe-ri-PE-ti-a",
+      "hi": "साहसिक कार्य",
+      "hiPhonetic": "saa-HA-sik KAAR-ya",
+      "ar": "مغامرة",
+      "arPhonetic": "mu-GHAA-ma-ra",
+      "ko": "모험",
+      "koPhonetic": "MO-heom",
+      "zh": "冒险",
+      "zhPhonetic": "màoxiǎn",
+      "ja": "冒険",
+      "jaPhonetic": "bouken"
     },
     {
       "uk": "роман",
@@ -1867,7 +3315,23 @@
         ]
       },
       "de": "Roman",
-      "phoneticDe": "ro-MAN"
+      "phoneticDe": "ro-MAHN",
+      "es": "novela",
+      "phoneticEs": "no-VE-la",
+      "fr": "roman",
+      "frPhonetic": "roh-MAH",
+      "el": "μυθιστόρημα",
+      "elPhonetic": "mi-this-TO-ri-ma",
+      "hi": "उपन्यास",
+      "hiPhonetic": "u-PAN-yaas",
+      "ar": "رِوَايَة",
+      "arPhonetic": "ri-WAA-ya",
+      "ko": "소설",
+      "koPhonetic": "SO-seol",
+      "zh": "小说",
+      "zhPhonetic": "xiǎoshuō",
+      "ja": "小説",
+      "jaPhonetic": "shousetsu"
     },
     {
       "uk": "поезія",
@@ -1887,8 +3351,24 @@
           "Shevchenko's poetry is known throughout the world."
         ]
       },
-      "de": "Lyrik",
-      "phoneticDe": "LEW-rik"
+      "de": "Poesie/Dichtung",
+      "phoneticDe": "poh-eh-ZEE/DIKH-toong",
+      "es": "poesía",
+      "phoneticEs": "po-e-SÍ-a",
+      "fr": "poésie",
+      "frPhonetic": "po-eh-ZEE",
+      "el": "ποίηση",
+      "elPhonetic": "PI-i-si",
+      "hi": "कविता",
+      "hiPhonetic": "ka-vi-TAA",
+      "ar": "شعر",
+      "arPhonetic": "SHIR",
+      "ko": "시",
+      "koPhonetic": "SHI",
+      "zh": "诗歌",
+      "zhPhonetic": "shīgē",
+      "ja": "詩",
+      "jaPhonetic": "shi"
     },
     {
       "uk": "вірш",
@@ -1909,7 +3389,23 @@
         ]
       },
       "de": "Gedicht",
-      "phoneticDe": "geh-DIKHT"
+      "phoneticDe": "geh-DIKHT",
+      "es": "poema",
+      "phoneticEs": "po-E-ma",
+      "fr": "poème",
+      "frPhonetic": "po-EHM",
+      "el": "ποίημα",
+      "elPhonetic": "PO-i-ma",
+      "hi": "कविता",
+      "hiPhonetic": "ka-vi-TAA",
+      "ar": "قصيدة",
+      "arPhonetic": "qa-SEE-da",
+      "ko": "시",
+      "koPhonetic": "SHI",
+      "zh": "诗",
+      "zhPhonetic": "shī",
+      "ja": "詩",
+      "jaPhonetic": "shi"
     },
     {
       "uk": "рима",
@@ -1930,7 +3426,23 @@
         ]
       },
       "de": "Reim",
-      "phoneticDe": "ryme"
+      "phoneticDe": "RYME",
+      "es": "rima",
+      "phoneticEs": "RREE-ma",
+      "fr": "rime",
+      "frPhonetic": "REEM",
+      "el": "ρίμα",
+      "elPhonetic": "RI-ma",
+      "hi": "तुकबंदी",
+      "hiPhonetic": "tuk-BAN-dee",
+      "ar": "قَافِيَة",
+      "arPhonetic": "QAA-fi-ya",
+      "ko": "운율",
+      "koPhonetic": "UN-yul",
+      "zh": "韵",
+      "zhPhonetic": "yùn",
+      "ja": "韻",
+      "jaPhonetic": "in"
     },
     {
       "uk": "оповідання",
@@ -1951,7 +3463,23 @@
         ]
       },
       "de": "Kurzgeschichte",
-      "phoneticDe": "KOORTS-geh-shikh-teh"
+      "phoneticDe": "KURTS-geh-shikh-teh",
+      "es": "cuento",
+      "phoneticEs": "KWEN-to",
+      "fr": "nouvelle",
+      "frPhonetic": "noo-VEL",
+      "el": "διήγημα",
+      "elPhonetic": "di-I-yi-ma",
+      "hi": "कहानी",
+      "hiPhonetic": "ka-HAA-nee",
+      "ar": "قِصَّة قَصِيرَة",
+      "arPhonetic": "QIS-sa qa-SEE-ra",
+      "ko": "단편 소설",
+      "koPhonetic": "DAN-pyeon SO-seol",
+      "zh": "短篇小说",
+      "zhPhonetic": "duǎnpiān xiǎoshuō",
+      "ja": "短編小説",
+      "jaPhonetic": "tanpen shousetsu"
     },
     {
       "uk": "мультфільм",
@@ -1972,7 +3500,23 @@
         ]
       },
       "de": "Zeichentrickfilm",
-      "phoneticDe": "TSYKH-en-trik-film"
+      "phoneticDe": "TSYKH-en-trik-film",
+      "es": "dibujos animados",
+      "phoneticEs": "di-BOO-hos a-ni-MA-dos",
+      "fr": "dessin animé",
+      "frPhonetic": "deh-SEH ah-nee-MAY",
+      "el": "κινούμενα σχέδια",
+      "elPhonetic": "ki-NOO-me-na SKHE-dia",
+      "hi": "कार्टून",
+      "hiPhonetic": "KAAR-toon",
+      "ar": "رُسُوم مُتَحَرِّكَة",
+      "arPhonetic": "ru-SOOM mu-ta-HAR-ri-ka",
+      "ko": "만화",
+      "koPhonetic": "MAN-hwa",
+      "zh": "动画片",
+      "zhPhonetic": "dònghuàpiàn",
+      "ja": "アニメ",
+      "jaPhonetic": "anime"
     },
     {
       "uk": "серіал",
@@ -1993,7 +3537,23 @@
         ]
       },
       "de": "Fernsehserie",
-      "phoneticDe": "FERN-zay-zeh-ree-eh"
+      "phoneticDe": "FAIRN-zay-zay-ree-eh",
+      "es": "serie de televisión",
+      "phoneticEs": "SE-rie de te-le-vi-SION",
+      "fr": "série télévisée",
+      "frPhonetic": "say-REE tay-lay-vee-ZAY",
+      "el": "τηλεοπτική σειρά",
+      "elPhonetic": "ti-le-op-ti-KI si-RA",
+      "hi": "टीवी सीरीज़",
+      "hiPhonetic": "TEE-vee SEE-reez",
+      "ar": "مُسَلْسَل",
+      "arPhonetic": "mu-SAL-sal",
+      "ko": "드라마",
+      "koPhonetic": "DEU-ra-ma",
+      "zh": "电视剧",
+      "zhPhonetic": "diànshìjù",
+      "ja": "テレビドラマ",
+      "jaPhonetic": "terebi dorama"
     },
     {
       "uk": "документальний фільм",
@@ -2014,7 +3574,23 @@
         ]
       },
       "de": "Dokumentarfilm",
-      "phoneticDe": "do-koo-men-TAR-film"
+      "phoneticDe": "do-koo-men-TAR-film",
+      "es": "documental",
+      "phoneticEs": "do-ku-men-TAL",
+      "fr": "documentaire",
+      "frPhonetic": "doh-kew-mahn-TAIR",
+      "el": "ντοκιμαντέρ",
+      "elPhonetic": "do-ki-man-TER",
+      "hi": "वृत्तचित्र",
+      "hiPhonetic": "VRIT-ta-chitr",
+      "ar": "فِيلْم وَثَائِقِي",
+      "arPhonetic": "film wa-thaa-I-qee",
+      "ko": "다큐멘터리",
+      "koPhonetic": "DA-kyu-MEN-teo-ri",
+      "zh": "纪录片",
+      "zhPhonetic": "jìlùpiàn",
+      "ja": "ドキュメンタリー",
+      "jaPhonetic": "dokyumentarii"
     },
     {
       "uk": "комедія",
@@ -2035,7 +3611,23 @@
         ]
       },
       "de": "Komödie",
-      "phoneticDe": "ko-MEH-dee-eh"
+      "phoneticDe": "ko-MUR-dee-eh",
+      "es": "comedia",
+      "phoneticEs": "co-ME-dia",
+      "fr": "comédie",
+      "frPhonetic": "ko-may-DEE",
+      "el": "κωμωδία",
+      "elPhonetic": "ko-mo-DI-a",
+      "hi": "कॉमेडी",
+      "hiPhonetic": "KAW-me-dee",
+      "ar": "كُومِيدْيَا",
+      "arPhonetic": "ko-MEED-ya",
+      "ko": "코미디",
+      "koPhonetic": "KO-mi-di",
+      "zh": "喜剧",
+      "zhPhonetic": "xǐjù",
+      "ja": "喜劇",
+      "jaPhonetic": "kigeki"
     },
     {
       "uk": "трагедія",
@@ -2056,7 +3648,23 @@
         ]
       },
       "de": "Tragödie",
-      "phoneticDe": "tra-GEH-dee-eh"
+      "phoneticDe": "trah-GUR-dee-eh",
+      "es": "tragedia",
+      "phoneticEs": "tra-GE-dia",
+      "fr": "tragédie",
+      "frPhonetic": "tra-zhay-DEE",
+      "el": "τραγωδία",
+      "elPhonetic": "tra-go-DI-a",
+      "hi": "त्रासदी",
+      "hiPhonetic": "TRAAS-dee",
+      "ar": "مَأْسَاة",
+      "arPhonetic": "MA-saa",
+      "ko": "비극",
+      "koPhonetic": "BI-geuk",
+      "zh": "悲剧",
+      "zhPhonetic": "bēijù",
+      "ja": "悲劇",
+      "jaPhonetic": "higeki"
     },
     {
       "uk": "детектив",
@@ -2077,7 +3685,23 @@
         ]
       },
       "de": "Krimi",
-      "phoneticDe": "KREE-mi"
+      "phoneticDe": "KREE-mee",
+      "es": "novela policiaca",
+      "phoneticEs": "no-VE-la po-li-SYA-ka",
+      "fr": "roman policier",
+      "frPhonetic": "roh-MAH poh-lee-SYAY",
+      "el": "αστυνομικό",
+      "elPhonetic": "as-ti-no-mi-KO",
+      "hi": "जासूसी कहानी",
+      "hiPhonetic": "jaa-SOO-see ka-HAA-nee",
+      "ar": "رِوَايَة بُولِيسِيَّة",
+      "arPhonetic": "ri-WAA-ya boo-lee-SEE-ya",
+      "ko": "추리 소설",
+      "koPhonetic": "CHU-ri SO-seol",
+      "zh": "侦探小说",
+      "zhPhonetic": "zhēntàn xiǎoshuō",
+      "ja": "推理小説",
+      "jaPhonetic": "suiri shousetsu"
     },
     {
       "uk": "жах",
@@ -2098,7 +3722,23 @@
         ]
       },
       "de": "Horror",
-      "phoneticDe": "HOR-or"
+      "phoneticDe": "HOR-ror",
+      "es": "terror",
+      "phoneticEs": "te-RROR",
+      "fr": "horreur",
+      "frPhonetic": "oh-RUR",
+      "el": "τρόμος",
+      "elPhonetic": "TRO-mos",
+      "hi": "डरावनी",
+      "hiPhonetic": "da-RAAV-nee",
+      "ar": "رُعْب",
+      "arPhonetic": "RU-b",
+      "ko": "공포",
+      "koPhonetic": "GONG-po",
+      "zh": "恐怖片",
+      "zhPhonetic": "kǒngbùpiàn",
+      "ja": "ホラー",
+      "jaPhonetic": "horaa"
     },
     {
       "uk": "фантастика",
@@ -2119,7 +3759,23 @@
         ]
       },
       "de": "Science-Fiction",
-      "phoneticDe": "SY-ens-fik-shon"
+      "phoneticDe": "SY-ens FIK-shen",
+      "es": "ciencia ficción",
+      "phoneticEs": "SYEN-sya fik-SYON",
+      "fr": "science-fiction",
+      "frPhonetic": "SYAHNS feek-SYOH",
+      "el": "επιστημονική φαντασία",
+      "elPhonetic": "e-pi-sti-mo-ni-KI fan-ta-SI-a",
+      "hi": "विज्ञान कथा",
+      "hiPhonetic": "vi-GYAAN KA-thaa",
+      "ar": "خَيَال عِلْمِي",
+      "arPhonetic": "kha-YAAL IL-mee",
+      "ko": "공상 과학",
+      "koPhonetic": "GONG-sang GWA-hak",
+      "zh": "科幻小说",
+      "zhPhonetic": "kēhuàn xiǎoshuō",
+      "ja": "SF",
+      "jaPhonetic": "esu efu"
     },
     {
       "uk": "бойовик",
@@ -2140,7 +3796,23 @@
         ]
       },
       "de": "Actionfilm",
-      "phoneticDe": "EK-shon-film"
+      "phoneticDe": "EK-shen-film",
+      "es": "película de acción",
+      "phoneticEs": "pe-LÍ-cu-la de ak-SIÓN",
+      "fr": "film d'action",
+      "frPhonetic": "FEELM dahk-SYOH",
+      "el": "ταινία δράσης",
+      "elPhonetic": "teh-NI-a DRA-sis",
+      "hi": "एक्शन फ़िल्म",
+      "hiPhonetic": "EK-shan FILM",
+      "ar": "فِيلْم أَكْشِن",
+      "arPhonetic": "film AK-shin",
+      "ko": "액션 영화",
+      "koPhonetic": "AEK-syeon YEONG-hwa",
+      "zh": "动作片",
+      "zhPhonetic": "dòngzuòpiàn",
+      "ja": "アクション映画",
+      "jaPhonetic": "akushon eiga"
     },
     {
       "uk": "субтитри",
@@ -2161,7 +3833,23 @@
         ]
       },
       "de": "Untertitel",
-      "phoneticDe": "OON-ter-tee-tel"
+      "phoneticDe": "UN-ter-tee-tel",
+      "es": "subtítulos",
+      "phoneticEs": "sub-TÍ-tu-los",
+      "fr": "sous-titres",
+      "frPhonetic": "soo-TEE-truh",
+      "el": "υπότιτλοι",
+      "elPhonetic": "i-PO-tit-li",
+      "hi": "उपशीर्षक",
+      "hiPhonetic": "up-SHEER-shak",
+      "ar": "تَرْجَمَة",
+      "arPhonetic": "TAR-ja-ma",
+      "ko": "자막",
+      "koPhonetic": "JA-mak",
+      "zh": "字幕",
+      "zhPhonetic": "zìmù",
+      "ja": "字幕",
+      "jaPhonetic": "jimaku"
     },
     {
       "uk": "дубляж",
@@ -2182,7 +3870,23 @@
         ]
       },
       "de": "Synchronisation",
-      "phoneticDe": "zyn-kro-ni-ZA-tsyon"
+      "phoneticDe": "zewn-kro-nee-zah-TSEE-ohn",
+      "es": "doblaje",
+      "phoneticEs": "do-BLA-je",
+      "fr": "doublage",
+      "frPhonetic": "doo-BLAZH",
+      "el": "μεταγλώττιση",
+      "elPhonetic": "me-ta-GHLO-ti-si",
+      "hi": "डबिंग",
+      "hiPhonetic": "DA-bing",
+      "ar": "دَبْلَجَة",
+      "arPhonetic": "DAB-la-ja",
+      "ko": "더빙",
+      "koPhonetic": "DEO-bing",
+      "zh": "配音",
+      "zhPhonetic": "pèiyīn",
+      "ja": "吹き替え",
+      "jaPhonetic": "fukikae"
     },
     {
       "uk": "нагорода",
@@ -2202,8 +3906,24 @@
           "The actress received an award for best role."
         ]
       },
-      "de": "Preis/Auszeichnung",
-      "phoneticDe": "pryce/OWS-tsykh-nung"
+      "de": "Auszeichnung",
+      "phoneticDe": "AOWS-tsykh-nung",
+      "es": "premio",
+      "phoneticEs": "PRE-mio",
+      "fr": "récompense",
+      "frPhonetic": "ray-kohm-PAHNS",
+      "el": "βραβείο",
+      "elPhonetic": "vra-VI-o",
+      "hi": "पुरस्कार",
+      "hiPhonetic": "pu-ras-KAAR",
+      "ar": "جَائِزَة",
+      "arPhonetic": "JAA-i-za",
+      "ko": "상",
+      "koPhonetic": "SANG",
+      "zh": "奖励",
+      "zhPhonetic": "jiǎnglì",
+      "ja": "賞",
+      "jaPhonetic": "shou"
     },
     {
       "uk": "пластир",
@@ -2224,7 +3944,23 @@
         ]
       },
       "de": "Pflaster",
-      "phoneticDe": "PFLAS-ter"
+      "phoneticDe": "PFLAS-ter",
+      "es": "tirita",
+      "phoneticEs": "ti-RÍ-ta",
+      "fr": "pansement",
+      "frPhonetic": "pahns-MAH",
+      "el": "τσιρότο",
+      "elPhonetic": "tsi-RO-to",
+      "hi": "पट्टी",
+      "hiPhonetic": "PAT-tee",
+      "ar": "لَاصِقَة طِبِّيَّة",
+      "arPhonetic": "LAA-si-qa TIB-bee-ya",
+      "ko": "반창고",
+      "koPhonetic": "BAN-chang-go",
+      "zh": "创可贴",
+      "zhPhonetic": "chuāngkětiē",
+      "ja": "絆創膏",
+      "jaPhonetic": "bansoukou"
     },
     {
       "uk": "крапельниця",
@@ -2245,7 +3981,23 @@
         ]
       },
       "de": "Infusion",
-      "phoneticDe": "in-foo-ZYON"
+      "phoneticDe": "in-foo-ZEE-ohn",
+      "es": "suero intravenoso",
+      "phoneticEs": "SWE-ro in-tra-ve-NÓ-so",
+      "fr": "perfusion intraveineuse",
+      "frPhonetic": "pair-few-ZYOH eh-trah-veh-NUZ",
+      "el": "ορός",
+      "elPhonetic": "o-ROS",
+      "hi": "ड्रिप",
+      "hiPhonetic": "DRIP",
+      "ar": "مَحْلُول وَرِيدِي",
+      "arPhonetic": "mah-LOOL wa-ree-DEE",
+      "ko": "링거",
+      "koPhonetic": "RING-geo",
+      "zh": "输液",
+      "zhPhonetic": "shūyè",
+      "ja": "点滴",
+      "jaPhonetic": "tenteki"
     },
     {
       "uk": "таблетка",
@@ -2266,7 +4018,23 @@
         ]
       },
       "de": "Tablette",
-      "phoneticDe": "ta-BLET-eh"
+      "phoneticDe": "tah-BLET-teh",
+      "es": "pastilla",
+      "phoneticEs": "pas-TÍ-ya",
+      "fr": "comprimé",
+      "frPhonetic": "kohm-pree-MAY",
+      "el": "χάπι",
+      "elPhonetic": "HA-pi",
+      "hi": "गोली",
+      "hiPhonetic": "GO-lee",
+      "ar": "حَبَّة",
+      "arPhonetic": "HAB-ba",
+      "ko": "알약",
+      "koPhonetic": "AL-yak",
+      "zh": "药片",
+      "zhPhonetic": "yàopiàn",
+      "ja": "錠剤",
+      "jaPhonetic": "jouzai"
     },
     {
       "uk": "мазь",
@@ -2287,7 +4055,23 @@
         ]
       },
       "de": "Salbe",
-      "phoneticDe": "ZAL-beh"
+      "phoneticDe": "ZAL-beh",
+      "es": "pomada",
+      "phoneticEs": "po-MÁ-da",
+      "fr": "pommade",
+      "frPhonetic": "poh-MAD",
+      "el": "αλοιφή",
+      "elPhonetic": "a-li-FI",
+      "hi": "मलहम",
+      "hiPhonetic": "MAL-ham",
+      "ar": "مَرْهَم",
+      "arPhonetic": "MAR-ham",
+      "ko": "연고",
+      "koPhonetic": "YEON-go",
+      "zh": "药膏",
+      "zhPhonetic": "yàogāo",
+      "ja": "軟膏",
+      "jaPhonetic": "nankou"
     },
     {
       "uk": "сироп",
@@ -2308,7 +4092,23 @@
         ]
       },
       "de": "Sirup",
-      "phoneticDe": "ZEE-roop"
+      "phoneticDe": "ZEE-rup",
+      "es": "jarabe",
+      "phoneticEs": "ha-RÁ-be",
+      "fr": "sirop (médicament)",
+      "frPhonetic": "see-ROH may-dee-kah-MAH",
+      "el": "σιρόπι",
+      "elPhonetic": "si-RO-pi",
+      "hi": "सिरप",
+      "hiPhonetic": "SI-rap",
+      "ar": "شَرَاب",
+      "arPhonetic": "sha-RAAB",
+      "ko": "시럽",
+      "koPhonetic": "SI-reop",
+      "zh": "糖浆",
+      "zhPhonetic": "tángjiāng",
+      "ja": "シロップ",
+      "jaPhonetic": "shiroppu"
     },
     {
       "uk": "вітаміни",
@@ -2329,7 +4129,23 @@
         ]
       },
       "de": "Vitamine",
-      "phoneticDe": "vi-ta-MEE-neh"
+      "phoneticDe": "vee-tah-MEE-neh",
+      "es": "vitaminas",
+      "phoneticEs": "vi-ta-MÍ-nas",
+      "fr": "vitamines",
+      "frPhonetic": "vee-tah-MEEN",
+      "el": "βιταμίνες",
+      "elPhonetic": "vi-ta-MI-nes",
+      "hi": "विटामिन",
+      "hiPhonetic": "VI-taa-min",
+      "ar": "فِيتَامِينَات",
+      "arPhonetic": "fee-ta-mee-NAAT",
+      "ko": "비타민",
+      "koPhonetic": "BI-ta-min",
+      "zh": "维生素",
+      "zhPhonetic": "wéishēngsù",
+      "ja": "ビタミン",
+      "jaPhonetic": "bitamin"
     },
     {
       "uk": "знеболюючий",
@@ -2350,7 +4166,23 @@
         ]
       },
       "de": "Schmerzmittel",
-      "phoneticDe": "SHMERTS-mit-el"
+      "phoneticDe": "SHMER-ts-mit-tel",
+      "es": "analgésico",
+      "phoneticEs": "a-nal-HÉ-si-ko",
+      "fr": "analgésique",
+      "frPhonetic": "ah-nahl-zhay-ZEEK",
+      "el": "παυσίπονο",
+      "elPhonetic": "pav-SI-po-no",
+      "hi": "दर्दनिवारक",
+      "hiPhonetic": "dard-ni-VAA-rak",
+      "ar": "مُسَكِّن",
+      "arPhonetic": "mu-SAK-kin",
+      "ko": "진통제",
+      "koPhonetic": "JIN-tong-je",
+      "zh": "止痛药",
+      "zhPhonetic": "zhǐtòngyào",
+      "ja": "鎮痛剤",
+      "jaPhonetic": "chintsuuzai"
     },
     {
       "uk": "протизапальний",
@@ -2371,7 +4203,23 @@
         ]
       },
       "de": "Entzündungshemmer",
-      "phoneticDe": "ent-TSWN-dungs-hem-er"
+      "phoneticDe": "ent-TSEWN-dungs-hem-mer",
+      "es": "antiinflamatorio",
+      "phoneticEs": "an-ti-in-fla-ma-TÓ-rio",
+      "fr": "anti-inflammatoire",
+      "frPhonetic": "ahn-tee-eh-flah-mah-TWAR",
+      "el": "αντιφλεγμονώδες",
+      "elPhonetic": "an-ti-fleg-mo-NO-thes",
+      "hi": "सूजनरोधी",
+      "hiPhonetic": "SOO-jan-ro-dhee",
+      "ar": "مُضَادّ لِلاِلْتِهَاب",
+      "arPhonetic": "mu-DADD lil-il-ti-HAAB",
+      "ko": "소염제",
+      "koPhonetic": "SO-yeom-je",
+      "zh": "消炎药",
+      "zhPhonetic": "xiāoyányào",
+      "ja": "抗炎症剤",
+      "jaPhonetic": "kouenshouzai"
     },
     {
       "uk": "кардіолог",
@@ -2392,7 +4240,23 @@
         ]
       },
       "de": "Kardiologe",
-      "phoneticDe": "kar-dee-o-LOH-geh"
+      "phoneticDe": "kar-dee-oh-LOH-geh",
+      "es": "cardiólogo",
+      "phoneticEs": "kar-DIÓ-lo-go",
+      "fr": "cardiologue",
+      "frPhonetic": "kar-dyoh-LOG",
+      "el": "καρδιολόγος",
+      "elPhonetic": "kar-dio-LO-ghos",
+      "hi": "हृदय रोग विशेषज्ञ",
+      "hiPhonetic": "HRI-day ROG vi-SHESH-agya",
+      "ar": "طَبِيب قَلْب",
+      "arPhonetic": "ta-BEEB QALB",
+      "ko": "심장 전문의",
+      "koPhonetic": "SIM-jang JEON-mun-ui",
+      "zh": "心脏科医生",
+      "zhPhonetic": "xīnzàngkē yīshēng",
+      "ja": "心臓専門医",
+      "jaPhonetic": "shinzou senmon'i"
     },
     {
       "uk": "невролог",
@@ -2413,7 +4277,23 @@
         ]
       },
       "de": "Neurologe",
-      "phoneticDe": "noy-ro-LOH-geh"
+      "phoneticDe": "noy-ro-LOH-geh",
+      "es": "neurólogo",
+      "phoneticEs": "ne-ÚRÓ-lo-go",
+      "fr": "neurologue",
+      "frPhonetic": "nuh-roh-LOG",
+      "el": "νευρολόγος",
+      "elPhonetic": "nev-ro-LO-ghos",
+      "hi": "न्यूरोलॉजिस्ट",
+      "hiPhonetic": "NYOO-ro-lo-jist",
+      "ar": "طَبِيب أَعْصَاب",
+      "arPhonetic": "ta-BEEB A-saab",
+      "ko": "신경과 전문의",
+      "koPhonetic": "SIN-gyeong-gwa JEON-mun-ui",
+      "zh": "神经科医生",
+      "zhPhonetic": "shénjīngkē yīshēng",
+      "ja": "神経科医",
+      "jaPhonetic": "shinkeikai"
     },
     {
       "uk": "дерматолог",
@@ -2434,7 +4314,23 @@
         ]
       },
       "de": "Dermatologe",
-      "phoneticDe": "der-ma-to-LOH-geh"
+      "phoneticDe": "der-mah-toh-LOH-geh",
+      "es": "dermatólogo",
+      "phoneticEs": "der-ma-TÓ-lo-go",
+      "fr": "dermatologue",
+      "frPhonetic": "dair-mah-toh-LOG",
+      "el": "δερματολόγος",
+      "elPhonetic": "ther-ma-to-LO-ghos",
+      "hi": "त्वचा रोग विशेषज्ञ",
+      "hiPhonetic": "TVA-chaa ROG vi-SHESH-agya",
+      "ar": "طَبِيب جِلْدِيَّة",
+      "arPhonetic": "ta-BEEB jil-DEE-ya",
+      "ko": "피부과 전문의",
+      "koPhonetic": "PI-bu-gwa JEON-mun-ui",
+      "zh": "皮肤科医生",
+      "zhPhonetic": "pífūkē yīshēng",
+      "ja": "皮膚科医",
+      "jaPhonetic": "hifukai"
     },
     {
       "uk": "офтальмолог",
@@ -2455,7 +4351,23 @@
         ]
       },
       "de": "Augenarzt",
-      "phoneticDe": "OW-gen-artst"
+      "phoneticDe": "AOW-gen-artst",
+      "es": "oftalmólogo",
+      "phoneticEs": "of-tal-MÓ-lo-go",
+      "fr": "ophtalmologue",
+      "frPhonetic": "off-tal-moh-LOG",
+      "el": "οφθαλμολόγος",
+      "elPhonetic": "of-thal-mo-LO-ghos",
+      "hi": "नेत्र रोग विशेषज्ञ",
+      "hiPhonetic": "NE-tra ROG vi-SHESH-agya",
+      "ar": "طَبِيب عُيُون",
+      "arPhonetic": "ta-BEEB u-YOON",
+      "ko": "안과 전문의",
+      "koPhonetic": "AN-gwa JEON-mun-ui",
+      "zh": "眼科医生",
+      "zhPhonetic": "yǎnkē yīshēng",
+      "ja": "眼科医",
+      "jaPhonetic": "gankai"
     },
     {
       "uk": "стоматолог",
@@ -2475,8 +4387,24 @@
           "The dentist treated the bad tooth."
         ]
       },
-      "de": "Zahnarzt",
-      "phoneticDe": "TSAHN-artst"
+      "de": "Zahnarzt/Zahnärztin",
+      "phoneticDe": "TSAHN-artst/TSAHN-airts-tin",
+      "es": "dentista",
+      "phoneticEs": "den-TEES-tah",
+      "fr": "dentiste",
+      "frPhonetic": "dan-TEEST",
+      "el": "οδοντίατρος",
+      "elPhonetic": "o-don-TI-a-tros",
+      "hi": "दंत चिकित्सक",
+      "hiPhonetic": "DANT chi-KIT-sak",
+      "ar": "طَبِيبُ أَسْنَان",
+      "arPhonetic": "ta-BEE-bu as-NAAN",
+      "ko": "치과의사",
+      "koPhonetic": "chi-KWA-ui-sa",
+      "zh": "牙医",
+      "zhPhonetic": "yáyī",
+      "ja": "歯医者",
+      "jaPhonetic": "haisha"
     },
     {
       "uk": "хірург",
@@ -2497,7 +4425,23 @@
         ]
       },
       "de": "Chirurg",
-      "phoneticDe": "khi-ROORK"
+      "phoneticDe": "khee-ROORK",
+      "es": "cirujano",
+      "phoneticEs": "si-ru-JA-no",
+      "fr": "chirurgien",
+      "frPhonetic": "shee-ryur-ZHYAN",
+      "el": "χειρουργός",
+      "elPhonetic": "hi-rur-GOS",
+      "hi": "सर्जन",
+      "hiPhonetic": "SAR-jan",
+      "ar": "جراح",
+      "arPhonetic": "jar-RAAH",
+      "ko": "외과 의사",
+      "koPhonetic": "weh-gwa UI-sa",
+      "zh": "外科医生",
+      "zhPhonetic": "wàikē yīshēng",
+      "ja": "外科医",
+      "jaPhonetic": "gekai"
     },
     {
       "uk": "педіатр",
@@ -2518,7 +4462,23 @@
         ]
       },
       "de": "Kinderarzt",
-      "phoneticDe": "KIN-der-artst"
+      "phoneticDe": "KIN-der-artst",
+      "es": "pediatra",
+      "phoneticEs": "pe-dia-TRA",
+      "fr": "pédiatre",
+      "frPhonetic": "pay-dya-TR",
+      "el": "παιδίατρος",
+      "elPhonetic": "pe-THI-a-tros",
+      "hi": "बाल रोग विशेषज्ञ",
+      "hiPhonetic": "BAAL ROG vi-she-SHAG-ya",
+      "ar": "طبيب أطفال",
+      "arPhonetic": "ta-BEEB at-FAAL",
+      "ko": "소아과 의사",
+      "koPhonetic": "so-a-gwa UI-sa",
+      "zh": "儿科医生",
+      "zhPhonetic": "érkē yīshēng",
+      "ja": "小児科医",
+      "jaPhonetic": "shounikai"
     },
     {
       "uk": "психіатр",
@@ -2539,7 +4499,23 @@
         ]
       },
       "de": "Psychiater",
-      "phoneticDe": "psikh-ee-AH-ter"
+      "phoneticDe": "psew-khee-AH-ter",
+      "es": "psiquiatra",
+      "phoneticEs": "psi-KIÁ-tra",
+      "fr": "psychiatre",
+      "frPhonetic": "psee-kee-AH-truh",
+      "el": "ψυχίατρος",
+      "elPhonetic": "psi-HI-a-tros",
+      "hi": "मनोचिकित्सक",
+      "hiPhonetic": "ma-no-chi-KIT-sak",
+      "ar": "طَبِيب نَفْسِي",
+      "arPhonetic": "ta-BEEB NAF-see",
+      "ko": "정신과 전문의",
+      "koPhonetic": "JEONG-sin-gwa JEON-mun-ui",
+      "zh": "精神科医生",
+      "zhPhonetic": "jīngshénkē yīshēng",
+      "ja": "精神科医",
+      "jaPhonetic": "seishinkai"
     },
     {
       "uk": "акушерка",
@@ -2560,7 +4536,23 @@
         ]
       },
       "de": "Hebamme",
-      "phoneticDe": "HAY-bam-eh"
+      "phoneticDe": "HAY-bam-meh",
+      "es": "comadrona",
+      "phoneticEs": "ko-ma-DRÓ-na",
+      "fr": "sage-femme",
+      "frPhonetic": "SAZH-FAM",
+      "el": "μαία",
+      "elPhonetic": "ME-a",
+      "hi": "दाई",
+      "hiPhonetic": "DAA-ee",
+      "ar": "قَابِلَة",
+      "arPhonetic": "QAA-bi-la",
+      "ko": "산파",
+      "koPhonetic": "SAN-pa",
+      "zh": "助产士",
+      "zhPhonetic": "zhùchǎnshì",
+      "ja": "助産師",
+      "jaPhonetic": "josanshi"
     },
     {
       "uk": "медсестра",
@@ -2580,8 +4572,24 @@
           "The nurse gave the injection quickly and skillfully."
         ]
       },
-      "de": "Krankenschwester",
-      "phoneticDe": "KRAN-ken-shves-ter"
+      "de": "Krankenschwester/Pfleger",
+      "phoneticDe": "KRAN-ken-shves-ter/PFLAY-ger",
+      "es": "enfermero",
+      "phoneticEs": "en-fer-MEH-roh",
+      "fr": "infirmière",
+      "frPhonetic": "an-feer-MYEHR",
+      "el": "νοσοκόμος",
+      "elPhonetic": "no-so-KO-mos",
+      "hi": "नर्स",
+      "hiPhonetic": "NARS",
+      "ar": "مُمَرِّضَة",
+      "arPhonetic": "mu-MAR-ri-dha",
+      "ko": "간호사",
+      "koPhonetic": "kan-HO-sa",
+      "zh": "护士",
+      "zhPhonetic": "hùshi",
+      "ja": "看護師",
+      "jaPhonetic": "kangoshi"
     },
     {
       "uk": "пацієнт",
@@ -2601,8 +4609,24 @@
           "The patient was waiting for an appointment with the doctor."
         ]
       },
-      "de": "Patient",
-      "phoneticDe": "pa-TSYENT"
+      "de": "geduldig",
+      "phoneticDe": "geh-DOOL-dikh",
+      "es": "paciente",
+      "phoneticEs": "pa-CIEN-te",
+      "fr": "patient",
+      "frPhonetic": "pa-SYON",
+      "el": "υπομονετικός",
+      "elPhonetic": "i-po-mo-ne-ti-KOS",
+      "hi": "धैर्यवान",
+      "hiPhonetic": "DHAI-rya-vaan",
+      "ar": "صبور",
+      "arPhonetic": "sa-BOOR",
+      "ko": "인내심 있는",
+      "koPhonetic": "in-nae-shim-IN-neun",
+      "zh": "耐心",
+      "zhPhonetic": "nàixīn",
+      "ja": "忍耐強い",
+      "jaPhonetic": "nintai zuyoi"
     },
     {
       "uk": "діагностика",
@@ -2623,7 +4647,23 @@
         ]
       },
       "de": "Diagnostik",
-      "phoneticDe": "dee-ag-NOS-tik"
+      "phoneticDe": "dee-ahg-NOS-tik",
+      "es": "diagnóstico",
+      "phoneticEs": "diag-NÓS-ti-ko",
+      "fr": "diagnostic",
+      "frPhonetic": "dyag-nos-TEEK",
+      "el": "διαγνωστική",
+      "elPhonetic": "thia-ghno-sti-KI",
+      "hi": "निदान",
+      "hiPhonetic": "ni-DAAN",
+      "ar": "تَشْخِيص",
+      "arPhonetic": "tash-KHEES",
+      "ko": "진단",
+      "koPhonetic": "JIN-dan",
+      "zh": "诊断",
+      "zhPhonetic": "zhěnduàn",
+      "ja": "診断",
+      "jaPhonetic": "shindan"
     },
     {
       "uk": "цифровий",
@@ -2644,7 +4684,23 @@
         ]
       },
       "de": "digital",
-      "phoneticDe": "di-gi-TAL"
+      "phoneticDe": "dee-gee-TAHL",
+      "es": "digital",
+      "phoneticEs": "di-hi-TAL",
+      "fr": "numérique",
+      "frPhonetic": "noo-may-REEK",
+      "el": "ψηφιακός",
+      "elPhonetic": "psi-fi-a-KOS",
+      "hi": "डिजिटल",
+      "hiPhonetic": "DI-ji-tal",
+      "ar": "رَقْمِي",
+      "arPhonetic": "RAQ-mee",
+      "ko": "디지털의",
+      "koPhonetic": "di-ji-TEOL-eui",
+      "zh": "数字的",
+      "zhPhonetic": "shùzì de",
+      "ja": "デジタルの",
+      "jaPhonetic": "dejitaru no"
     },
     {
       "uk": "аналоговий",
@@ -2665,7 +4721,23 @@
         ]
       },
       "de": "analog",
-      "phoneticDe": "ah-na-LOHK"
+      "phoneticDe": "ah-nah-LOHG",
+      "es": "analógico",
+      "phoneticEs": "a-na-LO-hi-co",
+      "fr": "analogique",
+      "frPhonetic": "ah-na-lo-ZHEEK",
+      "el": "αναλογικός",
+      "elPhonetic": "a-na-lo-yi-KOS",
+      "hi": "एनालॉग",
+      "hiPhonetic": "E-naa-log",
+      "ar": "تَنَاظُرِي",
+      "arPhonetic": "ta-naa-DHU-ree",
+      "ko": "아날로그의",
+      "koPhonetic": "a-nal-LO-geu-eui",
+      "zh": "模拟的",
+      "zhPhonetic": "mónǐ de",
+      "ja": "アナログの",
+      "jaPhonetic": "anarogu no"
     },
     {
       "uk": "штучний інтелект",
@@ -2685,8 +4757,24 @@
           "Artificial intelligence helps doctors make diagnoses."
         ]
       },
-      "de": "künstliche Intelligenz",
-      "phoneticDe": "KEWNST-li-kheh in-tel-i-GENTS"
+      "de": "Künstliche Intelligenz",
+      "phoneticDe": "KUENST-likh-eh in-tel-lee-GENTS",
+      "es": "inteligencia artificial",
+      "phoneticEs": "in-te-li-GEN-cia ar-ti-fi-CIAL",
+      "fr": "intelligence artificielle",
+      "frPhonetic": "en-te-lee-ZHONS ar-tee-fee-SYEL",
+      "el": "τεχνητή νοημοσύνη",
+      "elPhonetic": "tech-ni-TI no-i-mo-SI-ni",
+      "hi": "कृत्रिम बुद्धिमत्ता",
+      "hiPhonetic": "KRIT-rim bud-dhi-MAT-taa",
+      "ar": "ذكاء اصطناعي",
+      "arPhonetic": "za-KAA is-ti-NAA-ee",
+      "ko": "인공지능",
+      "koPhonetic": "in-gong-JI-neung",
+      "zh": "人工智能",
+      "zhPhonetic": "réngōng zhìnéng",
+      "ja": "人工知能",
+      "jaPhonetic": "jinkou chinou"
     },
     {
       "uk": "машинне навчання",
@@ -2707,7 +4795,23 @@
         ]
       },
       "de": "maschinelles Lernen",
-      "phoneticDe": "ma-SHEE-nel-es LER-nen"
+      "phoneticDe": "mah-shee-NEL-les LER-nen",
+      "es": "aprendizaje automático",
+      "phoneticEs": "a-pren-di-SÁ-je aw-to-MÁ-ti-ko",
+      "fr": "apprentissage automatique",
+      "frPhonetic": "ah-prahn-tee-SAZH oh-toh-mah-TEEK",
+      "el": "μηχανική μάθηση",
+      "elPhonetic": "mi-ha-ni-KI MA-thi-si",
+      "hi": "मशीन लर्निंग",
+      "hiPhonetic": "ma-SHEEN LAR-ning",
+      "ar": "تَعَلُّم آلِي",
+      "arPhonetic": "ta-AL-lum AA-lee",
+      "ko": "머신러닝",
+      "koPhonetic": "MEO-sin-REO-ning",
+      "zh": "机器学习",
+      "zhPhonetic": "jīqì xuéxí",
+      "ja": "機械学習",
+      "jaPhonetic": "kikai gakushuu"
     },
     {
       "uk": "робот",
@@ -2728,7 +4832,23 @@
         ]
       },
       "de": "Roboter",
-      "phoneticDe": "ro-BOH-ter"
+      "phoneticDe": "roh-BOH-ter",
+      "es": "robot",
+      "phoneticEs": "RO-bot",
+      "fr": "robot",
+      "frPhonetic": "ro-BO",
+      "el": "ρομπότ",
+      "elPhonetic": "ro-BOT",
+      "hi": "रोबोट",
+      "hiPhonetic": "RO-bot",
+      "ar": "روبوت",
+      "arPhonetic": "ro-BOOT",
+      "ko": "로봇",
+      "koPhonetic": "RO-bot",
+      "zh": "机器人",
+      "zhPhonetic": "jīqìrén",
+      "ja": "ロボット",
+      "jaPhonetic": "robotto"
     },
     {
       "uk": "дрон",
@@ -2749,7 +4869,23 @@
         ]
       },
       "de": "Drohne",
-      "phoneticDe": "DROH-neh"
+      "phoneticDe": "DROH-neh",
+      "es": "dron",
+      "phoneticEs": "DRON",
+      "fr": "drone",
+      "frPhonetic": "DROHN",
+      "el": "drone",
+      "elPhonetic": "DRONE",
+      "hi": "ड्रोन",
+      "hiPhonetic": "DRON",
+      "ar": "طَائِرَة بِدُون طَيَّار",
+      "arPhonetic": "TAA-i-ra bi-DOON tay-YAAR",
+      "ko": "드론",
+      "koPhonetic": "DEU-ron",
+      "zh": "无人机",
+      "zhPhonetic": "wúrénjī",
+      "ja": "ドローン",
+      "jaPhonetic": "doroon"
     },
     {
       "uk": "віртуальна реальність",
@@ -2770,7 +4906,23 @@
         ]
       },
       "de": "virtuelle Realität",
-      "phoneticDe": "vir-too-EL-eh ray-a-li-TAYT"
+      "phoneticDe": "vir-too-EL-leh reh-ah-lee-TAYT",
+      "es": "realidad virtual",
+      "phoneticEs": "re-a-li-DÁD vir-TUÁL",
+      "fr": "réalité virtuelle",
+      "frPhonetic": "ray-ah-lee-TAY veer-TEWEL",
+      "el": "εικονική πραγματικότητα",
+      "elPhonetic": "i-ko-ni-KI prag-ma-ti-KO-ti-ta",
+      "hi": "आभासी वास्तविकता",
+      "hiPhonetic": "aa-BHAA-see VAAS-ta-vik-taa",
+      "ar": "وَاقِع اِفْتِرَاضِي",
+      "arPhonetic": "WAA-qi if-ti-raa-DEE",
+      "ko": "가상 현실",
+      "koPhonetic": "GA-sang HYEON-sil",
+      "zh": "虚拟现实",
+      "zhPhonetic": "xūnǐ xiànshí",
+      "ja": "仮想現実",
+      "jaPhonetic": "kasou genjitsu"
     },
     {
       "uk": "доповнена реальність",
@@ -2791,7 +4943,23 @@
         ]
       },
       "de": "erweiterte Realität",
-      "phoneticDe": "er-VY-ter-teh ray-a-li-TAYT"
+      "phoneticDe": "er-VY-ter-teh reh-ah-lee-TAYT",
+      "es": "realidad aumentada",
+      "phoneticEs": "re-a-li-DÁD aw-men-TÁ-da",
+      "fr": "réalité augmentée",
+      "frPhonetic": "ray-ah-lee-TAY ohg-mahn-TAY",
+      "el": "επαυξημένη πραγματικότητα",
+      "elPhonetic": "e-pav-ksi-ME-ni prag-ma-ti-KO-ti-ta",
+      "hi": "संवर्धित वास्तविकता",
+      "hiPhonetic": "san-VAR-dhit VAAS-ta-vik-taa",
+      "ar": "وَاقِع مُعَزَّز",
+      "arPhonetic": "WAA-qi mu-AZ-zaz",
+      "ko": "증강 현실",
+      "koPhonetic": "JEUNG-gang HYEON-sil",
+      "zh": "增强现实",
+      "zhPhonetic": "zēngqiáng xiànshí",
+      "ja": "拡張現実",
+      "jaPhonetic": "kakuchou genjitsu"
     },
     {
       "uk": "блокчейн",
@@ -2812,7 +4980,23 @@
         ]
       },
       "de": "Blockchain",
-      "phoneticDe": "BLOK-chayn"
+      "phoneticDe": "BLOK-chayn",
+      "es": "cadena de bloques",
+      "phoneticEs": "ka-DÉ-na de BLÓ-kes",
+      "fr": "chaîne de blocs",
+      "frPhonetic": "SHEN duh BLOK",
+      "el": "αλυσίδα μπλοκ",
+      "elPhonetic": "a-li-SI-tha BLOK",
+      "hi": "ब्लॉकचेन",
+      "hiPhonetic": "BLOK-chen",
+      "ar": "سِلْسِلَة الكُتَل",
+      "arPhonetic": "SIL-si-lat al-KU-tal",
+      "ko": "블록체인",
+      "koPhonetic": "BEUL-lok-CHE-in",
+      "zh": "区块链",
+      "zhPhonetic": "qūkuàiliàn",
+      "ja": "ブロックチェーン",
+      "jaPhonetic": "burokkucheen"
     },
     {
       "uk": "криптовалюта",
@@ -2833,7 +5017,23 @@
         ]
       },
       "de": "Kryptowährung",
-      "phoneticDe": "KRYP-to-vair-ung"
+      "phoneticDe": "KRIP-toh-vay-rung",
+      "es": "criptomoneda",
+      "phoneticEs": "krip-to-mo-NÉ-da",
+      "fr": "cryptomonnaie",
+      "frPhonetic": "kreep-toh-moh-NAY",
+      "el": "κρυπτονόμισμα",
+      "elPhonetic": "krip-to-NO-mis-ma",
+      "hi": "क्रिप्टोकरेंसी",
+      "hiPhonetic": "KRIP-to-ka-ren-see",
+      "ar": "عُمْلَة رَقَمِيَّة",
+      "arPhonetic": "UM-la ra-qa-MEE-ya",
+      "ko": "암호화폐",
+      "koPhonetic": "AM-ho-HWA-pye",
+      "zh": "加密货币",
+      "zhPhonetic": "jiāmì huòbì",
+      "ja": "暗号通貨",
+      "jaPhonetic": "angou tsuuka"
     },
     {
       "uk": "додаток",
@@ -2854,7 +5054,23 @@
         ]
       },
       "de": "App/Anwendung",
-      "phoneticDe": "app/AN-ven-dung"
+      "phoneticDe": "APP/AHN-ven-doong",
+      "es": "aplicación",
+      "phoneticEs": "a-pli-ca-CION",
+      "fr": "appli/application",
+      "frPhonetic": "a-PLEE/a-plee-ka-SYOHN",
+      "el": "εφαρμογή",
+      "elPhonetic": "e-far-mo-YI",
+      "hi": "ऐप",
+      "hiPhonetic": "AIP",
+      "ar": "تطبيق",
+      "arPhonetic": "tat-BEEQ",
+      "ko": "앱",
+      "koPhonetic": "AEP",
+      "zh": "应用程序",
+      "zhPhonetic": "yìngyòng chéngxù",
+      "ja": "アプリ",
+      "jaPhonetic": "apuri"
     },
     {
       "uk": "оновлення",
@@ -2874,8 +5090,24 @@
           "The system needs an urgent update."
         ]
       },
-      "de": "Aktualisierung",
-      "phoneticDe": "ak-too-a-li-ZEER-ung"
+      "de": "Aktualisierung/Update",
+      "phoneticDe": "ahk-too-ah-lee-ZEE-roong/AHP-dayt",
+      "es": "actualización",
+      "phoneticEs": "ac-tua-li-za-CION",
+      "fr": "mise à jour",
+      "frPhonetic": "meez a ZHOOR",
+      "el": "ενημέρωση",
+      "elPhonetic": "e-ni-ME-ro-si",
+      "hi": "अपडेट",
+      "hiPhonetic": "AP-det",
+      "ar": "تحديث",
+      "arPhonetic": "tah-DEETH",
+      "ko": "업데이트",
+      "koPhonetic": "EOP-de-i-teu",
+      "zh": "更新",
+      "zhPhonetic": "gēngxīn",
+      "ja": "更新",
+      "jaPhonetic": "koushin"
     },
     {
       "uk": "інтерфейс",
@@ -2895,8 +5127,24 @@
           "The program's interface is simple and easy to use."
         ]
       },
-      "de": "Benutzeroberfläche",
-      "phoneticDe": "beh-NOOT-ser-oh-ber-fleh-kheh"
+      "de": "Schnittstelle",
+      "phoneticDe": "SHNIT-shtel-leh",
+      "es": "interfaz",
+      "phoneticEs": "in-ter-FAS",
+      "fr": "interface",
+      "frPhonetic": "eh-tair-FAS",
+      "el": "διεπαφή",
+      "elPhonetic": "di-e-pa-FI",
+      "hi": "इंटरफ़ेस",
+      "hiPhonetic": "IN-tar-fes",
+      "ar": "وَاجِهَة",
+      "arPhonetic": "WAA-ji-ha",
+      "ko": "인터페이스",
+      "koPhonetic": "IN-teo-PE-i-seu",
+      "zh": "界面",
+      "zhPhonetic": "jièmiàn",
+      "ja": "インターフェース",
+      "jaPhonetic": "intaafeisu"
     },
     {
       "uk": "сенсор",
@@ -2917,7 +5165,23 @@
         ]
       },
       "de": "Sensor",
-      "phoneticDe": "ZEN-zor"
+      "phoneticDe": "ZEN-zor",
+      "es": "sensor",
+      "phoneticEs": "sen-SOR",
+      "fr": "capteur",
+      "frPhonetic": "kap-TUR",
+      "el": "αισθητήρας",
+      "elPhonetic": "es-thi-TI-ras",
+      "hi": "सेंसर",
+      "hiPhonetic": "SEN-sar",
+      "ar": "مُسْتَشْعِر",
+      "arPhonetic": "mus-TASH-ir",
+      "ko": "센서",
+      "koPhonetic": "SEN-seo",
+      "zh": "传感器",
+      "zhPhonetic": "chuángǎnqì",
+      "ja": "センサー",
+      "jaPhonetic": "sensaa"
     },
     {
       "uk": "процесор",
@@ -2938,7 +5202,23 @@
         ]
       },
       "de": "Prozessor",
-      "phoneticDe": "pro-TSES-or"
+      "phoneticDe": "pro-TSES-sor",
+      "es": "procesador",
+      "phoneticEs": "pro-ce-sa-DOR",
+      "fr": "processeur",
+      "frPhonetic": "proh-se-SUR",
+      "el": "επεξεργαστής",
+      "elPhonetic": "e-pe-kser-gas-TIS",
+      "hi": "प्रोसेसर",
+      "hiPhonetic": "PRO-se-sar",
+      "ar": "مُعَالِج",
+      "arPhonetic": "mu-AA-lij",
+      "ko": "프로세서",
+      "koPhonetic": "peu-RO-se-seo",
+      "zh": "处理器",
+      "zhPhonetic": "chǔlǐqì",
+      "ja": "プロセッサ",
+      "jaPhonetic": "purosessa"
     },
     {
       "uk": "оперативна пам'ять",
@@ -2958,8 +5238,24 @@
           "The computer's RAM has been upgraded to 16 GB."
         ]
       },
-      "de": "Arbeitsspeicher",
-      "phoneticDe": "AR-byts-shpy-kher"
+      "de": "Arbeitsspeicher/RAM",
+      "phoneticDe": "AR-bytes-shpy-sher/REM",
+      "es": "RAM",
+      "phoneticEs": "RAM",
+      "fr": "RAM",
+      "frPhonetic": "RAM",
+      "el": "μνήμη RAM",
+      "elPhonetic": "MNI-mi ram",
+      "hi": "रैम",
+      "hiPhonetic": "RAM",
+      "ar": "ذَاكِرَة عَشْوَائِيَّة",
+      "arPhonetic": "DHAA-ki-ra ash-wa-EE-ya",
+      "ko": "램",
+      "koPhonetic": "RAEM",
+      "zh": "内存",
+      "zhPhonetic": "nèicún",
+      "ja": "メモリ",
+      "jaPhonetic": "memori"
     },
     {
       "uk": "жорсткий диск",
@@ -2980,7 +5276,23 @@
         ]
       },
       "de": "Festplatte",
-      "phoneticDe": "FEST-plat-eh"
+      "phoneticDe": "FEST-plah-teh",
+      "es": "disco duro",
+      "phoneticEs": "DIS-co DU-ro",
+      "fr": "disque dur",
+      "frPhonetic": "deesk DOOR",
+      "el": "σκληρός δίσκος",
+      "elPhonetic": "skli-ROS DIS-kos",
+      "hi": "हार्ड ड्राइव",
+      "hiPhonetic": "HAARD DRAIV",
+      "ar": "قرص صلب",
+      "arPhonetic": "QURS SULB",
+      "ko": "하드 드라이브",
+      "koPhonetic": "ha-deu-DEU-ra-i-beu",
+      "zh": "硬盘",
+      "zhPhonetic": "yìngpán",
+      "ja": "ハードディスク",
+      "jaPhonetic": "haado disuku"
     },
     {
       "uk": "флешка",
@@ -3001,7 +5313,23 @@
         ]
       },
       "de": "USB-Stick",
-      "phoneticDe": "oo-es-BAY-shtik"
+      "phoneticDe": "oo-es-BAY-shtik",
+      "es": "memoria USB",
+      "phoneticEs": "me-MO-rya u-es-BE",
+      "fr": "clé USB",
+      "frPhonetic": "KLAY ew-es-BAY",
+      "el": "μονάδα flash",
+      "elPhonetic": "mo-NA-da flash",
+      "hi": "पेन ड्राइव",
+      "hiPhonetic": "PEN DRAIV",
+      "ar": "ذَاكِرَة فْلَاش",
+      "arPhonetic": "DHAA-ki-rat FLASH",
+      "ko": "USB",
+      "koPhonetic": "YU-es-BI",
+      "zh": "U盘",
+      "zhPhonetic": "U pán",
+      "ja": "USBメモリ",
+      "jaPhonetic": "yuuesubii memori"
     },
     {
       "uk": "навушники",
@@ -3022,7 +5350,23 @@
         ]
       },
       "de": "Kopfhörer",
-      "phoneticDe": "KOPF-heh-rer"
+      "phoneticDe": "KOPF-hue-rer",
+      "es": "auriculares",
+      "phoneticEs": "au-ri-cu-LA-res",
+      "fr": "casque/écouteurs",
+      "frPhonetic": "KASK/ay-koo-TUHR",
+      "el": "ακουστικά",
+      "elPhonetic": "a-kus-ti-KA",
+      "hi": "हेडफ़ोन",
+      "hiPhonetic": "HED-fon",
+      "ar": "سماعات",
+      "arPhonetic": "sam-maa-AAT",
+      "ko": "헤드폰",
+      "koPhonetic": "HE-deu-pon",
+      "zh": "耳机",
+      "zhPhonetic": "ěrjī",
+      "ja": "ヘッドホン",
+      "jaPhonetic": "heddohon"
     },
     {
       "uk": "колонка",
@@ -3043,7 +5387,23 @@
         ]
       },
       "de": "Lautsprecher",
-      "phoneticDe": "LOWT-shprekh-er"
+      "phoneticDe": "LOWT-shprekh-er",
+      "es": "altavoz",
+      "phoneticEs": "al-ta-VOZ",
+      "fr": "haut-parleur",
+      "frPhonetic": "oh-par-LUHR",
+      "el": "ηχείο",
+      "elPhonetic": "i-HI-o",
+      "hi": "स्पीकर",
+      "hiPhonetic": "SPEE-kar",
+      "ar": "مكبر صوت",
+      "arPhonetic": "mu-KAB-bir SAWT",
+      "ko": "스피커",
+      "koPhonetic": "seu-PI-keo",
+      "zh": "音箱",
+      "zhPhonetic": "yīnxiāng",
+      "ja": "スピーカー",
+      "jaPhonetic": "supiikaa"
     },
     {
       "uk": "вебкамера",
@@ -3064,7 +5424,23 @@
         ]
       },
       "de": "Webcam",
-      "phoneticDe": "VEB-kam"
+      "phoneticDe": "VEP-kam",
+      "es": "cámara web",
+      "phoneticEs": "KA-ma-ra web",
+      "fr": "webcam",
+      "frPhonetic": "WEB-kam",
+      "el": "κάμερα web",
+      "elPhonetic": "KA-me-ra web",
+      "hi": "वेबकैम",
+      "hiPhonetic": "VEB-kaim",
+      "ar": "كَامِيرَا وِيب",
+      "arPhonetic": "kaa-MEE-ra WEEB",
+      "ko": "웹캠",
+      "koPhonetic": "WEP-kaem",
+      "zh": "网络摄像头",
+      "zhPhonetic": "wǎngluò shèxiàngtóu",
+      "ja": "ウェブカメラ",
+      "jaPhonetic": "webukamera"
     },
     {
       "uk": "оптоволокно",
@@ -3085,7 +5461,23 @@
         ]
       },
       "de": "Glasfaser",
-      "phoneticDe": "GLAS-fah-zer"
+      "phoneticDe": "GLAHS-fah-zer",
+      "es": "fibra óptica",
+      "phoneticEs": "FEE-bra OP-ti-ka",
+      "fr": "fibre optique",
+      "frPhonetic": "FEE-bruh op-TEEK",
+      "el": "οπτικές ίνες",
+      "elPhonetic": "op-ti-KES I-nes",
+      "hi": "फ़ाइबर ऑप्टिक्स",
+      "hiPhonetic": "FAI-bar OP-tiks",
+      "ar": "أَلْيَاف ضَوْئِيَّة",
+      "arPhonetic": "al-YAAF daw-EE-ya",
+      "ko": "광섬유",
+      "koPhonetic": "GWANG-seom-yu",
+      "zh": "光纤",
+      "zhPhonetic": "guāngxiān",
+      "ja": "光ファイバー",
+      "jaPhonetic": "hikari faibaa"
     },
     {
       "uk": "бездротовий",
@@ -3105,8 +5497,24 @@
           "Wireless connection is more convenient than a wired one."
         ]
       },
-      "de": "kabellos",
-      "phoneticDe": "KAH-bel-los"
+      "de": "kabellos/drahtlos",
+      "phoneticDe": "KAH-bel-lohs/DRAHT-lohs",
+      "es": "inalámbrico",
+      "phoneticEs": "i-na-LAM-bri-co",
+      "fr": "sans fil",
+      "frPhonetic": "son-FEEL",
+      "el": "ασύρματος",
+      "elPhonetic": "a-SIR-ma-tos",
+      "hi": "वायरलेस",
+      "hiPhonetic": "VAA-yar-les",
+      "ar": "لَاسِلْكِي",
+      "arPhonetic": "laa-SIL-kee",
+      "ko": "무선의",
+      "koPhonetic": "MU-seon-eui",
+      "zh": "无线的",
+      "zhPhonetic": "wúxiàn de",
+      "ja": "ワイヤレスの",
+      "jaPhonetic": "waiyaresu no"
     },
     {
       "uk": "хмарні обчислення",
@@ -3127,7 +5535,23 @@
         ]
       },
       "de": "Cloud-Computing",
-      "phoneticDe": "klowd-kom-PYOO-ting"
+      "phoneticDe": "KLAOUD-kom-pyoo-ting",
+      "es": "computación en la nube",
+      "phoneticEs": "kom-pu-ta-SYON en la NOO-be",
+      "fr": "informatique en nuage",
+      "frPhonetic": "eh-for-mah-TEEK ahn new-AZH",
+      "el": "υπολογιστική νέφους",
+      "elPhonetic": "i-po-lo-yis-ti-KI NE-fus",
+      "hi": "क्लाउड कंप्यूटिंग",
+      "hiPhonetic": "KLAUD kam-PYOO-ting",
+      "ar": "حَوْسَبَة سَحَابِيَّة",
+      "arPhonetic": "haw-SA-ba sa-haa-BEE-ya",
+      "ko": "클라우드 컴퓨팅",
+      "koPhonetic": "KEUL-la-u-deu KEOM-pyu-ting",
+      "zh": "云计算",
+      "zhPhonetic": "yún jìsuàn",
+      "ja": "クラウドコンピューティング",
+      "jaPhonetic": "kuraudo konpyuutingu"
     },
     {
       "uk": "кібербезпека",
@@ -3148,7 +5572,23 @@
         ]
       },
       "de": "Cybersicherheit",
-      "phoneticDe": "SY-ber-zi-kher-hyte"
+      "phoneticDe": "ZY-ber-zikh-er-hyte",
+      "es": "ciberseguridad",
+      "phoneticEs": "si-ber-se-gu-ri-DAD",
+      "fr": "cybersécurité",
+      "frPhonetic": "see-bair-say-kew-ree-TAY",
+      "el": "κυβερνοασφάλεια",
+      "elPhonetic": "ki-ver-no-as-FA-li-a",
+      "hi": "साइबर सुरक्षा",
+      "hiPhonetic": "SAI-bar su-RAK-shaa",
+      "ar": "أَمْن سِيبْرَانِي",
+      "arPhonetic": "AMN seeb-RAA-nee",
+      "ko": "사이버 보안",
+      "koPhonetic": "SA-i-beo BO-an",
+      "zh": "网络安全",
+      "zhPhonetic": "wǎngluò ānquán",
+      "ja": "サイバーセキュリティ",
+      "jaPhonetic": "saibaa sekyuriti"
     },
     {
       "uk": "шифрування",
@@ -3169,7 +5609,23 @@
         ]
       },
       "de": "Verschlüsselung",
-      "phoneticDe": "fer-SHLEWS-el-ung"
+      "phoneticDe": "fair-SHLUE-seh-loong",
+      "es": "cifrado",
+      "phoneticEs": "ci-FRA-do",
+      "fr": "chiffrement",
+      "frPhonetic": "sheef-ruh-MAHN",
+      "el": "κρυπτογράφηση",
+      "elPhonetic": "krip-to-GRA-fi-si",
+      "hi": "एन्क्रिप्शन",
+      "hiPhonetic": "en-KRIP-shan",
+      "ar": "تشفير",
+      "arPhonetic": "tash-FEER",
+      "ko": "암호화",
+      "koPhonetic": "am-HO-hwa",
+      "zh": "加密",
+      "zhPhonetic": "jiāmì",
+      "ja": "暗号化",
+      "jaPhonetic": "angouka"
     },
     {
       "uk": "археолог",
@@ -3190,7 +5646,23 @@
         ]
       },
       "de": "Archäologe",
-      "phoneticDe": "ar-kheh-o-LOH-geh"
+      "phoneticDe": "ar-khay-oh-LOH-geh",
+      "es": "arqueólogo",
+      "phoneticEs": "ar-ke-O-lo-go",
+      "fr": "archéologue",
+      "frPhonetic": "ar-kay-oh-LOG",
+      "el": "αρχαιολόγος",
+      "elPhonetic": "ar-he-o-LO-gos",
+      "hi": "पुरातत्वविद",
+      "hiPhonetic": "pu-raa-TAT-va-vid",
+      "ar": "عَالِم آثَار",
+      "arPhonetic": "AA-lim AA-thaar",
+      "ko": "고고학자",
+      "koPhonetic": "GO-go-HAK-ja",
+      "zh": "考古学家",
+      "zhPhonetic": "kǎogǔxuéjiā",
+      "ja": "考古学者",
+      "jaPhonetic": "koukogakusha"
     },
     {
       "uk": "астроном",
@@ -3211,7 +5683,23 @@
         ]
       },
       "de": "Astronom",
-      "phoneticDe": "as-tro-NOM"
+      "phoneticDe": "as-tro-NOHM",
+      "es": "astrónomo",
+      "phoneticEs": "as-TRO-no-mo",
+      "fr": "astronome",
+      "frPhonetic": "as-troh-NOM",
+      "el": "αστρονόμος",
+      "elPhonetic": "as-tro-NO-mos",
+      "hi": "खगोलशास्त्री",
+      "hiPhonetic": "kha-GOL-shaas-tree",
+      "ar": "عَالِم فَلَك",
+      "arPhonetic": "AA-lim FA-lak",
+      "ko": "천문학자",
+      "koPhonetic": "CHEON-mun-HAK-ja",
+      "zh": "天文学家",
+      "zhPhonetic": "tiānwénxuéjiā",
+      "ja": "天文学者",
+      "jaPhonetic": "tenmongakusha"
     },
     {
       "uk": "ботанік",
@@ -3232,7 +5720,23 @@
         ]
       },
       "de": "Botaniker",
-      "phoneticDe": "bo-TAH-ni-ker"
+      "phoneticDe": "bo-TAH-nee-ker",
+      "es": "botánico",
+      "phoneticEs": "bo-TA-ni-ko",
+      "fr": "botaniste",
+      "frPhonetic": "boh-tah-NEEST",
+      "el": "βοτανολόγος",
+      "elPhonetic": "vo-ta-no-LO-gos",
+      "hi": "वनस्पतिशास्त्री",
+      "hiPhonetic": "va-nas-PA-ti-shaas-tree",
+      "ar": "عَالِم نَبَات",
+      "arPhonetic": "AA-lim na-BAAT",
+      "ko": "식물학자",
+      "koPhonetic": "SIK-mul-HAK-ja",
+      "zh": "植物学家",
+      "zhPhonetic": "zhíwùxuéjiā",
+      "ja": "植物学者",
+      "jaPhonetic": "shokubutsugakusha"
     },
     {
       "uk": "зоолог",
@@ -3253,7 +5757,23 @@
         ]
       },
       "de": "Zoologe",
-      "phoneticDe": "tso-o-LOH-geh"
+      "phoneticDe": "tsoh-oh-LOH-geh",
+      "es": "zoólogo",
+      "phoneticEs": "so-O-lo-go",
+      "fr": "zoologiste",
+      "frPhonetic": "zoh-oh-loh-ZHEEST",
+      "el": "ζωολόγος",
+      "elPhonetic": "zo-o-LO-gos",
+      "hi": "प्राणिशास्त्री",
+      "hiPhonetic": "praa-NI-shaas-tree",
+      "ar": "عَالِم حَيَوَان",
+      "arPhonetic": "AA-lim ha-ya-WAAN",
+      "ko": "동물학자",
+      "koPhonetic": "DONG-mul-HAK-ja",
+      "zh": "动物学家",
+      "zhPhonetic": "dòngwùxuéjiā",
+      "ja": "動物学者",
+      "jaPhonetic": "doubutsugakusha"
     },
     {
       "uk": "геолог",
@@ -3274,7 +5794,23 @@
         ]
       },
       "de": "Geologe",
-      "phoneticDe": "gay-o-LOH-geh"
+      "phoneticDe": "geh-oh-LOH-geh",
+      "es": "geólogo",
+      "phoneticEs": "he-O-lo-go",
+      "fr": "géologue",
+      "frPhonetic": "zhay-oh-LOG",
+      "el": "γεωλόγος",
+      "elPhonetic": "ye-o-LO-gos",
+      "hi": "भूविज्ञानी",
+      "hiPhonetic": "bhoo-vi-GYAA-nee",
+      "ar": "عَالِم جِيُولُوجِيَا",
+      "arPhonetic": "AA-lim jee-yo-lo-JEE-ya",
+      "ko": "지질학자",
+      "koPhonetic": "JI-jil-HAK-ja",
+      "zh": "地质学家",
+      "zhPhonetic": "dìzhìxuéjiā",
+      "ja": "地質学者",
+      "jaPhonetic": "chishitsugakusha"
     },
     {
       "uk": "метеоролог",
@@ -3295,7 +5831,23 @@
         ]
       },
       "de": "Meteorologe",
-      "phoneticDe": "may-teh-o-ro-LOH-geh"
+      "phoneticDe": "meh-teh-oh-ro-LOH-geh",
+      "es": "meteorólogo",
+      "phoneticEs": "me-te-o-RO-lo-go",
+      "fr": "météorologue",
+      "frPhonetic": "may-tay-oh-roh-LOG",
+      "el": "μετεωρολόγος",
+      "elPhonetic": "me-te-o-ro-LO-gos",
+      "hi": "मौसम विज्ञानी",
+      "hiPhonetic": "MAU-sam vi-GYAA-nee",
+      "ar": "عَالِم أَرْصَاد",
+      "arPhonetic": "AA-lim ar-SAAD",
+      "ko": "기상학자",
+      "koPhonetic": "GI-sang-HAK-ja",
+      "zh": "气象学家",
+      "zhPhonetic": "qìxiàngxuéjiā",
+      "ja": "気象学者",
+      "jaPhonetic": "kishougakusha"
     },
     {
       "uk": "фармацевт",
@@ -3316,7 +5868,23 @@
         ]
       },
       "de": "Apotheker",
-      "phoneticDe": "ah-po-TAY-ker"
+      "phoneticDe": "ah-poh-TAY-ker",
+      "es": "farmacéutico",
+      "phoneticEs": "far-ma-CEU-ti-co",
+      "fr": "pharmacien",
+      "frPhonetic": "far-ma-SYAN",
+      "el": "φαρμακοποιός",
+      "elPhonetic": "far-ma-ko-pi-OS",
+      "hi": "फार्मासिस्ट",
+      "hiPhonetic": "FAAR-maa-sist",
+      "ar": "صيدلي",
+      "arPhonetic": "say-DA-lee",
+      "ko": "약사",
+      "koPhonetic": "YAK-sa",
+      "zh": "药剂师",
+      "zhPhonetic": "yàojìshī",
+      "ja": "薬剤師",
+      "jaPhonetic": "YA-ku-zai-shi"
     },
     {
       "uk": "ветеринар",
@@ -3336,8 +5904,24 @@
           "The vet examined the sick cat."
         ]
       },
-      "de": "Tierarzt",
-      "phoneticDe": "TEER-artst"
+      "de": "Tierarzt/Tierärztin",
+      "phoneticDe": "TEER-artst/TEER-airts-tin",
+      "es": "veterinario",
+      "phoneticEs": "veh-teh-ree-NAR-yoh",
+      "fr": "vétérinaire",
+      "frPhonetic": "vay-tay-ree-NAIR",
+      "el": "κτηνίατρος",
+      "elPhonetic": "kti-NI-a-tros",
+      "hi": "पशु चिकित्सक",
+      "hiPhonetic": "PA-shu chi-KIT-sak",
+      "ar": "طَبِيبٌ بَيْطَرِيّ",
+      "arPhonetic": "ta-BEE-bun bay-ta-RIY",
+      "ko": "수의사",
+      "koPhonetic": "su-UI-sa",
+      "zh": "兽医",
+      "zhPhonetic": "shòuyī",
+      "ja": "獣医",
+      "jaPhonetic": "juui"
     },
     {
       "uk": "перекладач",
@@ -3358,7 +5942,23 @@
         ]
       },
       "de": "Übersetzer/Dolmetscher",
-      "phoneticDe": "EW-ber-zet-ser/DOL-metch-er"
+      "phoneticDe": "ue-ber-ZET-ser/DOL-met-sher",
+      "es": "intérprete",
+      "phoneticEs": "in-TER-pre-te",
+      "fr": "traducteur",
+      "frPhonetic": "tra-dük-TUR",
+      "el": "μεταφραστής",
+      "elPhonetic": "me-ta-fra-STIS",
+      "hi": "अनुवादक/दुभाषिया",
+      "hiPhonetic": "a-nu-VAA-dak/du-BHAA-shi-yaa",
+      "ar": "مترجم",
+      "arPhonetic": "mu-TAR-jim",
+      "ko": "통역사",
+      "koPhonetic": "tong-YEOK-sa",
+      "zh": "翻译",
+      "zhPhonetic": "fānyì",
+      "ja": "翻訳者",
+      "jaPhonetic": "HON-ya-ku-sha"
     },
     {
       "uk": "журналіст",
@@ -3378,8 +5978,24 @@
           "The journalist wrote an article about the new reform."
         ]
       },
-      "de": "Journalist",
-      "phoneticDe": "zhoor-nah-LIST"
+      "de": "Journalist/Journalistin",
+      "phoneticDe": "zhoor-nah-LIST/zhoor-nah-LIS-tin",
+      "es": "periodista",
+      "phoneticEs": "peh-ryoh-DEES-tah",
+      "fr": "journaliste",
+      "frPhonetic": "zhoor-na-LEEST",
+      "el": "δημοσιογράφος",
+      "elPhonetic": "thi-mo-syo-GRA-fos",
+      "hi": "पत्रकार",
+      "hiPhonetic": "pa-tra-KAAR",
+      "ar": "صَحَفِيّ",
+      "arPhonetic": "sa-ha-FIY",
+      "ko": "기자",
+      "koPhonetic": "KI-ja",
+      "zh": "记者",
+      "zhPhonetic": "jìzhě",
+      "ja": "ジャーナリスト",
+      "jaPhonetic": "jaanarisuto"
     },
     {
       "uk": "редактор",
@@ -3400,7 +6016,23 @@
         ]
       },
       "de": "Redakteur",
-      "phoneticDe": "reh-dak-TER"
+      "phoneticDe": "reh-dak-TEUR",
+      "es": "editor",
+      "phoneticEs": "e-di-TOR",
+      "fr": "rédacteur",
+      "frPhonetic": "ray-dak-TUR",
+      "el": "συντάκτης",
+      "elPhonetic": "sin-DAK-tis",
+      "hi": "संपादक",
+      "hiPhonetic": "sam-PAA-dak",
+      "ar": "مُحَرِّر",
+      "arPhonetic": "mu-HAR-rir",
+      "ko": "편집자",
+      "koPhonetic": "PYEON-jip-ja",
+      "zh": "编辑",
+      "zhPhonetic": "biānjí",
+      "ja": "編集者",
+      "jaPhonetic": "henshuusha"
     },
     {
       "uk": "фотограф",
@@ -3421,7 +6053,23 @@
         ]
       },
       "de": "Fotograf",
-      "phoneticDe": "fo-to-GRAF"
+      "phoneticDe": "foh-toh-GRAHF",
+      "es": "fotógrafo",
+      "phoneticEs": "fo-TO-gra-fo",
+      "fr": "photographe",
+      "frPhonetic": "fo-to-GRAF",
+      "el": "φωτογράφος",
+      "elPhonetic": "fo-TO-gra-fos",
+      "hi": "फ़ोटोग्राफ़र",
+      "hiPhonetic": "FO-to-graa-far",
+      "ar": "مصوّر",
+      "arPhonetic": "mu-SAW-wir",
+      "ko": "사진작가",
+      "koPhonetic": "sa-jin-JAK-ga",
+      "zh": "摄影师",
+      "zhPhonetic": "shèyǐngshī",
+      "ja": "写真家",
+      "jaPhonetic": "SHA-shin-ka"
     },
     {
       "uk": "дизайнер",
@@ -3442,7 +6090,23 @@
         ]
       },
       "de": "Designer",
-      "phoneticDe": "deh-ZY-ner"
+      "phoneticDe": "dee-ZY-ner",
+      "es": "diseñador",
+      "phoneticEs": "di-se-ña-DOR",
+      "fr": "designer",
+      "frPhonetic": "dee-ZY-ner",
+      "el": "σχεδιαστής",
+      "elPhonetic": "she-dhyas-TIS",
+      "hi": "डिज़ाइनर",
+      "hiPhonetic": "di-ZAI-nar",
+      "ar": "مصمم",
+      "arPhonetic": "mu-SAM-mim",
+      "ko": "디자이너",
+      "koPhonetic": "di-JA-i-neo",
+      "zh": "设计师",
+      "zhPhonetic": "shèjìshī",
+      "ja": "デザイナー",
+      "jaPhonetic": "DE-zai-naa"
     },
     {
       "uk": "програміст",
@@ -3463,7 +6127,23 @@
         ]
       },
       "de": "Programmierer",
-      "phoneticDe": "pro-gra-MEER-er"
+      "phoneticDe": "proh-grah-MEE-rer",
+      "es": "programador",
+      "phoneticEs": "proh-grah-mah-DOHR",
+      "fr": "programmeur",
+      "frPhonetic": "proh-gra-MUR",
+      "el": "προγραμματιστής",
+      "elPhonetic": "pro-gra-ma-tis-TIS",
+      "hi": "प्रोग्रामर",
+      "hiPhonetic": "PRO-graa-mar",
+      "ar": "مُبَرْمِج",
+      "arPhonetic": "mu-BAR-mij",
+      "ko": "프로그래머",
+      "koPhonetic": "pu-ro-GU-re-mo",
+      "zh": "程序员",
+      "zhPhonetic": "chéngxùyuán",
+      "ja": "プログラマー",
+      "jaPhonetic": "puroguramaa"
     },
     {
       "uk": "інженер",
@@ -3484,7 +6164,23 @@
         ]
       },
       "de": "Ingenieur",
-      "phoneticDe": "in-zheh-NYUR"
+      "phoneticDe": "in-zheh-NYUHR",
+      "es": "ingeniero",
+      "phoneticEs": "een-heh-NYEH-roh",
+      "fr": "ingénieur",
+      "frPhonetic": "an-zhay-NYUR",
+      "el": "μηχανικός",
+      "elPhonetic": "mi-ha-ni-KOS",
+      "hi": "इंजीनियर",
+      "hiPhonetic": "in-JEE-ni-yar",
+      "ar": "مُهَنْدِس",
+      "arPhonetic": "mu-HAN-dis",
+      "ko": "엔지니어",
+      "koPhonetic": "en-ji-NI-o",
+      "zh": "工程师",
+      "zhPhonetic": "gōngchéngshī",
+      "ja": "エンジニア",
+      "jaPhonetic": "enjinia"
     },
     {
       "uk": "електрик",
@@ -3505,7 +6201,23 @@
         ]
       },
       "de": "Elektriker",
-      "phoneticDe": "eh-LEK-tri-ker"
+      "phoneticDe": "eh-LEK-tree-ker",
+      "es": "electricista",
+      "phoneticEs": "e-lec-tri-CIS-ta",
+      "fr": "électricien",
+      "frPhonetic": "ay-lek-tree-SYAN",
+      "el": "ηλεκτρολόγος",
+      "elPhonetic": "i-lek-tro-LO-gos",
+      "hi": "इलेक्ट्रीशियन",
+      "hiPhonetic": "i-lek-TREE-shi-yan",
+      "ar": "كهربائي",
+      "arPhonetic": "kah-ra-baa-EE",
+      "ko": "전기기사",
+      "koPhonetic": "jeon-gi-GI-sa",
+      "zh": "电工",
+      "zhPhonetic": "diàngōng",
+      "ja": "電気技師",
+      "jaPhonetic": "DEN-ki-GI-shi"
     },
     {
       "uk": "сантехнік",
@@ -3526,7 +6238,23 @@
         ]
       },
       "de": "Klempner",
-      "phoneticDe": "KLEMP-ner"
+      "phoneticDe": "KLEMP-ner",
+      "es": "fontanero",
+      "phoneticEs": "fon-ta-NE-ro",
+      "fr": "plombier",
+      "frPhonetic": "plom-BYAY",
+      "el": "υδραυλικός",
+      "elPhonetic": "i-drav-li-KOS",
+      "hi": "प्लंबर",
+      "hiPhonetic": "PLAM-bar",
+      "ar": "سبّاك",
+      "arPhonetic": "sab-BAAK",
+      "ko": "배관공",
+      "koPhonetic": "bae-GWAN-gong",
+      "zh": "水管工",
+      "zhPhonetic": "shuǐguǎngōng",
+      "ja": "配管工",
+      "jaPhonetic": "HAI-kan-kou"
     },
     {
       "uk": "столяр",
@@ -3546,8 +6274,24 @@
           "The carpenter made a beautiful wooden table."
         ]
       },
-      "de": "Zimmermann",
-      "phoneticDe": "TSIM-er-man"
+      "de": "Tischler",
+      "phoneticDe": "TISH-ler",
+      "es": "carpintero",
+      "phoneticEs": "kar-pin-TE-ro",
+      "fr": "menuisier",
+      "frPhonetic": "muh-nwee-ZYAY",
+      "el": "ξυλουργός",
+      "elPhonetic": "ksi-lur-GOS",
+      "hi": "बढ़ई",
+      "hiPhonetic": "ba-RHAA-ee",
+      "ar": "نَجَّار",
+      "arPhonetic": "naj-JAAR",
+      "ko": "목수",
+      "koPhonetic": "MOK-su",
+      "zh": "木匠",
+      "zhPhonetic": "mùjiang",
+      "ja": "大工",
+      "jaPhonetic": "daiku"
     },
     {
       "uk": "маляр",
@@ -3567,8 +6311,24 @@
           "The painter painted the walls white."
         ]
       },
-      "de": "Maler",
-      "phoneticDe": "MAH-ler"
+      "de": "Maler/Anstreicher",
+      "phoneticDe": "MAH-ler/AN-shtry-kher",
+      "es": "pintor",
+      "phoneticEs": "pin-TOR",
+      "fr": "peintre (murs)",
+      "frPhonetic": "PEH-truh (MEWR)",
+      "el": "ελαιοχρωματιστής",
+      "elPhonetic": "e-le-o-hro-ma-tis-TIS",
+      "hi": "पेंटर",
+      "hiPhonetic": "PEN-tar",
+      "ar": "دَهَّان",
+      "arPhonetic": "dah-HAAN",
+      "ko": "페인트공",
+      "koPhonetic": "PE-in-teu-gong",
+      "zh": "油漆工",
+      "zhPhonetic": "yóuqīgōng",
+      "ja": "塗装工",
+      "jaPhonetic": "tosoukou"
     },
     {
       "uk": "кухар",
@@ -3588,8 +6348,24 @@
           "The chef prepared a delicious dinner for the guests."
         ]
       },
-      "de": "Koch",
-      "phoneticDe": "kokh"
+      "de": "Koch/Köchin",
+      "phoneticDe": "KOKH/KUR-shin",
+      "es": "cocinero",
+      "phoneticEs": "co-ci-NE-ro",
+      "fr": "cuisinier",
+      "frPhonetic": "kwee-zee-NYAY",
+      "el": "μάγειρας",
+      "elPhonetic": "MA-yi-ras",
+      "hi": "रसोइया",
+      "hiPhonetic": "ra-SO-i-yaa",
+      "ar": "طَبَّاخ",
+      "arPhonetic": "tab-BAAKH",
+      "ko": "요리사",
+      "koPhonetic": "yo-RI-sa",
+      "zh": "厨师",
+      "zhPhonetic": "chúshī",
+      "ja": "料理人",
+      "jaPhonetic": "ryourinin"
     },
     {
       "uk": "пекар",
@@ -3610,7 +6386,23 @@
         ]
       },
       "de": "Bäcker",
-      "phoneticDe": "BEK-er"
+      "phoneticDe": "BEK-ker",
+      "es": "panadero",
+      "phoneticEs": "pa-na-DE-ro",
+      "fr": "boulanger",
+      "frPhonetic": "boo-lan-ZHAY",
+      "el": "αρτοποιός",
+      "elPhonetic": "ar-to-pi-OS",
+      "hi": "नानबाई",
+      "hiPhonetic": "naan-BAA-ee",
+      "ar": "خبّاز",
+      "arPhonetic": "khab-BAAZ",
+      "ko": "제빵사",
+      "koPhonetic": "je-PPANG-sa",
+      "zh": "面包师",
+      "zhPhonetic": "miànbāoshī",
+      "ja": "パン屋",
+      "jaPhonetic": "PAN-ya"
     },
     {
       "uk": "м'ясник",
@@ -3630,8 +6422,24 @@
           "The butcher cut fresh meat for the customer."
         ]
       },
-      "de": "Metzger",
-      "phoneticDe": "METS-ger"
+      "de": "Metzger/Fleischer",
+      "phoneticDe": "METS-ger/FLY-sher",
+      "es": "carnicero",
+      "phoneticEs": "car-ni-CE-ro",
+      "fr": "boucher",
+      "frPhonetic": "boo-SHAY",
+      "el": "χασάπης",
+      "elPhonetic": "ha-SA-pis",
+      "hi": "कसाई",
+      "hiPhonetic": "ka-SAA-ee",
+      "ar": "جزّار",
+      "arPhonetic": "jaz-ZAAR",
+      "ko": "정육점주",
+      "koPhonetic": "jeong-yuk-JEOM-ju",
+      "zh": "屠夫",
+      "zhPhonetic": "túfū",
+      "ja": "肉屋",
+      "jaPhonetic": "NI-ku-ya"
     },
     {
       "uk": "перукар",
@@ -3651,8 +6459,24 @@
           "The hairdresser gave me a nice haircut."
         ]
       },
-      "de": "Friseur",
-      "phoneticDe": "free-ZUR"
+      "de": "Friseur/Friseurin",
+      "phoneticDe": "free-ZUHR/free-ZUH-rin",
+      "es": "peluquero",
+      "phoneticEs": "peh-loo-KEH-roh",
+      "fr": "coiffeur",
+      "frPhonetic": "kwa-FUR",
+      "el": "κομμωτής",
+      "elPhonetic": "ko-mo-TIS",
+      "hi": "नाई",
+      "hiPhonetic": "NAA-ee",
+      "ar": "حَلَّاق",
+      "arPhonetic": "hal-LAAQ",
+      "ko": "미용사",
+      "koPhonetic": "mi-YONG-sa",
+      "zh": "理发师",
+      "zhPhonetic": "lǐfàshī",
+      "ja": "美容師",
+      "jaPhonetic": "biyoushi"
     },
     {
       "uk": "кравець",
@@ -3673,7 +6497,23 @@
         ]
       },
       "de": "Schneider",
-      "phoneticDe": "SHNY-der"
+      "phoneticDe": "SHNY-der",
+      "es": "sastre",
+      "phoneticEs": "SAS-tre",
+      "fr": "tailleur",
+      "frPhonetic": "ta-YUR",
+      "el": "ράφτης",
+      "elPhonetic": "RAF-tis",
+      "hi": "दर्ज़ी",
+      "hiPhonetic": "DAR-zee",
+      "ar": "خيّاط",
+      "arPhonetic": "khay-YAAT",
+      "ko": "재봉사",
+      "koPhonetic": "jae-BONG-sa",
+      "zh": "裁缝",
+      "zhPhonetic": "cáiféng",
+      "ja": "仕立屋",
+      "jaPhonetic": "shi-TA-te-ya"
     },
     {
       "uk": "пожежник",
@@ -3694,7 +6534,23 @@
         ]
       },
       "de": "Feuerwehrmann",
-      "phoneticDe": "FOY-er-vair-man"
+      "phoneticDe": "FOY-er-vair-mahn",
+      "es": "bombero",
+      "phoneticEs": "bom-BEH-roh",
+      "fr": "pompier",
+      "frPhonetic": "pohm-PYAY",
+      "el": "πυροσβέστης",
+      "elPhonetic": "pi-roz-VES-tis",
+      "hi": "दमकलकर्मी",
+      "hiPhonetic": "dam-KAL-kar-mee",
+      "ar": "إِطْفَائِيّ",
+      "arPhonetic": "it-faa-EEY",
+      "ko": "소방관",
+      "koPhonetic": "so-BANG-gwan",
+      "zh": "消防员",
+      "zhPhonetic": "xiāofángyuán",
+      "ja": "消防士",
+      "jaPhonetic": "shouboushi"
     },
     {
       "uk": "рятувальник",
@@ -3714,8 +6570,24 @@
           "The lifeguard pulled the child out of the water."
         ]
       },
-      "de": "Retter/Lebensretter",
-      "phoneticDe": "RET-er/LAY-bens-ret-er"
+      "de": "Rettungsschwimmer",
+      "phoneticDe": "RET-tungs-shvim-mer",
+      "es": "socorrista",
+      "phoneticEs": "so-ko-RREES-ta",
+      "fr": "sauveteur",
+      "frPhonetic": "sohv-TUR",
+      "el": "ναυαγοσώστης",
+      "elPhonetic": "na-va-go-SO-stis",
+      "hi": "बचावकर्मी",
+      "hiPhonetic": "ba-CHAAV-kar-mee",
+      "ar": "مُنْقِذ",
+      "arPhonetic": "MUN-qidh",
+      "ko": "구조대원",
+      "koPhonetic": "GU-jo-DAE-won",
+      "zh": "救生员",
+      "zhPhonetic": "jiùshēngyuán",
+      "ja": "救助員",
+      "jaPhonetic": "kyuujoin"
     },
     {
       "uk": "водолаз",
@@ -3736,7 +6608,23 @@
         ]
       },
       "de": "Taucher",
-      "phoneticDe": "TOW-kher"
+      "phoneticDe": "TAOW-kher",
+      "es": "buzo",
+      "phoneticEs": "BOO-so",
+      "fr": "plongeur",
+      "frPhonetic": "plohn-ZHUR",
+      "el": "δύτης",
+      "elPhonetic": "DI-tis",
+      "hi": "गोताखोर",
+      "hiPhonetic": "go-taa-KHOR",
+      "ar": "غَوَّاص",
+      "arPhonetic": "ghaw-WAAS",
+      "ko": "잠수부",
+      "koPhonetic": "JAM-su-bu",
+      "zh": "潜水员",
+      "zhPhonetic": "qiánshuǐyuán",
+      "ja": "ダイバー",
+      "jaPhonetic": "daibaa"
     },
     {
       "uk": "шахтар",
@@ -3756,8 +6644,24 @@
           "The miner works deep underground."
         ]
       },
-      "de": "Bergmann",
-      "phoneticDe": "BERK-man"
+      "de": "Bergarbeiter",
+      "phoneticDe": "BERG-ar-by-ter",
+      "es": "minero",
+      "phoneticEs": "mi-NE-ro",
+      "fr": "mineur",
+      "frPhonetic": "mee-NUR",
+      "el": "ανθρακωρύχος",
+      "elPhonetic": "an-thra-ko-RI-hos",
+      "hi": "खनिक",
+      "hiPhonetic": "KHA-nik",
+      "ar": "عَامِل مَنْجَم",
+      "arPhonetic": "AA-mil MAN-jam",
+      "ko": "광부",
+      "koPhonetic": "GWANG-bu",
+      "zh": "矿工",
+      "zhPhonetic": "kuànggōng",
+      "ja": "鉱夫",
+      "jaPhonetic": "koufu"
     },
     {
       "uk": "фермер",
@@ -3777,8 +6681,24 @@
           "The farmer grows wheat and sunflowers."
         ]
       },
-      "de": "Bauer",
-      "phoneticDe": "BOW-er"
+      "de": "Bauer/Landwirt",
+      "phoneticDe": "BOW-er/LAHNT-veert",
+      "es": "agricultor",
+      "phoneticEs": "ah-gree-kool-TOR",
+      "fr": "agriculteur",
+      "frPhonetic": "a-gri-kul-TUR",
+      "el": "αγρότης",
+      "elPhonetic": "a-GRO-tis",
+      "hi": "किसान",
+      "hiPhonetic": "ki-SAAN",
+      "ar": "مُزَارِع",
+      "arPhonetic": "mu-ZAA-ri",
+      "ko": "농부",
+      "koPhonetic": "NONG-bu",
+      "zh": "农民",
+      "zhPhonetic": "nóngmín",
+      "ja": "農家",
+      "jaPhonetic": "nouka"
     },
     {
       "uk": "бібліотекар",
@@ -3799,7 +6719,23 @@
         ]
       },
       "de": "Bibliothekar",
-      "phoneticDe": "bib-lee-o-teh-KAR"
+      "phoneticDe": "bee-blee-oh-tay-KAR",
+      "es": "bibliotecario",
+      "phoneticEs": "bi-blio-te-CA-rio",
+      "fr": "bibliothécaire",
+      "frPhonetic": "beeb-lyo-tay-KEHR",
+      "el": "βιβλιοθηκάριος",
+      "elPhonetic": "vi-vli-o-thi-KA-ri-os",
+      "hi": "पुस्तकालयाध्यक्ष",
+      "hiPhonetic": "pus-ta-kaa-la-YAADH-yaksh",
+      "ar": "أمين مكتبة",
+      "arPhonetic": "a-MEEN mak-TA-bah",
+      "ko": "사서",
+      "koPhonetic": "SA-seo",
+      "zh": "图书管理员",
+      "zhPhonetic": "túshū guǎnlǐyuán",
+      "ja": "図書館員",
+      "jaPhonetic": "TO-sho-kan-in"
     },
     {
       "uk": "поштар",
@@ -3820,7 +6756,23 @@
         ]
       },
       "de": "Briefträger",
-      "phoneticDe": "BREEF-treh-ger"
+      "phoneticDe": "BREEF-tray-ger",
+      "es": "cartero",
+      "phoneticEs": "kar-TE-ro",
+      "fr": "facteur",
+      "frPhonetic": "fak-TUR",
+      "el": "ταχυδρόμος",
+      "elPhonetic": "ta-hi-DRO-mos",
+      "hi": "डाकिया",
+      "hiPhonetic": "DAA-ki-yaa",
+      "ar": "سَاعِي بَرِيد",
+      "arPhonetic": "SAA-ee ba-REED",
+      "ko": "우체부",
+      "koPhonetic": "U-che-bu",
+      "zh": "邮递员",
+      "zhPhonetic": "yóudìyuán",
+      "ja": "郵便配達員",
+      "jaPhonetic": "yuubin haitatsuin"
     },
     {
       "uk": "ювелір",
@@ -3841,7 +6793,23 @@
         ]
       },
       "de": "Juwelier",
-      "phoneticDe": "yoo-veh-LEER"
+      "phoneticDe": "yoo-veh-LEER",
+      "es": "joyero",
+      "phoneticEs": "jo-YE-ro",
+      "fr": "bijoutier",
+      "frPhonetic": "bee-zhoo-TYAY",
+      "el": "κοσμηματοπώλης",
+      "elPhonetic": "koz-mi-ma-to-PO-lis",
+      "hi": "जौहरी",
+      "hiPhonetic": "jau-HA-ree",
+      "ar": "صائغ",
+      "arPhonetic": "SAA-igh",
+      "ko": "보석상",
+      "koPhonetic": "bo-SEOK-sang",
+      "zh": "珠宝商",
+      "zhPhonetic": "zhūbǎoshāng",
+      "ja": "宝石商",
+      "jaPhonetic": "HOU-se-ki-shou"
     },
     {
       "uk": "годинникар",
@@ -3862,7 +6830,23 @@
         ]
       },
       "de": "Uhrmacher",
-      "phoneticDe": "OOR-makh-er"
+      "phoneticDe": "OOR-mah-kher",
+      "es": "relojero",
+      "phoneticEs": "re-lo-HE-ro",
+      "fr": "horloger",
+      "frPhonetic": "or-loh-ZHAY",
+      "el": "ωρολογοποιός",
+      "elPhonetic": "o-ro-lo-go-pi-OS",
+      "hi": "घड़ीसाज़",
+      "hiPhonetic": "gha-ree-SAAZ",
+      "ar": "صَانِع سَاعَات",
+      "arPhonetic": "SAA-ni saa-AAT",
+      "ko": "시계공",
+      "koPhonetic": "SI-gye-gong",
+      "zh": "钟表匠",
+      "zhPhonetic": "zhōngbiǎojiàng",
+      "ja": "時計師",
+      "jaPhonetic": "tokeishi"
     },
     {
       "uk": "садівник",
@@ -3883,7 +6867,23 @@
         ]
       },
       "de": "Gärtner",
-      "phoneticDe": "GAIRT-ner"
+      "phoneticDe": "GAIRT-ner",
+      "es": "jardinero",
+      "phoneticEs": "jar-di-NE-ro",
+      "fr": "jardinier",
+      "frPhonetic": "zhar-dee-NYAY",
+      "el": "κηπουρός",
+      "elPhonetic": "ki-pu-ROS",
+      "hi": "माली",
+      "hiPhonetic": "MAA-lee",
+      "ar": "بستاني",
+      "arPhonetic": "bus-TAA-nee",
+      "ko": "정원사",
+      "koPhonetic": "jeong-WON-sa",
+      "zh": "园丁",
+      "zhPhonetic": "yuándīng",
+      "ja": "庭師",
+      "jaPhonetic": "NI-wa-shi"
     },
     {
       "uk": "офіціант",
@@ -3904,7 +6904,23 @@
         ]
       },
       "de": "Kellner",
-      "phoneticDe": "KELL-ner"
+      "phoneticDe": "KEL-ner",
+      "es": "camarero",
+      "phoneticEs": "ca-ma-RE-ro",
+      "fr": "serveur",
+      "frPhonetic": "ser-VUR",
+      "el": "σερβιτόρος",
+      "elPhonetic": "ser-vi-TO-ros",
+      "hi": "वेटर",
+      "hiPhonetic": "VE-tar",
+      "ar": "نادل",
+      "arPhonetic": "NAA-dil",
+      "ko": "웨이터",
+      "koPhonetic": "WE-i-teo",
+      "zh": "服务员",
+      "zhPhonetic": "fúwùyuán",
+      "ja": "ウェイター",
+      "jaPhonetic": "WEI-taa"
     },
     {
       "uk": "бармен",
@@ -3925,7 +6941,23 @@
         ]
       },
       "de": "Barkeeper",
-      "phoneticDe": "BAR-kee-per"
+      "phoneticDe": "BAR-kee-per",
+      "es": "bartender",
+      "phoneticEs": "bar-TEN-der",
+      "fr": "barman",
+      "frPhonetic": "bar-MAN",
+      "el": "μπάρμαν",
+      "elPhonetic": "BAR-man",
+      "hi": "बारटेंडर",
+      "hiPhonetic": "BAAR-ten-dar",
+      "ar": "نَادِل",
+      "arPhonetic": "NAA-dil",
+      "ko": "바텐더",
+      "koPhonetic": "BA-ten-deo",
+      "zh": "调酒师",
+      "zhPhonetic": "tiáojiǔshī",
+      "ja": "バーテンダー",
+      "jaPhonetic": "baatendaa"
     },
     {
       "uk": "прибиральниця",
@@ -3946,7 +6978,23 @@
         ]
       },
       "de": "Reinigungskraft",
-      "phoneticDe": "RY-ni-gungs-kraft"
+      "phoneticDe": "RY-nee-gungs-kraft",
+      "es": "limpiador",
+      "phoneticEs": "lim-pya-DOR",
+      "fr": "agent d'entretien",
+      "frPhonetic": "ah-ZHAH dahn-truh-TYEH",
+      "el": "καθαριστής",
+      "elPhonetic": "ka-tha-ris-TIS",
+      "hi": "सफ़ाईकर्मी",
+      "hiPhonetic": "sa-FAA-ee-kar-mee",
+      "ar": "عَامِل نَظَافَة",
+      "arPhonetic": "AA-mil na-DHAA-fa",
+      "ko": "청소부",
+      "koPhonetic": "CHEONG-so-bu",
+      "zh": "清洁工",
+      "zhPhonetic": "qīngjiégōng",
+      "ja": "清掃員",
+      "jaPhonetic": "seisouin"
     },
     {
       "uk": "охоронець",
@@ -3966,8 +7014,24 @@
           "The security guard checked documents at the entrance."
         ]
       },
-      "de": "Sicherheitsbeamter",
-      "phoneticDe": "ZI-kher-hyts-beh-am-ter"
+      "de": "Sicherheitsdienst",
+      "phoneticDe": "ZIKH-er-hyts-deenst",
+      "es": "guardia de seguridad",
+      "phoneticEs": "GWAR-dya de se-gu-ri-DAD",
+      "fr": "agent de sécurité",
+      "frPhonetic": "ah-ZHAH duh say-kew-ree-TAY",
+      "el": "φύλακας ασφαλείας",
+      "elPhonetic": "FI-la-kas as-fa-LI-as",
+      "hi": "सुरक्षा गार्ड",
+      "hiPhonetic": "su-RAK-shaa GAARD",
+      "ar": "حَارِس أَمْن",
+      "arPhonetic": "HAA-ris AMN",
+      "ko": "경비원",
+      "koPhonetic": "GYEONG-bi-won",
+      "zh": "保安",
+      "zhPhonetic": "bǎo'ān",
+      "ja": "警備員",
+      "jaPhonetic": "keibiin"
     },
     {
       "uk": "водій",
@@ -3988,7 +7052,23 @@
         ]
       },
       "de": "Fahrer",
-      "phoneticDe": "FAH-rer"
+      "phoneticDe": "FAH-rer",
+      "es": "conductor",
+      "phoneticEs": "kon-dook-TOHR",
+      "fr": "chauffeur",
+      "frPhonetic": "shoh-FUR",
+      "el": "οδηγός",
+      "elPhonetic": "o-thi-GOS",
+      "hi": "ड्राइवर",
+      "hiPhonetic": "DRAA-i-var",
+      "ar": "سَائِق",
+      "arPhonetic": "SAA-iq",
+      "ko": "운전사",
+      "koPhonetic": "un-JON-sa",
+      "zh": "司机",
+      "zhPhonetic": "sījī",
+      "ja": "運転手",
+      "jaPhonetic": "untenshu"
     },
     {
       "uk": "механік",
@@ -4009,7 +7089,23 @@
         ]
       },
       "de": "Mechaniker",
-      "phoneticDe": "meh-KHAH-nee-ker"
+      "phoneticDe": "meh-KHAH-nee-ker",
+      "es": "mecánico",
+      "phoneticEs": "me-CA-ni-co",
+      "fr": "mécanicien",
+      "frPhonetic": "may-ka-nee-SYAN",
+      "el": "μηχανικός",
+      "elPhonetic": "mi-ha-ni-KOS",
+      "hi": "मैकेनिक",
+      "hiPhonetic": "MAI-ke-nik",
+      "ar": "ميكانيكي",
+      "arPhonetic": "mee-kaa-NEE-kee",
+      "ko": "정비사",
+      "koPhonetic": "jeong-BI-sa",
+      "zh": "机械师",
+      "zhPhonetic": "jīxièshī",
+      "ja": "整備士",
+      "jaPhonetic": "SEI-bi-shi"
     },
     {
       "uk": "зварювальник",
@@ -4030,7 +7126,23 @@
         ]
       },
       "de": "Schweißer",
-      "phoneticDe": "SHVY-ser"
+      "phoneticDe": "SHVY-ser",
+      "es": "soldador",
+      "phoneticEs": "sol-da-DOR",
+      "fr": "soudeur",
+      "frPhonetic": "soo-DUR",
+      "el": "συγκολλητής",
+      "elPhonetic": "sin-go-li-TIS",
+      "hi": "वेल्डर",
+      "hiPhonetic": "VEL-dar",
+      "ar": "لَحَّام",
+      "arPhonetic": "lah-HAAM",
+      "ko": "용접공",
+      "koPhonetic": "YONG-jeop-gong",
+      "zh": "焊工",
+      "zhPhonetic": "hàngōng",
+      "ja": "溶接工",
+      "jaPhonetic": "yousetsukou"
     },
     {
       "uk": "риболовля",
@@ -4050,8 +7162,24 @@
           "Fishing is relaxing after a tough week."
         ]
       },
-      "de": "Angeln",
-      "phoneticDe": "ANG-eln"
+      "de": "Angeln/Fischen",
+      "phoneticDe": "AHN-geln/FI-shen",
+      "es": "pesca",
+      "phoneticEs": "PES-ca",
+      "fr": "pêche",
+      "frPhonetic": "PESH",
+      "el": "ψάρεμα",
+      "elPhonetic": "PSA-re-ma",
+      "hi": "मछली पकड़ना",
+      "hiPhonetic": "MACHH-lee pa-KAR-naa",
+      "ar": "صَيْد السَّمَك",
+      "arPhonetic": "SAYD as-SA-mak",
+      "ko": "낚시",
+      "koPhonetic": "NAK-si",
+      "zh": "钓鱼",
+      "zhPhonetic": "diàoyú",
+      "ja": "釣り",
+      "jaPhonetic": "tsuri"
     },
     {
       "uk": "полювання",
@@ -4071,8 +7199,24 @@
           "Hunting in autumn is popular among men."
         ]
       },
-      "de": "Jagen",
-      "phoneticDe": "YAH-gen"
+      "de": "Jagd/Jagen",
+      "phoneticDe": "YAHGT/YAH-gen",
+      "es": "caza",
+      "phoneticEs": "CA-za",
+      "fr": "chasse",
+      "frPhonetic": "SHAS",
+      "el": "κυνήγι",
+      "elPhonetic": "ki-NI-yi",
+      "hi": "शिकार",
+      "hiPhonetic": "shi-KAAR",
+      "ar": "صَيْد",
+      "arPhonetic": "SAYD",
+      "ko": "사냥",
+      "koPhonetic": "SA-nyang",
+      "zh": "打猎",
+      "zhPhonetic": "dǎliè",
+      "ja": "狩り",
+      "jaPhonetic": "kari"
     },
     {
       "uk": "садівництво",
@@ -4093,7 +7237,23 @@
         ]
       },
       "de": "Gartenarbeit",
-      "phoneticDe": "GAR-ten-ar-byte"
+      "phoneticDe": "GAR-ten-ar-byte",
+      "es": "jardinería",
+      "phoneticEs": "har-dee-neh-REE-ah",
+      "fr": "jardinage",
+      "frPhonetic": "zhar-dee-NAZH",
+      "el": "κηπουρική",
+      "elPhonetic": "ki-pu-ri-KI",
+      "hi": "बागवानी",
+      "hiPhonetic": "baag-VAA-nee",
+      "ar": "بَسْتَنَة",
+      "arPhonetic": "bas-TA-na",
+      "ko": "원예",
+      "koPhonetic": "WON-ye",
+      "zh": "园艺",
+      "zhPhonetic": "yuányì",
+      "ja": "園芸",
+      "jaPhonetic": "engei"
     },
     {
       "uk": "кулінарія",
@@ -4114,7 +7274,23 @@
         ]
       },
       "de": "Kochen",
-      "phoneticDe": "KOKH-en"
+      "phoneticDe": "KO-khen",
+      "es": "cocina",
+      "phoneticEs": "co-SI-na",
+      "fr": "cuisine",
+      "frPhonetic": "kwee-ZEEN",
+      "el": "μαγειρική",
+      "elPhonetic": "ma-yi-ri-KI",
+      "hi": "खाना पकाना",
+      "hiPhonetic": "KHAA-naa pa-KAA-naa",
+      "ar": "طَبْخ",
+      "arPhonetic": "TABKH",
+      "ko": "요리",
+      "koPhonetic": "YO-ri",
+      "zh": "烹饪",
+      "zhPhonetic": "pēngrèn",
+      "ja": "料理",
+      "jaPhonetic": "ryouri"
     },
     {
       "uk": "фотографування",
@@ -4135,7 +7311,23 @@
         ]
       },
       "de": "Fotografie",
-      "phoneticDe": "fo-to-gra-FEE"
+      "phoneticDe": "foh-toh-grah-FEE",
+      "es": "fotografía",
+      "phoneticEs": "foh-toh-grah-FEE-ah",
+      "fr": "photographie",
+      "frPhonetic": "foh-toh-grah-FEE",
+      "el": "φωτογραφία",
+      "elPhonetic": "fo-to-gra-FI-a",
+      "hi": "फ़ोटोग्राफ़ी",
+      "hiPhonetic": "FO-to-graa-fee",
+      "ar": "تَصْوِير",
+      "arPhonetic": "tas-WEER",
+      "ko": "사진 촬영",
+      "koPhonetic": "SA-jin CHWAL-yeong",
+      "zh": "摄影",
+      "zhPhonetic": "shèyǐng",
+      "ja": "写真撮影",
+      "jaPhonetic": "shashin satsuei"
     },
     {
       "uk": "колекціонування",
@@ -4156,7 +7348,23 @@
         ]
       },
       "de": "Sammeln",
-      "phoneticDe": "ZAM-eln"
+      "phoneticDe": "ZAM-meln",
+      "es": "coleccionismo",
+      "phoneticEs": "co-lec-cio-NIS-mo",
+      "fr": "collection",
+      "frPhonetic": "koh-lek-SYOH",
+      "el": "συλλογή",
+      "elPhonetic": "si-lo-YI",
+      "hi": "संग्रह",
+      "hiPhonetic": "SAN-grah",
+      "ar": "جَمْع",
+      "arPhonetic": "JAM",
+      "ko": "수집",
+      "koPhonetic": "SU-jip",
+      "zh": "收藏",
+      "zhPhonetic": "shōucáng",
+      "ja": "収集",
+      "jaPhonetic": "shuushuu"
     },
     {
       "uk": "читання",
@@ -4177,7 +7385,23 @@
         ]
       },
       "de": "Lesen",
-      "phoneticDe": "LAY-zen"
+      "phoneticDe": "LAY-zen",
+      "es": "lectura",
+      "phoneticEs": "lek-TOO-rah",
+      "fr": "lecture",
+      "frPhonetic": "lek-TEWR",
+      "el": "ανάγνωση",
+      "elPhonetic": "a-NAG-no-si",
+      "hi": "पठन",
+      "hiPhonetic": "PA-than",
+      "ar": "قِرَاءَة",
+      "arPhonetic": "qi-RAA-a",
+      "ko": "독서",
+      "koPhonetic": "DOK-seo",
+      "zh": "阅读",
+      "zhPhonetic": "yuèdú",
+      "ja": "読書",
+      "jaPhonetic": "dokusho"
     },
     {
       "uk": "письменництво",
@@ -4198,7 +7422,23 @@
         ]
       },
       "de": "Schreiben",
-      "phoneticDe": "SHRY-ben"
+      "phoneticDe": "SHRY-ben",
+      "es": "escritura",
+      "phoneticEs": "es-kree-TOO-rah",
+      "fr": "écriture",
+      "frPhonetic": "ay-kree-TEWR",
+      "el": "συγγραφή",
+      "elPhonetic": "si-gra-FI",
+      "hi": "लेखन",
+      "hiPhonetic": "LE-khan",
+      "ar": "كِتَابَة",
+      "arPhonetic": "ki-TAA-ba",
+      "ko": "글쓰기",
+      "koPhonetic": "GEUL-sseu-gi",
+      "zh": "写作",
+      "zhPhonetic": "xiězuò",
+      "ja": "執筆",
+      "jaPhonetic": "shippitsu"
     },
     {
       "uk": "туризм",
@@ -4218,8 +7458,24 @@
           "Tourism helps you discover new places."
         ]
       },
-      "de": "Tourismus/Wandern",
-      "phoneticDe": "too-RIS-moos/VAN-dern"
+      "de": "Wandern/Tourismus",
+      "phoneticDe": "VAN-dern/too-RIS-mus",
+      "es": "senderismo",
+      "phoneticEs": "sen-de-RIS-mo",
+      "fr": "tourisme/randonnée",
+      "frPhonetic": "too-REEZ-muh/rahn-doh-NAY",
+      "el": "τουρισμός/πεζοπορία",
+      "elPhonetic": "tu-riz-MOS / pe-zo-po-RI-a",
+      "hi": "पर्यटन",
+      "hiPhonetic": "par-YA-tan",
+      "ar": "سِيَاحَة",
+      "arPhonetic": "si-YAA-ha",
+      "ko": "관광",
+      "koPhonetic": "GWAN-gwang",
+      "zh": "旅游",
+      "zhPhonetic": "lǚyóu",
+      "ja": "ハイキング",
+      "jaPhonetic": "haikingu"
     },
     {
       "uk": "кемпінг",
@@ -4240,7 +7496,23 @@
         ]
       },
       "de": "Camping",
-      "phoneticDe": "KEM-ping"
+      "phoneticDe": "KEM-ping",
+      "es": "campismo",
+      "phoneticEs": "cam-PIS-mo",
+      "fr": "camping",
+      "frPhonetic": "kam-PEENG",
+      "el": "κάμπινγκ",
+      "elPhonetic": "KAM-bing",
+      "hi": "कैंपिंग",
+      "hiPhonetic": "KAM-ping",
+      "ar": "تَخْيِيم",
+      "arPhonetic": "takh-YEEM",
+      "ko": "캠핑",
+      "koPhonetic": "KAEM-ping",
+      "zh": "露营",
+      "zhPhonetic": "lùyíng",
+      "ja": "キャンプ",
+      "jaPhonetic": "kyanpu"
     },
     {
       "uk": "скелелазіння",
@@ -4261,7 +7533,23 @@
         ]
       },
       "de": "Klettern",
-      "phoneticDe": "KLET-ern"
+      "phoneticDe": "KLET-tern",
+      "es": "escalada",
+      "phoneticEs": "es-ca-LA-da",
+      "fr": "escalade",
+      "frPhonetic": "es-kah-LAD",
+      "el": "αναρρίχηση",
+      "elPhonetic": "a-na-RI-hi-si",
+      "hi": "रॉक क्लाइंबिंग",
+      "hiPhonetic": "ROK KLAIM-bing",
+      "ar": "تَسَلُّق الصُّخُور",
+      "arPhonetic": "ta-SAL-luq as-su-KHOOR",
+      "ko": "암벽 등반",
+      "koPhonetic": "AM-byeok DEUNG-ban",
+      "zh": "攀岩",
+      "zhPhonetic": "pānyán",
+      "ja": "ロッククライミング",
+      "jaPhonetic": "rokkukuraimingu"
     },
     {
       "uk": "серфінг",
@@ -4282,7 +7570,23 @@
         ]
       },
       "de": "Surfen",
-      "phoneticDe": "ZOOR-fen"
+      "phoneticDe": "ZUR-fen",
+      "es": "surf",
+      "phoneticEs": "SURF",
+      "fr": "surf",
+      "frPhonetic": "SURF",
+      "el": "σερφ",
+      "elPhonetic": "SERF",
+      "hi": "सर्फ़िंग",
+      "hiPhonetic": "SAR-fing",
+      "ar": "رُكُوب الأَمْوَاج",
+      "arPhonetic": "ru-KOOB al-am-WAAJ",
+      "ko": "서핑",
+      "koPhonetic": "SEO-ping",
+      "zh": "冲浪",
+      "zhPhonetic": "chōnglàng",
+      "ja": "サーフィン",
+      "jaPhonetic": "saafin"
     },
     {
       "uk": "дайвінг",
@@ -4303,7 +7607,23 @@
         ]
       },
       "de": "Tauchen",
-      "phoneticDe": "TOW-khen"
+      "phoneticDe": "TAOW-khen",
+      "es": "buceo",
+      "phoneticEs": "boo-SEH-oh",
+      "fr": "plongée sous-marine",
+      "frPhonetic": "plohn-ZHAY soo-mah-REEN",
+      "el": "κατάδυση",
+      "elPhonetic": "ka-TA-thi-si",
+      "hi": "गोताखोरी",
+      "hiPhonetic": "go-taa-KHO-ree",
+      "ar": "غَوْص",
+      "arPhonetic": "GHAWS",
+      "ko": "스쿠버 다이빙",
+      "koPhonetic": "SEU-ku-beo DA-i-bing",
+      "zh": "潜水",
+      "zhPhonetic": "qiánshuǐ",
+      "ja": "ダイビング",
+      "jaPhonetic": "daibingu"
     },
     {
       "uk": "лижі",
@@ -4324,7 +7644,23 @@
         ]
       },
       "de": "Skifahren",
-      "phoneticDe": "SHEE-far-en"
+      "phoneticDe": "SHEE-fah-ren",
+      "es": "esquí",
+      "phoneticEs": "es-KÍ",
+      "fr": "ski",
+      "frPhonetic": "SKEE",
+      "el": "σκι",
+      "elPhonetic": "SKI",
+      "hi": "स्कीइंग",
+      "hiPhonetic": "SKEE-ing",
+      "ar": "تَزَلُّج عَلَى الجَلِيد",
+      "arPhonetic": "ta-ZAL-luj a-la al-ja-LEED",
+      "ko": "스키",
+      "koPhonetic": "SEU-ki",
+      "zh": "滑雪",
+      "zhPhonetic": "huáxuě",
+      "ja": "スキー",
+      "jaPhonetic": "sukii"
     },
     {
       "uk": "ковзани",
@@ -4345,7 +7681,23 @@
         ]
       },
       "de": "Schlittschuhlaufen",
-      "phoneticDe": "SHLIT-shoo-low-fen"
+      "phoneticDe": "SHLIT-shoo-laow-fen",
+      "es": "patinaje sobre hielo",
+      "phoneticEs": "pa-ti-NA-je SO-bre YE-lo",
+      "fr": "patinage sur glace",
+      "frPhonetic": "pah-tee-NAZH sewr GLAS",
+      "el": "παγοδρομία",
+      "elPhonetic": "pa-go-thro-MI-a",
+      "hi": "आइस स्केटिंग",
+      "hiPhonetic": "AIS SKE-ting",
+      "ar": "تَزَلُّج عَلَى الجَلِيد",
+      "arPhonetic": "ta-ZAL-luj a-la al-ja-LEED",
+      "ko": "아이스 스케이팅",
+      "koPhonetic": "A-i-seu SEU-ke-i-ting",
+      "zh": "滑冰",
+      "zhPhonetic": "huábīng",
+      "ja": "アイススケート",
+      "jaPhonetic": "aisu sukeeto"
     },
     {
       "uk": "сноуборд",
@@ -4366,7 +7718,23 @@
         ]
       },
       "de": "Snowboarden",
-      "phoneticDe": "SNOH-bor-den"
+      "phoneticDe": "SNOH-bor-den",
+      "es": "snowboard",
+      "phoneticEs": "SNOW-board",
+      "fr": "snowboard",
+      "frPhonetic": "SNOW-bord",
+      "el": "σνόουμπορντ",
+      "elPhonetic": "SNO-u-bort",
+      "hi": "स्नोबोर्डिंग",
+      "hiPhonetic": "SNO-bor-ding",
+      "ar": "تَزَلُّج عَلَى الثَّلْج",
+      "arPhonetic": "ta-ZAL-luj a-la ath-THALJ",
+      "ko": "스노보드",
+      "koPhonetic": "SEU-no-BO-deu",
+      "zh": "单板滑雪",
+      "zhPhonetic": "dānbǎn huáxuě",
+      "ja": "スノーボード",
+      "jaPhonetic": "sunooboodo"
     },
     {
       "uk": "йога",
@@ -4387,7 +7755,23 @@
         ]
       },
       "de": "Yoga",
-      "phoneticDe": "YO-ga"
+      "phoneticDe": "YOH-gah",
+      "es": "yoga",
+      "phoneticEs": "YO-ga",
+      "fr": "yoga",
+      "frPhonetic": "yo-GA",
+      "el": "γιόγκα",
+      "elPhonetic": "YO-ga",
+      "hi": "योग",
+      "hiPhonetic": "YOG",
+      "ar": "يُوغَا",
+      "arPhonetic": "YOO-gha",
+      "ko": "요가",
+      "koPhonetic": "YO-ga",
+      "zh": "瑜伽",
+      "zhPhonetic": "yújiā",
+      "ja": "ヨガ",
+      "jaPhonetic": "yoga"
     },
     {
       "uk": "медитація",
@@ -4408,7 +7792,23 @@
         ]
       },
       "de": "Meditation",
-      "phoneticDe": "meh-di-ta-TSYON"
+      "phoneticDe": "meh-dee-tah-TSEE-ohn",
+      "es": "meditación",
+      "phoneticEs": "me-di-ta-CIÓN",
+      "fr": "méditation",
+      "frPhonetic": "may-dee-tah-SYOH",
+      "el": "διαλογισμός",
+      "elPhonetic": "thia-lo-yiz-MOS",
+      "hi": "ध्यान",
+      "hiPhonetic": "DHYAAN",
+      "ar": "تَأَمُّل",
+      "arPhonetic": "ta-AM-mul",
+      "ko": "명상",
+      "koPhonetic": "MYEONG-sang",
+      "zh": "冥想",
+      "zhPhonetic": "míngxiǎng",
+      "ja": "瞑想",
+      "jaPhonetic": "meisou"
     },
     {
       "uk": "шахматний клуб",
@@ -4428,8 +7828,24 @@
           "The chess club meets every Wednesday."
         ]
       },
-      "de": "Schachclub",
-      "phoneticDe": "SHAKH-kloob"
+      "de": "Schachklub",
+      "phoneticDe": "SHAKH-klup",
+      "es": "club de ajedrez",
+      "phoneticEs": "CLUB de a-je-DREZ",
+      "fr": "club d'échecs",
+      "frPhonetic": "KLEWB day-SHEK",
+      "el": "σκακιστικός όμιλος",
+      "elPhonetic": "ska-kis-ti-KOS O-mi-los",
+      "hi": "शतरंज क्लब",
+      "hiPhonetic": "sha-TRANJ KLAB",
+      "ar": "نَادِي شِطْرَنْج",
+      "arPhonetic": "NAA-dee shit-RANJ",
+      "ko": "체스 클럽",
+      "koPhonetic": "CHE-seu KEUL-leop",
+      "zh": "象棋俱乐部",
+      "zhPhonetic": "xiàngqí jùlèbù",
+      "ja": "チェスクラブ",
+      "jaPhonetic": "chesu kurabu"
     },
     {
       "uk": "рукоділля",
@@ -4449,8 +7865,24 @@
           "Handicraft is a pleasant and rewarding hobby."
         ]
       },
-      "de": "Basteln",
-      "phoneticDe": "BAS-teln"
+      "de": "Handarbeit",
+      "phoneticDe": "HANT-ar-byte",
+      "es": "artesanía",
+      "phoneticEs": "ar-te-sa-NÍ-a",
+      "fr": "artisanat",
+      "frPhonetic": "ar-tee-zah-NAH",
+      "el": "χειροτεχνία",
+      "elPhonetic": "hi-ro-teh-NI-a",
+      "hi": "हस्तशिल्प",
+      "hiPhonetic": "HAS-ta-shilp",
+      "ar": "أَعْمَال يَدَوِيَّة",
+      "arPhonetic": "A-maal ya-da-WEE-ya",
+      "ko": "수공예",
+      "koPhonetic": "SU-gong-ye",
+      "zh": "手工艺",
+      "zhPhonetic": "shǒugōngyì",
+      "ja": "手芸",
+      "jaPhonetic": "shugei"
     },
     {
       "uk": "моделювання",
@@ -4471,7 +7903,23 @@
         ]
       },
       "de": "Modellbau",
-      "phoneticDe": "mo-DEL-bow"
+      "phoneticDe": "mo-DEL-baow",
+      "es": "modelismo",
+      "phoneticEs": "moh-deh-LEES-moh",
+      "fr": "modélisme",
+      "frPhonetic": "moh-day-LEEZ-muh",
+      "el": "μακετοποιία",
+      "elPhonetic": "ma-ke-to-pi-I-a",
+      "hi": "मॉडलिंग",
+      "hiPhonetic": "MO-da-ling",
+      "ar": "نَمْذَجَة",
+      "arPhonetic": "nam-DHA-ja",
+      "ko": "모형 만들기",
+      "koPhonetic": "MO-hyeong MAN-deul-gi",
+      "zh": "模型制作",
+      "zhPhonetic": "móxíng zhìzuò",
+      "ja": "模型作り",
+      "jaPhonetic": "mokei zukuri"
     },
     {
       "uk": "каліграфія",
@@ -4492,7 +7940,23 @@
         ]
       },
       "de": "Kalligrafie",
-      "phoneticDe": "ka-li-gra-FEE"
+      "phoneticDe": "kal-lee-grah-FEE",
+      "es": "caligrafía",
+      "phoneticEs": "ca-li-gra-FÍ-a",
+      "fr": "calligraphie",
+      "frPhonetic": "kah-lee-grah-FEE",
+      "el": "καλλιγραφία",
+      "elPhonetic": "ka-li-gra-FI-a",
+      "hi": "सुलेख",
+      "hiPhonetic": "SU-lekh",
+      "ar": "خَطّ",
+      "arPhonetic": "KHATT",
+      "ko": "서예",
+      "koPhonetic": "SEO-ye",
+      "zh": "书法",
+      "zhPhonetic": "shūfǎ",
+      "ja": "書道",
+      "jaPhonetic": "shodou"
     },
     {
       "uk": "орігамі",
@@ -4513,7 +7977,23 @@
         ]
       },
       "de": "Origami",
-      "phoneticDe": "o-ri-GAH-mi"
+      "phoneticDe": "oh-ree-GAH-mee",
+      "es": "origami",
+      "phoneticEs": "o-ri-GA-mi",
+      "fr": "origami",
+      "frPhonetic": "oh-ree-gah-MEE",
+      "el": "οριγκάμι",
+      "elPhonetic": "o-ri-GA-mi",
+      "hi": "ओरिगामी",
+      "hiPhonetic": "o-ri-GAA-mee",
+      "ar": "أُورِيغَامِي",
+      "arPhonetic": "oo-ree-GHAA-mee",
+      "ko": "종이접기",
+      "koPhonetic": "JONG-i-JEOP-gi",
+      "zh": "折纸",
+      "zhPhonetic": "zhézhǐ",
+      "ja": "折り紙",
+      "jaPhonetic": "origami"
     },
     {
       "uk": "ас",
@@ -4534,7 +8014,23 @@
         ]
       },
       "de": "Ass",
-      "phoneticDe": "as"
+      "phoneticDe": "AS",
+      "es": "as",
+      "phoneticEs": "AS",
+      "fr": "as",
+      "frPhonetic": "AHS",
+      "el": "άσος",
+      "elPhonetic": "A-sos",
+      "hi": "इक्का",
+      "hiPhonetic": "IK-kaa",
+      "ar": "آس",
+      "arPhonetic": "AAS",
+      "ko": "에이스",
+      "koPhonetic": "E-i-seu",
+      "zh": "王牌",
+      "zhPhonetic": "wángpái",
+      "ja": "エース",
+      "jaPhonetic": "eesu"
     },
     {
       "uk": "козир",
@@ -4555,7 +8051,23 @@
         ]
       },
       "de": "Trumpfkarte",
-      "phoneticDe": "TROOMPF-kar-teh"
+      "phoneticDe": "TRUMPF-kar-teh",
+      "es": "triunfo",
+      "phoneticEs": "TRIUN-fo",
+      "fr": "atout",
+      "frPhonetic": "ah-TOO",
+      "el": "ατού",
+      "elPhonetic": "a-TU",
+      "hi": "ट्रंप कार्ड",
+      "hiPhonetic": "TRAMP KAARD",
+      "ar": "وَرَقَة رَابِحَة",
+      "arPhonetic": "WA-ra-qat RAA-bi-ha",
+      "ko": "으뜸패",
+      "koPhonetic": "EU-tteum-pae",
+      "zh": "王牌",
+      "zhPhonetic": "wángpái",
+      "ja": "切り札",
+      "jaPhonetic": "kirifuda"
     },
     {
       "uk": "колода",
@@ -4575,8 +8087,24 @@
           "He shuffled the deck before the game."
         ]
       },
-      "de": "Kartenspiel",
-      "phoneticDe": "KAR-ten-shpeel"
+      "de": "Kartenspiel/Kartenstapel",
+      "phoneticDe": "KAR-ten-shpeel",
+      "es": "baraja de cartas",
+      "phoneticEs": "ba-RA-ja de CAR-tas",
+      "fr": "jeu de cartes",
+      "frPhonetic": "ZHUH duh KART",
+      "el": "τράπουλα",
+      "elPhonetic": "TRA-pu-la",
+      "hi": "ताश की गड्डी",
+      "hiPhonetic": "TAASH kee GAD-dee",
+      "ar": "رُزْمَة وَرَق",
+      "arPhonetic": "RUZ-mat WA-raq",
+      "ko": "카드 한 벌",
+      "koPhonetic": "KA-deu HAN BEOL",
+      "zh": "一副牌",
+      "zhPhonetic": "yī fù pái",
+      "ja": "トランプ一組",
+      "jaPhonetic": "toranpu hitokumi"
     },
     {
       "uk": "тасувати",
@@ -4597,7 +8125,23 @@
         ]
       },
       "de": "mischen",
-      "phoneticDe": "MISH-en"
+      "phoneticDe": "MI-shen",
+      "es": "barajar",
+      "phoneticEs": "bah-rah-HAR",
+      "fr": "battre (les cartes)",
+      "frPhonetic": "BAT-ruh lay KART",
+      "el": "ανακατεύω",
+      "elPhonetic": "a-na-ka-TE-vo",
+      "hi": "फेंटना",
+      "hiPhonetic": "FENT-naa",
+      "ar": "يَخْلِط",
+      "arPhonetic": "YAKH-lit",
+      "ko": "섞다",
+      "koPhonetic": "SEOK-da",
+      "zh": "洗牌",
+      "zhPhonetic": "xǐpái",
+      "ja": "切る",
+      "jaPhonetic": "kiru"
     },
     {
       "uk": "роздавати",
@@ -4618,7 +8162,23 @@
         ]
       },
       "de": "austeilen",
-      "phoneticDe": "OWS-ty-len"
+      "phoneticDe": "AOWS-ty-len",
+      "es": "repartir",
+      "phoneticEs": "reh-par-TEER",
+      "fr": "distribuer (les cartes)",
+      "frPhonetic": "dees-tree-BWAY lay KART",
+      "el": "μοιράζω",
+      "elPhonetic": "mi-RA-zo",
+      "hi": "बाँटना",
+      "hiPhonetic": "BAANT-naa",
+      "ar": "يُوَزِّع",
+      "arPhonetic": "yu-WAZ-zi",
+      "ko": "나누어 주다",
+      "koPhonetic": "NA-nu-eo JU-da",
+      "zh": "发牌",
+      "zhPhonetic": "fāpái",
+      "ja": "配る",
+      "jaPhonetic": "kubaru"
     },
     {
       "uk": "ставка",
@@ -4638,8 +8198,24 @@
           "He placed a big bet and took the risk."
         ]
       },
-      "de": "Einsatz",
-      "phoneticDe": "EYN-zats"
+      "de": "Einsatz/Wette",
+      "phoneticDe": "EYN-zats/VET-teh",
+      "es": "apuesta",
+      "phoneticEs": "a-PUES-ta",
+      "fr": "mise",
+      "frPhonetic": "MEEZ",
+      "el": "στοίχημα",
+      "elPhonetic": "STOI-hi-ma",
+      "hi": "दाँव",
+      "hiPhonetic": "DAANV",
+      "ar": "رِهَان",
+      "arPhonetic": "ri-HAAN",
+      "ko": "내기",
+      "koPhonetic": "NAE-gi",
+      "zh": "赌注",
+      "zhPhonetic": "dǔzhù",
+      "ja": "賭け",
+      "jaPhonetic": "kake"
     },
     {
       "uk": "виграш",
@@ -4660,7 +8236,23 @@
         ]
       },
       "de": "Gewinn",
-      "phoneticDe": "geh-VIN"
+      "phoneticDe": "geh-VIN",
+      "es": "premio",
+      "phoneticEs": "PRE-mio",
+      "fr": "gains",
+      "frPhonetic": "GEH",
+      "el": "κέρδη",
+      "elPhonetic": "KER-thi",
+      "hi": "जीत",
+      "hiPhonetic": "JEET",
+      "ar": "جَائِزَة",
+      "arPhonetic": "JAA-i-za",
+      "ko": "상금",
+      "koPhonetic": "SANG-geum",
+      "zh": "奖金",
+      "zhPhonetic": "jiǎngjīn",
+      "ja": "賞金",
+      "jaPhonetic": "shoukin"
     },
     {
       "uk": "програш",
@@ -4680,8 +8272,24 @@
           "The loss upset the whole team."
         ]
       },
-      "de": "Verlust",
-      "phoneticDe": "fer-LOOST"
+      "de": "Niederlage",
+      "phoneticDe": "NEE-der-lah-geh",
+      "es": "derrota",
+      "phoneticEs": "de-RRO-ta",
+      "fr": "défaite",
+      "frPhonetic": "day-FET",
+      "el": "ήττα",
+      "elPhonetic": "IT-ta",
+      "hi": "हार",
+      "hiPhonetic": "HAAR",
+      "ar": "خَسَارَة",
+      "arPhonetic": "kha-SAA-ra",
+      "ko": "패배",
+      "koPhonetic": "PAE-bae",
+      "zh": "输",
+      "zhPhonetic": "shū",
+      "ja": "負け",
+      "jaPhonetic": "make"
     },
     {
       "uk": "нічия",
@@ -4702,7 +8310,23 @@
         ]
       },
       "de": "Unentschieden",
-      "phoneticDe": "oon-ent-SHEE-den"
+      "phoneticDe": "UN-ent-shee-den",
+      "es": "empate",
+      "phoneticEs": "em-PA-te",
+      "fr": "match nul",
+      "frPhonetic": "MATCH NEWL",
+      "el": "ισοπαλία",
+      "elPhonetic": "i-so-pa-LI-a",
+      "hi": "ड्रॉ",
+      "hiPhonetic": "DRAU",
+      "ar": "تَعَادُل",
+      "arPhonetic": "ta-AA-dul",
+      "ko": "무승부",
+      "koPhonetic": "MU-seung-bu",
+      "zh": "平局",
+      "zhPhonetic": "píngjú",
+      "ja": "引き分け",
+      "jaPhonetic": "hikiwake"
     },
     {
       "uk": "суперник",
@@ -4723,7 +8347,23 @@
         ]
       },
       "de": "Gegner",
-      "phoneticDe": "GAYG-ner"
+      "phoneticDe": "GEG-ner",
+      "es": "rival",
+      "phoneticEs": "ri-VAL",
+      "fr": "adversaire",
+      "frPhonetic": "ad-vair-SAIR",
+      "el": "αντίπαλος",
+      "elPhonetic": "an-TI-pa-los",
+      "hi": "प्रतिद्वंद्वी",
+      "hiPhonetic": "pra-ti-DVAN-dvee",
+      "ar": "خَصْم",
+      "arPhonetic": "KHASM",
+      "ko": "상대방",
+      "koPhonetic": "SANG-dae-bang",
+      "zh": "对手",
+      "zhPhonetic": "duìshǒu",
+      "ja": "対戦相手",
+      "jaPhonetic": "taisen aite"
     },
     {
       "uk": "стратегія",
@@ -4744,7 +8384,23 @@
         ]
       },
       "de": "Strategie",
-      "phoneticDe": "shtra-teh-GEE"
+      "phoneticDe": "shtrah-tay-GEE",
+      "es": "estrategia",
+      "phoneticEs": "es-tra-TEH-hya",
+      "fr": "stratégie",
+      "frPhonetic": "stra-tay-ZHEE",
+      "el": "στρατηγική",
+      "elPhonetic": "stra-ti-yi-KI",
+      "hi": "रणनीति",
+      "hiPhonetic": "ran-NEE-ti",
+      "ar": "اِسْتِرَاتِيجِيَّة",
+      "arPhonetic": "is-ti-raa-tee-JIY-ya",
+      "ko": "전략",
+      "koPhonetic": "JEOL-lyak",
+      "zh": "策略",
+      "zhPhonetic": "cèlüè",
+      "ja": "戦略",
+      "jaPhonetic": "senryaku"
     },
     {
       "uk": "тактика",
@@ -4765,7 +8421,23 @@
         ]
       },
       "de": "Taktik",
-      "phoneticDe": "TAK-tik"
+      "phoneticDe": "TAHK-tik",
+      "es": "táctica",
+      "phoneticEs": "TAK-tee-ka",
+      "fr": "tactique",
+      "frPhonetic": "tak-TEEK",
+      "el": "τακτική",
+      "elPhonetic": "tak-ti-KI",
+      "hi": "रणकौशल",
+      "hiPhonetic": "ran-KAU-shal",
+      "ar": "تَكْتِيك",
+      "arPhonetic": "tak-TEEK",
+      "ko": "전술",
+      "koPhonetic": "JEON-sul",
+      "zh": "战术",
+      "zhPhonetic": "zhànshù",
+      "ja": "戦術",
+      "jaPhonetic": "senjutsu"
     },
     {
       "uk": "рахунок",
@@ -4785,8 +8457,24 @@
           "The match score was two to zero."
         ]
       },
-      "de": "Punktzahl",
-      "phoneticDe": "POONKT-tsahl"
+      "de": "Spielstand",
+      "phoneticDe": "SHPEEL-shtahnt",
+      "es": "marcador",
+      "phoneticEs": "mar-ka-DOR",
+      "fr": "score",
+      "frPhonetic": "SKOR",
+      "el": "σκορ",
+      "elPhonetic": "SKOR",
+      "hi": "स्कोर",
+      "hiPhonetic": "SKOR",
+      "ar": "نتيجة",
+      "arPhonetic": "na-TEE-ja",
+      "ko": "점수",
+      "koPhonetic": "JEOM-su",
+      "zh": "比分",
+      "zhPhonetic": "bǐfēn",
+      "ja": "スコア",
+      "jaPhonetic": "sukoa"
     },
     {
       "uk": "раунд",
@@ -4807,7 +8495,23 @@
         ]
       },
       "de": "rund",
-      "phoneticDe": "roont"
+      "phoneticDe": "ROONT",
+      "es": "redondo",
+      "phoneticEs": "re-DON-do",
+      "fr": "rond",
+      "frPhonetic": "ROHN",
+      "el": "στρογγυλός",
+      "elPhonetic": "stron-yi-LOS",
+      "hi": "गोल",
+      "hiPhonetic": "GOL",
+      "ar": "مُسْتَدِير",
+      "arPhonetic": "mus-ta-DEER",
+      "ko": "둥근",
+      "koPhonetic": "DUNG-gun",
+      "zh": "圆",
+      "zhPhonetic": "yuán",
+      "ja": "丸い",
+      "jaPhonetic": "ma-RUI"
     },
     {
       "uk": "фінал",
@@ -4827,8 +8531,24 @@
           "The championship final will take place on Saturday."
         ]
       },
-      "de": "Finale",
-      "phoneticDe": "fi-NAH-leh"
+      "de": "Finale/Endspiel",
+      "phoneticDe": "fee-NAH-leh/ENT-shpeel",
+      "es": "final",
+      "phoneticEs": "fi-NAL",
+      "fr": "finale",
+      "frPhonetic": "fee-NAL",
+      "el": "τελικός",
+      "elPhonetic": "te-li-KOS",
+      "hi": "फाइनल",
+      "hiPhonetic": "FAA-i-nal",
+      "ar": "نِهَائِي",
+      "arPhonetic": "ni-HAA-ee",
+      "ko": "결승전",
+      "koPhonetic": "gyeol-SEUNG-jeon",
+      "zh": "决赛",
+      "zhPhonetic": "juésài",
+      "ja": "決勝",
+      "jaPhonetic": "kesshou"
     },
     {
       "uk": "переможець",
@@ -4849,7 +8569,23 @@
         ]
       },
       "de": "Gewinner",
-      "phoneticDe": "geh-VIN-er"
+      "phoneticDe": "geh-VIN-ner",
+      "es": "ganador",
+      "phoneticEs": "ga-na-DOR",
+      "fr": "gagnant",
+      "frPhonetic": "gah-NYAH",
+      "el": "νικητής",
+      "elPhonetic": "ni-ki-TIS",
+      "hi": "विजेता",
+      "hiPhonetic": "vi-JE-taa",
+      "ar": "فَائِز",
+      "arPhonetic": "FAA-iz",
+      "ko": "승자",
+      "koPhonetic": "SEUNG-ja",
+      "zh": "赢家",
+      "zhPhonetic": "yíngjiā",
+      "ja": "勝者",
+      "jaPhonetic": "shousha"
     },
     {
       "uk": "програвший",
@@ -4870,7 +8606,23 @@
         ]
       },
       "de": "Verlierer",
-      "phoneticDe": "fer-LEER-er"
+      "phoneticDe": "fer-LEE-rer",
+      "es": "perdedor",
+      "phoneticEs": "per-de-DOR",
+      "fr": "perdant",
+      "frPhonetic": "pair-DAH",
+      "el": "ηττημένος",
+      "elPhonetic": "it-ti-ME-nos",
+      "hi": "हारने वाला",
+      "hiPhonetic": "HAAR-ne VAA-laa",
+      "ar": "خَاسِر",
+      "arPhonetic": "KHAA-sir",
+      "ko": "패자",
+      "koPhonetic": "PAE-ja",
+      "zh": "输家",
+      "zhPhonetic": "shūjiā",
+      "ja": "敗者",
+      "jaPhonetic": "haisha"
     },
     {
       "uk": "офіс",
@@ -4891,7 +8643,23 @@
         ]
       },
       "de": "Büro",
-      "phoneticDe": "bew-ROH"
+      "phoneticDe": "boo-ROH",
+      "es": "oficina",
+      "phoneticEs": "oh-fee-SEE-nah",
+      "fr": "bureau",
+      "frPhonetic": "bü-ROH",
+      "el": "γραφείο",
+      "elPhonetic": "gra-FI-o",
+      "hi": "कार्यालय",
+      "hiPhonetic": "KAAR-yaa-lay",
+      "ar": "مَكْتَب",
+      "arPhonetic": "MAK-tab",
+      "ko": "사무실",
+      "koPhonetic": "sa-MU-shil",
+      "zh": "办公室",
+      "zhPhonetic": "bàngōngshì",
+      "ja": "事務所",
+      "jaPhonetic": "jimusho"
     },
     {
       "uk": "зарплата",
@@ -4912,7 +8680,23 @@
         ]
       },
       "de": "Gehalt",
-      "phoneticDe": "geh-HALT"
+      "phoneticDe": "geh-HAHLT",
+      "es": "salario",
+      "phoneticEs": "sa-LA-ryo",
+      "fr": "salaire",
+      "frPhonetic": "sa-LAIR",
+      "el": "μισθός",
+      "elPhonetic": "mi-STHOS",
+      "hi": "वेतन",
+      "hiPhonetic": "VE-tan",
+      "ar": "رَاتِب",
+      "arPhonetic": "RAA-tib",
+      "ko": "급여",
+      "koPhonetic": "GEU-byeo",
+      "zh": "工资",
+      "zhPhonetic": "gōngzī",
+      "ja": "給料",
+      "jaPhonetic": "kyuuryou"
     },
     {
       "uk": "директор",
@@ -4932,8 +8716,24 @@
           "The director signed an important document."
         ]
       },
-      "de": "Direktor",
-      "phoneticDe": "di-REK-tor"
+      "de": "Regisseur",
+      "phoneticDe": "reh-zhee-SUR",
+      "es": "director",
+      "phoneticEs": "dee-rek-TOR",
+      "fr": "metteur en scène",
+      "frPhonetic": "meh-TUR on SEN",
+      "el": "σκηνοθέτης",
+      "elPhonetic": "ski-no-THEH-tis",
+      "hi": "निर्देशक",
+      "hiPhonetic": "nir-DE-shak",
+      "ar": "مُخْرِج",
+      "arPhonetic": "MUKH-rij",
+      "ko": "감독",
+      "koPhonetic": "GAM-dok",
+      "zh": "导演",
+      "zhPhonetic": "dǎoyǎn",
+      "ja": "監督",
+      "jaPhonetic": "kantoku"
     },
     {
       "uk": "компанія",
@@ -4953,8 +8753,24 @@
           "The company opened a new office in Kyiv."
         ]
       },
-      "de": "Unternehmen",
-      "phoneticDe": "oon-ter-NAY-men"
+      "de": "Firma/Unternehmen",
+      "phoneticDe": "FEER-mah/oon-ter-NAY-men",
+      "es": "empresa",
+      "phoneticEs": "em-PREH-sah",
+      "fr": "entreprise",
+      "frPhonetic": "on-treh-PREEZ",
+      "el": "εταιρεία",
+      "elPhonetic": "e-te-REI-a",
+      "hi": "कंपनी",
+      "hiPhonetic": "KAM-pa-nee",
+      "ar": "شركة",
+      "arPhonetic": "SHAR-ka",
+      "ko": "회사",
+      "koPhonetic": "HOE-sa",
+      "zh": "公司",
+      "zhPhonetic": "gōngsī",
+      "ja": "会社",
+      "jaPhonetic": "kaisha"
     },
     {
       "uk": "співробітник",
@@ -4974,8 +8790,24 @@
           "Every employee received a bonus."
         ]
       },
-      "de": "Mitarbeiter",
-      "phoneticDe": "MIT-ar-by-ter"
+      "de": "Angestellter/Mitarbeiter",
+      "phoneticDe": "AHN-geh-shtel-ter/MIT-ar-bye-ter",
+      "es": "empleado",
+      "phoneticEs": "em-ple-A-do",
+      "fr": "employé",
+      "frPhonetic": "an-plwa-YEH",
+      "el": "υπάλληλος",
+      "elPhonetic": "i-PA-li-los",
+      "hi": "कर्मचारी",
+      "hiPhonetic": "kar-ma-CHAA-ree",
+      "ar": "مُوَظَّف",
+      "arPhonetic": "mu-WADH-dhaf",
+      "ko": "직원",
+      "koPhonetic": "JI-gwon",
+      "zh": "员工",
+      "zhPhonetic": "yuángōng",
+      "ja": "従業員",
+      "jaPhonetic": "juugyouin"
     },
     {
       "uk": "начальник",
@@ -4996,7 +8828,23 @@
         ]
       },
       "de": "Chef/Vorgesetzter",
-      "phoneticDe": "shef/FOR-geh-zets-ter"
+      "phoneticDe": "SHEF/FOR-geh-zets-ter",
+      "es": "jefe",
+      "phoneticEs": "HE-fe",
+      "fr": "chef/supérieur",
+      "frPhonetic": "SHEF/sew-pay-RYUR",
+      "el": "προϊστάμενος",
+      "elPhonetic": "pro-i-STA-me-nos",
+      "hi": "बॉस",
+      "hiPhonetic": "BOS",
+      "ar": "مُدِير",
+      "arPhonetic": "mu-DEER",
+      "ko": "상사",
+      "koPhonetic": "SANG-sa",
+      "zh": "老板",
+      "zhPhonetic": "lǎobǎn",
+      "ja": "上司",
+      "jaPhonetic": "joushi"
     },
     {
       "uk": "контракт",
@@ -5017,7 +8865,23 @@
         ]
       },
       "de": "Vertrag",
-      "phoneticDe": "fer-TRAK"
+      "phoneticDe": "fair-TRAHK",
+      "es": "contraer",
+      "phoneticEs": "con-tra-ER",
+      "fr": "contrat",
+      "frPhonetic": "kon-TRA",
+      "el": "συμβόλαιο",
+      "elPhonetic": "sim-VO-le-o",
+      "hi": "अनुबंध",
+      "hiPhonetic": "a-nu-BANDH",
+      "ar": "عقد",
+      "arPhonetic": "AQD",
+      "ko": "계약",
+      "koPhonetic": "GYE-yak",
+      "zh": "合同",
+      "zhPhonetic": "hétong",
+      "ja": "契約",
+      "jaPhonetic": "keiyaku"
     },
     {
       "uk": "нарада",
@@ -5037,8 +8901,24 @@
           "The meeting lasted two hours."
         ]
       },
-      "de": "Besprechung",
-      "phoneticDe": "beh-SHPREKH-ung"
+      "de": "Besprechung/Sitzung",
+      "phoneticDe": "beh-SHPRE-khoong/ZIT-soong",
+      "es": "reunión",
+      "phoneticEs": "re-u-NYON",
+      "fr": "réunion",
+      "frPhonetic": "ray-u-NYON",
+      "el": "συνάντηση",
+      "elPhonetic": "si-NAN-di-si",
+      "hi": "बैठक",
+      "hiPhonetic": "BAITH-ak",
+      "ar": "اِجْتِمَاع",
+      "arPhonetic": "ij-ti-MAA",
+      "ko": "회의",
+      "koPhonetic": "HOE-ui",
+      "zh": "会议",
+      "zhPhonetic": "huìyì",
+      "ja": "会議",
+      "jaPhonetic": "kaigi"
     },
     {
       "uk": "проєкт",
@@ -5059,7 +8939,23 @@
         ]
       },
       "de": "Projekt",
-      "phoneticDe": "pro-YEKT"
+      "phoneticDe": "pro-YEKT",
+      "es": "proyecto",
+      "phoneticEs": "pro-YEC-to",
+      "fr": "projet",
+      "frPhonetic": "proh-ZHAY",
+      "el": "έργο",
+      "elPhonetic": "ER-go",
+      "hi": "परियोजना",
+      "hiPhonetic": "pa-ri-YOJ-naa",
+      "ar": "مَشْرُوع",
+      "arPhonetic": "mash-ROO",
+      "ko": "프로젝트",
+      "koPhonetic": "PEU-ro-JEK-teu",
+      "zh": "项目",
+      "zhPhonetic": "xiàngmù",
+      "ja": "プロジェクト",
+      "jaPhonetic": "purojekuto"
     },
     {
       "uk": "бюджет",
@@ -5079,8 +8975,24 @@
           "The project budget was doubled."
         ]
       },
-      "de": "Budget",
-      "phoneticDe": "bew-ZHAY"
+      "de": "Haushalt/Budget",
+      "phoneticDe": "HOWS-hahlt/bue-DJAY",
+      "es": "presupuesto",
+      "phoneticEs": "preh-soo-PWES-to",
+      "fr": "budget",
+      "frPhonetic": "by-ZHAY",
+      "el": "προϋπολογισμός",
+      "elPhonetic": "pro-i-po-lo-yiz-MOS",
+      "hi": "बजट",
+      "hiPhonetic": "BA-jat",
+      "ar": "ميزانية",
+      "arPhonetic": "mee-zaa-NEE-ya",
+      "ko": "예산",
+      "koPhonetic": "YE-san",
+      "zh": "预算",
+      "zhPhonetic": "yùsuàn",
+      "ja": "予算",
+      "jaPhonetic": "yosan"
     },
     {
       "uk": "прибуток",
@@ -5101,7 +9013,23 @@
         ]
       },
       "de": "Gewinn",
-      "phoneticDe": "geh-VIN"
+      "phoneticDe": "geh-VIN",
+      "es": "ganancia",
+      "phoneticEs": "gah-NAN-syah",
+      "fr": "bénéfice",
+      "frPhonetic": "bay-nay-FEES",
+      "el": "κέρδος",
+      "elPhonetic": "KER-dos",
+      "hi": "लाभ",
+      "hiPhonetic": "LAABH",
+      "ar": "ربح",
+      "arPhonetic": "RIBH",
+      "ko": "이익",
+      "koPhonetic": "I-ik",
+      "zh": "利润",
+      "zhPhonetic": "lìrùn",
+      "ja": "利益",
+      "jaPhonetic": "rieki"
     },
     {
       "uk": "збиток",
@@ -5122,7 +9050,23 @@
         ]
       },
       "de": "Verlust",
-      "phoneticDe": "fer-LOOST"
+      "phoneticDe": "fair-LOOST",
+      "es": "pérdida",
+      "phoneticEs": "PEHR-dee-dah",
+      "fr": "perte",
+      "frPhonetic": "PAIR",
+      "el": "ζημία",
+      "elPhonetic": "zi-MI-a",
+      "hi": "हानि",
+      "hiPhonetic": "HAA-ni",
+      "ar": "خسارة",
+      "arPhonetic": "kha-SAA-ra",
+      "ko": "손실",
+      "koPhonetic": "SON-shil",
+      "zh": "亏损",
+      "zhPhonetic": "kuīsǔn",
+      "ja": "損失",
+      "jaPhonetic": "sonshitsu"
     },
     {
       "uk": "клієнт",
@@ -5142,8 +9086,24 @@
           "The client is satisfied with the quality of the service."
         ]
       },
-      "de": "Kunde",
-      "phoneticDe": "KOON-deh"
+      "de": "Kunde/Klient",
+      "phoneticDe": "KUN-deh/klee-ENT",
+      "es": "cliente",
+      "phoneticEs": "cli-EN-te",
+      "fr": "client",
+      "frPhonetic": "klee-AH",
+      "el": "πελάτης",
+      "elPhonetic": "pe-LA-tis",
+      "hi": "ग्राहक",
+      "hiPhonetic": "GRAA-hak",
+      "ar": "عَمِيل",
+      "arPhonetic": "a-MEEL",
+      "ko": "고객",
+      "koPhonetic": "GO-gaek",
+      "zh": "客户",
+      "zhPhonetic": "kèhù",
+      "ja": "顧客",
+      "jaPhonetic": "kokyaku"
     },
     {
       "uk": "партнер",
@@ -5164,7 +9124,23 @@
         ]
       },
       "de": "Geschäftspartner",
-      "phoneticDe": "geh-SHEFTS-part-ner"
+      "phoneticDe": "geh-SHEFTS-part-ner",
+      "es": "socio",
+      "phoneticEs": "SO-cio",
+      "fr": "associé",
+      "frPhonetic": "ah-soh-SYAY",
+      "el": "συνέταιρος",
+      "elPhonetic": "si-NE-te-ros",
+      "hi": "साझेदार",
+      "hiPhonetic": "SAAJ-he-daar",
+      "ar": "شَرِيك",
+      "arPhonetic": "sha-REEK",
+      "ko": "파트너",
+      "koPhonetic": "PA-teu-neo",
+      "zh": "合伙人",
+      "zhPhonetic": "héhuǒrén",
+      "ja": "取引先",
+      "jaPhonetic": "torihikisaki"
     },
     {
       "uk": "інвестиція",
@@ -5185,7 +9161,23 @@
         ]
       },
       "de": "Investition",
-      "phoneticDe": "in-ves-ti-TSYON"
+      "phoneticDe": "in-ves-tee-TSEE-ohn",
+      "es": "inversión",
+      "phoneticEs": "een-ver-SYON",
+      "fr": "investissement",
+      "frPhonetic": "an-ves-tees-MON",
+      "el": "επένδυση",
+      "elPhonetic": "e-PEN-di-si",
+      "hi": "निवेश",
+      "hiPhonetic": "ni-VESH",
+      "ar": "استثمار",
+      "arPhonetic": "is-tith-MAAR",
+      "ko": "투자",
+      "koPhonetic": "TU-ja",
+      "zh": "投资",
+      "zhPhonetic": "tóuzī",
+      "ja": "投資",
+      "jaPhonetic": "toushi"
     },
     {
       "uk": "підприємець",
@@ -5206,7 +9198,23 @@
         ]
       },
       "de": "Unternehmer",
-      "phoneticDe": "oon-ter-NAY-mer"
+      "phoneticDe": "un-ter-NAY-mer",
+      "es": "emprendedor",
+      "phoneticEs": "em-pren-de-DOR",
+      "fr": "entrepreneur",
+      "frPhonetic": "ahn-truh-pruh-NUR",
+      "el": "επιχειρηματίας",
+      "elPhonetic": "e-pi-hi-ri-ma-TI-as",
+      "hi": "उद्यमी",
+      "hiPhonetic": "ud-YA-mee",
+      "ar": "رَائِد أَعْمَال",
+      "arPhonetic": "RAA-id A-maal",
+      "ko": "기업가",
+      "koPhonetic": "GI-eop-ga",
+      "zh": "企业家",
+      "zhPhonetic": "qǐyèjiā",
+      "ja": "起業家",
+      "jaPhonetic": "kigyouka"
     },
     {
       "uk": "бізнес",
@@ -5227,7 +9235,23 @@
         ]
       },
       "de": "Geschäft",
-      "phoneticDe": "geh-SHEFT"
+      "phoneticDe": "geh-SHEFT",
+      "es": "negocio",
+      "phoneticEs": "ne-GO-cio",
+      "fr": "entreprise",
+      "frPhonetic": "ahn-truh-PREEZ",
+      "el": "επιχείρηση",
+      "elPhonetic": "e-pi-HI-ri-si",
+      "hi": "व्यापार",
+      "hiPhonetic": "VYAA-paar",
+      "ar": "عَمَل تِجَارِي",
+      "arPhonetic": "A-mal ti-JAA-ree",
+      "ko": "사업",
+      "koPhonetic": "SA-eop",
+      "zh": "生意",
+      "zhPhonetic": "shēngyì",
+      "ja": "ビジネス",
+      "jaPhonetic": "bijinesu"
     },
     {
       "uk": "маркетинг",
@@ -5248,7 +9272,23 @@
         ]
       },
       "de": "Marketing",
-      "phoneticDe": "MAR-ke-ting"
+      "phoneticDe": "MAR-keh-ting",
+      "es": "mercadotecnia",
+      "phoneticEs": "mer-ka-do-TEK-nya",
+      "fr": "marketing",
+      "frPhonetic": "mar-keh-TING",
+      "el": "μάρκετινγκ",
+      "elPhonetic": "MAR-ke-ting",
+      "hi": "विपणन",
+      "hiPhonetic": "vi-PA-nan",
+      "ar": "تسويق",
+      "arPhonetic": "tas-WEEQ",
+      "ko": "마케팅",
+      "koPhonetic": "ma-KE-ting",
+      "zh": "营销",
+      "zhPhonetic": "yíngxiāo",
+      "ja": "マーケティング",
+      "jaPhonetic": "maaketingu"
     },
     {
       "uk": "реклама",
@@ -5269,7 +9309,23 @@
         ]
       },
       "de": "Werbung",
-      "phoneticDe": "VER-bung"
+      "phoneticDe": "VER-bung",
+      "es": "publicidad",
+      "phoneticEs": "pu-bli-ci-DAD",
+      "fr": "publicité",
+      "frPhonetic": "pew-blee-see-TAY",
+      "el": "διαφήμιση",
+      "elPhonetic": "dia-FI-mi-si",
+      "hi": "विज्ञापन",
+      "hiPhonetic": "vi-GYAA-pan",
+      "ar": "إِعْلَان",
+      "arPhonetic": "I-laan",
+      "ko": "광고",
+      "koPhonetic": "GWANG-go",
+      "zh": "广告",
+      "zhPhonetic": "guǎnggào",
+      "ja": "広告",
+      "jaPhonetic": "koukoku"
     },
     {
       "uk": "співбесіда",
@@ -5290,7 +9346,23 @@
         ]
       },
       "de": "Vorstellungsgespräch",
-      "phoneticDe": "FOR-shtel-ungs-geh-shpraykh"
+      "phoneticDe": "FOR-shtel-lungs-geh-shprekh",
+      "es": "entrevista de trabajo",
+      "phoneticEs": "en-tre-VIS-ta de tra-BA-jo",
+      "fr": "entretien d'embauche",
+      "frPhonetic": "ahn-truh-TYEH dahm-BOSH",
+      "el": "συνέντευξη εργασίας",
+      "elPhonetic": "si-NEN-dek-si er-ga-SI-as",
+      "hi": "नौकरी का इंटरव्यू",
+      "hiPhonetic": "NAU-ka-ree kaa IN-tar-vyoo",
+      "ar": "مُقَابَلَة عَمَل",
+      "arPhonetic": "mu-QAA-ba-lat A-mal",
+      "ko": "면접",
+      "koPhonetic": "MYEON-jeop",
+      "zh": "面试",
+      "zhPhonetic": "miànshì",
+      "ja": "面接",
+      "jaPhonetic": "mensetsu"
     },
     {
       "uk": "резюме",
@@ -5311,7 +9383,23 @@
         ]
       },
       "de": "Lebenslauf",
-      "phoneticDe": "LAY-bens-lowf"
+      "phoneticDe": "LAY-bens-lauf",
+      "es": "currículum",
+      "phoneticEs": "ku-RRI-ku-lum",
+      "fr": "CV",
+      "frPhonetic": "seh-VEH",
+      "el": "βιογραφικό",
+      "elPhonetic": "vi-o-gra-fi-KO",
+      "hi": "बायोडाटा",
+      "hiPhonetic": "baa-yo-DAA-taa",
+      "ar": "سِيرَة ذَاتِيَّة",
+      "arPhonetic": "SEE-ra dhaa-TEE-ya",
+      "ko": "이력서",
+      "koPhonetic": "I-ryeok-seo",
+      "zh": "简历",
+      "zhPhonetic": "jiǎnlì",
+      "ja": "履歴書",
+      "jaPhonetic": "rirekisho"
     },
     {
       "uk": "посада",
@@ -5331,8 +9419,24 @@
           "She got a new position at the company."
         ]
       },
-      "de": "Stelle/Titel",
-      "phoneticDe": "SHTEL-eh/TEE-tel"
+      "de": "Stelle/Position",
+      "phoneticDe": "SHTEL-leh/po-zee-TSEE-ohn",
+      "es": "cargo",
+      "phoneticEs": "CAR-go",
+      "fr": "poste",
+      "frPhonetic": "POST",
+      "el": "θέση",
+      "elPhonetic": "THE-si",
+      "hi": "पद",
+      "hiPhonetic": "PAD",
+      "ar": "مَنْصِب",
+      "arPhonetic": "MAN-sib",
+      "ko": "직위",
+      "koPhonetic": "JI-gwi",
+      "zh": "职位",
+      "zhPhonetic": "zhíwèi",
+      "ja": "役職",
+      "jaPhonetic": "yakushoku"
     },
     {
       "uk": "підвищення",
@@ -5353,7 +9457,23 @@
         ]
       },
       "de": "Beförderung",
-      "phoneticDe": "beh-FER-der-ung"
+      "phoneticDe": "beh-FUR-deh-roong",
+      "es": "ascenso",
+      "phoneticEs": "as-SEN-so",
+      "fr": "promotion",
+      "frPhonetic": "pro-mo-SYON",
+      "el": "προαγωγή",
+      "elPhonetic": "pro-a-go-YI",
+      "hi": "पदोन्नति",
+      "hiPhonetic": "pa-don-NA-ti",
+      "ar": "تَرْقِيَة",
+      "arPhonetic": "tar-QEE-ya",
+      "ko": "승진",
+      "koPhonetic": "SEUNG-jin",
+      "zh": "晋升",
+      "zhPhonetic": "jìnshēng",
+      "ja": "昇進",
+      "jaPhonetic": "shoushin"
     },
     {
       "uk": "звільнення",
@@ -5373,8 +9493,24 @@
           "The dismissal came as a surprise to him."
         ]
       },
-      "de": "Entlassung",
-      "phoneticDe": "ent-LAS-ung"
+      "de": "Kündigung",
+      "phoneticDe": "KEWN-dee-gung",
+      "es": "despido",
+      "phoneticEs": "des-PI-do",
+      "fr": "licenciement",
+      "frPhonetic": "lee-sahns-YUHM-ahn",
+      "el": "απόλυση",
+      "elPhonetic": "a-PO-li-si",
+      "hi": "बर्खास्तगी",
+      "hiPhonetic": "bar-KHAAS-ta-gee",
+      "ar": "فَصْل",
+      "arPhonetic": "FASL",
+      "ko": "해고",
+      "koPhonetic": "HAE-go",
+      "zh": "解雇",
+      "zhPhonetic": "jiěgù",
+      "ja": "解雇",
+      "jaPhonetic": "kaiko"
     },
     {
       "uk": "відпустка",
@@ -5395,7 +9531,23 @@
         ]
       },
       "de": "Urlaub",
-      "phoneticDe": "OOR-lowp"
+      "phoneticDe": "OOR-laowp",
+      "es": "vacaciones",
+      "phoneticEs": "va-ca-CIO-nes",
+      "fr": "congé",
+      "frPhonetic": "kohn-ZHAY",
+      "el": "άδεια",
+      "elPhonetic": "A-dia",
+      "hi": "छुट्टी",
+      "hiPhonetic": "CHHUT-tee",
+      "ar": "إِجَازَة",
+      "arPhonetic": "i-JAA-za",
+      "ko": "휴가",
+      "koPhonetic": "HYU-ga",
+      "zh": "休假",
+      "zhPhonetic": "xiūjià",
+      "ja": "休暇",
+      "jaPhonetic": "kyuuka"
     },
     {
       "uk": "відрядження",
@@ -5415,8 +9567,24 @@
           "She went on a business trip to Berlin."
         ]
       },
-      "de": "Dienstreise",
-      "phoneticDe": "DEENST-ry-zeh"
+      "de": "Geschäftsreise",
+      "phoneticDe": "geh-SHEFTS-ry-zeh",
+      "es": "viaje de negocios",
+      "phoneticEs": "VIA-je de ne-GO-cios",
+      "fr": "voyage d'affaires",
+      "frPhonetic": "vwah-YAZH dah-FAIR",
+      "el": "επαγγελματικό ταξίδι",
+      "elPhonetic": "e-pan-gel-ma-ti-KO tak-SI-di",
+      "hi": "व्यापारिक यात्रा",
+      "hiPhonetic": "vyaa-PAA-rik YAA-traa",
+      "ar": "رِحْلَة عَمَل",
+      "arPhonetic": "RIH-lat A-mal",
+      "ko": "출장",
+      "koPhonetic": "CHUL-jang",
+      "zh": "出差",
+      "zhPhonetic": "chūchāi",
+      "ja": "出張",
+      "jaPhonetic": "shutchou"
     },
     {
       "uk": "переговори",
@@ -5437,7 +9605,23 @@
         ]
       },
       "de": "Verhandlungen",
-      "phoneticDe": "fer-HAND-lung-en"
+      "phoneticDe": "fer-HANT-lun-gen",
+      "es": "negociaciones",
+      "phoneticEs": "ne-go-cia-CIO-nes",
+      "fr": "négociations",
+      "frPhonetic": "nay-goh-syah-SYOH",
+      "el": "διαπραγματεύσεις",
+      "elPhonetic": "dia-prag-ma-TEV-sis",
+      "hi": "बातचीत",
+      "hiPhonetic": "BAAT-cheet",
+      "ar": "مُفَاوَضَات",
+      "arPhonetic": "mu-faa-wa-DAAT",
+      "ko": "협상",
+      "koPhonetic": "HYEOP-sang",
+      "zh": "谈判",
+      "zhPhonetic": "tánpàn",
+      "ja": "交渉",
+      "jaPhonetic": "koushou"
     },
     {
       "uk": "угода",
@@ -5457,8 +9641,24 @@
           "Both parties signed the deal."
         ]
       },
-      "de": "Geschäft/Transaktion",
-      "phoneticDe": "geh-SHEFT/tran-zak-TSYON"
+      "de": "Geschäft/Abkommen",
+      "phoneticDe": "geh-SHEFT/AP-kom-men",
+      "es": "trato",
+      "phoneticEs": "TRA-to",
+      "fr": "accord/transaction",
+      "frPhonetic": "ah-KOR/trahns-ak-SYOH",
+      "el": "συμφωνία",
+      "elPhonetic": "sim-fo-NI-a",
+      "hi": "सौदा",
+      "hiPhonetic": "SAU-daa",
+      "ar": "صَفْقَة",
+      "arPhonetic": "SAF-qa",
+      "ko": "거래",
+      "koPhonetic": "GEO-rae",
+      "zh": "交易",
+      "zhPhonetic": "jiāoyì",
+      "ja": "取引",
+      "jaPhonetic": "torihiki"
     },
     {
       "uk": "склад",
@@ -5478,8 +9678,24 @@
           "The goods are stored in a warehouse outside the city."
         ]
       },
-      "de": "Lager",
-      "phoneticDe": "LAH-ger"
+      "de": "Lager/Lagerhaus",
+      "phoneticDe": "LAH-ger/LAH-ger-haus",
+      "es": "almacén",
+      "phoneticEs": "al-mah-SEN",
+      "fr": "entrepôt",
+      "frPhonetic": "on-truh-PO",
+      "el": "αποθήκη",
+      "elPhonetic": "a-po-THEE-kee",
+      "hi": "गोदाम",
+      "hiPhonetic": "go-DAAM",
+      "ar": "مُسْتَوْدَع",
+      "arPhonetic": "mus-TAW-da",
+      "ko": "창고",
+      "koPhonetic": "CHANG-go",
+      "zh": "仓库",
+      "zhPhonetic": "cāngkù",
+      "ja": "倉庫",
+      "jaPhonetic": "souko"
     },
     {
       "uk": "постачальник",
@@ -5500,7 +9716,23 @@
         ]
       },
       "de": "Lieferant",
-      "phoneticDe": "lee-fer-ANT"
+      "phoneticDe": "LEE-feh-rahnt",
+      "es": "proveedor",
+      "phoneticEs": "pro-be-e-DOR",
+      "fr": "fournisseur",
+      "frPhonetic": "foor-nee-SEUR",
+      "el": "προμηθευτής",
+      "elPhonetic": "pro-mi-thef-TIS",
+      "hi": "आपूर्तिकर्ता",
+      "hiPhonetic": "aa-POOR-ti-kar-taa",
+      "ar": "مورد",
+      "arPhonetic": "mu-WAR-rid",
+      "ko": "공급자",
+      "koPhonetic": "gong-GEUP-ja",
+      "zh": "供应商",
+      "zhPhonetic": "gōngyìngshāng",
+      "ja": "仕入先",
+      "jaPhonetic": "shiire saki"
     },
     {
       "uk": "бухгалтер",
@@ -5520,8 +9752,24 @@
           "The accountant prepared the annual report."
         ]
       },
-      "de": "Buchhalter",
-      "phoneticDe": "BOOKH-hal-ter"
+      "de": "Buchhalter/Buchhalterin",
+      "phoneticDe": "BOOKH-hal-ter/BOOKH-hal-teh-rin",
+      "es": "contador",
+      "phoneticEs": "kon-tah-DOR",
+      "fr": "comptable",
+      "frPhonetic": "komp-TAB-luh",
+      "el": "λογιστής",
+      "elPhonetic": "lo-yis-TIS",
+      "hi": "लेखाकार",
+      "hiPhonetic": "le-KHAA-kaar",
+      "ar": "مُحَاسِب",
+      "arPhonetic": "mu-HAA-sib",
+      "ko": "회계사",
+      "koPhonetic": "hwe-GYE-sa",
+      "zh": "会计",
+      "zhPhonetic": "kuàijì",
+      "ja": "会計士",
+      "jaPhonetic": "kaikeishi"
     },
     {
       "uk": "податок",
@@ -5542,7 +9790,23 @@
         ]
       },
       "de": "Steuer",
-      "phoneticDe": "SHTOY-er"
+      "phoneticDe": "SHTOY-er",
+      "es": "impuesto",
+      "phoneticEs": "eem-PWES-to",
+      "fr": "impôt",
+      "frPhonetic": "am-PO",
+      "el": "φόρος",
+      "elPhonetic": "FO-ros",
+      "hi": "कर",
+      "hiPhonetic": "KAR",
+      "ar": "ضريبة",
+      "arPhonetic": "da-REE-ba",
+      "ko": "세금",
+      "koPhonetic": "SE-geum",
+      "zh": "税",
+      "zhPhonetic": "shuì",
+      "ja": "税金",
+      "jaPhonetic": "zeikin"
     },
     {
       "uk": "рахунок-фактура",
@@ -5563,7 +9827,23 @@
         ]
       },
       "de": "Rechnung",
-      "phoneticDe": "REKH-nung"
+      "phoneticDe": "REKH-nung",
+      "es": "factura",
+      "phoneticEs": "FAC-tu-ra",
+      "fr": "facture",
+      "frPhonetic": "fak-TEWR",
+      "el": "τιμολόγιο",
+      "elPhonetic": "ti-mo-LO-gio",
+      "hi": "बीजक",
+      "hiPhonetic": "BEE-jak",
+      "ar": "فَاتُورَة",
+      "arPhonetic": "faa-TOO-ra",
+      "ko": "송장",
+      "koPhonetic": "SONG-jang",
+      "zh": "发票",
+      "zhPhonetic": "fāpiào",
+      "ja": "請求書",
+      "jaPhonetic": "seikyuusho"
     },
     {
       "uk": "звіт",
@@ -5584,7 +9864,23 @@
         ]
       },
       "de": "Bericht",
-      "phoneticDe": "beh-RIKHT"
+      "phoneticDe": "beh-RISHT",
+      "es": "informe",
+      "phoneticEs": "in-FOR-me",
+      "fr": "rapport",
+      "frPhonetic": "ra-POR",
+      "el": "έκθεση",
+      "elPhonetic": "EK-the-si",
+      "hi": "रिपोर्ट",
+      "hiPhonetic": "ri-PORT",
+      "ar": "تَقْرِير",
+      "arPhonetic": "taq-REER",
+      "ko": "보고서",
+      "koPhonetic": "BO-go-seo",
+      "zh": "报告",
+      "zhPhonetic": "bàogào",
+      "ja": "報告書",
+      "jaPhonetic": "houkokusho"
     },
     {
       "uk": "презентація",
@@ -5604,8 +9900,24 @@
           "The presentation of the new product went successfully."
         ]
       },
-      "de": "Präsentation",
-      "phoneticDe": "preh-zen-ta-TSYON"
+      "de": "Präsentation/Vortrag",
+      "phoneticDe": "pray-zen-tah-TSEE-ohn/FOR-trahg",
+      "es": "presentación",
+      "phoneticEs": "pre-sen-ta-SYON",
+      "fr": "présentation",
+      "frPhonetic": "pray-zon-ta-SYON",
+      "el": "παρουσίαση",
+      "elPhonetic": "pa-roo-SEE-a-si",
+      "hi": "प्रस्तुति",
+      "hiPhonetic": "pras-TU-ti",
+      "ar": "عَرْض تَقْدِيمِي",
+      "arPhonetic": "ARD taq-dee-MEE",
+      "ko": "발표",
+      "koPhonetic": "BAL-pyo",
+      "zh": "演示",
+      "zhPhonetic": "yǎnshì",
+      "ja": "プレゼンテーション",
+      "jaPhonetic": "purezenteeeshon"
     },
     {
       "uk": "конкурент",
@@ -5626,7 +9938,23 @@
         ]
       },
       "de": "Konkurrent",
-      "phoneticDe": "kon-koo-RENT"
+      "phoneticDe": "kon-koo-RENT",
+      "es": "competidor",
+      "phoneticEs": "kom-pe-ti-DOR",
+      "fr": "concurrent",
+      "frPhonetic": "kon-ky-RON",
+      "el": "ανταγωνιστής",
+      "elPhonetic": "an-da-go-ni-STIS",
+      "hi": "प्रतियोगी",
+      "hiPhonetic": "pra-ti-YO-gee",
+      "ar": "منافس",
+      "arPhonetic": "mu-NAA-fis",
+      "ko": "경쟁자",
+      "koPhonetic": "gyeong-JAENG-ja",
+      "zh": "竞争对手",
+      "zhPhonetic": "jìngzhēng duìshǒu",
+      "ja": "競合相手",
+      "jaPhonetic": "kyougou aite"
     },
     {
       "uk": "менеджер",
@@ -5647,7 +9975,23 @@
         ]
       },
       "de": "Manager",
-      "phoneticDe": "MEN-a-jer"
+      "phoneticDe": "MAN-ah-jer",
+      "es": "gerente",
+      "phoneticEs": "khe-REN-te",
+      "fr": "gérant",
+      "frPhonetic": "zhay-RON",
+      "el": "διευθυντής",
+      "elPhonetic": "di-ef-thin-TIS",
+      "hi": "प्रबंधक",
+      "hiPhonetic": "pra-BAN-dhak",
+      "ar": "مدير",
+      "arPhonetic": "mu-DEER",
+      "ko": "매니저",
+      "koPhonetic": "MAE-ni-jeo",
+      "zh": "经理",
+      "zhPhonetic": "jīnglǐ",
+      "ja": "マネージャー",
+      "jaPhonetic": "maneejaa"
     },
     {
       "uk": "секретар",
@@ -5667,8 +10011,24 @@
           "The secretary booked appointments for everyone."
         ]
       },
-      "de": "Sekretär",
-      "phoneticDe": "zek-reh-TAYR"
+      "de": "Sekretär/Sekretärin",
+      "phoneticDe": "zeh-kreh-TAIR/zeh-kreh-TAI-rin",
+      "es": "secretario",
+      "phoneticEs": "se-cre-TA-rio",
+      "fr": "secrétaire",
+      "frPhonetic": "suh-kray-TEHR",
+      "el": "γραμματέας",
+      "elPhonetic": "gra-ma-TE-as",
+      "hi": "सचिव",
+      "hiPhonetic": "SA-chiv",
+      "ar": "سكرتير",
+      "arPhonetic": "sik-ri-TEER",
+      "ko": "비서",
+      "koPhonetic": "BI-seo",
+      "zh": "秘书",
+      "zhPhonetic": "mìshū",
+      "ja": "秘書",
+      "jaPhonetic": "HI-sho"
     },
     {
       "uk": "стажер",
@@ -5689,7 +10049,23 @@
         ]
       },
       "de": "Praktikant",
-      "phoneticDe": "prak-ti-KANT"
+      "phoneticDe": "prak-tee-KANT",
+      "es": "pasante",
+      "phoneticEs": "pa-SAN-te",
+      "fr": "stagiaire",
+      "frPhonetic": "stah-ZHYAIR",
+      "el": "ασκούμενος",
+      "elPhonetic": "as-KU-me-nos",
+      "hi": "प्रशिक्षु",
+      "hiPhonetic": "pra-SHIK-shu",
+      "ar": "مُتَدَرِّب",
+      "arPhonetic": "mu-ta-DAR-rib",
+      "ko": "인턴",
+      "koPhonetic": "IN-teon",
+      "zh": "实习生",
+      "zhPhonetic": "shíxíshēng",
+      "ja": "研修生",
+      "jaPhonetic": "kenshuusei"
     },
     {
       "uk": "підприємство",
@@ -5710,7 +10086,23 @@
         ]
       },
       "de": "Unternehmen",
-      "phoneticDe": "oon-ter-NAY-men"
+      "phoneticDe": "un-ter-NAY-men",
+      "es": "empresa",
+      "phoneticEs": "em-PRE-sa",
+      "fr": "entreprise",
+      "frPhonetic": "ahn-truh-PREEZ",
+      "el": "επιχείρηση",
+      "elPhonetic": "e-pi-HI-ri-si",
+      "hi": "उद्यम",
+      "hiPhonetic": "UD-yam",
+      "ar": "مُؤَسَّسَة",
+      "arPhonetic": "mu-AS-sa-sa",
+      "ko": "기업",
+      "koPhonetic": "GI-eop",
+      "zh": "企业",
+      "zhPhonetic": "qǐyè",
+      "ja": "企業",
+      "jaPhonetic": "kigyou"
     },
     {
       "uk": "виробництво",
@@ -5731,7 +10123,23 @@
         ]
       },
       "de": "Produktion",
-      "phoneticDe": "pro-dook-TSYON"
+      "phoneticDe": "pro-duk-TSEE-ohn",
+      "es": "producción",
+      "phoneticEs": "pro-duc-CION",
+      "fr": "production/fabrication",
+      "frPhonetic": "proh-dewk-SYOH/fah-bree-kah-SYOH",
+      "el": "παραγωγή",
+      "elPhonetic": "pa-ra-go-YI",
+      "hi": "उत्पादन",
+      "hiPhonetic": "ut-PAA-dan",
+      "ar": "إِنْتَاج",
+      "arPhonetic": "in-TAAJ",
+      "ko": "생산",
+      "koPhonetic": "SAENG-san",
+      "zh": "生产",
+      "zhPhonetic": "shēngchǎn",
+      "ja": "製造",
+      "jaPhonetic": "seizou"
     },
     {
       "uk": "якість",
@@ -5752,7 +10160,23 @@
         ]
       },
       "de": "Qualität",
-      "phoneticDe": "kva-li-TAYT"
+      "phoneticDe": "kvah-lee-TAYT",
+      "es": "calidad",
+      "phoneticEs": "ca-li-DAD",
+      "fr": "qualité",
+      "frPhonetic": "ka-lee-TAY",
+      "el": "ποιότητα",
+      "elPhonetic": "pi-O-ti-ta",
+      "hi": "गुणवत्ता",
+      "hiPhonetic": "gu-na-VAT-taa",
+      "ar": "جَوْدَة",
+      "arPhonetic": "JAW-da",
+      "ko": "품질",
+      "koPhonetic": "PUM-jil",
+      "zh": "质量",
+      "zhPhonetic": "zhìliàng",
+      "ja": "品質",
+      "jaPhonetic": "hinshitsu"
     },
     {
       "uk": "дохід",
@@ -5772,8 +10196,24 @@
           "Revenue from tourism grew this year."
         ]
       },
-      "de": "Einnahmen",
-      "phoneticDe": "EYN-nah-men"
+      "de": "Einkommen",
+      "phoneticDe": "INE-kom-men",
+      "es": "ingresos",
+      "phoneticEs": "een-GREH-sos",
+      "fr": "revenu",
+      "frPhonetic": "reh-veh-NY",
+      "el": "εισόδημα",
+      "elPhonetic": "i-SO-di-ma",
+      "hi": "आय",
+      "hiPhonetic": "AAY",
+      "ar": "دخل",
+      "arPhonetic": "DAKHL",
+      "ko": "수입",
+      "koPhonetic": "SU-ip",
+      "zh": "收入",
+      "zhPhonetic": "shōurù",
+      "ja": "収入",
+      "jaPhonetic": "shuunyuu"
     },
     {
       "uk": "витрата",
@@ -5794,7 +10234,23 @@
         ]
       },
       "de": "Ausgabe",
-      "phoneticDe": "OWS-gah-beh"
+      "phoneticDe": "AOWS-gah-beh",
+      "es": "gasto",
+      "phoneticEs": "GAS-to",
+      "fr": "dépense",
+      "frPhonetic": "day-PAHNS",
+      "el": "έξοδο",
+      "elPhonetic": "EK-so-do",
+      "hi": "ख़र्च",
+      "hiPhonetic": "KHARCH",
+      "ar": "نَفَقَة",
+      "arPhonetic": "NA-fa-qa",
+      "ko": "비용",
+      "koPhonetic": "BI-yong",
+      "zh": "费用",
+      "zhPhonetic": "fèiyòng",
+      "ja": "経費",
+      "jaPhonetic": "keihi"
     },
     {
       "uk": "кредит",
@@ -5814,8 +10270,24 @@
           "They took out a loan to buy an apartment."
         ]
       },
-      "de": "Kredit",
-      "phoneticDe": "kreh-DEET"
+      "de": "Kredit/Darlehen",
+      "phoneticDe": "kreh-DEET/DAR-lay-en",
+      "es": "préstamo",
+      "phoneticEs": "PRES-tah-mo",
+      "fr": "crédit",
+      "frPhonetic": "kray-DEE",
+      "el": "δάνειο",
+      "elPhonetic": "DA-ni-o",
+      "hi": "ऋण",
+      "hiPhonetic": "RIN",
+      "ar": "قرض",
+      "arPhonetic": "QARD",
+      "ko": "대출",
+      "koPhonetic": "DAE-chul",
+      "zh": "贷款",
+      "zhPhonetic": "dàikuǎn",
+      "ja": "ローン",
+      "jaPhonetic": "roon"
     },
     {
       "uk": "страхування",
@@ -5836,7 +10308,23 @@
         ]
       },
       "de": "Versicherung",
-      "phoneticDe": "fer-ZI-kher-ung"
+      "phoneticDe": "fair-ZIKH-eh-roong",
+      "es": "seguro",
+      "phoneticEs": "seh-GOO-ro",
+      "fr": "assurance",
+      "frPhonetic": "a-sy-RONS",
+      "el": "ασφάλεια",
+      "elPhonetic": "as-FA-li-a",
+      "hi": "बीमा",
+      "hiPhonetic": "BEE-maa",
+      "ar": "تأمين",
+      "arPhonetic": "ta-MEEN",
+      "ko": "보험",
+      "koPhonetic": "BO-heom",
+      "zh": "保险",
+      "zhPhonetic": "bǎoxiǎn",
+      "ja": "保険",
+      "jaPhonetic": "hoken"
     },
     {
       "uk": "графік",
@@ -5856,8 +10344,24 @@
           "The work schedule changed starting next month."
         ]
       },
-      "de": "Zeitplan/Diagramm",
-      "phoneticDe": "TSYTE-plan/dee-a-GRAM"
+      "de": "Zeitplan",
+      "phoneticDe": "TSYTE-plahn",
+      "es": "horario",
+      "phoneticEs": "ho-RA-rio",
+      "fr": "planning/graphique",
+      "frPhonetic": "PLAN-neeng/grah-FEEK",
+      "el": "πρόγραμμα",
+      "elPhonetic": "PRO-gra-ma",
+      "hi": "अनुसूची",
+      "hiPhonetic": "a-nu-SOO-chee",
+      "ar": "جَدْوَل",
+      "arPhonetic": "JAD-wal",
+      "ko": "일정표",
+      "koPhonetic": "IL-jeong-pyo",
+      "zh": "日程表",
+      "zhPhonetic": "rìchéngbiǎo",
+      "ja": "スケジュール",
+      "jaPhonetic": "sukejuuru"
     },
     {
       "uk": "дедлайн",
@@ -5878,7 +10382,23 @@
         ]
       },
       "de": "Frist/Deadline",
-      "phoneticDe": "frist/DED-line"
+      "phoneticDe": "FRIST/DED-lyne",
+      "es": "fecha límite",
+      "phoneticEs": "FE-cha LI-mi-te",
+      "fr": "date limite",
+      "frPhonetic": "dat lee-MEET",
+      "el": "προθεσμία",
+      "elPhonetic": "pro-thes-MEE-a",
+      "hi": "समय सीमा",
+      "hiPhonetic": "SA-may SEE-maa",
+      "ar": "مَوْعِد نِهَائِي",
+      "arPhonetic": "MAW-id ni-haa-EE",
+      "ko": "마감",
+      "koPhonetic": "MA-gam",
+      "zh": "截止日期",
+      "zhPhonetic": "jiézhǐ rìqī",
+      "ja": "締め切り",
+      "jaPhonetic": "shimekiri"
     },
     {
       "uk": "аутсорсинг",
@@ -5899,7 +10419,23 @@
         ]
       },
       "de": "Outsourcing",
-      "phoneticDe": "OWT-zor-sing"
+      "phoneticDe": "AOWT-sor-sing",
+      "es": "subcontratación",
+      "phoneticEs": "sub-con-tra-ta-CIÓN",
+      "fr": "externalisation",
+      "frPhonetic": "eks-tair-nah-lee-zah-SYOH",
+      "el": "εξωτερική ανάθεση",
+      "elPhonetic": "e-xo-te-RI-ki a-NA-the-si",
+      "hi": "आउटसोर्सिंग",
+      "hiPhonetic": "AUT-sor-sing",
+      "ar": "الاستعانة بمصادر خارجية",
+      "arPhonetic": "al-is-ti-AA-na bi-ma-SAA-dir khaa-ri-JIY-ya",
+      "ko": "아웃소싱",
+      "koPhonetic": "a-ut-SO-sing",
+      "zh": "外包",
+      "zhPhonetic": "wàibāo",
+      "ja": "アウトソーシング",
+      "jaPhonetic": "autosooshingu"
     }
   ]
 }

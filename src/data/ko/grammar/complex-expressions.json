@@ -1,0 +1,116 @@
+{
+  "lessonId": "complex-expressions",
+  "nameEn": "Complex Grammar Expressions",
+  "nameKo": "복합 문법 표현",
+  "icon": "🧩",
+  "tier": "B2",
+  "prerequisites": ["verb-conjugation", "relative-clauses", "expressing-ability"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "concession-gineun",
+      "title": "Concession: -기는 하다",
+      "explanation": "-기는 하다 acknowledges something is true while implying a 'but' — a concession pattern. The verb is nominalized with -기, followed by the topic particle 는, then 하다. It means 'it IS [verb], but...' For example: 맛있기는 해요. 근데 너무 비싸요 (It IS delicious, but it's too expensive). 알기는 알아요 (I DO know, but...). In casual speech, -기는 often contracts to -긴: 맛있긴 해요 (It IS tasty, but...). 좋긴 좋은데... (It IS good, but...). This pattern is used when you want to partially agree before introducing a contrasting point. The repeated verb form (알기는 알다, 가기는 가다) adds emphasis: 'I do indeed [verb], however...'",
+      "tip": "The contracted form -긴 하다 is much more common in spoken Korean. 맛있긴 한데 비싸요 is natural; 맛있기는 하는데 비싸요 is correct but more formal. Both mean the same thing.",
+      "examples": [
+        { "ko": "한국어가 어렵기는 해요. 하지만 재미있어요", "en": "Korean IS difficult, but it's fun", "highlight": "어렵기는 해요" },
+        { "ko": "먹긴 먹었는데 배가 아직 고파요", "en": "I DID eat, but I'm still hungry", "highlight": "먹긴 먹었는데" },
+        { "ko": "비싸긴 하지만 품질이 좋아요", "en": "It IS expensive, but the quality is good", "highlight": "비싸긴 하지만" },
+        { "ko": "알긴 알아요. 그런데 설명하기 어려워요", "en": "I DO know, but it's hard to explain", "highlight": "알긴 알아요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'예쁘긴 한데 너무 비싸요' means:",
+          "options": ["It IS pretty, but it's too expensive", "It's not pretty and it's expensive", "It's pretty so it's expensive"],
+          "correctIndex": 0,
+          "explanation": "-긴 하다 (contracted from -기는 하다) concedes that it is pretty, then -ㄴ데 introduces the contrasting point: but it's too expensive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the casual contracted form of 재미있기는 해요?",
+          "options": ["재미있긴 해요", "재미있기해요", "재미긴 해요"],
+          "correctIndex": 0,
+          "explanation": "-기는 contracts to -긴 in casual speech: 재미있기는 → 재미있긴. The rest stays the same."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When would you use -기는 하다?",
+          "options": ["When you partially agree but want to add a contrasting point", "When you strongly disagree with something", "When you fully agree with no reservations"],
+          "correctIndex": 0,
+          "explanation": "-기는 하다 is for concession — you acknowledge something is true (partially agree) before introducing a 'but.' It shows nuanced, balanced thinking."
+        }
+      ]
+    },
+    {
+      "sectionId": "near-miss-ppeonhada",
+      "title": "Near Miss: -(으)ㄹ 뻔하다",
+      "explanation": "-(으)ㄹ 뻔하다 means 'almost did' or 'nearly happened' — expressing a close call where something was about to happen but ultimately did not. The verb stem takes -(으)ㄹ (future modifier), then 뻔하다. It is almost always used in past tense: -(으)ㄹ 뻔했다. 넘어질 뻔했어요 (I almost fell). 늦을 뻔했어요 (I almost was late). 죽을 뻔했어요 (I almost died — often used as dramatic exaggeration). 잊어버릴 뻔했어요 (I almost forgot). This pattern always implies the event did NOT actually happen — it was narrowly avoided. It often conveys relief (for bad things avoided) or regret (for good things missed): 합격할 뻔했어요 (I almost passed — but didn't).",
+      "tip": "-(으)ㄹ 뻔했다 with negative outcomes = relief ('Whew, I almost fell!'). With positive outcomes = regret ('I almost won, but didn't'). The key: the event did NOT happen.",
+      "examples": [
+        { "ko": "차에 부딪힐 뻔했어요", "en": "I almost got hit by a car", "highlight": "부딪힐 뻔했어요" },
+        { "ko": "비행기를 놓칠 뻔했어요", "en": "I almost missed the flight", "highlight": "놓칠 뻔했어요" },
+        { "ko": "깜빡 잊어버릴 뻔했어요", "en": "I almost completely forgot", "highlight": "잊어버릴 뻔했어요" },
+        { "ko": "웃음이 나올 뻔했어요", "en": "I almost burst out laughing", "highlight": "나올 뻔했어요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'시험에 떨어질 뻔했어요' means:",
+          "options": ["I almost failed the exam (but passed)", "I failed the exam", "I will almost fail the exam"],
+          "correctIndex": 0,
+          "explanation": "-(으)ㄹ 뻔했다 means it almost happened but didn't. So the speaker almost failed but in the end passed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does -(으)ㄹ 뻔했다 mean the event actually happened?",
+          "options": ["No — it almost happened but did NOT", "Yes — it happened", "It depends on context"],
+          "correctIndex": 0,
+          "explanation": "-(으)ㄹ 뻔했다 always means the event was narrowly avoided — it did NOT actually happen. That's what makes it a 'near miss.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I almost cried'?",
+          "options": ["울 뻔했어요", "울을 뻔했어요", "울기 뻔했어요"],
+          "correctIndex": 0,
+          "explanation": "울다 has stem 울 (ㄹ ending). ㄹ stems already end in ㄹ, so just add 뻔했다: 울 뻔했어요."
+        }
+      ]
+    },
+    {
+      "sectionId": "pretending-cheok",
+      "title": "Pretending: -는 척하다",
+      "explanation": "-는 척하다 means 'to pretend to' or 'to act as if.' The verb takes its modifier form before 척하다: present action verbs use -는 척하다, past uses -(으)ㄴ 척하다, descriptive verbs use -(으)ㄴ 척하다. 모르는 척하다 (to pretend not to know). 자는 척하다 (to pretend to be sleeping). 안 들은 척하다 (to pretend not to have heard). 바쁜 척하다 (to pretend to be busy). The pattern always implies that the reality is different from the pretense: 아픈 척했어요 (pretended to be sick — but wasn't really sick). 관심 없는 척했어요 (pretended to be uninterested — but was actually interested). 척 can also be written as 체: 모르는 체하다 = 모르는 척하다.",
+      "tip": "Match the modifier form to the tense/type: action verb present = -는 척, action verb past = -(으)ㄴ 척, descriptive verb = -(으)ㄴ 척. These are the same modifier rules as relative clauses.",
+      "examples": [
+        { "ko": "모르는 척하지 마세요", "en": "Don't pretend you don't know", "highlight": "모르는 척" },
+        { "ko": "자는 척했는데 엄마가 알았어요", "en": "I pretended to sleep, but mom knew", "highlight": "자는 척" },
+        { "ko": "괜찮은 척했지만 사실 슬펐어요", "en": "I pretended to be fine, but actually I was sad", "highlight": "괜찮은 척" },
+        { "ko": "안 들은 척하고 지나갔어요", "en": "I pretended not to hear and walked past", "highlight": "안 들은 척" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'pretend to be busy'?",
+          "options": ["바쁜 척하다", "바쁘는 척하다", "바쁠 척하다"],
+          "correctIndex": 0,
+          "explanation": "바쁘다 is a descriptive verb. Descriptive verbs use -(으)ㄴ for the present modifier: 바쁘 → 바쁜. So: 바쁜 척하다."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'그 사람은 부자인 척해요' means:",
+          "options": ["That person pretends to be rich", "That person is rich", "That person wants to be rich"],
+          "correctIndex": 0,
+          "explanation": "부자인 척하다 = pretend to be rich. 인 is the modifier form of 이다 (to be). The person is NOT actually rich but acts as if they are."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What modifier form goes before 척 for 먹다 (to eat) in present tense?",
+          "options": ["먹는 척 (using -는)", "먹은 척 (using -(으)ㄴ)", "먹을 척 (using -(으)ㄹ)"],
+          "correctIndex": 0,
+          "explanation": "먹다 is an action verb. For present tense, action verbs use -는 before 척: 먹는 척하다 (pretend to eat / pretend to be eating)."
+        }
+      ]
+    }
+  ]
+}

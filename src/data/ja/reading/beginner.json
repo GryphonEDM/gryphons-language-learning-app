@@ -1,0 +1,121 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "私の家族",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "私の家族は四人です。父と母と姉と私です。父は会社員で、母は先生です。姉の名前はゆきです。姉は二十二歳で、大学生です。私は十九歳です。私たちは東京に住んでいます。家には猫が一匹います。名前はたまです。私は家族がとても好きです。",
+      "wordGlossary": {
+        "家族": "family",
+        "父": "father",
+        "母": "mother",
+        "姉": "older sister",
+        "会社員": "office worker",
+        "先生": "teacher",
+        "大学生": "university student",
+        "住んでいます": "live/reside",
+        "猫": "cat",
+        "好き": "like/love"
+      },
+      "questions": [
+        {
+          "question": "お父さんの仕事は何ですか？",
+          "options": ["先生です。", "会社員です。", "医者です。", "料理人です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、父は会社員だと書いてあります。"
+        },
+        {
+          "question": "家族は何人ですか？",
+          "options": ["三人です。", "四人です。", "五人です。", "二人です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、家族は四人だと書いてあります。"
+        },
+        {
+          "question": "猫の名前は何ですか？",
+          "options": ["ゆきです。", "たまです。", "みけです。", "ももです。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、猫の名前はたまだと書いてあります。"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "私の一日",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "私は毎朝七時に起きます。まず顔を洗って、歯を磨きます。朝ごはんはパンと牛乳です。八時にバスで学校に行きます。学校は三時に終わります。学校が終わったら、家に帰って宿題をします。夜は家族と一緒にご飯を食べます。ご飯の後、少しテレビを見ます。十時に寝ます。",
+      "wordGlossary": {
+        "起きます": "get up/wake up",
+        "顔を洗って": "wash one's face",
+        "歯を磨きます": "brush teeth",
+        "朝ごはん": "breakfast",
+        "バス": "bus",
+        "学校": "school",
+        "終わります": "finish/end",
+        "宿題": "homework",
+        "夜": "evening/night",
+        "寝ます": "go to sleep"
+      },
+      "questions": [
+        {
+          "question": "何時に起きますか？",
+          "options": ["六時です。", "七時です。", "八時です。", "九時です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、七時に起きると書いてあります。"
+        },
+        {
+          "question": "学校にどうやって行きますか？",
+          "options": ["歩いて行きます。", "バスで行きます。", "自転車で行きます。", "電車で行きます。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、バスで学校に行くと書いてあります。"
+        },
+        {
+          "question": "学校が終わったら何をしますか？",
+          "options": ["運動をします。", "宿題をします。", "友達に会います。", "ゲームをします。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、学校が終わったら家に帰って宿題をすると書いてあります。"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "私の学校",
+      "titleEn": "My School",
+      "difficulty": "A1",
+      "text": "私の学校は大きいです。教室がたくさんあります。私のクラスには三十人の学生がいます。私の好きな科目は数学です。数学の先生はとても面白いです。昼ごはんは食堂で食べます。学校には図書館もあります。放課後、友達とサッカーをします。私は学校が好きです。",
+      "wordGlossary": {
+        "大きい": "big/large",
+        "教室": "classroom",
+        "学生": "student",
+        "科目": "subject",
+        "数学": "mathematics",
+        "面白い": "interesting/funny",
+        "食堂": "cafeteria",
+        "図書館": "library",
+        "放課後": "after school",
+        "友達": "friend"
+      },
+      "questions": [
+        {
+          "question": "好きな科目は何ですか？",
+          "options": ["英語です。", "数学です。", "国語です。", "理科です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、好きな科目は数学だと書いてあります。"
+        },
+        {
+          "question": "昼ごはんはどこで食べますか？",
+          "options": ["教室で食べます。", "食堂で食べます。", "外で食べます。", "家で食べます。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、昼ごはんは食堂で食べると書いてあります。"
+        },
+        {
+          "question": "放課後に何をしますか？",
+          "options": ["勉強をします。", "サッカーをします。", "本を読みます。", "家に帰ります。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、放課後に友達とサッカーをすると書いてあります。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping at the Market",
+  "nameHi": "बाज़ार में ख़रीदारी",
+  "icon": "🛍️",
+  "context": "You are shopping at a bustling bazaar in Jaipur. You want to buy some souvenirs and clothes. Time to bargain!",
+  "characters": {
+    "npc": { "name": "दुकानदार" },
+    "player": { "name": "आप" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "आइए आइए! अंदर आइए। क्या चाहिए आपको? बहुत अच्छा माल है हमारे पास।",
+      "translation": "Come, come! Come inside. What do you need? We have very good stuff."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the shopkeeper you want to look at scarves or shawls.",
+      "acceptedResponses": [
+        "नमस्ते! मुझे दुपट्टे दिखाइए।",
+        "कुछ अच्छे शॉल दिखाइए।",
+        "मुझे स्कार्फ़ देखने हैं। दिखाइए।",
+        "भाई, कुछ अच्छे दुपट्टे दिखा दो।"
+      ],
+      "keyWords": ["दिखाइए", "दुपट्टे", "शॉल"],
+      "hint": "Use 'मुझे... दिखाइए' (show me) to ask to see items."
+    },
+    {
+      "speaker": "npc",
+      "text": "यह देखिए, बिलकुल असली रेशम का है। बहुत सुंदर है। आपको कौन सा रंग पसंद है?",
+      "translation": "Look at this, it's pure silk. Very beautiful. Which color do you like?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him which color you prefer.",
+      "acceptedResponses": [
+        "मुझे नीला रंग पसंद है। नीला दिखाइए।",
+        "लाल रंग का दिखाइए।",
+        "कोई हरे रंग का है? हरा दिखाइए।",
+        "यह नारंगी वाला अच्छा है। और कोई रंग है?"
+      ],
+      "keyWords": ["रंग", "पसंद", "दिखाइए"],
+      "hint": "Say your color with 'मुझे... रंग पसंद है' — नीला (blue), लाल (red), हरा (green)."
+    },
+    {
+      "speaker": "npc",
+      "text": "यह रहा। बहुत ख़ूबसूरत है न? इसका दाम पंद्रह सौ रुपये है।",
+      "translation": "Here it is. Very beautiful, right? The price is fifteen hundred rupees."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say it's too expensive and offer a lower price.",
+      "acceptedResponses": [
+        "पंद्रह सौ? नहीं भाई, बहुत महँगा है। पाँच सौ दूँगा।",
+        "इतना महँगा? कुछ कम कीजिए। छह सौ ठीक रहेगा।",
+        "भाई, यह तो बहुत ज़्यादा है। पाँच सौ में दे दो।",
+        "नहीं, बहुत महँगा है। सात सौ में दे दीजिए।"
+      ],
+      "keyWords": ["महँगा", "कम", "सौ"],
+      "hint": "Say 'बहुत महँगा है' (too expensive) and offer a lower price with '... में दे दो'."
+    },
+    {
+      "speaker": "npc",
+      "text": "अरे साहब, इतने में तो ख़रीदते हैं हम! चलिए, आपके लिए बारह सौ, आख़िरी दाम।",
+      "translation": "Oh sir, that's our buying price! Okay, twelve hundred for you, final price."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Continue bargaining — suggest a price in between.",
+      "acceptedResponses": [
+        "बारह सौ भी ज़्यादा है। आठ सौ दे दूँगा, पक्का।",
+        "नहीं भाई, आठ सौ लो। बस इतना ही दे सकता हूँ।",
+        "चलो नौ सौ कर लो, ठीक है?",
+        "दस सौ से ज़्यादा नहीं दे सकता। दस सौ में दे दो।"
+      ],
+      "keyWords": ["सौ", "दे दूँगा", "कर लो"],
+      "hint": "Offer a middle price: 'आठ सौ दे दूँगा' or 'नौ सौ कर लो'."
+    },
+    {
+      "speaker": "npc",
+      "text": "चलो भाई, आप अच्छे आदमी हैं। एक हज़ार में दे देता हूँ। फ़ाइनल!",
+      "translation": "Alright brother, you're a good person. I'll give it for one thousand. Final!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Agree to the price or ask if he can include something extra.",
+      "acceptedResponses": [
+        "ठीक है, एक हज़ार पक्का। दे दीजिए।",
+        "चलो ठीक है। एक हज़ार, लेकिन अच्छे से पैक कर देना।",
+        "ओके, एक हज़ार। और एक छोटा वाला भी दे दो साथ में।",
+        "एक हज़ार ठीक है। ले लेता हूँ।"
+      ],
+      "keyWords": ["ठीक", "हज़ार", "दे दीजिए"],
+      "hint": "Agree with 'ठीक है' and confirm 'एक हज़ार' or ask for a bonus item."
+    },
+    {
+      "speaker": "npc",
+      "text": "बहुत बढ़िया! कैश देंगे या UPI?",
+      "translation": "Wonderful! Will you pay cash or UPI?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how you will pay.",
+      "acceptedResponses": [
+        "कैश दे देता हूँ। यह लीजिए एक हज़ार रुपये।",
+        "UPI से पेमेंट कर दूँ? QR कोड दिखाइए।",
+        "कैश है मेरे पास। यह रहे पैसे।",
+        "UPI कर देता हूँ। नंबर बताइए।"
+      ],
+      "keyWords": ["कैश", "UPI", "पैसे"],
+      "hint": "Say 'कैश दे देता हूँ' (I'll pay cash) or 'UPI से पेमेंट कर दूँ' (shall I pay by UPI?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "शुक्रिया भाई! फिर आइएगा। और दोस्तों को भी भेजिएगा!",
+      "translation": "Thank you brother! Come again. And send your friends too!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him and say goodbye.",
+      "acceptedResponses": [
+        "शुक्रिया भाई! बहुत अच्छा सामान है आपका। नमस्ते!",
+        "धन्यवाद! ज़रूर भेजूँगा दोस्तों को। नमस्ते!",
+        "शुक्रिया। अच्छी दुकान है आपकी। फिर मिलेंगे!",
+        "बहुत शुक्रिया भाई। नमस्ते!"
+      ],
+      "keyWords": ["शुक्रिया", "नमस्ते", "धन्यवाद"],
+      "hint": "Say 'शुक्रिया' or 'धन्यवाद' and 'नमस्ते' to say goodbye."
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "lessonId": "commands-imperatives",
+  "nameEn": "Commands & Imperatives",
+  "nameFr": "L'impératif",
+  "icon": "📢",
+  "tier": "A2",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "imperative-basics",
+      "title": "Forming Commands",
+      "explanation": "The imperative (l'impératif) is used to give commands, instructions, or advice. It only has three forms: tu (you, informal), nous (we/let's), and vous (you, formal/plural). You form it exactly like the present tense but drop the subject pronoun. Important rule: -ER verbs lose the -s in the tu form. So 'tu parles' becomes 'Parle!' not 'Parles!'. However, if the command is followed by 'y' or 'en', the -s returns: 'Vas-y!' (Go there!). Four common verbs have irregular imperative forms: être (sois/soyons/soyez), avoir (aie/ayons/ayez), savoir (sache/sachons/sachez), and vouloir (veuille/veuillons/veuillez). To make a command negative, use 'ne + verb + pas': 'Ne parlez pas!'",
+      "tip": "Remember the -ER verb trap: Mange! not Manges!, Parle! not Parles!, Écoute! not Écoutes! — but the -s sneaks back before y or en: Manges-en! Vas-y!",
+      "examples": [
+        { "fr": "Parle plus lentement!", "en": "Speak more slowly!", "highlight": "Parle" },
+        { "fr": "Finissons le travail!", "en": "Let's finish the work!", "highlight": "Finissons" },
+        { "fr": "Vendez votre voiture.", "en": "Sell your car.", "highlight": "Vendez" },
+        { "fr": "Vas-y!", "en": "Go there! / Go on!", "highlight": "Vas-y" },
+        { "fr": "Soyez patients!", "en": "Be patient!", "highlight": "Soyez" },
+        { "fr": "Ne mange pas ça!", "en": "Don't eat that!", "highlight": "Ne mange pas" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "Which is the correct tu-form imperative of 'manger' (to eat)?",
+          "options": ["Manges!", "Mange!", "Mangez!"],
+          "correctIndex": 1,
+          "explanation": "-ER verbs drop the -s in the tu imperative: Mange!, not Manges!"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Let's listen!' in French?",
+          "options": ["Écoutez!", "Écoute!", "Écoutons!"],
+          "correctIndex": 2,
+          "explanation": "The nous imperative form of écouter is Écoutons! — drop the subject 'nous' and keep the present tense ending."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "What is the vous-form imperative of 'finir' (to finish)?",
+          "options": ["Finissez!", "Finissons!", "Finis!"],
+          "correctIndex": 0,
+          "explanation": "-IR verbs follow the regular present tense endings: vous finissez → Finissez!"
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete the command: '___ la vérité!' (Tell the truth! — tu form of 'dire')",
+          "answer": "Dis",
+          "hint": "The tu-form imperative of 'dire' is irregular: Dis!",
+          "explanation": "Dire has the irregular present tense tu form 'tu dis', so the imperative is simply Dis!"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Don't run!' (tu form) in French?",
+          "options": ["Ne court pas!", "Ne cours pas!", "Cours pas!"],
+          "correctIndex": 1,
+          "explanation": "Negative imperative: Ne + verb (present tense tu form) + pas. Tu coures → Ne cours pas!"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which sentence correctly uses the -s before 'en'?",
+          "options": ["Mange-en!", "Manges-en!", "Mangez-en!"],
+          "correctIndex": 1,
+          "explanation": "When an -ER verb's tu imperative is followed by 'en' or 'y', the -s returns: Manges-en!"
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: '___ sage!' (Be good! — tu form of 'être')",
+          "answer": "Sois",
+          "hint": "Être has an irregular imperative: sois, soyons, soyez.",
+          "explanation": "Être is irregular in the imperative. The tu form is Sois, not 'es'."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Please wait' (formal/polite) using the vouloir imperative?",
+          "options": ["Veuille patienter.", "Veuillez patienter.", "Veuillons patienter."],
+          "correctIndex": 1,
+          "explanation": "Veuillez (vous form of vouloir imperative) is used in very formal polite requests: Veuillez patienter = Please wait."
+        }
+      ]
+    },
+    {
+      "sectionId": "imperative-pronouns",
+      "title": "Commands with Pronouns",
+      "explanation": "When you use object pronouns with imperative verbs, their position depends on whether the command is affirmative or negative. In affirmative commands, the pronoun comes AFTER the verb and is joined by a hyphen: 'Regarde-le!' (Look at him!). Note that 'me' and 'te' change to 'moi' and 'toi' after an affirmative command: 'Donne-moi!' (Give me!), 'Assieds-toi!' (Sit down!). When two pronouns follow an affirmative command, the order is verb-direct object-indirect object: 'Donne-le-moi!' (Give it to me!). In negative commands, the pronoun returns to its normal position before the verb: 'Ne me regarde pas!' (Don't look at me!), 'Ne lui parle pas!' (Don't talk to him/her!). Reflexive verbs follow the same rules: affirmative uses -toi/-vous/-nous after the verb (Lève-toi!), negative puts the reflexive pronoun before the verb (Ne te lève pas!).",
+      "tip": "Think of it as affirmative = pronoun jumps behind the verb with a hyphen, and me/te put on their formal clothes (moi/toi). Negative = everything goes back to normal order in front of the verb.",
+      "examples": [
+        { "fr": "Donne-moi le livre!", "en": "Give me the book!", "highlight": "Donne-moi" },
+        { "fr": "Écoute-nous!", "en": "Listen to us!", "highlight": "Écoute-nous" },
+        { "fr": "Ne lui parle pas!", "en": "Don't talk to him/her!", "highlight": "Ne lui parle pas" },
+        { "fr": "Lève-toi!", "en": "Get up!", "highlight": "Lève-toi" },
+        { "fr": "Dépêchez-vous!", "en": "Hurry up!", "highlight": "Dépêchez-vous" },
+        { "fr": "Donne-le-moi!", "en": "Give it to me!", "highlight": "Donne-le-moi" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Look at me!' (tu form) in French?",
+          "options": ["Me regarde!", "Regarde-moi!", "Regarde-me!"],
+          "correctIndex": 1,
+          "explanation": "In affirmative commands, the pronoun follows the verb with a hyphen, and 'me' becomes 'moi': Regarde-moi!"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Don't look at me!' (tu form) in French?",
+          "options": ["Ne regarde-moi pas!", "Regarde-moi pas!", "Ne me regarde pas!"],
+          "correctIndex": 2,
+          "explanation": "In negative commands, the pronoun returns to its normal position before the verb: Ne me regarde pas!"
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: '___!' meaning 'Sit down!' (vous form of s'asseoir)",
+          "answer": "Asseyez-vous",
+          "hint": "Reflexive affirmative command: verb + hyphen + reflexive pronoun. Vous form of s'asseoir is asseyez.",
+          "explanation": "Reflexive affirmative commands: Asseyez-vous! The reflexive pronoun comes after the verb with a hyphen."
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which is correct for 'Give it to me!' (tu form)?",
+          "options": ["Donne-moi-le!", "Donne-le-moi!", "Le-donne-moi!"],
+          "correctIndex": 1,
+          "explanation": "With two pronouns in an affirmative command, the order is verb-direct object-indirect object: Donne-le-moi!"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Don't get up!' (tu form — se lever)?",
+          "options": ["Ne te lève pas!", "Ne lève-toi pas!", "Lève-toi pas!"],
+          "correctIndex": 0,
+          "explanation": "In negative commands with reflexive verbs, the reflexive pronoun stays before the verb: Ne te lève pas!"
+        },
+        {
+          "type": "fill-blank",
+          "question": "Complete: '___ les!' meaning 'Listen to them!' (tu form of écouter)",
+          "answer": "Écoute-les",
+          "hint": "Affirmative command: verb + hyphen + pronoun. 'them' as a direct object is 'les'.",
+          "explanation": "Affirmative commands put the pronoun after the verb: Écoute-les! (Listen to them!)"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "How do you say 'Let's hurry up!' in French?",
+          "options": ["Dépêche-toi!", "Dépêchons-nous!", "Dépêchez-vous!"],
+          "correctIndex": 1,
+          "explanation": "The nous form of reflexive s'dépêcher in the imperative is Dépêchons-nous! (Let's hurry up!)"
+        },
+        {
+          "type": "multiple-choice",
+          "question": "Which sentence correctly uses a pronoun in a negative command?",
+          "options": ["Ne parle-lui pas!", "Ne lui parle pas!", "Parle-lui pas!"],
+          "correctIndex": 1,
+          "explanation": "In negative commands, the indirect object pronoun 'lui' goes before the verb in normal order: Ne lui parle pas!"
+        }
+      ]
+    }
+  ]
+}

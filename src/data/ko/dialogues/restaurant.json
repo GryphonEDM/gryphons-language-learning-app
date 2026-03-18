@@ -1,0 +1,115 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameKo": "식당에서",
+  "icon": "🍽️",
+  "context": "You are at a Korean restaurant. A server comes to take your order.",
+  "characters": {
+    "npc": { "name": "종업원" },
+    "player": { "name": "당신" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "어서 오세요! 몇 분이세요?",
+      "translation": "Welcome! How many people?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the server how many people are in your party.",
+      "acceptedResponses": [
+        "한 명이요.",
+        "두 명이요.",
+        "혼자예요.",
+        "두 사람이요."
+      ],
+      "keyWords": ["명", "혼자"],
+      "hint": "Use '한 명이요' (one person) or '두 명이요' (two people)."
+    },
+    {
+      "speaker": "npc",
+      "text": "네, 이쪽으로 앉으세요. 메뉴판 여기 있어요. 주문하시겠어요?",
+      "translation": "Yes, please sit here. Here's the menu. Would you like to order?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a Korean dish.",
+      "acceptedResponses": [
+        "비빔밥 하나 주세요.",
+        "불고기 하나 주세요.",
+        "김치찌개 하나 주세요.",
+        "된장찌개 하나 주세요."
+      ],
+      "keyWords": ["주세요"],
+      "hint": "Say the dish name followed by '하나 주세요' (one please)."
+    },
+    {
+      "speaker": "npc",
+      "text": "네, 알겠습니다. 음료는 뭘로 하시겠어요?",
+      "translation": "OK, understood. What would you like to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a drink.",
+      "acceptedResponses": [
+        "물 주세요.",
+        "콜라 하나 주세요.",
+        "사이다 주세요.",
+        "맥주 한 잔 주세요."
+      ],
+      "keyWords": ["주세요"],
+      "hint": "Say the drink name followed by '주세요' (please give me)."
+    },
+    {
+      "speaker": "npc",
+      "text": "혹시 매운 음식 괜찮으세요? 김치가 좀 매울 수 있어요.",
+      "translation": "Is spicy food OK for you? The kimchi might be a bit spicy."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you can handle spicy food.",
+      "acceptedResponses": [
+        "네, 매운 음식 좋아해요!",
+        "괜찮아요, 매운 거 잘 먹어요.",
+        "조금 덜 맵게 해 주세요.",
+        "아, 안 맵게 해 주실 수 있어요?"
+      ],
+      "keyWords": ["매운", "괜찮"],
+      "hint": "Use '매운 음식 좋아해요' (I like spicy food) or '덜 맵게' (less spicy)."
+    },
+    {
+      "speaker": "npc",
+      "text": "네, 알겠습니다. 반찬은 더 필요하시면 말씀하세요.",
+      "translation": "OK, understood. If you need more side dishes, just let me know."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the side dishes or thank the server.",
+      "acceptedResponses": [
+        "감사합니다! 김치 좀 더 주세요.",
+        "네, 감사합니다.",
+        "반찬 종류가 뭐가 있어요?",
+        "네, 알겠습니다. 감사합니다."
+      ],
+      "keyWords": ["감사합니다"],
+      "hint": "Say '감사합니다' (thank you) or ask for more '김치' or '반찬'."
+    },
+    {
+      "speaker": "npc",
+      "text": "맛있게 드세요! 다 드시면 불고기도 추천해요.",
+      "translation": "Enjoy your meal! When you're done, I also recommend the bulgogi."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Respond to the recommendation and ask for the bill.",
+      "acceptedResponses": [
+        "감사합니다! 나중에 계산서 주세요.",
+        "네, 다음에 불고기 먹어 볼게요. 계산해 주세요.",
+        "맛있었어요! 얼마예요?",
+        "잘 먹겠습니다! 계산은 어디서 해요?"
+      ],
+      "keyWords": ["계산", "감사"],
+      "hint": "Use '계산해 주세요' (please give me the bill) or '얼마예요?' (how much is it?)."
+    }
+  ]
+}

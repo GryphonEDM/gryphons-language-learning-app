@@ -1,0 +1,122 @@
+{
+  "lessonId": "future-tense",
+  "nameEn": "Future Tense",
+  "nameEl": "Μέλλοντας",
+  "icon": "⏩",
+  "tier": "A2",
+  "prerequisites": ["past-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "simple-future",
+      "title": "Simple Future (Στιγμιαίος Μέλλοντας) — θα + aorist stem",
+      "explanation": "The simple future (στιγμιαίος μέλλοντας) expresses a single, completed future action — something that will happen once or at a specific point in time.\n\nFormation: θα + aorist stem + present-tense personal endings\n\nThe particle θα is invariable — it never changes. The verb takes the aorist (perfective) stem, then adds the same endings used in the present tense.\n\nExample — γράφω (to write), aorist stem γράψ-:\n  θα γράψω    — I will write\n  θα γράψεις  — you will write\n  θα γράψει   — he/she/it will write\n  θα γράψουμε — we will write\n  θα γράψετε  — you (pl.) will write\n  θα γράψουν  — they will write\n\nMany common verbs are irregular in the aorist stem:\n  πηγαίνω → πάω (stem: πα-): θα πάω, θα πας, θα πάει...\n  λέω → λέω (stem: π-): θα πω, θα πεις...\n  τρώω → φάω (stem: φα-): θα φάω...\n  βλέπω → δω (stem: δ-): θα δω...\n\nUse the simple future for:\n• A single future event: Αύριο θα πάω στη δουλειά. (Tomorrow I will go to work.)\n• Predictions: Θα βρέξει. (It will rain.)\n• Promises or decisions made at the moment of speaking.",
+      "tip": "The key signal is θα + an aorist (perfective) stem. If you know a verb's aorist, you can form the simple future automatically. Remember: irregular verbs often have very short aorist stems (πα-, φα-, δ-, π-).",
+      "examples": [
+        { "el": "Θα γράψω ένα γράμμα αύριο.", "en": "I will write a letter tomorrow.", "highlight": "Θα γράψω" },
+        { "el": "Θα πάω στην Αθήνα την Παρασκευή.", "en": "I will go to Athens on Friday.", "highlight": "Θα πάω" },
+        { "el": "Θα φάμε μαζί απόψε.", "en": "We will eat together tonight.", "highlight": "Θα φάμε" },
+        { "el": "Θα δεις κάτι εκπληκτικό.", "en": "You will see something amazing.", "highlight": "Θα δεις" },
+        { "el": "Θα τηλεφωνήσω σε λίγο.", "en": "I will call in a little while.", "highlight": "Θα τηλεφωνήσω" },
+        { "el": "Θα έρθουν νωρίς το πρωί.", "en": "They will come early in the morning.", "highlight": "Θα έρθουν" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I will write a letter tomorrow'?",
+          "options": ["Θα γράψω ένα γράμμα αύριο.", "Θα γράφω ένα γράμμα αύριο.", "Να γράψω ένα γράμμα αύριο."],
+          "correctIndex": 0,
+          "explanation": "The simple future uses θα + aorist stem: θα γράψω (from the aorist stem γράψ-). 'Θα γράφω' is the continuous future and 'Να γράψω' is the subjunctive, not a future statement."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the simple future form of 'πηγαίνω' (to go) for 'I will go'?",
+          "options": ["Θα πάω", "Θα πηγαίνω", "Θα πήγα"],
+          "correctIndex": 0,
+          "explanation": "Πηγαίνω is irregular — its aorist stem is πα-. So the simple future is θα πάω (I will go). 'Θα πηγαίνω' is the continuous future, and 'θα πήγα' is not a valid form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct simple future: 'They will come early.'",
+          "options": ["Θα έρθουν νωρίς.", "Θα ερχόντουσαν νωρίς.", "Θα έρχονται νωρίς."],
+          "correctIndex": 0,
+          "explanation": "The simple future of 'έρχομαι' (to come) is θα έρθω, θα έρθεις, θα έρθουν. 'Θα έρχονται' is continuous future, and 'ερχόντουσαν' is a past form."
+        }
+      ]
+    },
+    {
+      "sectionId": "continuous-future",
+      "title": "Continuous Future (Εξακολουθητικός Μέλλοντας) — θα + present subjunctive",
+      "explanation": "The continuous future (εξακολουθητικός μέλλοντας) expresses an action that will be ongoing, repeated, or habitual in the future.\n\nFormation: θα + present subjunctive (which looks identical to the present indicative)\n\nIn other words: θα + the regular present-tense form of the verb.\n\nExample — γράφω (to write):\n  θα γράφω    — I will be writing\n  θα γράφεις  — you will be writing\n  θα γράφει   — he/she/it will be writing\n  θα γράφουμε — we will be writing\n  θα γράφετε  — you (pl.) will be writing\n  θα γράφουν  — they will be writing\n\nContrast with simple future:\n  Θα γράψω ένα γράμμα.   → I will write a letter. (one completed action)\n  Θα γράφω κάθε μέρα.    → I will be writing every day. (ongoing habit)\n\nUse the continuous future for:\n• Ongoing future actions: Θα γράφω όλο το απόγευμα. (I will be writing all afternoon.)\n• Future habits or routines: Θα τρώμε μαζί κάθε Κυριακή. (We will eat together every Sunday.)\n• Situations that will continue into the future.",
+      "tip": "Because the continuous future looks exactly like the present tense (same endings, same stem), the word θα is your only signal that this is future, not present. Context and time expressions (e.g., αύριο, κάθε μέρα) also help.",
+      "examples": [
+        { "el": "Θα γράφω κάθε μέρα στο ημερολόγιό μου.", "en": "I will be writing in my diary every day.", "highlight": "Θα γράφω" },
+        { "el": "Το καλοκαίρι θα κολυμπάμε στη θάλασσα.", "en": "In summer we will be swimming in the sea.", "highlight": "θα κολυμπάμε" },
+        { "el": "Θα δουλεύει στο νέο γραφείο από τον Ιανουάριο.", "en": "He will be working at the new office from January.", "highlight": "Θα δουλεύει" },
+        { "el": "Θα μαθαίνεις ελληνικά για πολλά χρόνια.", "en": "You will be learning Greek for many years.", "highlight": "Θα μαθαίνεις" },
+        { "el": "Θα τρώμε μαζί κάθε Κυριακή.", "en": "We will be eating together every Sunday.", "highlight": "Θα τρώμε" },
+        { "el": "Θα σκέφτομαι πάντα αυτή τη στιγμή.", "en": "I will always be thinking of this moment.", "highlight": "Θα σκέφτομαι" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'I will be writing every day'? (ongoing future habit)",
+          "options": ["Θα γράφω κάθε μέρα.", "Θα γράψω κάθε μέρα.", "Γράφω κάθε μέρα."],
+          "correctIndex": 0,
+          "explanation": "The continuous future uses θα + present stem (θα γράφω). Using the aorist stem (θα γράψω) would express a single future action. Without θα, it is simply the present tense."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She will be working at the new office'? (ongoing situation)",
+          "options": ["Θα δουλεύει στο νέο γραφείο.", "Θα δουλέψει στο νέο γραφείο.", "Δουλεύει στο νέο γραφείο."],
+          "correctIndex": 0,
+          "explanation": "'Θα δουλεύει' is the continuous future (θα + present-tense form), expressing an ongoing future situation. 'Θα δουλέψει' (aorist stem) implies a single completed event. Without θα, it is present tense."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is an example of the continuous future (εξακολουθητικός μέλλοντας)?",
+          "options": ["Θα μαθαίνεις ελληνικά για πολλά χρόνια.", "Θα μάθεις ελληνικά σύντομα.", "Μαθαίνεις ελληνικά τώρα."],
+          "correctIndex": 0,
+          "explanation": "'Θα μαθαίνεις' uses θα + the present stem, expressing a continuing future activity. 'Θα μάθεις' uses the aorist stem (single future completion). 'Μαθαίνεις' without θα is the present tense."
+        }
+      ]
+    },
+    {
+      "sectionId": "going-to-future",
+      "title": "Near Future & Intentions — πρόκειται να, θέλω να, μπορώ να, πρέπει να",
+      "explanation": "Greek has several constructions for expressing plans, intentions, and near-future events using να (a subjunctive particle) plus modal or semi-modal verbs.\n\n1. ΠΡΌΚΕΙΤΑΙ ΝΑ + subjunctive — 'to be going to' (planned/imminent event)\n   Πρόκειται να φύγω αύριο.  — I am going to leave tomorrow.\n   This is the closest equivalent to English 'going to'. It stresses that something is planned or about to happen.\n\n2. ΘΑ ΠΑΩ ΝΑ / ΜΕ ΤΟ ΝΑ — Near future nuances\n   'Με το να + subjunctive' expresses 'as soon as / upon doing' in formal/written Greek.\n\n3. MODAL VERBS + ΝΑ + subjunctive:\n   θέλω να    — I want to    (desire/intention)\n   μπορώ να   — I can / I am able to  (ability/possibility)\n   πρέπει να  — I must / I have to  (obligation/necessity)\n\n   These modals are followed by να + the subjunctive form of the main verb.\n   Θέλω να φάω.    — I want to eat.\n   Μπορώ να έρθω.  — I can come. / I am able to come.\n   Πρέπει να πάω.  — I must go. / I have to go.\n\n   'Πρέπει' is impersonal (no subject pronoun changes it); the person is shown by the να-verb:\n   Πρέπει να πας.   — You must go.\n   Πρέπει να πάμε.  — We must go.\n\nAll of these constructions use the subjunctive mood after να, which looks the same as the present indicative for most verbs (though the aorist subjunctive is also common for single actions).",
+      "tip": "Memorise the trio: θέλω να (want to), μπορώ να (can), πρέπει να (must). They all follow the same pattern: modal + να + verb. 'Πρέπει' never changes form — it is always πρέπει regardless of subject.",
+      "examples": [
+        { "el": "Πρόκειται να ταξιδέψω στην Ελλάδα τον Αύγουστο.", "en": "I am going to travel to Greece in August.", "highlight": "Πρόκειται να" },
+        { "el": "Πρόκειται να ανοίξει ένα νέο εστιατόριο στη γειτονιά.", "en": "A new restaurant is going to open in the neighbourhood.", "highlight": "Πρόκειται να" },
+        { "el": "Θέλω να μάθω ελληνικά.", "en": "I want to learn Greek.", "highlight": "Θέλω να" },
+        { "el": "Μπορώ να σε βοηθήσω αύριο.", "en": "I can help you tomorrow.", "highlight": "Μπορώ να" },
+        { "el": "Πρέπει να φύγουμε τώρα.", "en": "We must leave now.", "highlight": "Πρέπει να" },
+        { "el": "Πρέπει να πας στο γιατρό.", "en": "You have to go to the doctor.", "highlight": "Πρέπει να" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I am going to leave tomorrow' using the 'going to' construction?",
+          "options": ["Πρόκειται να φύγω αύριο.", "Θα φύγω αύριο.", "Φεύγω αύριο."],
+          "correctIndex": 0,
+          "explanation": "'Πρόκειται να + subjunctive' is the Greek equivalent of 'going to' — it stresses a planned or imminent event. 'Θα φύγω' is also future but less emphatic about planning. 'Φεύγω' alone is present tense (though it can imply near future in context)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I want to learn Greek'?",
+          "options": ["Θέλω να μάθω ελληνικά.", "Θέλω μάθω ελληνικά.", "Θέλω να μαθαίνω ελληνικά τώρα."],
+          "correctIndex": 0,
+          "explanation": "Modal verbs in Greek require να before the subjunctive: θέλω να μάθω. You cannot omit να. 'Θέλω να μαθαίνω' uses the present subjunctive and is not wrong but implies an ongoing wish; for a simple intention 'θέλω να μάθω' (aorist subjunctive) is the natural choice."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'You must go to the doctor' in Greek?",
+          "options": ["Πρέπει να πας στο γιατρό.", "Πρέπεις να πας στο γιατρό.", "Πρέπει να πάτε στο γιατρό."],
+          "correctIndex": 0,
+          "explanation": "'Πρέπει' is impersonal and never changes form. The person is shown by the να-verb: πρέπει να πας (you must go, singular). 'Πρέπεις' is not a valid Greek form. 'Πρέπει να πάτε' means 'you (plural) must go' — correct grammar but refers to more than one person."
+        }
+      ]
+    }
+  ]
+}

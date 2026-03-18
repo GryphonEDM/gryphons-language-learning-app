@@ -1,0 +1,116 @@
+{
+  "lessonId": "passive-voice",
+  "nameEn": "Passive Voice",
+  "nameAr": "المبني للمجهول",
+  "icon": "🔄",
+  "tier": "B2",
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "forming-passive-past",
+      "title": "Passive Voice in the Past Tense",
+      "explanation": "Arabic forms the passive voice (المَبْنِيّ لِلْمَجْهُول) by changing the internal vowels of the verb — no auxiliary verb is needed. For the past tense, the pattern changes from فَعَلَ (fa'ala) to فُعِلَ (fu'ila): the first vowel becomes damma (ُ) and the vowel before the last root letter becomes kasra (ِ). For example: كَتَبَ (he wrote) becomes كُتِبَ (it was written), فَتَحَ (he opened) becomes فُتِحَ (it was opened), and عَلِمَ (he knew) becomes عُلِمَ (it was known). The subject of the passive verb is called نَائِب الفَاعِل (the deputy subject) — it is the thing that was acted upon and takes the nominative case. The original agent (doer) is not mentioned. So كُتِبَ الدَّرْسُ means 'The lesson was written' — الدَّرْسُ is the deputy subject in the nominative.",
+      "tip": "For the passive past: change the first vowel to damma and the second-to-last vowel to kasra. فَعَلَ → فُعِلَ. This internal vowel change is the hallmark of Arabic passive — no helping verb needed.",
+      "examples": [
+        { "ar": "كُتِبَ الدَّرْسُ", "en": "The lesson was written.", "highlight": "كُتِبَ" },
+        { "ar": "فُتِحَ البَابُ", "en": "The door was opened.", "highlight": "فُتِحَ" },
+        { "ar": "أُكِلَ الطَّعَامُ", "en": "The food was eaten.", "highlight": "أُكِلَ" },
+        { "ar": "قُرِئَ الكِتَابُ", "en": "The book was read.", "highlight": "قُرِئَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the passive past tense of كَتَبَ (he wrote)?",
+          "options": ["كُتِبَ", "كَتَبَ", "يُكْتَبُ"],
+          "correctIndex": 0,
+          "explanation": "The passive past of كَتَبَ is كُتِبَ — the first vowel changes to damma (كُ) and the second vowel changes to kasra (تِ). This follows the pattern فَعَلَ → فُعِلَ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In كُتِبَ الدَّرْسُ, what is الدَّرْسُ called grammatically?",
+          "options": ["نَائِب الفَاعِل (deputy subject)", "مَفْعُول بِهِ (direct object)", "فَاعِل (subject/agent)"],
+          "correctIndex": 0,
+          "explanation": "In a passive sentence, the thing acted upon becomes the نَائِب الفَاعِل (deputy subject). It takes the nominative case, just like a regular subject. The original agent is not mentioned."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does Arabic form the passive voice differently from English?",
+          "options": ["By changing internal vowels, not by using auxiliary verbs", "By adding 'was' before the verb", "By adding a prefix to the verb"],
+          "correctIndex": 0,
+          "explanation": "Arabic forms the passive through internal vowel changes on the verb itself. English uses auxiliary verbs ('was written', 'is opened'), but Arabic changes فَعَلَ to فُعِلَ without any additional words."
+        }
+      ]
+    },
+    {
+      "sectionId": "forming-passive-present",
+      "title": "Passive Voice in the Present Tense",
+      "explanation": "For the present tense passive, the vowel pattern of the imperfect verb changes: the prefix vowel becomes damma (ُ) and the vowel before the last root letter becomes fatha (َ). The pattern يَفْعَلُ / يَفْعِلُ / يَفْعُلُ becomes يُفْعَلُ (yuf'alu). For example: يَكْتُبُ (he writes) becomes يُكْتَبُ (it is being written), يَفْتَحُ (he opens) becomes يُفْتَحُ (it is being opened). Form II passive present: يُفَعَّلُ (from يُفَعِّلُ). Form IV passive present: يُفْعَلُ (from يُفْعِلُ). The passive present can express ongoing passive actions or general truths: يُدَرَّسُ هَذَا الكِتَابُ فِي الجَامِعَةِ (This book is taught at the university). Combined with سَـ or سَوْفَ, it forms the future passive: سَيُكْتَبُ (it will be written).",
+      "tip": "For the passive present: damma on the prefix letter and fatha before the last root letter. يَفْعَلُ → يُفْعَلُ. This is the mirror pattern of the past passive (damma then kasra).",
+      "examples": [
+        { "ar": "يُكْتَبُ الدَّرْسُ", "en": "The lesson is (being) written.", "highlight": "يُكْتَبُ" },
+        { "ar": "يُفْتَحُ البَابُ صَبَاحًا", "en": "The door is opened in the morning.", "highlight": "يُفْتَحُ" },
+        { "ar": "تُدَرَّسُ اللُّغَةُ العَرَبِيَّةُ هُنَا", "en": "Arabic is taught here.", "highlight": "تُدَرَّسُ" },
+        { "ar": "سَيُبْنَى مُسْتَشْفًى جَدِيدٌ", "en": "A new hospital will be built.", "highlight": "سَيُبْنَى" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the passive present tense of يَكْتُبُ (he writes)?",
+          "options": ["يُكْتَبُ", "كُتِبَ", "يَكْتُبُ"],
+          "correctIndex": 0,
+          "explanation": "The passive present of يَكْتُبُ is يُكْتَبُ — the prefix يَـ becomes يُـ (damma) and the vowel before the last letter becomes fatha: يُكْتَبُ (it is written). This follows the pattern يُفْعَلُ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'it will be written' using سَـ?",
+          "options": ["سَيُكْتَبُ", "سَيَكْتُبُ", "سَكُتِبَ"],
+          "correctIndex": 0,
+          "explanation": "Attach سَـ to the passive present tense: سَـ + يُكْتَبُ = سَيُكْتَبُ (it will be written). سَيَكْتُبُ would be active: 'he will write.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the passive present, what vowel appears on the prefix letter?",
+          "options": ["Damma (ُ)", "Fatha (َ)", "Kasra (ِ)"],
+          "correctIndex": 0,
+          "explanation": "The passive present always has damma on the prefix letter (يُـ, تُـ, أُـ, نُـ). This is the clearest marker distinguishing passive from active in the present tense."
+        }
+      ]
+    },
+    {
+      "sectionId": "derived-form-passives",
+      "title": "Passive in Derived Forms and Usage",
+      "explanation": "The passive applies to all verb forms, not just Form I. For derived forms, the same principle holds: damma on the first syllable and kasra/fatha patterns adjust accordingly. Form II: عَلَّمَ → عُلِّمَ (was taught), يُعَلَّمُ → يُعَلَّمُ (is taught). Form IV: أَرْسَلَ → أُرْسِلَ (was sent), يُرْسِلُ → يُرْسَلُ (is sent). Form VII (اِنْفَعَلَ) and Form VIII (اِفْتَعَلَ) often already carry passive or reflexive meaning, so they rarely form a separate passive. Arabic prefers the passive when the agent is unknown, unimportant, or deliberately concealed. It is commonly used in news reports, academic writing, and formal contexts: ذُكِرَ أَنَّ... (It was mentioned that...), يُعْتَقَدُ أَنَّ... (It is believed that...).",
+      "tip": "Forms VII and VIII already have passive/reflexive meanings, so they rarely need a separate passive form. In news Arabic, passive voice is extremely common: اِعْتُقِلَ (was arrested), أُعْلِنَ (was announced), قُتِلَ (was killed).",
+      "examples": [
+        { "ar": "عُلِّمَ الأَطْفَالُ القِرَاءَةَ", "en": "The children were taught reading. (Form II passive)", "highlight": "عُلِّمَ" },
+        { "ar": "أُرْسِلَتِ الرِّسَالَةُ", "en": "The letter was sent. (Form IV passive)", "highlight": "أُرْسِلَتِ" },
+        { "ar": "يُعْتَقَدُ أَنَّهُ مُسَافِرٌ", "en": "It is believed that he is traveling.", "highlight": "يُعْتَقَدُ" },
+        { "ar": "اِعْتُقِلَ المُشْتَبَهُ بِهِ", "en": "The suspect was arrested. (Form VIII passive)", "highlight": "اِعْتُقِلَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the passive past of the Form II verb عَلَّمَ (he taught)?",
+          "options": ["عُلِّمَ (he was taught)", "عَلَّمَ (he taught)", "تَعَلَّمَ (he learned)"],
+          "correctIndex": 0,
+          "explanation": "The passive of Form II عَلَّمَ is عُلِّمَ — damma on the first letter and kasra on the second root letter, with the shadda preserved. تَعَلَّمَ is Form V (reflexive), meaning 'he learned' — a different form entirely."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why are Form VII (اِنْفَعَلَ) verbs rarely used in the passive?",
+          "options": ["They already carry passive or reflexive meaning", "They cannot be conjugated", "They are only used in poetry"],
+          "correctIndex": 0,
+          "explanation": "Form VII (اِنْفَعَلَ) inherently expresses a passive or reflexive meaning. For example, اِنْكَسَرَ means 'it broke / was broken' from كَسَرَ (he broke). Since it already has passive meaning, forming another passive layer would be redundant."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In formal Arabic news, which voice is commonly used for reports?",
+          "options": ["Passive voice, when the agent is unknown or unimportant", "Active voice exclusively", "Imperative mood"],
+          "correctIndex": 0,
+          "explanation": "Passive voice is extremely common in Arabic news and formal writing. Phrases like ذُكِرَ أَنَّ (it was mentioned that), أُعْلِنَ (it was announced), and اِعْتُقِلَ (was arrested) appear regularly when the agent is unknown or not the focus."
+        }
+      ]
+    }
+  ]
+}

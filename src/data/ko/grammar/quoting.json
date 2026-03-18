@@ -1,0 +1,116 @@
+{
+  "lessonId": "quoting",
+  "nameEn": "Indirect Speech & Quoting",
+  "nameKo": "간접 화법",
+  "icon": "💬",
+  "tier": "B1",
+  "prerequisites": ["verb-conjugation"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "dago-statements",
+      "title": "Reporting Statements: -다고 하다",
+      "explanation": "To report what someone said (indirect speech), Korean uses quoting particles. For statements (declarative sentences), use -다고 하다. The form depends on the verb type and tense. Present tense: action verbs use -ㄴ/는다고 (간다고, 먹는다고), descriptive verbs use -다고 (크다고, 좋다고), 이다 uses -(이)라고. Past tense: -았/었다고 (갔다고, 먹었다고). Future: -(으)ㄹ 거라고 (갈 거라고). For example: '비가 온다' → 비가 온다고 했어요 (They said it's raining). '날씨가 좋다' → 날씨가 좋다고 했어요 (They said the weather is nice). 하다 can be replaced with other reporting verbs: 말하다 (to say/tell), 생각하다 (to think), 듣다 (to hear).",
+      "tip": "The key pattern: take the plain/diary form of the sentence, add -고 하다. For action verbs in present: -ㄴ다고 (vowel stem) or -는다고 (consonant stem). For adjectives: just -다고. Past always: -았/었다고.",
+      "examples": [
+        { "ko": "친구가 내일 간다고 했어요", "en": "My friend said they're going tomorrow", "highlight": "간다고" },
+        { "ko": "날씨가 춥다고 했어요", "en": "They said the weather is cold", "highlight": "춥다고" },
+        { "ko": "어제 비가 왔다고 들었어요", "en": "I heard that it rained yesterday", "highlight": "왔다고" },
+        { "ko": "그 사람이 선생님이라고 했어요", "en": "They said that person is a teacher", "highlight": "이라고" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you report '맛있다' (it's delicious) as indirect speech?",
+          "options": ["맛있다고 했어요", "맛있는다고 했어요", "맛있어고 했어요"],
+          "correctIndex": 0,
+          "explanation": "맛있다 is a descriptive verb. For descriptive verbs in present tense, just add -고 to the dictionary form: 맛있다 + 고 = 맛있다고."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Someone said '내일 비가 올 거야.' How do you report this?",
+          "options": ["내일 비가 올 거라고 했어요", "내일 비가 온다고 했어요", "내일 비가 올다고 했어요"],
+          "correctIndex": 0,
+          "explanation": "The original uses future tense (올 거야). In indirect speech, future statements use -(으)ㄹ 거라고: 올 거라고 했어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'친구가 한국 음식을 좋아한다고 했어요' means:",
+          "options": ["My friend said they like Korean food", "My friend said to like Korean food", "My friend asked if I like Korean food"],
+          "correctIndex": 0,
+          "explanation": "좋아한다고 is the indirect speech form of 좋아한다 (likes). -ㄴ다고 is used because 좋아하다 is an action verb. The sentence reports a statement, not a command or question."
+        }
+      ]
+    },
+    {
+      "sectionId": "questions-commands",
+      "title": "Reporting Questions and Commands: -냐고 / -(으)라고",
+      "explanation": "To report questions, use -냐고 하다 (or the more formal -느냐고). For all verb types, attach -냐고 to the stem: 가다 → 가냐고 (asked if [someone] goes), 좋다 → 좋냐고 (asked if it's good), 먹었다 → 먹었냐고 (asked if [someone] ate). To report commands or requests, use -(으)라고 하다: 가다 → 가라고 했어요 (told someone to go), 먹다 → 먹으라고 했어요 (told someone to eat). For polite requests being reported, -달라고 is used when the action benefits the speaker: 도와달라고 했어요 (asked someone to help them). Examples: '몇 시예요?' → 몇 시냐고 물어봤어요 (asked what time it is). '빨리 와!' → 빨리 오라고 했어요 (told someone to come quickly).",
+      "tip": "Think of it as: -다고 = reporting statements, -냐고 = reporting questions, -(으)라고 = reporting commands, -자고 = reporting suggestions ('let's...'). These four cover all sentence types in indirect speech.",
+      "examples": [
+        { "ko": "어디 가냐고 물어봤어요", "en": "They asked where I'm going", "highlight": "가냐고" },
+        { "ko": "밥 먹었냐고 했어요", "en": "They asked if I ate", "highlight": "먹었냐고" },
+        { "ko": "빨리 오라고 했어요", "en": "They told me to come quickly", "highlight": "오라고" },
+        { "ko": "조용히 하라고 했어요", "en": "They told me to be quiet", "highlight": "하라고" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you report the question '이거 뭐예요?' (What is this)?",
+          "options": ["이거 뭐냐고 물어봤어요", "이거 뭐라고 물어봤어요", "이거 뭐다고 물어봤어요"],
+          "correctIndex": 0,
+          "explanation": "To report a question, use -냐고. 뭐예요 (what is it) becomes 뭐냐고 in indirect speech: 이거 뭐냐고 물어봤어요 (asked what this is)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'선생님이 숙제를 하라고 했어요' means:",
+          "options": ["The teacher told us to do homework", "The teacher asked about homework", "The teacher said homework is done"],
+          "correctIndex": 0,
+          "explanation": "하라고 is the indirect speech form for commands: -(으)라고 하다. The teacher told/commanded to do homework."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle reports a suggestion ('let's...')?",
+          "options": ["-자고", "-냐고", "-(으)라고"],
+          "correctIndex": 0,
+          "explanation": "-자고 reports suggestions. '같이 가자' (Let's go together) → 같이 가자고 했어요 (suggested going together)."
+        }
+      ]
+    },
+    {
+      "sectionId": "shortened-quotes",
+      "title": "Shortened Quotation Forms: -대요, -래요, -냬요",
+      "explanation": "In everyday spoken Korean, the full indirect speech patterns are often shortened by contracting -다고 해요, -라고 해요, -냐고 해요 into shorter forms. Statements: -다고 해요 → -대요. 간다고 해요 → 간대요 (they say he's going). 좋다고 해요 → 좋대요 (they say it's good). 갔다고 해요 → 갔대요 (they say he went). Commands: -(으)라고 해요 → -(으)래요. 가라고 해요 → 가래요 (they say to go). 먹으라고 해요 → 먹으래요 (they say to eat). Questions: -냐고 해요 → -냬요. 가냐고 해요 → 가냬요 (they ask if going). Suggestions: -자고 해요 → -재요. 가자고 해요 → 가재요 (they suggest going). These shortened forms are extremely common in casual speech and are essential for sounding natural.",
+      "tip": "The contractions follow a simple pattern: remove 고 하 and merge what's left. -다고 해요 → -대요, -(으)라고 해요 → -(으)래요, -냐고 해요 → -냬요, -자고 해요 → -재요.",
+      "examples": [
+        { "ko": "내일 비가 온대요", "en": "They say it'll rain tomorrow (온다고 해요 → 온대요)", "highlight": "온대요" },
+        { "ko": "이거 맛있대요", "en": "They say this is delicious (맛있다고 해요 → 맛있대요)", "highlight": "맛있대요" },
+        { "ko": "빨리 오래요", "en": "They say to come quickly (오라고 해요 → 오래요)", "highlight": "오래요" },
+        { "ko": "같이 가재요", "en": "They suggest going together (가자고 해요 → 가재요)", "highlight": "가재요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the shortened form of '맛없다고 해요' (they say it's not tasty)?",
+          "options": ["맛없대요", "맛없래요", "맛없냬요"],
+          "correctIndex": 0,
+          "explanation": "Statements: -다고 해요 → -대요. So 맛없다고 해요 shortens to 맛없대요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'뭐 먹냬요' is the shortened form of:",
+          "options": ["뭐 먹냐고 해요", "뭐 먹다고 해요", "뭐 먹으라고 해요"],
+          "correctIndex": 0,
+          "explanation": "-냬요 is the contraction of -냐고 해요 (reported question). So 뭐 먹냬요 = they're asking what to eat."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'영화 보래요' means:",
+          "options": ["They say to watch a movie", "They say the movie is good", "They asked about a movie"],
+          "correctIndex": 0,
+          "explanation": "-래요 is the contraction of -(으)라고 해요 (reported command). 영화 보래요 = They say/tell us to watch a movie."
+        }
+      ]
+    }
+  ]
+}

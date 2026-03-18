@@ -1,0 +1,233 @@
+{
+  "lessonId": "commands-imperatives",
+  "nameEn": "Commands & Imperatives",
+  "nameEs": "Mandatos e Imperativos",
+  "icon": "📢",
+  "tier": "B1",
+  "prerequisites": ["present-tense", "pronouns"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "tu-affirmative",
+      "title": "Informal Affirmative Commands (tú)",
+      "explanation": "To tell a friend or family member to do something, use the affirmative tú command. For regular verbs, the form is identical to the third-person singular present tense (él/ella form): hablar → habla, comer → come, escribir → escribe. However, eight common verbs have irregular affirmative tú commands that must be memorized: decir → di, hacer → haz, ir → ve, poner → pon, salir → sal, ser → sé, tener → ten, venir → ven. These eight irregulars are sometimes remembered with the mnemonic 'Di Haz Ve Pon Sal Sé Ten Ven'. Note that subject pronouns are usually omitted in commands.",
+      "tip": "A handy trick: for regular verbs, just drop 'tú' from the present tense sentence and you have the command. 'Tú hablas' → '¡Habla!' The eight irregulars (di, haz, ve, pon, sal, sé, ten, ven) are extremely common — learn them as a set.",
+      "examples": [
+        { "es": "¡Habla más despacio!", "en": "Speak more slowly!", "highlight": "Habla" },
+        { "es": "Come tus verduras.", "en": "Eat your vegetables.", "highlight": "Come" },
+        { "es": "Escribe tu nombre aquí.", "en": "Write your name here.", "highlight": "Escribe" },
+        { "es": "¡Di la verdad!", "en": "Tell the truth!", "highlight": "Di" },
+        { "es": "Haz la tarea ahora.", "en": "Do the homework now.", "highlight": "Haz" },
+        { "es": "Ven conmigo.", "en": "Come with me.", "highlight": "Ven" },
+        { "es": "Pon el libro en la mesa.", "en": "Put the book on the table.", "highlight": "Pon" },
+        { "es": "Sal de la casa.", "en": "Leave the house.", "highlight": "Sal" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Your friend is speaking too quietly. Which command tells them to speak louder?",
+          "options": ["¡Habla más fuerte!", "¡Hablas más fuerte!", "¡Hablar más fuerte!"],
+          "correctIndex": 0,
+          "explanation": "The affirmative tú command of 'hablar' is 'habla' — the same as the él/ella present tense form. Never use the infinitive or the tú present form as a command."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (hacer) tu cama antes de salir. (Make your bed before leaving.)",
+          "acceptedAnswers": ["Haz"],
+          "hint": "'hacer' is one of the eight irregular tú commands",
+          "explanation": "hacer → haz (irregular). The eight irregular affirmative tú commands are: di, haz, ve, pon, sal, sé, ten, ven."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct affirmative tú command for 'comer' (to eat)?",
+          "options": ["come", "comes", "coma"],
+          "correctIndex": 0,
+          "explanation": "'comer' is regular, so its tú command equals the él/ella present form: com + e = come. 'coma' is the usted command form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (venir) a la fiesta esta noche. (Come to the party tonight.)",
+          "acceptedAnswers": ["Ven"],
+          "hint": "'venir' is one of the eight irregulars",
+          "explanation": "venir → ven (irregular tú command). Do not confuse with 'viene' (he/she comes)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You want your sibling to put away their backpack. Which sentence is correct?",
+          "options": ["Pon tu mochila en su lugar.", "Pone tu mochila en su lugar.", "Poner tu mochila en su lugar."],
+          "correctIndex": 0,
+          "explanation": "poner → pon (irregular tú command). 'Pone' is the él/ella present indicative, not a command; the infinitive 'poner' is never used as a command on its own."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (escribir) una carta a tu abuela. (Write a letter to your grandmother.)",
+          "acceptedAnswers": ["Escribe"],
+          "hint": "'escribir' is regular — use the él/ella present form",
+          "explanation": "escribir → escribe (regular tú command: escrib + e). Regular -IR verbs form tú commands just like their él/ella present tense."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of the following is NOT one of the eight irregular affirmative tú commands?",
+          "options": ["habla", "di", "haz", "ven"],
+          "correctIndex": 0,
+          "explanation": "'habla' is a regular tú command (él/ella form of hablar). The eight irregulars are: di, haz, ve, pon, sal, sé, ten, ven."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (salir) ahora o llegarás tarde. (Leave now or you'll be late.)",
+          "acceptedAnswers": ["Sal"],
+          "hint": "'salir' is one of the eight irregulars",
+          "explanation": "salir → sal (irregular tú command). The infinitive 'salir' would not be grammatically correct as a command here."
+        }
+      ]
+    },
+    {
+      "sectionId": "tu-negative",
+      "title": "Informal Negative Commands (tú)",
+      "explanation": "To tell someone NOT to do something with tú, use 'no' plus the present subjunctive tú form. To form the present subjunctive for most verbs: start with the yo present indicative, drop the -o, then add opposite vowel endings — -AR verbs get -e endings (hablar → hablo → habl- → no hables), and -ER/-IR verbs get -a endings (comer → como → com- → no comas; escribir → escribo → escrib- → no escribas). Stem-changing verbs keep their stem change in the subjunctive. Irregular yo-form verbs (like tener → tengo, decir → digo) use that irregular stem: no tengas, no digas.",
+      "tip": "Remember: affirmative tú commands use the él/ella present form, but negative tú commands use the subjunctive. This is the key difference — 'Habla' (speak!) vs. 'No hables' (don't speak!). The 'yo-form trick' makes forming the subjunctive easy: drop the -o from yo and swap the vowel.",
+      "examples": [
+        { "es": "No hables tan rápido.", "en": "Don't speak so fast.", "highlight": "hables" },
+        { "es": "No comas tanta azúcar.", "en": "Don't eat so much sugar.", "highlight": "comas" },
+        { "es": "No escribas con lápiz.", "en": "Don't write in pencil.", "highlight": "escribas" },
+        { "es": "No vayas solo.", "en": "Don't go alone.", "highlight": "vayas" },
+        { "es": "No tengas miedo.", "en": "Don't be afraid.", "highlight": "tengas" },
+        { "es": "No digas mentiras.", "en": "Don't tell lies.", "highlight": "digas" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Don't eat meat' to a friend (tú)?",
+          "options": ["No comas carne.", "No come carne.", "No comer carne."],
+          "correctIndex": 0,
+          "explanation": "Negative tú commands use the present subjunctive: comer → yo como → com- + as = comas. 'No come' is wrong (that is the affirmative command). 'No comer' uses the infinitive, which is not correct here."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (hablar) con la boca llena. (Don't talk with your mouth full.)",
+          "acceptedAnswers": ["hables"],
+          "hint": "Use the present subjunctive tú form: hablar → yo hablo → habl- + es",
+          "explanation": "hablar → yo hablo → drop -o → habl- + es = hables. -AR verbs take -e endings in the subjunctive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Your little brother is about to run into traffic. Which command is correct?",
+          "options": ["¡No corras!", "¡No corres!", "¡No correr!"],
+          "correctIndex": 0,
+          "explanation": "correr → yo corro → corr- + as = corras. Negative tú command: no corras. The form 'corres' is the present indicative tú, not a command."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (escribir) en las paredes. (Don't write on the walls.)",
+          "acceptedAnswers": ["escribas"],
+          "hint": "escribir → yo escribo → escrib- + as (opposite vowel for -IR verbs)",
+          "explanation": "escribir → yo escribo → drop -o → escrib- + as = escribas. -IR verbs also take -a endings in the subjunctive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'Don't go out tonight' to a friend?",
+          "options": ["No salgas esta noche.", "No sale esta noche.", "No sal esta noche."],
+          "correctIndex": 0,
+          "explanation": "salir → yo salgo → drop -o → salg- + as = salgas. Irregular yo forms carry over into the subjunctive stem. 'No sal' would be wrong because 'sal' is the affirmative command, not a negative one."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (tener) miedo del examen. (Don't be afraid of the exam.)",
+          "acceptedAnswers": ["tengas"],
+          "hint": "tener → yo tengo → drop -o → teng- + as",
+          "explanation": "tener → yo tengo → teng- + as = tengas. Because the yo form is irregular (tengo), the subjunctive stem is also irregular: teng-."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Compare: 'Habla más' vs. 'No hables más'. What is the difference?",
+          "options": [
+            "'Habla más' is an affirmative command (speak more); 'No hables más' is a negative command (don't speak more).",
+            "Both mean the same thing but 'no hables' is more polite.",
+            "'Habla' uses the subjunctive; 'hables' uses the indicative."
+          ],
+          "correctIndex": 0,
+          "explanation": "Affirmative tú commands use the él/ella indicative form (habla). Negative tú commands use 'no' + present subjunctive (no hables). The two forms are different and cannot be swapped."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (decir) eso nunca más. (Don't say that ever again.)",
+          "acceptedAnswers": ["digas"],
+          "hint": "decir → yo digo → drop -o → dig- + as",
+          "explanation": "decir → yo digo → dig- + as = digas. Another example of an irregular yo form giving an irregular subjunctive stem."
+        }
+      ]
+    },
+    {
+      "sectionId": "usted-ustedes",
+      "title": "Formal Commands (usted / ustedes)",
+      "explanation": "When speaking formally (to strangers, elders, or in professional settings), use usted (singular) or ustedes (plural). Both formal command forms always use the present subjunctive: for usted, use the present subjunctive él/ella form; for ustedes, use the present subjunctive ellos/ellas form. Formation: take the yo present indicative, drop -o, and add opposite vowel endings — -AR verbs: usted -e, ustedes -en (hablar → hable, hablen); -ER/-IR verbs: usted -a, ustedes -an (comer → coma, coman; escribir → escriba, escriban). The same yo-form trick applies for irregulars: tener → tengo → usted tenga, ustedes tengan. To make them negative, simply add 'no': no hable, no coman.",
+      "tip": "Unlike tú commands (which have separate affirmative and negative forms), usted/ustedes commands always use the subjunctive — both positive and negative. There is no separate form to memorize. Think: formal = always subjunctive.",
+      "examples": [
+        { "es": "Hable más despacio, por favor.", "en": "Please speak more slowly. (usted)", "highlight": "Hable" },
+        { "es": "Coman con nosotros.", "en": "Eat with us. (ustedes)", "highlight": "Coman" },
+        { "es": "Escriba su nombre aquí.", "en": "Write your name here. (usted)", "highlight": "Escriba" },
+        { "es": "No lleguen tarde.", "en": "Don't arrive late. (ustedes)", "highlight": "lleguen" },
+        { "es": "Tenga paciencia.", "en": "Have patience. (usted)", "highlight": "Tenga" },
+        { "es": "Vengan mañana.", "en": "Come tomorrow. (ustedes)", "highlight": "Vengan" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You are a doctor addressing a patient (usted). How do you say 'Take this medicine'?",
+          "options": ["Tome este medicamento.", "Toma este medicamento.", "Tomar este medicamento."],
+          "correctIndex": 0,
+          "explanation": "tomar → yo tomo → tom- + e = tome (usted command). 'Toma' is the informal tú command. In formal contexts always use the subjunctive form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (hablar) con el gerente si tiene alguna queja. (Speak with the manager if you have a complaint.) [usted]",
+          "acceptedAnswers": ["Hable"],
+          "hint": "hablar → yo hablo → habl- + e (usted subjunctive)",
+          "explanation": "hablar → yo hablo → habl- + e = hable. This is the usted affirmative command using the present subjunctive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A teacher tells the entire class (ustedes): 'Open your books.' Which is correct?",
+          "options": ["Abran sus libros.", "Abre sus libros.", "Abra sus libros."],
+          "correctIndex": 0,
+          "explanation": "abrir → yo abro → abr- + an = abran (ustedes command). 'Abre' is the informal tú command. 'Abra' is the usted (singular) command."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (llegar) tarde a la reunión. (Don't arrive late to the meeting.) [usted]",
+          "acceptedAnswers": ["llegue"],
+          "hint": "llegar → yo llego → llegu- + e. Note the spelling change g → gu before e",
+          "explanation": "llegar → yo llego → stem llegu- (the g needs a u before e to preserve the hard g sound) + e = llegue. No llegue = don't arrive (usted)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly tells a group of guests (ustedes) to 'sit down'?",
+          "options": ["Siéntense, por favor.", "Siéntate, por favor.", "Sientarse, por favor."],
+          "correctIndex": 0,
+          "explanation": "sentarse (to sit down) → ustedes command: siéntense (reflexive ustedes command with -se attached). 'Siéntate' is the informal tú reflexive command. Infinitives are not used as commands."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ (escribir) sus respuestas en papel. (Write your answers on paper.) [ustedes]",
+          "acceptedAnswers": ["Escriban"],
+          "hint": "escribir → yo escribo → escrib- + an (ustedes, -IR verb gets -an)",
+          "explanation": "escribir → yo escribo → escrib- + an = escriban. -IR verbs use -an for the ustedes command."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A hotel receptionist tells a guest (usted): 'Have a good night.' Which form is correct?",
+          "options": ["Tenga una buena noche.", "Ten una buena noche.", "Tiene una buena noche."],
+          "correctIndex": 0,
+          "explanation": "tener → yo tengo → teng- + a = tenga (usted command). 'Ten' is the irregular informal tú command. 'Tiene' is the present indicative, not a command."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "No ___ (hablar) entre ustedes durante el examen. (Don't talk among yourselves during the exam.) [ustedes]",
+          "acceptedAnswers": ["hablen"],
+          "hint": "hablar → habl- + en (ustedes subjunctive, -AR verb gets -en)",
+          "explanation": "hablar → yo hablo → habl- + en = hablen. To make a formal command negative, simply add 'no': no hablen."
+        }
+      ]
+    }
+  ]
+}

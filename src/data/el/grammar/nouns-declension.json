@@ -1,0 +1,227 @@
+{
+  "lessonId": "nouns-declension",
+  "nameEn": "Nouns & Gender",
+  "nameEl": "Ουσιαστικά και Γένος",
+  "icon": "📝",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "three-genders",
+      "title": "Three Genders in Greek",
+      "explanation": "Greek nouns have three genders: masculine (αρσενικό), feminine (θηλυκό), and neuter (ουδέτερο). The gender is shown by the definite article placed before the noun: ο for masculine, η for feminine, and το for neuter. Masculine nouns typically end in -ος, -ης, or -ας. Feminine nouns typically end in -α or -η. Neuter nouns typically end in -ο, -ι, or -μα. Examples: ο φίλος (the friend, masculine), η μητέρα (the mother, feminine), το παιδί (the child, neuter). Because gender is grammatical and not always predictable from meaning, you must memorise each noun together with its article.",
+      "tip": "Learn every noun with its article (ο/η/το) — the article tells you the gender instantly!",
+      "examples": [
+        { "el": "ο φίλος", "en": "the friend (masculine)" },
+        { "el": "η μητέρα", "en": "the mother (feminine)" },
+        { "el": "το παιδί", "en": "the child (neuter)" },
+        { "el": "ο δρόμος", "en": "the road (masculine)" },
+        { "el": "η θάλασσα", "en": "the sea (feminine)" },
+        { "el": "το σπίτι", "en": "the house (neuter)" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'φίλος' (friend)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 0,
+          "explanation": "Φίλος ends in -ος, which is a typical masculine ending → ο φίλος."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'θάλασσα' (sea)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 1,
+          "explanation": "Θάλασσα ends in -α, which is a typical feminine ending → η θάλασσα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'σπίτι' (house)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 2,
+          "explanation": "Σπίτι ends in -ι, which is a typical neuter ending → το σπίτι."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'δρόμος' (road)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 0,
+          "explanation": "Δρόμος ends in -ος → masculine → ο δρόμος."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'μητέρα' (mother)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 1,
+          "explanation": "Μητέρα ends in -α → feminine → η μητέρα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'παιδί' (child)?",
+          "options": ["ο", "η", "το"],
+          "correctIndex": 2,
+          "explanation": "Παιδί ends in -ί → neuter → το παιδί."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The Greek article 'ο' signals which gender?",
+          "options": ["masculine (αρσενικό)", "feminine (θηλυκό)", "neuter (ουδέτερο)"],
+          "correctIndex": 0,
+          "explanation": "ο = masculine, η = feminine, το = neuter. These are the three definite articles in the nominative singular."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Nouns ending in -μα (e.g. πρόβλημα — problem) are typically which gender?",
+          "options": ["neuter (το)", "masculine (ο)", "feminine (η)"],
+          "correctIndex": 0,
+          "explanation": "Nouns ending in -μα are almost always neuter: το πρόβλημα, το σύστημα, το θέμα."
+        }
+      ]
+    },
+    {
+      "sectionId": "singular-plural",
+      "title": "Singular and Plural",
+      "explanation": "Forming the plural in Greek follows patterns based on gender and ending. Masculine nouns in -ος change to -οι (ο φίλος → οι φίλοι). Masculine nouns in -ης change to -ες (ο μαθητής → οι μαθητές) and in -ας change to -ες (ο άντρας → οι άντρες). Feminine nouns in -α change to -ες (η μητέρα → οι μητέρες) and in -η change to -ες (η ώρα is -α type, but η αδελφή → οι αδελφές). Neuter nouns in -ο change to -α (το βιβλίο → τα βιβλία) and in -ι change to -ια (το παιδί → τα παιδιά). Nouns in -μα change to -ματα (το πρόβλημα → τα προβλήματα). The article also changes: ο → οι, η → οι, το → τα.",
+      "tip": "Remember: masculine and feminine plurals both use 'οι', while neuter plurals use 'τα'.",
+      "examples": [
+        { "el": "ο φίλος → οι φίλοι", "en": "friend → friends (masc. -ος → -οι)" },
+        { "el": "η μητέρα → οι μητέρες", "en": "mother → mothers (fem. -α → -ες)" },
+        { "el": "το βιβλίο → τα βιβλία", "en": "book → books (neut. -ο → -α)" },
+        { "el": "το παιδί → τα παιδιά", "en": "child → children (neut. -ι → -ια)" },
+        { "el": "ο μαθητής → οι μαθητές", "en": "student → students (masc. -ης → -ές)" },
+        { "el": "το πρόβλημα → τα προβλήματα", "en": "problem → problems (neut. -μα → -ματα)" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'ο φίλος' (the friend)?",
+          "options": ["οι φίλοι", "τα φίλα", "οι φίλες"],
+          "correctIndex": 0,
+          "explanation": "Masculine nouns in -ος form their plural with -οι: ο φίλος → οι φίλοι. The article ο becomes οι."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'η μητέρα' (the mother)?",
+          "options": ["οι μητέρες", "τα μητέρα", "οι μητέρας"],
+          "correctIndex": 0,
+          "explanation": "Feminine nouns in -α form their plural with -ες: η μητέρα → οι μητέρες. The article η becomes οι."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'το βιβλίο' (the book)?",
+          "options": ["τα βιβλία", "οι βιβλίοι", "τα βιβλίος"],
+          "correctIndex": 0,
+          "explanation": "Neuter nouns in -ο form their plural with -α: το βιβλίο → τα βιβλία. The article το becomes τα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural article for ALL neuter nouns?",
+          "options": ["τα", "οι", "τους"],
+          "correctIndex": 0,
+          "explanation": "Neuter plural always uses 'τα': τα παιδιά, τα βιβλία, τα προβλήματα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'το παιδί' (the child)?",
+          "options": ["τα παιδιά", "τα παιδία", "οι παιδιοί"],
+          "correctIndex": 0,
+          "explanation": "Neuter nouns in -ι form their plural with -ιά: το παιδί → τα παιδιά."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Both masculine and feminine plural nouns share which article?",
+          "options": ["οι", "τα", "ο"],
+          "correctIndex": 0,
+          "explanation": "In the nominative plural, both masculine and feminine use 'οι': οι φίλοι (friends-m), οι μητέρες (mothers-f)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'το πρόβλημα' (the problem)?",
+          "options": ["τα προβλήματα", "τα πρόβλημα", "οι προβλήματες"],
+          "correctIndex": 0,
+          "explanation": "Nouns in -μα add -τα to form their plural: το πρόβλημα → τα προβλήματα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'ο μαθητής' (the student)?",
+          "options": ["οι μαθητές", "τα μαθητές", "οι μαθητοί"],
+          "correctIndex": 0,
+          "explanation": "Masculine nouns in -ης form their plural with -ές: ο μαθητής → οι μαθητές."
+        }
+      ]
+    },
+    {
+      "sectionId": "cases-intro",
+      "title": "Introduction to Cases",
+      "explanation": "Greek uses grammatical cases to show the function of a noun in a sentence. There are four cases: nominative (ονομαστική), used for the subject of a sentence; genitive (γενική), used to show possession or relationship; accusative (αιτιατική), used for the direct object; and vocative (κλητική), used when addressing someone directly. Both the noun ending and the article change depending on the case. For a masculine noun like ο φίλος: nominative is ο φίλος (the friend is here), genitive is του φίλου (the friend's / of the friend), accusative is τον φίλο (I see the friend), vocative is φίλε (hey, friend!). For a feminine noun like η μητέρα: nominative η μητέρα, genitive της μητέρας, accusative την μητέρα, vocative μητέρα. For a neuter noun like το παιδί: nominative το παιδί, genitive του παιδιού, accusative το παιδί (same as nominative), vocative παιδί.",
+      "tip": "Start with nominative (subject) and accusative (object) — these two cases cover most everyday sentences!",
+      "examples": [
+        { "el": "ο φίλος μιλάει", "en": "the friend is talking (nominative — subject)" },
+        { "el": "το σπίτι του φίλου", "en": "the friend's house (genitive — possession)" },
+        { "el": "βλέπω τον φίλο", "en": "I see the friend (accusative — object)" },
+        { "el": "φίλε, έλα εδώ!", "en": "Friend, come here! (vocative — direct address)" },
+        { "el": "η μητέρα μαγειρεύει", "en": "the mother is cooking (nominative — subject)" },
+        { "el": "αγαπώ την μητέρα", "en": "I love the mother (accusative — object)" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence 'ο φίλος μιλάει' (the friend is talking), what case is 'ο φίλος'?",
+          "options": ["nominative — it is the subject", "accusative — it is the object", "genitive — it shows possession"],
+          "correctIndex": 0,
+          "explanation": "ο φίλος is the subject of the sentence (who is doing the action), so it is in the nominative case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'βλέπω τον φίλο' (I see the friend), what case is 'τον φίλο'?",
+          "options": ["accusative — it is the direct object", "nominative — it is the subject", "genitive — it shows possession"],
+          "correctIndex": 0,
+          "explanation": "τον φίλο is what is being seen — the direct object. The article ο changes to τον and the noun φίλος loses its -ς to become φίλο in the accusative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'το σπίτι του φίλου' (the friend's house), what case is 'του φίλου'?",
+          "options": ["genitive — it shows possession", "accusative — it is the object", "nominative — it is the subject"],
+          "correctIndex": 0,
+          "explanation": "του φίλου is the genitive case, showing that the house belongs to the friend. The article ο becomes του and the ending -ος changes to -ου."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which case is used when directly addressing someone, e.g. 'φίλε, έλα!' (friend, come!)?",
+          "options": ["vocative (κλητική)", "nominative (ονομαστική)", "accusative (αιτιατική)"],
+          "correctIndex": 0,
+          "explanation": "The vocative is used for direct address. It often has no article, and the noun may change its ending: ο φίλος → φίλε!"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the nominative case indicate?",
+          "options": ["the subject of the sentence", "the direct object", "possession or relationship"],
+          "correctIndex": 0,
+          "explanation": "The nominative marks the subject — the noun performing the action: ο φίλος μιλάει (the friend talks)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In 'αγαπώ την μητέρα' (I love the mother), the article η has changed to 'την'. Why?",
+          "options": ["because 'την μητέρα' is in the accusative case (direct object)", "because it is in the genitive case", "because it is plural"],
+          "correctIndex": 0,
+          "explanation": "When a feminine noun is the direct object, the article changes from η to την and appears in the accusative case: αγαπώ την μητέρα."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "For a neuter noun like 'το παιδί', the nominative and accusative forms are identical. Which sentence uses the accusative correctly?",
+          "options": ["βλέπω το παιδί (I see the child)", "το παιδί βλέπει (the child sees)", "του παιδιού (of the child)"],
+          "correctIndex": 0,
+          "explanation": "In 'βλέπω το παιδί', το παιδί is the direct object (accusative). For neuter nouns, the accusative form looks the same as the nominative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Greek has how many grammatical cases?",
+          "options": ["4 — nominative, genitive, accusative, vocative", "3 — nominative, genitive, accusative", "6 — like Latin"],
+          "correctIndex": 0,
+          "explanation": "Modern Greek has four cases: nominative (subject), genitive (possession), accusative (object), and vocative (direct address)."
+        }
+      ]
+    }
+  ]
+}

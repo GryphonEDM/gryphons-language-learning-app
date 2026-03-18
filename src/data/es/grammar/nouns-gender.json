@@ -1,0 +1,193 @@
+{
+  "lessonId": "nouns-gender",
+  "nameEn": "Nouns & Gender",
+  "nameEs": "Sustantivos y género",
+  "icon": "📝",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "masculine-feminine",
+      "title": "Masculine & Feminine Nouns",
+      "explanation": "Every Spanish noun has a grammatical gender: masculine or feminine. As a general rule, nouns ending in -o are masculine (el libro, el vaso) and nouns ending in -a are feminine (la mesa, la casa). However, there are important exceptions you must memorize: 'el día' (day) ends in -a but is masculine, 'la mano' (hand) ends in -o but is feminine, and Greek-origin words ending in -ma like 'el problema' (problem), 'el programa', and 'el tema' are masculine despite the -a ending. Other endings also give gender clues: -ción, -sión, -dad, -tad, -tud, -umbre are nearly always feminine (la canción, la ciudad, la libertad), while -or, -aje, -án tend to be masculine (el color, el viaje, el capitán).",
+      "tip": "Default rule: -o = masculine (el), -a = feminine (la). But memorize the exceptions: el día, la mano, el problema, el programa, el tema.",
+      "examples": [
+        { "es": "el libro", "en": "the book (masculine — -o ending)", "highlight": "o" },
+        { "es": "la mesa", "en": "the table (feminine — -a ending)", "highlight": "a" },
+        { "es": "el día", "en": "the day (masculine — exception: -a ending but masculine)", "highlight": "el" },
+        { "es": "la mano", "en": "the hand (feminine — exception: -o ending but feminine)", "highlight": "la" },
+        { "es": "el problema", "en": "the problem (masculine — Greek -ma ending = masculine)", "highlight": "el" },
+        { "es": "la ciudad", "en": "the city (feminine — -dad ending = always feminine)", "highlight": "dad" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'libro' (book)?",
+          "options": ["el (masculine)", "la (feminine)"],
+          "correctIndex": 0,
+          "explanation": "'el libro' — nouns ending in -o are typically masculine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which article goes with 'mesa' (table)?",
+          "options": ["la (feminine)", "el (masculine)"],
+          "correctIndex": 0,
+          "explanation": "'la mesa' — nouns ending in -a are typically feminine."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'día' (day) ends in -a. What is its gender?",
+          "options": ["masculine (el día — exception)", "feminine (la día — by the -a rule)"],
+          "correctIndex": 0,
+          "explanation": "'el día' is a well-known exception. Despite ending in -a, it is masculine. Other examples: el mapa, el sofá."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'mano' (hand) ends in -o. What is its gender?",
+          "options": ["feminine (la mano — exception)", "masculine (el mano — by the -o rule)"],
+          "correctIndex": 0,
+          "explanation": "'la mano' is a classic exception. Despite ending in -o, it is feminine. It is one of very few such exceptions."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ problema (problem) — choose el or la",
+          "acceptedAnswers": ["el", "El"],
+          "hint": "Greek-origin words ending in -ma are masculine",
+          "explanation": "'el problema' is masculine. Words of Greek origin ending in -ma are masculine: el problema, el programa, el tema, el sistema, el clima."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Nouns ending in -dad (like 'ciudad', 'libertad') are always:",
+          "options": ["feminine (la ciudad, la libertad)", "masculine (el ciudad, el libertad)"],
+          "correctIndex": 0,
+          "explanation": "The endings -dad, -tad, -tud, -ción, -sión are reliable feminine markers: la ciudad, la libertad, la virtud, la canción, la misión."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each noun to its correct article:",
+          "pairs": [
+            { "left": "casa (house)", "right": "la" },
+            { "left": "vaso (glass)", "right": "el" },
+            { "left": "día (day)", "right": "el" },
+            { "left": "canción (song)", "right": "la" }
+          ],
+          "explanation": "la casa (-a = feminine), el vaso (-o = masculine), el día (exception), la canción (-ción = feminine)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these endings is a reliable sign of a feminine noun?",
+          "options": ["-ción (like canción, nación)", "-aje (like viaje, paisaje)", "-or (like color, amor)"],
+          "correctIndex": 0,
+          "explanation": "-ción and -sión endings are virtually always feminine: la canción, la nación, la misión, la televisión. The endings -aje and -or are typically masculine."
+        }
+      ]
+    },
+    {
+      "sectionId": "plural-nouns",
+      "title": "Plural Nouns",
+      "explanation": "Forming plurals in Spanish follows clear rules. If a noun ends in a vowel (a, e, i, o, u), simply add -s: libro → libros, mesa → mesas, clase → clases. If a noun ends in a consonant, add -es: ciudad → ciudades, papel → papeles, color → colores. There is one spelling change to know: nouns ending in -z change the z to c before adding -es, because 'ze' and 'zi' are unusual in Spanish spelling: lápiz → lápices, voz → voces, luz → luces. Note also that some nouns ending in -s or -x in an unstressed syllable do not change in the plural: el lunes → los lunes, la crisis → las crisis.",
+      "tip": "Vowel ending + -s (libros, mesas). Consonant ending + -es (ciudades, papeles). -z → -ces (lápiz → lápices, voz → voces).",
+      "examples": [
+        { "es": "libro → libros", "en": "book → books (vowel + -s)", "highlight": "s" },
+        { "es": "ciudad → ciudades", "en": "city → cities (consonant + -es)", "highlight": "es" },
+        { "es": "lápiz → lápices", "en": "pencil → pencils (-z → -ces)", "highlight": "ices" },
+        { "es": "voz → voces", "en": "voice → voices (-z → -ces)", "highlight": "oces" },
+        { "es": "el lunes → los lunes", "en": "Monday → Mondays (no change — ends in -s, unstressed)", "highlight": "lunes" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'libro' (book)?",
+          "options": ["libros", "libres", "libroe"],
+          "correctIndex": 0,
+          "explanation": "'libro' ends in a vowel (-o), so the plural is formed by adding -s: libros."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'ciudad' (city)?",
+          "options": ["ciudades", "ciudads", "ciudas"],
+          "correctIndex": 0,
+          "explanation": "'ciudad' ends in a consonant (-d), so the plural adds -es: ciudades."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "lápiz → lápic___ (pencils)",
+          "acceptedAnswers": ["es", "lápices"],
+          "hint": "-z changes to -c before adding -es",
+          "explanation": "When a noun ends in -z, the z becomes c before -es: lápiz → lápices. This is a spelling rule to avoid 'ze'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'voz' (voice)?",
+          "options": ["voces", "vozs", "vozes"],
+          "correctIndex": 0,
+          "explanation": "'voz' ends in -z, so it follows the -z → -ces rule: voces. 'vozes' is incorrect because Spanish avoids the combination 'ze'."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each singular noun to its plural:",
+          "pairs": [
+            { "left": "mesa (table)", "right": "mesas" },
+            { "left": "papel (paper)", "right": "papeles" },
+            { "left": "luz (light)", "right": "luces" },
+            { "left": "clase (class)", "right": "clases" }
+          ],
+          "explanation": "mesa → mesas (vowel + -s), papel → papeles (consonant + -es), luz → luces (-z → -ces), clase → clases (vowel + -s)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the plural of 'el lunes' (Monday)?",
+          "options": ["los lunes (no change)", "los luneses", "los luness"],
+          "correctIndex": 0,
+          "explanation": "Days of the week ending in -s (lunes, martes, miércoles, jueves, viernes) do not change in the plural. Only the article changes: el lunes → los lunes."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "color (color) → colores. The plural rule applied here is: consonant ending + ___",
+          "acceptedAnswers": ["-es", "es"],
+          "hint": "Nouns ending in a consonant need this suffix",
+          "explanation": "'color' ends in the consonant -r, so the plural adds -es: colores. Same rule: papel → papeles, árbol → árboles."
+        }
+      ]
+    },
+    {
+      "sectionId": "two-gender-nouns",
+      "title": "Nouns with Two Genders",
+      "explanation": "Many Spanish nouns referring to people can be either masculine or feminine simply by changing the article, without changing the noun itself. These are called 'nouns of common gender' (sustantivos de género común). The noun form stays the same; only the article (el/la) changes to indicate the gender of the person being described. Common examples include: el/la estudiante (student), el/la artista (artist), el/la periodista (journalist), el/la turista (tourist), el/la cantante (singer), el/la paciente (patient). Many of these end in -nte or -ista. This is different from nouns that have distinct masculine/feminine forms like actor/actriz or profesor/profesora.",
+      "tip": "Nouns ending in -ista and -nte are often common-gender: el/la artista, el/la estudiante, el/la cantante. Just change the article!",
+      "examples": [
+        { "es": "el estudiante / la estudiante", "en": "the (male/female) student", "highlight": "el / la" },
+        { "es": "el artista / la artista", "en": "the (male/female) artist", "highlight": "el / la" },
+        { "es": "el periodista / la periodista", "en": "the (male/female) journalist", "highlight": "el / la" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the female student' in Spanish?",
+          "options": ["la estudiante", "el estudiante", "la estudianta"],
+          "correctIndex": 0,
+          "explanation": "'estudiante' is a common-gender noun. To refer to a female student, use 'la estudiante'. The noun itself does not change."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ artista famosa (the famous female artist) — choose el or la",
+          "acceptedAnswers": ["la", "La"],
+          "hint": "The adjective 'famosa' is feminine — match the article",
+          "explanation": "Since the artist is female (indicated by 'famosa'), the correct article is 'la': la artista famosa. The noun 'artista' stays the same for both genders."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each phrase to its meaning:",
+          "pairs": [
+            { "left": "el cantante", "right": "the male singer" },
+            { "left": "la cantante", "right": "the female singer" },
+            { "left": "el periodista", "right": "the male journalist" },
+            { "left": "la periodista", "right": "the female journalist" }
+          ],
+          "explanation": "Common-gender nouns like cantante and periodista use the same form for both genders. Only the article changes to show whether the person is male or female."
+        }
+      ]
+    }
+  ]
+}

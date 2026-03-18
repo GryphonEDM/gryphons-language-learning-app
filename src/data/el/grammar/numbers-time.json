@@ -1,0 +1,122 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers & Time",
+  "nameEl": "Αριθμοί και Χρόνος",
+  "icon": "🔢",
+  "tier": "A1",
+  "prerequisites": ["articles"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "cardinal-numbers",
+      "title": "Cardinal Numbers — 0 to 100",
+      "explanation": "Greek cardinal numbers are mostly invariable, but the numbers 1, 3, 4, and compound numbers ending in them change form based on the gender of the noun they modify.\n\n0 μηδέν\n1 ένας (m) / μία (f) / ένα (n)\n2 δύο\n3 τρεις (m/f) / τρία (n)\n4 τέσσερις (m/f) / τέσσερα (n)\n5 πέντε · 6 έξι · 7 επτά (εφτά) · 8 οκτώ (οχτώ) · 9 εννέα (εννιά) · 10 δέκα\n11 έντεκα · 12 δώδεκα · 13 δεκατρία · 14 δεκατέσσερα · 15 δεκαπέντε\n16 δεκαέξι · 17 δεκαεπτά · 18 δεκαοκτώ · 19 δεκαεννέα · 20 είκοσι\n\nTens:\n30 τριάντα · 40 σαράντα · 50 πενήντα\n60 εξήντα · 70 εβδομήντα · 80 ογδόντα · 90 ενενήντα · 100 εκατό\n\nCompound numbers above 20 are formed by saying the ten then the unit:\n21 = είκοσι ένα · 35 = τριάντα πέντε · 99 = ενενήντα εννέα\n\nNote: the colloquial alternatives εφτά (7), οχτώ (8), εννιά (9) are very common in everyday speech.",
+      "tip": "Remember that 1, 3, and 4 have gender forms. For all other numbers (2, 5–100) only one form is used regardless of noun gender. 'Δύο' never changes — it is always δύο.",
+      "examples": [
+        { "el": "μηδέν, ένα, δύο, τρία, τέσσερα, πέντε", "en": "zero, one, two, three, four, five", "highlight": "μηδέν" },
+        { "el": "έξι, επτά, οκτώ, εννέα, δέκα", "en": "six, seven, eight, nine, ten", "highlight": "δέκα" },
+        { "el": "έντεκα, δώδεκα, δεκατρία, είκοσι", "en": "eleven, twelve, thirteen, twenty", "highlight": "δώδεκα" },
+        { "el": "τριάντα, σαράντα, πενήντα, εξήντα", "en": "thirty, forty, fifty, sixty", "highlight": "τριάντα" },
+        { "el": "εβδομήντα, ογδόντα, ενενήντα, εκατό", "en": "seventy, eighty, ninety, one hundred", "highlight": "εκατό" },
+        { "el": "Έχω τρεις αδελφές και τρία αδέλφια.", "en": "I have three sisters and three brothers. (gender agreement on 3)", "highlight": "τρεις" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say the number 12 in Greek?",
+          "options": ["δώδεκα", "είκοσι", "έντεκα"],
+          "correctIndex": 0,
+          "explanation": "'Δώδεκα' is 12. 'Έντεκα' is 11 and 'είκοσι' is 20."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct Greek word for 70?",
+          "options": ["εβδομήντα", "ογδόντα", "εξήντα"],
+          "correctIndex": 0,
+          "explanation": "'Εβδομήντα' = 70. 'Εξήντα' = 60 and 'ογδόντα' = 80."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are counting four female friends (φίλες, feminine). Which form of 4 is correct?",
+          "options": ["τέσσερις φίλες", "τέσσερα φίλες", "τεσσάρων φίλες"],
+          "correctIndex": 0,
+          "explanation": "With feminine (and masculine) nouns, 4 is 'τέσσερις'. 'Τέσσερα' is used only with neuter nouns."
+        }
+      ]
+    },
+    {
+      "sectionId": "telling-time",
+      "title": "Telling the Time — Τι ώρα είναι;",
+      "explanation": "To ask the time in Greek: Τι ώρα είναι; (What time is it? — literally 'What hour is it?')\n\nBasic structure: Είναι + [number] + η ώρα\n  Είναι μία η ώρα. = It is one o'clock.\n  Είναι δύο η ώρα. = It is two o'clock.\n  Είναι τρεις η ώρα. = It is three o'clock. (3 uses feminine τρεις because ώρα is feminine)\n\nMinutes past the hour: Είναι [hour] και [minutes]\n  Είναι τέσσερις και δέκα. = It is ten past four.\n  Είναι πέντε και είκοσι. = It is twenty past five.\n  Είναι δύο και μισή. = It is half past two. (μισή = half, feminine)\n\nMinutes to the hour: Είναι [next hour] παρά [minutes]\n  Είναι τρεις παρά τέταρτο. = It is a quarter to three. (παρά = minus/less)\n  Είναι έξι παρά πέντε. = It is five to six.\n\nParts of the day:\n  πρωί = morning · μεσημέρι = noon/midday · απόγευμα = afternoon\n  βράδυ = evening · νύχτα = night/midnight\n\nTo specify AM/PM, add the time of day: δύο το μεσημέρι (two in the afternoon/noon), οκτώ το βράδυ (eight in the evening).",
+      "tip": "Note that ώρα (hour) is feminine, so 'one o'clock' uses the feminine μία, and 'three o'clock' uses the feminine τρεις. 'Half past' uses μισή (feminine agreeing with ώρα). 'Παρά' before the minutes means 'to' (subtract from the next hour).",
+      "examples": [
+        { "el": "Τι ώρα είναι;", "en": "What time is it?", "highlight": "ώρα" },
+        { "el": "Είναι μία η ώρα.", "en": "It is one o'clock.", "highlight": "μία" },
+        { "el": "Είναι δύο και μισή.", "en": "It is half past two (two thirty).", "highlight": "μισή" },
+        { "el": "Είναι τρεις παρά τέταρτο.", "en": "It is a quarter to three.", "highlight": "παρά" },
+        { "el": "Είναι οκτώ και είκοσι το πρωί.", "en": "It is twenty past eight in the morning.", "highlight": "πρωί" },
+        { "el": "Είναι έξι το απόγευμα.", "en": "It is six in the afternoon.", "highlight": "απόγευμα" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is half past five' in Greek?",
+          "options": ["Είναι πέντε και μισή.", "Είναι πέντε παρά μισή.", "Είναι μισή και πέντε."],
+          "correctIndex": 0,
+          "explanation": "'Και μισή' means 'and a half', placed after the hour: Είναι πέντε και μισή (It is five and a half = half past five)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Είναι επτά παρά δέκα' mean?",
+          "options": ["It is ten to seven.", "It is ten past seven.", "It is seven ten."],
+          "correctIndex": 0,
+          "explanation": "'Παρά' signals minutes to the next hour. 'Επτά παρά δέκα' = ten minutes before seven = ten to seven."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which Greek phrase means 'in the evening'?",
+          "options": ["το βράδυ", "το πρωί", "το μεσημέρι"],
+          "correctIndex": 0,
+          "explanation": "'Το βράδυ' means 'in the evening'. 'Το πρωί' is 'in the morning' and 'το μεσημέρι' is 'at noon/midday'."
+        }
+      ]
+    },
+    {
+      "sectionId": "days-months-seasons",
+      "title": "Days, Months & Seasons",
+      "explanation": "DAYS OF THE WEEK (οι μέρες της εβδομάδας)\nThe Greek week starts on Monday. Days are feminine in gender.\n  Δευτέρα (Monday) · Τρίτη (Tuesday) · Τετάρτη (Wednesday)\n  Πέμπτη (Thursday) · Παρασκευή (Friday) · Σάββατο (Saturday) · Κυριακή (Sunday)\n\nUsage: 'On Monday' = τη Δευτέρα (accusative with implied motion/time).\n  Τη Δευτέρα πηγαίνω στη δουλειά. = On Monday I go to work.\n  Το Σάββατο (neuter) — note Σάββατο is neuter!\n\nMONTHS (οι μήνες) — all masculine\n  Ιανουάριος · Φεβρουάριος · Μάρτιος · Απρίλιος · Μάιος · Ιούνιος\n  Ιούλιος · Αύγουστος · Σεπτέμβριος · Οκτώβριος · Νοέμβριος · Δεκέμβριος\n\nMonths are not capitalised in Greek (unlike English). Usage: 'In January' = τον Ιανουάριο.\n\nSEASONS (οι εποχές) — mixed genders\n  η άνοιξη (spring, f) · το καλοκαίρι (summer, n)\n  το φθινόπωρο (autumn, n) · ο χειμώνας (winter, m)\n\nUsage: 'In summer' = το καλοκαίρι · 'In winter' = τον χειμώνα.",
+      "tip": "Days of the week are NOT capitalised in Greek (same as months). Σάββατο (Saturday) is neuter — it is the only day that is neuter. All other days are feminine. Months are all masculine.",
+      "examples": [
+        { "el": "Δευτέρα, Τρίτη, Τετάρτη, Πέμπτη, Παρασκευή", "en": "Monday, Tuesday, Wednesday, Thursday, Friday", "highlight": "Δευτέρα" },
+        { "el": "Σάββατο και Κυριακή είναι το Σαββατοκύριακο.", "en": "Saturday and Sunday are the weekend.", "highlight": "Σαββατοκύριακο" },
+        { "el": "Ιανουάριος, Φεβρουάριος, Μάρτιος, Απρίλιος, Μάιος, Ιούνιος", "en": "January, February, March, April, May, June", "highlight": "Ιανουάριος" },
+        { "el": "Ιούλιος, Αύγουστος, Σεπτέμβριος, Οκτώβριος, Νοέμβριος, Δεκέμβριος", "en": "July, August, September, October, November, December", "highlight": "Δεκέμβριος" },
+        { "el": "Το καλοκαίρι πηγαίνω στη θάλασσα.", "en": "In summer I go to the sea.", "highlight": "καλοκαίρι" },
+        { "el": "Η άνοιξη και το φθινόπωρο είναι οι μεταβατικές εποχές.", "en": "Spring and autumn are the transitional seasons.", "highlight": "άνοιξη" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is Wednesday in Greek?",
+          "options": ["Τετάρτη", "Τρίτη", "Πέμπτη"],
+          "correctIndex": 0,
+          "explanation": "'Τετάρτη' = Wednesday (fourth day). 'Τρίτη' = Tuesday (third) and 'Πέμπτη' = Thursday (fifth)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which month is Σεπτέμβριος?",
+          "options": ["September", "October", "November"],
+          "correctIndex": 0,
+          "explanation": "'Σεπτέμβριος' is September. 'Οκτώβριος' = October and 'Νοέμβριος' = November."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Greek word for 'winter'?",
+          "options": ["χειμώνας", "καλοκαίρι", "φθινόπωρο"],
+          "correctIndex": 0,
+          "explanation": "'Χειμώνας' = winter (masculine). 'Καλοκαίρι' = summer and 'φθινόπωρο' = autumn."
+        }
+      ]
+    }
+  ]
+}

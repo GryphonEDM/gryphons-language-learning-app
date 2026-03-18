@@ -9,7 +9,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import ExerciseRenderer from './grammar/ExerciseRenderer.jsx';
 import { stopSpeaking } from '../../App.jsx';
 import { createAudioContext, playSound } from '../../utils/soundEffects.js';
-import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE } from '../../utils/encouragement.js';
+import { ENCOURAGEMENTS, MISTAKE_MESSAGES, ENCOURAGEMENTS_RU, MISTAKE_MESSAGES_RU, ENCOURAGEMENTS_DE, MISTAKE_MESSAGES_DE, ENCOURAGEMENTS_ES, MISTAKE_MESSAGES_ES, ENCOURAGEMENTS_FR, MISTAKE_MESSAGES_FR, ENCOURAGEMENTS_EL, MISTAKE_MESSAGES_EL, ENCOURAGEMENTS_HI, MISTAKE_MESSAGES_HI, ENCOURAGEMENTS_AR, MISTAKE_MESSAGES_AR, ENCOURAGEMENTS_KO, MISTAKE_MESSAGES_KO, ENCOURAGEMENTS_ZH, MISTAKE_MESSAGES_ZH, ENCOURAGEMENTS_JA, MISTAKE_MESSAGES_JA } from '../../utils/encouragement.js';
 
 const TIER_INFO = {
   A1: { name: 'A1 Foundation', color: '#4ade80' },
@@ -19,7 +19,7 @@ const TIER_INFO = {
 };
 
 export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   // Phases: picker, lesson, exercise, section-complete, complete, review
   const [phase, setPhase] = useState('picker');
@@ -54,8 +54,10 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     return audioCtxRef.current;
   };
 
-  const encouragements = langCode === 'ru' ? ENCOURAGEMENTS_RU : langCode === 'de' ? ENCOURAGEMENTS_DE : ENCOURAGEMENTS;
-  const mistakeMessages = langCode === 'ru' ? MISTAKE_MESSAGES_RU : langCode === 'de' ? MISTAKE_MESSAGES_DE : MISTAKE_MESSAGES;
+  const encouragementMap = { ru: ENCOURAGEMENTS_RU, de: ENCOURAGEMENTS_DE, es: ENCOURAGEMENTS_ES, fr: ENCOURAGEMENTS_FR, el: ENCOURAGEMENTS_EL, hi: ENCOURAGEMENTS_HI, ar: ENCOURAGEMENTS_AR, ko: ENCOURAGEMENTS_KO, zh: ENCOURAGEMENTS_ZH, ja: ENCOURAGEMENTS_JA };
+  const mistakeMap = { ru: MISTAKE_MESSAGES_RU, de: MISTAKE_MESSAGES_DE, es: MISTAKE_MESSAGES_ES, fr: MISTAKE_MESSAGES_FR, el: MISTAKE_MESSAGES_EL, hi: MISTAKE_MESSAGES_HI, ar: MISTAKE_MESSAGES_AR, ko: MISTAKE_MESSAGES_KO, zh: MISTAKE_MESSAGES_ZH, ja: MISTAKE_MESSAGES_JA };
+  const encouragements = encouragementMap[langCode] || ENCOURAGEMENTS;
+  const mistakeMessages = mistakeMap[langCode] || MISTAKE_MESSAGES;
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
 
@@ -257,7 +259,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
                         <h3 style={{ ...styles.lessonTitle, ...(unlocked ? {} : { color: 'rgba(255,255,255,0.3)' }) }}>
                           {lesson.nameEn}
                         </h3>
-                        <p style={styles.lessonTitleUk}>{langCode === 'ru' ? lesson.nameRu : langCode === 'de' ? lesson.nameDe : lesson.nameUk}</p>
+                        <p style={styles.lessonTitleUk}>{lesson['name' + langCode.charAt(0).toUpperCase() + langCode.slice(1)] || lesson.nameEn}</p>
                         <p style={styles.lessonMeta}>
                           {sectionsCompleted > 0 ? `${sectionsCompleted}/${lesson.sections.length} sections` : `${lesson.sections.length} sections`}
                           {lesson.estimatedMinutes ? ` · ~${lesson.estimatedMinutes} min` : ''}

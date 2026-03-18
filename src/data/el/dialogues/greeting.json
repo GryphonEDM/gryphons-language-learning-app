@@ -1,0 +1,132 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameEl": "Γνωριμία",
+  "icon": "👋",
+  "context": "You are at a Greek language exchange event in Athens. Nikos, a friendly Athenian, comes over to introduce himself.",
+  "characters": {
+    "npc": { "name": "Νίκος" },
+    "player": { "name": "Εσύ" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Γεια σου! Με λένε Νίκο. Είσαι εδώ για την ανταλλαγή γλωσσών;",
+      "translation": "Hello! My name is Nikos. Are you here for the language exchange?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and confirm you're here for the language exchange.",
+      "acceptedResponses": [
+        "Ναι, γεια σου! Με λένε [name]. Είμαι εδώ για την ανταλλαγή.",
+        "Γεια σου Νίκο! Ναι, είμαι εδώ για την ανταλλαγή γλωσσών.",
+        "Γεια! Ναι, ακριβώς. Με λένε [name].",
+        "Ναι, γεια σου! Χαίρω πολύ, με λένε [name]."
+      ],
+      "keyWords": ["γεια", "ναι"],
+      "hint": "Start with 'Γεια σου' and confirm with 'ναι'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Χαίρω πολύ! Από πού είσαι;",
+      "translation": "Nice to meet you! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him where you are from.",
+      "acceptedResponses": [
+        "Είμαι από την Αμερική.",
+        "Είμαι από την Αγγλία.",
+        "Είμαι από τον Καναδά.",
+        "Είμαι από την Αυστραλία."
+      ],
+      "keyWords": ["είμαι", "από"],
+      "hint": "Say 'Είμαι από...' followed by your country."
+    },
+    {
+      "speaker": "npc",
+      "text": "Ωραία! Γιατί μαθαίνεις ελληνικά;",
+      "translation": "Nice! Why are you learning Greek?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Explain why you are learning Greek.",
+      "acceptedResponses": [
+        "Μου αρέσει η ελληνική κουλτούρα και η ιστορία.",
+        "Θέλω να ταξιδέψω στην Ελλάδα.",
+        "Μαθαίνω ελληνικά γιατί μου αρέσει πολύ η χώρα.",
+        "Έχω φίλους Έλληνες και θέλω να μιλάω μαζί τους."
+      ],
+      "keyWords": ["μαθαίνω", "αρέσει"],
+      "hint": "Use 'μου αρέσει' (I like) or 'θέλω' (I want) to explain your reason."
+    },
+    {
+      "speaker": "npc",
+      "text": "Πολύ ωραίο! Πόσο καιρό μαθαίνεις ελληνικά;",
+      "translation": "That's great! How long have you been learning Greek?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how long you have been studying Greek.",
+      "acceptedResponses": [
+        "Μαθαίνω ελληνικά εδώ και έξι μήνες.",
+        "Μαθαίνω ελληνικά εδώ και ένα χρόνο.",
+        "Άρχισα να μαθαίνω ελληνικά πριν από τρεις μήνες.",
+        "Μαθαίνω ελληνικά εδώ και δύο χρόνια."
+      ],
+      "keyWords": ["μαθαίνω", "εδώ και"],
+      "hint": "Use 'Μαθαίνω ελληνικά εδώ και...' to say how long you have been studying."
+    },
+    {
+      "speaker": "npc",
+      "text": "Μπράβο! Τα ελληνικά είναι δύσκολη γλώσσα. Τι σου αρέσει πιο πολύ στην Ελλάδα;",
+      "translation": "Well done! Greek is a difficult language. What do you like most about Greece?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him your favorite thing about Greece.",
+      "acceptedResponses": [
+        "Μου αρέσει πολύ το φαγητό και ο καιρός.",
+        "Μου αρέσουν πολύ τα νησιά και η θάλασσα.",
+        "Μου αρέσει η ιστορία και τα αρχαία μνημεία.",
+        "Μου αρέσουν οι άνθρωποι. Είναι πολύ φιλικοί!"
+      ],
+      "keyWords": ["μου αρέσει", "πολύ"],
+      "hint": "Use 'Μου αρέσει' or 'Μου αρέσουν' (for plural) to say what you like."
+    },
+    {
+      "speaker": "npc",
+      "text": "Συμφωνώ! Έχεις επισκεφτεί την Ελλάδα πριν;",
+      "translation": "I agree! Have you visited Greece before?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you have visited Greece before.",
+      "acceptedResponses": [
+        "Ναι, ήμουν στην Αθήνα πέρυσι.",
+        "Όχι, αυτή είναι η πρώτη μου φορά στην Ελλάδα.",
+        "Ναι, έχω πάει στη Θεσσαλονίκη και στη Μύκονο.",
+        "Όχι, αλλά θέλω να επισκεφτώ σύντομα."
+      ],
+      "keyWords": ["ναι", "πρώτη"],
+      "hint": "Use 'Ναι, ήμουν...' or 'Όχι, αυτή είναι η πρώτη μου φορά' to answer."
+    },
+    {
+      "speaker": "npc",
+      "text": "Τέλεια! Νομίζω ότι θα κάνουμε καλή παρέα απόψε. Να πάμε να πάρουμε κάτι να πιούμε;",
+      "translation": "Perfect! I think we will get along well tonight. Shall we go get something to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept his invitation enthusiastically.",
+      "acceptedResponses": [
+        "Φυσικά! Με μεγάλη χαρά!",
+        "Ναι, βέβαια! Πολύ καλή ιδέα.",
+        "Ωραία ιδέα! Πάμε!",
+        "Ναι, γιατί όχι; Πάμε μαζί!"
+      ],
+      "keyWords": ["ναι", "πάμε"],
+      "hint": "Use 'Φυσικά' (of course) or 'Ναι, βέβαια' (yes, certainly) and 'πάμε' (let's go)."
+    }
+  ]
+}

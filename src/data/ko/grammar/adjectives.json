@@ -1,0 +1,113 @@
+{
+  "lessonId": "adjectives",
+  "nameEn": "Adjectives as Descriptive Verbs",
+  "nameKo": "형용사",
+  "icon": "🎨",
+  "tier": "A1",
+  "prerequisites": ["hangul-basics", "basic-verbs"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "adjectives-as-verbs",
+      "title": "Korean Adjectives Are Verbs",
+      "explanation": "In Korean, adjectives function as verbs — they are called descriptive verbs (형용사). This means they conjugate just like action verbs and can end a sentence on their own without needing a separate 'to be' verb. For example, 크다 means 'to be big,' not just 'big.' You say 집이 커요 (The house is big) — the adjective 크다 conjugates to 커요 and serves as the entire predicate. You do NOT need 이다 with adjectives (do not say 집이 크다이에요 — this is wrong). Adjectives conjugate using the same -아/어요 rules as action verbs: 좋다 → 좋아요 (is good), 작다 → 작아요 (is small), 예쁘다 → 예뻐요 (is pretty), 맛있다 → 맛있어요 (is delicious). This is one of the most important differences between Korean and English grammar.",
+      "tip": "Never use 이다 with adjectives. The adjective IS the verb. 맛있어요 already means 'it is delicious' — you do not need anything else. Just conjugate the adjective like any other verb.",
+      "examples": [
+        { "ko": "날씨가 좋아요.", "en": "The weather is good. (좋다 → 좋아요)", "highlight": "좋아요" },
+        { "ko": "이 음식은 맛있어요.", "en": "This food is delicious. (맛있다 → 맛있어요)", "highlight": "맛있어요" },
+        { "ko": "방이 작아요.", "en": "The room is small. (작다 → 작아요)", "highlight": "작아요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is expensive' using 비싸다?",
+          "options": ["비싸요", "비싸이에요", "비싼이에요"],
+          "correctIndex": 0,
+          "explanation": "비싸다 → stem 비싸 (last vowel ㅏ, bright) → add -아요 → 비싸 + 아요 merges to 비싸요. No 이다 is needed — the adjective is the verb."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is 이 책은 좋다이에요 incorrect?",
+          "options": ["Adjectives do not use 이다 — just conjugate the adjective directly", "이다 should come before 좋다", "좋다 is not an adjective"],
+          "correctIndex": 0,
+          "explanation": "Korean adjectives ARE verbs. They conjugate directly and do not need 이다 (to be). The correct form is 이 책은 좋아요 (This book is good)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 춥다 (to be cold, weather) to the polite present tense.",
+          "options": ["추워요", "춥어요", "춥아요"],
+          "correctIndex": 0,
+          "explanation": "춥다 is a ㅂ-irregular adjective. The ㅂ changes to 우 before a vowel ending: 춥 → 추우 + 어요 → 추워요. Many common adjectives like 덥다 (hot), 가깝다 (close) follow this pattern."
+        }
+      ]
+    },
+    {
+      "sectionId": "modifier-form",
+      "title": "Adjective Modifier Form: -ㄴ/은",
+      "explanation": "When you want an adjective to modify a noun directly (like 'big house' rather than 'the house is big'), you use the modifier form. For adjectives, this is -ㄴ/은 attached to the stem: add -ㄴ if the stem ends in a vowel, or -은 if the stem ends in a consonant. For example: 크다 → 큰 (big), 작다 → 작은 (small), 예쁘다 → 예쁜 (pretty — ㅡ drops, add ㄴ), 새롭다 → 새로운 (new — ㅂ irregular). The modifier always comes directly before the noun: 큰 집 (big house), 작은 고양이 (small cat), 좋은 사람 (good person). This is different from English where adjectives do not change form. Note: this -ㄴ/은 form is only for adjectives, not action verbs (action verbs use a different modifier pattern).",
+      "tip": "Vowel stem → add ㄴ (as batchim): 크다 → 큰. Consonant stem → add 은: 작다 → 작은. The modifier always goes right before the noun it describes.",
+      "examples": [
+        { "ko": "큰 집", "en": "big house (크다 → 큰)", "highlight": "큰" },
+        { "ko": "작은 강아지", "en": "small puppy (작다 → 작은)", "highlight": "작은" },
+        { "ko": "맛있는 음식", "en": "delicious food (맛있다 → 맛있는)", "highlight": "맛있는" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the modifier form of 좋다 (good)?",
+          "options": ["좋은", "좋ㄴ", "좋는"],
+          "correctIndex": 0,
+          "explanation": "좋다 → stem 좋 (ends in consonant ㅎ) → add 은: 좋은. Used before nouns: 좋은 날 (good day), 좋은 친구 (good friend)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'long hair' using 길다 (to be long)?",
+          "options": ["긴 머리", "길은 머리", "길ㄴ 머리"],
+          "correctIndex": 0,
+          "explanation": "길다 is a ㄹ-irregular adjective. When adding -ㄴ/은, the ㄹ in the stem stays and ㄴ is added: 길 + ㄴ → 긴. So: 긴 머리 (long hair)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: ___ 커피 (hot coffee), using 뜨겁다 (to be hot to touch).",
+          "options": ["뜨거운", "뜨겁은", "뜨거운은"],
+          "correctIndex": 0,
+          "explanation": "뜨겁다 is a ㅂ-irregular adjective. The ㅂ changes to 우 before vowels: 뜨겁 → 뜨거우 + ㄴ → 뜨거운. So: 뜨거운 커피 (hot coffee)."
+        }
+      ]
+    },
+    {
+      "sectionId": "negation",
+      "title": "Negating Adjectives",
+      "explanation": "There are two ways to negate adjectives in Korean. The first is placing 안 before the conjugated adjective: 안 좋아요 (is not good), 안 비싸요 (is not expensive). The second is adding -지 않다 to the stem: 좋지 않아요 (is not good), 비싸지 않아요 (is not expensive). Both mean the same thing, but -지 않다 is slightly more formal or emphatic. For the modifier form, use -지 않은: 좋지 않은 날씨 (weather that is not good). Some adjectives have dedicated antonyms that are more natural to use: 크다/작다 (big/small), 많다/적다 (many/few), 좋다/나쁘다 (good/bad). Note: 있다/없다 (exist/not exist) are negated with 없다, not with 안 — do not say 안 있어요; say 없어요.",
+      "tip": "안 + adjective is the quick conversational negation. Stem + 지 않다 is the longer form, useful in writing or when you want emphasis. Never say 안 있다 — use 없다 instead.",
+      "examples": [
+        { "ko": "안 추워요.", "en": "It is not cold. (안 before conjugated form)", "highlight": "안" },
+        { "ko": "비싸지 않아요.", "en": "It is not expensive. (-지 않다 form)", "highlight": "않아요" },
+        { "ko": "시간이 없어요.", "en": "There is no time. (없다, not 안 있다)", "highlight": "없어요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is not delicious' using the 안 form?",
+          "options": ["안 맛있어요", "맛있지 안아요", "맛없지 않아요"],
+          "correctIndex": 0,
+          "explanation": "Place 안 directly before the conjugated adjective: 안 맛있어요 (not delicious). Alternatively, you could say 맛있지 않아요 or simply 맛없어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct negation of 있다 (to exist/have)?",
+          "options": ["없다", "안 있다", "있지 않다"],
+          "correctIndex": 0,
+          "explanation": "있다 and 없다 are a special pair. You negate 있다 with 없다, not with 안 있다. 없어요 means 'does not exist' or 'I don't have.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Negate 크다 (big) using the -지 않다 form in polite speech.",
+          "options": ["크지 않아요", "안 크지요", "크지 안아요"],
+          "correctIndex": 0,
+          "explanation": "Take the stem 크, add -지 않다, then conjugate 않다 to the polite form: 크지 않아요 (is not big). Note: 않다 conjugates with -아요 because the last vowel ㅏ is bright."
+        }
+      ]
+    }
+  ]
+}

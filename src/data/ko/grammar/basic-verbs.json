@@ -1,0 +1,114 @@
+{
+  "lessonId": "basic-verbs",
+  "nameEn": "Basic Verbs & Conjugation",
+  "nameKo": "기본 동사와 활용",
+  "icon": "🏃",
+  "tier": "A1",
+  "prerequisites": ["hangul-basics", "particles-subject-object"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "hada-verbs",
+      "title": "하다 Verbs",
+      "explanation": "Many Korean verbs are formed by adding 하다 (to do) to a noun. This is one of the most productive patterns in Korean. For example: 공부 (study, noun) + 하다 = 공부하다 (to study); 운동 (exercise) + 하다 = 운동하다 (to exercise); 요리 (cooking) + 하다 = 요리하다 (to cook). In the polite present tense (-아/어요 form), 하다 becomes 해요: 공부해요 (I study), 운동해요 (I exercise). This pattern is especially common with Sino-Korean words (words derived from Chinese characters). Learning 하다 verbs is efficient because if you know the noun, you automatically know the verb. The dictionary form (기본형) of all Korean verbs ends in -다, and this is the form you will find in dictionaries.",
+      "tip": "Whenever you learn a new Sino-Korean noun, try adding 하다 — there is a good chance it forms a valid verb. 하다 in polite speech always becomes 해요.",
+      "examples": [
+        { "ko": "공부하다 → 공부해요", "en": "to study → I study (polite)", "highlight": "해요" },
+        { "ko": "운동하다 → 운동해요", "en": "to exercise → I exercise (polite)", "highlight": "해요" },
+        { "ko": "일하다 → 일해요", "en": "to work → I work (polite)", "highlight": "해요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I cook' in polite Korean?",
+          "options": ["요리해요", "요리하다", "요리해"],
+          "correctIndex": 0,
+          "explanation": "요리하다 (to cook) becomes 요리해요 in the polite present tense. 하다 always conjugates to 해요 in the polite -아/어요 form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the dictionary form of a verb meaning 'to travel'?",
+          "options": ["여행하다", "여행해요", "여행해"],
+          "correctIndex": 0,
+          "explanation": "The dictionary form always ends in -다. 여행 (travel) + 하다 = 여행하다. The polite conjugation would be 여행해요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is NOT a valid 하다 verb?",
+          "options": ["먹하다", "전화하다", "사랑하다"],
+          "correctIndex": 0,
+          "explanation": "먹다 (to eat) is its own verb — you cannot say 먹하다. 전화하다 (to call/phone) and 사랑하다 (to love) are valid 하다 verbs formed from the nouns 전화 and 사랑."
+        }
+      ]
+    },
+    {
+      "sectionId": "ida-anida",
+      "title": "이다 and 아니다: To Be and Not To Be",
+      "explanation": "이다 means 'to be' (equivalent to X is Y) and 아니다 means 'to not be.' Unlike English, 이다 attaches directly to the noun it follows. In the polite form: after a consonant, 이다 becomes 이에요; after a vowel, it becomes 예요. For example: 학생이에요 (I am a student — 생 ends in consonant), 의사예요 (I am a doctor — 사 ends in vowel). To negate, use 아니다, which conjugates to 아니에요 in the polite form: 학생이 아니에요 (I am not a student). Notice that 아니다 is a separate word preceded by the subject particle 이/가. The formal polite form uses -입니다 (is) and 아닙니다 (is not): 저는 학생입니다 (I am a student — very formal).",
+      "tip": "이에요 after consonants, 예요 after vowels — this is the polite 'is.' For 'is not,' always use 이/가 아니에요 as a separate phrase after the noun.",
+      "examples": [
+        { "ko": "저는 학생이에요.", "en": "I am a student. (이에요 after consonant)", "highlight": "이에요" },
+        { "ko": "이것은 사과예요.", "en": "This is an apple. (예요 after vowel)", "highlight": "예요" },
+        { "ko": "저는 의사가 아니에요.", "en": "I am not a doctor.", "highlight": "아니에요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 이것은 책___. (This is a book.)",
+          "options": ["이에요", "예요", "아니에요"],
+          "correctIndex": 0,
+          "explanation": "책 ends with the consonant ㄱ, so you use 이에요: 이것은 책이에요 (This is a book). Use 예요 only after vowel-ending nouns."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is not water' in polite Korean?",
+          "options": ["물이 아니에요", "물은 아니에요", "물 아니다"],
+          "correctIndex": 0,
+          "explanation": "To say 'is not,' use noun + 이/가 아니에요. 물 ends in a consonant, so: 물이 아니에요. The subject particle 이/가 goes between the noun and 아니에요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct polite form: 저는 가수___. (I am a singer.)",
+          "options": ["예요", "이에요", "입니다"],
+          "correctIndex": 0,
+          "explanation": "가수 ends with the vowel ㅜ, so you use 예요: 저는 가수예요. 이에요 would be used after a consonant-ending noun."
+        }
+      ]
+    },
+    {
+      "sectionId": "present-tense-conjugation",
+      "title": "Present Tense: -아/어요 Conjugation",
+      "explanation": "The most common polite present tense ending in Korean is -아/어요. To conjugate, take the verb stem (remove -다 from the dictionary form) and add -아요 if the last vowel of the stem is ㅏ or ㅗ (bright vowels), or -어요 if the last vowel is anything else (dark vowels). This is called vowel harmony. For example: 가다 → 가 + 아요 → 가요 (go — the ㅏ merges); 먹다 → 먹 + 어요 → 먹어요 (eat); 오다 → 오 + 아요 → 와요 (come — ㅗ+ㅏ contracts to ㅘ); 마시다 → 마시 + 어요 → 마셔요 (drink — ㅣ+ㅓ contracts to ㅕ). Contraction is very common: when the stem vowel and the ending vowel meet, they often merge into a compound vowel. 하다 is irregular — it always becomes 해요.",
+      "tip": "Step 1: Remove -다 to get the stem. Step 2: Check the last vowel of the stem. ㅏ or ㅗ → add -아요. Anything else → add -어요. Step 3: Contract if possible. 하다 is always 해요.",
+      "examples": [
+        { "ko": "가다 → 가요", "en": "to go → I go (ㅏ + 아요 merges to 가요)", "highlight": "가요" },
+        { "ko": "먹다 → 먹어요", "en": "to eat → I eat (ㅓ vowel, so -어요)", "highlight": "먹어요" },
+        { "ko": "오다 → 와요", "en": "to come → I come (ㅗ + 아요 contracts to 와요)", "highlight": "와요" },
+        { "ko": "마시다 → 마셔요", "en": "to drink → I drink (ㅣ + 어요 contracts to 셔요)", "highlight": "마셔요" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Conjugate 읽다 (to read) into the polite present tense.",
+          "options": ["읽어요", "읽아요", "읽요"],
+          "correctIndex": 0,
+          "explanation": "읽다 → stem 읽. The last vowel is ㅣ (not ㅏ or ㅗ), so add -어요: 읽어요 (I read). Only stems with ㅏ or ㅗ as the last vowel take -아요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the polite present tense of 보다 (to see/watch)?",
+          "options": ["봐요", "보아요", "보어요"],
+          "correctIndex": 0,
+          "explanation": "보다 → stem 보. The last vowel is ㅗ (bright), so add -아요: 보 + 아요 → 봐요 (ㅗ + ㅏ contracts to ㅘ). While 보아요 is technically correct, the contracted form 봐요 is standard in speech."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does 하다 become 해요 instead of 하아요?",
+          "options": ["하다 is irregular — it always conjugates to 해요", "Because ㅏ + ㅏ always becomes ㅐ", "Because 하다 is a 하다 verb"],
+          "correctIndex": 0,
+          "explanation": "하다 is a special irregular verb. Instead of following normal vowel harmony rules (which would give 하아요 or 하여요), it always contracts to 해요 in the polite form. This is simply memorized."
+        }
+      ]
+    }
+  ]
+}

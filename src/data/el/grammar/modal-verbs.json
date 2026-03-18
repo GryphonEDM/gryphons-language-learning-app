@@ -1,0 +1,170 @@
+{
+  "lessonId": "modal-verbs",
+  "nameEn": "Modal Verbs & Expressions",
+  "nameEl": "Τροπικά Ρήματα",
+  "icon": "🎭",
+  "tier": "B1",
+  "prerequisites": ["present-tense", "future-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "ability-permission",
+      "title": "Ability and Permission (μπορώ να)",
+      "explanation": "To express ability or permission in Greek, use μπορώ να (can / to be able to) followed by the subjunctive form of the verb. The subjunctive form in Modern Greek is identical to the present tense for most verbs, but the particle να links μπορώ to the dependent verb. μπορώ is a Group B contract verb: εγώ μπορώ, εσύ μπορείς, αυτός/ή/ό μπορεί, εμείς μπορούμε, εσείς μπορείτε, αυτοί/ές/ά μπορούν. To express inability, simply add δεν before μπορώ: δεν μπορώ να (I cannot). Note that the subject of μπορώ and the subject of the dependent verb must match: μπορώ να πάω (I can go), μπορείς να πας (you can go), μπορεί να πάει (he/she can go), and so on. This construction is used for both physical ability (Μπορώ να τρέξω γρήγορα — I can run fast) and granted permission (Μπορείς να φύγεις — You may leave).",
+      "tip": "μπορώ is irregular in the εσύ and εσείς forms: μπορείς and μπορείτε. These forms look like Group A verb endings. Do not confuse μπορεί (he/she can) with the impersonal μπορεί να, which means 'maybe' or 'it is possible that'.",
+      "conjugationTable": {
+        "verb": "μπορώ",
+        "meaning": "can / to be able to",
+        "rows": [
+          { "pronoun": "εγώ", "form": "μπορώ", "ending": "-ώ" },
+          { "pronoun": "εσύ", "form": "μπορείς", "ending": "-είς" },
+          { "pronoun": "αυτός/ή/ό", "form": "μπορεί", "ending": "-εί" },
+          { "pronoun": "εμείς", "form": "μπορούμε", "ending": "-ούμε" },
+          { "pronoun": "εσείς", "form": "μπορείτε", "ending": "-είτε" },
+          { "pronoun": "αυτοί/ές/ά", "form": "μπορούν", "ending": "-ούν" }
+        ]
+      },
+      "examples": [
+        { "el": "Μπορώ να σε βοηθήσω;", "en": "Can I help you?", "highlight": "Μπορώ να" },
+        { "el": "Μπορείς να μιλάς ελληνικά;", "en": "Can you speak Greek?", "highlight": "Μπορείς να" },
+        { "el": "Δεν μπορώ να έρθω αύριο.", "en": "I cannot come tomorrow.", "highlight": "Δεν μπορώ να" },
+        { "el": "Μπορεί να φέρει τα βιβλία;", "en": "Can he/she bring the books?", "highlight": "Μπορεί να" },
+        { "el": "Μπορούμε να χρησιμοποιήσουμε το τηλέφωνό σου;", "en": "Can we use your phone?", "highlight": "Μπορούμε να" },
+        { "el": "Δεν μπορούν να καταλάβουν τη διαφορά.", "en": "They cannot understand the difference.", "highlight": "Δεν μπορούν να" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Can you (εσύ) come tomorrow?' in Greek?",
+          "options": [
+            "Μπορείς να έρθεις αύριο;",
+            "Μπορώ να έρθεις αύριο;",
+            "Μπορείτε να έρθεις αύριο;"
+          ],
+          "correctIndex": 0,
+          "explanation": "For εσύ (you, singular), μπορώ conjugates as μπορείς. The sentence is Μπορείς να έρθεις αύριο;"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly expresses 'We cannot wait'?",
+          "options": [
+            "Δεν μπορούμε να περιμένουμε.",
+            "Δεν μπορώ να περιμένουμε.",
+            "Μπορούμε να δεν περιμένουμε."
+          ],
+          "correctIndex": 0,
+          "explanation": "Δεν comes before the conjugated form μπορούμε, not before να. The correct form is Δεν μπορούμε να περιμένουμε."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Δεν μπορώ να κοιμηθώ' mean?",
+          "options": [
+            "I cannot sleep.",
+            "I do not want to sleep.",
+            "I must not sleep."
+          ],
+          "correctIndex": 0,
+          "explanation": "Δεν μπορώ να = I cannot. κοιμηθώ is the subjunctive of κοιμάμαι (to sleep). The sentence means 'I cannot sleep.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "obligation-necessity",
+      "title": "Obligation and Necessity (πρέπει να, χρειάζεται να)",
+      "explanation": "Greek expresses obligation and necessity with three main constructions. First, πρέπει να (must / have to): πρέπει is an impersonal verb — it does not change for person or number — so only the following subjunctive verb changes: πρέπει να φύγω (I must leave), πρέπει να φύγεις (you must leave), πρέπει να φύγει (he/she must leave), and so on. Second, χρειάζεται να (it is necessary to / one needs to): also impersonal, used when something is required by circumstances. Third, οφείλω να (I ought to / I am obliged to): this verb does conjugate for person — εγώ οφείλω, εσύ οφείλεις, αυτός οφείλει — and carries a stronger moral or formal sense. Negatives: δεν πρέπει να means 'must not' (prohibition), while δεν χρειάζεται να means 'there is no need to' (absence of obligation). The past form έπρεπε να expresses what should have been done: έπρεπε να μελετήσεις (you should have studied).",
+      "tip": "Remember that πρέπει and χρειάζεται never change form — they are always third-person singular. The person is shown only in the subjunctive verb that follows να. Contrast: δεν πρέπει να (prohibition — don't do it) vs δεν χρειάζεται να (it's not necessary — no need to do it).",
+      "examples": [
+        { "el": "Πρέπει να φύγουμε τώρα.", "en": "We must leave now.", "highlight": "Πρέπει να" },
+        { "el": "Δεν πρέπει να μιλάς στην τάξη.", "en": "You must not talk in class.", "highlight": "Δεν πρέπει να" },
+        { "el": "Χρειάζεται να κάνεις γυμναστική κάθε μέρα.", "en": "It is necessary to exercise every day.", "highlight": "Χρειάζεται να" },
+        { "el": "Δεν χρειάζεται να φέρεις τίποτα.", "en": "You don't need to bring anything.", "highlight": "Δεν χρειάζεται να" },
+        { "el": "Οφείλω να σου πω την αλήθεια.", "en": "I ought to tell you the truth.", "highlight": "Οφείλω να" },
+        { "el": "Έπρεπε να τηλεφωνήσεις χθες.", "en": "You should have called yesterday.", "highlight": "Έπρεπε να" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'They must study tonight'?",
+          "options": [
+            "Πρέπει να μελετήσουν απόψε.",
+            "Πρέπουν να μελετήσουν απόψε.",
+            "Χρειάζονται να μελετήσουν απόψε."
+          ],
+          "correctIndex": 0,
+          "explanation": "πρέπει is always impersonal and never changes form. The correct sentence is Πρέπει να μελετήσουν απόψε."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'You must not park here' in Greek?",
+          "options": [
+            "Δεν πρέπει να παρκάρεις εδώ.",
+            "Δεν χρειάζεται να παρκάρεις εδώ.",
+            "Έπρεπε να παρκάρεις εδώ."
+          ],
+          "correctIndex": 0,
+          "explanation": "Δεν πρέπει να expresses prohibition (must not). Δεν χρειάζεται να means 'no need to', which is a different meaning."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Έπρεπε να φτάσεις νωρίτερα' mean?",
+          "options": [
+            "You should have arrived earlier.",
+            "You must arrive earlier.",
+            "You don't need to arrive earlier."
+          ],
+          "correctIndex": 0,
+          "explanation": "Έπρεπε να is the past form of πρέπει να and expresses that something should have happened but did not. The sentence means 'You should have arrived earlier.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "want-need-like",
+      "title": "Desires and Preferences (θέλω να, μου αρέσει να)",
+      "explanation": "Greek has a rich set of verbs for expressing desires, preferences, and intentions, all followed by να + subjunctive. The most common are: θέλω να (I want to), αγαπώ να (I love to), μου αρέσει να (I like to), προτιμώ να (I prefer to), ελπίζω να (I hope to), αποφασίζω να (I decide to). Note that μου αρέσει na is an indirect-object construction: the pronoun changes to match the person — μου αρέσει (I like), σου αρέσει (you like), του/της αρέσει (he/she likes), μας αρέσει (we like), σας αρέσει (you-pl. like), τους αρέσει (they like) — while αρέσει itself stays in the third person. All other verbs in this group conjugate normally for person: θέλω → θέλεις → θέλει → θέλουμε → θέλετε → θέλουν. The subjunctive verb following να agrees with the subject, just as with μπορώ and πρέπει: θέλω να πάω (I want to go), θέλεις να πας (you want to go), etc.",
+      "tip": "With μου αρέσει να, the indirect pronoun (μου, σου, του…) signals the person, not the verb αρέσει. Compare: μου αρέσει να τραγουδώ (I like to sing) — the pronoun μου signals 'I', and αρέσει remains singular. If the thing liked is plural, αρέσει becomes αρέσουν: μου αρέσουν τα βιβλία (I like books) — but when followed by να + verb, αρέσει stays singular.",
+      "examples": [
+        { "el": "Θέλω να μάθω ελληνικά.", "en": "I want to learn Greek.", "highlight": "Θέλω να" },
+        { "el": "Αγαπώ να μαγειρεύω για τους φίλους μου.", "en": "I love to cook for my friends.", "highlight": "Αγαπώ να" },
+        { "el": "Μου αρέσει να περπατώ στην παραλία.", "en": "I like to walk on the beach.", "highlight": "Μου αρέσει να" },
+        { "el": "Προτιμώ να μείνω σπίτι το βράδυ.", "en": "I prefer to stay home in the evening.", "highlight": "Προτιμώ να" },
+        { "el": "Ελπίζω να σε δω σύντομα.", "en": "I hope to see you soon.", "highlight": "Ελπίζω να" },
+        { "el": "Αποφάσισε να αλλάξει δουλειά.", "en": "He/she decided to change jobs.", "highlight": "Αποφάσισε να" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She likes to read' using μου αρέσει?",
+          "options": [
+            "Της αρέσει να διαβάζει.",
+            "Μου αρέσει να διαβάζει.",
+            "Της αρέσουν να διαβάζει."
+          ],
+          "correctIndex": 0,
+          "explanation": "For 'she', the indirect pronoun is της: της αρέσει. The verb αρέσει stays singular when followed by να + infinitive. The correct sentence is Της αρέσει να διαβάζει."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly expresses 'We prefer to travel by train'?",
+          "options": [
+            "Προτιμούμε να ταξιδεύουμε με τρένο.",
+            "Προτιμώ να ταξιδεύουμε με τρένο.",
+            "Προτιμάμε να ταξιδεύω με τρένο."
+          ],
+          "correctIndex": 0,
+          "explanation": "For εμείς (we), προτιμώ conjugates as προτιμούμε, and the subjunctive verb also takes the εμείς form: ταξιδεύουμε. The correct sentence is Προτιμούμε να ταξιδεύουμε με τρένο."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'Ελπίζουν να κερδίσουν το παιχνίδι' mean?",
+          "options": [
+            "They hope to win the game.",
+            "They decided to win the game.",
+            "They want to play the game."
+          ],
+          "correctIndex": 0,
+          "explanation": "Ελπίζουν is the third-person plural of ελπίζω (to hope). κερδίσουν is the subjunctive of κερδίζω (to win). The sentence means 'They hope to win the game.'"
+        }
+      ]
+    }
+  ]
+}

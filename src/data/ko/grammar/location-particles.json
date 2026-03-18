@@ -1,0 +1,113 @@
+{
+  "lessonId": "location-particles",
+  "nameEn": "Location Particles",
+  "nameKo": "장소 조사",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["particles-subject-object"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "particle-e",
+      "title": "에: Location & Destination",
+      "explanation": "The particle 에 has two main uses: marking a static location (where something exists) and marking a destination (where someone is going). For static location, 에 is used with existence verbs 있다 and 없다: 집에 있어요 (I am at home), 학교에 없어요 (I am not at school). For destination, 에 is used with movement verbs like 가다, 오다, 돌아가다: 학교에 가요 (I go to school), 한국에 왔어요 (I came to Korea). 에 also marks time: 세 시에 만나요 (Let's meet at 3 o'clock), 월요일에 (on Monday). It is one of the most frequent particles in Korean. Important: 에 is NOT used to mark the location of an ongoing action — for that, you need 에서.",
+      "tip": "에 = where something IS (static) or where you are GOING TO. Think of it as 'at/in/on' for existence and 'to' for movement. 에 never changes form — it is always just 에 regardless of what comes before it.",
+      "examples": [
+        { "ko": "고양이가 집에 있어요.", "en": "The cat is at home. (에 = static location)", "highlight": "에" },
+        { "ko": "학교에 가요.", "en": "I go to school. (에 = destination)", "highlight": "에" },
+        { "ko": "아침 여덟 시에 일어나요.", "en": "I wake up at 8 in the morning. (에 = time)", "highlight": "에" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 서울___ 살아요. (I live in Seoul.)",
+          "options": ["에", "에서", "으로"],
+          "correctIndex": 0,
+          "explanation": "살다 (to live) uses 에 for the place of residence: 서울에 살아요. While 살다 describes an ongoing state, it patterns with 에 (not 에서) as an exception because it indicates where someone exists."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 에 for a destination?",
+          "options": ["도서관에 갔어요. (I went to the library.)", "도서관에 공부했어요.", "도서관에서 갔어요."],
+          "correctIndex": 0,
+          "explanation": "에 marks the destination with movement verbs: 도서관에 갔어요 (went TO the library). For an action done at the library, you would use 에서: 도서관에서 공부했어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 금요일___ 파티가 있어요. (There is a party on Friday.)",
+          "options": ["에", "에서", "까지"],
+          "correctIndex": 0,
+          "explanation": "에 marks time expressions: 금요일에 (on Friday), 세 시에 (at 3 o'clock), 여름에 (in summer). Time + 에 tells you when something happens."
+        }
+      ]
+    },
+    {
+      "sectionId": "particle-eseo",
+      "title": "에서: Location of Action",
+      "explanation": "The particle 에서 marks the location where an action takes place. While 에 marks static existence, 에서 marks the place of an activity: 도서관에서 공부해요 (I study at the library), 식당에서 먹어요 (I eat at the restaurant), 공원에서 운동해요 (I exercise at the park). The distinction is crucial: 학교에 있어요 (I am at school — existence with 에) vs. 학교에서 공부해요 (I study at school — action with 에서). 에서 also means 'from' when indicating a starting point of movement: 서울에서 부산까지 (from Seoul to Busan), 미국에서 왔어요 (I came from America). Think of 에서 as the place where something actively happens or the point of origin.",
+      "tip": "에 = being somewhere (있다/없다) or going somewhere. 에서 = doing something somewhere or coming from somewhere. If there is an action verb (other than 가다/오다/살다), you almost certainly need 에서.",
+      "examples": [
+        { "ko": "카페에서 커피를 마셔요.", "en": "I drink coffee at a cafe. (에서 = location of action)", "highlight": "에서" },
+        { "ko": "미국에서 왔어요.", "en": "I came from America. (에서 = origin/starting point)", "highlight": "에서" },
+        { "ko": "회사에서 일해요.", "en": "I work at a company. (에서 = where the action happens)", "highlight": "에서" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct particle: 도서관___ 책을 읽어요. (I read books at the library.)",
+          "options": ["에서", "에", "으로"],
+          "correctIndex": 0,
+          "explanation": "Reading is an action, so use 에서 for the location: 도서관에서 책을 읽어요. Use 에 only with existence (있다/없다) or movement (가다/오다) verbs."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 일본에서 왔어요 mean?",
+          "options": ["I came from Japan.", "I went to Japan.", "I am in Japan."],
+          "correctIndex": 0,
+          "explanation": "에서 with 오다 means 'from': 일본에서 왔어요 = I came from Japan. 에서 marks the origin or starting point of the movement."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct: 집___ 있어요 (I am at home)?",
+          "options": ["에", "에서", "까지"],
+          "correctIndex": 0,
+          "explanation": "있다 (to exist/be) takes 에 for location: 집에 있어요 (I am at home). 에서 is for action locations, not existence."
+        }
+      ]
+    },
+    {
+      "sectionId": "direction-range",
+      "title": "Direction & Range: (으)로, 부터, 까지",
+      "explanation": "Three more location-related particles complete the picture. (으)로 marks direction or means: 오른쪽으로 가세요 (Go to the right), 버스로 가요 (I go by bus). Use 으로 after consonants (except ㄹ) and 로 after vowels and ㄹ: 서울로 (to Seoul), 학교로 (toward school), 지하철로 (by subway). 부터 means 'from' (starting point in time or sequence): 아침부터 (from morning), 월요일부터 (from Monday), 여기부터 (from here). 까지 means 'to/until' (end point): 저녁까지 (until evening), 서울까지 (to/as far as Seoul). They often pair together: 아침부터 저녁까지 (from morning until evening), 서울에서 부산까지 (from Seoul to Busan — note 에서 for spatial 'from' vs. 부터 for temporal 'from').",
+      "tip": "(으)로 = direction or method ('toward' or 'by means of'). 부터 = starting point ('from'). 까지 = ending point ('until/to'). 부터...까지 is a natural pair, like English 'from...to.'",
+      "examples": [
+        { "ko": "왼쪽으로 가세요.", "en": "Please go to the left. ((으)로 = direction)", "highlight": "으로" },
+        { "ko": "아침부터 저녁까지 일했어요.", "en": "I worked from morning until evening.", "highlight": "부터" },
+        { "ko": "서울에서 부산까지 KTX로 두 시간 반 걸려요.", "en": "From Seoul to Busan it takes 2.5 hours by KTX.", "highlight": "까지" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 지하철___ 회사에 가요. (I go to work by subway.)",
+          "options": ["로", "으로", "에서"],
+          "correctIndex": 0,
+          "explanation": "지하철 ends in ㄹ, and after ㄹ you use 로 (not 으로): 지하철로. (으)로 here indicates the means of transportation."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'from 9 o'clock to 6 o'clock'?",
+          "options": ["아홉 시부터 여섯 시까지", "아홉 시에서 여섯 시까지", "아홉 시부터 여섯 시에"],
+          "correctIndex": 0,
+          "explanation": "For time ranges, use 부터 (from) and 까지 (until): 아홉 시부터 여섯 시까지 (from 9 until 6). 에서...까지 is used for spatial ranges."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle shows direction/toward?",
+          "options": ["(으)로", "에서", "부터"],
+          "correctIndex": 0,
+          "explanation": "(으)로 indicates direction ('toward') or means ('by'): 이쪽으로 오세요 (Please come this way), 비행기로 (by airplane). It is distinct from 에 (destination) in that it emphasizes the direction or route."
+        }
+      ]
+    }
+  ]
+}

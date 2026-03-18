@@ -1,0 +1,84 @@
+{
+  "lessonId": "question-forms",
+  "nameEn": "Question Forms",
+  "nameZh": "疑问句",
+  "icon": "❓",
+  "tier": "A1",
+  "prerequisites": ["negation"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "ma-questions",
+      "title": "吗 (ma) Questions — Yes/No Questions",
+      "explanation": "The simplest way to form a yes/no question in Chinese is to add the particle 吗 (ma) at the end of a statement. The word order stays exactly the same — no inversion, no auxiliary verb. Statement: 你喜欢咖啡。(You like coffee.) → Question: 你喜欢咖啡吗？(Do you like coffee?) To answer, repeat the verb for yes or negate it for no: 喜欢 (yes, I like it) / 不喜欢 (no, I don't like it). This pattern works with any statement: just add 吗 at the end.",
+      "tip": "Think of 吗 as a spoken question mark. The sentence structure never changes — 吗 does all the work of turning a statement into a question.",
+      "examples": [
+        { "zh": "你是学生吗？", "pinyin": "Nǐ shì xuéshēng ma?", "en": "Are you a student?", "highlight": "吗" },
+        { "zh": "他会说中文吗？", "pinyin": "Tā huì shuō Zhōngwén ma?", "en": "Can he speak Chinese?", "highlight": "吗" },
+        { "zh": "你喜欢吃米饭吗？", "pinyin": "Nǐ xǐhuān chī mǐfàn ma?", "en": "Do you like eating rice?", "highlight": "吗" },
+        { "zh": "今天很热吗？", "pinyin": "Jīntiān hěn rè ma?", "en": "Is it very hot today?", "highlight": "吗" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you turn '她是老师' (She is a teacher) into a yes/no question?", "options": ["她是老师吗？", "是她老师吗？", "吗她是老师？"], "correctIndex": 0, "explanation": "Add 吗 at the end. Word order does not change: 她是老师吗？" },
+        { "type": "fill-blank", "prompt": "你喝茶___？(Do you drink tea?)", "acceptedAnswers": ["吗"], "hint": "The yes/no question particle", "explanation": "Add 吗 at the end of the statement to form a yes/no question: 你喝茶吗？" },
+        { "type": "multiple-choice", "prompt": "Someone asks 你是中国人吗？How would you answer 'No, I'm not'?", "options": ["不是。", "没是。", "不吗。"], "correctIndex": 0, "explanation": "To answer 'no', negate the verb: 不是 (am not). You do not use 吗 in the answer." }
+      ]
+    },
+    {
+      "sectionId": "question-words",
+      "title": "Question Words — Who, What, Where, When, Why, How",
+      "explanation": "Chinese question words go in the same position as the answer would occupy — there is no special word order for questions. Key question words: 什么 (shénme, what), 谁 (shéi, who), 哪里/哪儿 (nǎlǐ/nǎr, where), 什么时候 (shénme shíhòu, when), 为什么 (wèishénme, why), 怎么 (zěnme, how), 几 (jǐ, how many, for small numbers), 多少 (duōshǎo, how many/how much, for larger amounts). Example: 你吃什么？(What do you eat?) — 什么 sits where the object would be. Do NOT add 吗 to questions that already use a question word.",
+      "tip": "Place the question word exactly where the answer would go. 你叫什么名字？→ 我叫小明。The question word 什么 fills the same slot as the answer 小明.",
+      "examples": [
+        { "zh": "你叫什么名字？", "pinyin": "Nǐ jiào shénme míngzì?", "en": "What is your name?", "highlight": "什么" },
+        { "zh": "谁是你的老师？", "pinyin": "Shéi shì nǐ de lǎoshī?", "en": "Who is your teacher?", "highlight": "谁" },
+        { "zh": "你住在哪里？", "pinyin": "Nǐ zhù zài nǎlǐ?", "en": "Where do you live?", "highlight": "哪里" },
+        { "zh": "你为什么学中文？", "pinyin": "Nǐ wèishénme xué Zhōngwén?", "en": "Why do you study Chinese?", "highlight": "为什么" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "How do you ask 'What do you want to eat?' in Chinese?", "options": ["你想吃什么？", "什么你想吃？", "你想吃什么吗？"], "correctIndex": 0, "explanation": "什么 goes where the answer would be (the object position). Do not add 吗 — the question word already makes it a question." },
+        { "type": "fill-blank", "prompt": "你___学中文？(Why do you study Chinese?)", "acceptedAnswers": ["为什么"], "hint": "The question word meaning 'why'", "explanation": "为什么 (wèishénme) means 'why' and goes before the verb: 你为什么学中文？" },
+        { "type": "matching", "prompt": "Match each question word to its meaning:", "pairs": [
+          { "left": "什么", "right": "what" },
+          { "left": "谁", "right": "who" },
+          { "left": "哪里", "right": "where" },
+          { "left": "怎么", "right": "how" }
+        ], "explanation": "什么 = what, 谁 = who, 哪里 = where, 怎么 = how. These are the most common Chinese question words." }
+      ]
+    },
+    {
+      "sectionId": "a-not-a-questions",
+      "title": "A-not-A Questions — Verb不Verb Pattern",
+      "explanation": "Another way to ask yes/no questions is the A-not-A pattern: repeat the verb (or adjective) with 不 (bù) in between. This offers a choice between the positive and negative form. 你去不去？(Are you going or not?) = Do you want to go? 你是不是学生？(Are you or are you not a student?) This is slightly more direct than 吗 questions. For verbs with two syllables, you can shorten by only repeating the first syllable: 你喜不喜欢？or 你喜欢不喜欢？ For past actions with 有 (yǒu), use 有没有 instead of 有不有.",
+      "tip": "A-not-A is like asking 'do you or don't you?' in one compact phrase. Never combine A-not-A with 吗 — they are two separate question strategies.",
+      "examples": [
+        { "zh": "你去不去？", "pinyin": "Nǐ qù bú qù?", "en": "Are you going (or not)?", "highlight": "去不去" },
+        { "zh": "这个好不好？", "pinyin": "Zhège hǎo bù hǎo?", "en": "Is this good (or not)?", "highlight": "好不好" },
+        { "zh": "你是不是中国人？", "pinyin": "Nǐ shì bú shì Zhōngguó rén?", "en": "Are you Chinese (or not)?", "highlight": "是不是" },
+        { "zh": "你有没有时间？", "pinyin": "Nǐ yǒu méiyǒu shíjiān?", "en": "Do you have time (or not)?", "highlight": "有没有" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "Convert '你喝咖啡吗？' to an A-not-A question:", "options": ["你喝不喝咖啡？", "你不喝咖啡吗？", "你喝咖啡不喝吗？"], "correctIndex": 0, "explanation": "Repeat the verb with 不 in between: 喝不喝. The object goes after: 你喝不喝咖啡？" },
+        { "type": "fill-blank", "prompt": "你___学生？(Are you a student or not?) — use A-not-A with 是", "acceptedAnswers": ["是不是"], "hint": "Verb + 不 + Verb pattern with 是", "explanation": "A-not-A with 是: 是不是. Full sentence: 你是不是学生？" },
+        { "type": "multiple-choice", "prompt": "Why do we say 有没有 instead of 有不有?", "options": ["有 is negated with 没, not 不", "There is no reason, both work", "有不有 is more formal"], "correctIndex": 0, "explanation": "The verb 有 is always negated with 没 (méi), never with 不. So the A-not-A form is 有没有." }
+      ]
+    },
+    {
+      "sectionId": "ne-questions",
+      "title": "呢 (ne) Questions — Follow-up and \"What about...?\"",
+      "explanation": "The particle 呢 (ne) is used to ask follow-up questions meaning 'What about...?' or 'And you?' after a topic has already been introduced. It is short and conversational. A: 我很好。你呢？(I'm fine. And you?) It can also be used after a noun or pronoun to ask about its status or whereabouts: 我的书呢？(What about my book? / Where is my book?) 呢 cannot start a new topic on its own — there must be prior context or an obvious shared situation.",
+      "tip": "呢 is a conversational shortcut. It piggybacks on the previous context so you don't have to repeat the whole question. Think of it as '...and [this one]?'",
+      "examples": [
+        { "zh": "我是美国人。你呢？", "pinyin": "Wǒ shì Měiguó rén. Nǐ ne?", "en": "I'm American. And you?", "highlight": "呢" },
+        { "zh": "咖啡很好喝。茶呢？", "pinyin": "Kāfēi hěn hǎohē. Chá ne?", "en": "The coffee is delicious. What about the tea?", "highlight": "呢" },
+        { "zh": "我的手机呢？", "pinyin": "Wǒ de shǒujī ne?", "en": "Where is my phone?", "highlight": "呢" },
+        { "zh": "他去了北京。她呢？", "pinyin": "Tā qù le Běijīng. Tā ne?", "en": "He went to Beijing. What about her?", "highlight": "呢" }
+      ],
+      "exercises": [
+        { "type": "multiple-choice", "prompt": "A says: 我喜欢猫。How do you ask 'What about you?' using 呢?", "options": ["你呢？", "你吗？", "什么你？"], "correctIndex": 0, "explanation": "你呢？means 'And you? / What about you?' — it reuses the context from the previous statement." },
+        { "type": "fill-blank", "prompt": "我的书___？(Where is my book?)", "acceptedAnswers": ["呢"], "hint": "The follow-up question particle", "explanation": "我的书呢？uses 呢 to ask about the status or whereabouts of something already known to both speakers." },
+        { "type": "multiple-choice", "prompt": "What is the main difference between 吗 and 呢?", "options": ["吗 forms a full yes/no question; 呢 asks a follow-up based on prior context", "They are interchangeable", "呢 is more formal than 吗"], "correctIndex": 0, "explanation": "吗 turns any statement into a complete yes/no question. 呢 is a follow-up particle that relies on context — it means 'and...?' or 'what about...?'" }
+      ]
+    }
+  ]
+}

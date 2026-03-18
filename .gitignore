@@ -6,6 +6,8 @@ dist
 tts-cache/
 tts-cache-en/
 tts-cache-ru/
+tts-cache-zh/
+tts-cache-ja/
 *.egg-info
 __pycache__
 
@@ -13,6 +15,10 @@ __pycache__
 tts-model/
 tts-model-ru/
 tts-model-en/
+tts-model-de/
+tts-model-es/
+tts-model-fr/
+tts-model-uk-silero/
 
 # Database files
 *.db

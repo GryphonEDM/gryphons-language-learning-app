@@ -1,0 +1,149 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameFr": "Au restaurant",
+  "icon": "🍽️",
+  "context": "You are at a traditional French restaurant in Paris. The waiter comes to greet you and take your order.",
+  "characters": {
+    "npc": { "name": "Le Serveur" },
+    "player": { "name": "Vous" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Bonsoir ! Bienvenue au restaurant. Avez-vous une réservation ?",
+      "translation": "Good evening! Welcome to the restaurant. Do you have a reservation?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes, you have a reservation for two people under your name.",
+      "acceptedResponses": [
+        "Oui, j'ai une réservation pour deux personnes au nom de [name].",
+        "Oui, une réservation pour deux au nom de [name].",
+        "Oui, c'est au nom de [name], pour deux personnes.",
+        "J'ai réservé une table pour deux personnes. C'est au nom de [name]."
+      ],
+      "keyWords": ["réservation", "deux"],
+      "hint": "Use 'j'ai une réservation' and 'pour deux personnes'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Très bien, je vois votre réservation. Veuillez me suivre, je vais vous installer. Voici votre table et voici le menu.",
+      "translation": "Very good, I see your reservation. Please follow me, I'll get you seated. Here is your table and here is the menu."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him and ask if there is a dish of the day.",
+      "acceptedResponses": [
+        "Merci. Est-ce qu'il y a un plat du jour ?",
+        "Merci beaucoup. Vous avez un plat du jour ?",
+        "Merci. Quel est le plat du jour ?",
+        "Merci. Est-ce que vous avez un plat du jour aujourd'hui ?"
+      ],
+      "keyWords": ["merci", "plat du jour"],
+      "hint": "Thank him with 'merci' then ask about 'le plat du jour'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Oui, bien sûr. Le plat du jour est un filet de saumon avec des haricots verts et une sauce au beurre blanc. Je reviendrai prendre votre commande dans quelques minutes.",
+      "translation": "Yes, of course. Today's special is a salmon fillet with green beans and a white butter sauce. I'll come back to take your order in a few minutes."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say that sounds delicious and that you are ready to order.",
+      "acceptedResponses": [
+        "Ça a l'air délicieux. En fait, je suis prêt à commander maintenant.",
+        "Cela semble très bon. Je suis déjà prêt à commander, si vous voulez.",
+        "Ça a l'air très bon ! Je peux commander maintenant, s'il vous plaît ?",
+        "C'est tentant ! En fait, je suis prêt à passer ma commande."
+      ],
+      "keyWords": ["délicieux", "commander"],
+      "hint": "Say 'délicieux' or 'très bon' and that you are 'prêt à commander'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Bien sûr ! Qu'est-ce que vous prendrez comme entrée ?",
+      "translation": "Of course! What will you have as a starter?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order the onion soup as your starter.",
+      "acceptedResponses": [
+        "Je vais prendre la soupe à l'oignon, s'il vous plaît.",
+        "Pour moi, la soupe à l'oignon en entrée, s'il vous plaît.",
+        "Je prendrai la soupe à l'oignon comme entrée.",
+        "La soupe à l'oignon, s'il vous plaît, comme entrée."
+      ],
+      "keyWords": ["soupe", "entrée"],
+      "hint": "Use 'Je vais prendre' or 'Je prendrai' and mention the 'soupe à l'oignon'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Très bon choix. Et comme plat principal ?",
+      "translation": "Excellent choice. And for the main course?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order the dish of the day as your main course.",
+      "acceptedResponses": [
+        "Je vais prendre le plat du jour, s'il vous plaît.",
+        "Le plat du jour pour moi, s'il vous plaît.",
+        "Je prendrai le plat du jour comme plat principal.",
+        "Pour le plat principal, je vais prendre le plat du jour."
+      ],
+      "keyWords": ["plat du jour", "prendre"],
+      "hint": "Order 'le plat du jour' using 'Je vais prendre' or 'je prendrai'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Excellent ! Et pour finir, est-ce que vous souhaitez voir la carte des desserts ?",
+      "translation": "Excellent! And to finish, would you like to see the dessert menu?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes please, and ask what they recommend.",
+      "acceptedResponses": [
+        "Oui, s'il vous plaît. Qu'est-ce que vous recommandez ?",
+        "Oui, volontiers. Qu'est-ce que vous nous conseillez comme dessert ?",
+        "Oui, avec plaisir. Qu'est-ce que vous recommandez ?",
+        "Oui, s'il vous plaît ! Qu'est-ce que vous conseillez ?"
+      ],
+      "keyWords": ["oui", "recommandez"],
+      "hint": "Say 'oui, s'il vous plaît' and ask 'qu'est-ce que vous recommandez ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Je vous recommande vivement notre tarte tatin maison. C'est notre spécialité. Sinon, nous avons aussi une crème brûlée excellente.",
+      "translation": "I highly recommend our homemade tarte tatin. It's our specialty. Otherwise, we also have an excellent crème brûlée."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order the crème brûlée for dessert.",
+      "acceptedResponses": [
+        "Je vais prendre la crème brûlée, s'il vous plaît.",
+        "La crème brûlée pour moi, s'il vous plaît.",
+        "Je prendrai la crème brûlée comme dessert.",
+        "Alors je vais prendre la crème brûlée, merci."
+      ],
+      "keyWords": ["crème brûlée", "prendre"],
+      "hint": "Order 'la crème brûlée' with 'Je vais prendre' or 'je prendrai'."
+    },
+    {
+      "speaker": "npc",
+      "text": "Parfait ! Je vous apporte ça tout de suite. Bon appétit !",
+      "translation": "Perfect! I'll bring that right away. Enjoy your meal!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him, then at the end of the meal ask for the bill.",
+      "acceptedResponses": [
+        "Merci. L'addition, s'il vous plaît.",
+        "Merci beaucoup. Pourriez-vous nous apporter l'addition, s'il vous plaît ?",
+        "Merci. Est-ce que je peux avoir l'addition, s'il vous plaît ?",
+        "Merci. Quand vous avez un moment, l'addition s'il vous plaît."
+      ],
+      "keyWords": ["merci", "addition"],
+      "hint": "Thank him with 'merci' and ask for 'l'addition' (the bill)."
+    }
+  ]
+}

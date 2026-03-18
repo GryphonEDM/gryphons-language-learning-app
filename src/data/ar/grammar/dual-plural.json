@@ -1,0 +1,116 @@
+{
+  "lessonId": "dual-plural",
+  "nameEn": "Dual Number & Plurals",
+  "nameAr": "المثنى والجمع",
+  "icon": "👥",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "dual-number",
+      "title": "The Dual Number — المُثَنَّى",
+      "explanation": "Arabic has a special grammatical number for exactly two of something, called the dual (المُثَنَّى). English only has singular and plural, but Arabic distinguishes singular, dual, and plural. To form the dual of a noun, add ـَانِ (-aani) in the nominative case or ـَيْنِ (-ayni) in the accusative/genitive case to the singular form. For example: كِتَاب (kitaab, one book) becomes كِتَابَانِ (kitaabaani, two books, nominative) or كِتَابَيْنِ (kitaabayni, two books, accusative/genitive). If the singular noun ends in taa marbuuta (ة), it changes to a regular taa (ت) before the dual ending: مُدَرِّسَة (mudarrisa, one female teacher) becomes مُدَرِّسَتَانِ (mudarrisataani, two female teachers). The dual is used whenever you are talking about exactly two items — using the plural for two things is incorrect in standard Arabic.",
+      "tip": "Remember: -aanI for nominative dual, -aynI for accusative/genitive dual. Whenever the number is exactly two, you must use the dual — not the plural. This applies to nouns, adjectives, verbs, and pronouns.",
+      "examples": [
+        { "ar": "وَلَدَانِ", "en": "two boys (nominative dual of وَلَد)", "highlight": "ـَانِ" },
+        { "ar": "وَلَدَيْنِ", "en": "two boys (accusative/genitive dual of وَلَد)", "highlight": "ـَيْنِ" },
+        { "ar": "طَالِبَتَانِ", "en": "two female students (dual of طَالِبَة)", "highlight": "ـَتَانِ" },
+        { "ar": "يَوْمَانِ", "en": "two days (dual of يَوْم)", "highlight": "ـَانِ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the dual form of كِتَاب (book) in the nominative case?",
+          "options": ["كِتَابَانِ", "كِتَابَيْنِ", "كُتُب"],
+          "correctIndex": 0,
+          "explanation": "The nominative dual is formed by adding ـَانِ (-aani) to the singular. كِتَاب + ـَانِ = كِتَابَانِ (two books, nominative). كِتَابَيْنِ would be accusative/genitive dual, and كُتُب is the plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When talking about exactly two things in Modern Standard Arabic, you should use:",
+          "options": ["The dual form", "The plural form", "The singular form with the number two"],
+          "correctIndex": 0,
+          "explanation": "Arabic requires the dual form for exactly two of something. Using the plural for two items is grammatically incorrect in MSA. The dual has its own endings and verb conjugations."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to taa marbuuta (ة) when forming the dual?",
+          "options": ["It changes to regular taa (ت) before the dual ending", "It is dropped entirely", "It stays as ة"],
+          "correctIndex": 0,
+          "explanation": "When forming the dual of a noun ending in taa marbuuta (ة), the ة becomes a regular ت before the dual suffix. So مُدَرِّسَة becomes مُدَرِّسَتَانِ, not مُدَرِّسَةَانِ."
+        }
+      ]
+    },
+    {
+      "sectionId": "sound-plurals",
+      "title": "Sound Plurals — جَمْع السَّالِم",
+      "explanation": "Sound plurals (جَمْع سَالِم) are formed by adding a suffix to the singular without changing the internal structure of the word. There are two types: the masculine sound plural (جَمْع المُذَكَّر السَّالِم) adds ـُونَ (-uuna) in the nominative or ـِينَ (-iina) in the accusative/genitive. It is typically used for male people and certain professions. For example: مُعَلِّم (teacher) becomes مُعَلِّمُونَ (teachers, nominative) or مُعَلِّمِينَ (teachers, accusative/genitive). The feminine sound plural (جَمْع المُؤَنَّث السَّالِم) adds ـَات (-aat) to the singular after removing the taa marbuuta if present. For example: مُعَلِّمَة (female teacher) becomes مُعَلِّمَات (female teachers). The feminine sound plural is also used for many non-human nouns and borrowed words regardless of gender.",
+      "tip": "Masculine sound plural: ـُونَ (nominative) / ـِينَ (accusative & genitive). Feminine sound plural: ـَات for all cases. The feminine sound plural is the 'default' plural for many borrowed words and abstractions.",
+      "examples": [
+        { "ar": "مُهَنْدِسُونَ", "en": "engineers (masc. sound plural, nominative)", "highlight": "ـُونَ" },
+        { "ar": "مُهَنْدِسِينَ", "en": "engineers (masc. sound plural, accusative/genitive)", "highlight": "ـِينَ" },
+        { "ar": "مُعَلِّمَات", "en": "female teachers (fem. sound plural)", "highlight": "ـَات" },
+        { "ar": "اجْتِمَاعَات", "en": "meetings (fem. sound plural of اجْتِمَاع)", "highlight": "ـَات" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the masculine sound plural of مُسْلِم (Muslim) in the nominative?",
+          "options": ["مُسْلِمُونَ", "مُسْلِمِينَ", "مُسْلِمَات"],
+          "correctIndex": 0,
+          "explanation": "The masculine sound plural in the nominative adds ـُونَ. So مُسْلِم becomes مُسْلِمُونَ. In the accusative or genitive, it would be مُسْلِمِينَ. مُسْلِمَات is the feminine sound plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the feminine sound plural typically formed?",
+          "options": ["By adding ـَات to the stem", "By adding ـُونَ to the stem", "By changing internal vowels"],
+          "correctIndex": 0,
+          "explanation": "The feminine sound plural adds ـَات (-aat) to the singular stem. If the singular ends in taa marbuuta (ة), it is removed first: طَالِبَة → طَالِبَات. This ending is used for feminine nouns, many non-human nouns, and borrowed words."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The masculine sound plural ـُونَ / ـِينَ is typically used for:",
+          "options": ["Male people and professions", "All Arabic nouns", "Non-human plurals only"],
+          "correctIndex": 0,
+          "explanation": "The masculine sound plural is generally restricted to male rational beings — men, male professions, and male nationalities. It is not used for objects, animals, or abstract concepts, which take either the feminine sound plural or broken plurals."
+        }
+      ]
+    },
+    {
+      "sectionId": "broken-plurals",
+      "title": "Broken Plurals — جَمْع التَّكْسِير",
+      "explanation": "Broken plurals (جَمْع التَّكْسِير) are the most distinctive feature of Arabic noun morphology. Unlike sound plurals that add suffixes, broken plurals change the internal vowel pattern of the word — the consonantal root stays the same, but the vowels between the root letters shift. There are over 30 broken plural patterns, but some are very common. Key patterns include: فُعُول (fu'uul) as in بُيُوت (houses, from بَيْت), أَفْعَال (af'aal) as in أَقْلَام (pens, from قَلَم), فُعَّال (fu''aal) as in كُتَّاب (writers, from كَاتِب), and فِعَال (fi'aal) as in رِجَال (men, from رَجُل). There is no single rule to predict which broken plural pattern a noun will take — it must be memorized for each noun. However, with exposure, you will begin to recognize common patterns. Non-human plurals are treated as feminine singular for grammatical agreement.",
+      "tip": "Always learn a noun with its plural. There is no shortcut — broken plurals must be memorized. The good news is that after learning 100-200 nouns, you start to develop strong intuitions about which pattern a new word might follow.",
+      "examples": [
+        { "ar": "كُتُب", "en": "books (broken plural of كِتَاب, pattern: فُعُل)", "highlight": "كُتُب" },
+        { "ar": "رِجَال", "en": "men (broken plural of رَجُل, pattern: فِعَال)", "highlight": "رِجَال" },
+        { "ar": "أَقْلَام", "en": "pens (broken plural of قَلَم, pattern: أَفْعَال)", "highlight": "أَقْلَام" },
+        { "ar": "بُيُوت", "en": "houses (broken plural of بَيْت, pattern: فُعُول)", "highlight": "بُيُوت" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What makes broken plurals different from sound plurals?",
+          "options": ["They change the internal vowel pattern of the word", "They add a suffix to the end", "They only apply to feminine nouns"],
+          "correctIndex": 0,
+          "explanation": "Broken plurals 'break' the singular pattern by rearranging the vowels between the root consonants. The root letters stay in place, but the voweling changes completely. For example, كِتَاب (ki-taa-b) becomes كُتُب (ku-tu-b) — same root ك-ت-ب, different vowel pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The word بُيُوت (houses) is the broken plural of:",
+          "options": ["بَيْت (house)", "بَاب (door)", "بِنْت (girl)"],
+          "correctIndex": 0,
+          "explanation": "بُيُوت is the broken plural of بَيْت (house), following the فُعُول pattern. The root ب-ي-ت is preserved in both the singular and plural, but the vowel pattern changes from فَعْل to فُعُول."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How are non-human broken plurals treated grammatically?",
+          "options": ["As feminine singular", "As masculine plural", "As dual"],
+          "correctIndex": 0,
+          "explanation": "In MSA, non-human plurals (whether broken or sound) are treated as feminine singular for purposes of adjective agreement and verb conjugation. So you say الكُتُبُ الجَدِيدَةُ (the new books) with feminine singular agreement, not الكُتُبُ الجُدُد."
+        }
+      ]
+    }
+  ]
+}

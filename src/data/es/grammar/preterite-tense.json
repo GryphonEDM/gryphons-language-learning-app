@@ -1,0 +1,231 @@
+{
+  "lessonId": "preterite-tense",
+  "nameEn": "Preterite Tense",
+  "nameEs": "El Pretérito Indefinido",
+  "icon": "⏮️",
+  "tier": "B1",
+  "prerequisites": ["present-tense"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "regular-preterite-endings",
+      "title": "Regular Preterite Endings",
+      "explanation": "The preterite tense (pretérito indefinido) is used to talk about completed past actions. Regular verbs follow predictable patterns based on their infinitive ending. For -AR verbs (hablar, caminar, trabajar), remove -ar and add: yo -é, tú -aste, él/ella -ó, nosotros -amos, vosotros -asteis, ellos/ellas -aron. Example: hablar → hablé, hablaste, habló, hablamos, hablasteis, hablaron. For -ER and -IR verbs (comer, beber, vivir, escribir), remove the ending and add: yo -í, tú -iste, él/ella -ió, nosotros -imos, vosotros -isteis, ellos/ellas -ieron. Example: comer → comí, comiste, comió, comimos, comisteis, comieron. Notice that -ER and -IR verbs share identical preterite endings, and the nosotros form of -AR verbs is the same in both present and preterite (hablamos).",
+      "tip": "The yo and él/ella forms always carry a written accent in the preterite for regular verbs: hablé, habló, comí, comió. This accent distinguishes them from present-tense forms (e.g., hablo vs. habló). The nosotros -AR preterite form (hablamos) looks identical to the present — context clarifies the meaning.",
+      "examples": [
+        { "es": "Yo hablé con mi jefe ayer.", "en": "I spoke with my boss yesterday.", "highlight": "hablé" },
+        { "es": "Tú trabajaste mucho la semana pasada.", "en": "You worked a lot last week.", "highlight": "trabajaste" },
+        { "es": "Ella comió una pizza entera.", "en": "She ate an entire pizza.", "highlight": "comió" },
+        { "es": "Nosotros vivimos en París dos años.", "en": "We lived in Paris for two years.", "highlight": "vivimos" },
+        { "es": "Vosotros bebisteis demasiado café.", "en": "You all drank too much coffee.", "highlight": "bebisteis" },
+        { "es": "Ellos escribieron una carta larga.", "en": "They wrote a long letter.", "highlight": "escribieron" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct preterite form of 'hablar' (to speak) for 'yo'?",
+          "options": ["yo hablé", "yo hablo", "yo hablaste"],
+          "correctIndex": 0,
+          "explanation": "The yo preterite ending for -AR verbs is -é: habl + é = hablé. Note the written accent, which distinguishes it from the present tense (yo hablo)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella ___ (caminar) tres kilómetros. (She walked three kilometres.)",
+          "acceptedAnswers": ["caminó"],
+          "hint": "The él/ella preterite ending for -AR verbs is -ó (with accent)",
+          "explanation": "caminar → stem camin- + ó = caminó. The written accent on the ó is required."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you conjugate 'comer' (to eat) in the preterite for 'tú'?",
+          "options": ["tú comiste", "tú comías", "tú comió"],
+          "correctIndex": 0,
+          "explanation": "The tú preterite ending for -ER verbs is -iste: com + iste = comiste."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nosotros ___ (beber) agua durante todo el día. (We drank water all day.)",
+          "acceptedAnswers": ["bebimos"],
+          "hint": "The nosotros preterite ending for -ER verbs is -imos",
+          "explanation": "beber → stem beb- + imos = bebimos. The -ER and -IR preterite endings are identical, so bebimos and vivimos follow the same pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the preterite of 'escribir' (to write) for 'ellos'?",
+          "options": ["ellos escribieron", "ellos escribieron", "ellos escribió"],
+          "correctIndex": 0,
+          "explanation": "The ellos/ellas preterite ending for -IR verbs is -ieron: escrib + ieron = escribieron."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Vosotros ___ (trabajar) el fin de semana. (You all worked on the weekend.)",
+          "acceptedAnswers": ["trabajasteis"],
+          "hint": "The vosotros preterite ending for -AR verbs is -asteis",
+          "explanation": "trabajar → stem trabaj- + asteis = trabajasteis. The vosotros preterite ending -asteis (-AR) or -isteis (-ER/-IR) is distinctive and easy to recognise."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the preterite correctly?",
+          "options": ["Yo viví en Barcelona el año pasado.", "Yo vivó en Barcelona el año pasado.", "Yo vives en Barcelona el año pasado."],
+          "correctIndex": 0,
+          "explanation": "For -IR verbs, yo preterite is -í: viv + í = viví. The form 'vivó' does not exist, and 'vives' is present tense."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ellas ___ (cantar) en el concierto. (They sang at the concert.)",
+          "acceptedAnswers": ["cantaron"],
+          "hint": "The ellos/ellas preterite ending for -AR verbs is -aron",
+          "explanation": "cantar → stem cant- + aron = cantaron. The ellos/ellas -AR preterite ending is -aron (compare -ER/-IR: -ieron)."
+        }
+      ]
+    },
+    {
+      "sectionId": "irregular-preterite-verbs",
+      "title": "Irregular Preterite Verbs",
+      "explanation": "Many common Spanish verbs are completely irregular in the preterite. The most important ones to memorise: ser and ir share identical preterite forms — fui, fuiste, fue, fuimos, fuisteis, fueron (context makes the meaning clear). tener (to have): tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron. estar (to be): estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron. hacer (to do/make): hice, hiciste, hizo, hicimos, hicisteis, hicieron — note the spelling change hice → hizo (c→z) to preserve the soft sound. poder (to be able to): pude, pudiste, pudo, pudimos, pudisteis, pudieron. venir (to come): vine, viniste, vino, vinimos, vinisteis, vinieron. These irregular preterite forms have their own stress patterns and do NOT carry written accents on the yo or él/ella forms, unlike regular preterites.",
+      "tip": "Notice that irregular preterite verbs in the yo and él/ella forms are unstressed and therefore carry no written accent: fui, fue, tuve, tuvo, hice, hizo, pude, pudo, vine, vino. This is the opposite of regular preterites (hablé, habló). Also note that ser and ir are identical in the preterite — only context tells them apart.",
+      "examples": [
+        { "es": "Yo fui al médico ayer.", "en": "I went to the doctor yesterday.", "highlight": "fui" },
+        { "es": "Ella fue mi profesora de inglés.", "en": "She was my English teacher.", "highlight": "fue" },
+        { "es": "Nosotros tuvimos un problema grave.", "en": "We had a serious problem.", "highlight": "tuvimos" },
+        { "es": "Tú estuviste en casa todo el día.", "en": "You were at home all day.", "highlight": "estuviste" },
+        { "es": "Él hizo la tarea en una hora.", "en": "He did the homework in one hour.", "highlight": "hizo" },
+        { "es": "Ellos vinieron desde muy lejos.", "en": "They came from very far away.", "highlight": "vinieron" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the preterite of 'ir' (to go) for 'yo'?",
+          "options": ["fui", "iba", "fué"],
+          "correctIndex": 0,
+          "explanation": "ir and ser share the same preterite forms: fui, fuiste, fue, fuimos, fuisteis, fueron. Note that 'fui' has no accent — irregular preterites do not carry written accents on yo/él forms."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Nosotros ___ (estar) en Roma la semana pasada. (We were in Rome last week.)",
+          "acceptedAnswers": ["estuvimos"],
+          "hint": "The nosotros preterite of 'estar' is estuvimos",
+          "explanation": "estar is irregular in the preterite: estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He made a cake' using the preterite?",
+          "options": ["Él hizo un pastel.", "Él hice un pastel.", "Él hacía un pastel."],
+          "correctIndex": 0,
+          "explanation": "hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. The él/ella form is hizo (c→z to preserve the soft /θ/ sound before o). 'Hacía' is the imperfect, not preterite."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Yo no ___ (poder) abrir la puerta. (I could not open the door.)",
+          "acceptedAnswers": ["pude"],
+          "hint": "The yo preterite of 'poder' is pude — no written accent",
+          "explanation": "poder is irregular in the preterite: pude, pudiste, pudo, pudimos, pudisteis, pudieron. No accent on pude."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct preterite of 'tener' (to have) for 'tú'?",
+          "options": ["tuviste", "teniste", "tuvió"],
+          "correctIndex": 0,
+          "explanation": "tener preterite: tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron. The stem changes to tuv- throughout. 'Teniste' and 'tuvió' do not exist."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿Cuándo ___ (venir) tus padres a visitarte? (When did your parents come to visit you?)",
+          "acceptedAnswers": ["vinieron"],
+          "hint": "The ellos preterite of 'venir' is vinieron",
+          "explanation": "venir is irregular in the preterite: vine, viniste, vino, vinimos, vinisteis, vinieron. The stem changes to vin-."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Ayer fue mi cumpleaños.' Which verb is used here?",
+          "options": ["ser (to be)", "ir (to go)", "either — they are identical in preterite"],
+          "correctIndex": 2,
+          "explanation": "ser and ir share identical preterite forms (fui, fuiste, fue…). In this sentence, 'fue' means 'was' (ser) because 'mi cumpleaños' is a thing that 'was' something, not a destination. Context resolves the ambiguity."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ella ___ (hacer) un viaje a Japón. (She took a trip to Japan.)",
+          "acceptedAnswers": ["hizo"],
+          "hint": "The él/ella preterite of 'hacer' is hizo (note the spelling change c→z)",
+          "explanation": "hacer: hice (yo), hiciste (tú), hizo (él/ella). The spelling changes from hice to hizo to preserve the soft /θ/ sound before the -o ending."
+        }
+      ]
+    },
+    {
+      "sectionId": "when-to-use-preterite",
+      "title": "When to Use the Preterite",
+      "explanation": "The preterite is used for three main situations in Spanish. First, completed actions: events that started and finished in the past, with a clear endpoint — 'Comí la manzana' (I ate the apple — it is finished). Second, actions at a specific point in time: the preterite is triggered by time expressions like ayer (yesterday), anoche (last night), el lunes pasado (last Monday), en 2010, hace dos años (two years ago), una vez (once), de repente (suddenly) — 'La conocí el martes' (I met her on Tuesday). Third, sequences of events: a series of consecutive completed actions in a narrative — 'Llegué, me duché y me acosté' (I arrived, showered, and went to bed). The preterite contrasts with the imperfect (pretérito imperfecto), which describes ongoing background states, habitual past actions, and descriptions without a clear endpoint.",
+      "tip": "Look for key time expressions that signal the preterite: ayer, anoche, la semana pasada, el año pasado, hace + time, en + year, una vez, dos veces, de repente, entonces, primero/luego/después/finalmente (in sequences). When you see these words, the preterite is almost always the right choice for completed actions.",
+      "examples": [
+        { "es": "Ayer comí paella por primera vez.", "en": "Yesterday I ate paella for the first time.", "highlight": "comí" },
+        { "es": "El lunes pasado fui al gimnasio.", "en": "Last Monday I went to the gym.", "highlight": "fui" },
+        { "es": "Primero llegué, luego llamé a María.", "en": "First I arrived, then I called María.", "highlight": "llegué, llamé" },
+        { "es": "Vivió en Buenos Aires durante cinco años.", "en": "He lived in Buenos Aires for five years.", "highlight": "Vivió" },
+        { "es": "De repente, sonó el teléfono.", "en": "Suddenly, the phone rang.", "highlight": "sonó" },
+        { "es": "La semana pasada hicimos una excursión.", "en": "Last week we went on a trip.", "highlight": "hicimos" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses the preterite for a completed action?",
+          "options": ["Ayer terminé el libro.", "Ayer terminaba el libro.", "Ayer termino el libro."],
+          "correctIndex": 0,
+          "explanation": "'Ayer' (yesterday) signals a completed action at a specific past time, requiring the preterite: terminé. 'Terminaba' is the imperfect (ongoing/habitual), and 'termino' is present tense."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Hace dos años, yo ___ (vivir) en México. (Two years ago, I lived in Mexico — completed period.)",
+          "acceptedAnswers": ["viví"],
+          "hint": "'Hace dos años' is a specific time expression that signals the preterite",
+          "explanation": "'Hace + time' referring to a completed past period triggers the preterite: viví. If it were an ongoing background state, the imperfect (vivía) might be used, but 'hace dos años' points to a completed episode."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sequence 'Primero ___ (entrar), luego ___ (sentarse), y finalmente ___ (pedir)', what tense fills the blanks?",
+          "options": ["Preterite — three completed consecutive actions", "Imperfect — background descriptions", "Present — habitual actions"],
+          "correctIndex": 0,
+          "explanation": "A sequence of consecutive completed actions (entré, me senté, pedí) uses the preterite. Words like primero, luego, después, and finalmente signal ordered preterite events."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El año pasado ellos ___ (ganar) el campeonato. (Last year they won the championship.)",
+          "acceptedAnswers": ["ganaron"],
+          "hint": "'El año pasado' is a specific past time — use the preterite",
+          "explanation": "el año pasado (last year) points to a completed event at a specific past time: ganaron. The -AR preterite ending for ellos/ellas is -aron."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which time expression is most likely to signal the preterite tense?",
+          "options": ["anoche (last night)", "siempre (always)", "cuando era niño (when I was a child)"],
+          "correctIndex": 0,
+          "explanation": "'Anoche' (last night) is a specific completed time period and almost always triggers the preterite. 'Siempre' signals habitual actions (imperfect), and 'cuando era niño' sets up a background state (imperfect)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "De repente, el niño ___ (caerse). (Suddenly, the child fell.)",
+          "acceptedAnswers": ["se cayó"],
+          "hint": "'De repente' (suddenly) signals an abrupt completed action — use the preterite",
+          "explanation": "De repente signals a sudden completed event, requiring the preterite: se cayó (caerse, -ER verb → cayó with spelling change y, reflexive se). Sudden interruptions always use the preterite."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence describes a sequence of completed past events?",
+          "options": [
+            "Entré en la tienda, compré el pan y salí.",
+            "Entraba en la tienda, compraba el pan y salía.",
+            "Entro en la tienda, compro el pan y salgo."
+          ],
+          "correctIndex": 0,
+          "explanation": "A completed narrative sequence uses the preterite: entré, compré, salí — three actions that happened one after the other and are all finished. The imperfect version describes habitual or ongoing past actions, and the present is not past tense."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Mi abuela ___ (nacer) en 1940 en Sevilla. (My grandmother was born in 1940 in Seville.)",
+          "acceptedAnswers": ["nació"],
+          "hint": "A specific year (en 1940) signals a completed event — use the preterite",
+          "explanation": "A birth at a specific year is a completed one-time event: nació (-AR verb, él/ella preterite = -ó). Specific years (en 1940, en 2005) consistently trigger the preterite."
+        }
+      ]
+    }
+  ]
+}

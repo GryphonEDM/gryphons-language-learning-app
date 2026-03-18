@@ -1,0 +1,137 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameEl": "Ρωτώντας για Οδηγίες",
+  "icon": "🗺️",
+  "context": "You are in Athens and need to find the Acropolis. You ask a local, Κώστας, for directions.",
+  "characters": {
+    "npc": { "name": "Κώστας" },
+    "player": { "name": "Εσύ" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Γεια σας! Μπορώ να σας βοηθήσω;",
+      "translation": "Hello! Can I help you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say excuse me, you are looking for the Acropolis",
+      "acceptedResponses": [
+        "Συγγνώμη, ψάχνω την Ακρόπολη",
+        "Με συγχωρείτε, πού είναι η Ακρόπολη;",
+        "Συγγνώμη, πού είναι η Ακρόπολη;",
+        "Ψάχνω για την Ακρόπολη, παρακαλώ"
+      ],
+      "keyWords": ["Ακρόπολη", "Συγγνώμη"],
+      "hint": "Συγγνώμη, ψάχνω την Ακρόπολη."
+    },
+    {
+      "speaker": "npc",
+      "text": "Α, η Ακρόπολη! Είναι εδώ κοντά. Πηγαίνετε ευθεία σε αυτόν τον δρόμο.",
+      "translation": "Ah, the Acropolis! It is nearby. Go straight along this road."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Confirm: straight ahead? Ask how far it is.",
+      "acceptedResponses": [
+        "Ευθεία; Πόσο μακριά είναι;",
+        "Ευθεία και πόσο μακριά;",
+        "Ευθεία, ναι; Πόσο είναι;",
+        "Και πόσο μακριά είναι η Ακρόπολη;"
+      ],
+      "keyWords": ["Ευθεία", "μακριά"],
+      "hint": "Ευθεία; Πόσο μακριά είναι;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Περίπου δεκαπέντε λεπτά με τα πόδια. Στη γωνία, στρίψτε δεξιά.",
+      "translation": "About fifteen minutes on foot. At the corner, turn right."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Repeat back: at the corner, turn right",
+      "acceptedResponses": [
+        "Στη γωνία στρίβω δεξιά",
+        "Στη γωνία, δεξιά;",
+        "Εντάξει, στη γωνία δεξιά",
+        "Άρα στη γωνία στρίψω δεξιά"
+      ],
+      "keyWords": ["γωνία", "δεξιά"],
+      "hint": "Στη γωνία στρίβω δεξιά;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ακριβώς! Μετά θα δείτε μια μεγάλη πλατεία. Αριστερά σας θα είναι η είσοδος.",
+      "translation": "Exactly! Then you will see a large square. To your left will be the entrance."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if there is a landmark you can look for to know you are going the right way",
+      "acceptedResponses": [
+        "Υπάρχει κάποιο σημείο αναφοράς;",
+        "Υπάρχει κάτι που μπορώ να ψάξω;",
+        "Τι μπορώ να δω για να ξέρω ότι πάω σωστά;",
+        "Υπάρχει κάποιο ορόσημο στη διαδρομή;"
+      ],
+      "keyWords": ["σημείο", "ορόσημο"],
+      "hint": "Υπάρχει κάποιο σημείο αναφοράς;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ναι, θα περάσετε από έναν παλιό ναό στα αριστερά σας. Εκεί ξέρετε ότι είστε στον σωστό δρόμο.",
+      "translation": "Yes, you will pass an old temple on your left. There you know you are on the right road."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if you can also take the metro or a bus",
+      "acceptedResponses": [
+        "Μπορώ να πάρω και το μετρό ή λεωφορείο;",
+        "Υπάρχει μετρό ή λεωφορείο για την Ακρόπολη;",
+        "Πάει μετρό εκεί;",
+        "Υπάρχει λεωφορείο για την Ακρόπολη;"
+      ],
+      "keyWords": ["μετρό", "λεωφορείο"],
+      "hint": "Μπορώ να πάρω και το μετρό ή λεωφορείο;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ναι, ο σταθμός του μετρό «Ακρόπολη» είναι πολύ κοντά. Είναι η κόκκινη γραμμή. Αλλά με τα πόδια είναι πιο ωραία!",
+      "translation": "Yes, the 'Acropolis' metro station is very close. It is the red line. But on foot it is nicer!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you will walk then. Ask which exit of the metro to use, just in case.",
+      "acceptedResponses": [
+        "Θα πάω με τα πόδια. Ποια έξοδος του μετρό να πάρω αν χρειαστεί;",
+        "Εντάξει, θα πάω με τα πόδια. Ποια είναι η έξοδος;",
+        "Θα περπατήσω. Ποια έξοδος μετρό να χρησιμοποιήσω;",
+        "Θα πάω με τα πόδια, ευχαριστώ. Και ποια είναι η έξοδος;"
+      ],
+      "keyWords": ["πόδια", "έξοδος"],
+      "hint": "Θα πάω με τα πόδια. Ποια έξοδος του μετρό να πάρω αν χρειαστεί;"
+    },
+    {
+      "speaker": "npc",
+      "text": "Η έξοδος ένα, προς τον λόφο. Δεν μπορείτε να χαθείτε!",
+      "translation": "Exit one, towards the hill. You cannot get lost!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him very much and say goodbye",
+      "acceptedResponses": [
+        "Ευχαριστώ πολύ! Αντίο!",
+        "Σας ευχαριστώ πολύ. Αντίο!",
+        "Ευχαριστώ! Χαίρετε!",
+        "Πολλές ευχαριστίες! Αντίο!"
+      ],
+      "keyWords": ["Ευχαριστώ", "Αντίο"],
+      "hint": "Ευχαριστώ πολύ! Αντίο!"
+    },
+    {
+      "speaker": "npc",
+      "text": "Παρακαλώ! Καλή επίσκεψη στην Ακρόπολη!",
+      "translation": "You are welcome! Enjoy your visit to the Acropolis!"
+    }
+  ]
+}

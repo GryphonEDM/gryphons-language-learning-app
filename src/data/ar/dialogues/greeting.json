@@ -1,0 +1,132 @@
+{
+  "dialogueId": "greeting",
+  "nameEn": "Meeting Someone",
+  "nameAr": "التعارف",
+  "icon": "👋",
+  "context": "You are at an Arabic language school in Cairo. Ahmad, a friendly Egyptian student, comes over to introduce himself.",
+  "characters": {
+    "npc": { "name": "أحمد" },
+    "player": { "name": "أنت" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "مرحباً! أنا أحمد. هل أنت طالب جديد في المدرسة؟",
+      "translation": "Hello! I'm Ahmad. Are you a new student at the school?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet him and confirm you are a new student.",
+      "acceptedResponses": [
+        "مرحباً أحمد! نعم، أنا طالب جديد هنا.",
+        "أهلاً! نعم، اليوم هو يومي الأوّل في المدرسة.",
+        "مرحباً! نعم، بدأتُ اليوم. اسمي [name].",
+        "أهلاً وسهلاً! نعم، أنا جديد هنا."
+      ],
+      "keyWords": ["مرحباً", "نعم"],
+      "hint": "Start with 'مرحباً' (hello) and confirm with 'نعم' (yes)."
+    },
+    {
+      "speaker": "npc",
+      "text": "أهلاً وسهلاً! من أين أنت؟",
+      "translation": "Welcome! Where are you from?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him where you are from.",
+      "acceptedResponses": [
+        "أنا من أمريكا.",
+        "أنا من بريطانيا.",
+        "أنا من كندا.",
+        "أنا من أستراليا."
+      ],
+      "keyWords": ["أنا", "من"],
+      "hint": "Say 'أنا من...' followed by your country."
+    },
+    {
+      "speaker": "npc",
+      "text": "جميل! لماذا تتعلّم اللغة العربية؟",
+      "translation": "Nice! Why are you learning Arabic?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Explain why you are learning Arabic.",
+      "acceptedResponses": [
+        "أحبّ الثقافة العربية وأريد أن أفهمها أكثر.",
+        "أريد أن أسافر في العالم العربي.",
+        "أتعلّم العربية لأنّها لغة جميلة.",
+        "أحتاج العربية في عملي."
+      ],
+      "keyWords": ["أتعلّم", "أريد"],
+      "hint": "Use 'أحبّ' (I love) or 'أريد' (I want) to explain your reason."
+    },
+    {
+      "speaker": "npc",
+      "text": "رائع! منذ متى وأنت تتعلّم العربية؟",
+      "translation": "Wonderful! How long have you been learning Arabic?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him how long you have been studying Arabic.",
+      "acceptedResponses": [
+        "أتعلّم العربية منذ ستّة أشهر.",
+        "بدأتُ أتعلّم العربية منذ سنة.",
+        "أتعلّم العربية منذ ثلاثة أشهر فقط.",
+        "أتعلّم العربية منذ سنتين."
+      ],
+      "keyWords": ["أتعلّم", "منذ"],
+      "hint": "Use 'أتعلّم العربية منذ...' to say how long you have been studying."
+    },
+    {
+      "speaker": "npc",
+      "text": "ممتاز! هل تحبّ القاهرة؟",
+      "translation": "Excellent! Do you like Cairo?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell him what you think about Cairo.",
+      "acceptedResponses": [
+        "نعم، القاهرة مدينة رائعة! أحبّها كثيراً.",
+        "نعم، أحبّ القاهرة. الناس هنا ودودون جدّاً.",
+        "القاهرة جميلة جدّاً. أحبّ الطعام والتاريخ.",
+        "نعم! القاهرة مدينة كبيرة ومثيرة."
+      ],
+      "keyWords": ["أحبّ", "القاهرة"],
+      "hint": "Use 'أحبّ' (I like/love) to share your feelings about Cairo."
+    },
+    {
+      "speaker": "npc",
+      "text": "أنا سعيد أنّك تحبّها! هل زرتَ الأهرامات؟",
+      "translation": "I'm glad you like it! Have you visited the pyramids?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say whether you have visited the pyramids.",
+      "acceptedResponses": [
+        "نعم، زرتُ الأهرامات الأسبوع الماضي. كانت مذهلة!",
+        "لا، لم أزرها بعد، لكنّني أريد أن أذهب قريباً.",
+        "نعم، ذهبتُ أمس. كانت تجربة لا تُنسى!",
+        "ليس بعد، لكنّني أخطّط لزيارتها هذا الأسبوع."
+      ],
+      "keyWords": ["الأهرامات", "زرت"],
+      "hint": "Use 'نعم، زرتُ...' or 'لا، لم أزرها بعد' to answer."
+    },
+    {
+      "speaker": "npc",
+      "text": "يجب أن تزورها! هل تريد أن نشرب قهوة معاً بعد الدرس؟",
+      "translation": "You must visit them! Would you like to have coffee together after class?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept his invitation enthusiastically.",
+      "acceptedResponses": [
+        "بالطبع! بكلّ سرور!",
+        "نعم، فكرة رائعة! شكراً لك.",
+        "أكيد! هيّا بنا!",
+        "نعم، أحبّ ذلك! شكراً يا أحمد."
+      ],
+      "keyWords": ["نعم", "شكراً"],
+      "hint": "Use 'بالطبع' (of course) or 'نعم' and 'شكراً' (thank you)."
+    }
+  ]
+}

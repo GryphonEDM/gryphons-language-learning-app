@@ -1,0 +1,132 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameAr": "في المطعم",
+  "icon": "🍽️",
+  "context": "You are at a traditional Arabic restaurant in Amman. The waiter comes to your table to take your order.",
+  "characters": {
+    "npc": { "name": "النادل" },
+    "player": { "name": "أنت" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "مرحباً! أهلاً وسهلاً في مطعمنا. هل تريد أن ترى قائمة الطعام؟",
+      "translation": "Hello! Welcome to our restaurant. Would you like to see the menu?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes and ask what they recommend.",
+      "acceptedResponses": [
+        "نعم، من فضلك. ماذا تنصحني أن أجرّب؟",
+        "شكراً. ما هو أفضل طبق عندكم؟",
+        "نعم، أريد القائمة من فضلك. ماذا تقترح؟",
+        "من فضلك. ما الذي تنصح به اليوم؟"
+      ],
+      "keyWords": ["نعم", "تنصح"],
+      "hint": "Say 'نعم، من فضلك' and ask 'ماذا تنصحني' (what do you recommend)."
+    },
+    {
+      "speaker": "npc",
+      "text": "أنصحك بالحمّص والفلافل للبداية. وللطبق الرئيسي، الكباب ممتاز عندنا.",
+      "translation": "I recommend the hummus and falafel to start. And for the main course, our kebab is excellent."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order the appetizers and ask about other main dishes.",
+      "acceptedResponses": [
+        "أريد الحمّص والفلافل للبداية. هل عندكم شاورما أيضاً؟",
+        "سآخذ الحمّص والفلافل. ما هي الأطباق الرئيسية الأخرى؟",
+        "ممتاز، أريد الحمّص والفلافل. وهل يوجد مشاوي؟",
+        "حسناً، أعطني الحمّص والفلافل. ماذا عن الأطباق الأخرى؟"
+      ],
+      "keyWords": ["أريد", "الحمّص", "الفلافل"],
+      "hint": "Use 'أريد' (I want) or 'سآخذ' (I'll take) to order the appetizers."
+    },
+    {
+      "speaker": "npc",
+      "text": "نعم، عندنا شاورما دجاج وشاورما لحم، وأيضاً كفتة مشوية وسمك مشوي.",
+      "translation": "Yes, we have chicken shawarma and meat shawarma, and also grilled kofta and grilled fish."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Choose your main dish.",
+      "acceptedResponses": [
+        "سآخذ الكباب من فضلك.",
+        "أريد شاورما الدجاج من فضلك.",
+        "أعطني الكفتة المشوية من فضلك.",
+        "أريد السمك المشوي من فضلك."
+      ],
+      "keyWords": ["أريد", "من فضلك"],
+      "hint": "Use 'سآخذ...' or 'أريد...' followed by 'من فضلك' (please)."
+    },
+    {
+      "speaker": "npc",
+      "text": "اختيار ممتاز! هل تريد أرزّاً أو خبزاً مع الطبق؟",
+      "translation": "Excellent choice! Would you like rice or bread with the dish?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Choose your side and ask about salads.",
+      "acceptedResponses": [
+        "أريد أرزّاً من فضلك. وهل عندكم سلطة؟",
+        "خبزاً من فضلك. وأريد سلطة فتّوش أيضاً.",
+        "أرزّاً وخبزاً معاً من فضلك. وسلطة تبّولة.",
+        "أريد الأرزّ. وهل يوجد تبّولة أو فتّوش؟"
+      ],
+      "keyWords": ["أريد", "سلطة"],
+      "hint": "Choose 'أرزّاً' (rice) or 'خبزاً' (bread), and ask about 'سلطة' (salad)."
+    },
+    {
+      "speaker": "npc",
+      "text": "طبعاً! عندنا تبّولة وفتّوش وسلطة عربية. ماذا تريد أن تشرب؟",
+      "translation": "Of course! We have tabbouleh, fattoush, and Arabic salad. What would you like to drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a drink.",
+      "acceptedResponses": [
+        "أريد عصير ليمون بارداً من فضلك.",
+        "أعطني ماءً من فضلك.",
+        "أريد شاياً بالنعناع من فضلك.",
+        "أريد عصير برتقال طازجاً من فضلك."
+      ],
+      "keyWords": ["أريد", "من فضلك"],
+      "hint": "Use 'أريد...' followed by your drink choice and 'من فضلك'."
+    },
+    {
+      "speaker": "npc",
+      "text": "حاضر! هل تريد شيئاً آخر؟",
+      "translation": "Right away! Would you like anything else?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about desserts.",
+      "acceptedResponses": [
+        "هل عندكم حلويات؟ أريد أن أجرّب الكنافة.",
+        "ماذا عندكم من الحلويات؟",
+        "هل يوجد كنافة أو بقلاوة؟",
+        "أريد أن أرى قائمة الحلويات من فضلك."
+      ],
+      "keyWords": ["حلويات", "كنافة"],
+      "hint": "Ask about 'حلويات' (desserts) like 'كنافة' (kunafa) or 'بقلاوة' (baklava)."
+    },
+    {
+      "speaker": "npc",
+      "text": "نعم، عندنا كنافة وبقلاوة وأمّ علي. الكنافة طازجة اليوم!",
+      "translation": "Yes, we have kunafa, baklava, and Om Ali. The kunafa is fresh today!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order dessert and thank the waiter.",
+      "acceptedResponses": [
+        "سآخذ الكنافة من فضلك. شكراً جزيلاً!",
+        "أريد الكنافة الطازجة من فضلك. شكراً لك!",
+        "أعطني بقلاوة من فضلك. شكراً!",
+        "أريد أمّ علي من فضلك. شكراً جزيلاً!"
+      ],
+      "keyWords": ["من فضلك", "شكراً"],
+      "hint": "Order with 'سآخذ' or 'أريد', and thank with 'شكراً جزيلاً' (thank you very much)."
+    }
+  ]
+}

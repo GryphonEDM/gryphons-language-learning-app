@@ -1,0 +1,115 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "La Révolution française",
+      "titleEn": "The French Revolution",
+      "difficulty": "B2",
+      "text": "La Révolution française, qui débuta en 1789 et se prolongea jusqu'en 1799, constitue l'un des événements les plus déterminants de l'histoire moderne. Née d'une crise financière profonde et d'un profond ressentiment contre les privilèges de la noblesse et du clergé, elle allait transformer radicalement la société française et influencer des nations entières. La prise de la Bastille le 14 juillet 1789 demeure le symbole le plus puissant de ce bouleversement, célébré encore aujourd'hui comme fête nationale. La Déclaration des droits de l'homme et du citoyen, adoptée la même année, proclamait pour la première fois les principes d'égalité, de liberté et de souveraineté nationale. Ces idéaux allaient inspirer les révolutions et les mouvements démocratiques du monde entier pendant les deux siècles suivants. La période de la Terreur, entre 1793 et 1794, marqua cependant l'un des chapitres les plus sombres de la Révolution : des milliers de personnes furent guillotinées, dont le roi Louis XVI et la reine Marie-Antoinette. La Révolution prit fin avec le coup d'État de Napoléon Bonaparte en novembre 1799, qui mit en place le Consulat. Si la Révolution a posé les fondements de la démocratie moderne en France, ses héritages restent complexes et font encore l'objet de vifs débats parmi les historiens. Elle a néanmoins durablement ancré dans la conscience française les valeurs de liberté, d'égalité et de fraternité, devise de la République française.",
+      "wordGlossary": {
+        "ressentiment": "resentment",
+        "noblesse": "nobility",
+        "clergé": "clergy",
+        "bouleversement": "upheaval, radical change",
+        "souveraineté": "sovereignty",
+        "la Terreur": "the Reign of Terror (1793–1794)",
+        "guillotinées": "guillotined, executed by guillotine",
+        "coup d'État": "seizure of power, coup"
+      },
+      "questions": [
+        {
+          "question": "Quelle date est aujourd'hui célébrée comme fête nationale en France ?",
+          "options": ["Le 4 juillet", "Le 14 juillet", "Le 26 août", "Le 9 novembre"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « La prise de la Bastille le 14 juillet 1789 demeure le symbole le plus puissant de ce bouleversement, célébré encore aujourd'hui comme fête nationale. »"
+        },
+        {
+          "question": "Quels principes la Déclaration des droits de l'homme et du citoyen proclamait-elle ?",
+          "options": ["La monarchie, la religion et la propriété", "L'égalité, la liberté et la souveraineté nationale", "La fraternité, la puissance militaire et la prospérité", "L'ordre, la discipline et le respect de l'autorité"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « elle proclamait pour la première fois les principes d'égalité, de liberté et de souveraineté nationale. »"
+        },
+        {
+          "question": "Comment la Révolution française s'est-elle terminée selon le texte ?",
+          "options": ["Par la mort de Robespierre", "Par la signature d'un traité de paix", "Par le coup d'État de Napoléon Bonaparte en 1799", "Par le retour de la monarchie"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « La Révolution prit fin avec le coup d'État de Napoléon Bonaparte en novembre 1799, qui mit en place le Consulat. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "La francophonie dans le monde",
+      "titleEn": "The French-Speaking World",
+      "difficulty": "B2",
+      "text": "La francophonie désigne l'ensemble des peuples et des nations qui utilisent le français comme langue maternelle, officielle ou de communication. Aujourd'hui, le français est parlé par environ 320 millions de personnes réparties sur tous les continents, ce qui en fait la cinquième langue la plus parlée dans le monde et la deuxième langue la plus apprise après l'anglais. L'Organisation internationale de la Francophonie (OIF), fondée en 1970, regroupe 88 États et gouvernements membres ou observateurs partageant cet espace linguistique commun. Si la France reste le foyer historique de la langue française, c'est en Afrique subsaharienne que le nombre de francophones croît le plus rapidement en raison de la forte croissance démographique de cette région. Des pays comme la République démocratique du Congo, la Côte d'Ivoire et le Cameroun comptent parmi les plus grands pays francophones du monde. Le français est également langue officielle dans des institutions internationales majeures telles que l'Union européenne, les Nations unies et le Comité international olympique. La vitalité de la francophonie s'exprime aussi à travers une production littéraire, cinématographique et musicale d'une grande richesse, qui reflète la diversité des cultures qui la composent. Cependant, la francophonie fait face à des défis considérables : la domination croissante de l'anglais comme langue internationale, les inégalités économiques entre les pays membres, et la nécessité de valoriser les langues locales aux côtés du français.",
+      "wordGlossary": {
+        "francophonie": "the French-speaking world/community",
+        "langue maternelle": "mother tongue, native language",
+        "foyer": "home, hearth, birthplace",
+        "croissance démographique": "population growth",
+        "langue officielle": "official language",
+        "cinématographique": "relating to cinema/film",
+        "valoriser": "to promote, to give value to",
+        "défis": "challenges"
+      },
+      "questions": [
+        {
+          "question": "Combien de personnes dans le monde parlent français selon le texte ?",
+          "options": ["Environ 200 millions", "Environ 250 millions", "Environ 320 millions", "Environ 400 millions"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « le français est parlé par environ 320 millions de personnes réparties sur tous les continents. »"
+        },
+        {
+          "question": "Dans quelle région du monde le nombre de francophones augmente-t-il le plus rapidement ?",
+          "options": ["En Europe de l'Ouest", "En Amérique du Nord", "Au Moyen-Orient", "En Afrique subsaharienne"],
+          "correctIndex": 3,
+          "explanation": "Le texte dit : « c'est en Afrique subsaharienne que le nombre de francophones croît le plus rapidement en raison de la forte croissance démographique de cette région. »"
+        },
+        {
+          "question": "Quel défi majeur est mentionné pour la francophonie ?",
+          "options": ["Le manque d'écoles dans les pays membres", "La domination croissante de l'anglais comme langue internationale", "Le refus des jeunes d'apprendre le français", "La fermeture de l'OIF"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « la francophonie fait face à des défis considérables : la domination croissante de l'anglais comme langue internationale. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "L'art et la culture française",
+      "titleEn": "French Art and Culture",
+      "difficulty": "B2",
+      "text": "La France occupe une place singulière dans l'histoire de l'art et de la culture mondiale. De la cathédrale de Chartres aux châteaux de la Renaissance, en passant par les impressionnistes du XIXe siècle et le cinéma de la Nouvelle Vague, le pays a contribué de manière décisive à l'essor des grandes formes d'expression artistique. Paris, souvent surnommée la « Ville Lumière », a été au tournant du XXe siècle le centre névralgique du monde artistique : des peintres comme Picasso, Modigliani et Chagall, bien que nés à l'étranger, ont choisi de s'y établir et d'y forger leur art. Le mouvement impressionniste, né en France dans la seconde moitié du XIXe siècle avec des artistes comme Monet, Renoir et Degas, a révolutionné la peinture occidentale en proposant une représentation subjective et lumineuse de la réalité. En littérature, des auteurs tels que Victor Hugo, Gustave Flaubert, Marcel Proust et Albert Camus ont façonné non seulement la langue française mais aussi la pensée humaniste mondiale. Le cinéma français, inventé par les frères Lumière en 1895, reste l'un des plus créatifs et des plus influents au monde, soutenu par une politique culturelle volontariste de l'État. Cette tradition interventionniste de l'État dans la culture — symbolisée par l'exception culturelle française — vise à protéger la diversité culturelle face à la mondialisation. La langue française elle-même est considérée comme un patrimoine à défendre, confiée à la veille attentive de l'Académie française, fondée en 1635. Aujourd'hui, la culture française continue d'évoluer au contact des apports des communautés issues de l'immigration, enrichissant ainsi son identité plurielle et ouverte sur le monde.",
+      "wordGlossary": {
+        "Nouvelle Vague": "French New Wave (1950s-60s film movement)",
+        "centre névralgique": "nerve center, hub",
+        "impressionniste": "impressionist",
+        "façonné": "shaped, molded",
+        "exception culturelle": "cultural exception (French policy protecting culture from free-market forces)",
+        "volontariste": "interventionist, proactive",
+        "mondialisation": "globalization",
+        "Académie française": "the French Academy (body regulating the French language)"
+      },
+      "questions": [
+        {
+          "question": "Qu'est-ce que le mouvement impressionniste a apporté à la peinture selon le texte ?",
+          "options": ["Une représentation très précise et réaliste de la réalité", "Une représentation subjective et lumineuse de la réalité", "Une technique basée sur des formes géométriques abstraites", "Un retour aux thèmes religieux médiévaux"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « il a révolutionné la peinture occidentale en proposant une représentation subjective et lumineuse de la réalité. »"
+        },
+        {
+          "question": "Qui a inventé le cinéma selon le texte, et en quelle année ?",
+          "options": ["Thomas Edison, en 1880", "Georges Méliès, en 1900", "Les frères Lumière, en 1895", "René Clair, en 1910"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « Le cinéma français, inventé par les frères Lumière en 1895. »"
+        },
+        {
+          "question": "Quel est l'objectif de « l'exception culturelle française » selon le texte ?",
+          "options": ["Interdire les productions culturelles étrangères en France", "Exporter la culture française dans le monde entier", "Protéger la diversité culturelle face à la mondialisation", "Financer uniquement les artistes français nés en France"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « Cette tradition interventionniste de l'État dans la culture — symbolisée par l'exception culturelle française — vise à protéger la diversité culturelle face à la mondialisation. »"
+        }
+      ]
+    }
+  ]
+}

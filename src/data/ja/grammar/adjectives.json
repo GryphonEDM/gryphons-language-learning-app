@@ -1,0 +1,151 @@
+{
+  "lessonId": "adjectives",
+  "nameEn": "Adjectives",
+  "nameJa": "形容詞",
+  "icon": "🌟",
+  "tier": "A1",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "i-adjectives",
+      "title": "い-Adjectives",
+      "explanation": "い-adjectives (i-keiyōshi) are native Japanese adjectives that always end in い in their dictionary form. They can directly modify nouns without any connecting particle: 大きい犬 (ōkii inu — big dog), 美しい花 (utsukushii hana — beautiful flower). They can also be used as predicates: この犬は大きいです (kono inu wa ōkii desu — this dog is big). Common い-adjectives: 大きい (big), 小さい (small), 高い (tall/expensive), 安い (cheap), 新しい (new), 古い (old), 暑い (hot weather), 寒い (cold weather), おいしい (delicious), おもしろい (interesting), 楽しい (fun), 難しい (difficult), やさしい (easy/kind). Note: いい (good) is irregular — its conjugated forms use よい as the stem: よくない (not good), よかった (was good).",
+      "tip": "IMPORTANT EXCEPTION: きれい (pretty/clean) and 有名 (famous) look like they end in い but are actually な-adjectives! The test: if the い is part of the kanji reading or is preceded by え, it might be a な-adjective. When in doubt, check if it uses な before nouns: きれいな人 (not きれい人).",
+      "examples": [
+        { "ja": "大きい犬", "en": "ōkii inu — a big dog (い-adjective directly modifies the noun)", "highlight": "大きい" },
+        { "ja": "この本はおもしろいです。", "en": "This book is interesting. (い-adjective as predicate + です for politeness)", "highlight": "おもしろいです" },
+        { "ja": "高いビル", "en": "takai biru — a tall building", "highlight": "高い" },
+        { "ja": "寒い日", "en": "samui hi — a cold day", "highlight": "寒い" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do い-adjectives modify nouns?",
+          "options": ["Directly before the noun: 大きい犬 (big dog)", "With な between: 大きな犬", "After the noun: 犬大きい"],
+          "correctIndex": 0,
+          "explanation": "い-adjectives go directly before the noun with no connecting particle: 大きい犬, 新しい本, おいしい食べ物. (Note: 大きな is a special alternative form of 大きい but this is an exception, not the rule.)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is an い-adjective?",
+          "options": ["おもしろい (interesting)", "きれい (pretty)", "静か (quiet)"],
+          "correctIndex": 0,
+          "explanation": "おもしろい is a true い-adjective (ends in い and conjugates as one). きれい looks like it ends in い but is actually a な-adjective (きれいな). 静か is a な-adjective."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is irregular about the adjective いい (good)?",
+          "options": ["Its conjugated forms use よ- as the stem: よくない, よかった", "It cannot modify nouns", "It has no past tense"],
+          "correctIndex": 0,
+          "explanation": "いい (good) is the only irregular い-adjective. Its dictionary form is いい, but all conjugations use the older form よい: よくない (not good), よかった (was good), よくなかった (was not good)."
+        }
+      ]
+    },
+    {
+      "sectionId": "na-adjectives",
+      "title": "な-Adjectives",
+      "explanation": "な-adjectives (na-keiyōshi) are a class of adjectives that require the particle な when modifying a noun. They behave more like nouns grammatically. When placed before a noun, add な: 静かな部屋 (shizuka na heya — quiet room), きれいな花 (kirei na hana — beautiful flower). As predicates, they attach to です directly: この部屋は静かです (kono heya wa shizuka desu — this room is quiet). Common な-adjectives: 静か (quiet), きれい (pretty/clean), 元気 (healthy/energetic), 有名 (famous), 好き (liked/favorite), 嫌い (disliked), 大変 (tough/serious), 簡単 (easy/simple), 大切 (important), 便利 (convenient), にぎやか (lively), 親切 (kind). Many な-adjectives are derived from Chinese compounds (漢語) or loanwords.",
+      "tip": "The easiest way to tell な-adjectives apart: they need な before nouns. If you see Xな + noun, X is a な-adjective. Most two-kanji compound words that describe qualities are な-adjectives: 有名な, 簡単な, 大切な. Remember: きれい and 嫌い end in い but are な-adjectives!",
+      "examples": [
+        { "ja": "静かな図書館", "en": "shizuka na toshokan — a quiet library (な connects adjective to noun)", "highlight": "な" },
+        { "ja": "この町はにぎやかです。", "en": "This town is lively. (な-adjective + です as predicate)", "highlight": "にぎやかです" },
+        { "ja": "日本語は好きです。", "en": "I like Japanese. (好き is a な-adjective meaning 'liked')", "highlight": "好きです" },
+        { "ja": "きれいな海", "en": "kirei na umi — a beautiful sea (きれい is a な-adjective despite ending in い)", "highlight": "きれいな" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do な-adjectives modify nouns?",
+          "options": ["With な between the adjective and noun: 静かな部屋", "Directly: 静か部屋", "After the noun: 部屋静か"],
+          "correctIndex": 0,
+          "explanation": "な-adjectives require な when placed before a noun: 静かな部屋 (quiet room), きれいな花 (beautiful flower). Without な, the sentence is ungrammatical."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is きれい classified as a な-adjective, not an い-adjective?",
+          "options": ["Because it uses な before nouns (きれいな人) and conjugates like a noun", "Because it has three syllables", "Because it comes from Chinese"],
+          "correctIndex": 0,
+          "explanation": "Despite ending in い, きれい is a な-adjective: きれいな人 (beautiful person), not きれい人. Its conjugation follows noun/な-adjective patterns: きれいではない (not pretty), not きれくない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 有名___レストラン (a famous restaurant)",
+          "options": ["な", "い", "の"],
+          "correctIndex": 0,
+          "explanation": "有名 (famous) is a な-adjective. It requires な before a noun: 有名なレストラン (a famous restaurant)."
+        }
+      ]
+    },
+    {
+      "sectionId": "adjective-negation",
+      "title": "Adjective Negation",
+      "explanation": "い-adjectives and な-adjectives negate differently. For い-adjectives: drop the final い and add くない. 高い→高くない (takai→takakunai, not expensive), おもしろい→おもしろくない (not interesting). For polite speech, add です: 高くないです. The irregular いい (good) becomes よくない (not good). For な-adjectives: add ではない (formal) or じゃない (casual). 静か→静かではない/静かじゃない (not quiet). For polite speech: 静かではありません or 静かじゃありません. Notice that な-adjectives negate exactly like nouns: 学生ではない (not a student) follows the same pattern as 静かではない (not quiet). This is because な-adjectives are grammatically noun-like.",
+      "tip": "い-adjectives: drop い, add くない. な-adjectives: add じゃない (casual) or ではありません (polite). Never say 高いじゃない — that pattern is only for な-adjectives. Always drop the い first: 高くない.",
+      "examples": [
+        { "ja": "この映画はおもしろくないです。", "en": "This movie is not interesting. (い-adj: おもしろい → おもしろくない)", "highlight": "おもしろくない" },
+        { "ja": "このレストランは高くないです。", "en": "This restaurant is not expensive. (い-adj: 高い → 高くない)", "highlight": "高くない" },
+        { "ja": "ここは静かではありません。", "en": "This place is not quiet. (な-adj: 静か + ではありません, polite)", "highlight": "ではありません" },
+        { "ja": "あの人は親切じゃないです。", "en": "That person is not kind. (な-adj: 親切 + じゃない, casual-polite)", "highlight": "じゃない" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of 高い (takai, expensive)?",
+          "options": ["高くない (takakunai)", "高いない (takainai)", "高じゃない (takajyanai)"],
+          "correctIndex": 0,
+          "explanation": "For い-adjectives, drop い and add くない: 高い → 高くない. Never keep the い before adding ない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of 好き (suki, liked)?",
+          "options": ["好きじゃない (suki ja nai)", "好きくない (sukikunai)", "好くない (sukunai)"],
+          "correctIndex": 0,
+          "explanation": "好き is a な-adjective, so it negates like a noun: 好き + じゃない = 好きじゃない. The くない pattern is only for い-adjectives."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the negative of いい (good)?",
+          "options": ["よくない (yokunai)", "いくない (ikunai)", "いいじゃない (ii ja nai)"],
+          "correctIndex": 0,
+          "explanation": "いい is irregular. All conjugated forms use よ- as the stem: いい → よくない (not good). Never say いくない."
+        }
+      ]
+    },
+    {
+      "sectionId": "adjective-past",
+      "title": "Adjective Past Tense",
+      "explanation": "い-adjectives form the past tense by dropping い and adding かった. 高い→高かった (takai→takakatta, was expensive), おいしい→おいしかった (was delicious). Past negative: drop い, add くなかった. 高い→高くなかった (was not expensive). For polite speech, add です: 高かったです, 高くなかったです. いい (good) becomes よかった (was good), よくなかった (was not good). な-adjectives form the past tense using でした: 静か→静かでした (was quiet). Past negative: 静かではありませんでした (was not quiet) or 静かじゃなかったです. Again, な-adjectives follow the same pattern as nouns in past tense. Summary of い-adjective endings: い (present), くない (negative), かった (past), くなかった (past negative).",
+      "tip": "い-adjectives: かった for past, くなかった for past negative. な-adjectives: でした for past, ではありませんでした for past negative. The pattern for い-adjectives is beautifully regular: い→かった, くない→くなかった.",
+      "examples": [
+        { "ja": "昨日は暑かったです。", "en": "Yesterday was hot. (い-adj: 暑い → 暑かった + です)", "highlight": "暑かった" },
+        { "ja": "テストは難しくなかったです。", "en": "The test was not difficult. (い-adj past negative: 難しい → 難しくなかった)", "highlight": "難しくなかった" },
+        { "ja": "パーティーはにぎやかでした。", "en": "The party was lively. (な-adj past: にぎやか + でした)", "highlight": "にぎやかでした" },
+        { "ja": "映画はよかったです。", "en": "The movie was good. (irregular: いい → よかった)", "highlight": "よかった" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of 楽しい (tanoshii, fun)?",
+          "options": ["楽しかった (tanoshikatta)", "楽しいでした (tanoshii deshita)", "楽しいた (tanoshiita)"],
+          "correctIndex": 0,
+          "explanation": "For い-adjectives, drop い and add かった: 楽しい → 楽しかった (was fun). Never use でした with い-adjectives — that pattern is for な-adjectives."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'was not quiet' politely using 静か?",
+          "options": ["静かではありませんでした", "静かくなかったです", "静かないでした"],
+          "correctIndex": 0,
+          "explanation": "静か is a な-adjective. Polite past negative: 静か + ではありませんでした. The casual form is 静かじゃなかった."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past negative of おいしい (delicious)?",
+          "options": ["おいしくなかった (oishikunakatta)", "おいしいじゃなかった", "おいしかったない"],
+          "correctIndex": 0,
+          "explanation": "い-adjective past negative: drop い, add くなかった. おいしい → おいしくなかった (was not delicious). Add です for polite: おいしくなかったです."
+        }
+      ]
+    }
+  ]
+}

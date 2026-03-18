@@ -1,0 +1,116 @@
+{
+  "lessonId": "complex-sentences",
+  "nameEn": "Complex Sentences",
+  "nameHi": "मिश्र वाक्य",
+  "icon": "🔗",
+  "tier": "B2",
+  "prerequisites": ["postpositions", "verb-conjugation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "subordinate-clauses-ki",
+      "title": "Subordinate Clauses with कि (that)",
+      "explanation": "The conjunction कि (that) is one of the most important words for building complex sentences in Hindi. It connects a main clause with a subordinate clause that provides additional information, a reported thought, or a reason. Common patterns include: सोचना कि (to think that) — मैं सोचता हूँ कि वह सही है (I think that he is right); कहना कि (to say that) — उसने कहा कि वह कल आएगा (He said that he would come tomorrow); इसलिए...कि (so much that / because) — इतनी गर्मी है कि बाहर निकलना मुश्किल है (It is so hot that it is difficult to go outside). Note that unlike English, Hindi always includes कि explicitly — it cannot be dropped as 'that' often is in English. The clause after कि follows normal Hindi word order (subject-object-verb). कि can also introduce reason clauses: वह खुश है कि उसे नौकरी मिली (He is happy that he got a job).",
+      "tip": "कि always comes between the main clause and the subordinate clause, never at the beginning of a sentence. Think of it as a hinge connecting two complete thoughts.",
+      "examples": [
+        { "hi": "मुझे लगता है कि यह सही है।", "en": "I think that this is correct.", "highlight": "कि" },
+        { "hi": "उसने बताया कि वह बीमार है।", "en": "He/She told (us) that he/she is sick.", "highlight": "कि" },
+        { "hi": "यह बात सच है कि हिंदी कठिन नहीं है।", "en": "It is true that Hindi is not difficult.", "highlight": "कि" },
+        { "hi": "मुझे डर है कि ट्रेन छूट जाएगी।", "en": "I am afraid that the train will be missed.", "highlight": "कि" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"उसने कहा _____ वह कल आएगा\" — रिक्त स्थान में क्या आएगा? (What fills the blank?)",
+          "options": ["कि", "जो", "क्योंकि"],
+          "correctIndex": 0,
+          "explanation": "After verbs of saying (कहना), thinking (सोचना), and believing (मानना), the conjunction कि (that) is used to introduce the reported content. उसने कहा कि वह कल आएगा = He said that he would come tomorrow."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "क्या हिंदी में कि को छोड़ा जा सकता है जैसे अंग्रेज़ी में 'that' छोड़ सकते हैं? (Can कि be dropped like 'that' in English?)",
+          "options": ["नहीं, कि हमेशा ज़रूरी है (No, कि is always required)", "हाँ, हमेशा छोड़ सकते हैं (Yes, always)", "केवल लिखित हिंदी में (Only in written Hindi)"],
+          "correctIndex": 0,
+          "explanation": "Unlike English where 'that' can often be omitted (I think he is right), Hindi requires कि to be explicitly present. You must say मैं सोचता हूँ कि वह सही है — dropping कि would make the sentence ungrammatical or change its meaning."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"मुझे डर है कि परीक्षा कठिन होगी\" — कि के बाद का भाग क्या है? (What is the part after कि?)",
+          "options": ["आश्रित उपवाक्य (Subordinate clause)", "मुख्य उपवाक्य (Main clause)", "विशेषण (Adjective)"],
+          "correctIndex": 0,
+          "explanation": "The part after कि (परीक्षा कठिन होगी — the exam will be difficult) is the subordinate clause. It depends on the main clause (मुझे डर है — I am afraid) and cannot stand alone as a complete thought in context. कि connects the two clauses."
+        }
+      ]
+    },
+    {
+      "sectionId": "purpose-concession-clauses",
+      "title": "Purpose & Concession: ताकि, जबकि, हालाँकि",
+      "explanation": "Hindi has specific conjunctions for expressing purpose and concession in complex sentences. ताकि (so that / in order that) introduces purpose clauses and requires the subjunctive mood in the following clause: मैं जल्दी उठता हूँ ताकि समय पर पहुँचूँ (I wake up early so that I arrive on time). Note how पहुँचूँ is in the subjunctive. जबकि (while / whereas) introduces a contrasting or simultaneous clause: वह खेल रहा है जबकि उसे पढ़ना चाहिए (He is playing whereas he should be studying). It can show temporal simultaneity or logical contrast. हालाँकि (although / even though) introduces concessive clauses — something that is true but does not prevent the main action: हालाँकि बारिश हो रही थी, हम फिर भी गए (Although it was raining, we went anyway). हालाँकि is usually placed at the beginning of the concessive clause and is often paired with फिर भी / लेकिन / मगर (still / but) in the main clause.",
+      "tip": "Remember: ताकि always takes the subjunctive in the following clause. If you see ताकि followed by a future or present indicative, it is incorrect. Say ताकि मैं जाऊँ (so that I may go), not *ताकि मैं जाऊँगा.",
+      "examples": [
+        { "hi": "वह मेहनत करता है ताकि परिवार को अच्छा जीवन दे सके।", "en": "He works hard so that he can give his family a good life.", "highlight": "ताकि" },
+        { "hi": "वह सो रहा है जबकि सबको काम करना है।", "en": "He is sleeping whereas everyone has to work.", "highlight": "जबकि" },
+        { "hi": "हालाँकि वह थका हुआ था, फिर भी उसने काम पूरा किया।", "en": "Although he was tired, he still completed the work.", "highlight": "हालाँकि...फिर भी" },
+        { "hi": "दरवाज़ा बंद करो ताकि मच्छर अंदर न आएँ।", "en": "Close the door so that mosquitoes don't come in.", "highlight": "ताकि" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"ताकि\" के बाद कौन सा वाच्य (mood) आता है? (What mood follows ताकि?)",
+          "options": ["संभावनार्थक / Subjunctive", "निश्चयार्थक / Indicative", "आज्ञार्थक / Imperative"],
+          "correctIndex": 0,
+          "explanation": "ताकि (so that) always requires the subjunctive mood in the following clause because it expresses purpose — something intended but not yet realized. Example: ताकि मैं जा सकूँ (so that I may be able to go), not *ताकि मैं जा सकता हूँ or *ताकि मैं जा सकूँगा."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"हालाँकि\" का क्या अर्थ है? (What does हालाँकि mean?)",
+          "options": ["यद्यपि / Although", "इसलिए / Therefore", "ताकि / So that"],
+          "correctIndex": 0,
+          "explanation": "हालाँकि means 'although' or 'even though'. It introduces a concessive clause — a fact that might be expected to prevent the main action but does not. It is often paired with फिर भी (still/nevertheless) in the result clause."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"जबकि\" किसके लिए प्रयोग होता है? (What is जबकि used for?)",
+          "options": ["विरोधाभास या साथ-साथ की स्थिति (Contrast or simultaneity)", "कारण बताने के लिए (To show reason)", "शर्त बताने के लिए (To show condition)"],
+          "correctIndex": 0,
+          "explanation": "जबकि (while / whereas) serves two functions: it can show contrast between two clauses (He plays whereas he should study) or temporal simultaneity (While she was cooking, he was reading). Context determines which meaning applies."
+        }
+      ]
+    },
+    {
+      "sectionId": "participle-constructions",
+      "title": "Participle Constructions (कृदंत रचनाएँ)",
+      "explanation": "Hindi makes extensive use of participles — verb forms that function as adjectives or adverbs within complex sentences, often replacing separate subordinate clauses. The present participle is formed with -ता/-ती/-ते (हुआ/हुई/हुए): दौड़ता हुआ लड़का (the running boy), हँसती हुई लड़की (the laughing girl). It describes an ongoing action simultaneous with the main verb. The past participle is the verb root + -आ/-ई/-ए: लिखा हुआ पत्र (a written letter), टूटी हुई कुर्सी (a broken chair). It describes a completed state. The conjunctive participle (absolutive) is formed with -कर or -के and indicates an action completed before the main action: खाना खाकर वह सो गया (Having eaten food, he went to sleep). This is extremely common in Hindi and replaces many 'after' or 'when' clauses that English would use. Multiple conjunctive participles can chain together: उठकर, नहाकर, कपड़े पहनकर वह निकल गया (Having gotten up, bathed, and dressed, he left).",
+      "tip": "The conjunctive participle (-कर/-के) is one of the most useful constructions in Hindi. Use it to chain sequential actions naturally: सोचकर बोलो (Think, then speak), सुनकर बताओ (Listen, then tell). It makes your Hindi sound much more natural than using separate sentences.",
+      "examples": [
+        { "hi": "रोता हुआ बच्चा माँ के पास आया।", "en": "The crying child came to the mother.", "highlight": "रोता हुआ" },
+        { "hi": "यह गाना सुनकर मुझे अपना बचपन याद आता है।", "en": "Hearing this song, I remember my childhood.", "highlight": "सुनकर" },
+        { "hi": "टूटा हुआ खिलौना मेज़ पर पड़ा है।", "en": "The broken toy is lying on the table.", "highlight": "टूटा हुआ" },
+        { "hi": "वह घर पहुँचकर तुरंत सो गई।", "en": "Having reached home, she immediately fell asleep.", "highlight": "पहुँचकर" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "\"खाना खाकर वह सो गया\" में \"खाकर\" क्या है? (What is खाकर in this sentence?)",
+          "options": ["संयोजक कृदंत / Conjunctive participle", "वर्तमान कृदंत / Present participle", "भूत कृदंत / Past participle"],
+          "correctIndex": 0,
+          "explanation": "खाकर is a conjunctive participle formed with खा + कर. It indicates that the eating was completed before the main action (sleeping). The conjunctive participle always describes a prior completed action: Having eaten, he slept."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"दौड़ती हुई गाड़ी\" में कौन सा कृदंत है? (What type of participle is in 'the running car'?)",
+          "options": ["वर्तमान कृदंत / Present participle", "भूत कृदंत / Past participle", "संयोजक कृदंत / Conjunctive participle"],
+          "correctIndex": 0,
+          "explanation": "दौड़ती हुई is a present participle (दौड़ + ती + हुई) functioning as an adjective to describe गाड़ी (car). It indicates an ongoing action: the car that is running/moving. The feminine form ती हुई agrees with the feminine noun गाड़ी."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "\"लिखा हुआ पत्र\" में \"लिखा हुआ\" क्या दर्शाता है? (What does लिखा हुआ indicate in 'a written letter'?)",
+          "options": ["एक पूर्ण स्थिति / A completed state", "एक चल रही क्रिया / An ongoing action", "एक भविष्य की क्रिया / A future action"],
+          "correctIndex": 0,
+          "explanation": "लिखा हुआ is a past participle (लिख + आ + हुआ) indicating a completed state — the letter has already been written. Past participles in Hindi describe the result of a completed action and function as adjectives: टूटा हुआ (broken), बना हुआ (made), खुला हुआ (opened)."
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import tempfile
 import torch
 import sqlite3
 import datetime
+import requests as http_requests
 
 try:
     from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
@@ -21,6 +22,8 @@ except ImportError:
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 RU_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-ru", "v5_ru.pt")
 DE_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-de", "v3_de.pt")
+ES_MODEL_PATH = os.path.join(SCRIPT_DIR, "tts-model-es", "v3_es.pt")
+# French TTS now handled by Kokoro sidecar
 
 app = Flask(__name__)
 CORS(app)
@@ -188,6 +191,23 @@ DE_SPEAKER = 'bernd_ungerer'
 DE_SAMPLE_RATE = 48000
 print(f"[OK] German TTS model loaded! (speaker: {DE_SPEAKER})")
 
+# === Spanish TTS (Silero v3) ===
+os.makedirs(os.path.join(SCRIPT_DIR, "tts-model-es"), exist_ok=True)
+
+print("Loading Spanish TTS model (Silero v3)...")
+if not os.path.isfile(ES_MODEL_PATH):
+    print("  Downloading Silero v3 Spanish model (~100MB)...")
+    torch.hub.download_url_to_file('https://models.silero.ai/models/tts/es/v3_es.pt', ES_MODEL_PATH)
+
+tts_es = torch.package.PackageImporter(ES_MODEL_PATH).load_pickle("tts_models", "model")
+tts_es.to(torch.device('cpu'))
+ES_SPEAKER = 'es_0'
+ES_SAMPLE_RATE = 48000
+print(f"[OK] Spanish TTS model loaded! (speaker: {ES_SPEAKER})")
+
+# === French TTS — now handled by Kokoro sidecar (port 3003) ===
+print("[OK] French TTS → Kokoro sidecar")
+
 # === Whisper STT ===
 # Try MLX Whisper first (macOS Apple Silicon), fall back to faster-whisper (Windows/Linux/Intel)
 import platform
@@ -232,6 +252,10 @@ WHISPER_INITIAL_PROMPTS = {
     'ru': 'Говорю по-русски. Пишу кириллицей.',
     'uk': 'Говорю українською. Пишу кирилицею.',
     'de': 'Ich spreche Deutsch.',
+    'es': 'Hablo español.',
+    'fr': 'Je parle français.',
+    'zh': '你好，请问，谢谢，中国，学生，老师',
+    'ja': 'こんにちは、ありがとう、日本、東京、学生、先生',
 }
 
 def whisper_transcribe(audio_path, lang=None):
@@ -317,18 +341,90 @@ DE_LETTER_PHONETICS = {
     'y': 'ypsilon', 'z': 'tset', 'ä': 'ae', 'ö': 'oe', 'ü': 'ue', 'ß': 'es-tset',
 }
 
+ES_LETTER_PHONETICS = {
+    'a': 'a', 'b': 'be', 'c': 'ce', 'd': 'de', 'e': 'e', 'f': 'efe',
+    'g': 'ge', 'h': 'hache', 'i': 'i', 'j': 'jota', 'k': 'ka', 'l': 'ele',
+    'm': 'eme', 'n': 'ene', 'ñ': 'eñe', 'o': 'o', 'p': 'pe', 'q': 'cu',
+    'r': 'erre', 's': 'ese', 't': 'te', 'u': 'u', 'v': 'uve', 'w': 'uve doble',
+    'x': 'equis', 'y': 'ye', 'z': 'zeta',
+}
+
+FR_LETTER_PHONETICS = {
+    'a': 'a', 'b': 'bé', 'c': 'cé', 'd': 'dé', 'e': 'e', 'f': 'effe',
+    'g': 'gé', 'h': 'hache', 'i': 'i', 'j': 'ji', 'k': 'ka', 'l': 'elle',
+    'm': 'emme', 'n': 'enne', 'o': 'o', 'p': 'pé', 'q': 'cu', 'r': 'erre',
+    's': 'esse', 't': 'té', 'u': 'u', 'v': 'vé', 'w': 'double vé',
+    'x': 'ixe', 'y': 'i grec', 'z': 'zède',
+}
+
 def expand_single_letter(text, lang):
     """If text is a single letter, expand to its spoken name for TTS."""
     stripped = text.strip()
     if len(stripped) == 1:
+        # espeak-ng languages handle single letters natively — skip lookup
+        if lang in ('el', 'hi', 'ar', 'ko', 'zh', 'ja'):
+            return text
         if lang == 'ru':
             lookup = RU_LETTER_PHONETICS
         elif lang == 'de':
             lookup = DE_LETTER_PHONETICS
+        elif lang == 'es':
+            lookup = ES_LETTER_PHONETICS
+        elif lang == 'fr':
+            lookup = FR_LETTER_PHONETICS
         else:
             lookup = UK_LETTER_PHONETICS
         return lookup.get(stripped.lower(), text)
     return text
+
+KOKORO_URL = 'http://localhost:3003/tts'
+
+def proxy_to_kokoro(text, lang):
+    """Proxy TTS request to Kokoro sidecar service on port 3003."""
+    try:
+        print(f"[TTS-Kokoro] Proxying {lang}: {text[:80]}")
+        resp = http_requests.post(KOKORO_URL, json={'text': text, 'lang': lang}, timeout=30)
+        if resp.status_code != 200:
+            print(f"[TTS-Kokoro] Sidecar error {resp.status_code}, falling back to espeak-ng")
+            return generate_espeak_tts(text, lang)
+        # Write response audio to temp file and serve it
+        with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+            tmp.write(resp.content)
+            tmp_path = tmp.name
+        try:
+            return send_file(tmp_path, mimetype='audio/wav')
+        finally:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+    except http_requests.ConnectionError:
+        print(f"[TTS-Kokoro] Sidecar not running, falling back to espeak-ng")
+        return generate_espeak_tts(text, lang)
+    except Exception as e:
+        print(f"[TTS-Kokoro] Error: {repr(e)}, falling back to espeak-ng")
+        return generate_espeak_tts(text, lang)
+
+def generate_espeak_tts(text, lang):
+    """Fallback espeak-ng TTS for any language."""
+    import subprocess
+    print(f"[TTS-espeak] Generating ({lang}): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        subprocess.run(
+            ['espeak-ng', '-v', lang, '-s', '150', '-a', '180', '-w', tmp_path, text],
+            check=True, capture_output=True
+        )
+        return send_file(tmp_path, mimetype='audio/wav')
+    except subprocess.CalledProcessError as e:
+        print(f"[TTS-espeak] Error: {e.stderr.decode()}")
+        raise
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
 
 @app.route('/tts', methods=['POST'])
 def generate_tts():
@@ -342,12 +438,23 @@ def generate_tts():
 
         text = expand_single_letter(text, lang)
 
-        if lang == 'ru':
+        # Kokoro TTS languages — proxy to sidecar on port 3003
+        if lang in ('fr', 'hi', 'ja', 'zh'):
+            return proxy_to_kokoro(text, lang)
+        elif lang == 'ru':
             return generate_russian_tts(text)
         elif lang == 'de':
             return generate_german_tts(text)
         elif lang == 'en':
             return generate_english_tts(text)
+        elif lang == 'es':
+            return generate_spanish_tts(text)
+        elif lang == 'el':
+            return generate_greek_tts(text)
+        elif lang == 'ar':
+            return generate_arabic_tts(text)
+        elif lang == 'ko':
+            return generate_korean_tts(text)
         else:
             return generate_ukrainian_tts(text)
 
@@ -452,8 +559,127 @@ def generate_german_tts(text):
         except OSError:
             pass
 
+def generate_spanish_tts(text):
+    text = numbers_to_words(text, lang='es')
+    print(f"[TTS-ES] Generating ({ES_SPEAKER}): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    tts_es.save_wav(text=text, speaker=ES_SPEAKER, sample_rate=ES_SAMPLE_RATE, audio_path=tmp_path)
+    try:
+        print(f"[TTS-ES] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+def generate_greek_tts(text):
+    """Generate Greek TTS using espeak-ng."""
+    import subprocess
+    print(f"[TTS-EL] Generating (espeak-ng el): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        subprocess.run(
+            ['espeak-ng', '-v', 'el', '-s', '150', '-a', '180', '-w', tmp_path, text],
+            check=True, capture_output=True
+        )
+        print(f"[TTS-EL] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    except subprocess.CalledProcessError as e:
+        print(f"[TTS-EL] espeak-ng error: {e.stderr.decode()}")
+        raise
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+def generate_arabic_tts(text):
+    """Generate Arabic TTS using espeak-ng."""
+    import subprocess
+    print(f"[TTS-AR] Generating (espeak-ng ar): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        subprocess.run(
+            ['espeak-ng', '-v', 'ar', '-s', '150', '-a', '180', '-w', tmp_path, text],
+            check=True, capture_output=True
+        )
+        print(f"[TTS-AR] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    except subprocess.CalledProcessError as e:
+        print(f"[TTS-AR] espeak-ng error: {e.stderr.decode()}")
+        raise
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+def generate_korean_tts(text):
+    """Generate Korean TTS using espeak-ng."""
+    import subprocess
+    print(f"[TTS-KO] Generating (espeak-ng ko): {text[:80]}")
+    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        subprocess.run(
+            ['espeak-ng', '-v', 'ko', '-s', '150', '-a', '180', '-w', tmp_path, text],
+            check=True, capture_output=True
+        )
+        print(f"[TTS-KO] Generated successfully")
+        return send_file(tmp_path, mimetype='audio/wav')
+    except subprocess.CalledProcessError as e:
+        print(f"[TTS-KO] espeak-ng error: {e.stderr.decode()}")
+        raise
+    finally:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+
+KOKORO_PYTHON = os.environ.get('KOKORO_PYTHON', '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3')
+KOKORO_SCRIPT = os.path.join(SCRIPT_DIR, 'kokoro-tts.py')
+kokoro_process = None
+
+def start_kokoro_sidecar():
+    """Launch the Kokoro TTS sidecar on port 3003 using Python 3.12."""
+    global kokoro_process
+    import subprocess, atexit, signal
+    if not os.path.isfile(KOKORO_PYTHON):
+        print(f"[WARN] Python 3.12 not found at {KOKORO_PYTHON} — Kokoro disabled, fr/hi/ja/zh will use espeak-ng fallback")
+        return
+    if not os.path.isfile(KOKORO_SCRIPT):
+        print(f"[WARN] kokoro-tts.py not found — Kokoro disabled")
+        return
+    print("[Kokoro] Starting sidecar (Python 3.12, port 3003)...")
+    kokoro_process = subprocess.Popen(
+        [KOKORO_PYTHON, KOKORO_SCRIPT],
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    )
+    # Print sidecar output in a background thread
+    import threading
+    def stream_output():
+        for line in kokoro_process.stdout:
+            print(f"[Kokoro] {line.decode().rstrip()}")
+    threading.Thread(target=stream_output, daemon=True).start()
+    # Kill sidecar when main server exits
+    def cleanup():
+        if kokoro_process and kokoro_process.poll() is None:
+            kokoro_process.terminate()
+            kokoro_process.wait(timeout=5)
+            print("[Kokoro] Sidecar stopped")
+    atexit.register(cleanup)
+    signal.signal(signal.SIGTERM, lambda *a: (cleanup(), exit(0)))
+
 if __name__ == '__main__':
-    print("\n[SPEAKER] TTS + STT Server (Ukrainian + Russian + English + German)")
+    start_kokoro_sidecar()
+    print("\n[SPEAKER] TTS + STT Server")
+    print("   Silero: uk, ru, en, de, es")
+    print("   Kokoro (sidecar :3003): fr, hi, ja, zh")
+    print("   espeak-ng: el, ar, ko")
     print(f"   STT: {'enabled' if stt_available else 'disabled (install mlx-whisper)'}")
     print("   Starting on http://localhost:3002\n")
     app.run(host='0.0.0.0', port=3002, debug=False)

@@ -1,0 +1,115 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Going Shopping",
+  "nameJa": "買い物",
+  "icon": "🛍️",
+  "context": "You are at a department store in Tokyo. A shop clerk approaches you in the clothing section.",
+  "characters": {
+    "npc": { "name": "店員" },
+    "player": { "name": "あなた" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "いらっしゃいませ！何かお探しですか？",
+      "translation": "Welcome! Are you looking for something?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the clerk you're browsing or looking for something.",
+      "acceptedResponses": [
+        "はい、シャツを探しています。",
+        "ちょっと見ているだけです。",
+        "プレゼント用に何かいいものはありますか？",
+        "新しいジャケットを探しているんですが。"
+      ],
+      "keyWords": ["探して", "見ている", "ありますか"],
+      "hint": "Use '探しています' (I'm looking for) or '見ているだけです' (I'm just browsing)."
+    },
+    {
+      "speaker": "npc",
+      "text": "シャツですね。こちらの新作はいかがですか？今季の人気商品です。",
+      "translation": "A shirt, I see. How about this new arrival? It's a popular item this season."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the item — its price, material, or colors available.",
+      "acceptedResponses": [
+        "素敵ですね。おいくらですか？",
+        "これはいくらですか？",
+        "他の色はありますか？",
+        "このシャツの素材は何ですか？"
+      ],
+      "keyWords": ["いくら", "おいくら", "色", "素材"],
+      "hint": "Use 'おいくらですか' (how much is it, polite) or 'いくらですか' (how much is it)."
+    },
+    {
+      "speaker": "npc",
+      "text": "こちらは八千円です。白、黒、紺の三色がございます。",
+      "translation": "This one is 8,000 yen. We have three colors: white, black, and navy."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the size or ask to try it on.",
+      "acceptedResponses": [
+        "Mサイズはありますか？",
+        "試着してもいいですか？",
+        "紺のMサイズを試着したいのですが。",
+        "少し大きいサイズはありますか？"
+      ],
+      "keyWords": ["サイズ", "試着", "ありますか"],
+      "hint": "Use '試着してもいいですか' (may I try it on?) or 'Mサイズはありますか' (do you have size M?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "もちろんです。試着室はあちらでございます。こちらのMサイズをどうぞ。",
+      "translation": "Of course. The fitting room is over there. Here is the size M for you."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Come back from the fitting room and say how it fits — decide to buy or not.",
+      "acceptedResponses": [
+        "ぴったりです。これをください。",
+        "少しきついので、Lサイズはありますか？",
+        "サイズはちょうどいいです。これにします。",
+        "気に入りました。これをお願いします。"
+      ],
+      "keyWords": ["ください", "します", "ぴったり", "お願い"],
+      "hint": "Use 'これをください' (I'll take this) or 'これにします' (I'll go with this one)."
+    },
+    {
+      "speaker": "npc",
+      "text": "ありがとうございます。お支払いは現金ですか、カードですか？",
+      "translation": "Thank you. Will you be paying by cash or card?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell the clerk how you'd like to pay.",
+      "acceptedResponses": [
+        "カードでお願いします。",
+        "現金で払います。",
+        "クレジットカードは使えますか？",
+        "カードで一括払いでお願いします。"
+      ],
+      "keyWords": ["カード", "現金", "お願いします"],
+      "hint": "Use 'カードでお願いします' (by card, please) or '現金で払います' (I'll pay in cash)."
+    },
+    {
+      "speaker": "npc",
+      "text": "かしこまりました。袋にお入れしますね。ありがとうございました！",
+      "translation": "Certainly. I'll put it in a bag for you. Thank you very much!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank the clerk and say goodbye.",
+      "acceptedResponses": [
+        "ありがとうございます。また来ます。",
+        "どうもありがとうございました。",
+        "ありがとうございます。失礼します。",
+        "助かりました。ありがとうございます。"
+      ],
+      "keyWords": ["ありがとう", "また", "失礼"],
+      "hint": "Use 'ありがとうございます' (thank you) and 'また来ます' (I'll come again)."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "lessonId": "nominal-sentences",
+  "nameEn": "Nominal Sentences",
+  "nameAr": "الجملة الاسمية",
+  "icon": "🏷️",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "mubtada-khabar",
+      "title": "Subject and Predicate — المُبْتَدَأ والخَبَر",
+      "explanation": "The nominal sentence (الجُمْلَة الاسْمِيَّة) is one of the two main sentence types in Arabic. It begins with a noun or pronoun (the subject, المُبْتَدَأ al-mubtada') and is followed by a predicate (الخَبَر al-khabar) that tells us something about the subject. A key feature of Arabic nominal sentences is that they do not require a verb 'to be' in the present tense — the copula is implied. So البَيْتُ كَبِيرٌ literally reads 'the-house big' and means 'The house is big.' Both the mubtada' and khabar are in the nominative case (مَرْفُوع). The mubtada' is usually definite (with الـ or a proper noun or pronoun), and the khabar is usually indefinite when it is an adjective or noun. This definite-indefinite contrast is what distinguishes a sentence from a noun phrase: البَيْتُ الكَبِيرُ (the big house, a phrase) vs. البَيْتُ كَبِيرٌ (the house is big, a sentence).",
+      "tip": "No verb 'to be' is needed in present-tense nominal sentences. The pattern is simple: definite noun + indefinite predicate = a complete sentence. If both are definite, you have a noun phrase, not a sentence.",
+      "examples": [
+        { "ar": "البَيْتُ كَبِيرٌ", "en": "The house is big.", "highlight": "كَبِيرٌ" },
+        { "ar": "الطَّقْسُ جَمِيلٌ", "en": "The weather is beautiful.", "highlight": "جَمِيلٌ" },
+        { "ar": "الوَلَدُ ذَكِيٌّ", "en": "The boy is smart.", "highlight": "ذَكِيٌّ" },
+        { "ar": "هِيَ طَبِيبَةٌ", "en": "She is a doctor.", "highlight": "طَبِيبَةٌ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the المُبْتَدَأ (subject) in the sentence الكِتَابُ مُفِيدٌ (The book is useful)?",
+          "options": ["الكِتَابُ", "مُفِيدٌ", "There is no subject"],
+          "correctIndex": 0,
+          "explanation": "الكِتَابُ (the book) is the mubtada' (subject) — it is the definite noun that the sentence is about. مُفِيدٌ (useful) is the khabar (predicate) that provides information about the subject."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does the sentence البَيْتُ كَبِيرٌ not have a verb?",
+          "options": ["Arabic does not use a 'to be' verb in present-tense nominal sentences", "The verb was accidentally omitted", "It is an incomplete sentence"],
+          "correctIndex": 0,
+          "explanation": "In Arabic, present-tense nominal sentences do not require a copula (verb 'to be'). The juxtaposition of a definite subject and indefinite predicate automatically creates the meaning 'X is Y'. This is a fundamental feature of Arabic grammar."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between البَيْتُ الكَبِيرُ and البَيْتُ كَبِيرٌ?",
+          "options": ["The first is a phrase ('the big house'), the second is a sentence ('the house is big')", "They mean the same thing", "The first is past tense, the second is present"],
+          "correctIndex": 0,
+          "explanation": "When both parts are definite (البَيْتُ الكَبِيرُ), it is a noun phrase meaning 'the big house.' When the predicate is indefinite (البَيْتُ كَبِيرٌ), it becomes a sentence meaning 'the house is big.' The tanween on كَبِيرٌ signals it is indefinite, creating a sentence."
+        }
+      ]
+    },
+    {
+      "sectionId": "types-of-khabar",
+      "title": "Types of Predicate — أَنْوَاع الخَبَر",
+      "explanation": "The predicate (khabar) in a nominal sentence can take several forms. First, it can be a single word (خَبَر مُفْرَد) — an adjective, noun, or participle: الجَوُّ حَارٌّ (The weather is hot). Second, it can be a prepositional or adverbial phrase (خَبَر شِبْه جُمْلَة): الكِتَابُ عَلَى الطَّاوِلَةِ (The book is on the table). Third, it can be an entire sentence — either a verbal sentence (خَبَر جُمْلَة فِعْلِيَّة): الطَّالِبُ يَدْرُسُ (The student studies/is studying) or another nominal sentence (خَبَر جُمْلَة اسْمِيَّة): البَيْتُ حَدِيقَتُهُ وَاسِعَةٌ (The house — its garden is spacious). Understanding these predicate types allows you to construct more complex and nuanced sentences.",
+      "tip": "When the khabar is a prepositional phrase, it often expresses location: الوَلَدُ فِي المَدْرَسَةِ (The boy is in the school). When it is a verbal sentence, the verb must contain a pronoun referring back to the mubtada'.",
+      "examples": [
+        { "ar": "الكِتَابُ عَلَى الطَّاوِلَةِ", "en": "The book is on the table. (prepositional phrase khabar)", "highlight": "عَلَى الطَّاوِلَةِ" },
+        { "ar": "الطَّالِبُ يَدْرُسُ", "en": "The student is studying. (verbal sentence khabar)", "highlight": "يَدْرُسُ" },
+        { "ar": "المُدِيرُ فِي مَكْتَبِهِ", "en": "The manager is in his office.", "highlight": "فِي مَكْتَبِهِ" },
+        { "ar": "السَّيَّارَةُ أَمَامَ البَيْتِ", "en": "The car is in front of the house.", "highlight": "أَمَامَ البَيْتِ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In الكِتَابُ عَلَى الطَّاوِلَةِ, what type of khabar is used?",
+          "options": ["Prepositional phrase (شِبْه جُمْلَة)", "Single word (مُفْرَد)", "Verbal sentence (جُمْلَة فِعْلِيَّة)"],
+          "correctIndex": 0,
+          "explanation": "عَلَى الطَّاوِلَةِ (on the table) is a prepositional phrase acting as the predicate. This type of khabar is called خَبَر شِبْه جُمْلَة (semi-sentence predicate) and is very common for expressing location."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In الطَّالِبُ يَدْرُسُ, what is the khabar?",
+          "options": ["يَدْرُسُ (he studies)", "الطَّالِبُ (the student)", "Both together"],
+          "correctIndex": 0,
+          "explanation": "يَدْرُسُ (he studies) is the khabar — it is a verbal sentence predicate (خَبَر جُمْلَة فِعْلِيَّة). The hidden pronoun هُوَ (he) inside the verb refers back to the mubtada' الطَّالِبُ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a nominal sentence with a single-word khabar?",
+          "options": ["الجَوُّ حَارٌّ (The weather is hot)", "الوَلَدُ فِي البَيْتِ (The boy is in the house)", "الأُسْتَاذُ يَشْرَحُ (The teacher is explaining)"],
+          "correctIndex": 0,
+          "explanation": "الجَوُّ حَارٌّ has a single-word khabar: the adjective حَارٌّ (hot). The second example has a prepositional phrase khabar, and the third has a verbal sentence khabar."
+        }
+      ]
+    },
+    {
+      "sectionId": "negating-nominal",
+      "title": "Negating Nominal Sentences — نَفْي الجُمْلَة الاسْمِيَّة",
+      "explanation": "To negate a present-tense nominal sentence, use لَيْسَ (laysa, 'is not'). لَيْسَ is a special verb-like particle that conjugates for person and gender but functions as a negator of the copula. When لَيْسَ is used, the predicate changes from the nominative to the accusative case. For example: البَيْتُ كَبِيرٌ (The house is big) becomes لَيْسَ البَيْتُ كَبِيرًا (The house is not big). لَيْسَ conjugates: لَيْسَ (he is not), لَيْسَتْ (she is not), لَسْتُ (I am not), لَسْتَ (you masc. are not), لَسْتِ (you fem. are not), لَسْنَا (we are not), لَيْسُوا (they masc. are not), لَسْنَ (they fem. are not). The khabar of لَيْسَ takes the accusative (مَنْصُوب), often shown by a fatha or tanween fatha.",
+      "tip": "After لَيْسَ, the predicate goes into the accusative case. So كَبِيرٌ (nominative) becomes كَبِيرًا (accusative). Think of لَيْسَ as a special negation tool that 'pulls down' the predicate's case.",
+      "examples": [
+        { "ar": "لَيْسَ الجَوُّ بَارِدًا", "en": "The weather is not cold.", "highlight": "لَيْسَ" },
+        { "ar": "لَسْتُ طَالِبًا", "en": "I am not a student.", "highlight": "لَسْتُ" },
+        { "ar": "لَيْسَتْ هَذِهِ سَيَّارَتِي", "en": "This is not my car.", "highlight": "لَيْسَتْ" },
+        { "ar": "لَيْسُوا مُعَلِّمِينَ", "en": "They are not teachers.", "highlight": "لَيْسُوا" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you negate the sentence الطَّقْسُ جَمِيلٌ (The weather is beautiful)?",
+          "options": ["لَيْسَ الطَّقْسُ جَمِيلًا", "لا الطَّقْسُ جَمِيلٌ", "مَا الطَّقْسُ جَمِيلٌ"],
+          "correctIndex": 0,
+          "explanation": "Present-tense nominal sentences are negated with لَيْسَ. The predicate changes to the accusative case: جَمِيلٌ becomes جَمِيلًا. So the negated sentence is لَيْسَ الطَّقْسُ جَمِيلًا."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What case does the khabar take after لَيْسَ?",
+          "options": ["Accusative (مَنْصُوب)", "Nominative (مَرْفُوع)", "Genitive (مَجْرُور)"],
+          "correctIndex": 0,
+          "explanation": "لَيْسَ behaves like the 'sisters of كَانَ' (كَانَ وَأَخَوَاتُهَا) — it keeps the subject in the nominative but puts the predicate in the accusative case. This is why كَبِيرٌ becomes كَبِيرًا after لَيْسَ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct conjugation of لَيْسَ for 'I am not'?",
+          "options": ["لَسْتُ", "لَيْسَ", "لَيْسَتْ"],
+          "correctIndex": 0,
+          "explanation": "لَسْتُ is the first-person singular conjugation of لَيْسَ. لَيْسَ is third-person masculine ('he is not') and لَيْسَتْ is third-person feminine ('she is not')."
+        }
+      ]
+    }
+  ]
+}

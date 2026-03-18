@@ -1,0 +1,116 @@
+{
+  "lessonId": "verbal-sentences",
+  "nameEn": "Verbal Sentences",
+  "nameAr": "الجملة الفعلية",
+  "icon": "🏃",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "vso-word-order",
+      "title": "Verb-Subject-Object Order — فِعْل فَاعِل مَفْعُول بِهِ",
+      "explanation": "The verbal sentence (الجُمْلَة الفِعْلِيَّة) is the second main sentence type in Arabic. It begins with a verb and follows the order: Verb (فِعْل) + Subject (فَاعِل) + Object (مَفْعُول بِهِ). This VSO order is the default in Modern Standard Arabic. For example: كَتَبَ الطَّالِبُ الدَّرْسَ (The student wrote the lesson) — the verb كَتَبَ comes first, then the subject الطَّالِبُ (nominative), then the object الدَّرْسَ (accusative). An important rule in verbal sentences is that when the verb precedes the subject, the verb always remains singular regardless of whether the subject is dual or plural. So you say حَضَرَ الطُّلَّابُ (the students came), not حَضَرُوا الطُّلَّابُ. However, the verb must agree with the subject in gender.",
+      "tip": "In VSO order, the verb is always singular even with a plural subject. But it must match the subject in gender: حَضَرَ الطُّلَّابُ (the male students came) vs. حَضَرَتِ الطَّالِبَاتُ (the female students came).",
+      "examples": [
+        { "ar": "كَتَبَ الطَّالِبُ الدَّرْسَ", "en": "The student wrote the lesson. (V-S-O)", "highlight": "كَتَبَ" },
+        { "ar": "قَرَأَتِ البِنْتُ الكِتَابَ", "en": "The girl read the book.", "highlight": "قَرَأَتِ" },
+        { "ar": "فَتَحَ الرَّجُلُ البَابَ", "en": "The man opened the door.", "highlight": "فَتَحَ" },
+        { "ar": "شَرِبَتِ الأُمُّ القَهْوَةَ", "en": "The mother drank the coffee.", "highlight": "شَرِبَتِ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the default word order in Arabic verbal sentences?",
+          "options": ["Verb-Subject-Object (VSO)", "Subject-Verb-Object (SVO)", "Object-Verb-Subject (OVS)"],
+          "correctIndex": 0,
+          "explanation": "The default word order in MSA verbal sentences is VSO: the verb comes first, followed by the subject, then the object. This differs from English, which typically uses SVO order."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence كَتَبَ الطُّلَّابُ الوَاجِبَ (The students wrote the homework), why is the verb singular كَتَبَ instead of plural كَتَبُوا?",
+          "options": ["When the verb precedes the subject, it stays singular", "It is a grammatical error", "الطُّلَّابُ is treated as singular"],
+          "correctIndex": 0,
+          "explanation": "This is a fundamental rule of Arabic: when the verb comes before the subject (VSO order), the verb remains in the singular form, agreeing only in gender. The verb does not show plural agreement in this position."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What case does the object (مَفْعُول بِهِ) take in a verbal sentence?",
+          "options": ["Accusative (مَنْصُوب)", "Nominative (مَرْفُوع)", "Genitive (مَجْرُور)"],
+          "correctIndex": 0,
+          "explanation": "The direct object in Arabic always takes the accusative case (مَنْصُوب). In the sentence كَتَبَ الطَّالِبُ الدَّرْسَ, the object الدَّرْسَ ends with a fatha showing the accusative case."
+        }
+      ]
+    },
+    {
+      "sectionId": "intransitive-verbs",
+      "title": "Intransitive Verbs and Complements",
+      "explanation": "Not all verbal sentences have a direct object. Intransitive verbs (أَفْعَال لَازِمَة) do not take a direct object. Instead, they may be followed by prepositional phrases or adverbs. Common intransitive verbs include: ذَهَبَ (he went), جَلَسَ (he sat), نَامَ (he slept), خَرَجَ (he went out), and وَصَلَ (he arrived). These verbs are completed by prepositional phrases using words like إِلَى (to), مِنْ (from), فِي (in), and عَلَى (on). For example: ذَهَبَ الوَلَدُ إِلَى المَدْرَسَةِ (The boy went to the school). The noun after a preposition takes the genitive case (مَجْرُور). Some verbs can be transitive in one meaning and intransitive in another, so context matters.",
+      "tip": "After a preposition (حَرْف جَرّ), the noun always takes the genitive case (kasra or tanween kasra). Common prepositions: فِي (in), إِلَى (to), مِنْ (from), عَلَى (on), بِ (with/by), لِ (for).",
+      "examples": [
+        { "ar": "ذَهَبَ الوَلَدُ إِلَى المَدْرَسَةِ", "en": "The boy went to the school.", "highlight": "إِلَى المَدْرَسَةِ" },
+        { "ar": "جَلَسَ الأُسْتَاذُ عَلَى الكُرْسِيِّ", "en": "The teacher sat on the chair.", "highlight": "عَلَى الكُرْسِيِّ" },
+        { "ar": "خَرَجَتِ الطَّالِبَةُ مِنَ الصَّفِّ", "en": "The female student left the classroom.", "highlight": "مِنَ الصَّفِّ" },
+        { "ar": "وَصَلَ الضُّيُوفُ مَسَاءً", "en": "The guests arrived in the evening.", "highlight": "مَسَاءً" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these verbs is intransitive (does not take a direct object)?",
+          "options": ["ذَهَبَ (he went)", "كَتَبَ (he wrote)", "أَكَلَ (he ate)"],
+          "correctIndex": 0,
+          "explanation": "ذَهَبَ (he went) is intransitive — you cannot 'go' something directly. It requires a preposition to indicate the destination: ذَهَبَ إِلَى... (he went to...). كَتَبَ and أَكَلَ are transitive verbs that take direct objects."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In ذَهَبَ إِلَى المَدْرَسَةِ, why does المَدْرَسَةِ end with a kasra?",
+          "options": ["It follows a preposition, so it takes the genitive case", "It is the subject of the sentence", "It is a broken plural"],
+          "correctIndex": 0,
+          "explanation": "Nouns that follow prepositions always take the genitive case (مَجْرُور) in Arabic. إِلَى is a preposition, so المَدْرَسَةِ takes the genitive, shown by the kasra."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The word مَسَاءً in وَصَلَ الضُّيُوفُ مَسَاءً functions as:",
+          "options": ["An adverb of time (ظَرْف زَمَان)", "A direct object", "A subject"],
+          "correctIndex": 0,
+          "explanation": "مَسَاءً (in the evening) is an adverb of time (ظَرْف زَمَان) in the accusative case. It modifies the verb by telling us when the action occurred. Adverbs of time and place take the accusative in Arabic."
+        }
+      ]
+    },
+    {
+      "sectionId": "negating-verbal",
+      "title": "Negating Verbal Sentences",
+      "explanation": "Verbal sentences are negated differently depending on the tense. For past tense, use لَمْ + the present tense verb in the jussive mood (مَجْزُوم): لَمْ يَكْتُبْ (he did not write) — note the sukuun on the final letter. Alternatively, مَا + past tense verb is used: مَا كَتَبَ (he did not write). For present tense, use لا + present tense verb: لا يَكْتُبُ (he does not write / he is not writing). For future tense negation, use لَنْ + present tense verb in the subjunctive mood (مَنْصُوب): لَنْ يَكْتُبَ (he will not write) — note the fatha on the final letter. Each negation particle affects the verb differently: لَمْ requires the jussive, لَنْ requires the subjunctive, and لا leaves the present tense in the indicative.",
+      "tip": "Three key negation particles: لَمْ + jussive (past negation), لا + indicative (present negation), لَنْ + subjunctive (future negation). The verb ending changes with each: sukuun, damma, fatha respectively.",
+      "examples": [
+        { "ar": "لَمْ يَذْهَبْ إِلَى المَدْرَسَةِ", "en": "He did not go to school. (past negation)", "highlight": "لَمْ يَذْهَبْ" },
+        { "ar": "لا أَفْهَمُ هَذَا الدَّرْسَ", "en": "I do not understand this lesson. (present negation)", "highlight": "لا أَفْهَمُ" },
+        { "ar": "لَنْ أَنْسَى هَذَا اليَوْمَ", "en": "I will not forget this day. (future negation)", "highlight": "لَنْ أَنْسَى" },
+        { "ar": "مَا قَالَ شَيْئًا", "en": "He did not say anything.", "highlight": "مَا قَالَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you negate a past tense action using لَمْ?",
+          "options": ["لَمْ + present tense verb in the jussive mood", "لَمْ + past tense verb", "لَمْ + future tense verb"],
+          "correctIndex": 0,
+          "explanation": "لَمْ is followed by the present tense verb form in the jussive mood (مَجْزُوم), even though the meaning is past tense. So 'he did not write' is لَمْ يَكْتُبْ (not لَمْ كَتَبَ). The jussive is marked by a sukuun on the last letter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle is used to negate the future tense?",
+          "options": ["لَنْ", "لَمْ", "لا"],
+          "correctIndex": 0,
+          "explanation": "لَنْ negates the future tense and is followed by the present tense verb in the subjunctive mood (مَنْصُوب). For example: لَنْ يَكْتُبَ (he will not write). The subjunctive is marked by a fatha on the last letter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct negation of يَدْرُسُ (he studies) in the present tense?",
+          "options": ["لا يَدْرُسُ", "لَمْ يَدْرُسْ", "لَنْ يَدْرُسَ"],
+          "correctIndex": 0,
+          "explanation": "Present tense is negated with لا + the indicative (مَرْفُوع) form of the verb. The verb keeps its normal present-tense ending. لَمْ يَدْرُسْ would mean 'he did not study' (past), and لَنْ يَدْرُسَ would mean 'he will not study' (future)."
+        }
+      ]
+    }
+  ]
+}

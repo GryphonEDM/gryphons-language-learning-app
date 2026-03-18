@@ -1,0 +1,247 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers & Time",
+  "nameEs": "Números y Tiempo",
+  "icon": "🔢",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "cardinal-numbers",
+      "title": "Cardinal Numbers 0–100",
+      "explanation": "Spanish cardinal numbers 0–15 are unique words: cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince. Sixteen through nineteen can be written as two words (diez y seis) or as one (dieciséis); the contracted forms are standard. Twenty is veinte; 21–29 are written as one word: veintiuno, veintidós, veintitrés, veinticuatro, veinticinco, veintiséis, veintisiete, veintiocho, veintinueve. Thirty onwards uses 'y': treinta y uno, cuarenta y dos, etc. The tens are: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa, cien (exactly 100).\n\nGender agreement: 'uno' shortens to 'un' before a masculine noun and uses 'una' before a feminine noun. The same applies to compound numbers ending in one: veintiún libros, veintiuna personas, treinta y un días, treinta y una horas.",
+      "tip": "uno → un (m.) / una (f.) | veintiuno → veintiún (m.) / veintiuna (f.) | 100 = cien (alone), ciento (in compounds e.g. ciento diez)",
+      "examples": [
+        { "es": "Tengo veintiún años.", "en": "I am twenty-one years old. (masculine noun implied)", "highlight": "veintiún" },
+        { "es": "Hay veintiuna sillas en la sala.", "en": "There are twenty-one chairs in the room.", "highlight": "veintiuna" },
+        { "es": "El libro cuesta treinta y un euros.", "en": "The book costs thirty-one euros.", "highlight": "treinta y un" },
+        { "es": "Compré treinta y una naranjas.", "en": "I bought thirty-one oranges.", "highlight": "treinta y una" },
+        { "es": "Cien personas asistieron al concierto.", "en": "One hundred people attended the concert.", "highlight": "Cien" },
+        { "es": "El número de la casa es cuarenta y cinco.", "en": "The house number is forty-five.", "highlight": "cuarenta y cinco" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 21 before a masculine noun (e.g., '21 students' — estudiantes, masculine)?",
+          "options": ["veintiuno estudiantes", "veintiún estudiantes", "veintiuna estudiantes", "veinte y un estudiantes"],
+          "correctIndex": 1,
+          "explanation": "Before a masculine noun, 'veintiuno' drops the final -o and adds an accent: 'veintiún estudiantes'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for '21 chairs' (sillas — feminine)?",
+          "options": ["veintiún sillas", "veintiunas sillas", "veintiuna sillas", "veintiuno sillas"],
+          "correctIndex": 2,
+          "explanation": "'Sillas' is feminine, so use 'veintiuna sillas'. No accent is needed on the feminine form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El edificio tiene ___ pisos. (31 floors — pisos, masculine)",
+          "acceptedAnswers": ["treinta y un", "Treinta y un"],
+          "hint": "31 before a masculine noun",
+          "explanation": "'Pisos' is masculine, so the compound number ending in one uses 'un': 'treinta y un pisos'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the number 16 most commonly written in modern Spanish?",
+          "options": ["diez y seis", "dieciséis", "diesiseis", "diez seis"],
+          "correctIndex": 1,
+          "explanation": "Numbers 16–19 are standardly written as one contracted word: dieciséis, diecisiete, dieciocho, diecinueve. The two-word form (diez y seis) is older and less common."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿Cuántos días tiene una semana? Una semana tiene ___.",
+          "acceptedAnswers": ["siete días", "siete", "7 días", "7"],
+          "hint": "7",
+          "explanation": "A week has seven days: 'siete días'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is used for exactly 100 (no following noun or number)?",
+          "options": ["ciento", "cien", "cieno", "centos"],
+          "correctIndex": 1,
+          "explanation": "Use 'cien' for exactly 100 on its own or directly before a noun ('cien personas'). Use 'ciento' when followed by additional numbers ('ciento diez')."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Mi abuela tiene ___ años. (She is 75 years old.)",
+          "acceptedAnswers": ["setenta y cinco", "Setenta y cinco"],
+          "hint": "70 + 5",
+          "explanation": "75 = setenta y cinco. Tens from 30 upward connect to units with 'y'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct spelling of the number 29?",
+          "options": ["veinte y nueve", "veintinueve", "veintenueve", "veinte nueve"],
+          "correctIndex": 1,
+          "explanation": "Numbers 21–29 are written as a single contracted word: veintinueve. Note the spelling — it keeps the 'i' of 'veinti-'."
+        }
+      ]
+    },
+    {
+      "sectionId": "ordinal-numbers",
+      "title": "Ordinal Numbers: primero–décimo",
+      "explanation": "Ordinal numbers indicate position or rank. The first ten are: primero (1st), segundo (2nd), tercero (3rd), cuarto (4th), quinto (5th), sexto (6th), séptimo (7th), octavo (8th), noveno (9th), décimo (10th).\n\nOrdinals in Spanish agree in gender and number with the noun they modify: el primer piso / la primera planta; el tercer hijo / la tercera hija. 'Primero' and 'tercero' shorten to 'primer' and 'tercer' before a singular masculine noun (apocope). The full forms (primero, tercero) are used in all other positions — after the noun, with feminine nouns, or standing alone.",
+      "tip": "primero → primer (before m. sg. noun) | tercero → tercer (before m. sg. noun) | All ordinals agree in gender: -o (m.) / -a (f.)",
+      "examples": [
+        { "es": "Vivo en el primer piso.", "en": "I live on the first floor. (masculine, apocopated)", "highlight": "primer" },
+        { "es": "Es la primera vez que visito España.", "en": "It is the first time I visit Spain. (feminine)", "highlight": "primera" },
+        { "es": "Llegó en el tercer lugar.", "en": "He/She arrived in third place. (masculine, apocopated)", "highlight": "tercer" },
+        { "es": "La tercera puerta a la derecha.", "en": "The third door on the right. (feminine)", "highlight": "tercera" },
+        { "es": "Hoy es el quinto día de clase.", "en": "Today is the fifth day of class.", "highlight": "quinto" },
+        { "es": "Estamos en el siglo veintiuno.", "en": "We are in the twenty-first century.", "highlight": "siglo veintiuno" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 'Vive en el ___ piso.' (third floor — masculine)",
+          "options": ["tercero", "tercer", "tercera", "tres"],
+          "correctIndex": 1,
+          "explanation": "'Tercero' apocopates to 'tercer' before a masculine singular noun: 'el tercer piso'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Es la primer vez.",
+            "Es la primera vez.",
+            "Es el primera vez.",
+            "Es el primer vez."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Vez' (time) is feminine, so use the feminine form 'primera'. Apocope (primer) only applies before masculine singular nouns."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El ___ capítulo del libro es muy interesante. (first chapter — masculine)",
+          "acceptedAnswers": ["primer", "Primer"],
+          "hint": "Apocopated form of 'primero' before a masculine noun",
+          "explanation": "'Capítulo' is masculine singular, so 'primero' apocopates to 'primer': 'el primer capítulo'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the fifth daughter'?",
+          "options": ["la quinto hija", "el quinta hija", "la quinta hija", "la quintas hija"],
+          "correctIndex": 2,
+          "explanation": "'Hija' (daughter) is feminine, so the ordinal takes the feminine form: 'la quinta hija'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ganaron el ___ lugar en la competencia. (second place — masculine)",
+          "acceptedAnswers": ["segundo", "Segundo"],
+          "hint": "2nd",
+          "explanation": "'Segundo' agrees with the masculine noun 'lugar': 'el segundo lugar'. Note: segundo does not apocopate."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "When does 'primero' NOT apocopate?",
+          "options": [
+            "Before a masculine singular noun (el primer libro)",
+            "Before a feminine noun (la primera semana)",
+            "In 'el primer día'",
+            "Before any singular noun"
+          ],
+          "correctIndex": 1,
+          "explanation": "Apocope (dropping the final -o) only happens before a masculine singular noun. Before feminine nouns the full form 'primera' is always used."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Hoy celebramos el ___ aniversario de la empresa. (tenth anniversary — masculine)",
+          "acceptedAnswers": ["décimo", "Décimo"],
+          "hint": "10th",
+          "explanation": "'Décimo' (10th) is the ordinal for ten. It agrees with the masculine noun 'aniversario': 'el décimo aniversario'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Match the ordinal: ¿Cuál es el número ordinal para 7?",
+          "options": ["sexto", "séptimo", "octavo", "noveno"],
+          "correctIndex": 1,
+          "explanation": "séptimo = 7th. The full sequence: primero, segundo, tercero, cuarto, quinto, sexto, séptimo, octavo, noveno, décimo."
+        }
+      ]
+    },
+    {
+      "sectionId": "telling-time",
+      "title": "Telling Time (¿Qué hora es?)",
+      "explanation": "To ask the time in Spanish use '¿Qué hora es?' (What time is it?) or '¿Qué horas son?' (less common).\n\nAnswering: use 'Es la...' for 1 o'clock (singular) and 'Son las...' for all other hours (plural). The hour is always feminine because the word 'hora' is feminine.\n\nMinutes past the hour: Son las tres y diez (3:10). Half past: Son las dos y media (2:30). Quarter past: Son las cuatro y cuarto (4:15). For minutes to the next hour (typically used for the last 15–30 minutes): Son las cinco menos cuarto (4:45 — lit. five minus a quarter). Son las ocho menos veinte (7:40).\n\nNoon and midnight: Es mediodía (It is noon). Es medianoche (It is midnight). AM/PM equivalents: de la mañana (morning), de la tarde (afternoon/evening), de la noche (night).",
+      "tip": "1:00 → Es la una | 2:00+ → Son las dos/tres... | :30 → y media | :15 → y cuarto | :45 → menos cuarto | noon = mediodía | midnight = medianoche",
+      "examples": [
+        { "es": "¿Qué hora es?", "en": "What time is it?", "highlight": "¿Qué hora es?" },
+        { "es": "Es la una en punto.", "en": "It is exactly one o'clock.", "highlight": "Es la una" },
+        { "es": "Son las tres y media.", "en": "It is half past three. (3:30)", "highlight": "Son las tres y media" },
+        { "es": "Son las nueve y cuarto.", "en": "It is quarter past nine. (9:15)", "highlight": "y cuarto" },
+        { "es": "Son las siete menos cuarto.", "en": "It is quarter to seven. (6:45)", "highlight": "menos cuarto" },
+        { "es": "Son las dos y veinte de la tarde.", "en": "It is 2:20 in the afternoon.", "highlight": "de la tarde" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is one o'clock'?",
+          "options": ["Son las una.", "Es la una.", "Son la una.", "Es las una."],
+          "correctIndex": 1,
+          "explanation": "Use 'Es la una' (singular) for 1 o'clock. All other hours use 'Son las...' because they are plural."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is 3:30'?",
+          "options": ["Es las tres y media.", "Son las tres y media.", "Son los tres y medio.", "Es la tres y media."],
+          "correctIndex": 1,
+          "explanation": "3 o'clock is plural: 'Son las tres'. Half past = 'y media' (feminine to agree with 'hora'). Full answer: 'Son las tres y media.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ las cinco y cuarto. (It is 5:15.)",
+          "acceptedAnswers": ["Son", "son"],
+          "hint": "Plural form — more than one o'clock",
+          "explanation": "For any hour other than one, use 'Son las': 'Son las cinco y cuarto.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you express 6:45 in Spanish?",
+          "options": [
+            "Son las seis y cuarenta y cinco.",
+            "Son las siete menos cuarto.",
+            "Son las seis menos cuarto.",
+            "Es la siete menos cuarto."
+          ],
+          "correctIndex": 1,
+          "explanation": "6:45 is 15 minutes before 7, so it is expressed as 'Son las siete menos cuarto' (seven minus a quarter). Both 'Son las seis y cuarenta y cinco' and 'Son las siete menos cuarto' are technically correct, but 'menos cuarto' is the traditional and most common form."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El tren sale a las ocho ___ veinte de la mañana. (The train leaves at 7:40 a.m.)",
+          "acceptedAnswers": ["menos", "Menos"],
+          "hint": "7:40 = 8 o'clock minus 20 minutes",
+          "explanation": "7:40 is 20 minutes before 8:00, so use 'menos': 'las ocho menos veinte'. Add 'de la mañana' for a.m."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "¿Cómo se dice 'It is noon'?",
+          "options": ["Son las doce.", "Es mediodía.", "Es la doce.", "Son las doces."],
+          "correctIndex": 1,
+          "explanation": "Noon is a special expression: 'Es mediodía'. While 'Son las doce' is also widely understood and used, 'Es mediodía' is the dedicated term for noon."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "¿A qué hora empieza la película? Empieza a ___ nueve de la noche. (It starts at 9:00 p.m.)",
+          "acceptedAnswers": ["las", "Las"],
+          "hint": "Preposition 'a' + definite article for hours",
+          "explanation": "To say 'at' a time use 'a las' (or 'a la' for 1:00): 'a las nueve de la noche'. 'De la noche' means at night/p.m."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which phrase means 'at 1:30 in the afternoon'?",
+          "options": [
+            "a las una y media de la tarde",
+            "a la una y medio de la tarde",
+            "a la una y media de la tarde",
+            "a la una y media de la mañana"
+          ],
+          "correctIndex": 2,
+          "explanation": "1 o'clock uses the singular 'la': 'a la una'. Half past = 'y media' (feminine). Afternoon = 'de la tarde'. Full: 'a la una y media de la tarde'."
+        }
+      ]
+    }
+  ]
+}

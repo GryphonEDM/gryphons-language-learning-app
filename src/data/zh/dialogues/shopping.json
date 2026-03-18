@@ -1,0 +1,115 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Going Shopping",
+  "nameZh": "购物",
+  "icon": "🛍️",
+  "context": "You are at a market in Beijing. A shopkeeper greets you as you browse their stall selling tea, silk scarves, and other goods.",
+  "characters": {
+    "npc": { "name": "店员" },
+    "player": { "name": "你" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "欢迎光临！随便看看，有什么需要的吗？",
+      "translation": "Welcome! Feel free to look around. Is there anything you need?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Greet them and say you're browsing or looking for something.",
+      "acceptedResponses": [
+        "你好，我想看看茶叶。",
+        "我随便看看。",
+        "你好，有什么好的推荐吗？",
+        "我想买点东西送朋友。"
+      ],
+      "keyWords": ["看看", "想", "你好"],
+      "hint": "Use '我想看看' (I'd like to look at) or '随便看看' (just browsing)."
+    },
+    {
+      "speaker": "npc",
+      "text": "好的！这款龙井茶是我们的招牌，特别受欢迎。您要不要试一下？",
+      "translation": "Great! This Longjing tea is our signature product, very popular. Would you like to try it?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask about the item — what it is, where it's from, or say you'd like to try it.",
+      "acceptedResponses": [
+        "好啊，我可以试一下吗？",
+        "这个茶是哪里产的？",
+        "这是什么茶？能介绍一下吗？",
+        "好的，我尝尝看。"
+      ],
+      "keyWords": ["试", "尝", "什么", "哪里"],
+      "hint": "Use '可以试一下吗？' (can I try it?) or '这是什么？' (what is this?)."
+    },
+    {
+      "speaker": "npc",
+      "text": "这是正宗的杭州龙井，一盒一百五十块。味道特别好！",
+      "translation": "This is authentic Hangzhou Longjing, 150 yuan per box. The flavor is excellent!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Respond to the price — bargain, say it's too expensive, or ask for a discount.",
+      "acceptedResponses": [
+        "一百五有点贵，能便宜一点吗？",
+        "太贵了！一百块行不行？",
+        "可以打个折吗？",
+        "能不能便宜点？一百二怎么样？"
+      ],
+      "keyWords": ["贵", "便宜", "折", "块"],
+      "hint": "Use '能便宜一点吗？' (can it be cheaper?) or '太贵了' (too expensive)."
+    },
+    {
+      "speaker": "npc",
+      "text": "这个价格已经很实惠了。这样吧，买两盒的话，给您两百五，怎么样？",
+      "translation": "This price is already very reasonable. How about this — if you buy two boxes, I'll give them to you for 250. How's that?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Accept the deal, counter-offer, or decide how many to buy.",
+      "acceptedResponses": [
+        "好吧，那我买两盒。",
+        "还是太贵了，两百块两盒行吗？",
+        "行，两盒就两百五，成交。",
+        "我先买一盒试试吧。"
+      ],
+      "keyWords": ["买", "盒", "行", "好"],
+      "hint": "Use '我买两盒' (I'll buy two boxes) or '先买一盒' (buy one first)."
+    },
+    {
+      "speaker": "npc",
+      "text": "没问题！您怎么付款？可以用微信支付、支付宝，也可以付现金。",
+      "translation": "No problem! How will you pay? You can use WeChat Pay, Alipay, or cash."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Tell them how you want to pay.",
+      "acceptedResponses": [
+        "我用微信支付吧。",
+        "可以刷卡吗？我没有现金。",
+        "付现金，这是三百块。",
+        "我扫支付宝吧。"
+      ],
+      "keyWords": ["微信", "支付宝", "现金", "刷卡"],
+      "hint": "Use '我用微信支付' (I'll use WeChat Pay) or '付现金' (pay cash)."
+    },
+    {
+      "speaker": "npc",
+      "text": "好的，收到了！谢谢您的光临，欢迎下次再来！",
+      "translation": "OK, payment received! Thank you for coming, welcome to visit again!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank them and say goodbye.",
+      "acceptedResponses": [
+        "谢谢，再见！",
+        "谢谢老板，下次再来！",
+        "谢谢你，再见！",
+        "好的，谢谢！拜拜！"
+      ],
+      "keyWords": ["谢谢", "再见", "拜拜"],
+      "hint": "Use '谢谢' (thank you) and '再见' (goodbye) or '拜拜' (bye-bye)."
+    }
+  ]
+}

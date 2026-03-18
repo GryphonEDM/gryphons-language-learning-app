@@ -43,7 +43,7 @@ function deleteAiSentenceSet(id) {
 }
 
 export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
-  const langName = langCode === 'ru' ? 'Russian' : langCode === 'de' ? 'German' : 'Ukrainian';
+  const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
   const [phase, setPhase] = useState('pick-difficulty'); // pick-difficulty, generate, playing, complete
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
@@ -217,11 +217,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     setAiProgressPct(0);
 
     const topic = aiTopic.trim() || 'daily life';
-    const langInstructions = langCode === 'ru'
-      ? 'Provide each sentence in Russian AND English. Use "ru" for the Russian text and "en" for English.'
-      : langCode === 'de'
-      ? 'Provide each sentence in German AND English. Use "de" for the German text and "en" for English.'
-      : 'Provide each sentence in Ukrainian AND English. Use "uk" for the Ukrainian text and "en" for English.';
+    const langInstructions = `Provide each sentence in ${langName} AND English. Use "${langCode}" for the ${langName} text and "en" for English.`;
 
     const prompt = `Generate exactly ${aiCount} sentence-building exercises for a ${langName} language learner at ${aiDifficulty} level.
 Topic: ${topic}
@@ -241,11 +237,11 @@ Respond with ONLY valid JSON, no markdown fences, no extra text. Use this exact 
 {
   "sentences": [
     {
-      "en": "I love Ukraine",
-      "${langCode}": "Я люблю Україну",
-      "words": ["Я", "люблю", "Україну"],
-      "distractors": ["ми", "любить"],
-      "validOrders": [["Я", "люблю", "Україну"], ["Україну", "я", "люблю"]]
+      "en": "I like this book",
+      "${langCode}": "(the sentence in ${langName})",
+      "words": ["(word1)", "(word2)", "(word3)"],
+      "distractors": ["(wrong1)", "(wrong2)"],
+      "validOrders": [["(word1)", "(word2)", "(word3)"]]
     }
   ]
 }`;

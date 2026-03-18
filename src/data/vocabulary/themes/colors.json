@@ -16,13 +16,45 @@
       "en": "red",
       "phoneticUk": "chervonyi",
       "phoneticRu": "krasnyy",
-      "phoneticDe": "roht",
+      "phoneticDe": "ROHT",
       "examples": {
-        "uk": ["Червоний автомобіль стоїть біля будинку.", "Червона троянда росте в саду."],
-        "ru": ["красный автомобиль стоит у дома", "красная роза растёт в саду"],
-        "de": ["Das rote Auto steht vor dem Haus.", "Eine rote Rose wächst im Garten."],
-        "en": ["The red car is parked near the house.", "A red rose grows in the garden."]
-      }
+        "uk": [
+          "Червоний автомобіль стоїть біля будинку.",
+          "Червона троянда росте в саду."
+        ],
+        "ru": [
+          "красный автомобиль стоит у дома",
+          "красная роза растёт в саду"
+        ],
+        "de": [
+          "Das rote Auto steht vor dem Haus.",
+          "Eine rote Rose wächst im Garten."
+        ],
+        "en": [
+          "The red car is parked near the house.",
+          "A red rose grows in the garden."
+        ],
+        "es": [
+          "El coche rojo está aparcado aquí.",
+          "Lleva una camiseta roja."
+        ]
+      },
+      "es": "rojo",
+      "phoneticEs": "ROH-hoh",
+      "fr": "rouge",
+      "frPhonetic": "ROOZH",
+      "el": "κόκκινο",
+      "elPhonetic": "KO-ki-no",
+      "hi": "लाल",
+      "hiPhonetic": "LAAL",
+      "ar": "أَحْمَر",
+      "arPhonetic": "AH-mar",
+      "ko": "빨간",
+      "koPhonetic": "PPAL-gan",
+      "zh": "红色",
+      "zhPhonetic": "hóngsè",
+      "ja": "赤い",
+      "jaPhonetic": "akai"
     },
     {
       "uk": "синій",
@@ -31,13 +63,45 @@
       "en": "blue",
       "phoneticUk": "syniy",
       "phoneticRu": "siniy",
-      "phoneticDe": "blow",
+      "phoneticDe": "BLOW",
       "examples": {
-        "uk": ["Синє море простягається до горизонту.", "Синя сорочка висить у шафі."],
-        "ru": ["синий океан простирается до горизонта", "синяя рубашка висит в шкафу"],
-        "de": ["Das blaue Meer reicht bis zum Horizont.", "Das blaue Hemd hängt im Schrank."],
-        "en": ["The blue sea stretches to the horizon.", "The blue shirt is hanging in the wardrobe."]
-      }
+        "uk": [
+          "Синє море простягається до горизонту.",
+          "Синя сорочка висить у шафі."
+        ],
+        "ru": [
+          "синий океан простирается до горизонта",
+          "синяя рубашка висит в шкафу"
+        ],
+        "de": [
+          "Das blaue Meer reicht bis zum Horizont.",
+          "Das blaue Hemd hängt im Schrank."
+        ],
+        "en": [
+          "The blue sea stretches to the horizon.",
+          "The blue shirt is hanging in the wardrobe."
+        ],
+        "es": [
+          "El cielo azul es precioso.",
+          "Tiene los ojos azules."
+        ]
+      },
+      "es": "azul",
+      "phoneticEs": "ah-THOOL",
+      "fr": "bleu",
+      "frPhonetic": "BLUH",
+      "el": "μπλε",
+      "elPhonetic": "BLE",
+      "hi": "नीला",
+      "hiPhonetic": "NEE-laa",
+      "ar": "أَزْرَق",
+      "arPhonetic": "AZ-raq",
+      "ko": "파란",
+      "koPhonetic": "PA-ran",
+      "zh": "蓝色",
+      "zhPhonetic": "lánsè",
+      "ja": "青い",
+      "jaPhonetic": "aoi"
     },
     {
       "uk": "жовтий",
@@ -46,13 +110,45 @@
       "en": "yellow",
       "phoneticUk": "zhovtyi",
       "phoneticRu": "zhyoltyy",
-      "phoneticDe": "gelp",
+      "phoneticDe": "GELP",
       "examples": {
-        "uk": ["Жовтий соняшник повернувся до сонця.", "Жовте таксі зупинилося біля тротуару."],
-        "ru": ["жёлтый подсолнух повернулся к солнцу", "жёлтое такси остановилось у тротуара"],
-        "de": ["Die gelbe Sonnenblume dreht sich zur Sonne.", "Das gelbe Taxi hält am Straßenrand."],
-        "en": ["The yellow sunflower turned toward the sun.", "The yellow taxi stopped by the curb."]
-      }
+        "uk": [
+          "Жовтий соняшник повернувся до сонця.",
+          "Жовте таксі зупинилося біля тротуару."
+        ],
+        "ru": [
+          "жёлтый подсолнух повернулся к солнцу",
+          "жёлтое такси остановилось у тротуара"
+        ],
+        "de": [
+          "Die gelbe Sonnenblume dreht sich zur Sonne.",
+          "Das gelbe Taxi hält am Straßenrand."
+        ],
+        "en": [
+          "The yellow sunflower turned toward the sun.",
+          "The yellow taxi stopped by the curb."
+        ],
+        "es": [
+          "El sol amarillo brilla con fuerza.",
+          "Compré un ramo de flores amarillas."
+        ]
+      },
+      "es": "amarillo",
+      "phoneticEs": "ah-mah-REE-yoh",
+      "fr": "jaune",
+      "frPhonetic": "ZHOHN",
+      "el": "κίτρινο",
+      "elPhonetic": "KI-tri-no",
+      "hi": "पीला",
+      "hiPhonetic": "PEE-laa",
+      "ar": "أَصْفَر",
+      "arPhonetic": "AS-far",
+      "ko": "노란",
+      "koPhonetic": "NO-ran",
+      "zh": "黄色",
+      "zhPhonetic": "huángsè",
+      "ja": "黄色い",
+      "jaPhonetic": "kiiroi"
     },
     {
       "uk": "зелений",
@@ -61,13 +157,45 @@
       "en": "green",
       "phoneticUk": "zelenyi",
       "phoneticRu": "zelyonyy",
-      "phoneticDe": "grewn",
+      "phoneticDe": "GROON",
       "examples": {
-        "uk": ["Зелений ліс оточує наше село.", "Зелена трава вкрила всю галявину."],
-        "ru": ["зелёный лес окружает деревню", "зелёная трава покрыла поляну"],
-        "de": ["Ein grüner Wald umgibt unser Dorf.", "Grünes Gras bedeckt die ganze Wiese."],
-        "en": ["A green forest surrounds our village.", "Green grass covered the whole meadow."]
-      }
+        "uk": [
+          "Зелений ліс оточує наше село.",
+          "Зелена трава вкрила всю галявину."
+        ],
+        "ru": [
+          "зелёный лес окружает деревню",
+          "зелёная трава покрыла поляну"
+        ],
+        "de": [
+          "Ein grüner Wald umgibt unser Dorf.",
+          "Grünes Gras bedeckt die ganze Wiese."
+        ],
+        "en": [
+          "A green forest surrounds our village.",
+          "Green grass covered the whole meadow."
+        ],
+        "es": [
+          "La hierba verde cubre el jardín.",
+          "Me gusta la manzana verde."
+        ]
+      },
+      "es": "verde",
+      "phoneticEs": "BEHR-deh",
+      "fr": "vert",
+      "frPhonetic": "VEHR",
+      "el": "πράσινο",
+      "elPhonetic": "PRA-si-no",
+      "hi": "हरा",
+      "hiPhonetic": "HA-raa",
+      "ar": "أَخْضَر",
+      "arPhonetic": "AKH-dar",
+      "ko": "초록",
+      "koPhonetic": "CHO-rok",
+      "zh": "绿色",
+      "zhPhonetic": "lǜsè",
+      "ja": "緑",
+      "jaPhonetic": "midori"
     },
     {
       "uk": "білий",
@@ -76,13 +204,45 @@
       "en": "white",
       "phoneticUk": "bilyi",
       "phoneticRu": "belyy",
-      "phoneticDe": "vice",
+      "phoneticDe": "VICE",
       "examples": {
-        "uk": ["Білий сніг вкрив землю вночі.", "Біла кішка сидить на підвіконні."],
-        "ru": ["белый снег покрыл землю", "белая кошка сидит на окне"],
-        "de": ["Weißer Schnee hat die Erde bedeckt.", "Die weiße Katze sitzt auf der Fensterbank."],
-        "en": ["White snow covered the ground overnight.", "The white cat is sitting on the windowsill."]
-      }
+        "uk": [
+          "Білий сніг вкрив землю вночі.",
+          "Біла кішка сидить на підвіконні."
+        ],
+        "ru": [
+          "белый снег покрыл землю",
+          "белая кошка сидит на окне"
+        ],
+        "de": [
+          "Weißer Schnee hat die Erde bedeckt.",
+          "Die weiße Katze sitzt auf der Fensterbank."
+        ],
+        "en": [
+          "White snow covered the ground overnight.",
+          "The white cat is sitting on the windowsill."
+        ],
+        "es": [
+          "La nieve blanca cubre las montañas.",
+          "Lleva un vestido blanco precioso."
+        ]
+      },
+      "es": "blanco",
+      "phoneticEs": "BLAHN-koh",
+      "fr": "blanc",
+      "frPhonetic": "BLAN",
+      "el": "άσπρο",
+      "elPhonetic": "AS-pro",
+      "hi": "सफ़ेद",
+      "hiPhonetic": "sa-FED",
+      "ar": "أَبْيَض",
+      "arPhonetic": "AB-yad",
+      "ko": "하얀",
+      "koPhonetic": "HA-yan",
+      "zh": "白色",
+      "zhPhonetic": "báisè",
+      "ja": "白い",
+      "jaPhonetic": "shiroi"
     },
     {
       "uk": "чорний",
@@ -91,13 +251,45 @@
       "en": "black",
       "phoneticUk": "chornyi",
       "phoneticRu": "chyornyy",
-      "phoneticDe": "shvarts",
+      "phoneticDe": "SHVARTS",
       "examples": {
-        "uk": ["Я п'ю чорну каву без цукру.", "Чорна ніч огорнула все місто."],
-        "ru": ["чёрный кофе без сахара", "чёрная ночь окутала город"],
-        "de": ["Ich trinke schwarzen Kaffee ohne Zucker.", "Die schwarze Nacht hat die ganze Stadt eingehüllt."],
-        "en": ["I drink black coffee without sugar.", "The black night enveloped the whole city."]
-      }
+        "uk": [
+          "Я п'ю чорну каву без цукру.",
+          "Чорна ніч огорнула все місто."
+        ],
+        "ru": [
+          "чёрный кофе без сахара",
+          "чёрная ночь окутала город"
+        ],
+        "de": [
+          "Ich trinke schwarzen Kaffee ohne Zucker.",
+          "Die schwarze Nacht hat die ganze Stadt eingehüllt."
+        ],
+        "en": [
+          "I drink black coffee without sugar.",
+          "The black night enveloped the whole city."
+        ],
+        "es": [
+          "El gato negro duerme en el sofá.",
+          "Prefiero el café negro sin azúcar."
+        ]
+      },
+      "es": "negro",
+      "phoneticEs": "NEH-groh",
+      "fr": "noir",
+      "frPhonetic": "NWAR",
+      "el": "μαύρο",
+      "elPhonetic": "MAV-ro",
+      "hi": "काला",
+      "hiPhonetic": "KAA-laa",
+      "ar": "أَسْوَد",
+      "arPhonetic": "AS-wad",
+      "ko": "검은",
+      "koPhonetic": "GEO-meun",
+      "zh": "黑色",
+      "zhPhonetic": "hēisè",
+      "ja": "黒い",
+      "jaPhonetic": "kuroi"
     },
     {
       "uk": "сірий",
@@ -106,13 +298,45 @@
       "en": "gray",
       "phoneticUk": "siryi",
       "phoneticRu": "seryy",
-      "phoneticDe": "grow",
+      "phoneticDe": "GROW",
       "examples": {
-        "uk": ["Сіре небо віщує дощ.", "Сірий вовк виє на місяць."],
-        "ru": ["серый волк воет на луну", "серое небо предвещает дождь"],
-        "de": ["Der graue Himmel kündigt Regen an.", "Der graue Wolf heult den Mond an."],
-        "en": ["The gray sky signals rain.", "The gray wolf howls at the moon."]
-      }
+        "uk": [
+          "Сіре небо віщує дощ.",
+          "Сірий вовк виє на місяць."
+        ],
+        "ru": [
+          "серый волк воет на луну",
+          "серое небо предвещает дождь"
+        ],
+        "de": [
+          "Der graue Himmel kündigt Regen an.",
+          "Der graue Wolf heult den Mond an."
+        ],
+        "en": [
+          "The gray sky signals rain.",
+          "The gray wolf howls at the moon."
+        ],
+        "es": [
+          "El cielo gris anuncia lluvia.",
+          "Tiene el pelo gris desde joven."
+        ]
+      },
+      "es": "gris",
+      "phoneticEs": "GREES",
+      "fr": "gris",
+      "frPhonetic": "GREE",
+      "el": "γκρι",
+      "elPhonetic": "GRI",
+      "hi": "स्लेटी",
+      "hiPhonetic": "SLE-tee",
+      "ar": "رَمَادِيّ",
+      "arPhonetic": "ra-MAA-dee",
+      "ko": "회색",
+      "koPhonetic": "HWE-sek",
+      "zh": "灰色",
+      "zhPhonetic": "huīsè",
+      "ja": "灰色",
+      "jaPhonetic": "haiiro"
     },
     {
       "uk": "коричневий",
@@ -121,58 +345,186 @@
       "en": "brown",
       "phoneticUk": "korychnevyi",
       "phoneticRu": "korichnevyy",
-      "phoneticDe": "brown",
+      "phoneticDe": "BROWN",
       "examples": {
-        "uk": ["Коричневий ведмідь ловить рибу в річці.", "Коричневі черевики стоять біля дверей."],
-        "ru": ["коричневый медведь ловит рыбу", "коричневые ботинки стоят у двери"],
-        "de": ["Der braune Bär fängt Fische im Fluss.", "Die braunen Schuhe stehen bei der Tür."],
-        "en": ["The brown bear catches fish in the river.", "The brown shoes are by the door."]
-      }
+        "uk": [
+          "Коричневий ведмідь ловить рибу в річці.",
+          "Коричневі черевики стоять біля дверей."
+        ],
+        "ru": [
+          "коричневый медведь ловит рыбу",
+          "коричневые ботинки стоят у двери"
+        ],
+        "de": [
+          "Der braune Bär fängt Fische im Fluss.",
+          "Die braunen Schuhe stehen bei der Tür."
+        ],
+        "en": [
+          "The brown bear catches fish in the river.",
+          "The brown shoes are by the door."
+        ],
+        "es": [
+          "El oso marrón camina por el bosque.",
+          "Lleva unos zapatos marrones elegantes."
+        ]
+      },
+      "es": "marrón",
+      "phoneticEs": "mah-ROHN",
+      "fr": "marron",
+      "frPhonetic": "ma-RON",
+      "el": "καφέ",
+      "elPhonetic": "ka-FE",
+      "hi": "भूरा",
+      "hiPhonetic": "BHOO-raa",
+      "ar": "بُنِّيّ",
+      "arPhonetic": "BUN-nee",
+      "ko": "갈색",
+      "koPhonetic": "GAL-sek",
+      "zh": "棕色",
+      "zhPhonetic": "zōngsè",
+      "ja": "茶色い",
+      "jaPhonetic": "chairoi"
     },
     {
       "uk": "рожевий",
       "ru": "розовый",
-      "de": "rosa",
+      "de": "rosa/pink",
       "en": "pink",
       "phoneticUk": "rozhevyi",
       "phoneticRu": "rozovyy",
-      "phoneticDe": "roh-za",
+      "phoneticDe": "ROH-zah/PINK",
       "examples": {
-        "uk": ["Рожеві квіти прикрашають наш сад.", "Рожевий захід сонця над морем дуже гарний."],
-        "ru": ["розовый закат над морем", "розовые цветы украшают сад"],
-        "de": ["Rosa Blumen schmücken unseren Garten.", "Der rosa Sonnenuntergang über dem Meer ist sehr schön."],
-        "en": ["Pink flowers decorate our garden.", "The pink sunset over the sea is very beautiful."]
-      }
+        "uk": [
+          "Рожеві квіти прикрашають наш сад.",
+          "Рожевий захід сонця над морем дуже гарний."
+        ],
+        "ru": [
+          "розовый закат над морем",
+          "розовые цветы украшают сад"
+        ],
+        "de": [
+          "Rosa Blumen schmücken unseren Garten.",
+          "Der rosa Sonnenuntergang über dem Meer ist sehr schön."
+        ],
+        "en": [
+          "Pink flowers decorate our garden.",
+          "The pink sunset over the sea is very beautiful."
+        ],
+        "es": [
+          "Las flores rosas adornan la mesa.",
+          "La niña lleva un lazo rosa en el pelo."
+        ]
+      },
+      "es": "rosa",
+      "phoneticEs": "ROH-sah",
+      "fr": "rose",
+      "frPhonetic": "ROHZ",
+      "el": "ροζ",
+      "elPhonetic": "ROZ",
+      "hi": "गुलाबी",
+      "hiPhonetic": "gu-LAA-bee",
+      "ar": "وَرْدِيّ",
+      "arPhonetic": "WAR-dee",
+      "ko": "분홍",
+      "koPhonetic": "BUN-hong",
+      "zh": "粉色",
+      "zhPhonetic": "fěnsè",
+      "ja": "ピンク",
+      "jaPhonetic": "pinku"
     },
     {
       "uk": "помаранчевий",
       "ru": "оранжевый",
-      "de": "orange",
+      "de": "Orange/Apfelsine",
       "en": "orange",
       "phoneticUk": "pomaranchevyi",
       "phoneticRu": "oranzhevyy",
-      "phoneticDe": "oh-rahn-zhuh",
+      "phoneticDe": "oh-RAHN-zheh/AHP-fel-zee-neh",
       "examples": {
-        "uk": ["Помаранчевий апельсин лежить на столі.", "Помаранчевий захід відбивається у воді."],
-        "ru": ["оранжевый апельсин лежит на столе", "оранжевый закат отражается в воде"],
-        "de": ["Die orange Frucht liegt auf dem Tisch.", "Der orangefarbene Sonnenuntergang spiegelt sich im Wasser."],
-        "en": ["The orange sits on the table.", "The orange sunset is reflected in the water."]
-      }
+        "uk": [
+          "Помаранчевий апельсин лежить на столі.",
+          "Помаранчевий захід відбивається у воді."
+        ],
+        "ru": [
+          "оранжевый апельсин лежит на столе",
+          "оранжевый закат отражается в воде"
+        ],
+        "de": [
+          "Die orange Frucht liegt auf dem Tisch.",
+          "Der orangefarbene Sonnenuntergang spiegelt sich im Wasser."
+        ],
+        "en": [
+          "The orange sits on the table.",
+          "The orange sunset is reflected in the water."
+        ],
+        "es": [
+          "El atardecer pinta el cielo de naranja.",
+          "Me compré una chaqueta naranja brillante."
+        ]
+      },
+      "es": "naranja",
+      "phoneticEs": "nah-RAHN-hah",
+      "fr": "orange",
+      "frPhonetic": "o-RONZH",
+      "el": "πορτοκάλι",
+      "elPhonetic": "por-to-KA-li",
+      "hi": "संतरा",
+      "hiPhonetic": "san-TA-raa",
+      "ar": "برتقال",
+      "arPhonetic": "bur-tu-QAAL",
+      "ko": "오렌지",
+      "koPhonetic": "o-REN-ji",
+      "zh": "橙子",
+      "zhPhonetic": "chéngzi",
+      "ja": "オレンジ",
+      "jaPhonetic": "orenji"
     },
     {
       "uk": "фіолетовий",
       "ru": "фиолетовый",
-      "de": "lila",
+      "de": "lila/violett",
       "en": "purple",
       "phoneticUk": "fioletovyi",
       "phoneticRu": "fioletovyy",
-      "phoneticDe": "lee-la",
+      "phoneticDe": "LEE-lah/vee-oh-LET",
       "examples": {
-        "uk": ["Фіолетова квітка розцвіла в саду.", "Фіолетове плаття дуже гарне."],
-        "ru": ["фиолетовый цветок распустился в саду", "фиолетовое платье очень красивое"],
-        "de": ["Die lila Blume ist im Garten aufgeblüht.", "Das lila Kleid ist sehr schön."],
-        "en": ["The purple flower bloomed in the garden.", "The purple dress is very beautiful."]
-      }
+        "uk": [
+          "Фіолетова квітка розцвіла в саду.",
+          "Фіолетове плаття дуже гарне."
+        ],
+        "ru": [
+          "фиолетовый цветок распустился в саду",
+          "фиолетовое платье очень красивое"
+        ],
+        "de": [
+          "Die lila Blume ist im Garten aufgeblüht.",
+          "Das lila Kleid ist sehr schön."
+        ],
+        "en": [
+          "The purple flower bloomed in the garden.",
+          "The purple dress is very beautiful."
+        ],
+        "es": [
+          "Las uvas moradas son muy dulces.",
+          "Pintó su habitación de color morado."
+        ]
+      },
+      "es": "morado",
+      "phoneticEs": "moh-RAH-doh",
+      "fr": "violet",
+      "frPhonetic": "vyoh-LEH",
+      "el": "μοβ",
+      "elPhonetic": "MOV",
+      "hi": "बैंगनी",
+      "hiPhonetic": "BAIN-ga-nee",
+      "ar": "بنفسجي",
+      "arPhonetic": "ba-naf-SA-jee",
+      "ko": "보라색",
+      "koPhonetic": "bo-RA-sek",
+      "zh": "紫色",
+      "zhPhonetic": "zǐsè",
+      "ja": "紫",
+      "jaPhonetic": "murasaki"
     },
     {
       "uk": "блакитний",
@@ -181,13 +533,45 @@
       "en": "light blue",
       "phoneticUk": "blakytnyi",
       "phoneticRu": "goluboy",
-      "phoneticDe": "hell-blow",
+      "phoneticDe": "HEL-blow",
       "examples": {
-        "uk": ["Блакитне небо без жодної хмари.", "Блакитні очі сяють від радості."],
-        "ru": ["голубое небо без единого облака", "голубые глаза сияют от радости"],
-        "de": ["Ein hellblauer Himmel ohne eine einzige Wolke.", "Hellblaue Augen leuchten vor Freude."],
-        "en": ["A light blue sky without a single cloud.", "Light blue eyes shining with joy."]
-      }
+        "uk": [
+          "Блакитне небо без жодної хмари.",
+          "Блакитні очі сяють від радості."
+        ],
+        "ru": [
+          "голубое небо без единого облака",
+          "голубые глаза сияют от радости"
+        ],
+        "de": [
+          "Ein hellblauer Himmel ohne eine einzige Wolke.",
+          "Hellblaue Augen leuchten vor Freude."
+        ],
+        "en": [
+          "A light blue sky without a single cloud.",
+          "Light blue eyes shining with joy."
+        ],
+        "es": [
+          "El cielo tiene un tono celeste muy suave.",
+          "Lleva una camisa celeste al trabajo."
+        ]
+      },
+      "es": "celeste",
+      "phoneticEs": "theh-LEHS-teh",
+      "fr": "bleu clair",
+      "frPhonetic": "bluh KLEHR",
+      "el": "γαλάζιο",
+      "elPhonetic": "ga-LA-zi-o",
+      "hi": "हल्का नीला",
+      "hiPhonetic": "HAL-kaa NEE-laa",
+      "ar": "أَزْرَقُ فَاتِح",
+      "arPhonetic": "AZ-ra-qu FAA-tih",
+      "ko": "하늘색",
+      "koPhonetic": "ha-NEUL-sek",
+      "zh": "浅蓝色",
+      "zhPhonetic": "qiǎnlánsè",
+      "ja": "水色",
+      "jaPhonetic": "mizuiro"
     },
     {
       "uk": "бежевий",
@@ -196,58 +580,186 @@
       "en": "beige",
       "phoneticUk": "bezhevyi",
       "phoneticRu": "bezhevyy",
-      "phoneticDe": "bayzh",
+      "phoneticDe": "BAYZH",
       "examples": {
-        "uk": ["Бежевий піджак пасує до цих штанів.", "Бежеві стіни роблять кімнату затишною."],
-        "ru": ["бежевый пиджак подходит к брюкам", "бежевые стены создают уют"],
-        "de": ["Das beige Jackett passt zu dieser Hose.", "Beige Wände machen das Zimmer gemütlich."],
-        "en": ["The beige jacket goes well with these trousers.", "Beige walls make the room cozy."]
-      }
+        "uk": [
+          "Бежевий піджак пасує до цих штанів.",
+          "Бежеві стіни роблять кімнату затишною."
+        ],
+        "ru": [
+          "бежевый пиджак подходит к брюкам",
+          "бежевые стены создают уют"
+        ],
+        "de": [
+          "Das beige Jackett passt zu dieser Hose.",
+          "Beige Wände machen das Zimmer gemütlich."
+        ],
+        "en": [
+          "The beige jacket goes well with these trousers.",
+          "Beige walls make the room cozy."
+        ],
+        "es": [
+          "Las paredes beige dan calidez al salón.",
+          "Se compró un abrigo beige para el otoño."
+        ]
+      },
+      "es": "beige",
+      "phoneticEs": "BEHSH",
+      "fr": "beige",
+      "frPhonetic": "BEZH",
+      "el": "μπεζ",
+      "elPhonetic": "BEZ",
+      "hi": "बेज",
+      "hiPhonetic": "BEJ",
+      "ar": "بِيج",
+      "arPhonetic": "BEEZH",
+      "ko": "베이지색",
+      "koPhonetic": "BEH-i-ji-sek",
+      "zh": "米色",
+      "zhPhonetic": "mǐsè",
+      "ja": "ベージュ",
+      "jaPhonetic": "beiju"
     },
     {
       "uk": "бордовий",
       "ru": "бордовый",
-      "de": "bordeauxrot",
+      "de": "burgunderrot",
       "en": "burgundy",
       "phoneticUk": "bordovyi",
       "phoneticRu": "bordovyy",
-      "phoneticDe": "bor-doh-roht",
+      "phoneticDe": "bur-GUN-der-roht",
       "examples": {
-        "uk": ["Бордовий костюм виглядає дуже елегантно.", "Бордове вино налито в келих."],
-        "ru": ["бордовый костюм выглядит элегантно", "бордовое вино налито в бокал"],
-        "de": ["Der bordeauxrote Anzug sieht sehr elegant aus.", "Rotwein ist in das Glas eingeschenkt."],
-        "en": ["The burgundy suit looks very elegant.", "Burgundy wine is poured into the glass."]
-      }
+        "uk": [
+          "Бордовий костюм виглядає дуже елегантно.",
+          "Бордове вино налито в келих."
+        ],
+        "ru": [
+          "бордовый костюм выглядит элегантно",
+          "бордовое вино налито в бокал"
+        ],
+        "de": [
+          "Der bordeauxrote Anzug sieht sehr elegant aus.",
+          "Rotwein ist in das Glas eingeschenkt."
+        ],
+        "en": [
+          "The burgundy suit looks very elegant.",
+          "Burgundy wine is poured into the glass."
+        ],
+        "es": [
+          "El mantel burdeos combina bien con la mesa.",
+          "Lleva un vestido burdeos en la cena."
+        ]
+      },
+      "es": "burdeos",
+      "phoneticEs": "boor-DEH-ohs",
+      "fr": "bordeaux",
+      "frPhonetic": "bor-DOH",
+      "el": "μπορντό",
+      "elPhonetic": "bor-DO",
+      "hi": "गहरा लाल",
+      "hiPhonetic": "GEH-raa LAAL",
+      "ar": "عنابي",
+      "arPhonetic": "i-NAA-bee",
+      "ko": "버건디색",
+      "koPhonetic": "beo-GEON-di-sek",
+      "zh": "酒红色",
+      "zhPhonetic": "jiǔhóngsè",
+      "ja": "えんじ色",
+      "jaPhonetic": "enjiiro"
     },
     {
       "uk": "золотий",
       "ru": "золотой",
-      "de": "golden",
+      "de": "Gold",
       "en": "gold",
       "phoneticUk": "zolotyi",
       "phoneticRu": "zolotoy",
-      "phoneticDe": "gol-den",
+      "phoneticDe": "GOLT",
       "examples": {
-        "uk": ["Золота каблучка блищить на її пальці.", "Золотий захід розфарбував усе небо."],
-        "ru": ["золотое кольцо блестит на пальце", "золотой закат окрасил небо"],
-        "de": ["Der goldene Ring glänzt an ihrem Finger.", "Der goldene Sonnenuntergang hat den ganzen Himmel gefärbt."],
-        "en": ["The gold ring glitters on her finger.", "The golden sunset painted the whole sky."]
-      }
+        "uk": [
+          "Золота каблучка блищить на її пальці.",
+          "Золотий захід розфарбував усе небо."
+        ],
+        "ru": [
+          "золотое кольцо блестит на пальце",
+          "золотой закат окрасил небо"
+        ],
+        "de": [
+          "Der goldene Ring glänzt an ihrem Finger.",
+          "Der goldene Sonnenuntergang hat den ganzen Himmel gefärbt."
+        ],
+        "en": [
+          "The gold ring glitters on her finger.",
+          "The golden sunset painted the whole sky."
+        ],
+        "es": [
+          "El marco dorado resalta el cuadro.",
+          "La estatua dorada brilla bajo el sol."
+        ]
+      },
+      "es": "dorado",
+      "phoneticEs": "doh-RAH-doh",
+      "fr": "or",
+      "frPhonetic": "OR",
+      "el": "χρυσός",
+      "elPhonetic": "chri-SOS",
+      "hi": "सोना",
+      "hiPhonetic": "SO-naa",
+      "ar": "ذهب",
+      "arPhonetic": "ZA-hab",
+      "ko": "금",
+      "koPhonetic": "GEUM",
+      "zh": "金子",
+      "zhPhonetic": "jīnzi",
+      "ja": "金",
+      "jaPhonetic": "kin"
     },
     {
       "uk": "срібний",
       "ru": "серебряный",
-      "de": "silbern",
+      "de": "silber/silbern",
       "en": "silver",
       "phoneticUk": "sribnyi",
       "phoneticRu": "serebryanyy",
-      "phoneticDe": "zil-bern",
+      "phoneticDe": "ZIL-ber/ZIL-bern",
       "examples": {
-        "uk": ["Срібний ланцюжок виблискує на шиї.", "Срібний браслет подарували їй на день народження."],
-        "ru": ["серебряная цепочка на шее", "серебряный браслет подарили на день рождения"],
-        "de": ["Die silberne Kette glänzt an ihrem Hals.", "Zum Geburtstag hat man ihr ein silbernes Armband geschenkt."],
-        "en": ["The silver chain gleams on her neck.", "They gave her a silver bracelet for her birthday."]
-      }
+        "uk": [
+          "Срібний ланцюжок виблискує на шиї.",
+          "Срібний браслет подарували їй на день народження."
+        ],
+        "ru": [
+          "серебряная цепочка на шее",
+          "серебряный браслет подарили на день рождения"
+        ],
+        "de": [
+          "Die silberne Kette glänzt an ihrem Hals.",
+          "Zum Geburtstag hat man ihr ein silbernes Armband geschenkt."
+        ],
+        "en": [
+          "The silver chain gleams on her neck.",
+          "They gave her a silver bracelet for her birthday."
+        ],
+        "es": [
+          "El coche plateado está aparcado fuera.",
+          "Lleva un collar plateado muy fino."
+        ]
+      },
+      "es": "plateado",
+      "phoneticEs": "plah-teh-AH-doh",
+      "fr": "argent/argenté",
+      "frPhonetic": "ar-ZHAN/ar-zhan-TAY",
+      "el": "ασημί",
+      "elPhonetic": "a-si-MI",
+      "hi": "चाँदी",
+      "hiPhonetic": "CHAAN-dee",
+      "ar": "فِضِّيّ",
+      "arPhonetic": "FID-dee",
+      "ko": "은색",
+      "koPhonetic": "EUN-sek",
+      "zh": "银色",
+      "zhPhonetic": "yínsè",
+      "ja": "銀色",
+      "jaPhonetic": "gin'iro"
     },
     {
       "uk": "бірюзовий",
@@ -256,58 +768,194 @@
       "en": "turquoise",
       "phoneticUk": "biryuzovyi",
       "phoneticRu": "biryuzovyy",
-      "phoneticDe": "tew-rkis",
+      "phoneticDe": "toor-KEES",
       "examples": {
-        "uk": ["Бірюзове море виблискує на сонці.", "Бірюзовий камінь прикрашає каблучку."],
-        "ru": ["бирюзовое море сверкает на солнце", "бирюзовый камень украшает кольцо"],
-        "de": ["Das türkise Meer glitzert in der Sonne.", "Ein türkiser Stein schmückt den Ring."],
-        "en": ["The turquoise sea sparkles in the sun.", "A turquoise stone adorns the ring."]
-      }
+        "uk": [
+          "Бірюзове море виблискує на сонці.",
+          "Бірюзовий камінь прикрашає каблучку."
+        ],
+        "ru": [
+          "бирюзовое море сверкает на солнце",
+          "бирюзовый камень украшает кольцо"
+        ],
+        "de": [
+          "Das türkise Meer glitzert in der Sonne.",
+          "Ein türkiser Stein schmückt den Ring."
+        ],
+        "en": [
+          "The turquoise sea sparkles in the sun.",
+          "A turquoise stone adorns the ring."
+        ],
+        "es": [
+          "El mar turquesa invita a bañarse.",
+          "Tiene unos pendientes de piedra turquesa."
+        ]
+      },
+      "es": "turquesa",
+      "phoneticEs": "toor-KEH-sah",
+      "fr": "turquoise",
+      "frPhonetic": "tür-KWAZ",
+      "el": "τιρκουάζ",
+      "elPhonetic": "tir-ku-AZ",
+      "hi": "फ़िरोज़ी",
+      "hiPhonetic": "fi-RO-zee",
+      "ar": "فَيْرُوزِيّ",
+      "arPhonetic": "fay-ROO-zee",
+      "ko": "청록색",
+      "koPhonetic": "cheong-ROK-sek",
+      "zh": "青绿色",
+      "zhPhonetic": "qīnglǜsè",
+      "ja": "ターコイズ",
+      "jaPhonetic": "taakoizu"
     },
     {
       "uk": "малиновий",
       "ru": "малиновый",
-      "de": "karmesinrot",
+      "de": "karmesinrot/purpurrot",
       "en": "crimson",
       "phoneticUk": "malynovyi",
       "phoneticRu": "malinovyy",
-      "phoneticDe": "kar-meh-zin-roht",
+      "phoneticDe": "kar-meh-ZEEN-roht/POOR-poor-roht",
       "examples": {
-        "uk": ["Малиновий берет надітий набакир.", "Малиновий дзвін розноситься над містом."],
-        "ru": ["малиновый берет надет набок", "малиновый звон колоколов разносится над городом"],
-        "de": ["Die karmesinrote Baskenmütze ist schief aufgesetzt.", "Das karmesinrote Kleid fällt sofort ins Auge."],
-        "en": ["The crimson beret is worn at an angle.", "The crimson ringing of bells carries over the city."]
-      }
+        "uk": [
+          "Малиновий берет надітий набакир.",
+          "Малиновий дзвін розноситься над містом."
+        ],
+        "ru": [
+          "малиновый берет надет набок",
+          "малиновый звон колоколов разносится над городом"
+        ],
+        "de": [
+          "Die karmesinrote Baskenmütze ist schief aufgesetzt.",
+          "Das karmesinrote Kleid fällt sofort ins Auge."
+        ],
+        "en": [
+          "The crimson beret is worn at an angle.",
+          "The crimson ringing of bells carries over the city."
+        ],
+        "es": [
+          "Las rosas carmesí adornan el jardín.",
+          "El cielo se tiñó de carmesí al atardecer."
+        ]
+      },
+      "es": "carmesí",
+      "phoneticEs": "kar-meh-SEE",
+      "fr": "cramoisi",
+      "frPhonetic": "kra-mwa-ZEE",
+      "el": "βαθυκόκκινο",
+      "elPhonetic": "va-thi-KO-ki-no",
+      "hi": "किरमिज़ी",
+      "hiPhonetic": "kir-MI-zee",
+      "ar": "قِرْمِزِيّ",
+      "arPhonetic": "qir-MI-zee",
+      "ko": "진홍색",
+      "koPhonetic": "jin-HONG-sek",
+      "zh": "深红色",
+      "zhPhonetic": "shēnhóngsè",
+      "ja": "深紅",
+      "jaPhonetic": "shinku"
     },
     {
       "uk": "кремовий",
       "ru": "кремовый",
-      "de": "cremefarben",
+      "de": "creme/cremefarben",
       "en": "cream",
       "phoneticUk": "kremovyi",
       "phoneticRu": "kremovyy",
-      "phoneticDe": "krem-far-ben",
+      "phoneticDe": "KREM/KREM-far-ben",
       "examples": {
-        "uk": ["Кремовий торт прикрашений свіжими ягодами.", "Кремові штори м'яко колишуться на вітрі."],
-        "ru": ["кремовый торт украшен ягодами", "кремовые шторы мягко колышутся на ветру"],
-        "de": ["Die cremefarbene Torte ist mit frischen Beeren dekoriert.", "Die cremefarbenen Vorhänge wehen sanft im Wind."],
-        "en": ["The cream cake is decorated with fresh berries.", "The cream curtains sway gently in the breeze."]
-      }
+        "uk": [
+          "Кремовий торт прикрашений свіжими ягодами.",
+          "Кремові штори м'яко колишуться на вітрі."
+        ],
+        "ru": [
+          "кремовый торт украшен ягодами",
+          "кремовые шторы мягко колышутся на ветру"
+        ],
+        "de": [
+          "Die cremefarbene Torte ist mit frischen Beeren dekoriert.",
+          "Die cremefarbenen Vorhänge wehen sanft im Wind."
+        ],
+        "en": [
+          "The cream cake is decorated with fresh berries.",
+          "The cream curtains sway gently in the breeze."
+        ],
+        "es": [
+          "Las paredes crema iluminan la habitación.",
+          "Lleva una blusa de color crema muy elegante."
+        ]
+      },
+      "es": "crema",
+      "phoneticEs": "KREH-mah",
+      "fr": "crème",
+      "frPhonetic": "KREM",
+      "el": "κρεμ",
+      "elPhonetic": "KREM",
+      "hi": "क्रीम",
+      "hiPhonetic": "KREEM",
+      "ar": "كْرِيمِيّ",
+      "arPhonetic": "kree-MEE",
+      "ko": "크림색",
+      "koPhonetic": "KEU-rim-sek",
+      "zh": "奶油色",
+      "zhPhonetic": "nǎiyóusè",
+      "ja": "クリーム色",
+      "jaPhonetic": "kuriimuiro"
     },
     {
       "uk": "бронзовий",
       "ru": "бронзовый",
-      "de": "bronzefarben",
+      "de": "bronze",
       "en": "bronze",
       "phoneticUk": "bronzovyi",
       "phoneticRu": "bronzovyy",
-      "phoneticDe": "bron-tsuh-far-ben",
+      "phoneticDe": "BROHN-seh",
       "examples": {
-        "uk": ["Він отримав бронзову медаль за третє місце.", "Після відпустки у неї бронзова засмага."],
-        "ru": ["бронзовая медаль за третье место", "бронзовый загар после отпуска"],
-        "de": ["Er hat eine bronzefarbene Medaille für den dritten Platz bekommen.", "Nach dem Urlaub hat sie eine bronzefarbene Bräune."],
-        "en": ["He received a bronze medal for third place.", "After the holiday she has a bronze tan."]
-      }
+        "uk": [
+          "Він отримав бронзову медаль за третє місце.",
+          "Після відпустки у неї бронзова засмага."
+        ],
+        "ru": [
+          "бронзовая медаль за третье место",
+          "бронзовый загар после отпуска"
+        ],
+        "de": [
+          "Er hat eine bronzefarbene Medaille für den dritten Platz bekommen.",
+          "Nach dem Urlaub hat sie eine bronzefarbene Bräune."
+        ],
+        "en": [
+          "He received a bronze medal for third place.",
+          "After the holiday she has a bronze tan."
+        ],
+        "es": [
+          "La estatua de bronce está en la plaza.",
+          "Ganó la medalla de bronce en la competición."
+        ]
+      },
+      "es": "bronce",
+      "phoneticEs": "BROHN-theh",
+      "fr": "bronze",
+      "frPhonetic": "BRONZ",
+      "el": "μπρούτζινο",
+      "elPhonetic": "BRUT-zi-no",
+      "hi": "काँसे का",
+      "hiPhonetic": "KAAN-se kaa",
+      "ar": "بُرُونْزِيّ",
+      "arPhonetic": "bu-RON-zee",
+      "ko": "청동색",
+      "koPhonetic": "cheong-DONG-sek",
+      "zh": "青铜色",
+      "zhPhonetic": "qīngtóngsè",
+      "ja": "ブロンズ",
+      "jaPhonetic": "buronzu"
     }
-  ]
+  ],
+  "nameEs": "Colores",
+  "nameFr": "Les couleurs",
+  "nameEl": "Τα χρώματα",
+  "nameHi": "रंग",
+  "nameAr": "الألوان",
+  "nameKo": "색깔",
+  "nameZh": "颜色",
+  "nameJa": "色"
 }

@@ -1,0 +1,116 @@
+{
+  "lessonId": "advanced-connectors",
+  "nameEn": "Advanced Sentence Connectors",
+  "nameKo": "고급 연결 어미",
+  "icon": "🔗",
+  "tier": "B2",
+  "prerequisites": ["verb-conjugation", "relative-clauses"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "simultaneous-myeonseo",
+      "title": "Simultaneous Actions: -(으)면서",
+      "explanation": "-(으)면서 connects two actions that happen at the same time by the same subject. It attaches to the verb stem: add -면서 after a vowel, -으면서 after a consonant. 음악을 들으면서 공부해요 (I study while listening to music). 웃으면서 말했어요 (They said it while smiling). 걸으면서 전화해요 (I talk on the phone while walking). The subject of both clauses must be the same person. -(으)면서 can also express contradiction when the two actions seem inconsistent: 알면서 모른 척했어요 (They pretended not to know even though they knew). This contradictory usage implies criticism — the person is doing two incompatible things.",
+      "tip": "Same subject, same time = -(으)면서. If the subjects are different, use -는 동안 (while) instead: 엄마가 요리하는 동안 아빠가 청소했어요 (While mom cooked, dad cleaned).",
+      "examples": [
+        { "ko": "음악을 들으면서 운동해요", "en": "I exercise while listening to music", "highlight": "들으면서" },
+        { "ko": "밥을 먹으면서 TV를 봐요", "en": "I watch TV while eating", "highlight": "먹으면서" },
+        { "ko": "알면서 왜 물어봐요?", "en": "Why do you ask when you already know? (contradictory)", "highlight": "알면서" },
+        { "ko": "웃으면서 인사했어요", "en": "They greeted me while smiling", "highlight": "웃으면서" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I read a book while drinking coffee'?",
+          "options": ["커피를 마시면서 책을 읽어요", "커피를 마시고 책을 읽어요", "커피를 마시는 동안 책을 읽어요"],
+          "correctIndex": 0,
+          "explanation": "Since the same person is doing both actions simultaneously, -(으)면서 is the best choice: 마시면서 (while drinking)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'거짓말하면서 웃고 있었어요' implies:",
+          "options": ["They were smiling while lying (criticism/contradiction)", "They were lying and then smiled", "They smiled because they lied"],
+          "correctIndex": 0,
+          "explanation": "-(으)면서 with contradictory actions implies criticism: lying while smiling — the two behaviors are seen as inconsistent or hypocritical."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can't you use -(으)면서 in '엄마가 요리하___서 아빠가 설거지했어요'?",
+          "options": ["The subjects of the two clauses are different", "요리하다 is an irregular verb", "The actions are not simultaneous"],
+          "correctIndex": 0,
+          "explanation": "-(으)면서 requires the same subject for both actions. Since mom cooks and dad does dishes (different subjects), you should use -는 동안 instead."
+        }
+      ]
+    },
+    {
+      "sectionId": "interruption-daga",
+      "title": "Interruption & Transition: -다가",
+      "explanation": "-다가 indicates that one action was interrupted or transitioned into another. The first action stops (or was ongoing) and the second action begins. It attaches directly to the verb stem. 공부하다가 잠들었어요 (I was studying and then fell asleep). 걷다가 넘어졌어요 (I was walking and then tripped). 서울에 살다가 부산으로 이사했어요 (I was living in Seoul and then moved to Busan). The subject must be the same for both clauses. The nuance is that action 1 was in progress when action 2 began — there is no planned switching, just an interruption or natural transition. -다가 can also be shortened to -다 in casual speech: 먹다 배탈이 났어요 = 먹다가 배탈이 났어요.",
+      "tip": "Think of -다가 as 'was doing X, then Y happened.' The first action is ongoing and gets cut short. It implies an unplanned change, unlike -고 which is neutral sequential listing.",
+      "examples": [
+        { "ko": "TV를 보다가 잠들었어요", "en": "I was watching TV and then fell asleep", "highlight": "보다가" },
+        { "ko": "비가 오다가 그쳤어요", "en": "It was raining and then stopped", "highlight": "오다가" },
+        { "ko": "한국에서 일하다가 미국으로 돌아갔어요", "en": "They were working in Korea and then returned to the US", "highlight": "일하다가" },
+        { "ko": "웃다가 울었어요", "en": "They were laughing and then started crying", "highlight": "웃다가" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'달리다가 넘어졌어요' means:",
+          "options": ["I was running and then fell", "I ran and then fell", "I fell while running"],
+          "correctIndex": 0,
+          "explanation": "-다가 shows that the running was interrupted by falling. The running was in progress when the fall happened."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between '먹고 갔어요' and '먹다가 갔어요'?",
+          "options": ["먹고 = ate then left (sequential); 먹다가 = was eating then left (interrupted)", "They mean the same thing", "먹고 is formal and 먹다가 is casual"],
+          "correctIndex": 0,
+          "explanation": "-고 indicates sequential actions (finished eating, then left). -다가 indicates interruption (was in the middle of eating, then left without finishing)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses -다가?",
+          "options": ["공부하다가 친구가 전화했어요 (was studying when a friend called)", "공부하다가 친구가 공부했어요 (was studying when a friend studied)", "엄마가 요리하다가 아빠가 왔어요 (mom was cooking when dad came)"],
+          "correctIndex": 0,
+          "explanation": "In option A, the same person was studying and received a call (the second event interrupted). While C might seem valid, strictly -다가 works best when the same subject transitions between actions. Here A is the clearest correct usage."
+        }
+      ]
+    },
+    {
+      "sectionId": "purpose-ryeogo-dorok",
+      "title": "Purpose: -(으)려고 and -도록",
+      "explanation": "-(으)려고 expresses purpose or intention — 'in order to.' It attaches to the verb stem: add -려고 after a vowel, -으려고 after a consonant. 한국어를 배우려고 한국에 왔어요 (I came to Korea to learn Korean). 돈을 벌려고 열심히 일해요 (I work hard to earn money). The subject of both clauses must be the same. -도록 also expresses purpose but is more versatile. It can mean 'so that' or 'to the extent that' and allows different subjects. 학생들이 이해하도록 천천히 설명했어요 (I explained slowly so that the students would understand). 늦지 않도록 일찍 출발하세요 (Leave early so that you won't be late). -도록 can also mean 'until/to the point of': 밤새도록 공부했어요 (I studied all through the night).",
+      "tip": "-(으)려고 = same subject, personal intention. -도록 = can have different subjects, more about ensuring a result. When in doubt, -도록 is the safer and more flexible choice.",
+      "examples": [
+        { "ko": "건강해지려고 운동을 시작했어요", "en": "I started exercising to become healthy", "highlight": "건강해지려고" },
+        { "ko": "시험에 합격하려고 열심히 공부했어요", "en": "I studied hard to pass the exam", "highlight": "합격하려고" },
+        { "ko": "다른 사람이 듣지 못하도록 작은 소리로 말했어요", "en": "I spoke in a low voice so others couldn't hear", "highlight": "못하도록" },
+        { "ko": "잊지 않도록 메모해 두세요", "en": "Make a note so you don't forget", "highlight": "않도록" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I came to the library to study'?",
+          "options": ["공부하려고 도서관에 왔어요", "공부하도록 도서관에 왔어요", "공부해서 도서관에 왔어요"],
+          "correctIndex": 0,
+          "explanation": "The speaker has a personal intention (to study). Same subject, personal purpose → -(으)려고. 공부하려고 도서관에 왔어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pattern allows different subjects in the two clauses?",
+          "options": ["-도록", "-(으)려고", "-(으)면서"],
+          "correctIndex": 0,
+          "explanation": "-도록 can connect clauses with different subjects: 아이가 자도록 조용히 했어요 (I was quiet so the child would sleep). -(으)려고 and -(으)면서 require the same subject."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'눈이 빠지도록 기다렸어요' means:",
+          "options": ["I waited to the point my eyes could fall out (waited desperately)", "I waited so my eyes wouldn't fall out", "I waited until I saw something"],
+          "correctIndex": 0,
+          "explanation": "-도록 here means 'to the extent that.' 눈이 빠지도록 is a figurative expression meaning 'so much that one's eyes could fall out' — i.e., waited desperately/eagerly."
+        }
+      ]
+    }
+  ]
+}

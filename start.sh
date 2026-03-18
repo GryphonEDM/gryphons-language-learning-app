@@ -79,6 +79,13 @@ if ! python3 -c "import num2words" &> /dev/null; then
 else
     echo "num2words already installed."
 fi
+
+if ! python3 -c "import requests" &> /dev/null; then
+    echo "Installing requests..."
+    pip install requests
+else
+    echo "requests already installed."
+fi
 echo ""
 
 echo "[4/6] Checking Whisper STT dependencies..."

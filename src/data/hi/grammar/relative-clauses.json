@@ -1,0 +1,116 @@
+{
+  "lessonId": "relative-clauses",
+  "nameEn": "Relative Clauses",
+  "nameHi": "संबंधवाचक उपवाक्य",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "correlative-relative-structure",
+      "title": "The Correlative-Relative Structure: जो...वो",
+      "explanation": "Hindi does not use relative clauses the way English does ('the man who came'). Instead, Hindi uses a correlative-relative structure with paired words. The most important pair is जो...वो (the one who...that one). जो introduces the relative clause (describing who or what), and वो (or वह) appears in the main clause, referring back to the same person or thing. The relative clause typically comes first in Hindi, followed by the main clause. For example: जो लड़का यहाँ आया, वो मेरा भाई है (The boy who came here, he is my brother). जो can function as 'who', 'which', or 'that' depending on context. It changes form for number and case: जो (singular/plural nominative), जिसे/जिसको (singular oblique 'whom/which'), जिन्हें/जिनको (plural oblique), जिसका/जिसकी/जिसके (whose). The correlative वो also changes: उसे, उसको, उसका, etc. This paired structure is fundamental to complex Hindi sentences.",
+      "tip": "Think of it as: 'Which person came, that person is my brother' — Hindi always uses two pronouns where English uses one relative pronoun. The जो-clause sets up the reference, and the वो-clause completes the thought.",
+      "examples": [
+        { "hi": "जो आदमी बाहर खड़ा है, वो मेरा दोस्त है।", "en": "The man who is standing outside is my friend.", "highlight": "जो...वो" },
+        { "hi": "जो किताब तुमने दी, वो बहुत अच्छी है।", "en": "The book that you gave is very good.", "highlight": "जो...वो" },
+        { "hi": "जिसे मैंने बुलाया, वो नहीं आया।", "en": "The one whom I called did not come.", "highlight": "जिसे...वो" },
+        { "hi": "जिसकी गाड़ी लाल है, वो मेरा पड़ोसी है।", "en": "The one whose car is red is my neighbor.", "highlight": "जिसकी...वो" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How does Hindi typically structure a relative clause?",
+          "options": ["जो-clause first, then वो-clause (correlative structure)", "Relative clause after the noun, like English", "Using a single word 'जो' without any correlative"],
+          "correctIndex": 0,
+          "explanation": "Hindi uses a correlative-relative structure where the जो-clause (relative) comes first, followed by the वो-clause (main). This is different from English, where the relative clause follows the noun it modifies."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which correctly translates 'The woman who teaches us is kind'?",
+          "options": ["जो औरत हमें पढ़ाती है, वो दयालु है।", "वो औरत जो हमें पढ़ाती है दयालु है।", "औरत हमें पढ़ाती जो है, वो दयालु है।"],
+          "correctIndex": 0,
+          "explanation": "The standard Hindi structure places the जो-clause first: जो औरत हमें पढ़ाती है (the woman who teaches us), followed by the main clause: वो दयालु है (she is kind). The जो...वो pairing links the two clauses."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What form of जो means 'whose'?",
+          "options": ["जिसका / जिसकी / जिसके", "जिसे / जिसको", "जो ही"],
+          "correctIndex": 0,
+          "explanation": "जिसका (masculine singular), जिसकी (feminine singular), and जिसके (masculine plural/oblique) are the possessive forms of जो, meaning 'whose'. जिसे/जिसको means 'whom/which (oblique)'."
+        }
+      ]
+    },
+    {
+      "sectionId": "place-and-time-correlatives",
+      "title": "Place and Time: जहाँ...वहाँ, जब...तब",
+      "explanation": "The correlative-relative pattern extends to place and time. For place, Hindi uses जहाँ...वहाँ (where...there). जहाँ introduces a location clause, and वहाँ refers back to it in the main clause. For example: जहाँ तुम रहते हो, वहाँ मैं भी रहता था (Where you live, I also used to live there). For time, Hindi uses जब...तब (when...then). जब introduces a time clause, and तब refers back to it. For example: जब बारिश होती है, तब हम घर में रहते हैं (When it rains, then we stay at home). In everyday speech, the second element (वहाँ or तब) is sometimes omitted when the meaning is clear, but including it makes the sentence more complete and formal. These paired structures are also used for emphasis and contrast: जहाँ पहले जंगल था, वहाँ अब शहर है (Where there was once a forest, there is now a city).",
+      "tip": "जहाँ...वहाँ pairs locations, जब...तब pairs moments in time. Even if you drop वहाँ or तब in casual speech, always start the dependent clause with जहाँ or जब — that is the word that signals a relative clause.",
+      "examples": [
+        { "hi": "जहाँ मैं पैदा हुआ, वहाँ अब कुछ नहीं है।", "en": "Where I was born, there is nothing there now.", "highlight": "जहाँ...वहाँ" },
+        { "hi": "जब तुम आओगे, तब हम खाना खाएँगे।", "en": "When you come, then we will eat.", "highlight": "जब...तब" },
+        { "hi": "जहाँ फूल होते हैं, वहाँ तितलियाँ आती हैं।", "en": "Where there are flowers, butterflies come there.", "highlight": "जहाँ...वहाँ" },
+        { "hi": "जब मैं छोटा था, तब हम गाँव में रहते थे।", "en": "When I was young, we used to live in a village.", "highlight": "जब...तब" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair of correlatives is used for place in Hindi?",
+          "options": ["जहाँ...वहाँ", "जब...तब", "जो...वो"],
+          "correctIndex": 0,
+          "explanation": "जहाँ...वहाँ (where...there) is the correlative pair for place. जब...तब is for time (when...then), and जो...वो is for persons and things (who/which...that one)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Translate: 'When it gets dark, we go home.'",
+          "options": ["जब अँधेरा होता है, तब हम घर जाते हैं।", "जहाँ अँधेरा होता है, वहाँ हम घर जाते हैं।", "जो अँधेरा होता है, वो हम घर जाते हैं।"],
+          "correctIndex": 0,
+          "explanation": "This is a time relationship ('when...then'), so we use जब...तब. जहाँ...वहाँ would mean 'where it gets dark, there we go home' (a place relationship), which changes the meaning entirely."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Is it grammatically acceptable to drop तब in: 'जब बारिश होती है, (तब) सड़कें गीली होती हैं'?",
+          "options": ["Yes, तब is optional in casual speech", "No, तब is always required", "Only in written Hindi"],
+          "correctIndex": 0,
+          "explanation": "In everyday spoken Hindi, the correlative element (तब, वहाँ) can be dropped when the meaning is clear from context. The sentence remains grammatical: जब बारिश होती है, सड़कें गीली होती हैं। Including तब makes it more formal and emphatic."
+        }
+      ]
+    },
+    {
+      "sectionId": "manner-and-quantity-correlatives",
+      "title": "Manner and Quantity: जैसा...वैसा, जितना...उतना",
+      "explanation": "Hindi has correlative pairs for manner and quantity as well. जैसा...वैसा means 'as/like...so/such' and is used for comparisons of manner, quality, or type. जैसा agrees in gender and number with the noun it modifies: जैसा (masc. sg.), जैसी (fem. sg.), जैसे (masc. pl./oblique). For example: जैसा बाप, वैसा बेटा (Like father, like son — literally 'As the father, so the son'). जैसी करनी, वैसी भरनी (As you sow, so shall you reap). जितना...उतना means 'as much as...that much' and is used for quantity comparisons. It also agrees in gender and number: जितना/जितनी/जितने and उतना/उतनी/उतने. For example: जितना तुम पढ़ोगे, उतना सीखोगे (The more you study, the more you will learn). These pairs are extremely common in proverbs, idioms, and everyday comparisons. They give Hindi a rich system for expressing proportional and analogical relationships.",
+      "tip": "Remember the pattern: ज- words start the relative clause, and their correlative partners (व- or उ-) start the main clause. जैसा→वैसा, जितना→उतना. They always agree in gender and number with the noun they describe.",
+      "examples": [
+        { "hi": "जैसा देश, वैसा भेष।", "en": "When in Rome, do as the Romans do. (As the country, so the attire.)", "highlight": "जैसा...वैसा" },
+        { "hi": "जैसी करनी, वैसी भरनी।", "en": "As you sow, so shall you reap.", "highlight": "जैसी...वैसी" },
+        { "hi": "जितना ज़्यादा पढ़ोगे, उतना ज़्यादा सीखोगे।", "en": "The more you read, the more you will learn.", "highlight": "जितना...उतना" },
+        { "hi": "जितनी मेहनत करोगे, उतनी सफलता मिलेगी।", "en": "The more effort you put in, the more success you will get.", "highlight": "जितनी...उतनी" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the correlative pair जैसा...वैसा express?",
+          "options": ["Manner or likeness ('as...so' / 'like...like')", "Quantity ('as much as...that much')", "Time ('when...then')"],
+          "correctIndex": 0,
+          "explanation": "जैसा...वैसा expresses manner, likeness, or quality — 'as/like...so/such'. It is used for comparisons of type or manner. जितना...उतना is for quantity, and जब...तब is for time."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 'जितनी मेहनत, _____ कमाई' (As much effort, that much earning).",
+          "options": ["उतनी", "वैसी", "जैसी"],
+          "correctIndex": 0,
+          "explanation": "जितना pairs with उतना. Since कमाई (earning) is feminine, both must be in feminine form: जितनी मेहनत, उतनी कमाई. वैसी would pair with जैसी (manner), not जितनी (quantity)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which proverb correctly uses जैसा...वैसा?",
+          "options": ["जैसा बोओगे, वैसा काटोगे।", "जितना बोओगे, उतना काटोगे।", "जब बोओगे, तब काटोगे।"],
+          "correctIndex": 0,
+          "explanation": "जैसा बोओगे, वैसा काटोगे means 'As you sow, so shall you reap' — it compares the manner/quality of sowing with reaping. जितना...उतना would mean 'as much as you sow, that much you reap' (quantity). जब...तब would mean 'when you sow, then you reap' (time)."
+        }
+      ]
+    }
+  ]
+}

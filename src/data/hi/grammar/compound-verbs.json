@@ -1,0 +1,116 @@
+{
+  "lessonId": "compound-verbs",
+  "nameEn": "Compound Verbs",
+  "nameHi": "संयुक्त क्रियाएँ",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": ["verb-conjugation"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "what-are-compound-verbs",
+      "title": "What Are Compound Verbs (संयुक्त क्रियाएँ)?",
+      "explanation": "Compound verbs are one of the most distinctive features of Hindi. A compound verb combines the stem of a main verb (the verb that carries the core meaning) with a second 'helper' verb (called a vector verb or सहायक क्रिया) that adds a shade of meaning — such as completeness, suddenness, benefit to self or others, or forcefulness. The main verb appears in its root form, and the vector verb is the one that conjugates for tense, gender, and number. For example, in खा लिया (ate up), खा is the main verb root (eat) and लिया is the conjugated form of लेना (to take), adding the nuance of completion for the speaker's own benefit. Compound verbs are extremely common in everyday Hindi and often cannot be translated word-for-word into English. They give Hindi its natural rhythm and expressiveness. Without them, speech sounds flat and bookish.",
+      "tip": "Think of the vector verb as adding 'flavor' to the main action. The main verb root stays unchanged — only the vector verb conjugates. Learning the most common vector verbs (देना, लेना, जाना, पड़ना, डालना) will unlock hundreds of natural Hindi expressions.",
+      "examples": [
+        { "hi": "उसने खाना खा लिया।", "en": "He/She ate the food (completely, for self).", "highlight": "खा लिया" },
+        { "hi": "मैंने दरवाज़ा खोल दिया।", "en": "I opened the door (for someone else / completely).", "highlight": "खोल दिया" },
+        { "hi": "बच्चा गिर पड़ा।", "en": "The child fell down (suddenly).", "highlight": "गिर पड़ा" },
+        { "hi": "उसने सब कुछ बता दिया।", "en": "He/She told everything (gave away the information).", "highlight": "बता दिया" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the compound verb 'खा लिया', which part carries the main meaning?",
+          "options": ["खा (eat)", "लिया (took)", "Both carry equal meaning"],
+          "correctIndex": 0,
+          "explanation": "In a compound verb, the first part (the main verb root) carries the core meaning. खा means 'eat'. The vector verb लिया (from लेना) adds the nuance of completeness and self-benefit. Together, खा लिया means 'ate up (completely, for oneself)'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which part of a compound verb conjugates for tense, gender, and number?",
+          "options": ["The vector (helper) verb", "The main verb", "Both verbs conjugate"],
+          "correctIndex": 0,
+          "explanation": "Only the vector verb conjugates. The main verb always appears in its bare root form. For example: खा लिया (past masc.), खा ली (past fem.), खा लेंगे (future masc. pl.) — खा stays the same while लेना changes."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why do Hindi speakers use compound verbs instead of simple verbs?",
+          "options": ["To add nuances like completeness, suddenness, or benefit", "Because simple verbs are grammatically incorrect", "Only in formal writing"],
+          "correctIndex": 0,
+          "explanation": "Compound verbs add shades of meaning that simple verbs lack — completeness, suddenness, benefit to self or others, forcefulness. Using only simple verbs is grammatically correct but sounds unnatural and bookish in everyday Hindi."
+        }
+      ]
+    },
+    {
+      "sectionId": "lena-and-dena-vectors",
+      "title": "लेना (Self-Benefit) vs. देना (Other-Benefit)",
+      "explanation": "The two most common vector verbs are लेना (to take) and देना (to give), and the distinction between them is crucial. When लेना is used as a vector, it indicates that the action is completed for the benefit of the subject (the doer). When देना is used as a vector, it indicates that the action is completed for the benefit of someone else, or that the result is directed outward. Compare: मैंने किताब पढ़ ली (I finished reading the book — for my own benefit/satisfaction) vs. मैंने उसे किताब पढ़ दी (I read the book to/for him/her — the benefit goes to the other person). Similarly: उसने दरवाज़ा बंद कर लिया (He closed the door — for himself, perhaps for privacy) vs. उसने दरवाज़ा बंद कर दिया (He closed the door — for others, or simply completed the action outwardly). This self-vs.-other distinction is subtle but pervasive in Hindi.",
+      "tip": "A simple rule of thumb: लेना compounds = 'I did it for me / I completed it for myself'. देना compounds = 'I did it for others / the action goes outward'. When in doubt, if the result benefits the doer, use लेना; if it benefits someone else or is directed outward, use देना.",
+      "examples": [
+        { "hi": "मैंने खाना बना लिया।", "en": "I made the food (for myself / I'm done making it).", "highlight": "बना लिया" },
+        { "hi": "माँ ने खाना बना दिया।", "en": "Mother made the food (for the family / for others).", "highlight": "बना दिया" },
+        { "hi": "उसने अपना काम कर लिया।", "en": "He finished his own work (self-benefit).", "highlight": "कर लिया" },
+        { "hi": "उसने मेरा काम कर दिया।", "en": "He did my work (for me / other-benefit).", "highlight": "कर दिया" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "मैंने चाय बना ली। — What nuance does लेना add here?",
+          "options": ["The speaker made tea for their own benefit/use", "The speaker made tea for a guest", "The speaker is still making tea"],
+          "correctIndex": 0,
+          "explanation": "The vector लेना indicates self-benefit. बना ली means 'made (for myself / I'm done)'. If the tea were for someone else, you would say बना दी (with देना as the vector)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She told him the answer (for his benefit)'?",
+          "options": ["उसने उसे जवाब बता दिया।", "उसने जवाब बता लिया।", "उसने जवाब बताया।"],
+          "correctIndex": 0,
+          "explanation": "बता दिया uses देना as the vector, indicating the action benefits someone else — she told him the answer for his benefit. बता लिया would mean she found out the answer for herself. बताया is a simple verb without the compound nuance."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I have learned the lesson (for myself / I've got it down)'?",
+          "options": ["मैंने सबक सीख लिया।", "मैंने सबक सीख दिया।", "मैंने सबक सीखा।"],
+          "correctIndex": 0,
+          "explanation": "सीख लिया uses लेना, indicating self-benefit — you learned it for your own knowledge. सीख दिया would be incorrect here because learning inherently benefits the learner, not someone else. सीखा is the simple past without the completive nuance."
+        }
+      ]
+    },
+    {
+      "sectionId": "jaana-and-padna-vectors",
+      "title": "जाना (Change of State) and पड़ना (Suddenness)",
+      "explanation": "Two more essential vector verbs are जाना (to go) and पड़ना (to fall/to have to). When जाना is used as a vector, it indicates a change of state, a transition, or an action that is completed irrevocably. The action 'goes' to completion and cannot be undone. For example: सो जाना (to fall asleep — transition from awake to asleep), मर जाना (to die — irreversible change of state), भूल जाना (to forget — the knowledge is gone). When पड़ना is used as a vector, it adds the nuance of suddenness, involuntariness, or something happening unexpectedly. The action 'falls upon' the subject. For example: हँस पड़ना (to burst out laughing — sudden, involuntary), रो पड़ना (to burst into tears — sudden), चल पड़ना (to set off walking — sudden start of movement). Both vectors are common in storytelling and emotional expression.",
+      "tip": "जाना compounds often imply 'the deed is done — there's no going back' (ironic, since जाना means 'to go'). पड़ना compounds suggest the action 'fell upon' you — it was sudden or uncontrolled. If someone हँस पड़ा, they couldn't help but laugh.",
+      "examples": [
+        { "hi": "बच्चा सो गया।", "en": "The child fell asleep. (change of state: awake → asleep)", "highlight": "सो गया" },
+        { "hi": "मैं सब कुछ भूल गया।", "en": "I forgot everything. (irreversible — it's gone from memory)", "highlight": "भूल गया" },
+        { "hi": "वह यह सुनकर रो पड़ी।", "en": "She burst into tears upon hearing this. (sudden, involuntary)", "highlight": "रो पड़ी" },
+        { "hi": "वे अचानक चल पड़े।", "en": "They suddenly set off / started walking. (sudden onset)", "highlight": "चल पड़े" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "बच्चा सो गया। — What does जाना add as a vector verb here?",
+          "options": ["A completed change of state (awake to asleep)", "The child went somewhere to sleep", "The child is about to sleep"],
+          "correctIndex": 0,
+          "explanation": "When जाना is a vector verb, it indicates a completed transition or change of state. सो गया means the child has transitioned from being awake to being asleep. It does not mean the child 'went to sleep somewhere'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which compound verb means 'to burst out laughing (suddenly)'?",
+          "options": ["हँस पड़ना", "हँस जाना", "हँस लेना"],
+          "correctIndex": 0,
+          "explanation": "हँस पड़ना uses पड़ना as the vector, which adds suddenness and involuntariness — the person couldn't help but laugh. हँस जाना would imply a general change of state, and हँस लेना would imply laughing for one's own benefit."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "मैं अपना नाम भूल गया। — Why is जाना used here instead of a simple verb?",
+          "options": ["To show the forgetting is complete and irreversible", "Because भूलना requires जाना grammatically", "To indicate the action happened in the past"],
+          "correctIndex": 0,
+          "explanation": "जाना as a vector emphasizes that the forgetting is complete and the information is gone — it cannot easily be retrieved. The simple भूला would state the fact, but भूल गया emphasizes the finality. भूलना does not grammatically require जाना; it is a stylistic and semantic choice."
+        }
+      ]
+    }
+  ]
+}

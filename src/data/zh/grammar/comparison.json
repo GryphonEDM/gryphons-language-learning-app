@@ -1,0 +1,171 @@
+{
+  "lessonId": "comparison",
+  "nameEn": "Comparison",
+  "nameZh": "比较",
+  "icon": "⚖️",
+  "tier": "B1",
+  "prerequisites": ["adjectives"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "bi-more-than",
+      "title": "比 (bǐ) — More Than",
+      "explanation": "The most common way to make comparisons in Chinese is with 比 (bǐ). The basic structure is A 比 B + adjective: '他比我高' (He is taller than me). Unlike English, you do NOT add a separate word like 'more' — the adjective alone carries the comparative meaning after 比. You can also specify the exact degree of difference by adding an amount after the adjective: '我比他高五厘米' (I am 5 cm taller than him), '她比我大三岁' (She is 3 years older than me). Important: do NOT use 很 (hěn) before the adjective in a 比 sentence. '他比我很高' is WRONG — just say '他比我高'.",
+      "tip": "Think of 比 as setting up a comparison direction: A 比 B = 'A compared-to B'. Whatever adjective follows tells you how A exceeds B. To add a specific amount, just tack it on after the adjective — no extra words needed.",
+      "examples": [
+        { "zh": "他比我高。", "en": "He is taller than me.", "highlight": "比" },
+        { "zh": "我比他高五厘米。", "en": "I am 5 cm taller than him.", "highlight": "比...高五厘米" },
+        { "zh": "今天比昨天冷。", "en": "Today is colder than yesterday.", "highlight": "比...冷" },
+        { "zh": "她比我大三岁。", "en": "She is 3 years older than me.", "highlight": "比...大三岁" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He is taller than me' in Chinese?",
+          "options": ["他很比我高。", "他比我高。", "他比我很高。", "他高比我。"],
+          "correctIndex": 1,
+          "explanation": "The correct structure is A 比 B + adj: '他比我高'. Do not use 很 in a 比 comparison."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "今天___昨天热。(Today is hotter than yesterday.)",
+          "acceptedAnswers": ["比"],
+          "hint": "Use the comparison word that goes between A and B."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I am 2 years younger than her'?",
+          "options": [
+            "我比她小两岁。",
+            "我比她两岁小。",
+            "我两岁比她小。",
+            "我比她很小两岁。"
+          ],
+          "correctIndex": 0,
+          "explanation": "The specific amount (两岁) goes after the adjective (小): A 比 B + adj + amount."
+        }
+      ]
+    },
+    {
+      "sectionId": "meiyou-not-as",
+      "title": "没有...那么... — Not as...as",
+      "explanation": "To say 'A is not as (adjective) as B', use the structure A 没有 B 那么 + adjective: '我没有他那么高' (I am not as tall as him). This is the standard way to express negative comparisons. 那么 (nàme) can sometimes be omitted in casual speech, giving 'A 没有 B + adj': '我没有他高' also works. You can also use 这么 (zhème, 'this') instead of 那么 when referring to something nearby or just mentioned. This pattern is the natural negative counterpart to 比 — while 比 says A exceeds B, 没有...那么 says A does NOT reach B's level.",
+      "tip": "没有...那么 is like saying 'doesn't reach that level of...'. It's the go-to way to soften a comparison — instead of saying someone is shorter, you say they're 'not as tall as'. This is considered more polite in Chinese.",
+      "examples": [
+        { "zh": "我没有他那么高。", "en": "I am not as tall as him.", "highlight": "没有...那么" },
+        { "zh": "这本书没有那本书那么有趣。", "en": "This book is not as interesting as that book.", "highlight": "没有...那么有趣" },
+        { "zh": "今天没有昨天那么冷。", "en": "Today is not as cold as yesterday.", "highlight": "没有...那么冷" },
+        { "zh": "他跑得没有我快。", "en": "He doesn't run as fast as me.", "highlight": "没有...快" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "弟弟___哥哥那么高。(The younger brother is not as tall as the older brother.)",
+          "acceptedAnswers": ["没有"],
+          "hint": "Use the negative comparison word meaning 'does not have / does not reach'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'This movie is not as good as that one'?",
+          "options": [
+            "这部电影比那部不好看。",
+            "这部电影没有那部那么好看。",
+            "这部电影不比那部好看那么。",
+            "这部电影很没有好看。"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 没有 B 那么 + adj: '这部电影没有那部那么好看'. Don't negate 比 with 不 for 'not as...as'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word can optionally replace 那么 in the pattern 'A 没有 B ___ adj'?",
+          "options": ["很", "这么", "更", "最"],
+          "correctIndex": 1,
+          "explanation": "这么 (zhème) can replace 那么 (nàme) when referring to something nearby. Both mean 'as...as' in this negative comparison structure."
+        }
+      ]
+    },
+    {
+      "sectionId": "gen-yiyang-same-as",
+      "title": "跟...一样 — Same as",
+      "explanation": "To say 'A is the same as B', use A 跟 B 一样 (yīyàng): '我跟他一样高' (I am as tall as him). 跟 (gēn) means 'with' here and can be replaced by 和 (hé) in this pattern. When you add an adjective after 一样, it means 'equally (adjective)': '这个跟那个一样贵' (This one is as expensive as that one). To express difference, negate with 不: A 跟 B 不一样 means 'A and B are different / not the same'. You can be specific about what's different: '我跟他不一样高' (We are not the same height) or simply '我们不一样' (We are different).",
+      "tip": "跟...一样 is your go-to for equality comparisons. Without an adjective it means 'the same'; with an adjective it means 'equally [adj]'. For 'different', just add 不 before 一样.",
+      "examples": [
+        { "zh": "我跟他一样高。", "en": "I am as tall as him.", "highlight": "跟...一样" },
+        { "zh": "这个跟那个一样贵。", "en": "This one is as expensive as that one.", "highlight": "跟...一样贵" },
+        { "zh": "我们的想法不一样。", "en": "Our ideas are different.", "highlight": "不一样" },
+        { "zh": "中文跟日文不一样。", "en": "Chinese and Japanese are not the same.", "highlight": "跟...不一样" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "她___我一样大。(She is the same age as me.)",
+          "acceptedAnswers": ["跟", "和"],
+          "hint": "Use the word meaning 'with' that starts the equality comparison pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'This bag is as expensive as that one'?",
+          "options": [
+            "这个包比那个包一样贵。",
+            "这个包跟那个包一样贵。",
+            "这个包没有那个包一样贵。",
+            "这个包一样跟那个包贵。"
+          ],
+          "correctIndex": 1,
+          "explanation": "A 跟 B 一样 + adj: '这个包跟那个包一样贵'. The adjective goes after 一样."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我们的看法___。(Our views are different.)",
+          "acceptedAnswers": ["不一样"],
+          "hint": "Negate 一样 with 不 to express 'different'."
+        }
+      ]
+    },
+    {
+      "sectionId": "yuelaiyue-progressive",
+      "title": "越来越 and 越...越...",
+      "explanation": "越来越 (yuè lái yuè) + adjective means 'more and more (adjective)' — it expresses a progressive change over time: '天气越来越冷' (The weather is getting colder and colder), '他的中文越来越好' (His Chinese is getting better and better). The pattern 越 A 越 B means 'the more A, the more B', where A and B can be verbs or adjectives: '越吃越胖' (The more you eat, the fatter you get), '越学越有意思' (The more you study, the more interesting it gets). In 越 A 越 B, the subject can appear before the whole phrase or between the two 越 clauses depending on what sounds natural.",
+      "tip": "越来越 is for a single thing changing over time (more and more X). 越...越... links two things: the more one thing happens, the more another thing results. Both are extremely common in daily Chinese.",
+      "examples": [
+        { "zh": "天气越来越冷了。", "en": "The weather is getting colder and colder.", "highlight": "越来越冷" },
+        { "zh": "他的中文越来越好。", "en": "His Chinese is getting better and better.", "highlight": "越来越好" },
+        { "zh": "越吃越胖。", "en": "The more you eat, the fatter you get.", "highlight": "越吃越胖" },
+        { "zh": "我越学中文越觉得有意思。", "en": "The more I study Chinese, the more interesting I find it.", "highlight": "越学...越觉得" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "她的汉语______好了。(Her Chinese is getting better and better.)",
+          "acceptedAnswers": ["越来越"],
+          "hint": "Use the 'more and more' pattern with three characters."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'The more you practice, the better you get'?",
+          "options": [
+            "越练习越好。",
+            "练习越来越好。",
+            "越好越练习。",
+            "比练习更好。"
+          ],
+          "correctIndex": 0,
+          "explanation": "越 A 越 B: '越练习越好' — the more you practice (A), the better (B). The cause comes after the first 越."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '越来越贵' mean?",
+          "options": [
+            "The most expensive",
+            "More and more expensive",
+            "Not as expensive",
+            "As expensive as before"
+          ],
+          "correctIndex": 1,
+          "explanation": "越来越 + adj means 'more and more [adj]': 越来越贵 = more and more expensive / getting increasingly expensive."
+        }
+      ]
+    }
+  ]
+}

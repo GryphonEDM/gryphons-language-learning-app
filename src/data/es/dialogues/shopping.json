@@ -1,0 +1,149 @@
+{
+  "dialogueId": "shopping",
+  "nameEn": "Shopping for Clothes",
+  "nameEs": "Ir de compras",
+  "icon": "🛍️",
+  "context": "You are in a clothing store in Valencia. The shop assistant (Laura) offers to help.",
+  "characters": {
+    "npc": { "name": "Laura" },
+    "player": { "name": "Usted" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "¡Buenos días! ¿En qué le puedo ayudar?",
+      "translation": "Good morning! How can I help you?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes, you are looking for a shirt",
+      "acceptedResponses": [
+        "Sí, busco una camisa",
+        "Buenas, busco una camisa",
+        "Sí, estoy buscando una camisa",
+        "Busco una camisa, por favor"
+      ],
+      "keyWords": ["busco", "camisa"],
+      "hint": "Sí, busco una camisa."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Perfecto! Tenemos una gran variedad. ¿Sabe cuál es su talla?",
+      "translation": "Perfect! We have a great variety. Do you know your size?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask what sizes they have",
+      "acceptedResponses": [
+        "¿Qué tallas tienen?",
+        "¿Cuáles son las tallas disponibles?",
+        "¿Tienen talla mediana?",
+        "Creo que soy talla mediana. ¿Tienen talla M?"
+      ],
+      "keyWords": ["talla"],
+      "hint": "¿Qué tallas tienen?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Tenemos de la talla pequeña a la extra grande. ¿Le muestro algunas opciones?",
+      "translation": "We have from small to extra large. Shall I show you some options?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes please, and ask if they have it in green",
+      "acceptedResponses": [
+        "Sí, por favor. ¿Lo tienen en verde?",
+        "Sí. ¿Lo tienen en color verde?",
+        "Por favor. ¿Tienen esta camisa en verde?",
+        "Sí gracias. ¿La tienen en verde?"
+      ],
+      "keyWords": ["verde", "tienen"],
+      "hint": "Sí, por favor. ¿Lo tienen en verde?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Sí, tenemos esta camisa en verde, azul y blanco. Aquí tiene la talla mediana en verde.",
+      "translation": "Yes, we have this shirt in green, blue, and white. Here is the medium in green."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how much it costs",
+      "acceptedResponses": [
+        "¿Cuánto cuesta?",
+        "¿Cuánto vale?",
+        "¿Cuál es el precio?",
+        "¿Cuánto cuesta esta camisa?"
+      ],
+      "keyWords": ["cuesta"],
+      "hint": "¿Cuánto cuesta?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Esta camisa cuesta veinticinco euros. Es de muy buena calidad.",
+      "translation": "This shirt costs twenty-five euros. It is very good quality."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you would like to try it on and ask where the fitting room is",
+      "acceptedResponses": [
+        "Me gustaría probármela. ¿Dónde está el probador?",
+        "Quisiera probármela. ¿Dónde está el probador?",
+        "¿Puedo probarme la camisa? ¿Dónde está el probador?",
+        "Me la quiero probar. ¿Dónde está el probador?"
+      ],
+      "keyWords": ["probar", "probador"],
+      "hint": "Me gustaría probármela. ¿Dónde está el probador?"
+    },
+    {
+      "speaker": "npc",
+      "text": "El probador está al fondo a la izquierda. Tome su tiempo.",
+      "translation": "The fitting room is at the back on the left. Take your time."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say the shirt fits well and you will take it",
+      "acceptedResponses": [
+        "Me queda bien. Me la llevo.",
+        "Me queda perfecta. Me la llevo.",
+        "Está bien. Me la llevo.",
+        "Me queda bien, me la quedo."
+      ],
+      "keyWords": ["queda", "llevo"],
+      "hint": "Me queda bien. Me la llevo."
+    },
+    {
+      "speaker": "npc",
+      "text": "¡Estupendo! ¿Va a pagar con tarjeta o en efectivo?",
+      "translation": "Wonderful! Will you be paying by card or cash?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you will pay by card and ask for the receipt",
+      "acceptedResponses": [
+        "Con tarjeta, por favor. ¿Me da el recibo?",
+        "Pago con tarjeta. ¿Me puede dar el recibo?",
+        "Tarjeta, por favor. ¿Me da el recibo?",
+        "Con tarjeta. ¿El recibo, por favor?"
+      ],
+      "keyWords": ["tarjeta", "recibo"],
+      "hint": "Con tarjeta, por favor. ¿Me da el recibo?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Aquí tiene su recibo. ¡Que disfrute la camisa!",
+      "translation": "Here is your receipt. Enjoy the shirt!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank her and say goodbye",
+      "acceptedResponses": [
+        "Muchas gracias. ¡Hasta luego!",
+        "Gracias, muy amable. ¡Adiós!",
+        "Muchas gracias por su ayuda. ¡Hasta luego!",
+        "Gracias. ¡Adiós!"
+      ],
+      "keyWords": ["gracias", "luego"],
+      "hint": "Muchas gracias. ¡Hasta luego!"
+    }
+  ]
+}

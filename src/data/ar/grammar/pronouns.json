@@ -1,0 +1,118 @@
+{
+  "lessonId": "pronouns",
+  "nameEn": "Personal Pronouns",
+  "nameAr": "الضمائر الشخصية",
+  "icon": "👤",
+  "tier": "A1",
+  "prerequisites": ["alphabet-pronunciation"],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "singular-pronouns",
+      "title": "Singular Pronouns",
+      "explanation": "Arabic has more personal pronouns than English because it distinguishes gender in the second and third person. The singular pronouns are: أنا (anā, I), أنتَ (anta, you — masculine), أنتِ (anti, you — feminine), هو (huwa, he), هي (hiya, she). Note that أنتَ and أنتِ are spelled almost identically — the difference is in the short vowel at the end (fatḥa for masculine, kasra for feminine), which is often not written. In context, you determine which 'you' is meant by the gender of the person being addressed. The pronoun أنا (I) does not change for gender — both men and women say أنا.",
+      "tip": "Think of it this way: أنا (I) is universal, أنتَ/أنتِ (you) splits by gender, and هو/هي (he/she) splits by gender. First person has no gender distinction, but second and third person always do.",
+      "examples": [
+        { "ar": "أنا طالب", "en": "I am a student (male speaking)", "highlight": "أنا" },
+        { "ar": "أنا طالبة", "en": "I am a student (female speaking) — أنا stays the same, the noun changes", "highlight": "أنا" },
+        { "ar": "أنتَ معلّم", "en": "You are a teacher (to a male)", "highlight": "أنتَ" },
+        { "ar": "أنتِ معلّمة", "en": "You are a teacher (to a female)", "highlight": "أنتِ" },
+        { "ar": "هو طبيب", "en": "He is a doctor", "highlight": "هو" },
+        { "ar": "هي طبيبة", "en": "She is a doctor", "highlight": "هي" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I' in Arabic?",
+          "options": ["أنا", "أنتَ", "هو"],
+          "correctIndex": 0,
+          "explanation": "أنا (anā) means 'I' and is used by both males and females. It is the only singular pronoun that does not change for gender."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun would you use to say 'you' to a female friend?",
+          "options": ["أنتِ (anti)", "أنتَ (anta)", "هي (hiya)"],
+          "correctIndex": 0,
+          "explanation": "أنتِ (anti, with kasra) is the feminine 'you'. أنتَ (anta, with fatḥa) is the masculine 'you'. Arabic always distinguishes gender when addressing someone directly."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does هي mean?",
+          "options": ["She", "He", "You (feminine)"],
+          "correctIndex": 0,
+          "explanation": "هي (hiya) means 'she'. هو (huwa) means 'he'. These are the third-person singular pronouns."
+        }
+      ]
+    },
+    {
+      "sectionId": "plural-pronouns",
+      "title": "Plural Pronouns",
+      "explanation": "Arabic has separate plural pronouns and also distinguishes a dual form (for exactly two people), though the dual is less common in everyday speech. The main plural pronouns are: نحن (naḥnu, we), أنتم (antum, you all — masculine or mixed group), أنتنّ (antunna, you all — feminine only), هم (hum, they — masculine or mixed group), هنّ (hunna, they — feminine only). In practice, أنتم and هم are used for any mixed-gender group (even if only one male is present). The purely feminine forms أنتنّ and هنّ are used only when the group is entirely female. Modern Standard Arabic also has dual pronouns — أنتما (you two) and هما (they two) — but these are rare in spoken Arabic.",
+      "tip": "In everyday usage, you will mostly use نحن (we), أنتم (you all), and هم (they). The feminine-only plurals أنتنّ and هنّ are used much less frequently. When in doubt, أنتم and هم cover mixed groups.",
+      "examples": [
+        { "ar": "نحن طلّاب", "en": "We are students", "highlight": "نحن" },
+        { "ar": "أنتم معلّمون", "en": "You all are teachers (to a male or mixed group)", "highlight": "أنتم" },
+        { "ar": "هم في البيت", "en": "They are in the house (males or mixed group)", "highlight": "هم" },
+        { "ar": "هنّ في المدرسة", "en": "They (all female) are in the school", "highlight": "هنّ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'we' in Arabic?",
+          "options": ["نحن", "هم", "أنتم"],
+          "correctIndex": 0,
+          "explanation": "نحن (naḥnu) means 'we'. Like أنا (I), it does not change for gender — both men and women use نحن."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "If you are addressing a group of men and women, which 'you' do you use?",
+          "options": ["أنتم (antum)", "أنتنّ (antunna)", "أنتِ (anti)"],
+          "correctIndex": 0,
+          "explanation": "أنتم (antum) is used for a masculine or mixed-gender group. أنتنّ (antunna) is only used when the entire group is female."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does هم mean?",
+          "options": ["They (masculine or mixed)", "We", "You all"],
+          "correctIndex": 0,
+          "explanation": "هم (hum) means 'they' and is used for groups of males or mixed-gender groups. The all-female equivalent is هنّ (hunna)."
+        }
+      ]
+    },
+    {
+      "sectionId": "pronoun-sentences",
+      "title": "Using Pronouns in Sentences",
+      "explanation": "In Arabic, a simple sentence with a pronoun and a noun (like 'I am a teacher') does not require a verb 'to be' in the present tense. This is called a nominal sentence (جملة اسمية). You simply place the pronoun next to the predicate: أنا معلّم (I [am] a teacher), هو طبيب (He [is] a doctor). Arabic is also a pro-drop language — the verb conjugation already indicates the subject, so pronouns are often omitted when the subject is clear from the verb form. Pronouns are used mainly for emphasis or clarity. When a pronoun IS used with a verb, it adds emphasis: أنا أدرس (I study — with emphasis on 'I').",
+      "tip": "Arabic does not use a verb for 'is/am/are' in the present tense. Just put the pronoun and the description side by side: هي جميلة = She [is] beautiful. No verb needed!",
+      "examples": [
+        { "ar": "أنا مهندس", "en": "I am an engineer — no verb 'am' needed", "highlight": "أنا" },
+        { "ar": "هي جميلة", "en": "She is beautiful — no verb 'is' needed", "highlight": "هي" },
+        { "ar": "نحن من مصر", "en": "We are from Egypt", "highlight": "نحن" },
+        { "ar": "هو في المكتب", "en": "He is in the office", "highlight": "هو" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'He is a doctor' in Arabic?",
+          "options": ["هو طبيب", "هو يكون طبيب", "طبيب هو"],
+          "correctIndex": 0,
+          "explanation": "In Arabic present-tense nominal sentences, there is no verb 'to be'. You simply say هو طبيب (literally 'He doctor'). No equivalent of 'is' is needed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why are pronouns sometimes omitted in Arabic sentences?",
+          "options": ["Because the verb conjugation already indicates the subject", "Because Arabic does not have pronouns", "Because pronouns are only used in formal writing"],
+          "correctIndex": 0,
+          "explanation": "Arabic is a pro-drop language. Each verb form is conjugated differently for each person, so the subject is already encoded in the verb. Pronouns are added only for emphasis or when the subject is ambiguous."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What kind of sentence is أنا طالب (I am a student)?",
+          "options": ["A nominal sentence (جملة اسمية) — no verb needed", "A verbal sentence (جملة فعلية)", "An incomplete sentence"],
+          "correctIndex": 0,
+          "explanation": "أنا طالب is a nominal sentence (جملة اسمية), which consists of a subject and a predicate without any verb. In Arabic, present-tense 'is/am/are' is expressed through this structure — no verb required."
+        }
+      ]
+    }
+  ]
+}

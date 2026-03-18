@@ -1,0 +1,118 @@
+{
+  "lessonId": "prepositions",
+  "nameEn": "Prepositions",
+  "nameAr": "حروف الجر",
+  "icon": "📍",
+  "tier": "A2",
+  "prerequisites": ["nouns-gender", "definite-article"],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "basic-prepositions",
+      "title": "The Essential Prepositions",
+      "explanation": "Arabic has a set of core prepositions called حروف الجر (ḥurūf al-jarr, literally 'letters of pulling') because they pull the following noun into the genitive case. The most essential ones are: في (fī, in/at), على (ʿalā, on/upon), من (min, from), إلى (ilā, to/toward), عن (ʿan, about/away from), مع (maʿa, with). These prepositions are extremely common and appear in nearly every Arabic sentence. They always come before the noun they govern. Some are single-letter prepositions that attach directly to the next word: بـ (bi-, by/with/in) and لـ (li-, for/to). For example, بالعربية means 'in Arabic' (بـ + العربية).",
+      "tip": "The six main prepositions to memorize first are في، على، من، إلى، عن، مع. These cover most spatial and relational meanings. Add بـ and لـ (which attach to the word) and you can express almost any prepositional idea.",
+      "examples": [
+        { "ar": "في البيت", "en": "in the house", "highlight": "في" },
+        { "ar": "على الطاولة", "en": "on the table", "highlight": "على" },
+        { "ar": "من مصر", "en": "from Egypt", "highlight": "من" },
+        { "ar": "إلى المدرسة", "en": "to school", "highlight": "إلى" },
+        { "ar": "مع أصدقائي", "en": "with my friends", "highlight": "مع" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does في mean?",
+          "options": ["in/at", "on", "from"],
+          "correctIndex": 0,
+          "explanation": "في (fī) means 'in' or 'at'. It is one of the most common Arabic prepositions. في البيت = 'in the house', في المدرسة = 'at school'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'from Egypt' in Arabic?",
+          "options": ["من مصر", "في مصر", "إلى مصر"],
+          "correctIndex": 0,
+          "explanation": "من (min) means 'from'. So من مصر = 'from Egypt'. في مصر would mean 'in Egypt' and إلى مصر would mean 'to Egypt'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition means 'to/toward'?",
+          "options": ["إلى", "عن", "على"],
+          "correctIndex": 0,
+          "explanation": "إلى (ilā) means 'to' or 'toward'. ذهبتُ إلى المدرسة = 'I went to school'. Be careful not to confuse إلى (to) with على (on)."
+        }
+      ]
+    },
+    {
+      "sectionId": "prepositions-with-pronouns",
+      "title": "Prepositions with Pronoun Suffixes",
+      "explanation": "When a preposition is followed by a pronoun (me, you, him, her, etc.), Arabic attaches the pronoun directly to the preposition as a suffix. The pronoun suffixes are: ـي (me), ـكَ (you m.), ـكِ (you f.), ـهُ (him), ـها (her), ـنا (us), ـكم (you pl.), ـهم (them m.), ـهنّ (them f.). For example: في + ـها = فيها (in it/her), على + ـي = عليّ (on me), مع + ـهم = معهم (with them), من + ـكَ = منكَ (from you m.), إلى + ـنا = إلينا (to us). Some prepositions change slightly when suffixes are added: على becomes عليـ, إلى becomes إليـ, and في sometimes becomes فيـ.",
+      "tip": "The pronoun suffixes are the same ones used with nouns for possession (كتابي = my book) and with verbs for objects (رآني = he saw me). Learn them once and use them everywhere.",
+      "examples": [
+        { "ar": "معي", "en": "with me — مع + ـي", "highlight": "ـي" },
+        { "ar": "عليه", "en": "on him / he must — على + ـهُ", "highlight": "ـه" },
+        { "ar": "منها", "en": "from her / from it (f.) — من + ـها", "highlight": "ـها" },
+        { "ar": "إلينا", "en": "to us — إلى + ـنا (note إلى becomes إليـ)", "highlight": "ـنا" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'with them (m.)' in Arabic?",
+          "options": ["معهم", "معي", "معنا"],
+          "correctIndex": 0,
+          "explanation": "مع (with) + ـهم (them, masculine) = معهم (with them). The pronoun suffix attaches directly to the preposition."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does عليّ mean?",
+          "options": ["On me", "On him", "On you"],
+          "correctIndex": 0,
+          "explanation": "عليّ is على (on) + ـي (me). The يـ doubles due to the added suffix, shown by the shadda: عليَّ. This also commonly means 'I must' (literally 'upon me')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The pronoun suffixes used with prepositions are:",
+          "options": ["The same suffixes used for noun possession and verb objects", "A completely different set of suffixes", "Only used with prepositions"],
+          "correctIndex": 0,
+          "explanation": "Arabic uses one set of pronoun suffixes across prepositions (معي, with me), nouns (كتابي, my book), and verbs (رآني, he saw me). Learning them once covers all three uses."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-expressions",
+      "title": "Common Prepositional Expressions",
+      "explanation": "Many everyday Arabic expressions are built around prepositions. عن means 'about' or 'away from': تكلّمنا عن الموضوع (we talked about the topic). على can mean 'must/have to' when combined with a pronoun: عليّ أن أدرس (I must study, literally 'upon me to study'). في is used for time expressions: في الصباح (in the morning), في الليل (at night). من...إلى creates 'from...to' ranges: من الساعة الثامنة إلى الساعة الثالثة (from 8:00 to 3:00). بـ indicates means or instrument: كتبتُ بالقلم (I wrote with the pen). لـ indicates purpose or belonging: هذا لك (this is for you).",
+      "tip": "على + pronoun suffix is a very common way to express obligation: عليّ (I must), عليكَ (you must), عليه (he must). This is more natural in Arabic than using a verb for 'must'.",
+      "examples": [
+        { "ar": "تكلّمنا عن الموضوع", "en": "We talked about the topic — عن = about", "highlight": "عن" },
+        { "ar": "عليّ أن أدرس", "en": "I must study — literally 'upon me that I study'", "highlight": "عليّ" },
+        { "ar": "في الصباح", "en": "in the morning — في for time expressions", "highlight": "في" },
+        { "ar": "كتبتُ بالقلم", "en": "I wrote with the pen — بـ = with/by means of", "highlight": "بـ" },
+        { "ar": "هذا لكَ", "en": "This is for you (m.) — لـ = for", "highlight": "لكَ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I must study' using a preposition?",
+          "options": ["عليّ أن أدرس", "في أن أدرس", "من أن أدرس"],
+          "correctIndex": 0,
+          "explanation": "على + pronoun suffix expresses obligation. عليّ (upon me) + أن أدرس (to study) = 'I must study'. This is the most natural way to express 'must' in Arabic."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does عن mean in تكلّمنا عن الموضوع?",
+          "options": ["About", "From", "To"],
+          "correctIndex": 0,
+          "explanation": "عن (ʿan) means 'about' in this context: تكلّمنا عن الموضوع = 'we talked about the topic'. عن can also mean 'away from' in other contexts."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the prefix بـ express in كتبتُ بالقلم (I wrote with the pen)?",
+          "options": ["Means/instrument (with, by means of)", "Location (in)", "Direction (to)"],
+          "correctIndex": 0,
+          "explanation": "The prefix بـ (bi-) can mean 'with' in the sense of 'by means of' or 'using'. كتبتُ بالقلم = 'I wrote with (using) the pen'. بـ attaches directly to the following word."
+        }
+      ]
+    }
+  ]
+}

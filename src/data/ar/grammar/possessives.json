@@ -1,0 +1,116 @@
+{
+  "lessonId": "possessives",
+  "nameEn": "Possessives & Idaafa",
+  "nameAr": "الإضافة وضمائر الملكية",
+  "icon": "🔗",
+  "tier": "B1",
+  "prerequisites": [],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "idaafa-construction",
+      "title": "The Idaafa Construction — الإضَافَة",
+      "explanation": "The idaafa (الإضَافَة, literally 'addition') is one of the most important constructions in Arabic. It links two or more nouns to express possession, belonging, or association — similar to English 'of' phrases or possessive 's'. In an idaafa, the first noun (المُضَاف al-mudaaf) is the possessed item, and the second noun (المُضَاف إِلَيْهِ al-mudaaf ilayhi) is the possessor. Key rules: the first noun never takes the definite article الـ or tanween, and the second noun takes the genitive case (مَجْرُور). If the second noun has الـ, the entire phrase is definite. For example: كِتَابُ الطَّالِبِ (the student's book) — كِتَابُ has no الـ or tanween, and الطَّالِبِ is in the genitive. You can chain multiple nouns: بَابُ بَيْتِ الرَّجُلِ (the door of the man's house).",
+      "tip": "The first noun in an idaafa loses its tanween and its الـ. The last noun determines definiteness of the whole phrase. If the last noun has الـ or is a proper noun, the entire idaafa is definite.",
+      "examples": [
+        { "ar": "كِتَابُ المُعَلِّمِ", "en": "the teacher's book", "highlight": "كِتَابُ المُعَلِّمِ" },
+        { "ar": "بَابُ البَيْتِ", "en": "the door of the house", "highlight": "بَابُ البَيْتِ" },
+        { "ar": "مَدِينَةُ دِمَشْقَ", "en": "the city of Damascus", "highlight": "مَدِينَةُ دِمَشْقَ" },
+        { "ar": "لُغَةُ العَرَبِ", "en": "the language of the Arabs", "highlight": "لُغَةُ العَرَبِ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the idaafa كِتَابُ الطَّالِبِ, why does كِتَابُ not have الـ?",
+          "options": ["The first noun in an idaafa never takes الـ", "It is indefinite", "It is a grammatical error to use الـ here"],
+          "correctIndex": 0,
+          "explanation": "A fundamental rule of the idaafa: the first noun (المُضَاف) never takes the definite article الـ or tanween. Its definiteness is determined by the second noun. Since الطَّالِبِ is definite, the whole phrase is definite — 'the student's book.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What case does the second noun in an idaafa take?",
+          "options": ["Genitive (مَجْرُور)", "Nominative (مَرْفُوع)", "Accusative (مَنْصُوب)"],
+          "correctIndex": 0,
+          "explanation": "The second noun (المُضَاف إِلَيْهِ) always takes the genitive case. In كِتَابُ الطَّالِبِ, the kasra on الطَّالِبِ indicates the genitive case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which phrase correctly forms an idaafa meaning 'the school's door'?",
+          "options": ["بَابُ المَدْرَسَةِ", "البَابُ المَدْرَسَةِ", "بَابٌ المَدْرَسَةِ"],
+          "correctIndex": 0,
+          "explanation": "بَابُ المَدْرَسَةِ is correct. The first noun بَابُ has no الـ and no tanween (only a damma for nominative case). البَابُ المَدْرَسَةِ is wrong because the first noun cannot have الـ. بَابٌ المَدْرَسَةِ is wrong because the first noun cannot have tanween."
+        }
+      ]
+    },
+    {
+      "sectionId": "possessive-pronouns",
+      "title": "Possessive Pronoun Suffixes — ضَمَائِر المِلْكِيَّة",
+      "explanation": "Arabic expresses 'my, your, his, her' etc. by attaching pronoun suffixes directly to the noun. These suffixes are: ـِي (-ii, my), ـكَ (-ka, your masc.), ـكِ (-ki, your fem.), ـهُ (-hu, his), ـهَا (-haa, her), ـنَا (-naa, our), ـكُمْ (-kum, your pl. masc.), ـكُنَّ (-kunna, your pl. fem.), ـهُمْ (-hum, their masc.), ـهُنَّ (-hunna, their fem.). When a suffix is attached, the noun is treated as definite (no tanween, no الـ). If the noun ends in taa marbuuta (ة), it opens to a regular taa (ت) before the suffix: مَدْرَسَة → مَدْرَسَتِي (my school). These suffixes also attach to prepositions: لِي (for me), مَعَهُ (with him), عِنْدَنَا (at our place / we have).",
+      "tip": "Possessive suffixes make the noun definite automatically. If the noun ends in ة, it opens to ت before the suffix. These same suffixes attach to verbs (as object pronouns) and to prepositions.",
+      "examples": [
+        { "ar": "كِتَابِي", "en": "my book", "highlight": "ـِي" },
+        { "ar": "بَيْتُهُ", "en": "his house", "highlight": "ـهُ" },
+        { "ar": "مَدْرَسَتُنَا", "en": "our school", "highlight": "ـنَا" },
+        { "ar": "سَيَّارَتُهَا", "en": "her car", "highlight": "ـهَا" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'my book' in Arabic?",
+          "options": ["كِتَابِي", "كِتَابُكَ", "كِتَابُهُ"],
+          "correctIndex": 0,
+          "explanation": "The suffix ـِي (-ii) means 'my'. Attached to كِتَاب, it becomes كِتَابِي (my book). كِتَابُكَ means 'your (masc.) book' and كِتَابُهُ means 'his book.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What happens to the taa marbuuta (ة) when a possessive suffix is added?",
+          "options": ["It opens to a regular taa (ت)", "It is dropped", "It stays as ة"],
+          "correctIndex": 0,
+          "explanation": "When a possessive suffix is attached to a noun ending in ة, the taa marbuuta opens to a regular ت. So مَدْرَسَة + ـنَا = مَدْرَسَتُنَا (our school), not مَدْرَسَةنَا."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "A noun with a possessive suffix is treated as:",
+          "options": ["Definite", "Indefinite", "It depends on the context"],
+          "correctIndex": 0,
+          "explanation": "A noun with any possessive suffix is automatically definite — it refers to a specific item belonging to a specific person. Therefore it cannot take الـ or tanween. كِتَابِي = my book (definite, a specific book)."
+        }
+      ]
+    },
+    {
+      "sectionId": "idaafa-adjectives",
+      "title": "Adjectives with Idaafa",
+      "explanation": "A common challenge is placing adjectives within an idaafa construction. The rule is that adjectives cannot come between the two nouns of an idaafa — they must come after the entire construction. If the adjective describes the first noun (المُضَاف), it comes after the whole idaafa and agrees with that noun in gender, number, case, and definiteness. If it describes the second noun (المُضَاف إِلَيْهِ), it also comes after but agrees with the second noun. For example: سَيَّارَةُ الرَّجُلِ الجَدِيدَةُ (the man's new car) — الجَدِيدَةُ is feminine to agree with سَيَّارَة. Compare: سَيَّارَةُ الرَّجُلِ الطَّوِيلِ (the tall man's car) — الطَّوِيلِ is masculine genitive to agree with الرَّجُلِ. Context and agreement help the listener determine which noun the adjective modifies.",
+      "tip": "Adjectives always come after the complete idaafa. Check their gender, number, and case to figure out which noun they describe. This can be ambiguous in some cases, so context is your friend.",
+      "examples": [
+        { "ar": "كِتَابُ الطَّالِبِ الجَدِيدُ", "en": "the student's new book (adj. agrees with كِتَاب, masc. nom.)", "highlight": "الجَدِيدُ" },
+        { "ar": "كِتَابُ الطَّالِبِ الجَدِيدِ", "en": "the new student's book (adj. agrees with الطَّالِب, masc. gen.)", "highlight": "الجَدِيدِ" },
+        { "ar": "سَيَّارَةُ الرَّجُلِ الحَمْرَاءُ", "en": "the man's red car (adj. agrees with سَيَّارَة, fem. nom.)", "highlight": "الحَمْرَاءُ" },
+        { "ar": "مُدِيرُ الشَّرِكَةِ الكَبِيرَةِ", "en": "the manager of the big company (adj. agrees with الشَّرِكَة, fem. gen.)", "highlight": "الكَبِيرَةِ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Where does an adjective go in an idaafa construction?",
+          "options": ["After the entire idaafa", "Between the two nouns", "Before the first noun"],
+          "correctIndex": 0,
+          "explanation": "Adjectives must come after the complete idaafa construction. You cannot insert an adjective between the المُضَاف and المُضَاف إِلَيْهِ — doing so would break the idaafa chain."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In كِتَابُ الطَّالِبِ الجَدِيدُ, which noun does الجَدِيدُ describe?",
+          "options": ["كِتَاب (the book), because الجَدِيدُ is masculine nominative", "الطَّالِب (the student)", "Both nouns equally"],
+          "correctIndex": 0,
+          "explanation": "الجَدِيدُ is in the nominative case (damma) and masculine — this matches كِتَابُ (masculine, nominative as subject). If it described الطَّالِبِ, it would need to be in the genitive: الجَدِيدِ (with kasra)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you say 'the manager of the big company'?",
+          "options": ["مُدِيرُ الشَّرِكَةِ الكَبِيرَةِ", "مُدِيرُ الكَبِيرَةِ الشَّرِكَةِ", "الكَبِيرُ مُدِيرُ الشَّرِكَةِ"],
+          "correctIndex": 0,
+          "explanation": "The adjective الكَبِيرَةِ comes after the full idaafa مُدِيرُ الشَّرِكَةِ. It is feminine genitive to agree with الشَّرِكَةِ (feminine, genitive), showing it describes the company, not the manager."
+        }
+      ]
+    }
+  ]
+}

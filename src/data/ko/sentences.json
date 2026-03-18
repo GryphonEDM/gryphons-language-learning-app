@@ -1,0 +1,184 @@
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink water.",
+      "ko": "저는 물을 마셔요.",
+      "words": ["저는", "물을", "마셔요"],
+      "distractors": ["먹어요", "커피를", "밥을"],
+      "validOrders": [["저는", "물을", "마셔요"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "This is a book.",
+      "ko": "이것은 책이에요.",
+      "words": ["이것은", "책이에요"],
+      "distractors": ["그것은", "가방이에요", "집이에요"],
+      "validOrders": [["이것은", "책이에요"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "Hello, nice to meet you.",
+      "ko": "안녕하세요, 반갑습니다.",
+      "words": ["안녕하세요", "반갑습니다"],
+      "distractors": ["감사합니다", "죄송합니다", "안녕"],
+      "validOrders": [["안녕하세요", "반갑습니다"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "I am a student.",
+      "ko": "저는 학생이에요.",
+      "words": ["저는", "학생이에요"],
+      "distractors": ["선생님이에요", "의사예요", "그는"],
+      "validOrders": [["저는", "학생이에요"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "I go to school.",
+      "ko": "저는 학교에 가요.",
+      "words": ["저는", "학교에", "가요"],
+      "distractors": ["집에", "와요", "회사에"],
+      "validOrders": [["저는", "학교에", "가요"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "The house is big.",
+      "ko": "집이 커요.",
+      "words": ["집이", "커요"],
+      "distractors": ["작아요", "학교가", "좋아요"],
+      "validOrders": [["집이", "커요"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "I like Korean food.",
+      "ko": "저는 한국 음식을 좋아해요.",
+      "words": ["저는", "한국", "음식을", "좋아해요"],
+      "distractors": ["일본", "싫어해요", "음악을"],
+      "validOrders": [["저는", "한국", "음식을", "좋아해요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s8",
+      "en": "Where is the bathroom?",
+      "ko": "화장실이 어디에 있어요?",
+      "words": ["화장실이", "어디에", "있어요"],
+      "distractors": ["식당이", "언제", "없어요"],
+      "validOrders": [["화장실이", "어디에", "있어요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s9",
+      "en": "I read a book every day.",
+      "ko": "저는 매일 책을 읽어요.",
+      "words": ["저는", "매일", "책을", "읽어요"],
+      "distractors": ["가끔", "신문을", "써요"],
+      "validOrders": [["저는", "매일", "책을", "읽어요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s10",
+      "en": "My friend is a teacher.",
+      "ko": "제 친구는 선생님이에요.",
+      "words": ["제", "친구는", "선생님이에요"],
+      "distractors": ["그", "동생은", "학생이에요"],
+      "validOrders": [["제", "친구는", "선생님이에요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s11",
+      "en": "I want to eat kimchi.",
+      "ko": "저는 김치를 먹고 싶어요.",
+      "words": ["저는", "김치를", "먹고", "싶어요"],
+      "distractors": ["밥을", "마시고", "보고"],
+      "validOrders": [["저는", "김치를", "먹고", "싶어요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s12",
+      "en": "Today the weather is good.",
+      "ko": "오늘 날씨가 좋아요.",
+      "words": ["오늘", "날씨가", "좋아요"],
+      "distractors": ["내일", "음식이", "나빠요"],
+      "validOrders": [["오늘", "날씨가", "좋아요"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s13",
+      "en": "I studied Korean at the library yesterday.",
+      "ko": "저는 어제 도서관에서 한국어를 공부했어요.",
+      "words": ["저는", "어제", "도서관에서", "한국어를", "공부했어요"],
+      "distractors": ["오늘", "학교에서", "영어를", "읽었어요"],
+      "validOrders": [["저는", "어제", "도서관에서", "한국어를", "공부했어요"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s14",
+      "en": "Can you speak a little slower, please?",
+      "ko": "조금 더 천천히 말해 주세요.",
+      "words": ["조금", "더", "천천히", "말해", "주세요"],
+      "distractors": ["많이", "빨리", "들어", "하세요"],
+      "validOrders": [["조금", "더", "천천히", "말해", "주세요"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s15",
+      "en": "Korea has four distinct seasons.",
+      "ko": "한국은 사계절이 뚜렷해요.",
+      "words": ["한국은", "사계절이", "뚜렷해요"],
+      "distractors": ["일본은", "날씨가", "좋아요"],
+      "validOrders": [["한국은", "사계절이", "뚜렷해요"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s16",
+      "en": "I have been learning Korean for two years.",
+      "ko": "저는 한국어를 2년 동안 배우고 있어요.",
+      "words": ["저는", "한국어를", "2년", "동안", "배우고", "있어요"],
+      "distractors": ["영어를", "3년", "부터", "공부하고", "했어요"],
+      "validOrders": [["저는", "한국어를", "2년", "동안", "배우고", "있어요"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s17",
+      "en": "If you go to Seoul, you should visit Gyeongbokgung Palace.",
+      "ko": "서울에 가면 경복궁에 꼭 가 보세요.",
+      "words": ["서울에", "가면", "경복궁에", "꼭", "가", "보세요"],
+      "distractors": ["부산에", "오면", "남산에", "한번", "와"],
+      "validOrders": [["서울에", "가면", "경복궁에", "꼭", "가", "보세요"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s18",
+      "en": "The more you practice, the better your pronunciation gets.",
+      "ko": "연습하면 할수록 발음이 좋아져요.",
+      "words": ["연습하면", "할수록", "발음이", "좋아져요"],
+      "distractors": ["공부하면", "할때마다", "실력이", "나빠져요"],
+      "validOrders": [["연습하면", "할수록", "발음이", "좋아져요"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s19",
+      "en": "Korean culture has become popular worldwide thanks to K-pop.",
+      "ko": "케이팝 덕분에 한국 문화가 세계적으로 인기를 얻었어요.",
+      "words": ["케이팝", "덕분에", "한국", "문화가", "세계적으로", "인기를", "얻었어요"],
+      "distractors": ["드라마", "때문에", "일본", "음악이", "전국적으로", "관심을"],
+      "validOrders": [["케이팝", "덕분에", "한국", "문화가", "세계적으로", "인기를", "얻었어요"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s20",
+      "en": "Although it was difficult at first, I got used to using honorifics.",
+      "ko": "처음에는 어려웠지만 존댓말에 익숙해졌어요.",
+      "words": ["처음에는", "어려웠지만", "존댓말에", "익숙해졌어요"],
+      "distractors": ["나중에는", "쉬웠지만", "반말에", "적응했어요"],
+      "validOrders": [["처음에는", "어려웠지만", "존댓말에", "익숙해졌어요"]],
+      "difficulty": "B2"
+    }
+  ]
+}

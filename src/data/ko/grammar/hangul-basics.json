@@ -1,0 +1,116 @@
+{
+  "lessonId": "hangul-basics",
+  "nameEn": "Hangul Basics",
+  "nameKo": "한글 기초",
+  "icon": "🔤",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "consonants",
+      "title": "Basic Consonants",
+      "explanation": "Hangul, the Korean alphabet, was invented in 1443 by King Sejong the Great. It has 14 basic consonants: ㄱ (g/k), ㄴ (n), ㄷ (d/t), ㄹ (r/l), ㅁ (m), ㅂ (b/p), ㅅ (s), ㅇ (silent or ng), ㅈ (j), ㅊ (ch), ㅋ (k), ㅌ (t), ㅍ (p), ㅎ (h). The consonants were designed to mimic the shape of the mouth and tongue when producing each sound. For example, ㄱ represents the tongue touching the back of the mouth for a 'g' sound. Many consonants come in sets of three: a plain version (ㄱ), an aspirated version with a puff of air (ㅋ), and a tense version (ㄲ). The five tense consonants (쌍자음) are ㄲ, ㄸ, ㅃ, ㅆ, ㅉ — they are written by doubling the plain consonant and pronounced with a stiff, tight throat.",
+      "tip": "Start by learning the plain consonants ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ first. Then add the aspirated set ㅊ, ㅋ, ㅌ, ㅍ, ㅎ. Think of aspirated consonants as their plain counterparts with an extra puff of air.",
+      "examples": [
+        { "ko": "가", "en": "ga — ㄱ (g) + ㅏ (a)", "highlight": "ㄱ" },
+        { "ko": "나", "en": "na — ㄴ (n) + ㅏ (a)", "highlight": "ㄴ" },
+        { "ko": "카", "en": "ka — ㅋ (aspirated k) + ㅏ (a), stronger puff of air than ㄱ", "highlight": "ㅋ" },
+        { "ko": "까", "en": "kka — ㄲ (tense k) + ㅏ (a), tight throat, no air puff", "highlight": "ㄲ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many basic consonants does Hangul have?",
+          "options": ["14", "10", "21"],
+          "correctIndex": 0,
+          "explanation": "Hangul has 14 basic consonants (ㄱ through ㅎ). There are also 5 additional tense (doubled) consonants, bringing the total to 19."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the aspirated counterpart of ㄱ (g/k)?",
+          "options": ["ㅋ", "ㄲ", "ㅎ"],
+          "correctIndex": 0,
+          "explanation": "ㅋ is the aspirated version of ㄱ. It is pronounced with a strong puff of air. ㄲ is the tense (doubled) version, which is pronounced with a tight throat and no air puff."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What role does ㅇ play at the beginning of a syllable?",
+          "options": ["It is silent (a placeholder)", "It makes an 'ng' sound", "It makes an 'o' sound"],
+          "correctIndex": 0,
+          "explanation": "At the beginning of a syllable, ㅇ is silent — it acts as a placeholder because every Korean syllable block must start with a consonant. At the end of a syllable (as a final consonant), ㅇ makes the 'ng' sound, as in 강 (gang, river)."
+        }
+      ]
+    },
+    {
+      "sectionId": "vowels",
+      "title": "Basic Vowels",
+      "explanation": "Hangul has 10 basic vowels: ㅏ (a), ㅑ (ya), ㅓ (eo), ㅕ (yeo), ㅗ (o), ㅛ (yo), ㅜ (u), ㅠ (yu), ㅡ (eu), ㅣ (i). These are organized in pairs — each plain vowel has a 'y-' version created by adding a short stroke: ㅏ→ㅑ, ㅓ→ㅕ, ㅗ→ㅛ, ㅜ→ㅠ. The vowels ㅡ (eu) and ㅣ (i) do not have 'y-' counterparts. There are also 11 compound vowels formed by combining basic vowels: ㅐ (ae), ㅒ (yae), ㅔ (e), ㅖ (ye), ㅘ (wa), ㅙ (wae), ㅚ (oe), ㅝ (wo), ㅞ (we), ㅟ (wi), ㅢ (ui). In modern Korean, ㅐ and ㅔ are pronounced nearly identically as a short 'e' sound. Vertical vowels (ㅏ, ㅑ, ㅓ, ㅕ, ㅣ) are written to the right of the consonant. Horizontal vowels (ㅗ, ㅛ, ㅜ, ㅠ, ㅡ) are written below the consonant.",
+      "tip": "Remember ㅓ (eo) is NOT the English 'o' — it sounds like the 'u' in 'cup' or 'uh'. The vowel ㅡ (eu) has no English equivalent — keep your lips unrounded and flat while saying 'oo'. Practice these two first since they trip up most beginners.",
+      "examples": [
+        { "ko": "아", "en": "a — ㅇ (silent) + ㅏ, sounds like 'ah'", "highlight": "ㅏ" },
+        { "ko": "어", "en": "eo — ㅇ (silent) + ㅓ, sounds like 'uh'", "highlight": "ㅓ" },
+        { "ko": "오", "en": "o — ㅇ (silent) + ㅗ, sounds like 'oh'", "highlight": "ㅗ" },
+        { "ko": "우", "en": "u — ㅇ (silent) + ㅜ, sounds like 'oo'", "highlight": "ㅜ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many basic vowels does Hangul have?",
+          "options": ["10", "14", "21"],
+          "correctIndex": 0,
+          "explanation": "Hangul has 10 basic vowels (ㅏ, ㅑ, ㅓ, ㅕ, ㅗ, ㅛ, ㅜ, ㅠ, ㅡ, ㅣ). Combined with 11 compound vowels, there are 21 vowel letters in total."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which vowel sounds like the 'u' in English 'cup'?",
+          "options": ["ㅓ (eo)", "ㅜ (u)", "ㅗ (o)"],
+          "correctIndex": 0,
+          "explanation": "ㅓ (romanized 'eo') sounds like the 'u' in 'cup' or 'uh'. It is NOT an 'o' sound. ㅜ sounds like 'oo' in 'food', and ㅗ sounds like 'oh' in 'go'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Where is a vertical vowel like ㅏ written relative to its consonant in a syllable block?",
+          "options": ["To the right", "Below", "Above"],
+          "correctIndex": 0,
+          "explanation": "Vertical vowels (ㅏ, ㅑ, ㅓ, ㅕ, ㅣ) are written to the right of the initial consonant, as in 가, 나, 다. Horizontal vowels (ㅗ, ㅛ, ㅜ, ㅠ, ㅡ) are written below the initial consonant, as in 고, 누, 두."
+        }
+      ]
+    },
+    {
+      "sectionId": "syllable-blocks",
+      "title": "Syllable Block Structure",
+      "explanation": "Korean is not written as a linear string of letters like English. Instead, letters are grouped into square syllable blocks, each representing one syllable. Every block must begin with a consonant (use ㅇ as a silent placeholder if the syllable starts with a vowel sound). There are two main structures: CV (consonant + vowel) like 가 (ga) and 나 (na), and CVC (consonant + vowel + consonant) like 한 (han) and 글 (geul). The final consonant in a CVC block is called 받침 (batchim). Some blocks can even have two final consonants (CVCC), such as 닭 (dak, chicken) where ㄹ and ㄱ sit together as the batchim — though only one is typically pronounced. The shape of the block changes depending on the vowel type: with vertical vowels, the consonant sits to the left (가); with horizontal vowels, the consonant sits on top (고). In CVC blocks, the batchim always goes at the bottom.",
+      "tip": "Think of each syllable block as a little building: the initial consonant is the roof or left wall, the vowel is the body, and the 받침 (batchim/final consonant) is the floor. Every block MUST start with a consonant — if the syllable begins with a vowel sound, place ㅇ as a silent initial.",
+      "examples": [
+        { "ko": "가", "en": "ga — CV block: ㄱ (left) + ㅏ (right)", "highlight": "가" },
+        { "ko": "고", "en": "go — CV block: ㄱ (top) + ㅗ (bottom)", "highlight": "고" },
+        { "ko": "한", "en": "han — CVC block: ㅎ + ㅏ + ㄴ (batchim)", "highlight": "한" },
+        { "ko": "글", "en": "geul — CVC block: ㄱ + ㅡ + ㄹ (batchim)", "highlight": "글" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the 받침 (batchim) in the syllable 한?",
+          "options": ["ㄴ", "ㅎ", "ㅏ"],
+          "correctIndex": 0,
+          "explanation": "In the syllable block 한, ㅎ is the initial consonant, ㅏ is the vowel, and ㄴ is the 받침 (final consonant) at the bottom. The 받침 always occupies the bottom position of a syllable block."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does the syllable 아 start with ㅇ even though it sounds like just 'a'?",
+          "options": ["Every syllable block must begin with a consonant; ㅇ is a silent placeholder", "ㅇ adds a nasal quality to the vowel", "It is optional and can be omitted"],
+          "correctIndex": 0,
+          "explanation": "In Hangul, every syllable block must have an initial consonant. When a syllable starts with a vowel sound, the silent consonant ㅇ is used as a placeholder. This rule has no exceptions — you will never see a bare vowel starting a block."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the syllable block for '구' (gu) structured?",
+          "options": ["ㄱ on top, ㅜ below — because ㅜ is a horizontal vowel", "ㄱ on the left, ㅜ on the right", "ㅜ on top, ㄱ below"],
+          "correctIndex": 0,
+          "explanation": "Since ㅜ is a horizontal vowel, the initial consonant ㄱ sits on top and the vowel ㅜ goes below it. Vertical vowels go to the right (가), but horizontal vowels go below (구, 고, 누)."
+        }
+      ]
+    }
+  ]
+}

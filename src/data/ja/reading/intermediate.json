@@ -1,0 +1,121 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "日本のお祭り",
+      "titleEn": "Japanese Festivals",
+      "difficulty": "A2",
+      "text": "日本にはたくさんのお祭りがあります。夏になると、各地で花火大会が開かれます。人々は浴衣を着て、屋台で焼きそばやたこ焼きを買います。お盆は八月にある大切な行事で、亡くなった人の魂が戻ってくると信じられています。家族が集まって先祖を敬います。秋には収穫を祝うお祭りもあります。神社では太鼓の音が響き、みこしを担いで町を歩きます。お祭りは日本の文化の中で大事な役割を果たしています。",
+      "wordGlossary": {
+        "お祭り": "festival",
+        "花火大会": "fireworks display",
+        "浴衣": "summer kimono (yukata)",
+        "屋台": "food stall",
+        "お盆": "Obon (festival of the dead)",
+        "行事": "event/ceremony",
+        "魂": "soul/spirit",
+        "先祖": "ancestors",
+        "収穫": "harvest",
+        "太鼓": "drum"
+      },
+      "questions": [
+        {
+          "question": "お盆はいつですか？",
+          "options": ["七月です。", "八月です。", "九月です。", "十月です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、お盆は八月にある大切な行事だと書いてあります。"
+        },
+        {
+          "question": "夏のお祭りで人々は何を着ますか？",
+          "options": ["スーツを着ます。", "浴衣を着ます。", "制服を着ます。", "コートを着ます。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、人々は浴衣を着ると書いてあります。"
+        },
+        {
+          "question": "秋のお祭りは何を祝いますか？",
+          "options": ["誕生日を祝います。", "収穫を祝います。", "卒業を祝います。", "結婚を祝います。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、秋には収穫を祝うお祭りがあると書いてあります。"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "東京の交通",
+      "titleEn": "Tokyo Transportation",
+      "difficulty": "B1",
+      "text": "東京の交通システムは世界で最も発達した交通網の一つです。電車と地下鉄は非常に正確で、一分の遅れでも謝罪のアナウンスが流れます。朝と夕方のラッシュアワーには、駅員が乗客を電車に押し込む光景も見られます。ICカードを使えば、電車やバスだけでなく、コンビニでの買い物にも使えます。タクシーは快適ですが、料金が高いです。最近では自転車シェアリングも人気が出ています。東京の交通は複雑ですが、路線図を見ればどこにでも行けます。",
+      "wordGlossary": {
+        "交通": "transportation",
+        "発達した": "developed/advanced",
+        "正確": "accurate/punctual",
+        "遅れ": "delay",
+        "謝罪": "apology",
+        "ラッシュアワー": "rush hour",
+        "乗客": "passenger",
+        "快適": "comfortable",
+        "料金": "fare/fee",
+        "路線図": "route map"
+      },
+      "questions": [
+        {
+          "question": "電車が遅れるとどうなりますか？",
+          "options": ["何も起きません。", "謝罪のアナウンスが流れます。", "運転が止まります。", "料金が安くなります。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、一分の遅れでも謝罪のアナウンスが流れると書いてあります。"
+        },
+        {
+          "question": "ICカードで何ができますか？",
+          "options": ["電車だけ乗れます。", "電車やバスやコンビニで使えます。", "タクシーだけ乗れます。", "飛行機に乗れます。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、ICカードは電車やバスだけでなくコンビニでも使えると書いてあります。"
+        },
+        {
+          "question": "タクシーについて正しいのはどれですか？",
+          "options": ["安いです。", "快適ですが料金が高いです。", "遅いです。", "人気がありません。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、タクシーは快適だが料金が高いと書いてあります。"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "日本料理",
+      "titleEn": "Japanese Cuisine",
+      "difficulty": "B1",
+      "text": "日本料理は、その美しさと健康的な食材で世界中に知られています。和食の基本は一汁三菜で、ご飯、味噌汁、そして三つのおかずで構成されます。寿司や天ぷらは海外でも人気がありますが、日本の家庭料理はもっと素朴です。肉じゃがや焼き魚、煮物などが日常的に食べられています。日本では食事の前に'いただきます'、後に'ごちそうさま'と言います。季節ごとに旬の食材を使うのも日本料理の特徴です。春は竹の子、夏はスイカ、秋はサンマ、冬は鍋料理が楽しまれます。",
+      "wordGlossary": {
+        "料理": "cooking/cuisine",
+        "健康的": "healthy",
+        "食材": "ingredients",
+        "一汁三菜": "one soup, three dishes (traditional meal structure)",
+        "味噌汁": "miso soup",
+        "家庭料理": "home cooking",
+        "素朴": "simple/plain",
+        "日常的": "daily/everyday",
+        "旬": "in season",
+        "特徴": "characteristic/feature"
+      },
+      "questions": [
+        {
+          "question": "和食の基本は何ですか？",
+          "options": ["寿司と天ぷらです。", "一汁三菜です。", "ラーメンです。", "焼肉です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、和食の基本は一汁三菜だと書いてあります。"
+        },
+        {
+          "question": "秋の旬の食べ物は何ですか？",
+          "options": ["竹の子です。", "サンマです。", "スイカです。", "鍋料理です。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、秋はサンマだと書いてあります。"
+        },
+        {
+          "question": "日本の家庭料理はどうですか？",
+          "options": ["とても複雑です。", "もっと素朴です。", "とても高いです。", "外国料理と同じです。"],
+          "correctIndex": 1,
+          "explanation": "文の中で、日本の家庭料理はもっと素朴だと書いてあります。"
+        }
+      ]
+    }
+  ]
+}

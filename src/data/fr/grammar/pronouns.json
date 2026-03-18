@@ -1,0 +1,139 @@
+{
+  "lessonId": "pronouns",
+  "nameEn": "Pronouns",
+  "nameFr": "Les pronoms",
+  "icon": "👤",
+  "tier": "A1",
+  "prerequisites": ["adjectives"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "subject-pronouns",
+      "title": "Subject Pronouns",
+      "explanation": "French subject pronouns are required before every verb — you cannot drop them the way Spanish or Italian speakers do. The pronouns are: je (I), tu (you, singular informal), il (he / it for masculine nouns), elle (she / it for feminine nouns), on (one / we — extremely common in spoken French as an informal substitute for nous), nous (we — more formal or written), vous (you plural, or you formal singular), ils (they — masculine or mixed group), elles (they — all-feminine group). One important spelling rule: je shortens to j' before a vowel or silent h — j'aime (I like), j'habite (I live). In spoken everyday French, on is used far more than nous: 'On mange ensemble?' means 'Shall we eat together?'",
+      "tip": "Never drop the subject pronoun in French. Even when the verb form already tells you who is acting, the pronoun must appear: il parle (not just 'parle'). And remember: on + third-person singular verb = informal 'we' — 'On y va!' means 'Let's go!'",
+      "examples": [
+        { "fr": "J'aime le café.", "en": "I like coffee.", "highlight": "J'" },
+        { "fr": "Il parle français très bien.", "en": "He speaks French very well.", "highlight": "Il" },
+        { "fr": "Elle habite à Paris.", "en": "She lives in Paris.", "highlight": "Elle" },
+        { "fr": "On va au café ce soir?", "en": "Shall we go to the café tonight?", "highlight": "On" },
+        { "fr": "Nous parlons avec les enfants.", "en": "We are talking with the children.", "highlight": "Nous" },
+        { "fr": "Ils travaillent et elles étudient.", "en": "They (masc.) work and they (fem.) study.", "highlight": "Ils / elles" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun means 'she' in French?",
+          "options": ["il", "elle", "elles"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Je becomes ___ before a vowel or silent h.",
+          "options": ["je", "j'", "ji"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pronoun would you use for a mixed group of men and women?",
+          "options": ["elles", "on", "ils"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In spoken French, which pronoun is commonly used instead of 'nous'?",
+          "options": ["vous", "on", "ils"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ habite à Lyon. (She lives in Lyon.)",
+          "options": ["Il", "Elle", "Elles"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ aime la musique. (I like music.) — starts with a vowel!",
+          "options": ["Je", "J'", "Il"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Is it correct to say just 'Parle français.' to mean 'He speaks French.'?",
+          "options": ["Yes, the verb is enough", "No, you must say 'Il parle français.'", "Only in informal speech"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ va au marché? (Shall we go to the market? — spoken French)",
+          "options": ["Nous", "On", "Vous"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "sectionId": "tu-vs-vous",
+      "title": "Tu vs Vous — Formal and Informal",
+      "explanation": "French has two words for 'you' in the singular, and choosing the wrong one is a social error. Tu is the informal 'you': use it with friends, family, children, classmates, peers, and animals. Vous is the formal 'you': use it with strangers, older people, professors, doctors, and in professional settings. Vous is also the plural 'you' — when addressing more than one person, always use vous regardless of how well you know them. The verb tutoyer means 'to use tu with someone' and vouvoyer means 'to use vous with someone.' In French social life, people sometimes explicitly say 'On peut se tutoyer' (We can use tu with each other) as a sign of growing familiarity. Among younger generations and online, tu is increasingly the default.",
+      "tip": "When in doubt, start with vous — it is never offensive to be too polite. Wait for the other person to invite tu. A useful phrase: 'On peut se tutoyer?' (Can we use tu with each other?). Remember: using tu with an older stranger can be perceived as rude, but using vous with a close friend can seem oddly cold.",
+      "examples": [
+        { "fr": "Tu viens ce soir?", "en": "Are you coming tonight? (to a friend)", "highlight": "Tu" },
+        { "fr": "Vous parlez français, monsieur?", "en": "Do you speak French, sir? (formal)", "highlight": "Vous" },
+        { "fr": "Est-ce que vous êtes prêts? (à deux amis)", "en": "Are you (two) ready? (to two friends)", "highlight": "Vous" },
+        { "fr": "Comment tu t'appelles?", "en": "What's your name? (informal, to a child or peer)", "highlight": "tu" },
+        { "fr": "On peut se tutoyer, professeur?", "en": "Can we use tu with each other, professor?", "highlight": "se tutoyer" },
+        { "fr": "Vous avez une table pour deux, s'il vous plaît?", "en": "Do you have a table for two, please? (to restaurant staff)", "highlight": "Vous" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "You meet a professor for the first time. Which pronoun do you use?",
+          "options": ["tu", "vous", "on"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are talking to your best friend. Which pronoun do you use?",
+          "options": ["vous", "il", "tu"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are addressing a group of three colleagues. Which pronoun do you use?",
+          "options": ["tu", "vous", "ils"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'tutoyer' mean?",
+          "options": ["to use 'vous' with someone", "to use 'tu' with someone", "to speak formally"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ êtes très aimable, madame. (You are very kind, ma'am.)",
+          "options": ["Tu", "Vous", "Il"],
+          "correctIndex": 1
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Comment ___ vas? (How are you? — to a friend)",
+          "options": ["vous", "on", "tu"],
+          "correctIndex": 2
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Using 'tu' with a stranger in a formal context is considered...",
+          "options": ["perfectly normal", "potentially rude", "overly formal"],
+          "correctIndex": 1
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which phrase would you use to invite someone to use 'tu' with you?",
+          "options": ["On peut se vouvoyer?", "On peut se tutoyer?", "Vous pouvez me dire tu?"],
+          "correctIndex": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "lessonId": "future-tense",
+  "nameEn": "Future Tense",
+  "nameAr": "المستقبل: سَوْفَ و سَـ",
+  "icon": "🔮",
+  "tier": "B2",
+  "prerequisites": [],
+  "estimatedMinutes": 16,
+  "sections": [
+    {
+      "sectionId": "sawfa-and-sa",
+      "title": "سَوْفَ and سَـ — Forming the Future",
+      "explanation": "Arabic does not have a separate future tense conjugation. Instead, the future is formed by placing either سَوْفَ (sawfa) or the prefix سَـ (sa-) before the present tense verb (المُضَارِع). Both mean 'will' or 'shall', but سَوْفَ suggests a more distant or emphatic future, while سَـ is used for the near future or simple future statements. The verb after both remains in the indicative mood (مَرْفُوع). For example: سَأَذْهَبُ (I will go, near future) vs. سَوْفَ أَذْهَبُ (I will go, emphatic/distant). In modern usage, the distinction is often blurred, and both are largely interchangeable in everyday MSA. Note that سَـ is written attached to the verb with no space, while سَوْفَ is a separate word.",
+      "tip": "سَـ is attached directly to the verb (no space): سَأَكْتُبُ. سَوْفَ is a separate word: سَوْفَ أَكْتُبُ. In everyday MSA, you can use either one. In exams, remember سَوْفَ implies a more distant or emphatic future.",
+      "examples": [
+        { "ar": "سَأَدْرُسُ العَرَبِيَّةَ", "en": "I will study Arabic. (near future with سَـ)", "highlight": "سَأَدْرُسُ" },
+        { "ar": "سَوْفَ نُسَافِرُ غَدًا", "en": "We will travel tomorrow.", "highlight": "سَوْفَ نُسَافِرُ" },
+        { "ar": "سَيَكْتُبُ الرِّسَالَةَ", "en": "He will write the letter.", "highlight": "سَيَكْتُبُ" },
+        { "ar": "سَوْفَ تَفْهَمُ لاحِقًا", "en": "You will understand later.", "highlight": "سَوْفَ تَفْهَمُ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How is the future tense formed in Arabic?",
+          "options": ["By adding سَوْفَ or سَـ before the present tense verb", "By changing the verb to a special future conjugation", "By adding a suffix to the past tense verb"],
+          "correctIndex": 0,
+          "explanation": "Arabic has no separate future conjugation. The future is formed by placing سَوْفَ (a separate word) or سَـ (an attached prefix) before the present tense (المُضَارِع) verb. The verb itself stays in the indicative mood."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between سَـ and سَوْفَ?",
+          "options": ["سَـ suggests near future, سَوْفَ suggests more distant or emphatic future", "سَـ is for questions, سَوْفَ is for statements", "There is no difference at all"],
+          "correctIndex": 0,
+          "explanation": "Traditionally, سَـ indicates the near future and سَوْفَ indicates a more distant or emphatic future. In modern MSA, the distinction is often blurred and both are used interchangeably, but this classical difference is still recognized."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct way to write 'I will write'?",
+          "options": ["سَأَكْتُبُ (سَـ attached to the verb)", "سَ أَكْتُبُ (سَـ as a separate word)", "سَوْفَأَكْتُبُ (سَوْفَ attached)"],
+          "correctIndex": 0,
+          "explanation": "سَـ is always written attached to the verb with no space: سَأَكْتُبُ. Conversely, سَوْفَ is always written as a separate word: سَوْفَ أَكْتُبُ."
+        }
+      ]
+    },
+    {
+      "sectionId": "negating-future",
+      "title": "Negating the Future — لَنْ",
+      "explanation": "The future tense is negated using لَنْ (lan), which means 'will not'. لَنْ is followed by the present tense verb in the subjunctive mood (مَنْصُوب). The subjunctive is formed by changing the final damma of the indicative to a fatha: يَكْتُبُ (indicative) → يَكْتُبَ (subjunctive after لَنْ). For the five special verb forms (الأَفْعَال الخَمْسَة), the subjunctive drops the نَ: يَكْتُبُونَ → لَنْ يَكْتُبُوا, تَكْتُبِينَ → لَنْ تَكْتُبِي. Note that you never combine لَنْ with سَوْفَ or سَـ — لَنْ already carries the future meaning. For emphatic future negation, لَنْ can be strengthened with context words like أَبَدًا (ever/never): لَنْ أَنْسَاكَ أَبَدًا (I will never forget you).",
+      "tip": "لَنْ + subjunctive = 'will not'. Never use سَـ or سَوْفَ with لَنْ. The subjunctive mainly shows as a fatha on the last letter instead of damma, or by dropping the نَ in the five special forms.",
+      "examples": [
+        { "ar": "لَنْ أَنْسَى هَذَا", "en": "I will not forget this.", "highlight": "لَنْ أَنْسَى" },
+        { "ar": "لَنْ يَذْهَبَ إِلَى الحَفْلَةِ", "en": "He will not go to the party.", "highlight": "لَنْ يَذْهَبَ" },
+        { "ar": "لَنْ نَسْتَسْلِمَ أَبَدًا", "en": "We will never surrender.", "highlight": "لَنْ نَسْتَسْلِمَ" },
+        { "ar": "لَنْ تَنْدَمِي", "en": "You (fem.) will not regret it.", "highlight": "لَنْ تَنْدَمِي" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle negates the future tense in Arabic?",
+          "options": ["لَنْ", "لا", "لَمْ"],
+          "correctIndex": 0,
+          "explanation": "لَنْ is the particle that negates the future. لا negates the present tense, and لَمْ negates the past tense (with the jussive mood). Each negation particle works with a different mood of the present tense verb."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What mood does the verb take after لَنْ?",
+          "options": ["Subjunctive (مَنْصُوب)", "Indicative (مَرْفُوع)", "Jussive (مَجْزُوم)"],
+          "correctIndex": 0,
+          "explanation": "لَنْ requires the subjunctive mood (مَنْصُوب). The main sign is a fatha on the final letter: يَكْتُبُ (indicative) → لَنْ يَكْتُبَ (subjunctive). For the five special forms, the نَ is dropped."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is correct for 'They (masc.) will not travel'?",
+          "options": ["لَنْ يُسَافِرُوا", "لَنْ يُسَافِرُونَ", "لَنْ سَوْفَ يُسَافِرُونَ"],
+          "correctIndex": 0,
+          "explanation": "After لَنْ, the verb is in the subjunctive. For يُسَافِرُونَ (they travel), the subjunctive drops the final نَ: لَنْ يُسَافِرُوا. You never combine لَنْ with سَوْفَ."
+        }
+      ]
+    },
+    {
+      "sectionId": "future-expressions",
+      "title": "Common Future Expressions",
+      "explanation": "Beyond سَوْفَ and سَـ, Arabic has several expressions for talking about future events and intentions. To express intention or planning, use the active participle of a motion verb or a state: أَنَا ذَاهِبٌ (I am going / about to go). For imminent future, use عَلَى وَشْكِ + verbal noun or أَنْ + subjunctive: هُوَ عَلَى وَشْكِ المُغَادَرَةِ (He is about to leave). To express 'going to' with a sense of determination, you can use the construction سَـ + verb combined with an oath or emphasis marker: وَاللهِ سَأَنْجَحُ (By God, I will succeed). For scheduled events, the present tense alone can suffice: يَصِلُ القِطَارُ السَّاعَةَ الثَّالِثَةَ (The train arrives at three o'clock). Mastering these various expressions will help you speak about the future with precision and naturalness.",
+      "tip": "Use عَلَى وَشْكِ for 'about to', the active participle for immediate intentions, and the plain present tense for scheduled events. These complement سَوْفَ/سَـ and give you a full range of future expression.",
+      "examples": [
+        { "ar": "أَنَا ذَاهِبٌ إِلَى السُّوقِ", "en": "I am going to the market. (imminent, using active participle)", "highlight": "ذَاهِبٌ" },
+        { "ar": "هُوَ عَلَى وَشْكِ المُغَادَرَةِ", "en": "He is about to leave.", "highlight": "عَلَى وَشْكِ" },
+        { "ar": "يَصِلُ الطَّائِرَةُ مَسَاءً", "en": "The plane arrives in the evening. (scheduled event)", "highlight": "يَصِلُ" },
+        { "ar": "سَنَبْدَأُ الاجْتِمَاعَ بَعْدَ قَلِيلٍ", "en": "We will start the meeting shortly.", "highlight": "سَنَبْدَأُ" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does عَلَى وَشْكِ express?",
+          "options": ["Being about to do something (imminent action)", "A distant future plan", "A past habitual action"],
+          "correctIndex": 0,
+          "explanation": "عَلَى وَشْكِ means 'on the verge of' or 'about to'. It expresses an imminent action. It is followed by a verbal noun (masdar) or أَنْ + subjunctive verb."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In أَنَا ذَاهِبٌ, what kind of word is ذَاهِبٌ?",
+          "options": ["An active participle (اسْم الفَاعِل)", "A past tense verb", "An adjective unrelated to verbs"],
+          "correctIndex": 0,
+          "explanation": "ذَاهِبٌ is the active participle of ذَهَبَ (to go). Active participles in Arabic can express an ongoing or imminent action, similar to the English present continuous when used with a pronoun: أَنَا ذَاهِبٌ (I am going)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Can the present tense verb be used for scheduled future events in Arabic?",
+          "options": ["Yes, the present tense can express scheduled future events", "No, سَوْفَ or سَـ is always required for future", "Only with the subjunctive mood"],
+          "correctIndex": 0,
+          "explanation": "Like English, Arabic can use the present tense for scheduled or timetabled events: يَصِلُ القِطَارُ السَّاعَةَ الثَّالِثَةَ (The train arrives at 3 o'clock). No future marker is needed when the event is scheduled."
+        }
+      ]
+    }
+  ]
+}

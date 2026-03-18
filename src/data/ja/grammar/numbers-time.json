@@ -1,0 +1,156 @@
+{
+  "lessonId": "numbers-time",
+  "nameEn": "Numbers & Time",
+  "nameJa": "数字と時間",
+  "icon": "🔢",
+  "tier": "A1",
+  "prerequisites": [],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "numbers-1-100",
+      "title": "Numbers 1–100+",
+      "explanation": "Japanese numbers 1–10 are: いち (1), に (2), さん (3), し/よん (4), ご (5), ろく (6), しち/なな (7), はち (8), きゅう/く (9), じゅう (10). Numbers 11–19 are formed by adding じゅう + the unit: じゅういち (11), じゅうに (12), etc. Multiples of ten: にじゅう (20), さんじゅう (30), よんじゅう (40), ごじゅう (50), ろくじゅう (60), ななじゅう (70), はちじゅう (80), きゅうじゅう (90). ひゃく is 100, せん is 1,000, まん is 10,000. Note sound changes: さんびゃく (300), ろっぴゃく (600), はっぴゃく (800), さんぜん (3,000), はっせん (8,000).",
+      "tip": "The number 4 has two readings: し (Sino-Japanese) and よん (native). よん is preferred in most contexts because し sounds like 死 (death). Similarly, 7 is often なな instead of しち, and 9 is きゅう instead of く (which sounds like 苦, suffering).",
+      "examples": [
+        { "ja": "りんごをごこください。", "en": "Please give me five apples.", "highlight": "ご" },
+        { "ja": "このクラスにはさんじゅうにんのがくせいがいます。", "en": "There are thirty students in this class.", "highlight": "さんじゅう" },
+        { "ja": "このほんはせんにひゃくえんです。", "en": "This book is 1,200 yen.", "highlight": "せんにひゃく" },
+        { "ja": "にほんのじんこうはいちおくにせんまんにんです。", "en": "Japan's population is 120 million people.", "highlight": "いちおくにせんまん" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the most common reading for the number 4?",
+          "options": ["し", "よん", "よ", "しい"],
+          "correctIndex": 1,
+          "explanation": "よん is the most commonly used reading for 4. し is avoided because it sounds like 死 (death)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "25 in Japanese is ___。",
+          "acceptedAnswers": ["にじゅうご"],
+          "hint": "20 (にじゅう) + 5 (ご)",
+          "explanation": "にじゅう (20) + ご (5) = にじゅうご (25)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct reading for 300?",
+          "options": ["さんひゃく", "さんびゃく", "さんぴゃく", "さぜんひゃく"],
+          "correctIndex": 1,
+          "explanation": "300 has a sound change: さん + ひゃく → さんびゃく. The ひ becomes び."
+        }
+      ]
+    },
+    {
+      "sectionId": "telling-time",
+      "title": "Telling Time (時・分)",
+      "explanation": "To tell time in Japanese, use the counter 時 (じ) for hours and 分 (ふん/ぷん) for minutes. 'いまなんじですか' (What time is it now?). Hours: いちじ (1:00), にじ (2:00), さんじ (3:00), よじ (4:00 — note: よじ, not よんじ), ごじ (5:00), ろくじ (6:00), しちじ (7:00), はちじ (8:00), くじ (9:00 — note: くじ, not きゅうじ), じゅうじ (10:00), じゅういちじ (11:00), じゅうにじ (12:00). Minutes use ふん, but some numbers cause sound changes: いっぷん (1 min), にふん (2), さんぷん (3), よんぷん (4), ごふん (5), ろっぷん (6), ななふん (7), はっぷん/はちふん (8), きゅうふん (9), じゅっぷん (10). AM/PM: ごぜん (AM), ごご (PM).",
+      "tip": "Watch out for irregular hour readings: 4:00 is よじ (not よんじ) and 9:00 is くじ (not きゅうじ). For minutes, remember: 1, 3, 4, 6, 8, 10 use ぷん/っぷん.",
+      "examples": [
+        { "ja": "いまごごさんじです。", "en": "It is 3:00 PM now.", "highlight": "ごごさんじ" },
+        { "ja": "かいぎはくじはんからです。", "en": "The meeting starts at 9:30.", "highlight": "くじはん" },
+        { "ja": "ごぜんしちじにおきます。", "en": "I wake up at 7:00 AM.", "highlight": "ごぜんしちじ" },
+        { "ja": "でんしゃはじゅうじじゅうごふんにきます。", "en": "The train comes at 10:15.", "highlight": "じゅうごふん" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct reading for 4 o'clock?",
+          "options": ["よんじ", "しじ", "よじ", "よっじ"],
+          "correctIndex": 2,
+          "explanation": "4 o'clock is よじ — an irregular reading. よんじ and しじ are not used."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "いまごぜん___です。(It is 9:30 AM now.)",
+          "acceptedAnswers": ["くじはん"],
+          "hint": "9:00 uses an irregular reading, and はん means 'half' (30 minutes).",
+          "explanation": "9 o'clock is くじ (not きゅうじ). Half past is はん. So 9:30 = くじはん."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say '6 minutes'?",
+          "options": ["ろくふん", "ろっぷん", "ろくぷん", "ろっふん"],
+          "correctIndex": 1,
+          "explanation": "6 minutes has a sound change: ろく + ふん → ろっぷん. The く doubles and ふ becomes ぷ."
+        }
+      ]
+    },
+    {
+      "sectionId": "dates-months-days",
+      "title": "Dates: Months (月) and Days (日)",
+      "explanation": "Months use the counter 月 (がつ): いちがつ (January), にがつ (February), さんがつ (March), しがつ (April — not よんがつ), ごがつ (May), ろくがつ (June), しちがつ (July), はちがつ (August), くがつ (September — not きゅうがつ), じゅうがつ (October), じゅういちがつ (November), じゅうにがつ (December). Days of the month use 日 (にち), but the first ten days plus the 14th, 20th, and 24th have special native-Japanese readings: ついたち (1st), ふつか (2nd), みっか (3rd), よっか (4th), いつか (5th), むいか (6th), なのか (7th), ようか (8th), ここのか (9th), とおか (10th), じゅうよっか (14th), はつか (20th), にじゅうよっか (24th). Other days use the Sino-Japanese number + にち: じゅういちにち (11th), etc.",
+      "tip": "The first 10 days of the month are the trickiest — they use native Japanese number readings (ひ・ふ・み・よ system) combined with か. After the 10th, most days are regular: number + にち. Memorize the irregular ones: 1st (ついたち), 14th (じゅうよっか), 20th (はつか), 24th (にじゅうよっか).",
+      "examples": [
+        { "ja": "たんじょうびはしがつみっかです。", "en": "My birthday is April 3rd.", "highlight": "しがつみっか" },
+        { "ja": "にほんにはさんがつついたちにいきます。", "en": "I will go to Japan on March 1st.", "highlight": "ついたち" },
+        { "ja": "なつやすみはしちがつはつかからです。", "en": "Summer vacation starts on July 20th.", "highlight": "はつか" },
+        { "ja": "きょうはくがつじゅうごにちです。", "en": "Today is September 15th.", "highlight": "じゅうごにち" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'April' in Japanese?",
+          "options": ["よんがつ", "しがつ", "よがつ", "しげつ"],
+          "correctIndex": 1,
+          "explanation": "April is しがつ, not よんがつ. The months use し for 4, しち for 7, and く for 9."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "きょうは___です。(Today is the 8th.)",
+          "acceptedAnswers": ["ようか"],
+          "hint": "The 8th uses a special native reading with か.",
+          "explanation": "The 8th is ようか — one of the special native-Japanese day readings."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which day of the month is 'はつか'?",
+          "options": ["the 2nd", "the 10th", "the 20th", "the 24th"],
+          "correctIndex": 2,
+          "explanation": "はつか is the 20th. It's one of the irregular day readings to memorize."
+        }
+      ]
+    },
+    {
+      "sectionId": "day-counters",
+      "title": "Counters for Days (Duration)",
+      "explanation": "To count the number of days (duration), Japanese uses the counter 日間 (にちかん) or simply 日 (にち/か). One day is いちにち (一日 — note: as a duration, not ついたち), two days is ふつか (二日), three days is みっか (三日), four days is よっか (四日), five days is いつか (五日), six days is むいか (六日), seven days is なのか (七日), eight days is ようか (八日), nine days is ここのか (九日), ten days is とおか (十日). For durations longer than ten, the regular number + にちかん is common: じゅういちにちかん (11 days), にじゅうにちかん (20 days), etc. To say 'for X days', simply place the counter after the verb or use the duration before the verb: 'みっかやすみました' (I rested for three days).",
+      "tip": "Day durations 2–10 use the same readings as the calendar dates (ふつか、みっか...). Only 'one day' differs: ついたち for the 1st of the month vs. いちにち for a duration of one day.",
+      "examples": [
+        { "ja": "にほんにいつかいました。", "en": "I was in Japan for five days.", "highlight": "いつか" },
+        { "ja": "かぜでみっかやすみました。", "en": "I rested for three days because of a cold.", "highlight": "みっか" },
+        { "ja": "このプロジェクトはとおかかかります。", "en": "This project will take ten days.", "highlight": "とおか" },
+        { "ja": "いちにちじゅうじかんべんきょうしました。", "en": "I studied for ten hours in one day.", "highlight": "いちにち" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'for one day' (duration)?",
+          "options": ["ついたち", "いちにち", "いちか", "ひとにち"],
+          "correctIndex": 1,
+          "explanation": "As a duration, one day is いちにち. ついたち means 'the 1st of the month' (a date, not a duration)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "りょこうは___でした。(The trip was seven days.)",
+          "acceptedAnswers": ["なのか", "なのかかん"],
+          "hint": "Seven days uses the same native reading as the 7th of the month.",
+          "explanation": "Seven days is なのか (or なのかかん). It matches the calendar reading for the 7th."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly says 'I waited for four days'?",
+          "options": [
+            "よんにちまちました。",
+            "よっかまちました。",
+            "しにちまちました。",
+            "しかまちました。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Four days uses the native reading: よっか. 'よっかまちました' means 'I waited for four days.'"
+        }
+      ]
+    }
+  ]
+}

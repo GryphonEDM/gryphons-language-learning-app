@@ -1,0 +1,115 @@
+{
+  "dialogueId": "directions",
+  "nameEn": "Asking for Directions",
+  "nameFr": "Demander son chemin",
+  "icon": "🗺️",
+  "context": "You are a tourist in Paris and you are lost. You stop Marc, a friendly local, to ask for directions to famous landmarks.",
+  "characters": {
+    "npc": { "name": "Marc" },
+    "player": { "name": "Vous" }
+  },
+  "exchanges": [
+    {
+      "speaker": "player",
+      "prompt": "Excuse me, sir. Can you help me?",
+      "acceptedResponses": [
+        "Excusez-moi, monsieur. Pouvez-vous m'aider ?",
+        "Excusez-moi, monsieur, pouvez-vous m'aider ?",
+        "Pardon, monsieur. Pouvez-vous m'aider ?",
+        "Pardon monsieur, pouvez-vous m'aider ?"
+      ],
+      "keyWords": ["excusez-moi", "aider"],
+      "hint": "Start with 'Excusez-moi' and ask 'Pouvez-vous m'aider ?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Bien sûr ! Je vous en prie. Où voulez-vous aller ?",
+      "translation": "Of course! You're welcome. Where do you want to go?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Where is the Eiffel Tower, please?",
+      "acceptedResponses": [
+        "Où est la tour Eiffel, s'il vous plaît ?",
+        "Où se trouve la tour Eiffel, s'il vous plaît ?",
+        "S'il vous plaît, où est la tour Eiffel ?",
+        "Pouvez-vous m'indiquer la tour Eiffel, s'il vous plaît ?"
+      ],
+      "keyWords": ["tour Eiffel", "s'il vous plaît"],
+      "hint": "Use 'Où est' or 'Où se trouve' followed by 'la tour Eiffel'"
+    },
+    {
+      "speaker": "npc",
+      "text": "La tour Eiffel ? C'est assez loin d'ici. Il faut prendre le métro. Mais si vous voulez marcher, continuez tout droit jusqu'au bout de cette rue.",
+      "translation": "The Eiffel Tower? It's quite far from here. You have to take the metro. But if you want to walk, continue straight ahead to the end of this street."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Do I turn left or right?",
+      "acceptedResponses": [
+        "Je tourne à gauche ou à droite ?",
+        "Est-ce que je tourne à gauche ou à droite ?",
+        "On tourne à gauche ou à droite ?",
+        "C'est à gauche ou à droite ?"
+      ],
+      "keyWords": ["gauche", "droite"],
+      "hint": "Ask about turning left ('à gauche') or right ('à droite')"
+    },
+    {
+      "speaker": "npc",
+      "text": "Au carrefour, tournez à gauche. Ensuite, continuez tout droit pendant environ cinq minutes.",
+      "translation": "At the intersection, turn left. Then, continue straight ahead for about five minutes."
+    },
+    {
+      "speaker": "player",
+      "prompt": "How far is it on foot?",
+      "acceptedResponses": [
+        "C'est à quelle distance à pied ?",
+        "C'est loin à pied ?",
+        "Combien de temps à pied ?",
+        "C'est à combien de minutes à pied ?"
+      ],
+      "keyWords": ["pied", "loin"],
+      "hint": "Ask how far it is on foot using 'à pied' and 'loin' or 'distance'"
+    },
+    {
+      "speaker": "npc",
+      "text": "À pied, c'est environ vingt à vingt-cinq minutes. En métro, c'est beaucoup plus rapide — seulement dix minutes.",
+      "translation": "On foot, it's about twenty to twenty-five minutes. By metro, it's much faster — only ten minutes."
+    },
+    {
+      "speaker": "player",
+      "prompt": "And the Louvre? Is it near here?",
+      "acceptedResponses": [
+        "Et le Louvre ? C'est près d'ici ?",
+        "Et le Louvre, c'est près d'ici ?",
+        "Le Louvre est près d'ici ?",
+        "Est-ce que le Louvre est proche d'ici ?"
+      ],
+      "keyWords": ["Louvre", "près"],
+      "hint": "Ask about 'le Louvre' and whether it is 'près d'ici'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Le Louvre ? Oui, c'est plus près ! Prenez la deuxième rue à droite, puis allez tout droit. Vous verrez le musée sur votre gauche.",
+      "translation": "The Louvre? Yes, it's closer! Take the second street on the right, then go straight ahead. You will see the museum on your left."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank you very much, you are very kind.",
+      "acceptedResponses": [
+        "Merci beaucoup, vous êtes très gentil.",
+        "Merci beaucoup, vous êtes très aimable.",
+        "Je vous remercie beaucoup, vous êtes très gentil.",
+        "Merci infiniment, vous êtes très gentil."
+      ],
+      "keyWords": ["merci", "gentil"],
+      "hint": "Say 'Merci beaucoup' and compliment Marc with 'vous êtes très gentil'"
+    },
+    {
+      "speaker": "npc",
+      "text": "De rien ! Bonne visite à Paris, et bonne chance !",
+      "translation": "You're welcome! Enjoy your visit to Paris, and good luck!"
+    }
+  ]
+}

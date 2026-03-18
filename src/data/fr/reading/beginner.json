@@ -1,0 +1,115 @@
+{
+  "passages": [
+    {
+      "passageId": "p1",
+      "title": "Ma famille",
+      "titleEn": "My Family",
+      "difficulty": "A1",
+      "text": "Je m'appelle Léa. J'ai vingt ans. J'habite à Lyon avec ma famille. Mon père s'appelle Pierre et il est médecin. Ma mère s'appelle Claire et elle est professeure. J'ai un frère qui s'appelle Thomas. Il a quinze ans et il est lycéen. Nous avons aussi un chien qui s'appelle Max. Max est très gentil et il aime jouer dans le jardin.",
+      "wordGlossary": {
+        "j'habite": "I live",
+        "médecin": "doctor",
+        "professeure": "teacher (female)",
+        "frère": "brother",
+        "lycéen": "high school student",
+        "chien": "dog",
+        "jardin": "garden",
+        "gentil": "kind, nice"
+      },
+      "questions": [
+        {
+          "question": "Où habite Léa ?",
+          "options": ["À Paris", "À Lyon", "À Marseille", "À Bordeaux"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « J'habite à Lyon avec ma famille. »"
+        },
+        {
+          "question": "Quelle est la profession du père de Léa ?",
+          "options": ["Professeur", "Avocat", "Médecin", "Ingénieur"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « Mon père s'appelle Pierre et il est médecin. »"
+        },
+        {
+          "question": "Comment s'appelle le chien de la famille ?",
+          "options": ["Rex", "Fido", "Max", "Bobby"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « Nous avons aussi un chien qui s'appelle Max. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p2",
+      "title": "Ma journée",
+      "titleEn": "My Day",
+      "difficulty": "A1",
+      "text": "Je me lève à sept heures du matin. D'abord, je prends une douche et je m'habille. Ensuite, je mange le petit-déjeuner avec ma famille. Je mange du pain avec du beurre et je bois du café. À huit heures, je prends le bus pour aller au travail. Je travaille de neuf heures à dix-sept heures. Le soir, je rentre à la maison et je prépare le dîner. Après le dîner, je regarde la télévision ou je lis un livre. Je me couche à vingt-deux heures.",
+      "wordGlossary": {
+        "je me lève": "I get up",
+        "douche": "shower",
+        "je m'habille": "I get dressed",
+        "petit-déjeuner": "breakfast",
+        "beurre": "butter",
+        "je rentre": "I return (home)",
+        "dîner": "dinner",
+        "je me couche": "I go to bed"
+      },
+      "questions": [
+        {
+          "question": "À quelle heure est-ce que la personne se lève ?",
+          "options": ["À six heures", "À sept heures", "À huit heures", "À neuf heures"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « Je me lève à sept heures du matin. »"
+        },
+        {
+          "question": "Comment est-ce que la personne va au travail ?",
+          "options": ["En voiture", "À pied", "En vélo", "En bus"],
+          "correctIndex": 3,
+          "explanation": "Le texte dit : « je prends le bus pour aller au travail. »"
+        },
+        {
+          "question": "Qu'est-ce que la personne fait après le dîner ?",
+          "options": ["Elle sort avec des amis", "Elle fait du sport", "Elle regarde la télévision ou lit un livre", "Elle travaille encore"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « je regarde la télévision ou je lis un livre. »"
+        }
+      ]
+    },
+    {
+      "passageId": "p3",
+      "title": "Ma ville",
+      "titleEn": "My Town",
+      "difficulty": "A2",
+      "text": "J'habite dans une ville de taille moyenne dans le sud de la France. Ma ville s'appelle Montpellier et elle est très animée. Il y a beaucoup de choses à faire ici. Dans le centre-ville, on trouve de nombreux cafés, restaurants et magasins. Il y a aussi un grand marché tous les samedis matin où les habitants achètent des fruits et des légumes frais. Ma rue préférée s'appelle la rue de la Loge. Elle est très vieille et très jolie avec ses maisons en pierre. Le soir, les jeunes se retrouvent sur la place de la Comédie pour discuter et s'amuser. J'aime beaucoup ma ville parce qu'elle est vivante et accueillante.",
+      "wordGlossary": {
+        "animée": "lively, bustling",
+        "centre-ville": "city center, downtown",
+        "marché": "market",
+        "habitants": "residents, inhabitants",
+        "légumes": "vegetables",
+        "pierre": "stone",
+        "se retrouvent": "meet up, gather",
+        "accueillante": "welcoming"
+      },
+      "questions": [
+        {
+          "question": "Dans quelle région de la France se trouve Montpellier ?",
+          "options": ["Dans le nord", "Dans l'est", "Dans le sud", "Dans l'ouest"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « une ville de taille moyenne dans le sud de la France. »"
+        },
+        {
+          "question": "Quand est le marché à Montpellier ?",
+          "options": ["Tous les dimanches matin", "Tous les vendredis soir", "Tous les samedis matin", "Tous les jours"],
+          "correctIndex": 2,
+          "explanation": "Le texte dit : « un grand marché tous les samedis matin. »"
+        },
+        {
+          "question": "Où est-ce que les jeunes se retrouvent le soir ?",
+          "options": ["Dans les cafés", "Sur la place de la Comédie", "Dans la rue de la Loge", "Au marché"],
+          "correctIndex": 1,
+          "explanation": "Le texte dit : « les jeunes se retrouvent sur la place de la Comédie pour discuter et s'amuser. »"
+        }
+      ]
+    }
+  ]
+}

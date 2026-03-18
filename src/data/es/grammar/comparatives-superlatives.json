@@ -1,0 +1,302 @@
+{
+  "lessonId": "comparatives-superlatives",
+  "nameEn": "Comparatives & Superlatives",
+  "nameEs": "Comparativos y Superlativos",
+  "icon": "📊",
+  "tier": "A2",
+  "prerequisites": ["adjectives"],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "comparatives",
+      "title": "Comparatives: más/menos … que & tan … como",
+      "explanation": "To compare two things in Spanish you use one of two structures. For unequal comparisons (more/less than), use 'más + adjective + que' (more … than) or 'menos + adjective + que' (less … than). For example: 'El libro es más interesante que la película' (The book is more interesting than the film). For equal comparisons (as … as), use 'tan + adjective + como': 'Mi hermano es tan alto como yo' (My brother is as tall as I am). The adjective still agrees in gender and number with the noun it describes, just as it always does.",
+      "tip": "Memory trick: más/menos…que = inequality (the two things differ); tan…como = equality (the two things match). If you see 'tan' with an adjective, look for 'como' later in the sentence.",
+      "examples": [
+        { "es": "El coche es más rápido que la bicicleta.", "en": "The car is faster than the bicycle.", "highlight": "más rápido que" },
+        { "es": "Esta tarea es menos difícil que el examen.", "en": "This homework is less difficult than the exam.", "highlight": "menos difícil que" },
+        { "es": "María es tan inteligente como Pedro.", "en": "María is as intelligent as Pedro.", "highlight": "tan inteligente como" },
+        { "es": "El café es más caro que el té.", "en": "Coffee is more expensive than tea.", "highlight": "más caro que" },
+        { "es": "Hoy no es tan frío como ayer.", "en": "Today is not as cold as yesterday.", "highlight": "tan frío como" },
+        { "es": "Mi apartamento es menos grande que el tuyo.", "en": "My apartment is less big than yours.", "highlight": "menos grande que" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'The train is faster than the bus'?",
+          "options": [
+            "El tren es más rápido que el autobús.",
+            "El tren es tan rápido como el autobús.",
+            "El tren es menos rápido que el autobús.",
+            "El tren es más rápido como el autobús."
+          ],
+          "correctIndex": 0,
+          "explanation": "Unequal comparison (faster than) → 'más + adjective + que': El tren es más rápido que el autobús."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'Ana is as tall as Luis'?",
+          "options": [
+            "Ana es tan alta como Luis.",
+            "Ana es más alta que Luis.",
+            "Ana es menos alta que Luis.",
+            "Ana es tan alta que Luis."
+          ],
+          "correctIndex": 0,
+          "explanation": "Equal comparison (as … as) → 'tan + adjective + como': Ana es tan alta como Luis."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Este restaurante es ___ caro ___ el otro. (This restaurant is less expensive than the other one.)",
+          "acceptedAnswers": ["menos … que", "menos...que"],
+          "hint": "Less … than = menos … que",
+          "explanation": "'Less expensive than' uses 'menos + adjective + que': menos caro que."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct word order: 'History is more boring than maths'",
+          "options": [
+            "La historia es más aburrida que las matemáticas.",
+            "La historia es aburrida más que las matemáticas.",
+            "La historia más aburrida es que las matemáticas.",
+            "La historia es más que aburrida las matemáticas."
+          ],
+          "correctIndex": 0,
+          "explanation": "The structure is: subject + verb + más/menos + adjective + que + second element."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Mi perro es ___ grande ___ el tuyo. (My dog is as big as yours.)",
+          "acceptedAnswers": ["tan … como", "tan...como"],
+          "hint": "Equal comparison: tan … como",
+          "explanation": "'As big as' → 'tan grande como': Mi perro es tan grande como el tuyo."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: 'Ella habla español ___ bien ___ tú.' (She speaks Spanish as well as you.)",
+          "options": [
+            "tan … como",
+            "más … que",
+            "menos … que",
+            "tan … que"
+          ],
+          "correctIndex": 0,
+          "explanation": "Equal comparison with an adverb (bien) also uses 'tan … como': tan bien como tú."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El invierno en Moscú es ___ frío ___ el invierno en Madrid. (Winter in Moscow is colder than winter in Madrid.)",
+          "acceptedAnswers": ["más … que", "más...que"],
+          "hint": "Colder than = más frío que",
+          "explanation": "'Colder than' → 'más + frío + que': más frío que el invierno en Madrid."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is grammatically correct?",
+          "options": [
+            "La película es menos interesante que el libro.",
+            "La película es menos interesante como el libro.",
+            "La película es tan interesante que el libro.",
+            "La película es más menos interesante que el libro."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Menos … que' is the correct structure for 'less … than'. Never use 'como' after 'menos'."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlatives",
+      "title": "Superlatives: el/la más … de & Irregular Forms",
+      "explanation": "The superlative expresses the highest or lowest degree among a group: 'the most/least … in/of'. The structure is: definite article (el/la/los/las) + más/menos + adjective + de. For example: 'Es el restaurante más caro de la ciudad' (It is the most expensive restaurant in the city). The article and adjective agree in gender and number with the noun. Note that Spanish uses 'de' (not 'en') after the superlative to mean 'in/of a group'. Four common adjectives have completely irregular comparative and superlative forms that replace 'más/menos': bueno → mejor (better / best), malo → peor (worse / worst), grande → mayor (older / greatest), pequeño → menor (younger / least). These forms do not change for gender but do add -es for plural.",
+      "tip": "Use 'de' — not 'en' — after a superlative: 'el más alto de la clase' (the tallest in the class). For the irregular forms mejor/peor/mayor/menor, drop 'más' entirely — never say 'más mejor'.",
+      "examples": [
+        { "es": "Es el edificio más alto de la ciudad.", "en": "It is the tallest building in the city.", "highlight": "el más alto de" },
+        { "es": "Son las mejores tapas de Madrid.", "en": "They are the best tapas in Madrid.", "highlight": "las mejores" },
+        { "es": "Este camino es el peor de todos.", "en": "This path is the worst of all.", "highlight": "el peor de" },
+        { "es": "Mi hermana mayor se llama Sofía.", "en": "My older sister is called Sofía.", "highlight": "mayor" },
+        { "es": "Es la película menos interesante del año.", "en": "It is the least interesting film of the year.", "highlight": "la menos interesante del" },
+        { "es": "El alumno menor de la clase tiene ocho años.", "en": "The youngest student in the class is eight years old.", "highlight": "menor de" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is the smartest student in the class'?",
+          "options": [
+            "Ella es la estudiante más inteligente de la clase.",
+            "Ella es la estudiante más inteligente en la clase.",
+            "Ella es la estudiante muy inteligente de la clase.",
+            "Ella es más inteligente estudiante de la clase."
+          ],
+          "correctIndex": 0,
+          "explanation": "Superlative structure: article + noun + más + adjective + de + group. Use 'de', not 'en'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the superlative of 'bueno'?",
+          "options": [
+            "el mejor",
+            "el más bueno",
+            "el más bien",
+            "el buenísimo"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Bueno' has an irregular superlative: mejor (comparative) / el mejor (superlative). Never say 'más bueno'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Este es el ___ resultado de todos. (This is the worst result of all.) — Use the irregular superlative of 'malo'.",
+          "acceptedAnswers": ["peor"],
+          "hint": "malo → peor (worse/worst). It does not change for gender.",
+          "explanation": "The irregular superlative of 'malo' is 'el peor': Este es el peor resultado de todos."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: 'Tokio es ___ ciudad más poblada ___ mundo.' (Tokyo is the most populated city in the world.)",
+          "options": [
+            "la … del",
+            "el … del",
+            "la … en el",
+            "la … de el"
+          ],
+          "correctIndex": 0,
+          "explanation": "'Ciudad' is feminine → 'la'. 'Del' is the contraction of 'de + el': la ciudad más poblada del mundo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Carlos es mi hermano ___. (Carlos is my younger brother.) — Use the irregular form of 'pequeño'.",
+          "acceptedAnswers": ["menor"],
+          "hint": "pequeño → menor (younger/lesser). It does not change for gender.",
+          "explanation": "The irregular form of 'pequeño' in comparisons is 'menor': mi hermano menor."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is INCORRECT?",
+          "options": [
+            "Es el más mejor jugador del equipo.",
+            "Es el mejor jugador del equipo.",
+            "Es la peor película del año.",
+            "Son los mejores estudiantes de la escuela."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Más mejor' is wrong — 'mejor' is already the comparative/superlative of 'bueno'. Just say 'el mejor'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ese hotel es el ___ caro de la región. (That hotel is the most expensive in the region.)",
+          "acceptedAnswers": ["más"],
+          "hint": "Superlative of a regular adjective: el/la más + adjective + de.",
+          "explanation": "Regular superlative: el más + adjective + de: el más caro de la región."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is my older sister'?",
+          "options": [
+            "Ella es mi hermana mayor.",
+            "Ella es mi hermana más grande.",
+            "Ella es mi hermana más mayor.",
+            "Ella es mi hermana grande."
+          ],
+          "correctIndex": 0,
+          "explanation": "'Grande' → 'mayor' is used for age comparisons meaning older/eldest. Never combine 'más' with 'mayor'."
+        }
+      ]
+    },
+    {
+      "sectionId": "absolute-superlative",
+      "title": "Absolute Superlative: -ísimo/a",
+      "explanation": "The absolute superlative expresses an extreme degree of a quality without comparing to anyone else — it means 'extremely' or 'very very'. In Spanish, add the suffix -ísimo/a/os/as to an adjective. Drop the final vowel first if there is one, then add -ísimo. For example: caro (expensive) → car- + ísimo → carísimo (extremely expensive). Adjectives ending in a consonant just add -ísimo directly: fácil → facilísimo. Some spelling adjustments apply: adjectives ending in -co change to -qu- before -ísimo (rico → riquísimo); those ending in -go change to -gu- (largo → larguísimo); those ending in -z change to -c- (feliz → felicísimo). The suffix agrees in gender and number like any adjective: carísimo, carísima, carísimos, carísimas.",
+      "tip": "Drop the final vowel, then add -ísimo/a. Watch out for spelling changes: -co → -qu, -go → -gu, -z → -c. The result always agrees in gender and number with the noun.",
+      "examples": [
+        { "es": "Este restaurante es carísimo.", "en": "This restaurant is extremely expensive.", "highlight": "carísimo" },
+        { "es": "El examen fue facilísimo.", "en": "The exam was extremely easy.", "highlight": "facilísimo" },
+        { "es": "La tarea es dificilísima.", "en": "The homework is extremely difficult.", "highlight": "dificilísima" },
+        { "es": "Ese chiste es malísimo.", "en": "That joke is absolutely terrible.", "highlight": "malísimo" },
+        { "es": "El pastel está riquísimo.", "en": "The cake is incredibly delicious.", "highlight": "riquísimo" },
+        { "es": "Es una persona amabilísima.", "en": "She/he is an extremely kind person.", "highlight": "amabilísima" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the absolute superlative of 'caro' (expensive)?",
+          "options": [
+            "carísimo",
+            "caroísimo",
+            "más caro",
+            "el más caro"
+          ],
+          "correctIndex": 0,
+          "explanation": "Drop the final -o from 'caro', then add -ísimo: car + ísimo = carísimo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "El español es ___. (Spanish is extremely easy.) — Form the absolute superlative of 'fácil'.",
+          "acceptedAnswers": ["facilísimo"],
+          "hint": "'fácil' ends in a consonant — add -ísimo directly. Remember the accent on the í.",
+          "explanation": "'fácil' ends in -l (a consonant), so add -ísimo directly: facilísimo. Drop the accent on the á in the base form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the absolute superlative of 'rico' (delicious/rich)? (Watch the spelling!)",
+          "options": [
+            "riquísimo",
+            "ricoísimo",
+            "ricísimo",
+            "ríquísimo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adjectives ending in -co change c → qu before -ísimo to preserve the hard /k/ sound: rico → riquísimo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "La película fue ___. (The film was absolutely terrible.) — Form the absolute superlative of 'malo'.",
+          "acceptedAnswers": ["malísima"],
+          "hint": "'película' is feminine. Drop -o from 'malo', add -ísima.",
+          "explanation": "'película' is feminine, so the suffix must be -ísima: malísima. la película fue malísima."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct absolute superlative of 'largo' (long). (Watch the spelling!)",
+          "options": [
+            "larguísimo",
+            "largoísimo",
+            "largísimo",
+            "larrguísimo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adjectives ending in -go change g → gu before -ísimo: largo → larguísimo."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Estos zapatos son ___. (These shoes are extremely expensive.) — Form the absolute superlative of 'caro', plural masculine.",
+          "acceptedAnswers": ["carísimos"],
+          "hint": "The suffix agrees in number: add -s for plural → -ísimos.",
+          "explanation": "'zapatos' is masculine plural, so: car + ísimos = carísimos. Estos zapatos son carísimos."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the absolute superlative of 'feliz' (happy)? (Watch the spelling!)",
+          "options": [
+            "felicísimo",
+            "felizísimo",
+            "felizísima",
+            "félicísimo"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adjectives ending in -z change z → c before -ísimo: feliz → felicísimo."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between 'el más caro de la tienda' and 'carísimo'?",
+          "options": [
+            "'El más caro de la tienda' compares within a group; 'carísimo' expresses an extreme degree with no comparison.",
+            "'Carísimo' compares within a group; 'el más caro de la tienda' expresses extreme degree alone.",
+            "They mean exactly the same thing.",
+            "'Carísimo' is informal and should be avoided in writing."
+          ],
+          "correctIndex": 0,
+          "explanation": "The relative superlative (el más … de) compares within a specific group. The absolute superlative (-ísimo) just means 'extremely' — no group or comparison is involved."
+        }
+      ]
+    }
+  ]
+}

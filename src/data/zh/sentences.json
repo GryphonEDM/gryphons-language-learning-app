@@ -1,0 +1,184 @@
+{
+  "sentences": [
+    {
+      "id": "s1",
+      "en": "I drink water.",
+      "zh": "我喝水。",
+      "words": ["我", "喝", "水"],
+      "distractors": ["吃", "茶", "他"],
+      "validOrders": [["我", "喝", "水"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s2",
+      "en": "This is a book.",
+      "zh": "这是一本书。",
+      "words": ["这", "是", "一本", "书"],
+      "distractors": ["那", "有", "笔"],
+      "validOrders": [["这", "是", "一本", "书"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s3",
+      "en": "Hello, nice to meet you.",
+      "zh": "你好，很高兴认识你。",
+      "words": ["你好", "很高兴", "认识", "你"],
+      "distractors": ["谢谢", "再见", "他"],
+      "validOrders": [["你好", "很高兴", "认识", "你"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s4",
+      "en": "I am a student.",
+      "zh": "我是学生。",
+      "words": ["我", "是", "学生"],
+      "distractors": ["老师", "他", "有"],
+      "validOrders": [["我", "是", "学生"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s5",
+      "en": "I go to school.",
+      "zh": "我去学校。",
+      "words": ["我", "去", "学校"],
+      "distractors": ["来", "医院", "她"],
+      "validOrders": [["我", "去", "学校"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s6",
+      "en": "The house is big.",
+      "zh": "房子很大。",
+      "words": ["房子", "很", "大"],
+      "distractors": ["小", "学校", "不"],
+      "validOrders": [["房子", "很", "大"]],
+      "difficulty": "A1"
+    },
+    {
+      "id": "s7",
+      "en": "I like Chinese food.",
+      "zh": "我喜欢中国菜。",
+      "words": ["我", "喜欢", "中国", "菜"],
+      "distractors": ["日本", "讨厌", "音乐"],
+      "validOrders": [["我", "喜欢", "中国", "菜"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s8",
+      "en": "Where is the bathroom?",
+      "zh": "洗手间在哪里？",
+      "words": ["洗手间", "在", "哪里"],
+      "distractors": ["餐厅", "什么", "去"],
+      "validOrders": [["洗手间", "在", "哪里"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s9",
+      "en": "I read books every day.",
+      "zh": "我每天看书。",
+      "words": ["我", "每天", "看", "书"],
+      "distractors": ["有时候", "写", "报纸"],
+      "validOrders": [["我", "每天", "看", "书"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s10",
+      "en": "My friend is a teacher.",
+      "zh": "我的朋友是老师。",
+      "words": ["我的", "朋友", "是", "老师"],
+      "distractors": ["他的", "学生", "同学"],
+      "validOrders": [["我的", "朋友", "是", "老师"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s11",
+      "en": "I want to eat dumplings.",
+      "zh": "我想吃饺子。",
+      "words": ["我", "想", "吃", "饺子"],
+      "distractors": ["要", "喝", "面条"],
+      "validOrders": [["我", "想", "吃", "饺子"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s12",
+      "en": "Today the weather is good.",
+      "zh": "今天天气很好。",
+      "words": ["今天", "天气", "很", "好"],
+      "distractors": ["昨天", "不", "冷"],
+      "validOrders": [["今天", "天气", "很", "好"]],
+      "difficulty": "A2"
+    },
+    {
+      "id": "s13",
+      "en": "I studied Chinese at the library yesterday.",
+      "zh": "我昨天在图书馆学了中文。",
+      "words": ["我", "昨天", "在", "图书馆", "学了", "中文"],
+      "distractors": ["今天", "教室", "英文", "看了"],
+      "validOrders": [["我", "昨天", "在", "图书馆", "学了", "中文"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s14",
+      "en": "Can you speak a little slower, please?",
+      "zh": "请你说慢一点。",
+      "words": ["请", "你", "说", "慢", "一点"],
+      "distractors": ["快", "写", "他", "很"],
+      "validOrders": [["请", "你", "说", "慢", "一点"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s15",
+      "en": "China has a long history.",
+      "zh": "中国有很长的历史。",
+      "words": ["中国", "有", "很长的", "历史"],
+      "distractors": ["日本", "是", "文化", "很短的"],
+      "validOrders": [["中国", "有", "很长的", "历史"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s16",
+      "en": "I have been learning Chinese for two years.",
+      "zh": "我学中文学了两年了。",
+      "words": ["我", "学", "中文", "学了", "两年", "了"],
+      "distractors": ["三年", "英文", "教", "看"],
+      "validOrders": [["我", "学", "中文", "学了", "两年", "了"]],
+      "difficulty": "B1"
+    },
+    {
+      "id": "s17",
+      "en": "If you go to Beijing, you should visit the Great Wall.",
+      "zh": "如果你去北京，你应该去看长城。",
+      "words": ["如果", "你", "去", "北京", "你", "应该", "去看", "长城"],
+      "distractors": ["上海", "可以", "故宫", "因为"],
+      "validOrders": [["如果", "你", "去", "北京", "你", "应该", "去看", "长城"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s18",
+      "en": "The more you practice, the better your pronunciation gets.",
+      "zh": "你练习得越多，发音就越好。",
+      "words": ["你", "练习得", "越多", "发音", "就", "越好"],
+      "distractors": ["越少", "语法", "越差", "学习得"],
+      "validOrders": [["你", "练习得", "越多", "发音", "就", "越好"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s19",
+      "en": "Chinese culture has become popular worldwide.",
+      "zh": "中国文化在全世界越来越受欢迎。",
+      "words": ["中国", "文化", "在", "全世界", "越来越", "受欢迎"],
+      "distractors": ["日本", "经济", "不太", "受批评"],
+      "validOrders": [["中国", "文化", "在", "全世界", "越来越", "受欢迎"]],
+      "difficulty": "B2"
+    },
+    {
+      "id": "s20",
+      "en": "Although it was difficult at first, I got used to writing characters.",
+      "zh": "虽然一开始很难，但我已经习惯写汉字了。",
+      "words": ["虽然", "一开始", "很难", "但", "我", "已经", "习惯", "写", "汉字", "了"],
+      "distractors": ["因为", "很容易", "还没", "读", "拼音"],
+      "validOrders": [["虽然", "一开始", "很难", "但", "我", "已经", "习惯", "写", "汉字", "了"]],
+      "difficulty": "B2"
+    }
+  ]
+}

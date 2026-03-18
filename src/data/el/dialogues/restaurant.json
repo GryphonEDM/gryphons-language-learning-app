@@ -1,0 +1,183 @@
+{
+  "dialogueId": "restaurant",
+  "nameEn": "At the Restaurant",
+  "nameEl": "Στο Εστιατόριο",
+  "icon": "🍽️",
+  "context": "You are at a traditional Greek taverna in Athens. The waiter (Γκαρσόν) comes to take your order.",
+  "characters": {
+    "npc": { "name": "Γκαρσόν" },
+    "player": { "name": "Εσύ" }
+  },
+  "exchanges": [
+    {
+      "speaker": "npc",
+      "text": "Καλησπέρα σας! Έχετε κράτηση;",
+      "translation": "Good evening! Do you have a reservation?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say no, but ask if there is a free table",
+      "acceptedResponses": [
+        "Όχι, αλλά έχετε ελεύθερο τραπέζι;",
+        "Δεν έχω κράτηση. Έχετε ελεύθερο τραπέζι;",
+        "Όχι. Υπάρχει ελεύθερο τραπέζι;",
+        "Δεν έχω κράτηση, αλλά υπάρχει τραπέζι;"
+      ],
+      "keyWords": ["Όχι", "τραπέζι"],
+      "hint": "Say 'No, but do you have a free table?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Βεβαίως! Ελάτε μαζί μου. Εδώ είναι το μενού σας.",
+      "translation": "Of course! Come with me. Here is your menu."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him and ask for a moment to look at the menu",
+      "acceptedResponses": [
+        "Ευχαριστώ. Μπορώ να δω το μενού λίγο;",
+        "Ευχαριστώ! Χρειάζομαι λίγο χρόνο.",
+        "Ευχαριστώ, μια στιγμή παρακαλώ.",
+        "Ευχαριστώ. Μια στιγμή να δω το μενού."
+      ],
+      "keyWords": ["Ευχαριστώ", "μενού"],
+      "hint": "Say 'Thank you. Can I look at the menu for a moment?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Φυσικά. Τι θα πιείτε;",
+      "translation": "Of course. What will you drink?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order a wine and a water",
+      "acceptedResponses": [
+        "Ένα κρασί και ένα νερό, παρακαλώ.",
+        "Θα ήθελα κρασί και νερό, παρακαλώ.",
+        "Κρασί και νερό, παρακαλώ.",
+        "Ένα κρασί και νερό παρακαλώ."
+      ],
+      "keyWords": ["κρασί", "νερό", "παρακαλώ"],
+      "hint": "Say 'A wine and a water, please.'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Αμέσως. Και τι θα φάτε;",
+      "translation": "Right away. And what will you eat?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask what they recommend today",
+      "acceptedResponses": [
+        "Τι μου συστήνετε σήμερα;",
+        "Τι συστήνετε;",
+        "Τι έχετε να συστήσετε σήμερα;",
+        "Ποιο πιάτο συστήνετε;"
+      ],
+      "keyWords": ["συστήνετε", "σήμερα"],
+      "hint": "Say 'What do you recommend today?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ο μουσακάς μας είναι εξαιρετικός σήμερα! Έχουμε επίσης φρέσκο ψάρι και χωριάτικη σαλάτα.",
+      "translation": "Our moussaka is excellent today! We also have fresh fish and village salad."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Order the moussaka and a salad",
+      "acceptedResponses": [
+        "Θα πάρω τον μουσακά και μία σαλάτα, παρακαλώ.",
+        "Θα ήθελα μουσακά και σαλάτα.",
+        "Μουσακά και σαλάτα, παρακαλώ.",
+        "Δώστε μου μουσακά και μία σαλάτα, παρακαλώ."
+      ],
+      "keyWords": ["μουσακά", "σαλάτα"],
+      "hint": "Say 'I'll have the moussaka and a salad, please.'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Εξαιρετική επιλογή! Θέλετε τίποτε άλλο;",
+      "translation": "Excellent choice! Do you want anything else?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how much the fish costs",
+      "acceptedResponses": [
+        "Πόσο κοστίζει το ψάρι;",
+        "Πόσο είναι το ψάρι;",
+        "Τι τιμή έχει το ψάρι;",
+        "Πόσο κάνει το ψάρι;"
+      ],
+      "keyWords": ["Πόσο", "ψάρι"],
+      "hint": "Say 'How much does the fish cost?'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Το ψάρι κοστίζει δεκαοκτώ ευρώ. Θα το θέλετε;",
+      "translation": "The fish costs eighteen euros. Would you like it?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say no thank you, that will be all",
+      "acceptedResponses": [
+        "Όχι ευχαριστώ, αυτά είναι όλα.",
+        "Όχι, ευχαριστώ. Αυτά είναι αρκετά.",
+        "Όχι ευχαριστώ. Αυτά είναι όλα.",
+        "Ευχαριστώ, αυτά φτάνουν."
+      ],
+      "keyWords": ["Όχι", "ευχαριστώ", "όλα"],
+      "hint": "Say 'No thank you, that's all.'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Σας άρεσε το φαγητό; Θα θέλατε το λογαριασμό;",
+      "translation": "Did you like the food? Would you like the bill?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say yes it was delicious and ask for the bill",
+      "acceptedResponses": [
+        "Ναι, ήταν πολύ νόστιμο! Τον λογαριασμό παρακαλώ.",
+        "Ναι, πολύ νόστιμο! Τον λογαριασμό, παρακαλώ.",
+        "Ήταν εξαιρετικό! Τον λογαριασμό παρακαλώ.",
+        "Ναι ήταν υπέροχο. Φέρτε μου τον λογαριασμό, παρακαλώ."
+      ],
+      "keyWords": ["νόστιμο", "λογαριασμό"],
+      "hint": "Say 'Yes, it was very delicious! The bill please.'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ορίστε ο λογαριασμός. Συνολικά είναι τριάντα δύο ευρώ. Πληρώνετε με κάρτα ή μετρητά;",
+      "translation": "Here is the bill. In total it is thirty-two euros. Are you paying by card or cash?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say you will pay by card",
+      "acceptedResponses": [
+        "Θα πληρώσω με κάρτα.",
+        "Με κάρτα, παρακαλώ.",
+        "Πληρώνω με κάρτα.",
+        "Θα πληρώσω με πιστωτική κάρτα."
+      ],
+      "keyWords": ["κάρτα"],
+      "hint": "Say 'I will pay by card.'"
+    },
+    {
+      "speaker": "npc",
+      "text": "Ευχαριστούμε πολύ! Καλή συνέχεια και να έρθετε ξανά!",
+      "translation": "Thank you very much! Have a good evening and come back again!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Thank him and say goodbye",
+      "acceptedResponses": [
+        "Ευχαριστώ! Αντίο!",
+        "Ευχαριστώ πολύ! Αντίο.",
+        "Ευχαριστώ! Γεια σας!",
+        "Πολύ ωραία! Ευχαριστώ, αντίο."
+      ],
+      "keyWords": ["Ευχαριστώ", "Αντίο"],
+      "hint": "Say 'Thank you! Goodbye!'"
+    }
+  ]
+}

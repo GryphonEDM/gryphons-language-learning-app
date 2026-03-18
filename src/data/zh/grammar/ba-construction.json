@@ -1,0 +1,181 @@
+{
+  "lessonId": "ba-construction",
+  "nameEn": "The 把 Construction",
+  "nameZh": "把字句",
+  "icon": "👐",
+  "tier": "B1",
+  "prerequisites": ["basic-sentence-structure"],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "what-is-ba",
+      "title": "What is the 把 Construction?",
+      "explanation": "The 把 (bǎ) construction is a uniquely Chinese sentence pattern that moves the object before the verb: Subject + 把 + Object + Verb + Complement. In a normal Chinese sentence, word order is SVO (我打开了门 — I opened the door). With 把, it becomes S+把+O+V+Complement (我把门打开了). Why does this exist? The 把 construction emphasizes what happens TO the object — it signals that the action causes a change, movement, or result on a specific thing. Think of 把 as spotlighting the object and saying 'take this thing and do something to it.' You use 把 when you want to express a deliberate action that produces a clear result or change in the object's state or position.",
+      "tip": "A helpful way to think about 把 is the English phrase 'take X and do Y to it.' 我把书放在桌子上 literally feels like 'I take the book and place it on the table.' If you can rephrase a sentence with 'take ... and ...', the 把 construction probably works.",
+      "examples": [
+        { "zh": "我把门打开了。", "pinyin": "Wǒ bǎ mén dǎkāi le.", "en": "I opened the door. (I took the door and opened it)", "highlight": "把" },
+        { "zh": "他把衣服洗干净了。", "pinyin": "Tā bǎ yīfu xǐ gānjìng le.", "en": "He washed the clothes clean.", "highlight": "把" },
+        { "zh": "请把窗户关上。", "pinyin": "Qǐng bǎ chuānghù guānshàng.", "en": "Please close the window.", "highlight": "把" },
+        { "zh": "她把房间收拾好了。", "pinyin": "Tā bǎ fángjiān shōushi hǎo le.", "en": "She tidied up the room.", "highlight": "把" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the basic word order of a 把 sentence?",
+          "options": [
+            "Subject + Verb + 把 + Object",
+            "把 + Subject + Object + Verb",
+            "Subject + 把 + Object + Verb + Complement",
+            "Object + 把 + Subject + Verb"
+          ],
+          "correctIndex": 2,
+          "explanation": "The 把 construction follows: Subject + 把 + Object + Verb + Complement. The object moves before the verb."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我___书放在桌子上了。(I put the book on the table.)",
+          "acceptedAnswers": ["把"],
+          "hint": "Which particle moves the object before the verb to emphasize the result?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why do we use the 把 construction?",
+          "options": [
+            "To ask a question about the object",
+            "To emphasize what happens to the object as a result of the action",
+            "To describe a past action only",
+            "To make a sentence more formal"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 把 construction emphasizes the result, change, or disposal of the object — what happens TO it because of the action."
+        }
+      ]
+    },
+    {
+      "sectionId": "ba-requirements",
+      "title": "Requirements for 把",
+      "explanation": "Not every sentence can use 把. Two key requirements must be met. First, the verb must have a result or complement — a bare verb alone is not enough. You cannot say 我把书看 (I 把 book read); you need a result: 我把书看完了 (I finished reading the book). The complement can be a resultative (打开, 洗干净), directional (拿过来, 放下), 了 indicating completion, 在/到 indicating location, or a quantity/duration. Second, the object after 把 must be definite and specific — something both speaker and listener can identify. You say 我把那本书看完了 (I finished reading that book), not 我把一本书看完了 (awkward — 'a book' is too vague). The object is typically something already mentioned, understood from context, or modified by 这/那.",
+      "tip": "If your verb stands alone with no complement, result, or 了, the 把 construction will sound wrong. Always check: does my verb express a completed result or an endpoint? If not, rephrase without 把.",
+      "examples": [
+        { "zh": "我把作业做完了。", "pinyin": "Wǒ bǎ zuòyè zuò wán le.", "en": "I finished doing the homework. (result: 完 = finished)", "highlight": "做完了" },
+        { "zh": "他把杯子打碎了。", "pinyin": "Tā bǎ bēizi dǎ suì le.", "en": "He broke the cup. (result: 碎 = shattered)", "highlight": "打碎了" },
+        { "zh": "请把那本书还给我。", "pinyin": "Qǐng bǎ nà běn shū huán gěi wǒ.", "en": "Please return that book to me. (definite object: 那本书)", "highlight": "那本书" },
+        { "zh": "她把头发剪短了。", "pinyin": "Tā bǎ tóufa jiǎn duǎn le.", "en": "She cut her hair short. (result: 短 = short)", "highlight": "剪短了" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is 我把书看 incorrect?",
+          "options": [
+            "把 cannot be used with 书",
+            "The verb 看 needs a result or complement after it",
+            "The subject 我 is wrong",
+            "The sentence should use 了 before 把"
+          ],
+          "correctIndex": 1,
+          "explanation": "A bare verb without a complement or result is not allowed in the 把 construction. You need something like 看完了 (finished reading) or 看了两遍 (read twice)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "她把衣服洗___了。(She washed the clothes clean.)",
+          "acceptedAnswers": ["干净"],
+          "hint": "What resultative complement means 'clean'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which object is appropriate for a 把 sentence?",
+          "options": [
+            "一个东西 (a thing — vague)",
+            "什么 (what — question word)",
+            "那封信 (that letter — specific)",
+            "很多书 (a lot of books — indefinite quantity)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The object after 把 should be definite and specific. 那封信 (that letter) is clearly identified; the others are vague or indefinite."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-patterns",
+      "title": "Common 把 Patterns",
+      "explanation": "Several patterns appear frequently with 把 and are worth memorizing. 把...放在 (place something somewhere): 我把书放在桌子上 (I put the book on the table). 把...给 (give/hand something to someone): 他把钱给了我 (He gave the money to me). 把...V完 (finish doing something to an object): 我把饭吃完了 (I finished eating the meal). 把...忘了 (forget something): 我把密码忘了 (I forgot the password). Other useful patterns include 把...拿走 (take something away), 把...带来 (bring something), 把...弄丢了 (lose something), and 把...翻译成 (translate something into). These are high-frequency combinations that native speakers use daily.",
+      "tip": "Start by memorizing these four patterns as fixed phrases: 把X放在Y (put X at Y), 把X给Y (give X to Y), 把X做完 (finish doing X), 把X忘了 (forget X). Plug in different nouns and you will cover a huge number of real-life situations.",
+      "examples": [
+        { "zh": "请把行李放在这里。", "pinyin": "Qǐng bǎ xíngli fàng zài zhèlǐ.", "en": "Please put the luggage here.", "highlight": "放在" },
+        { "zh": "他把礼物给了她。", "pinyin": "Tā bǎ lǐwù gěi le tā.", "en": "He gave the gift to her.", "highlight": "给了" },
+        { "zh": "我把报告写完了。", "pinyin": "Wǒ bǎ bàogào xiě wán le.", "en": "I finished writing the report.", "highlight": "写完了" },
+        { "zh": "她把手机号忘了。", "pinyin": "Tā bǎ shǒujī hào wàng le.", "en": "She forgot the phone number.", "highlight": "忘了" }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "请把书___桌子上。(Please put the book on the table.)",
+          "acceptedAnswers": ["放在"],
+          "hint": "Which verb + preposition means 'place at'?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "我把钥匙弄丢了。What happened to the keys?",
+          "options": [
+            "I found the keys.",
+            "I lost the keys.",
+            "I returned the keys.",
+            "I hid the keys."
+          ],
+          "correctIndex": 1,
+          "explanation": "弄丢了 means 'lost (something)'. The full sentence means 'I lost the keys.'"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "他把作文写___了。(He finished writing the essay.)",
+          "acceptedAnswers": ["完"],
+          "hint": "Which complement means 'finished / completed'?"
+        }
+      ]
+    },
+    {
+      "sectionId": "when-not-to-use-ba",
+      "title": "When NOT to Use 把",
+      "explanation": "Certain verbs and sentence types cannot use the 把 construction. First, stative verbs and verbs that do not act upon an object are excluded: 是 (to be), 有 (to have), 知道 (to know), 喜欢 (to like), 觉得 (to feel/think), 希望 (to hope). You cannot say 我把他是老师 or 我把中文知道 — these verbs describe states, not actions that change an object. Second, intransitive verbs (verbs with no object) cannot use 把: 跑 (to run), 睡觉 (to sleep), 下雨 (to rain). There is no object to place after 把. Third, sensory and perceptual verbs used without a result generally do not take 把: 看见 (to see), 听到 (to hear) — these describe what you perceive, not what you do to the object. The rule of thumb: if the action does not dispose of, change, or move the object, 把 is likely wrong.",
+      "tip": "Ask yourself: does the verb describe doing something TO the object that changes it? If the verb just describes a relationship (是, 有), a feeling (喜欢, 觉得), or a perception (看见, 听到), skip 把 entirely and use normal SVO order.",
+      "examples": [
+        { "zh": "我有一本书。(NOT: 我把一本书有。)", "pinyin": "Wǒ yǒu yì běn shū.", "en": "I have a book. (有 cannot take 把)", "highlight": "有" },
+        { "zh": "他是我的老师。(NOT: 我把他是老师。)", "pinyin": "Tā shì wǒ de lǎoshī.", "en": "He is my teacher. (是 cannot take 把)", "highlight": "是" },
+        { "zh": "我知道这件事。(NOT: 我把这件事知道。)", "pinyin": "Wǒ zhīdào zhè jiàn shì.", "en": "I know about this matter. (知道 cannot take 把)", "highlight": "知道" },
+        { "zh": "她喜欢那首歌。(NOT: 她把那首歌喜欢。)", "pinyin": "Tā xǐhuan nà shǒu gē.", "en": "She likes that song. (喜欢 cannot take 把)", "highlight": "喜欢" }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence INCORRECTLY uses 把?",
+          "options": [
+            "我把门关上了。",
+            "她把衣服洗干净了。",
+            "他把这个答案知道了。",
+            "请把书放在那里。"
+          ],
+          "correctIndex": 2,
+          "explanation": "知道 (to know) is a stative verb that does not act on or change its object. It cannot be used with 把."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "我___中文。(I like Chinese.) — Use the correct verb without 把.",
+          "acceptedAnswers": ["喜欢"],
+          "hint": "喜欢 (to like) is a feeling verb that cannot use the 把 construction."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can't intransitive verbs like 跑 (to run) use 把?",
+          "options": [
+            "跑 is too informal for 把",
+            "跑 has no object to place after 把",
+            "跑 already contains a result complement",
+            "跑 is only used in questions"
+          ],
+          "correctIndex": 1,
+          "explanation": "把 requires a definite object to come after it. Intransitive verbs like 跑 have no object at all, so the 把 construction is impossible."
+        }
+      ]
+    }
+  ]
+}
