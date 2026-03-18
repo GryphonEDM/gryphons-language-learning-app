@@ -483,52 +483,55 @@ export default function DailyReviewMode({
           icon="✨"
           onExit={onExit}
         />
-        <div style={styles.main}>
-          <div style={styles.progressBar}>
-            <div style={{ ...styles.progressFill, width: `${progress}%`, background: 'linear-gradient(90deg, #4dabf7, #339af0)' }} />
-          </div>
+        <div className="content-row" style={styles.contentRow}>
+          <div style={styles.main}>
+            <div style={styles.progressBar}>
+              <div style={{ ...styles.progressFill, width: `${progress}%`, background: 'linear-gradient(90deg, #4dabf7, #339af0)' }} />
+            </div>
 
-          <div style={styles.card}>
-            <div style={styles.newBadge}>NEW</div>
-            <div style={styles.wordBig}>{card.word}</div>
-            {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
-            <div style={styles.translation}>{card.en}</div>
+            <div style={styles.card}>
+              <div style={styles.newBadge}>NEW</div>
+              <div style={styles.wordBig}>{card.word}</div>
+              {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
+              <div style={styles.translation}>{card.en}</div>
 
-            {ttsEnabled && onSpeak && (
-              <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>
-                🔊 Listen
-              </button>
-            )}
+              {ttsEnabled && onSpeak && (
+                <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>
+                  🔊 Listen
+                </button>
+              )}
 
-            {card.examples?.length > 0 && (
-              <div style={styles.example}>
-                <div style={styles.exampleText}>{card.examples[0]}</div>
-                {card.examplesEn?.length > 0 && (
-                  <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
-                )}
+              {card.examples?.length > 0 && (
+                <div style={styles.example}>
+                  <div style={styles.exampleText}>{card.examples[0]}</div>
+                  {card.examplesEn?.length > 0 && (
+                    <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
+                  )}
+                </div>
+              )}
+
+              <div style={styles.newRatingRow}>
+                <button
+                  style={{ ...styles.newRatingBtn, borderColor: '#4dabf7', background: 'rgba(77,171,247,0.15)' }}
+                  onClick={() => handleNewWordRating('easy')}
+                >
+                  I knew this ✓
+                </button>
+                <button
+                  style={{ ...styles.newRatingBtn, borderColor: '#4ade80', background: 'rgba(74,222,128,0.15)' }}
+                  onClick={() => handleNewWordRating('good')}
+                >
+                  New to me 📝
+                </button>
               </div>
-            )}
+            </div>
 
-            <div style={styles.newRatingRow}>
-              <button
-                style={{ ...styles.newRatingBtn, borderColor: '#4dabf7', background: 'rgba(77,171,247,0.15)' }}
-                onClick={() => handleNewWordRating('easy')}
-              >
-                I knew this ✓
-              </button>
-              <button
-                style={{ ...styles.newRatingBtn, borderColor: '#4ade80', background: 'rgba(74,222,128,0.15)' }}
-                onClick={() => handleNewWordRating('good')}
-              >
-                New to me 📝
-              </button>
+            <div style={styles.scoreBar}>
+              <span>New: {currentIdx + 1}/{totalNew}</span>
+              <span>XP: +{xpEarned}</span>
             </div>
           </div>
-
-          <div style={styles.scoreBar}>
-            <span>New: {currentIdx + 1}/{totalNew}</span>
-            <span>XP: +{xpEarned}</span>
-          </div>
+          <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
         </div>
       </div>
     );
@@ -551,7 +554,8 @@ export default function DailyReviewMode({
           icon={mode === 'listening' ? '👂' : mode === 'minimal-pairs' ? '🎯' : '🔄'}
           onExit={onExit}
         />
-        <div style={styles.main}>
+        <div className="content-row" style={styles.contentRow}>
+          <div style={styles.main}>
           <div style={styles.progressBar}>
             <div style={{ ...styles.progressFill, width: `${progress}%`, background: 'linear-gradient(90deg, #a855f7, #7c3aed)' }} />
           </div>
@@ -683,6 +687,8 @@ export default function DailyReviewMode({
             <span>Exercise: {exerciseScore}/{currentIdx + (exerciseFeedback ? 1 : 0)}</span>
             <span>XP: +{xpEarned}</span>
           </div>
+          </div>
+          <LessonChat {...chat} onWordClick={handleWordClick} activeWord={selectedWord?.word} onSpeak={onSpeak} />
         </div>
       </div>
     );
