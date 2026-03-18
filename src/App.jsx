@@ -412,8 +412,8 @@ export const stopSpeaking = () => {
   }
 };
 
-// Per-language volume boost for quieter TTS models
-const LANG_VOLUME_BOOST = { es: 1.45, fr: 1.15, el: 1.1, hi: 0.85, ar: 0.95, ko: 0.9, ja: 1.2, zh: 1.1 };
+// Per-language volume level (0.0-1.0, applied as audio.volume directly)
+const LANG_VOLUME = { es: 1.0, fr: 0.85, el: 0.8, hi: 0.55, ar: 0.65, ko: 0.6, ja: 0.9, zh: 0.8 };
 
 export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk', onProgress = null) => {
   // Normalize volume across TTS models
@@ -444,7 +444,7 @@ export const speakUkrainian = async (text, rate = 0.8, volume = 0.8, lang = 'uk'
     const audioUrl = URL.createObjectURL(audioBlob);
     const audio = new Audio(audioUrl);
     audio.playbackRate = rate;
-    audio.volume = Math.min(1.0, volume * (LANG_VOLUME_BOOST[lang] || 1.0));
+    audio.volume = Math.min(1.0, volume * (LANG_VOLUME[lang] || 1.0));
     currentAudio = audio;
 
     return new Promise((resolve) => {
