@@ -481,10 +481,34 @@ const SCRIPT_PATTERNS = {
   cjk: /[\u4E00-\u9FFF\u3400-\u4DBF\u3040-\u309F\u30A0-\u30FF]/,
 };
 
-/** Split text into alternating native-script/latin chunks for mixed TTS. */
+/**
+ * Split text into alternating native/english chunks for mixed TTS.
+ * For all languages: uses [EN]...[/EN] tags from LLM output.
+ * For non-Latin scripts: also splits by character script as fallback.
+ */
 function splitByScript(text, lang = 'uk') {
-  const scriptType = LANG_SCRIPT[lang] || 'cyrillic';
-  if (scriptType === 'latin') return []; // Can't split Latin-script languages
+  // First: check for [EN]...[/EN] tags (works for all languages)
+  const tagPattern = /\[EN\](.*?)\[\/EN\]/gi;
+  if (tagPattern.test(text)) {
+    tagPattern.lastIndex = 0;
+    const chunks = [];
+    let lastIndex = 0;
+    let match;
+    while ((match = tagPattern.exec(text)) !== null) {
+      const before = text.slice(lastIndex, match.index);
+      if (before.trim()) chunks.push({ type: 'native', text: before });
+      const english = match[1];
+      if (english.trim()) chunks.push({ type: 'latin', text: english });
+      lastIndex = match.index + match[0].length;
+    }
+    const after = text.slice(lastIndex);
+    if (after.trim()) chunks.push({ type: 'native', text: after });
+    return chunks;
+  }
+
+  // Fallback for non-Latin scripts: split by character script detection
+  const scriptType = LANG_SCRIPT[lang] || 'latin';
+  if (scriptType === 'latin') return []; // Can't detect without tags
   const nativePattern = SCRIPT_PATTERNS[scriptType];
   if (!nativePattern) return [];
 
@@ -508,19 +532,19 @@ function splitByScript(text, lang = 'uk') {
   return chunks;
 }
 
-/** Speak mixed-language text: native script via language model, Latin via English. */
+/** Strip [EN]...[/EN] tags from text for display. */
+export function stripEnTags(text) {
+  return text.replace(/\[EN\](.*?)\[\/EN\]/gi, '$1');
+}
+
+/** Speak mixed-language text: native via language model, [EN]-tagged text via English TTS. */
 const speakMixed = async (text, rate = 0.8, volume = 0.8, lang = 'uk') => {
-  const scriptType = LANG_SCRIPT[lang] || 'latin';
+  if (lang === 'en') return speakUkrainian(stripEnTags(text), rate, volume, 'en');
 
-  // Latin-script languages (de, es, fr) — send everything to their TTS
-  if (scriptType === 'latin' && lang !== 'en') {
-    return speakUkrainian(text, rate, volume, lang);
-  }
-
-  // Non-Latin-script languages — split and route English words to English TTS
+  // Split into native/English chunks
   const chunks = splitByScript(text, lang);
-  if (chunks.length <= 1 && (!chunks[0] || chunks[0].type === 'native')) {
-    return speakUkrainian(text, rate, volume, lang);
+  if (chunks.length === 0 || (chunks.length === 1 && chunks[0].type === 'native')) {
+    return speakUkrainian(stripEnTags(text), rate, volume, lang);
   }
   for (const chunk of chunks) {
     if (ttsCancelled) break;
