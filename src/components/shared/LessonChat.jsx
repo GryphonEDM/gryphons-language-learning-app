@@ -7,8 +7,9 @@ import SpeechPracticeModal from './SpeechPracticeModal.jsx';
  * Pass the result of useLessonChat() as props.
  */
 export default function LessonChat({ messages, input, setInput, loading, send, scrollRef, inputRef, onWordClick, activeWord, ttsHighlight, isSpeaking, speakWithHighlight, stopTts, chatSelectedWord, chatAddForm, setChatAddForm, dismissChatWord, handleChatAddToDict, handleChatSaveToDict, stt, toggleMic, micLang, langCode, onSpeak }) {
-  const targetLabel = langCode === 'ru' ? 'RU' : langCode === 'uk' ? 'UA' : 'EN';
-  const langName = langCode === 'ru' ? 'Russian' : 'Ukrainian';
+  const targetLabel = langCode === 'uk' ? 'UA' : (langCode || 'en').toUpperCase();
+  const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese', en: 'English' };
+  const langName = langNames[langCode] || 'Ukrainian';
   const [showPractice, setShowPractice] = useState(null); // null or word string
   const clickTimerRef = useRef(null);
   return (
