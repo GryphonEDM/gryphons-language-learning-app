@@ -1,0 +1,362 @@
+{
+  "lessonId": "emphasis-particles",
+  "nameEn": "Emphasis Particles & Sisters of كان",
+  "nameAr": "أدوات التوكيد وأخوات كان",
+  "icon": "⚡",
+  "tier": "B1",
+  "prerequisites": ["nominal-sentences"],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "qad-past-tense",
+      "title": "قَدْ with Past Tense — التَّوْكِيد بِـقَدْ",
+      "explanation": "The particle قَدْ (qad) placed before a past-tense verb confirms that the action has indeed taken place. It adds emphasis and certainty, much like 'indeed' or 'certainly' in English. When preceded by the لَـ prefix, forming لَقَدْ (laqad), the emphasis is even stronger. This combination is extremely common in formal speech, news broadcasts, and the Quran. Note that قَدْ can also appear before present-tense verbs, where it means 'may' or 'might' — but that is a different usage. In this section we focus on قَدْ + past tense = confirmed action.",
+      "tip": "Think of قَدْ before a past verb as underlining the verb — it stresses that the action really happened. لَقَدْ is like double-underlining it.",
+      "examples": [
+        {
+          "ar": "قَدْ ذَهَبَ",
+          "en": "He indeed went.",
+          "highlight": "قَدْ"
+        },
+        {
+          "ar": "لَقَدْ نَجَحَ",
+          "en": "He indeed succeeded.",
+          "highlight": "لَقَدْ"
+        },
+        {
+          "ar": "قَدْ وَصَلَ الضُّيُوفُ",
+          "en": "The guests have indeed arrived.",
+          "highlight": "قَدْ وَصَلَ"
+        },
+        {
+          "ar": "لَقَدْ فَهِمْتُ الدَّرْسَ",
+          "en": "I have indeed understood the lesson.",
+          "highlight": "لَقَدْ فَهِمْتُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does قَدْ express when placed before a past-tense verb?",
+          "options": [
+            "Doubt or uncertainty",
+            "A future intention",
+            "Confirmation that the action happened"
+          ],
+          "correctIndex": 2,
+          "explanation": "قَدْ before a past-tense verb confirms and emphasizes that the action has taken place. It functions like 'indeed' or 'certainly' in English."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between قَدْ ذَهَبَ and لَقَدْ ذَهَبَ?",
+          "options": [
+            "لَقَدْ is stronger emphasis than قَدْ alone",
+            "They mean the opposite of each other",
+            "قَدْ is past tense and لَقَدْ is future tense"
+          ],
+          "correctIndex": 0,
+          "explanation": "Both confirm that the action happened, but لَقَدْ (with the لَـ prefix) carries even stronger emphasis than قَدْ alone. Both translate to 'indeed' but لَقَدْ is more emphatic."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct translation of لَقَدْ فَهِمْتُ الدَّرْسَ.",
+          "options": [
+            "I will understand the lesson.",
+            "I might understand the lesson.",
+            "I have indeed understood the lesson."
+          ],
+          "correctIndex": 2,
+          "explanation": "لَقَدْ + past-tense verb فَهِمْتُ (I understood) expresses strong confirmation: 'I have indeed understood the lesson.'"
+        }
+      ]
+    },
+    {
+      "sectionId": "inna-and-sisters",
+      "title": "إِنَّ and Its Sisters — إِنَّ وَأَخَوَاتُهَا",
+      "explanation": "إِنَّ (inna) and its sisters are a group of particles that enter a nominal sentence and change the case of the subject (the اسْم of إِنَّ) from nominative to accusative, while the predicate (the خَبَر of إِنَّ) remains nominative. The six sisters are: إِنَّ (indeed, verily), أَنَّ (that — used in subordinate clauses), لَكِنَّ (but, however), لَعَلَّ (perhaps, maybe), لَيْتَ (if only, I wish), and كَأَنَّ (as if, as though). These particles are essential for expressive Arabic. They all follow the same grammatical rule: the noun after them takes the accusative case (مَنْصُوب), and the predicate stays nominative (مَرْفُوع).",
+      "tip": "Remember: إِنَّ and its sisters pull the subject DOWN to the accusative case. The predicate stays up in the nominative. This is the opposite of كَانَ and its sisters, which affect the predicate instead.",
+      "examples": [
+        {
+          "ar": "إِنَّ الطَّقْسَ جَمِيلٌ",
+          "en": "Indeed, the weather is beautiful.",
+          "highlight": "إِنَّ"
+        },
+        {
+          "ar": "أَعْلَمُ أَنَّ الامْتِحَانَ صَعْبٌ",
+          "en": "I know that the exam is difficult.",
+          "highlight": "أَنَّ"
+        },
+        {
+          "ar": "لَكِنَّ المُشْكِلَةَ كَبِيرَةٌ",
+          "en": "But the problem is big.",
+          "highlight": "لَكِنَّ"
+        },
+        {
+          "ar": "لَعَلَّ الجَوَّ يَتَحَسَّنُ",
+          "en": "Perhaps the weather will improve.",
+          "highlight": "لَعَلَّ"
+        },
+        {
+          "ar": "لَيْتَ الوَقْتَ يَعُودُ",
+          "en": "If only time would return.",
+          "highlight": "لَيْتَ"
+        },
+        {
+          "ar": "كَأَنَّ البَيْتَ قَصْرٌ",
+          "en": "It is as if the house is a palace.",
+          "highlight": "كَأَنَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence إِنَّ الطَّقْسَ جَمِيلٌ, why is الطَّقْسَ in the accusative case?",
+          "options": [
+            "Because it is the object of a verb",
+            "Because إِنَّ changes the subject of a nominal sentence to the accusative",
+            "Because it follows a preposition"
+          ],
+          "correctIndex": 1,
+          "explanation": "إِنَّ and its sisters change the subject (اسْم إِنَّ) from nominative to accusative. الطَّقْسَ has a fatha ending because it is the اسْم of إِنَّ. The predicate جَمِيلٌ remains nominative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which particle means 'if only' or 'I wish'?",
+          "options": [
+            "كَأَنَّ",
+            "لَعَلَّ",
+            "لَيْتَ"
+          ],
+          "correctIndex": 2,
+          "explanation": "لَيْتَ (layta) expresses a wish or longing — 'if only.' كَأَنَّ means 'as if' and لَعَلَّ means 'perhaps.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What case does the predicate (خَبَر) of إِنَّ take?",
+          "options": [
+            "Accusative (مَنْصُوب)",
+            "Genitive (مَجْرُور)",
+            "Nominative (مَرْفُوع)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The predicate of إِنَّ stays in the nominative case (مَرْفُوع). Only the subject (اسْم إِنَّ) changes to the accusative. So in إِنَّ الطَّقْسَ جَمِيلٌ, جَمِيلٌ keeps its nominative tanween."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence using لَكِنَّ (but):",
+          "options": [
+            "لَكِنَّ الطَّعَامُ لَذِيذٌ",
+            "لَكِنَّ الطَّعَامَ لَذِيذٌ",
+            "لَكِنَّ الطَّعَامِ لَذِيذٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "لَكِنَّ is a sister of إِنَّ, so the subject takes the accusative case: الطَّعَامَ (with fatha). The predicate لَذِيذٌ stays nominative. الطَّعَامُ (damma) and الطَّعَامِ (kasra) are incorrect cases here."
+        }
+      ]
+    },
+    {
+      "sectionId": "kana-and-sisters",
+      "title": "كَانَ and Its Sisters — كَانَ وَأَخَوَاتُهَا",
+      "explanation": "كَانَ (kana, 'was/to be') and its sisters are incomplete verbs (أَفْعَال نَاقِصَة) that enter a nominal sentence and modify it. Unlike إِنَّ, كَانَ keeps the subject in the nominative case (مَرْفُوع) but changes the predicate to the accusative case (مَنْصُوب). The main sisters of كَانَ are: كَانَ (was), أَصْبَحَ (became — in the morning), ظَلَّ (remained, kept on), بَقِيَ (stayed, continued), صَارَ (became, turned into), لَيْسَ (is not), and مَا زَالَ (still is, continues to be). These verbs conjugate for tense, person, and gender like regular verbs, but they are called 'incomplete' because they require a predicate to complete their meaning.",
+      "tip": "كَانَ and its sisters affect the PREDICATE (pulling it to accusative), while إِنَّ and its sisters affect the SUBJECT. This is the key distinction to remember.",
+      "examples": [
+        {
+          "ar": "كَانَ الوَلَدُ سَعِيدًا",
+          "en": "The boy was happy.",
+          "highlight": "كَانَ"
+        },
+        {
+          "ar": "أَصْبَحَ الجَوُّ بَارِدًا",
+          "en": "The weather became cold (in the morning).",
+          "highlight": "أَصْبَحَ"
+        },
+        {
+          "ar": "ظَلَّ الطَّالِبُ مُجْتَهِدًا",
+          "en": "The student remained diligent.",
+          "highlight": "ظَلَّ"
+        },
+        {
+          "ar": "صَارَ الطِّفْلُ رَجُلًا",
+          "en": "The child became a man.",
+          "highlight": "صَارَ"
+        },
+        {
+          "ar": "مَا زَالَ المَطَرُ مُسْتَمِرًّا",
+          "en": "The rain is still continuing.",
+          "highlight": "مَا زَالَ"
+        },
+        {
+          "ar": "بَقِيَ الأُسْتَاذُ وَاقِفًا",
+          "en": "The teacher stayed standing.",
+          "highlight": "بَقِيَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In كَانَ الوَلَدُ سَعِيدًا, why is سَعِيدًا in the accusative?",
+          "options": [
+            "Because it is the subject of كَانَ",
+            "Because كَانَ changes the predicate to accusative",
+            "Because it follows a preposition"
+          ],
+          "correctIndex": 1,
+          "explanation": "كَانَ and its sisters keep the subject nominative (الوَلَدُ with damma) but change the predicate to accusative (سَعِيدًا with tanween fatha). This is the defining grammatical feature of كَانَ وَأَخَوَاتُهَا."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of كَانَ's sisters means 'still is' or 'continues to be'?",
+          "options": [
+            "صَارَ",
+            "ظَلَّ",
+            "مَا زَالَ"
+          ],
+          "correctIndex": 2,
+          "explanation": "مَا زَالَ (ma zala) means 'still is' or 'continues to be.' صَارَ means 'became' and ظَلَّ means 'remained' or 'kept on.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct sentence using أَصْبَحَ (became — morning):",
+          "options": [
+            "أَصْبَحَ الجَوَّ بَارِدًا",
+            "أَصْبَحَ الجَوُّ بَارِدٌ",
+            "أَصْبَحَ الجَوُّ بَارِدًا"
+          ],
+          "correctIndex": 2,
+          "explanation": "أَصْبَحَ is a sister of كَانَ: subject stays nominative (الجَوُّ with damma) and predicate goes to accusative (بَارِدًا with tanween fatha). Option 1 wrongly puts the subject in accusative; option 2 wrongly keeps the predicate nominative."
+        }
+      ]
+    },
+    {
+      "sectionId": "inna-vs-kana",
+      "title": "How إِنَّ and كَانَ Interact with Sentences",
+      "explanation": "Understanding the difference between إِنَّ and كَانَ is crucial for correct Arabic grammar. Both enter nominal sentences, but they affect different parts. إِنَّ and its sisters change the SUBJECT to accusative while the predicate stays nominative. كَانَ and its sisters keep the subject nominative while changing the PREDICATE to accusative. Compare: البَيْتُ كَبِيرٌ (The house is big — both nominative) → إِنَّ البَيْتَ كَبِيرٌ (Indeed the house is big — subject accusative, predicate nominative) → كَانَ البَيْتُ كَبِيرًا (The house was big — subject nominative, predicate accusative). When both appear together, each applies its own rule: إِنَّ الوَلَدَ كَانَ سَعِيدًا (Indeed the boy was happy) — إِنَّ takes الوَلَدَ as its اسْم in accusative, and كَانَ سَعِيدًا functions as the خَبَر of إِنَّ with the predicate of كَانَ in accusative.",
+      "tip": "A helpful mnemonic: إِنَّ affects what comes first (the subject), كَانَ affects what comes last (the predicate). When they combine, each one does its own job independently.",
+      "examples": [
+        {
+          "ar": "إِنَّ البَيْتَ كَبِيرٌ",
+          "en": "Indeed, the house is big. (subject → accusative)",
+          "highlight": "البَيْتَ"
+        },
+        {
+          "ar": "كَانَ البَيْتُ كَبِيرًا",
+          "en": "The house was big. (predicate → accusative)",
+          "highlight": "كَبِيرًا"
+        },
+        {
+          "ar": "إِنَّ الوَلَدَ كَانَ سَعِيدًا",
+          "en": "Indeed, the boy was happy. (both rules apply)",
+          "highlight": "الوَلَدَ … سَعِيدًا"
+        },
+        {
+          "ar": "عَلِمْتُ أَنَّ الطَّالِبَ كَانَ مُجْتَهِدًا",
+          "en": "I knew that the student had been diligent.",
+          "highlight": "أَنَّ الطَّالِبَ … مُجْتَهِدًا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In إِنَّ الوَلَدَ كَانَ سَعِيدًا, why is الوَلَدَ in the accusative?",
+          "options": [
+            "Because كَانَ changed it to accusative",
+            "Because it is the object of a verb",
+            "Because إِنَّ changes the subject to accusative"
+          ],
+          "correctIndex": 2,
+          "explanation": "الوَلَدَ is the اسْم (subject) of إِنَّ, so it takes the accusative case. كَانَ سَعِيدًا is the خَبَر (predicate) of إِنَّ, and within it, سَعِيدًا is the predicate of كَانَ in the accusative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which part of the sentence does إِنَّ affect, and which does كَانَ affect?",
+          "options": [
+            "Both affect the predicate",
+            "إِنَّ affects the subject; كَانَ affects the predicate",
+            "إِنَّ affects the predicate; كَانَ affects the subject"
+          ],
+          "correctIndex": 1,
+          "explanation": "إِنَّ changes the subject to accusative (while predicate stays nominative). كَانَ keeps the subject nominative but changes the predicate to accusative. They affect opposite parts of the sentence."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert الطَّقْسُ بَارِدٌ (The weather is cold) using كَانَ:",
+          "options": [
+            "كَانَ الطَّقْسَ بَارِدًا",
+            "كَانَ الطَّقْسُ بَارِدًا",
+            "كَانَ الطَّقْسُ بَارِدٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "كَانَ keeps the subject nominative: الطَّقْسُ (with damma). The predicate changes to accusative: بَارِدًا (with tanween fatha). Option 1 incorrectly puts the subject in accusative; option 3 incorrectly leaves the predicate nominative."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-usage-patterns",
+      "title": "Common Usage Patterns in Daily Speech",
+      "explanation": "These particles and verbs appear constantly in everyday Arabic. إِنَّ is used at the beginning of statements for emphasis and is especially common after قَالَ (he said): قَالَ إِنَّ الطَّعَامَ جَاهِزٌ (He said that the food is ready). أَنَّ appears in indirect speech and after verbs of thinking, knowing, and believing: أَعْتَقِدُ أَنَّ هَذَا صَحِيحٌ (I believe that this is correct). كَانَ is used for narrating past events: كَانَ أَبِي مُعَلِّمًا (My father was a teacher). مَا زَالَ expresses ongoing states: مَا زِلْتُ أَدْرُسُ (I am still studying). صَارَ describes transformation: صَارَ الجَوُّ حَارًّا (The weather became hot). These structures form the backbone of fluent Arabic expression.",
+      "tip": "In spoken Arabic, إِنَّ is sometimes softened to إِنْ or dropped entirely. However, in formal writing and Modern Standard Arabic, using these particles correctly marks you as a proficient speaker.",
+      "examples": [
+        {
+          "ar": "قَالَ إِنَّ الطَّعَامَ جَاهِزٌ",
+          "en": "He said that the food is ready.",
+          "highlight": "إِنَّ"
+        },
+        {
+          "ar": "أَعْتَقِدُ أَنَّ هَذَا صَحِيحٌ",
+          "en": "I believe that this is correct.",
+          "highlight": "أَنَّ"
+        },
+        {
+          "ar": "كَانَ أَبِي مُعَلِّمًا",
+          "en": "My father was a teacher.",
+          "highlight": "كَانَ … مُعَلِّمًا"
+        },
+        {
+          "ar": "مَا زِلْتُ أَدْرُسُ العَرَبِيَّةَ",
+          "en": "I am still studying Arabic.",
+          "highlight": "مَا زِلْتُ"
+        },
+        {
+          "ar": "صَارَ الجَوُّ حَارًّا بَعْدَ الظُّهْرِ",
+          "en": "The weather became hot in the afternoon.",
+          "highlight": "صَارَ … حَارًّا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I believe that the lesson is easy' using أَنَّ?",
+          "options": [
+            "أَعْتَقِدُ إِنَّ الدَّرْسُ سَهْلٌ",
+            "أَعْتَقِدُ أَنَّ الدَّرْسَ سَهْلٌ",
+            "أَعْتَقِدُ أَنَّ الدَّرْسُ سَهْلًا"
+          ],
+          "correctIndex": 1,
+          "explanation": "After the verb أَعْتَقِدُ (I believe), we use أَنَّ (not إِنَّ). أَنَّ changes the subject to accusative: الدَّرْسَ (with fatha). The predicate سَهْلٌ stays nominative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Translate: مَا زِلْتُ أَدْرُسُ العَرَبِيَّةَ",
+          "options": [
+            "I stopped studying Arabic.",
+            "I used to study Arabic.",
+            "I am still studying Arabic."
+          ],
+          "correctIndex": 2,
+          "explanation": "مَا زِلْتُ (first person of مَا زَالَ) means 'I still' or 'I continue to.' مَا زِلْتُ أَدْرُسُ العَرَبِيَّةَ = I am still studying Arabic."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct way to say 'My father was a doctor':",
+          "options": [
+            "كَانَ أَبِي طَبِيبٌ",
+            "كَانَ أَبِي طَبِيبًا",
+            "كَانَ أَبَي طَبِيبًا"
+          ],
+          "correctIndex": 1,
+          "explanation": "كَانَ keeps the subject nominative (أَبِي — already in a possessive construction) and changes the predicate to accusative: طَبِيبًا (with tanween fatha). Option 1 incorrectly leaves the predicate nominative."
+        }
+      ]
+    }
+  ]
+}

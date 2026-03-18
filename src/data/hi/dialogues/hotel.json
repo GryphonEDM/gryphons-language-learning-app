@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameHi": "होटल चेक-इन",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Jaipur. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "रिसेप्शनिस्ट" },
+    "player": { "name": "मेहमान" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "नमस्ते! हमारे होटल में आपका स्वागत है।", "translation": "Hello! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["नमस्ते, मेरा बुकिंग है", "नमस्ते, मैंने कमरा बुक किया है", "नमस्ते, मेरा रिज़र्वेशन है", "नमस्ते, मेरी बुकिंग है"], "keyWords": ["नमस्ते", "बुकिंग"], "hint": "नमस्ते, मेरा बुकिंग है।" },
+    { "speaker": "npc", "text": "बहुत अच्छा! किस नाम से बुकिंग है?", "translation": "Very good! Under what name is the booking?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["एक रात के लिए कमरे का किराया कितना है?", "कमरे का किराया क्या है?", "एक रात का कितना है?", "कमरा कितने का है प्रति रात?"], "keyWords": ["कमरे", "किराया", "रात"], "hint": "एक रात के लिए कमरे का किराया कितना है?" },
+    { "speaker": "npc", "text": "सिंगल कमरा तीन हज़ार रुपये प्रति रात है। नाश्ता शामिल है।", "translation": "A single room is three thousand rupees per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["क्या वाई-फाई है?", "यहाँ वाई-फाई है?", "क्या यहाँ वाई-फाई उपलब्ध है?", "वाई-फाई है क्या?"], "keyWords": ["वाई-फाई"], "hint": "क्या वाई-फाई है?" },
+    { "speaker": "npc", "text": "हाँ, पूरे होटल में मुफ्त वाई-फाई है। यह आपकी चाबी है। कमरा नंबर तीन सौ पाँच।", "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room number three hundred five." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["चेक-आउट किस समय है?", "कमरा कब खाली करना है?", "चेक-आउट का समय क्या है?", "कब तक कमरा खाली करना होगा?"], "keyWords": ["चेक-आउट", "समय"], "hint": "चेक-आउट किस समय है?" },
+    { "speaker": "npc", "text": "चेक-आउट दोपहर बारह बजे तक है। आपके ठहराव की शुभकामनाएँ!", "translation": "Check-out is by twelve noon. Best wishes for your stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["बहुत धन्यवाद!", "शुक्रिया!", "बहुत-बहुत धन्यवाद!", "धन्यवाद!"], "keyWords": ["धन्यवाद"], "hint": "बहुत धन्यवाद!" }
+  ]
+}

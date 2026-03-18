@@ -1,0 +1,441 @@
+{
+  "lessonId": "reflexive-verbs",
+  "nameEn": "Reflexive Verbs (Reflexivverben)",
+  "nameDe": "Reflexivverben",
+  "icon": "🪞",
+  "tier": "A2",
+  "prerequisites": [
+    "verbs-present",
+    "cases-nominative-accusative"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "what-are-reflexive-verbs",
+      "title": "What Are Reflexive Verbs?",
+      "explanation": "Reflexive verbs are verbs where the subject and the object are the same person. In German, they use a reflexive pronoun (sich in the infinitive). The reflexive pronoun changes depending on the subject: ich → mich, du → dich, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. These are the accusative reflexive pronouns. Example: sich waschen (to wash oneself) → Ich wasche mich. (I wash myself.) Many verbs that are not reflexive in English are reflexive in German.",
+      "tip": "The reflexive pronoun 'sich' in the infinitive form (sich waschen) changes to match the subject: mich, dich, sich, uns, euch, sich.",
+      "examples": [
+        {
+          "de": "Ich wasche mich.",
+          "en": "I wash myself.",
+          "highlight": "mich"
+        },
+        {
+          "de": "Du wäschst dich.",
+          "en": "You wash yourself.",
+          "highlight": "dich"
+        },
+        {
+          "de": "Er wäscht sich.",
+          "en": "He washes himself.",
+          "highlight": "sich"
+        },
+        {
+          "de": "Wir waschen uns.",
+          "en": "We wash ourselves.",
+          "highlight": "uns"
+        },
+        {
+          "de": "Ihr wascht euch.",
+          "en": "You all wash yourselves.",
+          "highlight": "euch"
+        },
+        {
+          "de": "Sie waschen sich.",
+          "en": "They wash themselves.",
+          "highlight": "sich"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which reflexive pronoun goes with 'ich'?",
+          "options": [
+            "sich",
+            "mich",
+            "dich"
+          ],
+          "correctIndex": 1,
+          "explanation": "The accusative reflexive pronoun for 'ich' is 'mich': Ich wasche mich."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each subject pronoun to its accusative reflexive pronoun:",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "mich"
+            },
+            {
+              "left": "du",
+              "right": "dich"
+            },
+            {
+              "left": "er/sie/es",
+              "right": "sich"
+            },
+            {
+              "left": "wir",
+              "right": "uns"
+            }
+          ],
+          "explanation": "Accusative reflexive pronouns: ich→mich, du→dich, er/sie/es→sich, wir→uns, ihr→euch, sie/Sie→sich."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Du wäschst ___. (You wash yourself.)",
+          "acceptedAnswers": [
+            "dich"
+          ],
+          "hint": "The reflexive pronoun for 'du' in the accusative",
+          "explanation": "The accusative reflexive pronoun for 'du' is 'dich': Du wäschst dich."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the reflexive pronoun for 'ihr'?",
+          "options": [
+            "uns",
+            "sich",
+            "euch"
+          ],
+          "correctIndex": 2,
+          "explanation": "The accusative reflexive pronoun for 'ihr' is 'euch': Ihr wascht euch."
+        }
+      ]
+    },
+    {
+      "sectionId": "daily-routine",
+      "title": "Daily Routine Reflexive Verbs",
+      "explanation": "Many daily routine activities use reflexive verbs in German, even though their English equivalents are not reflexive. Common examples: sich waschen (to wash oneself), sich anziehen (to get dressed), sich ausziehen (to get undressed), sich duschen (to shower), sich kämmen (to comb one's hair), sich rasieren (to shave), sich schminken (to put on makeup). Note that 'sich anziehen' and 'sich ausziehen' are separable reflexive verbs — the prefix separates in main clauses: Ich ziehe mich an.",
+      "tip": "With separable reflexive verbs, the reflexive pronoun goes between the stem and the separated prefix: Ich ziehe mich an (not 'Ich ziehe an mich').",
+      "examples": [
+        {
+          "de": "Ich dusche mich jeden Morgen.",
+          "en": "I shower every morning.",
+          "highlight": "dusche mich"
+        },
+        {
+          "de": "Er rasiert sich vor dem Frühstück.",
+          "en": "He shaves before breakfast.",
+          "highlight": "rasiert sich"
+        },
+        {
+          "de": "Sie schminkt sich im Badezimmer.",
+          "en": "She puts on makeup in the bathroom.",
+          "highlight": "schminkt sich"
+        },
+        {
+          "de": "Ich ziehe mich an.",
+          "en": "I get dressed.",
+          "highlight": "ziehe mich an"
+        },
+        {
+          "de": "Du kämmst dich schnell.",
+          "en": "You comb your hair quickly.",
+          "highlight": "kämmst dich"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ sich jeden Morgen. (He shaves every morning.) — use 'rasieren'",
+          "acceptedAnswers": [
+            "rasiert"
+          ],
+          "hint": "Conjugate 'rasieren' for er/sie/es",
+          "explanation": "sich rasieren for er: Er rasiert sich. The verb takes the regular -t ending for er/sie/es."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I get dressed' using 'sich anziehen'?",
+          "options": [
+            "Ich anziehe mich.",
+            "Ich ziehe mich an.",
+            "Ich mich ziehe an."
+          ],
+          "correctIndex": 1,
+          "explanation": "'sich anziehen' is separable: the prefix 'an' goes to the end, and the reflexive pronoun 'mich' follows the conjugated verb: Ich ziehe mich an."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ uns nach dem Sport. (We shower after sports.) — use 'duschen'",
+          "acceptedAnswers": [
+            "duschen"
+          ],
+          "hint": "Conjugate 'duschen' for wir",
+          "explanation": "sich duschen for wir: Wir duschen uns. The wir-form matches the infinitive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses 'sich kämmen' (to comb one's hair) for 'du'?",
+          "options": [
+            "Du kämmt dich.",
+            "Du kämmst dich.",
+            "Du kämmst sich."
+          ],
+          "correctIndex": 1,
+          "explanation": "For 'du': kämmst (du-form with -st ending) + dich (reflexive pronoun for du): Du kämmst dich."
+        }
+      ]
+    },
+    {
+      "sectionId": "dative-reflexive",
+      "title": "Reflexive Verbs with Dative Pronouns",
+      "explanation": "When a reflexive verb also has a direct object (accusative), the reflexive pronoun shifts to the dative case. The dative reflexive pronouns are: ich → mir, du → dir, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. Notice that only the ich and du forms differ from the accusative (mich→mir, dich→dir). This happens with body parts and clothing: sich die Hände waschen (to wash one's hands), sich die Zähne putzen (to brush one's teeth), sich die Haare kämmen (to comb one's hair). The body part is the accusative object, so the reflexive pronoun becomes dative.",
+      "tip": "mir/dir (dative) vs. mich/dich (accusative): only ich and du forms change. sich, uns, and euch stay the same in both cases.",
+      "examples": [
+        {
+          "de": "Ich wasche mir die Hände.",
+          "en": "I wash my hands.",
+          "highlight": "mir"
+        },
+        {
+          "de": "Du putzt dir die Zähne.",
+          "en": "You brush your teeth.",
+          "highlight": "dir"
+        },
+        {
+          "de": "Er kämmt sich die Haare.",
+          "en": "He combs his hair.",
+          "highlight": "sich"
+        },
+        {
+          "de": "Wir waschen uns die Hände.",
+          "en": "We wash our hands.",
+          "highlight": "uns"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Ich wasche ___ die Hände. (I wash my hands.) Which reflexive pronoun is correct?",
+          "options": [
+            "mich",
+            "mir",
+            "sich"
+          ],
+          "correctIndex": 1,
+          "explanation": "Because 'die Hände' is the accusative object, the reflexive pronoun must be dative: 'mir' (not 'mich'). Ich wasche mir die Hände."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Du putzt ___ die Zähne. (You brush your teeth.)",
+          "acceptedAnswers": [
+            "dir"
+          ],
+          "hint": "Dative reflexive pronoun for 'du'",
+          "explanation": "With a body-part object, the reflexive pronoun is dative: du → dir. Du putzt dir die Zähne."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is it 'Ich wasche mir die Hände' and not 'Ich wasche mich die Hände'?",
+          "options": [
+            "Because 'Hände' is a dative noun",
+            "Because 'die Hände' is the accusative object, so the reflexive pronoun shifts to dative",
+            "Because 'waschen' always uses the dative"
+          ],
+          "correctIndex": 1,
+          "explanation": "A sentence can only have one accusative object. Since 'die Hände' fills the accusative slot, the reflexive pronoun shifts to the dative: mir instead of mich."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each subject to its dative reflexive pronoun:",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "mir"
+            },
+            {
+              "left": "du",
+              "right": "dir"
+            },
+            {
+              "left": "er/sie/es",
+              "right": "sich"
+            },
+            {
+              "left": "wir",
+              "right": "uns"
+            }
+          ],
+          "explanation": "Dative reflexive pronouns: ich→mir, du→dir, er/sie/es→sich, wir→uns, ihr→euch, sie/Sie→sich. Only ich and du differ from the accusative forms."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-reflexive-verbs",
+      "title": "Common Reflexive Verbs",
+      "explanation": "Many German verbs are inherently reflexive — they always require 'sich' and often have no reflexive equivalent in English. sich freuen (to be happy/glad), sich freuen auf + Akk. (to look forward to), sich interessieren für (to be interested in), sich erinnern an + Akk. (to remember), sich fühlen (to feel), sich setzen (to sit down), sich treffen (to meet up), sich beeilen (to hurry). Pay attention to the prepositions that follow these verbs, as they are fixed.",
+      "tip": "Many reflexive verbs come with a fixed preposition: sich freuen auf (look forward to), sich interessieren für (be interested in), sich erinnern an (remember).",
+      "examples": [
+        {
+          "de": "Ich freue mich auf das Wochenende.",
+          "en": "I'm looking forward to the weekend.",
+          "highlight": "freue mich auf"
+        },
+        {
+          "de": "Er interessiert sich für Musik.",
+          "en": "He is interested in music.",
+          "highlight": "interessiert sich für"
+        },
+        {
+          "de": "Erinnerst du dich an den Film?",
+          "en": "Do you remember the film?",
+          "highlight": "Erinnerst du dich an"
+        },
+        {
+          "de": "Ich fühle mich müde.",
+          "en": "I feel tired.",
+          "highlight": "fühle mich"
+        },
+        {
+          "de": "Bitte setzen Sie sich!",
+          "en": "Please sit down! (formal)",
+          "highlight": "setzen Sie sich"
+        },
+        {
+          "de": "Wir treffen uns um acht Uhr.",
+          "en": "We're meeting at eight o'clock.",
+          "highlight": "treffen uns"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ mich auf die Ferien. (I'm looking forward to the holidays.) — use 'freuen'",
+          "acceptedAnswers": [
+            "freue"
+          ],
+          "hint": "Conjugate 'freuen' for ich",
+          "explanation": "sich freuen auf: Ich freue mich auf die Ferien. The ich-form ending is -e."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is interested in art'?",
+          "options": [
+            "Sie interessiert für Kunst.",
+            "Sie interessiert sich für Kunst.",
+            "Sie sich interessiert für Kunst."
+          ],
+          "correctIndex": 1,
+          "explanation": "sich interessieren für: Sie interessiert sich für Kunst. The reflexive pronoun 'sich' comes after the conjugated verb."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ uns jeden Freitag. (We meet every Friday.) — use 'treffen'",
+          "acceptedAnswers": [
+            "treffen"
+          ],
+          "hint": "Conjugate 'treffen' for wir",
+          "explanation": "sich treffen: Wir treffen uns jeden Freitag. The wir-form matches the infinitive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which preposition follows 'sich erinnern' (to remember)?",
+          "options": [
+            "für",
+            "auf",
+            "an"
+          ],
+          "correctIndex": 2,
+          "explanation": "sich erinnern an + accusative: Ich erinnere mich an den Urlaub (I remember the vacation)."
+        }
+      ]
+    },
+    {
+      "sectionId": "meaning-change",
+      "title": "Verbs That Change Meaning with sich",
+      "explanation": "Some German verbs exist in both a reflexive and a non-reflexive form, but with different meanings. vorstellen: jemanden vorstellen = to introduce someone, sich vorstellen = to imagine. anmelden: jemanden anmelden = to register someone, sich anmelden = to sign up / register oneself. umziehen: jemanden umziehen = to change someone's clothes, sich umziehen = to change one's own clothes (also: to move/relocate without sich). unterhalten: jemanden unterhalten = to entertain someone, sich unterhalten = to have a conversation. ärgern: jemanden ärgern = to annoy someone, sich ärgern (über) = to be annoyed (about).",
+      "tip": "Always check whether 'sich' changes the meaning! 'vorstellen' (introduce) vs. 'sich vorstellen' (imagine) is a classic pair.",
+      "examples": [
+        {
+          "de": "Ich stelle meinen Freund vor.",
+          "en": "I introduce my friend.",
+          "highlight": "stelle ... vor"
+        },
+        {
+          "de": "Ich stelle mir ein Haus am Meer vor.",
+          "en": "I imagine a house by the sea.",
+          "highlight": "stelle mir ... vor"
+        },
+        {
+          "de": "Er ärgert seinen Bruder.",
+          "en": "He annoys his brother.",
+          "highlight": "ärgert"
+        },
+        {
+          "de": "Er ärgert sich über das Wetter.",
+          "en": "He is annoyed about the weather.",
+          "highlight": "ärgert sich"
+        },
+        {
+          "de": "Sie unterhält die Gäste.",
+          "en": "She entertains the guests.",
+          "highlight": "unterhält"
+        },
+        {
+          "de": "Sie unterhalten sich über Politik.",
+          "en": "They are having a conversation about politics.",
+          "highlight": "unterhalten sich"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'sich vorstellen' mean?",
+          "options": [
+            "to introduce someone",
+            "to imagine",
+            "to present a project"
+          ],
+          "correctIndex": 1,
+          "explanation": "'vorstellen' = to introduce (someone), but 'sich vorstellen' = to imagine. Note: sich vorstellen uses the dative reflexive (Ich stelle mir vor)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Er ärgert sich über den Lärm.' What does this mean?",
+          "options": [
+            "He annoys the noise.",
+            "He is annoyed about the noise.",
+            "He argues about the noise."
+          ],
+          "correctIndex": 1,
+          "explanation": "sich ärgern über = to be annoyed about. Without 'sich', 'ärgern' means to annoy someone else."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Kannst du ___ das vorstellen? (Can you imagine that?) — dative reflexive for du",
+          "acceptedAnswers": [
+            "dir"
+          ],
+          "hint": "sich vorstellen (to imagine) uses the dative reflexive pronoun",
+          "explanation": "sich vorstellen (to imagine) takes a dative reflexive pronoun: du → dir. Kannst du dir das vorstellen?"
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each verb form to its meaning:",
+          "pairs": [
+            {
+              "left": "vorstellen",
+              "right": "to introduce"
+            },
+            {
+              "left": "sich vorstellen",
+              "right": "to imagine"
+            },
+            {
+              "left": "ärgern",
+              "right": "to annoy"
+            },
+            {
+              "left": "sich ärgern",
+              "right": "to be annoyed"
+            }
+          ],
+          "explanation": "Adding 'sich' changes the meaning: vorstellen (introduce) → sich vorstellen (imagine), ärgern (annoy) → sich ärgern (be annoyed)."
+        }
+      ]
+    }
+  ]
+}

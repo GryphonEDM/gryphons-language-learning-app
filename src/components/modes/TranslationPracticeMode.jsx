@@ -39,7 +39,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const getFilteredWords = useCallback((cat, cefr) => {
     if (cat) {
       return (cat.words || []).map(w => ({
-        uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
+        [langCode]: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
         source: w.source || cat.setId,
         examples: w.examples || [], examplesEn: w.examplesEn || [],
       }));
@@ -54,7 +54,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
           if (key && !seen.has(key)) {
             seen.add(key);
             filtered.push({
-              uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
+              [langCode]: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
               source: w.source || set.setId,
               examples: w.examples || [], examplesEn: w.examplesEn || '',
             });
@@ -170,7 +170,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
 
     if (onTrackProgress) {
       onTrackProgress('translation', {
-        word: currentWord[langCode] || currentWord.uk,
+        word: currentWord[langCode],
         correct: isCorrect,
         direction
       });

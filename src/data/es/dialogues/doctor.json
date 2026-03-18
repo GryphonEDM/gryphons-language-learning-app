@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameEs": "En el médico",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Madrid. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Doctor" },
+    "player": { "name": "Paciente" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "¡Buenos días! ¿Qué le pasa?", "translation": "Good morning! What is the matter?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["Tengo dolor de cabeza y fiebre", "Me duele la cabeza y tengo fiebre", "Tengo un dolor de cabeza y fiebre", "Me duele mucho la cabeza y tengo fiebre"], "keyWords": ["cabeza", "fiebre"], "hint": "Tengo dolor de cabeza y fiebre." },
+    { "speaker": "npc", "text": "¿Desde cuándo se siente mal?", "translation": "Since when have you been feeling unwell?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["Desde ayer", "Desde ayer por la tarde", "Desde ayer por la mañana", "Empezó ayer"], "keyWords": ["ayer"], "hint": "Desde ayer." },
+    { "speaker": "npc", "text": "Entiendo. ¿Tiene otros síntomas? ¿Tos, resfriado?", "translation": "I see. Do you have other symptoms? Cough, cold?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["Sí, también tengo tos", "Sí, tengo tos también", "Sí, y también tos", "Sí, estoy tosiendo también"], "keyWords": ["Sí", "tos"], "hint": "Sí, también tengo tos." },
+    { "speaker": "npc", "text": "Le voy a recetar un medicamento. Tómelo tres veces al día después de comer.", "translation": "I will prescribe a medication. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["¿Necesito volver?", "¿Tengo que regresar?", "¿Debo volver a la consulta?", "¿Necesito una cita de seguimiento?"], "keyWords": ["volver"], "hint": "¿Necesito volver?" },
+    { "speaker": "npc", "text": "Sí, vuelva en una semana. Si empeora, llame de inmediato.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["Gracias, doctor", "Muchas gracias, doctor", "Se lo agradezco, doctor", "Gracias!"], "keyWords": ["Gracias"], "hint": "Gracias, doctor." }
+  ]
+}

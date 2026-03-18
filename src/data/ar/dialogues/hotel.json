@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameAr": "تسجيل الدخول في الفندق",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Amman. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "موظف الاستقبال" },
+    "player": { "name": "نزيل" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "أهلاً وسهلاً! مرحباً بك في فندقنا.", "translation": "Welcome! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["مرحباً، عندي حجز", "أهلاً، لدي حجز", "مرحباً، أنا عندي حجز", "السلام عليكم، عندي حجز"], "keyWords": ["مرحباً", "حجز"], "hint": "مرحباً، عندي حجز" },
+    { "speaker": "npc", "text": "تفضل! على أي اسم الحجز؟", "translation": "Please! Under what name is the reservation?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["كم سعر الغرفة لليلة؟", "كم تكلفة الغرفة في الليلة؟", "بكم الغرفة لليلة الواحدة؟", "ما هو سعر الليلة؟"], "keyWords": ["سعر", "الغرفة", "الليلة"], "hint": "كم سعر الغرفة لليلة؟" },
+    { "speaker": "npc", "text": "الغرفة المفردة بخمسين ديناراً في الليلة. الفطور مشمول.", "translation": "A single room is fifty dinars per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["هل يوجد واي فاي؟", "هل عندكم واي فاي؟", "في واي فاي؟", "هل هناك إنترنت؟"], "keyWords": ["واي فاي"], "hint": "هل يوجد واي فاي؟" },
+    { "speaker": "npc", "text": "نعم، الواي فاي مجاني في كل الفندق. تفضل المفتاح. غرفتك رقم ثلاثمئة وخمسة.", "translation": "Yes, Wi-Fi is free throughout the hotel. Here is the key. Your room is number three hundred five." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["متى موعد تسليم الغرفة؟", "في أي ساعة المغادرة؟", "متى وقت المغادرة؟", "متى لازم أسلم الغرفة؟"], "keyWords": ["المغادرة", "متى"], "hint": "متى موعد المغادرة؟" },
+    { "speaker": "npc", "text": "المغادرة قبل الساعة الثانية عشرة ظهراً. أتمنى لك إقامة سعيدة!", "translation": "Check-out is before twelve noon. I wish you a pleasant stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["شكراً جزيلاً", "شكراً!", "أشكرك كثيراً", "ممتن جداً"], "keyWords": ["شكراً"], "hint": "شكراً جزيلاً" }
+  ]
+}

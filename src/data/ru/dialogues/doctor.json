@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameRu": "У врача",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Moscow. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Врач" },
+    "player": { "name": "Пациент" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Здравствуйте! На что жалуетесь?", "translation": "Hello! What are your complaints?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["У меня болит голова и температура", "У меня головная боль и температура", "Голова болит и есть температура", "У меня сильная головная боль и жар"], "keyWords": ["голова", "температура"], "hint": "У меня болит голова и температура." },
+    { "speaker": "npc", "text": "Как давно вы болеете?", "translation": "How long have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["Со вчерашнего дня", "С вчера", "Со вчера", "Началось вчера"], "keyWords": ["вчера"], "hint": "Со вчерашнего дня." },
+    { "speaker": "npc", "text": "Понятно. Есть ли другие симптомы? Кашель, насморк?", "translation": "I see. Are there other symptoms? Cough, runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["Да, ещё кашель", "Да, у меня ещё кашель", "Да, также есть кашель", "Да, и кашель тоже"], "keyWords": ["Да", "кашель"], "hint": "Да, ещё кашель." },
+    { "speaker": "npc", "text": "Я выпишу вам лекарство. Принимайте его три раза в день после еды.", "translation": "I will prescribe medicine. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["Нужно ли прийти ещё раз?", "Мне нужно вернуться?", "Надо ли приходить снова?", "Когда прийти на повторный приём?"], "keyWords": ["прийти"], "hint": "Нужно ли прийти ещё раз?" },
+    { "speaker": "npc", "text": "Да, приходите через неделю. Если станет хуже, звоните сразу.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["Спасибо, доктор", "Большое спасибо, доктор", "Благодарю вас, доктор", "Спасибо!"], "keyWords": ["Спасибо"], "hint": "Спасибо, доктор." }
+  ]
+}

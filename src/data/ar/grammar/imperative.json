@@ -1,0 +1,305 @@
+{
+  "lessonId": "imperative",
+  "nameEn": "Imperative Mood (الأمر)",
+  "nameAr": "فعل الأمر",
+  "icon": "👉",
+  "tier": "A1",
+  "prerequisites": [
+    "present-tense"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "forming-imperatives",
+      "title": "Forming the Imperative from the Present Tense",
+      "explanation": "The Arabic imperative (فعل الأمر) is used to give commands and requests. It is formed from the present tense (المضارع) of the أنتَ form in three steps: (1) Remove the present-tense prefix تـ. (2) Look at the first letter that remains — if it has a sukun (no vowel), you must add a helping vowel at the beginning called hamzat al-wasl (اِ). (3) The helping vowel is usually اِ (kasra), but if the internal vowel of the verb is ḍamma (ـُـ), the helping vowel becomes اُ (ḍamma). For example: تَكْتُبُ → كْتُبْ → اُكْتُبْ (write!). Another example: تَجْلِسُ → جْلِسْ → اِجْلِسْ (sit!). If removing the prefix leaves a voweled letter (no sukun), no hamza is needed — for example: تَقُولُ → قُلْ (say!).",
+      "tip": "The key rule: remove تـ from the أنتَ present form. If what remains starts with a consonant cluster (sukun), add اِ (or اُ if the verb has a ḍamma vowel). If the remaining letter already has a vowel, no hamza is needed.",
+      "examples": [
+        {
+          "ar": "تَكْتُبُ → اُكْتُبْ",
+          "en": "you write → Write! (the internal vowel is ḍamma, so the hamza takes ḍamma too)",
+          "highlight": "اُكْتُبْ"
+        },
+        {
+          "ar": "تَجْلِسُ → اِجْلِسْ",
+          "en": "you sit → Sit! (the internal vowel is kasra, so the hamza takes kasra)",
+          "highlight": "اِجْلِسْ"
+        },
+        {
+          "ar": "تَفْتَحُ → اِفْتَحْ",
+          "en": "you open → Open! (default hamza with kasra)",
+          "highlight": "اِفْتَحْ"
+        },
+        {
+          "ar": "تَقْرَأُ → اِقْرَأْ",
+          "en": "you read → Read! (remove prefix, add hamzat al-wasl)",
+          "highlight": "اِقْرَأْ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the first step in forming the imperative from the present tense?",
+          "options": [
+            "Add the prefix اِ",
+            "Remove the present-tense prefix تـ",
+            "Change the last vowel to sukun"
+          ],
+          "correctIndex": 1,
+          "explanation": "The first step is always to remove the present-tense prefix تـ from the أنتَ form. Then you check whether a hamzat al-wasl is needed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The present tense form is تَذْهَبُ (you go). What is the imperative?",
+          "options": [
+            "اُذْهَبْ",
+            "اِذْهَبْ",
+            "ذْهَبْ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Remove تـ to get ذْهَبْ. The first letter has sukun, so we add hamzat al-wasl. The internal vowel is fatḥa (not ḍamma), so the hamza takes kasra: اِذْهَبْ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does اُكْتُبْ (write!) start with ḍamma (اُ) instead of kasra (اِ)?",
+          "options": [
+            "Because all imperatives use ḍamma",
+            "Because the internal vowel of the verb is ḍamma (كْتُبْ)",
+            "Because كتب is an irregular verb"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the middle root vowel of the present tense is ḍamma (ـُـ), the hamzat al-wasl also takes ḍamma. In تَكْتُبُ, the vowel on تُ is ḍamma, so we get اُكْتُبْ."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "تَسْمَعُ (you listen) → ___ (Listen!)",
+          "answer": "اِسْمَعْ",
+          "explanation": "Remove تـ to get سْمَعْ. The first letter has sukun, so add hamzat al-wasl with kasra (the internal vowel is fatḥa, not ḍamma): اِسْمَعْ."
+        }
+      ]
+    },
+    {
+      "sectionId": "gender-number-forms",
+      "title": "Imperative Forms: Gender and Number",
+      "explanation": "The imperative has four forms depending on who you are addressing. Masculine singular (أنتَ): اُكْتُبْ (write!). Feminine singular (أنتِ): اُكْتُبِي (write! to a woman). Masculine plural (أنتم): اُكْتُبُوا (write! to a group of men or mixed). Feminine plural (أنتنّ): اُكْتُبْنَ (write! to a group of women). Notice the pattern: the feminine singular adds ـِي, the masculine plural adds ـُوا, and the feminine plural adds ـْنَ. These are the same suffixes used in the present tense — you simply apply them to the imperative base.",
+      "tip": "Think of it this way: form the masculine singular imperative first, then add the same suffixes as the present tense — ـِي for أنتِ, ـُوا for أنتم, ـْنَ for أنتنّ.",
+      "examples": [
+        {
+          "ar": "اُكْتُبْ يا أحمد",
+          "en": "Write, Ahmad! (masculine singular)",
+          "highlight": "اُكْتُبْ"
+        },
+        {
+          "ar": "اُكْتُبِي يا فاطمة",
+          "en": "Write, Fatima! (feminine singular)",
+          "highlight": "اُكْتُبِي"
+        },
+        {
+          "ar": "اُكْتُبُوا يا أولاد",
+          "en": "Write, boys! (masculine plural)",
+          "highlight": "اُكْتُبُوا"
+        },
+        {
+          "ar": "اُكْتُبْنَ يا بنات",
+          "en": "Write, girls! (feminine plural)",
+          "highlight": "اُكْتُبْنَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Sit!' to a woman? (base: اِجْلِسْ)",
+          "options": [
+            "اِجْلِسُوا",
+            "اِجْلِسِي",
+            "اِجْلِسْنَ"
+          ],
+          "correctIndex": 1,
+          "explanation": "For the feminine singular (أنتِ), add the suffix ـِي to the imperative base: اِجْلِسْ → اِجْلِسِي."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is the masculine plural imperative of اِذْهَبْ (go)?",
+          "options": [
+            "اِذْهَبِي",
+            "اِذْهَبْنَ",
+            "اِذْهَبُوا"
+          ],
+          "correctIndex": 2,
+          "explanation": "For the masculine plural (أنتم), add ـُوا: اِذْهَبْ → اِذْهَبُوا (Go! to a group)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "اِقْرَأْنَ is the imperative form for which pronoun?",
+          "options": [
+            "أنتِ (you, feminine singular)",
+            "أنتم (you, masculine plural)",
+            "أنتنّ (you, feminine plural)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The suffix ـْنَ marks the feminine plural. So اِقْرَأْنَ means 'Read!' addressed to a group of women (أنتنّ)."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "To say 'Eat!' to a group of men, the form is: ___ (base: كُلْ)",
+          "answer": "كُلُوا",
+          "explanation": "For the masculine plural (أنتم), add ـُوا to the base: كُلْ → كُلُوا."
+        }
+      ]
+    },
+    {
+      "sectionId": "negative-imperative",
+      "title": "Negative Imperatives (النهي)",
+      "explanation": "To tell someone NOT to do something, Arabic does NOT use the imperative form. Instead, it uses لا (lā) followed by the present tense in the مجزوم (jussive) mood. The jussive form is the same as the present tense but with the final vowel removed (sukun on the last letter). For example: 'Don't write!' is لا تَكْتُبْ (lā taktub) — this is لا + the present-tense form with sukun at the end. For feminine singular: لا تَكْتُبِي. For masculine plural: لا تَكْتُبُوا. For feminine plural: لا تَكْتُبْنَ. This construction is called النهي (an-nahy, prohibition).",
+      "tip": "For negative commands, forget the imperative form entirely. Just use لا + the present tense (with the final vowel shortened). The prefix تـ stays because it is still addressing 'you'.",
+      "examples": [
+        {
+          "ar": "لا تَذْهَبْ!",
+          "en": "Don't go! (to a man)",
+          "highlight": "لا تَذْهَبْ"
+        },
+        {
+          "ar": "لا تَأْكُلِي كثيرًا",
+          "en": "Don't eat too much! (to a woman)",
+          "highlight": "لا تَأْكُلِي"
+        },
+        {
+          "ar": "لا تَكْتُبُوا هنا",
+          "en": "Don't write here! (to a group)",
+          "highlight": "لا تَكْتُبُوا"
+        },
+        {
+          "ar": "لا تَنْسَ واجبَك",
+          "en": "Don't forget your homework!",
+          "highlight": "لا تَنْسَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Don't go!' to a man?",
+          "options": [
+            "لا اِذْهَبْ",
+            "لا تَذْهَبْ",
+            "لا يَذْهَبْ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Negative commands use لا + the present tense (not the imperative form). Since you are addressing 'you (m.)', the present prefix is تـ: لا تَذْهَبْ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct negative imperative: 'Don't sit!' (to a woman)?",
+          "options": [
+            "لا تَجْلِسِي",
+            "لا اِجْلِسِي",
+            "لا جْلِسِي"
+          ],
+          "correctIndex": 0,
+          "explanation": "Negative imperatives keep the present-tense prefix تـ. For feminine singular: لا تَجْلِسِي. The imperative form اِجْلِسِي is only used for positive commands."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Don't read! (to masculine plural) → لا ___",
+          "answer": "تَقْرَأُوا",
+          "explanation": "Use لا + present tense for أنتم: لا تَقْرَأُوا. The prefix تـ remains because this is a present-tense construction, not a true imperative."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between اُكْتُبْ and لا تَكْتُبْ?",
+          "options": [
+            "They both mean 'write'",
+            "اُكْتُبْ means 'Write!' and لا تَكْتُبْ means 'Don't write!'",
+            "اُكْتُبْ is past tense and لا تَكْتُبْ is present tense"
+          ],
+          "correctIndex": 1,
+          "explanation": "اُكْتُبْ is the positive imperative (Write!) while لا تَكْتُبْ is the negative imperative (Don't write!). Notice how the negative form uses the present tense with لا, not the imperative form."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-imperative-verbs",
+      "title": "Common Imperative Verbs",
+      "explanation": "Here are ten of the most common imperative verbs you will need in daily Arabic. Come: تَعالَ (taʿāla) — this is an irregular imperative not derived from the standard pattern. Go: اِذْهَبْ (idhab). Eat: كُلْ (kul) — short form because the base starts with a vowel after removing the prefix. Drink: اِشْرَبْ (ishrab). Write: اُكْتُبْ (uktub). Read: اِقْرَأْ (iqraʾ). Sit: اِجْلِسْ (ijlis). Stand: قِفْ (qif) — from يَقِفُ, the base already starts with a vowel. Look: اُنْظُرْ (unẓur). Listen: اِسْمَعْ (ismaʿ). Some of these are irregular or short because the root starts with a voweled letter after prefix removal.",
+      "tip": "The verbs تَعالَ (come) and قِفْ (stand) are commonly used irregular forms — memorize them as they are. For the rest, practice deriving them from the present tense using the three-step rule.",
+      "examples": [
+        {
+          "ar": "تَعالَ هنا!",
+          "en": "Come here! (to a man)",
+          "highlight": "تَعالَ"
+        },
+        {
+          "ar": "كُلْ طعامَك!",
+          "en": "Eat your food!",
+          "highlight": "كُلْ"
+        },
+        {
+          "ar": "اِشْرَبْ ماءً!",
+          "en": "Drink water!",
+          "highlight": "اِشْرَبْ"
+        },
+        {
+          "ar": "اُنْظُرْ إلى السَّبُّورة!",
+          "en": "Look at the board!",
+          "highlight": "اُنْظُرْ"
+        },
+        {
+          "ar": "اِسْمَعْ جيّدًا!",
+          "en": "Listen well!",
+          "highlight": "اِسْمَعْ"
+        },
+        {
+          "ar": "قِفْ هنا!",
+          "en": "Stand here!",
+          "highlight": "قِفْ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does تَعالَ mean?",
+          "options": [
+            "Go!",
+            "Come!",
+            "Stand!"
+          ],
+          "correctIndex": 1,
+          "explanation": "تَعالَ (taʿāla) means 'Come!' — it is an irregular imperative that does not follow the standard derivation pattern. It is one of the most commonly used commands in Arabic."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the imperative of يَأْكُلُ (he eats)?",
+          "options": [
+            "اِأْكُلْ",
+            "كُلْ",
+            "اُأْكُلْ"
+          ],
+          "correctIndex": 1,
+          "explanation": "From تَأْكُلُ, remove تـ to get أْكُلْ. Since the hamza carries a vowel, we simplify to كُلْ. This is a common short-form imperative."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Read the book!' in Arabic: ___ الكتابَ!",
+          "answer": "اِقْرَأْ",
+          "explanation": "The imperative of يَقْرَأُ is اِقْرَأْ. Remove the prefix تـ from تَقْرَأُ to get قْرَأْ, then add hamzat al-wasl with kasra: اِقْرَأْ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Drink!' to a woman?",
+          "options": [
+            "اِشْرَبْ",
+            "اِشْرَبِي",
+            "اِشْرَبُوا"
+          ],
+          "correctIndex": 1,
+          "explanation": "The feminine singular imperative adds ـِي to the base: اِشْرَبْ → اِشْرَبِي."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "'Write your name!' (to a man): ___ اسْمَك!",
+          "answer": "اُكْتُبْ",
+          "explanation": "The imperative of يَكْتُبُ is اُكْتُبْ. The hamza takes ḍamma because the internal vowel is ḍamma (كْتُبْ)."
+        }
+      ]
+    }
+  ]
+}

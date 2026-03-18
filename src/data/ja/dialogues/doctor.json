@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameJa": "病院で",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Tokyo. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "医者" },
+    "player": { "name": "患者" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "こんにちは。今日はどうされましたか？", "translation": "Hello. What brings you in today?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["頭痛と熱があります", "頭が痛くて熱があります", "頭痛がして熱もあります", "頭が痛いです。熱もあります"], "keyWords": ["頭痛", "熱"], "hint": "頭痛と熱があります。" },
+    { "speaker": "npc", "text": "いつからですか？", "translation": "Since when?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["昨日からです", "きのうからです", "昨日から", "昨日から具合が悪いです"], "keyWords": ["昨日"], "hint": "昨日からです。" },
+    { "speaker": "npc", "text": "そうですか。他に症状はありますか？咳や鼻水は？", "translation": "I see. Are there other symptoms? Cough or runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["はい、咳も出ます", "はい、咳もあります", "ええ、咳も出ています", "咳も出ます"], "keyWords": ["はい", "咳"], "hint": "はい、咳も出ます。" },
+    { "speaker": "npc", "text": "お薬を出しますね。一日三回、食後に飲んでください。", "translation": "I will prescribe medicine. Please take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["また来る必要がありますか？", "もう一度来たほうがいいですか？", "再診は必要ですか？", "また来なければなりませんか？"], "keyWords": ["また", "来る"], "hint": "また来る必要がありますか？" },
+    { "speaker": "npc", "text": "はい、一週間後にまた来てください。悪化したらすぐに連絡してください。", "translation": "Yes, please come back in a week. If it gets worse, contact us immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["ありがとうございます、先生", "先生、ありがとうございます", "ありがとうございます", "どうもありがとうございます"], "keyWords": ["ありがとう"], "hint": "ありがとうございます、先生。" }
+  ]
+}

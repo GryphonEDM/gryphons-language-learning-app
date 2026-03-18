@@ -1,0 +1,390 @@
+{
+  "lessonId": "reported-speech",
+  "nameEn": "Reported Speech",
+  "nameEl": "Πλάγιος Λόγος",
+  "icon": "💬",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "subjunctive"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "direct-vs-indirect",
+      "title": "Direct vs Indirect Speech",
+      "explanation": "In Greek, direct speech (ευθύς λόγος) quotes the speaker's exact words, usually enclosed in guillemets «...». Indirect or reported speech (πλάγιος λόγος) restates what someone said without quoting them directly, using a subordinate clause introduced by ότι or πως. When converting from direct to indirect speech, the verb tense typically shifts back (present → past), and pronouns and possessives change to match the new perspective. The reporting verb (e.g., είπε, δήλωσε, ανέφερε) stays in the past tense.",
+      "tip": "The key transformation is: «...» disappears, ότι/πως is added, and the verb inside the quote shifts one step back in tense. Pronouns also change to third person.",
+      "examples": [
+        {
+          "el": "Είπε: «Είμαι κουρασμένος.»",
+          "en": "He said: 'I am tired.' (direct speech)",
+          "highlight": "«Είμαι κουρασμένος»"
+        },
+        {
+          "el": "Είπε ότι ήταν κουρασμένος.",
+          "en": "He said that he was tired. (indirect speech)",
+          "highlight": "ότι ήταν"
+        },
+        {
+          "el": "Είπε: «Θα φύγω αύριο.»",
+          "en": "She said: 'I will leave tomorrow.' (direct)",
+          "highlight": "«Θα φύγω αύριο»"
+        },
+        {
+          "el": "Είπε ότι θα έφευγε την επόμενη μέρα.",
+          "en": "She said that she would leave the next day. (indirect)",
+          "highlight": "ότι θα έφευγε"
+        },
+        {
+          "el": "Μου είπε: «Σε περιμένω.»",
+          "en": "He told me: 'I'm waiting for you.' (direct)",
+          "highlight": "«Σε περιμένω»"
+        },
+        {
+          "el": "Μου είπε ότι με περίμενε.",
+          "en": "He told me that he was waiting for me. (indirect)",
+          "highlight": "ότι με περίμενε"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to indirect speech: Είπε: «Είμαι άρρωστος.»",
+          "options": [
+            "Είπε ότι ήταν άρρωστος.",
+            "Είπε ότι είναι άρρωστος.",
+            "Είπε να είναι άρρωστος."
+          ],
+          "correctIndex": 0,
+          "explanation": "In indirect speech, the present tense (είμαι) shifts to the imperfect (ήταν), and ότι introduces the subordinate clause: 'Είπε ότι ήταν άρρωστος.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is in direct speech?",
+          "options": [
+            "Μου είπε ότι θα ερχόταν.",
+            "Μου είπε: «Θα έρθω.»",
+            "Μου είπε να έρθω."
+          ],
+          "correctIndex": 1,
+          "explanation": "Direct speech quotes the speaker's exact words inside guillemets «...». Only 'Μου είπε: «Θα έρθω.»' preserves the original words."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to indirect speech: Είπε: «Δουλεύω πολύ.»",
+          "options": [
+            "Είπε ότι δουλεύει πολύ.",
+            "Είπε ότι δούλευε πολύ.",
+            "Είπε να δουλεύει πολύ."
+          ],
+          "correctIndex": 1,
+          "explanation": "The present tense δουλεύω shifts to the imperfect δούλευε in reported speech. The conjunction ότι links the reporting verb to the reported clause."
+        }
+      ]
+    },
+    {
+      "sectionId": "oti-pos-statements",
+      "title": "Reported Statements with ότι / πως",
+      "explanation": "Reported statements in Greek are introduced by the conjunctions ότι or πως (both meaning 'that'). They are interchangeable in most contexts, though ότι is slightly more formal and πως is more common in spoken Greek. Common reporting verbs include: λέω (say), νομίζω (think), πιστεύω (believe), ξέρω (know), ελπίζω (hope), δηλώνω (declare), ισχυρίζομαι (claim). When the reporting verb is in the present tense, the tense of the reported clause may remain unchanged: Νομίζω ότι είναι σωστό (I think it is correct). When the reporting verb is in the past, the tense typically shifts back.",
+      "tip": "You can freely swap ότι and πως without changing the meaning. Use ότι in writing and πως in casual speech. If the main verb is in the present tense (νομίζω, πιστεύω), the reported verb often stays in its original tense.",
+      "examples": [
+        {
+          "el": "Νομίζω ότι έχεις δίκιο.",
+          "en": "I think (that) you're right.",
+          "highlight": "ότι"
+        },
+        {
+          "el": "Πιστεύω πως θα βρέξει.",
+          "en": "I believe (that) it will rain.",
+          "highlight": "πως"
+        },
+        {
+          "el": "Ξέρω ότι μιλάει ελληνικά.",
+          "en": "I know (that) he speaks Greek.",
+          "highlight": "ότι"
+        },
+        {
+          "el": "Είπαν πως δεν θα έρθουν.",
+          "en": "They said (that) they wouldn't come.",
+          "highlight": "πως"
+        },
+        {
+          "el": "Δήλωσε ότι ήταν αθώος.",
+          "en": "He declared (that) he was innocent.",
+          "highlight": "ότι"
+        },
+        {
+          "el": "Ελπίζω πως θα πάνε όλα καλά.",
+          "en": "I hope (that) everything will go well.",
+          "highlight": "πως"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conjunction introduces a reported statement in Greek?",
+          "options": [
+            "αν",
+            "ότι / πως",
+            "να"
+          ],
+          "correctIndex": 1,
+          "explanation": "Reported statements use ότι or πως (both meaning 'that'). The conjunction αν is used for reported questions, and να for reported commands."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: Νομίζω ___ είναι πολύ αργά.",
+          "options": [
+            "να",
+            "αν",
+            "ότι"
+          ],
+          "correctIndex": 2,
+          "explanation": "After νομίζω (I think), a reported statement is introduced by ότι or πως: 'Νομίζω ότι είναι πολύ αργά' (I think it's too late)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly reports 'Θα φύγουμε' using a past reporting verb?",
+          "options": [
+            "Είπαν ότι θα φύγουν.",
+            "Είπαν ότι θα έφευγαν.",
+            "Είπαν να φύγουν."
+          ],
+          "correctIndex": 1,
+          "explanation": "With a past reporting verb (είπαν), the future θα φύγουμε shifts to θα + imperfect: θα έφευγαν. This expresses 'They said they would leave.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Are ότι and πως interchangeable in reported statements?",
+          "options": [
+            "No, ότι is only for written Greek.",
+            "Yes, they are interchangeable with no difference in meaning.",
+            "No, πως is only used after νομίζω."
+          ],
+          "correctIndex": 1,
+          "explanation": "In reported statements, ότι and πως are fully interchangeable. Both mean 'that' and can follow any reporting verb."
+        }
+      ]
+    },
+    {
+      "sectionId": "reported-questions",
+      "title": "Reported Questions with αν / μήπως",
+      "explanation": "When reporting yes/no questions, Greek uses the conjunction αν (if/whether) to introduce the indirect question. The original question mark is dropped and the word order may remain the same. For example: «Θα πας;» → Ρώτησε αν θα πήγαινα (He asked if I would go). For wh-questions, the interrogative word (ποιος, τι, πού, πότε, πώς, γιατί) is retained: «Πού μένεις;» → Ρώτησε πού έμενα (He asked where I lived). The conjunction μήπως (in case, whether perhaps) can also introduce indirect yes/no questions with a nuance of uncertainty. Common reporting verbs for questions include: ρωτώ (ask), αναρωτιέμαι (wonder), θέλω να μάθω (want to know).",
+      "tip": "Yes/no questions use αν. Wh-questions keep their original question word (τι, πού, πότε, etc.). In both cases the tense shifts back if the reporting verb is in the past.",
+      "examples": [
+        {
+          "el": "Ρώτησε αν θα πάμε στο πάρτι.",
+          "en": "He asked if we would go to the party.",
+          "highlight": "αν"
+        },
+        {
+          "el": "Με ρώτησε πού μένω.",
+          "en": "She asked me where I live.",
+          "highlight": "πού"
+        },
+        {
+          "el": "Αναρωτιέμαι αν θα βρέξει.",
+          "en": "I wonder if it will rain.",
+          "highlight": "αν"
+        },
+        {
+          "el": "Ρώτησε τι ώρα φτάνει το τρένο.",
+          "en": "He asked what time the train arrives.",
+          "highlight": "τι ώρα"
+        },
+        {
+          "el": "Ρώτησε γιατί αργήσαμε.",
+          "en": "She asked why we were late.",
+          "highlight": "γιατί"
+        },
+        {
+          "el": "Θέλω να μάθω αν είναι αλήθεια.",
+          "en": "I want to know if it's true.",
+          "highlight": "αν"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to indirect speech: Ρώτησε: «Θα έρθεις;»",
+          "options": [
+            "Ρώτησε ότι θα ερχόμουν.",
+            "Ρώτησε αν θα ερχόμουν.",
+            "Ρώτησε να έρθω."
+          ],
+          "correctIndex": 1,
+          "explanation": "Yes/no questions are reported with αν (if/whether). The future θα έρθεις shifts to θα + imperfect ερχόμουν: 'Ρώτησε αν θα ερχόμουν.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to indirect speech: Ρώτησε: «Πού είναι το φαρμακείο;»",
+          "options": [
+            "Ρώτησε αν είναι το φαρμακείο.",
+            "Ρώτησε ότι ήταν το φαρμακείο.",
+            "Ρώτησε πού είναι το φαρμακείο."
+          ],
+          "correctIndex": 2,
+          "explanation": "Wh-questions keep their question word in indirect speech. 'Πού' is retained: 'Ρώτησε πού είναι το φαρμακείο.' The tense may or may not shift depending on context."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which conjunction introduces a reported yes/no question?",
+          "options": [
+            "ότι",
+            "πως",
+            "αν"
+          ],
+          "correctIndex": 2,
+          "explanation": "Reported yes/no questions use αν (if/whether). The conjunctions ότι and πως are for reported statements, not questions."
+        }
+      ]
+    },
+    {
+      "sectionId": "reported-commands",
+      "title": "Reported Commands with να",
+      "explanation": "When reporting commands, requests, or advice, Greek uses the conjunction να followed by the subjunctive. The original imperative disappears and is replaced by the να-clause. For example: «Φύγε!» → Μου είπε να φύγω (He told me to leave). The subject of the να-clause matches whoever receives the command. Common reporting verbs for commands include: λέω (tell), ζητώ (ask/request), παρακαλώ (beg), προτείνω (suggest), συμβουλεύω (advise), διατάζω (order), απαγορεύω (forbid). With negative commands, the negation μη(ν) replaces δεν: «Μην τρέχεις!» → Μου είπε να μην τρέχω (He told me not to run).",
+      "tip": "Reported commands always use να + subjunctive. The person of the verb in the να-clause changes to match the recipient of the command. Negative commands use να μην.",
+      "examples": [
+        {
+          "el": "Μου είπε να φύγω.",
+          "en": "He told me to leave.",
+          "highlight": "να φύγω"
+        },
+        {
+          "el": "Μας ζήτησε να περιμένουμε.",
+          "en": "She asked us to wait.",
+          "highlight": "να περιμένουμε"
+        },
+        {
+          "el": "Ο γιατρός τού είπε να μην καπνίζει.",
+          "en": "The doctor told him not to smoke.",
+          "highlight": "να μην καπνίζει"
+        },
+        {
+          "el": "Τους πρότεινε να πάνε νωρίτερα.",
+          "en": "He suggested they go earlier.",
+          "highlight": "να πάνε"
+        },
+        {
+          "el": "Η μητέρα μού είπε να φάω.",
+          "en": "My mother told me to eat.",
+          "highlight": "να φάω"
+        },
+        {
+          "el": "Τον συμβούλεψε να σπουδάσει ιατρική.",
+          "en": "She advised him to study medicine.",
+          "highlight": "να σπουδάσει"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to indirect speech: Είπε: «Κλείσε την πόρτα!»",
+          "options": [
+            "Είπε ότι έκλεισε την πόρτα.",
+            "Είπε να κλείσω την πόρτα.",
+            "Είπε αν κλείσω την πόρτα."
+          ],
+          "correctIndex": 1,
+          "explanation": "Commands are reported using να + subjunctive. The imperative κλείσε becomes να κλείσω (first person, since the command is directed at the speaker): 'Είπε να κλείσω την πόρτα.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you report a negative command? Είπε: «Μην τρέχεις!»",
+          "options": [
+            "Είπε να μην τρέχω.",
+            "Είπε ότι δεν τρέχω.",
+            "Είπε αν δεν τρέχω."
+          ],
+          "correctIndex": 0,
+          "explanation": "Negative reported commands use να μην + subjunctive: 'Είπε να μην τρέχω' (He told me not to run). The negation μην is used instead of δεν after να."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: Ο δάσκαλος μας είπε ___ γράψουμε μια έκθεση.",
+          "options": [
+            "ότι",
+            "να",
+            "αν"
+          ],
+          "correctIndex": 1,
+          "explanation": "Since the teacher is giving an instruction (a command), the reported form uses να: 'Ο δάσκαλος μας είπε να γράψουμε μια έκθεση' (The teacher told us to write an essay)."
+        }
+      ]
+    },
+    {
+      "sectionId": "tense-shifts",
+      "title": "Tense Shifts in Reported Speech",
+      "explanation": "When the reporting verb is in the past tense, the verb in the reported clause typically shifts back one tense step. The main shifts are: Present (ενεστώτας) → Imperfect (παρατατικός): είμαι → ήμουν, τρώω → έτρωγα. Future (θα + present) → θα + imperfect: θα φύγω → θα έφευγα. Present perfect (έχω + participle) → Past perfect (είχα + participle): έχω φύγει → είχα φύγει. The simple past (αόριστος) generally remains unchanged in indirect speech, since it already refers to a completed past action. When the reporting verb is in the present tense (λέει, νομίζει), tense shifts are not required — the original tenses are preserved.",
+      "tip": "Remember: tense shifts only happen when the reporting verb is in the past (είπε, ρώτησε, νόμιζε). If the reporting verb is present (λέει, νομίζω), keep the original tenses as they are.",
+      "examples": [
+        {
+          "el": "«Τρώω.» → Είπε ότι έτρωγε.",
+          "en": "'I'm eating.' → He said he was eating. (present → imperfect)",
+          "highlight": "έτρωγε"
+        },
+        {
+          "el": "«Θα φύγω.» → Είπε ότι θα έφευγε.",
+          "en": "'I will leave.' → He said he would leave. (future → θα + imperfect)",
+          "highlight": "θα έφευγε"
+        },
+        {
+          "el": "«Έχω τελειώσει.» → Είπε ότι είχε τελειώσει.",
+          "en": "'I have finished.' → He said he had finished. (perfect → past perfect)",
+          "highlight": "είχε τελειώσει"
+        },
+        {
+          "el": "«Έφυγα.» → Είπε ότι έφυγε.",
+          "en": "'I left.' → He said he left. (aorist stays unchanged)",
+          "highlight": "έφυγε"
+        },
+        {
+          "el": "Λέει ότι είναι κουρασμένος.",
+          "en": "He says he is tired. (present reporting verb — no shift)",
+          "highlight": "Λέει ότι είναι"
+        },
+        {
+          "el": "«Μπορώ να βοηθήσω.» → Είπε ότι μπορούσε να βοηθήσει.",
+          "en": "'I can help.' → He said he could help. (present → imperfect)",
+          "highlight": "μπορούσε"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct tense shift for present tense in reported speech with a past reporting verb?",
+          "options": [
+            "Present → Aorist (αόριστος)",
+            "Present → Imperfect (παρατατικός)",
+            "Present → Future (μέλλοντας)"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the reporting verb is in the past, the present tense shifts to the imperfect: e.g., τρώω → έτρωγε. This is the most fundamental tense shift in Greek reported speech."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert: Είπε: «Θα ταξιδέψω στην Κρήτη.»",
+          "options": [
+            "Είπε ότι θα ταξίδευε στην Κρήτη.",
+            "Είπε ότι θα ταξιδέψει στην Κρήτη.",
+            "Είπε να ταξιδέψει στην Κρήτη."
+          ],
+          "correctIndex": 0,
+          "explanation": "The future θα ταξιδέψω shifts to θα + imperfect (θα ταξίδευε) when the reporting verb is past: 'Είπε ότι θα ταξίδευε στην Κρήτη.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does the tense shift when the reporting verb is in the present? Λέει: «Μένω στην Αθήνα.»",
+          "options": [
+            "Λέει ότι έμενε στην Αθήνα.",
+            "Λέει ότι μένει στην Αθήνα.",
+            "Λέει ότι θα μείνει στην Αθήνα."
+          ],
+          "correctIndex": 1,
+          "explanation": "When the reporting verb is in the present (λέει), no tense shift occurs. The original present tense μένω becomes μένει (third person) but stays in the present."
+        }
+      ]
+    }
+  ]
+}

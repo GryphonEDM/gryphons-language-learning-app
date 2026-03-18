@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameJa": "ホテルのチェックイン",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Tokyo. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "フロント係" },
+    "player": { "name": "お客様" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "いらっしゃいませ。ようこそ当ホテルへ。", "translation": "Welcome. Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say you have a reservation", "acceptedResponses": ["予約をしています", "予約があります", "予約しているのですが", "チェックインをお願いします。予約があります"], "keyWords": ["予約"], "hint": "予約があります。" },
+    { "speaker": "npc", "text": "かしこまりました。お名前をお願いいたします。", "translation": "Understood. Your name, please." },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["一泊いくらですか？", "部屋は一泊いくらですか？", "一泊の料金はいくらですか？", "宿泊料金はいくらですか？"], "keyWords": ["一泊", "いくら"], "hint": "一泊いくらですか？" },
+    { "speaker": "npc", "text": "シングルルームは一泊一万円でございます。朝食付きです。", "translation": "A single room is ten thousand yen per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["Wi-Fiはありますか？", "ワイファイはありますか？", "インターネットは使えますか？", "Wi-Fiは使えますか？"], "keyWords": ["Wi-Fi"], "hint": "Wi-Fiはありますか？" },
+    { "speaker": "npc", "text": "はい、ホテル全館で無料Wi-Fiをご利用いただけます。こちらがお部屋の鍵です。305号室です。", "translation": "Yes, free Wi-Fi is available throughout the hotel. Here is your room key. It is room 305." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["チェックアウトは何時ですか？", "チェックアウトの時間は何時ですか？", "何時までにチェックアウトですか？", "チェックアウトは何時までですか？"], "keyWords": ["チェックアウト", "何時"], "hint": "チェックアウトは何時ですか？" },
+    { "speaker": "npc", "text": "チェックアウトは正午十二時までとなっております。ごゆっくりおくつろぎください。", "translation": "Check-out is by twelve noon. Please enjoy your stay." },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["ありがとうございます", "どうもありがとうございます", "ありがとう", "どうも"], "keyWords": ["ありがとう"], "hint": "ありがとうございます。" }
+  ]
+}

@@ -5,6 +5,8 @@ import verbGroupsLesson from './verb-groups.json';
 import adjectivesLesson from './adjectives.json';
 import pastTenseLesson from './past-tense.json';
 import teFormLesson from './te-form.json';
+import teShimauLesson from './te-shimau.json';
+import tokoroLesson from './tokoro.json';
 import negationLesson from './negation.json';
 import countingClassifiersLesson from './counting-classifiers.json';
 import questionFormsLesson from './question-forms.json';
@@ -18,6 +20,7 @@ import numbersTimeLesson from './numbers-time.json';
 import comparisonLesson from './comparison.json';
 import desireIntentionLesson from './desire-intention.json';
 import complexSentencesLesson from './complex-sentences.json';
+import auxiliaryPatternsLesson from './auxiliary-patterns.json';
 
 export const GRAMMAR_LESSONS_JA = [
   hiraganaKatakanaLesson,
@@ -27,6 +30,8 @@ export const GRAMMAR_LESSONS_JA = [
   adjectivesLesson,
   pastTenseLesson,
   teFormLesson,
+  teShimauLesson,
+  tokoroLesson,
   negationLesson,
   countingClassifiersLesson,
   questionFormsLesson,
@@ -40,4 +45,5 @@ export const GRAMMAR_LESSONS_JA = [
   comparisonLesson,
   desireIntentionLesson,
   complexSentencesLesson,
+  auxiliaryPatternsLesson,
 ];

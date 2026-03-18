@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameEl": "Check-in στο Ξενοδοχείο",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Athens. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "Ρεσεψιονίστ" },
+    "player": { "name": "Επισκέπτης" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Καλημέρα! Καλώς ήρθατε στο ξενοδοχείο μας.", "translation": "Good morning! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["Καλημέρα, έχω κράτηση", "Γεια σας, έχω μια κράτηση", "Καλημέρα! Έχω κάνει κράτηση", "Γεια σας, έχω κράτηση δωματίου"], "keyWords": ["Καλημέρα", "κράτηση"], "hint": "Καλημέρα, έχω κράτηση." },
+    { "speaker": "npc", "text": "Ωραία! Σε ποιο όνομα;", "translation": "Great! Under what name?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["Πόσο κοστίζει το δωμάτιο τη βραδιά;", "Πόσο κάνει το δωμάτιο ανά βράδυ;", "Ποια είναι η τιμή ανά βραδιά;", "Πόσο κοστίζει τη βραδιά;"], "keyWords": ["κοστίζει", "δωμάτιο", "βραδιά"], "hint": "Πόσο κοστίζει το δωμάτιο τη βραδιά;" },
+    { "speaker": "npc", "text": "Ένα μονόκλινο κοστίζει ογδόντα ευρώ τη βραδιά. Το πρωινό περιλαμβάνεται.", "translation": "A single room costs eighty euros per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["Υπάρχει Wi-Fi;", "Έχετε Wi-Fi;", "Υπάρχει ασύρματο δίκτυο;", "Έχει Wi-Fi;"], "keyWords": ["Wi-Fi"], "hint": "Υπάρχει Wi-Fi;" },
+    { "speaker": "npc", "text": "Ναι, δωρεάν Wi-Fi σε όλο το ξενοδοχείο. Ορίστε το κλειδί σας. Δωμάτιο τριακόσια πέντε.", "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room three hundred five." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["Τι ώρα είναι το check-out;", "Πότε πρέπει να κάνω check-out;", "Τι ώρα πρέπει να φύγω;", "Πότε είναι η αναχώρηση;"], "keyWords": ["check-out", "ώρα"], "hint": "Τι ώρα είναι το check-out;" },
+    { "speaker": "npc", "text": "Το check-out είναι μέχρι τις δώδεκα το μεσημέρι. Σας εύχομαι καλή διαμονή!", "translation": "Check-out is by twelve noon. I wish you a pleasant stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["Ευχαριστώ πολύ!", "Σας ευχαριστώ!", "Ευχαριστώ πάρα πολύ!", "Ευχαριστώ!"], "keyWords": ["Ευχαριστώ"], "hint": "Ευχαριστώ πολύ!" }
+  ]
+}

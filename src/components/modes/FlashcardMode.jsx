@@ -35,7 +35,7 @@ export default function FlashcardMode({
   const [reviewQueue, setReviewQueue] = useState([]);
   const [sessionStats, setSessionStats] = useState({ studied: 0, mastered: 0 });
   const [selectedExampleWord, setSelectedExampleWord] = useState(null);
-  const [addWordForm, setAddWordForm] = useState(null); // null or { uk, en }
+  const [addWordForm, setAddWordForm] = useState(null); // null or { word, en }
   const [userDict, setUserDict] = useState(() => {
     try { return JSON.parse(storageGet('userDictionary') || '{}'); }
     catch { return {}; }
@@ -374,7 +374,7 @@ export default function FlashcardMode({
                         e.stopPropagation();
                         const exIdx = parseInt((selectedExampleWord.index || '0').split('-')[0]);
                         const contextSentence = currentWord.examples?.[exIdx] || '';
-                        setAddWordForm({ uk: selectedExampleWord.word, en: '', translating: true });
+                        setAddWordForm({ word: selectedExampleWord.word, en: '', translating: true });
                         translateWithLLM(selectedExampleWord.word, contextSentence).then(translation => {
                           setAddWordForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
                         });
@@ -415,7 +415,7 @@ export default function FlashcardMode({
               <div style={{...styles.addWordRow, flexDirection: 'column'}}>
                 <div style={styles.addWordField}>
                   <label style={styles.addWordLabel}>Ukrainian</label>
-                  <input style={styles.addWordInput} value={addWordForm.uk} readOnly />
+                  <input style={styles.addWordInput} value={addWordForm.word} readOnly />
                 </div>
                 <div style={{...styles.addWordArrow, textAlign: 'center'}}>↓</div>
                 <div style={styles.addWordField}>
@@ -430,7 +430,7 @@ export default function FlashcardMode({
                     autoFocus={!addWordForm.translating}
                     disabled={addWordForm.translating}
                     onKeyDown={e => {
-                      if (e.key === 'Enter') saveToUserDict(addWordForm.uk, addWordForm.en);
+                      if (e.key === 'Enter') saveToUserDict(addWordForm.word, addWordForm.en);
                       if (e.key === 'Escape') setAddWordForm(null);
                     }}
                   />
@@ -440,7 +440,7 @@ export default function FlashcardMode({
                 <button style={styles.addWordCancel} onClick={() => setAddWordForm(null)}>Cancel</button>
                 <button
                   style={styles.addWordSave}
-                  onClick={() => saveToUserDict(addWordForm.uk, addWordForm.en)}
+                  onClick={() => saveToUserDict(addWordForm.word, addWordForm.en)}
                   disabled={addWordForm.translating || !addWordForm.en.trim()}
                 >
                   Save
@@ -488,7 +488,7 @@ export default function FlashcardMode({
             pointerEvents: isFlipped ? 'auto' : 'none'
           }}>
             <div style={{...styles.cardLabel, ...(colorValue ? { color: colorTextColor, opacity: 0.7 } : {})}}>{langNative}</div>
-            <div style={{...styles.cardWord, ...(colorValue ? { color: colorTextColor } : {})}}>{currentWord.uk}</div>
+            <div style={{...styles.cardWord, ...(colorValue ? { color: colorTextColor } : {})}}>{currentWord[langCode] || currentWord.uk}</div>
             <div style={{...styles.cardPhonetic, ...(colorValue ? { color: colorTextColor } : {})}}>({currentWord.phonetic})</div>
           </div>
         </div>

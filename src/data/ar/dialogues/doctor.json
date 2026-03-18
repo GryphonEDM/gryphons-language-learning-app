@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameAr": "عند الطبيب",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Amman. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "الطبيب" },
+    "player": { "name": "المريض" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "أهلاً! ما الذي يزعجك؟", "translation": "Hello! What is troubling you?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["عندي صداع وحرارة", "أعاني من صداع وحرارة", "رأسي يؤلمني وعندي حرارة", "لدي صداع وحمى"], "keyWords": ["صداع", "حرارة"], "hint": "عندي صداع وحرارة" },
+    { "speaker": "npc", "text": "منذ متى وأنت مريض؟", "translation": "How long have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["من أمس", "منذ أمس", "من البارحة", "بدأ من أمس"], "keyWords": ["أمس"], "hint": "من أمس" },
+    { "speaker": "npc", "text": "فهمت. هل هناك أعراض أخرى؟ سعال أو زكام؟", "translation": "I see. Are there other symptoms? A cough or a cold?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["نعم، عندي سعال أيضاً", "أيوا، وكمان سعال", "نعم، أعاني من سعال أيضاً", "نعم وعندي كحة"], "keyWords": ["نعم", "سعال"], "hint": "نعم، عندي سعال أيضاً" },
+    { "speaker": "npc", "text": "سأكتب لك دواء. خذه ثلاث مرات في اليوم بعد الأكل.", "translation": "I will prescribe medicine for you. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["هل لازم أرجع مرة ثانية؟", "هل أحتاج أن أعود؟", "هل يجب أن أرجع؟", "متى أرجع للمراجعة؟"], "keyWords": ["أرجع"], "hint": "هل لازم أرجع مرة ثانية؟" },
+    { "speaker": "npc", "text": "نعم، ارجع بعد أسبوع. إذا ساءت حالتك، اتصل فوراً.", "translation": "Yes, come back in a week. If your condition worsens, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["شكراً يا دكتور", "شكراً جزيلاً يا دكتور", "أشكرك يا طبيب", "شكراً"], "keyWords": ["شكراً"], "hint": "شكراً يا دكتور" }
+  ]
+}

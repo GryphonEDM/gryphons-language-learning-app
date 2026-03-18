@@ -49,7 +49,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How do you say 'more interesting than' when comparing adjectives?",
+          "prompt": "How do you say 'more interesting than' when comparing adjectives?",
           "options": [
             "plus intéressant que",
             "aussi intéressant que",
@@ -60,7 +60,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence correctly uses a comparative of equality?",
+          "prompt": "Which sentence correctly uses a comparative of equality?",
           "options": [
             "Elle est plus grande que lui.",
             "Elle est moins grande que lui.",
@@ -71,7 +71,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What is the correct comparative of 'bon' (good)?",
+          "prompt": "What is the correct comparative of 'bon' (good)?",
           "options": [
             "meilleur",
             "aussi bon",
@@ -82,7 +82,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: 'Il parle ___ que moi.' (He speaks better than me — use the adverb form)",
+          "prompt": "Complete: 'Il parle ___ que moi.' (He speaks better than me — use the adverb form)",
           "options": [
             "plus bien",
             "mieux",
@@ -93,7 +93,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How do you say 'I have less time than him'?",
+          "prompt": "How do you say 'I have less time than him'?",
           "options": [
             "J'ai plus de temps que lui.",
             "J'ai moins de temps que lui.",
@@ -104,7 +104,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: 'Cette robe est ___ chère ___ l'autre.' (This dress is less expensive than the other one.)",
+          "prompt": "Complete: 'Cette robe est ___ chère ___ l'autre.' (This dress is less expensive than the other one.)",
           "options": [
             "plus … que",
             "moins … que",
@@ -115,7 +115,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which is correct for 'She works more than him'?",
+          "prompt": "Which is correct for 'She works more than him'?",
           "options": [
             "Elle travaille autant que lui.",
             "Elle travaille plus que lui.",
@@ -126,7 +126,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "The adjective agreement in 'Marie est plus grande que Pierre' — why does 'grande' have an -e?",
+          "prompt": "The adjective agreement in 'Marie est plus grande que Pierre' — why does 'grande' have an -e?",
           "options": [
             "Because 'que' requires the feminine form.",
             "Because comparative adjectives always end in -e.",
@@ -177,7 +177,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How do you say 'the most interesting book' (un livre intéressant)?",
+          "prompt": "How do you say 'the most interesting book' (un livre intéressant)?",
           "options": [
             "le livre le plus intéressant",
             "le livre plus intéressant",
@@ -188,7 +188,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What word follows the superlative to mean 'in' (as in 'the best in France')?",
+          "prompt": "What word follows the superlative to mean 'in' (as in 'the best in France')?",
           "options": [
             "en",
             "dans",
@@ -199,7 +199,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What is the superlative of 'bon' (good)?",
+          "prompt": "What is the superlative of 'bon' (good)?",
           "options": [
             "le mieux",
             "le plus bon",
@@ -210,7 +210,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: 'Elle est ___ de toute l'équipe.' (She is the best [female] on the whole team.)",
+          "prompt": "Complete: 'Elle est ___ de toute l'équipe.' (She is the best [female] on the whole team.)",
           "options": [
             "le meilleur",
             "la meilleure",
@@ -221,7 +221,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence correctly expresses 'the worst film of the year'?",
+          "prompt": "Which sentence correctly expresses 'the worst film of the year'?",
           "options": [
             "le film le plus mauvais de l'année",
             "le film moins mauvais de l'année",
@@ -232,7 +232,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: 'C'est le restaurant ___ de Paris.' (It's the best restaurant in Paris.)",
+          "prompt": "Complete: 'C'est le restaurant ___ de Paris.' (It's the best restaurant in Paris.)",
           "options": [
             "le plus bon",
             "le mieux",
@@ -243,7 +243,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How do you say 'She sings the best' (using the verb superlative)?",
+          "prompt": "How do you say 'She sings the best' (using the verb superlative)?",
           "options": [
             "C'est elle qui chante le meilleur.",
             "C'est elle qui chante la meilleure.",
@@ -254,7 +254,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence correctly uses a noun superlative?",
+          "prompt": "Which sentence correctly uses a noun superlative?",
           "options": [
             "C'est lui qui a le plus patience.",
             "C'est lui qui a le plus de patience.",

@@ -1,0 +1,415 @@
+{
+  "lessonId": "imperative",
+  "nameEn": "Imperative (Commands)",
+  "nameDe": "Der Imperativ",
+  "icon": "📢",
+  "tier": "A2",
+  "prerequisites": [
+    "verbs-present",
+    "pronouns"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "du-form",
+      "title": "Du-Form: Informal Singular Commands",
+      "explanation": "To form the du-imperative, take the du-form of the present tense and drop the -st ending and the pronoun. For most verbs: du gehst → Geh! du kommst → Komm! du machst → Mach! If the verb stem ends in -d, -t, -ig, or a consonant cluster, keep the -e: du arbeitest → Arbeite! du öffnest → Öffne! Verbs with an e→i or e→ie stem change keep the change but drop the -e ending: du gibst → Gib! du liest → Lies! Verbs with a→ä do NOT keep the umlaut: du fährst → Fahr! (not Fähr!)",
+      "tip": "Quick rule: Take the du-form, drop -st, drop 'du'. Stem-changing e→i/ie verbs keep the change. But a→ä verbs lose the umlaut!",
+      "examples": [
+        {
+          "de": "Geh nach Hause!",
+          "en": "Go home!",
+          "highlight": "Geh"
+        },
+        {
+          "de": "Komm schnell!",
+          "en": "Come quickly!",
+          "highlight": "Komm"
+        },
+        {
+          "de": "Mach die Tür zu!",
+          "en": "Close the door!",
+          "highlight": "Mach"
+        },
+        {
+          "de": "Gib mir das Buch!",
+          "en": "Give me the book!",
+          "highlight": "Gib"
+        },
+        {
+          "de": "Lies den Text!",
+          "en": "Read the text!",
+          "highlight": "Lies"
+        },
+        {
+          "de": "Fahr langsam!",
+          "en": "Drive slowly!",
+          "highlight": "Fahr"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Come!' (informal, to one person) in German?",
+          "options": [
+            "Kommst!",
+            "Komm!",
+            "Kommen!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Du-imperative of 'kommen': drop -st from 'du kommst' and remove 'du' → Komm!"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ die Hausaufgaben! (Do the homework!) — use the du-form imperative of 'machen'",
+          "acceptedAnswers": [
+            "Mach"
+          ],
+          "hint": "du machst → drop -st",
+          "explanation": "Du-imperative of 'machen': du machst → Mach! Mach die Hausaufgaben!"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the du-imperative of 'geben' (to give)? Remember: e→i stem change.",
+          "options": [
+            "Geb!",
+            "Gib!",
+            "Gebe!"
+          ],
+          "correctIndex": 1,
+          "explanation": "'geben' has an e→i stem change (du gibst), which is kept in the imperative: Gib! (not Geb!)"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the du-imperative of 'fahren' (to drive)? Remember: a→ä verbs.",
+          "options": [
+            "Fähr!",
+            "Fahr!",
+            "Fahrst!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Verbs with a→ä change do NOT keep the umlaut in the imperative: Fahr! (not Fähr!)"
+        }
+      ]
+    },
+    {
+      "sectionId": "ihr-form",
+      "title": "Ihr-Form: Informal Plural Commands",
+      "explanation": "The ihr-imperative is the simplest form: it is identical to the ihr-form of the present tense, but without the pronoun 'ihr'. ihr geht → Geht! ihr kommt → Kommt! ihr macht → Macht! ihr sprecht → Sprecht! This form is used when giving a command to a group of people you address informally.",
+      "tip": "Ihr-imperative = present tense ihr-form minus 'ihr'. That's it!",
+      "examples": [
+        {
+          "de": "Geht nach Hause!",
+          "en": "Go home! (to a group)",
+          "highlight": "Geht"
+        },
+        {
+          "de": "Kommt herein!",
+          "en": "Come in! (to a group)",
+          "highlight": "Kommt"
+        },
+        {
+          "de": "Macht eure Bücher auf!",
+          "en": "Open your books! (to a group)",
+          "highlight": "Macht"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Wait!' to a group of friends (ihr-form)?",
+          "options": [
+            "Wart!",
+            "Wartet!",
+            "Warten!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ihr-imperative of 'warten': ihr wartet → Wartet! (The extra -e- stays because the stem ends in -t.)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ leise! (Be quiet! — to a group of children) — use the ihr-form imperative of 'sein'",
+          "acceptedAnswers": [
+            "Seid"
+          ],
+          "hint": "ihr seid → drop 'ihr'",
+          "explanation": "Ihr-imperative of 'sein': ihr seid → Seid! Seid leise!"
+        }
+      ]
+    },
+    {
+      "sectionId": "sie-form",
+      "title": "Sie-Form: Formal Commands",
+      "explanation": "The formal imperative (Sie-form) is used for people you address with 'Sie'. It is formed by placing the verb before 'Sie': Sie gehen → Gehen Sie! Sie kommen → Kommen Sie! Sie nehmen → Nehmen Sie! The pronoun 'Sie' is always included and always capitalized. The verb form is identical to the present tense Sie-form (which is the same as the infinitive for all verbs except 'sein').",
+      "tip": "Sie-imperative = verb + Sie + rest of sentence. Always include 'Sie'! The verb form matches the infinitive (except sein → seien).",
+      "examples": [
+        {
+          "de": "Kommen Sie herein!",
+          "en": "Come in! (formal)",
+          "highlight": "Kommen Sie"
+        },
+        {
+          "de": "Nehmen Sie Platz!",
+          "en": "Take a seat! (formal)",
+          "highlight": "Nehmen Sie"
+        },
+        {
+          "de": "Sprechen Sie bitte langsamer!",
+          "en": "Please speak more slowly! (formal)",
+          "highlight": "Sprechen Sie"
+        },
+        {
+          "de": "Geben Sie mir bitte den Schlüssel!",
+          "en": "Please give me the key! (formal)",
+          "highlight": "Geben Sie"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you formally say 'Please wait!' in German?",
+          "options": [
+            "Warten bitte!",
+            "Warten Sie bitte!",
+            "Sie warten bitte!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sie-imperative: verb first, then 'Sie'. Warten Sie bitte! The pronoun must be included."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ Sie das Fenster! (Open the window! — formal) — use the imperative of 'öffnen'",
+          "acceptedAnswers": [
+            "Öffnen"
+          ],
+          "hint": "Sie-form uses the infinitive form of the verb",
+          "explanation": "Sie-imperative of 'öffnen': Öffnen Sie das Fenster!"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct formal imperative for 'to read' (lesen)?",
+          "options": [
+            "Liest Sie den Brief!",
+            "Lesen Sie den Brief!",
+            "Lies Sie den Brief!"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Sie-form imperative always uses the infinitive-based form (no stem change): Lesen Sie den Brief! Stem changes only apply to du-form."
+        }
+      ]
+    },
+    {
+      "sectionId": "irregular-imperatives",
+      "title": "Irregular Imperatives",
+      "explanation": "A few verbs have irregular imperative forms. The most important is 'sein' (to be): du-form → Sei! ihr-form → Seid! Sie-form → Seien Sie! 'haben' (to have) uses: du-form → Hab! ihr-form → Habt! Sie-form → Haben Sie! 'werden' (to become) uses: du-form → Werde! ihr-form → Werdet! Sie-form → Werden Sie! 'sein' is the only verb where the Sie-imperative does not match the infinitive (Seien Sie, not Sein Sie).",
+      "tip": "The key irregular imperative to memorize is 'sein': Sei still! (Be quiet!) / Seid nett! (Be nice!) / Seien Sie vorsichtig! (Be careful!)",
+      "examples": [
+        {
+          "de": "Sei ruhig!",
+          "en": "Be quiet! (informal singular)",
+          "highlight": "Sei"
+        },
+        {
+          "de": "Seid pünktlich!",
+          "en": "Be punctual! (informal plural)",
+          "highlight": "Seid"
+        },
+        {
+          "de": "Seien Sie geduldig!",
+          "en": "Be patient! (formal)",
+          "highlight": "Seien Sie"
+        },
+        {
+          "de": "Hab keine Angst!",
+          "en": "Don't be afraid! (lit: Have no fear!)",
+          "highlight": "Hab"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each imperative form of 'sein' to the correct addressee:",
+          "pairs": [
+            {
+              "left": "Sei still!",
+              "right": "du (informal singular)"
+            },
+            {
+              "left": "Seid still!",
+              "right": "ihr (informal plural)"
+            },
+            {
+              "left": "Seien Sie still!",
+              "right": "Sie (formal)"
+            }
+          ],
+          "explanation": "sein: Sei! (du), Seid! (ihr), Seien Sie! (Sie). 'Seien' is the only Sie-imperative that differs from the infinitive."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ keine Angst! (Don't be afraid! — to a friend) — use the du-form imperative of 'haben'",
+          "acceptedAnswers": [
+            "Hab"
+          ],
+          "hint": "du hast → imperative: Hab",
+          "explanation": "Du-imperative of 'haben': Hab! Hab keine Angst!"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the formal (Sie) imperative of 'sein'?",
+          "options": [
+            "Sein Sie!",
+            "Sind Sie!",
+            "Seien Sie!"
+          ],
+          "correctIndex": 2,
+          "explanation": "'sein' is unique: the Sie-imperative is 'Seien Sie' (not 'Sein Sie'). This is the only verb with this irregularity."
+        }
+      ]
+    },
+    {
+      "sectionId": "separable-verbs",
+      "title": "Imperatives with Separable Verbs",
+      "explanation": "Separable verbs split in the imperative just like in present tense statements. The prefix goes to the end of the sentence. aufstehen (to get up): Steh auf! / Steht auf! / Stehen Sie auf! zumachen (to close): Mach zu! / Macht zu! / Machen Sie zu! mitkommen (to come along): Komm mit! / Kommt mit! / Kommen Sie mit! anfangen (to begin): Fang an! / Fangt an! / Fangen Sie an!",
+      "tip": "Separable prefix always goes to the end: Steh auf! Mach zu! Komm mit!",
+      "examples": [
+        {
+          "de": "Steh auf!",
+          "en": "Get up! (informal singular)",
+          "highlight": "auf"
+        },
+        {
+          "de": "Macht die Tür zu!",
+          "en": "Close the door! (informal plural)",
+          "highlight": "zu"
+        },
+        {
+          "de": "Kommen Sie bitte mit!",
+          "en": "Please come along! (formal)",
+          "highlight": "mit"
+        },
+        {
+          "de": "Hör auf!",
+          "en": "Stop it! (informal singular)",
+          "highlight": "auf"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "___ ___! (Get up! — informal singular, from 'aufstehen')",
+          "acceptedAnswers": [
+            "Steh auf"
+          ],
+          "hint": "The prefix 'auf' goes to the end",
+          "explanation": "Separable verb 'aufstehen': du-imperative → Steh auf! The prefix separates to the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Come along!' (informal plural, from 'mitkommen')?",
+          "options": [
+            "Mitkommt!",
+            "Kommt mit!",
+            "Kommt mitkommen!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Separable verb 'mitkommen': ihr-imperative → Kommt mit! The prefix 'mit' separates to the end."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you formally say 'Please begin!' (from 'anfangen')?",
+          "options": [
+            "Anfangen Sie bitte!",
+            "Fangen Sie bitte an!",
+            "Fang Sie bitte an!"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sie-imperative of 'anfangen': Fangen Sie bitte an! The prefix 'an' goes to the end, and 'bitte' sits between verb and prefix."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-expressions",
+      "title": "Common Imperative Expressions",
+      "explanation": "Many everyday German expressions use the imperative. Here are the most useful ones: Komm her! (Come here!) Mach schnell! (Hurry up!) Setz dich! (Sit down! — reflexive) Pass auf! (Watch out! — separable) Hör zu! (Listen! — separable) Guck mal! (Look! — with 'mal' to soften) Sag mal! (Tell me! — with 'mal') Lass mich in Ruhe! (Leave me alone!) Halt die Klappe! (Shut up! — very informal) Keine Sorge! (Don't worry! — no verb). Adding 'mal' or 'bitte' softens a command: 'Komm mal her!' sounds friendlier than 'Komm her!'",
+      "tip": "Add 'mal' to soften a command (Komm mal her!). Add 'bitte' to be polite (Komm bitte her!). Add 'doch' for emphasis or encouragement (Setz dich doch!).",
+      "examples": [
+        {
+          "de": "Komm her!",
+          "en": "Come here!",
+          "highlight": "Komm her"
+        },
+        {
+          "de": "Mach schnell!",
+          "en": "Hurry up!",
+          "highlight": "Mach schnell"
+        },
+        {
+          "de": "Setz dich!",
+          "en": "Sit down! (reflexive)",
+          "highlight": "Setz dich"
+        },
+        {
+          "de": "Pass auf!",
+          "en": "Watch out! / Pay attention!",
+          "highlight": "Pass auf"
+        },
+        {
+          "de": "Hör zu!",
+          "en": "Listen!",
+          "highlight": "Hör zu"
+        },
+        {
+          "de": "Guck mal!",
+          "en": "Look! (softened with 'mal')",
+          "highlight": "Guck mal"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "prompt": "Match each German imperative expression to its English meaning:",
+          "pairs": [
+            {
+              "left": "Komm her!",
+              "right": "Come here!"
+            },
+            {
+              "left": "Mach schnell!",
+              "right": "Hurry up!"
+            },
+            {
+              "left": "Pass auf!",
+              "right": "Watch out!"
+            },
+            {
+              "left": "Hör zu!",
+              "right": "Listen!"
+            }
+          ],
+          "explanation": "These are among the most common imperative expressions in everyday German."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "___ dich! (Sit down! — informal singular, reflexive verb 'sich setzen')",
+          "acceptedAnswers": [
+            "Setz"
+          ],
+          "hint": "du setzt dich → drop -st and 'du'",
+          "explanation": "Reflexive imperative of 'sich setzen': Setz dich! The reflexive pronoun changes to 'dich' for du-form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word can you add to soften a command in German?",
+          "options": [
+            "jetzt",
+            "mal",
+            "nicht"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adding 'mal' softens an imperative: 'Komm mal her!' (Come here, would you?) sounds friendlier than 'Komm her!' (Come here!)"
+        }
+      ]
+    }
+  ]
+}

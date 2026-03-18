@@ -1,0 +1,355 @@
+{
+  "lessonId": "te-shimau",
+  "nameEn": "Te-shimau & Te-oku",
+  "nameJa": "～てしまう・～ておく",
+  "icon": "😤",
+  "tier": "A2",
+  "prerequisites": [
+    "te-form"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "te-shimau-completion",
+      "title": "～てしまう for Completion",
+      "explanation": "～てしまう attached to the て-form of a verb expresses that an action has been completed thoroughly or entirely. It emphasizes that something was done all the way through. For example, 全部食べてしまった means 'I ate it all (completely).' 本を読んでしまった means 'I finished reading the book.' The nuance is that the action reached its end point.",
+      "tip": "Think of ～てしまう for completion as adding 'completely' or 'all the way' to the action. It often implies the action is done and cannot be undone.",
+      "examples": [
+        {
+          "ja": "宿題を全部やってしまった。",
+          "en": "I finished all my homework.",
+          "highlight": "やってしまった"
+        },
+        {
+          "ja": "ケーキを全部食べてしまいました。",
+          "en": "I ate all of the cake.",
+          "highlight": "食べてしまいました"
+        },
+        {
+          "ja": "この本をもう読んでしまった。",
+          "en": "I've already finished reading this book.",
+          "highlight": "読んでしまった"
+        },
+        {
+          "ja": "レポートを書いてしまおう。",
+          "en": "Let's finish writing the report.",
+          "highlight": "書いてしまおう"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I drank all the milk.' — Choose the correct sentence:",
+          "options": [
+            "牛乳を全部飲んでしまった。",
+            "牛乳を全部飲むしまった。",
+            "牛乳を全部飲みしまった。",
+            "牛乳を全部飲んだしまった。"
+          ],
+          "correctIndex": 0,
+          "explanation": "飲む → 飲んで (て-form) + しまった. 飲んでしまった expresses complete consumption."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does もう宿題をやってしまった mean?",
+          "options": [
+            "I haven't done my homework yet.",
+            "I'm doing my homework now.",
+            "I've already finished my homework.",
+            "I want to do my homework."
+          ],
+          "correctIndex": 2,
+          "explanation": "もう (already) + やってしまった (did completely) = I've already finished my homework."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Let's finish this work.' — Choose the correct sentence:",
+          "options": [
+            "この仕事をしてしまおう。",
+            "この仕事をするしまおう。",
+            "この仕事をししまおう。",
+            "この仕事をしまおう。"
+          ],
+          "correctIndex": 0,
+          "explanation": "する → して (て-form) + しまおう (volitional of しまう). してしまおう = let's finish doing."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-shimau-regret",
+      "title": "～てしまう for Regret & Accidents",
+      "explanation": "～てしまう also expresses regret, disappointment, or that something happened accidentally or unfortunately. This is actually the more common usage in everyday conversation. 忘れてしまった means 'I ended up forgetting' (and I regret it). 財布を落としてしまった means 'I accidentally dropped my wallet.' The context makes clear whether ～てしまう means completion or regret.",
+      "tip": "When ～てしまう is used with verbs describing mistakes, losses, or negative outcomes, it almost always carries a sense of regret. The speaker wishes it hadn't happened.",
+      "examples": [
+        {
+          "ja": "約束を忘れてしまった。",
+          "en": "I ended up forgetting my promise.",
+          "highlight": "忘れてしまった"
+        },
+        {
+          "ja": "電車に乗り遅れてしまいました。",
+          "en": "I accidentally missed the train.",
+          "highlight": "乗り遅れてしまいました"
+        },
+        {
+          "ja": "大事な書類をなくしてしまった。",
+          "en": "I lost an important document (unfortunately).",
+          "highlight": "なくしてしまった"
+        },
+        {
+          "ja": "つい怒ってしまった。",
+          "en": "I ended up getting angry (without meaning to).",
+          "highlight": "怒ってしまった"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I accidentally broke the plate.' (皿 = plate, 割る = to break) — Choose the correct sentence:",
+          "options": [
+            "皿を割ってしまった。",
+            "皿を割るしまった。",
+            "皿を割りしまった。",
+            "皿を割ったしまった。"
+          ],
+          "correctIndex": 0,
+          "explanation": "割る → 割って (て-form) + しまった. 割ってしまった expresses accidental breaking with regret."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What nuance does 財布を落としてしまった carry?",
+          "options": [
+            "I intentionally dropped my wallet.",
+            "I dropped my wallet and I'm glad.",
+            "I accidentally dropped my wallet (and regret it).",
+            "I want to drop my wallet."
+          ],
+          "correctIndex": 2,
+          "explanation": "With a negative event like losing a wallet, ～てしまった expresses that it happened accidentally and the speaker regrets it."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I ended up being late.' (遅刻する = to be late) — Choose the correct sentence:",
+          "options": [
+            "遅刻してしまった。",
+            "遅刻するしまった。",
+            "遅刻しまった。",
+            "遅刻したしまった。"
+          ],
+          "correctIndex": 0,
+          "explanation": "遅刻する → 遅刻して (て-form) + しまった. 遅刻してしまった = ended up being late."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-shimau-casual",
+      "title": "Casual Contracted Forms: ～ちゃう / ～じゃう",
+      "explanation": "In casual speech, ～てしまう contracts to ～ちゃう, and ～でしまう contracts to ～じゃう. These are extremely common in everyday conversation. 食べてしまう → 食べちゃう, 飲んでしまう → 飲んじゃう. Past tense: 食べちゃった, 飲んじゃった. These contractions sound natural and friendly but should be avoided in formal situations.",
+      "tip": "The rule is simple: てしまう → ちゃう, でしまう → じゃう. This applies to all conjugations: ちゃう, ちゃった, ちゃいます, etc.",
+      "examples": [
+        {
+          "ja": "ケーキ全部食べちゃった。",
+          "en": "I ate all the cake. (casual)",
+          "highlight": "食べちゃった"
+        },
+        {
+          "ja": "また寝坊しちゃった。",
+          "en": "I overslept again. (casual)",
+          "highlight": "しちゃった"
+        },
+        {
+          "ja": "お酒を飲みすぎて酔っちゃった。",
+          "en": "I drank too much and got drunk. (casual)",
+          "highlight": "酔っちゃった"
+        },
+        {
+          "ja": "傘を忘れて濡れちゃった。",
+          "en": "I forgot my umbrella and got wet. (casual)",
+          "highlight": "濡れちゃった"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the casual contraction of 飲んでしまった?",
+          "options": [
+            "飲んちゃった",
+            "飲んじゃった",
+            "飲みちゃった",
+            "飲んでちゃった"
+          ],
+          "correctIndex": 1,
+          "explanation": "でしまう contracts to じゃう. 飲んでしまった → 飲んじゃった."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the casual contraction of 食べてしまう?",
+          "options": [
+            "食べじゃう",
+            "食べてちゃう",
+            "食べちゃう",
+            "食べしゃう"
+          ],
+          "correctIndex": 2,
+          "explanation": "てしまう contracts to ちゃう. 食べてしまう → 食べちゃう."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I ended up buying it.' (casual) — Choose the correct sentence:",
+          "options": [
+            "買いちゃった。",
+            "買っちゃった。",
+            "買うちゃった。",
+            "買てちゃった。"
+          ],
+          "correctIndex": 1,
+          "explanation": "買う → 買って (て-form) → 買ってしまった → 買っちゃった."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I accidentally read it.' (casual, 読む = to read) — Choose the correct sentence:",
+          "options": [
+            "読んちゃった。",
+            "読みじゃった。",
+            "読んじゃった。",
+            "読むじゃった。"
+          ],
+          "correctIndex": 2,
+          "explanation": "読む → 読んで (て-form uses んで) → 読んでしまった → 読んじゃった."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-oku",
+      "title": "～ておく (Doing in Advance / Preparation)",
+      "explanation": "～ておく means to do something in advance, in preparation, or to leave something in a certain state. It implies foresight or deliberate preparation. 準備しておく means 'to prepare (in advance).' 買っておく means 'to buy (ahead of time).' 予約しておいた means 'I made a reservation (in advance).' This pattern is very useful for talking about planning and preparation.",
+      "tip": "～ておく literally means 'to do and place/leave.' The おく (to place) suggests putting an action's result in place for future benefit.",
+      "examples": [
+        {
+          "ja": "明日のために準備しておく。",
+          "en": "I'll prepare in advance for tomorrow.",
+          "highlight": "準備しておく"
+        },
+        {
+          "ja": "ビールを買っておいた。",
+          "en": "I bought beer ahead of time.",
+          "highlight": "買っておいた"
+        },
+        {
+          "ja": "レストランを予約しておいた。",
+          "en": "I made a restaurant reservation in advance.",
+          "highlight": "予約しておいた"
+        },
+        {
+          "ja": "窓を開けておいてください。",
+          "en": "Please leave the window open.",
+          "highlight": "開けておいて"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I'll study in advance.' (勉強する = to study) — Choose the correct sentence:",
+          "options": [
+            "勉強しておく。",
+            "勉強するおく。",
+            "勉強したおく。",
+            "勉強しおく。"
+          ],
+          "correctIndex": 0,
+          "explanation": "勉強する → 勉強して (て-form) + おく. 勉強しておく = to study in advance."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does ホテルを予約しておいた mean?",
+          "options": [
+            "I canceled the hotel reservation.",
+            "I booked a hotel in advance.",
+            "I'm booking a hotel now.",
+            "I want to book a hotel."
+          ],
+          "correctIndex": 1,
+          "explanation": "予約しておいた = made a reservation in advance. ～ておいた is the past tense of ～ておく."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Please leave the door open.' (ドアを開ける = to open the door) — Choose the correct sentence:",
+          "options": [
+            "ドアを開けておいてください。",
+            "ドアを開けるおいてください。",
+            "ドアを開けたおいてください。",
+            "ドアを開いておいてください。"
+          ],
+          "correctIndex": 0,
+          "explanation": "開ける → 開けて + おいて + ください. 開けておいてください = please leave it open."
+        }
+      ]
+    },
+    {
+      "sectionId": "te-oku-casual",
+      "title": "Contracted ～ておく → ～とく",
+      "explanation": "In casual speech, ～ておく contracts to ～とく. This is very common in everyday Japanese. 買っておく → 買っとく, やっておく → やっとく, 言っておく → 言っとく. Past tense: 買っといた, やっといた. The て-form of ～とく is ～といて: 買っといて (buy it ahead of time, casual request).",
+      "tip": "The contraction pattern is straightforward: ておく → とく, ておいた → といた, ておいて → といて. Just replace ておく with とく.",
+      "examples": [
+        {
+          "ja": "明日の分も買っとく。",
+          "en": "I'll buy some for tomorrow too. (casual)",
+          "highlight": "買っとく"
+        },
+        {
+          "ja": "先にやっとくよ。",
+          "en": "I'll do it ahead of time. (casual)",
+          "highlight": "やっとく"
+        },
+        {
+          "ja": "チケットを取っといた。",
+          "en": "I got the tickets in advance. (casual)",
+          "highlight": "取っといた"
+        },
+        {
+          "ja": "それ、冷蔵庫に入れといて。",
+          "en": "Put that in the fridge (for now). (casual)",
+          "highlight": "入れといて"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the casual contraction of 調べておく (to look up in advance)?",
+          "options": [
+            "調べちゃう",
+            "調べとく",
+            "調べじゃう",
+            "調べたく"
+          ],
+          "correctIndex": 1,
+          "explanation": "ておく contracts to とく. 調べておく → 調べとく."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the casual past tense of 言っておく (to tell in advance)?",
+          "options": [
+            "言っちゃった",
+            "言っとった",
+            "言っといた",
+            "言っといで"
+          ],
+          "correctIndex": 2,
+          "explanation": "ておいた contracts to といた. 言っておいた → 言っといた."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'Clean the room (in advance, casual request).' (部屋を掃除する) — Choose the correct sentence:",
+          "options": [
+            "部屋を掃除しちゃって。",
+            "部屋を掃除しといて。",
+            "部屋を掃除しじゃって。",
+            "部屋を掃除しとって。"
+          ],
+          "correctIndex": 1,
+          "explanation": "掃除する → 掃除しておいて → 掃除しといて. The casual request form of ～ておく."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "setId": "professions",
+  "nameEn": "Work & Professions",
+  "nameUk": "Робота і професії",
+  "nameRu": "Работа и профессии",
+  "nameDe": "Arbeit und Berufe",
+  "nameEs": "Trabajo y profesiones",
+  "nameFr": "Travail et professions",
+  "nameEl": "Εργασία και επαγγέλματα",
+  "nameHi": "काम और पेशे",
+  "nameAr": "العمل والمهن",
+  "nameKo": "직업과 직종",
+  "nameZh": "工作与职业",
+  "nameJa": "仕事と職業",
+  "difficulty": "A1",
+  "icon": "👷",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "лікар",
+      "ru": "врач",
+      "de": "Arzt",
+      "en": "doctor",
+      "phoneticUk": "likar",
+      "phoneticRu": "vrach",
+      "phoneticDe": "ARTST",
+      "examples": {
+        "uk": [
+          "Лікар оглянув пацієнта і виписав ліки.",
+          "Мій батько працює лікарем у лікарні."
+        ],
+        "ru": [
+          "врач осмотрел пациента и выписал лекарство",
+          "мой отец работает врачом в больнице"
+        ],
+        "de": [
+          "Der Arzt hat den Patienten untersucht.",
+          "Mein Vater arbeitet als Arzt im Krankenhaus."
+        ],
+        "en": [
+          "The doctor examined the patient and prescribed medicine.",
+          "My father works as a doctor at the hospital."
+        ],
+        "es": [
+          "El doctor examinó al paciente.",
+          "Mi padre trabaja como médico en el hospital."
+        ]
+      },
+      "es": "médico",
+      "phoneticEs": "MEH-dee-koh",
+      "fr": "médecin",
+      "frPhonetic": "meh-DSAN",
+      "el": "γιατρός",
+      "elPhonetic": "ya-TROS",
+      "hi": "डॉक्टर",
+      "hiPhonetic": "DOK-tar",
+      "ar": "طَبِيب",
+      "arPhonetic": "ta-BEEB",
+      "ko": "의사",
+      "koPhonetic": "UI-sa",
+      "zh": "医生",
+      "zhPhonetic": "yīshēng",
+      "ja": "医者",
+      "jaPhonetic": "isha"
+    },
+    {
+      "uk": "вчитель",
+      "ru": "учитель",
+      "de": "Lehrer",
+      "en": "teacher",
+      "phoneticUk": "vchytel",
+      "phoneticRu": "uchitel'",
+      "phoneticDe": "LEH-rer",
+      "examples": {
+        "uk": [
+          "Вчитель пояснив нову тему на уроці.",
+          "Наш вчитель дуже добрий і терплячий."
+        ],
+        "ru": [
+          "учитель объяснил новую тему на уроке",
+          "наш учитель очень добрый и терпеливый"
+        ],
+        "de": [
+          "Der Lehrer hat das neue Thema erklärt.",
+          "Unser Lehrer ist sehr freundlich und geduldig."
+        ],
+        "en": [
+          "The teacher explained the new topic in class.",
+          "Our teacher is very kind and patient."
+        ],
+        "es": [
+          "El profesor explicó el tema nuevo.",
+          "Nuestro maestro es muy amable y paciente."
+        ]
+      },
+      "es": "profesor",
+      "phoneticEs": "proh-feh-SOR",
+      "fr": "enseignant",
+      "frPhonetic": "an-seh-NYAN",
+      "el": "δάσκαλος",
+      "elPhonetic": "DHAS-ka-los",
+      "hi": "शिक्षक",
+      "hiPhonetic": "SHIK-shak",
+      "ar": "مُعَلِّم",
+      "arPhonetic": "mu-AL-lim",
+      "ko": "선생님",
+      "koPhonetic": "son-SENG-nim",
+      "zh": "老师",
+      "zhPhonetic": "lǎoshī",
+      "ja": "先生",
+      "jaPhonetic": "sensei"
+    },
+    {
+      "uk": "інженер",
+      "ru": "инженер",
+      "de": "Ingenieur",
+      "en": "engineer",
+      "phoneticUk": "inzhener",
+      "phoneticRu": "inzhener",
+      "phoneticDe": "in-zheh-NYOOR",
+      "examples": {
+        "uk": [
+          "Інженер спроєктував новий міст.",
+          "Мій брат працює інженером на заводі."
+        ],
+        "ru": [
+          "инженер спроектировал новый мост",
+          "мой брат работает инженером на заводе"
+        ],
+        "de": [
+          "Der Ingenieur hat eine neue Brücke entworfen.",
+          "Mein Bruder arbeitet als Ingenieur in der Fabrik."
+        ],
+        "en": [
+          "The engineer designed a new bridge.",
+          "My brother works as an engineer at the factory."
+        ],
+        "es": [
+          "El ingeniero diseñó un puente nuevo.",
+          "Mi hermano trabaja como ingeniero en la fábrica."
+        ]
+      },
+      "es": "ingeniero",
+      "phoneticEs": "in-heh-NYEH-roh",
+      "fr": "ingénieur",
+      "frPhonetic": "an-zheh-NYUR",
+      "el": "μηχανικός",
+      "elPhonetic": "mi-ha-ni-KOS",
+      "hi": "इंजीनियर",
+      "hiPhonetic": "in-JEE-ni-yar",
+      "ar": "مُهَنْدِس",
+      "arPhonetic": "mu-HAN-dis",
+      "ko": "엔지니어",
+      "koPhonetic": "en-ji-NI-eo",
+      "zh": "工程师",
+      "zhPhonetic": "gōngchéngshī",
+      "ja": "エンジニア",
+      "jaPhonetic": "enjinia"
+    },
+    {
+      "uk": "студент",
+      "ru": "студент",
+      "de": "Student",
+      "en": "student",
+      "phoneticUk": "student",
+      "phoneticRu": "student",
+      "phoneticDe": "shtu-DENT",
+      "examples": {
+        "uk": [
+          "Студент складає іспити в університеті.",
+          "Кожен студент повинен багато читати."
+        ],
+        "ru": [
+          "студент сдаёт экзамены в университете",
+          "каждый студент должен много читать"
+        ],
+        "de": [
+          "Der Student legt Prüfungen an der Universität ab.",
+          "Jeder Student muss viel lesen."
+        ],
+        "en": [
+          "The student takes exams at the university.",
+          "Every student should read a lot."
+        ],
+        "es": [
+          "El estudiante tiene exámenes en la universidad.",
+          "Todo estudiante debe leer mucho."
+        ]
+      },
+      "es": "estudiante",
+      "phoneticEs": "ehs-too-DYAN-teh",
+      "fr": "étudiant",
+      "frPhonetic": "eh-too-DYAN",
+      "el": "φοιτητής",
+      "elPhonetic": "fi-ti-TIS",
+      "hi": "छात्र",
+      "hiPhonetic": "CHHA-tra",
+      "ar": "طَالِب",
+      "arPhonetic": "TAA-lib",
+      "ko": "학생",
+      "koPhonetic": "HAK-seng",
+      "zh": "学生",
+      "zhPhonetic": "xuéshēng",
+      "ja": "学生",
+      "jaPhonetic": "gakusei"
+    },
+    {
+      "uk": "водій",
+      "ru": "водитель",
+      "de": "Fahrer",
+      "en": "driver",
+      "phoneticUk": "vodiy",
+      "phoneticRu": "voditel'",
+      "phoneticDe": "FAH-rer",
+      "examples": {
+        "uk": [
+          "Водій автобуса зупинився на зупинці.",
+          "Мій дядько працює водієм таксі."
+        ],
+        "ru": [
+          "водитель автобуса остановился на остановке",
+          "мой дядя работает водителем такси"
+        ],
+        "de": [
+          "Der Busfahrer hielt an der Haltestelle.",
+          "Mein Onkel arbeitet als Taxifahrer."
+        ],
+        "en": [
+          "The bus driver stopped at the bus stop.",
+          "My uncle works as a taxi driver."
+        ],
+        "es": [
+          "El conductor del autobús paró en la parada.",
+          "Mi tío trabaja como conductor de taxi."
+        ]
+      },
+      "es": "conductor",
+      "phoneticEs": "kon-dook-TOR",
+      "fr": "conducteur",
+      "frPhonetic": "kon-dook-TUR",
+      "el": "οδηγός",
+      "elPhonetic": "o-dhi-GOS",
+      "hi": "ड्राइवर",
+      "hiPhonetic": "DRAI-var",
+      "ar": "سَائِق",
+      "arPhonetic": "SAA-iq",
+      "ko": "운전사",
+      "koPhonetic": "un-JON-sa",
+      "zh": "司机",
+      "zhPhonetic": "sījī",
+      "ja": "運転手",
+      "jaPhonetic": "untenshu"
+    },
+    {
+      "uk": "кухар",
+      "ru": "повар",
+      "de": "Koch",
+      "en": "cook",
+      "phoneticUk": "kukhar",
+      "phoneticRu": "povar",
+      "phoneticDe": "KOKH",
+      "examples": {
+        "uk": [
+          "Кухар готує смачну страву в ресторані.",
+          "Наш кухар знає багато рецептів."
+        ],
+        "ru": [
+          "повар готовит вкусное блюдо в ресторане",
+          "наш повар знает много рецептов"
+        ],
+        "de": [
+          "Der Koch bereitet ein leckeres Gericht im Restaurant zu.",
+          "Unser Koch kennt viele Rezepte."
+        ],
+        "en": [
+          "The cook prepares a delicious dish at the restaurant.",
+          "Our cook knows many recipes."
+        ],
+        "es": [
+          "El cocinero prepara un plato delicioso.",
+          "Nuestro cocinero conoce muchas recetas."
+        ]
+      },
+      "es": "cocinero",
+      "phoneticEs": "koh-see-NEH-roh",
+      "fr": "cuisinier",
+      "frPhonetic": "kwee-zee-NYEH",
+      "el": "μάγειρας",
+      "elPhonetic": "MA-yi-ras",
+      "hi": "रसोइया",
+      "hiPhonetic": "ra-SOI-yaa",
+      "ar": "طَبَّاخ",
+      "arPhonetic": "tab-BAAKH",
+      "ko": "요리사",
+      "koPhonetic": "YO-ri-sa",
+      "zh": "厨师",
+      "zhPhonetic": "chúshī",
+      "ja": "料理人",
+      "jaPhonetic": "ryourinin"
+    },
+    {
+      "uk": "поліцейський",
+      "ru": "полицейский",
+      "de": "Polizist",
+      "en": "police officer",
+      "phoneticUk": "politseyskiy",
+      "phoneticRu": "politseyskiy",
+      "phoneticDe": "po-li-TSIST",
+      "examples": {
+        "uk": [
+          "Поліцейський регулює рух на перехресті.",
+          "Я хочу стати поліцейським, коли виросту."
+        ],
+        "ru": [
+          "полицейский регулирует движение на перекрёстке",
+          "я хочу стать полицейским, когда вырасту"
+        ],
+        "de": [
+          "Der Polizist regelt den Verkehr an der Kreuzung.",
+          "Ich möchte Polizist werden, wenn ich groß bin."
+        ],
+        "en": [
+          "The police officer directs traffic at the intersection.",
+          "I want to become a police officer when I grow up."
+        ],
+        "es": [
+          "El policía dirige el tráfico en el cruce.",
+          "Quiero ser policía cuando sea grande."
+        ]
+      },
+      "es": "policía",
+      "phoneticEs": "poh-lee-SEE-ah",
+      "fr": "policier",
+      "frPhonetic": "po-lee-SYEH",
+      "el": "αστυνομικός",
+      "elPhonetic": "a-sti-no-mi-KOS",
+      "hi": "पुलिसकर्मी",
+      "hiPhonetic": "pu-LIS-kar-mee",
+      "ar": "شُرْطِيّ",
+      "arPhonetic": "shur-TIY",
+      "ko": "경찰관",
+      "koPhonetic": "gyong-CHAL-gwan",
+      "zh": "警察",
+      "zhPhonetic": "jǐngchá",
+      "ja": "警察官",
+      "jaPhonetic": "keisatsukan"
+    },
+    {
+      "uk": "пожежник",
+      "ru": "пожарный",
+      "de": "Feuerwehrmann",
+      "en": "firefighter",
+      "phoneticUk": "pozhezhnik",
+      "phoneticRu": "pozharnyy",
+      "phoneticDe": "FOY-er-vehr-man",
+      "examples": {
+        "uk": [
+          "Пожежник загасив полум'я у будинку.",
+          "Пожежники приїхали дуже швидко."
+        ],
+        "ru": [
+          "пожарный потушил пламя в доме",
+          "пожарные приехали очень быстро"
+        ],
+        "de": [
+          "Der Feuerwehrmann hat das Feuer im Haus gelöscht.",
+          "Die Feuerwehrleute kamen sehr schnell."
+        ],
+        "en": [
+          "The firefighter put out the fire in the house.",
+          "The firefighters arrived very quickly."
+        ],
+        "es": [
+          "El bombero apagó el fuego en la casa.",
+          "Los bomberos llegaron muy rápido."
+        ]
+      },
+      "es": "bombero",
+      "phoneticEs": "bom-BEH-roh",
+      "fr": "pompier",
+      "frPhonetic": "pom-PYEH",
+      "el": "πυροσβέστης",
+      "elPhonetic": "pi-ros-VE-stis",
+      "hi": "दमकलकर्मी",
+      "hiPhonetic": "dam-KAL-kar-mee",
+      "ar": "رَجُلُ إِطْفَاء",
+      "arPhonetic": "RA-jul it-FAA",
+      "ko": "소방관",
+      "koPhonetic": "so-BANG-gwan",
+      "zh": "消防员",
+      "zhPhonetic": "xiāofángyuán",
+      "ja": "消防士",
+      "jaPhonetic": "shouboushi"
+    },
+    {
+      "uk": "медсестра",
+      "ru": "медсестра",
+      "de": "Krankenschwester",
+      "en": "nurse",
+      "phoneticUk": "medsestra",
+      "phoneticRu": "medsestra",
+      "phoneticDe": "KRAN-ken-shves-ter",
+      "examples": {
+        "uk": [
+          "Медсестра зробила пацієнту укол.",
+          "Моя сестра працює медсестрою в лікарні."
+        ],
+        "ru": [
+          "медсестра сделала пациенту укол",
+          "моя сестра работает медсестрой в больнице"
+        ],
+        "de": [
+          "Die Krankenschwester gab dem Patienten eine Spritze.",
+          "Meine Schwester arbeitet als Krankenschwester im Krankenhaus."
+        ],
+        "en": [
+          "The nurse gave the patient an injection.",
+          "My sister works as a nurse at the hospital."
+        ],
+        "es": [
+          "La enfermera le puso una inyección al paciente.",
+          "Mi hermana trabaja como enfermera en el hospital."
+        ]
+      },
+      "es": "enfermera",
+      "phoneticEs": "en-fer-MEH-rah",
+      "fr": "infirmière",
+      "frPhonetic": "an-feer-MYEHR",
+      "el": "νοσοκόμα",
+      "elPhonetic": "no-so-KO-ma",
+      "hi": "नर्स",
+      "hiPhonetic": "NARS",
+      "ar": "مُمَرِّضَة",
+      "arPhonetic": "mu-MAR-ri-da",
+      "ko": "간호사",
+      "koPhonetic": "gan-HO-sa",
+      "zh": "护士",
+      "zhPhonetic": "hùshi",
+      "ja": "看護師",
+      "jaPhonetic": "kangoshi"
+    },
+    {
+      "uk": "адвокат",
+      "ru": "адвокат",
+      "de": "Anwalt",
+      "en": "lawyer",
+      "phoneticUk": "advokat",
+      "phoneticRu": "advokat",
+      "phoneticDe": "AN-valt",
+      "examples": {
+        "uk": [
+          "Адвокат захищає клієнта в суді.",
+          "Мій друг вивчився на адвоката."
+        ],
+        "ru": [
+          "адвокат защищает клиента в суде",
+          "мой друг выучился на адвоката"
+        ],
+        "de": [
+          "Der Anwalt verteidigt den Klienten vor Gericht.",
+          "Mein Freund hat Jura studiert und ist Anwalt geworden."
+        ],
+        "en": [
+          "The lawyer defends the client in court.",
+          "My friend studied law and became a lawyer."
+        ],
+        "es": [
+          "El abogado defiende al cliente en el juicio.",
+          "Mi amigo estudió derecho y se hizo abogado."
+        ]
+      },
+      "es": "abogado",
+      "phoneticEs": "ah-boh-GAH-doh",
+      "fr": "avocat",
+      "frPhonetic": "a-vo-KAH",
+      "el": "δικηγόρος",
+      "elPhonetic": "dhi-ki-GO-ros",
+      "hi": "वकील",
+      "hiPhonetic": "va-KEEL",
+      "ar": "مُحَامٍ",
+      "arPhonetic": "mu-HAA-mee",
+      "ko": "변호사",
+      "koPhonetic": "byon-HO-sa",
+      "zh": "律师",
+      "zhPhonetic": "lǜshī",
+      "ja": "弁護士",
+      "jaPhonetic": "bengoshi"
+    },
+    {
+      "uk": "програміст",
+      "ru": "программист",
+      "de": "Programmierer",
+      "en": "programmer",
+      "phoneticUk": "prohramist",
+      "phoneticRu": "programmist",
+      "phoneticDe": "pro-gra-MEE-rer",
+      "examples": {
+        "uk": [
+          "Програміст написав нову програму для компанії.",
+          "Мій друг працює програмістом у великій фірмі."
+        ],
+        "ru": [
+          "программист написал новую программу для компании",
+          "мой друг работает программистом в большой фирме"
+        ],
+        "de": [
+          "Der Programmierer hat ein neues Programm für die Firma geschrieben.",
+          "Mein Freund arbeitet als Programmierer in einer großen Firma."
+        ],
+        "en": [
+          "The programmer wrote a new program for the company.",
+          "My friend works as a programmer at a big firm."
+        ],
+        "es": [
+          "El programador escribió un nuevo programa para la empresa.",
+          "Mi amigo trabaja como programador en una gran empresa."
+        ]
+      },
+      "es": "programador",
+      "phoneticEs": "proh-grah-mah-DOR",
+      "fr": "programmeur",
+      "frPhonetic": "pro-gra-MUR",
+      "el": "προγραμματιστής",
+      "elPhonetic": "pro-gra-ma-ti-STIS",
+      "hi": "प्रोग्रामर",
+      "hiPhonetic": "PRO-gra-mar",
+      "ar": "مُبَرْمِج",
+      "arPhonetic": "mu-BAR-mij",
+      "ko": "프로그래머",
+      "koPhonetic": "peu-ro-geu-RE-mo",
+      "zh": "程序员",
+      "zhPhonetic": "chéngxùyuán",
+      "ja": "プログラマー",
+      "jaPhonetic": "puroguramaa"
+    },
+    {
+      "uk": "офіціант",
+      "ru": "официант",
+      "de": "Kellner",
+      "en": "waiter",
+      "phoneticUk": "ofitsiant",
+      "phoneticRu": "ofitsiant",
+      "phoneticDe": "KEL-ner",
+      "examples": {
+        "uk": [
+          "Офіціант приніс нам меню.",
+          "Офіціант ввічливо прийняв замовлення."
+        ],
+        "ru": [
+          "официант принёс нам меню",
+          "официант вежливо принял заказ"
+        ],
+        "de": [
+          "Der Kellner hat uns die Speisekarte gebracht.",
+          "Der Kellner hat höflich die Bestellung aufgenommen."
+        ],
+        "en": [
+          "The waiter brought us the menu.",
+          "The waiter politely took our order."
+        ],
+        "es": [
+          "El camarero nos trajo el menú.",
+          "El camarero tomó nuestro pedido amablemente."
+        ]
+      },
+      "es": "camarero",
+      "phoneticEs": "kah-mah-REH-roh",
+      "fr": "serveur",
+      "frPhonetic": "ser-VUR",
+      "el": "σερβιτόρος",
+      "elPhonetic": "ser-vi-TO-ros",
+      "hi": "वेटर",
+      "hiPhonetic": "VEH-tar",
+      "ar": "نَادِل",
+      "arPhonetic": "NAA-dil",
+      "ko": "웨이터",
+      "koPhonetic": "WE-i-to",
+      "zh": "服务员",
+      "zhPhonetic": "fúwùyuán",
+      "ja": "ウェイター",
+      "jaPhonetic": "weitaa"
+    },
+    {
+      "uk": "продавець",
+      "ru": "продавец",
+      "de": "Verkäufer",
+      "en": "salesperson",
+      "phoneticUk": "prodavets",
+      "phoneticRu": "prodavets",
+      "phoneticDe": "fer-KOY-fer",
+      "examples": {
+        "uk": [
+          "Продавець допоміг мені вибрати подарунок.",
+          "У магазині працює дуже привітний продавець."
+        ],
+        "ru": [
+          "продавец помог мне выбрать подарок",
+          "в магазине работает очень приветливый продавец"
+        ],
+        "de": [
+          "Der Verkäufer hat mir geholfen, ein Geschenk auszuwählen.",
+          "Im Geschäft arbeitet ein sehr freundlicher Verkäufer."
+        ],
+        "en": [
+          "The salesperson helped me choose a gift.",
+          "A very friendly salesperson works at the shop."
+        ],
+        "es": [
+          "El vendedor me ayudó a elegir un regalo.",
+          "En la tienda trabaja un vendedor muy amable."
+        ]
+      },
+      "es": "vendedor",
+      "phoneticEs": "ben-deh-DOR",
+      "fr": "vendeur",
+      "frPhonetic": "van-DUR",
+      "el": "πωλητής",
+      "elPhonetic": "po-li-TIS",
+      "hi": "विक्रेता",
+      "hiPhonetic": "vik-RE-taa",
+      "ar": "بَائِع",
+      "arPhonetic": "BAA-i'",
+      "ko": "판매원",
+      "koPhonetic": "pan-ME-won",
+      "zh": "售货员",
+      "zhPhonetic": "shòuhuòyuán",
+      "ja": "販売員",
+      "jaPhonetic": "hanbaiin"
+    },
+    {
+      "uk": "будівельник",
+      "ru": "строитель",
+      "de": "Bauarbeiter",
+      "en": "builder",
+      "phoneticUk": "budivelnyk",
+      "phoneticRu": "stroitel'",
+      "phoneticDe": "BOW-ar-bai-ter",
+      "examples": {
+        "uk": [
+          "Будівельник будує новий будинок.",
+          "Будівельники працюють з ранку до вечора."
+        ],
+        "ru": [
+          "строитель строит новый дом",
+          "строители работают с утра до вечера"
+        ],
+        "de": [
+          "Der Bauarbeiter baut ein neues Haus.",
+          "Die Bauarbeiter arbeiten von morgens bis abends."
+        ],
+        "en": [
+          "The builder is constructing a new house.",
+          "The builders work from morning until evening."
+        ],
+        "es": [
+          "El constructor está construyendo una casa nueva.",
+          "Los constructores trabajan desde la mañana hasta la noche."
+        ]
+      },
+      "es": "constructor",
+      "phoneticEs": "kons-trook-TOR",
+      "fr": "ouvrier du bâtiment",
+      "frPhonetic": "oo-vree-YEH doo ba-tee-MAN",
+      "el": "οικοδόμος",
+      "elPhonetic": "i-ko-DHO-mos",
+      "hi": "निर्माण मजदूर",
+      "hiPhonetic": "nir-MAAN maj-DOOR",
+      "ar": "عَامِلُ بِنَاء",
+      "arPhonetic": "AA-mil bi-NAA",
+      "ko": "건설 노동자",
+      "koPhonetic": "gon-SOL no-DONG-ja",
+      "zh": "建筑工人",
+      "zhPhonetic": "jiànzhù gōngrén",
+      "ja": "建設作業員",
+      "jaPhonetic": "kensetsu sagyouin"
+    },
+    {
+      "uk": "журналіст",
+      "ru": "журналист",
+      "de": "Journalist",
+      "en": "journalist",
+      "phoneticUk": "zhurnalist",
+      "phoneticRu": "zhurnalist",
+      "phoneticDe": "zhur-na-LIST",
+      "examples": {
+        "uk": [
+          "Журналіст написав цікаву статтю для газети.",
+          "Журналіст бере інтерв'ю у відомого актора."
+        ],
+        "ru": [
+          "журналист написал интересную статью для газеты",
+          "журналист берёт интервью у известного актёра"
+        ],
+        "de": [
+          "Der Journalist hat einen interessanten Artikel für die Zeitung geschrieben.",
+          "Der Journalist interviewt einen berühmten Schauspieler."
+        ],
+        "en": [
+          "The journalist wrote an interesting article for the newspaper.",
+          "The journalist interviews a famous actor."
+        ],
+        "es": [
+          "El periodista escribió un artículo interesante para el periódico.",
+          "El periodista entrevista a un actor famoso."
+        ]
+      },
+      "es": "periodista",
+      "phoneticEs": "peh-ryo-DEES-tah",
+      "fr": "journaliste",
+      "frPhonetic": "zhoor-na-LEEST",
+      "el": "δημοσιογράφος",
+      "elPhonetic": "dhi-mo-sio-GRA-fos",
+      "hi": "पत्रकार",
+      "hiPhonetic": "pat-ra-KAAR",
+      "ar": "صَحَفِيّ",
+      "arPhonetic": "sa-ha-FIY",
+      "ko": "기자",
+      "koPhonetic": "GI-ja",
+      "zh": "记者",
+      "zhPhonetic": "jìzhě",
+      "ja": "ジャーナリスト",
+      "jaPhonetic": "jaanarisuto"
+    },
+    {
+      "uk": "музикант",
+      "ru": "музыкант",
+      "de": "Musiker",
+      "en": "musician",
+      "phoneticUk": "muzykant",
+      "phoneticRu": "muzykant",
+      "phoneticDe": "moo-ZEE-ker",
+      "examples": {
+        "uk": [
+          "Музикант грає на скрипці в оркестрі.",
+          "Відомий музикант дав концерт у нашому місті."
+        ],
+        "ru": [
+          "музыкант играет на скрипке в оркестре",
+          "известный музыкант дал концерт в нашем городе"
+        ],
+        "de": [
+          "Der Musiker spielt Geige im Orchester.",
+          "Ein berühmter Musiker gab ein Konzert in unserer Stadt."
+        ],
+        "en": [
+          "The musician plays violin in the orchestra.",
+          "A famous musician gave a concert in our city."
+        ],
+        "es": [
+          "El músico toca el violín en la orquesta.",
+          "Un músico famoso dio un concierto en nuestra ciudad."
+        ]
+      },
+      "es": "músico",
+      "phoneticEs": "MOO-see-koh",
+      "fr": "musicien",
+      "frPhonetic": "moo-zee-SYAN",
+      "el": "μουσικός",
+      "elPhonetic": "mu-si-KOS",
+      "hi": "संगीतकार",
+      "hiPhonetic": "san-GEET-kaar",
+      "ar": "مُوسِيقِيّ",
+      "arPhonetic": "moo-see-QIY",
+      "ko": "음악가",
+      "koPhonetic": "eu-MAK-ga",
+      "zh": "音乐家",
+      "zhPhonetic": "yīnyuèjiā",
+      "ja": "音楽家",
+      "jaPhonetic": "ongakuka"
+    },
+    {
+      "uk": "художник",
+      "ru": "художник",
+      "de": "Künstler",
+      "en": "artist",
+      "phoneticUk": "khudozhnyk",
+      "phoneticRu": "khudozhnik",
+      "phoneticDe": "KOONST-ler",
+      "examples": {
+        "uk": [
+          "Художник малює пейзаж на полотні.",
+          "Відомий художник виставив свої картини в галереї."
+        ],
+        "ru": [
+          "художник рисует пейзаж на холсте",
+          "известный художник выставил свои картины в галерее"
+        ],
+        "de": [
+          "Der Künstler malt eine Landschaft auf die Leinwand.",
+          "Ein berühmter Künstler stellte seine Bilder in der Galerie aus."
+        ],
+        "en": [
+          "The artist paints a landscape on canvas.",
+          "A famous artist exhibited his paintings in the gallery."
+        ],
+        "es": [
+          "El artista pinta un paisaje en el lienzo.",
+          "Un artista famoso expuso sus cuadros en la galería."
+        ]
+      },
+      "es": "artista",
+      "phoneticEs": "ar-TEES-tah",
+      "fr": "artiste",
+      "frPhonetic": "ar-TEEST",
+      "el": "καλλιτέχνης",
+      "elPhonetic": "ka-li-TEH-nis",
+      "hi": "कलाकार",
+      "hiPhonetic": "ka-laa-KAAR",
+      "ar": "فَنَّان",
+      "arPhonetic": "fan-NAAN",
+      "ko": "예술가",
+      "koPhonetic": "ye-SUL-ga",
+      "zh": "艺术家",
+      "zhPhonetic": "yìshùjiā",
+      "ja": "芸術家",
+      "jaPhonetic": "geijutsuka"
+    },
+    {
+      "uk": "фермер",
+      "ru": "фермер",
+      "de": "Bauer",
+      "en": "farmer",
+      "phoneticUk": "fermer",
+      "phoneticRu": "fermer",
+      "phoneticDe": "BOW-er",
+      "examples": {
+        "uk": [
+          "Фермер вирощує пшеницю на своєму полі.",
+          "Наш сусід працює фермером уже багато років."
+        ],
+        "ru": [
+          "фермер выращивает пшеницу на своём поле",
+          "наш сосед работает фермером уже много лет"
+        ],
+        "de": [
+          "Der Bauer baut Weizen auf seinem Feld an.",
+          "Unser Nachbar arbeitet seit vielen Jahren als Bauer."
+        ],
+        "en": [
+          "The farmer grows wheat in his field.",
+          "Our neighbour has been working as a farmer for many years."
+        ],
+        "es": [
+          "El granjero cultiva trigo en su campo.",
+          "Nuestro vecino trabaja como granjero desde hace muchos años."
+        ]
+      },
+      "es": "granjero",
+      "phoneticEs": "gran-HEH-roh",
+      "fr": "fermier",
+      "frPhonetic": "fer-MYEH",
+      "el": "αγρότης",
+      "elPhonetic": "a-GRO-tis",
+      "hi": "किसान",
+      "hiPhonetic": "ki-SAAN",
+      "ar": "مُزَارِع",
+      "arPhonetic": "mu-ZAA-ri'",
+      "ko": "농부",
+      "koPhonetic": "NONG-bu",
+      "zh": "农民",
+      "zhPhonetic": "nóngmín",
+      "ja": "農家",
+      "jaPhonetic": "nouka"
+    },
+    {
+      "uk": "пілот",
+      "ru": "пилот",
+      "de": "Pilot",
+      "en": "pilot",
+      "phoneticUk": "pilot",
+      "phoneticRu": "pilot",
+      "phoneticDe": "pee-LOT",
+      "examples": {
+        "uk": [
+          "Пілот керує літаком під час польоту.",
+          "Мій двоюрідний брат мріє стати пілотом."
+        ],
+        "ru": [
+          "пилот управляет самолётом во время полёта",
+          "мой двоюродный брат мечтает стать пилотом"
+        ],
+        "de": [
+          "Der Pilot steuert das Flugzeug während des Fluges.",
+          "Mein Cousin träumt davon, Pilot zu werden."
+        ],
+        "en": [
+          "The pilot controls the airplane during the flight.",
+          "My cousin dreams of becoming a pilot."
+        ],
+        "es": [
+          "El piloto controla el avión durante el vuelo.",
+          "Mi primo sueña con ser piloto."
+        ]
+      },
+      "es": "piloto",
+      "phoneticEs": "pee-LOH-toh",
+      "fr": "pilote",
+      "frPhonetic": "pee-LOT",
+      "el": "πιλότος",
+      "elPhonetic": "pi-LO-tos",
+      "hi": "पायलट",
+      "hiPhonetic": "PAA-ya-lat",
+      "ar": "طَيَّار",
+      "arPhonetic": "tay-YAAR",
+      "ko": "조종사",
+      "koPhonetic": "jo-JONG-sa",
+      "zh": "飞行员",
+      "zhPhonetic": "fēixíngyuán",
+      "ja": "パイロット",
+      "jaPhonetic": "pairotto"
+    },
+    {
+      "uk": "бухгалтер",
+      "ru": "бухгалтер",
+      "de": "Buchhalter",
+      "en": "accountant",
+      "phoneticUk": "bukhhalter",
+      "phoneticRu": "bukhgalter",
+      "phoneticDe": "BOOKH-hal-ter",
+      "examples": {
+        "uk": [
+          "Бухгалтер веде облік фінансів компанії.",
+          "Моя мати працює бухгалтером у банку."
+        ],
+        "ru": [
+          "бухгалтер ведёт учёт финансов компании",
+          "моя мать работает бухгалтером в банке"
+        ],
+        "de": [
+          "Der Buchhalter führt die Finanzbuchhaltung der Firma.",
+          "Meine Mutter arbeitet als Buchhalterin bei einer Bank."
+        ],
+        "en": [
+          "The accountant manages the company finances.",
+          "My mother works as an accountant at a bank."
+        ],
+        "es": [
+          "El contador lleva las finanzas de la empresa.",
+          "Mi madre trabaja como contadora en un banco."
+        ]
+      },
+      "es": "contador",
+      "phoneticEs": "kon-tah-DOR",
+      "fr": "comptable",
+      "frPhonetic": "kon-TABL",
+      "el": "λογιστής",
+      "elPhonetic": "lo-yi-STIS",
+      "hi": "लेखाकार",
+      "hiPhonetic": "le-KHAA-kaar",
+      "ar": "مُحَاسِب",
+      "arPhonetic": "mu-HAA-sib",
+      "ko": "회계사",
+      "koPhonetic": "hwe-GYE-sa",
+      "zh": "会计",
+      "zhPhonetic": "kuàijì",
+      "ja": "会計士",
+      "jaPhonetic": "kaikeishi"
+    }
+  ]
+}

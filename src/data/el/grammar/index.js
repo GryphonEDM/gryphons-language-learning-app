@@ -17,7 +17,9 @@ import genitiveLesson from './genitive-case.json';
 import conditionalLesson from './conditional.json';
 import subjunctiveLesson from './subjunctive.json';
 import particlesLesson from './particles.json';
+import passiveVoiceLesson from './passive-voice.json';
 import advancedVerbsLesson from './advanced-verbs.json';
+import reportedSpeechLesson from './reported-speech.json';
 
 export const GRAMMAR_LESSONS_EL = [
   alphabetLesson,
@@ -33,11 +35,13 @@ export const GRAMMAR_LESSONS_EL = [
   futureTenseLesson,
   prepositionsLesson,
   verbConjugationLesson,
+  passiveVoiceLesson,
   comparativesLesson,
   modalVerbsLesson,
   genitiveLesson,
   conditionalLesson,
   subjunctiveLesson,
   particlesLesson,
+  reportedSpeechLesson,
   advancedVerbsLesson,
 ];

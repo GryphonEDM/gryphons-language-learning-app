@@ -57,7 +57,7 @@
         },
         {
           "type": "fill-blank",
-          "prompt": "Das Buch ist ___ dich.",
+          "prompt": "Das Buch ist ___ dich. (The book is for you.)",
           "acceptedAnswers": [
             "für"
           ],
@@ -385,15 +385,12 @@
         },
         {
           "type": "fill-blank",
-          "prompt": "Wir sitzen ___ dem Tisch. (We are sitting at/between the table — location)",
+          "prompt": "Wir sitzen ___ dem Tisch. (We are sitting at the table — location)",
           "acceptedAnswers": [
             "an",
-            "hinter",
-            "neben",
-            "vor",
-            "unter"
+            "um"
           ],
-          "hint": "Location answer — any two-way preposition with dative 'dem' works here."
+          "hint": "Location answer — which preposition means 'at' with a table?"
         },
         {
           "type": "multiple-choice",

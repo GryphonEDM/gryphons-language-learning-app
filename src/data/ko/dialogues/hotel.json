@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameKo": "호텔 체크인",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Seoul. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "프론트 직원" },
+    "player": { "name": "손님" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "안녕하세요! 저희 호텔에 오신 것을 환영합니다.", "translation": "Hello! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["안녕하세요, 예약이 있습니다", "안녕하세요, 예약했습니다", "안녕하세요, 방을 예약했어요", "안녕하세요, 예약한 사람인데요"], "keyWords": ["안녕하세요", "예약"], "hint": "안녕하세요, 예약이 있습니다." },
+    { "speaker": "npc", "text": "네! 어떤 이름으로 예약하셨나요?", "translation": "Yes! Under what name did you make the reservation?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["하룻밤에 얼마예요?", "방 요금이 얼마인가요?", "1박에 얼마예요?", "숙박료가 얼마인가요?"], "keyWords": ["얼마", "방"], "hint": "하룻밤에 얼마예요?" },
+    { "speaker": "npc", "text": "싱글룸은 1박에 십만 원입니다. 조식이 포함되어 있습니다.", "translation": "A single room is one hundred thousand won per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["와이파이 있나요?", "Wi-Fi가 있나요?", "와이파이 되나요?", "인터넷 사용이 가능한가요?"], "keyWords": ["와이파이"], "hint": "와이파이 있나요?" },
+    { "speaker": "npc", "text": "네, 호텔 전체에서 무료 와이파이를 사용하실 수 있습니다. 여기 열쇠입니다. 305호실입니다.", "translation": "Yes, free Wi-Fi is available throughout the hotel. Here is your key. It is room 305." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["체크아웃이 몇 시예요?", "체크아웃 시간이 어떻게 되나요?", "몇 시까지 체크아웃해야 하나요?", "퇴실 시간이 언제인가요?"], "keyWords": ["체크아웃", "시"], "hint": "체크아웃이 몇 시예요?" },
+    { "speaker": "npc", "text": "체크아웃은 낮 열두 시까지입니다. 편안한 숙박 되시길 바랍니다!", "translation": "Check-out is by twelve noon. I hope you have a comfortable stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["감사합니다!", "정말 감사합니다!", "고마워요!", "대단히 감사합니다!"], "keyWords": ["감사합니다"], "hint": "감사합니다!" }
+  ]
+}

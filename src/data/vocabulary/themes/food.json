@@ -1,0 +1,896 @@
+{
+  "setId": "food",
+  "nameEn": "Food & Drinks",
+  "nameUk": "Їжа та напої",
+  "nameRu": "Еда и напитки",
+  "nameDe": "Essen und Trinken",
+  "nameEs": "Comida y bebidas",
+  "nameFr": "Nourriture et boissons",
+  "nameEl": "Φαγητό και ποτά",
+  "nameHi": "खाना और पेय",
+  "nameAr": "طعام ومشروبات",
+  "nameKo": "음식과 음료",
+  "nameZh": "食物和饮料",
+  "nameJa": "食べ物と飲み物",
+  "difficulty": "A1",
+  "icon": "🍽️",
+  "totalWords": 25,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "хліб",
+      "ru": "хлеб",
+      "de": "Brot",
+      "en": "bread",
+      "phoneticUk": "khlib",
+      "phoneticRu": "khleb",
+      "phoneticDe": "BROHT",
+      "es": "pan",
+      "phoneticEs": "PAN",
+      "fr": "pain",
+      "frPhonetic": "PAN",
+      "el": "ψωμί",
+      "elPhonetic": "pso-MI",
+      "hi": "रोटी",
+      "hiPhonetic": "RO-tee",
+      "ar": "خُبْز",
+      "arPhonetic": "KHUBZ",
+      "ko": "빵",
+      "koPhonetic": "PPANG",
+      "zh": "面包",
+      "zhPhonetic": "miànbāo",
+      "ja": "パン",
+      "jaPhonetic": "pan",
+      "examples": {
+        "uk": [
+          "Мама купила свіжий хліб у пекарні.",
+          "Я їм хліб з маслом на сніданок."
+        ],
+        "en": [
+          "Mom bought fresh bread at the bakery.",
+          "I eat bread with butter for breakfast."
+        ]
+      }
+    },
+    {
+      "uk": "молоко",
+      "ru": "молоко",
+      "de": "Milch",
+      "en": "milk",
+      "phoneticUk": "moloko",
+      "phoneticRu": "moloko",
+      "phoneticDe": "MILKH",
+      "es": "leche",
+      "phoneticEs": "LEH-cheh",
+      "fr": "lait",
+      "frPhonetic": "LEH",
+      "el": "γάλα",
+      "elPhonetic": "GHA-la",
+      "hi": "दूध",
+      "hiPhonetic": "DOODH",
+      "ar": "حَلِيب",
+      "arPhonetic": "ha-LEEB",
+      "ko": "우유",
+      "koPhonetic": "U-yu",
+      "zh": "牛奶",
+      "zhPhonetic": "niúnǎi",
+      "ja": "牛乳",
+      "jaPhonetic": "gyuunyuu",
+      "examples": {
+        "uk": [
+          "Діти п'ють молоко кожного ранку.",
+          "Я додаю молоко до кави."
+        ],
+        "en": [
+          "Children drink milk every morning.",
+          "I add milk to my coffee."
+        ]
+      }
+    },
+    {
+      "uk": "вода",
+      "ru": "вода",
+      "de": "Wasser",
+      "en": "water",
+      "phoneticUk": "voda",
+      "phoneticRu": "voda",
+      "phoneticDe": "VAS-ser",
+      "es": "agua",
+      "phoneticEs": "AH-gwah",
+      "fr": "eau",
+      "frPhonetic": "OH",
+      "el": "νερό",
+      "elPhonetic": "ne-RO",
+      "hi": "पानी",
+      "hiPhonetic": "PAA-nee",
+      "ar": "مَاء",
+      "arPhonetic": "MAA",
+      "ko": "물",
+      "koPhonetic": "MUL",
+      "zh": "水",
+      "zhPhonetic": "shuǐ",
+      "ja": "水",
+      "jaPhonetic": "mizu",
+      "examples": {
+        "uk": [
+          "Я п'ю воду кожного дня.",
+          "Дайте мені склянку холодної води, будь ласка."
+        ],
+        "en": [
+          "I drink water every day.",
+          "Give me a glass of cold water, please."
+        ]
+      }
+    },
+    {
+      "uk": "м'ясо",
+      "ru": "мясо",
+      "de": "Fleisch",
+      "en": "meat",
+      "phoneticUk": "myaso",
+      "phoneticRu": "myaso",
+      "phoneticDe": "FLYSH",
+      "es": "carne",
+      "phoneticEs": "KAR-neh",
+      "fr": "viande",
+      "frPhonetic": "vee-AHND",
+      "el": "κρέας",
+      "elPhonetic": "KREH-as",
+      "hi": "मांस",
+      "hiPhonetic": "MAANS",
+      "ar": "لَحْم",
+      "arPhonetic": "LAHM",
+      "ko": "고기",
+      "koPhonetic": "GO-gi",
+      "zh": "肉",
+      "zhPhonetic": "ròu",
+      "ja": "肉",
+      "jaPhonetic": "niku",
+      "examples": {
+        "uk": [
+          "Ми купили свіже м'ясо на ринку.",
+          "М'ясо потрібно добре приготувати."
+        ],
+        "en": [
+          "We bought fresh meat at the market.",
+          "Meat needs to be cooked well."
+        ]
+      }
+    },
+    {
+      "uk": "риба",
+      "ru": "рыба",
+      "de": "Fisch",
+      "en": "fish",
+      "phoneticUk": "ryba",
+      "phoneticRu": "ryba",
+      "phoneticDe": "FISH",
+      "es": "pescado",
+      "phoneticEs": "pes-KAH-doh",
+      "fr": "poisson",
+      "frPhonetic": "pwa-SON",
+      "el": "ψάρι",
+      "elPhonetic": "PSA-ri",
+      "hi": "मछली",
+      "hiPhonetic": "MACHH-lee",
+      "ar": "سَمَك",
+      "arPhonetic": "SA-mak",
+      "ko": "생선",
+      "koPhonetic": "SENG-son",
+      "zh": "鱼",
+      "zhPhonetic": "yú",
+      "ja": "魚",
+      "jaPhonetic": "sakana",
+      "examples": {
+        "uk": [
+          "Я люблю їсти рибу з овочами.",
+          "Свіжа риба дуже смачна."
+        ],
+        "en": [
+          "I love eating fish with vegetables.",
+          "Fresh fish is very tasty."
+        ]
+      }
+    },
+    {
+      "uk": "рис",
+      "ru": "рис",
+      "de": "Reis",
+      "en": "rice",
+      "phoneticUk": "rys",
+      "phoneticRu": "ris",
+      "phoneticDe": "RICE",
+      "es": "arroz",
+      "phoneticEs": "ah-ROTH",
+      "fr": "riz",
+      "frPhonetic": "REE",
+      "el": "ρύζι",
+      "elPhonetic": "RI-zi",
+      "hi": "चावल",
+      "hiPhonetic": "CHAA-val",
+      "ar": "أَرُزّ",
+      "arPhonetic": "A-ruzz",
+      "ko": "쌀",
+      "koPhonetic": "SSAL",
+      "zh": "米饭",
+      "zhPhonetic": "mǐfàn",
+      "ja": "ご飯",
+      "jaPhonetic": "gohan",
+      "examples": {
+        "uk": [
+          "Рис — основна їжа в багатьох країнах.",
+          "Я варю рис на вечерю."
+        ],
+        "en": [
+          "Rice is a staple food in many countries.",
+          "I cook rice for dinner."
+        ]
+      }
+    },
+    {
+      "uk": "яйце",
+      "ru": "яйцо",
+      "de": "Ei",
+      "en": "egg",
+      "phoneticUk": "yaytse",
+      "phoneticRu": "yaytso",
+      "phoneticDe": "AY",
+      "es": "huevo",
+      "phoneticEs": "WEH-boh",
+      "fr": "œuf",
+      "frPhonetic": "UHF",
+      "el": "αυγό",
+      "elPhonetic": "av-GHO",
+      "hi": "अंडा",
+      "hiPhonetic": "AN-daa",
+      "ar": "بَيْضَة",
+      "arPhonetic": "BAY-da",
+      "ko": "달걀",
+      "koPhonetic": "dal-GYAL",
+      "zh": "鸡蛋",
+      "zhPhonetic": "jīdàn",
+      "ja": "卵",
+      "jaPhonetic": "tamago",
+      "examples": {
+        "uk": [
+          "Я готую яйце на сніданок щоранку.",
+          "Для цього рецепту потрібно два яйця."
+        ],
+        "en": [
+          "I cook an egg for breakfast every morning.",
+          "This recipe requires two eggs."
+        ]
+      }
+    },
+    {
+      "uk": "сир",
+      "ru": "сыр",
+      "de": "Käse",
+      "en": "cheese",
+      "phoneticUk": "syr",
+      "phoneticRu": "syr",
+      "phoneticDe": "KAY-zeh",
+      "es": "queso",
+      "phoneticEs": "KEH-soh",
+      "fr": "fromage",
+      "frPhonetic": "fro-MAZH",
+      "el": "τυρί",
+      "elPhonetic": "ti-RI",
+      "hi": "पनीर",
+      "hiPhonetic": "pa-NEER",
+      "ar": "جُبْن",
+      "arPhonetic": "JUBN",
+      "ko": "치즈",
+      "koPhonetic": "CHI-jeu",
+      "zh": "奶酪",
+      "zhPhonetic": "nǎilào",
+      "ja": "チーズ",
+      "jaPhonetic": "chiizu",
+      "examples": {
+        "uk": [
+          "Цей сир дуже смачний.",
+          "Я люблю бутерброд із сиром."
+        ],
+        "en": [
+          "This cheese is very tasty.",
+          "I like a sandwich with cheese."
+        ]
+      }
+    },
+    {
+      "uk": "масло",
+      "ru": "масло",
+      "de": "Butter",
+      "en": "butter",
+      "phoneticUk": "maslo",
+      "phoneticRu": "maslo",
+      "phoneticDe": "BOO-ter",
+      "es": "mantequilla",
+      "phoneticEs": "man-teh-KEE-yah",
+      "fr": "beurre",
+      "frPhonetic": "BUHR",
+      "el": "βούτυρο",
+      "elPhonetic": "VOU-ti-ro",
+      "hi": "मक्खन",
+      "hiPhonetic": "MAKKH-an",
+      "ar": "زُبْدَة",
+      "arPhonetic": "ZUB-da",
+      "ko": "버터",
+      "koPhonetic": "BEO-teo",
+      "zh": "黄油",
+      "zhPhonetic": "huángyóu",
+      "ja": "バター",
+      "jaPhonetic": "bataa",
+      "examples": {
+        "uk": [
+          "Я намазую масло на хліб.",
+          "Масло зберігається в холодильнику."
+        ],
+        "en": [
+          "I spread butter on bread.",
+          "Butter is kept in the fridge."
+        ]
+      }
+    },
+    {
+      "uk": "сіль",
+      "ru": "соль",
+      "de": "Salz",
+      "en": "salt",
+      "phoneticUk": "sil",
+      "phoneticRu": "sol'",
+      "phoneticDe": "ZALTS",
+      "es": "sal",
+      "phoneticEs": "SAL",
+      "fr": "sel",
+      "frPhonetic": "SEL",
+      "el": "αλάτι",
+      "elPhonetic": "a-LA-ti",
+      "hi": "नमक",
+      "hiPhonetic": "NA-mak",
+      "ar": "مِلْح",
+      "arPhonetic": "MILH",
+      "ko": "소금",
+      "koPhonetic": "SO-geum",
+      "zh": "盐",
+      "zhPhonetic": "yán",
+      "ja": "塩",
+      "jaPhonetic": "shio",
+      "examples": {
+        "uk": [
+          "Додай трохи солі до супу.",
+          "Сіль робить їжу смачнішою."
+        ],
+        "en": [
+          "Add a little salt to the soup.",
+          "Salt makes food tastier."
+        ]
+      }
+    },
+    {
+      "uk": "цукор",
+      "ru": "сахар",
+      "de": "Zucker",
+      "en": "sugar",
+      "phoneticUk": "tsukor",
+      "phoneticRu": "sakhar",
+      "phoneticDe": "TSOO-ker",
+      "es": "azúcar",
+      "phoneticEs": "ah-THOO-kar",
+      "fr": "sucre",
+      "frPhonetic": "SOO-kruh",
+      "el": "ζάχαρη",
+      "elPhonetic": "ZA-kha-ri",
+      "hi": "चीनी",
+      "hiPhonetic": "CHEE-nee",
+      "ar": "سُكَّر",
+      "arPhonetic": "SUK-kar",
+      "ko": "설탕",
+      "koPhonetic": "SEOL-tang",
+      "zh": "糖",
+      "zhPhonetic": "táng",
+      "ja": "砂糖",
+      "jaPhonetic": "satou",
+      "examples": {
+        "uk": [
+          "Я не додаю цукор до чаю.",
+          "Занадто багато цукру шкідливо для здоров'я."
+        ],
+        "en": [
+          "I don't add sugar to my tea.",
+          "Too much sugar is bad for your health."
+        ]
+      }
+    },
+    {
+      "uk": "кава",
+      "ru": "кофе",
+      "de": "Kaffee",
+      "en": "coffee",
+      "phoneticUk": "kava",
+      "phoneticRu": "kofe",
+      "phoneticDe": "KAF-feh",
+      "es": "café",
+      "phoneticEs": "ka-FEH",
+      "fr": "café",
+      "frPhonetic": "ka-FEH",
+      "el": "καφές",
+      "elPhonetic": "ka-FES",
+      "hi": "कॉफ़ी",
+      "hiPhonetic": "KO-fee",
+      "ar": "قَهْوَة",
+      "arPhonetic": "QAH-wa",
+      "ko": "커피",
+      "koPhonetic": "KEO-pi",
+      "zh": "咖啡",
+      "zhPhonetic": "kāfēi",
+      "ja": "コーヒー",
+      "jaPhonetic": "koohii",
+      "examples": {
+        "uk": [
+          "Я п'ю каву щоранку.",
+          "Ця кава дуже ароматна."
+        ],
+        "en": [
+          "I drink coffee every morning.",
+          "This coffee is very aromatic."
+        ]
+      }
+    },
+    {
+      "uk": "чай",
+      "ru": "чай",
+      "de": "Tee",
+      "en": "tea",
+      "phoneticUk": "chay",
+      "phoneticRu": "chay",
+      "phoneticDe": "TEH",
+      "es": "té",
+      "phoneticEs": "TEH",
+      "fr": "thé",
+      "frPhonetic": "TEH",
+      "el": "τσάι",
+      "elPhonetic": "TSAI",
+      "hi": "चाय",
+      "hiPhonetic": "CHAAY",
+      "ar": "شَاي",
+      "arPhonetic": "SHAAY",
+      "ko": "차",
+      "koPhonetic": "CHA",
+      "zh": "茶",
+      "zhPhonetic": "chá",
+      "ja": "お茶",
+      "jaPhonetic": "ocha",
+      "examples": {
+        "uk": [
+          "Бабуся завжди п'є чай з медом.",
+          "Зелений чай дуже корисний."
+        ],
+        "en": [
+          "Grandma always drinks tea with honey.",
+          "Green tea is very healthy."
+        ]
+      }
+    },
+    {
+      "uk": "сік",
+      "ru": "сок",
+      "de": "Saft",
+      "en": "juice",
+      "phoneticUk": "sik",
+      "phoneticRu": "sok",
+      "phoneticDe": "ZAFT",
+      "es": "jugo",
+      "phoneticEs": "HOO-goh",
+      "fr": "jus",
+      "frPhonetic": "ZHOO",
+      "el": "χυμός",
+      "elPhonetic": "khi-MOS",
+      "hi": "रस",
+      "hiPhonetic": "RAS",
+      "ar": "عَصِير",
+      "arPhonetic": "a-SEER",
+      "ko": "주스",
+      "koPhonetic": "JU-seu",
+      "zh": "果汁",
+      "zhPhonetic": "guǒzhī",
+      "ja": "ジュース",
+      "jaPhonetic": "juusu",
+      "examples": {
+        "uk": [
+          "Діти люблять апельсиновий сік.",
+          "Я п'ю свіжий яблучний сік."
+        ],
+        "en": [
+          "Children love orange juice.",
+          "I drink fresh apple juice."
+        ]
+      }
+    },
+    {
+      "uk": "фрукт",
+      "ru": "фрукт",
+      "de": "Frucht",
+      "en": "fruit",
+      "phoneticUk": "frukt",
+      "phoneticRu": "frukt",
+      "phoneticDe": "FROOKHT",
+      "es": "fruta",
+      "phoneticEs": "FROO-tah",
+      "fr": "fruit",
+      "frPhonetic": "FRWEE",
+      "el": "φρούτο",
+      "elPhonetic": "FROU-to",
+      "hi": "फल",
+      "hiPhonetic": "PHAL",
+      "ar": "فَاكِهَة",
+      "arPhonetic": "FAA-ki-ha",
+      "ko": "과일",
+      "koPhonetic": "GWA-il",
+      "zh": "水果",
+      "zhPhonetic": "shuǐguǒ",
+      "ja": "果物",
+      "jaPhonetic": "kudamono",
+      "examples": {
+        "uk": [
+          "Фрукти дуже корисні для здоров'я.",
+          "На столі лежать різні фрукти."
+        ],
+        "en": [
+          "Fruits are very good for your health.",
+          "There are various fruits on the table."
+        ]
+      }
+    },
+    {
+      "uk": "овоч",
+      "ru": "овощ",
+      "de": "Gemüse",
+      "en": "vegetable",
+      "phoneticUk": "ovoch",
+      "phoneticRu": "ovoshch",
+      "phoneticDe": "geh-MOO-zeh",
+      "es": "verdura",
+      "phoneticEs": "behr-DOO-rah",
+      "fr": "légume",
+      "frPhonetic": "lay-GOOM",
+      "el": "λαχανικό",
+      "elPhonetic": "la-kha-ni-KO",
+      "hi": "सब्ज़ी",
+      "hiPhonetic": "SAB-zee",
+      "ar": "خُضَار",
+      "arPhonetic": "khu-DAAR",
+      "ko": "채소",
+      "koPhonetic": "CHEH-so",
+      "zh": "蔬菜",
+      "zhPhonetic": "shūcài",
+      "ja": "野菜",
+      "jaPhonetic": "yasai",
+      "examples": {
+        "uk": [
+          "Потрібно їсти більше овочів.",
+          "Свіжі овочі продають на ринку."
+        ],
+        "en": [
+          "You need to eat more vegetables.",
+          "Fresh vegetables are sold at the market."
+        ]
+      }
+    },
+    {
+      "uk": "суп",
+      "ru": "суп",
+      "de": "Suppe",
+      "en": "soup",
+      "phoneticUk": "sup",
+      "phoneticRu": "sup",
+      "phoneticDe": "ZOO-peh",
+      "es": "sopa",
+      "phoneticEs": "SOH-pah",
+      "fr": "soupe",
+      "frPhonetic": "SOOP",
+      "el": "σούπα",
+      "elPhonetic": "SOU-pa",
+      "hi": "सूप",
+      "hiPhonetic": "SOOP",
+      "ar": "شُورْبَة",
+      "arPhonetic": "SHOOR-ba",
+      "ko": "수프",
+      "koPhonetic": "SU-peu",
+      "zh": "汤",
+      "zhPhonetic": "tāng",
+      "ja": "スープ",
+      "jaPhonetic": "suupu",
+      "examples": {
+        "uk": [
+          "Мама варить смачний суп на обід.",
+          "У холодну погоду суп зігріває."
+        ],
+        "en": [
+          "Mom cooks delicious soup for lunch.",
+          "Soup warms you up in cold weather."
+        ]
+      }
+    },
+    {
+      "uk": "салат",
+      "ru": "салат",
+      "de": "Salat",
+      "en": "salad",
+      "phoneticUk": "salat",
+      "phoneticRu": "salat",
+      "phoneticDe": "za-LAHT",
+      "es": "ensalada",
+      "phoneticEs": "en-sah-LAH-dah",
+      "fr": "salade",
+      "frPhonetic": "sa-LAD",
+      "el": "σαλάτα",
+      "elPhonetic": "sa-LA-ta",
+      "hi": "सलाद",
+      "hiPhonetic": "sa-LAAD",
+      "ar": "سَلَطَة",
+      "arPhonetic": "sa-LA-ta",
+      "ko": "샐러드",
+      "koPhonetic": "SEL-leo-deu",
+      "zh": "沙拉",
+      "zhPhonetic": "shālā",
+      "ja": "サラダ",
+      "jaPhonetic": "sarada",
+      "examples": {
+        "uk": [
+          "Я замовив овочевий салат у ресторані.",
+          "Салат із помідорів дуже легкий."
+        ],
+        "en": [
+          "I ordered a vegetable salad at the restaurant.",
+          "Tomato salad is very light."
+        ]
+      }
+    },
+    {
+      "uk": "курка",
+      "ru": "курица",
+      "de": "Hähnchen",
+      "en": "chicken",
+      "phoneticUk": "kurka",
+      "phoneticRu": "kuritsa",
+      "phoneticDe": "HAIN-khen",
+      "es": "pollo",
+      "phoneticEs": "POH-yoh",
+      "fr": "poulet",
+      "frPhonetic": "poo-LEH",
+      "el": "κοτόπουλο",
+      "elPhonetic": "ko-TO-pu-lo",
+      "hi": "मुर्गी",
+      "hiPhonetic": "MUR-gee",
+      "ar": "دَجَاج",
+      "arPhonetic": "da-JAAJ",
+      "ko": "닭고기",
+      "koPhonetic": "DAK-go-gi",
+      "zh": "鸡肉",
+      "zhPhonetic": "jīròu",
+      "ja": "鶏肉",
+      "jaPhonetic": "toriniku",
+      "examples": {
+        "uk": [
+          "Курка з рисом — моя улюблена страва.",
+          "Я купив курку на вечерю."
+        ],
+        "en": [
+          "Chicken with rice is my favourite dish.",
+          "I bought chicken for dinner."
+        ]
+      }
+    },
+    {
+      "uk": "яблуко",
+      "ru": "яблоко",
+      "de": "Apfel",
+      "en": "apple",
+      "phoneticUk": "yabluko",
+      "phoneticRu": "yabloko",
+      "phoneticDe": "AP-fel",
+      "es": "manzana",
+      "phoneticEs": "man-THAH-nah",
+      "fr": "pomme",
+      "frPhonetic": "POM",
+      "el": "μήλο",
+      "elPhonetic": "MI-lo",
+      "hi": "सेब",
+      "hiPhonetic": "SEB",
+      "ar": "تُفَّاحَة",
+      "arPhonetic": "tuf-FAA-ha",
+      "ko": "사과",
+      "koPhonetic": "SA-gwa",
+      "zh": "苹果",
+      "zhPhonetic": "píngguǒ",
+      "ja": "りんご",
+      "jaPhonetic": "ringo",
+      "examples": {
+        "uk": [
+          "Червоне яблуко лежить на столі.",
+          "Я з'їв яблуко після обіду."
+        ],
+        "en": [
+          "A red apple is on the table.",
+          "I ate an apple after lunch."
+        ]
+      }
+    },
+    {
+      "uk": "банан",
+      "ru": "банан",
+      "de": "Banane",
+      "en": "banana",
+      "phoneticUk": "banan",
+      "phoneticRu": "banan",
+      "phoneticDe": "ba-NAH-neh",
+      "es": "plátano",
+      "phoneticEs": "PLAH-tah-noh",
+      "fr": "banane",
+      "frPhonetic": "ba-NAN",
+      "el": "μπανάνα",
+      "elPhonetic": "ba-NA-na",
+      "hi": "केला",
+      "hiPhonetic": "KEH-laa",
+      "ar": "مَوْز",
+      "arPhonetic": "MAWZ",
+      "ko": "바나나",
+      "koPhonetic": "BA-na-na",
+      "zh": "香蕉",
+      "zhPhonetic": "xiāngjiāo",
+      "ja": "バナナ",
+      "jaPhonetic": "banana",
+      "examples": {
+        "uk": [
+          "Мавпа їсть стиглий банан.",
+          "Я купив зв'язку бананів у магазині."
+        ],
+        "en": [
+          "The monkey eats a ripe banana.",
+          "I bought a bunch of bananas at the store."
+        ]
+      }
+    },
+    {
+      "uk": "помідор",
+      "ru": "помидор",
+      "de": "Tomate",
+      "en": "tomato",
+      "phoneticUk": "pomidor",
+      "phoneticRu": "pomidor",
+      "phoneticDe": "to-MAH-teh",
+      "es": "tomate",
+      "phoneticEs": "to-MAH-teh",
+      "fr": "tomate",
+      "frPhonetic": "to-MAT",
+      "el": "ντομάτα",
+      "elPhonetic": "do-MA-ta",
+      "hi": "टमाटर",
+      "hiPhonetic": "ta-MAA-tar",
+      "ar": "طَمَاطِم",
+      "arPhonetic": "ta-MAA-tim",
+      "ko": "토마토",
+      "koPhonetic": "TO-ma-to",
+      "zh": "番茄",
+      "zhPhonetic": "fānqié",
+      "ja": "トマト",
+      "jaPhonetic": "tomato",
+      "examples": {
+        "uk": [
+          "Червоний помідор росте в городі.",
+          "Я додаю помідори до салату."
+        ],
+        "en": [
+          "A red tomato grows in the garden.",
+          "I add tomatoes to the salad."
+        ]
+      }
+    },
+    {
+      "uk": "картопля",
+      "ru": "картофель",
+      "de": "Kartoffel",
+      "en": "potato",
+      "phoneticUk": "kartoplya",
+      "phoneticRu": "kartofel'",
+      "phoneticDe": "kar-TOF-fel",
+      "es": "patata",
+      "phoneticEs": "pa-TAH-tah",
+      "fr": "pomme de terre",
+      "frPhonetic": "pom-duh-TEHR",
+      "el": "πατάτα",
+      "elPhonetic": "pa-TA-ta",
+      "hi": "आलू",
+      "hiPhonetic": "AA-loo",
+      "ar": "بَطَاطَا",
+      "arPhonetic": "ba-TAA-taa",
+      "ko": "감자",
+      "koPhonetic": "GAM-ja",
+      "zh": "土豆",
+      "zhPhonetic": "tǔdòu",
+      "ja": "じゃがいも",
+      "jaPhonetic": "jagaimo",
+      "examples": {
+        "uk": [
+          "Бабуся варить картоплю на обід.",
+          "Смажена картопля дуже смачна."
+        ],
+        "en": [
+          "Grandma boils potatoes for lunch.",
+          "Fried potatoes are very tasty."
+        ]
+      }
+    },
+    {
+      "uk": "морозиво",
+      "ru": "мороженое",
+      "de": "Eiscreme",
+      "en": "ice cream",
+      "phoneticUk": "morozyvo",
+      "phoneticRu": "morozhenoe",
+      "phoneticDe": "ICE-kreh-meh",
+      "es": "helado",
+      "phoneticEs": "eh-LAH-doh",
+      "fr": "glace",
+      "frPhonetic": "GLAS",
+      "el": "παγωτό",
+      "elPhonetic": "pa-gho-TO",
+      "hi": "आइसक्रीम",
+      "hiPhonetic": "ICE-kreem",
+      "ar": "آيْس كْرِيم",
+      "arPhonetic": "ICE-kreem",
+      "ko": "아이스크림",
+      "koPhonetic": "a-i-seu-keu-rim",
+      "zh": "冰淇淋",
+      "zhPhonetic": "bīngqílín",
+      "ja": "アイスクリーム",
+      "jaPhonetic": "aisukuriimu",
+      "examples": {
+        "uk": [
+          "Діти люблять їсти морозиво влітку.",
+          "Я хочу шоколадне морозиво."
+        ],
+        "en": [
+          "Children love eating ice cream in summer.",
+          "I want chocolate ice cream."
+        ]
+      }
+    },
+    {
+      "uk": "торт",
+      "ru": "торт",
+      "de": "Torte",
+      "en": "cake",
+      "phoneticUk": "tort",
+      "phoneticRu": "tort",
+      "phoneticDe": "TOR-teh",
+      "es": "pastel",
+      "phoneticEs": "pas-TEL",
+      "fr": "gâteau",
+      "frPhonetic": "gah-TOH",
+      "el": "τούρτα",
+      "elPhonetic": "TOOR-ta",
+      "hi": "केक",
+      "hiPhonetic": "KEK",
+      "ar": "كَعْكَة",
+      "arPhonetic": "KAA-ka",
+      "ko": "케이크",
+      "koPhonetic": "KE-i-keu",
+      "zh": "蛋糕",
+      "zhPhonetic": "dàngāo",
+      "ja": "ケーキ",
+      "jaPhonetic": "keeki",
+      "examples": {
+        "uk": [
+          "Мама спекла торт на день народження.",
+          "Шоколадний торт — мій улюблений десерт."
+        ],
+        "en": [
+          "Mom baked a cake for the birthday.",
+          "Chocolate cake is my favourite dessert."
+        ]
+      }
+    }
+  ]
+}

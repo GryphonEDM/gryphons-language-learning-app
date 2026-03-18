@@ -49,7 +49,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "What is the feminine form of the adjective 'beau'?",
+          "prompt": "What is the feminine form of the adjective 'beau'?",
           "options": [
             "belle",
             "beaue",
@@ -60,7 +60,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence correctly uses adjective agreement?",
+          "prompt": "Which sentence correctly uses adjective agreement?",
           "options": [
             "une femme intelligente",
             "une femme intelligent",
@@ -71,7 +71,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What is the feminine form of 'nouveau'?",
+          "prompt": "What is the feminine form of 'nouveau'?",
           "options": [
             "nouveaue",
             "nouvelle",
@@ -82,7 +82,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete with the correct form: 'une robe ___' (neuf)",
+          "prompt": "Complete with the correct form: 'une robe ___' (neuf)",
           "options": [
             "neuf",
             "neufs",
@@ -93,7 +93,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "The adjective 'rouge' in 'une voiture rouge' — what is the feminine form?",
+          "prompt": "The adjective 'rouge' in 'une voiture rouge' — what is the feminine form?",
           "options": [
             "rouges",
             "rouge",
@@ -104,7 +104,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How do you say 'good friends' (masculine plural) in French?",
+          "prompt": "How do you say 'good friends' (masculine plural) in French?",
           "options": [
             "bon amis",
             "bons amis",
@@ -115,7 +115,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: 'Elle est ___ (américain).'",
+          "prompt": "Complete: 'Elle est ___ (américain).'",
           "options": [
             "américain",
             "américains",
@@ -126,7 +126,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which is the correct feminine plural of 'vieux'?",
+          "prompt": "Which is the correct feminine plural of 'vieux'?",
           "options": [
             "vieilles",
             "vieuxes",
@@ -177,7 +177,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "Where do most French adjectives go?",
+          "prompt": "Where do most French adjectives go?",
           "options": [
             "After the noun",
             "Before the noun, like in English",
@@ -188,7 +188,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which of these adjectives is a BAGS adjective that goes BEFORE the noun?",
+          "prompt": "Which of these adjectives is a BAGS adjective that goes BEFORE the noun?",
           "options": [
             "intéressant",
             "petit",
@@ -199,7 +199,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Choose the correct word order: '___ chien ___' (petit / méchant)",
+          "prompt": "Choose the correct word order: '___ chien ___' (petit / méchant)",
           "options": [
             "méchant chien petit",
             "un petit chien méchant",
@@ -210,7 +210,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What does 'un grand homme' mean (adjective before noun)?",
+          "prompt": "What does 'un grand homme' mean (adjective before noun)?",
           "options": [
             "a tall man",
             "a great man",
@@ -221,7 +221,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence is correct for 'a young student (m)'?",
+          "prompt": "Which sentence is correct for 'a young student (m)'?",
           "options": [
             "jeune un étudiant",
             "un jeune étudiant",
@@ -232,7 +232,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Place the adjective correctly: 'une ___ idée ___' (bonne / originale)",
+          "prompt": "Place the adjective correctly: 'une ___ idée ___' (bonne / originale)",
           "options": [
             "une originale idée bonne",
             "une bonne idée originale",
@@ -243,7 +243,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What does 'mon ancien professeur' mean (adjective before noun)?",
+          "prompt": "What does 'mon ancien professeur' mean (adjective before noun)?",
           "options": [
             "my former professor",
             "my old professor (elderly)",
@@ -254,7 +254,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence correctly places a non-BAGS adjective?",
+          "prompt": "Which sentence correctly places a non-BAGS adjective?",
           "options": [
             "une histoire intéressante",
             "une intéressante histoire",

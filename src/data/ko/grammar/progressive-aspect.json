@@ -1,0 +1,326 @@
+{
+  "lessonId": "progressive-aspect",
+  "nameEn": "Progressive Aspect (-고 있다)",
+  "nameKo": "진행상",
+  "icon": "⏳",
+  "tier": "A2",
+  "prerequisites": [
+    "basic-verbs",
+    "past-tense"
+  ],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "ongoing-actions",
+      "title": "-고 있다 for Ongoing Actions",
+      "explanation": "To express that an action is currently in progress (like English '-ing'), attach -고 있다 to the verb stem. The verb stem never changes — just add -고 있다 regardless of whether the stem ends in a vowel or consonant. 먹다 → 먹고 있다 (to be eating), 공부하다 → 공부하고 있다 (to be studying), 읽다 → 읽고 있다 (to be reading). In polite speech, conjugate 있다 to 있어요: 먹고 있어요 (I am eating), 공부하고 있어요 (I am studying). This form emphasizes that the action is happening right now, at this moment. It is used much like the English present progressive but less frequently — Korean often uses simple present tense where English would use progressive.",
+      "tip": "The formula is always: verb stem + 고 있다. No irregular changes, no vowel harmony — just attach -고 있다 to any verb stem. Then conjugate 있다 for the speech level you need.",
+      "examples": [
+        {
+          "ko": "지금 먹고 있어요.",
+          "en": "I am eating right now.",
+          "highlight": "먹고 있어요"
+        },
+        {
+          "ko": "한국어를 공부하고 있어요.",
+          "en": "I am studying Korean.",
+          "highlight": "공부하고 있어요"
+        },
+        {
+          "ko": "친구가 전화하고 있어요.",
+          "en": "My friend is making a phone call.",
+          "highlight": "전화하고 있어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I am reading a book' using 읽다 (to read)?",
+          "options": [
+            "책을 읽어 있어요.",
+            "책을 읽고 있어요.",
+            "책을 읽는 있어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Verb stem 읽 + 고 있어요: 책을 읽고 있어요 (I am reading a book). Always use -고 있다 for actions in progress."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'The children are playing'? (아이들 = children, 놀다 = to play)",
+          "options": [
+            "아이들이 놀았어요.",
+            "아이들이 놀고 있어요.",
+            "아이들이 놀아 있어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "놀다 stem 놀 + 고 있어요: 놀고 있어요 (are playing). Option A is past tense (played), option C uses the wrong progressive form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the -고 있다 form of 듣다 (to listen)?",
+          "options": [
+            "들고 있다",
+            "듣고 있다",
+            "듣어 있다"
+          ],
+          "correctIndex": 1,
+          "explanation": "For -고 있다, use the dictionary stem directly: 듣 + 고 있다 = 듣고 있다. The ㄷ-irregular rule (듣 → 들) only applies before vowel endings, not before -고."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct progressive form: 'She is singing a song.' (노래하다 = to sing)",
+          "options": [
+            "노래하고 있어요.",
+            "노래해 있어요.",
+            "노래하는 있어요."
+          ],
+          "correctIndex": 0,
+          "explanation": "노래하다 stem 노래하 + 고 있어요 = 노래하고 있어요 (is singing). The -고 있다 pattern is completely regular."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-progressive",
+      "title": "Past Progressive: -고 있었다",
+      "explanation": "To say that an action was in progress at some point in the past (like English 'was doing'), change 있다 to its past form 있었다. The structure is: verb stem + 고 있었다. In polite speech: 있었어요. For example: 자고 있었어요 (I was sleeping), 먹고 있었어요 (I was eating), 기다리고 있었어요 (I was waiting). This is used to describe what was happening when something else occurred: 제가 자고 있었을 때 전화가 왔어요 (When I was sleeping, a call came).",
+      "tip": "Present progressive: -고 있어요. Past progressive: -고 있었어요. Just change 있다 to past tense — the verb stem and -고 stay the same.",
+      "examples": [
+        {
+          "ko": "그때 자고 있었어요.",
+          "en": "I was sleeping at that time.",
+          "highlight": "자고 있었어요"
+        },
+        {
+          "ko": "비가 올 때 집에서 쉬고 있었어요.",
+          "en": "I was resting at home when it rained.",
+          "highlight": "쉬고 있었어요"
+        },
+        {
+          "ko": "한 시간 동안 기다리고 있었어요.",
+          "en": "I had been waiting for an hour.",
+          "highlight": "기다리고 있었어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I was watching TV'? (TV를 보다 = to watch TV)",
+          "options": [
+            "TV를 보고 있어요.",
+            "TV를 보고 있었어요.",
+            "TV를 봤고 있었어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Past progressive: 보 + 고 있었어요 = 보고 있었어요 (was watching). The verb stem stays in its base form — only 있다 changes to past tense."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 울고 있었어요 mean? (울다 = to cry)",
+          "options": [
+            "I am crying.",
+            "I was crying.",
+            "I cried."
+          ],
+          "correctIndex": 1,
+          "explanation": "울고 있었어요 uses the past form 있었어요, so it means 'was crying.' Present would be 울고 있어요, and simple past would be 울었어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Convert to past progressive: 요리하고 있어요 (I am cooking).",
+          "options": [
+            "요리하고 있었어요",
+            "요리했고 있어요",
+            "요리했고 있었어요"
+          ],
+          "correctIndex": 0,
+          "explanation": "Change 있어요 to 있었어요: 요리하고 있었어요 (I was cooking). The verb stem 요리하 and -고 do not change."
+        }
+      ]
+    },
+    {
+      "sectionId": "in-the-middle-of",
+      "title": "-(으)ㄴ/는 중이다 (In the Middle Of)",
+      "explanation": "중 means 'middle' or 'during,' and -는 중이다 is a more explicit way to say 'in the middle of doing something.' For action verbs, use verb stem + 는 중이다: 먹는 중이에요 (in the middle of eating), 공부하는 중이에요 (in the middle of studying). This form is slightly more emphatic than -고 있다, stressing that you are right in the middle of the activity. 중 can also be used with nouns directly: 회의 중이에요 (in a meeting — literally 'meeting middle'), 식사 중이에요 (in the middle of a meal), 수업 중이에요 (in class). The noun + 중 pattern is very common in daily Korean and is often seen on signs and notices.",
+      "tip": "Verb + 는 중이다 emphasizes being 'right in the middle' of an action. Noun + 중이다 is a convenient shorthand: 회의 중 (in a meeting), 통화 중 (on a call), 준비 중 (preparing).",
+      "examples": [
+        {
+          "ko": "지금 회의 중이에요.",
+          "en": "I'm in a meeting right now.",
+          "highlight": "회의 중"
+        },
+        {
+          "ko": "식사 중이에요.",
+          "en": "I'm in the middle of a meal.",
+          "highlight": "식사 중"
+        },
+        {
+          "ko": "보고서를 쓰는 중이에요.",
+          "en": "I'm in the middle of writing a report.",
+          "highlight": "쓰는 중"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I'm in the middle of studying'?",
+          "options": [
+            "공부 중이에요.",
+            "공부는 중이에요.",
+            "공부를 중이에요."
+          ],
+          "correctIndex": 0,
+          "explanation": "공부 (study, noun) + 중이에요: 공부 중이에요 (in the middle of studying). No particle is needed between the noun and 중."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which means 'I'm in the middle of moving'? (이사하다 = to move house)",
+          "options": [
+            "이사하고 중이에요.",
+            "이사하는 중이에요.",
+            "이사한 중이에요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Verb stem + 는 중이에요: 이사하는 중이에요 (in the middle of moving). Use the present modifier -는 with 중이다."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You see a sign on a door that says 수업 중. What does it mean?",
+          "options": [
+            "Class is over.",
+            "Class in progress.",
+            "Class is cancelled."
+          ],
+          "correctIndex": 1,
+          "explanation": "수업 중 = class (수업) + middle/during (중) = class in progress. This noun + 중 pattern is very common on signs."
+        }
+      ]
+    },
+    {
+      "sectionId": "resultant-state",
+      "title": "-아/어 있다 for Resultant State",
+      "explanation": "While -고 있다 describes an action in progress, -아/어 있다 describes a state that results from a completed action. The action itself is done, but its result continues. 앉다 (to sit down) → 앉아 있다 (to be seated — the sitting-down is done, the state of being seated continues). 서다 (to stand up) → 서 있다 (to be standing). 눕다 (to lie down) → 누워 있다 (to be lying down). 열다 (to open) → 열려 있다 (to be open). 닫다 (to close) → 닫혀 있다 (to be closed). This form works primarily with intransitive verbs or passive forms. You cannot say *먹어 있다 because eating is an ongoing activity, not a resultant state.",
+      "tip": "-아/어 있다 focuses on the RESULT, not the ACTION. Ask yourself: 'Is the action done but the result still visible?' If yes, use -아/어 있다. If the action is still happening, use -고 있다.",
+      "examples": [
+        {
+          "ko": "의자에 앉아 있어요.",
+          "en": "I am sitting in a chair. (seated — result of sitting down)",
+          "highlight": "앉아 있어요"
+        },
+        {
+          "ko": "문이 열려 있어요.",
+          "en": "The door is open. (result of being opened)",
+          "highlight": "열려 있어요"
+        },
+        {
+          "ko": "벽에 그림이 걸려 있어요.",
+          "en": "A painting is hanging on the wall. (result of being hung)",
+          "highlight": "걸려 있어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is standing'? (서다 = to stand up)",
+          "options": [
+            "서고 있어요.",
+            "서 있어요.",
+            "서는 있어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Standing is a resultant state (you stood up, and now you remain standing), so use -아/어 있다: 서 있어요 (is standing). 서고 있어요 would mean 'is in the process of standing up.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 문이 닫혀 있어요 mean?",
+          "options": [
+            "The door is closing.",
+            "The door is closed. (state)",
+            "Someone closed the door."
+          ],
+          "correctIndex": 1,
+          "explanation": "닫히다 (passive: to be closed) + -아/어 있다 = 닫혀 있다 (is in the state of being closed). It describes the current state, not the action of closing."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is *먹어 있어요 incorrect?",
+          "options": [
+            "먹다 is not a real verb.",
+            "Eating is an ongoing action, not a resultant state.",
+            "You need to use 먹어서 있어요 instead."
+          ],
+          "correctIndex": 1,
+          "explanation": "-아/어 있다 is only for resultant states from completed actions. Eating is a continuous activity — you should use -고 있다: 먹고 있어요 (is eating)."
+        }
+      ]
+    },
+    {
+      "sectionId": "progressive-vs-resultant",
+      "title": "-고 있다 (Action in Progress) vs -아/어 있다 (Resultant State)",
+      "explanation": "The key difference: -고 있다 shows an action still happening, while -아/어 있다 shows the lasting result of a finished action. Compare: 앉고 있어요 (is in the process of sitting down — the body is moving downward right now) vs 앉아 있어요 (is seated — already sat down, now in that position). 옷을 입고 있어요 can mean both 'is getting dressed' (action) AND 'is wearing' (state) — 입다 is a special case where -고 있다 can express either meaning depending on context. For most verbs, the distinction is clear: 죽고 있다 (is dying — process) vs 죽어 있다 (is dead — result). 눈을 감고 있다 (is closing one's eyes — action) vs 눈을 감아 있다 (has one's eyes closed — state).",
+      "tip": "Think of -고 있다 as a video (action happening) and -아/어 있다 as a photograph (frozen result). Some verbs like 입다 (wear) and 쓰다 (wear hat/glasses) work with both, but most verbs clearly fit one pattern.",
+      "examples": [
+        {
+          "ko": "아이가 앉고 있어요. (동작)",
+          "en": "The child is sitting down. (action in progress)",
+          "highlight": "앉고 있어요"
+        },
+        {
+          "ko": "아이가 앉아 있어요. (상태)",
+          "en": "The child is seated. (resultant state)",
+          "highlight": "앉아 있어요"
+        },
+        {
+          "ko": "모자를 쓰고 있어요.",
+          "en": "He is wearing a hat. (입다/쓰다 type: -고 있다 can mean state too)",
+          "highlight": "쓰고 있어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form describes a person who has already sat down and is now in the chair?",
+          "options": [
+            "앉고 있어요",
+            "앉아 있어요",
+            "앉는 중이에요"
+          ],
+          "correctIndex": 1,
+          "explanation": "앉아 있어요 (-아/어 있다) describes the resultant state — the person finished sitting down and is now seated. 앉고 있어요 would mean the action of lowering oneself is still in progress."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 죽어 있어요 mean? (죽다 = to die)",
+          "options": [
+            "Is dying.",
+            "Is dead. (resultant state)",
+            "Will die."
+          ],
+          "correctIndex": 1,
+          "explanation": "죽어 있다 = the result of dying = is dead (a state). 죽고 있다 would mean 'is dying' (the process is ongoing)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "안경을 쓰고 있어요 most likely means:",
+          "options": [
+            "He is putting on glasses right now.",
+            "He is wearing glasses.",
+            "He took off his glasses."
+          ],
+          "correctIndex": 1,
+          "explanation": "For 'wearing' verbs (입다, 쓰다, 신다), -고 있다 usually describes the state of wearing, not the action of putting on. 안경을 쓰고 있어요 = is wearing glasses."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Choose the correct form: 'The light is on.' (켜다 = to turn on, 켜지다 = to be turned on)",
+          "options": [
+            "불이 켜고 있어요.",
+            "불이 켜져 있어요.",
+            "불이 켜는 중이에요."
+          ],
+          "correctIndex": 1,
+          "explanation": "A light being on is a resultant state (someone turned it on, and it remains on). Use the passive 켜지다 + -아/어 있다: 켜져 있어요 (is on, is in the state of having been turned on)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameDe": "Hotel-Check-in",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Berlin. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "Rezeptionist" },
+    "player": { "name": "Gast" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Guten Tag! Willkommen in unserem Hotel.", "translation": "Good day! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["Guten Tag, ich habe eine Reservierung", "Hallo, ich habe eine Reservierung", "Guten Tag! Ich habe ein Zimmer reserviert", "Guten Tag, ich habe reserviert"], "keyWords": ["Guten Tag", "Reservierung"], "hint": "Guten Tag, ich habe eine Reservierung." },
+    { "speaker": "npc", "text": "Sehr gut! Auf welchen Namen?", "translation": "Very good! Under what name?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["Was kostet das Zimmer pro Nacht?", "Wie viel kostet das Zimmer pro Nacht?", "Was ist der Preis pro Nacht?", "Wie teuer ist das Zimmer?"], "keyWords": ["kostet", "Zimmer", "Nacht"], "hint": "Was kostet das Zimmer pro Nacht?" },
+    { "speaker": "npc", "text": "Ein Einzelzimmer kostet neunzig Euro pro Nacht. Frühstück ist inklusive.", "translation": "A single room costs ninety euros per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["Gibt es WLAN?", "Haben Sie WLAN?", "Gibt es hier WLAN?", "Ist WLAN verfügbar?"], "keyWords": ["WLAN"], "hint": "Gibt es WLAN?" },
+    { "speaker": "npc", "text": "Ja, kostenloses WLAN im ganzen Hotel. Hier ist Ihr Schlüssel. Zimmer dreihundertfünf.", "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room three hundred five." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["Wann ist der Check-out?", "Um wie viel Uhr ist der Check-out?", "Wann muss ich auschecken?", "Bis wann muss ich das Zimmer verlassen?"], "keyWords": ["Check-out", "Wann"], "hint": "Wann ist der Check-out?" },
+    { "speaker": "npc", "text": "Der Check-out ist bis zwölf Uhr mittags. Ich wünsche Ihnen einen angenehmen Aufenthalt!", "translation": "Check-out is by twelve noon. I wish you a pleasant stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["Vielen Dank!", "Danke schön!", "Herzlichen Dank!", "Vielen Dank, sehr nett!"], "keyWords": ["Dank"], "hint": "Vielen Dank!" }
+  ]
+}

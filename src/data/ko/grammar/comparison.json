@@ -1,0 +1,314 @@
+{
+  "lessonId": "comparison",
+  "nameEn": "Comparison",
+  "nameKo": "비교",
+  "icon": "⚖️",
+  "tier": "A2",
+  "prerequisites": [
+    "adjectives"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "more-adjective",
+      "title": "더 (More) + Adjective",
+      "explanation": "The simplest way to express comparison in Korean is to place 더 (more) before the adjective or verb. Unlike English, which changes the adjective form (big → bigger) or adds 'more,' Korean always uses the same word 더 regardless of the adjective. 더 크다 means 'to be bigger' (literally 'to be more big'). 더 비싸다 means 'to be more expensive.' 더 빨라요 means 'it is faster.' This pattern works with every adjective — you never change the adjective itself. You can also use 더 with action verbs: 더 먹다 (to eat more), 더 공부하다 (to study more).",
+      "tip": "Korean comparatives are easy — just put 더 before any adjective. No special endings or adjective changes needed. 더 is always 더, no matter the adjective.",
+      "examples": [
+        {
+          "ko": "이 건물이 더 커요.",
+          "en": "This building is bigger. (더 + 크다)",
+          "highlight": "더 커요"
+        },
+        {
+          "ko": "이 가방이 더 비싸요.",
+          "en": "This bag is more expensive. (더 + 비싸다)",
+          "highlight": "더 비싸요"
+        },
+        {
+          "ko": "오늘 더 추워요.",
+          "en": "It's colder today. (더 + 춥다)",
+          "highlight": "더 추워요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'It is faster' using 빠르다 (to be fast)?",
+          "options": [
+            "더 빨라요",
+            "빠르더요",
+            "빨라 더요"
+          ],
+          "correctIndex": 0,
+          "explanation": "Place 더 before the conjugated adjective: 더 빨라요. 빠르다 conjugates to 빨라요 (ㅡ drop, bright vowel ㅏ → 아요), then 더 goes in front."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which means 'more delicious'?",
+          "options": [
+            "맛있는 더",
+            "더 맛있는",
+            "맛더있는"
+          ],
+          "correctIndex": 1,
+          "explanation": "더 always comes before the adjective: 더 맛있는 (more delicious, modifier form). The order is always 더 + adjective."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I want to sleep more' using 자다 (to sleep)?",
+          "options": [
+            "자고 더 싶어요",
+            "더 자고 싶어요",
+            "자더 싶어요"
+          ],
+          "correctIndex": 1,
+          "explanation": "더 goes before the verb: 더 자고 싶어요 (I want to sleep more). 더 works with action verbs too, not just adjectives."
+        }
+      ]
+    },
+    {
+      "sectionId": "a-than-b",
+      "title": "A보다 B가 더... (B Is More... Than A)",
+      "explanation": "To make a full comparison sentence in Korean, use the particle 보다 (than) attached to the thing being compared against. The structure is: A보다 B가 더 + adjective. This means 'B is more [adjective] than A.' For example: 사과보다 바나나가 더 싸요 (Bananas are cheaper than apples — literally 'Than apples, bananas are more cheap'). Notice the word order is opposite to English: the 'than' part comes first. The 더 is optional but commonly included for clarity. You can also rearrange: B가 A보다 더 + adjective. Both orders are natural.",
+      "tip": "보다 attaches directly to the noun (no space): 사과보다, not 사과 보다. Think of 보다 as 'compared to' — it marks the baseline of comparison.",
+      "examples": [
+        {
+          "ko": "사과보다 바나나가 더 싸요.",
+          "en": "Bananas are cheaper than apples.",
+          "highlight": "보다"
+        },
+        {
+          "ko": "버스보다 지하철이 더 빨라요.",
+          "en": "The subway is faster than the bus.",
+          "highlight": "보다"
+        },
+        {
+          "ko": "여름보다 겨울이 더 추워요.",
+          "en": "Winter is colder than summer.",
+          "highlight": "보다"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Coffee is hotter than tea'? (커피 = coffee, 차 = tea, 뜨겁다 = hot)",
+          "options": [
+            "차보다 커피가 더 뜨거워요.",
+            "커피보다 차가 더 뜨거워요.",
+            "차가 커피보다 더 뜨거워요."
+          ],
+          "correctIndex": 0,
+          "explanation": "A보다 B가 더 + adjective. Tea (차) is the baseline (A), coffee (커피) is the one that is more hot (B): 차보다 커피가 더 뜨거워요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 형보다 동생이 더 키가 커요 mean?",
+          "options": [
+            "The older brother is taller than the younger sibling.",
+            "The younger sibling is taller than the older brother.",
+            "The older brother and younger sibling are the same height."
+          ],
+          "correctIndex": 1,
+          "explanation": "형보다 (than the older brother) 동생이 (the younger sibling) 더 키가 커요 (is taller). The younger sibling is taller than the older brother."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: 한국어___ 일본어가 더 어려워요. (Japanese is harder than Korean.)",
+          "options": [
+            "보다",
+            "만큼",
+            "가장"
+          ],
+          "correctIndex": 0,
+          "explanation": "보다 marks 'than': 한국어보다 일본어가 더 어려워요 means 'Japanese is harder than Korean.' 보다 attaches to the baseline (Korean)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Rearrange into a correct comparison: 'Seoul is bigger than Busan' (서울, 부산, 크다)",
+          "options": [
+            "부산보다 서울이 더 커요.",
+            "서울보다 부산이 더 커요.",
+            "부산이 서울보다 더 커요."
+          ],
+          "correctIndex": 0,
+          "explanation": "Seoul is bigger, so Seoul is B (the one that is 'more'). Busan is A (the baseline): 부산보다 서울이 더 커요. Option C would also be grammatically correct with the rearranged order, but it says Busan is bigger than Seoul."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlative",
+      "title": "가장/제일 (Most/Best) for Superlatives",
+      "explanation": "Korean superlatives are formed by placing 가장 or 제일 before the adjective. 가장 is slightly more formal/written and 제일 is more colloquial, but both are used in everyday speech. 가장 큰 means 'the biggest,' 제일 맛있는 means 'the most delicious.' Unlike English, there is no special ending like '-est' — you simply add 가장 or 제일 before the adjective. These work in both predicate position (가장 커요 — is the biggest) and modifier position (가장 큰 집 — the biggest house). You can add 중에서 (among) to specify the group: 반에서 제일 키가 커요 (the tallest in the class).",
+      "tip": "가장 and 제일 are interchangeable in most cases. Use 가장 in writing or formal speech, 제일 in casual conversation. Both go right before the adjective.",
+      "examples": [
+        {
+          "ko": "이 산이 가장 높아요.",
+          "en": "This mountain is the highest.",
+          "highlight": "가장"
+        },
+        {
+          "ko": "제일 맛있는 음식이 뭐예요?",
+          "en": "What is the most delicious food?",
+          "highlight": "제일"
+        },
+        {
+          "ko": "우리 반에서 제일 키가 커요.",
+          "en": "I'm the tallest in our class.",
+          "highlight": "제일"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the cheapest' using 싸다 (to be cheap)?",
+          "options": [
+            "더 싼",
+            "가장 싼",
+            "싸장 가"
+          ],
+          "correctIndex": 1,
+          "explanation": "Place 가장 before the modifier form of the adjective: 가장 싼 (the cheapest). 싸다 → modifier 싼, then 가장 싼."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'This is the most interesting book'? (재미있다 = interesting, 책 = book)",
+          "options": [
+            "이것은 더 재미있는 책이에요.",
+            "이것은 가장 재미있는 책이에요.",
+            "이것은 재미있는 가장 책이에요."
+          ],
+          "correctIndex": 1,
+          "explanation": "가장 goes before the adjective, not before the noun: 가장 재미있는 책 (the most interesting book). 가장 modifies the adjective 재미있는."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 제일 좋아하는 색깔 mean?",
+          "options": [
+            "A pretty good color",
+            "A better color",
+            "Favorite color (the color one likes the most)"
+          ],
+          "correctIndex": 2,
+          "explanation": "제일 좋아하는 literally means 'the most liked.' 제일 좋아하는 색깔 = the color (색깔) that you like (좋아하는) the most (제일) = favorite color."
+        }
+      ]
+    },
+    {
+      "sectionId": "as-much-as",
+      "title": "A만큼 B (As Much As A)",
+      "explanation": "만큼 is used to express equality or similarity in degree — 'as much as' or 'to the extent of.' It attaches to a noun: A만큼 means 'as much as A.' For example: 언니만큼 예뻐요 (as pretty as my older sister). 나만큼 잘해요 (does it as well as me). You can also use it with verbs in modifier form: 생각한 만큼 어렵지 않아요 (it's not as hard as I thought). In negative sentences, A만큼 B가 못하다 means 'B cannot match A': 형만큼 못해요 (I can't do it as well as my older brother). 만큼 can also mean 'to the extent that' or 'as much as' when following a clause.",
+      "tip": "만큼 expresses 'equal to' — think of it as setting a benchmark. 언니만큼 = 'to the level of older sister.' In negative form, it means 'not as much as.'",
+      "examples": [
+        {
+          "ko": "언니만큼 예뻐요.",
+          "en": "She is as pretty as her older sister.",
+          "highlight": "만큼"
+        },
+        {
+          "ko": "저만큼 키가 커요.",
+          "en": "He is as tall as me.",
+          "highlight": "만큼"
+        },
+        {
+          "ko": "어제만큼 춥지 않아요.",
+          "en": "It's not as cold as yesterday.",
+          "highlight": "만큼"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'as fast as a car' using 차 (car)?",
+          "options": [
+            "차보다 빨라요",
+            "차만큼 빨라요",
+            "차가장 빨라요"
+          ],
+          "correctIndex": 1,
+          "explanation": "만큼 means 'as much as': 차만큼 빨라요 (as fast as a car). 보다 would mean 'faster than a car,' which is a different meaning."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 형만큼 못해요 mean?",
+          "options": [
+            "I'm as good as my older brother.",
+            "I can't do it as well as my older brother.",
+            "My older brother can't do it."
+          ],
+          "correctIndex": 1,
+          "explanation": "만큼 + 못하다 means 'cannot match the level of': 형만큼 못해요 = I can't do it as well as my older brother."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in: 생각한 ___ 쉬웠어요. (It was as easy as I thought.)",
+          "options": [
+            "보다",
+            "만큼",
+            "제일"
+          ],
+          "correctIndex": 1,
+          "explanation": "만큼 follows the modifier clause 생각한 (that I thought): 생각한 만큼 쉬웠어요 (it was as easy as I thought)."
+        }
+      ]
+    },
+    {
+      "sectionId": "less-than",
+      "title": "A보다 B가 덜... (B Is Less... Than A)",
+      "explanation": "덜 means 'less' and works exactly like 더 (more) but in the opposite direction. Place 덜 before the adjective to express 'less [adjective].' 덜 춥다 means 'to be less cold.' Combined with 보다: 어제보다 덜 추워요 (it's less cold than yesterday). 덜 is commonly used with negative or unpleasant adjectives: 덜 아파요 (it hurts less), 덜 피곤해요 (less tired), 덜 어려워요 (less difficult). While grammatically correct with positive adjectives too, Koreans tend to rephrase — instead of 덜 예쁘다 (less pretty), they might say 더 못생기다 (uglier) or use a different construction. 덜 is especially natural in contexts of improvement or relief.",
+      "tip": "덜 is the opposite of 더. It sounds most natural with negative/unpleasant qualities: 덜 아프다, 덜 춥다, 덜 바쁘다. For positive qualities, Koreans usually rephrase rather than using 덜.",
+      "examples": [
+        {
+          "ko": "오늘이 어제보다 덜 추워요.",
+          "en": "Today is less cold than yesterday.",
+          "highlight": "덜"
+        },
+        {
+          "ko": "이 문제가 덜 어려워요.",
+          "en": "This problem is less difficult.",
+          "highlight": "덜"
+        },
+        {
+          "ko": "약을 먹으니까 덜 아파요.",
+          "en": "It hurts less because I took medicine.",
+          "highlight": "덜"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Today is less busy than yesterday'? (바쁘다 = busy)",
+          "options": [
+            "오늘이 어제보다 덜 바빠요.",
+            "어제가 오늘보다 덜 바빠요.",
+            "오늘이 어제보다 더 바빠요."
+          ],
+          "correctIndex": 0,
+          "explanation": "어제보다 (than yesterday) 덜 바빠요 (is less busy): 오늘이 어제보다 덜 바빠요 (Today is less busy than yesterday)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 더 and 덜 have in common?",
+          "options": [
+            "Both go after the adjective",
+            "Both go before the adjective and modify degree",
+            "Both mean 'more'"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both 더 (more) and 덜 (less) are degree adverbs that go before the adjective. 더 increases the degree, 덜 decreases it."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence sounds most natural in Korean?",
+          "options": [
+            "그 사람이 덜 예뻐요. (That person is less pretty.)",
+            "약을 먹으니까 덜 아파요. (It hurts less after taking medicine.)",
+            "이 음식이 덜 맛있어요. (This food is less delicious.)"
+          ],
+          "correctIndex": 1,
+          "explanation": "덜 sounds most natural with unpleasant states like pain, cold, or difficulty. 덜 아프다 (hurts less) is very natural. For positive adjectives like 예쁘다 or 맛있다, Koreans tend to rephrase."
+        }
+      ]
+    }
+  ]
+}

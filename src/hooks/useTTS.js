@@ -2,12 +2,12 @@ import { useRef, useCallback } from 'react';
 
 /**
  * Custom hook for Text-to-Speech functionality
- * Manages Ukrainian TTS with volume control and playback rate.
+ * Manages TTS with volume control and playback rate for all languages.
  * Uses a single persistent Audio element to avoid mobile browser
  * restrictions that block new Audio() elements created outside
  * of user gesture context.
  */
-export const useTTS = (volume = 0.8) => {
+export const useTTS = (volume = 0.8, langCode = 'uk') => {
   const audioRef = useRef(null);
   const objectUrlRef = useRef(null);
   const playingRef = useRef(false);
@@ -38,7 +38,7 @@ export const useTTS = (volume = 0.8) => {
       const response = await fetch('/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text })
+        body: JSON.stringify({ text, lang: langCode })
       });
 
       if (!response.ok) {
@@ -81,7 +81,7 @@ export const useTTS = (volume = 0.8) => {
       console.log('[TTS] Error:', err.message);
       playingRef.current = false;
     }
-  }, [volume, getAudio]);
+  }, [volume, getAudio, langCode]);
 
   const stop = useCallback(() => {
     if (audioRef.current) {

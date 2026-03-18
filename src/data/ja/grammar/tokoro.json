@@ -1,0 +1,355 @@
+{
+  "lessonId": "tokoro",
+  "nameEn": "Tokoro, Bakari & Sugiru",
+  "nameJa": "～ところ・～ばかり・～すぎる",
+  "icon": "⏱️",
+  "tier": "A2",
+  "prerequisites": [
+    "te-form"
+  ],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "tokoro-about-to",
+      "title": "Verb Dictionary Form + ところ (About To)",
+      "explanation": "When ところ follows a verb in its dictionary (plain present) form, it means the action is about to happen. The speaker is on the verge of doing something. 出かけるところです means 'I'm about to go out.' 食べるところです means 'I'm about to eat.' This captures the moment right before an action begins.",
+      "tip": "Think of ところ as 'point in time.' Dictionary form + ところ = the point just before the action. The action hasn't started yet.",
+      "examples": [
+        {
+          "ja": "今、出かけるところです。",
+          "en": "I'm about to go out now.",
+          "highlight": "出かけるところ"
+        },
+        {
+          "ja": "ちょうどご飯を食べるところです。",
+          "en": "I'm just about to eat.",
+          "highlight": "食べるところ"
+        },
+        {
+          "ja": "映画が始まるところだ。",
+          "en": "The movie is about to start.",
+          "highlight": "始まるところ"
+        },
+        {
+          "ja": "電話をかけるところだった。",
+          "en": "I was just about to call.",
+          "highlight": "かけるところ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I'm about to leave the house.' (家を出る = to leave the house) — Choose the correct sentence:",
+          "options": [
+            "家を出たところです。",
+            "家を出ているところです。",
+            "家を出るところです。",
+            "家を出てところです。"
+          ],
+          "correctIndex": 2,
+          "explanation": "Dictionary form 出る + ところ = about to leave. 家を出るところです."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 寝るところです mean?",
+          "options": [
+            "I just went to sleep.",
+            "I'm sleeping now.",
+            "I'm about to go to sleep.",
+            "I was sleeping."
+          ],
+          "correctIndex": 2,
+          "explanation": "寝る (dictionary form) + ところ = about to sleep. The action hasn't started yet."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'The meeting is about to begin.' (会議が始まる) — Choose the correct sentence:",
+          "options": [
+            "会議が始まったところです。",
+            "会議が始まるところです。",
+            "会議が始まっているところです。",
+            "会議が始まりところです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "始まる (dictionary form) + ところ = about to begin."
+        }
+      ]
+    },
+    {
+      "sectionId": "tokoro-in-middle",
+      "title": "～ているところ (In the Middle Of)",
+      "explanation": "When ところ follows ～ている, it means the action is currently in progress. It emphasizes that you are right in the middle of doing something. 食べているところです means 'I'm in the middle of eating.' 勉強しているところです means 'I'm in the middle of studying.' This is more emphatic than just ～ている alone.",
+      "tip": "～ているところ adds emphasis that the action is happening right at this moment. It's often used when someone interrupts you or asks what you're doing.",
+      "examples": [
+        {
+          "ja": "今、食べているところです。",
+          "en": "I'm in the middle of eating right now.",
+          "highlight": "食べているところ"
+        },
+        {
+          "ja": "レポートを書いているところです。",
+          "en": "I'm in the middle of writing a report.",
+          "highlight": "書いているところ"
+        },
+        {
+          "ja": "ちょうど話しているところだった。",
+          "en": "We were just in the middle of talking.",
+          "highlight": "話しているところ"
+        },
+        {
+          "ja": "料理を作っているところです。",
+          "en": "I'm in the middle of cooking.",
+          "highlight": "作っているところ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I'm in the middle of studying.' (勉強する) — Choose the correct sentence:",
+          "options": [
+            "勉強するところです。",
+            "勉強したところです。",
+            "勉強しているところです。",
+            "勉強してところです。"
+          ],
+          "correctIndex": 2,
+          "explanation": "勉強している (progressive) + ところ = in the middle of studying."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 電話で話しているところです mean?",
+          "options": [
+            "I'm about to talk on the phone.",
+            "I just finished talking on the phone.",
+            "I'm in the middle of a phone call.",
+            "I want to talk on the phone."
+          ],
+          "correctIndex": 2,
+          "explanation": "話している (progressive) + ところ = in the middle of talking on the phone."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'We were in the middle of discussing it.' (相談する = to discuss) — Choose the correct sentence:",
+          "options": [
+            "相談するところだった。",
+            "相談しているところだった。",
+            "相談したところだった。",
+            "相談してところだった。"
+          ],
+          "correctIndex": 1,
+          "explanation": "相談している + ところだった (past) = were in the middle of discussing."
+        }
+      ]
+    },
+    {
+      "sectionId": "tokoro-just-did",
+      "title": "～たところ (Just Did)",
+      "explanation": "When ところ follows the past tense (た-form) of a verb, it means the action was just completed moments ago. 着いたところです means 'I just arrived.' 帰ってきたところです means 'I just got back.' This emphasizes the recentness of the action, as if it happened only seconds ago.",
+      "tip": "～たところ implies the action literally just happened, more immediate than ～たばかり. Use it when you've just this very moment finished something.",
+      "examples": [
+        {
+          "ja": "今、着いたところです。",
+          "en": "I just arrived (this very moment).",
+          "highlight": "着いたところ"
+        },
+        {
+          "ja": "仕事が終わったところです。",
+          "en": "Work just ended.",
+          "highlight": "終わったところ"
+        },
+        {
+          "ja": "起きたところだから、まだ眠い。",
+          "en": "I just woke up, so I'm still sleepy.",
+          "highlight": "起きたところ"
+        },
+        {
+          "ja": "さっき帰ってきたところです。",
+          "en": "I just got home a moment ago.",
+          "highlight": "帰ってきたところ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I just finished eating.' (食べ終わる = to finish eating) — Choose the correct sentence:",
+          "options": [
+            "食べ終わるところです。",
+            "食べ終わっているところです。",
+            "食べ終わったところです。",
+            "食べ終わりところです。"
+          ],
+          "correctIndex": 2,
+          "explanation": "食べ終わった (past tense) + ところ = just finished eating."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 駅に着いたところです mean?",
+          "options": [
+            "I'm about to arrive at the station.",
+            "I just arrived at the station.",
+            "I'm at the station now.",
+            "I arrived at the station a long time ago."
+          ],
+          "correctIndex": 1,
+          "explanation": "着いた (past tense) + ところ = just arrived at this very moment."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'I just woke up'?",
+          "options": [
+            "起きるところです。",
+            "起きているところです。",
+            "起きたところです。",
+            "起きてところです。"
+          ],
+          "correctIndex": 2,
+          "explanation": "起きた (past tense) + ところ = just woke up."
+        }
+      ]
+    },
+    {
+      "sectionId": "bakari",
+      "title": "～ばかり (Just Did, with Emphasis)",
+      "explanation": "～たばかり also means 'just did' something, but it can cover a slightly wider time frame than ～たところ and emphasizes newness. 食べたばかりです means 'I just ate.' 日本に来たばかりです means 'I just came to Japan (recently).' While ～たところ refers to seconds ago, ～たばかり can mean minutes, hours, or even days ago depending on context.",
+      "tip": "～たばかり often implies 'so recently that the effects are still relevant.' For example, 食べたばかりだからお腹いっぱい (I just ate so I'm full) — the eating was recent enough that you're still full.",
+      "examples": [
+        {
+          "ja": "お昼を食べたばかりです。",
+          "en": "I just ate lunch.",
+          "highlight": "食べたばかり"
+        },
+        {
+          "ja": "日本に来たばかりで、まだ何も分からない。",
+          "en": "I just came to Japan, so I don't understand anything yet.",
+          "highlight": "来たばかり"
+        },
+        {
+          "ja": "このパソコンは買ったばかりなのに、もう壊れた。",
+          "en": "Even though I just bought this computer, it already broke.",
+          "highlight": "買ったばかり"
+        },
+        {
+          "ja": "さっき起きたばかりだよ。",
+          "en": "I just woke up a moment ago.",
+          "highlight": "起きたばかり"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I just started this job.' (この仕事を始める = to start this job) — Choose the correct sentence:",
+          "options": [
+            "この仕事を始めるばかりです。",
+            "この仕事を始めたばかりです。",
+            "この仕事を始めてばかりです。",
+            "この仕事を始めばかりです。"
+          ],
+          "correctIndex": 1,
+          "explanation": "始めた (past tense) + ばかり = just started. ～たばかり requires the た-form."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between ～たところ and ～たばかり?",
+          "options": [
+            "They are exactly the same.",
+            "～たところ is for the distant past, ～たばかり is for the recent past.",
+            "～たところ implies just moments ago, ～たばかり can cover a wider timeframe.",
+            "～たばかり is more formal than ～たところ."
+          ],
+          "correctIndex": 2,
+          "explanation": "～たところ = just this very moment. ～たばかり = recently, with effects still felt. ～たばかり has a wider time range."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I just moved, so I don't know the area.' (引っ越す = to move) — Choose the correct sentence:",
+          "options": [
+            "引っ越すばかりで、この辺を知らない。",
+            "引っ越したばかりで、この辺を知らない。",
+            "引っ越してばかりで、この辺を知らない。",
+            "引っ越しばかりで、この辺を知らない。"
+          ],
+          "correctIndex": 1,
+          "explanation": "引っ越した (past tense) + ばかりで = just moved, so... The effects of moving recently are still relevant."
+        }
+      ]
+    },
+    {
+      "sectionId": "sugiru",
+      "title": "～すぎる (Too Much)",
+      "explanation": "～すぎる attached to a verb stem or adjective means 'too much' or 'excessively.' For verbs: remove ます and add すぎる. 食べる → 食べすぎる (eat too much), 飲む → 飲みすぎる (drink too much). For い-adjectives: remove い and add すぎる. 高い → 高すぎる (too expensive), 大きい → 大きすぎる (too big). For な-adjectives: add すぎる directly. 静か → 静かすぎる (too quiet).",
+      "tip": "～すぎる itself conjugates as a る-verb: すぎる, すぎた, すぎない, すぎて. So 食べすぎた = ate too much (past), 高すぎて = too expensive and... (te-form).",
+      "examples": [
+        {
+          "ja": "昨日、食べすぎた。",
+          "en": "I ate too much yesterday.",
+          "highlight": "食べすぎた"
+        },
+        {
+          "ja": "このバッグは高すぎる。",
+          "en": "This bag is too expensive.",
+          "highlight": "高すぎる"
+        },
+        {
+          "ja": "コーヒーを飲みすぎて眠れない。",
+          "en": "I drank too much coffee and can't sleep.",
+          "highlight": "飲みすぎて"
+        },
+        {
+          "ja": "この部屋は静かすぎる。",
+          "en": "This room is too quiet.",
+          "highlight": "静かすぎる"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I slept too much.' (寝る = to sleep) — Choose the correct sentence:",
+          "options": [
+            "寝るすぎた。",
+            "寝すぎた。",
+            "寝たすぎた。",
+            "寝てすぎた。"
+          ],
+          "correctIndex": 1,
+          "explanation": "寝る is a る-verb. Remove る, add すぎる: 寝すぎる. Past tense: 寝すぎた."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'This problem is too difficult.' (この問題は難しい) — Choose the correct sentence:",
+          "options": [
+            "この問題は難しいすぎる。",
+            "この問題は難しすぎる。",
+            "この問題は難しくすぎる。",
+            "この問題は難してすぎる。"
+          ],
+          "correctIndex": 1,
+          "explanation": "For い-adjectives, remove い and add すぎる. 難しい → 難しすぎる."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'I talked too much.' (話す = to speak) — Choose the correct sentence:",
+          "options": [
+            "話すすぎた。",
+            "話しすぎた。",
+            "話してすぎた。",
+            "話したすぎた。"
+          ],
+          "correctIndex": 1,
+          "explanation": "話す → verb stem 話し + すぎた. 話しすぎた = talked too much."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'too kind' using 親切 (な-adjective)?",
+          "options": [
+            "親切なすぎる",
+            "親切にすぎる",
+            "親切すぎる",
+            "親切ですぎる"
+          ],
+          "correctIndex": 2,
+          "explanation": "For な-adjectives, add すぎる directly to the stem: 親切すぎる."
+        }
+      ]
+    }
+  ]
+}

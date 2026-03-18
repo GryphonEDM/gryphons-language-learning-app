@@ -157,7 +157,7 @@ export function useLessonChat({ langName, langCode = 'uk', systemPrompt, onSpeak
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);
-  }, [ttsEnabled, onSpeak, ttsVolume]);
+  }, [ttsEnabled, onSpeak, ttsVolume, langCode]);
 
   const send = async (directText) => {
     const text = (directText || input).trim();

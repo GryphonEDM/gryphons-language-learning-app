@@ -1,0 +1,351 @@
+{
+  "lessonId": "reflexive",
+  "nameEn": "Reflexive Constructions",
+  "nameHi": "निजवाचक",
+  "icon": "🪞",
+  "tier": "A2",
+  "prerequisites": [
+    "pronouns",
+    "postpositions"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "apna-reflexive-possessive",
+      "title": "अपना (one's own) — Reflexive Possessive",
+      "explanation": "अपना is Hindi's reflexive possessive pronoun, meaning 'one's own'. It always refers back to the subject of the sentence. Like other adjective-like words, अपना changes form to agree in gender and number with the noun it modifies: अपना (masculine singular direct), अपनी (feminine singular/plural), अपने (masculine plural or masculine singular oblique). The key difference from regular possessives (मेरा, तेरा, उसका) is that अपना always refers to the subject, no matter which person the subject is.",
+      "tip": "Think of अपना as 'one's own'. If the subject is doing something related to their own possession, use अपना instead of मेरा/तेरा/उसका. This avoids ambiguity — उसने उसकी किताब पढ़ी could mean 'he read his (someone else's) book', but उसने अपनी किताब पढ़ी clearly means 'he read his own book'.",
+      "examples": [
+        {
+          "hi": "मैं अपना काम करता हूँ",
+          "en": "I do my own work — अपना (m.sg.) because काम is masculine",
+          "highlight": "अपना"
+        },
+        {
+          "hi": "वह अपनी किताब पढ़ती है",
+          "en": "She reads her own book — अपनी (f.) because किताब is feminine",
+          "highlight": "अपनी"
+        },
+        {
+          "hi": "बच्चे अपने कपड़े धोते हैं",
+          "en": "The children wash their own clothes — अपने (m.pl.) because कपड़े is masculine plural",
+          "highlight": "अपने"
+        },
+        {
+          "hi": "तुम अपनी माँ से बात करो",
+          "en": "Talk to your own mother — अपनी (f.) because माँ is feminine",
+          "highlight": "अपनी"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I do my own work' in Hindi? (काम is masculine)",
+          "options": [
+            "मैं मेरा काम करता हूँ",
+            "मैं अपना काम करता हूँ",
+            "मैं अपनी काम करता हूँ"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the subject refers to their own possession, Hindi uses the reflexive अपना instead of the regular possessive मेरा. Since काम is masculine singular, the correct form is अपना."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form of अपना is used with a feminine noun like किताब (book)?",
+          "options": [
+            "अपना",
+            "अपने",
+            "अपनी"
+          ],
+          "correctIndex": 2,
+          "explanation": "अपनी is the feminine form. Just like adjectives, अपना agrees with the possessed noun: अपना (m.sg.), अपनी (f.), अपने (m.pl./oblique). Since किताब is feminine, we say अपनी किताब."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank: बच्चे ___ कपड़े धोते हैं (The children wash their own clothes — कपड़े is m.pl.)",
+          "options": [
+            "अपना",
+            "अपनी",
+            "अपने"
+          ],
+          "correctIndex": 2,
+          "explanation": "कपड़े (clothes) is masculine plural, so the reflexive possessive must also be masculine plural: अपने. The full sentence is बच्चे अपने कपड़े धोते हैं."
+        }
+      ]
+    },
+    {
+      "sectionId": "khud-swayam-emphatic",
+      "title": "खुद / स्वयं (self) — Emphatic Reflexive",
+      "explanation": "खुद and स्वयं both mean 'self' or 'oneself' and are used for emphasis — to stress that the subject personally does or did something. खुद is the everyday, colloquial form used in spoken Hindi. स्वयं is the more formal, literary equivalent from Sanskrit. Both are invariable — they do not change for gender, number, or case. They typically appear right before the verb or after the subject.",
+      "tip": "In daily conversation, खुद is far more common than स्वयं. Use स्वयं in formal writing or speeches. You can also combine them with अपना for extra emphasis: मैंने खुद अपने हाथों से बनाया (I made it myself with my own hands).",
+      "examples": [
+        {
+          "hi": "मैं खुद जाऊँगा",
+          "en": "I will go myself — खुद emphasizes that the speaker will personally go",
+          "highlight": "खुद"
+        },
+        {
+          "hi": "उसने स्वयं यह काम किया",
+          "en": "He/She did this work himself/herself — स्वयं is the formal equivalent of खुद",
+          "highlight": "स्वयं"
+        },
+        {
+          "hi": "तुम खुद देख लो",
+          "en": "See for yourself — खुद adds emphasis that you should personally verify",
+          "highlight": "खुद"
+        },
+        {
+          "hi": "माँ ने खुद खाना बनाया",
+          "en": "Mother cooked the food herself — emphasizes she did it personally",
+          "highlight": "खुद"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I will go myself' in Hindi?",
+          "options": [
+            "मैं अपना जाऊँगा",
+            "मैं खुद जाऊँगा",
+            "मैं अपने आप जाऊँगा"
+          ],
+          "correctIndex": 1,
+          "explanation": "खुद means 'myself/yourself/himself' and is used for emphasis. मैं खुद जाऊँगा stresses that the speaker will personally go. अपना is a possessive ('one's own') and does not fit here."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which word is the formal/literary equivalent of खुद?",
+          "options": [
+            "अपना",
+            "स्वयं",
+            "अपने आप"
+          ],
+          "correctIndex": 1,
+          "explanation": "स्वयं is the formal, Sanskrit-derived word meaning 'self', equivalent to the colloquial खुद. It is used in formal writing, literature, and speeches."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does खुद change form based on gender or number?",
+          "options": [
+            "Yes, it becomes खुदी for feminine",
+            "No, खुद is invariable — it never changes",
+            "Yes, it becomes खुदे for plural"
+          ],
+          "correctIndex": 1,
+          "explanation": "खुद is invariable. Unlike अपना which changes to अपनी/अपने, खुद stays the same regardless of the subject's gender or number: मैं खुद, वह खुद, हम खुद, etc."
+        }
+      ]
+    },
+    {
+      "sectionId": "apne-aap-by-oneself",
+      "title": "अपने आप (by oneself)",
+      "explanation": "अपने आप is a reflexive phrase meaning 'by oneself' or 'on one's own'. It emphasizes that the action was done without help or happened automatically. Unlike खुद, which stresses the identity of the doer, अपने आप stresses independence or spontaneity. It can mean 'by oneself (without help)' or 'automatically/on its own'. The phrase is invariable and does not change for gender or number.",
+      "tip": "अपने आप can indicate two things: (1) doing something without help — बच्चा अपने आप चलना सीखा (The child learned to walk by himself), or (2) something happening on its own — दरवाज़ा अपने आप खुल गया (The door opened by itself). Context makes the meaning clear.",
+      "examples": [
+        {
+          "hi": "वह अपने आप सीखा",
+          "en": "He learned by himself — without anyone's help",
+          "highlight": "अपने आप"
+        },
+        {
+          "hi": "दरवाज़ा अपने आप बंद हो गया",
+          "en": "The door closed by itself — it happened automatically",
+          "highlight": "अपने आप"
+        },
+        {
+          "hi": "मैंने यह अपने आप किया",
+          "en": "I did this by myself — without anyone's help",
+          "highlight": "अपने आप"
+        },
+        {
+          "hi": "बच्चा अपने आप खाना खाता है",
+          "en": "The child eats food by himself — independently, without being fed",
+          "highlight": "अपने आप"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'वह अपने आप सीखा' mean?",
+          "options": [
+            "He learned his own lesson",
+            "He learned by himself",
+            "He taught himself a lesson"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपने आप means 'by oneself' — indicating doing something without help. वह अपने आप सीखा means 'He learned by himself' (without a teacher or anyone's assistance)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which phrase best translates 'The door opened by itself'?",
+          "options": [
+            "दरवाज़ा खुद खुल गया",
+            "दरवाज़ा अपने आप खुल गया",
+            "दरवाज़ा अपना खुल गया"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपने आप is the best choice here because it conveys the meaning of 'by itself' or 'automatically'. While खुद can sometimes work, अपने आप is the natural choice for spontaneous actions."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the difference between खुद and अपने आप?",
+          "options": [
+            "They are identical in meaning and usage",
+            "खुद emphasizes the doer's identity; अपने आप emphasizes independence or spontaneity",
+            "खुद is formal; अपने आप is informal"
+          ],
+          "correctIndex": 1,
+          "explanation": "खुद stresses that the subject personally did something (emphasis on identity), while अपने आप stresses that it was done without help or happened on its own (emphasis on independence). मैंने खुद किया = 'I did it myself (not someone else)', मैंने अपने आप किया = 'I did it by myself (without help)'."
+        }
+      ]
+    },
+    {
+      "sectionId": "apna-vs-regular-possessive",
+      "title": "अपना vs उसका/मेरा — Reflexive vs Regular Possessive",
+      "explanation": "This is one of the most important distinctions in Hindi. अपना (reflexive possessive) refers back to the subject of the sentence, while regular possessives (मेरा, तेरा, उसका, etc.) can refer to someone other than the subject. In English, 'his' is ambiguous — 'He read his book' could mean his own book or someone else's book. Hindi resolves this: उसने अपनी किताब पढ़ी (he read his own book) vs उसने उसकी किताब पढ़ी (he read his/her [someone else's] book). Using the wrong one changes the meaning entirely.",
+      "tip": "A simple rule: if the possessor IS the subject, use अपना. If the possessor is NOT the subject, use the regular possessive (उसका, मेरा, etc.). This rule applies regardless of the person — first, second, or third.",
+      "examples": [
+        {
+          "hi": "मैं अपनी किताब पढ़ता हूँ",
+          "en": "I read my own book — अपनी refers back to the subject मैं",
+          "highlight": "अपनी"
+        },
+        {
+          "hi": "मैं उसकी किताब पढ़ता हूँ",
+          "en": "I read his/her book — उसकी refers to someone else, not the subject",
+          "highlight": "उसकी"
+        },
+        {
+          "hi": "राम ने अपना खाना खाया",
+          "en": "Ram ate his own food — अपना refers back to Ram (the subject)",
+          "highlight": "अपना"
+        },
+        {
+          "hi": "राम ने उसका खाना खाया",
+          "en": "Ram ate his (someone else's) food — उसका refers to another person",
+          "highlight": "उसका"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She reads her own book' (referring to the subject's book)?",
+          "options": [
+            "वह उसकी किताब पढ़ती है",
+            "वह अपनी किताब पढ़ती है",
+            "वह मेरी किताब पढ़ती है"
+          ],
+          "correctIndex": 1,
+          "explanation": "Since the possessor is the same as the subject (she reads her own book), Hindi uses the reflexive अपनी. Using उसकी would mean she is reading someone else's book."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'राम ने उसका खाना खाया' — whose food did Ram eat?",
+          "options": [
+            "Ram's own food",
+            "Someone else's food",
+            "It is ambiguous"
+          ],
+          "correctIndex": 1,
+          "explanation": "उसका is a regular possessive referring to someone other than the subject. If Ram ate his own food, it would be राम ने अपना खाना खाया. Since उसका is used, the food belongs to someone else."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Fill in the blank to mean 'The teacher gave her own pen to the student': अध्यापिका ने ___ कलम छात्र को दी",
+          "options": [
+            "उसकी",
+            "मेरी",
+            "अपनी"
+          ],
+          "correctIndex": 2,
+          "explanation": "Since the pen belongs to the subject (the teacher), the reflexive अपनी must be used. अपनी is feminine because कलम (pen) is feminine in Hindi."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'He washed his own clothes'?",
+          "options": [
+            "उसने उसके कपड़े धोए",
+            "उसने अपने कपड़े धोए",
+            "उसने मेरे कपड़े धोए"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपने कपड़े means 'his own clothes' because अपने refers back to the subject. उसके कपड़े would mean someone else's clothes."
+        }
+      ]
+    },
+    {
+      "sectionId": "common-expressions",
+      "title": "Common Reflexive Expressions",
+      "explanation": "Hindi has many everyday expressions built around reflexive words. These are idiomatic and frequently used in daily conversation. Learning them as fixed phrases will help you sound more natural. Most use अपना or अपने आप as a core component, and some use खुद for emphasis.",
+      "tip": "These expressions are extremely common in everyday Hindi. Try to memorize them as complete phrases rather than translating word by word. They come up constantly in greetings, advice, and daily speech.",
+      "examples": [
+        {
+          "hi": "अपना ख्याल रखना",
+          "en": "Take care of yourself — a very common parting phrase",
+          "highlight": "अपना ख्याल"
+        },
+        {
+          "hi": "अपनी मदद खुद करो",
+          "en": "Help yourself (do your own helping) — encouraging self-reliance",
+          "highlight": "अपनी मदद खुद"
+        },
+        {
+          "hi": "अपने पैरों पर खड़ा होना",
+          "en": "To stand on one's own feet — to be self-reliant",
+          "highlight": "अपने पैरों"
+        },
+        {
+          "hi": "अपनी ज़िम्मेदारी समझो",
+          "en": "Understand your own responsibility — a common admonishment",
+          "highlight": "अपनी ज़िम्मेदारी"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'अपना ख्याल रखना' mean?",
+          "options": [
+            "Keep your own things",
+            "Take care of yourself",
+            "Think about yourself"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपना ख्याल रखना literally means 'keep your own care' and is the standard way to say 'take care of yourself' in Hindi. It is one of the most common parting phrases."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'अपने पैरों पर खड़ा होना' mean?",
+          "options": [
+            "To stand up straight",
+            "To stand on one's own feet (to be self-reliant)",
+            "To walk by oneself"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपने पैरों पर खड़ा होना literally means 'to stand on one's own feet'. It is an idiomatic expression meaning to be financially or personally independent and self-reliant."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you say 'Help yourself' in Hindi, encouraging self-reliance?",
+          "options": [
+            "मेरी मदद करो",
+            "अपनी मदद खुद करो",
+            "उसकी मदद करो"
+          ],
+          "correctIndex": 1,
+          "explanation": "अपनी मदद खुद करो means 'do your own helping yourself' — it encourages someone to be self-reliant and help themselves rather than depending on others."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which reflexive word completes this common expression? '___ ज़िम्मेदारी समझो' (Understand your own responsibility)",
+          "options": [
+            "मेरी",
+            "उसकी",
+            "अपनी"
+          ],
+          "correctIndex": 2,
+          "explanation": "अपनी is the correct reflexive possessive here because the responsibility belongs to the subject (the person being addressed). The full expression अपनी ज़िम्मेदारी समझो means 'understand your own responsibility'."
+        }
+      ]
+    }
+  ]
+}

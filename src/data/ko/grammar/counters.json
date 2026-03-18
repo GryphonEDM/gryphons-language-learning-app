@@ -1,0 +1,314 @@
+{
+  "lessonId": "counters",
+  "nameEn": "Counters",
+  "nameKo": "단위 명사",
+  "icon": "🔢",
+  "tier": "A2",
+  "prerequisites": [
+    "numbers-counting"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "what-are-counters",
+      "title": "What Are Counters?",
+      "explanation": "Korean uses specific counting words called counters (단위 명사 or 분류사) between a number and a noun. You cannot simply put a number next to a noun as in English. For example, you cannot say '세 사과' for 'three apples' — you must say 사과 세 개, inserting the counter 개 after the number. Every category of noun has its own counter: people, animals, objects, drinks, and more each require a different counter word. This is similar to how English sometimes says 'two sheets of paper' or 'three heads of cattle,' except Korean does it for nearly everything.",
+      "tip": "Think of counters as the Korean equivalent of 'cups of,' 'pieces of,' or 'bottles of' — except they are required for all counting, not just special cases.",
+      "examples": [
+        {
+          "ko": "사과 세 개",
+          "en": "three apples (개 = general object counter)",
+          "highlight": "개"
+        },
+        {
+          "ko": "학생 두 명",
+          "en": "two students (명 = people counter)",
+          "highlight": "명"
+        },
+        {
+          "ko": "고양이 한 마리",
+          "en": "one cat (마리 = animal counter)",
+          "highlight": "마리"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can't you say '세 사과' for 'three apples' in Korean?",
+          "options": [
+            "세 is the wrong number",
+            "You need a counter between the number and noun",
+            "사과 is not a countable noun"
+          ],
+          "correctIndex": 1,
+          "explanation": "Korean requires a counter word when counting. The correct form is 사과 세 개, with the counter 개 after the number."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is a counter (단위 명사) in Korean?",
+          "options": [
+            "A word that replaces the noun",
+            "A specific counting word used between a number and a noun",
+            "A type of verb ending"
+          ],
+          "correctIndex": 1,
+          "explanation": "Counters are special words that classify what is being counted. They appear after the number: noun + number + counter."
+        }
+      ]
+    },
+    {
+      "sectionId": "counters-native-korean",
+      "title": "Counters with Native Korean Numbers",
+      "explanation": "Most everyday counters use the native Korean number system (하나, 둘, 셋...). The most important ones are: 명 (people, neutral), 분 (people, polite/honorific), 마리 (animals), 개 (general objects), 살 (age), 잔 (cups/glasses of drinks), 병 (bottles), 그루 (trees). Examples: 친구 세 명 (three friends), 강아지 두 마리 (two puppies), 연필 다섯 개 (five pencils), 스무 살 (20 years old), 커피 한 잔 (one cup of coffee), 맥주 두 병 (two bottles of beer), 나무 세 그루 (three trees). Remember to use the shortened number forms before counters: 한, 두, 세, 네, 스무.",
+      "tip": "Start by memorizing these seven counters — they cover the vast majority of daily counting: 명/분 (people), 마리 (animals), 개 (things), 살 (age), 잔 (cups), 병 (bottles), 그루 (trees).",
+      "examples": [
+        {
+          "ko": "커피 한 잔 주세요.",
+          "en": "One cup of coffee, please. (잔 = cup counter)",
+          "highlight": "잔"
+        },
+        {
+          "ko": "나무 세 그루가 있어요.",
+          "en": "There are three trees. (그루 = tree counter)",
+          "highlight": "그루"
+        },
+        {
+          "ko": "맥주 두 병",
+          "en": "two bottles of beer (병 = bottle counter)",
+          "highlight": "병"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'three cups of tea'?",
+          "options": [
+            "차 셋 잔",
+            "차 세 잔",
+            "차 삼 잔"
+          ],
+          "correctIndex": 1,
+          "explanation": "셋 shortens to 세 before a counter. Tea (차) + 세 (3) + 잔 (cup counter) = 차 세 잔. Sino-Korean 삼 is not used with 잔."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which counter is used for animals?",
+          "options": [
+            "명",
+            "개",
+            "마리"
+          ],
+          "correctIndex": 2,
+          "explanation": "마리 is the counter for animals: 고양이 한 마리 (one cat), 새 다섯 마리 (five birds). 명 is for people and 개 is for general objects."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'two bottles of water'?",
+          "options": [
+            "물 이 병",
+            "물 두 병",
+            "물 둘 병"
+          ],
+          "correctIndex": 1,
+          "explanation": "둘 shortens to 두 before a counter. Water (물) + 두 (2) + 병 (bottle counter) = 물 두 병."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which counter do you use for trees?",
+          "options": [
+            "개",
+            "마리",
+            "그루"
+          ],
+          "correctIndex": 2,
+          "explanation": "그루 is the specific counter for trees: 나무 한 그루 (one tree). 개 is for general objects and 마리 is for animals."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She is 20 years old'?",
+          "options": [
+            "그녀는 이십 살이에요.",
+            "그녀는 스무 살이에요.",
+            "그녀는 스물 살이에요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Age uses the native Korean number system with the counter 살. 스물 shortens to 스무 before 살, so 20 years old = 스무 살."
+        }
+      ]
+    },
+    {
+      "sectionId": "counters-sino-korean",
+      "title": "Counters with Sino-Korean Numbers",
+      "explanation": "Some counters specifically use the Sino-Korean number system (일, 이, 삼...). The most common are: 원 (won, Korean currency), 번 (times or ordinal numbers), 층 (floors of a building), 년 (years), 월 (months of the year), 일 (days of the month), 분 (minutes). Examples: 천 원 (1,000 won), 삼 번 (number 3 / three times), 오 층 (5th floor), 이천이십오 년 (the year 2025), 삼월 (March), 십오 일 (the 15th day), 삼십 분 (30 minutes). These counters never use native Korean numbers — saying 하나 원 or 둘 층 would be incorrect.",
+      "tip": "A helpful rule: if it involves formal measurements, money, dates, or floor numbers, use Sino-Korean numbers. If it involves counting physical things you can see, use native Korean numbers.",
+      "examples": [
+        {
+          "ko": "오천 원이에요.",
+          "en": "It is 5,000 won. (원 = currency counter)",
+          "highlight": "원"
+        },
+        {
+          "ko": "삼 층에 있어요.",
+          "en": "It is on the 3rd floor. (층 = floor counter)",
+          "highlight": "층"
+        },
+        {
+          "ko": "삼월 이십일 일",
+          "en": "March 21st (월 = month, 일 = day)",
+          "highlight": "삼월"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say '7,000 won'?",
+          "options": [
+            "일곱천 원",
+            "칠천 원",
+            "일곱 원"
+          ],
+          "correctIndex": 1,
+          "explanation": "Currency (원) uses Sino-Korean numbers. 7,000 = 칠 (7) + 천 (thousand) = 칠천 원. Native Korean 일곱 is never used with 원."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the 10th floor'?",
+          "options": [
+            "열 층",
+            "십 층",
+            "열번째 층"
+          ],
+          "correctIndex": 1,
+          "explanation": "Building floors (층) use Sino-Korean numbers: 십 (10) + 층 = 십 층. Native Korean 열 is not used with 층."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which number system is used with 번 (times/number)?",
+          "options": [
+            "Native Korean (하나, 둘, 셋...)",
+            "Sino-Korean (일, 이, 삼...)",
+            "Either system"
+          ],
+          "correctIndex": 1,
+          "explanation": "번 uses Sino-Korean numbers: 일 번 (number 1), 이 번 (number 2 / two times), 삼 번 (number 3 / three times)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'June 5th'?",
+          "options": [
+            "여섯월 다섯일",
+            "유월 오일",
+            "육월 오일"
+          ],
+          "correctIndex": 1,
+          "explanation": "Months and days use Sino-Korean numbers. June is 유월 (irregular form of 육월) and the 5th is 오일. So June 5th = 유월 오일."
+        }
+      ]
+    },
+    {
+      "sectionId": "word-order",
+      "title": "Word Order with Counters",
+      "explanation": "The standard word order for counting in Korean is: Noun + Number + Counter. For example: 사과 세 개 (apple three-piece = three apples). However, there is an alternative pattern using the possessive particle 의: Number + Counter + 의 + Noun. For example: 세 개의 사과 (three-piece's apple = three apples). The first pattern (noun + number + counter) is more common in spoken Korean and everyday conversation. The second pattern (number + counter + 의 + noun) is more common in written Korean and formal contexts. Both are grammatically correct. In casual speech, you can also drop 의: 세 개 사과.",
+      "tip": "For everyday speaking, use: Noun + Number + Counter (사과 세 개). For writing or formal speech, you may see: Number + Counter + 의 + Noun (세 개의 사과).",
+      "examples": [
+        {
+          "ko": "사과 세 개를 샀어요.",
+          "en": "I bought three apples. (spoken/casual pattern)",
+          "highlight": "세 개"
+        },
+        {
+          "ko": "세 개의 사과를 샀어요.",
+          "en": "I bought three apples. (written/formal pattern)",
+          "highlight": "세 개의"
+        },
+        {
+          "ko": "두 명의 학생이 왔어요.",
+          "en": "Two students came. (formal pattern)",
+          "highlight": "두 명의"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the standard spoken word order for 'five pencils'?",
+          "options": [
+            "다섯 개의 연필",
+            "연필 다섯 개",
+            "개 다섯 연필"
+          ],
+          "correctIndex": 1,
+          "explanation": "The standard spoken pattern is Noun + Number + Counter: 연필 (pencil) + 다섯 (5) + 개 (counter) = 연필 다섯 개."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence uses the formal/written pattern?",
+          "options": [
+            "고양이 두 마리를 봤어요.",
+            "두 마리의 고양이를 봤어요.",
+            "두 고양이 마리를 봤어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "The formal/written pattern is Number + Counter + 의 + Noun: 두 마리의 고양이 (two cats)."
+        }
+      ]
+    },
+    {
+      "sectionId": "irregular-number-forms",
+      "title": "Irregular Number Forms Before Counters",
+      "explanation": "Five native Korean numbers change their form when they appear directly before a counter. These shortened forms are mandatory — using the full form before a counter sounds unnatural. The changes are: 하나 → 한 (one), 둘 → 두 (two), 셋 → 세 (three), 넷 → 네 (four), 스물 → 스무 (twenty). Examples: 한 개 (one thing, not 하나 개), 두 명 (two people, not 둘 명), 세 마리 (three animals, not 셋 마리), 네 잔 (four cups, not 넷 잔), 스무 살 (twenty years old, not 스물 살). Numbers from 다섯 (5) onward do not change: 다섯 개, 여섯 명, 일곱 마리, etc. Compound numbers also follow this rule: 스물한 개 = twenty-one things (스물 stays full when not directly before the counter, 하나 becomes 한 because it is directly before 개).",
+      "tip": "Only five numbers shorten: 하나→한, 둘→두, 셋→세, 넷→네, 스물→스무. All other native Korean numbers keep their full form before counters.",
+      "examples": [
+        {
+          "ko": "한 잔만 더 주세요.",
+          "en": "Just one more cup, please. (하나 → 한 before 잔)",
+          "highlight": "한"
+        },
+        {
+          "ko": "네 병 샀어요.",
+          "en": "I bought four bottles. (넷 → 네 before 병)",
+          "highlight": "네"
+        },
+        {
+          "ko": "스무 살이에요.",
+          "en": "I am 20 years old. (스물 → 스무 before 살)",
+          "highlight": "스무"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct form: ___ 개 (one thing)?",
+          "options": [
+            "하나 개",
+            "한 개",
+            "일 개"
+          ],
+          "correctIndex": 1,
+          "explanation": "하나 shortens to 한 before a counter: 한 개 (one thing). Using 하나 개 or 일 개 is incorrect."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'four animals'?",
+          "options": [
+            "넷 마리",
+            "사 마리",
+            "네 마리"
+          ],
+          "correctIndex": 2,
+          "explanation": "넷 shortens to 네 before a counter: 네 마리 (four animals). The full form 넷 마리 is incorrect."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which number does NOT change before a counter?",
+          "options": [
+            "하나",
+            "다섯",
+            "스물"
+          ],
+          "correctIndex": 1,
+          "explanation": "다섯 (5) keeps its full form before counters: 다섯 개, 다섯 명. Only 하나, 둘, 셋, 넷, and 스물 have shortened forms."
+        }
+      ]
+    }
+  ]
+}

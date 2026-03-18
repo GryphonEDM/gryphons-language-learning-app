@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameZh": "酒店入住",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Beijing. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "前台" },
+    "player": { "name": "客人" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "您好！欢迎来到我们酒店。", "translation": "Hello! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["你好，我有预订", "您好，我预订了房间", "你好，我有预约", "您好，我订了房间"], "keyWords": ["你好", "预订"], "hint": "你好，我有预订。" },
+    { "speaker": "npc", "text": "好的！请问您贵姓？", "translation": "Great! May I have your name?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["房间一晚多少钱？", "一晚上多少钱？", "住一晚多少钱？", "请问房价是多少？"], "keyWords": ["多少钱", "一晚"], "hint": "房间一晚多少钱？" },
+    { "speaker": "npc", "text": "单人间一晚五百元。包含早餐。", "translation": "A single room is five hundred yuan per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["有Wi-Fi吗？", "有没有无线网？", "这里有Wi-Fi吗？", "能上网吗？"], "keyWords": ["Wi-Fi"], "hint": "有Wi-Fi吗？" },
+    { "speaker": "npc", "text": "有的，整个酒店都有免费Wi-Fi。这是您的房卡。房间号是305。", "translation": "Yes, there is free Wi-Fi throughout the hotel. Here is your room key. The room number is 305." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["退房时间是几点？", "几点退房？", "什么时候退房？", "请问退房是几点？"], "keyWords": ["退房", "几点"], "hint": "退房时间是几点？" },
+    { "speaker": "npc", "text": "退房时间是中午十二点之前。祝您住得愉快！", "translation": "Check-out is before twelve noon. I wish you a pleasant stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["非常感谢！", "谢谢！", "太感谢了！", "多谢！"], "keyWords": ["谢谢"], "hint": "非常感谢！" }
+  ]
+}

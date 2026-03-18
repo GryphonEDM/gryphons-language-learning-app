@@ -34,7 +34,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
     if (cat) {
       // Specific category selected — use its words
       return (cat.words || []).map(w => ({
-        uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
+        [langCode]: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
         source: w.source || cat.setId,
         examples: w.examples || [], examplesEn: w.examplesEn || [],
       }));
@@ -50,7 +50,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
           if (key && !seen.has(key)) {
             seen.add(key);
             filtered.push({
-              uk: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
+              [langCode]: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
               source: w.source || set.setId,
               examples: w.examples || [], examplesEn: w.examplesEn || [],
             });

@@ -1,0 +1,361 @@
+{
+  "lessonId": "comparison",
+  "nameEn": "Comparison",
+  "nameAr": "المقارنة والتفضيل",
+  "icon": "⚖️",
+  "tier": "A2",
+  "prerequisites": [
+    "adjectives",
+    "nouns-gender"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "comparative-form",
+      "title": "The Comparative Pattern أَفْعَل",
+      "explanation": "Arabic forms comparatives using a special pattern called أَفْعَل (afʿal). To make a comparative, you take the three root consonants of an adjective and place them into the pattern أَ_ْ_َ_. For example: كَبير (big, root ك-ب-ر) becomes أَكْبَر (bigger), جَميل (beautiful, root ج-م-ل) becomes أَجْمَل (more beautiful), صَغير (small, root ص-غ-ر) becomes أَصْغَر (smaller), and طَويل (tall/long, root ط-و-ل) becomes أَطْوَل (taller/longer). The feminine form of this pattern is فُعْلى (fuʿlā): كُبْرى (bigger, feminine), صُغْرى (smaller, feminine). However, in everyday comparative sentences, the أَفْعَل form is used regardless of the gender of the subject.",
+      "tip": "The أَفْعَل pattern always starts with أَ (alif with fatha), has sukūn on the second root letter, and fatha on the third. Once you know the three-letter root, just plug the consonants in: أَ + 1st + ْ + 2nd + َ + 3rd.",
+      "examples": [
+        {
+          "ar": "كَبير → أَكْبَر",
+          "en": "big → bigger — root ك-ب-ر in the أَفْعَل pattern",
+          "highlight": "أَكْبَر"
+        },
+        {
+          "ar": "جَميل → أَجْمَل",
+          "en": "beautiful → more beautiful — root ج-م-ل",
+          "highlight": "أَجْمَل"
+        },
+        {
+          "ar": "صَغير → أَصْغَر",
+          "en": "small → smaller — root ص-غ-ر",
+          "highlight": "أَصْغَر"
+        },
+        {
+          "ar": "طَويل → أَطْوَل",
+          "en": "tall/long → taller/longer — root ط-و-ل",
+          "highlight": "أَطْوَل"
+        },
+        {
+          "ar": "سَريع → أَسْرَع",
+          "en": "fast → faster — root س-ر-ع",
+          "highlight": "أَسْرَع"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What pattern is used to form the comparative in Arabic?",
+          "options": [
+            "فاعِل (fāʿil)",
+            "أَفْعَل (afʿal)",
+            "مَفْعول (mafʿūl)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The comparative is formed using the أَفْعَل (afʿal) pattern. The three root consonants of the adjective are placed into this pattern: أَ + 1st root + ْ + 2nd root + َ + 3rd root."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative form of جَميل (beautiful)?",
+          "options": [
+            "جَمالٌ",
+            "أَجْمَل",
+            "مُجَمَّل"
+          ],
+          "correctIndex": 1,
+          "explanation": "The root of جَميل is ج-م-ل. Placing these consonants into the أَفْعَل pattern gives أَجْمَل (more beautiful)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The adjective قَريب (near/close) has the root ق-ر-ب. What is its comparative form?",
+          "options": [
+            "أَقْرَب (nearer)",
+            "قارِب (approaching)",
+            "مَقْرَب (nearness)"
+          ],
+          "correctIndex": 0,
+          "explanation": "Placing the root ق-ر-ب into the أَفْعَل pattern gives أَقْرَب (nearer/closer)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the comparative form of سَريع (fast)?",
+          "options": [
+            "سُرْعة",
+            "أَسْرَع",
+            "مُسْرِع"
+          ],
+          "correctIndex": 1,
+          "explanation": "The root of سَريع is س-ر-ع. The أَفْعَل pattern produces أَسْرَع (faster). Note that سُرْعة means 'speed' (a noun) and مُسْرِع means 'hurrying' (an active participle)."
+        }
+      ]
+    },
+    {
+      "sectionId": "comparative-sentences",
+      "title": "Comparative Sentences with مِن",
+      "explanation": "To compare two things in Arabic, use the structure: X + أَفْعَل + مِن + Y, meaning 'X is more ... than Y'. The word مِن (min) means 'than' in comparative sentences. For example: أحمدُ أَكْبَرُ مِن عليٍّ (Ahmad is bigger/older than Ali), القاهرةُ أَكْبَرُ مِن بيروتَ (Cairo is bigger than Beirut), الطائرةُ أَسْرَعُ مِن القطارِ (The plane is faster than the train). An important rule: the أَفْعَل comparative form does not change for gender or number — it stays the same whether the subject is masculine, feminine, singular, or plural. So you say هيَ أَكْبَرُ مِن أختِها (She is older than her sister) using the same أَكْبَر.",
+      "tip": "The structure is always X أَفْعَل مِن Y — never change the أَفْعَل form to match gender or number. It stays fixed. Think of مِن here as 'than', not its usual meaning of 'from'.",
+      "examples": [
+        {
+          "ar": "أحمدُ أَكْبَرُ مِن عليٍّ",
+          "en": "Ahmad is older/bigger than Ali.",
+          "highlight": "أَكْبَرُ مِن"
+        },
+        {
+          "ar": "القاهرةُ أَكْبَرُ مِن بيروتَ",
+          "en": "Cairo is bigger than Beirut.",
+          "highlight": "أَكْبَرُ مِن"
+        },
+        {
+          "ar": "الطائرةُ أَسْرَعُ مِن القطارِ",
+          "en": "The plane is faster than the train.",
+          "highlight": "أَسْرَعُ مِن"
+        },
+        {
+          "ar": "هيَ أَطْوَلُ مِن أختِها",
+          "en": "She is taller than her sister. — أَطْوَل does not change for feminine",
+          "highlight": "أَطْوَلُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Ali is taller than Khaled' in Arabic?",
+          "options": [
+            "عليٌّ أَطْوَلُ مِن خالدٍ",
+            "عليٌّ طَويلٌ مِن خالدٍ",
+            "عليٌّ مِن أَطْوَلُ خالدٍ"
+          ],
+          "correctIndex": 0,
+          "explanation": "The correct structure is X أَفْعَل مِن Y. So: عليٌّ أَطْوَلُ مِن خالدٍ. You must use the comparative form أَطْوَل, not the base adjective طَويل."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Does the أَفْعَل comparative form change when the subject is feminine?",
+          "options": [
+            "Yes, it takes a تاء مربوطة (ة)",
+            "No, it stays the same regardless of gender or number",
+            "Yes, it changes to the فُعْلى pattern"
+          ],
+          "correctIndex": 1,
+          "explanation": "In comparative sentences with مِن, the أَفْعَل form is invariable — it does not change for gender or number. You say هيَ أَكْبَرُ مِن... just like هوَ أَكْبَرُ مِن..."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does مِن mean in the sentence الكتابُ أَثْقَلُ مِن الدفترِ?",
+          "options": [
+            "from",
+            "than",
+            "with"
+          ],
+          "correctIndex": 1,
+          "explanation": "In comparative sentences, مِن means 'than'. The sentence means 'The book is heavier than the notebook.' Outside of comparisons, مِن usually means 'from'."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlative-definite",
+      "title": "Superlative with the Definite Article",
+      "explanation": "The same أَفْعَل form becomes a superlative ('the most', 'the -est') when you add the definite article ال. So أَكْبَر means 'bigger', but الأَكْبَر means 'the biggest'. Similarly: الأَجْمَل (the most beautiful), الأَصْغَر (the smallest), الأَسْرَع (the fastest). With the definite article, the superlative agrees in gender with the noun it describes: الأَكْبَر (masculine) and الكُبْرى (feminine). For example: المسجدُ الأَكْبَرُ (the biggest mosque, masculine) and الجامعةُ الكُبْرى (the biggest university, feminine).",
+      "tip": "Adding ال to the أَفْعَل form turns it from comparative to superlative. The definite superlative does agree in gender, unlike the comparative with مِن: masculine الأَفْعَل, feminine الفُعْلى.",
+      "examples": [
+        {
+          "ar": "الأَكْبَر",
+          "en": "the biggest (masculine)",
+          "highlight": "الأَكْبَر"
+        },
+        {
+          "ar": "الكُبْرى",
+          "en": "the biggest (feminine) — فُعْلى pattern",
+          "highlight": "الكُبْرى"
+        },
+        {
+          "ar": "هذا هو المسجدُ الأَكْبَرُ",
+          "en": "This is the biggest mosque.",
+          "highlight": "الأَكْبَرُ"
+        },
+        {
+          "ar": "هذهِ هيَ الجامعةُ الكُبْرى",
+          "en": "This is the biggest university. — feminine superlative الكُبْرى",
+          "highlight": "الكُبْرى"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the most beautiful' (masculine) in Arabic?",
+          "options": [
+            "أَجْمَل",
+            "الأَجْمَل",
+            "جَميلٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Adding the definite article ال to the comparative أَجْمَل creates the superlative الأَجْمَل (the most beautiful). Without ال, أَجْمَل is comparative ('more beautiful')."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the feminine superlative form of أَكْبَر?",
+          "options": [
+            "الأَكْبَرة",
+            "الكُبْرى",
+            "الأَكْبَر (same form)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The feminine superlative uses the فُعْلى pattern: الكُبْرى. You do not add ة to the أَفْعَل form. Common pairs: الأَكْبَر/الكُبْرى, الأَصْغَر/الصُّغْرى."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence correctly uses the superlative to say 'This is the fastest car'?",
+          "options": [
+            "هذهِ السيّارةُ أَسْرَعُ مِن",
+            "هذهِ هيَ السيّارةُ الأَسْرَعُ",
+            "هذهِ سيّارةٌ سَريعةٌ"
+          ],
+          "correctIndex": 1,
+          "explanation": "The superlative is formed by using ال + أَفْعَل as an adjective after a definite noun: السيّارةُ الأَسْرَعُ (the fastest car). The first option is an incomplete comparative, and the third is just 'a fast car'."
+        }
+      ]
+    },
+    {
+      "sectionId": "superlative-idafa",
+      "title": "Superlative in إضافة (Construct State)",
+      "explanation": "Another very common way to express the superlative is using an إضافة (possessive/construct) structure: أَفْعَل + indefinite noun. In this construction, the أَفْعَل form comes first WITHOUT ال, followed by an indefinite singular noun. For example: أَكْبَرُ مدينةٍ (the biggest city, literally 'biggest of a city'), أَجْمَلُ بيتٍ (the most beautiful house), أَطْوَلُ نهرٍ (the longest river). Even though the noun after أَفْعَل is singular and indefinite, the whole phrase has a definite superlative meaning. This is one of the most frequently used superlative constructions in both spoken and written Arabic.",
+      "tip": "The إضافة superlative is very common in everyday Arabic. Remember: أَفْعَل (no ال) + singular indefinite noun = superlative meaning. أَكْبَرُ مدينةٍ literally means 'the biggest of cities' but translates as 'the biggest city'.",
+      "examples": [
+        {
+          "ar": "أَكْبَرُ مدينةٍ",
+          "en": "the biggest city — إضافة superlative",
+          "highlight": "أَكْبَرُ مدينةٍ"
+        },
+        {
+          "ar": "أَجْمَلُ بيتٍ في الشارعِ",
+          "en": "the most beautiful house on the street",
+          "highlight": "أَجْمَلُ بيتٍ"
+        },
+        {
+          "ar": "أَطْوَلُ نهرٍ في العالمِ",
+          "en": "the longest river in the world",
+          "highlight": "أَطْوَلُ نهرٍ"
+        },
+        {
+          "ar": "أَحْسَنُ طالبٍ في الصفِّ",
+          "en": "the best student in the class",
+          "highlight": "أَحْسَنُ طالبٍ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the biggest city' using the إضافة construction?",
+          "options": [
+            "المدينةُ الكُبْرى",
+            "أَكْبَرُ مدينةٍ",
+            "مدينةٌ أَكْبَرُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "In the إضافة superlative, أَفْعَل (without ال) is followed by an indefinite singular noun: أَكْبَرُ مدينةٍ. Note that المدينةُ الكُبْرى is also correct but uses the definite-article superlative method instead."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the إضافة superlative أَطْوَلُ نهرٍ, should أَطْوَل have the definite article ال?",
+          "options": [
+            "Yes, it should be الأَطْوَلُ نهرٍ",
+            "No, the first term of إضافة never takes ال",
+            "Either way is correct"
+          ],
+          "correctIndex": 1,
+          "explanation": "In an إضافة construction, the first noun (المُضاف) never takes the definite article ال. So it must be أَطْوَلُ نهرٍ, not الأَطْوَلُ نهرٍ."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct way to say 'the fastest train in the country'?",
+          "options": [
+            "أَسْرَعُ قطارٍ في البلادِ",
+            "أَسْرَعُ القطارِ في البلادِ",
+            "قطارٌ أَسْرَعُ في البلادِ"
+          ],
+          "correctIndex": 0,
+          "explanation": "The إضافة superlative requires an indefinite noun after أَفْعَل: أَسْرَعُ قطارٍ في البلادِ. The second option wrongly makes قطار definite, and the third puts the adjective after the noun without a superlative structure."
+        }
+      ]
+    },
+    {
+      "sectionId": "irregular-comparatives",
+      "title": "Irregular Comparatives",
+      "explanation": "Most Arabic adjectives follow the regular أَفْعَل pattern, but a few common adjectives have comparatives that should be memorized separately. خَيْر (better, from جَيِّد 'good') and شَرّ (worse, from سَيِّئ 'bad') do not follow the أَفْعَل pattern — they are remnants of older forms. However, أَحْسَن (better, from حَسَن 'good/nice') and أَسْوَأ (worse, from سَيِّئ 'bad') are also widely used and do follow the regular pattern. In practice, أَحْسَن is extremely common in spoken Arabic for 'better' and 'best'. Other useful comparatives: أَكْثَر (more, from كَثير 'much/many'), أَقَلّ (less/fewer, from قَليل 'few/little'), and أَفْضَل (better/preferred, from فاضِل 'virtuous').",
+      "tip": "For 'better', you have three options: خَيْر (classical), أَحْسَن (very common in spoken Arabic), and أَفْضَل (more formal, 'preferred'). For 'worse': شَرّ (classical) or أَسْوَأ (regular pattern). Learn أَحْسَن and أَفْضَل first — they are the most useful.",
+      "examples": [
+        {
+          "ar": "خَيْر / أَحْسَن / أَفْضَل",
+          "en": "better (classical / common / formal) — three ways to say 'better'",
+          "highlight": "أَحْسَن"
+        },
+        {
+          "ar": "شَرّ / أَسْوَأ",
+          "en": "worse (classical / regular pattern)",
+          "highlight": "أَسْوَأ"
+        },
+        {
+          "ar": "هذا أَحْسَنُ مِن ذلكَ",
+          "en": "This is better than that.",
+          "highlight": "أَحْسَنُ مِن"
+        },
+        {
+          "ar": "أَكْثَرُ الناسِ",
+          "en": "most people — أَكْثَر (more/most) in إضافة",
+          "highlight": "أَكْثَرُ"
+        },
+        {
+          "ar": "أَقَلُّ أهمّيّةً",
+          "en": "less important (literally: less in importance) — أَقَلّ (less/fewer)",
+          "highlight": "أَقَلُّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a common way to say 'better' in Arabic?",
+          "options": [
+            "أَكْبَر",
+            "أَحْسَن",
+            "أَصْغَر"
+          ],
+          "correctIndex": 1,
+          "explanation": "أَحْسَن means 'better' and is one of the most common comparatives in Arabic. أَكْبَر means 'bigger' and أَصْغَر means 'smaller'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The word خَيْر (better) is considered irregular because:",
+          "options": [
+            "It follows the فُعْلى pattern",
+            "It does not follow the regular أَفْعَل pattern",
+            "It can only be used with feminine nouns"
+          ],
+          "correctIndex": 1,
+          "explanation": "خَيْر is irregular because it does not follow the standard أَفْعَل comparative pattern. It is a classical form that has survived in modern Arabic alongside the regular form أَحْسَن."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'This is worse than that' using the regular pattern?",
+          "options": [
+            "هذا أَسْوَأُ مِن ذلكَ",
+            "هذا شَرٌّ ذلكَ",
+            "هذا سَيِّئٌ مِن ذلكَ"
+          ],
+          "correctIndex": 0,
+          "explanation": "The regular comparative of سَيِّئ (bad) is أَسْوَأ (worse). Using the standard comparative structure: هذا أَسْوَأُ مِن ذلكَ (This is worse than that). سَيِّئ is the base adjective and cannot be used in a comparative sentence directly."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does أَكْثَرُ الناسِ mean?",
+          "options": [
+            "The biggest people",
+            "Most people / the majority of people",
+            "More than people"
+          ],
+          "correctIndex": 1,
+          "explanation": "أَكْثَر means 'more' or 'most' (from كَثير, many/much). In the إضافة construction أَكْثَرُ الناسِ, it means 'most people' or 'the majority of people'."
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import definiteArticleLesson from './definite-article.json';
 import nounsGenderLesson from './nouns-gender.json';
 import pronounsLesson from './pronouns.json';
 import presentTenseLesson from './present-tense.json';
+import imperativeLesson from './imperative.json';
 import pastTenseLesson from './past-tense.json';
 import adjectivesLesson from './adjectives.json';
 import numbersTimeLesson from './numbers-time.json';
@@ -18,6 +19,10 @@ import passiveVoiceLesson from './passive-voice.json';
 import conditionalLesson from './conditional.json';
 import relativeClausesLesson from './relative-clauses.json';
 import idiomaticExpressionsLesson from './idiomatic-expressions.json';
+import caseSystemLesson from './case-system.json';
+import comparisonLesson from './comparison.json';
+import weakVerbsLesson from './weak-verbs.json';
+import emphasisParticlesLesson from './emphasis-particles.json';
 
 export const GRAMMAR_LESSONS_AR = [
   alphabetLesson,
@@ -25,6 +30,7 @@ export const GRAMMAR_LESSONS_AR = [
   nounsGenderLesson,
   pronounsLesson,
   presentTenseLesson,
+  imperativeLesson,
   pastTenseLesson,
   adjectivesLesson,
   numbersTimeLesson,
@@ -40,4 +46,8 @@ export const GRAMMAR_LESSONS_AR = [
   conditionalLesson,
   relativeClausesLesson,
   idiomaticExpressionsLesson,
+  caseSystemLesson,
+  comparisonLesson,
+  weakVerbsLesson,
+  emphasisParticlesLesson,
 ];

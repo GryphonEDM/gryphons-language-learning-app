@@ -18,6 +18,7 @@ import conditionalLesson from './conditional.json';
 import subjunctiveImperativeLesson from './subjunctive-imperative.json';
 import complexSentencesLesson from './complex-sentences.json';
 import idiomaticExpressionsLesson from './idiomatic-expressions.json';
+import reflexiveLesson from './reflexive.json';
 
 export const GRAMMAR_LESSONS_HI = [
   alphabetLesson,
@@ -40,4 +41,5 @@ export const GRAMMAR_LESSONS_HI = [
   subjunctiveImperativeLesson,
   complexSentencesLesson,
   idiomaticExpressionsLesson,
+  reflexiveLesson,
 ];

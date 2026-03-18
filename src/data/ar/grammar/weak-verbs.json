@@ -1,0 +1,341 @@
+{
+  "lessonId": "weak-verbs",
+  "nameEn": "Weak Verbs (الأفعال المعتلة)",
+  "nameAr": "الأفعال المعتلة",
+  "icon": "🔀",
+  "tier": "B1",
+  "prerequisites": [
+    "past-tense",
+    "present-tense",
+    "verb-forms"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "what-are-weak-verbs",
+      "title": "What Are Weak Verbs?",
+      "explanation": "In Arabic, most verbs have three root consonants that stay stable across all conjugations — these are called 'sound verbs' (أفعال صحيحة). However, when one of the three root letters is و (wāw), ي (yāʾ), or ء (hamza), the verb is called a 'weak verb' (فعل معتل). These letters are called 'weak letters' (حروف العلّة) because they tend to change, drop, or transform during conjugation. Weak verbs are extremely common — words like قَالَ (he said), مَشَى (he walked), وَصَلَ (he arrived), and مَدَّ (he extended) are all weak verbs. Understanding their patterns is essential for intermediate Arabic. Weak verbs are classified by which position the weak letter occupies: first (مثال), middle (أجوف), or final (ناقص). There are also doubled verbs (مضاعف) where the second and third root letters are the same.",
+      "tip": "Think of the root as a skeleton. In sound verbs like كَتَبَ (k-t-b), the skeleton never changes. In weak verbs, part of the skeleton is 'soft' — it bends, shortens, or disappears depending on the form.",
+      "examples": [
+        {
+          "ar": "قَالَ — root: ق و ل",
+          "en": "he said — the middle root letter و is weak (hollow verb)",
+          "highlight": "قَالَ"
+        },
+        {
+          "ar": "مَشَى — root: م ش ي",
+          "en": "he walked — the final root letter ي is weak (defective verb)",
+          "highlight": "مَشَى"
+        },
+        {
+          "ar": "وَصَلَ — root: و ص ل",
+          "en": "he arrived — the first root letter و is weak (assimilated verb)",
+          "highlight": "وَصَلَ"
+        },
+        {
+          "ar": "مَدَّ — root: م د د",
+          "en": "he extended — second and third root letters are the same (doubled verb)",
+          "highlight": "مَدَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is the verb قَالَ (he said) classified as a weak verb?",
+          "options": [
+            "Because it has an irregular meaning",
+            "Because one of its root letters (و) is a weak letter",
+            "Because it is rarely used"
+          ],
+          "correctIndex": 1,
+          "explanation": "قَالَ has the root ق-و-ل. The middle letter و is a 'weak letter' (حرف علّة), making this a weak verb. Weak letters (و, ي, ء) tend to change or drop during conjugation."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of the following are the 'weak letters' (حروف العلّة) in Arabic?",
+          "options": [
+            "ب، ت، ث",
+            "و، ي، ء",
+            "ك، ل، م"
+          ],
+          "correctIndex": 1,
+          "explanation": "The weak letters are و (wāw), ي (yāʾ), and ء (hamza). When any of these appears as a root letter, the verb is classified as weak because these letters undergo changes during conjugation."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb كَتَبَ (he wrote, root ك-ت-ب) is a sound verb, not a weak verb. Why?",
+          "options": [
+            "Because it is a common verb",
+            "Because none of its root letters is و, ي, or ء",
+            "Because it follows a regular pattern"
+          ],
+          "correctIndex": 1,
+          "explanation": "كَتَبَ has the root ك-ت-ب — all three root letters are strong consonants, none of them is و, ي, or ء. Therefore it is a sound verb (فعل صحيح) whose root letters remain stable in all conjugations."
+        }
+      ]
+    },
+    {
+      "sectionId": "hollow-verbs",
+      "title": "Hollow Verbs (الفعل الأجوف)",
+      "explanation": "A hollow verb (أجوف) has و or ي as its middle root letter. The name 'hollow' reflects how the middle of the verb is 'soft' and changes. In the past tense, the long vowel appears in the he/she forms but shortens or disappears when a consonant-initial suffix is added. For example, قَالَ (he said, root ق-و-ل) becomes قُلْتُ (I said) — the long ا disappears and a ضمّة appears on the ق. Similarly, نَامَ (he slept, root ن-و-م) becomes نِمْتُ (I slept), and زَارَ (he visited, root ز-و-ر) becomes زُرْتُ (I visited). In the present tense, these verbs show a long vowel in the middle: يَقُولُ (he says), يَنَامُ (he sleeps), يَزُورُ (he visits). The key pattern: when a suffix starting with a consonant is added (like ـتُ, ـنا), the middle vowel shortens.",
+      "tip": "For hollow verbs in the past tense, memorize both the 'he' form (with long vowel) and the 'I' form (with short vowel). The 'I' form reveals the underlying root vowel: قُلْتُ tells you the root has و (ضمّة), while بِعْتُ tells you the root has ي (كسرة).",
+      "examples": [
+        {
+          "ar": "قَالَ / يَقُولُ / قُلْتُ",
+          "en": "he said / he says / I said — root ق-و-ل",
+          "highlight": "قَالَ"
+        },
+        {
+          "ar": "نَامَ / يَنَامُ / نِمْتُ",
+          "en": "he slept / he sleeps / I slept — root ن-و-م",
+          "highlight": "نَامَ"
+        },
+        {
+          "ar": "زَارَ / يَزُورُ / زُرْتُ",
+          "en": "he visited / he visits / I visited — root ز-و-ر",
+          "highlight": "زَارَ"
+        },
+        {
+          "ar": "بَاعَ / يَبِيعُ / بِعْتُ",
+          "en": "he sold / he sells / I sold — root ب-ي-ع",
+          "highlight": "بَاعَ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb قَالَ (he said) has the root ق-و-ل. How do you say 'I said'?",
+          "options": [
+            "قَالْتُ",
+            "قُلْتُ",
+            "قَوَلْتُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "In hollow verbs, when a consonant-initial suffix is added, the long vowel disappears. قَالَ becomes قُلْتُ (qultu) — the alif drops and a ضمّة appears on the ق, reflecting the underlying و root letter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense of نَامَ (he slept, root ن-و-م)?",
+          "options": [
+            "يَنْوَمُ",
+            "يَنَامُ",
+            "يَنُومُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "The present tense of نَامَ is يَنَامُ (yanāmu, he sleeps). The middle weak letter manifests as a long ا vowel in the present tense for this verb pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'we visited' from the verb زَارَ (he visited)?",
+          "options": [
+            "زُرْنا",
+            "زَارْنا",
+            "زَوَرْنا"
+          ],
+          "correctIndex": 0,
+          "explanation": "Just like قَالَ → قُلْتُ, the verb زَارَ loses its long vowel when a consonant suffix is added: زَارَ → زُرْنا (zurnā, we visited). The ضمّة on the ز reflects the و root letter."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb بَاعَ (he sold) becomes بِعْتُ (I sold). The كسرة on the ب tells you the middle root letter is:",
+          "options": [
+            "و (wāw)",
+            "ي (yāʾ)",
+            "ا (alif)"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the 'I' form has a كسرة (as in بِعْتُ), it signals that the middle root letter is ي. Compare: قُلْتُ has ضمّة → root و; بِعْتُ has كسرة → root ي. The root of بَاعَ is ب-ي-ع."
+        }
+      ]
+    },
+    {
+      "sectionId": "defective-verbs",
+      "title": "Defective Verbs (الفعل الناقص)",
+      "explanation": "A defective verb (ناقص) has و or ي as its final root letter. The name 'defective' refers to the final letter being 'incomplete' — it often changes form or drops entirely. In the past tense third person masculine, these verbs end in ـَى or ـَا: مَشَى (he walked, root م-ش-ي), دَعَا (he called/invited, root د-ع-و), بَنَى (he built, root ب-ن-ي), رَمَى (he threw, root ر-م-ي). When conjugating with suffixes, the final weak letter drops before consonant suffixes: مَشَيْتُ (I walked), دَعَوْتُ (I called). In the present tense, these verbs end in ـِي or ـُو: يَمْشِي (he walks), يَدْعُو (he calls). The ي or و drops in the feminine forms and the jussive mood: لَمْ يَمْشِ (he did not walk).",
+      "tip": "Verbs ending in ـَى (like مَشَى, بَنَى, رَمَى) typically have ي as the final root. Verbs ending in ـَا (like دَعَا) typically have و as the final root. This spelling difference is a helpful clue to the underlying root.",
+      "examples": [
+        {
+          "ar": "مَشَى / يَمْشِي / مَشَيْتُ",
+          "en": "he walked / he walks / I walked — root م-ش-ي",
+          "highlight": "مَشَى"
+        },
+        {
+          "ar": "دَعَا / يَدْعُو / دَعَوْتُ",
+          "en": "he called / he calls / I called — root د-ع-و",
+          "highlight": "دَعَا"
+        },
+        {
+          "ar": "بَنَى / يَبْنِي / بَنَيْتُ",
+          "en": "he built / he builds / I built — root ب-ن-ي",
+          "highlight": "بَنَى"
+        },
+        {
+          "ar": "رَمَى / يَرْمِي / رَمَيْتُ",
+          "en": "he threw / he throws / I threw — root ر-م-ي",
+          "highlight": "رَمَى"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I walked' from the verb مَشَى (he walked, root م-ش-ي)?",
+          "options": [
+            "مَشَيْتُ",
+            "مَشَاتُ",
+            "مَشَى تُ"
+          ],
+          "correctIndex": 0,
+          "explanation": "When adding the suffix ـتُ to a defective verb with final ي, the ي reappears: مَشَى → مَشَيْتُ (mashaytu, I walked). The alif maqṣūra (ى) in the base form is really a ي in disguise."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb دَعَا (he called) ends in ا, suggesting its final root letter is:",
+          "options": [
+            "ي (yāʾ)",
+            "و (wāw)",
+            "ا (alif)"
+          ],
+          "correctIndex": 1,
+          "explanation": "When a defective verb is spelled with a final ا (tall alif), the final root letter is usually و. The root of دَعَا is د-ع-و. Compare: مَشَى is spelled with ى (alif maqṣūra), signaling a final ي root (م-ش-ي)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense ('he' form) of بَنَى (he built, root ب-ن-ي)?",
+          "options": [
+            "يَبْنَى",
+            "يَبْنِي",
+            "يَبْنُو"
+          ],
+          "correctIndex": 1,
+          "explanation": "Since the final root letter is ي, the present tense ends in ـِي: يَبْنِي (yabnī, he builds). Verbs with final و would end in ـُو instead: يَدْعُو (he calls)."
+        }
+      ]
+    },
+    {
+      "sectionId": "assimilated-verbs",
+      "title": "Assimilated Verbs (الفعل المثال)",
+      "explanation": "An assimilated verb (مثال) has و as its first root letter. These verbs are called 'assimilated' because the initial و often drops (is assimilated away) in the present tense. In the past tense, these verbs conjugate normally: وَصَلَ (he arrived, root و-ص-ل), وَجَدَ (he found, root و-ج-د), وَقَعَ (he fell/happened, root و-ق-ع), وَعَدَ (he promised, root و-ع-د). However, in the present tense, the initial و drops: يَصِلُ (he arrives) not *يَوْصِلُ, يَجِدُ (he finds) not *يَوْجِدُ, يَقَعُ (he falls) not *يَوْقَعُ, يَعِدُ (he promises) not *يَوْعِدُ. This dropping of و is one of the most consistent rules in Arabic — nearly all Form I verbs with initial و lose it in the present tense.",
+      "tip": "When you see a present-tense verb that seems to have only two root letters showing (like يَصِلُ), suspect a dropped initial و. Adding it back gives you the root: و-ص-ل. This is key for dictionary lookups.",
+      "examples": [
+        {
+          "ar": "وَصَلَ / يَصِلُ",
+          "en": "he arrived / he arrives — the و drops in present tense",
+          "highlight": "يَصِلُ"
+        },
+        {
+          "ar": "وَجَدَ / يَجِدُ",
+          "en": "he found / he finds — root و-ج-د",
+          "highlight": "يَجِدُ"
+        },
+        {
+          "ar": "وَقَعَ / يَقَعُ",
+          "en": "he fell, it happened / it happens — root و-ق-ع",
+          "highlight": "يَقَعُ"
+        },
+        {
+          "ar": "وَعَدَ / يَعِدُ",
+          "en": "he promised / he promises — root و-ع-د",
+          "highlight": "يَعِدُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense of وَصَلَ (he arrived)?",
+          "options": [
+            "يَوْصِلُ",
+            "يَصِلُ",
+            "يُوَصِّلُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "In assimilated verbs, the initial و drops in the present tense. So وَصَلَ becomes يَصِلُ (yaṣilu, he arrives), not *يَوْصِلُ. This is a consistent pattern for Form I verbs with initial و."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You encounter the present-tense verb يَجِدُ (he finds). What is its past-tense form?",
+          "options": [
+            "جَدَ",
+            "وَجَدَ",
+            "أَجَدَ"
+          ],
+          "correctIndex": 1,
+          "explanation": "When a present-tense verb seems to be missing a root letter, suspect a dropped initial و. يَجِدُ → root و-ج-د → past tense وَجَدَ (wajada, he found). The و reappears in the past tense."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these assimilated verbs does NOT drop its و in the present tense?",
+          "options": [
+            "وَصَلَ → يَصِلُ",
+            "وَقَعَ → يَقَعُ",
+            "All of these drop the و in the present tense"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nearly all Form I assimilated verbs drop the initial و in the present tense. وَصَلَ → يَصِلُ, وَجَدَ → يَجِدُ, وَقَعَ → يَقَعُ, وَعَدَ → يَعِدُ — the و drops in every case."
+        }
+      ]
+    },
+    {
+      "sectionId": "doubled-verbs",
+      "title": "Doubled Verbs (الفعل المضاعف)",
+      "explanation": "A doubled verb (مضاعف) has the same letter as both its second and third root letter. In the base form, these two identical letters merge into one with a شدّة: مَدَّ (he extended, root م-د-د), عَدَّ (he counted, root ع-د-د), حَلَّ (he solved, root ح-ل-ل), رَدَّ (he returned/replied, root ر-د-د), ظَنَّ (he thought, root ظ-ن-ن). The contraction (إدغام) only happens when the two identical letters are adjacent. When a vowel-initial suffix separates them, they stay apart: مَدَّ (he extended) but مَدَدْتُ (I extended), مَدَدْنا (we extended). When the suffix starts with a vowel and the letters remain adjacent, the contraction stays: مَدُّوا (they extended). In the present tense: يَمُدُّ (he extends), يَعُدُّ (he counts), يَحُلُّ (he solves).",
+      "tip": "The key rule for doubled verbs: the two identical letters merge (with شدّة) when they are next to each other, but separate when a consonant comes between them. So مَدَّ → مَدَدْتُ (the ت forces them apart) but يَمُدُّ (they stay together).",
+      "examples": [
+        {
+          "ar": "مَدَّ / يَمُدُّ / مَدَدْتُ",
+          "en": "he extended / he extends / I extended — root م-د-د",
+          "highlight": "مَدَّ"
+        },
+        {
+          "ar": "عَدَّ / يَعُدُّ / عَدَدْتُ",
+          "en": "he counted / he counts / I counted — root ع-د-د",
+          "highlight": "عَدَّ"
+        },
+        {
+          "ar": "حَلَّ / يَحُلُّ / حَلَلْتُ",
+          "en": "he solved / he solves / I solved — root ح-ل-ل",
+          "highlight": "حَلَّ"
+        },
+        {
+          "ar": "رَدَّ / يَرُدُّ / رَدَدْتُ",
+          "en": "he replied / he replies / I replied — root ر-د-د",
+          "highlight": "رَدَّ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "The verb مَدَّ (he extended) has the root م-د-د. How do you say 'I extended'?",
+          "options": [
+            "مَدَّتُ",
+            "مَدَدْتُ",
+            "مَدْتُ"
+          ],
+          "correctIndex": 1,
+          "explanation": "When adding the suffix ـتُ (which starts with a consonant), the two identical letters separate: مَدَّ → مَدَدْتُ (madadtu, I extended). The consonant ت forces the two دs apart."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the present tense ('he' form) of عَدَّ (he counted)?",
+          "options": [
+            "يَعْدِدُ",
+            "يَعُدُّ",
+            "يَعَدُّ"
+          ],
+          "correctIndex": 1,
+          "explanation": "In the present tense, the two identical letters stay merged: يَعُدُّ (yaʿuddu, he counts). The شدّة on the final letter shows the contraction of the two دs."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does مَدَّ become مَدَدْنا (we extended) but stay as مَدُّوا (they extended)?",
+          "options": [
+            "The feminine always separates the letters",
+            "The suffix ـنا starts with a consonant (forcing separation), while ـوا starts with a vowel (allowing contraction)",
+            "It is an irregular exception"
+          ],
+          "correctIndex": 1,
+          "explanation": "The contraction rule: identical letters merge when adjacent, but a consonant-initial suffix (ـنا, ـتُ, ـتُم) forces them apart. A vowel-initial suffix (ـوا) keeps them together: مَدُّوا. This is a regular phonological rule, not an exception."
+        }
+      ]
+    }
+  ]
+}

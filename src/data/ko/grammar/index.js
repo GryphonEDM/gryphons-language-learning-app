@@ -18,6 +18,10 @@ import formalSpeechLesson from './formal-speech.json';
 import conditionalAdvancedLesson from './conditional-advanced.json';
 import complexExpressionsLesson from './complex-expressions.json';
 import idiomaticExpressionsLesson from './idiomatic-expressions.json';
+import countersLesson from './counters.json';
+import negationLesson from './negation.json';
+import comparisonLesson from './comparison.json';
+import progressiveAspectLesson from './progressive-aspect.json';
 
 export const GRAMMAR_LESSONS_KO = [
   hangulBasicsLesson,
@@ -40,4 +44,8 @@ export const GRAMMAR_LESSONS_KO = [
   conditionalAdvancedLesson,
   complexExpressionsLesson,
   idiomaticExpressionsLesson,
+  countersLesson,
+  negationLesson,
+  comparisonLesson,
+  progressiveAspectLesson,
 ];

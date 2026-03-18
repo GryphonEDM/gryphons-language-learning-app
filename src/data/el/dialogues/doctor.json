@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameEl": "Στον Γιατρό",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Athens. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Γιατρός" },
+    "player": { "name": "Ασθενής" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Καλημέρα! Τι σας ενοχλεί;", "translation": "Good morning! What is troubling you?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["Έχω πονοκέφαλο και πυρετό", "Με πονάει το κεφάλι μου και έχω πυρετό", "Έχω πονοκέφαλο κι πυρετό", "Πονάει το κεφάλι μου και έχω πυρετό"], "keyWords": ["πονοκέφαλο", "πυρετό"], "hint": "Έχω πονοκέφαλο και πυρετό." },
+    { "speaker": "npc", "text": "Πόσο καιρό είστε άρρωστος;", "translation": "How long have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["Από χθες", "Από εχθές", "Από χτες", "Ξεκίνησε χθες"], "keyWords": ["χθες"], "hint": "Από χθες." },
+    { "speaker": "npc", "text": "Κατάλαβα. Έχετε άλλα συμπτώματα; Βήχα, συνάχι;", "translation": "I see. Do you have other symptoms? Cough, cold?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["Ναι, έχω και βήχα", "Ναι, βήχω επίσης", "Ναι, έχω κι βήχα", "Ναι, και βήχα"], "keyWords": ["Ναι", "βήχα"], "hint": "Ναι, έχω και βήχα." },
+    { "speaker": "npc", "text": "Θα σας γράψω φάρμακο. Πάρτε το τρεις φορές τη μέρα μετά το φαγητό.", "translation": "I will prescribe medication. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["Χρειάζεται να ξαναέρθω;", "Πρέπει να επιστρέψω;", "Να ξαναέρθω;", "Χρειάζεται επανεξέταση;"], "keyWords": ["ξαναέρθω"], "hint": "Χρειάζεται να ξαναέρθω;" },
+    { "speaker": "npc", "text": "Ναι, ελάτε ξανά σε μια εβδομάδα. Αν χειροτερέψει, τηλεφωνήστε αμέσως.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["Ευχαριστώ, γιατρέ", "Σας ευχαριστώ, γιατρέ", "Ευχαριστώ πολύ, γιατρέ", "Ευχαριστώ!"], "keyWords": ["Ευχαριστώ"], "hint": "Ευχαριστώ, γιατρέ." }
+  ]
+}

@@ -7,6 +7,9 @@ import weatherData from '../data/vocabulary/themes/weather.json';
 import travelData from '../data/vocabulary/themes/travel.json';
 import bodyData from '../data/vocabulary/themes/body.json';
 import houseData from '../data/vocabulary/themes/house.json';
+import foodData from '../data/vocabulary/themes/food.json';
+import clothingData from '../data/vocabulary/themes/clothing.json';
+import professionsData from '../data/vocabulary/themes/professions.json';
 import comprehensiveDict from '../data/vocabulary/comprehensive-dictionary.json';
 import comprehensiveDictExt from '../data/vocabulary/comprehensive-dictionary-ext.json';
 import comprehensiveDictExt2 from '../data/vocabulary/comprehensive-dictionary-ext2.json';
@@ -32,7 +35,7 @@ import { KO_TRANSLATIONS } from '../data/ko/translations.js';
 import { ZH_TRANSLATIONS } from '../data/zh/translations.js';
 import { JA_TRANSLATIONS } from '../data/ja/translations.js';
 
-const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData];
+const THEME_DATA = [colorsData, animalsData, familyData, emotionsData, weatherData, travelData, bodyData, houseData, foodData, clothingData, professionsData];
 const COMPREHENSIVE = [comprehensiveDict, comprehensiveDictExt, comprehensiveDictExt2, comprehensiveDictExt3, comprehensiveDictExt4, comprehensiveDictExt5, comprehensiveDictExt6, comprehensiveDictExt7, comprehensiveDictExt8, comprehensiveDictExt9, comprehensiveDictExt10, comprehensiveDictExt11, comprehensiveDictExt12];
 
 // Per-category CEFR level assignment for accurate difficulty filtering

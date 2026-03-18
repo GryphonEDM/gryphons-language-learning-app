@@ -1,0 +1,351 @@
+{
+  "lessonId": "case-system",
+  "nameEn": "Case System",
+  "nameAr": "الإعراب",
+  "icon": "📐",
+  "tier": "A2",
+  "prerequisites": [
+    "nouns-gender",
+    "definite-article"
+  ],
+  "estimatedMinutes": 25,
+  "sections": [
+    {
+      "sectionId": "three-cases",
+      "title": "The Three Cases",
+      "explanation": "Arabic has three grammatical cases that show the role a noun plays in a sentence. The nominative case (مرفوع) is marked with a damma (-ُ) and is used for subjects. The accusative case (منصوب) is marked with a fatha (-َ) and is used for objects. The genitive case (مجرور) is marked with a kasra (-ِ) and is used after prepositions and in possessive constructions (إضافة). These short vowel marks appear on the last letter of the noun. For example, the word كتاب (book) can appear as كِتابٌ (nominative — a book, as subject), كِتابًا (accusative — a book, as object), or كِتابٍ (genitive — a book, after a preposition). This system is called الإعراب (iʿrāb) and is one of the defining features of Arabic grammar.",
+      "tip": "Think of the cases as answering: WHO did it? (nominative/مرفوع), WHAT was affected? (accusative/منصوب), and connected to WHAT? (genitive/مجرور). The vowel marks -ُ -َ -ِ are your guide.",
+      "examples": [
+        {
+          "ar": "جاءَ الطالبُ",
+          "en": "The student came. — الطالبُ is nominative (subject), marked with damma -ُ",
+          "highlight": "الطالبُ"
+        },
+        {
+          "ar": "قرأتُ الكتابَ",
+          "en": "I read the book. — الكتابَ is accusative (object), marked with fatha -َ",
+          "highlight": "الكتابَ"
+        },
+        {
+          "ar": "ذهبتُ إلى المدرسةِ",
+          "en": "I went to the school. — المدرسةِ is genitive (after preposition), marked with kasra -ِ",
+          "highlight": "المدرسةِ"
+        },
+        {
+          "ar": "مرفوع، منصوب، مجرور",
+          "en": "nominative, accusative, genitive — the three case names in Arabic",
+          "highlight": "مرفوع"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How many grammatical cases does Arabic have?",
+          "options": [
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "correctIndex": 1,
+          "explanation": "Arabic has three cases: nominative (مرفوع), accusative (منصوب), and genitive (مجرور). Each is marked by a different short vowel on the last letter of the noun."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which short vowel marks the nominative case (مرفوع)?",
+          "options": [
+            "Fatha (-َ)",
+            "Kasra (-ِ)",
+            "Damma (-ُ)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The nominative case is marked with damma (-ُ). It appears on the last letter of the noun when it serves as the subject of the sentence."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence قرأتُ الكتابَ (I read the book), why does الكتاب have a fatha (-َ)?",
+          "options": [
+            "Because it is the subject",
+            "Because it is the object (accusative/منصوب)",
+            "Because it follows a preposition"
+          ],
+          "correctIndex": 1,
+          "explanation": "الكتابَ is the direct object of the verb قرأتُ (I read). Direct objects take the accusative case (منصوب), which is marked with fatha (-َ)."
+        }
+      ]
+    },
+    {
+      "sectionId": "tanwin-vs-definite",
+      "title": "Tanwīn and Definite Marking",
+      "explanation": "The case endings have two forms depending on whether the noun is definite or indefinite. Indefinite nouns receive tanwīn (تنوين) — a doubled version of the case vowel that adds an '-n' sound: -ٌ (un), -ً (an), -ٍ (in). Definite nouns (those with the article ال or in an إضافة construction) receive the simple vowel without the 'n': -ُ (u), -َ (a), -ِ (i). For example, كِتابٌ means 'a book' (indefinite nominative with tanwīn), while الكِتابُ means 'the book' (definite nominative without tanwīn). Note that the accusative tanwīn -ً is usually written on an extra alif: كِتابًا. This alif is a spelling convention and is not pronounced separately.",
+      "tip": "Simple rule: if the noun has ال (the), use the plain vowel (-ُ -َ -ِ). If the noun has no ال and is indefinite, double the vowel to get tanwīn (-ٌ -ً -ٍ). The tanwīn adds an 'n' sound: kitābun, kitāban, kitābin.",
+      "examples": [
+        {
+          "ar": "كِتابٌ / الكِتابُ",
+          "en": "a book (indefinite, tanwīn -ٌ) / the book (definite, plain -ُ) — both nominative",
+          "highlight": "ٌ"
+        },
+        {
+          "ar": "كِتابًا / الكِتابَ",
+          "en": "a book (indefinite, tanwīn -ً) / the book (definite, plain -َ) — both accusative",
+          "highlight": "ً"
+        },
+        {
+          "ar": "كِتابٍ / الكِتابِ",
+          "en": "a book (indefinite, tanwīn -ٍ) / the book (definite, plain -ِ) — both genitive",
+          "highlight": "ٍ"
+        },
+        {
+          "ar": "رأيتُ طالبًا",
+          "en": "I saw a student. — indefinite accusative with tanwīn -ً and alif seat",
+          "highlight": "طالبًا"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is tanwīn (تنوين)?",
+          "options": [
+            "The definite article ال",
+            "A doubled case vowel on indefinite nouns that adds an '-n' sound",
+            "A mark that removes the case ending"
+          ],
+          "correctIndex": 1,
+          "explanation": "Tanwīn is the doubling of a case vowel on indefinite nouns, producing an 'n' sound at the end: -ٌ (un), -ً (an), -ٍ (in). It only appears on indefinite nouns — nouns with ال do not take tanwīn."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is correct for 'a book' as the subject of a sentence?",
+          "options": [
+            "كِتابٌ (with tanwīn damma)",
+            "الكِتابٌ (with ال and tanwīn)",
+            "كِتابٍ (with tanwīn kasra)"
+          ],
+          "correctIndex": 0,
+          "explanation": "An indefinite subject takes tanwīn damma (-ٌ). كِتابٌ is correct. You never combine ال with tanwīn — a noun is either definite (ال + plain vowel) or indefinite (tanwīn)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why is there an extra alif (ا) in كِتابًا?",
+          "options": [
+            "It changes the meaning of the word",
+            "It is a spelling convention for the accusative tanwīn -ً",
+            "It marks the genitive case"
+          ],
+          "correctIndex": 1,
+          "explanation": "The accusative tanwīn -ً is conventionally written on a 'seat' alif (ا) at the end of the word: كِتابًا. This alif is a spelling rule, not a separate sound. The word is pronounced 'kitāban'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How would you write 'the school' in the genitive case (after a preposition)?",
+          "options": [
+            "مدرسةٍ",
+            "المدرسةِ",
+            "المدرسةٍ"
+          ],
+          "correctIndex": 1,
+          "explanation": "المدرسة is definite (it has ال), so it takes the plain kasra (-ِ) for the genitive case: المدرسةِ. Tanwīn (-ٍ) would only be used on the indefinite form مدرسةٍ."
+        }
+      ]
+    },
+    {
+      "sectionId": "case-usage",
+      "title": "When to Use Each Case",
+      "explanation": "The nominative case (مرفوع) is used for the subject of a verbal sentence (الفاعل), the subject and predicate of a nominal sentence (المبتدأ والخبر), and the agent in passive constructions (نائب الفاعل). The accusative case (منصوب) is used for the direct object (المفعول به), adverbs of time and place (ظرف الزمان والمكان), and after certain particles like إنَّ and أنَّ. The genitive case (مجرور) is used after prepositions (في، على، إلى، من، عن، بِ، لِ) and for the second noun in an إضافة (possessive) construction. For example: الطالبُ كتبَ الدرسَ في الدفترِ (The student wrote the lesson in the notebook) — الطالبُ is nominative (subject), الدرسَ is accusative (object), الدفترِ is genitive (after في).",
+      "tip": "A handy memory aid: prepositions ALWAYS trigger the genitive case. If you see في، على، إلى، من، عن، بِ، or لِ before a noun, that noun must be مجرور (genitive) with kasra or tanwīn kasra.",
+      "examples": [
+        {
+          "ar": "الطالبُ كتبَ الدرسَ في الدفترِ",
+          "en": "The student wrote the lesson in the notebook. — subject (مرفوع), object (منصوب), after في (مجرور)",
+          "highlight": "الطالبُ"
+        },
+        {
+          "ar": "إنَّ العلمَ نورٌ",
+          "en": "Indeed, knowledge is light. — إنَّ puts العلمَ in accusative; نورٌ is the predicate in nominative",
+          "highlight": "العلمَ"
+        },
+        {
+          "ar": "ذهبتُ مِن البيتِ إلى السوقِ",
+          "en": "I went from the house to the market. — both nouns are genitive after prepositions",
+          "highlight": "البيتِ"
+        },
+        {
+          "ar": "كتابُ المعلّمِ",
+          "en": "the teacher's book — إضافة: المعلّمِ is genitive (second term of إضافة)",
+          "highlight": "المعلّمِ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence كتبَ الولدُ الرسالةَ (The boy wrote the letter), what case is الرسالةَ in?",
+          "options": [
+            "Nominative (مرفوع)",
+            "Accusative (منصوب)",
+            "Genitive (مجرور)"
+          ],
+          "correctIndex": 1,
+          "explanation": "الرسالةَ is the direct object (المفعول به) of the verb كتبَ. Direct objects take the accusative case (منصوب), marked with fatha (-َ)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "After the particle إنَّ, what case does the noun take?",
+          "options": [
+            "Nominative (مرفوع)",
+            "Accusative (منصوب)",
+            "Genitive (مجرور)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The particle إنَّ (indeed/verily) puts its subject in the accusative case. So إنَّ العلمَ نورٌ — العلمَ is accusative with fatha."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What case does a noun take after a preposition like في (in) or على (on)?",
+          "options": [
+            "Nominative (مرفوع)",
+            "Accusative (منصوب)",
+            "Genitive (مجرور)"
+          ],
+          "correctIndex": 2,
+          "explanation": "Prepositions always govern the genitive case (مجرور). Any noun following في، على، إلى، من، عن، بِ، or لِ must be in the genitive, marked with kasra (-ِ) or tanwīn kasra (-ٍ)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In كتابُ المعلّمِ (the teacher's book), why is المعلّمِ in the genitive?",
+          "options": [
+            "Because it is the subject of the sentence",
+            "Because it is the second noun in an إضافة (possessive) construction",
+            "Because it is the object of a verb"
+          ],
+          "correctIndex": 1,
+          "explanation": "In an إضافة construction, the second noun (the possessor) always takes the genitive case. المعلّمِ is genitive because it is the possessor in كتابُ المعلّمِ (the teacher's book)."
+        }
+      ]
+    },
+    {
+      "sectionId": "dual-plural-cases",
+      "title": "Case in Dual and Sound Masculine Plural",
+      "explanation": "Regular singular nouns show case through short vowels on the last letter, but dual nouns and sound masculine plurals show case through changes in their endings. The dual ending is -انِ (-āni) in the nominative and -يْنِ (-ayni) in both the accusative and genitive. For example: معلّمانِ (two teachers, nominative) vs. معلّمَيْنِ (two teachers, accusative/genitive). The sound masculine plural ending is -ونَ (-ūna) in the nominative and -ينَ (-īna) in the accusative and genitive. For example: معلّمونَ (teachers, nominative) vs. معلّمينَ (teachers, accusative/genitive). The sound feminine plural (-ات) behaves like a regular singular: -اتٌ (nominative), -اتٍ (accusative and genitive — note: accusative and genitive are the same for this plural).",
+      "tip": "For the dual, remember: -انِ for the subject, -يْنِ for everything else. For the sound masculine plural: -ونَ for the subject, -ينَ for everything else. Both follow the same 'two-way' pattern.",
+      "examples": [
+        {
+          "ar": "جاءَ المعلّمانِ",
+          "en": "The two teachers came. — dual nominative ending -انِ",
+          "highlight": "المعلّمانِ"
+        },
+        {
+          "ar": "رأيتُ المعلّمَيْنِ",
+          "en": "I saw the two teachers. — dual accusative ending -يْنِ",
+          "highlight": "المعلّمَيْنِ"
+        },
+        {
+          "ar": "جاءَ المعلّمونَ",
+          "en": "The teachers came. — sound masculine plural nominative ending -ونَ",
+          "highlight": "المعلّمونَ"
+        },
+        {
+          "ar": "رأيتُ المعلّمينَ",
+          "en": "I saw the teachers. — sound masculine plural accusative ending -ينَ",
+          "highlight": "المعلّمينَ"
+        },
+        {
+          "ar": "جاءتِ المعلّماتُ / رأيتُ المعلّماتِ",
+          "en": "The (female) teachers came / I saw the (female) teachers. — feminine plural: -اتُ (nom.) / -اتِ (acc. & gen.)",
+          "highlight": "المعلّماتُ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the dual ending for a noun in the nominative case?",
+          "options": [
+            "-يْنِ (-ayni)",
+            "-انِ (-āni)",
+            "-ونَ (-ūna)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The dual nominative ending is -انِ (-āni). For example, معلّمانِ means 'two teachers' as the subject of a sentence. In the accusative and genitive, the ending changes to -يْنِ (-ayni)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'the teachers' (masculine, as subject) using the sound masculine plural?",
+          "options": [
+            "المعلّمينَ",
+            "المعلّمونَ",
+            "المعلّمانِ"
+          ],
+          "correctIndex": 1,
+          "explanation": "The sound masculine plural in the nominative (subject) takes the ending -ونَ: المعلّمونَ. The ending -ينَ (المعلّمينَ) is used for accusative and genitive."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In سلّمتُ على المهندسينَ (I greeted the engineers), why is the ending -ينَ and not -ونَ?",
+          "options": [
+            "Because المهندسين is the subject",
+            "Because it follows the preposition على (genitive), and the sound masculine plural uses -ينَ for accusative and genitive",
+            "Because it is a broken plural"
+          ],
+          "correctIndex": 1,
+          "explanation": "After the preposition على, the noun must be in the genitive case. The sound masculine plural uses -ينَ for both accusative and genitive, so المهندسينَ is correct here."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is unusual about the sound feminine plural (-ات) in the accusative case?",
+          "options": [
+            "It takes the ending -اتًا with an alif",
+            "Its accusative and genitive forms are the same: -اتٍ (indefinite) / -اتِ (definite)",
+            "It does not change at all"
+          ],
+          "correctIndex": 1,
+          "explanation": "The sound feminine plural is unique: its accusative and genitive endings are identical. Both use kasra: -اتٍ (indefinite) or -اتِ (definite). Only the nominative is different: -اتٌ / -اتُ."
+        }
+      ]
+    },
+    {
+      "sectionId": "putting-it-together",
+      "title": "Putting It All Together",
+      "explanation": "Let us analyze a complete sentence to see all three cases in action. Consider: سألَ الطالبُ المعلّمَ عن الدرسِ الجديدِ (The student asked the teacher about the new lesson). Here, الطالبُ is the subject (فاعل) and takes the nominative case with damma: الطالبُ. المعلّمَ is the direct object (مفعول به) and takes the accusative case with fatha: المعلّمَ. الدرسِ comes after the preposition عن, so it takes the genitive case with kasra: الدرسِ. The adjective الجديدِ agrees with its noun الدرسِ in case, so it is also genitive with kasra. This agreement rule is important: adjectives must match their noun in case, gender, number, and definiteness.",
+      "tip": "When in doubt about a noun's case, ask three questions: (1) Is it the doer of the action? → nominative. (2) Is it what the action is done to? → accusative. (3) Is it after a preposition or part of إضافة? → genitive. Adjectives simply copy the case of the noun they describe.",
+      "examples": [
+        {
+          "ar": "سألَ الطالبُ المعلّمَ عن الدرسِ الجديدِ",
+          "en": "The student asked the teacher about the new lesson. — three cases in one sentence",
+          "highlight": "الطالبُ"
+        },
+        {
+          "ar": "قرأَ الولدُ كتابًا مفيدًا",
+          "en": "The boy read a useful book. — كتابًا مفيدًا: both noun and adjective are indefinite accusative",
+          "highlight": "كتابًا مفيدًا"
+        },
+        {
+          "ar": "في المدينةِ الكبيرةِ",
+          "en": "in the big city — both noun and adjective are definite genitive after في",
+          "highlight": "المدينةِ الكبيرةِ"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In سألَ الطالبُ المعلّمَ عن الدرسِ, which word is in the accusative case?",
+          "options": [
+            "الطالبُ",
+            "المعلّمَ",
+            "الدرسِ"
+          ],
+          "correctIndex": 1,
+          "explanation": "المعلّمَ is the direct object of the verb سألَ (asked), so it takes the accusative case marked with fatha (-َ). الطالبُ is nominative (subject) and الدرسِ is genitive (after عن)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "In قرأَ الولدُ كتابًا مفيدًا (The boy read a useful book), why does مفيدًا also have tanwīn fatha?",
+          "options": [
+            "Because adjectives agree with their noun in case — كتابًا is accusative, so مفيدًا must also be accusative",
+            "Because all adjectives always take tanwīn fatha",
+            "Because it follows a preposition"
+          ],
+          "correctIndex": 0,
+          "explanation": "Adjectives must agree with the noun they modify in case, gender, number, and definiteness. Since كتابًا is indefinite accusative, the adjective مفيدًا must also be indefinite accusative with tanwīn fatha."
+        }
+      ]
+    }
+  ]
+}

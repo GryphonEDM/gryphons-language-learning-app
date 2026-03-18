@@ -17,7 +17,7 @@ export default function MasteredWordsManager({ langCode = 'uk', masteredWordsLis
   const masteredWithInfo = useMemo(() => {
     return masteredWordsList.map(m => {
       const dictEntry = dict[m.word] || dict[m.word.toLowerCase()];
-      const vocabEntry = allWords.find(w => w.uk === m.word);
+      const vocabEntry = allWords.find(w => (w[langCode] || w.uk) === m.word);
       return {
         word: m.word,
         timestamp: m.timestamp,
@@ -40,7 +40,7 @@ export default function MasteredWordsManager({ langCode = 'uk', masteredWordsLis
     if (!addSearch || addSearch.length < 2) return [];
     const q = addSearch.toLowerCase();
     return allWords
-      .filter(w => !masteredSet.has(w.uk) && (w.uk.toLowerCase().includes(q) || w.en.toLowerCase().includes(q)))
+      .filter(w => !masteredSet.has(w[langCode] || w.uk) && ((w[langCode] || w.uk || '').toLowerCase().includes(q) || w.en.toLowerCase().includes(q)))
       .slice(0, 20);
   }, [addSearch, allWords, masteredSet]);
 
@@ -83,16 +83,16 @@ export default function MasteredWordsManager({ langCode = 'uk', masteredWordsLis
             {addResults.length > 0 && (
               <div style={styles.addResults}>
                 {addResults.map(w => (
-                  <div key={w.uk} style={styles.addResultItem}>
+                  <div key={w[langCode] || w.uk} style={styles.addResultItem}>
                     <div style={styles.addResultInfo}>
-                      <span style={styles.wordText}>{w.uk}</span>
+                      <span style={styles.wordText}>{w[langCode] || w.uk}</span>
                       <span style={styles.separator}> — </span>
                       <span style={styles.translationText}>{w.en}</span>
                       {w.difficulty && <span style={{ ...styles.diffBadge, color: { A1: '#4caf50', A2: '#ffeb3b', B1: '#ff9800', B2: '#f44336' }[w.difficulty] || '#aaa' }}>{w.difficulty}</span>}
                     </div>
                     <button
                       style={styles.addWordBtn}
-                      onClick={() => { onMarkMastered(w.uk); }}
+                      onClick={() => { onMarkMastered(w[langCode] || w.uk); }}
                     >
                       + Add
                     </button>

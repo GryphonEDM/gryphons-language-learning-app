@@ -49,7 +49,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How do you say 75 in French?",
+          "prompt": "How do you say 75 in French?",
           "options": [
             "soixante-quinze",
             "septante-cinq",
@@ -60,7 +60,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How do you write 80 in French?",
+          "prompt": "How do you write 80 in French?",
           "options": [
             "huitante",
             "quatre-vingt",
@@ -71,7 +71,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which is correct for 200?",
+          "prompt": "Which is correct for 200?",
           "options": [
             "deux cents",
             "deux cent",
@@ -82,13 +82,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: Il y a ___ (91) jours.",
+          "prompt": "Complete: Il y a ___ (91) jours.",
           "answer": "quatre-vingt-onze",
           "hint": "90 = quatre-vingt-dix, so 91 = quatre-vingt-onze (no -s on vingt when followed by a number)."
         },
         {
           "type": "multiple-choice",
-          "question": "How do you say 1,000,000 in French?",
+          "prompt": "How do you say 1,000,000 in French?",
           "options": [
             "un million",
             "mille mille",
@@ -99,13 +99,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: Elle habite au ___ (17) rue Victor Hugo.",
+          "prompt": "Complete: Elle habite au ___ (17) rue Victor Hugo.",
           "answer": "dix-sept",
           "hint": "17 = dix-sept (10+7)."
         },
         {
           "type": "multiple-choice",
-          "question": "What is the ordinal form of 1 (masculine)?",
+          "prompt": "What is the ordinal form of 1 (masculine)?",
           "options": [
             "primaire",
             "unième",
@@ -116,7 +116,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which sentence uses the correct form of cent?",
+          "prompt": "Which sentence uses the correct form of cent?",
           "options": [
             "trois cents euros",
             "trois cents vingt euros",
@@ -167,7 +167,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How do you say 'What time is it?' in French?",
+          "prompt": "How do you say 'What time is it?' in French?",
           "options": [
             "Quelle heure est-il ?",
             "C'est quelle heure ?",
@@ -178,7 +178,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How do you say 1:00 in French?",
+          "prompt": "How do you say 1:00 in French?",
           "options": [
             "Il est une heure.",
             "Il est un heure.",
@@ -189,13 +189,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: Il est cinq heures ___ (quarter past).",
+          "prompt": "Complete: Il est cinq heures ___ (quarter past).",
           "answer": "et quart",
           "hint": "Quarter past = et quart."
         },
         {
           "type": "multiple-choice",
-          "question": "What does 'Il est huit heures moins le quart' mean?",
+          "prompt": "What does 'Il est huit heures moins le quart' mean?",
           "options": [
             "It is 8:45.",
             "It is 7:45.",
@@ -206,13 +206,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: Il est ___ (midnight).",
+          "prompt": "Complete: Il est ___ (midnight).",
           "answer": "minuit",
           "hint": "Midnight has its own special word in French — not minuit heure."
         },
         {
           "type": "multiple-choice",
-          "question": "What is 14:00 in conversational French?",
+          "prompt": "What is 14:00 in conversational French?",
           "options": [
             "Il est quatorze heures.",
             "Il est deux heures de l'après-midi.",
@@ -223,7 +223,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "Which is correct for 12:30 (noon)?",
+          "prompt": "Which is correct for 12:30 (noon)?",
           "options": [
             "Il est midi et demie.",
             "Il est douze heures et demie.",
@@ -234,7 +234,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "Complete: Le film commence à ___ heures ___ (7:20).",
+          "prompt": "Complete: Le film commence à ___ heures ___ (7:20).",
           "answer": "sept heures vingt",
           "hint": "Just place the minutes after heures with no joining word for plain minutes: sept heures vingt."
         }

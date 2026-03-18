@@ -1,0 +1,961 @@
+{
+  "setId": "clothing",
+  "nameEn": "Clothing",
+  "nameUk": "Одяг",
+  "nameRu": "Одежда",
+  "nameDe": "Kleidung",
+  "nameEs": "La ropa",
+  "nameFr": "Les vêtements",
+  "nameEl": "Ρούχα",
+  "nameHi": "कपड़े",
+  "nameAr": "الملابس",
+  "nameKo": "옷",
+  "nameZh": "服装",
+  "nameJa": "服",
+  "difficulty": "A1",
+  "icon": "👕",
+  "totalWords": 20,
+  "xpPerWord": 15,
+  "words": [
+    {
+      "uk": "сорочка",
+      "ru": "рубашка",
+      "de": "Hemd",
+      "en": "shirt",
+      "phoneticUk": "sorochka",
+      "phoneticRu": "rubashka",
+      "phoneticDe": "HEMPT",
+      "examples": {
+        "uk": [
+          "Він одягнув білу сорочку на роботу.",
+          "Ця сорочка дуже гарно пасує до краватки."
+        ],
+        "ru": [
+          "он надел белую рубашку на работу",
+          "эта рубашка очень хорошо подходит к галстуку"
+        ],
+        "de": [
+          "Er zog ein weißes Hemd für die Arbeit an.",
+          "Dieses Hemd passt sehr gut zur Krawatte."
+        ],
+        "en": [
+          "He put on a white shirt for work.",
+          "This shirt goes very well with the tie."
+        ],
+        "es": [
+          "Se puso una camisa blanca para el trabajo.",
+          "Esta camisa le queda muy bien."
+        ]
+      },
+      "es": "camisa",
+      "phoneticEs": "kah-MEE-sah",
+      "fr": "chemise",
+      "frPhonetic": "shuh-MEEZ",
+      "el": "πουκάμισο",
+      "elPhonetic": "poo-KA-mi-so",
+      "hi": "कमीज़",
+      "hiPhonetic": "ka-MEEZ",
+      "ar": "قَمِيص",
+      "arPhonetic": "qa-MEES",
+      "ko": "셔츠",
+      "koPhonetic": "SYO-cheu",
+      "zh": "衬衫",
+      "zhPhonetic": "chènshān",
+      "ja": "シャツ",
+      "jaPhonetic": "shatsu"
+    },
+    {
+      "uk": "штани",
+      "ru": "брюки",
+      "de": "Hose",
+      "en": "pants",
+      "phoneticUk": "shtany",
+      "phoneticRu": "bryuki",
+      "phoneticDe": "HOH-zeh",
+      "examples": {
+        "uk": [
+          "Ці штани занадто довгі для мене.",
+          "Він купив нові чорні штани."
+        ],
+        "ru": [
+          "эти брюки слишком длинные для меня",
+          "он купил новые чёрные брюки"
+        ],
+        "de": [
+          "Diese Hose ist zu lang für mich.",
+          "Er hat eine neue schwarze Hose gekauft."
+        ],
+        "en": [
+          "These pants are too long for me.",
+          "He bought new black pants."
+        ],
+        "es": [
+          "Estos pantalones me quedan largos.",
+          "Compró unos pantalones negros nuevos."
+        ]
+      },
+      "es": "pantalones",
+      "phoneticEs": "pahn-tah-LOH-nes",
+      "fr": "pantalon",
+      "frPhonetic": "pon-ta-LON",
+      "el": "παντελόνι",
+      "elPhonetic": "pan-te-LO-ni",
+      "hi": "पतलून",
+      "hiPhonetic": "pat-LOON",
+      "ar": "بَنْطَلُون",
+      "arPhonetic": "ban-ta-LOON",
+      "ko": "바지",
+      "koPhonetic": "BA-ji",
+      "zh": "裤子",
+      "zhPhonetic": "kùzi",
+      "ja": "ズボン",
+      "jaPhonetic": "zubon"
+    },
+    {
+      "uk": "сукня",
+      "ru": "платье",
+      "de": "Kleid",
+      "en": "dress",
+      "phoneticUk": "suknya",
+      "phoneticRu": "platye",
+      "phoneticDe": "KLIDE",
+      "examples": {
+        "uk": [
+          "Вона надягла червону сукню на свято.",
+          "Ця сукня дуже елегантна."
+        ],
+        "ru": [
+          "она надела красное платье на праздник",
+          "это платье очень элегантное"
+        ],
+        "de": [
+          "Sie zog ein rotes Kleid zum Fest an.",
+          "Dieses Kleid ist sehr elegant."
+        ],
+        "en": [
+          "She wore a red dress to the celebration.",
+          "This dress is very elegant."
+        ],
+        "es": [
+          "Se puso un vestido rojo para la fiesta.",
+          "Este vestido es muy elegante."
+        ]
+      },
+      "es": "vestido",
+      "phoneticEs": "ves-TEE-doh",
+      "fr": "robe",
+      "frPhonetic": "ROB",
+      "el": "φόρεμα",
+      "elPhonetic": "FO-re-ma",
+      "hi": "पोशाक",
+      "hiPhonetic": "PO-shaak",
+      "ar": "فُسْتَان",
+      "arPhonetic": "fus-TAAN",
+      "ko": "원피스",
+      "koPhonetic": "WON-pi-seu",
+      "zh": "连衣裙",
+      "zhPhonetic": "liányīqún",
+      "ja": "ドレス",
+      "jaPhonetic": "doresu"
+    },
+    {
+      "uk": "спідниця",
+      "ru": "юбка",
+      "de": "Rock",
+      "en": "skirt",
+      "phoneticUk": "spidnytsya",
+      "phoneticRu": "yubka",
+      "phoneticDe": "ROK",
+      "examples": {
+        "uk": [
+          "Вона носить коротку спідницю влітку.",
+          "Ця спідниця гарно пасує до блузки."
+        ],
+        "ru": [
+          "она носит короткую юбку летом",
+          "эта юбка хорошо подходит к блузке"
+        ],
+        "de": [
+          "Sie trägt im Sommer einen kurzen Rock.",
+          "Dieser Rock passt gut zur Bluse."
+        ],
+        "en": [
+          "She wears a short skirt in summer.",
+          "This skirt matches the blouse nicely."
+        ],
+        "es": [
+          "Lleva una falda corta en verano.",
+          "Esta falda combina bien con la blusa."
+        ]
+      },
+      "es": "falda",
+      "phoneticEs": "FAHL-dah",
+      "fr": "jupe",
+      "frPhonetic": "ZHOOP",
+      "el": "φούστα",
+      "elPhonetic": "FOO-sta",
+      "hi": "स्कर्ट",
+      "hiPhonetic": "SKART",
+      "ar": "تَنُّورَة",
+      "arPhonetic": "tan-NOO-ra",
+      "ko": "치마",
+      "koPhonetic": "CHI-ma",
+      "zh": "裙子",
+      "zhPhonetic": "qúnzi",
+      "ja": "スカート",
+      "jaPhonetic": "sukaato"
+    },
+    {
+      "uk": "куртка",
+      "ru": "куртка",
+      "de": "Jacke",
+      "en": "jacket",
+      "phoneticUk": "kurtka",
+      "phoneticRu": "kurtka",
+      "phoneticDe": "YAH-keh",
+      "examples": {
+        "uk": [
+          "Одягни куртку, на вулиці холодно.",
+          "Він забув куртку в кафе."
+        ],
+        "ru": [
+          "надень куртку, на улице холодно",
+          "он забыл куртку в кафе"
+        ],
+        "de": [
+          "Zieh eine Jacke an, draußen ist es kalt.",
+          "Er hat seine Jacke im Café vergessen."
+        ],
+        "en": [
+          "Put on a jacket, it's cold outside.",
+          "He forgot his jacket at the café."
+        ],
+        "es": [
+          "Ponte la chaqueta, hace frío fuera.",
+          "Olvidó su chaqueta en el café."
+        ]
+      },
+      "es": "chaqueta",
+      "phoneticEs": "chah-KEH-tah",
+      "fr": "veste",
+      "frPhonetic": "VEST",
+      "el": "μπουφάν",
+      "elPhonetic": "boo-FAN",
+      "hi": "जैकेट",
+      "hiPhonetic": "JAI-ket",
+      "ar": "جَاكِيت",
+      "arPhonetic": "JAA-kit",
+      "ko": "재킷",
+      "koPhonetic": "JAE-kit",
+      "zh": "夹克",
+      "zhPhonetic": "jiākè",
+      "ja": "ジャケット",
+      "jaPhonetic": "jaketto"
+    },
+    {
+      "uk": "пальто",
+      "ru": "пальто",
+      "de": "Mantel",
+      "en": "coat",
+      "phoneticUk": "palto",
+      "phoneticRu": "palto",
+      "phoneticDe": "MAHN-tel",
+      "examples": {
+        "uk": [
+          "Взимку я завжди ношу тепле пальто.",
+          "Вона повісила пальто на вішалку."
+        ],
+        "ru": [
+          "зимой я всегда ношу тёплое пальто",
+          "она повесила пальто на вешалку"
+        ],
+        "de": [
+          "Im Winter trage ich immer einen warmen Mantel.",
+          "Sie hängte den Mantel an den Haken."
+        ],
+        "en": [
+          "In winter I always wear a warm coat.",
+          "She hung the coat on the hook."
+        ],
+        "es": [
+          "En invierno siempre llevo un abrigo caliente.",
+          "Colgó el abrigo en el perchero."
+        ]
+      },
+      "es": "abrigo",
+      "phoneticEs": "ah-BREE-goh",
+      "fr": "manteau",
+      "frPhonetic": "mon-TOH",
+      "el": "παλτό",
+      "elPhonetic": "pal-TO",
+      "hi": "कोट",
+      "hiPhonetic": "KOT",
+      "ar": "مِعْطَف",
+      "arPhonetic": "MI-taf",
+      "ko": "코트",
+      "koPhonetic": "KO-teu",
+      "zh": "大衣",
+      "zhPhonetic": "dàyī",
+      "ja": "コート",
+      "jaPhonetic": "kooto"
+    },
+    {
+      "uk": "светр",
+      "ru": "свитер",
+      "de": "Pullover",
+      "en": "sweater",
+      "phoneticUk": "svetr",
+      "phoneticRu": "sviter",
+      "phoneticDe": "pool-OH-ver",
+      "examples": {
+        "uk": [
+          "Бабуся зв'язала мені теплий светр.",
+          "Цей светр дуже м'який і зручний."
+        ],
+        "ru": [
+          "бабушка связала мне тёплый свитер",
+          "этот свитер очень мягкий и удобный"
+        ],
+        "de": [
+          "Oma hat mir einen warmen Pullover gestrickt.",
+          "Dieser Pullover ist sehr weich und bequem."
+        ],
+        "en": [
+          "Grandma knitted me a warm sweater.",
+          "This sweater is very soft and comfortable."
+        ],
+        "es": [
+          "La abuela me tejió un suéter caliente.",
+          "Este suéter es muy suave y cómodo."
+        ]
+      },
+      "es": "suéter",
+      "phoneticEs": "SWEH-ter",
+      "fr": "pull",
+      "frPhonetic": "POOL",
+      "el": "πουλόβερ",
+      "elPhonetic": "poo-LO-ver",
+      "hi": "स्वेटर",
+      "hiPhonetic": "SVET-ar",
+      "ar": "كَنْزَة",
+      "arPhonetic": "KAN-za",
+      "ko": "스웨터",
+      "koPhonetic": "seu-WE-to",
+      "zh": "毛衣",
+      "zhPhonetic": "máoyī",
+      "ja": "セーター",
+      "jaPhonetic": "seetaa"
+    },
+    {
+      "uk": "шкарпетки",
+      "ru": "носки",
+      "de": "Socken",
+      "en": "socks",
+      "phoneticUk": "shkarpetky",
+      "phoneticRu": "noski",
+      "phoneticDe": "ZOK-en",
+      "examples": {
+        "uk": [
+          "Де мої чисті шкарпетки?",
+          "Він завжди носить різнокольорові шкарпетки."
+        ],
+        "ru": [
+          "где мои чистые носки?",
+          "он всегда носит разноцветные носки"
+        ],
+        "de": [
+          "Wo sind meine sauberen Socken?",
+          "Er trägt immer bunte Socken."
+        ],
+        "en": [
+          "Where are my clean socks?",
+          "He always wears colorful socks."
+        ],
+        "es": [
+          "¿Dónde están mis calcetines limpios?",
+          "Siempre lleva calcetines de colores."
+        ]
+      },
+      "es": "calcetines",
+      "phoneticEs": "kahl-seh-TEE-nes",
+      "fr": "chaussettes",
+      "frPhonetic": "sho-SET",
+      "el": "κάλτσες",
+      "elPhonetic": "KALT-ses",
+      "hi": "मोज़े",
+      "hiPhonetic": "MO-ze",
+      "ar": "جَوَارِب",
+      "arPhonetic": "ja-WA-rib",
+      "ko": "양말",
+      "koPhonetic": "YANG-mal",
+      "zh": "袜子",
+      "zhPhonetic": "wàzi",
+      "ja": "靴下",
+      "jaPhonetic": "kutsushita"
+    },
+    {
+      "uk": "взуття",
+      "ru": "обувь",
+      "de": "Schuhe",
+      "en": "shoes",
+      "phoneticUk": "vzuttya",
+      "phoneticRu": "obuv",
+      "phoneticDe": "SHOO-eh",
+      "examples": {
+        "uk": [
+          "Зніми взуття перед входом до хати.",
+          "Мені потрібне нове взуття на осінь."
+        ],
+        "ru": [
+          "сними обувь перед входом в дом",
+          "мне нужна новая обувь на осень"
+        ],
+        "de": [
+          "Zieh die Schuhe vor der Tür aus.",
+          "Ich brauche neue Schuhe für den Herbst."
+        ],
+        "en": [
+          "Take off your shoes before entering the house.",
+          "I need new shoes for autumn."
+        ],
+        "es": [
+          "Quítate los zapatos antes de entrar.",
+          "Necesito zapatos nuevos para el otoño."
+        ]
+      },
+      "es": "zapatos",
+      "phoneticEs": "sah-PAH-tohs",
+      "fr": "chaussures",
+      "frPhonetic": "sho-SOOR",
+      "el": "παπούτσια",
+      "elPhonetic": "pa-POO-tsia",
+      "hi": "जूते",
+      "hiPhonetic": "JOO-te",
+      "ar": "حِذَاء",
+      "arPhonetic": "hi-DHAA",
+      "ko": "신발",
+      "koPhonetic": "SHIN-bal",
+      "zh": "鞋子",
+      "zhPhonetic": "xiézi",
+      "ja": "靴",
+      "jaPhonetic": "kutsu"
+    },
+    {
+      "uk": "чоботи",
+      "ru": "сапоги",
+      "de": "Stiefel",
+      "en": "boots",
+      "phoneticUk": "choboty",
+      "phoneticRu": "sapogi",
+      "phoneticDe": "SHTEE-fel",
+      "examples": {
+        "uk": [
+          "Взимку я ношу теплі чоботи.",
+          "Ці чоботи водонепроникні."
+        ],
+        "ru": [
+          "зимой я ношу тёплые сапоги",
+          "эти сапоги водонепроницаемые"
+        ],
+        "de": [
+          "Im Winter trage ich warme Stiefel.",
+          "Diese Stiefel sind wasserdicht."
+        ],
+        "en": [
+          "In winter I wear warm boots.",
+          "These boots are waterproof."
+        ],
+        "es": [
+          "En invierno llevo botas calientes.",
+          "Estas botas son impermeables."
+        ]
+      },
+      "es": "botas",
+      "phoneticEs": "BOH-tahs",
+      "fr": "bottes",
+      "frPhonetic": "BOT",
+      "el": "μπότες",
+      "elPhonetic": "BO-tes",
+      "hi": "जूते",
+      "hiPhonetic": "JOO-te",
+      "ar": "جَزْمَة",
+      "arPhonetic": "JAZ-ma",
+      "ko": "부츠",
+      "koPhonetic": "BU-cheu",
+      "zh": "靴子",
+      "zhPhonetic": "xuēzi",
+      "ja": "ブーツ",
+      "jaPhonetic": "buutsu"
+    },
+    {
+      "uk": "шапка",
+      "ru": "шапка",
+      "de": "Mütze",
+      "en": "hat",
+      "phoneticUk": "shapka",
+      "phoneticRu": "shapka",
+      "phoneticDe": "MOO-tseh",
+      "examples": {
+        "uk": [
+          "Одягни шапку, на вулиці мороз.",
+          "Він загубив свою улюблену шапку."
+        ],
+        "ru": [
+          "надень шапку, на улице мороз",
+          "он потерял свою любимую шапку"
+        ],
+        "de": [
+          "Setz die Mütze auf, draußen ist es eiskalt.",
+          "Er hat seine Lieblingsmütze verloren."
+        ],
+        "en": [
+          "Put on your hat, it's freezing outside.",
+          "He lost his favorite hat."
+        ],
+        "es": [
+          "Ponte el gorro, hace mucho frío.",
+          "Perdió su gorro favorito."
+        ]
+      },
+      "es": "gorro",
+      "phoneticEs": "GOH-rroh",
+      "fr": "bonnet",
+      "frPhonetic": "bo-NAY",
+      "el": "σκούφος",
+      "elPhonetic": "SKOO-fos",
+      "hi": "टोपी",
+      "hiPhonetic": "TO-pee",
+      "ar": "قُبَّعَة",
+      "arPhonetic": "QUB-ba-a",
+      "ko": "모자",
+      "koPhonetic": "MO-ja",
+      "zh": "帽子",
+      "zhPhonetic": "màozi",
+      "ja": "帽子",
+      "jaPhonetic": "boushi"
+    },
+    {
+      "uk": "рукавиці",
+      "ru": "перчатки",
+      "de": "Handschuhe",
+      "en": "gloves",
+      "phoneticUk": "rukavytsi",
+      "phoneticRu": "perchatki",
+      "phoneticDe": "HANT-shoo-eh",
+      "examples": {
+        "uk": [
+          "Без рукавиць руки дуже мерзнуть.",
+          "Вона купила нові шкіряні рукавиці."
+        ],
+        "ru": [
+          "без перчаток руки очень мёрзнут",
+          "она купила новые кожаные перчатки"
+        ],
+        "de": [
+          "Ohne Handschuhe frieren die Hände sehr.",
+          "Sie hat neue Lederhandschuhe gekauft."
+        ],
+        "en": [
+          "Without gloves your hands get very cold.",
+          "She bought new leather gloves."
+        ],
+        "es": [
+          "Sin guantes las manos se congelan.",
+          "Compró unos guantes de cuero nuevos."
+        ]
+      },
+      "es": "guantes",
+      "phoneticEs": "GWAHN-tes",
+      "fr": "gants",
+      "frPhonetic": "GON",
+      "el": "γάντια",
+      "elPhonetic": "GAN-tia",
+      "hi": "दस्ताने",
+      "hiPhonetic": "das-TAA-ne",
+      "ar": "قُفَّازَات",
+      "arPhonetic": "quf-FA-zaat",
+      "ko": "장갑",
+      "koPhonetic": "JANG-gap",
+      "zh": "手套",
+      "zhPhonetic": "shǒutào",
+      "ja": "手袋",
+      "jaPhonetic": "tebukuro"
+    },
+    {
+      "uk": "шарф",
+      "ru": "шарф",
+      "de": "Schal",
+      "en": "scarf",
+      "phoneticUk": "sharf",
+      "phoneticRu": "sharf",
+      "phoneticDe": "SHAHL",
+      "examples": {
+        "uk": [
+          "Вона зав'язала шарф навколо шиї.",
+          "Цей шарф дуже теплий і м'який."
+        ],
+        "ru": [
+          "она завязала шарф вокруг шеи",
+          "этот шарф очень тёплый и мягкий"
+        ],
+        "de": [
+          "Sie band den Schal um den Hals.",
+          "Dieser Schal ist sehr warm und weich."
+        ],
+        "en": [
+          "She tied the scarf around her neck.",
+          "This scarf is very warm and soft."
+        ],
+        "es": [
+          "Se puso la bufanda alrededor del cuello.",
+          "Esta bufanda es muy caliente y suave."
+        ]
+      },
+      "es": "bufanda",
+      "phoneticEs": "boo-FAHN-dah",
+      "fr": "écharpe",
+      "frPhonetic": "ay-SHARP",
+      "el": "κασκόλ",
+      "elPhonetic": "kas-KOL",
+      "hi": "दुपट्टा",
+      "hiPhonetic": "du-PAT-ta",
+      "ar": "وِشَاح",
+      "arPhonetic": "wi-SHAAH",
+      "ko": "스카프",
+      "koPhonetic": "seu-KA-peu",
+      "zh": "围巾",
+      "zhPhonetic": "wéijīn",
+      "ja": "マフラー",
+      "jaPhonetic": "mafuraa"
+    },
+    {
+      "uk": "краватка",
+      "ru": "галстук",
+      "de": "Krawatte",
+      "en": "tie",
+      "phoneticUk": "kravatka",
+      "phoneticRu": "galstuk",
+      "phoneticDe": "kra-VAH-teh",
+      "examples": {
+        "uk": [
+          "Він зав'язав краватку перед дзеркалом.",
+          "На офіційну зустріч потрібна краватка."
+        ],
+        "ru": [
+          "он завязал галстук перед зеркалом",
+          "на официальную встречу нужен галстук"
+        ],
+        "de": [
+          "Er band sich die Krawatte vor dem Spiegel.",
+          "Zum offiziellen Treffen braucht man eine Krawatte."
+        ],
+        "en": [
+          "He tied his tie in front of the mirror.",
+          "You need a tie for the formal meeting."
+        ],
+        "es": [
+          "Se ató la corbata frente al espejo.",
+          "Necesitas una corbata para la reunión formal."
+        ]
+      },
+      "es": "corbata",
+      "phoneticEs": "kor-BAH-tah",
+      "fr": "cravate",
+      "frPhonetic": "kra-VAT",
+      "el": "γραβάτα",
+      "elPhonetic": "gra-VA-ta",
+      "hi": "टाई",
+      "hiPhonetic": "TAA-ee",
+      "ar": "رَبْطَة عُنُق",
+      "arPhonetic": "RAB-tat U-nuq",
+      "ko": "넥타이",
+      "koPhonetic": "NEK-ta-i",
+      "zh": "领带",
+      "zhPhonetic": "lǐngdài",
+      "ja": "ネクタイ",
+      "jaPhonetic": "nekutai"
+    },
+    {
+      "uk": "ремінь",
+      "ru": "ремень",
+      "de": "Gürtel",
+      "en": "belt",
+      "phoneticUk": "remin",
+      "phoneticRu": "remen",
+      "phoneticDe": "GOOR-tel",
+      "examples": {
+        "uk": [
+          "Цей ремінь шкіряний і дуже міцний.",
+          "Він затягнув ремінь на штанах."
+        ],
+        "ru": [
+          "этот ремень кожаный и очень крепкий",
+          "он затянул ремень на брюках"
+        ],
+        "de": [
+          "Dieser Gürtel ist aus Leder und sehr robust.",
+          "Er schnallte den Gürtel an der Hose fest."
+        ],
+        "en": [
+          "This belt is made of leather and very sturdy.",
+          "He tightened the belt on his pants."
+        ],
+        "es": [
+          "Este cinturón es de cuero y muy resistente.",
+          "Se ajustó el cinturón de los pantalones."
+        ]
+      },
+      "es": "cinturón",
+      "phoneticEs": "sin-too-ROHN",
+      "fr": "ceinture",
+      "frPhonetic": "san-TOOR",
+      "el": "ζώνη",
+      "elPhonetic": "ZO-ni",
+      "hi": "बेल्ट",
+      "hiPhonetic": "BELT",
+      "ar": "حِزَام",
+      "arPhonetic": "hi-ZAAM",
+      "ko": "벨트",
+      "koPhonetic": "BEL-teu",
+      "zh": "腰带",
+      "zhPhonetic": "yāodài",
+      "ja": "ベルト",
+      "jaPhonetic": "beruto"
+    },
+    {
+      "uk": "піджак",
+      "ru": "пиджак",
+      "de": "Sakko",
+      "en": "suit jacket",
+      "phoneticUk": "pidzhak",
+      "phoneticRu": "pidzhak",
+      "phoneticDe": "ZAH-koh",
+      "examples": {
+        "uk": [
+          "Він одягнув піджак на співбесіду.",
+          "Цей піджак ідеально сидить на ньому."
+        ],
+        "ru": [
+          "он надел пиджак на собеседование",
+          "этот пиджак идеально сидит на нём"
+        ],
+        "de": [
+          "Er zog das Sakko zum Vorstellungsgespräch an.",
+          "Dieses Sakko sitzt perfekt."
+        ],
+        "en": [
+          "He put on a suit jacket for the interview.",
+          "This suit jacket fits him perfectly."
+        ],
+        "es": [
+          "Se puso la americana para la entrevista.",
+          "Esta americana le queda perfecta."
+        ]
+      },
+      "es": "americana",
+      "phoneticEs": "ah-meh-ree-KAH-nah",
+      "fr": "veston",
+      "frPhonetic": "ves-TON",
+      "el": "σακάκι",
+      "elPhonetic": "sa-KA-ki",
+      "hi": "ब्लेज़र",
+      "hiPhonetic": "BLAY-zar",
+      "ar": "جَاكِيت رَسْمِي",
+      "arPhonetic": "JAA-kit RAS-mee",
+      "ko": "정장 재킷",
+      "koPhonetic": "jong-jang JAE-kit",
+      "zh": "西装外套",
+      "zhPhonetic": "xīzhuāng wàitào",
+      "ja": "スーツジャケット",
+      "jaPhonetic": "suutsu jaketto"
+    },
+    {
+      "uk": "футболка",
+      "ru": "футболка",
+      "de": "T-Shirt",
+      "en": "t-shirt",
+      "phoneticUk": "futbolka",
+      "phoneticRu": "futbolka",
+      "phoneticDe": "TEE-shurt",
+      "examples": {
+        "uk": [
+          "Влітку я ношу лише футболку.",
+          "Він купив футболку з улюбленим малюнком."
+        ],
+        "ru": [
+          "летом я ношу только футболку",
+          "он купил футболку с любимым рисунком"
+        ],
+        "de": [
+          "Im Sommer trage ich nur ein T-Shirt.",
+          "Er hat ein T-Shirt mit seinem Lieblingsmotiv gekauft."
+        ],
+        "en": [
+          "In summer I just wear a t-shirt.",
+          "He bought a t-shirt with his favorite design."
+        ],
+        "es": [
+          "En verano solo llevo una camiseta.",
+          "Compró una camiseta con su dibujo favorito."
+        ]
+      },
+      "es": "camiseta",
+      "phoneticEs": "kah-mee-SEH-tah",
+      "fr": "t-shirt",
+      "frPhonetic": "TEE-shurt",
+      "el": "μπλουζάκι",
+      "elPhonetic": "bloo-ZA-ki",
+      "hi": "टी-शर्ट",
+      "hiPhonetic": "TEE-shart",
+      "ar": "تِي شِيرْت",
+      "arPhonetic": "TEE-sheert",
+      "ko": "티셔츠",
+      "koPhonetic": "TI-syo-cheu",
+      "zh": "T恤",
+      "zhPhonetic": "T-xù",
+      "ja": "Tシャツ",
+      "jaPhonetic": "tii-shatsu"
+    },
+    {
+      "uk": "джинси",
+      "ru": "джинсы",
+      "de": "Jeans",
+      "en": "jeans",
+      "phoneticUk": "dzhynsy",
+      "phoneticRu": "dzhinsy",
+      "phoneticDe": "JEENS",
+      "examples": {
+        "uk": [
+          "Він носить джинси майже щодня.",
+          "Ці джинси дуже зручні."
+        ],
+        "ru": [
+          "он носит джинсы почти каждый день",
+          "эти джинсы очень удобные"
+        ],
+        "de": [
+          "Er trägt fast jeden Tag Jeans.",
+          "Diese Jeans sind sehr bequem."
+        ],
+        "en": [
+          "He wears jeans almost every day.",
+          "These jeans are very comfortable."
+        ],
+        "es": [
+          "Usa vaqueros casi todos los días.",
+          "Estos vaqueros son muy cómodos."
+        ]
+      },
+      "es": "vaqueros",
+      "phoneticEs": "vah-KEH-rohs",
+      "fr": "jean",
+      "frPhonetic": "ZHEEN",
+      "el": "τζιν",
+      "elPhonetic": "JEEN",
+      "hi": "जीन्स",
+      "hiPhonetic": "JEENS",
+      "ar": "جِينْز",
+      "arPhonetic": "JEENZ",
+      "ko": "청바지",
+      "koPhonetic": "CHONG-ba-ji",
+      "zh": "牛仔裤",
+      "zhPhonetic": "niúzǎikù",
+      "ja": "ジーンズ",
+      "jaPhonetic": "jiinzu"
+    },
+    {
+      "uk": "кросівки",
+      "ru": "кроссовки",
+      "de": "Turnschuhe",
+      "en": "sneakers",
+      "phoneticUk": "krosivky",
+      "phoneticRu": "krossovki",
+      "phoneticDe": "TOORN-shoo-eh",
+      "examples": {
+        "uk": [
+          "Для спорту потрібні зручні кросівки.",
+          "Він купив нові кросівки для бігу."
+        ],
+        "ru": [
+          "для спорта нужны удобные кроссовки",
+          "он купил новые кроссовки для бега"
+        ],
+        "de": [
+          "Zum Sport braucht man bequeme Turnschuhe.",
+          "Er hat neue Turnschuhe zum Laufen gekauft."
+        ],
+        "en": [
+          "You need comfortable sneakers for sports.",
+          "He bought new sneakers for running."
+        ],
+        "es": [
+          "Necesitas zapatillas cómodas para el deporte.",
+          "Compró unas zapatillas nuevas para correr."
+        ]
+      },
+      "es": "zapatillas",
+      "phoneticEs": "sah-pah-TEE-yahs",
+      "fr": "baskets",
+      "frPhonetic": "bas-KET",
+      "el": "αθλητικά",
+      "elPhonetic": "ath-li-ti-KA",
+      "hi": "स्नीकर्स",
+      "hiPhonetic": "SNEE-karz",
+      "ar": "حِذَاء رِيَاضِي",
+      "arPhonetic": "hi-DHAA ri-YAA-dhee",
+      "ko": "운동화",
+      "koPhonetic": "UN-dong-hwa",
+      "zh": "运动鞋",
+      "zhPhonetic": "yùndòngxié",
+      "ja": "スニーカー",
+      "jaPhonetic": "suniikaa"
+    },
+    {
+      "uk": "білизна",
+      "ru": "бельё",
+      "de": "Unterwäsche",
+      "en": "underwear",
+      "phoneticUk": "bilyzna",
+      "phoneticRu": "belyo",
+      "phoneticDe": "OON-ter-veh-sheh",
+      "examples": {
+        "uk": [
+          "Потрібно змінювати білизну щодня.",
+          "Вона купила нову бавовняну білизну."
+        ],
+        "ru": [
+          "нужно менять бельё каждый день",
+          "она купила новое хлопковое бельё"
+        ],
+        "de": [
+          "Man sollte die Unterwäsche jeden Tag wechseln.",
+          "Sie hat neue Baumwollunterwäsche gekauft."
+        ],
+        "en": [
+          "You should change your underwear every day.",
+          "She bought new cotton underwear."
+        ],
+        "es": [
+          "Hay que cambiar la ropa interior cada día.",
+          "Compró ropa interior nueva de algodón."
+        ]
+      },
+      "es": "ropa interior",
+      "phoneticEs": "ROH-pah in-teh-RYOR",
+      "fr": "sous-vêtements",
+      "frPhonetic": "soo-VET-mon",
+      "el": "εσώρουχα",
+      "elPhonetic": "e-SO-roo-ha",
+      "hi": "अंडरवियर",
+      "hiPhonetic": "AN-dar-vi-yar",
+      "ar": "مَلَابِس دَاخِلِيَّة",
+      "arPhonetic": "ma-LA-bis DA-khi-lee-ya",
+      "ko": "속옷",
+      "koPhonetic": "SOK-ot",
+      "zh": "内衣",
+      "zhPhonetic": "nèiyī",
+      "ja": "下着",
+      "jaPhonetic": "shitagi"
+    }
+  ]
+}

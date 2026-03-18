@@ -47,19 +47,31 @@ ARABIC_KEYBOARD.forEach(row => {
 });
 
 // Additional Arabic letters not on default layer (Shift or special positions)
-AR_TO_QWERTY['ذ'] = 'z';   // dhaal — Shift+z on some layouts
-AR_TO_QWERTY['ظ'] = 'z';   // zhaa (emphatic th)
-AR_TO_QWERTY['ط'] = 'q';   // taa (emphatic t)
-AR_TO_QWERTY['ج'] = '[';   // jiim
-AR_TO_QWERTY['د'] = ']';   // daal
-AR_TO_QWERTY['ز'] = '.';   // zayn
-AR_TO_QWERTY['و'] = ',';   // waw
-AR_TO_QWERTY['ك'] = ';';   // kaaf
+const extraLetters = [
+  { ar: 'ذ', qwerty: 'z', sound: 'dhaal — voiced "th" as in "this"', example: 'ذَهَبَ (he went)' },
+  { ar: 'ظ', qwerty: 'z', sound: 'zhaa — emphatic "th"', example: 'ظَلَّ (he remained)' },
+  { ar: 'ط', qwerty: 'q', sound: 'taa — emphatic "t"', example: 'طَعَام (food)' },
+  { ar: 'ج', qwerty: '[', sound: 'jiim — "j" as in "jump"', example: 'جَمِيل (beautiful)' },
+  { ar: 'د', qwerty: ']', sound: 'daal — "d" as in "door"', example: 'دَرْس (lesson)' },
+  { ar: 'ز', qwerty: '.', sound: 'zayn — "z" as in "zoo"', example: 'زَهْرَة (flower)' },
+  { ar: 'و', qwerty: ',', sound: 'waw — "w" as in "water" or long "oo"', example: 'وَلَد (boy)' },
+  { ar: 'ك', qwerty: ';', sound: 'kaaf — "k" as in "king"', example: 'كِتَاب (book)' },
+];
+extraLetters.forEach(key => {
+  AR_TO_QWERTY[key.ar] = key.qwerty;
+  AR_LETTER_INFO[key.ar] = key;
+});
 
 // Hamza forms
-AR_TO_QWERTY['أ'] = 'h';   // alef with hamza above
-AR_TO_QWERTY['إ'] = 'h';   // alef with hamza below
-AR_TO_QWERTY['آ'] = 'h';   // alef with madda
+const hamzaForms = [
+  { ar: 'أ', qwerty: 'h', sound: 'alef with hamza above — glottal stop + "a"', example: 'أَكَلَ (he ate)' },
+  { ar: 'إ', qwerty: 'h', sound: 'alef with hamza below — glottal stop + "i"', example: 'إِسْلَام (Islam)' },
+  { ar: 'آ', qwerty: 'h', sound: 'alef with madda — long "aa"', example: 'آمِين (amen)' },
+];
+hamzaForms.forEach(key => {
+  AR_TO_QWERTY[key.ar] = key.qwerty;
+  AR_LETTER_INFO[key.ar] = key;
+});
 
 // Tashkeel (diacritics) — mapped to Shift combos, use base key
 AR_TO_QWERTY['\u064E'] = 'q';   // fatha (فتحة)

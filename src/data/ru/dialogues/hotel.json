@@ -1,0 +1,23 @@
+{
+  "dialogueId": "hotel",
+  "nameEn": "Hotel Check-in",
+  "nameRu": "Заселение в гостиницу",
+  "icon": "🏨",
+  "context": "You are checking into a hotel in Moscow. The receptionist greets you at the front desk.",
+  "characters": {
+    "npc": { "name": "Администратор" },
+    "player": { "name": "Гость" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Добрый день! Добро пожаловать в наш отель.", "translation": "Good day! Welcome to our hotel." },
+    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["Здравствуйте, у меня бронирование", "Добрый день, я забронировал номер", "Здравствуйте, у меня есть бронь", "Добрый день, у меня бронирование"], "keyWords": ["Здравствуйте", "бронирование"], "hint": "Здравствуйте, у меня бронирование." },
+    { "speaker": "npc", "text": "Отлично! На какую фамилию?", "translation": "Excellent! Under what last name?" },
+    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["Сколько стоит номер за ночь?", "Какая цена за ночь?", "Сколько стоит одна ночь?", "Какова стоимость номера?"], "keyWords": ["стоит", "номер", "ночь"], "hint": "Сколько стоит номер за ночь?" },
+    { "speaker": "npc", "text": "Одноместный номер стоит пять тысяч рублей за ночь. Завтрак включён.", "translation": "A single room costs five thousand rubles per night. Breakfast is included." },
+    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["Есть ли Wi-Fi?", "У вас есть Wi-Fi?", "Wi-Fi есть?", "Здесь есть вай-фай?"], "keyWords": ["Wi-Fi"], "hint": "Есть ли Wi-Fi?" },
+    { "speaker": "npc", "text": "Да, бесплатный Wi-Fi по всему отелю. Вот ваш ключ. Номер триста пять.", "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room three hundred five." },
+    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["Во сколько выселение?", "Когда нужно выселиться?", "В какое время чекаут?", "Во сколько нужно освободить номер?"], "keyWords": ["выселение", "сколько"], "hint": "Во сколько выселение?" },
+    { "speaker": "npc", "text": "Выселение до двенадцати часов дня. Желаю вам приятного пребывания!", "translation": "Check-out is by twelve noon. I wish you a pleasant stay!" },
+    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["Большое спасибо!", "Спасибо!", "Спасибо большое!", "Благодарю вас!"], "keyWords": ["спасибо"], "hint": "Большое спасибо!" }
+  ]
+}

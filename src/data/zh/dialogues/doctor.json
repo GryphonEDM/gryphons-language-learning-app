@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameZh": "看医生",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Beijing. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "医生" },
+    "player": { "name": "病人" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "你好！哪里不舒服？", "translation": "Hello! What is bothering you?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["我头疼，还发烧", "我头痛而且发烧了", "我头疼还有发烧", "头疼，还有点发烧"], "keyWords": ["头疼", "发烧"], "hint": "我头疼，还发烧。" },
+    { "speaker": "npc", "text": "多长时间了？", "translation": "How long has it been?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["从昨天开始的", "昨天开始的", "从昨天起", "昨天开始不舒服"], "keyWords": ["昨天"], "hint": "从昨天开始的。" },
+    { "speaker": "npc", "text": "知道了。还有其他症状吗？咳嗽、流鼻涕？", "translation": "I see. Any other symptoms? Cough, runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["是的，还有咳嗽", "对，我也咳嗽", "嗯，还咳嗽", "有，还有点咳嗽"], "keyWords": ["咳嗽"], "hint": "是的，还有咳嗽。" },
+    { "speaker": "npc", "text": "我给你开点药。每天三次，饭后服用。", "translation": "I will prescribe some medicine. Three times a day, take it after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["需要再来复查吗？", "还需要再来吗？", "我需要复诊吗？", "要不要再来一次？"], "keyWords": ["再来"], "hint": "需要再来复查吗？" },
+    { "speaker": "npc", "text": "需要，一个星期后再来。如果情况加重，马上打电话。", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["谢谢医生", "谢谢您，医生", "非常感谢，大夫", "谢谢！"], "keyWords": ["谢谢"], "hint": "谢谢医生。" }
+  ]
+}

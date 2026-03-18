@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameHi": "डॉक्टर के पास",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Jaipur. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "डॉक्टर" },
+    "player": { "name": "मरीज़" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "नमस्ते! क्या तकलीफ़ है?", "translation": "Hello! What is the problem?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["मुझे सिरदर्द और बुखार है", "मेरे सिर में दर्द है और बुखार है", "सिरदर्द और बुखार है", "मुझे सिर में दर्द और बुखार है"], "keyWords": ["सिरदर्द", "बुखार"], "hint": "मुझे सिरदर्द और बुखार है।" },
+    { "speaker": "npc", "text": "कब से तबीयत ख़राब है?", "translation": "Since when have you been feeling unwell?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["कल से", "कल से तबीयत ख़राब है", "कल से बीमार हूँ", "कल से शुरू हुआ"], "keyWords": ["कल"], "hint": "कल से।" },
+    { "speaker": "npc", "text": "समझा। और कोई लक्षण हैं? खाँसी, ज़ुकाम?", "translation": "I see. Any other symptoms? Cough, cold?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["हाँ, खाँसी भी है", "जी हाँ, मुझे खाँसी भी है", "हाँ, खाँसी भी हो रही है", "जी, खाँसी भी है"], "keyWords": ["हाँ", "खाँसी"], "hint": "हाँ, खाँसी भी है।" },
+    { "speaker": "npc", "text": "मैं आपको दवाई लिख देता हूँ। दिन में तीन बार खाने के बाद लें।", "translation": "I will prescribe medicine for you. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["क्या मुझे दोबारा आना होगा?", "क्या फिर से आना पड़ेगा?", "क्या वापस आना होगा?", "दोबारा कब आऊँ?"], "keyWords": ["दोबारा", "आना"], "hint": "क्या मुझे दोबारा आना होगा?" },
+    { "speaker": "npc", "text": "हाँ, एक हफ़्ते बाद आइए। अगर तबीयत और बिगड़े तो तुरंत फ़ोन करें।", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["धन्यवाद, डॉक्टर", "शुक्रिया, डॉक्टर", "बहुत धन्यवाद, डॉक्टर साहब", "धन्यवाद!"], "keyWords": ["धन्यवाद"], "hint": "धन्यवाद, डॉक्टर।" }
+  ]
+}

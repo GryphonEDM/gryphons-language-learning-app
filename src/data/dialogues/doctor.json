@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameUk": "У лікаря",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Kyiv. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Лікар" },
+    "player": { "name": "Ви" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Добрий день! Що вас турбує?", "translation": "Good day! What is troubling you?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["у мене болить голова і температура", "у мене головний біль і температура", "мене турбує головний біль і температура", "болить голова і є температура"], "keyWords": ["голова", "температура"], "hint": "у мене болить голова і температура" },
+    { "speaker": "npc", "text": "Як давно ви хворієте?", "translation": "How long have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["з учора", "від учора", "з вчорашнього дня", "учора почалося"], "keyWords": ["учора"], "hint": "з учора" },
+    { "speaker": "npc", "text": "Зрозуміло. Чи є ще якісь симптоми? Кашель, нежить?", "translation": "I see. Are there any other symptoms? Cough, runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["так, ще є кашель", "так, у мене також кашель", "так, я також кашляю", "є ще кашель"], "keyWords": ["так", "кашель"], "hint": "так, ще є кашель" },
+    { "speaker": "npc", "text": "Я випишу вам ліки. Приймайте їх тричі на день після їжі.", "translation": "I will prescribe medicine for you. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["чи потрібно прийти ще раз?", "мені потрібно прийти знову?", "коли прийти на повторний прийом?", "чи треба повернутися?"], "keyWords": ["прийти", "потрібно"], "hint": "чи потрібно прийти ще раз?" },
+    { "speaker": "npc", "text": "Так, прийдіть через тиждень. Якщо стане гірше, телефонуйте одразу.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["дякую, лікарю", "дуже дякую, лікарю", "дякую!", "щиро дякую"], "keyWords": ["дякую"], "hint": "дякую, лікарю" }
+  ]
+}

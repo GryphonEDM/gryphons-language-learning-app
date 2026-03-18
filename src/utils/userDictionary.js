@@ -1,21 +1,35 @@
 import { storageGet, storageSet } from './storage.js';
 
-const KEY = 'userDictionary';
+const BASE_KEY = 'userDictionary';
 
-export function getUserDict() {
-  try { return JSON.parse(storageGet(KEY) || '{}'); }
+function getDictKey(langCode) {
+  return langCode && langCode !== 'uk' ? `${BASE_KEY}_${langCode}` : BASE_KEY;
+}
+
+export function getUserDict(langCode) {
+  const key = getDictKey(langCode);
+  try {
+    // Also merge legacy shared dict for backward compatibility
+    const langDict = JSON.parse(storageGet(key) || '{}');
+    if (langCode && langCode !== 'uk') {
+      const legacyDict = JSON.parse(storageGet(BASE_KEY) || '{}');
+      return { ...legacyDict, ...langDict };
+    }
+    return langDict;
+  }
   catch { return {}; }
 }
 
-export function saveToUserDict(uk, en) {
-  const dict = getUserDict();
-  dict[uk.toLowerCase()] = en.trim();
-  storageSet(KEY, JSON.stringify(dict));
+export function saveToUserDict(word, en, langCode) {
+  const key = getDictKey(langCode);
+  const dict = getUserDict(langCode);
+  dict[word.toLowerCase()] = en.trim();
+  storageSet(key, JSON.stringify(dict));
 }
 
 /** Look up a word in the user dictionary, trying exact then prefix match. */
-export function lookupUserDict(word) {
-  const dict = getUserDict();
+export function lookupUserDict(word, langCode) {
+  const dict = getUserDict(langCode);
   const cleaned = word.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, '');
   if (!cleaned) return null;
   if (dict[cleaned]) return dict[cleaned];

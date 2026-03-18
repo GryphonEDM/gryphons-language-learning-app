@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameFr": "Chez le médecin",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Paris. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Médecin" },
+    "player": { "name": "Patient" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Bonjour ! Qu'est-ce qui ne va pas ?", "translation": "Hello! What is wrong?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["J'ai mal à la tête et de la fièvre", "J'ai des maux de tête et de la fièvre", "J'ai un mal de tête et de la fièvre", "J'ai la migraine et de la fièvre"], "keyWords": ["tête", "fièvre"], "hint": "J'ai mal à la tête et de la fièvre." },
+    { "speaker": "npc", "text": "Depuis quand êtes-vous malade ?", "translation": "Since when have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["Depuis hier", "Depuis hier soir", "Depuis hier matin", "Ça a commencé hier"], "keyWords": ["hier"], "hint": "Depuis hier." },
+    { "speaker": "npc", "text": "D'accord. Avez-vous d'autres symptômes ? De la toux, un rhume ?", "translation": "Okay. Do you have other symptoms? A cough, a cold?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["Oui, j'ai aussi de la toux", "Oui, je tousse aussi", "Oui, j'ai également de la toux", "Oui, et je tousse"], "keyWords": ["Oui", "toux"], "hint": "Oui, j'ai aussi de la toux." },
+    { "speaker": "npc", "text": "Je vais vous prescrire un médicament. Prenez-le trois fois par jour après les repas.", "translation": "I will prescribe a medication. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["Est-ce que je dois revenir ?", "Faut-il que je revienne ?", "Je dois revenir ?", "Est-ce qu'il faut revenir ?"], "keyWords": ["revenir"], "hint": "Est-ce que je dois revenir ?" },
+    { "speaker": "npc", "text": "Oui, revenez dans une semaine. Si ça empire, appelez tout de suite.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["Merci, docteur", "Merci beaucoup, docteur", "Je vous remercie, docteur", "Merci !"], "keyWords": ["Merci"], "hint": "Merci, docteur." }
+  ]
+}

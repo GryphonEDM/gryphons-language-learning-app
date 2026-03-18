@@ -47,7 +47,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How is the French letter R pronounced?",
+          "prompt": "How is the French letter R pronounced?",
           "options": [
             "Silently, like a final consonant",
             "The same as the English R",
@@ -58,7 +58,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "In the word 'chat' (cat), how is the final T pronounced?",
+          "prompt": "In the word 'chat' (cat), how is the final T pronounced?",
           "options": [
             "Like an S sound",
             "Like the English T",
@@ -69,7 +69,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What sound does 'oi' make in French words like 'moi' and 'voiture'?",
+          "prompt": "What sound does 'oi' make in French words like 'moi' and 'voiture'?",
           "options": [
             "A 'wah' sound",
             "An 'oy' sound like in English 'boy'",
@@ -80,7 +80,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What is 'liaison' in French pronunciation?",
+          "prompt": "What is 'liaison' in French pronunciation?",
           "options": [
             "Dropping the final vowel of a word",
             "Linking a word's final consonant to the next word's starting vowel",
@@ -91,7 +91,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How is the French nasal vowel 'an' (as in 'enfant') best described?",
+          "prompt": "How is the French nasal vowel 'an' (as in 'enfant') best described?",
           "options": [
             "An 'ohn' sound made through the nose",
             "The same as the English word 'an'",
@@ -102,13 +102,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "The French word for 'moon' is 'lune'. The U in 'lune' is pronounced with _______ lips.",
+          "prompt": "The French word for 'moon' is 'lune'. The U in 'lune' is pronounced with _______ lips.",
           "answer": "rounded",
           "hint": "This lip shape has no direct equivalent in English."
         },
         {
           "type": "multiple-choice",
-          "question": "In 'les amis' (the friends), what happens due to liaison?",
+          "prompt": "In 'les amis' (the friends), what happens due to liaison?",
           "options": [
             "The S of 'les' links to 'amis', sounding like 'lay-za-mee'",
             "The S of 'les' is completely silent",
@@ -119,7 +119,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "The nasal vowel 'in' (as in 'jardin') sounds like the English word _______.",
+          "prompt": "The nasal vowel 'in' (as in 'jardin') sounds like the English word _______.",
           "answer": "an",
           "hint": "Think of the English word that rhymes with 'man' or 'can'."
         }
@@ -165,7 +165,7 @@
       "exercises": [
         {
           "type": "multiple-choice",
-          "question": "How is the letter 'é' (with acute accent) pronounced in 'café'?",
+          "prompt": "How is the letter 'é' (with acute accent) pronounced in 'café'?",
           "options": [
             "Silent, like a final E",
             "Like 'ay' as in the English word 'say'",
@@ -176,7 +176,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What does the cedilla (ç) do to the letter C?",
+          "prompt": "What does the cedilla (ç) do to the letter C?",
           "options": [
             "Makes it a 'K' sound",
             "Makes it a soft 'S' sound before a, o, or u",
@@ -187,7 +187,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "How is 'CH' pronounced in French words like 'chat' and 'chose'?",
+          "prompt": "How is 'CH' pronounced in French words like 'chat' and 'chose'?",
           "options": [
             "Like 'k' as in English 'character'",
             "Like 'ch' as in English 'chair'",
@@ -198,7 +198,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What sound does 'GN' produce in 'montagne' (mountain)?",
+          "prompt": "What sound does 'GN' produce in 'montagne' (mountain)?",
           "options": [
             "A 'ny' sound, like Spanish 'ñ'",
             "A hard 'g' followed by 'n'",
@@ -209,7 +209,7 @@
         },
         {
           "type": "multiple-choice",
-          "question": "What is the difference between 'è' (grave) and 'é' (acute)?",
+          "prompt": "What is the difference between 'è' (grave) and 'é' (acute)?",
           "options": [
             "'é' is a closed 'ay' sound; 'è' is an open 'eh' sound",
             "'è' is silent; 'é' is pronounced",
@@ -220,13 +220,13 @@
         },
         {
           "type": "fill-blank",
-          "question": "In French, the letter H is always _______.",
+          "prompt": "In French, the letter H is always _______.",
           "answer": "silent",
           "hint": "You never pronounce this letter, but it still affects how surrounding words are linked."
         },
         {
           "type": "multiple-choice",
-          "question": "The œ in 'cœur' (heart) sounds most like which description?",
+          "prompt": "The œ in 'cœur' (heart) sounds most like which description?",
           "options": [
             "A rounded 'uh' sound, similar to German ö",
             "The 'oe' sound in English 'poem'",
@@ -237,7 +237,7 @@
         },
         {
           "type": "fill-blank",
-          "question": "The word 'garçon' uses a cedilla so that the C is pronounced as _______, not as a hard K.",
+          "prompt": "The word 'garçon' uses a cedilla so that the C is pronounced as _______, not as a hard K.",
           "answer": "S",
           "hint": "Think of the sound at the start of 'snake' or 'soft'."
         }

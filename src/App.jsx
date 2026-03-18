@@ -44,6 +44,8 @@ import restaurantDialogue from './data/dialogues/restaurant.json';
 import directionsDialogue from './data/dialogues/directions.json';
 import shoppingDialogue from './data/dialogues/shopping.json';
 import greetingDialogue from './data/dialogues/greeting.json';
+import hotelDialogue from './data/dialogues/hotel.json';
+import doctorDialogue from './data/dialogues/doctor.json';
 
 // Import reading data
 import beginnerReading from './data/reading/beginner.json';
@@ -61,6 +63,8 @@ import ruRestaurantDialogue from './data/ru/dialogues/restaurant.json';
 import ruDirectionsDialogue from './data/ru/dialogues/directions.json';
 import ruShoppingDialogue from './data/ru/dialogues/shopping.json';
 import ruGreetingDialogue from './data/ru/dialogues/greeting.json';
+import ruHotelDialogue from './data/ru/dialogues/hotel.json';
+import ruDoctorDialogue from './data/ru/dialogues/doctor.json';
 
 // Import Russian reading data
 import ruBeginnerReading from './data/ru/reading/beginner.json';
@@ -80,6 +84,8 @@ import deRestaurantDialogue from './data/de/dialogues/restaurant.json';
 import deDirectionsDialogue from './data/de/dialogues/directions.json';
 import deShoppingDialogue from './data/de/dialogues/shopping.json';
 import deGreetingDialogue from './data/de/dialogues/greeting.json';
+import deHotelDialogue from './data/de/dialogues/hotel.json';
+import deDoctorDialogue from './data/de/dialogues/doctor.json';
 
 // Import German reading data
 import deBeginnerReading from './data/de/reading/beginner.json';
@@ -94,6 +100,8 @@ import esRestaurantDialogue from './data/es/dialogues/restaurant.json';
 import esDirectionsDialogue from './data/es/dialogues/directions.json';
 import esShoppingDialogue from './data/es/dialogues/shopping.json';
 import esGreetingDialogue from './data/es/dialogues/greeting.json';
+import esHotelDialogue from './data/es/dialogues/hotel.json';
+import esDoctorDialogue from './data/es/dialogues/doctor.json';
 
 // Import Spanish reading data
 import esBeginnerReading from './data/es/reading/beginner.json';
@@ -108,6 +116,8 @@ import frRestaurantDialogue from './data/fr/dialogues/restaurant.json';
 import frDirectionsDialogue from './data/fr/dialogues/directions.json';
 import frShoppingDialogue from './data/fr/dialogues/shopping.json';
 import frGreetingDialogue from './data/fr/dialogues/greeting.json';
+import frHotelDialogue from './data/fr/dialogues/hotel.json';
+import frDoctorDialogue from './data/fr/dialogues/doctor.json';
 
 // Import French reading data
 import frBeginnerReading from './data/fr/reading/beginner.json';
@@ -125,6 +135,8 @@ import elRestaurantDialogue from './data/el/dialogues/restaurant.json';
 import elDirectionsDialogue from './data/el/dialogues/directions.json';
 import elShoppingDialogue from './data/el/dialogues/shopping.json';
 import elGreetingDialogue from './data/el/dialogues/greeting.json';
+import elHotelDialogue from './data/el/dialogues/hotel.json';
+import elDoctorDialogue from './data/el/dialogues/doctor.json';
 
 // Import Greek reading data
 import elBeginnerReading from './data/el/reading/beginner.json';
@@ -142,6 +154,8 @@ import hiRestaurantDialogue from './data/hi/dialogues/restaurant.json';
 import hiDirectionsDialogue from './data/hi/dialogues/directions.json';
 import hiShoppingDialogue from './data/hi/dialogues/shopping.json';
 import hiGreetingDialogue from './data/hi/dialogues/greeting.json';
+import hiHotelDialogue from './data/hi/dialogues/hotel.json';
+import hiDoctorDialogue from './data/hi/dialogues/doctor.json';
 
 // Import Hindi reading data
 import hiBeginnerReading from './data/hi/reading/beginner.json';
@@ -159,6 +173,8 @@ import arRestaurantDialogue from './data/ar/dialogues/restaurant.json';
 import arDirectionsDialogue from './data/ar/dialogues/directions.json';
 import arShoppingDialogue from './data/ar/dialogues/shopping.json';
 import arGreetingDialogue from './data/ar/dialogues/greeting.json';
+import arHotelDialogue from './data/ar/dialogues/hotel.json';
+import arDoctorDialogue from './data/ar/dialogues/doctor.json';
 
 // Import Arabic reading data
 import arBeginnerReading from './data/ar/reading/beginner.json';
@@ -176,6 +192,8 @@ import koRestaurantDialogue from './data/ko/dialogues/restaurant.json';
 import koDirectionsDialogue from './data/ko/dialogues/directions.json';
 import koShoppingDialogue from './data/ko/dialogues/shopping.json';
 import koGreetingDialogue from './data/ko/dialogues/greeting.json';
+import koHotelDialogue from './data/ko/dialogues/hotel.json';
+import koDoctorDialogue from './data/ko/dialogues/doctor.json';
 
 // Import Korean reading data
 import koBeginnerReading from './data/ko/reading/beginner.json';
@@ -193,6 +211,8 @@ import zhRestaurantDialogue from './data/zh/dialogues/restaurant.json';
 import zhDirectionsDialogue from './data/zh/dialogues/directions.json';
 import zhShoppingDialogue from './data/zh/dialogues/shopping.json';
 import zhGreetingDialogue from './data/zh/dialogues/greeting.json';
+import zhHotelDialogue from './data/zh/dialogues/hotel.json';
+import zhDoctorDialogue from './data/zh/dialogues/doctor.json';
 
 // Import Chinese reading data
 import zhBeginnerReading from './data/zh/reading/beginner.json';
@@ -207,6 +227,8 @@ import jaSentenceData from './data/ja/sentences.json';
 
 // Import Japanese dialogue data
 import jaGreetingDialogue from './data/ja/dialogues/greeting.json';
+import jaHotelDialogue from './data/ja/dialogues/hotel.json';
+import jaDoctorDialogue from './data/ja/dialogues/doctor.json';
 import jaRestaurantDialogue from './data/ja/dialogues/restaurant.json';
 import jaShoppingDialogue from './data/ja/dialogues/shopping.json';
 import jaDirectionsDialogue from './data/ja/dialogues/directions.json';
@@ -225,6 +247,7 @@ import weatherData from './data/vocabulary/themes/weather.json';
 import travelData from './data/vocabulary/themes/travel.json';
 import bodyData from './data/vocabulary/themes/body.json';
 import houseData from './data/vocabulary/themes/house.json';
+import foodData from './data/vocabulary/themes/food.json';
 import adultData from './data/vocabulary/adult-vocabulary.json';
 
 
@@ -236,7 +259,8 @@ const VOCABULARY_THEMES = [
   weatherData,
   travelData,
   bodyData,
-  houseData
+  houseData,
+  foodData
 ];
 
 const ADULT_VOCABULARY = adultData;
@@ -290,7 +314,7 @@ function buildCategoryFlashcardSets() {
 const DICTIONARY_FLASHCARD_SETS = buildCategoryFlashcardSets();
 
 const GRAMMAR_LESSONS = GRAMMAR_LESSONS_UK;
-const DIALOGUES = [restaurantDialogue, directionsDialogue, shoppingDialogue, greetingDialogue];
+const DIALOGUES = [restaurantDialogue, directionsDialogue, shoppingDialogue, greetingDialogue, hotelDialogue, doctorDialogue];
 const ALL_READING_PASSAGES = [
   ...beginnerReading.passages,
   ...intermediateReading.passages,
@@ -298,7 +322,7 @@ const ALL_READING_PASSAGES = [
 ];
 
 const RU_GRAMMAR_LESSONS = GRAMMAR_LESSONS_RU;
-const RU_DIALOGUES = [ruRestaurantDialogue, ruDirectionsDialogue, ruShoppingDialogue, ruGreetingDialogue];
+const RU_DIALOGUES = [ruRestaurantDialogue, ruDirectionsDialogue, ruShoppingDialogue, ruGreetingDialogue, ruHotelDialogue, ruDoctorDialogue];
 const RU_ALL_READING_PASSAGES = [
   ...ruBeginnerReading.passages,
   ...ruIntermediateReading.passages,
@@ -306,7 +330,7 @@ const RU_ALL_READING_PASSAGES = [
 ];
 
 const DE_GRAMMAR_LESSONS = GRAMMAR_LESSONS_DE;
-const DE_DIALOGUES = [deRestaurantDialogue, deDirectionsDialogue, deShoppingDialogue, deGreetingDialogue];
+const DE_DIALOGUES = [deRestaurantDialogue, deDirectionsDialogue, deShoppingDialogue, deGreetingDialogue, deHotelDialogue, deDoctorDialogue];
 const DE_ALL_READING_PASSAGES = [
   ...deBeginnerReading.passages,
   ...deIntermediateReading.passages,
@@ -314,7 +338,7 @@ const DE_ALL_READING_PASSAGES = [
 ];
 
 const ES_GRAMMAR_LESSONS = GRAMMAR_LESSONS_ES;
-const ES_DIALOGUES = [esRestaurantDialogue, esDirectionsDialogue, esShoppingDialogue, esGreetingDialogue];
+const ES_DIALOGUES = [esRestaurantDialogue, esDirectionsDialogue, esShoppingDialogue, esGreetingDialogue, esHotelDialogue, esDoctorDialogue];
 const ES_ALL_READING_PASSAGES = [
   ...esBeginnerReading.passages,
   ...esIntermediateReading.passages,
@@ -322,7 +346,7 @@ const ES_ALL_READING_PASSAGES = [
 ];
 
 const FR_GRAMMAR_LESSONS = GRAMMAR_LESSONS_FR;
-const FR_DIALOGUES = [frRestaurantDialogue, frDirectionsDialogue, frShoppingDialogue, frGreetingDialogue];
+const FR_DIALOGUES = [frRestaurantDialogue, frDirectionsDialogue, frShoppingDialogue, frGreetingDialogue, frHotelDialogue, frDoctorDialogue];
 const FR_ALL_READING_PASSAGES = [
   ...frBeginnerReading.passages,
   ...frIntermediateReading.passages,
@@ -330,7 +354,7 @@ const FR_ALL_READING_PASSAGES = [
 ];
 
 const EL_GRAMMAR_LESSONS = GRAMMAR_LESSONS_EL;
-const EL_DIALOGUES = [elRestaurantDialogue, elDirectionsDialogue, elShoppingDialogue, elGreetingDialogue];
+const EL_DIALOGUES = [elRestaurantDialogue, elDirectionsDialogue, elShoppingDialogue, elGreetingDialogue, elHotelDialogue, elDoctorDialogue];
 const EL_ALL_READING_PASSAGES = [
   ...elBeginnerReading.passages,
   ...elIntermediateReading.passages,
@@ -338,7 +362,7 @@ const EL_ALL_READING_PASSAGES = [
 ];
 
 const HI_GRAMMAR_LESSONS = GRAMMAR_LESSONS_HI;
-const HI_DIALOGUES = [hiRestaurantDialogue, hiDirectionsDialogue, hiShoppingDialogue, hiGreetingDialogue];
+const HI_DIALOGUES = [hiRestaurantDialogue, hiDirectionsDialogue, hiShoppingDialogue, hiGreetingDialogue, hiHotelDialogue, hiDoctorDialogue];
 const HI_ALL_READING_PASSAGES = [
   ...hiBeginnerReading.passages,
   ...hiIntermediateReading.passages,
@@ -346,7 +370,7 @@ const HI_ALL_READING_PASSAGES = [
 ];
 
 const AR_GRAMMAR_LESSONS = GRAMMAR_LESSONS_AR;
-const AR_DIALOGUES = [arRestaurantDialogue, arDirectionsDialogue, arShoppingDialogue, arGreetingDialogue];
+const AR_DIALOGUES = [arRestaurantDialogue, arDirectionsDialogue, arShoppingDialogue, arGreetingDialogue, arHotelDialogue, arDoctorDialogue];
 const AR_ALL_READING_PASSAGES = [
   ...arBeginnerReading.passages,
   ...arIntermediateReading.passages,
@@ -354,7 +378,7 @@ const AR_ALL_READING_PASSAGES = [
 ];
 
 const KO_GRAMMAR_LESSONS = GRAMMAR_LESSONS_KO;
-const KO_DIALOGUES = [koRestaurantDialogue, koDirectionsDialogue, koShoppingDialogue, koGreetingDialogue];
+const KO_DIALOGUES = [koRestaurantDialogue, koDirectionsDialogue, koShoppingDialogue, koGreetingDialogue, koHotelDialogue, koDoctorDialogue];
 const KO_ALL_READING_PASSAGES = [
   ...koBeginnerReading.passages,
   ...koIntermediateReading.passages,
@@ -362,7 +386,7 @@ const KO_ALL_READING_PASSAGES = [
 ];
 
 const ZH_GRAMMAR_LESSONS = GRAMMAR_LESSONS_ZH;
-const ZH_DIALOGUES = [zhRestaurantDialogue, zhDirectionsDialogue, zhShoppingDialogue, zhGreetingDialogue];
+const ZH_DIALOGUES = [zhRestaurantDialogue, zhDirectionsDialogue, zhShoppingDialogue, zhGreetingDialogue, zhHotelDialogue, zhDoctorDialogue];
 const ZH_ALL_READING_PASSAGES = [
   ...zhBeginnerReading.passages,
   ...zhIntermediateReading.passages,
@@ -370,7 +394,7 @@ const ZH_ALL_READING_PASSAGES = [
 ];
 
 const JA_GRAMMAR_LESSONS = GRAMMAR_LESSONS_JA;
-const JA_DIALOGUES = [jaRestaurantDialogue, jaDirectionsDialogue, jaShoppingDialogue, jaGreetingDialogue];
+const JA_DIALOGUES = [jaRestaurantDialogue, jaDirectionsDialogue, jaShoppingDialogue, jaGreetingDialogue, jaHotelDialogue, jaDoctorDialogue];
 const JA_ALL_READING_PASSAGES = [
   ...jaBeginnerReading.passages,
   ...jaIntermediateReading.passages,
@@ -1588,7 +1612,7 @@ export default function UkrainianTypingGame() {
   }
 
   return (
-    <div className="game-container">
+    <div className="game-container" dir={currentLanguage === 'ar' ? 'rtl' : 'ltr'}>
       {/* Green flash on alphabet loop completion */}
       {showGreenFlash && <div className="green-flash-overlay" />}
 

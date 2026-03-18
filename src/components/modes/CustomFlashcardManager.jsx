@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 
 export default function CustomFlashcardManager({ langCode = 'uk', customWords, onSave, onSpeak, ttsEnabled, ttsVolume }) {
   const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
-  const [newUk, setNewUk] = useState('');
+  const [newTarget, setNewTarget] = useState('');
   const [newEn, setNewEn] = useState('');
   const [newPhonetic, setNewPhonetic] = useState('');
   const [editIndex, setEditIndex] = useState(-1);
   const [showForm, setShowForm] = useState(false);
 
   const handleAdd = () => {
-    if (!newUk.trim() || !newEn.trim()) return;
+    if (!newTarget.trim() || !newEn.trim()) return;
 
     const word = {
-      uk: newUk.trim(),
+      [langCode]: newTarget.trim(),
       en: newEn.trim(),
       phonetic: newPhonetic.trim()
     };
@@ -27,7 +27,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
     }
 
     onSave(updated);
-    setNewUk('');
+    setNewTarget('');
     setNewEn('');
     setNewPhonetic('');
     setShowForm(false);
@@ -35,7 +35,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
 
   const handleEdit = (index) => {
     const word = customWords[index];
-    setNewUk(word.uk);
+    setNewTarget(word[langCode] || word.uk || '');
     setNewEn(word.en);
     setNewPhonetic(word.phonetic || '');
     setEditIndex(index);
@@ -48,7 +48,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
   };
 
   const handleCancel = () => {
-    setNewUk('');
+    setNewTarget('');
     setNewEn('');
     setNewPhonetic('');
     setEditIndex(-1);
@@ -72,8 +72,8 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
             <input
               style={styles.input}
               placeholder={`${langName} word`}
-              value={newUk}
-              onChange={e => setNewUk(e.target.value)}
+              value={newTarget}
+              onChange={e => setNewTarget(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && handleAdd()}
             />
             <input
@@ -105,7 +105,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
           {customWords.map((word, i) => (
             <div key={i} style={styles.wordItem}>
               <div style={styles.wordInfo}>
-                <span style={styles.ukWord}>{word.uk}</span>
+                <span style={styles.ukWord}>{word[langCode] || word.uk}</span>
                 <span style={styles.separator}> — </span>
                 <span style={styles.enWord}>{word.en}</span>
                 {word.phonetic && <span style={styles.phonetic}>({word.phonetic})</span>}
@@ -114,7 +114,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
                 {ttsEnabled && (
                   <button
                     style={styles.iconBtn}
-                    onClick={() => onSpeak(word.uk, 0.8, ttsVolume)}
+                    onClick={() => onSpeak(word[langCode] || word.uk, 0.8, ttsVolume)}
                     title="Pronounce"
                   >
                     🔊

@@ -1,0 +1,406 @@
+{
+  "lessonId": "dative-verbs",
+  "nameEn": "Dative Verbs",
+  "nameDe": "Verben mit Dativ",
+  "icon": "🫵",
+  "tier": "A2",
+  "prerequisites": [
+    "dative-case"
+  ],
+  "estimatedMinutes": 18,
+  "sections": [
+    {
+      "sectionId": "what-are-dative-verbs",
+      "title": "What Are Dative Verbs?",
+      "explanation": "In most languages, the person who experiences something is the subject of the sentence: 'I like the book.' German often flips this around. With dative verbs, the EXPERIENCER goes into the dative case, while the thing causing the experience is the grammatical subject (nominative). So instead of 'I like the book,' German says 'Das Buch gefällt mir' — literally 'The book pleases to-me.' The experiencer 'mir' is dative, and 'das Buch' is the nominative subject. This is one of the trickiest patterns for English speakers because the sentence structure feels backwards.",
+      "tip": "When you see a dative verb, ask: 'Who experiences this?' That person goes into the dative. The thing that causes the experience is the grammatical subject and controls verb conjugation.",
+      "examples": [
+        {
+          "de": "Das Buch gefällt mir.",
+          "en": "I like the book. (lit. 'The book pleases me.')",
+          "highlight": "mir"
+        },
+        {
+          "de": "Du fehlst mir.",
+          "en": "I miss you. (lit. 'You are missing to me.')",
+          "highlight": "mir"
+        },
+        {
+          "de": "Der Kuchen schmeckt uns.",
+          "en": "We like the taste of the cake. (lit. 'The cake tastes good to us.')",
+          "highlight": "uns"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "In the sentence 'Das Buch gefällt mir', what is the grammatical subject?",
+          "options": [
+            "mir",
+            "Das Buch",
+            "gefällt",
+            "There is no subject"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Das Buch' is the nominative subject — it controls the verb conjugation ('gefällt', 3rd person singular). 'mir' is the dative experiencer."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why does German say 'Du fehlst mir' instead of 'Ich fehle dich'?",
+          "options": [
+            "Because 'fehlen' is irregular",
+            "Because the person who is missed is the subject, and the one who misses is in the dative",
+            "Because 'mir' is accusative here",
+            "Because 'du' is in the dative"
+          ],
+          "correctIndex": 1,
+          "explanation": "With 'fehlen', the person who is absent/missed is the grammatical subject (du), and the person experiencing the missing feeling is the dative experiencer (mir)."
+        }
+      ]
+    },
+    {
+      "sectionId": "gefallen",
+      "title": "gefallen — to please / to like",
+      "explanation": "'Gefallen' means 'to please' or 'to be pleasing to.' It is the standard way to say you like something in German. The thing you like is the subject (nominative), and the person who likes it is in the dative. The verb conjugates to match the nominative subject, NOT the dative experiencer. If you like multiple things, use the plural form 'gefallen': 'Die Bücher gefallen mir' (I like the books).",
+      "tip": "Think of 'gefallen' as working like English 'to appeal to': 'The book appeals to me' → 'Das Buch gefällt mir.' The subject is the appealing thing, not the person.",
+      "examples": [
+        {
+          "de": "Das Buch gefällt mir.",
+          "en": "I like the book. (lit. 'The book pleases me.')",
+          "highlight": "gefällt mir"
+        },
+        {
+          "de": "Mir gefällt die Musik.",
+          "en": "I like the music. (dative experiencer can come first)",
+          "highlight": "Mir gefällt"
+        },
+        {
+          "de": "Uns gefällt der Film.",
+          "en": "We like the film.",
+          "highlight": "Uns gefällt"
+        },
+        {
+          "de": "Die Schuhe gefallen ihr nicht.",
+          "en": "She doesn't like the shoes. (plural subject → gefallen)",
+          "highlight": "gefallen ihr"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Das Kleid ___ mir sehr gut. (I really like the dress.)",
+          "acceptedAnswers": [
+            "gefällt"
+          ],
+          "hint": "'Das Kleid' is singular — which form of 'gefallen' matches a singular subject?"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Blumen ___ uns. (We like the flowers.)",
+          "acceptedAnswers": [
+            "gefallen"
+          ],
+          "hint": "'Die Blumen' is plural — use the plural form of 'gefallen'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "___ gefällt das Essen? (Who likes the food?)",
+          "options": [
+            "Wer",
+            "Wen",
+            "Wem",
+            "Wessen"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Wem' is the dative question word. Since the experiencer with 'gefallen' is always dative, we ask 'Wem gefällt das Essen?' (To whom is the food pleasing?)"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wie gefällt ___ die neue Wohnung? (How do you like the new apartment? — informal singular)",
+          "acceptedAnswers": [
+            "dir"
+          ],
+          "hint": "Dative of 'du' — the experiencer with 'gefallen' is always dative."
+        }
+      ]
+    },
+    {
+      "sectionId": "schmecken",
+      "title": "schmecken — to taste good to",
+      "explanation": "'Schmecken' means 'to taste' or 'to taste good to someone.' Like 'gefallen', it puts the experiencer in the dative. The food or drink is the subject (nominative), and the person tasting it is dative. 'Das Essen schmeckt mir' means 'I like the taste of the food' (lit. 'The food tastes good to me'). You can add 'gut' for emphasis, but 'schmecken' alone already implies 'to taste good.'",
+      "tip": "At a restaurant, you might hear: 'Schmeckt es Ihnen?' (Does it taste good to you? — formal). Answer: 'Ja, es schmeckt mir sehr gut!'",
+      "examples": [
+        {
+          "de": "Das Essen schmeckt mir gut.",
+          "en": "The food tastes good to me. / I like the food.",
+          "highlight": "schmeckt mir"
+        },
+        {
+          "de": "Der Kuchen schmeckt uns.",
+          "en": "We like the cake. (lit. 'The cake tastes good to us.')",
+          "highlight": "schmeckt uns"
+        },
+        {
+          "de": "Schmeckt dir der Wein?",
+          "en": "Do you like the wine?",
+          "highlight": "Schmeckt dir"
+        },
+        {
+          "de": "Die Suppe schmeckt den Kindern nicht.",
+          "en": "The children don't like the soup.",
+          "highlight": "schmeckt den Kindern"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Die Pizza schmeckt ___ fantastisch! (The pizza tastes fantastic to me!)",
+          "acceptedAnswers": [
+            "mir"
+          ],
+          "hint": "The experiencer (the person tasting) goes in the dative. Dative of 'ich' is...?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Schmeckt ___ das Bier? (Do you like the beer? — informal)",
+          "options": [
+            "du",
+            "dich",
+            "dir",
+            "dein"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Schmecken' takes a dative experiencer. The dative of 'du' is 'dir'."
+        }
+      ]
+    },
+    {
+      "sectionId": "fehlen",
+      "title": "fehlen — to be missing / to miss",
+      "explanation": "'Fehlen' means 'to be missing' or 'to be absent from.' When you miss someone, the person you miss is the nominative subject, and YOU are the dative experiencer. 'Du fehlst mir' literally means 'You are missing to me' — i.e., 'I miss you.' It can also mean something is lacking: 'Es fehlt mir an Geld' (I lack money, lit. 'It is lacking to me in money'). Note how the verb conjugates with 'du' (fehlst), not 'mir'.",
+      "tip": "To say 'I miss you' in German: make 'you' the subject and 'me' the dative — 'Du fehlst mir.' To say 'We miss her': 'Sie fehlt uns.'",
+      "examples": [
+        {
+          "de": "Du fehlst mir.",
+          "en": "I miss you. (lit. 'You are missing to me.')",
+          "highlight": "fehlst mir"
+        },
+        {
+          "de": "Meine Familie fehlt mir sehr.",
+          "en": "I miss my family a lot.",
+          "highlight": "fehlt mir"
+        },
+        {
+          "de": "Es fehlt mir an Geld.",
+          "en": "I lack money. (lit. 'It is lacking to me in money.')",
+          "highlight": "fehlt mir"
+        },
+        {
+          "de": "Was fehlt Ihnen?",
+          "en": "What's wrong? / What are you missing? (formal, e.g. at the doctor)",
+          "highlight": "fehlt Ihnen"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Meine Freunde ___ mir. (I miss my friends.)",
+          "acceptedAnswers": [
+            "fehlen"
+          ],
+          "hint": "'Meine Freunde' is plural — which form of 'fehlen' matches a plural subject?"
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Du ___ uns sehr! (We miss you a lot!)",
+          "acceptedAnswers": [
+            "fehlst"
+          ],
+          "hint": "The subject is 'du' — conjugate 'fehlen' for the 2nd person singular."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'She misses her brother' in German?",
+          "options": [
+            "Sie fehlt ihrem Bruder.",
+            "Ihr Bruder fehlt ihr.",
+            "Sie fehlt ihr Bruder.",
+            "Ihrem Bruder fehlt sie."
+          ],
+          "correctIndex": 1,
+          "explanation": "The person who is missed (ihr Bruder) is the nominative subject. The person who experiences the missing (she) is the dative experiencer (ihr). 'Ihr Bruder fehlt ihr' = Her brother is missing to her."
+        }
+      ]
+    },
+    {
+      "sectionId": "other-dative-verbs",
+      "title": "More Verbs That Take Dative Objects",
+      "explanation": "Many common German verbs require their object to be in the dative case, even though their English equivalents use a direct object. These verbs do not follow the 'experiencer' pattern of gefallen/schmecken/fehlen — instead, the subject is the person performing the action, but the object must still be dative. Key verbs: helfen (to help) — Ich helfe dir; danken (to thank) — Ich danke Ihnen; gehören (to belong to) — Das gehört mir; passen (to fit) — Die Hose passt mir; folgen (to follow) — Der Hund folgt dem Kind; antworten (to answer) — Sie antwortet dem Lehrer; gratulieren (to congratulate) — Wir gratulieren dir.",
+      "tip": "There is no shortcut — you must memorize which verbs take dative. A useful mnemonic: many verbs of SOCIAL INTERACTION (helping, thanking, answering, congratulating, following) take dative.",
+      "examples": [
+        {
+          "de": "Ich helfe meiner Mutter.",
+          "en": "I help my mother.",
+          "highlight": "meiner Mutter"
+        },
+        {
+          "de": "Wir danken Ihnen herzlich.",
+          "en": "We thank you sincerely. (formal)",
+          "highlight": "Ihnen"
+        },
+        {
+          "de": "Das Fahrrad gehört meinem Bruder.",
+          "en": "The bicycle belongs to my brother.",
+          "highlight": "meinem Bruder"
+        },
+        {
+          "de": "Die Hose passt mir nicht.",
+          "en": "The pants don't fit me.",
+          "highlight": "passt mir"
+        },
+        {
+          "de": "Der Hund folgt dem Kind überall.",
+          "en": "The dog follows the child everywhere.",
+          "highlight": "dem Kind"
+        },
+        {
+          "de": "Sie antwortet dem Lehrer auf Deutsch.",
+          "en": "She answers the teacher in German.",
+          "highlight": "dem Lehrer"
+        },
+        {
+          "de": "Wir gratulieren dir zum Geburtstag!",
+          "en": "We congratulate you on your birthday!",
+          "highlight": "dir"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Kannst du ___ bitte helfen? (Can you please help me?)",
+          "acceptedAnswers": [
+            "mir"
+          ],
+          "hint": "'Helfen' takes dative. The dative of 'ich' is...?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Das Auto gehört ___. (The car belongs to her.)",
+          "options": [
+            "sie",
+            "ihre",
+            "ihr",
+            "ihren"
+          ],
+          "correctIndex": 2,
+          "explanation": "'Gehören' takes dative. The dative of 'sie' (she) is 'ihr'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich gratuliere ___ zur Hochzeit! (I congratulate you on the wedding! — informal singular)",
+          "acceptedAnswers": [
+            "dir"
+          ],
+          "hint": "'Gratulieren' takes dative. Dative of 'du' is...?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is correct?",
+          "options": [
+            "Ich antworte den Lehrer.",
+            "Ich antworte dem Lehrer.",
+            "Ich antworte der Lehrer.",
+            "Ich antworte des Lehrers."
+          ],
+          "correctIndex": 1,
+          "explanation": "'Antworten' takes dative. 'Lehrer' is masculine — dative masculine article is 'dem'."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Die Jacke passt ___ perfekt. (The jacket fits him perfectly.)",
+          "acceptedAnswers": [
+            "ihm"
+          ],
+          "hint": "'Passen' takes dative. Dative of 'er' is...?"
+        }
+      ]
+    },
+    {
+      "sectionId": "common-dative-expressions",
+      "title": "Common Dative Expressions",
+      "explanation": "German has many fixed expressions where the experiencer appears in the dative. These are extremely common in daily conversation and should be memorized as chunks. 'Es geht mir gut' (I'm doing well, lit. 'It goes to-me well'), 'Es tut mir leid' (I'm sorry, lit. 'It does to-me sorrow'), 'Es ist mir egal' (I don't care, lit. 'It is to-me equal/same'), 'Es fällt mir schwer' (It's hard for me), 'Es macht mir Spaß' (It's fun for me), 'Es gefällt mir' (I like it). In all of these, 'es' is the grammatical subject and the person is the dative experiencer.",
+      "tip": "These expressions are used constantly. Practice them as fixed phrases: 'Wie geht es dir?' → 'Es geht mir gut.' / 'Es tut mir leid.' / 'Das ist mir egal.'",
+      "examples": [
+        {
+          "de": "Es geht mir gut.",
+          "en": "I'm doing well. (lit. 'It goes well for me.')",
+          "highlight": "mir"
+        },
+        {
+          "de": "Es tut mir leid.",
+          "en": "I'm sorry. (lit. 'It does sorrow to me.')",
+          "highlight": "mir"
+        },
+        {
+          "de": "Es ist mir egal.",
+          "en": "I don't care. (lit. 'It is the same to me.')",
+          "highlight": "mir"
+        },
+        {
+          "de": "Es fällt mir schwer, Deutsch zu lernen.",
+          "en": "It's hard for me to learn German.",
+          "highlight": "mir"
+        },
+        {
+          "de": "Das macht uns Spaß!",
+          "en": "That's fun for us!",
+          "highlight": "uns"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Wie geht es ___? — Danke, es geht ___ gut. (How are you? — Thanks, I'm doing well. — informal)",
+          "acceptedAnswers": [
+            "dir, mir",
+            "dir,mir",
+            "dir , mir"
+          ],
+          "hint": "First blank: dative of 'du'. Second blank: dative of 'ich'."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Es tut ___ leid. (I'm sorry.)",
+          "options": [
+            "mich",
+            "mir",
+            "ich",
+            "mein"
+          ],
+          "correctIndex": 1,
+          "explanation": "'Es tut mir leid' is a fixed dative expression. The experiencer 'mir' is always dative here."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Das ist ___ egal. (He doesn't care.)",
+          "acceptedAnswers": [
+            "ihm"
+          ],
+          "hint": "'Es ist [dative] egal' — the dative of 'er' is...?"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Es ___ mir schwer, früh aufzustehen. (It's hard for me to get up early.)",
+          "options": [
+            "macht",
+            "tut",
+            "geht",
+            "fällt"
+          ],
+          "correctIndex": 3,
+          "explanation": "'Es fällt mir schwer' is the fixed expression meaning 'It's hard/difficult for me.' Literally: 'It falls to me heavily.'"
+        }
+      ]
+    }
+  ]
+}

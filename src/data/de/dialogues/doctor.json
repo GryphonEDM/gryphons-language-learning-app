@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameDe": "Beim Arzt",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Berlin. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "Arzt" },
+    "player": { "name": "Patient" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "Guten Tag! Was fehlt Ihnen?", "translation": "Good day! What is the matter?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["Ich habe Kopfschmerzen und Fieber", "Ich habe starke Kopfschmerzen und Fieber", "Mir tut der Kopf weh und ich habe Fieber", "Ich habe Kopfweh und Fieber"], "keyWords": ["Kopfschmerzen", "Fieber"], "hint": "Ich habe Kopfschmerzen und Fieber." },
+    { "speaker": "npc", "text": "Seit wann sind Sie krank?", "translation": "Since when have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["Seit gestern", "Seit gestern Abend", "Seit gestern Morgen", "Es begann gestern"], "keyWords": ["gestern"], "hint": "Seit gestern." },
+    { "speaker": "npc", "text": "Verstehe. Haben Sie noch andere Symptome? Husten, Schnupfen?", "translation": "I see. Do you have other symptoms? Cough, runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["Ja, ich habe auch Husten", "Ja, ich huste auch", "Ja, dazu habe ich noch Husten", "Ja, auch Husten"], "keyWords": ["Ja", "Husten"], "hint": "Ja, ich habe auch Husten." },
+    { "speaker": "npc", "text": "Ich verschreibe Ihnen ein Medikament. Nehmen Sie es dreimal täglich nach dem Essen.", "translation": "I will prescribe a medication. Take it three times daily after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["Muss ich wiederkommen?", "Soll ich nochmal kommen?", "Muss ich nochmal vorbeikommen?", "Brauche ich einen Folgetermin?"], "keyWords": ["wiederkommen"], "hint": "Muss ich wiederkommen?" },
+    { "speaker": "npc", "text": "Ja, kommen Sie in einer Woche wieder. Wenn es schlimmer wird, rufen Sie sofort an.", "translation": "Yes, come back in a week. If it gets worse, call immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["Danke, Herr Doktor", "Vielen Dank, Herr Doktor", "Danke schön!", "Vielen Dank!"], "keyWords": ["Danke"], "hint": "Danke, Herr Doktor." }
+  ]
+}

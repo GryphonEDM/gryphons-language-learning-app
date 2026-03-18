@@ -69,7 +69,7 @@ export function reviewCard(card, rating, now = Date.now()) {
     // First review (new card or lapsed card restarting)
     stability = INITIAL_STABILITY[rating] || INITIAL_STABILITY.good;
     difficulty = clamp(currentDifficulty + (DIFFICULTY_DELTA[rating] || 0), 0.1, 1.0);
-    newReps = rating === 'again' ? 0 : 1;
+    newReps = 1; // Always advance to reps=1 after first review, even on failure
     lapses = rating === 'again' ? currentLapses + 1 : currentLapses;
   } else {
     // Subsequent review

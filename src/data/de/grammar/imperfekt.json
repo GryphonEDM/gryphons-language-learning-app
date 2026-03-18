@@ -1,0 +1,505 @@
+{
+  "lessonId": "imperfekt",
+  "nameEn": "Simple Past (Präteritum/Imperfekt)",
+  "nameDe": "Das Präteritum (Imperfekt)",
+  "icon": "📖",
+  "tier": "B1",
+  "prerequisites": [
+    "verbs-present",
+    "verbs-past"
+  ],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "praeteritum-vs-perfekt",
+      "title": "When to Use Präteritum vs. Perfekt",
+      "explanation": "German has two main past tenses: Perfekt (conversational past) and Präteritum (simple past/Imperfekt). In spoken German, Perfekt is the default past tense: 'Ich habe gegessen' (I ate). Präteritum is preferred in written German — novels, newspapers, formal reports, and storytelling. However, the verbs 'sein', 'haben', and modal verbs (können, müssen, etc.) almost always use Präteritum even in speech. Nobody says 'Ich habe gehabt' or 'Ich bin gewesen' in normal conversation — instead: 'Ich hatte' and 'Ich war'. Learning Präteritum is essential for reading German texts.",
+      "tip": "Rule of thumb: use Perfekt when speaking, Präteritum when writing. But sein/haben/modals → always Präteritum, even in speech!",
+      "examples": [
+        {
+          "de": "Ich war gestern müde.",
+          "en": "I was tired yesterday. (Präteritum — normal in speech)",
+          "highlight": "war"
+        },
+        {
+          "de": "Er hatte keine Zeit.",
+          "en": "He had no time. (Präteritum — normal in speech)",
+          "highlight": "hatte"
+        },
+        {
+          "de": "Sie ging durch den Park. (written)",
+          "en": "She walked through the park. (Präteritum in narrative)",
+          "highlight": "ging"
+        },
+        {
+          "de": "Sie ist durch den Park gegangen. (spoken)",
+          "en": "She walked through the park. (Perfekt in conversation)",
+          "highlight": "ist ... gegangen"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which past tense is preferred in everyday spoken German for most verbs?",
+          "options": [
+            "Präteritum (simple past)",
+            "Perfekt (conversational past)",
+            "Both are equally common in speech"
+          ],
+          "correctIndex": 1,
+          "explanation": "In spoken German, Perfekt is the default past tense for most verbs. Präteritum is mainly used in writing — except for sein, haben, and modal verbs."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which verbs almost always use Präteritum even in spoken German?",
+          "options": [
+            "Action verbs like gehen, essen, spielen",
+            "sein, haben, and modal verbs",
+            "All verbs use Präteritum equally in speech"
+          ],
+          "correctIndex": 1,
+          "explanation": "sein (war), haben (hatte), and modals (konnte, musste, etc.) are used in Präteritum even in everyday conversation. It sounds unnatural to use Perfekt for these."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You are reading a German novel and see: 'Er öffnete die Tür und ging hinein.' Why is Präteritum used here?",
+          "options": [
+            "Because it happened a long time ago",
+            "Because Präteritum is the standard tense for written narratives",
+            "Because these are irregular verbs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Written German narratives (novels, stories, news articles) use Präteritum as their default past tense, regardless of when the event happened."
+        }
+      ]
+    },
+    {
+      "sectionId": "weak-verbs",
+      "title": "Regular (Weak) Verbs",
+      "explanation": "Regular (weak) verbs form the Präteritum by adding -te to the stem, then personal endings. Take the infinitive, remove -en to get the stem, then add: ich -te, du -test, er/sie/es -te, wir -ten, ihr -tet, sie/Sie -ten. Example: machen → mach- → ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten. If the stem ends in -t or -d, add -ete: arbeiten → ich arbeitete, du arbeitetest. Notice that ich and er/sie/es share the same form (no additional ending).",
+      "tip": "Pattern: stem + te/test/te/ten/tet/ten. The ich and er/sie/es forms are always identical in Präteritum!",
+      "examples": [
+        {
+          "de": "machen → ich machte, du machtest, er machte",
+          "en": "to do/make → I did, you did, he did",
+          "highlight": "te"
+        },
+        {
+          "de": "spielen → sie spielte, wir spielten",
+          "en": "to play → she played, we played",
+          "highlight": "te"
+        },
+        {
+          "de": "wohnen → ich wohnte in Berlin.",
+          "en": "to live → I lived in Berlin.",
+          "highlight": "wohnte"
+        },
+        {
+          "de": "arbeiten → er arbeitete den ganzen Tag.",
+          "en": "to work → He worked the whole day.",
+          "highlight": "arbeitete"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ (machen) seine Hausaufgaben. — He did his homework.",
+          "acceptedAnswers": [
+            "machte"
+          ],
+          "hint": "Stem mach- + te for er/sie/es",
+          "explanation": "machen → mach + te = machte. The er/sie/es form takes -te with no additional ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Präteritum of 'spielen' for 'wir'?",
+          "options": [
+            "wir spielte",
+            "wir spielten",
+            "wir spieltet"
+          ],
+          "correctIndex": 1,
+          "explanation": "wir takes -ten: spiel + ten = spielten."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (wohnen) früher in Hamburg. — I used to live in Hamburg.",
+          "acceptedAnswers": [
+            "wohnte"
+          ],
+          "hint": "Stem wohn- + te for ich",
+          "explanation": "wohnen → wohn + te = wohnte. The ich form takes -te."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each pronoun to the correct Präteritum form of 'machen':",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "machte"
+            },
+            {
+              "left": "du",
+              "right": "machtest"
+            },
+            {
+              "left": "wir",
+              "right": "machten"
+            },
+            {
+              "left": "ihr",
+              "right": "machtet"
+            }
+          ],
+          "explanation": "Weak verb endings: ich -te, du -test, er/sie/es -te, wir -ten, ihr -tet, sie/Sie -ten."
+        }
+      ]
+    },
+    {
+      "sectionId": "strong-verbs",
+      "title": "Irregular (Strong) Verbs",
+      "explanation": "Strong verbs change their stem vowel in the Präteritum and do NOT add -te. Instead, the endings are: ich -(no ending), du -st, er/sie/es -(no ending), wir -en, ihr -t, sie/Sie -en. Again, ich and er/sie/es are identical. You must memorize the Präteritum stem for each strong verb. Common ones: gehen → ging, kommen → kam, sehen → sah, geben → gab, nehmen → nahm, sprechen → sprach, fahren → fuhr, schreiben → schrieb, lesen → las, finden → fand, trinken → trank, essen → aß, helfen → half, stehen → stand, liegen → lag.",
+      "tip": "Strong verbs: vowel changes + zero ending for ich/er. Learn the Präteritum stem — that's the ich/er form. Then add -st (du), -en (wir/sie), -t (ihr).",
+      "examples": [
+        {
+          "de": "gehen → ich ging, du gingst, er ging, wir gingen",
+          "en": "to go → I went, you went, he went, we went",
+          "highlight": "ging"
+        },
+        {
+          "de": "kommen → sie kam, sie kamen",
+          "en": "to come → she came, they came",
+          "highlight": "kam"
+        },
+        {
+          "de": "Er sah den Unfall.",
+          "en": "He saw the accident.",
+          "highlight": "sah"
+        },
+        {
+          "de": "Sie gab mir das Buch.",
+          "en": "She gave me the book.",
+          "highlight": "gab"
+        },
+        {
+          "de": "Wir fuhren nach München.",
+          "en": "We drove to Munich.",
+          "highlight": "fuhren"
+        },
+        {
+          "de": "Er schrieb einen Brief.",
+          "en": "He wrote a letter.",
+          "highlight": "schrieb"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Er ___ (gehen) nach Hause. — He went home.",
+          "acceptedAnswers": [
+            "ging"
+          ],
+          "hint": "gehen → g_ng",
+          "explanation": "gehen → ging. Strong verb with vowel change e→i. No ending for er/sie/es."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Präteritum of 'kommen' for 'sie' (she)?",
+          "options": [
+            "sie kommte",
+            "sie kam",
+            "sie komm"
+          ],
+          "correctIndex": 1,
+          "explanation": "kommen → kam. Strong verb: vowel change o→a, no -te ending. 'kommte' does not exist."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (sprechen) über das Problem. — We spoke about the problem.",
+          "acceptedAnswers": [
+            "sprachen"
+          ],
+          "hint": "sprechen → sprach, then add -en for wir",
+          "explanation": "sprechen → sprach (stem). For wir: sprach + en = sprachen."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each verb to its Präteritum (ich/er) form:",
+          "pairs": [
+            {
+              "left": "gehen (to go)",
+              "right": "ging"
+            },
+            {
+              "left": "sehen (to see)",
+              "right": "sah"
+            },
+            {
+              "left": "nehmen (to take)",
+              "right": "nahm"
+            },
+            {
+              "left": "schreiben (to write)",
+              "right": "schrieb"
+            },
+            {
+              "left": "finden (to find)",
+              "right": "fand"
+            }
+          ],
+          "explanation": "These are the most common strong verbs. The ich and er/sie/es forms are the bare Präteritum stem with no ending."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie ___ (lesen) das Buch in zwei Tagen. — She read the book in two days.",
+          "acceptedAnswers": [
+            "las"
+          ],
+          "hint": "lesen → l_s",
+          "explanation": "lesen → las. Strong verb with vowel change e→a."
+        }
+      ]
+    },
+    {
+      "sectionId": "mixed-verbs",
+      "title": "Mixed Verbs",
+      "explanation": "Mixed verbs combine features of both weak and strong verbs: they change their stem vowel (like strong verbs) AND add the -te suffix (like weak verbs). The most important mixed verbs are: kennen → kannte (to know a person), bringen → brachte (to bring), denken → dachte (to think), wissen → wusste (to know a fact), nennen → nannte (to call/name), rennen → rannte (to run), brennen → brannte (to burn). The endings follow the weak pattern: -te, -test, -te, -ten, -tet, -ten.",
+      "tip": "Mixed verbs = vowel change + weak endings (-te). Think of 'bringen → brachte': both the vowel changes AND it gets -te.",
+      "examples": [
+        {
+          "de": "kennen → ich kannte, du kanntest",
+          "en": "to know (person) → I knew, you knew",
+          "highlight": "kannte"
+        },
+        {
+          "de": "bringen → er brachte",
+          "en": "to bring → he brought",
+          "highlight": "brachte"
+        },
+        {
+          "de": "denken → sie dachte",
+          "en": "to think → she thought",
+          "highlight": "dachte"
+        },
+        {
+          "de": "wissen → ich wusste die Antwort.",
+          "en": "to know (fact) → I knew the answer.",
+          "highlight": "wusste"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (kennen) ihn gut. — I knew him well.",
+          "acceptedAnswers": [
+            "kannte"
+          ],
+          "hint": "kennen → k_nnte (vowel change + -te)",
+          "explanation": "kennen → kannte. Mixed verb: e→a vowel change plus the weak -te ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Präteritum of 'denken' (to think)?",
+          "options": [
+            "ich denkte",
+            "ich dachte",
+            "ich denkete"
+          ],
+          "correctIndex": 1,
+          "explanation": "denken → dachte. Mixed verb with a consonant change as well (nk→ch). Both the stem and the suffix change."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Sie ___ (bringen) Blumen mit. — She brought flowers along.",
+          "acceptedAnswers": [
+            "brachte"
+          ],
+          "hint": "bringen → br_chte",
+          "explanation": "bringen → brachte. The stem changes from 'bring' to 'brach', then adds -te."
+        }
+      ]
+    },
+    {
+      "sectionId": "modal-verbs",
+      "title": "Modal Verbs in Präteritum",
+      "explanation": "Modal verbs are extremely common in Präteritum, even in spoken German. They follow the weak verb pattern (-te endings) but lose their umlaut. können → konnte (could), müssen → musste (had to), dürfen → durfte (was allowed to), wollen → wollte (wanted to), sollen → sollte (was supposed to), mögen → mochte (liked). Conjugation follows the weak pattern: ich konnte, du konntest, er konnte, wir konnten, ihr konntet, sie konnten. Note: sollen and wollen have no umlaut to lose, so their change is minimal.",
+      "tip": "Modal Präteritum = drop the umlaut + add -te endings. können→konnte, müssen→musste, dürfen→durfte. sollen/wollen just add -te.",
+      "examples": [
+        {
+          "de": "Ich konnte nicht schlafen.",
+          "en": "I couldn't sleep.",
+          "highlight": "konnte"
+        },
+        {
+          "de": "Er musste arbeiten.",
+          "en": "He had to work.",
+          "highlight": "musste"
+        },
+        {
+          "de": "Sie durfte nicht rausgehen.",
+          "en": "She wasn't allowed to go out.",
+          "highlight": "durfte"
+        },
+        {
+          "de": "Wir wollten ins Kino gehen.",
+          "en": "We wanted to go to the cinema.",
+          "highlight": "wollten"
+        },
+        {
+          "de": "Er sollte um 8 Uhr kommen.",
+          "en": "He was supposed to come at 8 o'clock.",
+          "highlight": "sollte"
+        },
+        {
+          "de": "Sie mochte keinen Kaffee.",
+          "en": "She didn't like coffee.",
+          "highlight": "mochte"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (können) gestern nicht kommen. — I couldn't come yesterday.",
+          "acceptedAnswers": [
+            "konnte"
+          ],
+          "hint": "können loses its umlaut → konnte",
+          "explanation": "können → konnte. Drop the umlaut (ö→o) and add -te."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match each modal verb to its Präteritum (ich) form:",
+          "pairs": [
+            {
+              "left": "können",
+              "right": "konnte"
+            },
+            {
+              "left": "müssen",
+              "right": "musste"
+            },
+            {
+              "left": "dürfen",
+              "right": "durfte"
+            },
+            {
+              "left": "wollen",
+              "right": "wollte"
+            },
+            {
+              "left": "sollen",
+              "right": "sollte"
+            },
+            {
+              "left": "mögen",
+              "right": "mochte"
+            }
+          ],
+          "explanation": "können→konnte, müssen→musste, dürfen→durfte, wollen→wollte, sollen→sollte, mögen→mochte. All follow the weak -te pattern."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Präteritum of 'müssen' for 'wir'?",
+          "options": [
+            "wir müssten",
+            "wir mussten",
+            "wir müsste"
+          ],
+          "correctIndex": 1,
+          "explanation": "müssen → musste (stem). For wir: musste + n = mussten. Note: 'müssten' is Konjunktiv II (would have to), not Präteritum."
+        }
+      ]
+    },
+    {
+      "sectionId": "sein-haben-werden",
+      "title": "sein, haben, werden in Präteritum",
+      "explanation": "These three verbs are the most important Präteritum forms to know, as they are used constantly — even in speech. sein → war: ich war, du warst, er war, wir waren, ihr wart, sie waren. haben → hatte: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. werden → wurde: ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden. 'sein' is fully irregular. 'haben' follows a mixed pattern (hatt- + weak endings). 'werden' is a strong verb (vowel change e→u).",
+      "tip": "war/hatte/wurde — memorize these three by heart. You will encounter them on every page of German text!",
+      "examples": [
+        {
+          "de": "Ich war krank.",
+          "en": "I was sick.",
+          "highlight": "war"
+        },
+        {
+          "de": "Du warst so nett.",
+          "en": "You were so nice.",
+          "highlight": "warst"
+        },
+        {
+          "de": "Wir hatten viel Spaß.",
+          "en": "We had a lot of fun.",
+          "highlight": "hatten"
+        },
+        {
+          "de": "Er wurde Lehrer.",
+          "en": "He became a teacher.",
+          "highlight": "wurde"
+        },
+        {
+          "de": "Es wurde dunkel.",
+          "en": "It became dark.",
+          "highlight": "wurde"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "fill-blank",
+          "prompt": "Ich ___ (sein) gestern im Büro. — I was at the office yesterday.",
+          "acceptedAnswers": [
+            "war"
+          ],
+          "hint": "sein → w_r for ich",
+          "explanation": "sein → war. Completely irregular. ich war, du warst, er war."
+        },
+        {
+          "type": "fill-blank",
+          "prompt": "Wir ___ (haben) keine Ahnung. — We had no idea.",
+          "acceptedAnswers": [
+            "hatten"
+          ],
+          "hint": "haben → hatte, then add -n for wir",
+          "explanation": "haben → hatte (stem). For wir: hatte + n = hatten."
+        },
+        {
+          "type": "matching",
+          "prompt": "Match the pronoun to the correct Präteritum of 'sein':",
+          "pairs": [
+            {
+              "left": "ich",
+              "right": "war"
+            },
+            {
+              "left": "du",
+              "right": "warst"
+            },
+            {
+              "left": "er/sie/es",
+              "right": "war"
+            },
+            {
+              "left": "wir",
+              "right": "waren"
+            },
+            {
+              "left": "ihr",
+              "right": "wart"
+            }
+          ],
+          "explanation": "sein: ich war, du warst, er war, wir waren, ihr wart, sie/Sie waren."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the Präteritum of 'werden' for 'sie' (she)?",
+          "options": [
+            "sie werdete",
+            "sie wurde",
+            "sie ward"
+          ],
+          "correctIndex": 1,
+          "explanation": "werden → wurde. Strong verb with vowel change. 'ward' is an archaic form sometimes seen in literature, but 'wurde' is the modern standard."
+        }
+      ]
+    }
+  ]
+}

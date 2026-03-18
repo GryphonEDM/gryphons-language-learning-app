@@ -244,12 +244,28 @@ export const MISTAKE_MESSAGES_JA = [
   'ゆっくりでいいですよ！', 'できますよ！', 'もう少し！', '集中して！', '頑張りましょう！'
 ];
 
-// Get a random encouragement message
-export const getRandomEncouragement = () => {
-  return ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)];
+const ENCOURAGEMENT_MAP = {
+  uk: ENCOURAGEMENTS, ru: ENCOURAGEMENTS_RU, de: ENCOURAGEMENTS_DE,
+  es: ENCOURAGEMENTS_ES, fr: ENCOURAGEMENTS_FR, el: ENCOURAGEMENTS_EL,
+  hi: ENCOURAGEMENTS_HI, ar: ENCOURAGEMENTS_AR, ko: ENCOURAGEMENTS_KO,
+  zh: ENCOURAGEMENTS_ZH, ja: ENCOURAGEMENTS_JA,
 };
 
-// Get a random mistake message
-export const getRandomMistakeMessage = () => {
-  return MISTAKE_MESSAGES[Math.floor(Math.random() * MISTAKE_MESSAGES.length)];
+const MISTAKE_MAP = {
+  uk: MISTAKE_MESSAGES, ru: MISTAKE_MESSAGES_RU, de: MISTAKE_MESSAGES_DE,
+  es: MISTAKE_MESSAGES_ES, fr: MISTAKE_MESSAGES_FR, el: MISTAKE_MESSAGES_EL,
+  hi: MISTAKE_MESSAGES_HI, ar: MISTAKE_MESSAGES_AR, ko: MISTAKE_MESSAGES_KO,
+  zh: MISTAKE_MESSAGES_ZH, ja: MISTAKE_MESSAGES_JA,
+};
+
+// Get a random encouragement message for the given language
+export const getRandomEncouragement = (langCode) => {
+  const arr = ENCOURAGEMENT_MAP[langCode] || ENCOURAGEMENTS;
+  return arr[Math.floor(Math.random() * arr.length)];
+};
+
+// Get a random mistake message for the given language
+export const getRandomMistakeMessage = (langCode) => {
+  const arr = MISTAKE_MAP[langCode] || MISTAKE_MESSAGES;
+  return arr[Math.floor(Math.random() * arr.length)];
 };

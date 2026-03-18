@@ -1,0 +1,23 @@
+{
+  "dialogueId": "doctor",
+  "nameEn": "At the Doctor",
+  "nameKo": "병원에서",
+  "icon": "🏥",
+  "context": "You are visiting a doctor at a clinic in Seoul. You are not feeling well and need to describe your symptoms.",
+  "characters": {
+    "npc": { "name": "의사" },
+    "player": { "name": "환자" }
+  },
+  "exchanges": [
+    { "speaker": "npc", "text": "안녕하세요. 어디가 불편하세요?", "translation": "Hello. What seems to be the problem?" },
+    { "speaker": "player", "prompt": "Say you have a headache and a fever", "acceptedResponses": ["두통이 있고 열이 나요", "머리가 아프고 열이 있어요", "두통과 열이 있습니다", "머리가 아프고 열이 나요"], "keyWords": ["두통", "열"], "hint": "두통이 있고 열이 나요." },
+    { "speaker": "npc", "text": "언제부터 아프셨어요?", "translation": "Since when have you been sick?" },
+    { "speaker": "player", "prompt": "Say since yesterday", "acceptedResponses": ["어제부터요", "어제부터 아팠어요", "어제부터입니다", "어제부터 시작했어요"], "keyWords": ["어제"], "hint": "어제부터요." },
+    { "speaker": "npc", "text": "알겠습니다. 다른 증상은 있으세요? 기침이나 콧물은요?", "translation": "I see. Do you have other symptoms? Cough or runny nose?" },
+    { "speaker": "player", "prompt": "Say yes, you also have a cough", "acceptedResponses": ["네, 기침도 나요", "네, 기침도 있어요", "예, 기침도 합니다", "네, 기침도 해요"], "keyWords": ["네", "기침"], "hint": "네, 기침도 나요." },
+    { "speaker": "npc", "text": "약을 처방해 드리겠습니다. 하루에 세 번 식후에 드세요.", "translation": "I will prescribe medicine. Take it three times a day after meals." },
+    { "speaker": "player", "prompt": "Ask if you need to come back", "acceptedResponses": ["다시 와야 하나요?", "또 와야 되나요?", "다시 방문해야 하나요?", "재방문이 필요한가요?"], "keyWords": ["다시", "와야"], "hint": "다시 와야 하나요?" },
+    { "speaker": "npc", "text": "네, 일주일 후에 다시 오세요. 증상이 나빠지면 바로 연락하세요.", "translation": "Yes, come back in a week. If symptoms worsen, contact us immediately." },
+    { "speaker": "player", "prompt": "Say thank you, doctor", "acceptedResponses": ["감사합니다, 선생님", "고맙습니다, 의사 선생님", "감사합니다!", "선생님, 감사합니다"], "keyWords": ["감사합니다"], "hint": "감사합니다, 선생님." }
+  ]
+}

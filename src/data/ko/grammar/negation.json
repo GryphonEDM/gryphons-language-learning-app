@@ -1,0 +1,325 @@
+{
+  "lessonId": "negation",
+  "nameEn": "Negation",
+  "nameKo": "부정문",
+  "icon": "🚫",
+  "tier": "A2",
+  "prerequisites": [
+    "basic-verbs"
+  ],
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "sectionId": "an-short-negation",
+      "title": "안 — Short Negation (Voluntary)",
+      "explanation": "The simplest way to negate a verb in Korean is to place 안 directly before the verb. This indicates that the subject chooses not to do something — it is a voluntary negation. The pattern is: 안 + Verb. Examples: 안 먹어요 (I don't eat), 안 가요 (I don't go), 안 봐요 (I don't watch/look), 안 해요 (I don't do it). For 하다 (to do) compound verbs, 안 goes between the noun and 하다: 공부 안 해요 (I don't study), not 안 공부해요. Similarly: 운동 안 해요 (I don't exercise), 요리 안 해요 (I don't cook). 안 is used in casual and polite speech and is the most common negation form in daily conversation.",
+      "tip": "안 means 'I choose not to' — it is about your will or decision. For 하다 compound verbs, split them: noun + 안 + 하다.",
+      "examples": [
+        {
+          "ko": "저는 고기를 안 먹어요.",
+          "en": "I don't eat meat. (voluntary choice)",
+          "highlight": "안"
+        },
+        {
+          "ko": "오늘 공부 안 해요.",
+          "en": "I'm not studying today.",
+          "highlight": "안 해요"
+        },
+        {
+          "ko": "텔레비전을 안 봐요.",
+          "en": "I don't watch television.",
+          "highlight": "안"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't go' using short negation?",
+          "options": [
+            "가지 않아요",
+            "안 가요",
+            "못 가요"
+          ],
+          "correctIndex": 1,
+          "explanation": "Short voluntary negation places 안 before the verb: 안 가요 (I don't go). 가지 않아요 is the long form, and 못 가요 means 'I can't go.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you negate the 하다 verb '공부하다' (to study) with 안?",
+          "options": [
+            "안 공부해요",
+            "공부 안 해요",
+            "공부해 안요"
+          ],
+          "correctIndex": 1,
+          "explanation": "For 하다 compound verbs, 안 goes between the noun and 하다: 공부 안 해요 (I don't study)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '안 먹어요' mean?",
+          "options": [
+            "I can't eat",
+            "I don't eat (by choice)",
+            "I didn't eat"
+          ],
+          "correctIndex": 1,
+          "explanation": "안 indicates voluntary negation — a deliberate choice not to do something. 안 먹어요 = I don't eat (by choice)."
+        }
+      ]
+    },
+    {
+      "sectionId": "mot-short-negation",
+      "title": "못 — Short Negation (Inability)",
+      "explanation": "못 is placed before a verb to express inability — the subject cannot do something due to circumstances, lack of ability, or external factors. The pattern is: 못 + Verb. Examples: 못 먹어요 (I can't eat), 못 가요 (I can't go), 못 자요 (I can't sleep), 못 해요 (I can't do it). Like 안, for 하다 compound verbs, 못 goes between the noun and 하다: 운동 못 해요 (I can't exercise), 요리 못 해요 (I can't cook). 못 often implies an excuse or inability beyond one's control: 시간이 없어서 못 갔어요 (I couldn't go because I didn't have time).",
+      "tip": "못 means 'I am unable to' — something prevents you. Think of it as 'can't' versus 안 which is 'don't/won't.'",
+      "examples": [
+        {
+          "ko": "매운 음식을 못 먹어요.",
+          "en": "I can't eat spicy food. (inability)",
+          "highlight": "못"
+        },
+        {
+          "ko": "어제 운동 못 했어요.",
+          "en": "I couldn't exercise yesterday.",
+          "highlight": "못 했어요"
+        },
+        {
+          "ko": "한국어를 못 해요.",
+          "en": "I can't speak Korean.",
+          "highlight": "못"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I can't sleep' using short negation?",
+          "options": [
+            "안 자요",
+            "못 자요",
+            "자지 못해요"
+          ],
+          "correctIndex": 1,
+          "explanation": "Short inability negation uses 못 before the verb: 못 자요 (I can't sleep). 안 자요 means 'I don't sleep (by choice).'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '못 읽어요' mean?",
+          "options": [
+            "I don't read",
+            "I can't read",
+            "I won't read"
+          ],
+          "correctIndex": 1,
+          "explanation": "못 expresses inability: 못 읽어요 = I can't read. If you chose not to read, you would say 안 읽어요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you negate '요리하다' (to cook) with 못?",
+          "options": [
+            "못 요리해요",
+            "요리 못 해요",
+            "요리해 못요"
+          ],
+          "correctIndex": 1,
+          "explanation": "For 하다 compound verbs, 못 goes between the noun and 하다: 요리 못 해요 (I can't cook)."
+        }
+      ]
+    },
+    {
+      "sectionId": "ji-anhda-long-negation",
+      "title": "-지 않다 — Long Negation (Voluntary)",
+      "explanation": "The long negation form -지 않다 is an alternative to 안 for voluntary negation. It attaches to the verb stem: Verb Stem + -지 않다. Examples: 먹다 → 먹지 않아요 (I don't eat), 가다 → 가지 않아요 (I don't go), 좋아하다 → 좋아하지 않아요 (I don't like), 공부하다 → 공부하지 않아요 (I don't study). This form is slightly more formal and literary than 안. It is especially useful with 하다 verbs because you don't need to split the compound: 공부하지 않아요 (instead of 공부 안 해요). The -지 않다 form conjugates like a regular verb: 않다 → 않아요 (polite present), 않았어요 (polite past), 않을 거예요 (polite future).",
+      "tip": "-지 않다 is interchangeable with 안 in meaning but sounds more formal. It is especially convenient with long 하다 compound verbs.",
+      "examples": [
+        {
+          "ko": "저는 커피를 마시지 않아요.",
+          "en": "I don't drink coffee.",
+          "highlight": "마시지 않아요"
+        },
+        {
+          "ko": "그 사람을 좋아하지 않아요.",
+          "en": "I don't like that person.",
+          "highlight": "좋아하지 않아요"
+        },
+        {
+          "ko": "어제 공부하지 않았어요.",
+          "en": "I didn't study yesterday. (past tense)",
+          "highlight": "않았어요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I don't go' using long negation?",
+          "options": [
+            "가지 않아요",
+            "안 가지요",
+            "가 않지요"
+          ],
+          "correctIndex": 0,
+          "explanation": "Long negation attaches -지 않다 to the verb stem: 가다 → 가지 않아요 (I don't go)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of '먹지 않다'?",
+          "options": [
+            "먹지 않아요",
+            "먹지 않았어요",
+            "먹지 않을 거예요"
+          ],
+          "correctIndex": 1,
+          "explanation": "않다 conjugates regularly. Past tense: 않다 → 않았어요. So '먹지 않았어요' = I didn't eat."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which form is correct for 'I don't exercise' using -지 않다?",
+          "options": [
+            "운동지 않아요",
+            "운동하지 않아요",
+            "운동 않아요"
+          ],
+          "correctIndex": 1,
+          "explanation": "With 하다 compound verbs, attach -지 않다 to the full verb: 운동하다 → 운동하지 않아요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "안 읽어요 and 읽지 않아요 have what difference?",
+          "options": [
+            "안 읽어요 means inability, 읽지 않아요 means choice",
+            "They mean the same thing but 읽지 않아요 is more formal",
+            "They have completely different meanings"
+          ],
+          "correctIndex": 1,
+          "explanation": "Both mean 'I don't read' (voluntary). The -지 않다 form is simply more formal and literary than the 안 form."
+        }
+      ]
+    },
+    {
+      "sectionId": "ji-mothada-long-negation",
+      "title": "-지 못하다 — Long Negation (Inability)",
+      "explanation": "The long negation form -지 못하다 is the formal equivalent of 못 for expressing inability. It attaches to the verb stem: Verb Stem + -지 못하다. Examples: 먹다 → 먹지 못해요 (I can't eat), 가다 → 가지 못해요 (I can't go), 운동하다 → 운동하지 못해요 (I can't exercise), 자다 → 자지 못해요 (I can't sleep). Like -지 않다, it conjugates regularly: 못하다 → 못해요 (polite present), 못했어요 (polite past), 못할 거예요 (polite future). This form is common in formal writing, speeches, and polite conversation. It is also used when the speaker wants to emphasize the inability or express regret.",
+      "tip": "-지 못하다 sounds more formal and sometimes more apologetic than 못. Use it in writing, formal speech, or when you want to express regret about the inability.",
+      "examples": [
+        {
+          "ko": "약속을 지키지 못했어요.",
+          "en": "I couldn't keep my promise.",
+          "highlight": "지키지 못했어요"
+        },
+        {
+          "ko": "시험에 합격하지 못했어요.",
+          "en": "I couldn't pass the exam.",
+          "highlight": "합격하지 못했어요"
+        },
+        {
+          "ko": "그 영화를 보지 못해요.",
+          "en": "I can't watch that movie.",
+          "highlight": "보지 못해요"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'I can't eat' using long negation?",
+          "options": [
+            "먹지 않아요",
+            "먹지 못해요",
+            "못 먹지요"
+          ],
+          "correctIndex": 1,
+          "explanation": "Long inability negation: verb stem + -지 못하다. 먹다 → 먹지 못해요 (I can't eat). 먹지 않아요 means 'I don't eat' (choice)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past tense of '가지 못하다'?",
+          "options": [
+            "가지 못해요",
+            "가지 못했어요",
+            "가지 못할 거예요"
+          ],
+          "correctIndex": 1,
+          "explanation": "못하다 conjugates regularly in past tense: 못하다 → 못했어요. So 가지 못했어요 = I couldn't go."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence expresses inability with -지 못하다?",
+          "options": [
+            "숙제를 하지 않았어요.",
+            "숙제를 하지 못했어요.",
+            "숙제를 안 했어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "하지 못했어요 expresses inability (I couldn't do the homework). 하지 않았어요 and 안 했어요 both express choice (I didn't do the homework)."
+        }
+      ]
+    },
+    {
+      "sectionId": "an-vs-mot",
+      "title": "안 vs 못 — Choice vs Inability",
+      "explanation": "The key difference between 안 and 못 is volition. 안 (and -지 않다) expresses a deliberate choice — the speaker decides not to do something. 못 (and -지 못하다) expresses inability — something prevents the speaker from doing it. Compare: 안 갔어요 (I didn't go — I chose not to) vs 못 갔어요 (I couldn't go — something prevented me). More examples: 안 먹었어요 (I didn't eat — I chose not to, maybe I wasn't hungry) vs 못 먹었어요 (I couldn't eat — maybe the food was too spicy or I was sick). 안 했어요 (I didn't do it — by choice) vs 못 했어요 (I couldn't do it — I tried but failed, or didn't have time). Note: with adjectives, only 안 is used because adjectives describe states, not abilities: 안 예뻐요 (not pretty), 안 비싸요 (not expensive). You cannot say 못 예뻐요.",
+      "tip": "Ask yourself: 'Was it my choice?' → Use 안. 'Was I unable?' → Use 못. With adjectives, always use 안 (never 못).",
+      "examples": [
+        {
+          "ko": "안 갔어요. (선택)",
+          "en": "I didn't go. (by choice)",
+          "highlight": "안"
+        },
+        {
+          "ko": "못 갔어요. (불가능)",
+          "en": "I couldn't go. (unable to)",
+          "highlight": "못"
+        },
+        {
+          "ko": "이 음식은 안 비싸요.",
+          "en": "This food is not expensive. (안 with adjective)",
+          "highlight": "안"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Your friend was sick and missed the party. Which is correct?",
+          "options": [
+            "파티에 안 갔어요.",
+            "파티에 못 갔어요.",
+            "파티에 가지 않아요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Being sick prevented attendance — this is inability, so use 못: 파티에 못 갔어요 (I couldn't go to the party)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You decided not to eat breakfast this morning. Which is correct?",
+          "options": [
+            "아침을 못 먹었어요.",
+            "아침을 안 먹었어요.",
+            "아침을 먹지 못했어요."
+          ],
+          "correctIndex": 1,
+          "explanation": "Skipping breakfast was a personal choice, so use 안: 아침을 안 먹었어요 (I didn't eat breakfast)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Why can't you say '못 예뻐요'?",
+          "options": [
+            "예쁘다 is an irregular verb",
+            "못 is not used with adjectives, only 안 is",
+            "You need to use the long form instead"
+          ],
+          "correctIndex": 1,
+          "explanation": "못 expresses inability to perform an action. Since adjectives describe states (not actions), you cannot 'be unable to be pretty.' Use 안 with adjectives: 안 예뻐요."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does '한국어를 못 해요' mean?",
+          "options": [
+            "I don't speak Korean (by choice)",
+            "I can't speak Korean (unable)",
+            "I won't speak Korean"
+          ],
+          "correctIndex": 1,
+          "explanation": "못 해요 expresses inability: 한국어를 못 해요 = I can't speak Korean. If you chose not to speak Korean, you would say 한국어를 안 해요."
+        }
+      ]
+    }
+  ]
+}

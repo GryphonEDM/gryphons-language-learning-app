@@ -398,7 +398,7 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             <div style={styles.examples}>
               <h4 style={styles.examplesTitle}>Examples:</h4>
               {currentSection.examples.map((ex, i) => {
-                const nativeText = ex.de ?? ex.uk ?? ex.ru ?? '';
+                const nativeText = ex[langCode] ?? '';
                 return (
                   <div key={i} style={styles.exampleRow}>
                     <div style={styles.exampleUk}>
@@ -458,12 +458,21 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
             )}
 
             <p style={styles.exercisePrompt}>
-              <ClickableText text={currentExercise.prompt} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
-              {ttsEnabled && currentExercise.prompt && currentExercise.type !== 'listen-type' && (
+              <ClickableText text={currentExercise.prompt || currentExercise.question} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} />
+              {ttsEnabled && (currentExercise.prompt || currentExercise.question) && currentExercise.type !== 'listen-type' && (
                 <button style={styles.miniSpeak} onClick={() => {
-                  // Extract Cyrillic text from prompt for TTS
-                  const cyrillicMatch = currentExercise.prompt.match(/[а-яА-ЯіІїЇєЄґҐёЁ][а-яА-ЯіІїЇєЄґҐёЁ\s.,!?''"-]*/);
-                  if (cyrillicMatch) onSpeak(cyrillicMatch[0].trim(), 0.8, ttsVolume);
+                  // Extract target language text from prompt for TTS
+                  // For Cyrillic languages, match Cyrillic runs; for others, strip English parentheticals and use full text
+                  const promptText = currentExercise.prompt || currentExercise.question || '';
+                  const cyrillicLangs = ['uk', 'ru'];
+                  if (cyrillicLangs.includes(langCode)) {
+                    const cyrillicMatch = promptText.match(/[а-яА-ЯіІїЇєЄґҐёЁ][а-яА-ЯіІїЇєЄґҐёЁ\s.,!?''"-]*/);
+                    if (cyrillicMatch) onSpeak(cyrillicMatch[0].trim(), 0.8, ttsVolume);
+                  } else {
+                    // Strip English hints in parentheses and trailing instructions, then speak remaining text
+                    const cleaned = promptText.replace(/\(.*?\)/g, '').replace(/___/g, '').trim();
+                    if (cleaned) onSpeak(cleaned, 0.8, ttsVolume);
+                  }
                 }}>🔊</button>
               )}
             </p>

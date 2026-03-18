@@ -1,0 +1,368 @@
+{
+  "lessonId": "auxiliary-patterns",
+  "nameEn": "Common Auxiliary Patterns",
+  "nameJa": "補助パターン",
+  "icon": "🔧",
+  "tier": "B1",
+  "prerequisites": [
+    "te-form",
+    "negation"
+  ],
+  "estimatedMinutes": 20,
+  "sections": [
+    {
+      "sectionId": "nagara",
+      "title": "～ながら (While Doing Two Things)",
+      "explanation": "～ながら expresses doing two actions simultaneously. The action attached to ながら is the secondary (background) action, while the main verb at the end of the sentence is the primary action. Formation: take the verb masu-stem (remove ます from the polite form) and add ながら. For example, 聴きます → 聴き → 聴きながら. The subject of both actions must be the same person.",
+      "tip": "Think of ながら as 'while ~ing.' The ながら action is always the less important one. You cannot use ながら when two different people are doing the two actions — use あいだに instead.",
+      "examples": [
+        {
+          "ja": "音楽を聴きながら勉強する。",
+          "en": "I study while listening to music.",
+          "highlight": "聴きながら"
+        },
+        {
+          "ja": "歩きながら話しましょう。",
+          "en": "Let's talk while walking.",
+          "highlight": "歩きながら"
+        },
+        {
+          "ja": "テレビを見ながらご飯を食べた。",
+          "en": "I ate while watching TV.",
+          "highlight": "見ながら"
+        },
+        {
+          "ja": "笑いながら手を振った。",
+          "en": "She waved her hand while smiling.",
+          "highlight": "笑いながら"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I read a book while drinking coffee.' (コーヒーを飲む, 本を読む) — Choose the correct sentence:",
+          "options": [
+            "コーヒーを飲みながら本を読む。",
+            "コーヒーを飲むながら本を読む。",
+            "コーヒーを飲んながら本を読む。",
+            "コーヒーを飲めながら本を読む。"
+          ],
+          "correctIndex": 0,
+          "explanation": "飲む → masu-stem 飲み + ながら = 飲みながら. The background action (drinking coffee) takes ながら."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct ながら form of 走る (to run)?",
+          "options": [
+            "走るながら",
+            "走りながら",
+            "走ってながら",
+            "走らながら"
+          ],
+          "correctIndex": 1,
+          "explanation": "走る → masu-stem 走り + ながら = 走りながら."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 泣きながら話した mean?",
+          "options": [
+            "I cried after talking.",
+            "I talked while crying.",
+            "I cried instead of talking.",
+            "I talked and then cried."
+          ],
+          "correctIndex": 1,
+          "explanation": "泣きながら話した = talked while crying. The ながら clause is the background action."
+        }
+      ]
+    },
+    {
+      "sectionId": "zuni-naide",
+      "title": "～ずに / ～ないで (Without Doing)",
+      "explanation": "Both ～ずに and ～ないで mean 'without doing ~.' Formation for ずに: take the nai-stem of the verb and add ずに. For example, 食べない → 食べ → 食べずに. The one important exception is する, which becomes せずに (not しずに). ～ないで is more colloquial: simply use the nai-form and replace い with で — or more simply, ない + で. For example, 食べないで. Both forms are common, but ずに sounds slightly more formal or literary.",
+      "tip": "する → せずに is the one irregular form you must memorize. All other verbs follow the regular pattern. In conversation, ないで is more natural; in writing, ずに is often preferred.",
+      "examples": [
+        {
+          "ja": "朝ごはんを食べずに学校に行った。",
+          "en": "I went to school without eating breakfast.",
+          "highlight": "食べずに"
+        },
+        {
+          "ja": "傘を持たずに出かけた。",
+          "en": "I went out without bringing an umbrella.",
+          "highlight": "持たずに"
+        },
+        {
+          "ja": "何も言わないで帰った。",
+          "en": "He went home without saying anything.",
+          "highlight": "言わないで"
+        },
+        {
+          "ja": "予習せずにテストを受けた。",
+          "en": "I took the test without studying beforehand.",
+          "highlight": "せずに"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I went to bed without brushing my teeth.' (歯を磨く = to brush teeth, 寝た = went to bed) — Choose the correct sentence:",
+          "options": [
+            "歯を磨かないに寝た。",
+            "歯を磨かずに寝た。",
+            "歯を磨くずに寝た。",
+            "歯を磨きずに寝た。"
+          ],
+          "correctIndex": 1,
+          "explanation": "磨く → nai-stem 磨か + ずに = 磨かずに. 歯を磨かずに寝た."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the ずに form of する?",
+          "options": [
+            "しずに",
+            "すずに",
+            "せずに",
+            "さずに"
+          ],
+          "correctIndex": 2,
+          "explanation": "する is irregular: する → せずに. This is the one exception you need to memorize."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence means 'She left without saying goodbye'? (さよならを言う = to say goodbye)",
+          "options": [
+            "さよならを言ってから出た。",
+            "さよならを言いながら出た。",
+            "さよならを言わずに出た。",
+            "さよならを言うまま出た。"
+          ],
+          "correctIndex": 2,
+          "explanation": "言わずに = without saying. 言う → nai-stem 言わ + ずに = 言わずに."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair is correct? (ないで form of 飲む and ずに form of 飲む)",
+          "options": [
+            "飲まないで / 飲まずに",
+            "飲みないで / 飲みずに",
+            "飲むないで / 飲むずに",
+            "飲んないで / 飲んずに"
+          ],
+          "correctIndex": 0,
+          "explanation": "飲む → nai-form 飲まない → 飲まないで. Nai-stem 飲ま + ずに = 飲まずに."
+        }
+      ]
+    },
+    {
+      "sectionId": "mama",
+      "title": "～まま (Leaving As Is)",
+      "explanation": "～まま expresses the idea that a state remains unchanged while something else happens. It can follow verbs in た-form (past tense) to indicate a completed action whose result persists, or it can follow ない-form for a state of not doing something. Formation: verb た-form + まま (e.g., 開けたまま = with it left open), or noun + の + まま (e.g., そのまま = as it is). You can add に or で after まま to connect to the next clause.",
+      "tip": "まま always implies something stays in its current state, whether intentionally or not. 靴を履いたまま家に入った means you entered the house with your shoes still on — the shoes-on state continued.",
+      "examples": [
+        {
+          "ja": "窓を開けたまま寝た。",
+          "en": "I slept with the window left open.",
+          "highlight": "開けたまま"
+        },
+        {
+          "ja": "電気をつけたままにしておいて。",
+          "en": "Leave the light on (as it is).",
+          "highlight": "つけたまま"
+        },
+        {
+          "ja": "靴を履いたまま家に入らないで。",
+          "en": "Don't enter the house with your shoes on.",
+          "highlight": "履いたまま"
+        },
+        {
+          "ja": "立ったまま食べるのは行儀が悪い。",
+          "en": "Eating while standing is bad manners.",
+          "highlight": "立ったまま"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'I fell asleep with the TV on.' (テレビをつける, 寝てしまった = fell asleep) — Choose the correct sentence:",
+          "options": [
+            "テレビをつけながら寝てしまった。",
+            "テレビをつけたまま寝てしまった。",
+            "テレビをつけるまま寝てしまった。",
+            "テレビをつけてまま寝てしまった。"
+          ],
+          "correctIndex": 1,
+          "explanation": "つける → た-form つけた + まま = つけたまま. The TV being on is the persisting state."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does メガネをかけたまま泳いだ mean?",
+          "options": [
+            "I put on glasses after swimming.",
+            "I swam with my glasses still on.",
+            "I took off my glasses before swimming.",
+            "I swam to find my glasses."
+          ],
+          "correctIndex": 1,
+          "explanation": "かけたまま = with (glasses) still on. The state of wearing glasses persisted while swimming."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you say 'Don't leave the door open'? (ドアを開ける = to open the door)",
+          "options": [
+            "ドアを開けたままにしないで。",
+            "ドアを開けないままにして。",
+            "ドアを開けるままにしないで。",
+            "ドアを開けてままにしないで。"
+          ],
+          "correctIndex": 0,
+          "explanation": "開けたまま = left open (persisting state). にしないで = don't leave it (that way)."
+        }
+      ]
+    },
+    {
+      "sectionId": "ni-chigainai",
+      "title": "～に違いない (Must Be, Surely)",
+      "explanation": "～に違いない expresses a strong conviction or certainty — 'it must be ~' or 'there is no doubt that ~.' It attaches to the plain form of verbs, い-adjectives, な-adjectives (+ な or である), and nouns (+ に directly or + である + に違いない). For example: 彼は日本人に違いない (he must be Japanese), 美味しいに違いない (it must be delicious). This pattern is more formal than ～はずだ and expresses stronger certainty.",
+      "tip": "Literally, に違いない means 'there is no mistake in ~.' It sounds quite assertive. In casual speech, people often prefer ～に決まっている for similar strong assumptions, or ～はずだ for slightly softer expectations.",
+      "examples": [
+        {
+          "ja": "彼は日本人に違いない。",
+          "en": "He must be Japanese.",
+          "highlight": "に違いない"
+        },
+        {
+          "ja": "あの店は高いに違いない。",
+          "en": "That restaurant must be expensive.",
+          "highlight": "高いに違いない"
+        },
+        {
+          "ja": "彼女は知っていたに違いない。",
+          "en": "She must have known.",
+          "highlight": "知っていたに違いない"
+        },
+        {
+          "ja": "この問題は間違いに違いない。",
+          "en": "This problem must be a mistake.",
+          "highlight": "間違いに違いない"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "'This book must be interesting.' (面白い = interesting) — Choose the correct sentence:",
+          "options": [
+            "この本は面白いだに違いない。",
+            "この本は面白いに違いない。",
+            "この本は面白くに違いない。",
+            "この本は面白さに違いない。"
+          ],
+          "correctIndex": 1,
+          "explanation": "い-adjectives attach directly to に違いない: 面白い + に違いない."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 彼は嘘をついたに違いない mean?",
+          "options": [
+            "He will probably lie.",
+            "He might have lied.",
+            "He must have lied.",
+            "He never lies."
+          ],
+          "correctIndex": 2,
+          "explanation": "嘘をついた (told a lie) + に違いない = must have lied. It expresses strong certainty about a past event."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "'She must be a teacher.' (先生 = teacher) — Choose the correct sentence:",
+          "options": [
+            "彼女は先生に違いない。",
+            "彼女は先生だに違いない。",
+            "彼女は先生なに違いない。",
+            "彼女は先生のに違いない。"
+          ],
+          "correctIndex": 0,
+          "explanation": "Nouns attach directly: 先生 + に違いない. 彼女は先生に違いない."
+        }
+      ]
+    },
+    {
+      "sectionId": "koto-ni-natta-koto-ni-shita",
+      "title": "～ことになった vs ～ことにした (Decisions)",
+      "explanation": "These two patterns both describe decisions, but from different perspectives. ～ことにした means 'I decided to ~' — the speaker made the decision themselves. ～ことになった means 'it was decided that ~' or 'it turned out that ~' — the decision was made by someone else or by circumstances. Formation: verb dictionary form + ことにする/ことになる. Both can also be used in past tense (ことにした / ことになった) or present tense for habitual decisions.",
+      "tip": "にした = self-decided (active). になった = was decided / it turned out (passive or external). Japanese speakers often use ことになった even for their own decisions to sound humble or to avoid seeming forceful.",
+      "examples": [
+        {
+          "ja": "来月日本に行くことになった。",
+          "en": "It was decided that I'll go to Japan next month.",
+          "highlight": "行くことになった"
+        },
+        {
+          "ja": "来月日本に行くことにした。",
+          "en": "I decided to go to Japan next month.",
+          "highlight": "行くことにした"
+        },
+        {
+          "ja": "毎日運動することにしている。",
+          "en": "I make it a rule to exercise every day.",
+          "highlight": "することにしている"
+        },
+        {
+          "ja": "会議は来週に延期することになった。",
+          "en": "It was decided that the meeting will be postponed to next week.",
+          "highlight": "延期することになった"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Your company transferred you to Osaka. Which sentence is appropriate?",
+          "options": [
+            "大阪に引っ越すことにした。",
+            "大阪に引っ越すことになった。",
+            "大阪に引っ越すことにしている。",
+            "大阪に引っ越すことにする。"
+          ],
+          "correctIndex": 1,
+          "explanation": "Since the company decided (not you), use ことになった to express an external decision: 引っ越すことになった."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "You personally chose to quit smoking. Which sentence fits?",
+          "options": [
+            "タバコをやめることになった。",
+            "タバコをやめることにした。",
+            "タバコをやめることである。",
+            "タバコをやめることだった。"
+          ],
+          "correctIndex": 1,
+          "explanation": "You made the decision yourself, so use ことにした: タバコをやめることにした (I decided to quit smoking)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 毎朝早く起きることにしている mean?",
+          "options": [
+            "I was told to wake up early every morning.",
+            "I make it a rule to wake up early every morning.",
+            "It turned out I wake up early every morning.",
+            "I used to wake up early every morning."
+          ],
+          "correctIndex": 1,
+          "explanation": "ことにしている expresses a personal rule or habitual decision: 'I make it a rule to ~.'"
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which pair correctly matches the meaning? A: 転職することにした B: 転職することになった",
+          "options": [
+            "A: was transferred / B: chose to change jobs",
+            "A: decided to change jobs / B: it was decided (by circumstances) to change jobs",
+            "A: might change jobs / B: will change jobs",
+            "A: is changing jobs / B: changed jobs"
+          ],
+          "correctIndex": 1,
+          "explanation": "にした = the speaker decided (active choice). になった = it was decided by external factors or circumstances."
+        }
+      ]
+    }
+  ]
+}

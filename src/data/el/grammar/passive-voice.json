@@ -1,0 +1,364 @@
+{
+  "lessonId": "passive-voice",
+  "nameEn": "Passive Voice (Παθητική Φωνή)",
+  "nameEl": "Παθητική Φωνή",
+  "icon": "🔀",
+  "tier": "B1",
+  "prerequisites": [
+    "present-tense",
+    "past-tense",
+    "verb-conjugation"
+  ],
+  "estimatedMinutes": 22,
+  "sections": [
+    {
+      "sectionId": "what-is-passive",
+      "title": "What Is Passive Voice in Greek?",
+      "explanation": "In Greek, the passive voice (παθητική φωνή) shows that the subject of the sentence receives the action rather than performing it. Compare: Ο Γιάννης γράφει το γράμμα (Yiannis writes the letter — active) vs Το γράμμα γράφεται από τον Γιάννη (The letter is written by Yiannis — passive). Greek passive voice is formed with special verb endings that are distinct from active endings. These passive endings apply to the present, past, and future tenses. Unlike English, which builds the passive with 'to be' + past participle, Greek has its own dedicated set of verb endings for passive meaning.",
+      "tip": "If the subject does the action, use active voice (-ω endings). If the subject receives the action, use passive voice (-ομαι endings). Greek does not need a helper verb like English 'is/was'.",
+      "examples": [
+        {
+          "el": "Ο Γιάννης γράφει το γράμμα.",
+          "en": "Yiannis writes the letter. (active — subject acts)",
+          "highlight": "γράφει"
+        },
+        {
+          "el": "Το γράμμα γράφεται από τον Γιάννη.",
+          "en": "The letter is written by Yiannis. (passive — subject receives action)",
+          "highlight": "γράφεται"
+        },
+        {
+          "el": "Το φαγητό μαγειρεύεται τώρα.",
+          "en": "The food is being cooked now.",
+          "highlight": "μαγειρεύεται"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What does the passive voice in Greek show?",
+          "options": [
+            "The subject performs the action",
+            "The subject receives the action",
+            "The action happened in the past",
+            "The action will happen in the future"
+          ],
+          "correctIndex": 1,
+          "explanation": "The passive voice (παθητική φωνή) shows that the subject receives the action, not that it performs it. Example: Το γράμμα γράφεται — The letter is written (something/someone writes it)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "How does Greek form the passive voice?",
+          "options": [
+            "With the verb 'είμαι' plus a participle, like English",
+            "With dedicated passive verb endings (-ομαι, -εσαι, -εται, etc.)",
+            "By adding 'δεν' before the active verb"
+          ],
+          "correctIndex": 1,
+          "explanation": "Greek has its own passive endings (-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται) that replace the active endings. No helper verb is needed."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which sentence is in the passive voice? (a) Η Μαρία πλένει τα πιάτα. (b) Τα πιάτα πλένονται.",
+          "options": [
+            "Sentence (a) — Η Μαρία πλένει τα πιάτα",
+            "Sentence (b) — Τα πιάτα πλένονται",
+            "Both sentences are passive"
+          ],
+          "correctIndex": 1,
+          "explanation": "Τα πιάτα πλένονται (The dishes are being washed) is passive — the dishes receive the action. Η Μαρία πλένει τα πιάτα (Maria washes the dishes) is active — Maria performs the action."
+        }
+      ]
+    },
+    {
+      "sectionId": "present-passive",
+      "title": "Present Passive: Endings and Conjugation",
+      "explanation": "The present passive is formed by replacing the active endings with passive ones. The full conjugation for Group 1 verbs (e.g. γράφω → γράφομαι) is: γράφ-ομαι (I am written / I am being written), γράφ-εσαι (you are written), γράφ-εται (he/she/it is written), γραφ-όμαστε (we are written), γράφ-εστε or γραφ-όσαστε (you plural are written), γράφ-ονται (they are written). Another common example: πλένω (I wash) → πλένομαι (I am washed / I wash myself). The present passive can express true passive meaning ('the door is opened by someone') or reflexive/middle meaning ('I wash myself'). Context determines which interpretation applies.",
+      "tip": "The endings -ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται are the core passive set. Notice that the stress often shifts to the ending. The alternative form -όσαστε for 'you plural' is common in speech.",
+      "examples": [
+        {
+          "el": "γράφομαι, γράφεσαι, γράφεται, γραφόμαστε, γράφεστε, γράφονται",
+          "en": "I am written, you are written, he/she/it is written, we are written, you (pl.) are written, they are written",
+          "highlight": "γράφομαι"
+        },
+        {
+          "el": "Πλένομαι κάθε πρωί.",
+          "en": "I wash myself every morning. (reflexive use of passive form)",
+          "highlight": "Πλένομαι"
+        },
+        {
+          "el": "Η πόρτα ανοίγεται αυτόματα.",
+          "en": "The door opens automatically. (middle voice use)",
+          "highlight": "ανοίγεται"
+        },
+        {
+          "el": "Τα μαθήματα διδάσκονται στα ελληνικά.",
+          "en": "The lessons are taught in Greek.",
+          "highlight": "διδάσκονται"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the correct present passive form of 'γράφω' for 'we'?",
+          "options": [
+            "γράφομαι",
+            "γραφόμαστε",
+            "γράφονται",
+            "γράφεστε"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 'we' form of the present passive is -όμαστε: γραφόμαστε (we are written). Note the stress shifts to the ό in the ending."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete the sentence: Τα παιδιά __________ κάθε βράδυ στις οκτώ. (The children are washed every evening at eight.) — from πλένω",
+          "options": [
+            "πλένεται",
+            "πλένομαι",
+            "πλένονται",
+            "πλενόμαστε"
+          ],
+          "correctIndex": 2,
+          "explanation": "Τα παιδιά is third person plural, so the correct passive ending is -ονται: πλένονται (they are washed)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'πλένομαι' mean?",
+          "options": [
+            "I wash (someone else)",
+            "I am washed / I wash myself",
+            "he/she washes",
+            "they are washed"
+          ],
+          "correctIndex": 1,
+          "explanation": "πλένομαι is the first person singular passive of πλένω. It can mean 'I am washed' (true passive) or 'I wash myself' (reflexive/middle meaning)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which is the correct third person singular passive ending?",
+          "options": [
+            "-ομαι",
+            "-εσαι",
+            "-εται",
+            "-ονται"
+          ],
+          "correctIndex": 2,
+          "explanation": "The third person singular passive ending is -εται: γράφεται (it is written), πλένεται (it is washed), ανοίγεται (it is opened)."
+        }
+      ]
+    },
+    {
+      "sectionId": "past-passive",
+      "title": "Past Passive (Αόριστος Παθητικής)",
+      "explanation": "The past passive (αόριστος παθητικής φωνής) describes a completed passive action in the past. It is formed with the passive aorist stem plus the endings: -ηκα (I), -ηκες (you), -ηκε (he/she/it), -ήκαμε (we), -ήκατε (you plural), -ηκαν (they). The passive aorist stem often includes -θ- or -τ- before the endings. Examples: γράφω → γράφτηκα (I was written), χτίζω → χτίστηκα (I was built), ανοίγω → ανοίχτηκα or ανοίχθηκα (I was opened), μαγειρεύω → μαγειρεύτηκα (I was cooked). The stem change varies by verb — some use -φτ-, -χτ-, -στ-, or -θ- — but the personal endings (-ηκα, -ηκες, -ηκε, -ήκαμε, -ήκατε, -ηκαν) are always the same.",
+      "tip": "The past passive endings are very regular: -ηκα, -ηκες, -ηκε, -ήκαμε, -ήκατε, -ηκαν. The tricky part is the stem — learn common patterns: -φτηκα (γράφω → γράφτηκα), -στηκα (χτίζω → χτίστηκα), -χτηκα (ανοίγω → ανοίχτηκα).",
+      "examples": [
+        {
+          "el": "γράφτηκα, γράφτηκες, γράφτηκε, γραφτήκαμε, γραφτήκατε, γράφτηκαν",
+          "en": "I was written, you were written, he/she/it was written, we were written, you (pl.) were written, they were written",
+          "highlight": "γράφτηκα"
+        },
+        {
+          "el": "Το σπίτι χτίστηκε το 1960.",
+          "en": "The house was built in 1960.",
+          "highlight": "χτίστηκε"
+        },
+        {
+          "el": "Η πόρτα ανοίχτηκε ξαφνικά.",
+          "en": "The door was opened suddenly.",
+          "highlight": "ανοίχτηκε"
+        },
+        {
+          "el": "Τα γράμματα στάλθηκαν χθες.",
+          "en": "The letters were sent yesterday.",
+          "highlight": "στάλθηκαν"
+        },
+        {
+          "el": "Το φαγητό μαγειρεύτηκε σε μία ώρα.",
+          "en": "The food was cooked in one hour.",
+          "highlight": "μαγειρεύτηκε"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "What are the past passive (αόριστος) personal endings in Greek?",
+          "options": [
+            "-ηκα, -ηκες, -ηκε, -ήκαμε, -ήκατε, -ηκαν",
+            "-ομαι, -εσαι, -εται, -όμαστε, -εστε, -ονται",
+            "-ω, -εις, -ει, -ουμε, -ετε, -ουν"
+          ],
+          "correctIndex": 0,
+          "explanation": "The past passive endings are -ηκα, -ηκες, -ηκε, -ήκαμε, -ήκατε, -ηκαν. These attach to the passive aorist stem (e.g. γράφτ-ηκα, χτίστ-ηκα)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Translate: Το σπίτι χτίστηκε το 1990.",
+          "options": [
+            "The house is being built in 1990.",
+            "The house was built in 1990.",
+            "The house will be built in 1990.",
+            "They built the house in 1990."
+          ],
+          "correctIndex": 1,
+          "explanation": "χτίστηκε is the third person singular past passive of χτίζω (to build). Το σπίτι χτίστηκε = The house was built."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What is the past passive form of 'γράφω' for 'they'?",
+          "options": [
+            "γράφτηκε",
+            "γράφτηκαν",
+            "γραφτήκαμε",
+            "γράφτηκες"
+          ],
+          "correctIndex": 1,
+          "explanation": "The third person plural past passive ending is -ηκαν: γράφτηκαν (they were written)."
+        }
+      ]
+    },
+    {
+      "sectionId": "deponent-middle-verbs",
+      "title": "Deponent and Middle Voice Verbs",
+      "explanation": "Some Greek verbs use passive-form endings (-ομαι, -άμαι) but do not carry passive meaning at all. These are called deponent or middle voice verbs. They have no active-form counterpart — the passive-looking ending IS the only form. You must memorise these individually. Key deponent verbs: θυμάμαι / θυμούμαι (I remember), χρειάζομαι (I need), κοιμάμαι (I sleep), φοβάμαι / φοβούμαι (I am afraid / I fear), δέχομαι (I accept/receive), λυπάμαι (I am sorry / I feel sad), εύχομαι (I wish), στέκομαι (I stand). These verbs conjugate with passive endings but express actions the subject actively performs or experiences. Do not confuse them with true passive constructions.",
+      "tip": "If a verb only exists in -ομαι/-άμαι form and its meaning is clearly active ('I remember', 'I need', 'I sleep'), it is deponent. There is no *θυμάω or *χρειάζω — only the passive-looking form exists.",
+      "examples": [
+        {
+          "el": "Θυμάμαι τις διακοπές μας στην Κρήτη.",
+          "en": "I remember our holidays in Crete.",
+          "highlight": "Θυμάμαι"
+        },
+        {
+          "el": "Χρειάζομαι βοήθεια με τα ελληνικά.",
+          "en": "I need help with Greek.",
+          "highlight": "Χρειάζομαι"
+        },
+        {
+          "el": "Τα παιδιά κοιμούνται νωρίς.",
+          "en": "The children sleep early.",
+          "highlight": "κοιμούνται"
+        },
+        {
+          "el": "Φοβάμαι τα σκοτεινά.",
+          "en": "I am afraid of the dark.",
+          "highlight": "Φοβάμαι"
+        },
+        {
+          "el": "Δέχεται πολλά δώρα κάθε χρόνο.",
+          "en": "He/she receives many gifts every year.",
+          "highlight": "Δέχεται"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "Which of these is a deponent verb (passive form, active meaning)?",
+          "options": [
+            "γράφομαι (I am written)",
+            "θυμάμαι (I remember)",
+            "πλένομαι (I am washed)",
+            "ανοίγεται (it is opened)"
+          ],
+          "correctIndex": 1,
+          "explanation": "θυμάμαι (I remember) is deponent — it looks passive but means something active. There is no active form *θυμάω. The others are true passives of active verbs."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "What does 'κοιμάμαι' mean?",
+          "options": [
+            "I am put to sleep (by someone)",
+            "I sleep",
+            "I was sleeping",
+            "I will sleep"
+          ],
+          "correctIndex": 1,
+          "explanation": "κοιμάμαι is a deponent verb meaning 'I sleep'. Despite the passive ending -άμαι, the meaning is active. There is no *κοιμάω."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Complete: __________ πολύ νερό για αυτή τη δουλειά. (I need a lot of water for this job.)",
+          "options": [
+            "Χρειάζω",
+            "Χρειάζομαι",
+            "Χρειάζεται",
+            "Χρειαζόμαστε"
+          ],
+          "correctIndex": 1,
+          "explanation": "Χρειάζομαι (I need) is first person singular. It is deponent — there is no active form *χρειάζω. Χρειάζεται means 'he/she/it needs' or 'it is needed'."
+        }
+      ]
+    },
+    {
+      "sectionId": "passive-agent",
+      "title": "Expressing the Agent with από + Accusative",
+      "explanation": "In a passive sentence, if you want to say who performed the action (the agent), you use the preposition από followed by the accusative case. This is equivalent to English 'by'. For example: Το βιβλίο γράφτηκε από τον Καζαντζάκη (The book was written by Kazantzakis). Η ταινία σκηνοθετήθηκε από τον Αγγελόπουλο (The film was directed by Angelopoulos). The agent with από is optional — many passive sentences omit it when the agent is unknown or unimportant: Το παράθυρο σπάστηκε (The window was broken — by whom is unstated). Note that από always takes the accusative: από τον/την/το (singular) or από τους/τις/τα (plural).",
+      "tip": "από + accusative = 'by' in passive sentences. Remember: it is the accusative case after από, not the nominative. Ο Καζαντζάκης (nominative) → από τον Καζαντζάκη (accusative after από).",
+      "examples": [
+        {
+          "el": "Το βιβλίο γράφτηκε από τον Καζαντζάκη.",
+          "en": "The book was written by Kazantzakis.",
+          "highlight": "από τον Καζαντζάκη"
+        },
+        {
+          "el": "Η ταινία σκηνοθετήθηκε από τον Αγγελόπουλο.",
+          "en": "The film was directed by Angelopoulos.",
+          "highlight": "από τον Αγγελόπουλο"
+        },
+        {
+          "el": "Τα λουλούδια φυτεύτηκαν από τη γιαγιά.",
+          "en": "The flowers were planted by grandma.",
+          "highlight": "από τη γιαγιά"
+        },
+        {
+          "el": "Η πρόταση εγκρίθηκε από την επιτροπή.",
+          "en": "The proposal was approved by the committee.",
+          "highlight": "από την επιτροπή"
+        },
+        {
+          "el": "Το παράθυρο σπάστηκε.",
+          "en": "The window was broken. (agent omitted — unknown or unimportant)",
+          "highlight": "σπάστηκε"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "multiple-choice",
+          "prompt": "How do you express 'by someone' (the agent) in a Greek passive sentence?",
+          "options": [
+            "με + nominative",
+            "από + accusative",
+            "σε + genitive",
+            "για + dative"
+          ],
+          "correctIndex": 1,
+          "explanation": "The agent in a passive sentence is expressed with από + accusative: γράφτηκε από τον Γιάννη (was written by Yiannis)."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Translate: Η Ακρόπολη χτίστηκε από τους αρχαίους Αθηναίους.",
+          "options": [
+            "The Acropolis was built by the ancient Athenians.",
+            "The ancient Athenians will build the Acropolis.",
+            "The Acropolis is being built by the ancient Athenians.",
+            "They built the Acropolis for the ancient Athenians."
+          ],
+          "correctIndex": 0,
+          "explanation": "χτίστηκε is past passive ('was built') and από τους αρχαίους Αθηναίους ('by the ancient Athenians') is the agent in the accusative case."
+        },
+        {
+          "type": "multiple-choice",
+          "prompt": "Which case does the noun take after 'από' in a passive agent phrase?",
+          "options": [
+            "Nominative",
+            "Genitive",
+            "Accusative",
+            "Vocative"
+          ],
+          "correctIndex": 2,
+          "explanation": "από always takes the accusative case: από τον Καζαντζάκη (not *από ο Καζαντζάκης). The article and noun must be in the accusative form."
+        }
+      ]
+    }
+  ]
+}

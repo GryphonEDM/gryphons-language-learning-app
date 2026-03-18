@@ -10,15 +10,18 @@ function latinToCyrillic(text) {
   return text.replace(/[a-z]/g, ch => LATIN_TO_CYRILLIC[ch] || ch);
 }
 
-export function normalize(text) {
-  return latinToCyrillic(
-    text
-      .normalize('NFC')
-      .toLowerCase()
-      .replace(/[.,!?;:"""''()—–\-…«»\[\]ʼ']/g, '')
-      .replace(/\s+/g, ' ')
-      .trim()
-  );
+export function normalize(text, langCode) {
+  const cleaned = text
+    .normalize('NFC')
+    .toLowerCase()
+    .replace(/[.,!?;:"""''()—–\-…«»\[\]ʼ']/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // Only apply Latin-to-Cyrillic conversion for Cyrillic languages
+  if (!langCode || langCode === 'uk' || langCode === 'ru') {
+    return latinToCyrillic(cleaned);
+  }
+  return cleaned;
 }
 
 export function levenshtein(a, b) {
@@ -36,18 +39,18 @@ export function levenshtein(a, b) {
   return dp[m][n];
 }
 
-export function similarity(a, b) {
-  const na = normalize(a);
-  const nb = normalize(b);
+export function similarity(a, b, langCode) {
+  const na = normalize(a, langCode);
+  const nb = normalize(b, langCode);
   if (na === nb) return 100;
   const maxLen = Math.max(na.length, nb.length);
   if (maxLen === 0) return 100;
   return Math.round((1 - levenshtein(na, nb) / maxLen) * 100);
 }
 
-export function computeDiff(target, input) {
-  const t = normalize(target);
-  const inp = normalize(input);
+export function computeDiff(target, input, langCode) {
+  const t = normalize(target, langCode);
+  const inp = normalize(input, langCode);
   const diff = [];
   const maxLen = Math.max(t.length, inp.length);
   for (let i = 0; i < maxLen; i++) {
