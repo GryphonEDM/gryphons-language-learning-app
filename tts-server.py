@@ -188,7 +188,7 @@ if not os.path.isfile(DE_MODEL_PATH):
 
 tts_de = torch.package.PackageImporter(DE_MODEL_PATH).load_pickle("tts_models", "model")
 tts_de.to(torch.device('cpu'))
-DE_SPEAKER = 'bernd_ungerer'
+DE_SPEAKER = 'karlsson'
 DE_SAMPLE_RATE = 48000
 print(f"[OK] German TTS model loaded! (speaker: {DE_SPEAKER})")
 
