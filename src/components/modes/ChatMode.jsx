@@ -387,21 +387,52 @@ ${masteredWordsList.length > 0 ? `\n- The student has marked these words as mast
     ttsSpeakingRef.current = true;
     setIsSpeaking(true);
     setTtsHighlight(null);
-    // Highlight all words and speak the full text in one call
-    // speakMixed handles language splitting internally
-    const allWords = text.split(/\s+/).filter(Boolean);
-    const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
-    const wordCount = allWords.length - startFromWordIdx;
-    // For Korean: use time-based progress to update word highlighting
     if (langCode === 'ko') {
+      // Korean: single TTS call with time-based word highlighting (MMS-TTS is slow)
+      const allWords = text.split(/\s+/).filter(Boolean);
+      const speakText = startFromWordIdx > 0 ? allWords.slice(startFromWordIdx).join(' ') : text;
+      const wordCount = allWords.length - startFromWordIdx;
       setTtsProgressCallback((progress) => {
         const currentWord = startFromWordIdx + Math.floor(progress * wordCount);
         setTtsHighlight({ msgIdx, wordStart: currentWord, wordEnd: Math.min(currentWord + 1, allWords.length) });
       });
+      setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
+      try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+      setTtsProgressCallback(null);
+    } else {
+      // All other languages: split by punctuation, preserve parenthesized groups
+      const chunks = [];
+      const parts = text.split(/(\([^)]*\))/g);
+      for (const part of parts) {
+        if (!part) continue;
+        if (part.startsWith('(')) {
+          chunks.push(part);
+        } else {
+          const subs = part.split(/(?<=[.!?;,])\s+/);
+          for (const sub of subs) {
+            if (sub.trim()) chunks.push(sub.trim());
+          }
+        }
+      }
+      let wordOffset = 0;
+      for (const chunk of chunks) {
+        if (!ttsSpeakingRef.current) break;
+        const words = chunk.split(/\s+/).filter(Boolean);
+        const chunkEnd = wordOffset + words.length;
+        if (chunkEnd <= startFromWordIdx) { wordOffset = chunkEnd; continue; }
+        let speakText = chunk;
+        let highlightStart = wordOffset;
+        if (wordOffset < startFromWordIdx) {
+          const skipWords = startFromWordIdx - wordOffset;
+          speakText = words.slice(skipWords).join(' ');
+          highlightStart = startFromWordIdx;
+        }
+        setTtsHighlight({ msgIdx, wordStart: highlightStart, wordEnd: chunkEnd });
+        try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
+        wordOffset = chunkEnd;
+        if (!ttsSpeakingRef.current) break;
+      }
     }
-    setTtsHighlight({ msgIdx, wordStart: startFromWordIdx, wordEnd: allWords.length });
-    try { await onSpeak(speakText, 0.8, ttsVolume); } catch {}
-    setTtsProgressCallback(null);
     setTtsHighlight(null);
     ttsSpeakingRef.current = false;
     setIsSpeaking(false);
