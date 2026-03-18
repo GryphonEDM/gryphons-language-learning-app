@@ -74,6 +74,182 @@
           "explanation": "The text says 'друзі зібрали гроші і викупили його свободу'."
         }
       ]
+    },
+    {
+      "passageId": "p10",
+      "title": "Технології в Україні",
+      "titleEn": "Technology in Ukraine",
+      "difficulty": "B1",
+      "text": "За останні двадцять років Україна стала одним із найбільших центрів інформаційних технологій у Східній Європі. У країні працює понад триста тисяч IT-спеціалістів. Українські програмісти відомі у всьому світі завдяки високій кваліфікації та конкурентним цінам. Багато міжнародних компаній мають офіси розробки в Києві, Харкові, Львові та Дніпрі. Крім того, в Україні з'явилося чимало успішних стартапів. Наприклад, додаток Grammarly, який допомагає виправляти граматичні помилки англійською мовою, був створений українськими розробниками. Під час повномасштабного вторгнення технологічна галузь продемонструвала надзвичайну стійкість. Багато компаній перейшли на віддалену роботу і продовжили свою діяльність. Уряд також активно впроваджує цифрові послуги через додаток «Дія», який дозволяє громадянам отримувати державні послуги онлайн.",
+      "wordGlossary": {
+        "за останні": "over the last",
+        "центрів": "centers",
+        "інформаційних технологій": "information technology",
+        "Східній": "Eastern",
+        "понад": "over/more than",
+        "програмісти": "programmers",
+        "завдяки": "thanks to",
+        "кваліфікації": "qualification/skills",
+        "конкурентним": "competitive",
+        "цінам": "prices",
+        "міжнародних": "international",
+        "розробки": "development",
+        "з'явилося": "appeared/emerged",
+        "чимало": "quite a few",
+        "стартапів": "startups",
+        "додаток": "application/app",
+        "виправляти": "to correct",
+        "помилки": "mistakes/errors",
+        "розробниками": "developers",
+        "повномасштабного": "full-scale",
+        "вторгнення": "invasion",
+        "галузь": "industry/sector",
+        "продемонструвала": "demonstrated",
+        "стійкість": "resilience",
+        "перейшли": "switched/transitioned",
+        "віддалену": "remote",
+        "діяльність": "activity/operations",
+        "уряд": "government",
+        "впроваджує": "implements/introduces",
+        "цифрові": "digital",
+        "послуги": "services",
+        "громадянам": "citizens",
+        "державні": "state/government"
+      },
+      "questions": [
+        {
+          "question": "How many IT specialists work in Ukraine?",
+          "options": [
+            "Over one hundred thousand",
+            "Over three hundred thousand",
+            "Over fifty thousand",
+            "Over one million"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'працює понад триста тисяч IT-спеціалістів'."
+        },
+        {
+          "question": "What is Grammarly?",
+          "options": [
+            "A social media platform",
+            "A video game",
+            "An app that helps correct English grammar mistakes",
+            "A Ukrainian search engine"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'додаток Grammarly, який допомагає виправляти граматичні помилки англійською мовою'."
+        },
+        {
+          "question": "What is the Diia app used for?",
+          "options": [
+            "Ordering food delivery",
+            "Learning Ukrainian",
+            "Receiving government services online",
+            "Booking train tickets"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says the app 'дозволяє громадянам отримувати державні послуги онлайн'."
+        },
+        {
+          "question": "How did the tech industry respond during the full-scale invasion?",
+          "options": [
+            "Most companies closed down",
+            "Companies moved abroad permanently",
+            "Companies switched to remote work and continued operations",
+            "The industry collapsed"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Багато компаній перейшли на віддалену роботу і продовжили свою діяльність'."
+        }
+      ]
+    },
+    {
+      "passageId": "p11",
+      "title": "Екологічні виклики",
+      "titleEn": "Environmental Challenges",
+      "difficulty": "B1",
+      "text": "Україна стикається з багатьма екологічними проблемами. Однією з найсерйозніших є забруднення повітря у великих містах, спричинене промисловими підприємствами та автомобільним транспортом. Річки та озера також потерпають від промислових відходів. Дніпро, головна водна артерія країни, потребує постійного очищення. Ще одна важлива проблема — вирубка лісів у Карпатах. Ліси захищають гори від зсувів та повеней. Коли дерева зникають, ризик стихійних лих зростає. Після Чорнобильської катастрофи 1986 року зона відчуження стала унікальним природним заповідником, де дика природа відновилася без присутності людей. Український уряд поступово розвиває відновлювану енергетику. Сонячні та вітрові електростанції з'являються в різних регіонах країни. Проте шлях до екологічно чистого майбутнього ще довгий.",
+      "wordGlossary": {
+        "стикається": "faces/encounters",
+        "екологічними": "environmental/ecological",
+        "найсерйозніших": "most serious",
+        "забруднення": "pollution",
+        "повітря": "air",
+        "спричинене": "caused by",
+        "промисловими": "industrial",
+        "підприємствами": "enterprises/factories",
+        "транспортом": "transport",
+        "потерпають": "suffer",
+        "відходів": "waste",
+        "водна артерія": "waterway/artery",
+        "потребує": "needs/requires",
+        "очищення": "cleaning/purification",
+        "вирубка": "deforestation/felling",
+        "лісів": "forests",
+        "захищають": "protect",
+        "зсувів": "landslides",
+        "повеней": "floods",
+        "зникають": "disappear",
+        "стихійних лих": "natural disasters",
+        "зростає": "grows/increases",
+        "катастрофи": "catastrophe/disaster",
+        "зона відчуження": "exclusion zone",
+        "заповідником": "nature reserve",
+        "дика природа": "wildlife",
+        "відновилася": "recovered/restored itself",
+        "присутності": "presence",
+        "відновлювану": "renewable",
+        "енергетику": "energy",
+        "електростанції": "power stations",
+        "шлях": "path/way",
+        "майбутнього": "future"
+      },
+      "questions": [
+        {
+          "question": "What is one of the most serious environmental problems in Ukrainian cities?",
+          "options": [
+            "Noise pollution",
+            "Air pollution from industry and cars",
+            "Water shortages",
+            "Overpopulation"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'забруднення повітря у великих містах, спричинене промисловими підприємствами та автомобільним транспортом'."
+        },
+        {
+          "question": "Why is deforestation in the Carpathians dangerous?",
+          "options": [
+            "It destroys animal habitats",
+            "It reduces tourism",
+            "It increases the risk of landslides and floods",
+            "It causes air pollution"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Ліси захищають гори від зсувів та повеней. Коли дерева зникають, ризик стихійних лих зростає'."
+        },
+        {
+          "question": "What happened in the Chornobyl exclusion zone after the disaster?",
+          "options": [
+            "It was rebuilt as a city",
+            "It became a military base",
+            "Wildlife recovered without human presence",
+            "It was turned into farmland"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'дика природа відновилася без присутності людей'."
+        },
+        {
+          "question": "What types of renewable energy are developing in Ukraine?",
+          "options": [
+            "Nuclear and hydroelectric",
+            "Solar and wind",
+            "Geothermal and tidal",
+            "Biomass and hydrogen"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'Сонячні та вітрові електростанції з'являються в різних регіонах країни'."
+        }
+      ]
     }
   ]
 }

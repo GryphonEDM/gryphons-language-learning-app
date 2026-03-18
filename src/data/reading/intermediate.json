@@ -123,6 +123,168 @@
           "explanation": "The text says 'медівник — медовий торт' (honey cake)."
         }
       ]
+    },
+    {
+      "passageId": "p8",
+      "title": "Українські традиції",
+      "titleEn": "Ukrainian Traditions",
+      "difficulty": "A2",
+      "text": "Україна має багато цікавих традицій. Одна з найважливіших — це Великдень. На Великдень українці фарбують яйця і печуть паски. Писанки — це яйця, розписані воском і фарбою. Кожен візерунок має своє значення. На Різдво українці готують дванадцять страв. Головна страва — кутя, яку роблять з пшениці, маку та меду. Ще одна відома традиція — вишиванка. Це сорочка з вишивкою. Кожний регіон має свій особливий стиль вишивки. У третій четвер травня українці святкують День вишиванки. У цей день люди одягають вишиванки на роботу та в школу.",
+      "wordGlossary": {
+        "традицій": "traditions",
+        "найважливіших": "most important",
+        "Великдень": "Easter",
+        "фарбують": "dye/paint",
+        "яйця": "eggs",
+        "печуть": "bake",
+        "паски": "Easter breads",
+        "писанки": "decorated Easter eggs",
+        "розписані": "painted/decorated",
+        "воском": "wax",
+        "фарбою": "paint/dye",
+        "візерунок": "pattern",
+        "значення": "meaning",
+        "Різдво": "Christmas",
+        "готують": "prepare/cook",
+        "дванадцять": "twelve",
+        "кутя": "kutia (wheat porridge)",
+        "пшениці": "wheat",
+        "маку": "poppy seeds",
+        "вишиванка": "embroidered shirt",
+        "сорочка": "shirt",
+        "вишивкою": "embroidery",
+        "регіон": "region",
+        "особливий": "special/distinctive",
+        "четвер": "Thursday",
+        "травня": "of May",
+        "одягають": "wear/put on"
+      },
+      "questions": [
+        {
+          "question": "What are pysanky?",
+          "options": [
+            "Easter breads",
+            "Embroidered shirts",
+            "Eggs decorated with wax and paint",
+            "Traditional songs"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Писанки — це яйця, розписані воском і фарбою'."
+        },
+        {
+          "question": "What is the main dish at Ukrainian Christmas?",
+          "options": [
+            "Borscht",
+            "Kutia",
+            "Varenyky",
+            "Holubtsi"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'Головна страва — кутя'."
+        },
+        {
+          "question": "When is Vyshyvanka Day celebrated?",
+          "options": [
+            "The first Monday of June",
+            "March 9",
+            "August 24",
+            "The third Thursday of May"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'У третій четвер травня українці святкують День вишиванки'."
+        },
+        {
+          "question": "How many dishes do Ukrainians prepare for Christmas?",
+          "options": [
+            "Seven",
+            "Ten",
+            "Twelve",
+            "Five"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'українці готують дванадцять страв'."
+        }
+      ]
+    },
+    {
+      "passageId": "p9",
+      "title": "Подорож потягом",
+      "titleEn": "Travel by Train",
+      "difficulty": "A2",
+      "text": "Минулого літа я їздив потягом зі Львова до Одеси. Я купив квиток на вокзалі за два дні до поїздки. Потяг відправлявся о дев'ятій вечора. Я мав місце у купейному вагоні. У купе було чотири полиці. Мої сусіди були дуже привітні — подружжя з Вінниці та студент із Харкова. Ми пили чай і розмовляли. Провідниця принесла нам ковдри і подушки. Вранці я прокинувся і побачив у вікні море. Потяг прибув до Одеси о десятій ранку. Подорож тривала тринадцять годин, але мені не було нудно. Я дуже люблю подорожувати потягом по Україні.",
+      "wordGlossary": {
+        "минулого літа": "last summer",
+        "їздив": "traveled",
+        "потягом": "by train",
+        "квиток": "ticket",
+        "вокзалі": "train station",
+        "поїздки": "trip",
+        "відправлявся": "departed",
+        "місце": "seat/place",
+        "купейному": "compartment (adj.)",
+        "вагоні": "car/wagon",
+        "купе": "compartment",
+        "полиці": "bunks/berths",
+        "сусіди": "neighbors",
+        "привітні": "friendly",
+        "подружжя": "married couple",
+        "розмовляли": "talked/chatted",
+        "провідниця": "train attendant (female)",
+        "ковдри": "blankets",
+        "подушки": "pillows",
+        "прокинувся": "woke up",
+        "побачив": "saw",
+        "прибув": "arrived",
+        "тривала": "lasted",
+        "нудно": "boring",
+        "подорожувати": "to travel"
+      },
+      "questions": [
+        {
+          "question": "Where did the narrator travel from and to?",
+          "options": [
+            "From Kyiv to Kharkiv",
+            "From Lviv to Odesa",
+            "From Odesa to Lviv",
+            "From Dnipro to Kyiv"
+          ],
+          "correctIndex": 1,
+          "explanation": "The text says 'я їздив потягом зі Львова до Одеси'."
+        },
+        {
+          "question": "Who were the narrator's compartment neighbors?",
+          "options": [
+            "Two students",
+            "A family with children",
+            "A married couple and a student",
+            "An elderly woman"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'подружжя з Вінниці та студент із Харкова'."
+        },
+        {
+          "question": "How long did the journey last?",
+          "options": [
+            "Eight hours",
+            "Ten hours",
+            "Fifteen hours",
+            "Thirteen hours"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'Подорож тривала тринадцять годин'."
+        },
+        {
+          "question": "What did the narrator see in the morning through the window?",
+          "options": [
+            "Mountains",
+            "A forest",
+            "Fields",
+            "The sea"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'побачив у вікні море'."
+        }
+      ]
     }
   ]
 }

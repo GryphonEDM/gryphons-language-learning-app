@@ -120,6 +120,134 @@
           "explanation": "The text says 'Ми збираємося за столом і обідаємо разом'."
         }
       ]
+    },
+    {
+      "passageId": "p6",
+      "title": "Моя школа",
+      "titleEn": "My School",
+      "difficulty": "A1",
+      "text": "Мене звати Дмитро. Мені чотирнадцять років. Я ходжу до школи кожного дня. Моя школа велика і красива. У ній три поверхи. Мій улюблений предмет — математика. Я також люблю фізкультуру, бо можна бігати і грати у футбол. Наша вчителька з української мови дуже добра. Уроки починаються о восьмій ранку і закінчуються о другій годині. Після школи я обідаю вдома і роблю домашнє завдання. Потім я граю з друзями у дворі.",
+      "wordGlossary": {
+        "ходжу": "go/attend",
+        "кожного дня": "every day",
+        "поверхи": "floors/stories",
+        "улюблений": "favorite",
+        "предмет": "subject",
+        "фізкультуру": "physical education",
+        "бігати": "to run",
+        "грати": "to play",
+        "вчителька": "teacher (female)",
+        "добра": "kind/good",
+        "уроки": "lessons",
+        "починаються": "begin",
+        "закінчуються": "end/finish",
+        "ранку": "morning",
+        "обідаю": "have lunch",
+        "вдома": "at home",
+        "домашнє завдання": "homework",
+        "друзями": "friends",
+        "дворі": "yard/courtyard"
+      },
+      "questions": [
+        {
+          "question": "How old is Dmytro?",
+          "options": [
+            "Twelve years old",
+            "Thirteen years old",
+            "Fifteen years old",
+            "Fourteen years old"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'Мені чотирнадцять років' (I am fourteen years old)."
+        },
+        {
+          "question": "What is Dmytro's favorite subject?",
+          "options": [
+            "Ukrainian language",
+            "Physical education",
+            "History",
+            "Mathematics"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'Мій улюблений предмет — математика'."
+        },
+        {
+          "question": "What does Dmytro do after school?",
+          "options": [
+            "Goes to a tutor",
+            "Watches TV",
+            "Eats lunch at home and does homework",
+            "Goes to the library"
+          ],
+          "correctIndex": 2,
+          "explanation": "The text says 'Після школи я обідаю вдома і роблю домашнє завдання'."
+        }
+      ]
+    },
+    {
+      "passageId": "p7",
+      "title": "На ринку",
+      "titleEn": "At the Market",
+      "difficulty": "A1",
+      "text": "Сьогодні субота. Ми з мамою йдемо на ринок. На ринку є багато овочів і фруктів. Мама купує картоплю, моркву, цибулю та помідори. Я хочу яблука і груші. Продавець каже: «Беріть, вони дуже свіжі!» Ми також купуємо сир, сметану і хліб. Біля входу бабуся продає мед. Ми беремо одну банку меду. Ринок завжди шумний і веселий. Мені подобається ходити сюди з мамою.",
+      "wordGlossary": {
+        "субота": "Saturday",
+        "ринок": "market",
+        "овочів": "vegetables",
+        "фруктів": "fruits",
+        "купує": "buys",
+        "моркву": "carrot",
+        "цибулю": "onion",
+        "помідори": "tomatoes",
+        "яблука": "apples",
+        "груші": "pears",
+        "продавець": "seller/vendor",
+        "свіжі": "fresh",
+        "біля": "near/by",
+        "входу": "entrance",
+        "бабуся": "grandmother",
+        "продає": "sells",
+        "мед": "honey",
+        "банку": "jar",
+        "шумний": "noisy",
+        "веселий": "cheerful/fun",
+        "подобається": "like/enjoy"
+      },
+      "questions": [
+        {
+          "question": "What day do they go to the market?",
+          "options": [
+            "Sunday",
+            "Friday",
+            "Wednesday",
+            "Saturday"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'Сьогодні субота' (Today is Saturday)."
+        },
+        {
+          "question": "What does the grandmother sell near the entrance?",
+          "options": [
+            "Flowers",
+            "Bread",
+            "Milk",
+            "Honey"
+          ],
+          "correctIndex": 3,
+          "explanation": "The text says 'Біля входу бабуся продає мед'."
+        },
+        {
+          "question": "What fruit does the narrator want?",
+          "options": [
+            "Apples and pears",
+            "Bananas and oranges",
+            "Grapes and plums",
+            "Cherries and watermelon"
+          ],
+          "correctIndex": 0,
+          "explanation": "The text says 'Я хочу яблука і груші'."
+        }
+      ]
     }
   ]
 }
