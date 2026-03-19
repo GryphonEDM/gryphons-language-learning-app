@@ -122,7 +122,7 @@ npm run dev             # Starts web app on :5173
 
 ## Text-to-Speech Details
 
-All TTS is server-side — no browser TTS is used. Multiple engines are used to get the best quality per language:
+Multiple engines are used to get the best quality per language:
 
 | Language | Engine | Model / Voice | Notes |
 |----------|--------|---------------|-------|
