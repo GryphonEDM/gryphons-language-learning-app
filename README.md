@@ -141,6 +141,16 @@ All TTS is server-side — no browser TTS is used. Multiple engines are used to 
 
 **Mixed-language TTS:** When the AI tutor mixes languages (e.g. German text with English translations in parentheses), the app automatically routes each part to the correct TTS engine. For non-Latin-script languages (Ukrainian, Russian, Greek, Arabic, Korean, Chinese, Japanese), script detection splits native vs English text at the word level.
 
+## Speech-to-Text (Whisper)
+
+The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects the language being spoken and transcribes it accurately.
+
+- **macOS (Apple Silicon):** Uses [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) — optimized for M-series chips, very fast (~500ms)
+- **Windows / Linux / Intel Mac:** Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CPU-based, works everywhere
+
+The Whisper model (~500MB) downloads automatically on first use. After that, speech-to-text works fully offline.
+
+
 ### Architecture
 
 - **tts-server.py** (port 3002) — Main server handling Silero, MMS-TTS, and Piper models. Proxies Kokoro requests to the sidecar.
@@ -161,15 +171,6 @@ Chat Practice lets you have free-form conversations with an AI language tutor. I
 4. Go to the **Developer** tab (or **Local Server**) and click **Start Server** — it runs on `http://localhost:1234` by default
 
 That's it. The app automatically connects to LM Studio when you open Chat Practice. If LM Studio isn't running, the rest of the app works normally.
-
-#### Speech-to-Text (Whisper)
-
-The chat mode includes a microphone button for voice input powered by [Whisper](https://github.com/openai/whisper) running locally. It auto-detects the language being spoken and transcribes it accurately.
-
-- **macOS (Apple Silicon):** Uses [MLX Whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper) — optimized for M-series chips, very fast (~500ms)
-- **Windows / Linux / Intel Mac:** Uses [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CPU-based, works everywhere
-
-The Whisper model (~500MB) downloads automatically on first use. After that, speech-to-text works fully offline.
 
 ## How to play
 
