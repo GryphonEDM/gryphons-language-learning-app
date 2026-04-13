@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
@@ -8,10 +8,13 @@ import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { cefrMatches } from '../../utils/speechUtils.js';
 import useNextShortcut from '../../hooks/useNextShortcut.js';
+import { loadSentenceBank, pickSentence, formatGrammarLabels } from '../../utils/sentenceBankLoader.js';
+import useSelfCorrection from '../../hooks/useSelfCorrection.js';
+import { buildInterleavedSession } from '../../utils/interleaver.js';
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
-export default function TranslationPracticeMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
+export default function TranslationPracticeMode({ langCode = 'uk', vocabularySets = [], vocabularyMastery = {}, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
   const [pickerStep, setPickerStep] = useState('category'); // category, cefr
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -30,6 +33,15 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   const [usedHints, setUsedHints] = useState(false);
   const [sessionUsedHints, setSessionUsedHints] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const selfCorrection = useSelfCorrection({ maxAttempts: 3 });
+  const [sentenceBank, setSentenceBank] = useState(null);
+  const sbMountedRef = useRef(true);
+
+  useEffect(() => {
+    sbMountedRef.current = true;
+    loadSentenceBank(langCode).then(bank => { if (sbMountedRef.current) setSentenceBank(bank); });
+    return () => { sbMountedRef.current = false; };
+  }, [langCode]);
 
   const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
   const langNative = { uk: 'Українська', ru: 'Русский', de: 'Deutsch', es: 'Español', fr: 'Français', el: 'Ελληνικά', hi: 'हिन्दी', ar: 'العربية', ko: '한국어', zh: '中文', ja: '日本語' }[langCode] || 'Українська';
@@ -67,8 +79,13 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   }, [langCode, vocabularySets]);
 
   const startExercise = useCallback((cat, cefr) => {
-    const all = getFilteredWords(cat, cefr);
-    const shuffled = [...all].sort(() => Math.random() - 0.5);
+    let all;
+    if (cat === 'smart-mix') {
+      all = buildInterleavedSession({ vocabularySets, vocabularyMastery, langCode, count: 10 });
+    } else {
+      all = getFilteredWords(cat, cefr);
+    }
+    const shuffled = cat === 'smart-mix' ? all : [...all].sort(() => Math.random() - 0.5);
     setWords(shuffled.slice(0, 10));
     setCurrentIdx(0);
     setUserInput('');
@@ -143,15 +160,32 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
     if (!userInput.trim() || submitted) return;
 
     const accepted = getAcceptedAnswers();
-    const isCorrect = accepted.includes(userInput.trim().toLowerCase());
+
+    const result = selfCorrection.handleAttempt(userInput.trim(), (input) => ({
+      correct: accepted.includes(input.toLowerCase()),
+    }));
+
+    if (!result.resolved) {
+      // Not yet resolved — user gets another try
+      // Auto-escalate hint on retry
+      if (hintLevel < 2) {
+        setHintLevel(prev => Math.min(prev + 1, 2));
+        setUsedHints(true);
+        setSessionUsedHints(true);
+      }
+      setUserInput('');
+      return;
+    }
+
+    // Resolved — show final feedback
     const xpBase = 20;
     const hintPenalty = hintLevel * 5;
-    const pointsEarned = isCorrect ? Math.max(5, xpBase - hintPenalty) : 3;
+    const pointsEarned = result.correct ? Math.max(5, xpBase - hintPenalty) : 3;
 
-    setFeedback({ correct: isCorrect });
+    setFeedback({ correct: result.correct });
     setSubmitted(true);
 
-    if (isCorrect) {
+    if (result.correct) {
       setScore(prev => prev + 1);
       setStreak(prev => {
         const next = prev + 1;
@@ -171,10 +205,12 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
     if (onTrackProgress) {
       onTrackProgress('translation', {
         word: currentWord[langCode],
-        correct: isCorrect,
+        correct: result.correct,
         direction,
         userAnswer: userInput.trim(),
         expected: answer,
+        selfCorrected: result.selfCorrected,
+        attemptsBeforeCorrect: result.attemptsUsed,
       });
     }
   };
@@ -187,6 +223,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
       setHintLevel(0);
       setUsedHints(false);
       setSubmitted(false);
+      selfCorrection.reset();
     } else {
       setPhase('complete');
       if (onComplete) {
@@ -238,6 +275,14 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
           <>
             <div style={styles.pickerSectionTitle}>Choose a word category</div>
             <div style={styles.categoryGrid}>
+              <div
+                style={{ ...styles.categoryCard, border: '2px solid #51cf66', background: 'rgba(81,207,102,0.08)' }}
+                onClick={() => startExercise('smart-mix', 'all')}
+              >
+                <div style={styles.categoryIcon}>🧠</div>
+                <div style={styles.categoryName}>Smart Mix</div>
+                <div style={styles.categoryMeta}>Interleaved from all categories</div>
+              </div>
               <div
                 style={{ ...styles.categoryCard, border: '2px solid #ffd700' }}
                 onClick={handleSelectAllWords}
@@ -395,6 +440,21 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
           )}
         </div>
 
+        {/* Self-correction retry message */}
+        {selfCorrection.retryMessage && !submitted && (
+          <div style={styles.retryArea}>
+            <div style={styles.retryMessage}>{selfCorrection.retryMessage}</div>
+            {selfCorrection.hintLevel > 0 && answer && (
+              <div style={styles.retryHint}>
+                {selfCorrection.getHintFor(answer)}
+              </div>
+            )}
+            <div style={styles.retryAttempts}>
+              Attempt {selfCorrection.attempt} of 3
+            </div>
+          </div>
+        )}
+
         {feedback && (
           <div style={{
             ...styles.feedbackBox,
@@ -406,7 +466,9 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
               color: feedback.correct ? '#4ade80' : '#f87171',
               marginBottom: '0.5rem'
             }}>
-              {feedback.correct ? 'Correct!' : 'Not quite...'}
+              {feedback.correct
+                ? (selfCorrection.attempt > 1 ? 'Got it on retry!' : 'Correct!')
+                : 'Not quite...'}
             </div>
             {!feedback.correct && (
               <div style={{ color: 'rgba(255,255,255,0.8)' }}>
@@ -415,6 +477,29 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
                 </strong>
               </div>
             )}
+            {(() => {
+              const targetWord = currentWord?.[langCode] || currentWord?.uk;
+              const picked = pickSentence(sentenceBank, targetWord, currentIdx);
+              if (!picked) return null;
+              const grammarLabels = formatGrammarLabels(picked.g);
+              return (
+                <div style={{ marginTop: '0.75rem', padding: '0.6rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px' }}>
+                  <div style={{ fontSize: '0.95rem', marginBottom: '0.2rem' }}>{picked.s}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>{picked.en}</div>
+                  {grammarLabels.length > 0 && (
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem', marginTop: '0.3rem' }}>
+                      {grammarLabels.map((label, i) => (
+                        <span key={i} style={{
+                          fontSize: '0.65rem', padding: '0.1rem 0.4rem', borderRadius: '8px',
+                          background: 'rgba(77,171,247,0.15)', color: 'rgba(77,171,247,0.8)',
+                          border: '1px solid rgba(77,171,247,0.2)', fontWeight: 500,
+                        }}>{label}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
           </div>
         )}
       </div>
@@ -627,5 +712,30 @@ const styles = {
     fontSize: '1rem',
     color: '#ffd700',
     fontWeight: '600'
-  }
+  },
+  retryArea: {
+    background: 'rgba(255,165,0,0.1)',
+    border: '1px solid rgba(255,165,0,0.3)',
+    borderRadius: '12px',
+    padding: '1rem',
+    marginBottom: '1rem',
+    textAlign: 'center',
+  },
+  retryMessage: {
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: '#ffa94d',
+    marginBottom: '0.5rem',
+  },
+  retryHint: {
+    fontFamily: 'monospace',
+    fontSize: '1.3rem',
+    letterSpacing: '3px',
+    color: '#ffd700',
+    marginBottom: '0.4rem',
+  },
+  retryAttempts: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.4)',
+  },
 };

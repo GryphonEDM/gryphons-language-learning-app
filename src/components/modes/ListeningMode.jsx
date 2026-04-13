@@ -8,14 +8,24 @@ import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import { cefrMatches } from '../../utils/speechUtils.js';
 import useNextShortcut from '../../hooks/useNextShortcut.js';
+import useSelfCorrection from '../../hooks/useSelfCorrection.js';
+import { computeSentenceDiff, extractWordResults } from '../../utils/sentenceDiff.js';
+import { buildInterleavedSession } from '../../utils/interleaver.js';
+import { loadSentenceBank, pickSentence, formatGrammarLabels } from '../../utils/sentenceBankLoader.js';
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
+const DICTATION_LEVELS = [
+  { id: 'words', label: 'Words', desc: 'Single words' },
+  { id: 'phrases', label: 'Phrases', desc: '2-3 word phrases' },
+  { id: 'sentences', label: 'Sentences', desc: 'Full sentences' },
+];
 
-export default function ListeningMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
+export default function ListeningMode({ langCode = 'uk', vocabularySets = [], vocabularyMastery = {}, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' };
   const langName = langNames[langCode] || 'Ukrainian';
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
-  const [pickerStep, setPickerStep] = useState('category'); // category, cefr
+  const [pickerStep, setPickerStep] = useState('level'); // level, category, cefr
+  const [dictationLevel, setDictationLevel] = useState('words');
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cefrFilter, setCefrFilter] = useState('all');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
@@ -29,6 +39,15 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
   const [playbackRate, setPlaybackRate] = useState(1);
   const [usedSlowSpeed, setUsedSlowSpeed] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const selfCorrection = useSelfCorrection({ maxAttempts: 3 });
+  const [sentenceBank, setSentenceBank] = useState(null);
+  const sbMountedRef = useRef(true);
+
+  useEffect(() => {
+    sbMountedRef.current = true;
+    loadSentenceBank(langCode).then(bank => { if (sbMountedRef.current) setSentenceBank(bank); });
+    return () => { sbMountedRef.current = false; };
+  }, [langCode]);
 
   const getFilteredWords = useCallback((cat, cefr) => {
     if (cat) {
@@ -62,9 +81,95 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
     return getAllVocabularyWords(langCode);
   }, [langCode, vocabularySets]);
 
+  const [sentenceData, setSentenceData] = useState([]);
+
+  // Load sentence data for current language
+  useEffect(() => {
+    const loadSentences = async () => {
+      try {
+        let data;
+        if (langCode === 'uk') {
+          data = (await import('../../data/sentences.json')).default;
+        } else {
+          data = (await import(`../../data/${langCode}/sentences.json`)).default;
+        }
+        setSentenceData(data.sentences || []);
+      } catch {
+        setSentenceData([]);
+      }
+    };
+    loadSentences();
+  }, [langCode]);
+
+  const getSentenceItems = useCallback((cefr) => {
+    let filtered = sentenceData;
+    if (cefr && cefr !== 'all') {
+      filtered = filtered.filter(s => s.difficulty === cefr);
+    }
+    return filtered.map(s => ({
+      [langCode]: s[langCode] || s.uk,
+      en: s.en,
+      phonetic: '',
+      source: 'sentence',
+      isSentence: true,
+      words: s.words,
+    }));
+  }, [sentenceData, langCode]);
+
+  const getPhraseItems = useCallback((cat, cefr) => {
+    // Build 2-3 word phrases from vocabulary
+    const allWords = getFilteredWords(cat, cefr);
+    const phrases = [];
+    const shuffled = [...allWords].sort(() => Math.random() - 0.5);
+    for (let i = 0; i < shuffled.length - 1; i += 2) {
+      const w1 = shuffled[i][langCode] || shuffled[i].uk;
+      const w2 = shuffled[i + 1]?.[langCode] || shuffled[i + 1]?.uk;
+      if (w1 && w2) {
+        phrases.push({
+          [langCode]: `${w1} ${w2}`,
+          en: `${shuffled[i].en} / ${shuffled[i + 1].en}`,
+          phonetic: '',
+          source: 'phrase',
+          isPhrase: true,
+          componentWords: [w1, w2],
+        });
+      }
+    }
+    // Also include short sentences (2-3 words) if available
+    const shortSentences = sentenceData
+      .filter(s => {
+        const wc = (s.words || []).length;
+        return wc >= 2 && wc <= 3 && (!cefr || cefr === 'all' || s.difficulty === cefr);
+      })
+      .map(s => ({
+        [langCode]: s[langCode] || s.uk,
+        en: s.en,
+        phonetic: '',
+        source: 'sentence',
+        isPhrase: true,
+        words: s.words,
+      }));
+    return [...shortSentences, ...phrases];
+  }, [getFilteredWords, sentenceData, langCode]);
+
   const startExercise = useCallback((cat, cefr) => {
-    const all = getFilteredWords(cat, cefr);
-    const shuffled = [...all].sort(() => Math.random() - 0.5);
+    let all;
+    if (cat === 'smart-mix') {
+      // Interleaved session across multiple categories
+      all = buildInterleavedSession({
+        vocabularySets,
+        vocabularyMastery,
+        langCode,
+        count: 10,
+      });
+    } else if (dictationLevel === 'sentences') {
+      all = getSentenceItems(cefr);
+    } else if (dictationLevel === 'phrases') {
+      all = getPhraseItems(cat, cefr);
+    } else {
+      all = getFilteredWords(cat, cefr);
+    }
+    const shuffled = cat === 'smart-mix' ? all : [...all].sort(() => Math.random() - 0.5);
     setWords(shuffled.slice(0, 10));
     setCurrentIdx(0);
     setUserInput('');
@@ -72,8 +177,21 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
     setScore(0);
     setXpEarned(0);
     setSubmitted(false);
+    selfCorrection.reset();
     setPhase('playing');
-  }, [getFilteredWords]);
+  }, [getFilteredWords, getSentenceItems, getPhraseItems, dictationLevel, vocabularySets, vocabularyMastery, langCode]);
+
+  const handleSelectLevel = useCallback((level) => {
+    setDictationLevel(level);
+    if (level === 'sentences') {
+      // Sentences skip category picker — go straight to CEFR
+      setSelectedCategory(null);
+      setCefrFilter('all');
+      setPickerStep('cefr');
+    } else {
+      setPickerStep('category');
+    }
+  }, []);
 
   const handleSelectCategory = useCallback((cat) => {
     setSelectedCategory(cat);
@@ -101,9 +219,11 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
   const handleBackToPicker = useCallback(() => {
     if (pickerStep === 'cefr') {
-      setPickerStep('category');
+      setPickerStep(dictationLevel === 'sentences' ? 'level' : 'category');
+    } else if (pickerStep === 'category') {
+      setPickerStep('level');
     }
-  }, [pickerStep]);
+  }, [pickerStep, dictationLevel]);
 
   const currentWord = words[currentIdx];
 
@@ -153,29 +273,78 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
   const handleSubmit = () => {
     if (!userInput.trim() || submitted) return;
 
-    const targetWord = currentWord[langCode] || currentWord.uk;
-    const isCorrect = userInput.trim().toLowerCase() === targetWord.toLowerCase();
-    const diff = computeDiff(targetWord, userInput.trim());
-    const pointsEarned = isCorrect ? 20 : 5;
+    const targetText = currentWord[langCode] || currentWord.uk;
+    const isSentenceLevel = currentWord.isSentence || currentWord.isPhrase;
 
-    setFeedback({ correct: isCorrect, diff });
-    setSubmitted(true);
+    const result = selfCorrection.handleAttempt(userInput.trim(), (input) => {
+      if (isSentenceLevel) {
+        const sentResult = computeSentenceDiff(targetText, input);
+        return { correct: sentResult.isExactMatch || sentResult.accuracy >= 90 };
+      }
+      return { correct: input.toLowerCase() === targetText.toLowerCase() };
+    });
 
-    if (isCorrect) {
-      setScore(prev => prev + 1);
+    if (!result.resolved) {
+      // Auto-replay at slower speed on first retry
+      if (result.attemptsUsed === 1 && ttsEnabled && onSpeak) {
+        onSpeak(targetText, Math.max(0.5, playbackRate - 0.25), ttsVolume);
+      }
+      setUserInput('');
+      return;
     }
 
-    setXpEarned(prev => prev + pointsEarned);
-    if (onAddXP) onAddXP(pointsEarned);
+    // Resolved — compute and show feedback
+    if (isSentenceLevel) {
+      const sentResult = computeSentenceDiff(targetText, userInput.trim());
+      const pointsEarned = sentResult.accuracy >= 90 ? 30 : sentResult.accuracy >= 50 ? 15 : 5;
+      setFeedback({ correct: result.correct, sentenceDiff: sentResult, isSentence: true });
+      setSubmitted(true);
 
-    if (onTrackProgress) {
-      onTrackProgress('listening', {
-        word: targetWord,
-        correct: isCorrect,
-        userAnswer: userInput.trim(),
-        expected: targetWord,
-        responseMs: Date.now() - promptStartTime,
-      });
+      if (result.correct) setScore(prev => prev + 1);
+      setXpEarned(prev => prev + pointsEarned);
+      if (onAddXP) onAddXP(pointsEarned);
+
+      // Track individual words through SRS
+      if (onTrackProgress) {
+        const { correct: correctWords, incorrect: incorrectWords } = extractWordResults(sentResult.diff);
+        correctWords.forEach(w => {
+          onTrackProgress('listening', {
+            word: w, correct: true, expected: w,
+            context: 'sentence', responseMs: result.responseMs,
+            selfCorrected: result.selfCorrected,
+            attemptsBeforeCorrect: result.attemptsUsed,
+          });
+        });
+        incorrectWords.forEach(w => {
+          onTrackProgress('listening', {
+            word: w, correct: false, expected: w,
+            userAnswer: '', context: 'sentence',
+            responseMs: result.responseMs,
+          });
+        });
+      }
+    } else {
+      // Single word mode
+      const diff = computeDiff(targetText, userInput.trim());
+      const pointsEarned = result.correct ? 20 : 5;
+      setFeedback({ correct: result.correct, diff });
+      setSubmitted(true);
+
+      if (result.correct) setScore(prev => prev + 1);
+      setXpEarned(prev => prev + pointsEarned);
+      if (onAddXP) onAddXP(pointsEarned);
+
+      if (onTrackProgress) {
+        onTrackProgress('listening', {
+          word: targetText,
+          correct: result.correct,
+          userAnswer: userInput.trim(),
+          expected: targetText,
+          responseMs: result.responseMs,
+          selfCorrected: result.selfCorrected,
+          attemptsBeforeCorrect: result.attemptsUsed,
+        });
+      }
     }
   };
 
@@ -185,6 +354,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
       setUserInput('');
       setFeedback(null);
       setSubmitted(false);
+      selfCorrection.reset();
     } else {
       setPhase('complete');
       if (onComplete) {
@@ -211,10 +381,50 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
       <div className="mode-container" style={styles.container}>
         <ModeHeader title="Listening Practice" subtitle="Listen and type what you hear" icon="👂" onExit={onExit} />
 
+        {pickerStep === 'level' && (
+          <>
+            <div style={styles.pickerSectionTitle}>Choose dictation level</div>
+            <div style={styles.cefrGrid}>
+              {DICTATION_LEVELS.map(level => (
+                <div
+                  key={level.id}
+                  style={{
+                    ...styles.cefrCard,
+                    ...(dictationLevel === level.id ? styles.cefrCardActive : {}),
+                    minWidth: '160px',
+                  }}
+                  onClick={() => handleSelectLevel(level.id)}
+                >
+                  <div style={styles.cefrLevel}>
+                    {level.id === 'words' ? '📝' : level.id === 'phrases' ? '📋' : '📄'} {level.label}
+                  </div>
+                  <div style={styles.cefrDesc}>{level.desc}</div>
+                  {level.id === 'sentences' && sentenceData.length === 0 && (
+                    <div style={{ fontSize: '0.75rem', color: '#f87171', marginTop: '0.3rem' }}>
+                      No sentences available for {langName}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
         {pickerStep === 'category' && (
           <>
+            <button style={styles.backStepBtn} onClick={handleBackToPicker}>
+              ← Back to level
+            </button>
             <div style={styles.pickerSectionTitle}>Choose a word category</div>
             <div style={styles.categoryGrid}>
+              <div
+                style={{ ...styles.categoryCard, border: '2px solid #51cf66', background: 'rgba(81,207,102,0.08)' }}
+                onClick={() => startExercise('smart-mix', 'all')}
+              >
+                <div style={styles.categoryIcon}>🧠</div>
+                <div style={styles.categoryName}>Smart Mix</div>
+                <div style={styles.categoryMeta}>Interleaved from all categories</div>
+              </div>
               <div
                 style={{ ...styles.categoryCard, border: '2px solid #ffd700' }}
                 onClick={handleSelectAllWords}
@@ -318,10 +528,14 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
           </div>
 
       <div style={styles.card}>
-        <p style={styles.instruction}>Listen to the word and type what you hear</p>
+        <p style={styles.instruction}>
+          {dictationLevel === 'sentences' ? 'Listen to the sentence and type what you hear'
+            : dictationLevel === 'phrases' ? 'Listen to the phrase and type what you hear'
+            : 'Listen to the word and type what you hear'}
+        </p>
 
         <button style={styles.playBtn} onClick={handlePlay}>
-          🔊 Play Word
+          🔊 Play {dictationLevel === 'words' ? 'Word' : dictationLevel === 'phrases' ? 'Phrase' : 'Sentence'}
         </button>
 
         <div style={styles.speedControls}>
@@ -350,7 +564,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
                 else handleSubmit();
               }
             }}
-            placeholder={`Type the ${langName} word...`}
+            placeholder={`Type the ${langName} ${dictationLevel === 'sentences' ? 'sentence' : dictationLevel === 'phrases' ? 'phrase' : 'word'}...`}
             disabled={submitted}
             autoFocus
           />
@@ -365,34 +579,109 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
           )}
         </div>
 
+        {/* Self-correction retry message */}
+        {selfCorrection.retryMessage && !submitted && (
+          <div style={styles.retryArea}>
+            <div style={styles.retryMessage}>{selfCorrection.retryMessage}</div>
+            {selfCorrection.hintLevel > 0 && currentWord && (
+              <div style={styles.retryHint}>
+                {selfCorrection.getHintFor(currentWord[langCode] || currentWord.uk)}
+              </div>
+            )}
+            <div style={styles.retryAttempts}>
+              Attempt {selfCorrection.attempt} of 3
+            </div>
+          </div>
+        )}
+
         {feedback && (
           <div style={styles.feedbackArea}>
             <div style={{
               ...styles.feedbackHeader,
               color: feedback.correct ? '#4ade80' : '#f87171'
             }}>
-              {feedback.correct ? 'Correct!' : 'Not quite...'}
+              {feedback.correct
+                ? (selfCorrection.attempt > 1 ? 'Got it on retry!' : 'Correct!')
+                : 'Not quite...'}
             </div>
 
-            <div style={styles.diffDisplay}>
-              {feedback.diff.map((d, i) => (
-                <span key={i} style={{
-                  color: diffColors[d.type],
-                  fontWeight: '700',
-                  fontSize: '1.5rem',
-                  textDecoration: d.type === 'extra' ? 'line-through' : 'none'
-                }}>
-                  {d.char}
-                </span>
-              ))}
-            </div>
+            {feedback.isSentence && feedback.sentenceDiff ? (
+              <>
+                <div style={{ ...styles.diffDisplay, letterSpacing: 'normal' }}>
+                  {feedback.sentenceDiff.diff.map((d, i) => (
+                    <span key={i} style={{
+                      color: diffColors[d.type] || '#fff',
+                      fontWeight: '700',
+                      fontSize: '1.2rem',
+                      textDecoration: d.type === 'extra' ? 'line-through' : 'none',
+                      marginRight: '0.4rem',
+                      display: 'inline-block',
+                    }}>
+                      {d.word}
+                      {d.type === 'wrong' && d.expected && (
+                        <span style={{ fontSize: '0.75rem', color: '#fbbf24', display: 'block' }}>
+                          ({d.expected})
+                        </span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+                <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.5rem' }}>
+                  Accuracy: {feedback.sentenceDiff.accuracy}% ({feedback.sentenceDiff.correct}/{feedback.sentenceDiff.total} words)
+                </div>
+                {!feedback.correct && (
+                  <div style={styles.correctAnswer}>
+                    Correct: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></strong>
+                    {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
+                  </div>
+                )}
+              </>
+            ) : (
+              <>
+                <div style={styles.diffDisplay}>
+                  {feedback.diff && feedback.diff.map((d, i) => (
+                    <span key={i} style={{
+                      color: diffColors[d.type],
+                      fontWeight: '700',
+                      fontSize: '1.5rem',
+                      textDecoration: d.type === 'extra' ? 'line-through' : 'none'
+                    }}>
+                      {d.char}
+                    </span>
+                  ))}
+                </div>
 
-            {!feedback.correct && (
-              <div style={styles.correctAnswer}>
-                Correct answer: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></strong>
-                {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
-              </div>
+                {!feedback.correct && (
+                  <div style={styles.correctAnswer}>
+                    Correct answer: <strong><ClickableText text={currentWord[langCode] || currentWord.uk} onWordClick={handleWordClick} activeWord={selectedWord?.word} langCode={langCode} /></strong>
+                    {currentWord.en && <span style={styles.translation}> ({currentWord.en})</span>}
+                  </div>
+                )}
+              </>
             )}
+            {(() => {
+              const targetWord = currentWord?.[langCode] || currentWord?.uk;
+              const picked = pickSentence(sentenceBank, targetWord, currentIdx);
+              if (!picked) return null;
+              const grammarLabels = formatGrammarLabels(picked.g);
+              return (
+                <div style={{ marginTop: '0.75rem', padding: '0.6rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px' }}>
+                  <div style={{ fontSize: '0.95rem', marginBottom: '0.2rem' }}>{picked.s}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontStyle: 'italic' }}>{picked.en}</div>
+                  {grammarLabels.length > 0 && (
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem', marginTop: '0.3rem' }}>
+                      {grammarLabels.map((label, i) => (
+                        <span key={i} style={{
+                          fontSize: '0.65rem', padding: '0.1rem 0.4rem', borderRadius: '8px',
+                          background: 'rgba(77,171,247,0.15)', color: 'rgba(77,171,247,0.8)',
+                          border: '1px solid rgba(77,171,247,0.2)', fontWeight: 500,
+                        }}>{label}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
           </div>
         )}
       </div>
@@ -594,5 +883,30 @@ const styles = {
     fontSize: '1rem',
     color: '#ffd700',
     fontWeight: '600'
-  }
+  },
+  retryArea: {
+    background: 'rgba(255,165,0,0.1)',
+    border: '1px solid rgba(255,165,0,0.3)',
+    borderRadius: '12px',
+    padding: '1rem',
+    marginBottom: '1rem',
+    textAlign: 'center',
+  },
+  retryMessage: {
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: '#ffa94d',
+    marginBottom: '0.5rem',
+  },
+  retryHint: {
+    fontFamily: 'monospace',
+    fontSize: '1.3rem',
+    letterSpacing: '3px',
+    color: '#ffd700',
+    marginBottom: '0.4rem',
+  },
+  retryAttempts: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.4)',
+  },
 };

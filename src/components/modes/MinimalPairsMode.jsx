@@ -7,11 +7,30 @@ import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
 import useNextShortcut from '../../hooks/useNextShortcut.js';
 import { MINIMAL_PAIRS } from '../../data/minimalPairs.js';
+import { selectAdaptivePairs, getContrastSummary } from '../../utils/hvpt.js';
+import useBackgroundNoise from '../../hooks/useBackgroundNoise.js';
 
-export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
+export default function MinimalPairsMode({ langCode = 'uk', vocabularyMastery = {}, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese', en: 'English' };
   const langName = langNames[langCode] || 'Ukrainian';
   const langData = MINIMAL_PAIRS[langCode];
+  const noise = useBackgroundNoise();
+
+  // Persistent per-contrast accuracy (loaded from vocabularyMastery)
+  const [contrastAccuracy, setContrastAccuracy] = useState(() => {
+    // Aggregate from vocabularyMastery minimalPairAccuracy fields
+    const acc = {};
+    for (const data of Object.values(vocabularyMastery || {})) {
+      if (data.minimalPairAccuracy) {
+        for (const [cat, vals] of Object.entries(data.minimalPairAccuracy)) {
+          if (!acc[cat]) acc[cat] = { correct: 0, total: 0 };
+          acc[cat].correct += vals.correct || 0;
+          acc[cat].total += vals.total || 0;
+        }
+      }
+    }
+    return acc;
+  });
 
   const [phase, setPhase] = useState('picker');
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -43,11 +62,16 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
 
   const startRound = useCallback((category) => {
     if (!langData) return;
-    let filtered = category
-      ? langData.pairs.filter(p => p.category === category)
-      : [...langData.pairs];
-    const shuffled = filtered.sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, Math.min(10, shuffled.length));
+    let selected;
+    if (category === 'adaptive') {
+      // HVPT adaptive mode — weight toward struggling categories
+      selected = selectAdaptivePairs(langData.pairs, contrastAccuracy, 10);
+    } else if (category) {
+      const filtered = langData.pairs.filter(p => p.category === category);
+      selected = [...filtered].sort(() => Math.random() - 0.5).slice(0, 10);
+    } else {
+      selected = [...langData.pairs].sort(() => Math.random() - 0.5).slice(0, 10);
+    }
     setPairs(selected);
     setCurrentIdx(0);
     setScore(0);
@@ -80,11 +104,18 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
     // Track per-category stats
     const pair = pairs[currentIdx];
     if (pair) {
+      const cat = pair.category;
       setCategoryStats(prev => {
-        const cat = pair.category;
         const existing = prev[cat] || { correct: 0, total: 0 };
         return { ...prev, [cat]: { correct: existing.correct + (isCorrect ? 1 : 0), total: existing.total + 1 } };
       });
+      // Update persistent contrast accuracy for HVPT adaptive
+      setContrastAccuracy(prev => {
+        const existing = prev[cat] || { correct: 0, total: 0 };
+        return { ...prev, [cat]: { correct: existing.correct + (isCorrect ? 1 : 0), total: existing.total + 1 } };
+      });
+      // Report to background noise adaptive
+      noise.reportAccuracy(isCorrect);
     }
 
     if (onTrackProgress) {
@@ -165,6 +196,14 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
         <div style={styles.pickerSectionTitle}>Choose a sound category</div>
         <div style={styles.categoryGrid}>
           <div
+            style={{ ...styles.categoryCard, border: '2px solid #51cf66', background: 'rgba(81,207,102,0.08)' }}
+            onClick={() => { setSelectedCategory('adaptive'); startRound('adaptive'); }}
+          >
+            <div style={styles.categoryIcon}>🧠</div>
+            <div style={styles.categoryName}>Adaptive</div>
+            <div style={styles.categoryMeta}>Focuses on your weak contrasts</div>
+          </div>
+          <div
             style={{ ...styles.categoryCard, border: '2px solid #ffd700' }}
             onClick={() => { setSelectedCategory(null); startRound(null); }}
           >
@@ -174,6 +213,7 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
           </div>
 
           {langData.categories.map(cat => {
+            const summary = getContrastSummary(contrastAccuracy, [cat])[0];
             const count = langData.pairs.filter(p => p.category === cat.id).length;
             return (
               <div
@@ -183,7 +223,14 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
               >
                 <div style={styles.categoryIcon}>{cat.icon}</div>
                 <div style={styles.categoryName}>{cat.name}</div>
-                <div style={styles.categoryMeta}>{count} pairs</div>
+                <div style={styles.categoryMeta}>
+                  {count} pairs
+                  {summary && summary.total > 0 && (
+                    <span style={{ marginLeft: '0.5rem', color: summary.status === 'mastered' ? '#4ade80' : summary.status === 'struggling' ? '#f87171' : '#fbbf24' }}>
+                      ({summary.accuracy}%)
+                    </span>
+                  )}
+                </div>
               </div>
             );
           })}
@@ -271,6 +318,16 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
                     {rate}x
                   </button>
                 ))}
+                <button
+                  style={{
+                    ...styles.speedBtn,
+                    ...(noise.enabled ? { background: 'rgba(255,100,0,0.2)', borderColor: '#ff6b35', color: '#ff6b35' } : {}),
+                    marginLeft: '0.5rem',
+                  }}
+                  onClick={() => { noise.toggle(); if (!noise.enabled) { setTimeout(() => noise.start(), 100); } else { noise.stop(); } }}
+                >
+                  {noise.enabled ? `🔊 Noise ${noise.snrDb}dB` : '🔇 Noise'}
+                </button>
               </div>
             </div>
 

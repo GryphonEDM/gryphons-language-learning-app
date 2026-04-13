@@ -4,11 +4,14 @@ import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { WordToolbar } from '../shared/WordToolbar.jsx';
 import { useWordClick } from '../../hooks/useWordClick.js';
 import { buildDailySession, getTodayStr, getYesterdayStr } from '../../utils/dailySession.js';
-import { reviewCard, formatInterval } from '../../utils/srs.js';
+import { reviewCard, formatInterval, mapCorrectToRating } from '../../utils/srs.js';
+import { loadSentenceBank, pickSentence, formatGrammarLabels } from '../../utils/sentenceBankLoader.js';
 import { MINIMAL_PAIRS } from '../../data/minimalPairs.js';
 import { storageGet, storageSet } from '../../utils/storage.js';
 import LessonChat from '../shared/LessonChat.jsx';
 import { useLessonChat } from '../../hooks/useLessonChat.js';
+import useSelfCorrection from '../../hooks/useSelfCorrection.js';
+import { getZoneDisplay } from '../../utils/calibration.js';
 
 const RATINGS = [
   { key: 'again', label: 'Again', color: '#f87171', bg: 'rgba(248,113,113,0.15)', xp: 0, num: '1' },
@@ -20,7 +23,7 @@ const RATINGS = [
 export default function DailyReviewMode({
   langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP,
   onTrackProgress, vocabularyMastery, modeProgress, vocabularySets,
-  onMarkMastered, masteredWordsList = [], struggleContext
+  calibration, onMarkMastered, masteredWordsList = [], struggleContext
 }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese', en: 'English' };
   const langName = langNames[langCode] || 'Ukrainian';
@@ -32,7 +35,7 @@ export default function DailyReviewMode({
 
   // Build session — useState so we can rebuild on "Continue"
   const [session, setSession] = useState(() => buildDailySession({
-    vocabularyMastery, modeProgress, langCode, ttsEnabled,
+    vocabularyMastery, modeProgress, langCode, ttsEnabled, calibration,
   }));
 
   const [phase, setPhase] = useState('summary'); // summary, review, newWords, exercise, complete
@@ -46,11 +49,17 @@ export default function DailyReviewMode({
   const [exerciseFeedback, setExerciseFeedback] = useState(null);
   const [exercisePlayed, setExercisePlayed] = useState(null); // for listening: index of played word
   const [continueMode, setContinueMode] = useState(false);
+  const [sentenceBank, setSentenceBank] = useState(null);
+  // Cross-mode review state
+  const [crossModeInput, setCrossModeInput] = useState('');
+  const [crossModeFeedback, setCrossModeFeedback] = useState(null);
+  const selfCorrection = useSelfCorrection({ maxAttempts: 3 });
 
   useEffect(() => {
     mountedRef.current = true;
+    loadSentenceBank(langCode).then(bank => { if (mountedRef.current) setSentenceBank(bank); });
     return () => { mountedRef.current = false; };
-  }, []);
+  }, [langCode]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -75,15 +84,22 @@ export default function DailyReviewMode({
     return () => window.removeEventListener('keydown', handler);
   }, [phase, revealed, currentIdx]);
 
-  // Auto-play TTS when card changes
+  // Auto-play TTS when card changes + reset cross-mode state
   useEffect(() => {
-    if (phase === 'review' && !revealed && session.reviewCards[currentIdx]) {
-      const word = session.reviewCards[currentIdx].word;
-      if (ttsEnabled && onSpeak) {
-        setTimeout(() => { if (mountedRef.current) onSpeak(word, 1, ttsVolume); }, 300);
+    if (phase === 'review' && session.reviewCards[currentIdx]) {
+      const card = session.reviewCards[currentIdx];
+      setCrossModeInput('');
+      setCrossModeFeedback(null);
+      selfCorrection.reset();
+
+      // Auto-play for flashcard mode (when not revealed) or listening mode
+      const shouldAutoPlay = (card.reviewMode === 'listening') ||
+        (!card.reviewMode || card.reviewMode === 'flashcard') && !revealed;
+      if (shouldAutoPlay && ttsEnabled && onSpeak) {
+        setTimeout(() => { if (mountedRef.current) onSpeak(card.word, 1, ttsVolume); }, 300);
       }
     }
-  }, [phase, currentIdx, revealed]);
+  }, [phase, currentIdx]);
 
   useEffect(() => {
     if (phase === 'newWords' && session.newCards[currentIdx]) {
@@ -143,6 +159,80 @@ export default function DailyReviewMode({
       finishSession();
     }
   }, [revealed, currentIdx, session, continueMode, onAddXP, onTrackProgress]);
+
+  // Cross-mode typed review handler
+  const handleCrossModeSubmit = useCallback(() => {
+    if (!crossModeInput.trim() || crossModeFeedback) return;
+    const card = session.reviewCards[currentIdx];
+    if (!card) return;
+
+    const mode = card.reviewMode || 'flashcard';
+    let expected;
+    if (mode === 'translation' || mode === 'typing') {
+      expected = card.word; // target language word
+    } else if (mode === 'listening') {
+      expected = card.word;
+    } else {
+      expected = card.word;
+    }
+
+    const accepted = expected.split('/').map(a => a.trim().toLowerCase()).filter(Boolean);
+    const result = selfCorrection.handleAttempt(crossModeInput.trim(), (input) => ({
+      correct: accepted.includes(input.toLowerCase()),
+    }));
+
+    if (!result.resolved) {
+      setCrossModeInput('');
+      // Auto-replay for listening mode
+      if (mode === 'listening' && ttsEnabled && onSpeak) {
+        onSpeak(card.word, 0.75, ttsVolume);
+      }
+      return;
+    }
+
+    setCrossModeFeedback({ correct: result.correct });
+    const rating = mapCorrectToRating(result.correct, result.responseMs, result.attemptsUsed);
+    const r = RATINGS.find(r => r.key === rating);
+    const points = r?.xp || 0;
+    setXpEarned(prev => prev + points);
+    if (points > 0 && onAddXP) onAddXP(points);
+    if (result.correct) setReviewScore(prev => prev + 1);
+
+    if (onTrackProgress) {
+      onTrackProgress('daily-review', {
+        word: card.word,
+        correct: result.correct,
+        rating,
+        userAnswer: crossModeInput.trim(),
+        expected,
+        responseMs: result.responseMs,
+        selfCorrected: result.selfCorrected,
+        attemptsBeforeCorrect: result.attemptsUsed,
+        reviewMode: mode,
+      });
+    }
+  }, [crossModeInput, crossModeFeedback, session, currentIdx, selfCorrection, ttsEnabled, onSpeak, ttsVolume, onAddXP, onTrackProgress]);
+
+  const handleCrossModeNext = useCallback(() => {
+    const nextIdx = currentIdx + 1;
+    setCrossModeInput('');
+    setCrossModeFeedback(null);
+    selfCorrection.reset();
+
+    if (nextIdx < session.reviewCards.length) {
+      setCurrentIdx(nextIdx);
+      setRevealed(false);
+    } else if (!continueMode && session.newCards.length > 0) {
+      setPhase('newWords');
+      setCurrentIdx(0);
+    } else if (!continueMode && session.exercise) {
+      setPhase('exercise');
+      setCurrentIdx(0);
+      startExerciseItem(0);
+    } else {
+      finishSession();
+    }
+  }, [currentIdx, session, continueMode, selfCorrection, startExerciseItem, finishSession]);
 
   const handleNewWordRating = useCallback((rating) => {
     const card = session.newCards[currentIdx];
@@ -298,7 +388,7 @@ export default function DailyReviewMode({
 
   const handleContinue = useCallback(() => {
     // Rebuild session from current SRS state (cards reviewed so far are no longer due)
-    const freshSession = buildDailySession({ vocabularyMastery, modeProgress, langCode, ttsEnabled });
+    const freshSession = buildDailySession({ vocabularyMastery, modeProgress, langCode, ttsEnabled, calibration });
     setSession(freshSession);
     setContinueMode(true);
     setCurrentIdx(0);
@@ -365,6 +455,11 @@ export default function DailyReviewMode({
             </>
           ) : (
             <>
+              {session.timeProfile && (
+                <div style={styles.timeProfileBanner}>
+                  {session.timeProfile.hour < 12 ? '🌅' : session.timeProfile.hour < 19 ? '☀️' : '🌙'} {session.timeProfile.label}
+                </div>
+              )}
               <div style={styles.summaryIcon}>📋</div>
               <h2 style={styles.summaryTitle}>Today's Session</h2>
               <div style={styles.summaryItems}>
@@ -424,6 +519,80 @@ export default function DailyReviewMode({
             </div>
 
             <div style={styles.card}>
+              {/* Cross-mode badge */}
+              {card.reviewMode && card.reviewMode !== 'flashcard' && (
+                <div style={styles.reviewModeBadge}>
+                  {card.reviewMode === 'listening' ? '👂 Listening' : card.reviewMode === 'translation' ? '🔄 Translation' : card.reviewMode === 'typing' ? '⌨️ Typing' : '📝 Review'}
+                </div>
+              )}
+
+              {/* --- TYPED REVIEW MODES (listening, translation, typing) --- */}
+              {card.reviewMode && card.reviewMode !== 'flashcard' ? (
+                <>
+                  {card.reviewMode === 'listening' ? (
+                    // Listening mode: play word, type what you hear
+                    <>
+                      <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '1rem' }}>Type what you hear</p>
+                      <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>🔊 Play</button>
+                    </>
+                  ) : card.reviewMode === 'translation' ? (
+                    // Translation mode: show English, type target
+                    <>
+                      <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '0.5rem' }}>Translate to {langName}</p>
+                      <div style={styles.wordBig}>{card.en}</div>
+                    </>
+                  ) : (
+                    // Typing mode: hear it + see English, type target
+                    <>
+                      <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '0.5rem' }}>Type in {langName}</p>
+                      <div style={styles.wordBig}>{card.en}</div>
+                      {ttsEnabled && onSpeak && (
+                        <button style={styles.ttsBtn} onClick={() => onSpeak(card.word, 1, ttsVolume)}>🔊 Hear it</button>
+                      )}
+                    </>
+                  )}
+
+                  {/* Retry message */}
+                  {selfCorrection.retryMessage && !crossModeFeedback && (
+                    <div style={{ background: 'rgba(255,165,0,0.1)', border: '1px solid rgba(255,165,0,0.3)', borderRadius: '10px', padding: '0.75rem', marginTop: '0.75rem', textAlign: 'center' }}>
+                      <div style={{ color: '#ffa94d', fontWeight: '600' }}>{selfCorrection.retryMessage}</div>
+                      {selfCorrection.hintLevel > 0 && (
+                        <div style={{ fontFamily: 'monospace', fontSize: '1.2rem', letterSpacing: '3px', color: '#ffd700', marginTop: '0.3rem' }}>
+                          {selfCorrection.getHintFor(card.word)}
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {!crossModeFeedback ? (
+                    <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1rem' }}>
+                      <input
+                        style={{ flex: 1, padding: '0.75rem', borderRadius: '10px', border: '2px solid rgba(255,255,255,0.2)', background: 'rgba(0,0,0,0.3)', color: '#fff', fontSize: '1.1rem', fontFamily: 'inherit', outline: 'none', textAlign: 'center' }}
+                        value={crossModeInput}
+                        onChange={e => setCrossModeInput(e.target.value)}
+                        onKeyDown={e => { if (e.key === 'Enter') handleCrossModeSubmit(); }}
+                        placeholder={`Type your answer...`}
+                        autoFocus
+                      />
+                      <button style={{ ...styles.showBtn, marginTop: 0, padding: '0.75rem 1.5rem' }} onClick={handleCrossModeSubmit}>Check</button>
+                    </div>
+                  ) : (
+                    <div style={{ marginTop: '1rem' }}>
+                      <div style={{ fontSize: '1.3rem', fontWeight: '700', color: crossModeFeedback.correct ? '#4ade80' : '#f87171', marginBottom: '0.5rem' }}>
+                        {crossModeFeedback.correct ? (selfCorrection.attempt > 1 ? 'Got it on retry!' : 'Correct!') : 'Not quite...'}
+                      </div>
+                      <div style={styles.wordBig}>{card.word}</div>
+                      {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
+                      <div style={styles.translation}>{card.en}</div>
+                      <button style={{ ...styles.showBtn, marginTop: '1rem', background: 'linear-gradient(135deg, #51cf66, #37b24d)' }} onClick={handleCrossModeNext}>
+                        Next →
+                      </button>
+                    </div>
+                  )}
+                </>
+              ) : (
+              /* --- FLASHCARD MODE (default) --- */
+              <>
               <div style={styles.wordBig}>{card.word}</div>
               {card.phonetic && <div style={styles.phonetic}>{card.phonetic}</div>}
 
@@ -440,14 +609,26 @@ export default function DailyReviewMode({
               ) : (
                 <div style={styles.answerArea}>
                   <div style={styles.translation}>{card.en}</div>
-                  {card.examples?.length > 0 && (
-                    <div style={styles.example}>
-                      <div style={styles.exampleText}>{card.examples[0]}</div>
-                      {card.examplesEn?.length > 0 && (
-                        <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
-                      )}
-                    </div>
-                  )}
+                  {(() => {
+                    const picked = pickSentence(sentenceBank, card.word, card.reps || 0);
+                    const sentenceText = picked?.s || (card.examples?.length > 0 ? card.examples[0] : null);
+                    const sentenceEn = picked?.en || (card.examplesEn?.length > 0 ? card.examplesEn[0] : null);
+                    const grammarLabels = picked ? formatGrammarLabels(picked.g) : [];
+                    if (!sentenceText) return null;
+                    return (
+                      <div style={styles.example}>
+                        <div style={styles.exampleText}>{sentenceText}</div>
+                        {sentenceEn && <div style={styles.exampleEn}>{sentenceEn}</div>}
+                        {grammarLabels.length > 0 && (
+                          <div style={styles.grammarPills}>
+                            {grammarLabels.map((label, i) => (
+                              <span key={i} style={styles.grammarPill}>{label}</span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })()}
 
                   <div style={styles.ratingRow}>
                     {previews.map(r => (
@@ -464,6 +645,8 @@ export default function DailyReviewMode({
                   </div>
                 </div>
               )}
+              </>
+              ) /* end flashcard/cross-mode ternary */}
             </div>
 
             <div style={styles.scoreBar}>
@@ -516,14 +699,26 @@ export default function DailyReviewMode({
                 </button>
               )}
 
-              {card.examples?.length > 0 && (
-                <div style={styles.example}>
-                  <div style={styles.exampleText}>{card.examples[0]}</div>
-                  {card.examplesEn?.length > 0 && (
-                    <div style={styles.exampleEn}>{card.examplesEn[0]}</div>
-                  )}
-                </div>
-              )}
+              {(() => {
+                const picked = pickSentence(sentenceBank, card.word, 0);
+                const sentenceText = picked?.s || (card.examples?.length > 0 ? card.examples[0] : null);
+                const sentenceEn = picked?.en || (card.examplesEn?.length > 0 ? card.examplesEn[0] : null);
+                const grammarLabels = picked ? formatGrammarLabels(picked.g) : [];
+                if (!sentenceText) return null;
+                return (
+                  <div style={styles.example}>
+                    <div style={styles.exampleText}>{sentenceText}</div>
+                    {sentenceEn && <div style={styles.exampleEn}>{sentenceEn}</div>}
+                    {grammarLabels.length > 0 && (
+                      <div style={styles.grammarPills}>
+                        {grammarLabels.map((label, i) => (
+                          <span key={i} style={styles.grammarPill}>{label}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
 
               <div style={styles.newRatingRow}>
                 <button
@@ -823,7 +1018,13 @@ const styles = {
     marginBottom: '1.25rem',
   },
   exampleText: { fontSize: '1rem', marginBottom: '0.3rem' },
-  exampleEn: { fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)' },
+  exampleEn: { fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.4rem' },
+  grammarPills: { display: 'flex', flexWrap: 'wrap', gap: '0.3rem', marginTop: '0.3rem' },
+  grammarPill: {
+    display: 'inline-block', fontSize: '0.7rem', padding: '0.15rem 0.45rem',
+    borderRadius: '8px', background: 'rgba(77,171,247,0.15)', color: 'rgba(77,171,247,0.8)',
+    border: '1px solid rgba(77,171,247,0.2)', fontWeight: 500, letterSpacing: '0.02em',
+  },
 
   // Rating buttons
   ratingRow: {
@@ -940,5 +1141,23 @@ const styles = {
     background: 'linear-gradient(135deg, #667eea, #764ba2)', border: 'none',
     color: '#fff', padding: '0.75rem 2rem', borderRadius: '12px',
     fontSize: '1.05rem', fontWeight: '600', cursor: 'pointer', fontFamily: 'inherit',
+  },
+  timeProfileBanner: {
+    background: 'rgba(255,215,0,0.1)',
+    border: '1px solid rgba(255,215,0,0.2)',
+    borderRadius: '10px',
+    padding: '0.5rem 1rem',
+    fontSize: '0.85rem',
+    color: '#ffd700',
+    marginBottom: '1rem',
+    textAlign: 'center',
+  },
+  reviewModeBadge: {
+    fontSize: '0.75rem',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    color: '#4dabf7',
+    marginBottom: '0.75rem',
+    fontWeight: '600',
   },
 };

@@ -8,6 +8,8 @@ import { speakUkrainian, stopSpeaking } from '../../App.jsx';
 import useSpeechPractice from '../../hooks/useSpeechPractice.js';
 import SpeechPracticeWidget from '../shared/SpeechPracticeWidget.jsx';
 import useNextShortcut from '../../hooks/useNextShortcut.js';
+import useSelfCorrection from '../../hooks/useSelfCorrection.js';
+import { loadSentenceBank, getSentences, formatGrammarLabels } from '../../utils/sentenceBankLoader.js';
 
 /**
  * Flashcard Mode Component
@@ -40,6 +42,23 @@ export default function FlashcardMode({
   const [addWordForm, setAddWordForm] = useState(null); // null or { word, en }
   const [userDict, setUserDict] = useState(() => getUserDict(langCode));
   const dict = buildDictionary(langCode);
+  const [sentenceBank, setSentenceBank] = useState(null);
+  const mountedRef = useRef(true);
+
+  useEffect(() => {
+    mountedRef.current = true;
+    loadSentenceBank(langCode).then(bank => { if (mountedRef.current) setSentenceBank(bank); });
+    return () => { mountedRef.current = false; };
+  }, [langCode]);
+
+  // Production vs Recognition mode
+  const [flashcardMode, setFlashcardMode] = useState(() => storageGet('flashcardMode') || 'production');
+  const [productionInput, setProductionInput] = useState('');
+  const [productionSubmitted, setProductionSubmitted] = useState(false);
+  const [productionFeedback, setProductionFeedback] = useState(null); // { correct }
+  const selfCorrection = useSelfCorrection({ maxAttempts: 3 });
+  const productionInputRef = useRef(null);
+  const [productionStartTime, setProductionStartTime] = useState(() => Date.now());
 
   // Speech practice integration
   const [showSpeechPractice, setShowSpeechPractice] = useState(false);
@@ -100,6 +119,94 @@ export default function FlashcardMode({
   useEffect(() => {
     setCardShowTime(Date.now());
   }, [currentIndex]);
+
+  // Reset production state when card changes
+  useEffect(() => {
+    setProductionInput('');
+    setProductionSubmitted(false);
+    setProductionFeedback(null);
+    selfCorrection.reset();
+    setProductionStartTime(Date.now());
+    // Auto-focus input in production mode
+    if (flashcardMode === 'production') {
+      setTimeout(() => productionInputRef.current?.focus(), 100);
+    }
+  }, [currentIndex]);
+
+  const handleToggleFlashcardMode = useCallback(() => {
+    const newMode = flashcardMode === 'production' ? 'recognition' : 'production';
+    setFlashcardMode(newMode);
+    storageSet('flashcardMode', newMode);
+  }, [flashcardMode]);
+
+  const getProductionAccepted = useCallback(() => {
+    if (!currentWord) return [];
+    const target = currentWord[langCode] || currentWord.uk || '';
+    return target.split('/').map(a => a.trim().toLowerCase()).filter(Boolean);
+  }, [currentWord, langCode]);
+
+  const handleProductionSubmit = useCallback(() => {
+    if (!productionInput.trim() || productionSubmitted) return;
+
+    const accepted = getProductionAccepted();
+
+    const result = selfCorrection.handleAttempt(productionInput.trim(), (input) => ({
+      correct: accepted.includes(input.toLowerCase()),
+    }));
+
+    if (!result.resolved) {
+      // Not resolved yet — clear input for retry
+      setProductionInput('');
+      setTimeout(() => productionInputRef.current?.focus(), 50);
+      return;
+    }
+
+    // Resolved
+    setProductionFeedback({ correct: result.correct });
+    setProductionSubmitted(true);
+
+    // Pronounce the correct word
+    if (ttsEnabled && onSpeak) {
+      onSpeak(currentWord[langCode] || currentWord.uk, 0.8, ttsVolume);
+    }
+
+    const pointsEarned = result.correct ? (vocabularySet.xpPerWord || 15) : 5;
+    if (onAddXP) onAddXP(pointsEarned);
+
+    if (result.correct) {
+      setSessionStats(prev => ({ ...prev, mastered: prev.mastered + 1 }));
+      if (onMarkMastered) onMarkMastered(currentWord[langCode] || currentWord.uk);
+    }
+
+    if (onTrackProgress) {
+      onTrackProgress('flashcards', {
+        setId: vocabularySet.setId,
+        word: currentWord[langCode] || currentWord.uk,
+        correct: result.correct,
+        userAnswer: productionInput.trim(),
+        expected: currentWord[langCode] || currentWord.uk,
+        responseMs: result.responseMs,
+        selfCorrected: result.selfCorrected,
+        attemptsBeforeCorrect: result.attemptsUsed,
+      });
+    }
+  }, [productionInput, productionSubmitted, getProductionAccepted, selfCorrection, currentWord, langCode, ttsEnabled, onSpeak, ttsVolume, vocabularySet, onAddXP, onTrackProgress, onMarkMastered]);
+
+  const handleProductionNext = useCallback(() => {
+    if (productionFeedback && !productionFeedback.correct) {
+      // Wrong answer — add to review queue
+      if (!reviewQueue.includes(currentIndex)) {
+        setReviewQueue(prev => [...prev, currentIndex]);
+      }
+    } else if (productionFeedback?.correct) {
+      // Correct — remove from review queue
+      setReviewQueue(prev => prev.filter(idx => idx !== currentIndex));
+      if (!masteredWords.includes(currentIndex)) {
+        setMasteredWords(prev => [...prev, currentIndex]);
+      }
+    }
+    moveToNext();
+  }, [productionFeedback, currentIndex, reviewQueue, masteredWords, moveToNext]);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -194,6 +301,10 @@ export default function FlashcardMode({
     setAddWordForm(null);
     setShowSpeechPractice(false);
     speech.reset();
+    setProductionInput('');
+    setProductionSubmitted(false);
+    setProductionFeedback(null);
+    selfCorrection.reset();
     setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
 
     if (currentIndex < totalWords - 1) {
@@ -329,49 +440,102 @@ export default function FlashcardMode({
           </div>
         </div>
 
-      {/* Interactive Example Sentence */}
-      {isFlipped && currentWord.examples && currentWord.examples.length > 0 && (
+      {/* Interactive Example Sentences (sentence bank with fallback to word examples) */}
+      {isFlipped && (() => {
+        const bankSentences = getSentences(sentenceBank, currentWord.uk || currentWord[langCode]);
+        const hasBankSentences = bankSentences.length > 0;
+        const hasLegacyExamples = currentWord.examples && currentWord.examples.length > 0;
+        return hasBankSentences || hasLegacyExamples;
+      })() && (
         <div style={{...styles.sidebarCard, marginTop: '1rem'}}>
           <div style={styles.exampleHeader}>
             <div style={{...styles.sidebarTitle, marginBottom: 0}}>Use in a sentence</div>
             <button
               style={styles.exampleReadBtn}
-              onClick={(e) => { e.stopPropagation(); if (ttsEnabled && onSpeak) onSpeak(currentWord.examples.join('. '), 0.85, ttsVolume); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (!ttsEnabled || !onSpeak) return;
+                const bankSentences = getSentences(sentenceBank, currentWord.uk || currentWord[langCode]);
+                const text = bankSentences.length > 0
+                  ? bankSentences.map(s => s.s).join('. ')
+                  : (currentWord.examples || []).join('. ');
+                onSpeak(text, 0.85, ttsVolume);
+              }}
             >
               🔊 Read
             </button>
           </div>
-          {currentWord.examples.map((ex, exIdx) => {
-            const tokens = ex.split(/(\s+)/);
-            const enTranslation = currentWord.examplesEn && currentWord.examplesEn[exIdx];
-            return (
-              <div key={exIdx} style={styles.exampleBlock}>
-                <div style={styles.exampleSentence}>
-                  {tokens.map((token, i) => {
-                    const isWhitespace = /^\s+$/.test(token);
-                    if (isWhitespace) return <span key={`${exIdx}-${i}`}>{token}</span>;
-                    const tokenKey = `${exIdx}-${i}`;
-                    const isSelected = selectedExampleWord && selectedExampleWord.index === tokenKey;
-                    return (
-                      <span
-                        key={tokenKey}
-                        style={{
-                          ...styles.exampleWord,
-                          ...(isSelected ? styles.exampleWordSelected : {})
-                        }}
-                        onClick={(e) => { e.stopPropagation(); handleExampleWordClick(token, tokenKey); }}
-                      >
-                        {token}
-                      </span>
-                    );
-                  })}
+          {(() => {
+            const bankSentences = getSentences(sentenceBank, currentWord.uk || currentWord[langCode]);
+            if (bankSentences.length > 0) {
+              return bankSentences.map((entry, exIdx) => {
+                const tokens = entry.s.split(/(\s+)/);
+                const grammarLabels = formatGrammarLabels(entry.g);
+                return (
+                  <div key={exIdx} style={styles.exampleBlock}>
+                    <div style={styles.exampleSentence}>
+                      {tokens.map((token, i) => {
+                        const isWhitespace = /^\s+$/.test(token);
+                        if (isWhitespace) return <span key={`${exIdx}-${i}`}>{token}</span>;
+                        const tokenKey = `${exIdx}-${i}`;
+                        const isSelected = selectedExampleWord && selectedExampleWord.index === tokenKey;
+                        return (
+                          <span
+                            key={tokenKey}
+                            style={{
+                              ...styles.exampleWord,
+                              ...(isSelected ? styles.exampleWordSelected : {})
+                            }}
+                            onClick={(e) => { e.stopPropagation(); handleExampleWordClick(token, tokenKey); }}
+                          >
+                            {token}
+                          </span>
+                        );
+                      })}
+                    </div>
+                    {entry.en && <div style={styles.exampleTranslation}>{entry.en}</div>}
+                    {grammarLabels.length > 0 && (
+                      <div style={styles.grammarPills}>
+                        {grammarLabels.map((label, gi) => (
+                          <span key={gi} style={styles.grammarPill}>{label}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              });
+            }
+            // Fallback to legacy examples
+            return currentWord.examples.map((ex, exIdx) => {
+              const tokens = ex.split(/(\s+)/);
+              const enTranslation = currentWord.examplesEn && currentWord.examplesEn[exIdx];
+              return (
+                <div key={exIdx} style={styles.exampleBlock}>
+                  <div style={styles.exampleSentence}>
+                    {tokens.map((token, i) => {
+                      const isWhitespace = /^\s+$/.test(token);
+                      if (isWhitespace) return <span key={`${exIdx}-${i}`}>{token}</span>;
+                      const tokenKey = `${exIdx}-${i}`;
+                      const isSelected = selectedExampleWord && selectedExampleWord.index === tokenKey;
+                      return (
+                        <span
+                          key={tokenKey}
+                          style={{
+                            ...styles.exampleWord,
+                            ...(isSelected ? styles.exampleWordSelected : {})
+                          }}
+                          onClick={(e) => { e.stopPropagation(); handleExampleWordClick(token, tokenKey); }}
+                        >
+                          {token}
+                        </span>
+                      );
+                    })}
+                  </div>
+                  {enTranslation && <div style={styles.exampleTranslation}>{enTranslation}</div>}
                 </div>
-                {enTranslation && (
-                  <div style={styles.exampleTranslation}>{enTranslation}</div>
-                )}
-              </div>
-            );
-          })}
+              );
+            });
+          })()}
 
           {/* Word Info Panel */}
           {selectedExampleWord && (
@@ -470,7 +634,98 @@ export default function FlashcardMode({
       {/* Main Content */}
       <div style={styles.main}>
 
-      {/* Flashcard */}
+      {/* Mode Toggle */}
+      <div style={styles.modeToggle}>
+        <button
+          style={{ ...styles.modeToggleBtn, ...(flashcardMode === 'production' ? styles.modeToggleBtnActive : {}) }}
+          onClick={handleToggleFlashcardMode}
+        >
+          Production
+        </button>
+        <button
+          style={{ ...styles.modeToggleBtn, ...(flashcardMode === 'recognition' ? styles.modeToggleBtnActive : {}) }}
+          onClick={handleToggleFlashcardMode}
+        >
+          Recognition
+        </button>
+      </div>
+
+      {flashcardMode === 'production' ? (
+        /* --- PRODUCTION MODE --- */
+        <div style={styles.productionCard}>
+          <div style={{ ...styles.cardLabel, color: 'rgba(255,255,255,0.5)' }}>Translate to {langNative}</div>
+          <div style={{ ...styles.cardWord, color: '#ffd700', marginBottom: '1.5rem' }}>{currentWord.en}</div>
+
+          {/* Self-correction retry message */}
+          {selfCorrection.retryMessage && !productionSubmitted && (
+            <div style={styles.retryArea}>
+              <div style={styles.retryMessage}>{selfCorrection.retryMessage}</div>
+              {selfCorrection.hintLevel > 0 && (
+                <div style={styles.retryHint}>
+                  {selfCorrection.getHintFor(currentWord[langCode] || currentWord.uk)}
+                </div>
+              )}
+              <div style={styles.retryAttempts}>Attempt {selfCorrection.attempt} of 3</div>
+            </div>
+          )}
+
+          {!productionSubmitted ? (
+            <div style={styles.productionInputArea}>
+              <input
+                ref={productionInputRef}
+                style={styles.productionInput}
+                value={productionInput}
+                onChange={e => setProductionInput(e.target.value)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter') handleProductionSubmit();
+                }}
+                placeholder={`Type in ${langNative}...`}
+                autoFocus
+              />
+              <button style={styles.productionSubmitBtn} onClick={handleProductionSubmit}>
+                Check
+              </button>
+            </div>
+          ) : (
+            <>
+              <div style={{
+                ...styles.productionFeedback,
+                borderColor: productionFeedback?.correct ? '#4ade80' : '#f87171',
+              }}>
+                <div style={{
+                  fontSize: '1.3rem', fontWeight: '700', marginBottom: '0.5rem',
+                  color: productionFeedback?.correct ? '#4ade80' : '#f87171',
+                }}>
+                  {productionFeedback?.correct
+                    ? (selfCorrection.attempt > 1 ? 'Got it on retry!' : 'Correct!')
+                    : 'Not quite...'}
+                </div>
+                <div style={{ fontSize: '1.8rem', fontWeight: '700', color: '#ffd700', marginBottom: '0.25rem' }}>
+                  {currentWord[langCode] || currentWord.uk}
+                </div>
+                <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.6)' }}>
+                  ({currentWord.phonetic})
+                </div>
+                {!productionFeedback?.correct && (
+                  <div style={{ marginTop: '0.5rem', color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem' }}>
+                    You typed: <span style={{ color: '#f87171' }}>{productionInput}</span>
+                  </div>
+                )}
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
+                <button style={{ ...styles.button, ...styles.pronounceButton }} onClick={(e) => { e.stopPropagation(); handlePronounce(); }}>
+                  🔊 Hear it
+                </button>
+                <button style={{ ...styles.button, ...styles.knowButton }} onClick={handleProductionNext}>
+                  {currentIndex < totalWords - 1 ? 'Next →' : 'Finish'}
+                </button>
+              </div>
+            </>
+          )}
+        </div>
+      ) : (
+      /* --- RECOGNITION MODE --- */
+      <>
       <div
         style={styles.cardContainer}
         onClick={handleFlip}
@@ -560,6 +815,8 @@ export default function FlashcardMode({
           💡 Click the card to flip it
         </div>
       )}
+      </>
+      ) /* end recognition mode ternary */}
       </div>
       <LessonChat {...chat} onSpeak={onSpeak} />
       </div>{/* end contentRow */}
@@ -786,6 +1043,12 @@ const styles = {
     fontStyle: 'italic',
     paddingLeft: '0.25rem'
   },
+  grammarPills: { display: 'flex', flexWrap: 'wrap', gap: '0.25rem', marginTop: '0.3rem', paddingLeft: '0.25rem' },
+  grammarPill: {
+    display: 'inline-block', fontSize: '0.65rem', padding: '0.1rem 0.4rem',
+    borderRadius: '8px', background: 'rgba(77,171,247,0.15)', color: 'rgba(77,171,247,0.8)',
+    border: '1px solid rgba(77,171,247,0.2)', fontWeight: 500,
+  },
   exampleWord: {
     cursor: 'pointer',
     borderRadius: '4px',
@@ -981,5 +1244,103 @@ const styles = {
     color: 'rgba(255,255,255,0.5)',
     fontSize: '1rem',
     marginTop: '1rem'
-  }
+  },
+  // Production mode styles
+  modeToggle: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '0.25rem',
+    marginBottom: '1.5rem',
+    background: 'rgba(0,0,0,0.2)',
+    borderRadius: '12px',
+    padding: '0.25rem',
+    maxWidth: '300px',
+    margin: '0 auto 1.5rem',
+  },
+  modeToggleBtn: {
+    flex: 1,
+    padding: '0.5rem 1rem',
+    borderRadius: '10px',
+    border: 'none',
+    background: 'transparent',
+    color: 'rgba(255,255,255,0.5)',
+    cursor: 'pointer',
+    fontSize: '0.85rem',
+    fontWeight: '600',
+    fontFamily: 'inherit',
+    transition: 'all 0.2s',
+  },
+  modeToggleBtnActive: {
+    background: 'rgba(255,215,0,0.2)',
+    color: '#ffd700',
+  },
+  productionCard: {
+    maxWidth: '500px',
+    margin: '0 auto',
+    background: 'rgba(0,0,0,0.3)',
+    borderRadius: '20px',
+    padding: '2rem',
+    textAlign: 'center',
+    border: '1px solid rgba(255,215,0,0.2)',
+  },
+  productionInputArea: {
+    display: 'flex',
+    gap: '0.75rem',
+    marginTop: '0.5rem',
+  },
+  productionInput: {
+    flex: 1,
+    padding: '0.85rem 1rem',
+    borderRadius: '12px',
+    border: '2px solid rgba(255,255,255,0.2)',
+    background: 'rgba(0,0,0,0.3)',
+    color: '#fff',
+    fontSize: '1.2rem',
+    fontFamily: 'inherit',
+    outline: 'none',
+    textAlign: 'center',
+  },
+  productionSubmitBtn: {
+    background: 'linear-gradient(135deg, #ffd700, #e6c200)',
+    border: 'none',
+    color: '#1a1a2e',
+    padding: '0.85rem 1.5rem',
+    borderRadius: '12px',
+    fontSize: '1rem',
+    fontWeight: '700',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+  },
+  productionFeedback: {
+    background: 'rgba(0,0,0,0.2)',
+    borderRadius: '12px',
+    padding: '1.25rem',
+    borderLeft: '4px solid',
+    textAlign: 'center',
+  },
+  retryArea: {
+    background: 'rgba(255,165,0,0.1)',
+    border: '1px solid rgba(255,165,0,0.3)',
+    borderRadius: '12px',
+    padding: '1rem',
+    marginBottom: '1rem',
+    textAlign: 'center',
+  },
+  retryMessage: {
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: '#ffa94d',
+    marginBottom: '0.5rem',
+  },
+  retryHint: {
+    fontFamily: 'monospace',
+    fontSize: '1.3rem',
+    letterSpacing: '3px',
+    color: '#ffd700',
+    marginBottom: '0.4rem',
+  },
+  retryAttempts: {
+    fontSize: '0.8rem',
+    color: 'rgba(255,255,255,0.4)',
+  },
 };

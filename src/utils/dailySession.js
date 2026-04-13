@@ -6,11 +6,33 @@ import { getDueCards, getNewCards, getReviewStats } from './srs.js';
 import { getAllVocabularyWords } from './dictionaryBuilder.js';
 import { MINIMAL_PAIRS } from '../data/minimalPairs.js';
 import { computeStruggleScore, getStruggleWords } from './struggleEngine.js';
+import { assignReviewModes } from './modeSelector.js';
+import { getDueChunks, getChunkText, isChunk } from './chunkManager.js';
+import { detectInterference, filterSessionForInterference } from './interferenceDetector.js';
 
-const MAX_REVIEWS = 20;
-const MAX_NEW_CARDS = 5;
+// Base limits (adjusted by time-of-day)
+const BASE_MAX_REVIEWS = 20;
+const BASE_MAX_NEW_CARDS = 5;
 const DAILY_NEW_CAP = 10;
 const EXERCISE_ITEMS = 5;
+
+/**
+ * Time-of-day profiles for session composition.
+ * Research: New vocabulary before sleep consolidates better (sleep consolidation).
+ * Morning reviews leverage overnight consolidation.
+ */
+const TIME_PROFILES = {
+  morning:   { maxReview: 25, maxNew: 2,  label: 'Morning Review Focus' },
+  afternoon: { maxReview: 20, maxNew: 5,  label: 'Balanced Practice' },
+  evening:   { maxReview: 10, maxNew: 8,  label: 'New Vocabulary Focus' },
+};
+
+function getTimeProfile(hour) {
+  if (hour === null || hour === undefined) return TIME_PROFILES.afternoon;
+  if (hour < 12) return TIME_PROFILES.morning;
+  if (hour < 19) return TIME_PROFILES.afternoon;
+  return TIME_PROFILES.evening;
+}
 
 /**
  * Build a lookup map from word text → full word object.
@@ -67,16 +89,27 @@ export function getYesterdayStr() {
  * @param {boolean} params.ttsEnabled - Whether TTS is available
  * @returns {object} Session plan
  */
-export function buildDailySession({ vocabularyMastery, modeProgress, langCode, ttsEnabled }) {
+export function buildDailySession({ vocabularyMastery, modeProgress, langCode, ttsEnabled, calibration }) {
   const allWords = getAllVocabularyWords(langCode);
   const lookup = buildWordLookup(allWords, langCode);
   const targetField = langCode === 'en' ? 'en' : langCode;
   const allWordKeys = allWords.map(w => (w[targetField] || w.uk || ''));
 
   const now = Date.now();
+  const currentHour = new Date(now).getHours();
   const stats = getReviewStats(vocabularyMastery, now);
   const today = getTodayStr();
   const dailyProgress = modeProgress['daily-review'] || {};
+
+  // --- Time-of-day optimization ---
+  const timeProfile = getTimeProfile(currentHour);
+  let MAX_REVIEWS = timeProfile.maxReview;
+  let MAX_NEW_CARDS = timeProfile.maxNew;
+
+  // Apply calibration adjustments if available
+  if (calibration?.adjustments) {
+    MAX_NEW_CARDS = Math.max(1, Math.round(MAX_NEW_CARDS * (calibration.adjustments.newCardMultiplier || 1)));
+  }
 
   // --- Review cards (struggle words prioritized) ---
   const dueRaw = getDueCards(vocabularyMastery, now);
@@ -96,11 +129,45 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
   }
   const remainingDue = Math.max(0, dueRaw.length - reviewCards.length);
 
+  // --- Include due chunks (max 5) ---
+  const dueChunks = getDueChunks(vocabularyMastery, now, 5);
+  for (const chunk of dueChunks) {
+    if (reviewCards.length >= MAX_REVIEWS) break;
+    reviewCards.push({
+      ...chunk,
+      en: chunk.en || '',
+      phonetic: chunk.phonetic || '',
+      source: 'chunk',
+      difficulty: chunk.difficulty || 'A2',
+      examples: chunk.examples || [],
+      examplesEn: [],
+      isChunk: true,
+      displayText: getChunkText(chunk.word),
+    });
+  }
+
+  // --- Cross-mode review assignment ---
+  // Build lookup of words that have minimal pair data
+  const minimalPairsLookup = new Set();
+  const langPairs = MINIMAL_PAIRS[langCode]?.pairs || [];
+  for (const pair of langPairs) {
+    if (pair.wordA) minimalPairsLookup.add(pair.wordA.toLowerCase());
+    if (pair.wordB) minimalPairsLookup.add(pair.wordB.toLowerCase());
+  }
+  const reviewCardsWithModes = assignReviewModes(reviewCards, vocabularyMastery, {
+    ttsEnabled,
+    minimalPairsLookup,
+  });
+
+  // --- Interference filtering ---
+  const interferencePairs = detectInterference(vocabularyMastery);
+  const filteredReviewCards = filterSessionForInterference(reviewCardsWithModes, interferencePairs, vocabularyMastery);
+
   // --- New cards ---
   let newCards = [];
-  const reviewWordSet = new Set(reviewCards.map(c => c.word.toLowerCase()));
+  const reviewWordSet = new Set(filteredReviewCards.map(c => c.word.toLowerCase()));
 
-  if (reviewCards.length < MAX_REVIEWS) {
+  if (reviewCardsWithModes.length < MAX_REVIEWS) {
     // Check daily cap
     const usedToday = (dailyProgress.newCardsDate === today) ? (dailyProgress.newCardsToday || 0) : 0;
     const remaining = Math.max(0, DAILY_NEW_CAP - usedToday);
@@ -129,7 +196,7 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
 
   // --- Focused exercise ---
   let exercise = null;
-  const hasContent = reviewCards.length > 0 || newCards.length > 0;
+  const hasContent = filteredReviewCards.length > 0 || newCards.length > 0;
 
   if (hasContent) {
     const candidates = ['translation'];
@@ -174,7 +241,7 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
     }
 
     // Build exercise words from review cards (or new cards if no reviews)
-    const sourceCards = reviewCards.length > 0 ? reviewCards : newCards;
+    const sourceCards = filteredReviewCards.length > 0 ? filteredReviewCards : newCards;
     const exerciseWords = [...sourceCards]
       .sort(() => Math.random() - 0.5)
       .slice(0, EXERCISE_ITEMS);
@@ -184,16 +251,17 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
     }
   }
 
-  const totalSteps = reviewCards.length + newCards.length + (exercise ? exercise.words.length : 0);
+  const totalSteps = filteredReviewCards.length + newCards.length + (exercise ? exercise.words.length : 0);
 
   return {
-    reviewCards,
+    reviewCards: filteredReviewCards,
     newCards,
     exercise,
     remainingDue,
     stats,
+    timeProfile: { label: timeProfile.label, hour: currentHour },
     summary: {
-      reviewCount: reviewCards.length,
+      reviewCount: filteredReviewCards.length,
       newCount: newCards.length,
       exerciseMode: exercise?.mode || null,
       exerciseCount: exercise?.words?.length || 0,

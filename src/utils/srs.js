@@ -203,12 +203,18 @@ export function formatInterval(days) {
 
 /**
  * Maps a binary correct/wrong result (+ optional response time) to a 4-point SRS rating.
+ * Supports self-correction: if the user needed multiple attempts, the rating is downgraded.
  * @param {boolean} correct
  * @param {number|null} responseTimeMs - Optional: time taken to answer
+ * @param {number} attemptsBeforeCorrect - Number of attempts (1 = first try, 2+ = self-corrected)
  * @returns {'again'|'hard'|'good'|'easy'}
  */
-export function mapCorrectToRating(correct, responseTimeMs = null) {
+export function mapCorrectToRating(correct, responseTimeMs = null, attemptsBeforeCorrect = 1) {
   if (!correct) return 'again';
+
+  // Self-corrected answers (needed 2+ attempts) cap at 'hard'
+  if (attemptsBeforeCorrect > 1) return 'hard';
+
   if (responseTimeMs === null) return 'good';
   if (responseTimeMs < 3000) return 'easy';
   if (responseTimeMs > 15000) return 'hard';

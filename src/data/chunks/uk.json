@@ -1,0 +1,184 @@
+{
+  "chunks": [
+    {
+      "id": "ch_uk_1", "uk": "Як справи?", "en": "How are you?",
+      "phonetic": "yak spravy", "type": "greeting", "difficulty": "A1",
+      "componentWords": ["як", "справи"],
+      "examples": ["Привіт! Як справи?"]
+    },
+    {
+      "id": "ch_uk_2", "uk": "Добрий ранок", "en": "Good morning",
+      "phonetic": "dobryi ranok", "type": "greeting", "difficulty": "A1",
+      "componentWords": ["добрий", "ранок"],
+      "examples": ["Добрий ранок! Як ви?"]
+    },
+    {
+      "id": "ch_uk_3", "uk": "Добрий вечір", "en": "Good evening",
+      "phonetic": "dobryi vechir", "type": "greeting", "difficulty": "A1",
+      "componentWords": ["добрий", "вечір"],
+      "examples": ["Добрий вечір, пане!"]
+    },
+    {
+      "id": "ch_uk_4", "uk": "Будь ласка", "en": "Please / You're welcome",
+      "phonetic": "bud laska", "type": "polite", "difficulty": "A1",
+      "componentWords": ["будь", "ласка"],
+      "examples": ["Дайте мені воду, будь ласка."]
+    },
+    {
+      "id": "ch_uk_5", "uk": "Дуже дякую", "en": "Thank you very much",
+      "phonetic": "duzhe dyakuyu", "type": "polite", "difficulty": "A1",
+      "componentWords": ["дуже", "дякую"],
+      "examples": ["Дуже дякую за допомогу!"]
+    },
+    {
+      "id": "ch_uk_6", "uk": "Не за що", "en": "You're welcome / Don't mention it",
+      "phonetic": "ne za shcho", "type": "polite", "difficulty": "A1",
+      "componentWords": ["не", "за", "що"],
+      "examples": ["— Дякую! — Не за що."]
+    },
+    {
+      "id": "ch_uk_7", "uk": "Прошу вибачення", "en": "I apologize / Excuse me",
+      "phonetic": "proshu vybachennya", "type": "polite", "difficulty": "A2",
+      "componentWords": ["прошу", "вибачення"],
+      "examples": ["Прошу вибачення, де тут метро?"]
+    },
+    {
+      "id": "ch_uk_8", "uk": "На жаль", "en": "Unfortunately",
+      "phonetic": "na zhal", "type": "discourse", "difficulty": "A2",
+      "componentWords": ["на", "жаль"],
+      "examples": ["На жаль, магазин зачинений."]
+    },
+    {
+      "id": "ch_uk_9", "uk": "Мені подобається", "en": "I like (it)",
+      "phonetic": "meni podobayetsya", "type": "expression", "difficulty": "A1",
+      "componentWords": ["мені", "подобається"],
+      "examples": ["Мені подобається ця книга."]
+    },
+    {
+      "id": "ch_uk_10", "uk": "Скільки коштує?", "en": "How much does it cost?",
+      "phonetic": "skilky koshtuye", "type": "shopping", "difficulty": "A1",
+      "componentWords": ["скільки", "коштує"],
+      "examples": ["Скільки коштує ця сукня?"]
+    },
+    {
+      "id": "ch_uk_11", "uk": "Я не розумію", "en": "I don't understand",
+      "phonetic": "ya ne rozumiyu", "type": "communication", "difficulty": "A1",
+      "componentWords": ["я", "не", "розумію"],
+      "examples": ["Вибачте, я не розумію."]
+    },
+    {
+      "id": "ch_uk_12", "uk": "Можна мені", "en": "Can I have / May I",
+      "phonetic": "mozhna meni", "type": "request", "difficulty": "A1",
+      "componentWords": ["можна", "мені"],
+      "examples": ["Можна мені меню, будь ласка?"]
+    },
+    {
+      "id": "ch_uk_13", "uk": "До побачення", "en": "Goodbye",
+      "phonetic": "do pobachennya", "type": "greeting", "difficulty": "A1",
+      "componentWords": ["до", "побачення"],
+      "examples": ["До побачення! До зустрічі!"]
+    },
+    {
+      "id": "ch_uk_14", "uk": "Як вас звати?", "en": "What is your name?",
+      "phonetic": "yak vas zvaty", "type": "introduction", "difficulty": "A1",
+      "componentWords": ["як", "вас", "звати"],
+      "examples": ["Привіт! Як вас звати?"]
+    },
+    {
+      "id": "ch_uk_15", "uk": "Мене звати", "en": "My name is",
+      "phonetic": "mene zvaty", "type": "introduction", "difficulty": "A1",
+      "componentWords": ["мене", "звати"],
+      "examples": ["Мене звати Михайло."]
+    },
+    {
+      "id": "ch_uk_16", "uk": "Де знаходиться", "en": "Where is (located)",
+      "phonetic": "de znakhodytsia", "type": "navigation", "difficulty": "A2",
+      "componentWords": ["де", "знаходиться"],
+      "examples": ["Де знаходиться найближча аптека?"]
+    },
+    {
+      "id": "ch_uk_17", "uk": "Я хочу замовити", "en": "I want to order",
+      "phonetic": "ya khochu zamovyty", "type": "restaurant", "difficulty": "A2",
+      "componentWords": ["я", "хочу", "замовити"],
+      "examples": ["Я хочу замовити каву з молоком."]
+    },
+    {
+      "id": "ch_uk_18", "uk": "Що ви порадите?", "en": "What do you recommend?",
+      "phonetic": "shcho vy poradyte", "type": "restaurant", "difficulty": "A2",
+      "componentWords": ["що", "ви", "порадите"],
+      "examples": ["Що ви порадите на обід?"]
+    },
+    {
+      "id": "ch_uk_19", "uk": "Я згоден", "en": "I agree",
+      "phonetic": "ya zhoden", "type": "discourse", "difficulty": "A2",
+      "componentWords": ["я", "згоден"],
+      "examples": ["Так, я згоден з вами."]
+    },
+    {
+      "id": "ch_uk_20", "uk": "З днем народження", "en": "Happy birthday",
+      "phonetic": "z dnem narodzhennya", "type": "celebration", "difficulty": "A2",
+      "componentWords": ["з", "днем", "народження"],
+      "examples": ["З днем народження! Бажаю щастя!"]
+    },
+    {
+      "id": "ch_uk_21", "uk": "Все добре", "en": "Everything is fine",
+      "phonetic": "vse dobre", "type": "expression", "difficulty": "A1",
+      "componentWords": ["все", "добре"],
+      "examples": ["Не хвилюйся, все добре."]
+    },
+    {
+      "id": "ch_uk_22", "uk": "Що нового?", "en": "What's new?",
+      "phonetic": "shcho novoho", "type": "greeting", "difficulty": "A2",
+      "componentWords": ["що", "нового"],
+      "examples": ["Привіт! Що нового?"]
+    },
+    {
+      "id": "ch_uk_23", "uk": "Мені потрібно", "en": "I need",
+      "phonetic": "meni potribno", "type": "request", "difficulty": "A2",
+      "componentWords": ["мені", "потрібно"],
+      "examples": ["Мені потрібно купити подарунок."]
+    },
+    {
+      "id": "ch_uk_24", "uk": "Чи можна?", "en": "Is it possible? / May I?",
+      "phonetic": "chy mozhna", "type": "polite", "difficulty": "A2",
+      "componentWords": ["чи", "можна"],
+      "examples": ["Чи можна тут сісти?"]
+    },
+    {
+      "id": "ch_uk_25", "uk": "Я вивчаю українську", "en": "I am studying Ukrainian",
+      "phonetic": "ya vyvchayu ukrayinsku", "type": "introduction", "difficulty": "A1",
+      "componentWords": ["я", "вивчаю", "українську"],
+      "examples": ["Я вивчаю українську мову вже два місяці."]
+    },
+    {
+      "id": "ch_uk_26", "uk": "Повторіть, будь ласка", "en": "Please repeat",
+      "phonetic": "povtorit bud laska", "type": "communication", "difficulty": "A2",
+      "componentWords": ["повторіть", "будь", "ласка"],
+      "examples": ["Повторіть, будь ласка, повільніше."]
+    },
+    {
+      "id": "ch_uk_27", "uk": "На мою думку", "en": "In my opinion",
+      "phonetic": "na moyu dumku", "type": "discourse", "difficulty": "B1",
+      "componentWords": ["на", "мою", "думку"],
+      "examples": ["На мою думку, це дуже цікаво."]
+    },
+    {
+      "id": "ch_uk_28", "uk": "Більш або менш", "en": "More or less",
+      "phonetic": "bilsh abo mensh", "type": "discourse", "difficulty": "B1",
+      "componentWords": ["більш", "або", "менш"],
+      "examples": ["Я більш або менш розумію."]
+    },
+    {
+      "id": "ch_uk_29", "uk": "Який чудовий день!", "en": "What a wonderful day!",
+      "phonetic": "yakyi chudovyi den", "type": "expression", "difficulty": "A2",
+      "componentWords": ["який", "чудовий", "день"],
+      "examples": ["Який чудовий день! Підемо на прогулянку?"]
+    },
+    {
+      "id": "ch_uk_30", "uk": "Я тебе кохаю", "en": "I love you",
+      "phonetic": "ya tebe kokhayu", "type": "expression", "difficulty": "A1",
+      "componentWords": ["я", "тебе", "кохаю"],
+      "examples": ["Я тебе кохаю, ти знаєш це."]
+    }
+  ]
+}

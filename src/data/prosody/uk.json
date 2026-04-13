@@ -1,0 +1,112 @@
+{
+  "exercises": [
+    {
+      "id": "uk_qi_1",
+      "type": "question-statement",
+      "sentence": "Це ваш кіт",
+      "translation": "This is your cat",
+      "difficulty": "A1",
+      "tip": "Rising intonation at the end makes it a question; falling makes it a statement."
+    },
+    {
+      "id": "uk_qi_2",
+      "type": "question-statement",
+      "sentence": "Ти говориш українською",
+      "translation": "You speak Ukrainian",
+      "difficulty": "A1",
+      "tip": "Without a question word, intonation alone distinguishes the question from the statement."
+    },
+    {
+      "id": "uk_qi_3",
+      "type": "question-statement",
+      "sentence": "Вона студентка",
+      "translation": "She is a student",
+      "difficulty": "A1",
+      "tip": "In Ukrainian, yes/no questions often have the same word order as statements — only intonation changes."
+    },
+    {
+      "id": "uk_qi_4",
+      "type": "question-statement",
+      "sentence": "Він працює тут",
+      "translation": "He works here",
+      "difficulty": "A2",
+      "tip": "Listen for the pitch rise on the last word to identify the question form."
+    },
+    {
+      "id": "uk_qi_5",
+      "type": "question-statement",
+      "sentence": "Магазин відкритий",
+      "translation": "The store is open",
+      "difficulty": "A2",
+      "tip": "The pitch contour on 'відкритий' determines whether this is a question or confirmation."
+    },
+    {
+      "id": "uk_qi_6",
+      "type": "question-statement",
+      "sentence": "Ви розумієте мене",
+      "translation": "You understand me",
+      "difficulty": "A2",
+      "tip": "Rising intonation on 'мене' turns this into a checking question."
+    },
+    {
+      "id": "uk_stress_1",
+      "type": "stress-identification",
+      "sentence": "Я люблю Україну",
+      "translation": "I love Ukraine",
+      "words": ["Я", "люблю", "Україну"],
+      "stressedWord": 1,
+      "difficulty": "A1",
+      "tip": "The verb 'люблю' carries the primary sentence stress as the key information."
+    },
+    {
+      "id": "uk_stress_2",
+      "type": "stress-identification",
+      "sentence": "Добрий ранок друзі",
+      "translation": "Good morning friends",
+      "words": ["Добрий", "ранок", "друзі"],
+      "stressedWord": 1,
+      "difficulty": "A1",
+      "tip": "'Ранок' carries stress as the time-of-day word in this greeting."
+    },
+    {
+      "id": "uk_stress_3",
+      "type": "stress-identification",
+      "sentence": "Мені подобається ця книга",
+      "translation": "I like this book",
+      "words": ["Мені", "подобається", "ця", "книга"],
+      "stressedWord": 3,
+      "difficulty": "A2",
+      "tip": "The object 'книга' receives focus stress — it's the new information in this sentence."
+    },
+    {
+      "id": "uk_stress_4",
+      "type": "stress-identification",
+      "sentence": "Він завтра приїде",
+      "translation": "He will arrive tomorrow",
+      "words": ["Він", "завтра", "приїде"],
+      "stressedWord": 1,
+      "difficulty": "A2",
+      "tip": "'Завтра' receives emphasis as the time reference — when is the key information."
+    },
+    {
+      "id": "uk_stress_5",
+      "type": "stress-identification",
+      "sentence": "Ми живемо в Києві",
+      "translation": "We live in Kyiv",
+      "words": ["Ми", "живемо", "в", "Києві"],
+      "stressedWord": 3,
+      "difficulty": "A2",
+      "tip": "The location 'Києві' gets focus stress as the important new information."
+    },
+    {
+      "id": "uk_stress_6",
+      "type": "stress-identification",
+      "sentence": "Дуже дякую за допомогу",
+      "translation": "Thank you very much for the help",
+      "words": ["Дуже", "дякую", "за", "допомогу"],
+      "stressedWord": 0,
+      "difficulty": "A2",
+      "tip": "'Дуже' (very) carries emphatic stress to intensify the gratitude."
+    }
+  ]
+}

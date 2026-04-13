@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import { storageGet, storageSet, storageFlush, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
 import { reviewCard, initSRSCard, mapCorrectToRating, getReviewStats, getNextDueHours, getNewCards } from './utils/srs.js';
 import { classifyError, addErrorToWord, updateResponseTime, recomputeStruggle, buildStruggleContext, getStruggleWords } from './utils/struggleEngine.js';
+import { initCalibration, updateCalibration } from './utils/calibration.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -28,6 +29,13 @@ import DailyReviewMode from './components/modes/DailyReviewMode.jsx';
 import StruggleWordsMode from './components/modes/StruggleWordsMode.jsx';
 import StruggleDrillMode from './components/modes/StruggleDrillMode.jsx';
 import VerbDrillMode from './components/modes/VerbDrillMode.jsx';
+import ProsodyMode from './components/modes/ProsodyMode.jsx';
+import ConnectedSpeechMode from './components/modes/ConnectedSpeechMode.jsx';
+import SentenceProductionMode from './components/modes/SentenceProductionMode.jsx';
+import BidirectionalTranslationMode from './components/modes/BidirectionalTranslationMode.jsx';
+import NarrowListeningMode from './components/modes/NarrowListeningMode.jsx';
+import ShadowingMode from './components/modes/ShadowingMode.jsx';
+import GradedReadingMode from './components/modes/GradedReadingMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
@@ -760,6 +768,7 @@ export default function UkrainianTypingGame() {
   const [typedVowels, setTypedVowels] = useState([]);
   const [modeProgress, setModeProgress] = useState({});
   const [vocabularyMastery, setVocabularyMastery] = useState({});
+  const [sessionCalibration, setSessionCalibration] = useState(null);
   const [masteredWordsList, setMasteredWordsList] = useState([]);
   
   // Settings (persisted)
@@ -963,7 +972,7 @@ export default function UkrainianTypingGame() {
         const modesUsed = mode && !wordData.modesUsed?.includes(mode)
           ? [...(wordData.modesUsed || []), mode]
           : (wordData.modesUsed || []);
-        const rating = data.rating || mapCorrectToRating(correct);
+        const rating = data.rating || mapCorrectToRating(correct, data.responseMs || null, data.attemptsBeforeCorrect || 1);
         const srsCard = wordData.stability !== undefined ? wordData : { ...wordData, ...initSRSCard() };
         const updatedSRS = reviewCard(srsCard, rating);
 
@@ -1001,6 +1010,12 @@ export default function UkrainianTypingGame() {
         }
 
         return { ...prev, [data.word]: wordData };
+      });
+
+      // Update session calibration
+      setSessionCalibration(prev => {
+        const current = prev || initCalibration();
+        return updateCalibration(current, correct);
       });
     }
   }, []);
@@ -1876,6 +1891,55 @@ export default function UkrainianTypingGame() {
                     <p>Train your ear to distinguish similar sounds</p>
                   </div>
                 </div>
+                <div className="mode-card" data-mode="prosody" onClick={() => setGameMode('prosody')}>
+                  <div className="mode-icon">🎵</div>
+                  <div className="mode-info">
+                    <h3>Prosody Training</h3>
+                    <p>Learn stress patterns and intonation</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="connected-speech" onClick={() => setGameMode('connected-speech')}>
+                  <div className="mode-icon">🗣️</div>
+                  <div className="mode-info">
+                    <h3>Connected Speech</h3>
+                    <p>Understand natural flowing speech</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="sentence-production" onClick={() => setGameMode('sentence-production')}>
+                  <div className="mode-icon">✍️</div>
+                  <div className="mode-info">
+                    <h3>Use It in a Sentence</h3>
+                    <p>Deep practice — write sentences with target words</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="bidirectional" onClick={() => setGameMode('bidirectional')}>
+                  <div className="mode-icon">🔄</div>
+                  <div className="mode-info">
+                    <h3>Bidirectional Translation</h3>
+                    <p>Translate forward, then back — compare with original</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="narrow-listening" onClick={() => setGameMode('narrow-listening')}>
+                  <div className="mode-icon">🔁</div>
+                  <div className="mode-info">
+                    <h3>Narrow Listening</h3>
+                    <p>Same topic, multiple speakers and speeds</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="shadowing" onClick={() => setGameMode('shadowing')}>
+                  <div className="mode-icon">🪞</div>
+                  <div className="mode-info">
+                    <h3>Shadowing</h3>
+                    <p>Listen and repeat simultaneously for fluency</p>
+                  </div>
+                </div>
+                <div className="mode-card" data-mode="graded-reading" onClick={() => setGameMode('graded-reading')}>
+                  <div className="mode-icon">📖</div>
+                  <div className="mode-info">
+                    <h3>Graded Reading</h3>
+                    <p>Read at your level — unknown words highlighted</p>
+                  </div>
+                </div>
                 <div className="mode-card" data-mode="speech" onClick={() => setGameMode('speech')}>
                   <div className="mode-icon">🎙️</div>
                   <div className="mode-info">
@@ -2448,6 +2512,7 @@ export default function UkrainianTypingGame() {
             vocabularyMastery={vocabularyMastery}
             modeProgress={modeProgress}
             vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
+            calibration={sessionCalibration}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
@@ -2542,6 +2607,7 @@ export default function UkrainianTypingGame() {
           <ListeningMode
             langCode={currentLanguage}
             vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
+            vocabularyMastery={vocabularyMastery}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
@@ -2560,6 +2626,7 @@ export default function UkrainianTypingGame() {
         ) : gameMode === 'minimal-pairs' ? (
           <MinimalPairsMode
             langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
@@ -2605,6 +2672,7 @@ export default function UkrainianTypingGame() {
           <TranslationPracticeMode
             langCode={currentLanguage}
             vocabularySets={[...CURRENT_DICT_SETS, ...CURRENT_VOCAB_THEMES]}
+            vocabularyMastery={vocabularyMastery}
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
@@ -2660,6 +2728,99 @@ export default function UkrainianTypingGame() {
               <button onClick={() => setGameMode('menu')}>Back to Menu</button>
             </div>
           )
+        ) : gameMode === 'prosody' ? (
+          <ProsodyMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[Prosody] Complete:', stats);
+              checkModeAchievements(stats);
+              setGameMode('menu');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'connected-speech' ? (
+          <ConnectedSpeechMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[ConnectedSpeech] Complete:', stats);
+              checkModeAchievements(stats);
+              setGameMode('menu');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'sentence-production' ? (
+          <SentenceProductionMode
+            langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => {
+              console.log('[SentenceProduction] Complete:', stats);
+              checkModeAchievements(stats);
+              setGameMode('menu');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
+          />
+        ) : gameMode === 'bidirectional' ? (
+          <BidirectionalTranslationMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => { console.log('[Bidirectional] Complete:', stats); checkModeAchievements(stats); setGameMode('menu'); }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'narrow-listening' ? (
+          <NarrowListeningMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => { console.log('[NarrowListening] Complete:', stats); checkModeAchievements(stats); setGameMode('menu'); }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'shadowing' ? (
+          <ShadowingMode
+            langCode={currentLanguage}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onComplete={(stats) => { console.log('[Shadowing] Complete:', stats); checkModeAchievements(stats); setGameMode('menu'); }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'graded-reading' ? (
+          <GradedReadingMode
+            langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+            onMarkMastered={handleMarkMastered}
+            masteredWordsList={masteredWordsList}
+          />
         ) : gameMode === 'sentences' ? (
           <SentenceMode
             langCode={currentLanguage}
