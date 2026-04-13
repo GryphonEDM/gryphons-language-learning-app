@@ -11,7 +11,7 @@ export const DE_TRANSLATIONS = {
   // Lesson 3 - Bottom Row words
   'Name': 'name', 'Verb': 'verb', 'Bach': 'brook / stream',
   'Mond': 'moon', 'Buch': 'book', 'Nacht': 'night', 'man': 'one / you (impersonal)',
-  'Maß': 'measure / unit', 'Straße': 'street', 'Oxen': 'oxen',
+  'Maß': 'measure / unit', 'Straße': 'street', 'Box': 'box / speaker',
   // Lesson 4 - Umlauts
   'schön': 'beautiful / nice', 'über': 'over / about', 'heiß': 'hot',
   'süß': 'sweet', 'Löwe': 'lion', 'Mäuse': 'mice', 'Öl': 'oil',

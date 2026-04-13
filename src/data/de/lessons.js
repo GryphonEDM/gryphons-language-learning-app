@@ -48,7 +48,7 @@ export const DE_LESSONS = {
     description: "Learn the bottom row of the keyboard",
     hint: "y x c v b n m ß",
     letters: ['y', 'x', 'c', 'v', 'b', 'n', 'm', 'ß'],
-    words: ['Name', 'Verb', 'Bach', 'Mond', 'Buch', 'Nacht', 'man', 'Maß', 'Straße', 'Oxen'],
+    words: ['Name', 'Verb', 'Bach', 'Mond', 'Buch', 'Nacht', 'man', 'Maß', 'Straße', 'Box'],
     xpPerLetter: 10,
     xpPerWord: 25,
     requiredXp: 0

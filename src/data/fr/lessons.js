@@ -21,7 +21,7 @@ export const FRENCH_LESSONS = {
     description: 'Master the home row: q s d f g h j k l m',
     hint: 'q s d f g h j k l m',
     letters: ['q', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm'],
-    words: ['sol', 'mal', 'fol', 'ski', 'gel', 'jus', 'mol', 'dos', 'fol', 'glas'],
+    words: ['sol', 'mal', 'fol', 'ski', 'gel', 'jus', 'mol', 'dos', 'glas'],
     xpPerLetter: 10,
     xpPerWord: 25,
     requiredXp: 0,

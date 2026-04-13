@@ -56,6 +56,10 @@ UKRAINIAN_KEYBOARD.forEach(row => {
 UK_TO_QWERTY[' '] = ' ';
 UK_TO_QWERTY["'"] = "'";
 UK_TO_QWERTY['ґ'] = '`';
+UK_TO_QWERTY['Ґ'] = '~';
+
+// ґ is on the backtick key, outside the three main rows
+LETTER_INFO['ґ'] = { uk: 'ґ', qwerty: '`', sound: 'g (hard)', ukrainianPhonetic: 'ґе', finger: 'pinky-l' };
 
 // Helper function to clean phonetic sounds for TTS
 // Removes parenthetical explanations like "y (short)" -> "y"

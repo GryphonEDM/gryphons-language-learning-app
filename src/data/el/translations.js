@@ -10,12 +10,15 @@ export const EL_TRANSLATIONS = {
   'αλλά': 'but',
   'καλά': 'well / good',
   'φάκα': 'mousetrap',
+  'δάση': 'forests',
   'λάδι': 'oil',
 
   // Lesson 2 — Top Row words
   'τιμή': 'price / honor',
   'πότε': 'when',
+  'θέρος': 'summer / harvest',
   'ιερό': 'temple / sacred',
+  'ρίτα': 'Rita (name)',
   'τρίο': 'trio',
   'πέτρα': 'stone / rock',
   'οίκος': 'house / household',
@@ -37,7 +40,7 @@ export const EL_TRANSLATIONS = {
   // Lesson 4 — Full Alphabet words
   'αγάπη': 'love',
   'θάλασσα': 'sea / ocean',
-  'ελλάδα': 'Greece',
+  'Ελλάδα': 'Greece',
   'φίλος': 'friend',
   'σχολείο': 'school',
   'πατέρας': 'father',

@@ -116,7 +116,7 @@ export const KO_LETTER_INFO_FULL = {
   ㅛ: { name: 'ㅛ', sound: 'yo — like "yo" in "yoga"', example: '요리 (cooking)' },
   ㅜ: { name: 'ㅜ', sound: 'u — like "oo" in "moon"', example: '우유 (milk)' },
   ㅠ: { name: 'ㅠ', sound: 'yu — like "you"', example: '유리 (glass)' },
-  ㅡ: { name: 'ㅡ', sound: 'eu — no English equivalent; unrounded "oo"', example: '으른 (adult)' },
+  ㅡ: { name: 'ㅡ', sound: 'eu — no English equivalent; unrounded "oo"', example: '그림 (picture)' },
   ㅣ: { name: 'ㅣ', sound: 'i — like "ee" in "see"', example: '이름 (name)' },
   // Compound vowels (11)
   ㅐ: { name: 'ㅐ', sound: 'ae — like "a" in "care"', example: '개 (dog)' },
