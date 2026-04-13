@@ -107,6 +107,13 @@ if ! python3 -c "import soundfile" &> /dev/null; then
 else
     echo "soundfile already installed."
 fi
+
+if ! python3 -c "import transformers" &> /dev/null; then
+    echo "Installing transformers (Greek/French/Korean MMS-TTS)..."
+    pip install transformers
+else
+    echo "transformers already installed."
+fi
 echo ""
 
 echo "[4/6] Checking Whisper STT dependencies..."
