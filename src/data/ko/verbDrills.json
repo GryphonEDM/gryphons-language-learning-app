@@ -1,0 +1,629 @@
+{
+  "meta": {
+    "language": "ko",
+    "pronouns": ["해요체 (polite)", "합쇼체 (formal)", "해체 (casual)", "한다체 (plain)"],
+    "pastGenders": [
+      { "key": "해요체", "label": "해요체 (polite)" },
+      { "key": "합쇼체", "label": "합쇼체 (formal)" },
+      { "key": "해체", "label": "해체 (casual)" },
+      { "key": "한다체", "label": "한다체 (plain)" }
+    ],
+    "imperativePronouns": ["해요체 (polite)", "합쇼체 (formal)", "해체 (casual)"],
+    "sampleObjects": ["책을", "편지를", "음악을", "커피를", "밥을"]
+  },
+  "tenses": [
+    { "tenseId": "present", "nameEn": "Present Tense", "nameLocal": "현재형", "icon": "⏱️", "tip": "해요체: stem+아/어요, 합쇼체: stem+ㅂ니다/습니다, 해체: stem+아/어, 한다체: stem+ㄴ다/는다" },
+    { "tenseId": "past", "nameEn": "Past Tense", "nameLocal": "과거형", "icon": "⏪", "tip": "해요체: stem+았/었어요, 합쇼체: stem+았/었습니다, 해체: stem+았/었어, 한다체: stem+았/었다" },
+    { "tenseId": "future", "nameEn": "Future Tense", "nameLocal": "미래형", "icon": "⏩", "tip": "해요체: stem+을/ㄹ 거예요, 합쇼체: stem+을/ㄹ 것입니다, 해체: stem+을/ㄹ 거야, 한다체: stem+을/ㄹ 것이다" },
+    { "tenseId": "imperative", "nameEn": "Imperative", "nameLocal": "명령형", "icon": "👉", "tip": "해요체: stem+세요, 합쇼체: stem+십시오, 해체: stem+아/어" }
+  ],
+  "verbs": [
+    {
+      "infinitive": "하다",
+      "infinitiveEn": "to do",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "해요",
+        "합쇼체 (formal)": "합니다",
+        "해체 (casual)": "해",
+        "한다체 (plain)": "한다"
+      },
+      "past": {
+        "해요체": "했어요",
+        "합쇼체": "했습니다",
+        "해체": "했어",
+        "한다체": "했다"
+      },
+      "future": {
+        "해요체 (polite)": "할 거예요",
+        "합쇼체 (formal)": "할 것입니다",
+        "해체 (casual)": "할 거야",
+        "한다체 (plain)": "할 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "하세요",
+        "합쇼체 (formal)": "하십시오",
+        "해체 (casual)": "해"
+      }
+    },
+    {
+      "infinitive": "가다",
+      "infinitiveEn": "to go",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "학교에",
+      "present": {
+        "해요체 (polite)": "가요",
+        "합쇼체 (formal)": "갑니다",
+        "해체 (casual)": "가",
+        "한다체 (plain)": "간다"
+      },
+      "past": {
+        "해요체": "갔어요",
+        "합쇼체": "갔습니다",
+        "해체": "갔어",
+        "한다체": "갔다"
+      },
+      "future": {
+        "해요체 (polite)": "갈 거예요",
+        "합쇼체 (formal)": "갈 것입니다",
+        "해체 (casual)": "갈 거야",
+        "한다체 (plain)": "갈 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "가세요",
+        "합쇼체 (formal)": "가십시오",
+        "해체 (casual)": "가"
+      }
+    },
+    {
+      "infinitive": "오다",
+      "infinitiveEn": "to come",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "집에",
+      "present": {
+        "해요체 (polite)": "와요",
+        "합쇼체 (formal)": "옵니다",
+        "해체 (casual)": "와",
+        "한다체 (plain)": "온다"
+      },
+      "past": {
+        "해요체": "왔어요",
+        "합쇼체": "왔습니다",
+        "해체": "왔어",
+        "한다체": "왔다"
+      },
+      "future": {
+        "해요체 (polite)": "올 거예요",
+        "합쇼체 (formal)": "올 것입니다",
+        "해체 (casual)": "올 거야",
+        "한다체 (plain)": "올 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "오세요",
+        "합쇼체 (formal)": "오십시오",
+        "해체 (casual)": "와"
+      }
+    },
+    {
+      "infinitive": "먹다",
+      "infinitiveEn": "to eat",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "먹어요",
+        "합쇼체 (formal)": "먹습니다",
+        "해체 (casual)": "먹어",
+        "한다체 (plain)": "먹는다"
+      },
+      "past": {
+        "해요체": "먹었어요",
+        "합쇼체": "먹었습니다",
+        "해체": "먹었어",
+        "한다체": "먹었다"
+      },
+      "future": {
+        "해요체 (polite)": "먹을 거예요",
+        "합쇼체 (formal)": "먹을 것입니다",
+        "해체 (casual)": "먹을 거야",
+        "한다체 (plain)": "먹을 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "드세요",
+        "합쇼체 (formal)": "드십시오",
+        "해체 (casual)": "먹어"
+      }
+    },
+    {
+      "infinitive": "마시다",
+      "infinitiveEn": "to drink",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "마셔요",
+        "합쇼체 (formal)": "마십니다",
+        "해체 (casual)": "마셔",
+        "한다체 (plain)": "마신다"
+      },
+      "past": {
+        "해요체": "마셨어요",
+        "합쇼체": "마셨습니다",
+        "해체": "마셨어",
+        "한다체": "마셨다"
+      },
+      "future": {
+        "해요체 (polite)": "마실 거예요",
+        "합쇼체 (formal)": "마실 것입니다",
+        "해체 (casual)": "마실 거야",
+        "한다체 (plain)": "마실 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "마시세요",
+        "합쇼체 (formal)": "마시십시오",
+        "해체 (casual)": "마셔"
+      }
+    },
+    {
+      "infinitive": "읽다",
+      "infinitiveEn": "to read",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "읽어요",
+        "합쇼체 (formal)": "읽습니다",
+        "해체 (casual)": "읽어",
+        "한다체 (plain)": "읽는다"
+      },
+      "past": {
+        "해요체": "읽었어요",
+        "합쇼체": "읽었습니다",
+        "해체": "읽었어",
+        "한다체": "읽었다"
+      },
+      "future": {
+        "해요체 (polite)": "읽을 거예요",
+        "합쇼체 (formal)": "읽을 것입니다",
+        "해체 (casual)": "읽을 거야",
+        "한다체 (plain)": "읽을 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "읽으세요",
+        "합쇼체 (formal)": "읽으십시오",
+        "해체 (casual)": "읽어"
+      }
+    },
+    {
+      "infinitive": "쓰다",
+      "infinitiveEn": "to write",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "써요",
+        "합쇼체 (formal)": "씁니다",
+        "해체 (casual)": "써",
+        "한다체 (plain)": "쓴다"
+      },
+      "past": {
+        "해요체": "썼어요",
+        "합쇼체": "썼습니다",
+        "해체": "썼어",
+        "한다체": "썼다"
+      },
+      "future": {
+        "해요체 (polite)": "쓸 거예요",
+        "합쇼체 (formal)": "쓸 것입니다",
+        "해체 (casual)": "쓸 거야",
+        "한다체 (plain)": "쓸 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "쓰세요",
+        "합쇼체 (formal)": "쓰십시오",
+        "해체 (casual)": "써"
+      }
+    },
+    {
+      "infinitive": "보다",
+      "infinitiveEn": "to see",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "봐요",
+        "합쇼체 (formal)": "봅니다",
+        "해체 (casual)": "봐",
+        "한다체 (plain)": "본다"
+      },
+      "past": {
+        "해요체": "봤어요",
+        "합쇼체": "봤습니다",
+        "해체": "봤어",
+        "한다체": "봤다"
+      },
+      "future": {
+        "해요체 (polite)": "볼 거예요",
+        "합쇼체 (formal)": "볼 것입니다",
+        "해체 (casual)": "볼 거야",
+        "한다체 (plain)": "볼 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "보세요",
+        "합쇼체 (formal)": "보십시오",
+        "해체 (casual)": "봐"
+      }
+    },
+    {
+      "infinitive": "듣다",
+      "infinitiveEn": "to listen",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "들어요",
+        "합쇼체 (formal)": "듣습니다",
+        "해체 (casual)": "들어",
+        "한다체 (plain)": "듣는다"
+      },
+      "past": {
+        "해요체": "들었어요",
+        "합쇼체": "들었습니다",
+        "해체": "들었어",
+        "한다체": "들었다"
+      },
+      "future": {
+        "해요체 (polite)": "들을 거예요",
+        "합쇼체 (formal)": "들을 것입니다",
+        "해체 (casual)": "들을 거야",
+        "한다체 (plain)": "들을 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "들으세요",
+        "합쇼체 (formal)": "들으십시오",
+        "해체 (casual)": "들어"
+      }
+    },
+    {
+      "infinitive": "말하다",
+      "infinitiveEn": "to speak",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "한국어로",
+      "present": {
+        "해요체 (polite)": "말해요",
+        "합쇼체 (formal)": "말합니다",
+        "해체 (casual)": "말해",
+        "한다체 (plain)": "말한다"
+      },
+      "past": {
+        "해요체": "말했어요",
+        "합쇼체": "말했습니다",
+        "해체": "말했어",
+        "한다체": "말했다"
+      },
+      "future": {
+        "해요체 (polite)": "말할 거예요",
+        "합쇼체 (formal)": "말할 것입니다",
+        "해체 (casual)": "말할 거야",
+        "한다체 (plain)": "말할 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "말하세요",
+        "합쇼체 (formal)": "말하십시오",
+        "해체 (casual)": "말해"
+      }
+    },
+    {
+      "infinitive": "배우다",
+      "infinitiveEn": "to learn",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "배워요",
+        "합쇼체 (formal)": "배웁니다",
+        "해체 (casual)": "배워",
+        "한다체 (plain)": "배운다"
+      },
+      "past": {
+        "해요체": "배웠어요",
+        "합쇼체": "배웠습니다",
+        "해체": "배웠어",
+        "한다체": "배웠다"
+      },
+      "future": {
+        "해요체 (polite)": "배울 거예요",
+        "합쇼체 (formal)": "배울 것입니다",
+        "해체 (casual)": "배울 거야",
+        "한다체 (plain)": "배울 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "배우세요",
+        "합쇼체 (formal)": "배우십시오",
+        "해체 (casual)": "배워"
+      }
+    },
+    {
+      "infinitive": "사다",
+      "infinitiveEn": "to buy",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "사요",
+        "합쇼체 (formal)": "삽니다",
+        "해체 (casual)": "사",
+        "한다체 (plain)": "산다"
+      },
+      "past": {
+        "해요체": "샀어요",
+        "합쇼체": "샀습니다",
+        "해체": "샀어",
+        "한다체": "샀다"
+      },
+      "future": {
+        "해요체 (polite)": "살 거예요",
+        "합쇼체 (formal)": "살 것입니다",
+        "해체 (casual)": "살 거야",
+        "한다체 (plain)": "살 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "사세요",
+        "합쇼체 (formal)": "사십시오",
+        "해체 (casual)": "사"
+      }
+    },
+    {
+      "infinitive": "걷다",
+      "infinitiveEn": "to walk",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "공원에서",
+      "present": {
+        "해요체 (polite)": "걸어요",
+        "합쇼체 (formal)": "걷습니다",
+        "해체 (casual)": "걸어",
+        "한다체 (plain)": "걷는다"
+      },
+      "past": {
+        "해요체": "걸었어요",
+        "합쇼체": "걸었습니다",
+        "해체": "걸었어",
+        "한다체": "걸었다"
+      },
+      "future": {
+        "해요체 (polite)": "걸을 거예요",
+        "합쇼체 (formal)": "걸을 것입니다",
+        "해체 (casual)": "걸을 거야",
+        "한다체 (plain)": "걸을 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "걸으세요",
+        "합쇼체 (formal)": "걸으십시오",
+        "해체 (casual)": "걸어"
+      }
+    },
+    {
+      "infinitive": "놀다",
+      "infinitiveEn": "to play",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "밖에서",
+      "present": {
+        "해요체 (polite)": "놀아요",
+        "합쇼체 (formal)": "놉니다",
+        "해체 (casual)": "놀아",
+        "한다체 (plain)": "논다"
+      },
+      "past": {
+        "해요체": "놀았어요",
+        "합쇼체": "놀았습니다",
+        "해체": "놀았어",
+        "한다체": "놀았다"
+      },
+      "future": {
+        "해요체 (polite)": "놀 거예요",
+        "합쇼체 (formal)": "놀 것입니다",
+        "해체 (casual)": "놀 거야",
+        "한다체 (plain)": "놀 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "노세요",
+        "합쇼체 (formal)": "노십시오",
+        "해체 (casual)": "놀아"
+      }
+    },
+    {
+      "infinitive": "만들다",
+      "infinitiveEn": "to make",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "만들어요",
+        "합쇼체 (formal)": "만듭니다",
+        "해체 (casual)": "만들어",
+        "한다체 (plain)": "만든다"
+      },
+      "past": {
+        "해요체": "만들었어요",
+        "합쇼체": "만들었습니다",
+        "해체": "만들었어",
+        "한다체": "만들었다"
+      },
+      "future": {
+        "해요체 (polite)": "만들 거예요",
+        "합쇼체 (formal)": "만들 것입니다",
+        "해체 (casual)": "만들 거야",
+        "한다체 (plain)": "만들 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "만드세요",
+        "합쇼체 (formal)": "만드십시오",
+        "해체 (casual)": "만들어"
+      }
+    },
+    {
+      "infinitive": "살다",
+      "infinitiveEn": "to live",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "서울에",
+      "present": {
+        "해요체 (polite)": "살아요",
+        "합쇼체 (formal)": "삽니다",
+        "해체 (casual)": "살아",
+        "한다체 (plain)": "산다"
+      },
+      "past": {
+        "해요체": "살았어요",
+        "합쇼체": "살았습니다",
+        "해체": "살았어",
+        "한다체": "살았다"
+      },
+      "future": {
+        "해요체 (polite)": "살 거예요",
+        "합쇼체 (formal)": "살 것입니다",
+        "해체 (casual)": "살 거야",
+        "한다체 (plain)": "살 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "사세요",
+        "합쇼체 (formal)": "사십시오",
+        "해체 (casual)": "살아"
+      }
+    },
+    {
+      "infinitive": "알다",
+      "infinitiveEn": "to know",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "알아요",
+        "합쇼체 (formal)": "압니다",
+        "해체 (casual)": "알아",
+        "한다체 (plain)": "안다"
+      },
+      "past": {
+        "해요체": "알았어요",
+        "합쇼체": "알았습니다",
+        "해체": "알았어",
+        "한다체": "알았다"
+      },
+      "future": {
+        "해요체 (polite)": "알 거예요",
+        "합쇼체 (formal)": "알 것입니다",
+        "해체 (casual)": "알 거야",
+        "한다체 (plain)": "알 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "아세요",
+        "합쇼체 (formal)": "아십시오",
+        "해체 (casual)": "알아"
+      }
+    },
+    {
+      "infinitive": "묻다",
+      "infinitiveEn": "to ask",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "물어요",
+        "합쇼체 (formal)": "묻습니다",
+        "해체 (casual)": "물어",
+        "한다체 (plain)": "묻는다"
+      },
+      "past": {
+        "해요체": "물었어요",
+        "합쇼체": "물었습니다",
+        "해체": "물었어",
+        "한다체": "물었다"
+      },
+      "future": {
+        "해요체 (polite)": "물을 거예요",
+        "합쇼체 (formal)": "물을 것입니다",
+        "해체 (casual)": "물을 거야",
+        "한다체 (plain)": "물을 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "물으세요",
+        "합쇼체 (formal)": "물으십시오",
+        "해체 (casual)": "물어"
+      }
+    },
+    {
+      "infinitive": "요리하다",
+      "infinitiveEn": "to cook",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "해요체 (polite)": "요리해요",
+        "합쇼체 (formal)": "요리합니다",
+        "해체 (casual)": "요리해",
+        "한다체 (plain)": "요리한다"
+      },
+      "past": {
+        "해요체": "요리했어요",
+        "합쇼체": "요리했습니다",
+        "해체": "요리했어",
+        "한다체": "요리했다"
+      },
+      "future": {
+        "해요체 (polite)": "요리할 거예요",
+        "합쇼체 (formal)": "요리할 것입니다",
+        "해체 (casual)": "요리할 거야",
+        "한다체 (plain)": "요리할 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "요리하세요",
+        "합쇼체 (formal)": "요리하십시오",
+        "해체 (casual)": "요리해"
+      }
+    },
+    {
+      "infinitive": "공부하다",
+      "infinitiveEn": "to study",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "한국어를",
+      "present": {
+        "해요체 (polite)": "공부해요",
+        "합쇼체 (formal)": "공부합니다",
+        "해체 (casual)": "공부해",
+        "한다체 (plain)": "공부한다"
+      },
+      "past": {
+        "해요체": "공부했어요",
+        "합쇼체": "공부했습니다",
+        "해체": "공부했어",
+        "한다체": "공부했다"
+      },
+      "future": {
+        "해요체 (polite)": "공부할 거예요",
+        "합쇼체 (formal)": "공부할 것입니다",
+        "해체 (casual)": "공부할 거야",
+        "한다체 (plain)": "공부할 것이다"
+      },
+      "imperative": {
+        "해요체 (polite)": "공부하세요",
+        "합쇼체 (formal)": "공부하십시오",
+        "해체 (casual)": "공부해"
+      }
+    }
+  ]
+}

@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "language": "fr",
+    "pronouns": ["je", "tu", "il/elle", "nous", "vous", "ils/elles"],
+    "pastGenders": [
+      { "key": "je", "label": "je" },
+      { "key": "tu", "label": "tu" },
+      { "key": "il", "label": "il/elle" },
+      { "key": "nous", "label": "nous" },
+      { "key": "vous", "label": "vous" },
+      { "key": "ils", "label": "ils/elles" }
+    ],
+    "imperativePronouns": ["tu", "nous", "vous"],
+    "sampleObjects": ["le livre", "la lettre", "la musique", "la leçon", "le café"]
+  },
+  "tenses": [
+    { "tenseId": "present", "nameEn": "Present Tense", "nameLocal": "Présent", "icon": "⏱️", "tip": "-er: -e, -es, -e, -ons, -ez, -ent. -ir (2nd group): -is, -is, -it, -issons, -issez, -issent." },
+    { "tenseId": "past", "nameEn": "Imperfect", "nameLocal": "Imparfait", "icon": "⏪", "tip": "Stem (nous present minus -ons) + -ais, -ais, -ait, -ions, -iez, -aient" },
+    { "tenseId": "future", "nameEn": "Future Tense", "nameLocal": "Futur simple", "icon": "⏩", "tip": "Infinitive (or irregular stem) + -ai, -as, -a, -ons, -ez, -ont" },
+    { "tenseId": "imperative", "nameEn": "Imperative", "nameLocal": "Impératif", "icon": "👉", "tip": "tu, nous, vous forms. -er verbs: drop the -s for tu form." }
+  ],
+  "verbs": [
+    {
+      "infinitive": "parler",
+      "meaningEn": "to speak",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "je": "parle",
+        "tu": "parles",
+        "il/elle": "parle",
+        "nous": "parlons",
+        "vous": "parlez",
+        "ils/elles": "parlent"
+      },
+      "past": {
+        "je": "parlais",
+        "tu": "parlais",
+        "il": "parlait",
+        "nous": "parlions",
+        "vous": "parliez",
+        "ils": "parlaient"
+      },
+      "future": {
+        "je": "parlerai",
+        "tu": "parleras",
+        "il/elle": "parlera",
+        "nous": "parlerons",
+        "vous": "parlerez",
+        "ils/elles": "parleront"
+      },
+      "imperative": {
+        "tu": "parle",
+        "nous": "parlons",
+        "vous": "parlez"
+      }
+    },
+    {
+      "infinitive": "travailler",
+      "meaningEn": "to work",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "sur le projet",
+      "present": {
+        "je": "travaille",
+        "tu": "travailles",
+        "il/elle": "travaille",
+        "nous": "travaillons",
+        "vous": "travaillez",
+        "ils/elles": "travaillent"
+      },
+      "past": {
+        "je": "travaillais",
+        "tu": "travaillais",
+        "il": "travaillait",
+        "nous": "travaillions",
+        "vous": "travailliez",
+        "ils": "travaillaient"
+      },
+      "future": {
+        "je": "travaillerai",
+        "tu": "travailleras",
+        "il/elle": "travaillera",
+        "nous": "travaillerons",
+        "vous": "travaillerez",
+        "ils/elles": "travailleront"
+      },
+      "imperative": {
+        "tu": "travaille",
+        "nous": "travaillons",
+        "vous": "travaillez"
+      }
+    },
+    {
+      "infinitive": "acheter",
+      "meaningEn": "to buy",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "je": "achète",
+        "tu": "achètes",
+        "il/elle": "achète",
+        "nous": "achetons",
+        "vous": "achetez",
+        "ils/elles": "achètent"
+      },
+      "past": {
+        "je": "achetais",
+        "tu": "achetais",
+        "il": "achetait",
+        "nous": "achetions",
+        "vous": "achetiez",
+        "ils": "achetaient"
+      },
+      "future": {
+        "je": "achèterai",
+        "tu": "achèteras",
+        "il/elle": "achètera",
+        "nous": "achèterons",
+        "vous": "achèterez",
+        "ils/elles": "achèteront"
+      },
+      "imperative": {
+        "tu": "achète",
+        "nous": "achetons",
+        "vous": "achetez"
+      }
+    },
+    {
+      "infinitive": "écouter",
+      "meaningEn": "to listen to",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "je": "écoute",
+        "tu": "écoutes",
+        "il/elle": "écoute",
+        "nous": "écoutons",
+        "vous": "écoutez",
+        "ils/elles": "écoutent"
+      },
+      "past": {
+        "je": "écoutais",
+        "tu": "écoutais",
+        "il": "écoutait",
+        "nous": "écoutions",
+        "vous": "écoutiez",
+        "ils": "écoutaient"
+      },
+      "future": {
+        "je": "écouterai",
+        "tu": "écouteras",
+        "il/elle": "écoutera",
+        "nous": "écouterons",
+        "vous": "écouterez",
+        "ils/elles": "écouteront"
+      },
+      "imperative": {
+        "tu": "écoute",
+        "nous": "écoutons",
+        "vous": "écoutez"
+      }
+    },
+    {
+      "infinitive": "cuisiner",
+      "meaningEn": "to cook",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "pour la famille",
+      "present": {
+        "je": "cuisine",
+        "tu": "cuisines",
+        "il/elle": "cuisine",
+        "nous": "cuisinons",
+        "vous": "cuisinez",
+        "ils/elles": "cuisinent"
+      },
+      "past": {
+        "je": "cuisinais",
+        "tu": "cuisinais",
+        "il": "cuisinait",
+        "nous": "cuisinions",
+        "vous": "cuisiniez",
+        "ils": "cuisinaient"
+      },
+      "future": {
+        "je": "cuisinerai",
+        "tu": "cuisineras",
+        "il/elle": "cuisinera",
+        "nous": "cuisinerons",
+        "vous": "cuisinerez",
+        "ils/elles": "cuisineront"
+      },
+      "imperative": {
+        "tu": "cuisine",
+        "nous": "cuisinons",
+        "vous": "cuisinez"
+      }
+    },
+    {
+      "infinitive": "marcher",
+      "meaningEn": "to walk",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "dans le parc",
+      "present": {
+        "je": "marche",
+        "tu": "marches",
+        "il/elle": "marche",
+        "nous": "marchons",
+        "vous": "marchez",
+        "ils/elles": "marchent"
+      },
+      "past": {
+        "je": "marchais",
+        "tu": "marchais",
+        "il": "marchait",
+        "nous": "marchions",
+        "vous": "marchiez",
+        "ils": "marchaient"
+      },
+      "future": {
+        "je": "marcherai",
+        "tu": "marcheras",
+        "il/elle": "marchera",
+        "nous": "marcherons",
+        "vous": "marcherez",
+        "ils/elles": "marcheront"
+      },
+      "imperative": {
+        "tu": "marche",
+        "nous": "marchons",
+        "vous": "marchez"
+      }
+    },
+    {
+      "infinitive": "chanter",
+      "meaningEn": "to sing",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "une chanson",
+      "present": {
+        "je": "chante",
+        "tu": "chantes",
+        "il/elle": "chante",
+        "nous": "chantons",
+        "vous": "chantez",
+        "ils/elles": "chantent"
+      },
+      "past": {
+        "je": "chantais",
+        "tu": "chantais",
+        "il": "chantait",
+        "nous": "chantions",
+        "vous": "chantiez",
+        "ils": "chantaient"
+      },
+      "future": {
+        "je": "chanterai",
+        "tu": "chanteras",
+        "il/elle": "chantera",
+        "nous": "chanterons",
+        "vous": "chanterez",
+        "ils/elles": "chanteront"
+      },
+      "imperative": {
+        "tu": "chante",
+        "nous": "chantons",
+        "vous": "chantez"
+      }
+    },
+    {
+      "infinitive": "finir",
+      "meaningEn": "to finish",
+      "conjugationClass": 2,
+      "transitive": true,
+      "present": {
+        "je": "finis",
+        "tu": "finis",
+        "il/elle": "finit",
+        "nous": "finissons",
+        "vous": "finissez",
+        "ils/elles": "finissent"
+      },
+      "past": {
+        "je": "finissais",
+        "tu": "finissais",
+        "il": "finissait",
+        "nous": "finissions",
+        "vous": "finissiez",
+        "ils": "finissaient"
+      },
+      "future": {
+        "je": "finirai",
+        "tu": "finiras",
+        "il/elle": "finira",
+        "nous": "finirons",
+        "vous": "finirez",
+        "ils/elles": "finiront"
+      },
+      "imperative": {
+        "tu": "finis",
+        "nous": "finissons",
+        "vous": "finissez"
+      }
+    },
+    {
+      "infinitive": "choisir",
+      "meaningEn": "to choose",
+      "conjugationClass": 2,
+      "transitive": true,
+      "present": {
+        "je": "choisis",
+        "tu": "choisis",
+        "il/elle": "choisit",
+        "nous": "choisissons",
+        "vous": "choisissez",
+        "ils/elles": "choisissent"
+      },
+      "past": {
+        "je": "choisissais",
+        "tu": "choisissais",
+        "il": "choisissait",
+        "nous": "choisissions",
+        "vous": "choisissiez",
+        "ils": "choisissaient"
+      },
+      "future": {
+        "je": "choisirai",
+        "tu": "choisiras",
+        "il/elle": "choisira",
+        "nous": "choisirons",
+        "vous": "choisirez",
+        "ils/elles": "choisiront"
+      },
+      "imperative": {
+        "tu": "choisis",
+        "nous": "choisissons",
+        "vous": "choisissez"
+      }
+    },
+    {
+      "infinitive": "réfléchir",
+      "meaningEn": "to think / to reflect",
+      "conjugationClass": 2,
+      "transitive": false,
+      "context": "au problème",
+      "present": {
+        "je": "réfléchis",
+        "tu": "réfléchis",
+        "il/elle": "réfléchit",
+        "nous": "réfléchissons",
+        "vous": "réfléchissez",
+        "ils/elles": "réfléchissent"
+      },
+      "past": {
+        "je": "réfléchissais",
+        "tu": "réfléchissais",
+        "il": "réfléchissait",
+        "nous": "réfléchissions",
+        "vous": "réfléchissiez",
+        "ils": "réfléchissaient"
+      },
+      "future": {
+        "je": "réfléchirai",
+        "tu": "réfléchiras",
+        "il/elle": "réfléchira",
+        "nous": "réfléchirons",
+        "vous": "réfléchirez",
+        "ils/elles": "réfléchiront"
+      },
+      "imperative": {
+        "tu": "réfléchis",
+        "nous": "réfléchissons",
+        "vous": "réfléchissez"
+      }
+    },
+    {
+      "infinitive": "vendre",
+      "meaningEn": "to sell",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "vends",
+        "tu": "vends",
+        "il/elle": "vend",
+        "nous": "vendons",
+        "vous": "vendez",
+        "ils/elles": "vendent"
+      },
+      "past": {
+        "je": "vendais",
+        "tu": "vendais",
+        "il": "vendait",
+        "nous": "vendions",
+        "vous": "vendiez",
+        "ils": "vendaient"
+      },
+      "future": {
+        "je": "vendrai",
+        "tu": "vendras",
+        "il/elle": "vendra",
+        "nous": "vendrons",
+        "vous": "vendrez",
+        "ils/elles": "vendront"
+      },
+      "imperative": {
+        "tu": "vends",
+        "nous": "vendons",
+        "vous": "vendez"
+      }
+    },
+    {
+      "infinitive": "attendre",
+      "meaningEn": "to wait for",
+      "conjugationClass": 3,
+      "transitive": false,
+      "context": "à la gare",
+      "present": {
+        "je": "attends",
+        "tu": "attends",
+        "il/elle": "attend",
+        "nous": "attendons",
+        "vous": "attendez",
+        "ils/elles": "attendent"
+      },
+      "past": {
+        "je": "attendais",
+        "tu": "attendais",
+        "il": "attendait",
+        "nous": "attendions",
+        "vous": "attendiez",
+        "ils": "attendaient"
+      },
+      "future": {
+        "je": "attendrai",
+        "tu": "attendras",
+        "il/elle": "attendra",
+        "nous": "attendrons",
+        "vous": "attendrez",
+        "ils/elles": "attendront"
+      },
+      "imperative": {
+        "tu": "attends",
+        "nous": "attendons",
+        "vous": "attendez"
+      }
+    },
+    {
+      "infinitive": "faire",
+      "meaningEn": "to do / to make",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "fais",
+        "tu": "fais",
+        "il/elle": "fait",
+        "nous": "faisons",
+        "vous": "faites",
+        "ils/elles": "font"
+      },
+      "past": {
+        "je": "faisais",
+        "tu": "faisais",
+        "il": "faisait",
+        "nous": "faisions",
+        "vous": "faisiez",
+        "ils": "faisaient"
+      },
+      "future": {
+        "je": "ferai",
+        "tu": "feras",
+        "il/elle": "fera",
+        "nous": "ferons",
+        "vous": "ferez",
+        "ils/elles": "feront"
+      },
+      "imperative": {
+        "tu": "fais",
+        "nous": "faisons",
+        "vous": "faites"
+      }
+    },
+    {
+      "infinitive": "dire",
+      "meaningEn": "to say / to tell",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "dis",
+        "tu": "dis",
+        "il/elle": "dit",
+        "nous": "disons",
+        "vous": "dites",
+        "ils/elles": "disent"
+      },
+      "past": {
+        "je": "disais",
+        "tu": "disais",
+        "il": "disait",
+        "nous": "disions",
+        "vous": "disiez",
+        "ils": "disaient"
+      },
+      "future": {
+        "je": "dirai",
+        "tu": "diras",
+        "il/elle": "dira",
+        "nous": "dirons",
+        "vous": "direz",
+        "ils/elles": "diront"
+      },
+      "imperative": {
+        "tu": "dis",
+        "nous": "disons",
+        "vous": "dites"
+      }
+    },
+    {
+      "infinitive": "voir",
+      "meaningEn": "to see",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "vois",
+        "tu": "vois",
+        "il/elle": "voit",
+        "nous": "voyons",
+        "vous": "voyez",
+        "ils/elles": "voient"
+      },
+      "past": {
+        "je": "voyais",
+        "tu": "voyais",
+        "il": "voyait",
+        "nous": "voyions",
+        "vous": "voyiez",
+        "ils": "voyaient"
+      },
+      "future": {
+        "je": "verrai",
+        "tu": "verras",
+        "il/elle": "verra",
+        "nous": "verrons",
+        "vous": "verrez",
+        "ils/elles": "verront"
+      },
+      "imperative": {
+        "tu": "vois",
+        "nous": "voyons",
+        "vous": "voyez"
+      }
+    },
+    {
+      "infinitive": "lire",
+      "meaningEn": "to read",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "lis",
+        "tu": "lis",
+        "il/elle": "lit",
+        "nous": "lisons",
+        "vous": "lisez",
+        "ils/elles": "lisent"
+      },
+      "past": {
+        "je": "lisais",
+        "tu": "lisais",
+        "il": "lisait",
+        "nous": "lisions",
+        "vous": "lisiez",
+        "ils": "lisaient"
+      },
+      "future": {
+        "je": "lirai",
+        "tu": "liras",
+        "il/elle": "lira",
+        "nous": "lirons",
+        "vous": "lirez",
+        "ils/elles": "liront"
+      },
+      "imperative": {
+        "tu": "lis",
+        "nous": "lisons",
+        "vous": "lisez"
+      }
+    },
+    {
+      "infinitive": "écrire",
+      "meaningEn": "to write",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "écris",
+        "tu": "écris",
+        "il/elle": "écrit",
+        "nous": "écrivons",
+        "vous": "écrivez",
+        "ils/elles": "écrivent"
+      },
+      "past": {
+        "je": "écrivais",
+        "tu": "écrivais",
+        "il": "écrivait",
+        "nous": "écrivions",
+        "vous": "écriviez",
+        "ils": "écrivaient"
+      },
+      "future": {
+        "je": "écrirai",
+        "tu": "écriras",
+        "il/elle": "écrira",
+        "nous": "écrirons",
+        "vous": "écrirez",
+        "ils/elles": "écriront"
+      },
+      "imperative": {
+        "tu": "écris",
+        "nous": "écrivons",
+        "vous": "écrivez"
+      }
+    },
+    {
+      "infinitive": "prendre",
+      "meaningEn": "to take",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "prends",
+        "tu": "prends",
+        "il/elle": "prend",
+        "nous": "prenons",
+        "vous": "prenez",
+        "ils/elles": "prennent"
+      },
+      "past": {
+        "je": "prenais",
+        "tu": "prenais",
+        "il": "prenait",
+        "nous": "prenions",
+        "vous": "preniez",
+        "ils": "prenaient"
+      },
+      "future": {
+        "je": "prendrai",
+        "tu": "prendras",
+        "il/elle": "prendra",
+        "nous": "prendrons",
+        "vous": "prendrez",
+        "ils/elles": "prendront"
+      },
+      "imperative": {
+        "tu": "prends",
+        "nous": "prenons",
+        "vous": "prenez"
+      }
+    },
+    {
+      "infinitive": "venir",
+      "meaningEn": "to come",
+      "conjugationClass": 3,
+      "transitive": false,
+      "context": "à la fête",
+      "present": {
+        "je": "viens",
+        "tu": "viens",
+        "il/elle": "vient",
+        "nous": "venons",
+        "vous": "venez",
+        "ils/elles": "viennent"
+      },
+      "past": {
+        "je": "venais",
+        "tu": "venais",
+        "il": "venait",
+        "nous": "venions",
+        "vous": "veniez",
+        "ils": "venaient"
+      },
+      "future": {
+        "je": "viendrai",
+        "tu": "viendras",
+        "il/elle": "viendra",
+        "nous": "viendrons",
+        "vous": "viendrez",
+        "ils/elles": "viendront"
+      },
+      "imperative": {
+        "tu": "viens",
+        "nous": "venons",
+        "vous": "venez"
+      }
+    },
+    {
+      "infinitive": "mettre",
+      "meaningEn": "to put / to place",
+      "conjugationClass": 3,
+      "transitive": true,
+      "present": {
+        "je": "mets",
+        "tu": "mets",
+        "il/elle": "met",
+        "nous": "mettons",
+        "vous": "mettez",
+        "ils/elles": "mettent"
+      },
+      "past": {
+        "je": "mettais",
+        "tu": "mettais",
+        "il": "mettait",
+        "nous": "mettions",
+        "vous": "mettiez",
+        "ils": "mettaient"
+      },
+      "future": {
+        "je": "mettrai",
+        "tu": "mettras",
+        "il/elle": "mettra",
+        "nous": "mettrons",
+        "vous": "mettrez",
+        "ils/elles": "mettront"
+      },
+      "imperative": {
+        "tu": "mets",
+        "nous": "mettons",
+        "vous": "mettez"
+      }
+    }
+  ]
+}

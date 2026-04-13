@@ -52,6 +52,10 @@ export const ACHIEVEMENTS = [
   { id: 'grammar_perfect_section', name: 'Perfect Section', nameUk: 'Ідеальний розділ', nameRu: 'Идеальный раздел', desc: 'Get 100% on a grammar section', icon: '💎', xp: 150 },
   { id: 'grammar_streak_10', name: 'Grammar Streak', nameUk: 'Граматична серія', nameRu: 'Грамматическая серия', desc: 'Get 10 correct grammar answers in a row', icon: '🔥', xp: 200 },
   { id: 'grammar_all_types', name: 'Exercise Explorer', nameUk: 'Дослідник вправ', nameRu: 'Исследователь упражнений', desc: 'Complete all 8 grammar exercise types', icon: '🗺️', xp: 150 },
+  // P5b - Verb Drills
+  { id: 'verbdrill_first', name: 'Conjugation Rookie', nameUk: 'Початківець дієвідмінювання', nameRu: 'Новичок спряжения', desc: 'Complete your first verb drill session', icon: '🏋️', xp: 50 },
+  { id: 'verbdrill_all_tenses', name: 'Tense Master', nameUk: 'Майстер часів', nameRu: 'Мастер времён', desc: 'Drill all 4 tenses at least once', icon: '⏱️', xp: 200 },
+  { id: 'verbdrill_perfect', name: 'Perfect Conjugation', nameUk: 'Ідеальне дієвідмінювання', nameRu: 'Идеальное спряжение', desc: 'Get 100% on a verb drill session', icon: '💯', xp: 150 },
   // P6 - Sentence Construction
   { id: 'sentence_first', name: 'Sentence Builder', nameUk: 'Будівник речень', nameRu: 'Строитель предложений', desc: 'Build your first sentence', icon: '🧱', xp: 50 },
   { id: 'sentence_10', name: 'Sentence Pro', nameUk: 'Професіонал речень', nameRu: 'Профессионал предложений', desc: 'Build 10 correct sentences', icon: '🏗️', xp: 150 },

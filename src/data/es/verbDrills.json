@@ -1,0 +1,759 @@
+{
+  "meta": {
+    "language": "es",
+    "pronouns": ["yo", "tú", "él/ella/usted", "nosotros", "vosotros", "ellos/ustedes"],
+    "pastGenders": [
+      { "key": "yo", "label": "yo" },
+      { "key": "tú", "label": "tú" },
+      { "key": "él", "label": "él/ella/usted" },
+      { "key": "nosotros", "label": "nosotros" },
+      { "key": "vosotros", "label": "vosotros" },
+      { "key": "ellos", "label": "ellos/ustedes" }
+    ],
+    "imperativePronouns": ["tú", "nosotros", "vosotros"],
+    "sampleObjects": ["el libro", "la carta", "la música", "la lección", "el café"]
+  },
+  "tenses": [
+    {
+      "tenseId": "present",
+      "nameEn": "Present Tense",
+      "nameLocal": "Presente",
+      "icon": "⏱️",
+      "tip": "-ar: -o, -as, -a, -amos, -áis, -an. -er: -o, -es, -e, -emos, -éis, -en. -ir: -o, -es, -e, -imos, -ís, -en."
+    },
+    {
+      "tenseId": "past",
+      "nameEn": "Preterite",
+      "nameLocal": "Pretérito indefinido",
+      "icon": "⏪",
+      "tip": "-ar: -é, -aste, -ó, -amos, -asteis, -aron. -er/-ir: -í, -iste, -ió, -imos, -isteis, -ieron."
+    },
+    {
+      "tenseId": "future",
+      "nameEn": "Future Tense",
+      "nameLocal": "Futuro simple",
+      "icon": "⏩",
+      "tip": "Infinitive + -é, -ás, -á, -emos, -éis, -án"
+    },
+    {
+      "tenseId": "imperative",
+      "nameEn": "Imperative",
+      "nameLocal": "Imperativo",
+      "icon": "👉",
+      "tip": "Affirmative commands for tú, nosotros, vosotros"
+    }
+  ],
+  "verbs": [
+    {
+      "infinitive": "hablar",
+      "meaning": "to speak",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "en español",
+      "present": {
+        "yo": "hablo",
+        "tú": "hablas",
+        "él/ella/usted": "habla",
+        "nosotros": "hablamos",
+        "vosotros": "habláis",
+        "ellos/ustedes": "hablan"
+      },
+      "past": {
+        "yo": "hablé",
+        "tú": "hablaste",
+        "él": "habló",
+        "nosotros": "hablamos",
+        "vosotros": "hablasteis",
+        "ellos": "hablaron"
+      },
+      "future": {
+        "yo": "hablaré",
+        "tú": "hablarás",
+        "él/ella/usted": "hablará",
+        "nosotros": "hablaremos",
+        "vosotros": "hablaréis",
+        "ellos/ustedes": "hablarán"
+      },
+      "imperative": {
+        "tú": "habla",
+        "nosotros": "hablemos",
+        "vosotros": "hablad"
+      }
+    },
+    {
+      "infinitive": "trabajar",
+      "meaning": "to work",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "mucho",
+      "present": {
+        "yo": "trabajo",
+        "tú": "trabajas",
+        "él/ella/usted": "trabaja",
+        "nosotros": "trabajamos",
+        "vosotros": "trabajáis",
+        "ellos/ustedes": "trabajan"
+      },
+      "past": {
+        "yo": "trabajé",
+        "tú": "trabajaste",
+        "él": "trabajó",
+        "nosotros": "trabajamos",
+        "vosotros": "trabajasteis",
+        "ellos": "trabajaron"
+      },
+      "future": {
+        "yo": "trabajaré",
+        "tú": "trabajarás",
+        "él/ella/usted": "trabajará",
+        "nosotros": "trabajaremos",
+        "vosotros": "trabajaréis",
+        "ellos/ustedes": "trabajarán"
+      },
+      "imperative": {
+        "tú": "trabaja",
+        "nosotros": "trabajemos",
+        "vosotros": "trabajad"
+      }
+    },
+    {
+      "infinitive": "comprar",
+      "meaning": "to buy",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "compro",
+        "tú": "compras",
+        "él/ella/usted": "compra",
+        "nosotros": "compramos",
+        "vosotros": "compráis",
+        "ellos/ustedes": "compran"
+      },
+      "past": {
+        "yo": "compré",
+        "tú": "compraste",
+        "él": "compró",
+        "nosotros": "compramos",
+        "vosotros": "comprasteis",
+        "ellos": "compraron"
+      },
+      "future": {
+        "yo": "compraré",
+        "tú": "comprarás",
+        "él/ella/usted": "comprará",
+        "nosotros": "compraremos",
+        "vosotros": "compraréis",
+        "ellos/ustedes": "comprarán"
+      },
+      "imperative": {
+        "tú": "compra",
+        "nosotros": "compremos",
+        "vosotros": "comprad"
+      }
+    },
+    {
+      "infinitive": "escuchar",
+      "meaning": "to listen to",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "escucho",
+        "tú": "escuchas",
+        "él/ella/usted": "escucha",
+        "nosotros": "escuchamos",
+        "vosotros": "escucháis",
+        "ellos/ustedes": "escuchan"
+      },
+      "past": {
+        "yo": "escuché",
+        "tú": "escuchaste",
+        "él": "escuchó",
+        "nosotros": "escuchamos",
+        "vosotros": "escuchasteis",
+        "ellos": "escucharon"
+      },
+      "future": {
+        "yo": "escucharé",
+        "tú": "escucharás",
+        "él/ella/usted": "escuchará",
+        "nosotros": "escucharemos",
+        "vosotros": "escucharéis",
+        "ellos/ustedes": "escucharán"
+      },
+      "imperative": {
+        "tú": "escucha",
+        "nosotros": "escuchemos",
+        "vosotros": "escuchad"
+      }
+    },
+    {
+      "infinitive": "cocinar",
+      "meaning": "to cook",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "bien",
+      "present": {
+        "yo": "cocino",
+        "tú": "cocinas",
+        "él/ella/usted": "cocina",
+        "nosotros": "cocinamos",
+        "vosotros": "cocináis",
+        "ellos/ustedes": "cocinan"
+      },
+      "past": {
+        "yo": "cociné",
+        "tú": "cocinaste",
+        "él": "cocinó",
+        "nosotros": "cocinamos",
+        "vosotros": "cocinasteis",
+        "ellos": "cocinaron"
+      },
+      "future": {
+        "yo": "cocinaré",
+        "tú": "cocinarás",
+        "él/ella/usted": "cocinará",
+        "nosotros": "cocinaremos",
+        "vosotros": "cocinaréis",
+        "ellos/ustedes": "cocinarán"
+      },
+      "imperative": {
+        "tú": "cocina",
+        "nosotros": "cocinemos",
+        "vosotros": "cocinad"
+      }
+    },
+    {
+      "infinitive": "caminar",
+      "meaning": "to walk",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "por el parque",
+      "present": {
+        "yo": "camino",
+        "tú": "caminas",
+        "él/ella/usted": "camina",
+        "nosotros": "caminamos",
+        "vosotros": "camináis",
+        "ellos/ustedes": "caminan"
+      },
+      "past": {
+        "yo": "caminé",
+        "tú": "caminaste",
+        "él": "caminó",
+        "nosotros": "caminamos",
+        "vosotros": "caminasteis",
+        "ellos": "caminaron"
+      },
+      "future": {
+        "yo": "caminaré",
+        "tú": "caminarás",
+        "él/ella/usted": "caminará",
+        "nosotros": "caminaremos",
+        "vosotros": "caminaréis",
+        "ellos/ustedes": "caminarán"
+      },
+      "imperative": {
+        "tú": "camina",
+        "nosotros": "caminemos",
+        "vosotros": "caminad"
+      }
+    },
+    {
+      "infinitive": "cantar",
+      "meaning": "to sing",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "una canción",
+      "present": {
+        "yo": "canto",
+        "tú": "cantas",
+        "él/ella/usted": "canta",
+        "nosotros": "cantamos",
+        "vosotros": "cantáis",
+        "ellos/ustedes": "cantan"
+      },
+      "past": {
+        "yo": "canté",
+        "tú": "cantaste",
+        "él": "cantó",
+        "nosotros": "cantamos",
+        "vosotros": "cantasteis",
+        "ellos": "cantaron"
+      },
+      "future": {
+        "yo": "cantaré",
+        "tú": "cantarás",
+        "él/ella/usted": "cantará",
+        "nosotros": "cantaremos",
+        "vosotros": "cantaréis",
+        "ellos/ustedes": "cantarán"
+      },
+      "imperative": {
+        "tú": "canta",
+        "nosotros": "cantemos",
+        "vosotros": "cantad"
+      }
+    },
+    {
+      "infinitive": "comer",
+      "meaning": "to eat",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "bien",
+      "present": {
+        "yo": "como",
+        "tú": "comes",
+        "él/ella/usted": "come",
+        "nosotros": "comemos",
+        "vosotros": "coméis",
+        "ellos/ustedes": "comen"
+      },
+      "past": {
+        "yo": "comí",
+        "tú": "comiste",
+        "él": "comió",
+        "nosotros": "comimos",
+        "vosotros": "comisteis",
+        "ellos": "comieron"
+      },
+      "future": {
+        "yo": "comeré",
+        "tú": "comerás",
+        "él/ella/usted": "comerá",
+        "nosotros": "comeremos",
+        "vosotros": "comeréis",
+        "ellos/ustedes": "comerán"
+      },
+      "imperative": {
+        "tú": "come",
+        "nosotros": "comamos",
+        "vosotros": "comed"
+      }
+    },
+    {
+      "infinitive": "beber",
+      "meaning": "to drink",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "bebo",
+        "tú": "bebes",
+        "él/ella/usted": "bebe",
+        "nosotros": "bebemos",
+        "vosotros": "bebéis",
+        "ellos/ustedes": "beben"
+      },
+      "past": {
+        "yo": "bebí",
+        "tú": "bebiste",
+        "él": "bebió",
+        "nosotros": "bebimos",
+        "vosotros": "bebisteis",
+        "ellos": "bebieron"
+      },
+      "future": {
+        "yo": "beberé",
+        "tú": "beberás",
+        "él/ella/usted": "beberá",
+        "nosotros": "beberemos",
+        "vosotros": "beberéis",
+        "ellos/ustedes": "beberán"
+      },
+      "imperative": {
+        "tú": "bebe",
+        "nosotros": "bebamos",
+        "vosotros": "bebed"
+      }
+    },
+    {
+      "infinitive": "aprender",
+      "meaning": "to learn",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "aprendo",
+        "tú": "aprendes",
+        "él/ella/usted": "aprende",
+        "nosotros": "aprendemos",
+        "vosotros": "aprendéis",
+        "ellos/ustedes": "aprenden"
+      },
+      "past": {
+        "yo": "aprendí",
+        "tú": "aprendiste",
+        "él": "aprendió",
+        "nosotros": "aprendimos",
+        "vosotros": "aprendisteis",
+        "ellos": "aprendieron"
+      },
+      "future": {
+        "yo": "aprenderé",
+        "tú": "aprenderás",
+        "él/ella/usted": "aprenderá",
+        "nosotros": "aprenderemos",
+        "vosotros": "aprenderéis",
+        "ellos/ustedes": "aprenderán"
+      },
+      "imperative": {
+        "tú": "aprende",
+        "nosotros": "aprendamos",
+        "vosotros": "aprended"
+      }
+    },
+    {
+      "infinitive": "vivir",
+      "meaning": "to live",
+      "conjugationClass": 1,
+      "transitive": false,
+      "context": "en la ciudad",
+      "present": {
+        "yo": "vivo",
+        "tú": "vives",
+        "él/ella/usted": "vive",
+        "nosotros": "vivimos",
+        "vosotros": "vivís",
+        "ellos/ustedes": "viven"
+      },
+      "past": {
+        "yo": "viví",
+        "tú": "viviste",
+        "él": "vivió",
+        "nosotros": "vivimos",
+        "vosotros": "vivisteis",
+        "ellos": "vivieron"
+      },
+      "future": {
+        "yo": "viviré",
+        "tú": "vivirás",
+        "él/ella/usted": "vivirá",
+        "nosotros": "viviremos",
+        "vosotros": "viviréis",
+        "ellos/ustedes": "vivirán"
+      },
+      "imperative": {
+        "tú": "vive",
+        "nosotros": "vivamos",
+        "vosotros": "vivid"
+      }
+    },
+    {
+      "infinitive": "escribir",
+      "meaning": "to write",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "escribo",
+        "tú": "escribes",
+        "él/ella/usted": "escribe",
+        "nosotros": "escribimos",
+        "vosotros": "escribís",
+        "ellos/ustedes": "escriben"
+      },
+      "past": {
+        "yo": "escribí",
+        "tú": "escribiste",
+        "él": "escribió",
+        "nosotros": "escribimos",
+        "vosotros": "escribisteis",
+        "ellos": "escribieron"
+      },
+      "future": {
+        "yo": "escribiré",
+        "tú": "escribirás",
+        "él/ella/usted": "escribirá",
+        "nosotros": "escribiremos",
+        "vosotros": "escribiréis",
+        "ellos/ustedes": "escribirán"
+      },
+      "imperative": {
+        "tú": "escribe",
+        "nosotros": "escribamos",
+        "vosotros": "escribid"
+      }
+    },
+    {
+      "infinitive": "abrir",
+      "meaning": "to open",
+      "conjugationClass": 1,
+      "transitive": true,
+      "present": {
+        "yo": "abro",
+        "tú": "abres",
+        "él/ella/usted": "abre",
+        "nosotros": "abrimos",
+        "vosotros": "abrís",
+        "ellos/ustedes": "abren"
+      },
+      "past": {
+        "yo": "abrí",
+        "tú": "abriste",
+        "él": "abrió",
+        "nosotros": "abrimos",
+        "vosotros": "abristeis",
+        "ellos": "abrieron"
+      },
+      "future": {
+        "yo": "abriré",
+        "tú": "abrirás",
+        "él/ella/usted": "abrirá",
+        "nosotros": "abriremos",
+        "vosotros": "abriréis",
+        "ellos/ustedes": "abrirán"
+      },
+      "imperative": {
+        "tú": "abre",
+        "nosotros": "abramos",
+        "vosotros": "abrid"
+      }
+    },
+    {
+      "infinitive": "pensar",
+      "meaning": "to think",
+      "conjugationClass": 2,
+      "transitive": false,
+      "context": "mucho",
+      "present": {
+        "yo": "pienso",
+        "tú": "piensas",
+        "él/ella/usted": "piensa",
+        "nosotros": "pensamos",
+        "vosotros": "pensáis",
+        "ellos/ustedes": "piensan"
+      },
+      "past": {
+        "yo": "pensé",
+        "tú": "pensaste",
+        "él": "pensó",
+        "nosotros": "pensamos",
+        "vosotros": "pensasteis",
+        "ellos": "pensaron"
+      },
+      "future": {
+        "yo": "pensaré",
+        "tú": "pensarás",
+        "él/ella/usted": "pensará",
+        "nosotros": "pensaremos",
+        "vosotros": "pensaréis",
+        "ellos/ustedes": "pensarán"
+      },
+      "imperative": {
+        "tú": "piensa",
+        "nosotros": "pensemos",
+        "vosotros": "pensad"
+      }
+    },
+    {
+      "infinitive": "dormir",
+      "meaning": "to sleep",
+      "conjugationClass": 2,
+      "transitive": false,
+      "context": "bien",
+      "present": {
+        "yo": "duermo",
+        "tú": "duermes",
+        "él/ella/usted": "duerme",
+        "nosotros": "dormimos",
+        "vosotros": "dormís",
+        "ellos/ustedes": "duermen"
+      },
+      "past": {
+        "yo": "dormí",
+        "tú": "dormiste",
+        "él": "durmió",
+        "nosotros": "dormimos",
+        "vosotros": "dormisteis",
+        "ellos": "durmieron"
+      },
+      "future": {
+        "yo": "dormiré",
+        "tú": "dormirás",
+        "él/ella/usted": "dormirá",
+        "nosotros": "dormiremos",
+        "vosotros": "dormiréis",
+        "ellos/ustedes": "dormirán"
+      },
+      "imperative": {
+        "tú": "duerme",
+        "nosotros": "durmamos",
+        "vosotros": "dormid"
+      }
+    },
+    {
+      "infinitive": "pedir",
+      "meaning": "to ask for / to order",
+      "conjugationClass": 2,
+      "transitive": true,
+      "present": {
+        "yo": "pido",
+        "tú": "pides",
+        "él/ella/usted": "pide",
+        "nosotros": "pedimos",
+        "vosotros": "pedís",
+        "ellos/ustedes": "piden"
+      },
+      "past": {
+        "yo": "pedí",
+        "tú": "pediste",
+        "él": "pidió",
+        "nosotros": "pedimos",
+        "vosotros": "pedisteis",
+        "ellos": "pidieron"
+      },
+      "future": {
+        "yo": "pediré",
+        "tú": "pedirás",
+        "él/ella/usted": "pedirá",
+        "nosotros": "pediremos",
+        "vosotros": "pediréis",
+        "ellos/ustedes": "pedirán"
+      },
+      "imperative": {
+        "tú": "pide",
+        "nosotros": "pidamos",
+        "vosotros": "pedid"
+      }
+    },
+    {
+      "infinitive": "jugar",
+      "meaning": "to play",
+      "conjugationClass": 2,
+      "transitive": false,
+      "context": "al fútbol",
+      "present": {
+        "yo": "juego",
+        "tú": "juegas",
+        "él/ella/usted": "juega",
+        "nosotros": "jugamos",
+        "vosotros": "jugáis",
+        "ellos/ustedes": "juegan"
+      },
+      "past": {
+        "yo": "jugué",
+        "tú": "jugaste",
+        "él": "jugó",
+        "nosotros": "jugamos",
+        "vosotros": "jugasteis",
+        "ellos": "jugaron"
+      },
+      "future": {
+        "yo": "jugaré",
+        "tú": "jugarás",
+        "él/ella/usted": "jugará",
+        "nosotros": "jugaremos",
+        "vosotros": "jugaréis",
+        "ellos/ustedes": "jugarán"
+      },
+      "imperative": {
+        "tú": "juega",
+        "nosotros": "juguemos",
+        "vosotros": "jugad"
+      }
+    },
+    {
+      "infinitive": "hacer",
+      "meaning": "to do / to make",
+      "conjugationClass": 2,
+      "transitive": true,
+      "present": {
+        "yo": "hago",
+        "tú": "haces",
+        "él/ella/usted": "hace",
+        "nosotros": "hacemos",
+        "vosotros": "hacéis",
+        "ellos/ustedes": "hacen"
+      },
+      "past": {
+        "yo": "hice",
+        "tú": "hiciste",
+        "él": "hizo",
+        "nosotros": "hicimos",
+        "vosotros": "hicisteis",
+        "ellos": "hicieron"
+      },
+      "future": {
+        "yo": "haré",
+        "tú": "harás",
+        "él/ella/usted": "hará",
+        "nosotros": "haremos",
+        "vosotros": "haréis",
+        "ellos/ustedes": "harán"
+      },
+      "imperative": {
+        "tú": "haz",
+        "nosotros": "hagamos",
+        "vosotros": "haced"
+      }
+    },
+    {
+      "infinitive": "tener",
+      "meaning": "to have",
+      "conjugationClass": 2,
+      "transitive": true,
+      "present": {
+        "yo": "tengo",
+        "tú": "tienes",
+        "él/ella/usted": "tiene",
+        "nosotros": "tenemos",
+        "vosotros": "tenéis",
+        "ellos/ustedes": "tienen"
+      },
+      "past": {
+        "yo": "tuve",
+        "tú": "tuviste",
+        "él": "tuvo",
+        "nosotros": "tuvimos",
+        "vosotros": "tuvisteis",
+        "ellos": "tuvieron"
+      },
+      "future": {
+        "yo": "tendré",
+        "tú": "tendrás",
+        "él/ella/usted": "tendrá",
+        "nosotros": "tendremos",
+        "vosotros": "tendréis",
+        "ellos/ustedes": "tendrán"
+      },
+      "imperative": {
+        "tú": "ten",
+        "nosotros": "tengamos",
+        "vosotros": "tened"
+      }
+    },
+    {
+      "infinitive": "decir",
+      "meaning": "to say / to tell",
+      "conjugationClass": 2,
+      "transitive": false,
+      "context": "la verdad",
+      "present": {
+        "yo": "digo",
+        "tú": "dices",
+        "él/ella/usted": "dice",
+        "nosotros": "decimos",
+        "vosotros": "decís",
+        "ellos/ustedes": "dicen"
+      },
+      "past": {
+        "yo": "dije",
+        "tú": "dijiste",
+        "él": "dijo",
+        "nosotros": "dijimos",
+        "vosotros": "dijisteis",
+        "ellos": "dijeron"
+      },
+      "future": {
+        "yo": "diré",
+        "tú": "dirás",
+        "él/ella/usted": "dirá",
+        "nosotros": "diremos",
+        "vosotros": "diréis",
+        "ellos/ustedes": "dirán"
+      },
+      "imperative": {
+        "tú": "di",
+        "nosotros": "digamos",
+        "vosotros": "decid"
+      }
+    }
+  ]
+}

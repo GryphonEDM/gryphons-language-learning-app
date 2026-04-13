@@ -1,0 +1,628 @@
+{
+  "meta": {
+    "language": "ja",
+    "pronouns": ["丁寧形 (polite)", "普通形 (plain)", "丁寧形否定 (polite neg.)", "普通形否定 (plain neg.)"],
+    "pastGenders": [
+      { "key": "丁寧形", "label": "丁寧形 (polite)" },
+      { "key": "普通形", "label": "普通形 (plain)" },
+      { "key": "丁寧形否定", "label": "丁寧形否定 (polite neg.)" },
+      { "key": "普通形否定", "label": "普通形否定 (plain neg.)" }
+    ],
+    "imperativePronouns": ["てください", "命令形", "て形"],
+    "sampleObjects": ["本を", "手紙を", "音楽を", "コーヒーを", "ご飯を"]
+  },
+  "tenses": [
+    { "tenseId": "present", "nameEn": "Present/Future", "nameLocal": "現在形", "icon": "⏱️", "tip": "丁寧: -ます. 普通: dictionary form. 否定丁寧: -ません. 否定普通: -ない" },
+    { "tenseId": "past", "nameEn": "Past Tense", "nameLocal": "過去形", "icon": "⏪", "tip": "丁寧: -ました. 普通: -た. 否定丁寧: -ませんでした. 否定普通: -なかった" },
+    { "tenseId": "future", "nameEn": "Te-form Variations", "nameLocal": "て形", "icon": "⏩", "tip": "丁寧: -ています (progressive). 普通: -ている. 否定丁寧: -ていません. 否定普通: -ていない" },
+    { "tenseId": "imperative", "nameEn": "Request/Command", "nameLocal": "命令・依頼形", "icon": "👉", "tip": "てください: polite request. 命令形: direct command. て形: casual request" }
+  ],
+  "verbs": [
+    {
+      "infinitive": "食べる",
+      "infinitiveEn": "to eat",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "食べます",
+        "普通形 (plain)": "食べる",
+        "丁寧形否定 (polite neg.)": "食べません",
+        "普通形否定 (plain neg.)": "食べない"
+      },
+      "past": {
+        "丁寧形": "食べました",
+        "普通形": "食べた",
+        "丁寧形否定": "食べませんでした",
+        "普通形否定": "食べなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "食べています",
+        "普通形 (plain)": "食べている",
+        "丁寧形否定 (polite neg.)": "食べていません",
+        "普通形否定 (plain neg.)": "食べていない"
+      },
+      "imperative": {
+        "てください": "食べてください",
+        "命令形": "食べろ",
+        "て形": "食べて"
+      }
+    },
+    {
+      "infinitive": "見る",
+      "infinitiveEn": "to see",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "見ます",
+        "普通形 (plain)": "見る",
+        "丁寧形否定 (polite neg.)": "見ません",
+        "普通形否定 (plain neg.)": "見ない"
+      },
+      "past": {
+        "丁寧形": "見ました",
+        "普通形": "見た",
+        "丁寧形否定": "見ませんでした",
+        "普通形否定": "見なかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "見ています",
+        "普通形 (plain)": "見ている",
+        "丁寧形否定 (polite neg.)": "見ていません",
+        "普通形否定 (plain neg.)": "見ていない"
+      },
+      "imperative": {
+        "てください": "見てください",
+        "命令形": "見ろ",
+        "て形": "見て"
+      }
+    },
+    {
+      "infinitive": "起きる",
+      "infinitiveEn": "to wake up",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": false,
+      "context": "朝",
+      "present": {
+        "丁寧形 (polite)": "起きます",
+        "普通形 (plain)": "起きる",
+        "丁寧形否定 (polite neg.)": "起きません",
+        "普通形否定 (plain neg.)": "起きない"
+      },
+      "past": {
+        "丁寧形": "起きました",
+        "普通形": "起きた",
+        "丁寧形否定": "起きませんでした",
+        "普通形否定": "起きなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "起きています",
+        "普通形 (plain)": "起きている",
+        "丁寧形否定 (polite neg.)": "起きていません",
+        "普通形否定 (plain neg.)": "起きていない"
+      },
+      "imperative": {
+        "てください": "起きてください",
+        "命令形": "起きろ",
+        "て形": "起きて"
+      }
+    },
+    {
+      "infinitive": "教える",
+      "infinitiveEn": "to teach",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "教えます",
+        "普通形 (plain)": "教える",
+        "丁寧形否定 (polite neg.)": "教えません",
+        "普通形否定 (plain neg.)": "教えない"
+      },
+      "past": {
+        "丁寧形": "教えました",
+        "普通形": "教えた",
+        "丁寧形否定": "教えませんでした",
+        "普通形否定": "教えなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "教えています",
+        "普通形 (plain)": "教えている",
+        "丁寧形否定 (polite neg.)": "教えていません",
+        "普通形否定 (plain neg.)": "教えていない"
+      },
+      "imperative": {
+        "てください": "教えてください",
+        "命令形": "教えろ",
+        "て形": "教えて"
+      }
+    },
+    {
+      "infinitive": "開ける",
+      "infinitiveEn": "to open",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "開けます",
+        "普通形 (plain)": "開ける",
+        "丁寧形否定 (polite neg.)": "開けません",
+        "普通形否定 (plain neg.)": "開けない"
+      },
+      "past": {
+        "丁寧形": "開けました",
+        "普通形": "開けた",
+        "丁寧形否定": "開けませんでした",
+        "普通形否定": "開けなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "開けています",
+        "普通形 (plain)": "開けている",
+        "丁寧形否定 (polite neg.)": "開けていません",
+        "普通形否定 (plain neg.)": "開けていない"
+      },
+      "imperative": {
+        "てください": "開けてください",
+        "命令形": "開けろ",
+        "て形": "開けて"
+      }
+    },
+    {
+      "infinitive": "着る",
+      "infinitiveEn": "to wear",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "着ます",
+        "普通形 (plain)": "着る",
+        "丁寧形否定 (polite neg.)": "着ません",
+        "普通形否定 (plain neg.)": "着ない"
+      },
+      "past": {
+        "丁寧形": "着ました",
+        "普通形": "着た",
+        "丁寧形否定": "着ませんでした",
+        "普通形否定": "着なかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "着ています",
+        "普通形 (plain)": "着ている",
+        "丁寧形否定 (polite neg.)": "着ていません",
+        "普通形否定 (plain neg.)": "着ていない"
+      },
+      "imperative": {
+        "てください": "着てください",
+        "命令形": "着ろ",
+        "て形": "着て"
+      }
+    },
+    {
+      "infinitive": "出る",
+      "infinitiveEn": "to leave",
+      "conjugationClass": 2,
+      "irregular": false,
+      "transitive": false,
+      "context": "家を",
+      "present": {
+        "丁寧形 (polite)": "出ます",
+        "普通形 (plain)": "出る",
+        "丁寧形否定 (polite neg.)": "出ません",
+        "普通形否定 (plain neg.)": "出ない"
+      },
+      "past": {
+        "丁寧形": "出ました",
+        "普通形": "出た",
+        "丁寧形否定": "出ませんでした",
+        "普通形否定": "出なかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "出ています",
+        "普通形 (plain)": "出ている",
+        "丁寧形否定 (polite neg.)": "出ていません",
+        "普通形否定 (plain neg.)": "出ていない"
+      },
+      "imperative": {
+        "てください": "出てください",
+        "命令形": "出ろ",
+        "て形": "出て"
+      }
+    },
+    {
+      "infinitive": "書く",
+      "infinitiveEn": "to write",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "書きます",
+        "普通形 (plain)": "書く",
+        "丁寧形否定 (polite neg.)": "書きません",
+        "普通形否定 (plain neg.)": "書かない"
+      },
+      "past": {
+        "丁寧形": "書きました",
+        "普通形": "書いた",
+        "丁寧形否定": "書きませんでした",
+        "普通形否定": "書かなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "書いています",
+        "普通形 (plain)": "書いている",
+        "丁寧形否定 (polite neg.)": "書いていません",
+        "普通形否定 (plain neg.)": "書いていない"
+      },
+      "imperative": {
+        "てください": "書いてください",
+        "命令形": "書け",
+        "て形": "書いて"
+      }
+    },
+    {
+      "infinitive": "読む",
+      "infinitiveEn": "to read",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "読みます",
+        "普通形 (plain)": "読む",
+        "丁寧形否定 (polite neg.)": "読みません",
+        "普通形否定 (plain neg.)": "読まない"
+      },
+      "past": {
+        "丁寧形": "読みました",
+        "普通形": "読んだ",
+        "丁寧形否定": "読みませんでした",
+        "普通形否定": "読まなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "読んでいます",
+        "普通形 (plain)": "読んでいる",
+        "丁寧形否定 (polite neg.)": "読んでいません",
+        "普通形否定 (plain neg.)": "読んでいない"
+      },
+      "imperative": {
+        "てください": "読んでください",
+        "命令形": "読め",
+        "て形": "読んで"
+      }
+    },
+    {
+      "infinitive": "聞く",
+      "infinitiveEn": "to listen",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "聞きます",
+        "普通形 (plain)": "聞く",
+        "丁寧形否定 (polite neg.)": "聞きません",
+        "普通形否定 (plain neg.)": "聞かない"
+      },
+      "past": {
+        "丁寧形": "聞きました",
+        "普通形": "聞いた",
+        "丁寧形否定": "聞きませんでした",
+        "普通形否定": "聞かなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "聞いています",
+        "普通形 (plain)": "聞いている",
+        "丁寧形否定 (polite neg.)": "聞いていません",
+        "普通形否定 (plain neg.)": "聞いていない"
+      },
+      "imperative": {
+        "てください": "聞いてください",
+        "命令形": "聞け",
+        "て形": "聞いて"
+      }
+    },
+    {
+      "infinitive": "話す",
+      "infinitiveEn": "to speak",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "話します",
+        "普通形 (plain)": "話す",
+        "丁寧形否定 (polite neg.)": "話しません",
+        "普通形否定 (plain neg.)": "話さない"
+      },
+      "past": {
+        "丁寧形": "話しました",
+        "普通形": "話した",
+        "丁寧形否定": "話しませんでした",
+        "普通形否定": "話さなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "話しています",
+        "普通形 (plain)": "話している",
+        "丁寧形否定 (polite neg.)": "話していません",
+        "普通形否定 (plain neg.)": "話していない"
+      },
+      "imperative": {
+        "てください": "話してください",
+        "命令形": "話せ",
+        "て形": "話して"
+      }
+    },
+    {
+      "infinitive": "飲む",
+      "infinitiveEn": "to drink",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "飲みます",
+        "普通形 (plain)": "飲む",
+        "丁寧形否定 (polite neg.)": "飲みません",
+        "普通形否定 (plain neg.)": "飲まない"
+      },
+      "past": {
+        "丁寧形": "飲みました",
+        "普通形": "飲んだ",
+        "丁寧形否定": "飲みませんでした",
+        "普通形否定": "飲まなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "飲んでいます",
+        "普通形 (plain)": "飲んでいる",
+        "丁寧形否定 (polite neg.)": "飲んでいません",
+        "普通形否定 (plain neg.)": "飲んでいない"
+      },
+      "imperative": {
+        "てください": "飲んでください",
+        "命令形": "飲め",
+        "て形": "飲んで"
+      }
+    },
+    {
+      "infinitive": "行く",
+      "infinitiveEn": "to go",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "学校に",
+      "present": {
+        "丁寧形 (polite)": "行きます",
+        "普通形 (plain)": "行く",
+        "丁寧形否定 (polite neg.)": "行きません",
+        "普通形否定 (plain neg.)": "行かない"
+      },
+      "past": {
+        "丁寧形": "行きました",
+        "普通形": "行った",
+        "丁寧形否定": "行きませんでした",
+        "普通形否定": "行かなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "行っています",
+        "普通形 (plain)": "行っている",
+        "丁寧形否定 (polite neg.)": "行っていません",
+        "普通形否定 (plain neg.)": "行っていない"
+      },
+      "imperative": {
+        "てください": "行ってください",
+        "命令形": "行け",
+        "て形": "行って"
+      }
+    },
+    {
+      "infinitive": "買う",
+      "infinitiveEn": "to buy",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "買います",
+        "普通形 (plain)": "買う",
+        "丁寧形否定 (polite neg.)": "買いません",
+        "普通形否定 (plain neg.)": "買わない"
+      },
+      "past": {
+        "丁寧形": "買いました",
+        "普通形": "買った",
+        "丁寧形否定": "買いませんでした",
+        "普通形否定": "買わなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "買っています",
+        "普通形 (plain)": "買っている",
+        "丁寧形否定 (polite neg.)": "買っていません",
+        "普通形否定 (plain neg.)": "買っていない"
+      },
+      "imperative": {
+        "てください": "買ってください",
+        "命令形": "買え",
+        "て形": "買って"
+      }
+    },
+    {
+      "infinitive": "作る",
+      "infinitiveEn": "to make",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "作ります",
+        "普通形 (plain)": "作る",
+        "丁寧形否定 (polite neg.)": "作りません",
+        "普通形否定 (plain neg.)": "作らない"
+      },
+      "past": {
+        "丁寧形": "作りました",
+        "普通形": "作った",
+        "丁寧形否定": "作りませんでした",
+        "普通形否定": "作らなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "作っています",
+        "普通形 (plain)": "作っている",
+        "丁寧形否定 (polite neg.)": "作っていません",
+        "普通形否定 (plain neg.)": "作っていない"
+      },
+      "imperative": {
+        "てください": "作ってください",
+        "命令形": "作れ",
+        "て形": "作って"
+      }
+    },
+    {
+      "infinitive": "歩く",
+      "infinitiveEn": "to walk",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "公園を",
+      "present": {
+        "丁寧形 (polite)": "歩きます",
+        "普通形 (plain)": "歩く",
+        "丁寧形否定 (polite neg.)": "歩きません",
+        "普通形否定 (plain neg.)": "歩かない"
+      },
+      "past": {
+        "丁寧形": "歩きました",
+        "普通形": "歩いた",
+        "丁寧形否定": "歩きませんでした",
+        "普通形否定": "歩かなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "歩いています",
+        "普通形 (plain)": "歩いている",
+        "丁寧形否定 (polite neg.)": "歩いていません",
+        "普通形否定 (plain neg.)": "歩いていない"
+      },
+      "imperative": {
+        "てください": "歩いてください",
+        "命令形": "歩け",
+        "て形": "歩いて"
+      }
+    },
+    {
+      "infinitive": "持つ",
+      "infinitiveEn": "to hold/carry",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "持ちます",
+        "普通形 (plain)": "持つ",
+        "丁寧形否定 (polite neg.)": "持ちません",
+        "普通形否定 (plain neg.)": "持たない"
+      },
+      "past": {
+        "丁寧形": "持ちました",
+        "普通形": "持った",
+        "丁寧形否定": "持ちませんでした",
+        "普通形否定": "持たなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "持っています",
+        "普通形 (plain)": "持っている",
+        "丁寧形否定 (polite neg.)": "持っていません",
+        "普通形否定 (plain neg.)": "持っていない"
+      },
+      "imperative": {
+        "てください": "持ってください",
+        "命令形": "持て",
+        "て形": "持って"
+      }
+    },
+    {
+      "infinitive": "遊ぶ",
+      "infinitiveEn": "to play",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "友達と",
+      "present": {
+        "丁寧形 (polite)": "遊びます",
+        "普通形 (plain)": "遊ぶ",
+        "丁寧形否定 (polite neg.)": "遊びません",
+        "普通形否定 (plain neg.)": "遊ばない"
+      },
+      "past": {
+        "丁寧形": "遊びました",
+        "普通形": "遊んだ",
+        "丁寧形否定": "遊びませんでした",
+        "普通形否定": "遊ばなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "遊んでいます",
+        "普通形 (plain)": "遊んでいる",
+        "丁寧形否定 (polite neg.)": "遊んでいません",
+        "普通形否定 (plain neg.)": "遊んでいない"
+      },
+      "imperative": {
+        "てください": "遊んでください",
+        "命令形": "遊べ",
+        "て形": "遊んで"
+      }
+    },
+    {
+      "infinitive": "する",
+      "infinitiveEn": "to do",
+      "conjugationClass": 3,
+      "irregular": true,
+      "transitive": true,
+      "present": {
+        "丁寧形 (polite)": "します",
+        "普通形 (plain)": "する",
+        "丁寧形否定 (polite neg.)": "しません",
+        "普通形否定 (plain neg.)": "しない"
+      },
+      "past": {
+        "丁寧形": "しました",
+        "普通形": "した",
+        "丁寧形否定": "しませんでした",
+        "普通形否定": "しなかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "しています",
+        "普通形 (plain)": "している",
+        "丁寧形否定 (polite neg.)": "していません",
+        "普通形否定 (plain neg.)": "していない"
+      },
+      "imperative": {
+        "てください": "してください",
+        "命令形": "しろ",
+        "て形": "して"
+      }
+    },
+    {
+      "infinitive": "来る",
+      "infinitiveEn": "to come",
+      "conjugationClass": 3,
+      "irregular": true,
+      "transitive": false,
+      "context": "ここに",
+      "present": {
+        "丁寧形 (polite)": "来ます",
+        "普通形 (plain)": "来る",
+        "丁寧形否定 (polite neg.)": "来ません",
+        "普通形否定 (plain neg.)": "来ない"
+      },
+      "past": {
+        "丁寧形": "来ました",
+        "普通形": "来た",
+        "丁寧形否定": "来ませんでした",
+        "普通形否定": "来なかった"
+      },
+      "future": {
+        "丁寧形 (polite)": "来ています",
+        "普通形 (plain)": "来ている",
+        "丁寧形否定 (polite neg.)": "来ていません",
+        "普通形否定 (plain neg.)": "来ていない"
+      },
+      "imperative": {
+        "てください": "来てください",
+        "命令形": "来い",
+        "て形": "来て"
+      }
+    }
+  ]
+}

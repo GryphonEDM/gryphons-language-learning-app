@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "language": "de",
+    "pronouns": ["ich", "du", "er/sie/es", "wir", "ihr", "sie/Sie"],
+    "pastGenders": [
+      { "key": "ich", "label": "ich" },
+      { "key": "du", "label": "du" },
+      { "key": "er", "label": "er/sie/es" },
+      { "key": "wir", "label": "wir" },
+      { "key": "ihr", "label": "ihr" },
+      { "key": "sie", "label": "sie/Sie" }
+    ],
+    "imperativePronouns": ["du", "ihr", "Sie"],
+    "sampleObjects": ["das Buch", "den Brief", "die Musik", "den Kaffee", "die Zeitung"]
+  },
+  "tenses": [
+    { "tenseId": "present", "nameEn": "Present Tense", "nameLocal": "Präsens", "icon": "⏱️", "tip": "Regular: -e, -st, -t, -en, -t, -en" },
+    { "tenseId": "past", "nameEn": "Simple Past", "nameLocal": "Präteritum", "icon": "⏪", "tip": "Weak verbs: stem + -te, -test, -te, -ten, -tet, -ten. Strong verbs: stem change." },
+    { "tenseId": "future", "nameEn": "Future Tense", "nameLocal": "Futur I", "icon": "⏩", "tip": "werden + infinitive: werde, wirst, wird, werden, werdet, werden" },
+    { "tenseId": "imperative", "nameEn": "Imperative", "nameLocal": "Imperativ", "icon": "👉", "tip": "du: stem(+e), ihr: stem+t, Sie: infinitive + Sie" }
+  ],
+  "verbs": [
+    {
+      "infinitive": "machen",
+      "infinitiveEn": "to do/make",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "mache", "du": "machst", "er/sie/es": "macht", "wir": "machen", "ihr": "macht", "sie/Sie": "machen" },
+      "past": { "ich": "machte", "du": "machtest", "er": "machte", "wir": "machten", "ihr": "machtet", "sie": "machten" },
+      "future": { "ich": "werde machen", "du": "wirst machen", "er/sie/es": "wird machen", "wir": "werden machen", "ihr": "werdet machen", "sie/Sie": "werden machen" },
+      "imperative": { "du": "mach", "ihr": "macht", "Sie": "machen Sie" }
+    },
+    {
+      "infinitive": "spielen",
+      "infinitiveEn": "to play",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "spiele", "du": "spielst", "er/sie/es": "spielt", "wir": "spielen", "ihr": "spielt", "sie/Sie": "spielen" },
+      "past": { "ich": "spielte", "du": "spieltest", "er": "spielte", "wir": "spielten", "ihr": "spieltet", "sie": "spielten" },
+      "future": { "ich": "werde spielen", "du": "wirst spielen", "er/sie/es": "wird spielen", "wir": "werden spielen", "ihr": "werdet spielen", "sie/Sie": "werden spielen" },
+      "imperative": { "du": "spiel", "ihr": "spielt", "Sie": "spielen Sie" }
+    },
+    {
+      "infinitive": "lernen",
+      "infinitiveEn": "to learn",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "lerne", "du": "lernst", "er/sie/es": "lernt", "wir": "lernen", "ihr": "lernt", "sie/Sie": "lernen" },
+      "past": { "ich": "lernte", "du": "lerntest", "er": "lernte", "wir": "lernten", "ihr": "lerntet", "sie": "lernten" },
+      "future": { "ich": "werde lernen", "du": "wirst lernen", "er/sie/es": "wird lernen", "wir": "werden lernen", "ihr": "werdet lernen", "sie/Sie": "werden lernen" },
+      "imperative": { "du": "lern", "ihr": "lernt", "Sie": "lernen Sie" }
+    },
+    {
+      "infinitive": "kaufen",
+      "infinitiveEn": "to buy",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "kaufe", "du": "kaufst", "er/sie/es": "kauft", "wir": "kaufen", "ihr": "kauft", "sie/Sie": "kaufen" },
+      "past": { "ich": "kaufte", "du": "kauftest", "er": "kaufte", "wir": "kauften", "ihr": "kauftet", "sie": "kauften" },
+      "future": { "ich": "werde kaufen", "du": "wirst kaufen", "er/sie/es": "wird kaufen", "wir": "werden kaufen", "ihr": "werdet kaufen", "sie/Sie": "werden kaufen" },
+      "imperative": { "du": "kauf", "ihr": "kauft", "Sie": "kaufen Sie" }
+    },
+    {
+      "infinitive": "arbeiten",
+      "infinitiveEn": "to work",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "an einem Projekt",
+      "present": { "ich": "arbeite", "du": "arbeitest", "er/sie/es": "arbeitet", "wir": "arbeiten", "ihr": "arbeitet", "sie/Sie": "arbeiten" },
+      "past": { "ich": "arbeitete", "du": "arbeitetest", "er": "arbeitete", "wir": "arbeiteten", "ihr": "arbeitetet", "sie": "arbeiteten" },
+      "future": { "ich": "werde arbeiten", "du": "wirst arbeiten", "er/sie/es": "wird arbeiten", "wir": "werden arbeiten", "ihr": "werdet arbeiten", "sie/Sie": "werden arbeiten" },
+      "imperative": { "du": "arbeite", "ihr": "arbeitet", "Sie": "arbeiten Sie" }
+    },
+    {
+      "infinitive": "hören",
+      "infinitiveEn": "to hear/listen",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "höre", "du": "hörst", "er/sie/es": "hört", "wir": "hören", "ihr": "hört", "sie/Sie": "hören" },
+      "past": { "ich": "hörte", "du": "hörtest", "er": "hörte", "wir": "hörten", "ihr": "hörtet", "sie": "hörten" },
+      "future": { "ich": "werde hören", "du": "wirst hören", "er/sie/es": "wird hören", "wir": "werden hören", "ihr": "werdet hören", "sie/Sie": "werden hören" },
+      "imperative": { "du": "hör", "ihr": "hört", "Sie": "hören Sie" }
+    },
+    {
+      "infinitive": "sagen",
+      "infinitiveEn": "to say",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "sage", "du": "sagst", "er/sie/es": "sagt", "wir": "sagen", "ihr": "sagt", "sie/Sie": "sagen" },
+      "past": { "ich": "sagte", "du": "sagtest", "er": "sagte", "wir": "sagten", "ihr": "sagtet", "sie": "sagten" },
+      "future": { "ich": "werde sagen", "du": "wirst sagen", "er/sie/es": "wird sagen", "wir": "werden sagen", "ihr": "werdet sagen", "sie/Sie": "werden sagen" },
+      "imperative": { "du": "sag", "ihr": "sagt", "Sie": "sagen Sie" }
+    },
+    {
+      "infinitive": "fragen",
+      "infinitiveEn": "to ask",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "frage", "du": "fragst", "er/sie/es": "fragt", "wir": "fragen", "ihr": "fragt", "sie/Sie": "fragen" },
+      "past": { "ich": "fragte", "du": "fragtest", "er": "fragte", "wir": "fragten", "ihr": "fragtet", "sie": "fragten" },
+      "future": { "ich": "werde fragen", "du": "wirst fragen", "er/sie/es": "wird fragen", "wir": "werden fragen", "ihr": "werdet fragen", "sie/Sie": "werden fragen" },
+      "imperative": { "du": "frag", "ihr": "fragt", "Sie": "fragen Sie" }
+    },
+    {
+      "infinitive": "wohnen",
+      "infinitiveEn": "to live/reside",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": false,
+      "context": "in Berlin",
+      "present": { "ich": "wohne", "du": "wohnst", "er/sie/es": "wohnt", "wir": "wohnen", "ihr": "wohnt", "sie/Sie": "wohnen" },
+      "past": { "ich": "wohnte", "du": "wohntest", "er": "wohnte", "wir": "wohnten", "ihr": "wohntet", "sie": "wohnten" },
+      "future": { "ich": "werde wohnen", "du": "wirst wohnen", "er/sie/es": "wird wohnen", "wir": "werden wohnen", "ihr": "werdet wohnen", "sie/Sie": "werden wohnen" },
+      "imperative": { "du": "wohn", "ihr": "wohnt", "Sie": "wohnen Sie" }
+    },
+    {
+      "infinitive": "kochen",
+      "infinitiveEn": "to cook",
+      "conjugationClass": 1,
+      "irregular": false,
+      "transitive": true,
+      "present": { "ich": "koche", "du": "kochst", "er/sie/es": "kocht", "wir": "kochen", "ihr": "kocht", "sie/Sie": "kochen" },
+      "past": { "ich": "kochte", "du": "kochtest", "er": "kochte", "wir": "kochten", "ihr": "kochtet", "sie": "kochten" },
+      "future": { "ich": "werde kochen", "du": "wirst kochen", "er/sie/es": "wird kochen", "wir": "werden kochen", "ihr": "werdet kochen", "sie/Sie": "werden kochen" },
+      "imperative": { "du": "koch", "ihr": "kocht", "Sie": "kochen Sie" }
+    },
+    {
+      "infinitive": "lesen",
+      "infinitiveEn": "to read",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "lese", "du": "liest", "er/sie/es": "liest", "wir": "lesen", "ihr": "lest", "sie/Sie": "lesen" },
+      "past": { "ich": "las", "du": "last", "er": "las", "wir": "lasen", "ihr": "last", "sie": "lasen" },
+      "future": { "ich": "werde lesen", "du": "wirst lesen", "er/sie/es": "wird lesen", "wir": "werden lesen", "ihr": "werdet lesen", "sie/Sie": "werden lesen" },
+      "imperative": { "du": "lies", "ihr": "lest", "Sie": "lesen Sie" }
+    },
+    {
+      "infinitive": "schreiben",
+      "infinitiveEn": "to write",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "schreibe", "du": "schreibst", "er/sie/es": "schreibt", "wir": "schreiben", "ihr": "schreibt", "sie/Sie": "schreiben" },
+      "past": { "ich": "schrieb", "du": "schriebst", "er": "schrieb", "wir": "schrieben", "ihr": "schriebt", "sie": "schrieben" },
+      "future": { "ich": "werde schreiben", "du": "wirst schreiben", "er/sie/es": "wird schreiben", "wir": "werden schreiben", "ihr": "werdet schreiben", "sie/Sie": "werden schreiben" },
+      "imperative": { "du": "schreib", "ihr": "schreibt", "Sie": "schreiben Sie" }
+    },
+    {
+      "infinitive": "sprechen",
+      "infinitiveEn": "to speak",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "mit dem Lehrer",
+      "present": { "ich": "spreche", "du": "sprichst", "er/sie/es": "spricht", "wir": "sprechen", "ihr": "sprecht", "sie/Sie": "sprechen" },
+      "past": { "ich": "sprach", "du": "sprachst", "er": "sprach", "wir": "sprachen", "ihr": "spracht", "sie": "sprachen" },
+      "future": { "ich": "werde sprechen", "du": "wirst sprechen", "er/sie/es": "wird sprechen", "wir": "werden sprechen", "ihr": "werdet sprechen", "sie/Sie": "werden sprechen" },
+      "imperative": { "du": "sprich", "ihr": "sprecht", "Sie": "sprechen Sie" }
+    },
+    {
+      "infinitive": "sehen",
+      "infinitiveEn": "to see",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "sehe", "du": "siehst", "er/sie/es": "sieht", "wir": "sehen", "ihr": "seht", "sie/Sie": "sehen" },
+      "past": { "ich": "sah", "du": "sahst", "er": "sah", "wir": "sahen", "ihr": "saht", "sie": "sahen" },
+      "future": { "ich": "werde sehen", "du": "wirst sehen", "er/sie/es": "wird sehen", "wir": "werden sehen", "ihr": "werdet sehen", "sie/Sie": "werden sehen" },
+      "imperative": { "du": "sieh", "ihr": "seht", "Sie": "sehen Sie" }
+    },
+    {
+      "infinitive": "geben",
+      "infinitiveEn": "to give",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "gebe", "du": "gibst", "er/sie/es": "gibt", "wir": "geben", "ihr": "gebt", "sie/Sie": "geben" },
+      "past": { "ich": "gab", "du": "gabst", "er": "gab", "wir": "gaben", "ihr": "gabt", "sie": "gaben" },
+      "future": { "ich": "werde geben", "du": "wirst geben", "er/sie/es": "wird geben", "wir": "werden geben", "ihr": "werdet geben", "sie/Sie": "werden geben" },
+      "imperative": { "du": "gib", "ihr": "gebt", "Sie": "geben Sie" }
+    },
+    {
+      "infinitive": "nehmen",
+      "infinitiveEn": "to take",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "nehme", "du": "nimmst", "er/sie/es": "nimmt", "wir": "nehmen", "ihr": "nehmt", "sie/Sie": "nehmen" },
+      "past": { "ich": "nahm", "du": "nahmst", "er": "nahm", "wir": "nahmen", "ihr": "nahmt", "sie": "nahmen" },
+      "future": { "ich": "werde nehmen", "du": "wirst nehmen", "er/sie/es": "wird nehmen", "wir": "werden nehmen", "ihr": "werdet nehmen", "sie/Sie": "werden nehmen" },
+      "imperative": { "du": "nimm", "ihr": "nehmt", "Sie": "nehmen Sie" }
+    },
+    {
+      "infinitive": "fahren",
+      "infinitiveEn": "to drive/go",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "nach München",
+      "present": { "ich": "fahre", "du": "fährst", "er/sie/es": "fährt", "wir": "fahren", "ihr": "fahrt", "sie/Sie": "fahren" },
+      "past": { "ich": "fuhr", "du": "fuhrst", "er": "fuhr", "wir": "fuhren", "ihr": "fuhrt", "sie": "fuhren" },
+      "future": { "ich": "werde fahren", "du": "wirst fahren", "er/sie/es": "wird fahren", "wir": "werden fahren", "ihr": "werdet fahren", "sie/Sie": "werden fahren" },
+      "imperative": { "du": "fahr", "ihr": "fahrt", "Sie": "fahren Sie" }
+    },
+    {
+      "infinitive": "tragen",
+      "infinitiveEn": "to carry/wear",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "trage", "du": "trägst", "er/sie/es": "trägt", "wir": "tragen", "ihr": "tragt", "sie/Sie": "tragen" },
+      "past": { "ich": "trug", "du": "trugst", "er": "trug", "wir": "trugen", "ihr": "trugt", "sie": "trugen" },
+      "future": { "ich": "werde tragen", "du": "wirst tragen", "er/sie/es": "wird tragen", "wir": "werden tragen", "ihr": "werdet tragen", "sie/Sie": "werden tragen" },
+      "imperative": { "du": "trag", "ihr": "tragt", "Sie": "tragen Sie" }
+    },
+    {
+      "infinitive": "laufen",
+      "infinitiveEn": "to run/walk",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": false,
+      "context": "im Park",
+      "present": { "ich": "laufe", "du": "läufst", "er/sie/es": "läuft", "wir": "laufen", "ihr": "lauft", "sie/Sie": "laufen" },
+      "past": { "ich": "lief", "du": "liefst", "er": "lief", "wir": "liefen", "ihr": "lieft", "sie": "liefen" },
+      "future": { "ich": "werde laufen", "du": "wirst laufen", "er/sie/es": "wird laufen", "wir": "werden laufen", "ihr": "werdet laufen", "sie/Sie": "werden laufen" },
+      "imperative": { "du": "lauf", "ihr": "lauft", "Sie": "laufen Sie" }
+    },
+    {
+      "infinitive": "essen",
+      "infinitiveEn": "to eat",
+      "conjugationClass": 2,
+      "irregular": true,
+      "transitive": true,
+      "present": { "ich": "esse", "du": "isst", "er/sie/es": "isst", "wir": "essen", "ihr": "esst", "sie/Sie": "essen" },
+      "past": { "ich": "aß", "du": "aßt", "er": "aß", "wir": "aßen", "ihr": "aßt", "sie": "aßen" },
+      "future": { "ich": "werde essen", "du": "wirst essen", "er/sie/es": "wird essen", "wir": "werden essen", "ihr": "werdet essen", "sie/Sie": "werden essen" },
+      "imperative": { "du": "iss", "ihr": "esst", "Sie": "essen Sie" }
+    }
+  ]
+}
