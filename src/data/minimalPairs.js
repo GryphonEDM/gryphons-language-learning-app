@@ -451,7 +451,7 @@ export const MINIMAL_PAIRS = {
       {
         id: 'hi_asp_3',
         wordA: { text: 'बल', phonetic: 'bal', english: 'strength' },
-        wordB: { text: 'भल', phonetic: 'bhal', english: 'forehead (variant)' },
+        wordB: { text: 'भाल', phonetic: 'bhaal', english: 'forehead' },
         category: 'asp',
         difficulty: 'A2',
         tip: 'ब (b) vs भ (bh). Aspirated voiced stops are the hardest for English speakers — add a breathy "h" after the "b".',

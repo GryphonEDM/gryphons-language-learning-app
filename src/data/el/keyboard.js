@@ -5,7 +5,7 @@ export const GREEK_KEYBOARD = [
     { el: 'ε', qwerty: 'e', sound: 'eh', elPhonetic: 'epsilon', finger: 'middle-l' },
     { el: 'ρ', qwerty: 'r', sound: 'r (rolled)', elPhonetic: 'ro', finger: 'index-l' },
     { el: 'τ', qwerty: 't', sound: 'teh', elPhonetic: 'taf', finger: 'index-l' },
-    { el: 'υ', qwerty: 'y', sound: 'ee (like French u)', elPhonetic: 'ypsilon', finger: 'index-r' },
+    { el: 'υ', qwerty: 'y', sound: 'ee', elPhonetic: 'ypsilon', finger: 'index-r' },
     { el: 'θ', qwerty: 'u', sound: 'th (like English "think")', elPhonetic: 'thita', finger: 'index-r' },
     { el: 'ι', qwerty: 'i', sound: 'ee', elPhonetic: 'iota', finger: 'middle-r' },
     { el: 'ο', qwerty: 'o', sound: 'oh', elPhonetic: 'omikron', finger: 'ring-r' },

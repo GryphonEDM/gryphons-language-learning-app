@@ -2,7 +2,7 @@
 
 export const EL_TRANSLATIONS = {
   // Lesson 1 — Home Row words
-  'κάλα': 'good things / goods',
+  'σκάλα': 'stairs / ladder',
   'φάση': 'phase / stage',
   'γάλα': 'milk',
   'σάλα': 'living room / hall',
