@@ -52,7 +52,7 @@ export default function FlashcardMode({
   }, [langCode]);
 
   // Production vs Recognition mode
-  const [flashcardMode, setFlashcardMode] = useState(() => storageGet('flashcardMode') || 'production');
+  const [flashcardMode, setFlashcardMode] = useState(() => storageGet('flashcardMode') || 'recognition');
   const [productionInput, setProductionInput] = useState('');
   const [productionSubmitted, setProductionSubmitted] = useState(false);
   const [productionFeedback, setProductionFeedback] = useState(null); // { correct }
@@ -764,6 +764,18 @@ export default function FlashcardMode({
         </div>
       </div>
 
+      {/* Skip Button (shown before flipping) */}
+      {!isFlipped && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+          <button
+            style={{...styles.button, ...styles.skipButton}}
+            onClick={(e) => { e.stopPropagation(); moveToNext(); }}
+          >
+            Skip →
+          </button>
+        </div>
+      )}
+
       {/* Action Buttons */}
       {isFlipped && (
         <div style={styles.actions}>
@@ -1210,6 +1222,10 @@ const styles = {
   },
   reviewButton: {
     background: 'linear-gradient(135deg, #ffa94d, #fd7e14)',
+    color: '#fff'
+  },
+  skipButton: {
+    background: 'linear-gradient(135deg, #868e96, #6c757d)',
     color: '#fff'
   },
   knowButton: {
