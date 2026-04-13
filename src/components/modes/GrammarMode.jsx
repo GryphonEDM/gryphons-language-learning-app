@@ -19,7 +19,7 @@ const TIER_INFO = {
   B2: { name: 'B2 Advanced', color: '#f97316' },
 };
 
-export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
+export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   // Phases: picker, lesson, exercise, section-complete, complete, review
@@ -66,8 +66,8 @@ export default function GrammarMode({ langCode = 'uk', grammarLessons, onSpeak, 
     const lessonName = selectedLesson?.nameEn ?? 'grammar';
     const section = selectedLesson?.sections[sectionIdx];
     const sectionName = section?.title ?? '';
-    return `You are a helpful ${langName} grammar tutor. The student is currently studying "${lessonName}"${sectionName ? ` — specifically the section "${sectionName}"` : ''}. Answer their questions clearly and concisely. Use examples in ${langName} with English translations. Keep responses focused and under 150 words unless a longer explanation is truly needed.`;
-  }, [selectedLesson, sectionIdx, langName]);
+    return `You are a helpful ${langName} grammar tutor. The student is currently studying "${lessonName}"${sectionName ? ` — specifically the section "${sectionName}"` : ''}. Answer their questions clearly and concisely. Use examples in ${langName} with English translations. Keep responses focused and under 150 words unless a longer explanation is truly needed.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf grammar exercises involve these words, briefly note their meaning or common pitfalls.` : ''}`;
+  }, [selectedLesson, sectionIdx, langName, struggleContext]);
 
   const chat = useLessonChat({
     langName,

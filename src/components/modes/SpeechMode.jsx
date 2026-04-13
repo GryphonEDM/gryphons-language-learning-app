@@ -90,7 +90,7 @@ const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
 // --- Component ---
 
-export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
+export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   // Phase
@@ -119,7 +119,7 @@ export default function SpeechMode({ langCode = 'uk', vocabularySets = [], onSpe
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
   const chat = useLessonChat({
     langName, langCode,
-    systemPrompt: `You are a helpful ${langName} pronunciation coach. The student is practicing speaking ${langName} words and phrases aloud. Answer questions about pronunciation, stress patterns, or specific sounds concisely. Keep responses under 150 words.`,
+    systemPrompt: `You are a helpful ${langName} pronunciation coach. The student is practicing speaking ${langName} words and phrases aloud. Answer questions about pronunciation, stress patterns, or specific sounds concisely. Keep responses under 150 words.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf the student is practicing one of these words, offer targeted pronunciation tips.` : ''}`,
     onSpeak, ttsEnabled, ttsVolume,
   });
 

@@ -11,7 +11,7 @@ import useNextShortcut from '../../hooks/useNextShortcut.js';
 
 const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2'];
 
-export default function ListeningMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
+export default function ListeningMode({ langCode = 'uk', vocabularySets = [], onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' };
   const langName = langNames[langCode] || 'Ukrainian';
   const [phase, setPhase] = useState('picker'); // picker, playing, complete
@@ -19,7 +19,7 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [cefrFilter, setCefrFilter] = useState('all');
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a listening and dictation exercise — they hear a ${langName} word and type what they hear. Answer questions about spelling, pronunciation, or vocabulary concisely. Keep responses under 150 words.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf the student asks about one of these words, proactively offer spelling tips or pronunciation guidance.` : ''}`, onSpeak, ttsEnabled, ttsVolume });
   const [words, setWords] = useState([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userInput, setUserInput] = useState('');

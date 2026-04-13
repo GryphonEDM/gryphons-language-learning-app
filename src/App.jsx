@@ -27,6 +27,7 @@ import MinimalPairsMode from './components/modes/MinimalPairsMode.jsx';
 import DailyReviewMode from './components/modes/DailyReviewMode.jsx';
 import StruggleWordsMode from './components/modes/StruggleWordsMode.jsx';
 import StruggleDrillMode from './components/modes/StruggleDrillMode.jsx';
+import VerbDrillMode from './components/modes/VerbDrillMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
@@ -240,6 +241,18 @@ import jaDirectionsDialogue from './data/ja/dialogues/directions.json';
 import jaBeginnerReading from './data/ja/reading/beginner.json';
 import jaIntermediateReading from './data/ja/reading/intermediate.json';
 import jaAdvancedReading from './data/ja/reading/advanced.json';
+
+// Import verb drill data
+import verbDrillData from './data/verbDrills.json';
+import ruVerbDrillData from './data/ru/verbDrills.json';
+import deVerbDrillData from './data/de/verbDrills.json';
+import esVerbDrillData from './data/es/verbDrills.json';
+import frVerbDrillData from './data/fr/verbDrills.json';
+import elVerbDrillData from './data/el/verbDrills.json';
+import hiVerbDrillData from './data/hi/verbDrills.json';
+import arVerbDrillData from './data/ar/verbDrills.json';
+import koVerbDrillData from './data/ko/verbDrills.json';
+import jaVerbDrillData from './data/ja/verbDrills.json';
 
 // Import vocabulary theme data
 import colorsData from './data/vocabulary/themes/colors.json';
@@ -719,6 +732,7 @@ export default function UkrainianTypingGame() {
   const CURRENT_DIALOGUES = currentLanguage === 'ru' ? RU_DIALOGUES : currentLanguage === 'de' ? DE_DIALOGUES : currentLanguage === 'es' ? ES_DIALOGUES : currentLanguage === 'fr' ? FR_DIALOGUES : currentLanguage === 'el' ? EL_DIALOGUES : currentLanguage === 'hi' ? HI_DIALOGUES : currentLanguage === 'ar' ? AR_DIALOGUES : currentLanguage === 'ko' ? KO_DIALOGUES : currentLanguage === 'zh' ? ZH_DIALOGUES : currentLanguage === 'ja' ? JA_DIALOGUES : DIALOGUES;
   const CURRENT_SENTENCES = currentLanguage === 'ru' ? ruSentenceData : currentLanguage === 'de' ? deSentenceData : currentLanguage === 'es' ? esSentenceData : currentLanguage === 'fr' ? frSentenceData : currentLanguage === 'el' ? elSentenceData : currentLanguage === 'hi' ? hiSentenceData : currentLanguage === 'ar' ? arSentenceData : currentLanguage === 'ko' ? koSentenceData : currentLanguage === 'zh' ? zhSentenceData : currentLanguage === 'ja' ? jaSentenceData : sentenceData;
   const CURRENT_READING = currentLanguage === 'ru' ? RU_ALL_READING_PASSAGES : currentLanguage === 'de' ? DE_ALL_READING_PASSAGES : currentLanguage === 'es' ? ES_ALL_READING_PASSAGES : currentLanguage === 'fr' ? FR_ALL_READING_PASSAGES : currentLanguage === 'el' ? EL_ALL_READING_PASSAGES : currentLanguage === 'hi' ? HI_ALL_READING_PASSAGES : currentLanguage === 'ar' ? AR_ALL_READING_PASSAGES : currentLanguage === 'ko' ? KO_ALL_READING_PASSAGES : currentLanguage === 'zh' ? ZH_ALL_READING_PASSAGES : currentLanguage === 'ja' ? JA_ALL_READING_PASSAGES : ALL_READING_PASSAGES;
+  const CURRENT_VERB_DRILLS = currentLanguage === 'ru' ? ruVerbDrillData : currentLanguage === 'de' ? deVerbDrillData : currentLanguage === 'es' ? esVerbDrillData : currentLanguage === 'fr' ? frVerbDrillData : currentLanguage === 'el' ? elVerbDrillData : currentLanguage === 'hi' ? hiVerbDrillData : currentLanguage === 'ar' ? arVerbDrillData : currentLanguage === 'ko' ? koVerbDrillData : currentLanguage === 'zh' ? null : currentLanguage === 'ja' ? jaVerbDrillData : verbDrillData;
   const CURRENT_DICT_SETS = buildCategoryFlashcardSetsForLang(currentLanguage);
 
   // Game state
@@ -1160,6 +1174,17 @@ export default function UkrainianTypingGame() {
       const a2Lessons = CURRENT_GRAMMAR.filter(l => l.difficulty === 'A2');
       if (a1Lessons.length > 0 && a1Lessons.every(l => modeProgress.grammar?.[l.lessonId]?.done)) awardAchievement('grammar_a1_complete');
       if (a2Lessons.length > 0 && a2Lessons.every(l => modeProgress.grammar?.[l.lessonId]?.done)) awardAchievement('grammar_a2_complete');
+    }
+
+    if (mode === 'verbDrills') {
+      awardAchievement('verbdrill_first');
+      if (stats.score === stats.totalExercises && stats.totalExercises > 0) {
+        awardAchievement('verbdrill_perfect');
+      }
+      const vd = modeProgress.verbDrills || {};
+      if (vd.tense_present_done && vd.tense_past_done && vd.tense_future_done && vd.tense_imperative_done) {
+        awardAchievement('verbdrill_all_tenses');
+      }
     }
 
     if (mode === 'sentences') {
@@ -1879,6 +1904,15 @@ export default function UkrainianTypingGame() {
                     <p>Cases, verbs, pronouns, and more</p>
                   </div>
                 </div>
+                {CURRENT_VERB_DRILLS && (
+                <div className="mode-card" data-mode="verbDrills" onClick={() => setGameMode('verbDrills')}>
+                  <div className="mode-icon">🏋️</div>
+                  <div className="mode-info">
+                    <h3>Verb Drills</h3>
+                    <p>Rapid-fire conjugation practice</p>
+                  </div>
+                </div>
+                )}
                 <div className="mode-card" data-mode="sentences" onClick={() => setGameMode('sentences')}>
                   <div className="mode-icon">🧱</div>
                   <div className="mode-info">
@@ -2490,6 +2524,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'translator' ? (
           <TranslatorMode
@@ -2501,6 +2536,7 @@ export default function UkrainianTypingGame() {
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onMarkMastered={handleMarkMastered}
             masteredWordsList={masteredWordsList}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'listening' ? (
           <ListeningMode
@@ -2519,6 +2555,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'minimal-pairs' ? (
           <MinimalPairsMode
@@ -2562,6 +2599,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'translation' ? (
           <TranslationPracticeMode
@@ -2580,6 +2618,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'grammar' ? (
           <GrammarMode
@@ -2597,7 +2636,30 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
+        ) : gameMode === 'verbDrills' ? (
+          CURRENT_VERB_DRILLS ? (
+            <VerbDrillMode
+              langCode={currentLanguage}
+              verbDrillData={CURRENT_VERB_DRILLS}
+              onSpeak={speak}
+              ttsEnabled={ttsEnabled}
+              ttsVolume={ttsVolume}
+              onExit={() => setGameMode('menu')}
+              onComplete={(stats) => {
+                console.log('[VerbDrills] Complete:', stats);
+                checkModeAchievements(stats);
+              }}
+              onAddXP={(amount) => setXp(prev => prev + amount)}
+              onTrackProgress={handleTrackProgress}
+            />
+          ) : (
+            <div style={{ padding: '2rem', textAlign: 'center' }}>
+              <p>Verb drills are not yet available for this language.</p>
+              <button onClick={() => setGameMode('menu')}>Back to Menu</button>
+            </div>
+          )
         ) : gameMode === 'sentences' ? (
           <SentenceMode
             langCode={currentLanguage}
@@ -2615,6 +2677,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'dialogue' ? (
           <DialogueMode
@@ -2632,6 +2695,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'stories' ? (
           <StoryMode
@@ -2650,6 +2714,7 @@ export default function UkrainianTypingGame() {
               checkModeAchievements(stats);
             }}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'chat' ? (
           <ChatMode
@@ -2679,6 +2744,7 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'struggle' ? (
           <StruggleWordsMode

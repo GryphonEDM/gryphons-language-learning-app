@@ -45,7 +45,7 @@ function deleteAiStory(id) {
   storageSet('aiStories', JSON.stringify(existing));
 }
 
-export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
+export default function StoryMode({ langCode = 'uk', stories, passages = [], onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onComplete, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' };
   const langName = langNames[langCode] || 'Ukrainian';
   const langField = langCode;
@@ -54,7 +54,7 @@ export default function StoryMode({ langCode = 'uk', stories, passages = [], onS
   const [aiStories, setAiStories] = useState(() => loadAiStories());
 
   const [phase, setPhase] = useState('picker'); // picker, generate, reading, questions, complete
-  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is reading a ${langName} story and can click words to hear and translate them. Answer questions about vocabulary, grammar, or the story content concisely. Keep responses under 150 words.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf the story contains these words, proactively offer context or a brief explanation when asked.` : ''}`, onSpeak, ttsEnabled, ttsVolume });
 
   // Selected item (unified format)
   const [selectedItem, setSelectedItem] = useState(null);

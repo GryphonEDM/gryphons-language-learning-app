@@ -8,7 +8,7 @@ import { useLessonChat } from '../../hooks/useLessonChat.js';
 import useNextShortcut from '../../hooks/useNextShortcut.js';
 import { MINIMAL_PAIRS } from '../../data/minimalPairs.js';
 
-export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [] }) {
+export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP, onTrackProgress, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese', en: 'English' };
   const langName = langNames[langCode] || 'Ukrainian';
   const langData = MINIMAL_PAIRS[langCode];
@@ -27,7 +27,7 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
   const mountedRef = useRef(true);
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing minimal pairs — distinguishing similar-sounding words. Help them understand pronunciation differences concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is practicing minimal pairs — distinguishing similar-sounding words. Help them understand pronunciation differences concisely. Keep responses under 150 words.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf relevant, explain the specific sound distinction the student is struggling with.` : ''}`, onSpeak, ttsEnabled, ttsVolume });
 
   useEffect(() => {
     mountedRef.current = true;
