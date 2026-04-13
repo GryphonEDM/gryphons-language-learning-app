@@ -32,7 +32,7 @@ export default function StatsPage({
   perfectWordsCount, achievements, modeProgress, vocabularyMastery,
   langData, onClose
 }) {
-  const nameField = langData.code === 'ru' ? 'nameRu' : 'nameUk';
+  const nameField = langData.code === 'ru' ? 'nameRu' : langData.code === 'uk' ? 'nameUk' : 'name';
 
   // Vocabulary stats
   const vocabEntries = Object.values(vocabularyMastery || {});

@@ -648,15 +648,15 @@ export const MINIMAL_PAIRS = {
       },
       {
         id: 'uk_gh_2',
-        wordA: { text: 'ґрунт', phonetic: 'grunt', english: 'soil (with hard g)' },
-        wordB: { text: 'грунт', phonetic: 'hrunt', english: 'soil (standard)' },
+        wordA: { text: 'ґрунт', phonetic: 'grunt', english: 'soil (standard)' },
+        wordB: { text: 'грунт', phonetic: 'hrunt', english: 'soil (with soft h)' },
         category: 'gh',
         difficulty: 'A2',
         tip: 'ґ (hard "g") vs г (breathy "h"). Ukrainian г sounds like English "h", unlike Russian where г is always a hard "g".',
       },
       {
         id: 'uk_gh_3',
-        wordA: { text: 'ґава', phonetic: 'gava', english: 'crow / jackdaw' },
+        wordA: { text: 'ґава', phonetic: 'gava', english: 'jackdaw' },
         wordB: { text: 'гава', phonetic: 'hava', english: '(dialectal variant)' },
         category: 'gh',
         difficulty: 'A2',
@@ -672,7 +672,7 @@ export const MINIMAL_PAIRS = {
       },
       {
         id: 'uk_iy_2',
-        wordA: { text: 'біг', phonetic: 'bih', english: 'running' },
+        wordA: { text: 'біг', phonetic: 'bih', english: 'run (noun)' },
         wordB: { text: 'бик', phonetic: 'byk', english: 'bull' },
         category: 'iy',
         difficulty: 'A2',
@@ -712,8 +712,8 @@ export const MINIMAL_PAIRS = {
       },
       {
         id: 'uk_soft_3',
-        wordA: { text: 'тін', phonetic: "tin'", english: 'shadow' },
-        wordB: { text: 'тин', phonetic: 'tyn', english: 'fence (dialectal)' },
+        wordA: { text: 'тінь', phonetic: "tin'", english: 'shadow' },
+        wordB: { text: 'тин', phonetic: 'tyn', english: 'fence' },
         category: 'soft',
         difficulty: 'B1',
         tip: 'Shadow uses і (soft т); fence uses и (hard т). Mastering this pair means you understand the Ukrainian і/и system.',
@@ -761,7 +761,7 @@ export const MINIMAL_PAIRS = {
       {
         id: 'uk_vred_3',
         wordA: { text: 'дома', phonetic: 'doma', english: 'at home' },
-        wordB: { text: 'думa', phonetic: 'duma', english: 'thought / council' },
+        wordB: { text: 'дума', phonetic: 'duma', english: 'thought / council' },
         category: 'vred',
         difficulty: 'B1',
         tip: 'о vs у in unstressed position. Unlike Russian where unstressed о reduces to "a", Ukrainian keeps о and у distinct.',

@@ -26,7 +26,7 @@ function shuffle(arr) {
 }
 
 // Generate exercises from verb data
-function generateExercises(tenseId, verbDrillData, count = EXERCISE_COUNT) {
+function generateExercises(tenseId, verbDrillData, count = EXERCISE_COUNT, langCode = 'uk') {
   const { meta, verbs } = verbDrillData;
   const exercises = [];
   const usedCombos = new Set();
@@ -86,7 +86,7 @@ function generateExercises(tenseId, verbDrillData, count = EXERCISE_COUNT) {
       }
 
       if (exType === 'fill-blank') {
-        exercise = generateFillBlank(verb, currentTense, slotKey, slotLabel, correctAnswer, meta);
+        exercise = generateFillBlank(verb, currentTense, slotKey, slotLabel, correctAnswer, meta, langCode);
       } else if (exType === 'multiple-choice') {
         exercise = generateMultipleChoice(verb, currentTense, slotKey, slotLabel, correctAnswer, meta, verbs);
       } else if (exType === 'form-recall') {
@@ -108,12 +108,14 @@ function generateExercises(tenseId, verbDrillData, count = EXERCISE_COUNT) {
   return exercises;
 }
 
-function generateFillBlank(verb, tense, slotKey, slotLabel, correctAnswer, meta) {
+function generateFillBlank(verb, tense, slotKey, slotLabel, correctAnswer, meta, langCode = 'uk') {
   let prompt;
   if (tense === 'imperative') {
-    prompt = `___, будь ласка! (${verb.infinitive}, ${slotLabel})`;
-    // Use generic frame for non-Cyrillic languages
-    if (!verb.infinitive.match(/[а-яА-ЯіІїЇєЄґҐёЁ]/)) {
+    if (langCode === 'ru') {
+      prompt = `___, пожалуйста! (${verb.infinitive}, ${slotLabel})`;
+    } else if (langCode === 'uk') {
+      prompt = `___, будь ласка! (${verb.infinitive}, ${slotLabel})`;
+    } else {
       prompt = `___! (${verb.infinitive}, ${slotLabel})`;
     }
   } else if (tense === 'past') {
@@ -311,7 +313,7 @@ export default function VerbDrillMode({ langCode = 'uk', verbDrillData, onSpeak,
 
   const startDrill = useCallback((tenseId) => {
     setSelectedTense(tenseId);
-    const exercises = generateExercises(tenseId, verbDrillData);
+    const exercises = generateExercises(tenseId, verbDrillData, EXERCISE_COUNT, langCode);
     setExerciseQueue(exercises);
     setOriginalCount(exercises.length);
     setQueueIdx(0);

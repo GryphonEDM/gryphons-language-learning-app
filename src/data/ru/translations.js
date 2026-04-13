@@ -40,5 +40,5 @@ export const RU_TRANSLATIONS = {
   'ура победа': 'hooray victory', 'я учу': 'I am learning',
   'большое спасибо': 'thank you very much',
   // Bonus
-  'россия': 'Russia', 'москва': 'Moscow', 'язык': 'language', 'друг': 'friend',
+  'Россия': 'Russia', 'Москва': 'Moscow', 'язык': 'language', 'друг': 'friend',
 };

@@ -1503,10 +1503,10 @@ export default function UkrainianTypingGame() {
         </div>
       </div>
       <div className="finger-legend">
-        <span style={{color: fingerColors['pinky-l']}}>● {{ uk:'Мізинець', ru:'Мизинец', de:'Kleiner Finger', es:'Meñique', fr:'Auriculaire', el:'Μικρό', hi:'कनिष्ठा', ar:'الخنصر', ko:'새끼', zh:'小指', ja:'小指' }[currentLanguage] || 'Pinky'} (Pinky)</span>
-        <span style={{color: fingerColors['ring-l']}}>● {{ uk:'Безіменний', ru:'Безымянный', de:'Ringfinger', es:'Anular', fr:'Annulaire', el:'Παράμεσος', hi:'अनामिका', ar:'البنصر', ko:'약지', zh:'无名指', ja:'薬指' }[currentLanguage] || 'Ring'} (Ring)</span>
-        <span style={{color: fingerColors['middle-l']}}>● {{ uk:'Середній', ru:'Средний', de:'Mittelfinger', es:'Medio', fr:'Majeur', el:'Μεσαίο', hi:'मध्यमा', ar:'الوسطى', ko:'중지', zh:'中指', ja:'中指' }[currentLanguage] || 'Middle'} (Middle)</span>
-        <span style={{color: fingerColors['index-l']}}>● {{ uk:'Вказівний', ru:'Указательный', de:'Zeigefinger', es:'Índice', fr:'Index', el:'Δείκτης', hi:'तर्जनी', ar:'السبابة', ko:'검지', zh:'食指', ja:'人差し指' }[currentLanguage] || 'Index'} (Index)</span>
+        <span style={{color: fingerColors['pinky-l']}}>● {{ uk:'Мізинець', ru:'Мизинец', de:'Kleiner Finger', es:'Meñique', fr:'Auriculaire', el:'Μικρό', hi:'कनिष्ठा', ar:'الخنصر', ko:'새끼', zh:'小指', ja:'小指' }[currentLanguage] || 'Pinky'}{!['uk','ru','de','es','fr','el','hi','ar','ko','zh','ja'].includes(currentLanguage) ? '' : ` (Pinky)`}</span>
+        <span style={{color: fingerColors['ring-l']}}>● {{ uk:'Безіменний', ru:'Безымянный', de:'Ringfinger', es:'Anular', fr:'Annulaire', el:'Παράμεσος', hi:'अनामिका', ar:'البنصر', ko:'약지', zh:'无名指', ja:'薬指' }[currentLanguage] || 'Ring'}{!['uk','ru','de','es','fr','el','hi','ar','ko','zh','ja'].includes(currentLanguage) ? '' : ` (Ring)`}</span>
+        <span style={{color: fingerColors['middle-l']}}>● {{ uk:'Середній', ru:'Средний', de:'Mittelfinger', es:'Medio', fr:'Majeur', el:'Μεσαίο', hi:'मध्यमा', ar:'الوسطى', ko:'중지', zh:'中指', ja:'中指' }[currentLanguage] || 'Middle'}{!['uk','ru','de','es','fr','el','hi','ar','ko','zh','ja'].includes(currentLanguage) ? '' : ` (Middle)`}</span>
+        <span style={{color: fingerColors['index-l']}}>● {{ uk:'Вказівний', ru:'Указательный', de:'Zeigefinger', es:'Índice', fr:'Index', el:'Δείκτης', hi:'तर्जनी', ar:'السبابة', ko:'검지', zh:'食指', ja:'人差し指' }[currentLanguage] || 'Index'}{!['uk','ru','de','es','fr','el','hi','ar','ko','zh','ja'].includes(currentLanguage) ? '' : ` (Index)`}</span>
       </div>
     </div>
   );
@@ -1582,7 +1582,7 @@ export default function UkrainianTypingGame() {
           </div>
 
           <button className="modal-close-btn" onClick={() => setShowKeyboardSetup(false)}>
-            Got it! {gotIt} ✓
+            {gotIt} ✓
           </button>
         </div>
       </div>
@@ -2038,7 +2038,7 @@ export default function UkrainianTypingGame() {
                   <div className="theme-icon">🎯</div>
                   <div className="theme-info">
                     <h3>Random by Level</h3>
-                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'По уровню сложности' : 'За рівнем складності'}</p>
+                    <p className="theme-name-uk">{{ uk:'За рівнем складності', ru:'По уровню сложности', de:'Nach Schwierigkeitsgrad', es:'Por nivel de dificultad', fr:'Par niveau de difficulté', el:'Κατά επίπεδο δυσκολίας', hi:'कठिनाई स्तर के अनुसार', ar:'حسب مستوى الصعوبة', ko:'난이도별', zh:'按难度等级', ja:'難易度別' }[currentLanguage] || 'By difficulty level'}</p>
                     <div style={{ margin: '8px 0 4px', display: 'flex', gap: '4px' }} onClick={e => e.stopPropagation()}>
                       {['A1', 'A2', 'B1', 'B2'].map(level => (
                         <button
@@ -2067,7 +2067,7 @@ export default function UkrainianTypingGame() {
                       <span className="theme-word-count">{getAllVocabularyWords(currentLanguage).filter(w => w.difficulty === randomDifficulty).length} words</span>
                     </div>
                     <p style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.5)', margin: '4px 0 0' }}>
-                      {currentLanguage === 'ru' ? 'Практикуйте слова вашего уровня' : 'Практикуйте слова вашого рівня'}
+                      {{ uk:'Практикуйте слова вашого рівня', ru:'Практикуйте слова вашего уровня', de:'Üben Sie Wörter Ihres Niveaus', es:'Practica palabras de tu nivel', fr:'Pratiquez les mots de votre niveau', el:'Εξασκηθείτε σε λέξεις του επιπέδου σας', hi:'अपने स्तर के शब्दों का अभ्यास करें', ar:'تدرب على كلمات مستواك', ko:'레벨에 맞는 단어 연습', zh:'练习您级别的词汇', ja:'レベルに合った単語を練習' }[currentLanguage] || 'Practice words at your level'}
                     </p>
                   </div>
                 </div>
@@ -2093,7 +2093,7 @@ export default function UkrainianTypingGame() {
                     setSelectedVocabSet({
                       setId: 'mastered-review',
                       nameEn: 'Mastered Words',
-                      nameUk: currentLanguage === 'ru' ? 'Освоенные слова' : 'Освоєні слова',
+                      nameUk: { uk:'Освоєні слова', ru:'Освоенные слова', de:'Gelernte Wörter', es:'Palabras dominadas', fr:'Mots maîtrisés', el:'Κατακτημένες λέξεις', hi:'सीखे हुए शब्द', ar:'كلمات متقنة', ko:'마스터한 단어', zh:'已掌握的词汇', ja:'習得した単語' }[currentLanguage] || 'Mastered Words',
                       difficulty: 'Mixed',
                       icon: '⭐',
                       words: shuffled.map(w => ({
@@ -2113,7 +2113,7 @@ export default function UkrainianTypingGame() {
                   <div className="theme-icon">⭐</div>
                   <div className="theme-info">
                     <h3>Mastered Words</h3>
-                    <p className="theme-name-uk">{currentLanguage === 'ru' ? 'Освоенные слова' : 'Освоєні слова'}</p>
+                    <p className="theme-name-uk">{{ uk:'Освоєні слова', ru:'Освоенные слова', de:'Gelernte Wörter', es:'Palabras dominadas', fr:'Mots maîtrisés', el:'Κατακτημένες λέξεις', hi:'सीखे हुए शब्द', ar:'كلمات متقنة', ko:'마스터한 단어', zh:'已掌握的词汇', ja:'習得した単語' }[currentLanguage] || 'Mastered Words'}</p>
                     <div className="theme-meta">
                       <span className="theme-difficulty" style={{ color: '#4caf50' }}>Review</span>
                       <span className="theme-word-count">{masteredWordsList.length} words</span>
@@ -2274,7 +2274,7 @@ export default function UkrainianTypingGame() {
             </div>
             
             <div className="settings-section">
-              <h2>⚙️ Settings / Налаштування</h2>
+              <h2>⚙️ {{ uk:'Налаштування', ru:'Настройки', de:'Einstellungen', es:'Configuración', fr:'Paramètres', el:'Ρυθμίσεις', hi:'सेटिंग्स', ar:'الإعدادات', ko:'설정', zh:'设置', ja:'設定' }[currentLanguage] || 'Settings'}</h2>
               <div className="settings-grid">
                 <label className="setting-toggle">
                   <input 
@@ -2374,7 +2374,7 @@ export default function UkrainianTypingGame() {
                   className="key space-key"
                   onClick={() => {
                     if (ttsEnabled) {
-                      speak(currentLanguage === 'ru' ? 'пробел' : 'пробіл', 0.8, ttsVolume);
+                      speak(langData.spaceLabel || 'space', 0.8, ttsVolume);
                     }
                   }}
                   style={{ cursor: 'pointer' }}

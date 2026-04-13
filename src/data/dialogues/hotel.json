@@ -5,19 +5,130 @@
   "icon": "🏨",
   "context": "You are checking into a hotel in Kyiv. The receptionist greets you at the front desk.",
   "characters": {
-    "npc": { "name": "Адміністратор" },
-    "player": { "name": "Ви" }
+    "npc": {
+      "name": "Адміністратор"
+    },
+    "player": {
+      "name": "Ви"
+    }
   },
   "exchanges": [
-    { "speaker": "npc", "text": "Добрий день! Ласкаво просимо до нашого готелю.", "translation": "Good day! Welcome to our hotel." },
-    { "speaker": "player", "prompt": "Say hello and that you have a reservation", "acceptedResponses": ["добрий день, я маю бронювання", "добрий день! у мене є бронювання", "вітаю, я забронював номер", "добрий день, у мене бронювання"], "keyWords": ["добрий", "бронювання"], "hint": "добрий день, у мене бронювання" },
-    { "speaker": "npc", "text": "Чудово! На яке прізвище?", "translation": "Wonderful! Under what last name?" },
-    { "speaker": "player", "prompt": "Ask how much the room costs per night", "acceptedResponses": ["скільки коштує номер за ніч?", "яка ціна за ніч?", "скільки коштує за одну ніч?", "яка вартість номера?"], "keyWords": ["скільки", "ніч"], "hint": "скільки коштує номер за ніч?" },
-    { "speaker": "npc", "text": "Одномісний номер коштує тисячу гривень за ніч. Сніданок включено.", "translation": "A single room costs one thousand hryvnias per night. Breakfast is included." },
-    { "speaker": "player", "prompt": "Ask if there is Wi-Fi", "acceptedResponses": ["чи є Wi-Fi?", "у вас є Wi-Fi?", "тут є Wi-Fi?", "є вай-фай?"], "keyWords": ["Wi-Fi"], "hint": "чи є Wi-Fi?" },
-    { "speaker": "npc", "text": "Так, безкоштовний Wi-Fi у всьому готелі. Ось ваш ключ. Номер триста п'ять.", "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room three hundred five." },
-    { "speaker": "player", "prompt": "Ask what time check-out is", "acceptedResponses": ["о котрій годині виселення?", "коли треба виселитися?", "о котрій виселення?", "коли чекаут?"], "keyWords": ["виселення", "котрій"], "hint": "о котрій годині виселення?" },
-    { "speaker": "npc", "text": "Виселення до дванадцятої години. Бажаю вам гарного перебування!", "translation": "Check-out is by twelve o'clock. I wish you a pleasant stay!" },
-    { "speaker": "player", "prompt": "Say thank you very much", "acceptedResponses": ["дуже дякую", "дякую!", "щиро дякую", "велике дякую"], "keyWords": ["дякую"], "hint": "дуже дякую" }
+    {
+      "speaker": "npc",
+      "text": "Добрий день! Ласкаво просимо до нашого готелю.",
+      "translation": "Good day! Welcome to our hotel."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say hello and that you have a reservation",
+      "acceptedResponses": [
+        "добрий день, я маю бронювання",
+        "добрий день! у мене є бронювання",
+        "вітаю, я забронював номер",
+        "добрий день, у мене бронювання"
+      ],
+      "keyWords": [
+        "добрий",
+        "бронювання"
+      ],
+      "hint": "добрий день, у мене бронювання"
+    },
+    {
+      "speaker": "npc",
+      "text": "Чудово! На яке прізвище?",
+      "translation": "Wonderful! Under what last name?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Give your last name (Шевченко)",
+      "acceptedResponses": [
+        "шевченко",
+        "моє прізвище шевченко",
+        "на прізвище шевченко",
+        "прізвище шевченко"
+      ],
+      "keyWords": [
+        "шевченко"
+      ],
+      "hint": "Шевченко"
+    },
+    {
+      "speaker": "npc",
+      "text": "Знайшла вас! Номер на дві ночі, правильно?",
+      "translation": "Found you! A room for two nights, correct?"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask how much the room costs per night",
+      "acceptedResponses": [
+        "скільки коштує номер за ніч?",
+        "яка ціна за ніч?",
+        "скільки коштує за одну ніч?",
+        "яка вартість номера?"
+      ],
+      "keyWords": [
+        "скільки",
+        "ніч"
+      ],
+      "hint": "скільки коштує номер за ніч?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Одномісний номер коштує тисячу гривень за ніч. Сніданок включено.",
+      "translation": "A single room costs one thousand hryvnias per night. Breakfast is included."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask if there is Wi-Fi",
+      "acceptedResponses": [
+        "чи є Wi-Fi?",
+        "у вас є Wi-Fi?",
+        "тут є Wi-Fi?",
+        "є вай-фай?"
+      ],
+      "keyWords": [
+        "Wi-Fi"
+      ],
+      "hint": "чи є Wi-Fi?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Так, безкоштовний Wi-Fi у всьому готелі. Ось ваш ключ. Номер триста п'ять.",
+      "translation": "Yes, free Wi-Fi throughout the hotel. Here is your key. Room three hundred five."
+    },
+    {
+      "speaker": "player",
+      "prompt": "Ask what time check-out is",
+      "acceptedResponses": [
+        "о котрій годині виселення?",
+        "коли треба виселитися?",
+        "о котрій виселення?",
+        "коли чекаут?"
+      ],
+      "keyWords": [
+        "виселення",
+        "котрій"
+      ],
+      "hint": "о котрій годині виселення?"
+    },
+    {
+      "speaker": "npc",
+      "text": "Виселення до дванадцятої години. Бажаю вам гарного перебування!",
+      "translation": "Check-out is by twelve o'clock. I wish you a pleasant stay!"
+    },
+    {
+      "speaker": "player",
+      "prompt": "Say thank you very much",
+      "acceptedResponses": [
+        "дуже дякую",
+        "дякую!",
+        "щиро дякую",
+        "велике дякую"
+      ],
+      "keyWords": [
+        "дякую"
+      ],
+      "hint": "дуже дякую"
+    }
   ]
 }
