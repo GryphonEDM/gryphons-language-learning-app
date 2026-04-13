@@ -192,6 +192,39 @@ export default function FlashcardMode({
     }
   }, [productionInput, productionSubmitted, getProductionAccepted, selfCorrection, currentWord, langCode, ttsEnabled, onSpeak, ttsVolume, vocabularySet, onAddXP, onTrackProgress, onMarkMastered]);
 
+  const moveToNext = () => {
+    setIsFlipped(false);
+    setSelectedExampleWord(null);
+    setAddWordForm(null);
+    setShowSpeechPractice(false);
+    speech.reset();
+    setProductionInput('');
+    setProductionSubmitted(false);
+    setProductionFeedback(null);
+    selfCorrection.reset();
+    setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
+
+    if (currentIndex < totalWords - 1) {
+      setCurrentIndex(prev => prev + 1);
+    } else {
+      // Reached end of set
+      if (reviewQueue.length > 0) {
+        // Go back to first word in review queue
+        setCurrentIndex(reviewQueue[0]);
+      } else {
+        // All words mastered - complete!
+        if (onComplete) {
+          onComplete({
+            setId: vocabularySet.setId,
+            totalWords,
+            masteredWords: masteredWords.length,
+            sessionStats
+          });
+        }
+      }
+    }
+  };
+
   const handleProductionNext = useCallback(() => {
     if (productionFeedback && !productionFeedback.correct) {
       // Wrong answer — add to review queue
@@ -294,39 +327,6 @@ export default function FlashcardMode({
       setTimeout(() => speechPracticeRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' }), 100);
     }
   }, [speech.llmFeedback]);
-
-  const moveToNext = () => {
-    setIsFlipped(false);
-    setSelectedExampleWord(null);
-    setAddWordForm(null);
-    setShowSpeechPractice(false);
-    speech.reset();
-    setProductionInput('');
-    setProductionSubmitted(false);
-    setProductionFeedback(null);
-    selfCorrection.reset();
-    setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
-
-    if (currentIndex < totalWords - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      // Reached end of set
-      if (reviewQueue.length > 0) {
-        // Go back to first word in review queue
-        setCurrentIndex(reviewQueue[0]);
-      } else {
-        // All words mastered - complete!
-        if (onComplete) {
-          onComplete({
-            setId: vocabularySet.setId,
-            totalWords,
-            masteredWords: masteredWords.length,
-            sessionStats
-          });
-        }
-      }
-    }
-  };
 
   useNextShortcut(moveToNext, isFlipped && !addWordForm);
 
