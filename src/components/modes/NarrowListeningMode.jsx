@@ -23,6 +23,7 @@ export default function NarrowListeningMode({
   const [xpEarned, setXpEarned] = useState(0);
   const [questionAnswer, setQuestionAnswer] = useState(null);
   const [revealed, setRevealed] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(0.8);
   const mountedRef = useRef(true);
 
   useEffect(() => {
@@ -77,16 +78,8 @@ export default function NarrowListeningMode({
   const playPassage = useCallback(() => {
     if (!currentTopic || !ttsEnabled || !onSpeak) return;
     const passage = currentTopic.passages[passageIdx];
-    if (passage) onSpeak(passage.text, passage.speed, ttsVolume);
-  }, [currentTopic, passageIdx, ttsEnabled, onSpeak, ttsVolume]);
-
-  // Auto-play passage
-  useEffect(() => {
-    if (phase === 'listening' && currentTopic) {
-      const timer = setTimeout(() => { if (mountedRef.current) playPassage(); }, 400);
-      return () => clearTimeout(timer);
-    }
-  }, [phase, passageIdx]);
+    if (passage) onSpeak(passage.text, playbackRate, ttsVolume);
+  }, [currentTopic, passageIdx, ttsEnabled, onSpeak, ttsVolume, playbackRate]);
 
   const handleMoveToQuestion = useCallback(() => {
     setPhase('question');
@@ -160,9 +153,16 @@ export default function NarrowListeningMode({
         {phase === 'listening' && passage && (
           <>
             <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', marginBottom: '0.5rem' }}>
-              Speaker {passageIdx + 1} — {passage.voice === 'slow' ? '🐢 Slow' : passage.voice === 'normal' ? '🚶 Normal' : '🏃 Fast'} ({passage.speed}x)
+              Speaker {passageIdx + 1}
             </div>
             <p style={styles.instruction}>Listen carefully to this passage</p>
+            <div style={styles.speedControls}>
+              {[0.5, 0.75, 0.85, 1].map(rate => (
+                <button key={rate} style={{ ...styles.speedBtn, ...(playbackRate === rate ? styles.speedBtnActive : {}) }} onClick={() => setPlaybackRate(rate)}>
+                  {rate}x
+                </button>
+              ))}
+            </div>
             <button style={styles.playBtn} onClick={playPassage}>🔊 Play Passage</button>
             <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.4)' }}>
               {passage.en}
@@ -226,4 +226,7 @@ const styles = {
   pickerTitle: { textAlign: 'center', fontSize: '1.3rem', fontWeight: '600', color: '#ffd700', marginTop: '1.5rem', marginBottom: '1.5rem' },
   pickerGrid: { display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' },
   pickerCard: { background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,215,0,0.15)', borderRadius: '16px', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', minWidth: '180px' },
+  speedControls: { display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' },
+  speedBtn: { background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '8px', cursor: 'pointer', fontSize: '0.85rem', fontFamily: 'inherit', transition: 'all 0.2s' },
+  speedBtnActive: { background: 'rgba(255,215,0,0.2)', borderColor: '#ffd700', color: '#ffd700', fontWeight: '600' },
 };
