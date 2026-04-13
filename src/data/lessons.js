@@ -8,7 +8,7 @@ export const ALPHABET_CHALLENGE = {
   nameUk: "Абетка",
   description: "Type the Ukrainian alphabet A-Я as fast as you can!",
   hint: "Type each letter in order - loops automatically!",
-  letters: ['а', 'б', 'в', 'г', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'],
+  letters: ['а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'],
   words: [],
   xpPerLetter: 5,
   xpPerWord: 0,
@@ -24,7 +24,7 @@ export const LESSONS = {
     description: "Learn the top row of the Ukrainian keyboard",
     hint: "й ц у к е н г ш щ з х ї",
     letters: ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ї'],
-    words: ['ще', 'єн', 'кухне', 'щуку', 'цех', 'неї', 'нею', 'ніж', 'кущі'],
+    words: ['ще', 'щуку', 'цех', 'неї', 'кущ', 'ген', 'куш'],
     xpPerLetter: 10,
     xpPerWord: 25,
     requiredXp: 0

@@ -43,7 +43,7 @@ export const LANGUAGES = {
     nameField: 'nameUk',
     storageKey: 'ukrainianTypingProgress',
     vowels: ['а', 'е', 'и', 'і', 'о', 'у', 'є', 'ї', 'ю', 'я'],
-    alphabetSize: 32,
+    alphabetSize: 33,
     keyboard: UKRAINIAN_KEYBOARD,
     keyToQwerty: UK_TO_QWERTY,
     letterInfo: LETTER_INFO,

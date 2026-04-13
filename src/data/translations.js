@@ -16,7 +16,7 @@ export const TRANSLATIONS = {
   'щастя': 'happiness', 'зима': 'winter', 'їжа': 'food', 'їхати': 'to go (vehicle)',
   // Level 5
   'яблуко': 'apple', 'чай': 'tea', 'читати': 'to read', 'любов': 'love',
-  'людина': 'person', 'будинок': 'building', 'бути': 'to be', 'юнак': 'young man',
+  'людина': 'person', 'будинок': 'house', 'бути': 'to be', 'юнак': 'young man',
   // Level 6
   'і': 'and', 'в': 'in', 'на': 'on', 'що': 'what/that', 'як': 'how',
   'але': 'but', 'це': 'this is', 'той': 'that', 'весь': 'all/whole',
