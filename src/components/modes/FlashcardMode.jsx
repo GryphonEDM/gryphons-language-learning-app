@@ -93,6 +93,13 @@ export default function FlashcardMode({
     }
   }, [currentIndex, isFlipped]);
 
+  const [cardShowTime, setCardShowTime] = useState(() => Date.now());
+
+  // Reset card timer when card changes
+  useEffect(() => {
+    setCardShowTime(Date.now());
+  }, [currentIndex]);
+
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
     if (!isFlipped && ttsEnabled && onSpeak) {
@@ -120,7 +127,8 @@ export default function FlashcardMode({
         onTrackProgress('flashcards', {
           setId: vocabularySet.setId,
           word: currentWord.uk,
-          mastered: true
+          mastered: true,
+          responseMs: Date.now() - cardShowTime,
         });
       }
     }
@@ -137,7 +145,8 @@ export default function FlashcardMode({
       onTrackProgress('flashcards', {
         setId: vocabularySet.setId,
         word: currentWord.uk,
-        mastered: false
+        mastered: false,
+        responseMs: Date.now() - cardShowTime,
       });
     }
 

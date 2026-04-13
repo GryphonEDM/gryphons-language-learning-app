@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { storageGet, storageSet, storageFlush, setAuthToken, clearAuthToken, initFromServer } from './utils/storage.js';
 import { reviewCard, initSRSCard, mapCorrectToRating, getReviewStats, getNextDueHours, getNewCards } from './utils/srs.js';
+import { classifyError, addErrorToWord, updateResponseTime, recomputeStruggle, buildStruggleContext, getStruggleWords } from './utils/struggleEngine.js';
 import { UKRAINIAN_KEYBOARD, UK_TO_QWERTY, LETTER_INFO } from './data/keyboard.js';
 import { LESSONS, ALPHABET_CHALLENGE } from './data/lessons.js';
 import { ACHIEVEMENTS } from './data/achievements.js';
@@ -24,6 +25,8 @@ import MasteredWordsManager from './components/modes/MasteredWordsManager.jsx';
 import SpeechMode from './components/modes/SpeechMode.jsx';
 import MinimalPairsMode from './components/modes/MinimalPairsMode.jsx';
 import DailyReviewMode from './components/modes/DailyReviewMode.jsx';
+import StruggleWordsMode from './components/modes/StruggleWordsMode.jsx';
+import StruggleDrillMode from './components/modes/StruggleDrillMode.jsx';
 import StatsPage from './components/StatsPage.jsx';
 
 // Import story data
@@ -722,6 +725,7 @@ export default function UkrainianTypingGame() {
   const [gameMode, setGameMode] = useState('menu');
   const prevModeRef = useRef(null);
   const prevVocabSetRef = useRef(null);
+  const struggleDrillFocusRef = useRef(null);
   const [exploreSelectedKey, setExploreSelectedKey] = useState(null);
   const [selectedVocabSet, setSelectedVocabSet] = useState(null);
   const [randomDifficulty, setRandomDifficulty] = useState('A1');
@@ -926,7 +930,7 @@ export default function UkrainianTypingGame() {
     setMasteredWordsList(prev => prev.filter(m => m.word !== word));
   }, []);
 
-  // Unified progress tracker — feeds all modes into modeProgress + vocabularyMastery (with SRS)
+  // Unified progress tracker — feeds all modes into modeProgress + vocabularyMastery (with SRS + struggle tracking)
   const handleTrackProgress = useCallback((mode, data) => {
     setModeProgress(prev => ({
       ...prev,
@@ -935,7 +939,7 @@ export default function UkrainianTypingGame() {
     if (data.word) {
       const correct = data.correct !== undefined ? data.correct : !!data.mastered;
       setVocabularyMastery(prev => {
-        const wordData = prev[data.word] || {
+        let wordData = prev[data.word] || {
           timesCorrect: 0, timesWrong: 0, lastReviewed: null, masteryLevel: 0, modesUsed: []
         };
         const newTimesCorrect = correct ? wordData.timesCorrect + 1 : wordData.timesCorrect;
@@ -948,17 +952,48 @@ export default function UkrainianTypingGame() {
         const rating = data.rating || mapCorrectToRating(correct);
         const srsCard = wordData.stability !== undefined ? wordData : { ...wordData, ...initSRSCard() };
         const updatedSRS = reviewCard(srsCard, rating);
-        return {
-          ...prev,
-          [data.word]: {
-            timesCorrect: newTimesCorrect, timesWrong: newTimesWrong,
-            lastReviewed: new Date().toISOString(), masteryLevel, modesUsed,
-            ...updatedSRS
-          }
+
+        wordData = {
+          ...wordData,
+          timesCorrect: newTimesCorrect, timesWrong: newTimesWrong,
+          lastReviewed: new Date().toISOString(), masteryLevel, modesUsed,
+          ...updatedSRS
         };
+
+        // Struggle tracking: record error details when wrong + userAnswer is provided
+        if (!correct && data.userAnswer) {
+          const errorType = classifyError({
+            mode,
+            userAnswer: data.userAnswer,
+            expected: data.expected,
+            confusedWith: data.confusedWith,
+            errorType: data.errorType,
+          });
+          wordData = addErrorToWord(wordData, {
+            ts: Date.now(),
+            mode,
+            type: errorType,
+            userAnswer: (data.userAnswer || '').slice(0, 60),
+            expected: (data.expected || '').slice(0, 60),
+            confusedWith: data.confusedWith || null,
+            responseMs: data.responseMs || null,
+          });
+          wordData.struggle = recomputeStruggle(wordData);
+        }
+
+        // Update response time on correct answers
+        if (correct && data.responseMs) {
+          wordData = updateResponseTime(wordData, data.responseMs);
+        }
+
+        return { ...prev, [data.word]: wordData };
       });
     }
   }, []);
+
+  // Struggle context for AI tutor — recomputed when vocabularyMastery changes
+  const struggleContext = useMemo(() => buildStruggleContext(vocabularyMastery), [vocabularyMastery]);
+  const struggleWordCount = useMemo(() => getStruggleWords(vocabularyMastery).length, [vocabularyMastery]);
 
   // Language switching handler
   const switchLanguage = useCallback((newLang) => {
@@ -1749,7 +1784,7 @@ export default function UkrainianTypingGame() {
                       {doneToday && !hasDue
                         ? `✅ All caught up!${nextHours ? ` Next review in ~${nextHours}h` : ''}`
                         : hasDue
-                          ? `${srsStats.due} card${srsStats.due !== 1 ? 's' : ''} due${newAvailable ? ' · new words ready' : ''}`
+                          ? `${srsStats.due} card${srsStats.due !== 1 ? 's' : ''} due${struggleWordCount > 0 ? ` · ${struggleWordCount} struggle` : ''}${newAvailable ? ' · new words ready' : ''}`
                           : newAvailable
                             ? 'New words ready to learn'
                             : 'Start learning to build your review queue'
@@ -1851,6 +1886,15 @@ export default function UkrainianTypingGame() {
                     <p>Arrange words into sentences</p>
                   </div>
                 </div>
+                {struggleWordCount > 0 && (
+                  <div className="mode-card" data-mode="struggle" onClick={() => setGameMode('struggle')} style={{ border: '1px solid rgba(239,68,68,0.3)', background: 'rgba(239,68,68,0.08)' }}>
+                    <div className="mode-icon">🎯</div>
+                    <div className="mode-info">
+                      <h3>Struggle Words <span style={{ background: '#ef4444', color: '#fff', borderRadius: 10, padding: '0.1rem 0.5rem', fontSize: '0.75rem', marginLeft: '0.4rem' }}>{struggleWordCount}</span></h3>
+                      <p>Target your weak spots with focused drills</p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -2373,6 +2417,7 @@ export default function UkrainianTypingGame() {
             onSpeak={speak}
             ttsEnabled={ttsEnabled}
             ttsVolume={ttsVolume}
+            struggleContext={struggleContext}
             onMarkMastered={handleMarkMastered}
             masteredWordsList={masteredWordsList}
             onExit={() => setGameMode('menu')}
@@ -2616,6 +2661,7 @@ export default function UkrainianTypingGame() {
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onMarkMastered={handleMarkMastered}
             masteredWordsList={masteredWordsList}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'speech' ? (
           <SpeechMode
@@ -2633,6 +2679,44 @@ export default function UkrainianTypingGame() {
             }}
             onAddXP={(amount) => setXp(prev => prev + amount)}
             onTrackProgress={handleTrackProgress}
+          />
+        ) : gameMode === 'struggle' ? (
+          <StruggleWordsMode
+            langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('menu')}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+            onStartDrill={(focusWords) => {
+              setGameMode('struggle-drill');
+              // Store focus words in a ref so drill mode can access them
+              struggleDrillFocusRef.current = focusWords || null;
+            }}
+          />
+        ) : gameMode === 'struggle-drill' ? (
+          <StruggleDrillMode
+            langCode={currentLanguage}
+            vocabularyMastery={vocabularyMastery}
+            focusWords={struggleDrillFocusRef.current}
+            onSpeak={speak}
+            ttsEnabled={ttsEnabled}
+            ttsVolume={ttsVolume}
+            onExit={() => setGameMode('struggle')}
+            onComplete={(stats) => {
+              console.log('[StruggleDrill] Session complete:', stats);
+              // Achievement: first struggle drill
+              if (!achievements.includes('struggle_first_drill')) {
+                setAchievements(prev => [...prev, 'struggle_first_drill']);
+                setRecentAchievement(ACHIEVEMENTS.find(a => a.id === 'struggle_first_drill'));
+              }
+              setGameMode('struggle');
+            }}
+            onAddXP={(amount) => setXp(prev => prev + amount)}
+            onTrackProgress={handleTrackProgress}
+            struggleContext={struggleContext}
           />
         ) : gameMode === 'mastered-words' ? (
           <MasteredWordsManager

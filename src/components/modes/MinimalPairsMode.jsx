@@ -88,9 +88,15 @@ export default function MinimalPairsMode({ langCode = 'uk', onSpeak, ttsEnabled,
     }
 
     if (onTrackProgress) {
+      const chosenWord = choice === 'A' ? pair?.wordA?.text : pair?.wordB?.text;
+      const correctWord = playedSide === 'A' ? pair?.wordA?.text : pair?.wordB?.text;
+      const otherWord = playedSide === 'A' ? pair?.wordB?.text : pair?.wordA?.text;
       onTrackProgress('minimal-pairs', {
-        word: pair?.wordA?.text || '',
-        correct: isCorrect
+        word: correctWord || '',
+        correct: isCorrect,
+        userAnswer: chosenWord || '',
+        expected: correctWord || '',
+        confusedWith: otherWord || '',
       });
     }
   }, [revealed, playedSide, pairs, currentIdx, onAddXP, onTrackProgress]);

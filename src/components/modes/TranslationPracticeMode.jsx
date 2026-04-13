@@ -56,7 +56,7 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
             filtered.push({
               [langCode]: w[langCode] || w.uk, en: w.en, phonetic: w.phonetic || '',
               source: w.source || set.setId,
-              examples: w.examples || [], examplesEn: w.examplesEn || '',
+              examples: w.examples || [], examplesEn: w.examplesEn || [],
             });
           }
         });
@@ -115,8 +115,8 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
   }, [pickerStep]);
 
   const currentWord = words[currentIdx];
-  const prompt = direction === `en-${langCode}` ? currentWord?.en : currentWord?.uk;
-  const answer = direction === `en-${langCode}` ? currentWord?.uk : currentWord?.en;
+  const prompt = direction === `en-${langCode}` ? currentWord?.en : (currentWord?.[langCode] || currentWord?.uk);
+  const answer = direction === `en-${langCode}` ? (currentWord?.[langCode] || currentWord?.uk) : currentWord?.en;
 
   const getAcceptedAnswers = () => {
     if (!answer) return [];
@@ -172,7 +172,9 @@ export default function TranslationPracticeMode({ langCode = 'uk', vocabularySet
       onTrackProgress('translation', {
         word: currentWord[langCode],
         correct: isCorrect,
-        direction
+        direction,
+        userAnswer: userInput.trim(),
+        expected: answer,
       });
     }
   };

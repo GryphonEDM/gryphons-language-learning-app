@@ -16,12 +16,12 @@ export default function MasteredWordsManager({ langCode = 'uk', masteredWordsLis
 
   const masteredWithInfo = useMemo(() => {
     return masteredWordsList.map(m => {
-      const dictEntry = dict[m.word] || dict[m.word.toLowerCase()];
+      const dictEntry = dict.targetToEn?.[m.word] || dict.targetToEn?.[m.word.toLowerCase()];
       const vocabEntry = allWords.find(w => (w[langCode] || w.uk) === m.word);
       return {
         word: m.word,
         timestamp: m.timestamp,
-        translation: dictEntry?.en || vocabEntry?.en || '',
+        translation: dictEntry || vocabEntry?.en || '',
         difficulty: vocabEntry?.difficulty || '',
       };
     });

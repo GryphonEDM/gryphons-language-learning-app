@@ -44,7 +44,7 @@ function titleFromMessages(displayMessages) {
   return first.text.slice(0, 40) + (first.text.length > 40 ? '…' : '');
 }
 
-export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [] }) {
+export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onAddXP, onMarkMastered, masteredWordsList = [], struggleContext }) {
   const langName = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese' }[langCode] || 'Ukrainian';
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
@@ -79,7 +79,7 @@ export default function ChatMode({ langCode = 'uk', onSpeak, ttsEnabled, ttsVolu
 - Adjust your complexity to match the user's level.
 - Encourage the user to practice by asking follow-up questions in ${langName}.
 - If the user writes in English, respond in ${langName} with an English translation, and encourage them to try in ${langName}.
-${masteredWordsList.length > 0 ? `\n- The student has marked these words as mastered: ${masteredWordsList.slice(0, 100).map(m => m.word).join(', ')}${masteredWordsList.length > 100 ? ` (and ${masteredWordsList.length - 100} more)` : ''}. Use these words naturally and introduce related vocabulary just beyond their level.` : ''}`;
+${masteredWordsList.length > 0 ? `\n- The student has marked these words as mastered: ${masteredWordsList.slice(0, 100).map(m => m.word).join(', ')}${masteredWordsList.length > 100 ? ` (and ${masteredWordsList.length - 100} more)` : ''}. Use these words naturally and introduce related vocabulary just beyond their level.` : ''}${struggleContext ? `\n\nThe student struggles with these words:\n${struggleContext}\nIf the student makes an error on one of these, proactively offer a brief mnemonic or explanation. For confusion pairs, explain the difference. Keep it natural — don't lecture.` : ''}`;
 
   const activeSession = sessions.find(s => s.id === activeId) || null;
 

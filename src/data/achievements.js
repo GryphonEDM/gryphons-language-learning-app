@@ -72,4 +72,10 @@ export const ACHIEVEMENTS = [
   { id: 'daily_first', name: 'Daily Learner', nameUk: 'Щоденний учень', nameRu: 'Ежедневный ученик', desc: 'Complete your first daily review', icon: '📋', xp: 75 },
   { id: 'daily_streak_7', name: 'Week Warrior', nameUk: 'Воїн тижня', nameRu: 'Воин недели', desc: 'Maintain a 7-day review streak', icon: '🔥', xp: 200 },
   { id: 'daily_streak_30', name: 'Monthly Master', nameUk: 'Місячний майстер', nameRu: 'Месячный мастер', desc: 'Maintain a 30-day review streak', icon: '💎', xp: 500 },
+  // P11 - Struggle Words
+  { id: 'struggle_first_drill', name: 'Facing the Challenge', nameUk: 'Перед викликом', nameRu: 'Лицом к вызову', desc: 'Complete your first struggle word drill', icon: '🎯', xp: 50 },
+  { id: 'struggle_graduated_5', name: 'Breaking Through', nameUk: 'Прорив', nameRu: 'Прорыв', desc: 'Graduate 5 words from your struggle list', icon: '🌱', xp: 100 },
+  { id: 'struggle_graduated_20', name: 'Weakness Crusher', nameUk: 'Переможець слабкостей', nameRu: 'Покоритель слабостей', desc: 'Graduate 20 words from your struggle list', icon: '💪', xp: 200 },
+  { id: 'struggle_confusion_cleared', name: 'Crystal Clear', nameUk: 'Кришталева ясність', nameRu: 'Кристальная ясность', desc: 'Clear a confusion pair by mastering both words', icon: '🔮', xp: 150 },
+  { id: 'struggle_zero', name: 'No Weakness', nameUk: 'Без слабкостей', nameRu: 'Без слабостей', desc: 'Empty your entire struggle list', icon: '🏆', xp: 300 },
 ];

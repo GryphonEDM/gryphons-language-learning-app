@@ -20,14 +20,14 @@ const RATINGS = [
 export default function DailyReviewMode({
   langCode = 'uk', onSpeak, ttsEnabled, ttsVolume, onExit, onComplete, onAddXP,
   onTrackProgress, vocabularyMastery, modeProgress, vocabularySets,
-  onMarkMastered, masteredWordsList = []
+  onMarkMastered, masteredWordsList = [], struggleContext
 }) {
   const langNames = { uk: 'Ukrainian', ru: 'Russian', de: 'German', es: 'Spanish', fr: 'French', el: 'Greek', hi: 'Hindi', ar: 'Arabic', ko: 'Korean', zh: 'Chinese', ja: 'Japanese', en: 'English' };
   const langName = langNames[langCode] || 'Ukrainian';
   const targetField = langCode === 'en' ? 'en' : langCode;
 
   const { selectedWord, handleWordClick, dismissWord } = useWordClick({ langCode, onSpeak, ttsEnabled, ttsVolume });
-  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a daily spaced repetition review — they see ${langName} words and self-rate their recall. Help with vocabulary, pronunciation, or usage questions concisely. Keep responses under 150 words.`, onSpeak, ttsEnabled, ttsVolume });
+  const chat = useLessonChat({ langName, langCode, systemPrompt: `You are a helpful ${langName} language tutor. The student is doing a daily spaced repetition review — they see ${langName} words and self-rate their recall. Help with vocabulary, pronunciation, or usage questions concisely. Keep responses under 150 words.${struggleContext ? `\n\nStudent's known weak areas:\n${struggleContext}\nIf the student asks about or struggles with one of these words, proactively offer a brief mnemonic or explanation.` : ''}`, onSpeak, ttsEnabled, ttsVolume });
   const mountedRef = useRef(true);
 
   // Build session — useState so we can rebuild on "Continue"
@@ -202,9 +202,6 @@ export default function DailyReviewMode({
     if (mode === 'translation') {
       correct = exerciseInput.trim().toLowerCase() === item.word.toLowerCase();
     } else if (mode === 'listening') {
-      // For listening, exerciseInput holds the index of the chosen word
-      correct = parseInt(exerciseInput) === 0; // correct answer is always index 0 in shuffled
-      // Actually, we need to track which is the right one — see render
       return; // handled by handleListeningChoice
     }
 
@@ -215,7 +212,16 @@ export default function DailyReviewMode({
       setXpEarned(prev => prev + points);
       if (onAddXP) onAddXP(points);
     }
-  }, [session, currentIdx, exerciseInput, exerciseFeedback, onAddXP]);
+
+    if (onTrackProgress) {
+      onTrackProgress('daily-review', {
+        word: item.word,
+        correct,
+        userAnswer: exerciseInput.trim(),
+        expected: item.word,
+      });
+    }
+  }, [session, currentIdx, exerciseInput, exerciseFeedback, onAddXP, onTrackProgress]);
 
   const handleListeningChoice = useCallback((chosenWord, correctWord) => {
     if (exerciseFeedback) return;
@@ -227,7 +233,16 @@ export default function DailyReviewMode({
       setXpEarned(prev => prev + points);
       if (onAddXP) onAddXP(points);
     }
-  }, [exerciseFeedback, onAddXP]);
+
+    if (onTrackProgress) {
+      onTrackProgress('daily-review', {
+        word: correctWord,
+        correct,
+        userAnswer: chosenWord,
+        expected: correctWord,
+      });
+    }
+  }, [exerciseFeedback, onAddXP, onTrackProgress]);
 
   const handleExerciseNext = useCallback(() => {
     const nextIdx = currentIdx + 1;

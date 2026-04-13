@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import ModeHeader from '../shared/ModeHeader.jsx';
 import CompletionScreen from '../shared/CompletionScreen.jsx';
 import { getAllVocabularyWords } from '../../utils/dictionaryBuilder.js';
@@ -138,6 +138,18 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
     return diff;
   };
 
+  const [promptStartTime, setPromptStartTime] = useState(() => Date.now());
+
+  // Reset prompt timer when word changes
+  const currentWordRef = useRef(null);
+  if (currentWord && currentWord !== currentWordRef.current) {
+    currentWordRef.current = currentWord;
+    // Can't call setState during render, so use ref + effect
+  }
+  useEffect(() => {
+    setPromptStartTime(Date.now());
+  }, [currentIdx]);
+
   const handleSubmit = () => {
     if (!userInput.trim() || submitted) return;
 
@@ -158,8 +170,11 @@ export default function ListeningMode({ langCode = 'uk', vocabularySets = [], on
 
     if (onTrackProgress) {
       onTrackProgress('listening', {
-        word: currentWord[langCode] || currentWord.uk,
-        correct: isCorrect
+        word: targetWord,
+        correct: isCorrect,
+        userAnswer: userInput.trim(),
+        expected: targetWord,
+        responseMs: Date.now() - promptStartTime,
       });
     }
   };

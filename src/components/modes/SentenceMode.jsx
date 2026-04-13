@@ -117,7 +117,7 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     if (feedback) return;
     setAvailableTiles(prev => prev.filter(t => t.id !== tile.id));
     setPlacedTiles(prev => [...prev, tile]);
-    if (ttsEnabled) onSpeak(tile.word, 0.8, ttsVolume);
+    if (ttsEnabled && onSpeak) onSpeak(tile.word, 0.8, ttsVolume);
   };
 
   const handlePlacedClick = (tile) => {
@@ -156,8 +156,22 @@ export default function SentenceMode({ langCode = 'uk', sentenceData, onSpeak, t
     if (onTrackProgress) {
       onTrackProgress('sentences', {
         sentenceId: currentSentence.id,
-        correct: isCorrect
+        correct: isCorrect,
+        errorType: isCorrect ? undefined : 'grammar',
       });
+      // Also track individual words from the sentence for struggle detection
+      if (!isCorrect) {
+        const sentenceWords = (currentSentence[langCode] || '').split(/\s+/).filter(Boolean);
+        for (const w of sentenceWords) {
+          onTrackProgress('sentences', {
+            word: w.toLowerCase().replace(/[.,!?;:"""''()—–\-…«»\[\]]/g, ''),
+            correct: false,
+            errorType: 'grammar',
+            userAnswer: placed.join(' '),
+            expected: (orders[0] || []).join(' '),
+          });
+        }
+      }
     }
   };
 

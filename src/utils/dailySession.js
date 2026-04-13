@@ -5,6 +5,7 @@
 import { getDueCards, getNewCards, getReviewStats } from './srs.js';
 import { getAllVocabularyWords } from './dictionaryBuilder.js';
 import { MINIMAL_PAIRS } from '../data/minimalPairs.js';
+import { computeStruggleScore, getStruggleWords } from './struggleEngine.js';
 
 const MAX_REVIEWS = 20;
 const MAX_NEW_CARDS = 5;
@@ -77,8 +78,16 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
   const today = getTodayStr();
   const dailyProgress = modeProgress['daily-review'] || {};
 
-  // --- Review cards ---
+  // --- Review cards (struggle words prioritized) ---
   const dueRaw = getDueCards(vocabularyMastery, now);
+  // Sort: struggle words (score >= 0.5) first, then by overdue
+  dueRaw.sort((a, b) => {
+    const aStruggle = computeStruggleScore(vocabularyMastery[a.word] || {}, now);
+    const bStruggle = computeStruggleScore(vocabularyMastery[b.word] || {}, now);
+    if (aStruggle >= 0.5 && bStruggle < 0.5) return -1;
+    if (bStruggle >= 0.5 && aStruggle < 0.5) return 1;
+    return b.overdueDays - a.overdueDays;
+  });
   const reviewCards = [];
   for (const card of dueRaw) {
     if (reviewCards.length >= MAX_REVIEWS) break;
@@ -131,15 +140,36 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
       }
     }
 
-    // Pick least-recently-used
+    // Pick exercise mode — bias toward dominant struggle type, fall back to least-recently-used
     let bestMode = candidates[0];
-    let oldestTime = Infinity;
-    for (const mode of candidates) {
-      const lastStudied = modeProgress[mode]?.lastStudied;
-      const time = lastStudied ? new Date(lastStudied).getTime() : 0;
-      if (time < oldestTime) {
-        oldestTime = time;
-        bestMode = mode;
+
+    // Check if struggle words suggest a specific exercise type
+    const struggles = getStruggleWords(vocabularyMastery, { limit: 10, now });
+    if (struggles.length > 0) {
+      const typeCounts = {};
+      for (const s of struggles) {
+        for (const cat of (s.categories || [])) {
+          typeCounts[cat] = (typeCounts[cat] || 0) + 1;
+        }
+      }
+      const dominantType = Object.entries(typeCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
+      if (dominantType === 'listening' && candidates.includes('listening')) {
+        bestMode = 'listening';
+      } else if (dominantType === 'confusion' && candidates.includes('minimal-pairs')) {
+        bestMode = 'minimal-pairs';
+      }
+    }
+
+    // Fall back to least-recently-used if no struggle bias picked
+    if (bestMode === candidates[0] && struggles.length === 0) {
+      let oldestTime = Infinity;
+      for (const mode of candidates) {
+        const lastStudied = modeProgress[mode]?.lastStudied;
+        const time = lastStudied ? new Date(lastStudied).getTime() : 0;
+        if (time < oldestTime) {
+          oldestTime = time;
+          bestMode = mode;
+        }
       }
     }
 
