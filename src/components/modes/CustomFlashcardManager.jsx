@@ -103,7 +103,7 @@ export default function CustomFlashcardManager({ langCode = 'uk', customWords, o
       {customWords.length > 0 && (
         <div style={styles.wordList}>
           {customWords.map((word, i) => (
-            <div key={i} style={styles.wordItem}>
+            <div key={`${word.en}-${word[langCode] || word.uk}`} style={styles.wordItem}>
               <div style={styles.wordInfo}>
                 <span style={styles.ukWord}>{word[langCode] || word.uk}</span>
                 <span style={styles.separator}> — </span>

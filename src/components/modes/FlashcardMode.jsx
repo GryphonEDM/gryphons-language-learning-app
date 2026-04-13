@@ -92,7 +92,7 @@ export default function FlashcardMode({
       }, 300);
       return () => clearTimeout(timer);
     }
-  }, [currentIndex, isFlipped]);
+  }, [currentIndex, isFlipped, speakEnglish, currentWord, ttsEnabled]);
 
   const [cardShowTime, setCardShowTime] = useState(() => Date.now());
 
