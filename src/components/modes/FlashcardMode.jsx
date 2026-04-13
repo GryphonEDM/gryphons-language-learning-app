@@ -132,6 +132,15 @@ export default function FlashcardMode({
   };
 
   const handleReviewAgain = () => {
+    // Report failure to SRS
+    if (onTrackProgress) {
+      onTrackProgress('flashcards', {
+        setId: vocabularySet.setId,
+        word: currentWord.uk,
+        mastered: false
+      });
+    }
+
     // Add back to review queue if not already there
     if (!reviewQueue.includes(currentIndex)) {
       setReviewQueue(prev => [...prev, currentIndex]);
