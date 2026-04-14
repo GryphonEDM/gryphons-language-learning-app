@@ -151,8 +151,10 @@ export function buildDailySession({ vocabularyMastery, modeProgress, langCode, t
   const minimalPairsLookup = new Set();
   const langPairs = MINIMAL_PAIRS[langCode]?.pairs || [];
   for (const pair of langPairs) {
-    if (pair.wordA) minimalPairsLookup.add(pair.wordA.toLowerCase());
-    if (pair.wordB) minimalPairsLookup.add(pair.wordB.toLowerCase());
+    const wordAText = typeof pair.wordA === 'string' ? pair.wordA : pair.wordA?.text;
+    const wordBText = typeof pair.wordB === 'string' ? pair.wordB : pair.wordB?.text;
+    if (wordAText) minimalPairsLookup.add(wordAText.toLowerCase());
+    if (wordBText) minimalPairsLookup.add(wordBText.toLowerCase());
   }
   const reviewCardsWithModes = assignReviewModes(reviewCards, vocabularyMastery, {
     ttsEnabled,

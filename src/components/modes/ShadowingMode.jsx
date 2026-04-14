@@ -26,6 +26,7 @@ export default function ShadowingMode({
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selfRating, setSelfRating] = useState(null); // null, 'good', 'ok', 'hard'
+  const [playbackRate, setPlaybackRate] = useState(0.85);
   const [score, setScore] = useState(0);
   const [xpEarned, setXpEarned] = useState(0);
   const mountedRef = useRef(true);
@@ -100,12 +101,12 @@ export default function ShadowingMode({
   const handlePlay = useCallback(() => {
     if (!currentItem || !ttsEnabled || !onSpeak) return;
     setIsPlaying(true);
-    onSpeak(currentItem.text, 0.85, ttsVolume);
+    onSpeak(currentItem.text, playbackRate, ttsVolume);
     // Estimate playback duration and reset
     const wordCount = currentItem.text.split(/\s+/).length;
     const estimatedMs = Math.max(2000, wordCount * 500);
     setTimeout(() => { if (mountedRef.current) setIsPlaying(false); }, estimatedMs);
-  }, [currentItem, ttsEnabled, onSpeak, ttsVolume]);
+  }, [currentItem, ttsEnabled, onSpeak, ttsVolume, playbackRate]);
 
   // Auto-play on new item
   useEffect(() => {
@@ -187,12 +188,16 @@ export default function ShadowingMode({
         <div style={styles.sentenceText}>{currentItem.text}</div>
         {currentItem.en && <div style={styles.translationSmall}>{currentItem.en}</div>}
 
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '1.5rem' }}>
+        <div style={styles.speedControls}>
+          {[0.5, 0.65, 0.85, 1].map(rate => (
+            <button key={rate} style={{ ...styles.speedBtn, ...(playbackRate === rate ? styles.speedBtnActive : {}) }} onClick={() => setPlaybackRate(rate)}>
+              {rate}x
+            </button>
+          ))}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.5rem' }}>
           <button style={{ ...styles.playBtn, opacity: isPlaying ? 0.6 : 1 }} onClick={handlePlay} disabled={isPlaying}>
             {isPlaying ? '🔊 Playing...' : '🔊 Play & Shadow'}
-          </button>
-          <button style={{ ...styles.playBtn, background: 'linear-gradient(135deg, #ff922b, #e8590c)' }} onClick={() => ttsEnabled && onSpeak && onSpeak(currentItem.text, 0.6, ttsVolume)}>
-            🐢 Slow
           </button>
         </div>
 
@@ -241,4 +246,7 @@ const styles = {
   pickerTitle: { textAlign: 'center', fontSize: '1.3rem', fontWeight: '600', color: '#ffd700', marginTop: '1.5rem', marginBottom: '1.5rem' },
   pickerGrid: { display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' },
   pickerCard: { background: 'rgba(0,0,0,0.3)', border: '1px solid rgba(255,215,0,0.15)', borderRadius: '16px', padding: '1.5rem', textAlign: 'center', cursor: 'pointer', minWidth: '160px' },
+  speedControls: { display: 'flex', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem' },
+  speedBtn: { background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '0.4rem 0.8rem', borderRadius: '8px', cursor: 'pointer', fontSize: '0.85rem', fontFamily: 'inherit', transition: 'all 0.2s' },
+  speedBtnActive: { background: 'rgba(255,215,0,0.2)', borderColor: '#ffd700', color: '#ffd700', fontWeight: '600' },
 };

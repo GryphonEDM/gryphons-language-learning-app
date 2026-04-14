@@ -124,6 +124,62 @@ export default function DailyReviewMode({
     setRevealed(false);
   }, [session]);
 
+  const startExerciseItem = useCallback((idx) => {
+    setExerciseFeedback(null);
+    setExerciseInput('');
+    setExercisePlayed(null);
+
+    if (!session.exercise) return;
+    const { mode, words } = session.exercise;
+    if (idx >= words.length) return;
+
+    if (mode === 'listening' && ttsEnabled && onSpeak) {
+      setTimeout(() => {
+        if (mountedRef.current) onSpeak(words[idx].word, 1, ttsVolume);
+      }, 400);
+    }
+  }, [session, ttsEnabled, onSpeak, ttsVolume]);
+
+  const finishSession = useCallback(() => {
+    // Update streak
+    const today = getTodayStr();
+    const yesterday = getYesterdayStr();
+    let streakData;
+    try {
+      streakData = JSON.parse(storageGet('dailyReviewStreak') || '{}');
+    } catch { streakData = {}; }
+
+    if (streakData.lastSessionDate !== today) {
+      if (streakData.lastSessionDate === yesterday) {
+        streakData.currentStreak = (streakData.currentStreak || 0) + 1;
+      } else {
+        streakData.currentStreak = 1;
+      }
+      streakData.lastSessionDate = today;
+      streakData.bestStreak = Math.max(streakData.bestStreak || 0, streakData.currentStreak);
+      storageSet('dailyReviewStreak', JSON.stringify(streakData));
+    }
+
+    // Completion bonus
+    const bonus = 25;
+    setXpEarned(prev => prev + bonus);
+    if (onAddXP) onAddXP(bonus);
+
+    setPhase('complete');
+
+    if (onComplete) {
+      onComplete({
+        mode: 'daily-review',
+        reviewed: session.reviewCards.length,
+        newWords: session.newCards.length,
+        exerciseScore,
+        xpEarned: xpEarned + bonus,
+        streak: streakData.currentStreak || 1,
+        remainingDue: session.remainingDue,
+      });
+    }
+  }, [session, exerciseScore, xpEarned, onAddXP, onComplete]);
+
   const handleRating = useCallback((rating) => {
     if (!revealed) return;
     const card = session.reviewCards[currentIdx];
@@ -264,22 +320,6 @@ export default function DailyReviewMode({
   }, [currentIdx, session, onAddXP, onTrackProgress]);
 
   // --- Exercise handlers ---
-  const startExerciseItem = useCallback((idx) => {
-    setExerciseFeedback(null);
-    setExerciseInput('');
-    setExercisePlayed(null);
-
-    if (!session.exercise) return;
-    const { mode, words } = session.exercise;
-    if (idx >= words.length) return;
-
-    if (mode === 'listening' && ttsEnabled && onSpeak) {
-      // Play the word for listening exercise
-      setTimeout(() => {
-        if (mountedRef.current) onSpeak(words[idx].word, 1, ttsVolume);
-      }, 400);
-    }
-  }, [session, ttsEnabled, onSpeak, ttsVolume]);
 
   const handleExerciseSubmit = useCallback(() => {
     if (!session.exercise || exerciseFeedback) return;
@@ -345,46 +385,6 @@ export default function DailyReviewMode({
       finishSession();
     }
   }, [currentIdx, session, startExerciseItem]);
-
-  const finishSession = useCallback(() => {
-    // Update streak
-    const today = getTodayStr();
-    const yesterday = getYesterdayStr();
-    let streakData;
-    try {
-      streakData = JSON.parse(storageGet('dailyReviewStreak') || '{}');
-    } catch { streakData = {}; }
-
-    if (streakData.lastSessionDate !== today) {
-      if (streakData.lastSessionDate === yesterday) {
-        streakData.currentStreak = (streakData.currentStreak || 0) + 1;
-      } else {
-        streakData.currentStreak = 1;
-      }
-      streakData.lastSessionDate = today;
-      streakData.bestStreak = Math.max(streakData.bestStreak || 0, streakData.currentStreak);
-      storageSet('dailyReviewStreak', JSON.stringify(streakData));
-    }
-
-    // Completion bonus
-    const bonus = 25;
-    setXpEarned(prev => prev + bonus);
-    if (onAddXP) onAddXP(bonus);
-
-    setPhase('complete');
-
-    if (onComplete) {
-      onComplete({
-        mode: 'daily-review',
-        reviewed: session.reviewCards.length,
-        newWords: session.newCards.length,
-        exerciseScore,
-        xpEarned: xpEarned + bonus,
-        streak: streakData.currentStreak || 1,
-        remainingDue: session.remainingDue,
-      });
-    }
-  }, [session, exerciseScore, xpEarned, onAddXP, onComplete]);
 
   const handleContinue = useCallback(() => {
     // Rebuild session from current SRS state (cards reviewed so far are no longer due)

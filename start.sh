@@ -100,6 +100,20 @@ if ! python3 -c "import uroman" &> /dev/null; then
 else
     echo "uroman already installed."
 fi
+
+if ! python3 -c "import soundfile" &> /dev/null; then
+    echo "Installing soundfile..."
+    pip install soundfile
+else
+    echo "soundfile already installed."
+fi
+
+if ! python3 -c "import transformers" &> /dev/null; then
+    echo "Installing transformers (Greek/French/Korean MMS-TTS)..."
+    pip install transformers
+else
+    echo "transformers already installed."
+fi
 echo ""
 
 echo "[4/6] Checking Whisper STT dependencies..."

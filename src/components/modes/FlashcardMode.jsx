@@ -52,7 +52,7 @@ export default function FlashcardMode({
   }, [langCode]);
 
   // Production vs Recognition mode
-  const [flashcardMode, setFlashcardMode] = useState(() => storageGet('flashcardMode') || 'production');
+  const [flashcardMode, setFlashcardMode] = useState(() => storageGet('flashcardMode') || 'recognition');
   const [productionInput, setProductionInput] = useState('');
   const [productionSubmitted, setProductionSubmitted] = useState(false);
   const [productionFeedback, setProductionFeedback] = useState(null); // { correct }
@@ -192,6 +192,39 @@ export default function FlashcardMode({
     }
   }, [productionInput, productionSubmitted, getProductionAccepted, selfCorrection, currentWord, langCode, ttsEnabled, onSpeak, ttsVolume, vocabularySet, onAddXP, onTrackProgress, onMarkMastered]);
 
+  const moveToNext = () => {
+    setIsFlipped(false);
+    setSelectedExampleWord(null);
+    setAddWordForm(null);
+    setShowSpeechPractice(false);
+    speech.reset();
+    setProductionInput('');
+    setProductionSubmitted(false);
+    setProductionFeedback(null);
+    selfCorrection.reset();
+    setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
+
+    if (currentIndex < totalWords - 1) {
+      setCurrentIndex(prev => prev + 1);
+    } else {
+      // Reached end of set
+      if (reviewQueue.length > 0) {
+        // Go back to first word in review queue
+        setCurrentIndex(reviewQueue[0]);
+      } else {
+        // All words mastered - complete!
+        if (onComplete) {
+          onComplete({
+            setId: vocabularySet.setId,
+            totalWords,
+            masteredWords: masteredWords.length,
+            sessionStats
+          });
+        }
+      }
+    }
+  };
+
   const handleProductionNext = useCallback(() => {
     if (productionFeedback && !productionFeedback.correct) {
       // Wrong answer — add to review queue
@@ -295,39 +328,6 @@ export default function FlashcardMode({
     }
   }, [speech.llmFeedback]);
 
-  const moveToNext = () => {
-    setIsFlipped(false);
-    setSelectedExampleWord(null);
-    setAddWordForm(null);
-    setShowSpeechPractice(false);
-    speech.reset();
-    setProductionInput('');
-    setProductionSubmitted(false);
-    setProductionFeedback(null);
-    selfCorrection.reset();
-    setSessionStats(prev => ({ ...prev, studied: prev.studied + 1 }));
-
-    if (currentIndex < totalWords - 1) {
-      setCurrentIndex(prev => prev + 1);
-    } else {
-      // Reached end of set
-      if (reviewQueue.length > 0) {
-        // Go back to first word in review queue
-        setCurrentIndex(reviewQueue[0]);
-      } else {
-        // All words mastered - complete!
-        if (onComplete) {
-          onComplete({
-            setId: vocabularySet.setId,
-            totalWords,
-            masteredWords: masteredWords.length,
-            sessionStats
-          });
-        }
-      }
-    }
-  };
-
   useNextShortcut(moveToNext, isFlipped && !addWordForm);
 
   const handlePronounce = () => {
@@ -379,6 +379,8 @@ export default function FlashcardMode({
     setAddWordForm(null);
   }, [langCode]);
 
+  const pendingTranslateRef = useRef(null);
+
   const handleExampleWordClick = useCallback((word, index) => {
     const cleaned = word.replace(/[.,!?;:"""()—–\-…]/g, '').trim();
     if (!cleaned) return;
@@ -387,7 +389,28 @@ export default function FlashcardMode({
     if (ttsEnabled && onSpeak) {
       onSpeak(cleaned, 0.8, ttsVolume);
     }
-  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume]);
+
+    // Auto-translate with LLM if no translation found
+    if (!translation) {
+      const exIdx = parseInt((index || '0').split('-')[0]);
+      const bankSentences = getSentences(sentenceBank, currentWord.uk || currentWord[langCode]);
+      const contextSentence = bankSentences.length > 0
+        ? bankSentences[exIdx]?.s || ''
+        : currentWord.examples?.[exIdx] || '';
+      const requestId = Date.now();
+      pendingTranslateRef.current = requestId;
+      translateWithLLM(cleaned, contextSentence).then(llmTranslation => {
+        if (llmTranslation && pendingTranslateRef.current === requestId) {
+          saveToUserDict(cleaned, llmTranslation);
+          setSelectedExampleWord(prev =>
+            prev && prev.word === cleaned
+              ? { ...prev, translation: llmTranslation }
+              : prev
+          );
+        }
+      });
+    }
+  }, [lookupWord, ttsEnabled, onSpeak, ttsVolume, sentenceBank, currentWord, langCode, translateWithLLM, saveToUserDict]);
 
   if (!currentWord) {
     return <div>Loading...</div>;
@@ -545,14 +568,17 @@ export default function FlashcardMode({
                 <div style={styles.wordPanelTranslation}>= "{selectedExampleWord.translation}"</div>
               ) : (
                 <>
-                  <div style={styles.wordPanelNoResult}>No translation found</div>
+                  <div style={styles.wordPanelNoResult}>Translating...</div>
                   {!addWordForm && (
                     <button
                       style={styles.addWordBtn}
                       onClick={(e) => {
                         e.stopPropagation();
                         const exIdx = parseInt((selectedExampleWord.index || '0').split('-')[0]);
-                        const contextSentence = currentWord.examples?.[exIdx] || '';
+                        const bankSentences = getSentences(sentenceBank, currentWord.uk || currentWord[langCode]);
+                        const contextSentence = bankSentences.length > 0
+                          ? bankSentences[exIdx]?.s || ''
+                          : currentWord.examples?.[exIdx] || '';
                         setAddWordForm({ word: selectedExampleWord.word, en: '', translating: true });
                         translateWithLLM(selectedExampleWord.word, contextSentence).then(translation => {
                           setAddWordForm(prev => prev ? { ...prev, en: translation || '', translating: false } : null);
@@ -637,16 +663,16 @@ export default function FlashcardMode({
       {/* Mode Toggle */}
       <div style={styles.modeToggle}>
         <button
-          style={{ ...styles.modeToggleBtn, ...(flashcardMode === 'production' ? styles.modeToggleBtnActive : {}) }}
-          onClick={handleToggleFlashcardMode}
-        >
-          Production
-        </button>
-        <button
           style={{ ...styles.modeToggleBtn, ...(flashcardMode === 'recognition' ? styles.modeToggleBtnActive : {}) }}
           onClick={handleToggleFlashcardMode}
         >
           Recognition
+        </button>
+        <button
+          style={{ ...styles.modeToggleBtn, ...(flashcardMode === 'production' ? styles.modeToggleBtnActive : {}) }}
+          onClick={handleToggleFlashcardMode}
+        >
+          Production
         </button>
       </div>
 
@@ -763,6 +789,18 @@ export default function FlashcardMode({
           </div>
         </div>
       </div>
+
+      {/* Skip Button (shown before flipping) */}
+      {!isFlipped && (
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+          <button
+            style={{...styles.button, ...styles.skipButton}}
+            onClick={(e) => { e.stopPropagation(); moveToNext(); }}
+          >
+            Skip →
+          </button>
+        </div>
+      )}
 
       {/* Action Buttons */}
       {isFlipped && (
@@ -1210,6 +1248,10 @@ const styles = {
   },
   reviewButton: {
     background: 'linear-gradient(135deg, #ffa94d, #fd7e14)',
+    color: '#fff'
+  },
+  skipButton: {
+    background: 'linear-gradient(135deg, #868e96, #6c757d)',
     color: '#fff'
   },
   knowButton: {
